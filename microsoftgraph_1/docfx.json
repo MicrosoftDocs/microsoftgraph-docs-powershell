@@ -1,0 +1,82 @@
+{
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.md"
+        ],
+        "src": "docs-conceptual",
+        "version": "graph-powershell",
+        "dest": "microsoftgraph"
+      },
+      {
+        "files": [
+          "toc.yml"
+        ],
+        "src": "docs-conceptual",
+        "version": "graph-powershell",
+        "dest": "microsoftgraph/ce"
+      },
+      {
+        "files": [
+          "**/*.yml"
+        ],
+        "exclude": [
+          "toc.yml" 
+        ],
+        "src": "graph-powershell",
+        "version": "graph-powershell",
+        "dest": "module"
+      },
+      {
+        "files": [
+          "toc.yml"
+        ],
+        "src": "graph-powershell",
+        "version": "graph-powershell",
+        "dest": "module/graph-powershell"
+      },
+      {
+        "files":[
+          "toc.yml"
+        ],
+        "src": "breadcrumb",
+        "dest": "microsoftgraph/breadcrumb"
+      },
+      {
+        "files": [
+          "**/*.md"
+        ],
+        "src": "virtual-folder",
+        "dest": "module"
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      }
+    ],
+    "versions": {
+      "graph-powershell": {
+        "dest": "graph-powershell"
+      }
+    },
+    "overwrite": [],
+    "externalReference": [],
+    "globalMetadata": {
+      "apiPlatform": "powershell",
+      "breadcrumb_path": "/powershell/microsoftgraph/breadcrumb/toc.json"
+    },
+    "fileMetadata": {},
+    "template": [],
+    "dest": "microsoftgraph-docs-powershell",
+    "markdownEngineName": "markdig"
+  }
+}

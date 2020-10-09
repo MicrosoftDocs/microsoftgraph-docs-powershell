@@ -1,0 +1,8 @@
+{
+    "graph-powershell": {
+        "packageRoot": "graph-powershell",
+        "conceptualToc": "docs-conceptual/toc.yml",
+        "conceptualTocUrl": "/powershell/microsoftgraph/ce/toc.json",
+        "referenceTocUrl": "/powershell/module/graph-powershell/toc.json"
+    }
+}

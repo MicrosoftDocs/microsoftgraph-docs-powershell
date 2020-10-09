@@ -1,0 +1,14 @@
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items:
+  - name: Microsoft Graph
+    tocHref: /microsoftgraph/
+    topicHref: /microsoftgraph/index
+    items:
+    - name: Microsoft Graph PowerShell
+      tocHref: /powershell/microsoftgraph/
+      topicHref: /powershell/microsoftgraph/overview
+    - name: Microsoft Graph PowerShell
+      tocHref: /powershell/module/microsoftgraph
+      topicHref: /powershell/module/microsoftgraph/microsoftgraph
