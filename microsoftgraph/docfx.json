@@ -72,6 +72,7 @@
     "externalReference": [],
     "globalMetadata": {
       "apiPlatform": "powershell",
+      "ms.service": "non-product-specific",
       "breadcrumb_path": "/powershell/microsoftgraph/breadcrumb/toc.json"
     },
     "fileMetadata": {},
