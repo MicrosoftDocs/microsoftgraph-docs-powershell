@@ -2,20 +2,27 @@
   "build": {
     "content": [
       {
+        "files":[
+          "toc.yml"
+        ],
+        "src": "breadcrumb",
+        "dest": "microsoftgraph/breadcrumb"
+      },
+      {
         "files": [
           "**/*.md"
         ],
-        "src": "docs-conceptual",
-        "version": "graph-powershell",
+        "src": "docs-conceptual/graph-powershell-1.0",
+        "version": "graph-powershell-1.0",
         "dest": "microsoftgraph"
       },
       {
         "files": [
           "toc.yml"
         ],
-        "src": "docs-conceptual",
-        "version": "graph-powershell",
-        "dest": "microsoftgraph/ce"
+        "src": "docs-conceptual/graph-powershell-1.0",
+        "version": "graph-powershell-1.0",
+        "dest": "microsoftgraph/graph-powershell-1.0"
       },
       {
         "files": [
@@ -24,24 +31,52 @@
         "exclude": [
           "toc.yml" 
         ],
-        "src": "graph-powershell",
-        "version": "graph-powershell",
+        "src": "graph-powershell-1.0",
+        "version": "graph-powershell-1.0",
         "dest": "module"
       },
       {
         "files": [
           "toc.yml"
         ],
-        "src": "graph-powershell",
-        "version": "graph-powershell",
-        "dest": "module/graph-powershell"
+        "src": "graph-powershell-1.0",
+        "version": "graph-powershell-1.0",
+        "dest": "module/graph-powershell-1.0"
       },
       {
-        "files":[
+        "files": [
+          "**/*.md"
+        ],
+        "src": "docs-conceptual/graph-powershell-beta",
+        "version": "graph-powershell-beta",
+        "dest": "microsoftgraph"
+      },
+      {
+        "files": [
           "toc.yml"
         ],
-        "src": "breadcrumb",
-        "dest": "microsoftgraph/breadcrumb"
+        "src": "docs-conceptual/graph-powershell-beta",
+        "version": "graph-powershell-beta",
+        "dest": "microsoftgraph/graph-powershell-beta"
+      },
+      {
+        "files": [
+          "**/*.yml"
+        ],
+        "exclude": [
+          "toc.yml" 
+        ],
+        "src": "graph-powershell-beta",
+        "version": "graph-powershell-beta",
+        "dest": "module"
+      },
+      {
+        "files": [
+          "toc.yml"
+        ],
+        "src": "graph-powershell-beta",
+        "version": "graph-powershell-beta",
+        "dest": "module/graph-powershell-beta"
       },
       {
         "files": [
@@ -64,8 +99,11 @@
       }
     ],
     "versions": {
-      "graph-powershell": {
-        "dest": "graph-powershell"
+      "graph-powershell-1.0": {
+        "dest": "graph-powershell-1.0"
+      },
+	  "graph-powershell-beta": {
+        "dest": "graph-powershell-beta"
       }
     },
     "overwrite": [],
