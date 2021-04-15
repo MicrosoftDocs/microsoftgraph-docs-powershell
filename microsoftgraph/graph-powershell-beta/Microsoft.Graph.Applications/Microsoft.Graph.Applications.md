@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Applications
-Module Guid: a014f2cc-f37d-45f2-81bc-8062e00945ca
+Module Guid: 69da3cbc-24e2-44ea-8e47-e77c21336ab6
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications
 Help Version: 1.0.0.0
 Locale: en-US
@@ -16,6 +16,9 @@ Invoke action addKey
 
 ### [Add-MgApplicationPassword](Add-MgApplicationPassword.md)
 Invoke action addPassword
+
+### [Add-MgServicePrincipalTokenSigningCertificate](Add-MgServicePrincipalTokenSigningCertificate.md)
+Invoke action addTokenSigningCertificate
 
 ### [Confirm-MgApplicationMemberGroup](Confirm-MgApplicationMemberGroup.md)
 Invoke action checkMemberGroups
@@ -53,11 +56,11 @@ Get connectorGroup from applications
 ### [Get-MgApplicationConnectorGroupByRef](Get-MgApplicationConnectorGroupByRef.md)
 Get ref of connectorGroup from applications
 
-### [Get-MgApplicationCreatedOnBehalf](Get-MgApplicationCreatedOnBehalf.md)
-Get createdOnBehalfOf from applications
+### [Get-MgApplicationConnectorGroupByRef](Get-MgApplicationConnectorGroupByRef.md)
+Get ref of connectorGroup from applications
 
-### [Get-MgApplicationCreatedOnBehalfByRef](Get-MgApplicationCreatedOnBehalfByRef.md)
-Get ref of createdOnBehalfOf from applications
+### [Get-MgApplicationConnectorGroupByRef](Get-MgApplicationConnectorGroupByRef.md)
+Get ref of connectorGroup from applications
 
 ### [Get-MgApplicationDelta](Get-MgApplicationDelta.md)
 Invoke function delta
@@ -155,6 +158,18 @@ Get connectors from onPremisesPublishingProfiles
 ### [Get-MgOnPremisePublishingProfileConnectorGroup](Get-MgOnPremisePublishingProfileConnectorGroup.md)
 Get connectorGroups from onPremisesPublishingProfiles
 
+### [Get-MgOnPremisePublishingProfileConnectorGroupApplication](Get-MgOnPremisePublishingProfileConnectorGroupApplication.md)
+Get applications from onPremisesPublishingProfiles
+
+### [Get-MgOnPremisePublishingProfileConnectorGroupApplicationByRef](Get-MgOnPremisePublishingProfileConnectorGroupApplicationByRef.md)
+Get ref of applications from onPremisesPublishingProfiles
+
+### [Get-MgOnPremisePublishingProfileConnectorGroupMember](Get-MgOnPremisePublishingProfileConnectorGroupMember.md)
+Get members from onPremisesPublishingProfiles
+
+### [Get-MgOnPremisePublishingProfileConnectorMemberOf](Get-MgOnPremisePublishingProfileConnectorMemberOf.md)
+Get memberOf from onPremisesPublishingProfiles
+
 ### [Get-MgOnPremisePublishingProfilePublishedResource](Get-MgOnPremisePublishingProfilePublishedResource.md)
 Get publishedResources from onPremisesPublishingProfiles
 
@@ -191,6 +206,9 @@ Get createdObjects from servicePrincipals
 ### [Get-MgServicePrincipalCreatedObjectByRef](Get-MgServicePrincipalCreatedObjectByRef.md)
 Get ref of createdObjects from servicePrincipals
 
+### [Get-MgServicePrincipalDelegatedPermissionClassification](Get-MgServicePrincipalDelegatedPermissionClassification.md)
+Get delegatedPermissionClassifications from servicePrincipals
+
 ### [Get-MgServicePrincipalDelta](Get-MgServicePrincipalDelta.md)
 Invoke function delta
 
@@ -206,14 +224,14 @@ Get ref of homeRealmDiscoveryPolicies from servicePrincipals
 ### [Get-MgServicePrincipalLicenseDetail](Get-MgServicePrincipalLicenseDetail.md)
 Get licenseDetails from servicePrincipals
 
-### [Get-MgServicePrincipalMember](Get-MgServicePrincipalMember.md)
-Get memberOf from servicePrincipals
-
-### [Get-MgServicePrincipalMemberByRef](Get-MgServicePrincipalMemberByRef.md)
-Get ref of memberOf from servicePrincipals
-
 ### [Get-MgServicePrincipalMemberGroup](Get-MgServicePrincipalMemberGroup.md)
 Invoke action getMemberGroups
+
+### [Get-MgServicePrincipalMemberObject](Get-MgServicePrincipalMemberObject.md)
+Invoke action getMemberObjects
+
+### [Get-MgServicePrincipalMemberObject](Get-MgServicePrincipalMemberObject.md)
+Invoke action getMemberObjects
 
 ### [Get-MgServicePrincipalMemberObject](Get-MgServicePrincipalMemberObject.md)
 Invoke action getMemberObjects
@@ -275,11 +293,11 @@ Get tokenLifetimePolicies from servicePrincipals
 ### [Get-MgServicePrincipalTokenLifetimePolicyByRef](Get-MgServicePrincipalTokenLifetimePolicyByRef.md)
 Get ref of tokenLifetimePolicies from servicePrincipals
 
-### [Get-MgServicePrincipalTransitiveMember](Get-MgServicePrincipalTransitiveMember.md)
-Get transitiveMemberOf from servicePrincipals
+### [Get-MgServicePrincipalTokenLifetimePolicyByRef](Get-MgServicePrincipalTokenLifetimePolicyByRef.md)
+Get ref of tokenLifetimePolicies from servicePrincipals
 
-### [Get-MgServicePrincipalTransitiveMemberByRef](Get-MgServicePrincipalTransitiveMemberByRef.md)
-Get ref of transitiveMemberOf from servicePrincipals
+### [Get-MgServicePrincipalTokenLifetimePolicyByRef](Get-MgServicePrincipalTokenLifetimePolicyByRef.md)
+Get ref of tokenLifetimePolicies from servicePrincipals
 
 ### [Get-MgServicePrincipalUserOwnedObject](Get-MgServicePrincipalUserOwnedObject.md)
 Invoke action getUserOwnedObjects
@@ -389,6 +407,12 @@ Create new navigation property to connectors for onPremisesPublishingProfiles
 ### [New-MgOnPremisePublishingProfileConnectorGroup](New-MgOnPremisePublishingProfileConnectorGroup.md)
 Create new navigation property to connectorGroups for onPremisesPublishingProfiles
 
+### [New-MgOnPremisePublishingProfileConnectorGroupApplicationByRef](New-MgOnPremisePublishingProfileConnectorGroupApplicationByRef.md)
+Create new navigation property ref to applications for onPremisesPublishingProfiles
+
+### [New-MgOnPremisePublishingProfileConnectorMemberOf](New-MgOnPremisePublishingProfileConnectorMemberOf.md)
+Create new navigation property to memberOf for onPremisesPublishingProfiles
+
 ### [New-MgOnPremisePublishingProfilePublishedResource](New-MgOnPremisePublishingProfilePublishedResource.md)
 Create new navigation property to publishedResources for onPremisesPublishingProfiles
 
@@ -416,6 +440,9 @@ Create new navigation property ref to claimsMappingPolicies for servicePrincipal
 ### [New-MgServicePrincipalCreatedObjectByRef](New-MgServicePrincipalCreatedObjectByRef.md)
 Create new navigation property ref to createdObjects for servicePrincipals
 
+### [New-MgServicePrincipalDelegatedPermissionClassification](New-MgServicePrincipalDelegatedPermissionClassification.md)
+Create new navigation property to delegatedPermissionClassifications for servicePrincipals
+
 ### [New-MgServicePrincipalEndpoint](New-MgServicePrincipalEndpoint.md)
 Create new navigation property to endpoints for servicePrincipals
 
@@ -425,8 +452,8 @@ Create new navigation property ref to homeRealmDiscoveryPolicies for servicePrin
 ### [New-MgServicePrincipalLicenseDetail](New-MgServicePrincipalLicenseDetail.md)
 Create new navigation property to licenseDetails for servicePrincipals
 
-### [New-MgServicePrincipalMemberByRef](New-MgServicePrincipalMemberByRef.md)
-Create new navigation property ref to memberOf for servicePrincipals
+### [New-MgServicePrincipalLicenseDetail](New-MgServicePrincipalLicenseDetail.md)
+Create new navigation property to licenseDetails for servicePrincipals
 
 ### [New-MgServicePrincipalOauth2PermissionGrantByRef](New-MgServicePrincipalOauth2PermissionGrantByRef.md)
 Create new navigation property ref to oauth2PermissionGrants for servicePrincipals
@@ -461,8 +488,8 @@ Create new navigation property ref to tokenIssuancePolicies for servicePrincipal
 ### [New-MgServicePrincipalTokenLifetimePolicyByRef](New-MgServicePrincipalTokenLifetimePolicyByRef.md)
 Create new navigation property ref to tokenLifetimePolicies for servicePrincipals
 
-### [New-MgServicePrincipalTransitiveMemberByRef](New-MgServicePrincipalTransitiveMemberByRef.md)
-Create new navigation property ref to transitiveMemberOf for servicePrincipals
+### [New-MgServicePrincipalTokenLifetimePolicyByRef](New-MgServicePrincipalTokenLifetimePolicyByRef.md)
+Create new navigation property ref to tokenLifetimePolicies for servicePrincipals
 
 ### [New-MgUserAppRoleAssignment](New-MgUserAppRoleAssignment.md)
 Create new navigation property to appRoleAssignments for users
@@ -479,8 +506,8 @@ Delete entity from applications
 ### [Remove-MgApplicationConnectorGroupByRef](Remove-MgApplicationConnectorGroupByRef.md)
 Delete ref of navigation property connectorGroup for applications
 
-### [Remove-MgApplicationCreatedOnBehalfByRef](Remove-MgApplicationCreatedOnBehalfByRef.md)
-Delete ref of navigation property createdOnBehalfOf for applications
+### [Remove-MgApplicationConnectorGroupByRef](Remove-MgApplicationConnectorGroupByRef.md)
+Delete ref of navigation property connectorGroup for applications
 
 ### [Remove-MgApplicationExtensionProperty](Remove-MgApplicationExtensionProperty.md)
 Delete navigation property extensionProperties for applications
@@ -542,6 +569,9 @@ Delete navigation property connectors for onPremisesPublishingProfiles
 ### [Remove-MgOnPremisePublishingProfileConnectorGroup](Remove-MgOnPremisePublishingProfileConnectorGroup.md)
 Delete navigation property connectorGroups for onPremisesPublishingProfiles
 
+### [Remove-MgOnPremisePublishingProfileConnectorMemberOf](Remove-MgOnPremisePublishingProfileConnectorMemberOf.md)
+Delete navigation property memberOf for onPremisesPublishingProfiles
+
 ### [Remove-MgOnPremisePublishingProfilePublishedResource](Remove-MgOnPremisePublishingProfilePublishedResource.md)
 Delete navigation property publishedResources for onPremisesPublishingProfiles
 
@@ -562,6 +592,9 @@ Delete navigation property appRoleAssignedTo for servicePrincipals
 
 ### [Remove-MgServicePrincipalAppRoleAssignment](Remove-MgServicePrincipalAppRoleAssignment.md)
 Delete navigation property appRoleAssignments for servicePrincipals
+
+### [Remove-MgServicePrincipalDelegatedPermissionClassification](Remove-MgServicePrincipalDelegatedPermissionClassification.md)
+Delete navigation property delegatedPermissionClassifications for servicePrincipals
 
 ### [Remove-MgServicePrincipalEndpoint](Remove-MgServicePrincipalEndpoint.md)
 Delete navigation property endpoints for servicePrincipals
@@ -611,8 +644,8 @@ Invoke action restore
 ### [Set-MgApplicationConnectorGroupByRef](Set-MgApplicationConnectorGroupByRef.md)
 Update the ref of navigation property connectorGroup in applications
 
-### [Set-MgApplicationCreatedOnBehalfByRef](Set-MgApplicationCreatedOnBehalfByRef.md)
-Update the ref of navigation property createdOnBehalfOf in applications
+### [Set-MgApplicationConnectorGroupByRef](Set-MgApplicationConnectorGroupByRef.md)
+Update the ref of navigation property connectorGroup in applications
 
 ### [Set-MgApplicationLogo](Set-MgApplicationLogo.md)
 Update media content for application in applications
@@ -704,6 +737,9 @@ Update the navigation property connectors in onPremisesPublishingProfiles
 ### [Update-MgOnPremisePublishingProfileConnectorGroup](Update-MgOnPremisePublishingProfileConnectorGroup.md)
 Update the navigation property connectorGroups in onPremisesPublishingProfiles
 
+### [Update-MgOnPremisePublishingProfileConnectorMemberOf](Update-MgOnPremisePublishingProfileConnectorMemberOf.md)
+Update the navigation property memberOf in onPremisesPublishingProfiles
+
 ### [Update-MgOnPremisePublishingProfilePublishedResource](Update-MgOnPremisePublishingProfilePublishedResource.md)
 Update the navigation property publishedResources in onPremisesPublishingProfiles
 
@@ -724,6 +760,9 @@ Update the navigation property appRoleAssignedTo in servicePrincipals
 
 ### [Update-MgServicePrincipalAppRoleAssignment](Update-MgServicePrincipalAppRoleAssignment.md)
 Update the navigation property appRoleAssignments in servicePrincipals
+
+### [Update-MgServicePrincipalDelegatedPermissionClassification](Update-MgServicePrincipalDelegatedPermissionClassification.md)
+Update the navigation property delegatedPermissionClassifications in servicePrincipals
 
 ### [Update-MgServicePrincipalEndpoint](Update-MgServicePrincipalEndpoint.md)
 Update the navigation property endpoints in servicePrincipals

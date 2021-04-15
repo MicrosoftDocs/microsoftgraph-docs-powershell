@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Applications
-Module Guid: a014f2cc-f37d-45f2-81bc-8062e00945ca
+Module Guid: 69da3cbc-24e2-44ea-8e47-e77c21336ab6
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications
 Help Version: 1.0.0.0
 Locale: en-US
@@ -44,11 +44,11 @@ Invoke action getAvailableExtensionProperties
 ### [Get-MgApplicationById](Get-MgApplicationById.md)
 Invoke action getByIds
 
-### [Get-MgApplicationCreatedOnBehalf](Get-MgApplicationCreatedOnBehalf.md)
-Get createdOnBehalfOf from applications
+### [Get-MgApplicationById](Get-MgApplicationById.md)
+Invoke action getByIds
 
-### [Get-MgApplicationCreatedOnBehalfByRef](Get-MgApplicationCreatedOnBehalfByRef.md)
-Get ref of createdOnBehalfOf from applications
+### [Get-MgApplicationById](Get-MgApplicationById.md)
+Invoke action getByIds
 
 ### [Get-MgApplicationDelta](Get-MgApplicationDelta.md)
 Invoke function delta
@@ -76,6 +76,9 @@ Get owners from applications
 
 ### [Get-MgApplicationOwnerByRef](Get-MgApplicationOwnerByRef.md)
 Get ref of owners from applications
+
+### [Get-MgApplicationTemplate](Get-MgApplicationTemplate.md)
+Get entity from applicationTemplates by key
 
 ### [Get-MgApplicationTokenIssuancePolicy](Get-MgApplicationTokenIssuancePolicy.md)
 Get tokenIssuancePolicies from applications
@@ -119,6 +122,9 @@ Get createdObjects from servicePrincipals
 ### [Get-MgServicePrincipalCreatedObjectByRef](Get-MgServicePrincipalCreatedObjectByRef.md)
 Get ref of createdObjects from servicePrincipals
 
+### [Get-MgServicePrincipalDelegatedPermissionClassification](Get-MgServicePrincipalDelegatedPermissionClassification.md)
+Get delegatedPermissionClassifications from servicePrincipals
+
 ### [Get-MgServicePrincipalDelta](Get-MgServicePrincipalDelta.md)
 Invoke function delta
 
@@ -131,14 +137,14 @@ Get homeRealmDiscoveryPolicies from servicePrincipals
 ### [Get-MgServicePrincipalHomeRealmDiscoveryPolicyByRef](Get-MgServicePrincipalHomeRealmDiscoveryPolicyByRef.md)
 Get ref of homeRealmDiscoveryPolicies from servicePrincipals
 
-### [Get-MgServicePrincipalMember](Get-MgServicePrincipalMember.md)
-Get memberOf from servicePrincipals
-
-### [Get-MgServicePrincipalMemberByRef](Get-MgServicePrincipalMemberByRef.md)
-Get ref of memberOf from servicePrincipals
-
 ### [Get-MgServicePrincipalMemberGroup](Get-MgServicePrincipalMemberGroup.md)
 Invoke action getMemberGroups
+
+### [Get-MgServicePrincipalMemberObject](Get-MgServicePrincipalMemberObject.md)
+Invoke action getMemberObjects
+
+### [Get-MgServicePrincipalMemberObject](Get-MgServicePrincipalMemberObject.md)
+Invoke action getMemberObjects
 
 ### [Get-MgServicePrincipalMemberObject](Get-MgServicePrincipalMemberObject.md)
 Invoke action getMemberObjects
@@ -173,14 +179,17 @@ Get tokenLifetimePolicies from servicePrincipals
 ### [Get-MgServicePrincipalTokenLifetimePolicyByRef](Get-MgServicePrincipalTokenLifetimePolicyByRef.md)
 Get ref of tokenLifetimePolicies from servicePrincipals
 
-### [Get-MgServicePrincipalTransitiveMember](Get-MgServicePrincipalTransitiveMember.md)
-Get transitiveMemberOf from servicePrincipals
+### [Get-MgServicePrincipalTokenLifetimePolicyByRef](Get-MgServicePrincipalTokenLifetimePolicyByRef.md)
+Get ref of tokenLifetimePolicies from servicePrincipals
 
-### [Get-MgServicePrincipalTransitiveMemberByRef](Get-MgServicePrincipalTransitiveMemberByRef.md)
-Get ref of transitiveMemberOf from servicePrincipals
+### [Get-MgServicePrincipalTokenLifetimePolicyByRef](Get-MgServicePrincipalTokenLifetimePolicyByRef.md)
+Get ref of tokenLifetimePolicies from servicePrincipals
 
 ### [Get-MgUserAppRoleAssignment](Get-MgUserAppRoleAssignment.md)
 Get appRoleAssignments from users
+
+### [Invoke-MgInstantiateApplicationTemplate](Invoke-MgInstantiateApplicationTemplate.md)
+Invoke action instantiate
 
 ### [New-MgApplication](New-MgApplication.md)
 Add new entity to applications
@@ -193,6 +202,9 @@ Create new navigation property ref to homeRealmDiscoveryPolicies for application
 
 ### [New-MgApplicationOwnerByRef](New-MgApplicationOwnerByRef.md)
 Create new navigation property ref to owners for applications
+
+### [New-MgApplicationTemplate](New-MgApplicationTemplate.md)
+Add new entity to applicationTemplates
 
 ### [New-MgApplicationTokenIssuancePolicyByRef](New-MgApplicationTokenIssuancePolicyByRef.md)
 Create new navigation property ref to tokenIssuancePolicies for applications
@@ -218,14 +230,17 @@ Create new navigation property ref to claimsMappingPolicies for servicePrincipal
 ### [New-MgServicePrincipalCreatedObjectByRef](New-MgServicePrincipalCreatedObjectByRef.md)
 Create new navigation property ref to createdObjects for servicePrincipals
 
+### [New-MgServicePrincipalDelegatedPermissionClassification](New-MgServicePrincipalDelegatedPermissionClassification.md)
+Create new navigation property to delegatedPermissionClassifications for servicePrincipals
+
 ### [New-MgServicePrincipalEndpoint](New-MgServicePrincipalEndpoint.md)
 Create new navigation property to endpoints for servicePrincipals
 
 ### [New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef](New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef.md)
 Create new navigation property ref to homeRealmDiscoveryPolicies for servicePrincipals
 
-### [New-MgServicePrincipalMemberByRef](New-MgServicePrincipalMemberByRef.md)
-Create new navigation property ref to memberOf for servicePrincipals
+### [New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef](New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef.md)
+Create new navigation property ref to homeRealmDiscoveryPolicies for servicePrincipals
 
 ### [New-MgServicePrincipalOauth2PermissionGrantByRef](New-MgServicePrincipalOauth2PermissionGrantByRef.md)
 Create new navigation property ref to oauth2PermissionGrants for servicePrincipals
@@ -242,8 +257,8 @@ Create new navigation property ref to tokenIssuancePolicies for servicePrincipal
 ### [New-MgServicePrincipalTokenLifetimePolicyByRef](New-MgServicePrincipalTokenLifetimePolicyByRef.md)
 Create new navigation property ref to tokenLifetimePolicies for servicePrincipals
 
-### [New-MgServicePrincipalTransitiveMemberByRef](New-MgServicePrincipalTransitiveMemberByRef.md)
-Create new navigation property ref to transitiveMemberOf for servicePrincipals
+### [New-MgServicePrincipalTokenLifetimePolicyByRef](New-MgServicePrincipalTokenLifetimePolicyByRef.md)
+Create new navigation property ref to tokenLifetimePolicies for servicePrincipals
 
 ### [New-MgUserAppRoleAssignment](New-MgUserAppRoleAssignment.md)
 Create new navigation property to appRoleAssignments for users
@@ -251,8 +266,8 @@ Create new navigation property to appRoleAssignments for users
 ### [Remove-MgApplication](Remove-MgApplication.md)
 Delete entity from applications
 
-### [Remove-MgApplicationCreatedOnBehalfByRef](Remove-MgApplicationCreatedOnBehalfByRef.md)
-Delete ref of navigation property createdOnBehalfOf for applications
+### [Remove-MgApplication](Remove-MgApplication.md)
+Delete entity from applications
 
 ### [Remove-MgApplicationExtensionProperty](Remove-MgApplicationExtensionProperty.md)
 Delete navigation property extensionProperties for applications
@@ -262,6 +277,9 @@ Invoke action removeKey
 
 ### [Remove-MgApplicationPassword](Remove-MgApplicationPassword.md)
 Invoke action removePassword
+
+### [Remove-MgApplicationTemplate](Remove-MgApplicationTemplate.md)
+Delete entity from applicationTemplates
 
 ### [Remove-MgGroupAppRoleAssignment](Remove-MgGroupAppRoleAssignment.md)
 Delete navigation property appRoleAssignments for groups
@@ -274,6 +292,9 @@ Delete navigation property appRoleAssignedTo for servicePrincipals
 
 ### [Remove-MgServicePrincipalAppRoleAssignment](Remove-MgServicePrincipalAppRoleAssignment.md)
 Delete navigation property appRoleAssignments for servicePrincipals
+
+### [Remove-MgServicePrincipalDelegatedPermissionClassification](Remove-MgServicePrincipalDelegatedPermissionClassification.md)
+Delete navigation property delegatedPermissionClassifications for servicePrincipals
 
 ### [Remove-MgServicePrincipalEndpoint](Remove-MgServicePrincipalEndpoint.md)
 Delete navigation property endpoints for servicePrincipals
@@ -293,8 +314,8 @@ Invoke action restore
 ### [Restore-MgServicePrincipal](Restore-MgServicePrincipal.md)
 Invoke action restore
 
-### [Set-MgApplicationCreatedOnBehalfByRef](Set-MgApplicationCreatedOnBehalfByRef.md)
-Update the ref of navigation property createdOnBehalfOf in applications
+### [Restore-MgServicePrincipal](Restore-MgServicePrincipal.md)
+Invoke action restore
 
 ### [Set-MgApplicationLogo](Set-MgApplicationLogo.md)
 Update media content for application in applications
@@ -311,6 +332,9 @@ Update entity in applications
 ### [Update-MgApplicationExtensionProperty](Update-MgApplicationExtensionProperty.md)
 Update the navigation property extensionProperties in applications
 
+### [Update-MgApplicationTemplate](Update-MgApplicationTemplate.md)
+Update entity in applicationTemplates
+
 ### [Update-MgGroupAppRoleAssignment](Update-MgGroupAppRoleAssignment.md)
 Update the navigation property appRoleAssignments in groups
 
@@ -322,6 +346,9 @@ Update the navigation property appRoleAssignedTo in servicePrincipals
 
 ### [Update-MgServicePrincipalAppRoleAssignment](Update-MgServicePrincipalAppRoleAssignment.md)
 Update the navigation property appRoleAssignments in servicePrincipals
+
+### [Update-MgServicePrincipalDelegatedPermissionClassification](Update-MgServicePrincipalDelegatedPermissionClassification.md)
+Update the navigation property delegatedPermissionClassifications in servicePrincipals
 
 ### [Update-MgServicePrincipalEndpoint](Update-MgServicePrincipalEndpoint.md)
 Update the navigation property endpoints in servicePrincipals
