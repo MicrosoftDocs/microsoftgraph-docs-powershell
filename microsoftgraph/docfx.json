@@ -110,11 +110,12 @@
     "externalReference": [],
     "globalMetadata": {
       "apiPlatform": "powershell",
-      "ms.service": "non-product-specific",
       "breadcrumb_path": "/powershell/microsoftgraph/breadcrumb/toc.json",
 	  "ms.prod": "graph",
       "ms.technology": "",
       "ms.topic": "reference",
+      "ms.author": "gendungu",
+      "author": "finsharp",
     },
     "fileMetadata": {},
     "template": [],
