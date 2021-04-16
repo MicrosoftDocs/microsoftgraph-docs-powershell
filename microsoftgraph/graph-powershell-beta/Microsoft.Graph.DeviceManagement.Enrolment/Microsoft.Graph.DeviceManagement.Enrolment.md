@@ -1,0 +1,1306 @@
+---
+Module Name: Microsoft.Graph.DeviceManagement.Enrolment
+Module Guid: 24e9e9e0-f87b-48a8-a18a-962805ab06cb
+Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment
+Help Version: 1.0.0.0
+Locale: en-US
+---
+
+# Microsoft.Graph.DeviceManagement.Enrolment Module
+## Description
+Microsoft Graph PowerShell Cmdlets
+
+## Microsoft.Graph.DeviceManagement.Enrolment Cmdlets
+### [Get-MgDeviceManagementAndroid](Get-MgDeviceManagementAndroid.md)
+Get androidForWorkEnrollmentProfiles from deviceManagement
+
+### [Get-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfile](Get-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfile.md)
+Get androidDeviceOwnerEnrollmentProfiles from deviceManagement
+
+### [Get-MgDeviceManagementAppleUserInitiatedEnrollmentProfile](Get-MgDeviceManagementAppleUserInitiatedEnrollmentProfile.md)
+Get appleUserInitiatedEnrollmentProfiles from deviceManagement
+
+### [Get-MgDeviceManagementAppleUserInitiatedEnrollmentProfileAssignment](Get-MgDeviceManagementAppleUserInitiatedEnrollmentProfileAssignment.md)
+Get assignments from deviceManagement
+
+### [Get-MgDeviceManagementAutopilotEvent](Get-MgDeviceManagementAutopilotEvent.md)
+Get autopilotEvents from deviceManagement
+
+### [Get-MgDeviceManagementAutopilotEventPolicyStatusDetail](Get-MgDeviceManagementAutopilotEventPolicyStatusDetail.md)
+Get policyStatusDetails from deviceManagement
+
+### [Get-MgDeviceManagementConditionalAccessSetting](Get-MgDeviceManagementConditionalAccessSetting.md)
+Get conditionalAccessSettings from deviceManagement
+
+### [Get-MgDeviceManagementDepOnboardingSetting](Get-MgDeviceManagementDepOnboardingSetting.md)
+Get depOnboardingSettings from deviceManagement
+
+### [Get-MgDeviceManagementDepOnboardingSettingDefaultIoEnrollmentProfile](Get-MgDeviceManagementDepOnboardingSettingDefaultIoEnrollmentProfile.md)
+Get defaultIosEnrollmentProfile from deviceManagement
+
+### [Get-MgDeviceManagementDepOnboardingSettingDefaultIoEnrollmentProfileByRef](Get-MgDeviceManagementDepOnboardingSettingDefaultIoEnrollmentProfileByRef.md)
+Get ref of defaultIosEnrollmentProfile from deviceManagement
+
+### [Get-MgDeviceManagementDepOnboardingSettingDefaultMacOSEnrollmentProfile](Get-MgDeviceManagementDepOnboardingSettingDefaultMacOSEnrollmentProfile.md)
+Get defaultMacOsEnrollmentProfile from deviceManagement
+
+### [Get-MgDeviceManagementDepOnboardingSettingDefaultMacOSEnrollmentProfileByRef](Get-MgDeviceManagementDepOnboardingSettingDefaultMacOSEnrollmentProfileByRef.md)
+Get ref of defaultMacOsEnrollmentProfile from deviceManagement
+
+### [Get-MgDeviceManagementDepOnboardingSettingEnrollmentProfile](Get-MgDeviceManagementDepOnboardingSettingEnrollmentProfile.md)
+Get enrollmentProfiles from deviceManagement
+
+### [Get-MgDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity](Get-MgDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity.md)
+Get importedAppleDeviceIdentities from deviceManagement
+
+### [Get-MgDeviceManagementDeviceEnrollmentConfiguration](Get-MgDeviceManagementDeviceEnrollmentConfiguration.md)
+Get deviceEnrollmentConfigurations from deviceManagement
+
+### [Get-MgDeviceManagementDeviceEnrollmentConfigurationAssignment](Get-MgDeviceManagementDeviceEnrollmentConfigurationAssignment.md)
+Get assignments from deviceManagement
+
+### [Get-MgDeviceManagementImportedDeviceIdentity](Get-MgDeviceManagementImportedDeviceIdentity.md)
+Get importedDeviceIdentities from deviceManagement
+
+### [Get-MgDeviceManagementImportedWindowAutopilotDeviceIdentity](Get-MgDeviceManagementImportedWindowAutopilotDeviceIdentity.md)
+Get importedWindowsAutopilotDeviceIdentities from deviceManagement
+
+### [Get-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice](Get-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice.md)
+Get userExperienceAnalyticsNotAutopilotReadyDevice from deviceManagement
+
+### [Get-MgDeviceManagementWindowAutopilotDeploymentProfile](Get-MgDeviceManagementWindowAutopilotDeploymentProfile.md)
+Get windowsAutopilotDeploymentProfiles from deviceManagement
+
+### [Get-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDevice](Get-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDevice.md)
+Get assignedDevices from deviceManagement
+
+### [Get-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDeviceDeploymentProfile](Get-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDeviceDeploymentProfile.md)
+Get deploymentProfile from deviceManagement
+
+### [Get-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDeviceDeploymentProfileByRef](Get-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDeviceDeploymentProfileByRef.md)
+Get ref of deploymentProfile from deviceManagement
+
+### [Get-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDeviceIntendedDeploymentProfile](Get-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDeviceIntendedDeploymentProfile.md)
+Get intendedDeploymentProfile from deviceManagement
+
+### [Get-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDeviceIntendedDeploymentProfileByRef](Get-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDeviceIntendedDeploymentProfileByRef.md)
+Get ref of intendedDeploymentProfile from deviceManagement
+
+### [Get-MgDeviceManagementWindowAutopilotDeploymentProfileAssignment](Get-MgDeviceManagementWindowAutopilotDeploymentProfileAssignment.md)
+Get assignments from deviceManagement
+
+### [Get-MgDeviceManagementWindowAutopilotDeviceIdentity](Get-MgDeviceManagementWindowAutopilotDeviceIdentity.md)
+Get windowsAutopilotDeviceIdentities from deviceManagement
+
+### [Get-MgDeviceManagementWindowAutopilotDeviceIdentityDeploymentProfile](Get-MgDeviceManagementWindowAutopilotDeviceIdentityDeploymentProfile.md)
+Get deploymentProfile from deviceManagement
+
+### [Get-MgDeviceManagementWindowAutopilotDeviceIdentityDeploymentProfileByRef](Get-MgDeviceManagementWindowAutopilotDeviceIdentityDeploymentProfileByRef.md)
+Get ref of deploymentProfile from deviceManagement
+
+### [Get-MgDeviceManagementWindowAutopilotDeviceIdentityIntendedDeploymentProfile](Get-MgDeviceManagementWindowAutopilotDeviceIdentityIntendedDeploymentProfile.md)
+Get intendedDeploymentProfile from deviceManagement
+
+### [Get-MgDeviceManagementWindowAutopilotDeviceIdentityIntendedDeploymentProfileByRef](Get-MgDeviceManagementWindowAutopilotDeviceIdentityIntendedDeploymentProfileByRef.md)
+Get ref of intendedDeploymentProfile from deviceManagement
+
+### [Get-MgDeviceManagementWindowAutopilotSetting](Get-MgDeviceManagementWindowAutopilotSetting.md)
+Get windowsAutopilotSettings from deviceManagement
+
+### [Get-MgDeviceManagementWindowFeatureUpdateProfile](Get-MgDeviceManagementWindowFeatureUpdateProfile.md)
+Get windowsFeatureUpdateProfiles from deviceManagement
+
+### [Get-MgDeviceManagementWindowFeatureUpdateProfileAssignment](Get-MgDeviceManagementWindowFeatureUpdateProfileAssignment.md)
+Get assignments from deviceManagement
+
+### [Get-MgDeviceManagementWindowFeatureUpdateProfileDeviceUpdateState](Get-MgDeviceManagementWindowFeatureUpdateProfileDeviceUpdateState.md)
+Get deviceUpdateStates from deviceManagement
+
+### [Get-MgRoleManagement](Get-MgRoleManagement.md)
+Get roleManagement
+
+### [Get-MgRoleManagementDeviceManagement](Get-MgRoleManagementDeviceManagement.md)
+Get deviceManagement from roleManagement
+
+### [Get-MgRoleManagementDeviceManagementResourceNamespace](Get-MgRoleManagementDeviceManagementResourceNamespace.md)
+Get resourceNamespaces from roleManagement
+
+### [Get-MgRoleManagementDeviceManagementResourceNamespaceResourceAction](Get-MgRoleManagementDeviceManagementResourceNamespaceResourceAction.md)
+Get resourceActions from roleManagement
+
+### [Get-MgRoleManagementDeviceManagementResourceNamespaceResourceActionResourceScope](Get-MgRoleManagementDeviceManagementResourceNamespaceResourceActionResourceScope.md)
+Get resourceScope from roleManagement
+
+### [Get-MgRoleManagementDeviceManagementRoleAssignment](Get-MgRoleManagementDeviceManagementRoleAssignment.md)
+Get roleAssignments from roleManagement
+
+### [Get-MgRoleManagementDeviceManagementRoleAssignmentAppScope](Get-MgRoleManagementDeviceManagementRoleAssignmentAppScope.md)
+Get appScopes from roleManagement
+
+### [Get-MgRoleManagementDeviceManagementRoleAssignmentDirectoryScope](Get-MgRoleManagementDeviceManagementRoleAssignmentDirectoryScope.md)
+Get directoryScopes from roleManagement
+
+### [Get-MgRoleManagementDeviceManagementRoleAssignmentDirectoryScopeByRef](Get-MgRoleManagementDeviceManagementRoleAssignmentDirectoryScopeByRef.md)
+Get ref of directoryScopes from roleManagement
+
+### [Get-MgRoleManagementDeviceManagementRoleAssignmentPrincipal](Get-MgRoleManagementDeviceManagementRoleAssignmentPrincipal.md)
+Get principals from roleManagement
+
+### [Get-MgRoleManagementDeviceManagementRoleAssignmentPrincipalByRef](Get-MgRoleManagementDeviceManagementRoleAssignmentPrincipalByRef.md)
+Get ref of principals from roleManagement
+
+### [Get-MgRoleManagementDeviceManagementRoleAssignmentRoleDefinition](Get-MgRoleManagementDeviceManagementRoleAssignmentRoleDefinition.md)
+Get roleDefinition from roleManagement
+
+### [Get-MgRoleManagementDeviceManagementRoleAssignmentRoleDefinitionByRef](Get-MgRoleManagementDeviceManagementRoleAssignmentRoleDefinitionByRef.md)
+Get ref of roleDefinition from roleManagement
+
+### [Get-MgRoleManagementDeviceManagementRoleDefinition](Get-MgRoleManagementDeviceManagementRoleDefinition.md)
+Get roleDefinitions from roleManagement
+
+### [Get-MgRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom](Get-MgRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom.md)
+Get inheritsPermissionsFrom from roleManagement
+
+### [Get-MgRoleManagementDirectory](Get-MgRoleManagementDirectory.md)
+Get directory from roleManagement
+
+### [Get-MgRoleManagementDirectoryResourceNamespace](Get-MgRoleManagementDirectoryResourceNamespace.md)
+Get resourceNamespaces from roleManagement
+
+### [Get-MgRoleManagementDirectoryResourceNamespaceResourceAction](Get-MgRoleManagementDirectoryResourceNamespaceResourceAction.md)
+Get resourceActions from roleManagement
+
+### [Get-MgRoleManagementDirectoryResourceNamespaceResourceActionResourceScope](Get-MgRoleManagementDirectoryResourceNamespaceResourceActionResourceScope.md)
+Get resourceScope from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleAssignment](Get-MgRoleManagementDirectoryRoleAssignment.md)
+Get roleAssignments from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentApproval](Get-MgRoleManagementDirectoryRoleAssignmentApproval.md)
+Get roleAssignmentApprovals from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentApprovalStep](Get-MgRoleManagementDirectoryRoleAssignmentApprovalStep.md)
+Get steps from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentAppScope](Get-MgRoleManagementDirectoryRoleAssignmentAppScope.md)
+Get appScope from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentDirectoryScope](Get-MgRoleManagementDirectoryRoleAssignmentDirectoryScope.md)
+Get directoryScope from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentDirectoryScopeByRef](Get-MgRoleManagementDirectoryRoleAssignmentDirectoryScopeByRef.md)
+Get ref of directoryScope from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentPrincipal](Get-MgRoleManagementDirectoryRoleAssignmentPrincipal.md)
+Get principal from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentPrincipalByRef](Get-MgRoleManagementDirectoryRoleAssignmentPrincipalByRef.md)
+Get ref of principal from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentRequest](Get-MgRoleManagementDirectoryRoleAssignmentRequest.md)
+Get roleAssignmentRequests from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentRequestActivatedUsing](Get-MgRoleManagementDirectoryRoleAssignmentRequestActivatedUsing.md)
+Get activatedUsing from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentRequestActivatedUsingByRef](Get-MgRoleManagementDirectoryRoleAssignmentRequestActivatedUsingByRef.md)
+Get ref of activatedUsing from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentRequestAppScope](Get-MgRoleManagementDirectoryRoleAssignmentRequestAppScope.md)
+Get appScope from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentRequestAppScopeByRef](Get-MgRoleManagementDirectoryRoleAssignmentRequestAppScopeByRef.md)
+Get ref of appScope from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentRequestDirectoryScope](Get-MgRoleManagementDirectoryRoleAssignmentRequestDirectoryScope.md)
+Get directoryScope from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentRequestDirectoryScopeByRef](Get-MgRoleManagementDirectoryRoleAssignmentRequestDirectoryScopeByRef.md)
+Get ref of directoryScope from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentRequestPrincipal](Get-MgRoleManagementDirectoryRoleAssignmentRequestPrincipal.md)
+Get principal from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentRequestPrincipalByRef](Get-MgRoleManagementDirectoryRoleAssignmentRequestPrincipalByRef.md)
+Get ref of principal from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentRequestRoleDefinition](Get-MgRoleManagementDirectoryRoleAssignmentRequestRoleDefinition.md)
+Get roleDefinition from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentRequestRoleDefinitionByRef](Get-MgRoleManagementDirectoryRoleAssignmentRequestRoleDefinitionByRef.md)
+Get ref of roleDefinition from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentRequestTargetSchedule](Get-MgRoleManagementDirectoryRoleAssignmentRequestTargetSchedule.md)
+Get targetSchedule from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentRequestTargetScheduleByRef](Get-MgRoleManagementDirectoryRoleAssignmentRequestTargetScheduleByRef.md)
+Get ref of targetSchedule from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentRoleDefinition](Get-MgRoleManagementDirectoryRoleAssignmentRoleDefinition.md)
+Get roleDefinition from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentRoleDefinitionByRef](Get-MgRoleManagementDirectoryRoleAssignmentRoleDefinitionByRef.md)
+Get ref of roleDefinition from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentSchedule](Get-MgRoleManagementDirectoryRoleAssignmentSchedule.md)
+Get roleAssignmentSchedules from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleActivatedUsing](Get-MgRoleManagementDirectoryRoleAssignmentScheduleActivatedUsing.md)
+Get activatedUsing from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleActivatedUsingByRef](Get-MgRoleManagementDirectoryRoleAssignmentScheduleActivatedUsingByRef.md)
+Get ref of activatedUsing from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstance](Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstance.md)
+Get roleAssignmentScheduleInstances from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceActivatedUsing](Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceActivatedUsing.md)
+Get activatedUsing from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceActivatedUsingByRef](Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceActivatedUsingByRef.md)
+Get ref of activatedUsing from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleDefinition](Get-MgRoleManagementDirectoryRoleDefinition.md)
+Get roleDefinitions from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom](Get-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom.md)
+Get inheritsPermissionsFrom from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleEligibilityRequest](Get-MgRoleManagementDirectoryRoleEligibilityRequest.md)
+Get roleEligibilityRequests from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleEligibilityRequestAppScope](Get-MgRoleManagementDirectoryRoleEligibilityRequestAppScope.md)
+Get appScope from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleEligibilityRequestAppScopeByRef](Get-MgRoleManagementDirectoryRoleEligibilityRequestAppScopeByRef.md)
+Get ref of appScope from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleEligibilityRequestDirectoryScope](Get-MgRoleManagementDirectoryRoleEligibilityRequestDirectoryScope.md)
+Get directoryScope from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleEligibilityRequestDirectoryScopeByRef](Get-MgRoleManagementDirectoryRoleEligibilityRequestDirectoryScopeByRef.md)
+Get ref of directoryScope from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleEligibilityRequestPrincipal](Get-MgRoleManagementDirectoryRoleEligibilityRequestPrincipal.md)
+Get principal from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleEligibilityRequestPrincipalByRef](Get-MgRoleManagementDirectoryRoleEligibilityRequestPrincipalByRef.md)
+Get ref of principal from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleEligibilityRequestRoleDefinition](Get-MgRoleManagementDirectoryRoleEligibilityRequestRoleDefinition.md)
+Get roleDefinition from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleEligibilityRequestRoleDefinitionByRef](Get-MgRoleManagementDirectoryRoleEligibilityRequestRoleDefinitionByRef.md)
+Get ref of roleDefinition from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleEligibilityRequestTargetSchedule](Get-MgRoleManagementDirectoryRoleEligibilityRequestTargetSchedule.md)
+Get targetSchedule from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleEligibilityRequestTargetScheduleByRef](Get-MgRoleManagementDirectoryRoleEligibilityRequestTargetScheduleByRef.md)
+Get ref of targetSchedule from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleEligibilitySchedule](Get-MgRoleManagementDirectoryRoleEligibilitySchedule.md)
+Get roleEligibilitySchedules from roleManagement
+
+### [Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstance](Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstance.md)
+Get roleEligibilityScheduleInstances from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagement](Get-MgRoleManagementEntitlementManagement.md)
+Get entitlementManagement from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementResourceNamespace](Get-MgRoleManagementEntitlementManagementResourceNamespace.md)
+Get resourceNamespaces from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction](Get-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction.md)
+Get resourceActions from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementResourceNamespaceResourceActionResourceScope](Get-MgRoleManagementEntitlementManagementResourceNamespaceResourceActionResourceScope.md)
+Get resourceScope from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignment](Get-MgRoleManagementEntitlementManagementRoleAssignment.md)
+Get roleAssignments from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentApproval](Get-MgRoleManagementEntitlementManagementRoleAssignmentApproval.md)
+Get roleAssignmentApprovals from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentApprovalStep](Get-MgRoleManagementEntitlementManagementRoleAssignmentApprovalStep.md)
+Get steps from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentAppScope](Get-MgRoleManagementEntitlementManagementRoleAssignmentAppScope.md)
+Get appScope from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentDirectoryScope](Get-MgRoleManagementEntitlementManagementRoleAssignmentDirectoryScope.md)
+Get directoryScope from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentDirectoryScopeByRef](Get-MgRoleManagementEntitlementManagementRoleAssignmentDirectoryScopeByRef.md)
+Get ref of directoryScope from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentPrincipal](Get-MgRoleManagementEntitlementManagementRoleAssignmentPrincipal.md)
+Get principal from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentPrincipalByRef](Get-MgRoleManagementEntitlementManagementRoleAssignmentPrincipalByRef.md)
+Get ref of principal from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentRequest](Get-MgRoleManagementEntitlementManagementRoleAssignmentRequest.md)
+Get roleAssignmentRequests from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentRequestActivatedUsing](Get-MgRoleManagementEntitlementManagementRoleAssignmentRequestActivatedUsing.md)
+Get activatedUsing from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentRequestActivatedUsingByRef](Get-MgRoleManagementEntitlementManagementRoleAssignmentRequestActivatedUsingByRef.md)
+Get ref of activatedUsing from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentRequestAppScope](Get-MgRoleManagementEntitlementManagementRoleAssignmentRequestAppScope.md)
+Get appScope from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentRequestAppScopeByRef](Get-MgRoleManagementEntitlementManagementRoleAssignmentRequestAppScopeByRef.md)
+Get ref of appScope from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentRequestDirectoryScope](Get-MgRoleManagementEntitlementManagementRoleAssignmentRequestDirectoryScope.md)
+Get directoryScope from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentRequestDirectoryScopeByRef](Get-MgRoleManagementEntitlementManagementRoleAssignmentRequestDirectoryScopeByRef.md)
+Get ref of directoryScope from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentRequestPrincipal](Get-MgRoleManagementEntitlementManagementRoleAssignmentRequestPrincipal.md)
+Get principal from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentRequestPrincipalByRef](Get-MgRoleManagementEntitlementManagementRoleAssignmentRequestPrincipalByRef.md)
+Get ref of principal from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentRequestRoleDefinition](Get-MgRoleManagementEntitlementManagementRoleAssignmentRequestRoleDefinition.md)
+Get roleDefinition from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentRequestRoleDefinitionByRef](Get-MgRoleManagementEntitlementManagementRoleAssignmentRequestRoleDefinitionByRef.md)
+Get ref of roleDefinition from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentRequestTargetSchedule](Get-MgRoleManagementEntitlementManagementRoleAssignmentRequestTargetSchedule.md)
+Get targetSchedule from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentRequestTargetScheduleByRef](Get-MgRoleManagementEntitlementManagementRoleAssignmentRequestTargetScheduleByRef.md)
+Get ref of targetSchedule from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentRoleDefinition](Get-MgRoleManagementEntitlementManagementRoleAssignmentRoleDefinition.md)
+Get roleDefinition from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentRoleDefinitionByRef](Get-MgRoleManagementEntitlementManagementRoleAssignmentRoleDefinitionByRef.md)
+Get ref of roleDefinition from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentSchedule](Get-MgRoleManagementEntitlementManagementRoleAssignmentSchedule.md)
+Get roleAssignmentSchedules from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleActivatedUsing](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleActivatedUsing.md)
+Get activatedUsing from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleActivatedUsingByRef](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleActivatedUsingByRef.md)
+Get ref of activatedUsing from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance.md)
+Get roleAssignmentScheduleInstances from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceActivatedUsing](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceActivatedUsing.md)
+Get activatedUsing from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceActivatedUsingByRef](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceActivatedUsingByRef.md)
+Get ref of activatedUsing from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleDefinition](Get-MgRoleManagementEntitlementManagementRoleDefinition.md)
+Get roleDefinitions from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom](Get-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom.md)
+Get inheritsPermissionsFrom from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleEligibilityRequest](Get-MgRoleManagementEntitlementManagementRoleEligibilityRequest.md)
+Get roleEligibilityRequests from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleEligibilityRequestAppScope](Get-MgRoleManagementEntitlementManagementRoleEligibilityRequestAppScope.md)
+Get appScope from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleEligibilityRequestAppScopeByRef](Get-MgRoleManagementEntitlementManagementRoleEligibilityRequestAppScopeByRef.md)
+Get ref of appScope from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleEligibilityRequestDirectoryScope](Get-MgRoleManagementEntitlementManagementRoleEligibilityRequestDirectoryScope.md)
+Get directoryScope from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleEligibilityRequestDirectoryScopeByRef](Get-MgRoleManagementEntitlementManagementRoleEligibilityRequestDirectoryScopeByRef.md)
+Get ref of directoryScope from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleEligibilityRequestPrincipal](Get-MgRoleManagementEntitlementManagementRoleEligibilityRequestPrincipal.md)
+Get principal from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleEligibilityRequestPrincipalByRef](Get-MgRoleManagementEntitlementManagementRoleEligibilityRequestPrincipalByRef.md)
+Get ref of principal from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleEligibilityRequestRoleDefinition](Get-MgRoleManagementEntitlementManagementRoleEligibilityRequestRoleDefinition.md)
+Get roleDefinition from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleEligibilityRequestRoleDefinitionByRef](Get-MgRoleManagementEntitlementManagementRoleEligibilityRequestRoleDefinitionByRef.md)
+Get ref of roleDefinition from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleEligibilityRequestTargetSchedule](Get-MgRoleManagementEntitlementManagementRoleEligibilityRequestTargetSchedule.md)
+Get targetSchedule from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleEligibilityRequestTargetScheduleByRef](Get-MgRoleManagementEntitlementManagementRoleEligibilityRequestTargetScheduleByRef.md)
+Get ref of targetSchedule from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleEligibilitySchedule](Get-MgRoleManagementEntitlementManagementRoleEligibilitySchedule.md)
+Get roleEligibilitySchedules from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance.md)
+Get roleEligibilityScheduleInstances from roleManagement
+
+### [Import-MgRoleManagementDeviceManagementResourceNamespaceResourceAction](Import-MgRoleManagementDeviceManagementResourceNamespaceResourceAction.md)
+Invoke action importResourceActions
+
+### [Import-MgRoleManagementDirectoryResourceNamespaceResourceAction](Import-MgRoleManagementDirectoryResourceNamespaceResourceAction.md)
+Invoke action importResourceActions
+
+### [Import-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction](Import-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction.md)
+Invoke action importResourceActions
+
+### [Invoke-MgFilterRoleManagementDirectoryRoleAssignmentApproval](Invoke-MgFilterRoleManagementDirectoryRoleAssignmentApproval.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterRoleManagementDirectoryRoleAssignmentRequest](Invoke-MgFilterRoleManagementDirectoryRoleAssignmentRequest.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterRoleManagementDirectoryRoleAssignmentSchedule](Invoke-MgFilterRoleManagementDirectoryRoleAssignmentSchedule.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterRoleManagementDirectoryRoleAssignmentScheduleInstance](Invoke-MgFilterRoleManagementDirectoryRoleAssignmentScheduleInstance.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterRoleManagementDirectoryRoleEligibilityRequest](Invoke-MgFilterRoleManagementDirectoryRoleEligibilityRequest.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterRoleManagementDirectoryRoleEligibilitySchedule](Invoke-MgFilterRoleManagementDirectoryRoleEligibilitySchedule.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterRoleManagementDirectoryRoleEligibilityScheduleInstance](Invoke-MgFilterRoleManagementDirectoryRoleEligibilityScheduleInstance.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentApproval](Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentApproval.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentRequest](Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentRequest.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentSchedule](Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentSchedule.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentScheduleInstance](Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentScheduleInstance.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterRoleManagementEntitlementManagementRoleEligibilityRequest](Invoke-MgFilterRoleManagementEntitlementManagementRoleEligibilityRequest.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterRoleManagementEntitlementManagementRoleEligibilitySchedule](Invoke-MgFilterRoleManagementEntitlementManagementRoleEligibilitySchedule.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterRoleManagementEntitlementManagementRoleEligibilityScheduleInstance](Invoke-MgFilterRoleManagementEntitlementManagementRoleEligibilityScheduleInstance.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgRoleManagementDirectorySchedule](Invoke-MgRoleManagementDirectorySchedule.md)
+Invoke function roleSchedules
+
+### [Invoke-MgRoleManagementEntitlementManagementSchedule](Invoke-MgRoleManagementEntitlementManagementSchedule.md)
+Invoke function roleSchedules
+
+### [Invoke-MgScheduleRoleManagementDirectory](Invoke-MgScheduleRoleManagementDirectory.md)
+Invoke function roleScheduleInstances
+
+### [Invoke-MgScheduleRoleManagementEntitlementManagement](Invoke-MgScheduleRoleManagementEntitlementManagement.md)
+Invoke function roleScheduleInstances
+
+### [New-MgDeviceManagementAndroid](New-MgDeviceManagementAndroid.md)
+Create new navigation property to androidForWorkEnrollmentProfiles for deviceManagement
+
+### [New-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfile](New-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfile.md)
+Create new navigation property to androidDeviceOwnerEnrollmentProfiles for deviceManagement
+
+### [New-MgDeviceManagementAppleUserInitiatedEnrollmentProfile](New-MgDeviceManagementAppleUserInitiatedEnrollmentProfile.md)
+Create new navigation property to appleUserInitiatedEnrollmentProfiles for deviceManagement
+
+### [New-MgDeviceManagementAppleUserInitiatedEnrollmentProfileAssignment](New-MgDeviceManagementAppleUserInitiatedEnrollmentProfileAssignment.md)
+Create new navigation property to assignments for deviceManagement
+
+### [New-MgDeviceManagementAutopilotEvent](New-MgDeviceManagementAutopilotEvent.md)
+Create new navigation property to autopilotEvents for deviceManagement
+
+### [New-MgDeviceManagementAutopilotEventPolicyStatusDetail](New-MgDeviceManagementAutopilotEventPolicyStatusDetail.md)
+Create new navigation property to policyStatusDetails for deviceManagement
+
+### [New-MgDeviceManagementDepOnboardingSetting](New-MgDeviceManagementDepOnboardingSetting.md)
+Create new navigation property to depOnboardingSettings for deviceManagement
+
+### [New-MgDeviceManagementDepOnboardingSettingEnrollmentProfile](New-MgDeviceManagementDepOnboardingSettingEnrollmentProfile.md)
+Create new navigation property to enrollmentProfiles for deviceManagement
+
+### [New-MgDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity](New-MgDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity.md)
+Create new navigation property to importedAppleDeviceIdentities for deviceManagement
+
+### [New-MgDeviceManagementDeviceEnrollmentConfiguration](New-MgDeviceManagementDeviceEnrollmentConfiguration.md)
+Create new navigation property to deviceEnrollmentConfigurations for deviceManagement
+
+### [New-MgDeviceManagementDeviceEnrollmentConfigurationAssignment](New-MgDeviceManagementDeviceEnrollmentConfigurationAssignment.md)
+Create new navigation property to assignments for deviceManagement
+
+### [New-MgDeviceManagementImportedDeviceIdentity](New-MgDeviceManagementImportedDeviceIdentity.md)
+Create new navigation property to importedDeviceIdentities for deviceManagement
+
+### [New-MgDeviceManagementImportedWindowAutopilotDeviceIdentity](New-MgDeviceManagementImportedWindowAutopilotDeviceIdentity.md)
+Create new navigation property to importedWindowsAutopilotDeviceIdentities for deviceManagement
+
+### [New-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice](New-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice.md)
+Create new navigation property to userExperienceAnalyticsNotAutopilotReadyDevice for deviceManagement
+
+### [New-MgDeviceManagementWindowAutopilotDeploymentProfile](New-MgDeviceManagementWindowAutopilotDeploymentProfile.md)
+Create new navigation property to windowsAutopilotDeploymentProfiles for deviceManagement
+
+### [New-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDevice](New-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDevice.md)
+Create new navigation property to assignedDevices for deviceManagement
+
+### [New-MgDeviceManagementWindowAutopilotDeploymentProfileAssignment](New-MgDeviceManagementWindowAutopilotDeploymentProfileAssignment.md)
+Create new navigation property to assignments for deviceManagement
+
+### [New-MgDeviceManagementWindowAutopilotDeviceIdentity](New-MgDeviceManagementWindowAutopilotDeviceIdentity.md)
+Create new navigation property to windowsAutopilotDeviceIdentities for deviceManagement
+
+### [New-MgDeviceManagementWindowFeatureUpdateProfile](New-MgDeviceManagementWindowFeatureUpdateProfile.md)
+Create new navigation property to windowsFeatureUpdateProfiles for deviceManagement
+
+### [New-MgDeviceManagementWindowFeatureUpdateProfileAssignment](New-MgDeviceManagementWindowFeatureUpdateProfileAssignment.md)
+Create new navigation property to assignments for deviceManagement
+
+### [New-MgDeviceManagementWindowFeatureUpdateProfileDeviceUpdateState](New-MgDeviceManagementWindowFeatureUpdateProfileDeviceUpdateState.md)
+Create new navigation property to deviceUpdateStates for deviceManagement
+
+### [New-MgRoleManagementDeviceManagementResourceNamespace](New-MgRoleManagementDeviceManagementResourceNamespace.md)
+Create new navigation property to resourceNamespaces for roleManagement
+
+### [New-MgRoleManagementDeviceManagementResourceNamespaceResourceAction](New-MgRoleManagementDeviceManagementResourceNamespaceResourceAction.md)
+Create new navigation property to resourceActions for roleManagement
+
+### [New-MgRoleManagementDeviceManagementRoleAssignment](New-MgRoleManagementDeviceManagementRoleAssignment.md)
+Create new navigation property to roleAssignments for roleManagement
+
+### [New-MgRoleManagementDeviceManagementRoleAssignmentAppScope](New-MgRoleManagementDeviceManagementRoleAssignmentAppScope.md)
+Create new navigation property to appScopes for roleManagement
+
+### [New-MgRoleManagementDeviceManagementRoleAssignmentDirectoryScopeByRef](New-MgRoleManagementDeviceManagementRoleAssignmentDirectoryScopeByRef.md)
+Create new navigation property ref to directoryScopes for roleManagement
+
+### [New-MgRoleManagementDeviceManagementRoleAssignmentPrincipalByRef](New-MgRoleManagementDeviceManagementRoleAssignmentPrincipalByRef.md)
+Create new navigation property ref to principals for roleManagement
+
+### [New-MgRoleManagementDeviceManagementRoleDefinition](New-MgRoleManagementDeviceManagementRoleDefinition.md)
+Create new navigation property to roleDefinitions for roleManagement
+
+### [New-MgRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom](New-MgRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom.md)
+Create new navigation property to inheritsPermissionsFrom for roleManagement
+
+### [New-MgRoleManagementDirectoryResourceNamespace](New-MgRoleManagementDirectoryResourceNamespace.md)
+Create new navigation property to resourceNamespaces for roleManagement
+
+### [New-MgRoleManagementDirectoryResourceNamespaceResourceAction](New-MgRoleManagementDirectoryResourceNamespaceResourceAction.md)
+Create new navigation property to resourceActions for roleManagement
+
+### [New-MgRoleManagementDirectoryRoleAssignment](New-MgRoleManagementDirectoryRoleAssignment.md)
+Create new navigation property to roleAssignments for roleManagement
+
+### [New-MgRoleManagementDirectoryRoleAssignmentApproval](New-MgRoleManagementDirectoryRoleAssignmentApproval.md)
+Create new navigation property to roleAssignmentApprovals for roleManagement
+
+### [New-MgRoleManagementDirectoryRoleAssignmentApprovalStep](New-MgRoleManagementDirectoryRoleAssignmentApprovalStep.md)
+Create new navigation property to steps for roleManagement
+
+### [New-MgRoleManagementDirectoryRoleAssignmentRequest](New-MgRoleManagementDirectoryRoleAssignmentRequest.md)
+Create new navigation property to roleAssignmentRequests for roleManagement
+
+### [New-MgRoleManagementDirectoryRoleAssignmentSchedule](New-MgRoleManagementDirectoryRoleAssignmentSchedule.md)
+Create new navigation property to roleAssignmentSchedules for roleManagement
+
+### [New-MgRoleManagementDirectoryRoleAssignmentScheduleInstance](New-MgRoleManagementDirectoryRoleAssignmentScheduleInstance.md)
+Create new navigation property to roleAssignmentScheduleInstances for roleManagement
+
+### [New-MgRoleManagementDirectoryRoleDefinition](New-MgRoleManagementDirectoryRoleDefinition.md)
+Create new navigation property to roleDefinitions for roleManagement
+
+### [New-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom](New-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom.md)
+Create new navigation property to inheritsPermissionsFrom for roleManagement
+
+### [New-MgRoleManagementDirectoryRoleEligibilityRequest](New-MgRoleManagementDirectoryRoleEligibilityRequest.md)
+Create new navigation property to roleEligibilityRequests for roleManagement
+
+### [New-MgRoleManagementDirectoryRoleEligibilitySchedule](New-MgRoleManagementDirectoryRoleEligibilitySchedule.md)
+Create new navigation property to roleEligibilitySchedules for roleManagement
+
+### [New-MgRoleManagementDirectoryRoleEligibilityScheduleInstance](New-MgRoleManagementDirectoryRoleEligibilityScheduleInstance.md)
+Create new navigation property to roleEligibilityScheduleInstances for roleManagement
+
+### [New-MgRoleManagementEntitlementManagementResourceNamespace](New-MgRoleManagementEntitlementManagementResourceNamespace.md)
+Create new navigation property to resourceNamespaces for roleManagement
+
+### [New-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction](New-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction.md)
+Create new navigation property to resourceActions for roleManagement
+
+### [New-MgRoleManagementEntitlementManagementRoleAssignment](New-MgRoleManagementEntitlementManagementRoleAssignment.md)
+Create new navigation property to roleAssignments for roleManagement
+
+### [New-MgRoleManagementEntitlementManagementRoleAssignmentApproval](New-MgRoleManagementEntitlementManagementRoleAssignmentApproval.md)
+Create new navigation property to roleAssignmentApprovals for roleManagement
+
+### [New-MgRoleManagementEntitlementManagementRoleAssignmentApprovalStep](New-MgRoleManagementEntitlementManagementRoleAssignmentApprovalStep.md)
+Create new navigation property to steps for roleManagement
+
+### [New-MgRoleManagementEntitlementManagementRoleAssignmentRequest](New-MgRoleManagementEntitlementManagementRoleAssignmentRequest.md)
+Create new navigation property to roleAssignmentRequests for roleManagement
+
+### [New-MgRoleManagementEntitlementManagementRoleAssignmentSchedule](New-MgRoleManagementEntitlementManagementRoleAssignmentSchedule.md)
+Create new navigation property to roleAssignmentSchedules for roleManagement
+
+### [New-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance](New-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance.md)
+Create new navigation property to roleAssignmentScheduleInstances for roleManagement
+
+### [New-MgRoleManagementEntitlementManagementRoleDefinition](New-MgRoleManagementEntitlementManagementRoleDefinition.md)
+Create new navigation property to roleDefinitions for roleManagement
+
+### [New-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom](New-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom.md)
+Create new navigation property to inheritsPermissionsFrom for roleManagement
+
+### [New-MgRoleManagementEntitlementManagementRoleEligibilityRequest](New-MgRoleManagementEntitlementManagementRoleEligibilityRequest.md)
+Create new navigation property to roleEligibilityRequests for roleManagement
+
+### [New-MgRoleManagementEntitlementManagementRoleEligibilitySchedule](New-MgRoleManagementEntitlementManagementRoleEligibilitySchedule.md)
+Create new navigation property to roleEligibilitySchedules for roleManagement
+
+### [New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance](New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance.md)
+Create new navigation property to roleEligibilityScheduleInstances for roleManagement
+
+### [Remove-MgDeviceManagementAndroid](Remove-MgDeviceManagementAndroid.md)
+Delete navigation property androidForWorkEnrollmentProfiles for deviceManagement
+
+### [Remove-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfile](Remove-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfile.md)
+Delete navigation property androidDeviceOwnerEnrollmentProfiles for deviceManagement
+
+### [Remove-MgDeviceManagementAppleUserInitiatedEnrollmentProfile](Remove-MgDeviceManagementAppleUserInitiatedEnrollmentProfile.md)
+Delete navigation property appleUserInitiatedEnrollmentProfiles for deviceManagement
+
+### [Remove-MgDeviceManagementAppleUserInitiatedEnrollmentProfileAssignment](Remove-MgDeviceManagementAppleUserInitiatedEnrollmentProfileAssignment.md)
+Delete navigation property assignments for deviceManagement
+
+### [Remove-MgDeviceManagementAutopilotEvent](Remove-MgDeviceManagementAutopilotEvent.md)
+Delete navigation property autopilotEvents for deviceManagement
+
+### [Remove-MgDeviceManagementAutopilotEventPolicyStatusDetail](Remove-MgDeviceManagementAutopilotEventPolicyStatusDetail.md)
+Delete navigation property policyStatusDetails for deviceManagement
+
+### [Remove-MgDeviceManagementConditionalAccessSetting](Remove-MgDeviceManagementConditionalAccessSetting.md)
+Delete navigation property conditionalAccessSettings for deviceManagement
+
+### [Remove-MgDeviceManagementDepOnboardingSetting](Remove-MgDeviceManagementDepOnboardingSetting.md)
+Delete navigation property depOnboardingSettings for deviceManagement
+
+### [Remove-MgDeviceManagementDepOnboardingSettingDefaultIoEnrollmentProfileByRef](Remove-MgDeviceManagementDepOnboardingSettingDefaultIoEnrollmentProfileByRef.md)
+Delete ref of navigation property defaultIosEnrollmentProfile for deviceManagement
+
+### [Remove-MgDeviceManagementDepOnboardingSettingDefaultMacOSEnrollmentProfileByRef](Remove-MgDeviceManagementDepOnboardingSettingDefaultMacOSEnrollmentProfileByRef.md)
+Delete ref of navigation property defaultMacOsEnrollmentProfile for deviceManagement
+
+### [Remove-MgDeviceManagementDepOnboardingSettingEnrollmentProfile](Remove-MgDeviceManagementDepOnboardingSettingEnrollmentProfile.md)
+Delete navigation property enrollmentProfiles for deviceManagement
+
+### [Remove-MgDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity](Remove-MgDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity.md)
+Delete navigation property importedAppleDeviceIdentities for deviceManagement
+
+### [Remove-MgDeviceManagementDeviceEnrollmentConfiguration](Remove-MgDeviceManagementDeviceEnrollmentConfiguration.md)
+Delete navigation property deviceEnrollmentConfigurations for deviceManagement
+
+### [Remove-MgDeviceManagementDeviceEnrollmentConfigurationAssignment](Remove-MgDeviceManagementDeviceEnrollmentConfigurationAssignment.md)
+Delete navigation property assignments for deviceManagement
+
+### [Remove-MgDeviceManagementImportedDeviceIdentity](Remove-MgDeviceManagementImportedDeviceIdentity.md)
+Delete navigation property importedDeviceIdentities for deviceManagement
+
+### [Remove-MgDeviceManagementImportedWindowAutopilotDeviceIdentity](Remove-MgDeviceManagementImportedWindowAutopilotDeviceIdentity.md)
+Delete navigation property importedWindowsAutopilotDeviceIdentities for deviceManagement
+
+### [Remove-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice](Remove-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice.md)
+Delete navigation property userExperienceAnalyticsNotAutopilotReadyDevice for deviceManagement
+
+### [Remove-MgDeviceManagementWindowAutopilotDeploymentProfile](Remove-MgDeviceManagementWindowAutopilotDeploymentProfile.md)
+Delete navigation property windowsAutopilotDeploymentProfiles for deviceManagement
+
+### [Remove-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDevice](Remove-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDevice.md)
+Delete navigation property assignedDevices for deviceManagement
+
+### [Remove-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDeviceDeploymentProfileByRef](Remove-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDeviceDeploymentProfileByRef.md)
+Delete ref of navigation property deploymentProfile for deviceManagement
+
+### [Remove-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDeviceIntendedDeploymentProfileByRef](Remove-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDeviceIntendedDeploymentProfileByRef.md)
+Delete ref of navigation property intendedDeploymentProfile for deviceManagement
+
+### [Remove-MgDeviceManagementWindowAutopilotDeploymentProfileAssignment](Remove-MgDeviceManagementWindowAutopilotDeploymentProfileAssignment.md)
+Delete navigation property assignments for deviceManagement
+
+### [Remove-MgDeviceManagementWindowAutopilotDeviceIdentity](Remove-MgDeviceManagementWindowAutopilotDeviceIdentity.md)
+Delete navigation property windowsAutopilotDeviceIdentities for deviceManagement
+
+### [Remove-MgDeviceManagementWindowAutopilotDeviceIdentityDeploymentProfileByRef](Remove-MgDeviceManagementWindowAutopilotDeviceIdentityDeploymentProfileByRef.md)
+Delete ref of navigation property deploymentProfile for deviceManagement
+
+### [Remove-MgDeviceManagementWindowAutopilotDeviceIdentityIntendedDeploymentProfileByRef](Remove-MgDeviceManagementWindowAutopilotDeviceIdentityIntendedDeploymentProfileByRef.md)
+Delete ref of navigation property intendedDeploymentProfile for deviceManagement
+
+### [Remove-MgDeviceManagementWindowAutopilotSetting](Remove-MgDeviceManagementWindowAutopilotSetting.md)
+Delete navigation property windowsAutopilotSettings for deviceManagement
+
+### [Remove-MgDeviceManagementWindowFeatureUpdateProfile](Remove-MgDeviceManagementWindowFeatureUpdateProfile.md)
+Delete navigation property windowsFeatureUpdateProfiles for deviceManagement
+
+### [Remove-MgDeviceManagementWindowFeatureUpdateProfileAssignment](Remove-MgDeviceManagementWindowFeatureUpdateProfileAssignment.md)
+Delete navigation property assignments for deviceManagement
+
+### [Remove-MgDeviceManagementWindowFeatureUpdateProfileDeviceUpdateState](Remove-MgDeviceManagementWindowFeatureUpdateProfileDeviceUpdateState.md)
+Delete navigation property deviceUpdateStates for deviceManagement
+
+### [Remove-MgRoleManagementDeviceManagement](Remove-MgRoleManagementDeviceManagement.md)
+Delete navigation property deviceManagement for roleManagement
+
+### [Remove-MgRoleManagementDeviceManagementResourceNamespace](Remove-MgRoleManagementDeviceManagementResourceNamespace.md)
+Delete navigation property resourceNamespaces for roleManagement
+
+### [Remove-MgRoleManagementDeviceManagementResourceNamespaceResourceAction](Remove-MgRoleManagementDeviceManagementResourceNamespaceResourceAction.md)
+Delete navigation property resourceActions for roleManagement
+
+### [Remove-MgRoleManagementDeviceManagementResourceNamespaceResourceActionResourceScope](Remove-MgRoleManagementDeviceManagementResourceNamespaceResourceActionResourceScope.md)
+Delete navigation property resourceScope for roleManagement
+
+### [Remove-MgRoleManagementDeviceManagementRoleAssignment](Remove-MgRoleManagementDeviceManagementRoleAssignment.md)
+Delete navigation property roleAssignments for roleManagement
+
+### [Remove-MgRoleManagementDeviceManagementRoleAssignmentAppScope](Remove-MgRoleManagementDeviceManagementRoleAssignmentAppScope.md)
+Delete navigation property appScopes for roleManagement
+
+### [Remove-MgRoleManagementDeviceManagementRoleAssignmentRoleDefinitionByRef](Remove-MgRoleManagementDeviceManagementRoleAssignmentRoleDefinitionByRef.md)
+Delete ref of navigation property roleDefinition for roleManagement
+
+### [Remove-MgRoleManagementDeviceManagementRoleDefinition](Remove-MgRoleManagementDeviceManagementRoleDefinition.md)
+Delete navigation property roleDefinitions for roleManagement
+
+### [Remove-MgRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom](Remove-MgRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom.md)
+Delete navigation property inheritsPermissionsFrom for roleManagement
+
+### [Remove-MgRoleManagementDirectory](Remove-MgRoleManagementDirectory.md)
+Delete navigation property directory for roleManagement
+
+### [Remove-MgRoleManagementDirectoryResourceNamespace](Remove-MgRoleManagementDirectoryResourceNamespace.md)
+Delete navigation property resourceNamespaces for roleManagement
+
+### [Remove-MgRoleManagementDirectoryResourceNamespaceResourceAction](Remove-MgRoleManagementDirectoryResourceNamespaceResourceAction.md)
+Delete navigation property resourceActions for roleManagement
+
+### [Remove-MgRoleManagementDirectoryResourceNamespaceResourceActionResourceScope](Remove-MgRoleManagementDirectoryResourceNamespaceResourceActionResourceScope.md)
+Delete navigation property resourceScope for roleManagement
+
+### [Remove-MgRoleManagementDirectoryRoleAssignment](Remove-MgRoleManagementDirectoryRoleAssignment.md)
+Delete navigation property roleAssignments for roleManagement
+
+### [Remove-MgRoleManagementDirectoryRoleAssignmentApproval](Remove-MgRoleManagementDirectoryRoleAssignmentApproval.md)
+Delete navigation property roleAssignmentApprovals for roleManagement
+
+### [Remove-MgRoleManagementDirectoryRoleAssignmentApprovalStep](Remove-MgRoleManagementDirectoryRoleAssignmentApprovalStep.md)
+Delete navigation property steps for roleManagement
+
+### [Remove-MgRoleManagementDirectoryRoleAssignmentAppScope](Remove-MgRoleManagementDirectoryRoleAssignmentAppScope.md)
+Delete navigation property appScope for roleManagement
+
+### [Remove-MgRoleManagementDirectoryRoleAssignmentDirectoryScopeByRef](Remove-MgRoleManagementDirectoryRoleAssignmentDirectoryScopeByRef.md)
+Delete ref of navigation property directoryScope for roleManagement
+
+### [Remove-MgRoleManagementDirectoryRoleAssignmentPrincipalByRef](Remove-MgRoleManagementDirectoryRoleAssignmentPrincipalByRef.md)
+Delete ref of navigation property principal for roleManagement
+
+### [Remove-MgRoleManagementDirectoryRoleAssignmentRequest](Remove-MgRoleManagementDirectoryRoleAssignmentRequest.md)
+Delete navigation property roleAssignmentRequests for roleManagement
+
+### [Remove-MgRoleManagementDirectoryRoleAssignmentRequestActivatedUsingByRef](Remove-MgRoleManagementDirectoryRoleAssignmentRequestActivatedUsingByRef.md)
+Delete ref of navigation property activatedUsing for roleManagement
+
+### [Remove-MgRoleManagementDirectoryRoleAssignmentRequestAppScopeByRef](Remove-MgRoleManagementDirectoryRoleAssignmentRequestAppScopeByRef.md)
+Delete ref of navigation property appScope for roleManagement
+
+### [Remove-MgRoleManagementDirectoryRoleAssignmentRequestDirectoryScopeByRef](Remove-MgRoleManagementDirectoryRoleAssignmentRequestDirectoryScopeByRef.md)
+Delete ref of navigation property directoryScope for roleManagement
+
+### [Remove-MgRoleManagementDirectoryRoleAssignmentRequestPrincipalByRef](Remove-MgRoleManagementDirectoryRoleAssignmentRequestPrincipalByRef.md)
+Delete ref of navigation property principal for roleManagement
+
+### [Remove-MgRoleManagementDirectoryRoleAssignmentRequestRoleDefinitionByRef](Remove-MgRoleManagementDirectoryRoleAssignmentRequestRoleDefinitionByRef.md)
+Delete ref of navigation property roleDefinition for roleManagement
+
+### [Remove-MgRoleManagementDirectoryRoleAssignmentRequestTargetScheduleByRef](Remove-MgRoleManagementDirectoryRoleAssignmentRequestTargetScheduleByRef.md)
+Delete ref of navigation property targetSchedule for roleManagement
+
+### [Remove-MgRoleManagementDirectoryRoleAssignmentRoleDefinitionByRef](Remove-MgRoleManagementDirectoryRoleAssignmentRoleDefinitionByRef.md)
+Delete ref of navigation property roleDefinition for roleManagement
+
+### [Remove-MgRoleManagementDirectoryRoleAssignmentSchedule](Remove-MgRoleManagementDirectoryRoleAssignmentSchedule.md)
+Delete navigation property roleAssignmentSchedules for roleManagement
+
+### [Remove-MgRoleManagementDirectoryRoleAssignmentScheduleActivatedUsingByRef](Remove-MgRoleManagementDirectoryRoleAssignmentScheduleActivatedUsingByRef.md)
+Delete ref of navigation property activatedUsing for roleManagement
+
+### [Remove-MgRoleManagementDirectoryRoleAssignmentScheduleInstance](Remove-MgRoleManagementDirectoryRoleAssignmentScheduleInstance.md)
+Delete navigation property roleAssignmentScheduleInstances for roleManagement
+
+### [Remove-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceActivatedUsingByRef](Remove-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceActivatedUsingByRef.md)
+Delete ref of navigation property activatedUsing for roleManagement
+
+### [Remove-MgRoleManagementDirectoryRoleDefinition](Remove-MgRoleManagementDirectoryRoleDefinition.md)
+Delete navigation property roleDefinitions for roleManagement
+
+### [Remove-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom](Remove-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom.md)
+Delete navigation property inheritsPermissionsFrom for roleManagement
+
+### [Remove-MgRoleManagementDirectoryRoleEligibilityRequest](Remove-MgRoleManagementDirectoryRoleEligibilityRequest.md)
+Delete navigation property roleEligibilityRequests for roleManagement
+
+### [Remove-MgRoleManagementDirectoryRoleEligibilityRequestAppScopeByRef](Remove-MgRoleManagementDirectoryRoleEligibilityRequestAppScopeByRef.md)
+Delete ref of navigation property appScope for roleManagement
+
+### [Remove-MgRoleManagementDirectoryRoleEligibilityRequestDirectoryScopeByRef](Remove-MgRoleManagementDirectoryRoleEligibilityRequestDirectoryScopeByRef.md)
+Delete ref of navigation property directoryScope for roleManagement
+
+### [Remove-MgRoleManagementDirectoryRoleEligibilityRequestPrincipalByRef](Remove-MgRoleManagementDirectoryRoleEligibilityRequestPrincipalByRef.md)
+Delete ref of navigation property principal for roleManagement
+
+### [Remove-MgRoleManagementDirectoryRoleEligibilityRequestRoleDefinitionByRef](Remove-MgRoleManagementDirectoryRoleEligibilityRequestRoleDefinitionByRef.md)
+Delete ref of navigation property roleDefinition for roleManagement
+
+### [Remove-MgRoleManagementDirectoryRoleEligibilityRequestTargetScheduleByRef](Remove-MgRoleManagementDirectoryRoleEligibilityRequestTargetScheduleByRef.md)
+Delete ref of navigation property targetSchedule for roleManagement
+
+### [Remove-MgRoleManagementDirectoryRoleEligibilitySchedule](Remove-MgRoleManagementDirectoryRoleEligibilitySchedule.md)
+Delete navigation property roleEligibilitySchedules for roleManagement
+
+### [Remove-MgRoleManagementDirectoryRoleEligibilityScheduleInstance](Remove-MgRoleManagementDirectoryRoleEligibilityScheduleInstance.md)
+Delete navigation property roleEligibilityScheduleInstances for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagement](Remove-MgRoleManagementEntitlementManagement.md)
+Delete navigation property entitlementManagement for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementResourceNamespace](Remove-MgRoleManagementEntitlementManagementResourceNamespace.md)
+Delete navigation property resourceNamespaces for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction](Remove-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction.md)
+Delete navigation property resourceActions for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementResourceNamespaceResourceActionResourceScope](Remove-MgRoleManagementEntitlementManagementResourceNamespaceResourceActionResourceScope.md)
+Delete navigation property resourceScope for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementRoleAssignment](Remove-MgRoleManagementEntitlementManagementRoleAssignment.md)
+Delete navigation property roleAssignments for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementRoleAssignmentApproval](Remove-MgRoleManagementEntitlementManagementRoleAssignmentApproval.md)
+Delete navigation property roleAssignmentApprovals for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementRoleAssignmentApprovalStep](Remove-MgRoleManagementEntitlementManagementRoleAssignmentApprovalStep.md)
+Delete navigation property steps for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementRoleAssignmentAppScope](Remove-MgRoleManagementEntitlementManagementRoleAssignmentAppScope.md)
+Delete navigation property appScope for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementRoleAssignmentDirectoryScopeByRef](Remove-MgRoleManagementEntitlementManagementRoleAssignmentDirectoryScopeByRef.md)
+Delete ref of navigation property directoryScope for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementRoleAssignmentPrincipalByRef](Remove-MgRoleManagementEntitlementManagementRoleAssignmentPrincipalByRef.md)
+Delete ref of navigation property principal for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementRoleAssignmentRequest](Remove-MgRoleManagementEntitlementManagementRoleAssignmentRequest.md)
+Delete navigation property roleAssignmentRequests for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementRoleAssignmentRequestActivatedUsingByRef](Remove-MgRoleManagementEntitlementManagementRoleAssignmentRequestActivatedUsingByRef.md)
+Delete ref of navigation property activatedUsing for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementRoleAssignmentRequestAppScopeByRef](Remove-MgRoleManagementEntitlementManagementRoleAssignmentRequestAppScopeByRef.md)
+Delete ref of navigation property appScope for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementRoleAssignmentRequestDirectoryScopeByRef](Remove-MgRoleManagementEntitlementManagementRoleAssignmentRequestDirectoryScopeByRef.md)
+Delete ref of navigation property directoryScope for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementRoleAssignmentRequestPrincipalByRef](Remove-MgRoleManagementEntitlementManagementRoleAssignmentRequestPrincipalByRef.md)
+Delete ref of navigation property principal for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementRoleAssignmentRequestRoleDefinitionByRef](Remove-MgRoleManagementEntitlementManagementRoleAssignmentRequestRoleDefinitionByRef.md)
+Delete ref of navigation property roleDefinition for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementRoleAssignmentRequestTargetScheduleByRef](Remove-MgRoleManagementEntitlementManagementRoleAssignmentRequestTargetScheduleByRef.md)
+Delete ref of navigation property targetSchedule for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementRoleAssignmentRoleDefinitionByRef](Remove-MgRoleManagementEntitlementManagementRoleAssignmentRoleDefinitionByRef.md)
+Delete ref of navigation property roleDefinition for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementRoleAssignmentSchedule](Remove-MgRoleManagementEntitlementManagementRoleAssignmentSchedule.md)
+Delete navigation property roleAssignmentSchedules for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementRoleAssignmentScheduleActivatedUsingByRef](Remove-MgRoleManagementEntitlementManagementRoleAssignmentScheduleActivatedUsingByRef.md)
+Delete ref of navigation property activatedUsing for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance](Remove-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance.md)
+Delete navigation property roleAssignmentScheduleInstances for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceActivatedUsingByRef](Remove-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceActivatedUsingByRef.md)
+Delete ref of navigation property activatedUsing for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementRoleDefinition](Remove-MgRoleManagementEntitlementManagementRoleDefinition.md)
+Delete navigation property roleDefinitions for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom](Remove-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom.md)
+Delete navigation property inheritsPermissionsFrom for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementRoleEligibilityRequest](Remove-MgRoleManagementEntitlementManagementRoleEligibilityRequest.md)
+Delete navigation property roleEligibilityRequests for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementRoleEligibilityRequestAppScopeByRef](Remove-MgRoleManagementEntitlementManagementRoleEligibilityRequestAppScopeByRef.md)
+Delete ref of navigation property appScope for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementRoleEligibilityRequestDirectoryScopeByRef](Remove-MgRoleManagementEntitlementManagementRoleEligibilityRequestDirectoryScopeByRef.md)
+Delete ref of navigation property directoryScope for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementRoleEligibilityRequestPrincipalByRef](Remove-MgRoleManagementEntitlementManagementRoleEligibilityRequestPrincipalByRef.md)
+Delete ref of navigation property principal for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementRoleEligibilityRequestRoleDefinitionByRef](Remove-MgRoleManagementEntitlementManagementRoleEligibilityRequestRoleDefinitionByRef.md)
+Delete ref of navigation property roleDefinition for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementRoleEligibilityRequestTargetScheduleByRef](Remove-MgRoleManagementEntitlementManagementRoleEligibilityRequestTargetScheduleByRef.md)
+Delete ref of navigation property targetSchedule for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementRoleEligibilitySchedule](Remove-MgRoleManagementEntitlementManagementRoleEligibilitySchedule.md)
+Delete navigation property roleEligibilitySchedules for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance](Remove-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance.md)
+Delete navigation property roleEligibilityScheduleInstances for roleManagement
+
+### [Set-MgDeviceManagementDepOnboardingSettingDefaultIoEnrollmentProfileByRef](Set-MgDeviceManagementDepOnboardingSettingDefaultIoEnrollmentProfileByRef.md)
+Update the ref of navigation property defaultIosEnrollmentProfile in deviceManagement
+
+### [Set-MgDeviceManagementDepOnboardingSettingDefaultMacOSEnrollmentProfileByRef](Set-MgDeviceManagementDepOnboardingSettingDefaultMacOSEnrollmentProfileByRef.md)
+Update the ref of navigation property defaultMacOsEnrollmentProfile in deviceManagement
+
+### [Set-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDeviceDeploymentProfileByRef](Set-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDeviceDeploymentProfileByRef.md)
+Update the ref of navigation property deploymentProfile in deviceManagement
+
+### [Set-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDeviceIntendedDeploymentProfileByRef](Set-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDeviceIntendedDeploymentProfileByRef.md)
+Update the ref of navigation property intendedDeploymentProfile in deviceManagement
+
+### [Set-MgDeviceManagementWindowAutopilotDeviceIdentityDeploymentProfileByRef](Set-MgDeviceManagementWindowAutopilotDeviceIdentityDeploymentProfileByRef.md)
+Update the ref of navigation property deploymentProfile in deviceManagement
+
+### [Set-MgDeviceManagementWindowAutopilotDeviceIdentityIntendedDeploymentProfileByRef](Set-MgDeviceManagementWindowAutopilotDeviceIdentityIntendedDeploymentProfileByRef.md)
+Update the ref of navigation property intendedDeploymentProfile in deviceManagement
+
+### [Set-MgRoleManagementDeviceManagementRoleAssignmentRoleDefinitionByRef](Set-MgRoleManagementDeviceManagementRoleAssignmentRoleDefinitionByRef.md)
+Update the ref of navigation property roleDefinition in roleManagement
+
+### [Set-MgRoleManagementDirectoryRoleAssignmentDirectoryScopeByRef](Set-MgRoleManagementDirectoryRoleAssignmentDirectoryScopeByRef.md)
+Update the ref of navigation property directoryScope in roleManagement
+
+### [Set-MgRoleManagementDirectoryRoleAssignmentPrincipalByRef](Set-MgRoleManagementDirectoryRoleAssignmentPrincipalByRef.md)
+Update the ref of navigation property principal in roleManagement
+
+### [Set-MgRoleManagementDirectoryRoleAssignmentRequestActivatedUsingByRef](Set-MgRoleManagementDirectoryRoleAssignmentRequestActivatedUsingByRef.md)
+Update the ref of navigation property activatedUsing in roleManagement
+
+### [Set-MgRoleManagementDirectoryRoleAssignmentRequestAppScopeByRef](Set-MgRoleManagementDirectoryRoleAssignmentRequestAppScopeByRef.md)
+Update the ref of navigation property appScope in roleManagement
+
+### [Set-MgRoleManagementDirectoryRoleAssignmentRequestDirectoryScopeByRef](Set-MgRoleManagementDirectoryRoleAssignmentRequestDirectoryScopeByRef.md)
+Update the ref of navigation property directoryScope in roleManagement
+
+### [Set-MgRoleManagementDirectoryRoleAssignmentRequestPrincipalByRef](Set-MgRoleManagementDirectoryRoleAssignmentRequestPrincipalByRef.md)
+Update the ref of navigation property principal in roleManagement
+
+### [Set-MgRoleManagementDirectoryRoleAssignmentRequestRoleDefinitionByRef](Set-MgRoleManagementDirectoryRoleAssignmentRequestRoleDefinitionByRef.md)
+Update the ref of navigation property roleDefinition in roleManagement
+
+### [Set-MgRoleManagementDirectoryRoleAssignmentRequestTargetScheduleByRef](Set-MgRoleManagementDirectoryRoleAssignmentRequestTargetScheduleByRef.md)
+Update the ref of navigation property targetSchedule in roleManagement
+
+### [Set-MgRoleManagementDirectoryRoleAssignmentRoleDefinitionByRef](Set-MgRoleManagementDirectoryRoleAssignmentRoleDefinitionByRef.md)
+Update the ref of navigation property roleDefinition in roleManagement
+
+### [Set-MgRoleManagementDirectoryRoleAssignmentScheduleActivatedUsingByRef](Set-MgRoleManagementDirectoryRoleAssignmentScheduleActivatedUsingByRef.md)
+Update the ref of navigation property activatedUsing in roleManagement
+
+### [Set-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceActivatedUsingByRef](Set-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceActivatedUsingByRef.md)
+Update the ref of navigation property activatedUsing in roleManagement
+
+### [Set-MgRoleManagementDirectoryRoleEligibilityRequestAppScopeByRef](Set-MgRoleManagementDirectoryRoleEligibilityRequestAppScopeByRef.md)
+Update the ref of navigation property appScope in roleManagement
+
+### [Set-MgRoleManagementDirectoryRoleEligibilityRequestDirectoryScopeByRef](Set-MgRoleManagementDirectoryRoleEligibilityRequestDirectoryScopeByRef.md)
+Update the ref of navigation property directoryScope in roleManagement
+
+### [Set-MgRoleManagementDirectoryRoleEligibilityRequestPrincipalByRef](Set-MgRoleManagementDirectoryRoleEligibilityRequestPrincipalByRef.md)
+Update the ref of navigation property principal in roleManagement
+
+### [Set-MgRoleManagementDirectoryRoleEligibilityRequestRoleDefinitionByRef](Set-MgRoleManagementDirectoryRoleEligibilityRequestRoleDefinitionByRef.md)
+Update the ref of navigation property roleDefinition in roleManagement
+
+### [Set-MgRoleManagementDirectoryRoleEligibilityRequestTargetScheduleByRef](Set-MgRoleManagementDirectoryRoleEligibilityRequestTargetScheduleByRef.md)
+Update the ref of navigation property targetSchedule in roleManagement
+
+### [Set-MgRoleManagementEntitlementManagementRoleAssignmentDirectoryScopeByRef](Set-MgRoleManagementEntitlementManagementRoleAssignmentDirectoryScopeByRef.md)
+Update the ref of navigation property directoryScope in roleManagement
+
+### [Set-MgRoleManagementEntitlementManagementRoleAssignmentPrincipalByRef](Set-MgRoleManagementEntitlementManagementRoleAssignmentPrincipalByRef.md)
+Update the ref of navigation property principal in roleManagement
+
+### [Set-MgRoleManagementEntitlementManagementRoleAssignmentRequestActivatedUsingByRef](Set-MgRoleManagementEntitlementManagementRoleAssignmentRequestActivatedUsingByRef.md)
+Update the ref of navigation property activatedUsing in roleManagement
+
+### [Set-MgRoleManagementEntitlementManagementRoleAssignmentRequestAppScopeByRef](Set-MgRoleManagementEntitlementManagementRoleAssignmentRequestAppScopeByRef.md)
+Update the ref of navigation property appScope in roleManagement
+
+### [Set-MgRoleManagementEntitlementManagementRoleAssignmentRequestDirectoryScopeByRef](Set-MgRoleManagementEntitlementManagementRoleAssignmentRequestDirectoryScopeByRef.md)
+Update the ref of navigation property directoryScope in roleManagement
+
+### [Set-MgRoleManagementEntitlementManagementRoleAssignmentRequestPrincipalByRef](Set-MgRoleManagementEntitlementManagementRoleAssignmentRequestPrincipalByRef.md)
+Update the ref of navigation property principal in roleManagement
+
+### [Set-MgRoleManagementEntitlementManagementRoleAssignmentRequestRoleDefinitionByRef](Set-MgRoleManagementEntitlementManagementRoleAssignmentRequestRoleDefinitionByRef.md)
+Update the ref of navigation property roleDefinition in roleManagement
+
+### [Set-MgRoleManagementEntitlementManagementRoleAssignmentRequestTargetScheduleByRef](Set-MgRoleManagementEntitlementManagementRoleAssignmentRequestTargetScheduleByRef.md)
+Update the ref of navigation property targetSchedule in roleManagement
+
+### [Set-MgRoleManagementEntitlementManagementRoleAssignmentRoleDefinitionByRef](Set-MgRoleManagementEntitlementManagementRoleAssignmentRoleDefinitionByRef.md)
+Update the ref of navigation property roleDefinition in roleManagement
+
+### [Set-MgRoleManagementEntitlementManagementRoleAssignmentScheduleActivatedUsingByRef](Set-MgRoleManagementEntitlementManagementRoleAssignmentScheduleActivatedUsingByRef.md)
+Update the ref of navigation property activatedUsing in roleManagement
+
+### [Set-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceActivatedUsingByRef](Set-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceActivatedUsingByRef.md)
+Update the ref of navigation property activatedUsing in roleManagement
+
+### [Set-MgRoleManagementEntitlementManagementRoleEligibilityRequestAppScopeByRef](Set-MgRoleManagementEntitlementManagementRoleEligibilityRequestAppScopeByRef.md)
+Update the ref of navigation property appScope in roleManagement
+
+### [Set-MgRoleManagementEntitlementManagementRoleEligibilityRequestDirectoryScopeByRef](Set-MgRoleManagementEntitlementManagementRoleEligibilityRequestDirectoryScopeByRef.md)
+Update the ref of navigation property directoryScope in roleManagement
+
+### [Set-MgRoleManagementEntitlementManagementRoleEligibilityRequestPrincipalByRef](Set-MgRoleManagementEntitlementManagementRoleEligibilityRequestPrincipalByRef.md)
+Update the ref of navigation property principal in roleManagement
+
+### [Set-MgRoleManagementEntitlementManagementRoleEligibilityRequestRoleDefinitionByRef](Set-MgRoleManagementEntitlementManagementRoleEligibilityRequestRoleDefinitionByRef.md)
+Update the ref of navigation property roleDefinition in roleManagement
+
+### [Set-MgRoleManagementEntitlementManagementRoleEligibilityRequestTargetScheduleByRef](Set-MgRoleManagementEntitlementManagementRoleEligibilityRequestTargetScheduleByRef.md)
+Update the ref of navigation property targetSchedule in roleManagement
+
+### [Stop-MgRoleManagementDirectoryRoleAssignmentRequest](Stop-MgRoleManagementDirectoryRoleAssignmentRequest.md)
+Invoke action cancel
+
+### [Stop-MgRoleManagementDirectoryRoleEligibilityRequest](Stop-MgRoleManagementDirectoryRoleEligibilityRequest.md)
+Invoke action cancel
+
+### [Stop-MgRoleManagementEntitlementManagementRoleAssignmentRequest](Stop-MgRoleManagementEntitlementManagementRoleAssignmentRequest.md)
+Invoke action cancel
+
+### [Stop-MgRoleManagementEntitlementManagementRoleEligibilityRequest](Stop-MgRoleManagementEntitlementManagementRoleEligibilityRequest.md)
+Invoke action cancel
+
+### [Update-MgDeviceManagementAndroid](Update-MgDeviceManagementAndroid.md)
+Update the navigation property androidForWorkEnrollmentProfiles in deviceManagement
+
+### [Update-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfile](Update-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfile.md)
+Update the navigation property androidDeviceOwnerEnrollmentProfiles in deviceManagement
+
+### [Update-MgDeviceManagementAppleUserInitiatedEnrollmentProfile](Update-MgDeviceManagementAppleUserInitiatedEnrollmentProfile.md)
+Update the navigation property appleUserInitiatedEnrollmentProfiles in deviceManagement
+
+### [Update-MgDeviceManagementAppleUserInitiatedEnrollmentProfileAssignment](Update-MgDeviceManagementAppleUserInitiatedEnrollmentProfileAssignment.md)
+Update the navigation property assignments in deviceManagement
+
+### [Update-MgDeviceManagementAutopilotEvent](Update-MgDeviceManagementAutopilotEvent.md)
+Update the navigation property autopilotEvents in deviceManagement
+
+### [Update-MgDeviceManagementAutopilotEventPolicyStatusDetail](Update-MgDeviceManagementAutopilotEventPolicyStatusDetail.md)
+Update the navigation property policyStatusDetails in deviceManagement
+
+### [Update-MgDeviceManagementConditionalAccessSetting](Update-MgDeviceManagementConditionalAccessSetting.md)
+Update the navigation property conditionalAccessSettings in deviceManagement
+
+### [Update-MgDeviceManagementDepOnboardingSetting](Update-MgDeviceManagementDepOnboardingSetting.md)
+Update the navigation property depOnboardingSettings in deviceManagement
+
+### [Update-MgDeviceManagementDepOnboardingSettingEnrollmentProfile](Update-MgDeviceManagementDepOnboardingSettingEnrollmentProfile.md)
+Update the navigation property enrollmentProfiles in deviceManagement
+
+### [Update-MgDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity](Update-MgDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity.md)
+Update the navigation property importedAppleDeviceIdentities in deviceManagement
+
+### [Update-MgDeviceManagementDeviceEnrollmentConfiguration](Update-MgDeviceManagementDeviceEnrollmentConfiguration.md)
+Update the navigation property deviceEnrollmentConfigurations in deviceManagement
+
+### [Update-MgDeviceManagementDeviceEnrollmentConfigurationAssignment](Update-MgDeviceManagementDeviceEnrollmentConfigurationAssignment.md)
+Update the navigation property assignments in deviceManagement
+
+### [Update-MgDeviceManagementImportedDeviceIdentity](Update-MgDeviceManagementImportedDeviceIdentity.md)
+Update the navigation property importedDeviceIdentities in deviceManagement
+
+### [Update-MgDeviceManagementImportedWindowAutopilotDeviceIdentity](Update-MgDeviceManagementImportedWindowAutopilotDeviceIdentity.md)
+Update the navigation property importedWindowsAutopilotDeviceIdentities in deviceManagement
+
+### [Update-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice](Update-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice.md)
+Update the navigation property userExperienceAnalyticsNotAutopilotReadyDevice in deviceManagement
+
+### [Update-MgDeviceManagementWindowAutopilotDeploymentProfile](Update-MgDeviceManagementWindowAutopilotDeploymentProfile.md)
+Update the navigation property windowsAutopilotDeploymentProfiles in deviceManagement
+
+### [Update-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDevice](Update-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDevice.md)
+Update the navigation property assignedDevices in deviceManagement
+
+### [Update-MgDeviceManagementWindowAutopilotDeploymentProfileAssignment](Update-MgDeviceManagementWindowAutopilotDeploymentProfileAssignment.md)
+Update the navigation property assignments in deviceManagement
+
+### [Update-MgDeviceManagementWindowAutopilotDeviceIdentity](Update-MgDeviceManagementWindowAutopilotDeviceIdentity.md)
+Update the navigation property windowsAutopilotDeviceIdentities in deviceManagement
+
+### [Update-MgDeviceManagementWindowAutopilotSetting](Update-MgDeviceManagementWindowAutopilotSetting.md)
+Update the navigation property windowsAutopilotSettings in deviceManagement
+
+### [Update-MgDeviceManagementWindowFeatureUpdateProfile](Update-MgDeviceManagementWindowFeatureUpdateProfile.md)
+Update the navigation property windowsFeatureUpdateProfiles in deviceManagement
+
+### [Update-MgDeviceManagementWindowFeatureUpdateProfileAssignment](Update-MgDeviceManagementWindowFeatureUpdateProfileAssignment.md)
+Update the navigation property assignments in deviceManagement
+
+### [Update-MgDeviceManagementWindowFeatureUpdateProfileDeviceUpdateState](Update-MgDeviceManagementWindowFeatureUpdateProfileDeviceUpdateState.md)
+Update the navigation property deviceUpdateStates in deviceManagement
+
+### [Update-MgRoleManagement](Update-MgRoleManagement.md)
+Update roleManagement
+
+### [Update-MgRoleManagementDeviceManagement](Update-MgRoleManagementDeviceManagement.md)
+Update the navigation property deviceManagement in roleManagement
+
+### [Update-MgRoleManagementDeviceManagementResourceNamespace](Update-MgRoleManagementDeviceManagementResourceNamespace.md)
+Update the navigation property resourceNamespaces in roleManagement
+
+### [Update-MgRoleManagementDeviceManagementResourceNamespaceResourceAction](Update-MgRoleManagementDeviceManagementResourceNamespaceResourceAction.md)
+Update the navigation property resourceActions in roleManagement
+
+### [Update-MgRoleManagementDeviceManagementResourceNamespaceResourceActionResourceScope](Update-MgRoleManagementDeviceManagementResourceNamespaceResourceActionResourceScope.md)
+Update the navigation property resourceScope in roleManagement
+
+### [Update-MgRoleManagementDeviceManagementRoleAssignment](Update-MgRoleManagementDeviceManagementRoleAssignment.md)
+Update the navigation property roleAssignments in roleManagement
+
+### [Update-MgRoleManagementDeviceManagementRoleAssignmentAppScope](Update-MgRoleManagementDeviceManagementRoleAssignmentAppScope.md)
+Update the navigation property appScopes in roleManagement
+
+### [Update-MgRoleManagementDeviceManagementRoleDefinition](Update-MgRoleManagementDeviceManagementRoleDefinition.md)
+Update the navigation property roleDefinitions in roleManagement
+
+### [Update-MgRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom](Update-MgRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom.md)
+Update the navigation property inheritsPermissionsFrom in roleManagement
+
+### [Update-MgRoleManagementDirectory](Update-MgRoleManagementDirectory.md)
+Update the navigation property directory in roleManagement
+
+### [Update-MgRoleManagementDirectoryResourceNamespace](Update-MgRoleManagementDirectoryResourceNamespace.md)
+Update the navigation property resourceNamespaces in roleManagement
+
+### [Update-MgRoleManagementDirectoryResourceNamespaceResourceAction](Update-MgRoleManagementDirectoryResourceNamespaceResourceAction.md)
+Update the navigation property resourceActions in roleManagement
+
+### [Update-MgRoleManagementDirectoryResourceNamespaceResourceActionResourceScope](Update-MgRoleManagementDirectoryResourceNamespaceResourceActionResourceScope.md)
+Update the navigation property resourceScope in roleManagement
+
+### [Update-MgRoleManagementDirectoryRoleAssignment](Update-MgRoleManagementDirectoryRoleAssignment.md)
+Update the navigation property roleAssignments in roleManagement
+
+### [Update-MgRoleManagementDirectoryRoleAssignmentApproval](Update-MgRoleManagementDirectoryRoleAssignmentApproval.md)
+Update the navigation property roleAssignmentApprovals in roleManagement
+
+### [Update-MgRoleManagementDirectoryRoleAssignmentApprovalStep](Update-MgRoleManagementDirectoryRoleAssignmentApprovalStep.md)
+Update the navigation property steps in roleManagement
+
+### [Update-MgRoleManagementDirectoryRoleAssignmentAppScope](Update-MgRoleManagementDirectoryRoleAssignmentAppScope.md)
+Update the navigation property appScope in roleManagement
+
+### [Update-MgRoleManagementDirectoryRoleAssignmentRequest](Update-MgRoleManagementDirectoryRoleAssignmentRequest.md)
+Update the navigation property roleAssignmentRequests in roleManagement
+
+### [Update-MgRoleManagementDirectoryRoleAssignmentSchedule](Update-MgRoleManagementDirectoryRoleAssignmentSchedule.md)
+Update the navigation property roleAssignmentSchedules in roleManagement
+
+### [Update-MgRoleManagementDirectoryRoleAssignmentScheduleInstance](Update-MgRoleManagementDirectoryRoleAssignmentScheduleInstance.md)
+Update the navigation property roleAssignmentScheduleInstances in roleManagement
+
+### [Update-MgRoleManagementDirectoryRoleDefinition](Update-MgRoleManagementDirectoryRoleDefinition.md)
+Update the navigation property roleDefinitions in roleManagement
+
+### [Update-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom](Update-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom.md)
+Update the navigation property inheritsPermissionsFrom in roleManagement
+
+### [Update-MgRoleManagementDirectoryRoleEligibilityRequest](Update-MgRoleManagementDirectoryRoleEligibilityRequest.md)
+Update the navigation property roleEligibilityRequests in roleManagement
+
+### [Update-MgRoleManagementDirectoryRoleEligibilitySchedule](Update-MgRoleManagementDirectoryRoleEligibilitySchedule.md)
+Update the navigation property roleEligibilitySchedules in roleManagement
+
+### [Update-MgRoleManagementDirectoryRoleEligibilityScheduleInstance](Update-MgRoleManagementDirectoryRoleEligibilityScheduleInstance.md)
+Update the navigation property roleEligibilityScheduleInstances in roleManagement
+
+### [Update-MgRoleManagementEntitlementManagement](Update-MgRoleManagementEntitlementManagement.md)
+Update the navigation property entitlementManagement in roleManagement
+
+### [Update-MgRoleManagementEntitlementManagementResourceNamespace](Update-MgRoleManagementEntitlementManagementResourceNamespace.md)
+Update the navigation property resourceNamespaces in roleManagement
+
+### [Update-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction](Update-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction.md)
+Update the navigation property resourceActions in roleManagement
+
+### [Update-MgRoleManagementEntitlementManagementResourceNamespaceResourceActionResourceScope](Update-MgRoleManagementEntitlementManagementResourceNamespaceResourceActionResourceScope.md)
+Update the navigation property resourceScope in roleManagement
+
+### [Update-MgRoleManagementEntitlementManagementRoleAssignment](Update-MgRoleManagementEntitlementManagementRoleAssignment.md)
+Update the navigation property roleAssignments in roleManagement
+
+### [Update-MgRoleManagementEntitlementManagementRoleAssignmentApproval](Update-MgRoleManagementEntitlementManagementRoleAssignmentApproval.md)
+Update the navigation property roleAssignmentApprovals in roleManagement
+
+### [Update-MgRoleManagementEntitlementManagementRoleAssignmentApprovalStep](Update-MgRoleManagementEntitlementManagementRoleAssignmentApprovalStep.md)
+Update the navigation property steps in roleManagement
+
+### [Update-MgRoleManagementEntitlementManagementRoleAssignmentAppScope](Update-MgRoleManagementEntitlementManagementRoleAssignmentAppScope.md)
+Update the navigation property appScope in roleManagement
+
+### [Update-MgRoleManagementEntitlementManagementRoleAssignmentRequest](Update-MgRoleManagementEntitlementManagementRoleAssignmentRequest.md)
+Update the navigation property roleAssignmentRequests in roleManagement
+
+### [Update-MgRoleManagementEntitlementManagementRoleAssignmentSchedule](Update-MgRoleManagementEntitlementManagementRoleAssignmentSchedule.md)
+Update the navigation property roleAssignmentSchedules in roleManagement
+
+### [Update-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance](Update-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance.md)
+Update the navigation property roleAssignmentScheduleInstances in roleManagement
+
+### [Update-MgRoleManagementEntitlementManagementRoleDefinition](Update-MgRoleManagementEntitlementManagementRoleDefinition.md)
+Update the navigation property roleDefinitions in roleManagement
+
+### [Update-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom](Update-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom.md)
+Update the navigation property inheritsPermissionsFrom in roleManagement
+
+### [Update-MgRoleManagementEntitlementManagementRoleEligibilityRequest](Update-MgRoleManagementEntitlementManagementRoleEligibilityRequest.md)
+Update the navigation property roleEligibilityRequests in roleManagement
+
+### [Update-MgRoleManagementEntitlementManagementRoleEligibilitySchedule](Update-MgRoleManagementEntitlementManagementRoleEligibilitySchedule.md)
+Update the navigation property roleEligibilitySchedules in roleManagement
+
+### [Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance](Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstance.md)
+Update the navigation property roleEligibilityScheduleInstances in roleManagement
+
