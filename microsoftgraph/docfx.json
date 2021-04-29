@@ -1,0 +1,125 @@
+{
+  "build": {
+    "content": [
+      {
+        "files":[
+          "toc.yml"
+        ],
+        "src": "breadcrumb",
+        "dest": "microsoftgraph/breadcrumb"
+      },
+      {
+        "files": [
+          "**/*.md"
+        ],
+        "src": "docs-conceptual/graph-powershell-1.0",
+        "version": "graph-powershell-1.0",
+        "dest": "microsoftgraph"
+      },
+      {
+        "files": [
+          "toc.yml"
+        ],
+        "src": "docs-conceptual/graph-powershell-1.0",
+        "version": "graph-powershell-1.0",
+        "dest": "microsoftgraph/graph-powershell-1.0"
+      },
+      {
+        "files": [
+          "**/*.yml"
+        ],
+        "exclude": [
+          "toc.yml" 
+        ],
+        "src": "graph-powershell-1.0",
+        "version": "graph-powershell-1.0",
+        "dest": "module"
+      },
+      {
+        "files": [
+          "toc.yml"
+        ],
+        "src": "graph-powershell-1.0",
+        "version": "graph-powershell-1.0",
+        "dest": "module/graph-powershell-1.0"
+      },
+      {
+        "files": [
+          "**/*.md"
+        ],
+        "src": "docs-conceptual/graph-powershell-beta",
+        "version": "graph-powershell-beta",
+        "dest": "microsoftgraph"
+      },
+      {
+        "files": [
+          "toc.yml"
+        ],
+        "src": "docs-conceptual/graph-powershell-beta",
+        "version": "graph-powershell-beta",
+        "dest": "microsoftgraph/graph-powershell-beta"
+      },
+      {
+        "files": [
+          "**/*.yml"
+        ],
+        "exclude": [
+          "toc.yml" 
+        ],
+        "src": "graph-powershell-beta",
+        "version": "graph-powershell-beta",
+        "dest": "module"
+      },
+      {
+        "files": [
+          "toc.yml"
+        ],
+        "src": "graph-powershell-beta",
+        "version": "graph-powershell-beta",
+        "dest": "module/graph-powershell-beta"
+      },
+      {
+        "files": [
+          "**/*.md"
+        ],
+        "src": "virtual-folder",
+        "dest": "module"
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg"
+        ],
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      }
+    ],
+    "versions": {
+      "graph-powershell-1.0": {
+        "dest": "graph-powershell-1.0"
+      },
+	  "graph-powershell-beta": {
+        "dest": "graph-powershell-beta"
+      }
+    },
+    "overwrite": [],
+    "externalReference": [],
+    "globalMetadata": {
+      "apiPlatform": "powershell",
+      "breadcrumb_path": "/powershell/microsoftgraph/breadcrumb/toc.json",
+	  "ms.prod": "graph",
+      "ms.technology": "",
+      "ms.topic": "reference",
+      "ms.author": "gendungu",
+      "author": "finsharp",
+    },
+    "fileMetadata": {},
+    "template": [],
+    "dest": "microsoftgraph-docs-powershell",
+    "markdownEngineName": "markdig"
+  }
+}
