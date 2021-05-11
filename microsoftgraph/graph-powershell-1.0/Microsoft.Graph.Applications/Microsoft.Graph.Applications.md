@@ -9,6 +9,7 @@ Locale: en-US
 # Microsoft.Graph.Applications Module
 ## Description
 Microsoft Graph PowerShell Cmdlets
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 ## Microsoft.Graph.Applications Cmdlets
 ### [Add-MgApplicationKey](Add-MgApplicationKey.md)
