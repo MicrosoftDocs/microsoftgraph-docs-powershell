@@ -15,7 +15,9 @@ The deprecation of Azure AD PowerShell will be announced soon. The Microsoft Gra
 
 ## Why Microsoft Graph PowerShell?
 
-- Azure AD PowerShell is based off Azure AD Graph which has been deprecated and new capability is not being actively added to the module. Microsoft Graph PowerShell is based off the newer Microsoft Graph.
+The following list summarizes the key advantages of using Microsoft Graph PowerShell:
+
+- **Azure AD Graph is deprecated**: Azure AD PowerShell is based off Azure AD Graph which has been deprecated and no new capability is being actively added to the module. Microsoft Graph PowerShell is based off the newer Microsoft Graph API.
 - **Access to all Microsoft Graph APIs**: Microsoft Graph is a unified API that also includes, in addition to Azure AD, APIs from other Microsoft services like SharePoint, Exchange, Outlook, etc, all accessed through a single end point with a single access token.
 - **Cross-platform support and available on PowerShell 7 and above**: Microsoft Graph PowerShell module works with PowerShell 7 and later and on all platforms including Windows, macOS, and Linux. It's also compatible with Windows PowerShell 5.1.
 - **Open source**: Feature teams and the community can create great PowerShell experiences and share them with everyone.
@@ -35,12 +37,12 @@ There is currently no tool to automatically converts scripts in Azure AD PowerSh
 
 There are limitations that currently exist in Microsoft Graph PowerShell either by design or due to some functionality that is yet to be built in.
 
-- There is no equivalent of -SearchString (yet) for Get-AzureAdUser, Get-AzureADGroup commands. Use -Filter instead.
-- Search does not (yet) work for any AzureAD commands.
+- There is no equivalent of -SearchString (yet) for Get-AzureADUser, Get-AzureADGroup commands. Use -Filter instead.
+- Search does not (yet) work for any Azure AD commands.
 - You need to use hash tables to pass nested parameters in some cases: [Nested parameters](https://github.com/microsoftgraph/msgraph-sdk-powershell/blob/dev/samples/9-Applications.ps1#L28-L43).
 - **Pro-tip**: Use the MS Graph powershell ConsistencyLevel parameter. It lets you do $count!
 
 ## Next steps
 
-- [Uninstall AzureAD](/powershell/azure/active-directory/install-previous-version): Uninstall the old module before installing the new one.
-- [Install the SDK](/graph/powershell/installation) : Follow these instructions to install the Microsoft Graph PowerShell SDK.
+- [Uninstall AzureAD PowerShell](/powershell/azure/active-directory/install-previous-version): Uninstall the old module before installing the new one.
+- [Install the Microsoft Graph PowerShell SDK](/graph/powershell/installation) : Follow these instructions to install the Microsoft Graph PowerShell SDK.
