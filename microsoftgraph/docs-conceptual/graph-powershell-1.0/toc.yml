@@ -1,2 +1,8 @@
 - name: Overview
-  href: overview.md
+  Items:
+  - name: Introducing the Microsoft Graph PowerShell 
+    href: overview.md
+- name: Migrate to Microsoft Graph PowerShell
+  href: migration-steps.md
+
+  
