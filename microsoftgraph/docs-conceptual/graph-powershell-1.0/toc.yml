@@ -1,12 +1,10 @@
-- name: Overview
-  Items:
-  - name: Introducing the Microsoft Graph PowerShell 
-    href: overview.md
+- name: Overview of Microsoft Graph PowerShell
+  href: overview.md
 - name: Migrate to Microsoft Graph PowerShell
   items:   
   - name: Migration steps
     href: migration-steps.md
   - name: The cmdlet map
-    href: azuread-msonline-graph-ps-cmdlet-map.md  
+    href: azuread-msoline-cmdlet-map.md 
 
   
