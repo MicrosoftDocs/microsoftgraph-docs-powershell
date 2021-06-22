@@ -42,5 +42,5 @@ There are limitations that currently exist in Microsoft Graph PowerShell either 
 
 ## Next steps
 
-- [Uninstall AzureAD](/powershell/azure/active-directory/install-previous-version?view=azureadps-2.0): Uninstall the old module before installing the new one.
+- [Uninstall AzureAD](/powershell/azure/active-directory/install-previous-version): Uninstall the old module before installing the new one.
 - [Install the SDK](/graph/powershell/installation) : Follow these instructions to install the Microsoft Graph PowerShell SDK.
