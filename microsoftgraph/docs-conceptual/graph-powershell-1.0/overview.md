@@ -1,6 +1,6 @@
 ---
 title: 'Microsoft Graph PowerShell SDK overview'
-description: This is an overview of the Microsoft Graph PowerShell SDK.
+description: Provides a description and getting started information for the Microsoft Graph PowerShell SDK.
 services: active-directory
 
 ms.devlang: powershell
@@ -11,17 +11,17 @@ manager: CelesteDG
 ms.author: eunicewaweru
 ms.reviewer: darrmi, maisarissi
 ---
-# Introducing the Microsoft Graph PowerShell
+# Microsoft Graph PowerShell SDK overview
 
-The Microsoft Graph exposes REST APIs and client libraries to access data. The Microsoft Graph PowerShell SDK acts as an API wrapper for the Microsoft Graph APIs, exposing the entire API set for use in PowerShell. 
-Microsoft Graph PowerShell is a set of cmdlets that helps in managing your identity needs at scale from automating tasks through scripts to managing users in bulk through Azure Active Directory (Azure AD).
+The Microsoft Graph PowerShell SDK acts as an API wrapper for the Microsoft Graph APIs, exposing the entire API set for use in PowerShell. 
+The Microsoft Graph PowerShell SDK contains a set of cmdlets that helps you manage identities at scale from automating tasks to managing users in bulk using Azure Active Directory (Azure AD).
 It will help administer every Azure AD feature that has an API in Microsoft Graph.
 
-Microsoft Graph PowerShell set of modules is the replacement of Azure AD PowerShell module and the recommended version to use for interacting with Azure AD.
+The Microsoft Graph PowerShell SDK is the replacement for the Azure AD PowerShell module and is recommended for interacting with Azure AD.
 
 ## Features
 
-The Microsoft Graph PowerShell module features the following benefits
+The Microsoft Graph PowerShell SDK provides the following benefits:
 
 - Access to all Microsoft Graph APIs.
 - Cross-platform support and available on PowerShell 7 and above: Microsoft Graph PowerShell module works with PowerShell 7 and later and on all platforms including Windows, macOS, and Linux. It's also compatible with Windows PowerShell 5.1.
@@ -29,9 +29,9 @@ The Microsoft Graph PowerShell module features the following benefits
 - Open source: Feature teams and the community can create great PowerShell experiences and share them with everyone.
 - Security : Microsoft Graph PowerShell runs on the Microsoft Authentication Library (MSAL) making it more secure.
 
-## Upgrade your environment to Ms Graph PowerShell
+## Upgrade your environment to use the Microsoft Graph PowerShell SDK
 
-To see the mapping of the old cmdlets, view the cmdletmap to see what the new cmdlets are.
+To see the mapping of the  Azure AD PowerShell cmdlets to the cmdlets in the Microsoft Graph PowerShell SDK, see the [cmdlet map](azuread-msoline-cmdlet-map.md).
 
 ## Install the Microsoft Graph PowerShell SDK
 
