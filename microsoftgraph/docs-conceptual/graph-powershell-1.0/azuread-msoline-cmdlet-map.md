@@ -1,14 +1,14 @@
 ---
 title: "Find Azure AD and MSOnline cmdlets in Ms Graph PowerShell"
-description: "This is a map of the Azure AD PowerShell and MSOnline cmdlets to Ms Graph PowerShell cmdlets"
+description: "Use this map of the Azure AD PowerShell and MSOnline cmdlets to find the Microsoft Graph PowerShell cmdlets that you need."
 author: msewaweru
 ms.custom: getting-started
 ---
 
 # Find Azure AD and MSOnline cmdlets in Ms Graph PowerShell
-When you start to migrate to Ms Graph PowerShell from Azure AD PowerShell or MSOnline, please use the map below to find the names of the cmdlets in the new module.
+You can use this map of Azure AD PowerShell and MSOnline cmdlets to find the cmdlets that you need in the [Microsoft Graph PowerShell SDK](https://docs.microsoft.com/powershell/microsoftgraph/overview?view=graph-powershell-beta). For more information about the new cmdlets, see Get started with the [Microsoft Graph PowerShell SDK](https://docs.microsoft.com/graph/powershell/get-started).
 
-## Azure AD to Ms Graph PowerShell by category
+## Azure AD to Microsoft Graph PowerShell by category
 
 ### Administrative units
 

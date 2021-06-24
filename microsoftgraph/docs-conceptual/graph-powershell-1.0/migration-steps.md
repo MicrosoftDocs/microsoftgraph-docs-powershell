@@ -1,6 +1,6 @@
 ---
-title: "Migrate from Azure AD PowerShell"
-description: "Learn the steps and tools for migrating from Azure AD to the new Microsoft Graph PowerShell"
+title: "Migrate from Azure AD PowerShell to the Microsoft Graph PowerShell SDK."
+description: "Migrate your applications from using Azure AD PowerShell to the Microsoft Graph PowerShell SDK."
 ms.topic: conceptual
 ms.date: 6/22/2021
 author: msewaweru
@@ -9,13 +9,13 @@ ms.author: eunicewaweru
 ms.reviewer: darrmi, maisarissi
 ---
 
-# Migrate from Azure AD PowerShell to Microsoft Graph PowerShell
+# Migrate from Azure AD PowerShell to the Microsoft Graph PowerShell SDK
 
-The deprecation of Azure AD PowerShell will be announced soon. The Microsoft Graph PowerShell is the recommended set of modules for interacting with Azure AD.
+You can use the information in this article to plan the migration of your applications that use Azure AD PowerShell to use the Microsoft Graph PowerShell SDK.
 
 ## Why Microsoft Graph PowerShell?
 
-The following list summarizes the key advantages of using Microsoft Graph PowerShell:
+The following list summarizes the key advantages of using the Microsoft Graph PowerShell SDK:
 
 - **Azure AD Graph is deprecated**: Azure AD PowerShell is based off Azure AD Graph which has been deprecated and no new capability is being actively added to the module. Microsoft Graph PowerShell is based off the newer Microsoft Graph API.
 - **Access to all Microsoft Graph APIs**: Microsoft Graph is a unified API that also includes, in addition to Azure AD, APIs from other Microsoft services like SharePoint, Exchange, Outlook, etc, all accessed through a single end point with a single access token.
@@ -38,7 +38,7 @@ There is currently no tool to automatically converts scripts in Azure AD PowerSh
 There are limitations that currently exist in Microsoft Graph PowerShell either by design or due to some functionality that is yet to be built in.
 
 - There is no equivalent of -SearchString (yet) for Get-AzureADUser, Get-AzureADGroup commands. Use -Filter instead.
-- Search does not (yet) work for any Azure AD commands.
+- Search does not work for any Azure AD commands.
 - You need to use hash tables to pass nested parameters in some cases: [Nested parameters](https://github.com/microsoftgraph/msgraph-sdk-powershell/blob/dev/samples/9-Applications.ps1#L28-L43).
 - **Pro-tip**: Use the MS Graph powershell ConsistencyLevel parameter. It lets you do $count!
 
