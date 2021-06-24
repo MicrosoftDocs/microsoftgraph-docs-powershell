@@ -37,7 +37,7 @@ There is currently no tool to automatically converts scripts in Azure AD PowerSh
 
 There are limitations that currently exist in Microsoft Graph PowerShell either by design or due to some functionality that is yet to be built in.
 
-- There is no equivalent of -SearchString (yet) for Get-AzureADUser, Get-AzureADGroup commands. Use -Filter instead.
+- There is not yet an equivalent of -SearchString for Get-AzureADUser, Get-AzureADGroup commands. Use -Filter instead.
 - Search does not work for any Azure AD commands.
 - You need to use hash tables to pass nested parameters in some cases: [Nested parameters](https://github.com/microsoftgraph/msgraph-sdk-powershell/blob/dev/samples/9-Applications.ps1#L28-L43).
 - **Pro-tip**: Use the Microsoft Graph PowerShell ConsistencyLevel parameter. It lets you do $count!
