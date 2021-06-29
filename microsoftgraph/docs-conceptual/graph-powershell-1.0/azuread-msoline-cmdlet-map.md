@@ -30,7 +30,7 @@ The following is the categorization of the Azure AD cmdlets. Select the category
         - [Directory](#directory)
         - [Directory objects](#directory-objects)
         - [Directory roles](#directory-roles)
-        - [Domains](#Domains)
+        - [Domains](#domains)
         - [Extension properties](#extension-properties)
         - [Groups](#groups)
         - [Oauth2](#oauth2)
@@ -95,7 +95,7 @@ The following is the categorization of the Azure AD cmdlets. Select the category
 |Get-AzureADDeletedApplication||
 |New-AzureADApplication|New-MgApplication|
 |New-AzureADApplicationExtensionProperty|New-MgApplicationExtensionProperty|
-|New-AzureADApplicationKeyCredential|[Add-MgApplicationKey](/powershell/module/microsoft.graph.applications/add-mgapplicationkey)|
+|New-AzureADApplicationKeyCredential|[Add-MgApplicationKey](/powershell/module/microsoft.graph.applications/add-mgapplicationkey?view=graph-powershell-1.0&preserve-view=true)|
 |New-AzureADApplicationPasswordCredential|Add-MgApplicationPassword|
 |Remove-AzureADApplication|Remove-MgApplication|
 |Remove-AzureADApplicationExtensionProperty|Remove-MgApplicationExtensionProperty|
