@@ -10,9 +10,38 @@ You can use this map of Azure AD PowerShell and MSOnline cmdlets to find the cmd
 
 ## Azure AD to Microsoft Graph PowerShell by category
 
+The following is the categorization of the Azure AD cmdlets. Select the category you would like to work with.
+
+:::row:::
+    :::column:::
+        - [Administrative units](#administrative-units)
+        - [Application proxy application management](#application-proxy-application-management)
+        - [Application proxy connector management](#application-proxy-connector-management)
+        - [Applications](#applications)
+        - [Azure AD](#azure-ad)
+        - [Certificate authorities](#certificate-authorities)
+        - [Connect to your directory](#connect-to-your-directory)
+        - [Contacts](#contacts)
+        - [Contracts](#contracts)
+        - [Deleted objects](#deleted-objects)
+    :::column-end:::
+    :::column:::
+        - [Devices](#devices)
+        - [Directory](#directory)
+        - [Directory objects](#directory-objects)
+        - [Directory roles](#directory-roles)
+        - [Domains](#Domains)
+        - [Extension properties](#extension-properties)
+        - [Groups](#groups)
+        - [Oauth2](#oauth2)
+        - [Service principals](#service-principals)
+        - [Users](#users)
+    :::column-end:::
+:::row-end:::
+
 ### Administrative units
 
-|Azure AD cmdlets | Ms Graph PowerShell cmdlets|
+|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Add-AzureADMSAdministrativeUnitMember|New-MgDirectoryAdministrativeUnitMemberByRef|
 |Add-AzureADMSScopedRoleMembership|New-MgDirectoryRoleScopedMember|
@@ -26,7 +55,7 @@ You can use this map of Azure AD PowerShell and MSOnline cmdlets to find the cmd
 
 ### Application proxy application management
 
-|Azure AD cmdlets | Ms Graph PowerShell cmdlets|
+|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Get-AzureADApplicationProxyApplication||
 |Get-AzureADApplicationProxyApplicationConnectorGroup||
@@ -39,7 +68,7 @@ You can use this map of Azure AD PowerShell and MSOnline cmdlets to find the cmd
 
 ### Application proxy connector management
 
-|Azure AD cmdlets | Ms Graph PowerShell cmdlets|
+|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Get-AzureADApplicationProxyConnector||
 |Get-AzureADApplicationProxyConnectorGroup||
@@ -53,7 +82,7 @@ You can use this map of Azure AD PowerShell and MSOnline cmdlets to find the cmd
 
 ### Applications
 
-|Azure AD cmdlets | Ms Graph PowerShell cmdlets|
+|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Add-AzureADApplicationOwner|New-MgApplicationOwnerByRef|
 |Get-AzureADApplication|Get-MgApplication|
@@ -66,7 +95,7 @@ You can use this map of Azure AD PowerShell and MSOnline cmdlets to find the cmd
 |Get-AzureADDeletedApplication||
 |New-AzureADApplication|New-MgApplication|
 |New-AzureADApplicationExtensionProperty|New-MgApplicationExtensionProperty|
-|New-AzureADApplicationKeyCredential|Add-MgApplicationKey|
+|New-AzureADApplicationKeyCredential|[Add-MgApplicationKey](/powershell/module/microsoft.graph.applications/add-mgapplicationkey)|
 |New-AzureADApplicationPasswordCredential|Add-MgApplicationPassword|
 |Remove-AzureADApplication|Remove-MgApplication|
 |Remove-AzureADApplicationExtensionProperty|Remove-MgApplicationExtensionProperty|
@@ -78,7 +107,7 @@ You can use this map of Azure AD PowerShell and MSOnline cmdlets to find the cmd
 
 ### Azure AD
 
-|Azure AD cmdlets | Ms Graph PowerShell cmdlets|
+|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Add-AzureADMSApplicationOwner|New-MgApplicationOwnerByRef|
 |Add-AzureADMSServicePrincipalDelegatedPermissionClassification|New-MgServicePrincipalDelegatedPermissionClassification|
@@ -132,7 +161,7 @@ You can use this map of Azure AD PowerShell and MSOnline cmdlets to find the cmd
 
 ### Certificate Authorities
 
-|Azure AD cmdlets | Ms Graph PowerShell cmdlets|
+|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Get-AzureADTrustedCertificateAuthority||
 |New-AzureADTrustedCertificateAuthority||
@@ -141,14 +170,14 @@ You can use this map of Azure AD PowerShell and MSOnline cmdlets to find the cmd
 
 ### Connect to your directory
 
-|Azure AD cmdlets | Ms Graph PowerShell cmdlets|
+|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Connect-AzureAD|Connect-MgGraph|
 |Disconnect-AzureAD|Disconnect-MgGraph|
 
 ### Contacts
 
-|Azure AD cmdlets | Ms Graph PowerShell cmdlets|
+|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Get-AzureADContact|Get-MgContact|
 |Get-AzureADContactDirectReport|Get-MgContactDirectReport|
@@ -161,19 +190,19 @@ You can use this map of Azure AD PowerShell and MSOnline cmdlets to find the cmd
 
 ### Contracts
 
-|Azure AD cmdlets | Ms Graph PowerShell cmdlets|
+|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Get-AzureADContract|Get-MgContract|
 
 ### Deleted objects
 
-|Azure AD cmdlets | Ms Graph PowerShell cmdlets|
+|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Restore-AzureADDeletedApplication|Restore-MgApplication|
 
 ### Devices
 
-|Azure AD cmdlets | Ms Graph PowerShell cmdlets|
+|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Add-AzureADDeviceRegisteredOwner|New-MgDeviceRegisteredOwnerByRef.md|
 |Add-AzureADDeviceRegisteredUser|New-MgDeviceRegisteredUserByRef|
@@ -189,7 +218,7 @@ You can use this map of Azure AD PowerShell and MSOnline cmdlets to find the cmd
 
 ### Directory
 
-|Azure AD cmdlets | Ms Graph PowerShell cmdlets|
+|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Get-AzureADSubscribedSku|Get-MgSubscribedSku|
 |Get-AzureADTenantDetail||
@@ -198,13 +227,13 @@ You can use this map of Azure AD PowerShell and MSOnline cmdlets to find the cmd
 
 ### Directory Objects
 
-|Azure AD cmdlets | Ms Graph PowerShell cmdlets|
+|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Get-AzureADObjectByObjectId||
 
 ### Directory roles
 
-|Azure AD cmdlets | Ms Graph PowerShell cmdlets|
+|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Add-AzureADDirectoryRoleMember|New-MgDirectoryRoleMemberByRef|
 |Enable-AzureADDirectoryRole||
@@ -215,7 +244,7 @@ You can use this map of Azure AD PowerShell and MSOnline cmdlets to find the cmd
 
 ### Domains
 
-|Azure AD cmdlets | Ms Graph PowerShell cmdlets|
+|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Confirm-AzureADDomain||
 |Get-AzureADDomain|Get-MgDomain|
@@ -228,13 +257,13 @@ You can use this map of Azure AD PowerShell and MSOnline cmdlets to find the cmd
 
 ### Extension properties
 
-|Azure AD cmdlets | Ms Graph PowerShell cmdlets|
+|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Get-AzureADExtensionProperty||
 
 ### Groups
 
-|Azure AD cmdlets | Ms Graph PowerShell cmdlets|
+|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Add-AzureADGroupMember|New-MgGroupMember|
 |Add-AzureADGroupOwner|New-MgGroupOwnerByRef|
@@ -265,14 +294,14 @@ You can use this map of Azure AD PowerShell and MSOnline cmdlets to find the cmd
 
 ### Oauth2
 
-|Azure AD cmdlets | Ms Graph PowerShell cmdlets|
+|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Get-AzureADOAuth2PermissionGrant|Get-MgOauth2PermissionGrant|
 |Remove-AzureADOAuth2PermissionGrant|Remove-MgOauth2PermissionGrant|
 
 ### Service principals
 
-|Azure AD cmdlets | Ms Graph PowerShell cmdlets|
+|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Add-AzureADServicePrincipalOwner|New-MgServicePrincipalOwnerByRef|
 |Get-AzureADServiceAppRoleAssignedTo||
@@ -299,7 +328,7 @@ You can use this map of Azure AD PowerShell and MSOnline cmdlets to find the cmd
 
 ### Users
 
-|Azure AD cmdlets | Ms Graph PowerShell cmdlets|
+|Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Get-AzureADUser|Get-MgUser|
 |Get-AzureADUserAppRoleAssignment|Get-MgUserAppRoleAssignment|
@@ -334,7 +363,7 @@ You can use this map of Azure AD PowerShell and MSOnline cmdlets to find the cmd
 
 ## MSOnline to Ms Graph PowerShell
 
-|MSOnline cmdlets | Ms Graph PowerShell cmdlets|
+|MSOnline cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Add-MsolAdministrativeUnitMember|New-MgDirectoryAdministrativeUnitMemberByRef|
 |Add-MsolForeignGroupToRole||
