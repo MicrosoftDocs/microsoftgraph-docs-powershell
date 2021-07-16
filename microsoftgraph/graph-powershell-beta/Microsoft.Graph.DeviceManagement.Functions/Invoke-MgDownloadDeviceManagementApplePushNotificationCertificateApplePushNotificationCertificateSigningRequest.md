@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions/invoke-mgdownloaddevicemanagementapplepushnotificationcertificateapplepushnotificationcertificatesigningrequest
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest
 
 ## SYNOPSIS
-Invoke function downloadApplePushNotificationCertificateSigningRequest
+Download Apple push notification certificate signing request
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotifi
 ```
 
 ## DESCRIPTION
-Invoke function downloadApplePushNotificationCertificateSigningRequest
+Download Apple push notification certificate signing request
 
 ## EXAMPLES
 
@@ -38,3 +38,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+

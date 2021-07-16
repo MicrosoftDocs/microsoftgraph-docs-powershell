@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Reports-help.xml
+external help file:
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportyammerdeviceusageuserdetaild0ac
 schema: 2.0.0
@@ -14,7 +14,8 @@ Invoke function getYammerDeviceUsageUserDetail
 
 ### Get1 (Default)
 ```
-Get-MgReportYammerDeviceUsageUserDetailD0Ac -Date <DateTime> -OutFile <String> [-PassThru] [<CommonParameters>]
+Get-MgReportYammerDeviceUsageUserDetailD0Ac -Date <DateTime> -OutFile <String> [-PassThru]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
@@ -34,7 +35,7 @@ Invoke function getYammerDeviceUsageUserDetail
 Usage: date={date}
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: Get1
 Aliases:
 
@@ -50,7 +51,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IReportsIdentity
+Type: Microsoft.Graph.PowerShell.Models.IReportsIdentity
 Parameter Sets: GetViaIdentity1
 Aliases:
 
@@ -65,7 +66,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -80,7 +81,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -139,3 +140,4 @@ INPUTOBJECT <IReportsIdentity>: Identity Parameter
   - `[UserId <String>]`: Usage: userId={userId}
 
 ## RELATED LINKS
+

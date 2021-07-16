@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Files-help.xml
+external help file:
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/invoke-mgshareddrive
 schema: 2.0.0
@@ -33,7 +33,7 @@ Invoke function sharedWithMe
 key: id of drive
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Shared
 Aliases:
 
@@ -49,7 +49,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFilesIdentity
+Type: Microsoft.Graph.PowerShell.Models.IFilesIdentity
 Parameter Sets: SharedViaIdentity
 Aliases:
 
@@ -98,3 +98,4 @@ INPUTOBJECT <IFilesIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

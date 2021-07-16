@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementgrouppolicydefinitionfile
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementGroupPolicyDefinitionFile
 
 ## SYNOPSIS
-Create new navigation property to groupPolicyDefinitionFiles for deviceManagement
+The available group policy definition files for this account.
 
 ## SYNTAX
 
@@ -17,18 +17,18 @@ Create new navigation property to groupPolicyDefinitionFiles for deviceManagemen
 New-MgDeviceManagementGroupPolicyDefinitionFile [-AdditionalProperties <Hashtable>]
  [-Definitions <IMicrosoftGraphGroupPolicyDefinition[]>] [-Description <String>] [-DisplayName <String>]
  [-Id <String>] [-LanguageCodes <String[]>] [-LastModifiedDateTime <DateTime>] [-PolicyType <String>]
- [-Revision <String>] [-TargetNamespace <String>] [-TargetPrefix <String>] [-WhatIf] [-Confirm]
+ [-Revision <String>] [-TargetNamespace <String>] [-TargetPrefix <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementGroupPolicyDefinitionFile -BodyParameter <IMicrosoftGraphGroupPolicyDefinitionFile>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create new navigation property to groupPolicyDefinitionFiles for deviceManagement
+The available group policy definition files for this account.
 
 ## EXAMPLES
 
@@ -38,7 +38,7 @@ Create new navigation property to groupPolicyDefinitionFiles for deviceManagemen
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -56,7 +56,7 @@ The group policy definition file also contains the languages supported as determ
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicyDefinitionFile
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyDefinitionFile
 Parameter Sets: Create
 Aliases:
 
@@ -72,7 +72,7 @@ The group policy definitions associated with the file.
 To construct, see NOTES section for DEFINITIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicyDefinition[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyDefinition[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -88,7 +88,7 @@ The localized description of the policy settings in the ADMX file.
 The default value is empty.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 The localized friendly name of the ADMX file.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 The supported language codes for the ADMX file.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 The date and time the entity was last modified.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 groupPolicyType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 The revision version associated with the file.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 Specifies the URI used to identify the namespace within the ADMX file.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 Specifies the logical name that refers to the namespace within the ADMX file.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -223,7 +223,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -239,7 +239,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -347,3 +347,4 @@ DEFINITIONS <IMicrosoftGraphGroupPolicyDefinition[]>: The group policy definitio
   - `[SupportedOn <String>]`: Localized string used to specify what operating system or application version is affected by the policy.
 
 ## RELATED LINKS
+

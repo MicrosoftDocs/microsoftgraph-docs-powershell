@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Sites-help.xml
+external help file:
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/get-mgsitecontenttypebasebyref
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteContentTypeBaseByRef
 
 ## SYNOPSIS
-Get ref of base from sites
+Parent contentType from which this content type is derived.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Get-MgSiteContentTypeBaseByRef -InputObject <ISitesIdentity> [<CommonParameters>
 ```
 
 ## DESCRIPTION
-Get ref of base from sites
+Parent contentType from which this content type is derived.
 
 ## EXAMPLES
 
@@ -33,7 +33,7 @@ Get ref of base from sites
 key: id of contentType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -49,7 +49,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISitesIdentity
+Type: Microsoft.Graph.PowerShell.Models.ISitesIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 key: id of site
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -121,3 +121,4 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

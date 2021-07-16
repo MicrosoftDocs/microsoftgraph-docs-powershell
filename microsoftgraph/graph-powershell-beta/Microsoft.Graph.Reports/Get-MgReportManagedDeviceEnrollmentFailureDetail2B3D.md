@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Reports-help.xml
+external help file:
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportmanageddeviceenrollmentfailuredetail2b3d
 schema: 2.0.0
@@ -35,7 +35,7 @@ Invoke function managedDeviceEnrollmentFailureDetails
 Usage: filter={filter}
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Managed
 Aliases:
 
@@ -51,7 +51,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IReportsIdentity
+Type: Microsoft.Graph.PowerShell.Models.IReportsIdentity
 Parameter Sets: ManagedViaIdentity
 Aliases:
 
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -92,11 +92,26 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Skip
+Usage: skip={skip}
+
+```yaml
+Type: System.Int32
+Parameter Sets: Managed
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SkipToken
 Usage: skipToken={skipToken}
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Managed
 Aliases:
 
@@ -111,24 +126,9 @@ Accept wildcard characters: False
 Usage: top={top}
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: Managed
 Aliases: Limit
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Usage: skip={skip}
-
-```yaml
-Type: Int32
-Parameter Sets: Managed
-Aliases:
 
 Required: True
 Position: Named
@@ -185,3 +185,4 @@ INPUTOBJECT <IReportsIdentity>: Identity Parameter
   - `[UserId <String>]`: Usage: userId={userId}
 
 ## RELATED LINKS
+

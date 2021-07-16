@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Files-help.xml
+external help file:
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mgsharelistitemactivity
 schema: 2.0.0
@@ -17,29 +17,24 @@ Invoke function getActivitiesByInterval
 Get-MgShareListItemActivity -SharedDriveItemId <String> [<CommonParameters>]
 ```
 
-### Get3
-```
-Get-MgShareListItemActivity -ListItemId <String> -SharedDriveItemId <String> -EndDateTime <String>
- -Interval <String> -StartDateTime <String> [<CommonParameters>]
-```
-
 ### Get2
 ```
 Get-MgShareListItemActivity -ListItemId <String> -SharedDriveItemId <String> [<CommonParameters>]
 ```
 
+### Get3
+```
+Get-MgShareListItemActivity -EndDateTime <String> -Interval <String> -ListItemId <String>
+ -SharedDriveItemId <String> -StartDateTime <String> [<CommonParameters>]
+```
+
 ### Get5
 ```
-Get-MgShareListItemActivity -SharedDriveItemId <String> -EndDateTime <String> -Interval <String>
+Get-MgShareListItemActivity -EndDateTime <String> -Interval <String> -SharedDriveItemId <String>
  -StartDateTime <String> [<CommonParameters>]
 ```
 
-### GetViaIdentity5
-```
-Get-MgShareListItemActivity -InputObject <IFilesIdentity> [<CommonParameters>]
-```
-
-### GetViaIdentity4
+### GetViaIdentity2
 ```
 Get-MgShareListItemActivity -InputObject <IFilesIdentity> [<CommonParameters>]
 ```
@@ -49,7 +44,12 @@ Get-MgShareListItemActivity -InputObject <IFilesIdentity> [<CommonParameters>]
 Get-MgShareListItemActivity -InputObject <IFilesIdentity> [<CommonParameters>]
 ```
 
-### GetViaIdentity2
+### GetViaIdentity4
+```
+Get-MgShareListItemActivity -InputObject <IFilesIdentity> [<CommonParameters>]
+```
+
+### GetViaIdentity5
 ```
 Get-MgShareListItemActivity -InputObject <IFilesIdentity> [<CommonParameters>]
 ```
@@ -65,7 +65,7 @@ Invoke function getActivitiesByInterval
 Usage: endDateTime={endDateTime}
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get3, Get5
 Aliases:
 
@@ -81,8 +81,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFilesIdentity
-Parameter Sets: GetViaIdentity5, GetViaIdentity4, GetViaIdentity3, GetViaIdentity2
+Type: Microsoft.Graph.PowerShell.Models.IFilesIdentity
+Parameter Sets: GetViaIdentity2, GetViaIdentity3, GetViaIdentity4, GetViaIdentity5
 Aliases:
 
 Required: True
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 Usage: interval={interval}
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get3, Get5
 Aliases:
 
@@ -111,8 +111,8 @@ Accept wildcard characters: False
 key: id of listItem
 
 ```yaml
-Type: String
-Parameter Sets: Get3, Get2
+Type: System.String
+Parameter Sets: Get2, Get3
 Aliases:
 
 Required: True
@@ -126,8 +126,8 @@ Accept wildcard characters: False
 key: id of sharedDriveItem
 
 ```yaml
-Type: String
-Parameter Sets: Get4, Get3, Get2, Get5
+Type: System.String
+Parameter Sets: Get2, Get3, Get4, Get5
 Aliases:
 
 Required: True
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 Usage: startDateTime={startDateTime}
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get3, Get5
 Aliases:
 
@@ -190,3 +190,4 @@ INPUTOBJECT <IFilesIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

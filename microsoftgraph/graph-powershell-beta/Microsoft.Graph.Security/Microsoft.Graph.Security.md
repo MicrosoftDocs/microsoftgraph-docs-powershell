@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Security
-Module Guid: b4428ab3-ee44-4eed-ab64-8fdc638f9f97
+Module Guid: b966413e-2849-4686-8a25-2a6f68b00a65
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security
 Help Version: 1.0.0.0
 Locale: en-US
@@ -15,7 +15,8 @@ Microsoft Graph PowerShell Cmdlets
 Get securityActions from security
 
 ### [Get-MgSecurityAlert](Get-MgSecurityAlert.md)
-Get alerts from security
+Read-only.
+Nullable.
 
 ### [Get-MgSecurityCloudAppSecurityProfile](Get-MgSecurityCloudAppSecurityProfile.md)
 Get cloudAppSecurityProfiles from security
@@ -51,7 +52,8 @@ Get userSecurityProfiles from security
 Create new navigation property to securityActions for security
 
 ### [New-MgSecurityAlert](New-MgSecurityAlert.md)
-Create new navigation property to alerts for security
+Read-only.
+Nullable.
 
 ### [New-MgSecurityCloudAppSecurityProfile](New-MgSecurityCloudAppSecurityProfile.md)
 Create new navigation property to cloudAppSecurityProfiles for security
@@ -87,7 +89,8 @@ Create new navigation property to userSecurityProfiles for security
 Delete navigation property securityActions for security
 
 ### [Remove-MgSecurityAlert](Remove-MgSecurityAlert.md)
-Delete navigation property alerts for security
+Read-only.
+Nullable.
 
 ### [Remove-MgSecurityCloudAppSecurityProfile](Remove-MgSecurityCloudAppSecurityProfile.md)
 Delete navigation property cloudAppSecurityProfiles for security
@@ -135,7 +138,8 @@ Invoke action submitTiIndicators
 Update the navigation property securityActions in security
 
 ### [Update-MgSecurityAlert](Update-MgSecurityAlert.md)
-Update the navigation property alerts in security
+Read-only.
+Nullable.
 
 ### [Update-MgSecurityAlertMultiple](Update-MgSecurityAlertMultiple.md)
 Invoke action updateAlerts

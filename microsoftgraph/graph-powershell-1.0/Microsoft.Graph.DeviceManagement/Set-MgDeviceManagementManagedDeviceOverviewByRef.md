@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/set-mgdevicemanagementmanageddeviceoverviewbyref
 schema: 2.0.0
@@ -8,24 +8,24 @@ schema: 2.0.0
 # Set-MgDeviceManagementManagedDeviceOverviewByRef
 
 ## SYNOPSIS
-Update the ref of navigation property managedDeviceOverview in deviceManagement
+Device overview
 
 ## SYNTAX
 
 ### SetExpanded1 (Default)
 ```
-Set-MgDeviceManagementManagedDeviceOverviewByRef [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Set-MgDeviceManagementManagedDeviceOverviewByRef [-AdditionalProperties <Hashtable>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Set1
 ```
-Set-MgDeviceManagementManagedDeviceOverviewByRef -BodyParameter <Hashtable> [-PassThru] [-WhatIf] [-Confirm]
+Set-MgDeviceManagementManagedDeviceOverviewByRef -BodyParameter <Hashtable> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the ref of navigation property managedDeviceOverview in deviceManagement
+Device overview
 
 ## EXAMPLES
 
@@ -35,7 +35,7 @@ Update the ref of navigation property managedDeviceOverview in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: SetExpanded1
 Aliases:
 
@@ -50,7 +50,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: Set1
 Aliases:
 
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -96,7 +96,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -123,3 +123,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+

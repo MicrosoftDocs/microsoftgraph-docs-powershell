@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Users.Functions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/export-mguserdeviceandappmanagementdatad390
 schema: 2.0.0
@@ -14,7 +14,8 @@ Invoke function exportDeviceAndAppManagementData
 
 ### Export (Default)
 ```
-Export-MgUserDeviceAndAppManagementDataD390 -UserId <String> -OutFile <String> [-PassThru] [<CommonParameters>]
+Export-MgUserDeviceAndAppManagementDataD390 -UserId <String> -OutFile <String> [-PassThru]
+ [<CommonParameters>]
 ```
 
 ### ExportViaIdentity
@@ -35,7 +36,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersFunctionsIdentity
+Type: Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
 Parameter Sets: ExportViaIdentity
 Aliases:
 
@@ -50,7 +51,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -65,7 +66,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -80,7 +81,7 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Export
 Aliases:
 
@@ -112,6 +113,7 @@ To create the parameters described below, construct a hash table containing the 
 
 
 INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
+  - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AnotherRange <String>]`: Usage: anotherRange={anotherRange}
   - `[AppConsentRequestId <String>]`: key: id of appConsentRequest
   - `[CalendarId <String>]`: key: id of calendar
@@ -144,3 +146,4 @@ INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   - `[ValuesOnly <Boolean?>]`: Usage: valuesOnly={valuesOnly}
 
 ## RELATED LINKS
+

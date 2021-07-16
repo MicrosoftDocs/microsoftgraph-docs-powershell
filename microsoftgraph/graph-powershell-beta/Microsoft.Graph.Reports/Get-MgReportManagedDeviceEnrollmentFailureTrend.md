@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Reports-help.xml
+external help file:
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportmanageddeviceenrollmentfailuretrend
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportManagedDeviceEnrollmentFailureTrend
 
 ## SYNOPSIS
-Invoke function managedDeviceEnrollmentFailureTrends
+Metadata for the enrollment failure trends report
 
 ## SYNTAX
 
@@ -17,7 +17,7 @@ Get-MgReportManagedDeviceEnrollmentFailureTrend -OutFile <String> [-PassThru] [<
 ```
 
 ## DESCRIPTION
-Invoke function managedDeviceEnrollmentFailureTrends
+Metadata for the enrollment failure trends report
 
 ## EXAMPLES
 
@@ -27,7 +27,7 @@ Invoke function managedDeviceEnrollmentFailureTrends
 Path to write output file to
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -42,7 +42,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -67,3 +67,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+

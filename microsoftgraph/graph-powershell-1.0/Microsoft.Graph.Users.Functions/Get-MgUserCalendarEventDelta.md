@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Users.Functions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/get-mgusercalendareventdelta
 schema: 2.0.0
@@ -19,15 +19,15 @@ Get-MgUserCalendarEventDelta -UserId <String> [<CommonParameters>]
 
 ### Delta2
 ```
-Get-MgUserCalendarEventDelta -UserId <String> -CalendarId <String> [<CommonParameters>]
+Get-MgUserCalendarEventDelta -CalendarId <String> -UserId <String> [<CommonParameters>]
 ```
 
-### DeltaViaIdentity2
+### DeltaViaIdentity1
 ```
 Get-MgUserCalendarEventDelta -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
 ```
 
-### DeltaViaIdentity1
+### DeltaViaIdentity2
 ```
 Get-MgUserCalendarEventDelta -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
 ```
@@ -43,7 +43,7 @@ Invoke function delta
 key: id of calendar
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delta2
 Aliases:
 
@@ -59,8 +59,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersFunctionsIdentity
-Parameter Sets: DeltaViaIdentity2, DeltaViaIdentity1
+Type: Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
+Parameter Sets: DeltaViaIdentity1, DeltaViaIdentity2
 Aliases:
 
 Required: True
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delta1, Delta2
 Aliases:
 
@@ -106,6 +106,7 @@ To create the parameters described below, construct a hash table containing the 
 
 
 INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
+  - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AnotherRange <String>]`: Usage: anotherRange={anotherRange}
   - `[AppConsentRequestId <String>]`: key: id of appConsentRequest
   - `[CalendarId <String>]`: key: id of calendar
@@ -138,3 +139,4 @@ INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   - `[ValuesOnly <Boolean?>]`: Usage: valuesOnly={valuesOnly}
 
 ## RELATED LINKS
+

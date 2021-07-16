@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementconditionstatement
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementConditionStatement
 
 ## SYNOPSIS
-Create new navigation property to managementConditionStatements for deviceManagement
+The management condition statements associated with device management of the company.
 
 ## SYNTAX
 
@@ -17,17 +17,17 @@ Create new navigation property to managementConditionStatements for deviceManage
 New-MgDeviceManagementConditionStatement [-AdditionalProperties <Hashtable>] [-ApplicablePlatforms <String[]>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-ETag <String>]
  [-Expression <Hashtable>] [-Id <String>] [-ManagementConditions <IMicrosoftGraphManagementCondition[]>]
- [-ModifiedDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ModifiedDateTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementConditionStatement -BodyParameter <IMicrosoftGraphManagementConditionStatement> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgDeviceManagementConditionStatement -BodyParameter <IMicrosoftGraphManagementConditionStatement>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create new navigation property to managementConditionStatements for deviceManagement
+The management condition statements associated with device management of the company.
 
 ## EXAMPLES
 
@@ -37,7 +37,7 @@ Create new navigation property to managementConditionStatements for deviceManage
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -52,7 +52,7 @@ Accept wildcard characters: False
 The applicable platforms for this management condition statement.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -68,7 +68,7 @@ A management condition statement is a group of management conditions that enable
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagementConditionStatement
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagementConditionStatement
 Parameter Sets: Create
 Aliases:
 
@@ -84,7 +84,7 @@ The time the management condition statement was created.
 Generated service side.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 The admin defined description of the management condition statement.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 The admin defined name of the management condition statement.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -130,7 +130,7 @@ ETag of the management condition statement.
 Updated service side.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -147,7 +147,7 @@ one of true or false, indicating that a management condition statement is activa
 A management condition expression may be composed of a combination of the expression variables and boolean-valued expression operators.
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -178,7 +178,7 @@ The management conditions associated to the management condition statement.
 To construct, see NOTES section for MANAGEMENTCONDITIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagementCondition[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagementCondition[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -194,7 +194,7 @@ The time the management condition statement was last modified.
 Updated service side.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -209,7 +209,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -225,7 +225,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -300,3 +300,4 @@ MANAGEMENTCONDITIONS <IMicrosoftGraphManagementCondition[]>: The management cond
   - `[UniqueName <String>]`: Unique name for the management condition. Used in management condition expressions.
 
 ## RELATED LINKS
+

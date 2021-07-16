@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/new-mggroupmemberofbyref
 schema: 2.0.0
@@ -8,35 +8,40 @@ schema: 2.0.0
 # New-MgGroupMemberOfByRef
 
 ## SYNOPSIS
-Create new navigation property ref to members for groups
+Users, contacts, and groups that are members of this group.
+HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only.
+Nullable.
 
 ## SYNTAX
 
 ### CreateExpanded3 (Default)
 ```
-New-MgGroupMemberOfByRef -GroupId <String> [-AdditionalProperties <Hashtable>] [-WhatIf] [-Confirm]
+New-MgGroupMemberOfByRef -GroupId <String> [-AdditionalProperties <Hashtable>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create3
 ```
-New-MgGroupMemberOfByRef -GroupId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded3
-```
-New-MgGroupMemberOfByRef -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgGroupMemberOfByRef -GroupId <String> -BodyParameter <Hashtable> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentity3
 ```
-New-MgGroupMemberOfByRef -InputObject <IGroupsIdentity> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
+New-MgGroupMemberOfByRef -InputObject <IGroupsIdentity> -BodyParameter <Hashtable> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
+### CreateViaIdentityExpanded3
+```
+New-MgGroupMemberOfByRef -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
+```
+
 ## DESCRIPTION
-Create new navigation property ref to members for groups
+Users, contacts, and groups that are members of this group.
+HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -46,7 +51,7 @@ Create new navigation property ref to members for groups
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded3, CreateViaIdentityExpanded3
 Aliases:
 
@@ -61,7 +66,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: Create3, CreateViaIdentity3
 Aliases:
 
@@ -76,8 +81,8 @@ Accept wildcard characters: False
 key: id of group
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded3, Create3
+Type: System.String
+Parameter Sets: Create3, CreateExpanded3
 Aliases:
 
 Required: True
@@ -92,8 +97,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: CreateViaIdentityExpanded3, CreateViaIdentity3
+Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+Parameter Sets: CreateViaIdentity3, CreateViaIdentityExpanded3
 Aliases:
 
 Required: True
@@ -107,7 +112,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -123,7 +128,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -180,3 +185,4 @@ INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

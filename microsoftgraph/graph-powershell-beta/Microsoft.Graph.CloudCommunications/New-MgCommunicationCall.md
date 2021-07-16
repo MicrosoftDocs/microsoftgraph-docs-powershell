@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.CloudCommunications-help.xml
+external help file:
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcall
 schema: 2.0.0
@@ -16,22 +16,23 @@ Create new navigation property to calls for communications
 ```
 New-MgCommunicationCall [-ActiveModalities <String[]>] [-AdditionalProperties <Hashtable>]
  [-AnsweredBy <IMicrosoftGraphParticipantInfo1>] [-AudioRoutingGroups <IMicrosoftGraphAudioRoutingGroup[]>]
- [-CallChainId <String>] [-CallOptions <Hashtable>] [-CallRoutes <IMicrosoftGraphCallRoute[]>]
- [-CallbackUri <String>] [-ChatInfo <IMicrosoftGraphChatInfo>] [-Direction <String>] [-Id <String>]
- [-IncomingContext <IMicrosoftGraphIncomingContext>] [-MediaConfig <IMicrosoftGraphMediaConfig1>]
- [-MediaState <IMicrosoftGraphCallMediaState>] [-MeetingCapability <IMicrosoftGraphMeetingCapability>]
- [-MeetingInfo <IMicrosoftGraphMeetingInfo1>] [-MyParticipantId <String>]
- [-Operations <IMicrosoftGraphCommsOperation[]>] [-Participants <IMicrosoftGraphParticipant1[]>]
- [-RequestedModalities <String[]>] [-ResultInfo <IMicrosoftGraphResultInfo>] [-RingingTimeoutInSeconds <Int32>]
- [-RoutingPolicies <String[]>] [-Source <IMicrosoftGraphParticipantInfo1>] [-State <String>]
- [-Subject <String>] [-Targets <IMicrosoftGraphInvitationParticipantInfo1[]>] [-TenantId <String>]
- [-TerminationReason <String>] [-ToneInfo <IMicrosoftGraphToneInfo>]
- [-Transcription <IMicrosoftGraphCallTranscriptionInfo>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-CallbackUri <String>] [-CallChainId <String>] [-CallOptions <Hashtable>]
+ [-CallRoutes <IMicrosoftGraphCallRoute[]>] [-ChatInfo <IMicrosoftGraphChatInfo>] [-Direction <String>]
+ [-Id <String>] [-IncomingContext <IMicrosoftGraphIncomingContext>]
+ [-MediaConfig <IMicrosoftGraphMediaConfig1>] [-MediaState <IMicrosoftGraphCallMediaState>]
+ [-MeetingCapability <IMicrosoftGraphMeetingCapability>] [-MeetingInfo <IMicrosoftGraphMeetingInfo1>]
+ [-MyParticipantId <String>] [-Operations <IMicrosoftGraphCommsOperation[]>]
+ [-Participants <IMicrosoftGraphParticipant1[]>] [-RequestedModalities <String[]>]
+ [-ResultInfo <IMicrosoftGraphResultInfo>] [-RingingTimeoutInSeconds <Int32>] [-RoutingPolicies <String[]>]
+ [-Source <IMicrosoftGraphParticipantInfo1>] [-State <String>] [-Subject <String>]
+ [-Targets <IMicrosoftGraphInvitationParticipantInfo1[]>] [-TenantId <String>] [-TerminationReason <String>]
+ [-ToneInfo <IMicrosoftGraphToneInfo>] [-Transcription <IMicrosoftGraphCallTranscriptionInfo>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgCommunicationCall -BodyParameter <IMicrosoftGraphCall1> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgCommunicationCall -BodyParameter <IMicrosoftGraphCall1> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,7 +48,7 @@ Possible values are: unknown, audio, video, videoBasedScreenSharing, data.
 Read-only.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -62,7 +63,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -78,7 +79,7 @@ participantInfo
 To construct, see NOTES section for ANSWEREDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphParticipantInfo1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphParticipantInfo1
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -95,7 +96,7 @@ Nullable.
 To construct, see NOTES section for AUDIOROUTINGGROUPS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAudioRoutingGroup[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAudioRoutingGroup[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -111,7 +112,7 @@ call
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCall1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCall1
 Parameter Sets: Create
 Aliases:
 
@@ -127,7 +128,7 @@ The callback URL on which callbacks will be delivered.
 Must be https.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -143,7 +144,7 @@ A unique identifier for all the participant calls in a conference or a unique id
 This needs to be copied over from Microsoft.Graph.Call.CallChainId.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -158,7 +159,7 @@ Accept wildcard characters: False
 callOptions
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -175,7 +176,7 @@ Read-only.
 To construct, see NOTES section for CALLROUTES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCallRoute[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallRoute[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -191,7 +192,7 @@ chatInfo
 To construct, see NOTES section for CHATINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatInfo
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatInfo
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -206,7 +207,7 @@ Accept wildcard characters: False
 callDirection
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -221,7 +222,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -237,7 +238,7 @@ incomingContext
 To construct, see NOTES section for INCOMINGCONTEXT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIncomingContext
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIncomingContext
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -253,7 +254,7 @@ mediaConfig
 To construct, see NOTES section for MEDIACONFIG properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMediaConfig1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMediaConfig1
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -269,7 +270,7 @@ callMediaState
 To construct, see NOTES section for MEDIASTATE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCallMediaState
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallMediaState
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -285,7 +286,7 @@ meetingCapability
 To construct, see NOTES section for MEETINGCAPABILITY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMeetingCapability
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMeetingCapability
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -301,7 +302,7 @@ meetingInfo
 To construct, see NOTES section for MEETINGINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMeetingInfo1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMeetingInfo1
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -316,7 +317,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -333,7 +334,7 @@ Nullable.
 To construct, see NOTES section for OPERATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCommsOperation[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCommsOperation[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -350,7 +351,7 @@ Nullable.
 To construct, see NOTES section for PARTICIPANTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphParticipant1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphParticipant1[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -365,7 +366,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -381,7 +382,7 @@ resultInfo
 To construct, see NOTES section for RESULTINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphResultInfo
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphResultInfo
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -396,7 +397,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -411,7 +412,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -427,7 +428,7 @@ participantInfo
 To construct, see NOTES section for SOURCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphParticipantInfo1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphParticipantInfo1
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -442,7 +443,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -457,7 +458,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -473,7 +474,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for TARGETS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInvitationParticipantInfo1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInvitationParticipantInfo1[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -488,7 +489,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -503,7 +504,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -519,7 +520,7 @@ toneInfo
 To construct, see NOTES section for TONEINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphToneInfo
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphToneInfo
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -535,7 +536,7 @@ callTranscriptionInfo
 To construct, see NOTES section for TRANSCRIPTION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCallTranscriptionInfo
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallTranscriptionInfo
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -550,7 +551,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -566,7 +567,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -864,4 +865,3 @@ TRANSCRIPTION <IMicrosoftGraphCallTranscriptionInfo>: callTranscriptionInfo
 
 ## RELATED LINKS
 
-## RELATED LINKS

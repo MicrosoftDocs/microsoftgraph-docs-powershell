@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementassignedroledetail
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementAssignedRoleDetail
 
 ## SYNOPSIS
-Invoke function getAssignedRoleDetails
+Retrieves the assigned role definitions and role assignments of the currently authenticated user.
 
 ## SYNTAX
 
@@ -17,7 +17,7 @@ Get-MgDeviceManagementAssignedRoleDetail [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke function getAssignedRoleDetails
+Retrieves the assigned role definitions and role assignments of the currently authenticated user.
 
 ## EXAMPLES
 
@@ -37,3 +37,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+

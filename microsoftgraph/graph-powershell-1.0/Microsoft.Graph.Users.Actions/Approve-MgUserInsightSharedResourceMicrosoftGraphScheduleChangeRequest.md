@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/approve-mguserinsightsharedresourcemicrosoftgraphschedulechangerequest
 schema: 2.0.0
@@ -15,7 +15,7 @@ Invoke action approve
 ### ApproveExpanded (Default)
 ```
 Approve-MgUserInsightSharedResourceMicrosoftGraphScheduleChangeRequest -SharedInsightId <String>
- -UserId <String> [-AdditionalProperties <Hashtable>] [-Message <String>] [-PassThru] [-WhatIf] [-Confirm]
+ -UserId <String> [-AdditionalProperties <Hashtable>] [-Message <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -24,20 +24,20 @@ Approve-MgUserInsightSharedResourceMicrosoftGraphScheduleChangeRequest -SharedIn
 Approve-MgUserInsightSharedResourceMicrosoftGraphScheduleChangeRequest -SharedInsightId <String>
  -UserId <String>
  -BodyParameter <IPathsXnkrn5UsersUserIdInsightsSharedSharedinsightIdResourceMicrosoftGraphSchedulechangerequestMicrosoftGraphApprovePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### ApproveViaIdentityExpanded
-```
-Approve-MgUserInsightSharedResourceMicrosoftGraphScheduleChangeRequest -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-Message <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ApproveViaIdentity
 ```
 Approve-MgUserInsightSharedResourceMicrosoftGraphScheduleChangeRequest -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsXnkrn5UsersUserIdInsightsSharedSharedinsightIdResourceMicrosoftGraphSchedulechangerequestMicrosoftGraphApprovePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ApproveViaIdentityExpanded
+```
+Approve-MgUserInsightSharedResourceMicrosoftGraphScheduleChangeRequest -InputObject <IUsersActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-Message <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,7 +51,7 @@ Invoke action approve
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ApproveExpanded, ApproveViaIdentityExpanded
 Aliases:
 
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsXnkrn5UsersUserIdInsightsSharedSharedinsightIdResourceMicrosoftGraphSchedulechangerequestMicrosoftGraphApprovePostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPathsXnkrn5UsersUserIdInsightsSharedSharedinsightIdResourceMicrosoftGraphSchedulechangerequestMicrosoftGraphApprovePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Approve, ApproveViaIdentity
 Aliases:
 
@@ -83,8 +83,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: ApproveViaIdentityExpanded, ApproveViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: ApproveViaIdentity, ApproveViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ApproveExpanded, ApproveViaIdentityExpanded
 Aliases:
 
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -128,8 +128,8 @@ Accept wildcard characters: False
 key: id of sharedInsight
 
 ```yaml
-Type: String
-Parameter Sets: ApproveExpanded, Approve
+Type: System.String
+Parameter Sets: Approve, ApproveExpanded
 Aliases:
 
 Required: True
@@ -143,8 +143,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: ApproveExpanded, Approve
+Type: System.String
+Parameter Sets: Approve, ApproveExpanded
 Aliases:
 
 Required: True
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -174,7 +174,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -237,3 +237,4 @@ INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

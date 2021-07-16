@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Users.Functions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/get-mgusermanageddevicewithappfailure
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserManagedDeviceWithAppFailure
 
 ## SYNOPSIS
-Invoke function getManagedDevicesWithAppFailures
+Retrieves the list of devices with failed apps
 
 ## SYNTAX
 
@@ -22,18 +22,18 @@ Get-MgUserManagedDeviceWithAppFailure -UserId <String> [<CommonParameters>]
 Get-MgUserManagedDeviceWithAppFailure -UserId <String> [<CommonParameters>]
 ```
 
-### GetViaIdentity1
-```
-Get-MgUserManagedDeviceWithAppFailure -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
-```
-
 ### GetViaIdentity
 ```
 Get-MgUserManagedDeviceWithAppFailure -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
 ```
 
+### GetViaIdentity1
+```
+Get-MgUserManagedDeviceWithAppFailure -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
+```
+
 ## DESCRIPTION
-Invoke function getManagedDevicesWithAppFailures
+Retrieves the list of devices with failed apps
 
 ## EXAMPLES
 
@@ -44,8 +44,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersFunctionsIdentity
-Parameter Sets: GetViaIdentity1, GetViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
+Parameter Sets: GetViaIdentity, GetViaIdentity1
 Aliases:
 
 Required: True
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get, Get1
 Aliases:
 
@@ -93,6 +93,7 @@ To create the parameters described below, construct a hash table containing the 
 
 
 INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
+  - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AnotherRange <String>]`: Usage: anotherRange={anotherRange}
   - `[AppConsentRequestId <String>]`: key: id of appConsentRequest
   - `[CalendarId <String>]`: key: id of calendar
@@ -125,3 +126,4 @@ INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   - `[ValuesOnly <Boolean?>]`: Usage: valuesOnly={valuesOnly}
 
 ## RELATED LINKS
+

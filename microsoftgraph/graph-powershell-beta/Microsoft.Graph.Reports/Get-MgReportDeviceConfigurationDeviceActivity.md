@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Reports-help.xml
+external help file:
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportdeviceconfigurationdeviceactivity
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportDeviceConfigurationDeviceActivity
 
 ## SYNOPSIS
-Invoke function deviceConfigurationDeviceActivity
+Metadata for the device configuration device activity report
 
 ## SYNTAX
 
@@ -17,7 +17,7 @@ Get-MgReportDeviceConfigurationDeviceActivity -OutFile <String> [-PassThru] [<Co
 ```
 
 ## DESCRIPTION
-Invoke function deviceConfigurationDeviceActivity
+Metadata for the device configuration device activity report
 
 ## EXAMPLES
 
@@ -27,7 +27,7 @@ Invoke function deviceConfigurationDeviceActivity
 Path to write output file to
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -42,7 +42,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -67,3 +67,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+

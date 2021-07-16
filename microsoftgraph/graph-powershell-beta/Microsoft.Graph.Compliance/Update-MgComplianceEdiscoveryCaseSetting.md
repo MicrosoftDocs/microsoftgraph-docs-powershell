@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Compliance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Compliance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/update-mgcomplianceediscoverycasesetting
 schema: 2.0.0
@@ -17,29 +17,29 @@ Update the navigation property settings in compliance
 Update-MgComplianceEdiscoveryCaseSetting -CaseId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-Ocr <IMicrosoftGraphEdiscoveryOcrSettings>]
  [-RedundancyDetection <IMicrosoftGraphEdiscoveryRedundancyDetectionSettings>]
- [-TopicModeling <IMicrosoftGraphEdiscoveryTopicModelingSettings>] [-PassThru] [-WhatIf] [-Confirm]
+ [-TopicModeling <IMicrosoftGraphEdiscoveryTopicModelingSettings>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgComplianceEdiscoveryCaseSetting -CaseId <String> -BodyParameter <IMicrosoftGraphEdiscoverySettings>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgComplianceEdiscoveryCaseSetting -InputObject <IComplianceIdentity> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-Ocr <IMicrosoftGraphEdiscoveryOcrSettings>]
- [-RedundancyDetection <IMicrosoftGraphEdiscoveryRedundancyDetectionSettings>]
- [-TopicModeling <IMicrosoftGraphEdiscoveryTopicModelingSettings>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgComplianceEdiscoveryCaseSetting -InputObject <IComplianceIdentity>
- -BodyParameter <IMicrosoftGraphEdiscoverySettings> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEdiscoverySettings> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgComplianceEdiscoveryCaseSetting -InputObject <IComplianceIdentity>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Ocr <IMicrosoftGraphEdiscoveryOcrSettings>]
+ [-RedundancyDetection <IMicrosoftGraphEdiscoveryRedundancyDetectionSettings>]
+ [-TopicModeling <IMicrosoftGraphEdiscoveryTopicModelingSettings>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,7 +53,7 @@ Update the navigation property settings in compliance
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -69,7 +69,7 @@ settings
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEdiscoverySettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoverySettings
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -84,8 +84,8 @@ Accept wildcard characters: False
 key: id of case
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -115,8 +115,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IComplianceIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IComplianceIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -131,7 +131,7 @@ ocrSettings
 To construct, see NOTES section for OCR properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEdiscoveryOcrSettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryOcrSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -162,7 +162,7 @@ redundancyDetectionSettings
 To construct, see NOTES section for REDUNDANCYDETECTION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEdiscoveryRedundancyDetectionSettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryRedundancyDetectionSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -178,7 +178,7 @@ topicModelingSettings
 To construct, see NOTES section for TOPICMODELING properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEdiscoveryTopicModelingSettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryTopicModelingSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -209,7 +209,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -247,21 +247,21 @@ BODYPARAMETER <IMicrosoftGraphEdiscoverySettings>: settings
   - `[Id <String>]`: Read-only.
   - `[Ocr <IMicrosoftGraphEdiscoveryOcrSettings>]`: ocrSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[IsEnabled <Boolean?>]`: 
-    - `[MaxImageSize <Int32?>]`: 
-    - `[Timeout <TimeSpan?>]`: 
+    - `[IsEnabled <Boolean?>]`: Indicates whether or not OCR is enabled for the case.
+    - `[MaxImageSize <Int32?>]`: Maximum image size that will be processed in KB).
+    - `[Timeout <TimeSpan?>]`: The timeout duration for the OCR engine. A longer timeout may increase success of OCR, but may add to the total processing time.
   - `[RedundancyDetection <IMicrosoftGraphEdiscoveryRedundancyDetectionSettings>]`: redundancyDetectionSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[IsEnabled <Boolean?>]`: 
-    - `[MaxWords <Int32?>]`: 
-    - `[MinWords <Int32?>]`: 
-    - `[SimilarityThreshold <Int32?>]`: 
+    - `[IsEnabled <Boolean?>]`: Indicates whether email threading and near duplicate detection are enabled.
+    - `[MaxWords <Int32?>]`: See Minimum/maximum number of words to learn more.
+    - `[MinWords <Int32?>]`: See Minimum/maximum number of words to learn more.
+    - `[SimilarityThreshold <Int32?>]`: See Document and email similarity threshold to learn more.
   - `[TopicModeling <IMicrosoftGraphEdiscoveryTopicModelingSettings>]`: topicModelingSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DynamicallyAdjustTopicCount <Boolean?>]`: 
-    - `[IgnoreNumbers <Boolean?>]`: 
-    - `[IsEnabled <Boolean?>]`: 
-    - `[TopicCount <Int32?>]`: 
+    - `[DynamicallyAdjustTopicCount <Boolean?>]`: To learn more, see Adjust maximum number of themes dynamically.
+    - `[IgnoreNumbers <Boolean?>]`: To learn more, see Include numbers in themes.
+    - `[IsEnabled <Boolean?>]`: Indicates whether themes is enabled for the case.
+    - `[TopicCount <Int32?>]`: To learn more, see Maximum number of themes.
 
 INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   - `[CaseId <String>]`: key: id of case
@@ -280,22 +280,23 @@ INPUTOBJECT <IComplianceIdentity>: Identity Parameter
 
 OCR <IMicrosoftGraphEdiscoveryOcrSettings>: ocrSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[IsEnabled <Boolean?>]`: 
-  - `[MaxImageSize <Int32?>]`: 
-  - `[Timeout <TimeSpan?>]`: 
+  - `[IsEnabled <Boolean?>]`: Indicates whether or not OCR is enabled for the case.
+  - `[MaxImageSize <Int32?>]`: Maximum image size that will be processed in KB).
+  - `[Timeout <TimeSpan?>]`: The timeout duration for the OCR engine. A longer timeout may increase success of OCR, but may add to the total processing time.
 
 REDUNDANCYDETECTION <IMicrosoftGraphEdiscoveryRedundancyDetectionSettings>: redundancyDetectionSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[IsEnabled <Boolean?>]`: 
-  - `[MaxWords <Int32?>]`: 
-  - `[MinWords <Int32?>]`: 
-  - `[SimilarityThreshold <Int32?>]`: 
+  - `[IsEnabled <Boolean?>]`: Indicates whether email threading and near duplicate detection are enabled.
+  - `[MaxWords <Int32?>]`: See Minimum/maximum number of words to learn more.
+  - `[MinWords <Int32?>]`: See Minimum/maximum number of words to learn more.
+  - `[SimilarityThreshold <Int32?>]`: See Document and email similarity threshold to learn more.
 
 TOPICMODELING <IMicrosoftGraphEdiscoveryTopicModelingSettings>: topicModelingSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DynamicallyAdjustTopicCount <Boolean?>]`: 
-  - `[IgnoreNumbers <Boolean?>]`: 
-  - `[IsEnabled <Boolean?>]`: 
-  - `[TopicCount <Int32?>]`: 
+  - `[DynamicallyAdjustTopicCount <Boolean?>]`: To learn more, see Adjust maximum number of themes dynamically.
+  - `[IgnoreNumbers <Boolean?>]`: To learn more, see Include numbers in themes.
+  - `[IsEnabled <Boolean?>]`: Indicates whether themes is enabled for the case.
+  - `[TopicCount <Int32?>]`: To learn more, see Maximum number of themes.
 
 ## RELATED LINKS
+

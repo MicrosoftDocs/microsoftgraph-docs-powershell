@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Users-help.xml
+external help file:
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/set-mguserphotocontent
 schema: 2.0.0
@@ -8,36 +8,38 @@ schema: 2.0.0
 # Set-MgUserPhotoContent
 
 ## SYNOPSIS
-Update media content for the navigation property photo in users
+The user's profile photo.
+Read-only.
 
 ## SYNTAX
 
 ### Set2 (Default)
 ```
-Set-MgUserPhotoContent -UserId <String> [-BodyParameter <Stream>] -InFile <String> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Set-MgUserPhotoContent -UserId <String> -InFile <String> [-BodyParameter <Stream>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Set3
 ```
-Set-MgUserPhotoContent -UserId <String> -ProfilePhotoId <String> [-BodyParameter <Stream>] -InFile <String>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### SetViaIdentity3
-```
-Set-MgUserPhotoContent -InputObject <IUsersIdentity> [-BodyParameter <Stream>] -InFile <String> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgUserPhotoContent -ProfilePhotoId <String> -UserId <String> -InFile <String> [-BodyParameter <Stream>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### SetViaIdentity2
 ```
-Set-MgUserPhotoContent -InputObject <IUsersIdentity> [-BodyParameter <Stream>] -InFile <String> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgUserPhotoContent -InputObject <IUsersIdentity> -InFile <String> [-BodyParameter <Stream>] [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### SetViaIdentity3
+```
+Set-MgUserPhotoContent -InputObject <IUsersIdentity> -InFile <String> [-BodyParameter <Stream>] [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update media content for the navigation property photo in users
+The user's profile photo.
+Read-only.
 
 ## EXAMPLES
 
@@ -47,7 +49,7 @@ Update media content for the navigation property photo in users
 .
 
 ```yaml
-Type: Stream
+Type: System.IO.Stream
 Parameter Sets: (All)
 Aliases:
 
@@ -64,7 +66,7 @@ This should include a path and file name.
 If you omit the path, the current location will be used.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -80,8 +82,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersIdentity
-Parameter Sets: SetViaIdentity3, SetViaIdentity2
+Type: Microsoft.Graph.PowerShell.Models.IUsersIdentity
+Parameter Sets: SetViaIdentity2, SetViaIdentity3
 Aliases:
 
 Required: True
@@ -95,7 +97,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -110,7 +112,7 @@ Accept wildcard characters: False
 key: id of profilePhoto
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Set3
 Aliases:
 
@@ -125,7 +127,7 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Set2, Set3
 Aliases:
 
@@ -140,7 +142,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -156,7 +158,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -207,3 +209,4 @@ INPUTOBJECT <IUsersIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

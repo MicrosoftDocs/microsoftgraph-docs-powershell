@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
+external help file:
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintservice
 schema: 2.0.0
@@ -8,23 +8,23 @@ schema: 2.0.0
 # New-MgPrintService
 
 ## SYNOPSIS
-Create new navigation property to services for print
+The list of available Universal Print service endpoints.
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgPrintService [-AdditionalProperties <Hashtable>] [-Endpoints <IMicrosoftGraphPrintServiceEndpoint[]>]
- [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgPrintService -BodyParameter <IMicrosoftGraphPrintService> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgPrintService -BodyParameter <IMicrosoftGraphPrintService> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create new navigation property to services for print
+The list of available Universal Print service endpoints.
 
 ## EXAMPLES
 
@@ -34,7 +34,7 @@ Create new navigation property to services for print
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -50,7 +50,7 @@ printService
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintService
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintService
 Parameter Sets: Create
 Aliases:
 
@@ -68,7 +68,7 @@ Nullable.
 To construct, see NOTES section for ENDPOINTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintServiceEndpoint[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintServiceEndpoint[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -114,7 +114,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -159,3 +159,4 @@ ENDPOINTS <IMicrosoftGraphPrintServiceEndpoint[]>: Endpoints that can be used to
   - `[Uri <String>]`: The URI that can be used to access the service.
 
 ## RELATED LINKS
+

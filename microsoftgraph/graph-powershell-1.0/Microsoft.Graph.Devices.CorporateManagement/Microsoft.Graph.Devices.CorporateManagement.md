@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-Module Guid: 3cfe18d3-c2fc-4b4c-8ee0-a378cce2c8bc
+Module Guid: 904483b6-9eb8-435d-aca2-94433395ce9e
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement
 Help Version: 1.0.0.0
 Locale: en-US
@@ -11,26 +11,146 @@ Locale: en-US
 Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Devices.CorporateManagement Cmdlets
+### [Get-MgDeviceAppMgt](Get-MgDeviceAppMgt.md)
+Get deviceAppManagement
+
+### [Get-MgDeviceAppMgtAndroidManagedAppProtection](Get-MgDeviceAppMgtAndroidManagedAppProtection.md)
+Android managed app policies.
+
+### [Get-MgDeviceAppMgtAndroidManagedAppProtectionApp](Get-MgDeviceAppMgtAndroidManagedAppProtectionApp.md)
+List of apps to which the policy is deployed.
+
+### [Get-MgDeviceAppMgtAndroidManagedAppProtectionDeploymentSummary](Get-MgDeviceAppMgtAndroidManagedAppProtectionDeploymentSummary.md)
+Navigation property to deployment summary of the configuration.
+
+### [Get-MgDeviceAppMgtDefaultManagedAppProtection](Get-MgDeviceAppMgtDefaultManagedAppProtection.md)
+Default managed app policies.
+
+### [Get-MgDeviceAppMgtDefaultManagedAppProtectionApp](Get-MgDeviceAppMgtDefaultManagedAppProtectionApp.md)
+List of apps to which the policy is deployed.
+
+### [Get-MgDeviceAppMgtDefaultManagedAppProtectionDeploymentSummary](Get-MgDeviceAppMgtDefaultManagedAppProtectionDeploymentSummary.md)
+Navigation property to deployment summary of the configuration.
+
+### [Get-MgDeviceAppMgtiOSManagedAppProtection](Get-MgDeviceAppMgtiOSManagedAppProtection.md)
+iOS managed app policies.
+
+### [Get-MgDeviceAppMgtiOSManagedAppProtectionApp](Get-MgDeviceAppMgtiOSManagedAppProtectionApp.md)
+List of apps to which the policy is deployed.
+
+### [Get-MgDeviceAppMgtiOSManagedAppProtectionDeploymentSummary](Get-MgDeviceAppMgtiOSManagedAppProtectionDeploymentSummary.md)
+Navigation property to deployment summary of the configuration.
+
+### [Get-MgDeviceAppMgtManagedAppPolicy](Get-MgDeviceAppMgtManagedAppPolicy.md)
+Managed app policies.
+
+### [Get-MgDeviceAppMgtManagedAppRegistration](Get-MgDeviceAppMgtManagedAppRegistration.md)
+The managed app registrations.
+
+### [Get-MgDeviceAppMgtManagedAppRegistrationAppliedPolicy](Get-MgDeviceAppMgtManagedAppRegistrationAppliedPolicy.md)
+Zero or more policys already applied on the registered app when it last synchronized with managment service.
+
+### [Get-MgDeviceAppMgtManagedAppRegistrationIntendedPolicy](Get-MgDeviceAppMgtManagedAppRegistrationIntendedPolicy.md)
+Zero or more policies admin intended for the app as of now.
+
+### [Get-MgDeviceAppMgtManagedAppRegistrationOperation](Get-MgDeviceAppMgtManagedAppRegistrationOperation.md)
+Zero or more long running operations triggered on the app registration.
+
+### [Get-MgDeviceAppMgtManagedAppRegistrationUserId](Get-MgDeviceAppMgtManagedAppRegistrationUserId.md)
+Invoke function getUserIdsWithFlaggedAppRegistration
+
+### [Get-MgDeviceAppMgtManagedAppStatuses](Get-MgDeviceAppMgtManagedAppStatuses.md)
+The managed app statuses.
+
+### [Get-MgDeviceAppMgtManagedEBook](Get-MgDeviceAppMgtManagedEBook.md)
+The Managed eBook.
+
+### [Get-MgDeviceAppMgtManagedEBookAssignment](Get-MgDeviceAppMgtManagedEBookAssignment.md)
+The list of assignments for this eBook.
+
+### [Get-MgDeviceAppMgtManagedEBookDeviceState](Get-MgDeviceAppMgtManagedEBookDeviceState.md)
+The list of installation states for this eBook.
+
+### [Get-MgDeviceAppMgtManagedEBookInstallSummary](Get-MgDeviceAppMgtManagedEBookInstallSummary.md)
+Mobile App Install Summary.
+
+### [Get-MgDeviceAppMgtManagedEBookUserStateSummary](Get-MgDeviceAppMgtManagedEBookUserStateSummary.md)
+The list of installation states for this eBook.
+
+### [Get-MgDeviceAppMgtManagedEBookUserStateSummaryDeviceState](Get-MgDeviceAppMgtManagedEBookUserStateSummaryDeviceState.md)
+The install state of the eBook.
+
+### [Get-MgDeviceAppMgtMdmWindowInformationProtectionPolicy](Get-MgDeviceAppMgtMdmWindowInformationProtectionPolicy.md)
+Windows information protection for apps running on devices which are MDM enrolled.
+
+### [Get-MgDeviceAppMgtMobileApp](Get-MgDeviceAppMgtMobileApp.md)
+The mobile apps.
+
+### [Get-MgDeviceAppMgtMobileAppAssignment](Get-MgDeviceAppMgtMobileAppAssignment.md)
+The list of group assignments for this mobile app.
+
+### [Get-MgDeviceAppMgtMobileAppCategory](Get-MgDeviceAppMgtMobileAppCategory.md)
+The mobile app categories.
+
+### [Get-MgDeviceAppMgtMobileAppCategoryByRef](Get-MgDeviceAppMgtMobileAppCategoryByRef.md)
+The list of categories for this app.
+
+### [Get-MgDeviceAppMgtMobileAppConfiguration](Get-MgDeviceAppMgtMobileAppConfiguration.md)
+The Managed Device Mobile Application Configurations.
+
+### [Get-MgDeviceAppMgtMobileAppConfigurationAssignment](Get-MgDeviceAppMgtMobileAppConfigurationAssignment.md)
+The list of group assignemenets for app configration.
+
+### [Get-MgDeviceAppMgtMobileAppConfigurationDeviceStatuses](Get-MgDeviceAppMgtMobileAppConfigurationDeviceStatuses.md)
+List of ManagedDeviceMobileAppConfigurationDeviceStatus.
+
+### [Get-MgDeviceAppMgtMobileAppConfigurationDeviceStatusSummary](Get-MgDeviceAppMgtMobileAppConfigurationDeviceStatusSummary.md)
+App configuration device status summary.
+
+### [Get-MgDeviceAppMgtMobileAppConfigurationUserStatuses](Get-MgDeviceAppMgtMobileAppConfigurationUserStatuses.md)
+List of ManagedDeviceMobileAppConfigurationUserStatus.
+
+### [Get-MgDeviceAppMgtMobileAppConfigurationUserStatusSummary](Get-MgDeviceAppMgtMobileAppConfigurationUserStatusSummary.md)
+App configuration user status summary.
+
+### [Get-MgDeviceAppMgtTargetedManagedAppConfiguration](Get-MgDeviceAppMgtTargetedManagedAppConfiguration.md)
+Targeted managed app configurations.
+
+### [Get-MgDeviceAppMgtTargetedManagedAppConfigurationApp](Get-MgDeviceAppMgtTargetedManagedAppConfigurationApp.md)
+List of apps to which the policy is deployed.
+
+### [Get-MgDeviceAppMgtTargetedManagedAppConfigurationAssignment](Get-MgDeviceAppMgtTargetedManagedAppConfigurationAssignment.md)
+Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
+
+### [Get-MgDeviceAppMgtTargetedManagedAppConfigurationDeploymentSummary](Get-MgDeviceAppMgtTargetedManagedAppConfigurationDeploymentSummary.md)
+Navigation property to deployment summary of the configuration.
+
+### [Get-MgDeviceAppMgtVppToken](Get-MgDeviceAppMgtVppToken.md)
+List of Vpp tokens for this organization.
+
+### [Get-MgDeviceAppMgtWindowInformationProtectionPolicy](Get-MgDeviceAppMgtWindowInformationProtectionPolicy.md)
+Windows information protection for apps running on devices which are not MDM enrolled.
+
 ### [Get-MgUserDeviceManagementTroubleshootingEvent](Get-MgUserDeviceManagementTroubleshootingEvent.md)
-Get deviceManagementTroubleshootingEvents from users
+The list of troubleshooting events for this user.
 
 ### [Get-MgUserManagedAppRegistration](Get-MgUserManagedAppRegistration.md)
-Get managedAppRegistrations from users
+Zero or more managed app registrations that belong to the user.
 
 ### [Get-MgUserManagedAppRegistrationByRef](Get-MgUserManagedAppRegistrationByRef.md)
-Get ref of managedAppRegistrations from users
+Zero or more managed app registrations that belong to the user.
 
 ### [Get-MgUserManagedDevice](Get-MgUserManagedDevice.md)
-Get managedDevices from users
+The managed devices associated with the user.
 
 ### [Get-MgUserManagedDeviceCategory](Get-MgUserManagedDeviceCategory.md)
-Get deviceCategory from users
+Device category
 
 ### [Get-MgUserManagedDeviceCompliancePolicyState](Get-MgUserManagedDeviceCompliancePolicyState.md)
-Get deviceCompliancePolicyStates from users
+Device compliance policy states for this device.
 
 ### [Get-MgUserManagedDeviceConfigurationState](Get-MgUserManagedDeviceConfigurationState.md)
-Get deviceConfigurationStates from users
+Device configuration states for this device.
 
 ### [Invoke-MgTargetDeviceAppMgtManagedAppPolicyApp](Invoke-MgTargetDeviceAppMgtManagedAppPolicyApp.md)
 Invoke action targetApps
@@ -53,402 +173,402 @@ Invoke action targetApps
 ### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
 Invoke action targetApps
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtAndroidManagedAppProtection](New-MgDeviceAppMgtAndroidManagedAppProtection.md)
+Android managed app policies.
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtAndroidManagedAppProtectionApp](New-MgDeviceAppMgtAndroidManagedAppProtectionApp.md)
+List of apps to which the policy is deployed.
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtDefaultManagedAppProtection](New-MgDeviceAppMgtDefaultManagedAppProtection.md)
+Default managed app policies.
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtDefaultManagedAppProtectionApp](New-MgDeviceAppMgtDefaultManagedAppProtectionApp.md)
+List of apps to which the policy is deployed.
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtiOSManagedAppProtection](New-MgDeviceAppMgtiOSManagedAppProtection.md)
+iOS managed app policies.
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtiOSManagedAppProtectionApp](New-MgDeviceAppMgtiOSManagedAppProtectionApp.md)
+List of apps to which the policy is deployed.
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtManagedAppPolicy](New-MgDeviceAppMgtManagedAppPolicy.md)
+Managed app policies.
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtManagedAppRegistration](New-MgDeviceAppMgtManagedAppRegistration.md)
+The managed app registrations.
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtManagedAppRegistrationAppliedPolicy](New-MgDeviceAppMgtManagedAppRegistrationAppliedPolicy.md)
+Zero or more policys already applied on the registered app when it last synchronized with managment service.
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtManagedAppRegistrationIntendedPolicy](New-MgDeviceAppMgtManagedAppRegistrationIntendedPolicy.md)
+Zero or more policies admin intended for the app as of now.
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtManagedAppRegistrationOperation](New-MgDeviceAppMgtManagedAppRegistrationOperation.md)
+Zero or more long running operations triggered on the app registration.
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtManagedAppStatuses](New-MgDeviceAppMgtManagedAppStatuses.md)
+The managed app statuses.
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtManagedEBook](New-MgDeviceAppMgtManagedEBook.md)
+The Managed eBook.
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtManagedEBookAssignment](New-MgDeviceAppMgtManagedEBookAssignment.md)
+The list of assignments for this eBook.
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtManagedEBookDeviceState](New-MgDeviceAppMgtManagedEBookDeviceState.md)
+The list of installation states for this eBook.
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtManagedEBookUserStateSummary](New-MgDeviceAppMgtManagedEBookUserStateSummary.md)
+The list of installation states for this eBook.
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtManagedEBookUserStateSummaryDeviceState](New-MgDeviceAppMgtManagedEBookUserStateSummaryDeviceState.md)
+The install state of the eBook.
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtMdmWindowInformationProtectionPolicy](New-MgDeviceAppMgtMdmWindowInformationProtectionPolicy.md)
+Windows information protection for apps running on devices which are MDM enrolled.
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtMobileApp](New-MgDeviceAppMgtMobileApp.md)
+The mobile apps.
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtMobileAppAssignment](New-MgDeviceAppMgtMobileAppAssignment.md)
+The list of group assignments for this mobile app.
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtMobileAppCategory](New-MgDeviceAppMgtMobileAppCategory.md)
+The mobile app categories.
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtMobileAppCategoryByRef](New-MgDeviceAppMgtMobileAppCategoryByRef.md)
+The list of categories for this app.
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtMobileAppConfiguration](New-MgDeviceAppMgtMobileAppConfiguration.md)
+The Managed Device Mobile Application Configurations.
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtMobileAppConfigurationAssignment](New-MgDeviceAppMgtMobileAppConfigurationAssignment.md)
+The list of group assignemenets for app configration.
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtMobileAppConfigurationDeviceStatuses](New-MgDeviceAppMgtMobileAppConfigurationDeviceStatuses.md)
+List of ManagedDeviceMobileAppConfigurationDeviceStatus.
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtMobileAppConfigurationUserStatuses](New-MgDeviceAppMgtMobileAppConfigurationUserStatuses.md)
+List of ManagedDeviceMobileAppConfigurationUserStatus.
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtTargetedManagedAppConfiguration](New-MgDeviceAppMgtTargetedManagedAppConfiguration.md)
+Targeted managed app configurations.
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtTargetedManagedAppConfigurationApp](New-MgDeviceAppMgtTargetedManagedAppConfigurationApp.md)
+List of apps to which the policy is deployed.
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtTargetedManagedAppConfigurationAssignment](New-MgDeviceAppMgtTargetedManagedAppConfigurationAssignment.md)
+Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtVppToken](New-MgDeviceAppMgtVppToken.md)
+List of Vpp tokens for this organization.
 
-### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
-Invoke action targetApps
+### [New-MgDeviceAppMgtWindowInformationProtectionPolicy](New-MgDeviceAppMgtWindowInformationProtectionPolicy.md)
+Windows information protection for apps running on devices which are not MDM enrolled.
 
 ### [New-MgUserDeviceManagementTroubleshootingEvent](New-MgUserDeviceManagementTroubleshootingEvent.md)
-Create new navigation property to deviceManagementTroubleshootingEvents for users
+The list of troubleshooting events for this user.
 
 ### [New-MgUserManagedAppRegistrationByRef](New-MgUserManagedAppRegistrationByRef.md)
-Create new navigation property ref to managedAppRegistrations for users
+Zero or more managed app registrations that belong to the user.
 
 ### [New-MgUserManagedDevice](New-MgUserManagedDevice.md)
-Create new navigation property to managedDevices for users
+The managed devices associated with the user.
 
 ### [New-MgUserManagedDeviceCompliancePolicyState](New-MgUserManagedDeviceCompliancePolicyState.md)
-Create new navigation property to deviceCompliancePolicyStates for users
+Device compliance policy states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
-### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+### [Remove-MgDeviceAppMgtAndroidManagedAppProtection](Remove-MgDeviceAppMgtAndroidManagedAppProtection.md)
+Android managed app policies.
 
-### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+### [Remove-MgDeviceAppMgtAndroidManagedAppProtectionApp](Remove-MgDeviceAppMgtAndroidManagedAppProtectionApp.md)
+List of apps to which the policy is deployed.
 
-### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+### [Remove-MgDeviceAppMgtAndroidManagedAppProtectionDeploymentSummary](Remove-MgDeviceAppMgtAndroidManagedAppProtectionDeploymentSummary.md)
+Navigation property to deployment summary of the configuration.
 
-### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+### [Remove-MgDeviceAppMgtDefaultManagedAppProtection](Remove-MgDeviceAppMgtDefaultManagedAppProtection.md)
+Default managed app policies.
 
-### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+### [Remove-MgDeviceAppMgtDefaultManagedAppProtectionApp](Remove-MgDeviceAppMgtDefaultManagedAppProtectionApp.md)
+List of apps to which the policy is deployed.
 
-### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+### [Remove-MgDeviceAppMgtDefaultManagedAppProtectionDeploymentSummary](Remove-MgDeviceAppMgtDefaultManagedAppProtectionDeploymentSummary.md)
+Navigation property to deployment summary of the configuration.
 
-### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+### [Remove-MgDeviceAppMgtiOSManagedAppProtection](Remove-MgDeviceAppMgtiOSManagedAppProtection.md)
+iOS managed app policies.
 
-### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+### [Remove-MgDeviceAppMgtiOSManagedAppProtectionApp](Remove-MgDeviceAppMgtiOSManagedAppProtectionApp.md)
+List of apps to which the policy is deployed.
 
-### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+### [Remove-MgDeviceAppMgtiOSManagedAppProtectionDeploymentSummary](Remove-MgDeviceAppMgtiOSManagedAppProtectionDeploymentSummary.md)
+Navigation property to deployment summary of the configuration.
 
-### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+### [Remove-MgDeviceAppMgtManagedAppPolicy](Remove-MgDeviceAppMgtManagedAppPolicy.md)
+Managed app policies.
 
-### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+### [Remove-MgDeviceAppMgtManagedAppRegistration](Remove-MgDeviceAppMgtManagedAppRegistration.md)
+The managed app registrations.
 
-### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+### [Remove-MgDeviceAppMgtManagedAppRegistrationAppliedPolicy](Remove-MgDeviceAppMgtManagedAppRegistrationAppliedPolicy.md)
+Zero or more policys already applied on the registered app when it last synchronized with managment service.
 
-### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+### [Remove-MgDeviceAppMgtManagedAppRegistrationIntendedPolicy](Remove-MgDeviceAppMgtManagedAppRegistrationIntendedPolicy.md)
+Zero or more policies admin intended for the app as of now.
 
-### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+### [Remove-MgDeviceAppMgtManagedAppRegistrationOperation](Remove-MgDeviceAppMgtManagedAppRegistrationOperation.md)
+Zero or more long running operations triggered on the app registration.
 
-### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+### [Remove-MgDeviceAppMgtManagedAppStatuses](Remove-MgDeviceAppMgtManagedAppStatuses.md)
+The managed app statuses.
 
-### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+### [Remove-MgDeviceAppMgtManagedEBook](Remove-MgDeviceAppMgtManagedEBook.md)
+The Managed eBook.
 
-### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+### [Remove-MgDeviceAppMgtManagedEBookAssignment](Remove-MgDeviceAppMgtManagedEBookAssignment.md)
+The list of assignments for this eBook.
 
-### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+### [Remove-MgDeviceAppMgtManagedEBookDeviceState](Remove-MgDeviceAppMgtManagedEBookDeviceState.md)
+The list of installation states for this eBook.
 
-### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+### [Remove-MgDeviceAppMgtManagedEBookInstallSummary](Remove-MgDeviceAppMgtManagedEBookInstallSummary.md)
+Mobile App Install Summary.
 
-### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+### [Remove-MgDeviceAppMgtManagedEBookUserStateSummary](Remove-MgDeviceAppMgtManagedEBookUserStateSummary.md)
+The list of installation states for this eBook.
 
-### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+### [Remove-MgDeviceAppMgtManagedEBookUserStateSummaryDeviceState](Remove-MgDeviceAppMgtManagedEBookUserStateSummaryDeviceState.md)
+The install state of the eBook.
 
-### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+### [Remove-MgDeviceAppMgtMdmWindowInformationProtectionPolicy](Remove-MgDeviceAppMgtMdmWindowInformationProtectionPolicy.md)
+Windows information protection for apps running on devices which are MDM enrolled.
 
-### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+### [Remove-MgDeviceAppMgtMobileApp](Remove-MgDeviceAppMgtMobileApp.md)
+The mobile apps.
 
-### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+### [Remove-MgDeviceAppMgtMobileAppAssignment](Remove-MgDeviceAppMgtMobileAppAssignment.md)
+The list of group assignments for this mobile app.
 
-### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+### [Remove-MgDeviceAppMgtMobileAppCategory](Remove-MgDeviceAppMgtMobileAppCategory.md)
+The mobile app categories.
 
-### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+### [Remove-MgDeviceAppMgtMobileAppConfiguration](Remove-MgDeviceAppMgtMobileAppConfiguration.md)
+The Managed Device Mobile Application Configurations.
 
-### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+### [Remove-MgDeviceAppMgtMobileAppConfigurationAssignment](Remove-MgDeviceAppMgtMobileAppConfigurationAssignment.md)
+The list of group assignemenets for app configration.
 
-### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+### [Remove-MgDeviceAppMgtMobileAppConfigurationDeviceStatuses](Remove-MgDeviceAppMgtMobileAppConfigurationDeviceStatuses.md)
+List of ManagedDeviceMobileAppConfigurationDeviceStatus.
 
-### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+### [Remove-MgDeviceAppMgtMobileAppConfigurationDeviceStatusSummary](Remove-MgDeviceAppMgtMobileAppConfigurationDeviceStatusSummary.md)
+App configuration device status summary.
 
-### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+### [Remove-MgDeviceAppMgtMobileAppConfigurationUserStatuses](Remove-MgDeviceAppMgtMobileAppConfigurationUserStatuses.md)
+List of ManagedDeviceMobileAppConfigurationUserStatus.
 
-### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+### [Remove-MgDeviceAppMgtMobileAppConfigurationUserStatusSummary](Remove-MgDeviceAppMgtMobileAppConfigurationUserStatusSummary.md)
+App configuration user status summary.
 
-### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+### [Remove-MgDeviceAppMgtTargetedManagedAppConfiguration](Remove-MgDeviceAppMgtTargetedManagedAppConfiguration.md)
+Targeted managed app configurations.
 
-### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+### [Remove-MgDeviceAppMgtTargetedManagedAppConfigurationApp](Remove-MgDeviceAppMgtTargetedManagedAppConfigurationApp.md)
+List of apps to which the policy is deployed.
 
-### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+### [Remove-MgDeviceAppMgtTargetedManagedAppConfigurationAssignment](Remove-MgDeviceAppMgtTargetedManagedAppConfigurationAssignment.md)
+Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
 
-### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+### [Remove-MgDeviceAppMgtTargetedManagedAppConfigurationDeploymentSummary](Remove-MgDeviceAppMgtTargetedManagedAppConfigurationDeploymentSummary.md)
+Navigation property to deployment summary of the configuration.
 
-### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+### [Remove-MgDeviceAppMgtVppToken](Remove-MgDeviceAppMgtVppToken.md)
+List of Vpp tokens for this organization.
 
-### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+### [Remove-MgDeviceAppMgtWindowInformationProtectionPolicy](Remove-MgDeviceAppMgtWindowInformationProtectionPolicy.md)
+Windows information protection for apps running on devices which are not MDM enrolled.
 
 ### [Remove-MgUserDeviceManagementTroubleshootingEvent](Remove-MgUserDeviceManagementTroubleshootingEvent.md)
-Delete navigation property deviceManagementTroubleshootingEvents for users
+The list of troubleshooting events for this user.
 
 ### [Remove-MgUserManagedDevice](Remove-MgUserManagedDevice.md)
-Delete navigation property managedDevices for users
+The managed devices associated with the user.
 
 ### [Remove-MgUserManagedDeviceCategory](Remove-MgUserManagedDeviceCategory.md)
-Delete navigation property deviceCategory for users
+Device category
 
 ### [Remove-MgUserManagedDeviceCompliancePolicyState](Remove-MgUserManagedDeviceCompliancePolicyState.md)
-Delete navigation property deviceCompliancePolicyStates for users
+Device compliance policy states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Set-MgDeviceAppMgtManagedAppPolicyMicrosoftGraphTargetedManagedAppProtection](Set-MgDeviceAppMgtManagedAppPolicyMicrosoftGraphTargetedManagedAppProtection.md)
+Invoke action assign
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Set-MgDeviceAppMgtManagedAppPolicyMicrosoftGraphWindowInformationProtection](Set-MgDeviceAppMgtManagedAppPolicyMicrosoftGraphWindowInformationProtection.md)
+Invoke action assign
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Set-MgDeviceAppMgtManagedAppRegistrationAppliedPolicyMicrosoftGraphTargetedManagedAppProtection](Set-MgDeviceAppMgtManagedAppRegistrationAppliedPolicyMicrosoftGraphTargetedManagedAppProtection.md)
+Invoke action assign
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Set-MgDeviceAppMgtManagedAppRegistrationAppliedPolicyMicrosoftGraphWindowInformationProtection](Set-MgDeviceAppMgtManagedAppRegistrationAppliedPolicyMicrosoftGraphWindowInformationProtection.md)
+Invoke action assign
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Set-MgDeviceAppMgtManagedAppRegistrationIntendedPolicyMicrosoftGraphTargetedManagedAppProtection](Set-MgDeviceAppMgtManagedAppRegistrationIntendedPolicyMicrosoftGraphTargetedManagedAppProtection.md)
+Invoke action assign
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Set-MgDeviceAppMgtManagedAppRegistrationIntendedPolicyMicrosoftGraphWindowInformationProtection](Set-MgDeviceAppMgtManagedAppRegistrationIntendedPolicyMicrosoftGraphWindowInformationProtection.md)
+Invoke action assign
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Set-MgDeviceAppMgtManagedEBook](Set-MgDeviceAppMgtManagedEBook.md)
+Invoke action assign
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Set-MgDeviceAppMgtMobileApp](Set-MgDeviceAppMgtMobileApp.md)
+Invoke action assign
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Set-MgDeviceAppMgtMobileAppConfiguration](Set-MgDeviceAppMgtMobileAppConfiguration.md)
+Invoke action assign
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Set-MgDeviceAppMgtTargetedManagedAppConfiguration](Set-MgDeviceAppMgtTargetedManagedAppConfiguration.md)
+Invoke action assign
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Sync-MgDeviceAppMgtMicrosoftStore](Sync-MgDeviceAppMgtMicrosoftStore.md)
+Syncs Intune account with Microsoft Store For Business
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Sync-MgDeviceAppMgtVppTokenLicense](Sync-MgDeviceAppMgtVppTokenLicense.md)
+Syncs licenses associated with a specific appleVolumePurchaseProgramToken
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Update-MgDeviceAppMgt](Update-MgDeviceAppMgt.md)
+Update deviceAppManagement
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Update-MgDeviceAppMgtAndroidManagedAppProtection](Update-MgDeviceAppMgtAndroidManagedAppProtection.md)
+Android managed app policies.
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Update-MgDeviceAppMgtAndroidManagedAppProtectionApp](Update-MgDeviceAppMgtAndroidManagedAppProtectionApp.md)
+List of apps to which the policy is deployed.
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Update-MgDeviceAppMgtAndroidManagedAppProtectionDeploymentSummary](Update-MgDeviceAppMgtAndroidManagedAppProtectionDeploymentSummary.md)
+Navigation property to deployment summary of the configuration.
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Update-MgDeviceAppMgtDefaultManagedAppProtection](Update-MgDeviceAppMgtDefaultManagedAppProtection.md)
+Default managed app policies.
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Update-MgDeviceAppMgtDefaultManagedAppProtectionApp](Update-MgDeviceAppMgtDefaultManagedAppProtectionApp.md)
+List of apps to which the policy is deployed.
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Update-MgDeviceAppMgtDefaultManagedAppProtectionDeploymentSummary](Update-MgDeviceAppMgtDefaultManagedAppProtectionDeploymentSummary.md)
+Navigation property to deployment summary of the configuration.
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Update-MgDeviceAppMgtiOSManagedAppProtection](Update-MgDeviceAppMgtiOSManagedAppProtection.md)
+iOS managed app policies.
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Update-MgDeviceAppMgtiOSManagedAppProtectionApp](Update-MgDeviceAppMgtiOSManagedAppProtectionApp.md)
+List of apps to which the policy is deployed.
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Update-MgDeviceAppMgtiOSManagedAppProtectionDeploymentSummary](Update-MgDeviceAppMgtiOSManagedAppProtectionDeploymentSummary.md)
+Navigation property to deployment summary of the configuration.
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Update-MgDeviceAppMgtManagedAppPolicy](Update-MgDeviceAppMgtManagedAppPolicy.md)
+Managed app policies.
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Update-MgDeviceAppMgtManagedAppRegistration](Update-MgDeviceAppMgtManagedAppRegistration.md)
+The managed app registrations.
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Update-MgDeviceAppMgtManagedAppRegistrationAppliedPolicy](Update-MgDeviceAppMgtManagedAppRegistrationAppliedPolicy.md)
+Zero or more policys already applied on the registered app when it last synchronized with managment service.
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Update-MgDeviceAppMgtManagedAppRegistrationIntendedPolicy](Update-MgDeviceAppMgtManagedAppRegistrationIntendedPolicy.md)
+Zero or more policies admin intended for the app as of now.
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Update-MgDeviceAppMgtManagedAppRegistrationOperation](Update-MgDeviceAppMgtManagedAppRegistrationOperation.md)
+Zero or more long running operations triggered on the app registration.
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Update-MgDeviceAppMgtManagedAppStatuses](Update-MgDeviceAppMgtManagedAppStatuses.md)
+The managed app statuses.
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Update-MgDeviceAppMgtManagedEBook](Update-MgDeviceAppMgtManagedEBook.md)
+The Managed eBook.
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Update-MgDeviceAppMgtManagedEBookAssignment](Update-MgDeviceAppMgtManagedEBookAssignment.md)
+The list of assignments for this eBook.
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Update-MgDeviceAppMgtManagedEBookDeviceState](Update-MgDeviceAppMgtManagedEBookDeviceState.md)
+The list of installation states for this eBook.
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Update-MgDeviceAppMgtManagedEBookInstallSummary](Update-MgDeviceAppMgtManagedEBookInstallSummary.md)
+Mobile App Install Summary.
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Update-MgDeviceAppMgtManagedEBookUserStateSummary](Update-MgDeviceAppMgtManagedEBookUserStateSummary.md)
+The list of installation states for this eBook.
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Update-MgDeviceAppMgtManagedEBookUserStateSummaryDeviceState](Update-MgDeviceAppMgtManagedEBookUserStateSummaryDeviceState.md)
+The install state of the eBook.
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Update-MgDeviceAppMgtMdmWindowInformationProtectionPolicy](Update-MgDeviceAppMgtMdmWindowInformationProtectionPolicy.md)
+Windows information protection for apps running on devices which are MDM enrolled.
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Update-MgDeviceAppMgtMobileApp](Update-MgDeviceAppMgtMobileApp.md)
+The mobile apps.
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Update-MgDeviceAppMgtMobileAppAssignment](Update-MgDeviceAppMgtMobileAppAssignment.md)
+The list of group assignments for this mobile app.
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Update-MgDeviceAppMgtMobileAppCategory](Update-MgDeviceAppMgtMobileAppCategory.md)
+The mobile app categories.
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Update-MgDeviceAppMgtMobileAppConfiguration](Update-MgDeviceAppMgtMobileAppConfiguration.md)
+The Managed Device Mobile Application Configurations.
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Update-MgDeviceAppMgtMobileAppConfigurationAssignment](Update-MgDeviceAppMgtMobileAppConfigurationAssignment.md)
+The list of group assignemenets for app configration.
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Update-MgDeviceAppMgtMobileAppConfigurationDeviceStatuses](Update-MgDeviceAppMgtMobileAppConfigurationDeviceStatuses.md)
+List of ManagedDeviceMobileAppConfigurationDeviceStatus.
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Update-MgDeviceAppMgtMobileAppConfigurationDeviceStatusSummary](Update-MgDeviceAppMgtMobileAppConfigurationDeviceStatusSummary.md)
+App configuration device status summary.
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Update-MgDeviceAppMgtMobileAppConfigurationUserStatuses](Update-MgDeviceAppMgtMobileAppConfigurationUserStatuses.md)
+List of ManagedDeviceMobileAppConfigurationUserStatus.
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Update-MgDeviceAppMgtMobileAppConfigurationUserStatusSummary](Update-MgDeviceAppMgtMobileAppConfigurationUserStatusSummary.md)
+App configuration user status summary.
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Update-MgDeviceAppMgtTargetedManagedAppConfiguration](Update-MgDeviceAppMgtTargetedManagedAppConfiguration.md)
+Targeted managed app configurations.
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Update-MgDeviceAppMgtTargetedManagedAppConfigurationApp](Update-MgDeviceAppMgtTargetedManagedAppConfigurationApp.md)
+List of apps to which the policy is deployed.
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Update-MgDeviceAppMgtTargetedManagedAppConfigurationAssignment](Update-MgDeviceAppMgtTargetedManagedAppConfigurationAssignment.md)
+Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Update-MgDeviceAppMgtTargetedManagedAppConfigurationDeploymentSummary](Update-MgDeviceAppMgtTargetedManagedAppConfigurationDeploymentSummary.md)
+Navigation property to deployment summary of the configuration.
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Update-MgDeviceAppMgtVppToken](Update-MgDeviceAppMgtVppToken.md)
+List of Vpp tokens for this organization.
 
-### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+### [Update-MgDeviceAppMgtWindowInformationProtectionPolicy](Update-MgDeviceAppMgtWindowInformationProtectionPolicy.md)
+Windows information protection for apps running on devices which are not MDM enrolled.
 
 ### [Update-MgUserDeviceManagementTroubleshootingEvent](Update-MgUserDeviceManagementTroubleshootingEvent.md)
-Update the navigation property deviceManagementTroubleshootingEvents in users
+The list of troubleshooting events for this user.
 
 ### [Update-MgUserManagedDevice](Update-MgUserManagedDevice.md)
-Update the navigation property managedDevices in users
+The managed devices associated with the user.
 
 ### [Update-MgUserManagedDeviceCategory](Update-MgUserManagedDeviceCategory.md)
-Update the navigation property deviceCategory in users
+Device category
 
 ### [Update-MgUserManagedDeviceCompliancePolicyState](Update-MgUserManagedDeviceCompliancePolicyState.md)
-Update the navigation property deviceCompliancePolicyStates in users
+Device compliance policy states for this device.
 
 ### [Update-MgUserManagedDeviceConfigurationState](Update-MgUserManagedDeviceConfigurationState.md)
-Update the navigation property deviceConfigurationStates in users
+Device configuration states for this device.
 

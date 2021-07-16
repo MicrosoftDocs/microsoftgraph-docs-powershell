@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Education-help.xml
+external help file:
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationschooladministrativeunitbyref
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEducationSchoolAdministrativeUnitByRef
 
 ## SYNOPSIS
-Get ref of administrativeUnit from education
+The underlying administrativeUnit for this school.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Get-MgEducationSchoolAdministrativeUnitByRef -InputObject <IEducationIdentity> [
 ```
 
 ## DESCRIPTION
-Get ref of administrativeUnit from education
+The underlying administrativeUnit for this school.
 
 ## EXAMPLES
 
@@ -33,7 +33,7 @@ Get ref of administrativeUnit from education
 key: id of educationSchool
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get1
 Aliases:
 
@@ -49,7 +49,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IEducationIdentity
+Type: Microsoft.Graph.PowerShell.Models.IEducationIdentity
 Parameter Sets: GetViaIdentity1
 Aliases:
 
@@ -95,3 +95,4 @@ INPUTOBJECT <IEducationIdentity>: Identity Parameter
   - `[EducationUserId <String>]`: key: id of educationUser
 
 ## RELATED LINKS
+

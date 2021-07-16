@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Files-help.xml
+external help file:
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mgsharelistcolumnsourcecolumnbyref
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgShareListColumnSourceColumnByRef
 
 ## SYNOPSIS
-Get ref of sourceColumn from shares
+The source column for content type column.
 
 ## SYNTAX
 
@@ -24,7 +24,7 @@ Get-MgShareListColumnSourceColumnByRef -InputObject <IFilesIdentity> [<CommonPar
 ```
 
 ## DESCRIPTION
-Get ref of sourceColumn from shares
+The source column for content type column.
 
 ## EXAMPLES
 
@@ -34,7 +34,7 @@ Get ref of sourceColumn from shares
 key: id of columnDefinition
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -50,7 +50,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFilesIdentity
+Type: Microsoft.Graph.PowerShell.Models.IFilesIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 key: id of sharedDriveItem
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -114,3 +114,4 @@ INPUTOBJECT <IFilesIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mginformationprotection
 schema: 2.0.0
@@ -12,21 +12,21 @@ Update informationProtection
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### UpdateExpanded1 (Default)
 ```
 Update-MgInformationProtection [-AdditionalProperties <Hashtable>] [-Bitlocker <IMicrosoftGraphBitlocker>]
  [-DataLossPreventionPolicies <IMicrosoftGraphDataLossPreventionPolicy[]>] [-Id <String>]
  [-Policy <IMicrosoftGraphInformationProtectionPolicy>]
  [-SensitivityLabels <IMicrosoftGraphSensitivityLabel[]>]
  [-SensitivityPolicySettings <IMicrosoftGraphSensitivityPolicySettings>]
- [-ThreatAssessmentRequests <IMicrosoftGraphThreatAssessmentRequest[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [-ThreatAssessmentRequests <IMicrosoftGraphThreatAssessmentRequest[]>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
-### Update
+### Update1
 ```
-Update-MgInformationProtection -BodyParameter <IMicrosoftGraphInformationProtection> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgInformationProtection -BodyParameter <IMicrosoftGraphInformationProtection> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -40,8 +40,8 @@ Update informationProtection
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded
+Type: System.Collections.Hashtable
+Parameter Sets: UpdateExpanded1
 Aliases:
 
 Required: False
@@ -56,8 +56,8 @@ bitlocker
 To construct, see NOTES section for BITLOCKER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphBitlocker
-Parameter Sets: UpdateExpanded
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBitlocker
+Parameter Sets: UpdateExpanded1
 Aliases:
 
 Required: False
@@ -72,8 +72,8 @@ informationProtection
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInformationProtection
-Parameter Sets: Update
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationProtection
+Parameter Sets: Update1
 Aliases:
 
 Required: True
@@ -88,8 +88,8 @@ Accept wildcard characters: False
 To construct, see NOTES section for DATALOSSPREVENTIONPOLICIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDataLossPreventionPolicy[]
-Parameter Sets: UpdateExpanded
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDataLossPreventionPolicy[]
+Parameter Sets: UpdateExpanded1
 Aliases:
 
 Required: False
@@ -103,8 +103,8 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded
+Type: System.String
+Parameter Sets: UpdateExpanded1
 Aliases:
 
 Required: False
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -134,8 +134,8 @@ informationProtectionPolicy
 To construct, see NOTES section for POLICY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInformationProtectionPolicy
-Parameter Sets: UpdateExpanded
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationProtectionPolicy
+Parameter Sets: UpdateExpanded1
 Aliases:
 
 Required: False
@@ -150,8 +150,8 @@ Accept wildcard characters: False
 To construct, see NOTES section for SENSITIVITYLABELS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSensitivityLabel[]
-Parameter Sets: UpdateExpanded
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSensitivityLabel[]
+Parameter Sets: UpdateExpanded1
 Aliases:
 
 Required: False
@@ -166,8 +166,8 @@ sensitivityPolicySettings
 To construct, see NOTES section for SENSITIVITYPOLICYSETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSensitivityPolicySettings
-Parameter Sets: UpdateExpanded
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSensitivityPolicySettings
+Parameter Sets: UpdateExpanded1
 Aliases:
 
 Required: False
@@ -182,8 +182,8 @@ Accept wildcard characters: False
 To construct, see NOTES section for THREATASSESSMENTREQUESTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphThreatAssessmentRequest[]
-Parameter Sets: UpdateExpanded
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphThreatAssessmentRequest[]
+Parameter Sets: UpdateExpanded1
 Aliases:
 
 Required: False
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -213,7 +213,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -280,14 +280,14 @@ BODYPARAMETER <IMicrosoftGraphInformationProtection>: informationProtection
       - `[Name <String>]`: The plaintext name of the label.
       - `[Parent <IMicrosoftGraphParentLabelDetails>]`: parentLabelDetails
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Color <String>]`: 
-        - `[Description <String>]`: 
-        - `[Id <String>]`: 
-        - `[IsActive <Boolean?>]`: 
-        - `[Name <String>]`: 
+        - `[Color <String>]`: The color that the user interface should display for the label, if configured.
+        - `[Description <String>]`: The admin-defined description for the label.
+        - `[Id <String>]`: The label ID is a globally unique identifier (GUID).
+        - `[IsActive <Boolean?>]`: Indicates whether the label is active or not. Active labels should be hidden or disabled in user interfaces.
+        - `[Name <String>]`: The plaintext name of the label.
         - `[Parent <IMicrosoftGraphParentLabelDetails>]`: parentLabelDetails
-        - `[Sensitivity <Int32?>]`: 
-        - `[Tooltip <String>]`: 
+        - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
+        - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a user interface.
       - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
       - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
   - `[SensitivityLabels <IMicrosoftGraphSensitivityLabel[]>]`: 
@@ -355,14 +355,14 @@ POLICY <IMicrosoftGraphInformationProtectionPolicy>: informationProtectionPolicy
     - `[Name <String>]`: The plaintext name of the label.
     - `[Parent <IMicrosoftGraphParentLabelDetails>]`: parentLabelDetails
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Color <String>]`: 
-      - `[Description <String>]`: 
-      - `[Id <String>]`: 
-      - `[IsActive <Boolean?>]`: 
-      - `[Name <String>]`: 
+      - `[Color <String>]`: The color that the user interface should display for the label, if configured.
+      - `[Description <String>]`: The admin-defined description for the label.
+      - `[Id <String>]`: The label ID is a globally unique identifier (GUID).
+      - `[IsActive <Boolean?>]`: Indicates whether the label is active or not. Active labels should be hidden or disabled in user interfaces.
+      - `[Name <String>]`: The plaintext name of the label.
       - `[Parent <IMicrosoftGraphParentLabelDetails>]`: parentLabelDetails
-      - `[Sensitivity <Int32?>]`: 
-      - `[Tooltip <String>]`: 
+      - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
+      - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a user interface.
     - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
     - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
 
@@ -420,4 +420,3 @@ THREATASSESSMENTREQUESTS <IMicrosoftGraphThreatAssessmentRequest[]>: .
 
 ## RELATED LINKS
 
-## RELATED LINKS

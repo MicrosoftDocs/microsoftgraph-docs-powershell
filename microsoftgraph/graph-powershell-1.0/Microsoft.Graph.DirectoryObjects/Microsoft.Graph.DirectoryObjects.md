@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.DirectoryObjects
-Module Guid: 9bd52ad8-cf97-4c88-a831-e4d6c922d046
+Module Guid: a9d80c08-adc4-4548-8435-f4a711d5a603
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.directoryobjects
 Help Version: 1.0.0.0
 Locale: en-US
@@ -18,7 +18,8 @@ Invoke action checkMemberGroups
 Invoke action checkMemberObjects
 
 ### [Get-MgDirectoryObject](Get-MgDirectoryObject.md)
-Get entity from directoryObjects by key
+Represents an Azure Active Directory object.
+The directoryObject type is the base type for many other directory entity types.
 
 ### [Get-MgDirectoryObjectAvailableExtensionProperty](Get-MgDirectoryObjectAvailableExtensionProperty.md)
 Invoke action getAvailableExtensionProperties
@@ -36,7 +37,8 @@ Invoke action getMemberObjects
 Add new entity to directoryObjects
 
 ### [Remove-MgDirectoryObject](Remove-MgDirectoryObject.md)
-Delete entity from directoryObjects
+Represents an Azure Active Directory object.
+The directoryObject type is the base type for many other directory entity types.
 
 ### [Restore-MgDirectoryObject](Restore-MgDirectoryObject.md)
 Invoke action restore
@@ -45,5 +47,6 @@ Invoke action restore
 Invoke action validateProperties
 
 ### [Update-MgDirectoryObject](Update-MgDirectoryObject.md)
-Update entity in directoryObjects
+Represents an Azure Active Directory object.
+The directoryObject type is the base type for many other directory entity types.
 

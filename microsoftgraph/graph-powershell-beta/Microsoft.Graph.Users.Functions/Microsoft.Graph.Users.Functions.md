@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Users.Functions
-Module Guid: 5df7f487-78da-4bc6-ab05-44d3cc9c28d9
+Module Guid: 7ad24dd0-7fb1-455d-afdb-e351a0df737c
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions
 Help Version: 1.0.0.0
 Locale: en-US
@@ -69,13 +69,16 @@ Invoke function delta
 Invoke function getManagedAppBlockedUsers
 
 ### [Get-MgUserManagedAppDiagnosticStatuses](Get-MgUserManagedAppDiagnosticStatuses.md)
-Invoke function getManagedAppDiagnosticStatuses
+Gets diagnostics validation status for a given user.
 
 ### [Get-MgUserManagedAppPolicy](Get-MgUserManagedAppPolicy.md)
-Invoke function getManagedAppPolicies
+Gets app restrictions for a given user.
 
 ### [Get-MgUserManagedAppRegistrationUserId](Get-MgUserManagedAppRegistrationUserId.md)
 Invoke function getUserIdsWithFlaggedAppRegistration
+
+### [Get-MgUserManagedDeviceCloudPcRemoteActionResult](Get-MgUserManagedDeviceCloudPcRemoteActionResult.md)
+Invoke function getCloudPcRemoteActionResults
 
 ### [Get-MgUserManagedDeviceFileVaultKey](Get-MgUserManagedDeviceFileVaultKey.md)
 Invoke function getFileVaultKey
@@ -84,7 +87,7 @@ Invoke function getFileVaultKey
 Invoke function getNonCompliantSettings
 
 ### [Get-MgUserManagedDeviceWithAppFailure](Get-MgUserManagedDeviceWithAppFailure.md)
-Invoke function getManagedDevicesWithAppFailures
+Retrieves the list of devices with failed apps
 
 ### [Get-MgUserMessageDelta](Get-MgUserMessageDelta.md)
 Invoke function delta
@@ -116,8 +119,14 @@ Invoke function filterByCurrentUser
 ### [Invoke-MgFilterUserApproval](Invoke-MgFilterUserApproval.md)
 Invoke function filterByCurrentUser
 
+### [Invoke-MgFilterUserPendingAccessReviewInstance](Invoke-MgFilterUserPendingAccessReviewInstance.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterUserPendingAccessReviewInstanceDecision](Invoke-MgFilterUserPendingAccessReviewInstanceDecision.md)
+Invoke function filterByCurrentUser
+
 ### [Invoke-MgPendingUserApp](Invoke-MgPendingUserApp.md)
-Invoke function getManagedDevicesWithFailedOrPendingApps
+Retrieves the list of devices with failed or pending apps
 
 ### [Invoke-MgPreviewUserOnenotePage](Invoke-MgPreviewUserOnenotePage.md)
 Invoke function preview
@@ -135,5 +144,5 @@ Invoke function supportedTimeZones
 Invoke function reminderView
 
 ### [Test-MgUserManagedAppUserBlocked](Test-MgUserManagedAppUserBlocked.md)
-Invoke function isManagedAppUserBlocked
+Gets the blocked state of a managed app user.
 

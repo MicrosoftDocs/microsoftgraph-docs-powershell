@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementgrouppolicycategory
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementGroupPolicyCategory
 
 ## SYNOPSIS
-Create new navigation property to groupPolicyCategories for deviceManagement
+The available group policy categories for this account.
 
 ## SYNTAX
 
@@ -18,18 +18,18 @@ New-MgDeviceManagementGroupPolicyCategory [-AdditionalProperties <Hashtable>]
  [-Children <IMicrosoftGraphGroupPolicyCategory[]>]
  [-DefinitionFile <IMicrosoftGraphGroupPolicyDefinitionFile>]
  [-Definitions <IMicrosoftGraphGroupPolicyDefinition[]>] [-DisplayName <String>] [-Id <String>] [-IsRoot]
- [-LastModifiedDateTime <DateTime>] [-Parent <IMicrosoftGraphGroupPolicyCategory>] [-WhatIf] [-Confirm]
+ [-LastModifiedDateTime <DateTime>] [-Parent <IMicrosoftGraphGroupPolicyCategory>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementGroupPolicyCategory -BodyParameter <IMicrosoftGraphGroupPolicyCategory> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgDeviceManagementGroupPolicyCategory -BodyParameter <IMicrosoftGraphGroupPolicyCategory> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create new navigation property to groupPolicyCategories for deviceManagement
+The available group policy categories for this account.
 
 ## EXAMPLES
 
@@ -39,7 +39,7 @@ Create new navigation property to groupPolicyCategories for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -55,7 +55,7 @@ The category entity stores the category of a group policy definition
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicyCategory
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyCategory
 Parameter Sets: Create
 Aliases:
 
@@ -71,7 +71,7 @@ The children categories
 To construct, see NOTES section for CHILDREN properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicyCategory[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyCategory[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -89,7 +89,7 @@ The group policy definition file also contains the languages supported as determ
 To construct, see NOTES section for DEFINITIONFILE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicyDefinitionFile
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyDefinitionFile
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -105,7 +105,7 @@ The immediate GroupPolicyDefinition children of the category
 To construct, see NOTES section for DEFINITIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicyDefinition[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyDefinition[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 The string id of the category's display name
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 Defines if the category is a root category
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 The date and time the entity was last modified.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -181,7 +181,7 @@ The category entity stores the category of a group policy definition
 To construct, see NOTES section for PARENT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicyCategory
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyCategory
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -212,7 +212,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -434,4 +434,3 @@ PARENT <IMicrosoftGraphGroupPolicyCategory>: The category entity stores the cate
 
 ## RELATED LINKS
 
-## RELATED LINKS

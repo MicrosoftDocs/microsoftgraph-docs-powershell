@@ -1,48 +1,47 @@
 ---
-external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmgtmanagedappregistrationintendedpolicy
 schema: 2.0.0
 ---
 
-# Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp
+# New-MgDeviceAppMgtManagedAppRegistrationIntendedPolicy
 
 ## SYNOPSIS
-Invoke action targetApps
+Zero or more policies admin intended for the app as of now.
 
 ## SYNTAX
 
-### TargetExpanded1 (Default)
+### CreateExpanded1 (Default)
 ```
-Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp -TargetedManagedAppConfigurationId <String>
- [-AdditionalProperties <Hashtable>] [-Apps <IMicrosoftGraphManagedMobileApp[]>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### Target1
-```
-Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp -TargetedManagedAppConfigurationId <String>
- -BodyParameter <IPathsXzr66BDeviceappmanagementTargetedmanagedappconfigurationsTargetedmanagedappconfigurationIdMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDeviceAppMgtManagedAppRegistrationIntendedPolicy -ManagedAppRegistrationId <String>
+ [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Description <String>]
+ [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Version <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
-### TargetViaIdentityExpanded1
+### Create1
 ```
-Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>]
- [-Apps <IMicrosoftGraphManagedMobileApp[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDeviceAppMgtManagedAppRegistrationIntendedPolicy -ManagedAppRegistrationId <String>
+ -BodyParameter <IMicrosoftGraphManagedAppPolicy1> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### TargetViaIdentity1
+### CreateViaIdentity1
 ```
-Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp
- -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IPathsXzr66BDeviceappmanagementTargetedmanagedappconfigurationsTargetedmanagedappconfigurationIdMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDeviceAppMgtManagedAppRegistrationIntendedPolicy -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <IMicrosoftGraphManagedAppPolicy1> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded1
+```
+New-MgDeviceAppMgtManagedAppRegistrationIntendedPolicy -InputObject <IDevicesCorporateManagementIdentity>
+ [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Description <String>]
+ [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Version <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action targetApps
+Zero or more policies admin intended for the app as of now.
 
 ## EXAMPLES
 
@@ -52,24 +51,8 @@ Invoke action targetApps
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: TargetExpanded1, TargetViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Apps
-.
-To construct, see NOTES section for APPS properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphManagedMobileApp[]
-Parameter Sets: TargetExpanded1, TargetViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -80,12 +63,12 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-.
+The ManagedAppPolicy resource represents a base type for platform specific policies.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsXzr66BDeviceappmanagementTargetedmanagedappconfigurationsTargetedmanagedappconfigurationIdMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Target1, TargetViaIdentity1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedAppPolicy1
+Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -95,28 +78,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -InputObject
-Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+### -CreatedDateTime
+The date and time the policy was created.
 
 ```yaml
-Type: IDevicesCorporateManagementIdentity
-Parameter Sets: TargetViaIdentityExpanded1, TargetViaIdentity1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Type: System.DateTime
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -126,15 +93,106 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -TargetedManagedAppConfigurationId
-key: id of targetedManagedAppConfiguration
+### -Description
+The policy's description.
 
 ```yaml
-Type: String
-Parameter Sets: TargetExpanded1, Target1
+Type: System.String
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DisplayName
+Policy display name.
+
+```yaml
+Type: System.String
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Id
+Read-only.
+
+```yaml
+Type: System.String
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InputObject
+Identity Parameter
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
+Parameter Sets: CreateViaIdentity1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -LastModifiedDateTime
+Last time the policy was modified.
+
+```yaml
+Type: System.DateTime
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ManagedAppRegistrationId
+key: id of managedAppRegistration
+
+```yaml
+Type: System.String
+Parameter Sets: Create1, CreateExpanded1
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Version
+Version of the entity.
+
+```yaml
+Type: System.String
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -145,7 +203,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -161,7 +219,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -179,34 +237,31 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
 
-### Microsoft.Graph.PowerShell.Models.IPathsXzr66BDeviceappmanagementTargetedmanagedappconfigurationsTargetedmanagedappconfigurationIdMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedAppPolicy1
 
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedAppPolicy1
 
 ## NOTES
 
 ALIASES
+
+### New-MgDeviceAppManagementManagedAppRegistrationIntendedPolicy
 
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-APPS <IMicrosoftGraphManagedMobileApp[]>: .
-  - `[Id <String>]`: Read-only.
-  - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Version <String>]`: Version of the entity.
-
-BODYPARAMETER <IPathsXzr66BDeviceappmanagementTargetedmanagedappconfigurationsTargetedmanagedappconfigurationIdMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER <IMicrosoftGraphManagedAppPolicy1>: The ManagedAppPolicy resource represents a base type for platform specific policies.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Apps <IMicrosoftGraphManagedMobileApp[]>]`: 
-    - `[Id <String>]`: Read-only.
-    - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Version <String>]`: Version of the entity.
+  - `[Id <String>]`: Read-only.
+  - `[CreatedDateTime <DateTime?>]`: The date and time the policy was created.
+  - `[Description <String>]`: The policy's description.
+  - `[DisplayName <String>]`: Policy display name.
+  - `[LastModifiedDateTime <DateTime?>]`: Last time the policy was modified.
+  - `[Version <String>]`: Version of the entity.
 
 INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   - `[AndroidManagedAppProtectionId <String>]`: key: id of androidManagedAppProtection
@@ -277,3 +332,4 @@ INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   - `[WindowsInformationProtectionWipeActionId <String>]`: key: id of windowsInformationProtectionWipeAction
 
 ## RELATED LINKS
+

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgredirectuserinsighttrendingresourcemicrosoftgraphprintjob
 schema: 2.0.0
@@ -16,28 +16,28 @@ Invoke action redirect
 ```
 Invoke-MgRedirectUserInsightTrendingResourceMicrosoftGraphPrintJob -TrendingId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-Configuration <IMicrosoftGraphPrintJobConfiguration>]
- [-DestinationPrinterId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DestinationPrinterId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Redirect
 ```
 Invoke-MgRedirectUserInsightTrendingResourceMicrosoftGraphPrintJob -TrendingId <String> -UserId <String>
  -BodyParameter <IPaths16ElyjtUsersUserIdInsightsTrendingIdResourceMicrosoftGraphPrintjobMicrosoftGraphRedirectPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### RedirectViaIdentityExpanded
-```
-Invoke-MgRedirectUserInsightTrendingResourceMicrosoftGraphPrintJob -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-Configuration <IMicrosoftGraphPrintJobConfiguration>]
- [-DestinationPrinterId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### RedirectViaIdentity
 ```
 Invoke-MgRedirectUserInsightTrendingResourceMicrosoftGraphPrintJob -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths16ElyjtUsersUserIdInsightsTrendingIdResourceMicrosoftGraphPrintjobMicrosoftGraphRedirectPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### RedirectViaIdentityExpanded
+```
+Invoke-MgRedirectUserInsightTrendingResourceMicrosoftGraphPrintJob -InputObject <IUsersActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-Configuration <IMicrosoftGraphPrintJobConfiguration>]
+ [-DestinationPrinterId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,7 +51,7 @@ Invoke action redirect
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: RedirectExpanded, RedirectViaIdentityExpanded
 Aliases:
 
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths16ElyjtUsersUserIdInsightsTrendingIdResourceMicrosoftGraphPrintjobMicrosoftGraphRedirectPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths16ElyjtUsersUserIdInsightsTrendingIdResourceMicrosoftGraphPrintjobMicrosoftGraphRedirectPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Redirect, RedirectViaIdentity
 Aliases:
 
@@ -83,7 +83,7 @@ printJobConfiguration
 To construct, see NOTES section for CONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintJobConfiguration
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintJobConfiguration
 Parameter Sets: RedirectExpanded, RedirectViaIdentityExpanded
 Aliases:
 
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: RedirectExpanded, RedirectViaIdentityExpanded
 Aliases:
 
@@ -114,8 +114,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: RedirectViaIdentityExpanded, RedirectViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: RedirectViaIdentity, RedirectViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -129,8 +129,8 @@ Accept wildcard characters: False
 key: id of trending
 
 ```yaml
-Type: String
-Parameter Sets: RedirectExpanded, Redirect
+Type: System.String
+Parameter Sets: Redirect, RedirectExpanded
 Aliases:
 
 Required: True
@@ -144,8 +144,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: RedirectExpanded, Redirect
+Type: System.String
+Parameter Sets: Redirect, RedirectExpanded
 Aliases:
 
 Required: True
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -175,7 +175,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -227,8 +227,8 @@ BODYPARAMETER <IPaths16ElyjtUsersUserIdInsightsTrendingIdResourceMicrosoftGraphP
       - `[Left <Int32?>]`: The margin in microns from the left edge.
       - `[Right <Int32?>]`: The margin in microns from the right edge.
       - `[Top <Int32?>]`: The margin in microns from the top edge.
-    - `[MediaSize <String>]`: The media sizeto use when printing. Supports standard size names for ISO and ANSI media sizes, along with any custom sizes supported by the associated printer.
-    - `[MediaType <String>]`: The default media (such as paper) type to print the document on. Valid values are described in the following table.
+    - `[MediaSize <String>]`: The media sizeto use when printing. Supports standard size names for ISO and ANSI media sizes. Valid values are listed in the printerCapabilities topic.
+    - `[MediaType <String>]`: The default media (such as paper) type to print the document on.
     - `[MultipageLayout <String>]`: printMultipageLayout
     - `[Orientation <String>]`: printOrientation
     - `[OutputBin <String>]`: The output bin to place completed prints into. See the printer's capabilities for a list of supported output bins.
@@ -257,8 +257,8 @@ CONFIGURATION <IMicrosoftGraphPrintJobConfiguration>: printJobConfiguration
     - `[Left <Int32?>]`: The margin in microns from the left edge.
     - `[Right <Int32?>]`: The margin in microns from the right edge.
     - `[Top <Int32?>]`: The margin in microns from the top edge.
-  - `[MediaSize <String>]`: The media sizeto use when printing. Supports standard size names for ISO and ANSI media sizes, along with any custom sizes supported by the associated printer.
-  - `[MediaType <String>]`: The default media (such as paper) type to print the document on. Valid values are described in the following table.
+  - `[MediaSize <String>]`: The media sizeto use when printing. Supports standard size names for ISO and ANSI media sizes. Valid values are listed in the printerCapabilities topic.
+  - `[MediaType <String>]`: The default media (such as paper) type to print the document on.
   - `[MultipageLayout <String>]`: printMultipageLayout
   - `[Orientation <String>]`: printOrientation
   - `[OutputBin <String>]`: The output bin to place completed prints into. See the printer's capabilities for a list of supported output bins.
@@ -295,3 +295,4 @@ INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

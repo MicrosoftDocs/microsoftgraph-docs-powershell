@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Sites-help.xml
+external help file:
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/set-mgsiteanalyticbyref
 schema: 2.0.0
@@ -8,36 +8,36 @@ schema: 2.0.0
 # Set-MgSiteAnalyticByRef
 
 ## SYNOPSIS
-Update the ref of navigation property analytics in sites
+Analytics about the view activities that took place in this site.
 
 ## SYNTAX
 
 ### SetExpanded1 (Default)
 ```
-Set-MgSiteAnalyticByRef -SiteId <String> [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm]
+Set-MgSiteAnalyticByRef -SiteId <String> [-AdditionalProperties <Hashtable>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Set1
 ```
-Set-MgSiteAnalyticByRef -SiteId <String> -BodyParameter <Hashtable> [-PassThru] [-WhatIf] [-Confirm]
+Set-MgSiteAnalyticByRef -SiteId <String> -BodyParameter <Hashtable> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### SetViaIdentityExpanded1
-```
-Set-MgSiteAnalyticByRef -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity1
 ```
-Set-MgSiteAnalyticByRef -InputObject <ISitesIdentity> -BodyParameter <Hashtable> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Set-MgSiteAnalyticByRef -InputObject <ISitesIdentity> -BodyParameter <Hashtable> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
+```
+
+### SetViaIdentityExpanded1
+```
+Set-MgSiteAnalyticByRef -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>] [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the ref of navigation property analytics in sites
+Analytics about the view activities that took place in this site.
 
 ## EXAMPLES
 
@@ -47,7 +47,7 @@ Update the ref of navigation property analytics in sites
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: SetExpanded1, SetViaIdentityExpanded1
 Aliases:
 
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: Set1, SetViaIdentity1
 Aliases:
 
@@ -78,8 +78,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISitesIdentity
-Parameter Sets: SetViaIdentityExpanded1, SetViaIdentity1
+Type: Microsoft.Graph.PowerShell.Models.ISitesIdentity
+Parameter Sets: SetViaIdentity1, SetViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -108,8 +108,8 @@ Accept wildcard characters: False
 key: id of site
 
 ```yaml
-Type: String
-Parameter Sets: SetExpanded1, Set1
+Type: System.String
+Parameter Sets: Set1, SetExpanded1
 Aliases:
 
 Required: True
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -139,7 +139,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -198,3 +198,4 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

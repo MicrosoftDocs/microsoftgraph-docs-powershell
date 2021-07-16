@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtwindowmanagementapp
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppMgtWindowManagementApp
 
 ## SYNOPSIS
-Get windowsManagementApp from deviceAppManagement
+Windows management app.
 
 ## SYNTAX
 
@@ -17,16 +17,9 @@ Get-MgDeviceAppMgtWindowManagementApp [-ExpandProperty <String[]>] [-Property <S
 ```
 
 ## DESCRIPTION
-Get windowsManagementApp from deviceAppManagement
+Windows management app.
 
 ## EXAMPLES
-
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -34,7 +27,7 @@ PS C:\> {{ Add example code here }}
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -49,7 +42,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -68,9 +61,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsManagementApp
+
 ## NOTES
 
-## RELATED LINKS
+ALIASES
 
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtwindowmanagementapp](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtwindowmanagementapp)
+### Get-MgDeviceAppManagementWindowManagementApp
+
+## RELATED LINKS
 

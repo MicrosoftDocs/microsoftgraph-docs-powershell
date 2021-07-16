@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Search-help.xml
+external help file:
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/update-mgexternal
 schema: 2.0.0
@@ -15,13 +15,13 @@ Update external
 ### UpdateExpanded (Default)
 ```
 Update-MgExternal [-AdditionalProperties <Hashtable>]
- [-Connections <IMicrosoftGraphExternalConnectorsExternalConnection[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Connections <IMicrosoftGraphExternalConnectorsExternalConnection[]>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgExternal -BodyParameter <IMicrosoftGraphExternalConnectorsExternal> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgExternal -BodyParameter <IMicrosoftGraphExternalConnectorsExternal> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -36,7 +36,7 @@ Update external
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -52,7 +52,7 @@ external
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsExternal
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternal
 Parameter Sets: Update
 Aliases:
 
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for CONNECTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsExternalConnection[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalConnection[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -114,7 +114,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -270,3 +270,4 @@ CONNECTIONS <IMicrosoftGraphExternalConnectorsExternalConnection[]>: .
   - `[State <String>]`: connectionState
 
 ## RELATED LINKS
+

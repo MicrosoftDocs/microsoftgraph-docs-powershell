@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgpolicyauthorizationpolicy
 schema: 2.0.0
@@ -14,18 +14,17 @@ Create new navigation property to authorizationPolicy for policies
 
 ### CreateExpanded (Default)
 ```
-New-MgPolicyAuthorizationPolicy [-AdditionalProperties <Hashtable>]
- [-AllowEmailVerifiedUsersToJoinOrganization] [-AllowInvitesFrom <String>]
- [-AllowedToSignUpEmailBasedSubscriptions] [-AllowedToUseSspr] [-BlockMsolPowerShell]
- [-DefaultUserRolePermissions <IMicrosoftGraphDefaultUserRolePermissions>] [-DeletedDateTime <DateTime>]
- [-Description <String>] [-DisplayName <String>] [-EnabledPreviewFeatures <String[]>]
- [-GuestUserRoleId <String>] [-Id <String>] [-PermissionGrantPolicyIdsAssignedToDefaultUserRole <String[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgPolicyAuthorizationPolicy [-AdditionalProperties <Hashtable>] [-AllowedToSignUpEmailBasedSubscriptions]
+ [-AllowedToUseSspr] [-AllowEmailVerifiedUsersToJoinOrganization] [-AllowInvitesFrom <String>]
+ [-BlockMsolPowerShell] [-DefaultUserRolePermissions <IMicrosoftGraphDefaultUserRolePermissions>]
+ [-DeletedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
+ [-EnabledPreviewFeatures <String[]>] [-GuestUserRoleId <String>] [-Id <String>]
+ [-PermissionGrantPolicyIdsAssignedToDefaultUserRole <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgPolicyAuthorizationPolicy -BodyParameter <IMicrosoftGraphAuthorizationPolicy> [-WhatIf] [-Confirm]
+New-MgPolicyAuthorizationPolicy -BodyParameter <IMicrosoftGraphAuthorizationPolicy> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -40,7 +39,7 @@ Create new navigation property to authorizationPolicy for policies
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -55,7 +54,7 @@ Accept wildcard characters: False
 Indicates whether users can sign up for email based subscriptions.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -70,7 +69,7 @@ Accept wildcard characters: False
 Indicates whether the Self-Serve Password Reset feature can be used by users on the tenant.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -85,7 +84,7 @@ Accept wildcard characters: False
 Indicates whether a user can join the tenant by email validation.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -100,7 +99,7 @@ Accept wildcard characters: False
 allowInvitesFrom
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -113,11 +112,11 @@ Accept wildcard characters: False
 
 ### -BlockMsolPowerShell
 To disable the use of MSOL PowerShell set this property to true.
-Setting to true will also disable user-based access to the legacy service endpoint used by MSOL PowerShell.
+This will also disable user-based access to the legacy service endpoint used by MSOL PowerShell.
 This does not affect Azure AD Connect or Microsoft Graph.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -134,7 +133,7 @@ The directoryObject type is the base type for many other directory entity types.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAuthorizationPolicy
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthorizationPolicy
 Parameter Sets: Create
 Aliases:
 
@@ -150,7 +149,7 @@ defaultUserRolePermissions
 To construct, see NOTES section for DEFAULTUSERROLEPERMISSIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDefaultUserRolePermissions
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDefaultUserRolePermissions
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -165,7 +164,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -180,7 +179,7 @@ Accept wildcard characters: False
 Description for this policy.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -195,7 +194,7 @@ Accept wildcard characters: False
 Display name for this policy.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -210,7 +209,7 @@ Accept wildcard characters: False
 List of features enabled for private preview on the tenant.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -227,7 +226,7 @@ Refer to List unifiedRoleDefinitions to find the list of available role template
 Currently following roles are supported: User (a0b1b346-4d3e-4e8b-98f8-753987be4970), Guest User (10dae51f-b6af-4016-8d66-8c2a99b929b3), and Restricted Guest User (2af84b1e-32c8-42b7-82bc-daa82404023b).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -242,7 +241,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -259,7 +258,7 @@ Values should be in the format managePermissionGrantsForSelf.{id}, where {id} is
 An empty list indicates user consent to apps is disabled.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -274,7 +273,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -290,7 +289,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -331,7 +330,7 @@ BODYPARAMETER <IMicrosoftGraphAuthorizationPolicy>: Represents an Azure Active D
   - `[AllowInvitesFrom <String>]`: allowInvitesFrom
   - `[AllowedToSignUpEmailBasedSubscriptions <Boolean?>]`: Indicates whether users can sign up for email based subscriptions.
   - `[AllowedToUseSspr <Boolean?>]`: Indicates whether the Self-Serve Password Reset feature can be used by users on the tenant.
-  - `[BlockMsolPowerShell <Boolean?>]`: To disable the use of MSOL PowerShell set this property to true. Setting to true will also disable user-based access to the legacy service endpoint used by MSOL PowerShell. This does not affect Azure AD Connect or Microsoft Graph.
+  - `[BlockMsolPowerShell <Boolean?>]`: To disable the use of MSOL PowerShell set this property to true. This will also disable user-based access to the legacy service endpoint used by MSOL PowerShell. This does not affect Azure AD Connect or Microsoft Graph.
   - `[DefaultUserRolePermissions <IMicrosoftGraphDefaultUserRolePermissions>]`: defaultUserRolePermissions
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AllowedToCreateApps <Boolean?>]`: Indicates whether the default user role can create applications.
@@ -348,3 +347,4 @@ DEFAULTUSERROLEPERMISSIONS <IMicrosoftGraphDefaultUserRolePermissions>: defaultU
   - `[AllowedToReadOtherUsers <Boolean?>]`: Indicates whether the default user role can read other users.
 
 ## RELATED LINKS
+

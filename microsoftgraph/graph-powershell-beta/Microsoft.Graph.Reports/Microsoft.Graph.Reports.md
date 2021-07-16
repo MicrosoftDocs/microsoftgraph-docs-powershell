@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Reports
-Module Guid: 8a3adbff-1e92-4c5f-8015-6abb438c73b5
+Module Guid: 0e941ce3-12b2-41bf-b4a5-7da1208e5047
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports
 Help Version: 1.0.0.0
 Locale: en-US
@@ -12,7 +12,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Reports Cmdlets
 ### [Get-MgAuditLogDirectoryAudit](Get-MgAuditLogDirectoryAudit.md)
-Get directoryAudits from auditLogs
+Read-only.
+Nullable.
 
 ### [Get-MgAuditLogDirectoryProvisioning](Get-MgAuditLogDirectoryProvisioning.md)
 Get directoryProvisioning from auditLogs
@@ -24,19 +25,20 @@ Get provisioning from auditLogs
 Get restrictedSignIns from auditLogs
 
 ### [Get-MgAuditLogSignIn](Get-MgAuditLogSignIn.md)
-Get signIns from auditLogs
+Read-only.
+Nullable.
 
 ### [Get-MgDeviceManagementReport](Get-MgDeviceManagementReport.md)
-Get reports from deviceManagement
+Reports singleton
 
 ### [Get-MgDeviceManagementReportCachedReportConfiguration](Get-MgDeviceManagementReportCachedReportConfiguration.md)
-Get cachedReportConfigurations from deviceManagement
+Entity representing the configuration of a cached report
 
 ### [Get-MgDeviceManagementReportExportJob](Get-MgDeviceManagementReportExportJob.md)
-Get exportJobs from deviceManagement
+Entity representing a job to export a report
 
 ### [Get-MgDeviceManagementReportSchedule](Get-MgDeviceManagementReportSchedule.md)
-Get reportSchedules from deviceManagement
+Entity representing a schedule for which reports are delivered
 
 ### [Get-MgReportApplicationSign](Get-MgReportApplicationSign.md)
 Get applicationSignInDetailedSummary from reports
@@ -75,10 +77,10 @@ Get dailyPrintUsageSummariesByPrinter from reports
 Get dailyPrintUsageSummariesByUser from reports
 
 ### [Get-MgReportDeviceConfigurationDeviceActivity](Get-MgReportDeviceConfigurationDeviceActivity.md)
-Invoke function deviceConfigurationDeviceActivity
+Metadata for the device configuration device activity report
 
 ### [Get-MgReportDeviceConfigurationUserActivity](Get-MgReportDeviceConfigurationUserActivity.md)
-Invoke function deviceConfigurationUserActivity
+Metadata for the device configuration user activity report
 
 ### [Get-MgReportEmailActivityCount](Get-MgReportEmailActivityCount.md)
 Invoke function getEmailActivityCounts
@@ -135,10 +137,10 @@ Invoke function getMailboxUsageQuotaStatusMailboxCounts
 Invoke function getMailboxUsageStorage
 
 ### [Get-MgReportManagedDeviceEnrollmentAbandonmentDetail](Get-MgReportManagedDeviceEnrollmentAbandonmentDetail.md)
-Invoke function managedDeviceEnrollmentAbandonmentDetails
+Metadata for Enrollment abandonment details report
 
 ### [Get-MgReportManagedDeviceEnrollmentAbandonmentSummary](Get-MgReportManagedDeviceEnrollmentAbandonmentSummary.md)
-Invoke function managedDeviceEnrollmentAbandonmentSummary
+Metadata for Enrollment abandonment summary report
 
 ### [Get-MgReportManagedDeviceEnrollmentFailureDetail027E](Get-MgReportManagedDeviceEnrollmentFailureDetail027E.md)
 Invoke function managedDeviceEnrollmentFailureDetails
@@ -147,7 +149,7 @@ Invoke function managedDeviceEnrollmentFailureDetails
 Invoke function managedDeviceEnrollmentFailureDetails
 
 ### [Get-MgReportManagedDeviceEnrollmentFailureTrend](Get-MgReportManagedDeviceEnrollmentFailureTrend.md)
-Invoke function managedDeviceEnrollmentFailureTrends
+Metadata for the enrollment failure trends report
 
 ### [Get-MgReportManagedDeviceEnrollmentTopFailures](Get-MgReportManagedDeviceEnrollmentTopFailures.md)
 Invoke function managedDeviceEnrollmentTopFailures
@@ -357,8 +359,8 @@ Invoke function getYammerGroupsActivityGroupCounts
 Invoke function usersRegisteredByFeature
 
 ### [Remove-MgDeviceManagementReport](Remove-MgDeviceManagementReport.md)
-Delete navigation property reports for deviceManagement
+Reports singleton
 
 ### [Update-MgDeviceManagementReport](Update-MgDeviceManagementReport.md)
-Update the navigation property reports in deviceManagement
+Reports singleton
 

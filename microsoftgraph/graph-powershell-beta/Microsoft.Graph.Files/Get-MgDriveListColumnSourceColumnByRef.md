@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Files-help.xml
+external help file:
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mgdrivelistcolumnsourcecolumnbyref
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDriveListColumnSourceColumnByRef
 
 ## SYNOPSIS
-Get ref of sourceColumn from drives
+The source column for content type column.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Get-MgDriveListColumnSourceColumnByRef -InputObject <IFilesIdentity> [<CommonPar
 ```
 
 ## DESCRIPTION
-Get ref of sourceColumn from drives
+The source column for content type column.
 
 ## EXAMPLES
 
@@ -33,7 +33,7 @@ Get ref of sourceColumn from drives
 key: id of columnDefinition
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -48,7 +48,7 @@ Accept wildcard characters: False
 key: id of drive
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -64,7 +64,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFilesIdentity
+Type: Microsoft.Graph.PowerShell.Models.IFilesIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -113,3 +113,4 @@ INPUTOBJECT <IFilesIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

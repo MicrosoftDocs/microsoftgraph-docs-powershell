@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Teams
-Module Guid: 116f5411-9d5a-4739-96cb-5a9d604d3236
+Module Guid: ea137b5f-b6f9-4808-95a1-e18b82cb3f4a
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams
 Help Version: 1.0.0.0
 Locale: en-US
@@ -11,71 +11,8 @@ Locale: en-US
 Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Teams Cmdlets
-### [Complete-MgTeamChannelMigration](Complete-MgTeamChannelMigration.md)
-Invoke action completeMigration
-
-### [Complete-MgTeamMigration](Complete-MgTeamMigration.md)
-Invoke action completeMigration
-
-### [Complete-MgTeamPrimaryChannelMigration](Complete-MgTeamPrimaryChannelMigration.md)
-Invoke action completeMigration
-
 ### [Copy-MgTeam](Copy-MgTeam.md)
 Invoke action clone
-
-### [Get-MgAppCatalogTeamApp](Get-MgAppCatalogTeamApp.md)
-Get teamsApps from appCatalogs
-
-### [Get-MgAppCatalogTeamAppDefinition](Get-MgAppCatalogTeamAppDefinition.md)
-Get appDefinitions from appCatalogs
-
-### [Get-MgAppCatalogTeamAppDefinitionBot](Get-MgAppCatalogTeamAppDefinitionBot.md)
-Get bot from appCatalogs
-
-### [Get-MgChat](Get-MgChat.md)
-Get entity from chats by key
-
-### [Get-MgChatInstalledApp](Get-MgChatInstalledApp.md)
-Get installedApps from chats
-
-### [Get-MgChatInstalledAppTeamApp](Get-MgChatInstalledAppTeamApp.md)
-Get teamsApp from chats
-
-### [Get-MgChatInstalledAppTeamAppByRef](Get-MgChatInstalledAppTeamAppByRef.md)
-Get ref of teamsApp from chats
-
-### [Get-MgChatInstalledAppTeamAppDefinition](Get-MgChatInstalledAppTeamAppDefinition.md)
-Get teamsAppDefinition from chats
-
-### [Get-MgChatInstalledAppTeamAppDefinitionByRef](Get-MgChatInstalledAppTeamAppDefinitionByRef.md)
-Get ref of teamsAppDefinition from chats
-
-### [Get-MgChatMember](Get-MgChatMember.md)
-Get members from chats
-
-### [Get-MgChatMessage](Get-MgChatMessage.md)
-Get messages from chats
-
-### [Get-MgChatMessageDelta](Get-MgChatMessageDelta.md)
-Invoke function delta
-
-### [Get-MgChatMessageHostedContent](Get-MgChatMessageHostedContent.md)
-Get hostedContents from chats
-
-### [Get-MgChatMessageReply](Get-MgChatMessageReply.md)
-Get replies from chats
-
-### [Get-MgChatMessageReplyDelta](Get-MgChatMessageReplyDelta.md)
-Invoke function delta
-
-### [Get-MgChatTab](Get-MgChatTab.md)
-Get tabs from chats
-
-### [Get-MgChatTabTeamApp](Get-MgChatTabTeamApp.md)
-Get teamsApp from chats
-
-### [Get-MgChatTabTeamAppByRef](Get-MgChatTabTeamAppByRef.md)
-Get ref of teamsApp from chats
 
 ### [Get-MgGroupTeam](Get-MgGroupTeam.md)
 Get team from groups
@@ -89,26 +26,14 @@ Get channels from teams
 ### [Get-MgTeamChannelFileFolder](Get-MgTeamChannelFileFolder.md)
 Get filesFolder from teams
 
-### [Get-MgTeamChannelFileFolderContent](Get-MgTeamChannelFileFolderContent.md)
-Get media content for the navigation property filesFolder from teams
-
-### [Get-MgTeamChannelMember](Get-MgTeamChannelMember.md)
-Get members from teams
-
 ### [Get-MgTeamChannelMessage](Get-MgTeamChannelMessage.md)
 Get messages from teams
-
-### [Get-MgTeamChannelMessageDelta](Get-MgTeamChannelMessageDelta.md)
-Invoke function delta
 
 ### [Get-MgTeamChannelMessageHostedContent](Get-MgTeamChannelMessageHostedContent.md)
 Get hostedContents from teams
 
 ### [Get-MgTeamChannelMessageReply](Get-MgTeamChannelMessageReply.md)
 Get replies from teams
-
-### [Get-MgTeamChannelMessageReplyDelta](Get-MgTeamChannelMessageReplyDelta.md)
-Invoke function delta
 
 ### [Get-MgTeamChannelTab](Get-MgTeamChannelTab.md)
 Get tabs from teams
@@ -140,9 +65,6 @@ Get ref of teamsAppDefinition from teams
 ### [Get-MgTeamMember](Get-MgTeamMember.md)
 Get members from teams
 
-### [Get-MgTeamMessage](Get-MgTeamMessage.md)
-Invoke function getAllMessages
-
 ### [Get-MgTeamOperation](Get-MgTeamOperation.md)
 Get operations from teams
 
@@ -152,26 +74,14 @@ Get primaryChannel from teams
 ### [Get-MgTeamPrimaryChannelFileFolder](Get-MgTeamPrimaryChannelFileFolder.md)
 Get filesFolder from teams
 
-### [Get-MgTeamPrimaryChannelFileFolderContent](Get-MgTeamPrimaryChannelFileFolderContent.md)
-Get media content for the navigation property filesFolder from teams
-
-### [Get-MgTeamPrimaryChannelMember](Get-MgTeamPrimaryChannelMember.md)
-Get members from teams
-
 ### [Get-MgTeamPrimaryChannelMessage](Get-MgTeamPrimaryChannelMessage.md)
 Get messages from teams
-
-### [Get-MgTeamPrimaryChannelMessageDelta](Get-MgTeamPrimaryChannelMessageDelta.md)
-Invoke function delta
 
 ### [Get-MgTeamPrimaryChannelMessageHostedContent](Get-MgTeamPrimaryChannelMessageHostedContent.md)
 Get hostedContents from teams
 
 ### [Get-MgTeamPrimaryChannelMessageReply](Get-MgTeamPrimaryChannelMessageReply.md)
 Get replies from teams
-
-### [Get-MgTeamPrimaryChannelMessageReplyDelta](Get-MgTeamPrimaryChannelMessageReplyDelta.md)
-Invoke function delta
 
 ### [Get-MgTeamPrimaryChannelTab](Get-MgTeamPrimaryChannelTab.md)
 Get tabs from teams
@@ -227,18 +137,6 @@ Get workforceIntegrations from teamwork
 ### [Get-MgUserJoinedTeam](Get-MgUserJoinedTeam.md)
 Get joinedTeams from users
 
-### [Get-MgUserTeamwork](Get-MgUserTeamwork.md)
-Get teamwork from users
-
-### [Get-MgUserTeamworkInstalledApp](Get-MgUserTeamworkInstalledApp.md)
-Get installedApps from users
-
-### [Get-MgUserTeamworkInstalledAppChat](Get-MgUserTeamworkInstalledAppChat.md)
-Get chat from users
-
-### [Get-MgUserTeamworkInstalledAppChatByRef](Get-MgUserTeamworkInstalledAppChatByRef.md)
-Get ref of chat from users
-
 ### [Invoke-MgArchiveTeam](Invoke-MgArchiveTeam.md)
 Invoke action archive
 
@@ -248,41 +146,11 @@ Invoke action share
 ### [Invoke-MgUnarchiveTeam](Invoke-MgUnarchiveTeam.md)
 Invoke action unarchive
 
-### [New-MgAppCatalogTeamApp](New-MgAppCatalogTeamApp.md)
-Create new navigation property to teamsApps for appCatalogs
-
-### [New-MgAppCatalogTeamAppDefinition](New-MgAppCatalogTeamAppDefinition.md)
-Create new navigation property to appDefinitions for appCatalogs
-
-### [New-MgChat](New-MgChat.md)
-Add new entity to chats
-
-### [New-MgChatInstalledApp](New-MgChatInstalledApp.md)
-Create new navigation property to installedApps for chats
-
-### [New-MgChatMember](New-MgChatMember.md)
-Create new navigation property to members for chats
-
-### [New-MgChatMessage](New-MgChatMessage.md)
-Create new navigation property to messages for chats
-
-### [New-MgChatMessageHostedContent](New-MgChatMessageHostedContent.md)
-Create new navigation property to hostedContents for chats
-
-### [New-MgChatMessageReply](New-MgChatMessageReply.md)
-Create new navigation property to replies for chats
-
-### [New-MgChatTab](New-MgChatTab.md)
-Create new navigation property to tabs for chats
-
 ### [New-MgTeam](New-MgTeam.md)
 Add new entity to teams
 
 ### [New-MgTeamChannel](New-MgTeamChannel.md)
 Create new navigation property to channels for teams
-
-### [New-MgTeamChannelMember](New-MgTeamChannelMember.md)
-Create new navigation property to members for teams
 
 ### [New-MgTeamChannelMessage](New-MgTeamChannelMessage.md)
 Create new navigation property to messages for teams
@@ -304,9 +172,6 @@ Create new navigation property to members for teams
 
 ### [New-MgTeamOperation](New-MgTeamOperation.md)
 Create new navigation property to operations for teams
-
-### [New-MgTeamPrimaryChannelMember](New-MgTeamPrimaryChannelMember.md)
-Create new navigation property to members for teams
 
 ### [New-MgTeamPrimaryChannelMessage](New-MgTeamPrimaryChannelMessage.md)
 Create new navigation property to messages for teams
@@ -353,48 +218,6 @@ Create new navigation property to workforceIntegrations for teamwork
 ### [New-MgUserJoinedTeam](New-MgUserJoinedTeam.md)
 Create new navigation property to joinedTeams for users
 
-### [New-MgUserTeamworkInstalledApp](New-MgUserTeamworkInstalledApp.md)
-Create new navigation property to installedApps for users
-
-### [Remove-MgAppCatalogTeamApp](Remove-MgAppCatalogTeamApp.md)
-Delete navigation property teamsApps for appCatalogs
-
-### [Remove-MgAppCatalogTeamAppDefinition](Remove-MgAppCatalogTeamAppDefinition.md)
-Delete navigation property appDefinitions for appCatalogs
-
-### [Remove-MgAppCatalogTeamAppDefinitionBot](Remove-MgAppCatalogTeamAppDefinitionBot.md)
-Delete navigation property bot for appCatalogs
-
-### [Remove-MgChat](Remove-MgChat.md)
-Delete entity from chats
-
-### [Remove-MgChatInstalledApp](Remove-MgChatInstalledApp.md)
-Delete navigation property installedApps for chats
-
-### [Remove-MgChatInstalledAppTeamAppByRef](Remove-MgChatInstalledAppTeamAppByRef.md)
-Delete ref of navigation property teamsApp for chats
-
-### [Remove-MgChatInstalledAppTeamAppDefinitionByRef](Remove-MgChatInstalledAppTeamAppDefinitionByRef.md)
-Delete ref of navigation property teamsAppDefinition for chats
-
-### [Remove-MgChatMember](Remove-MgChatMember.md)
-Delete navigation property members for chats
-
-### [Remove-MgChatMessage](Remove-MgChatMessage.md)
-Delete navigation property messages for chats
-
-### [Remove-MgChatMessageHostedContent](Remove-MgChatMessageHostedContent.md)
-Delete navigation property hostedContents for chats
-
-### [Remove-MgChatMessageReply](Remove-MgChatMessageReply.md)
-Delete navigation property replies for chats
-
-### [Remove-MgChatTab](Remove-MgChatTab.md)
-Delete navigation property tabs for chats
-
-### [Remove-MgChatTabTeamAppByRef](Remove-MgChatTabTeamAppByRef.md)
-Delete ref of navigation property teamsApp for chats
-
 ### [Remove-MgGroupTeam](Remove-MgGroupTeam.md)
 Delete navigation property team for groups
 
@@ -406,9 +229,6 @@ Delete navigation property channels for teams
 
 ### [Remove-MgTeamChannelFileFolder](Remove-MgTeamChannelFileFolder.md)
 Delete navigation property filesFolder for teams
-
-### [Remove-MgTeamChannelMember](Remove-MgTeamChannelMember.md)
-Delete navigation property members for teams
 
 ### [Remove-MgTeamChannelMessage](Remove-MgTeamChannelMessage.md)
 Delete navigation property messages for teams
@@ -448,9 +268,6 @@ Delete navigation property primaryChannel for teams
 
 ### [Remove-MgTeamPrimaryChannelFileFolder](Remove-MgTeamPrimaryChannelFileFolder.md)
 Delete navigation property filesFolder for teams
-
-### [Remove-MgTeamPrimaryChannelMember](Remove-MgTeamPrimaryChannelMember.md)
-Delete navigation property members for teams
 
 ### [Remove-MgTeamPrimaryChannelMessage](Remove-MgTeamPrimaryChannelMessage.md)
 Delete navigation property messages for teams
@@ -506,33 +323,6 @@ Delete navigation property workforceIntegrations for teamwork
 ### [Remove-MgUserJoinedTeam](Remove-MgUserJoinedTeam.md)
 Delete navigation property joinedTeams for users
 
-### [Remove-MgUserTeamwork](Remove-MgUserTeamwork.md)
-Delete navigation property teamwork for users
-
-### [Remove-MgUserTeamworkInstalledApp](Remove-MgUserTeamworkInstalledApp.md)
-Delete navigation property installedApps for users
-
-### [Remove-MgUserTeamworkInstalledAppChatByRef](Remove-MgUserTeamworkInstalledAppChatByRef.md)
-Delete ref of navigation property chat for users
-
-### [Send-MgChatActivityNotification](Send-MgChatActivityNotification.md)
-Invoke action sendActivityNotification
-
-### [Send-MgTeamActivityNotification](Send-MgTeamActivityNotification.md)
-Invoke action sendActivityNotification
-
-### [Set-MgChatInstalledAppTeamAppByRef](Set-MgChatInstalledAppTeamAppByRef.md)
-Update the ref of navigation property teamsApp in chats
-
-### [Set-MgChatInstalledAppTeamAppDefinitionByRef](Set-MgChatInstalledAppTeamAppDefinitionByRef.md)
-Update the ref of navigation property teamsAppDefinition in chats
-
-### [Set-MgChatTabTeamAppByRef](Set-MgChatTabTeamAppByRef.md)
-Update the ref of navigation property teamsApp in chats
-
-### [Set-MgTeamChannelFileFolderContent](Set-MgTeamChannelFileFolderContent.md)
-Update media content for the navigation property filesFolder in teams
-
 ### [Set-MgTeamChannelTabTeamAppByRef](Set-MgTeamChannelTabTeamAppByRef.md)
 Update the ref of navigation property teamsApp in teams
 
@@ -545,47 +335,11 @@ Update the ref of navigation property teamsApp in teams
 ### [Set-MgTeamInstalledAppTeamAppDefinitionByRef](Set-MgTeamInstalledAppTeamAppDefinitionByRef.md)
 Update the ref of navigation property teamsAppDefinition in teams
 
-### [Set-MgTeamPrimaryChannelFileFolderContent](Set-MgTeamPrimaryChannelFileFolderContent.md)
-Update media content for the navigation property filesFolder in teams
-
 ### [Set-MgTeamPrimaryChannelTabTeamAppByRef](Set-MgTeamPrimaryChannelTabTeamAppByRef.md)
 Update the ref of navigation property teamsApp in teams
 
 ### [Set-MgTeamTemplateByRef](Set-MgTeamTemplateByRef.md)
 Update the ref of navigation property template in teams
-
-### [Set-MgUserTeamworkInstalledAppChatByRef](Set-MgUserTeamworkInstalledAppChatByRef.md)
-Update the ref of navigation property chat in users
-
-### [Update-MgAppCatalogTeamApp](Update-MgAppCatalogTeamApp.md)
-Update the navigation property teamsApps in appCatalogs
-
-### [Update-MgAppCatalogTeamAppDefinition](Update-MgAppCatalogTeamAppDefinition.md)
-Update the navigation property appDefinitions in appCatalogs
-
-### [Update-MgAppCatalogTeamAppDefinitionBot](Update-MgAppCatalogTeamAppDefinitionBot.md)
-Update the navigation property bot in appCatalogs
-
-### [Update-MgChat](Update-MgChat.md)
-Update entity in chats
-
-### [Update-MgChatInstalledApp](Update-MgChatInstalledApp.md)
-Update the navigation property installedApps in chats
-
-### [Update-MgChatMember](Update-MgChatMember.md)
-Update the navigation property members in chats
-
-### [Update-MgChatMessage](Update-MgChatMessage.md)
-Update the navigation property messages in chats
-
-### [Update-MgChatMessageHostedContent](Update-MgChatMessageHostedContent.md)
-Update the navigation property hostedContents in chats
-
-### [Update-MgChatMessageReply](Update-MgChatMessageReply.md)
-Update the navigation property replies in chats
-
-### [Update-MgChatTab](Update-MgChatTab.md)
-Update the navigation property tabs in chats
 
 ### [Update-MgGroupTeam](Update-MgGroupTeam.md)
 Update the navigation property team in groups
@@ -598,9 +352,6 @@ Update the navigation property channels in teams
 
 ### [Update-MgTeamChannelFileFolder](Update-MgTeamChannelFileFolder.md)
 Update the navigation property filesFolder in teams
-
-### [Update-MgTeamChannelMember](Update-MgTeamChannelMember.md)
-Update the navigation property members in teams
 
 ### [Update-MgTeamChannelMessage](Update-MgTeamChannelMessage.md)
 Update the navigation property messages in teams
@@ -628,9 +379,6 @@ Update the navigation property primaryChannel in teams
 
 ### [Update-MgTeamPrimaryChannelFileFolder](Update-MgTeamPrimaryChannelFileFolder.md)
 Update the navigation property filesFolder in teams
-
-### [Update-MgTeamPrimaryChannelMember](Update-MgTeamPrimaryChannelMember.md)
-Update the navigation property members in teams
 
 ### [Update-MgTeamPrimaryChannelMessage](Update-MgTeamPrimaryChannelMessage.md)
 Update the navigation property messages in teams
@@ -682,10 +430,4 @@ Update the navigation property workforceIntegrations in teamwork
 
 ### [Update-MgUserJoinedTeam](Update-MgUserJoinedTeam.md)
 Update the navigation property joinedTeams in users
-
-### [Update-MgUserTeamwork](Update-MgUserTeamwork.md)
-Update the navigation property teamwork in users
-
-### [Update-MgUserTeamworkInstalledApp](Update-MgUserTeamworkInstalledApp.md)
-Update the navigation property installedApps in users
 

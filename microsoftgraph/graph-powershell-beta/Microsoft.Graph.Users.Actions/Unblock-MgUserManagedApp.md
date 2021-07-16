@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/unblock-mgusermanagedapp
 schema: 2.0.0
@@ -8,23 +8,23 @@ schema: 2.0.0
 # Unblock-MgUserManagedApp
 
 ## SYNOPSIS
-Invoke action unblockManagedApps
+Unblocks the managed app user from app check-in.
 
 ## SYNTAX
 
 ### Unblock (Default)
 ```
-Unblock-MgUserManagedApp -UserId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Unblock-MgUserManagedApp -UserId <String> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UnblockViaIdentity
 ```
-Unblock-MgUserManagedApp -InputObject <IUsersActionsIdentity> [-PassThru] [-WhatIf] [-Confirm]
+Unblock-MgUserManagedApp -InputObject <IUsersActionsIdentity> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action unblockManagedApps
+Unblocks the managed app user from app check-in.
 
 ## EXAMPLES
 
@@ -35,7 +35,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
+Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
 Parameter Sets: UnblockViaIdentity
 Aliases:
 
@@ -50,7 +50,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Unblock
 Aliases:
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -96,7 +96,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -153,3 +153,4 @@ INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

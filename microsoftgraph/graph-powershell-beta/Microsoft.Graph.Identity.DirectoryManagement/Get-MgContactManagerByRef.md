@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactmanagerbyref
 schema: 2.0.0
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgContactManagerByRef
 
 ## SYNOPSIS
-Get ref of manager from contacts
+The user or contact that is this contact's manager.
+Read-only.
 
 ## SYNTAX
 
@@ -23,7 +24,8 @@ Get-MgContactManagerByRef -InputObject <IIdentityDirectoryManagementIdentity> [<
 ```
 
 ## DESCRIPTION
-Get ref of manager from contacts
+The user or contact that is this contact's manager.
+Read-only.
 
 ## EXAMPLES
 
@@ -34,7 +36,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
+Type: Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
 Parameter Sets: GetViaIdentity1
 Aliases:
 
@@ -49,7 +51,7 @@ Accept wildcard characters: False
 key: id of orgContact
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get1
 Aliases:
 
@@ -105,3 +107,4 @@ INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

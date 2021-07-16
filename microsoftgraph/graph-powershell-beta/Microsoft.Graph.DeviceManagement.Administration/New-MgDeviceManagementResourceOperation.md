@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementresourceoperation
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementResourceOperation
 
 ## SYNOPSIS
-Create new navigation property to resourceOperations for deviceManagement
+The Resource Operations.
 
 ## SYNTAX
 
@@ -16,17 +16,17 @@ Create new navigation property to resourceOperations for deviceManagement
 ```
 New-MgDeviceManagementResourceOperation [-ActionName <String>] [-AdditionalProperties <Hashtable>]
  [-Description <String>] [-EnabledForScopeValidation] [-Id <String>] [-Resource <String>]
- [-ResourceName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResourceName <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementResourceOperation -BodyParameter <IMicrosoftGraphResourceOperation1> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgDeviceManagementResourceOperation -BodyParameter <IMicrosoftGraphResourceOperation1> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create new navigation property to resourceOperations for deviceManagement
+The Resource Operations.
 
 ## EXAMPLES
 
@@ -37,7 +37,7 @@ Type of action this operation is going to perform.
 The actionName should be concise and limited to as few words as possible.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -52,7 +52,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -68,7 +68,7 @@ Describes the resourceOperation resource (entity) of the Microsoft Graph API (RE
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphResourceOperation1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphResourceOperation1
 Parameter Sets: Create
 Aliases:
 
@@ -84,7 +84,7 @@ Description of the resource operation.
 The description is used in mouse-over text for the operation when shown in the Azure Portal.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 Determines whether the Permission is validated for Scopes defined per Role Assignment.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 Resource category to which this Operation belongs.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 Name of the Resource this operation is performed on.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -175,7 +175,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -216,3 +216,4 @@ BODYPARAMETER <IMicrosoftGraphResourceOperation1>: Describes the resourceOperati
   - `[ResourceName <String>]`: Name of the Resource this operation is performed on.
 
 ## RELATED LINKS
+

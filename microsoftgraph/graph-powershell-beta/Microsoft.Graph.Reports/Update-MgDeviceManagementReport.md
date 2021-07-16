@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Reports-help.xml
+external help file:
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/update-mgdevicemanagementreport
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementReport
 
 ## SYNOPSIS
-Update the navigation property reports in deviceManagement
+Reports singleton
 
 ## SYNTAX
 
@@ -17,18 +17,18 @@ Update the navigation property reports in deviceManagement
 Update-MgDeviceManagementReport [-AdditionalProperties <Hashtable>]
  [-CachedReportConfigurations <IMicrosoftGraphDeviceManagementCachedReportConfiguration[]>]
  [-ExportJobs <IMicrosoftGraphDeviceManagementExportJob[]>] [-Id <String>]
- [-ReportSchedules <IMicrosoftGraphDeviceManagementReportSchedule[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [-ReportSchedules <IMicrosoftGraphDeviceManagementReportSchedule[]>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDeviceManagementReport -BodyParameter <IMicrosoftGraphDeviceManagementReports> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgDeviceManagementReport -BodyParameter <IMicrosoftGraphDeviceManagementReports> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property reports in deviceManagement
+Reports singleton
 
 ## EXAMPLES
 
@@ -38,7 +38,7 @@ Update the navigation property reports in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -54,7 +54,7 @@ Singleton entity that acts as a container for all reports functionality.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementReports
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementReports
 Parameter Sets: Update
 Aliases:
 
@@ -70,7 +70,7 @@ Entity representing the configuration of a cached report
 To construct, see NOTES section for CACHEDREPORTCONFIGURATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementCachedReportConfiguration[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementCachedReportConfiguration[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -86,7 +86,7 @@ Entity representing a job to export a report
 To construct, see NOTES section for EXPORTJOBS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementExportJob[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementExportJob[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -132,7 +132,7 @@ Entity representing a schedule for which reports are delivered
 To construct, see NOTES section for REPORTSCHEDULES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementReportSchedule[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementReportSchedule[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -163,7 +163,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -274,3 +274,4 @@ REPORTSCHEDULES <IMicrosoftGraphDeviceManagementReportSchedule[]>: Entity repres
   - `[UserId <String>]`: The Id of the User who created the report
 
 ## RELATED LINKS
+

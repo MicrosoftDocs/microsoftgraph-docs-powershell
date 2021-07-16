@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Users.Functions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/invoke-mgrangeuserinsightsharedlastsharedmethodmicrosoftgraphworkbookrange
 schema: 2.0.0
@@ -21,16 +21,16 @@ Invoke-MgRangeUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRange -Shar
 ### Range1
 ```
 Invoke-MgRangeUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRange -SharedInsightId <String>
- -UserId <String> [-ValuesOnly] [<CommonParameters>]
+ -UserId <String> -ValuesOnly [<CommonParameters>]
 ```
 
-### RangeViaIdentity1
+### RangeViaIdentity
 ```
 Invoke-MgRangeUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRange
  -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
 ```
 
-### RangeViaIdentity
+### RangeViaIdentity1
 ```
 Invoke-MgRangeUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRange
  -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
@@ -48,8 +48,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersFunctionsIdentity
-Parameter Sets: RangeViaIdentity1, RangeViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
+Parameter Sets: RangeViaIdentity, RangeViaIdentity1
 Aliases:
 
 Required: True
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 key: id of sharedInsight
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Range, Range1
 Aliases:
 
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Range, Range1
 Aliases:
 
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 Usage: valuesOnly={valuesOnly}
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: Range1
 Aliases:
 
@@ -125,6 +125,7 @@ To create the parameters described below, construct a hash table containing the 
 
 
 INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
+  - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AnotherRange <String>]`: Usage: anotherRange={anotherRange}
   - `[AppConsentRequestId <String>]`: key: id of appConsentRequest
   - `[CalendarId <String>]`: key: id of calendar
@@ -157,3 +158,4 @@ INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   - `[ValuesOnly <Boolean?>]`: Usage: valuesOnly={valuesOnly}
 
 ## RELATED LINKS
+

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions/compare-mgdevicemanagementintent
 schema: 2.0.0
@@ -33,7 +33,7 @@ Invoke function compare
 key: id of deviceManagementIntent
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Compare
 Aliases:
 
@@ -49,7 +49,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementFunctionsIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementFunctionsIdentity
 Parameter Sets: CompareViaIdentity
 Aliases:
 
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 Usage: templateId={templateId}
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Compare
 Aliases:
 
@@ -101,6 +101,8 @@ INPUTOBJECT <IDeviceManagementFunctionsIdentity>: Identity Parameter
   - `[DeviceAndAppManagementRoleAssignmentId <String>]`: key: id of deviceAndAppManagementRoleAssignment
   - `[DeviceComplianceScriptDeviceStateId <String>]`: key: id of deviceComplianceScriptDeviceState
   - `[DeviceComplianceScriptId <String>]`: key: id of deviceComplianceScript
+  - `[DeviceConfigurationGroupAssignmentId <String>]`: key: id of deviceConfigurationGroupAssignment
+  - `[DeviceConfigurationId <String>]`: key: id of deviceConfiguration
   - `[DeviceCustomAttributeShellScriptId <String>]`: key: id of deviceCustomAttributeShellScript
   - `[DeviceHealthScriptDeviceStateId <String>]`: key: id of deviceHealthScriptDeviceState
   - `[DeviceHealthScriptId <String>]`: key: id of deviceHealthScript
@@ -123,8 +125,10 @@ INPUTOBJECT <IDeviceManagementFunctionsIdentity>: Identity Parameter
   - `[Resource <String>]`: Usage: resource={resource}
   - `[ResourceOperationId <String>]`: key: id of resourceOperation
   - `[Scope <String>]`: Usage: scope={scope}
+  - `[SecretReferenceValueId <String>]`: Usage: secretReferenceValueId={secretReferenceValueId}
   - `[SummarizeBy <String>]`: Usage: summarizeBy={summarizeBy}
   - `[TemplateId <String>]`: Usage: templateId={templateId}
   - `[Userid <String>]`: Usage: userid={userid}
 
 ## RELATED LINKS
+

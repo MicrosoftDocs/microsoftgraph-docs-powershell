@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
+external help file:
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/get-mgprinttaskdefinitiontasktriggerbyref
 schema: 2.0.0
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgPrintTaskDefinitionTaskTriggerByRef
 
 ## SYNOPSIS
-Get ref of trigger from print
+The printTaskTrigger that triggered this task's execution.
+Read-only.
 
 ## SYNTAX
 
@@ -24,7 +25,8 @@ Get-MgPrintTaskDefinitionTaskTriggerByRef -InputObject <IDevicesCloudPrintIdenti
 ```
 
 ## DESCRIPTION
-Get ref of trigger from print
+The printTaskTrigger that triggered this task's execution.
+Read-only.
 
 ## EXAMPLES
 
@@ -35,7 +37,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCloudPrintIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
 Parameter Sets: GetViaIdentity1
 Aliases:
 
@@ -50,7 +52,7 @@ Accept wildcard characters: False
 key: id of printTaskDefinition
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get1
 Aliases:
 
@@ -65,7 +67,7 @@ Accept wildcard characters: False
 key: id of printTask
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get1
 Aliases:
 
@@ -108,3 +110,4 @@ INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
   - `[PrinterShareId <String>]`: key: id of printerShare
 
 ## RELATED LINKS
+

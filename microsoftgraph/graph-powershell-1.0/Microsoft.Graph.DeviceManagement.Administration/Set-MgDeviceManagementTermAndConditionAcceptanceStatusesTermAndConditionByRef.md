@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/set-mgdevicemanagementtermandconditionacceptancestatusestermandconditionbyref
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgDeviceManagementTermAndConditionAcceptanceStatusesTermAndConditionByRef
 
 ## SYNOPSIS
-Update the ref of navigation property termsAndConditions in deviceManagement
+Navigation link to the terms and conditions that are assigned.
 
 ## SYNTAX
 
@@ -16,32 +16,32 @@ Update the ref of navigation property termsAndConditions in deviceManagement
 ```
 Set-MgDeviceManagementTermAndConditionAcceptanceStatusesTermAndConditionByRef
  -TermsAndConditionsAcceptanceStatusId <String> -TermsAndConditionsId <String>
- [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Set1
 ```
 Set-MgDeviceManagementTermAndConditionAcceptanceStatusesTermAndConditionByRef
  -TermsAndConditionsAcceptanceStatusId <String> -TermsAndConditionsId <String> -BodyParameter <Hashtable>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### SetViaIdentity1
+```
+Set-MgDeviceManagementTermAndConditionAcceptanceStatusesTermAndConditionByRef
+ -InputObject <IDeviceManagementAdministrationIdentity> -BodyParameter <Hashtable> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### SetViaIdentityExpanded1
 ```
 Set-MgDeviceManagementTermAndConditionAcceptanceStatusesTermAndConditionByRef
  -InputObject <IDeviceManagementAdministrationIdentity> [-AdditionalProperties <Hashtable>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### SetViaIdentity1
-```
-Set-MgDeviceManagementTermAndConditionAcceptanceStatusesTermAndConditionByRef
- -InputObject <IDeviceManagementAdministrationIdentity> -BodyParameter <Hashtable> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the ref of navigation property termsAndConditions in deviceManagement
+Navigation link to the terms and conditions that are assigned.
 
 ## EXAMPLES
 
@@ -51,7 +51,7 @@ Update the ref of navigation property termsAndConditions in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: SetExpanded1, SetViaIdentityExpanded1
 Aliases:
 
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: Set1, SetViaIdentity1
 Aliases:
 
@@ -82,8 +82,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementAdministrationIdentity
-Parameter Sets: SetViaIdentityExpanded1, SetViaIdentity1
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
+Parameter Sets: SetViaIdentity1, SetViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -112,8 +112,8 @@ Accept wildcard characters: False
 key: id of termsAndConditionsAcceptanceStatus
 
 ```yaml
-Type: String
-Parameter Sets: SetExpanded1, Set1
+Type: System.String
+Parameter Sets: Set1, SetExpanded1
 Aliases:
 
 Required: True
@@ -127,8 +127,8 @@ Accept wildcard characters: False
 key: id of termsAndConditions
 
 ```yaml
-Type: String
-Parameter Sets: SetExpanded1, Set1
+Type: System.String
+Parameter Sets: Set1, SetExpanded1
 Aliases:
 
 Required: True
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -158,7 +158,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -194,6 +194,14 @@ To create the parameters described below, construct a hash table containing the 
 INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[AuditEventId <String>]`: key: id of auditEvent
   - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
+  - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
+  - `[CloudPcDeviceImageId <String>]`: key: id of cloudPcDeviceImage
+  - `[CloudPcId <String>]`: key: id of cloudPC
+  - `[CloudPcOnPremisesConnectionId <String>]`: key: id of cloudPcOnPremisesConnection
+  - `[CloudPcProvisioningPolicyAssignmentId <String>]`: key: id of cloudPcProvisioningPolicyAssignment
+  - `[CloudPcProvisioningPolicyId <String>]`: key: id of cloudPcProvisioningPolicy
+  - `[CloudPcUserSettingAssignmentId <String>]`: key: id of cloudPcUserSettingAssignment
+  - `[CloudPcUserSettingId <String>]`: key: id of cloudPcUserSetting
   - `[ComanagementEligibleDeviceId <String>]`: key: id of comanagementEligibleDevice
   - `[ComplianceManagementPartnerId <String>]`: key: id of complianceManagementPartner
   - `[DeviceAndAppManagementRoleAssignmentId <String>]`: key: id of deviceAndAppManagementRoleAssignment
@@ -232,3 +240,4 @@ INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[UserPfxCertificateId <String>]`: key: id of userPFXCertificate
 
 ## RELATED LINKS
+

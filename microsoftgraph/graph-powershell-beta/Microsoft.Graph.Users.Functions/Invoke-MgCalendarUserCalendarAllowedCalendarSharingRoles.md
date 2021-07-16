@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Users.Functions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/invoke-mgcalendarusercalendarallowedcalendarsharingroles
 schema: 2.0.0
@@ -12,24 +12,24 @@ Invoke function allowedCalendarSharingRoles
 
 ## SYNTAX
 
-### Calendar2 (Default)
+### Calendar (Default)
 ```
 Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles -User <String> -UserId <String> [<CommonParameters>]
 ```
 
 ### Calendar3
 ```
-Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles -User <String> -UserId <String> -CalendarId <String>
+Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles -CalendarId <String> -User <String> -UserId <String>
  [<CommonParameters>]
 ```
 
-### CalendarViaIdentity3
+### CalendarViaIdentity
 ```
 Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles -InputObject <IUsersFunctionsIdentity>
  [<CommonParameters>]
 ```
 
-### CalendarViaIdentity2
+### CalendarViaIdentity3
 ```
 Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles -InputObject <IUsersFunctionsIdentity>
  [<CommonParameters>]
@@ -46,7 +46,7 @@ Invoke function allowedCalendarSharingRoles
 key: id of calendar
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Calendar3
 Aliases:
 
@@ -62,8 +62,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersFunctionsIdentity
-Parameter Sets: CalendarViaIdentity3, CalendarViaIdentity2
+Type: Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
+Parameter Sets: CalendarViaIdentity, CalendarViaIdentity3
 Aliases:
 
 Required: True
@@ -77,8 +77,8 @@ Accept wildcard characters: False
 Usage: User={User}
 
 ```yaml
-Type: String
-Parameter Sets: Calendar2, Calendar3
+Type: System.String
+Parameter Sets: Calendar, Calendar3
 Aliases:
 
 Required: True
@@ -92,8 +92,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: Calendar2, Calendar3
+Type: System.String
+Parameter Sets: Calendar, Calendar3
 Aliases:
 
 Required: True
@@ -124,6 +124,7 @@ To create the parameters described below, construct a hash table containing the 
 
 
 INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
+  - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AnotherRange <String>]`: Usage: anotherRange={anotherRange}
   - `[AppConsentRequestId <String>]`: key: id of appConsentRequest
   - `[CalendarId <String>]`: key: id of calendar
@@ -156,3 +157,4 @@ INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   - `[ValuesOnly <Boolean?>]`: Usage: valuesOnly={valuesOnly}
 
 ## RELATED LINKS
+

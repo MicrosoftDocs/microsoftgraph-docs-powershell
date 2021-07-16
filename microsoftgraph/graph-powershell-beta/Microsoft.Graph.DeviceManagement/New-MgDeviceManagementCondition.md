@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementcondition
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementCondition
 
 ## SYNOPSIS
-Create new navigation property to managementConditions for deviceManagement
+The management conditions associated with device management of the company.
 
 ## SYNTAX
 
@@ -17,17 +17,17 @@ Create new navigation property to managementConditions for deviceManagement
 New-MgDeviceManagementCondition [-AdditionalProperties <Hashtable>] [-ApplicablePlatforms <String[]>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-ETag <String>] [-Id <String>]
  [-ManagementConditionStatements <IMicrosoftGraphManagementConditionStatement[]>]
- [-ModifiedDateTime <DateTime>] [-UniqueName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ModifiedDateTime <DateTime>] [-UniqueName <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementCondition -BodyParameter <IMicrosoftGraphManagementCondition> [-WhatIf] [-Confirm]
+New-MgDeviceManagementCondition -BodyParameter <IMicrosoftGraphManagementCondition> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create new navigation property to managementConditions for deviceManagement
+The management conditions associated with device management of the company.
 
 ## EXAMPLES
 
@@ -37,7 +37,7 @@ Create new navigation property to managementConditions for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -52,7 +52,7 @@ Accept wildcard characters: False
 The applicable platforms for this management condition.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -68,7 +68,7 @@ Management conditions are events that can be triggered dynamically such as geo-f
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagementCondition
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagementCondition
 Parameter Sets: Create
 Aliases:
 
@@ -84,7 +84,7 @@ The time the management condition was created.
 Generated service side.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 The admin defined description of the management condition.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 The admin defined name of the management condition.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -130,7 +130,7 @@ ETag of the management condition.
 Updated service side.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -161,7 +161,7 @@ The management condition statements associated to the management condition.
 To construct, see NOTES section for MANAGEMENTCONDITIONSTATEMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagementConditionStatement[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagementConditionStatement[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -177,7 +177,7 @@ The time the management condition was last modified.
 Updated service side.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -193,7 +193,7 @@ Unique name for the management condition.
 Used in management condition expressions.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -224,7 +224,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -299,3 +299,4 @@ MANAGEMENTCONDITIONSTATEMENTS <IMicrosoftGraphManagementConditionStatement[]>: T
   - `[ModifiedDateTime <DateTime?>]`: The time the management condition statement was last modified. Updated service side.
 
 ## RELATED LINKS
+

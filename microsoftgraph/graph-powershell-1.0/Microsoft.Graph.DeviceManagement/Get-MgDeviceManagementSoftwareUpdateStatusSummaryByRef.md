@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementsoftwareupdatestatussummarybyref
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementSoftwareUpdateStatusSummaryByRef
 
 ## SYNOPSIS
-Get ref of softwareUpdateStatusSummary from deviceManagement
+The software update status summary.
 
 ## SYNTAX
 
@@ -17,7 +17,7 @@ Get-MgDeviceManagementSoftwareUpdateStatusSummaryByRef [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get ref of softwareUpdateStatusSummary from deviceManagement
+The software update status summary.
 
 ## EXAMPLES
 
@@ -37,3 +37,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+

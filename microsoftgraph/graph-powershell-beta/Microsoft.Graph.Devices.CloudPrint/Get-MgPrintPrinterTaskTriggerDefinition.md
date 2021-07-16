@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
+external help file:
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintprintertasktriggerdefinition
 schema: 2.0.0
@@ -8,13 +8,14 @@ schema: 2.0.0
 # Get-MgPrintPrinterTaskTriggerDefinition
 
 ## SYNOPSIS
-Get definition from print
+An abstract definition that will be used to create a printTask when triggered by a print event.
+Read-only.
 
 ## SYNTAX
 
 ### Get1 (Default)
 ```
-Get-MgPrintPrinterTaskTriggerDefinition -PrintTaskTriggerId <String> -PrinterId <String>
+Get-MgPrintPrinterTaskTriggerDefinition -PrinterId <String> -PrintTaskTriggerId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
@@ -25,7 +26,8 @@ Get-MgPrintPrinterTaskTriggerDefinition -InputObject <IDevicesCloudPrintIdentity
 ```
 
 ## DESCRIPTION
-Get definition from print
+An abstract definition that will be used to create a printTask when triggered by a print event.
+Read-only.
 
 ## EXAMPLES
 
@@ -35,7 +37,7 @@ Get definition from print
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -51,7 +53,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCloudPrintIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
 Parameter Sets: GetViaIdentity1
 Aliases:
 
@@ -66,7 +68,7 @@ Accept wildcard characters: False
 key: id of printer
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get1
 Aliases:
 
@@ -81,7 +83,7 @@ Accept wildcard characters: False
 key: id of printTaskTrigger
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get1
 Aliases:
 
@@ -96,7 +98,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -139,3 +141,4 @@ INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
   - `[PrinterShareId <String>]`: key: id of printerShare
 
 ## RELATED LINKS
+

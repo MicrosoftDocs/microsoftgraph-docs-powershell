@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mginformationprotectionpolicy
 schema: 2.0.0
@@ -15,13 +15,13 @@ Update the navigation property policy in informationProtection
 ### UpdateExpanded (Default)
 ```
 Update-MgInformationProtectionPolicy [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Labels <IMicrosoftGraphInformationProtectionLabel[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Labels <IMicrosoftGraphInformationProtectionLabel[]>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgInformationProtectionPolicy -BodyParameter <IMicrosoftGraphInformationProtectionPolicy> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -35,7 +35,7 @@ Update the navigation property policy in informationProtection
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -51,7 +51,7 @@ informationProtectionPolicy
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInformationProtectionPolicy
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationProtectionPolicy
 Parameter Sets: Update
 Aliases:
 
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for LABELS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInformationProtectionLabel[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationProtectionLabel[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -128,7 +128,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -170,14 +170,14 @@ BODYPARAMETER <IMicrosoftGraphInformationProtectionPolicy>: informationProtectio
     - `[Name <String>]`: The plaintext name of the label.
     - `[Parent <IMicrosoftGraphParentLabelDetails>]`: parentLabelDetails
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Color <String>]`: 
-      - `[Description <String>]`: 
-      - `[Id <String>]`: 
-      - `[IsActive <Boolean?>]`: 
-      - `[Name <String>]`: 
+      - `[Color <String>]`: The color that the user interface should display for the label, if configured.
+      - `[Description <String>]`: The admin-defined description for the label.
+      - `[Id <String>]`: The label ID is a globally unique identifier (GUID).
+      - `[IsActive <Boolean?>]`: Indicates whether the label is active or not. Active labels should be hidden or disabled in user interfaces.
+      - `[Name <String>]`: The plaintext name of the label.
       - `[Parent <IMicrosoftGraphParentLabelDetails>]`: parentLabelDetails
-      - `[Sensitivity <Int32?>]`: 
-      - `[Tooltip <String>]`: 
+      - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
+      - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a user interface.
     - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
     - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
 
@@ -189,15 +189,16 @@ LABELS <IMicrosoftGraphInformationProtectionLabel[]>: .
   - `[Name <String>]`: The plaintext name of the label.
   - `[Parent <IMicrosoftGraphParentLabelDetails>]`: parentLabelDetails
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Color <String>]`: 
-    - `[Description <String>]`: 
-    - `[Id <String>]`: 
-    - `[IsActive <Boolean?>]`: 
-    - `[Name <String>]`: 
+    - `[Color <String>]`: The color that the user interface should display for the label, if configured.
+    - `[Description <String>]`: The admin-defined description for the label.
+    - `[Id <String>]`: The label ID is a globally unique identifier (GUID).
+    - `[IsActive <Boolean?>]`: Indicates whether the label is active or not. Active labels should be hidden or disabled in user interfaces.
+    - `[Name <String>]`: The plaintext name of the label.
     - `[Parent <IMicrosoftGraphParentLabelDetails>]`: parentLabelDetails
-    - `[Sensitivity <Int32?>]`: 
-    - `[Tooltip <String>]`: 
+    - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
+    - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a user interface.
   - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
   - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
 
 ## RELATED LINKS
+

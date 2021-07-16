@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Users.Functions
-Module Guid: 5df7f487-78da-4bc6-ab05-44d3cc9c28d9
+Module Guid: 7ad24dd0-7fb1-455d-afdb-e351a0df737c
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions
 Help Version: 1.0.0.0
 Locale: en-US
@@ -45,10 +45,10 @@ Invoke function delta
 Invoke function delta
 
 ### [Get-MgUserManagedAppDiagnosticStatuses](Get-MgUserManagedAppDiagnosticStatuses.md)
-Invoke function getManagedAppDiagnosticStatuses
+Gets diagnostics validation status for a given user.
 
 ### [Get-MgUserManagedAppPolicy](Get-MgUserManagedAppPolicy.md)
-Invoke function getManagedAppPolicies
+Gets app restrictions for a given user.
 
 ### [Get-MgUserManagedAppRegistrationUserId](Get-MgUserManagedAppRegistrationUserId.md)
 Invoke function getUserIdsWithFlaggedAppRegistration

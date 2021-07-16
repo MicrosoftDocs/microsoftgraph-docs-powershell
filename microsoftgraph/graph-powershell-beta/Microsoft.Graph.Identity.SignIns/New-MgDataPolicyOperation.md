@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgdatapolicyoperation
 schema: 2.0.0
@@ -16,12 +16,12 @@ Add new entity to dataPolicyOperations
 ```
 New-MgDataPolicyOperation [-AdditionalProperties <Hashtable>] [-CompletedDateTime <DateTime>] [-Id <String>]
  [-Progress <Double>] [-Status <String>] [-StorageLocation <String>] [-SubmittedDateTime <DateTime>]
- [-UserId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDataPolicyOperation -BodyParameter <IMicrosoftGraphDataPolicyOperation> [-WhatIf] [-Confirm]
+New-MgDataPolicyOperation -BodyParameter <IMicrosoftGraphDataPolicyOperation> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -36,7 +36,7 @@ Add new entity to dataPolicyOperations
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -52,7 +52,7 @@ dataPolicyOperation
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDataPolicyOperation
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDataPolicyOperation
 Parameter Sets: Create
 Aliases:
 
@@ -69,7 +69,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Null until the operation completes.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 Specifies the progress of an operation.
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 dataPolicyOperationStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 The URL location to where data is being exported for export requests.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -145,7 +145,7 @@ Represents when the request for this data operation was submitted, in UTC time, 
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 The id for the user on whom the operation is performed.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -191,7 +191,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -233,3 +233,4 @@ BODYPARAMETER <IMicrosoftGraphDataPolicyOperation>: dataPolicyOperation
   - `[UserId <String>]`: The id for the user on whom the operation is performed.
 
 ## RELATED LINKS
+

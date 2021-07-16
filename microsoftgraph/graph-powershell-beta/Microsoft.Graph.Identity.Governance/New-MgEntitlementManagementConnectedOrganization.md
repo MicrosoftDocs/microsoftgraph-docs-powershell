@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementconnectedorganization
 schema: 2.0.0
@@ -12,20 +12,26 @@ Create new navigation property to connectedOrganizations for identityGovernance
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### CreateWithDomainIdentitySource (Default)
 ```
-New-MgEntitlementManagementConnectedOrganization [-AdditionalProperties <Hashtable>] [-CreatedBy <String>]
- [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
- [-ExternalSponsors <IMicrosoftGraphDirectoryObject[]>] [-Id <String>]
- [-IdentitySources <IMicrosoftGraphIdentitySource[]>] [-InternalSponsors <IMicrosoftGraphDirectoryObject[]>]
- [-ModifiedBy <String>] [-ModifiedDateTime <DateTime>] [-State <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgEntitlementManagementConnectedOrganization -DomainName <String> [-Description <String>]
+ [-DisplayName <String>] [-State <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgEntitlementManagementConnectedOrganization -BodyParameter <IMicrosoftGraphConnectedOrganization>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateExpanded
+```
+New-MgEntitlementManagementConnectedOrganization [-AdditionalProperties <Hashtable>] [-CreatedBy <String>]
+ [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
+ [-ExternalSponsors <IMicrosoftGraphDirectoryObject[]>] [-Id <String>]
+ [-IdentitySources <IMicrosoftGraphIdentitySource[]>] [-InternalSponsors <IMicrosoftGraphDirectoryObject[]>]
+ [-ModifiedBy <String>] [-ModifiedDateTime <DateTime>] [-State <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -39,7 +45,7 @@ Create new navigation property to connectedOrganizations for identityGovernance
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -55,7 +61,7 @@ connectedOrganization
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConnectedOrganization
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConnectedOrganization
 Parameter Sets: Create
 Aliases:
 
@@ -71,7 +77,7 @@ UPN of the user who created this resource.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -88,7 +94,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -103,8 +109,8 @@ Accept wildcard characters: False
 The description of the connected organization.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded
+Type: System.String
+Parameter Sets: CreateExpanded, CreateWithDomainIdentitySource
 Aliases:
 
 Required: False
@@ -118,11 +124,26 @@ Accept wildcard characters: False
 The display name of the connected organization.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded
+Type: System.String
+Parameter Sets: CreateExpanded, CreateWithDomainIdentitySource
 Aliases:
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DomainName
+The domain name of the connected organization identity source.
+
+```yaml
+Type: System.String
+Parameter Sets: CreateWithDomainIdentitySource
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -134,7 +155,7 @@ Nullable.
 To construct, see NOTES section for EXTERNALSPONSORS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -149,7 +170,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -164,7 +185,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: IMicrosoftGraphIdentitySource[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySource[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -180,7 +201,7 @@ Nullable.
 To construct, see NOTES section for INTERNALSPONSORS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -196,7 +217,7 @@ UPN of the user who last modified this resource.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -213,7 +234,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -228,8 +249,8 @@ Accept wildcard characters: False
 connectedOrganizationState
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded
+Type: System.String
+Parameter Sets: CreateExpanded, CreateWithDomainIdentitySource
 Aliases:
 
 Required: False
@@ -243,7 +264,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -259,7 +280,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -315,3 +336,4 @@ INTERNALSPONSORS <IMicrosoftGraphDirectoryObject[]>: Nullable.
   - `[DeletedDateTime <DateTime?>]`: 
 
 ## RELATED LINKS
+

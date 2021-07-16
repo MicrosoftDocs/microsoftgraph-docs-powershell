@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgpolicyadminconsentrequestpolicy
 schema: 2.0.0
@@ -12,18 +12,18 @@ Update the navigation property adminConsentRequestPolicy in policies
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
 Update-MgPolicyAdminConsentRequestPolicy [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsEnabled]
  [-NotifyReviewers] [-RemindersEnabled] [-RequestDurationInDays <Int32>]
- [-Reviewers <IMicrosoftGraphAccessReviewReviewerScope[]>] [-Version <Int32>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Reviewers <IMicrosoftGraphAccessReviewReviewerScope[]>] [-Version <Int32>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
-### Update1
+### Update
 ```
 Update-MgPolicyAdminConsentRequestPolicy -BodyParameter <IMicrosoftGraphAdminConsentRequestPolicy> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -37,8 +37,8 @@ Update the navigation property adminConsentRequestPolicy in policies
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -53,8 +53,8 @@ adminConsentRequestPolicy
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAdminConsentRequestPolicy
-Parameter Sets: Update1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAdminConsentRequestPolicy
+Parameter Sets: Update
 Aliases:
 
 Required: True
@@ -68,8 +68,8 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -84,8 +84,8 @@ Specifies whether the admin consent request feature is enabled or disabled.
 Required.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded1
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -100,8 +100,8 @@ Specifies whether reviewers will receive notifications.
 Required.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded1
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -131,8 +131,8 @@ Specifies whether reviewers will receive reminder emails.
 Required.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded1
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -146,8 +146,8 @@ Accept wildcard characters: False
 Specifies the duration the request is active before it automatically expires if no decision is applied.
 
 ```yaml
-Type: Int32
-Parameter Sets: UpdateExpanded1
+Type: System.Int32
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -162,8 +162,8 @@ Required.
 To construct, see NOTES section for REVIEWERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessReviewReviewerScope[]
-Parameter Sets: UpdateExpanded1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessReviewReviewerScope[]
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -179,8 +179,8 @@ When the policy is updated, this version is updated.
 Read-only.
 
 ```yaml
-Type: Int32
-Parameter Sets: UpdateExpanded1
+Type: System.Int32
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -210,7 +210,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -250,13 +250,14 @@ BODYPARAMETER <IMicrosoftGraphAdminConsentRequestPolicy>: adminConsentRequestPol
   - `[RequestDurationInDays <Int32?>]`: Specifies the duration the request is active before it automatically expires if no decision is applied.
   - `[Reviewers <IMicrosoftGraphAccessReviewReviewerScope[]>]`: Required.
     - `[Query <String>]`: The query specifying who will be the reviewer. See table for examples.
-    - `[QueryRoot <String>]`: In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query (i.e., ./manager) is specified.
+    - `[QueryRoot <String>]`: In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query, for example, ./manager, is specified. Possible value: decisions.
     - `[QueryType <String>]`: The type of query. Examples include MicrosoftGraph and ARM.
   - `[Version <Int32?>]`: Specifies the version of this policy. When the policy is updated, this version is updated. Read-only.
 
 REVIEWERS <IMicrosoftGraphAccessReviewReviewerScope[]>: Required.
   - `[Query <String>]`: The query specifying who will be the reviewer. See table for examples.
-  - `[QueryRoot <String>]`: In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query (i.e., ./manager) is specified.
+  - `[QueryRoot <String>]`: In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query, for example, ./manager, is specified. Possible value: decisions.
   - `[QueryType <String>]`: The type of query. Examples include MicrosoftGraph and ARM.
 
 ## RELATED LINKS
+

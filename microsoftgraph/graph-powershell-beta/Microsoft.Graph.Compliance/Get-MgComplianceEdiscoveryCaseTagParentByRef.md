@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Compliance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Compliance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/get-mgcomplianceediscoverycasetagparentbyref
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgComplianceEdiscoveryCaseTagParentByRef
 
 ## SYNOPSIS
-Get ref of parent from compliance
+Returns the parent tag of the specified tag.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Get-MgComplianceEdiscoveryCaseTagParentByRef -InputObject <IComplianceIdentity> 
 ```
 
 ## DESCRIPTION
-Get ref of parent from compliance
+Returns the parent tag of the specified tag.
 
 ## EXAMPLES
 
@@ -33,7 +33,7 @@ Get ref of parent from compliance
 key: id of case
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -49,7 +49,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IComplianceIdentity
+Type: Microsoft.Graph.PowerShell.Models.IComplianceIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 key: id of tag
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -111,3 +111,4 @@ INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   - `[UserSourceId <String>]`: key: id of userSource
 
 ## RELATED LINKS
+

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.People-help.xml
+external help file:
 Module Name: Microsoft.Graph.People
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/get-mgusersharedresourceinsightbyref
 schema: 2.0.0
@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserSharedResourceInsightByRef
 
 ## SYNOPSIS
-Get ref of resource from users
+Used for navigating to the item that was shared.
+For file attachments, the type is fileAttachment.
+For linked attachments, the type is driveItem.
 
 ## SYNTAX
 
@@ -23,7 +25,9 @@ Get-MgUserSharedResourceInsightByRef -InputObject <IPeopleIdentity> [<CommonPara
 ```
 
 ## DESCRIPTION
-Get ref of resource from users
+Used for navigating to the item that was shared.
+For file attachments, the type is fileAttachment.
+For linked attachments, the type is driveItem.
 
 ## EXAMPLES
 
@@ -34,7 +38,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IPeopleIdentity
+Type: Microsoft.Graph.PowerShell.Models.IPeopleIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -49,7 +53,7 @@ Accept wildcard characters: False
 key: id of sharedInsight
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -64,7 +68,7 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -123,3 +127,4 @@ INPUTOBJECT <IPeopleIdentity>: Identity Parameter
   - `[WorkPositionId <String>]`: key: id of workPosition
 
 ## RELATED LINKS
+

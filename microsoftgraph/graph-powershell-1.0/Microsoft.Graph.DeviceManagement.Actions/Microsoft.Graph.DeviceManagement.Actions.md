@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.DeviceManagement.Actions
-Module Guid: 75e52e0d-9fc6-4d0e-b3f2-54f070fd525e
+Module Guid: 048769c7-36c5-4047-8c0a-40c8f4c2693c
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions
 Help Version: 1.0.0.0
 Locale: en-US
@@ -12,31 +12,35 @@ Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.DeviceManagement.Actions Cmdlets
 ### [Clear-MgDeviceManagementManagedDevice](Clear-MgDeviceManagementManagedDevice.md)
-Invoke action wipe
+Wipe a device
 
 ### [Disable-MgDeviceManagementManagedDeviceLostMode](Disable-MgDeviceManagementManagedDeviceLostMode.md)
-Invoke action disableLostMode
+Disable lost mode
 
 ### [Disconnect-MgDeviceManagementRemoteAssistancePartner](Disconnect-MgDeviceManagementRemoteAssistancePartner.md)
-Invoke action disconnect
+A request to remove the active TeamViewer connector
 
 ### [Find-MgDeviceManagementManagedDevice](Find-MgDeviceManagementManagedDevice.md)
-Invoke action locateDevice
+Locate a device
+
+### [Import-MgDeviceManagementImportedWindowAutopilotDeviceIdentity](Import-MgDeviceManagementImportedWindowAutopilotDeviceIdentity.md)
+Invoke action import
 
 ### [Invoke-MgBeginDeviceManagementRemoteAssistancePartnerOnboarding](Invoke-MgBeginDeviceManagementRemoteAssistancePartnerOnboarding.md)
-Invoke action beginOnboarding
+A request to start onboarding.
+Must be coupled with the appropriate TeamViewer account information
 
 ### [Invoke-MgCleanDeviceManagementManagedDeviceWindowDevice](Invoke-MgCleanDeviceManagementManagedDeviceWindowDevice.md)
-Invoke action cleanWindowsDevice
+Clean Windows device
 
 ### [Invoke-MgDownDeviceManagementManagedDeviceShut](Invoke-MgDownDeviceManagementManagedDeviceShut.md)
-Invoke action shutDown
+Shut down device
 
 ### [Invoke-MgLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser](Invoke-MgLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser.md)
-Invoke action logoutSharedAppleDeviceActiveUser
+Logout shared Apple device active user
 
 ### [Invoke-MgRetireDeviceManagementManagedDevice](Invoke-MgRetireDeviceManagementManagedDevice.md)
-Invoke action retire
+Retire a device
 
 ### [Invoke-MgScanDeviceManagementManagedDeviceWindowDefender](Invoke-MgScanDeviceManagementManagedDeviceWindowDefender.md)
 Invoke action windowsDefenderScan
@@ -44,29 +48,32 @@ Invoke action windowsDefenderScan
 ### [Invoke-MgScheduleDeviceManagementDeviceCompliancePolicyAction](Invoke-MgScheduleDeviceManagementDeviceCompliancePolicyAction.md)
 Invoke action scheduleActionsForRules
 
+### [Invoke-MgUnassignDeviceManagementWindowAutopilotDeviceIdentityUserFromDevice](Invoke-MgUnassignDeviceManagementWindowAutopilotDeviceIdentityUserFromDevice.md)
+Unassigns the user from an Autopilot device.
+
 ### [Lock-MgDeviceManagementManagedDeviceRemote](Lock-MgDeviceManagementManagedDeviceRemote.md)
-Invoke action remoteLock
+Remote lock
 
 ### [New-MgDeviceManagementManagedDeviceWindowsDefenderUpdateSignature](New-MgDeviceManagementManagedDeviceWindowsDefenderUpdateSignature.md)
 Invoke action windowsDefenderUpdateSignatures
 
 ### [Remove-MgDeviceManagementManagedDeviceUserFromSharedAppleDevice](Remove-MgDeviceManagementManagedDeviceUserFromSharedAppleDevice.md)
-Invoke action deleteUserFromSharedAppleDevice
+Delete user from shared Apple device
 
 ### [Request-MgDeviceManagementManagedDeviceRemoteAssistance](Request-MgDeviceManagementManagedDeviceRemoteAssistance.md)
-Invoke action requestRemoteAssistance
+Request remote assistance
 
 ### [Reset-MgDeviceManagementManagedDevicePasscode](Reset-MgDeviceManagementManagedDevicePasscode.md)
-Invoke action resetPasscode
+Reset passcode
 
 ### [Restart-MgDeviceManagementManagedDeviceNow](Restart-MgDeviceManagementManagedDeviceNow.md)
-Invoke action rebootNow
+Reboot device
 
 ### [Restore-MgDeviceManagementManagedDevicePasscode](Restore-MgDeviceManagementManagedDevicePasscode.md)
-Invoke action recoverPasscode
+Recover passcode
 
 ### [Send-MgDeviceManagementNotificationMessageTemplateTestMessage](Send-MgDeviceManagementNotificationMessageTemplateTestMessage.md)
-Invoke action sendTestMessage
+Sends test message using the specified notificationMessageTemplate in the default locale
 
 ### [Set-MgDeviceManagementDeviceCompliancePolicy](Set-MgDeviceManagementDeviceCompliancePolicy.md)
 Invoke action assign
@@ -80,8 +87,11 @@ Invoke action assign
 ### [Set-MgDeviceManagementDeviceEnrollmentConfigurationPriority](Set-MgDeviceManagementDeviceEnrollmentConfigurationPriority.md)
 Invoke action setPriority
 
+### [Set-MgDeviceManagementWindowAutopilotDeviceIdentityUserToDevice](Set-MgDeviceManagementWindowAutopilotDeviceIdentityUserToDevice.md)
+Assigns user to Autopilot devices.
+
 ### [Skip-MgDeviceManagementManagedDeviceActivationLock](Skip-MgDeviceManagementManagedDeviceActivationLock.md)
-Invoke action bypassActivationLock
+Bypass activation lock
 
 ### [Sync-MgDeviceManagementExchangeConnector](Sync-MgDeviceManagementExchangeConnector.md)
 Invoke action sync
@@ -91,4 +101,7 @@ Invoke action syncDevice
 
 ### [Update-MgDeviceManagementManagedDeviceWindowDeviceAccount](Update-MgDeviceManagementManagedDeviceWindowDeviceAccount.md)
 Invoke action updateWindowsDeviceAccount
+
+### [Update-MgDeviceManagementWindowAutopilotDeviceIdentityDeviceProperty](Update-MgDeviceManagementWindowAutopilotDeviceIdentityDeviceProperty.md)
+Updates properties on Autopilot devices.
 

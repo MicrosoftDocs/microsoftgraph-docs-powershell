@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.DeviceManagement
-Module Guid: 01149aa9-0642-4a4c-864c-43cc7c9ca643
+Module Guid: bdaba683-10e2-40f2-8812-79d1c20baabe
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement
 Help Version: 1.0.0.0
 Locale: en-US
@@ -15,2039 +15,2075 @@ Microsoft Graph PowerShell Cmdlets
 Get deviceManagement
 
 ### [Get-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummary](Get-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummary.md)
-Get advancedThreatProtectionOnboardingStateSummary from deviceManagement
+The summary state of ATP onboarding state for this account.
 
 ### [Get-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummaryAdvancedThreatProtectionOnboardingDeviceSettingState](Get-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummaryAdvancedThreatProtectionOnboardingDeviceSettingState.md)
-Get advancedThreatProtectionOnboardingDeviceSettingStates from deviceManagement
+Not yet documented
 
 ### [Get-MgDeviceManagementAndroidForWorkAppConfigurationSchema](Get-MgDeviceManagementAndroidForWorkAppConfigurationSchema.md)
-Get androidForWorkAppConfigurationSchemas from deviceManagement
+Android for Work app configuration schema entities.
 
 ### [Get-MgDeviceManagementAndroidForWorkSetting](Get-MgDeviceManagementAndroidForWorkSetting.md)
-Get androidForWorkSettings from deviceManagement
+The singleton Android for Work settings entity.
 
 ### [Get-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSetting](Get-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSetting.md)
-Get androidManagedStoreAccountEnterpriseSettings from deviceManagement
+The singleton Android managed store account enterprise settings entity.
 
 ### [Get-MgDeviceManagementAndroidManagedStoreAppConfigurationSchema](Get-MgDeviceManagementAndroidManagedStoreAppConfigurationSchema.md)
-Get androidManagedStoreAppConfigurationSchemas from deviceManagement
+Android Enterprise app configuration schema entities.
 
 ### [Get-MgDeviceManagementAssignmentFilter](Get-MgDeviceManagementAssignmentFilter.md)
-Get assignmentFilters from deviceManagement
+The list of assignment filters
 
 ### [Get-MgDeviceManagementCategory](Get-MgDeviceManagementCategory.md)
-Get categories from deviceManagement
+The available categories
 
 ### [Get-MgDeviceManagementCategorySettingDefinition](Get-MgDeviceManagementCategorySettingDefinition.md)
-Get settingDefinitions from deviceManagement
+The setting definitions this category contains
 
 ### [Get-MgDeviceManagementComanagedDevice](Get-MgDeviceManagementComanagedDevice.md)
-Get comanagedDevices from deviceManagement
+The list of co-managed devices report
 
 ### [Get-MgDeviceManagementComanagedDeviceAssignmentFilterEvaluationStatusDetail](Get-MgDeviceManagementComanagedDeviceAssignmentFilterEvaluationStatusDetail.md)
-Get assignmentFilterEvaluationStatusDetails from deviceManagement
+Managed device mobile app configuration states for this device.
 
 ### [Get-MgDeviceManagementComanagedDeviceCategory](Get-MgDeviceManagementComanagedDeviceCategory.md)
-Get deviceCategory from deviceManagement
+Device category
 
 ### [Get-MgDeviceManagementComanagedDeviceCompliancePolicyState](Get-MgDeviceManagementComanagedDeviceCompliancePolicyState.md)
-Get deviceCompliancePolicyStates from deviceManagement
+Device compliance policy states for this device.
 
 ### [Get-MgDeviceManagementComanagedDeviceConfigurationState](Get-MgDeviceManagementComanagedDeviceConfigurationState.md)
-Get deviceConfigurationStates from deviceManagement
+Device configuration states for this device.
 
 ### [Get-MgDeviceManagementComanagedDeviceDetectedApp](Get-MgDeviceManagementComanagedDeviceDetectedApp.md)
-Get detectedApps from deviceManagement
+All applications currently installed on the device
 
 ### [Get-MgDeviceManagementComanagedDeviceDetectedAppByRef](Get-MgDeviceManagementComanagedDeviceDetectedAppByRef.md)
-Get ref of detectedApps from deviceManagement
+All applications currently installed on the device
 
 ### [Get-MgDeviceManagementComanagedDeviceLogCollectionRequest](Get-MgDeviceManagementComanagedDeviceLogCollectionRequest.md)
-Get logCollectionRequests from deviceManagement
+List of log collection requests
 
 ### [Get-MgDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationState](Get-MgDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationState.md)
-Get managedDeviceMobileAppConfigurationStates from deviceManagement
+Managed device mobile app configuration states for this device.
 
 ### [Get-MgDeviceManagementComanagedDeviceSecurityBaselineState](Get-MgDeviceManagementComanagedDeviceSecurityBaselineState.md)
-Get securityBaselineStates from deviceManagement
+Security baseline states for this device.
 
 ### [Get-MgDeviceManagementComanagedDeviceSecurityBaselineStateSettingState](Get-MgDeviceManagementComanagedDeviceSecurityBaselineStateSettingState.md)
-Get settingStates from deviceManagement
+The security baseline state for different settings for a device
 
 ### [Get-MgDeviceManagementComanagedDeviceUser](Get-MgDeviceManagementComanagedDeviceUser.md)
-Get users from deviceManagement
+The primary users associated with the managed device.
 
 ### [Get-MgDeviceManagementComanagedDeviceWindowProtectionState](Get-MgDeviceManagementComanagedDeviceWindowProtectionState.md)
-Get windowsProtectionState from deviceManagement
+The device protection status.
 
 ### [Get-MgDeviceManagementComanagedDeviceWindowProtectionStateDetectedMalwareState](Get-MgDeviceManagementComanagedDeviceWindowProtectionStateDetectedMalwareState.md)
-Get detectedMalwareState from deviceManagement
+Device malware list
 
 ### [Get-MgDeviceManagementCondition](Get-MgDeviceManagementCondition.md)
-Get managementConditions from deviceManagement
+The management conditions associated with device management of the company.
 
 ### [Get-MgDeviceManagementConditionManagementConditionStatementByRef](Get-MgDeviceManagementConditionManagementConditionStatementByRef.md)
-Get ref of managementConditionStatements from deviceManagement
+The management condition statements associated to the management condition.
 
 ### [Get-MgDeviceManagementConditionStatement](Get-MgDeviceManagementConditionStatement.md)
-Get managementConditionStatements from deviceManagement
+The management condition statements associated with device management of the company.
 
 ### [Get-MgDeviceManagementConditionStatementManagementCondition](Get-MgDeviceManagementConditionStatementManagementCondition.md)
-Get managementConditions from deviceManagement
+The management conditions associated to the management condition statement.
 
 ### [Get-MgDeviceManagementConditionStatementManagementConditionByRef](Get-MgDeviceManagementConditionStatementManagementConditionByRef.md)
-Get ref of managementConditions from deviceManagement
+The management conditions associated to the management condition statement.
 
 ### [Get-MgDeviceManagementDataSharingConsent](Get-MgDeviceManagementDataSharingConsent.md)
-Get dataSharingConsents from deviceManagement
+Data sharing consents.
 
 ### [Get-MgDeviceManagementDerivedCredentials](Get-MgDeviceManagementDerivedCredentials.md)
-Get derivedCredentials from deviceManagement
+Collection of Derived credential settings associated with account.
 
 ### [Get-MgDeviceManagementDetectedApp](Get-MgDeviceManagementDetectedApp.md)
-Get detectedApps from deviceManagement
+The list of detected apps associated with a device.
 
 ### [Get-MgDeviceManagementDetectedAppManagedDevice](Get-MgDeviceManagementDetectedAppManagedDevice.md)
-Get managedDevices from deviceManagement
+The devices that have the discovered application installed
 
 ### [Get-MgDeviceManagementDetectedAppManagedDeviceByRef](Get-MgDeviceManagementDetectedAppManagedDeviceByRef.md)
-Get ref of managedDevices from deviceManagement
+The devices that have the discovered application installed
 
 ### [Get-MgDeviceManagementDeviceCategory](Get-MgDeviceManagementDeviceCategory.md)
-Get deviceCategories from deviceManagement
+The list of device categories with the tenant.
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicy](Get-MgDeviceManagementDeviceCompliancePolicy.md)
-Get deviceCompliancePolicies from deviceManagement
+The device compliance policies.
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyAssignment](Get-MgDeviceManagementDeviceCompliancePolicyAssignment.md)
-Get assignments from deviceManagement
+The collection of assignments for this compliance policy.
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary](Get-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary.md)
-Get deviceSettingStateSummaries from deviceManagement
+Compliance Setting State Device Summary
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary](Get-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary.md)
-Get deviceCompliancePolicyDeviceStateSummary from deviceManagement
+The device compliance state summary for this account.
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatuses](Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatuses.md)
-Get deviceStatuses from deviceManagement
+List of DeviceComplianceDeviceStatus.
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview](Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview.md)
-Get deviceStatusOverview from deviceManagement
+Device compliance devices status overview
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyScheduledAction](Get-MgDeviceManagementDeviceCompliancePolicyScheduledAction.md)
-Get scheduledActionsForRule from deviceManagement
+The list of scheduled action for this rule
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration.md)
-Get scheduledActionConfigurations from deviceManagement
+The list of scheduled action configurations for this compliance policy.
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummary](Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummary.md)
-Get deviceCompliancePolicySettingStateSummaries from deviceManagement
+The summary states of compliance policy settings for this account.
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState](Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState.md)
-Get deviceComplianceSettingStates from deviceManagement
+Not yet documented
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyUserStatuses](Get-MgDeviceManagementDeviceCompliancePolicyUserStatuses.md)
-Get userStatuses from deviceManagement
+List of DeviceComplianceUserStatus.
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyUserStatusOverview](Get-MgDeviceManagementDeviceCompliancePolicyUserStatusOverview.md)
-Get userStatusOverview from deviceManagement
+Device compliance users status overview
 
 ### [Get-MgDeviceManagementDeviceConfiguration](Get-MgDeviceManagementDeviceConfiguration.md)
-Get deviceConfigurations from deviceManagement
+The device configurations.
 
 ### [Get-MgDeviceManagementDeviceConfigurationAssignment](Get-MgDeviceManagementDeviceConfigurationAssignment.md)
-Get assignments from deviceManagement
+The list of assignments for the device configuration profile.
 
 ### [Get-MgDeviceManagementDeviceConfigurationConflictSummary](Get-MgDeviceManagementDeviceConfigurationConflictSummary.md)
-Get deviceConfigurationConflictSummary from deviceManagement
+Summary of policies in conflict state for this account.
 
 ### [Get-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary](Get-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary.md)
-Get deviceSettingStateSummaries from deviceManagement
+Device Configuration Setting State Device Summary
 
 ### [Get-MgDeviceManagementDeviceConfigurationDeviceStateSummary](Get-MgDeviceManagementDeviceConfigurationDeviceStateSummary.md)
-Get deviceConfigurationDeviceStateSummaries from deviceManagement
+The device configuration device state summary for this account.
 
 ### [Get-MgDeviceManagementDeviceConfigurationDeviceStatuses](Get-MgDeviceManagementDeviceConfigurationDeviceStatuses.md)
-Get deviceStatuses from deviceManagement
+Device configuration installation status by device.
 
 ### [Get-MgDeviceManagementDeviceConfigurationDeviceStatusOverview](Get-MgDeviceManagementDeviceConfigurationDeviceStatusOverview.md)
-Get deviceStatusOverview from deviceManagement
+Device Configuration devices status overview
 
 ### [Get-MgDeviceManagementDeviceConfigurationGroupAssignment](Get-MgDeviceManagementDeviceConfigurationGroupAssignment.md)
-Get groupAssignments from deviceManagement
+The list of group assignments for the device configuration profile.
 
 ### [Get-MgDeviceManagementDeviceConfigurationGroupAssignmentDeviceConfiguration](Get-MgDeviceManagementDeviceConfigurationGroupAssignmentDeviceConfiguration.md)
-Get deviceConfiguration from deviceManagement
+The navigation link to the Device Configuration being targeted.
 
 ### [Get-MgDeviceManagementDeviceConfigurationGroupAssignmentDeviceConfigurationByRef](Get-MgDeviceManagementDeviceConfigurationGroupAssignmentDeviceConfigurationByRef.md)
-Get ref of deviceConfiguration from deviceManagement
+The navigation link to the Device Configuration being targeted.
 
 ### [Get-MgDeviceManagementDeviceConfigurationUserStateSummary](Get-MgDeviceManagementDeviceConfigurationUserStateSummary.md)
-Get deviceConfigurationUserStateSummaries from deviceManagement
+The device configuration user state summary for this account.
 
 ### [Get-MgDeviceManagementDeviceConfigurationUserStatuses](Get-MgDeviceManagementDeviceConfigurationUserStatuses.md)
-Get userStatuses from deviceManagement
+Device configuration installation status by user.
 
 ### [Get-MgDeviceManagementDeviceConfigurationUserStatusOverview](Get-MgDeviceManagementDeviceConfigurationUserStatusOverview.md)
-Get userStatusOverview from deviceManagement
+Device Configuration users status overview
 
 ### [Get-MgDeviceManagementDeviceHealthScript](Get-MgDeviceManagementDeviceHealthScript.md)
-Get deviceHealthScripts from deviceManagement
+The list of device health scripts associated with the tenant.
 
 ### [Get-MgDeviceManagementDeviceHealthScriptAssignment](Get-MgDeviceManagementDeviceHealthScriptAssignment.md)
-Get assignments from deviceManagement
+The list of group assignments for the device health script
 
 ### [Get-MgDeviceManagementDeviceHealthScriptDeviceRunState](Get-MgDeviceManagementDeviceHealthScriptDeviceRunState.md)
-Get deviceRunStates from deviceManagement
+List of run states for the device health script across all devices
 
 ### [Get-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice](Get-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice.md)
-Get managedDevice from deviceManagement
+The managed device on which the device health script executed
 
 ### [Get-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceByRef](Get-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceByRef.md)
-Get ref of managedDevice from deviceManagement
+The managed device on which the device health script executed
 
 ### [Get-MgDeviceManagementDeviceHealthScriptRunSummary](Get-MgDeviceManagementDeviceHealthScriptRunSummary.md)
-Get runSummary from deviceManagement
+High level run summary for device health script.
 
 ### [Get-MgDeviceManagementDeviceShellScript](Get-MgDeviceManagementDeviceShellScript.md)
-Get deviceShellScripts from deviceManagement
+The list of device shell scripts associated with the tenant.
 
 ### [Get-MgDeviceManagementDeviceShellScriptAssignment](Get-MgDeviceManagementDeviceShellScriptAssignment.md)
-Get assignments from deviceManagement
+The list of group assignments for the device management script.
 
 ### [Get-MgDeviceManagementDeviceShellScriptDeviceRunState](Get-MgDeviceManagementDeviceShellScriptDeviceRunState.md)
-Get deviceRunStates from deviceManagement
+List of run states for this script across all devices.
 
 ### [Get-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDevice](Get-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDevice.md)
-Get managedDevice from deviceManagement
+The managed devices that executes the device management script.
 
 ### [Get-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceByRef](Get-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceByRef.md)
-Get ref of managedDevice from deviceManagement
+The managed devices that executes the device management script.
 
 ### [Get-MgDeviceManagementDeviceShellScriptGroupAssignment](Get-MgDeviceManagementDeviceShellScriptGroupAssignment.md)
-Get groupAssignments from deviceManagement
+The list of group assignments for the device management script.
 
 ### [Get-MgDeviceManagementDeviceShellScriptRunSummary](Get-MgDeviceManagementDeviceShellScriptRunSummary.md)
-Get runSummary from deviceManagement
+Run summary for device management script.
 
 ### [Get-MgDeviceManagementDeviceShellScriptRunSummaryByRef](Get-MgDeviceManagementDeviceShellScriptRunSummaryByRef.md)
-Get ref of runSummary from deviceManagement
+Run summary for device management script.
 
 ### [Get-MgDeviceManagementDeviceShellScriptUserRunState](Get-MgDeviceManagementDeviceShellScriptUserRunState.md)
-Get userRunStates from deviceManagement
+List of run states for this script across all users.
 
 ### [Get-MgDeviceManagementDeviceShellScriptUserRunStateDeviceRunState](Get-MgDeviceManagementDeviceShellScriptUserRunStateDeviceRunState.md)
-Get deviceRunStates from deviceManagement
+List of run states for this script across all devices of specific user.
 
 ### [Get-MgDeviceManagementDeviceShellScriptUserRunStateDeviceRunStateManagedDevice](Get-MgDeviceManagementDeviceShellScriptUserRunStateDeviceRunStateManagedDevice.md)
-Get managedDevice from deviceManagement
+The managed devices that executes the device management script.
 
 ### [Get-MgDeviceManagementDeviceShellScriptUserRunStateDeviceRunStateManagedDeviceByRef](Get-MgDeviceManagementDeviceShellScriptUserRunStateDeviceRunStateManagedDeviceByRef.md)
-Get ref of managedDevice from deviceManagement
+The managed devices that executes the device management script.
 
 ### [Get-MgDeviceManagementEmbeddedSimActivationCodePool](Get-MgDeviceManagementEmbeddedSimActivationCodePool.md)
-Get embeddedSIMActivationCodePools from deviceManagement
+The embedded SIM activation code pools created by this account.
 
 ### [Get-MgDeviceManagementEmbeddedSimActivationCodePoolAssignment](Get-MgDeviceManagementEmbeddedSimActivationCodePoolAssignment.md)
-Get assignments from deviceManagement
+Navigational property to a list of targets to which this pool is assigned.
 
 ### [Get-MgDeviceManagementEmbeddedSimActivationCodePoolDeviceState](Get-MgDeviceManagementEmbeddedSimActivationCodePoolDeviceState.md)
-Get deviceStates from deviceManagement
+Navigational property to a list of device states for this pool.
 
 ### [Get-MgDeviceManagementGroupPolicyConfiguration](Get-MgDeviceManagementGroupPolicyConfiguration.md)
-Get groupPolicyConfigurations from deviceManagement
+The group policy configurations created by this account.
 
 ### [Get-MgDeviceManagementGroupPolicyConfigurationAssignment](Get-MgDeviceManagementGroupPolicyConfigurationAssignment.md)
-Get assignments from deviceManagement
+The list of group assignments for the configuration.
 
 ### [Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValue](Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValue.md)
-Get definitionValues from deviceManagement
+The list of enabled or disabled group policy definition values for the configuration.
 
 ### [Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValueDefinition](Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValueDefinition.md)
-Get definition from deviceManagement
+The associated group policy definition with the value.
 
 ### [Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValueDefinitionByRef](Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValueDefinitionByRef.md)
-Get ref of definition from deviceManagement
+The associated group policy definition with the value.
 
 ### [Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentation](Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentation.md)
-Get presentation from deviceManagement
+The group policy presentation associated with the presentation value.
 
 ### [Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue](Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue.md)
-Get presentationValues from deviceManagement
+The associated group policy presentation values with the definition value.
 
 ### [Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValueDefinitionValue](Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValueDefinitionValue.md)
-Get definitionValue from deviceManagement
+The group policy definition value associated with the presentation value.
 
 ### [Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValueDefinitionValueByRef](Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValueDefinitionValueByRef.md)
-Get ref of definitionValue from deviceManagement
+The group policy definition value associated with the presentation value.
 
 ### [Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValuePresentationByRef](Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValuePresentationByRef.md)
-Get ref of presentation from deviceManagement
+The group policy presentation associated with the presentation value.
 
 ### [Get-MgDeviceManagementIntent](Get-MgDeviceManagementIntent.md)
-Get intents from deviceManagement
+The device management intents
 
 ### [Get-MgDeviceManagementIntentAssignment](Get-MgDeviceManagementIntentAssignment.md)
-Get assignments from deviceManagement
+Collection of assignments
 
 ### [Get-MgDeviceManagementIntentCategory](Get-MgDeviceManagementIntentCategory.md)
-Get categories from deviceManagement
+Collection of setting categories within the intent
 
 ### [Get-MgDeviceManagementIntentCategorySetting](Get-MgDeviceManagementIntentCategorySetting.md)
-Get settings from deviceManagement
+The settings this category contains
 
 ### [Get-MgDeviceManagementIntentDeviceSettingStateSummary](Get-MgDeviceManagementIntentDeviceSettingStateSummary.md)
-Get deviceSettingStateSummaries from deviceManagement
+Collection of settings and their states and counts of devices that belong to corresponding state for all settings within the intent
 
 ### [Get-MgDeviceManagementIntentDeviceState](Get-MgDeviceManagementIntentDeviceState.md)
-Get deviceStates from deviceManagement
+Collection of states of all devices that the intent is applied to
 
 ### [Get-MgDeviceManagementIntentDeviceStateSummary](Get-MgDeviceManagementIntentDeviceStateSummary.md)
-Get deviceStateSummary from deviceManagement
+A summary of device states and counts of devices that belong to corresponding state for all devices that the intent is applied to
 
 ### [Get-MgDeviceManagementIntentSetting](Get-MgDeviceManagementIntentSetting.md)
-Get settings from deviceManagement
+Collection of all settings to be applied
 
 ### [Get-MgDeviceManagementIntentUserState](Get-MgDeviceManagementIntentUserState.md)
-Get userStates from deviceManagement
+Collection of states of all users that the intent is applied to
 
 ### [Get-MgDeviceManagementIntentUserStateSummary](Get-MgDeviceManagementIntentUserStateSummary.md)
-Get userStateSummary from deviceManagement
+A summary of user states and counts of users that belong to corresponding state for all users that the intent is applied to
 
 ### [Get-MgDeviceManagementMacOSSoftwareUpdateAccountSummary](Get-MgDeviceManagementMacOSSoftwareUpdateAccountSummary.md)
-Get macOSSoftwareUpdateAccountSummaries from deviceManagement
+The MacOS software update account summaries for this account.
 
 ### [Get-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary](Get-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary.md)
-Get categorySummaries from deviceManagement
+Summary of the updates by category.
 
 ### [Get-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummaryUpdateStateSummary](Get-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummaryUpdateStateSummary.md)
-Get updateStateSummaries from deviceManagement
+Summary of the update states.
 
 ### [Get-MgDeviceManagementManagedDevice](Get-MgDeviceManagementManagedDevice.md)
-Get managedDevices from deviceManagement
+The list of managed devices.
 
 ### [Get-MgDeviceManagementManagedDeviceAssignmentFilterEvaluationStatusDetail](Get-MgDeviceManagementManagedDeviceAssignmentFilterEvaluationStatusDetail.md)
-Get assignmentFilterEvaluationStatusDetails from deviceManagement
+Managed device mobile app configuration states for this device.
 
 ### [Get-MgDeviceManagementManagedDeviceCategory](Get-MgDeviceManagementManagedDeviceCategory.md)
-Get deviceCategory from deviceManagement
+Device category
 
 ### [Get-MgDeviceManagementManagedDeviceCompliancePolicyState](Get-MgDeviceManagementManagedDeviceCompliancePolicyState.md)
-Get deviceCompliancePolicyStates from deviceManagement
+Device compliance policy states for this device.
 
 ### [Get-MgDeviceManagementManagedDeviceConfigurationState](Get-MgDeviceManagementManagedDeviceConfigurationState.md)
-Get deviceConfigurationStates from deviceManagement
+Device configuration states for this device.
 
 ### [Get-MgDeviceManagementManagedDeviceDetectedApp](Get-MgDeviceManagementManagedDeviceDetectedApp.md)
-Get detectedApps from deviceManagement
+All applications currently installed on the device
 
 ### [Get-MgDeviceManagementManagedDeviceDetectedAppByRef](Get-MgDeviceManagementManagedDeviceDetectedAppByRef.md)
-Get ref of detectedApps from deviceManagement
+All applications currently installed on the device
 
 ### [Get-MgDeviceManagementManagedDeviceEncryptionState](Get-MgDeviceManagementManagedDeviceEncryptionState.md)
-Get managedDeviceEncryptionStates from deviceManagement
+Encryption report for devices in this account
 
 ### [Get-MgDeviceManagementManagedDeviceLogCollectionRequest](Get-MgDeviceManagementManagedDeviceLogCollectionRequest.md)
-Get logCollectionRequests from deviceManagement
+List of log collection requests
 
 ### [Get-MgDeviceManagementManagedDeviceMobileAppConfigurationState](Get-MgDeviceManagementManagedDeviceMobileAppConfigurationState.md)
-Get managedDeviceMobileAppConfigurationStates from deviceManagement
+Managed device mobile app configuration states for this device.
 
 ### [Get-MgDeviceManagementManagedDeviceOverview](Get-MgDeviceManagementManagedDeviceOverview.md)
-Get managedDeviceOverview from deviceManagement
+Device overview
 
 ### [Get-MgDeviceManagementManagedDeviceOverviewByRef](Get-MgDeviceManagementManagedDeviceOverviewByRef.md)
-Get ref of managedDeviceOverview from deviceManagement
+Device overview
 
 ### [Get-MgDeviceManagementManagedDeviceSecurityBaselineState](Get-MgDeviceManagementManagedDeviceSecurityBaselineState.md)
-Get securityBaselineStates from deviceManagement
+Security baseline states for this device.
 
 ### [Get-MgDeviceManagementManagedDeviceSecurityBaselineStateSettingState](Get-MgDeviceManagementManagedDeviceSecurityBaselineStateSettingState.md)
-Get settingStates from deviceManagement
+The security baseline state for different settings for a device
 
 ### [Get-MgDeviceManagementManagedDeviceUser](Get-MgDeviceManagementManagedDeviceUser.md)
-Get users from deviceManagement
+The primary users associated with the managed device.
 
 ### [Get-MgDeviceManagementManagedDeviceWindowProtectionState](Get-MgDeviceManagementManagedDeviceWindowProtectionState.md)
-Get windowsProtectionState from deviceManagement
+The device protection status.
 
 ### [Get-MgDeviceManagementManagedDeviceWindowProtectionStateDetectedMalwareState](Get-MgDeviceManagementManagedDeviceWindowProtectionStateDetectedMalwareState.md)
-Get detectedMalwareState from deviceManagement
+Device malware list
 
 ### [Get-MgDeviceManagementMicrosoftTunnelConfiguration](Get-MgDeviceManagementMicrosoftTunnelConfiguration.md)
-Get microsoftTunnelConfigurations from deviceManagement
+Collection of MicrosoftTunnelConfiguration settings associated with account.
 
 ### [Get-MgDeviceManagementMicrosoftTunnelHealthThreshold](Get-MgDeviceManagementMicrosoftTunnelHealthThreshold.md)
-Get microsoftTunnelHealthThresholds from deviceManagement
+Collection of MicrosoftTunnelHealthThreshold settings associated with account.
 
 ### [Get-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponse](Get-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponse.md)
-Get microsoftTunnelServerLogCollectionResponses from deviceManagement
+Collection of MicrosoftTunnelServerLogCollectionResponse settings associated with account.
 
 ### [Get-MgDeviceManagementMicrosoftTunnelSite](Get-MgDeviceManagementMicrosoftTunnelSite.md)
-Get microsoftTunnelSites from deviceManagement
+Collection of MicrosoftTunnelSite settings associated with account.
 
 ### [Get-MgDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelConfiguration](Get-MgDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelConfiguration.md)
-Get microsoftTunnelConfiguration from deviceManagement
+The MicrosoftTunnelConfiguration that has been applied to this MicrosoftTunnelSite
 
 ### [Get-MgDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer](Get-MgDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer.md)
-Get microsoftTunnelServers from deviceManagement
+A list of MicrosoftTunnelServers that are registered to this MicrosoftTunnelSite
 
 ### [Get-MgDeviceManagementMobileAppTroubleshootingEvent](Get-MgDeviceManagementMobileAppTroubleshootingEvent.md)
-Get mobileAppTroubleshootingEvents from deviceManagement
+The collection property of MobileAppTroubleshootingEvent.
 
 ### [Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Get appLogCollectionRequests from deviceManagement
+The collection property of AppLogUploadRequest.
 
 ### [Get-MgDeviceManagementNotificationMessageTemplate](Get-MgDeviceManagementNotificationMessageTemplate.md)
-Get notificationMessageTemplates from deviceManagement
+The Notification Message Templates.
 
 ### [Get-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage](Get-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage.md)
-Get localizedNotificationMessages from deviceManagement
+The list of localized messages for this Notification Message Template.
 
 ### [Get-MgDeviceManagementRemoteActionAudit](Get-MgDeviceManagementRemoteActionAudit.md)
-Get remoteActionAudits from deviceManagement
+The list of device remote action audits with the tenant.
 
 ### [Get-MgDeviceManagementResourceAccessProfile](Get-MgDeviceManagementResourceAccessProfile.md)
-Get resourceAccessProfiles from deviceManagement
+Collection of resource access settings associated with account.
 
 ### [Get-MgDeviceManagementResourceAccessProfileAssignment](Get-MgDeviceManagementResourceAccessProfileAssignment.md)
-Get assignments from deviceManagement
+The list of assignments for the device configuration profile.
 
 ### [Get-MgDeviceManagementScript](Get-MgDeviceManagementScript.md)
-Get deviceManagementScripts from deviceManagement
+The list of device management scripts associated with the tenant.
 
 ### [Get-MgDeviceManagementScriptAssignment](Get-MgDeviceManagementScriptAssignment.md)
-Get assignments from deviceManagement
+The list of group assignments for the device management script.
 
 ### [Get-MgDeviceManagementScriptDeviceRunState](Get-MgDeviceManagementScriptDeviceRunState.md)
-Get deviceRunStates from deviceManagement
+List of run states for this script across all devices.
 
 ### [Get-MgDeviceManagementScriptDeviceRunStateManagedDevice](Get-MgDeviceManagementScriptDeviceRunStateManagedDevice.md)
-Get managedDevice from deviceManagement
+The managed devices that executes the device management script.
 
 ### [Get-MgDeviceManagementScriptDeviceRunStateManagedDeviceByRef](Get-MgDeviceManagementScriptDeviceRunStateManagedDeviceByRef.md)
-Get ref of managedDevice from deviceManagement
+The managed devices that executes the device management script.
 
 ### [Get-MgDeviceManagementScriptGroupAssignment](Get-MgDeviceManagementScriptGroupAssignment.md)
-Get groupAssignments from deviceManagement
+The list of group assignments for the device management script.
 
 ### [Get-MgDeviceManagementScriptRunSummary](Get-MgDeviceManagementScriptRunSummary.md)
-Get runSummary from deviceManagement
+Run summary for device management script.
 
 ### [Get-MgDeviceManagementScriptRunSummaryByRef](Get-MgDeviceManagementScriptRunSummaryByRef.md)
-Get ref of runSummary from deviceManagement
+Run summary for device management script.
 
 ### [Get-MgDeviceManagementScriptUserRunState](Get-MgDeviceManagementScriptUserRunState.md)
-Get userRunStates from deviceManagement
+List of run states for this script across all users.
 
 ### [Get-MgDeviceManagementScriptUserRunStateDeviceRunState](Get-MgDeviceManagementScriptUserRunStateDeviceRunState.md)
-Get deviceRunStates from deviceManagement
+List of run states for this script across all devices of specific user.
 
 ### [Get-MgDeviceManagementScriptUserRunStateDeviceRunStateManagedDevice](Get-MgDeviceManagementScriptUserRunStateDeviceRunStateManagedDevice.md)
-Get managedDevice from deviceManagement
+The managed devices that executes the device management script.
 
 ### [Get-MgDeviceManagementScriptUserRunStateDeviceRunStateManagedDeviceByRef](Get-MgDeviceManagementScriptUserRunStateDeviceRunStateManagedDeviceByRef.md)
-Get ref of managedDevice from deviceManagement
+The managed devices that executes the device management script.
 
 ### [Get-MgDeviceManagementSettingDefinition](Get-MgDeviceManagementSettingDefinition.md)
-Get settingDefinitions from deviceManagement
+The device management intent setting definitions
 
 ### [Get-MgDeviceManagementSoftwareUpdateStatusSummary](Get-MgDeviceManagementSoftwareUpdateStatusSummary.md)
-Get softwareUpdateStatusSummary from deviceManagement
+The software update status summary.
 
 ### [Get-MgDeviceManagementSoftwareUpdateStatusSummaryByRef](Get-MgDeviceManagementSoftwareUpdateStatusSummaryByRef.md)
-Get ref of softwareUpdateStatusSummary from deviceManagement
+The software update status summary.
 
 ### [Get-MgDeviceManagementTemplate](Get-MgDeviceManagementTemplate.md)
-Get templates from deviceManagement
+The available templates
 
 ### [Get-MgDeviceManagementTemplateCategory](Get-MgDeviceManagementTemplateCategory.md)
-Get categories from deviceManagement
+Collection of setting categories within the template
 
 ### [Get-MgDeviceManagementTemplateCategoryRecommendedSetting](Get-MgDeviceManagementTemplateCategoryRecommendedSetting.md)
-Get recommendedSettings from deviceManagement
+The settings this category contains
 
 ### [Get-MgDeviceManagementTemplateMigratableTo](Get-MgDeviceManagementTemplateMigratableTo.md)
-Get migratableTo from deviceManagement
+Collection of templates this template can migrate to
 
 ### [Get-MgDeviceManagementTemplateSetting](Get-MgDeviceManagementTemplateSetting.md)
-Get settings from deviceManagement
+Collection of all settings this template has
 
 ### [Get-MgDeviceManagementTroubleshootingEvent](Get-MgDeviceManagementTroubleshootingEvent.md)
-Get troubleshootingEvents from deviceManagement
+The list of troubleshooting events for the tenant.
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance](Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance.md)
-Get userExperienceAnalyticsAppHealthApplicationPerformance from deviceManagement
+User experience analytics appHealth Application Performance
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersion](Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersion.md)
-Get userExperienceAnalyticsAppHealthApplicationPerformanceByAppVersion from deviceManagement
+User experience analytics appHealth Application Performance by App Version
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOSVersion](Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOSVersion.md)
-Get userExperienceAnalyticsAppHealthApplicationPerformanceByOSVersion from deviceManagement
+User experience analytics appHealth Application Performance by OS Version
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance](Get-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance.md)
-Get userExperienceAnalyticsAppHealthDeviceModelPerformance from deviceManagement
+User experience analytics appHealth Model Performance
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance](Get-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance.md)
-Get userExperienceAnalyticsAppHealthDevicePerformance from deviceManagement
+User experience analytics appHealth Device Performance
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail](Get-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail.md)
-Get userExperienceAnalyticsAppHealthDevicePerformanceDetails from deviceManagement
+User experience analytics device performance details
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance](Get-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance.md)
-Get userExperienceAnalyticsAppHealthOSVersionPerformance from deviceManagement
+User experience analytics appHealth OS version Performance
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthOverview](Get-MgDeviceManagementUserExperienceAnalyticAppHealthOverview.md)
-Get userExperienceAnalyticsAppHealthOverview from deviceManagement
+User experience analytics appHealth overview
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue](Get-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue.md)
-Get metricValues from deviceManagement
+The metric values for the user experience analytics category.
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticBaseline](Get-MgDeviceManagementUserExperienceAnalyticBaseline.md)
-Get userExperienceAnalyticsBaselines from deviceManagement
+User experience analytics baselines
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticBaselineAppHealthMetric](Get-MgDeviceManagementUserExperienceAnalyticBaselineAppHealthMetric.md)
-Get appHealthMetrics from deviceManagement
+The user experience analytics app health metrics.
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticBaselineAppHealthMetricByRef](Get-MgDeviceManagementUserExperienceAnalyticBaselineAppHealthMetricByRef.md)
-Get ref of appHealthMetrics from deviceManagement
+The user experience analytics app health metrics.
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetric](Get-MgDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetric.md)
-Get bestPracticesMetrics from deviceManagement
+The user experience analytics best practices metrics.
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetricByRef](Get-MgDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetricByRef.md)
-Get ref of bestPracticesMetrics from deviceManagement
+The user experience analytics best practices metrics.
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticBaselineDeviceBootPerformanceMetric](Get-MgDeviceManagementUserExperienceAnalyticBaselineDeviceBootPerformanceMetric.md)
-Get deviceBootPerformanceMetrics from deviceManagement
+The user experience analytics device boot performance metrics.
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticBaselineDeviceBootPerformanceMetricByRef](Get-MgDeviceManagementUserExperienceAnalyticBaselineDeviceBootPerformanceMetricByRef.md)
-Get ref of deviceBootPerformanceMetrics from deviceManagement
+The user experience analytics device boot performance metrics.
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticBaselineRebootAnalyticMetric](Get-MgDeviceManagementUserExperienceAnalyticBaselineRebootAnalyticMetric.md)
-Get rebootAnalyticsMetrics from deviceManagement
+The user experience analytics reboot analytics metrics.
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticBaselineRebootAnalyticMetricByRef](Get-MgDeviceManagementUserExperienceAnalyticBaselineRebootAnalyticMetricByRef.md)
-Get ref of rebootAnalyticsMetrics from deviceManagement
+The user experience analytics reboot analytics metrics.
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticBaselineResourcePerformanceMetric](Get-MgDeviceManagementUserExperienceAnalyticBaselineResourcePerformanceMetric.md)
-Get resourcePerformanceMetrics from deviceManagement
+The user experience analytics resource performance metrics.
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticBaselineResourcePerformanceMetricByRef](Get-MgDeviceManagementUserExperienceAnalyticBaselineResourcePerformanceMetricByRef.md)
-Get ref of resourcePerformanceMetrics from deviceManagement
+The user experience analytics resource performance metrics.
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetric](Get-MgDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetric.md)
-Get workFromAnywhereMetrics from deviceManagement
+The user experience analytics work from anywhere metrics.
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetricByRef](Get-MgDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetricByRef.md)
-Get ref of workFromAnywhereMetrics from deviceManagement
+The user experience analytics work from anywhere metrics.
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticCategory](Get-MgDeviceManagementUserExperienceAnalyticCategory.md)
-Get userExperienceAnalyticsCategories from deviceManagement
+User experience analytics categories
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue](Get-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue.md)
-Get metricValues from deviceManagement
+The metric values for the user experience analytics category.
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticDeviceMetricHistory](Get-MgDeviceManagementUserExperienceAnalyticDeviceMetricHistory.md)
-Get userExperienceAnalyticsDeviceMetricHistory from deviceManagement
+User experience analytics device metric history
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticDeviceMetricHistoryUserExperienceAnalyticMetric](Get-MgDeviceManagementUserExperienceAnalyticDeviceMetricHistoryUserExperienceAnalyticMetric.md)
-Get userExperienceAnalyticsMetric from deviceManagement
+User experience analytics metric.
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticDeviceMetricHistoryUserExperienceAnalyticMetricByRef](Get-MgDeviceManagementUserExperienceAnalyticDeviceMetricHistoryUserExperienceAnalyticMetricByRef.md)
-Get ref of userExperienceAnalyticsMetric from deviceManagement
+User experience analytics metric.
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticDevicePerformance](Get-MgDeviceManagementUserExperienceAnalyticDevicePerformance.md)
-Get userExperienceAnalyticsDevicePerformance from deviceManagement
+User experience analytics device performance
+
+### [Get-MgDeviceManagementUserExperienceAnalyticDeviceScore](Get-MgDeviceManagementUserExperienceAnalyticDeviceScore.md)
+User experience analytics device scores
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory](Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory.md)
-Get userExperienceAnalyticsDeviceStartupHistory from deviceManagement
+User experience analytics device Startup History
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess](Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess.md)
-Get userExperienceAnalyticsDeviceStartupProcesses from deviceManagement
+User experience analytics device Startup Processes
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance](Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance.md)
-Get userExperienceAnalyticsDeviceStartupProcessPerformance from deviceManagement
+User experience analytics device Startup Process Performance
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentity](Get-MgDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentity.md)
-Get userExperienceAnalyticsDevicesWithoutCloudIdentity from deviceManagement
+User experience analytics devices without cloud identity.
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticImpactingProcess](Get-MgDeviceManagementUserExperienceAnalyticImpactingProcess.md)
-Get userExperienceAnalyticsImpactingProcess from deviceManagement
+User experience analytics impacting process
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticMetricHistory](Get-MgDeviceManagementUserExperienceAnalyticMetricHistory.md)
-Get userExperienceAnalyticsMetricHistory from deviceManagement
+User experience analytics metric history
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticMetricHistoryUserExperienceAnalyticMetric](Get-MgDeviceManagementUserExperienceAnalyticMetricHistoryUserExperienceAnalyticMetric.md)
-Get userExperienceAnalyticsMetric from deviceManagement
+User experience analytics metric.
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticMetricHistoryUserExperienceAnalyticMetricByRef](Get-MgDeviceManagementUserExperienceAnalyticMetricHistoryUserExperienceAnalyticMetricByRef.md)
-Get ref of userExperienceAnalyticsMetric from deviceManagement
+User experience analytics metric.
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice](Get-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice.md)
-Get userExperienceAnalyticsNotAutopilotReadyDevice from deviceManagement
+User experience analytics devices not Windows Autopilot ready.
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticOverview](Get-MgDeviceManagementUserExperienceAnalyticOverview.md)
-Get userExperienceAnalyticsOverview from deviceManagement
+User experience analytics overview
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticRegressionSummary](Get-MgDeviceManagementUserExperienceAnalyticRegressionSummary.md)
-Get userExperienceAnalyticsRegressionSummary from deviceManagement
+User experience analytics regression summary
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticRegressionSummaryManufacturerRegression](Get-MgDeviceManagementUserExperienceAnalyticRegressionSummaryManufacturerRegression.md)
-Get manufacturerRegression from deviceManagement
+The metric values for the user experience analytics Manufacturer regression.
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticRegressionSummaryModelRegression](Get-MgDeviceManagementUserExperienceAnalyticRegressionSummaryModelRegression.md)
-Get modelRegression from deviceManagement
+The metric values for the user experience analytics model regression.
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticRegressionSummaryOperatingSystemRegression](Get-MgDeviceManagementUserExperienceAnalyticRegressionSummaryOperatingSystemRegression.md)
-Get operatingSystemRegression from deviceManagement
+The metric values for the user experience analytics operating system regression.
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticRemoteConnection](Get-MgDeviceManagementUserExperienceAnalyticRemoteConnection.md)
-Get userExperienceAnalyticsRemoteConnection from deviceManagement
+User experience analytics remote connection
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticResourcePerformance](Get-MgDeviceManagementUserExperienceAnalyticResourcePerformance.md)
-Get userExperienceAnalyticsResourcePerformance from deviceManagement
+User experience analytics resource performance
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticScoreHistory](Get-MgDeviceManagementUserExperienceAnalyticScoreHistory.md)
-Get userExperienceAnalyticsScoreHistory from deviceManagement
+User experience analytics device Startup Score History
+
+### [Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric](Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric.md)
+User experience analytics work from anywhere metrics.
+
+### [Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice](Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice.md)
+The work from anywhere metric devices.
 
 ### [Get-MgDeviceManagementWindowInformationProtectionAppLearningSummary](Get-MgDeviceManagementWindowInformationProtectionAppLearningSummary.md)
-Get windowsInformationProtectionAppLearningSummaries from deviceManagement
+The windows information protection app learning summaries.
 
 ### [Get-MgDeviceManagementWindowInformationProtectionNetworkLearningSummary](Get-MgDeviceManagementWindowInformationProtectionNetworkLearningSummary.md)
-Get windowsInformationProtectionNetworkLearningSummaries from deviceManagement
+The windows information protection network learning summaries.
 
 ### [Get-MgDeviceManagementWindowMalwareInformation](Get-MgDeviceManagementWindowMalwareInformation.md)
-Get windowsMalwareInformation from deviceManagement
+The list of affected malware in the tenant.
 
 ### [Get-MgDeviceManagementWindowMalwareInformationDeviceMalwareState](Get-MgDeviceManagementWindowMalwareInformationDeviceMalwareState.md)
-Get deviceMalwareStates from deviceManagement
+List of devices affected by current malware with the malware state on each device
 
 ### [New-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummaryAdvancedThreatProtectionOnboardingDeviceSettingState](New-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummaryAdvancedThreatProtectionOnboardingDeviceSettingState.md)
-Create new navigation property to advancedThreatProtectionOnboardingDeviceSettingStates for deviceManagement
+Not yet documented
 
 ### [New-MgDeviceManagementAndroidForWorkAppConfigurationSchema](New-MgDeviceManagementAndroidForWorkAppConfigurationSchema.md)
-Create new navigation property to androidForWorkAppConfigurationSchemas for deviceManagement
+Android for Work app configuration schema entities.
 
 ### [New-MgDeviceManagementAndroidManagedStoreAppConfigurationSchema](New-MgDeviceManagementAndroidManagedStoreAppConfigurationSchema.md)
-Create new navigation property to androidManagedStoreAppConfigurationSchemas for deviceManagement
+Android Enterprise app configuration schema entities.
 
 ### [New-MgDeviceManagementAssignmentFilter](New-MgDeviceManagementAssignmentFilter.md)
-Create new navigation property to assignmentFilters for deviceManagement
+The list of assignment filters
 
 ### [New-MgDeviceManagementCategory](New-MgDeviceManagementCategory.md)
-Create new navigation property to categories for deviceManagement
+The available categories
 
 ### [New-MgDeviceManagementCategorySettingDefinition](New-MgDeviceManagementCategorySettingDefinition.md)
-Create new navigation property to settingDefinitions for deviceManagement
+The setting definitions this category contains
 
 ### [New-MgDeviceManagementComanagedDevice](New-MgDeviceManagementComanagedDevice.md)
-Create new navigation property to comanagedDevices for deviceManagement
+The list of co-managed devices report
 
 ### [New-MgDeviceManagementComanagedDeviceAssignmentFilterEvaluationStatusDetail](New-MgDeviceManagementComanagedDeviceAssignmentFilterEvaluationStatusDetail.md)
-Create new navigation property to assignmentFilterEvaluationStatusDetails for deviceManagement
+Managed device mobile app configuration states for this device.
 
 ### [New-MgDeviceManagementComanagedDeviceCompliancePolicyState](New-MgDeviceManagementComanagedDeviceCompliancePolicyState.md)
-Create new navigation property to deviceCompliancePolicyStates for deviceManagement
+Device compliance policy states for this device.
 
 ### [New-MgDeviceManagementComanagedDeviceConfigurationState](New-MgDeviceManagementComanagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for deviceManagement
+Device configuration states for this device.
 
 ### [New-MgDeviceManagementComanagedDeviceDetectedAppByRef](New-MgDeviceManagementComanagedDeviceDetectedAppByRef.md)
-Create new navigation property ref to detectedApps for deviceManagement
+All applications currently installed on the device
 
 ### [New-MgDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationState](New-MgDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationState.md)
-Create new navigation property to managedDeviceMobileAppConfigurationStates for deviceManagement
+Managed device mobile app configuration states for this device.
 
 ### [New-MgDeviceManagementComanagedDeviceSecurityBaselineState](New-MgDeviceManagementComanagedDeviceSecurityBaselineState.md)
-Create new navigation property to securityBaselineStates for deviceManagement
+Security baseline states for this device.
 
 ### [New-MgDeviceManagementComanagedDeviceSecurityBaselineStateSettingState](New-MgDeviceManagementComanagedDeviceSecurityBaselineStateSettingState.md)
-Create new navigation property to settingStates for deviceManagement
+The security baseline state for different settings for a device
 
 ### [New-MgDeviceManagementComanagedDeviceUser](New-MgDeviceManagementComanagedDeviceUser.md)
-Create new navigation property to users for deviceManagement
+The primary users associated with the managed device.
 
 ### [New-MgDeviceManagementComanagedDeviceWindowProtectionStateDetectedMalwareState](New-MgDeviceManagementComanagedDeviceWindowProtectionStateDetectedMalwareState.md)
-Create new navigation property to detectedMalwareState for deviceManagement
+Device malware list
 
 ### [New-MgDeviceManagementCondition](New-MgDeviceManagementCondition.md)
-Create new navigation property to managementConditions for deviceManagement
+The management conditions associated with device management of the company.
 
 ### [New-MgDeviceManagementConditionManagementConditionStatementByRef](New-MgDeviceManagementConditionManagementConditionStatementByRef.md)
-Create new navigation property ref to managementConditionStatements for deviceManagement
+The management condition statements associated to the management condition.
 
 ### [New-MgDeviceManagementConditionStatement](New-MgDeviceManagementConditionStatement.md)
-Create new navigation property to managementConditionStatements for deviceManagement
+The management condition statements associated with device management of the company.
 
 ### [New-MgDeviceManagementConditionStatementManagementConditionByRef](New-MgDeviceManagementConditionStatementManagementConditionByRef.md)
-Create new navigation property ref to managementConditions for deviceManagement
+The management conditions associated to the management condition statement.
 
 ### [New-MgDeviceManagementDataSharingConsent](New-MgDeviceManagementDataSharingConsent.md)
-Create new navigation property to dataSharingConsents for deviceManagement
+Data sharing consents.
 
 ### [New-MgDeviceManagementDerivedCredentials](New-MgDeviceManagementDerivedCredentials.md)
-Create new navigation property to derivedCredentials for deviceManagement
+Collection of Derived credential settings associated with account.
 
 ### [New-MgDeviceManagementDetectedApp](New-MgDeviceManagementDetectedApp.md)
-Create new navigation property to detectedApps for deviceManagement
+The list of detected apps associated with a device.
 
 ### [New-MgDeviceManagementDetectedAppManagedDeviceByRef](New-MgDeviceManagementDetectedAppManagedDeviceByRef.md)
-Create new navigation property ref to managedDevices for deviceManagement
+The devices that have the discovered application installed
 
 ### [New-MgDeviceManagementDeviceCategory](New-MgDeviceManagementDeviceCategory.md)
-Create new navigation property to deviceCategories for deviceManagement
+The list of device categories with the tenant.
 
 ### [New-MgDeviceManagementDeviceCompliancePolicy](New-MgDeviceManagementDeviceCompliancePolicy.md)
-Create new navigation property to deviceCompliancePolicies for deviceManagement
+The device compliance policies.
 
 ### [New-MgDeviceManagementDeviceCompliancePolicyAssignment](New-MgDeviceManagementDeviceCompliancePolicyAssignment.md)
-Create new navigation property to assignments for deviceManagement
+The collection of assignments for this compliance policy.
 
 ### [New-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary](New-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary.md)
-Create new navigation property to deviceSettingStateSummaries for deviceManagement
+Compliance Setting State Device Summary
 
 ### [New-MgDeviceManagementDeviceCompliancePolicyDeviceStatuses](New-MgDeviceManagementDeviceCompliancePolicyDeviceStatuses.md)
-Create new navigation property to deviceStatuses for deviceManagement
+List of DeviceComplianceDeviceStatus.
 
 ### [New-MgDeviceManagementDeviceCompliancePolicyScheduledAction](New-MgDeviceManagementDeviceCompliancePolicyScheduledAction.md)
-Create new navigation property to scheduledActionsForRule for deviceManagement
+The list of scheduled action for this rule
 
 ### [New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration.md)
-Create new navigation property to scheduledActionConfigurations for deviceManagement
+The list of scheduled action configurations for this compliance policy.
 
 ### [New-MgDeviceManagementDeviceCompliancePolicySettingStateSummary](New-MgDeviceManagementDeviceCompliancePolicySettingStateSummary.md)
-Create new navigation property to deviceCompliancePolicySettingStateSummaries for deviceManagement
+The summary states of compliance policy settings for this account.
 
 ### [New-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState](New-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState.md)
-Create new navigation property to deviceComplianceSettingStates for deviceManagement
+Not yet documented
 
 ### [New-MgDeviceManagementDeviceCompliancePolicyUserStatuses](New-MgDeviceManagementDeviceCompliancePolicyUserStatuses.md)
-Create new navigation property to userStatuses for deviceManagement
+List of DeviceComplianceUserStatus.
 
 ### [New-MgDeviceManagementDeviceConfiguration](New-MgDeviceManagementDeviceConfiguration.md)
-Create new navigation property to deviceConfigurations for deviceManagement
+The device configurations.
 
 ### [New-MgDeviceManagementDeviceConfigurationAssignment](New-MgDeviceManagementDeviceConfigurationAssignment.md)
-Create new navigation property to assignments for deviceManagement
+The list of assignments for the device configuration profile.
 
 ### [New-MgDeviceManagementDeviceConfigurationConflictSummary](New-MgDeviceManagementDeviceConfigurationConflictSummary.md)
-Create new navigation property to deviceConfigurationConflictSummary for deviceManagement
+Summary of policies in conflict state for this account.
 
 ### [New-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary](New-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary.md)
-Create new navigation property to deviceSettingStateSummaries for deviceManagement
+Device Configuration Setting State Device Summary
 
 ### [New-MgDeviceManagementDeviceConfigurationDeviceStatuses](New-MgDeviceManagementDeviceConfigurationDeviceStatuses.md)
-Create new navigation property to deviceStatuses for deviceManagement
+Device configuration installation status by device.
 
 ### [New-MgDeviceManagementDeviceConfigurationGroupAssignment](New-MgDeviceManagementDeviceConfigurationGroupAssignment.md)
-Create new navigation property to groupAssignments for deviceManagement
+The list of group assignments for the device configuration profile.
 
 ### [New-MgDeviceManagementDeviceConfigurationUserStatuses](New-MgDeviceManagementDeviceConfigurationUserStatuses.md)
-Create new navigation property to userStatuses for deviceManagement
+Device configuration installation status by user.
 
 ### [New-MgDeviceManagementDeviceHealthScript](New-MgDeviceManagementDeviceHealthScript.md)
-Create new navigation property to deviceHealthScripts for deviceManagement
+The list of device health scripts associated with the tenant.
 
 ### [New-MgDeviceManagementDeviceHealthScriptAssignment](New-MgDeviceManagementDeviceHealthScriptAssignment.md)
-Create new navigation property to assignments for deviceManagement
+The list of group assignments for the device health script
 
 ### [New-MgDeviceManagementDeviceHealthScriptDeviceRunState](New-MgDeviceManagementDeviceHealthScriptDeviceRunState.md)
-Create new navigation property to deviceRunStates for deviceManagement
+List of run states for the device health script across all devices
 
 ### [New-MgDeviceManagementDeviceShellScript](New-MgDeviceManagementDeviceShellScript.md)
-Create new navigation property to deviceShellScripts for deviceManagement
+The list of device shell scripts associated with the tenant.
 
 ### [New-MgDeviceManagementDeviceShellScriptAssignment](New-MgDeviceManagementDeviceShellScriptAssignment.md)
-Create new navigation property to assignments for deviceManagement
+The list of group assignments for the device management script.
 
 ### [New-MgDeviceManagementDeviceShellScriptDeviceRunState](New-MgDeviceManagementDeviceShellScriptDeviceRunState.md)
-Create new navigation property to deviceRunStates for deviceManagement
+List of run states for this script across all devices.
 
 ### [New-MgDeviceManagementDeviceShellScriptGroupAssignment](New-MgDeviceManagementDeviceShellScriptGroupAssignment.md)
-Create new navigation property to groupAssignments for deviceManagement
+The list of group assignments for the device management script.
 
 ### [New-MgDeviceManagementDeviceShellScriptUserRunState](New-MgDeviceManagementDeviceShellScriptUserRunState.md)
-Create new navigation property to userRunStates for deviceManagement
+List of run states for this script across all users.
 
 ### [New-MgDeviceManagementDeviceShellScriptUserRunStateDeviceRunState](New-MgDeviceManagementDeviceShellScriptUserRunStateDeviceRunState.md)
-Create new navigation property to deviceRunStates for deviceManagement
+List of run states for this script across all devices of specific user.
 
 ### [New-MgDeviceManagementEmbeddedSimActivationCodePool](New-MgDeviceManagementEmbeddedSimActivationCodePool.md)
-Create new navigation property to embeddedSIMActivationCodePools for deviceManagement
+The embedded SIM activation code pools created by this account.
 
 ### [New-MgDeviceManagementEmbeddedSimActivationCodePoolAssignment](New-MgDeviceManagementEmbeddedSimActivationCodePoolAssignment.md)
-Create new navigation property to assignments for deviceManagement
+Navigational property to a list of targets to which this pool is assigned.
 
 ### [New-MgDeviceManagementEmbeddedSimActivationCodePoolDeviceState](New-MgDeviceManagementEmbeddedSimActivationCodePoolDeviceState.md)
-Create new navigation property to deviceStates for deviceManagement
+Navigational property to a list of device states for this pool.
 
 ### [New-MgDeviceManagementGroupPolicyConfiguration](New-MgDeviceManagementGroupPolicyConfiguration.md)
-Create new navigation property to groupPolicyConfigurations for deviceManagement
+The group policy configurations created by this account.
 
 ### [New-MgDeviceManagementGroupPolicyConfigurationAssignment](New-MgDeviceManagementGroupPolicyConfigurationAssignment.md)
-Create new navigation property to assignments for deviceManagement
+The list of group assignments for the configuration.
 
 ### [New-MgDeviceManagementGroupPolicyConfigurationDefinitionValue](New-MgDeviceManagementGroupPolicyConfigurationDefinitionValue.md)
-Create new navigation property to definitionValues for deviceManagement
+The list of enabled or disabled group policy definition values for the configuration.
 
 ### [New-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue](New-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue.md)
-Create new navigation property to presentationValues for deviceManagement
+The associated group policy presentation values with the definition value.
 
 ### [New-MgDeviceManagementIntent](New-MgDeviceManagementIntent.md)
-Create new navigation property to intents for deviceManagement
+The device management intents
 
 ### [New-MgDeviceManagementIntentAssignment](New-MgDeviceManagementIntentAssignment.md)
-Create new navigation property to assignments for deviceManagement
+Collection of assignments
 
 ### [New-MgDeviceManagementIntentCategory](New-MgDeviceManagementIntentCategory.md)
-Create new navigation property to categories for deviceManagement
+Collection of setting categories within the intent
 
 ### [New-MgDeviceManagementIntentCategorySetting](New-MgDeviceManagementIntentCategorySetting.md)
-Create new navigation property to settings for deviceManagement
+The settings this category contains
 
 ### [New-MgDeviceManagementIntentDeviceSettingStateSummary](New-MgDeviceManagementIntentDeviceSettingStateSummary.md)
-Create new navigation property to deviceSettingStateSummaries for deviceManagement
+Collection of settings and their states and counts of devices that belong to corresponding state for all settings within the intent
 
 ### [New-MgDeviceManagementIntentDeviceState](New-MgDeviceManagementIntentDeviceState.md)
-Create new navigation property to deviceStates for deviceManagement
+Collection of states of all devices that the intent is applied to
 
 ### [New-MgDeviceManagementIntentSetting](New-MgDeviceManagementIntentSetting.md)
-Create new navigation property to settings for deviceManagement
+Collection of all settings to be applied
 
 ### [New-MgDeviceManagementIntentUserState](New-MgDeviceManagementIntentUserState.md)
-Create new navigation property to userStates for deviceManagement
+Collection of states of all users that the intent is applied to
 
 ### [New-MgDeviceManagementMacOSSoftwareUpdateAccountSummary](New-MgDeviceManagementMacOSSoftwareUpdateAccountSummary.md)
-Create new navigation property to macOSSoftwareUpdateAccountSummaries for deviceManagement
+The MacOS software update account summaries for this account.
 
 ### [New-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary](New-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary.md)
-Create new navigation property to categorySummaries for deviceManagement
+Summary of the updates by category.
 
 ### [New-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummaryUpdateStateSummary](New-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummaryUpdateStateSummary.md)
-Create new navigation property to updateStateSummaries for deviceManagement
+Summary of the update states.
 
 ### [New-MgDeviceManagementManagedDevice](New-MgDeviceManagementManagedDevice.md)
-Create new navigation property to managedDevices for deviceManagement
+The list of managed devices.
 
 ### [New-MgDeviceManagementManagedDeviceAssignmentFilterEvaluationStatusDetail](New-MgDeviceManagementManagedDeviceAssignmentFilterEvaluationStatusDetail.md)
-Create new navigation property to assignmentFilterEvaluationStatusDetails for deviceManagement
+Managed device mobile app configuration states for this device.
 
 ### [New-MgDeviceManagementManagedDeviceCompliancePolicyState](New-MgDeviceManagementManagedDeviceCompliancePolicyState.md)
-Create new navigation property to deviceCompliancePolicyStates for deviceManagement
+Device compliance policy states for this device.
 
 ### [New-MgDeviceManagementManagedDeviceConfigurationState](New-MgDeviceManagementManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for deviceManagement
+Device configuration states for this device.
 
 ### [New-MgDeviceManagementManagedDeviceDetectedAppByRef](New-MgDeviceManagementManagedDeviceDetectedAppByRef.md)
-Create new navigation property ref to detectedApps for deviceManagement
+All applications currently installed on the device
 
 ### [New-MgDeviceManagementManagedDeviceEncryptionState](New-MgDeviceManagementManagedDeviceEncryptionState.md)
-Create new navigation property to managedDeviceEncryptionStates for deviceManagement
+Encryption report for devices in this account
 
 ### [New-MgDeviceManagementManagedDeviceMobileAppConfigurationState](New-MgDeviceManagementManagedDeviceMobileAppConfigurationState.md)
-Create new navigation property to managedDeviceMobileAppConfigurationStates for deviceManagement
+Managed device mobile app configuration states for this device.
 
 ### [New-MgDeviceManagementManagedDeviceSecurityBaselineState](New-MgDeviceManagementManagedDeviceSecurityBaselineState.md)
-Create new navigation property to securityBaselineStates for deviceManagement
+Security baseline states for this device.
 
 ### [New-MgDeviceManagementManagedDeviceSecurityBaselineStateSettingState](New-MgDeviceManagementManagedDeviceSecurityBaselineStateSettingState.md)
-Create new navigation property to settingStates for deviceManagement
+The security baseline state for different settings for a device
 
 ### [New-MgDeviceManagementManagedDeviceUser](New-MgDeviceManagementManagedDeviceUser.md)
-Create new navigation property to users for deviceManagement
+The primary users associated with the managed device.
 
 ### [New-MgDeviceManagementManagedDeviceWindowProtectionStateDetectedMalwareState](New-MgDeviceManagementManagedDeviceWindowProtectionStateDetectedMalwareState.md)
-Create new navigation property to detectedMalwareState for deviceManagement
+Device malware list
 
 ### [New-MgDeviceManagementMicrosoftTunnelConfiguration](New-MgDeviceManagementMicrosoftTunnelConfiguration.md)
-Create new navigation property to microsoftTunnelConfigurations for deviceManagement
+Collection of MicrosoftTunnelConfiguration settings associated with account.
 
 ### [New-MgDeviceManagementMicrosoftTunnelHealthThreshold](New-MgDeviceManagementMicrosoftTunnelHealthThreshold.md)
-Create new navigation property to microsoftTunnelHealthThresholds for deviceManagement
+Collection of MicrosoftTunnelHealthThreshold settings associated with account.
 
 ### [New-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponse](New-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponse.md)
-Create new navigation property to microsoftTunnelServerLogCollectionResponses for deviceManagement
+Collection of MicrosoftTunnelServerLogCollectionResponse settings associated with account.
 
 ### [New-MgDeviceManagementMicrosoftTunnelSite](New-MgDeviceManagementMicrosoftTunnelSite.md)
-Create new navigation property to microsoftTunnelSites for deviceManagement
+Collection of MicrosoftTunnelSite settings associated with account.
 
 ### [New-MgDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer](New-MgDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer.md)
-Create new navigation property to microsoftTunnelServers for deviceManagement
+A list of MicrosoftTunnelServers that are registered to this MicrosoftTunnelSite
 
 ### [New-MgDeviceManagementMobileAppTroubleshootingEvent](New-MgDeviceManagementMobileAppTroubleshootingEvent.md)
-Create new navigation property to mobileAppTroubleshootingEvents for deviceManagement
+The collection property of MobileAppTroubleshootingEvent.
 
 ### [New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Create new navigation property to appLogCollectionRequests for deviceManagement
+The collection property of AppLogUploadRequest.
 
 ### [New-MgDeviceManagementNotificationMessageTemplate](New-MgDeviceManagementNotificationMessageTemplate.md)
-Create new navigation property to notificationMessageTemplates for deviceManagement
+The Notification Message Templates.
 
 ### [New-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage](New-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage.md)
-Create new navigation property to localizedNotificationMessages for deviceManagement
+The list of localized messages for this Notification Message Template.
 
 ### [New-MgDeviceManagementRemoteActionAudit](New-MgDeviceManagementRemoteActionAudit.md)
-Create new navigation property to remoteActionAudits for deviceManagement
+The list of device remote action audits with the tenant.
 
 ### [New-MgDeviceManagementResourceAccessProfile](New-MgDeviceManagementResourceAccessProfile.md)
-Create new navigation property to resourceAccessProfiles for deviceManagement
+Collection of resource access settings associated with account.
 
 ### [New-MgDeviceManagementResourceAccessProfileAssignment](New-MgDeviceManagementResourceAccessProfileAssignment.md)
-Create new navigation property to assignments for deviceManagement
+The list of assignments for the device configuration profile.
 
 ### [New-MgDeviceManagementScript](New-MgDeviceManagementScript.md)
-Create new navigation property to deviceManagementScripts for deviceManagement
+The list of device management scripts associated with the tenant.
 
 ### [New-MgDeviceManagementScriptAssignment](New-MgDeviceManagementScriptAssignment.md)
-Create new navigation property to assignments for deviceManagement
+The list of group assignments for the device management script.
 
 ### [New-MgDeviceManagementScriptDeviceRunState](New-MgDeviceManagementScriptDeviceRunState.md)
-Create new navigation property to deviceRunStates for deviceManagement
+List of run states for this script across all devices.
 
 ### [New-MgDeviceManagementScriptGroupAssignment](New-MgDeviceManagementScriptGroupAssignment.md)
-Create new navigation property to groupAssignments for deviceManagement
+The list of group assignments for the device management script.
 
 ### [New-MgDeviceManagementScriptUserRunState](New-MgDeviceManagementScriptUserRunState.md)
-Create new navigation property to userRunStates for deviceManagement
+List of run states for this script across all users.
 
 ### [New-MgDeviceManagementScriptUserRunStateDeviceRunState](New-MgDeviceManagementScriptUserRunStateDeviceRunState.md)
-Create new navigation property to deviceRunStates for deviceManagement
+List of run states for this script across all devices of specific user.
 
 ### [New-MgDeviceManagementSettingDefinition](New-MgDeviceManagementSettingDefinition.md)
-Create new navigation property to settingDefinitions for deviceManagement
+The device management intent setting definitions
 
 ### [New-MgDeviceManagementTemplate](New-MgDeviceManagementTemplate.md)
-Create new navigation property to templates for deviceManagement
+The available templates
 
 ### [New-MgDeviceManagementTemplateCategory](New-MgDeviceManagementTemplateCategory.md)
-Create new navigation property to categories for deviceManagement
+Collection of setting categories within the template
 
 ### [New-MgDeviceManagementTemplateCategoryRecommendedSetting](New-MgDeviceManagementTemplateCategoryRecommendedSetting.md)
-Create new navigation property to recommendedSettings for deviceManagement
+The settings this category contains
 
 ### [New-MgDeviceManagementTemplateMigratableTo](New-MgDeviceManagementTemplateMigratableTo.md)
-Create new navigation property to migratableTo for deviceManagement
+Collection of templates this template can migrate to
 
 ### [New-MgDeviceManagementTemplateSetting](New-MgDeviceManagementTemplateSetting.md)
-Create new navigation property to settings for deviceManagement
+Collection of all settings this template has
 
 ### [New-MgDeviceManagementTroubleshootingEvent](New-MgDeviceManagementTroubleshootingEvent.md)
-Create new navigation property to troubleshootingEvents for deviceManagement
+The list of troubleshooting events for the tenant.
 
 ### [New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance](New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance.md)
-Create new navigation property to userExperienceAnalyticsAppHealthApplicationPerformance for deviceManagement
+User experience analytics appHealth Application Performance
 
 ### [New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersion](New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersion.md)
-Create new navigation property to userExperienceAnalyticsAppHealthApplicationPerformanceByAppVersion for deviceManagement
+User experience analytics appHealth Application Performance by App Version
 
 ### [New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOSVersion](New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOSVersion.md)
-Create new navigation property to userExperienceAnalyticsAppHealthApplicationPerformanceByOSVersion for deviceManagement
+User experience analytics appHealth Application Performance by OS Version
 
 ### [New-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance](New-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance.md)
-Create new navigation property to userExperienceAnalyticsAppHealthDeviceModelPerformance for deviceManagement
+User experience analytics appHealth Model Performance
 
 ### [New-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance](New-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance.md)
-Create new navigation property to userExperienceAnalyticsAppHealthDevicePerformance for deviceManagement
+User experience analytics appHealth Device Performance
 
 ### [New-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail](New-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail.md)
-Create new navigation property to userExperienceAnalyticsAppHealthDevicePerformanceDetails for deviceManagement
+User experience analytics device performance details
 
 ### [New-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance](New-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance.md)
-Create new navigation property to userExperienceAnalyticsAppHealthOSVersionPerformance for deviceManagement
+User experience analytics appHealth OS version Performance
 
 ### [New-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue](New-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue.md)
-Create new navigation property to metricValues for deviceManagement
+The metric values for the user experience analytics category.
 
 ### [New-MgDeviceManagementUserExperienceAnalyticBaseline](New-MgDeviceManagementUserExperienceAnalyticBaseline.md)
-Create new navigation property to userExperienceAnalyticsBaselines for deviceManagement
+User experience analytics baselines
 
 ### [New-MgDeviceManagementUserExperienceAnalyticCategory](New-MgDeviceManagementUserExperienceAnalyticCategory.md)
-Create new navigation property to userExperienceAnalyticsCategories for deviceManagement
+User experience analytics categories
 
 ### [New-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue](New-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue.md)
-Create new navigation property to metricValues for deviceManagement
+The metric values for the user experience analytics category.
 
 ### [New-MgDeviceManagementUserExperienceAnalyticDeviceMetricHistory](New-MgDeviceManagementUserExperienceAnalyticDeviceMetricHistory.md)
-Create new navigation property to userExperienceAnalyticsDeviceMetricHistory for deviceManagement
+User experience analytics device metric history
 
 ### [New-MgDeviceManagementUserExperienceAnalyticDevicePerformance](New-MgDeviceManagementUserExperienceAnalyticDevicePerformance.md)
-Create new navigation property to userExperienceAnalyticsDevicePerformance for deviceManagement
+User experience analytics device performance
+
+### [New-MgDeviceManagementUserExperienceAnalyticDeviceScore](New-MgDeviceManagementUserExperienceAnalyticDeviceScore.md)
+User experience analytics device scores
 
 ### [New-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory](New-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory.md)
-Create new navigation property to userExperienceAnalyticsDeviceStartupHistory for deviceManagement
+User experience analytics device Startup History
 
 ### [New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess](New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess.md)
-Create new navigation property to userExperienceAnalyticsDeviceStartupProcesses for deviceManagement
+User experience analytics device Startup Processes
 
 ### [New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance](New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance.md)
-Create new navigation property to userExperienceAnalyticsDeviceStartupProcessPerformance for deviceManagement
+User experience analytics device Startup Process Performance
 
 ### [New-MgDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentity](New-MgDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentity.md)
-Create new navigation property to userExperienceAnalyticsDevicesWithoutCloudIdentity for deviceManagement
+User experience analytics devices without cloud identity.
 
 ### [New-MgDeviceManagementUserExperienceAnalyticImpactingProcess](New-MgDeviceManagementUserExperienceAnalyticImpactingProcess.md)
-Create new navigation property to userExperienceAnalyticsImpactingProcess for deviceManagement
+User experience analytics impacting process
 
 ### [New-MgDeviceManagementUserExperienceAnalyticMetricHistory](New-MgDeviceManagementUserExperienceAnalyticMetricHistory.md)
-Create new navigation property to userExperienceAnalyticsMetricHistory for deviceManagement
+User experience analytics metric history
 
 ### [New-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice](New-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice.md)
-Create new navigation property to userExperienceAnalyticsNotAutopilotReadyDevice for deviceManagement
+User experience analytics devices not Windows Autopilot ready.
 
 ### [New-MgDeviceManagementUserExperienceAnalyticRegressionSummaryManufacturerRegression](New-MgDeviceManagementUserExperienceAnalyticRegressionSummaryManufacturerRegression.md)
-Create new navigation property to manufacturerRegression for deviceManagement
+The metric values for the user experience analytics Manufacturer regression.
 
 ### [New-MgDeviceManagementUserExperienceAnalyticRegressionSummaryModelRegression](New-MgDeviceManagementUserExperienceAnalyticRegressionSummaryModelRegression.md)
-Create new navigation property to modelRegression for deviceManagement
+The metric values for the user experience analytics model regression.
 
 ### [New-MgDeviceManagementUserExperienceAnalyticRegressionSummaryOperatingSystemRegression](New-MgDeviceManagementUserExperienceAnalyticRegressionSummaryOperatingSystemRegression.md)
-Create new navigation property to operatingSystemRegression for deviceManagement
+The metric values for the user experience analytics operating system regression.
 
 ### [New-MgDeviceManagementUserExperienceAnalyticRemoteConnection](New-MgDeviceManagementUserExperienceAnalyticRemoteConnection.md)
-Create new navigation property to userExperienceAnalyticsRemoteConnection for deviceManagement
+User experience analytics remote connection
 
 ### [New-MgDeviceManagementUserExperienceAnalyticResourcePerformance](New-MgDeviceManagementUserExperienceAnalyticResourcePerformance.md)
-Create new navigation property to userExperienceAnalyticsResourcePerformance for deviceManagement
+User experience analytics resource performance
 
 ### [New-MgDeviceManagementUserExperienceAnalyticScoreHistory](New-MgDeviceManagementUserExperienceAnalyticScoreHistory.md)
-Create new navigation property to userExperienceAnalyticsScoreHistory for deviceManagement
+User experience analytics device Startup Score History
+
+### [New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric](New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric.md)
+User experience analytics work from anywhere metrics.
+
+### [New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice](New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice.md)
+The work from anywhere metric devices.
 
 ### [New-MgDeviceManagementWindowInformationProtectionAppLearningSummary](New-MgDeviceManagementWindowInformationProtectionAppLearningSummary.md)
-Create new navigation property to windowsInformationProtectionAppLearningSummaries for deviceManagement
+The windows information protection app learning summaries.
 
 ### [New-MgDeviceManagementWindowInformationProtectionNetworkLearningSummary](New-MgDeviceManagementWindowInformationProtectionNetworkLearningSummary.md)
-Create new navigation property to windowsInformationProtectionNetworkLearningSummaries for deviceManagement
+The windows information protection network learning summaries.
 
 ### [New-MgDeviceManagementWindowMalwareInformation](New-MgDeviceManagementWindowMalwareInformation.md)
-Create new navigation property to windowsMalwareInformation for deviceManagement
+The list of affected malware in the tenant.
 
 ### [New-MgDeviceManagementWindowMalwareInformationDeviceMalwareState](New-MgDeviceManagementWindowMalwareInformationDeviceMalwareState.md)
-Create new navigation property to deviceMalwareStates for deviceManagement
+List of devices affected by current malware with the malware state on each device
 
 ### [Remove-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummary](Remove-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummary.md)
-Delete navigation property advancedThreatProtectionOnboardingStateSummary for deviceManagement
+The summary state of ATP onboarding state for this account.
 
 ### [Remove-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummaryAdvancedThreatProtectionOnboardingDeviceSettingState](Remove-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummaryAdvancedThreatProtectionOnboardingDeviceSettingState.md)
-Delete navigation property advancedThreatProtectionOnboardingDeviceSettingStates for deviceManagement
+Not yet documented
 
 ### [Remove-MgDeviceManagementAndroidForWorkAppConfigurationSchema](Remove-MgDeviceManagementAndroidForWorkAppConfigurationSchema.md)
-Delete navigation property androidForWorkAppConfigurationSchemas for deviceManagement
+Android for Work app configuration schema entities.
 
 ### [Remove-MgDeviceManagementAndroidForWorkSetting](Remove-MgDeviceManagementAndroidForWorkSetting.md)
-Delete navigation property androidForWorkSettings for deviceManagement
+The singleton Android for Work settings entity.
 
 ### [Remove-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSetting](Remove-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSetting.md)
-Delete navigation property androidManagedStoreAccountEnterpriseSettings for deviceManagement
+The singleton Android managed store account enterprise settings entity.
 
 ### [Remove-MgDeviceManagementAndroidManagedStoreAppConfigurationSchema](Remove-MgDeviceManagementAndroidManagedStoreAppConfigurationSchema.md)
-Delete navigation property androidManagedStoreAppConfigurationSchemas for deviceManagement
+Android Enterprise app configuration schema entities.
 
 ### [Remove-MgDeviceManagementAssignmentFilter](Remove-MgDeviceManagementAssignmentFilter.md)
-Delete navigation property assignmentFilters for deviceManagement
+The list of assignment filters
 
 ### [Remove-MgDeviceManagementCategory](Remove-MgDeviceManagementCategory.md)
-Delete navigation property categories for deviceManagement
+The available categories
 
 ### [Remove-MgDeviceManagementCategorySettingDefinition](Remove-MgDeviceManagementCategorySettingDefinition.md)
-Delete navigation property settingDefinitions for deviceManagement
+The setting definitions this category contains
 
 ### [Remove-MgDeviceManagementComanagedDevice](Remove-MgDeviceManagementComanagedDevice.md)
-Delete navigation property comanagedDevices for deviceManagement
+The list of co-managed devices report
 
 ### [Remove-MgDeviceManagementComanagedDeviceAssignmentFilterEvaluationStatusDetail](Remove-MgDeviceManagementComanagedDeviceAssignmentFilterEvaluationStatusDetail.md)
-Delete navigation property assignmentFilterEvaluationStatusDetails for deviceManagement
+Managed device mobile app configuration states for this device.
 
 ### [Remove-MgDeviceManagementComanagedDeviceCategory](Remove-MgDeviceManagementComanagedDeviceCategory.md)
-Delete navigation property deviceCategory for deviceManagement
+Device category
 
 ### [Remove-MgDeviceManagementComanagedDeviceCompliancePolicyState](Remove-MgDeviceManagementComanagedDeviceCompliancePolicyState.md)
-Delete navigation property deviceCompliancePolicyStates for deviceManagement
+Device compliance policy states for this device.
 
 ### [Remove-MgDeviceManagementComanagedDeviceConfigurationState](Remove-MgDeviceManagementComanagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for deviceManagement
+Device configuration states for this device.
 
 ### [Remove-MgDeviceManagementComanagedDeviceLogCollectionRequest](Remove-MgDeviceManagementComanagedDeviceLogCollectionRequest.md)
-Delete navigation property logCollectionRequests for deviceManagement
+List of log collection requests
 
 ### [Remove-MgDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationState](Remove-MgDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationState.md)
-Delete navigation property managedDeviceMobileAppConfigurationStates for deviceManagement
+Managed device mobile app configuration states for this device.
 
 ### [Remove-MgDeviceManagementComanagedDeviceSecurityBaselineState](Remove-MgDeviceManagementComanagedDeviceSecurityBaselineState.md)
-Delete navigation property securityBaselineStates for deviceManagement
+Security baseline states for this device.
 
 ### [Remove-MgDeviceManagementComanagedDeviceSecurityBaselineStateSettingState](Remove-MgDeviceManagementComanagedDeviceSecurityBaselineStateSettingState.md)
-Delete navigation property settingStates for deviceManagement
+The security baseline state for different settings for a device
 
 ### [Remove-MgDeviceManagementComanagedDeviceUser](Remove-MgDeviceManagementComanagedDeviceUser.md)
-Delete navigation property users for deviceManagement
+The primary users associated with the managed device.
 
 ### [Remove-MgDeviceManagementComanagedDeviceWindowProtectionState](Remove-MgDeviceManagementComanagedDeviceWindowProtectionState.md)
-Delete navigation property windowsProtectionState for deviceManagement
+The device protection status.
 
 ### [Remove-MgDeviceManagementComanagedDeviceWindowProtectionStateDetectedMalwareState](Remove-MgDeviceManagementComanagedDeviceWindowProtectionStateDetectedMalwareState.md)
-Delete navigation property detectedMalwareState for deviceManagement
+Device malware list
 
 ### [Remove-MgDeviceManagementCondition](Remove-MgDeviceManagementCondition.md)
-Delete navigation property managementConditions for deviceManagement
+The management conditions associated with device management of the company.
 
 ### [Remove-MgDeviceManagementConditionStatement](Remove-MgDeviceManagementConditionStatement.md)
-Delete navigation property managementConditionStatements for deviceManagement
+The management condition statements associated with device management of the company.
 
 ### [Remove-MgDeviceManagementDataSharingConsent](Remove-MgDeviceManagementDataSharingConsent.md)
-Delete navigation property dataSharingConsents for deviceManagement
+Data sharing consents.
 
 ### [Remove-MgDeviceManagementDerivedCredentials](Remove-MgDeviceManagementDerivedCredentials.md)
-Delete navigation property derivedCredentials for deviceManagement
+Collection of Derived credential settings associated with account.
 
 ### [Remove-MgDeviceManagementDetectedApp](Remove-MgDeviceManagementDetectedApp.md)
-Delete navigation property detectedApps for deviceManagement
+The list of detected apps associated with a device.
 
 ### [Remove-MgDeviceManagementDeviceCategory](Remove-MgDeviceManagementDeviceCategory.md)
-Delete navigation property deviceCategories for deviceManagement
+The list of device categories with the tenant.
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicy](Remove-MgDeviceManagementDeviceCompliancePolicy.md)
-Delete navigation property deviceCompliancePolicies for deviceManagement
+The device compliance policies.
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicyAssignment](Remove-MgDeviceManagementDeviceCompliancePolicyAssignment.md)
-Delete navigation property assignments for deviceManagement
+The collection of assignments for this compliance policy.
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary](Remove-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary.md)
-Delete navigation property deviceSettingStateSummaries for deviceManagement
+Compliance Setting State Device Summary
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary](Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary.md)
-Delete navigation property deviceCompliancePolicyDeviceStateSummary for deviceManagement
+The device compliance state summary for this account.
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStatuses](Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStatuses.md)
-Delete navigation property deviceStatuses for deviceManagement
+List of DeviceComplianceDeviceStatus.
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview](Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview.md)
-Delete navigation property deviceStatusOverview for deviceManagement
+Device compliance devices status overview
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicyScheduledAction](Remove-MgDeviceManagementDeviceCompliancePolicyScheduledAction.md)
-Delete navigation property scheduledActionsForRule for deviceManagement
+The list of scheduled action for this rule
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](Remove-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration.md)
-Delete navigation property scheduledActionConfigurations for deviceManagement
+The list of scheduled action configurations for this compliance policy.
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicySettingStateSummary](Remove-MgDeviceManagementDeviceCompliancePolicySettingStateSummary.md)
-Delete navigation property deviceCompliancePolicySettingStateSummaries for deviceManagement
+The summary states of compliance policy settings for this account.
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState](Remove-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState.md)
-Delete navigation property deviceComplianceSettingStates for deviceManagement
+Not yet documented
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicyUserStatuses](Remove-MgDeviceManagementDeviceCompliancePolicyUserStatuses.md)
-Delete navigation property userStatuses for deviceManagement
+List of DeviceComplianceUserStatus.
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicyUserStatusOverview](Remove-MgDeviceManagementDeviceCompliancePolicyUserStatusOverview.md)
-Delete navigation property userStatusOverview for deviceManagement
+Device compliance users status overview
 
 ### [Remove-MgDeviceManagementDeviceConfiguration](Remove-MgDeviceManagementDeviceConfiguration.md)
-Delete navigation property deviceConfigurations for deviceManagement
+The device configurations.
 
 ### [Remove-MgDeviceManagementDeviceConfigurationAssignment](Remove-MgDeviceManagementDeviceConfigurationAssignment.md)
-Delete navigation property assignments for deviceManagement
+The list of assignments for the device configuration profile.
 
 ### [Remove-MgDeviceManagementDeviceConfigurationConflictSummary](Remove-MgDeviceManagementDeviceConfigurationConflictSummary.md)
-Delete navigation property deviceConfigurationConflictSummary for deviceManagement
+Summary of policies in conflict state for this account.
 
 ### [Remove-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary](Remove-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary.md)
-Delete navigation property deviceSettingStateSummaries for deviceManagement
+Device Configuration Setting State Device Summary
 
 ### [Remove-MgDeviceManagementDeviceConfigurationDeviceStateSummary](Remove-MgDeviceManagementDeviceConfigurationDeviceStateSummary.md)
-Delete navigation property deviceConfigurationDeviceStateSummaries for deviceManagement
+The device configuration device state summary for this account.
 
 ### [Remove-MgDeviceManagementDeviceConfigurationDeviceStatuses](Remove-MgDeviceManagementDeviceConfigurationDeviceStatuses.md)
-Delete navigation property deviceStatuses for deviceManagement
+Device configuration installation status by device.
 
 ### [Remove-MgDeviceManagementDeviceConfigurationDeviceStatusOverview](Remove-MgDeviceManagementDeviceConfigurationDeviceStatusOverview.md)
-Delete navigation property deviceStatusOverview for deviceManagement
+Device Configuration devices status overview
 
 ### [Remove-MgDeviceManagementDeviceConfigurationGroupAssignment](Remove-MgDeviceManagementDeviceConfigurationGroupAssignment.md)
-Delete navigation property groupAssignments for deviceManagement
+The list of group assignments for the device configuration profile.
 
 ### [Remove-MgDeviceManagementDeviceConfigurationGroupAssignmentDeviceConfigurationByRef](Remove-MgDeviceManagementDeviceConfigurationGroupAssignmentDeviceConfigurationByRef.md)
-Delete ref of navigation property deviceConfiguration for deviceManagement
+The navigation link to the Device Configuration being targeted.
 
 ### [Remove-MgDeviceManagementDeviceConfigurationUserStateSummary](Remove-MgDeviceManagementDeviceConfigurationUserStateSummary.md)
-Delete navigation property deviceConfigurationUserStateSummaries for deviceManagement
+The device configuration user state summary for this account.
 
 ### [Remove-MgDeviceManagementDeviceConfigurationUserStatuses](Remove-MgDeviceManagementDeviceConfigurationUserStatuses.md)
-Delete navigation property userStatuses for deviceManagement
+Device configuration installation status by user.
 
 ### [Remove-MgDeviceManagementDeviceConfigurationUserStatusOverview](Remove-MgDeviceManagementDeviceConfigurationUserStatusOverview.md)
-Delete navigation property userStatusOverview for deviceManagement
+Device Configuration users status overview
 
 ### [Remove-MgDeviceManagementDeviceHealthScript](Remove-MgDeviceManagementDeviceHealthScript.md)
-Delete navigation property deviceHealthScripts for deviceManagement
+The list of device health scripts associated with the tenant.
 
 ### [Remove-MgDeviceManagementDeviceHealthScriptAssignment](Remove-MgDeviceManagementDeviceHealthScriptAssignment.md)
-Delete navigation property assignments for deviceManagement
+The list of group assignments for the device health script
 
 ### [Remove-MgDeviceManagementDeviceHealthScriptDeviceRunState](Remove-MgDeviceManagementDeviceHealthScriptDeviceRunState.md)
-Delete navigation property deviceRunStates for deviceManagement
+List of run states for the device health script across all devices
 
 ### [Remove-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceByRef](Remove-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceByRef.md)
-Delete ref of navigation property managedDevice for deviceManagement
+The managed device on which the device health script executed
 
 ### [Remove-MgDeviceManagementDeviceHealthScriptRunSummary](Remove-MgDeviceManagementDeviceHealthScriptRunSummary.md)
-Delete navigation property runSummary for deviceManagement
+High level run summary for device health script.
 
 ### [Remove-MgDeviceManagementDeviceShellScript](Remove-MgDeviceManagementDeviceShellScript.md)
-Delete navigation property deviceShellScripts for deviceManagement
+The list of device shell scripts associated with the tenant.
 
 ### [Remove-MgDeviceManagementDeviceShellScriptAssignment](Remove-MgDeviceManagementDeviceShellScriptAssignment.md)
-Delete navigation property assignments for deviceManagement
+The list of group assignments for the device management script.
 
 ### [Remove-MgDeviceManagementDeviceShellScriptDeviceRunState](Remove-MgDeviceManagementDeviceShellScriptDeviceRunState.md)
-Delete navigation property deviceRunStates for deviceManagement
+List of run states for this script across all devices.
 
 ### [Remove-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceByRef](Remove-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceByRef.md)
-Delete ref of navigation property managedDevice for deviceManagement
+The managed devices that executes the device management script.
 
 ### [Remove-MgDeviceManagementDeviceShellScriptGroupAssignment](Remove-MgDeviceManagementDeviceShellScriptGroupAssignment.md)
-Delete navigation property groupAssignments for deviceManagement
+The list of group assignments for the device management script.
 
 ### [Remove-MgDeviceManagementDeviceShellScriptRunSummaryByRef](Remove-MgDeviceManagementDeviceShellScriptRunSummaryByRef.md)
-Delete ref of navigation property runSummary for deviceManagement
+Run summary for device management script.
 
 ### [Remove-MgDeviceManagementDeviceShellScriptUserRunState](Remove-MgDeviceManagementDeviceShellScriptUserRunState.md)
-Delete navigation property userRunStates for deviceManagement
+List of run states for this script across all users.
 
 ### [Remove-MgDeviceManagementDeviceShellScriptUserRunStateDeviceRunState](Remove-MgDeviceManagementDeviceShellScriptUserRunStateDeviceRunState.md)
-Delete navigation property deviceRunStates for deviceManagement
+List of run states for this script across all devices of specific user.
 
 ### [Remove-MgDeviceManagementDeviceShellScriptUserRunStateDeviceRunStateManagedDeviceByRef](Remove-MgDeviceManagementDeviceShellScriptUserRunStateDeviceRunStateManagedDeviceByRef.md)
-Delete ref of navigation property managedDevice for deviceManagement
+The managed devices that executes the device management script.
 
 ### [Remove-MgDeviceManagementEmbeddedSimActivationCodePool](Remove-MgDeviceManagementEmbeddedSimActivationCodePool.md)
-Delete navigation property embeddedSIMActivationCodePools for deviceManagement
+The embedded SIM activation code pools created by this account.
 
 ### [Remove-MgDeviceManagementEmbeddedSimActivationCodePoolAssignment](Remove-MgDeviceManagementEmbeddedSimActivationCodePoolAssignment.md)
-Delete navigation property assignments for deviceManagement
+Navigational property to a list of targets to which this pool is assigned.
 
 ### [Remove-MgDeviceManagementEmbeddedSimActivationCodePoolDeviceState](Remove-MgDeviceManagementEmbeddedSimActivationCodePoolDeviceState.md)
-Delete navigation property deviceStates for deviceManagement
+Navigational property to a list of device states for this pool.
 
 ### [Remove-MgDeviceManagementGroupPolicyConfiguration](Remove-MgDeviceManagementGroupPolicyConfiguration.md)
-Delete navigation property groupPolicyConfigurations for deviceManagement
+The group policy configurations created by this account.
 
 ### [Remove-MgDeviceManagementGroupPolicyConfigurationAssignment](Remove-MgDeviceManagementGroupPolicyConfigurationAssignment.md)
-Delete navigation property assignments for deviceManagement
+The list of group assignments for the configuration.
 
 ### [Remove-MgDeviceManagementGroupPolicyConfigurationDefinitionValue](Remove-MgDeviceManagementGroupPolicyConfigurationDefinitionValue.md)
-Delete navigation property definitionValues for deviceManagement
+The list of enabled or disabled group policy definition values for the configuration.
 
 ### [Remove-MgDeviceManagementGroupPolicyConfigurationDefinitionValueDefinitionByRef](Remove-MgDeviceManagementGroupPolicyConfigurationDefinitionValueDefinitionByRef.md)
-Delete ref of navigation property definition for deviceManagement
+The associated group policy definition with the value.
 
 ### [Remove-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue](Remove-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue.md)
-Delete navigation property presentationValues for deviceManagement
+The associated group policy presentation values with the definition value.
 
 ### [Remove-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValueDefinitionValueByRef](Remove-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValueDefinitionValueByRef.md)
-Delete ref of navigation property definitionValue for deviceManagement
+The group policy definition value associated with the presentation value.
 
 ### [Remove-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValuePresentationByRef](Remove-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValuePresentationByRef.md)
-Delete ref of navigation property presentation for deviceManagement
+The group policy presentation associated with the presentation value.
 
 ### [Remove-MgDeviceManagementIntent](Remove-MgDeviceManagementIntent.md)
-Delete navigation property intents for deviceManagement
+The device management intents
 
 ### [Remove-MgDeviceManagementIntentAssignment](Remove-MgDeviceManagementIntentAssignment.md)
-Delete navigation property assignments for deviceManagement
+Collection of assignments
 
 ### [Remove-MgDeviceManagementIntentCategory](Remove-MgDeviceManagementIntentCategory.md)
-Delete navigation property categories for deviceManagement
+Collection of setting categories within the intent
 
 ### [Remove-MgDeviceManagementIntentCategorySetting](Remove-MgDeviceManagementIntentCategorySetting.md)
-Delete navigation property settings for deviceManagement
+The settings this category contains
 
 ### [Remove-MgDeviceManagementIntentDeviceSettingStateSummary](Remove-MgDeviceManagementIntentDeviceSettingStateSummary.md)
-Delete navigation property deviceSettingStateSummaries for deviceManagement
+Collection of settings and their states and counts of devices that belong to corresponding state for all settings within the intent
 
 ### [Remove-MgDeviceManagementIntentDeviceState](Remove-MgDeviceManagementIntentDeviceState.md)
-Delete navigation property deviceStates for deviceManagement
+Collection of states of all devices that the intent is applied to
 
 ### [Remove-MgDeviceManagementIntentDeviceStateSummary](Remove-MgDeviceManagementIntentDeviceStateSummary.md)
-Delete navigation property deviceStateSummary for deviceManagement
+A summary of device states and counts of devices that belong to corresponding state for all devices that the intent is applied to
 
 ### [Remove-MgDeviceManagementIntentSetting](Remove-MgDeviceManagementIntentSetting.md)
-Delete navigation property settings for deviceManagement
+Collection of all settings to be applied
 
 ### [Remove-MgDeviceManagementIntentUserState](Remove-MgDeviceManagementIntentUserState.md)
-Delete navigation property userStates for deviceManagement
+Collection of states of all users that the intent is applied to
 
 ### [Remove-MgDeviceManagementIntentUserStateSummary](Remove-MgDeviceManagementIntentUserStateSummary.md)
-Delete navigation property userStateSummary for deviceManagement
+A summary of user states and counts of users that belong to corresponding state for all users that the intent is applied to
 
 ### [Remove-MgDeviceManagementMacOSSoftwareUpdateAccountSummary](Remove-MgDeviceManagementMacOSSoftwareUpdateAccountSummary.md)
-Delete navigation property macOSSoftwareUpdateAccountSummaries for deviceManagement
+The MacOS software update account summaries for this account.
 
 ### [Remove-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary](Remove-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary.md)
-Delete navigation property categorySummaries for deviceManagement
+Summary of the updates by category.
 
 ### [Remove-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummaryUpdateStateSummary](Remove-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummaryUpdateStateSummary.md)
-Delete navigation property updateStateSummaries for deviceManagement
+Summary of the update states.
 
 ### [Remove-MgDeviceManagementManagedDevice](Remove-MgDeviceManagementManagedDevice.md)
-Delete navigation property managedDevices for deviceManagement
+The list of managed devices.
 
 ### [Remove-MgDeviceManagementManagedDeviceAssignmentFilterEvaluationStatusDetail](Remove-MgDeviceManagementManagedDeviceAssignmentFilterEvaluationStatusDetail.md)
-Delete navigation property assignmentFilterEvaluationStatusDetails for deviceManagement
+Managed device mobile app configuration states for this device.
 
 ### [Remove-MgDeviceManagementManagedDeviceCategory](Remove-MgDeviceManagementManagedDeviceCategory.md)
-Delete navigation property deviceCategory for deviceManagement
+Device category
 
 ### [Remove-MgDeviceManagementManagedDeviceCompliancePolicyState](Remove-MgDeviceManagementManagedDeviceCompliancePolicyState.md)
-Delete navigation property deviceCompliancePolicyStates for deviceManagement
+Device compliance policy states for this device.
 
 ### [Remove-MgDeviceManagementManagedDeviceConfigurationState](Remove-MgDeviceManagementManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for deviceManagement
+Device configuration states for this device.
 
 ### [Remove-MgDeviceManagementManagedDeviceEncryptionState](Remove-MgDeviceManagementManagedDeviceEncryptionState.md)
-Delete navigation property managedDeviceEncryptionStates for deviceManagement
+Encryption report for devices in this account
 
 ### [Remove-MgDeviceManagementManagedDeviceLogCollectionRequest](Remove-MgDeviceManagementManagedDeviceLogCollectionRequest.md)
-Delete navigation property logCollectionRequests for deviceManagement
+List of log collection requests
 
 ### [Remove-MgDeviceManagementManagedDeviceMobileAppConfigurationState](Remove-MgDeviceManagementManagedDeviceMobileAppConfigurationState.md)
-Delete navigation property managedDeviceMobileAppConfigurationStates for deviceManagement
+Managed device mobile app configuration states for this device.
 
 ### [Remove-MgDeviceManagementManagedDeviceOverviewByRef](Remove-MgDeviceManagementManagedDeviceOverviewByRef.md)
-Delete ref of navigation property managedDeviceOverview for deviceManagement
+Device overview
 
 ### [Remove-MgDeviceManagementManagedDeviceSecurityBaselineState](Remove-MgDeviceManagementManagedDeviceSecurityBaselineState.md)
-Delete navigation property securityBaselineStates for deviceManagement
+Security baseline states for this device.
 
 ### [Remove-MgDeviceManagementManagedDeviceSecurityBaselineStateSettingState](Remove-MgDeviceManagementManagedDeviceSecurityBaselineStateSettingState.md)
-Delete navigation property settingStates for deviceManagement
+The security baseline state for different settings for a device
 
 ### [Remove-MgDeviceManagementManagedDeviceUser](Remove-MgDeviceManagementManagedDeviceUser.md)
-Delete navigation property users for deviceManagement
+The primary users associated with the managed device.
 
 ### [Remove-MgDeviceManagementManagedDeviceWindowProtectionState](Remove-MgDeviceManagementManagedDeviceWindowProtectionState.md)
-Delete navigation property windowsProtectionState for deviceManagement
+The device protection status.
 
 ### [Remove-MgDeviceManagementManagedDeviceWindowProtectionStateDetectedMalwareState](Remove-MgDeviceManagementManagedDeviceWindowProtectionStateDetectedMalwareState.md)
-Delete navigation property detectedMalwareState for deviceManagement
+Device malware list
 
 ### [Remove-MgDeviceManagementMicrosoftTunnelConfiguration](Remove-MgDeviceManagementMicrosoftTunnelConfiguration.md)
-Delete navigation property microsoftTunnelConfigurations for deviceManagement
+Collection of MicrosoftTunnelConfiguration settings associated with account.
 
 ### [Remove-MgDeviceManagementMicrosoftTunnelHealthThreshold](Remove-MgDeviceManagementMicrosoftTunnelHealthThreshold.md)
-Delete navigation property microsoftTunnelHealthThresholds for deviceManagement
+Collection of MicrosoftTunnelHealthThreshold settings associated with account.
 
 ### [Remove-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponse](Remove-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponse.md)
-Delete navigation property microsoftTunnelServerLogCollectionResponses for deviceManagement
+Collection of MicrosoftTunnelServerLogCollectionResponse settings associated with account.
 
 ### [Remove-MgDeviceManagementMicrosoftTunnelSite](Remove-MgDeviceManagementMicrosoftTunnelSite.md)
-Delete navigation property microsoftTunnelSites for deviceManagement
+Collection of MicrosoftTunnelSite settings associated with account.
 
 ### [Remove-MgDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelConfiguration](Remove-MgDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelConfiguration.md)
-Delete navigation property microsoftTunnelConfiguration for deviceManagement
+The MicrosoftTunnelConfiguration that has been applied to this MicrosoftTunnelSite
 
 ### [Remove-MgDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer](Remove-MgDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer.md)
-Delete navigation property microsoftTunnelServers for deviceManagement
+A list of MicrosoftTunnelServers that are registered to this MicrosoftTunnelSite
 
 ### [Remove-MgDeviceManagementMobileAppTroubleshootingEvent](Remove-MgDeviceManagementMobileAppTroubleshootingEvent.md)
-Delete navigation property mobileAppTroubleshootingEvents for deviceManagement
+The collection property of MobileAppTroubleshootingEvent.
 
 ### [Remove-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Delete navigation property appLogCollectionRequests for deviceManagement
+The collection property of AppLogUploadRequest.
 
 ### [Remove-MgDeviceManagementNotificationMessageTemplate](Remove-MgDeviceManagementNotificationMessageTemplate.md)
-Delete navigation property notificationMessageTemplates for deviceManagement
+The Notification Message Templates.
 
 ### [Remove-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage](Remove-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage.md)
-Delete navigation property localizedNotificationMessages for deviceManagement
+The list of localized messages for this Notification Message Template.
 
 ### [Remove-MgDeviceManagementRemoteActionAudit](Remove-MgDeviceManagementRemoteActionAudit.md)
-Delete navigation property remoteActionAudits for deviceManagement
+The list of device remote action audits with the tenant.
 
 ### [Remove-MgDeviceManagementResourceAccessProfile](Remove-MgDeviceManagementResourceAccessProfile.md)
-Delete navigation property resourceAccessProfiles for deviceManagement
+Collection of resource access settings associated with account.
 
 ### [Remove-MgDeviceManagementResourceAccessProfileAssignment](Remove-MgDeviceManagementResourceAccessProfileAssignment.md)
-Delete navigation property assignments for deviceManagement
+The list of assignments for the device configuration profile.
 
 ### [Remove-MgDeviceManagementScript](Remove-MgDeviceManagementScript.md)
-Delete navigation property deviceManagementScripts for deviceManagement
+The list of device management scripts associated with the tenant.
 
 ### [Remove-MgDeviceManagementScriptAssignment](Remove-MgDeviceManagementScriptAssignment.md)
-Delete navigation property assignments for deviceManagement
+The list of group assignments for the device management script.
 
 ### [Remove-MgDeviceManagementScriptDeviceRunState](Remove-MgDeviceManagementScriptDeviceRunState.md)
-Delete navigation property deviceRunStates for deviceManagement
+List of run states for this script across all devices.
 
 ### [Remove-MgDeviceManagementScriptDeviceRunStateManagedDeviceByRef](Remove-MgDeviceManagementScriptDeviceRunStateManagedDeviceByRef.md)
-Delete ref of navigation property managedDevice for deviceManagement
+The managed devices that executes the device management script.
 
 ### [Remove-MgDeviceManagementScriptGroupAssignment](Remove-MgDeviceManagementScriptGroupAssignment.md)
-Delete navigation property groupAssignments for deviceManagement
+The list of group assignments for the device management script.
 
 ### [Remove-MgDeviceManagementScriptRunSummaryByRef](Remove-MgDeviceManagementScriptRunSummaryByRef.md)
-Delete ref of navigation property runSummary for deviceManagement
+Run summary for device management script.
 
 ### [Remove-MgDeviceManagementScriptUserRunState](Remove-MgDeviceManagementScriptUserRunState.md)
-Delete navigation property userRunStates for deviceManagement
+List of run states for this script across all users.
 
 ### [Remove-MgDeviceManagementScriptUserRunStateDeviceRunState](Remove-MgDeviceManagementScriptUserRunStateDeviceRunState.md)
-Delete navigation property deviceRunStates for deviceManagement
+List of run states for this script across all devices of specific user.
 
 ### [Remove-MgDeviceManagementScriptUserRunStateDeviceRunStateManagedDeviceByRef](Remove-MgDeviceManagementScriptUserRunStateDeviceRunStateManagedDeviceByRef.md)
-Delete ref of navigation property managedDevice for deviceManagement
+The managed devices that executes the device management script.
 
 ### [Remove-MgDeviceManagementSettingDefinition](Remove-MgDeviceManagementSettingDefinition.md)
-Delete navigation property settingDefinitions for deviceManagement
+The device management intent setting definitions
 
 ### [Remove-MgDeviceManagementSoftwareUpdateStatusSummaryByRef](Remove-MgDeviceManagementSoftwareUpdateStatusSummaryByRef.md)
-Delete ref of navigation property softwareUpdateStatusSummary for deviceManagement
+The software update status summary.
 
 ### [Remove-MgDeviceManagementTemplate](Remove-MgDeviceManagementTemplate.md)
-Delete navigation property templates for deviceManagement
+The available templates
 
 ### [Remove-MgDeviceManagementTemplateCategory](Remove-MgDeviceManagementTemplateCategory.md)
-Delete navigation property categories for deviceManagement
+Collection of setting categories within the template
 
 ### [Remove-MgDeviceManagementTemplateCategoryRecommendedSetting](Remove-MgDeviceManagementTemplateCategoryRecommendedSetting.md)
-Delete navigation property recommendedSettings for deviceManagement
+The settings this category contains
 
 ### [Remove-MgDeviceManagementTemplateMigratableTo](Remove-MgDeviceManagementTemplateMigratableTo.md)
-Delete navigation property migratableTo for deviceManagement
+Collection of templates this template can migrate to
 
 ### [Remove-MgDeviceManagementTemplateSetting](Remove-MgDeviceManagementTemplateSetting.md)
-Delete navigation property settings for deviceManagement
+Collection of all settings this template has
 
 ### [Remove-MgDeviceManagementTroubleshootingEvent](Remove-MgDeviceManagementTroubleshootingEvent.md)
-Delete navigation property troubleshootingEvents for deviceManagement
+The list of troubleshooting events for the tenant.
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance](Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance.md)
-Delete navigation property userExperienceAnalyticsAppHealthApplicationPerformance for deviceManagement
+User experience analytics appHealth Application Performance
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersion](Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersion.md)
-Delete navigation property userExperienceAnalyticsAppHealthApplicationPerformanceByAppVersion for deviceManagement
+User experience analytics appHealth Application Performance by App Version
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOSVersion](Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOSVersion.md)
-Delete navigation property userExperienceAnalyticsAppHealthApplicationPerformanceByOSVersion for deviceManagement
+User experience analytics appHealth Application Performance by OS Version
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance](Remove-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance.md)
-Delete navigation property userExperienceAnalyticsAppHealthDeviceModelPerformance for deviceManagement
+User experience analytics appHealth Model Performance
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance](Remove-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance.md)
-Delete navigation property userExperienceAnalyticsAppHealthDevicePerformance for deviceManagement
+User experience analytics appHealth Device Performance
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail](Remove-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail.md)
-Delete navigation property userExperienceAnalyticsAppHealthDevicePerformanceDetails for deviceManagement
+User experience analytics device performance details
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance](Remove-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance.md)
-Delete navigation property userExperienceAnalyticsAppHealthOSVersionPerformance for deviceManagement
+User experience analytics appHealth OS version Performance
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticAppHealthOverview](Remove-MgDeviceManagementUserExperienceAnalyticAppHealthOverview.md)
-Delete navigation property userExperienceAnalyticsAppHealthOverview for deviceManagement
+User experience analytics appHealth overview
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue](Remove-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue.md)
-Delete navigation property metricValues for deviceManagement
+The metric values for the user experience analytics category.
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticBaseline](Remove-MgDeviceManagementUserExperienceAnalyticBaseline.md)
-Delete navigation property userExperienceAnalyticsBaselines for deviceManagement
+User experience analytics baselines
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticBaselineAppHealthMetricByRef](Remove-MgDeviceManagementUserExperienceAnalyticBaselineAppHealthMetricByRef.md)
-Delete ref of navigation property appHealthMetrics for deviceManagement
+The user experience analytics app health metrics.
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetricByRef](Remove-MgDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetricByRef.md)
-Delete ref of navigation property bestPracticesMetrics for deviceManagement
+The user experience analytics best practices metrics.
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticBaselineDeviceBootPerformanceMetricByRef](Remove-MgDeviceManagementUserExperienceAnalyticBaselineDeviceBootPerformanceMetricByRef.md)
-Delete ref of navigation property deviceBootPerformanceMetrics for deviceManagement
+The user experience analytics device boot performance metrics.
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticBaselineRebootAnalyticMetricByRef](Remove-MgDeviceManagementUserExperienceAnalyticBaselineRebootAnalyticMetricByRef.md)
-Delete ref of navigation property rebootAnalyticsMetrics for deviceManagement
+The user experience analytics reboot analytics metrics.
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticBaselineResourcePerformanceMetricByRef](Remove-MgDeviceManagementUserExperienceAnalyticBaselineResourcePerformanceMetricByRef.md)
-Delete ref of navigation property resourcePerformanceMetrics for deviceManagement
+The user experience analytics resource performance metrics.
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetricByRef](Remove-MgDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetricByRef.md)
-Delete ref of navigation property workFromAnywhereMetrics for deviceManagement
+The user experience analytics work from anywhere metrics.
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticCategory](Remove-MgDeviceManagementUserExperienceAnalyticCategory.md)
-Delete navigation property userExperienceAnalyticsCategories for deviceManagement
+User experience analytics categories
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue](Remove-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue.md)
-Delete navigation property metricValues for deviceManagement
+The metric values for the user experience analytics category.
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticDeviceMetricHistory](Remove-MgDeviceManagementUserExperienceAnalyticDeviceMetricHistory.md)
-Delete navigation property userExperienceAnalyticsDeviceMetricHistory for deviceManagement
+User experience analytics device metric history
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticDeviceMetricHistoryUserExperienceAnalyticMetricByRef](Remove-MgDeviceManagementUserExperienceAnalyticDeviceMetricHistoryUserExperienceAnalyticMetricByRef.md)
-Delete ref of navigation property userExperienceAnalyticsMetric for deviceManagement
+User experience analytics metric.
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticDevicePerformance](Remove-MgDeviceManagementUserExperienceAnalyticDevicePerformance.md)
-Delete navigation property userExperienceAnalyticsDevicePerformance for deviceManagement
+User experience analytics device performance
+
+### [Remove-MgDeviceManagementUserExperienceAnalyticDeviceScore](Remove-MgDeviceManagementUserExperienceAnalyticDeviceScore.md)
+User experience analytics device scores
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory](Remove-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory.md)
-Delete navigation property userExperienceAnalyticsDeviceStartupHistory for deviceManagement
+User experience analytics device Startup History
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess](Remove-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess.md)
-Delete navigation property userExperienceAnalyticsDeviceStartupProcesses for deviceManagement
+User experience analytics device Startup Processes
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance](Remove-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance.md)
-Delete navigation property userExperienceAnalyticsDeviceStartupProcessPerformance for deviceManagement
+User experience analytics device Startup Process Performance
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentity](Remove-MgDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentity.md)
-Delete navigation property userExperienceAnalyticsDevicesWithoutCloudIdentity for deviceManagement
+User experience analytics devices without cloud identity.
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticImpactingProcess](Remove-MgDeviceManagementUserExperienceAnalyticImpactingProcess.md)
-Delete navigation property userExperienceAnalyticsImpactingProcess for deviceManagement
+User experience analytics impacting process
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticMetricHistory](Remove-MgDeviceManagementUserExperienceAnalyticMetricHistory.md)
-Delete navigation property userExperienceAnalyticsMetricHistory for deviceManagement
+User experience analytics metric history
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticMetricHistoryUserExperienceAnalyticMetricByRef](Remove-MgDeviceManagementUserExperienceAnalyticMetricHistoryUserExperienceAnalyticMetricByRef.md)
-Delete ref of navigation property userExperienceAnalyticsMetric for deviceManagement
+User experience analytics metric.
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice](Remove-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice.md)
-Delete navigation property userExperienceAnalyticsNotAutopilotReadyDevice for deviceManagement
+User experience analytics devices not Windows Autopilot ready.
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticOverview](Remove-MgDeviceManagementUserExperienceAnalyticOverview.md)
-Delete navigation property userExperienceAnalyticsOverview for deviceManagement
+User experience analytics overview
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticRegressionSummary](Remove-MgDeviceManagementUserExperienceAnalyticRegressionSummary.md)
-Delete navigation property userExperienceAnalyticsRegressionSummary for deviceManagement
+User experience analytics regression summary
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticRegressionSummaryManufacturerRegression](Remove-MgDeviceManagementUserExperienceAnalyticRegressionSummaryManufacturerRegression.md)
-Delete navigation property manufacturerRegression for deviceManagement
+The metric values for the user experience analytics Manufacturer regression.
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticRegressionSummaryModelRegression](Remove-MgDeviceManagementUserExperienceAnalyticRegressionSummaryModelRegression.md)
-Delete navigation property modelRegression for deviceManagement
+The metric values for the user experience analytics model regression.
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticRegressionSummaryOperatingSystemRegression](Remove-MgDeviceManagementUserExperienceAnalyticRegressionSummaryOperatingSystemRegression.md)
-Delete navigation property operatingSystemRegression for deviceManagement
+The metric values for the user experience analytics operating system regression.
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticRemoteConnection](Remove-MgDeviceManagementUserExperienceAnalyticRemoteConnection.md)
-Delete navigation property userExperienceAnalyticsRemoteConnection for deviceManagement
+User experience analytics remote connection
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticResourcePerformance](Remove-MgDeviceManagementUserExperienceAnalyticResourcePerformance.md)
-Delete navigation property userExperienceAnalyticsResourcePerformance for deviceManagement
+User experience analytics resource performance
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticScoreHistory](Remove-MgDeviceManagementUserExperienceAnalyticScoreHistory.md)
-Delete navigation property userExperienceAnalyticsScoreHistory for deviceManagement
+User experience analytics device Startup Score History
+
+### [Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric](Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric.md)
+User experience analytics work from anywhere metrics.
+
+### [Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice](Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice.md)
+The work from anywhere metric devices.
 
 ### [Remove-MgDeviceManagementWindowInformationProtectionAppLearningSummary](Remove-MgDeviceManagementWindowInformationProtectionAppLearningSummary.md)
-Delete navigation property windowsInformationProtectionAppLearningSummaries for deviceManagement
+The windows information protection app learning summaries.
 
 ### [Remove-MgDeviceManagementWindowInformationProtectionNetworkLearningSummary](Remove-MgDeviceManagementWindowInformationProtectionNetworkLearningSummary.md)
-Delete navigation property windowsInformationProtectionNetworkLearningSummaries for deviceManagement
+The windows information protection network learning summaries.
 
 ### [Remove-MgDeviceManagementWindowMalwareInformation](Remove-MgDeviceManagementWindowMalwareInformation.md)
-Delete navigation property windowsMalwareInformation for deviceManagement
+The list of affected malware in the tenant.
 
 ### [Remove-MgDeviceManagementWindowMalwareInformationDeviceMalwareState](Remove-MgDeviceManagementWindowMalwareInformationDeviceMalwareState.md)
-Delete navigation property deviceMalwareStates for deviceManagement
+List of devices affected by current malware with the malware state on each device
 
 ### [Set-MgDeviceManagementDeviceConfigurationGroupAssignmentDeviceConfigurationByRef](Set-MgDeviceManagementDeviceConfigurationGroupAssignmentDeviceConfigurationByRef.md)
-Update the ref of navigation property deviceConfiguration in deviceManagement
+The navigation link to the Device Configuration being targeted.
 
 ### [Set-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceByRef](Set-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceByRef.md)
-Update the ref of navigation property managedDevice in deviceManagement
+The managed device on which the device health script executed
 
 ### [Set-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceByRef](Set-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceByRef.md)
-Update the ref of navigation property managedDevice in deviceManagement
+The managed devices that executes the device management script.
 
 ### [Set-MgDeviceManagementDeviceShellScriptRunSummaryByRef](Set-MgDeviceManagementDeviceShellScriptRunSummaryByRef.md)
-Update the ref of navigation property runSummary in deviceManagement
+Run summary for device management script.
 
 ### [Set-MgDeviceManagementGroupPolicyConfigurationDefinitionValueDefinitionByRef](Set-MgDeviceManagementGroupPolicyConfigurationDefinitionValueDefinitionByRef.md)
-Update the ref of navigation property definition in deviceManagement
+The associated group policy definition with the value.
 
 ### [Set-MgDeviceManagementManagedDeviceOverviewByRef](Set-MgDeviceManagementManagedDeviceOverviewByRef.md)
-Update the ref of navigation property managedDeviceOverview in deviceManagement
+Device overview
 
 ### [Set-MgDeviceManagementScriptDeviceRunStateManagedDeviceByRef](Set-MgDeviceManagementScriptDeviceRunStateManagedDeviceByRef.md)
-Update the ref of navigation property managedDevice in deviceManagement
+The managed devices that executes the device management script.
 
 ### [Set-MgDeviceManagementScriptRunSummaryByRef](Set-MgDeviceManagementScriptRunSummaryByRef.md)
-Update the ref of navigation property runSummary in deviceManagement
+Run summary for device management script.
 
 ### [Set-MgDeviceManagementSoftwareUpdateStatusSummaryByRef](Set-MgDeviceManagementSoftwareUpdateStatusSummaryByRef.md)
-Update the ref of navigation property softwareUpdateStatusSummary in deviceManagement
+The software update status summary.
 
 ### [Set-MgDeviceManagementUserExperienceAnalyticBaselineAppHealthMetricByRef](Set-MgDeviceManagementUserExperienceAnalyticBaselineAppHealthMetricByRef.md)
-Update the ref of navigation property appHealthMetrics in deviceManagement
+The user experience analytics app health metrics.
 
 ### [Set-MgDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetricByRef](Set-MgDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetricByRef.md)
-Update the ref of navigation property bestPracticesMetrics in deviceManagement
+The user experience analytics best practices metrics.
 
 ### [Set-MgDeviceManagementUserExperienceAnalyticBaselineDeviceBootPerformanceMetricByRef](Set-MgDeviceManagementUserExperienceAnalyticBaselineDeviceBootPerformanceMetricByRef.md)
-Update the ref of navigation property deviceBootPerformanceMetrics in deviceManagement
+The user experience analytics device boot performance metrics.
 
 ### [Set-MgDeviceManagementUserExperienceAnalyticBaselineRebootAnalyticMetricByRef](Set-MgDeviceManagementUserExperienceAnalyticBaselineRebootAnalyticMetricByRef.md)
-Update the ref of navigation property rebootAnalyticsMetrics in deviceManagement
+The user experience analytics reboot analytics metrics.
 
 ### [Set-MgDeviceManagementUserExperienceAnalyticBaselineResourcePerformanceMetricByRef](Set-MgDeviceManagementUserExperienceAnalyticBaselineResourcePerformanceMetricByRef.md)
-Update the ref of navigation property resourcePerformanceMetrics in deviceManagement
+The user experience analytics resource performance metrics.
 
 ### [Set-MgDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetricByRef](Set-MgDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetricByRef.md)
-Update the ref of navigation property workFromAnywhereMetrics in deviceManagement
+The user experience analytics work from anywhere metrics.
 
 ### [Set-MgDeviceManagementUserExperienceAnalyticDeviceMetricHistoryUserExperienceAnalyticMetricByRef](Set-MgDeviceManagementUserExperienceAnalyticDeviceMetricHistoryUserExperienceAnalyticMetricByRef.md)
-Update the ref of navigation property userExperienceAnalyticsMetric in deviceManagement
+User experience analytics metric.
 
 ### [Set-MgDeviceManagementUserExperienceAnalyticMetricHistoryUserExperienceAnalyticMetricByRef](Set-MgDeviceManagementUserExperienceAnalyticMetricHistoryUserExperienceAnalyticMetricByRef.md)
-Update the ref of navigation property userExperienceAnalyticsMetric in deviceManagement
+User experience analytics metric.
 
-### [Set-MgDeviceManagementUserExperienceAnalyticMetricHistoryUserExperienceAnalyticMetricByRef](Set-MgDeviceManagementUserExperienceAnalyticMetricHistoryUserExperienceAnalyticMetricByRef.md)
-Update the ref of navigation property userExperienceAnalyticsMetric in deviceManagement
+### [Update-MgDeviceManagement](Update-MgDeviceManagement.md)
+Update deviceManagement
 
 ### [Update-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummary](Update-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummary.md)
-Update the navigation property advancedThreatProtectionOnboardingStateSummary in deviceManagement
+The summary state of ATP onboarding state for this account.
 
 ### [Update-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummaryAdvancedThreatProtectionOnboardingDeviceSettingState](Update-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummaryAdvancedThreatProtectionOnboardingDeviceSettingState.md)
-Update the navigation property advancedThreatProtectionOnboardingDeviceSettingStates in deviceManagement
+Not yet documented
 
 ### [Update-MgDeviceManagementAndroidForWorkAppConfigurationSchema](Update-MgDeviceManagementAndroidForWorkAppConfigurationSchema.md)
-Update the navigation property androidForWorkAppConfigurationSchemas in deviceManagement
+Android for Work app configuration schema entities.
 
 ### [Update-MgDeviceManagementAndroidForWorkSetting](Update-MgDeviceManagementAndroidForWorkSetting.md)
-Update the navigation property androidForWorkSettings in deviceManagement
+The singleton Android for Work settings entity.
 
 ### [Update-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSetting](Update-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSetting.md)
-Update the navigation property androidManagedStoreAccountEnterpriseSettings in deviceManagement
+The singleton Android managed store account enterprise settings entity.
 
 ### [Update-MgDeviceManagementAndroidManagedStoreAppConfigurationSchema](Update-MgDeviceManagementAndroidManagedStoreAppConfigurationSchema.md)
-Update the navigation property androidManagedStoreAppConfigurationSchemas in deviceManagement
+Android Enterprise app configuration schema entities.
 
 ### [Update-MgDeviceManagementAssignmentFilter](Update-MgDeviceManagementAssignmentFilter.md)
-Update the navigation property assignmentFilters in deviceManagement
+The list of assignment filters
 
 ### [Update-MgDeviceManagementCategory](Update-MgDeviceManagementCategory.md)
-Update the navigation property categories in deviceManagement
+The available categories
 
 ### [Update-MgDeviceManagementCategorySettingDefinition](Update-MgDeviceManagementCategorySettingDefinition.md)
-Update the navigation property settingDefinitions in deviceManagement
+The setting definitions this category contains
 
 ### [Update-MgDeviceManagementComanagedDeviceAssignmentFilterEvaluationStatusDetail](Update-MgDeviceManagementComanagedDeviceAssignmentFilterEvaluationStatusDetail.md)
-Update the navigation property assignmentFilterEvaluationStatusDetails in deviceManagement
+Managed device mobile app configuration states for this device.
 
 ### [Update-MgDeviceManagementComanagedDeviceCategory](Update-MgDeviceManagementComanagedDeviceCategory.md)
-Update the navigation property deviceCategory in deviceManagement
+Device category
 
 ### [Update-MgDeviceManagementComanagedDeviceCompliancePolicyState](Update-MgDeviceManagementComanagedDeviceCompliancePolicyState.md)
-Update the navigation property deviceCompliancePolicyStates in deviceManagement
+Device compliance policy states for this device.
 
 ### [Update-MgDeviceManagementComanagedDeviceConfigurationState](Update-MgDeviceManagementComanagedDeviceConfigurationState.md)
-Update the navigation property deviceConfigurationStates in deviceManagement
+Device configuration states for this device.
 
 ### [Update-MgDeviceManagementComanagedDeviceLogCollectionRequest](Update-MgDeviceManagementComanagedDeviceLogCollectionRequest.md)
-Update the navigation property logCollectionRequests in deviceManagement
+List of log collection requests
 
 ### [Update-MgDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationState](Update-MgDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationState.md)
-Update the navigation property managedDeviceMobileAppConfigurationStates in deviceManagement
+Managed device mobile app configuration states for this device.
 
 ### [Update-MgDeviceManagementComanagedDeviceSecurityBaselineState](Update-MgDeviceManagementComanagedDeviceSecurityBaselineState.md)
-Update the navigation property securityBaselineStates in deviceManagement
+Security baseline states for this device.
 
 ### [Update-MgDeviceManagementComanagedDeviceSecurityBaselineStateSettingState](Update-MgDeviceManagementComanagedDeviceSecurityBaselineStateSettingState.md)
-Update the navigation property settingStates in deviceManagement
+The security baseline state for different settings for a device
 
 ### [Update-MgDeviceManagementComanagedDeviceUser](Update-MgDeviceManagementComanagedDeviceUser.md)
-Update the navigation property users in deviceManagement
+The primary users associated with the managed device.
 
 ### [Update-MgDeviceManagementComanagedDeviceWindowProtectionState](Update-MgDeviceManagementComanagedDeviceWindowProtectionState.md)
-Update the navigation property windowsProtectionState in deviceManagement
+The device protection status.
 
 ### [Update-MgDeviceManagementComanagedDeviceWindowProtectionStateDetectedMalwareState](Update-MgDeviceManagementComanagedDeviceWindowProtectionStateDetectedMalwareState.md)
-Update the navigation property detectedMalwareState in deviceManagement
+Device malware list
 
 ### [Update-MgDeviceManagementCondition](Update-MgDeviceManagementCondition.md)
-Update the navigation property managementConditions in deviceManagement
+The management conditions associated with device management of the company.
 
 ### [Update-MgDeviceManagementConditionStatement](Update-MgDeviceManagementConditionStatement.md)
-Update the navigation property managementConditionStatements in deviceManagement
+The management condition statements associated with device management of the company.
 
 ### [Update-MgDeviceManagementDataSharingConsent](Update-MgDeviceManagementDataSharingConsent.md)
-Update the navigation property dataSharingConsents in deviceManagement
+Data sharing consents.
 
 ### [Update-MgDeviceManagementDerivedCredentials](Update-MgDeviceManagementDerivedCredentials.md)
-Update the navigation property derivedCredentials in deviceManagement
+Collection of Derived credential settings associated with account.
 
 ### [Update-MgDeviceManagementDetectedApp](Update-MgDeviceManagementDetectedApp.md)
-Update the navigation property detectedApps in deviceManagement
+The list of detected apps associated with a device.
 
 ### [Update-MgDeviceManagementDeviceCategory](Update-MgDeviceManagementDeviceCategory.md)
-Update the navigation property deviceCategories in deviceManagement
+The list of device categories with the tenant.
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicy](Update-MgDeviceManagementDeviceCompliancePolicy.md)
-Update the navigation property deviceCompliancePolicies in deviceManagement
+The device compliance policies.
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicyAssignment](Update-MgDeviceManagementDeviceCompliancePolicyAssignment.md)
-Update the navigation property assignments in deviceManagement
+The collection of assignments for this compliance policy.
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary](Update-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary.md)
-Update the navigation property deviceSettingStateSummaries in deviceManagement
+Compliance Setting State Device Summary
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary](Update-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary.md)
-Update the navigation property deviceCompliancePolicyDeviceStateSummary in deviceManagement
+The device compliance state summary for this account.
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatuses](Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatuses.md)
-Update the navigation property deviceStatuses in deviceManagement
+List of DeviceComplianceDeviceStatus.
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview](Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview.md)
-Update the navigation property deviceStatusOverview in deviceManagement
+Device compliance devices status overview
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicyScheduledAction](Update-MgDeviceManagementDeviceCompliancePolicyScheduledAction.md)
-Update the navigation property scheduledActionsForRule in deviceManagement
+The list of scheduled action for this rule
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](Update-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration.md)
-Update the navigation property scheduledActionConfigurations in deviceManagement
+The list of scheduled action configurations for this compliance policy.
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummary](Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummary.md)
-Update the navigation property deviceCompliancePolicySettingStateSummaries in deviceManagement
+The summary states of compliance policy settings for this account.
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState](Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryDeviceComplianceSettingState.md)
-Update the navigation property deviceComplianceSettingStates in deviceManagement
+Not yet documented
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicyUserStatuses](Update-MgDeviceManagementDeviceCompliancePolicyUserStatuses.md)
-Update the navigation property userStatuses in deviceManagement
+List of DeviceComplianceUserStatus.
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicyUserStatusOverview](Update-MgDeviceManagementDeviceCompliancePolicyUserStatusOverview.md)
-Update the navigation property userStatusOverview in deviceManagement
+Device compliance users status overview
 
 ### [Update-MgDeviceManagementDeviceConfiguration](Update-MgDeviceManagementDeviceConfiguration.md)
-Update the navigation property deviceConfigurations in deviceManagement
+The device configurations.
 
 ### [Update-MgDeviceManagementDeviceConfigurationAssignment](Update-MgDeviceManagementDeviceConfigurationAssignment.md)
-Update the navigation property assignments in deviceManagement
+The list of assignments for the device configuration profile.
 
 ### [Update-MgDeviceManagementDeviceConfigurationConflictSummary](Update-MgDeviceManagementDeviceConfigurationConflictSummary.md)
-Update the navigation property deviceConfigurationConflictSummary in deviceManagement
+Summary of policies in conflict state for this account.
 
 ### [Update-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary](Update-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary.md)
-Update the navigation property deviceSettingStateSummaries in deviceManagement
+Device Configuration Setting State Device Summary
 
 ### [Update-MgDeviceManagementDeviceConfigurationDeviceStateSummary](Update-MgDeviceManagementDeviceConfigurationDeviceStateSummary.md)
-Update the navigation property deviceConfigurationDeviceStateSummaries in deviceManagement
+The device configuration device state summary for this account.
 
 ### [Update-MgDeviceManagementDeviceConfigurationDeviceStatuses](Update-MgDeviceManagementDeviceConfigurationDeviceStatuses.md)
-Update the navigation property deviceStatuses in deviceManagement
+Device configuration installation status by device.
 
 ### [Update-MgDeviceManagementDeviceConfigurationDeviceStatusOverview](Update-MgDeviceManagementDeviceConfigurationDeviceStatusOverview.md)
-Update the navigation property deviceStatusOverview in deviceManagement
+Device Configuration devices status overview
 
 ### [Update-MgDeviceManagementDeviceConfigurationGroupAssignment](Update-MgDeviceManagementDeviceConfigurationGroupAssignment.md)
-Update the navigation property groupAssignments in deviceManagement
+The list of group assignments for the device configuration profile.
 
 ### [Update-MgDeviceManagementDeviceConfigurationUserStateSummary](Update-MgDeviceManagementDeviceConfigurationUserStateSummary.md)
-Update the navigation property deviceConfigurationUserStateSummaries in deviceManagement
+The device configuration user state summary for this account.
 
 ### [Update-MgDeviceManagementDeviceConfigurationUserStatuses](Update-MgDeviceManagementDeviceConfigurationUserStatuses.md)
-Update the navigation property userStatuses in deviceManagement
+Device configuration installation status by user.
 
 ### [Update-MgDeviceManagementDeviceConfigurationUserStatusOverview](Update-MgDeviceManagementDeviceConfigurationUserStatusOverview.md)
-Update the navigation property userStatusOverview in deviceManagement
+Device Configuration users status overview
 
 ### [Update-MgDeviceManagementDeviceHealthScript](Update-MgDeviceManagementDeviceHealthScript.md)
-Update the navigation property deviceHealthScripts in deviceManagement
+The list of device health scripts associated with the tenant.
 
 ### [Update-MgDeviceManagementDeviceHealthScriptAssignment](Update-MgDeviceManagementDeviceHealthScriptAssignment.md)
-Update the navigation property assignments in deviceManagement
+The list of group assignments for the device health script
 
 ### [Update-MgDeviceManagementDeviceHealthScriptDeviceRunState](Update-MgDeviceManagementDeviceHealthScriptDeviceRunState.md)
-Update the navigation property deviceRunStates in deviceManagement
+List of run states for the device health script across all devices
 
 ### [Update-MgDeviceManagementDeviceHealthScriptRunSummary](Update-MgDeviceManagementDeviceHealthScriptRunSummary.md)
-Update the navigation property runSummary in deviceManagement
+High level run summary for device health script.
 
 ### [Update-MgDeviceManagementDeviceShellScript](Update-MgDeviceManagementDeviceShellScript.md)
-Update the navigation property deviceShellScripts in deviceManagement
+The list of device shell scripts associated with the tenant.
 
 ### [Update-MgDeviceManagementDeviceShellScriptAssignment](Update-MgDeviceManagementDeviceShellScriptAssignment.md)
-Update the navigation property assignments in deviceManagement
+The list of group assignments for the device management script.
 
 ### [Update-MgDeviceManagementDeviceShellScriptDeviceRunState](Update-MgDeviceManagementDeviceShellScriptDeviceRunState.md)
-Update the navigation property deviceRunStates in deviceManagement
+List of run states for this script across all devices.
 
 ### [Update-MgDeviceManagementDeviceShellScriptGroupAssignment](Update-MgDeviceManagementDeviceShellScriptGroupAssignment.md)
-Update the navigation property groupAssignments in deviceManagement
+The list of group assignments for the device management script.
 
 ### [Update-MgDeviceManagementDeviceShellScriptUserRunState](Update-MgDeviceManagementDeviceShellScriptUserRunState.md)
-Update the navigation property userRunStates in deviceManagement
+List of run states for this script across all users.
 
 ### [Update-MgDeviceManagementDeviceShellScriptUserRunStateDeviceRunState](Update-MgDeviceManagementDeviceShellScriptUserRunStateDeviceRunState.md)
-Update the navigation property deviceRunStates in deviceManagement
+List of run states for this script across all devices of specific user.
 
 ### [Update-MgDeviceManagementEmbeddedSimActivationCodePool](Update-MgDeviceManagementEmbeddedSimActivationCodePool.md)
-Update the navigation property embeddedSIMActivationCodePools in deviceManagement
+The embedded SIM activation code pools created by this account.
 
 ### [Update-MgDeviceManagementEmbeddedSimActivationCodePoolAssignment](Update-MgDeviceManagementEmbeddedSimActivationCodePoolAssignment.md)
-Update the navigation property assignments in deviceManagement
+Navigational property to a list of targets to which this pool is assigned.
 
 ### [Update-MgDeviceManagementEmbeddedSimActivationCodePoolDeviceState](Update-MgDeviceManagementEmbeddedSimActivationCodePoolDeviceState.md)
-Update the navigation property deviceStates in deviceManagement
+Navigational property to a list of device states for this pool.
 
 ### [Update-MgDeviceManagementGroupPolicyConfiguration](Update-MgDeviceManagementGroupPolicyConfiguration.md)
-Update the navigation property groupPolicyConfigurations in deviceManagement
+The group policy configurations created by this account.
 
 ### [Update-MgDeviceManagementGroupPolicyConfigurationAssignment](Update-MgDeviceManagementGroupPolicyConfigurationAssignment.md)
-Update the navigation property assignments in deviceManagement
+The list of group assignments for the configuration.
 
 ### [Update-MgDeviceManagementGroupPolicyConfigurationDefinitionValue](Update-MgDeviceManagementGroupPolicyConfigurationDefinitionValue.md)
-Update the navigation property definitionValues in deviceManagement
+The list of enabled or disabled group policy definition values for the configuration.
 
 ### [Update-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue](Update-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue.md)
-Update the navigation property presentationValues in deviceManagement
+The associated group policy presentation values with the definition value.
 
 ### [Update-MgDeviceManagementIntent](Update-MgDeviceManagementIntent.md)
-Update the navigation property intents in deviceManagement
+The device management intents
 
 ### [Update-MgDeviceManagementIntentAssignment](Update-MgDeviceManagementIntentAssignment.md)
-Update the navigation property assignments in deviceManagement
+Collection of assignments
 
 ### [Update-MgDeviceManagementIntentCategory](Update-MgDeviceManagementIntentCategory.md)
-Update the navigation property categories in deviceManagement
+Collection of setting categories within the intent
 
 ### [Update-MgDeviceManagementIntentCategorySetting](Update-MgDeviceManagementIntentCategorySetting.md)
-Update the navigation property settings in deviceManagement
+The settings this category contains
 
 ### [Update-MgDeviceManagementIntentDeviceSettingStateSummary](Update-MgDeviceManagementIntentDeviceSettingStateSummary.md)
-Update the navigation property deviceSettingStateSummaries in deviceManagement
+Collection of settings and their states and counts of devices that belong to corresponding state for all settings within the intent
 
 ### [Update-MgDeviceManagementIntentDeviceState](Update-MgDeviceManagementIntentDeviceState.md)
-Update the navigation property deviceStates in deviceManagement
+Collection of states of all devices that the intent is applied to
 
 ### [Update-MgDeviceManagementIntentDeviceStateSummary](Update-MgDeviceManagementIntentDeviceStateSummary.md)
-Update the navigation property deviceStateSummary in deviceManagement
+A summary of device states and counts of devices that belong to corresponding state for all devices that the intent is applied to
 
 ### [Update-MgDeviceManagementIntentSetting](Update-MgDeviceManagementIntentSetting.md)
-Update the navigation property settings in deviceManagement
+Collection of all settings to be applied
 
 ### [Update-MgDeviceManagementIntentUserState](Update-MgDeviceManagementIntentUserState.md)
-Update the navigation property userStates in deviceManagement
+Collection of states of all users that the intent is applied to
 
 ### [Update-MgDeviceManagementIntentUserStateSummary](Update-MgDeviceManagementIntentUserStateSummary.md)
-Update the navigation property userStateSummary in deviceManagement
+A summary of user states and counts of users that belong to corresponding state for all users that the intent is applied to
 
 ### [Update-MgDeviceManagementMacOSSoftwareUpdateAccountSummary](Update-MgDeviceManagementMacOSSoftwareUpdateAccountSummary.md)
-Update the navigation property macOSSoftwareUpdateAccountSummaries in deviceManagement
+The MacOS software update account summaries for this account.
 
 ### [Update-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary](Update-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary.md)
-Update the navigation property categorySummaries in deviceManagement
+Summary of the updates by category.
 
 ### [Update-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummaryUpdateStateSummary](Update-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummaryUpdateStateSummary.md)
-Update the navigation property updateStateSummaries in deviceManagement
+Summary of the update states.
 
 ### [Update-MgDeviceManagementManagedDevice](Update-MgDeviceManagementManagedDevice.md)
-Update the navigation property managedDevices in deviceManagement
+The list of managed devices.
 
 ### [Update-MgDeviceManagementManagedDeviceAssignmentFilterEvaluationStatusDetail](Update-MgDeviceManagementManagedDeviceAssignmentFilterEvaluationStatusDetail.md)
-Update the navigation property assignmentFilterEvaluationStatusDetails in deviceManagement
+Managed device mobile app configuration states for this device.
 
 ### [Update-MgDeviceManagementManagedDeviceCategory](Update-MgDeviceManagementManagedDeviceCategory.md)
-Update the navigation property deviceCategory in deviceManagement
+Device category
 
 ### [Update-MgDeviceManagementManagedDeviceCompliancePolicyState](Update-MgDeviceManagementManagedDeviceCompliancePolicyState.md)
-Update the navigation property deviceCompliancePolicyStates in deviceManagement
+Device compliance policy states for this device.
 
 ### [Update-MgDeviceManagementManagedDeviceConfigurationState](Update-MgDeviceManagementManagedDeviceConfigurationState.md)
-Update the navigation property deviceConfigurationStates in deviceManagement
+Device configuration states for this device.
 
 ### [Update-MgDeviceManagementManagedDeviceEncryptionState](Update-MgDeviceManagementManagedDeviceEncryptionState.md)
-Update the navigation property managedDeviceEncryptionStates in deviceManagement
+Encryption report for devices in this account
 
 ### [Update-MgDeviceManagementManagedDeviceLogCollectionRequest](Update-MgDeviceManagementManagedDeviceLogCollectionRequest.md)
-Update the navigation property logCollectionRequests in deviceManagement
+List of log collection requests
 
 ### [Update-MgDeviceManagementManagedDeviceMobileAppConfigurationState](Update-MgDeviceManagementManagedDeviceMobileAppConfigurationState.md)
-Update the navigation property managedDeviceMobileAppConfigurationStates in deviceManagement
+Managed device mobile app configuration states for this device.
 
 ### [Update-MgDeviceManagementManagedDeviceSecurityBaselineState](Update-MgDeviceManagementManagedDeviceSecurityBaselineState.md)
-Update the navigation property securityBaselineStates in deviceManagement
+Security baseline states for this device.
 
 ### [Update-MgDeviceManagementManagedDeviceSecurityBaselineStateSettingState](Update-MgDeviceManagementManagedDeviceSecurityBaselineStateSettingState.md)
-Update the navigation property settingStates in deviceManagement
+The security baseline state for different settings for a device
 
 ### [Update-MgDeviceManagementManagedDeviceUser](Update-MgDeviceManagementManagedDeviceUser.md)
-Update the navigation property users in deviceManagement
+The primary users associated with the managed device.
 
 ### [Update-MgDeviceManagementManagedDeviceWindowProtectionState](Update-MgDeviceManagementManagedDeviceWindowProtectionState.md)
-Update the navigation property windowsProtectionState in deviceManagement
+The device protection status.
 
 ### [Update-MgDeviceManagementManagedDeviceWindowProtectionStateDetectedMalwareState](Update-MgDeviceManagementManagedDeviceWindowProtectionStateDetectedMalwareState.md)
-Update the navigation property detectedMalwareState in deviceManagement
+Device malware list
 
 ### [Update-MgDeviceManagementMicrosoftTunnelConfiguration](Update-MgDeviceManagementMicrosoftTunnelConfiguration.md)
-Update the navigation property microsoftTunnelConfigurations in deviceManagement
+Collection of MicrosoftTunnelConfiguration settings associated with account.
 
 ### [Update-MgDeviceManagementMicrosoftTunnelHealthThreshold](Update-MgDeviceManagementMicrosoftTunnelHealthThreshold.md)
-Update the navigation property microsoftTunnelHealthThresholds in deviceManagement
+Collection of MicrosoftTunnelHealthThreshold settings associated with account.
 
 ### [Update-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponse](Update-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponse.md)
-Update the navigation property microsoftTunnelServerLogCollectionResponses in deviceManagement
+Collection of MicrosoftTunnelServerLogCollectionResponse settings associated with account.
 
 ### [Update-MgDeviceManagementMicrosoftTunnelSite](Update-MgDeviceManagementMicrosoftTunnelSite.md)
-Update the navigation property microsoftTunnelSites in deviceManagement
+Collection of MicrosoftTunnelSite settings associated with account.
 
 ### [Update-MgDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelConfiguration](Update-MgDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelConfiguration.md)
-Update the navigation property microsoftTunnelConfiguration in deviceManagement
+The MicrosoftTunnelConfiguration that has been applied to this MicrosoftTunnelSite
 
 ### [Update-MgDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer](Update-MgDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer.md)
-Update the navigation property microsoftTunnelServers in deviceManagement
+A list of MicrosoftTunnelServers that are registered to this MicrosoftTunnelSite
 
 ### [Update-MgDeviceManagementMobileAppTroubleshootingEvent](Update-MgDeviceManagementMobileAppTroubleshootingEvent.md)
-Update the navigation property mobileAppTroubleshootingEvents in deviceManagement
+The collection property of MobileAppTroubleshootingEvent.
 
 ### [Update-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](Update-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Update the navigation property appLogCollectionRequests in deviceManagement
+The collection property of AppLogUploadRequest.
 
 ### [Update-MgDeviceManagementNotificationMessageTemplate](Update-MgDeviceManagementNotificationMessageTemplate.md)
-Update the navigation property notificationMessageTemplates in deviceManagement
+The Notification Message Templates.
 
 ### [Update-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage](Update-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage.md)
-Update the navigation property localizedNotificationMessages in deviceManagement
+The list of localized messages for this Notification Message Template.
 
 ### [Update-MgDeviceManagementRemoteActionAudit](Update-MgDeviceManagementRemoteActionAudit.md)
-Update the navigation property remoteActionAudits in deviceManagement
+The list of device remote action audits with the tenant.
 
 ### [Update-MgDeviceManagementResourceAccessProfile](Update-MgDeviceManagementResourceAccessProfile.md)
-Update the navigation property resourceAccessProfiles in deviceManagement
+Collection of resource access settings associated with account.
 
 ### [Update-MgDeviceManagementResourceAccessProfileAssignment](Update-MgDeviceManagementResourceAccessProfileAssignment.md)
-Update the navigation property assignments in deviceManagement
+The list of assignments for the device configuration profile.
 
 ### [Update-MgDeviceManagementScript](Update-MgDeviceManagementScript.md)
-Update the navigation property deviceManagementScripts in deviceManagement
+The list of device management scripts associated with the tenant.
 
 ### [Update-MgDeviceManagementScriptAssignment](Update-MgDeviceManagementScriptAssignment.md)
-Update the navigation property assignments in deviceManagement
+The list of group assignments for the device management script.
 
 ### [Update-MgDeviceManagementScriptDeviceRunState](Update-MgDeviceManagementScriptDeviceRunState.md)
-Update the navigation property deviceRunStates in deviceManagement
+List of run states for this script across all devices.
 
 ### [Update-MgDeviceManagementScriptGroupAssignment](Update-MgDeviceManagementScriptGroupAssignment.md)
-Update the navigation property groupAssignments in deviceManagement
+The list of group assignments for the device management script.
 
 ### [Update-MgDeviceManagementScriptUserRunState](Update-MgDeviceManagementScriptUserRunState.md)
-Update the navigation property userRunStates in deviceManagement
+List of run states for this script across all users.
 
 ### [Update-MgDeviceManagementScriptUserRunStateDeviceRunState](Update-MgDeviceManagementScriptUserRunStateDeviceRunState.md)
-Update the navigation property deviceRunStates in deviceManagement
+List of run states for this script across all devices of specific user.
 
 ### [Update-MgDeviceManagementSettingDefinition](Update-MgDeviceManagementSettingDefinition.md)
-Update the navigation property settingDefinitions in deviceManagement
+The device management intent setting definitions
 
 ### [Update-MgDeviceManagementTemplate](Update-MgDeviceManagementTemplate.md)
-Update the navigation property templates in deviceManagement
+The available templates
 
 ### [Update-MgDeviceManagementTemplateCategory](Update-MgDeviceManagementTemplateCategory.md)
-Update the navigation property categories in deviceManagement
+Collection of setting categories within the template
 
 ### [Update-MgDeviceManagementTemplateCategoryRecommendedSetting](Update-MgDeviceManagementTemplateCategoryRecommendedSetting.md)
-Update the navigation property recommendedSettings in deviceManagement
+The settings this category contains
 
 ### [Update-MgDeviceManagementTemplateMigratableTo](Update-MgDeviceManagementTemplateMigratableTo.md)
-Update the navigation property migratableTo in deviceManagement
+Collection of templates this template can migrate to
 
 ### [Update-MgDeviceManagementTemplateSetting](Update-MgDeviceManagementTemplateSetting.md)
-Update the navigation property settings in deviceManagement
+Collection of all settings this template has
 
 ### [Update-MgDeviceManagementTroubleshootingEvent](Update-MgDeviceManagementTroubleshootingEvent.md)
-Update the navigation property troubleshootingEvents in deviceManagement
+The list of troubleshooting events for the tenant.
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance](Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance.md)
-Update the navigation property userExperienceAnalyticsAppHealthApplicationPerformance in deviceManagement
+User experience analytics appHealth Application Performance
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersion](Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersion.md)
-Update the navigation property userExperienceAnalyticsAppHealthApplicationPerformanceByAppVersion in deviceManagement
+User experience analytics appHealth Application Performance by App Version
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOSVersion](Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOSVersion.md)
-Update the navigation property userExperienceAnalyticsAppHealthApplicationPerformanceByOSVersion in deviceManagement
+User experience analytics appHealth Application Performance by OS Version
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance](Update-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance.md)
-Update the navigation property userExperienceAnalyticsAppHealthDeviceModelPerformance in deviceManagement
+User experience analytics appHealth Model Performance
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance](Update-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance.md)
-Update the navigation property userExperienceAnalyticsAppHealthDevicePerformance in deviceManagement
+User experience analytics appHealth Device Performance
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail](Update-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail.md)
-Update the navigation property userExperienceAnalyticsAppHealthDevicePerformanceDetails in deviceManagement
+User experience analytics device performance details
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance](Update-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance.md)
-Update the navigation property userExperienceAnalyticsAppHealthOSVersionPerformance in deviceManagement
+User experience analytics appHealth OS version Performance
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticAppHealthOverview](Update-MgDeviceManagementUserExperienceAnalyticAppHealthOverview.md)
-Update the navigation property userExperienceAnalyticsAppHealthOverview in deviceManagement
+User experience analytics appHealth overview
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue](Update-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue.md)
-Update the navigation property metricValues in deviceManagement
+The metric values for the user experience analytics category.
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticBaseline](Update-MgDeviceManagementUserExperienceAnalyticBaseline.md)
-Update the navigation property userExperienceAnalyticsBaselines in deviceManagement
+User experience analytics baselines
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticCategory](Update-MgDeviceManagementUserExperienceAnalyticCategory.md)
-Update the navigation property userExperienceAnalyticsCategories in deviceManagement
+User experience analytics categories
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue](Update-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue.md)
-Update the navigation property metricValues in deviceManagement
+The metric values for the user experience analytics category.
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticDeviceMetricHistory](Update-MgDeviceManagementUserExperienceAnalyticDeviceMetricHistory.md)
-Update the navigation property userExperienceAnalyticsDeviceMetricHistory in deviceManagement
+User experience analytics device metric history
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticDevicePerformance](Update-MgDeviceManagementUserExperienceAnalyticDevicePerformance.md)
-Update the navigation property userExperienceAnalyticsDevicePerformance in deviceManagement
+User experience analytics device performance
+
+### [Update-MgDeviceManagementUserExperienceAnalyticDeviceScore](Update-MgDeviceManagementUserExperienceAnalyticDeviceScore.md)
+User experience analytics device scores
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory](Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory.md)
-Update the navigation property userExperienceAnalyticsDeviceStartupHistory in deviceManagement
+User experience analytics device Startup History
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess](Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess.md)
-Update the navigation property userExperienceAnalyticsDeviceStartupProcesses in deviceManagement
+User experience analytics device Startup Processes
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance](Update-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance.md)
-Update the navigation property userExperienceAnalyticsDeviceStartupProcessPerformance in deviceManagement
+User experience analytics device Startup Process Performance
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentity](Update-MgDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentity.md)
-Update the navigation property userExperienceAnalyticsDevicesWithoutCloudIdentity in deviceManagement
+User experience analytics devices without cloud identity.
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticImpactingProcess](Update-MgDeviceManagementUserExperienceAnalyticImpactingProcess.md)
-Update the navigation property userExperienceAnalyticsImpactingProcess in deviceManagement
+User experience analytics impacting process
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticMetricHistory](Update-MgDeviceManagementUserExperienceAnalyticMetricHistory.md)
-Update the navigation property userExperienceAnalyticsMetricHistory in deviceManagement
+User experience analytics metric history
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice](Update-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice.md)
-Update the navigation property userExperienceAnalyticsNotAutopilotReadyDevice in deviceManagement
+User experience analytics devices not Windows Autopilot ready.
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticOverview](Update-MgDeviceManagementUserExperienceAnalyticOverview.md)
-Update the navigation property userExperienceAnalyticsOverview in deviceManagement
+User experience analytics overview
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticRegressionSummary](Update-MgDeviceManagementUserExperienceAnalyticRegressionSummary.md)
-Update the navigation property userExperienceAnalyticsRegressionSummary in deviceManagement
+User experience analytics regression summary
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticRegressionSummaryManufacturerRegression](Update-MgDeviceManagementUserExperienceAnalyticRegressionSummaryManufacturerRegression.md)
-Update the navigation property manufacturerRegression in deviceManagement
+The metric values for the user experience analytics Manufacturer regression.
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticRegressionSummaryModelRegression](Update-MgDeviceManagementUserExperienceAnalyticRegressionSummaryModelRegression.md)
-Update the navigation property modelRegression in deviceManagement
+The metric values for the user experience analytics model regression.
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticRegressionSummaryOperatingSystemRegression](Update-MgDeviceManagementUserExperienceAnalyticRegressionSummaryOperatingSystemRegression.md)
-Update the navigation property operatingSystemRegression in deviceManagement
+The metric values for the user experience analytics operating system regression.
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticRemoteConnection](Update-MgDeviceManagementUserExperienceAnalyticRemoteConnection.md)
-Update the navigation property userExperienceAnalyticsRemoteConnection in deviceManagement
+User experience analytics remote connection
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticResourcePerformance](Update-MgDeviceManagementUserExperienceAnalyticResourcePerformance.md)
-Update the navigation property userExperienceAnalyticsResourcePerformance in deviceManagement
+User experience analytics resource performance
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticScoreHistory](Update-MgDeviceManagementUserExperienceAnalyticScoreHistory.md)
-Update the navigation property userExperienceAnalyticsScoreHistory in deviceManagement
+User experience analytics device Startup Score History
+
+### [Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric](Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric.md)
+User experience analytics work from anywhere metrics.
+
+### [Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice](Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice.md)
+The work from anywhere metric devices.
 
 ### [Update-MgDeviceManagementWindowInformationProtectionAppLearningSummary](Update-MgDeviceManagementWindowInformationProtectionAppLearningSummary.md)
-Update the navigation property windowsInformationProtectionAppLearningSummaries in deviceManagement
+The windows information protection app learning summaries.
 
 ### [Update-MgDeviceManagementWindowInformationProtectionNetworkLearningSummary](Update-MgDeviceManagementWindowInformationProtectionNetworkLearningSummary.md)
-Update the navigation property windowsInformationProtectionNetworkLearningSummaries in deviceManagement
+The windows information protection network learning summaries.
 
 ### [Update-MgDeviceManagementWindowMalwareInformation](Update-MgDeviceManagementWindowMalwareInformation.md)
-Update the navigation property windowsMalwareInformation in deviceManagement
+The list of affected malware in the tenant.
 
 ### [Update-MgDeviceManagementWindowMalwareInformationDeviceMalwareState](Update-MgDeviceManagementWindowMalwareInformationDeviceMalwareState.md)
-Update the navigation property deviceMalwareStates in deviceManagement
+List of devices affected by current malware with the malware state on each device
 

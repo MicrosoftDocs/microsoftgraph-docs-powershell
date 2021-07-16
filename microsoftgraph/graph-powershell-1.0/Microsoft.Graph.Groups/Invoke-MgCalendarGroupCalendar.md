@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/invoke-mgcalendargroupcalendar
 schema: 2.0.0
@@ -33,7 +33,7 @@ Invoke function allowedCalendarSharingRoles
 key: id of group
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Calendar1
 Aliases:
 
@@ -49,7 +49,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
+Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
 Parameter Sets: CalendarViaIdentity1
 Aliases:
 
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 Usage: User={User}
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Calendar1
 Aliases:
 
@@ -119,3 +119,4 @@ INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

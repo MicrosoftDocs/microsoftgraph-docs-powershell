@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Compliance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Compliance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/add-mgcomplianceediscoverycasereviewsettoreviewset
 schema: 2.0.0
@@ -16,7 +16,7 @@ Invoke action addToReviewSet
 ```
 Add-MgComplianceEdiscoveryCaseReviewSetToReviewSet -CaseId <String> -ReviewSetId <String>
  [-AdditionalData <String>] [-AdditionalProperties <Hashtable>]
- [-SourceCollection <IMicrosoftGraphEdiscoverySourceCollection>] [-PassThru] [-WhatIf] [-Confirm]
+ [-SourceCollection <IMicrosoftGraphEdiscoverySourceCollection>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -24,22 +24,22 @@ Add-MgComplianceEdiscoveryCaseReviewSetToReviewSet -CaseId <String> -ReviewSetId
 ```
 Add-MgComplianceEdiscoveryCaseReviewSetToReviewSet -CaseId <String> -ReviewSetId <String>
  -BodyParameter <IPaths1N6Pr05ComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdMicrosoftGraphEdiscoveryAddtoreviewsetPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### AddViaIdentityExpanded
-```
-Add-MgComplianceEdiscoveryCaseReviewSetToReviewSet -InputObject <IComplianceIdentity>
- [-AdditionalData <String>] [-AdditionalProperties <Hashtable>]
- [-SourceCollection <IMicrosoftGraphEdiscoverySourceCollection>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### AddViaIdentity
 ```
 Add-MgComplianceEdiscoveryCaseReviewSetToReviewSet -InputObject <IComplianceIdentity>
  -BodyParameter <IPaths1N6Pr05ComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdMicrosoftGraphEdiscoveryAddtoreviewsetPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### AddViaIdentityExpanded
+```
+Add-MgComplianceEdiscoveryCaseReviewSetToReviewSet -InputObject <IComplianceIdentity>
+ [-AdditionalData <String>] [-AdditionalProperties <Hashtable>]
+ [-SourceCollection <IMicrosoftGraphEdiscoverySourceCollection>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,7 +53,7 @@ Invoke action addToReviewSet
 additionalDataOptions
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: AddExpanded, AddViaIdentityExpanded
 Aliases:
 
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: AddExpanded, AddViaIdentityExpanded
 Aliases:
 
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1N6Pr05ComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdMicrosoftGraphEdiscoveryAddtoreviewsetPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths1N6Pr05ComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdMicrosoftGraphEdiscoveryAddtoreviewsetPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Add, AddViaIdentity
 Aliases:
 
@@ -99,8 +99,8 @@ Accept wildcard characters: False
 key: id of case
 
 ```yaml
-Type: String
-Parameter Sets: AddExpanded, Add
+Type: System.String
+Parameter Sets: Add, AddExpanded
 Aliases:
 
 Required: True
@@ -115,8 +115,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IComplianceIdentity
-Parameter Sets: AddViaIdentityExpanded, AddViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IComplianceIdentity
+Parameter Sets: AddViaIdentity, AddViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -145,8 +145,8 @@ Accept wildcard characters: False
 key: id of reviewSet
 
 ```yaml
-Type: String
-Parameter Sets: AddExpanded, Add
+Type: System.String
+Parameter Sets: Add, AddExpanded
 Aliases:
 
 Required: True
@@ -161,7 +161,7 @@ sourceCollection
 To construct, see NOTES section for SOURCECOLLECTION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEdiscoverySourceCollection
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoverySourceCollection
 Parameter Sets: AddExpanded, AddViaIdentityExpanded
 Aliases:
 
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -192,7 +192,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -298,7 +298,25 @@ BODYPARAMETER <IPaths1N6Pr05ComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetId
       - `[UnindexedItemsSize <Int64?>]`: The estimated size of unindexed items for the collection.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: The last date and time the sourceCollection was modified.
-    - `[NoncustodialSources <IMicrosoftGraphEdiscoveryDataSource[]>]`: 
+    - `[NoncustodialSources <IMicrosoftGraphEdiscoveryNoncustodialDataSource[]>]`: noncustodialDataSource sources that are included in the sourceCollection
+      - `[CreatedDateTime <DateTime?>]`: Created date and time of the dataSourceContainer entity.
+      - `[DisplayName <String>]`: Display name of the dataSourceContainer entity.
+      - `[LastIndexOperation <IMicrosoftGraphEdiscoveryCaseIndexOperation>]`: caseIndexOperation
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Action <String>]`: caseAction
+        - `[CompletedDateTime <DateTime?>]`: The date and time the operation was completed.
+        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+        - `[CreatedDateTime <DateTime?>]`: The date and time the operation was created.
+        - `[PercentProgress <Int32?>]`: The progress of the operation.
+        - `[ResultInfo <IMicrosoftGraphResultInfo>]`: resultInfo
+        - `[Status <String>]`: caseOperationStatus
+        - `[Id <String>]`: Read-only.
+      - `[LastModifiedDateTime <DateTime?>]`: Last modified date and time of the dataSourceContainer.
+      - `[ReleasedDateTime <DateTime?>]`: Date and time that the dataSourceContainer was released from the case.
+      - `[Status <String>]`: dataSourceContainerStatus
+      - `[Id <String>]`: Read-only.
+      - `[ApplyHoldToSource <Boolean?>]`: Indicates if hold is applied to non-custodial data source (such as mailbox or site).
+      - `[DataSource <IMicrosoftGraphEdiscoveryDataSource>]`: dataSource
 
 INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   - `[CaseId <String>]`: key: id of case
@@ -385,8 +403,25 @@ SOURCECOLLECTION <IMicrosoftGraphEdiscoverySourceCollection>: sourceCollection
     - `[UnindexedItemsSize <Int64?>]`: The estimated size of unindexed items for the collection.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[LastModifiedDateTime <DateTime?>]`: The last date and time the sourceCollection was modified.
-  - `[NoncustodialSources <IMicrosoftGraphEdiscoveryDataSource[]>]`: 
+  - `[NoncustodialSources <IMicrosoftGraphEdiscoveryNoncustodialDataSource[]>]`: noncustodialDataSource sources that are included in the sourceCollection
+    - `[CreatedDateTime <DateTime?>]`: Created date and time of the dataSourceContainer entity.
+    - `[DisplayName <String>]`: Display name of the dataSourceContainer entity.
+    - `[LastIndexOperation <IMicrosoftGraphEdiscoveryCaseIndexOperation>]`: caseIndexOperation
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Action <String>]`: caseAction
+      - `[CompletedDateTime <DateTime?>]`: The date and time the operation was completed.
+      - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[CreatedDateTime <DateTime?>]`: The date and time the operation was created.
+      - `[PercentProgress <Int32?>]`: The progress of the operation.
+      - `[ResultInfo <IMicrosoftGraphResultInfo>]`: resultInfo
+      - `[Status <String>]`: caseOperationStatus
+      - `[Id <String>]`: Read-only.
+    - `[LastModifiedDateTime <DateTime?>]`: Last modified date and time of the dataSourceContainer.
+    - `[ReleasedDateTime <DateTime?>]`: Date and time that the dataSourceContainer was released from the case.
+    - `[Status <String>]`: dataSourceContainerStatus
+    - `[Id <String>]`: Read-only.
+    - `[ApplyHoldToSource <Boolean?>]`: Indicates if hold is applied to non-custodial data source (such as mailbox or site).
+    - `[DataSource <IMicrosoftGraphEdiscoveryDataSource>]`: dataSource
 
 ## RELATED LINKS
 
-## RELATED LINKS

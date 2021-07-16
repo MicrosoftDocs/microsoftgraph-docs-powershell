@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgusermanageddevice
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserManagedDevice
 
 ## SYNOPSIS
-Update the navigation property managedDevices in users
+The managed devices associated with the user.
 
 ## SYNTAX
 
@@ -25,29 +25,37 @@ Update-MgUserManagedDevice -ManagedDeviceId <String> -UserId <String> [-Activati
  [-DeviceHealthAttestationState <IMicrosoftGraphDeviceHealthAttestationState>] [-DeviceName <String>]
  [-DeviceRegistrationState <String>] [-EasActivated] [-EasActivationDateTime <DateTime>]
  [-EasDeviceId <String>] [-EmailAddress <String>] [-EnrolledDateTime <DateTime>]
- [-ExchangeAccessState <String>] [-ExchangeAccessStateReason <String>]
- [-ExchangeLastSuccessfulSyncDateTime <DateTime>] [-FreeStorageSpaceInBytes <Int64>] [-Id <String>]
- [-Imei <String>] [-IsEncrypted] [-IsSupervised] [-JailBroken <String>] [-LastSyncDateTime <DateTime>]
- [-ManagedDeviceName <String>] [-ManagedDeviceOwnerType <String>] [-ManagementAgent <String>]
- [-Manufacturer <String>] [-Meid <String>] [-Model <String>] [-OSVersion <String>] [-OperatingSystem <String>]
- [-PartnerReportedThreatState <String>] [-PhoneNumber <String>] [-RemoteAssistanceSessionErrorDetails <String>]
+ [-EthernetMacAddress <String>] [-ExchangeAccessState <String>] [-ExchangeAccessStateReason <String>]
+ [-ExchangeLastSuccessfulSyncDateTime <DateTime>] [-FreeStorageSpaceInBytes <Int64>] [-Iccid <String>]
+ [-Id <String>] [-Imei <String>] [-IsEncrypted] [-IsSupervised] [-JailBroken <String>]
+ [-LastSyncDateTime <DateTime>] [-ManagedDeviceName <String>] [-ManagedDeviceOwnerType <String>]
+ [-ManagementAgent <String>] [-Manufacturer <String>] [-Meid <String>] [-Model <String>] [-Notes <String>]
+ [-OperatingSystem <String>] [-OSVersion <String>] [-PartnerReportedThreatState <String>]
+ [-PhoneNumber <String>] [-PhysicalMemoryInBytes <Int64>] [-RemoteAssistanceSessionErrorDetails <String>]
  [-RemoteAssistanceSessionUrl <String>] [-SerialNumber <String>] [-SubscriberCarrier <String>]
- [-TotalStorageSpaceInBytes <Int64>] [-UserDisplayName <String>] [-UserId1 <String>]
- [-UserPrincipalName <String>] [-WiFiMacAddress <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TotalStorageSpaceInBytes <Int64>] [-Udid <String>] [-UserDisplayName <String>] [-UserId1 <String>]
+ [-UserPrincipalName <String>] [-WiFiMacAddress <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgUserManagedDevice -ManagedDeviceId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphManagedDevice1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedDevice1> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity1
+```
+Update-MgUserManagedDevice -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <IMicrosoftGraphManagedDevice1> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
 ```
-Update-MgUserManagedDevice [-UserId <String>] -InputObject <IDevicesCorporateManagementIdentity>
- [-ActivationLockBypassCode <String>] [-AdditionalProperties <Hashtable>] [-AndroidSecurityPatchLevel <String>]
- [-AzureAdDeviceId <String>] [-AzureAdRegistered] [-ComplianceGracePeriodExpirationDateTime <DateTime>]
- [-ComplianceState <String>]
+Update-MgUserManagedDevice -InputObject <IDevicesCorporateManagementIdentity> [-UserId <String>]
+ [-ActivationLockBypassCode <String>] [-AdditionalProperties <Hashtable>]
+ [-AndroidSecurityPatchLevel <String>] [-AzureAdDeviceId <String>] [-AzureAdRegistered]
+ [-ComplianceGracePeriodExpirationDateTime <DateTime>] [-ComplianceState <String>]
  [-ConfigurationManagerClientEnabledFeatures <IMicrosoftGraphConfigurationManagerClientEnabledFeatures1>]
  [-DeviceActionResults <IMicrosoftGraphDeviceActionResult[]>]
  [-DeviceCategory <IMicrosoftGraphDeviceCategory2>] [-DeviceCategoryDisplayName <String>]
@@ -56,25 +64,21 @@ Update-MgUserManagedDevice [-UserId <String>] -InputObject <IDevicesCorporateMan
  [-DeviceHealthAttestationState <IMicrosoftGraphDeviceHealthAttestationState>] [-DeviceName <String>]
  [-DeviceRegistrationState <String>] [-EasActivated] [-EasActivationDateTime <DateTime>]
  [-EasDeviceId <String>] [-EmailAddress <String>] [-EnrolledDateTime <DateTime>]
- [-ExchangeAccessState <String>] [-ExchangeAccessStateReason <String>]
- [-ExchangeLastSuccessfulSyncDateTime <DateTime>] [-FreeStorageSpaceInBytes <Int64>] [-Id <String>]
- [-Imei <String>] [-IsEncrypted] [-IsSupervised] [-JailBroken <String>] [-LastSyncDateTime <DateTime>]
- [-ManagedDeviceName <String>] [-ManagedDeviceOwnerType <String>] [-ManagementAgent <String>]
- [-Manufacturer <String>] [-Meid <String>] [-Model <String>] [-OSVersion <String>] [-OperatingSystem <String>]
- [-PartnerReportedThreatState <String>] [-PhoneNumber <String>] [-RemoteAssistanceSessionErrorDetails <String>]
+ [-EthernetMacAddress <String>] [-ExchangeAccessState <String>] [-ExchangeAccessStateReason <String>]
+ [-ExchangeLastSuccessfulSyncDateTime <DateTime>] [-FreeStorageSpaceInBytes <Int64>] [-Iccid <String>]
+ [-Id <String>] [-Imei <String>] [-IsEncrypted] [-IsSupervised] [-JailBroken <String>]
+ [-LastSyncDateTime <DateTime>] [-ManagedDeviceName <String>] [-ManagedDeviceOwnerType <String>]
+ [-ManagementAgent <String>] [-Manufacturer <String>] [-Meid <String>] [-Model <String>] [-Notes <String>]
+ [-OperatingSystem <String>] [-OSVersion <String>] [-PartnerReportedThreatState <String>]
+ [-PhoneNumber <String>] [-PhysicalMemoryInBytes <Int64>] [-RemoteAssistanceSessionErrorDetails <String>]
  [-RemoteAssistanceSessionUrl <String>] [-SerialNumber <String>] [-SubscriberCarrier <String>]
- [-TotalStorageSpaceInBytes <Int64>] [-UserDisplayName <String>] [-UserPrincipalName <String>]
- [-WiFiMacAddress <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity1
-```
-Update-MgUserManagedDevice -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphManagedDevice1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TotalStorageSpaceInBytes <Int64>] [-Udid <String>] [-UserDisplayName <String>]
+ [-UserPrincipalName <String>] [-WiFiMacAddress <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property managedDevices in users
+The managed devices associated with the user.
 
 ## EXAMPLES
 
@@ -85,7 +89,7 @@ Code that allows the Activation Lock on a device to be bypassed.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -100,7 +104,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -116,7 +120,7 @@ Android security patch level.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -133,7 +137,7 @@ Read only.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -149,7 +153,7 @@ Whether the device is Azure Active Directory registered.
 This property is read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -165,7 +169,7 @@ Devices that are managed or pre-enrolled through Intune
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedDevice1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDevice1
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -181,7 +185,7 @@ The DateTime when device compliance grace period expires.
 This property is read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -196,7 +200,7 @@ Accept wildcard characters: False
 complianceState
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -212,7 +216,7 @@ configuration Manager client enabled features
 To construct, see NOTES section for CONFIGURATIONMANAGERCLIENTENABLEDFEATURES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConfigurationManagerClientEnabledFeatures1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConfigurationManagerClientEnabledFeatures1
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -229,7 +233,7 @@ This property is read-only.
 To construct, see NOTES section for DEVICEACTIONRESULTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceActionResult[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceActionResult[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -248,7 +252,7 @@ You can filter reports and create dynamic Azure Active Directory device groups b
 To construct, see NOTES section for DEVICECATEGORY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceCategory2
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCategory2
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -264,7 +268,7 @@ Device category display name.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -280,7 +284,7 @@ Device compliance policy states for this device.
 To construct, see NOTES section for DEVICECOMPLIANCEPOLICYSTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceCompliancePolicyState1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicyState1[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -296,7 +300,7 @@ Device configuration states for this device.
 To construct, see NOTES section for DEVICECONFIGURATIONSTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceConfigurationState1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationState1[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -311,7 +315,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -327,7 +331,7 @@ deviceHealthAttestationState
 To construct, see NOTES section for DEVICEHEALTHATTESTATIONSTATE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceHealthAttestationState
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceHealthAttestationState
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -343,7 +347,7 @@ Name of the device.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -358,7 +362,7 @@ Accept wildcard characters: False
 deviceRegistrationState
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -374,7 +378,7 @@ Whether the device is Exchange ActiveSync activated.
 This property is read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -390,7 +394,7 @@ Exchange ActivationSync activation time of the device.
 This property is read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -406,7 +410,7 @@ Exchange ActiveSync Id of the device.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -422,7 +426,7 @@ Email(s) for the user associated with the device.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -438,7 +442,23 @@ Enrollment time of the device.
 This property is read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -EthernetMacAddress
+Ethernet MAC.
+This property is read-only.
+
+```yaml
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -453,7 +473,7 @@ Accept wildcard characters: False
 deviceManagementExchangeAccessState
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -468,7 +488,7 @@ Accept wildcard characters: False
 deviceManagementExchangeAccessStateReason
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -484,7 +504,7 @@ Last time the device contacted Exchange.
 This property is read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -500,7 +520,23 @@ Free Storage in Bytes.
 This property is read-only.
 
 ```yaml
-Type: Int64
+Type: System.Int64
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Iccid
+Integrated Circuit Card Identifier, it is A SIM card's unique identification number.
+This property is read-only.
+
+```yaml
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -515,7 +551,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -531,7 +567,7 @@ IMEI.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -547,8 +583,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCorporateManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Type: Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
+Parameter Sets: UpdateViaIdentity1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -563,7 +599,7 @@ Device encryption status.
 This property is read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -579,7 +615,7 @@ Device supervised status.
 This property is read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -595,7 +631,7 @@ whether the device is jail broken or rooted.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -611,7 +647,7 @@ The date and time that the device last completed a successful sync with Intune.
 This property is read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -626,8 +662,8 @@ Accept wildcard characters: False
 key: id of managedDevice
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update1, UpdateExpanded1
 Aliases:
 
 Required: True
@@ -642,7 +678,7 @@ Automatically generated name to identify a device.
 Can be overwritten to a user friendly name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -657,7 +693,7 @@ Accept wildcard characters: False
 managedDeviceOwnerType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -672,7 +708,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -688,7 +724,7 @@ Manufacturer of the device.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -704,7 +740,7 @@ MEID.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -720,7 +756,22 @@ Model of the device.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Notes
+Notes on the device created by IT Admin
+
+```yaml
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -737,7 +788,7 @@ Windows, iOS, etc.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -753,7 +804,7 @@ Operating system version of the device.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -768,7 +819,7 @@ Accept wildcard characters: False
 managedDevicePartnerReportedHealthState
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -783,7 +834,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -799,7 +850,23 @@ Phone number of the device.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PhysicalMemoryInBytes
+Total Memory in Bytes.
+This property is read-only.
+
+```yaml
+Type: System.Int64
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -815,7 +882,7 @@ An error string that identifies issues when creating Remote Assistance session o
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -831,7 +898,7 @@ Url that allows a Remote Assistance session to be established with the device.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -847,7 +914,7 @@ SerialNumber.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -863,7 +930,7 @@ Subscriber Carrier.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -879,7 +946,23 @@ Total Storage in Bytes.
 This property is read-only.
 
 ```yaml
-Type: Int64
+Type: System.Int64
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Udid
+Unique Device Identifier for iOS and macOS devices.
+This property is read-only.
+
+```yaml
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -895,7 +978,7 @@ User display name.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -910,23 +993,11 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update1, UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-```yaml
-Type: String
-Parameter Sets: UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -938,7 +1009,7 @@ Unique Identifier for the user associated with the device.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -954,7 +1025,7 @@ Device user principal name.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -970,7 +1041,7 @@ Wi-Fi MAC.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -985,7 +1056,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -1001,7 +1072,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -1146,10 +1217,12 @@ BODYPARAMETER <IMicrosoftGraphManagedDevice1>: Devices that are managed or pre-e
   - `[EasDeviceId <String>]`: Exchange ActiveSync Id of the device. This property is read-only.
   - `[EmailAddress <String>]`: Email(s) for the user associated with the device. This property is read-only.
   - `[EnrolledDateTime <DateTime?>]`: Enrollment time of the device. This property is read-only.
+  - `[EthernetMacAddress <String>]`: Ethernet MAC. This property is read-only.
   - `[ExchangeAccessState <String>]`: deviceManagementExchangeAccessState
   - `[ExchangeAccessStateReason <String>]`: deviceManagementExchangeAccessStateReason
   - `[ExchangeLastSuccessfulSyncDateTime <DateTime?>]`: Last time the device contacted Exchange. This property is read-only.
   - `[FreeStorageSpaceInBytes <Int64?>]`: Free Storage in Bytes. This property is read-only.
+  - `[Iccid <String>]`: Integrated Circuit Card Identifier, it is A SIM card's unique identification number. This property is read-only.
   - `[Imei <String>]`: IMEI. This property is read-only.
   - `[IsEncrypted <Boolean?>]`: Device encryption status. This property is read-only.
   - `[IsSupervised <Boolean?>]`: Device supervised status. This property is read-only.
@@ -1161,15 +1234,18 @@ BODYPARAMETER <IMicrosoftGraphManagedDevice1>: Devices that are managed or pre-e
   - `[Manufacturer <String>]`: Manufacturer of the device. This property is read-only.
   - `[Meid <String>]`: MEID. This property is read-only.
   - `[Model <String>]`: Model of the device. This property is read-only.
+  - `[Notes <String>]`: Notes on the device created by IT Admin
   - `[OSVersion <String>]`: Operating system version of the device. This property is read-only.
   - `[OperatingSystem <String>]`: Operating system of the device. Windows, iOS, etc. This property is read-only.
   - `[PartnerReportedThreatState <String>]`: managedDevicePartnerReportedHealthState
   - `[PhoneNumber <String>]`: Phone number of the device. This property is read-only.
+  - `[PhysicalMemoryInBytes <Int64?>]`: Total Memory in Bytes. This property is read-only.
   - `[RemoteAssistanceSessionErrorDetails <String>]`: An error string that identifies issues when creating Remote Assistance session objects. This property is read-only.
   - `[RemoteAssistanceSessionUrl <String>]`: Url that allows a Remote Assistance session to be established with the device. This property is read-only.
   - `[SerialNumber <String>]`: SerialNumber. This property is read-only.
   - `[SubscriberCarrier <String>]`: Subscriber Carrier. This property is read-only.
   - `[TotalStorageSpaceInBytes <Int64?>]`: Total Storage in Bytes. This property is read-only.
+  - `[Udid <String>]`: Unique Device Identifier for iOS and macOS devices. This property is read-only.
   - `[UserDisplayName <String>]`: User display name. This property is read-only.
   - `[UserId <String>]`: Unique Identifier for the user associated with the device. This property is read-only.
   - `[UserPrincipalName <String>]`: Device user principal name. This property is read-only.
@@ -1347,4 +1423,3 @@ INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
-## RELATED LINKS

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgbegindevicemanagementremoteassistancepartneronboarding
 schema: 2.0.0
@@ -8,24 +8,26 @@ schema: 2.0.0
 # Invoke-MgBeginDeviceManagementRemoteAssistancePartnerOnboarding
 
 ## SYNOPSIS
-Invoke action beginOnboarding
+A request to start onboarding.
+Must be coupled with the appropriate TeamViewer account information
 
 ## SYNTAX
 
 ### Begin1 (Default)
 ```
-Invoke-MgBeginDeviceManagementRemoteAssistancePartnerOnboarding -RemoteAssistancePartnerId <String> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBeginDeviceManagementRemoteAssistancePartnerOnboarding -RemoteAssistancePartnerId <String>
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### BeginViaIdentity1
 ```
-Invoke-MgBeginDeviceManagementRemoteAssistancePartnerOnboarding -InputObject <IDeviceManagementActionsIdentity>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBeginDeviceManagementRemoteAssistancePartnerOnboarding
+ -InputObject <IDeviceManagementActionsIdentity> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action beginOnboarding
+A request to start onboarding.
+Must be coupled with the appropriate TeamViewer account information
 
 ## EXAMPLES
 
@@ -36,7 +38,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementActionsIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
 Parameter Sets: BeginViaIdentity1
 Aliases:
 
@@ -51,7 +53,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -66,7 +68,7 @@ Accept wildcard characters: False
 key: id of remoteAssistancePartner
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Begin1
 Aliases:
 
@@ -81,7 +83,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -97,7 +99,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -136,6 +138,7 @@ INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[CloudPcId <String>]`: key: id of cloudPC
   - `[CloudPcOnPremisesConnectionId <String>]`: key: id of cloudPcOnPremisesConnection
   - `[CloudPcProvisioningPolicyId <String>]`: key: id of cloudPcProvisioningPolicy
+  - `[CloudPcUserSettingId <String>]`: key: id of cloudPcUserSetting
   - `[DataSharingConsentId <String>]`: key: id of dataSharingConsent
   - `[DepOnboardingSettingId <String>]`: key: id of depOnboardingSetting
   - `[DetectedAppId <String>]`: key: id of detectedApp
@@ -153,6 +156,7 @@ INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[DeviceManagementExchangeConnectorId <String>]`: key: id of deviceManagementExchangeConnector
   - `[DeviceManagementIntentId <String>]`: key: id of deviceManagementIntent
   - `[DeviceManagementResourceAccessProfileBaseId <String>]`: key: id of deviceManagementResourceAccessProfileBase
+  - `[DeviceManagementReusablePolicySettingId <String>]`: key: id of deviceManagementReusablePolicySetting
   - `[DeviceManagementScriptDeviceStateId <String>]`: key: id of deviceManagementScriptDeviceState
   - `[DeviceManagementScriptId <String>]`: key: id of deviceManagementScript
   - `[DeviceManagementTemplateId <String>]`: key: id of deviceManagementTemplate
@@ -177,3 +181,4 @@ INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[WindowsQualityUpdateProfileId <String>]`: key: id of windowsQualityUpdateProfile
 
 ## RELATED LINKS
+

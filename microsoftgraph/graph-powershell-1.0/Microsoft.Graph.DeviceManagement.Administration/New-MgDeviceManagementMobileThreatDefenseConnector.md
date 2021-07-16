@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementmobilethreatdefenseconnector
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementMobileThreatDefenseConnector
 
 ## SYNOPSIS
-Create new navigation property to mobileThreatDefenseConnectors for deviceManagement
+The list of Mobile threat Defense connectors configured by the tenant.
 
 ## SYNTAX
 
@@ -18,17 +18,17 @@ New-MgDeviceManagementMobileThreatDefenseConnector [-AdditionalProperties <Hasht
  [-AndroidDeviceBlockedOnMissingPartnerData] [-AndroidEnabled] [-Id <String>]
  [-IosDeviceBlockedOnMissingPartnerData] [-IosEnabled] [-LastHeartbeatDateTime <DateTime>]
  [-PartnerState <String>] [-PartnerUnresponsivenessThresholdInDays <Int32>]
- [-PartnerUnsupportedOSVersionBlocked] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PartnerUnsupportedOSVersionBlocked] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgDeviceManagementMobileThreatDefenseConnector -BodyParameter <IMicrosoftGraphMobileThreatDefenseConnector>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDeviceManagementMobileThreatDefenseConnector
+ -BodyParameter <IMicrosoftGraphMobileThreatDefenseConnector> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create new navigation property to mobileThreatDefenseConnectors for deviceManagement
+The list of Mobile threat Defense connectors configured by the tenant.
 
 ## EXAMPLES
 
@@ -38,7 +38,7 @@ Create new navigation property to mobileThreatDefenseConnectors for deviceManage
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -53,7 +53,7 @@ Accept wildcard characters: False
 For Android, set whether Intune must receive data from the data sync partner prior to marking a device compliant
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 For Android, set whether data from the data sync partner should be used during compliance evaluations
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -84,7 +84,7 @@ Entity which represents a connection to Mobile threat defense partner.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMobileThreatDefenseConnector
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileThreatDefenseConnector
 Parameter Sets: Create1
 Aliases:
 
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 For IOS, set whether Intune must receive data from the data sync partner prior to marking a device compliant
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 For IOS, get or set whether data from the data sync partner should be used during compliance evaluations
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 DateTime of last Heartbeat recieved from the Data Sync Partner
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 mobileThreatPartnerTenantState
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 Get or Set days the per tenant tolerance to unresponsiveness for this partner integration
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 Get or set whether to block devices on the enabled platforms that do not meet the minimum version requirements of the Data Sync Partner
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -220,7 +220,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -264,3 +264,4 @@ BODYPARAMETER <IMicrosoftGraphMobileThreatDefenseConnector>: Entity which repres
   - `[PartnerUnsupportedOSVersionBlocked <Boolean?>]`: Get or set whether to block devices on the enabled platforms that do not meet the minimum version requirements of the Data Sync Partner
 
 ## RELATED LINKS
+

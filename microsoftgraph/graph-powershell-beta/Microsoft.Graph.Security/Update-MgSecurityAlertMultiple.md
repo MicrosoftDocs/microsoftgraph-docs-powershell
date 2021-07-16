@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecurityalertmultiple
 schema: 2.0.0
@@ -14,15 +14,15 @@ Invoke action updateAlerts
 
 ### UpdateExpanded1 (Default)
 ```
-Update-MgSecurityAlertMultiple [-AdditionalProperties <Hashtable>] [-Value <IMicrosoftGraphAlert[]>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgSecurityAlertMultiple [-AdditionalProperties <Hashtable>] [-Value <IMicrosoftGraphAlert[]>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgSecurityAlertMultiple
  -BodyParameter <IPaths1Ehzqn7SecurityAlertsMicrosoftGraphUpdatealertsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,7 +36,7 @@ Invoke action updateAlerts
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -52,7 +52,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Ehzqn7SecurityAlertsMicrosoftGraphUpdatealertsPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths1Ehzqn7SecurityAlertsMicrosoftGraphUpdatealertsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Update1
 Aliases:
 
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for VALUE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAlert[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAlert[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -99,7 +99,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -259,7 +259,7 @@ BODYPARAMETER <IPaths1Ehzqn7SecurityAlertsMicrosoftGraphUpdatealertsPostRequestb
     - `[Title <String>]`: Alert title. Required.
     - `[Triggers <IMicrosoftGraphAlertTrigger[]>]`: Security-related information about the specific properties that triggered the alert (properties appearing in the alert). Alerts might contain information about multiple users, hosts, files, ip addresses. This field indicates which properties triggered the alert generation.
       - `[Name <String>]`: Name of the property serving as a detection trigger.
-      - `[Type <String>]`: Type of the property in the key:value pair for interpretation. For example, String, Boolean, etc.
+      - `[Type <String>]`: Type of the property in the key:value pair for interpretation. For example, String, Boolean etc.
       - `[Value <String>]`: Value of the property serving as a detection trigger.
     - `[UriClickSecurityStates <IMicrosoftGraphUriClickSecurityState[]>]`: 
       - `[ClickAction <String>]`: 
@@ -421,7 +421,7 @@ VALUE <IMicrosoftGraphAlert[]>: .
   - `[Title <String>]`: Alert title. Required.
   - `[Triggers <IMicrosoftGraphAlertTrigger[]>]`: Security-related information about the specific properties that triggered the alert (properties appearing in the alert). Alerts might contain information about multiple users, hosts, files, ip addresses. This field indicates which properties triggered the alert generation.
     - `[Name <String>]`: Name of the property serving as a detection trigger.
-    - `[Type <String>]`: Type of the property in the key:value pair for interpretation. For example, String, Boolean, etc.
+    - `[Type <String>]`: Type of the property in the key:value pair for interpretation. For example, String, Boolean etc.
     - `[Value <String>]`: Value of the property serving as a detection trigger.
   - `[UriClickSecurityStates <IMicrosoftGraphUriClickSecurityState[]>]`: 
     - `[ClickAction <String>]`: 
@@ -458,4 +458,3 @@ VALUE <IMicrosoftGraphAlert[]>: .
 
 ## RELATED LINKS
 
-## RELATED LINKS

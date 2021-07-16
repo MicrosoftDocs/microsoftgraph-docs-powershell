@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Sites-help.xml
+external help file:
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/get-mgsitelistitemanalyticbyref
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteListItemAnalyticByRef
 
 ## SYNOPSIS
-Get ref of analytics from sites
+Analytics about the view activities that took place on this item.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Get-MgSiteListItemAnalyticByRef -InputObject <ISitesIdentity> [<CommonParameters
 ```
 
 ## DESCRIPTION
-Get ref of analytics from sites
+Analytics about the view activities that took place on this item.
 
 ## EXAMPLES
 
@@ -34,7 +34,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISitesIdentity
+Type: Microsoft.Graph.PowerShell.Models.ISitesIdentity
 Parameter Sets: GetViaIdentity1
 Aliases:
 
@@ -49,7 +49,7 @@ Accept wildcard characters: False
 key: id of list
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get1
 Aliases:
 
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 key: id of listItem
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get1
 Aliases:
 
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 key: id of site
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get1
 Aliases:
 
@@ -136,3 +136,4 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

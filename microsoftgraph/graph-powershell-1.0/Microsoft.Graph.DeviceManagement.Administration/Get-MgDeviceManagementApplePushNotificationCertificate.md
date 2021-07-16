@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementapplepushnotificationcertificate
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementApplePushNotificationCertificate
 
 ## SYNOPSIS
-Get applePushNotificationCertificate from deviceManagement
+Apple push notification certificate.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-MgDeviceManagementApplePushNotificationCertificate [-ExpandProperty <String[
 ```
 
 ## DESCRIPTION
-Get applePushNotificationCertificate from deviceManagement
+Apple push notification certificate.
 
 ## EXAMPLES
 
@@ -28,7 +28,7 @@ Get applePushNotificationCertificate from deviceManagement
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -43,7 +43,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -61,10 +61,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApplePushNotificationCertificate
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApplePushNotificationCertificate1
 
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+

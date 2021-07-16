@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.PersonalContacts-help.xml
+external help file:
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactphoto
 schema: 2.0.0
@@ -8,14 +8,15 @@ schema: 2.0.0
 # Get-MgUserContactPhoto
 
 ## SYNOPSIS
-Get photo from users
+Optional contact picture.
+You can get or set a photo for a contact.
 
 ## SYNTAX
 
 ### Get1 (Default)
 ```
-Get-MgUserContactPhoto -ContactId <String> -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgUserContactPhoto -ContactId <String> -UserId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
@@ -25,7 +26,8 @@ Get-MgUserContactPhoto -InputObject <IPersonalContactsIdentity> [-ExpandProperty
 ```
 
 ## DESCRIPTION
-Get photo from users
+Optional contact picture.
+You can get or set a photo for a contact.
 
 ## EXAMPLES
 
@@ -35,7 +37,7 @@ Get photo from users
 key: id of contact
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get1
 Aliases:
 
@@ -50,7 +52,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -66,7 +68,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IPersonalContactsIdentity
+Type: Microsoft.Graph.PowerShell.Models.IPersonalContactsIdentity
 Parameter Sets: GetViaIdentity1
 Aliases:
 
@@ -81,7 +83,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -96,7 +98,7 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get1
 Aliases:
 
@@ -137,3 +139,4 @@ INPUTOBJECT <IPersonalContactsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

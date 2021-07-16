@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggroupphotocontent
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupPhotoContent
 
 ## SYNOPSIS
-Get media content for the navigation property photo from groups
+The group's profile photo.
 
 ## SYNTAX
 
@@ -23,18 +23,18 @@ Get-MgGroupPhotoContent -GroupId <String> -ProfilePhotoId <String> -OutFile <Str
  [<CommonParameters>]
 ```
 
-### GetViaIdentity3
-```
-Get-MgGroupPhotoContent -InputObject <IGroupsIdentity> -OutFile <String> [-PassThru] [<CommonParameters>]
-```
-
 ### GetViaIdentity2
 ```
 Get-MgGroupPhotoContent -InputObject <IGroupsIdentity> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
+### GetViaIdentity3
+```
+Get-MgGroupPhotoContent -InputObject <IGroupsIdentity> -OutFile <String> [-PassThru] [<CommonParameters>]
+```
+
 ## DESCRIPTION
-Get media content for the navigation property photo from groups
+The group's profile photo.
 
 ## EXAMPLES
 
@@ -44,7 +44,7 @@ Get media content for the navigation property photo from groups
 key: id of group
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get2, Get3
 Aliases:
 
@@ -60,8 +60,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: GetViaIdentity3, GetViaIdentity2
+Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+Parameter Sets: GetViaIdentity2, GetViaIdentity3
 Aliases:
 
 Required: True
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 key: id of profilePhoto
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get3
 Aliases:
 
@@ -160,3 +160,4 @@ INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

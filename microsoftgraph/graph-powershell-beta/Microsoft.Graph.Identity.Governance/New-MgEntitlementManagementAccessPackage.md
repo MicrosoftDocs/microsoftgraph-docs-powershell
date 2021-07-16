@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementaccesspackage
 schema: 2.0.0
@@ -20,12 +20,12 @@ New-MgEntitlementManagementAccessPackage
  [-AccessPackageResourceRoleScopes <IMicrosoftGraphAccessPackageResourceRoleScope[]>]
  [-AdditionalProperties <Hashtable>] [-CatalogId <String>] [-CreatedBy <String>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsHidden] [-IsRoleScopesVisible]
- [-ModifiedBy <String>] [-ModifiedDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ModifiedBy <String>] [-ModifiedDateTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgEntitlementManagementAccessPackage -BodyParameter <IMicrosoftGraphAccessPackage> [-WhatIf] [-Confirm]
+New-MgEntitlementManagementAccessPackage -BodyParameter <IMicrosoftGraphAccessPackage> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -42,7 +42,7 @@ Nullable.
 To construct, see NOTES section for ACCESSPACKAGEASSIGNMENTPOLICIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageAssignmentPolicy[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageAssignmentPolicy[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -58,7 +58,7 @@ accessPackageCatalog
 To construct, see NOTES section for ACCESSPACKAGECATALOG properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageCatalog
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageCatalog
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -74,7 +74,7 @@ Nullable.
 To construct, see NOTES section for ACCESSPACKAGERESOURCEROLESCOPES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageResourceRoleScope[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRoleScope[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -105,7 +105,7 @@ accessPackage
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackage
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackage
 Parameter Sets: Create
 Aliases:
 
@@ -121,7 +121,7 @@ ID of the access package catalog referencing this access package.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -137,7 +137,7 @@ UPN of the user or identity of the subject who created this resource.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -154,7 +154,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 The description of the access package.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 The display name of the access package.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -214,7 +214,7 @@ Accept wildcard characters: False
 Whether the access package is hidden from the requestor.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -229,7 +229,7 @@ Accept wildcard characters: False
 Indicates whether role scopes are visible.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -245,7 +245,7 @@ The UPN of the user who last modified this resource.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -262,7 +262,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -277,7 +277,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -293,7 +293,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -803,4 +803,3 @@ BODYPARAMETER <IMicrosoftGraphAccessPackage>: accessPackage
 
 ## RELATED LINKS
 
-## RELATED LINKS

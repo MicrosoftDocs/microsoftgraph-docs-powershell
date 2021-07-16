@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/set-mgorganizationmobiledevicemanagementauthority
 schema: 2.0.0
@@ -8,24 +8,24 @@ schema: 2.0.0
 # Set-MgOrganizationMobileDeviceManagementAuthority
 
 ## SYNOPSIS
-Invoke action setMobileDeviceManagementAuthority
+Set mobile device management authority
 
 ## SYNTAX
 
 ### Set (Default)
 ```
-Set-MgOrganizationMobileDeviceManagementAuthority -OrganizationId <String> [-WhatIf] [-Confirm]
+Set-MgOrganizationMobileDeviceManagementAuthority -OrganizationId <String> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
-Set-MgOrganizationMobileDeviceManagementAuthority -InputObject <IIdentityDirectoryManagementIdentity> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Set-MgOrganizationMobileDeviceManagementAuthority -InputObject <IIdentityDirectoryManagementIdentity>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action setMobileDeviceManagementAuthority
+Set mobile device management authority
 
 ## EXAMPLES
 
@@ -36,7 +36,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
+Type: Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
 Parameter Sets: SetViaIdentity
 Aliases:
 
@@ -51,7 +51,7 @@ Accept wildcard characters: False
 key: id of organization
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Set
 Aliases:
 
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -82,7 +82,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -138,3 +138,4 @@ INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

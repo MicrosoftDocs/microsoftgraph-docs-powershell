@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Teams
-Module Guid: 116f5411-9d5a-4739-96cb-5a9d604d3236
+Module Guid: ea137b5f-b6f9-4808-95a1-e18b82cb3f4a
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams
 Help Version: 1.0.0.0
 Locale: en-US
@@ -11,41 +11,8 @@ Locale: en-US
 Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Teams Cmdlets
-### [Add-MgChatMember](Add-MgChatMember.md)
-Invoke action add
-
-### [Add-MgTeamChannelMember](Add-MgTeamChannelMember.md)
-Invoke action add
-
-### [Add-MgTeamMember](Add-MgTeamMember.md)
-Invoke action add
-
-### [Add-MgTeamPrimaryChannelMember](Add-MgTeamPrimaryChannelMember.md)
-Invoke action add
-
-### [Complete-MgTeamChannelMigration](Complete-MgTeamChannelMigration.md)
-Invoke action completeMigration
-
-### [Complete-MgTeamMigration](Complete-MgTeamMigration.md)
-Invoke action completeMigration
-
-### [Complete-MgTeamPrimaryChannelMigration](Complete-MgTeamPrimaryChannelMigration.md)
-Invoke action completeMigration
-
-### [Confirm-MgTeamScheduleTimeCard](Confirm-MgTeamScheduleTimeCard.md)
-Invoke action confirm
-
 ### [Copy-MgTeam](Copy-MgTeam.md)
 Invoke action clone
-
-### [Get-MgAppCatalogTeamApp](Get-MgAppCatalogTeamApp.md)
-Get teamsApps from appCatalogs
-
-### [Get-MgAppCatalogTeamAppDefinition](Get-MgAppCatalogTeamAppDefinition.md)
-Get appDefinitions from appCatalogs
-
-### [Get-MgAppCatalogTeamAppDefinitionBot](Get-MgAppCatalogTeamAppDefinitionBot.md)
-Get bot from appCatalogs
 
 ### [Get-MgChat](Get-MgChat.md)
 Get entity from chats by key
@@ -83,18 +50,6 @@ Get replies from chats
 ### [Get-MgChatMessageReplyDelta](Get-MgChatMessageReplyDelta.md)
 Invoke function delta
 
-### [Get-MgChatPermissionGrant](Get-MgChatPermissionGrant.md)
-Get permissionGrants from chats
-
-### [Get-MgChatTab](Get-MgChatTab.md)
-Get tabs from chats
-
-### [Get-MgChatTabTeamApp](Get-MgChatTabTeamApp.md)
-Get teamsApp from chats
-
-### [Get-MgChatTabTeamAppByRef](Get-MgChatTabTeamAppByRef.md)
-Get ref of teamsApp from chats
-
 ### [Get-MgGroupTeam](Get-MgGroupTeam.md)
 Get team from groups
 
@@ -107,14 +62,11 @@ Get channels from teams
 ### [Get-MgTeamChannelFileFolder](Get-MgTeamChannelFileFolder.md)
 Get filesFolder from teams
 
-### [Get-MgTeamChannelFileFolderContent](Get-MgTeamChannelFileFolderContent.md)
-Get media content for the navigation property filesFolder from teams
-
 ### [Get-MgTeamChannelMember](Get-MgTeamChannelMember.md)
 Get members from teams
 
 ### [Get-MgTeamChannelMessage](Get-MgTeamChannelMessage.md)
-Invoke function getAllMessages
+Get messages from teams
 
 ### [Get-MgTeamChannelMessageDelta](Get-MgTeamChannelMessageDelta.md)
 Invoke function delta
@@ -158,9 +110,6 @@ Get ref of teamsAppDefinition from teams
 ### [Get-MgTeamMember](Get-MgTeamMember.md)
 Get members from teams
 
-### [Get-MgTeamMessage](Get-MgTeamMessage.md)
-Invoke function getAllMessages
-
 ### [Get-MgTeamOperation](Get-MgTeamOperation.md)
 Get operations from teams
 
@@ -173,17 +122,11 @@ Get ref of owners from teams
 ### [Get-MgTeamPhoto](Get-MgTeamPhoto.md)
 Get photo from teams
 
-### [Get-MgTeamPhotoContent](Get-MgTeamPhotoContent.md)
-Get media content for the navigation property photo from teams
-
 ### [Get-MgTeamPrimaryChannel](Get-MgTeamPrimaryChannel.md)
 Get primaryChannel from teams
 
 ### [Get-MgTeamPrimaryChannelFileFolder](Get-MgTeamPrimaryChannelFileFolder.md)
 Get filesFolder from teams
-
-### [Get-MgTeamPrimaryChannelFileFolderContent](Get-MgTeamPrimaryChannelFileFolderContent.md)
-Get media content for the navigation property filesFolder from teams
 
 ### [Get-MgTeamPrimaryChannelMember](Get-MgTeamPrimaryChannelMember.md)
 Get members from teams
@@ -233,9 +176,6 @@ Get shifts from teams
 ### [Get-MgTeamScheduleSwapShiftChangeRequest](Get-MgTeamScheduleSwapShiftChangeRequest.md)
 Get swapShiftsChangeRequests from teams
 
-### [Get-MgTeamScheduleTimeCard](Get-MgTeamScheduleTimeCard.md)
-Get timeCards from teams
-
 ### [Get-MgTeamScheduleTimeOff](Get-MgTeamScheduleTimeOff.md)
 Get timesOff from teams
 
@@ -244,12 +184,6 @@ Get timeOffReasons from teams
 
 ### [Get-MgTeamScheduleTimeOffRequest](Get-MgTeamScheduleTimeOffRequest.md)
 Get timeOffRequests from teams
-
-### [Get-MgTeamTag](Get-MgTeamTag.md)
-Get tags from teams
-
-### [Get-MgTeamTagMember](Get-MgTeamTagMember.md)
-Get members from teams
 
 ### [Get-MgTeamTemplate](Get-MgTeamTemplate.md)
 Get template from teams
@@ -269,9 +203,6 @@ Get chats from users
 ### [Get-MgUserJoinedTeam](Get-MgUserJoinedTeam.md)
 Get joinedTeams from users
 
-### [Get-MgUserJoinedTeamByRef](Get-MgUserJoinedTeamByRef.md)
-Get ref of joinedTeams from users
-
 ### [Get-MgUserTeamwork](Get-MgUserTeamwork.md)
 Get teamwork from users
 
@@ -287,12 +218,6 @@ Get ref of chat from users
 ### [Invoke-MgArchiveTeam](Invoke-MgArchiveTeam.md)
 Invoke action archive
 
-### [Invoke-MgClockTeamScheduleTimeCardIn](Invoke-MgClockTeamScheduleTimeCardIn.md)
-Invoke action clockIn
-
-### [Invoke-MgClockTeamScheduleTimeCardOut](Invoke-MgClockTeamScheduleTimeCardOut.md)
-Invoke action clockOut
-
 ### [Invoke-MgMessageChat](Invoke-MgMessageChat.md)
 Invoke function allMessages
 
@@ -307,12 +232,6 @@ Invoke action share
 
 ### [Invoke-MgUnarchiveTeam](Invoke-MgUnarchiveTeam.md)
 Invoke action unarchive
-
-### [New-MgAppCatalogTeamApp](New-MgAppCatalogTeamApp.md)
-Create new navigation property to teamsApps for appCatalogs
-
-### [New-MgAppCatalogTeamAppDefinition](New-MgAppCatalogTeamAppDefinition.md)
-Create new navigation property to appDefinitions for appCatalogs
 
 ### [New-MgChat](New-MgChat.md)
 Add new entity to chats
@@ -331,12 +250,6 @@ Create new navigation property to hostedContents for chats
 
 ### [New-MgChatMessageReply](New-MgChatMessageReply.md)
 Create new navigation property to replies for chats
-
-### [New-MgChatPermissionGrant](New-MgChatPermissionGrant.md)
-Create new navigation property to permissionGrants for chats
-
-### [New-MgChatTab](New-MgChatTab.md)
-Create new navigation property to tabs for chats
 
 ### [New-MgTeam](New-MgTeam.md)
 Add new entity to teams
@@ -404,9 +317,6 @@ Create new navigation property to shifts for teams
 ### [New-MgTeamScheduleSwapShiftChangeRequest](New-MgTeamScheduleSwapShiftChangeRequest.md)
 Create new navigation property to swapShiftsChangeRequests for teams
 
-### [New-MgTeamScheduleTimeCard](New-MgTeamScheduleTimeCard.md)
-Create new navigation property to timeCards for teams
-
 ### [New-MgTeamScheduleTimeOff](New-MgTeamScheduleTimeOff.md)
 Create new navigation property to timesOff for teams
 
@@ -416,32 +326,17 @@ Create new navigation property to timeOffReasons for teams
 ### [New-MgTeamScheduleTimeOffRequest](New-MgTeamScheduleTimeOffRequest.md)
 Create new navigation property to timeOffRequests for teams
 
-### [New-MgTeamTag](New-MgTeamTag.md)
-Create new navigation property to tags for teams
-
-### [New-MgTeamTagMember](New-MgTeamTagMember.md)
-Create new navigation property to members for teams
-
 ### [New-MgTeamworkWorkforceIntegration](New-MgTeamworkWorkforceIntegration.md)
 Create new navigation property to workforceIntegrations for teamwork
 
 ### [New-MgUserChat](New-MgUserChat.md)
 Create new navigation property to chats for users
 
-### [New-MgUserJoinedTeamByRef](New-MgUserJoinedTeamByRef.md)
-Create new navigation property ref to joinedTeams for users
+### [New-MgUserJoinedTeam](New-MgUserJoinedTeam.md)
+Create new navigation property to joinedTeams for users
 
 ### [New-MgUserTeamworkInstalledApp](New-MgUserTeamworkInstalledApp.md)
 Create new navigation property to installedApps for users
-
-### [Remove-MgAppCatalogTeamApp](Remove-MgAppCatalogTeamApp.md)
-Delete navigation property teamsApps for appCatalogs
-
-### [Remove-MgAppCatalogTeamAppDefinition](Remove-MgAppCatalogTeamAppDefinition.md)
-Delete navigation property appDefinitions for appCatalogs
-
-### [Remove-MgAppCatalogTeamAppDefinitionBot](Remove-MgAppCatalogTeamAppDefinitionBot.md)
-Delete navigation property bot for appCatalogs
 
 ### [Remove-MgChat](Remove-MgChat.md)
 Delete entity from chats
@@ -466,15 +361,6 @@ Delete navigation property hostedContents for chats
 
 ### [Remove-MgChatMessageReply](Remove-MgChatMessageReply.md)
 Delete navigation property replies for chats
-
-### [Remove-MgChatPermissionGrant](Remove-MgChatPermissionGrant.md)
-Delete navigation property permissionGrants for chats
-
-### [Remove-MgChatTab](Remove-MgChatTab.md)
-Delete navigation property tabs for chats
-
-### [Remove-MgChatTabTeamAppByRef](Remove-MgChatTabTeamAppByRef.md)
-Delete ref of navigation property teamsApp for chats
 
 ### [Remove-MgGroupTeam](Remove-MgGroupTeam.md)
 Delete navigation property team for groups
@@ -572,9 +458,6 @@ Delete navigation property shifts for teams
 ### [Remove-MgTeamScheduleSwapShiftChangeRequest](Remove-MgTeamScheduleSwapShiftChangeRequest.md)
 Delete navigation property swapShiftsChangeRequests for teams
 
-### [Remove-MgTeamScheduleTimeCard](Remove-MgTeamScheduleTimeCard.md)
-Delete navigation property timeCards for teams
-
 ### [Remove-MgTeamScheduleTimeOff](Remove-MgTeamScheduleTimeOff.md)
 Delete navigation property timesOff for teams
 
@@ -584,12 +467,6 @@ Delete navigation property timeOffReasons for teams
 ### [Remove-MgTeamScheduleTimeOffRequest](Remove-MgTeamScheduleTimeOffRequest.md)
 Delete navigation property timeOffRequests for teams
 
-### [Remove-MgTeamTag](Remove-MgTeamTag.md)
-Delete navigation property tags for teams
-
-### [Remove-MgTeamTagMember](Remove-MgTeamTagMember.md)
-Delete navigation property members for teams
-
 ### [Remove-MgTeamTemplateByRef](Remove-MgTeamTemplateByRef.md)
 Delete ref of navigation property template for teams
 
@@ -598,6 +475,9 @@ Delete navigation property workforceIntegrations for teamwork
 
 ### [Remove-MgUserChat](Remove-MgUserChat.md)
 Delete navigation property chats for users
+
+### [Remove-MgUserJoinedTeam](Remove-MgUserJoinedTeam.md)
+Delete navigation property joinedTeams for users
 
 ### [Remove-MgUserTeamwork](Remove-MgUserTeamwork.md)
 Delete navigation property teamwork for users
@@ -620,12 +500,6 @@ Update the ref of navigation property teamsApp in chats
 ### [Set-MgChatInstalledAppTeamAppDefinitionByRef](Set-MgChatInstalledAppTeamAppDefinitionByRef.md)
 Update the ref of navigation property teamsAppDefinition in chats
 
-### [Set-MgChatTabTeamAppByRef](Set-MgChatTabTeamAppByRef.md)
-Update the ref of navigation property teamsApp in chats
-
-### [Set-MgTeamChannelFileFolderContent](Set-MgTeamChannelFileFolderContent.md)
-Update media content for the navigation property filesFolder in teams
-
 ### [Set-MgTeamChannelTabTeamAppByRef](Set-MgTeamChannelTabTeamAppByRef.md)
 Update the ref of navigation property teamsApp in teams
 
@@ -638,12 +512,6 @@ Update the ref of navigation property teamsApp in teams
 ### [Set-MgTeamInstalledAppTeamAppDefinitionByRef](Set-MgTeamInstalledAppTeamAppDefinitionByRef.md)
 Update the ref of navigation property teamsAppDefinition in teams
 
-### [Set-MgTeamPhotoContent](Set-MgTeamPhotoContent.md)
-Update media content for the navigation property photo in teams
-
-### [Set-MgTeamPrimaryChannelFileFolderContent](Set-MgTeamPrimaryChannelFileFolderContent.md)
-Update media content for the navigation property filesFolder in teams
-
 ### [Set-MgTeamPrimaryChannelTabTeamAppByRef](Set-MgTeamPrimaryChannelTabTeamAppByRef.md)
 Update the ref of navigation property teamsApp in teams
 
@@ -652,21 +520,6 @@ Update the ref of navigation property template in teams
 
 ### [Set-MgUserTeamworkInstalledAppChatByRef](Set-MgUserTeamworkInstalledAppChatByRef.md)
 Update the ref of navigation property chat in users
-
-### [Start-MgTeamScheduleTimeCardBreak](Start-MgTeamScheduleTimeCardBreak.md)
-Invoke action startBreak
-
-### [Stop-MgTeamScheduleTimeCardBreak](Stop-MgTeamScheduleTimeCardBreak.md)
-Invoke action endBreak
-
-### [Update-MgAppCatalogTeamApp](Update-MgAppCatalogTeamApp.md)
-Update the navigation property teamsApps in appCatalogs
-
-### [Update-MgAppCatalogTeamAppDefinition](Update-MgAppCatalogTeamAppDefinition.md)
-Update the navigation property appDefinitions in appCatalogs
-
-### [Update-MgAppCatalogTeamAppDefinitionBot](Update-MgAppCatalogTeamAppDefinitionBot.md)
-Update the navigation property bot in appCatalogs
 
 ### [Update-MgChat](Update-MgChat.md)
 Update entity in chats
@@ -685,12 +538,6 @@ Update the navigation property hostedContents in chats
 
 ### [Update-MgChatMessageReply](Update-MgChatMessageReply.md)
 Update the navigation property replies in chats
-
-### [Update-MgChatPermissionGrant](Update-MgChatPermissionGrant.md)
-Update the navigation property permissionGrants in chats
-
-### [Update-MgChatTab](Update-MgChatTab.md)
-Update the navigation property tabs in chats
 
 ### [Update-MgGroupTeam](Update-MgGroupTeam.md)
 Update the navigation property team in groups
@@ -773,9 +620,6 @@ Update the navigation property shifts in teams
 ### [Update-MgTeamScheduleSwapShiftChangeRequest](Update-MgTeamScheduleSwapShiftChangeRequest.md)
 Update the navigation property swapShiftsChangeRequests in teams
 
-### [Update-MgTeamScheduleTimeCard](Update-MgTeamScheduleTimeCard.md)
-Update the navigation property timeCards in teams
-
 ### [Update-MgTeamScheduleTimeOff](Update-MgTeamScheduleTimeOff.md)
 Update the navigation property timesOff in teams
 
@@ -785,12 +629,6 @@ Update the navigation property timeOffReasons in teams
 ### [Update-MgTeamScheduleTimeOffRequest](Update-MgTeamScheduleTimeOffRequest.md)
 Update the navigation property timeOffRequests in teams
 
-### [Update-MgTeamTag](Update-MgTeamTag.md)
-Update the navigation property tags in teams
-
-### [Update-MgTeamTagMember](Update-MgTeamTagMember.md)
-Update the navigation property members in teams
-
 ### [Update-MgTeamwork](Update-MgTeamwork.md)
 Update teamwork
 
@@ -799,6 +637,9 @@ Update the navigation property workforceIntegrations in teamwork
 
 ### [Update-MgUserChat](Update-MgUserChat.md)
 Update the navigation property chats in users
+
+### [Update-MgUserJoinedTeam](Update-MgUserJoinedTeam.md)
+Update the navigation property joinedTeams in users
 
 ### [Update-MgUserTeamwork](Update-MgUserTeamwork.md)
 Update the navigation property teamwork in users
