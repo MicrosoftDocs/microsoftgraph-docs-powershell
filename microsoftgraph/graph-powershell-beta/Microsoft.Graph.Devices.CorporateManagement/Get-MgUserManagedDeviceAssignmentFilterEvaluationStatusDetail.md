@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserManagedDeviceAssignmentFilterEvaluationStatusDetail
 
 ## SYNOPSIS
-Get assignmentFilterEvaluationStatusDetails from users
+Managed device mobile app configuration states for this device.
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Get-MgUserManagedDeviceAssignmentFilterEvaluationStatusDetail
 ```
 
 ## DESCRIPTION
-Get assignmentFilterEvaluationStatusDetails from users
+Managed device mobile app configuration states for this device.
 
 ## EXAMPLES
 
@@ -258,11 +258,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAssignmentFilterEvaluationStatusDetails
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Enable-MgUserManagedDeviceLostMode
 
 ## SYNOPSIS
-Invoke action enableLostMode
+Enable lost mode
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Enable-MgUserManagedDeviceLostMode -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action enableLostMode
+Enable lost mode
 
 ## EXAMPLES
 
@@ -221,13 +221,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPathsM5KcdlUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphEnablelostmodePostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

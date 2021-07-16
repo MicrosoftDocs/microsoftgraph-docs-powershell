@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserOwnedDevice
 
 ## SYNOPSIS
-Get ownedDevices from users
+Devices that are owned by the user.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -19,7 +21,9 @@ Get-MgUserOwnedDevice -UserId <String> [-ExpandProperty <String[]>] [-Filter <St
 ```
 
 ## DESCRIPTION
-Get ownedDevices from users
+Devices that are owned by the user.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -199,7 +203,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
-
 ## NOTES
 
 ALIASES

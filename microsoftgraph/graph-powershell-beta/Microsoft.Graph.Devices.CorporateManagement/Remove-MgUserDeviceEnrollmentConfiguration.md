@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserDeviceEnrollmentConfiguration
 
 ## SYNOPSIS
-Delete navigation property deviceEnrollmentConfigurations for users
+Get enrollment configurations targeted to the user
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgUserDeviceEnrollmentConfiguration -InputObject <IDevicesCorporateManage
 ```
 
 ## DESCRIPTION
-Delete navigation property deviceEnrollmentConfigurations for users
+Get enrollment configurations targeted to the user
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

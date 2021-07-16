@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgComplianceEdiscoveryCaseReviewSetQuery
 
 ## SYNOPSIS
-Get queries from compliance
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgComplianceEdiscoveryCaseReviewSetQuery -InputObject <IComplianceIdentity> 
 ```
 
 ## DESCRIPTION
-Get queries from compliance
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -256,11 +258,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryReviewSetQuery
-
 ## NOTES
 
 ALIASES

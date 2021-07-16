@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgComplianceEdiscoveryCaseLegalHoldUserSource
 
 ## SYNOPSIS
-Delete navigation property userSources for compliance
+Data source entity for a the legal hold.
+This is the container for a mailbox and OneDrive for Business site.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgComplianceEdiscoveryCaseLegalHoldUserSource -InputObject <IComplianceId
 ```
 
 ## DESCRIPTION
-Delete navigation property userSources for compliance
+Data source entity for a the legal hold.
+This is the container for a mailbox and OneDrive for Business site.
 
 ## EXAMPLES
 
@@ -159,11 +161,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

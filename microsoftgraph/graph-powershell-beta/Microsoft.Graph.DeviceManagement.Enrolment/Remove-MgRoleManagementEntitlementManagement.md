@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgRoleManagementEntitlementManagement
 
 ## SYNOPSIS
-Delete navigation property entitlementManagement for roleManagement
+The RbacApplication for Entitlement Management
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Remove-MgRoleManagementEntitlementManagement [-IfMatch <String>] [-PassThru] [-W
 ```
 
 ## DESCRIPTION
-Delete navigation property entitlementManagement for roleManagement
+The RbacApplication for Entitlement Management
 
 ## EXAMPLES
 
@@ -93,7 +93,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

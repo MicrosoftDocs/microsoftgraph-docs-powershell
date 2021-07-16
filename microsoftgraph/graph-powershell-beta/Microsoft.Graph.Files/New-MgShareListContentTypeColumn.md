@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgShareListContentTypeColumn
 
 ## SYNOPSIS
-Create new navigation property to columns for shares
+The collection of column definitions for this contentType.
 
 ## SYNTAX
 
@@ -56,7 +56,7 @@ New-MgShareListContentTypeColumn -InputObject <IFilesIdentity> -BodyParameter <I
 ```
 
 ## DESCRIPTION
-Create new navigation property to columns for shares
+The collection of column definitions for this contentType.
 
 ## EXAMPLES
 
@@ -672,13 +672,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnDefinition
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnDefinition
-
 ## NOTES
 
 ALIASES

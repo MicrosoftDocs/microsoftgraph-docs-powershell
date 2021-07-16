@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserDeviceEnrollmentConfigurationAssignment
 
 ## SYNOPSIS
-Update the navigation property assignments in users
+The list of group assignments for the device configuration profile
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Update-MgUserDeviceEnrollmentConfigurationAssignment -InputObject <IDevicesCorpo
 ```
 
 ## DESCRIPTION
-Update the navigation property assignments in users
+The list of group assignments for the device configuration profile
 
 ## EXAMPLES
 
@@ -256,13 +256,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEnrollmentConfigurationAssignment
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -113,7 +113,7 @@ Accept wildcard characters: False
 
 ### -BlockMsolPowerShell
 To disable the use of MSOL PowerShell set this property to true.
-Setting to true will also disable user-based access to the legacy service endpoint used by MSOL PowerShell.
+This will also disable user-based access to the legacy service endpoint used by MSOL PowerShell.
 This does not affect Azure AD Connect or Microsoft Graph.
 
 ```yaml
@@ -307,11 +307,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthorizationPolicy
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthorizationPolicy
-
 ## NOTES
 
 ALIASES
@@ -331,7 +329,7 @@ BODYPARAMETER <IMicrosoftGraphAuthorizationPolicy>: Represents an Azure Active D
   - `[AllowInvitesFrom <String>]`: allowInvitesFrom
   - `[AllowedToSignUpEmailBasedSubscriptions <Boolean?>]`: Indicates whether users can sign up for email based subscriptions.
   - `[AllowedToUseSspr <Boolean?>]`: Indicates whether the Self-Serve Password Reset feature can be used by users on the tenant.
-  - `[BlockMsolPowerShell <Boolean?>]`: To disable the use of MSOL PowerShell set this property to true. Setting to true will also disable user-based access to the legacy service endpoint used by MSOL PowerShell. This does not affect Azure AD Connect or Microsoft Graph.
+  - `[BlockMsolPowerShell <Boolean?>]`: To disable the use of MSOL PowerShell set this property to true. This will also disable user-based access to the legacy service endpoint used by MSOL PowerShell. This does not affect Azure AD Connect or Microsoft Graph.
   - `[DefaultUserRolePermissions <IMicrosoftGraphDefaultUserRolePermissions>]`: defaultUserRolePermissions
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AllowedToCreateApps <Boolean?>]`: Indicates whether the default user role can create applications.

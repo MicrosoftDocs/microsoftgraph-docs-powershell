@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgDirectorySettingTemplate
 
 ## SYNOPSIS
-Update entity in directorySettingTemplates
+Represents an Azure Active Directory object.
+The directoryObject type is the base type for many other directory entity types.
 
 ## SYNTAX
 
@@ -40,7 +41,8 @@ Update-MgDirectorySettingTemplate -InputObject <IIdentityDirectoryManagementIden
 ```
 
 ## DESCRIPTION
-Update entity in directorySettingTemplates
+Represents an Azure Active Directory object.
+The directoryObject type is the base type for many other directory entity types.
 
 ## EXAMPLES
 
@@ -240,13 +242,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectorySettingTemplate
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

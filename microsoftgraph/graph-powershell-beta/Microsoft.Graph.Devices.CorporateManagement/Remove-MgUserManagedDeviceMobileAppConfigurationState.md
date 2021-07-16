@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserManagedDeviceMobileAppConfigurationState
 
 ## SYNOPSIS
-Delete navigation property managedDeviceMobileAppConfigurationStates for users
+Managed device mobile app configuration states for this device.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ Remove-MgUserManagedDeviceMobileAppConfigurationState -InputObject <IDevicesCorp
 ```
 
 ## DESCRIPTION
-Delete navigation property managedDeviceMobileAppConfigurationStates for users
+Managed device mobile app configuration states for this device.
 
 ## EXAMPLES
 
@@ -160,11 +160,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

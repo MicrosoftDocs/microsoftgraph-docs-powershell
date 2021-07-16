@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgDirectoryFeatureRolloutPolicyApplyTo
 
 ## SYNOPSIS
-Create new navigation property to appliesTo for directory
+Nullable.
+Specifies a list of directoryObjects that feature is enabled for.
 
 ## SYNTAX
 
@@ -38,7 +39,8 @@ New-MgDirectoryFeatureRolloutPolicyApplyTo -InputObject <IIdentityDirectoryManag
 ```
 
 ## DESCRIPTION
-Create new navigation property to appliesTo for directory
+Nullable.
+Specifies a list of directoryObjects that feature is enabled for.
 
 ## EXAMPLES
 
@@ -174,13 +176,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
-
 ## NOTES
 
 ALIASES

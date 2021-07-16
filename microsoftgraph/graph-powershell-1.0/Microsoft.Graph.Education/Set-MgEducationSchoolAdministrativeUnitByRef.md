@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgEducationSchoolAdministrativeUnitByRef
 
 ## SYNOPSIS
-Update the ref of navigation property administrativeUnit in education
+The underlying administrativeUnit for this school.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Set-MgEducationSchoolAdministrativeUnitByRef -InputObject <IEducationIdentity> -
 ```
 
 ## DESCRIPTION
-Update the ref of navigation property administrativeUnit in education
+The underlying administrativeUnit for this school.
 
 ## EXAMPLES
 
@@ -156,13 +156,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

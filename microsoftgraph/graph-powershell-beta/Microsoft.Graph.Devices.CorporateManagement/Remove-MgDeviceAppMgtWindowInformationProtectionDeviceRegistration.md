@@ -1,14 +1,14 @@
 ---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmgtwindowinformationprotectiondeviceregistration
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/new-mguserwindowinformationprotectiondeviceregistrationbyref
 schema: 2.0.0
 ---
 
 # New-MgUserWindowInformationProtectionDeviceRegistrationByRef
 
 ## SYNOPSIS
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ New-MgUserWindowInformationProtectionDeviceRegistrationByRef -InputObject <IDevi
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ## EXAMPLES
 
@@ -141,13 +141,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPathsA9Iy0YUsersUserIdWindowsinformationprotectiondeviceregistrationsRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

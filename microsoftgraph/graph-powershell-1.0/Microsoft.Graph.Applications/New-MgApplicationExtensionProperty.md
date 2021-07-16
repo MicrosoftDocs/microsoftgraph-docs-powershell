@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgApplicationExtensionProperty
 
 ## SYNOPSIS
-Create new navigation property to extensionProperties for applications
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -41,7 +42,8 @@ New-MgApplicationExtensionProperty -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to extensionProperties for applications
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -261,13 +263,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExtensionProperty
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExtensionProperty
-
 ## NOTES
 
 ALIASES

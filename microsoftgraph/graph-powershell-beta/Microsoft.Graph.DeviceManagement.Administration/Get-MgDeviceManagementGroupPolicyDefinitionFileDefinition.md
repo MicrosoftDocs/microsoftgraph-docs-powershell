@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementGroupPolicyDefinitionFileDefinition
 
 ## SYNOPSIS
-Get definitions from deviceManagement
+The group policy definitions associated with the file.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgDeviceManagementGroupPolicyDefinitionFileDefinition -GroupPolicyDefinition
 ```
 
 ## DESCRIPTION
-Get definitions from deviceManagement
+The group policy definitions associated with the file.
 
 ## EXAMPLES
 
@@ -199,7 +199,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyDefinition
-
 ## NOTES
 
 ALIASES

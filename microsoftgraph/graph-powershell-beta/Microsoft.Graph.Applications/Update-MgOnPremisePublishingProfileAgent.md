@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgOnPremisePublishingProfileAgent
 
 ## SYNOPSIS
-Update the navigation property agents in onPremisesPublishingProfiles
+List of existing onPremisesAgent objects.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -41,7 +43,9 @@ Update-MgOnPremisePublishingProfileAgent -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property agents in onPremisesPublishingProfiles
+List of existing onPremisesAgent objects.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -271,13 +275,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnPremisesAgent
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

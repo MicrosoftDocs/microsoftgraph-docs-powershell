@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgSiteListItem
 
 ## SYNOPSIS
-Delete navigation property items for sites
+All items contained in the list.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgSiteListItem -InputObject <ISitesIdentity> [-IfMatch <String>] [-PassTh
 ```
 
 ## DESCRIPTION
-Delete navigation property items for sites
+All items contained in the list.
 
 ## EXAMPLES
 
@@ -159,11 +159,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

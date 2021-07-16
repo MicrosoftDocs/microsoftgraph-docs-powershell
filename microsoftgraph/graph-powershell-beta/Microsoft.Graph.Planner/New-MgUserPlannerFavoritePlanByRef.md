@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgUserPlannerFavoritePlanByRef
 
 ## SYNOPSIS
-Create new navigation property ref to favoritePlans for users
+Read-only.
+Nullable.
+Returns the plannerPlans that the user marked as favorites.
 
 ## SYNTAX
 
@@ -37,7 +39,9 @@ New-MgUserPlannerFavoritePlanByRef -InputObject <IPlannerIdentity> -BodyParamete
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to favoritePlans for users
+Read-only.
+Nullable.
+Returns the plannerPlans that the user marked as favorites.
 
 ## EXAMPLES
 
@@ -141,13 +145,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPathsKruhqeUsersUserIdPlannerFavoriteplansRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

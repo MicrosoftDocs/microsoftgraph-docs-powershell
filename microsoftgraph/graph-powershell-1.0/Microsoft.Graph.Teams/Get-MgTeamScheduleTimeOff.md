@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgTeamScheduleTimeOff
 
 ## SYNOPSIS
-Get timesOff from teams
+The instances of times off in the schedule.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgTeamScheduleTimeOff -InputObject <ITeamsIdentity> [-ExpandProperty <String
 ```
 
 ## DESCRIPTION
-Get timesOff from teams
+The instances of times off in the schedule.
 
 ## EXAMPLES
 
@@ -241,11 +241,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTimeOff1
-
 ## NOTES
 
 ALIASES

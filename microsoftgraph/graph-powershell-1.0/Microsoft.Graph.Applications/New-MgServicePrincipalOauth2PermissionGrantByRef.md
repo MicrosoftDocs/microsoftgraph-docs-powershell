@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgServicePrincipalOauth2PermissionGrantByRef
 
 ## SYNOPSIS
-Create new navigation property ref to oauth2PermissionGrants for servicePrincipals
+Delegated permission grants authorizing this service principal to access an API on behalf of a signed-in user.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -37,7 +39,9 @@ New-MgServicePrincipalOauth2PermissionGrantByRef -InputObject <IApplicationsIden
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to oauth2PermissionGrants for servicePrincipals
+Delegated permission grants authorizing this service principal to access an API on behalf of a signed-in user.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -141,13 +145,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1Wv6Rz0ServiceprincipalsServiceprincipalIdOauth2PermissiongrantsRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

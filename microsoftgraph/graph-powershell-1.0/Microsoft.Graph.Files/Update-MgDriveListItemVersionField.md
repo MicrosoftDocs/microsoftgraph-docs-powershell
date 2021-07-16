@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDriveListItemVersionField
 
 ## SYNOPSIS
-Update the navigation property fields in drives
+A collection of the fields and values for this version of the list item.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Update-MgDriveListItemVersionField -InputObject <IFilesIdentity> -BodyParameter 
 ```
 
 ## DESCRIPTION
-Update the navigation property fields in drives
+A collection of the fields and values for this version of the list item.
 
 ## EXAMPLES
 
@@ -201,13 +201,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

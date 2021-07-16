@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserMessageAttachment
 
 ## SYNOPSIS
-Get attachments from users
+The fileAttachment and itemAttachment attachments for the message.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgUserMessageAttachment -InputObject <IMailIdentity> [-ExpandProperty <Strin
 ```
 
 ## DESCRIPTION
-Get attachments from users
+The fileAttachment and itemAttachment attachments for the message.
 
 ## EXAMPLES
 
@@ -256,11 +256,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMailIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachment
-
 ## NOTES
 
 ALIASES

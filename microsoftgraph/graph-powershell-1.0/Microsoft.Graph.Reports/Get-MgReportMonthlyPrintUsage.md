@@ -260,13 +260,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IReportsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintUsageByPrinter
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintUsageByUser
-
 ## NOTES
 
 ALIASES

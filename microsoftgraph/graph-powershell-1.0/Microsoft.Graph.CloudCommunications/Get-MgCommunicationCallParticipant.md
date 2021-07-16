@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgCommunicationCallParticipant
 
 ## SYNOPSIS
-Get participants from communications
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity> [
 ```
 
 ## DESCRIPTION
-Get participants from communications
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -241,11 +243,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphParticipant
-
 ## NOTES
 
 ALIASES

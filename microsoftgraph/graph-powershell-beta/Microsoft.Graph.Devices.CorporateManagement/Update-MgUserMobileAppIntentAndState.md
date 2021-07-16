@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserMobileAppIntentAndState
 
 ## SYNOPSIS
-Update the navigation property mobileAppIntentAndStates in users
+The list of troubleshooting events for this user.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Update-MgUserMobileAppIntentAndState -InputObject <IDevicesCorporateManagementId
 ```
 
 ## DESCRIPTION
-Update the navigation property mobileAppIntentAndStates in users
+The list of troubleshooting events for this user.
 
 ## EXAMPLES
 
@@ -249,13 +249,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileAppIntentAndState
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

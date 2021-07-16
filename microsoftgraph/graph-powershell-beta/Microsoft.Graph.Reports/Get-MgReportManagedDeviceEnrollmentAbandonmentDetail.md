@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportManagedDeviceEnrollmentAbandonmentDetail
 
 ## SYNOPSIS
-Invoke function managedDeviceEnrollmentAbandonmentDetails
+Metadata for Enrollment abandonment details report
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgReportManagedDeviceEnrollmentAbandonmentDetail -InputObject <IReportsIdent
 ```
 
 ## DESCRIPTION
-Invoke function managedDeviceEnrollmentAbandonmentDetails
+Metadata for Enrollment abandonment details report
 
 ## EXAMPLES
 
@@ -143,11 +143,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IReportsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

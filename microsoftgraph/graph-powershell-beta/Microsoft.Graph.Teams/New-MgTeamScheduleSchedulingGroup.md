@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgTeamScheduleSchedulingGroup
 
 ## SYNOPSIS
-Create new navigation property to schedulingGroups for teams
+The logical grouping of users in the schedule (usually by role).
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ New-MgTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity> -BodyParameter <
 ```
 
 ## DESCRIPTION
-Create new navigation property to schedulingGroups for teams
+The logical grouping of users in the schedule (usually by role).
 
 ## EXAMPLES
 
@@ -273,13 +273,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSchedulingGroup
-
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSchedulingGroup
-
 ## NOTES
 
 ALIASES

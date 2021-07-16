@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserMobileAppTroubleshootingEvent
 
 ## SYNOPSIS
-Delete navigation property mobileAppTroubleshootingEvents for users
+The list of mobile app troubleshooting events for this user.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgUserMobileAppTroubleshootingEvent -InputObject <IDevicesCorporateManage
 ```
 
 ## DESCRIPTION
-Delete navigation property mobileAppTroubleshootingEvents for users
+The list of mobile app troubleshooting events for this user.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserManagedDeviceAssignmentFilterEvaluationStatusDetail
 
 ## SYNOPSIS
-Create new navigation property to assignmentFilterEvaluationStatusDetails for users
+Managed device mobile app configuration states for this device.
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ New-MgUserManagedDeviceAssignmentFilterEvaluationStatusDetail
 ```
 
 ## DESCRIPTION
-Create new navigation property to assignmentFilterEvaluationStatusDetails for users
+Managed device mobile app configuration states for this device.
 
 ## EXAMPLES
 
@@ -192,13 +192,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAssignmentFilterEvaluationStatusDetails
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAssignmentFilterEvaluationStatusDetails
-
 ## NOTES
 
 ALIASES

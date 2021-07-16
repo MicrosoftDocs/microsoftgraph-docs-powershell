@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgSiteListContentTypeColumn
 
 ## SYNOPSIS
-Update the navigation property columns in sites
+The collection of column definitions for this contentType.
 
 ## SYNTAX
 
@@ -59,7 +59,7 @@ Update-MgSiteListContentTypeColumn -InputObject <ISitesIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property columns in sites
+The collection of column definitions for this contentType.
 
 ## EXAMPLES
 
@@ -720,13 +720,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnDefinition
-
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

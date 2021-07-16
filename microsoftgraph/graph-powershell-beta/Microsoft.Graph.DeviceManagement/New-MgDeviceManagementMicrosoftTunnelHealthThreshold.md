@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementMicrosoftTunnelHealthThreshold
 
 ## SYNOPSIS
-Create new navigation property to microsoftTunnelHealthThresholds for deviceManagement
+Collection of MicrosoftTunnelHealthThreshold settings associated with account.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ New-MgDeviceManagementMicrosoftTunnelHealthThreshold
 ```
 
 ## DESCRIPTION
-Create new navigation property to microsoftTunnelHealthThresholds for deviceManagement
+Collection of MicrosoftTunnelHealthThreshold settings associated with account.
 
 ## EXAMPLES
 
@@ -175,11 +175,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelHealthThreshold
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelHealthThreshold
-
 ## NOTES
 
 ALIASES

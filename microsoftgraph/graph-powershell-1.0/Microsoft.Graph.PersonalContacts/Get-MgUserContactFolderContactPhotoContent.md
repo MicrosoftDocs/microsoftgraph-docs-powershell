@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgUserContactFolderContactPhotoContent
 
 ## SYNOPSIS
-Get media content for the navigation property photo from users
+The user's profile photo.
+Read-only.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Get-MgUserContactFolderContactPhotoContent -InputObject <IPersonalContactsIdenti
 ```
 
 ## DESCRIPTION
-Get media content for the navigation property photo from users
+The user's profile photo.
+Read-only.
 
 ## EXAMPLES
 
@@ -128,11 +130,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPersonalContactsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

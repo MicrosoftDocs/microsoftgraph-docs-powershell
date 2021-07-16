@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserMailFolderMessageRule
 
 ## SYNOPSIS
-Update the navigation property messageRules in users
+The collection of rules that apply to the user's Inbox folder.
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ Update-MgUserMailFolderMessageRule -InputObject <IMailIdentity> -BodyParameter <
 ```
 
 ## DESCRIPTION
-Update the navigation property messageRules in users
+The collection of rules that apply to the user's Inbox folder.
 
 ## EXAMPLES
 
@@ -331,13 +331,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMailIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMessageRule
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

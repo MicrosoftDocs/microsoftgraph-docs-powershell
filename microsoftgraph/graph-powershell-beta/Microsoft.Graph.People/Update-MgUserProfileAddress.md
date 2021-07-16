@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserProfileAddress
 
 ## SYNOPSIS
-Update the navigation property addresses in users
+Represents details of addresses associated with the user.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Update-MgUserProfileAddress -InputObject <IPeopleIdentity> -BodyParameter <IMicr
 ```
 
 ## DESCRIPTION
-Update the navigation property addresses in users
+Represents details of addresses associated with the user.
 
 ## EXAMPLES
 
@@ -366,13 +366,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemAddress
-
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

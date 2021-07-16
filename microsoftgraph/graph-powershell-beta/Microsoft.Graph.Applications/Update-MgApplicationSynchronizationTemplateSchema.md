@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgApplicationSynchronizationTemplateSchema
 
 ## SYNOPSIS
-Update the navigation property schema in applications
+Default synchronization schema for the jobs based on this template.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Update-MgApplicationSynchronizationTemplateSchema -InputObject <IApplicationsIde
 ```
 
 ## DESCRIPTION
-Update the navigation property schema in applications
+Default synchronization schema for the jobs based on this template.
 
 ## EXAMPLES
 
@@ -238,13 +238,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSynchronizationSchema
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

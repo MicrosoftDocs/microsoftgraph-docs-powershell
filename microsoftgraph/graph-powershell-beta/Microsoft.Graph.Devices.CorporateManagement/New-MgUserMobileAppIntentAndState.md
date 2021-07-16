@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserMobileAppIntentAndState
 
 ## SYNOPSIS
-Create new navigation property to mobileAppIntentAndStates for users
+The list of troubleshooting events for this user.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ New-MgUserMobileAppIntentAndState -InputObject <IDevicesCorporateManagementIdent
 ```
 
 ## DESCRIPTION
-Create new navigation property to mobileAppIntentAndStates for users
+The list of troubleshooting events for this user.
 
 ## EXAMPLES
 
@@ -217,13 +217,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileAppIntentAndState
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileAppIntentAndState
-
 ## NOTES
 
 ALIASES

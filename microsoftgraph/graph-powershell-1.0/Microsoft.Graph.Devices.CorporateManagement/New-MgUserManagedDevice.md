@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserManagedDevice
 
 ## SYNOPSIS
-Create new navigation property to managedDevices for users
+The managed devices associated with the user.
 
 ## SYNTAX
 
@@ -24,15 +24,16 @@ New-MgUserManagedDevice -UserId <String> [-ActivationLockBypassCode <String>]
  [-DeviceConfigurationStates <IMicrosoftGraphDeviceConfigurationState1[]>] [-DeviceEnrollmentType <String>]
  [-DeviceHealthAttestationState <IMicrosoftGraphDeviceHealthAttestationState>] [-DeviceName <String>]
  [-DeviceRegistrationState <String>] [-EasActivated] [-EasActivationDateTime <DateTime>]
- [-EasDeviceId <String>] [-EmailAddress <String>] [-EnrolledDateTime <DateTime>]
+ [-EasDeviceId <String>] [-EmailAddress <String>] [-EnrolledDateTime <DateTime>] [-EthernetMacAddress <String>]
  [-ExchangeAccessState <String>] [-ExchangeAccessStateReason <String>]
- [-ExchangeLastSuccessfulSyncDateTime <DateTime>] [-FreeStorageSpaceInBytes <Int64>] [-Id <String>]
- [-Imei <String>] [-IsEncrypted] [-IsSupervised] [-JailBroken <String>] [-LastSyncDateTime <DateTime>]
- [-ManagedDeviceName <String>] [-ManagedDeviceOwnerType <String>] [-ManagementAgent <String>]
- [-Manufacturer <String>] [-Meid <String>] [-Model <String>] [-OSVersion <String>] [-OperatingSystem <String>]
- [-PartnerReportedThreatState <String>] [-PhoneNumber <String>] [-RemoteAssistanceSessionErrorDetails <String>]
+ [-ExchangeLastSuccessfulSyncDateTime <DateTime>] [-FreeStorageSpaceInBytes <Int64>] [-Iccid <String>]
+ [-Id <String>] [-Imei <String>] [-IsEncrypted] [-IsSupervised] [-JailBroken <String>]
+ [-LastSyncDateTime <DateTime>] [-ManagedDeviceName <String>] [-ManagedDeviceOwnerType <String>]
+ [-ManagementAgent <String>] [-Manufacturer <String>] [-Meid <String>] [-Model <String>] [-Notes <String>]
+ [-OSVersion <String>] [-OperatingSystem <String>] [-PartnerReportedThreatState <String>]
+ [-PhoneNumber <String>] [-PhysicalMemoryInBytes <Int64>] [-RemoteAssistanceSessionErrorDetails <String>]
  [-RemoteAssistanceSessionUrl <String>] [-SerialNumber <String>] [-SubscriberCarrier <String>]
- [-TotalStorageSpaceInBytes <Int64>] [-UserDisplayName <String>] [-UserId1 <String>]
+ [-TotalStorageSpaceInBytes <Int64>] [-Udid <String>] [-UserDisplayName <String>] [-UserId1 <String>]
  [-UserPrincipalName <String>] [-WiFiMacAddress <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -49,15 +50,16 @@ New-MgUserManagedDevice [-UserId <String>] -InputObject <IDevicesCorporateManage
  [-DeviceConfigurationStates <IMicrosoftGraphDeviceConfigurationState1[]>] [-DeviceEnrollmentType <String>]
  [-DeviceHealthAttestationState <IMicrosoftGraphDeviceHealthAttestationState>] [-DeviceName <String>]
  [-DeviceRegistrationState <String>] [-EasActivated] [-EasActivationDateTime <DateTime>]
- [-EasDeviceId <String>] [-EmailAddress <String>] [-EnrolledDateTime <DateTime>]
+ [-EasDeviceId <String>] [-EmailAddress <String>] [-EnrolledDateTime <DateTime>] [-EthernetMacAddress <String>]
  [-ExchangeAccessState <String>] [-ExchangeAccessStateReason <String>]
- [-ExchangeLastSuccessfulSyncDateTime <DateTime>] [-FreeStorageSpaceInBytes <Int64>] [-Id <String>]
- [-Imei <String>] [-IsEncrypted] [-IsSupervised] [-JailBroken <String>] [-LastSyncDateTime <DateTime>]
- [-ManagedDeviceName <String>] [-ManagedDeviceOwnerType <String>] [-ManagementAgent <String>]
- [-Manufacturer <String>] [-Meid <String>] [-Model <String>] [-OSVersion <String>] [-OperatingSystem <String>]
- [-PartnerReportedThreatState <String>] [-PhoneNumber <String>] [-RemoteAssistanceSessionErrorDetails <String>]
+ [-ExchangeLastSuccessfulSyncDateTime <DateTime>] [-FreeStorageSpaceInBytes <Int64>] [-Iccid <String>]
+ [-Id <String>] [-Imei <String>] [-IsEncrypted] [-IsSupervised] [-JailBroken <String>]
+ [-LastSyncDateTime <DateTime>] [-ManagedDeviceName <String>] [-ManagedDeviceOwnerType <String>]
+ [-ManagementAgent <String>] [-Manufacturer <String>] [-Meid <String>] [-Model <String>] [-Notes <String>]
+ [-OSVersion <String>] [-OperatingSystem <String>] [-PartnerReportedThreatState <String>]
+ [-PhoneNumber <String>] [-PhysicalMemoryInBytes <Int64>] [-RemoteAssistanceSessionErrorDetails <String>]
  [-RemoteAssistanceSessionUrl <String>] [-SerialNumber <String>] [-SubscriberCarrier <String>]
- [-TotalStorageSpaceInBytes <Int64>] [-UserDisplayName <String>] [-UserPrincipalName <String>]
+ [-TotalStorageSpaceInBytes <Int64>] [-Udid <String>] [-UserDisplayName <String>] [-UserPrincipalName <String>]
  [-WiFiMacAddress <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -74,7 +76,7 @@ New-MgUserManagedDevice -InputObject <IDevicesCorporateManagementIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to managedDevices for users
+The managed devices associated with the user.
 
 ## EXAMPLES
 
@@ -449,6 +451,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -EthernetMacAddress
+Ethernet MAC.
+This property is read-only.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ExchangeAccessState
 deviceManagementExchangeAccessState
 
@@ -501,6 +519,22 @@ This property is read-only.
 
 ```yaml
 Type: Int64
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Iccid
+Integrated Circuit Card Identifier, it is A SIM card's unique identification number.
+This property is read-only.
+
+```yaml
+Type: String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -716,6 +750,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Notes
+Notes on the device created by IT Admin
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -OperatingSystem
 Operating system of the device.
 Windows, iOS, etc.
@@ -770,6 +819,22 @@ This property is read-only.
 
 ```yaml
 Type: String
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PhysicalMemoryInBytes
+Total Memory in Bytes.
+This property is read-only.
+
+```yaml
+Type: Int64
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -850,6 +915,22 @@ This property is read-only.
 
 ```yaml
 Type: Int64
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Udid
+Unique Device Identifier for iOS and macOS devices.
+This property is read-only.
+
+```yaml
+Type: String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -988,13 +1069,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDevice1
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDevice1
-
 ## NOTES
 
 ALIASES
@@ -1116,10 +1194,12 @@ BODYPARAMETER <IMicrosoftGraphManagedDevice1>: Devices that are managed or pre-e
   - `[EasDeviceId <String>]`: Exchange ActiveSync Id of the device. This property is read-only.
   - `[EmailAddress <String>]`: Email(s) for the user associated with the device. This property is read-only.
   - `[EnrolledDateTime <DateTime?>]`: Enrollment time of the device. This property is read-only.
+  - `[EthernetMacAddress <String>]`: Ethernet MAC. This property is read-only.
   - `[ExchangeAccessState <String>]`: deviceManagementExchangeAccessState
   - `[ExchangeAccessStateReason <String>]`: deviceManagementExchangeAccessStateReason
   - `[ExchangeLastSuccessfulSyncDateTime <DateTime?>]`: Last time the device contacted Exchange. This property is read-only.
   - `[FreeStorageSpaceInBytes <Int64?>]`: Free Storage in Bytes. This property is read-only.
+  - `[Iccid <String>]`: Integrated Circuit Card Identifier, it is A SIM card's unique identification number. This property is read-only.
   - `[Imei <String>]`: IMEI. This property is read-only.
   - `[IsEncrypted <Boolean?>]`: Device encryption status. This property is read-only.
   - `[IsSupervised <Boolean?>]`: Device supervised status. This property is read-only.
@@ -1131,15 +1211,18 @@ BODYPARAMETER <IMicrosoftGraphManagedDevice1>: Devices that are managed or pre-e
   - `[Manufacturer <String>]`: Manufacturer of the device. This property is read-only.
   - `[Meid <String>]`: MEID. This property is read-only.
   - `[Model <String>]`: Model of the device. This property is read-only.
+  - `[Notes <String>]`: Notes on the device created by IT Admin
   - `[OSVersion <String>]`: Operating system version of the device. This property is read-only.
   - `[OperatingSystem <String>]`: Operating system of the device. Windows, iOS, etc. This property is read-only.
   - `[PartnerReportedThreatState <String>]`: managedDevicePartnerReportedHealthState
   - `[PhoneNumber <String>]`: Phone number of the device. This property is read-only.
+  - `[PhysicalMemoryInBytes <Int64?>]`: Total Memory in Bytes. This property is read-only.
   - `[RemoteAssistanceSessionErrorDetails <String>]`: An error string that identifies issues when creating Remote Assistance session objects. This property is read-only.
   - `[RemoteAssistanceSessionUrl <String>]`: Url that allows a Remote Assistance session to be established with the device. This property is read-only.
   - `[SerialNumber <String>]`: SerialNumber. This property is read-only.
   - `[SubscriberCarrier <String>]`: Subscriber Carrier. This property is read-only.
   - `[TotalStorageSpaceInBytes <Int64?>]`: Total Storage in Bytes. This property is read-only.
+  - `[Udid <String>]`: Unique Device Identifier for iOS and macOS devices. This property is read-only.
   - `[UserDisplayName <String>]`: User display name. This property is read-only.
   - `[UserId <String>]`: Unique Identifier for the user associated with the device. This property is read-only.
   - `[UserPrincipalName <String>]`: Device user principal name. This property is read-only.

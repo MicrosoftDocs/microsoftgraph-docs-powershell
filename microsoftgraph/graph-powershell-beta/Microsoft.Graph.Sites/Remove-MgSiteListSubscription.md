@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgSiteListSubscription
 
 ## SYNOPSIS
-Delete navigation property subscriptions for sites
+The set of subscriptions on the list.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgSiteListSubscription -InputObject <ISitesIdentity> [-IfMatch <String>] 
 ```
 
 ## DESCRIPTION
-Delete navigation property subscriptions for sites
+The set of subscriptions on the list.
 
 ## EXAMPLES
 
@@ -159,11 +159,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Restore-MgUserManagedDevicePasscode
 
 ## SYNOPSIS
-Invoke action recoverPasscode
+Recover passcode
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Restore-MgUserManagedDevicePasscode -InputObject <IUsersActionsIdentity> [-PassT
 ```
 
 ## DESCRIPTION
-Invoke action recoverPasscode
+Recover passcode
 
 ## EXAMPLES
 
@@ -129,11 +129,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

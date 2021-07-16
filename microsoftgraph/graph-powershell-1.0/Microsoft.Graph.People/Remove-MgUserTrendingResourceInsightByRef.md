@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserTrendingResourceInsightByRef
 
 ## SYNOPSIS
-Delete ref of navigation property resource for users
+Used for navigating to the trending document.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgUserTrendingResourceInsightByRef -InputObject <IPeopleIdentity> [-IfMat
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property resource for users
+Used for navigating to the trending document.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

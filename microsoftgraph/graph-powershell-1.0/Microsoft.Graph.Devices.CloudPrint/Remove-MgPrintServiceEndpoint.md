@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgPrintServiceEndpoint
 
 ## SYNOPSIS
-Delete navigation property endpoints for print
+Endpoints that can be used to access the service.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +27,9 @@ Remove-MgPrintServiceEndpoint -InputObject <IDevicesCloudPrintIdentity> [-IfMatc
 ```
 
 ## DESCRIPTION
-Delete navigation property endpoints for print
+Endpoints that can be used to access the service.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -144,11 +148,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

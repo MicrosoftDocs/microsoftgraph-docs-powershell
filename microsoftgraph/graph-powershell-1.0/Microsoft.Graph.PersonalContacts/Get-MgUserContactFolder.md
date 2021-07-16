@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserContactFolder
 
 ## SYNOPSIS
-Get contactFolders from users
+The user's contacts folders.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgUserContactFolder -InputObject <IPersonalContactsIdentity> [-ExpandPropert
 ```
 
 ## DESCRIPTION
-Get contactFolders from users
+The user's contacts folders.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -241,11 +245,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPersonalContactsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContactFolder1
-
 ## NOTES
 
 ALIASES

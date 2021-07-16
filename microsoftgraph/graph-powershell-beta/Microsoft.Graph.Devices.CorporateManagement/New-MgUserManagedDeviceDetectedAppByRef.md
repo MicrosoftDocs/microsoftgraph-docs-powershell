@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserManagedDeviceDetectedAppByRef
 
 ## SYNOPSIS
-Create new navigation property ref to detectedApps for users
+All applications currently installed on the device
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ New-MgUserManagedDeviceDetectedAppByRef -InputObject <IDevicesCorporateManagemen
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to detectedApps for users
+All applications currently installed on the device
 
 ## EXAMPLES
 
@@ -156,13 +156,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1Ifr0BfUsersUserIdManageddevicesManageddeviceIdDetectedappsRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserManagedDeviceMobileAppConfigurationState
 
 ## SYNOPSIS
-Create new navigation property to managedDeviceMobileAppConfigurationStates for users
+Managed device mobile app configuration states for this device.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ New-MgUserManagedDeviceMobileAppConfigurationState -InputObject <IDevicesCorpora
 ```
 
 ## DESCRIPTION
-Create new navigation property to managedDeviceMobileAppConfigurationStates for users
+Managed device mobile app configuration states for this device.
 
 ## EXAMPLES
 
@@ -313,13 +313,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDeviceMobileAppConfigurationState
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDeviceMobileAppConfigurationState
-
 ## NOTES
 
 ALIASES

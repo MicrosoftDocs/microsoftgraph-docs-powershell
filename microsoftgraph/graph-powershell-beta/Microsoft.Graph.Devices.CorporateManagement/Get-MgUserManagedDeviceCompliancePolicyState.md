@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserManagedDeviceCompliancePolicyState
 
 ## SYNOPSIS
-Get deviceCompliancePolicyStates from users
+Device compliance policy states for this device.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgUserManagedDeviceCompliancePolicyState -InputObject <IDevicesCorporateMana
 ```
 
 ## DESCRIPTION
-Get deviceCompliancePolicyStates from users
+Device compliance policy states for this device.
 
 ## EXAMPLES
 
@@ -256,11 +256,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicyState
-
 ## NOTES
 
 ALIASES

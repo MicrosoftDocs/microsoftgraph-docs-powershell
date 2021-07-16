@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperationByRef
 
 ## SYNOPSIS
-Update the ref of navigation property lastEstimateStatisticsOperation in compliance
+The last estimate operation associated with the sourceCollection.
 
 ## SYNTAX
 
@@ -40,7 +40,7 @@ Set-MgComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperationByR
 ```
 
 ## DESCRIPTION
-Update the ref of navigation property lastEstimateStatisticsOperation in compliance
+The last estimate operation associated with the sourceCollection.
 
 ## EXAMPLES
 
@@ -174,13 +174,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

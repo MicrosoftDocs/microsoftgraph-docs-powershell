@@ -8,7 +8,8 @@ schema: 2.0.0
 # Set-MgPrintTaskDefinitionTaskDefinitionByRef
 
 ## SYNOPSIS
-Update the ref of navigation property definition in print
+The printTaskDefinition that was used to create this task.
+Read-only.
 
 ## SYNTAX
 
@@ -37,7 +38,8 @@ Set-MgPrintTaskDefinitionTaskDefinitionByRef -InputObject <IDevicesCloudPrintIde
 ```
 
 ## DESCRIPTION
-Update the ref of navigation property definition in print
+The printTaskDefinition that was used to create this task.
+Read-only.
 
 ## EXAMPLES
 
@@ -171,13 +173,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

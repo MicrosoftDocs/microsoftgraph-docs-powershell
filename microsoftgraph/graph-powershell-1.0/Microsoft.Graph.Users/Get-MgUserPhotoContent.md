@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgUserPhotoContent
 
 ## SYNOPSIS
-Get media content for the navigation property photo from users
+The user's profile photo.
+Read-only.
 
 ## SYNTAX
 
@@ -34,7 +35,8 @@ Get-MgUserPhotoContent -InputObject <IUsersIdentity> -OutFile <String> [-PassThr
 ```
 
 ## DESCRIPTION
-Get media content for the navigation property photo from users
+The user's profile photo.
+Read-only.
 
 ## EXAMPLES
 
@@ -122,11 +124,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

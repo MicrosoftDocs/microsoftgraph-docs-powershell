@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserManagedDeviceAssignmentFilterEvaluationStatusDetail
 
 ## SYNOPSIS
-Update the navigation property assignmentFilterEvaluationStatusDetails in users
+Managed device mobile app configuration states for this device.
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ Update-MgUserManagedDeviceAssignmentFilterEvaluationStatusDetail
 ```
 
 ## DESCRIPTION
-Update the navigation property assignmentFilterEvaluationStatusDetails in users
+Managed device mobile app configuration states for this device.
 
 ## EXAMPLES
 
@@ -224,13 +224,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAssignmentFilterEvaluationStatusDetails
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

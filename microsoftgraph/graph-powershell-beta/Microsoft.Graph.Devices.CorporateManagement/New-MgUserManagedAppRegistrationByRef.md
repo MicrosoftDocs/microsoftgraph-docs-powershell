@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserManagedAppRegistrationByRef
 
 ## SYNOPSIS
-Create new navigation property ref to managedAppRegistrations for users
+Zero or more managed app registrations that belong to the user.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ New-MgUserManagedAppRegistrationByRef -InputObject <IDevicesCorporateManagementI
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to managedAppRegistrations for users
+Zero or more managed app registrations that belong to the user.
 
 ## EXAMPLES
 
@@ -141,13 +141,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1Uxfgf2UsersUserIdManagedappregistrationsRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

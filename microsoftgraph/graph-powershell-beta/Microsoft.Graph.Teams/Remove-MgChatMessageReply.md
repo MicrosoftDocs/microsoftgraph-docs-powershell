@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgChatMessageReply
 
 ## SYNOPSIS
-Delete navigation property replies for chats
+Replies for a specified message.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgChatMessageReply -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Pa
 ```
 
 ## DESCRIPTION
-Delete navigation property replies for chats
+Replies for a specified message.
 
 ## EXAMPLES
 
@@ -159,11 +159,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

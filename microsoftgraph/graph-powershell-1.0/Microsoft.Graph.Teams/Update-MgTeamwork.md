@@ -146,11 +146,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamwork1
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -182,7 +180,7 @@ BODYPARAMETER <IMicrosoftGraphTeamwork1>: teamwork
       - `[Protocol <String>]`: workforceIntegrationEncryptionProtocol
       - `[Secret <String>]`: Encryption shared secret.
     - `[IsActive <Boolean?>]`: Indicates whether this workforce integration is currently active and available.
-    - `[SupportedEntities <String>]`: workforceIntegrationSupportedEntities
+    - `[SupportedEntities <String>]`: 
     - `[Url <String>]`: Workforce Integration URL for callbacks from the Shifts service.
 
 WORKFORCEINTEGRATIONS <IMicrosoftGraphWorkforceIntegration1[]>: .
@@ -204,7 +202,7 @@ WORKFORCEINTEGRATIONS <IMicrosoftGraphWorkforceIntegration1[]>: .
     - `[Protocol <String>]`: workforceIntegrationEncryptionProtocol
     - `[Secret <String>]`: Encryption shared secret.
   - `[IsActive <Boolean?>]`: Indicates whether this workforce integration is currently active and available.
-  - `[SupportedEntities <String>]`: workforceIntegrationSupportedEntities
+  - `[SupportedEntities <String>]`: 
   - `[Url <String>]`: Workforce Integration URL for callbacks from the Shifts service.
 
 ## RELATED LINKS

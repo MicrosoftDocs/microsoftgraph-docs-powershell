@@ -8,7 +8,10 @@ schema: 2.0.0
 # New-MgGroupOwnerByRef
 
 ## SYNOPSIS
-Create new navigation property ref to owners for groups
+The owners of the group.
+The owners are a set of non-admin users who are allowed to modify this object.
+HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -36,7 +39,10 @@ New-MgGroupOwnerByRef -InputObject <IGroupsIdentity> -BodyParameter <Hashtable> 
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to owners for groups
+The owners of the group.
+The owners are a set of non-admin users who are allowed to modify this object.
+HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -140,13 +146,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1Hc8E36GroupsGroupIdOwnersRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

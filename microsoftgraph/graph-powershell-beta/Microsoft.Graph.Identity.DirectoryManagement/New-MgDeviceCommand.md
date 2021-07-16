@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceCommand
 
 ## SYNOPSIS
-Create new navigation property to commands for devices
+Set of commands sent to this device.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ New-MgDeviceCommand -InputObject <IIdentityDirectoryManagementIdentity> -BodyPar
 ```
 
 ## DESCRIPTION
-Create new navigation property to commands for devices
+Set of commands sent to this device.
 
 ## EXAMPLES
 
@@ -296,13 +296,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCommand
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCommand
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgServicePrincipalTokenLifetimePolicy
 
 ## SYNOPSIS
-Get tokenLifetimePolicies from servicePrincipals
+The tokenLifetimePolicies assigned to this service principal.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgServicePrincipalTokenLifetimePolicy -ServicePrincipalId <String> [-ExpandP
 ```
 
 ## DESCRIPTION
-Get tokenLifetimePolicies from servicePrincipals
+The tokenLifetimePolicies assigned to this service principal.
 
 ## EXAMPLES
 
@@ -199,7 +199,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTokenLifetimePolicy1
-
 ## NOTES
 
 ALIASES

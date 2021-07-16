@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgGroupDrive
 
 ## SYNOPSIS
-Delete navigation property drive for groups
+The group's default drive.
+Read-only.
 
 ## SYNTAX
 
@@ -36,7 +37,8 @@ Remove-MgGroupDrive -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassThru
 ```
 
 ## DESCRIPTION
-Delete navigation property drive for groups
+The group's default drive.
+Read-only.
 
 ## EXAMPLES
 
@@ -155,11 +157,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

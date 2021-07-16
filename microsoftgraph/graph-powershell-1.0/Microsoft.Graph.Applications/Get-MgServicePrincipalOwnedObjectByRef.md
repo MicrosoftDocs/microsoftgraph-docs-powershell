@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgServicePrincipalOwnedObjectByRef
 
 ## SYNOPSIS
-Get ref of ownedObjects from servicePrincipals
+Directory objects that are owned by this service principal.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -19,7 +21,9 @@ Get-MgServicePrincipalOwnedObjectByRef -ServicePrincipalId <String> [-Filter <St
 ```
 
 ## DESCRIPTION
-Get ref of ownedObjects from servicePrincipals
+Directory objects that are owned by this service principal.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -169,7 +173,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,10 @@ schema: 2.0.0
 # New-MgCommunicationCallRecordSession
 
 ## SYNOPSIS
-Create new navigation property to sessions for communications
+List of sessions involved in the call.
+Peer-to-peer calls typically only have one session, whereas group calls typically have at least one session per participant.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -44,7 +47,10 @@ New-MgCommunicationCallRecordSession -InputObject <ICloudCommunicationsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to sessions for communications
+List of sessions involved in the call.
+Peer-to-peer calls typically only have one session, whereas group calls typically have at least one session per participant.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -280,13 +286,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallRecordsSession
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallRecordsSession
-
 ## NOTES
 
 ALIASES

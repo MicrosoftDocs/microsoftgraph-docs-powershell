@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserManagedDeviceConfigurationState
 
 ## SYNOPSIS
-Update the navigation property deviceConfigurationStates in users
+Device configuration states for this device.
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ Update-MgUserManagedDeviceConfigurationState -InputObject <IDevicesCorporateMana
 ```
 
 ## DESCRIPTION
-Update the navigation property deviceConfigurationStates in users
+Device configuration states for this device.
 
 ## EXAMPLES
 
@@ -342,13 +342,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationState
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

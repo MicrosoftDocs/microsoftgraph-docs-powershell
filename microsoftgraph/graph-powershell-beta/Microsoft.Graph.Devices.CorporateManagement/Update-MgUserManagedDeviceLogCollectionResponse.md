@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserManagedDeviceLogCollectionResponse
 
 ## SYNOPSIS
-Update the navigation property logCollectionRequests in users
+List of log collection requests
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Update-MgUserManagedDeviceLogCollectionResponse -InputObject <IDevicesCorporateM
 ```
 
 ## DESCRIPTION
-Update the navigation property logCollectionRequests in users
+List of log collection requests
 
 ## EXAMPLES
 
@@ -344,13 +344,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceLogCollectionResponse
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

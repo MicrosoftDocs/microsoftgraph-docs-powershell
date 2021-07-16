@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgPrintPrinterTaskTriggerDefinitionByRef
 
 ## SYNOPSIS
-Delete ref of navigation property definition for print
+An abstract definition that will be used to create a printTask when triggered by a print event.
+Read-only.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgPrintPrinterTaskTriggerDefinitionByRef -InputObject <IDevicesCloudPrint
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property definition for print
+An abstract definition that will be used to create a printTask when triggered by a print event.
+Read-only.
 
 ## EXAMPLES
 
@@ -144,11 +146,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

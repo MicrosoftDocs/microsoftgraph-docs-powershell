@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserManagedDeviceDetectedApp
 
 ## SYNOPSIS
-Get detectedApps from users
+All applications currently installed on the device
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgUserManagedDeviceDetectedApp -ManagedDeviceId <String> -UserId <String> [-
 ```
 
 ## DESCRIPTION
-Get detectedApps from users
+All applications currently installed on the device
 
 ## EXAMPLES
 
@@ -214,7 +214,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDetectedApp
-
 ## NOTES
 
 ALIASES

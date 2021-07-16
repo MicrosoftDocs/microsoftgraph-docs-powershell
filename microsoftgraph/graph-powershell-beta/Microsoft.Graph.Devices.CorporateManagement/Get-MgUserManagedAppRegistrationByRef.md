@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserManagedAppRegistrationByRef
 
 ## SYNOPSIS
-Get ref of managedAppRegistrations from users
+Zero or more managed app registrations that belong to the user.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-MgUserManagedAppRegistrationByRef -UserId <String> [-Filter <String>] [-Sear
 ```
 
 ## DESCRIPTION
-Get ref of managedAppRegistrations from users
+Zero or more managed app registrations that belong to the user.
 
 ## EXAMPLES
 
@@ -168,7 +168,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

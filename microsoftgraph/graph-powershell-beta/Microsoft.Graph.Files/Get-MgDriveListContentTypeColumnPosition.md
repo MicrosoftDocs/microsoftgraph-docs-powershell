@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDriveListContentTypeColumnPosition
 
 ## SYNOPSIS
-Get columnPositions from drives
+Column order information in a content type.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgDriveListContentTypeColumnPosition -ContentTypeId <String> -DriveId <Strin
 ```
 
 ## DESCRIPTION
-Get columnPositions from drives
+Column order information in a content type.
 
 ## EXAMPLES
 
@@ -214,7 +214,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnDefinition
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserProfilePatent
 
 ## SYNOPSIS
-Create new navigation property to patents for users
+Represents patents that a user has added to their profile.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ New-MgUserProfilePatent -InputObject <IPeopleIdentity> -BodyParameter <IMicrosof
 ```
 
 ## DESCRIPTION
-Create new navigation property to patents for users
+Represents patents that a user has added to their profile.
 
 ## EXAMPLES
 
@@ -394,13 +394,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemPatent
-
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemPatent
-
 ## NOTES
 
 ALIASES

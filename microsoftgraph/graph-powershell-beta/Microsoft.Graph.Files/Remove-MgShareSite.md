@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgShareSite
 
 ## SYNOPSIS
-Delete navigation property site for shares
+Used to access the underlying site
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgShareSite -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassThru]
 ```
 
 ## DESCRIPTION
-Delete navigation property site for shares
+Used to access the underlying site
 
 ## EXAMPLES
 
@@ -129,11 +129,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

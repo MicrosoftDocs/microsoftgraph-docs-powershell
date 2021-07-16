@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgOfficeClientConfigurationAssignment
 
 ## SYNOPSIS
-Update the navigation property assignments in officeConfiguration
+The list of group assignments for the policy.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Update-MgOfficeClientConfigurationAssignment -InputObject <IDevicesCorporateMana
 ```
 
 ## DESCRIPTION
-Update the navigation property assignments in officeConfiguration
+The list of group assignments for the policy.
 
 ## EXAMPLES
 
@@ -206,13 +206,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOfficeClientConfigurationAssignment
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

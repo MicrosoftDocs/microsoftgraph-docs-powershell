@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgPrintConnector
 
 ## SYNOPSIS
-Create new navigation property to connectors for print
+The list of available print connectors.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ New-MgPrintConnector -BodyParameter <IMicrosoftGraphPrintConnector> [-WhatIf] [-
 ```
 
 ## DESCRIPTION
-Create new navigation property to connectors for print
+The list of available print connectors.
 
 ## EXAMPLES
 
@@ -205,11 +205,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintConnector
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintConnector
-
 ## NOTES
 
 ALIASES

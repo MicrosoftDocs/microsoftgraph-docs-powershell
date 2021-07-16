@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPrintPrinterConnectorByRef
 
 ## SYNOPSIS
-Get ref of connectors from print
+The connectors that are associated with the printer.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-MgPrintPrinterConnectorByRef -PrinterId <String> [-Filter <String>] [-Search
 ```
 
 ## DESCRIPTION
-Get ref of connectors from print
+The connectors that are associated with the printer.
 
 ## EXAMPLES
 
@@ -168,7 +168,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

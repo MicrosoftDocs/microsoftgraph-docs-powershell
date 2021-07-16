@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgUserDrive
 
 ## SYNOPSIS
-Delete navigation property drive for users
+The user's OneDrive.
+Read-only.
 
 ## SYNTAX
 
@@ -36,7 +37,8 @@ Remove-MgUserDrive -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassThru]
 ```
 
 ## DESCRIPTION
-Delete navigation property drive for users
+The user's OneDrive.
+Read-only.
 
 ## EXAMPLES
 
@@ -155,11 +157,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

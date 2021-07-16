@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgEducationMeTaughtClassByRef
 
 ## SYNOPSIS
-Create new navigation property ref to taughtClasses for education
+Classes for which the user is a teacher.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ New-MgEducationMeTaughtClassByRef -BodyParameter <Hashtable> [-WhatIf] [-Confirm
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to taughtClasses for education
+Classes for which the user is a teacher.
 
 ## EXAMPLES
 
@@ -96,11 +96,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1970Ip3EducationMeTaughtclassesRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

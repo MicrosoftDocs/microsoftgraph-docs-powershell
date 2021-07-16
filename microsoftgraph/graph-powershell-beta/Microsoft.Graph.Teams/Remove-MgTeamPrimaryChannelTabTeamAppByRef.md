@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgTeamPrimaryChannelTabTeamAppByRef
 
 ## SYNOPSIS
-Delete ref of navigation property teamsApp for teams
+The application that is linked to the tab.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgTeamPrimaryChannelTabTeamAppByRef -InputObject <ITeamsIdentity> [-IfMat
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property teamsApp for teams
+The application that is linked to the tab.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

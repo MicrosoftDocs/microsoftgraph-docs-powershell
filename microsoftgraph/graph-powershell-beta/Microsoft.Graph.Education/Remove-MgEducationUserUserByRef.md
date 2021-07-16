@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgEducationUserUserByRef
 
 ## SYNOPSIS
-Delete ref of navigation property user for education
+The directory user corresponding to this user.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgEducationUserUserByRef -InputObject <IEducationIdentity> [-IfMatch <Str
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property user for education
+The directory user corresponding to this user.
 
 ## EXAMPLES
 
@@ -129,11 +129,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

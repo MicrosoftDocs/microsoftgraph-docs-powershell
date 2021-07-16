@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserManagedDeviceWindowProtectionState
 
 ## SYNOPSIS
-Update the navigation property windowsProtectionState in users
+The device protection status.
 
 ## SYNTAX
 
@@ -53,7 +53,7 @@ Update-MgUserManagedDeviceWindowProtectionState -InputObject <IDevicesCorporateM
 ```
 
 ## DESCRIPTION
-Update the navigation property windowsProtectionState in users
+The device protection status.
 
 ## EXAMPLES
 
@@ -519,13 +519,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsProtectionState
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

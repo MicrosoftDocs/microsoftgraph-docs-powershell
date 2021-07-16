@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgComplianceEdiscoveryCaseReviewSetQuery
 
 ## SYNOPSIS
-Delete navigation property queries for compliance
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgComplianceEdiscoveryCaseReviewSetQuery -InputObject <IComplianceIdentit
 ```
 
 ## DESCRIPTION
-Delete navigation property queries for compliance
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -159,11 +161,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

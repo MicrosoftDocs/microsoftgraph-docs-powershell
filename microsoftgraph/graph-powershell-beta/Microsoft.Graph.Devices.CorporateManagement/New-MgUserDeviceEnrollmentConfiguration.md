@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserDeviceEnrollmentConfiguration
 
 ## SYNOPSIS
-Create new navigation property to deviceEnrollmentConfigurations for users
+Get enrollment configurations targeted to the user
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ New-MgUserDeviceEnrollmentConfiguration -InputObject <IDevicesCorporateManagemen
 ```
 
 ## DESCRIPTION
-Create new navigation property to deviceEnrollmentConfigurations for users
+Get enrollment configurations targeted to the user
 
 ## EXAMPLES
 
@@ -284,13 +284,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceEnrollmentConfiguration
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceEnrollmentConfiguration
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgUserPlanner
 
 ## SYNOPSIS
-Delete navigation property planner for users
+Selective Planner services available to the user.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -24,7 +26,9 @@ Remove-MgUserPlanner -InputObject <IPlannerIdentity> [-IfMatch <String>] [-PassT
 ```
 
 ## DESCRIPTION
-Delete navigation property planner for users
+Selective Planner services available to the user.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -128,11 +132,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

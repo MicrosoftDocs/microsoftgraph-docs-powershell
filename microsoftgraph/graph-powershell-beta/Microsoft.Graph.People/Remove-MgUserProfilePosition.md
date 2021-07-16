@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserProfilePosition
 
 ## SYNOPSIS
-Delete navigation property positions for users
+Represents detailed information about work positions associated with a user's profile.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgUserProfilePosition -InputObject <IPeopleIdentity> [-IfMatch <String>] 
 ```
 
 ## DESCRIPTION
-Delete navigation property positions for users
+Represents detailed information about work positions associated with a user's profile.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

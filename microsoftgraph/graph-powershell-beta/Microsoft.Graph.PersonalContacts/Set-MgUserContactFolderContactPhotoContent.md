@@ -8,7 +8,8 @@ schema: 2.0.0
 # Set-MgUserContactFolderContactPhotoContent
 
 ## SYNOPSIS
-Update media content for the navigation property photo in users
+The user's profile photo.
+Read-only.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Set-MgUserContactFolderContactPhotoContent -InputObject <IPersonalContactsIdenti
 ```
 
 ## DESCRIPTION
-Update media content for the navigation property photo in users
+The user's profile photo.
+Read-only.
 
 ## EXAMPLES
 
@@ -176,13 +178,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPersonalContactsIdentity
-
 ### System.IO.Stream
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserManagedDeviceConfigurationState
 
 ## SYNOPSIS
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ New-MgUserManagedDeviceConfigurationState -InputObject <IDevicesCorporateManagem
 ```
 
 ## DESCRIPTION
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ## EXAMPLES
 
@@ -267,13 +267,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationState1
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationState1
-
 ## NOTES
 
 ALIASES

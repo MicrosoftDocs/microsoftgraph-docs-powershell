@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserOutlookMasterCategory
 
 ## SYNOPSIS
-Update the navigation property masterCategories in users
+A list of categories defined for the user.
 
 ## SYNTAX
 
@@ -38,7 +38,7 @@ Update-MgUserOutlookMasterCategory -InputObject <IUsersIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property masterCategories in users
+A list of categories defined for the user.
 
 ## EXAMPLES
 
@@ -220,13 +220,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOutlookCategory
-
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

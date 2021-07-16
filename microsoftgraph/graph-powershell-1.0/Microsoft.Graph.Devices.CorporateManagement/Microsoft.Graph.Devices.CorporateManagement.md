@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-Module Guid: 3cfe18d3-c2fc-4b4c-8ee0-a378cce2c8bc
+Module Guid: d268d705-6d1d-439c-8c79-3e495ab05b99
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement
 Help Version: 1.0.0.0
 Locale: en-US
@@ -12,25 +12,25 @@ Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Devices.CorporateManagement Cmdlets
 ### [Get-MgUserDeviceManagementTroubleshootingEvent](Get-MgUserDeviceManagementTroubleshootingEvent.md)
-Get deviceManagementTroubleshootingEvents from users
+The list of troubleshooting events for this user.
 
 ### [Get-MgUserManagedAppRegistration](Get-MgUserManagedAppRegistration.md)
-Get managedAppRegistrations from users
+Zero or more managed app registrations that belong to the user.
 
 ### [Get-MgUserManagedAppRegistrationByRef](Get-MgUserManagedAppRegistrationByRef.md)
-Get ref of managedAppRegistrations from users
+Zero or more managed app registrations that belong to the user.
 
 ### [Get-MgUserManagedDevice](Get-MgUserManagedDevice.md)
-Get managedDevices from users
+The managed devices associated with the user.
 
 ### [Get-MgUserManagedDeviceCategory](Get-MgUserManagedDeviceCategory.md)
-Get deviceCategory from users
+Device category
 
 ### [Get-MgUserManagedDeviceCompliancePolicyState](Get-MgUserManagedDeviceCompliancePolicyState.md)
-Get deviceCompliancePolicyStates from users
+Device compliance policy states for this device.
 
 ### [Get-MgUserManagedDeviceConfigurationState](Get-MgUserManagedDeviceConfigurationState.md)
-Get deviceConfigurationStates from users
+Device configuration states for this device.
 
 ### [Invoke-MgTargetDeviceAppMgtManagedAppPolicyApp](Invoke-MgTargetDeviceAppMgtManagedAppPolicyApp.md)
 Invoke action targetApps
@@ -147,308 +147,308 @@ Invoke action targetApps
 Invoke action targetApps
 
 ### [New-MgUserDeviceManagementTroubleshootingEvent](New-MgUserDeviceManagementTroubleshootingEvent.md)
-Create new navigation property to deviceManagementTroubleshootingEvents for users
+The list of troubleshooting events for this user.
 
 ### [New-MgUserManagedAppRegistrationByRef](New-MgUserManagedAppRegistrationByRef.md)
-Create new navigation property ref to managedAppRegistrations for users
+Zero or more managed app registrations that belong to the user.
 
 ### [New-MgUserManagedDevice](New-MgUserManagedDevice.md)
-Create new navigation property to managedDevices for users
+The managed devices associated with the user.
 
 ### [New-MgUserManagedDeviceCompliancePolicyState](New-MgUserManagedDeviceCompliancePolicyState.md)
-Create new navigation property to deviceCompliancePolicyStates for users
+Device compliance policy states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserDeviceManagementTroubleshootingEvent](Remove-MgUserDeviceManagementTroubleshootingEvent.md)
-Delete navigation property deviceManagementTroubleshootingEvents for users
+The list of troubleshooting events for this user.
 
 ### [Remove-MgUserManagedDevice](Remove-MgUserManagedDevice.md)
-Delete navigation property managedDevices for users
+The managed devices associated with the user.
 
 ### [Remove-MgUserManagedDeviceCategory](Remove-MgUserManagedDeviceCategory.md)
-Delete navigation property deviceCategory for users
+Device category
 
 ### [Remove-MgUserManagedDeviceCompliancePolicyState](Remove-MgUserManagedDeviceCompliancePolicyState.md)
-Delete navigation property deviceCompliancePolicyStates for users
+Device compliance policy states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Update-MgUserDeviceManagementTroubleshootingEvent](Update-MgUserDeviceManagementTroubleshootingEvent.md)
-Update the navigation property deviceManagementTroubleshootingEvents in users
+The list of troubleshooting events for this user.
 
 ### [Update-MgUserManagedDevice](Update-MgUserManagedDevice.md)
-Update the navigation property managedDevices in users
+The managed devices associated with the user.
 
 ### [Update-MgUserManagedDeviceCategory](Update-MgUserManagedDeviceCategory.md)
-Update the navigation property deviceCategory in users
+Device category
 
 ### [Update-MgUserManagedDeviceCompliancePolicyState](Update-MgUserManagedDeviceCompliancePolicyState.md)
-Update the navigation property deviceCompliancePolicyStates in users
+Device compliance policy states for this device.
 
 ### [Update-MgUserManagedDeviceConfigurationState](Update-MgUserManagedDeviceConfigurationState.md)
-Update the navigation property deviceConfigurationStates in users
+Device configuration states for this device.
 

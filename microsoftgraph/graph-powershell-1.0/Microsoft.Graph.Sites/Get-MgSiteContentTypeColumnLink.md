@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteContentTypeColumnLink
 
 ## SYNOPSIS
-Get columnLinks from sites
+The collection of columns that are required by this content type
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgSiteContentTypeColumnLink -InputObject <ISitesIdentity> [-ExpandProperty <
 ```
 
 ## DESCRIPTION
-Get columnLinks from sites
+The collection of columns that are required by this content type
 
 ## EXAMPLES
 
@@ -256,11 +256,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnLink
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess
 
 ## SYNOPSIS
-Create new navigation property to userExperienceAnalyticsDeviceStartupProcesses for deviceManagement
+User experience analytics device Startup Processes
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess
 ```
 
 ## DESCRIPTION
-Create new navigation property to userExperienceAnalyticsDeviceStartupProcesses for deviceManagement
+User experience analytics device Startup Processes
 
 ## EXAMPLES
 
@@ -191,11 +191,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcess
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcess
-
 ## NOTES
 
 ALIASES

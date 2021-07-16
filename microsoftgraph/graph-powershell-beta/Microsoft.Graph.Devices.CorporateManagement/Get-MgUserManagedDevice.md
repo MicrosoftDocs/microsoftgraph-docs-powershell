@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserManagedDevice
 
 ## SYNOPSIS
-Get managedDevices from users
+The managed devices associated with the user.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgUserManagedDevice -InputObject <IDevicesCorporateManagementIdentity> [-Exp
 ```
 
 ## DESCRIPTION
-Get managedDevices from users
+The managed devices associated with the user.
 
 ## EXAMPLES
 
@@ -241,11 +241,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDevice
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest
 
 ## SYNOPSIS
-Get appLogCollectionRequests from users
+The collection property of AppLogUploadRequest.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest
 ```
 
 ## DESCRIPTION
-Get appLogCollectionRequests from users
+The collection property of AppLogUploadRequest.
 
 ## EXAMPLES
 
@@ -259,11 +259,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppLogCollectionRequest
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserMailFolderMessage
 
 ## SYNOPSIS
-Create new navigation property to messages for users
+The collection of messages in the mailFolder.
 
 ## SYNTAX
 
@@ -69,7 +69,7 @@ New-MgUserMailFolderMessage -InputObject <IMailIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Create new navigation property to messages for users
+The collection of messages in the mailFolder.
 
 ## EXAMPLES
 
@@ -815,13 +815,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMailIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMessage1
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMessage1
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserSettingShiftPerenceByRef
 
 ## SYNOPSIS
-Delete navigation property shiftPreferences for users
+The shift preferences for the user.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgUserSettingShiftPerenceByRef -InputObject <IUsersIdentity> [-IfMatch <S
 ```
 
 ## DESCRIPTION
-Delete navigation property shiftPreferences for users
+The shift preferences for the user.
 
 ## EXAMPLES
 
@@ -129,11 +129,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

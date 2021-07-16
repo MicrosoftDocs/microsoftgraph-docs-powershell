@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementGroupPolicyCategoryDefinition
 
 ## SYNOPSIS
-Get definitions from deviceManagement
+The immediate GroupPolicyDefinition children of the category
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgDeviceManagementGroupPolicyCategoryDefinition -GroupPolicyCategoryId <Stri
 ```
 
 ## DESCRIPTION
-Get definitions from deviceManagement
+The immediate GroupPolicyDefinition children of the category
 
 ## EXAMPLES
 
@@ -199,7 +199,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyDefinition
-
 ## NOTES
 
 ALIASES

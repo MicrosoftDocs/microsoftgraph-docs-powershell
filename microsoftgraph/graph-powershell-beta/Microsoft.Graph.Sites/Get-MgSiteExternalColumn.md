@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteExternalColumn
 
 ## SYNOPSIS
-Get externalColumns from sites
+The collection of column definitions available in the site that are referenced from the sites in the parent hierarchy of the current site.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgSiteExternalColumn -SiteId <String> [-ExpandProperty <String[]>] [-Filter 
 ```
 
 ## DESCRIPTION
-Get externalColumns from sites
+The collection of column definitions available in the site that are referenced from the sites in the parent hierarchy of the current site.
 
 ## EXAMPLES
 
@@ -199,7 +199,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnDefinition
-
 ## NOTES
 
 ALIASES

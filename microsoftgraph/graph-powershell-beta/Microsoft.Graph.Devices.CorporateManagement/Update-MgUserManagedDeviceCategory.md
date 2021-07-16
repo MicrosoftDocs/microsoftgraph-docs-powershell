@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserManagedDeviceCategory
 
 ## SYNOPSIS
-Update the navigation property deviceCategory in users
+Device category
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Update-MgUserManagedDeviceCategory -InputObject <IDevicesCorporateManagementIden
 ```
 
 ## DESCRIPTION
-Update the navigation property deviceCategory in users
+Device category
 
 ## EXAMPLES
 
@@ -237,13 +237,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCategory
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

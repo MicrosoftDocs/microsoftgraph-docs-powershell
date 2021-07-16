@@ -8,7 +8,7 @@ schema: 2.0.0
 # Clear-MgUserManagedAppRegistrationByDeviceTag
 
 ## SYNOPSIS
-Invoke action wipeManagedAppRegistrationByDeviceTag
+Issues a wipe operation on an app registration with specified device tag.
 
 ## SYNTAX
 
@@ -40,7 +40,7 @@ Clear-MgUserManagedAppRegistrationByDeviceTag -InputObject <IUsersActionsIdentit
 ```
 
 ## DESCRIPTION
-Invoke action wipeManagedAppRegistrationByDeviceTag
+Issues a wipe operation on an app registration with specified device tag.
 
 ## EXAMPLES
 
@@ -175,13 +175,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1X1038LUsersUserIdMicrosoftGraphWipemanagedappregistrationbydevicetagPostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

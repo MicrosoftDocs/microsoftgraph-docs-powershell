@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserDeviceEnrollmentConfigurationAssignment
 
 ## SYNOPSIS
-Create new navigation property to assignments for users
+The list of group assignments for the device configuration profile
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ New-MgUserDeviceEnrollmentConfigurationAssignment -InputObject <IDevicesCorporat
 ```
 
 ## DESCRIPTION
-Create new navigation property to assignments for users
+The list of group assignments for the device configuration profile
 
 ## EXAMPLES
 
@@ -220,13 +220,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEnrollmentConfigurationAssignment
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEnrollmentConfigurationAssignment
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgPlannerPlanTaskDetail
 
 ## SYNOPSIS
-Update the navigation property details in planner
+Read-only.
+Nullable.
+Additional details about the task.
 
 ## SYNTAX
 
@@ -39,7 +41,9 @@ Update-MgPlannerPlanTaskDetail -InputObject <IPlannerIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property details in planner
+Read-only.
+Nullable.
+Additional details about the task.
 
 ## EXAMPLES
 
@@ -249,13 +253,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerTaskDetails
-
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

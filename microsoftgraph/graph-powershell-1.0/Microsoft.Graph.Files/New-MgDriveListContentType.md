@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDriveListContentType
 
 ## SYNOPSIS
-Create new navigation property to contentTypes for drives
+The collection of content types present in this list.
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ New-MgDriveListContentType -InputObject <IFilesIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Create new navigation property to contentTypes for drives
+The collection of content types present in this list.
 
 ## EXAMPLES
 
@@ -318,13 +318,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentType1
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentType1
-
 ## NOTES
 
 ALIASES

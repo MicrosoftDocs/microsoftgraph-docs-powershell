@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementDeviceEnrollmentConfiguration
 
 ## SYNOPSIS
-Create new navigation property to deviceEnrollmentConfigurations for deviceManagement
+The list of device enrollment configurations
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ New-MgDeviceManagementDeviceEnrollmentConfiguration
 ```
 
 ## DESCRIPTION
-Create new navigation property to deviceEnrollmentConfigurations for deviceManagement
+The list of device enrollment configurations
 
 ## EXAMPLES
 
@@ -223,11 +223,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceEnrollmentConfiguration
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceEnrollmentConfiguration
-
 ## NOTES
 
 ALIASES

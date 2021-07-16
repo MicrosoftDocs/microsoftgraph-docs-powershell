@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSiteListSubscription
 
 ## SYNOPSIS
-Create new navigation property to subscriptions for sites
+The set of subscriptions on the list.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ New-MgSiteListSubscription -InputObject <ISitesIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Create new navigation property to subscriptions for sites
+The set of subscriptions on the list.
 
 ## EXAMPLES
 
@@ -410,13 +410,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSubscription1
-
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSubscription1
-
 ## NOTES
 
 ALIASES

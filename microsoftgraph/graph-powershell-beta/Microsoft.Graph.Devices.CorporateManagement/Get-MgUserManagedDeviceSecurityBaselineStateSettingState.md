@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserManagedDeviceSecurityBaselineStateSettingState
 
 ## SYNOPSIS
-Get settingStates from users
+The security baseline state for different settings for a device
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Get-MgUserManagedDeviceSecurityBaselineStateSettingState -InputObject <IDevicesC
 ```
 
 ## DESCRIPTION
-Get settingStates from users
+The security baseline state for different settings for a device
 
 ## EXAMPLES
 
@@ -273,11 +273,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityBaselineSettingState
-
 ## NOTES
 
 ALIASES

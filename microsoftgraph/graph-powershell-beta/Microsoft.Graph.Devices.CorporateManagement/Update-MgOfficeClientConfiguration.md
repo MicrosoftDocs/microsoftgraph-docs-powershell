@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgOfficeClientConfiguration
 
 ## SYNOPSIS
-Update the navigation property clientConfigurations in officeConfiguration
+List of office Client configuration.
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ Update-MgOfficeClientConfiguration -InputObject <IDevicesCorporateManagementIden
 ```
 
 ## DESCRIPTION
-Update the navigation property clientConfigurations in officeConfiguration
+List of office Client configuration.
 
 ## EXAMPLES
 
@@ -305,13 +305,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOfficeClientConfiguration
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

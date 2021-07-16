@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserWindowInformationProtectionDeviceRegistrationByRef
 
 ## SYNOPSIS
-Get ref of windowsInformationProtectionDeviceRegistrations from users
+Zero or more WIP device registrations that belong to the user.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgUserWindowInformationProtectionDeviceRegistrationByRef -UserId <String> [-
 ```
 
 ## DESCRIPTION
-Get ref of windowsInformationProtectionDeviceRegistrations from users
+Zero or more WIP device registrations that belong to the user.
 
 ## EXAMPLES
 
@@ -169,7 +169,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

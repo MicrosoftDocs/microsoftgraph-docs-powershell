@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserManagedDeviceCategory
 
 ## SYNOPSIS
-Delete navigation property deviceCategory for users
+Device category
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgUserManagedDeviceCategory -InputObject <IDevicesCorporateManagementIden
 ```
 
 ## DESCRIPTION
-Delete navigation property deviceCategory for users
+Device category
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

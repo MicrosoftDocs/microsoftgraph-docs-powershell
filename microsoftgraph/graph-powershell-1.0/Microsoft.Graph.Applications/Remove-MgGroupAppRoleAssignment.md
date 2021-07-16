@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgGroupAppRoleAssignment
 
 ## SYNOPSIS
-Delete navigation property appRoleAssignments for groups
+Represents the app roles a group has been granted for an application.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgGroupAppRoleAssignment -InputObject <IApplicationsIdentity> [-IfMatch <
 ```
 
 ## DESCRIPTION
-Delete navigation property appRoleAssignments for groups
+Represents the app roles a group has been granted for an application.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

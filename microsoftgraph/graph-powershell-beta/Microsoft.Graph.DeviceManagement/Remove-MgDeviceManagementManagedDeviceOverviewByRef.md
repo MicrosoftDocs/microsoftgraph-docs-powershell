@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementManagedDeviceOverviewByRef
 
 ## SYNOPSIS
-Delete ref of navigation property managedDeviceOverview for deviceManagement
+Device overview
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Remove-MgDeviceManagementManagedDeviceOverviewByRef [-IfMatch <String>] [-PassTh
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property managedDeviceOverview for deviceManagement
+Device overview
 
 ## EXAMPLES
 
@@ -93,7 +93,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

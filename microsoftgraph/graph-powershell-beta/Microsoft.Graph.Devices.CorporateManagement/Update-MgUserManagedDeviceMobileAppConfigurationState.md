@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserManagedDeviceMobileAppConfigurationState
 
 ## SYNOPSIS
-Update the navigation property managedDeviceMobileAppConfigurationStates in users
+Managed device mobile app configuration states for this device.
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ Update-MgUserManagedDeviceMobileAppConfigurationState -InputObject <IDevicesCorp
 ```
 
 ## DESCRIPTION
-Update the navigation property managedDeviceMobileAppConfigurationStates in users
+Managed device mobile app configuration states for this device.
 
 ## EXAMPLES
 
@@ -345,13 +345,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDeviceMobileAppConfigurationState
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

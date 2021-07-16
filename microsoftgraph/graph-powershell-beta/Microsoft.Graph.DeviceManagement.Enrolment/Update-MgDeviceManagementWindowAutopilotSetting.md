@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementWindowAutopilotSetting
 
 ## SYNOPSIS
-Update the navigation property windowsAutopilotSettings in deviceManagement
+The Windows autopilot account settings.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ Update-MgDeviceManagementWindowAutopilotSetting -BodyParameter <IMicrosoftGraphW
 ```
 
 ## DESCRIPTION
-Update the navigation property windowsAutopilotSettings in deviceManagement
+The Windows autopilot account settings.
 
 ## EXAMPLES
 
@@ -175,11 +175,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsAutopilotSettings
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

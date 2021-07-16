@@ -8,7 +8,10 @@ schema: 2.0.0
 # New-MgTeamOwnerByRef
 
 ## SYNOPSIS
-Create new navigation property ref to owners for teams
+The list of this team's owners.
+Currently, when creating a team using application permissions, exactly one owner must be specified.
+When using user delegated permissions, no owner can be specified (the current user is the owner).
+Owner must be specified as an object ID (GUID), not a UPN.
 
 ## SYNTAX
 
@@ -36,7 +39,10 @@ New-MgTeamOwnerByRef -InputObject <ITeamsIdentity> -BodyParameter <Hashtable> [-
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to owners for teams
+The list of this team's owners.
+Currently, when creating a team using application permissions, exactly one owner must be specified.
+When using user delegated permissions, no owner can be specified (the current user is the owner).
+Owner must be specified as an object ID (GUID), not a UPN.
 
 ## EXAMPLES
 
@@ -140,13 +146,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1Pdl411TeamsTeamIdOwnersRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

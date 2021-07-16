@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgDirectoryDeletedItem
 
 ## SYNOPSIS
-Delete navigation property deletedItems for directory
+Recently deleted items.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +27,9 @@ Remove-MgDirectoryDeletedItem -InputObject <IIdentityDirectoryManagementIdentity
 ```
 
 ## DESCRIPTION
-Delete navigation property deletedItems for directory
+Recently deleted items.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -129,11 +133,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

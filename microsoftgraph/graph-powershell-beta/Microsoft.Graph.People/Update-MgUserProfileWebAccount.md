@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserProfileWebAccount
 
 ## SYNOPSIS
-Update the navigation property webAccounts in users
+Represents web accounts the user has indicated they use or has added to their user profile.
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ Update-MgUserProfileWebAccount -InputObject <IPeopleIdentity> -BodyParameter <IM
 ```
 
 ## DESCRIPTION
-Update the navigation property webAccounts in users
+Represents web accounts the user has indicated they use or has added to their user profile.
 
 ## EXAMPLES
 
@@ -424,13 +424,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWebAccount
-
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

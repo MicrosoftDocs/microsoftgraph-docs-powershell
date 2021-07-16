@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgTeamScheduleTimeOff
 
 ## SYNOPSIS
-Delete navigation property timesOff for teams
+The instances of times off in the schedule.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgTeamScheduleTimeOff -InputObject <ITeamsIdentity> [-IfMatch <String>] [
 ```
 
 ## DESCRIPTION
-Delete navigation property timesOff for teams
+The instances of times off in the schedule.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementRoleScopeTag
 
 ## SYNOPSIS
-Create new navigation property to roleScopeTags for deviceManagement
+The Role Scope Tags.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ New-MgDeviceManagementRoleScopeTag -BodyParameter <IMicrosoftGraphRoleScopeTag> 
 ```
 
 ## DESCRIPTION
-Create new navigation property to roleScopeTags for deviceManagement
+The Role Scope Tags.
 
 ## EXAMPLES
 
@@ -176,11 +176,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleScopeTag
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleScopeTag
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserProfilePublication
 
 ## SYNOPSIS
-Update the navigation property publications in users
+Represents details of any publications a user has added to their profile.
 
 ## SYNTAX
 
@@ -46,7 +46,7 @@ Update-MgUserProfilePublication -InputObject <IPeopleIdentity> -BodyParameter <I
 ```
 
 ## DESCRIPTION
-Update the navigation property publications in users
+Represents details of any publications a user has added to their profile.
 
 ## EXAMPLES
 
@@ -410,13 +410,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemPublication
-
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

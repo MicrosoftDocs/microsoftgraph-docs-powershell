@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgPrintShare
 
 ## SYNOPSIS
-Delete navigation property shares for print
+The list of printer shares registered in the tenant.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgPrintShare -InputObject <IDevicesCloudPrintIdentity> [-IfMatch <String>
 ```
 
 ## DESCRIPTION
-Delete navigation property shares for print
+The list of printer shares registered in the tenant.
 
 ## EXAMPLES
 
@@ -129,11 +129,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

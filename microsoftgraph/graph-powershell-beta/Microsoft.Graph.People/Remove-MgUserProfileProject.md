@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserProfileProject
 
 ## SYNOPSIS
-Delete navigation property projects for users
+Represents detailed information about projects associated with a user.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgUserProfileProject -InputObject <IPeopleIdentity> [-IfMatch <String>] [
 ```
 
 ## DESCRIPTION
-Delete navigation property projects for users
+Represents detailed information about projects associated with a user.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

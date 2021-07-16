@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementConditionStatementManagementCondition
 
 ## SYNOPSIS
-Get managementConditions from deviceManagement
+The management conditions associated to the management condition statement.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgDeviceManagementConditionStatementManagementCondition -ManagementCondition
 ```
 
 ## DESCRIPTION
-Get managementConditions from deviceManagement
+The management conditions associated to the management condition statement.
 
 ## EXAMPLES
 
@@ -199,7 +199,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagementCondition
-
 ## NOTES
 
 ALIASES

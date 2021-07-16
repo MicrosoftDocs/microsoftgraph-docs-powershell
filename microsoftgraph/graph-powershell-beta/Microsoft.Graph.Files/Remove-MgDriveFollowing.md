@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgDriveFollowing
 
 ## SYNOPSIS
-Delete navigation property following for drives
+The list of items the user is following.
+Only in OneDrive for Business.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgDriveFollowing -InputObject <IFilesIdentity> [-IfMatch <String>] [-Pass
 ```
 
 ## DESCRIPTION
-Delete navigation property following for drives
+The list of items the user is following.
+Only in OneDrive for Business.
 
 ## EXAMPLES
 
@@ -144,11 +146,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgContract
 
 ## SYNOPSIS
-Update entity in contracts
+Represents an Azure Active Directory object.
+The directoryObject type is the base type for many other directory entity types.
 
 ## SYNTAX
 
@@ -39,7 +40,8 @@ Update-MgContract -InputObject <IIdentityDirectoryManagementIdentity> -BodyParam
 ```
 
 ## DESCRIPTION
-Update entity in contracts
+Represents an Azure Active Directory object.
+The directoryObject type is the base type for many other directory entity types.
 
 ## EXAMPLES
 
@@ -257,13 +259,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContract
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

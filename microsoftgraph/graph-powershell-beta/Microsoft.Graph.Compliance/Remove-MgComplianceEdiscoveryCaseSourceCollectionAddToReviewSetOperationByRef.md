@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgComplianceEdiscoveryCaseSourceCollectionAddToReviewSetOperationByRef
 
 ## SYNOPSIS
-Delete ref of navigation property addToReviewSetOperation for compliance
+Adds the results of the sourceCollection to the specified reviewSet.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgComplianceEdiscoveryCaseSourceCollectionAddToReviewSetOperationByRef
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property addToReviewSetOperation for compliance
+Adds the results of the sourceCollection to the specified reviewSet.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

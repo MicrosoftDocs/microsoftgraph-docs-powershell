@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgRotateUserManagedDeviceBitLockerKey
 
 ## SYNOPSIS
-Invoke action rotateBitLockerKeys
+Rotate BitLockerKeys
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Invoke-MgRotateUserManagedDeviceBitLockerKey -InputObject <IUsersActionsIdentity
 ```
 
 ## DESCRIPTION
-Invoke action rotateBitLockerKeys
+Rotate BitLockerKeys
 
 ## EXAMPLES
 
@@ -129,11 +129,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

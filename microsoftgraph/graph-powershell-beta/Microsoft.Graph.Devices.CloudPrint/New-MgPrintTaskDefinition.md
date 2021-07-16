@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgPrintTaskDefinition
 
 ## SYNOPSIS
-Create new navigation property to taskDefinitions for print
+List of abstract definition for a task that can be triggered when various events occur within Universal Print.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ New-MgPrintTaskDefinition -BodyParameter <IMicrosoftGraphPrintTaskDefinition1> [
 ```
 
 ## DESCRIPTION
-Create new navigation property to taskDefinitions for print
+List of abstract definition for a task that can be triggered when various events occur within Universal Print.
 
 ## EXAMPLES
 
@@ -164,11 +164,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintTaskDefinition1
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintTaskDefinition1
-
 ## NOTES
 
 ALIASES

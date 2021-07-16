@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgTeamChannelTab
 
 ## SYNOPSIS
-Update the navigation property tabs in teams
+A collection of all the tabs in the channel.
+A navigation property.
 
 ## SYNTAX
 
@@ -41,7 +42,8 @@ Update-MgTeamChannelTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoft
 ```
 
 ## DESCRIPTION
-Update the navigation property tabs in teams
+A collection of all the tabs in the channel.
+A navigation property.
 
 ## EXAMPLES
 
@@ -269,13 +271,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsTab1
-
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -316,7 +315,7 @@ BODYPARAMETER <IMicrosoftGraphTeamsTab1>: teamsTab
       - `[LastModifiedDateTime <DateTime?>]`: 
       - `[PublishingState <String>]`: teamsAppPublishingState
       - `[ShortDescription <String>]`: Short description of the application.
-      - `[TeamsAppId <String>]`: The id from the Teams App manifest.
+      - `[TeamsAppId <String>]`: The ID from the Teams app manifest.
       - `[Version <String>]`: The version number of the application.
     - `[DisplayName <String>]`: The name of the catalog app provided by the app developer in the Microsoft Teams zip app package.
     - `[DistributionMethod <String>]`: teamsAppDistributionMethod
@@ -382,7 +381,7 @@ TEAMSAPP <IMicrosoftGraphTeamsApp1>: teamsApp
     - `[LastModifiedDateTime <DateTime?>]`: 
     - `[PublishingState <String>]`: teamsAppPublishingState
     - `[ShortDescription <String>]`: Short description of the application.
-    - `[TeamsAppId <String>]`: The id from the Teams App manifest.
+    - `[TeamsAppId <String>]`: The ID from the Teams app manifest.
     - `[Version <String>]`: The version number of the application.
   - `[DisplayName <String>]`: The name of the catalog app provided by the app developer in the Microsoft Teams zip app package.
   - `[DistributionMethod <String>]`: teamsAppDistributionMethod

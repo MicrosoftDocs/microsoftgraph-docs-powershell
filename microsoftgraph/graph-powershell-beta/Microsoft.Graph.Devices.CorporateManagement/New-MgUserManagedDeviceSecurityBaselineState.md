@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserManagedDeviceSecurityBaselineState
 
 ## SYNOPSIS
-Create new navigation property to securityBaselineStates for users
+Security baseline states for this device.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ New-MgUserManagedDeviceSecurityBaselineState -InputObject <IDevicesCorporateMana
 ```
 
 ## DESCRIPTION
-Create new navigation property to securityBaselineStates for users
+Security baseline states for this device.
 
 ## EXAMPLES
 
@@ -252,13 +252,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityBaselineState
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityBaselineState
-
 ## NOTES
 
 ALIASES

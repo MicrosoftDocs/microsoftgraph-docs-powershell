@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgShareListItemAnalyticByRef
 
 ## SYNOPSIS
-Delete ref of navigation property analytics for shares
+Analytics about the view activities that took place on this item.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Remove-MgShareListItemAnalyticByRef -InputObject <IFilesIdentity> [-IfMatch <Str
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property analytics for shares
+Analytics about the view activities that took place on this item.
 
 ## EXAMPLES
 
@@ -156,11 +156,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

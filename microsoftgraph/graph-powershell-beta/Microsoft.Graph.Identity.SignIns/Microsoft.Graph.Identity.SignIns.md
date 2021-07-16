@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.SignIns
-Module Guid: 23bb2f27-85d2-447c-a394-436fd3a3ffb5
+Module Guid: 8a629b81-efb0-48f0-9be9-141a12a40639
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins
 Help Version: 1.0.0.0
 Locale: en-US
@@ -38,6 +38,9 @@ Get informationProtection
 ### [Get-MgInformationProtectionBitlocker](Get-MgInformationProtectionBitlocker.md)
 Get bitlocker from informationProtection
 
+### [Get-MgInformationProtectionBitlockerRecoveryKey](Get-MgInformationProtectionBitlockerRecoveryKey.md)
+The recovery keys associated with the bitlocker entity.
+
 ### [Get-MgInformationProtectionDataLossPreventionPolicy](Get-MgInformationProtectionDataLossPreventionPolicy.md)
 Get dataLossPreventionPolicies from informationProtection
 
@@ -47,12 +50,6 @@ Get policy from informationProtection
 ### [Get-MgInformationProtectionPolicyLabel](Get-MgInformationProtectionPolicyLabel.md)
 Get labels from informationProtection
 
-### [Get-MgInformationProtectionSensitivityLabel](Get-MgInformationProtectionSensitivityLabel.md)
-Get sensitivityLabels from informationProtection
-
-### [Get-MgInformationProtectionSensitivityLabelSublabel](Get-MgInformationProtectionSensitivityLabelSublabel.md)
-Get sublabels from informationProtection
-
 ### [Get-MgInformationProtectionSensitivityPolicySetting](Get-MgInformationProtectionSensitivityPolicySetting.md)
 Get sensitivityPolicySettings from informationProtection
 
@@ -60,7 +57,9 @@ Get sensitivityPolicySettings from informationProtection
 Get threatAssessmentRequests from informationProtection
 
 ### [Get-MgInformationProtectionThreatAssessmentRequestResult](Get-MgInformationProtectionThreatAssessmentRequestResult.md)
-Get results from informationProtection
+A collection of threat assessment results.
+Read-only.
+By default, a GET /threatAssessmentRequests/{id} does not return this property unless you apply $expand on it.
 
 ### [Get-MgOauth2PermissionGrant](Get-MgOauth2PermissionGrant.md)
 Get entity from oauth2PermissionGrants by key
@@ -69,10 +68,15 @@ Get entity from oauth2PermissionGrants by key
 Invoke function delta
 
 ### [Get-MgOrganizationCertificateBasedAuthConfiguration](Get-MgOrganizationCertificateBasedAuthConfiguration.md)
-Get certificateBasedAuthConfiguration from organization
+Navigation property to manage  certificate-based authentication configuration.
+Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
 
 ### [Get-MgOrganizationCertificateBasedAuthConfigurationByRef](Get-MgOrganizationCertificateBasedAuthConfigurationByRef.md)
-Get ref of certificateBasedAuthConfiguration from organization
+Navigation property to manage  certificate-based authentication configuration.
+Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
+
+### [Get-MgPolicyAccessReviewPolicy](Get-MgPolicyAccessReviewPolicy.md)
+Get accessReviewPolicy from policies
 
 ### [Get-MgPolicyActivityBasedTimeoutPolicy](Get-MgPolicyActivityBasedTimeoutPolicy.md)
 Get activityBasedTimeoutPolicies from policies
@@ -102,7 +106,8 @@ Get directoryRoleAccessReviewPolicy from policies
 Get featureRolloutPolicies from policies
 
 ### [Get-MgPolicyFeatureRolloutPolicyApplyTo](Get-MgPolicyFeatureRolloutPolicyApplyTo.md)
-Get appliesTo from policies
+Nullable.
+Specifies a list of directoryObjects that feature is enabled for.
 
 ### [Get-MgPolicyHomeRealmDiscoveryPolicy](Get-MgPolicyHomeRealmDiscoveryPolicy.md)
 Get homeRealmDiscoveryPolicies from policies
@@ -114,16 +119,12 @@ Get identitySecurityDefaultsEnforcementPolicy from policies
 Get permissionGrantPolicies from policies
 
 ### [Get-MgPolicyPermissionGrantPolicyExclude](Get-MgPolicyPermissionGrantPolicyExclude.md)
-Get excludes from policies
+Condition sets which are excluded in this permission grant policy.
+Automatically expanded on GET.
 
 ### [Get-MgPolicyPermissionGrantPolicyInclude](Get-MgPolicyPermissionGrantPolicyInclude.md)
-Get includes from policies
-
-### [Get-MgPolicyPrivateLinkResourcePolicy](Get-MgPolicyPrivateLinkResourcePolicy.md)
-Get privateLinkResourcePolicies from policies
-
-### [Get-MgPolicyPrivateLinkResourcePolicyPrivateEndpointConnection](Get-MgPolicyPrivateLinkResourcePolicyPrivateEndpointConnection.md)
-Get privateEndpointConnections from policies
+Condition sets which are included in this permission grant policy.
+Automatically expanded on GET.
 
 ### [Get-MgPolicyRoleManagementPolicy](Get-MgPolicyRoleManagementPolicy.md)
 Get roleManagementPolicies from policies
@@ -132,16 +133,19 @@ Get roleManagementPolicies from policies
 Get roleManagementPolicyAssignments from policies
 
 ### [Get-MgPolicyRoleManagementPolicyAssignmentPolicy](Get-MgPolicyRoleManagementPolicyAssignmentPolicy.md)
-Get policy from policies
+The policy for the assignment.
 
 ### [Get-MgPolicyRoleManagementPolicyAssignmentPolicyByRef](Get-MgPolicyRoleManagementPolicyAssignmentPolicyByRef.md)
-Get ref of policy from policies
+The policy for the assignment.
 
 ### [Get-MgPolicyRoleManagementPolicyEffectiveRule](Get-MgPolicyRoleManagementPolicyEffectiveRule.md)
-Get effectiveRules from policies
+The list of effective rules like approval rule, expiration rule, etc.
+evaluated based on inherited referenced rules.
+E.g.
+If there is a tenant wide policy to enforce enabling approval rule, the effective rule will be to enable approval even if the polcy has a rule to disable approval.
 
 ### [Get-MgPolicyRoleManagementPolicyRule](Get-MgPolicyRoleManagementPolicyRule.md)
-Get rules from policies
+The collection of rules like approval rule, expiration rule, etc.
 
 ### [Get-MgPolicyTokenIssuancePolicy](Get-MgPolicyTokenIssuancePolicy.md)
 Get tokenIssuancePolicies from policies
@@ -156,7 +160,7 @@ Get entity from riskDetections by key
 Get entity from riskyUsers by key
 
 ### [Get-MgRiskyUserHistory](Get-MgRiskyUserHistory.md)
-Get history from riskyUsers
+The activity related to user risk level change
 
 ### [Get-MgTrustFramework](Get-MgTrustFramework.md)
 Get trustFramework
@@ -186,7 +190,8 @@ Get methods from users
 Get microsoftAuthenticatorMethods from users
 
 ### [Get-MgUserAuthenticationMicrosoftAuthenticatorMethodDevice](Get-MgUserAuthenticationMicrosoftAuthenticatorMethodDevice.md)
-Get device from users
+The registered device on which Microsoft Authenticator resides.
+This property is null if the device is not registered for passwordless Phone Sign-In.
 
 ### [Get-MgUserAuthenticationOperation](Get-MgUserAuthenticationOperation.md)
 Get operations from users
@@ -210,7 +215,7 @@ Get temporaryAccessPassMethods from users
 Get windowsHelloForBusinessMethods from users
 
 ### [Get-MgUserAuthenticationWindowHelloForBusinessMethodDevice](Get-MgUserAuthenticationWindowHelloForBusinessMethodDevice.md)
-Get device from users
+The registered device on which this Windows Hello for Business key resides.
 
 ### [Get-MgUserInformationProtection](Get-MgUserInformationProtection.md)
 Get informationProtection from users
@@ -257,23 +262,22 @@ Add new entity to identityProviders
 ### [New-MgIdentityUserFlow](New-MgIdentityUserFlow.md)
 Create new navigation property to userFlows for identity
 
+### [New-MgInformationProtectionBitlockerRecoveryKey](New-MgInformationProtectionBitlockerRecoveryKey.md)
+The recovery keys associated with the bitlocker entity.
+
 ### [New-MgInformationProtectionDataLossPreventionPolicy](New-MgInformationProtectionDataLossPreventionPolicy.md)
 Create new navigation property to dataLossPreventionPolicies for informationProtection
 
 ### [New-MgInformationProtectionPolicyLabel](New-MgInformationProtectionPolicyLabel.md)
 Create new navigation property to labels for informationProtection
 
-### [New-MgInformationProtectionSensitivityLabel](New-MgInformationProtectionSensitivityLabel.md)
-Create new navigation property to sensitivityLabels for informationProtection
-
-### [New-MgInformationProtectionSensitivityLabelSublabel](New-MgInformationProtectionSensitivityLabelSublabel.md)
-Create new navigation property to sublabels for informationProtection
-
 ### [New-MgInformationProtectionThreatAssessmentRequest](New-MgInformationProtectionThreatAssessmentRequest.md)
 Create new navigation property to threatAssessmentRequests for informationProtection
 
 ### [New-MgInformationProtectionThreatAssessmentRequestResult](New-MgInformationProtectionThreatAssessmentRequestResult.md)
-Create new navigation property to results for informationProtection
+A collection of threat assessment results.
+Read-only.
+By default, a GET /threatAssessmentRequests/{id} does not return this property unless you apply $expand on it.
 
 ### [New-MgInvitation](New-MgInvitation.md)
 Add new entity to invitations
@@ -282,7 +286,8 @@ Add new entity to invitations
 Add new entity to oauth2PermissionGrants
 
 ### [New-MgOrganizationCertificateBasedAuthConfigurationByRef](New-MgOrganizationCertificateBasedAuthConfigurationByRef.md)
-Create new navigation property ref to certificateBasedAuthConfiguration for organization
+Navigation property to manage  certificate-based authentication configuration.
+Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
 
 ### [New-MgPolicyActivityBasedTimeoutPolicy](New-MgPolicyActivityBasedTimeoutPolicy.md)
 Create new navigation property to activityBasedTimeoutPolicies for policies
@@ -297,7 +302,8 @@ Create new navigation property to claimsMappingPolicies for policies
 Create new navigation property to featureRolloutPolicies for policies
 
 ### [New-MgPolicyFeatureRolloutPolicyApplyTo](New-MgPolicyFeatureRolloutPolicyApplyTo.md)
-Create new navigation property to appliesTo for policies
+Nullable.
+Specifies a list of directoryObjects that feature is enabled for.
 
 ### [New-MgPolicyHomeRealmDiscoveryPolicy](New-MgPolicyHomeRealmDiscoveryPolicy.md)
 Create new navigation property to homeRealmDiscoveryPolicies for policies
@@ -306,16 +312,12 @@ Create new navigation property to homeRealmDiscoveryPolicies for policies
 Create new navigation property to permissionGrantPolicies for policies
 
 ### [New-MgPolicyPermissionGrantPolicyExclude](New-MgPolicyPermissionGrantPolicyExclude.md)
-Create new navigation property to excludes for policies
+Condition sets which are excluded in this permission grant policy.
+Automatically expanded on GET.
 
 ### [New-MgPolicyPermissionGrantPolicyInclude](New-MgPolicyPermissionGrantPolicyInclude.md)
-Create new navigation property to includes for policies
-
-### [New-MgPolicyPrivateLinkResourcePolicy](New-MgPolicyPrivateLinkResourcePolicy.md)
-Create new navigation property to privateLinkResourcePolicies for policies
-
-### [New-MgPolicyPrivateLinkResourcePolicyPrivateEndpointConnection](New-MgPolicyPrivateLinkResourcePolicyPrivateEndpointConnection.md)
-Create new navigation property to privateEndpointConnections for policies
+Condition sets which are included in this permission grant policy.
+Automatically expanded on GET.
 
 ### [New-MgPolicyRoleManagementPolicy](New-MgPolicyRoleManagementPolicy.md)
 Create new navigation property to roleManagementPolicies for policies
@@ -324,10 +326,13 @@ Create new navigation property to roleManagementPolicies for policies
 Create new navigation property to roleManagementPolicyAssignments for policies
 
 ### [New-MgPolicyRoleManagementPolicyEffectiveRule](New-MgPolicyRoleManagementPolicyEffectiveRule.md)
-Create new navigation property to effectiveRules for policies
+The list of effective rules like approval rule, expiration rule, etc.
+evaluated based on inherited referenced rules.
+E.g.
+If there is a tenant wide policy to enforce enabling approval rule, the effective rule will be to enable approval even if the polcy has a rule to disable approval.
 
 ### [New-MgPolicyRoleManagementPolicyRule](New-MgPolicyRoleManagementPolicyRule.md)
-Create new navigation property to rules for policies
+The collection of rules like approval rule, expiration rule, etc.
 
 ### [New-MgPolicyTokenIssuancePolicy](New-MgPolicyTokenIssuancePolicy.md)
 Create new navigation property to tokenIssuancePolicies for policies
@@ -342,7 +347,7 @@ Add new entity to riskDetections
 Add new entity to riskyUsers
 
 ### [New-MgRiskyUserHistory](New-MgRiskyUserHistory.md)
-Create new navigation property to history for riskyUsers
+The activity related to user risk level change
 
 ### [New-MgTrustFrameworkKeySet](New-MgTrustFrameworkKeySet.md)
 Create new navigation property to keySets for trustFramework
@@ -370,9 +375,6 @@ Create new navigation property to operations for users
 
 ### [New-MgUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod](New-MgUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod.md)
 Create new navigation property to passwordlessMicrosoftAuthenticatorMethods for users
-
-### [New-MgUserAuthenticationPasswordMethod](New-MgUserAuthenticationPasswordMethod.md)
-Create new navigation property to passwordMethods for users
 
 ### [New-MgUserAuthenticationPhoneMethod](New-MgUserAuthenticationPhoneMethod.md)
 Create new navigation property to phoneMethods for users
@@ -404,6 +406,9 @@ Delete navigation property userFlows for identity
 ### [Remove-MgInformationProtectionBitlocker](Remove-MgInformationProtectionBitlocker.md)
 Delete navigation property bitlocker for informationProtection
 
+### [Remove-MgInformationProtectionBitlockerRecoveryKey](Remove-MgInformationProtectionBitlockerRecoveryKey.md)
+The recovery keys associated with the bitlocker entity.
+
 ### [Remove-MgInformationProtectionDataLossPreventionPolicy](Remove-MgInformationProtectionDataLossPreventionPolicy.md)
 Delete navigation property dataLossPreventionPolicies for informationProtection
 
@@ -413,12 +418,6 @@ Delete navigation property policy for informationProtection
 ### [Remove-MgInformationProtectionPolicyLabel](Remove-MgInformationProtectionPolicyLabel.md)
 Delete navigation property labels for informationProtection
 
-### [Remove-MgInformationProtectionSensitivityLabel](Remove-MgInformationProtectionSensitivityLabel.md)
-Delete navigation property sensitivityLabels for informationProtection
-
-### [Remove-MgInformationProtectionSensitivityLabelSublabel](Remove-MgInformationProtectionSensitivityLabelSublabel.md)
-Delete navigation property sublabels for informationProtection
-
 ### [Remove-MgInformationProtectionSensitivityPolicySetting](Remove-MgInformationProtectionSensitivityPolicySetting.md)
 Delete navigation property sensitivityPolicySettings for informationProtection
 
@@ -426,10 +425,15 @@ Delete navigation property sensitivityPolicySettings for informationProtection
 Delete navigation property threatAssessmentRequests for informationProtection
 
 ### [Remove-MgInformationProtectionThreatAssessmentRequestResult](Remove-MgInformationProtectionThreatAssessmentRequestResult.md)
-Delete navigation property results for informationProtection
+A collection of threat assessment results.
+Read-only.
+By default, a GET /threatAssessmentRequests/{id} does not return this property unless you apply $expand on it.
 
 ### [Remove-MgOauth2PermissionGrant](Remove-MgOauth2PermissionGrant.md)
 Delete entity from oauth2PermissionGrants
+
+### [Remove-MgPolicyAccessReviewPolicy](Remove-MgPolicyAccessReviewPolicy.md)
+Delete navigation property accessReviewPolicy for policies
 
 ### [Remove-MgPolicyActivityBasedTimeoutPolicy](Remove-MgPolicyActivityBasedTimeoutPolicy.md)
 Delete navigation property activityBasedTimeoutPolicies for policies
@@ -459,7 +463,8 @@ Delete navigation property directoryRoleAccessReviewPolicy for policies
 Delete navigation property featureRolloutPolicies for policies
 
 ### [Remove-MgPolicyFeatureRolloutPolicyApplyTo](Remove-MgPolicyFeatureRolloutPolicyApplyTo.md)
-Delete navigation property appliesTo for policies
+Nullable.
+Specifies a list of directoryObjects that feature is enabled for.
 
 ### [Remove-MgPolicyHomeRealmDiscoveryPolicy](Remove-MgPolicyHomeRealmDiscoveryPolicy.md)
 Delete navigation property homeRealmDiscoveryPolicies for policies
@@ -471,16 +476,12 @@ Delete navigation property identitySecurityDefaultsEnforcementPolicy for policie
 Delete navigation property permissionGrantPolicies for policies
 
 ### [Remove-MgPolicyPermissionGrantPolicyExclude](Remove-MgPolicyPermissionGrantPolicyExclude.md)
-Delete navigation property excludes for policies
+Condition sets which are excluded in this permission grant policy.
+Automatically expanded on GET.
 
 ### [Remove-MgPolicyPermissionGrantPolicyInclude](Remove-MgPolicyPermissionGrantPolicyInclude.md)
-Delete navigation property includes for policies
-
-### [Remove-MgPolicyPrivateLinkResourcePolicy](Remove-MgPolicyPrivateLinkResourcePolicy.md)
-Delete navigation property privateLinkResourcePolicies for policies
-
-### [Remove-MgPolicyPrivateLinkResourcePolicyPrivateEndpointConnection](Remove-MgPolicyPrivateLinkResourcePolicyPrivateEndpointConnection.md)
-Delete navigation property privateEndpointConnections for policies
+Condition sets which are included in this permission grant policy.
+Automatically expanded on GET.
 
 ### [Remove-MgPolicyRoleManagementPolicy](Remove-MgPolicyRoleManagementPolicy.md)
 Delete navigation property roleManagementPolicies for policies
@@ -489,13 +490,16 @@ Delete navigation property roleManagementPolicies for policies
 Delete navigation property roleManagementPolicyAssignments for policies
 
 ### [Remove-MgPolicyRoleManagementPolicyAssignmentPolicyByRef](Remove-MgPolicyRoleManagementPolicyAssignmentPolicyByRef.md)
-Delete ref of navigation property policy for policies
+The policy for the assignment.
 
 ### [Remove-MgPolicyRoleManagementPolicyEffectiveRule](Remove-MgPolicyRoleManagementPolicyEffectiveRule.md)
-Delete navigation property effectiveRules for policies
+The list of effective rules like approval rule, expiration rule, etc.
+evaluated based on inherited referenced rules.
+E.g.
+If there is a tenant wide policy to enforce enabling approval rule, the effective rule will be to enable approval even if the polcy has a rule to disable approval.
 
 ### [Remove-MgPolicyRoleManagementPolicyRule](Remove-MgPolicyRoleManagementPolicyRule.md)
-Delete navigation property rules for policies
+The collection of rules like approval rule, expiration rule, etc.
 
 ### [Remove-MgPolicyTokenIssuancePolicy](Remove-MgPolicyTokenIssuancePolicy.md)
 Delete navigation property tokenIssuancePolicies for policies
@@ -510,7 +514,7 @@ Delete entity from riskDetections
 Delete entity from riskyUsers
 
 ### [Remove-MgRiskyUserHistory](Remove-MgRiskyUserHistory.md)
-Delete navigation property history for riskyUsers
+The activity related to user risk level change
 
 ### [Remove-MgTrustFrameworkKeySet](Remove-MgTrustFrameworkKeySet.md)
 Delete navigation property keySets for trustFramework
@@ -531,7 +535,8 @@ Delete navigation property methods for users
 Delete navigation property microsoftAuthenticatorMethods for users
 
 ### [Remove-MgUserAuthenticationMicrosoftAuthenticatorMethodDevice](Remove-MgUserAuthenticationMicrosoftAuthenticatorMethodDevice.md)
-Delete navigation property device for users
+The registered device on which Microsoft Authenticator resides.
+This property is null if the device is not registered for passwordless Phone Sign-In.
 
 ### [Remove-MgUserAuthenticationOperation](Remove-MgUserAuthenticationOperation.md)
 Delete navigation property operations for users
@@ -555,13 +560,13 @@ Delete navigation property temporaryAccessPassMethods for users
 Delete navigation property windowsHelloForBusinessMethods for users
 
 ### [Remove-MgUserAuthenticationWindowHelloForBusinessMethodDevice](Remove-MgUserAuthenticationWindowHelloForBusinessMethodDevice.md)
-Delete navigation property device for users
+The registered device on which this Windows Hello for Business key resides.
 
 ### [Remove-MgUserInformationProtection](Remove-MgUserInformationProtection.md)
 Delete navigation property informationProtection for users
 
 ### [Set-MgPolicyRoleManagementPolicyAssignmentPolicyByRef](Set-MgPolicyRoleManagementPolicyAssignmentPolicyByRef.md)
-Update the ref of navigation property policy in policies
+The policy for the assignment.
 
 ### [Set-MgTrustFrameworkPolicyContent](Set-MgTrustFrameworkPolicyContent.md)
 Update media content for the navigation property policies in trustFramework
@@ -577,12 +582,6 @@ Invoke action evaluateClassificationResults
 
 ### [Test-MgInformationProtectionPolicyLabelRemoval](Test-MgInformationProtectionPolicyLabelRemoval.md)
 Invoke action evaluateRemoval
-
-### [Test-MgInformationProtectionSensitivityLabel](Test-MgInformationProtectionSensitivityLabel.md)
-Invoke action evaluate
-
-### [Test-MgInformationProtectionSensitivityLabelSublabel](Test-MgInformationProtectionSensitivityLabelSublabel.md)
-Invoke action evaluate
 
 ### [Update-MgDataPolicyOperation](Update-MgDataPolicyOperation.md)
 Update entity in dataPolicyOperations
@@ -608,6 +607,9 @@ Update informationProtection
 ### [Update-MgInformationProtectionBitlocker](Update-MgInformationProtectionBitlocker.md)
 Update the navigation property bitlocker in informationProtection
 
+### [Update-MgInformationProtectionBitlockerRecoveryKey](Update-MgInformationProtectionBitlockerRecoveryKey.md)
+The recovery keys associated with the bitlocker entity.
+
 ### [Update-MgInformationProtectionDataLossPreventionPolicy](Update-MgInformationProtectionDataLossPreventionPolicy.md)
 Update the navigation property dataLossPreventionPolicies in informationProtection
 
@@ -617,12 +619,6 @@ Update the navigation property policy in informationProtection
 ### [Update-MgInformationProtectionPolicyLabel](Update-MgInformationProtectionPolicyLabel.md)
 Update the navigation property labels in informationProtection
 
-### [Update-MgInformationProtectionSensitivityLabel](Update-MgInformationProtectionSensitivityLabel.md)
-Update the navigation property sensitivityLabels in informationProtection
-
-### [Update-MgInformationProtectionSensitivityLabelSublabel](Update-MgInformationProtectionSensitivityLabelSublabel.md)
-Update the navigation property sublabels in informationProtection
-
 ### [Update-MgInformationProtectionSensitivityPolicySetting](Update-MgInformationProtectionSensitivityPolicySetting.md)
 Update the navigation property sensitivityPolicySettings in informationProtection
 
@@ -630,10 +626,15 @@ Update the navigation property sensitivityPolicySettings in informationProtectio
 Update the navigation property threatAssessmentRequests in informationProtection
 
 ### [Update-MgInformationProtectionThreatAssessmentRequestResult](Update-MgInformationProtectionThreatAssessmentRequestResult.md)
-Update the navigation property results in informationProtection
+A collection of threat assessment results.
+Read-only.
+By default, a GET /threatAssessmentRequests/{id} does not return this property unless you apply $expand on it.
 
 ### [Update-MgOauth2PermissionGrant](Update-MgOauth2PermissionGrant.md)
 Update entity in oauth2PermissionGrants
+
+### [Update-MgPolicyAccessReviewPolicy](Update-MgPolicyAccessReviewPolicy.md)
+Update the navigation property accessReviewPolicy in policies
 
 ### [Update-MgPolicyActivityBasedTimeoutPolicy](Update-MgPolicyActivityBasedTimeoutPolicy.md)
 Update the navigation property activityBasedTimeoutPolicies in policies
@@ -663,7 +664,8 @@ Update the navigation property directoryRoleAccessReviewPolicy in policies
 Update the navigation property featureRolloutPolicies in policies
 
 ### [Update-MgPolicyFeatureRolloutPolicyApplyTo](Update-MgPolicyFeatureRolloutPolicyApplyTo.md)
-Update the navigation property appliesTo in policies
+Nullable.
+Specifies a list of directoryObjects that feature is enabled for.
 
 ### [Update-MgPolicyHomeRealmDiscoveryPolicy](Update-MgPolicyHomeRealmDiscoveryPolicy.md)
 Update the navigation property homeRealmDiscoveryPolicies in policies
@@ -675,16 +677,12 @@ Update the navigation property identitySecurityDefaultsEnforcementPolicy in poli
 Update the navigation property permissionGrantPolicies in policies
 
 ### [Update-MgPolicyPermissionGrantPolicyExclude](Update-MgPolicyPermissionGrantPolicyExclude.md)
-Update the navigation property excludes in policies
+Condition sets which are excluded in this permission grant policy.
+Automatically expanded on GET.
 
 ### [Update-MgPolicyPermissionGrantPolicyInclude](Update-MgPolicyPermissionGrantPolicyInclude.md)
-Update the navigation property includes in policies
-
-### [Update-MgPolicyPrivateLinkResourcePolicy](Update-MgPolicyPrivateLinkResourcePolicy.md)
-Update the navigation property privateLinkResourcePolicies in policies
-
-### [Update-MgPolicyPrivateLinkResourcePolicyPrivateEndpointConnection](Update-MgPolicyPrivateLinkResourcePolicyPrivateEndpointConnection.md)
-Update the navigation property privateEndpointConnections in policies
+Condition sets which are included in this permission grant policy.
+Automatically expanded on GET.
 
 ### [Update-MgPolicyRoleManagementPolicy](Update-MgPolicyRoleManagementPolicy.md)
 Update the navigation property roleManagementPolicies in policies
@@ -693,10 +691,13 @@ Update the navigation property roleManagementPolicies in policies
 Update the navigation property roleManagementPolicyAssignments in policies
 
 ### [Update-MgPolicyRoleManagementPolicyEffectiveRule](Update-MgPolicyRoleManagementPolicyEffectiveRule.md)
-Update the navigation property effectiveRules in policies
+The list of effective rules like approval rule, expiration rule, etc.
+evaluated based on inherited referenced rules.
+E.g.
+If there is a tenant wide policy to enforce enabling approval rule, the effective rule will be to enable approval even if the polcy has a rule to disable approval.
 
 ### [Update-MgPolicyRoleManagementPolicyRule](Update-MgPolicyRoleManagementPolicyRule.md)
-Update the navigation property rules in policies
+The collection of rules like approval rule, expiration rule, etc.
 
 ### [Update-MgPolicyTokenIssuancePolicy](Update-MgPolicyTokenIssuancePolicy.md)
 Update the navigation property tokenIssuancePolicies in policies
@@ -711,7 +712,7 @@ Update entity in riskDetections
 Update entity in riskyUsers
 
 ### [Update-MgRiskyUserHistory](Update-MgRiskyUserHistory.md)
-Update the navigation property history in riskyUsers
+The activity related to user risk level change
 
 ### [Update-MgTrustFramework](Update-MgTrustFramework.md)
 Update trustFramework
@@ -735,7 +736,8 @@ Update the navigation property methods in users
 Update the navigation property microsoftAuthenticatorMethods in users
 
 ### [Update-MgUserAuthenticationMicrosoftAuthenticatorMethodDevice](Update-MgUserAuthenticationMicrosoftAuthenticatorMethodDevice.md)
-Update the navigation property device in users
+The registered device on which Microsoft Authenticator resides.
+This property is null if the device is not registered for passwordless Phone Sign-In.
 
 ### [Update-MgUserAuthenticationOperation](Update-MgUserAuthenticationOperation.md)
 Update the navigation property operations in users
@@ -745,9 +747,6 @@ Update the navigation property passwordlessMicrosoftAuthenticatorMethods in user
 
 ### [Update-MgUserAuthenticationPasswordlessMicrosoftAuthenticatorMethodDevice](Update-MgUserAuthenticationPasswordlessMicrosoftAuthenticatorMethodDevice.md)
 Update the navigation property device in users
-
-### [Update-MgUserAuthenticationPasswordMethod](Update-MgUserAuthenticationPasswordMethod.md)
-Update the navigation property passwordMethods in users
 
 ### [Update-MgUserAuthenticationPhoneMethod](Update-MgUserAuthenticationPhoneMethod.md)
 Update the navigation property phoneMethods in users
@@ -759,7 +758,7 @@ Update the navigation property temporaryAccessPassMethods in users
 Update the navigation property windowsHelloForBusinessMethods in users
 
 ### [Update-MgUserAuthenticationWindowHelloForBusinessMethodDevice](Update-MgUserAuthenticationWindowHelloForBusinessMethodDevice.md)
-Update the navigation property device in users
+The registered device on which this Windows Hello for Business key resides.
 
 ### [Update-MgUserInformationProtection](Update-MgUserInformationProtection.md)
 Update the navigation property informationProtection in users

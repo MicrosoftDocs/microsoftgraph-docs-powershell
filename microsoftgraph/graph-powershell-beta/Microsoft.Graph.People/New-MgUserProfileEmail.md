@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserProfileEmail
 
 ## SYNOPSIS
-Create new navigation property to emails for users
+Represents detailed information about email addresses associated with the user.
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ New-MgUserProfileEmail -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoft
 ```
 
 ## DESCRIPTION
-Create new navigation property to emails for users
+Represents detailed information about email addresses associated with the user.
 
 ## EXAMPLES
 
@@ -332,13 +332,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemEmail
-
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemEmail
-
 ## NOTES
 
 ALIASES

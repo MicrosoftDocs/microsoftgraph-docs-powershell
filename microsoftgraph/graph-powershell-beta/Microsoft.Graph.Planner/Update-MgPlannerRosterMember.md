@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgPlannerRosterMember
 
 ## SYNOPSIS
-Update the navigation property members in planner
+Retrieves the members of the plannerRoster.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Update-MgPlannerRosterMember -InputObject <IPlannerIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property members in planner
+Retrieves the members of the plannerRoster.
 
 ## EXAMPLES
 
@@ -236,13 +236,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerRosterMember
-
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

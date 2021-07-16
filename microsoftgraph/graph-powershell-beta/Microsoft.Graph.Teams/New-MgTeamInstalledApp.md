@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgTeamInstalledApp
 
 ## SYNOPSIS
-Create new navigation property to installedApps for teams
+The apps installed in this team.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ New-MgTeamInstalledApp -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftG
 ```
 
 ## DESCRIPTION
-Create new navigation property to installedApps for teams
+The apps installed in this team.
 
 ## EXAMPLES
 
@@ -191,13 +191,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppInstallation
-
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppInstallation
-
 ## NOTES
 
 ALIASES
@@ -216,10 +213,19 @@ BODYPARAMETER <IMicrosoftGraphTeamsAppInstallation>: teamsAppInstallation
     - `[AppDefinitions <IMicrosoftGraphTeamsAppDefinition[]>]`: The details for each version of the app.
       - `[Id <String>]`: Read-only.
       - `[AllowedInstallationScopes <String>]`: teamsAppInstallationScopes
-      - `[AzureAdAppId <String>]`: The WebApplicationInfo.id from the Teams App manifest.
+      - `[AzureAdAppId <String>]`: The WebApplicationInfo.Id from the Teams app manifest.
       - `[Bot <IMicrosoftGraphTeamworkBot>]`: teamworkBot
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: Read-only.
+      - `[ColorIcon <IMicrosoftGraphTeamsAppIcon>]`: teamsAppIcon
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: Read-only.
+        - `[HostedContent <IMicrosoftGraphTeamworkHostedContent>]`: teamworkHostedContent
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Id <String>]`: Read-only.
+          - `[ContentBytes <Byte[]>]`: Write only. Bytes for the hosted content (such as images).
+          - `[ContentType <String>]`: Write only. Content type, such as image/png, image/jpg.
+        - `[WebUrl <String>]`: The web URL that can be used for downloading the image.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -231,9 +237,10 @@ BODYPARAMETER <IMicrosoftGraphTeamsAppInstallation>: teamsAppInstallation
       - `[Description <String>]`: Verbose description of the application.
       - `[DisplayName <String>]`: The name of the app provided by the app developer.
       - `[LastModifiedDateTime <DateTime?>]`: 
+      - `[OutlineIcon <IMicrosoftGraphTeamsAppIcon>]`: teamsAppIcon
       - `[PublishingState <String>]`: teamsAppPublishingState
       - `[Shortdescription <String>]`: 
-      - `[TeamsAppId <String>]`: The id from the Teams App manifest.
+      - `[TeamsAppId <String>]`: The ID from the Teams app manifest.
       - `[Version <String>]`: The version number of the application.
     - `[DisplayName <String>]`: The name of the catalog app provided by the app developer in the Microsoft Teams zip app package.
     - `[DistributionMethod <String>]`: teamsAppDistributionMethod
@@ -277,10 +284,19 @@ TEAMSAPP <IMicrosoftGraphTeamsApp>: teamsApp
   - `[AppDefinitions <IMicrosoftGraphTeamsAppDefinition[]>]`: The details for each version of the app.
     - `[Id <String>]`: Read-only.
     - `[AllowedInstallationScopes <String>]`: teamsAppInstallationScopes
-    - `[AzureAdAppId <String>]`: The WebApplicationInfo.id from the Teams App manifest.
+    - `[AzureAdAppId <String>]`: The WebApplicationInfo.Id from the Teams app manifest.
     - `[Bot <IMicrosoftGraphTeamworkBot>]`: teamworkBot
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: Read-only.
+    - `[ColorIcon <IMicrosoftGraphTeamsAppIcon>]`: teamsAppIcon
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: Read-only.
+      - `[HostedContent <IMicrosoftGraphTeamworkHostedContent>]`: teamworkHostedContent
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: Read-only.
+        - `[ContentBytes <Byte[]>]`: Write only. Bytes for the hosted content (such as images).
+        - `[ContentType <String>]`: Write only. Content type, such as image/png, image/jpg.
+      - `[WebUrl <String>]`: The web URL that can be used for downloading the image.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -292,9 +308,10 @@ TEAMSAPP <IMicrosoftGraphTeamsApp>: teamsApp
     - `[Description <String>]`: Verbose description of the application.
     - `[DisplayName <String>]`: The name of the app provided by the app developer.
     - `[LastModifiedDateTime <DateTime?>]`: 
+    - `[OutlineIcon <IMicrosoftGraphTeamsAppIcon>]`: teamsAppIcon
     - `[PublishingState <String>]`: teamsAppPublishingState
     - `[Shortdescription <String>]`: 
-    - `[TeamsAppId <String>]`: The id from the Teams App manifest.
+    - `[TeamsAppId <String>]`: The ID from the Teams app manifest.
     - `[Version <String>]`: The version number of the application.
   - `[DisplayName <String>]`: The name of the catalog app provided by the app developer in the Microsoft Teams zip app package.
   - `[DistributionMethod <String>]`: teamsAppDistributionMethod
@@ -304,10 +321,19 @@ TEAMSAPPDEFINITION <IMicrosoftGraphTeamsAppDefinition>: teamsAppDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
   - `[AllowedInstallationScopes <String>]`: teamsAppInstallationScopes
-  - `[AzureAdAppId <String>]`: The WebApplicationInfo.id from the Teams App manifest.
+  - `[AzureAdAppId <String>]`: The WebApplicationInfo.Id from the Teams app manifest.
   - `[Bot <IMicrosoftGraphTeamworkBot>]`: teamworkBot
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: Read-only.
+  - `[ColorIcon <IMicrosoftGraphTeamsAppIcon>]`: teamsAppIcon
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: Read-only.
+    - `[HostedContent <IMicrosoftGraphTeamworkHostedContent>]`: teamworkHostedContent
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: Read-only.
+      - `[ContentBytes <Byte[]>]`: Write only. Bytes for the hosted content (such as images).
+      - `[ContentType <String>]`: Write only. Content type, such as image/png, image/jpg.
+    - `[WebUrl <String>]`: The web URL that can be used for downloading the image.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -319,9 +345,12 @@ TEAMSAPPDEFINITION <IMicrosoftGraphTeamsAppDefinition>: teamsAppDefinition
   - `[Description <String>]`: Verbose description of the application.
   - `[DisplayName <String>]`: The name of the app provided by the app developer.
   - `[LastModifiedDateTime <DateTime?>]`: 
+  - `[OutlineIcon <IMicrosoftGraphTeamsAppIcon>]`: teamsAppIcon
   - `[PublishingState <String>]`: teamsAppPublishingState
   - `[Shortdescription <String>]`: 
-  - `[TeamsAppId <String>]`: The id from the Teams App manifest.
+  - `[TeamsAppId <String>]`: The ID from the Teams app manifest.
   - `[Version <String>]`: The version number of the application.
+
+## RELATED LINKS
 
 ## RELATED LINKS

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserManagedDeviceLogCollectionResponse
 
 ## SYNOPSIS
-Delete navigation property logCollectionRequests for users
+List of log collection requests
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ Remove-MgUserManagedDeviceLogCollectionResponse -InputObject <IDevicesCorporateM
 ```
 
 ## DESCRIPTION
-Delete navigation property logCollectionRequests for users
+List of log collection requests
 
 ## EXAMPLES
 
@@ -160,11 +160,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

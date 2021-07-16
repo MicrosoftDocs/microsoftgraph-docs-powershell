@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgPlannerPlanBucketTask
 
 ## SYNOPSIS
-Create new navigation property to tasks for planner
+Read-only.
+Nullable.
+The collection of tasks in the bucket.
 
 ## SYNTAX
 
@@ -55,7 +57,9 @@ New-MgPlannerPlanBucketTask -InputObject <IPlannerIdentity> -BodyParameter <IMic
 ```
 
 ## DESCRIPTION
-Create new navigation property to tasks for planner
+Read-only.
+Nullable.
+The collection of tasks in the bucket.
 
 ## EXAMPLES
 
@@ -574,13 +578,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerTask
-
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerTask
-
 ## NOTES
 
 ALIASES

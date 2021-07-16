@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgShareListItemVersion
 
 ## SYNOPSIS
-Update the navigation property versions in shares
+The list of previous versions of the list item.
 
 ## SYNTAX
 
@@ -69,7 +69,7 @@ Update-MgShareListItemVersion -InputObject <IFilesIdentity> -BodyParameter <IMic
 ```
 
 ## DESCRIPTION
-Update the navigation property versions in shares
+The list of previous versions of the list item.
 
 ## EXAMPLES
 
@@ -297,13 +297,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphListItemVersion
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

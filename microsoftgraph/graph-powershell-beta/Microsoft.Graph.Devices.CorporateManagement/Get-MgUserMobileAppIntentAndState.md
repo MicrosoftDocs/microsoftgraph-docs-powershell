@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserMobileAppIntentAndState
 
 ## SYNOPSIS
-Get mobileAppIntentAndStates from users
+The list of troubleshooting events for this user.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgUserMobileAppIntentAndState -InputObject <IDevicesCorporateManagementIdent
 ```
 
 ## DESCRIPTION
-Get mobileAppIntentAndStates from users
+The list of troubleshooting events for this user.
 
 ## EXAMPLES
 
@@ -241,11 +241,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileAppIntentAndState
-
 ## NOTES
 
 ALIASES

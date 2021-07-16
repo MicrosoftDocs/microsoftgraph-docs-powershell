@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgApplicationConnectorGroupByRef
 
 ## SYNOPSIS
-Delete ref of navigation property connectorGroup for applications
+The connectorGroup the application is using with Azure AD Application Proxy.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgApplicationConnectorGroupByRef -InputObject <IApplicationsIdentity> [-I
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property connectorGroup for applications
+The connectorGroup the application is using with Azure AD Application Proxy.
+Nullable.
 
 ## EXAMPLES
 
@@ -129,11 +131,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

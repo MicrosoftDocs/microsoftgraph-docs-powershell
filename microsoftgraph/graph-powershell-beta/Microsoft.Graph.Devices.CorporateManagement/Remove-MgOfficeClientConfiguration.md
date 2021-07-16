@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgOfficeClientConfiguration
 
 ## SYNOPSIS
-Delete navigation property clientConfigurations for officeConfiguration
+List of office Client configuration.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgOfficeClientConfiguration -InputObject <IDevicesCorporateManagementIden
 ```
 
 ## DESCRIPTION
-Delete navigation property clientConfigurations for officeConfiguration
+List of office Client configuration.
 
 ## EXAMPLES
 
@@ -129,11 +129,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

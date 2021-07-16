@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgPrintPrinterShareByRef
 
 ## SYNOPSIS
-Get ref of shares from print
+The list of printerShares that are associated with the printer.
+Currently, only one printerShare can be associated with the printer.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -18,7 +21,10 @@ Get-MgPrintPrinterShareByRef -PrinterId <String> [-Filter <String>] [-Search <St
 ```
 
 ## DESCRIPTION
-Get ref of shares from print
+The list of printerShares that are associated with the printer.
+Currently, only one printerShare can be associated with the printer.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -168,7 +174,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

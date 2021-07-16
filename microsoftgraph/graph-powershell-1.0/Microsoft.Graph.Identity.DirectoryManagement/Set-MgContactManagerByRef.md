@@ -8,7 +8,8 @@ schema: 2.0.0
 # Set-MgContactManagerByRef
 
 ## SYNOPSIS
-Update the ref of navigation property manager in contacts
+The user or contact that is this contact's manager.
+Read-only.
 
 ## SYNTAX
 
@@ -37,7 +38,8 @@ Set-MgContactManagerByRef -InputObject <IIdentityDirectoryManagementIdentity> -B
 ```
 
 ## DESCRIPTION
-Update the ref of navigation property manager in contacts
+The user or contact that is this contact's manager.
+Read-only.
 
 ## EXAMPLES
 
@@ -156,13 +158,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

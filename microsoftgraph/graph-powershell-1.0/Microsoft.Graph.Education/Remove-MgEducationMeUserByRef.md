@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgEducationMeUserByRef
 
 ## SYNOPSIS
-Delete ref of navigation property user for education
+The directory user corresponding to this user.
 
 ## SYNTAX
 
@@ -17,7 +17,7 @@ Remove-MgEducationMeUserByRef [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confir
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property user for education
+The directory user corresponding to this user.
 
 ## EXAMPLES
 
@@ -92,7 +92,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

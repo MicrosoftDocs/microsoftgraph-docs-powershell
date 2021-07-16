@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserProfileSkill
 
 ## SYNOPSIS
-Update the navigation property skills in users
+Represents detailed information about skills associated with a user in various services.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Update-MgUserProfileSkill -InputObject <IPeopleIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Update the navigation property skills in users
+Represents detailed information about skills associated with a user in various services.
 
 ## EXAMPLES
 
@@ -410,13 +410,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSkillProficiency
-
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

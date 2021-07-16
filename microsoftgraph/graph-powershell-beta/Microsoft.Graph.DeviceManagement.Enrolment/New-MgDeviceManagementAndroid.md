@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementAndroid
 
 ## SYNOPSIS
-Create new navigation property to androidForWorkEnrollmentProfiles for deviceManagement
+Android for Work enrollment profile entities.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ New-MgDeviceManagementAndroid -BodyParameter <IMicrosoftGraphAndroidForWorkEnrol
 ```
 
 ## DESCRIPTION
-Create new navigation property to androidForWorkEnrollmentProfiles for deviceManagement
+Android for Work enrollment profile entities.
 
 ## EXAMPLES
 
@@ -268,11 +268,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAndroidForWorkEnrollmentProfile
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAndroidForWorkEnrollmentProfile
-
 ## NOTES
 
 ALIASES

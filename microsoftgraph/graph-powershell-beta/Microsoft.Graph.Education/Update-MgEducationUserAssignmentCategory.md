@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgEducationUserAssignmentCategory
 
 ## SYNOPSIS
-Update the navigation property categories in education
+When set, enables users to easily find assignments of a given type.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -39,7 +41,9 @@ Update-MgEducationUserAssignmentCategory -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property categories in education
+When set, enables users to easily find assignments of a given type.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -219,13 +223,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationCategory
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

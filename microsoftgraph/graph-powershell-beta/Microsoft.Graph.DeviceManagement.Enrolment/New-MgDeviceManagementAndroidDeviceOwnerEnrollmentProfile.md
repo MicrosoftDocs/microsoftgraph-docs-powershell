@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfile
 
 ## SYNOPSIS
-Create new navigation property to androidDeviceOwnerEnrollmentProfiles for deviceManagement
+Android device owner enrollment profile entities.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ New-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfile
 ```
 
 ## DESCRIPTION
-Create new navigation property to androidDeviceOwnerEnrollmentProfiles for deviceManagement
+Android device owner enrollment profile entities.
 
 ## EXAMPLES
 
@@ -329,11 +329,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAndroidDeviceOwnerEnrollmentProfile
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAndroidDeviceOwnerEnrollmentProfile
-
 ## NOTES
 
 ALIASES

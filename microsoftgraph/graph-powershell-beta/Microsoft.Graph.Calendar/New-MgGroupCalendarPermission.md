@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgGroupCalendarPermission
 
 ## SYNOPSIS
-Create new navigation property to calendarPermissions for groups
+The permissions of the users with whom the calendar is shared.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ New-MgGroupCalendarPermission -InputObject <ICalendarIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to calendarPermissions for groups
+The permissions of the users with whom the calendar is shared.
 
 ## EXAMPLES
 
@@ -238,13 +238,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalendarPermission
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalendarPermission
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgDeviceManagementManagedDeviceOverviewByRef
 
 ## SYNOPSIS
-Update the ref of navigation property managedDeviceOverview in deviceManagement
+Device overview
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Set-MgDeviceManagementManagedDeviceOverviewByRef -BodyParameter <Hashtable> [-Pa
 ```
 
 ## DESCRIPTION
-Update the ref of navigation property managedDeviceOverview in deviceManagement
+Device overview
 
 ## EXAMPLES
 
@@ -113,11 +113,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

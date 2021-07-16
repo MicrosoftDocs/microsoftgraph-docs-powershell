@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgGroupConversationThreadPostExtension
 
 ## SYNOPSIS
-Get extensions from groups
+The collection of open extensions defined for the post.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -34,7 +36,9 @@ Get-MgGroupConversationThreadPostExtension -InputObject <IGroupsIdentity> [-Expa
 ```
 
 ## DESCRIPTION
-Get extensions from groups
+The collection of open extensions defined for the post.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -288,13 +292,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExtension
-
 ### System.String
-
 ## NOTES
 
 ALIASES

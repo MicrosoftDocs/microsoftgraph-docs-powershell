@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementWindowInformationProtectionNetworkLearningSummary
 
 ## SYNOPSIS
-Create new navigation property to windowsInformationProtectionNetworkLearningSummaries for deviceManagement
+The windows information protection network learning summaries.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ New-MgDeviceManagementWindowInformationProtectionNetworkLearningSummary
 ```
 
 ## DESCRIPTION
-Create new navigation property to windowsInformationProtectionNetworkLearningSummaries for deviceManagement
+The windows information protection network learning summaries.
 
 ## EXAMPLES
 
@@ -145,11 +145,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionNetworkLearningSummary
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionNetworkLearningSummary
-
 ## NOTES
 
 ALIASES

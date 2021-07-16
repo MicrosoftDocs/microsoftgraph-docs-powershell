@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentity
 
 ## SYNOPSIS
-Create new navigation property to userExperienceAnalyticsDevicesWithoutCloudIdentity for deviceManagement
+User experience analytics devices without cloud identity.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ New-MgDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentity
 ```
 
 ## DESCRIPTION
-Create new navigation property to userExperienceAnalyticsDevicesWithoutCloudIdentity for deviceManagement
+User experience analytics devices without cloud identity.
 
 ## EXAMPLES
 
@@ -145,11 +145,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceWithoutCloudIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceWithoutCloudIdentity
-
 ## NOTES
 
 ALIASES

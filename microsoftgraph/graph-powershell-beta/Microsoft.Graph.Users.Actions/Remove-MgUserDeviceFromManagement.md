@@ -8,23 +8,23 @@ schema: 2.0.0
 # Remove-MgUserDeviceFromManagement
 
 ## SYNOPSIS
-Invoke action removeAllDevicesFromManagement
+Retire all devices from management for this user
 
 ## SYNTAX
 
-### Remove1 (Default)
+### Remove (Default)
 ```
 Remove-MgUserDeviceFromManagement -UserId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### RemoveViaIdentity1
+### RemoveViaIdentity
 ```
 Remove-MgUserDeviceFromManagement -InputObject <IUsersActionsIdentity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action removeAllDevicesFromManagement
+Retire all devices from management for this user
 
 ## EXAMPLES
 
@@ -36,7 +36,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: RemoveViaIdentity1
+Parameter Sets: RemoveViaIdentity
 Aliases:
 
 Required: True
@@ -66,7 +66,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: Remove1
+Parameter Sets: Remove
 Aliases:
 
 Required: True
@@ -113,11 +113,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

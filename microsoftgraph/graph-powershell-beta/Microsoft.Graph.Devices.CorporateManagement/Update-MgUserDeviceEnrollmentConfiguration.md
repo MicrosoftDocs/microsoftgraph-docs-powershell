@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserDeviceEnrollmentConfiguration
 
 ## SYNOPSIS
-Update the navigation property deviceEnrollmentConfigurations in users
+Get enrollment configurations targeted to the user
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Update-MgUserDeviceEnrollmentConfiguration -InputObject <IDevicesCorporateManage
 ```
 
 ## DESCRIPTION
-Update the navigation property deviceEnrollmentConfigurations in users
+Get enrollment configurations targeted to the user
 
 ## EXAMPLES
 
@@ -317,13 +317,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceEnrollmentConfiguration
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

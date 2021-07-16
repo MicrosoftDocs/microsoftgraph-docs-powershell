@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserTodoListTaskLinkedResource
 
 ## SYNOPSIS
-Delete navigation property linkedResources for users
+A collection of resources linked to the task.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ Remove-MgUserTodoListTaskLinkedResource -InputObject <IUsersIdentity> [-IfMatch 
 ```
 
 ## DESCRIPTION
-Delete navigation property linkedResources for users
+A collection of resources linked to the task.
 
 ## EXAMPLES
 
@@ -175,11 +175,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

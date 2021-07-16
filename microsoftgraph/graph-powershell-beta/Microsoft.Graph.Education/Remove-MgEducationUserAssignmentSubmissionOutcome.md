@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgEducationUserAssignmentSubmissionOutcome
 
 ## SYNOPSIS
-Delete navigation property outcomes for education
+Read-Write.
+Nullable.
 
 ## SYNTAX
 
@@ -26,7 +27,8 @@ Remove-MgEducationUserAssignmentSubmissionOutcome -InputObject <IEducationIdenti
 ```
 
 ## DESCRIPTION
-Delete navigation property outcomes for education
+Read-Write.
+Nullable.
 
 ## EXAMPLES
 
@@ -175,11 +177,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

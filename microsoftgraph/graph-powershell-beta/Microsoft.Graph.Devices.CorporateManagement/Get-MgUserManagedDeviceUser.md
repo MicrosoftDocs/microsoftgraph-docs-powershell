@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserManagedDeviceUser
 
 ## SYNOPSIS
-Get users from users
+The primary users associated with the managed device.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgUserManagedDeviceUser -InputObject <IDevicesCorporateManagementIdentity> [
 ```
 
 ## DESCRIPTION
-Get users from users
+The primary users associated with the managed device.
 
 ## EXAMPLES
 
@@ -256,11 +256,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUser
-
 ## NOTES
 
 ALIASES

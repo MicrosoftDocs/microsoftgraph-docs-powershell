@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserManagedDeviceSecurityBaselineStateSettingState
 
 ## SYNOPSIS
-Delete navigation property settingStates for users
+The security baseline state for different settings for a device
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ Remove-MgUserManagedDeviceSecurityBaselineStateSettingState -InputObject <IDevic
 ```
 
 ## DESCRIPTION
-Delete navigation property settingStates for users
+The security baseline state for different settings for a device
 
 ## EXAMPLES
 
@@ -175,11 +175,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

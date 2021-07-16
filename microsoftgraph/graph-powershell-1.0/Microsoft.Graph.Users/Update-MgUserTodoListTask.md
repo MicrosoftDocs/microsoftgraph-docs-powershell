@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgUserTodoListTask
 
 ## SYNOPSIS
-Update the navigation property tasks in users
+The tasks in this task list.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -49,7 +51,9 @@ Update-MgUserTodoListTask -InputObject <IUsersIdentity> -BodyParameter <IMicroso
 ```
 
 ## DESCRIPTION
-Update the navigation property tasks in users
+The tasks in this task list.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -444,13 +448,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTodoTask
-
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgUserCalendarGroup
 
 ## SYNOPSIS
-Delete navigation property calendarGroups for users
+The user's calendar groups.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +27,9 @@ Remove-MgUserCalendarGroup -InputObject <ICalendarIdentity> [-IfMatch <String>] 
 ```
 
 ## DESCRIPTION
-Delete navigation property calendarGroups for users
+The user's calendar groups.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -144,11 +148,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

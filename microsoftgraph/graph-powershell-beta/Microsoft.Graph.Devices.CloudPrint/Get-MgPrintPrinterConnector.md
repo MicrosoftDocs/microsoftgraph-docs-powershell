@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPrintPrinterConnector
 
 ## SYNOPSIS
-Get connectors from print
+The connectors that are associated with the printer.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgPrintPrinterConnector -PrinterId <String> [-ExpandProperty <String[]>] [-F
 ```
 
 ## DESCRIPTION
-Get connectors from print
+The connectors that are associated with the printer.
 
 ## EXAMPLES
 
@@ -199,7 +199,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintConnector1
-
 ## NOTES
 
 ALIASES

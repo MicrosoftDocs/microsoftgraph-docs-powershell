@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserOwnedObjectByRef
 
 ## SYNOPSIS
-Get ref of ownedObjects from users
+Directory objects that are owned by the user.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -18,7 +20,9 @@ Get-MgUserOwnedObjectByRef -UserId <String> [-Filter <String>] [-Search <String>
 ```
 
 ## DESCRIPTION
-Get ref of ownedObjects from users
+Directory objects that are owned by the user.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -168,7 +172,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgRetireUserManagedDevice
 
 ## SYNOPSIS
-Invoke action retire
+Retire a device
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Invoke-MgRetireUserManagedDevice -InputObject <IUsersActionsIdentity> [-PassThru
 ```
 
 ## DESCRIPTION
-Invoke action retire
+Retire a device
 
 ## EXAMPLES
 
@@ -129,11 +129,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

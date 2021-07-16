@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserManagedDevice
 
 ## SYNOPSIS
-Delete navigation property managedDevices for users
+The managed devices associated with the user.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgUserManagedDevice -InputObject <IDevicesCorporateManagementIdentity> [-
 ```
 
 ## DESCRIPTION
-Delete navigation property managedDevices for users
+The managed devices associated with the user.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

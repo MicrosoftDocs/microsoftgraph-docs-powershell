@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserManagedDeviceCompliancePolicyState
 
 ## SYNOPSIS
-Delete navigation property deviceCompliancePolicyStates for users
+Device compliance policy states for this device.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ Remove-MgUserManagedDeviceCompliancePolicyState -InputObject <IDevicesCorporateM
 ```
 
 ## DESCRIPTION
-Delete navigation property deviceCompliancePolicyStates for users
+Device compliance policy states for this device.
 
 ## EXAMPLES
 
@@ -160,11 +160,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

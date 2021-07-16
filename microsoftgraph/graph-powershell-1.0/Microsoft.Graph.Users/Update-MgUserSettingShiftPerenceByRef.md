@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserSettingShiftPerenceByRef
 
 ## SYNOPSIS
-Update the navigation property shiftPreferences in users
+The shift preferences for the user.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Update-MgUserSettingShiftPerenceByRef -InputObject <IUsersIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property shiftPreferences in users
+The shift preferences for the user.
 
 ## EXAMPLES
 
@@ -240,13 +240,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphShiftPreferences1
-
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

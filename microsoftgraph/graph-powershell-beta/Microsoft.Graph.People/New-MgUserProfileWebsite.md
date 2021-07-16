@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserProfileWebsite
 
 ## SYNOPSIS
-Create new navigation property to websites for users
+Represents detailed information about websites associated with a user in various services.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ New-MgUserProfileWebsite -InputObject <IPeopleIdentity> -BodyParameter <IMicroso
 ```
 
 ## DESCRIPTION
-Create new navigation property to websites for users
+Represents detailed information about websites associated with a user in various services.
 
 ## EXAMPLES
 
@@ -364,13 +364,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPersonWebsite
-
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPersonWebsite
-
 ## NOTES
 
 ALIASES

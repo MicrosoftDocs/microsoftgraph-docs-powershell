@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgSiteColumn
 
 ## SYNOPSIS
-Update the navigation property columns in sites
+The collection of column definitions reusable across lists under this site.
 
 ## SYNTAX
 
@@ -49,7 +49,7 @@ Update-MgSiteColumn -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGrap
 ```
 
 ## DESCRIPTION
-Update the navigation property columns in sites
+The collection of column definitions reusable across lists under this site.
 
 ## EXAMPLES
 
@@ -510,13 +510,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnDefinition1
-
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

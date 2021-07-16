@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserProfileAddress
 
 ## SYNOPSIS
-Delete navigation property addresses for users
+Represents details of addresses associated with the user.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgUserProfileAddress -InputObject <IPeopleIdentity> [-IfMatch <String>] [
 ```
 
 ## DESCRIPTION
-Delete navigation property addresses for users
+Represents details of addresses associated with the user.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

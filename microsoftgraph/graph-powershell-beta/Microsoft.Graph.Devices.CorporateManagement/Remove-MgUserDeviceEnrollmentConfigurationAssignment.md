@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserDeviceEnrollmentConfigurationAssignment
 
 ## SYNOPSIS
-Delete navigation property assignments for users
+The list of group assignments for the device configuration profile
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ Remove-MgUserDeviceEnrollmentConfigurationAssignment -InputObject <IDevicesCorpo
 ```
 
 ## DESCRIPTION
-Delete navigation property assignments for users
+The list of group assignments for the device configuration profile
 
 ## EXAMPLES
 
@@ -160,11 +160,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

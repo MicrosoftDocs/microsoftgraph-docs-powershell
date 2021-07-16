@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserMessageAttachment
 
 ## SYNOPSIS
-Update the navigation property attachments in users
+The fileAttachment and itemAttachment attachments for the message.
 
 ## SYNTAX
 
@@ -40,7 +40,7 @@ Update-MgUserMessageAttachment -InputObject <IMailIdentity> -BodyParameter <IMic
 ```
 
 ## DESCRIPTION
-Update the navigation property attachments in users
+The fileAttachment and itemAttachment attachments for the message.
 
 ## EXAMPLES
 
@@ -282,13 +282,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMailIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachment
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

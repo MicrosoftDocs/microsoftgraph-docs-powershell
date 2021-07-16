@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgSecurityAlert
 
 ## SYNOPSIS
-Create new navigation property to alerts for security
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -41,7 +42,8 @@ New-MgSecurityAlert -BodyParameter <IMicrosoftGraphAlert> [-WhatIf] [-Confirm] [
 ```
 
 ## DESCRIPTION
-Create new navigation property to alerts for security
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -747,11 +749,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAlert
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAlert
-
 ## NOTES
 
 ALIASES
@@ -894,7 +894,7 @@ BODYPARAMETER <IMicrosoftGraphAlert>: alert
   - `[Title <String>]`: Alert title. Required.
   - `[Triggers <IMicrosoftGraphAlertTrigger[]>]`: Security-related information about the specific properties that triggered the alert (properties appearing in the alert). Alerts might contain information about multiple users, hosts, files, ip addresses. This field indicates which properties triggered the alert generation.
     - `[Name <String>]`: Name of the property serving as a detection trigger.
-    - `[Type <String>]`: Type of the property in the key:value pair for interpretation. For example, String, Boolean, etc.
+    - `[Type <String>]`: Type of the property in the key:value pair for interpretation. For example, String, Boolean etc.
     - `[Value <String>]`: Value of the property serving as a detection trigger.
   - `[UriClickSecurityStates <IMicrosoftGraphUriClickSecurityState[]>]`: 
     - `[ClickAction <String>]`: 
@@ -1042,7 +1042,7 @@ SECURITYRESOURCES <IMicrosoftGraphSecurityResource[]>: Resources related to curr
 
 TRIGGERS <IMicrosoftGraphAlertTrigger[]>: Security-related information about the specific properties that triggered the alert (properties appearing in the alert). Alerts might contain information about multiple users, hosts, files, ip addresses. This field indicates which properties triggered the alert generation.
   - `[Name <String>]`: Name of the property serving as a detection trigger.
-  - `[Type <String>]`: Type of the property in the key:value pair for interpretation. For example, String, Boolean, etc.
+  - `[Type <String>]`: Type of the property in the key:value pair for interpretation. For example, String, Boolean etc.
   - `[Value <String>]`: Value of the property serving as a detection trigger.
 
 URICLICKSECURITYSTATES <IMicrosoftGraphUriClickSecurityState[]>: .

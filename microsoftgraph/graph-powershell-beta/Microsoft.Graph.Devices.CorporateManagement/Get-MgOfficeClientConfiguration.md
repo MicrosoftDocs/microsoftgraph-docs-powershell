@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgOfficeClientConfiguration
 
 ## SYNOPSIS
-Get clientConfigurations from officeConfiguration
+List of office Client configuration.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgOfficeClientConfiguration -InputObject <IDevicesCorporateManagementIdentit
 ```
 
 ## DESCRIPTION
-Get clientConfigurations from officeConfiguration
+List of office Client configuration.
 
 ## EXAMPLES
 
@@ -226,11 +226,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOfficeClientConfiguration
-
 ## NOTES
 
 ALIASES

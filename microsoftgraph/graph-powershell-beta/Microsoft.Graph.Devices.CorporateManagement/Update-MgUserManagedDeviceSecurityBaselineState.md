@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserManagedDeviceSecurityBaselineState
 
 ## SYNOPSIS
-Update the navigation property securityBaselineStates in users
+Security baseline states for this device.
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ Update-MgUserManagedDeviceSecurityBaselineState -InputObject <IDevicesCorporateM
 ```
 
 ## DESCRIPTION
-Update the navigation property securityBaselineStates in users
+Security baseline states for this device.
 
 ## EXAMPLES
 
@@ -283,13 +283,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityBaselineState
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

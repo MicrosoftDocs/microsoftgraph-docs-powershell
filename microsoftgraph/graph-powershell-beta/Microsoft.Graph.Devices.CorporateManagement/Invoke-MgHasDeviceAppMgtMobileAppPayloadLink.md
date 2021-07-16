@@ -115,11 +115,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths99Fc39DeviceappmanagementMobileappsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphHasPayloadLinkResultItem
-
 ## NOTES
 
 ALIASES

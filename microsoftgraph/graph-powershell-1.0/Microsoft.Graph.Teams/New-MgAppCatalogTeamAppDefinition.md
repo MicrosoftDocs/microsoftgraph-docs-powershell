@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgAppCatalogTeamAppDefinition
 
 ## SYNOPSIS
-Create new navigation property to appDefinitions for appCatalogs
+The details for each version of the app.
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ New-MgAppCatalogTeamAppDefinition -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to appDefinitions for appCatalogs
+The details for each version of the app.
 
 ## EXAMPLES
 
@@ -244,7 +244,7 @@ Accept wildcard characters: False
 ```
 
 ### -TeamsAppId1
-The id from the Teams App manifest.
+The ID from the Teams app manifest.
 
 ```yaml
 Type: String
@@ -310,13 +310,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppDefinition1
-
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppDefinition1
-
 ## NOTES
 
 ALIASES
@@ -345,7 +342,7 @@ BODYPARAMETER <IMicrosoftGraphTeamsAppDefinition1>: teamsAppDefinition
   - `[LastModifiedDateTime <DateTime?>]`: 
   - `[PublishingState <String>]`: teamsAppPublishingState
   - `[ShortDescription <String>]`: Short description of the application.
-  - `[TeamsAppId <String>]`: The id from the Teams App manifest.
+  - `[TeamsAppId <String>]`: The ID from the Teams app manifest.
   - `[Version <String>]`: The version number of the application.
 
 CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet

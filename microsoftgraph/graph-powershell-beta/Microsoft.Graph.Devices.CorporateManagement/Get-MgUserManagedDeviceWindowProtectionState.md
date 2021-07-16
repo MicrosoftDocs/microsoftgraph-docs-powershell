@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserManagedDeviceWindowProtectionState
 
 ## SYNOPSIS
-Get windowsProtectionState from users
+The device protection status.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgUserManagedDeviceWindowProtectionState -InputObject <IDevicesCorporateMana
 ```
 
 ## DESCRIPTION
-Get windowsProtectionState from users
+The device protection status.
 
 ## EXAMPLES
 
@@ -113,11 +113,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsProtectionState
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgShareListContentTypeColumn
 
 ## SYNOPSIS
-Update the navigation property columns in shares
+The collection of column definitions for this contentType.
 
 ## SYNTAX
 
@@ -59,7 +59,7 @@ Update-MgShareListContentTypeColumn -InputObject <IFilesIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property columns in shares
+The collection of column definitions for this contentType.
 
 ## EXAMPLES
 
@@ -705,13 +705,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnDefinition
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

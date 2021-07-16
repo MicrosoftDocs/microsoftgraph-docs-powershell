@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserManagedDeviceWindowProtectionState
 
 ## SYNOPSIS
-Delete navigation property windowsProtectionState for users
+The device protection status.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgUserManagedDeviceWindowProtectionState -InputObject <IDevicesCorporateM
 ```
 
 ## DESCRIPTION
-Delete navigation property windowsProtectionState for users
+The device protection status.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

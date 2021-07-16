@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserMobileAppTroubleshootingEvent
 
 ## SYNOPSIS
-Get mobileAppTroubleshootingEvents from users
+The list of mobile app troubleshooting events for this user.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgUserMobileAppTroubleshootingEvent -InputObject <IDevicesCorporateManagemen
 ```
 
 ## DESCRIPTION
-Get mobileAppTroubleshootingEvents from users
+The list of mobile app troubleshooting events for this user.
 
 ## EXAMPLES
 
@@ -241,11 +241,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileAppTroubleshootingEvent
-
 ## NOTES
 
 ALIASES

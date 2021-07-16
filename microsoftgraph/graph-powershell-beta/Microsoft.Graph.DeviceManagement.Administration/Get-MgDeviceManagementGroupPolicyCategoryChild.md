@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementGroupPolicyCategoryChild
 
 ## SYNOPSIS
-Get children from deviceManagement
+The children categories
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgDeviceManagementGroupPolicyCategoryChild -GroupPolicyCategoryId <String> [
 ```
 
 ## DESCRIPTION
-Get children from deviceManagement
+The children categories
 
 ## EXAMPLES
 
@@ -199,7 +199,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyCategory
-
 ## NOTES
 
 ALIASES

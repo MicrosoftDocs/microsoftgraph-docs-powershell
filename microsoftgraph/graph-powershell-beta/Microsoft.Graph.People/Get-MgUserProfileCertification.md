@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserProfileCertification
 
 ## SYNOPSIS
-Get certifications from users
+Represents the details of certifications associated with a person.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgUserProfileCertification -InputObject <IPeopleIdentity> [-ExpandProperty <
 ```
 
 ## DESCRIPTION
-Get certifications from users
+Represents the details of certifications associated with a person.
 
 ## EXAMPLES
 
@@ -241,11 +241,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPersonCertification
-
 ## NOTES
 
 ALIASES

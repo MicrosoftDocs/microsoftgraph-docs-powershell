@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-Module Guid: 3cfe18d3-c2fc-4b4c-8ee0-a378cce2c8bc
+Module Guid: d268d705-6d1d-439c-8c79-3e495ab05b99
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement
 Help Version: 1.0.0.0
 Locale: en-US
@@ -12,10 +12,10 @@ Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Devices.CorporateManagement Cmdlets
 ### [Get-MgOfficeClientConfiguration](Get-MgOfficeClientConfiguration.md)
-Get clientConfigurations from officeConfiguration
+List of office Client configuration.
 
 ### [Get-MgOfficeClientConfigurationAssignment](Get-MgOfficeClientConfigurationAssignment.md)
-Get assignments from officeConfiguration
+The list of group assignments for the policy.
 
 ### [Get-MgOfficeClientConfigurationPolicyPayload](Get-MgOfficeClientConfigurationPolicyPayload.md)
 Get media content for the navigation property clientConfigurations from officeConfiguration
@@ -27,76 +27,76 @@ Get media content for the navigation property clientConfigurations from officeCo
 Get officeConfiguration
 
 ### [Get-MgUserDeviceEnrollmentConfiguration](Get-MgUserDeviceEnrollmentConfiguration.md)
-Get deviceEnrollmentConfigurations from users
+Get enrollment configurations targeted to the user
 
 ### [Get-MgUserDeviceEnrollmentConfigurationAssignment](Get-MgUserDeviceEnrollmentConfigurationAssignment.md)
-Get assignments from users
+The list of group assignments for the device configuration profile
 
 ### [Get-MgUserDeviceManagementTroubleshootingEvent](Get-MgUserDeviceManagementTroubleshootingEvent.md)
-Get deviceManagementTroubleshootingEvents from users
+The list of troubleshooting events for this user.
 
 ### [Get-MgUserManagedAppRegistration](Get-MgUserManagedAppRegistration.md)
-Get managedAppRegistrations from users
+Zero or more managed app registrations that belong to the user.
 
 ### [Get-MgUserManagedAppRegistrationByRef](Get-MgUserManagedAppRegistrationByRef.md)
-Get ref of managedAppRegistrations from users
+Zero or more managed app registrations that belong to the user.
 
 ### [Get-MgUserManagedDevice](Get-MgUserManagedDevice.md)
-Get managedDevices from users
+The managed devices associated with the user.
 
 ### [Get-MgUserManagedDeviceAssignmentFilterEvaluationStatusDetail](Get-MgUserManagedDeviceAssignmentFilterEvaluationStatusDetail.md)
-Get assignmentFilterEvaluationStatusDetails from users
+Managed device mobile app configuration states for this device.
 
 ### [Get-MgUserManagedDeviceCategory](Get-MgUserManagedDeviceCategory.md)
-Get deviceCategory from users
+Device category
 
 ### [Get-MgUserManagedDeviceCompliancePolicyState](Get-MgUserManagedDeviceCompliancePolicyState.md)
-Get deviceCompliancePolicyStates from users
+Device compliance policy states for this device.
 
 ### [Get-MgUserManagedDeviceConfigurationState](Get-MgUserManagedDeviceConfigurationState.md)
-Get deviceConfigurationStates from users
+Device configuration states for this device.
 
 ### [Get-MgUserManagedDeviceDetectedApp](Get-MgUserManagedDeviceDetectedApp.md)
-Get detectedApps from users
+All applications currently installed on the device
 
 ### [Get-MgUserManagedDeviceDetectedAppByRef](Get-MgUserManagedDeviceDetectedAppByRef.md)
-Get ref of detectedApps from users
+All applications currently installed on the device
 
 ### [Get-MgUserManagedDeviceLogCollectionResponse](Get-MgUserManagedDeviceLogCollectionResponse.md)
-Get logCollectionRequests from users
+List of log collection requests
 
 ### [Get-MgUserManagedDeviceMobileAppConfigurationState](Get-MgUserManagedDeviceMobileAppConfigurationState.md)
-Get managedDeviceMobileAppConfigurationStates from users
+Managed device mobile app configuration states for this device.
 
 ### [Get-MgUserManagedDeviceSecurityBaselineState](Get-MgUserManagedDeviceSecurityBaselineState.md)
-Get securityBaselineStates from users
+Security baseline states for this device.
 
 ### [Get-MgUserManagedDeviceSecurityBaselineStateSettingState](Get-MgUserManagedDeviceSecurityBaselineStateSettingState.md)
-Get settingStates from users
+The security baseline state for different settings for a device
 
 ### [Get-MgUserManagedDeviceUser](Get-MgUserManagedDeviceUser.md)
-Get users from users
+The primary users associated with the managed device.
 
 ### [Get-MgUserManagedDeviceWindowProtectionState](Get-MgUserManagedDeviceWindowProtectionState.md)
-Get windowsProtectionState from users
+The device protection status.
 
 ### [Get-MgUserManagedDeviceWindowProtectionStateDetectedMalwareState](Get-MgUserManagedDeviceWindowProtectionStateDetectedMalwareState.md)
-Get detectedMalwareState from users
+Device malware list
 
 ### [Get-MgUserMobileAppIntentAndState](Get-MgUserMobileAppIntentAndState.md)
-Get mobileAppIntentAndStates from users
+The list of troubleshooting events for this user.
 
 ### [Get-MgUserMobileAppTroubleshootingEvent](Get-MgUserMobileAppTroubleshootingEvent.md)
-Get mobileAppTroubleshootingEvents from users
+The list of mobile app troubleshooting events for this user.
 
 ### [Get-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Get-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Get appLogCollectionRequests from users
+The collection property of AppLogUploadRequest.
 
 ### [Get-MgUserWindowInformationProtectionDeviceRegistration](Get-MgUserWindowInformationProtectionDeviceRegistration.md)
-Get windowsInformationProtectionDeviceRegistrations from users
+Zero or more WIP device registrations that belong to the user.
 
 ### [Get-MgUserWindowInformationProtectionDeviceRegistrationByRef](Get-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Get ref of windowsInformationProtectionDeviceRegistrations from users
+Zero or more WIP device registrations that belong to the user.
 
 ### [Invoke-MgHasDeviceAppMgtAndroidManagedAppProtectionPayloadLink](Invoke-MgHasDeviceAppMgtAndroidManagedAppProtectionPayloadLink.md)
 Invoke action hasPayloadLinks
@@ -297,409 +297,412 @@ Invoke action targetApps
 Invoke action targetApps
 
 ### [New-MgOfficeClientConfiguration](New-MgOfficeClientConfiguration.md)
-Create new navigation property to clientConfigurations for officeConfiguration
+List of office Client configuration.
 
 ### [New-MgOfficeClientConfigurationAssignment](New-MgOfficeClientConfigurationAssignment.md)
-Create new navigation property to assignments for officeConfiguration
+The list of group assignments for the policy.
 
 ### [New-MgUserDeviceEnrollmentConfiguration](New-MgUserDeviceEnrollmentConfiguration.md)
-Create new navigation property to deviceEnrollmentConfigurations for users
+Get enrollment configurations targeted to the user
 
 ### [New-MgUserDeviceEnrollmentConfigurationAssignment](New-MgUserDeviceEnrollmentConfigurationAssignment.md)
-Create new navigation property to assignments for users
+The list of group assignments for the device configuration profile
 
 ### [New-MgUserDeviceManagementTroubleshootingEvent](New-MgUserDeviceManagementTroubleshootingEvent.md)
-Create new navigation property to deviceManagementTroubleshootingEvents for users
+The list of troubleshooting events for this user.
 
 ### [New-MgUserManagedAppRegistrationByRef](New-MgUserManagedAppRegistrationByRef.md)
-Create new navigation property ref to managedAppRegistrations for users
+Zero or more managed app registrations that belong to the user.
 
 ### [New-MgUserManagedDevice](New-MgUserManagedDevice.md)
-Create new navigation property to managedDevices for users
+The managed devices associated with the user.
 
 ### [New-MgUserManagedDeviceAssignmentFilterEvaluationStatusDetail](New-MgUserManagedDeviceAssignmentFilterEvaluationStatusDetail.md)
-Create new navigation property to assignmentFilterEvaluationStatusDetails for users
+Managed device mobile app configuration states for this device.
 
 ### [New-MgUserManagedDeviceCompliancePolicyState](New-MgUserManagedDeviceCompliancePolicyState.md)
-Create new navigation property to deviceCompliancePolicyStates for users
+Device compliance policy states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
-Create new navigation property to deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [New-MgUserManagedDeviceDetectedAppByRef](New-MgUserManagedDeviceDetectedAppByRef.md)
-Create new navigation property ref to detectedApps for users
+All applications currently installed on the device
 
 ### [New-MgUserManagedDeviceLogCollectionResponse](New-MgUserManagedDeviceLogCollectionResponse.md)
-Create new navigation property to logCollectionRequests for users
+List of log collection requests
 
 ### [New-MgUserManagedDeviceMobileAppConfigurationState](New-MgUserManagedDeviceMobileAppConfigurationState.md)
-Create new navigation property to managedDeviceMobileAppConfigurationStates for users
+Managed device mobile app configuration states for this device.
 
 ### [New-MgUserManagedDeviceSecurityBaselineState](New-MgUserManagedDeviceSecurityBaselineState.md)
-Create new navigation property to securityBaselineStates for users
+Security baseline states for this device.
 
 ### [New-MgUserManagedDeviceSecurityBaselineStateSettingState](New-MgUserManagedDeviceSecurityBaselineStateSettingState.md)
-Create new navigation property to settingStates for users
+The security baseline state for different settings for a device
 
 ### [New-MgUserManagedDeviceUser](New-MgUserManagedDeviceUser.md)
-Create new navigation property to users for users
+The primary users associated with the managed device.
 
 ### [New-MgUserManagedDeviceWindowProtectionStateDetectedMalwareState](New-MgUserManagedDeviceWindowProtectionStateDetectedMalwareState.md)
-Create new navigation property to detectedMalwareState for users
+Device malware list
 
 ### [New-MgUserMobileAppIntentAndState](New-MgUserMobileAppIntentAndState.md)
-Create new navigation property to mobileAppIntentAndStates for users
+The list of troubleshooting events for this user.
 
 ### [New-MgUserMobileAppTroubleshootingEvent](New-MgUserMobileAppTroubleshootingEvent.md)
-Create new navigation property to mobileAppTroubleshootingEvents for users
+The list of mobile app troubleshooting events for this user.
 
 ### [New-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](New-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Create new navigation property to appLogCollectionRequests for users
+The collection property of AppLogUploadRequest.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Create new navigation property ref to windowsInformationProtectionDeviceRegistrations for users
+Zero or more WIP device registrations that belong to the user.
 
 ### [Remove-MgOfficeClientConfiguration](Remove-MgOfficeClientConfiguration.md)
-Delete navigation property clientConfigurations for officeConfiguration
+List of office Client configuration.
 
 ### [Remove-MgOfficeClientConfigurationAssignment](Remove-MgOfficeClientConfigurationAssignment.md)
-Delete navigation property assignments for officeConfiguration
+The list of group assignments for the policy.
 
 ### [Remove-MgUserDeviceEnrollmentConfiguration](Remove-MgUserDeviceEnrollmentConfiguration.md)
-Delete navigation property deviceEnrollmentConfigurations for users
+Get enrollment configurations targeted to the user
 
 ### [Remove-MgUserDeviceEnrollmentConfigurationAssignment](Remove-MgUserDeviceEnrollmentConfigurationAssignment.md)
-Delete navigation property assignments for users
+The list of group assignments for the device configuration profile
 
 ### [Remove-MgUserDeviceManagementTroubleshootingEvent](Remove-MgUserDeviceManagementTroubleshootingEvent.md)
-Delete navigation property deviceManagementTroubleshootingEvents for users
+The list of troubleshooting events for this user.
 
 ### [Remove-MgUserManagedDevice](Remove-MgUserManagedDevice.md)
-Delete navigation property managedDevices for users
+The managed devices associated with the user.
 
 ### [Remove-MgUserManagedDeviceAssignmentFilterEvaluationStatusDetail](Remove-MgUserManagedDeviceAssignmentFilterEvaluationStatusDetail.md)
-Delete navigation property assignmentFilterEvaluationStatusDetails for users
+Managed device mobile app configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceCategory](Remove-MgUserManagedDeviceCategory.md)
-Delete navigation property deviceCategory for users
+Device category
 
 ### [Remove-MgUserManagedDeviceCompliancePolicyState](Remove-MgUserManagedDeviceCompliancePolicyState.md)
-Delete navigation property deviceCompliancePolicyStates for users
+Device compliance policy states for this device.
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
-Delete navigation property deviceConfigurationStates for users
+Device configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceLogCollectionResponse](Remove-MgUserManagedDeviceLogCollectionResponse.md)
-Delete navigation property logCollectionRequests for users
+List of log collection requests
 
 ### [Remove-MgUserManagedDeviceMobileAppConfigurationState](Remove-MgUserManagedDeviceMobileAppConfigurationState.md)
-Delete navigation property managedDeviceMobileAppConfigurationStates for users
+Managed device mobile app configuration states for this device.
 
 ### [Remove-MgUserManagedDeviceSecurityBaselineState](Remove-MgUserManagedDeviceSecurityBaselineState.md)
-Delete navigation property securityBaselineStates for users
+Security baseline states for this device.
 
 ### [Remove-MgUserManagedDeviceSecurityBaselineStateSettingState](Remove-MgUserManagedDeviceSecurityBaselineStateSettingState.md)
-Delete navigation property settingStates for users
+The security baseline state for different settings for a device
 
 ### [Remove-MgUserManagedDeviceUser](Remove-MgUserManagedDeviceUser.md)
-Delete navigation property users for users
+The primary users associated with the managed device.
 
 ### [Remove-MgUserManagedDeviceWindowProtectionState](Remove-MgUserManagedDeviceWindowProtectionState.md)
-Delete navigation property windowsProtectionState for users
+The device protection status.
 
 ### [Remove-MgUserManagedDeviceWindowProtectionStateDetectedMalwareState](Remove-MgUserManagedDeviceWindowProtectionStateDetectedMalwareState.md)
-Delete navigation property detectedMalwareState for users
+Device malware list
 
 ### [Remove-MgUserMobileAppIntentAndState](Remove-MgUserMobileAppIntentAndState.md)
-Delete navigation property mobileAppIntentAndStates for users
+The list of troubleshooting events for this user.
 
 ### [Remove-MgUserMobileAppTroubleshootingEvent](Remove-MgUserMobileAppTroubleshootingEvent.md)
-Delete navigation property mobileAppTroubleshootingEvents for users
+The list of mobile app troubleshooting events for this user.
 
 ### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Delete navigation property appLogCollectionRequests for users
+The collection property of AppLogUploadRequest.
 
 ### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Delete navigation property appLogCollectionRequests for users
+The collection property of AppLogUploadRequest.
 
 ### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Delete navigation property appLogCollectionRequests for users
+The collection property of AppLogUploadRequest.
 
 ### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Delete navigation property appLogCollectionRequests for users
+The collection property of AppLogUploadRequest.
 
 ### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Delete navigation property appLogCollectionRequests for users
+The collection property of AppLogUploadRequest.
 
 ### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Delete navigation property appLogCollectionRequests for users
+The collection property of AppLogUploadRequest.
 
 ### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Delete navigation property appLogCollectionRequests for users
+The collection property of AppLogUploadRequest.
 
 ### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Delete navigation property appLogCollectionRequests for users
+The collection property of AppLogUploadRequest.
 
 ### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Delete navigation property appLogCollectionRequests for users
+The collection property of AppLogUploadRequest.
 
 ### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Delete navigation property appLogCollectionRequests for users
+The collection property of AppLogUploadRequest.
 
 ### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Delete navigation property appLogCollectionRequests for users
+The collection property of AppLogUploadRequest.
 
 ### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Delete navigation property appLogCollectionRequests for users
+The collection property of AppLogUploadRequest.
 
 ### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Delete navigation property appLogCollectionRequests for users
+The collection property of AppLogUploadRequest.
 
 ### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Delete navigation property appLogCollectionRequests for users
+The collection property of AppLogUploadRequest.
 
 ### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Delete navigation property appLogCollectionRequests for users
+The collection property of AppLogUploadRequest.
 
 ### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Delete navigation property appLogCollectionRequests for users
+The collection property of AppLogUploadRequest.
 
 ### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Delete navigation property appLogCollectionRequests for users
+The collection property of AppLogUploadRequest.
 
 ### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Delete navigation property appLogCollectionRequests for users
+The collection property of AppLogUploadRequest.
 
 ### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Delete navigation property appLogCollectionRequests for users
+The collection property of AppLogUploadRequest.
 
 ### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Delete navigation property appLogCollectionRequests for users
+The collection property of AppLogUploadRequest.
 
 ### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Delete navigation property appLogCollectionRequests for users
+The collection property of AppLogUploadRequest.
 
 ### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Delete navigation property appLogCollectionRequests for users
+The collection property of AppLogUploadRequest.
 
 ### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Delete navigation property appLogCollectionRequests for users
+The collection property of AppLogUploadRequest.
 
 ### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Delete navigation property appLogCollectionRequests for users
+The collection property of AppLogUploadRequest.
 
 ### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Delete navigation property appLogCollectionRequests for users
+The collection property of AppLogUploadRequest.
 
 ### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Delete navigation property appLogCollectionRequests for users
+The collection property of AppLogUploadRequest.
 
 ### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Delete navigation property appLogCollectionRequests for users
+The collection property of AppLogUploadRequest.
 
 ### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Delete navigation property appLogCollectionRequests for users
+The collection property of AppLogUploadRequest.
 
 ### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Delete navigation property appLogCollectionRequests for users
+The collection property of AppLogUploadRequest.
 
 ### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Delete navigation property appLogCollectionRequests for users
+The collection property of AppLogUploadRequest.
+
+### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
+The collection property of AppLogUploadRequest.
 
 ### [Set-MgOfficeClientConfiguration](Set-MgOfficeClientConfiguration.md)
 Invoke action assign
@@ -927,10 +930,10 @@ Update media content for the navigation property clientConfigurations in officeC
 Update media content for the navigation property clientConfigurations in officeConfiguration
 
 ### [Update-MgOfficeClientConfiguration](Update-MgOfficeClientConfiguration.md)
-Update the navigation property clientConfigurations in officeConfiguration
+List of office Client configuration.
 
 ### [Update-MgOfficeClientConfigurationAssignment](Update-MgOfficeClientConfigurationAssignment.md)
-Update the navigation property assignments in officeConfiguration
+The list of group assignments for the policy.
 
 ### [Update-MgOfficeClientConfigurationPriority](Update-MgOfficeClientConfigurationPriority.md)
 Invoke action updatePriorities
@@ -939,56 +942,56 @@ Invoke action updatePriorities
 Update officeConfiguration
 
 ### [Update-MgUserDeviceEnrollmentConfiguration](Update-MgUserDeviceEnrollmentConfiguration.md)
-Update the navigation property deviceEnrollmentConfigurations in users
+Get enrollment configurations targeted to the user
 
 ### [Update-MgUserDeviceEnrollmentConfigurationAssignment](Update-MgUserDeviceEnrollmentConfigurationAssignment.md)
-Update the navigation property assignments in users
+The list of group assignments for the device configuration profile
 
 ### [Update-MgUserDeviceManagementTroubleshootingEvent](Update-MgUserDeviceManagementTroubleshootingEvent.md)
-Update the navigation property deviceManagementTroubleshootingEvents in users
+The list of troubleshooting events for this user.
 
 ### [Update-MgUserManagedDevice](Update-MgUserManagedDevice.md)
-Update the navigation property managedDevices in users
+The managed devices associated with the user.
 
 ### [Update-MgUserManagedDeviceAssignmentFilterEvaluationStatusDetail](Update-MgUserManagedDeviceAssignmentFilterEvaluationStatusDetail.md)
-Update the navigation property assignmentFilterEvaluationStatusDetails in users
+Managed device mobile app configuration states for this device.
 
 ### [Update-MgUserManagedDeviceCategory](Update-MgUserManagedDeviceCategory.md)
-Update the navigation property deviceCategory in users
+Device category
 
 ### [Update-MgUserManagedDeviceCompliancePolicyState](Update-MgUserManagedDeviceCompliancePolicyState.md)
-Update the navigation property deviceCompliancePolicyStates in users
+Device compliance policy states for this device.
 
 ### [Update-MgUserManagedDeviceConfigurationState](Update-MgUserManagedDeviceConfigurationState.md)
-Update the navigation property deviceConfigurationStates in users
+Device configuration states for this device.
 
 ### [Update-MgUserManagedDeviceLogCollectionResponse](Update-MgUserManagedDeviceLogCollectionResponse.md)
-Update the navigation property logCollectionRequests in users
+List of log collection requests
 
 ### [Update-MgUserManagedDeviceMobileAppConfigurationState](Update-MgUserManagedDeviceMobileAppConfigurationState.md)
-Update the navigation property managedDeviceMobileAppConfigurationStates in users
+Managed device mobile app configuration states for this device.
 
 ### [Update-MgUserManagedDeviceSecurityBaselineState](Update-MgUserManagedDeviceSecurityBaselineState.md)
-Update the navigation property securityBaselineStates in users
+Security baseline states for this device.
 
 ### [Update-MgUserManagedDeviceSecurityBaselineStateSettingState](Update-MgUserManagedDeviceSecurityBaselineStateSettingState.md)
-Update the navigation property settingStates in users
+The security baseline state for different settings for a device
 
 ### [Update-MgUserManagedDeviceUser](Update-MgUserManagedDeviceUser.md)
-Update the navigation property users in users
+The primary users associated with the managed device.
 
 ### [Update-MgUserManagedDeviceWindowProtectionState](Update-MgUserManagedDeviceWindowProtectionState.md)
-Update the navigation property windowsProtectionState in users
+The device protection status.
 
 ### [Update-MgUserManagedDeviceWindowProtectionStateDetectedMalwareState](Update-MgUserManagedDeviceWindowProtectionStateDetectedMalwareState.md)
-Update the navigation property detectedMalwareState in users
+Device malware list
 
 ### [Update-MgUserMobileAppIntentAndState](Update-MgUserMobileAppIntentAndState.md)
-Update the navigation property mobileAppIntentAndStates in users
+The list of troubleshooting events for this user.
 
 ### [Update-MgUserMobileAppTroubleshootingEvent](Update-MgUserMobileAppTroubleshootingEvent.md)
-Update the navigation property mobileAppTroubleshootingEvents in users
+The list of mobile app troubleshooting events for this user.
 
 ### [Update-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Update-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
-Update the navigation property appLogCollectionRequests in users
+The collection property of AppLogUploadRequest.
 

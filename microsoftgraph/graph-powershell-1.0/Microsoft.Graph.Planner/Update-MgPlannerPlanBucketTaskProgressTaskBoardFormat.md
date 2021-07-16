@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgPlannerPlanBucketTaskProgressTaskBoardFormat
 
 ## SYNOPSIS
-Update the navigation property progressTaskBoardFormat in planner
+Read-only.
+Nullable.
+Used to render the task correctly in the task board view when grouped by progress.
 
 ## SYNTAX
 
@@ -41,7 +43,9 @@ Update-MgPlannerPlanBucketTaskProgressTaskBoardFormat -InputObject <IPlannerIden
 ```
 
 ## DESCRIPTION
-Update the navigation property progressTaskBoardFormat in planner
+Read-only.
+Nullable.
+Used to render the task correctly in the task board view when grouped by progress.
 
 ## EXAMPLES
 
@@ -222,13 +226,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerProgressTaskBoardTaskFormat
-
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

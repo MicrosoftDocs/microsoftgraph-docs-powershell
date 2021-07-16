@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgCommunicationCallParticipant
 
 ## SYNOPSIS
-Create new navigation property to participants for communications
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -41,7 +42,8 @@ New-MgCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to participants for communications
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -254,13 +256,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphParticipant1
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphParticipant1
-
 ## NOTES
 
 ALIASES

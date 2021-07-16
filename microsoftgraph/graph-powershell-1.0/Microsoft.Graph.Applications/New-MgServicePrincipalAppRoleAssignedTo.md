@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgServicePrincipalAppRoleAssignedTo
 
 ## SYNOPSIS
-Create new navigation property to appRoleAssignedTo for servicePrincipals
+App role assignments for this app or service, granted to users, groups, and other service principals.
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ New-MgServicePrincipalAppRoleAssignedTo -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to appRoleAssignedTo for servicePrincipals
+App role assignments for this app or service, granted to users, groups, and other service principals.
 
 ## EXAMPLES
 
@@ -295,13 +295,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppRoleAssignment
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppRoleAssignment
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgGroupPhoto
 
 ## SYNOPSIS
-Create new navigation property to photos for groups
+The profile photos owned by the group.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -37,7 +39,9 @@ New-MgGroupPhoto -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGraphP
 ```
 
 ## DESCRIPTION
-Create new navigation property to photos for groups
+The profile photos owned by the group.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -189,13 +193,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProfilePhoto
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProfilePhoto
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgComplianceEdiscoveryCaseLegalHold
 
 ## SYNOPSIS
-Get legalHolds from compliance
+Returns a list of case legalHold objects for this case.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgComplianceEdiscoveryCaseLegalHold -InputObject <IComplianceIdentity> [-Exp
 ```
 
 ## DESCRIPTION
-Get legalHolds from compliance
+Returns a list of case legalHold objects for this case.
+Nullable.
 
 ## EXAMPLES
 
@@ -241,11 +243,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryLegalHold
-
 ## NOTES
 
 ALIASES

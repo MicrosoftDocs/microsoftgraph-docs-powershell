@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgApplicationConnectorGroupByRef
 
 ## SYNOPSIS
-Get ref of connectorGroup from applications
+The connectorGroup the application is using with Azure AD Application Proxy.
+Nullable.
 
 ## SYNTAX
 
@@ -23,7 +24,8 @@ Get-MgApplicationConnectorGroupByRef -InputObject <IApplicationsIdentity> [<Comm
 ```
 
 ## DESCRIPTION
-Get ref of connectorGroup from applications
+The connectorGroup the application is using with Azure AD Application Proxy.
+Nullable.
 
 ## EXAMPLES
 
@@ -66,11 +68,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEducationSchoolAdministrativeUnitByRef
 
 ## SYNOPSIS
-Get ref of administrativeUnit from education
+The underlying administrativeUnit for this school.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Get-MgEducationSchoolAdministrativeUnitByRef -InputObject <IEducationIdentity> [
 ```
 
 ## DESCRIPTION
-Get ref of administrativeUnit from education
+The underlying administrativeUnit for this school.
 
 ## EXAMPLES
 
@@ -66,11 +66,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

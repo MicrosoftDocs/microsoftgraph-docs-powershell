@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserManagedDeviceLogCollectionResponse
 
 ## SYNOPSIS
-Create new navigation property to logCollectionRequests for users
+List of log collection requests
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ New-MgUserManagedDeviceLogCollectionResponse -InputObject <IDevicesCorporateMana
 ```
 
 ## DESCRIPTION
-Create new navigation property to logCollectionRequests for users
+List of log collection requests
 
 ## EXAMPLES
 
@@ -312,13 +312,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceLogCollectionResponse
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceLogCollectionResponse
-
 ## NOTES
 
 ALIASES

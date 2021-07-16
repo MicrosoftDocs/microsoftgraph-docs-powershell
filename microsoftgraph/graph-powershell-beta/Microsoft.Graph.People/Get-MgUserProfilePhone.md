@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserProfilePhone
 
 ## SYNOPSIS
-Get phones from users
+Represents detailed information about phone numbers associated with a user in various services.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgUserProfilePhone -InputObject <IPeopleIdentity> [-ExpandProperty <String[]
 ```
 
 ## DESCRIPTION
-Get phones from users
+Represents detailed information about phone numbers associated with a user in various services.
 
 ## EXAMPLES
 
@@ -241,11 +241,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemPhone
-
 ## NOTES
 
 ALIASES

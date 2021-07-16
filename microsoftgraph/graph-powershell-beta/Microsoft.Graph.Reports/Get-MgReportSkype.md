@@ -241,39 +241,23 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IReportsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSkypeForBusinessActivityCounts
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSkypeForBusinessActivityUserCounts
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSkypeForBusinessActivityUserDetail
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSkypeForBusinessDeviceUsageDistributionUserCounts
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSkypeForBusinessDeviceUsageUserCounts
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSkypeForBusinessDeviceUsageUserDetail
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSkypeForBusinessOrganizerActivityCounts
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSkypeForBusinessOrganizerActivityMinuteCounts
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSkypeForBusinessOrganizerActivityUserCounts
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSkypeForBusinessParticipantActivityCounts
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSkypeForBusinessParticipantActivityMinuteCounts
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSkypeForBusinessParticipantActivityUserCounts
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSkypeForBusinessPeerToPeerActivityCounts
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSkypeForBusinessPeerToPeerActivityMinuteCounts
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSkypeForBusinessPeerToPeerActivityUserCounts
-
 ## NOTES
 
 ALIASES

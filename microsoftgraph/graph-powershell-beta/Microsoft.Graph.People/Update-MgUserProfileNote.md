@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserProfileNote
 
 ## SYNOPSIS
-Update the navigation property notes in users
+Represents notes that a user has added to their profile.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Update-MgUserProfileNote -InputObject <IPeopleIdentity> -BodyParameter <IMicroso
 ```
 
 ## DESCRIPTION
-Update the navigation property notes in users
+Represents notes that a user has added to their profile.
 
 ## EXAMPLES
 
@@ -365,13 +365,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPersonAnnotation
-
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

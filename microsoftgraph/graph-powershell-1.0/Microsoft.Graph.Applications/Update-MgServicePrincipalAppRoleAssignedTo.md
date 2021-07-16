@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgServicePrincipalAppRoleAssignedTo
 
 ## SYNOPSIS
-Update the navigation property appRoleAssignedTo in servicePrincipals
+App role assignments for this app or service, granted to users, groups, and other service principals.
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ Update-MgServicePrincipalAppRoleAssignedTo -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property appRoleAssignedTo in servicePrincipals
+App role assignments for this app or service, granted to users, groups, and other service principals.
 
 ## EXAMPLES
 
@@ -326,13 +326,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppRoleAssignment
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

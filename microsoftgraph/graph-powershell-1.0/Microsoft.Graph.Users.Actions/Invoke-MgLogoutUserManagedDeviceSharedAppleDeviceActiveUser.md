@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgLogoutUserManagedDeviceSharedAppleDeviceActiveUser
 
 ## SYNOPSIS
-Invoke action logoutSharedAppleDeviceActiveUser
+Logout shared Apple device active user
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Invoke-MgLogoutUserManagedDeviceSharedAppleDeviceActiveUser -InputObject <IUsers
 ```
 
 ## DESCRIPTION
-Invoke action logoutSharedAppleDeviceActiveUser
+Logout shared Apple device active user
 
 ## EXAMPLES
 
@@ -129,11 +129,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

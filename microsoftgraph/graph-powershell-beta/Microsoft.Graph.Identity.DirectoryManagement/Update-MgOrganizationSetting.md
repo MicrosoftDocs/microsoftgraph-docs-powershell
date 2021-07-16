@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgOrganizationSetting
 
 ## SYNOPSIS
-Update the navigation property settings in organization
+Retrieve the properties and relationships of organizationSettings object.
+Nullable.
 
 ## SYNTAX
 
@@ -41,7 +42,8 @@ Update-MgOrganizationSetting -InputObject <IIdentityDirectoryManagementIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property settings in organization
+Retrieve the properties and relationships of organizationSettings object.
+Nullable.
 
 ## EXAMPLES
 
@@ -209,13 +211,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOrganizationSettings
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

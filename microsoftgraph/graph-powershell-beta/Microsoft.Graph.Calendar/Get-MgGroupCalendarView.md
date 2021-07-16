@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgGroupCalendarView
 
 ## SYNOPSIS
-Get calendarView from groups
+The calendar view for the calendar.
+Navigation property.
+Read-only.
 
 ## SYNTAX
 
@@ -19,7 +21,9 @@ Get-MgGroupCalendarView -GroupId <String> -EndDateTime <String> -StartDateTime <
 ```
 
 ## DESCRIPTION
-Get calendarView from groups
+The calendar view for the calendar.
+Navigation property.
+Read-only.
 
 ## EXAMPLES
 
@@ -231,7 +235,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent1
-
 ## NOTES
 
 ALIASES

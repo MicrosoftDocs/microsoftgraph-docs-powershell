@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgApplicationExtensionProperty
 
 ## SYNOPSIS
-Update the navigation property extensionProperties in applications
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -41,7 +42,8 @@ Update-MgApplicationExtensionProperty -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property extensionProperties in applications
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -291,13 +293,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExtensionProperty
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

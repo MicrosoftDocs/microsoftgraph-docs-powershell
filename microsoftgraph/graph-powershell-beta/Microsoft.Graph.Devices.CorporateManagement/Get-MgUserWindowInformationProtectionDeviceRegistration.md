@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserWindowInformationProtectionDeviceRegistration
 
 ## SYNOPSIS
-Get windowsInformationProtectionDeviceRegistrations from users
+Zero or more WIP device registrations that belong to the user.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgUserWindowInformationProtectionDeviceRegistration -UserId <String> [-Expan
 ```
 
 ## DESCRIPTION
-Get windowsInformationProtectionDeviceRegistrations from users
+Zero or more WIP device registrations that belong to the user.
 
 ## EXAMPLES
 
@@ -199,7 +199,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionDeviceRegistration
-
 ## NOTES
 
 ALIASES

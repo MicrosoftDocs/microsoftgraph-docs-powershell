@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceCommand
 
 ## SYNOPSIS
-Update the navigation property commands in devices
+Set of commands sent to this device.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Update-MgDeviceCommand -InputObject <IIdentityDirectoryManagementIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property commands in devices
+Set of commands sent to this device.
 
 ## EXAMPLES
 
@@ -326,13 +326,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCommand
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

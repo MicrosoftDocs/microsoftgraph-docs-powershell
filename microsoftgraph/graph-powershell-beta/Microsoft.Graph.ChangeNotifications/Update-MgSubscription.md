@@ -426,13 +426,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IChangeNotificationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSubscription1
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

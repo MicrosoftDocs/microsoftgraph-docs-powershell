@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSiteExternalColumnByRef
 
 ## SYNOPSIS
-Create new navigation property ref to externalColumns for sites
+The collection of column definitions available in the site that are referenced from the sites in the parent hierarchy of the current site.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ New-MgSiteExternalColumnByRef -InputObject <ISitesIdentity> -BodyParameter <Hash
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to externalColumns for sites
+The collection of column definitions available in the site that are referenced from the sites in the parent hierarchy of the current site.
 
 ## EXAMPLES
 
@@ -141,13 +141,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths11Zlb5ESitesSiteIdExternalcolumnsRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Test-MgUserManagedAppUserBlocked
 
 ## SYNOPSIS
-Invoke function isManagedAppUserBlocked
+Gets the blocked state of a managed app user.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Test-MgUserManagedAppUserBlocked -InputObject <IUsersFunctionsIdentity> [<Common
 ```
 
 ## DESCRIPTION
-Invoke function isManagedAppUserBlocked
+Gets the blocked state of a managed app user.
 
 ## EXAMPLES
 
@@ -66,11 +66,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -81,6 +79,7 @@ To create the parameters described below, construct a hash table containing the 
 
 
 INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
+  - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AnotherRange <String>]`: Usage: anotherRange={anotherRange}
   - `[AppConsentRequestId <String>]`: key: id of appConsentRequest
   - `[CalendarId <String>]`: key: id of calendar

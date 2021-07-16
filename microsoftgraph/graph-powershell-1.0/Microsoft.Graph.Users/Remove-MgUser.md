@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUser
 
 ## SYNOPSIS
-Delete entity from users
+Represents an Azure Active Directory user object.
 
 ## SYNTAX
 
@@ -24,9 +24,23 @@ Remove-MgUser -InputObject <IUsersIdentity> [-IfMatch <String>] [-PassThru] [-Wh
 ```
 
 ## DESCRIPTION
-Delete entity from users
+Represents an Azure Active Directory user object.
 
 ## EXAMPLES
+
+### Example 1: Remove a user
+```powershell
+Remove-MgUser -UserId '5c442efb-5e66-484a-936a-91b6810bed14'
+```
+
+This example removes a user.
+
+### Example 2: Remove a user with a confirmation
+```powershell
+Remove-MgUser -UserId '3f80a75e-750b-49aa-a6b0-d9bf6df7b4c6' -Confirm
+```
+
+This examples removes a user after the user is prompted for a confirmation.
 
 ## PARAMETERS
 
@@ -128,11 +142,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

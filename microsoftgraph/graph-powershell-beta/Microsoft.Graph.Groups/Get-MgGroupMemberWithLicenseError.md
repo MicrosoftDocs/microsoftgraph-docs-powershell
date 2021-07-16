@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgGroupMemberWithLicenseError
 
 ## SYNOPSIS
-Get membersWithLicenseErrors from groups
+A list of group members with license errors from this group-based license assignment.
+Read-only.
 
 ## SYNTAX
 
@@ -19,7 +20,8 @@ Get-MgGroupMemberWithLicenseError -GroupId <String> [-ExpandProperty <String[]>]
 ```
 
 ## DESCRIPTION
-Get membersWithLicenseErrors from groups
+A list of group members with license errors from this group-based license assignment.
+Read-only.
 
 ## EXAMPLES
 
@@ -199,7 +201,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
-
 ## NOTES
 
 ALIASES

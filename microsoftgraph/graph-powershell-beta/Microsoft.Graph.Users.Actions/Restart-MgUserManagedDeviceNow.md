@@ -8,7 +8,7 @@ schema: 2.0.0
 # Restart-MgUserManagedDeviceNow
 
 ## SYNOPSIS
-Invoke action rebootNow
+Reboot device
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Restart-MgUserManagedDeviceNow -InputObject <IUsersActionsIdentity> [-PassThru] 
 ```
 
 ## DESCRIPTION
-Invoke action rebootNow
+Reboot device
 
 ## EXAMPLES
 
@@ -129,11 +129,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

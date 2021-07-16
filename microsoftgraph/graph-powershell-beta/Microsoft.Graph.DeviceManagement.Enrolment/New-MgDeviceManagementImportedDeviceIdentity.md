@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementImportedDeviceIdentity
 
 ## SYNOPSIS
-Create new navigation property to importedDeviceIdentities for deviceManagement
+The imported device identities.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ New-MgDeviceManagementImportedDeviceIdentity -BodyParameter <IMicrosoftGraphImpo
 ```
 
 ## DESCRIPTION
-Create new navigation property to importedDeviceIdentities for deviceManagement
+The imported device identities.
 
 ## EXAMPLES
 
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnrollmentState
-enrollmentState
+.
 
 ```yaml
 Type: String
@@ -236,11 +236,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphImportedDeviceIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphImportedDeviceIdentity
-
 ## NOTES
 
 ALIASES
@@ -255,7 +253,7 @@ BODYPARAMETER <IMicrosoftGraphImportedDeviceIdentity>: The importedDeviceIdentit
   - `[Id <String>]`: Read-only.
   - `[CreatedDateTime <DateTime?>]`: Created Date Time of the device
   - `[Description <String>]`: The description of the device
-  - `[EnrollmentState <String>]`: enrollmentState
+  - `[EnrollmentState <String>]`: 
   - `[ImportedDeviceIdentifier <String>]`: Imported Device Identifier
   - `[ImportedDeviceIdentityType <String>]`: importedDeviceIdentityType
   - `[LastContactedDateTime <DateTime?>]`: Last Contacted Date Time of the device

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgTeamScheduleSchedulingGroup
 
 ## SYNOPSIS
-Update the navigation property schedulingGroups in teams
+The logical grouping of users in the schedule (usually by role).
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Update-MgTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property schedulingGroups in teams
+The logical grouping of users in the schedule (usually by role).
 
 ## EXAMPLES
 
@@ -287,13 +287,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSchedulingGroup1
-
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserProfileWebAccount
 
 ## SYNOPSIS
-Delete navigation property webAccounts for users
+Represents web accounts the user has indicated they use or has added to their user profile.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgUserProfileWebAccount -InputObject <IPeopleIdentity> [-IfMatch <String>
 ```
 
 ## DESCRIPTION
-Delete navigation property webAccounts for users
+Represents web accounts the user has indicated they use or has added to their user profile.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

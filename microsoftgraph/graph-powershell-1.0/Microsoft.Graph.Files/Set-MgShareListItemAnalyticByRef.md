@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgShareListItemAnalyticByRef
 
 ## SYNOPSIS
-Update the ref of navigation property analytics in shares
+Analytics about the view activities that took place on this item.
 
 ## SYNTAX
 
@@ -61,7 +61,7 @@ Set-MgShareListItemAnalyticByRef -InputObject <IFilesIdentity> -BodyParameter <H
 ```
 
 ## DESCRIPTION
-Update the ref of navigation property analytics in shares
+Analytics about the view activities that took place on this item.
 
 ## EXAMPLES
 
@@ -195,13 +195,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

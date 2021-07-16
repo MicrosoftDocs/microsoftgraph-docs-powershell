@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtwindowmanagementappbyref
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppMgtWindowManagementAppByRef
 
 ## SYNOPSIS
-Get ref of windowsManagementApp from deviceAppManagement
+Windows management app.
 
 ## SYNTAX
 
@@ -17,16 +17,9 @@ Get-MgDeviceAppMgtWindowManagementAppByRef [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get ref of windowsManagementApp from deviceAppManagement
+Windows management app.
 
 ## EXAMPLES
-
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -38,9 +31,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
+
 ## NOTES
 
-## RELATED LINKS
+ALIASES
 
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtwindowmanagementappbyref](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtwindowmanagementappbyref)
+### Get-MgDeviceAppManagementRefWindowManagementApp
+
+## RELATED LINKS
 

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgDirectoryRoleScopedMember
 
 ## SYNOPSIS
-Delete navigation property scopedMembers for directoryRoles
+Members of this directory role that are scoped to administrative units.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +27,9 @@ Remove-MgDirectoryRoleScopedMember -InputObject <IIdentityDirectoryManagementIde
 ```
 
 ## DESCRIPTION
-Delete navigation property scopedMembers for directoryRoles
+Members of this directory role that are scoped to administrative units.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -144,11 +148,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

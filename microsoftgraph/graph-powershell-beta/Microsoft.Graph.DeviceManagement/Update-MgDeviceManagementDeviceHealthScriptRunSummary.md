@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementDeviceHealthScriptRunSummary
 
 ## SYNOPSIS
-Update the navigation property runSummary in deviceManagement
+High level run summary for device health script.
 
 ## SYNTAX
 
@@ -16,11 +16,12 @@ Update the navigation property runSummary in deviceManagement
 ```
 Update-MgDeviceManagementDeviceHealthScriptRunSummary -DeviceHealthScriptId <String>
  [-AdditionalProperties <Hashtable>] [-DetectionScriptErrorDeviceCount <Int32>]
- [-DetectionScriptPendingDeviceCount <Int32>] [-Id <String>] [-IssueDetectedDeviceCount <Int32>]
- [-IssueRemediatedCumulativeDeviceCount <Int32>] [-IssueRemediatedDeviceCount <Int32>]
- [-IssueReoccurredDeviceCount <Int32>] [-LastScriptRunDateTime <DateTime>]
- [-NoIssueDetectedDeviceCount <Int32>] [-RemediationScriptErrorDeviceCount <Int32>]
- [-RemediationSkippedDeviceCount <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DetectionScriptNotApplicableDeviceCount <Int32>] [-DetectionScriptPendingDeviceCount <Int32>] [-Id <String>]
+ [-IssueDetectedDeviceCount <Int32>] [-IssueRemediatedCumulativeDeviceCount <Int32>]
+ [-IssueRemediatedDeviceCount <Int32>] [-IssueReoccurredDeviceCount <Int32>]
+ [-LastScriptRunDateTime <DateTime>] [-NoIssueDetectedDeviceCount <Int32>]
+ [-RemediationScriptErrorDeviceCount <Int32>] [-RemediationSkippedDeviceCount <Int32>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -34,11 +35,12 @@ Update-MgDeviceManagementDeviceHealthScriptRunSummary -DeviceHealthScriptId <Str
 ```
 Update-MgDeviceManagementDeviceHealthScriptRunSummary -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-DetectionScriptErrorDeviceCount <Int32>]
- [-DetectionScriptPendingDeviceCount <Int32>] [-Id <String>] [-IssueDetectedDeviceCount <Int32>]
- [-IssueRemediatedCumulativeDeviceCount <Int32>] [-IssueRemediatedDeviceCount <Int32>]
- [-IssueReoccurredDeviceCount <Int32>] [-LastScriptRunDateTime <DateTime>]
- [-NoIssueDetectedDeviceCount <Int32>] [-RemediationScriptErrorDeviceCount <Int32>]
- [-RemediationSkippedDeviceCount <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DetectionScriptNotApplicableDeviceCount <Int32>] [-DetectionScriptPendingDeviceCount <Int32>] [-Id <String>]
+ [-IssueDetectedDeviceCount <Int32>] [-IssueRemediatedCumulativeDeviceCount <Int32>]
+ [-IssueRemediatedDeviceCount <Int32>] [-IssueReoccurredDeviceCount <Int32>]
+ [-LastScriptRunDateTime <DateTime>] [-NoIssueDetectedDeviceCount <Int32>]
+ [-RemediationScriptErrorDeviceCount <Int32>] [-RemediationSkippedDeviceCount <Int32>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -49,7 +51,7 @@ Update-MgDeviceManagementDeviceHealthScriptRunSummary -InputObject <IDeviceManag
 ```
 
 ## DESCRIPTION
-Update the navigation property runSummary in deviceManagement
+High level run summary for device health script.
 
 ## EXAMPLES
 
@@ -88,6 +90,21 @@ Accept wildcard characters: False
 
 ### -DetectionScriptErrorDeviceCount
 Number of devices on which the detection script execution encountered an error and did not complete
+
+```yaml
+Type: Int32
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DetectionScriptNotApplicableDeviceCount
+Number of devices for which the detection script was not applicable
 
 ```yaml
 Type: Int32
@@ -334,13 +351,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceHealthScriptRunSummary
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -354,6 +368,7 @@ BODYPARAMETER <IMicrosoftGraphDeviceHealthScriptRunSummary>: Contains properties
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
   - `[DetectionScriptErrorDeviceCount <Int32?>]`: Number of devices on which the detection script execution encountered an error and did not complete
+  - `[DetectionScriptNotApplicableDeviceCount <Int32?>]`: Number of devices for which the detection script was not applicable
   - `[DetectionScriptPendingDeviceCount <Int32?>]`: Number of devices which have not yet run the latest version of the device health script
   - `[IssueDetectedDeviceCount <Int32?>]`: Number of devices for which the detection script found an issue
   - `[IssueRemediatedCumulativeDeviceCount <Int32?>]`: Number of devices that were remediated over the last 30 days
@@ -454,6 +469,7 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[UserExperienceAnalyticsBaselineId <String>]`: key: id of userExperienceAnalyticsBaseline
   - `[UserExperienceAnalyticsCategoryId <String>]`: key: id of userExperienceAnalyticsCategory
   - `[UserExperienceAnalyticsDevicePerformanceId <String>]`: key: id of userExperienceAnalyticsDevicePerformance
+  - `[UserExperienceAnalyticsDeviceScoresId <String>]`: key: id of userExperienceAnalyticsDeviceScores
   - `[UserExperienceAnalyticsDeviceStartupHistoryId <String>]`: key: id of userExperienceAnalyticsDeviceStartupHistory
   - `[UserExperienceAnalyticsDeviceStartupProcessId <String>]`: key: id of userExperienceAnalyticsDeviceStartupProcess
   - `[UserExperienceAnalyticsDeviceStartupProcessPerformanceId <String>]`: key: id of userExperienceAnalyticsDeviceStartupProcessPerformance
@@ -465,6 +481,8 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[UserExperienceAnalyticsRemoteConnectionId <String>]`: key: id of userExperienceAnalyticsRemoteConnection
   - `[UserExperienceAnalyticsResourcePerformanceId <String>]`: key: id of userExperienceAnalyticsResourcePerformance
   - `[UserExperienceAnalyticsScoreHistoryId <String>]`: key: id of userExperienceAnalyticsScoreHistory
+  - `[UserExperienceAnalyticsWorkFromAnywhereDeviceId <String>]`: key: id of userExperienceAnalyticsWorkFromAnywhereDevice
+  - `[UserExperienceAnalyticsWorkFromAnywhereMetricId <String>]`: key: id of userExperienceAnalyticsWorkFromAnywhereMetric
   - `[UserId <String>]`: key: id of user
   - `[WindowsDeviceMalwareStateId <String>]`: key: id of windowsDeviceMalwareState
   - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: key: id of windowsInformationProtectionAppLearningSummary

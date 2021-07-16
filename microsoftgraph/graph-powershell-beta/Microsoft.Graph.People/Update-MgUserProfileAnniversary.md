@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserProfileAnniversary
 
 ## SYNOPSIS
-Update the navigation property anniversaries in users
+Represents the details of meaningful dates associated with a person.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Update-MgUserProfileAnniversary -InputObject <IPeopleIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property anniversaries in users
+Represents the details of meaningful dates associated with a person.
 
 ## EXAMPLES
 
@@ -364,13 +364,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPersonAnnualEvent
-
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

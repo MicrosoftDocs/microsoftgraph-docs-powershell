@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserDeviceEnrollmentConfiguration
 
 ## SYNOPSIS
-Get deviceEnrollmentConfigurations from users
+Get enrollment configurations targeted to the user
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgUserDeviceEnrollmentConfiguration -InputObject <IDevicesCorporateManagemen
 ```
 
 ## DESCRIPTION
-Get deviceEnrollmentConfigurations from users
+Get enrollment configurations targeted to the user
 
 ## EXAMPLES
 
@@ -241,11 +241,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceEnrollmentConfiguration
-
 ## NOTES
 
 ALIASES

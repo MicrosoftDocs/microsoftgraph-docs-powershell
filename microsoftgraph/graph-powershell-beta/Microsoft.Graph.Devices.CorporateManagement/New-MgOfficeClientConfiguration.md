@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgOfficeClientConfiguration
 
 ## SYNOPSIS
-Create new navigation property to clientConfigurations for officeConfiguration
+List of office Client configuration.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ New-MgOfficeClientConfiguration -BodyParameter <IMicrosoftGraphOfficeClientConfi
 ```
 
 ## DESCRIPTION
-Create new navigation property to clientConfigurations for officeConfiguration
+List of office Client configuration.
 
 ## EXAMPLES
 
@@ -241,11 +241,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOfficeClientConfiguration
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOfficeClientConfiguration
-
 ## NOTES
 
 ALIASES

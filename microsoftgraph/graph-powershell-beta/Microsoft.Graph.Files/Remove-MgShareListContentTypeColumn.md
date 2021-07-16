@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgShareListContentTypeColumn
 
 ## SYNOPSIS
-Delete navigation property columns for shares
+The collection of column definitions for this contentType.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgShareListContentTypeColumn -InputObject <IFilesIdentity> [-IfMatch <Str
 ```
 
 ## DESCRIPTION
-Delete navigation property columns for shares
+The collection of column definitions for this contentType.
 
 ## EXAMPLES
 
@@ -159,11 +159,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

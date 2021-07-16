@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgEducationSynchronizationProfileStatus
 
 ## SYNOPSIS
-Update the navigation property profileStatus in education
+The synchronization status.
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ Update-MgEducationSynchronizationProfileStatus -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property profileStatus in education
+The synchronization status.
 
 ## EXAMPLES
 
@@ -223,13 +223,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSynchronizationProfileStatus
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

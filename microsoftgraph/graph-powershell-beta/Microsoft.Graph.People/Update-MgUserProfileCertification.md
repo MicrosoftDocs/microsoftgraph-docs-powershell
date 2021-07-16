@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserProfileCertification
 
 ## SYNOPSIS
-Update the navigation property certifications in users
+Represents the details of certifications associated with a person.
 
 ## SYNTAX
 
@@ -48,7 +48,7 @@ Update-MgUserProfileCertification -InputObject <IPeopleIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property certifications in users
+Represents the details of certifications associated with a person.
 
 ## EXAMPLES
 
@@ -472,13 +472,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPersonCertification
-
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

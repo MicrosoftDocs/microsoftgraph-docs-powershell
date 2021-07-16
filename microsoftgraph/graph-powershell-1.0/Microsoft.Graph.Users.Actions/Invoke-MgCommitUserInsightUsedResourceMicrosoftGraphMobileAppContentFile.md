@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgCommitUserInsightUsedResourceMicrosoftGraphMobileAppContentFile
 
 ## SYNOPSIS
-Invoke action commit
+Commits a file of a given app.
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ Invoke-MgCommitUserInsightUsedResourceMicrosoftGraphMobileAppContentFile -InputO
 ```
 
 ## DESCRIPTION
-Invoke action commit
+Commits a file of a given app.
 
 ## EXAMPLES
 
@@ -193,13 +193,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1KjgbkgUsersUserIdInsightsUsedUsedinsightIdResourceMicrosoftGraphMobileappcontentfileMicrosoftGraphCommitPostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementRemoteAssistancePartner
 
 ## SYNOPSIS
-Create new navigation property to remoteAssistancePartners for deviceManagement
+The remote assist partners.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ New-MgDeviceManagementRemoteAssistancePartner -BodyParameter <IMicrosoftGraphRem
 ```
 
 ## DESCRIPTION
-Create new navigation property to remoteAssistancePartners for deviceManagement
+The remote assist partners.
 
 ## EXAMPLES
 
@@ -175,11 +175,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRemoteAssistancePartner
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRemoteAssistancePartner
-
 ## NOTES
 
 ALIASES

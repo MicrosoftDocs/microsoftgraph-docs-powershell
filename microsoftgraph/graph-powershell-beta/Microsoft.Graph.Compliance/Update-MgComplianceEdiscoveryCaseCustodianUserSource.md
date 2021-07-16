@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgComplianceEdiscoveryCaseCustodianUserSource
 
 ## SYNOPSIS
-Update the navigation property userSources in compliance
+Data source entity for a the custodian.
+This is the container for a custodian's mailbox and OneDrive for Business site.
 
 ## SYNTAX
 
@@ -42,7 +43,8 @@ Update-MgComplianceEdiscoveryCaseCustodianUserSource -InputObject <IComplianceId
 ```
 
 ## DESCRIPTION
-Update the navigation property userSources in compliance
+Data source entity for a the custodian.
+This is the container for a custodian's mailbox and OneDrive for Business site.
 
 ## EXAMPLES
 
@@ -284,13 +286,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryUserSource
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

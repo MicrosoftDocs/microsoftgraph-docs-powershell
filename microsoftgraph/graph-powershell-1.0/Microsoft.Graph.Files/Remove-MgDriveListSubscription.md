@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDriveListSubscription
 
 ## SYNOPSIS
-Delete navigation property subscriptions for drives
+The set of subscriptions on the list.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgDriveListSubscription -InputObject <IFilesIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Delete navigation property subscriptions for drives
+The set of subscriptions on the list.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

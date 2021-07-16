@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest
 
 ## SYNOPSIS
-Create new navigation property to appLogCollectionRequests for users
+The collection property of AppLogUploadRequest.
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ New-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest
 ```
 
 ## DESCRIPTION
-Create new navigation property to appLogCollectionRequests for users
+The collection property of AppLogUploadRequest.
 
 ## EXAMPLES
 
@@ -238,13 +238,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppLogCollectionRequest
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppLogCollectionRequest
-
 ## NOTES
 
 ALIASES

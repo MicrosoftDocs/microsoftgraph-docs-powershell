@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgGroupThreadPost
 
 ## SYNOPSIS
-Delete navigation property posts for groups
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -37,7 +38,8 @@ Remove-MgGroupThreadPost -InputObject <IGroupsIdentity> [-IfMatch <String>] [-Pa
 ```
 
 ## DESCRIPTION
-Delete navigation property posts for groups
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -171,11 +173,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

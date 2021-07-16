@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementRoleAssignment
 
 ## SYNOPSIS
-Create new navigation property to roleAssignments for deviceManagement
+The Role Assignments.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ New-MgDeviceManagementRoleAssignment -BodyParameter <IMicrosoftGraphDeviceAndApp
 ```
 
 ## DESCRIPTION
-Create new navigation property to roleAssignments for deviceManagement
+The Role Assignments.
 
 ## EXAMPLES
 
@@ -202,11 +202,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceAndAppManagementRoleAssignment
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceAndAppManagementRoleAssignment
-
 ## NOTES
 
 ALIASES

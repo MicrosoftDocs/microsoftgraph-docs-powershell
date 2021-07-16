@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementAndroidForWorkSetting
 
 ## SYNOPSIS
-Update the navigation property androidForWorkSettings in deviceManagement
+The singleton Android for Work settings entity.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Update-MgDeviceManagementAndroidForWorkSetting -BodyParameter <IMicrosoftGraphAn
 ```
 
 ## DESCRIPTION
-Update the navigation property androidForWorkSettings in deviceManagement
+The singleton Android for Work settings entity.
 
 ## EXAMPLES
 
@@ -267,11 +267,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAndroidForWorkSettings
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

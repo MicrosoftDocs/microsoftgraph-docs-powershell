@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementUserExperienceAnalyticImpactingProcess
 
 ## SYNOPSIS
-Create new navigation property to userExperienceAnalyticsImpactingProcess for deviceManagement
+User experience analytics impacting process
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ New-MgDeviceManagementUserExperienceAnalyticImpactingProcess
 ```
 
 ## DESCRIPTION
-Create new navigation property to userExperienceAnalyticsImpactingProcess for deviceManagement
+User experience analytics impacting process
 
 ## EXAMPLES
 
@@ -207,11 +207,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsImpactingProcess
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsImpactingProcess
-
 ## NOTES
 
 ALIASES

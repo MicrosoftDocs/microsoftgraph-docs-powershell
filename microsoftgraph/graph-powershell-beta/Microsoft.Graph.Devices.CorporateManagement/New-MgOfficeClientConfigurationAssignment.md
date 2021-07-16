@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgOfficeClientConfigurationAssignment
 
 ## SYNOPSIS
-Create new navigation property to assignments for officeConfiguration
+The list of group assignments for the policy.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ New-MgOfficeClientConfigurationAssignment -InputObject <IDevicesCorporateManagem
 ```
 
 ## DESCRIPTION
-Create new navigation property to assignments for officeConfiguration
+The list of group assignments for the policy.
 
 ## EXAMPLES
 
@@ -174,13 +174,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOfficeClientConfigurationAssignment
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOfficeClientConfigurationAssignment
-
 ## NOTES
 
 ALIASES

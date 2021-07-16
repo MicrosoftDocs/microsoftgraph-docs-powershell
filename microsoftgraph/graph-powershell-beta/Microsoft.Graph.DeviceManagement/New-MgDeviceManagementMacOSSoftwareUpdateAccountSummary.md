@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementMacOSSoftwareUpdateAccountSummary
 
 ## SYNOPSIS
-Create new navigation property to macOSSoftwareUpdateAccountSummaries for deviceManagement
+The MacOS software update account summaries for this account.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ New-MgDeviceManagementMacOSSoftwareUpdateAccountSummary
 ```
 
 ## DESCRIPTION
-Create new navigation property to macOSSoftwareUpdateAccountSummaries for deviceManagement
+The MacOS software update account summaries for this account.
 
 ## EXAMPLES
 
@@ -284,11 +284,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMacOSSoftwareUpdateAccountSummary
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMacOSSoftwareUpdateAccountSummary
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementDeviceHealthScriptRemediationHistory
 
 ## SYNOPSIS
-Invoke function getRemediationHistory
+Function to get the number of remediations by a device health scripts
 
 ## SYNTAX
 
@@ -24,7 +24,7 @@ Get-MgDeviceManagementDeviceHealthScriptRemediationHistory -InputObject <IDevice
 ```
 
 ## DESCRIPTION
-Invoke function getRemediationHistory
+Function to get the number of remediations by a device health scripts
 
 ## EXAMPLES
 
@@ -67,11 +67,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementFunctionsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceHealthScriptRemediationHistory
-
 ## NOTES
 
 ALIASES
@@ -87,6 +85,8 @@ INPUTOBJECT <IDeviceManagementFunctionsIdentity>: Identity Parameter
   - `[DeviceAndAppManagementRoleAssignmentId <String>]`: key: id of deviceAndAppManagementRoleAssignment
   - `[DeviceComplianceScriptDeviceStateId <String>]`: key: id of deviceComplianceScriptDeviceState
   - `[DeviceComplianceScriptId <String>]`: key: id of deviceComplianceScript
+  - `[DeviceConfigurationGroupAssignmentId <String>]`: key: id of deviceConfigurationGroupAssignment
+  - `[DeviceConfigurationId <String>]`: key: id of deviceConfiguration
   - `[DeviceCustomAttributeShellScriptId <String>]`: key: id of deviceCustomAttributeShellScript
   - `[DeviceHealthScriptDeviceStateId <String>]`: key: id of deviceHealthScriptDeviceState
   - `[DeviceHealthScriptId <String>]`: key: id of deviceHealthScript
@@ -109,6 +109,7 @@ INPUTOBJECT <IDeviceManagementFunctionsIdentity>: Identity Parameter
   - `[Resource <String>]`: Usage: resource={resource}
   - `[ResourceOperationId <String>]`: key: id of resourceOperation
   - `[Scope <String>]`: Usage: scope={scope}
+  - `[SecretReferenceValueId <String>]`: Usage: secretReferenceValueId={secretReferenceValueId}
   - `[SummarizeBy <String>]`: Usage: summarizeBy={summarizeBy}
   - `[TemplateId <String>]`: Usage: templateId={templateId}
   - `[Userid <String>]`: Usage: userid={userid}

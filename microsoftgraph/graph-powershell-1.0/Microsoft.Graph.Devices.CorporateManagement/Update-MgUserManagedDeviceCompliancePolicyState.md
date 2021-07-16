@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserManagedDeviceCompliancePolicyState
 
 ## SYNOPSIS
-Update the navigation property deviceCompliancePolicyStates in users
+Device compliance policy states for this device.
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ Update-MgUserManagedDeviceCompliancePolicyState -InputObject <IDevicesCorporateM
 ```
 
 ## DESCRIPTION
-Update the navigation property deviceCompliancePolicyStates in users
+Device compliance policy states for this device.
 
 ## EXAMPLES
 
@@ -300,13 +300,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicyState1
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgOfficeClientConfigurationAssignment
 
 ## SYNOPSIS
-Delete navigation property assignments for officeConfiguration
+The list of group assignments for the policy.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ Remove-MgOfficeClientConfigurationAssignment -InputObject <IDevicesCorporateMana
 ```
 
 ## DESCRIPTION
-Delete navigation property assignments for officeConfiguration
+The list of group assignments for the policy.
 
 ## EXAMPLES
 
@@ -145,11 +145,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

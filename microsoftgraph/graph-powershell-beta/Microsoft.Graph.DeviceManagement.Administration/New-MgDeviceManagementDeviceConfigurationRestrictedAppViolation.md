@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementDeviceConfigurationRestrictedAppViolation
 
 ## SYNOPSIS
-Create new navigation property to deviceConfigurationRestrictedAppsViolations for deviceManagement
+Restricted apps violations for this account.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ New-MgDeviceManagementDeviceConfigurationRestrictedAppViolation
 ```
 
 ## DESCRIPTION
-Create new navigation property to deviceConfigurationRestrictedAppsViolations for deviceManagement
+Restricted apps violations for this account.
 
 ## EXAMPLES
 
@@ -253,11 +253,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRestrictedAppsViolation
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRestrictedAppsViolation
-
 ## NOTES
 
 ALIASES

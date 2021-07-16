@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest
 
 ## SYNOPSIS
-Update the navigation property appLogCollectionRequests in users
+The collection property of AppLogUploadRequest.
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ Update-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest
 ```
 
 ## DESCRIPTION
-Update the navigation property appLogCollectionRequests in users
+The collection property of AppLogUploadRequest.
 
 ## EXAMPLES
 
@@ -268,13 +268,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppLogCollectionRequest
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

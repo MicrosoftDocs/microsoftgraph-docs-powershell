@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgUserContactPhoto
 
 ## SYNOPSIS
-Delete navigation property photo for users
+Optional contact picture.
+You can get or set a photo for a contact.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgUserContactPhoto -InputObject <IPersonalContactsIdentity> [-IfMatch <St
 ```
 
 ## DESCRIPTION
-Delete navigation property photo for users
+Optional contact picture.
+You can get or set a photo for a contact.
 
 ## EXAMPLES
 
@@ -144,11 +146,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPersonalContactsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
