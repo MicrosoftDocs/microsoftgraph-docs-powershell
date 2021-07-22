@@ -2,9 +2,9 @@
   href: overview.md
 - name: Migrate to Microsoft Graph PowerShell
   items:   
-  - name: Migration steps
+  - name: Migrate from Azure AD PowerShell
     href: migration-steps.md
-  - name: The cmdlet map
+  - name: Cmdlet map
     href: azuread-msoline-cmdlet-map.md 
 
   
