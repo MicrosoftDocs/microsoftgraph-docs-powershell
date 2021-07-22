@@ -34,7 +34,7 @@ To see the mapping of the  Azure AD PowerShell cmdlets to the cmdlets in the Mic
 
 ## Install the Microsoft Graph PowerShell SDK
 
-The Microsoft Graph PowerShell SDK is published on the [PowerShell Gallery](https://www.powershellgallery.com/packages/Microsoft.Graph). Please follow the [Install the SDK](/graph/powershell/installation) instructions to install the the Microsoft Graph PowerShell SDK.
+The Microsoft Graph PowerShell SDK is published on the [PowerShell Gallery](https://www.powershellgallery.com/packages/Microsoft.Graph). Follow the [Install the SDK](/graph/powershell/installation) instructions to install the the Microsoft Graph PowerShell SDK.
 
 ## Get started
 
