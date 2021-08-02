@@ -33,7 +33,7 @@ To find the new cmdlets, see the [Cmdlet map](azuread-msoline-cmdlet-map.md).
 There is currently no tool to automatically converts scripts in Azure AD PowerShell to Microsoft Graph PowerShell. To convert your scripts manually from Azure AD PowerShell, follows the steps below:
 
 1. Find the Microsoft Graph equivalent of your Azure AD PowerShell cmdlets from the [Cmdlet map](azuread-msoline-cmdlet-map.md).
-1. Select the Microsoft Graph cmdlet to view the reference documentation, get the new syntax for the cmdlet.
+1. Select the Microsoft Graph cmdlet to view the reference documentation and get the new syntax for the cmdlet.
 1. Update your existing scripts using the new syntax.
 
 > [!Note]
