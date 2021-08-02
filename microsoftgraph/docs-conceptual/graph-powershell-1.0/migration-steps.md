@@ -11,7 +11,7 @@ ms.reviewer: darrmi, maisarissi
 
 # Migrate from Azure AD PowerShell to the Microsoft Graph PowerShell SDK
 
-Use the information in this article to plan the migration of your applications that use Azure AD PowerShell to use the Microsoft Graph PowerShell SDK.
+Use the information in this article to plan the migration of your applications in Azure AD PowerShell to Microsoft Graph PowerShell SDK.
 
 ## Why Microsoft Graph PowerShell?
 
