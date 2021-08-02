@@ -1,6 +1,6 @@
 ---
 title: "Migrate from Azure AD PowerShell to the Microsoft Graph PowerShell SDK."
-description: "Migrate your applications from using Azure AD PowerShell to the Microsoft Graph PowerShell SDK."
+description: "Migrate your applications from Azure AD PowerShell to the Microsoft Graph PowerShell SDK."
 ms.topic: conceptual
 ms.date: 6/22/2021
 author: msewaweru
@@ -11,7 +11,7 @@ ms.reviewer: darrmi, maisarissi
 
 # Migrate from Azure AD PowerShell to the Microsoft Graph PowerShell SDK
 
-You can use the information in this article to plan the migration of your applications that use Azure AD PowerShell to use the Microsoft Graph PowerShell SDK.
+Use the information in this article to plan the migration of your applications that use Azure AD PowerShell to use the Microsoft Graph PowerShell SDK.
 
 ## Why Microsoft Graph PowerShell?
 
@@ -30,7 +30,18 @@ To find the new cmdlets, see the [Cmdlet map](azuread-msoline-cmdlet-map.md).
 
 ### Convert your scripts
 
-There is currently no tool to automatically converts scripts in Azure AD PowerShell to Microsoft Graph PowerShell. Once you have found the new cmdlets, get the new syntax for each cmdlet and update your existing scripts.
+There is currently no tool to automatically converts scripts in Azure AD PowerShell to Microsoft Graph PowerShell. To convert your scripts manually from Azure AD PowerShell, follows the steps below:
+
+1. Find the Microsoft Graph equivalent of your Azure AD PowerShell cmdlets from the [Cmdlet map](azuread-msoline-cmdlet-map.md).
+1. Select the Microsoft Graph cmdlet to view the reference documentation, get the new syntax for the cmdlet.
+1. Update your existing scripts using the new syntax.
+
+> [!Note]
+> Parameter names may not be the same in Microsoft Graph PowerShell. Consult the documentation to understand how to convert the parameters.
+
+#### Example
+
+The equivalent of the Get-AzureADUser cmdlet is [Get-MgUser](../../graph-powershell-1.0/Microsoft.Graph.Users/Get-MgUser.md). This cmdlet has additional parameters that let you do more with it's output e.g the ConsistencyLevel parameter that allows you to do `Count`, `Filter`, `Search` among others.
 
 ### Limitations
 
