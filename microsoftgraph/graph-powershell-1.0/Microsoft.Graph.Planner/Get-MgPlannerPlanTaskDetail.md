@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgPlannerPlanTaskDetail
 
 ## SYNOPSIS
-Get details from planner
+Read-only.
+Nullable.
+Additional details about the task.
 
 ## SYNTAX
 
@@ -25,7 +27,9 @@ Get-MgPlannerPlanTaskDetail -InputObject <IPlannerIdentity> [-ExpandProperty <St
 ```
 
 ## DESCRIPTION
-Get details from planner
+Read-only.
+Nullable.
+Additional details about the task.
 
 ## EXAMPLES
 
@@ -113,11 +117,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerTaskDetails
-
 ## NOTES
 
 ALIASES

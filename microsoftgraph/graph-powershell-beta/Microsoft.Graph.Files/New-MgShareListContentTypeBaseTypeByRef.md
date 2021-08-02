@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgShareListContentTypeBaseTypeByRef
 
 ## SYNOPSIS
-Create new navigation property ref to baseTypes for shares
+The collection of content types that are ancestors of this content type.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ New-MgShareListContentTypeBaseTypeByRef -InputObject <IFilesIdentity> -BodyParam
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to baseTypes for shares
+The collection of content types that are ancestors of this content type.
 
 ## EXAMPLES
 
@@ -156,13 +156,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPathsWr0Gp2SharesShareddriveitemIdListContenttypesContenttypeIdBasetypesRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

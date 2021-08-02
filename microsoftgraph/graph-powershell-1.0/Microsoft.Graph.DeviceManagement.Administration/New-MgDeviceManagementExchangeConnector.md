@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementExchangeConnector
 
 ## SYNOPSIS
-Create new navigation property to exchangeConnectors for deviceManagement
+The list of Exchange Connectors configured by the tenant.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ New-MgDeviceManagementExchangeConnector -BodyParameter <IMicrosoftGraphDeviceMan
 ```
 
 ## DESCRIPTION
-Create new navigation property to exchangeConnectors for deviceManagement
+The list of Exchange Connectors configured by the tenant.
 
 ## EXAMPLES
 
@@ -251,11 +251,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementExchangeConnector
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementExchangeConnector
-
 ## NOTES
 
 ALIASES

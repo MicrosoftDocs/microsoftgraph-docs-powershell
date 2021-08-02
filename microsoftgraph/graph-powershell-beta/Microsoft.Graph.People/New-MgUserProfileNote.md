@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserProfileNote
 
 ## SYNOPSIS
-Create new navigation property to notes for users
+Represents notes that a user has added to their profile.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ New-MgUserProfileNote -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoftG
 ```
 
 ## DESCRIPTION
-Create new navigation property to notes for users
+Represents notes that a user has added to their profile.
 
 ## EXAMPLES
 
@@ -335,13 +335,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPersonAnnotation
-
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPersonAnnotation
-
 ## NOTES
 
 ALIASES

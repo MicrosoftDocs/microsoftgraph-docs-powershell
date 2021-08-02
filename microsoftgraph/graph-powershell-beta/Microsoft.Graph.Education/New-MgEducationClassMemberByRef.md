@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgEducationClassMemberByRef
 
 ## SYNOPSIS
-Create new navigation property ref to members for education
+All users in the class.
+Nullable.
 
 ## SYNTAX
 
@@ -37,7 +38,8 @@ New-MgEducationClassMemberByRef -InputObject <IEducationIdentity> -BodyParameter
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to members for education
+All users in the class.
+Nullable.
 
 ## EXAMPLES
 
@@ -141,13 +143,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths16C28GsEducationClassesEducationclassIdMembersRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

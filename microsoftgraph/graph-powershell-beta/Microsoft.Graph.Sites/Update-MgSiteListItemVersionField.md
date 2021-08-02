@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgSiteListItemVersionField
 
 ## SYNOPSIS
-Update the navigation property fields in sites
+A collection of the fields and values for this version of the list item.
 
 ## SYNTAX
 
@@ -38,7 +38,7 @@ Update-MgSiteListItemVersionField -InputObject <ISitesIdentity> -BodyParameter <
 ```
 
 ## DESCRIPTION
-Update the navigation property fields in sites
+A collection of the fields and values for this version of the list item.
 
 ## EXAMPLES
 
@@ -217,13 +217,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

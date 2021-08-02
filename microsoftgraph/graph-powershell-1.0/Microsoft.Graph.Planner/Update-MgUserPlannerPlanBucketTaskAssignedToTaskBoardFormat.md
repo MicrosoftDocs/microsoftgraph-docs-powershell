@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgUserPlannerPlanBucketTaskAssignedToTaskBoardFormat
 
 ## SYNOPSIS
-Update the navigation property assignedToTaskBoardFormat in users
+Read-only.
+Nullable.
+Used to render the task correctly in the task board view when grouped by assignedTo.
 
 ## SYNTAX
 
@@ -42,7 +44,9 @@ Update-MgUserPlannerPlanBucketTaskAssignedToTaskBoardFormat -InputObject <IPlann
 ```
 
 ## DESCRIPTION
-Update the navigation property assignedToTaskBoardFormat in users
+Read-only.
+Nullable.
+Used to render the task correctly in the task board view when grouped by assignedTo.
 
 ## EXAMPLES
 
@@ -253,13 +257,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat
-
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

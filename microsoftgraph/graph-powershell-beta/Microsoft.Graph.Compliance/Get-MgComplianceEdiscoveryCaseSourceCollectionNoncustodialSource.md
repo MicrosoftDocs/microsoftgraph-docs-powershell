@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgComplianceEdiscoveryCaseSourceCollectionNoncustodialSource
 
 ## SYNOPSIS
-Get noncustodialSources from compliance
+noncustodialDataSource sources that are included in the sourceCollection
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgComplianceEdiscoveryCaseSourceCollectionNoncustodialSource -CaseId <String
 ```
 
 ## DESCRIPTION
-Get noncustodialSources from compliance
+noncustodialDataSource sources that are included in the sourceCollection
 
 ## EXAMPLES
 
@@ -213,8 +213,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryDataSource
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryNoncustodialDataSource
 ## NOTES
 
 ALIASES

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserOwnedDeviceByRef
 
 ## SYNOPSIS
-Get ref of ownedDevices from users
+Devices that are owned by the user.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -18,7 +20,9 @@ Get-MgUserOwnedDeviceByRef -UserId <String> [-Filter <String>] [-Search <String>
 ```
 
 ## DESCRIPTION
-Get ref of ownedDevices from users
+Devices that are owned by the user.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -168,7 +172,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

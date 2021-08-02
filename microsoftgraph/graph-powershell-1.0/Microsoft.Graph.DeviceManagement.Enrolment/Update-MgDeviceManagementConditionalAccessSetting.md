@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgDeviceManagementConditionalAccessSetting
 
 ## SYNOPSIS
-Update the navigation property conditionalAccessSettings in deviceManagement
+The Exchange on premises conditional access settings.
+On premises conditional access will require devices to be both enrolled and compliant for mail access
 
 ## SYNTAX
 
@@ -27,7 +28,8 @@ Update-MgDeviceManagementConditionalAccessSetting
 ```
 
 ## DESCRIPTION
-Update the navigation property conditionalAccessSettings in deviceManagement
+The Exchange on premises conditional access settings.
+On premises conditional access will require devices to be both enrolled and compliant for mail access
 
 ## EXAMPLES
 
@@ -193,11 +195,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnPremisesConditionalAccessSettings
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

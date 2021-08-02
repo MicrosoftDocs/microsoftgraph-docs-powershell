@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgGroupPlannerPlanBucket
 
 ## SYNOPSIS
-Update the navigation property buckets in groups
+Collection of buckets in the plan.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -39,7 +41,9 @@ Update-MgGroupPlannerPlanBucket -InputObject <IPlannerIdentity> -BodyParameter <
 ```
 
 ## DESCRIPTION
-Update the navigation property buckets in groups
+Collection of buckets in the plan.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -268,13 +272,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerBucket
-
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

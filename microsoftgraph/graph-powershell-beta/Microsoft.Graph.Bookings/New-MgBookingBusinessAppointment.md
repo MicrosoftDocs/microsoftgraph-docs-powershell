@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgBookingBusinessAppointment
 
 ## SYNOPSIS
-Create new navigation property to appointments for bookingBusinesses
+All the appointments of this business.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -55,7 +57,9 @@ New-MgBookingBusinessAppointment -InputObject <IBookingsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to appointments for bookingBusinesses
+All the appointments of this business.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -626,13 +630,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IBookingsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingAppointment
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingAppointment
-
 ## NOTES
 
 ALIASES

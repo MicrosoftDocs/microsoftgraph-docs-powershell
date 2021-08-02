@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserPlannerPlanBucket
 
 ## SYNOPSIS
-Get buckets from users
+Collection of buckets in the plan.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgUserPlannerPlanBucket -InputObject <IPlannerIdentity> [-ExpandProperty <St
 ```
 
 ## DESCRIPTION
-Get buckets from users
+Collection of buckets in the plan.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -256,11 +260,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerBucket1
-
 ## NOTES
 
 ALIASES

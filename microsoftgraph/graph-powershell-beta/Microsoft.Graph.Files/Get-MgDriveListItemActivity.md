@@ -285,13 +285,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemActivityOld
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemActivityStat
-
 ## NOTES
 
 ALIASES

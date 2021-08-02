@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgServicePrincipalOauth2PermissionGrant
 
 ## SYNOPSIS
-Get oauth2PermissionGrants from servicePrincipals
+Delegated permission grants authorizing this service principal to access an API on behalf of a signed-in user.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -19,7 +21,9 @@ Get-MgServicePrincipalOauth2PermissionGrant -ServicePrincipalId <String> [-Expan
 ```
 
 ## DESCRIPTION
-Get oauth2PermissionGrants from servicePrincipals
+Delegated permission grants authorizing this service principal to access an API on behalf of a signed-in user.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -199,7 +203,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOAuth2PermissionGrant
-
 ## NOTES
 
 ALIASES

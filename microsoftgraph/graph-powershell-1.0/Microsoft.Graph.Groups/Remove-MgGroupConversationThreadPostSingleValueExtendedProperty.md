@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgGroupConversationThreadPostSingleValueExtendedProperty
 
 ## SYNOPSIS
-Delete navigation property singleValueExtendedProperties for groups
+The collection of single-value extended properties defined for the post.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -27,7 +29,9 @@ Remove-MgGroupConversationThreadPostSingleValueExtendedProperty -InputObject <IG
 ```
 
 ## DESCRIPTION
-Delete navigation property singleValueExtendedProperties for groups
+The collection of single-value extended properties defined for the post.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -191,11 +195,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

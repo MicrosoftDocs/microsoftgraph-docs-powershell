@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState
 
 ## SYNOPSIS
-Create new navigation property to deviceConfigurationsAllManagedDeviceCertificateStates for deviceManagement
+Summary of all certificates for all devices.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ New-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState
 ```
 
 ## DESCRIPTION
-Create new navigation property to deviceConfigurationsAllManagedDeviceCertificateStates for deviceManagement
+Summary of all certificates for all devices.
 
 ## EXAMPLES
 
@@ -299,11 +299,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedAllDeviceCertificateState
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedAllDeviceCertificateState
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementSettingDefinition
 
 ## SYNOPSIS
-Create new navigation property to settingDefinitions for deviceManagement
+The device management intent setting definitions
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ New-MgDeviceManagementSettingDefinition -BodyParameter <IMicrosoftGraphDeviceMan
 ```
 
 ## DESCRIPTION
-Create new navigation property to settingDefinitions for deviceManagement
+The device management intent setting definitions
 
 ## EXAMPLES
 
@@ -284,11 +284,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementSettingDefinition
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementSettingDefinition
-
 ## NOTES
 
 ALIASES

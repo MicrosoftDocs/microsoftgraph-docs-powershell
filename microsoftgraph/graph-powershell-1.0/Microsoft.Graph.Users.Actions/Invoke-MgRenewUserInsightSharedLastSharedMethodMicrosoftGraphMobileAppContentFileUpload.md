@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgRenewUserInsightSharedLastSharedMethodMicrosoftGraphMobileAppContentFileUpload
 
 ## SYNOPSIS
-Invoke action renewUpload
+Renews the SAS URI for an application file upload.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Invoke-MgRenewUserInsightSharedLastSharedMethodMicrosoftGraphMobileAppContentFil
 ```
 
 ## DESCRIPTION
-Invoke action renewUpload
+Renews the SAS URI for an application file upload.
 
 ## EXAMPLES
 
@@ -129,11 +129,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-Module Guid: e2bb14a7-c727-424b-95e2-cf8b35065b30
+Module Guid: ce7c7fdf-8125-44b9-be8c-88fb1abf0347
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration
 Help Version: 1.0.0.0
 Locale: en-US
@@ -12,599 +12,703 @@ Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.DeviceManagement.Administration Cmdlets
 ### [Get-MgDeviceManagementApplePushNotificationCertificate](Get-MgDeviceManagementApplePushNotificationCertificate.md)
-Get applePushNotificationCertificate from deviceManagement
+Apple push notification certificate.
 
 ### [Get-MgDeviceManagementAuditEvent](Get-MgDeviceManagementAuditEvent.md)
-Get auditEvents from deviceManagement
+The Audit Events
 
 ### [Get-MgDeviceManagementCartToClassAssociation](Get-MgDeviceManagementCartToClassAssociation.md)
-Get cartToClassAssociations from deviceManagement
+The Cart To Class Associations.
 
 ### [Get-MgDeviceManagementComanagementEligibleDevice](Get-MgDeviceManagementComanagementEligibleDevice.md)
-Get comanagementEligibleDevices from deviceManagement
+The list of co-management eligible devices report
 
 ### [Get-MgDeviceManagementComplianceManagementPartner](Get-MgDeviceManagementComplianceManagementPartner.md)
-Get complianceManagementPartners from deviceManagement
+The list of Compliance Management Partners configured by the tenant.
 
 ### [Get-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState](Get-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState.md)
-Get deviceConfigurationsAllManagedDeviceCertificateStates from deviceManagement
+Summary of all certificates for all devices.
 
 ### [Get-MgDeviceManagementDeviceConfigurationRestrictedAppViolation](Get-MgDeviceManagementDeviceConfigurationRestrictedAppViolation.md)
-Get deviceConfigurationRestrictedAppsViolations from deviceManagement
+Restricted apps violations for this account.
 
 ### [Get-MgDeviceManagementDomainJoinConnector](Get-MgDeviceManagementDomainJoinConnector.md)
-Get domainJoinConnectors from deviceManagement
+A list of connector objects.
 
 ### [Get-MgDeviceManagementExchangeConnector](Get-MgDeviceManagementExchangeConnector.md)
-Get exchangeConnectors from deviceManagement
+The list of Exchange Connectors configured by the tenant.
 
 ### [Get-MgDeviceManagementExchangeOnPremisPolicy](Get-MgDeviceManagementExchangeOnPremisPolicy.md)
-Get exchangeOnPremisesPolicies from deviceManagement
+The list of Exchange On Premisis policies configured by the tenant.
 
 ### [Get-MgDeviceManagementExchangeOnPremisPolicyConditionalAccessSetting](Get-MgDeviceManagementExchangeOnPremisPolicyConditionalAccessSetting.md)
-Get conditionalAccessSettings from deviceManagement
+The Exchange on premises conditional access settings.
+On premises conditional access will require devices to be both enrolled and compliant for mail access
 
 ### [Get-MgDeviceManagementGroupPolicyCategory](Get-MgDeviceManagementGroupPolicyCategory.md)
-Get groupPolicyCategories from deviceManagement
+The available group policy categories for this account.
 
 ### [Get-MgDeviceManagementGroupPolicyCategoryChild](Get-MgDeviceManagementGroupPolicyCategoryChild.md)
-Get children from deviceManagement
+The children categories
 
 ### [Get-MgDeviceManagementGroupPolicyCategoryChildByRef](Get-MgDeviceManagementGroupPolicyCategoryChildByRef.md)
-Get ref of children from deviceManagement
+The children categories
 
 ### [Get-MgDeviceManagementGroupPolicyCategoryDefinition](Get-MgDeviceManagementGroupPolicyCategoryDefinition.md)
-Get definitions from deviceManagement
+The immediate GroupPolicyDefinition children of the category
 
 ### [Get-MgDeviceManagementGroupPolicyCategoryDefinitionByRef](Get-MgDeviceManagementGroupPolicyCategoryDefinitionByRef.md)
-Get ref of definitions from deviceManagement
+The immediate GroupPolicyDefinition children of the category
 
 ### [Get-MgDeviceManagementGroupPolicyCategoryDefinitionFile](Get-MgDeviceManagementGroupPolicyCategoryDefinitionFile.md)
-Get definitionFile from deviceManagement
+The id of the definition file the category came from
 
 ### [Get-MgDeviceManagementGroupPolicyCategoryDefinitionFileByRef](Get-MgDeviceManagementGroupPolicyCategoryDefinitionFileByRef.md)
-Get ref of definitionFile from deviceManagement
+The id of the definition file the category came from
 
 ### [Get-MgDeviceManagementGroupPolicyCategoryParent](Get-MgDeviceManagementGroupPolicyCategoryParent.md)
-Get parent from deviceManagement
+The parent category
 
 ### [Get-MgDeviceManagementGroupPolicyCategoryParentByRef](Get-MgDeviceManagementGroupPolicyCategoryParentByRef.md)
-Get ref of parent from deviceManagement
+The parent category
 
 ### [Get-MgDeviceManagementGroupPolicyDefinition](Get-MgDeviceManagementGroupPolicyDefinition.md)
-Get groupPolicyDefinitions from deviceManagement
+The available group policy definitions for this account.
 
 ### [Get-MgDeviceManagementGroupPolicyDefinitionCategory](Get-MgDeviceManagementGroupPolicyDefinitionCategory.md)
-Get category from deviceManagement
+The group policy category associated with the definition.
 
 ### [Get-MgDeviceManagementGroupPolicyDefinitionCategoryByRef](Get-MgDeviceManagementGroupPolicyDefinitionCategoryByRef.md)
-Get ref of category from deviceManagement
+The group policy category associated with the definition.
 
 ### [Get-MgDeviceManagementGroupPolicyDefinitionDefinitionFileByRef](Get-MgDeviceManagementGroupPolicyDefinitionDefinitionFileByRef.md)
-Get ref of definitionFile from deviceManagement
+The group policy file associated with the definition.
 
 ### [Get-MgDeviceManagementGroupPolicyDefinitionFile](Get-MgDeviceManagementGroupPolicyDefinitionFile.md)
-Get groupPolicyDefinitionFiles from deviceManagement
+The available group policy definition files for this account.
 
 ### [Get-MgDeviceManagementGroupPolicyDefinitionFileDefinition](Get-MgDeviceManagementGroupPolicyDefinitionFileDefinition.md)
-Get definitions from deviceManagement
+The group policy definitions associated with the file.
 
 ### [Get-MgDeviceManagementGroupPolicyDefinitionFileDefinitionByRef](Get-MgDeviceManagementGroupPolicyDefinitionFileDefinitionByRef.md)
-Get ref of definitions from deviceManagement
+The group policy definitions associated with the file.
 
 ### [Get-MgDeviceManagementGroupPolicyDefinitionPresentation](Get-MgDeviceManagementGroupPolicyDefinitionPresentation.md)
-Get presentations from deviceManagement
+The group policy presentations associated with the definition.
 
 ### [Get-MgDeviceManagementGroupPolicyDefinitionPresentationDefinition](Get-MgDeviceManagementGroupPolicyDefinitionPresentationDefinition.md)
-Get definition from deviceManagement
+The group policy definition associated with the presentation.
 
 ### [Get-MgDeviceManagementGroupPolicyDefinitionPresentationDefinitionByRef](Get-MgDeviceManagementGroupPolicyDefinitionPresentationDefinitionByRef.md)
-Get ref of definition from deviceManagement
+The group policy definition associated with the presentation.
 
 ### [Get-MgDeviceManagementGroupPolicyMigrationReport](Get-MgDeviceManagementGroupPolicyMigrationReport.md)
-Get groupPolicyMigrationReports from deviceManagement
+A list of Group Policy migration reports.
 
 ### [Get-MgDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping](Get-MgDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping.md)
-Get groupPolicySettingMappings from deviceManagement
+A list of group policy settings to MDM/Intune mappings.
 
 ### [Get-MgDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension](Get-MgDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension.md)
-Get unsupportedGroupPolicyExtensions from deviceManagement
+A list of unsupported group policy extensions inside the Group Policy Object.
 
 ### [Get-MgDeviceManagementGroupPolicyObjectFile](Get-MgDeviceManagementGroupPolicyObjectFile.md)
-Get groupPolicyObjectFiles from deviceManagement
+A list of Group Policy Object files uploaded.
 
 ### [Get-MgDeviceManagementGroupPolicyUploadedDefinitionFile](Get-MgDeviceManagementGroupPolicyUploadedDefinitionFile.md)
-Get groupPolicyUploadedDefinitionFiles from deviceManagement
+The available group policy uploaded definition files for this account.
 
 ### [Get-MgDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation](Get-MgDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation.md)
-Get groupPolicyOperations from deviceManagement
+The list of operations on the uploaded ADMX file.
 
 ### [Get-MgDeviceManagementIntuneBrandingProfile](Get-MgDeviceManagementIntuneBrandingProfile.md)
-Get intuneBrandingProfiles from deviceManagement
+Intune branding profiles targeted to AAD groups
 
 ### [Get-MgDeviceManagementIntuneBrandingProfileAssignment](Get-MgDeviceManagementIntuneBrandingProfileAssignment.md)
-Get assignments from deviceManagement
+The list of group assignments for the branding profile
 
 ### [Get-MgDeviceManagementIoUpdateStatuses](Get-MgDeviceManagementIoUpdateStatuses.md)
-Get iosUpdateStatuses from deviceManagement
+The IOS software update installation statuses for this account.
 
 ### [Get-MgDeviceManagementMobileThreatDefenseConnector](Get-MgDeviceManagementMobileThreatDefenseConnector.md)
-Get mobileThreatDefenseConnectors from deviceManagement
+The list of Mobile threat Defense connectors configured by the tenant.
 
 ### [Get-MgDeviceManagementNdeConnector](Get-MgDeviceManagementNdeConnector.md)
-Get ndesConnectors from deviceManagement
+The collection of Ndes connectors for this account.
 
 ### [Get-MgDeviceManagementPartner](Get-MgDeviceManagementPartner.md)
-Get deviceManagementPartners from deviceManagement
+The list of Device Management Partners configured by the tenant.
 
 ### [Get-MgDeviceManagementRemoteAssistancePartner](Get-MgDeviceManagementRemoteAssistancePartner.md)
-Get remoteAssistancePartners from deviceManagement
+The remote assist partners.
 
 ### [Get-MgDeviceManagementResourceOperation](Get-MgDeviceManagementResourceOperation.md)
-Get resourceOperations from deviceManagement
+The Resource Operations.
 
 ### [Get-MgDeviceManagementRoleAssignment](Get-MgDeviceManagementRoleAssignment.md)
-Get roleAssignments from deviceManagement
+The Role Assignments.
 
 ### [Get-MgDeviceManagementRoleAssignmentRoleScopeTag](Get-MgDeviceManagementRoleAssignmentRoleScopeTag.md)
-Get roleScopeTags from deviceManagement
+The set of Role Scope Tags defined on the Role Assignment.
 
 ### [Get-MgDeviceManagementRoleAssignmentRoleScopeTagByRef](Get-MgDeviceManagementRoleAssignmentRoleScopeTagByRef.md)
-Get ref of roleScopeTags from deviceManagement
+The set of Role Scope Tags defined on the Role Assignment.
 
 ### [Get-MgDeviceManagementRoleDefinition](Get-MgDeviceManagementRoleDefinition.md)
-Get roleDefinitions from deviceManagement
+The Role Definitions.
 
 ### [Get-MgDeviceManagementRoleDefinitionRoleAssignment](Get-MgDeviceManagementRoleDefinitionRoleAssignment.md)
-Get roleAssignments from deviceManagement
+List of Role assignments for this role definition.
 
 ### [Get-MgDeviceManagementRoleDefinitionRoleAssignmentRoleDefinition](Get-MgDeviceManagementRoleDefinitionRoleAssignmentRoleDefinition.md)
-Get roleDefinition from deviceManagement
+Role definition this assignment is part of.
 
 ### [Get-MgDeviceManagementRoleDefinitionRoleAssignmentRoleDefinitionByRef](Get-MgDeviceManagementRoleDefinitionRoleAssignmentRoleDefinitionByRef.md)
-Get ref of roleDefinition from deviceManagement
+Role definition this assignment is part of.
 
 ### [Get-MgDeviceManagementRoleScopeTag](Get-MgDeviceManagementRoleScopeTag.md)
-Get roleScopeTags from deviceManagement
+The Role Scope Tags.
 
 ### [Get-MgDeviceManagementRoleScopeTagAssignment](Get-MgDeviceManagementRoleScopeTagAssignment.md)
-Get assignments from deviceManagement
+The list of assignments for this Role Scope Tag.
 
 ### [Get-MgDeviceManagementTelecomExpenseManagementPartner](Get-MgDeviceManagementTelecomExpenseManagementPartner.md)
-Get telecomExpenseManagementPartners from deviceManagement
+The telecom expense management partners.
 
 ### [Get-MgDeviceManagementTermAndCondition](Get-MgDeviceManagementTermAndCondition.md)
-Get termsAndConditions from deviceManagement
+The terms and conditions associated with device management of the company.
 
 ### [Get-MgDeviceManagementTermAndConditionAcceptanceStatuses](Get-MgDeviceManagementTermAndConditionAcceptanceStatuses.md)
-Get acceptanceStatuses from deviceManagement
+The list of acceptance statuses for this T&C policy.
 
 ### [Get-MgDeviceManagementTermAndConditionAcceptanceStatusesTermAndCondition](Get-MgDeviceManagementTermAndConditionAcceptanceStatusesTermAndCondition.md)
-Get termsAndConditions from deviceManagement
+Navigation link to the terms and conditions that are assigned.
 
 ### [Get-MgDeviceManagementTermAndConditionAcceptanceStatusesTermAndConditionByRef](Get-MgDeviceManagementTermAndConditionAcceptanceStatusesTermAndConditionByRef.md)
-Get ref of termsAndConditions from deviceManagement
+Navigation link to the terms and conditions that are assigned.
 
 ### [Get-MgDeviceManagementTermAndConditionAssignment](Get-MgDeviceManagementTermAndConditionAssignment.md)
-Get assignments from deviceManagement
+The list of assignments for this T&C policy.
 
 ### [Get-MgDeviceManagementTermAndConditionGroupAssignment](Get-MgDeviceManagementTermAndConditionGroupAssignment.md)
-Get groupAssignments from deviceManagement
+The list of group assignments for this T&C policy.
 
 ### [Get-MgDeviceManagementTermAndConditionGroupAssignmentTermAndCondition](Get-MgDeviceManagementTermAndConditionGroupAssignmentTermAndCondition.md)
-Get termsAndConditions from deviceManagement
+Navigation link to the terms and conditions that are assigned.
 
 ### [Get-MgDeviceManagementTermAndConditionGroupAssignmentTermAndConditionByRef](Get-MgDeviceManagementTermAndConditionGroupAssignmentTermAndConditionByRef.md)
-Get ref of termsAndConditions from deviceManagement
+Navigation link to the terms and conditions that are assigned.
 
 ### [Get-MgDeviceManagementUserPfxCertificate](Get-MgDeviceManagementUserPfxCertificate.md)
-Get userPfxCertificates from deviceManagement
+Collection of PFX certificates associated with a user.
+
+### [Get-MgDeviceManagementVirtualEndpoint](Get-MgDeviceManagementVirtualEndpoint.md)
+Get virtualEndpoint from deviceManagement
+
+### [Get-MgDeviceManagementVirtualEndpointAuditEvent](Get-MgDeviceManagementVirtualEndpointAuditEvent.md)
+Cloud PC audit event.
+
+### [Get-MgDeviceManagementVirtualEndpointCloudPC](Get-MgDeviceManagementVirtualEndpointCloudPC.md)
+Cloud managed virtual desktops.
+
+### [Get-MgDeviceManagementVirtualEndpointDeviceImage](Get-MgDeviceManagementVirtualEndpointDeviceImage.md)
+The image resource on cloud PC.
+
+### [Get-MgDeviceManagementVirtualEndpointOnPremisesConnection](Get-MgDeviceManagementVirtualEndpointOnPremisesConnection.md)
+A defined collection of Azure resource information that can be used to establish on-premises network connectivity for cloud PCs.
+
+### [Get-MgDeviceManagementVirtualEndpointProvisioningPolicy](Get-MgDeviceManagementVirtualEndpointProvisioningPolicy.md)
+Cloud PC provisioning policy.
+
+### [Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment](Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment.md)
+A defined collection of provisioning policy assignments.
+Represents the set of Microsoft 365 groups and security groups in Azure AD that have provisioning policy assigned.
+Returned only on $expand.
+See an example of getting the assignments relationship.
+
+### [Get-MgDeviceManagementVirtualEndpointUserSetting](Get-MgDeviceManagementVirtualEndpointUserSetting.md)
+Cloud PC user settings.
+
+### [Get-MgDeviceManagementVirtualEndpointUserSettingAssignment](Get-MgDeviceManagementVirtualEndpointUserSettingAssignment.md)
+Represents the set of Microsoft 365 groups and security groups in Azure AD that have cloudPCUserSetting assigned.
+Returned only on $expand.
+For an example, see Get cloudPcUserSettingample.
 
 ### [New-MgDeviceManagementAuditEvent](New-MgDeviceManagementAuditEvent.md)
-Create new navigation property to auditEvents for deviceManagement
+The Audit Events
 
 ### [New-MgDeviceManagementCartToClassAssociation](New-MgDeviceManagementCartToClassAssociation.md)
-Create new navigation property to cartToClassAssociations for deviceManagement
+The Cart To Class Associations.
 
 ### [New-MgDeviceManagementComanagementEligibleDevice](New-MgDeviceManagementComanagementEligibleDevice.md)
-Create new navigation property to comanagementEligibleDevices for deviceManagement
+The list of co-management eligible devices report
 
 ### [New-MgDeviceManagementComplianceManagementPartner](New-MgDeviceManagementComplianceManagementPartner.md)
-Create new navigation property to complianceManagementPartners for deviceManagement
+The list of Compliance Management Partners configured by the tenant.
 
 ### [New-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState](New-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState.md)
-Create new navigation property to deviceConfigurationsAllManagedDeviceCertificateStates for deviceManagement
+Summary of all certificates for all devices.
 
 ### [New-MgDeviceManagementDeviceConfigurationRestrictedAppViolation](New-MgDeviceManagementDeviceConfigurationRestrictedAppViolation.md)
-Create new navigation property to deviceConfigurationRestrictedAppsViolations for deviceManagement
+Restricted apps violations for this account.
 
 ### [New-MgDeviceManagementDomainJoinConnector](New-MgDeviceManagementDomainJoinConnector.md)
-Create new navigation property to domainJoinConnectors for deviceManagement
+A list of connector objects.
 
 ### [New-MgDeviceManagementExchangeConnector](New-MgDeviceManagementExchangeConnector.md)
-Create new navigation property to exchangeConnectors for deviceManagement
+The list of Exchange Connectors configured by the tenant.
 
 ### [New-MgDeviceManagementExchangeOnPremisPolicy](New-MgDeviceManagementExchangeOnPremisPolicy.md)
-Create new navigation property to exchangeOnPremisesPolicies for deviceManagement
+The list of Exchange On Premisis policies configured by the tenant.
 
 ### [New-MgDeviceManagementGroupPolicyCategory](New-MgDeviceManagementGroupPolicyCategory.md)
-Create new navigation property to groupPolicyCategories for deviceManagement
+The available group policy categories for this account.
 
 ### [New-MgDeviceManagementGroupPolicyCategoryChildByRef](New-MgDeviceManagementGroupPolicyCategoryChildByRef.md)
-Create new navigation property ref to children for deviceManagement
+The children categories
 
 ### [New-MgDeviceManagementGroupPolicyCategoryDefinitionByRef](New-MgDeviceManagementGroupPolicyCategoryDefinitionByRef.md)
-Create new navigation property ref to definitions for deviceManagement
+The immediate GroupPolicyDefinition children of the category
 
 ### [New-MgDeviceManagementGroupPolicyDefinition](New-MgDeviceManagementGroupPolicyDefinition.md)
-Create new navigation property to groupPolicyDefinitions for deviceManagement
+The available group policy definitions for this account.
 
 ### [New-MgDeviceManagementGroupPolicyDefinitionFile](New-MgDeviceManagementGroupPolicyDefinitionFile.md)
-Create new navigation property to groupPolicyDefinitionFiles for deviceManagement
+The available group policy definition files for this account.
 
 ### [New-MgDeviceManagementGroupPolicyDefinitionFileDefinitionByRef](New-MgDeviceManagementGroupPolicyDefinitionFileDefinitionByRef.md)
-Create new navigation property ref to definitions for deviceManagement
+The group policy definitions associated with the file.
 
 ### [New-MgDeviceManagementGroupPolicyDefinitionPresentation](New-MgDeviceManagementGroupPolicyDefinitionPresentation.md)
-Create new navigation property to presentations for deviceManagement
+The group policy presentations associated with the definition.
 
 ### [New-MgDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping](New-MgDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping.md)
-Create new navigation property to groupPolicySettingMappings for deviceManagement
+A list of group policy settings to MDM/Intune mappings.
 
 ### [New-MgDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension](New-MgDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension.md)
-Create new navigation property to unsupportedGroupPolicyExtensions for deviceManagement
+A list of unsupported group policy extensions inside the Group Policy Object.
 
 ### [New-MgDeviceManagementGroupPolicyObjectFile](New-MgDeviceManagementGroupPolicyObjectFile.md)
-Create new navigation property to groupPolicyObjectFiles for deviceManagement
+A list of Group Policy Object files uploaded.
 
 ### [New-MgDeviceManagementGroupPolicyUploadedDefinitionFile](New-MgDeviceManagementGroupPolicyUploadedDefinitionFile.md)
-Create new navigation property to groupPolicyUploadedDefinitionFiles for deviceManagement
+The available group policy uploaded definition files for this account.
 
 ### [New-MgDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation](New-MgDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation.md)
-Create new navigation property to groupPolicyOperations for deviceManagement
+The list of operations on the uploaded ADMX file.
 
 ### [New-MgDeviceManagementIntuneBrandingProfile](New-MgDeviceManagementIntuneBrandingProfile.md)
-Create new navigation property to intuneBrandingProfiles for deviceManagement
+Intune branding profiles targeted to AAD groups
 
 ### [New-MgDeviceManagementIntuneBrandingProfileAssignment](New-MgDeviceManagementIntuneBrandingProfileAssignment.md)
-Create new navigation property to assignments for deviceManagement
+The list of group assignments for the branding profile
 
 ### [New-MgDeviceManagementIoUpdateStatuses](New-MgDeviceManagementIoUpdateStatuses.md)
-Create new navigation property to iosUpdateStatuses for deviceManagement
+The IOS software update installation statuses for this account.
 
 ### [New-MgDeviceManagementMobileThreatDefenseConnector](New-MgDeviceManagementMobileThreatDefenseConnector.md)
-Create new navigation property to mobileThreatDefenseConnectors for deviceManagement
+The list of Mobile threat Defense connectors configured by the tenant.
 
 ### [New-MgDeviceManagementNdeConnector](New-MgDeviceManagementNdeConnector.md)
-Create new navigation property to ndesConnectors for deviceManagement
+The collection of Ndes connectors for this account.
 
 ### [New-MgDeviceManagementPartner](New-MgDeviceManagementPartner.md)
-Create new navigation property to deviceManagementPartners for deviceManagement
+The list of Device Management Partners configured by the tenant.
 
 ### [New-MgDeviceManagementRemoteAssistancePartner](New-MgDeviceManagementRemoteAssistancePartner.md)
-Create new navigation property to remoteAssistancePartners for deviceManagement
+The remote assist partners.
 
 ### [New-MgDeviceManagementResourceOperation](New-MgDeviceManagementResourceOperation.md)
-Create new navigation property to resourceOperations for deviceManagement
+The Resource Operations.
 
 ### [New-MgDeviceManagementRoleAssignment](New-MgDeviceManagementRoleAssignment.md)
-Create new navigation property to roleAssignments for deviceManagement
+The Role Assignments.
 
 ### [New-MgDeviceManagementRoleAssignmentRoleScopeTagByRef](New-MgDeviceManagementRoleAssignmentRoleScopeTagByRef.md)
-Create new navigation property ref to roleScopeTags for deviceManagement
+The set of Role Scope Tags defined on the Role Assignment.
 
 ### [New-MgDeviceManagementRoleDefinition](New-MgDeviceManagementRoleDefinition.md)
-Create new navigation property to roleDefinitions for deviceManagement
+The Role Definitions.
 
 ### [New-MgDeviceManagementRoleDefinitionRoleAssignment](New-MgDeviceManagementRoleDefinitionRoleAssignment.md)
-Create new navigation property to roleAssignments for deviceManagement
+List of Role assignments for this role definition.
 
 ### [New-MgDeviceManagementRoleScopeTag](New-MgDeviceManagementRoleScopeTag.md)
-Create new navigation property to roleScopeTags for deviceManagement
+The Role Scope Tags.
 
 ### [New-MgDeviceManagementRoleScopeTagAssignment](New-MgDeviceManagementRoleScopeTagAssignment.md)
-Create new navigation property to assignments for deviceManagement
+The list of assignments for this Role Scope Tag.
 
 ### [New-MgDeviceManagementTelecomExpenseManagementPartner](New-MgDeviceManagementTelecomExpenseManagementPartner.md)
-Create new navigation property to telecomExpenseManagementPartners for deviceManagement
+The telecom expense management partners.
 
 ### [New-MgDeviceManagementTermAndCondition](New-MgDeviceManagementTermAndCondition.md)
-Create new navigation property to termsAndConditions for deviceManagement
+The terms and conditions associated with device management of the company.
 
 ### [New-MgDeviceManagementTermAndConditionAcceptanceStatuses](New-MgDeviceManagementTermAndConditionAcceptanceStatuses.md)
-Create new navigation property to acceptanceStatuses for deviceManagement
+The list of acceptance statuses for this T&C policy.
 
 ### [New-MgDeviceManagementTermAndConditionAssignment](New-MgDeviceManagementTermAndConditionAssignment.md)
-Create new navigation property to assignments for deviceManagement
+The list of assignments for this T&C policy.
 
 ### [New-MgDeviceManagementTermAndConditionGroupAssignment](New-MgDeviceManagementTermAndConditionGroupAssignment.md)
-Create new navigation property to groupAssignments for deviceManagement
+The list of group assignments for this T&C policy.
 
 ### [New-MgDeviceManagementUserPfxCertificate](New-MgDeviceManagementUserPfxCertificate.md)
-Create new navigation property to userPfxCertificates for deviceManagement
+Collection of PFX certificates associated with a user.
+
+### [New-MgDeviceManagementVirtualEndpointDeviceImage](New-MgDeviceManagementVirtualEndpointDeviceImage.md)
+The image resource on cloud PC.
+
+### [New-MgDeviceManagementVirtualEndpointOnPremisesConnection](New-MgDeviceManagementVirtualEndpointOnPremisesConnection.md)
+A defined collection of Azure resource information that can be used to establish on-premises network connectivity for cloud PCs.
+
+### [New-MgDeviceManagementVirtualEndpointProvisioningPolicy](New-MgDeviceManagementVirtualEndpointProvisioningPolicy.md)
+Cloud PC provisioning policy.
+
+### [New-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment](New-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment.md)
+A defined collection of provisioning policy assignments.
+Represents the set of Microsoft 365 groups and security groups in Azure AD that have provisioning policy assigned.
+Returned only on $expand.
+See an example of getting the assignments relationship.
+
+### [New-MgDeviceManagementVirtualEndpointUserSetting](New-MgDeviceManagementVirtualEndpointUserSetting.md)
+Cloud PC user settings.
+
+### [New-MgDeviceManagementVirtualEndpointUserSettingAssignment](New-MgDeviceManagementVirtualEndpointUserSettingAssignment.md)
+Represents the set of Microsoft 365 groups and security groups in Azure AD that have cloudPCUserSetting assigned.
+Returned only on $expand.
+For an example, see Get cloudPcUserSettingample.
 
 ### [Remove-MgDeviceManagementApplePushNotificationCertificate](Remove-MgDeviceManagementApplePushNotificationCertificate.md)
-Delete navigation property applePushNotificationCertificate for deviceManagement
+Apple push notification certificate.
 
 ### [Remove-MgDeviceManagementAuditEvent](Remove-MgDeviceManagementAuditEvent.md)
-Delete navigation property auditEvents for deviceManagement
+The Audit Events
 
 ### [Remove-MgDeviceManagementCartToClassAssociation](Remove-MgDeviceManagementCartToClassAssociation.md)
-Delete navigation property cartToClassAssociations for deviceManagement
+The Cart To Class Associations.
 
 ### [Remove-MgDeviceManagementComanagementEligibleDevice](Remove-MgDeviceManagementComanagementEligibleDevice.md)
-Delete navigation property comanagementEligibleDevices for deviceManagement
+The list of co-management eligible devices report
 
 ### [Remove-MgDeviceManagementComplianceManagementPartner](Remove-MgDeviceManagementComplianceManagementPartner.md)
-Delete navigation property complianceManagementPartners for deviceManagement
+The list of Compliance Management Partners configured by the tenant.
 
 ### [Remove-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState](Remove-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState.md)
-Delete navigation property deviceConfigurationsAllManagedDeviceCertificateStates for deviceManagement
+Summary of all certificates for all devices.
 
 ### [Remove-MgDeviceManagementDeviceConfigurationRestrictedAppViolation](Remove-MgDeviceManagementDeviceConfigurationRestrictedAppViolation.md)
-Delete navigation property deviceConfigurationRestrictedAppsViolations for deviceManagement
+Restricted apps violations for this account.
 
 ### [Remove-MgDeviceManagementDomainJoinConnector](Remove-MgDeviceManagementDomainJoinConnector.md)
-Delete navigation property domainJoinConnectors for deviceManagement
+A list of connector objects.
 
 ### [Remove-MgDeviceManagementExchangeConnector](Remove-MgDeviceManagementExchangeConnector.md)
-Delete navigation property exchangeConnectors for deviceManagement
+The list of Exchange Connectors configured by the tenant.
 
 ### [Remove-MgDeviceManagementExchangeOnPremisPolicy](Remove-MgDeviceManagementExchangeOnPremisPolicy.md)
-Delete navigation property exchangeOnPremisesPolicies for deviceManagement
+The list of Exchange On Premisis policies configured by the tenant.
 
 ### [Remove-MgDeviceManagementExchangeOnPremisPolicyConditionalAccessSetting](Remove-MgDeviceManagementExchangeOnPremisPolicyConditionalAccessSetting.md)
-Delete navigation property conditionalAccessSettings for deviceManagement
+The Exchange on premises conditional access settings.
+On premises conditional access will require devices to be both enrolled and compliant for mail access
 
 ### [Remove-MgDeviceManagementGroupPolicyCategory](Remove-MgDeviceManagementGroupPolicyCategory.md)
-Delete navigation property groupPolicyCategories for deviceManagement
+The available group policy categories for this account.
 
 ### [Remove-MgDeviceManagementGroupPolicyCategoryDefinitionFileByRef](Remove-MgDeviceManagementGroupPolicyCategoryDefinitionFileByRef.md)
-Delete ref of navigation property definitionFile for deviceManagement
+The id of the definition file the category came from
 
 ### [Remove-MgDeviceManagementGroupPolicyCategoryParentByRef](Remove-MgDeviceManagementGroupPolicyCategoryParentByRef.md)
-Delete ref of navigation property parent for deviceManagement
+The parent category
 
 ### [Remove-MgDeviceManagementGroupPolicyDefinition](Remove-MgDeviceManagementGroupPolicyDefinition.md)
-Delete navigation property groupPolicyDefinitions for deviceManagement
+The available group policy definitions for this account.
 
 ### [Remove-MgDeviceManagementGroupPolicyDefinitionCategoryByRef](Remove-MgDeviceManagementGroupPolicyDefinitionCategoryByRef.md)
-Delete ref of navigation property category for deviceManagement
+The group policy category associated with the definition.
 
 ### [Remove-MgDeviceManagementGroupPolicyDefinitionDefinitionFileByRef](Remove-MgDeviceManagementGroupPolicyDefinitionDefinitionFileByRef.md)
-Delete ref of navigation property definitionFile for deviceManagement
+The group policy file associated with the definition.
 
 ### [Remove-MgDeviceManagementGroupPolicyDefinitionFile](Remove-MgDeviceManagementGroupPolicyDefinitionFile.md)
-Delete navigation property groupPolicyDefinitionFiles for deviceManagement
+The available group policy definition files for this account.
 
 ### [Remove-MgDeviceManagementGroupPolicyDefinitionPresentation](Remove-MgDeviceManagementGroupPolicyDefinitionPresentation.md)
-Delete navigation property presentations for deviceManagement
+The group policy presentations associated with the definition.
 
 ### [Remove-MgDeviceManagementGroupPolicyDefinitionPresentationDefinitionByRef](Remove-MgDeviceManagementGroupPolicyDefinitionPresentationDefinitionByRef.md)
-Delete ref of navigation property definition for deviceManagement
+The group policy definition associated with the presentation.
 
 ### [Remove-MgDeviceManagementGroupPolicyMigrationReport](Remove-MgDeviceManagementGroupPolicyMigrationReport.md)
-Delete navigation property groupPolicyMigrationReports for deviceManagement
+A list of Group Policy migration reports.
 
 ### [Remove-MgDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping](Remove-MgDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping.md)
-Delete navigation property groupPolicySettingMappings for deviceManagement
+A list of group policy settings to MDM/Intune mappings.
 
 ### [Remove-MgDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension](Remove-MgDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension.md)
-Delete navigation property unsupportedGroupPolicyExtensions for deviceManagement
+A list of unsupported group policy extensions inside the Group Policy Object.
 
 ### [Remove-MgDeviceManagementGroupPolicyObjectFile](Remove-MgDeviceManagementGroupPolicyObjectFile.md)
-Delete navigation property groupPolicyObjectFiles for deviceManagement
+A list of Group Policy Object files uploaded.
 
 ### [Remove-MgDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation](Remove-MgDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation.md)
-Delete navigation property groupPolicyOperations for deviceManagement
+The list of operations on the uploaded ADMX file.
 
 ### [Remove-MgDeviceManagementIntuneBrandingProfile](Remove-MgDeviceManagementIntuneBrandingProfile.md)
-Delete navigation property intuneBrandingProfiles for deviceManagement
+Intune branding profiles targeted to AAD groups
 
 ### [Remove-MgDeviceManagementIntuneBrandingProfileAssignment](Remove-MgDeviceManagementIntuneBrandingProfileAssignment.md)
-Delete navigation property assignments for deviceManagement
+The list of group assignments for the branding profile
 
 ### [Remove-MgDeviceManagementIoUpdateStatuses](Remove-MgDeviceManagementIoUpdateStatuses.md)
-Delete navigation property iosUpdateStatuses for deviceManagement
+The IOS software update installation statuses for this account.
 
 ### [Remove-MgDeviceManagementMobileThreatDefenseConnector](Remove-MgDeviceManagementMobileThreatDefenseConnector.md)
-Delete navigation property mobileThreatDefenseConnectors for deviceManagement
+The list of Mobile threat Defense connectors configured by the tenant.
 
 ### [Remove-MgDeviceManagementNdeConnector](Remove-MgDeviceManagementNdeConnector.md)
-Delete navigation property ndesConnectors for deviceManagement
+The collection of Ndes connectors for this account.
 
 ### [Remove-MgDeviceManagementPartner](Remove-MgDeviceManagementPartner.md)
-Delete navigation property deviceManagementPartners for deviceManagement
+The list of Device Management Partners configured by the tenant.
 
 ### [Remove-MgDeviceManagementRemoteAssistancePartner](Remove-MgDeviceManagementRemoteAssistancePartner.md)
-Delete navigation property remoteAssistancePartners for deviceManagement
+The remote assist partners.
 
 ### [Remove-MgDeviceManagementResourceOperation](Remove-MgDeviceManagementResourceOperation.md)
-Delete navigation property resourceOperations for deviceManagement
+The Resource Operations.
 
 ### [Remove-MgDeviceManagementRoleAssignment](Remove-MgDeviceManagementRoleAssignment.md)
-Delete navigation property roleAssignments for deviceManagement
+The Role Assignments.
 
 ### [Remove-MgDeviceManagementRoleDefinition](Remove-MgDeviceManagementRoleDefinition.md)
-Delete navigation property roleDefinitions for deviceManagement
+The Role Definitions.
 
 ### [Remove-MgDeviceManagementRoleDefinitionRoleAssignment](Remove-MgDeviceManagementRoleDefinitionRoleAssignment.md)
-Delete navigation property roleAssignments for deviceManagement
+List of Role assignments for this role definition.
 
 ### [Remove-MgDeviceManagementRoleDefinitionRoleAssignmentRoleDefinitionByRef](Remove-MgDeviceManagementRoleDefinitionRoleAssignmentRoleDefinitionByRef.md)
-Delete ref of navigation property roleDefinition for deviceManagement
+Role definition this assignment is part of.
 
 ### [Remove-MgDeviceManagementRoleScopeTag](Remove-MgDeviceManagementRoleScopeTag.md)
-Delete navigation property roleScopeTags for deviceManagement
+The Role Scope Tags.
 
 ### [Remove-MgDeviceManagementRoleScopeTagAssignment](Remove-MgDeviceManagementRoleScopeTagAssignment.md)
-Delete navigation property assignments for deviceManagement
+The list of assignments for this Role Scope Tag.
 
 ### [Remove-MgDeviceManagementTelecomExpenseManagementPartner](Remove-MgDeviceManagementTelecomExpenseManagementPartner.md)
-Delete navigation property telecomExpenseManagementPartners for deviceManagement
+The telecom expense management partners.
 
 ### [Remove-MgDeviceManagementTermAndCondition](Remove-MgDeviceManagementTermAndCondition.md)
-Delete navigation property termsAndConditions for deviceManagement
+The terms and conditions associated with device management of the company.
 
 ### [Remove-MgDeviceManagementTermAndConditionAcceptanceStatuses](Remove-MgDeviceManagementTermAndConditionAcceptanceStatuses.md)
-Delete navigation property acceptanceStatuses for deviceManagement
+The list of acceptance statuses for this T&C policy.
 
 ### [Remove-MgDeviceManagementTermAndConditionAcceptanceStatusesTermAndConditionByRef](Remove-MgDeviceManagementTermAndConditionAcceptanceStatusesTermAndConditionByRef.md)
-Delete ref of navigation property termsAndConditions for deviceManagement
+Navigation link to the terms and conditions that are assigned.
 
 ### [Remove-MgDeviceManagementTermAndConditionAssignment](Remove-MgDeviceManagementTermAndConditionAssignment.md)
-Delete navigation property assignments for deviceManagement
+The list of assignments for this T&C policy.
 
 ### [Remove-MgDeviceManagementTermAndConditionGroupAssignment](Remove-MgDeviceManagementTermAndConditionGroupAssignment.md)
-Delete navigation property groupAssignments for deviceManagement
+The list of group assignments for this T&C policy.
 
 ### [Remove-MgDeviceManagementTermAndConditionGroupAssignmentTermAndConditionByRef](Remove-MgDeviceManagementTermAndConditionGroupAssignmentTermAndConditionByRef.md)
-Delete ref of navigation property termsAndConditions for deviceManagement
+Navigation link to the terms and conditions that are assigned.
 
 ### [Remove-MgDeviceManagementUserPfxCertificate](Remove-MgDeviceManagementUserPfxCertificate.md)
-Delete navigation property userPfxCertificates for deviceManagement
+Collection of PFX certificates associated with a user.
+
+### [Remove-MgDeviceManagementVirtualEndpointDeviceImage](Remove-MgDeviceManagementVirtualEndpointDeviceImage.md)
+The image resource on cloud PC.
+
+### [Remove-MgDeviceManagementVirtualEndpointOnPremisesConnection](Remove-MgDeviceManagementVirtualEndpointOnPremisesConnection.md)
+A defined collection of Azure resource information that can be used to establish on-premises network connectivity for cloud PCs.
+
+### [Remove-MgDeviceManagementVirtualEndpointProvisioningPolicy](Remove-MgDeviceManagementVirtualEndpointProvisioningPolicy.md)
+Cloud PC provisioning policy.
+
+### [Remove-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment](Remove-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment.md)
+A defined collection of provisioning policy assignments.
+Represents the set of Microsoft 365 groups and security groups in Azure AD that have provisioning policy assigned.
+Returned only on $expand.
+See an example of getting the assignments relationship.
+
+### [Remove-MgDeviceManagementVirtualEndpointUserSetting](Remove-MgDeviceManagementVirtualEndpointUserSetting.md)
+Cloud PC user settings.
+
+### [Remove-MgDeviceManagementVirtualEndpointUserSettingAssignment](Remove-MgDeviceManagementVirtualEndpointUserSettingAssignment.md)
+Represents the set of Microsoft 365 groups and security groups in Azure AD that have cloudPCUserSetting assigned.
+Returned only on $expand.
+For an example, see Get cloudPcUserSettingample.
 
 ### [Set-MgDeviceManagementGroupPolicyCategoryDefinitionFileByRef](Set-MgDeviceManagementGroupPolicyCategoryDefinitionFileByRef.md)
-Update the ref of navigation property definitionFile in deviceManagement
+The id of the definition file the category came from
 
 ### [Set-MgDeviceManagementGroupPolicyCategoryParentByRef](Set-MgDeviceManagementGroupPolicyCategoryParentByRef.md)
-Update the ref of navigation property parent in deviceManagement
+The parent category
 
 ### [Set-MgDeviceManagementGroupPolicyDefinitionCategoryByRef](Set-MgDeviceManagementGroupPolicyDefinitionCategoryByRef.md)
-Update the ref of navigation property category in deviceManagement
+The group policy category associated with the definition.
 
 ### [Set-MgDeviceManagementGroupPolicyDefinitionDefinitionFileByRef](Set-MgDeviceManagementGroupPolicyDefinitionDefinitionFileByRef.md)
-Update the ref of navigation property definitionFile in deviceManagement
+The group policy file associated with the definition.
 
 ### [Set-MgDeviceManagementGroupPolicyDefinitionPresentationDefinitionByRef](Set-MgDeviceManagementGroupPolicyDefinitionPresentationDefinitionByRef.md)
-Update the ref of navigation property definition in deviceManagement
+The group policy definition associated with the presentation.
 
 ### [Set-MgDeviceManagementRoleDefinitionRoleAssignmentRoleDefinitionByRef](Set-MgDeviceManagementRoleDefinitionRoleAssignmentRoleDefinitionByRef.md)
-Update the ref of navigation property roleDefinition in deviceManagement
+Role definition this assignment is part of.
 
 ### [Set-MgDeviceManagementTermAndConditionAcceptanceStatusesTermAndConditionByRef](Set-MgDeviceManagementTermAndConditionAcceptanceStatusesTermAndConditionByRef.md)
-Update the ref of navigation property termsAndConditions in deviceManagement
+Navigation link to the terms and conditions that are assigned.
 
 ### [Set-MgDeviceManagementTermAndConditionGroupAssignmentTermAndConditionByRef](Set-MgDeviceManagementTermAndConditionGroupAssignmentTermAndConditionByRef.md)
-Update the ref of navigation property termsAndConditions in deviceManagement
+Navigation link to the terms and conditions that are assigned.
 
 ### [Update-MgDeviceManagementApplePushNotificationCertificate](Update-MgDeviceManagementApplePushNotificationCertificate.md)
-Update the navigation property applePushNotificationCertificate in deviceManagement
+Apple push notification certificate.
 
 ### [Update-MgDeviceManagementAuditEvent](Update-MgDeviceManagementAuditEvent.md)
-Update the navigation property auditEvents in deviceManagement
+The Audit Events
 
 ### [Update-MgDeviceManagementCartToClassAssociation](Update-MgDeviceManagementCartToClassAssociation.md)
-Update the navigation property cartToClassAssociations in deviceManagement
+The Cart To Class Associations.
 
 ### [Update-MgDeviceManagementComanagementEligibleDevice](Update-MgDeviceManagementComanagementEligibleDevice.md)
-Update the navigation property comanagementEligibleDevices in deviceManagement
+The list of co-management eligible devices report
 
 ### [Update-MgDeviceManagementComplianceManagementPartner](Update-MgDeviceManagementComplianceManagementPartner.md)
-Update the navigation property complianceManagementPartners in deviceManagement
+The list of Compliance Management Partners configured by the tenant.
 
 ### [Update-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState](Update-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState.md)
-Update the navigation property deviceConfigurationsAllManagedDeviceCertificateStates in deviceManagement
+Summary of all certificates for all devices.
 
 ### [Update-MgDeviceManagementDeviceConfigurationRestrictedAppViolation](Update-MgDeviceManagementDeviceConfigurationRestrictedAppViolation.md)
-Update the navigation property deviceConfigurationRestrictedAppsViolations in deviceManagement
+Restricted apps violations for this account.
 
 ### [Update-MgDeviceManagementDomainJoinConnector](Update-MgDeviceManagementDomainJoinConnector.md)
-Update the navigation property domainJoinConnectors in deviceManagement
+A list of connector objects.
 
 ### [Update-MgDeviceManagementExchangeConnector](Update-MgDeviceManagementExchangeConnector.md)
-Update the navigation property exchangeConnectors in deviceManagement
+The list of Exchange Connectors configured by the tenant.
 
 ### [Update-MgDeviceManagementExchangeOnPremisPolicy](Update-MgDeviceManagementExchangeOnPremisPolicy.md)
-Update the navigation property exchangeOnPremisesPolicies in deviceManagement
+The list of Exchange On Premisis policies configured by the tenant.
 
 ### [Update-MgDeviceManagementExchangeOnPremisPolicyConditionalAccessSetting](Update-MgDeviceManagementExchangeOnPremisPolicyConditionalAccessSetting.md)
-Update the navigation property conditionalAccessSettings in deviceManagement
+The Exchange on premises conditional access settings.
+On premises conditional access will require devices to be both enrolled and compliant for mail access
 
 ### [Update-MgDeviceManagementGroupPolicyCategory](Update-MgDeviceManagementGroupPolicyCategory.md)
-Update the navigation property groupPolicyCategories in deviceManagement
+The available group policy categories for this account.
 
 ### [Update-MgDeviceManagementGroupPolicyDefinition](Update-MgDeviceManagementGroupPolicyDefinition.md)
-Update the navigation property groupPolicyDefinitions in deviceManagement
+The available group policy definitions for this account.
 
 ### [Update-MgDeviceManagementGroupPolicyDefinitionFile](Update-MgDeviceManagementGroupPolicyDefinitionFile.md)
-Update the navigation property groupPolicyDefinitionFiles in deviceManagement
+The available group policy definition files for this account.
 
 ### [Update-MgDeviceManagementGroupPolicyDefinitionPresentation](Update-MgDeviceManagementGroupPolicyDefinitionPresentation.md)
-Update the navigation property presentations in deviceManagement
+The group policy presentations associated with the definition.
 
 ### [Update-MgDeviceManagementGroupPolicyMigrationReport](Update-MgDeviceManagementGroupPolicyMigrationReport.md)
-Update the navigation property groupPolicyMigrationReports in deviceManagement
+A list of Group Policy migration reports.
 
 ### [Update-MgDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping](Update-MgDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping.md)
-Update the navigation property groupPolicySettingMappings in deviceManagement
+A list of group policy settings to MDM/Intune mappings.
 
 ### [Update-MgDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension](Update-MgDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension.md)
-Update the navigation property unsupportedGroupPolicyExtensions in deviceManagement
+A list of unsupported group policy extensions inside the Group Policy Object.
 
 ### [Update-MgDeviceManagementGroupPolicyObjectFile](Update-MgDeviceManagementGroupPolicyObjectFile.md)
-Update the navigation property groupPolicyObjectFiles in deviceManagement
+A list of Group Policy Object files uploaded.
 
 ### [Update-MgDeviceManagementGroupPolicyUploadedDefinitionFile](Update-MgDeviceManagementGroupPolicyUploadedDefinitionFile.md)
-Update the navigation property groupPolicyUploadedDefinitionFiles in deviceManagement
+The available group policy uploaded definition files for this account.
 
 ### [Update-MgDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation](Update-MgDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation.md)
-Update the navigation property groupPolicyOperations in deviceManagement
+The list of operations on the uploaded ADMX file.
 
 ### [Update-MgDeviceManagementIntuneBrandingProfile](Update-MgDeviceManagementIntuneBrandingProfile.md)
-Update the navigation property intuneBrandingProfiles in deviceManagement
+Intune branding profiles targeted to AAD groups
 
 ### [Update-MgDeviceManagementIntuneBrandingProfileAssignment](Update-MgDeviceManagementIntuneBrandingProfileAssignment.md)
-Update the navigation property assignments in deviceManagement
+The list of group assignments for the branding profile
 
 ### [Update-MgDeviceManagementIoUpdateStatuses](Update-MgDeviceManagementIoUpdateStatuses.md)
-Update the navigation property iosUpdateStatuses in deviceManagement
+The IOS software update installation statuses for this account.
 
 ### [Update-MgDeviceManagementMobileThreatDefenseConnector](Update-MgDeviceManagementMobileThreatDefenseConnector.md)
-Update the navigation property mobileThreatDefenseConnectors in deviceManagement
+The list of Mobile threat Defense connectors configured by the tenant.
 
 ### [Update-MgDeviceManagementNdeConnector](Update-MgDeviceManagementNdeConnector.md)
-Update the navigation property ndesConnectors in deviceManagement
+The collection of Ndes connectors for this account.
 
 ### [Update-MgDeviceManagementPartner](Update-MgDeviceManagementPartner.md)
-Update the navigation property deviceManagementPartners in deviceManagement
+The list of Device Management Partners configured by the tenant.
 
 ### [Update-MgDeviceManagementRemoteAssistancePartner](Update-MgDeviceManagementRemoteAssistancePartner.md)
-Update the navigation property remoteAssistancePartners in deviceManagement
+The remote assist partners.
 
 ### [Update-MgDeviceManagementResourceOperation](Update-MgDeviceManagementResourceOperation.md)
-Update the navigation property resourceOperations in deviceManagement
+The Resource Operations.
 
 ### [Update-MgDeviceManagementRoleAssignment](Update-MgDeviceManagementRoleAssignment.md)
-Update the navigation property roleAssignments in deviceManagement
+The Role Assignments.
 
 ### [Update-MgDeviceManagementRoleDefinition](Update-MgDeviceManagementRoleDefinition.md)
-Update the navigation property roleDefinitions in deviceManagement
+The Role Definitions.
 
 ### [Update-MgDeviceManagementRoleDefinitionRoleAssignment](Update-MgDeviceManagementRoleDefinitionRoleAssignment.md)
-Update the navigation property roleAssignments in deviceManagement
+List of Role assignments for this role definition.
 
 ### [Update-MgDeviceManagementRoleScopeTag](Update-MgDeviceManagementRoleScopeTag.md)
-Update the navigation property roleScopeTags in deviceManagement
+The Role Scope Tags.
 
 ### [Update-MgDeviceManagementRoleScopeTagAssignment](Update-MgDeviceManagementRoleScopeTagAssignment.md)
-Update the navigation property assignments in deviceManagement
+The list of assignments for this Role Scope Tag.
 
 ### [Update-MgDeviceManagementTelecomExpenseManagementPartner](Update-MgDeviceManagementTelecomExpenseManagementPartner.md)
-Update the navigation property telecomExpenseManagementPartners in deviceManagement
+The telecom expense management partners.
 
 ### [Update-MgDeviceManagementTermAndCondition](Update-MgDeviceManagementTermAndCondition.md)
-Update the navigation property termsAndConditions in deviceManagement
+The terms and conditions associated with device management of the company.
 
 ### [Update-MgDeviceManagementTermAndConditionAcceptanceStatuses](Update-MgDeviceManagementTermAndConditionAcceptanceStatuses.md)
-Update the navigation property acceptanceStatuses in deviceManagement
+The list of acceptance statuses for this T&C policy.
 
 ### [Update-MgDeviceManagementTermAndConditionAssignment](Update-MgDeviceManagementTermAndConditionAssignment.md)
-Update the navigation property assignments in deviceManagement
+The list of assignments for this T&C policy.
 
 ### [Update-MgDeviceManagementTermAndConditionGroupAssignment](Update-MgDeviceManagementTermAndConditionGroupAssignment.md)
-Update the navigation property groupAssignments in deviceManagement
+The list of group assignments for this T&C policy.
 
 ### [Update-MgDeviceManagementUserPfxCertificate](Update-MgDeviceManagementUserPfxCertificate.md)
-Update the navigation property userPfxCertificates in deviceManagement
+Collection of PFX certificates associated with a user.
+
+### [Update-MgDeviceManagementVirtualEndpointDeviceImage](Update-MgDeviceManagementVirtualEndpointDeviceImage.md)
+The image resource on cloud PC.
+
+### [Update-MgDeviceManagementVirtualEndpointOnPremisesConnection](Update-MgDeviceManagementVirtualEndpointOnPremisesConnection.md)
+A defined collection of Azure resource information that can be used to establish on-premises network connectivity for cloud PCs.
+
+### [Update-MgDeviceManagementVirtualEndpointProvisioningPolicy](Update-MgDeviceManagementVirtualEndpointProvisioningPolicy.md)
+Cloud PC provisioning policy.
+
+### [Update-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment](Update-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment.md)
+A defined collection of provisioning policy assignments.
+Represents the set of Microsoft 365 groups and security groups in Azure AD that have provisioning policy assigned.
+Returned only on $expand.
+See an example of getting the assignments relationship.
+
+### [Update-MgDeviceManagementVirtualEndpointUserSetting](Update-MgDeviceManagementVirtualEndpointUserSetting.md)
+Cloud PC user settings.
+
+### [Update-MgDeviceManagementVirtualEndpointUserSettingAssignment](Update-MgDeviceManagementVirtualEndpointUserSettingAssignment.md)
+Represents the set of Microsoft 365 groups and security groups in Azure AD that have cloudPCUserSetting assigned.
+Returned only on $expand.
+For an example, see Get cloudPcUserSettingample.
 

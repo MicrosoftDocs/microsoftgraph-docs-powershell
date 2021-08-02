@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgServicePrincipalTokenLifetimePolicyByRef
 
 ## SYNOPSIS
-Get ref of tokenLifetimePolicies from servicePrincipals
+The tokenLifetimePolicies assigned to this service principal.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgServicePrincipalTokenLifetimePolicyByRef -ServicePrincipalId <String> [-Fi
 ```
 
 ## DESCRIPTION
-Get ref of tokenLifetimePolicies from servicePrincipals
+The tokenLifetimePolicies assigned to this service principal.
 
 ## EXAMPLES
 
@@ -169,7 +169,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

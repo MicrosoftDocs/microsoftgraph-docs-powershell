@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserContact
 
 ## SYNOPSIS
-Get contacts from users
+The user's contacts.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgUserContact -InputObject <IPersonalContactsIdentity> [-ExpandProperty <Str
 ```
 
 ## DESCRIPTION
-Get contacts from users
+The user's contacts.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -241,11 +245,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPersonalContactsIdentity
-
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContact
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContact1
 ## NOTES
 
 ALIASES

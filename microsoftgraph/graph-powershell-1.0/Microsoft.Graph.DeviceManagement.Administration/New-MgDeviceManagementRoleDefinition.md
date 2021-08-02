@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementRoleDefinition
 
 ## SYNOPSIS
-Create new navigation property to roleDefinitions for deviceManagement
+The Role Definitions.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ New-MgDeviceManagementRoleDefinition -BodyParameter <IMicrosoftGraphRoleDefiniti
 ```
 
 ## DESCRIPTION
-Create new navigation property to roleDefinitions for deviceManagement
+The Role Definitions.
 
 ## EXAMPLES
 
@@ -200,11 +200,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleDefinition
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleDefinition
-
 ## NOTES
 
 ALIASES

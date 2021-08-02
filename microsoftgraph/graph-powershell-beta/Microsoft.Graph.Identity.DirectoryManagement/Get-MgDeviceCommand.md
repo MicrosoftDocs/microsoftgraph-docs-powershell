@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceCommand
 
 ## SYNOPSIS
-Get commands from devices
+Set of commands sent to this device.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceCommand -InputObject <IIdentityDirectoryManagementIdentity> [-Expand
 ```
 
 ## DESCRIPTION
-Get commands from devices
+Set of commands sent to this device.
 
 ## EXAMPLES
 
@@ -241,11 +241,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCommand
-
 ## NOTES
 
 ALIASES

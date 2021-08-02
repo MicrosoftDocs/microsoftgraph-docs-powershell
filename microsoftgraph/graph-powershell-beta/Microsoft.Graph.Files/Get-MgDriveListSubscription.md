@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDriveListSubscription
 
 ## SYNOPSIS
-Get subscriptions from drives
+The set of subscriptions on the list.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDriveListSubscription -InputObject <IFilesIdentity> [-ExpandProperty <Stri
 ```
 
 ## DESCRIPTION
-Get subscriptions from drives
+The set of subscriptions on the list.
 
 ## EXAMPLES
 
@@ -241,11 +241,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSubscription
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgOnPremisePublishingProfileConnector
 
 ## SYNOPSIS
-Delete navigation property connectors for onPremisesPublishingProfiles
+List of existing connector objects for applications published through Application Proxy.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +27,9 @@ Remove-MgOnPremisePublishingProfileConnector -InputObject <IApplicationsIdentity
 ```
 
 ## DESCRIPTION
-Delete navigation property connectors for onPremisesPublishingProfiles
+List of existing connector objects for applications published through Application Proxy.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -144,11 +148,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

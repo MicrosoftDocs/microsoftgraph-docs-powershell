@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgSiteListItemVersion
 
 ## SYNOPSIS
-Update the navigation property versions in sites
+The list of previous versions of the list item.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Update-MgSiteListItemVersion -InputObject <ISitesIdentity> -BodyParameter <IMicr
 ```
 
 ## DESCRIPTION
-Update the navigation property versions in sites
+The list of previous versions of the list item.
 
 ## EXAMPLES
 
@@ -284,13 +284,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphListItemVersion
-
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

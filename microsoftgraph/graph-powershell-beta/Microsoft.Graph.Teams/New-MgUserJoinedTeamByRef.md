@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgUserJoinedTeamByRef
 
 ## SYNOPSIS
-Create new navigation property ref to joinedTeams for users
+The Microsoft Teams teams that the user is a member of.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -36,7 +38,9 @@ New-MgUserJoinedTeamByRef -InputObject <ITeamsIdentity> -BodyParameter <Hashtabl
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to joinedTeams for users
+The Microsoft Teams teams that the user is a member of.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -140,13 +144,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths8Nn7HdUsersUserIdJoinedteamsRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

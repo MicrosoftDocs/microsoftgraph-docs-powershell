@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgUserCreatedObjectByRef
 
 ## SYNOPSIS
-Create new navigation property ref to createdObjects for users
+Directory objects that were created by the user.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -37,7 +39,9 @@ New-MgUserCreatedObjectByRef -InputObject <IUsersIdentity> -BodyParameter <Hasht
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to createdObjects for users
+Directory objects that were created by the user.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -141,13 +145,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPathsJuuflzUsersUserIdCreatedobjectsRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

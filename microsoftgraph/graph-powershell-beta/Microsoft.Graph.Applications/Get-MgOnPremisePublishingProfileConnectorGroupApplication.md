@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgOnPremisePublishingProfileConnectorGroupApplication
 
 ## SYNOPSIS
-Get applications from onPremisesPublishingProfiles
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -20,7 +21,8 @@ Get-MgOnPremisePublishingProfileConnectorGroupApplication -ConnectorGroupId <Str
 ```
 
 ## DESCRIPTION
-Get applications from onPremisesPublishingProfiles
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -215,7 +217,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApplication
-
 ## NOTES
 
 ALIASES

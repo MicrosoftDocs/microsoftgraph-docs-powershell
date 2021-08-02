@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgDirectoryFeatureRolloutPolicyApplyTo
 
 ## SYNOPSIS
-Update the navigation property appliesTo in directory
+Nullable.
+Specifies a list of directoryObjects that feature is enabled for.
 
 ## SYNTAX
 
@@ -39,7 +40,8 @@ Update-MgDirectoryFeatureRolloutPolicyApplyTo -InputObject <IIdentityDirectoryMa
 ```
 
 ## DESCRIPTION
-Update the navigation property appliesTo in directory
+Nullable.
+Specifies a list of directoryObjects that feature is enabled for.
 
 ## EXAMPLES
 
@@ -205,13 +207,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

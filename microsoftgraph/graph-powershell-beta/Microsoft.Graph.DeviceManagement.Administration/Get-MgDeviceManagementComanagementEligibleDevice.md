@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementComanagementEligibleDevice
 
 ## SYNOPSIS
-Get comanagementEligibleDevices from deviceManagement
+The list of co-management eligible devices report
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementComanagementEligibleDevice -InputObject <IDeviceManagement
 ```
 
 ## DESCRIPTION
-Get comanagementEligibleDevices from deviceManagement
+The list of co-management eligible devices report
 
 ## EXAMPLES
 
@@ -226,11 +226,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComanagementEligibleDevice
-
 ## NOTES
 
 ALIASES
@@ -243,6 +241,14 @@ To create the parameters described below, construct a hash table containing the 
 INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[AuditEventId <String>]`: key: id of auditEvent
   - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
+  - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
+  - `[CloudPcDeviceImageId <String>]`: key: id of cloudPcDeviceImage
+  - `[CloudPcId <String>]`: key: id of cloudPC
+  - `[CloudPcOnPremisesConnectionId <String>]`: key: id of cloudPcOnPremisesConnection
+  - `[CloudPcProvisioningPolicyAssignmentId <String>]`: key: id of cloudPcProvisioningPolicyAssignment
+  - `[CloudPcProvisioningPolicyId <String>]`: key: id of cloudPcProvisioningPolicy
+  - `[CloudPcUserSettingAssignmentId <String>]`: key: id of cloudPcUserSettingAssignment
+  - `[CloudPcUserSettingId <String>]`: key: id of cloudPcUserSetting
   - `[ComanagementEligibleDeviceId <String>]`: key: id of comanagementEligibleDevice
   - `[ComplianceManagementPartnerId <String>]`: key: id of complianceManagementPartner
   - `[DeviceAndAppManagementRoleAssignmentId <String>]`: key: id of deviceAndAppManagementRoleAssignment

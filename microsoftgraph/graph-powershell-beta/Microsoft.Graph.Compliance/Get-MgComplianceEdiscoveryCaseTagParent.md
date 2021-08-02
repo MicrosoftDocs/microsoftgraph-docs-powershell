@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgComplianceEdiscoveryCaseTagParent
 
 ## SYNOPSIS
-Get parent from compliance
+Returns the parent tag of the specified tag.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgComplianceEdiscoveryCaseTagParent -InputObject <IComplianceIdentity> [-Exp
 ```
 
 ## DESCRIPTION
-Get parent from compliance
+Returns the parent tag of the specified tag.
 
 ## EXAMPLES
 
@@ -113,11 +113,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryTag
-
 ## NOTES
 
 ALIASES

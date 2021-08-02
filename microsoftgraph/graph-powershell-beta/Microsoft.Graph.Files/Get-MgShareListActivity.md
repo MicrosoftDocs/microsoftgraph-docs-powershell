@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgShareListActivity
 
 ## SYNOPSIS
-Get activities from shares
+The recent activities that took place within this list.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgShareListActivity -SharedDriveItemId <String> [-ExpandProperty <String[]>]
 ```
 
 ## DESCRIPTION
-Get activities from shares
+The recent activities that took place within this list.
 
 ## EXAMPLES
 
@@ -199,7 +199,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemActivityOld
-
 ## NOTES
 
 ALIASES

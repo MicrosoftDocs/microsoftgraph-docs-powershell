@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementCondition
 
 ## SYNOPSIS
-Create new navigation property to managementConditions for deviceManagement
+The management conditions associated with device management of the company.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ New-MgDeviceManagementCondition -BodyParameter <IMicrosoftGraphManagementConditi
 ```
 
 ## DESCRIPTION
-Create new navigation property to managementConditions for deviceManagement
+The management conditions associated with device management of the company.
 
 ## EXAMPLES
 
@@ -241,11 +241,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagementCondition
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagementCondition
-
 ## NOTES
 
 ALIASES

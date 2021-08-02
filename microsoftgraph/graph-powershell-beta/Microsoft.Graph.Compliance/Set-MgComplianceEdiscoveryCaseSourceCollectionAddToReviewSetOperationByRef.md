@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgComplianceEdiscoveryCaseSourceCollectionAddToReviewSetOperationByRef
 
 ## SYNOPSIS
-Update the ref of navigation property addToReviewSetOperation in compliance
+Adds the results of the sourceCollection to the specified reviewSet.
 
 ## SYNTAX
 
@@ -38,7 +38,7 @@ Set-MgComplianceEdiscoveryCaseSourceCollectionAddToReviewSetOperationByRef -Inpu
 ```
 
 ## DESCRIPTION
-Update the ref of navigation property addToReviewSetOperation in compliance
+Adds the results of the sourceCollection to the specified reviewSet.
 
 ## EXAMPLES
 
@@ -172,13 +172,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

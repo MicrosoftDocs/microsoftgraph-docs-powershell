@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementCategory
 
 ## SYNOPSIS
-Create new navigation property to categories for deviceManagement
+The available categories
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ New-MgDeviceManagementCategory -BodyParameter <IMicrosoftGraphDeviceManagementSe
 ```
 
 ## DESCRIPTION
-Create new navigation property to categories for deviceManagement
+The available categories
 
 ## EXAMPLES
 
@@ -162,11 +162,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementSettingCategory
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementSettingCategory
-
 ## NOTES
 
 ALIASES

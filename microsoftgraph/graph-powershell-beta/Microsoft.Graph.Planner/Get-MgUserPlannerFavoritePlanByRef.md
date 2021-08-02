@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserPlannerFavoritePlanByRef
 
 ## SYNOPSIS
-Get ref of favoritePlans from users
+Read-only.
+Nullable.
+Returns the plannerPlans that the user marked as favorites.
 
 ## SYNTAX
 
@@ -18,7 +20,9 @@ Get-MgUserPlannerFavoritePlanByRef -UserId <String> [-Filter <String>] [-Search 
 ```
 
 ## DESCRIPTION
-Get ref of favoritePlans from users
+Read-only.
+Nullable.
+Returns the plannerPlans that the user marked as favorites.
 
 ## EXAMPLES
 
@@ -168,7 +172,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

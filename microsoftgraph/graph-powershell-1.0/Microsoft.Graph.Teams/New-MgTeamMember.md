@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgTeamMember
 
 ## SYNOPSIS
-Create new navigation property to members for teams
+Members and owners of the team.
 
 ## SYNTAX
 
@@ -38,7 +38,7 @@ New-MgTeamMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphCo
 ```
 
 ## DESCRIPTION
-Create new navigation property to members for teams
+Members and owners of the team.
 
 ## EXAMPLES
 
@@ -204,13 +204,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversationMember
-
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversationMember
-
 ## NOTES
 
 ALIASES

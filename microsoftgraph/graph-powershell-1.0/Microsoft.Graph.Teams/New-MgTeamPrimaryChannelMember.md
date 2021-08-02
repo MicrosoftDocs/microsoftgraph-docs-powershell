@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgTeamPrimaryChannelMember
 
 ## SYNOPSIS
-Create new navigation property to members for teams
+A collection of membership records associated with the channel.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ New-MgTeamPrimaryChannelMember -InputObject <ITeamsIdentity> -BodyParameter <IMi
 ```
 
 ## DESCRIPTION
-Create new navigation property to members for teams
+A collection of membership records associated with the channel.
 
 ## EXAMPLES
 
@@ -205,13 +205,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversationMember
-
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversationMember
-
 ## NOTES
 
 ALIASES

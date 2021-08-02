@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgTeamOperation
 
 ## SYNOPSIS
-Delete navigation property operations for teams
+The async operations that ran or are running on this team.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgTeamOperation -InputObject <ITeamsIdentity> [-IfMatch <String>] [-PassT
 ```
 
 ## DESCRIPTION
-Delete navigation property operations for teams
+The async operations that ran or are running on this team.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

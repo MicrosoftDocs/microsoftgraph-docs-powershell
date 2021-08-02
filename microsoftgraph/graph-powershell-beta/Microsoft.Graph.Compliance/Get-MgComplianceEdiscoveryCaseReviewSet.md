@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgComplianceEdiscoveryCaseReviewSet
 
 ## SYNOPSIS
-Get reviewSets from compliance
+Returns a list of reviewSet objects in the case.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgComplianceEdiscoveryCaseReviewSet -InputObject <IComplianceIdentity> [-Exp
 ```
 
 ## DESCRIPTION
-Get reviewSets from compliance
+Returns a list of reviewSet objects in the case.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -241,11 +245,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryReviewSet
-
 ## NOTES
 
 ALIASES

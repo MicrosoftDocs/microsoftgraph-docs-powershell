@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteListActivity
 
 ## SYNOPSIS
-Get activities from sites
+The recent activities that took place within this list.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgSiteListActivity -ListId <String> -SiteId <String> [-ExpandProperty <Strin
 ```
 
 ## DESCRIPTION
-Get activities from sites
+The recent activities that took place within this list.
 
 ## EXAMPLES
 
@@ -214,7 +214,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemActivityOld
-
 ## NOTES
 
 ALIASES

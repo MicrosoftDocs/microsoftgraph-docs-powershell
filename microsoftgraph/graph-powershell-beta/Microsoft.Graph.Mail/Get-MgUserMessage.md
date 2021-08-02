@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserMessage
 
 ## SYNOPSIS
-Get messages from users
+The messages in a mailbox or folder.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgUserMessage -InputObject <IMailIdentity> [-ExpandProperty <String[]>] [-Pr
 ```
 
 ## DESCRIPTION
-Get messages from users
+The messages in a mailbox or folder.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -241,11 +245,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMailIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMessage1
-
 ## NOTES
 
 ALIASES

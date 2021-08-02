@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgSharePermission
 
 ## SYNOPSIS
-Update the navigation property permission in shares
+Used to access the permission representing the underlying sharing link
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Update-MgSharePermission -InputObject <IFilesIdentity> -BodyParameter <IMicrosof
 ```
 
 ## DESCRIPTION
-Update the navigation property permission in shares
+Used to access the permission representing the underlying sharing link
 
 ## EXAMPLES
 
@@ -328,13 +328,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermission1
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

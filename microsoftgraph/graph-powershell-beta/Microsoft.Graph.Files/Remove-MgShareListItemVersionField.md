@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgShareListItemVersionField
 
 ## SYNOPSIS
-Delete navigation property fields for shares
+A collection of the fields and values for this version of the list item.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Remove-MgShareListItemVersionField -InputObject <IFilesIdentity> [-IfMatch <Stri
 ```
 
 ## DESCRIPTION
-Delete navigation property fields for shares
+A collection of the fields and values for this version of the list item.
 
 ## EXAMPLES
 
@@ -171,11 +171,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

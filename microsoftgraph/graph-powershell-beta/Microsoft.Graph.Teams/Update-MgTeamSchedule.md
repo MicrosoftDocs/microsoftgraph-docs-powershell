@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgTeamSchedule
 
 ## SYNOPSIS
-Update the navigation property schedule in teams
+The schedule of shifts for this team.
 
 ## SYNTAX
 
@@ -55,7 +55,7 @@ Update-MgTeamSchedule -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGr
 ```
 
 ## DESCRIPTION
-Update the navigation property schedule in teams
+The schedule of shifts for this team.
 
 ## EXAMPLES
 
@@ -518,13 +518,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSchedule
-
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -659,12 +656,12 @@ BODYPARAMETER <IMicrosoftGraphSchedule>: schedule
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[Id <String>]`: Read-only.
-    - `[Breaks <IMicrosoftGraphTimeCardBreak[]>]`: 
-      - `[BreakId <String>]`: 
+    - `[Breaks <IMicrosoftGraphTimeCardBreak[]>]`: The list of breaks associated with the timeCard.
+      - `[BreakId <String>]`: ID of the timeCardBreak.
       - `[End <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[AtApprovedLocation <Boolean?>]`: 
-        - `[DateTime <DateTime?>]`: 
+        - `[AtApprovedLocation <Boolean?>]`: Indicates whether the entry was recorded at the approved location.
+        - `[DateTime <DateTime?>]`: The time the entry is recorded.
         - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Content <String>]`: The content of the item.
@@ -677,11 +674,11 @@ BODYPARAMETER <IMicrosoftGraphSchedule>: schedule
     - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
     - `[OriginalEntry <IMicrosoftGraphTimeCardEntry>]`: timeCardEntry
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Breaks <IMicrosoftGraphTimeCardBreak[]>]`: 
+      - `[Breaks <IMicrosoftGraphTimeCardBreak[]>]`: The list of breaks associated with the timeCard.
       - `[ClockInEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
       - `[ClockOutEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
     - `[State <String>]`: timeCardState
-    - `[UserId <String>]`: 
+    - `[UserId <String>]`: User ID to which  the timeCard belongs.
   - `[TimeClockEnabled <Boolean?>]`: Indicates whether time clock is enabled for the schedule.
   - `[TimeClockSettings <IMicrosoftGraphTimeClockSettings>]`: timeClockSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -936,12 +933,12 @@ TIMECARDS <IMicrosoftGraphTimeCard[]>: .
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Id <String>]`: Read-only.
-  - `[Breaks <IMicrosoftGraphTimeCardBreak[]>]`: 
-    - `[BreakId <String>]`: 
+  - `[Breaks <IMicrosoftGraphTimeCardBreak[]>]`: The list of breaks associated with the timeCard.
+    - `[BreakId <String>]`: ID of the timeCardBreak.
     - `[End <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[AtApprovedLocation <Boolean?>]`: 
-      - `[DateTime <DateTime?>]`: 
+      - `[AtApprovedLocation <Boolean?>]`: Indicates whether the entry was recorded at the approved location.
+      - `[DateTime <DateTime?>]`: The time the entry is recorded.
       - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Content <String>]`: The content of the item.
@@ -954,11 +951,11 @@ TIMECARDS <IMicrosoftGraphTimeCard[]>: .
   - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
   - `[OriginalEntry <IMicrosoftGraphTimeCardEntry>]`: timeCardEntry
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Breaks <IMicrosoftGraphTimeCardBreak[]>]`: 
+    - `[Breaks <IMicrosoftGraphTimeCardBreak[]>]`: The list of breaks associated with the timeCard.
     - `[ClockInEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
     - `[ClockOutEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
   - `[State <String>]`: timeCardState
-  - `[UserId <String>]`: 
+  - `[UserId <String>]`: User ID to which  the timeCard belongs.
 
 TIMECLOCKSETTINGS <IMicrosoftGraphTimeClockSettings>: timeClockSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

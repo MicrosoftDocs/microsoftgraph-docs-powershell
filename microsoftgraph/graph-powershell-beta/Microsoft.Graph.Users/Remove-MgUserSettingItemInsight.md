@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgUserSettingItemInsight
 
 ## SYNOPSIS
-Delete navigation property itemInsights for users
+The user's settings for the visibility of meeting hour insights, and insights derived between a user and other items in Microsoft 365, such as documents or sites.
+Get userInsightsSettings through this navigation property.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgUserSettingItemInsight -InputObject <IUsersIdentity> [-IfMatch <String>
 ```
 
 ## DESCRIPTION
-Delete navigation property itemInsights for users
+The user's settings for the visibility of meeting hour insights, and insights derived between a user and other items in Microsoft 365, such as documents or sites.
+Get userInsightsSettings through this navigation property.
 
 ## EXAMPLES
 
@@ -129,11 +131,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

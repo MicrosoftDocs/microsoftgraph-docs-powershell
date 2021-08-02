@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgApplicationTokenLifetimePolicyByRef
 
 ## SYNOPSIS
-Create new navigation property ref to tokenLifetimePolicies for applications
+The tokenLifetimePolicies assigned to this application.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ New-MgApplicationTokenLifetimePolicyByRef -InputObject <IApplicationsIdentity> -
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to tokenLifetimePolicies for applications
+The tokenLifetimePolicies assigned to this application.
 
 ## EXAMPLES
 
@@ -141,13 +141,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPathsDs42X1ApplicationsApplicationIdTokenlifetimepoliciesRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

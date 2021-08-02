@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserTeamwork
 
 ## SYNOPSIS
-Get teamwork from users
+A container for Microsoft Teams features available for the user.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -24,7 +26,9 @@ Get-MgUserTeamwork -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-
 ```
 
 ## DESCRIPTION
-Get teamwork from users
+A container for Microsoft Teams features available for the user.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -97,11 +101,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserTeamwork1
-
 ## NOTES
 
 ALIASES

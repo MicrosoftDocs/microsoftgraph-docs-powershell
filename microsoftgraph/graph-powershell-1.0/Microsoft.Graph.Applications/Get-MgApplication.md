@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgApplication
 
 ## SYNOPSIS
-Get entity from applications by key
+Represents an Azure Active Directory object.
+The directoryObject type is the base type for many other directory entity types.
 
 ## SYNTAX
 
@@ -32,9 +33,37 @@ Get-MgApplication -InputObject <IApplicationsIdentity> [-ExpandProperty <String[
 ```
 
 ## DESCRIPTION
-Get entity from applications by key
+Represents an Azure Active Directory object.
+The directoryObject type is the base type for many other directory entity types.
 
 ## EXAMPLES
+
+### Example 1: Get a list of applications
+```powershell
+Get-MgApplication | 
+  Format-List Id, DisplayName, AppId, SignInAudience, PublisherDomain
+
+Id              : 8ea936e0-cb74-46c0-8408-d4614a596267
+DisplayName     : Test App
+AppId           : 39b09640-ec3e-44c9-b3de-f52db4e1cf66
+SignInAudience  : AzureADandPersonalMicrosoftAccount
+PublisherDomain : contoso.com
+```
+
+This examples gets a list of all the applications.
+
+### Example 2: Get an application by Id
+```powershell
+Get-MgApplication -Filter "AppId eq '39b09640-ec3e-44c9-b3de-f52db4e1cf66'" | 
+  Format-List Id, DisplayName, AppId, SignInAudience, PublisherDomain
+
+DisplayName     : Test App
+AppId           : 39b09640-ec3e-44c9-b3de-f52db4e1cf66
+SignInAudience  : AzureADandPersonalMicrosoftAccount
+PublisherDomain : contoso.com
+```
+
+This examples gets the application by the specified Id.
 
 ## PARAMETERS
 
@@ -70,6 +99,7 @@ Accept wildcard characters: False
 
 ### -ConsistencyLevel
 Indicates the requested consistency level.
+Documentation URL: https://developer.microsoft.com/en-us/office/blogs/microsoft-graph-advanced-queries-for-directory-objects-are-now-generally-available/
 
 ```yaml
 Type: String
@@ -241,11 +271,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApplication1
-
 ## NOTES
 
 ALIASES

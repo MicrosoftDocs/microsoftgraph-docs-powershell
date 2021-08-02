@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgGroupEndpoint
 
 ## SYNOPSIS
-Get endpoints from groups
+Endpoints for the group.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgGroupEndpoint -InputObject <IGroupsIdentity> [-ExpandProperty <String[]>] 
 ```
 
 ## DESCRIPTION
-Get endpoints from groups
+Endpoints for the group.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -241,11 +245,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEndpoint
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgCommunicationCallAudioRoutingGroup
 
 ## SYNOPSIS
-Update the navigation property audioRoutingGroups in communications
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -39,7 +40,8 @@ Update-MgCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicationsId
 ```
 
 ## DESCRIPTION
-Update the navigation property audioRoutingGroups in communications
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -234,13 +236,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAudioRoutingGroup
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

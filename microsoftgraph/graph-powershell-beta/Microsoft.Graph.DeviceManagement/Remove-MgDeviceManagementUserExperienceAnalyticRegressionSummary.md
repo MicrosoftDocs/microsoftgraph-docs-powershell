@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementUserExperienceAnalyticRegressionSummary
 
 ## SYNOPSIS
-Delete navigation property userExperienceAnalyticsRegressionSummary for deviceManagement
+User experience analytics regression summary
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Remove-MgDeviceManagementUserExperienceAnalyticRegressionSummary [-IfMatch <Stri
 ```
 
 ## DESCRIPTION
-Delete navigation property userExperienceAnalyticsRegressionSummary for deviceManagement
+User experience analytics regression summary
 
 ## EXAMPLES
 
@@ -93,7 +93,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

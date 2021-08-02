@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserProfilePosition
 
 ## SYNOPSIS
-Create new navigation property to positions for users
+Represents detailed information about work positions associated with a user's profile.
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ New-MgUserProfilePosition -InputObject <IPeopleIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Create new navigation property to positions for users
+Represents detailed information about work positions associated with a user's profile.
 
 ## EXAMPLES
 
@@ -369,13 +369,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWorkPosition
-
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWorkPosition
-
 ## NOTES
 
 ALIASES

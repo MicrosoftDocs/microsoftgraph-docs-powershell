@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgAppCatalogTeamAppDefinitionBot
 
 ## SYNOPSIS
-Delete navigation property bot for appCatalogs
+The details of the bot specified in the Teams app manifest.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgAppCatalogTeamAppDefinitionBot -InputObject <ITeamsIdentity> [-IfMatch 
 ```
 
 ## DESCRIPTION
-Delete navigation property bot for appCatalogs
+The details of the bot specified in the Teams app manifest.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

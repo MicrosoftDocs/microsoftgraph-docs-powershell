@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgEducationUserSchoolByRef
 
 ## SYNOPSIS
-Get ref of schools from education
+Schools to which the user belongs.
+Nullable.
 
 ## SYNTAX
 
@@ -18,7 +19,8 @@ Get-MgEducationUserSchoolByRef -EducationUserId <String> [-Filter <String>] [-Se
 ```
 
 ## DESCRIPTION
-Get ref of schools from education
+Schools to which the user belongs.
+Nullable.
 
 ## EXAMPLES
 
@@ -168,7 +170,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgPrintPrinterTaskTrigger
 
 ## SYNOPSIS
-Create new navigation property to taskTriggers for print
+A list of task triggers that are associated with the printer.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ New-MgPrintPrinterTaskTrigger -InputObject <IDevicesCloudPrintIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to taskTriggers for print
+A list of task triggers that are associated with the printer.
 
 ## EXAMPLES
 
@@ -190,13 +190,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintTaskTrigger1
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintTaskTrigger1
-
 ## NOTES
 
 ALIASES

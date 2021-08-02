@@ -8,11 +8,12 @@ schema: 2.0.0
 # Update-MgChatInstalledApp
 
 ## SYNOPSIS
-Update the navigation property installedApps in chats
+A collection of all the apps in the chat.
+Nullable.
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
 Update-MgChatInstalledApp -ChatId <String> -TeamsAppInstallationId <String> [-AdditionalProperties <Hashtable>]
  [-Id <String>] [-TeamsApp <IMicrosoftGraphTeamsApp1>]
@@ -20,38 +21,39 @@ Update-MgChatInstalledApp -ChatId <String> -TeamsAppInstallationId <String> [-Ad
  [<CommonParameters>]
 ```
 
-### Upgrade1
+### Upgrade
 ```
 Update-MgChatInstalledApp -ChatId <String> -TeamsAppInstallationId <String> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### Update1
+### Update
 ```
 Update-MgChatInstalledApp -ChatId <String> -TeamsAppInstallationId <String>
  -BodyParameter <IMicrosoftGraphTeamsAppInstallation1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpgradeViaIdentity1
+### UpgradeViaIdentity
 ```
 Update-MgChatInstalledApp -InputObject <ITeamsIdentity> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded1
+### UpdateViaIdentityExpanded
 ```
 Update-MgChatInstalledApp -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-TeamsApp <IMicrosoftGraphTeamsApp1>] [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition1>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### UpdateViaIdentity
 ```
 Update-MgChatInstalledApp -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeamsAppInstallation1>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property installedApps in chats
+A collection of all the apps in the chat.
+Nullable.
 
 ## EXAMPLES
 
@@ -62,7 +64,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -78,7 +80,7 @@ To construct, see NOTES section for BODYPARAMETER properties and create a hash t
 
 ```yaml
 Type: IMicrosoftGraphTeamsAppInstallation1
-Parameter Sets: Update1, UpdateViaIdentity1
+Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -93,7 +95,7 @@ key: id of chat
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, Upgrade1, Update1
+Parameter Sets: UpdateExpanded, Upgrade, Update
 Aliases:
 
 Required: True
@@ -108,7 +110,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -124,7 +126,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: UpgradeViaIdentity1, UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Parameter Sets: UpgradeViaIdentity, UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -155,7 +157,7 @@ To construct, see NOTES section for TEAMSAPP properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTeamsApp1
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -171,7 +173,7 @@ To construct, see NOTES section for TEAMSAPPDEFINITION properties and create a h
 
 ```yaml
 Type: IMicrosoftGraphTeamsAppDefinition1
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -186,7 +188,7 @@ key: id of teamsAppInstallation
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, Upgrade1, Update1
+Parameter Sets: UpdateExpanded, Upgrade, Update
 Aliases:
 
 Required: True
@@ -233,13 +235,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppInstallation1
-
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -273,7 +272,7 @@ BODYPARAMETER <IMicrosoftGraphTeamsAppInstallation1>: teamsAppInstallation
       - `[LastModifiedDateTime <DateTime?>]`: 
       - `[PublishingState <String>]`: teamsAppPublishingState
       - `[ShortDescription <String>]`: Short description of the application.
-      - `[TeamsAppId <String>]`: The id from the Teams App manifest.
+      - `[TeamsAppId <String>]`: The ID from the Teams app manifest.
       - `[Version <String>]`: The version number of the application.
     - `[DisplayName <String>]`: The name of the catalog app provided by the app developer in the Microsoft Teams zip app package.
     - `[DistributionMethod <String>]`: teamsAppDistributionMethod
@@ -332,7 +331,7 @@ TEAMSAPP <IMicrosoftGraphTeamsApp1>: teamsApp
     - `[LastModifiedDateTime <DateTime?>]`: 
     - `[PublishingState <String>]`: teamsAppPublishingState
     - `[ShortDescription <String>]`: Short description of the application.
-    - `[TeamsAppId <String>]`: The id from the Teams App manifest.
+    - `[TeamsAppId <String>]`: The ID from the Teams app manifest.
     - `[Version <String>]`: The version number of the application.
   - `[DisplayName <String>]`: The name of the catalog app provided by the app developer in the Microsoft Teams zip app package.
   - `[DistributionMethod <String>]`: teamsAppDistributionMethod
@@ -357,7 +356,7 @@ TEAMSAPPDEFINITION <IMicrosoftGraphTeamsAppDefinition1>: teamsAppDefinition
   - `[LastModifiedDateTime <DateTime?>]`: 
   - `[PublishingState <String>]`: teamsAppPublishingState
   - `[ShortDescription <String>]`: Short description of the application.
-  - `[TeamsAppId <String>]`: The id from the Teams App manifest.
+  - `[TeamsAppId <String>]`: The ID from the Teams app manifest.
   - `[Version <String>]`: The version number of the application.
 
 ## RELATED LINKS

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementAutopilotEvent
 
 ## SYNOPSIS
-Create new navigation property to autopilotEvents for deviceManagement
+The list of autopilot events for the tenant.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ New-MgDeviceManagementAutopilotEvent -BodyParameter <IMicrosoftGraphDeviceManage
 ```
 
 ## DESCRIPTION
-Create new navigation property to autopilotEvents for deviceManagement
+The list of autopilot events for the tenant.
 
 ## EXAMPLES
 
@@ -298,7 +298,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnrollmentState
-enrollmentState
+.
 
 ```yaml
 Type: String
@@ -530,11 +530,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementAutopilotEvent
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementAutopilotEvent
-
 ## NOTES
 
 ALIASES
@@ -562,7 +560,7 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagementAutopilotEvent>: Represents an Aut
   - `[DeviceSetupStatus <String>]`: windowsAutopilotDeploymentState
   - `[EnrollmentFailureDetails <String>]`: Enrollment failure details.
   - `[EnrollmentStartDateTime <DateTime?>]`: Device enrollment start date.
-  - `[EnrollmentState <String>]`: enrollmentState
+  - `[EnrollmentState <String>]`: 
   - `[EnrollmentType <String>]`: windowsAutopilotEnrollmentType
   - `[EventDateTime <DateTime?>]`: Time when the event occurred .
   - `[ManagedDeviceName <String>]`: Managed device name.

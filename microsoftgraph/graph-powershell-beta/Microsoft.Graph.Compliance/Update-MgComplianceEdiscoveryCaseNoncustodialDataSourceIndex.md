@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgComplianceEdiscoveryCaseNoncustodialDataSourceIndex
 
 ## SYNOPSIS
-Invoke action UpdateIndex
+Invoke action updateIndex
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Update-MgComplianceEdiscoveryCaseNoncustodialDataSourceIndex -InputObject <IComp
 ```
 
 ## DESCRIPTION
-Invoke action UpdateIndex
+Invoke action updateIndex
 
 ## EXAMPLES
 
@@ -129,11 +129,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

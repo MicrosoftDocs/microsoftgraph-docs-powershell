@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserMailFolderMessageRule
 
 ## SYNOPSIS
-Create new navigation property to messageRules for users
+The collection of rules that apply to the user's Inbox folder.
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ New-MgUserMailFolderMessageRule -InputObject <IMailIdentity> -BodyParameter <IMi
 ```
 
 ## DESCRIPTION
-Create new navigation property to messageRules for users
+The collection of rules that apply to the user's Inbox folder.
 
 ## EXAMPLES
 
@@ -301,13 +301,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMailIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMessageRule
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMessageRule
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgDomainVerificationDnsRecord
 
 ## SYNOPSIS
-Get verificationDnsRecords from domains
+DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Azure AD.
+Read-only, Nullable
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgDomainVerificationDnsRecord -InputObject <IIdentityDirectoryManagementIden
 ```
 
 ## DESCRIPTION
-Get verificationDnsRecords from domains
+DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Azure AD.
+Read-only, Nullable
 
 ## EXAMPLES
 
@@ -241,11 +243,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDomainDnsRecord
-
 ## NOTES
 
 ALIASES

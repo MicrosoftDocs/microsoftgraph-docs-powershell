@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgGroupThreadPost
 
 ## SYNOPSIS
-Update the navigation property posts in groups
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -97,7 +98,8 @@ Update-MgGroupThreadPost -InputObject <IGroupsIdentity> -BodyParameter <IMicroso
 ```
 
 ## DESCRIPTION
-Update the navigation property posts in groups
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -587,13 +589,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPost
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

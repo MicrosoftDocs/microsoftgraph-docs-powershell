@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementUserExperienceAnalyticRegressionSummaryManufacturerRegression
 
 ## SYNOPSIS
-Create new navigation property to manufacturerRegression for deviceManagement
+The metric values for the user experience analytics Manufacturer regression.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ New-MgDeviceManagementUserExperienceAnalyticRegressionSummaryManufacturerRegress
 ```
 
 ## DESCRIPTION
-Create new navigation property to manufacturerRegression for deviceManagement
+The metric values for the user experience analytics Manufacturer regression.
 
 ## EXAMPLES
 
@@ -145,11 +145,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsMetric
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsMetric
-
 ## NOTES
 
 ALIASES

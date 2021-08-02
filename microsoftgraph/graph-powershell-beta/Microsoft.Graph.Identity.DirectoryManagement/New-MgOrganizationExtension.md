@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgOrganizationExtension
 
 ## SYNOPSIS
-Create new navigation property to extensions for organization
+The collection of open extensions defined for the organization resource.
+Nullable.
 
 ## SYNTAX
 
@@ -37,7 +38,8 @@ New-MgOrganizationExtension -InputObject <IIdentityDirectoryManagementIdentity> 
 ```
 
 ## DESCRIPTION
-Create new navigation property to extensions for organization
+The collection of open extensions defined for the organization resource.
+Nullable.
 
 ## EXAMPLES
 
@@ -156,13 +158,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

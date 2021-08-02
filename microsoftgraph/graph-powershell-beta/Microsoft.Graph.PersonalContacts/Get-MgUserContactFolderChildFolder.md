@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgUserContactFolderChildFolder
 
 ## SYNOPSIS
-Get childFolders from users
+The collection of child folders in the folder.
+Navigation property.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +35,10 @@ Get-MgUserContactFolderChildFolder -InputObject <IPersonalContactsIdentity> [-Ex
 ```
 
 ## DESCRIPTION
-Get childFolders from users
+The collection of child folders in the folder.
+Navigation property.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -256,11 +262,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPersonalContactsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContactFolder
-
 ## NOTES
 
 ALIASES

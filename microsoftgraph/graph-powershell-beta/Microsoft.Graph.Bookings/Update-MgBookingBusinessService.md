@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgBookingBusinessService
 
 ## SYNOPSIS
-Update the navigation property services in bookingBusinesses
+All the services offered by this business.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -47,7 +49,9 @@ Update-MgBookingBusinessService -InputObject <IBookingsIdentity> -BodyParameter 
 ```
 
 ## DESCRIPTION
-Update the navigation property services in bookingBusinesses
+All the services offered by this business.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -427,13 +431,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IBookingsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingService
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

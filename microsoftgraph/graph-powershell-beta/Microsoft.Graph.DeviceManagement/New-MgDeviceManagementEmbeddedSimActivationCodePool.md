@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementEmbeddedSimActivationCodePool
 
 ## SYNOPSIS
-Create new navigation property to embeddedSIMActivationCodePools for deviceManagement
+The embedded SIM activation code pools created by this account.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ New-MgDeviceManagementEmbeddedSimActivationCodePool
 ```
 
 ## DESCRIPTION
-Create new navigation property to embeddedSIMActivationCodePools for deviceManagement
+The embedded SIM activation code pools created by this account.
 
 ## EXAMPLES
 
@@ -228,11 +228,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEmbeddedSimActivationCodePool
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEmbeddedSimActivationCodePool
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgUserSetting
 
 ## SYNOPSIS
-Delete navigation property settings for users
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -24,7 +25,8 @@ Remove-MgUserSetting -InputObject <IUsersIdentity> [-IfMatch <String>] [-PassThr
 ```
 
 ## DESCRIPTION
-Delete navigation property settings for users
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -128,11 +130,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

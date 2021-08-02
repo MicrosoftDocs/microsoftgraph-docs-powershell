@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementNdeConnector
 
 ## SYNOPSIS
-Create new navigation property to ndesConnectors for deviceManagement
+The collection of Ndes connectors for this account.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ New-MgDeviceManagementNdeConnector -BodyParameter <IMicrosoftGraphNdesConnector>
 ```
 
 ## DESCRIPTION
-Create new navigation property to ndesConnectors for deviceManagement
+The collection of Ndes connectors for this account.
 
 ## EXAMPLES
 
@@ -159,11 +159,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphNdesConnector
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphNdesConnector
-
 ## NOTES
 
 ALIASES

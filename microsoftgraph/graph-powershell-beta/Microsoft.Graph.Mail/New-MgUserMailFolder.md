@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgUserMailFolder
 
 ## SYNOPSIS
-Create new navigation property to mailFolders for users
+The user's mail folders.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -50,7 +52,9 @@ New-MgUserMailFolder -InputObject <IMailIdentity> -BodyParameter <IMicrosoftGrap
 ```
 
 ## DESCRIPTION
-Create new navigation property to mailFolders for users
+The user's mail folders.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -380,13 +384,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMailIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailFolder1
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailFolder1
-
 ## NOTES
 
 ALIASES

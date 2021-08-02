@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementWindowAutopilotSetting
 
 ## SYNOPSIS
-Delete navigation property windowsAutopilotSettings for deviceManagement
+The Windows autopilot account settings.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Remove-MgDeviceManagementWindowAutopilotSetting [-IfMatch <String>] [-PassThru] 
 ```
 
 ## DESCRIPTION
-Delete navigation property windowsAutopilotSettings for deviceManagement
+The Windows autopilot account settings.
 
 ## EXAMPLES
 
@@ -93,7 +93,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

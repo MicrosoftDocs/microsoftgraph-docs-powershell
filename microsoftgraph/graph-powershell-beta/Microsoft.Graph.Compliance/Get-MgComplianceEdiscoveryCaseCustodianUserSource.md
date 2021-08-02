@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgComplianceEdiscoveryCaseCustodianUserSource
 
 ## SYNOPSIS
-Get userSources from compliance
+Data source entity for a the custodian.
+This is the container for a custodian's mailbox and OneDrive for Business site.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgComplianceEdiscoveryCaseCustodianUserSource -InputObject <IComplianceIdent
 ```
 
 ## DESCRIPTION
-Get userSources from compliance
+Data source entity for a the custodian.
+This is the container for a custodian's mailbox and OneDrive for Business site.
 
 ## EXAMPLES
 
@@ -256,11 +258,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryUserSource
-
 ## NOTES
 
 ALIASES

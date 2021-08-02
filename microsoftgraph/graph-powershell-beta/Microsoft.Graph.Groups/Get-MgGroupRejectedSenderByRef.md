@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgGroupRejectedSenderByRef
 
 ## SYNOPSIS
-Get ref of rejectedSenders from groups
+The list of users or groups that are not allowed to create posts or calendar events in this group.
+Nullable
 
 ## SYNTAX
 
@@ -18,7 +19,8 @@ Get-MgGroupRejectedSenderByRef -GroupId <String> [-Filter <String>] [-Search <St
 ```
 
 ## DESCRIPTION
-Get ref of rejectedSenders from groups
+The list of users or groups that are not allowed to create posts or calendar events in this group.
+Nullable
 
 ## EXAMPLES
 
@@ -168,7 +170,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

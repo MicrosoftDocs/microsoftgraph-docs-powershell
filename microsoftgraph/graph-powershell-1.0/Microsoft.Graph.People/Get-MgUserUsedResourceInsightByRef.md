@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserUsedResourceInsightByRef
 
 ## SYNOPSIS
-Get ref of resource from users
+Used for navigating to the item that was used.
+For file attachments, the type is fileAttachment.
+For linked attachments, the type is driveItem.
 
 ## SYNTAX
 
@@ -23,7 +25,9 @@ Get-MgUserUsedResourceInsightByRef -InputObject <IPeopleIdentity> [<CommonParame
 ```
 
 ## DESCRIPTION
-Get ref of resource from users
+Used for navigating to the item that was used.
+For file attachments, the type is fileAttachment.
+For linked attachments, the type is driveItem.
 
 ## EXAMPLES
 
@@ -81,11 +85,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

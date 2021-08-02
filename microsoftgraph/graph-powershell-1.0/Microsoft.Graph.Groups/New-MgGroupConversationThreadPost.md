@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgGroupConversationThreadPost
 
 ## SYNOPSIS
-Create new navigation property to posts for groups
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -55,7 +56,8 @@ New-MgGroupConversationThreadPost -InputObject <IGroupsIdentity> -BodyParameter 
 ```
 
 ## DESCRIPTION
-Create new navigation property to posts for groups
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -511,13 +513,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPost1
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPost1
-
 ## NOTES
 
 ALIASES

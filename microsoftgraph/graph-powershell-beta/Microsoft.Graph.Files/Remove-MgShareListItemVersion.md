@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgShareListItemVersion
 
 ## SYNOPSIS
-Delete navigation property versions for shares
+The list of previous versions of the list item.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Remove-MgShareListItemVersion -InputObject <IFilesIdentity> [-IfMatch <String>] 
 ```
 
 ## DESCRIPTION
-Delete navigation property versions for shares
+The list of previous versions of the list item.
 
 ## EXAMPLES
 
@@ -171,11 +171,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

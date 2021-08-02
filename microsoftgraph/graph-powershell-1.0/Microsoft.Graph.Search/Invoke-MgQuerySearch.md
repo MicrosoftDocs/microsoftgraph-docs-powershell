@@ -14,8 +14,8 @@ Invoke action query
 
 ### QueryExpanded (Default)
 ```
-Invoke-MgQuerySearch [-AdditionalProperties <Hashtable>] [-Requests <IMicrosoftGraphSearchRequest1[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgQuerySearch [-AdditionalProperties <Hashtable>] [-Requests <IMicrosoftGraphSearchRequest[]>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Query
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for REQUESTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSearchRequest1[]
+Type: IMicrosoftGraphSearchRequest[]
 Parameter Sets: QueryExpanded
 Aliases:
 
@@ -116,11 +116,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1Kd2XrlSearchMicrosoftGraphQueryPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchResponse1
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchResponse
 ## NOTES
 
 ALIASES
@@ -132,24 +130,24 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER <IPaths1Kd2XrlSearchMicrosoftGraphQueryPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Requests <IMicrosoftGraphSearchRequest1[]>]`: 
+  - `[Requests <IMicrosoftGraphSearchRequest[]>]`: 
     - `[ContentSources <String[]>]`: Contains the connection to be targeted. Respects the following format : /external/connections/connectionid where connectionid is the ConnectionId defined in the Connectors Administration.  Note: contentSource is only applicable when entityType=externalItem. Optional.
     - `[EnableTopResults <Boolean?>]`: This triggers hybrid sort for messages: the first 3 messages are the most relevant. This property is only applicable to entityType=message. Optional.
     - `[EntityTypes <String[]>]`: One or more types of resources expected in the response. Possible values are: list, site, listItem, message, event, drive, driveItem, externalItem. See known limitations for those combinations of two or more entity types that are supported in the same search request. Required.
     - `[Fields <String[]>]`: Contains the fields to be returned for each resource object specified in entityTypes, allowing customization of the fields returned by default otherwise, including additional fields such as custom managed properties from SharePoint and OneDrive, or custom fields in externalItem from content that Microsoft Graph connectors bring in. The fields property can be using the semantic labels applied to properties. For example, if a property is label as title, you can retrieve it using the following syntax : label_title.Optional.
     - `[From <Int32?>]`: Specifies the offset for the search results. Offset 0 returns the very first result. Optional.
-    - `[Query <IMicrosoftGraphSearchQuery1>]`: searchQuery
+    - `[Query <IMicrosoftGraphSearchQuery>]`: searchQuery
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[QueryString <String>]`: The search query containing the search terms. Required.
     - `[Size <Int32?>]`: The size of the page to be retrieved. Optional.
 
-REQUESTS <IMicrosoftGraphSearchRequest1[]>: .
+REQUESTS <IMicrosoftGraphSearchRequest[]>: .
   - `[ContentSources <String[]>]`: Contains the connection to be targeted. Respects the following format : /external/connections/connectionid where connectionid is the ConnectionId defined in the Connectors Administration.  Note: contentSource is only applicable when entityType=externalItem. Optional.
   - `[EnableTopResults <Boolean?>]`: This triggers hybrid sort for messages: the first 3 messages are the most relevant. This property is only applicable to entityType=message. Optional.
   - `[EntityTypes <String[]>]`: One or more types of resources expected in the response. Possible values are: list, site, listItem, message, event, drive, driveItem, externalItem. See known limitations for those combinations of two or more entity types that are supported in the same search request. Required.
   - `[Fields <String[]>]`: Contains the fields to be returned for each resource object specified in entityTypes, allowing customization of the fields returned by default otherwise, including additional fields such as custom managed properties from SharePoint and OneDrive, or custom fields in externalItem from content that Microsoft Graph connectors bring in. The fields property can be using the semantic labels applied to properties. For example, if a property is label as title, you can retrieve it using the following syntax : label_title.Optional.
   - `[From <Int32?>]`: Specifies the offset for the search results. Offset 0 returns the very first result. Optional.
-  - `[Query <IMicrosoftGraphSearchQuery1>]`: searchQuery
+  - `[Query <IMicrosoftGraphSearchQuery>]`: searchQuery
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[QueryString <String>]`: The search query containing the search terms. Required.
   - `[Size <Int32?>]`: The size of the page to be retrieved. Optional.

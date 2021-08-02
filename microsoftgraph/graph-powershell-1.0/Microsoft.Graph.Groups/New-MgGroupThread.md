@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgGroupThread
 
 ## SYNOPSIS
-Create new navigation property to threads for groups
+The group's conversation threads.
+Nullable.
 
 ## SYNTAX
 
@@ -43,7 +44,8 @@ New-MgGroupThread -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGraph
 ```
 
 ## DESCRIPTION
-Create new navigation property to threads for groups
+The group's conversation threads.
+Nullable.
 
 ## EXAMPLES
 
@@ -304,13 +306,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversationThread1
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversationThread1
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgComplianceEdiscoveryCaseReviewSet
 
 ## SYNOPSIS
-Delete navigation property reviewSets for compliance
+Returns a list of reviewSet objects in the case.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +27,9 @@ Remove-MgComplianceEdiscoveryCaseReviewSet -InputObject <IComplianceIdentity> [-
 ```
 
 ## DESCRIPTION
-Delete navigation property reviewSets for compliance
+Returns a list of reviewSet objects in the case.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -144,11 +148,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

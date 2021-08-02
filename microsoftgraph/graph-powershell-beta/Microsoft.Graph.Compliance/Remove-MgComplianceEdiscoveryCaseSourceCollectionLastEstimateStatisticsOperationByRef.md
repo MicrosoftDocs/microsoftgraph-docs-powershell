@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperationByRef
 
 ## SYNOPSIS
-Delete ref of navigation property lastEstimateStatisticsOperation for compliance
+The last estimate operation associated with the sourceCollection.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperation
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property lastEstimateStatisticsOperation for compliance
+The last estimate operation associated with the sourceCollection.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

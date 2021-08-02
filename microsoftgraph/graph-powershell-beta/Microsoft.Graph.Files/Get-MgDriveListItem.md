@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDriveListItem
 
 ## SYNOPSIS
-Get items from drives
+All items contained in the list.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDriveListItem -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [
 ```
 
 ## DESCRIPTION
-Get items from drives
+All items contained in the list.
 
 ## EXAMPLES
 
@@ -241,11 +241,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphListItem
-
 ## NOTES
 
 ALIASES

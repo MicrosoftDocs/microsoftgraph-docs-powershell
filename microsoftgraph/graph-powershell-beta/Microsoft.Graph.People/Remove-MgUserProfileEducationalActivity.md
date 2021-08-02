@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserProfileEducationalActivity
 
 ## SYNOPSIS
-Delete navigation property educationalActivities for users
+Represents data that a user has supplied related to undergraduate, graduate, postgraduate or other educational activities.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgUserProfileEducationalActivity -InputObject <IPeopleIdentity> [-IfMatch
 ```
 
 ## DESCRIPTION
-Delete navigation property educationalActivities for users
+Represents data that a user has supplied related to undergraduate, graduate, postgraduate or other educational activities.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

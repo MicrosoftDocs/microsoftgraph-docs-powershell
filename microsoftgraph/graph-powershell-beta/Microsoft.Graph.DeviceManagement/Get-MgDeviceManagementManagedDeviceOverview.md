@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementManagedDeviceOverview
 
 ## SYNOPSIS
-Get managedDeviceOverview from deviceManagement
+Device overview
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-MgDeviceManagementManagedDeviceOverview [-ExpandProperty <String[]>] [-Prope
 ```
 
 ## DESCRIPTION
-Get managedDeviceOverview from deviceManagement
+Device overview
 
 ## EXAMPLES
 
@@ -61,8 +61,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDeviceOverview
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDeviceOverview1
 ## NOTES
 
 ALIASES

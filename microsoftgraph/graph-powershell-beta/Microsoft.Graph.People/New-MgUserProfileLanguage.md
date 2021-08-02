@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserProfileLanguage
 
 ## SYNOPSIS
-Create new navigation property to languages for users
+Represents detailed information about languages that a user has added to their profile.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ New-MgUserProfileLanguage -InputObject <IPeopleIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Create new navigation property to languages for users
+Represents detailed information about languages that a user has added to their profile.
 
 ## EXAMPLES
 
@@ -394,13 +394,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLanguageProficiency
-
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLanguageProficiency
-
 ## NOTES
 
 ALIASES

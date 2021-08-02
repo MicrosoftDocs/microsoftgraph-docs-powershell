@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgTeamOperation
 
 ## SYNOPSIS
-Get operations from teams
+The async operations that ran or are running on this team.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgTeamOperation -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [
 ```
 
 ## DESCRIPTION
-Get operations from teams
+The async operations that ran or are running on this team.
 
 ## EXAMPLES
 
@@ -241,11 +241,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAsyncOperation
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgCleanUserManagedDeviceWindowDevice
 
 ## SYNOPSIS
-Invoke action cleanWindowsDevice
+Clean Windows device
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Invoke-MgCleanUserManagedDeviceWindowDevice -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action cleanWindowsDevice
+Clean Windows device
 
 ## EXAMPLES
 
@@ -189,13 +189,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1Nos4SfUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphCleanwindowsdevicePostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

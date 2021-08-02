@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgSiteListItemVersionField
 
 ## SYNOPSIS
-Delete navigation property fields for sites
+A collection of the fields and values for this version of the list item.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgSiteListItemVersionField -InputObject <ISitesIdentity> [-IfMatch <Strin
 ```
 
 ## DESCRIPTION
-Delete navigation property fields for sites
+A collection of the fields and values for this version of the list item.
 
 ## EXAMPLES
 
@@ -174,11 +174,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgRoleManagementDeviceManagementRoleAssignmentPrincipalByRef
 
 ## SYNOPSIS
-Get ref of principals from roleManagement
+Read-only collection referencing the assigned principals.
+Provided so that callers can get the principals using $expand at the same time as getting the role assignment.
+Read-only.
+Supports $expand.
 
 ## SYNTAX
 
@@ -19,7 +22,10 @@ Get-MgRoleManagementDeviceManagementRoleAssignmentPrincipalByRef -UnifiedRoleAss
 ```
 
 ## DESCRIPTION
-Get ref of principals from roleManagement
+Read-only collection referencing the assigned principals.
+Provided so that callers can get the principals using $expand at the same time as getting the role assignment.
+Read-only.
+Supports $expand.
 
 ## EXAMPLES
 
@@ -169,7 +175,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

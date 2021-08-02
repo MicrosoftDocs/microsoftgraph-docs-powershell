@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgOrganizationSetting
 
 ## SYNOPSIS
-Get settings from organization
+Retrieve the properties and relationships of organizationSettings object.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Get-MgOrganizationSetting -InputObject <IIdentityDirectoryManagementIdentity> [-
 ```
 
 ## DESCRIPTION
-Get settings from organization
+Retrieve the properties and relationships of organizationSettings object.
+Nullable.
 
 ## EXAMPLES
 
@@ -98,11 +100,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOrganizationSettings
-
 ## NOTES
 
 ALIASES

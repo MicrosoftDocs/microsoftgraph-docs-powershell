@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserTeamworkInstalledAppChat
 
 ## SYNOPSIS
-Get chat from users
+The chat between the user and Teams app.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgUserTeamworkInstalledAppChat -InputObject <ITeamsIdentity> [-ExpandPropert
 ```
 
 ## DESCRIPTION
-Get chat from users
+The chat between the user and Teams app.
 
 ## EXAMPLES
 
@@ -113,11 +113,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChat
-
 ## NOTES
 
 ALIASES

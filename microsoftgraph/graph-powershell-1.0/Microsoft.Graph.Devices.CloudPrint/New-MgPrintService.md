@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgPrintService
 
 ## SYNOPSIS
-Create new navigation property to services for print
+The list of available Universal Print service endpoints.
 
 ## SYNTAX
 
@@ -24,7 +24,7 @@ New-MgPrintService -BodyParameter <IMicrosoftGraphPrintService> [-WhatIf] [-Conf
 ```
 
 ## DESCRIPTION
-Create new navigation property to services for print
+The list of available Universal Print service endpoints.
 
 ## EXAMPLES
 
@@ -131,11 +131,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintService
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintService
-
 ## NOTES
 
 ALIASES

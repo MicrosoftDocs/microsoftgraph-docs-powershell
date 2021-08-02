@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgUserMessageExtension
 
 ## SYNOPSIS
-Get extensions from users
+The collection of open extensions defined for the message.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgUserMessageExtension -InputObject <IMailIdentity> [-ExpandProperty <String
 ```
 
 ## DESCRIPTION
-Get extensions from users
+The collection of open extensions defined for the message.
+Nullable.
 
 ## EXAMPLES
 
@@ -256,13 +258,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMailIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExtension
-
 ### System.String
-
 ## NOTES
 
 ALIASES

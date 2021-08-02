@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementSoftwareUpdateStatusSummaryByRef
 
 ## SYNOPSIS
-Get ref of softwareUpdateStatusSummary from deviceManagement
+The software update status summary.
 
 ## SYNTAX
 
@@ -17,7 +17,7 @@ Get-MgDeviceManagementSoftwareUpdateStatusSummaryByRef [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get ref of softwareUpdateStatusSummary from deviceManagement
+The software update status summary.
 
 ## EXAMPLES
 
@@ -31,7 +31,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserPlannerPlanTaskAssignedToTaskBoardFormat
 
 ## SYNOPSIS
-Get assignedToTaskBoardFormat from users
+Read-only.
+Nullable.
+Used to render the task correctly in the task board view when grouped by assignedTo.
 
 ## SYNTAX
 
@@ -25,7 +27,9 @@ Get-MgUserPlannerPlanTaskAssignedToTaskBoardFormat -InputObject <IPlannerIdentit
 ```
 
 ## DESCRIPTION
-Get assignedToTaskBoardFormat from users
+Read-only.
+Nullable.
+Used to render the task correctly in the task board view when grouped by assignedTo.
 
 ## EXAMPLES
 
@@ -128,11 +132,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat
-
 ## NOTES
 
 ALIASES

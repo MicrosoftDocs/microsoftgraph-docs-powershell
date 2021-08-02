@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgUserCalendarGroup
 
 ## SYNOPSIS
-Update the navigation property calendarGroups in users
+The user's calendar groups.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -39,7 +41,9 @@ Update-MgUserCalendarGroup -InputObject <ICalendarIdentity> -BodyParameter <IMic
 ```
 
 ## DESCRIPTION
-Update the navigation property calendarGroups in users
+The user's calendar groups.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -257,13 +261,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalendarGroup
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

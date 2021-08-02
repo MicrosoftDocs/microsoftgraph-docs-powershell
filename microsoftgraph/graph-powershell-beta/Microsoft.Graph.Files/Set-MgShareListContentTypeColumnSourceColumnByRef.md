@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgShareListContentTypeColumnSourceColumnByRef
 
 ## SYNOPSIS
-Update the ref of navigation property sourceColumn in shares
+The source column for content type column.
 
 ## SYNTAX
 
@@ -38,7 +38,7 @@ Set-MgShareListContentTypeColumnSourceColumnByRef -InputObject <IFilesIdentity> 
 ```
 
 ## DESCRIPTION
-Update the ref of navigation property sourceColumn in shares
+The source column for content type column.
 
 ## EXAMPLES
 
@@ -187,13 +187,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

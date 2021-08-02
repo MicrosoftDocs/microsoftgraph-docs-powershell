@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgEducationUserAssignmentResource
 
 ## SYNOPSIS
-Update the navigation property resources in education
+Learning objects that are associated with this assignment.
+Only teachers can modify this list.
+Nullable.
 
 ## SYNTAX
 
@@ -43,7 +45,9 @@ Update-MgEducationUserAssignmentResource -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property resources in education
+Learning objects that are associated with this assignment.
+Only teachers can modify this list.
+Nullable.
 
 ## EXAMPLES
 
@@ -239,13 +243,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationAssignmentResource
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

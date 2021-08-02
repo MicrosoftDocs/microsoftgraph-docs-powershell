@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSiteContentTypeBaseTypeByRef
 
 ## SYNOPSIS
-Create new navigation property ref to baseTypes for sites
+The collection of content types that are ancestors of this content type.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ New-MgSiteContentTypeBaseTypeByRef -InputObject <ISitesIdentity> -BodyParameter 
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to baseTypes for sites
+The collection of content types that are ancestors of this content type.
 
 ## EXAMPLES
 
@@ -156,13 +156,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths19Y6J1ZSitesSiteIdContenttypesContenttypeIdBasetypesRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

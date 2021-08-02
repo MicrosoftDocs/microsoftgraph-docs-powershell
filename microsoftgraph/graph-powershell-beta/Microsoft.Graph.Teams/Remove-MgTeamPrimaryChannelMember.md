@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgTeamPrimaryChannelMember
 
 ## SYNOPSIS
-Delete navigation property members for teams
+A collection of membership records associated with the channel.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgTeamPrimaryChannelMember -InputObject <ITeamsIdentity> [-IfMatch <Strin
 ```
 
 ## DESCRIPTION
-Delete navigation property members for teams
+A collection of membership records associated with the channel.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

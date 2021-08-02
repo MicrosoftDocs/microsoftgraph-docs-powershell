@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgUserOutlookTaskGroupTaskFolderTask
 
 ## SYNOPSIS
-Update the navigation property tasks in users
+The tasks in this task folder.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -57,7 +59,9 @@ Update-MgUserOutlookTaskGroupTaskFolderTask -InputObject <IUsersIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property tasks in users
+The tasks in this task folder.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -588,13 +592,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOutlookTask
-
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

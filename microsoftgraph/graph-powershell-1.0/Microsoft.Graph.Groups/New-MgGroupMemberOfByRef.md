@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgGroupMemberOfByRef
 
 ## SYNOPSIS
-Create new navigation property ref to members for groups
+Users, contacts, and groups that are members of this group.
+HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -36,7 +38,9 @@ New-MgGroupMemberOfByRef -InputObject <IGroupsIdentity> -BodyParameter <Hashtabl
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to members for groups
+Users, contacts, and groups that are members of this group.
+HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -140,13 +144,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths15I3FyhGroupsGroupIdMembersRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgUserOwnedObjectByRef
 
 ## SYNOPSIS
-Create new navigation property ref to ownedObjects for users
+Directory objects that are owned by the user.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -37,7 +39,9 @@ New-MgUserOwnedObjectByRef -InputObject <IUsersIdentity> -BodyParameter <Hashtab
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to ownedObjects for users
+Directory objects that are owned by the user.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -141,13 +145,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1Frl3PiUsersUserIdOwnedobjectsRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

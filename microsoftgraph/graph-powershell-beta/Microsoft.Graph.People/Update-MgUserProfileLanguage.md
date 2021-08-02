@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserProfileLanguage
 
 ## SYNOPSIS
-Update the navigation property languages in users
+Represents detailed information about languages that a user has added to their profile.
 
 ## SYNTAX
 
@@ -46,7 +46,7 @@ Update-MgUserProfileLanguage -InputObject <IPeopleIdentity> -BodyParameter <IMic
 ```
 
 ## DESCRIPTION
-Update the navigation property languages in users
+Represents detailed information about languages that a user has added to their profile.
 
 ## EXAMPLES
 
@@ -425,13 +425,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLanguageProficiency
-
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

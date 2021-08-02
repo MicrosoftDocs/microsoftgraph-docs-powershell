@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgRoleManagementDeviceManagement
 
 ## SYNOPSIS
-Delete navigation property deviceManagement for roleManagement
+The RbacApplication for Device Management
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Remove-MgRoleManagementDeviceManagement [-IfMatch <String>] [-PassThru] [-WhatIf
 ```
 
 ## DESCRIPTION
-Delete navigation property deviceManagement for roleManagement
+The RbacApplication for Device Management
 
 ## EXAMPLES
 
@@ -93,7 +93,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

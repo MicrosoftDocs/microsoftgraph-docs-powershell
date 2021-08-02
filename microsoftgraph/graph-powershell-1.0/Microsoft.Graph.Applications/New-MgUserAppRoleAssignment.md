@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserAppRoleAssignment
 
 ## SYNOPSIS
-Create new navigation property to appRoleAssignments for users
+Represents the app roles a user has been granted for an application.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ New-MgUserAppRoleAssignment -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to appRoleAssignments for users
+Represents the app roles a user has been granted for an application.
 
 ## EXAMPLES
 
@@ -294,13 +294,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppRoleAssignment
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppRoleAssignment
-
 ## NOTES
 
 ALIASES

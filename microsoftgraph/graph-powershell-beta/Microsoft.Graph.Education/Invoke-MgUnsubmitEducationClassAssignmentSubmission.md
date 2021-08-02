@@ -12,13 +12,13 @@ Invoke action unsubmit
 
 ## SYNTAX
 
-### Unsubmit (Default)
+### Unsubmit1 (Default)
 ```
 Invoke-MgUnsubmitEducationClassAssignmentSubmission -EducationAssignmentId <String> -EducationClassId <String>
  -EducationSubmissionId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UnsubmitViaIdentity
+### UnsubmitViaIdentity1
 ```
 Invoke-MgUnsubmitEducationClassAssignmentSubmission -InputObject <IEducationIdentity> [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -36,7 +36,7 @@ key: id of educationAssignment
 
 ```yaml
 Type: String
-Parameter Sets: Unsubmit
+Parameter Sets: Unsubmit1
 Aliases:
 
 Required: True
@@ -51,7 +51,7 @@ key: id of educationClass
 
 ```yaml
 Type: String
-Parameter Sets: Unsubmit
+Parameter Sets: Unsubmit1
 Aliases:
 
 Required: True
@@ -66,7 +66,7 @@ key: id of educationSubmission
 
 ```yaml
 Type: String
-Parameter Sets: Unsubmit
+Parameter Sets: Unsubmit1
 Aliases:
 
 Required: True
@@ -82,7 +82,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IEducationIdentity
-Parameter Sets: UnsubmitViaIdentity
+Parameter Sets: UnsubmitViaIdentity1
 Aliases:
 
 Required: True
@@ -129,11 +129,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSubmission
-
 ## NOTES
 
 ALIASES

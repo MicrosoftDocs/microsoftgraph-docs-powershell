@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgGroupThreadPost
 
 ## SYNOPSIS
-Get posts from groups
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -44,7 +45,8 @@ Get-MgGroupThreadPost -InputObject <IGroupsIdentity> [-ExpandProperty <String[]>
 ```
 
 ## DESCRIPTION
-Get posts from groups
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -268,11 +270,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPost1
-
 ## NOTES
 
 ALIASES

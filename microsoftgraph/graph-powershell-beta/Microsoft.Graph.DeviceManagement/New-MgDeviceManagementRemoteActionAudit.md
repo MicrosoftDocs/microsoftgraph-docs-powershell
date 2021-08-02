@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementRemoteActionAudit
 
 ## SYNOPSIS
-Create new navigation property to remoteActionAudits for deviceManagement
+The list of device remote action audits with the tenant.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ New-MgDeviceManagementRemoteActionAudit -BodyParameter <IMicrosoftGraphRemoteAct
 ```
 
 ## DESCRIPTION
-Create new navigation property to remoteActionAudits for deviceManagement
+The list of device remote action audits with the tenant.
 
 ## EXAMPLES
 
@@ -252,11 +252,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRemoteActionAudit
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRemoteActionAudit
-
 ## NOTES
 
 ALIASES

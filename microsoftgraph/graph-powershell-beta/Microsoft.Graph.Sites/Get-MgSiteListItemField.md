@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteListItemField
 
 ## SYNOPSIS
-Get fields from sites
+The values of the columns set on this list item.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgSiteListItemField -InputObject <ISitesIdentity> [-ExpandProperty <String[]
 ```
 
 ## DESCRIPTION
-Get fields from sites
+The values of the columns set on this list item.
 
 ## EXAMPLES
 
@@ -128,11 +128,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgTeamOperation
 
 ## SYNOPSIS
-Create new navigation property to operations for teams
+The async operations that ran or are running on this team.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ New-MgTeamOperation -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGrap
 ```
 
 ## DESCRIPTION
-Create new navigation property to operations for teams
+The async operations that ran or are running on this team.
 
 ## EXAMPLES
 
@@ -283,13 +283,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAsyncOperation
-
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAsyncOperation
-
 ## NOTES
 
 ALIASES

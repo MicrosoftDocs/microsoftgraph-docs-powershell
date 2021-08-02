@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgSitePermission
 
 ## SYNOPSIS
-Update the navigation property permissions in sites
+The permissions associated with the site.
+Nullable.
 
 ## SYNTAX
 
@@ -45,7 +46,8 @@ Update-MgSitePermission -InputObject <ISitesIdentity> -BodyParameter <IMicrosoft
 ```
 
 ## DESCRIPTION
-Update the navigation property permissions in sites
+The permissions associated with the site.
+Nullable.
 
 ## EXAMPLES
 
@@ -343,13 +345,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermission1
-
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

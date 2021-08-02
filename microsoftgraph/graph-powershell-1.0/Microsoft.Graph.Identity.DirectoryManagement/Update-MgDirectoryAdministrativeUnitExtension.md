@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgDirectoryAdministrativeUnitExtension
 
 ## SYNOPSIS
-Update the navigation property extensions in directory
+The collection of open extensions defined for this Administrative Unit.
+Nullable.
 
 ## SYNTAX
 
@@ -37,7 +38,8 @@ Update-MgDirectoryAdministrativeUnitExtension -InputObject <IIdentityDirectoryMa
 ```
 
 ## DESCRIPTION
-Update the navigation property extensions in directory
+The collection of open extensions defined for this Administrative Unit.
+Nullable.
 
 ## EXAMPLES
 
@@ -186,13 +188,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

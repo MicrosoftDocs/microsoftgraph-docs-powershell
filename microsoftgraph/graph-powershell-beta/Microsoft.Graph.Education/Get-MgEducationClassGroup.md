@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEducationClassGroup
 
 ## SYNOPSIS
-Get group from education
+The underlying Microsoft 365 group object.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgEducationClassGroup -InputObject <IEducationIdentity> [-ExpandProperty <St
 ```
 
 ## DESCRIPTION
-Get group from education
+The underlying Microsoft 365 group object.
 
 ## EXAMPLES
 
@@ -98,11 +98,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroup
-
 ## NOTES
 
 ALIASES

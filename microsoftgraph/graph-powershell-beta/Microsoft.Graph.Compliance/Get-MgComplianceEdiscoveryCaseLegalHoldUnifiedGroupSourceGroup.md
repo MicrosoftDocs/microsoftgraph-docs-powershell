@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgComplianceEdiscoveryCaseLegalHoldUnifiedGroupSourceGroup
 
 ## SYNOPSIS
-Get group from compliance
+The group associated with the unifiedGroupSource.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgComplianceEdiscoveryCaseLegalHoldUnifiedGroupSourceGroup -InputObject <ICo
 ```
 
 ## DESCRIPTION
-Get group from compliance
+The group associated with the unifiedGroupSource.
 
 ## EXAMPLES
 
@@ -128,11 +128,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroup
-
 ## NOTES
 
 ALIASES

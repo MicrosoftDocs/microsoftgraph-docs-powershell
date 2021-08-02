@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserProfileName
 
 ## SYNOPSIS
-Create new navigation property to names for users
+Represents the names a user has added to their profile.
 
 ## SYNTAX
 
@@ -48,7 +48,7 @@ New-MgUserProfileName -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoftG
 ```
 
 ## DESCRIPTION
-Create new navigation property to names for users
+Represents the names a user has added to their profile.
 
 ## EXAMPLES
 
@@ -458,13 +458,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPersonName
-
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPersonName
-
 ## NOTES
 
 ALIASES

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.SignIns
-Module Guid: 23bb2f27-85d2-447c-a394-436fd3a3ffb5
+Module Guid: 8a629b81-efb0-48f0-9be9-141a12a40639
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins
 Help Version: 1.0.0.0
 Locale: en-US
@@ -30,7 +30,9 @@ Get informationProtection
 Get threatAssessmentRequests from informationProtection
 
 ### [Get-MgInformationProtectionThreatAssessmentRequestResult](Get-MgInformationProtectionThreatAssessmentRequestResult.md)
-Get results from informationProtection
+A collection of threat assessment results.
+Read-only.
+By default, a GET /threatAssessmentRequests/{id} does not return this property unless you apply $expand on it.
 
 ### [Get-MgOauth2PermissionGrant](Get-MgOauth2PermissionGrant.md)
 Get entity from oauth2PermissionGrants by key
@@ -39,16 +41,21 @@ Get entity from oauth2PermissionGrants by key
 Invoke function delta
 
 ### [Get-MgOrganizationCertificateBasedAuthConfiguration](Get-MgOrganizationCertificateBasedAuthConfiguration.md)
-Get certificateBasedAuthConfiguration from organization
+Navigation property to manage  certificate-based authentication configuration.
+Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
 
 ### [Get-MgOrganizationCertificateBasedAuthConfigurationByRef](Get-MgOrganizationCertificateBasedAuthConfigurationByRef.md)
-Get ref of certificateBasedAuthConfiguration from organization
+Navigation property to manage  certificate-based authentication configuration.
+Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
 
 ### [Get-MgPolicyActivityBasedTimeoutPolicy](Get-MgPolicyActivityBasedTimeoutPolicy.md)
 Get activityBasedTimeoutPolicies from policies
 
 ### [Get-MgPolicyAdminConsentRequestPolicy](Get-MgPolicyAdminConsentRequestPolicy.md)
 Get adminConsentRequestPolicy from policies
+
+### [Get-MgPolicyAuthenticationFlowPolicy](Get-MgPolicyAuthenticationFlowPolicy.md)
+Get authenticationFlowsPolicy from policies
 
 ### [Get-MgPolicyAuthenticationMethodPolicy](Get-MgPolicyAuthenticationMethodPolicy.md)
 Get authenticationMethodsPolicy from policies
@@ -63,7 +70,8 @@ Get claimsMappingPolicies from policies
 Get featureRolloutPolicies from policies
 
 ### [Get-MgPolicyFeatureRolloutPolicyApplyTo](Get-MgPolicyFeatureRolloutPolicyApplyTo.md)
-Get appliesTo from policies
+Nullable.
+Specifies a list of directoryObjects that feature is enabled for.
 
 ### [Get-MgPolicyHomeRealmDiscoveryPolicy](Get-MgPolicyHomeRealmDiscoveryPolicy.md)
 Get homeRealmDiscoveryPolicies from policies
@@ -75,10 +83,12 @@ Get identitySecurityDefaultsEnforcementPolicy from policies
 Get permissionGrantPolicies from policies
 
 ### [Get-MgPolicyPermissionGrantPolicyExclude](Get-MgPolicyPermissionGrantPolicyExclude.md)
-Get excludes from policies
+Condition sets which are excluded in this permission grant policy.
+Automatically expanded on GET.
 
 ### [Get-MgPolicyPermissionGrantPolicyInclude](Get-MgPolicyPermissionGrantPolicyInclude.md)
-Get includes from policies
+Condition sets which are included in this permission grant policy.
+Automatically expanded on GET.
 
 ### [Get-MgPolicyTokenIssuancePolicy](Get-MgPolicyTokenIssuancePolicy.md)
 Get tokenIssuancePolicies from policies
@@ -96,13 +106,17 @@ Get methods from users
 Get microsoftAuthenticatorMethods from users
 
 ### [Get-MgUserAuthenticationMicrosoftAuthenticatorMethodDevice](Get-MgUserAuthenticationMicrosoftAuthenticatorMethodDevice.md)
-Get device from users
+The registered device on which Microsoft Authenticator resides.
+This property is null if the device is not registered for passwordless Phone Sign-In.
 
 ### [Get-MgUserAuthenticationWindowHello](Get-MgUserAuthenticationWindowHello.md)
 Get windowsHelloForBusinessMethods from users
 
 ### [Get-MgUserAuthenticationWindowHelloForBusinessMethodDevice](Get-MgUserAuthenticationWindowHelloForBusinessMethodDevice.md)
-Get device from users
+The registered device on which this Windows Hello for Business key resides.
+
+### [Invoke-MgAvailableIdentityProviderType](Invoke-MgAvailableIdentityProviderType.md)
+Invoke function availableProviderTypes
 
 ### [New-MgDataPolicyOperation](New-MgDataPolicyOperation.md)
 Add new entity to dataPolicyOperations
@@ -120,7 +134,9 @@ Add new entity to identityProviders
 Create new navigation property to threatAssessmentRequests for informationProtection
 
 ### [New-MgInformationProtectionThreatAssessmentRequestResult](New-MgInformationProtectionThreatAssessmentRequestResult.md)
-Create new navigation property to results for informationProtection
+A collection of threat assessment results.
+Read-only.
+By default, a GET /threatAssessmentRequests/{id} does not return this property unless you apply $expand on it.
 
 ### [New-MgInvitation](New-MgInvitation.md)
 Add new entity to invitations
@@ -129,7 +145,8 @@ Add new entity to invitations
 Add new entity to oauth2PermissionGrants
 
 ### [New-MgOrganizationCertificateBasedAuthConfigurationByRef](New-MgOrganizationCertificateBasedAuthConfigurationByRef.md)
-Create new navigation property ref to certificateBasedAuthConfiguration for organization
+Navigation property to manage  certificate-based authentication configuration.
+Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
 
 ### [New-MgPolicyActivityBasedTimeoutPolicy](New-MgPolicyActivityBasedTimeoutPolicy.md)
 Create new navigation property to activityBasedTimeoutPolicies for policies
@@ -141,7 +158,8 @@ Create new navigation property to claimsMappingPolicies for policies
 Create new navigation property to featureRolloutPolicies for policies
 
 ### [New-MgPolicyFeatureRolloutPolicyApplyTo](New-MgPolicyFeatureRolloutPolicyApplyTo.md)
-Create new navigation property to appliesTo for policies
+Nullable.
+Specifies a list of directoryObjects that feature is enabled for.
 
 ### [New-MgPolicyHomeRealmDiscoveryPolicy](New-MgPolicyHomeRealmDiscoveryPolicy.md)
 Create new navigation property to homeRealmDiscoveryPolicies for policies
@@ -150,10 +168,12 @@ Create new navigation property to homeRealmDiscoveryPolicies for policies
 Create new navigation property to permissionGrantPolicies for policies
 
 ### [New-MgPolicyPermissionGrantPolicyExclude](New-MgPolicyPermissionGrantPolicyExclude.md)
-Create new navigation property to excludes for policies
+Condition sets which are excluded in this permission grant policy.
+Automatically expanded on GET.
 
 ### [New-MgPolicyPermissionGrantPolicyInclude](New-MgPolicyPermissionGrantPolicyInclude.md)
-Create new navigation property to includes for policies
+Condition sets which are included in this permission grant policy.
+Automatically expanded on GET.
 
 ### [New-MgPolicyTokenIssuancePolicy](New-MgPolicyTokenIssuancePolicy.md)
 Create new navigation property to tokenIssuancePolicies for policies
@@ -189,7 +209,9 @@ Delete entity from identityProviders
 Delete navigation property threatAssessmentRequests for informationProtection
 
 ### [Remove-MgInformationProtectionThreatAssessmentRequestResult](Remove-MgInformationProtectionThreatAssessmentRequestResult.md)
-Delete navigation property results for informationProtection
+A collection of threat assessment results.
+Read-only.
+By default, a GET /threatAssessmentRequests/{id} does not return this property unless you apply $expand on it.
 
 ### [Remove-MgOauth2PermissionGrant](Remove-MgOauth2PermissionGrant.md)
 Delete entity from oauth2PermissionGrants
@@ -199,6 +221,9 @@ Delete navigation property activityBasedTimeoutPolicies for policies
 
 ### [Remove-MgPolicyAdminConsentRequestPolicy](Remove-MgPolicyAdminConsentRequestPolicy.md)
 Delete navigation property adminConsentRequestPolicy for policies
+
+### [Remove-MgPolicyAuthenticationFlowPolicy](Remove-MgPolicyAuthenticationFlowPolicy.md)
+Delete navigation property authenticationFlowsPolicy for policies
 
 ### [Remove-MgPolicyAuthenticationMethodPolicy](Remove-MgPolicyAuthenticationMethodPolicy.md)
 Delete navigation property authenticationMethodsPolicy for policies
@@ -213,7 +238,8 @@ Delete navigation property claimsMappingPolicies for policies
 Delete navigation property featureRolloutPolicies for policies
 
 ### [Remove-MgPolicyFeatureRolloutPolicyApplyTo](Remove-MgPolicyFeatureRolloutPolicyApplyTo.md)
-Delete navigation property appliesTo for policies
+Nullable.
+Specifies a list of directoryObjects that feature is enabled for.
 
 ### [Remove-MgPolicyHomeRealmDiscoveryPolicy](Remove-MgPolicyHomeRealmDiscoveryPolicy.md)
 Delete navigation property homeRealmDiscoveryPolicies for policies
@@ -225,10 +251,12 @@ Delete navigation property identitySecurityDefaultsEnforcementPolicy for policie
 Delete navigation property permissionGrantPolicies for policies
 
 ### [Remove-MgPolicyPermissionGrantPolicyExclude](Remove-MgPolicyPermissionGrantPolicyExclude.md)
-Delete navigation property excludes for policies
+Condition sets which are excluded in this permission grant policy.
+Automatically expanded on GET.
 
 ### [Remove-MgPolicyPermissionGrantPolicyInclude](Remove-MgPolicyPermissionGrantPolicyInclude.md)
-Delete navigation property includes for policies
+Condition sets which are included in this permission grant policy.
+Automatically expanded on GET.
 
 ### [Remove-MgPolicyTokenIssuancePolicy](Remove-MgPolicyTokenIssuancePolicy.md)
 Delete navigation property tokenIssuancePolicies for policies
@@ -246,13 +274,14 @@ Delete navigation property methods for users
 Delete navigation property microsoftAuthenticatorMethods for users
 
 ### [Remove-MgUserAuthenticationMicrosoftAuthenticatorMethodDevice](Remove-MgUserAuthenticationMicrosoftAuthenticatorMethodDevice.md)
-Delete navigation property device for users
+The registered device on which Microsoft Authenticator resides.
+This property is null if the device is not registered for passwordless Phone Sign-In.
 
 ### [Remove-MgUserAuthenticationWindowHello](Remove-MgUserAuthenticationWindowHello.md)
 Delete navigation property windowsHelloForBusinessMethods for users
 
 ### [Remove-MgUserAuthenticationWindowHelloForBusinessMethodDevice](Remove-MgUserAuthenticationWindowHelloForBusinessMethodDevice.md)
-Delete navigation property device for users
+The registered device on which this Windows Hello for Business key resides.
 
 ### [Update-MgDataPolicyOperation](Update-MgDataPolicyOperation.md)
 Update entity in dataPolicyOperations
@@ -273,7 +302,9 @@ Update informationProtection
 Update the navigation property threatAssessmentRequests in informationProtection
 
 ### [Update-MgInformationProtectionThreatAssessmentRequestResult](Update-MgInformationProtectionThreatAssessmentRequestResult.md)
-Update the navigation property results in informationProtection
+A collection of threat assessment results.
+Read-only.
+By default, a GET /threatAssessmentRequests/{id} does not return this property unless you apply $expand on it.
 
 ### [Update-MgOauth2PermissionGrant](Update-MgOauth2PermissionGrant.md)
 Update entity in oauth2PermissionGrants
@@ -283,6 +314,9 @@ Update the navigation property activityBasedTimeoutPolicies in policies
 
 ### [Update-MgPolicyAdminConsentRequestPolicy](Update-MgPolicyAdminConsentRequestPolicy.md)
 Update the navigation property adminConsentRequestPolicy in policies
+
+### [Update-MgPolicyAuthenticationFlowPolicy](Update-MgPolicyAuthenticationFlowPolicy.md)
+Update the navigation property authenticationFlowsPolicy in policies
 
 ### [Update-MgPolicyAuthenticationMethodPolicy](Update-MgPolicyAuthenticationMethodPolicy.md)
 Update the navigation property authenticationMethodsPolicy in policies
@@ -297,7 +331,8 @@ Update the navigation property claimsMappingPolicies in policies
 Update the navigation property featureRolloutPolicies in policies
 
 ### [Update-MgPolicyFeatureRolloutPolicyApplyTo](Update-MgPolicyFeatureRolloutPolicyApplyTo.md)
-Update the navigation property appliesTo in policies
+Nullable.
+Specifies a list of directoryObjects that feature is enabled for.
 
 ### [Update-MgPolicyHomeRealmDiscoveryPolicy](Update-MgPolicyHomeRealmDiscoveryPolicy.md)
 Update the navigation property homeRealmDiscoveryPolicies in policies
@@ -309,10 +344,12 @@ Update the navigation property identitySecurityDefaultsEnforcementPolicy in poli
 Update the navigation property permissionGrantPolicies in policies
 
 ### [Update-MgPolicyPermissionGrantPolicyExclude](Update-MgPolicyPermissionGrantPolicyExclude.md)
-Update the navigation property excludes in policies
+Condition sets which are excluded in this permission grant policy.
+Automatically expanded on GET.
 
 ### [Update-MgPolicyPermissionGrantPolicyInclude](Update-MgPolicyPermissionGrantPolicyInclude.md)
-Update the navigation property includes in policies
+Condition sets which are included in this permission grant policy.
+Automatically expanded on GET.
 
 ### [Update-MgPolicyTokenIssuancePolicy](Update-MgPolicyTokenIssuancePolicy.md)
 Update the navigation property tokenIssuancePolicies in policies
@@ -330,11 +367,12 @@ Update the navigation property methods in users
 Update the navigation property microsoftAuthenticatorMethods in users
 
 ### [Update-MgUserAuthenticationMicrosoftAuthenticatorMethodDevice](Update-MgUserAuthenticationMicrosoftAuthenticatorMethodDevice.md)
-Update the navigation property device in users
+The registered device on which Microsoft Authenticator resides.
+This property is null if the device is not registered for passwordless Phone Sign-In.
 
 ### [Update-MgUserAuthenticationWindowHello](Update-MgUserAuthenticationWindowHello.md)
 Update the navigation property windowsHelloForBusinessMethods in users
 
 ### [Update-MgUserAuthenticationWindowHelloForBusinessMethodDevice](Update-MgUserAuthenticationWindowHelloForBusinessMethodDevice.md)
-Update the navigation property device in users
+The registered device on which this Windows Hello for Business key resides.
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementUserExperienceAnalyticAppHealthOverview
 
 ## SYNOPSIS
-Get userExperienceAnalyticsAppHealthOverview from deviceManagement
+User experience analytics appHealth overview
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-MgDeviceManagementUserExperienceAnalyticAppHealthOverview [-ExpandProperty <
 ```
 
 ## DESCRIPTION
-Get userExperienceAnalyticsAppHealthOverview from deviceManagement
+User experience analytics appHealth overview
 
 ## EXAMPLES
 
@@ -62,7 +62,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsCategory
-
 ## NOTES
 
 ALIASES

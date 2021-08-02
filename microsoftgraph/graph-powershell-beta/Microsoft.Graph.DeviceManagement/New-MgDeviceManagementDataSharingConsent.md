@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementDataSharingConsent
 
 ## SYNOPSIS
-Create new navigation property to dataSharingConsents for deviceManagement
+Data sharing consents.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ New-MgDeviceManagementDataSharingConsent -BodyParameter <IMicrosoftGraphDataShar
 ```
 
 ## DESCRIPTION
-Create new navigation property to dataSharingConsents for deviceManagement
+Data sharing consents.
 
 ## EXAMPLES
 
@@ -205,11 +205,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDataSharingConsent
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDataSharingConsent
-
 ## NOTES
 
 ALIASES

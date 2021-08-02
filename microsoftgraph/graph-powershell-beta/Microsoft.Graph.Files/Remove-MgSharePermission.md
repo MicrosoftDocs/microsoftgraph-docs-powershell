@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgSharePermission
 
 ## SYNOPSIS
-Delete navigation property permission for shares
+Used to access the permission representing the underlying sharing link
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgSharePermission -InputObject <IFilesIdentity> [-IfMatch <String>] [-Pas
 ```
 
 ## DESCRIPTION
-Delete navigation property permission for shares
+Used to access the permission representing the underlying sharing link
 
 ## EXAMPLES
 
@@ -129,11 +129,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

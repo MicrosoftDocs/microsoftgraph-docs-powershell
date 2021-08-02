@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementGroupPolicyDefinitionFileDefinitionByRef
 
 ## SYNOPSIS
-Get ref of definitions from deviceManagement
+The group policy definitions associated with the file.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgDeviceManagementGroupPolicyDefinitionFileDefinitionByRef -GroupPolicyDefin
 ```
 
 ## DESCRIPTION
-Get ref of definitions from deviceManagement
+The group policy definitions associated with the file.
 
 ## EXAMPLES
 
@@ -169,7 +169,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

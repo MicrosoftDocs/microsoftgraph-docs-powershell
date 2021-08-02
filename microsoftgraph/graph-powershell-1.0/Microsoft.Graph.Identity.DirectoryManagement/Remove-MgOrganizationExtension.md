@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgOrganizationExtension
 
 ## SYNOPSIS
-Delete navigation property extensions for organization
+The collection of open extensions defined for the organization resource.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgOrganizationExtension -InputObject <IIdentityDirectoryManagementIdentit
 ```
 
 ## DESCRIPTION
-Delete navigation property extensions for organization
+The collection of open extensions defined for the organization resource.
+Nullable.
 
 ## EXAMPLES
 
@@ -144,11 +146,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

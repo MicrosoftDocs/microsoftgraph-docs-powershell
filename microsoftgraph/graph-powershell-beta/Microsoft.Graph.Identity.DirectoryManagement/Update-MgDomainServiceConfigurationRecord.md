@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgDomainServiceConfigurationRecord
 
 ## SYNOPSIS
-Update the navigation property serviceConfigurationRecords in domains
+DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.
+Read-only, Nullable
 
 ## SYNTAX
 
@@ -39,7 +40,8 @@ Update-MgDomainServiceConfigurationRecord -InputObject <IIdentityDirectoryManage
 ```
 
 ## DESCRIPTION
-Update the navigation property serviceConfigurationRecords in domains
+DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.
+Read-only, Nullable
 
 ## EXAMPLES
 
@@ -265,13 +267,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDomainDnsRecord
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

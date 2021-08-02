@@ -1,14 +1,17 @@
 ---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicetransitivememberof
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdeviceregistereduserbyref
 schema: 2.0.0
 ---
 
 # Get-MgDeviceRegisteredUserByRef
 
 ## SYNOPSIS
-Get ref of registeredUsers from devices
+Collection of registered users of the device.
+For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -18,7 +21,10 @@ Get-MgDeviceRegisteredUserByRef -DeviceId <String> [-Filter <String>] [-Search <
 ```
 
 ## DESCRIPTION
-Get ref of registeredUsers from devices
+Collection of registered users of the device.
+For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -168,7 +174,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

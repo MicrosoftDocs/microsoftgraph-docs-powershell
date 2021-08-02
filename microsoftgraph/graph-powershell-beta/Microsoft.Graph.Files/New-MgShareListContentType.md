@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgShareListContentType
 
 ## SYNOPSIS
-Create new navigation property to contentTypes for shares
+The collection of content types present in this list.
 
 ## SYNTAX
 
@@ -51,7 +51,7 @@ New-MgShareListContentType -InputObject <IFilesIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Create new navigation property to contentTypes for shares
+The collection of content types present in this list.
 
 ## EXAMPLES
 
@@ -469,13 +469,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentType
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentType
-
 ## NOTES
 
 ALIASES

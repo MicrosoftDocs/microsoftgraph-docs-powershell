@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgUserDrive
 
 ## SYNOPSIS
-Get drive from users
+The user's OneDrive.
+Read-only.
 
 ## SYNTAX
 
@@ -43,7 +44,8 @@ Get-MgUserDrive -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Pro
 ```
 
 ## DESCRIPTION
-Get drive from users
+The user's OneDrive.
+Read-only.
 
 ## EXAMPLES
 
@@ -252,11 +254,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDrive
-
 ## NOTES
 
 ALIASES

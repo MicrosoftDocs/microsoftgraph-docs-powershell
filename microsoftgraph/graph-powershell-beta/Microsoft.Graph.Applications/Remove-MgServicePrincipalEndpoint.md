@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgServicePrincipalEndpoint
 
 ## SYNOPSIS
-Delete navigation property endpoints for servicePrincipals
+Endpoints available for discovery.
+Services like Sharepoint populate this property with a tenant specific SharePoint endpoints that other applications can discover and use in their experiences.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgServicePrincipalEndpoint -InputObject <IApplicationsIdentity> [-IfMatch
 ```
 
 ## DESCRIPTION
-Delete navigation property endpoints for servicePrincipals
+Endpoints available for discovery.
+Services like Sharepoint populate this property with a tenant specific SharePoint endpoints that other applications can discover and use in their experiences.
 
 ## EXAMPLES
 
@@ -144,11 +146,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

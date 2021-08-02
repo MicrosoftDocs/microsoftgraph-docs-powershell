@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEducationUserTaughtClassByRef
 
 ## SYNOPSIS
-Get ref of taughtClasses from education
+Classes for which the user is a teacher.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgEducationUserTaughtClassByRef -EducationUserId <String> [-Filter <String>]
 ```
 
 ## DESCRIPTION
-Get ref of taughtClasses from education
+Classes for which the user is a teacher.
 
 ## EXAMPLES
 
@@ -169,7 +169,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

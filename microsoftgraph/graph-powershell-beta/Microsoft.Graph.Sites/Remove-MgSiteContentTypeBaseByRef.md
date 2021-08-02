@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgSiteContentTypeBaseByRef
 
 ## SYNOPSIS
-Delete ref of navigation property base for sites
+Parent contentType from which this content type is derived.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgSiteContentTypeBaseByRef -InputObject <ISitesIdentity> [-IfMatch <Strin
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property base for sites
+Parent contentType from which this content type is derived.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

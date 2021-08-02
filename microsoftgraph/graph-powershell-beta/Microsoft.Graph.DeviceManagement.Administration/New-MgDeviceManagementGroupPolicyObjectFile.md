@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementGroupPolicyObjectFile
 
 ## SYNOPSIS
-Create new navigation property to groupPolicyObjectFiles for deviceManagement
+A list of Group Policy Object files uploaded.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ New-MgDeviceManagementGroupPolicyObjectFile -BodyParameter <IMicrosoftGraphGroup
 ```
 
 ## DESCRIPTION
-Create new navigation property to groupPolicyObjectFiles for deviceManagement
+A list of Group Policy Object files uploaded.
 
 ## EXAMPLES
 
@@ -190,11 +190,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyObjectFile
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyObjectFile
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgUserTodoListTaskExtension
 
 ## SYNOPSIS
-Get extensions from users
+The collection of open extensions defined for the task.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgUserTodoListTaskExtension -InputObject <IUsersIdentity> [-ExpandProperty <
 ```
 
 ## DESCRIPTION
-Get extensions from users
+The collection of open extensions defined for the task.
+Nullable.
 
 ## EXAMPLES
 
@@ -271,13 +273,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExtension
-
 ### System.String
-
 ## NOTES
 
 ALIASES

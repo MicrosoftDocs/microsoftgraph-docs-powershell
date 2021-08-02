@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgGroupSetting
 
 ## SYNOPSIS
-Update the navigation property settings in groups
+Settings that can govern this group's behavior, like whether members can invite guest users to the group.
+Nullable.
 
 ## SYNTAX
 
@@ -39,7 +40,8 @@ Update-MgGroupSetting -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftG
 ```
 
 ## DESCRIPTION
-Update the navigation property settings in groups
+Settings that can govern this group's behavior, like whether members can invite guest users to the group.
+Nullable.
 
 ## EXAMPLES
 
@@ -238,13 +240,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectorySetting
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

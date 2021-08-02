@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgDeviceExtension
 
 ## SYNOPSIS
-Update the navigation property extensions in devices
+The collection of open extensions defined for the device.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -37,7 +39,9 @@ Update-MgDeviceExtension -InputObject <IIdentityDirectoryManagementIdentity> -Bo
 ```
 
 ## DESCRIPTION
-Update the navigation property extensions in devices
+The collection of open extensions defined for the device.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -186,13 +190,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupEvent
 
 ## SYNOPSIS
-Get events from groups
+The group's events.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgGroupEvent -InputObject <ICalendarIdentity> [-ExpandProperty <String[]>] [
 ```
 
 ## DESCRIPTION
-Get events from groups
+The group's events.
 
 ## EXAMPLES
 
@@ -241,11 +241,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent
-
 ## NOTES
 
 ALIASES

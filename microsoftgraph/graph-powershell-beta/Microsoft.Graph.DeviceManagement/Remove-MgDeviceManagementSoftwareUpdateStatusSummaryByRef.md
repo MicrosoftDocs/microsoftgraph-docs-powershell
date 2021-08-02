@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementSoftwareUpdateStatusSummaryByRef
 
 ## SYNOPSIS
-Delete ref of navigation property softwareUpdateStatusSummary for deviceManagement
+The software update status summary.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Remove-MgDeviceManagementSoftwareUpdateStatusSummaryByRef [-IfMatch <String>] [-
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property softwareUpdateStatusSummary for deviceManagement
+The software update status summary.
 
 ## EXAMPLES
 
@@ -93,7 +93,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

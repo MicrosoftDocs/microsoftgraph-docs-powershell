@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgUserDirectReportByRef
 
 ## SYNOPSIS
-Create new navigation property ref to directReports for users
+The users and contacts that report to the user.
+(The users and contacts that have their manager property set to this user.) Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -37,7 +39,9 @@ New-MgUserDirectReportByRef -InputObject <IUsersIdentity> -BodyParameter <Hashta
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to directReports for users
+The users and contacts that report to the user.
+(The users and contacts that have their manager property set to this user.) Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -141,13 +145,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1458KgkUsersUserIdDirectreportsRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

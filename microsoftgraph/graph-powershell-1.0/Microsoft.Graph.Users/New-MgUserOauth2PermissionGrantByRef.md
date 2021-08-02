@@ -141,13 +141,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths2Xrvi4UsersUserIdOauth2PermissiongrantsRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

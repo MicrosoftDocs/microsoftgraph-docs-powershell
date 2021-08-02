@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportDeviceConfigurationUserActivity
 
 ## SYNOPSIS
-Invoke function deviceConfigurationUserActivity
+Metadata for the device configuration user activity report
 
 ## SYNTAX
 
@@ -17,7 +17,7 @@ Get-MgReportDeviceConfigurationUserActivity -OutFile <String> [-PassThru] [<Comm
 ```
 
 ## DESCRIPTION
-Invoke function deviceConfigurationUserActivity
+Metadata for the device configuration user activity report
 
 ## EXAMPLES
 
@@ -61,7 +61,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

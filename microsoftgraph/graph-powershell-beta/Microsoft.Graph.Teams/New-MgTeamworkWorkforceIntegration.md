@@ -222,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -SupportedEntities
-workforceIntegrationSupportedEntities
+.
 
 ```yaml
 Type: String
@@ -237,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -Supports
-workforceIntegrationSupportedEntities
+.
 
 ```yaml
 Type: String
@@ -303,11 +303,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWorkforceIntegration
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWorkforceIntegration
-
 ## NOTES
 
 ALIASES
@@ -339,8 +337,8 @@ BODYPARAMETER <IMicrosoftGraphWorkforceIntegration>: workforceIntegration
     - `[Protocol <String>]`: workforceIntegrationEncryptionProtocol
     - `[Secret <String>]`: Encryption shared secret.
   - `[IsActive <Boolean?>]`: Indicates whether this workforce integration is currently active and available.
-  - `[SupportedEntities <String>]`: workforceIntegrationSupportedEntities
-  - `[Supports <String>]`: workforceIntegrationSupportedEntities
+  - `[SupportedEntities <String>]`: 
+  - `[Supports <String>]`: 
   - `[Url <String>]`: Workforce Integration URL for callbacks from the Shifts service.
 
 CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementUserExperienceAnalyticRemoteConnection
 
 ## SYNOPSIS
-Create new navigation property to userExperienceAnalyticsRemoteConnection for deviceManagement
+User experience analytics remote connection
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ New-MgDeviceManagementUserExperienceAnalyticRemoteConnection
 ```
 
 ## DESCRIPTION
-Create new navigation property to userExperienceAnalyticsRemoteConnection for deviceManagement
+User experience analytics remote connection
 
 ## EXAMPLES
 
@@ -290,11 +290,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsRemoteConnection
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsRemoteConnection
-
 ## NOTES
 
 ALIASES

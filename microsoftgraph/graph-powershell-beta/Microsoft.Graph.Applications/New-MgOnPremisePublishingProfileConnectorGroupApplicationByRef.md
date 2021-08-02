@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgOnPremisePublishingProfileConnectorGroupApplicationByRef
 
 ## SYNOPSIS
-Create new navigation property ref to applications for onPremisesPublishingProfiles
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -38,7 +39,8 @@ New-MgOnPremisePublishingProfileConnectorGroupApplicationByRef -InputObject <IAp
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to applications for onPremisesPublishingProfiles
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -157,13 +159,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1UwkpvwOnpremisespublishingprofilesOnpremisespublishingprofileIdConnectorgroupsConnectorgroupIdApplicationsRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

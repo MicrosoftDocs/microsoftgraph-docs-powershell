@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgShareListItemVersion
 
 ## SYNOPSIS
-Create new navigation property to versions for shares
+The list of previous versions of the list item.
 
 ## SYNTAX
 
@@ -69,7 +69,7 @@ New-MgShareListItemVersion -InputObject <IFilesIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Create new navigation property to versions for shares
+The list of previous versions of the list item.
 
 ## EXAMPLES
 
@@ -267,13 +267,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphListItemVersion
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphListItemVersion
-
 ## NOTES
 
 ALIASES

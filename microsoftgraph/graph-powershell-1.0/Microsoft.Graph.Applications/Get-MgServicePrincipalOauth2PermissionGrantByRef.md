@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgServicePrincipalOauth2PermissionGrantByRef
 
 ## SYNOPSIS
-Get ref of oauth2PermissionGrants from servicePrincipals
+Delegated permission grants authorizing this service principal to access an API on behalf of a signed-in user.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -19,7 +21,9 @@ Get-MgServicePrincipalOauth2PermissionGrantByRef -ServicePrincipalId <String> [-
 ```
 
 ## DESCRIPTION
-Get ref of oauth2PermissionGrants from servicePrincipals
+Delegated permission grants authorizing this service principal to access an API on behalf of a signed-in user.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -169,7 +173,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

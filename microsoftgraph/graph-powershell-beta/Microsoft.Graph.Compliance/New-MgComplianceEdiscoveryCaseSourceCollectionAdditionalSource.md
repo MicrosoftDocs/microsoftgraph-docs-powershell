@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgComplianceEdiscoveryCaseSourceCollectionAdditionalSource
 
 ## SYNOPSIS
-Create new navigation property to additionalSources for compliance
+Adds an additional source to the sourceCollection.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ New-MgComplianceEdiscoveryCaseSourceCollectionAdditionalSource -InputObject <ICo
 ```
 
 ## DESCRIPTION
-Create new navigation property to additionalSources for compliance
+Adds an additional source to the sourceCollection.
 
 ## EXAMPLES
 
@@ -221,13 +221,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryDataSource
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryDataSource
-
 ## NOTES
 
 ALIASES

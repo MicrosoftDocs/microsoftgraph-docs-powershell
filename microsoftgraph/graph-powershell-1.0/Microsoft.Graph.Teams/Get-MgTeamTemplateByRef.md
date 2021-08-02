@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgTeamTemplateByRef
 
 ## SYNOPSIS
-Get ref of template from teams
+The template this team was created from.
+See available templates.
 
 ## SYNTAX
 
@@ -23,7 +24,8 @@ Get-MgTeamTemplateByRef -InputObject <ITeamsIdentity> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get ref of template from teams
+The template this team was created from.
+See available templates.
 
 ## EXAMPLES
 
@@ -66,11 +68,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

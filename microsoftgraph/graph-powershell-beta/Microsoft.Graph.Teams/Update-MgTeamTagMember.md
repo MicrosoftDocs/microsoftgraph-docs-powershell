@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgTeamTagMember
 
 ## SYNOPSIS
-Update the navigation property members in teams
+Users assigned to the tag.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Update-MgTeamTagMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftG
 ```
 
 ## DESCRIPTION
-Update the navigation property members in teams
+Users assigned to the tag.
 
 ## EXAMPLES
 
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+The member's display name.
 
 ```yaml
 Type: String
@@ -249,13 +249,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkTagMember
-
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -268,7 +265,7 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER <IMicrosoftGraphTeamworkTagMember>: teamworkTagMember
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
-  - `[DisplayName <String>]`: 
+  - `[DisplayName <String>]`: The member's display name.
   - `[TenantId <String>]`: 
   - `[UserId <String>]`: 
 

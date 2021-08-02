@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgTeamInstalledAppTeamApp
 
 ## SYNOPSIS
-Get teamsApp from teams
+The app that is installed.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgTeamInstalledAppTeamApp -InputObject <ITeamsIdentity> [-ExpandProperty <St
 ```
 
 ## DESCRIPTION
-Get teamsApp from teams
+The app that is installed.
 
 ## EXAMPLES
 
@@ -113,11 +113,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsApp
-
 ## NOTES
 
 ALIASES

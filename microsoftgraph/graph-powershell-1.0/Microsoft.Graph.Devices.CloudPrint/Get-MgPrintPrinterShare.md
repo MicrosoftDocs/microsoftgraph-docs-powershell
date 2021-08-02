@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgPrintPrinterShare
 
 ## SYNOPSIS
-Get shares from print
+The list of printerShares that are associated with the printer.
+Currently, only one printerShare can be associated with the printer.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -19,7 +22,10 @@ Get-MgPrintPrinterShare -PrinterId <String> [-ExpandProperty <String[]>] [-Filte
 ```
 
 ## DESCRIPTION
-Get shares from print
+The list of printerShares that are associated with the printer.
+Currently, only one printerShare can be associated with the printer.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -199,7 +205,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrinterShare
-
 ## NOTES
 
 ALIASES

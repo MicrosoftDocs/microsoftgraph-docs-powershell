@@ -8,7 +8,11 @@ schema: 2.0.0
 # Get-MgDeviceRegisteredOwnerByRef
 
 ## SYNOPSIS
-Get ref of registeredOwners from devices
+The user that cloud joined the device or registered their personal device.
+The registered owner is set at the time of registration.
+Currently, there can be only one owner.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -18,7 +22,11 @@ Get-MgDeviceRegisteredOwnerByRef -DeviceId <String> [-Filter <String>] [-Search 
 ```
 
 ## DESCRIPTION
-Get ref of registeredOwners from devices
+The user that cloud joined the device or registered their personal device.
+The registered owner is set at the time of registration.
+Currently, there can be only one owner.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -168,7 +176,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

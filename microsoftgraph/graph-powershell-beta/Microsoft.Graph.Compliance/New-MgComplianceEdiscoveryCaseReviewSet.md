@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgComplianceEdiscoveryCaseReviewSet
 
 ## SYNOPSIS
-Create new navigation property to reviewSets for compliance
+Returns a list of reviewSet objects in the case.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -39,7 +41,9 @@ New-MgComplianceEdiscoveryCaseReviewSet -InputObject <IComplianceIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to reviewSets for compliance
+Returns a list of reviewSet objects in the case.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -226,13 +230,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryReviewSet
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryReviewSet
-
 ## NOTES
 
 ALIASES

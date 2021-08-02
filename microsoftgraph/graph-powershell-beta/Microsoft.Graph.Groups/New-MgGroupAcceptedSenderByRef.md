@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgGroupAcceptedSenderByRef
 
 ## SYNOPSIS
-Create new navigation property ref to acceptedSenders for groups
+The list of users or groups that are allowed to create post's or calendar events in this group.
+If this list is non-empty then only users or groups listed here are allowed to post.
 
 ## SYNTAX
 
@@ -37,7 +38,8 @@ New-MgGroupAcceptedSenderByRef -InputObject <IGroupsIdentity> -BodyParameter <Ha
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to acceptedSenders for groups
+The list of users or groups that are allowed to create post's or calendar events in this group.
+If this list is non-empty then only users or groups listed here are allowed to post.
 
 ## EXAMPLES
 
@@ -141,13 +143,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1Y8Bsn4GroupsGroupIdAcceptedsendersRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

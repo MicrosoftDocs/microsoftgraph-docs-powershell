@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserProfileEmail
 
 ## SYNOPSIS
-Get emails from users
+Represents detailed information about email addresses associated with the user.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgUserProfileEmail -InputObject <IPeopleIdentity> [-ExpandProperty <String[]
 ```
 
 ## DESCRIPTION
-Get emails from users
+Represents detailed information about email addresses associated with the user.
 
 ## EXAMPLES
 
@@ -241,11 +241,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemEmail
-
 ## NOTES
 
 ALIASES

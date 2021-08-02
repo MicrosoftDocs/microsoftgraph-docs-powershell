@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgServicePrincipalAppRoleAssignedTo
 
 ## SYNOPSIS
-Delete navigation property appRoleAssignedTo for servicePrincipals
+App role assignments for this app or service, granted to users, groups, and other service principals.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgServicePrincipalAppRoleAssignedTo -InputObject <IApplicationsIdentity> 
 ```
 
 ## DESCRIPTION
-Delete navigation property appRoleAssignedTo for servicePrincipals
+App role assignments for this app or service, granted to users, groups, and other service principals.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

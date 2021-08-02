@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgServicePrincipalEndpoint
 
 ## SYNOPSIS
-Create new navigation property to endpoints for servicePrincipals
+Endpoints available for discovery.
+Services like Sharepoint populate this property with a tenant specific SharePoint endpoints that other applications can discover and use in their experiences.
 
 ## SYNTAX
 
@@ -41,7 +42,8 @@ New-MgServicePrincipalEndpoint -InputObject <IApplicationsIdentity> -BodyParamet
 ```
 
 ## DESCRIPTION
-Create new navigation property to endpoints for servicePrincipals
+Endpoints available for discovery.
+Services like Sharepoint populate this property with a tenant specific SharePoint endpoints that other applications can discover and use in their experiences.
 
 ## EXAMPLES
 
@@ -263,13 +265,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEndpoint
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEndpoint
-
 ## NOTES
 
 ALIASES

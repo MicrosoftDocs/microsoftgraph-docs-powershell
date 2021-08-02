@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgServicePrincipalHomeRealmDiscoveryPolicy
 
 ## SYNOPSIS
-Get homeRealmDiscoveryPolicies from servicePrincipals
+The homeRealmDiscoveryPolicies assigned to this service principal.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgServicePrincipalHomeRealmDiscoveryPolicy -ServicePrincipalId <String> [-Ex
 ```
 
 ## DESCRIPTION
-Get homeRealmDiscoveryPolicies from servicePrincipals
+The homeRealmDiscoveryPolicies assigned to this service principal.
 
 ## EXAMPLES
 
@@ -199,7 +199,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphHomeRealmDiscoveryPolicy
-
 ## NOTES
 
 ALIASES

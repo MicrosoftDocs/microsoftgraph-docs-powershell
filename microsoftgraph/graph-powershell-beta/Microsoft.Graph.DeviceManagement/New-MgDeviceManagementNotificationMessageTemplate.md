@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementNotificationMessageTemplate
 
 ## SYNOPSIS
-Create new navigation property to notificationMessageTemplates for deviceManagement
+The Notification Message Templates.
 
 ## SYNTAX
 
@@ -23,12 +23,12 @@ New-MgDeviceManagementNotificationMessageTemplate [-AdditionalProperties <Hashta
 
 ### Create
 ```
-New-MgDeviceManagementNotificationMessageTemplate -BodyParameter <IMicrosoftGraphNotificationMessageTemplate>
+New-MgDeviceManagementNotificationMessageTemplate -BodyParameter <IMicrosoftGraphNotificationMessageTemplate1>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create new navigation property to notificationMessageTemplates for deviceManagement
+The Notification Message Templates.
 
 ## EXAMPLES
 
@@ -56,7 +56,7 @@ Use the notificationMessageTemplate object to create your own custom notificatio
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphNotificationMessageTemplate
+Type: IMicrosoftGraphNotificationMessageTemplate1
 Parameter Sets: Create
 Aliases:
 
@@ -209,12 +209,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphNotificationMessageTemplate
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphNotificationMessageTemplate1
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphNotificationMessageTemplate
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphNotificationMessageTemplate1
 ## NOTES
 
 ALIASES
@@ -224,7 +222,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphNotificationMessageTemplate>: Notification messages are messages that are sent to end users who are determined to be not-compliant with the compliance policies defined by the administrator. Administrators choose notifications and configure them in the Intune Admin Console using the compliance policy creation page under the "Actions for non-compliance" section. Use the notificationMessageTemplate object to create your own custom notifications for administrators to choose while configuring actions for non-compliance.
+BODYPARAMETER <IMicrosoftGraphNotificationMessageTemplate1>: Notification messages are messages that are sent to end users who are determined to be not-compliant with the compliance policies defined by the administrator. Administrators choose notifications and configure them in the Intune Admin Console using the compliance policy creation page under the "Actions for non-compliance" section. Use the notificationMessageTemplate object to create your own custom notifications for administrators to choose while configuring actions for non-compliance.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
   - `[BrandingOptions <String>]`: 

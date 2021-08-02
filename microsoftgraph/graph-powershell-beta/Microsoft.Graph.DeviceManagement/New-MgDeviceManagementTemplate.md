@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementTemplate
 
 ## SYNOPSIS
-Create new navigation property to templates for deviceManagement
+The available templates
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ New-MgDeviceManagementTemplate -BodyParameter <IMicrosoftGraphDeviceManagementTe
 ```
 
 ## DESCRIPTION
-Create new navigation property to templates for deviceManagement
+The available templates
 
 ## EXAMPLES
 
@@ -303,11 +303,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementTemplate
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementTemplate
-
 ## NOTES
 
 ALIASES

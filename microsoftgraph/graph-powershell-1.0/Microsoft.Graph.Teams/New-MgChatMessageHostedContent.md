@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgChatMessageHostedContent
 
 ## SYNOPSIS
-Create new navigation property to hostedContents for chats
+Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ New-MgChatMessageHostedContent -InputObject <ITeamsIdentity> -BodyParameter <Has
 ```
 
 ## DESCRIPTION
-Create new navigation property to hostedContents for chats
+Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
 ## EXAMPLES
 
@@ -205,13 +205,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessageHostedContent
-
 ## NOTES
 
 ALIASES

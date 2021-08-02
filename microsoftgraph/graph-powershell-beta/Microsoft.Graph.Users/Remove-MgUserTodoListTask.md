@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgUserTodoListTask
 
 ## SYNOPSIS
-Delete navigation property tasks for users
+The tasks in this task list.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +27,9 @@ Remove-MgUserTodoListTask -InputObject <IUsersIdentity> [-IfMatch <String>] [-Pa
 ```
 
 ## DESCRIPTION
-Delete navigation property tasks for users
+The tasks in this task list.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -159,11 +163,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgAppCatalogTeamAppDefinitionBot
 
 ## SYNOPSIS
-Update the navigation property bot in appCatalogs
+The details of the bot specified in the Teams app manifest.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Update-MgAppCatalogTeamAppDefinitionBot -InputObject <ITeamsIdentity> -BodyParam
 ```
 
 ## DESCRIPTION
-Update the navigation property bot in appCatalogs
+The details of the bot specified in the Teams app manifest.
 
 ## EXAMPLES
 
@@ -186,13 +186,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

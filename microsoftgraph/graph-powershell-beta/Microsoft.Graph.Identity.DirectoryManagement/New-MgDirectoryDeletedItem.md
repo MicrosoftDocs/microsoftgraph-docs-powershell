@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgDirectoryDeletedItem
 
 ## SYNOPSIS
-Create new navigation property to deletedItems for directory
+Recently deleted items.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +27,9 @@ New-MgDirectoryDeletedItem -BodyParameter <IMicrosoftGraphDirectoryObject> [-Wha
 ```
 
 ## DESCRIPTION
-Create new navigation property to deletedItems for directory
+Recently deleted items.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -130,11 +134,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
-
 ## NOTES
 
 ALIASES

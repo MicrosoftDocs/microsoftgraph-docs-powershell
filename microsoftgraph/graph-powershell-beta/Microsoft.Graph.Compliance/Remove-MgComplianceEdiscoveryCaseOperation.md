@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgComplianceEdiscoveryCaseOperation
 
 ## SYNOPSIS
-Delete navigation property operations for compliance
+Returns a list of case operation objects for this case.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgComplianceEdiscoveryCaseOperation -InputObject <IComplianceIdentity> [-
 ```
 
 ## DESCRIPTION
-Delete navigation property operations for compliance
+Returns a list of case operation objects for this case.
+Nullable.
 
 ## EXAMPLES
 
@@ -144,11 +146,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

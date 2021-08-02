@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperationByRef
 
 ## SYNOPSIS
-Get ref of lastEstimateStatisticsOperation from compliance
+The last estimate operation associated with the sourceCollection.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperationByR
 ```
 
 ## DESCRIPTION
-Get ref of lastEstimateStatisticsOperation from compliance
+The last estimate operation associated with the sourceCollection.
 
 ## EXAMPLES
 
@@ -83,11 +83,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

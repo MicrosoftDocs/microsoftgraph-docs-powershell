@@ -23,7 +23,7 @@ Update-MgPolicyAuthenticationMethodPolicy [-AdditionalProperties <Hashtable>]
 
 ### Update1
 ```
-Update-MgPolicyAuthenticationMethodPolicy -BodyParameter <IMicrosoftGraphAuthenticationMethodsPolicy>
+Update-MgPolicyAuthenticationMethodPolicy -BodyParameter <IMicrosoftGraphAuthenticationMethodsPolicy1>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -50,7 +50,7 @@ Accept wildcard characters: False
 ```
 
 ### -AuthenticationMethodConfigurations
-.
+Represents the settings for each authentication method.
 To construct, see NOTES section for AUTHENTICATIONMETHODCONFIGURATIONS properties and create a hash table.
 
 ```yaml
@@ -70,7 +70,7 @@ authenticationMethodsPolicy
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAuthenticationMethodsPolicy
+Type: IMicrosoftGraphAuthenticationMethodsPolicy1
 Parameter Sets: Update1
 Aliases:
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-.
+A description of the policy.
 
 ```yaml
 Type: String
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+The name of the policy.
 
 ```yaml
 Type: String
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastModifiedDateTime
-.
+The date and time of the last update to the policy.
 
 ```yaml
 Type: DateTime
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -PolicyVersion
-.
+The version of the policy in use.
 
 ```yaml
 Type: String
@@ -222,12 +222,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationMethodsPolicy
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationMethodsPolicy1
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -237,20 +235,20 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-AUTHENTICATIONMETHODCONFIGURATIONS <IMicrosoftGraphAuthenticationMethodConfiguration[]>: .
+AUTHENTICATIONMETHODCONFIGURATIONS <IMicrosoftGraphAuthenticationMethodConfiguration[]>: Represents the settings for each authentication method.
   - `[Id <String>]`: Read-only.
   - `[State <String>]`: authenticationMethodState
 
-BODYPARAMETER <IMicrosoftGraphAuthenticationMethodsPolicy>: authenticationMethodsPolicy
+BODYPARAMETER <IMicrosoftGraphAuthenticationMethodsPolicy1>: authenticationMethodsPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
-  - `[AuthenticationMethodConfigurations <IMicrosoftGraphAuthenticationMethodConfiguration[]>]`: 
+  - `[AuthenticationMethodConfigurations <IMicrosoftGraphAuthenticationMethodConfiguration[]>]`: Represents the settings for each authentication method.
     - `[Id <String>]`: Read-only.
     - `[State <String>]`: authenticationMethodState
-  - `[Description <String>]`: 
-  - `[DisplayName <String>]`: 
-  - `[LastModifiedDateTime <DateTime?>]`: 
-  - `[PolicyVersion <String>]`: 
+  - `[Description <String>]`: A description of the policy.
+  - `[DisplayName <String>]`: The name of the policy.
+  - `[LastModifiedDateTime <DateTime?>]`: The date and time of the last update to the policy.
+  - `[PolicyVersion <String>]`: The version of the policy in use.
   - `[ReconfirmationInDays <Int32?>]`: 
 
 ## RELATED LINKS

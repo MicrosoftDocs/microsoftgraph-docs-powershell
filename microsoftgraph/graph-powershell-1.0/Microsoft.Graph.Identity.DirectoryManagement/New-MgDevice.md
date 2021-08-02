@@ -300,8 +300,7 @@ Accept wildcard characters: False
 ```
 
 ### -MemberOf
-Groups that this group is a member of.
-HTTP Methods: GET (supported for all groups).
+Groups that this device is a member of.
 Read-only.
 Nullable.
 To construct, see NOTES section for MEMBEROF properties and create a hash table.
@@ -470,7 +469,8 @@ Accept wildcard characters: False
 ```
 
 ### -TransitiveMemberOf
-.
+Groups that this device is a member of.
+This operation is transitive.
 To construct, see NOTES section for TRANSITIVEMEMBEROF properties and create a hash table.
 
 ```yaml
@@ -540,11 +540,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDevice
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDevice
-
 ## NOTES
 
 ALIASES
@@ -579,7 +577,7 @@ BODYPARAMETER <IMicrosoftGraphDevice>: Represents an Azure Active Directory obje
   - `[IsCompliant <Boolean?>]`: true if the device complies with Mobile Device Management (MDM) policies; otherwise, false. Read-only. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
   - `[IsManaged <Boolean?>]`: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
   - `[MdmAppId <String>]`: Application identifier used to register device into MDM. Read-only. Supports $filter.
-  - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable.
+  - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups that this device is a member of. Read-only. Nullable.
     - `[Id <String>]`: Read-only.
     - `[DeletedDateTime <DateTime?>]`: 
   - `[OnPremisesLastSyncDateTime <DateTime?>]`: The last time at which the object was synced with the on-premises directory. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
@@ -591,13 +589,13 @@ BODYPARAMETER <IMicrosoftGraphDevice>: Represents an Azure Active Directory obje
   - `[RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]`: The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Currently, there can be only one owner. Read-only. Nullable.
   - `[RegisteredUsers <IMicrosoftGraphDirectoryObject[]>]`: Collection of registered users of the device. For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration. Read-only. Nullable.
   - `[SystemLabels <String[]>]`: List of labels applied to the device by the system.
-  - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: 
+  - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups that this device is a member of. This operation is transitive.
   - `[TrustType <String>]`: Type of trust for the joined device. Read-only. Possible values: Workplace (indicates bring your own personal devices), AzureAd (Cloud only joined devices), ServerAd (on-premises domain joined devices joined to Azure AD). For more details, see Introduction to device management in Azure Active Directory
 
 EXTENSIONS <IMicrosoftGraphExtension[]>: The collection of open extensions defined for the device. Read-only. Nullable.
   - `[Id <String>]`: Read-only.
 
-MEMBEROF <IMicrosoftGraphDirectoryObject[]>: Groups that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable.
+MEMBEROF <IMicrosoftGraphDirectoryObject[]>: Groups that this device is a member of. Read-only. Nullable.
   - `[Id <String>]`: Read-only.
   - `[DeletedDateTime <DateTime?>]`: 
 
@@ -609,7 +607,7 @@ REGISTEREDUSERS <IMicrosoftGraphDirectoryObject[]>: Collection of registered use
   - `[Id <String>]`: Read-only.
   - `[DeletedDateTime <DateTime?>]`: 
 
-TRANSITIVEMEMBEROF <IMicrosoftGraphDirectoryObject[]>: .
+TRANSITIVEMEMBEROF <IMicrosoftGraphDirectoryObject[]>: Groups that this device is a member of. This operation is transitive.
   - `[Id <String>]`: Read-only.
   - `[DeletedDateTime <DateTime?>]`: 
 

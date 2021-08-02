@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgPrintPrinterConnectorByRef
 
 ## SYNOPSIS
-Create new navigation property ref to connectors for print
+The connectors that are associated with the printer.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ New-MgPrintPrinterConnectorByRef -InputObject <IDevicesCloudPrintIdentity> -Body
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to connectors for print
+The connectors that are associated with the printer.
 
 ## EXAMPLES
 
@@ -141,13 +141,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1Vqtzl6PrintPrintersPrinterIdConnectorsRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

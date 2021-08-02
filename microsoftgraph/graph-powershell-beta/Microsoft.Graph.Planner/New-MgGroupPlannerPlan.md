@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgGroupPlannerPlan
 
 ## SYNOPSIS
-Create new navigation property to plans for groups
+Read-only.
+Nullable.
+Returns the plannerPlans owned by the group.
 
 ## SYNTAX
 
@@ -43,7 +45,9 @@ New-MgGroupPlannerPlan -InputObject <IPlannerIdentity> -BodyParameter <IMicrosof
 ```
 
 ## DESCRIPTION
-Create new navigation property to plans for groups
+Read-only.
+Nullable.
+Returns the plannerPlans owned by the group.
 
 ## EXAMPLES
 
@@ -313,13 +317,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerPlan1
-
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerPlan1
-
 ## NOTES
 
 ALIASES
@@ -644,8 +645,5 @@ TASKS <IMicrosoftGraphPlannerTask1[]>: Collection of tasks in the plan. Read-onl
   - `[Title <String>]`: Title of the task.
 
 ## RELATED LINKS
-
-## RELATED LINKS
-
 
 ## RELATED LINKS

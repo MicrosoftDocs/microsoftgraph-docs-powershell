@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgServicePrincipalDelegatedPermissionClassification
 
 ## SYNOPSIS
-Update the navigation property delegatedPermissionClassifications in servicePrincipals
+The permission classifications for delegated permissions exposed by the app that this service principal represents.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Update-MgServicePrincipalDelegatedPermissionClassification -InputObject <IApplic
 ```
 
 ## DESCRIPTION
-Update the navigation property delegatedPermissionClassifications in servicePrincipals
+The permission classifications for delegated permissions exposed by the app that this service principal represents.
 
 ## EXAMPLES
 
@@ -239,13 +239,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDelegatedPermissionClassification
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

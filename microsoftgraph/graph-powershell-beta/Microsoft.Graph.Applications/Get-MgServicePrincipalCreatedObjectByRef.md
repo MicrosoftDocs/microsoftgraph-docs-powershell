@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgServicePrincipalCreatedObjectByRef
 
 ## SYNOPSIS
-Get ref of createdObjects from servicePrincipals
+Directory objects created by this service principal.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -19,7 +21,9 @@ Get-MgServicePrincipalCreatedObjectByRef -ServicePrincipalId <String> [-Filter <
 ```
 
 ## DESCRIPTION
-Get ref of createdObjects from servicePrincipals
+Directory objects created by this service principal.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -169,7 +173,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

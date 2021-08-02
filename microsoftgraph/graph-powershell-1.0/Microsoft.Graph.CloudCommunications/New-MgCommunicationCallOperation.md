@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgCommunicationCallOperation
 
 ## SYNOPSIS
-Create new navigation property to operations for communications
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -39,7 +40,8 @@ New-MgCommunicationCallOperation -InputObject <ICloudCommunicationsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to operations for communications
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -206,13 +208,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCommsOperation
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCommsOperation
-
 ## NOTES
 
 ALIASES

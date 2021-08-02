@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSetting
 
 ## SYNOPSIS
-Get androidManagedStoreAccountEnterpriseSettings from deviceManagement
+The singleton Android managed store account enterprise settings entity.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSetting [-ExpandProper
 ```
 
 ## DESCRIPTION
-Get androidManagedStoreAccountEnterpriseSettings from deviceManagement
+The singleton Android managed store account enterprise settings entity.
 
 ## EXAMPLES
 
@@ -62,7 +62,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAndroidManagedStoreAccountEnterpriseSettings
-
 ## NOTES
 
 ALIASES

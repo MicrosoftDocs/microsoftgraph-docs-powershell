@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgOnPremisePublishingProfileConnectorMemberOf
 
 ## SYNOPSIS
-Delete navigation property memberOf for onPremisesPublishingProfiles
+The connectorGroup that the connector is a member of.
+Read-only.
 
 ## SYNTAX
 
@@ -26,7 +27,8 @@ Remove-MgOnPremisePublishingProfileConnectorMemberOf -InputObject <IApplications
 ```
 
 ## DESCRIPTION
-Delete navigation property memberOf for onPremisesPublishingProfiles
+The connectorGroup that the connector is a member of.
+Read-only.
 
 ## EXAMPLES
 
@@ -160,11 +162,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

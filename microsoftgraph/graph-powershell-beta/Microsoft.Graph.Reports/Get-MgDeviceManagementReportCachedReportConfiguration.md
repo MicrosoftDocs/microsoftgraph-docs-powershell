@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementReportCachedReportConfiguration
 
 ## SYNOPSIS
-Get cachedReportConfigurations from deviceManagement
+Entity representing the configuration of a cached report
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementReportCachedReportConfiguration -InputObject <IReportsIden
 ```
 
 ## DESCRIPTION
-Get cachedReportConfigurations from deviceManagement
+Entity representing the configuration of a cached report
 
 ## EXAMPLES
 
@@ -226,11 +226,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IReportsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementCachedReportConfiguration
-
 ## NOTES
 
 ALIASES

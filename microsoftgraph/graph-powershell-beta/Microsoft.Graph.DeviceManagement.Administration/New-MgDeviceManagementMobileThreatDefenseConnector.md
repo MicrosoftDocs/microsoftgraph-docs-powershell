@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementMobileThreatDefenseConnector
 
 ## SYNOPSIS
-Create new navigation property to mobileThreatDefenseConnectors for deviceManagement
+The list of Mobile threat Defense connectors configured by the tenant.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ New-MgDeviceManagementMobileThreatDefenseConnector
 ```
 
 ## DESCRIPTION
-Create new navigation property to mobileThreatDefenseConnectors for deviceManagement
+The list of Mobile threat Defense connectors configured by the tenant.
 
 ## EXAMPLES
 
@@ -346,11 +346,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileThreatDefenseConnector1
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileThreatDefenseConnector1
-
 ## NOTES
 
 ALIASES

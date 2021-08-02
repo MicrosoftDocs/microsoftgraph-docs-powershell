@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteList
 
 ## SYNOPSIS
-Get lists from sites
+The collection of lists under this site.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgSiteList -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Prop
 ```
 
 ## DESCRIPTION
-Get lists from sites
+The collection of lists under this site.
 
 ## EXAMPLES
 
@@ -241,11 +241,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphList1
-
 ## NOTES
 
 ALIASES

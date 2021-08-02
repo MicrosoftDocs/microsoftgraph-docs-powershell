@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementDeviceConfigurationConflictSummary
 
 ## SYNOPSIS
-Create new navigation property to deviceConfigurationConflictSummary for deviceManagement
+Summary of policies in conflict state for this account.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ New-MgDeviceManagementDeviceConfigurationConflictSummary
 ```
 
 ## DESCRIPTION
-Create new navigation property to deviceConfigurationConflictSummary for deviceManagement
+Summary of policies in conflict state for this account.
 
 ## EXAMPLES
 
@@ -161,11 +161,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationConflictSummary
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationConflictSummary
-
 ## NOTES
 
 ALIASES

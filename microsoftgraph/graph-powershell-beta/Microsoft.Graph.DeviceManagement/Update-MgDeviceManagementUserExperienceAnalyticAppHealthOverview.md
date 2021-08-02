@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementUserExperienceAnalyticAppHealthOverview
 
 ## SYNOPSIS
-Update the navigation property userExperienceAnalyticsAppHealthOverview in deviceManagement
+User experience analytics appHealth overview
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Update-MgDeviceManagementUserExperienceAnalyticAppHealthOverview
 ```
 
 ## DESCRIPTION
-Update the navigation property userExperienceAnalyticsAppHealthOverview in deviceManagement
+User experience analytics appHealth overview
 
 ## EXAMPLES
 
@@ -164,11 +164,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsCategory
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

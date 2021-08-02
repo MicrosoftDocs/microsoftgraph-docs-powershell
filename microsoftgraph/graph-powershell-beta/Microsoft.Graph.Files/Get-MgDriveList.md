@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgDriveList
 
 ## SYNOPSIS
-Get list from drives
+For drives in SharePoint, the underlying document library list.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -24,7 +26,9 @@ Get-MgDriveList -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Pro
 ```
 
 ## DESCRIPTION
-Get list from drives
+For drives in SharePoint, the underlying document library list.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -97,11 +101,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphList
-
 ## NOTES
 
 ALIASES

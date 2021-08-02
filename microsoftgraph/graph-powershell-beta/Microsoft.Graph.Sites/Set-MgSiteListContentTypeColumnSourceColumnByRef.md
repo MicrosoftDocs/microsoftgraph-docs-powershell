@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgSiteListContentTypeColumnSourceColumnByRef
 
 ## SYNOPSIS
-Update the ref of navigation property sourceColumn in sites
+The source column for content type column.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Set-MgSiteListContentTypeColumnSourceColumnByRef -InputObject <ISitesIdentity> -
 ```
 
 ## DESCRIPTION
-Update the ref of navigation property sourceColumn in sites
+The source column for content type column.
 
 ## EXAMPLES
 
@@ -203,13 +203,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgPlannerPlanTask
 
 ## SYNOPSIS
-Create new navigation property to tasks for planner
+Collection of tasks in the plan.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -57,7 +59,9 @@ New-MgPlannerPlanTask -InputObject <IPlannerIdentity> -BodyParameter <IMicrosoft
 ```
 
 ## DESCRIPTION
-Create new navigation property to tasks for planner
+Collection of tasks in the plan.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -595,13 +599,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerTask1
-
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerTask1
-
 ## NOTES
 
 ALIASES
@@ -743,8 +744,5 @@ PROGRESSTASKBOARDFORMAT <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat1>: pl
   - `[OrderHint <String>]`: Hint value used to order the task on the Progress view of the Task Board. The format is defined as outlined here.
 
 ## RELATED LINKS
-
-## RELATED LINKS
-
 
 ## RELATED LINKS

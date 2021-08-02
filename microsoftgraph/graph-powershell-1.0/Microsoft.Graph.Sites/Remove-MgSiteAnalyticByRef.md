@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgSiteAnalyticByRef
 
 ## SYNOPSIS
-Delete ref of navigation property analytics for sites
+Analytics about the view activities that took place in this site.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgSiteAnalyticByRef -InputObject <ISitesIdentity> [-IfMatch <String>] [-P
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property analytics for sites
+Analytics about the view activities that took place in this site.
 
 ## EXAMPLES
 
@@ -129,11 +129,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

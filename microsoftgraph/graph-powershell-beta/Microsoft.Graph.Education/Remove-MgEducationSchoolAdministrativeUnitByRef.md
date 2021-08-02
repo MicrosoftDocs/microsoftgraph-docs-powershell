@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgEducationSchoolAdministrativeUnitByRef
 
 ## SYNOPSIS
-Delete ref of navigation property administrativeUnit for education
+The underlying administrativeUnit for this school.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgEducationSchoolAdministrativeUnitByRef -InputObject <IEducationIdentity
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property administrativeUnit for education
+The underlying administrativeUnit for this school.
 
 ## EXAMPLES
 
@@ -129,11 +129,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

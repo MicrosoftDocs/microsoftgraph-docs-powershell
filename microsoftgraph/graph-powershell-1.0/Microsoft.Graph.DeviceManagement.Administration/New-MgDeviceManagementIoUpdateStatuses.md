@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementIoUpdateStatuses
 
 ## SYNOPSIS
-Create new navigation property to iosUpdateStatuses for deviceManagement
+The IOS software update installation statuses for this account.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ New-MgDeviceManagementIoUpdateStatuses -BodyParameter <IMicrosoftGraphIosUpdateD
 ```
 
 ## DESCRIPTION
-Create new navigation property to iosUpdateStatuses for deviceManagement
+The IOS software update installation statuses for this account.
 
 ## EXAMPLES
 
@@ -282,11 +282,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIosUpdateDeviceStatus
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIosUpdateDeviceStatus
-
 ## NOTES
 
 ALIASES

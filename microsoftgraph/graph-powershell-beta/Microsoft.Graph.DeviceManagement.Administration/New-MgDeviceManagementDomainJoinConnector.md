@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementDomainJoinConnector
 
 ## SYNOPSIS
-Create new navigation property to domainJoinConnectors for deviceManagement
+A list of connector objects.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ New-MgDeviceManagementDomainJoinConnector -BodyParameter <IMicrosoftGraphDeviceM
 ```
 
 ## DESCRIPTION
-Create new navigation property to domainJoinConnectors for deviceManagement
+A list of connector objects.
 
 ## EXAMPLES
 
@@ -175,11 +175,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementDomainJoinConnector
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementDomainJoinConnector
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgOrganizationSettingProfileCardProperty
 
 ## SYNOPSIS
-Delete navigation property profileCardProperties for organization
+Contains a collection of the properties an administrator has defined as visible on the Microsoft 365 profile card.
+Get organization settings returns the properties configured for profile cards for the organization.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgOrganizationSettingProfileCardProperty -InputObject <IIdentityDirectory
 ```
 
 ## DESCRIPTION
-Delete navigation property profileCardProperties for organization
+Contains a collection of the properties an administrator has defined as visible on the Microsoft 365 profile card.
+Get organization settings returns the properties configured for profile cards for the organization.
 
 ## EXAMPLES
 
@@ -144,11 +146,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

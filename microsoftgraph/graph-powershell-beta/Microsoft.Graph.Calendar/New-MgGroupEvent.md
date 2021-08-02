@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgGroupEvent
 
 ## SYNOPSIS
-Create new navigation property to events for groups
+The group's events.
 
 ## SYNTAX
 
@@ -69,7 +69,7 @@ New-MgGroupEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGrap
 ```
 
 ## DESCRIPTION
-Create new navigation property to events for groups
+The group's events.
 
 ## EXAMPLES
 
@@ -979,13 +979,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent1
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent1
-
 ## NOTES
 
 ALIASES

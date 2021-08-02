@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgGroupDrive
 
 ## SYNOPSIS
-Get drive from groups
+The group's default drive.
+Read-only.
 
 ## SYNTAX
 
@@ -43,7 +44,8 @@ Get-MgGroupDrive -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Pr
 ```
 
 ## DESCRIPTION
-Get drive from groups
+The group's default drive.
+Read-only.
 
 ## EXAMPLES
 
@@ -252,11 +254,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDrive1
-
 ## NOTES
 
 ALIASES

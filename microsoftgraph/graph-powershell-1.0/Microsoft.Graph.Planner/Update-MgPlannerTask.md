@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgPlannerTask
 
 ## SYNOPSIS
-Update the navigation property tasks in planner
+Read-only.
+Nullable.
+Returns a collection of the specified tasks
 
 ## SYNTAX
 
@@ -55,7 +57,9 @@ Update-MgPlannerTask -InputObject <IPlannerIdentity> -BodyParameter <IMicrosoftG
 ```
 
 ## DESCRIPTION
-Update the navigation property tasks in planner
+Read-only.
+Nullable.
+Returns a collection of the specified tasks
 
 ## EXAMPLES
 
@@ -574,13 +578,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerTask
-
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

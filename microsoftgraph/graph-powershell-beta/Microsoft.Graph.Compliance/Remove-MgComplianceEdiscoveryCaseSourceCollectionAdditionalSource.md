@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgComplianceEdiscoveryCaseSourceCollectionAdditionalSource
 
 ## SYNOPSIS
-Delete navigation property additionalSources for compliance
+Adds an additional source to the sourceCollection.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgComplianceEdiscoveryCaseSourceCollectionAdditionalSource -InputObject <
 ```
 
 ## DESCRIPTION
-Delete navigation property additionalSources for compliance
+Adds an additional source to the sourceCollection.
 
 ## EXAMPLES
 
@@ -159,11 +159,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

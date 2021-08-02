@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgUserPhoto
 
 ## SYNOPSIS
-Create new navigation property to photos for users
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -37,7 +38,8 @@ New-MgUserPhoto -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphPro
 ```
 
 ## DESCRIPTION
-Create new navigation property to photos for users
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -189,13 +191,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProfilePhoto
-
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProfilePhoto
-
 ## NOTES
 
 ALIASES

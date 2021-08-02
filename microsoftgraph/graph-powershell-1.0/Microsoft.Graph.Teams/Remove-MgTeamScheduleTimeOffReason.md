@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgTeamScheduleTimeOffReason
 
 ## SYNOPSIS
-Delete navigation property timeOffReasons for teams
+The set of reasons for a time off in the schedule.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgTeamScheduleTimeOffReason -InputObject <ITeamsIdentity> [-IfMatch <Stri
 ```
 
 ## DESCRIPTION
-Delete navigation property timeOffReasons for teams
+The set of reasons for a time off in the schedule.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

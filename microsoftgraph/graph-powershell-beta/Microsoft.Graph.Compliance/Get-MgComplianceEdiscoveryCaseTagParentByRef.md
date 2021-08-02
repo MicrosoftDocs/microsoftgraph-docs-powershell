@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgComplianceEdiscoveryCaseTagParentByRef
 
 ## SYNOPSIS
-Get ref of parent from compliance
+Returns the parent tag of the specified tag.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Get-MgComplianceEdiscoveryCaseTagParentByRef -InputObject <IComplianceIdentity> 
 ```
 
 ## DESCRIPTION
-Get ref of parent from compliance
+Returns the parent tag of the specified tag.
 
 ## EXAMPLES
 
@@ -81,11 +81,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

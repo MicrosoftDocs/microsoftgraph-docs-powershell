@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserProfileEducationalActivity
 
 ## SYNOPSIS
-Update the navigation property educationalActivities in users
+Represents data that a user has supplied related to undergraduate, graduate, postgraduate or other educational activities.
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ Update-MgUserProfileEducationalActivity -InputObject <IPeopleIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property educationalActivities in users
+Represents data that a user has supplied related to undergraduate, graduate, postgraduate or other educational activities.
 
 ## EXAMPLES
 
@@ -398,13 +398,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationalActivity
-
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgGroupCalendarMultiValueExtendedProperty
 
 ## SYNOPSIS
-Get multiValueExtendedProperties from groups
+The collection of multi-value extended properties defined for the calendar.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgGroupCalendarMultiValueExtendedProperty -InputObject <ICalendarIdentity> [
 ```
 
 ## DESCRIPTION
-Get multiValueExtendedProperties from groups
+The collection of multi-value extended properties defined for the calendar.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -241,11 +245,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMultiValueLegacyExtendedProperty
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgOnPremisePublishingProfilePublishedResourceAgentGroupPublishedResource
 
 ## SYNOPSIS
-Create new navigation property to publishedResources for onPremisesPublishingProfiles
+List of publishedResource that are assigned to an onPremisesAgentGroup.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -43,7 +45,9 @@ New-MgOnPremisePublishingProfilePublishedResourceAgentGroupPublishedResource
 ```
 
 ## DESCRIPTION
-Create new navigation property to publishedResources for onPremisesPublishingProfiles
+List of publishedResource that are assigned to an onPremisesAgentGroup.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -256,13 +260,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPublishedResource
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPublishedResource
-
 ## NOTES
 
 ALIASES

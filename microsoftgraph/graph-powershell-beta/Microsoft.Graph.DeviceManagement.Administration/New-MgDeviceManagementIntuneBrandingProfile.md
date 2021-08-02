@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementIntuneBrandingProfile
 
 ## SYNOPSIS
-Create new navigation property to intuneBrandingProfiles for deviceManagement
+Intune branding profiles targeted to AAD groups
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ New-MgDeviceManagementIntuneBrandingProfile -BodyParameter <IMicrosoftGraphIntun
 ```
 
 ## DESCRIPTION
-Create new navigation property to intuneBrandingProfiles for deviceManagement
+Intune branding profiles targeted to AAD groups
 
 ## EXAMPLES
 
@@ -613,11 +613,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIntuneBrandingProfile
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIntuneBrandingProfile
-
 ## NOTES
 
 ALIASES

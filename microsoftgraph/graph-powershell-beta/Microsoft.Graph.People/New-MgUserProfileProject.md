@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserProfileProject
 
 ## SYNOPSIS
-Create new navigation property to projects for users
+Represents detailed information about projects associated with a user.
 
 ## SYNTAX
 
@@ -50,7 +50,7 @@ New-MgUserProfileProject -InputObject <IPeopleIdentity> -BodyParameter <IMicroso
 ```
 
 ## DESCRIPTION
-Create new navigation property to projects for users
+Represents detailed information about projects associated with a user.
 
 ## EXAMPLES
 
@@ -419,13 +419,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProjectParticipation
-
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProjectParticipation
-
 ## NOTES
 
 ALIASES

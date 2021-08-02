@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgGroupMemberOf
 
 ## SYNOPSIS
-Get memberOf from groups
+Groups and administrative units that this group is a member of.
+HTTP Methods: GET (supported for all groups).
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -19,7 +22,10 @@ Get-MgGroupMemberOf -GroupId <String> [-ExpandProperty <String[]>] [-Filter <Str
 ```
 
 ## DESCRIPTION
-Get memberOf from groups
+Groups and administrative units that this group is a member of.
+HTTP Methods: GET (supported for all groups).
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -199,7 +205,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
-
 ## NOTES
 
 ALIASES

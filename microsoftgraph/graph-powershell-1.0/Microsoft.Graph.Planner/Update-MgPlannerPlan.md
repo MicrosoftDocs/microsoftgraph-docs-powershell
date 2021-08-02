@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgPlannerPlan
 
 ## SYNOPSIS
-Update the navigation property plans in planner
+Read-only.
+Nullable.
+Returns a collection of the specified plans
 
 ## SYNTAX
 
@@ -43,7 +45,9 @@ Update-MgPlannerPlan -InputObject <IPlannerIdentity> -BodyParameter <IMicrosoftG
 ```
 
 ## DESCRIPTION
-Update the navigation property plans in planner
+Read-only.
+Nullable.
+Returns a collection of the specified plans
 
 ## EXAMPLES
 
@@ -297,13 +301,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerPlan
-
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

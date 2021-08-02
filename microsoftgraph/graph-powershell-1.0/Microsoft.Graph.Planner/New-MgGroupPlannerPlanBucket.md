@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgGroupPlannerPlanBucket
 
 ## SYNOPSIS
-Create new navigation property to buckets for groups
+Collection of buckets in the plan.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -39,7 +41,9 @@ New-MgGroupPlannerPlanBucket -InputObject <IPlannerIdentity> -BodyParameter <IMi
 ```
 
 ## DESCRIPTION
-Create new navigation property to buckets for groups
+Collection of buckets in the plan.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -238,13 +242,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerBucket
-
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerBucket
-
 ## NOTES
 
 ALIASES
@@ -381,8 +382,5 @@ TASKS <IMicrosoftGraphPlannerTask[]>: Read-only. Nullable. The collection of tas
   - `[Title <String>]`: Title of the task.
 
 ## RELATED LINKS
-
-## RELATED LINKS
-
 
 ## RELATED LINKS

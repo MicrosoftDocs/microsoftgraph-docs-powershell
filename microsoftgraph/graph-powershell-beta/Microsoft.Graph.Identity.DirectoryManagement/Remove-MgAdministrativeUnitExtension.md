@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgAdministrativeUnitExtension
 
 ## SYNOPSIS
-Delete navigation property extensions for administrativeUnits
+The collection of open extensions defined for this Administrative Unit.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgAdministrativeUnitExtension -InputObject <IIdentityDirectoryManagementI
 ```
 
 ## DESCRIPTION
-Delete navigation property extensions for administrativeUnits
+The collection of open extensions defined for this Administrative Unit.
+Nullable.
 
 ## EXAMPLES
 
@@ -144,11 +146,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
