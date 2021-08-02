@@ -37,10 +37,9 @@ There is currently no tool to automatically converts scripts in Azure AD PowerSh
 > [!Note]
 > Parameter names may not be the same in Microsoft Graph PowerShell. Consult the documentation to understand how to convert the parameters.
 
-#### Example:
+#### Example
 
-The equivalent of the Get-AzureADUser cmdlet is [Get-MgUser](../../graph-powershell-1.0/Microsoft.Graph.Users/Get-MgUser.md). This cmdlet has additional parameters that let you do more with it's output e.g the ConsistencyLevel parameter.
-
+The equivalent of the Get-AzureADUser cmdlet is [Get-MgUser](graph-powershell-1.0/Microsoft.Graph.Users/Get-MgUser.md). This cmdlet has additional parameters that let you do more with it's output e.g the ConsistencyLevel parameter.
 
 ### Limitations
 
