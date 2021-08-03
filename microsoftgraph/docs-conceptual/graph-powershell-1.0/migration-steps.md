@@ -47,9 +47,9 @@ The equivalent of the Get-AzureADUser cmdlet is [Get-MgUser](/powershell/module/
 
 There are limitations that currently exist in Microsoft Graph PowerShell either by design or due to some functionality that is yet to be built in.
 
-- There is not yet an equivalent of -SearchString for Get-AzureADUser, Get-AzureADGroup commands. Use -Filter instead.
+- There is not yet an equivalent of -SearchString for Get-AzureADUser, Get-AzureADGroup commands. Use -Filter instead. For example, `Get-MgUser -Filter "DisplayName eq 'Lee Gu'"` returns the user whose display name is equal to the specified string.
 - Search does not yet work for any Azure AD commands.
-- You need to use hash tables to pass nested parameters in some cases: [Nested parameters](https://github.com/microsoftgraph/msgraph-sdk-powershell/blob/dev/samples/9-Applications.ps1#L28-L43).
+- You need to use hash tables to pass nested parameters. Here is a sample of [Nested parameters](https://github.com/microsoftgraph/msgraph-sdk-powershell/blob/dev/samples/9-Applications.ps1#L28-L43).
 - **Pro-tip**: Use the Microsoft Graph PowerShell ConsistencyLevel parameter. It lets you do $count! This is best used for read-only scenarios and you need to be more careful when making changes. To learn more about the ConsistencyLevel parameter see [Advanced query parameters](/graph/aad-advanced-queries).
 
 ## Next steps
