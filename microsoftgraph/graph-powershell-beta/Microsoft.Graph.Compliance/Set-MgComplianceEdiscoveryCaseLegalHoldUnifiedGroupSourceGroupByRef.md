@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgComplianceEdiscoveryCaseLegalHoldUnifiedGroupSourceGroupByRef
 
 ## SYNOPSIS
-Update the ref of navigation property group in compliance
+The group associated with the unifiedGroupSource.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Set-MgComplianceEdiscoveryCaseLegalHoldUnifiedGroupSourceGroupByRef -InputObject
 ```
 
 ## DESCRIPTION
-Update the ref of navigation property group in compliance
+The group associated with the unifiedGroupSource.
 
 ## EXAMPLES
 
@@ -188,13 +188,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

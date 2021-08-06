@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgUserEvent
 
 ## SYNOPSIS
-Get events from users
+The user's events.
+Default is to show events under the Default Calendar.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +35,10 @@ Get-MgUserEvent -InputObject <ICalendarIdentity> [-ExpandProperty <String[]>] [-
 ```
 
 ## DESCRIPTION
-Get events from users
+The user's events.
+Default is to show events under the Default Calendar.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -241,11 +247,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent1
-
 ## NOTES
 
 ALIASES

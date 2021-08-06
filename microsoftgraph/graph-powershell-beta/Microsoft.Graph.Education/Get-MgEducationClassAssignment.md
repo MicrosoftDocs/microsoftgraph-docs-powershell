@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgEducationClassAssignment
 
 ## SYNOPSIS
-Get assignments from education
+All assignments associated with this class.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgEducationClassAssignment -InputObject <IEducationIdentity> [-ExpandPropert
 ```
 
 ## DESCRIPTION
-Get assignments from education
+All assignments associated with this class.
+Nullable.
 
 ## EXAMPLES
 
@@ -241,11 +243,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationAssignment
-
 ## NOTES
 
 ALIASES

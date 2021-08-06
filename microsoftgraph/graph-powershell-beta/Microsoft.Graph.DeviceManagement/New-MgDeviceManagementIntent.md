@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementIntent
 
 ## SYNOPSIS
-Create new navigation property to intents for deviceManagement
+The device management intents
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ New-MgDeviceManagementIntent -BodyParameter <IMicrosoftGraphDeviceManagementInte
 ```
 
 ## DESCRIPTION
-Create new navigation property to intents for deviceManagement
+The device management intents
 
 ## EXAMPLES
 
@@ -340,11 +340,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementIntent
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementIntent
-
 ## NOTES
 
 ALIASES

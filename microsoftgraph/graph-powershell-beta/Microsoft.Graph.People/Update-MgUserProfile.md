@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserProfile
 
 ## SYNOPSIS
-Update the navigation property profile in users
+Represents properties that are descriptive of a user in a tenant.
 
 ## SYNTAX
 
@@ -57,7 +57,7 @@ Update-MgUserProfile -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoftGr
 ```
 
 ## DESCRIPTION
-Update the navigation property profile in users
+Represents properties that are descriptive of a user in a tenant.
 
 ## EXAMPLES
 
@@ -496,13 +496,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProfile
-
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

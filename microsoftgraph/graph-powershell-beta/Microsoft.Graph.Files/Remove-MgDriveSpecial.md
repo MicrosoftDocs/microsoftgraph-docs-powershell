@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgDriveSpecial
 
 ## SYNOPSIS
-Delete navigation property special for drives
+Collection of common folders available in OneDrive.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +27,9 @@ Remove-MgDriveSpecial -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassTh
 ```
 
 ## DESCRIPTION
-Delete navigation property special for drives
+Collection of common folders available in OneDrive.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -144,11 +148,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

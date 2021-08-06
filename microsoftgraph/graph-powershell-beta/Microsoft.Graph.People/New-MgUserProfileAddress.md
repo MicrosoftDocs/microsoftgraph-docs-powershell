@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserProfileAddress
 
 ## SYNOPSIS
-Create new navigation property to addresses for users
+Represents details of addresses associated with the user.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ New-MgUserProfileAddress -InputObject <IPeopleIdentity> -BodyParameter <IMicroso
 ```
 
 ## DESCRIPTION
-Create new navigation property to addresses for users
+Represents details of addresses associated with the user.
 
 ## EXAMPLES
 
@@ -336,13 +336,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemAddress
-
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemAddress
-
 ## NOTES
 
 ALIASES

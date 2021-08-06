@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgDownUserManagedDeviceShut
 
 ## SYNOPSIS
-Invoke action shutDown
+Shut down device
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Invoke-MgDownUserManagedDeviceShut -InputObject <IUsersActionsIdentity> [-PassTh
 ```
 
 ## DESCRIPTION
-Invoke action shutDown
+Shut down device
 
 ## EXAMPLES
 
@@ -129,11 +129,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

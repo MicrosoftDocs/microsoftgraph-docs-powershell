@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgGroupPlannerPlanBucketTaskDetail
 
 ## SYNOPSIS
-Get details from groups
+Read-only.
+Nullable.
+Additional details about the task.
 
 ## SYNTAX
 
@@ -25,7 +27,9 @@ Get-MgGroupPlannerPlanBucketTaskDetail -InputObject <IPlannerIdentity> [-ExpandP
 ```
 
 ## DESCRIPTION
-Get details from groups
+Read-only.
+Nullable.
+Additional details about the task.
 
 ## EXAMPLES
 
@@ -143,11 +147,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerTaskDetails1
-
 ## NOTES
 
 ALIASES

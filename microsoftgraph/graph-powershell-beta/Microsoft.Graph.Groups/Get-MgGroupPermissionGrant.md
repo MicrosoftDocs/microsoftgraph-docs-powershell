@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupPermissionGrant
 
 ## SYNOPSIS
-Get permissionGrants from groups
+The permissions that have been granted for a group to a specific application.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgGroupPermissionGrant -InputObject <IGroupsIdentity> [-ExpandProperty <Stri
 ```
 
 ## DESCRIPTION
-Get permissionGrants from groups
+The permissions that have been granted for a group to a specific application.
 
 ## EXAMPLES
 
@@ -241,11 +241,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphResourceSpecificPermissionGrant
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgCommunicationCallAudioRoutingGroup
 
 ## SYNOPSIS
-Get audioRoutingGroups from communications
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicationsIdent
 ```
 
 ## DESCRIPTION
-Get audioRoutingGroups from communications
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -241,11 +243,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAudioRoutingGroup
-
 ## NOTES
 
 ALIASES

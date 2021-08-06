@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementGroupPolicyCategoryDefinitionByRef
 
 ## SYNOPSIS
-Get ref of definitions from deviceManagement
+The immediate GroupPolicyDefinition children of the category
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgDeviceManagementGroupPolicyCategoryDefinitionByRef -GroupPolicyCategoryId 
 ```
 
 ## DESCRIPTION
-Get ref of definitions from deviceManagement
+The immediate GroupPolicyDefinition children of the category
 
 ## EXAMPLES
 
@@ -169,7 +169,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

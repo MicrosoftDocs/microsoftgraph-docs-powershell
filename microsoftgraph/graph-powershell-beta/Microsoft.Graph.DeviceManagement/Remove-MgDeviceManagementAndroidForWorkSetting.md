@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementAndroidForWorkSetting
 
 ## SYNOPSIS
-Delete navigation property androidForWorkSettings for deviceManagement
+The singleton Android for Work settings entity.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Remove-MgDeviceManagementAndroidForWorkSetting [-IfMatch <String>] [-PassThru] [
 ```
 
 ## DESCRIPTION
-Delete navigation property androidForWorkSettings for deviceManagement
+The singleton Android for Work settings entity.
 
 ## EXAMPLES
 
@@ -93,7 +93,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

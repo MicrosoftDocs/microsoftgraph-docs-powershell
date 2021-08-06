@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgUserPlannerTask
 
 ## SYNOPSIS
-Update the navigation property tasks in users
+Read-only.
+Nullable.
+Returns the plannerTasks assigned to the user.
 
 ## SYNTAX
 
@@ -57,7 +59,9 @@ Update-MgUserPlannerTask -InputObject <IPlannerIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Update the navigation property tasks in users
+Read-only.
+Nullable.
+Returns the plannerTasks assigned to the user.
 
 ## EXAMPLES
 
@@ -625,13 +629,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerTask1
-
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -773,8 +774,5 @@ PROGRESSTASKBOARDFORMAT <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat1>: pl
   - `[OrderHint <String>]`: Hint value used to order the task on the Progress view of the Task Board. The format is defined as outlined here.
 
 ## RELATED LINKS
-
-## RELATED LINKS
-
 
 ## RELATED LINKS

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementUserExperienceAnalyticCategory
 
 ## SYNOPSIS
-Create new navigation property to userExperienceAnalyticsCategories for deviceManagement
+User experience analytics categories
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ New-MgDeviceManagementUserExperienceAnalyticCategory
 ```
 
 ## DESCRIPTION
-Create new navigation property to userExperienceAnalyticsCategories for deviceManagement
+User experience analytics categories
 
 ## EXAMPLES
 
@@ -147,11 +147,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsCategory
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsCategory
-
 ## NOTES
 
 ALIASES

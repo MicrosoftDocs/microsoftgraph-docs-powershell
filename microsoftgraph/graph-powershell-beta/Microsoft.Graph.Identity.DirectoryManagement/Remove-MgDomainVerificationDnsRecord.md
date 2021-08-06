@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgDomainVerificationDnsRecord
 
 ## SYNOPSIS
-Delete navigation property verificationDnsRecords for domains
+DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Azure AD.
+Read-only, Nullable
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgDomainVerificationDnsRecord -InputObject <IIdentityDirectoryManagementI
 ```
 
 ## DESCRIPTION
-Delete navigation property verificationDnsRecords for domains
+DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Azure AD.
+Read-only, Nullable
 
 ## EXAMPLES
 
@@ -144,11 +146,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserProfileName
 
 ## SYNOPSIS
-Delete navigation property names for users
+Represents the names a user has added to their profile.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgUserProfileName -InputObject <IPeopleIdentity> [-IfMatch <String>] [-Pa
 ```
 
 ## DESCRIPTION
-Delete navigation property names for users
+Represents the names a user has added to their profile.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgComplianceEdiscoveryCaseSourceCollectionAdditionalSource
 
 ## SYNOPSIS
-Update the navigation property additionalSources in compliance
+Adds an additional source to the sourceCollection.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Update-MgComplianceEdiscoveryCaseSourceCollectionAdditionalSource -InputObject <
 ```
 
 ## DESCRIPTION
-Update the navigation property additionalSources in compliance
+Adds an additional source to the sourceCollection.
 
 ## EXAMPLES
 
@@ -253,13 +253,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryDataSource
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

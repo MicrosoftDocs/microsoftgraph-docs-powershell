@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-.
+Description for the policy.
 
 ```yaml
 Type: String
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+Display name for the policy.
 
 ```yaml
 Type: String
@@ -96,7 +96,10 @@ Accept wildcard characters: False
 ```
 
 ### -EffectiveRules
-.
+The list of effective rules like approval rule, expiration rule, etc.
+evaluated based on inherited referenced rules.
+E.g.
+If there is a tenant wide policy to enforce enabling approval rule, the effective rule will be to enable approval even if the polcy has a rule to disable approval.
 To construct, see NOTES section for EFFECTIVERULES properties and create a hash table.
 
 ```yaml
@@ -127,7 +130,8 @@ Accept wildcard characters: False
 ```
 
 ### -IsOrganizationDefault
-.
+This can only be set to true for a single tenant wide policy which will apply to all scopes and roles.
+Set the scopeId to '/' and scopeType to Directory.
 
 ```yaml
 Type: SwitchParameter
@@ -158,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastModifiedDateTime
-.
+The time when the role setting was last modified.
 
 ```yaml
 Type: DateTime
@@ -173,7 +177,7 @@ Accept wildcard characters: False
 ```
 
 ### -Rules
-.
+The collection of rules like approval rule, expiration rule, etc.
 To construct, see NOTES section for RULES properties and create a hash table.
 
 ```yaml
@@ -189,7 +193,9 @@ Accept wildcard characters: False
 ```
 
 ### -ScopeId
-.
+The id of the scope where the policy is created.
+E.g.
+'/', groupId, etc.
 
 ```yaml
 Type: String
@@ -204,7 +210,8 @@ Accept wildcard characters: False
 ```
 
 ### -ScopeType
-.
+The type of the scope where the policy is created.
+One of Directory, DirectoryRole, Group.
 
 ```yaml
 Type: String
@@ -255,11 +262,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementPolicy
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementPolicy
-
 ## NOTES
 
 ALIASES
@@ -272,9 +277,9 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER <IMicrosoftGraphUnifiedRoleManagementPolicy>: unifiedRoleManagementPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
-  - `[Description <String>]`: 
-  - `[DisplayName <String>]`: 
-  - `[EffectiveRules <IMicrosoftGraphUnifiedRoleManagementPolicyRule[]>]`: 
+  - `[Description <String>]`: Description for the policy.
+  - `[DisplayName <String>]`: Display name for the policy.
+  - `[EffectiveRules <IMicrosoftGraphUnifiedRoleManagementPolicyRule[]>]`: The list of effective rules like approval rule, expiration rule, etc. evaluated based on inherited referenced rules. E.g. If there is a tenant wide policy to enforce enabling approval rule, the effective rule will be to enable approval even if the polcy has a rule to disable approval.
     - `[Id <String>]`: Read-only.
     - `[Target <IMicrosoftGraphUnifiedRoleManagementPolicyRuleTarget>]`: unifiedRoleManagementPolicyRuleTarget
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -286,17 +291,17 @@ BODYPARAMETER <IMicrosoftGraphUnifiedRoleManagementPolicy>: unifiedRoleManagemen
       - `[TargetObjects <IMicrosoftGraphDirectoryObject[]>]`: 
         - `[Id <String>]`: Read-only.
         - `[DeletedDateTime <DateTime?>]`: 
-  - `[IsOrganizationDefault <Boolean?>]`: 
+  - `[IsOrganizationDefault <Boolean?>]`: This can only be set to true for a single tenant wide policy which will apply to all scopes and roles. Set the scopeId to '/' and scopeType to Directory.
   - `[LastModifiedBy <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
     - `[Id <String>]`: Unique identifier for the identity.
-  - `[LastModifiedDateTime <DateTime?>]`: 
-  - `[Rules <IMicrosoftGraphUnifiedRoleManagementPolicyRule[]>]`: 
-  - `[ScopeId <String>]`: 
-  - `[ScopeType <String>]`: 
+  - `[LastModifiedDateTime <DateTime?>]`: The time when the role setting was last modified.
+  - `[Rules <IMicrosoftGraphUnifiedRoleManagementPolicyRule[]>]`: The collection of rules like approval rule, expiration rule, etc.
+  - `[ScopeId <String>]`: The id of the scope where the policy is created. E.g. '/', groupId, etc.
+  - `[ScopeType <String>]`: The type of the scope where the policy is created. One of Directory, DirectoryRole, Group.
 
-EFFECTIVERULES <IMicrosoftGraphUnifiedRoleManagementPolicyRule[]>: .
+EFFECTIVERULES <IMicrosoftGraphUnifiedRoleManagementPolicyRule[]>: The list of effective rules like approval rule, expiration rule, etc. evaluated based on inherited referenced rules. E.g. If there is a tenant wide policy to enforce enabling approval rule, the effective rule will be to enable approval even if the polcy has a rule to disable approval.
   - `[Id <String>]`: Read-only.
   - `[Target <IMicrosoftGraphUnifiedRoleManagementPolicyRuleTarget>]`: unifiedRoleManagementPolicyRuleTarget
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -314,7 +319,7 @@ LASTMODIFIEDBY <IMicrosoftGraphIdentity>: identity
   - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
   - `[Id <String>]`: Unique identifier for the identity.
 
-RULES <IMicrosoftGraphUnifiedRoleManagementPolicyRule[]>: .
+RULES <IMicrosoftGraphUnifiedRoleManagementPolicyRule[]>: The collection of rules like approval rule, expiration rule, etc.
   - `[Id <String>]`: Read-only.
   - `[Target <IMicrosoftGraphUnifiedRoleManagementPolicyRuleTarget>]`: unifiedRoleManagementPolicyRuleTarget
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

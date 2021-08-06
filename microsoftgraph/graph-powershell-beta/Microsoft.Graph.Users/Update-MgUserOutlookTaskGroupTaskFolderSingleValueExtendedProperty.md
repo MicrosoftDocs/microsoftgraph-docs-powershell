@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgUserOutlookTaskGroupTaskFolderSingleValueExtendedProperty
 
 ## SYNOPSIS
-Update the navigation property singleValueExtendedProperties in users
+The collection of single-value extended properties defined for the task folder.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -43,7 +45,9 @@ Update-MgUserOutlookTaskGroupTaskFolderSingleValueExtendedProperty -InputObject 
 ```
 
 ## DESCRIPTION
-Update the navigation property singleValueExtendedProperties in users
+The collection of single-value extended properties defined for the task folder.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -238,13 +242,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSingleValueLegacyExtendedProperty
-
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgOrganization
 
 ## SYNOPSIS
-Get entity from organization by key
+The organization resource represents an instance of global settings and resources which operate and are provisioned at the tenant-level.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgOrganization -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandP
 ```
 
 ## DESCRIPTION
-Get entity from organization by key
+The organization resource represents an instance of global settings and resources which operate and are provisioned at the tenant-level.
 
 ## EXAMPLES
 
@@ -226,11 +226,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOrganization1
-
 ## NOTES
 
 ALIASES

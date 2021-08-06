@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceCommand
 
 ## SYNOPSIS
-Delete navigation property commands for devices
+Set of commands sent to this device.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgDeviceCommand -InputObject <IIdentityDirectoryManagementIdentity> [-IfM
 ```
 
 ## DESCRIPTION
-Delete navigation property commands for devices
+Set of commands sent to this device.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

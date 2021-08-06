@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserProfileInterest
 
 ## SYNOPSIS
-Delete navigation property interests for users
+Provides detailed information about interests the user has associated with themselves in various services.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgUserProfileInterest -InputObject <IPeopleIdentity> [-IfMatch <String>] 
 ```
 
 ## DESCRIPTION
-Delete navigation property interests for users
+Provides detailed information about interests the user has associated with themselves in various services.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

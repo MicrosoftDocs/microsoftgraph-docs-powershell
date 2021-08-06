@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgAuditLogSignIn
 
 ## SYNOPSIS
-Get signIns from auditLogs
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgAuditLogSignIn -InputObject <IReportsIdentity> [-ExpandProperty <String[]>
 ```
 
 ## DESCRIPTION
-Get signIns from auditLogs
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -226,11 +228,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IReportsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSignIn
-
 ## NOTES
 
 ALIASES

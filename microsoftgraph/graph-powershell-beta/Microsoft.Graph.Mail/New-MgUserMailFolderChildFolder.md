@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserMailFolderChildFolder
 
 ## SYNOPSIS
-Create new navigation property to childFolders for users
+The collection of child folders in the mailFolder.
 
 ## SYNTAX
 
@@ -51,7 +51,7 @@ New-MgUserMailFolderChildFolder -InputObject <IMailIdentity> -BodyParameter <IMi
 ```
 
 ## DESCRIPTION
-Create new navigation property to childFolders for users
+The collection of child folders in the mailFolder.
 
 ## EXAMPLES
 
@@ -396,13 +396,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMailIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailFolder1
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailFolder1
-
 ## NOTES
 
 ALIASES

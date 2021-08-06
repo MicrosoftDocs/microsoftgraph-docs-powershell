@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgPrintTaskDefinitionTaskDefinitionByRef
 
 ## SYNOPSIS
-Delete ref of navigation property definition for print
+The printTaskDefinition that was used to create this task.
+Read-only.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgPrintTaskDefinitionTaskDefinitionByRef -InputObject <IDevicesCloudPrint
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property definition for print
+The printTaskDefinition that was used to create this task.
+Read-only.
 
 ## EXAMPLES
 
@@ -144,11 +146,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -12,11 +12,10 @@ Get accessPackages from identityGovernance
 
 ## SYNTAX
 
-### List (Default)
+### ListAll (Default)
 ```
-Get-MgEntitlementManagementAccessPackage [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+Get-MgEntitlementManagementAccessPackage [-ExpandProperty <String[]>] [-Property <String[]>] [-Sort <String[]>]
+ [-All] [<CommonParameters>]
 ```
 
 ### Get
@@ -29,6 +28,31 @@ Get-MgEntitlementManagementAccessPackage -AccessPackageId <String> [-ExpandPrope
 ```
 Get-MgEntitlementManagementAccessPackage -InputObject <IIdentityGovernanceIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+```
+
+### List
+```
+Get-MgEntitlementManagementAccessPackage [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [<CommonParameters>]
+```
+
+### ListByDisplayNameContains
+```
+Get-MgEntitlementManagementAccessPackage [-ExpandProperty <String[]>] [-Property <String[]>] [-Sort <String[]>]
+ [-Top <Int32>] -DisplayNameContains <String> [-All] [<CommonParameters>]
+```
+
+### ListByDisplayNameEq
+```
+Get-MgEntitlementManagementAccessPackage [-ExpandProperty <String[]>] [-Property <String[]>] [-Sort <String[]>]
+ [-Top <Int32>] -DisplayNameEq <String> [-All] [<CommonParameters>]
+```
+
+### ListByCatalogId
+```
+Get-MgEntitlementManagementAccessPackage [-ExpandProperty <String[]>] [-Property <String[]>] [-Sort <String[]>]
+ [-Top <Int32>] -CatalogId <String> [-All] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -58,10 +82,25 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List
+Parameter Sets: ListAll, List, ListByDisplayNameContains, ListByDisplayNameEq, ListByCatalogId
 Aliases:
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CatalogId
+Filter items by property values
+
+```yaml
+Type: String
+Parameter Sets: ListByCatalogId
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -78,6 +117,36 @@ Parameter Sets: List
 Aliases: CV
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DisplayNameContains
+Filter items by property values
+
+```yaml
+Type: String
+Parameter Sets: ListByDisplayNameContains
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DisplayNameEq
+Filter items by property values
+
+```yaml
+Type: String
+Parameter Sets: ListByDisplayNameEq
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -180,7 +249,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List
+Parameter Sets: ListAll, List, ListByDisplayNameContains, ListByDisplayNameEq, ListByCatalogId
 Aliases: OrderBy
 
 Required: False
@@ -195,7 +264,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: List, ListByDisplayNameContains, ListByDisplayNameEq, ListByCatalogId
 Aliases: Limit
 
 Required: False
@@ -226,11 +295,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackage
-
 ## NOTES
 
 ALIASES
@@ -254,8 +321,10 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageResourceRoleScopeId <String>]`: key: id of accessPackageResourceRoleScope
   - `[AccessPackageResourceScopeId <String>]`: key: id of accessPackageResourceScope
   - `[AccessReviewDecisionId <String>]`: key: id of accessReviewDecision
+  - `[AccessReviewHistoryDefinitionId <String>]`: key: id of accessReviewHistoryDefinition
   - `[AccessReviewId <String>]`: key: id of accessReview
   - `[AccessReviewId1 <String>]`: key: id of accessReview
+  - `[AccessReviewInstanceDecisionItemId <String>]`: key: id of accessReviewInstanceDecisionItem
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewReviewerId <String>]`: key: id of accessReviewReviewer
   - `[AccessReviewScheduleDefinitionId <String>]`: key: id of accessReviewScheduleDefinition
@@ -265,6 +334,7 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AgreementId <String>]`: key: id of agreement
   - `[AppConsentRequestId <String>]`: key: id of appConsentRequest
   - `[ApprovalId <String>]`: key: id of approval
+  - `[ApprovalStageId <String>]`: key: id of approvalStage
   - `[ApprovalStepId <String>]`: key: id of approvalStep
   - `[BusinessFlowTemplateId <String>]`: key: id of businessFlowTemplate
   - `[ConnectedOrganizationId <String>]`: key: id of connectedOrganization
@@ -284,6 +354,7 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[ProgramControlId <String>]`: key: id of programControl
   - `[ProgramControlTypeId <String>]`: key: id of programControlType
   - `[ProgramId <String>]`: key: id of program
+  - `[UserConsentRequestId <String>]`: key: id of userConsentRequest
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS

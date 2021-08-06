@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgDriveRoot
 
 ## SYNOPSIS
-Get root from drives
+The root folder of the drive.
+Read-only.
 
 ## SYNTAX
 
@@ -24,7 +25,8 @@ Get-MgDriveRoot -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Pro
 ```
 
 ## DESCRIPTION
-Get root from drives
+The root folder of the drive.
+Read-only.
 
 ## EXAMPLES
 
@@ -97,11 +99,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDriveItem
-
 ## NOTES
 
 ALIASES

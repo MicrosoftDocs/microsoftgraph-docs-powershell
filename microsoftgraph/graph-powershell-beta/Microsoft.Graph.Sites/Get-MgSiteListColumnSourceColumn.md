@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteListColumnSourceColumn
 
 ## SYNOPSIS
-Get sourceColumn from sites
+The source column for content type column.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgSiteListColumnSourceColumn -InputObject <ISitesIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-Get sourceColumn from sites
+The source column for content type column.
 
 ## EXAMPLES
 
@@ -128,11 +128,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnDefinition
-
 ## NOTES
 
 ALIASES

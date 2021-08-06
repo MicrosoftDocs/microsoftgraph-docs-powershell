@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgUserOutlookTaskFolderTaskAttachment
 
 ## SYNOPSIS
-Delete navigation property attachments for users
+The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the task.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -26,7 +28,9 @@ Remove-MgUserOutlookTaskFolderTaskAttachment -InputObject <IUsersIdentity> [-IfM
 ```
 
 ## DESCRIPTION
-Delete navigation property attachments for users
+The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the task.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -175,11 +179,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

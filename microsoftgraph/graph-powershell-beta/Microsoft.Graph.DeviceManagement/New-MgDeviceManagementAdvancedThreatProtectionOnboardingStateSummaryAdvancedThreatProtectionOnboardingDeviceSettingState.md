@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummaryAdvancedThreatProtectionOnboardingDeviceSettingState
 
 ## SYNOPSIS
-Create new navigation property to advancedThreatProtectionOnboardingDeviceSettingStates for deviceManagement
+Not yet documented
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ New-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummaryAdvancedThre
 ```
 
 ## DESCRIPTION
-Create new navigation property to advancedThreatProtectionOnboardingDeviceSettingStates for deviceManagement
+Not yet documented
 
 ## EXAMPLES
 
@@ -298,11 +298,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState
-
 ## NOTES
 
 ALIASES

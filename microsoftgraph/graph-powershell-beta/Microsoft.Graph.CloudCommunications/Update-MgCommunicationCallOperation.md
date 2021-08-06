@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgCommunicationCallOperation
 
 ## SYNOPSIS
-Update the navigation property operations in communications
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -41,7 +42,8 @@ Update-MgCommunicationCallOperation -InputObject <ICloudCommunicationsIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property operations in communications
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -238,13 +240,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCommsOperation
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

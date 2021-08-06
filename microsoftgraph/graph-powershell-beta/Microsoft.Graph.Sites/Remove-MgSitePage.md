@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgSitePage
 
 ## SYNOPSIS
-Delete navigation property pages for sites
+The collection of pages in the SitePages list in this site.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgSitePage -InputObject <ISitesIdentity> [-IfMatch <String>] [-PassThru] 
 ```
 
 ## DESCRIPTION
-Delete navigation property pages for sites
+The collection of pages in the SitePages list in this site.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

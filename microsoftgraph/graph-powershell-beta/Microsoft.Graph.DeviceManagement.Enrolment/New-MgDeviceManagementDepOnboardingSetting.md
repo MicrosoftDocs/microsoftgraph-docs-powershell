@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementDepOnboardingSetting
 
 ## SYNOPSIS
-Create new navigation property to depOnboardingSettings for deviceManagement
+This collections of multiple DEP tokens per-tenant.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ New-MgDeviceManagementDepOnboardingSetting -BodyParameter <IMicrosoftGraphDepOnb
 ```
 
 ## DESCRIPTION
-Create new navigation property to depOnboardingSettings for deviceManagement
+This collections of multiple DEP tokens per-tenant.
 
 ## EXAMPLES
 
@@ -368,11 +368,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDepOnboardingSetting
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDepOnboardingSetting
-
 ## NOTES
 
 ALIASES
@@ -489,9 +487,9 @@ BODYPARAMETER <IMicrosoftGraphDepOnboardingSetting>: The depOnboardingSetting re
     - `[CreatedDateTime <DateTime?>]`: Created Date Time of the device
     - `[Description <String>]`: The description of the device
     - `[DiscoverySource <String>]`: discoverySource
-    - `[EnrollmentState <String>]`: enrollmentState
+    - `[EnrollmentState <String>]`: 
     - `[IsDeleted <Boolean?>]`: Indicates if the device is deleted from Apple Business Manager
-    - `[IsSupervised <Boolean?>]`: Indicates if the Apple device is supervised. More information is at: https://support.apple.com/HT202837
+    - `[IsSupervised <Boolean?>]`: Indicates if the Apple device is supervised. More information is at: https://support.apple.com/en-us/HT202837
     - `[LastContactedDateTime <DateTime?>]`: Last Contacted Date Time of the device
     - `[Platform <String>]`: platform
     - `[RequestedEnrollmentProfileAssignmentDateTime <DateTime?>]`: The time enrollment profile was assigned to the device
@@ -613,9 +611,9 @@ IMPORTEDAPPLEDEVICEIDENTITIES <IMicrosoftGraphImportedAppleDeviceIdentity[]>: Th
   - `[CreatedDateTime <DateTime?>]`: Created Date Time of the device
   - `[Description <String>]`: The description of the device
   - `[DiscoverySource <String>]`: discoverySource
-  - `[EnrollmentState <String>]`: enrollmentState
+  - `[EnrollmentState <String>]`: 
   - `[IsDeleted <Boolean?>]`: Indicates if the device is deleted from Apple Business Manager
-  - `[IsSupervised <Boolean?>]`: Indicates if the Apple device is supervised. More information is at: https://support.apple.com/HT202837
+  - `[IsSupervised <Boolean?>]`: Indicates if the Apple device is supervised. More information is at: https://support.apple.com/en-us/HT202837
   - `[LastContactedDateTime <DateTime?>]`: Last Contacted Date Time of the device
   - `[Platform <String>]`: platform
   - `[RequestedEnrollmentProfileAssignmentDateTime <DateTime?>]`: The time enrollment profile was assigned to the device

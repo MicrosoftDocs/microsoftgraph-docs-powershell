@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserMailFolder
 
 ## SYNOPSIS
-Get mailFolders from users
+The user's mail folders.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgUserMailFolder -InputObject <IMailIdentity> [-ExpandProperty <String[]>] [
 ```
 
 ## DESCRIPTION
-Get mailFolders from users
+The user's mail folders.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -241,11 +245,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMailIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailFolder1
-
 ## NOTES
 
 ALIASES

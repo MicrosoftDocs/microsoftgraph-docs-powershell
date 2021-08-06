@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgTeamPrimaryChannelFileFolder
 
 ## SYNOPSIS
-Delete navigation property filesFolder for teams
+Metadata for the location where the channel's files are stored.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgTeamPrimaryChannelFileFolder -InputObject <ITeamsIdentity> [-IfMatch <S
 ```
 
 ## DESCRIPTION
-Delete navigation property filesFolder for teams
+Metadata for the location where the channel's files are stored.
 
 ## EXAMPLES
 
@@ -129,11 +129,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

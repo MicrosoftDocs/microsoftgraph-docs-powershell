@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgComplianceEdiscoveryCaseCustodianSiteSourceSiteByRef
 
 ## SYNOPSIS
-Update the ref of navigation property site in compliance
+The SharePoint site associated with the siteSource.
 
 ## SYNTAX
 
@@ -38,7 +38,7 @@ Set-MgComplianceEdiscoveryCaseCustodianSiteSourceSiteByRef -InputObject <ICompli
 ```
 
 ## DESCRIPTION
-Update the ref of navigation property site in compliance
+The SharePoint site associated with the siteSource.
 
 ## EXAMPLES
 
@@ -187,13 +187,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

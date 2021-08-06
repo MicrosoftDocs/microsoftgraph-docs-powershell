@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsPhoneOneTimePasswordAuthenticationEnabled
-.
+The tenant admin can configure local accounts using phone number if the phone number and one-time password authentication method is enabled.
 
 ```yaml
 Type: SwitchParameter
@@ -175,11 +175,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphB2CAuthenticationMethodsPolicy
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -193,7 +191,7 @@ BODYPARAMETER <IMicrosoftGraphB2CAuthenticationMethodsPolicy>: b2cAuthentication
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
   - `[IsEmailPasswordAuthenticationEnabled <Boolean?>]`: The tenant admin can configure local accounts using email if the email and password authentication method is enabled.
-  - `[IsPhoneOneTimePasswordAuthenticationEnabled <Boolean?>]`: 
+  - `[IsPhoneOneTimePasswordAuthenticationEnabled <Boolean?>]`: The tenant admin can configure local accounts using phone number if the phone number and one-time password authentication method is enabled.
   - `[IsUserNameAuthenticationEnabled <Boolean?>]`: The tenant admin can configure local accounts using username if the username and password authentication method is enabled.
 
 ## RELATED LINKS

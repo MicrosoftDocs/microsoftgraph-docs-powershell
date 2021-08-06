@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgUserActivityHistoryItem
 
 ## SYNOPSIS
-Get historyItems from users
+Optional.
+NavigationProperty/Containment; navigation property to the activity's historyItems.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgUserActivityHistoryItem -InputObject <ICrossDeviceExperiencesIdentity> [-E
 ```
 
 ## DESCRIPTION
-Get historyItems from users
+Optional.
+NavigationProperty/Containment; navigation property to the activity's historyItems.
 
 ## EXAMPLES
 
@@ -256,11 +258,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICrossDeviceExperiencesIdentity
-
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphActivityHistoryItem
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphActivityHistoryItem1
 ## NOTES
 
 ALIASES

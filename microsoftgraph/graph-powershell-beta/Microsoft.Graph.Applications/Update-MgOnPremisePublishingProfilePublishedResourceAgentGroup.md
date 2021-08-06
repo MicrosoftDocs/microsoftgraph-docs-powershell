@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgOnPremisePublishingProfilePublishedResourceAgentGroup
 
 ## SYNOPSIS
-Update the navigation property agentGroups in onPremisesPublishingProfiles
+List of onPremisesAgentGroups that a publishedResource is assigned to.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -74,7 +76,9 @@ Update-MgOnPremisePublishingProfilePublishedResourceAgentGroup -InputObject <IAp
 ```
 
 ## DESCRIPTION
-Update the navigation property agentGroups in onPremisesPublishingProfiles
+List of onPremisesAgentGroups that a publishedResource is assigned to.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -351,13 +355,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnPremisesAgentGroup
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

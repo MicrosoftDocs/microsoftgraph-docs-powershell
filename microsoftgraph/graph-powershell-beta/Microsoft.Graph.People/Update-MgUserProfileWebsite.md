@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserProfileWebsite
 
 ## SYNOPSIS
-Update the navigation property websites in users
+Represents detailed information about websites associated with a user in various services.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Update-MgUserProfileWebsite -InputObject <IPeopleIdentity> -BodyParameter <IMicr
 ```
 
 ## DESCRIPTION
-Update the navigation property websites in users
+Represents detailed information about websites associated with a user in various services.
 
 ## EXAMPLES
 
@@ -394,13 +394,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPersonWebsite
-
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

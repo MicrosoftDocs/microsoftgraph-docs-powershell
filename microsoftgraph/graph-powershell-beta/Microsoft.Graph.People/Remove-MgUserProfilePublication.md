@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserProfilePublication
 
 ## SYNOPSIS
-Delete navigation property publications for users
+Represents details of any publications a user has added to their profile.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgUserProfilePublication -InputObject <IPeopleIdentity> [-IfMatch <String
 ```
 
 ## DESCRIPTION
-Delete navigation property publications for users
+Represents details of any publications a user has added to their profile.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgUserSharedResourceInsightByRef
 
 ## SYNOPSIS
-Delete ref of navigation property resource for users
+Used for navigating to the item that was shared.
+For file attachments, the type is fileAttachment.
+For linked attachments, the type is driveItem.
 
 ## SYNTAX
 
@@ -25,7 +27,9 @@ Remove-MgUserSharedResourceInsightByRef -InputObject <IPeopleIdentity> [-IfMatch
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property resource for users
+Used for navigating to the item that was shared.
+For file attachments, the type is fileAttachment.
+For linked attachments, the type is driveItem.
 
 ## EXAMPLES
 
@@ -144,11 +148,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

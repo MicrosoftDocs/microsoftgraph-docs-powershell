@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgComplianceEdiscoveryCaseOperation
 
 ## SYNOPSIS
-Get operations from compliance
+Returns a list of case operation objects for this case.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgComplianceEdiscoveryCaseOperation -InputObject <IComplianceIdentity> [-Exp
 ```
 
 ## DESCRIPTION
-Get operations from compliance
+Returns a list of case operation objects for this case.
+Nullable.
 
 ## EXAMPLES
 
@@ -241,11 +243,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryCaseOperation
-
 ## NOTES
 
 ALIASES

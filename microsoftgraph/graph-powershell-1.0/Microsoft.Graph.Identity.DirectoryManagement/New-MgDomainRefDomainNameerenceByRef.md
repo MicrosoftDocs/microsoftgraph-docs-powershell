@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDomainRefDomainNameerenceByRef
 
 ## SYNOPSIS
-Create new navigation property ref to domainNameReferences for domains
+Read-only, Nullable
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ New-MgDomainRefDomainNameerenceByRef -InputObject <IIdentityDirectoryManagementI
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to domainNameReferences for domains
+Read-only, Nullable
 
 ## EXAMPLES
 
@@ -141,13 +141,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths16TdfjnDomainsDomainIdDomainnamereferencesRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

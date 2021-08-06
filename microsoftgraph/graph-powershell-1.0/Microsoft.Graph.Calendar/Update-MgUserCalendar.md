@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgUserCalendar
 
 ## SYNOPSIS
-Update the navigation property calendars in users
+The user's calendars.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -51,7 +53,9 @@ Update-MgUserCalendar -InputObject <ICalendarIdentity> -BodyParameter <IMicrosof
 ```
 
 ## DESCRIPTION
-Update the navigation property calendars in users
+The user's calendars.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -498,13 +502,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalendar
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

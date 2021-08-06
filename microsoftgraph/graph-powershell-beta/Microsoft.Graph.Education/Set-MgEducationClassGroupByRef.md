@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgEducationClassGroupByRef
 
 ## SYNOPSIS
-Update the ref of navigation property group in education
+The underlying Microsoft 365 group object.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Set-MgEducationClassGroupByRef -InputObject <IEducationIdentity> -BodyParameter 
 ```
 
 ## DESCRIPTION
-Update the ref of navigation property group in education
+The underlying Microsoft 365 group object.
 
 ## EXAMPLES
 
@@ -156,13 +156,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

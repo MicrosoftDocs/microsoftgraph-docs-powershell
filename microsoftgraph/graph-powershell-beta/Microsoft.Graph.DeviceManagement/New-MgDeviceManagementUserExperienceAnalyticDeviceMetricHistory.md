@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementUserExperienceAnalyticDeviceMetricHistory
 
 ## SYNOPSIS
-Create new navigation property to userExperienceAnalyticsDeviceMetricHistory for deviceManagement
+User experience analytics device metric history
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ New-MgDeviceManagementUserExperienceAnalyticDeviceMetricHistory
 ```
 
 ## DESCRIPTION
-Create new navigation property to userExperienceAnalyticsDeviceMetricHistory for deviceManagement
+User experience analytics device metric history
 
 ## EXAMPLES
 
@@ -177,11 +177,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsMetricHistory
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsMetricHistory
-
 ## NOTES
 
 ALIASES

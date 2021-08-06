@@ -8,7 +8,7 @@ schema: 2.0.0
 # Stop-MgBookingBusinessCalendarView
 
 ## SYNOPSIS
-Invoke action cancel
+Cancels the giving booking appointment, sending a message to the involved parties.
 
 ## SYNTAX
 
@@ -40,7 +40,7 @@ Stop-MgBookingBusinessCalendarView -InputObject <IBookingsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action cancel
+Cancels the giving booking appointment, sending a message to the involved parties.
 
 ## EXAMPLES
 
@@ -190,13 +190,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IBookingsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IPaths1Bomg32BookingbusinessesBookingbusinessIdCalendarviewBookingappointmentIdMicrosoftGraphCancelPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

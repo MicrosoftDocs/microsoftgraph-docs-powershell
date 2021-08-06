@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgUserPlannerPlan
 
 ## SYNOPSIS
-Update the navigation property plans in users
+Read-only.
+Nullable.
+Returns the plannerTasks assigned to the user.
 
 ## SYNTAX
 
@@ -43,7 +45,9 @@ Update-MgUserPlannerPlan -InputObject <IPlannerIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Update the navigation property plans in users
+Read-only.
+Nullable.
+Returns the plannerTasks assigned to the user.
 
 ## EXAMPLES
 
@@ -312,13 +316,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerPlan
-
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

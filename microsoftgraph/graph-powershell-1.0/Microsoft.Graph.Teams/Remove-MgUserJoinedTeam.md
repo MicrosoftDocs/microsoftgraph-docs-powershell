@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgUserJoinedTeam
 
 ## SYNOPSIS
-Delete navigation property joinedTeams for users
+The Microsoft Teams teams that the user is a member of.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +27,9 @@ Remove-MgUserJoinedTeam -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Pass
 ```
 
 ## DESCRIPTION
-Delete navigation property joinedTeams for users
+The Microsoft Teams teams that the user is a member of.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -144,11 +148,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

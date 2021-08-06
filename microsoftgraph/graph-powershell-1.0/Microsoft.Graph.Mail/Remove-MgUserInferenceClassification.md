@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserInferenceClassification
 
 ## SYNOPSIS
-Delete navigation property inferenceClassification for users
+Relevance classification of the user's messages based on explicit designations which override inferred relevance or importance.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgUserInferenceClassification -InputObject <IMailIdentity> [-IfMatch <Str
 ```
 
 ## DESCRIPTION
-Delete navigation property inferenceClassification for users
+Relevance classification of the user's messages based on explicit designations which override inferred relevance or importance.
 
 ## EXAMPLES
 
@@ -129,11 +129,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMailIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

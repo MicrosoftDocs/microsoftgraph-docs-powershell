@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgGroupEndpoint
 
 ## SYNOPSIS
-Update the navigation property endpoints in groups
+Endpoints for the group.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -41,7 +43,9 @@ Update-MgGroupEndpoint -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoft
 ```
 
 ## DESCRIPTION
-Update the navigation property endpoints in groups
+Endpoints for the group.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -293,13 +297,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEndpoint
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

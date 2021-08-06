@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgPrintConnector
 
 ## SYNOPSIS
-Delete navigation property connectors for print
+The list of available print connectors.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgPrintConnector -InputObject <IDevicesCloudPrintIdentity> [-IfMatch <Str
 ```
 
 ## DESCRIPTION
-Delete navigation property connectors for print
+The list of available print connectors.
 
 ## EXAMPLES
 
@@ -129,11 +129,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

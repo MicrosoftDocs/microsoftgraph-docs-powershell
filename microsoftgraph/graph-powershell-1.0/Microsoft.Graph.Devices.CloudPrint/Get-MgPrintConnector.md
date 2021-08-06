@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPrintConnector
 
 ## SYNOPSIS
-Get connectors from print
+The list of available print connectors.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgPrintConnector -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-Get connectors from print
+The list of available print connectors.
 
 ## EXAMPLES
 
@@ -226,11 +226,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintConnector
-
 ## NOTES
 
 ALIASES

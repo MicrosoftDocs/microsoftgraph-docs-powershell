@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgComplianceEdiscoveryCaseCustodianSiteSourceSiteByRef
 
 ## SYNOPSIS
-Delete ref of navigation property site for compliance
+The SharePoint site associated with the siteSource.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgComplianceEdiscoveryCaseCustodianSiteSourceSiteByRef -InputObject <ICom
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property site for compliance
+The SharePoint site associated with the siteSource.
 
 ## EXAMPLES
 
@@ -159,11 +159,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

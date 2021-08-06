@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementManagedDeviceEncryptionState
 
 ## SYNOPSIS
-Create new navigation property to managedDeviceEncryptionStates for deviceManagement
+Encryption report for devices in this account
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ New-MgDeviceManagementManagedDeviceEncryptionState -BodyParameter <IMicrosoftGra
 ```
 
 ## DESCRIPTION
-Create new navigation property to managedDeviceEncryptionStates for deviceManagement
+Encryption report for devices in this account
 
 ## EXAMPLES
 
@@ -284,11 +284,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDeviceEncryptionState
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDeviceEncryptionState
-
 ## NOTES
 
 ALIASES

@@ -223,11 +223,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationProtectionLabel
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationProtectionLabel
-
 ## NOTES
 
 ALIASES
@@ -246,26 +244,26 @@ BODYPARAMETER <IMicrosoftGraphInformationProtectionLabel>: informationProtection
   - `[Name <String>]`: The plaintext name of the label.
   - `[Parent <IMicrosoftGraphParentLabelDetails>]`: parentLabelDetails
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Color <String>]`: 
-    - `[Description <String>]`: 
-    - `[Id <String>]`: 
-    - `[IsActive <Boolean?>]`: 
-    - `[Name <String>]`: 
+    - `[Color <String>]`: The color that the user interface should display for the label, if configured.
+    - `[Description <String>]`: The admin-defined description for the label.
+    - `[Id <String>]`: The label ID is a globally unique identifier (GUID).
+    - `[IsActive <Boolean?>]`: Indicates whether the label is active or not. Active labels should be hidden or disabled in user interfaces.
+    - `[Name <String>]`: The plaintext name of the label.
     - `[Parent <IMicrosoftGraphParentLabelDetails>]`: parentLabelDetails
-    - `[Sensitivity <Int32?>]`: 
-    - `[Tooltip <String>]`: 
+    - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
+    - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a user interface.
   - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
   - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
 
 PARENT <IMicrosoftGraphParentLabelDetails>: parentLabelDetails
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Color <String>]`: 
-  - `[Description <String>]`: 
-  - `[Id <String>]`: 
-  - `[IsActive <Boolean?>]`: 
-  - `[Name <String>]`: 
+  - `[Color <String>]`: The color that the user interface should display for the label, if configured.
+  - `[Description <String>]`: The admin-defined description for the label.
+  - `[Id <String>]`: The label ID is a globally unique identifier (GUID).
+  - `[IsActive <Boolean?>]`: Indicates whether the label is active or not. Active labels should be hidden or disabled in user interfaces.
+  - `[Name <String>]`: The plaintext name of the label.
   - `[Parent <IMicrosoftGraphParentLabelDetails>]`: parentLabelDetails
-  - `[Sensitivity <Int32?>]`: 
-  - `[Tooltip <String>]`: 
+  - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
+  - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a user interface.
 
 ## RELATED LINKS

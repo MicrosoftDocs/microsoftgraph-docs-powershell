@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgUserRegisteredDeviceByRef
 
 ## SYNOPSIS
-Create new navigation property ref to registeredDevices for users
+Devices that are registered for the user.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -37,7 +39,9 @@ New-MgUserRegisteredDeviceByRef -InputObject <IUsersIdentity> -BodyParameter <Ha
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to registeredDevices for users
+Devices that are registered for the user.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -141,13 +145,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1VwscaxUsersUserIdRegistereddevicesRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

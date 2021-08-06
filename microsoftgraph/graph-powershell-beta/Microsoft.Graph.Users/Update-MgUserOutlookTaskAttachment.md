@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgUserOutlookTaskAttachment
 
 ## SYNOPSIS
-Update the navigation property attachments in users
+The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the task.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -40,7 +42,9 @@ Update-MgUserOutlookTaskAttachment -InputObject <IUsersIdentity> -BodyParameter 
 ```
 
 ## DESCRIPTION
-Update the navigation property attachments in users
+The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the task.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -282,13 +286,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachment
-
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

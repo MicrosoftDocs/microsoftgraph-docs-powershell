@@ -12,7 +12,19 @@ Create new navigation property to connectedOrganizations for identityGovernance
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### CreateWithDomainIdentitySource (Default)
+```
+New-MgEntitlementManagementConnectedOrganization [-Description <String>] [-DisplayName <String>]
+ [-State <String>] -DomainName <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Create
+```
+New-MgEntitlementManagementConnectedOrganization -BodyParameter <IMicrosoftGraphConnectedOrganization>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateExpanded
 ```
 New-MgEntitlementManagementConnectedOrganization [-AdditionalProperties <Hashtable>] [-CreatedBy <String>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
@@ -20,12 +32,6 @@ New-MgEntitlementManagementConnectedOrganization [-AdditionalProperties <Hashtab
  [-IdentitySources <IMicrosoftGraphIdentitySource[]>] [-InternalSponsors <IMicrosoftGraphDirectoryObject[]>]
  [-ModifiedBy <String>] [-ModifiedDateTime <DateTime>] [-State <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
-```
-
-### Create
-```
-New-MgEntitlementManagementConnectedOrganization -BodyParameter <IMicrosoftGraphConnectedOrganization>
- [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -104,7 +110,7 @@ The description of the connected organization.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateWithDomainIdentitySource, CreateExpanded
 Aliases:
 
 Required: False
@@ -119,10 +125,25 @@ The display name of the connected organization.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateWithDomainIdentitySource, CreateExpanded
 Aliases:
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DomainName
+The domain name of the connected organization identity source.
+
+```yaml
+Type: String
+Parameter Sets: CreateWithDomainIdentitySource
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -229,7 +250,7 @@ connectedOrganizationState
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateWithDomainIdentitySource, CreateExpanded
 Aliases:
 
 Required: False
@@ -276,11 +297,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConnectedOrganization
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConnectedOrganization
-
 ## NOTES
 
 ALIASES

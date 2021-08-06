@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgTeamMember
 
 ## SYNOPSIS
-Update the navigation property members in teams
+Members and owners of the team.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Update-MgTeamMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGrap
 ```
 
 ## DESCRIPTION
-Update the navigation property members in teams
+Members and owners of the team.
 
 ## EXAMPLES
 
@@ -235,13 +235,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversationMember
-
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgDriveListDrive
 
 ## SYNOPSIS
-Delete navigation property drive for drives
+Only present on document libraries.
+Allows access to the list as a [drive][] resource with [driveItems][driveItem].
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgDriveListDrive -InputObject <IFilesIdentity> [-IfMatch <String>] [-Pass
 ```
 
 ## DESCRIPTION
-Delete navigation property drive for drives
+Only present on document libraries.
+Allows access to the list as a [drive][] resource with [driveItems][driveItem].
 
 ## EXAMPLES
 
@@ -129,11 +131,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

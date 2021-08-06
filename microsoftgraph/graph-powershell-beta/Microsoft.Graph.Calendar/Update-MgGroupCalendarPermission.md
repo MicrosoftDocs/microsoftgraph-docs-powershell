@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgGroupCalendarPermission
 
 ## SYNOPSIS
-Update the navigation property calendarPermissions in groups
+The permissions of the users with whom the calendar is shared.
 
 ## SYNTAX
 
@@ -40,7 +40,7 @@ Update-MgGroupCalendarPermission -InputObject <ICalendarIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property calendarPermissions in groups
+The permissions of the users with whom the calendar is shared.
 
 ## EXAMPLES
 
@@ -269,13 +269,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalendarPermission
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

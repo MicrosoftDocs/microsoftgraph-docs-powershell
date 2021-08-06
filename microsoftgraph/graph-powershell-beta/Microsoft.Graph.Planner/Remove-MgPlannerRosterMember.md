@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgPlannerRosterMember
 
 ## SYNOPSIS
-Delete navigation property members for planner
+Retrieves the members of the plannerRoster.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgPlannerRosterMember -InputObject <IPlannerIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Delete navigation property members for planner
+Retrieves the members of the plannerRoster.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

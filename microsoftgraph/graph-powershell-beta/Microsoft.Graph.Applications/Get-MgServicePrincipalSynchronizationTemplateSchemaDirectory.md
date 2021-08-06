@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgServicePrincipalSynchronizationTemplateSchemaDirectory
 
 ## SYNOPSIS
-Get directories from servicePrincipals
+Contains the collection of directories and all of their objects.
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Get-MgServicePrincipalSynchronizationTemplateSchemaDirectory -InputObject <IAppl
 ```
 
 ## DESCRIPTION
-Get directories from servicePrincipals
+Contains the collection of directories and all of their objects.
 
 ## EXAMPLES
 
@@ -258,11 +258,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryDefinition
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgEducationUserAssignmentRubric
 
 ## SYNOPSIS
-Delete navigation property rubric for education
+When set, the grading rubric attached to this assignment.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgEducationUserAssignmentRubric -InputObject <IEducationIdentity> [-IfMat
 ```
 
 ## DESCRIPTION
-Delete navigation property rubric for education
+When set, the grading rubric attached to this assignment.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity
 
 ## SYNOPSIS
-Update the navigation property importedAppleDeviceIdentities in deviceManagement
+The imported Apple device identities.
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ Update-MgDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity
 ```
 
 ## DESCRIPTION
-Update the navigation property importedAppleDeviceIdentities in deviceManagement
+The imported Apple device identities.
 
 ## EXAMPLES
 
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnrollmentState
-enrollmentState
+.
 
 ```yaml
 Type: String
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 
 ### -IsSupervised
 Indicates if the Apple device is supervised.
-More information is at: https://support.apple.com/HT202837
+More information is at: https://support.apple.com/en-us/HT202837
 
 ```yaml
 Type: SwitchParameter
@@ -363,13 +363,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementEnrolmentIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphImportedAppleDeviceIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -385,9 +382,9 @@ BODYPARAMETER <IMicrosoftGraphImportedAppleDeviceIdentity>: The importedAppleDev
   - `[CreatedDateTime <DateTime?>]`: Created Date Time of the device
   - `[Description <String>]`: The description of the device
   - `[DiscoverySource <String>]`: discoverySource
-  - `[EnrollmentState <String>]`: enrollmentState
+  - `[EnrollmentState <String>]`: 
   - `[IsDeleted <Boolean?>]`: Indicates if the device is deleted from Apple Business Manager
-  - `[IsSupervised <Boolean?>]`: Indicates if the Apple device is supervised. More information is at: https://support.apple.com/HT202837
+  - `[IsSupervised <Boolean?>]`: Indicates if the Apple device is supervised. More information is at: https://support.apple.com/en-us/HT202837
   - `[LastContactedDateTime <DateTime?>]`: Last Contacted Date Time of the device
   - `[Platform <String>]`: platform
   - `[RequestedEnrollmentProfileAssignmentDateTime <DateTime?>]`: The time enrollment profile was assigned to the device
@@ -420,15 +417,14 @@ INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[UnifiedRbacResourceNamespaceId <String>]`: key: id of unifiedRbacResourceNamespace
   - `[UnifiedRoleAssignmentId <String>]`: key: id of unifiedRoleAssignment
   - `[UnifiedRoleAssignmentMultipleId <String>]`: key: id of unifiedRoleAssignmentMultiple
-  - `[UnifiedRoleAssignmentRequestId <String>]`: key: id of unifiedRoleAssignmentRequest
   - `[UnifiedRoleAssignmentScheduleId <String>]`: key: id of unifiedRoleAssignmentSchedule
   - `[UnifiedRoleAssignmentScheduleInstanceId <String>]`: key: id of unifiedRoleAssignmentScheduleInstance
+  - `[UnifiedRoleAssignmentScheduleRequestId <String>]`: key: id of unifiedRoleAssignmentScheduleRequest
   - `[UnifiedRoleDefinitionId <String>]`: key: id of unifiedRoleDefinition
   - `[UnifiedRoleDefinitionId1 <String>]`: key: id of unifiedRoleDefinition
-  - `[UnifiedRoleEligibilityRequestId <String>]`: key: id of unifiedRoleEligibilityRequest
   - `[UnifiedRoleEligibilityScheduleId <String>]`: key: id of unifiedRoleEligibilitySchedule
   - `[UnifiedRoleEligibilityScheduleInstanceId <String>]`: key: id of unifiedRoleEligibilityScheduleInstance
-  - `[UserExperienceAnalyticsNotAutopilotReadyDeviceId <String>]`: key: id of userExperienceAnalyticsNotAutopilotReadyDevice
+  - `[UnifiedRoleEligibilityScheduleRequestId <String>]`: key: id of unifiedRoleEligibilityScheduleRequest
   - `[WindowsAutopilotDeploymentProfileAssignmentId <String>]`: key: id of windowsAutopilotDeploymentProfileAssignment
   - `[WindowsAutopilotDeploymentProfileId <String>]`: key: id of windowsAutopilotDeploymentProfile
   - `[WindowsAutopilotDeviceIdentityId <String>]`: key: id of windowsAutopilotDeviceIdentity

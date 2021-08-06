@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgGroupConversationThreadPostMultiValueExtendedProperty
 
 ## SYNOPSIS
-Update the navigation property multiValueExtendedProperties in groups
+The collection of multi-value extended properties defined for the post.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -43,7 +45,9 @@ Update-MgGroupConversationThreadPostMultiValueExtendedProperty -InputObject <IGr
 ```
 
 ## DESCRIPTION
-Update the navigation property multiValueExtendedProperties in groups
+The collection of multi-value extended properties defined for the post.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -253,13 +257,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMultiValueLegacyExtendedProperty
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

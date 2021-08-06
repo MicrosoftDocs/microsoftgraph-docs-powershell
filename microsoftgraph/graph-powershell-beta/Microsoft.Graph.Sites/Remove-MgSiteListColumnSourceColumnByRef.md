@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgSiteListColumnSourceColumnByRef
 
 ## SYNOPSIS
-Delete ref of navigation property sourceColumn for sites
+The source column for content type column.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgSiteListColumnSourceColumnByRef -InputObject <ISitesIdentity> [-IfMatch
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property sourceColumn for sites
+The source column for content type column.
 
 ## EXAMPLES
 
@@ -159,11 +159,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

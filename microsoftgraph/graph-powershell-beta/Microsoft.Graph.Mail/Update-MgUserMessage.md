@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgUserMessage
 
 ## SYNOPSIS
-Update the navigation property messages in users
+The messages in a mailbox or folder.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -69,7 +71,9 @@ Update-MgUserMessage -InputObject <IMailIdentity> -BodyParameter <IMicrosoftGrap
 ```
 
 ## DESCRIPTION
-Update the navigation property messages in users
+The messages in a mailbox or folder.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -830,13 +834,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMailIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMessage1
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

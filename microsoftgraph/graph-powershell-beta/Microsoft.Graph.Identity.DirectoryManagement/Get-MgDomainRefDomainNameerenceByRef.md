@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDomainRefDomainNameerenceByRef
 
 ## SYNOPSIS
-Get ref of domainNameReferences from domains
+Read-only, Nullable
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-MgDomainRefDomainNameerenceByRef -DomainId <String> [-Filter <String>] [-Sea
 ```
 
 ## DESCRIPTION
-Get ref of domainNameReferences from domains
+Read-only, Nullable
 
 ## EXAMPLES
 
@@ -168,7 +168,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

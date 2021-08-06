@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgEducationMeAssignmentCategory
 
 ## SYNOPSIS
-Get categories from education
+When set, enables users to easily find assignments of a given type.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgEducationMeAssignmentCategory -InputObject <IEducationIdentity> [-ExpandPr
 ```
 
 ## DESCRIPTION
-Get categories from education
+When set, enables users to easily find assignments of a given type.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -241,11 +245,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationCategory
-
 ## NOTES
 
 ALIASES

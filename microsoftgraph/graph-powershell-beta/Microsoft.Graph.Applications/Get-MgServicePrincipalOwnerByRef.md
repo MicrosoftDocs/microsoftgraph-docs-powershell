@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgServicePrincipalOwnerByRef
 
 ## SYNOPSIS
-Get ref of owners from servicePrincipals
+Directory objects that are owners of this servicePrincipal.
+The owners are a set of non-admin users or servicePrincipals who are allowed to modify this object.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -19,7 +22,10 @@ Get-MgServicePrincipalOwnerByRef -ServicePrincipalId <String> [-Filter <String>]
 ```
 
 ## DESCRIPTION
-Get ref of owners from servicePrincipals
+Directory objects that are owners of this servicePrincipal.
+The owners are a set of non-admin users or servicePrincipals who are allowed to modify this object.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -169,7 +175,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

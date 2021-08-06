@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgTeamSchedule
 
 ## SYNOPSIS
-Get schedule from teams
+The schedule of shifts for this team.
 
 ## SYNTAX
 
@@ -24,7 +24,7 @@ Get-MgTeamSchedule -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-
 ```
 
 ## DESCRIPTION
-Get schedule from teams
+The schedule of shifts for this team.
 
 ## EXAMPLES
 
@@ -97,11 +97,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSchedule
-
 ## NOTES
 
 ALIASES

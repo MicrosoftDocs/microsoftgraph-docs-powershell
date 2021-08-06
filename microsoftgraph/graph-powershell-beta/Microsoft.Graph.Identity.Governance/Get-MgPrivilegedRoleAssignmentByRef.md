@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgPrivilegedRoleAssignmentByRef
 
 ## SYNOPSIS
-Get ref of assignments from privilegedRoles
+The assignments for this role.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -19,7 +21,9 @@ Get-MgPrivilegedRoleAssignmentByRef -PrivilegedRoleId <String> [-Filter <String>
 ```
 
 ## DESCRIPTION
-Get ref of assignments from privilegedRoles
+The assignments for this role.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -169,7 +173,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

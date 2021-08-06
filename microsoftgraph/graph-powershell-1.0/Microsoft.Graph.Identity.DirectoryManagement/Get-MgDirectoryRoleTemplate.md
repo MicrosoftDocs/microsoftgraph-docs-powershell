@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgDirectoryRoleTemplate
 
 ## SYNOPSIS
-Get entity from directoryRoleTemplates by key
+Represents an Azure Active Directory object.
+The directoryObject type is the base type for many other directory entity types.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgDirectoryRoleTemplate -InputObject <IIdentityDirectoryManagementIdentity> 
 ```
 
 ## DESCRIPTION
-Get entity from directoryRoleTemplates by key
+Represents an Azure Active Directory object.
+The directoryObject type is the base type for many other directory entity types.
 
 ## EXAMPLES
 
@@ -226,11 +228,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryRoleTemplate
-
 ## NOTES
 
 ALIASES

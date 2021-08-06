@@ -8,7 +8,10 @@ schema: 2.0.0
 # New-MgPrintPrinterShareByRef
 
 ## SYNOPSIS
-Create new navigation property ref to shares for print
+The list of printerShares that are associated with the printer.
+Currently, only one printerShare can be associated with the printer.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -37,7 +40,10 @@ New-MgPrintPrinterShareByRef -InputObject <IDevicesCloudPrintIdentity> -BodyPara
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to shares for print
+The list of printerShares that are associated with the printer.
+Currently, only one printerShare can be associated with the printer.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -141,13 +147,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths12CppzkPrintPrintersPrinterIdSharesRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

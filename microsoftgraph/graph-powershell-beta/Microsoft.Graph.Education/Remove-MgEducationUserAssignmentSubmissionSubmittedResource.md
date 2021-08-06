@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgEducationUserAssignmentSubmissionSubmittedResource
 
 ## SYNOPSIS
-Delete navigation property submittedResources for education
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -26,7 +27,8 @@ Remove-MgEducationUserAssignmentSubmissionSubmittedResource -InputObject <IEduca
 ```
 
 ## DESCRIPTION
-Delete navigation property submittedResources for education
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -175,11 +177,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

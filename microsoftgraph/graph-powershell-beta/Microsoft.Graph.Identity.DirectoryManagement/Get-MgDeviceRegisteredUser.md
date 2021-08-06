@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgDeviceRegisteredUser
 
 ## SYNOPSIS
-Get registeredUsers from devices
+Collection of registered users of the device.
+For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -19,7 +22,10 @@ Get-MgDeviceRegisteredUser -DeviceId <String> [-ExpandProperty <String[]>] [-Fil
 ```
 
 ## DESCRIPTION
-Get registeredUsers from devices
+Collection of registered users of the device.
+For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -199,7 +205,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
-
 ## NOTES
 
 ALIASES

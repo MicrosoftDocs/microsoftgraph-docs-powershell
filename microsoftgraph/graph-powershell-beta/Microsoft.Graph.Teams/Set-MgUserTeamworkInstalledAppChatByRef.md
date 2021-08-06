@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgUserTeamworkInstalledAppChatByRef
 
 ## SYNOPSIS
-Update the ref of navigation property chat in users
+The chat between the user and Teams app.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Set-MgUserTeamworkInstalledAppChatByRef -InputObject <ITeamsIdentity> -BodyParam
 ```
 
 ## DESCRIPTION
-Update the ref of navigation property chat in users
+The chat between the user and Teams app.
 
 ## EXAMPLES
 
@@ -171,13 +171,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

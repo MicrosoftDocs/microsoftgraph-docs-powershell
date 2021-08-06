@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgShareListItemDriveItem
 
 ## SYNOPSIS
-Delete navigation property driveItem for shares
+For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Remove-MgShareListItemDriveItem -InputObject <IFilesIdentity> [-IfMatch <String>
 ```
 
 ## DESCRIPTION
-Delete navigation property driveItem for shares
+For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
 
 ## EXAMPLES
 
@@ -156,11 +156,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

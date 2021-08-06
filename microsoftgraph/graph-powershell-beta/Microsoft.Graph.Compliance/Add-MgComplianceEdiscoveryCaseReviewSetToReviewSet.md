@@ -209,13 +209,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IPaths1N6Pr05ComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdMicrosoftGraphEdiscoveryAddtoreviewsetPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -298,7 +295,25 @@ BODYPARAMETER <IPaths1N6Pr05ComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetId
       - `[UnindexedItemsSize <Int64?>]`: The estimated size of unindexed items for the collection.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: The last date and time the sourceCollection was modified.
-    - `[NoncustodialSources <IMicrosoftGraphEdiscoveryDataSource[]>]`: 
+    - `[NoncustodialSources <IMicrosoftGraphEdiscoveryNoncustodialDataSource[]>]`: noncustodialDataSource sources that are included in the sourceCollection
+      - `[CreatedDateTime <DateTime?>]`: Created date and time of the dataSourceContainer entity.
+      - `[DisplayName <String>]`: Display name of the dataSourceContainer entity.
+      - `[LastIndexOperation <IMicrosoftGraphEdiscoveryCaseIndexOperation>]`: caseIndexOperation
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Action <String>]`: caseAction
+        - `[CompletedDateTime <DateTime?>]`: The date and time the operation was completed.
+        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+        - `[CreatedDateTime <DateTime?>]`: The date and time the operation was created.
+        - `[PercentProgress <Int32?>]`: The progress of the operation.
+        - `[ResultInfo <IMicrosoftGraphResultInfo>]`: resultInfo
+        - `[Status <String>]`: caseOperationStatus
+        - `[Id <String>]`: Read-only.
+      - `[LastModifiedDateTime <DateTime?>]`: Last modified date and time of the dataSourceContainer.
+      - `[ReleasedDateTime <DateTime?>]`: Date and time that the dataSourceContainer was released from the case.
+      - `[Status <String>]`: dataSourceContainerStatus
+      - `[Id <String>]`: Read-only.
+      - `[ApplyHoldToSource <Boolean?>]`: Indicates if hold is applied to non-custodial data source (such as mailbox or site).
+      - `[DataSource <IMicrosoftGraphEdiscoveryDataSource>]`: dataSource
 
 INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   - `[CaseId <String>]`: key: id of case
@@ -385,7 +400,25 @@ SOURCECOLLECTION <IMicrosoftGraphEdiscoverySourceCollection>: sourceCollection
     - `[UnindexedItemsSize <Int64?>]`: The estimated size of unindexed items for the collection.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[LastModifiedDateTime <DateTime?>]`: The last date and time the sourceCollection was modified.
-  - `[NoncustodialSources <IMicrosoftGraphEdiscoveryDataSource[]>]`: 
+  - `[NoncustodialSources <IMicrosoftGraphEdiscoveryNoncustodialDataSource[]>]`: noncustodialDataSource sources that are included in the sourceCollection
+    - `[CreatedDateTime <DateTime?>]`: Created date and time of the dataSourceContainer entity.
+    - `[DisplayName <String>]`: Display name of the dataSourceContainer entity.
+    - `[LastIndexOperation <IMicrosoftGraphEdiscoveryCaseIndexOperation>]`: caseIndexOperation
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Action <String>]`: caseAction
+      - `[CompletedDateTime <DateTime?>]`: The date and time the operation was completed.
+      - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[CreatedDateTime <DateTime?>]`: The date and time the operation was created.
+      - `[PercentProgress <Int32?>]`: The progress of the operation.
+      - `[ResultInfo <IMicrosoftGraphResultInfo>]`: resultInfo
+      - `[Status <String>]`: caseOperationStatus
+      - `[Id <String>]`: Read-only.
+    - `[LastModifiedDateTime <DateTime?>]`: Last modified date and time of the dataSourceContainer.
+    - `[ReleasedDateTime <DateTime?>]`: Date and time that the dataSourceContainer was released from the case.
+    - `[Status <String>]`: dataSourceContainerStatus
+    - `[Id <String>]`: Read-only.
+    - `[ApplyHoldToSource <Boolean?>]`: Indicates if hold is applied to non-custodial data source (such as mailbox or site).
+    - `[DataSource <IMicrosoftGraphEdiscoveryDataSource>]`: dataSource
 
 ## RELATED LINKS
 

@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgPolicyRoleManagementPolicyEffectiveRule
 
 ## SYNOPSIS
-Get effectiveRules from policies
+The list of effective rules like approval rule, expiration rule, etc.
+evaluated based on inherited referenced rules.
+E.g.
+If there is a tenant wide policy to enforce enabling approval rule, the effective rule will be to enable approval even if the polcy has a rule to disable approval.
 
 ## SYNTAX
 
@@ -33,7 +36,10 @@ Get-MgPolicyRoleManagementPolicyEffectiveRule -InputObject <IIdentitySignInsIden
 ```
 
 ## DESCRIPTION
-Get effectiveRules from policies
+The list of effective rules like approval rule, expiration rule, etc.
+evaluated based on inherited referenced rules.
+E.g.
+If there is a tenant wide policy to enforce enabling approval rule, the effective rule will be to enable approval even if the polcy has a rule to disable approval.
 
 ## EXAMPLES
 
@@ -242,11 +248,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementPolicyRule
-
 ## NOTES
 
 ALIASES
@@ -261,6 +265,7 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[AuthenticationContextClassReferenceId <String>]`: key: id of authenticationContextClassReference
   - `[AuthenticationMethodId <String>]`: key: id of authenticationMethod
   - `[AuthorizationPolicyId <String>]`: key: id of authorizationPolicy
+  - `[BitlockerRecoveryKeyId <String>]`: key: id of bitlockerRecoveryKey
   - `[ClaimsMappingPolicyId <String>]`: key: id of claimsMappingPolicy
   - `[ConditionalAccessPolicyId <String>]`: key: id of conditionalAccessPolicy
   - `[DataLossPreventionPolicyId <String>]`: key: id of dataLossPreventionPolicy
@@ -283,8 +288,6 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[PermissionGrantConditionSetId <String>]`: key: id of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: key: id of permissionGrantPolicy
   - `[PhoneAuthenticationMethodId <String>]`: key: id of phoneAuthenticationMethod
-  - `[PrivateEndpointConnectionId <String>]`: key: id of privateEndpointConnection
-  - `[PrivateLinkResourcePolicyId <String>]`: key: id of privateLinkResourcePolicy
   - `[RiskDetectionId <String>]`: key: id of riskDetection
   - `[RiskyUserHistoryItemId <String>]`: key: id of riskyUserHistoryItem
   - `[RiskyUserId <String>]`: key: id of riskyUser

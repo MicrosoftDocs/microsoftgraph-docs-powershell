@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementSoftwareUpdateStatusSummary
 
 ## SYNOPSIS
-Get softwareUpdateStatusSummary from deviceManagement
+The software update status summary.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-MgDeviceManagementSoftwareUpdateStatusSummary [-ExpandProperty <String[]>] [
 ```
 
 ## DESCRIPTION
-Get softwareUpdateStatusSummary from deviceManagement
+The software update status summary.
 
 ## EXAMPLES
 
@@ -62,7 +62,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSoftwareUpdateStatusSummary
-
 ## NOTES
 
 ALIASES

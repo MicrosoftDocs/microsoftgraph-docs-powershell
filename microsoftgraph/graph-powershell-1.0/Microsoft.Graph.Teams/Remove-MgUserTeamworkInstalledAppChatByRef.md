@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserTeamworkInstalledAppChatByRef
 
 ## SYNOPSIS
-Delete ref of navigation property chat for users
+The chat between the user and Teams app.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgUserTeamworkInstalledAppChatByRef -InputObject <ITeamsIdentity> [-IfMat
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property chat for users
+The chat between the user and Teams app.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

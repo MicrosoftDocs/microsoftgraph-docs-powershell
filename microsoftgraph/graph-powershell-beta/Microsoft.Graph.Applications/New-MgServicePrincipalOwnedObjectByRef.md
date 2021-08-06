@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgServicePrincipalOwnedObjectByRef
 
 ## SYNOPSIS
-Create new navigation property ref to ownedObjects for servicePrincipals
+Directory objects that are owned by this service principal.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -37,7 +39,9 @@ New-MgServicePrincipalOwnedObjectByRef -InputObject <IApplicationsIdentity> -Bod
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to ownedObjects for servicePrincipals
+Directory objects that are owned by this service principal.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -141,13 +145,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPathsRw1SvpServiceprincipalsServiceprincipalIdOwnedobjectsRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

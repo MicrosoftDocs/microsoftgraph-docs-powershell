@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgTeamInstalledAppTeamAppDefinitionByRef
 
 ## SYNOPSIS
-Update the ref of navigation property teamsAppDefinition in teams
+The details of this version of the app.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Set-MgTeamInstalledAppTeamAppDefinitionByRef -InputObject <ITeamsIdentity> -Body
 ```
 
 ## DESCRIPTION
-Update the ref of navigation property teamsAppDefinition in teams
+The details of this version of the app.
 
 ## EXAMPLES
 
@@ -171,13 +171,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

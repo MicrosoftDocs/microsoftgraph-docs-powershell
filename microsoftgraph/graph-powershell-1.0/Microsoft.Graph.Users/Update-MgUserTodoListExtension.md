@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgUserTodoListExtension
 
 ## SYNOPSIS
-Update the navigation property extensions in users
+The collection of open extensions defined for the task list.
+Nullable.
 
 ## SYNTAX
 
@@ -37,7 +38,8 @@ Update-MgUserTodoListExtension -InputObject <IUsersIdentity> -BodyParameter <Has
 ```
 
 ## DESCRIPTION
-Update the navigation property extensions in users
+The collection of open extensions defined for the task list.
+Nullable.
 
 ## EXAMPLES
 
@@ -201,13 +203,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

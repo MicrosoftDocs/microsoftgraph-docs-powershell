@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgEducationSynchronizationProfileError
 
 ## SYNOPSIS
-Update the navigation property errors in education
+All errors associated with this synchronization profile.
 
 ## SYNTAX
 
@@ -44,7 +44,7 @@ Update-MgEducationSynchronizationProfileError -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property errors in education
+All errors associated with this synchronization profile.
 
 ## EXAMPLES
 
@@ -284,13 +284,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSynchronizationError
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

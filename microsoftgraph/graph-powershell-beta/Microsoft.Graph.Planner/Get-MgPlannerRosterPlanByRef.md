@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPlannerRosterPlanByRef
 
 ## SYNOPSIS
-Get ref of plans from planner
+Retrieves the plans contained by the plannerRoster.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-MgPlannerRosterPlanByRef -PlannerRosterId <String> [-Filter <String>] [-Sear
 ```
 
 ## DESCRIPTION
-Get ref of plans from planner
+Retrieves the plans contained by the plannerRoster.
 
 ## EXAMPLES
 
@@ -168,7 +168,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

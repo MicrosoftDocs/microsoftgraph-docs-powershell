@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementReport
 
 ## SYNOPSIS
-Update the navigation property reports in deviceManagement
+Reports singleton
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Update-MgDeviceManagementReport -BodyParameter <IMicrosoftGraphDeviceManagementR
 ```
 
 ## DESCRIPTION
-Update the navigation property reports in deviceManagement
+Reports singleton
 
 ## EXAMPLES
 
@@ -180,11 +180,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementReports
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

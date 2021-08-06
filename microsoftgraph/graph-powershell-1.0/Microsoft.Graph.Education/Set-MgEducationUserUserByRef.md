@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgEducationUserUserByRef
 
 ## SYNOPSIS
-Update the ref of navigation property user in education
+The directory user corresponding to this user.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Set-MgEducationUserUserByRef -InputObject <IEducationIdentity> -BodyParameter <H
 ```
 
 ## DESCRIPTION
-Update the ref of navigation property user in education
+The directory user corresponding to this user.
 
 ## EXAMPLES
 
@@ -156,13 +156,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

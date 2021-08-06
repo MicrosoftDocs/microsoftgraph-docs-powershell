@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgShareRoot
 
 ## SYNOPSIS
-Get root from shares
+Used to access the underlying driveItem.
+Deprecated -- use driveItem instead.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Get-MgShareRoot -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Pro
 ```
 
 ## DESCRIPTION
-Get root from shares
+Used to access the underlying driveItem.
+Deprecated -- use driveItem instead.
 
 ## EXAMPLES
 
@@ -98,11 +100,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDriveItem1
-
 ## NOTES
 
 ALIASES

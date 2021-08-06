@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgShareItem
 
 ## SYNOPSIS
-Get items from shares
+All driveItems contained in the sharing root.
+This collection cannot be enumerated.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgShareItem -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Pro
 ```
 
 ## DESCRIPTION
-Get items from shares
+All driveItems contained in the sharing root.
+This collection cannot be enumerated.
 
 ## EXAMPLES
 
@@ -241,11 +243,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDriveItem
-
 ## NOTES
 
 ALIASES

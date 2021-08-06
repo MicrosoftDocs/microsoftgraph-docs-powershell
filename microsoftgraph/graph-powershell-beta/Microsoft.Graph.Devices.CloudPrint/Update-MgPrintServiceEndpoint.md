@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgPrintServiceEndpoint
 
 ## SYNOPSIS
-Update the navigation property endpoints in print
+Endpoints that can be used to access the service.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -38,7 +40,9 @@ Update-MgPrintServiceEndpoint -InputObject <IDevicesCloudPrintIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property endpoints in print
+Endpoints that can be used to access the service.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -218,13 +222,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintServiceEndpoint1
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

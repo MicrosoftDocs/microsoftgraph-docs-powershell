@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgUserMessageExtension
 
 ## SYNOPSIS
-Delete navigation property extensions for users
+The collection of open extensions defined for the message.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgUserMessageExtension -InputObject <IMailIdentity> [-IfMatch <String>] [
 ```
 
 ## DESCRIPTION
-Delete navigation property extensions for users
+The collection of open extensions defined for the message.
+Nullable.
 
 ## EXAMPLES
 
@@ -159,11 +161,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMailIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

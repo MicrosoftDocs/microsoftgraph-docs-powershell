@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgAdministrativeUnitExtension
 
 ## SYNOPSIS
-Create new navigation property to extensions for administrativeUnits
+The collection of open extensions defined for this Administrative Unit.
+Nullable.
 
 ## SYNTAX
 
@@ -37,7 +38,8 @@ New-MgAdministrativeUnitExtension -InputObject <IIdentityDirectoryManagementIden
 ```
 
 ## DESCRIPTION
-Create new navigation property to extensions for administrativeUnits
+The collection of open extensions defined for this Administrative Unit.
+Nullable.
 
 ## EXAMPLES
 
@@ -156,13 +158,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

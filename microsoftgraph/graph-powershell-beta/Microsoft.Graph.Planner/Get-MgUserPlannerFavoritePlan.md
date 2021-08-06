@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserPlannerFavoritePlan
 
 ## SYNOPSIS
-Get favoritePlans from users
+Read-only.
+Nullable.
+Returns the plannerPlans that the user marked as favorites.
 
 ## SYNTAX
 
@@ -19,7 +21,9 @@ Get-MgUserPlannerFavoritePlan -UserId <String> [-ExpandProperty <String[]>] [-Fi
 ```
 
 ## DESCRIPTION
-Get favoritePlans from users
+Read-only.
+Nullable.
+Returns the plannerPlans that the user marked as favorites.
 
 ## EXAMPLES
 
@@ -199,7 +203,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerPlan1
-
 ## NOTES
 
 ALIASES

@@ -61,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -AttendanceRecords
-.
+The list of attendance records.
 To construct, see NOTES section for ATTENDANCERECORDS properties and create a hash table.
 
 ```yaml
@@ -190,13 +190,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMeetingAttendanceReport
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -206,34 +203,34 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ATTENDANCERECORDS <IMicrosoftGraphAttendanceRecord[]>: .
-  - `[AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]`: 
-    - `[DurationInSeconds <Int32?>]`: 
-    - `[JoinDateTime <DateTime?>]`: 
-    - `[LeaveDateTime <DateTime?>]`: 
-  - `[EmailAddress <String>]`: 
+ATTENDANCERECORDS <IMicrosoftGraphAttendanceRecord[]>: The list of attendance records.
+  - `[AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]`: List of time periods between joining and leaving.
+    - `[DurationInSeconds <Int32?>]`: Duration of the meeting interval in seconds; that is, the difference between joinDateTime and leaveDateTime.
+    - `[JoinDateTime <DateTime?>]`: Time attendee joined in UTC.
+    - `[LeaveDateTime <DateTime?>]`: Time attendee left in UTC.
+  - `[EmailAddress <String>]`: Email address.
   - `[Identity <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
     - `[Id <String>]`: Unique identifier for the identity.
-  - `[Role <String>]`: 
-  - `[TotalAttendanceInSeconds <Int32?>]`: 
+  - `[Role <String>]`: Role of the attendee. Possible values are None, Attendee, Presenter, and Organizer.
+  - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
 
 BODYPARAMETER <IMicrosoftGraphMeetingAttendanceReport>: meetingAttendanceReport
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
-  - `[AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>]`: 
-    - `[AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]`: 
-      - `[DurationInSeconds <Int32?>]`: 
-      - `[JoinDateTime <DateTime?>]`: 
-      - `[LeaveDateTime <DateTime?>]`: 
-    - `[EmailAddress <String>]`: 
+  - `[AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>]`: The list of attendance records.
+    - `[AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]`: List of time periods between joining and leaving.
+      - `[DurationInSeconds <Int32?>]`: Duration of the meeting interval in seconds; that is, the difference between joinDateTime and leaveDateTime.
+      - `[JoinDateTime <DateTime?>]`: Time attendee joined in UTC.
+      - `[LeaveDateTime <DateTime?>]`: Time attendee left in UTC.
+    - `[EmailAddress <String>]`: Email address.
     - `[Identity <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
-    - `[Role <String>]`: 
-    - `[TotalAttendanceInSeconds <Int32?>]`: 
+    - `[Role <String>]`: Role of the attendee. Possible values are None, Attendee, Presenter, and Organizer.
+    - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
 
 INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup

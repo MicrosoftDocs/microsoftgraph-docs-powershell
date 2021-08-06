@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserTrendingInsight
 
 ## SYNOPSIS
-Get trending from users
+Access this property from the derived type itemInsights.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgUserTrendingInsight -InputObject <IPeopleIdentity> [-ExpandProperty <Strin
 ```
 
 ## DESCRIPTION
-Get trending from users
+Access this property from the derived type itemInsights.
 
 ## EXAMPLES
 
@@ -241,11 +241,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTrending
-
 ## NOTES
 
 ALIASES

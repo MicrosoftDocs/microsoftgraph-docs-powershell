@@ -8,15 +8,15 @@ schema: 2.0.0
 # Clear-MgUserManagedDevice
 
 ## SYNOPSIS
-Invoke action wipe
+Wipe a device
 
 ## SYNTAX
 
 ### WipeExpanded1 (Default)
 ```
 Clear-MgUserManagedDevice -ManagedDeviceId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-KeepEnrollmentData] [-KeepUserData] [-MacOSUnlockCode <String>] [-UseProtectedWipe] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-KeepEnrollmentData] [-KeepUserData] [-MacOSUnlockCode <String>] [-PersistEsimDataPlan] [-UseProtectedWipe]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Wipe1
@@ -29,8 +29,8 @@ Clear-MgUserManagedDevice -ManagedDeviceId <String> -UserId <String>
 ### WipeViaIdentityExpanded1
 ```
 Clear-MgUserManagedDevice -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-KeepEnrollmentData] [-KeepUserData] [-MacOSUnlockCode <String>] [-UseProtectedWipe] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-KeepEnrollmentData] [-KeepUserData] [-MacOSUnlockCode <String>] [-PersistEsimDataPlan] [-UseProtectedWipe]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### WipeViaIdentity1
@@ -41,7 +41,7 @@ Clear-MgUserManagedDevice -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action wipe
+Wipe a device
 
 ## EXAMPLES
 
@@ -169,6 +169,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -PersistEsimDataPlan
+.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: WipeExpanded1, WipeViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UseProtectedWipe
 .
 
@@ -236,13 +251,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths14R8Rr7UsersUserIdManageddevicesManageddeviceIdMicrosoftGraphWipePostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -257,6 +269,7 @@ BODYPARAMETER <IPaths14R8Rr7UsersUserIdManageddevicesManageddeviceIdMicrosoftGra
   - `[KeepEnrollmentData <Boolean?>]`: 
   - `[KeepUserData <Boolean?>]`: 
   - `[MacOSUnlockCode <String>]`: 
+  - `[PersistEsimDataPlan <Boolean?>]`: 
   - `[UseProtectedWipe <Boolean?>]`: 
 
 INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter

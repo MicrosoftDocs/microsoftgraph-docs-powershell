@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgSiteListContentTypeColumnLink
 
 ## SYNOPSIS
-Update the navigation property columnLinks in sites
+The collection of columns that are required by this content type
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Update-MgSiteListContentTypeColumnLink -InputObject <ISitesIdentity> -BodyParame
 ```
 
 ## DESCRIPTION
-Update the navigation property columnLinks in sites
+The collection of columns that are required by this content type
 
 ## EXAMPLES
 
@@ -234,13 +234,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnLink
-
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

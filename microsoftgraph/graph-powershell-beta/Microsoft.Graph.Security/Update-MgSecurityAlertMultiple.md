@@ -116,11 +116,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1Ehzqn7SecurityAlertsMicrosoftGraphUpdatealertsPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAlert
-
 ## NOTES
 
 ALIASES
@@ -259,7 +257,7 @@ BODYPARAMETER <IPaths1Ehzqn7SecurityAlertsMicrosoftGraphUpdatealertsPostRequestb
     - `[Title <String>]`: Alert title. Required.
     - `[Triggers <IMicrosoftGraphAlertTrigger[]>]`: Security-related information about the specific properties that triggered the alert (properties appearing in the alert). Alerts might contain information about multiple users, hosts, files, ip addresses. This field indicates which properties triggered the alert generation.
       - `[Name <String>]`: Name of the property serving as a detection trigger.
-      - `[Type <String>]`: Type of the property in the key:value pair for interpretation. For example, String, Boolean, etc.
+      - `[Type <String>]`: Type of the property in the key:value pair for interpretation. For example, String, Boolean etc.
       - `[Value <String>]`: Value of the property serving as a detection trigger.
     - `[UriClickSecurityStates <IMicrosoftGraphUriClickSecurityState[]>]`: 
       - `[ClickAction <String>]`: 
@@ -421,7 +419,7 @@ VALUE <IMicrosoftGraphAlert[]>: .
   - `[Title <String>]`: Alert title. Required.
   - `[Triggers <IMicrosoftGraphAlertTrigger[]>]`: Security-related information about the specific properties that triggered the alert (properties appearing in the alert). Alerts might contain information about multiple users, hosts, files, ip addresses. This field indicates which properties triggered the alert generation.
     - `[Name <String>]`: Name of the property serving as a detection trigger.
-    - `[Type <String>]`: Type of the property in the key:value pair for interpretation. For example, String, Boolean, etc.
+    - `[Type <String>]`: Type of the property in the key:value pair for interpretation. For example, String, Boolean etc.
     - `[Value <String>]`: Value of the property serving as a detection trigger.
   - `[UriClickSecurityStates <IMicrosoftGraphUriClickSecurityState[]>]`: 
     - `[ClickAction <String>]`: 

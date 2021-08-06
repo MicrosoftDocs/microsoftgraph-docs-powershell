@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgSitePermission
 
 ## SYNOPSIS
-Create new navigation property to permissions for sites
+The permissions associated with the site.
+Nullable.
 
 ## SYNTAX
 
@@ -44,7 +45,8 @@ New-MgSitePermission -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGra
 ```
 
 ## DESCRIPTION
-Create new navigation property to permissions for sites
+The permissions associated with the site.
+Nullable.
 
 ## EXAMPLES
 
@@ -312,13 +314,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermission1
-
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermission1
-
 ## NOTES
 
 ALIASES

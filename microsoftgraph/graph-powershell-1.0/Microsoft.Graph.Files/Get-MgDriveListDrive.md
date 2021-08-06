@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgDriveListDrive
 
 ## SYNOPSIS
-Get drive from drives
+Only present on document libraries.
+Allows access to the list as a [drive][] resource with [driveItems][driveItem].
 
 ## SYNTAX
 
@@ -24,7 +25,8 @@ Get-MgDriveListDrive -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] 
 ```
 
 ## DESCRIPTION
-Get drive from drives
+Only present on document libraries.
+Allows access to the list as a [drive][] resource with [driveItems][driveItem].
 
 ## EXAMPLES
 
@@ -97,11 +99,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDrive1
-
 ## NOTES
 
 ALIASES

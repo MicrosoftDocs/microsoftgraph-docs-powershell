@@ -245,11 +245,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConditionalAccessPolicy
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConditionalAccessPolicy
-
 ## NOTES
 
 ALIASES
@@ -268,6 +266,7 @@ BODYPARAMETER <IMicrosoftGraphConditionalAccessPolicy>: conditionalAccessPolicy
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ExcludeApplications <String[]>]`: The list of application IDs explicitly excluded from the policy.
       - `[IncludeApplications <String[]>]`: The list of application IDs the policy applies to, unless explicitly excluded (in excludeApplications). Can also be set to All.
+      - `[IncludeAuthenticationContextClassReferences <String[]>]`: Authentication context class references include. Supported values are c1 through c25.
       - `[IncludeUserActions <String[]>]`: User actions to include. Supported values are urn:user:registersecurityinfo and urn:user:registerdevice
     - `[ClientAppTypes <String[]>]`: Client application types included in the policy. Possible values are: all, browser, mobileAppsAndDesktopClients, exchangeActiveSync, easSupported, other. Required.
     - `[ClientApplications <IMicrosoftGraphConditionalAccessClientApplications>]`: conditionalAccessClientApplications
@@ -280,10 +279,14 @@ BODYPARAMETER <IMicrosoftGraphConditionalAccessPolicy>: conditionalAccessPolicy
       - `[IncludeStates <String[]>]`: States in the scope of the policy. All is the only allowed value.
     - `[Devices <IMicrosoftGraphConditionalAccessDevices>]`: conditionalAccessDevices
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DeviceFilter <IMicrosoftGraphConditionalAccessFilter>]`: conditionalAccessFilter
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Mode <String>]`: filterMode
+        - `[Rule <String>]`: Rule syntax is similar to that used for membership rules for groups in Azure AD. For details, see rules with multiple expressions
       - `[ExcludeDeviceStates <String[]>]`: 
-      - `[ExcludeDevices <String[]>]`: States excluded from the scope of the policy. Possible values: Compliant, DomainJoined.
+      - `[ExcludeDevices <String[]>]`: States excluded from the scope of the policy. Possible values: Compliant, DomainJoined. Cannot be set if deviceFIlter is set.
       - `[IncludeDeviceStates <String[]>]`: 
-      - `[IncludeDevices <String[]>]`: States in the scope of the policy. All is the only allowed value.
+      - `[IncludeDevices <String[]>]`: States in the scope of the policy. All is the only allowed value. Cannot be set if deviceFIlter is set.
     - `[Locations <IMicrosoftGraphConditionalAccessLocations>]`: conditionalAccessLocations
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ExcludeLocations <String[]>]`: Location IDs excluded from scope of policy.
@@ -338,6 +341,7 @@ CONDITIONS <IMicrosoftGraphConditionalAccessConditionSet>: conditionalAccessCond
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ExcludeApplications <String[]>]`: The list of application IDs explicitly excluded from the policy.
     - `[IncludeApplications <String[]>]`: The list of application IDs the policy applies to, unless explicitly excluded (in excludeApplications). Can also be set to All.
+    - `[IncludeAuthenticationContextClassReferences <String[]>]`: Authentication context class references include. Supported values are c1 through c25.
     - `[IncludeUserActions <String[]>]`: User actions to include. Supported values are urn:user:registersecurityinfo and urn:user:registerdevice
   - `[ClientAppTypes <String[]>]`: Client application types included in the policy. Possible values are: all, browser, mobileAppsAndDesktopClients, exchangeActiveSync, easSupported, other. Required.
   - `[ClientApplications <IMicrosoftGraphConditionalAccessClientApplications>]`: conditionalAccessClientApplications
@@ -350,10 +354,14 @@ CONDITIONS <IMicrosoftGraphConditionalAccessConditionSet>: conditionalAccessCond
     - `[IncludeStates <String[]>]`: States in the scope of the policy. All is the only allowed value.
   - `[Devices <IMicrosoftGraphConditionalAccessDevices>]`: conditionalAccessDevices
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DeviceFilter <IMicrosoftGraphConditionalAccessFilter>]`: conditionalAccessFilter
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Mode <String>]`: filterMode
+      - `[Rule <String>]`: Rule syntax is similar to that used for membership rules for groups in Azure AD. For details, see rules with multiple expressions
     - `[ExcludeDeviceStates <String[]>]`: 
-    - `[ExcludeDevices <String[]>]`: States excluded from the scope of the policy. Possible values: Compliant, DomainJoined.
+    - `[ExcludeDevices <String[]>]`: States excluded from the scope of the policy. Possible values: Compliant, DomainJoined. Cannot be set if deviceFIlter is set.
     - `[IncludeDeviceStates <String[]>]`: 
-    - `[IncludeDevices <String[]>]`: States in the scope of the policy. All is the only allowed value.
+    - `[IncludeDevices <String[]>]`: States in the scope of the policy. All is the only allowed value. Cannot be set if deviceFIlter is set.
   - `[Locations <IMicrosoftGraphConditionalAccessLocations>]`: conditionalAccessLocations
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ExcludeLocations <String[]>]`: Location IDs excluded from scope of policy.

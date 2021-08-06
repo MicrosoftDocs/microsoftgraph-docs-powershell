@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgEducationClassAssignmentResource
 
 ## SYNOPSIS
-Get resources from education
+Learning objects that are associated with this assignment.
+Only teachers can modify this list.
+Nullable.
 
 ## SYNTAX
 
@@ -19,20 +21,22 @@ Get-MgEducationClassAssignmentResource -EducationAssignmentId <String> -Educatio
  [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get
+### Get1
 ```
 Get-MgEducationClassAssignmentResource -EducationAssignmentId <String> -EducationAssignmentResourceId <String>
  -EducationClassId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity1
 ```
 Get-MgEducationClassAssignmentResource -InputObject <IEducationIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get resources from education
+Learning objects that are associated with this assignment.
+Only teachers can modify this list.
+Nullable.
 
 ## EXAMPLES
 
@@ -74,7 +78,7 @@ key: id of educationAssignment
 
 ```yaml
 Type: String
-Parameter Sets: List, Get
+Parameter Sets: List, Get1
 Aliases:
 
 Required: True
@@ -89,7 +93,7 @@ key: id of educationAssignmentResource
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -104,7 +108,7 @@ key: id of educationClass
 
 ```yaml
 Type: String
-Parameter Sets: List, Get
+Parameter Sets: List, Get1
 Aliases:
 
 Required: True
@@ -150,7 +154,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IEducationIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: GetViaIdentity1
 Aliases:
 
 Required: True
@@ -256,11 +260,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationAssignmentResource
-
 ## NOTES
 
 ALIASES

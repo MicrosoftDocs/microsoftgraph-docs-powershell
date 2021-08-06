@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponse
 
 ## SYNOPSIS
-Create new navigation property to microsoftTunnelServerLogCollectionResponses for deviceManagement
+Collection of MicrosoftTunnelServerLogCollectionResponse settings associated with account.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ New-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponse
 ```
 
 ## DESCRIPTION
-Create new navigation property to microsoftTunnelServerLogCollectionResponses for deviceManagement
+Collection of MicrosoftTunnelServerLogCollectionResponse settings associated with account.
 
 ## EXAMPLES
 
@@ -222,11 +222,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelServerLogCollectionResponse
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelServerLogCollectionResponse
-
 ## NOTES
 
 ALIASES

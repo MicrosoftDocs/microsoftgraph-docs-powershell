@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserDirectReportByRef
 
 ## SYNOPSIS
-Get ref of directReports from users
+The users and contacts that report to the user.
+(The users and contacts that have their manager property set to this user.) Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -18,7 +20,9 @@ Get-MgUserDirectReportByRef -UserId <String> [-Filter <String>] [-Search <String
 ```
 
 ## DESCRIPTION
-Get ref of directReports from users
+The users and contacts that report to the user.
+(The users and contacts that have their manager property set to this user.) Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -168,7 +172,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

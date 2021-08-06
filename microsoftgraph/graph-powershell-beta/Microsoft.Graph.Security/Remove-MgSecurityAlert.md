@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgSecurityAlert
 
 ## SYNOPSIS
-Delete navigation property alerts for security
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgSecurityAlert -InputObject <ISecurityIdentity> [-IfMatch <String>] [-Pa
 ```
 
 ## DESCRIPTION
-Delete navigation property alerts for security
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -129,11 +131,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgComplianceEdiscoveryCaseSourceCollection
 
 ## SYNOPSIS
-Delete navigation property sourceCollections for compliance
+Returns a list of sourceCollection objects associated with this case.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgComplianceEdiscoveryCaseSourceCollection -InputObject <IComplianceIdent
 ```
 
 ## DESCRIPTION
-Delete navigation property sourceCollections for compliance
+Returns a list of sourceCollection objects associated with this case.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgPrintServiceEndpoint
 
 ## SYNOPSIS
-Create new navigation property to endpoints for print
+Endpoints that can be used to access the service.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -37,7 +39,9 @@ New-MgPrintServiceEndpoint -InputObject <IDevicesCloudPrintIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to endpoints for print
+Endpoints that can be used to access the service.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -187,13 +191,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintServiceEndpoint
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintServiceEndpoint
-
 ## NOTES
 
 ALIASES

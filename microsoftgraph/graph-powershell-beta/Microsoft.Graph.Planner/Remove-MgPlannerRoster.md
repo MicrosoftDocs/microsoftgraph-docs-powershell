@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgPlannerRoster
 
 ## SYNOPSIS
-Delete navigation property rosters for planner
+Read-only.
+Nullable.
+Returns a collection of the specified rosters
 
 ## SYNTAX
 
@@ -25,7 +27,9 @@ Remove-MgPlannerRoster -InputObject <IPlannerIdentity> [-IfMatch <String>] [-Pas
 ```
 
 ## DESCRIPTION
-Delete navigation property rosters for planner
+Read-only.
+Nullable.
+Returns a collection of the specified rosters
 
 ## EXAMPLES
 
@@ -129,11 +133,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

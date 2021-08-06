@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgUserMailFolder
 
 ## SYNOPSIS
-Update the navigation property mailFolders in users
+The user's mail folders.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -51,7 +53,9 @@ Update-MgUserMailFolder -InputObject <IMailIdentity> -BodyParameter <IMicrosoftG
 ```
 
 ## DESCRIPTION
-Update the navigation property mailFolders in users
+The user's mail folders.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -411,13 +415,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMailIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailFolder1
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

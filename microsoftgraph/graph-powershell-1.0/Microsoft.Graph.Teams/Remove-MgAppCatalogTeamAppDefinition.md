@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgAppCatalogTeamAppDefinition
 
 ## SYNOPSIS
-Delete navigation property appDefinitions for appCatalogs
+The details for each version of the app.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgAppCatalogTeamAppDefinition -InputObject <ITeamsIdentity> [-IfMatch <St
 ```
 
 ## DESCRIPTION
-Delete navigation property appDefinitions for appCatalogs
+The details for each version of the app.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

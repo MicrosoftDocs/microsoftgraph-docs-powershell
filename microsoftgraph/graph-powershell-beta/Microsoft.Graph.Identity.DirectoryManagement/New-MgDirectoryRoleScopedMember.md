@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgDirectoryRoleScopedMember
 
 ## SYNOPSIS
-Create new navigation property to scopedMembers for directoryRoles
+Members of this directory role that are scoped to administrative units.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -39,7 +41,9 @@ New-MgDirectoryRoleScopedMember -InputObject <IIdentityDirectoryManagementIdenti
 ```
 
 ## DESCRIPTION
-Create new navigation property to scopedMembers for directoryRoles
+Members of this directory role that are scoped to administrative units.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -205,13 +209,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphScopedRoleMembership
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphScopedRoleMembership
-
 ## NOTES
 
 ALIASES

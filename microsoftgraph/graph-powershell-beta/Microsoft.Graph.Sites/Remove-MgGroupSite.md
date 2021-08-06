@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgGroupSite
 
 ## SYNOPSIS
-Delete navigation property sites for groups
+The list of SharePoint sites in this group.
+Access the default site with /sites/root.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgGroupSite -InputObject <ISitesIdentity> [-IfMatch <String>] [-PassThru]
 ```
 
 ## DESCRIPTION
-Delete navigation property sites for groups
+The list of SharePoint sites in this group.
+Access the default site with /sites/root.
 
 ## EXAMPLES
 
@@ -144,11 +146,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

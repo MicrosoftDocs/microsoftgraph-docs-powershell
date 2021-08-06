@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgServicePrincipalSynchronizationJobSchemaDirectory
 
 ## SYNOPSIS
-Create new navigation property to directories for servicePrincipals
+Contains the collection of directories and all of their objects.
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ New-MgServicePrincipalSynchronizationJobSchemaDirectory -InputObject <IApplicati
 ```
 
 ## DESCRIPTION
-Create new navigation property to directories for servicePrincipals
+Contains the collection of directories and all of their objects.
 
 ## EXAMPLES
 
@@ -272,13 +272,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryDefinition
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryDefinition
-
 ## NOTES
 
 ALIASES

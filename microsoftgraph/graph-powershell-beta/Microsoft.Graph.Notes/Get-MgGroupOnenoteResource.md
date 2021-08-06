@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgGroupOnenoteResource
 
 ## SYNOPSIS
-Get resources from groups
+The image and other file resources in OneNote pages.
+Getting a resources collection is not supported, but you can get the binary content of a specific resource.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +28,10 @@ Get-MgGroupOnenoteResource -InputObject <INotesIdentity> [-ExpandProperty <Strin
 ```
 
 ## DESCRIPTION
-Get resources from groups
+The image and other file resources in OneNote pages.
+Getting a resources collection is not supported, but you can get the binary content of a specific resource.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -113,11 +119,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.INotesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnenoteResource
-
 ## NOTES
 
 ALIASES

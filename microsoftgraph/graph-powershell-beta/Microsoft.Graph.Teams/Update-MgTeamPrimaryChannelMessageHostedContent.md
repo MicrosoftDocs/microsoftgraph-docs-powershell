@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgTeamPrimaryChannelMessageHostedContent
 
 ## SYNOPSIS
-Update the navigation property hostedContents in teams
+Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Update-MgTeamPrimaryChannelMessageHostedContent -InputObject <ITeamsIdentity> -B
 ```
 
 ## DESCRIPTION
-Update the navigation property hostedContents in teams
+Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
 ## EXAMPLES
 
@@ -235,13 +235,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

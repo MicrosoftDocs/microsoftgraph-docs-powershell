@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementAppleUserInitiatedEnrollmentProfile
 
 ## SYNOPSIS
-Create new navigation property to appleUserInitiatedEnrollmentProfiles for deviceManagement
+Apple user initiated enrollment profiles
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ New-MgDeviceManagementAppleUserInitiatedEnrollmentProfile
 ```
 
 ## DESCRIPTION
-Create new navigation property to appleUserInitiatedEnrollmentProfiles for deviceManagement
+Apple user initiated enrollment profiles
 
 ## EXAMPLES
 
@@ -256,11 +256,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppleUserInitiatedEnrollmentProfile
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppleUserInitiatedEnrollmentProfile
-
 ## NOTES
 
 ALIASES

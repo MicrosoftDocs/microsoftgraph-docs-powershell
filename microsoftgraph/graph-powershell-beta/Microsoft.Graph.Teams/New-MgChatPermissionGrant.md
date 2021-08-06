@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgChatPermissionGrant
 
 ## SYNOPSIS
-Create new navigation property to permissionGrants for chats
+A collection of permissions granted to apps for the chat.
 
 ## SYNTAX
 
@@ -40,7 +40,7 @@ New-MgChatPermissionGrant -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to permissionGrants for chats
+A collection of permissions granted to apps for the chat.
 
 ## EXAMPLES
 
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -Permission
-The name of the permission.
+The name of the resource-specific permission.
 Read-only.
 
 ```yaml
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 
 ### -PermissionType
 The type of permission.
-Possible values are: Application,Delegated.
+Possible values are: Application, Delegated.
 Read-only.
 
 ```yaml
@@ -257,13 +257,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphResourceSpecificPermissionGrant
-
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphResourceSpecificPermissionGrant
-
 ## NOTES
 
 ALIASES
@@ -279,8 +276,8 @@ BODYPARAMETER <IMicrosoftGraphResourceSpecificPermissionGrant>: Represents an Az
   - `[Id <String>]`: Read-only.
   - `[ClientAppId <String>]`: ID of the service principal of the Azure AD app that has been granted access. Read-only.
   - `[ClientId <String>]`: ID of the Azure AD app that has been granted access. Read-only.
-  - `[Permission <String>]`: The name of the permission. Read-only.
-  - `[PermissionType <String>]`: The type of permission. Possible values are: Application,Delegated. Read-only.
+  - `[Permission <String>]`: The name of the resource-specific permission. Read-only.
+  - `[PermissionType <String>]`: The type of permission. Possible values are: Application, Delegated. Read-only.
   - `[ResourceAppId <String>]`: ID of the Azure AD app that is hosting the resource. Read-only.
 
 INPUTOBJECT <ITeamsIdentity>: Identity Parameter

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgGroupConversation
 
 ## SYNOPSIS
-Delete navigation property conversations for groups
+The group's conversations.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgGroupConversation -InputObject <IGroupsIdentity> [-IfMatch <String>] [-
 ```
 
 ## DESCRIPTION
-Delete navigation property conversations for groups
+The group's conversations.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

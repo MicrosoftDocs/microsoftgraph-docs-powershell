@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgGroupEventExtension
 
 ## SYNOPSIS
-Create new navigation property to extensions for groups
+The collection of open extensions defined for the event.
+Nullable.
 
 ## SYNTAX
 
@@ -37,7 +38,8 @@ New-MgGroupEventExtension -InputObject <ICalendarIdentity> -BodyParameter <Hasht
 ```
 
 ## DESCRIPTION
-Create new navigation property to extensions for groups
+The collection of open extensions defined for the event.
+Nullable.
 
 ## EXAMPLES
 
@@ -171,13 +173,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

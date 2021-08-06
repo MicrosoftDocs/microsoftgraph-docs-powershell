@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgSiteListContentTypeColumnLink
 
 ## SYNOPSIS
-Delete navigation property columnLinks for sites
+The collection of columns that are required by this content type
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgSiteListContentTypeColumnLink -InputObject <ISitesIdentity> [-IfMatch <
 ```
 
 ## DESCRIPTION
-Delete navigation property columnLinks for sites
+The collection of columns that are required by this content type
 
 ## EXAMPLES
 
@@ -174,11 +174,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

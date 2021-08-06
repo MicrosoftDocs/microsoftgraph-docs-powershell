@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserSettingRegionalAndLanguageSetting
 
 ## SYNOPSIS
-Delete navigation property regionalAndLanguageSettings for users
+The user's preferences for languages, regional locale and date/time formatting.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgUserSettingRegionalAndLanguageSetting -InputObject <IUsersIdentity> [-I
 ```
 
 ## DESCRIPTION
-Delete navigation property regionalAndLanguageSettings for users
+The user's preferences for languages, regional locale and date/time formatting.
 
 ## EXAMPLES
 
@@ -129,11 +129,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

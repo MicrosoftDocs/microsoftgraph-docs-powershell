@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgEducationSynchronizationProfileError
 
 ## SYNOPSIS
-Delete navigation property errors for education
+All errors associated with this synchronization profile.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ Remove-MgEducationSynchronizationProfileError -InputObject <IEducationIdentity> 
 ```
 
 ## DESCRIPTION
-Delete navigation property errors for education
+All errors associated with this synchronization profile.
 
 ## EXAMPLES
 
@@ -145,11 +145,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgComplianceEdiscoveryCaseNoncustodialDataSource
 
 ## SYNOPSIS
-Update the navigation property noncustodialDataSources in compliance
+Returns a list of case noncustodialDataSource objects for this case.
+Nullable.
 
 ## SYNTAX
 
@@ -45,7 +46,8 @@ Update-MgComplianceEdiscoveryCaseNoncustodialDataSource -InputObject <IComplianc
 ```
 
 ## DESCRIPTION
-Update the navigation property noncustodialDataSources in compliance
+Returns a list of case noncustodialDataSource objects for this case.
+Nullable.
 
 ## EXAMPLES
 
@@ -67,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplyHoldToSource
-.
+Indicates if hold is applied to non-custodial data source (such as mailbox or site).
 
 ```yaml
 Type: SwitchParameter
@@ -113,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-.
+Created date and time of the dataSourceContainer entity.
 
 ```yaml
 Type: DateTime
@@ -144,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+Display name of the dataSourceContainer entity.
 
 ```yaml
 Type: String
@@ -205,7 +207,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastModifiedDateTime
-.
+Last modified date and time of the dataSourceContainer.
 
 ```yaml
 Type: DateTime
@@ -250,7 +252,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReleasedDateTime
-.
+Date and time that the dataSourceContainer was released from the case.
 
 ```yaml
 Type: DateTime
@@ -316,13 +318,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryNoncustodialDataSource
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -334,8 +333,8 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER <IMicrosoftGraphEdiscoveryNoncustodialDataSource>: noncustodialDataSource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[DisplayName <String>]`: 
+  - `[CreatedDateTime <DateTime?>]`: Created date and time of the dataSourceContainer entity.
+  - `[DisplayName <String>]`: Display name of the dataSourceContainer entity.
   - `[LastIndexOperation <IMicrosoftGraphEdiscoveryCaseIndexOperation>]`: caseIndexOperation
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Action <String>]`: caseAction
@@ -357,11 +356,11 @@ BODYPARAMETER <IMicrosoftGraphEdiscoveryNoncustodialDataSource>: noncustodialDat
       - `[Subcode <Int32?>]`: The result sub-code.
     - `[Status <String>]`: caseOperationStatus
     - `[Id <String>]`: Read-only.
-  - `[LastModifiedDateTime <DateTime?>]`: 
-  - `[ReleasedDateTime <DateTime?>]`: 
+  - `[LastModifiedDateTime <DateTime?>]`: Last modified date and time of the dataSourceContainer.
+  - `[ReleasedDateTime <DateTime?>]`: Date and time that the dataSourceContainer was released from the case.
   - `[Status <String>]`: dataSourceContainerStatus
   - `[Id <String>]`: Read-only.
-  - `[ApplyHoldToSource <Boolean?>]`: 
+  - `[ApplyHoldToSource <Boolean?>]`: Indicates if hold is applied to non-custodial data source (such as mailbox or site).
   - `[DataSource <IMicrosoftGraphEdiscoveryDataSource>]`: dataSource
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: Read-only.

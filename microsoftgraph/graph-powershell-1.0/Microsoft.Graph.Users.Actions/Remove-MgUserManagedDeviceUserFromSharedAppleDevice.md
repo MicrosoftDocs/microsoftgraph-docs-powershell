@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserManagedDeviceUserFromSharedAppleDevice
 
 ## SYNOPSIS
-Invoke action deleteUserFromSharedAppleDevice
+Delete user from shared Apple device
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Remove-MgUserManagedDeviceUserFromSharedAppleDevice -InputObject <IUsersActionsI
 ```
 
 ## DESCRIPTION
-Invoke action deleteUserFromSharedAppleDevice
+Delete user from shared Apple device
 
 ## EXAMPLES
 
@@ -191,13 +191,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPathsWbtl2JUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphDeleteuserfromsharedappledevicePostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

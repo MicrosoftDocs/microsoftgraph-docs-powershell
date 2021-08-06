@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteListSubscription
 
 ## SYNOPSIS
-Get subscriptions from sites
+The set of subscriptions on the list.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgSiteListSubscription -InputObject <ISitesIdentity> [-ExpandProperty <Strin
 ```
 
 ## DESCRIPTION
-Get subscriptions from sites
+The set of subscriptions on the list.
 
 ## EXAMPLES
 
@@ -256,11 +256,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSubscription1
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgPrintTaskDefinitionTask
 
 ## SYNOPSIS
-Delete navigation property tasks for print
+A list of tasks that have been created based on this definition.
+The list includes currently running tasks and recently completed tasks.
+Read-only.
 
 ## SYNTAX
 
@@ -25,7 +27,9 @@ Remove-MgPrintTaskDefinitionTask -InputObject <IDevicesCloudPrintIdentity> [-IfM
 ```
 
 ## DESCRIPTION
-Delete navigation property tasks for print
+A list of tasks that have been created based on this definition.
+The list includes currently running tasks and recently completed tasks.
+Read-only.
 
 ## EXAMPLES
 
@@ -144,11 +148,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

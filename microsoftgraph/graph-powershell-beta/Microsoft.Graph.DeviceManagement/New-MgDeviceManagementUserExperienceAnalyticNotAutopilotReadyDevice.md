@@ -1,6 +1,6 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Enrolment
+external help file: Microsoft.Graph.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticnotautopilotreadydevice
 schema: 2.0.0
 ---
@@ -8,14 +8,14 @@ schema: 2.0.0
 # New-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice
 
 ## SYNOPSIS
-Create new navigation property to userExperienceAnalyticsNotAutopilotReadyDevice for deviceManagement
+User experience analytics devices not Windows Autopilot ready.
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice [-AdditionalProperties <Hashtable>]
- [-AutoPilotProfileAssigned] [-AutoPilotRegistered] [-AzureAdJoinType <String>] [-AzureAdRegistered <String>]
+ [-AutoPilotProfileAssigned] [-AutoPilotRegistered] [-AzureAdJoinType <String>] [-AzureAdRegistered]
  [-DeviceName <String>] [-Id <String>] [-ManagedBy <String>] [-Manufacturer <String>] [-Model <String>]
  [-SerialNumber <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -28,7 +28,7 @@ New-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice
 ```
 
 ## DESCRIPTION
-Create new navigation property to userExperienceAnalyticsNotAutopilotReadyDevice for deviceManagement
+User experience analytics devices not Windows Autopilot ready.
 
 ## EXAMPLES
 
@@ -95,10 +95,10 @@ Accept wildcard characters: False
 ```
 
 ### -AzureAdRegistered
-azureAdRegisteredState
+The intune device's azureAdRegistered.
 
 ```yaml
-Type: String
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -252,11 +252,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsNotAutopilotReadyDevice
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsNotAutopilotReadyDevice
-
 ## NOTES
 
 ALIASES
@@ -272,7 +270,7 @@ BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsNotAutopilotReadyDevice>: T
   - `[AutoPilotProfileAssigned <Boolean?>]`: The intune device's autopilotProfileAssigned.
   - `[AutoPilotRegistered <Boolean?>]`: The intune device's autopilotRegistered.
   - `[AzureAdJoinType <String>]`: The intune device's azure Ad joinType.
-  - `[AzureAdRegistered <String>]`: azureAdRegisteredState
+  - `[AzureAdRegistered <Boolean?>]`: The intune device's azureAdRegistered.
   - `[DeviceName <String>]`: The intune device's name.
   - `[ManagedBy <String>]`: The intune device's managed by.
   - `[Manufacturer <String>]`: The intune device's manufacturer.

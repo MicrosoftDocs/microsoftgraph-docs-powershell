@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgChatPermissionGrant
 
 ## SYNOPSIS
-Get permissionGrants from chats
+A collection of permissions granted to apps for the chat.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgChatPermissionGrant -InputObject <ITeamsIdentity> [-ExpandProperty <String
 ```
 
 ## DESCRIPTION
-Get permissionGrants from chats
+A collection of permissions granted to apps for the chat.
 
 ## EXAMPLES
 
@@ -241,11 +241,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphResourceSpecificPermissionGrant
-
 ## NOTES
 
 ALIASES

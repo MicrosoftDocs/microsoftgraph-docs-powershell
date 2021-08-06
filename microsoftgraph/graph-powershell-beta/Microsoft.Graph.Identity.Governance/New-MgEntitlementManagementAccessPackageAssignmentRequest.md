@@ -12,7 +12,20 @@ Create new navigation property to accessPackageAssignmentRequests for identityGo
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### CreateRequestAdminAdd (Default)
+```
+New-MgEntitlementManagementAccessPackageAssignmentRequest [-Answers <IMicrosoftGraphAccessPackageAnswer[]>]
+ [-Justification <String>] [-RequestType <String>] -AccessPackageId <String> -AssignmentPolicyId <String>
+ -TargetId <String> [-StartDate <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Create
+```
+New-MgEntitlementManagementAccessPackageAssignmentRequest
+ -BodyParameter <IMicrosoftGraphAccessPackageAssignmentRequest> [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateExpanded
 ```
 New-MgEntitlementManagementAccessPackageAssignmentRequest [-AccessPackage <IMicrosoftGraphAccessPackage>]
  [-AccessPackageAssignment <IMicrosoftGraphAccessPackageAssignment>] [-AdditionalProperties <Hashtable>]
@@ -23,10 +36,10 @@ New-MgEntitlementManagementAccessPackageAssignmentRequest [-AccessPackage <IMicr
  [-Confirm] [<CommonParameters>]
 ```
 
-### Create
+### CreateRequestAdminRemove
 ```
-New-MgEntitlementManagementAccessPackageAssignmentRequest
- -BodyParameter <IMicrosoftGraphAccessPackageAssignmentRequest> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgEntitlementManagementAccessPackageAssignmentRequest [-Justification <String>] [-RequestType <String>]
+ -AccessPackageAssignmentId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -68,6 +81,34 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -AccessPackageAssignmentId
+
+```yaml
+Type: String
+Parameter Sets: CreateRequestAdminRemove
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AccessPackageId
+
+```yaml
+Type: String
+Parameter Sets: CreateRequestAdminAdd
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -AdditionalProperties
 Additional Parameters
 
@@ -89,10 +130,24 @@ To construct, see NOTES section for ANSWERS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAccessPackageAnswer[]
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateRequestAdminAdd, CreateExpanded
 Aliases:
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AssignmentPolicyId
+
+```yaml
+Type: String
+Parameter Sets: CreateRequestAdminAdd
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -200,7 +255,7 @@ The requestor's supplied justification.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateRequestAdminAdd, CreateExpanded, CreateRequestAdminRemove
 Aliases:
 
 Required: False
@@ -265,7 +320,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateRequestAdminAdd, CreateExpanded, CreateRequestAdminRemove
 Aliases:
 
 Required: False
@@ -285,6 +340,34 @@ Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -StartDate
+
+```yaml
+Type: String
+Parameter Sets: CreateRequestAdminAdd
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TargetId
+
+```yaml
+Type: String
+Parameter Sets: CreateRequestAdminAdd
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -328,11 +411,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageAssignmentRequest
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageAssignmentRequest
-
 ## NOTES
 
 ALIASES

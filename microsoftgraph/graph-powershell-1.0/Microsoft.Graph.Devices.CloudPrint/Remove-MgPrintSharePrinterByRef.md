@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgPrintSharePrinterByRef
 
 ## SYNOPSIS
-Delete ref of navigation property printer for print
+The printer that this printer share is related to.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgPrintSharePrinterByRef -InputObject <IDevicesCloudPrintIdentity> [-IfMa
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property printer for print
+The printer that this printer share is related to.
 
 ## EXAMPLES
 
@@ -129,11 +129,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgPrintService
 
 ## SYNOPSIS
-Update the navigation property services in print
+The list of available Universal Print service endpoints.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Update-MgPrintService -InputObject <IDevicesCloudPrintIdentity> -BodyParameter <
 ```
 
 ## DESCRIPTION
-Update the navigation property services in print
+The list of available Universal Print service endpoints.
 
 ## EXAMPLES
 
@@ -192,13 +192,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintService
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgTeamPhotoContent
 
 ## SYNOPSIS
-Update media content for the navigation property photo in teams
+The team photo.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Set-MgTeamPhotoContent -InputObject <ITeamsIdentity> [-BodyParameter <Stream>] -
 ```
 
 ## DESCRIPTION
-Update media content for the navigation property photo in teams
+The team photo.
 
 ## EXAMPLES
 
@@ -146,13 +146,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ### System.IO.Stream
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

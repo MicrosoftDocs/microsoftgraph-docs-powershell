@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgPrintOperation
 
 ## SYNOPSIS
-Delete navigation property operations for print
+The list of print long running operations.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgPrintOperation -InputObject <IDevicesCloudPrintIdentity> [-IfMatch <Str
 ```
 
 ## DESCRIPTION
-Delete navigation property operations for print
+The list of print long running operations.
 
 ## EXAMPLES
 
@@ -129,11 +129,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

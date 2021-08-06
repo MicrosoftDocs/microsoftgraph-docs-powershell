@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserProfileEmail
 
 ## SYNOPSIS
-Update the navigation property emails in users
+Represents detailed information about email addresses associated with the user.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Update-MgUserProfileEmail -InputObject <IPeopleIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Update the navigation property emails in users
+Represents detailed information about email addresses associated with the user.
 
 ## EXAMPLES
 
@@ -364,13 +364,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemEmail
-
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

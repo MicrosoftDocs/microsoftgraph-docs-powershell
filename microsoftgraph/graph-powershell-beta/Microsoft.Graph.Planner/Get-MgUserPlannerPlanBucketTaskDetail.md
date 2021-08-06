@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserPlannerPlanBucketTaskDetail
 
 ## SYNOPSIS
-Get details from users
+Read-only.
+Nullable.
+Additional details about the task.
 
 ## SYNTAX
 
@@ -25,7 +27,9 @@ Get-MgUserPlannerPlanBucketTaskDetail -InputObject <IPlannerIdentity> [-ExpandPr
 ```
 
 ## DESCRIPTION
-Get details from users
+Read-only.
+Nullable.
+Additional details about the task.
 
 ## EXAMPLES
 
@@ -143,11 +147,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerTaskDetails1
-
 ## NOTES
 
 ALIASES

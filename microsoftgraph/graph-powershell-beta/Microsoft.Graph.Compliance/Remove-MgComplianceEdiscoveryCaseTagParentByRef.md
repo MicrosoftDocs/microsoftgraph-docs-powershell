@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgComplianceEdiscoveryCaseTagParentByRef
 
 ## SYNOPSIS
-Delete ref of navigation property parent for compliance
+Returns the parent tag of the specified tag.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgComplianceEdiscoveryCaseTagParentByRef -InputObject <IComplianceIdentit
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property parent for compliance
+Returns the parent tag of the specified tag.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

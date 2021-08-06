@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgRoleManagementDeviceManagementRoleAssignmentAppScope
 
 ## SYNOPSIS
-Create new navigation property to appScopes for roleManagement
+Read-only collection with details of the app specific scopes when the assignment scopes are app specific.
+Containment entity.
+Read-only.
 
 ## SYNTAX
 
@@ -39,7 +41,9 @@ New-MgRoleManagementDeviceManagementRoleAssignmentAppScope -InputObject <IDevice
 ```
 
 ## DESCRIPTION
-Create new navigation property to appScopes for roleManagement
+Read-only collection with details of the app specific scopes when the assignment scopes are app specific.
+Containment entity.
+Read-only.
 
 ## EXAMPLES
 
@@ -193,13 +197,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementEnrolmentIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppScope
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppScope
-
 ## NOTES
 
 ALIASES
@@ -241,15 +242,14 @@ INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[UnifiedRbacResourceNamespaceId <String>]`: key: id of unifiedRbacResourceNamespace
   - `[UnifiedRoleAssignmentId <String>]`: key: id of unifiedRoleAssignment
   - `[UnifiedRoleAssignmentMultipleId <String>]`: key: id of unifiedRoleAssignmentMultiple
-  - `[UnifiedRoleAssignmentRequestId <String>]`: key: id of unifiedRoleAssignmentRequest
   - `[UnifiedRoleAssignmentScheduleId <String>]`: key: id of unifiedRoleAssignmentSchedule
   - `[UnifiedRoleAssignmentScheduleInstanceId <String>]`: key: id of unifiedRoleAssignmentScheduleInstance
+  - `[UnifiedRoleAssignmentScheduleRequestId <String>]`: key: id of unifiedRoleAssignmentScheduleRequest
   - `[UnifiedRoleDefinitionId <String>]`: key: id of unifiedRoleDefinition
   - `[UnifiedRoleDefinitionId1 <String>]`: key: id of unifiedRoleDefinition
-  - `[UnifiedRoleEligibilityRequestId <String>]`: key: id of unifiedRoleEligibilityRequest
   - `[UnifiedRoleEligibilityScheduleId <String>]`: key: id of unifiedRoleEligibilitySchedule
   - `[UnifiedRoleEligibilityScheduleInstanceId <String>]`: key: id of unifiedRoleEligibilityScheduleInstance
-  - `[UserExperienceAnalyticsNotAutopilotReadyDeviceId <String>]`: key: id of userExperienceAnalyticsNotAutopilotReadyDevice
+  - `[UnifiedRoleEligibilityScheduleRequestId <String>]`: key: id of unifiedRoleEligibilityScheduleRequest
   - `[WindowsAutopilotDeploymentProfileAssignmentId <String>]`: key: id of windowsAutopilotDeploymentProfileAssignment
   - `[WindowsAutopilotDeploymentProfileId <String>]`: key: id of windowsAutopilotDeploymentProfile
   - `[WindowsAutopilotDeviceIdentityId <String>]`: key: id of windowsAutopilotDeviceIdentity

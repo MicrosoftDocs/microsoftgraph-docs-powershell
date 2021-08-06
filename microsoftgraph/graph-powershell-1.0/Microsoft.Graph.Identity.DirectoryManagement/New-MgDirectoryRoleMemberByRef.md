@@ -8,7 +8,10 @@ schema: 2.0.0
 # New-MgDirectoryRoleMemberByRef
 
 ## SYNOPSIS
-Create new navigation property ref to members for directoryRoles
+Users that are members of this directory role.
+HTTP Methods: GET, POST, DELETE.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -37,7 +40,10 @@ New-MgDirectoryRoleMemberByRef -InputObject <IIdentityDirectoryManagementIdentit
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to members for directoryRoles
+Users that are members of this directory role.
+HTTP Methods: GET, POST, DELETE.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -141,13 +147,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPathsU3CoioDirectoryrolesDirectoryroleIdMembersRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

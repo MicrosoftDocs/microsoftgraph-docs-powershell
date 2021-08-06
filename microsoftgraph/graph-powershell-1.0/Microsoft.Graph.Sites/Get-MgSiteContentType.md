@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteContentType
 
 ## SYNOPSIS
-Get contentTypes from sites
+The collection of content types defined for this site.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgSiteContentType -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
 ```
 
 ## DESCRIPTION
-Get contentTypes from sites
+The collection of content types defined for this site.
 
 ## EXAMPLES
 
@@ -241,11 +241,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentType1
-
 ## NOTES
 
 ALIASES

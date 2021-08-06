@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementComanagementEligibleDevice
 
 ## SYNOPSIS
-Create new navigation property to comanagementEligibleDevices for deviceManagement
+The list of co-management eligible devices report
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ New-MgDeviceManagementComanagementEligibleDevice -BodyParameter <IMicrosoftGraph
 ```
 
 ## DESCRIPTION
-Create new navigation property to comanagementEligibleDevices for deviceManagement
+The list of co-management eligible devices report
 
 ## EXAMPLES
 
@@ -403,11 +403,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComanagementEligibleDevice
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComanagementEligibleDevice
-
 ## NOTES
 
 ALIASES

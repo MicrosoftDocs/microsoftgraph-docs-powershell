@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementUserExperienceAnalyticBaseline
 
 ## SYNOPSIS
-Create new navigation property to userExperienceAnalyticsBaselines for deviceManagement
+User experience analytics baselines
 
 ## SYNTAX
 
@@ -31,7 +31,7 @@ New-MgDeviceManagementUserExperienceAnalyticBaseline
 ```
 
 ## DESCRIPTION
-Create new navigation property to userExperienceAnalyticsBaselines for deviceManagement
+User experience analytics baselines
 
 ## EXAMPLES
 
@@ -261,11 +261,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBaseline
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBaseline
-
 ## NOTES
 
 ALIASES

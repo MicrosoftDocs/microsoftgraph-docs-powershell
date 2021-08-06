@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgPlannerPlanTask
 
 ## SYNOPSIS
-Get tasks from planner
+Collection of tasks in the plan.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgPlannerPlanTask -InputObject <IPlannerIdentity> [-ExpandProperty <String[]
 ```
 
 ## DESCRIPTION
-Get tasks from planner
+Collection of tasks in the plan.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -241,11 +245,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerTask
-
 ## NOTES
 
 ALIASES

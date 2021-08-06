@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgShareListItemField
 
 ## SYNOPSIS
-Delete navigation property fields for shares
+The values of the columns set on this list item.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Remove-MgShareListItemField -InputObject <IFilesIdentity> [-IfMatch <String>] [-
 ```
 
 ## DESCRIPTION
-Delete navigation property fields for shares
+The values of the columns set on this list item.
 
 ## EXAMPLES
 
@@ -156,11 +156,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

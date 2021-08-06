@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgShareListItemAnalytic
 
 ## SYNOPSIS
-Get analytics from shares
+Analytics about the view activities that took place on this item.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Get-MgShareListItemAnalytic -InputObject <IFilesIdentity> [-ExpandProperty <Stri
 ```
 
 ## DESCRIPTION
-Get analytics from shares
+Analytics about the view activities that took place on this item.
 
 ## EXAMPLES
 
@@ -125,11 +125,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemAnalytics
-
 ## NOTES
 
 ALIASES

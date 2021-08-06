@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgServicePrincipalSynchronizationTemplateSchema
 
 ## SYNOPSIS
-Delete navigation property schema for servicePrincipals
+Default synchronization schema for the jobs based on this template.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgServicePrincipalSynchronizationTemplateSchema -InputObject <IApplicatio
 ```
 
 ## DESCRIPTION
-Delete navigation property schema for servicePrincipals
+Default synchronization schema for the jobs based on this template.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

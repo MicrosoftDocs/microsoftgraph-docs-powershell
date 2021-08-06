@@ -8,7 +8,10 @@ schema: 2.0.0
 # New-MgServicePrincipalOwnerByRef
 
 ## SYNOPSIS
-Create new navigation property ref to owners for servicePrincipals
+Directory objects that are owners of this servicePrincipal.
+The owners are a set of non-admin users or servicePrincipals who are allowed to modify this object.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -37,7 +40,10 @@ New-MgServicePrincipalOwnerByRef -InputObject <IApplicationsIdentity> -BodyParam
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to owners for servicePrincipals
+Directory objects that are owners of this servicePrincipal.
+The owners are a set of non-admin users or servicePrincipals who are allowed to modify this object.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -141,13 +147,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1Twal2ZServiceprincipalsServiceprincipalIdOwnersRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

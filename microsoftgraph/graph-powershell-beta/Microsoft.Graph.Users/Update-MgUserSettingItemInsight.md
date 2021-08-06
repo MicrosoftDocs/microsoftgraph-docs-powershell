@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgUserSettingItemInsight
 
 ## SYNOPSIS
-Update the navigation property itemInsights in users
+The user's settings for the visibility of meeting hour insights, and insights derived between a user and other items in Microsoft 365, such as documents or sites.
+Get userInsightsSettings through this navigation property.
 
 ## SYNTAX
 
@@ -37,7 +38,8 @@ Update-MgUserSettingItemInsight -InputObject <IUsersIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property itemInsights in users
+The user's settings for the visibility of meeting hour insights, and insights derived between a user and other items in Microsoft 365, such as documents or sites.
+Get userInsightsSettings through this navigation property.
 
 ## EXAMPLES
 
@@ -106,7 +108,9 @@ Accept wildcard characters: False
 ```
 
 ### -IsEnabled
-.
+true if user's itemInsights and meeting hours insights are enabled; false if user's itemInsights and meeting hours insights are disabled.
+Default is true.
+Optional.
 
 ```yaml
 Type: SwitchParameter
@@ -187,13 +191,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserInsightsSettings
-
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -206,7 +207,7 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER <IMicrosoftGraphUserInsightsSettings>: userInsightsSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
-  - `[IsEnabled <Boolean?>]`: 
+  - `[IsEnabled <Boolean?>]`: true if user's itemInsights and meeting hours insights are enabled; false if user's itemInsights and meeting hours insights are disabled. Default is true. Optional.
 
 INPUTOBJECT <IUsersIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment

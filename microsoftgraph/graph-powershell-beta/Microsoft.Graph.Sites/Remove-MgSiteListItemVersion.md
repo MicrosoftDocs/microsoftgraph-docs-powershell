@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgSiteListItemVersion
 
 ## SYNOPSIS
-Delete navigation property versions for sites
+The list of previous versions of the list item.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgSiteListItemVersion -InputObject <ISitesIdentity> [-IfMatch <String>] [
 ```
 
 ## DESCRIPTION
-Delete navigation property versions for sites
+The list of previous versions of the list item.
 
 ## EXAMPLES
 
@@ -174,11 +174,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

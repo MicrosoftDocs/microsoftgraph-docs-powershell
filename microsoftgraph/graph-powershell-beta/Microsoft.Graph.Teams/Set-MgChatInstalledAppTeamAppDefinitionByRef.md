@@ -8,36 +8,36 @@ schema: 2.0.0
 # Set-MgChatInstalledAppTeamAppDefinitionByRef
 
 ## SYNOPSIS
-Update the ref of navigation property teamsAppDefinition in chats
+The details of this version of the app.
 
 ## SYNTAX
 
-### SetExpanded (Default)
+### SetExpanded1 (Default)
 ```
 Set-MgChatInstalledAppTeamAppDefinitionByRef -ChatId <String> -TeamsAppInstallationId <String>
  [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Set
+### Set1
 ```
 Set-MgChatInstalledAppTeamAppDefinitionByRef -ChatId <String> -TeamsAppInstallationId <String>
  -BodyParameter <Hashtable> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SetViaIdentityExpanded
+### SetViaIdentityExpanded1
 ```
 Set-MgChatInstalledAppTeamAppDefinitionByRef -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SetViaIdentity
+### SetViaIdentity1
 ```
 Set-MgChatInstalledAppTeamAppDefinitionByRef -InputObject <ITeamsIdentity> -BodyParameter <Hashtable>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the ref of navigation property teamsAppDefinition in chats
+The details of this version of the app.
 
 ## EXAMPLES
 
@@ -48,7 +48,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: SetExpanded, SetViaIdentityExpanded
+Parameter Sets: SetExpanded1, SetViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: Hashtable
-Parameter Sets: Set, SetViaIdentity
+Parameter Sets: Set1, SetViaIdentity1
 Aliases:
 
 Required: True
@@ -78,7 +78,7 @@ key: id of chat
 
 ```yaml
 Type: String
-Parameter Sets: SetExpanded, Set
+Parameter Sets: SetExpanded1, Set1
 Aliases:
 
 Required: True
@@ -94,7 +94,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: SetViaIdentityExpanded, SetViaIdentity
+Parameter Sets: SetViaIdentityExpanded1, SetViaIdentity1
 Aliases:
 
 Required: True
@@ -124,7 +124,7 @@ key: id of teamsAppInstallation
 
 ```yaml
 Type: String
-Parameter Sets: SetExpanded, Set
+Parameter Sets: SetExpanded1, Set1
 Aliases:
 
 Required: True
@@ -171,13 +171,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

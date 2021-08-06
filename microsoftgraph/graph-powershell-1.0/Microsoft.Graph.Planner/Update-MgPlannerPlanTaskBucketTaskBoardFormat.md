@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgPlannerPlanTaskBucketTaskBoardFormat
 
 ## SYNOPSIS
-Update the navigation property bucketTaskBoardFormat in planner
+Read-only.
+Nullable.
+Used to render the task correctly in the task board view when grouped by bucket.
 
 ## SYNTAX
 
@@ -41,7 +43,9 @@ Update-MgPlannerPlanTaskBucketTaskBoardFormat -InputObject <IPlannerIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property bucketTaskBoardFormat in planner
+Read-only.
+Nullable.
+Used to render the task correctly in the task board view when grouped by bucket.
 
 ## EXAMPLES
 
@@ -207,13 +211,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerBucketTaskBoardTaskFormat
-
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

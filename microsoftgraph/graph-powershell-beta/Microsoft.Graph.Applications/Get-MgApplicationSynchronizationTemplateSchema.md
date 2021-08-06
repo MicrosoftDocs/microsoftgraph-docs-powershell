@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgApplicationSynchronizationTemplateSchema
 
 ## SYNOPSIS
-Get schema from applications
+Default synchronization schema for the jobs based on this template.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgApplicationSynchronizationTemplateSchema -InputObject <IApplicationsIdenti
 ```
 
 ## DESCRIPTION
-Get schema from applications
+Default synchronization schema for the jobs based on this template.
 
 ## EXAMPLES
 
@@ -113,11 +113,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSynchronizationSchema
-
 ## NOTES
 
 ALIASES

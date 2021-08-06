@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgOrganizationSettingItemInsight
 
 ## SYNOPSIS
-Update the navigation property itemInsights in organization
+Contains the properties that are configured by an administrator for the visibility of Microsoft Graph-derived insights, between a user and other items in Microsoft 365, such as documents or sites.
+Get itemInsightsSettings through this navigation property.
 
 ## SYNTAX
 
@@ -39,7 +40,8 @@ Update-MgOrganizationSettingItemInsight -InputObject <IIdentityDirectoryManageme
 ```
 
 ## DESCRIPTION
-Update the navigation property itemInsights in organization
+Contains the properties that are configured by an administrator for the visibility of Microsoft Graph-derived insights, between a user and other items in Microsoft 365, such as documents or sites.
+Get itemInsightsSettings through this navigation property.
 
 ## EXAMPLES
 
@@ -208,13 +210,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemInsightsSettings
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

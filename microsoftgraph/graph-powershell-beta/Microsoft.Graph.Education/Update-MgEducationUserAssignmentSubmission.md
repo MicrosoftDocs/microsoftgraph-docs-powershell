@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgEducationUserAssignmentSubmission
 
 ## SYNOPSIS
-Update the navigation property submissions in education
+Once published, there is a submission object for each student representing their work and grade.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -17,7 +19,6 @@ Update the navigation property submissions in education
 Update-MgEducationUserAssignmentSubmission -EducationAssignmentId <String> -EducationSubmissionId <String>
  -EducationUserId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-Outcomes <IMicrosoftGraphEducationOutcome[]>] [-Recipient <Hashtable>]
- [-ReleasedBy <IMicrosoftGraphIdentitySet>] [-ReleasedDateTime <DateTime>]
  [-Resources <IMicrosoftGraphEducationSubmissionResource[]>] [-ResourcesFolderUrl <String>]
  [-ReturnedBy <IMicrosoftGraphIdentitySet>] [-ReturnedDateTime <DateTime>] [-Status <String>]
  [-SubmittedBy <IMicrosoftGraphIdentitySet>] [-SubmittedDateTime <DateTime>]
@@ -37,10 +38,9 @@ Update-MgEducationUserAssignmentSubmission -EducationAssignmentId <String> -Educ
 ```
 Update-MgEducationUserAssignmentSubmission -InputObject <IEducationIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Outcomes <IMicrosoftGraphEducationOutcome[]>]
- [-Recipient <Hashtable>] [-ReleasedBy <IMicrosoftGraphIdentitySet>] [-ReleasedDateTime <DateTime>]
- [-Resources <IMicrosoftGraphEducationSubmissionResource[]>] [-ResourcesFolderUrl <String>]
- [-ReturnedBy <IMicrosoftGraphIdentitySet>] [-ReturnedDateTime <DateTime>] [-Status <String>]
- [-SubmittedBy <IMicrosoftGraphIdentitySet>] [-SubmittedDateTime <DateTime>]
+ [-Recipient <Hashtable>] [-Resources <IMicrosoftGraphEducationSubmissionResource[]>]
+ [-ResourcesFolderUrl <String>] [-ReturnedBy <IMicrosoftGraphIdentitySet>] [-ReturnedDateTime <DateTime>]
+ [-Status <String>] [-SubmittedBy <IMicrosoftGraphIdentitySet>] [-SubmittedDateTime <DateTime>]
  [-SubmittedResources <IMicrosoftGraphEducationSubmissionResource[]>]
  [-UnsubmittedBy <IMicrosoftGraphIdentitySet>] [-UnsubmittedDateTime <DateTime>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -53,7 +53,9 @@ Update-MgEducationUserAssignmentSubmission -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property submissions in education
+Once published, there is a submission object for each student representing their work and grade.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -203,39 +205,6 @@ educationSubmissionRecipient
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ReleasedBy
-identitySet
-To construct, see NOTES section for RELEASEDBY properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphIdentitySet
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ReleasedDateTime
-Moment in time when the submission was released.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-
-```yaml
-Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -445,13 +414,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSubmission
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -477,8 +443,6 @@ BODYPARAMETER <IMicrosoftGraphEducationSubmission>: educationSubmission
     - `[LastModifiedDateTime <DateTime?>]`: 
   - `[Recipient <IMicrosoftGraphEducationSubmissionRecipient>]`: educationSubmissionRecipient
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ReleasedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[ReleasedDateTime <DateTime?>]`: Moment in time when the submission was released. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Resources <IMicrosoftGraphEducationSubmissionResource[]>]`: Nullable.
     - `[Id <String>]`: Read-only.
     - `[AssignmentResourceUrl <String>]`: Pointer to the assignment from which this resource was copied. If this is null, the student uploaded the resource.
@@ -524,15 +488,6 @@ OUTCOMES <IMicrosoftGraphEducationOutcome[]>: Read-Write. Nullable.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[LastModifiedDateTime <DateTime?>]`: 
-
-RELEASEDBY <IMicrosoftGraphIdentitySet>: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
 
 RESOURCES <IMicrosoftGraphEducationSubmissionResource[]>: Nullable.
   - `[Id <String>]`: Read-only.

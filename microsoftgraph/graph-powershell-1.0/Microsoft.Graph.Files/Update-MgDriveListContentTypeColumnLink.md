@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDriveListContentTypeColumnLink
 
 ## SYNOPSIS
-Update the navigation property columnLinks in drives
+The collection of columns that are required by this content type
 
 ## SYNTAX
 
@@ -38,7 +38,7 @@ Update-MgDriveListContentTypeColumnLink -InputObject <IFilesIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property columnLinks in drives
+The collection of columns that are required by this content type
 
 ## EXAMPLES
 
@@ -218,13 +218,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnLink
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

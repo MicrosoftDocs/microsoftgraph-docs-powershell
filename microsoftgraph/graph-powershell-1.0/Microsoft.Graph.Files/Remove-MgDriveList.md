@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgDriveList
 
 ## SYNOPSIS
-Delete navigation property list for drives
+For drives in SharePoint, the underlying document library list.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -24,7 +26,9 @@ Remove-MgDriveList -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassThru]
 ```
 
 ## DESCRIPTION
-Delete navigation property list for drives
+For drives in SharePoint, the underlying document library list.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -128,11 +132,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

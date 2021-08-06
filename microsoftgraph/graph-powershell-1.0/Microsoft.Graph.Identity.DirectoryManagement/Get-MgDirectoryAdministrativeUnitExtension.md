@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgDirectoryAdministrativeUnitExtension
 
 ## SYNOPSIS
-Get extensions from directory
+The collection of open extensions defined for this Administrative Unit.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgDirectoryAdministrativeUnitExtension -InputObject <IIdentityDirectoryManag
 ```
 
 ## DESCRIPTION
-Get extensions from directory
+The collection of open extensions defined for this Administrative Unit.
+Nullable.
 
 ## EXAMPLES
 
@@ -241,13 +243,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExtension
-
 ### System.String
-
 ## NOTES
 
 ALIASES

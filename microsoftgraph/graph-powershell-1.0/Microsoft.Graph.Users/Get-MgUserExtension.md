@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgUserExtension
 
 ## SYNOPSIS
-Get extensions from users
+The collection of open extensions defined for the user.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgUserExtension -InputObject <IUsersIdentity> [-ExpandProperty <String[]>] [
 ```
 
 ## DESCRIPTION
-Get extensions from users
+The collection of open extensions defined for the user.
+Nullable.
 
 ## EXAMPLES
 
@@ -241,13 +243,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExtension
-
 ### System.String
-
 ## NOTES
 
 ALIASES

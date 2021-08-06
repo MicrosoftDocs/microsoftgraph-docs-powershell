@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgSitePermission
 
 ## SYNOPSIS
-Delete navigation property permissions for sites
+The permissions associated with the site.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgSitePermission -InputObject <ISitesIdentity> [-IfMatch <String>] [-Pass
 ```
 
 ## DESCRIPTION
-Delete navigation property permissions for sites
+The permissions associated with the site.
+Nullable.
 
 ## EXAMPLES
 
@@ -144,11 +146,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

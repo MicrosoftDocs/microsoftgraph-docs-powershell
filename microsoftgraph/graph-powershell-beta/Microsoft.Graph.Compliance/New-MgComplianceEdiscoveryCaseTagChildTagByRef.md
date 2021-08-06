@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgComplianceEdiscoveryCaseTagChildTagByRef
 
 ## SYNOPSIS
-Create new navigation property ref to childTags for compliance
+Returns the tags that are a child of a tag.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ New-MgComplianceEdiscoveryCaseTagChildTagByRef -InputObject <IComplianceIdentity
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to childTags for compliance
+Returns the tags that are a child of a tag.
 
 ## EXAMPLES
 
@@ -156,13 +156,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPathsT7CylhComplianceEdiscoveryCasesCaseIdTagsTagIdChildtagsRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgTeamTag
 
 ## SYNOPSIS
-Update the navigation property tags in teams
+The tags associated with the team.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Update-MgTeamTag -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTe
 ```
 
 ## DESCRIPTION
-Update the navigation property tags in teams
+The tags associated with the team.
 
 ## EXAMPLES
 
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-.
+Tag description as it will appear to the user in Microsoft Teams.
 
 ```yaml
 Type: String
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+Tag name as it will appear to the user in Microsoft Teams.
 
 ```yaml
 Type: String
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -MemberCount
-.
+The number of users assigned to the tag.
 
 ```yaml
 Type: Int32
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -Members
-.
+Users assigned to the tag.
 To construct, see NOTES section for MEMBERS properties and create a hash table.
 
 ```yaml
@@ -228,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -TeamId1
-.
+ID of the team in which the tag is defined.
 
 ```yaml
 Type: String
@@ -294,13 +294,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkTag
-
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -313,16 +310,16 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER <IMicrosoftGraphTeamworkTag>: teamworkTag
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
-  - `[Description <String>]`: 
-  - `[DisplayName <String>]`: 
-  - `[MemberCount <Int32?>]`: 
-  - `[Members <IMicrosoftGraphTeamworkTagMember[]>]`: 
+  - `[Description <String>]`: Tag description as it will appear to the user in Microsoft Teams.
+  - `[DisplayName <String>]`: Tag name as it will appear to the user in Microsoft Teams.
+  - `[MemberCount <Int32?>]`: The number of users assigned to the tag.
+  - `[Members <IMicrosoftGraphTeamworkTagMember[]>]`: Users assigned to the tag.
     - `[Id <String>]`: Read-only.
-    - `[DisplayName <String>]`: 
+    - `[DisplayName <String>]`: The member's display name.
     - `[TenantId <String>]`: 
     - `[UserId <String>]`: 
   - `[TagType <String>]`: teamworkTagType
-  - `[TeamId <String>]`: 
+  - `[TeamId <String>]`: ID of the team in which the tag is defined.
 
 INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[ChannelId <String>]`: key: id of channel
@@ -355,9 +352,9 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: key: id of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
-MEMBERS <IMicrosoftGraphTeamworkTagMember[]>: .
+MEMBERS <IMicrosoftGraphTeamworkTagMember[]>: Users assigned to the tag.
   - `[Id <String>]`: Read-only.
-  - `[DisplayName <String>]`: 
+  - `[DisplayName <String>]`: The member's display name.
   - `[TenantId <String>]`: 
   - `[UserId <String>]`: 
 

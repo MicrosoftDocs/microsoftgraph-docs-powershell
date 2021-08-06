@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgPlayUserManagedDeviceLostModeSound
 
 ## SYNOPSIS
-Invoke action playLostModeSound
+Remote lock
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Invoke-MgPlayUserManagedDeviceLostModeSound -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action playLostModeSound
+Remote lock
 
 ## EXAMPLES
 
@@ -129,11 +129,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgOrganizationCertificateBasedAuthConfigurationByRef
 
 ## SYNOPSIS
-Get ref of certificateBasedAuthConfiguration from organization
+Navigation property to manage  certificate-based authentication configuration.
+Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
 
 ## SYNTAX
 
@@ -19,7 +20,8 @@ Get-MgOrganizationCertificateBasedAuthConfigurationByRef -OrganizationId <String
 ```
 
 ## DESCRIPTION
-Get ref of certificateBasedAuthConfiguration from organization
+Navigation property to manage  certificate-based authentication configuration.
+Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
 
 ## EXAMPLES
 
@@ -169,7 +171,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

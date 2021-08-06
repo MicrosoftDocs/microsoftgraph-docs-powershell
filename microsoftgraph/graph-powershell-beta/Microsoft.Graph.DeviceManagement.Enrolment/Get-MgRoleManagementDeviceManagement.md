@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgRoleManagementDeviceManagement
 
 ## SYNOPSIS
-Get deviceManagement from roleManagement
+The RbacApplication for Device Management
 
 ## SYNTAX
 
@@ -17,7 +17,7 @@ Get-MgRoleManagementDeviceManagement [-ExpandProperty <String[]>] [-Property <St
 ```
 
 ## DESCRIPTION
-Get deviceManagement from roleManagement
+The RbacApplication for Device Management
 
 ## EXAMPLES
 
@@ -61,7 +61,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRbacApplicationMultiple
-
 ## NOTES
 
 ALIASES

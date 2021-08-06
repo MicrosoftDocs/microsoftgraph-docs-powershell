@@ -8,14 +8,14 @@ schema: 2.0.0
 # Update-MgDeviceManagementWindowAutopilotDeploymentProfile
 
 ## SYNOPSIS
-Update the navigation property windowsAutopilotDeploymentProfiles in deviceManagement
+Windows auto pilot deployment profiles
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgDeviceManagementWindowAutopilotDeploymentProfile -WindowsAutopilotDeploymentProfileId <String>
- [-AdditionalProperties <Hashtable>] [-AssignedDevices <IMicrosoftGraphWindowsAutopilotDeviceIdentity[]>]
+ [-AdditionalProperties <Hashtable>] [-AssignedDevices <IMicrosoftGraphWindowsAutopilotDeviceIdentity1[]>]
  [-Assignments <IMicrosoftGraphWindowsAutopilotDeploymentProfileAssignment[]>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DeviceNameTemplate <String>] [-DeviceType <String>] [-DisplayName <String>]
  [-EnableWhiteGlove] [-EnrollmentStatusScreenSettings <IMicrosoftGraphWindowsEnrollmentStatusScreenSettings>]
@@ -34,7 +34,7 @@ Update-MgDeviceManagementWindowAutopilotDeploymentProfile -WindowsAutopilotDeplo
 ### UpdateViaIdentityExpanded
 ```
 Update-MgDeviceManagementWindowAutopilotDeploymentProfile -InputObject <IDeviceManagementEnrolmentIdentity>
- [-AdditionalProperties <Hashtable>] [-AssignedDevices <IMicrosoftGraphWindowsAutopilotDeviceIdentity[]>]
+ [-AdditionalProperties <Hashtable>] [-AssignedDevices <IMicrosoftGraphWindowsAutopilotDeviceIdentity1[]>]
  [-Assignments <IMicrosoftGraphWindowsAutopilotDeploymentProfileAssignment[]>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DeviceNameTemplate <String>] [-DeviceType <String>] [-DisplayName <String>]
  [-EnableWhiteGlove] [-EnrollmentStatusScreenSettings <IMicrosoftGraphWindowsEnrollmentStatusScreenSettings>]
@@ -51,7 +51,7 @@ Update-MgDeviceManagementWindowAutopilotDeploymentProfile -InputObject <IDeviceM
 ```
 
 ## DESCRIPTION
-Update the navigation property windowsAutopilotDeploymentProfiles in deviceManagement
+Windows auto pilot deployment profiles
 
 ## EXAMPLES
 
@@ -77,7 +77,7 @@ The list of assigned devices for the profile.
 To construct, see NOTES section for ASSIGNEDDEVICES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsAutopilotDeviceIdentity[]
+Type: IMicrosoftGraphWindowsAutopilotDeviceIdentity1[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -402,13 +402,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementEnrolmentIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsAutopilotDeploymentProfile
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -418,7 +415,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNEDDEVICES <IMicrosoftGraphWindowsAutopilotDeviceIdentity[]>: The list of assigned devices for the profile.
+ASSIGNEDDEVICES <IMicrosoftGraphWindowsAutopilotDeviceIdentity1[]>: The list of assigned devices for the profile.
   - `[Id <String>]`: Read-only.
   - `[AddressableUserName <String>]`: Addressable user name.
   - `[AzureActiveDirectoryDeviceId <String>]`: AAD Device ID - to be deprecated
@@ -426,7 +423,7 @@ ASSIGNEDDEVICES <IMicrosoftGraphWindowsAutopilotDeviceIdentity[]>: The list of a
   - `[DeploymentProfile <IMicrosoftGraphWindowsAutopilotDeploymentProfile>]`: Windows Autopilot Deployment Profile
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: Read-only.
-    - `[AssignedDevices <IMicrosoftGraphWindowsAutopilotDeviceIdentity[]>]`: The list of assigned devices for the profile.
+    - `[AssignedDevices <IMicrosoftGraphWindowsAutopilotDeviceIdentity1[]>]`: The list of assigned devices for the profile.
     - `[Assignments <IMicrosoftGraphWindowsAutopilotDeploymentProfileAssignment[]>]`: The list of group assignments for the profile.
       - `[Id <String>]`: Read-only.
       - `[Source <String>]`: deviceAndAppManagementAssignmentSource
@@ -466,7 +463,7 @@ ASSIGNEDDEVICES <IMicrosoftGraphWindowsAutopilotDeviceIdentity[]>: The list of a
   - `[DeploymentProfileAssignmentDetailedStatus <String>]`: windowsAutopilotProfileAssignmentDetailedStatus
   - `[DeploymentProfileAssignmentStatus <String>]`: windowsAutopilotProfileAssignmentStatus
   - `[DisplayName <String>]`: Display Name
-  - `[EnrollmentState <String>]`: enrollmentState
+  - `[EnrollmentState <String>]`: 
   - `[GroupTag <String>]`: Group Tag of the Windows autopilot device.
   - `[IntendedDeploymentProfile <IMicrosoftGraphWindowsAutopilotDeploymentProfile>]`: Windows Autopilot Deployment Profile
   - `[LastContactedDateTime <DateTime?>]`: Intune Last Contacted Date Time of the Windows autopilot device.
@@ -493,7 +490,7 @@ ASSIGNMENTS <IMicrosoftGraphWindowsAutopilotDeploymentProfileAssignment[]>: The 
 BODYPARAMETER <IMicrosoftGraphWindowsAutopilotDeploymentProfile>: Windows Autopilot Deployment Profile
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
-  - `[AssignedDevices <IMicrosoftGraphWindowsAutopilotDeviceIdentity[]>]`: The list of assigned devices for the profile.
+  - `[AssignedDevices <IMicrosoftGraphWindowsAutopilotDeviceIdentity1[]>]`: The list of assigned devices for the profile.
     - `[Id <String>]`: Read-only.
     - `[AddressableUserName <String>]`: Addressable user name.
     - `[AzureActiveDirectoryDeviceId <String>]`: AAD Device ID - to be deprecated
@@ -503,7 +500,7 @@ BODYPARAMETER <IMicrosoftGraphWindowsAutopilotDeploymentProfile>: Windows Autopi
     - `[DeploymentProfileAssignmentDetailedStatus <String>]`: windowsAutopilotProfileAssignmentDetailedStatus
     - `[DeploymentProfileAssignmentStatus <String>]`: windowsAutopilotProfileAssignmentStatus
     - `[DisplayName <String>]`: Display Name
-    - `[EnrollmentState <String>]`: enrollmentState
+    - `[EnrollmentState <String>]`: 
     - `[GroupTag <String>]`: Group Tag of the Windows autopilot device.
     - `[IntendedDeploymentProfile <IMicrosoftGraphWindowsAutopilotDeploymentProfile>]`: Windows Autopilot Deployment Profile
     - `[LastContactedDateTime <DateTime?>]`: Intune Last Contacted Date Time of the Windows autopilot device.
@@ -589,15 +586,14 @@ INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[UnifiedRbacResourceNamespaceId <String>]`: key: id of unifiedRbacResourceNamespace
   - `[UnifiedRoleAssignmentId <String>]`: key: id of unifiedRoleAssignment
   - `[UnifiedRoleAssignmentMultipleId <String>]`: key: id of unifiedRoleAssignmentMultiple
-  - `[UnifiedRoleAssignmentRequestId <String>]`: key: id of unifiedRoleAssignmentRequest
   - `[UnifiedRoleAssignmentScheduleId <String>]`: key: id of unifiedRoleAssignmentSchedule
   - `[UnifiedRoleAssignmentScheduleInstanceId <String>]`: key: id of unifiedRoleAssignmentScheduleInstance
+  - `[UnifiedRoleAssignmentScheduleRequestId <String>]`: key: id of unifiedRoleAssignmentScheduleRequest
   - `[UnifiedRoleDefinitionId <String>]`: key: id of unifiedRoleDefinition
   - `[UnifiedRoleDefinitionId1 <String>]`: key: id of unifiedRoleDefinition
-  - `[UnifiedRoleEligibilityRequestId <String>]`: key: id of unifiedRoleEligibilityRequest
   - `[UnifiedRoleEligibilityScheduleId <String>]`: key: id of unifiedRoleEligibilitySchedule
   - `[UnifiedRoleEligibilityScheduleInstanceId <String>]`: key: id of unifiedRoleEligibilityScheduleInstance
-  - `[UserExperienceAnalyticsNotAutopilotReadyDeviceId <String>]`: key: id of userExperienceAnalyticsNotAutopilotReadyDevice
+  - `[UnifiedRoleEligibilityScheduleRequestId <String>]`: key: id of unifiedRoleEligibilityScheduleRequest
   - `[WindowsAutopilotDeploymentProfileAssignmentId <String>]`: key: id of windowsAutopilotDeploymentProfileAssignment
   - `[WindowsAutopilotDeploymentProfileId <String>]`: key: id of windowsAutopilotDeploymentProfile
   - `[WindowsAutopilotDeviceIdentityId <String>]`: key: id of windowsAutopilotDeviceIdentity

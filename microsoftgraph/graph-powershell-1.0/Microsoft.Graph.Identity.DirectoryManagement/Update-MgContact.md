@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgContact
 
 ## SYNOPSIS
-Update entity in contacts
+Represents an Azure Active Directory object.
+The directoryObject type is the base type for many other directory entity types.
 
 ## SYNTAX
 
@@ -51,7 +52,8 @@ Update-MgContact -InputObject <IIdentityDirectoryManagementIdentity> -BodyParame
 ```
 
 ## DESCRIPTION
-Update entity in contacts
+Represents an Azure Active Directory object.
+The directoryObject type is the base type for many other directory entity types.
 
 ## EXAMPLES
 
@@ -491,13 +493,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOrgContact
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

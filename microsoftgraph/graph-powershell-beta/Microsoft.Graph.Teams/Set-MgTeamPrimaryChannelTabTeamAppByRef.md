@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgTeamPrimaryChannelTabTeamAppByRef
 
 ## SYNOPSIS
-Update the ref of navigation property teamsApp in teams
+The application that is linked to the tab.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Set-MgTeamPrimaryChannelTabTeamAppByRef -InputObject <ITeamsIdentity> -BodyParam
 ```
 
 ## DESCRIPTION
-Update the ref of navigation property teamsApp in teams
+The application that is linked to the tab.
 
 ## EXAMPLES
 
@@ -171,13 +171,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

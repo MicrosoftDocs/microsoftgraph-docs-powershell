@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgServicePrincipalCreatedObjectByRef
 
 ## SYNOPSIS
-Create new navigation property ref to createdObjects for servicePrincipals
+Directory objects created by this service principal.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -37,7 +39,9 @@ New-MgServicePrincipalCreatedObjectByRef -InputObject <IApplicationsIdentity> -B
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to createdObjects for servicePrincipals
+Directory objects created by this service principal.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -141,13 +145,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPathsK20NafServiceprincipalsServiceprincipalIdCreatedobjectsRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgUserPlannerRecentPlanByRef
 
 ## SYNOPSIS
-Create new navigation property ref to recentPlans for users
+Read-only.
+Nullable.
+Returns the plannerPlans that have been recently viewed by the user in apps that support recent plans.
 
 ## SYNTAX
 
@@ -37,7 +39,9 @@ New-MgUserPlannerRecentPlanByRef -InputObject <IPlannerIdentity> -BodyParameter 
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to recentPlans for users
+Read-only.
+Nullable.
+Returns the plannerPlans that have been recently viewed by the user in apps that support recent plans.
 
 ## EXAMPLES
 
@@ -141,13 +145,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPathsChbfikUsersUserIdPlannerRecentplansRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

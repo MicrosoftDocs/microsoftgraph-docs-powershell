@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEducationMeAssignmentSubmissionResource
 
 ## SYNOPSIS
-Get resources from education
+Nullable.
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Get-MgEducationMeAssignmentSubmissionResource -InputObject <IEducationIdentity> 
 ```
 
 ## DESCRIPTION
-Get resources from education
+Nullable.
 
 ## EXAMPLES
 
@@ -257,11 +257,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSubmissionResource
-
 ## NOTES
 
 ALIASES

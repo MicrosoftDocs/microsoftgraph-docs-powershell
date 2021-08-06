@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgPrintConnector
 
 ## SYNOPSIS
-Update the navigation property connectors in print
+The list of available print connectors.
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ Update-MgPrintConnector -InputObject <IDevicesCloudPrintIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property connectors in print
+The list of available print connectors.
 
 ## EXAMPLES
 
@@ -299,13 +299,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintConnector1
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

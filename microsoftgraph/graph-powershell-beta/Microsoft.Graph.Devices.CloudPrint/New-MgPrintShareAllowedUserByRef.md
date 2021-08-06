@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgPrintShareAllowedUserByRef
 
 ## SYNOPSIS
-Create new navigation property ref to allowedUsers for print
+The users who have access to print using the printer.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ New-MgPrintShareAllowedUserByRef -InputObject <IDevicesCloudPrintIdentity> -Body
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to allowedUsers for print
+The users who have access to print using the printer.
 
 ## EXAMPLES
 
@@ -141,13 +141,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPathsDwbukqPrintSharesPrintershareIdAllowedusersRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

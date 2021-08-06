@@ -165,15 +165,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths12OpfrnGroupsGroupIdTransitivemembersRefPostResponses201ContentApplicationJsonSchema
-
 ### Microsoft.Graph.PowerShell.Models.IPathsCgkcf5GroupsGroupIdTransitivememberofRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

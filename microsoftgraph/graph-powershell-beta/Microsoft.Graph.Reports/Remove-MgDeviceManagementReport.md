@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementReport
 
 ## SYNOPSIS
-Delete navigation property reports for deviceManagement
+Reports singleton
 
 ## SYNTAX
 
@@ -17,7 +17,7 @@ Remove-MgDeviceManagementReport [-IfMatch <String>] [-PassThru] [-WhatIf] [-Conf
 ```
 
 ## DESCRIPTION
-Delete navigation property reports for deviceManagement
+Reports singleton
 
 ## EXAMPLES
 
@@ -92,7 +92,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

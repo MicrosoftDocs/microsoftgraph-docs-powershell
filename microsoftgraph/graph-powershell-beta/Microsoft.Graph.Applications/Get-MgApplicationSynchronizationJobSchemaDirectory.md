@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgApplicationSynchronizationJobSchemaDirectory
 
 ## SYNOPSIS
-Get directories from applications
+Contains the collection of directories and all of their objects.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgApplicationSynchronizationJobSchemaDirectory -InputObject <IApplicationsId
 ```
 
 ## DESCRIPTION
-Get directories from applications
+Contains the collection of directories and all of their objects.
 
 ## EXAMPLES
 
@@ -256,11 +256,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryDefinition
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgComplianceEdiscoveryCaseTag
 
 ## SYNOPSIS
-Create new navigation property to tags for compliance
+Returns a list of tag objects associated to this case.
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ New-MgComplianceEdiscoveryCaseTag -InputObject <IComplianceIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to tags for compliance
+Returns a list of tag objects associated to this case.
 
 ## EXAMPLES
 
@@ -271,13 +271,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryTag
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryTag
-
 ## NOTES
 
 ALIASES

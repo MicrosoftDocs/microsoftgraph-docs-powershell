@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgShareSite
 
 ## SYNOPSIS
-Get site from shares
+Used to access the underlying site
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgShareSite -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Pro
 ```
 
 ## DESCRIPTION
-Get site from shares
+Used to access the underlying site
 
 ## EXAMPLES
 
@@ -98,11 +98,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSite
-
 ## NOTES
 
 ALIASES

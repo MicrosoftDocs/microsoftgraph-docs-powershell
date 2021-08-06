@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgApplicationExtensionProperty
 
 ## SYNOPSIS
-Delete navigation property extensionProperties for applications
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgApplicationExtensionProperty -InputObject <IApplicationsIdentity> [-IfM
 ```
 
 ## DESCRIPTION
-Delete navigation property extensionProperties for applications
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -144,11 +146,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

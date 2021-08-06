@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserProfileSkill
 
 ## SYNOPSIS
-Delete navigation property skills for users
+Represents detailed information about skills associated with a user in various services.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgUserProfileSkill -InputObject <IPeopleIdentity> [-IfMatch <String>] [-P
 ```
 
 ## DESCRIPTION
-Delete navigation property skills for users
+Represents detailed information about skills associated with a user in various services.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgComplianceEdiscoveryCaseReviewSet
 
 ## SYNOPSIS
-Update the navigation property reviewSets in compliance
+Returns a list of reviewSet objects in the case.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -41,7 +43,9 @@ Update-MgComplianceEdiscoveryCaseReviewSet -InputObject <IComplianceIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property reviewSets in compliance
+Returns a list of reviewSet objects in the case.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -258,13 +262,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryReviewSet
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

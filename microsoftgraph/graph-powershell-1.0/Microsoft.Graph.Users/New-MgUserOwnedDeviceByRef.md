@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgUserOwnedDeviceByRef
 
 ## SYNOPSIS
-Create new navigation property ref to ownedDevices for users
+Devices that are owned by the user.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -37,7 +39,9 @@ New-MgUserOwnedDeviceByRef -InputObject <IUsersIdentity> -BodyParameter <Hashtab
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to ownedDevices for users
+Devices that are owned by the user.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -141,13 +145,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPathsV0VjysUsersUserIdOwneddevicesRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

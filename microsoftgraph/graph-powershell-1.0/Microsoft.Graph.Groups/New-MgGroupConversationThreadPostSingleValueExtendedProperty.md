@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgGroupConversationThreadPostSingleValueExtendedProperty
 
 ## SYNOPSIS
-Create new navigation property to singleValueExtendedProperties for groups
+The collection of single-value extended properties defined for the post.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -39,7 +41,9 @@ New-MgGroupConversationThreadPostSingleValueExtendedProperty -InputObject <IGrou
 ```
 
 ## DESCRIPTION
-Create new navigation property to singleValueExtendedProperties for groups
+The collection of single-value extended properties defined for the post.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -219,13 +223,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSingleValueLegacyExtendedProperty
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSingleValueLegacyExtendedProperty
-
 ## NOTES
 
 ALIASES

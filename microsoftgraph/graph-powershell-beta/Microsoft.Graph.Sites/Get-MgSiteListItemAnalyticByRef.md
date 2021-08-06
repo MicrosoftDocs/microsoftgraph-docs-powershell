@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteListItemAnalyticByRef
 
 ## SYNOPSIS
-Get ref of analytics from sites
+Analytics about the view activities that took place on this item.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Get-MgSiteListItemAnalyticByRef -InputObject <ISitesIdentity> [<CommonParameters
 ```
 
 ## DESCRIPTION
-Get ref of analytics from sites
+Analytics about the view activities that took place on this item.
 
 ## EXAMPLES
 
@@ -96,11 +96,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

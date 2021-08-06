@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgShareListSubscription
 
 ## SYNOPSIS
-Create new navigation property to subscriptions for shares
+The set of subscriptions on the list.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ New-MgShareListSubscription -InputObject <IFilesIdentity> -BodyParameter <IMicro
 ```
 
 ## DESCRIPTION
-Create new navigation property to subscriptions for shares
+The set of subscriptions on the list.
 
 ## EXAMPLES
 
@@ -395,13 +395,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSubscription1
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSubscription1
-
 ## NOTES
 
 ALIASES

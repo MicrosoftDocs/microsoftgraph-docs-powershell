@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgAdministrativeUnitScopedRoleMember
 
 ## SYNOPSIS
-Delete navigation property scopedRoleMembers for administrativeUnits
+Scoped-role members of this Administrative Unit.
+HTTP Methods: GET (list scopedRoleMemberships), POST (add scopedRoleMembership), DELETE (remove scopedRoleMembership).
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgAdministrativeUnitScopedRoleMember -InputObject <IIdentityDirectoryMana
 ```
 
 ## DESCRIPTION
-Delete navigation property scopedRoleMembers for administrativeUnits
+Scoped-role members of this Administrative Unit.
+HTTP Methods: GET (list scopedRoleMemberships), POST (add scopedRoleMembership), DELETE (remove scopedRoleMembership).
 
 ## EXAMPLES
 
@@ -144,11 +146,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

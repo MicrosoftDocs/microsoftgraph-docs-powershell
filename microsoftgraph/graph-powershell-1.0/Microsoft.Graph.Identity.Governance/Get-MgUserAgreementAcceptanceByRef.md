@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserAgreementAcceptanceByRef
 
 ## SYNOPSIS
-Get ref of agreementAcceptances from users
+The user's terms of use acceptance statuses.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -18,7 +20,9 @@ Get-MgUserAgreementAcceptanceByRef -UserId <String> [-Filter <String>] [-Search 
 ```
 
 ## DESCRIPTION
-Get ref of agreementAcceptances from users
+The user's terms of use acceptance statuses.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -168,7 +172,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

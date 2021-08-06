@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgGroupMemberWithLicenseErrorByRef
 
 ## SYNOPSIS
-Get ref of memberOf from groups
+Groups and administrative units that this group is a member of.
+HTTP Methods: GET (supported for all groups).
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -18,7 +21,10 @@ Get-MgGroupMemberWithLicenseErrorByRef -GroupId <String> [-Filter <String>] [-Se
 ```
 
 ## DESCRIPTION
-Get ref of memberOf from groups
+Groups and administrative units that this group is a member of.
+HTTP Methods: GET (supported for all groups).
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -168,7 +174,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

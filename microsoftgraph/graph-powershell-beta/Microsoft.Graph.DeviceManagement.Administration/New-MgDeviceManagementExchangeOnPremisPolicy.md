@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementExchangeOnPremisPolicy
 
 ## SYNOPSIS
-Create new navigation property to exchangeOnPremisesPolicies for deviceManagement
+The list of Exchange On Premisis policies configured by the tenant.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ New-MgDeviceManagementExchangeOnPremisPolicy
 ```
 
 ## DESCRIPTION
-Create new navigation property to exchangeOnPremisesPolicies for deviceManagement
+The list of Exchange On Premisis policies configured by the tenant.
 
 ## EXAMPLES
 
@@ -199,11 +199,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementExchangeOnPremisesPolicy
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementExchangeOnPremisesPolicy
-
 ## NOTES
 
 ALIASES

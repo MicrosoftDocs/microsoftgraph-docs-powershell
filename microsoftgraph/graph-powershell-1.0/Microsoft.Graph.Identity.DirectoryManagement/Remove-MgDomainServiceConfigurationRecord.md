@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgDomainServiceConfigurationRecord
 
 ## SYNOPSIS
-Delete navigation property serviceConfigurationRecords for domains
+DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.
+Read-only, Nullable
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgDomainServiceConfigurationRecord -InputObject <IIdentityDirectoryManage
 ```
 
 ## DESCRIPTION
-Delete navigation property serviceConfigurationRecords for domains
+DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.
+Read-only, Nullable
 
 ## EXAMPLES
 
@@ -144,11 +146,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

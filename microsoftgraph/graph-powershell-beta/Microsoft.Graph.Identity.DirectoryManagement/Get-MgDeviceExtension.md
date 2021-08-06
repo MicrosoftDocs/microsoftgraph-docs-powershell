@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgDeviceExtension
 
 ## SYNOPSIS
-Get extensions from devices
+The collection of open extensions defined for the device.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgDeviceExtension -InputObject <IIdentityDirectoryManagementIdentity> [-Expa
 ```
 
 ## DESCRIPTION
-Get extensions from devices
+The collection of open extensions defined for the device.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -241,13 +245,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExtension
-
 ### System.String
-
 ## NOTES
 
 ALIASES

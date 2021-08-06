@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgComplianceEdiscoveryCaseTagChildTagByRef
 
 ## SYNOPSIS
-Get ref of childTags from compliance
+Returns the tags that are a child of a tag.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgComplianceEdiscoveryCaseTagChildTagByRef -CaseId <String> -TagId <String> 
 ```
 
 ## DESCRIPTION
-Get ref of childTags from compliance
+Returns the tags that are a child of a tag.
 
 ## EXAMPLES
 
@@ -184,7 +184,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

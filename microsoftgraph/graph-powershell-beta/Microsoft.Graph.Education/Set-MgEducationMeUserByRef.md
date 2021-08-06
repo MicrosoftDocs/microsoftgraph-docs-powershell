@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgEducationMeUserByRef
 
 ## SYNOPSIS
-Update the ref of navigation property user in education
+The directory user corresponding to this user.
 
 ## SYNTAX
 
@@ -24,7 +24,7 @@ Set-MgEducationMeUserByRef -BodyParameter <Hashtable> [-PassThru] [-WhatIf] [-Co
 ```
 
 ## DESCRIPTION
-Update the ref of navigation property user in education
+The directory user corresponding to this user.
 
 ## EXAMPLES
 
@@ -112,11 +112,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

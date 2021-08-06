@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgSiteAnalyticByRef
 
 ## SYNOPSIS
-Update the ref of navigation property analytics in sites
+Analytics about the view activities that took place in this site.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Set-MgSiteAnalyticByRef -InputObject <ISitesIdentity> -BodyParameter <Hashtable>
 ```
 
 ## DESCRIPTION
-Update the ref of navigation property analytics in sites
+Analytics about the view activities that took place in this site.
 
 ## EXAMPLES
 
@@ -156,13 +156,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

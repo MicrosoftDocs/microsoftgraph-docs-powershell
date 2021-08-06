@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgGroupSetting
 
 ## SYNOPSIS
-Get settings from groups
+Settings that can govern this group's behavior, like whether members can invite guest users to the group.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgGroupSetting -InputObject <IGroupsIdentity> [-ExpandProperty <String[]>] [
 ```
 
 ## DESCRIPTION
-Get settings from groups
+Settings that can govern this group's behavior, like whether members can invite guest users to the group.
+Nullable.
 
 ## EXAMPLES
 
@@ -241,11 +243,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectorySetting
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgPrintPrinterSharePrinterByRef
 
 ## SYNOPSIS
-Update the ref of navigation property printer in print
+The printer that this printer share is related to.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Set-MgPrintPrinterSharePrinterByRef -InputObject <IDevicesCloudPrintIdentity> -B
 ```
 
 ## DESCRIPTION
-Update the ref of navigation property printer in print
+The printer that this printer share is related to.
 
 ## EXAMPLES
 
@@ -156,13 +156,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

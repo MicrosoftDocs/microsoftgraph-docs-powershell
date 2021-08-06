@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSiteContentTypeColumn
 
 ## SYNOPSIS
-Create new navigation property to columns for sites
+The collection of column definitions for this contentType.
 
 ## SYNTAX
 
@@ -55,7 +55,7 @@ New-MgSiteContentTypeColumn -InputObject <ISitesIdentity> -BodyParameter <IMicro
 ```
 
 ## DESCRIPTION
-Create new navigation property to columns for sites
+The collection of column definitions for this contentType.
 
 ## EXAMPLES
 
@@ -671,13 +671,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnDefinition
-
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnDefinition
-
 ## NOTES
 
 ALIASES

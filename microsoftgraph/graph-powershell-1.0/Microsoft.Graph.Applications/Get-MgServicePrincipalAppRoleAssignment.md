@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgServicePrincipalAppRoleAssignment
 
 ## SYNOPSIS
-Get appRoleAssignments from servicePrincipals
+App role assignment for another app or service, granted to this service principal.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgServicePrincipalAppRoleAssignment -InputObject <IApplicationsIdentity> [-E
 ```
 
 ## DESCRIPTION
-Get appRoleAssignments from servicePrincipals
+App role assignment for another app or service, granted to this service principal.
 
 ## EXAMPLES
 
@@ -241,11 +241,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppRoleAssignment
-
 ## NOTES
 
 ALIASES

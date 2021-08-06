@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserProfileAward
 
 ## SYNOPSIS
-Create new navigation property to awards for users
+Represents the details of awards or honors associated with a person.
 
 ## SYNTAX
 
@@ -46,7 +46,7 @@ New-MgUserProfileAward -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoft
 ```
 
 ## DESCRIPTION
-Create new navigation property to awards for users
+Represents the details of awards or honors associated with a person.
 
 ## EXAMPLES
 
@@ -380,13 +380,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPersonAward
-
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPersonAward
-
 ## NOTES
 
 ALIASES

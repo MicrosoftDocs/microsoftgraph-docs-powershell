@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgGroupSetting
 
 ## SYNOPSIS
-Delete navigation property settings for groups
+Settings that can govern this group's behavior, like whether members can invite guest users to the group.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgGroupSetting -InputObject <IGroupsIdentity> [-IfMatch <String>] [-PassT
 ```
 
 ## DESCRIPTION
-Delete navigation property settings for groups
+Settings that can govern this group's behavior, like whether members can invite guest users to the group.
+Nullable.
 
 ## EXAMPLES
 
@@ -144,11 +146,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

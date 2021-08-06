@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgGroupSetting
 
 ## SYNOPSIS
-Create new navigation property to settings for groups
+Settings that can govern this group's behavior, like whether members can invite guest users to the group.
+Nullable.
 
 ## SYNTAX
 
@@ -38,7 +39,8 @@ New-MgGroupSetting -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGrap
 ```
 
 ## DESCRIPTION
-Create new navigation property to settings for groups
+Settings that can govern this group's behavior, like whether members can invite guest users to the group.
+Nullable.
 
 ## EXAMPLES
 
@@ -207,13 +209,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectorySetting
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectorySetting
-
 ## NOTES
 
 ALIASES

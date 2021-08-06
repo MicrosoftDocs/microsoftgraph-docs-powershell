@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementAuditEvent
 
 ## SYNOPSIS
-Create new navigation property to auditEvents for deviceManagement
+The Audit Events
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ New-MgDeviceManagementAuditEvent -BodyParameter <IMicrosoftGraphAuditEvent> [-Wh
 ```
 
 ## DESCRIPTION
-Create new navigation property to auditEvents for deviceManagement
+The Audit Events
 
 ## EXAMPLES
 
@@ -284,11 +284,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuditEvent
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuditEvent
-
 ## NOTES
 
 ALIASES

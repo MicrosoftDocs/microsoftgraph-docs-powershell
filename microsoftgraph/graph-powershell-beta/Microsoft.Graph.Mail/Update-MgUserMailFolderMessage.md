@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserMailFolderMessage
 
 ## SYNOPSIS
-Update the navigation property messages in users
+The collection of messages in the mailFolder.
 
 ## SYNTAX
 
@@ -69,7 +69,7 @@ Update-MgUserMailFolderMessage -InputObject <IMailIdentity> -BodyParameter <IMic
 ```
 
 ## DESCRIPTION
-Update the navigation property messages in users
+The collection of messages in the mailFolder.
 
 ## EXAMPLES
 
@@ -845,13 +845,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMailIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMessage1
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

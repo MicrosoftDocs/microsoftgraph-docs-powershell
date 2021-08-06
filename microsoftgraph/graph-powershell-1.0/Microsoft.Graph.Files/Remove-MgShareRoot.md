@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgShareRoot
 
 ## SYNOPSIS
-Delete navigation property root for shares
+Used to access the underlying driveItem.
+Deprecated -- use driveItem instead.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgShareRoot -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassThru]
 ```
 
 ## DESCRIPTION
-Delete navigation property root for shares
+Used to access the underlying driveItem.
+Deprecated -- use driveItem instead.
 
 ## EXAMPLES
 
@@ -129,11 +131,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

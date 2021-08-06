@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgGroupConversationThreadPostAttachment
 
 ## SYNOPSIS
-Update the navigation property attachments in groups
+The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -42,7 +44,9 @@ Update-MgGroupConversationThreadPostAttachment -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property attachments in groups
+The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -314,13 +318,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachment
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

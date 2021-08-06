@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgShareListItemVersion
 
 ## SYNOPSIS
-Get versions from shares
+The list of previous versions of the list item.
 
 ## SYNTAX
 
@@ -51,7 +51,7 @@ Get-MgShareListItemVersion -InputObject <IFilesIdentity> [-ExpandProperty <Strin
 ```
 
 ## DESCRIPTION
-Get versions from shares
+The list of previous versions of the list item.
 
 ## EXAMPLES
 
@@ -275,11 +275,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphListItemVersion
-
 ## NOTES
 
 ALIASES

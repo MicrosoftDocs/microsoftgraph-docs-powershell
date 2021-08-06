@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgGroupRejectedSenderByRef
 
 ## SYNOPSIS
-Create new navigation property ref to rejectedSenders for groups
+The list of users or groups that are not allowed to create posts or calendar events in this group.
+Nullable
 
 ## SYNTAX
 
@@ -37,7 +38,8 @@ New-MgGroupRejectedSenderByRef -InputObject <IGroupsIdentity> -BodyParameter <Ha
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to rejectedSenders for groups
+The list of users or groups that are not allowed to create posts or calendar events in this group.
+Nullable
 
 ## EXAMPLES
 
@@ -141,13 +143,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1Ot1VbgGroupsGroupIdRejectedsendersRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgContract
 
 ## SYNOPSIS
-Get entity from contracts by key
+Represents an Azure Active Directory object.
+The directoryObject type is the base type for many other directory entity types.
 
 ## SYNTAX
 
@@ -31,7 +32,8 @@ Get-MgContract -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandPrope
 ```
 
 ## DESCRIPTION
-Get entity from contracts by key
+Represents an Azure Active Directory object.
+The directoryObject type is the base type for many other directory entity types.
 
 ## EXAMPLES
 
@@ -225,11 +227,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContract
-
 ## NOTES
 
 ALIASES

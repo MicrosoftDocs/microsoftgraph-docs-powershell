@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgComplianceEdiscoveryCaseSourceCollectionCustodianSourceByRef
 
 ## SYNOPSIS
-Create new navigation property ref to custodianSources for compliance
+Custodian sources that are included in the sourceCollection.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ New-MgComplianceEdiscoveryCaseSourceCollectionCustodianSourceByRef -InputObject 
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to custodianSources for compliance
+Custodian sources that are included in the sourceCollection.
 
 ## EXAMPLES
 
@@ -156,13 +156,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPathsSgsureComplianceEdiscoveryCasesCaseIdSourcecollectionsSourcecollectionIdCustodiansourcesRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

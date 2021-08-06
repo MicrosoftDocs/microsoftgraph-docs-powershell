@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgShareListContentTypeBaseByRef
 
 ## SYNOPSIS
-Delete ref of navigation property base for shares
+Parent contentType from which this content type is derived.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgShareListContentTypeBaseByRef -InputObject <IFilesIdentity> [-IfMatch <
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property base for shares
+Parent contentType from which this content type is derived.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

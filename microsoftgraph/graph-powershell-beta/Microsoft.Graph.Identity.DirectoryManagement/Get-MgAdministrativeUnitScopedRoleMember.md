@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgAdministrativeUnitScopedRoleMember
 
 ## SYNOPSIS
-Get scopedRoleMembers from administrativeUnits
+Scoped-role members of this Administrative Unit.
+HTTP Methods: GET (list scopedRoleMemberships), POST (add scopedRoleMembership), DELETE (remove scopedRoleMembership).
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgAdministrativeUnitScopedRoleMember -InputObject <IIdentityDirectoryManagem
 ```
 
 ## DESCRIPTION
-Get scopedRoleMembers from administrativeUnits
+Scoped-role members of this Administrative Unit.
+HTTP Methods: GET (list scopedRoleMemberships), POST (add scopedRoleMembership), DELETE (remove scopedRoleMembership).
 
 ## EXAMPLES
 
@@ -241,11 +243,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphScopedRoleMembership
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgDirectoryAdministrativeUnitMember
 
 ## SYNOPSIS
-Get members from directory
+Users and groups that are members of this Adminsitrative Unit.
+HTTP Methods: GET (list members), POST (add members), DELETE (remove members).
 
 ## SYNTAX
 
@@ -19,7 +20,8 @@ Get-MgDirectoryAdministrativeUnitMember -AdministrativeUnitId <String> [-ExpandP
 ```
 
 ## DESCRIPTION
-Get members from directory
+Users and groups that are members of this Adminsitrative Unit.
+HTTP Methods: GET (list members), POST (add members), DELETE (remove members).
 
 ## EXAMPLES
 
@@ -199,7 +201,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
-
 ## NOTES
 
 ALIASES

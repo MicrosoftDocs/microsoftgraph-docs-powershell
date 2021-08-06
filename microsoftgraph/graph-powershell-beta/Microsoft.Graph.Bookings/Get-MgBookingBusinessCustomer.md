@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBookingBusinessCustomer
 
 ## SYNOPSIS
-Get customers from bookingBusinesses
+All the customers of this business.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgBookingBusinessCustomer -InputObject <IBookingsIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-Get customers from bookingBusinesses
+All the customers of this business.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -241,11 +245,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IBookingsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingCustomer
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Publish-MgBookingBusiness
 
 ## SYNOPSIS
-Invoke action publish
+Makes the scheduling page of this business available to the general public.
 
 ## SYNTAX
 
@@ -24,7 +24,7 @@ Publish-MgBookingBusiness -InputObject <IBookingsIdentity> [-PassThru] [-WhatIf]
 ```
 
 ## DESCRIPTION
-Invoke action publish
+Makes the scheduling page of this business available to the general public.
 
 ## EXAMPLES
 
@@ -113,11 +113,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IBookingsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementTermAndConditionAcceptanceStatuses
 
 ## SYNOPSIS
-Create new navigation property to acceptanceStatuses for deviceManagement
+The list of acceptance statuses for this T&C policy.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ New-MgDeviceManagementTermAndConditionAcceptanceStatuses -InputObject <IDeviceMa
 ```
 
 ## DESCRIPTION
-Create new navigation property to acceptanceStatuses for deviceManagement
+The list of acceptance statuses for this T&C policy.
 
 ## EXAMPLES
 
@@ -240,13 +240,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermsAndConditionsAcceptanceStatus
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermsAndConditionsAcceptanceStatus
-
 ## NOTES
 
 ALIASES
@@ -283,6 +280,14 @@ BODYPARAMETER <IMicrosoftGraphTermsAndConditionsAcceptanceStatus>: A termsAndCon
 INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[AuditEventId <String>]`: key: id of auditEvent
   - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
+  - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
+  - `[CloudPcDeviceImageId <String>]`: key: id of cloudPcDeviceImage
+  - `[CloudPcId <String>]`: key: id of cloudPC
+  - `[CloudPcOnPremisesConnectionId <String>]`: key: id of cloudPcOnPremisesConnection
+  - `[CloudPcProvisioningPolicyAssignmentId <String>]`: key: id of cloudPcProvisioningPolicyAssignment
+  - `[CloudPcProvisioningPolicyId <String>]`: key: id of cloudPcProvisioningPolicy
+  - `[CloudPcUserSettingAssignmentId <String>]`: key: id of cloudPcUserSettingAssignment
+  - `[CloudPcUserSettingId <String>]`: key: id of cloudPcUserSetting
   - `[ComanagementEligibleDeviceId <String>]`: key: id of comanagementEligibleDevice
   - `[ComplianceManagementPartnerId <String>]`: key: id of complianceManagementPartner
   - `[DeviceAndAppManagementRoleAssignmentId <String>]`: key: id of deviceAndAppManagementRoleAssignment
@@ -342,5 +347,7 @@ TERMSANDCONDITIONS <IMicrosoftGraphTermsAndConditions1>: A termsAndConditions en
   - `[LastModifiedDateTime <DateTime?>]`: DateTime the object was last modified.
   - `[Title <String>]`: Administrator-supplied title of the terms and conditions. This is shown to the user on prompts to accept the T&C policy.
   - `[Version <Int32?>]`: Integer indicating the current version of the terms. Incremented when an administrator makes a change to the terms and wishes to require users to re-accept the modified T&C policy.
+
+## RELATED LINKS
 
 ## RELATED LINKS

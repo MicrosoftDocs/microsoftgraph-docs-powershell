@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserTodoListTaskLinkedResource
 
 ## SYNOPSIS
-Update the navigation property linkedResources in users
+A collection of resources linked to the task.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Update-MgUserTodoListTaskLinkedResource -InputObject <IUsersIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property linkedResources in users
+A collection of resources linked to the task.
 
 ## EXAMPLES
 
@@ -281,13 +281,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLinkedResource
-
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

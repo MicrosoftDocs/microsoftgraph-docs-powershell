@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteListContentTypeBase
 
 ## SYNOPSIS
-Get base from sites
+Parent contentType from which this content type is derived.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgSiteListContentTypeBase -InputObject <ISitesIdentity> [-ExpandProperty <St
 ```
 
 ## DESCRIPTION
-Get base from sites
+Parent contentType from which this content type is derived.
 
 ## EXAMPLES
 
@@ -128,11 +128,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentType
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgEducationMeAssignmentCategory
 
 ## SYNOPSIS
-Create new navigation property to categories for education
+When set, enables users to easily find assignments of a given type.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -37,7 +39,9 @@ New-MgEducationMeAssignmentCategory -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to categories for education
+When set, enables users to easily find assignments of a given type.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -172,13 +176,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationCategory
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationCategory
-
 ## NOTES
 
 ALIASES
