@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgPlannerBucket
 
 ## SYNOPSIS
-Delete navigation property buckets for planner
+Read-only.
+Nullable.
+Returns a collection of the specified buckets
 
 ## SYNTAX
 
@@ -25,7 +27,9 @@ Remove-MgPlannerBucket -InputObject <IPlannerIdentity> [-IfMatch <String>] [-Pas
 ```
 
 ## DESCRIPTION
-Delete navigation property buckets for planner
+Read-only.
+Nullable.
+Returns a collection of the specified buckets
 
 ## EXAMPLES
 
@@ -129,11 +133,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

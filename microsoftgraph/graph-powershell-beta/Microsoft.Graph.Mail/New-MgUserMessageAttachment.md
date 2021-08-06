@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserMessageAttachment
 
 ## SYNOPSIS
-Create new navigation property to attachments for users
+The fileAttachment and itemAttachment attachments for the message.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ New-MgUserMessageAttachment -InputObject <IMailIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Create new navigation property to attachments for users
+The fileAttachment and itemAttachment attachments for the message.
 
 ## EXAMPLES
 
@@ -251,13 +251,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMailIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachment
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachment
-
 ## NOTES
 
 ALIASES

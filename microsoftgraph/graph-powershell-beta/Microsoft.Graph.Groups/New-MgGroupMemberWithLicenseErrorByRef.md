@@ -8,7 +8,10 @@ schema: 2.0.0
 # New-MgGroupMemberWithLicenseErrorByRef
 
 ## SYNOPSIS
-Create new navigation property ref to memberOf for groups
+Groups and administrative units that this group is a member of.
+HTTP Methods: GET (supported for all groups).
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -37,7 +40,10 @@ New-MgGroupMemberWithLicenseErrorByRef -InputObject <IGroupsIdentity> -BodyParam
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to memberOf for groups
+Groups and administrative units that this group is a member of.
+HTTP Methods: GET (supported for all groups).
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -141,13 +147,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPathsCa7EzdGroupsGroupIdMemberofRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

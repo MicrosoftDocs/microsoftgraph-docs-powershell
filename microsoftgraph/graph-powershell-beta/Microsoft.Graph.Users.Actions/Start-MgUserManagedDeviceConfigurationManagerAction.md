@@ -8,7 +8,7 @@ schema: 2.0.0
 # Start-MgUserManagedDeviceConfigurationManagerAction
 
 ## SYNOPSIS
-Invoke action triggerConfigurationManagerAction
+Trigger action on ConfigurationManager client
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Start-MgUserManagedDeviceConfigurationManagerAction -InputObject <IUsersActionsI
 ```
 
 ## DESCRIPTION
-Invoke action triggerConfigurationManagerAction
+Trigger action on ConfigurationManager client
 
 ## EXAMPLES
 
@@ -192,13 +192,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPathsA6Tcp7UsersUserIdManageddevicesManageddeviceIdMicrosoftGraphTriggerconfigurationmanageractionPostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgSiteListSubscription
 
 ## SYNOPSIS
-Update the navigation property subscriptions in sites
+The set of subscriptions on the list.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Update-MgSiteListSubscription -InputObject <ISitesIdentity> -BodyParameter <IMic
 ```
 
 ## DESCRIPTION
-Update the navigation property subscriptions in sites
+The set of subscriptions on the list.
 
 ## EXAMPLES
 
@@ -456,13 +456,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSubscription
-
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

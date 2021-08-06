@@ -8,7 +8,9 @@ schema: 2.0.0
 # Set-MgUserManagerByRef
 
 ## SYNOPSIS
-Update the ref of navigation property manager in users
+The user or contact that is this user's manager.
+Read-only.
+(HTTP Methods: GET, PUT, DELETE.)
 
 ## SYNTAX
 
@@ -37,7 +39,9 @@ Set-MgUserManagerByRef -InputObject <IUsersIdentity> -BodyParameter <Hashtable> 
 ```
 
 ## DESCRIPTION
-Update the ref of navigation property manager in users
+The user or contact that is this user's manager.
+Read-only.
+(HTTP Methods: GET, PUT, DELETE.)
 
 ## EXAMPLES
 
@@ -156,13 +160,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

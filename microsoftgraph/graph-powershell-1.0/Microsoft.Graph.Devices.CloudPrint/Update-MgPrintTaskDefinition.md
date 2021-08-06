@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgPrintTaskDefinition
 
 ## SYNOPSIS
-Update the navigation property taskDefinitions in print
+List of abstract definition for a task that can be triggered when various events occur within Universal Print.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Update-MgPrintTaskDefinition -InputObject <IDevicesCloudPrintIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property taskDefinitions in print
+List of abstract definition for a task that can be triggered when various events occur within Universal Print.
 
 ## EXAMPLES
 
@@ -223,13 +223,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintTaskDefinition
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

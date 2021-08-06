@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgGroupConversationThreadPostExtension
 
 ## SYNOPSIS
-Delete navigation property extensions for groups
+The collection of open extensions defined for the post.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -26,7 +28,9 @@ Remove-MgGroupConversationThreadPostExtension -InputObject <IGroupsIdentity> [-I
 ```
 
 ## DESCRIPTION
-Delete navigation property extensions for groups
+The collection of open extensions defined for the post.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -190,11 +194,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

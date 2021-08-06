@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgPrintService
 
 ## SYNOPSIS
-Delete navigation property services for print
+The list of available Universal Print service endpoints.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgPrintService -InputObject <IDevicesCloudPrintIdentity> [-IfMatch <Strin
 ```
 
 ## DESCRIPTION
-Delete navigation property services for print
+The list of available Universal Print service endpoints.
 
 ## EXAMPLES
 
@@ -129,11 +129,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

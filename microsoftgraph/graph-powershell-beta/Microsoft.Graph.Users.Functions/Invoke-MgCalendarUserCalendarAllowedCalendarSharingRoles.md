@@ -12,7 +12,7 @@ Invoke function allowedCalendarSharingRoles
 
 ## SYNTAX
 
-### Calendar2 (Default)
+### Calendar (Default)
 ```
 Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles -User <String> -UserId <String> [<CommonParameters>]
 ```
@@ -29,7 +29,7 @@ Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles -InputObject <IUsersFun
  [<CommonParameters>]
 ```
 
-### CalendarViaIdentity2
+### CalendarViaIdentity
 ```
 Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles -InputObject <IUsersFunctionsIdentity>
  [<CommonParameters>]
@@ -63,7 +63,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IUsersFunctionsIdentity
-Parameter Sets: CalendarViaIdentity3, CalendarViaIdentity2
+Parameter Sets: CalendarViaIdentity3, CalendarViaIdentity
 Aliases:
 
 Required: True
@@ -78,7 +78,7 @@ Usage: User={User}
 
 ```yaml
 Type: String
-Parameter Sets: Calendar2, Calendar3
+Parameter Sets: Calendar, Calendar3
 Aliases:
 
 Required: True
@@ -93,7 +93,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: Calendar2, Calendar3
+Parameter Sets: Calendar, Calendar3
 Aliases:
 
 Required: True
@@ -109,11 +109,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
-
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES
@@ -124,6 +122,7 @@ To create the parameters described below, construct a hash table containing the 
 
 
 INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
+  - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AnotherRange <String>]`: Usage: anotherRange={anotherRange}
   - `[AppConsentRequestId <String>]`: key: id of appConsentRequest
   - `[CalendarId <String>]`: key: id of calendar

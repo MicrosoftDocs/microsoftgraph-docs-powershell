@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPrintSharePrinter
 
 ## SYNOPSIS
-Get printer from print
+The printer that this printer share is related to.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgPrintSharePrinter -InputObject <IDevicesCloudPrintIdentity> [-ExpandProper
 ```
 
 ## DESCRIPTION
-Get printer from print
+The printer that this printer share is related to.
 
 ## EXAMPLES
 
@@ -98,11 +98,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrinter1
-
 ## NOTES
 
 ALIASES

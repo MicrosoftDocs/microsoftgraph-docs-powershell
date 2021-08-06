@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDriveListContentTypeColumnPositionByRef
 
 ## SYNOPSIS
-Get ref of columnPositions from drives
+Column order information in a content type.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgDriveListContentTypeColumnPositionByRef -ContentTypeId <String> -DriveId <
 ```
 
 ## DESCRIPTION
-Get ref of columnPositions from drives
+Column order information in a content type.
 
 ## EXAMPLES
 
@@ -184,7 +184,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummary
 
 ## SYNOPSIS
-Update the navigation property advancedThreatProtectionOnboardingStateSummary in deviceManagement
+The summary state of ATP onboarding state for this account.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ Update-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummary
 ```
 
 ## DESCRIPTION
-Update the navigation property advancedThreatProtectionOnboardingStateSummary in deviceManagement
+The summary state of ATP onboarding state for this account.
 
 ## EXAMPLES
 
@@ -270,11 +270,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAdvancedThreatProtectionOnboardingStateSummary
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgTeamMember
 
 ## SYNOPSIS
-Get members from teams
+Members and owners of the team.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgTeamMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Pr
 ```
 
 ## DESCRIPTION
-Get members from teams
+Members and owners of the team.
 
 ## EXAMPLES
 
@@ -241,11 +241,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversationMember
-
 ## NOTES
 
 ALIASES

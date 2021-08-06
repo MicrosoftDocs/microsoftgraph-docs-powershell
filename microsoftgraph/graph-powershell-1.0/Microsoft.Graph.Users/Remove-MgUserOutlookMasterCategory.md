@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserOutlookMasterCategory
 
 ## SYNOPSIS
-Delete navigation property masterCategories for users
+A list of categories defined for the user.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgUserOutlookMasterCategory -InputObject <IUsersIdentity> [-IfMatch <Stri
 ```
 
 ## DESCRIPTION
-Delete navigation property masterCategories for users
+A list of categories defined for the user.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

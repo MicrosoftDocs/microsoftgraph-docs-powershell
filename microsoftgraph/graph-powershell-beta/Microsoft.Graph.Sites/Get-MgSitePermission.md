@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgSitePermission
 
 ## SYNOPSIS
-Get permissions from sites
+The permissions associated with the site.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgSitePermission -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] 
 ```
 
 ## DESCRIPTION
-Get permissions from sites
+The permissions associated with the site.
+Nullable.
 
 ## EXAMPLES
 
@@ -241,11 +243,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermission
-
 ## NOTES
 
 ALIASES

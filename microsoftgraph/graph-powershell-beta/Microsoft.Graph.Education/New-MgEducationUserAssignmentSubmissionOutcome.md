@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgEducationUserAssignmentSubmissionOutcome
 
 ## SYNOPSIS
-Create new navigation property to outcomes for education
+Read-Write.
+Nullable.
 
 ## SYNTAX
 
@@ -41,7 +42,8 @@ New-MgEducationUserAssignmentSubmissionOutcome -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to outcomes for education
+Read-Write.
+Nullable.
 
 ## EXAMPLES
 
@@ -222,13 +224,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationOutcome
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationOutcome
-
 ## NOTES
 
 ALIASES

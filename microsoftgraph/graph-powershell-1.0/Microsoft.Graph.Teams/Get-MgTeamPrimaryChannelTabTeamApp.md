@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgTeamPrimaryChannelTabTeamApp
 
 ## SYNOPSIS
-Get teamsApp from teams
+The application that is linked to the tab.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgTeamPrimaryChannelTabTeamApp -InputObject <ITeamsIdentity> [-ExpandPropert
 ```
 
 ## DESCRIPTION
-Get teamsApp from teams
+The application that is linked to the tab.
 
 ## EXAMPLES
 
@@ -113,11 +113,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsApp1
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgTeamTag
 
 ## SYNOPSIS
-Delete navigation property tags for teams
+The tags associated with the team.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgTeamTag -InputObject <ITeamsIdentity> [-IfMatch <String>] [-PassThru] [
 ```
 
 ## DESCRIPTION
-Delete navigation property tags for teams
+The tags associated with the team.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

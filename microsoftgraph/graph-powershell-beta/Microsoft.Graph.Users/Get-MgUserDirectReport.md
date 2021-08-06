@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserDirectReport
 
 ## SYNOPSIS
-Get directReports from users
+The users and contacts that report to the user.
+(The users and contacts that have their manager property set to this user.) Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -19,7 +21,9 @@ Get-MgUserDirectReport -UserId <String> [-ExpandProperty <String[]>] [-Filter <S
 ```
 
 ## DESCRIPTION
-Get directReports from users
+The users and contacts that report to the user.
+(The users and contacts that have their manager property set to this user.) Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -199,7 +203,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Unblock-MgUserManagedApp
 
 ## SYNOPSIS
-Invoke action unblockManagedApps
+Unblocks the managed app user from app check-in.
 
 ## SYNTAX
 
@@ -24,7 +24,7 @@ Unblock-MgUserManagedApp -InputObject <IUsersActionsIdentity> [-PassThru] [-What
 ```
 
 ## DESCRIPTION
-Invoke action unblockManagedApps
+Unblocks the managed app user from app check-in.
 
 ## EXAMPLES
 
@@ -113,11 +113,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

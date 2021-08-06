@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgGroupEvent
 
 ## SYNOPSIS
-Update the navigation property events in groups
+The group's events.
 
 ## SYNTAX
 
@@ -69,7 +69,7 @@ Update-MgGroupEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftG
 ```
 
 ## DESCRIPTION
-Update the navigation property events in groups
+The group's events.
 
 ## EXAMPLES
 
@@ -964,13 +964,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

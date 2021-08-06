@@ -1,14 +1,16 @@
 ---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgcontacttransitivememberofbyref
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgcontactdirectreportbyref
 schema: 2.0.0
 ---
 
 # New-MgContactDirectReportByRef
 
 ## SYNOPSIS
-Create new navigation property ref to directReports for contacts
+The contact's direct reports.
+(The users and contacts that have their manager property set to this contact.) Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -37,7 +39,9 @@ New-MgContactDirectReportByRef -InputObject <IIdentityDirectoryManagementIdentit
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to directReports for contacts
+The contact's direct reports.
+(The users and contacts that have their manager property set to this contact.) Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -141,13 +145,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPathsR1Ojz8ContactsOrgcontactIdDirectreportsRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserProfileName
 
 ## SYNOPSIS
-Update the navigation property names in users
+Represents the names a user has added to their profile.
 
 ## SYNTAX
 
@@ -49,7 +49,7 @@ Update-MgUserProfileName -InputObject <IPeopleIdentity> -BodyParameter <IMicroso
 ```
 
 ## DESCRIPTION
-Update the navigation property names in users
+Represents the names a user has added to their profile.
 
 ## EXAMPLES
 
@@ -489,13 +489,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPersonName
-
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

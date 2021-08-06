@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceUsageRights
 
 ## SYNOPSIS
-Delete navigation property usageRights for devices
+Represents the usage rights a device has been granted.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgDeviceUsageRights -InputObject <IIdentityDirectoryManagementIdentity> [
 ```
 
 ## DESCRIPTION
-Delete navigation property usageRights for devices
+Represents the usage rights a device has been granted.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

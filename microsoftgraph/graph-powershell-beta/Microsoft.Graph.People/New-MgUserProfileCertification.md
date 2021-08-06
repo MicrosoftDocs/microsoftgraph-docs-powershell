@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserProfileCertification
 
 ## SYNOPSIS
-Create new navigation property to certifications for users
+Represents the details of certifications associated with a person.
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ New-MgUserProfileCertification -InputObject <IPeopleIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to certifications for users
+Represents the details of certifications associated with a person.
 
 ## EXAMPLES
 
@@ -441,13 +441,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPersonCertification
-
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPersonCertification
-
 ## NOTES
 
 ALIASES

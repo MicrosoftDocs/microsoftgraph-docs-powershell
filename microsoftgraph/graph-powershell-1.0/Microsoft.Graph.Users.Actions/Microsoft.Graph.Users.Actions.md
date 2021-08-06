@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Users.Actions
-Module Guid: f075c5b8-2697-406f-b659-41cedb0352a6
+Module Guid: af6c6df5-81df-42c9-a2e2-73640ab13a59
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions
 Help Version: 1.0.0.0
 Locale: en-US
@@ -72,7 +72,7 @@ Invoke action clear
 Invoke action clear
 
 ### [Clear-MgUserManagedDevice](Clear-MgUserManagedDevice.md)
-Invoke action wipe
+Wipe a device
 
 ### [Confirm-MgUserMemberGroup](Confirm-MgUserMemberGroup.md)
 Invoke action checkMemberGroups
@@ -105,19 +105,16 @@ Invoke action copyToNotebook
 Invoke action copyToSectionGroup
 
 ### [Disable-MgUserManagedDeviceLostMode](Disable-MgUserManagedDeviceLostMode.md)
-Invoke action disableLostMode
+Disable lost mode
 
 ### [Export-MgUserPersonalData](Export-MgUserPersonalData.md)
 Invoke action exportPersonalData
 
 ### [Find-MgUserManagedDevice](Find-MgUserManagedDevice.md)
-Invoke action locateDevice
+Locate a device
 
 ### [Find-MgUserMeetingTime](Find-MgUserMeetingTime.md)
 Invoke action findMeetingTimes
-
-### [Get-MgUserAvailableExtensionProperty](Get-MgUserAvailableExtensionProperty.md)
-Invoke action getAvailableExtensionProperties
 
 ### [Get-MgUserById](Get-MgUserById.md)
 Invoke action getByIds
@@ -210,19 +207,19 @@ Invoke action autofitColumns
 Invoke action autofitRows
 
 ### [Invoke-MgCleanUserManagedDeviceWindowDevice](Invoke-MgCleanUserManagedDeviceWindowDevice.md)
-Invoke action cleanWindowsDevice
+Clean Windows device
 
 ### [Invoke-MgCommitUserInsightSharedLastSharedMethodMicrosoftGraphMobileAppContentFile](Invoke-MgCommitUserInsightSharedLastSharedMethodMicrosoftGraphMobileAppContentFile.md)
-Invoke action commit
+Commits a file of a given app.
 
 ### [Invoke-MgCommitUserInsightSharedResourceMicrosoftGraphMobileAppContentFile](Invoke-MgCommitUserInsightSharedResourceMicrosoftGraphMobileAppContentFile.md)
-Invoke action commit
+Commits a file of a given app.
 
 ### [Invoke-MgCommitUserInsightTrendingResourceMicrosoftGraphMobileAppContentFile](Invoke-MgCommitUserInsightTrendingResourceMicrosoftGraphMobileAppContentFile.md)
-Invoke action commit
+Commits a file of a given app.
 
 ### [Invoke-MgCommitUserInsightUsedResourceMicrosoftGraphMobileAppContentFile](Invoke-MgCommitUserInsightUsedResourceMicrosoftGraphMobileAppContentFile.md)
-Invoke action commit
+Commits a file of a given app.
 
 ### [Invoke-MgCreateOrGetUserOnlineMeeting](Invoke-MgCreateOrGetUserOnlineMeeting.md)
 Invoke action createOrGet
@@ -252,7 +249,7 @@ Invoke action dismissReminder
 Invoke action dismissReminder
 
 ### [Invoke-MgDownUserManagedDeviceShut](Invoke-MgDownUserManagedDeviceShut.md)
-Invoke action shutDown
+Shut down device
 
 ### [Invoke-MgForwardUserEvent](Invoke-MgForwardUserEvent.md)
 Invoke action forward
@@ -270,7 +267,7 @@ Invoke action forward
 Invoke action reprocessLicenseAssignment
 
 ### [Invoke-MgLogoutUserManagedDeviceSharedAppleDeviceActiveUser](Invoke-MgLogoutUserManagedDeviceSharedAppleDeviceActiveUser.md)
-Invoke action logoutSharedAppleDeviceActiveUser
+Logout shared Apple device active user
 
 ### [Invoke-MgRedirectUserInsightSharedLastSharedMethodMicrosoftGraphPrintJob](Invoke-MgRedirectUserInsightSharedLastSharedMethodMicrosoftGraphPrintJob.md)
 Invoke action redirect
@@ -285,16 +282,16 @@ Invoke action redirect
 Invoke action redirect
 
 ### [Invoke-MgRenewUserInsightSharedLastSharedMethodMicrosoftGraphMobileAppContentFileUpload](Invoke-MgRenewUserInsightSharedLastSharedMethodMicrosoftGraphMobileAppContentFileUpload.md)
-Invoke action renewUpload
+Renews the SAS URI for an application file upload.
 
 ### [Invoke-MgRenewUserInsightSharedResourceMicrosoftGraphMobileAppContentFileUpload](Invoke-MgRenewUserInsightSharedResourceMicrosoftGraphMobileAppContentFileUpload.md)
-Invoke action renewUpload
+Renews the SAS URI for an application file upload.
 
 ### [Invoke-MgRenewUserInsightTrendingResourceMicrosoftGraphMobileAppContentFileUpload](Invoke-MgRenewUserInsightTrendingResourceMicrosoftGraphMobileAppContentFileUpload.md)
-Invoke action renewUpload
+Renews the SAS URI for an application file upload.
 
 ### [Invoke-MgRenewUserInsightUsedResourceMicrosoftGraphMobileAppContentFileUpload](Invoke-MgRenewUserInsightUsedResourceMicrosoftGraphMobileAppContentFileUpload.md)
-Invoke action renewUpload
+Renews the SAS URI for an application file upload.
 
 ### [Invoke-MgReplyAllUserMailFolderMessage](Invoke-MgReplyAllUserMailFolderMessage.md)
 Invoke action replyAll
@@ -309,7 +306,7 @@ Invoke action reply
 Invoke action reply
 
 ### [Invoke-MgRetireUserManagedDevice](Invoke-MgRetireUserManagedDevice.md)
-Invoke action retire
+Retire a device
 
 ### [Invoke-MgScanUserManagedDeviceWindowDefender](Invoke-MgScanUserManagedDeviceWindowDefender.md)
 Invoke action windowsDefenderScan
@@ -348,7 +345,7 @@ Invoke action unmerge
 Invoke action unmerge
 
 ### [Lock-MgUserManagedDeviceRemote](Lock-MgUserManagedDeviceRemote.md)
-Invoke action remoteLock
+Remote lock
 
 ### [Merge-MgUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRange](Merge-MgUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRange.md)
 Invoke action merge
@@ -417,7 +414,7 @@ Invoke action createReply
 Invoke action createReplyAll
 
 ### [Remove-MgUserDeviceFromManagement](Remove-MgUserDeviceFromManagement.md)
-Invoke action removeAllDevicesFromManagement
+Retire all devices from management for this user
 
 ### [Remove-MgUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRange](Remove-MgUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRange.md)
 Invoke action delete
@@ -432,25 +429,22 @@ Invoke action delete
 Invoke action delete
 
 ### [Remove-MgUserManagedDeviceUserFromSharedAppleDevice](Remove-MgUserManagedDeviceUserFromSharedAppleDevice.md)
-Invoke action deleteUserFromSharedAppleDevice
+Delete user from shared Apple device
 
 ### [Request-MgUserManagedDeviceRemoteAssistance](Request-MgUserManagedDeviceRemoteAssistance.md)
-Invoke action requestRemoteAssistance
+Request remote assistance
 
 ### [Reset-MgUserManagedDevicePasscode](Reset-MgUserManagedDevicePasscode.md)
-Invoke action resetPasscode
-
-### [Reset-MgUserPassword](Reset-MgUserPassword.md)
-Invoke action changePassword
+Reset passcode
 
 ### [Restart-MgUserManagedDeviceNow](Restart-MgUserManagedDeviceNow.md)
-Invoke action rebootNow
+Reboot device
 
 ### [Restore-MgUser](Restore-MgUser.md)
 Invoke action restore
 
 ### [Restore-MgUserManagedDevicePasscode](Restore-MgUserManagedDevicePasscode.md)
-Invoke action recoverPasscode
+Recover passcode
 
 ### [Revoke-MgUserSign](Revoke-MgUserSign.md)
 Invoke action revokeSignInSessions
@@ -495,7 +489,7 @@ Invoke action assign
 Invoke action assignLicense
 
 ### [Skip-MgUserManagedDeviceActivationLock](Skip-MgUserManagedDeviceActivationLock.md)
-Invoke action bypassActivationLock
+Bypass activation lock
 
 ### [Start-MgUserInsightSharedLastSharedMethodMicrosoftGraphPrintJob](Start-MgUserInsightSharedLastSharedMethodMicrosoftGraphPrintJob.md)
 Invoke action start
@@ -538,4 +532,7 @@ Invoke action updateWindowsDeviceAccount
 
 ### [Update-MgUserOnenotePageContent](Update-MgUserOnenotePageContent.md)
 Invoke action onenotePatchContent
+
+### [Update-MgUserPassword](Update-MgUserPassword.md)
+Invoke action changePassword
 

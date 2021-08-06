@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgGroupPlannerPlanBucketTask
 
 ## SYNOPSIS
-Delete navigation property tasks for groups
+Read-only.
+Nullable.
+The collection of tasks in the bucket.
 
 ## SYNTAX
 
@@ -25,7 +27,9 @@ Remove-MgGroupPlannerPlanBucketTask -InputObject <IPlannerIdentity> [-IfMatch <S
 ```
 
 ## DESCRIPTION
-Delete navigation property tasks for groups
+Read-only.
+Nullable.
+The collection of tasks in the bucket.
 
 ## EXAMPLES
 
@@ -174,11 +178,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

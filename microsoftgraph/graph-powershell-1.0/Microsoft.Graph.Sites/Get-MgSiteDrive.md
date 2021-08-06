@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteDrive
 
 ## SYNOPSIS
-Get drive from sites
+The default drive (document library) for this site.
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ Get-MgSiteDrive -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Pro
 ```
 
 ## DESCRIPTION
-Get drive from sites
+The default drive (document library) for this site.
 
 ## EXAMPLES
 
@@ -252,11 +252,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDrive1
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgContactDirectReport
 
 ## SYNOPSIS
-Get directReports from contacts
+The contact's direct reports.
+(The users and contacts that have their manager property set to this contact.) Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -19,7 +21,9 @@ Get-MgContactDirectReport -OrgContactId <String> [-ExpandProperty <String[]>] [-
 ```
 
 ## DESCRIPTION
-Get directReports from contacts
+The contact's direct reports.
+(The users and contacts that have their manager property set to this contact.) Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -199,7 +203,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
-
 ## NOTES
 
 ALIASES

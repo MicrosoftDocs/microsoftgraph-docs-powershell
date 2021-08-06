@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementReportSchedule
 
 ## SYNOPSIS
-Get reportSchedules from deviceManagement
+Entity representing a schedule for which reports are delivered
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementReportSchedule -InputObject <IReportsIdentity> [-ExpandPro
 ```
 
 ## DESCRIPTION
-Get reportSchedules from deviceManagement
+Entity representing a schedule for which reports are delivered
 
 ## EXAMPLES
 
@@ -226,11 +226,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IReportsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementReportSchedule
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,10 @@ schema: 2.0.0
 # New-MgUserPerson
 
 ## SYNOPSIS
-Create new navigation property to people for users
+Read-only.
+The most relevant people to the user.
+The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships.
+A person is an aggregation of information from across mail, contacts and social networks.
 
 ## SYNTAX
 
@@ -49,7 +52,10 @@ New-MgUserPerson -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoftGraphP
 ```
 
 ## DESCRIPTION
-Create new navigation property to people for users
+Read-only.
+The most relevant people to the user.
+The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships.
+A person is an aggregation of information from across mail, contacts and social networks.
 
 ## EXAMPLES
 
@@ -477,13 +483,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPerson1
-
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPerson1
-
 ## NOTES
 
 ALIASES

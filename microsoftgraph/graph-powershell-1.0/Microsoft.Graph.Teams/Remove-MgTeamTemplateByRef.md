@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgTeamTemplateByRef
 
 ## SYNOPSIS
-Delete ref of navigation property template for teams
+The template this team was created from.
+See available templates.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgTeamTemplateByRef -InputObject <ITeamsIdentity> [-IfMatch <String>] [-P
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property template for teams
+The template this team was created from.
+See available templates.
 
 ## EXAMPLES
 
@@ -129,11 +131,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

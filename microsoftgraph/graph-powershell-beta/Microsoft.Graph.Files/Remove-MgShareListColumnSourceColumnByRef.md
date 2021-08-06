@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgShareListColumnSourceColumnByRef
 
 ## SYNOPSIS
-Delete ref of navigation property sourceColumn for shares
+The source column for content type column.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgShareListColumnSourceColumnByRef -InputObject <IFilesIdentity> [-IfMatc
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property sourceColumn for shares
+The source column for content type column.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

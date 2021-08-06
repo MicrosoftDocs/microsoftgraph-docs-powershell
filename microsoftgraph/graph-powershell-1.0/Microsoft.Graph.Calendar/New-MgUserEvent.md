@@ -8,7 +8,10 @@ schema: 2.0.0
 # New-MgUserEvent
 
 ## SYNOPSIS
-Create new navigation property to events for users
+The user's events.
+Default is to show events under the Default Calendar.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -69,7 +72,10 @@ New-MgUserEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraph
 ```
 
 ## DESCRIPTION
-Create new navigation property to events for users
+The user's events.
+Default is to show events under the Default Calendar.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -934,13 +940,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent
-
 ## NOTES
 
 ALIASES

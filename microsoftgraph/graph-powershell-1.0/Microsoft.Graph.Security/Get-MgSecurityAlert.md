@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgSecurityAlert
 
 ## SYNOPSIS
-Get alerts from security
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -31,7 +32,8 @@ Get-MgSecurityAlert -InputObject <ISecurityIdentity> [-ExpandProperty <String[]>
 ```
 
 ## DESCRIPTION
-Get alerts from security
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -225,11 +227,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAlert
-
 ## NOTES
 
 ALIASES

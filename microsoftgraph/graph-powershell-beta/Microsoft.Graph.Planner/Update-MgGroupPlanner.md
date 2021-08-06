@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgGroupPlanner
 
 ## SYNOPSIS
-Update the navigation property planner in groups
+Selective Planner services available to the group.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -37,7 +39,9 @@ Update-MgGroupPlanner -InputObject <IPlannerIdentity> -BodyParameter <IMicrosoft
 ```
 
 ## DESCRIPTION
-Update the navigation property planner in groups
+Selective Planner services available to the group.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -190,13 +194,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerGroup
-
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -456,8 +457,5 @@ PLANS <IMicrosoftGraphPlannerPlan1[]>: Read-only. Nullable. Returns the plannerP
   - `[Title <String>]`: Required. Title of the plan.
 
 ## RELATED LINKS
-
-## RELATED LINKS
-
 
 ## RELATED LINKS

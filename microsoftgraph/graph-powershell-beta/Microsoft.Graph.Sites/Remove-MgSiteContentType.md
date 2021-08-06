@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgSiteContentType
 
 ## SYNOPSIS
-Delete navigation property contentTypes for sites
+The collection of content types defined for this site.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgSiteContentType -InputObject <ISitesIdentity> [-IfMatch <String>] [-Pas
 ```
 
 ## DESCRIPTION
-Delete navigation property contentTypes for sites
+The collection of content types defined for this site.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

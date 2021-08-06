@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgUserContactFolder
 
 ## SYNOPSIS
-Delete navigation property contactFolders for users
+The user's contacts folders.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +27,9 @@ Remove-MgUserContactFolder -InputObject <IPersonalContactsIdentity> [-IfMatch <S
 ```
 
 ## DESCRIPTION
-Delete navigation property contactFolders for users
+The user's contacts folders.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -144,11 +148,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPersonalContactsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

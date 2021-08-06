@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupPhotoContent
 
 ## SYNOPSIS
-Get media content for the navigation property photo from groups
+The group's profile photo.
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Get-MgGroupPhotoContent -InputObject <IGroupsIdentity> -OutFile <String> [-PassT
 ```
 
 ## DESCRIPTION
-Get media content for the navigation property photo from groups
+The group's profile photo.
 
 ## EXAMPLES
 
@@ -122,11 +122,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

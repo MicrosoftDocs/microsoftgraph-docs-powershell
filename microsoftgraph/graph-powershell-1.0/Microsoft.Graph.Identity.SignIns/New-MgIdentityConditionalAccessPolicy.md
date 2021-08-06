@@ -245,11 +245,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConditionalAccessPolicy1
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConditionalAccessPolicy1
-
 ## NOTES
 
 ALIASES
@@ -264,7 +262,7 @@ BODYPARAMETER <IMicrosoftGraphConditionalAccessPolicy1>: conditionalAccessPolicy
   - `[Id <String>]`: Read-only.
   - `[Conditions <IMicrosoftGraphConditionalAccessConditionSet1>]`: conditionalAccessConditionSet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Applications <IMicrosoftGraphConditionalAccessApplications>]`: conditionalAccessApplications
+    - `[Applications <IMicrosoftGraphConditionalAccessApplications1>]`: conditionalAccessApplications
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ExcludeApplications <String[]>]`: The list of application IDs explicitly excluded from the policy.
       - `[IncludeApplications <String[]>]`: The list of application IDs the policy applies to, unless explicitly excluded (in excludeApplications). Can also be set to All.
@@ -320,7 +318,7 @@ BODYPARAMETER <IMicrosoftGraphConditionalAccessPolicy1>: conditionalAccessPolicy
 
 CONDITIONS <IMicrosoftGraphConditionalAccessConditionSet1>: conditionalAccessConditionSet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Applications <IMicrosoftGraphConditionalAccessApplications>]`: conditionalAccessApplications
+  - `[Applications <IMicrosoftGraphConditionalAccessApplications1>]`: conditionalAccessApplications
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ExcludeApplications <String[]>]`: The list of application IDs explicitly excluded from the policy.
     - `[IncludeApplications <String[]>]`: The list of application IDs the policy applies to, unless explicitly excluded (in excludeApplications). Can also be set to All.

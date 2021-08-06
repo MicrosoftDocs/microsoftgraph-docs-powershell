@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance
 
 ## SYNOPSIS
-Create new navigation property to userExperienceAnalyticsAppHealthOSVersionPerformance for deviceManagement
+User experience analytics appHealth OS version Performance
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ New-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance
 ```
 
 ## DESCRIPTION
-Create new navigation property to userExperienceAnalyticsAppHealthOSVersionPerformance for deviceManagement
+User experience analytics appHealth OS version Performance
 
 ## EXAMPLES
 
@@ -210,11 +210,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthOSVersionPerformance
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthOSVersionPerformance
-
 ## NOTES
 
 ALIASES

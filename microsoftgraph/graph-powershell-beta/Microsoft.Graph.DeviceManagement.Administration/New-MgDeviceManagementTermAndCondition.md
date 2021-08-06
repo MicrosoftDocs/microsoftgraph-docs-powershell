@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementTermAndCondition
 
 ## SYNOPSIS
-Create new navigation property to termsAndConditions for deviceManagement
+The terms and conditions associated with device management of the company.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ New-MgDeviceManagementTermAndCondition -BodyParameter <IMicrosoftGraphTermsAndCo
 ```
 
 ## DESCRIPTION
-Create new navigation property to termsAndConditions for deviceManagement
+The terms and conditions associated with device management of the company.
 
 ## EXAMPLES
 
@@ -323,11 +323,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermsAndConditions
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermsAndConditions
-
 ## NOTES
 
 ALIASES

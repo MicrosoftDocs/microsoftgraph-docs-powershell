@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgAppCatalogTeamAppDefinitionBot
 
 ## SYNOPSIS
-Get bot from appCatalogs
+The details of the bot specified in the Teams app manifest.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgAppCatalogTeamAppDefinitionBot -InputObject <ITeamsIdentity> [-ExpandPrope
 ```
 
 ## DESCRIPTION
-Get bot from appCatalogs
+The details of the bot specified in the Teams app manifest.
 
 ## EXAMPLES
 
@@ -113,11 +113,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

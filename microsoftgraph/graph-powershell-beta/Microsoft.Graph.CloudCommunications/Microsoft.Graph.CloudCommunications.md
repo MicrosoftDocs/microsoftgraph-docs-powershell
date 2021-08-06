@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.CloudCommunications
-Module Guid: 3c19632f-a167-4fc8-afde-7951371dc833
+Module Guid: b0f80d2b-5a02-4f9f-8772-5300454c5e57
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications
 Help Version: 1.0.0.0
 Locale: en-US
@@ -18,19 +18,25 @@ Invoke action clearPresence
 Get calls from communications
 
 ### [Get-MgCommunicationCallAudioRoutingGroup](Get-MgCommunicationCallAudioRoutingGroup.md)
-Get audioRoutingGroups from communications
+Read-only.
+Nullable.
 
 ### [Get-MgCommunicationCallOperation](Get-MgCommunicationCallOperation.md)
-Get operations from communications
+Read-only.
+Nullable.
 
 ### [Get-MgCommunicationCallParticipant](Get-MgCommunicationCallParticipant.md)
-Get participants from communications
+Read-only.
+Nullable.
 
 ### [Get-MgCommunicationCallRecord](Get-MgCommunicationCallRecord.md)
 Get callRecords from communications
 
 ### [Get-MgCommunicationCallRecordSession](Get-MgCommunicationCallRecordSession.md)
-Get sessions from communications
+List of sessions involved in the call.
+Peer-to-peer calls typically only have one session, whereas group calls typically have at least one session per participant.
+Read-only.
+Nullable.
 
 ### [Get-MgCommunicationOnlineMeeting](Get-MgCommunicationOnlineMeeting.md)
 Get onlineMeetings from communications
@@ -120,16 +126,22 @@ Invoke action transfer
 Create new navigation property to calls for communications
 
 ### [New-MgCommunicationCallAudioRoutingGroup](New-MgCommunicationCallAudioRoutingGroup.md)
-Create new navigation property to audioRoutingGroups for communications
+Read-only.
+Nullable.
 
 ### [New-MgCommunicationCallOperation](New-MgCommunicationCallOperation.md)
-Create new navigation property to operations for communications
+Read-only.
+Nullable.
 
 ### [New-MgCommunicationCallParticipant](New-MgCommunicationCallParticipant.md)
-Create new navigation property to participants for communications
+Read-only.
+Nullable.
 
 ### [New-MgCommunicationCallRecordSession](New-MgCommunicationCallRecordSession.md)
-Create new navigation property to sessions for communications
+List of sessions involved in the call.
+Peer-to-peer calls typically only have one session, whereas group calls typically have at least one session per participant.
+Read-only.
+Nullable.
 
 ### [New-MgCommunicationOnlineMeeting](New-MgCommunicationOnlineMeeting.md)
 Invoke action createOrGet
@@ -144,16 +156,22 @@ Create new navigation property to onlineMeetings for users
 Delete navigation property calls for communications
 
 ### [Remove-MgCommunicationCallAudioRoutingGroup](Remove-MgCommunicationCallAudioRoutingGroup.md)
-Delete navigation property audioRoutingGroups for communications
+Read-only.
+Nullable.
 
 ### [Remove-MgCommunicationCallOperation](Remove-MgCommunicationCallOperation.md)
-Delete navigation property operations for communications
+Read-only.
+Nullable.
 
 ### [Remove-MgCommunicationCallParticipant](Remove-MgCommunicationCallParticipant.md)
-Delete navigation property participants for communications
+Read-only.
+Nullable.
 
 ### [Remove-MgCommunicationCallRecordSession](Remove-MgCommunicationCallRecordSession.md)
-Delete navigation property sessions for communications
+List of sessions involved in the call.
+Peer-to-peer calls typically only have one session, whereas group calls typically have at least one session per participant.
+Read-only.
+Nullable.
 
 ### [Remove-MgCommunicationOnlineMeeting](Remove-MgCommunicationOnlineMeeting.md)
 Delete navigation property onlineMeetings for communications
@@ -201,19 +219,25 @@ Update media content for the navigation property onlineMeetings in users
 Invoke action cancelMediaProcessing
 
 ### [Update-MgCommunicationCallAudioRoutingGroup](Update-MgCommunicationCallAudioRoutingGroup.md)
-Update the navigation property audioRoutingGroups in communications
+Read-only.
+Nullable.
 
 ### [Update-MgCommunicationCallOperation](Update-MgCommunicationCallOperation.md)
-Update the navigation property operations in communications
+Read-only.
+Nullable.
 
 ### [Update-MgCommunicationCallParticipant](Update-MgCommunicationCallParticipant.md)
-Update the navigation property participants in communications
+Read-only.
+Nullable.
 
 ### [Update-MgCommunicationCallRecordingStatus](Update-MgCommunicationCallRecordingStatus.md)
 Invoke action updateRecordingStatus
 
 ### [Update-MgCommunicationCallRecordSession](Update-MgCommunicationCallRecordSession.md)
-Update the navigation property sessions in communications
+List of sessions involved in the call.
+Peer-to-peer calls typically only have one session, whereas group calls typically have at least one session per participant.
+Read-only.
+Nullable.
 
 ### [Update-MgCommunicationOnlineMeeting](Update-MgCommunicationOnlineMeeting.md)
 Update the navigation property onlineMeetings in communications

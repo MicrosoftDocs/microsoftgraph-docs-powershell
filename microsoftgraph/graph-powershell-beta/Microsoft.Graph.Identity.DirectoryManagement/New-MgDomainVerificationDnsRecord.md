@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgDomainVerificationDnsRecord
 
 ## SYNOPSIS
-Create new navigation property to verificationDnsRecords for domains
+DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Azure AD.
+Read-only, Nullable
 
 ## SYNTAX
 
@@ -39,7 +40,8 @@ New-MgDomainVerificationDnsRecord -InputObject <IIdentityDirectoryManagementIden
 ```
 
 ## DESCRIPTION
-Create new navigation property to verificationDnsRecords for domains
+DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Azure AD.
+Read-only, Nullable
 
 ## EXAMPLES
 
@@ -235,13 +237,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDomainDnsRecord
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDomainDnsRecord
-
 ## NOTES
 
 ALIASES

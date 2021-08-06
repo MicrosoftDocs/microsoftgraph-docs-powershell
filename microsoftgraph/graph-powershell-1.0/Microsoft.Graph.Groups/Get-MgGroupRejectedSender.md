@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgGroupRejectedSender
 
 ## SYNOPSIS
-Get rejectedSenders from groups
+The list of users or groups that are not allowed to create posts or calendar events in this group.
+Nullable
 
 ## SYNTAX
 
@@ -19,7 +20,8 @@ Get-MgGroupRejectedSender -GroupId <String> [-ExpandProperty <String[]>] [-Filte
 ```
 
 ## DESCRIPTION
-Get rejectedSenders from groups
+The list of users or groups that are not allowed to create posts or calendar events in this group.
+Nullable
 
 ## EXAMPLES
 
@@ -199,7 +201,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
-
 ## NOTES
 
 ALIASES

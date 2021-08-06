@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgUserExtension
 
 ## SYNOPSIS
-Delete navigation property extensions for users
+The collection of open extensions defined for the user.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgUserExtension -InputObject <IUsersIdentity> [-IfMatch <String>] [-PassT
 ```
 
 ## DESCRIPTION
-Delete navigation property extensions for users
+The collection of open extensions defined for the user.
+Nullable.
 
 ## EXAMPLES
 
@@ -144,11 +146,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

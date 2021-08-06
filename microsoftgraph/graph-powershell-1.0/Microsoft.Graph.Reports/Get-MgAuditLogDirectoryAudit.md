@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgAuditLogDirectoryAudit
 
 ## SYNOPSIS
-Get directoryAudits from auditLogs
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgAuditLogDirectoryAudit -InputObject <IReportsIdentity> [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-Get directoryAudits from auditLogs
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -226,11 +228,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IReportsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryAudit
-
 ## NOTES
 
 ALIASES

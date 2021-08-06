@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgDirectoryRoleMemberByRef
 
 ## SYNOPSIS
-Get ref of members from directoryRoles
+Users that are members of this directory role.
+HTTP Methods: GET, POST, DELETE.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -18,7 +21,10 @@ Get-MgDirectoryRoleMemberByRef -DirectoryRoleId <String> [-Filter <String>] [-Se
 ```
 
 ## DESCRIPTION
-Get ref of members from directoryRoles
+Users that are members of this directory role.
+HTTP Methods: GET, POST, DELETE.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -168,7 +174,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

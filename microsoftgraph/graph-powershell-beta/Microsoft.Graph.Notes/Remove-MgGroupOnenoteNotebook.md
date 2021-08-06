@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgGroupOnenoteNotebook
 
 ## SYNOPSIS
-Delete navigation property notebooks for groups
+The collection of OneNote notebooks that are owned by the user or group.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +27,9 @@ Remove-MgGroupOnenoteNotebook -InputObject <INotesIdentity> [-IfMatch <String>] 
 ```
 
 ## DESCRIPTION
-Delete navigation property notebooks for groups
+The collection of OneNote notebooks that are owned by the user or group.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -144,11 +148,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.INotesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

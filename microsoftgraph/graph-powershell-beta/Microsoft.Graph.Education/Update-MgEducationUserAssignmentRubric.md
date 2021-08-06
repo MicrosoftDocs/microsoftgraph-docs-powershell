@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgEducationUserAssignmentRubric
 
 ## SYNOPSIS
-Update the navigation property rubric in education
+When set, the grading rubric attached to this assignment.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Update-MgEducationUserAssignmentRubric -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property rubric in education
+When set, the grading rubric attached to this assignment.
 
 ## EXAMPLES
 
@@ -338,13 +338,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationRubric
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

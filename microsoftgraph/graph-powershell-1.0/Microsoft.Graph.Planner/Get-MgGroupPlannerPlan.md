@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgGroupPlannerPlan
 
 ## SYNOPSIS
-Get plans from groups
+Read-only.
+Nullable.
+Returns the plannerPlans owned by the group.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgGroupPlannerPlan -InputObject <IPlannerIdentity> [-ExpandProperty <String[
 ```
 
 ## DESCRIPTION
-Get plans from groups
+Read-only.
+Nullable.
+Returns the plannerPlans owned by the group.
 
 ## EXAMPLES
 
@@ -241,11 +245,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerPlan
-
 ## NOTES
 
 ALIASES

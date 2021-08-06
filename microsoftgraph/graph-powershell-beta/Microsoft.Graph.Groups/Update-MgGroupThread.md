@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgGroupThread
 
 ## SYNOPSIS
-Update the navigation property threads in groups
+The group's conversation threads.
+Nullable.
 
 ## SYNTAX
 
@@ -43,7 +44,8 @@ Update-MgGroupThread -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGr
 ```
 
 ## DESCRIPTION
-Update the navigation property threads in groups
+The group's conversation threads.
+Nullable.
 
 ## EXAMPLES
 
@@ -334,13 +336,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversationThread
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

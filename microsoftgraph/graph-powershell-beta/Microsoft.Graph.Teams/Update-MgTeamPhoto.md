@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgTeamPhoto
 
 ## SYNOPSIS
-Update the navigation property photo in teams
+The team photo.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Update-MgTeamPhoto -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraph
 ```
 
 ## DESCRIPTION
-Update the navigation property photo in teams
+The team photo.
 
 ## EXAMPLES
 
@@ -204,13 +204,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProfilePhoto
-
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

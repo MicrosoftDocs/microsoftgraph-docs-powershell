@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgOrganizationCertificateBasedAuthConfigurationByRef
 
 ## SYNOPSIS
-Create new navigation property ref to certificateBasedAuthConfiguration for organization
+Navigation property to manage  certificate-based authentication configuration.
+Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
 
 ## SYNTAX
 
@@ -37,7 +38,8 @@ New-MgOrganizationCertificateBasedAuthConfigurationByRef -InputObject <IIdentity
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to certificateBasedAuthConfiguration for organization
+Navigation property to manage  certificate-based authentication configuration.
+Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
 
 ## EXAMPLES
 
@@ -141,13 +143,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPathsWu1MmpOrganizationIdCertificatebasedauthconfigurationRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES
@@ -162,6 +161,7 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[AuthenticationContextClassReferenceId <String>]`: key: id of authenticationContextClassReference
   - `[AuthenticationMethodId <String>]`: key: id of authenticationMethod
   - `[AuthorizationPolicyId <String>]`: key: id of authorizationPolicy
+  - `[BitlockerRecoveryKeyId <String>]`: key: id of bitlockerRecoveryKey
   - `[ClaimsMappingPolicyId <String>]`: key: id of claimsMappingPolicy
   - `[ConditionalAccessPolicyId <String>]`: key: id of conditionalAccessPolicy
   - `[DataLossPreventionPolicyId <String>]`: key: id of dataLossPreventionPolicy
@@ -184,8 +184,6 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[PermissionGrantConditionSetId <String>]`: key: id of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: key: id of permissionGrantPolicy
   - `[PhoneAuthenticationMethodId <String>]`: key: id of phoneAuthenticationMethod
-  - `[PrivateEndpointConnectionId <String>]`: key: id of privateEndpointConnection
-  - `[PrivateLinkResourcePolicyId <String>]`: key: id of privateLinkResourcePolicy
   - `[RiskDetectionId <String>]`: key: id of riskDetection
   - `[RiskyUserHistoryItemId <String>]`: key: id of riskyUserHistoryItem
   - `[RiskyUserId <String>]`: key: id of riskyUser

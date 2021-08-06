@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgOrganizationSetting
 
 ## SYNOPSIS
-Delete navigation property settings for organization
+Retrieve the properties and relationships of organizationSettings object.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgOrganizationSetting -InputObject <IIdentityDirectoryManagementIdentity>
 ```
 
 ## DESCRIPTION
-Delete navigation property settings for organization
+Retrieve the properties and relationships of organizationSettings object.
+Nullable.
 
 ## EXAMPLES
 
@@ -129,11 +131,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

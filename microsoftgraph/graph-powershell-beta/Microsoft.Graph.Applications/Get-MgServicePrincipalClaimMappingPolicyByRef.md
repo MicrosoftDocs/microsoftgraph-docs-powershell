@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgServicePrincipalClaimMappingPolicyByRef
 
 ## SYNOPSIS
-Get ref of claimsMappingPolicies from servicePrincipals
+The claimsMappingPolicies assigned to this service principal.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgServicePrincipalClaimMappingPolicyByRef -ServicePrincipalId <String> [-Fil
 ```
 
 ## DESCRIPTION
-Get ref of claimsMappingPolicies from servicePrincipals
+The claimsMappingPolicies assigned to this service principal.
 
 ## EXAMPLES
 
@@ -169,7 +169,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

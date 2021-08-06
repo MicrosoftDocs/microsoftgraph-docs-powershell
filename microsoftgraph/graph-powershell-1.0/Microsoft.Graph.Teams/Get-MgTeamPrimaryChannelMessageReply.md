@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgTeamPrimaryChannelMessageReply
 
 ## SYNOPSIS
-Get replies from teams
+Replies for a specified message.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgTeamPrimaryChannelMessageReply -InputObject <ITeamsIdentity> [-ExpandPrope
 ```
 
 ## DESCRIPTION
-Get replies from teams
+Replies for a specified message.
 
 ## EXAMPLES
 
@@ -256,11 +256,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessage1
-
 ## NOTES
 
 ALIASES

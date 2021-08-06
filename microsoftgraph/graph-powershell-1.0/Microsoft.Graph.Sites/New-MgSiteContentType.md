@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSiteContentType
 
 ## SYNOPSIS
-Create new navigation property to contentTypes for sites
+The collection of content types defined for this site.
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ New-MgSiteContentType -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGr
 ```
 
 ## DESCRIPTION
-Create new navigation property to contentTypes for sites
+The collection of content types defined for this site.
 
 ## EXAMPLES
 
@@ -318,13 +318,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentType1
-
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentType1
-
 ## NOTES
 
 ALIASES

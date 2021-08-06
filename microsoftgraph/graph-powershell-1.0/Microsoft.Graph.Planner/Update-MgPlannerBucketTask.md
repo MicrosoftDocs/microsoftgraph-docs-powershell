@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgPlannerBucketTask
 
 ## SYNOPSIS
-Update the navigation property tasks in planner
+Read-only.
+Nullable.
+The collection of tasks in the bucket.
 
 ## SYNTAX
 
@@ -55,7 +57,9 @@ Update-MgPlannerBucketTask -InputObject <IPlannerIdentity> -BodyParameter <IMicr
 ```
 
 ## DESCRIPTION
-Update the navigation property tasks in planner
+Read-only.
+Nullable.
+The collection of tasks in the bucket.
 
 ## EXAMPLES
 
@@ -589,13 +593,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerTask
-
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

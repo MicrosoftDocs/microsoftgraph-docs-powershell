@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgSiteListContentType
 
 ## SYNOPSIS
-Update the navigation property contentTypes in sites
+The collection of content types present in this list.
 
 ## SYNTAX
 
@@ -51,7 +51,7 @@ Update-MgSiteListContentType -InputObject <ISitesIdentity> -BodyParameter <IMicr
 ```
 
 ## DESCRIPTION
-Update the navigation property contentTypes in sites
+The collection of content types present in this list.
 
 ## EXAMPLES
 
@@ -514,13 +514,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentType
-
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

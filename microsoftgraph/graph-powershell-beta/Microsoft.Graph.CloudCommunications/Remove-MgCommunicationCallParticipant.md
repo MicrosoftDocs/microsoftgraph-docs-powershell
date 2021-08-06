@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgCommunicationCallParticipant
 
 ## SYNOPSIS
-Delete navigation property participants for communications
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity
 ```
 
 ## DESCRIPTION
-Delete navigation property participants for communications
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -144,11 +146,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

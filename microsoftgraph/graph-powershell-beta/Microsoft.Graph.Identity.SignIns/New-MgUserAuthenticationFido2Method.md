@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -CreationDateTime
-The timestamp when this key was registered to the user.
+.
 
 ```yaml
 Type: DateTime
@@ -267,13 +267,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFido2AuthenticationMethod
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFido2AuthenticationMethod
-
 ## NOTES
 
 ALIASES
@@ -290,7 +287,7 @@ BODYPARAMETER <IMicrosoftGraphFido2AuthenticationMethod>: fido2AuthenticationMet
   - `[AttestationCertificates <String[]>]`: The attestation certificate(s) attached to this security key.
   - `[AttestationLevel <String>]`: attestationLevel
   - `[CreatedDateTime <DateTime?>]`: The timestamp when this key was registered to the user.
-  - `[CreationDateTime <DateTime?>]`: The timestamp when this key was registered to the user.
+  - `[CreationDateTime <DateTime?>]`: 
   - `[DisplayName <String>]`: The display name of the key as given by the user.
   - `[Model <String>]`: The manufacturer-assigned model of the FIDO2 security key.
 
@@ -299,6 +296,7 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[AuthenticationContextClassReferenceId <String>]`: key: id of authenticationContextClassReference
   - `[AuthenticationMethodId <String>]`: key: id of authenticationMethod
   - `[AuthorizationPolicyId <String>]`: key: id of authorizationPolicy
+  - `[BitlockerRecoveryKeyId <String>]`: key: id of bitlockerRecoveryKey
   - `[ClaimsMappingPolicyId <String>]`: key: id of claimsMappingPolicy
   - `[ConditionalAccessPolicyId <String>]`: key: id of conditionalAccessPolicy
   - `[DataLossPreventionPolicyId <String>]`: key: id of dataLossPreventionPolicy
@@ -321,8 +319,6 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[PermissionGrantConditionSetId <String>]`: key: id of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: key: id of permissionGrantPolicy
   - `[PhoneAuthenticationMethodId <String>]`: key: id of phoneAuthenticationMethod
-  - `[PrivateEndpointConnectionId <String>]`: key: id of privateEndpointConnection
-  - `[PrivateLinkResourcePolicyId <String>]`: key: id of privateLinkResourcePolicy
   - `[RiskDetectionId <String>]`: key: id of riskDetection
   - `[RiskyUserHistoryItemId <String>]`: key: id of riskyUserHistoryItem
   - `[RiskyUserId <String>]`: key: id of riskyUser

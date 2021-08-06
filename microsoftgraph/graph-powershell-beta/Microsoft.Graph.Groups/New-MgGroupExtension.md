@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgGroupExtension
 
 ## SYNOPSIS
-Create new navigation property to extensions for groups
+The collection of open extensions defined for the group.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -36,7 +38,9 @@ New-MgGroupExtension -InputObject <IGroupsIdentity> -BodyParameter <Hashtable> [
 ```
 
 ## DESCRIPTION
-Create new navigation property to extensions for groups
+The collection of open extensions defined for the group.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -155,13 +159,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

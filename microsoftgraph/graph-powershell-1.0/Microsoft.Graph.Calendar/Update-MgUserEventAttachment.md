@@ -8,7 +8,10 @@ schema: 2.0.0
 # Update-MgUserEventAttachment
 
 ## SYNOPSIS
-Update the navigation property attachments in users
+The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
+Navigation property.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -40,7 +43,10 @@ Update-MgUserEventAttachment -InputObject <ICalendarIdentity> -BodyParameter <IM
 ```
 
 ## DESCRIPTION
-Update the navigation property attachments in users
+The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
+Navigation property.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -282,13 +288,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachment
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgTeamInstalledAppTeamAppDefinitionByRef
 
 ## SYNOPSIS
-Get ref of teamsAppDefinition from teams
+The details of this version of the app.
 
 ## SYNTAX
 
@@ -24,7 +24,7 @@ Get-MgTeamInstalledAppTeamAppDefinitionByRef -InputObject <ITeamsIdentity> [<Com
 ```
 
 ## DESCRIPTION
-Get ref of teamsAppDefinition from teams
+The details of this version of the app.
 
 ## EXAMPLES
 
@@ -82,11 +82,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

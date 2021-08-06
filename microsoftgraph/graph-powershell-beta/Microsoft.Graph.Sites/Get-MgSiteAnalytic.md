@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteAnalytic
 
 ## SYNOPSIS
-Get analytics from sites
+Analytics about the view activities that took place in this site.
 
 ## SYNTAX
 
@@ -24,7 +24,7 @@ Get-MgSiteAnalytic -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-
 ```
 
 ## DESCRIPTION
-Get analytics from sites
+Analytics about the view activities that took place in this site.
 
 ## EXAMPLES
 
@@ -97,11 +97,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemAnalytics
-
 ## NOTES
 
 ALIASES

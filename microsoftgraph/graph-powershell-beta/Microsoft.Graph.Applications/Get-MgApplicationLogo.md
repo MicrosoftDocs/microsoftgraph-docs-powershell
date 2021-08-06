@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgApplicationLogo
 
 ## SYNOPSIS
-Get media content for application from applications
+The main logo for the application.
+Not nullable.
 
 ## SYNTAX
 
@@ -23,7 +24,8 @@ Get-MgApplicationLogo -InputObject <IApplicationsIdentity> -OutFile <String> [-P
 ```
 
 ## DESCRIPTION
-Get media content for application from applications
+The main logo for the application.
+Not nullable.
 
 ## EXAMPLES
 
@@ -96,11 +98,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

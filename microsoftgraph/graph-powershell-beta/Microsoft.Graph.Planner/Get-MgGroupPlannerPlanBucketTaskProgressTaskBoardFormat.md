@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgGroupPlannerPlanBucketTaskProgressTaskBoardFormat
 
 ## SYNOPSIS
-Get progressTaskBoardFormat from groups
+Read-only.
+Nullable.
+Used to render the task correctly in the task board view when grouped by progress.
 
 ## SYNTAX
 
@@ -26,7 +28,9 @@ Get-MgGroupPlannerPlanBucketTaskProgressTaskBoardFormat -InputObject <IPlannerId
 ```
 
 ## DESCRIPTION
-Get progressTaskBoardFormat from groups
+Read-only.
+Nullable.
+Used to render the task correctly in the task board view when grouped by progress.
 
 ## EXAMPLES
 
@@ -144,11 +148,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerProgressTaskBoardTaskFormat1
-
 ## NOTES
 
 ALIASES

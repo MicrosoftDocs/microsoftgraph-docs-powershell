@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserActivity
 
 ## SYNOPSIS
-Get activities from users
+The user's activities across devices.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgUserActivity -InputObject <ICrossDeviceExperiencesIdentity> [-ExpandProper
 ```
 
 ## DESCRIPTION
-Get activities from users
+The user's activities across devices.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -241,11 +245,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICrossDeviceExperiencesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserActivity
-
 ## NOTES
 
 ALIASES

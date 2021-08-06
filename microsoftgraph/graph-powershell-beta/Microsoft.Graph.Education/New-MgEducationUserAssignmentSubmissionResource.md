@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgEducationUserAssignmentSubmissionResource
 
 ## SYNOPSIS
-Create new navigation property to resources for education
+Nullable.
 
 ## SYNTAX
 
@@ -40,7 +40,7 @@ New-MgEducationUserAssignmentSubmissionResource -InputObject <IEducationIdentity
 ```
 
 ## DESCRIPTION
-Create new navigation property to resources for education
+Nullable.
 
 ## EXAMPLES
 
@@ -222,13 +222,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSubmissionResource
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSubmissionResource
-
 ## NOTES
 
 ALIASES

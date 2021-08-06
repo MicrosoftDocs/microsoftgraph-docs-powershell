@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgPrintPrinterTaskTriggerDefinition
 
 ## SYNOPSIS
-Get definition from print
+An abstract definition that will be used to create a printTask when triggered by a print event.
+Read-only.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Get-MgPrintPrinterTaskTriggerDefinition -InputObject <IDevicesCloudPrintIdentity
 ```
 
 ## DESCRIPTION
-Get definition from print
+An abstract definition that will be used to create a printTask when triggered by a print event.
+Read-only.
 
 ## EXAMPLES
 
@@ -113,11 +115,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintTaskDefinition
-
 ## NOTES
 
 ALIASES

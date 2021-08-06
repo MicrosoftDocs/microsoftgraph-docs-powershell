@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgComplianceEdiscoveryCaseCustodianUnifiedGroupSourceGroupByRef
 
 ## SYNOPSIS
-Delete ref of navigation property group for compliance
+The group associated with the unifiedGroupSource.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgComplianceEdiscoveryCaseCustodianUnifiedGroupSourceGroupByRef -InputObj
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property group for compliance
+The group associated with the unifiedGroupSource.
 
 ## EXAMPLES
 
@@ -159,11 +159,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

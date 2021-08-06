@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgUserMessageExtension
 
 ## SYNOPSIS
-Update the navigation property extensions in users
+The collection of open extensions defined for the message.
+Nullable.
 
 ## SYNTAX
 
@@ -37,7 +38,8 @@ Update-MgUserMessageExtension -InputObject <IMailIdentity> -BodyParameter <Hasht
 ```
 
 ## DESCRIPTION
-Update the navigation property extensions in users
+The collection of open extensions defined for the message.
+Nullable.
 
 ## EXAMPLES
 
@@ -201,13 +203,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMailIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

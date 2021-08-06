@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteListItemVersion
 
 ## SYNOPSIS
-Get versions from sites
+The list of previous versions of the list item.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgSiteListItemVersion -InputObject <ISitesIdentity> [-ExpandProperty <String
 ```
 
 ## DESCRIPTION
-Get versions from sites
+The list of previous versions of the list item.
 
 ## EXAMPLES
 
@@ -271,11 +271,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphListItemVersion
-
 ## NOTES
 
 ALIASES

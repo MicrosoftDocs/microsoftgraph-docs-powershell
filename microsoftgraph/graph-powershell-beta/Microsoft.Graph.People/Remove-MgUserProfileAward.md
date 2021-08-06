@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserProfileAward
 
 ## SYNOPSIS
-Delete navigation property awards for users
+Represents the details of awards or honors associated with a person.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgUserProfileAward -InputObject <IPeopleIdentity> [-IfMatch <String>] [-P
 ```
 
 ## DESCRIPTION
-Delete navigation property awards for users
+Represents the details of awards or honors associated with a person.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

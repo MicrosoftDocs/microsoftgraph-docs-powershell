@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementReportExportJob
 
 ## SYNOPSIS
-Get exportJobs from deviceManagement
+Entity representing a job to export a report
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceManagementReportExportJob -InputObject <IReportsIdentity> [-ExpandPr
 ```
 
 ## DESCRIPTION
-Get exportJobs from deviceManagement
+Entity representing a job to export a report
 
 ## EXAMPLES
 
@@ -226,11 +226,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IReportsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementExportJob
-
 ## NOTES
 
 ALIASES

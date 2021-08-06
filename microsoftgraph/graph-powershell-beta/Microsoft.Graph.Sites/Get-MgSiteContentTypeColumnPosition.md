@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteContentTypeColumnPosition
 
 ## SYNOPSIS
-Get columnPositions from sites
+Column order information in a content type.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgSiteContentTypeColumnPosition -ContentTypeId <String> [-SiteId <String>] [
 ```
 
 ## DESCRIPTION
-Get columnPositions from sites
+Column order information in a content type.
 
 ## EXAMPLES
 
@@ -214,7 +214,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnDefinition
-
 ## NOTES
 
 ALIASES

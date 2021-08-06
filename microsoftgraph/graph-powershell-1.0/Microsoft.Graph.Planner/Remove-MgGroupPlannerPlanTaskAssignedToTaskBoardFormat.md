@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgGroupPlannerPlanTaskAssignedToTaskBoardFormat
 
 ## SYNOPSIS
-Delete navigation property assignedToTaskBoardFormat for groups
+Read-only.
+Nullable.
+Used to render the task correctly in the task board view when grouped by assignedTo.
 
 ## SYNTAX
 
@@ -25,7 +27,9 @@ Remove-MgGroupPlannerPlanTaskAssignedToTaskBoardFormat -InputObject <IPlannerIde
 ```
 
 ## DESCRIPTION
-Delete navigation property assignedToTaskBoardFormat for groups
+Read-only.
+Nullable.
+Used to render the task correctly in the task board view when grouped by assignedTo.
 
 ## EXAMPLES
 
@@ -159,11 +163,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

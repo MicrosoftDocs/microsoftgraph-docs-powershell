@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSiteContentTypeColumnPositionByRef
 
 ## SYNOPSIS
-Create new navigation property ref to columnPositions for sites
+Column order information in a content type.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ New-MgSiteContentTypeColumnPositionByRef -InputObject <ISitesIdentity> -BodyPara
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to columnPositions for sites
+Column order information in a content type.
 
 ## EXAMPLES
 
@@ -156,13 +156,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1CktejiSitesSiteIdContenttypesContenttypeIdColumnpositionsRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

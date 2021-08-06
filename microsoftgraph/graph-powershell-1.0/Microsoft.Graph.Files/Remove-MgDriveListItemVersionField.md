@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDriveListItemVersionField
 
 ## SYNOPSIS
-Delete navigation property fields for drives
+A collection of the fields and values for this version of the list item.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgDriveListItemVersionField -InputObject <IFilesIdentity> [-IfMatch <Stri
 ```
 
 ## DESCRIPTION
-Delete navigation property fields for drives
+A collection of the fields and values for this version of the list item.
 
 ## EXAMPLES
 
@@ -159,11 +159,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

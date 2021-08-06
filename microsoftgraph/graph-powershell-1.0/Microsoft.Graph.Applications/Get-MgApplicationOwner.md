@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgApplicationOwner
 
 ## SYNOPSIS
-Get owners from applications
+Directory objects that are owners of the application.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -19,7 +21,9 @@ Get-MgApplicationOwner -ApplicationId <String> [-ExpandProperty <String[]>] [-Fi
 ```
 
 ## DESCRIPTION
-Get owners from applications
+Directory objects that are owners of the application.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -199,7 +203,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
-
 ## NOTES
 
 ALIASES

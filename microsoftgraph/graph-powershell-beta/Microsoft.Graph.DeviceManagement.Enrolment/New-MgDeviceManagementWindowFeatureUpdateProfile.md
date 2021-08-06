@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementWindowFeatureUpdateProfile
 
 ## SYNOPSIS
-Create new navigation property to windowsFeatureUpdateProfiles for deviceManagement
+A collection of windows feature update profiles
 
 ## SYNTAX
 
@@ -18,8 +18,8 @@ New-MgDeviceManagementWindowFeatureUpdateProfile [-AdditionalProperties <Hashtab
  [-Assignments <IMicrosoftGraphWindowsFeatureUpdateProfileAssignment[]>] [-CreatedDateTime <DateTime>]
  [-DeployableContentDisplayName <String>] [-Description <String>]
  [-DeviceUpdateStates <IMicrosoftGraphWindowsUpdateState[]>] [-DisplayName <String>]
- [-FeatureUpdateVersion <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-RoleScopeTagIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-EndOfSupportDate <DateTime>] [-FeatureUpdateVersion <String>] [-Id <String>]
+ [-LastModifiedDateTime <DateTime>] [-RoleScopeTagIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -29,7 +29,7 @@ New-MgDeviceManagementWindowFeatureUpdateProfile -BodyParameter <IMicrosoftGraph
 ```
 
 ## DESCRIPTION
-Create new navigation property to windowsFeatureUpdateProfiles for deviceManagement
+A collection of windows feature update profiles
 
 ## EXAMPLES
 
@@ -158,6 +158,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -EndOfSupportDate
+The last supported date for a feature update
+
+```yaml
+Type: DateTime
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -FeatureUpdateVersion
 The feature update version that will be deployed to the devices targeted by this profile.
 The version could be any supported version for example 1709, 1803 or 1809 and so on.
@@ -256,11 +271,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsFeatureUpdateProfile
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsFeatureUpdateProfile
-
 ## NOTES
 
 ALIASES
@@ -301,6 +314,7 @@ BODYPARAMETER <IMicrosoftGraphWindowsFeatureUpdateProfile>: Windows Feature Upda
     - `[UserId <String>]`: The id of the user.
     - `[UserPrincipalName <String>]`: User principal name.
   - `[DisplayName <String>]`: The display name of the profile.
+  - `[EndOfSupportDate <DateTime?>]`: The last supported date for a feature update
   - `[FeatureUpdateVersion <String>]`: The feature update version that will be deployed to the devices targeted by this profile. The version could be any supported version for example 1709, 1803 or 1809 and so on.
   - `[LastModifiedDateTime <DateTime?>]`: The date time that the profile was last modified.
   - `[RoleScopeTagIds <String[]>]`: List of Scope Tags for this Feature Update entity.

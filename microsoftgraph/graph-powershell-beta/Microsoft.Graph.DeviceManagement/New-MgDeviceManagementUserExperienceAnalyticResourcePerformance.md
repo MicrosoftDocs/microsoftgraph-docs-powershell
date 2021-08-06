@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementUserExperienceAnalyticResourcePerformance
 
 ## SYNOPSIS
-Create new navigation property to userExperienceAnalyticsResourcePerformance for deviceManagement
+User experience analytics resource performance
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ New-MgDeviceManagementUserExperienceAnalyticResourcePerformance
 ```
 
 ## DESCRIPTION
-Create new navigation property to userExperienceAnalyticsResourcePerformance for deviceManagement
+User experience analytics resource performance
 
 ## EXAMPLES
 
@@ -306,11 +306,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsResourcePerformance
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsResourcePerformance
-
 ## NOTES
 
 ALIASES

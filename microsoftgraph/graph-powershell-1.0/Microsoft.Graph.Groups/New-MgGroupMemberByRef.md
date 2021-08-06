@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgGroupMemberByRef
 
 ## SYNOPSIS
-Create new navigation property ref to membersWithLicenseErrors for groups
+A list of group members with license errors from this group-based license assignment.
+Read-only.
 
 ## SYNTAX
 
@@ -36,7 +37,8 @@ New-MgGroupMemberByRef -InputObject <IGroupsIdentity> -BodyParameter <Hashtable>
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to membersWithLicenseErrors for groups
+A list of group members with license errors from this group-based license assignment.
+Read-only.
 
 ## EXAMPLES
 
@@ -140,13 +142,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1Jqo6K2GroupsGroupIdMemberswithlicenseerrorsRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

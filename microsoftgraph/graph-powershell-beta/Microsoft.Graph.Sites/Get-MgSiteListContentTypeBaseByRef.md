@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteListContentTypeBaseByRef
 
 ## SYNOPSIS
-Get ref of base from sites
+Parent contentType from which this content type is derived.
 
 ## SYNTAX
 
@@ -24,7 +24,7 @@ Get-MgSiteListContentTypeBaseByRef -InputObject <ISitesIdentity> [<CommonParamet
 ```
 
 ## DESCRIPTION
-Get ref of base from sites
+Parent contentType from which this content type is derived.
 
 ## EXAMPLES
 
@@ -97,11 +97,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

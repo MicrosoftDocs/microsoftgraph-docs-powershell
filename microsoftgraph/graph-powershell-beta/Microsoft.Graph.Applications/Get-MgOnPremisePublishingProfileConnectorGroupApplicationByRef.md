@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgOnPremisePublishingProfileConnectorGroupApplicationByRef
 
 ## SYNOPSIS
-Get ref of applications from onPremisesPublishingProfiles
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -19,7 +20,8 @@ Get-MgOnPremisePublishingProfileConnectorGroupApplicationByRef -ConnectorGroupId
 ```
 
 ## DESCRIPTION
-Get ref of applications from onPremisesPublishingProfiles
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -184,7 +186,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

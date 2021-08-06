@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgUserCalendarGroup
 
 ## SYNOPSIS
-Create new navigation property to calendarGroups for users
+The user's calendar groups.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -39,7 +41,9 @@ New-MgUserCalendarGroup -InputObject <ICalendarIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Create new navigation property to calendarGroups for users
+The user's calendar groups.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -227,13 +231,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalendarGroup1
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalendarGroup1
-
 ## NOTES
 
 ALIASES

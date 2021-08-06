@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgEducationMeAssignmentSubmissionResource
 
 ## SYNOPSIS
-Update the navigation property resources in education
+Nullable.
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ Update-MgEducationMeAssignmentSubmissionResource -InputObject <IEducationIdentit
 ```
 
 ## DESCRIPTION
-Update the navigation property resources in education
+Nullable.
 
 ## EXAMPLES
 
@@ -240,13 +240,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSubmissionResource
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

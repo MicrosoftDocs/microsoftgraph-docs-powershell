@@ -8,7 +8,10 @@ schema: 2.0.0
 # Update-MgUserContactFolderContact
 
 ## SYNOPSIS
-Update the navigation property contacts in users
+The contacts in the folder.
+Navigation property.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -24,7 +27,7 @@ Update-MgUserContactFolderContact -ContactFolderId <String> -ContactId <String> 
  [-MiddleName <String>] [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]
  [-NickName <String>] [-OfficeLocation <String>] [-ParentFolderId <String>] [-PersonalNotes <String>]
  [-Phones <IMicrosoftGraphPhone[]>] [-Photo <IMicrosoftGraphProfilePhoto>]
- [-PostalAddresses <IMicrosoftGraphPhysicalAddress[]>] [-Profession <String>]
+ [-PostalAddresses <IMicrosoftGraphPhysicalAddress1[]>] [-Profession <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-SpouseName <String>]
  [-Surname <String>] [-Title <String>] [-Websites <IMicrosoftGraphWebsite[]>] [-WeddingAnniversary <DateTime>]
  [-YomiCompanyName <String>] [-YomiGivenName <String>] [-YomiSurname <String>] [-PassThru] [-WhatIf] [-Confirm]
@@ -34,7 +37,7 @@ Update-MgUserContactFolderContact -ContactFolderId <String> -ContactId <String> 
 ### Update
 ```
 Update-MgUserContactFolderContact -ContactFolderId <String> -ContactId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphContact> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphContact1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -49,7 +52,7 @@ Update-MgUserContactFolderContact -InputObject <IPersonalContactsIdentity> [-Add
  [-MiddleName <String>] [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]
  [-NickName <String>] [-OfficeLocation <String>] [-ParentFolderId <String>] [-PersonalNotes <String>]
  [-Phones <IMicrosoftGraphPhone[]>] [-Photo <IMicrosoftGraphProfilePhoto>]
- [-PostalAddresses <IMicrosoftGraphPhysicalAddress[]>] [-Profession <String>]
+ [-PostalAddresses <IMicrosoftGraphPhysicalAddress1[]>] [-Profession <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-SpouseName <String>]
  [-Surname <String>] [-Title <String>] [-Websites <IMicrosoftGraphWebsite[]>] [-WeddingAnniversary <DateTime>]
  [-YomiCompanyName <String>] [-YomiGivenName <String>] [-YomiSurname <String>] [-PassThru] [-WhatIf] [-Confirm]
@@ -59,11 +62,14 @@ Update-MgUserContactFolderContact -InputObject <IPersonalContactsIdentity> [-Add
 ### UpdateViaIdentity
 ```
 Update-MgUserContactFolderContact -InputObject <IPersonalContactsIdentity>
- -BodyParameter <IMicrosoftGraphContact> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphContact1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property contacts in users
+The contacts in the folder.
+Navigation property.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -121,7 +127,7 @@ contact
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphContact
+Type: IMicrosoftGraphContact1
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -650,7 +656,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for POSTALADDRESSES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPhysicalAddress[]
+Type: IMicrosoftGraphPhysicalAddress1[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -866,14 +872,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContact
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContact1
 ### Microsoft.Graph.PowerShell.Models.IPersonalContactsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -883,7 +886,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphContact>: contact
+BODYPARAMETER <IMicrosoftGraphContact1>: contact
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Categories <String[]>]`: The categories associated with the item
   - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
@@ -937,7 +940,7 @@ BODYPARAMETER <IMicrosoftGraphContact>: contact
     - `[Id <String>]`: Read-only.
     - `[Height <Int32?>]`: The height of the photo. Read-only.
     - `[Width <Int32?>]`: The width of the photo. Read-only.
-  - `[PostalAddresses <IMicrosoftGraphPhysicalAddress[]>]`: 
+  - `[PostalAddresses <IMicrosoftGraphPhysicalAddress1[]>]`: 
     - `[City <String>]`: The city.
     - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
     - `[PostOfficeBox <String>]`: The post office box number.
@@ -1003,7 +1006,7 @@ PHOTO <IMicrosoftGraphProfilePhoto>: profilePhoto
   - `[Height <Int32?>]`: The height of the photo. Read-only.
   - `[Width <Int32?>]`: The width of the photo. Read-only.
 
-POSTALADDRESSES <IMicrosoftGraphPhysicalAddress[]>: .
+POSTALADDRESSES <IMicrosoftGraphPhysicalAddress1[]>: .
   - `[City <String>]`: The city.
   - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
   - `[PostOfficeBox <String>]`: The post office box number.

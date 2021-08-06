@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgOrganizationSettingProfileCardProperty
 
 ## SYNOPSIS
-Update the navigation property profileCardProperties in organization
+Contains a collection of the properties an administrator has defined as visible on the Microsoft 365 profile card.
+Get organization settings returns the properties configured for profile cards for the organization.
 
 ## SYNTAX
 
@@ -39,7 +40,8 @@ Update-MgOrganizationSettingProfileCardProperty -InputObject <IIdentityDirectory
 ```
 
 ## DESCRIPTION
-Update the navigation property profileCardProperties in organization
+Contains a collection of the properties an administrator has defined as visible on the Microsoft 365 profile card.
+Get organization settings returns the properties configured for profile cards for the organization.
 
 ## EXAMPLES
 
@@ -223,13 +225,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProfileCardProperty
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgPrintPrinterTaskTrigger
 
 ## SYNOPSIS
-Update the navigation property taskTriggers in print
+A list of task triggers that are associated with the printer.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Update-MgPrintPrinterTaskTrigger -InputObject <IDevicesCloudPrintIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property taskTriggers in print
+A list of task triggers that are associated with the printer.
 
 ## EXAMPLES
 
@@ -220,13 +220,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintTaskTrigger
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

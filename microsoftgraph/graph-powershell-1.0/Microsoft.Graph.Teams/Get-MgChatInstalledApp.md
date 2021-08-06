@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgChatInstalledApp
 
 ## SYNOPSIS
-Get installedApps from chats
+A collection of all the apps in the chat.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgChatInstalledApp -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>
 ```
 
 ## DESCRIPTION
-Get installedApps from chats
+A collection of all the apps in the chat.
+Nullable.
 
 ## EXAMPLES
 
@@ -241,11 +243,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppInstallation1
-
 ## NOTES
 
 ALIASES

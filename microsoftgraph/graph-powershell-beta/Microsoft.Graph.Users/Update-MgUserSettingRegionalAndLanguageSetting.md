@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserSettingRegionalAndLanguageSetting
 
 ## SYNOPSIS
-Update the navigation property regionalAndLanguageSettings in users
+The user's preferences for languages, regional locale and date/time formatting.
 
 ## SYNTAX
 
@@ -50,7 +50,7 @@ Update-MgUserSettingRegionalAndLanguageSetting -InputObject <IUsersIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property regionalAndLanguageSettings in users
+The user's preferences for languages, regional locale and date/time formatting.
 
 ## EXAMPLES
 
@@ -298,13 +298,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRegionalAndLanguageSettings
-
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

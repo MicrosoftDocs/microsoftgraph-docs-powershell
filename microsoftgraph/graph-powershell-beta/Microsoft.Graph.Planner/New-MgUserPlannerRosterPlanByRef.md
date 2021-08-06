@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgUserPlannerRosterPlanByRef
 
 ## SYNOPSIS
-Create new navigation property ref to rosterPlans for users
+Read-only.
+Nullable.
+Returns the plannerPlans contained by the plannerRosters the user is a member.
 
 ## SYNTAX
 
@@ -37,7 +39,9 @@ New-MgUserPlannerRosterPlanByRef -InputObject <IPlannerIdentity> -BodyParameter 
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to rosterPlans for users
+Read-only.
+Nullable.
+Returns the plannerPlans contained by the plannerRosters the user is a member.
 
 ## EXAMPLES
 
@@ -141,13 +145,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPathsMboqquUsersUserIdPlannerRosterplansRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteContentTypeBaseType
 
 ## SYNOPSIS
-Get baseTypes from sites
+The collection of content types that are ancestors of this content type.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgSiteContentTypeBaseType -ContentTypeId <String> [-SiteId <String>] [-Expan
 ```
 
 ## DESCRIPTION
-Get baseTypes from sites
+The collection of content types that are ancestors of this content type.
 
 ## EXAMPLES
 
@@ -214,7 +214,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentType
-
 ## NOTES
 
 ALIASES

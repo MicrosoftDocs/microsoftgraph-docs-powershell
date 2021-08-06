@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementDerivedCredentials
 
 ## SYNOPSIS
-Create new navigation property to derivedCredentials for deviceManagement
+Collection of Derived credential settings associated with account.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ New-MgDeviceManagementDerivedCredentials
 ```
 
 ## DESCRIPTION
-Create new navigation property to derivedCredentials for deviceManagement
+Collection of Derived credential settings associated with account.
 
 ## EXAMPLES
 
@@ -176,11 +176,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementDerivedCredentialSettings
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementDerivedCredentialSettings
-
 ## NOTES
 
 ALIASES

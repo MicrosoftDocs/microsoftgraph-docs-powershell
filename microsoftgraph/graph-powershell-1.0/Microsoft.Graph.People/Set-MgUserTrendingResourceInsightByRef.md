@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgUserTrendingResourceInsightByRef
 
 ## SYNOPSIS
-Update the ref of navigation property resource in users
+Used for navigating to the trending document.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Set-MgUserTrendingResourceInsightByRef -InputObject <IPeopleIdentity> -BodyParam
 ```
 
 ## DESCRIPTION
-Update the ref of navigation property resource in users
+Used for navigating to the trending document.
 
 ## EXAMPLES
 
@@ -171,13 +171,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

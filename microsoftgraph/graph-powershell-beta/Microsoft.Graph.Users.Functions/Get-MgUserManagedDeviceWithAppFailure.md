@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserManagedDeviceWithAppFailure
 
 ## SYNOPSIS
-Invoke function getManagedDevicesWithAppFailures
+Retrieves the list of devices with failed apps
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Get-MgUserManagedDeviceWithAppFailure -InputObject <IUsersFunctionsIdentity> [<C
 ```
 
 ## DESCRIPTION
-Invoke function getManagedDevicesWithAppFailures
+Retrieves the list of devices with failed apps
 
 ## EXAMPLES
 
@@ -76,13 +76,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDeviceSummarizedAppState
-
 ### System.String
-
 ## NOTES
 
 ALIASES
@@ -93,6 +90,7 @@ To create the parameters described below, construct a hash table containing the 
 
 
 INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
+  - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AnotherRange <String>]`: Usage: anotherRange={anotherRange}
   - `[AppConsentRequestId <String>]`: key: id of appConsentRequest
   - `[CalendarId <String>]`: key: id of calendar

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementPartner
 
 ## SYNOPSIS
-Create new navigation property to deviceManagementPartners for deviceManagement
+The list of Device Management Partners configured by the tenant.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ New-MgDeviceManagementPartner -BodyParameter <IMicrosoftGraphDeviceManagementPar
 ```
 
 ## DESCRIPTION
-Create new navigation property to deviceManagementPartners for deviceManagement
+The list of Device Management Partners configured by the tenant.
 
 ## EXAMPLES
 
@@ -287,11 +287,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementPartner1
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementPartner1
-
 ## NOTES
 
 ALIASES

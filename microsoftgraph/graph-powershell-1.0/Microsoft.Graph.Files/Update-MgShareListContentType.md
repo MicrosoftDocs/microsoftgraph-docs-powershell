@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgShareListContentType
 
 ## SYNOPSIS
-Update the navigation property contentTypes in shares
+The collection of content types present in this list.
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ Update-MgShareListContentType -InputObject <IFilesIdentity> -BodyParameter <IMic
 ```
 
 ## DESCRIPTION
-Update the navigation property contentTypes in shares
+The collection of content types present in this list.
 
 ## EXAMPLES
 
@@ -348,13 +348,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentType1
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgPlannerRoster
 
 ## SYNOPSIS
-Create new navigation property to rosters for planner
+Read-only.
+Nullable.
+Returns a collection of the specified rosters
 
 ## SYNTAX
 
@@ -25,7 +27,9 @@ New-MgPlannerRoster -BodyParameter <IMicrosoftGraphPlannerRoster> [-WhatIf] [-Co
 ```
 
 ## DESCRIPTION
-Create new navigation property to rosters for planner
+Read-only.
+Nullable.
+Returns a collection of the specified rosters
 
 ## EXAMPLES
 
@@ -146,11 +150,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerRoster
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerRoster
-
 ## NOTES
 
 ALIASES
@@ -411,8 +413,5 @@ PLANS <IMicrosoftGraphPlannerPlan1[]>: Retrieves the plans contained by the plan
   - `[Title <String>]`: Required. Title of the plan.
 
 ## RELATED LINKS
-
-## RELATED LINKS
-
 
 ## RELATED LINKS

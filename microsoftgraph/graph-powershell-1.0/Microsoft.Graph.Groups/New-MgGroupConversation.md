@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgGroupConversation
 
 ## SYNOPSIS
-Create new navigation property to conversations for groups
+The group's conversations.
 
 ## SYNTAX
 
@@ -40,7 +40,7 @@ New-MgGroupConversation -InputObject <IGroupsIdentity> -BodyParameter <IMicrosof
 ```
 
 ## DESCRIPTION
-Create new navigation property to conversations for groups
+The group's conversations.
 
 ## EXAMPLES
 
@@ -256,13 +256,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversation1
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversation1
-
 ## NOTES
 
 ALIASES

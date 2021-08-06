@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgServicePrincipalEndpoint
 
 ## SYNOPSIS
-Update the navigation property endpoints in servicePrincipals
+Endpoints available for discovery.
+Services like Sharepoint populate this property with a tenant specific SharePoint endpoints that other applications can discover and use in their experiences.
 
 ## SYNTAX
 
@@ -41,7 +42,8 @@ Update-MgServicePrincipalEndpoint -InputObject <IApplicationsIdentity> -BodyPara
 ```
 
 ## DESCRIPTION
-Update the navigation property endpoints in servicePrincipals
+Endpoints available for discovery.
+Services like Sharepoint populate this property with a tenant specific SharePoint endpoints that other applications can discover and use in their experiences.
 
 ## EXAMPLES
 
@@ -293,13 +295,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEndpoint
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

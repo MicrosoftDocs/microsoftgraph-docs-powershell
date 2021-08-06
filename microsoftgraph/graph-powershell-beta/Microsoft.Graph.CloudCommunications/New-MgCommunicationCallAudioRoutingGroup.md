@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgCommunicationCallAudioRoutingGroup
 
 ## SYNOPSIS
-Create new navigation property to audioRoutingGroups for communications
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -39,7 +40,8 @@ New-MgCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicationsIdent
 ```
 
 ## DESCRIPTION
-Create new navigation property to audioRoutingGroups for communications
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -204,13 +206,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAudioRoutingGroup
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAudioRoutingGroup
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgAdministrativeUnit
 
 ## SYNOPSIS
-Delete entity from administrativeUnits
+Represents an Azure Active Directory object.
+The directoryObject type is the base type for many other directory entity types.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgAdministrativeUnit -InputObject <IIdentityDirectoryManagementIdentity> 
 ```
 
 ## DESCRIPTION
-Delete entity from administrativeUnits
+Represents an Azure Active Directory object.
+The directoryObject type is the base type for many other directory entity types.
 
 ## EXAMPLES
 
@@ -129,11 +131,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

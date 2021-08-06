@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgUserOutlookTaskAttachment
 
 ## SYNOPSIS
-Create new navigation property to attachments for users
+The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the task.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -39,7 +41,9 @@ New-MgUserOutlookTaskAttachment -InputObject <IUsersIdentity> -BodyParameter <IM
 ```
 
 ## DESCRIPTION
-Create new navigation property to attachments for users
+The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the task.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -251,13 +255,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachment
-
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachment
-
 ## NOTES
 
 ALIASES

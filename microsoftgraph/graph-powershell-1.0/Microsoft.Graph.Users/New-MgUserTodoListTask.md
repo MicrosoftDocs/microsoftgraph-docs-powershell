@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgUserTodoListTask
 
 ## SYNOPSIS
-Create new navigation property to tasks for users
+The tasks in this task list.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -49,7 +51,9 @@ New-MgUserTodoListTask -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftG
 ```
 
 ## DESCRIPTION
-Create new navigation property to tasks for users
+The tasks in this task list.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -414,13 +418,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTodoTask
-
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTodoTask
-
 ## NOTES
 
 ALIASES

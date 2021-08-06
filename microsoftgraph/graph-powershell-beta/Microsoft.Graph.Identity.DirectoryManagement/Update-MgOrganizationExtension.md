@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgOrganizationExtension
 
 ## SYNOPSIS
-Update the navigation property extensions in organization
+The collection of open extensions defined for the organization resource.
+Nullable.
 
 ## SYNTAX
 
@@ -37,7 +38,8 @@ Update-MgOrganizationExtension -InputObject <IIdentityDirectoryManagementIdentit
 ```
 
 ## DESCRIPTION
-Update the navigation property extensions in organization
+The collection of open extensions defined for the organization resource.
+Nullable.
 
 ## EXAMPLES
 
@@ -186,13 +188,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

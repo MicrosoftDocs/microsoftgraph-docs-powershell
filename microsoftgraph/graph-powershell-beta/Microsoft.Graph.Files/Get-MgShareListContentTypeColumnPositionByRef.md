@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgShareListContentTypeColumnPositionByRef
 
 ## SYNOPSIS
-Get ref of columnPositions from shares
+Column order information in a content type.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgShareListContentTypeColumnPositionByRef -ContentTypeId <String> -SharedDri
 ```
 
 ## DESCRIPTION
-Get ref of columnPositions from shares
+Column order information in a content type.
 
 ## EXAMPLES
 
@@ -184,7 +184,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

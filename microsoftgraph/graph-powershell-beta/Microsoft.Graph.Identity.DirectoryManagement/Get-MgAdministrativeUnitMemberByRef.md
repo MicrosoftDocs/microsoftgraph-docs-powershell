@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgAdministrativeUnitMemberByRef
 
 ## SYNOPSIS
-Get ref of members from administrativeUnits
+Users and groups that are members of this Adminsitrative Unit.
+HTTP Methods: GET (list members), POST (add members), DELETE (remove members).
 
 ## SYNTAX
 
@@ -19,7 +20,8 @@ Get-MgAdministrativeUnitMemberByRef -AdministrativeUnitId <String> [-Filter <Str
 ```
 
 ## DESCRIPTION
-Get ref of members from administrativeUnits
+Users and groups that are members of this Adminsitrative Unit.
+HTTP Methods: GET (list members), POST (add members), DELETE (remove members).
 
 ## EXAMPLES
 
@@ -169,7 +171,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

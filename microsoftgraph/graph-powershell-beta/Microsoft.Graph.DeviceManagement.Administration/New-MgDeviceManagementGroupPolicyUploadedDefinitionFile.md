@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementGroupPolicyUploadedDefinitionFile
 
 ## SYNOPSIS
-Create new navigation property to groupPolicyUploadedDefinitionFiles for deviceManagement
+The available group policy uploaded definition files for this account.
 
 ## SYNTAX
 
@@ -31,7 +31,7 @@ New-MgDeviceManagementGroupPolicyUploadedDefinitionFile
 ```
 
 ## DESCRIPTION
-Create new navigation property to groupPolicyUploadedDefinitionFiles for deviceManagement
+The available group policy uploaded definition files for this account.
 
 ## EXAMPLES
 
@@ -366,11 +366,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyUploadedDefinitionFile
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyUploadedDefinitionFile
-
 ## NOTES
 
 ALIASES

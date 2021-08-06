@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserOutlookMasterCategory
 
 ## SYNOPSIS
-Create new navigation property to masterCategories for users
+A list of categories defined for the user.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ New-MgUserOutlookMasterCategory -InputObject <IUsersIdentity> -BodyParameter <IM
 ```
 
 ## DESCRIPTION
-Create new navigation property to masterCategories for users
+A list of categories defined for the user.
 
 ## EXAMPLES
 
@@ -189,13 +189,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOutlookCategory
-
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOutlookCategory
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDriveListContentTypeColumnLink
 
 ## SYNOPSIS
-Get columnLinks from drives
+The collection of columns that are required by this content type
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDriveListContentTypeColumnLink -InputObject <IFilesIdentity> [-ExpandPrope
 ```
 
 ## DESCRIPTION
-Get columnLinks from drives
+The collection of columns that are required by this content type
 
 ## EXAMPLES
 
@@ -256,11 +256,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnLink
-
 ## NOTES
 
 ALIASES

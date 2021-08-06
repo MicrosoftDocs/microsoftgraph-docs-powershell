@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgRoleManagementDeviceManagementRoleAssignmentDirectoryScope
 
 ## SYNOPSIS
-Get directoryScopes from roleManagement
+Read-only collection referencing the directory objects that are scope of the assignment.
+Provided so that callers can get the directory objects using $expand at the same time as getting the role assignment.
+Read-only.
+Supports $expand.
 
 ## SYNTAX
 
@@ -19,7 +22,10 @@ Get-MgRoleManagementDeviceManagementRoleAssignmentDirectoryScope -UnifiedRoleAss
 ```
 
 ## DESCRIPTION
-Get directoryScopes from roleManagement
+Read-only collection referencing the directory objects that are scope of the assignment.
+Provided so that callers can get the directory objects using $expand at the same time as getting the role assignment.
+Read-only.
+Supports $expand.
 
 ## EXAMPLES
 
@@ -199,7 +205,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
-
 ## NOTES
 
 ALIASES

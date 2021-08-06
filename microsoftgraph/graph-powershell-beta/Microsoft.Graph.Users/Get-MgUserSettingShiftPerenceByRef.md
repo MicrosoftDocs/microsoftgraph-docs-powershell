@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserSettingShiftPerenceByRef
 
 ## SYNOPSIS
-Get shiftPreferences from users
+The shift preferences for the user.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgUserSettingShiftPerenceByRef -InputObject <IUsersIdentity> [-ExpandPropert
 ```
 
 ## DESCRIPTION
-Get shiftPreferences from users
+The shift preferences for the user.
 
 ## EXAMPLES
 
@@ -98,11 +98,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphShiftPreferences
-
 ## NOTES
 
 ALIASES

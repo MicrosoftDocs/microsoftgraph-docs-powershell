@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBookingBusiness
 
 ## SYNOPSIS
-Update entity in bookingBusinesses
+Represents a Microsot Bookings Business.
 
 ## SYNTAX
 
@@ -49,7 +49,7 @@ Update-MgBookingBusiness -InputObject <IBookingsIdentity> -BodyParameter <IMicro
 ```
 
 ## DESCRIPTION
-Update entity in bookingBusinesses
+Represents a Microsot Bookings Business.
 
 ## EXAMPLES
 
@@ -447,13 +447,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IBookingsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingBusiness
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

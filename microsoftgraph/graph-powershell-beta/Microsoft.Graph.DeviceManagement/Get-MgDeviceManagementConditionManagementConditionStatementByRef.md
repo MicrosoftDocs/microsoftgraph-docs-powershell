@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementConditionManagementConditionStatementByRef
 
 ## SYNOPSIS
-Get ref of managementConditionStatements from deviceManagement
+The management condition statements associated to the management condition.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgDeviceManagementConditionManagementConditionStatementByRef -ManagementCond
 ```
 
 ## DESCRIPTION
-Get ref of managementConditionStatements from deviceManagement
+The management condition statements associated to the management condition.
 
 ## EXAMPLES
 
@@ -169,7 +169,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

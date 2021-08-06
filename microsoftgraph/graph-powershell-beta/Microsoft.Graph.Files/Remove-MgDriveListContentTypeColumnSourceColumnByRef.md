@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDriveListContentTypeColumnSourceColumnByRef
 
 ## SYNOPSIS
-Delete ref of navigation property sourceColumn for drives
+The source column for content type column.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgDriveListContentTypeColumnSourceColumnByRef -InputObject <IFilesIdentit
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property sourceColumn for drives
+The source column for content type column.
 
 ## EXAMPLES
 
@@ -159,11 +159,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

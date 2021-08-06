@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgComplianceEdiscoveryCaseLegalHoldSiteSourceSite
 
 ## SYNOPSIS
-Get site from compliance
+The SharePoint site associated with the siteSource.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgComplianceEdiscoveryCaseLegalHoldSiteSourceSite -InputObject <IComplianceI
 ```
 
 ## DESCRIPTION
-Get site from compliance
+The SharePoint site associated with the siteSource.
 
 ## EXAMPLES
 
@@ -128,11 +128,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSite
-
 ## NOTES
 
 ALIASES

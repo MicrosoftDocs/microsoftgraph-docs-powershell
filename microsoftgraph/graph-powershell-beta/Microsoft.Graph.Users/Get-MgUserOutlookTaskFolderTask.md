@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserOutlookTaskFolderTask
 
 ## SYNOPSIS
-Get tasks from users
+The tasks in this task folder.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgUserOutlookTaskFolderTask -InputObject <IUsersIdentity> [-ExpandProperty <
 ```
 
 ## DESCRIPTION
-Get tasks from users
+The tasks in this task folder.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -256,11 +260,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOutlookTask
-
 ## NOTES
 
 ALIASES

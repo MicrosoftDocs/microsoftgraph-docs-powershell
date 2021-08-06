@@ -8,11 +8,13 @@ schema: 2.0.0
 # Get-MgEducationClassAssignmentCategory
 
 ## SYNOPSIS
-Get categories from education
+When set, enables users to easily find assignments of a given type.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
-### List1 (Default)
+### List3 (Default)
 ```
 Get-MgEducationClassAssignmentCategory -EducationClassId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
@@ -32,13 +34,13 @@ Get-MgEducationClassAssignmentCategory -EducationAssignmentId <String> -Educatio
  -EducationClassId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### Get1
+### Get3
 ```
 Get-MgEducationClassAssignmentCategory -EducationCategoryId <String> -EducationClassId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity3
 ```
 Get-MgEducationClassAssignmentCategory -InputObject <IEducationIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
@@ -51,7 +53,9 @@ Get-MgEducationClassAssignmentCategory -InputObject <IEducationIdentity> [-Expan
 ```
 
 ## DESCRIPTION
-Get categories from education
+When set, enables users to easily find assignments of a given type.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -62,7 +66,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List1, List
+Parameter Sets: List3, List
 Aliases:
 
 Required: False
@@ -78,7 +82,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List1, List
+Parameter Sets: List3, List
 Aliases: CV
 
 Required: False
@@ -108,7 +112,7 @@ key: id of educationCategory
 
 ```yaml
 Type: String
-Parameter Sets: Get, Get1
+Parameter Sets: Get, Get3
 Aliases:
 
 Required: True
@@ -123,7 +127,7 @@ key: id of educationClass
 
 ```yaml
 Type: String
-Parameter Sets: List1, List, Get, Get1
+Parameter Sets: List3, List, Get, Get3
 Aliases:
 
 Required: True
@@ -153,7 +157,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List1, List
+Parameter Sets: List3, List
 Aliases:
 
 Required: False
@@ -169,7 +173,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IEducationIdentity
-Parameter Sets: GetViaIdentity1, GetViaIdentity
+Parameter Sets: GetViaIdentity3, GetViaIdentity
 Aliases:
 
 Required: True
@@ -184,7 +188,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List1, List
+Parameter Sets: List3, List
 Aliases:
 
 Required: False
@@ -214,7 +218,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List1, List
+Parameter Sets: List3, List
 Aliases:
 
 Required: False
@@ -229,7 +233,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List1, List
+Parameter Sets: List3, List
 Aliases: OrderBy
 
 Required: False
@@ -244,7 +248,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1, List
+Parameter Sets: List3, List
 Aliases: Limit
 
 Required: False
@@ -259,7 +263,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1, List
+Parameter Sets: List3, List
 Aliases:
 
 Required: False
@@ -275,11 +279,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationCategory
-
 ## NOTES
 
 ALIASES

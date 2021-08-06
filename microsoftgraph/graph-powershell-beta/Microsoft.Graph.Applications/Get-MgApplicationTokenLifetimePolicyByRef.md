@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgApplicationTokenLifetimePolicyByRef
 
 ## SYNOPSIS
-Get ref of tokenLifetimePolicies from applications
+The tokenLifetimePolicies assigned to this application.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgApplicationTokenLifetimePolicyByRef -ApplicationId <String> [-Filter <Stri
 ```
 
 ## DESCRIPTION
-Get ref of tokenLifetimePolicies from applications
+The tokenLifetimePolicies assigned to this application.
 
 ## EXAMPLES
 
@@ -169,7 +169,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

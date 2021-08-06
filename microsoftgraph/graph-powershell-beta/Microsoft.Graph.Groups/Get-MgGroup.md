@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgGroup
 
 ## SYNOPSIS
-Get entity from groups by key
+Represents an Azure Active Directory object.
+The directoryObject type is the base type for many other directory entity types.
 
 ## SYNTAX
 
@@ -32,9 +33,41 @@ Get-MgGroup -InputObject <IGroupsIdentity> [-ExpandProperty <String[]>] [-Proper
 ```
 
 ## DESCRIPTION
-Get entity from groups by key
+Represents an Azure Active Directory object.
+The directoryObject type is the base type for many other directory entity types.
 
 ## EXAMPLES
+
+### Example 1: Get a list of groups
+```powershell
+Get-MgGroup | 
+  Format-List Id, DisplayName, Description, GroupTypes
+
+Id          : 0a1c8435-40a3-4a72-8586-e916c12b613a
+DisplayName : Marketing
+Description : A group to synthesize, analyze, and synchronize our marketing efforts.
+GroupTypes  : {Unified}
+
+Id          : a8fbb1b5-b994-4835-9183-c7421d149132
+DisplayName : Business Development
+Description : Welcome to the BizDev team.
+GroupTypes  : {Unified}
+```
+
+This examples retrieves a list of groups.
+
+### Example 2: Get a group by the display name
+```powershell
+Get-MgGroup -Filter "DisplayName eq 'Business Development'" | 
+  Format-List Id, DisplayName, Description, GroupTypes
+
+Id          : a8fbb1b5-b994-4835-9183-c7421d149132
+DisplayName : Business Development
+Description : Welcome to the BizDev team.
+GroupTypes  : {Unified}
+```
+
+This example gets a group by the specified display name.
 
 ## PARAMETERS
 
@@ -55,6 +88,7 @@ Accept wildcard characters: False
 
 ### -ConsistencyLevel
 Indicates the requested consistency level.
+Documentation URL: https://developer.microsoft.com/en-us/office/blogs/microsoft-graph-advanced-queries-for-directory-objects-are-now-generally-available/
 
 ```yaml
 Type: String
@@ -241,11 +275,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroup
-
 ## NOTES
 
 ALIASES

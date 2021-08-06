@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserProfileAnniversary
 
 ## SYNOPSIS
-Create new navigation property to anniversaries for users
+Represents the details of meaningful dates associated with a person.
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ New-MgUserProfileAnniversary -InputObject <IPeopleIdentity> -BodyParameter <IMic
 ```
 
 ## DESCRIPTION
-Create new navigation property to anniversaries for users
+Represents the details of meaningful dates associated with a person.
 
 ## EXAMPLES
 
@@ -332,13 +332,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPersonAnnualEvent
-
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPersonAnnualEvent
-
 ## NOTES
 
 ALIASES

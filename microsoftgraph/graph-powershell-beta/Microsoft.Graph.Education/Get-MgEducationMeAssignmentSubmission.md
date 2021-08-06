@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgEducationMeAssignmentSubmission
 
 ## SYNOPSIS
-Get submissions from education
+Once published, there is a submission object for each student representing their work and grade.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgEducationMeAssignmentSubmission -InputObject <IEducationIdentity> [-Expand
 ```
 
 ## DESCRIPTION
-Get submissions from education
+Once published, there is a submission object for each student representing their work and grade.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -241,11 +245,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSubmission
-
 ## NOTES
 
 ALIASES

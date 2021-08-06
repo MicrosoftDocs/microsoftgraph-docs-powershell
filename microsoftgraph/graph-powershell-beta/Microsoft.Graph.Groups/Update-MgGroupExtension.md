@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgGroupExtension
 
 ## SYNOPSIS
-Update the navigation property extensions in groups
+The collection of open extensions defined for the group.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -37,7 +39,9 @@ Update-MgGroupExtension -InputObject <IGroupsIdentity> -BodyParameter <Hashtable
 ```
 
 ## DESCRIPTION
-Update the navigation property extensions in groups
+The collection of open extensions defined for the group.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -186,13 +190,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

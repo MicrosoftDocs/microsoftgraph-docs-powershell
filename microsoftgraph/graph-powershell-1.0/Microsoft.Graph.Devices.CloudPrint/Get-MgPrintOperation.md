@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPrintOperation
 
 ## SYNOPSIS
-Get operations from print
+The list of print long running operations.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgPrintOperation -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-Get operations from print
+The list of print long running operations.
 
 ## EXAMPLES
 
@@ -226,11 +226,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintOperation
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgUserOutlookTaskFolderTask
 
 ## SYNOPSIS
-Delete navigation property tasks for users
+The tasks in this task folder.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +27,9 @@ Remove-MgUserOutlookTaskFolderTask -InputObject <IUsersIdentity> [-IfMatch <Stri
 ```
 
 ## DESCRIPTION
-Delete navigation property tasks for users
+The tasks in this task folder.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -159,11 +163,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

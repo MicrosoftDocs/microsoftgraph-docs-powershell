@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserCalendarPermission
 
 ## SYNOPSIS
-Get calendarPermissions from users
+The permissions of the users with whom the calendar is shared.
 
 ## SYNTAX
 
@@ -51,7 +51,7 @@ Get-MgUserCalendarPermission -InputObject <ICalendarIdentity> [-ExpandProperty <
 ```
 
 ## DESCRIPTION
-Get calendarPermissions from users
+The permissions of the users with whom the calendar is shared.
 
 ## EXAMPLES
 
@@ -275,11 +275,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalendarPermission
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementAndroidForWorkSetting
 
 ## SYNOPSIS
-Get androidForWorkSettings from deviceManagement
+The singleton Android for Work settings entity.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-MgDeviceManagementAndroidForWorkSetting [-ExpandProperty <String[]>] [-Prope
 ```
 
 ## DESCRIPTION
-Get androidForWorkSettings from deviceManagement
+The singleton Android for Work settings entity.
 
 ## EXAMPLES
 
@@ -62,7 +62,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAndroidForWorkSettings
-
 ## NOTES
 
 ALIASES

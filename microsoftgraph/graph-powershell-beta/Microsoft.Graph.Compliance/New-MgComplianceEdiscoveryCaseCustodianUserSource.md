@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgComplianceEdiscoveryCaseCustodianUserSource
 
 ## SYNOPSIS
-Create new navigation property to userSources for compliance
+Data source entity for a the custodian.
+This is the container for a custodian's mailbox and OneDrive for Business site.
 
 ## SYNTAX
 
@@ -41,7 +42,8 @@ New-MgComplianceEdiscoveryCaseCustodianUserSource -InputObject <IComplianceIdent
 ```
 
 ## DESCRIPTION
-Create new navigation property to userSources for compliance
+Data source entity for a the custodian.
+This is the container for a custodian's mailbox and OneDrive for Business site.
 
 ## EXAMPLES
 
@@ -253,13 +255,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryUserSource
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryUserSource
-
 ## NOTES
 
 ALIASES

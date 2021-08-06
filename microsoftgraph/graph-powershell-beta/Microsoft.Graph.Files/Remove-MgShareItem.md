@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgShareItem
 
 ## SYNOPSIS
-Delete navigation property items for shares
+All driveItems contained in the sharing root.
+This collection cannot be enumerated.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgShareItem -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassThru]
 ```
 
 ## DESCRIPTION
-Delete navigation property items for shares
+All driveItems contained in the sharing root.
+This collection cannot be enumerated.
 
 ## EXAMPLES
 
@@ -144,11 +146,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

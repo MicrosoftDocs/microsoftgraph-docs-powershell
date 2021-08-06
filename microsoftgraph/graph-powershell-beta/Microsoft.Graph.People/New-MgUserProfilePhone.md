@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserProfilePhone
 
 ## SYNOPSIS
-Create new navigation property to phones for users
+Represents detailed information about phone numbers associated with a user in various services.
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ New-MgUserProfilePhone -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoft
 ```
 
 ## DESCRIPTION
-Create new navigation property to phones for users
+Represents detailed information about phone numbers associated with a user in various services.
 
 ## EXAMPLES
 
@@ -332,13 +332,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemPhone
-
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemPhone
-
 ## NOTES
 
 ALIASES

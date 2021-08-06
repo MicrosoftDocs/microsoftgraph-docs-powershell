@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserProfileProject
 
 ## SYNOPSIS
-Update the navigation property projects in users
+Represents detailed information about projects associated with a user.
 
 ## SYNTAX
 
@@ -51,7 +51,7 @@ Update-MgUserProfileProject -InputObject <IPeopleIdentity> -BodyParameter <IMicr
 ```
 
 ## DESCRIPTION
-Update the navigation property projects in users
+Represents detailed information about projects associated with a user.
 
 ## EXAMPLES
 
@@ -450,13 +450,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProjectParticipation
-
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

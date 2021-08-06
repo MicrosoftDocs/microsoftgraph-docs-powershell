@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgGroupOnenoteSectionGroupSection
 
 ## SYNOPSIS
-Get sections from groups
+The sections in the section group.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -19,7 +21,9 @@ Get-MgGroupOnenoteSectionGroupSection -GroupId <String> -SectionGroupId <String>
 ```
 
 ## DESCRIPTION
-Get sections from groups
+The sections in the section group.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -214,7 +218,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnenoteSection1
-
 ## NOTES
 
 ALIASES

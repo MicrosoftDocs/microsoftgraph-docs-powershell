@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgTeamScheduleTimeOff
 
 ## SYNOPSIS
-Update the navigation property timesOff in teams
+The instances of times off in the schedule.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Update-MgTeamScheduleTimeOff -InputObject <ITeamsIdentity> -BodyParameter <IMicr
 ```
 
 ## DESCRIPTION
-Update the navigation property timesOff in teams
+The instances of times off in the schedule.
 
 ## EXAMPLES
 
@@ -322,13 +322,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTimeOff
-
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

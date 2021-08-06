@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgApplicationOwnerByRef
 
 ## SYNOPSIS
-Create new navigation property ref to owners for applications
+Directory objects that are owners of the application.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -37,7 +39,9 @@ New-MgApplicationOwnerByRef -InputObject <IApplicationsIdentity> -BodyParameter 
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to owners for applications
+Directory objects that are owners of the application.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -141,13 +145,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1WycvbaApplicationsApplicationIdOwnersRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

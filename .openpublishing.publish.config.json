@@ -32,7 +32,7 @@
   "sync_notification_subscribers": [],
   "branches_to_filter": [],
   "skip_source_output_uploading": false,
-  "need_preview_pull_request": false,
+  "need_preview_pull_request": true,
   "enable_incremental_build": false,
   "contribution_branch_mappings": {},
   "dependent_repositories": [

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgPrintOperation
 
 ## SYNOPSIS
-Create new navigation property to operations for print
+The list of print long running operations.
 
 ## SYNTAX
 
@@ -24,7 +24,7 @@ New-MgPrintOperation -BodyParameter <IMicrosoftGraphPrintOperation> [-WhatIf] [-
 ```
 
 ## DESCRIPTION
-Create new navigation property to operations for print
+The list of print long running operations.
 
 ## EXAMPLES
 
@@ -145,11 +145,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintOperation
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintOperation
-
 ## NOTES
 
 ALIASES

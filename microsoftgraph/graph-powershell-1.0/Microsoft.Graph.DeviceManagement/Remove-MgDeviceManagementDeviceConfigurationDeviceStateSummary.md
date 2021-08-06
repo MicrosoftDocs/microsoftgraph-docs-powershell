@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementDeviceConfigurationDeviceStateSummary
 
 ## SYNOPSIS
-Delete navigation property deviceConfigurationDeviceStateSummaries for deviceManagement
+The device configuration device state summary for this account.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Remove-MgDeviceManagementDeviceConfigurationDeviceStateSummary [-IfMatch <String
 ```
 
 ## DESCRIPTION
-Delete navigation property deviceConfigurationDeviceStateSummaries for deviceManagement
+The device configuration device state summary for this account.
 
 ## EXAMPLES
 
@@ -93,7 +93,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

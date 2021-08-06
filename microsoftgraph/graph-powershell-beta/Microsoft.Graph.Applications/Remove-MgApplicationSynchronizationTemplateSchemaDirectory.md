@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgApplicationSynchronizationTemplateSchemaDirectory
 
 ## SYNOPSIS
-Delete navigation property directories for applications
+Contains the collection of directories and all of their objects.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ Remove-MgApplicationSynchronizationTemplateSchemaDirectory -InputObject <IApplic
 ```
 
 ## DESCRIPTION
-Delete navigation property directories for applications
+Contains the collection of directories and all of their objects.
 
 ## EXAMPLES
 
@@ -160,11 +160,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

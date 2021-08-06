@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDriveListSubscription
 
 ## SYNOPSIS
-Update the navigation property subscriptions in drives
+The set of subscriptions on the list.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Update-MgDriveListSubscription -InputObject <IFilesIdentity> -BodyParameter <IMi
 ```
 
 ## DESCRIPTION
-Update the navigation property subscriptions in drives
+The set of subscriptions on the list.
 
 ## EXAMPLES
 
@@ -441,13 +441,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSubscription
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

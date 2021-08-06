@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgGroupAppRoleAssignment
 
 ## SYNOPSIS
-Create new navigation property to appRoleAssignments for groups
+Represents the app roles a group has been granted for an application.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ New-MgGroupAppRoleAssignment -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to appRoleAssignments for groups
+Represents the app roles a group has been granted for an application.
 
 ## EXAMPLES
 
@@ -278,13 +278,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppRoleAssignment1
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppRoleAssignment1
-
 ## NOTES
 
 ALIASES

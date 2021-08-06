@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserCreatedObjectByRef
 
 ## SYNOPSIS
-Get ref of createdObjects from users
+Directory objects that were created by the user.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -18,7 +20,9 @@ Get-MgUserCreatedObjectByRef -UserId <String> [-Filter <String>] [-Search <Strin
 ```
 
 ## DESCRIPTION
-Get ref of createdObjects from users
+Directory objects that were created by the user.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -168,7 +172,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

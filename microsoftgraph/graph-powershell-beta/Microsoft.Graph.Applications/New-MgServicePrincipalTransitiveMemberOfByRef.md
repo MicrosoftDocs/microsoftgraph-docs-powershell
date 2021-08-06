@@ -1,14 +1,14 @@
 ---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/new-mgserviceprincipaltransitivememberofbyref
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/new-mgserviceprincipaltokenlifetimepolicybyref
 schema: 2.0.0
 ---
 
 # New-MgServicePrincipalTokenLifetimePolicyByRef
 
 ## SYNOPSIS
-Create new navigation property ref to tokenLifetimePolicies for servicePrincipals
+The tokenLifetimePolicies assigned to this service principal.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ New-MgServicePrincipalTokenLifetimePolicyByRef -InputObject <IApplicationsIdenti
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to tokenLifetimePolicies for servicePrincipals
+The tokenLifetimePolicies assigned to this service principal.
 
 ## EXAMPLES
 
@@ -141,13 +141,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPathsOkmdkwServiceprincipalsServiceprincipalIdTokenlifetimepoliciesRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

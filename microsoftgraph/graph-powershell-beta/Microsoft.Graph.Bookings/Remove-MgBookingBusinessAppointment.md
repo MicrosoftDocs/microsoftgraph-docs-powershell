@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgBookingBusinessAppointment
 
 ## SYNOPSIS
-Delete navigation property appointments for bookingBusinesses
+All the appointments of this business.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +27,9 @@ Remove-MgBookingBusinessAppointment -InputObject <IBookingsIdentity> [-IfMatch <
 ```
 
 ## DESCRIPTION
-Delete navigation property appointments for bookingBusinesses
+All the appointments of this business.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -144,11 +148,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IBookingsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

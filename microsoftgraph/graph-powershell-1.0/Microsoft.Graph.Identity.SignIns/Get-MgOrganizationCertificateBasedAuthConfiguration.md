@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgOrganizationCertificateBasedAuthConfiguration
 
 ## SYNOPSIS
-Get certificateBasedAuthConfiguration from organization
+Navigation property to manage  certificate-based authentication configuration.
+Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
 
 ## SYNTAX
 
@@ -19,7 +20,8 @@ Get-MgOrganizationCertificateBasedAuthConfiguration -OrganizationId <String> [-E
 ```
 
 ## DESCRIPTION
-Get certificateBasedAuthConfiguration from organization
+Navigation property to manage  certificate-based authentication configuration.
+Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
 
 ## EXAMPLES
 
@@ -199,7 +201,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCertificateBasedAuthConfiguration
-
 ## NOTES
 
 ALIASES

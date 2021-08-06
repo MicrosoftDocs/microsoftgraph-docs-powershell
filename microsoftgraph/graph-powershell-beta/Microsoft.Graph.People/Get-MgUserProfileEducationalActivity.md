@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserProfileEducationalActivity
 
 ## SYNOPSIS
-Get educationalActivities from users
+Represents data that a user has supplied related to undergraduate, graduate, postgraduate or other educational activities.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgUserProfileEducationalActivity -InputObject <IPeopleIdentity> [-ExpandProp
 ```
 
 ## DESCRIPTION
-Get educationalActivities from users
+Represents data that a user has supplied related to undergraduate, graduate, postgraduate or other educational activities.
 
 ## EXAMPLES
 
@@ -241,11 +241,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationalActivity
-
 ## NOTES
 
 ALIASES

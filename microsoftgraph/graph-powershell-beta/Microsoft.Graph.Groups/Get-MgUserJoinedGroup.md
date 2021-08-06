@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgUserJoinedGroup
 
 ## SYNOPSIS
-Get joinedGroups from users
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgUserJoinedGroup -InputObject <IGroupsIdentity> [-ExpandProperty <String[]>
 ```
 
 ## DESCRIPTION
-Get joinedGroups from users
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -241,11 +243,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroup
-
 ## NOTES
 
 ALIASES

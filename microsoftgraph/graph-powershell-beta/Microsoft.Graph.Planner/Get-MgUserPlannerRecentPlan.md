@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserPlannerRecentPlan
 
 ## SYNOPSIS
-Get recentPlans from users
+Read-only.
+Nullable.
+Returns the plannerPlans that have been recently viewed by the user in apps that support recent plans.
 
 ## SYNTAX
 
@@ -19,7 +21,9 @@ Get-MgUserPlannerRecentPlan -UserId <String> [-ExpandProperty <String[]>] [-Filt
 ```
 
 ## DESCRIPTION
-Get recentPlans from users
+Read-only.
+Nullable.
+Returns the plannerPlans that have been recently viewed by the user in apps that support recent plans.
 
 ## EXAMPLES
 
@@ -199,7 +203,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerPlan1
-
 ## NOTES
 
 ALIASES

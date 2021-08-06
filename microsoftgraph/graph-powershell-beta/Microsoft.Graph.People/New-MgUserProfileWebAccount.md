@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserProfileWebAccount
 
 ## SYNOPSIS
-Create new navigation property to webAccounts for users
+Represents web accounts the user has indicated they use or has added to their user profile.
 
 ## SYNTAX
 
@@ -46,7 +46,7 @@ New-MgUserProfileWebAccount -InputObject <IPeopleIdentity> -BodyParameter <IMicr
 ```
 
 ## DESCRIPTION
-Create new navigation property to webAccounts for users
+Represents web accounts the user has indicated they use or has added to their user profile.
 
 ## EXAMPLES
 
@@ -393,13 +393,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWebAccount
-
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWebAccount
-
 ## NOTES
 
 ALIASES

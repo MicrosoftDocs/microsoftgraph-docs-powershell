@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEducationSynchronizationProfileError
 
 ## SYNOPSIS
-Get errors from education
+All errors associated with this synchronization profile.
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Get-MgEducationSynchronizationProfileError -InputObject <IEducationIdentity> [-E
 ```
 
 ## DESCRIPTION
-Get errors from education
+All errors associated with this synchronization profile.
 
 ## EXAMPLES
 
@@ -242,11 +242,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSynchronizationError
-
 ## NOTES
 
 ALIASES

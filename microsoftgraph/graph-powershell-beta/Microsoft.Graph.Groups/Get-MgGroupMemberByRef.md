@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgGroupMemberByRef
 
 ## SYNOPSIS
-Get ref of membersWithLicenseErrors from groups
+A list of group members with license errors from this group-based license assignment.
+Read-only.
 
 ## SYNTAX
 
@@ -18,7 +19,8 @@ Get-MgGroupMemberByRef -GroupId <String> [-Filter <String>] [-Search <String>] [
 ```
 
 ## DESCRIPTION
-Get ref of membersWithLicenseErrors from groups
+A list of group members with license errors from this group-based license assignment.
+Read-only.
 
 ## EXAMPLES
 
@@ -168,7 +170,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

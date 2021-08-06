@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgTeamPrimaryChannelMessageReply
 
 ## SYNOPSIS
-Delete navigation property replies for teams
+Replies for a specified message.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgTeamPrimaryChannelMessageReply -InputObject <ITeamsIdentity> [-IfMatch 
 ```
 
 ## DESCRIPTION
-Delete navigation property replies for teams
+Replies for a specified message.
 
 ## EXAMPLES
 
@@ -159,11 +159,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

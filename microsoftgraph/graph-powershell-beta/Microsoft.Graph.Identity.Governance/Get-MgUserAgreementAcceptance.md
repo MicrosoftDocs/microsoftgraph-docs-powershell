@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserAgreementAcceptance
 
 ## SYNOPSIS
-Get agreementAcceptances from users
+The user's terms of use acceptance statuses.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -19,7 +21,9 @@ Get-MgUserAgreementAcceptance -UserId <String> [-ExpandProperty <String[]>] [-Fi
 ```
 
 ## DESCRIPTION
-Get agreementAcceptances from users
+The user's terms of use acceptance statuses.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -199,7 +203,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAgreementAcceptance
-
 ## NOTES
 
 ALIASES

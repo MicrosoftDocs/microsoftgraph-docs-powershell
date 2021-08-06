@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgComplianceEdiscoveryCaseSourceCollection
 
 ## SYNOPSIS
-Get sourceCollections from compliance
+Returns a list of sourceCollection objects associated with this case.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgComplianceEdiscoveryCaseSourceCollection -InputObject <IComplianceIdentity
 ```
 
 ## DESCRIPTION
-Get sourceCollections from compliance
+Returns a list of sourceCollection objects associated with this case.
 
 ## EXAMPLES
 
@@ -241,11 +241,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoverySourceCollection
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgOrganizationExtension
 
 ## SYNOPSIS
-Get extensions from organization
+The collection of open extensions defined for the organization resource.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgOrganizationExtension -InputObject <IIdentityDirectoryManagementIdentity> 
 ```
 
 ## DESCRIPTION
-Get extensions from organization
+The collection of open extensions defined for the organization resource.
+Nullable.
 
 ## EXAMPLES
 
@@ -241,13 +243,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExtension
-
 ### System.String
-
 ## NOTES
 
 ALIASES

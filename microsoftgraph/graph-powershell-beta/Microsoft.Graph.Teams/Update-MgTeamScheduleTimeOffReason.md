@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgTeamScheduleTimeOffReason
 
 ## SYNOPSIS
-Update the navigation property timeOffReasons in teams
+The set of reasons for a time off in the schedule.
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ Update-MgTeamScheduleTimeOffReason -InputObject <ITeamsIdentity> -BodyParameter 
 ```
 
 ## DESCRIPTION
-Update the navigation property timeOffReasons in teams
+The set of reasons for a time off in the schedule.
 
 ## EXAMPLES
 
@@ -303,13 +303,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTimeOffReason
-
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

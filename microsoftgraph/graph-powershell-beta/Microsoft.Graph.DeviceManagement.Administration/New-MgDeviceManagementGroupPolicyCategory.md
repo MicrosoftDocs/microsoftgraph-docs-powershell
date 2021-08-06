@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementGroupPolicyCategory
 
 ## SYNOPSIS
-Create new navigation property to groupPolicyCategories for deviceManagement
+The available group policy categories for this account.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ New-MgDeviceManagementGroupPolicyCategory -BodyParameter <IMicrosoftGraphGroupPo
 ```
 
 ## DESCRIPTION
-Create new navigation property to groupPolicyCategories for deviceManagement
+The available group policy categories for this account.
 
 ## EXAMPLES
 
@@ -229,11 +229,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyCategory
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyCategory
-
 ## NOTES
 
 ALIASES

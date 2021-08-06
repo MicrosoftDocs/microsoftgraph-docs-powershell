@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserCalendarGroup
 
 ## SYNOPSIS
-Get calendarGroups from users
+The user's calendar groups.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgUserCalendarGroup -InputObject <ICalendarIdentity> [-ExpandProperty <Strin
 ```
 
 ## DESCRIPTION
-Get calendarGroups from users
+The user's calendar groups.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -241,11 +245,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalendarGroup
-
 ## NOTES
 
 ALIASES

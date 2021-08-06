@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserMailFolderMessageRule
 
 ## SYNOPSIS
-Delete navigation property messageRules for users
+The collection of rules that apply to the user's Inbox folder.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgUserMailFolderMessageRule -InputObject <IMailIdentity> [-IfMatch <Strin
 ```
 
 ## DESCRIPTION
-Delete navigation property messageRules for users
+The collection of rules that apply to the user's Inbox folder.
 
 ## EXAMPLES
 
@@ -159,11 +159,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMailIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

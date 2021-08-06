@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBookingBusinessStaffMember
 
 ## SYNOPSIS
-Get staffMembers from bookingBusinesses
+All the staff members that provide services in this business.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgBookingBusinessStaffMember -InputObject <IBookingsIdentity> [-ExpandProper
 ```
 
 ## DESCRIPTION
-Get staffMembers from bookingBusinesses
+All the staff members that provide services in this business.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -241,11 +245,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IBookingsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingStaffMember
-
 ## NOTES
 
 ALIASES

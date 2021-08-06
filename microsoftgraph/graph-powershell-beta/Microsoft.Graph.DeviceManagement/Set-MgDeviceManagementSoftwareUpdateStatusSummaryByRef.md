@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgDeviceManagementSoftwareUpdateStatusSummaryByRef
 
 ## SYNOPSIS
-Update the ref of navigation property softwareUpdateStatusSummary in deviceManagement
+The software update status summary.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Set-MgDeviceManagementSoftwareUpdateStatusSummaryByRef -BodyParameter <Hashtable
 ```
 
 ## DESCRIPTION
-Update the ref of navigation property softwareUpdateStatusSummary in deviceManagement
+The software update status summary.
 
 ## EXAMPLES
 
@@ -113,11 +113,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

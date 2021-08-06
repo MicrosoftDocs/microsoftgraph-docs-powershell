@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteListContentTypeColumnPositionByRef
 
 ## SYNOPSIS
-Get ref of columnPositions from sites
+Column order information in a content type.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgSiteListContentTypeColumnPositionByRef -ContentTypeId <String> -ListId <St
 ```
 
 ## DESCRIPTION
-Get ref of columnPositions from sites
+Column order information in a content type.
 
 ## EXAMPLES
 
@@ -199,7 +199,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

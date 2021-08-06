@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgGroupEndpoint
 
 ## SYNOPSIS
-Create new navigation property to endpoints for groups
+Endpoints for the group.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -39,7 +41,9 @@ New-MgGroupEndpoint -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGra
 ```
 
 ## DESCRIPTION
-Create new navigation property to endpoints for groups
+Endpoints for the group.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -261,13 +265,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEndpoint
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEndpoint
-
 ## NOTES
 
 ALIASES

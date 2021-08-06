@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementUserExperienceAnalyticRegressionSummary
 
 ## SYNOPSIS
-Update the navigation property userExperienceAnalyticsRegressionSummary in deviceManagement
+User experience analytics regression summary
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Update-MgDeviceManagementUserExperienceAnalyticRegressionSummary
 ```
 
 ## DESCRIPTION
-Update the navigation property userExperienceAnalyticsRegressionSummary in deviceManagement
+User experience analytics regression summary
 
 ## EXAMPLES
 
@@ -181,11 +181,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsRegressionSummary
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgUserTodoListTaskExtension
 
 ## SYNOPSIS
-Delete navigation property extensions for users
+The collection of open extensions defined for the task.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgUserTodoListTaskExtension -InputObject <IUsersIdentity> [-IfMatch <Stri
 ```
 
 ## DESCRIPTION
-Delete navigation property extensions for users
+The collection of open extensions defined for the task.
+Nullable.
 
 ## EXAMPLES
 
@@ -174,11 +176,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

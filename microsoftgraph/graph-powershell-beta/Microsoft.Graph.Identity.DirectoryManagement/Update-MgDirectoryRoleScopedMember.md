@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgDirectoryRoleScopedMember
 
 ## SYNOPSIS
-Update the navigation property scopedMembers in directoryRoles
+Members of this directory role that are scoped to administrative units.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -39,7 +41,9 @@ Update-MgDirectoryRoleScopedMember -InputObject <IIdentityDirectoryManagementIde
 ```
 
 ## DESCRIPTION
-Update the navigation property scopedMembers in directoryRoles
+Members of this directory role that are scoped to administrative units.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -235,13 +239,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphScopedRoleMembership
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

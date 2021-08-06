@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgUserOutlookTaskGroupTaskFolder
 
 ## SYNOPSIS
-Create new navigation property to taskFolders for users
+The collection of task folders in the task group.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -45,7 +47,9 @@ New-MgUserOutlookTaskGroupTaskFolder -InputObject <IUsersIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to taskFolders for users
+The collection of task folders in the task group.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -294,13 +298,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOutlookTaskFolder
-
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOutlookTaskFolder
-
 ## NOTES
 
 ALIASES

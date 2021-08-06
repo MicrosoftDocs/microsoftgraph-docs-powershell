@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPrintShare
 
 ## SYNOPSIS
-Get shares from print
+The list of printer shares registered in the tenant.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgPrintShare -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty <Str
 ```
 
 ## DESCRIPTION
-Get shares from print
+The list of printer shares registered in the tenant.
 
 ## EXAMPLES
 
@@ -226,11 +226,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrinterShare
-
 ## NOTES
 
 ALIASES

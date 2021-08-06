@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgComplianceEdiscoveryCaseTag
 
 ## SYNOPSIS
-Delete navigation property tags for compliance
+Returns a list of tag objects associated to this case.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgComplianceEdiscoveryCaseTag -InputObject <IComplianceIdentity> [-IfMatc
 ```
 
 ## DESCRIPTION
-Delete navigation property tags for compliance
+Returns a list of tag objects associated to this case.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

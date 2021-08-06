@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserProfile
 
 ## SYNOPSIS
-Delete navigation property profile for users
+Represents properties that are descriptive of a user in a tenant.
 
 ## SYNTAX
 
@@ -24,7 +24,7 @@ Remove-MgUserProfile -InputObject <IPeopleIdentity> [-IfMatch <String>] [-PassTh
 ```
 
 ## DESCRIPTION
-Delete navigation property profile for users
+Represents properties that are descriptive of a user in a tenant.
 
 ## EXAMPLES
 
@@ -128,11 +128,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

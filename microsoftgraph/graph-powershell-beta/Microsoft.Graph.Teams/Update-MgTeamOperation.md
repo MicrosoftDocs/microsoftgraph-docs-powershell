@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgTeamOperation
 
 ## SYNOPSIS
-Update the navigation property operations in teams
+The async operations that ran or are running on this team.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Update-MgTeamOperation -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftG
 ```
 
 ## DESCRIPTION
-Update the navigation property operations in teams
+The async operations that ran or are running on this team.
 
 ## EXAMPLES
 
@@ -313,13 +313,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAsyncOperation
-
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

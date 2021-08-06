@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementDeviceCategory
 
 ## SYNOPSIS
-Create new navigation property to deviceCategories for deviceManagement
+The list of device categories with the tenant.
 
 ## SYNTAX
 
@@ -20,12 +20,12 @@ New-MgDeviceManagementDeviceCategory [-AdditionalProperties <Hashtable>] [-Descr
 
 ### Create1
 ```
-New-MgDeviceManagementDeviceCategory -BodyParameter <IMicrosoftGraphDeviceCategory2> [-WhatIf] [-Confirm]
+New-MgDeviceManagementDeviceCategory -BodyParameter <IMicrosoftGraphDeviceCategory> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create new navigation property to deviceCategories for deviceManagement
+The list of device categories with the tenant.
 
 ## EXAMPLES
 
@@ -54,7 +54,7 @@ You can filter reports and create dynamic Azure Active Directory device groups b
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceCategory2
+Type: IMicrosoftGraphDeviceCategory
 Parameter Sets: Create1
 Aliases:
 
@@ -146,12 +146,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCategory2
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCategory
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCategory2
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCategory
 ## NOTES
 
 ALIASES
@@ -161,7 +159,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphDeviceCategory2>: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+BODYPARAMETER <IMicrosoftGraphDeviceCategory>: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
   - `[Description <String>]`: Optional description for the device category.

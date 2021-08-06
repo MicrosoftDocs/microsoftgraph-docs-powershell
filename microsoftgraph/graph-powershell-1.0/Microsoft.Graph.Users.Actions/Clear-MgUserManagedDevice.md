@@ -8,15 +8,15 @@ schema: 2.0.0
 # Clear-MgUserManagedDevice
 
 ## SYNOPSIS
-Invoke action wipe
+Wipe a device
 
 ## SYNTAX
 
 ### WipeExpanded (Default)
 ```
 Clear-MgUserManagedDevice -ManagedDeviceId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-KeepEnrollmentData] [-KeepUserData] [-MacOSUnlockCode <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-KeepEnrollmentData] [-KeepUserData] [-MacOSUnlockCode <String>] [-PersistEsimDataPlan] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Wipe
@@ -29,8 +29,8 @@ Clear-MgUserManagedDevice -ManagedDeviceId <String> -UserId <String>
 ### WipeViaIdentityExpanded
 ```
 Clear-MgUserManagedDevice -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-KeepEnrollmentData] [-KeepUserData] [-MacOSUnlockCode <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-KeepEnrollmentData] [-KeepUserData] [-MacOSUnlockCode <String>] [-PersistEsimDataPlan] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### WipeViaIdentity
@@ -41,7 +41,7 @@ Clear-MgUserManagedDevice -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action wipe
+Wipe a device
 
 ## EXAMPLES
 
@@ -169,6 +169,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -PersistEsimDataPlan
+.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: WipeExpanded, WipeViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 key: id of user
 
@@ -221,13 +236,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths14R8Rr7UsersUserIdManageddevicesManageddeviceIdMicrosoftGraphWipePostRequestbodyContentApplicationJsonSchema1
-
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -242,6 +254,7 @@ BODYPARAMETER <IPaths14R8Rr7UsersUserIdManageddevicesManageddeviceIdMicrosoftGra
   - `[KeepEnrollmentData <Boolean?>]`: 
   - `[KeepUserData <Boolean?>]`: 
   - `[MacOSUnlockCode <String>]`: 
+  - `[PersistEsimDataPlan <Boolean?>]`: 
 
 INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance

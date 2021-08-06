@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserTodoList
 
 ## SYNOPSIS
-Create new navigation property to lists for users
+The task lists in the users mailbox.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ New-MgUserTodoList -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraph
 ```
 
 ## DESCRIPTION
-Create new navigation property to lists for users
+The task lists in the users mailbox.
 
 ## EXAMPLES
 
@@ -254,13 +254,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTodoTaskList
-
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTodoTaskList
-
 ## NOTES
 
 ALIASES

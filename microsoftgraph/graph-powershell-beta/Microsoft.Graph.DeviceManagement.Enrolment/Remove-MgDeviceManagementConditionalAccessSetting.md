@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgDeviceManagementConditionalAccessSetting
 
 ## SYNOPSIS
-Delete navigation property conditionalAccessSettings for deviceManagement
+The Exchange on premises conditional access settings.
+On premises conditional access will require devices to be both enrolled and compliant for mail access
 
 ## SYNTAX
 
@@ -18,7 +19,8 @@ Remove-MgDeviceManagementConditionalAccessSetting [-IfMatch <String>] [-PassThru
 ```
 
 ## DESCRIPTION
-Delete navigation property conditionalAccessSettings for deviceManagement
+The Exchange on premises conditional access settings.
+On premises conditional access will require devices to be both enrolled and compliant for mail access
 
 ## EXAMPLES
 
@@ -93,7 +95,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDomainNameerenceByRef
 
 ## SYNOPSIS
-Get domainNameReferences from domains
+Read-only, Nullable
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgDomainNameerenceByRef -DomainId <String> [-ExpandProperty <String[]>] [-Fi
 ```
 
 ## DESCRIPTION
-Get domainNameReferences from domains
+Read-only, Nullable
 
 ## EXAMPLES
 
@@ -199,7 +199,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Set-MgUserUsedResourceInsightByRef
 
 ## SYNOPSIS
-Update the ref of navigation property resource in users
+Used for navigating to the item that was used.
+For file attachments, the type is fileAttachment.
+For linked attachments, the type is driveItem.
 
 ## SYNTAX
 
@@ -37,7 +39,9 @@ Set-MgUserUsedResourceInsightByRef -InputObject <IPeopleIdentity> -BodyParameter
 ```
 
 ## DESCRIPTION
-Update the ref of navigation property resource in users
+Used for navigating to the item that was used.
+For file attachments, the type is fileAttachment.
+For linked attachments, the type is driveItem.
 
 ## EXAMPLES
 
@@ -171,13 +175,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgUserOutlookTaskFolderTaskMultiValueExtendedProperty
 
 ## SYNOPSIS
-Delete navigation property multiValueExtendedProperties for users
+The collection of multi-value extended properties defined for the task.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -26,7 +28,9 @@ Remove-MgUserOutlookTaskFolderTaskMultiValueExtendedProperty -InputObject <IUser
 ```
 
 ## DESCRIPTION
-Delete navigation property multiValueExtendedProperties for users
+The collection of multi-value extended properties defined for the task.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -175,11 +179,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

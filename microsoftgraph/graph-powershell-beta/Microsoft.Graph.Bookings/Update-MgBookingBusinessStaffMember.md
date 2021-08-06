@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgBookingBusinessStaffMember
 
 ## SYNOPSIS
-Update the navigation property staffMembers in bookingBusinesses
+All the staff members that provide services in this business.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -41,7 +43,9 @@ Update-MgBookingBusinessStaffMember -InputObject <IBookingsIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property staffMembers in bookingBusinesses
+All the staff members that provide services in this business.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -300,13 +304,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IBookingsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingStaffMember
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

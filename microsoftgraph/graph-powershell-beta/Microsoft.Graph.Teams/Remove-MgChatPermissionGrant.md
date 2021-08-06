@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgChatPermissionGrant
 
 ## SYNOPSIS
-Delete navigation property permissionGrants for chats
+A collection of permissions granted to apps for the chat.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgChatPermissionGrant -InputObject <ITeamsIdentity> [-IfMatch <String>] [
 ```
 
 ## DESCRIPTION
-Delete navigation property permissionGrants for chats
+A collection of permissions granted to apps for the chat.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

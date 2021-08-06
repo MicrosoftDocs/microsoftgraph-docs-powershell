@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserPlannerRecentPlanByRef
 
 ## SYNOPSIS
-Get ref of recentPlans from users
+Read-only.
+Nullable.
+Returns the plannerPlans that have been recently viewed by the user in apps that support recent plans.
 
 ## SYNTAX
 
@@ -18,7 +20,9 @@ Get-MgUserPlannerRecentPlanByRef -UserId <String> [-Filter <String>] [-Search <S
 ```
 
 ## DESCRIPTION
-Get ref of recentPlans from users
+Read-only.
+Nullable.
+Returns the plannerPlans that have been recently viewed by the user in apps that support recent plans.
 
 ## EXAMPLES
 
@@ -168,7 +172,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES
