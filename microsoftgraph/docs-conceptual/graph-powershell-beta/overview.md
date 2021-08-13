@@ -41,5 +41,5 @@ To perform basic tasks, use the [Get-started](/graph/powershell/get-started) gui
 
 ## Next steps
 
-- If you don't have an Azure account, [create a free account](https://azure.microsoft.com/free/?WT.mc_id=A261C142F).
+- If you don't have an Azure account, [create a free account](https://azure.microsoft.com/free).
 - If you already have access to an Azure Active Directory tenant, [Install the SDK](/graph/powershell/installation).
