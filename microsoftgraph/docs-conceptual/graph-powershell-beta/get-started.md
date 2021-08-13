@@ -75,7 +75,7 @@ ce73bdb5-bf12-405e-ab85-40122fdd6eb7 Brian Johnson (TAILSPIN) BrianJ@contoso.onm
 df1347a3-7ce7-4b4d-8aab-7c65b5c907b9 Cameron White                                                  CameronW@contoso…
 ```
 
-You can use an [OData filter](../query-parameters.md#filter-parameter) to help locate the specific user you want. Run the following command, replacing `Megan Bowen` with the display name of the user you signed in with.
+You can use an [OData filter](/graph/query-parameters.md#filter-parameter) to help locate the specific user you want. Run the following command, replacing `Megan Bowen` with the display name of the user you signed in with.
 
 ```powershell
 $user = Get-MgUser -Filter "displayName eq 'Megan Bowen'"

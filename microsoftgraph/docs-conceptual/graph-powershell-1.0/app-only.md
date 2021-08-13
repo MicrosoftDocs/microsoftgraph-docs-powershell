@@ -7,7 +7,7 @@ author: jasonjoh
 
 # Use app-only authentication with the Microsoft Graph PowerShell SDK
 
-The PowerShell SDK supports two types of authentication: [delegated access](..\auth-v2-user.md), and [app-only access](..\auth-v2-service.md). This guide will focus on the configuration needed to enable app-only access.
+The PowerShell SDK supports two types of authentication: [delegated access](/graph/auth-v2-user), and [app-only access](/graph/auth-v2-service.md). This guide will focus on the configuration needed to enable app-only access.
 
 > [!IMPORTANT]
 > App-only access grants permissions directly to an application, and requires an administrator to consent to the required permission scopes. For more details on app-only access, see [Microsoft identity platform and the OAuth 2.0 client credentials flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
