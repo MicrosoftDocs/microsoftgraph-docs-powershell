@@ -5,6 +5,18 @@
   - name: Migrate from Azure AD PowerShell
     href: migration-steps.md
   - name: Cmdlet map
-    href: azuread-msoline-cmdlet-map.md 
+    href: azuread-msoline-cmdlet-map.md
+- name: Getting started
+  items:
+    - name: Installation
+      href: installation.md
+    - name: Get started
+      href: get-started.md 
+    - name: Navigating the SDK
+      href: navigating.md
+- name: Concepts
+  items:
+    - name: App-only authentication
+      href: app-only.md             
 
   
