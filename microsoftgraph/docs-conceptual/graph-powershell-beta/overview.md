@@ -5,7 +5,7 @@ services: active-directory
 
 ms.devlang: powershell
 ms.topic: overview
-ms.date: 5/26/2021
+ms.date: 8/12/2021
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
@@ -22,15 +22,14 @@ The Microsoft Graph PowerShell SDK is the replacement for the Azure AD PowerShel
 
 The Microsoft Graph PowerShell SDK provides the following benefits:
 
-- **Azure AD Graph is deprecated**: Azure AD PowerShell is based off Azure AD Graph which has been deprecated and no new capability is being actively added to the module. Microsoft Graph PowerShell is based off the Microsoft Graph API.
-- **Access to all Microsoft Graph APIs**: Microsoft Graph is a unified API that also includes, in addition to Azure AD, APIs from other Microsoft services like SharePoint, Exchange, Outlook, etc, all accessed through a single endpoint with a single access token.
+- **Access to all Microsoft Graph APIs not just Azure Active Directory**: Microsoft Graph PowerShell SDK  is based on Microsoft Graph API. The Microsoft Graph API includes, in addition to Azure AD, APIs from other Microsoft services like SharePoint, Exchange, Outlook, etc, all accessed through a single endpoint with a single access token. Azure AD Graph PowerShell is based on Azure AD Graph which is deprecated. To learn more on migrating from Azure AD Graph to Microsoft Graph see [Microsoft Graph or Azure AD Graph](https://developer.microsoft.com/en-us/office/blogs/microsoft-graph-or-azure-ad-graph/).
 - **Cross-platform support and available on PowerShell 7 and above**: Microsoft Graph PowerShell module works with PowerShell 7 and later and on all platforms including Windows, macOS, and Linux. It's also compatible with Windows PowerShell 5.1.
-- **Open source**: Feature teams and the community can create great PowerShell experiences and share them with everyone.
 - **Supports modern authentication**: Microsoft Graph PowerShell supports the Microsoft Authentication Library (MSAL) which offers more security that its Azure AD PowerShell Active Directory Authentication Library (ADAL) counterpart.
+- **Open source**: Feature teams and the community can create great PowerShell experiences and share them with everyone.
 
 ## Upgrade your environment to use the Microsoft Graph PowerShell SDK
 
-To see the mapping of the  Azure AD PowerShell cmdlets to the cmdlets in the Microsoft Graph PowerShell SDK, see the [cmdlet map](azuread-msoline-cmdlet-map.md).
+To see the mapping of the  Azure AD PowerShell cmdlets to the cmdlets in the Microsoft Graph PowerShell SDK, use the [cmdlet map](azuread-msoline-cmdlet-map.md).
 
 ## Install the Microsoft Graph PowerShell SDK
 
