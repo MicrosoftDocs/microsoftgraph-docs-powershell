@@ -3,7 +3,7 @@
   topicHref: /
   items:
   - name: Microsoft Graph
-    tocHref: /graph/
+    tocHref: /graph
     topicHref: /graph/index
     items:
     - name: Microsoft Graph PowerShell
