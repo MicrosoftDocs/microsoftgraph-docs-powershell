@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserProfileSkill
 
 ## SYNOPSIS
-Create new navigation property to skills for users
+Represents detailed information about skills associated with a user in various services.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ New-MgUserProfileSkill -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoft
 ```
 
 ## DESCRIPTION
-Create new navigation property to skills for users
+Represents detailed information about skills associated with a user in various services.
 
 ## EXAMPLES
 
@@ -380,13 +380,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSkillProficiency
-
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSkillProficiency
-
 ## NOTES
 
 ALIASES

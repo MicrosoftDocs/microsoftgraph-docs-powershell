@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserSettingRegionalAndLanguageSetting
 
 ## SYNOPSIS
-Get regionalAndLanguageSettings from users
+The user's preferences for languages, regional locale and date/time formatting.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgUserSettingRegionalAndLanguageSetting -InputObject <IUsersIdentity> [-Expa
 ```
 
 ## DESCRIPTION
-Get regionalAndLanguageSettings from users
+The user's preferences for languages, regional locale and date/time formatting.
 
 ## EXAMPLES
 
@@ -98,11 +98,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRegionalAndLanguageSettings
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgUserExtension
 
 ## SYNOPSIS
-Create new navigation property to extensions for users
+The collection of open extensions defined for the user.
+Nullable.
 
 ## SYNTAX
 
@@ -36,7 +37,8 @@ New-MgUserExtension -InputObject <IUsersIdentity> -BodyParameter <Hashtable> [-W
 ```
 
 ## DESCRIPTION
-Create new navigation property to extensions for users
+The collection of open extensions defined for the user.
+Nullable.
 
 ## EXAMPLES
 
@@ -155,13 +157,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

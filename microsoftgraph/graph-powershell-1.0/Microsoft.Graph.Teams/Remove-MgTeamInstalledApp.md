@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgTeamInstalledApp
 
 ## SYNOPSIS
-Delete navigation property installedApps for teams
+The apps installed in this team.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgTeamInstalledApp -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Pa
 ```
 
 ## DESCRIPTION
-Delete navigation property installedApps for teams
+The apps installed in this team.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

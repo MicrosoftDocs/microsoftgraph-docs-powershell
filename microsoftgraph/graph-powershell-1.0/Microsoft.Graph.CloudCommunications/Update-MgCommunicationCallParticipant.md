@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgCommunicationCallParticipant
 
 ## SYNOPSIS
-Update the navigation property participants in communications
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -41,7 +42,8 @@ Update-MgCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity
 ```
 
 ## DESCRIPTION
-Update the navigation property participants in communications
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -269,13 +271,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphParticipant
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

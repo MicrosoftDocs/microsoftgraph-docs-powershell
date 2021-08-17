@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgEducationUserTaughtClassByRef
 
 ## SYNOPSIS
-Create new navigation property ref to taughtClasses for education
+Classes for which the user is a teacher.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ New-MgEducationUserTaughtClassByRef -InputObject <IEducationIdentity> -BodyParam
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to taughtClasses for education
+Classes for which the user is a teacher.
 
 ## EXAMPLES
 
@@ -141,13 +141,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1G1Vu62EducationUsersEducationuserIdTaughtclassesRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgGroupMemberOfByRef
 
 ## SYNOPSIS
-Get ref of members from groups
+Users, contacts, and groups that are members of this group.
+HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -18,7 +20,9 @@ Get-MgGroupMemberOfByRef -GroupId <String> [-Filter <String>] [-Search <String>]
 ```
 
 ## DESCRIPTION
-Get ref of members from groups
+Users, contacts, and groups that are members of this group.
+HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -168,7 +172,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

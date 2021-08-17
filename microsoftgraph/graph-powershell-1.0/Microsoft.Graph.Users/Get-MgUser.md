@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUser
 
 ## SYNOPSIS
-Get entity from users by key
+Represents an Azure Active Directory user object.
 
 ## SYNTAX
 
@@ -19,22 +19,52 @@ Get-MgUser [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>
  [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get
+### Get1
 ```
 Get-MgUser -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-ConsistencyLevel <String>]
  [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity1
 ```
 Get-MgUser -InputObject <IUsersIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [-ConsistencyLevel <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get entity from users by key
+Represents an Azure Active Directory user object.
 
 ## EXAMPLES
+
+### Example 1: Get the list of all the users
+```powershell
+Get-MgUser  | Format-List  ID, DisplayName, Mail, UserPrincipalName
+
+Id                : e4e2b110-8d4f-434f-a990-7cd63e23aed6
+DisplayName       : Kristi Laar
+Mail              : Adams@contoso.com
+UserPrincipalName : Adams@contoso.com
+
+Id                : dba12422-ac75-486a-a960-cd7cb3f6963f
+DisplayName       : Adele Vance
+Mail              : AdeleV@contoso.com
+UserPrincipalName : AdeleV@contoso.com
+```
+
+This command returns a list of all users.
+
+### Example 2: Get a user by Id
+```powershell
+Get-MgUser -UserId 'e4e2b110-8d4f-434f-a990-7cd63e23aed6' | 
+  Format-List  ID, DisplayName, Mail, UserPrincipalName
+
+Id                : e4e2b110-8d4f-434f-a990-7cd63e23aed6
+DisplayName       : Kristi Laar
+Mail              : Adams@contoso.com
+UserPrincipalName : Adams@contoso.com
+```
+
+This command gets the specified user.
 
 ## PARAMETERS
 
@@ -55,6 +85,7 @@ Accept wildcard characters: False
 
 ### -ConsistencyLevel
 Indicates the requested consistency level.
+Documentation URL: https://developer.microsoft.com/en-us/office/blogs/microsoft-graph-advanced-queries-for-directory-objects-are-now-generally-available/
 
 ```yaml
 Type: String
@@ -120,7 +151,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IUsersIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: GetViaIdentity1
 Aliases:
 
 Required: True
@@ -210,7 +241,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -241,11 +272,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUser1
-
 ## NOTES
 
 ALIASES

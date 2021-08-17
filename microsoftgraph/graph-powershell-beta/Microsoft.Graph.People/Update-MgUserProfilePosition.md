@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserProfilePosition
 
 ## SYNOPSIS
-Update the navigation property positions in users
+Represents detailed information about work positions associated with a user's profile.
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ Update-MgUserProfilePosition -InputObject <IPeopleIdentity> -BodyParameter <IMic
 ```
 
 ## DESCRIPTION
-Update the navigation property positions in users
+Represents detailed information about work positions associated with a user's profile.
 
 ## EXAMPLES
 
@@ -399,13 +399,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWorkPosition
-
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

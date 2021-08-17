@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgPlannerRosterMember
 
 ## SYNOPSIS
-Create new navigation property to members for planner
+Retrieves the members of the plannerRoster.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ New-MgPlannerRosterMember -InputObject <IPlannerIdentity> -BodyParameter <IMicro
 ```
 
 ## DESCRIPTION
-Create new navigation property to members for planner
+Retrieves the members of the plannerRoster.
 
 ## EXAMPLES
 
@@ -204,13 +204,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerRosterMember
-
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerRosterMember
-
 ## NOTES
 
 ALIASES

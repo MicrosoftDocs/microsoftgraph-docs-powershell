@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgGroupThreadPostExtension
 
 ## SYNOPSIS
-Create new navigation property to extensions for groups
+The collection of open extensions defined for the post.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -37,7 +39,9 @@ New-MgGroupThreadPostExtension -InputObject <IGroupsIdentity> -BodyParameter <Ha
 ```
 
 ## DESCRIPTION
-Create new navigation property to extensions for groups
+The collection of open extensions defined for the post.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -186,13 +190,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

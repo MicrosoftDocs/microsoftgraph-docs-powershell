@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgPrintPrinterTaskTrigger
 
 ## SYNOPSIS
-Delete navigation property taskTriggers for print
+A list of task triggers that are associated with the printer.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgPrintPrinterTaskTrigger -InputObject <IDevicesCloudPrintIdentity> [-IfM
 ```
 
 ## DESCRIPTION
-Delete navigation property taskTriggers for print
+A list of task triggers that are associated with the printer.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

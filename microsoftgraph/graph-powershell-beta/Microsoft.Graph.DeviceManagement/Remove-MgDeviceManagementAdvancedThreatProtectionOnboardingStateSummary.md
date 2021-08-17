@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummary
 
 ## SYNOPSIS
-Delete navigation property advancedThreatProtectionOnboardingStateSummary for deviceManagement
+The summary state of ATP onboarding state for this account.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Remove-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummary [-IfMatc
 ```
 
 ## DESCRIPTION
-Delete navigation property advancedThreatProtectionOnboardingStateSummary for deviceManagement
+The summary state of ATP onboarding state for this account.
 
 ## EXAMPLES
 
@@ -93,7 +93,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

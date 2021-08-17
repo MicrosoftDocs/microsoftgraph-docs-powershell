@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgPlannerRoster
 
 ## SYNOPSIS
-Update the navigation property rosters in planner
+Read-only.
+Nullable.
+Returns a collection of the specified rosters
 
 ## SYNTAX
 
@@ -39,7 +41,9 @@ Update-MgPlannerRoster -InputObject <IPlannerIdentity> -BodyParameter <IMicrosof
 ```
 
 ## DESCRIPTION
-Update the navigation property rosters in planner
+Read-only.
+Nullable.
+Returns a collection of the specified rosters
 
 ## EXAMPLES
 
@@ -206,13 +210,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerRoster
-
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -483,8 +484,5 @@ PLANS <IMicrosoftGraphPlannerPlan1[]>: Retrieves the plans contained by the plan
   - `[Title <String>]`: Required. Title of the plan.
 
 ## RELATED LINKS
-
-## RELATED LINKS
-
 
 ## RELATED LINKS

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementRoleAssignmentRoleScopeTagByRef
 
 ## SYNOPSIS
-Get ref of roleScopeTags from deviceManagement
+The set of Role Scope Tags defined on the Role Assignment.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgDeviceManagementRoleAssignmentRoleScopeTagByRef -DeviceAndAppManagementRol
 ```
 
 ## DESCRIPTION
-Get ref of roleScopeTags from deviceManagement
+The set of Role Scope Tags defined on the Role Assignment.
 
 ## EXAMPLES
 
@@ -169,7 +169,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

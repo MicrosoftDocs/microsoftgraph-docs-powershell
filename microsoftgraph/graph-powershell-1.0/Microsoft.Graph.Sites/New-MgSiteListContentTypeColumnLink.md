@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSiteListContentTypeColumnLink
 
 ## SYNOPSIS
-Create new navigation property to columnLinks for sites
+The collection of columns that are required by this content type
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ New-MgSiteListContentTypeColumnLink -InputObject <ISitesIdentity> -BodyParameter
 ```
 
 ## DESCRIPTION
-Create new navigation property to columnLinks for sites
+The collection of columns that are required by this content type
 
 ## EXAMPLES
 
@@ -202,13 +202,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnLink
-
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnLink
-
 ## NOTES
 
 ALIASES

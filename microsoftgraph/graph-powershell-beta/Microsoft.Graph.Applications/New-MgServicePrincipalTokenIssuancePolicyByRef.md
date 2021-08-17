@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgServicePrincipalTokenIssuancePolicyByRef
 
 ## SYNOPSIS
-Create new navigation property ref to tokenIssuancePolicies for servicePrincipals
+The tokenIssuancePolicies assigned to this service principal.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ New-MgServicePrincipalTokenIssuancePolicyByRef -InputObject <IApplicationsIdenti
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to tokenIssuancePolicies for servicePrincipals
+The tokenIssuancePolicies assigned to this service principal.
 
 ## EXAMPLES
 
@@ -141,13 +141,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1Kclb4IServiceprincipalsServiceprincipalIdTokenissuancepoliciesRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

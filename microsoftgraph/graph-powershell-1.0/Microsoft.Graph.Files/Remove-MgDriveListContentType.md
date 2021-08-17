@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDriveListContentType
 
 ## SYNOPSIS
-Delete navigation property contentTypes for drives
+The collection of content types present in this list.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgDriveListContentType -InputObject <IFilesIdentity> [-IfMatch <String>] 
 ```
 
 ## DESCRIPTION
-Delete navigation property contentTypes for drives
+The collection of content types present in this list.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

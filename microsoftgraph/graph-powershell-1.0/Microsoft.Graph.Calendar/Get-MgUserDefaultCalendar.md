@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserDefaultCalendar
 
 ## SYNOPSIS
-Get calendars from users
+The user's calendars.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +27,9 @@ Get-MgUserDefaultCalendar -InputObject <ICalendarIdentity> [-ExpandProperty <Str
 ```
 
 ## DESCRIPTION
-Get calendars from users
+The user's calendars.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -113,11 +117,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalendar
-
 ## NOTES
 
 ALIASES

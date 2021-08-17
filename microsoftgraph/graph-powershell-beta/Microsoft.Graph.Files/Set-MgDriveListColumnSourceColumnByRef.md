@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgDriveListColumnSourceColumnByRef
 
 ## SYNOPSIS
-Update the ref of navigation property sourceColumn in drives
+The source column for content type column.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Set-MgDriveListColumnSourceColumnByRef -InputObject <IFilesIdentity> -BodyParame
 ```
 
 ## DESCRIPTION
-Update the ref of navigation property sourceColumn in drives
+The source column for content type column.
 
 ## EXAMPLES
 
@@ -171,13 +171,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

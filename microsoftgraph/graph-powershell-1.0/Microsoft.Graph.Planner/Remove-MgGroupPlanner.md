@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgGroupPlanner
 
 ## SYNOPSIS
-Delete navigation property planner for groups
+Selective Planner services available to the group.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +27,9 @@ Remove-MgGroupPlanner -InputObject <IPlannerIdentity> [-IfMatch <String>] [-Pass
 ```
 
 ## DESCRIPTION
-Delete navigation property planner for groups
+Selective Planner services available to the group.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -129,11 +133,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

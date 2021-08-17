@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserAppRoleAssignment
 
 ## SYNOPSIS
-Update the navigation property appRoleAssignments in users
+Represents the app roles a user has been granted for an application.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Update-MgUserAppRoleAssignment -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property appRoleAssignments in users
+Represents the app roles a user has been granted for an application.
 
 ## EXAMPLES
 
@@ -308,13 +308,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppRoleAssignment1
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

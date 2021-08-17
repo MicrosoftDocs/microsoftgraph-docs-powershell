@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgUserManagedDeviceName
 
 ## SYNOPSIS
-Invoke action setDeviceName
+Set device name of the device.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Set-MgUserManagedDeviceName -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action setDeviceName
+Set device name of the device.
 
 ## EXAMPLES
 
@@ -189,13 +189,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1Lr0Hk2UsersUserIdManageddevicesManageddeviceIdMicrosoftGraphSetdevicenamePostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

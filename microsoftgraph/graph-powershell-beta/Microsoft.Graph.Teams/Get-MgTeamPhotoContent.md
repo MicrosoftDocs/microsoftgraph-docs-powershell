@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgTeamPhotoContent
 
 ## SYNOPSIS
-Get media content for the navigation property photo from teams
+The team photo.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Get-MgTeamPhotoContent -InputObject <ITeamsIdentity> -OutFile <String> [-PassThr
 ```
 
 ## DESCRIPTION
-Get media content for the navigation property photo from teams
+The team photo.
 
 ## EXAMPLES
 
@@ -96,11 +96,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

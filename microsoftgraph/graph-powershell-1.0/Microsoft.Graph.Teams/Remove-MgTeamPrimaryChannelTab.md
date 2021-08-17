@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgTeamPrimaryChannelTab
 
 ## SYNOPSIS
-Delete navigation property tabs for teams
+A collection of all the tabs in the channel.
+A navigation property.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgTeamPrimaryChannelTab -InputObject <ITeamsIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-Delete navigation property tabs for teams
+A collection of all the tabs in the channel.
+A navigation property.
 
 ## EXAMPLES
 
@@ -144,11 +146,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

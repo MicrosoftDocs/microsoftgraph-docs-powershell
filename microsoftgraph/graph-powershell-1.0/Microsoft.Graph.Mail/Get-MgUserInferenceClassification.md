@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserInferenceClassification
 
 ## SYNOPSIS
-Get inferenceClassification from users
+Relevance classification of the user's messages based on explicit designations which override inferred relevance or importance.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgUserInferenceClassification -InputObject <IMailIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-Get inferenceClassification from users
+Relevance classification of the user's messages based on explicit designations which override inferred relevance or importance.
 
 ## EXAMPLES
 
@@ -98,11 +98,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMailIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInferenceClassification
-
 ## NOTES
 
 ALIASES

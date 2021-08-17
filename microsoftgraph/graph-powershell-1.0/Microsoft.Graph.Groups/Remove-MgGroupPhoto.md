@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgGroupPhoto
 
 ## SYNOPSIS
-Delete navigation property photo for groups
+The group's profile photo.
 
 ## SYNTAX
 
@@ -36,7 +36,7 @@ Remove-MgGroupPhoto -InputObject <IGroupsIdentity> [-IfMatch <String>] [-PassThr
 ```
 
 ## DESCRIPTION
-Delete navigation property photo for groups
+The group's profile photo.
 
 ## EXAMPLES
 
@@ -155,11 +155,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

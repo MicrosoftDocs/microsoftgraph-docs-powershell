@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgTeamPrimaryChannel
 
 ## SYNOPSIS
-Delete navigation property primaryChannel for teams
+The general channel for the team.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgTeamPrimaryChannel -InputObject <ITeamsIdentity> [-IfMatch <String>] [-
 ```
 
 ## DESCRIPTION
-Delete navigation property primaryChannel for teams
+The general channel for the team.
 
 ## EXAMPLES
 
@@ -129,11 +129,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgGroupConversationThreadPostAttachment
 
 ## SYNOPSIS
-Create new navigation property to attachments for groups
+The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -41,7 +43,9 @@ New-MgGroupConversationThreadPostAttachment -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to attachments for groups
+The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -283,13 +287,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachment
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachment
-
 ## NOTES
 
 ALIASES

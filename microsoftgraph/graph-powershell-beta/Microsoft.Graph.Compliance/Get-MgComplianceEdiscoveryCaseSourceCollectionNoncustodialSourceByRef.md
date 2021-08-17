@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgComplianceEdiscoveryCaseSourceCollectionNoncustodialSourceByRef
 
 ## SYNOPSIS
-Get ref of noncustodialSources from compliance
+noncustodialDataSource sources that are included in the sourceCollection
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgComplianceEdiscoveryCaseSourceCollectionNoncustodialSourceByRef -CaseId <S
 ```
 
 ## DESCRIPTION
-Get ref of noncustodialSources from compliance
+noncustodialDataSource sources that are included in the sourceCollection
 
 ## EXAMPLES
 
@@ -184,7 +184,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

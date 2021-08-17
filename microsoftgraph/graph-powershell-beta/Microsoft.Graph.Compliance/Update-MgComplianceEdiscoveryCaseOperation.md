@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgComplianceEdiscoveryCaseOperation
 
 ## SYNOPSIS
-Update the navigation property operations in compliance
+Returns a list of case operation objects for this case.
+Nullable.
 
 ## SYNTAX
 
@@ -43,7 +44,8 @@ Update-MgComplianceEdiscoveryCaseOperation -InputObject <IComplianceIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property operations in compliance
+Returns a list of case operation objects for this case.
+Nullable.
 
 ## EXAMPLES
 
@@ -300,13 +302,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryCaseOperation
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

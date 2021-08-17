@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserPlannerRosterPlanByRef
 
 ## SYNOPSIS
-Get ref of rosterPlans from users
+Read-only.
+Nullable.
+Returns the plannerPlans contained by the plannerRosters the user is a member.
 
 ## SYNTAX
 
@@ -18,7 +20,9 @@ Get-MgUserPlannerRosterPlanByRef -UserId <String> [-Filter <String>] [-Search <S
 ```
 
 ## DESCRIPTION
-Get ref of rosterPlans from users
+Read-only.
+Nullable.
+Returns the plannerPlans contained by the plannerRosters the user is a member.
 
 ## EXAMPLES
 
@@ -168,7 +172,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

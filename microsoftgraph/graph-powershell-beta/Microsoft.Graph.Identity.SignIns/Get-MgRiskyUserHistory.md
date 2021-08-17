@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgRiskyUserHistory
 
 ## SYNOPSIS
-Get history from riskyUsers
+The activity related to user risk level change
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgRiskyUserHistory -InputObject <IIdentitySignInsIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-Get history from riskyUsers
+The activity related to user risk level change
 
 ## EXAMPLES
 
@@ -241,11 +241,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRiskyUserHistoryItem
-
 ## NOTES
 
 ALIASES
@@ -260,6 +258,7 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[AuthenticationContextClassReferenceId <String>]`: key: id of authenticationContextClassReference
   - `[AuthenticationMethodId <String>]`: key: id of authenticationMethod
   - `[AuthorizationPolicyId <String>]`: key: id of authorizationPolicy
+  - `[BitlockerRecoveryKeyId <String>]`: key: id of bitlockerRecoveryKey
   - `[ClaimsMappingPolicyId <String>]`: key: id of claimsMappingPolicy
   - `[ConditionalAccessPolicyId <String>]`: key: id of conditionalAccessPolicy
   - `[DataLossPreventionPolicyId <String>]`: key: id of dataLossPreventionPolicy
@@ -282,8 +281,6 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[PermissionGrantConditionSetId <String>]`: key: id of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: key: id of permissionGrantPolicy
   - `[PhoneAuthenticationMethodId <String>]`: key: id of phoneAuthenticationMethod
-  - `[PrivateEndpointConnectionId <String>]`: key: id of privateEndpointConnection
-  - `[PrivateLinkResourcePolicyId <String>]`: key: id of privateLinkResourcePolicy
   - `[RiskDetectionId <String>]`: key: id of riskDetection
   - `[RiskyUserHistoryItemId <String>]`: key: id of riskyUserHistoryItem
   - `[RiskyUserId <String>]`: key: id of riskyUser

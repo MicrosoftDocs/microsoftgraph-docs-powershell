@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgShareListItemAnalyticByRef
 
 ## SYNOPSIS
-Get ref of analytics from shares
+Analytics about the view activities that took place on this item.
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Get-MgShareListItemAnalyticByRef -InputObject <IFilesIdentity> [<CommonParameter
 ```
 
 ## DESCRIPTION
-Get ref of analytics from shares
+Analytics about the view activities that took place on this item.
 
 ## EXAMPLES
 
@@ -91,11 +91,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgComplianceEdiscoveryCaseTagParentByRef
 
 ## SYNOPSIS
-Update the ref of navigation property parent in compliance
+Returns the parent tag of the specified tag.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Set-MgComplianceEdiscoveryCaseTagParentByRef -InputObject <IComplianceIdentity> 
 ```
 
 ## DESCRIPTION
-Update the ref of navigation property parent in compliance
+Returns the parent tag of the specified tag.
 
 ## EXAMPLES
 
@@ -171,13 +171,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

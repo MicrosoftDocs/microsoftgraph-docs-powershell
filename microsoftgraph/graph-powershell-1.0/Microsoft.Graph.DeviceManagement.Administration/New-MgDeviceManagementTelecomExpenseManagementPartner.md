@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementTelecomExpenseManagementPartner
 
 ## SYNOPSIS
-Create new navigation property to telecomExpenseManagementPartners for deviceManagement
+The telecom expense management partners.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ New-MgDeviceManagementTelecomExpenseManagementPartner
 ```
 
 ## DESCRIPTION
-Create new navigation property to telecomExpenseManagementPartners for deviceManagement
+The telecom expense management partners.
 
 ## EXAMPLES
 
@@ -191,11 +191,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTelecomExpenseManagementPartner
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTelecomExpenseManagementPartner
-
 ## NOTES
 
 ALIASES

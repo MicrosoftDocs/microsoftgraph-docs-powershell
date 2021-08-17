@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgServicePrincipalSynchronizationTemplateSchema
 
 ## SYNOPSIS
-Update the navigation property schema in servicePrincipals
+Default synchronization schema for the jobs based on this template.
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ Update-MgServicePrincipalSynchronizationTemplateSchema -InputObject <IApplicatio
 ```
 
 ## DESCRIPTION
-Update the navigation property schema in servicePrincipals
+Default synchronization schema for the jobs based on this template.
 
 ## EXAMPLES
 
@@ -240,13 +240,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSynchronizationSchema
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgGroupConversation
 
 ## SYNOPSIS
-Update the navigation property conversations in groups
+The group's conversations.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Update-MgGroupConversation -InputObject <IGroupsIdentity> -BodyParameter <IMicro
 ```
 
 ## DESCRIPTION
-Update the navigation property conversations in groups
+The group's conversations.
 
 ## EXAMPLES
 
@@ -287,13 +287,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversation
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

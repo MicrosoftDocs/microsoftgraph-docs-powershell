@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgGroupCalendarSingleValueExtendedProperty
 
 ## SYNOPSIS
-Delete navigation property singleValueExtendedProperties for groups
+The collection of single-value extended properties defined for the calendar.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -26,7 +28,9 @@ Remove-MgGroupCalendarSingleValueExtendedProperty -InputObject <ICalendarIdentit
 ```
 
 ## DESCRIPTION
-Delete navigation property singleValueExtendedProperties for groups
+The collection of single-value extended properties defined for the calendar.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -145,11 +149,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserOutlookTaskGroupTaskFolderTaskMultiValueExtendedProperty
 
 ## SYNOPSIS
-Get multiValueExtendedProperties from users
+The collection of multi-value extended properties defined for the task.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -34,7 +36,9 @@ Get-MgUserOutlookTaskGroupTaskFolderTaskMultiValueExtendedProperty -InputObject 
 ```
 
 ## DESCRIPTION
-Get multiValueExtendedProperties from users
+The collection of multi-value extended properties defined for the task.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -288,11 +292,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMultiValueLegacyExtendedProperty
-
 ## NOTES
 
 ALIASES

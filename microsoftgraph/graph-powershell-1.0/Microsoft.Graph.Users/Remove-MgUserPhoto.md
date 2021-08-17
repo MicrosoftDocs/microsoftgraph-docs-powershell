@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgUserPhoto
 
 ## SYNOPSIS
-Delete navigation property photo for users
+The user's profile photo.
+Read-only.
 
 ## SYNTAX
 
@@ -36,7 +37,8 @@ Remove-MgUserPhoto -InputObject <IUsersIdentity> [-IfMatch <String>] [-PassThru]
 ```
 
 ## DESCRIPTION
-Delete navigation property photo for users
+The user's profile photo.
+Read-only.
 
 ## EXAMPLES
 
@@ -155,11 +157,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

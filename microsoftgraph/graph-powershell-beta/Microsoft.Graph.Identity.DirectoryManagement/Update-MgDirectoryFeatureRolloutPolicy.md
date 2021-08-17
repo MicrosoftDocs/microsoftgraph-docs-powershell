@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDirectoryFeatureRolloutPolicy
 
 ## SYNOPSIS
-Update the navigation property featureRolloutPolicies in directory
+Nullable.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Update-MgDirectoryFeatureRolloutPolicy -InputObject <IIdentityDirectoryManagemen
 ```
 
 ## DESCRIPTION
-Update the navigation property featureRolloutPolicies in directory
+Nullable.
 
 ## EXAMPLES
 
@@ -268,13 +268,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFeatureRolloutPolicy
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

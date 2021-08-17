@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgChatMessage
 
 ## SYNOPSIS
-Delete navigation property messages for chats
+A collection of all the messages in the chat.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgChatMessage -InputObject <ITeamsIdentity> [-IfMatch <String>] [-PassThr
 ```
 
 ## DESCRIPTION
-Delete navigation property messages for chats
+A collection of all the messages in the chat.
+Nullable.
 
 ## EXAMPLES
 
@@ -144,11 +146,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgUserOutlookTaskFolderSingleValueExtendedProperty
 
 ## SYNOPSIS
-Delete navigation property singleValueExtendedProperties for users
+The collection of single-value extended properties defined for the task folder.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -26,7 +28,9 @@ Remove-MgUserOutlookTaskFolderSingleValueExtendedProperty -InputObject <IUsersId
 ```
 
 ## DESCRIPTION
-Delete navigation property singleValueExtendedProperties for users
+The collection of single-value extended properties defined for the task folder.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -160,11 +164,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

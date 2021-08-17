@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgDirectoryObject
 
 ## SYNOPSIS
-Update entity in directoryObjects
+Represents an Azure Active Directory object.
+The directoryObject type is the base type for many other directory entity types.
 
 ## SYNTAX
 
@@ -37,7 +38,8 @@ Update-MgDirectoryObject -InputObject <IDirectoryObjectsIdentity>
 ```
 
 ## DESCRIPTION
-Update entity in directoryObjects
+Represents an Azure Active Directory object.
+The directoryObject type is the base type for many other directory entity types.
 
 ## EXAMPLES
 
@@ -188,13 +190,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDirectoryObjectsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

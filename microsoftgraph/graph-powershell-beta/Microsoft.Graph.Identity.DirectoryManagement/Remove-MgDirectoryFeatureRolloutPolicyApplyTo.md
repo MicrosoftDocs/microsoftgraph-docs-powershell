@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgDirectoryFeatureRolloutPolicyApplyTo
 
 ## SYNOPSIS
-Delete navigation property appliesTo for directory
+Nullable.
+Specifies a list of directoryObjects that feature is enabled for.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgDirectoryFeatureRolloutPolicyApplyTo -InputObject <IIdentityDirectoryMa
 ```
 
 ## DESCRIPTION
-Delete navigation property appliesTo for directory
+Nullable.
+Specifies a list of directoryObjects that feature is enabled for.
 
 ## EXAMPLES
 
@@ -144,11 +146,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

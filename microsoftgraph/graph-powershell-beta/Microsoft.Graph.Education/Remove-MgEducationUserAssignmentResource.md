@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgEducationUserAssignmentResource
 
 ## SYNOPSIS
-Delete navigation property resources for education
+Learning objects that are associated with this assignment.
+Only teachers can modify this list.
+Nullable.
 
 ## SYNTAX
 
@@ -26,7 +28,9 @@ Remove-MgEducationUserAssignmentResource -InputObject <IEducationIdentity> [-IfM
 ```
 
 ## DESCRIPTION
-Delete navigation property resources for education
+Learning objects that are associated with this assignment.
+Only teachers can modify this list.
+Nullable.
 
 ## EXAMPLES
 
@@ -160,11 +164,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupAppRoleAssignment
 
 ## SYNOPSIS
-Get appRoleAssignments from groups
+Represents the app roles a group has been granted for an application.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgGroupAppRoleAssignment -InputObject <IApplicationsIdentity> [-ExpandProper
 ```
 
 ## DESCRIPTION
-Get appRoleAssignments from groups
+Represents the app roles a group has been granted for an application.
 
 ## EXAMPLES
 
@@ -241,11 +241,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppRoleAssignment
-
 ## NOTES
 
 ALIASES

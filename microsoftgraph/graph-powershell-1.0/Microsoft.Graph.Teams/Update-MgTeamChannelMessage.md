@@ -8,54 +8,58 @@ schema: 2.0.0
 # Update-MgTeamChannelMessage
 
 ## SYNOPSIS
-Update the navigation property messages in teams
+A collection of all the messages in the channel.
+A navigation property.
+Nullable.
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### UpdateExpanded1 (Default)
 ```
 Update-MgTeamChannelMessage -ChannelId <String> -ChatMessageId <String> -TeamId <String>
  [-AdditionalProperties <Hashtable>] [-Attachments <IMicrosoftGraphChatMessageAttachment[]>]
  [-Body <IMicrosoftGraphItemBody>] [-ChannelIdentity <IMicrosoftGraphChannelIdentity>] [-ChatId <String>]
- [-CreatedDateTime <DateTime>] [-DeletedDateTime <DateTime>] [-Etag <String>]
- [-From <IMicrosoftGraphIdentitySet>] [-HostedContents <IMicrosoftGraphChatMessageHostedContent[]>]
- [-Id <String>] [-Importance <String>] [-LastEditedDateTime <DateTime>] [-LastModifiedDateTime <DateTime>]
- [-Locale <String>] [-Mentions <IMicrosoftGraphChatMessageMention[]>] [-MessageType <String>]
+ [-CreatedDateTime <DateTime>] [-DeletedDateTime <DateTime>] [-Etag <String>] [-From <Hashtable>]
+ [-HostedContents <IMicrosoftGraphChatMessageHostedContent[]>] [-Id <String>] [-Importance <String>]
+ [-LastEditedDateTime <DateTime>] [-LastModifiedDateTime <DateTime>] [-Locale <String>]
+ [-Mentions <IMicrosoftGraphChatMessageMention1[]>] [-MessageType <String>]
  [-PolicyViolation <IMicrosoftGraphChatMessagePolicyViolation>]
  [-Reactions <IMicrosoftGraphChatMessageReaction[]>] [-Replies <IMicrosoftGraphChatMessage1[]>]
  [-ReplyToId <String>] [-Subject <String>] [-Summary <String>] [-WebUrl <String>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### Update
+### Update1
 ```
 Update-MgTeamChannelMessage -ChannelId <String> -ChatMessageId <String> -TeamId <String>
  -BodyParameter <IMicrosoftGraphChatMessage1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded
+### UpdateViaIdentityExpanded1
 ```
 Update-MgTeamChannelMessage -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-Attachments <IMicrosoftGraphChatMessageAttachment[]>] [-Body <IMicrosoftGraphItemBody>]
  [-ChannelIdentity <IMicrosoftGraphChannelIdentity>] [-ChatId <String>] [-CreatedDateTime <DateTime>]
- [-DeletedDateTime <DateTime>] [-Etag <String>] [-From <IMicrosoftGraphIdentitySet>]
+ [-DeletedDateTime <DateTime>] [-Etag <String>] [-From <Hashtable>]
  [-HostedContents <IMicrosoftGraphChatMessageHostedContent[]>] [-Id <String>] [-Importance <String>]
  [-LastEditedDateTime <DateTime>] [-LastModifiedDateTime <DateTime>] [-Locale <String>]
- [-Mentions <IMicrosoftGraphChatMessageMention[]>] [-MessageType <String>]
+ [-Mentions <IMicrosoftGraphChatMessageMention1[]>] [-MessageType <String>]
  [-PolicyViolation <IMicrosoftGraphChatMessagePolicyViolation>]
  [-Reactions <IMicrosoftGraphChatMessageReaction[]>] [-Replies <IMicrosoftGraphChatMessage1[]>]
  [-ReplyToId <String>] [-Subject <String>] [-Summary <String>] [-WebUrl <String>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity
+### UpdateViaIdentity1
 ```
 Update-MgTeamChannelMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphChatMessage1>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property messages in teams
+A collection of all the messages in the channel.
+A navigation property.
+Nullable.
 
 ## EXAMPLES
 
@@ -66,7 +70,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -83,7 +87,7 @@ To construct, see NOTES section for ATTACHMENTS properties and create a hash tab
 
 ```yaml
 Type: IMicrosoftGraphChatMessageAttachment[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -99,7 +103,7 @@ To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphItemBody
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -115,7 +119,7 @@ To construct, see NOTES section for BODYPARAMETER properties and create a hash t
 
 ```yaml
 Type: IMicrosoftGraphChatMessage1
-Parameter Sets: Update, UpdateViaIdentity
+Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -130,7 +134,7 @@ key: id of channel
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -146,7 +150,7 @@ To construct, see NOTES section for CHANNELIDENTITY properties and create a hash
 
 ```yaml
 Type: IMicrosoftGraphChannelIdentity
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -161,7 +165,7 @@ If the message was sent in a chat, represents the identity of the chat.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -176,7 +180,7 @@ key: id of chatMessage
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -191,7 +195,7 @@ Timestamp of when the chat message was created.
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -207,7 +211,7 @@ Timestamp at which the chat message was deleted, or null if not deleted.
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -223,7 +227,7 @@ Version number of the chat message.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -234,12 +238,11 @@ Accept wildcard characters: False
 ```
 
 ### -From
-identitySet
-To construct, see NOTES section for FROM properties and create a hash table.
+chatMessageFromIdentitySet
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: Hashtable
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -250,13 +253,12 @@ Accept wildcard characters: False
 ```
 
 ### -HostedContents
-Content in a message hosted by Microsoft Teams e.g.
-images, code snippets etc.
+Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 To construct, see NOTES section for HOSTEDCONTENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphChatMessageHostedContent[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -271,7 +273,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -286,7 +288,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -302,7 +304,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -320,7 +322,7 @@ If no edits are made the value is null.
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -336,7 +338,7 @@ Timestamp when the chat message is created (initial setting) or modified, includ
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -352,7 +354,7 @@ Always set to en-us.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -368,8 +370,8 @@ Currently supports user, bot, team, channel.
 To construct, see NOTES section for MENTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatMessageMention[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: IMicrosoftGraphChatMessageMention1[]
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -384,7 +386,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -415,7 +417,7 @@ To construct, see NOTES section for POLICYVIOLATION properties and create a hash
 
 ```yaml
 Type: IMicrosoftGraphChatMessagePolicyViolation
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -431,7 +433,7 @@ To construct, see NOTES section for REACTIONS properties and create a hash table
 
 ```yaml
 Type: IMicrosoftGraphChatMessageReaction[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -447,7 +449,7 @@ To construct, see NOTES section for REPLIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphChatMessage1[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -464,7 +466,7 @@ ID of the parent chat message or root chat message of the thread.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -479,7 +481,7 @@ The subject of the chat message, in plaintext.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -495,7 +497,7 @@ Only applies to channel chat messages, not chat messages in a chat.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -510,7 +512,7 @@ key: id of team
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -526,7 +528,7 @@ Link to the message in Microsoft Teams.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -573,13 +575,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessage1
-
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -624,7 +623,7 @@ BODYPARAMETER <IMicrosoftGraphChatMessage1>: chatMessage
   - `[CreatedDateTime <DateTime?>]`: Timestamp of when the chat message was created.
   - `[DeletedDateTime <DateTime?>]`: Read only. Timestamp at which the chat message was deleted, or null if not deleted.
   - `[Etag <String>]`: Read-only. Version number of the chat message.
-  - `[From <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[From <IMicrosoftGraphChatMessageFromIdentitySet>]`: chatMessageFromIdentitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -632,7 +631,7 @@ BODYPARAMETER <IMicrosoftGraphChatMessage1>: chatMessage
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[HostedContents <IMicrosoftGraphChatMessageHostedContent[]>]`: Content in a message hosted by Microsoft Teams e.g. images, code snippets etc.
+  - `[HostedContents <IMicrosoftGraphChatMessageHostedContent[]>]`: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
     - `[ContentBytes <Byte[]>]`: Write only. Bytes for the hosted content (such as images).
     - `[ContentType <String>]`: Write only. Content type, such as image/png, image/jpg.
     - `[Id <String>]`: Read-only.
@@ -640,10 +639,19 @@ BODYPARAMETER <IMicrosoftGraphChatMessage1>: chatMessage
   - `[LastEditedDateTime <DateTime?>]`: Read only. Timestamp when edits to the chat message were made. Triggers an 'Edited' flag in the Teams UI. If no edits are made the value is null.
   - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
   - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
-  - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Currently supports user, bot, team, channel.
+  - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Currently supports user, bot, team, channel.
     - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
     - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
-    - `[Mentioned <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[Device <IMicrosoftGraphIdentity>]`: identity
+      - `[User <IMicrosoftGraphIdentity>]`: identity
+      - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity.
+        - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
   - `[MessageType <String>]`: 
   - `[PolicyViolation <IMicrosoftGraphChatMessagePolicyViolation>]`: chatMessagePolicyViolation
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -659,7 +667,11 @@ BODYPARAMETER <IMicrosoftGraphChatMessage1>: chatMessage
   - `[Reactions <IMicrosoftGraphChatMessageReaction[]>]`: Reactions for this chat message (for example, Like).
     - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[ReactionType <String>]`: Supported values are like, angry, sad, laugh, heart, surprised.
-    - `[User <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[Device <IMicrosoftGraphIdentity>]`: identity
+      - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[Replies <IMicrosoftGraphChatMessage1[]>]`: Replies for a specified message.
   - `[ReplyToId <String>]`: Read-only. ID of the parent chat message or root chat message of the thread. (Only applies to chat messages in channels, not chats.)
   - `[Subject <String>]`: The subject of the chat message, in plaintext.
@@ -671,16 +683,7 @@ CHANNELIDENTITY <IMicrosoftGraphChannelIdentity>: channelIdentity
   - `[ChannelId <String>]`: The identity of the channel in which the message was posted.
   - `[TeamId <String>]`: The identity of the team in which the message was posted.
 
-FROM <IMicrosoftGraphIdentitySet>: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
-
-HOSTEDCONTENTS <IMicrosoftGraphChatMessageHostedContent[]>: Content in a message hosted by Microsoft Teams e.g. images, code snippets etc.
+HOSTEDCONTENTS <IMicrosoftGraphChatMessageHostedContent[]>: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
   - `[ContentBytes <Byte[]>]`: Write only. Bytes for the hosted content (such as images).
   - `[ContentType <String>]`: Write only. Content type, such as image/png, image/jpg.
   - `[Id <String>]`: Read-only.
@@ -716,10 +719,10 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: key: id of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
-MENTIONS <IMicrosoftGraphChatMessageMention[]>: List of entities mentioned in the chat message. Currently supports user, bot, team, channel.
+MENTIONS <IMicrosoftGraphChatMessageMention1[]>: List of entities mentioned in the chat message. Currently supports user, bot, team, channel.
   - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
   - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
-  - `[Mentioned <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -727,6 +730,11 @@ MENTIONS <IMicrosoftGraphChatMessageMention[]>: List of entities mentioned in th
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
+    - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
+      - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
 
 POLICYVIOLATION <IMicrosoftGraphChatMessagePolicyViolation>: chatMessagePolicyViolation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -743,7 +751,7 @@ POLICYVIOLATION <IMicrosoftGraphChatMessagePolicyViolation>: chatMessagePolicyVi
 REACTIONS <IMicrosoftGraphChatMessageReaction[]>: Reactions for this chat message (for example, Like).
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[ReactionType <String>]`: Supported values are like, angry, sad, laugh, heart, surprised.
-  - `[User <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -773,7 +781,7 @@ REPLIES <IMicrosoftGraphChatMessage1[]>: Replies for a specified message.
   - `[CreatedDateTime <DateTime?>]`: Timestamp of when the chat message was created.
   - `[DeletedDateTime <DateTime?>]`: Read only. Timestamp at which the chat message was deleted, or null if not deleted.
   - `[Etag <String>]`: Read-only. Version number of the chat message.
-  - `[From <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[From <IMicrosoftGraphChatMessageFromIdentitySet>]`: chatMessageFromIdentitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -781,7 +789,7 @@ REPLIES <IMicrosoftGraphChatMessage1[]>: Replies for a specified message.
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[HostedContents <IMicrosoftGraphChatMessageHostedContent[]>]`: Content in a message hosted by Microsoft Teams e.g. images, code snippets etc.
+  - `[HostedContents <IMicrosoftGraphChatMessageHostedContent[]>]`: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
     - `[ContentBytes <Byte[]>]`: Write only. Bytes for the hosted content (such as images).
     - `[ContentType <String>]`: Write only. Content type, such as image/png, image/jpg.
     - `[Id <String>]`: Read-only.
@@ -789,10 +797,19 @@ REPLIES <IMicrosoftGraphChatMessage1[]>: Replies for a specified message.
   - `[LastEditedDateTime <DateTime?>]`: Read only. Timestamp when edits to the chat message were made. Triggers an 'Edited' flag in the Teams UI. If no edits are made the value is null.
   - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
   - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
-  - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Currently supports user, bot, team, channel.
+  - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Currently supports user, bot, team, channel.
     - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
     - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
-    - `[Mentioned <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[Device <IMicrosoftGraphIdentity>]`: identity
+      - `[User <IMicrosoftGraphIdentity>]`: identity
+      - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity.
+        - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
   - `[MessageType <String>]`: 
   - `[PolicyViolation <IMicrosoftGraphChatMessagePolicyViolation>]`: chatMessagePolicyViolation
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -808,7 +825,11 @@ REPLIES <IMicrosoftGraphChatMessage1[]>: Replies for a specified message.
   - `[Reactions <IMicrosoftGraphChatMessageReaction[]>]`: Reactions for this chat message (for example, Like).
     - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[ReactionType <String>]`: Supported values are like, angry, sad, laugh, heart, surprised.
-    - `[User <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[Device <IMicrosoftGraphIdentity>]`: identity
+      - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[Replies <IMicrosoftGraphChatMessage1[]>]`: Replies for a specified message.
   - `[ReplyToId <String>]`: Read-only. ID of the parent chat message or root chat message of the thread. (Only applies to chat messages in channels, not chats.)
   - `[Subject <String>]`: The subject of the chat message, in plaintext.

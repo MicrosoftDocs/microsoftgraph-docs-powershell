@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgGroupThreadPostSingleValueExtendedProperty
 
 ## SYNOPSIS
-Update the navigation property singleValueExtendedProperties in groups
+The collection of single-value extended properties defined for the post.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -42,7 +44,9 @@ Update-MgGroupThreadPostSingleValueExtendedProperty -InputObject <IGroupsIdentit
 ```
 
 ## DESCRIPTION
-Update the navigation property singleValueExtendedProperties in groups
+The collection of single-value extended properties defined for the post.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -237,13 +241,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSingleValueLegacyExtendedProperty
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

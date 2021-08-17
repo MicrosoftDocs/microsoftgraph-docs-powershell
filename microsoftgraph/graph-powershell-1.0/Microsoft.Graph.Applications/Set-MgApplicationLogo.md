@@ -8,7 +8,8 @@ schema: 2.0.0
 # Set-MgApplicationLogo
 
 ## SYNOPSIS
-Update media content for application in applications
+The main logo for the application.
+Not nullable.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Set-MgApplicationLogo -InputObject <IApplicationsIdentity> [-BodyParameter <Stre
 ```
 
 ## DESCRIPTION
-Update media content for application in applications
+The main logo for the application.
+Not nullable.
 
 ## EXAMPLES
 
@@ -146,13 +148,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ### System.IO.Stream
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -1,14 +1,15 @@
 ---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/set-mgapplicationcreatedonbehalfofbyref
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/set-mgapplicationconnectorgroupbyref
 schema: 2.0.0
 ---
 
 # Set-MgApplicationConnectorGroupByRef
 
 ## SYNOPSIS
-Update the ref of navigation property connectorGroup in applications
+The connectorGroup the application is using with Azure AD Application Proxy.
+Nullable.
 
 ## SYNTAX
 
@@ -37,7 +38,8 @@ Set-MgApplicationConnectorGroupByRef -InputObject <IApplicationsIdentity> -BodyP
 ```
 
 ## DESCRIPTION
-Update the ref of navigation property connectorGroup in applications
+The connectorGroup the application is using with Azure AD Application Proxy.
+Nullable.
 
 ## EXAMPLES
 
@@ -156,13 +158,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

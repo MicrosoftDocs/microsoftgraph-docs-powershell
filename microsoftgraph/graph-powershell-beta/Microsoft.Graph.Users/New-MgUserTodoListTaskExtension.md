@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgUserTodoListTaskExtension
 
 ## SYNOPSIS
-Create new navigation property to extensions for users
+The collection of open extensions defined for the task.
+Nullable.
 
 ## SYNTAX
 
@@ -37,7 +38,8 @@ New-MgUserTodoListTaskExtension -InputObject <IUsersIdentity> -BodyParameter <Ha
 ```
 
 ## DESCRIPTION
-Create new navigation property to extensions for users
+The collection of open extensions defined for the task.
+Nullable.
 
 ## EXAMPLES
 
@@ -186,13 +188,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

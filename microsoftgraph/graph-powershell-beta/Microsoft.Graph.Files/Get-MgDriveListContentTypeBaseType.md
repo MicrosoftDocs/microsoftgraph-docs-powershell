@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDriveListContentTypeBaseType
 
 ## SYNOPSIS
-Get baseTypes from drives
+The collection of content types that are ancestors of this content type.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgDriveListContentTypeBaseType -ContentTypeId <String> -DriveId <String> [-E
 ```
 
 ## DESCRIPTION
-Get baseTypes from drives
+The collection of content types that are ancestors of this content type.
 
 ## EXAMPLES
 
@@ -214,7 +214,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentType
-
 ## NOTES
 
 ALIASES

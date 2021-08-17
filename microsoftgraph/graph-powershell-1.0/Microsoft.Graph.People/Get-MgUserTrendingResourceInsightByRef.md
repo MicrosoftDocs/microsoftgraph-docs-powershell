@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserTrendingResourceInsightByRef
 
 ## SYNOPSIS
-Get ref of resource from users
+Used for navigating to the trending document.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Get-MgUserTrendingResourceInsightByRef -InputObject <IPeopleIdentity> [<CommonPa
 ```
 
 ## DESCRIPTION
-Get ref of resource from users
+Used for navigating to the trending document.
 
 ## EXAMPLES
 
@@ -81,11 +81,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

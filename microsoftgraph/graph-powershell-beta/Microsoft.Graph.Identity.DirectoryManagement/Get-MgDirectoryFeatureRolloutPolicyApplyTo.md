@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgDirectoryFeatureRolloutPolicyApplyTo
 
 ## SYNOPSIS
-Get appliesTo from directory
+Nullable.
+Specifies a list of directoryObjects that feature is enabled for.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgDirectoryFeatureRolloutPolicyApplyTo -InputObject <IIdentityDirectoryManag
 ```
 
 ## DESCRIPTION
-Get appliesTo from directory
+Nullable.
+Specifies a list of directoryObjects that feature is enabled for.
 
 ## EXAMPLES
 
@@ -241,11 +243,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
-
 ## NOTES
 
 ALIASES

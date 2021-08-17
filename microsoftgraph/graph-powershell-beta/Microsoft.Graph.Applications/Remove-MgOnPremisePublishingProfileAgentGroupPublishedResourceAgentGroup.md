@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroup
 
 ## SYNOPSIS
-Delete navigation property agentGroups for onPremisesPublishingProfiles
+List of onPremisesAgentGroups that a publishedResource is assigned to.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -39,7 +41,9 @@ Remove-MgOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroup -InputO
 ```
 
 ## DESCRIPTION
-Delete navigation property agentGroups for onPremisesPublishingProfiles
+List of onPremisesAgentGroups that a publishedResource is assigned to.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -203,11 +207,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

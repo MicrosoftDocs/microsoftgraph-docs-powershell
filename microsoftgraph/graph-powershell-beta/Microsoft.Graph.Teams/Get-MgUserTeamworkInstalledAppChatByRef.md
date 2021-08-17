@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserTeamworkInstalledAppChatByRef
 
 ## SYNOPSIS
-Get ref of chat from users
+The chat between the user and Teams app.
 
 ## SYNTAX
 
@@ -24,7 +24,7 @@ Get-MgUserTeamworkInstalledAppChatByRef -InputObject <ITeamsIdentity> [<CommonPa
 ```
 
 ## DESCRIPTION
-Get ref of chat from users
+The chat between the user and Teams app.
 
 ## EXAMPLES
 
@@ -82,11 +82,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

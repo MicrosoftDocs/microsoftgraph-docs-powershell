@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgPrintOperation
 
 ## SYNOPSIS
-Update the navigation property operations in print
+The list of print long running operations.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Update-MgPrintOperation -InputObject <IDevicesCloudPrintIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property operations in print
+The list of print long running operations.
 
 ## EXAMPLES
 
@@ -206,13 +206,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintOperation
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgGroupConversationThreadPostExtension
 
 ## SYNOPSIS
-Update the navigation property extensions in groups
+The collection of open extensions defined for the post.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -39,7 +41,9 @@ Update-MgGroupConversationThreadPostExtension -InputObject <IGroupsIdentity> -Bo
 ```
 
 ## DESCRIPTION
-Update the navigation property extensions in groups
+The collection of open extensions defined for the post.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -233,13 +237,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

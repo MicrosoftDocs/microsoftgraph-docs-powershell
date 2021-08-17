@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Reports
-Module Guid: 8a3adbff-1e92-4c5f-8015-6abb438c73b5
+Module Guid: e5a6f43b-1495-412c-82b0-30cc39f6f4b2
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports
 Help Version: 1.0.0.0
 Locale: en-US
@@ -12,7 +12,8 @@ Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Reports Cmdlets
 ### [Get-MgAuditLogDirectoryAudit](Get-MgAuditLogDirectoryAudit.md)
-Get directoryAudits from auditLogs
+Read-only.
+Nullable.
 
 ### [Get-MgAuditLogProvisioning](Get-MgAuditLogProvisioning.md)
 Get provisioning from auditLogs
@@ -21,16 +22,17 @@ Get provisioning from auditLogs
 Get restrictedSignIns from auditLogs
 
 ### [Get-MgAuditLogSignIn](Get-MgAuditLogSignIn.md)
-Get signIns from auditLogs
+Read-only.
+Nullable.
 
 ### [Get-MgReportDailyPrintUsage](Get-MgReportDailyPrintUsage.md)
 Get dailyPrintUsageByPrinter from reports
 
 ### [Get-MgReportDeviceConfigurationDeviceActivity](Get-MgReportDeviceConfigurationDeviceActivity.md)
-Invoke function deviceConfigurationDeviceActivity
+Metadata for the device configuration device activity report
 
 ### [Get-MgReportDeviceConfigurationUserActivity](Get-MgReportDeviceConfigurationUserActivity.md)
-Invoke function deviceConfigurationUserActivity
+Metadata for the device configuration user activity report
 
 ### [Get-MgReportEmailActivityCount](Get-MgReportEmailActivityCount.md)
 Invoke function getEmailActivityCounts

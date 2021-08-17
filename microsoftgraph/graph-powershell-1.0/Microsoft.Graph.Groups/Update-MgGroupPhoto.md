@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgGroupPhoto
 
 ## SYNOPSIS
-Update the navigation property photo in groups
+The group's profile photo.
 
 ## SYNTAX
 
@@ -61,7 +61,7 @@ Update-MgGroupPhoto -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGra
 ```
 
 ## DESCRIPTION
-Update the navigation property photo in groups
+The group's profile photo.
 
 ## EXAMPLES
 
@@ -243,13 +243,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProfilePhoto
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

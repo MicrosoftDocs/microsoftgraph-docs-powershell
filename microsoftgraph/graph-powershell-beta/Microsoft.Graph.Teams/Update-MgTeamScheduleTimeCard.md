@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -Breaks
-.
+The list of breaks associated with the timeCard.
 To construct, see NOTES section for BREAKS properties and create a hash table.
 
 ```yaml
@@ -335,7 +335,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserId
-.
+User ID to which the timeCard belongs.
 
 ```yaml
 Type: String
@@ -386,13 +386,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTimeCard
-
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -416,12 +413,12 @@ BODYPARAMETER <IMicrosoftGraphTimeCard>: timeCard
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Id <String>]`: Read-only.
-  - `[Breaks <IMicrosoftGraphTimeCardBreak[]>]`: 
-    - `[BreakId <String>]`: 
+  - `[Breaks <IMicrosoftGraphTimeCardBreak[]>]`: The list of breaks associated with the timeCard.
+    - `[BreakId <String>]`: ID of the timeCardBreak.
     - `[End <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[AtApprovedLocation <Boolean?>]`: 
-      - `[DateTime <DateTime?>]`: 
+      - `[AtApprovedLocation <Boolean?>]`: Indicates whether the entry was recorded at the approved location.
+      - `[DateTime <DateTime?>]`: The time the entry is recorded.
       - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Content <String>]`: The content of the item.
@@ -434,18 +431,18 @@ BODYPARAMETER <IMicrosoftGraphTimeCard>: timeCard
   - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
   - `[OriginalEntry <IMicrosoftGraphTimeCardEntry>]`: timeCardEntry
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Breaks <IMicrosoftGraphTimeCardBreak[]>]`: 
+    - `[Breaks <IMicrosoftGraphTimeCardBreak[]>]`: The list of breaks associated with the timeCard.
     - `[ClockInEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
     - `[ClockOutEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
   - `[State <String>]`: timeCardState
-  - `[UserId <String>]`: 
+  - `[UserId <String>]`: User ID to which  the timeCard belongs.
 
-BREAKS <IMicrosoftGraphTimeCardBreak[]>: .
-  - `[BreakId <String>]`: 
+BREAKS <IMicrosoftGraphTimeCardBreak[]>: The list of breaks associated with the timeCard.
+  - `[BreakId <String>]`: ID of the timeCardBreak.
   - `[End <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AtApprovedLocation <Boolean?>]`: 
-    - `[DateTime <DateTime?>]`: 
+    - `[AtApprovedLocation <Boolean?>]`: Indicates whether the entry was recorded at the approved location.
+    - `[DateTime <DateTime?>]`: The time the entry is recorded.
     - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Content <String>]`: The content of the item.
@@ -455,8 +452,8 @@ BREAKS <IMicrosoftGraphTimeCardBreak[]>: .
 
 CLOCKINEVENT <IMicrosoftGraphTimeCardEvent>: timeCardEvent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AtApprovedLocation <Boolean?>]`: 
-  - `[DateTime <DateTime?>]`: 
+  - `[AtApprovedLocation <Boolean?>]`: Indicates whether the entry was recorded at the approved location.
+  - `[DateTime <DateTime?>]`: The time the entry is recorded.
   - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Content <String>]`: The content of the item.
@@ -464,8 +461,8 @@ CLOCKINEVENT <IMicrosoftGraphTimeCardEvent>: timeCardEvent
 
 CLOCKOUTEVENT <IMicrosoftGraphTimeCardEvent>: timeCardEvent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AtApprovedLocation <Boolean?>]`: 
-  - `[DateTime <DateTime?>]`: 
+  - `[AtApprovedLocation <Boolean?>]`: Indicates whether the entry was recorded at the approved location.
+  - `[DateTime <DateTime?>]`: The time the entry is recorded.
   - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Content <String>]`: The content of the item.
@@ -527,12 +524,12 @@ NOTES <IMicrosoftGraphItemBody>: itemBody
 
 ORIGINALENTRY <IMicrosoftGraphTimeCardEntry>: timeCardEntry
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Breaks <IMicrosoftGraphTimeCardBreak[]>]`: 
-    - `[BreakId <String>]`: 
+  - `[Breaks <IMicrosoftGraphTimeCardBreak[]>]`: The list of breaks associated with the timeCard.
+    - `[BreakId <String>]`: ID of the timeCardBreak.
     - `[End <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[AtApprovedLocation <Boolean?>]`: 
-      - `[DateTime <DateTime?>]`: 
+      - `[AtApprovedLocation <Boolean?>]`: Indicates whether the entry was recorded at the approved location.
+      - `[DateTime <DateTime?>]`: The time the entry is recorded.
       - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Content <String>]`: The content of the item.

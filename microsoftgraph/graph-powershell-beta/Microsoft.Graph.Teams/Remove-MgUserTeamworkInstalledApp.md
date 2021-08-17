@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserTeamworkInstalledApp
 
 ## SYNOPSIS
-Delete navigation property installedApps for users
+The apps installed in the personal scope of this user.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgUserTeamworkInstalledApp -InputObject <ITeamsIdentity> [-IfMatch <Strin
 ```
 
 ## DESCRIPTION
-Delete navigation property installedApps for users
+The apps installed in the personal scope of this user.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

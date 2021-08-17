@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementGroupPolicyCategoryChildByRef
 
 ## SYNOPSIS
-Get ref of children from deviceManagement
+The children categories
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgDeviceManagementGroupPolicyCategoryChildByRef -GroupPolicyCategoryId <Stri
 ```
 
 ## DESCRIPTION
-Get ref of children from deviceManagement
+The children categories
 
 ## EXAMPLES
 
@@ -169,7 +169,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

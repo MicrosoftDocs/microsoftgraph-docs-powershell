@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSetting
 
 ## SYNOPSIS
-Update the navigation property androidManagedStoreAccountEnterpriseSettings in deviceManagement
+The singleton Android managed store account enterprise settings entity.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ Update-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSetting
 ```
 
 ## DESCRIPTION
-Update the navigation property androidManagedStoreAccountEnterpriseSettings in deviceManagement
+The singleton Android managed store account enterprise settings entity.
 
 ## EXAMPLES
 
@@ -300,11 +300,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAndroidManagedStoreAccountEnterpriseSettings
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

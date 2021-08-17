@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgChatMember
 
 ## SYNOPSIS
-Update the navigation property members in chats
+A collection of all the members in the chat.
+Nullable.
 
 ## SYNTAX
 
@@ -39,7 +40,8 @@ Update-MgChatMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGrap
 ```
 
 ## DESCRIPTION
-Update the navigation property members in chats
+A collection of all the members in the chat.
+Nullable.
 
 ## EXAMPLES
 
@@ -235,13 +237,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversationMember
-
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgSiteListDrive
 
 ## SYNOPSIS
-Delete navigation property drive for sites
+Only present on document libraries.
+Allows access to the list as a [drive][] resource with [driveItems][driveItem].
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgSiteListDrive -InputObject <ISitesIdentity> [-IfMatch <String>] [-PassT
 ```
 
 ## DESCRIPTION
-Delete navigation property drive for sites
+Only present on document libraries.
+Allows access to the list as a [drive][] resource with [driveItems][driveItem].
 
 ## EXAMPLES
 
@@ -144,11 +146,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

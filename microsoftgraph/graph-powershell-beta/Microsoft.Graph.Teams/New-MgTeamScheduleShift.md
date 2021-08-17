@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgTeamScheduleShift
 
 ## SYNOPSIS
-Create new navigation property to shifts for teams
+The shifts in the schedule.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ New-MgTeamScheduleShift -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoft
 ```
 
 ## DESCRIPTION
-Create new navigation property to shifts for teams
+The shifts in the schedule.
 
 ## EXAMPLES
 
@@ -308,13 +308,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphShift
-
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphShift
-
 ## NOTES
 
 ALIASES

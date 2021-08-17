@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserTodoList
 
 ## SYNOPSIS
-Delete navigation property lists for users
+The task lists in the users mailbox.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgUserTodoList -InputObject <IUsersIdentity> [-IfMatch <String>] [-PassTh
 ```
 
 ## DESCRIPTION
-Delete navigation property lists for users
+The task lists in the users mailbox.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

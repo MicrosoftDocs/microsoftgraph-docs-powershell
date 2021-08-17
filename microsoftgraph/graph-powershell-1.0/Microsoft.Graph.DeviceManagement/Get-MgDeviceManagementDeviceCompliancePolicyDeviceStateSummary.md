@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary
 
 ## SYNOPSIS
-Get deviceCompliancePolicyDeviceStateSummary from deviceManagement
+The device compliance state summary for this account.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-Get deviceCompliancePolicyDeviceStateSummary from deviceManagement
+The device compliance state summary for this account.
 
 ## EXAMPLES
 
@@ -62,7 +62,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicyDeviceStateSummary
-
 ## NOTES
 
 ALIASES

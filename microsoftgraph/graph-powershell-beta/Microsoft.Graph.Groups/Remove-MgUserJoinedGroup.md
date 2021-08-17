@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgUserJoinedGroup
 
 ## SYNOPSIS
-Delete navigation property joinedGroups for users
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgUserJoinedGroup -InputObject <IGroupsIdentity> [-IfMatch <String>] [-Pa
 ```
 
 ## DESCRIPTION
-Delete navigation property joinedGroups for users
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -144,11 +146,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

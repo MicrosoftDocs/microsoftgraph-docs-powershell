@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteExternalColumnByRef
 
 ## SYNOPSIS
-Get ref of externalColumns from sites
+The collection of column definitions available in the site that are referenced from the sites in the parent hierarchy of the current site.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-MgSiteExternalColumnByRef -SiteId <String> [-Filter <String>] [-Search <Stri
 ```
 
 ## DESCRIPTION
-Get ref of externalColumns from sites
+The collection of column definitions available in the site that are referenced from the sites in the parent hierarchy of the current site.
 
 ## EXAMPLES
 
@@ -168,7 +168,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

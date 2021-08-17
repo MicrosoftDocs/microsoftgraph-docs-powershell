@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgUserMessage
 
 ## SYNOPSIS
-Create new navigation property to messages for users
+The messages in a mailbox or folder.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -69,7 +71,9 @@ New-MgUserMessage -InputObject <IMailIdentity> -BodyParameter <IMicrosoftGraphMe
 ```
 
 ## DESCRIPTION
-Create new navigation property to messages for users
+The messages in a mailbox or folder.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -800,13 +804,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMailIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMessage1
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMessage1
-
 ## NOTES
 
 ALIASES

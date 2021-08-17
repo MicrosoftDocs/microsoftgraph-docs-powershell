@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgUserContactFolderSingleValueExtendedProperty
 
 ## SYNOPSIS
-Create new navigation property to singleValueExtendedProperties for users
+The collection of single-value extended properties defined for the contactFolder.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -37,7 +39,9 @@ New-MgUserContactFolderSingleValueExtendedProperty -InputObject <IPersonalContac
 ```
 
 ## DESCRIPTION
-Create new navigation property to singleValueExtendedProperties for users
+The collection of single-value extended properties defined for the contactFolder.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -187,13 +191,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSingleValueLegacyExtendedProperty
-
 ### Microsoft.Graph.PowerShell.Models.IPersonalContactsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSingleValueLegacyExtendedProperty
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementDeviceConfigurationUserStateSummary
 
 ## SYNOPSIS
-Update the navigation property deviceConfigurationUserStateSummaries in deviceManagement
+The device configuration user state summary for this account.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Update-MgDeviceManagementDeviceConfigurationUserStateSummary
 ```
 
 ## DESCRIPTION
-Update the navigation property deviceConfigurationUserStateSummaries in deviceManagement
+The device configuration user state summary for this account.
 
 ## EXAMPLES
 
@@ -237,11 +237,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationUserStateSummary
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

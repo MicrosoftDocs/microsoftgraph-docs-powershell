@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSetting
 
 ## SYNOPSIS
-Delete navigation property androidManagedStoreAccountEnterpriseSettings for deviceManagement
+The singleton Android managed store account enterprise settings entity.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Remove-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSetting [-IfMatch <
 ```
 
 ## DESCRIPTION
-Delete navigation property androidManagedStoreAccountEnterpriseSettings for deviceManagement
+The singleton Android managed store account enterprise settings entity.
 
 ## EXAMPLES
 
@@ -93,7 +93,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

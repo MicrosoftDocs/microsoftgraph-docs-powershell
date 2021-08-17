@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDriveListContentTypeBaseTypeByRef
 
 ## SYNOPSIS
-Get ref of baseTypes from drives
+The collection of content types that are ancestors of this content type.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgDriveListContentTypeBaseTypeByRef -ContentTypeId <String> -DriveId <String
 ```
 
 ## DESCRIPTION
-Get ref of baseTypes from drives
+The collection of content types that are ancestors of this content type.
 
 ## EXAMPLES
 
@@ -184,7 +184,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

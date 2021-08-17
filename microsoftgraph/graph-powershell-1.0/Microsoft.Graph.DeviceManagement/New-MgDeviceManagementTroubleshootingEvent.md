@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementTroubleshootingEvent
 
 ## SYNOPSIS
-Create new navigation property to troubleshootingEvents for deviceManagement
+The list of troubleshooting events for the tenant.
 
 ## SYNTAX
 
@@ -20,13 +20,12 @@ New-MgDeviceManagementTroubleshootingEvent [-AdditionalProperties <Hashtable>] [
 
 ### Create1
 ```
-New-MgDeviceManagementTroubleshootingEvent
- -BodyParameter <IMicrosoftGraphDeviceManagementTroubleshootingEvent1> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgDeviceManagementTroubleshootingEvent -BodyParameter <IMicrosoftGraphDeviceManagementTroubleshootingEvent>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create new navigation property to troubleshootingEvents for deviceManagement
+The list of troubleshooting events for the tenant.
 
 ## EXAMPLES
 
@@ -52,7 +51,7 @@ Event representing an general failure.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementTroubleshootingEvent1
+Type: IMicrosoftGraphDeviceManagementTroubleshootingEvent
 Parameter Sets: Create1
 Aliases:
 
@@ -144,12 +143,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementTroubleshootingEvent1
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementTroubleshootingEvent
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementTroubleshootingEvent1
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementTroubleshootingEvent
 ## NOTES
 
 ALIASES
@@ -159,7 +156,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphDeviceManagementTroubleshootingEvent1>: Event representing an general failure.
+BODYPARAMETER <IMicrosoftGraphDeviceManagementTroubleshootingEvent>: Event representing an general failure.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
   - `[CorrelationId <String>]`: Id used for tracing the failure in the service.

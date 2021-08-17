@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgDriveItem
 
 ## SYNOPSIS
-Delete navigation property items for drives
+All items contained in the drive.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +27,9 @@ Remove-MgDriveItem -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassThru]
 ```
 
 ## DESCRIPTION
-Delete navigation property items for drives
+All items contained in the drive.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -144,11 +148,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

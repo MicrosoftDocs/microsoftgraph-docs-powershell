@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceUsageRights
 
 ## SYNOPSIS
-Create new navigation property to usageRights for devices
+Represents the usage rights a device has been granted.
 
 ## SYNTAX
 
@@ -38,7 +38,7 @@ New-MgDeviceUsageRights -InputObject <IIdentityDirectoryManagementIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to usageRights for devices
+Represents the usage rights a device has been granted.
 
 ## EXAMPLES
 
@@ -203,13 +203,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUsageRight
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUsageRight
-
 ## NOTES
 
 ALIASES

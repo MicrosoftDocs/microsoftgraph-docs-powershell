@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgEducationUserSchool
 
 ## SYNOPSIS
-Get schools from education
+Schools to which the user belongs.
+Nullable.
 
 ## SYNTAX
 
@@ -19,7 +20,8 @@ Get-MgEducationUserSchool -EducationUserId <String> [-ExpandProperty <String[]>]
 ```
 
 ## DESCRIPTION
-Get schools from education
+Schools to which the user belongs.
+Nullable.
 
 ## EXAMPLES
 
@@ -199,7 +201,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSchool1
-
 ## NOTES
 
 ALIASES

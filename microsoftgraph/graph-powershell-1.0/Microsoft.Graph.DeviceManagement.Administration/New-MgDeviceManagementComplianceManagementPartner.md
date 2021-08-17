@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementComplianceManagementPartner
 
 ## SYNOPSIS
-Create new navigation property to complianceManagementPartners for deviceManagement
+The list of Compliance Management Partners configured by the tenant.
 
 ## SYNTAX
 
@@ -30,7 +30,7 @@ New-MgDeviceManagementComplianceManagementPartner -BodyParameter <IMicrosoftGrap
 ```
 
 ## DESCRIPTION
-Create new navigation property to complianceManagementPartners for deviceManagement
+The list of Compliance Management Partners configured by the tenant.
 
 ## EXAMPLES
 
@@ -257,11 +257,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComplianceManagementPartner
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComplianceManagementPartner
-
 ## NOTES
 
 ALIASES

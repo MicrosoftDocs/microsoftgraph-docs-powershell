@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgEducationSchoolClassByRef
 
 ## SYNOPSIS
-Get ref of classes from education
+Classes taught at the school.
+Nullable.
 
 ## SYNTAX
 
@@ -19,7 +20,8 @@ Get-MgEducationSchoolClassByRef -EducationSchoolId <String> [-Filter <String>] [
 ```
 
 ## DESCRIPTION
-Get ref of classes from education
+Classes taught at the school.
+Nullable.
 
 ## EXAMPLES
 
@@ -169,7 +171,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

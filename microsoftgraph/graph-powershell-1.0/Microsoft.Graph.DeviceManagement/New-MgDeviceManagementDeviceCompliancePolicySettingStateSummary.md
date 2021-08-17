@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementDeviceCompliancePolicySettingStateSummary
 
 ## SYNOPSIS
-Create new navigation property to deviceCompliancePolicySettingStateSummaries for deviceManagement
+The summary states of compliance policy settings for this account.
 
 ## SYNTAX
 
@@ -16,7 +16,7 @@ Create new navigation property to deviceCompliancePolicySettingStateSummaries fo
 ```
 New-MgDeviceManagementDeviceCompliancePolicySettingStateSummary [-AdditionalProperties <Hashtable>]
  [-CompliantDeviceCount <Int32>] [-ConflictDeviceCount <Int32>]
- [-DeviceComplianceSettingStates <IMicrosoftGraphDeviceComplianceSettingState1[]>] [-ErrorDeviceCount <Int32>]
+ [-DeviceComplianceSettingStates <IMicrosoftGraphDeviceComplianceSettingState[]>] [-ErrorDeviceCount <Int32>]
  [-Id <String>] [-NonCompliantDeviceCount <Int32>] [-NotApplicableDeviceCount <Int32>] [-PlatformType <String>]
  [-RemediatedDeviceCount <Int32>] [-Setting <String>] [-SettingName <String>] [-UnknownDeviceCount <Int32>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -25,12 +25,12 @@ New-MgDeviceManagementDeviceCompliancePolicySettingStateSummary [-AdditionalProp
 ### Create1
 ```
 New-MgDeviceManagementDeviceCompliancePolicySettingStateSummary
- -BodyParameter <IMicrosoftGraphDeviceCompliancePolicySettingStateSummary1> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphDeviceCompliancePolicySettingStateSummary> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create new navigation property to deviceCompliancePolicySettingStateSummaries for deviceManagement
+The summary states of compliance policy settings for this account.
 
 ## EXAMPLES
 
@@ -56,7 +56,7 @@ Device Compilance Policy Setting State summary across the account.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceCompliancePolicySettingStateSummary1
+Type: IMicrosoftGraphDeviceCompliancePolicySettingStateSummary
 Parameter Sets: Create1
 Aliases:
 
@@ -102,7 +102,7 @@ Not yet documented
 To construct, see NOTES section for DEVICECOMPLIANCESETTINGSTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceComplianceSettingState1[]
+Type: IMicrosoftGraphDeviceComplianceSettingState[]
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -284,12 +284,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicySettingStateSummary1
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicySettingStateSummary
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicySettingStateSummary1
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicySettingStateSummary
 ## NOTES
 
 ALIASES
@@ -299,12 +297,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphDeviceCompliancePolicySettingStateSummary1>: Device Compilance Policy Setting State summary across the account.
+BODYPARAMETER <IMicrosoftGraphDeviceCompliancePolicySettingStateSummary>: Device Compilance Policy Setting State summary across the account.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
   - `[CompliantDeviceCount <Int32?>]`: Number of compliant devices
   - `[ConflictDeviceCount <Int32?>]`: Number of conflict devices
-  - `[DeviceComplianceSettingStates <IMicrosoftGraphDeviceComplianceSettingState1[]>]`: Not yet documented
+  - `[DeviceComplianceSettingStates <IMicrosoftGraphDeviceComplianceSettingState[]>]`: Not yet documented
     - `[Id <String>]`: Read-only.
     - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
     - `[DeviceId <String>]`: The Device Id that is being reported
@@ -326,7 +324,7 @@ BODYPARAMETER <IMicrosoftGraphDeviceCompliancePolicySettingStateSummary1>: Devic
   - `[SettingName <String>]`: Name of the setting.
   - `[UnknownDeviceCount <Int32?>]`: Number of unknown devices
 
-DEVICECOMPLIANCESETTINGSTATES <IMicrosoftGraphDeviceComplianceSettingState1[]>: Not yet documented
+DEVICECOMPLIANCESETTINGSTATES <IMicrosoftGraphDeviceComplianceSettingState[]>: Not yet documented
   - `[Id <String>]`: Read-only.
   - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
   - `[DeviceId <String>]`: The Device Id that is being reported

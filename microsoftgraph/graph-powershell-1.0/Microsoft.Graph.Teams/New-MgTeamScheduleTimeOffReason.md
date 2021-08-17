@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgTeamScheduleTimeOffReason
 
 ## SYNOPSIS
-Create new navigation property to timeOffReasons for teams
+The set of reasons for a time off in the schedule.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ New-MgTeamScheduleTimeOffReason -InputObject <ITeamsIdentity> -BodyParameter <IM
 ```
 
 ## DESCRIPTION
-Create new navigation property to timeOffReasons for teams
+The set of reasons for a time off in the schedule.
 
 ## EXAMPLES
 
@@ -256,13 +256,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTimeOffReason1
-
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTimeOffReason1
-
 ## NOTES
 
 ALIASES

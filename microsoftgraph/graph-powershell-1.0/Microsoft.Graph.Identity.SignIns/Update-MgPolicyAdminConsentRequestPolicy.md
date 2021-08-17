@@ -12,7 +12,7 @@ Update the navigation property adminConsentRequestPolicy in policies
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### UpdateExpanded1 (Default)
 ```
 Update-MgPolicyAdminConsentRequestPolicy [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsEnabled]
  [-NotifyReviewers] [-RemindersEnabled] [-RequestDurationInDays <Int32>]
@@ -20,7 +20,7 @@ Update-MgPolicyAdminConsentRequestPolicy [-AdditionalProperties <Hashtable>] [-I
  [<CommonParameters>]
 ```
 
-### Update
+### Update1
 ```
 Update-MgPolicyAdminConsentRequestPolicy -BodyParameter <IMicrosoftGraphAdminConsentRequestPolicy1> [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -38,7 +38,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded
+Parameter Sets: UpdateExpanded1
 Aliases:
 
 Required: False
@@ -54,7 +54,7 @@ To construct, see NOTES section for BODYPARAMETER properties and create a hash t
 
 ```yaml
 Type: IMicrosoftGraphAdminConsentRequestPolicy1
-Parameter Sets: Update
+Parameter Sets: Update1
 Aliases:
 
 Required: True
@@ -69,7 +69,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded
+Parameter Sets: UpdateExpanded1
 Aliases:
 
 Required: False
@@ -85,7 +85,7 @@ Required.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: UpdateExpanded
+Parameter Sets: UpdateExpanded1
 Aliases:
 
 Required: False
@@ -101,7 +101,7 @@ Required.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: UpdateExpanded
+Parameter Sets: UpdateExpanded1
 Aliases:
 
 Required: False
@@ -132,7 +132,7 @@ Required.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: UpdateExpanded
+Parameter Sets: UpdateExpanded1
 Aliases:
 
 Required: False
@@ -147,7 +147,7 @@ Specifies the duration the request is active before it automatically expires if 
 
 ```yaml
 Type: Int32
-Parameter Sets: UpdateExpanded
+Parameter Sets: UpdateExpanded1
 Aliases:
 
 Required: False
@@ -163,7 +163,7 @@ To construct, see NOTES section for REVIEWERS properties and create a hash table
 
 ```yaml
 Type: IMicrosoftGraphAccessReviewReviewerScope1[]
-Parameter Sets: UpdateExpanded
+Parameter Sets: UpdateExpanded1
 Aliases:
 
 Required: False
@@ -180,7 +180,7 @@ Read-only.
 
 ```yaml
 Type: Int32
-Parameter Sets: UpdateExpanded
+Parameter Sets: UpdateExpanded1
 Aliases:
 
 Required: False
@@ -227,11 +227,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAdminConsentRequestPolicy1
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -250,13 +248,13 @@ BODYPARAMETER <IMicrosoftGraphAdminConsentRequestPolicy1>: adminConsentRequestPo
   - `[RequestDurationInDays <Int32?>]`: Specifies the duration the request is active before it automatically expires if no decision is applied.
   - `[Reviewers <IMicrosoftGraphAccessReviewReviewerScope1[]>]`: Required.
     - `[Query <String>]`: The query specifying who will be the reviewer. See table for examples.
-    - `[QueryRoot <String>]`: In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query (i.e., ./manager) is specified.
+    - `[QueryRoot <String>]`: In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query, for example, ./manager, is specified. Possible value: decisions.
     - `[QueryType <String>]`: The type of query. Examples include MicrosoftGraph and ARM.
   - `[Version <Int32?>]`: Specifies the version of this policy. When the policy is updated, this version is updated. Read-only.
 
 REVIEWERS <IMicrosoftGraphAccessReviewReviewerScope1[]>: Required.
   - `[Query <String>]`: The query specifying who will be the reviewer. See table for examples.
-  - `[QueryRoot <String>]`: In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query (i.e., ./manager) is specified.
+  - `[QueryRoot <String>]`: In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query, for example, ./manager, is specified. Possible value: decisions.
   - `[QueryType <String>]`: The type of query. Examples include MicrosoftGraph and ARM.
 
 ## RELATED LINKS

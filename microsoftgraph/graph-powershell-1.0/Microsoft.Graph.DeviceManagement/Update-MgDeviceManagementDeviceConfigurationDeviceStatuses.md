@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementDeviceConfigurationDeviceStatuses
 
 ## SYNOPSIS
-Update the navigation property deviceStatuses in deviceManagement
+Device configuration installation status by device.
 
 ## SYNTAX
 
@@ -24,7 +24,7 @@ Update-MgDeviceManagementDeviceConfigurationDeviceStatuses -DeviceConfigurationD
 ### Update1
 ```
 Update-MgDeviceManagementDeviceConfigurationDeviceStatuses -DeviceConfigurationDeviceStatusId <String>
- -DeviceConfigurationId <String> -BodyParameter <IMicrosoftGraphDeviceConfigurationDeviceStatus1> [-PassThru]
+ -DeviceConfigurationId <String> -BodyParameter <IMicrosoftGraphDeviceConfigurationDeviceStatus> [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -40,12 +40,12 @@ Update-MgDeviceManagementDeviceConfigurationDeviceStatuses -InputObject <IDevice
 ### UpdateViaIdentity1
 ```
 Update-MgDeviceManagementDeviceConfigurationDeviceStatuses -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceConfigurationDeviceStatus1> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphDeviceConfigurationDeviceStatus> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property deviceStatuses in deviceManagement
+Device configuration installation status by device.
 
 ## EXAMPLES
 
@@ -71,7 +71,7 @@ deviceConfigurationDeviceStatus
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceConfigurationDeviceStatus1
+Type: IMicrosoftGraphDeviceConfigurationDeviceStatus
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -300,13 +300,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationDeviceStatus1
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationDeviceStatus
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -316,7 +313,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphDeviceConfigurationDeviceStatus1>: deviceConfigurationDeviceStatus
+BODYPARAMETER <IMicrosoftGraphDeviceConfigurationDeviceStatus>: deviceConfigurationDeviceStatus
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
   - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
@@ -417,6 +414,7 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[UserExperienceAnalyticsBaselineId <String>]`: key: id of userExperienceAnalyticsBaseline
   - `[UserExperienceAnalyticsCategoryId <String>]`: key: id of userExperienceAnalyticsCategory
   - `[UserExperienceAnalyticsDevicePerformanceId <String>]`: key: id of userExperienceAnalyticsDevicePerformance
+  - `[UserExperienceAnalyticsDeviceScoresId <String>]`: key: id of userExperienceAnalyticsDeviceScores
   - `[UserExperienceAnalyticsDeviceStartupHistoryId <String>]`: key: id of userExperienceAnalyticsDeviceStartupHistory
   - `[UserExperienceAnalyticsDeviceStartupProcessId <String>]`: key: id of userExperienceAnalyticsDeviceStartupProcess
   - `[UserExperienceAnalyticsDeviceStartupProcessPerformanceId <String>]`: key: id of userExperienceAnalyticsDeviceStartupProcessPerformance
@@ -428,6 +426,8 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[UserExperienceAnalyticsRemoteConnectionId <String>]`: key: id of userExperienceAnalyticsRemoteConnection
   - `[UserExperienceAnalyticsResourcePerformanceId <String>]`: key: id of userExperienceAnalyticsResourcePerformance
   - `[UserExperienceAnalyticsScoreHistoryId <String>]`: key: id of userExperienceAnalyticsScoreHistory
+  - `[UserExperienceAnalyticsWorkFromAnywhereDeviceId <String>]`: key: id of userExperienceAnalyticsWorkFromAnywhereDevice
+  - `[UserExperienceAnalyticsWorkFromAnywhereMetricId <String>]`: key: id of userExperienceAnalyticsWorkFromAnywhereMetric
   - `[UserId <String>]`: key: id of user
   - `[WindowsDeviceMalwareStateId <String>]`: key: id of windowsDeviceMalwareState
   - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: key: id of windowsInformationProtectionAppLearningSummary

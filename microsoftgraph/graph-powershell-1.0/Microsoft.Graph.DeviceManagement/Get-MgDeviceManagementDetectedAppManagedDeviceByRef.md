@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementDetectedAppManagedDeviceByRef
 
 ## SYNOPSIS
-Get ref of managedDevices from deviceManagement
+The devices that have the discovered application installed
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgDeviceManagementDetectedAppManagedDeviceByRef -DetectedAppId <String> [-Fi
 ```
 
 ## DESCRIPTION
-Get ref of managedDevices from deviceManagement
+The devices that have the discovered application installed
 
 ## EXAMPLES
 
@@ -169,7 +169,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

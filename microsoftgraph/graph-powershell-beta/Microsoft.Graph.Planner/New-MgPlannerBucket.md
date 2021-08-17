@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgPlannerBucket
 
 ## SYNOPSIS
-Create new navigation property to buckets for planner
+Read-only.
+Nullable.
+Returns a collection of the specified buckets
 
 ## SYNTAX
 
@@ -24,7 +26,9 @@ New-MgPlannerBucket -BodyParameter <IMicrosoftGraphPlannerBucket1> [-WhatIf] [-C
 ```
 
 ## DESCRIPTION
-Create new navigation property to buckets for planner
+Read-only.
+Nullable.
+Returns a collection of the specified buckets
 
 ## EXAMPLES
 
@@ -177,11 +181,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerBucket1
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerBucket1
-
 ## NOTES
 
 ALIASES
@@ -328,8 +330,5 @@ TASKS <IMicrosoftGraphPlannerTask1[]>: Read-only. Nullable. The collection of ta
   - `[Title <String>]`: Title of the task.
 
 ## RELATED LINKS
-
-## RELATED LINKS
-
 
 ## RELATED LINKS

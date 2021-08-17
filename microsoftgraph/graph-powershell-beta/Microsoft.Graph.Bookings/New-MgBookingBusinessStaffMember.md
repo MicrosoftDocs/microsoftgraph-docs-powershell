@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgBookingBusinessStaffMember
 
 ## SYNOPSIS
-Create new navigation property to staffMembers for bookingBusinesses
+All the staff members that provide services in this business.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -41,7 +43,9 @@ New-MgBookingBusinessStaffMember -InputObject <IBookingsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to staffMembers for bookingBusinesses
+All the staff members that provide services in this business.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -270,13 +274,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IBookingsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingStaffMember
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingStaffMember
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgServicePrincipalDelegatedPermissionClassification
 
 ## SYNOPSIS
-Delete navigation property delegatedPermissionClassifications for servicePrincipals
+The permission classifications for delegated permissions exposed by the app that this service principal represents.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgServicePrincipalDelegatedPermissionClassification -InputObject <IApplic
 ```
 
 ## DESCRIPTION
-Delete navigation property delegatedPermissionClassifications for servicePrincipals
+The permission classifications for delegated permissions exposed by the app that this service principal represents.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

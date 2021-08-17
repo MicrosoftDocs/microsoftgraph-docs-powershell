@@ -8,7 +8,11 @@ schema: 2.0.0
 # Update-MgGroupEventInstance
 
 ## SYNOPSIS
-Update the navigation property instances in groups
+The occurrences of a recurring series, if the event is a series master.
+This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
+Navigation property.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -69,7 +73,11 @@ Update-MgGroupEventInstance -InputObject <ICalendarIdentity> -BodyParameter <IMi
 ```
 
 ## DESCRIPTION
-Update the navigation property instances in groups
+The occurrences of a recurring series, if the event is a series master.
+This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
+Navigation property.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -979,13 +987,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

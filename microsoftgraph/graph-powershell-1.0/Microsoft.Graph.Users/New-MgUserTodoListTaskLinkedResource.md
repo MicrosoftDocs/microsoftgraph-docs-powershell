@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserTodoListTaskLinkedResource
 
 ## SYNOPSIS
-Create new navigation property to linkedResources for users
+A collection of resources linked to the task.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ New-MgUserTodoListTaskLinkedResource -InputObject <IUsersIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to linkedResources for users
+A collection of resources linked to the task.
 
 ## EXAMPLES
 
@@ -249,13 +249,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLinkedResource
-
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLinkedResource
-
 ## NOTES
 
 ALIASES

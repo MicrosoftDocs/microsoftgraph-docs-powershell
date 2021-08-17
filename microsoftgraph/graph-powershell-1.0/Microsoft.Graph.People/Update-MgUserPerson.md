@@ -8,7 +8,10 @@ schema: 2.0.0
 # Update-MgUserPerson
 
 ## SYNOPSIS
-Update the navigation property people in users
+Read-only.
+The most relevant people to the user.
+The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships.
+A person is an aggregation of information from across mail, contacts and social networks.
 
 ## SYNTAX
 
@@ -49,7 +52,10 @@ Update-MgUserPerson -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoftGra
 ```
 
 ## DESCRIPTION
-Update the navigation property people in users
+Read-only.
+The most relevant people to the user.
+The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships.
+A person is an aggregation of information from across mail, contacts and social networks.
 
 ## EXAMPLES
 
@@ -493,13 +499,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPerson
-
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

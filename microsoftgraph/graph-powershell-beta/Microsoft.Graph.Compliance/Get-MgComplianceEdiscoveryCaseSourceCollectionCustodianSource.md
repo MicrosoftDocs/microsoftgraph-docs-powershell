@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgComplianceEdiscoveryCaseSourceCollectionCustodianSource
 
 ## SYNOPSIS
-Get custodianSources from compliance
+Custodian sources that are included in the sourceCollection.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgComplianceEdiscoveryCaseSourceCollectionCustodianSource -CaseId <String> -
 ```
 
 ## DESCRIPTION
-Get custodianSources from compliance
+Custodian sources that are included in the sourceCollection.
 
 ## EXAMPLES
 
@@ -214,7 +214,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryDataSource
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgComplianceEdiscoveryCaseSourceCollectionAddToReviewSetOperationByRef
 
 ## SYNOPSIS
-Get ref of addToReviewSetOperation from compliance
+Adds the results of the sourceCollection to the specified reviewSet.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgComplianceEdiscoveryCaseSourceCollectionAddToReviewSetOperationByRef -Inpu
 ```
 
 ## DESCRIPTION
-Get ref of addToReviewSetOperation from compliance
+Adds the results of the sourceCollection to the specified reviewSet.
 
 ## EXAMPLES
 
@@ -83,11 +83,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

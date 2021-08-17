@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgEducationMeClass
 
 ## SYNOPSIS
-Get classes from education
+Classes to which the user belongs.
+Nullable.
 
 ## SYNTAX
 
@@ -19,7 +20,8 @@ Get-MgEducationMeClass [-ExpandProperty <String[]>] [-Filter <String>] [-Propert
 ```
 
 ## DESCRIPTION
-Get classes from education
+Classes to which the user belongs.
+Nullable.
 
 ## EXAMPLES
 
@@ -184,7 +186,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationClass1
-
 ## NOTES
 
 ALIASES

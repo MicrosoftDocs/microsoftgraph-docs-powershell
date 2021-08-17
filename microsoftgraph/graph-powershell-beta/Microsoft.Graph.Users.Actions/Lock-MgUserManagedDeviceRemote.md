@@ -8,7 +8,7 @@ schema: 2.0.0
 # Lock-MgUserManagedDeviceRemote
 
 ## SYNOPSIS
-Invoke action remoteLock
+Remote lock
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Lock-MgUserManagedDeviceRemote -InputObject <IUsersActionsIdentity> [-PassThru] 
 ```
 
 ## DESCRIPTION
-Invoke action remoteLock
+Remote lock
 
 ## EXAMPLES
 
@@ -129,11 +129,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

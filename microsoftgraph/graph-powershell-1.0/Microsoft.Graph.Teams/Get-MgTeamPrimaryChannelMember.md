@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgTeamPrimaryChannelMember
 
 ## SYNOPSIS
-Get members from teams
+A collection of membership records associated with the channel.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgTeamPrimaryChannelMember -InputObject <ITeamsIdentity> [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-Get members from teams
+A collection of membership records associated with the channel.
 
 ## EXAMPLES
 
@@ -241,11 +241,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversationMember
-
 ## NOTES
 
 ALIASES

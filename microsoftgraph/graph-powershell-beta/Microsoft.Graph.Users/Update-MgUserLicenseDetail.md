@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgUserLicenseDetail
 
 ## SYNOPSIS
-Update the navigation property licenseDetails in users
+A collection of this user's license details.
+Read-only.
 
 ## SYNTAX
 
@@ -39,7 +40,8 @@ Update-MgUserLicenseDetail -InputObject <IUsersIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Update the navigation property licenseDetails in users
+A collection of this user's license details.
+Read-only.
 
 ## EXAMPLES
 
@@ -240,13 +242,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLicenseDetails
-
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

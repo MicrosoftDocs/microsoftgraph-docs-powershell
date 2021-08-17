@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgTeamPrimaryChannelMember
 
 ## SYNOPSIS
-Update the navigation property members in teams
+A collection of membership records associated with the channel.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Update-MgTeamPrimaryChannelMember -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property members in teams
+A collection of membership records associated with the channel.
 
 ## EXAMPLES
 
@@ -235,13 +235,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversationMember
-
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

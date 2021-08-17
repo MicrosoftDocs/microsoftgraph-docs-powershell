@@ -8,23 +8,23 @@ schema: 2.0.0
 # Get-MgChatInstalledAppTeamAppDefinitionByRef
 
 ## SYNOPSIS
-Get ref of teamsAppDefinition from chats
+The details of this version of the app.
 
 ## SYNTAX
 
-### Get (Default)
+### Get1 (Default)
 ```
 Get-MgChatInstalledAppTeamAppDefinitionByRef -ChatId <String> -TeamsAppInstallationId <String>
  [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity1
 ```
 Get-MgChatInstalledAppTeamAppDefinitionByRef -InputObject <ITeamsIdentity> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get ref of teamsAppDefinition from chats
+The details of this version of the app.
 
 ## EXAMPLES
 
@@ -35,7 +35,7 @@ key: id of chat
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -51,7 +51,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: GetViaIdentity1
 Aliases:
 
 Required: True
@@ -66,7 +66,7 @@ key: id of teamsAppInstallation
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -82,11 +82,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

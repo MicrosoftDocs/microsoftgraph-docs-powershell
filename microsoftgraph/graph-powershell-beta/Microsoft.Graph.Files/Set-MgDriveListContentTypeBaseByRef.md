@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgDriveListContentTypeBaseByRef
 
 ## SYNOPSIS
-Update the ref of navigation property base in drives
+Parent contentType from which this content type is derived.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Set-MgDriveListContentTypeBaseByRef -InputObject <IFilesIdentity> -BodyParameter
 ```
 
 ## DESCRIPTION
-Update the ref of navigation property base in drives
+Parent contentType from which this content type is derived.
 
 ## EXAMPLES
 
@@ -171,13 +171,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

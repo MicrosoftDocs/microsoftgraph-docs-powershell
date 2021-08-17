@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementApplePushNotificationCertificate
 
 ## SYNOPSIS
-Delete navigation property applePushNotificationCertificate for deviceManagement
+Apple push notification certificate.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Remove-MgDeviceManagementApplePushNotificationCertificate [-IfMatch <String>] [-
 ```
 
 ## DESCRIPTION
-Delete navigation property applePushNotificationCertificate for deviceManagement
+Apple push notification certificate.
 
 ## EXAMPLES
 
@@ -93,7 +93,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgOnPremisePublishingProfileConnector
 
 ## SYNOPSIS
-Get connectors from onPremisesPublishingProfiles
+List of existing connector objects for applications published through Application Proxy.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgOnPremisePublishingProfileConnector -InputObject <IApplicationsIdentity> [
 ```
 
 ## DESCRIPTION
-Get connectors from onPremisesPublishingProfiles
+List of existing connector objects for applications published through Application Proxy.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -241,11 +245,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConnector
-
 ## NOTES
 
 ALIASES

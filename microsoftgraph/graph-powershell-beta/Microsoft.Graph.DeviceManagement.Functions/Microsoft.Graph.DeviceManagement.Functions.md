@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.DeviceManagement.Functions
-Module Guid: d4a47a70-0ffd-443b-9469-2dc85504fdb2
+Module Guid: 9629ac08-4760-467d-851c-bc52336edb94
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions
 Help Version: 1.0.0.0
 Locale: en-US
@@ -20,11 +20,14 @@ Invoke function compare
 ### [Compare-MgDeviceManagementTemplateMigratableTo](Compare-MgDeviceManagementTemplateMigratableTo.md)
 Invoke function compare
 
+### [Confirm-MgDeviceManagementWindowEnrollmentAutoDiscovery](Confirm-MgDeviceManagementWindowEnrollmentAutoDiscovery.md)
+Invoke function verifyWindowsEnrollmentAutoDiscovery
+
 ### [Export-MgDeviceManagementDepOnboardingSettingEnrollmentProfileMobileConfig](Export-MgDeviceManagementDepOnboardingSettingEnrollmentProfileMobileConfig.md)
-Invoke function exportMobileConfig
+Exports the mobile configuration
 
 ### [Get-MgDeviceManagementAssignedRoleDetail](Get-MgDeviceManagementAssignedRoleDetail.md)
-Invoke function getAssignedRoleDetails
+Retrieves the assigned role definitions and role assignments of the currently authenticated user.
 
 ### [Get-MgDeviceManagementAssignmentFilterState](Get-MgDeviceManagementAssignmentFilterState.md)
 Invoke function getState
@@ -34,6 +37,9 @@ Invoke function getAuditActivityTypes
 
 ### [Get-MgDeviceManagementAuditEventAuditCategory](Get-MgDeviceManagementAuditEventAuditCategory.md)
 Invoke function getAuditCategories
+
+### [Get-MgDeviceManagementComanagedDeviceCloudPcRemoteActionResult](Get-MgDeviceManagementComanagedDeviceCloudPcRemoteActionResult.md)
+Invoke function getCloudPcRemoteActionResults
 
 ### [Get-MgDeviceManagementComanagedDeviceFileVaultKey](Get-MgDeviceManagementComanagedDeviceFileVaultKey.md)
 Invoke function getFileVaultKey
@@ -63,10 +69,13 @@ Invoke function getManagementConditionStatementsForPlatform
 Invoke function getPolicySummary
 
 ### [Get-MgDeviceManagementDepOnboardingSettingEncryptionPublicKey](Get-MgDeviceManagementDepOnboardingSettingEncryptionPublicKey.md)
-Invoke function getEncryptionPublicKey
+Get a public key to use to encrypt the Apple device enrollment program token
 
 ### [Get-MgDeviceManagementDepOnboardingSettingExpiringVppTokenCount](Get-MgDeviceManagementDepOnboardingSettingExpiringVppTokenCount.md)
 Invoke function getExpiringVppTokenCount
+
+### [Get-MgDeviceManagementDeviceComplianceScriptDeviceRunStateManagedDeviceCloudPcRemoteActionResult](Get-MgDeviceManagementDeviceComplianceScriptDeviceRunStateManagedDeviceCloudPcRemoteActionResult.md)
+Invoke function getCloudPcRemoteActionResults
 
 ### [Get-MgDeviceManagementDeviceComplianceScriptDeviceRunStateManagedDeviceFileVaultKey](Get-MgDeviceManagementDeviceComplianceScriptDeviceRunStateManagedDeviceFileVaultKey.md)
 Invoke function getFileVaultKey
@@ -74,8 +83,17 @@ Invoke function getFileVaultKey
 ### [Get-MgDeviceManagementDeviceComplianceScriptDeviceRunStateManagedDeviceNonCompliantSetting](Get-MgDeviceManagementDeviceComplianceScriptDeviceRunStateManagedDeviceNonCompliantSetting.md)
 Invoke function getNonCompliantSettings
 
+### [Get-MgDeviceManagementDeviceConfigurationGroupAssignmentDeviceConfigurationOmaSettingPlainTextValue](Get-MgDeviceManagementDeviceConfigurationGroupAssignmentDeviceConfigurationOmaSettingPlainTextValue.md)
+Invoke function getOmaSettingPlainTextValue
+
 ### [Get-MgDeviceManagementDeviceConfigurationIoAvailableUpdateVersion](Get-MgDeviceManagementDeviceConfigurationIoAvailableUpdateVersion.md)
 Invoke function getIosAvailableUpdateVersions
+
+### [Get-MgDeviceManagementDeviceConfigurationOmaSettingPlainTextValue](Get-MgDeviceManagementDeviceConfigurationOmaSettingPlainTextValue.md)
+Invoke function getOmaSettingPlainTextValue
+
+### [Get-MgDeviceManagementDeviceCustomAttributeShellScriptDeviceRunStateManagedDeviceCloudPcRemoteActionResult](Get-MgDeviceManagementDeviceCustomAttributeShellScriptDeviceRunStateManagedDeviceCloudPcRemoteActionResult.md)
+Invoke function getCloudPcRemoteActionResults
 
 ### [Get-MgDeviceManagementDeviceCustomAttributeShellScriptDeviceRunStateManagedDeviceFileVaultKey](Get-MgDeviceManagementDeviceCustomAttributeShellScriptDeviceRunStateManagedDeviceFileVaultKey.md)
 Invoke function getFileVaultKey
@@ -83,11 +101,17 @@ Invoke function getFileVaultKey
 ### [Get-MgDeviceManagementDeviceCustomAttributeShellScriptDeviceRunStateManagedDeviceNonCompliantSetting](Get-MgDeviceManagementDeviceCustomAttributeShellScriptDeviceRunStateManagedDeviceNonCompliantSetting.md)
 Invoke function getNonCompliantSettings
 
+### [Get-MgDeviceManagementDeviceCustomAttributeShellScriptUserRunStateDeviceRunStateManagedDeviceCloudPcRemoteActionResult](Get-MgDeviceManagementDeviceCustomAttributeShellScriptUserRunStateDeviceRunStateManagedDeviceCloudPcRemoteActionResult.md)
+Invoke function getCloudPcRemoteActionResults
+
 ### [Get-MgDeviceManagementDeviceCustomAttributeShellScriptUserRunStateDeviceRunStateManagedDeviceFileVaultKey](Get-MgDeviceManagementDeviceCustomAttributeShellScriptUserRunStateDeviceRunStateManagedDeviceFileVaultKey.md)
 Invoke function getFileVaultKey
 
 ### [Get-MgDeviceManagementDeviceCustomAttributeShellScriptUserRunStateDeviceRunStateManagedDeviceNonCompliantSetting](Get-MgDeviceManagementDeviceCustomAttributeShellScriptUserRunStateDeviceRunStateManagedDeviceNonCompliantSetting.md)
 Invoke function getNonCompliantSettings
+
+### [Get-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceCloudPcRemoteActionResult](Get-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceCloudPcRemoteActionResult.md)
+Invoke function getCloudPcRemoteActionResults
 
 ### [Get-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceFileVaultKey](Get-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceFileVaultKey.md)
 Invoke function getFileVaultKey
@@ -96,16 +120,22 @@ Invoke function getFileVaultKey
 Invoke function getNonCompliantSettings
 
 ### [Get-MgDeviceManagementDeviceHealthScriptRemediationHistory](Get-MgDeviceManagementDeviceHealthScriptRemediationHistory.md)
-Invoke function getRemediationHistory
+Function to get the number of remediations by a device health scripts
 
 ### [Get-MgDeviceManagementDeviceHealthScriptRemediationSummary](Get-MgDeviceManagementDeviceHealthScriptRemediationSummary.md)
 Invoke function getRemediationSummary
+
+### [Get-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceCloudPcRemoteActionResult](Get-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceCloudPcRemoteActionResult.md)
+Invoke function getCloudPcRemoteActionResults
 
 ### [Get-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceFileVaultKey](Get-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceFileVaultKey.md)
 Invoke function getFileVaultKey
 
 ### [Get-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceNonCompliantSetting](Get-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceNonCompliantSetting.md)
 Invoke function getNonCompliantSettings
+
+### [Get-MgDeviceManagementDeviceShellScriptUserRunStateDeviceRunStateManagedDeviceCloudPcRemoteActionResult](Get-MgDeviceManagementDeviceShellScriptUserRunStateDeviceRunStateManagedDeviceCloudPcRemoteActionResult.md)
+Invoke function getCloudPcRemoteActionResults
 
 ### [Get-MgDeviceManagementDeviceShellScriptUserRunStateDeviceRunStateManagedDeviceFileVaultKey](Get-MgDeviceManagementDeviceShellScriptUserRunStateDeviceRunStateManagedDeviceFileVaultKey.md)
 Invoke function getFileVaultKey
@@ -118,6 +148,9 @@ Invoke function getEffectivePermissions
 
 ### [Get-MgDeviceManagementEffectivePermission49B0](Get-MgDeviceManagementEffectivePermission49B0.md)
 Invoke function getEffectivePermissions
+
+### [Get-MgDeviceManagementManagedDeviceCloudPcRemoteActionResult](Get-MgDeviceManagementManagedDeviceCloudPcRemoteActionResult.md)
+Invoke function getCloudPcRemoteActionResults
 
 ### [Get-MgDeviceManagementManagedDeviceFileVaultKey](Get-MgDeviceManagementManagedDeviceFileVaultKey.md)
 Invoke function getFileVaultKey
@@ -134,11 +167,17 @@ Invoke function getRoleScopeTagsByIds
 ### [Get-MgDeviceManagementRoleScopeTagByResource](Get-MgDeviceManagementRoleScopeTagByResource.md)
 Invoke function getRoleScopeTagsByResource
 
+### [Get-MgDeviceManagementScriptDeviceRunStateManagedDeviceCloudPcRemoteActionResult](Get-MgDeviceManagementScriptDeviceRunStateManagedDeviceCloudPcRemoteActionResult.md)
+Invoke function getCloudPcRemoteActionResults
+
 ### [Get-MgDeviceManagementScriptDeviceRunStateManagedDeviceFileVaultKey](Get-MgDeviceManagementScriptDeviceRunStateManagedDeviceFileVaultKey.md)
 Invoke function getFileVaultKey
 
 ### [Get-MgDeviceManagementScriptDeviceRunStateManagedDeviceNonCompliantSetting](Get-MgDeviceManagementScriptDeviceRunStateManagedDeviceNonCompliantSetting.md)
 Invoke function getNonCompliantSettings
+
+### [Get-MgDeviceManagementScriptUserRunStateDeviceRunStateManagedDeviceCloudPcRemoteActionResult](Get-MgDeviceManagementScriptUserRunStateDeviceRunStateManagedDeviceCloudPcRemoteActionResult.md)
+Invoke function getCloudPcRemoteActionResults
 
 ### [Get-MgDeviceManagementScriptUserRunStateDeviceRunStateManagedDeviceFileVaultKey](Get-MgDeviceManagementScriptUserRunStateDeviceRunStateManagedDeviceFileVaultKey.md)
 Invoke function getFileVaultKey
@@ -148,6 +187,9 @@ Invoke function getNonCompliantSettings
 
 ### [Get-MgDeviceManagementSuggestedEnrollmentLimit](Get-MgDeviceManagementSuggestedEnrollmentLimit.md)
 Invoke function getSuggestedEnrollmentLimit
+
+### [Get-MgDeviceManagementVirtualEndpointAuditEventAuditActivityType](Get-MgDeviceManagementVirtualEndpointAuditEventAuditActivityType.md)
+Invoke function getAuditActivityTypes
 
 ### [Get-MgDeviceManagementVirtualEndpointDeviceImageSourceImage](Get-MgDeviceManagementVirtualEndpointDeviceImageSourceImage.md)
 Invoke function getSourceImages
@@ -162,7 +204,7 @@ Invoke function hasCustomRoleScopeTag
 Invoke function hasCustomRoleScopeTag
 
 ### [Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest](Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest.md)
-Invoke function downloadApplePushNotificationCertificateSigningRequest
+Download Apple push notification certificate signing request
 
 ### [Invoke-MgExperienceDeviceManagement](Invoke-MgExperienceDeviceManagement.md)
 Invoke function userExperienceAnalyticsSummarizeWorkFromAnywhereDevices
@@ -184,7 +226,4 @@ Invoke function summarizeDeviceRemoteConnection
 
 ### [Invoke-MgSummarizeDeviceManagementUserExperienceAnalyticResourcePerformanceDeviceResourcePerformance](Invoke-MgSummarizeDeviceManagementUserExperienceAnalyticResourcePerformanceDeviceResourcePerformance.md)
 Invoke function summarizeDeviceResourcePerformance
-
-### [Test-MgDeviceManagementWindowEnrollmentAutoDiscovery](Test-MgDeviceManagementWindowEnrollmentAutoDiscovery.md)
-Invoke function verifyWindowsEnrollmentAutoDiscovery
 

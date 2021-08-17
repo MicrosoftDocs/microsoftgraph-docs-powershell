@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgAdministrativeUnitMemberByRef
 
 ## SYNOPSIS
-Create new navigation property ref to members for administrativeUnits
+Users and groups that are members of this Adminsitrative Unit.
+HTTP Methods: GET (list members), POST (add members), DELETE (remove members).
 
 ## SYNTAX
 
@@ -37,7 +38,8 @@ New-MgAdministrativeUnitMemberByRef -InputObject <IIdentityDirectoryManagementId
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to members for administrativeUnits
+Users and groups that are members of this Adminsitrative Unit.
+HTTP Methods: GET (list members), POST (add members), DELETE (remove members).
 
 ## EXAMPLES
 
@@ -141,13 +143,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1Sr0J34AdministrativeunitsAdministrativeunitIdMembersRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

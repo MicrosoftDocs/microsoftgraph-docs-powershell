@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgAdministrativeUnit
 
 ## SYNOPSIS
-Get entity from administrativeUnits by key
+Represents an Azure Active Directory object.
+The directoryObject type is the base type for many other directory entity types.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgAdministrativeUnit -InputObject <IIdentityDirectoryManagementIdentity> [-E
 ```
 
 ## DESCRIPTION
-Get entity from administrativeUnits by key
+Represents an Azure Active Directory object.
+The directoryObject type is the base type for many other directory entity types.
 
 ## EXAMPLES
 
@@ -70,6 +72,7 @@ Accept wildcard characters: False
 
 ### -ConsistencyLevel
 Indicates the requested consistency level.
+Documentation URL: https://developer.microsoft.com/en-us/office/blogs/microsoft-graph-advanced-queries-for-directory-objects-are-now-generally-available/
 
 ```yaml
 Type: String
@@ -241,11 +244,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAdministrativeUnit
-
 ## NOTES
 
 ALIASES

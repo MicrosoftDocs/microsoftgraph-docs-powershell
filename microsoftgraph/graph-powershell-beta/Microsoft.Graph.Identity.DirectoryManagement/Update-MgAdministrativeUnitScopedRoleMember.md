@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgAdministrativeUnitScopedRoleMember
 
 ## SYNOPSIS
-Update the navigation property scopedRoleMembers in administrativeUnits
+Scoped-role members of this Administrative Unit.
+HTTP Methods: GET (list scopedRoleMemberships), POST (add scopedRoleMembership), DELETE (remove scopedRoleMembership).
 
 ## SYNTAX
 
@@ -40,7 +41,8 @@ Update-MgAdministrativeUnitScopedRoleMember -InputObject <IIdentityDirectoryMana
 ```
 
 ## DESCRIPTION
-Update the navigation property scopedRoleMembers in administrativeUnits
+Scoped-role members of this Administrative Unit.
+HTTP Methods: GET (list scopedRoleMemberships), POST (add scopedRoleMembership), DELETE (remove scopedRoleMembership).
 
 ## EXAMPLES
 
@@ -248,13 +250,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphScopedRoleMembership
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

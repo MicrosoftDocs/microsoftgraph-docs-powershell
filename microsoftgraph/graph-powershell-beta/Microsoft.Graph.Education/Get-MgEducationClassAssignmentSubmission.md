@@ -8,31 +8,35 @@ schema: 2.0.0
 # Get-MgEducationClassAssignmentSubmission
 
 ## SYNOPSIS
-Get submissions from education
+Once published, there is a submission object for each student representing their work and grade.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
-### List (Default)
+### List1 (Default)
 ```
 Get-MgEducationClassAssignmentSubmission -EducationAssignmentId <String> -EducationClassId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
  [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get
+### Get1
 ```
 Get-MgEducationClassAssignmentSubmission -EducationAssignmentId <String> -EducationClassId <String>
  -EducationSubmissionId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity1
 ```
 Get-MgEducationClassAssignmentSubmission -InputObject <IEducationIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get submissions from education
+Once published, there is a submission object for each student representing their work and grade.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -43,7 +47,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -59,7 +63,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: List1
 Aliases: CV
 
 Required: False
@@ -74,7 +78,7 @@ key: id of educationAssignment
 
 ```yaml
 Type: String
-Parameter Sets: List, Get
+Parameter Sets: List1, Get1
 Aliases:
 
 Required: True
@@ -89,7 +93,7 @@ key: id of educationClass
 
 ```yaml
 Type: String
-Parameter Sets: List, Get
+Parameter Sets: List1, Get1
 Aliases:
 
 Required: True
@@ -104,7 +108,7 @@ key: id of educationSubmission
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -134,7 +138,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -150,7 +154,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IEducationIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: GetViaIdentity1
 Aliases:
 
 Required: True
@@ -165,7 +169,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -195,7 +199,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -210,7 +214,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List
+Parameter Sets: List1
 Aliases: OrderBy
 
 Required: False
@@ -225,7 +229,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: List1
 Aliases: Limit
 
 Required: False
@@ -240,7 +244,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -256,11 +260,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSubmission
-
 ## NOTES
 
 ALIASES

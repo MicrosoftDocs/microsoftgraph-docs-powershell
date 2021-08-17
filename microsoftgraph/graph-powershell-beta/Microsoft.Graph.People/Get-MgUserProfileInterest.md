@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserProfileInterest
 
 ## SYNOPSIS
-Get interests from users
+Provides detailed information about interests the user has associated with themselves in various services.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgUserProfileInterest -InputObject <IPeopleIdentity> [-ExpandProperty <Strin
 ```
 
 ## DESCRIPTION
-Get interests from users
+Provides detailed information about interests the user has associated with themselves in various services.
 
 ## EXAMPLES
 
@@ -241,11 +241,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPersonInterest
-
 ## NOTES
 
 ALIASES

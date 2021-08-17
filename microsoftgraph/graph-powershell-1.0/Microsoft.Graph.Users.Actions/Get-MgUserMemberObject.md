@@ -12,26 +12,26 @@ Invoke action getMemberObjects
 
 ## SYNTAX
 
-### GetExpanded (Default)
+### GetExpanded1 (Default)
 ```
 Get-MgUserMemberObject -UserId <String> [-AdditionalProperties <Hashtable>] [-SecurityEnabledOnly] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### Get
+### Get1
 ```
 Get-MgUserMemberObject -UserId <String>
  -BodyParameter <IPaths5Y1AzfUsersUserIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### GetViaIdentityExpanded
+### GetViaIdentityExpanded1
 ```
 Get-MgUserMemberObject -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-SecurityEnabledOnly] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity1
 ```
 Get-MgUserMemberObject -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths5Y1AzfUsersUserIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema>
@@ -50,7 +50,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: GetExpanded, GetViaIdentityExpanded
+Parameter Sets: GetExpanded1, GetViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -66,7 +66,7 @@ To construct, see NOTES section for BODYPARAMETER properties and create a hash t
 
 ```yaml
 Type: IPaths5Y1AzfUsersUserIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Get, GetViaIdentity
+Parameter Sets: Get1, GetViaIdentity1
 Aliases:
 
 Required: True
@@ -82,7 +82,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: GetViaIdentityExpanded, GetViaIdentity
+Parameter Sets: GetViaIdentityExpanded1, GetViaIdentity1
 Aliases:
 
 Required: True
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: GetExpanded, GetViaIdentityExpanded
+Parameter Sets: GetExpanded1, GetViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -112,7 +112,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: GetExpanded, Get
+Parameter Sets: GetExpanded1, Get1
 Aliases:
 
 Required: True
@@ -159,13 +159,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths5Y1AzfUsersUserIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

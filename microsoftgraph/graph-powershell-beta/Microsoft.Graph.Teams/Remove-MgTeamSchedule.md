@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgTeamSchedule
 
 ## SYNOPSIS
-Delete navigation property schedule for teams
+The schedule of shifts for this team.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgTeamSchedule -InputObject <ITeamsIdentity> [-IfMatch <String>] [-PassTh
 ```
 
 ## DESCRIPTION
-Delete navigation property schedule for teams
+The schedule of shifts for this team.
 
 ## EXAMPLES
 
@@ -129,11 +129,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

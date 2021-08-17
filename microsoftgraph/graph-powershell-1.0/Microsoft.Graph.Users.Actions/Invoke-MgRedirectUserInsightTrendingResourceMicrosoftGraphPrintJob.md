@@ -192,13 +192,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths16ElyjtUsersUserIdInsightsTrendingIdResourceMicrosoftGraphPrintjobMicrosoftGraphRedirectPostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintJob
-
 ## NOTES
 
 ALIASES
@@ -227,8 +224,8 @@ BODYPARAMETER <IPaths16ElyjtUsersUserIdInsightsTrendingIdResourceMicrosoftGraphP
       - `[Left <Int32?>]`: The margin in microns from the left edge.
       - `[Right <Int32?>]`: The margin in microns from the right edge.
       - `[Top <Int32?>]`: The margin in microns from the top edge.
-    - `[MediaSize <String>]`: The media sizeto use when printing. Supports standard size names for ISO and ANSI media sizes, along with any custom sizes supported by the associated printer.
-    - `[MediaType <String>]`: The default media (such as paper) type to print the document on. Valid values are described in the following table.
+    - `[MediaSize <String>]`: The media sizeto use when printing. Supports standard size names for ISO and ANSI media sizes. Valid values are listed in the printerCapabilities topic.
+    - `[MediaType <String>]`: The default media (such as paper) type to print the document on.
     - `[MultipageLayout <String>]`: printMultipageLayout
     - `[Orientation <String>]`: printOrientation
     - `[OutputBin <String>]`: The output bin to place completed prints into. See the printer's capabilities for a list of supported output bins.
@@ -257,8 +254,8 @@ CONFIGURATION <IMicrosoftGraphPrintJobConfiguration>: printJobConfiguration
     - `[Left <Int32?>]`: The margin in microns from the left edge.
     - `[Right <Int32?>]`: The margin in microns from the right edge.
     - `[Top <Int32?>]`: The margin in microns from the top edge.
-  - `[MediaSize <String>]`: The media sizeto use when printing. Supports standard size names for ISO and ANSI media sizes, along with any custom sizes supported by the associated printer.
-  - `[MediaType <String>]`: The default media (such as paper) type to print the document on. Valid values are described in the following table.
+  - `[MediaSize <String>]`: The media sizeto use when printing. Supports standard size names for ISO and ANSI media sizes. Valid values are listed in the printerCapabilities topic.
+  - `[MediaType <String>]`: The default media (such as paper) type to print the document on.
   - `[MultipageLayout <String>]`: printMultipageLayout
   - `[Orientation <String>]`: printOrientation
   - `[OutputBin <String>]`: The output bin to place completed prints into. See the printer's capabilities for a list of supported output bins.

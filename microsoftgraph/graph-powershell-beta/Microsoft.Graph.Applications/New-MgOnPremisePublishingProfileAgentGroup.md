@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgOnPremisePublishingProfileAgentGroup
 
 ## SYNOPSIS
-Create new navigation property to agentGroups for onPremisesPublishingProfiles
+List of existing onPremisesAgentGroup objects.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -99,7 +101,9 @@ New-MgOnPremisePublishingProfileAgentGroup -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to agentGroups for onPremisesPublishingProfiles
+List of existing onPremisesAgentGroup objects.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -331,13 +335,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnPremisesAgentGroup
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnPremisesAgentGroup
-
 ## NOTES
 
 ALIASES

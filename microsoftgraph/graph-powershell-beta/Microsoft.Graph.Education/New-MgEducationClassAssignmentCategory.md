@@ -8,11 +8,13 @@ schema: 2.0.0
 # New-MgEducationClassAssignmentCategory
 
 ## SYNOPSIS
-Create new navigation property to categories for education
+When set, enables users to easily find assignments of a given type.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded3 (Default)
 ```
 New-MgEducationClassAssignmentCategory -EducationClassId <String> [-AdditionalProperties <Hashtable>]
  [-DisplayName <String>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -31,13 +33,13 @@ New-MgEducationClassAssignmentCategory -EducationAssignmentId <String> -Educatio
  -BodyParameter <IMicrosoftGraphEducationCategory> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create3
 ```
 New-MgEducationClassAssignmentCategory -EducationClassId <String>
  -BodyParameter <IMicrosoftGraphEducationCategory> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded1
+### CreateViaIdentityExpanded3
 ```
 New-MgEducationClassAssignmentCategory -InputObject <IEducationIdentity> [-AdditionalProperties <Hashtable>]
  [-DisplayName <String>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -49,7 +51,7 @@ New-MgEducationClassAssignmentCategory -InputObject <IEducationIdentity> [-Addit
  [-DisplayName <String>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentity1
+### CreateViaIdentity3
 ```
 New-MgEducationClassAssignmentCategory -InputObject <IEducationIdentity>
  -BodyParameter <IMicrosoftGraphEducationCategory> [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -62,7 +64,9 @@ New-MgEducationClassAssignmentCategory -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to categories for education
+When set, enables users to easily find assignments of a given type.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -73,7 +77,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateExpanded, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded3, CreateExpanded, CreateViaIdentityExpanded3, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -89,7 +93,7 @@ To construct, see NOTES section for BODYPARAMETER properties and create a hash t
 
 ```yaml
 Type: IMicrosoftGraphEducationCategory
-Parameter Sets: Create, Create1, CreateViaIdentity1, CreateViaIdentity
+Parameter Sets: Create, Create3, CreateViaIdentity3, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -104,7 +108,7 @@ Unique identifier for the category.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateExpanded, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded3, CreateExpanded, CreateViaIdentityExpanded3, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -134,7 +138,7 @@ key: id of educationClass
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateExpanded, Create, Create1
+Parameter Sets: CreateExpanded3, CreateExpanded, Create, Create3
 Aliases:
 
 Required: True
@@ -149,7 +153,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateExpanded, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded3, CreateExpanded, CreateViaIdentityExpanded3, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -165,7 +169,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IEducationIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentityExpanded, CreateViaIdentity1, CreateViaIdentity
+Parameter Sets: CreateViaIdentityExpanded3, CreateViaIdentityExpanded, CreateViaIdentity3, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -212,13 +216,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationCategory
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationCategory
-
 ## NOTES
 
 ALIASES

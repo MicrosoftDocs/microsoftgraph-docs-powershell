@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgUserOutlookTaskGroupTaskFolder
 
 ## SYNOPSIS
-Delete navigation property taskFolders for users
+The collection of task folders in the task group.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +27,9 @@ Remove-MgUserOutlookTaskGroupTaskFolder -InputObject <IUsersIdentity> [-IfMatch 
 ```
 
 ## DESCRIPTION
-Delete navigation property taskFolders for users
+The collection of task folders in the task group.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -159,11 +163,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

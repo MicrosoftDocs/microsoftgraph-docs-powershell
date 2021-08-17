@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgApplicationOwnerByRef
 
 ## SYNOPSIS
-Get ref of owners from applications
+Directory objects that are owners of the application.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -18,7 +20,9 @@ Get-MgApplicationOwnerByRef -ApplicationId <String> [-Filter <String>] [-Search 
 ```
 
 ## DESCRIPTION
-Get ref of owners from applications
+Directory objects that are owners of the application.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -168,7 +172,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementGroupPolicyDefinitionFile
 
 ## SYNOPSIS
-Update the navigation property groupPolicyDefinitionFiles in deviceManagement
+The available group policy definition files for this account.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Update-MgDeviceManagementGroupPolicyDefinitionFile -InputObject <IDeviceManageme
 ```
 
 ## DESCRIPTION
-Update the navigation property groupPolicyDefinitionFiles in deviceManagement
+The available group policy definition files for this account.
 
 ## EXAMPLES
 
@@ -319,13 +319,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyDefinitionFile
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -414,6 +411,14 @@ DEFINITIONS <IMicrosoftGraphGroupPolicyDefinition[]>: The group policy definitio
 INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[AuditEventId <String>]`: key: id of auditEvent
   - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
+  - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
+  - `[CloudPcDeviceImageId <String>]`: key: id of cloudPcDeviceImage
+  - `[CloudPcId <String>]`: key: id of cloudPC
+  - `[CloudPcOnPremisesConnectionId <String>]`: key: id of cloudPcOnPremisesConnection
+  - `[CloudPcProvisioningPolicyAssignmentId <String>]`: key: id of cloudPcProvisioningPolicyAssignment
+  - `[CloudPcProvisioningPolicyId <String>]`: key: id of cloudPcProvisioningPolicy
+  - `[CloudPcUserSettingAssignmentId <String>]`: key: id of cloudPcUserSettingAssignment
+  - `[CloudPcUserSettingId <String>]`: key: id of cloudPcUserSetting
   - `[ComanagementEligibleDeviceId <String>]`: key: id of comanagementEligibleDevice
   - `[ComplianceManagementPartnerId <String>]`: key: id of complianceManagementPartner
   - `[DeviceAndAppManagementRoleAssignmentId <String>]`: key: id of deviceAndAppManagementRoleAssignment

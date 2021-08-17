@@ -8,7 +8,10 @@ schema: 2.0.0
 # New-MgDeviceRegisteredUserByRef
 
 ## SYNOPSIS
-Create new navigation property ref to registeredUsers for devices
+Collection of registered users of the device.
+For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -37,7 +40,10 @@ New-MgDeviceRegisteredUserByRef -InputObject <IIdentityDirectoryManagementIdenti
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to registeredUsers for devices
+Collection of registered users of the device.
+For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -141,13 +147,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPathsU7UqmeDevicesDeviceIdRegisteredusersRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

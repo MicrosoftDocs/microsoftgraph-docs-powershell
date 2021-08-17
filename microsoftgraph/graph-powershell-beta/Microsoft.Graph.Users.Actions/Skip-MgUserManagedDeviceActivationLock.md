@@ -8,7 +8,7 @@ schema: 2.0.0
 # Skip-MgUserManagedDeviceActivationLock
 
 ## SYNOPSIS
-Invoke action bypassActivationLock
+Bypass activation lock
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Skip-MgUserManagedDeviceActivationLock -InputObject <IUsersActionsIdentity> [-Pa
 ```
 
 ## DESCRIPTION
-Invoke action bypassActivationLock
+Bypass activation lock
 
 ## EXAMPLES
 
@@ -129,11 +129,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

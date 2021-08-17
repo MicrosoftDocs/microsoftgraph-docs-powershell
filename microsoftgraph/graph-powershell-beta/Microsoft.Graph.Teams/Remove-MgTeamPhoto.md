@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgTeamPhoto
 
 ## SYNOPSIS
-Delete navigation property photo for teams
+The team photo.
 
 ## SYNTAX
 
@@ -24,7 +24,7 @@ Remove-MgTeamPhoto -InputObject <ITeamsIdentity> [-IfMatch <String>] [-PassThru]
 ```
 
 ## DESCRIPTION
-Delete navigation property photo for teams
+The team photo.
 
 ## EXAMPLES
 
@@ -128,11 +128,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

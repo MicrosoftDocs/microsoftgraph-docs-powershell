@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgSiteOnenoteOperation
 
 ## SYNOPSIS
-Get operations from sites
+The status of OneNote operations.
+Getting an operations collection is not supported, but you can get the status of long-running operations if the Operation-Location header is returned in the response.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +28,10 @@ Get-MgSiteOnenoteOperation -InputObject <INotesIdentity> [-ExpandProperty <Strin
 ```
 
 ## DESCRIPTION
-Get operations from sites
+The status of OneNote operations.
+Getting an operations collection is not supported, but you can get the status of long-running operations if the Operation-Location header is returned in the response.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -113,11 +119,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.INotesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnenoteOperation
-
 ## NOTES
 
 ALIASES

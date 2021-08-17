@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgEducationUserAssignment
 
 ## SYNOPSIS
-Delete navigation property assignments for education
+List of assignments for the user.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgEducationUserAssignment -InputObject <IEducationIdentity> [-IfMatch <St
 ```
 
 ## DESCRIPTION
-Delete navigation property assignments for education
+List of assignments for the user.
+Nullable.
 
 ## EXAMPLES
 
@@ -144,11 +146,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

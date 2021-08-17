@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserContactFolderContactSingleValueExtendedProperty
 
 ## SYNOPSIS
-Get singleValueExtendedProperties from users
+The collection of single-value extended properties defined for the contact.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -34,7 +36,9 @@ Get-MgUserContactFolderContactSingleValueExtendedProperty -InputObject <IPersona
 ```
 
 ## DESCRIPTION
-Get singleValueExtendedProperties from users
+The collection of single-value extended properties defined for the contact.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -273,11 +277,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPersonalContactsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSingleValueLegacyExtendedProperty
-
 ## NOTES
 
 ALIASES

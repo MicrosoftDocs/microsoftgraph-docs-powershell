@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgChatInstalledApp
 
 ## SYNOPSIS
-Create new navigation property to installedApps for chats
+A collection of all the apps in the chat.
+Nullable.
 
 ## SYNTAX
 
@@ -39,7 +40,8 @@ New-MgChatInstalledApp -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftG
 ```
 
 ## DESCRIPTION
-Create new navigation property to installedApps for chats
+A collection of all the apps in the chat.
+Nullable.
 
 ## EXAMPLES
 
@@ -191,13 +193,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppInstallation1
-
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppInstallation1
-
 ## NOTES
 
 ALIASES
@@ -231,7 +230,7 @@ BODYPARAMETER <IMicrosoftGraphTeamsAppInstallation1>: teamsAppInstallation
       - `[LastModifiedDateTime <DateTime?>]`: 
       - `[PublishingState <String>]`: teamsAppPublishingState
       - `[ShortDescription <String>]`: Short description of the application.
-      - `[TeamsAppId <String>]`: The id from the Teams App manifest.
+      - `[TeamsAppId <String>]`: The ID from the Teams app manifest.
       - `[Version <String>]`: The version number of the application.
     - `[DisplayName <String>]`: The name of the catalog app provided by the app developer in the Microsoft Teams zip app package.
     - `[DistributionMethod <String>]`: teamsAppDistributionMethod
@@ -290,7 +289,7 @@ TEAMSAPP <IMicrosoftGraphTeamsApp1>: teamsApp
     - `[LastModifiedDateTime <DateTime?>]`: 
     - `[PublishingState <String>]`: teamsAppPublishingState
     - `[ShortDescription <String>]`: Short description of the application.
-    - `[TeamsAppId <String>]`: The id from the Teams App manifest.
+    - `[TeamsAppId <String>]`: The ID from the Teams app manifest.
     - `[Version <String>]`: The version number of the application.
   - `[DisplayName <String>]`: The name of the catalog app provided by the app developer in the Microsoft Teams zip app package.
   - `[DistributionMethod <String>]`: teamsAppDistributionMethod
@@ -315,7 +314,7 @@ TEAMSAPPDEFINITION <IMicrosoftGraphTeamsAppDefinition1>: teamsAppDefinition
   - `[LastModifiedDateTime <DateTime?>]`: 
   - `[PublishingState <String>]`: teamsAppPublishingState
   - `[ShortDescription <String>]`: Short description of the application.
-  - `[TeamsAppId <String>]`: The id from the Teams App manifest.
+  - `[TeamsAppId <String>]`: The ID from the Teams app manifest.
   - `[Version <String>]`: The version number of the application.
 
 ## RELATED LINKS

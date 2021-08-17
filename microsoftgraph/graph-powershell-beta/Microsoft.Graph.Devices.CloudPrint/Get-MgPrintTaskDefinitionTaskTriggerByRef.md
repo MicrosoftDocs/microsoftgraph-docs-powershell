@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgPrintTaskDefinitionTaskTriggerByRef
 
 ## SYNOPSIS
-Get ref of trigger from print
+The printTaskTrigger that triggered this task's execution.
+Read-only.
 
 ## SYNTAX
 
@@ -24,7 +25,8 @@ Get-MgPrintTaskDefinitionTaskTriggerByRef -InputObject <IDevicesCloudPrintIdenti
 ```
 
 ## DESCRIPTION
-Get ref of trigger from print
+The printTaskTrigger that triggered this task's execution.
+Read-only.
 
 ## EXAMPLES
 
@@ -82,11 +84,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

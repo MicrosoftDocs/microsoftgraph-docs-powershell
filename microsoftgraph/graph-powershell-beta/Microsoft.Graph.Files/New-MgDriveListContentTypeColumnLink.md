@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDriveListContentTypeColumnLink
 
 ## SYNOPSIS
-Create new navigation property to columnLinks for drives
+The collection of columns that are required by this content type
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ New-MgDriveListContentTypeColumnLink -InputObject <IFilesIdentity> -BodyParamete
 ```
 
 ## DESCRIPTION
-Create new navigation property to columnLinks for drives
+The collection of columns that are required by this content type
 
 ## EXAMPLES
 
@@ -187,13 +187,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnLink
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnLink
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgUserPhoto
 
 ## SYNOPSIS
-Update the navigation property photo in users
+The user's profile photo.
+Read-only.
 
 ## SYNTAX
 
@@ -61,7 +62,8 @@ Update-MgUserPhoto -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraph
 ```
 
 ## DESCRIPTION
-Update the navigation property photo in users
+The user's profile photo.
+Read-only.
 
 ## EXAMPLES
 
@@ -243,13 +245,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProfilePhoto
-
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

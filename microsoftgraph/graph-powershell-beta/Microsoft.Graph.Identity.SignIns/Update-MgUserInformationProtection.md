@@ -280,13 +280,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationProtection
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -332,14 +329,14 @@ BODYPARAMETER <IMicrosoftGraphInformationProtection>: informationProtection
       - `[Name <String>]`: The plaintext name of the label.
       - `[Parent <IMicrosoftGraphParentLabelDetails>]`: parentLabelDetails
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Color <String>]`: 
-        - `[Description <String>]`: 
-        - `[Id <String>]`: 
-        - `[IsActive <Boolean?>]`: 
-        - `[Name <String>]`: 
+        - `[Color <String>]`: The color that the user interface should display for the label, if configured.
+        - `[Description <String>]`: The admin-defined description for the label.
+        - `[Id <String>]`: The label ID is a globally unique identifier (GUID).
+        - `[IsActive <Boolean?>]`: Indicates whether the label is active or not. Active labels should be hidden or disabled in user interfaces.
+        - `[Name <String>]`: The plaintext name of the label.
         - `[Parent <IMicrosoftGraphParentLabelDetails>]`: parentLabelDetails
-        - `[Sensitivity <Int32?>]`: 
-        - `[Tooltip <String>]`: 
+        - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
+        - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a user interface.
       - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
       - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
   - `[SensitivityLabels <IMicrosoftGraphSensitivityLabel[]>]`: 
@@ -401,6 +398,7 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[AuthenticationContextClassReferenceId <String>]`: key: id of authenticationContextClassReference
   - `[AuthenticationMethodId <String>]`: key: id of authenticationMethod
   - `[AuthorizationPolicyId <String>]`: key: id of authorizationPolicy
+  - `[BitlockerRecoveryKeyId <String>]`: key: id of bitlockerRecoveryKey
   - `[ClaimsMappingPolicyId <String>]`: key: id of claimsMappingPolicy
   - `[ConditionalAccessPolicyId <String>]`: key: id of conditionalAccessPolicy
   - `[DataLossPreventionPolicyId <String>]`: key: id of dataLossPreventionPolicy
@@ -423,8 +421,6 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[PermissionGrantConditionSetId <String>]`: key: id of permissionGrantConditionSet
   - `[PermissionGrantPolicyId <String>]`: key: id of permissionGrantPolicy
   - `[PhoneAuthenticationMethodId <String>]`: key: id of phoneAuthenticationMethod
-  - `[PrivateEndpointConnectionId <String>]`: key: id of privateEndpointConnection
-  - `[PrivateLinkResourcePolicyId <String>]`: key: id of privateLinkResourcePolicy
   - `[RiskDetectionId <String>]`: key: id of riskDetection
   - `[RiskyUserHistoryItemId <String>]`: key: id of riskyUserHistoryItem
   - `[RiskyUserId <String>]`: key: id of riskyUser
@@ -454,14 +450,14 @@ POLICY <IMicrosoftGraphInformationProtectionPolicy>: informationProtectionPolicy
     - `[Name <String>]`: The plaintext name of the label.
     - `[Parent <IMicrosoftGraphParentLabelDetails>]`: parentLabelDetails
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Color <String>]`: 
-      - `[Description <String>]`: 
-      - `[Id <String>]`: 
-      - `[IsActive <Boolean?>]`: 
-      - `[Name <String>]`: 
+      - `[Color <String>]`: The color that the user interface should display for the label, if configured.
+      - `[Description <String>]`: The admin-defined description for the label.
+      - `[Id <String>]`: The label ID is a globally unique identifier (GUID).
+      - `[IsActive <Boolean?>]`: Indicates whether the label is active or not. Active labels should be hidden or disabled in user interfaces.
+      - `[Name <String>]`: The plaintext name of the label.
       - `[Parent <IMicrosoftGraphParentLabelDetails>]`: parentLabelDetails
-      - `[Sensitivity <Int32?>]`: 
-      - `[Tooltip <String>]`: 
+      - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
+      - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a user interface.
     - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
     - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
 

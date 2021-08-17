@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserProfileAward
 
 ## SYNOPSIS
-Update the navigation property awards in users
+Represents the details of awards or honors associated with a person.
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ Update-MgUserProfileAward -InputObject <IPeopleIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Update the navigation property awards in users
+Represents the details of awards or honors associated with a person.
 
 ## EXAMPLES
 
@@ -411,13 +411,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPersonAward
-
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

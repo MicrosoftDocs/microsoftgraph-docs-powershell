@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgTeamScheduleShift
 
 ## SYNOPSIS
-Update the navigation property shifts in teams
+The shifts in the schedule.
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ Update-MgTeamScheduleShift -InputObject <ITeamsIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Update the navigation property shifts in teams
+The shifts in the schedule.
 
 ## EXAMPLES
 
@@ -305,13 +305,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphShift1
-
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgComplianceEdiscoveryCaseLegalHoldSiteSource
 
 ## SYNOPSIS
-Delete navigation property siteSources for compliance
+Data source entity for SharePoint sites associated with the legal hold.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgComplianceEdiscoveryCaseLegalHoldSiteSource -InputObject <IComplianceId
 ```
 
 ## DESCRIPTION
-Delete navigation property siteSources for compliance
+Data source entity for SharePoint sites associated with the legal hold.
 
 ## EXAMPLES
 
@@ -159,11 +159,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

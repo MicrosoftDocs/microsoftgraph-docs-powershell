@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserProfileAnniversary
 
 ## SYNOPSIS
-Get anniversaries from users
+Represents the details of meaningful dates associated with a person.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgUserProfileAnniversary -InputObject <IPeopleIdentity> [-ExpandProperty <St
 ```
 
 ## DESCRIPTION
-Get anniversaries from users
+Represents the details of meaningful dates associated with a person.
 
 ## EXAMPLES
 
@@ -241,11 +241,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPersonAnnualEvent
-
 ## NOTES
 
 ALIASES

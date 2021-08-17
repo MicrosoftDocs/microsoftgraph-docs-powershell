@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgPlannerRosterPlanByRef
 
 ## SYNOPSIS
-Create new navigation property ref to plans for planner
+Retrieves the plans contained by the plannerRoster.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ New-MgPlannerRosterPlanByRef -InputObject <IPlannerIdentity> -BodyParameter <Has
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to plans for planner
+Retrieves the plans contained by the plannerRoster.
 
 ## EXAMPLES
 
@@ -141,13 +141,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPathsZnp7QnPlannerRostersPlannerrosterIdPlansRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

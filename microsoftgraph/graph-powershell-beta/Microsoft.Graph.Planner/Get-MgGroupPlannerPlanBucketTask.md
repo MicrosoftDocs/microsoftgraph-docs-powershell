@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgGroupPlannerPlanBucketTask
 
 ## SYNOPSIS
-Get tasks from groups
+Read-only.
+Nullable.
+The collection of tasks in the bucket.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgGroupPlannerPlanBucketTask -InputObject <IPlannerIdentity> [-ExpandPropert
 ```
 
 ## DESCRIPTION
-Get tasks from groups
+Read-only.
+Nullable.
+The collection of tasks in the bucket.
 
 ## EXAMPLES
 
@@ -271,11 +275,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerTask1
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgTeamInstalledAppTeamAppByRef
 
 ## SYNOPSIS
-Delete ref of navigation property teamsApp for teams
+The app that is installed.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgTeamInstalledAppTeamAppByRef -InputObject <ITeamsIdentity> [-IfMatch <S
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property teamsApp for teams
+The app that is installed.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

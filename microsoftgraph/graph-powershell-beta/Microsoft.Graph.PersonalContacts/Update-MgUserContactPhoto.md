@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgUserContactPhoto
 
 ## SYNOPSIS
-Update the navigation property photo in users
+Optional contact picture.
+You can get or set a photo for a contact.
 
 ## SYNTAX
 
@@ -37,7 +38,8 @@ Update-MgUserContactPhoto -InputObject <IPersonalContactsIdentity> -BodyParamete
 ```
 
 ## DESCRIPTION
-Update the navigation property photo in users
+Optional contact picture.
+You can get or set a photo for a contact.
 
 ## EXAMPLES
 
@@ -219,13 +221,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProfilePhoto
-
 ### Microsoft.Graph.PowerShell.Models.IPersonalContactsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

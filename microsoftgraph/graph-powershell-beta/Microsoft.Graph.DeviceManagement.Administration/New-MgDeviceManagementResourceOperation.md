@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementResourceOperation
 
 ## SYNOPSIS
-Create new navigation property to resourceOperations for deviceManagement
+The Resource Operations.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ New-MgDeviceManagementResourceOperation -BodyParameter <IMicrosoftGraphResourceO
 ```
 
 ## DESCRIPTION
-Create new navigation property to resourceOperations for deviceManagement
+The Resource Operations.
 
 ## EXAMPLES
 
@@ -192,11 +192,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphResourceOperation1
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphResourceOperation1
-
 ## NOTES
 
 ALIASES

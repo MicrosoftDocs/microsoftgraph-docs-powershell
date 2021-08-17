@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgUserInferenceClassificationOverride
 
 ## SYNOPSIS
-Update the navigation property overrides in users
+A set of overrides for a user to always classify messages from specific senders in certain ways: focused, or other.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -41,7 +43,9 @@ Update-MgUserInferenceClassificationOverride -InputObject <IMailIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property overrides in users
+A set of overrides for a user to always classify messages from specific senders in certain ways: focused, or other.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -222,13 +226,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMailIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInferenceClassificationOverride
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

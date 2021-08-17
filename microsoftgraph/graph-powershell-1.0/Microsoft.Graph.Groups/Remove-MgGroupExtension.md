@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgGroupExtension
 
 ## SYNOPSIS
-Delete navigation property extensions for groups
+The collection of open extensions defined for the group.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +27,9 @@ Remove-MgGroupExtension -InputObject <IGroupsIdentity> [-IfMatch <String>] [-Pas
 ```
 
 ## DESCRIPTION
-Delete navigation property extensions for groups
+The collection of open extensions defined for the group.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -144,11 +148,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

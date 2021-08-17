@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgChatMessageHostedContent
 
 ## SYNOPSIS
-Delete navigation property hostedContents for chats
+Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgChatMessageHostedContent -InputObject <ITeamsIdentity> [-IfMatch <Strin
 ```
 
 ## DESCRIPTION
-Delete navigation property hostedContents for chats
+Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
 ## EXAMPLES
 
@@ -159,11 +159,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

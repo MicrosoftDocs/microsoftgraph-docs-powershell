@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserJoinedTeam
 
 ## SYNOPSIS
-Get joinedTeams from users
+The Microsoft Teams teams that the user is a member of.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgUserJoinedTeam -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] 
 ```
 
 ## DESCRIPTION
-Get joinedTeams from users
+The Microsoft Teams teams that the user is a member of.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -241,11 +245,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeam1
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgApplicationExtensionProperty
 
 ## SYNOPSIS
-Get extensionProperties from applications
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgApplicationExtensionProperty -InputObject <IApplicationsIdentity> [-Expand
 ```
 
 ## DESCRIPTION
-Get extensionProperties from applications
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -241,11 +243,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExtensionProperty
-
 ## NOTES
 
 ALIASES

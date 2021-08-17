@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBookingBusinessService
 
 ## SYNOPSIS
-Get services from bookingBusinesses
+All the services offered by this business.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgBookingBusinessService -InputObject <IBookingsIdentity> [-ExpandProperty <
 ```
 
 ## DESCRIPTION
-Get services from bookingBusinesses
+All the services offered by this business.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -241,11 +245,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IBookingsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingService
-
 ## NOTES
 
 ALIASES

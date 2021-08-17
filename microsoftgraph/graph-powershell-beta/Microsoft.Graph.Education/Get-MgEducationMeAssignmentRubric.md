@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEducationMeAssignmentRubric
 
 ## SYNOPSIS
-Get rubric from education
+When set, the grading rubric attached to this assignment.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgEducationMeAssignmentRubric -InputObject <IEducationIdentity> [-ExpandProp
 ```
 
 ## DESCRIPTION
-Get rubric from education
+When set, the grading rubric attached to this assignment.
 
 ## EXAMPLES
 
@@ -98,11 +98,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationRubric
-
 ## NOTES
 
 ALIASES

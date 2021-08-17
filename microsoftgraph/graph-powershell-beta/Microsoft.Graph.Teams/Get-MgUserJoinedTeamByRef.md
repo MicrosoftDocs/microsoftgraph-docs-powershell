@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserJoinedTeamByRef
 
 ## SYNOPSIS
-Get ref of joinedTeams from users
+The Microsoft Teams teams that the user is a member of.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -18,7 +20,9 @@ Get-MgUserJoinedTeamByRef -UserId <String> [-Filter <String>] [-Search <String>]
 ```
 
 ## DESCRIPTION
-Get ref of joinedTeams from users
+The Microsoft Teams teams that the user is a member of.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -168,7 +172,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

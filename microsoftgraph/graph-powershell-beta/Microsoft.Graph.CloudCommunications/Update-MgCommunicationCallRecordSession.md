@@ -8,7 +8,10 @@ schema: 2.0.0
 # Update-MgCommunicationCallRecordSession
 
 ## SYNOPSIS
-Update the navigation property sessions in communications
+List of sessions involved in the call.
+Peer-to-peer calls typically only have one session, whereas group calls typically have at least one session per participant.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -45,7 +48,10 @@ Update-MgCommunicationCallRecordSession -InputObject <ICloudCommunicationsIdenti
 ```
 
 ## DESCRIPTION
-Update the navigation property sessions in communications
+List of sessions involved in the call.
+Peer-to-peer calls typically only have one session, whereas group calls typically have at least one session per participant.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -311,13 +317,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallRecordsSession
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgEducationSynchronizationProfileError
 
 ## SYNOPSIS
-Create new navigation property to errors for education
+All errors associated with this synchronization profile.
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ New-MgEducationSynchronizationProfileError -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to errors for education
+All errors associated with this synchronization profile.
 
 ## EXAMPLES
 
@@ -251,13 +251,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSynchronizationError
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSynchronizationError
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserProfileAnniversary
 
 ## SYNOPSIS
-Delete navigation property anniversaries for users
+Represents the details of meaningful dates associated with a person.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgUserProfileAnniversary -InputObject <IPeopleIdentity> [-IfMatch <String
 ```
 
 ## DESCRIPTION
-Delete navigation property anniversaries for users
+Represents the details of meaningful dates associated with a person.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

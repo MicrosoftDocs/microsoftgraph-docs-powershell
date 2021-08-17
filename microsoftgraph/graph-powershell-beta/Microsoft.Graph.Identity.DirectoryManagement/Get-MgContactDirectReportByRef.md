@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgContactDirectReportByRef
 
 ## SYNOPSIS
-Get ref of directReports from contacts
+The contact's direct reports.
+(The users and contacts that have their manager property set to this contact.) Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -18,7 +20,9 @@ Get-MgContactDirectReportByRef -OrgContactId <String> [-Filter <String>] [-Searc
 ```
 
 ## DESCRIPTION
-Get ref of directReports from contacts
+The contact's direct reports.
+(The users and contacts that have their manager property set to this contact.) Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -168,7 +172,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

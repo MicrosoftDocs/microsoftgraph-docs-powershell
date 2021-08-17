@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgContactManager
 
 ## SYNOPSIS
-Get manager from contacts
+The user or contact that is this contact's manager.
+Read-only.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Get-MgContactManager -InputObject <IIdentityDirectoryManagementIdentity> [-Expan
 ```
 
 ## DESCRIPTION
-Get manager from contacts
+The user or contact that is this contact's manager.
+Read-only.
 
 ## EXAMPLES
 
@@ -98,11 +100,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgGroupThreadPostAttachment
 
 ## SYNOPSIS
-Get attachments from groups
+The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgGroupThreadPostAttachment -InputObject <IGroupsIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-Get attachments from groups
+The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -271,11 +275,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachment
-
 ## NOTES
 
 ALIASES

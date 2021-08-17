@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgShareListColumn
 
 ## SYNOPSIS
-Update the navigation property columns in shares
+The collection of field definitions for this list.
 
 ## SYNTAX
 
@@ -58,7 +58,7 @@ Update-MgShareListColumn -InputObject <IFilesIdentity> -BodyParameter <IMicrosof
 ```
 
 ## DESCRIPTION
-Update the navigation property columns in shares
+The collection of field definitions for this list.
 
 ## EXAMPLES
 
@@ -689,13 +689,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnDefinition
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserRegisteredDeviceByRef
 
 ## SYNOPSIS
-Get ref of registeredDevices from users
+Devices that are registered for the user.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -18,7 +20,9 @@ Get-MgUserRegisteredDeviceByRef -UserId <String> [-Filter <String>] [-Search <St
 ```
 
 ## DESCRIPTION
-Get ref of registeredDevices from users
+Devices that are registered for the user.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -168,7 +172,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Set-MgUserActivityHistoryItemActivityByRef
 
 ## SYNOPSIS
-Update the ref of navigation property activity in users
+Optional.
+NavigationProperty/Containment; navigation property to the associated activity.
 
 ## SYNTAX
 
@@ -37,7 +38,8 @@ Set-MgUserActivityHistoryItemActivityByRef -InputObject <ICrossDeviceExperiences
 ```
 
 ## DESCRIPTION
-Update the ref of navigation property activity in users
+Optional.
+NavigationProperty/Containment; navigation property to the associated activity.
 
 ## EXAMPLES
 
@@ -186,13 +188,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICrossDeviceExperiencesIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,8 @@ schema: 2.0.0
 # Set-MgTeamTemplateByRef
 
 ## SYNOPSIS
-Update the ref of navigation property template in teams
+The template this team was created from.
+See available templates.
 
 ## SYNTAX
 
@@ -37,7 +38,8 @@ Set-MgTeamTemplateByRef -InputObject <ITeamsIdentity> -BodyParameter <Hashtable>
 ```
 
 ## DESCRIPTION
-Update the ref of navigation property template in teams
+The template this team was created from.
+See available templates.
 
 ## EXAMPLES
 
@@ -156,13 +158,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

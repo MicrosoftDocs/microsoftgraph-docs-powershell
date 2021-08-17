@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgOrganization
 
 ## SYNOPSIS
-Update entity in organization
+The organization resource represents an instance of global settings and resources which operate and are provisioned at the tenant-level.
 
 ## SYNTAX
 
@@ -63,7 +63,7 @@ Update-MgOrganization -InputObject <IIdentityDirectoryManagementIdentity>
 ```
 
 ## DESCRIPTION
-Update entity in organization
+The organization resource represents an instance of global settings and resources which operate and are provisioned at the tenant-level.
 
 ## EXAMPLES
 
@@ -388,7 +388,7 @@ Accept wildcard characters: False
 ```
 
 ### -OnPremisesLastSyncDateTime
-The time and date at which the tenant was last synced with the on-premise directory.
+The time and date at which the tenant was last synced with the on-premises directory.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
@@ -658,13 +658,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOrganization1
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -738,7 +735,7 @@ BODYPARAMETER <IMicrosoftGraphOrganization1>: The organization resource represen
   - `[IsMultipleDataLocationsForServicesEnabled <Boolean?>]`: true if organization is Multi-Geo enabled; false if organization is not Multi-Geo enabled; null (default). Read-only. For more information, see OneDrive Online Multi-Geo.
   - `[MarketingNotificationEmails <String[]>]`: Not nullable.
   - `[MobileDeviceManagementAuthority <String>]`: mdmAuthority
-  - `[OnPremisesLastSyncDateTime <DateTime?>]`: The time and date at which the tenant was last synced with the on-premise directory. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[OnPremisesLastSyncDateTime <DateTime?>]`: The time and date at which the tenant was last synced with the on-premises directory. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; Nullable. null if this object has never been synced from an on-premises directory (default).
   - `[PostalCode <String>]`: Postal code of the address for the organization.
   - `[PreferredLanguage <String>]`: The preferred language for the organization. Should follow ISO 639-1 Code; for example en.

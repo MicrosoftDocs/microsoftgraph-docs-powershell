@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgUserSetting
 
 ## SYNOPSIS
-Update the navigation property settings in users
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -41,7 +42,8 @@ Update-MgUserSetting -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGra
 ```
 
 ## DESCRIPTION
-Update the navigation property settings in users
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -79,9 +81,8 @@ Accept wildcard characters: False
 ```
 
 ### -ContributionToContentDiscoveryAsOrganizationDisabled
-Reflects the organization level setting controlling delegate access to the trending API.
+Reflects the Office Delve organization level setting.
 When set to true, the organization doesn't have access to Office Delve.
-The relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for Business is affected for the whole organization.
 This setting is read-only and can only be changed by administrators in the SharePoint admin center.
 
 ```yaml
@@ -97,9 +98,7 @@ Accept wildcard characters: False
 ```
 
 ### -ContributionToContentDiscoveryDisabled
-When set to true, the delegate access to the user's trending API is disabled.
 When set to true, documents in the user's Office Delve are disabled.
-When set to true, the relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for Business is affected.
 Users can control this setting in Office Delve.
 
 ```yaml
@@ -228,13 +227,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserSettings1
-
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -247,8 +243,8 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER <IMicrosoftGraphUserSettings1>: userSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
-  - `[ContributionToContentDiscoveryAsOrganizationDisabled <Boolean?>]`: Reflects the organization level setting controlling delegate access to the trending API. When set to true, the organization doesn't have access to Office Delve. The relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for Business is affected for the whole organization. This setting is read-only and can only be changed by administrators in the SharePoint admin center.
-  - `[ContributionToContentDiscoveryDisabled <Boolean?>]`: When set to true, the delegate access to the user's trending API is disabled. When set to true, documents in the user's Office Delve are disabled. When set to true, the relevancy of the content displayed in Microsoft 365, for example in Suggested sites in SharePoint Home and the Discover view in OneDrive for Business is affected. Users can control this setting in Office Delve.
+  - `[ContributionToContentDiscoveryAsOrganizationDisabled <Boolean?>]`: Reflects the Office Delve organization level setting. When set to true, the organization doesn't have access to Office Delve. This setting is read-only and can only be changed by administrators in the SharePoint admin center.
+  - `[ContributionToContentDiscoveryDisabled <Boolean?>]`: When set to true, documents in the user's Office Delve are disabled. Users can control this setting in Office Delve.
   - `[ShiftPreferences <IMicrosoftGraphShiftPreferences1>]`: shiftPreferences
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z

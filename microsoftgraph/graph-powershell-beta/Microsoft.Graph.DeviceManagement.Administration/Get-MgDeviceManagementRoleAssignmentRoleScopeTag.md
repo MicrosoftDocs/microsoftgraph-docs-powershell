@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementRoleAssignmentRoleScopeTag
 
 ## SYNOPSIS
-Get roleScopeTags from deviceManagement
+The set of Role Scope Tags defined on the Role Assignment.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgDeviceManagementRoleAssignmentRoleScopeTag -DeviceAndAppManagementRoleAssi
 ```
 
 ## DESCRIPTION
-Get roleScopeTags from deviceManagement
+The set of Role Scope Tags defined on the Role Assignment.
 
 ## EXAMPLES
 
@@ -199,7 +199,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleScopeTag
-
 ## NOTES
 
 ALIASES

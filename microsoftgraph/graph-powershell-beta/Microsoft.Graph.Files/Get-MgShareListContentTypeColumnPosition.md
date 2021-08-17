@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgShareListContentTypeColumnPosition
 
 ## SYNOPSIS
-Get columnPositions from shares
+Column order information in a content type.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgShareListContentTypeColumnPosition -ContentTypeId <String> -SharedDriveIte
 ```
 
 ## DESCRIPTION
-Get columnPositions from shares
+Column order information in a content type.
 
 ## EXAMPLES
 
@@ -214,7 +214,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnDefinition
-
 ## NOTES
 
 ALIASES

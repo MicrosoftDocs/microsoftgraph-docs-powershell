@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceUsageRights
 
 ## SYNOPSIS
-Update the navigation property usageRights in devices
+Represents the usage rights a device has been granted.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Update-MgDeviceUsageRights -InputObject <IIdentityDirectoryManagementIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property usageRights in devices
+Represents the usage rights a device has been granted.
 
 ## EXAMPLES
 
@@ -234,13 +234,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUsageRight
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

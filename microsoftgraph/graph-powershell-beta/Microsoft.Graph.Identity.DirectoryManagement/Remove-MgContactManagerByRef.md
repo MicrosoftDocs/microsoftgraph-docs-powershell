@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgContactManagerByRef
 
 ## SYNOPSIS
-Delete ref of navigation property manager for contacts
+The user or contact that is this contact's manager.
+Read-only.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgContactManagerByRef -InputObject <IIdentityDirectoryManagementIdentity>
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property manager for contacts
+The user or contact that is this contact's manager.
+Read-only.
 
 ## EXAMPLES
 
@@ -129,11 +131,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

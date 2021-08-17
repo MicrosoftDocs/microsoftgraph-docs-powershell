@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgPlannerPlan
 
 ## SYNOPSIS
-Create new navigation property to plans for planner
+Read-only.
+Nullable.
+Returns a collection of the specified plans
 
 ## SYNTAX
 
@@ -26,7 +28,9 @@ New-MgPlannerPlan -BodyParameter <IMicrosoftGraphPlannerPlan> [-WhatIf] [-Confir
 ```
 
 ## DESCRIPTION
-Create new navigation property to plans for planner
+Read-only.
+Nullable.
+Returns a collection of the specified plans
 
 ## EXAMPLES
 
@@ -234,11 +238,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerPlan
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerPlan
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgOnPremisePublishingProfilePublishedResourceAgentGroupAgent
 
 ## SYNOPSIS
-Get agents from onPremisesPublishingProfiles
+List of onPremisesAgent that are assigned to an onPremisesAgentGroup.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -34,7 +36,9 @@ Get-MgOnPremisePublishingProfilePublishedResourceAgentGroupAgent -InputObject <I
 ```
 
 ## DESCRIPTION
-Get agents from onPremisesPublishingProfiles
+List of onPremisesAgent that are assigned to an onPremisesAgentGroup.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -273,11 +277,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnPremisesAgent
-
 ## NOTES
 
 ALIASES

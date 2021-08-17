@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgTeamPrimaryChannelMessageHostedContent
 
 ## SYNOPSIS
-Create new navigation property to hostedContents for teams
+Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ New-MgTeamPrimaryChannelMessageHostedContent -InputObject <ITeamsIdentity> -Body
 ```
 
 ## DESCRIPTION
-Create new navigation property to hostedContents for teams
+Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
 ## EXAMPLES
 
@@ -205,13 +205,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessageHostedContent
-
 ## NOTES
 
 ALIASES

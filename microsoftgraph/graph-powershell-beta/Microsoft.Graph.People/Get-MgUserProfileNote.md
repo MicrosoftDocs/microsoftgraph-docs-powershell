@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserProfileNote
 
 ## SYNOPSIS
-Get notes from users
+Represents notes that a user has added to their profile.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgUserProfileNote -InputObject <IPeopleIdentity> [-ExpandProperty <String[]>
 ```
 
 ## DESCRIPTION
-Get notes from users
+Represents notes that a user has added to their profile.
 
 ## EXAMPLES
 
@@ -241,11 +241,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPersonAnnotation
-
 ## NOTES
 
 ALIASES

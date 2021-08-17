@@ -226,13 +226,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoverySettings
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -247,21 +244,21 @@ BODYPARAMETER <IMicrosoftGraphEdiscoverySettings>: settings
   - `[Id <String>]`: Read-only.
   - `[Ocr <IMicrosoftGraphEdiscoveryOcrSettings>]`: ocrSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[IsEnabled <Boolean?>]`: 
-    - `[MaxImageSize <Int32?>]`: 
-    - `[Timeout <TimeSpan?>]`: 
+    - `[IsEnabled <Boolean?>]`: Indicates whether or not OCR is enabled for the case.
+    - `[MaxImageSize <Int32?>]`: Maximum image size that will be processed in KB).
+    - `[Timeout <TimeSpan?>]`: The timeout duration for the OCR engine. A longer timeout may increase success of OCR, but may add to the total processing time.
   - `[RedundancyDetection <IMicrosoftGraphEdiscoveryRedundancyDetectionSettings>]`: redundancyDetectionSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[IsEnabled <Boolean?>]`: 
-    - `[MaxWords <Int32?>]`: 
-    - `[MinWords <Int32?>]`: 
-    - `[SimilarityThreshold <Int32?>]`: 
+    - `[IsEnabled <Boolean?>]`: Indicates whether email threading and near duplicate detection are enabled.
+    - `[MaxWords <Int32?>]`: See Minimum/maximum number of words to learn more.
+    - `[MinWords <Int32?>]`: See Minimum/maximum number of words to learn more.
+    - `[SimilarityThreshold <Int32?>]`: See Document and email similarity threshold to learn more.
   - `[TopicModeling <IMicrosoftGraphEdiscoveryTopicModelingSettings>]`: topicModelingSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DynamicallyAdjustTopicCount <Boolean?>]`: 
-    - `[IgnoreNumbers <Boolean?>]`: 
-    - `[IsEnabled <Boolean?>]`: 
-    - `[TopicCount <Int32?>]`: 
+    - `[DynamicallyAdjustTopicCount <Boolean?>]`: To learn more, see Adjust maximum number of themes dynamically.
+    - `[IgnoreNumbers <Boolean?>]`: To learn more, see Include numbers in themes.
+    - `[IsEnabled <Boolean?>]`: Indicates whether themes is enabled for the case.
+    - `[TopicCount <Int32?>]`: To learn more, see Maximum number of themes.
 
 INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   - `[CaseId <String>]`: key: id of case
@@ -280,22 +277,22 @@ INPUTOBJECT <IComplianceIdentity>: Identity Parameter
 
 OCR <IMicrosoftGraphEdiscoveryOcrSettings>: ocrSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[IsEnabled <Boolean?>]`: 
-  - `[MaxImageSize <Int32?>]`: 
-  - `[Timeout <TimeSpan?>]`: 
+  - `[IsEnabled <Boolean?>]`: Indicates whether or not OCR is enabled for the case.
+  - `[MaxImageSize <Int32?>]`: Maximum image size that will be processed in KB).
+  - `[Timeout <TimeSpan?>]`: The timeout duration for the OCR engine. A longer timeout may increase success of OCR, but may add to the total processing time.
 
 REDUNDANCYDETECTION <IMicrosoftGraphEdiscoveryRedundancyDetectionSettings>: redundancyDetectionSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[IsEnabled <Boolean?>]`: 
-  - `[MaxWords <Int32?>]`: 
-  - `[MinWords <Int32?>]`: 
-  - `[SimilarityThreshold <Int32?>]`: 
+  - `[IsEnabled <Boolean?>]`: Indicates whether email threading and near duplicate detection are enabled.
+  - `[MaxWords <Int32?>]`: See Minimum/maximum number of words to learn more.
+  - `[MinWords <Int32?>]`: See Minimum/maximum number of words to learn more.
+  - `[SimilarityThreshold <Int32?>]`: See Document and email similarity threshold to learn more.
 
 TOPICMODELING <IMicrosoftGraphEdiscoveryTopicModelingSettings>: topicModelingSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DynamicallyAdjustTopicCount <Boolean?>]`: 
-  - `[IgnoreNumbers <Boolean?>]`: 
-  - `[IsEnabled <Boolean?>]`: 
-  - `[TopicCount <Int32?>]`: 
+  - `[DynamicallyAdjustTopicCount <Boolean?>]`: To learn more, see Adjust maximum number of themes dynamically.
+  - `[IgnoreNumbers <Boolean?>]`: To learn more, see Include numbers in themes.
+  - `[IsEnabled <Boolean?>]`: Indicates whether themes is enabled for the case.
+  - `[TopicCount <Int32?>]`: To learn more, see Maximum number of themes.
 
 ## RELATED LINKS

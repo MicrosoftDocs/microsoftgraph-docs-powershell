@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPrintPrinter
 
 ## SYNOPSIS
-Get printers from print
+The list of printers registered in the tenant.
 
 ## SYNTAX
 
@@ -31,7 +31,7 @@ Get-MgPrintPrinter -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-Get printers from print
+The list of printers registered in the tenant.
 
 ## EXAMPLES
 
@@ -225,11 +225,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrinter1
-
 ## NOTES
 
 ALIASES

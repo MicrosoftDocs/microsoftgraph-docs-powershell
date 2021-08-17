@@ -1,45 +1,44 @@
 ---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/new-mgusermemberofbyref
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/new-mguserextension
 schema: 2.0.0
 ---
 
-# New-MgUserLicenseDetail
+# New-MgUserExtension
 
 ## SYNOPSIS
-Create new navigation property to licenseDetails for users
+The collection of open extensions defined for the user.
+Nullable.
 
 ## SYNTAX
 
 ### CreateExpanded1 (Default)
 ```
-New-MgUserLicenseDetail -UserId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-ServicePlans <IMicrosoftGraphServicePlanInfo[]>] [-SkuId <String>] [-SkuPartNumber <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgUserExtension -UserId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgUserLicenseDetail -UserId <String> -BodyParameter <IMicrosoftGraphLicenseDetails> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgUserExtension -UserId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded1
 ```
-New-MgUserLicenseDetail -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-ServicePlans <IMicrosoftGraphServicePlanInfo[]>] [-SkuId <String>] [-SkuPartNumber <String>] [-WhatIf]
+New-MgUserExtension -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity1
 ```
-New-MgUserLicenseDetail -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphLicenseDetails> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgUserExtension -InputObject <IUsersIdentity> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create new navigation property to licenseDetails for users
+The collection of open extensions defined for the user.
+Nullable.
 
 ## EXAMPLES
 
@@ -61,11 +60,10 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-licenseDetails
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+extension
 
 ```yaml
-Type: IMicrosoftGraphLicenseDetails
+Type: Hashtable
 Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
@@ -104,57 +102,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ServicePlans
-Information about the service plans assigned with the license.
-Read-only, Not nullable
-To construct, see NOTES section for SERVICEPLANS properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphServicePlanInfo[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -SkuId
-Unique identifier (GUID) for the service SKU.
-Equal to the skuId property on the related SubscribedSku object.
-Read-only
-
-```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -SkuPartNumber
-Unique SKU display name.
-Equal to the skuPartNumber on the related SubscribedSku object; for example: 'AAD_Premium'.
-Read-only
-
-```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -209,14 +156,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLicenseDetails
-
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
+### System.Collections.Hashtable
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLicenseDetails
-
+### System.String
 ## NOTES
 
 ALIASES
@@ -225,17 +169,6 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-BODYPARAMETER <IMicrosoftGraphLicenseDetails>: licenseDetails
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
-  - `[ServicePlans <IMicrosoftGraphServicePlanInfo[]>]`: Information about the service plans assigned with the license. Read-only, Not nullable
-    - `[AppliesTo <String>]`: The object the service plan can be assigned to. Possible values:'User' - service plan can be assigned to individual users.'Company' - service plan can be assigned to the entire tenant.
-    - `[ProvisioningStatus <String>]`: The provisioning status of the service plan. Possible values:'Success' - Service is fully provisioned.'Disabled' - Service has been disabled.'PendingInput' - Service is not yet provisioned; awaiting service confirmation.'PendingActivation' - Service is provisioned but requires explicit activation by administrator (for example, Intune_O365 service plan).'PendingProvisioning' - Microsoft has added a new service to the product SKU and it has not been activated in the tenant, yet.
-    - `[ServicePlanId <String>]`: The unique identifier of the service plan.
-    - `[ServicePlanName <String>]`: The name of the service plan.
-  - `[SkuId <String>]`: Unique identifier (GUID) for the service SKU. Equal to the skuId property on the related SubscribedSku object. Read-only
-  - `[SkuPartNumber <String>]`: Unique SKU display name. Equal to the skuPartNumber on the related SubscribedSku object; for example: 'AAD_Premium'. Read-only
 
 INPUTOBJECT <IUsersIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
@@ -253,11 +186,5 @@ INPUTOBJECT <IUsersIdentity>: Identity Parameter
   - `[TodoTaskId <String>]`: key: id of todoTask
   - `[TodoTaskListId <String>]`: key: id of todoTaskList
   - `[UserId <String>]`: key: id of user
-
-SERVICEPLANS <IMicrosoftGraphServicePlanInfo[]>: Information about the service plans assigned with the license. Read-only, Not nullable
-  - `[AppliesTo <String>]`: The object the service plan can be assigned to. Possible values:'User' - service plan can be assigned to individual users.'Company' - service plan can be assigned to the entire tenant.
-  - `[ProvisioningStatus <String>]`: The provisioning status of the service plan. Possible values:'Success' - Service is fully provisioned.'Disabled' - Service has been disabled.'PendingInput' - Service is not yet provisioned; awaiting service confirmation.'PendingActivation' - Service is provisioned but requires explicit activation by administrator (for example, Intune_O365 service plan).'PendingProvisioning' - Microsoft has added a new service to the product SKU and it has not been activated in the tenant, yet.
-  - `[ServicePlanId <String>]`: The unique identifier of the service plan.
-  - `[ServicePlanName <String>]`: The name of the service plan.
 
 ## RELATED LINKS

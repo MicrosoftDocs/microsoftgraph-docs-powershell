@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgShareListItem
 
 ## SYNOPSIS
-Delete navigation property items for shares
+All items contained in the list.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Remove-MgShareListItem -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassT
 ```
 
 ## DESCRIPTION
-Delete navigation property items for shares
+All items contained in the list.
 
 ## EXAMPLES
 
@@ -156,11 +156,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

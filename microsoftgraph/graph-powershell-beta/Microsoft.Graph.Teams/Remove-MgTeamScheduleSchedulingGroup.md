@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgTeamScheduleSchedulingGroup
 
 ## SYNOPSIS
-Delete navigation property schedulingGroups for teams
+The logical grouping of users in the schedule (usually by role).
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity> [-IfMatch <St
 ```
 
 ## DESCRIPTION
-Delete navigation property schedulingGroups for teams
+The logical grouping of users in the schedule (usually by role).
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

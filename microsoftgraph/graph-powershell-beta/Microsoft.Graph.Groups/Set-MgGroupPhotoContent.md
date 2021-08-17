@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgGroupPhotoContent
 
 ## SYNOPSIS
-Update media content for the navigation property photo in groups
+The group's profile photo.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Set-MgGroupPhotoContent -InputObject <IGroupsIdentity> [-BodyParameter <Stream>]
 ```
 
 ## DESCRIPTION
-Update media content for the navigation property photo in groups
+The group's profile photo.
 
 ## EXAMPLES
 
@@ -173,13 +173,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ### System.IO.Stream
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

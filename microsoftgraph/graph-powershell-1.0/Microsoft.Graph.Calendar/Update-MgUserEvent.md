@@ -8,7 +8,10 @@ schema: 2.0.0
 # Update-MgUserEvent
 
 ## SYNOPSIS
-Update the navigation property events in users
+The user's events.
+Default is to show events under the Default Calendar.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -69,7 +72,10 @@ Update-MgUserEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGr
 ```
 
 ## DESCRIPTION
-Update the navigation property events in users
+The user's events.
+Default is to show events under the Default Calendar.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -964,13 +970,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

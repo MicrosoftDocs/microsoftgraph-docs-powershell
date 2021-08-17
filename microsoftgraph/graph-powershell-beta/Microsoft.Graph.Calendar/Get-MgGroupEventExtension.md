@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgGroupEventExtension
 
 ## SYNOPSIS
-Get extensions from groups
+The collection of open extensions defined for the event.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +33,8 @@ Get-MgGroupEventExtension -InputObject <ICalendarIdentity> [-ExpandProperty <Str
 ```
 
 ## DESCRIPTION
-Get extensions from groups
+The collection of open extensions defined for the event.
+Nullable.
 
 ## EXAMPLES
 
@@ -256,13 +258,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExtension
-
 ### System.String
-
 ## NOTES
 
 ALIASES

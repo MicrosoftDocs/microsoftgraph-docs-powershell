@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgDriveBundle
 
 ## SYNOPSIS
-Delete navigation property bundles for drives
+Collection of [bundles][bundle] (albums and multi-select-shared sets of items).
+Only in personal OneDrive.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgDriveBundle -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassThr
 ```
 
 ## DESCRIPTION
-Delete navigation property bundles for drives
+Collection of [bundles][bundle] (albums and multi-select-shared sets of items).
+Only in personal OneDrive.
 
 ## EXAMPLES
 
@@ -144,11 +146,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

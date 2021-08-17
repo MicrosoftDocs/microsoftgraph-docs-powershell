@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgEducationClassMemberByRef
 
 ## SYNOPSIS
-Get ref of members from education
+All users in the class.
+Nullable.
 
 ## SYNTAX
 
@@ -19,7 +20,8 @@ Get-MgEducationClassMemberByRef -EducationClassId <String> [-Filter <String>] [-
 ```
 
 ## DESCRIPTION
-Get ref of members from education
+All users in the class.
+Nullable.
 
 ## EXAMPLES
 
@@ -169,7 +171,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

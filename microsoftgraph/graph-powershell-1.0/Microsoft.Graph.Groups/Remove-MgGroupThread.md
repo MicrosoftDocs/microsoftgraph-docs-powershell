@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgGroupThread
 
 ## SYNOPSIS
-Delete navigation property threads for groups
+The group's conversation threads.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgGroupThread -InputObject <IGroupsIdentity> [-IfMatch <String>] [-PassTh
 ```
 
 ## DESCRIPTION
-Delete navigation property threads for groups
+The group's conversation threads.
+Nullable.
 
 ## EXAMPLES
 
@@ -144,11 +146,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

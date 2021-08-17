@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgApplicationSynchronizationJobSchemaDirectory
 
 ## SYNOPSIS
-Update the navigation property directories in applications
+Contains the collection of directories and all of their objects.
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ Update-MgApplicationSynchronizationJobSchemaDirectory -InputObject <IApplication
 ```
 
 ## DESCRIPTION
-Update the navigation property directories in applications
+Contains the collection of directories and all of their objects.
 
 ## EXAMPLES
 
@@ -302,13 +302,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryDefinition
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgShareListContentTypeBaseByRef
 
 ## SYNOPSIS
-Get ref of base from shares
+Parent contentType from which this content type is derived.
 
 ## SYNTAX
 
@@ -23,7 +23,7 @@ Get-MgShareListContentTypeBaseByRef -InputObject <IFilesIdentity> [<CommonParame
 ```
 
 ## DESCRIPTION
-Get ref of base from shares
+Parent contentType from which this content type is derived.
 
 ## EXAMPLES
 
@@ -81,11 +81,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

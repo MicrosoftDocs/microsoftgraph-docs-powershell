@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgUserMailFolderMessageMultiValueExtendedProperty
 
 ## SYNOPSIS
-Update the navigation property multiValueExtendedProperties in users
+The collection of multi-value extended properties defined for the message.
+Nullable.
 
 ## SYNTAX
 
@@ -42,7 +43,8 @@ Update-MgUserMailFolderMessageMultiValueExtendedProperty -InputObject <IMailIden
 ```
 
 ## DESCRIPTION
-Update the navigation property multiValueExtendedProperties in users
+The collection of multi-value extended properties defined for the message.
+Nullable.
 
 ## EXAMPLES
 
@@ -237,13 +239,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMailIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMultiValueLegacyExtendedProperty
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

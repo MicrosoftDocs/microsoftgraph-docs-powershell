@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDriveListColumn
 
 ## SYNOPSIS
-Update the navigation property columns in drives
+The collection of field definitions for this list.
 
 ## SYNTAX
 
@@ -49,7 +49,7 @@ Update-MgDriveListColumn -InputObject <IFilesIdentity> -BodyParameter <IMicrosof
 ```
 
 ## DESCRIPTION
-Update the navigation property columns in drives
+The collection of field definitions for this list.
 
 ## EXAMPLES
 
@@ -510,13 +510,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnDefinition1
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

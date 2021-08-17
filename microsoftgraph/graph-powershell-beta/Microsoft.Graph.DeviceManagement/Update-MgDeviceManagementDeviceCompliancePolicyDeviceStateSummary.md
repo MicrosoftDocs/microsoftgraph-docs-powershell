@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary
 
 ## SYNOPSIS
-Update the navigation property deviceCompliancePolicyDeviceStateSummary in deviceManagement
+The device compliance state summary for this account.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Update-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary
 ```
 
 ## DESCRIPTION
-Update the navigation property deviceCompliancePolicyDeviceStateSummary in deviceManagement
+The device compliance state summary for this account.
 
 ## EXAMPLES
 
@@ -268,11 +268,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicyDeviceStateSummary
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

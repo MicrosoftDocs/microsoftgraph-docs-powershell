@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgShareListContentTypeColumnPositionByRef
 
 ## SYNOPSIS
-Create new navigation property ref to columnPositions for shares
+Column order information in a content type.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ New-MgShareListContentTypeColumnPositionByRef -InputObject <IFilesIdentity> -Bod
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to columnPositions for shares
+Column order information in a content type.
 
 ## EXAMPLES
 
@@ -156,13 +156,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths4Aq8TSharesShareddriveitemIdListContenttypesContenttypeIdColumnpositionsRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES

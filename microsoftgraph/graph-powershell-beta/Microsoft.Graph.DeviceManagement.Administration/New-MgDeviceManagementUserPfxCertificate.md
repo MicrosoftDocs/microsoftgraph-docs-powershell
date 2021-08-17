@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementUserPfxCertificate
 
 ## SYNOPSIS
-Create new navigation property to userPfxCertificates for deviceManagement
+Collection of PFX certificates associated with a user.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ New-MgDeviceManagementUserPfxCertificate -BodyParameter <IMicrosoftGraphUserPfxC
 ```
 
 ## DESCRIPTION
-Create new navigation property to userPfxCertificates for deviceManagement
+Collection of PFX certificates associated with a user.
 
 ## EXAMPLES
 
@@ -297,11 +297,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserPfxCertificate
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserPfxCertificate
-
 ## NOTES
 
 ALIASES

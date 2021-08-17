@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgApplicationTokenLifetimePolicy
 
 ## SYNOPSIS
-Get tokenLifetimePolicies from applications
+The tokenLifetimePolicies assigned to this application.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgApplicationTokenLifetimePolicy -ApplicationId <String> [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-Get tokenLifetimePolicies from applications
+The tokenLifetimePolicies assigned to this application.
 
 ## EXAMPLES
 
@@ -199,7 +199,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTokenLifetimePolicy
-
 ## NOTES
 
 ALIASES

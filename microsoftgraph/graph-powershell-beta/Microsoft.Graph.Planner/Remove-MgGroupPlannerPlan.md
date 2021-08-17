@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgGroupPlannerPlan
 
 ## SYNOPSIS
-Delete navigation property plans for groups
+Read-only.
+Nullable.
+Returns the plannerPlans owned by the group.
 
 ## SYNTAX
 
@@ -25,7 +27,9 @@ Remove-MgGroupPlannerPlan -InputObject <IPlannerIdentity> [-IfMatch <String>] [-
 ```
 
 ## DESCRIPTION
-Delete navigation property plans for groups
+Read-only.
+Nullable.
+Returns the plannerPlans owned by the group.
 
 ## EXAMPLES
 
@@ -144,11 +148,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

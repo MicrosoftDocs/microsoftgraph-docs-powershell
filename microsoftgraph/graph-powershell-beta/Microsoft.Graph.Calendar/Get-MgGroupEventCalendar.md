@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgGroupEventCalendar
 
 ## SYNOPSIS
-Get calendar from groups
+The calendar that contains the event.
+Navigation property.
+Read-only.
 
 ## SYNTAX
 
@@ -25,7 +27,9 @@ Get-MgGroupEventCalendar -InputObject <ICalendarIdentity> [-ExpandProperty <Stri
 ```
 
 ## DESCRIPTION
-Get calendar from groups
+The calendar that contains the event.
+Navigation property.
+Read-only.
 
 ## EXAMPLES
 
@@ -113,11 +117,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalendar1
-
 ## NOTES
 
 ALIASES

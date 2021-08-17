@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgServicePrincipalTokenIssuancePolicy
 
 ## SYNOPSIS
-Get tokenIssuancePolicies from servicePrincipals
+The tokenIssuancePolicies assigned to this service principal.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgServicePrincipalTokenIssuancePolicy -ServicePrincipalId <String> [-ExpandP
 ```
 
 ## DESCRIPTION
-Get tokenIssuancePolicies from servicePrincipals
+The tokenIssuancePolicies assigned to this service principal.
 
 ## EXAMPLES
 
@@ -199,7 +199,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTokenIssuancePolicy1
-
 ## NOTES
 
 ALIASES

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgPlannerPlanBucketTaskBoardFormat
 
 ## SYNOPSIS
-Delete navigation property bucketTaskBoardFormat for planner
+Read-only.
+Nullable.
+Used to render the task correctly in the task board view when grouped by bucket.
 
 ## SYNTAX
 
@@ -25,7 +27,9 @@ Remove-MgPlannerPlanBucketTaskBoardFormat -InputObject <IPlannerIdentity> [-IfMa
 ```
 
 ## DESCRIPTION
-Delete navigation property bucketTaskBoardFormat for planner
+Read-only.
+Nullable.
+Used to render the task correctly in the task board view when grouped by bucket.
 
 ## EXAMPLES
 
@@ -159,11 +163,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

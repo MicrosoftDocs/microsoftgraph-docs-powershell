@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgDriveSpecial
 
 ## SYNOPSIS
-Get special from drives
+Collection of common folders available in OneDrive.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -32,7 +34,9 @@ Get-MgDriveSpecial -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-
 ```
 
 ## DESCRIPTION
-Get special from drives
+Collection of common folders available in OneDrive.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -241,11 +245,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDriveItem
-
 ## NOTES
 
 ALIASES

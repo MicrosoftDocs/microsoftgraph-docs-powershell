@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementCartToClassAssociation
 
 ## SYNOPSIS
-Create new navigation property to cartToClassAssociations for deviceManagement
+The Cart To Class Associations.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ New-MgDeviceManagementCartToClassAssociation -BodyParameter <IMicrosoftGraphCart
 ```
 
 ## DESCRIPTION
-Create new navigation property to cartToClassAssociations for deviceManagement
+The Cart To Class Associations.
 
 ## EXAMPLES
 
@@ -220,11 +220,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCartToClassAssociation
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCartToClassAssociation
-
 ## NOTES
 
 ALIASES

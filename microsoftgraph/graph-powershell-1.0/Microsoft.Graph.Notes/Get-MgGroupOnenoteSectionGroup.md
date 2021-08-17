@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgGroupOnenoteSectionGroup
 
 ## SYNOPSIS
-Get sectionGroups from groups
+The section groups in all OneNote notebooks that are owned by the user or group.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -39,7 +41,9 @@ Get-MgGroupOnenoteSectionGroup -InputObject <INotesIdentity> [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-Get sectionGroups from groups
+The section groups in all OneNote notebooks that are owned by the user or group.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -248,11 +252,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.INotesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSectionGroup
-
 ## NOTES
 
 ALIASES

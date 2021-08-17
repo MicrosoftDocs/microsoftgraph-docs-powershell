@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgUserContactExtension
 
 ## SYNOPSIS
-Create new navigation property to extensions for users
+The collection of open extensions defined for the contact.
+Nullable.
 
 ## SYNTAX
 
@@ -37,7 +38,8 @@ New-MgUserContactExtension -InputObject <IPersonalContactsIdentity> -BodyParamet
 ```
 
 ## DESCRIPTION
-Create new navigation property to extensions for users
+The collection of open extensions defined for the contact.
+Nullable.
 
 ## EXAMPLES
 
@@ -171,13 +173,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPersonalContactsIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

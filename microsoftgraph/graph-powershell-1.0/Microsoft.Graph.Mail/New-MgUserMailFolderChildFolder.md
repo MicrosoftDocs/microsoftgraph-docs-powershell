@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserMailFolderChildFolder
 
 ## SYNOPSIS
-Create new navigation property to childFolders for users
+The collection of child folders in the mailFolder.
 
 ## SYNTAX
 
@@ -16,7 +16,8 @@ Create new navigation property to childFolders for users
 ```
 New-MgUserMailFolderChildFolder -MailFolderId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
  [-ChildFolderCount <Int32>] [-ChildFolders <IMicrosoftGraphMailFolder[]>] [-DisplayName <String>]
- [-Id <String>] [-MessageRules <IMicrosoftGraphMessageRule[]>] [-Messages <IMicrosoftGraphMessage[]>]
+ [-Id <String>] [-IsHidden] [-MessageRules <IMicrosoftGraphMessageRule[]>]
+ [-Messages <IMicrosoftGraphMessage[]>]
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-ParentFolderId <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
  [-TotalItemCount <Int32>] [-UnreadItemCount <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -32,7 +33,8 @@ New-MgUserMailFolderChildFolder -MailFolderId <String> -UserId <String>
 ```
 New-MgUserMailFolderChildFolder -InputObject <IMailIdentity> [-AdditionalProperties <Hashtable>]
  [-ChildFolderCount <Int32>] [-ChildFolders <IMicrosoftGraphMailFolder[]>] [-DisplayName <String>]
- [-Id <String>] [-MessageRules <IMicrosoftGraphMessageRule[]>] [-Messages <IMicrosoftGraphMessage[]>]
+ [-Id <String>] [-IsHidden] [-MessageRules <IMicrosoftGraphMessageRule[]>]
+ [-Messages <IMicrosoftGraphMessage[]>]
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-ParentFolderId <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
  [-TotalItemCount <Int32>] [-UnreadItemCount <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -45,7 +47,7 @@ New-MgUserMailFolderChildFolder -InputObject <IMailIdentity> -BodyParameter <IMi
 ```
 
 ## DESCRIPTION
-Create new navigation property to childFolders for users
+The collection of child folders in the mailFolder.
 
 ## EXAMPLES
 
@@ -156,6 +158,23 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -IsHidden
+Indicates whether the mailFolder is hidden.
+This property can be set only when creating the folder.
+Find more information in Hidden mail folders.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -339,13 +358,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMailIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailFolder
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailFolder
-
 ## NOTES
 
 ALIASES
@@ -361,6 +377,7 @@ BODYPARAMETER <IMicrosoftGraphMailFolder>: mailFolder
   - `[ChildFolderCount <Int32?>]`: The number of immediate child mailFolders in the current mailFolder.
   - `[ChildFolders <IMicrosoftGraphMailFolder[]>]`: The collection of child folders in the mailFolder.
   - `[DisplayName <String>]`: The mailFolder's display name.
+  - `[IsHidden <Boolean?>]`: Indicates whether the mailFolder is hidden. This property can be set only when creating the folder. Find more information in Hidden mail folders.
   - `[MessageRules <IMicrosoftGraphMessageRule[]>]`: The collection of rules that apply to the user's Inbox folder.
     - `[Id <String>]`: Read-only.
     - `[Actions <IMicrosoftGraphMessageRuleActions>]`: messageRuleActions
@@ -492,6 +509,7 @@ CHILDFOLDERS <IMicrosoftGraphMailFolder[]>: The collection of child folders in t
   - `[ChildFolderCount <Int32?>]`: The number of immediate child mailFolders in the current mailFolder.
   - `[ChildFolders <IMicrosoftGraphMailFolder[]>]`: The collection of child folders in the mailFolder.
   - `[DisplayName <String>]`: The mailFolder's display name.
+  - `[IsHidden <Boolean?>]`: Indicates whether the mailFolder is hidden. This property can be set only when creating the folder. Find more information in Hidden mail folders.
   - `[MessageRules <IMicrosoftGraphMessageRule[]>]`: The collection of rules that apply to the user's Inbox folder.
     - `[Id <String>]`: Read-only.
     - `[Actions <IMicrosoftGraphMessageRuleActions>]`: messageRuleActions

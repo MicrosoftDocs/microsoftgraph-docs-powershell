@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgUserTeamwork
 
 ## SYNOPSIS
-Delete navigation property teamwork for users
+A container for Microsoft Teams features available for the user.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +27,9 @@ Remove-MgUserTeamwork -InputObject <ITeamsIdentity> [-IfMatch <String>] [-PassTh
 ```
 
 ## DESCRIPTION
-Delete navigation property teamwork for users
+A container for Microsoft Teams features available for the user.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -129,11 +133,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

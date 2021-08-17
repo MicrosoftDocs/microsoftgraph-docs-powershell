@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgComplianceEdiscoveryCaseReviewSetQuery
 
 ## SYNOPSIS
-Update the navigation property queries in compliance
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -43,7 +44,8 @@ Update-MgComplianceEdiscoveryCaseReviewSetQuery -InputObject <IComplianceIdentit
 ```
 
 ## DESCRIPTION
-Update the navigation property queries in compliance
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -307,13 +309,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryReviewSetQuery
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

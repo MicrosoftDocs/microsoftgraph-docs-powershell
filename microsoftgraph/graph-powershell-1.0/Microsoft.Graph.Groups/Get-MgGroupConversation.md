@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupConversation
 
 ## SYNOPSIS
-Get conversations from groups
+The group's conversations.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgGroupConversation -InputObject <IGroupsIdentity> [-ExpandProperty <String[
 ```
 
 ## DESCRIPTION
-Get conversations from groups
+The group's conversations.
 
 ## EXAMPLES
 
@@ -241,11 +241,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversation1
-
 ## NOTES
 
 ALIASES

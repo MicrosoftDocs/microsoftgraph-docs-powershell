@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementResourceAccessProfile
 
 ## SYNOPSIS
-Create new navigation property to resourceAccessProfiles for deviceManagement
+Collection of resource access settings associated with account.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ New-MgDeviceManagementResourceAccessProfile
 ```
 
 ## DESCRIPTION
-Create new navigation property to resourceAccessProfiles for deviceManagement
+Collection of resource access settings associated with account.
 
 ## EXAMPLES
 
@@ -224,11 +224,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementResourceAccessProfileBase
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementResourceAccessProfileBase
-
 ## NOTES
 
 ALIASES

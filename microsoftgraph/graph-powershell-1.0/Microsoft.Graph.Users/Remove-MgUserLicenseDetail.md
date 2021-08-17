@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgUserLicenseDetail
 
 ## SYNOPSIS
-Delete navigation property licenseDetails for users
+A collection of this user's license details.
+Read-only.
 
 ## SYNTAX
 
@@ -25,7 +26,8 @@ Remove-MgUserLicenseDetail -InputObject <IUsersIdentity> [-IfMatch <String>] [-P
 ```
 
 ## DESCRIPTION
-Delete navigation property licenseDetails for users
+A collection of this user's license details.
+Read-only.
 
 ## EXAMPLES
 
@@ -144,11 +146,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

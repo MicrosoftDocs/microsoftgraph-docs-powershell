@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgPrintTaskDefinition
 
 ## SYNOPSIS
-Delete navigation property taskDefinitions for print
+List of abstract definition for a task that can be triggered when various events occur within Universal Print.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgPrintTaskDefinition -InputObject <IDevicesCloudPrintIdentity> [-IfMatch
 ```
 
 ## DESCRIPTION
-Delete navigation property taskDefinitions for print
+List of abstract definition for a task that can be triggered when various events occur within Universal Print.
 
 ## EXAMPLES
 
@@ -129,11 +129,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

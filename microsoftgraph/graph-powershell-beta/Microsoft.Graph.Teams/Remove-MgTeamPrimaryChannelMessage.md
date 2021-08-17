@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgTeamPrimaryChannelMessage
 
 ## SYNOPSIS
-Delete navigation property messages for teams
+A collection of all the messages in the channel.
+A navigation property.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +27,9 @@ Remove-MgTeamPrimaryChannelMessage -InputObject <ITeamsIdentity> [-IfMatch <Stri
 ```
 
 ## DESCRIPTION
-Delete navigation property messages for teams
+A collection of all the messages in the channel.
+A navigation property.
+Nullable.
 
 ## EXAMPLES
 
@@ -144,11 +148,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

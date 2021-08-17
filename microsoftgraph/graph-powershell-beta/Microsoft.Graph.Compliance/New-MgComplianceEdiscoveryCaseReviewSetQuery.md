@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgComplianceEdiscoveryCaseReviewSetQuery
 
 ## SYNOPSIS
-Create new navigation property to queries for compliance
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -41,7 +42,8 @@ New-MgComplianceEdiscoveryCaseReviewSetQuery -InputObject <IComplianceIdentity>
 ```
 
 ## DESCRIPTION
-Create new navigation property to queries for compliance
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -275,13 +277,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryReviewSetQuery
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryReviewSetQuery
-
 ## NOTES
 
 ALIASES

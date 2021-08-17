@@ -15,7 +15,7 @@ Invoke action createReplyAll
 ### CreateExpanded3 (Default)
 ```
 New-MgUserMessageReplyAll -MessageId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-Comment <String>] [-Message <IMicrosoftGraphMessage1>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Comment <String>] [-Message <IMicrosoftGraphMessage>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create3
@@ -28,7 +28,7 @@ New-MgUserMessageReplyAll -MessageId <String> -UserId <String>
 ### CreateViaIdentityExpanded3
 ```
 New-MgUserMessageReplyAll -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-Comment <String>] [-Message <IMicrosoftGraphMessage1>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Comment <String>] [-Message <IMicrosoftGraphMessage>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity3
@@ -112,7 +112,7 @@ message
 To construct, see NOTES section for MESSAGE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMessage1
+Type: IMicrosoftGraphMessage
 Parameter Sets: CreateExpanded3, CreateViaIdentityExpanded3
 Aliases:
 
@@ -190,13 +190,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths140I0IcUsersUserIdMessagesMessageIdMicrosoftGraphCreatereplyallPostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMessage1
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMessage
 ## NOTES
 
 ALIASES
@@ -209,7 +206,7 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER <IPaths140I0IcUsersUserIdMessagesMessageIdMicrosoftGraphCreatereplyallPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Comment <String>]`: 
-  - `[Message <IMicrosoftGraphMessage1>]`: message
+  - `[Message <IMicrosoftGraphMessage>]`: message
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Categories <String[]>]`: The categories associated with the item
     - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
@@ -315,7 +312,7 @@ INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[UsedInsightId <String>]`: key: id of usedInsight
   - `[UserId <String>]`: key: id of user
 
-MESSAGE <IMicrosoftGraphMessage1>: message
+MESSAGE <IMicrosoftGraphMessage>: message
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Categories <String[]>]`: The categories associated with the item
   - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.

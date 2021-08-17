@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBookingBusiness
 
 ## SYNOPSIS
-Delete entity from bookingBusinesses
+Represents a Microsot Bookings Business.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgBookingBusiness -InputObject <IBookingsIdentity> [-IfMatch <String>] [-
 ```
 
 ## DESCRIPTION
-Delete entity from bookingBusinesses
+Represents a Microsot Bookings Business.
 
 ## EXAMPLES
 
@@ -129,11 +129,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IBookingsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

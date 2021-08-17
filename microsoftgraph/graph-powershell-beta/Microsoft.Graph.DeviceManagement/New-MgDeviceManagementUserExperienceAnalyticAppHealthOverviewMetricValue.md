@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue
 
 ## SYNOPSIS
-Create new navigation property to metricValues for deviceManagement
+The metric values for the user experience analytics category.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ New-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue
 ```
 
 ## DESCRIPTION
-Create new navigation property to metricValues for deviceManagement
+The metric values for the user experience analytics category.
 
 ## EXAMPLES
 
@@ -144,11 +144,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsMetric
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsMetric
-
 ## NOTES
 
 ALIASES

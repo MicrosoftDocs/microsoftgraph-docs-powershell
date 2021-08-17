@@ -8,7 +8,9 @@ schema: 2.0.0
 # Remove-MgPlannerPlanDetail
 
 ## SYNOPSIS
-Delete navigation property details for planner
+Additional details about the plan.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -25,7 +27,9 @@ Remove-MgPlannerPlanDetail -InputObject <IPlannerIdentity> [-IfMatch <String>] [
 ```
 
 ## DESCRIPTION
-Delete navigation property details for planner
+Additional details about the plan.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -129,11 +133,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

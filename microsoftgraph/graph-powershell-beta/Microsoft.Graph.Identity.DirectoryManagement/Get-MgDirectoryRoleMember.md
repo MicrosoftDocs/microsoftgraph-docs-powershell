@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgDirectoryRoleMember
 
 ## SYNOPSIS
-Get members from directoryRoles
+Users that are members of this directory role.
+HTTP Methods: GET, POST, DELETE.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -19,7 +22,10 @@ Get-MgDirectoryRoleMember -DirectoryRoleId <String> [-ExpandProperty <String[]>]
 ```
 
 ## DESCRIPTION
-Get members from directoryRoles
+Users that are members of this directory role.
+HTTP Methods: GET, POST, DELETE.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -199,7 +205,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
-
 ## NOTES
 
 ALIASES
