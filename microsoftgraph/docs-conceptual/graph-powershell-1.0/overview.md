@@ -29,7 +29,7 @@ The Microsoft Graph PowerShell SDK provides the following benefits:
 
 ## Upgrade your environment to use the Microsoft Graph PowerShell SDK
 
-To see the mapping of the  Azure AD PowerShell cmdlets to the cmdlets in the Microsoft Graph PowerShell SDK, use the [cmdlet map](azuread-msoline-cmdlet-map.md).
+To understand how to migrate to Microsoft Graph PowerShell, follow the [migration guide](migration-steps.md).
 
 ## Install the Microsoft Graph PowerShell SDK
 
