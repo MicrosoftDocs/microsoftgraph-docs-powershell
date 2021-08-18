@@ -11,7 +11,7 @@ manager: CelesteDG
 ms.author: eunicewaweru
 ms.reviewer: darrmi, maisarissi
 ---
-# Microsoft Graph PowerShell SDK overview
+# Microsoft Graph PowerShell overview
 
 The Microsoft Graph PowerShell SDK acts as an API wrapper for the Microsoft Graph APIs, exposing the entire API set for use in PowerShell. It contains a set of cmdlets that helps you manage identities at scale from automating tasks to managing users in bulk using Azure Active Directory (Azure AD).
 It will help administer every Azure AD feature that has an API in Microsoft Graph.
