@@ -20,12 +20,12 @@ Microsoft PowerShell SDK cmdlets may support one or more of the following OData 
 |Name|Description|Example|
 |-----|----|-----|
 | [-Count](#count-parameter) |Retrieves the total count of matching resources|`Get-MgUser -ConsistencyLevel eventual -Count count`<br>`$count`|
-| [-Expand](#expand-parameter)| Retrieves related resources|`Get-MgGroup -GroupId '0e06b38f-931a-47db-9a9a-60ab5f492005' -Expand members` | Select -ExpandProperty members`|
+| [-Expand](#expand-parameter)| Retrieves related resources|`Get-MgGroup -GroupId '0e06b38f-931a-47db-9a9a-60ab5f492005' -Expand members  Select -ExpandProperty members`|
 | [-Filter](#filter-parameter)| Filters results (rows)|`Get-MgUser -Filter "startsWith(DisplayName, 'Conf')"`|
 | [-Format](#format-parameter)| Returns the results in the specified media format||
 | [-OrderBy](#orderby-parameter)| Orders results|`Get-MgUser -OrderBy DisplayName`|
 | [-Search](#search-parameter)| Returns results based on search criteria|`Get-MgUser -ConsistencyLevel eventual -Search '"DisplayName:Conf"'`|
-| [-Select](#select-parameter)| Filters properties (columns)|`Get-MgUser` | Select DisplayName, Id`|
+| [-Select](#select-parameter)| Filters properties (columns)|`Get-MgUser  Select DisplayName, Id`|
 | [-Skip](#skip-parameter)| Indexes into a result set. Also used by some APIs to implement paging and can be used together with `$top` to manually page results. | |
 | [-Top](#top-parameter)| Sets the page size of results. |`Get-MgUser -Top 10`|
 
@@ -150,8 +150,6 @@ For example, the following request returns events for the user sorted by date cr
 
 Use the `-Top` query parameter to specify the page size of the result set. 
 
-If more items remain in the result set, the response body will contain an `@odata.nextLink` parameter. This parameter contains a URL that you can use to get the next page of results. To learn more, see [Paging](./paging.md). 
-
 The minimum value of `-Top` is 1 and the maximum depends on the corresponding API.  
 
 For example, the following [list messages](/graph/api/user-list-messages) request returns the first five messages in the user's mailbox:
@@ -185,4 +183,3 @@ However, it is important to note that query parameters specified in a request mi
 
 ## Next steps
 
-- [Query parameter limitations](known-issues.md#query-parameter-limitations)
