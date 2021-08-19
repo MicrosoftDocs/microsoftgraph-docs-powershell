@@ -5,7 +5,7 @@ services: active-directory
 
 ms.devlang: powershell
 ms.topic: overview
-ms.date: 8/12/2021
+ms.date: 8/18/2021
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
@@ -29,7 +29,7 @@ The Microsoft Graph PowerShell SDK provides the following benefits:
 
 ## Upgrade your environment to use the Microsoft Graph PowerShell SDK
 
-To understand how to migrate to Microsoft Graph PowerShell, follow the [migration guide](migration-steps.md).
+To understand how to migrate from Azure AD PowerShell to Microsoft Graph PowerShell, follow the [migration guide](migration-steps.md).
 
 ## Install the Microsoft Graph PowerShell SDK
 
