@@ -7,7 +7,7 @@ author: jasonjoh
 
 # Install the Microsoft Graph PowerShell SDK
 
-The Microsoft Graph PowerShell SDK is published on the [PowerShell Gallery](https://www.powershellgallery.com/packages/Microsoft.Graph). In this article you will learn how to install the Microsoft Graph PowerShell SDK using [PowerShellGet](/powershell/scripting/gallery/installing-psget?view=powershell-7.1).
+The Microsoft Graph PowerShell SDK is published on the [PowerShell Gallery](https://www.powershellgallery.com/packages/Microsoft.Graph). In this article you will learn how to install the Microsoft Graph PowerShell SDK using [PowerShellGet](/powershell/scripting/gallery/installing-psget?).
 
 ## Prerequisites
 
@@ -19,7 +19,7 @@ The Microsoft Graph PowerShell SDK is published on the [PowerShell Gallery](http
     Install-PackageProvider -Name NuGet -Force
     ```
 
-1. For Windows platforms, the PowerShell script execution policy must be set to `remote signed` or `less restrictive`. `Get-ExecutionPolicy` can be used to determine the current execution policy. For more information, see [about_Execution_Policies](/powershell/module/microsoft.powershell.core/about/about_execution_policies?view=powershell-7.1).
+1. For Windows platforms, the PowerShell script execution policy must be set to `remote signed` or `less restrictive`. `Get-ExecutionPolicy` can be used to determine the current execution policy. For more information, see [about_Execution_Policies](/powershell/module/microsoft.powershell.core/about/about_execution_policies?).
 To set the execution policy, run;
 
     ```powershell
