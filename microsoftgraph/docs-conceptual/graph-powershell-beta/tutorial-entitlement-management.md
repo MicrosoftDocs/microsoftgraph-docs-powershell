@@ -108,10 +108,26 @@ The output should only contain the catalog whose name you provided in the reques
 
 To add the group that you created to the catalog, provide the following property values:
 
-- CatalogId - the id of the catalog that you are using
-- DisplayName - the name of the group
-- Description - the description of the group
-- OriginId - the id of the group that you created
+- CatalogId - the id of the catalog that you are using.
+- RequestType - to be set to `AdminAdd`.
+- AccessPackageResource - representing the resource. This should contain two properties, **OriginSystem** which should be `AadGroup` and **originId** is the identifier of the group.
+
+```powershell
+$accessPackageResource = @{
+  "originSystem" = "AadGroup "
+  OriginId= "1e79ee73-d723-419b-9415-ca0ade76cc2c"
+  }
+
+New-MgEntitlementManagementAccessPackageResourceRequest -CatalogId '54152ecb-c65d-47f2-8a4d-ba2732de0a7b' -RequestType "AdminAdd" -AccessPackageResource $accessPackageResource
+```
+
+```Output
+Id                                   CatalogId                            ExecuteImmediately ExpirationDateTime IsValidationOnly Justification RequestState RequestStatus RequestType
+--                                   ---------                            ------------------ ------------------ ---------------- ------------- ------------ ------------- -----------
+dce7a865-ba5d-4c86-af92-5daaa44c4b1a 54152ecb-c65d-47f2-8a4d-ba2732de0a7b False                                                                Delivered    Fulfilled     AdminAdd
+```
+
+The request state indicates the outcome of whether the service was able to add the resource to the catalog. The value is `Delivered` if the resource was added.
 
 ### Create an access package
 
@@ -125,7 +141,7 @@ Run the following command to  create an access package.
 New-MgEntitlementManagementAccessPackage -CatalogId '54152ecb-c65d-47f2-8a4d-ba2732de0a7b'  -DisplayName 'Marketing Campaign'
 ```
 
-```Output
+```Output 
 AccessPackageAssignmentPolicies :
 AccessPackageCatalog            : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageCatalog
 AccessPackageResourceRoleScopes :
@@ -144,3 +160,33 @@ ModifiedBy                      : admin@M365x814237.onmicrosoft.com
 ModifiedDateTime                : 10/13/2021 9:08:02 AM
 AdditionalProperties            : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackages/$entity]}
 ```
+
+### Get catalog resources
+
+In later steps fo this tutorial you will need the **id** that was assigned to the group resource in the catalog. This identifier represents the group as a resource in the catalog and is different from the group identifier itself in Microsoft Graph. To get the resource, provide the **id** of the catalog and filter by the display name of the group.
+
+```powershell
+Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResource -AccessPackageCatalogId '54152ecb-c65d-47f2-8a4d-ba2732de0a7b' -Filter "DisplayName eq 'Marketing resources'" | Format-List
+```
+
+```Output
+AccessPackageResourceEnvironment : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageResourceEnvironment
+AccessPackageResourceRoles       :
+AccessPackageResourceScopes      :
+AddedBy                          : admin@M365x814237.onmicrosoft.com
+AddedOn                          : 10/19/2021 2:50:24 PM
+Attributes                       : {}
+Description                      : Marketing resources
+DisplayName                      : Marketing resources
+Id                               : 36d8d18f-b081-4867-acf5-4a8b893761e8
+IsPendingOnboarding              : False
+OriginId                         : b5cd9d19-91c0-4622-93e2-537ad8a0b3ad
+OriginSystem                     : AadGroup
+ResourceType                     : Security Group
+Url                              : https://account.activedirectory.windowsazure.com/r?tenantId=c265ddcc-4694-4bb0-b771-4829ca21177d#/manageMembership?objectType=Group&objectId=b5cd9d19-91c0-4622-93e2-537ad8a0b3ad
+AdditionalProperties             : {}
+```
+
+### Get resource roles
+
+The access package assigns users to the roles of a resource. The typical role of a group used in an access package is the member role. You'll need the member role when you add a resource role to the access package later in this tutorial.
