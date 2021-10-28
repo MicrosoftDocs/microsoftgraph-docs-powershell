@@ -190,3 +190,133 @@ AdditionalProperties             : {}
 ### Get resource roles
 
 The access package assigns users to the roles of a resource. The typical role of a group used in an access package is the member role. You'll need the member role when you add a resource role to the access package later in this tutorial.
+
+```powershell
+Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceRole -AccessPackageCatalogId '54152ecb-c65d-47f2-8a4d-ba2732de0a7b' -Filter "originSystem eq 'AadGroup' and accessPackageResource/id eq '36d8d18f-b081-4867-acf5-4a8b893761e8' and DisplayName eq 'Member'"
+```
+
+```Output
+Id                                   Description DisplayName OriginId                                    OriginSystem
+--                                   ----------- ----------- --------                                    ------------
+00000000-0000-0000-0000-000000000000             Member      Member_b5cd9d19-91c0-4622-93e2-537ad8a0b3ad AadGroup
+```
+
+If successful a single record is returned which represents the member role of that group. If no roles are returned, check the **id** values of the catalog and the access package resource.
+
+### Add a resource role to the access package
+
+Add the Member role of the group resource to the access package. In this request provide the **id** of the access package, **id** of the group catalog resource for the accessPackageResource, and the **originId** of the Member role that you previously recorded.
+
+```powershell
+$accessPackageResource = @{
+>> "id"= '36d8d18f-b081-4867-acf5-4a8b893761e8'
+>> "resourceType" ='Security Group'
+>> "originId"= 'b5cd9d19-91c0-4622-93e2-537ad8a0b3ad'
+>> "originSystem"= 'AadGroup'
+>> }
+```
+
+```powershell
+$accessPackageResourceRole = @{
+>> "originId"= 'Member_b5cd9d19-91c0-4622-93e2-537ad8a0b3ad'
+>> "displayName" = 'Member'
+>> "originSystem" = 'AadGroup'
+>> "accessPackageResource" = $accessPackageResource
+>> }
+```
+
+```powershell
+$accessPackageResourceScope = @{
+>> "originId" = 'b5cd9d19-91c0-4622-93e2-537ad8a0b3ad'
+>> "originSystem" ='AadGroup'
+>> }
+```
+
+```powershell
+New-MgEntitlementManagementAccessPackageResourceRoleScope -AccessPackageId '481927e3-c76b-447e-a97d-a944f694ce03' -AccessPackageResourceRole $accessPackageResourceRole -AccessPackageResourceScope $accessPackageResourceScope
+```
+
+```Output
+Id                                                                        CreatedBy                         CreatedDateTime       ModifiedBy                        ModifiedDateTime
+--                                                                        ---------                         ---------------       ----------                        ----------------
+2d43636d-febe-4f58-9dbf-ef1c3b9798d9_2386db28-94fc-45ce-b4bd-56188da884fe admin@M365x814237.onmicrosoft.com 10/26/2021 8:42:44 AM admin@M365x814237.onmicrosoft.com 10/26/2021 8:42:44 AM
+
+```
+
+This access package now has one resource role, which is a group membership. The role is assigned to any user who has the access package.
+
+### Create an access package policy
+
+Now that you have created the access package and added resources and roles, you can decide who can access it by creating an access package policy. In this tutorial, you will enable the **Requestor1** account that you created to request access to the resources in the access package. For this task, you need these values:
+- **id** of the access package for the value of the **accessPackageId** property
+- **id** of the **Requestor1** user account for the value of the **id** property in the **allowedRequestors**.
+
+The value of the **durationInDays** property enables the **Requestor1** account to access the resources in the access package for 30 days. Record the value of the **id** property that is returned to use later in this tutorial.
+
+```powershell
+ $allowedRequestors = @(@{
+  "@odata.type" = '#microsoft.graph.singleUser'
+  "isBackup" = $false
+  "id"= 'e4ef0e03-e149-4cbc-8f56-27bb22171a64'
+  "description" = 'Requestor1'
+  })
+
+$requestorSettings =@{
+  "scopeType" = 'SpecificDirectorySubjects'
+  "acceptRequests" = $true
+  "allowedRequestors" = $allowedRequestors
+  }
+
+$requestApprovalSettings = @{
+  "isApprovalRequired" = $false
+  "isApprovalRequiredForExtension" =$false
+  "isRequestorJustificationRequired"= $false
+  "approvalMode"= 'NoApproval'
+  "approvalStages"= '[]'
+  }
+
+New-MgEntitlementManagementAccessPackageAssignmentPolicy -AccessPackageId '481927e3-c76b-447e-a97d-a944f694ce03' -DisplayName 'Specific users' -Description 'Specific users can request assignment'  -DurationInDays 30 -RequestorSettings $requestorSettings -RequestApprovalSettings $requestApprovalSettings
+```
+
+```Output
+Id                                   AccessPackageId                      CanExtend CreatedBy                         CreatedDateTime       Description                           DisplayName    DurationInDays ExpirationDate
+                                                                                                                                                                                                                Time
+--                                   ---------------                      --------- ---------                         ---------------       -----------                           -----------    -------------- --------------
+66eb5245-7de2-471d-a545-0528353193a4 481927e3-c76b-447e-a97d-a944f694ce03 False     admin@M365x814237.onmicrosoft.com 10/28/2021 2:20:42 PM Specific users can request assignment Specific users 30
+```
+
+## Step 3: Request access
+
+In this step, **Requestor1** user account requests access to the resources in the access package.
+
+To request access to resources in the access package, you need to provide these values:
+- **TargetId**: id of the **Requestor1** user account that you created.
+- **AssignmentPolicyId**: id of the assignment policy.
+- **AccessPackageId**: id of the access package.
+- **RequestType**: For a non-administrator user to request to create their own assignment for either a first assignment or renew assignment, the value of the requestType property is `UserAdd`.
+
+```powershell
+New-MgEntitlementManagementAccessPackageAssignmentRequest -RequestType 'UserAdd' -AccessPackageId '481927e3-c76b-447e-a97d-a944f694ce03' -AssignmentPolicyId '66eb5245-7de2-471d-a545-0528353193a4' -TargetId 'e4ef0e03-e149-4cbc-8f56-27bb22171a64'
+```
+
+## Step 4: Validate that access has been assigned
+
+In this step, you confirm that the **Requestor1** user account was assigned the access package and that they are now a member of the **Marketing resources** group.
+
+Sign out of the Requestor1 account and sign back in to the administrator account to see the status of the request.
+
+### Get the status of the request
+
+Use the **id** property of the request to get the current status of it.
+
+```powershell
+Get-MgEntitlementManagementAccessPackageAssignmentRequest -AccessPackageAssignmentRequestId 'e89ee9a5-670e-4306-95fa-8a5b58024f5b'
+```
+
+```Output
+Id                                   CompletedDate CreatedDateTime       ExpirationDateTime IsValidationOnly Justification RequestState RequestStatus    RequestType
+--                                   ------------- ---------------       ------------------ ---------------- ------------- ------------ -------------    -----------
+e89ee9a5-670e-4306-95fa-8a5b58024f5b               10/28/2021 3:35:30 PM                    False                          Scheduled    PendingNotBefore UserAdd
+```
+
+### Get access package assignments
