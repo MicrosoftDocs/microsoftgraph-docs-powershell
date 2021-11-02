@@ -53,7 +53,7 @@ New-MgUser -DisplayName 'Requestor1' -PasswordProfile $passwordProfile -AccountE
 ```output
 Id                                   DisplayName Mail UserPrincipalName                      UserType
 --                                   ----------- ---- -----------------                      --------
-9f7037e6-00ca-4091-a26d-ba27808c9586 Requestor1       Requestor1@M365B977454.onmicrosoft.com
+e4ef0e03-e149-4cbc-8f56-27bb22171a64 Requestor1       Requestor1@Contoso.onmicrosoft.com
 ```
 
 ### Create a group
@@ -67,12 +67,12 @@ New-MgGroup -DisplayName 'Marketing resources' -Description 'Marketing resources
 ```Output
 Id                                   DisplayName         Description         GroupTypes
 --                                   -----------         -----------         ----------
-300a5486-9c58-422f-97a0-d2453977bcec Marketing resources Marketing resources {}
+b5cd9d19-91c0-4622-93e2-537ad8a0b3ad Marketing resources Marketing resources {}
 ```
 
 ## Step 2: Add resources to a catalog and create an access package
 
-An *access package* is a bundle of resources that a team or project needs and is governed with policies. Access packages are defined in containers called catalogs. Catalogs can reference resources such as groups, apps and sites, that are used in the access package. 
+An *access package* is a bundle of resources that a team or project needs and is governed with policies. Access packages are defined in containers called catalogs. Catalogs can reference resources such as groups, apps and sites, that are used in the access package.
 
 In this step, you create a **Marketing Campaign** access package in the General catalog.
 
@@ -108,14 +108,14 @@ The output should only contain the catalog whose name you provided in the reques
 
 To add the group that you created to the catalog, provide the following property values:
 
-- CatalogId - the id of the catalog that you are using.
-- RequestType - to be set to `AdminAdd`.
-- AccessPackageResource - representing the resource. This should contain two properties, **OriginSystem** which should be `AadGroup` and **originId** is the identifier of the group.
+- **CatalogId** - the id of the catalog that you are using.
+- **RequestType** - to be set to `AdminAdd`.
+- **AccessPackageResource** - representing the resource. This should contain two properties, **OriginSystem** which should be `AadGroup` and **originId** is the identifier of the group.
 
 ```powershell
 $accessPackageResource = @{
   "originSystem" = "AadGroup "
-  OriginId= "1e79ee73-d723-419b-9415-ca0ade76cc2c"
+  OriginId= "b5cd9d19-91c0-4622-93e2-537ad8a0b3ad"
   }
 
 New-MgEntitlementManagementAccessPackageResourceRequest -CatalogId '54152ecb-c65d-47f2-8a4d-ba2732de0a7b' -RequestType "AdminAdd" -AccessPackageResource $accessPackageResource
@@ -129,41 +129,9 @@ dce7a865-ba5d-4c86-af92-5daaa44c4b1a 54152ecb-c65d-47f2-8a4d-ba2732de0a7b False 
 
 The request state indicates the outcome of whether the service was able to add the resource to the catalog. The value is `Delivered` if the resource was added.
 
-### Create an access package
-
-An access package is a bundle of resources that a team or project needs and is governed with policies. Access packages are defined in containers called catalogs. In this step, you create a Marketing Campaign access package in the General catalog.
-
-**Prerequisite role**: Global administrator, Identity Governance administrator, User administrator, Catalog owner, or Access package manager.
-
-Run the following command to  create an access package.
-
-```powershell
-New-MgEntitlementManagementAccessPackage -CatalogId '54152ecb-c65d-47f2-8a4d-ba2732de0a7b'  -DisplayName 'Marketing Campaign'
-```
-
-```Output 
-AccessPackageAssignmentPolicies :
-AccessPackageCatalog            : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageCatalog
-AccessPackageResourceRoleScopes :
-AccessPackagesIncompatibleWith  :
-CatalogId                       : 54152ecb-c65d-47f2-8a4d-ba2732de0a7b
-CreatedBy                       : admin@M365x814237.onmicrosoft.com
-CreatedDateTime                 : 10/13/2021 9:08:02 AM
-Description                     :
-DisplayName                     : Marketing Campaign
-Id                              : 481927e3-c76b-447e-a97d-a944f694ce03
-IncompatibleAccessPackages      :
-IncompatibleGroups              :
-IsHidden                        : False
-IsRoleScopesVisible             : False
-ModifiedBy                      : admin@M365x814237.onmicrosoft.com
-ModifiedDateTime                : 10/13/2021 9:08:02 AM
-AdditionalProperties            : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackages/$entity]}
-```
-
 ### Get catalog resources
 
-In later steps fo this tutorial you will need the **id** that was assigned to the group resource in the catalog. This identifier represents the group as a resource in the catalog and is different from the group identifier itself in Microsoft Graph. To get the resource, provide the **id** of the catalog and filter by the display name of the group.
+In later steps in this tutorial you will need the **id** that was assigned to the group resource in the catalog. This identifier represents the group as a resource in the catalog and is different from the group identifier itself in Microsoft Graph. To get the resource, provide the **id** of the catalog and filter by the display name of the group.
 
 ```powershell
 Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResource -AccessPackageCatalogId '54152ecb-c65d-47f2-8a4d-ba2732de0a7b' -Filter "DisplayName eq 'Marketing resources'" | Format-List
@@ -202,6 +170,39 @@ Id                                   Description DisplayName OriginId           
 ```
 
 If successful a single record is returned which represents the member role of that group. If no roles are returned, check the **id** values of the catalog and the access package resource.
+
+### Create an access package
+
+An access package is a bundle of resources that a team or project needs and is governed with policies. Access packages are defined in containers called catalogs. In this step, you create a Marketing Campaign access package in the General catalog.
+
+**Prerequisite role**: Global administrator, Identity Governance administrator, User administrator, Catalog owner, or Access package manager.
+
+Run the following command to  create an access package.
+
+```powershell
+New-MgEntitlementManagementAccessPackage -CatalogId '54152ecb-c65d-47f2-8a4d-ba2732de0a7b'  -DisplayName 'Marketing Campaign'
+```
+
+```Output 
+AccessPackageAssignmentPolicies :
+AccessPackageCatalog            : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageCatalog
+AccessPackageResourceRoleScopes :
+AccessPackagesIncompatibleWith  :
+CatalogId                       : 54152ecb-c65d-47f2-8a4d-ba2732de0a7b
+CreatedBy                       : admin@M365x814237.onmicrosoft.com
+CreatedDateTime                 : 10/13/2021 9:08:02 AM
+Description                     :
+DisplayName                     : Marketing Campaign
+Id                              : 481927e3-c76b-447e-a97d-a944f694ce03
+IncompatibleAccessPackages      :
+IncompatibleGroups              :
+IsHidden                        : False
+IsRoleScopesVisible             : False
+ModifiedBy                      : admin@M365x814237.onmicrosoft.com
+ModifiedDateTime                : 10/13/2021 9:08:02 AM
+AdditionalProperties            : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackages/$entity]}
+```
+
 
 ### Add a resource role to the access package
 
@@ -247,8 +248,9 @@ This access package now has one resource role, which is a group membership. The 
 
 ### Create an access package policy
 
-Now that you have created the access package and added resources and roles, you can decide who can access it by creating an access package policy. In this tutorial, you will enable the **Requestor1** account that you created to request access to the resources in the access package. For this task, you need these values:
-- **id** of the access package for the value of the **accessPackageId** property
+Now that you have created the access package and added resources and roles, you can decide who can access it by creating an access package policy. In this tutorial, you will enable the **Requestor1** user account that you created to request access to the resources in the access package. For this task, you need these values:
+
+- **id** of the access package for the value of the **accessPackageId** property.
 - **id** of the **Requestor1** user account for the value of the **id** property in the **allowedRequestors**.
 
 The value of the **durationInDays** property enables the **Requestor1** account to access the resources in the access package for 30 days. Record the value of the **id** property that is returned to use later in this tutorial.
@@ -290,6 +292,7 @@ Id                                   AccessPackageId                      CanExt
 In this step, **Requestor1** user account requests access to the resources in the access package.
 
 To request access to resources in the access package, you need to provide these values:
+
 - **TargetId**: id of the **Requestor1** user account that you created.
 - **AssignmentPolicyId**: id of the assignment policy.
 - **AccessPackageId**: id of the access package.
@@ -310,13 +313,107 @@ Sign out of the Requestor1 account and sign back in to the administrator account
 Use the **id** property of the request to get the current status of it.
 
 ```powershell
-Get-MgEntitlementManagementAccessPackageAssignmentRequest -AccessPackageAssignmentRequestId 'e89ee9a5-670e-4306-95fa-8a5b58024f5b'
+Get-MgEntitlementManagementAccessPackageAssignmentRequest -AccessPackageAssignmentRequestId 'e89ee9a5-670e-4306-95fa-8a5b58024f5b'| Format-List
 ```
 
 ```Output
-Id                                   CompletedDate CreatedDateTime       ExpirationDateTime IsValidationOnly Justification RequestState RequestStatus    RequestType
---                                   ------------- ---------------       ------------------ ---------------- ------------- ------------ -------------    -----------
-e89ee9a5-670e-4306-95fa-8a5b58024f5b               10/28/2021 3:35:30 PM                    False                          Scheduled    PendingNotBefore UserAdd
+AccessPackage           : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackage
+AccessPackageAssignment : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageAssignment
+Answers                 : {}
+CompletedDate           : 10/28/2021 6:35:34 PM
+CreatedDateTime         : 10/28/2021 3:35:30 PM
+ExpirationDateTime      :
+Id                      : e89ee9a5-670e-4306-95fa-8a5b58024f5b
+IsValidationOnly        : False
+Justification           :
+RequestState            : Delivered
+RequestStatus           : FulfilledNotificationTriggered
+RequestType             : UserAdd
+Requestor               : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageSubject
+Schedule                : Microsoft.Graph.PowerShell.Models.MicrosoftGraphRequestSchedule
+AdditionalProperties    : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageAssignmentRequests/$entity]}
 ```
 
 ### Get access package assignments
+
+Use the **id** of the access package policy that you created to see that resources have been assigned to the **Requestor1** user account.
+
+```powershell
+Get-MgEntitlementManagementAccessPackageAssignment -Filter "(AccessPackageAssignmentPolicy/Id eq '66eb5245-7de2-471d-a545-0528353193a4')" | Format-List
+```
+
+```Output
+AccessPackage                        : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackage
+AccessPackageAssignmentPolicy        : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageAssignmentPolicy
+AccessPackageAssignmentRequests      :
+AccessPackageAssignmentResourceRoles :
+AccessPackageId                      : 481927e3-c76b-447e-a97d-a944f694ce03
+AssignmentPolicyId                   : 66eb5245-7de2-471d-a545-0528353193a4
+AssignmentState                      : Delivered
+AssignmentStatus                     : Delivered
+CatalogId                            : 54152ecb-c65d-47f2-8a4d-ba2732de0a7b
+ExpiredDateTime                      :
+Id                                   : 8c8ad080-4a09-4b2f-b730-1f5cce4837fe
+IsExtended                           : False
+Schedule                             : Microsoft.Graph.PowerShell.Models.MicrosoftGraphRequestSchedule
+Target                               : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageSubject
+TargetId                             : e4ef0e03-e149-4cbc-8f56-27bb22171a64
+AdditionalProperties                 : {}
+```
+
+### Get the members of the group
+
+After the request has been granted, you can use the **id** that you recorded for the **Marketing resources** group to see that the **requestor1** user account has been added to it.
+
+```powershell
+Get-MgGroupMember -GroupId 'b5cd9d19-91c0-4622-93e2-537ad8a0b3ad'
+```
+
+```Output
+Id                                   DeletedDateTime
+--                                   ---------------
+e4ef0e03-e149-4cbc-8f56-27bb22171a64
+```
+
+## Step 5: Clean up the resources
+
+In this step, you remove the changes you made and delete the **Marketing Campaign** access package.
+
+### Remove an access package assignment
+
+You must delete any assignments to the access package before you can delete it. Use the **id** of the assignment request that you recorded to delete it.
+
+```powershell
+
+```
+
+```Output
+```
+
+### Delete the access package assignment policy
+
+Use the id of the assignment policy that you previously recorded to delete it. Make sure all assignments are removed first.
+
+### Delete the access package
+
+Use the id of the access package that you previously recorded to delete it.
+
+```powershell
+
+```
+
+### Delete the user account
+
+Delete the Requestor1 user account.
+
+```powershell
+
+```
+
+### Delete the group
+
+Delete the **Marketing resources** group.
+
+```powershell
+
+```
