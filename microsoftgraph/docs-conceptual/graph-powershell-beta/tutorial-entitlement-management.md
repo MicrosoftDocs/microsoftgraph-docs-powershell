@@ -13,15 +13,16 @@ In this tutorial, you've been asked to develop code to create a package of resou
 
 ## Prerequisites
 
-1. To use the Azure AD entitlement management, you must have one of the following licenses:
+To successfully complete this tutorial, make sure you have the required prerequisites:
 
+1. To use the Azure AD entitlement management, you must have one of the following licenses:
     - Azure AD Premium P2
     - Enterprise Mobility + Security (EMS) E5 license
 1. Entitlement management is available in the beta version of Microsoft Graph PowerShell. Run the following command to set your profile to beta.
-     
-    ```powershell
-    Select-MgProfile -Name 'beta'
-    ``` 
+
+      ```powershell
+      Select-MgProfile -Name 'beta'
+      ```
 
 1. Microsoft Graph PowerShell using a global administrator role and the appropriate permissions. For this tutorial, the `User.ReadWrite.All`, `Group.ReadWrite.All`, and `EntitlementManagement.ReadWrite.All` delegated permissions are required. To set the permissions in Microsoft Graph PowerShell, run;
 
@@ -37,10 +38,10 @@ In this step you create a group named **Marketing resources** in the directory t
 
 ### Create a user account
 
-For this tutorial, you create a user account that is used to request access to the resources in the access package. When you make these calls, change `contoso.onmicrosoft.com` to the domain name of your tenant. You can find tenant information on the Azure Active Directory overview page. Record the value of the `id` property that is returned to be used later in the tutorial.
+For this tutorial, you create a user account that is used to request access to the resources in the access package. When you make these calls, change `Contoso.onmicrosoft.com` to the domain name of your tenant. You can find tenant information on the Azure Active Directory overview page. Record the value of the `id` property that is returned to be used later in the tutorial.
 
 ```powershell
-  $passwordProfile =@{
+$passwordProfile =@{
   Password = 'Contoso1234'
   ForceChangePasswordNextSignIn = $true
 }
@@ -50,10 +51,10 @@ For this tutorial, you create a user account that is used to request access to t
 New-MgUser -DisplayName 'Requestor1' -PasswordProfile $passwordProfile -AccountEnabled -MailNickName 'Requestor1' -UserPrincipalName 'Requestor1@Contoso.onmicrosoft.com'
 ```
 
-```output
+```Output
 Id                                   DisplayName Mail UserPrincipalName                      UserType
 --                                   ----------- ---- -----------------                      --------
-e4ef0e03-e149-4cbc-8f56-27bb22171a64 Requestor1       Requestor1@Contoso.onmicrosoft.com
+f5ac31b5-ae89-4d34-83ec-198072555d1d Requestor1       Requestor1@M365x814237.onmicrosoft.com Member
 ```
 
 ### Create a group
@@ -65,9 +66,9 @@ New-MgGroup -DisplayName 'Marketing resources' -Description 'Marketing resources
 ```
 
 ```Output
-Id                                   DisplayName         Description         GroupTypes
---                                   -----------         -----------         ----------
-b5cd9d19-91c0-4622-93e2-537ad8a0b3ad Marketing resources Marketing resources {}
+Id                                   DisplayName         Description         GroupTypes AccessType
+--                                   -----------         -----------         ---------- ----------
+8902df17-a973-438f-8321-8b619aa18dc4 Marketing resources Marketing resources {}
 ```
 
 ## Step 2: Add resources to a catalog and create an access package
@@ -78,10 +79,11 @@ In this step, you create a **Marketing Campaign** access package in the General 
 
 ### Get the catalog identifier
 
-To add resources to a catalog, you must first get its identifier. If you are using the General catalog, run the following command to get its identifier. If you are using a different catalog, change the filter value in the request to the name of your catalog. Record the `id` property that is returned to use later in this tutorial. 
+To add resources to a catalog, you must first get its identifier. If you are using the General catalog, run the following command to get its identifier. If you are using a different catalog, change the filter value in the request to the name of your catalog. Record the **id** property that is returned to use later in this tutorial.
 
 ```powershell
-Get-MgEntitlementManagementAccessPackageCatalog -Filter "DisplayName eq 'General'" | Format-List
+Get-MgEntitlementManagementAccessPackageCatalog -Filter "DisplayName eq 'General'" |
+  Format-List
 ```
 
 ```Output
@@ -116,18 +118,27 @@ To add the group that you created to the catalog, provide the following property
 $accessPackageResource = @{
   "originSystem" = "AadGroup "
   OriginId= "b5cd9d19-91c0-4622-93e2-537ad8a0b3ad"
-  }
+}
 
 New-MgEntitlementManagementAccessPackageResourceRequest -CatalogId '54152ecb-c65d-47f2-8a4d-ba2732de0a7b' -RequestType "AdminAdd" -AccessPackageResource $accessPackageResource
 ```
 
 ```Output
-Id                                   CatalogId                            ExecuteImmediately ExpirationDateTime IsValidationOnly Justification RequestState RequestStatus RequestType
---                                   ---------                            ------------------ ------------------ ---------------- ------------- ------------ ------------- -----------
-dce7a865-ba5d-4c86-af92-5daaa44c4b1a 54152ecb-c65d-47f2-8a4d-ba2732de0a7b False                                                                Delivered    Fulfilled     AdminAdd
+AccessPackageResource : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageResource
+CatalogId             : 54152ecb-c65d-47f2-8a4d-ba2732de0a7b
+ExecuteImmediately    : False
+ExpirationDateTime    :
+Id                    : 88098a60-489a-4c28-bfe7-9fecd4713b81
+IsValidationOnly      :
+Justification         :
+RequestState          : Delivered
+RequestStatus         : Fulfilled
+RequestType           : AdminAdd
+Requestor             : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageSubject
+AdditionalProperties  : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageResourceRequests/$entity]}                                                                Delivered    Fulfilled     AdminAdd
 ```
 
-The request state indicates the outcome of whether the service was able to add the resource to the catalog. The value is `Delivered` if the resource was added.
+The request state indicates the outcome of whether the service was able to add the resource to the catalog. The value is **Delivered** if the resource was added.
 
 ### Get catalog resources
 
@@ -142,16 +153,17 @@ AccessPackageResourceEnvironment : Microsoft.Graph.PowerShell.Models.MicrosoftGr
 AccessPackageResourceRoles       :
 AccessPackageResourceScopes      :
 AddedBy                          : admin@M365x814237.onmicrosoft.com
-AddedOn                          : 10/19/2021 2:50:24 PM
+AddedOn                          : 11/5/2021 7:53:56 AM
 Attributes                       : {}
 Description                      : Marketing resources
 DisplayName                      : Marketing resources
-Id                               : 36d8d18f-b081-4867-acf5-4a8b893761e8
+Id                               : 4f5dac35-b025-4131-a27f-6e0e46d48dd1
 IsPendingOnboarding              : False
-OriginId                         : b5cd9d19-91c0-4622-93e2-537ad8a0b3ad
+OriginId                         : 8902df17-a973-438f-8321-8b619aa18dc4
 OriginSystem                     : AadGroup
 ResourceType                     : Security Group
-Url                              : https://account.activedirectory.windowsazure.com/r?tenantId=c265ddcc-4694-4bb0-b771-4829ca21177d#/manageMembership?objectType=Group&objectId=b5cd9d19-91c0-4622-93e2-537ad8a0b3ad
+Url                              : https://account.activedirectory.windowsazure.com/r?tenantId=c265ddcc-4694-4bb0-b771-4829ca21177d#/manageMembership?objectType=Group&objectId=890
+                                   2df17-a973-438f-8321-8b619aa18dc4
 AdditionalProperties             : {}
 ```
 
@@ -166,43 +178,38 @@ Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceRole -Access
 ```Output
 Id                                   Description DisplayName OriginId                                    OriginSystem
 --                                   ----------- ----------- --------                                    ------------
-00000000-0000-0000-0000-000000000000             Member      Member_b5cd9d19-91c0-4622-93e2-537ad8a0b3ad AadGroup
+00000000-0000-0000-0000-000000000000             Member      Member_8902df17-a973-438f-8321-8b619aa18dc4 AadGroup
 ```
 
 If successful a single record is returned which represents the member role of that group. If no roles are returned, check the **id** values of the catalog and the access package resource.
 
-### Create an access package
+### Create the access package
 
-An access package is a bundle of resources that a team or project needs and is governed with policies. Access packages are defined in containers called catalogs. In this step, you create a Marketing Campaign access package in the General catalog.
-
-**Prerequisite role**: Global administrator, Identity Governance administrator, User administrator, Catalog owner, or Access package manager.
-
-Run the following command to  create an access package.
+At this point, you have a catalog with a group resource, and you know that you'll use the resource role of group member in the access package. The next step is to create the access package. After you have the access package, you can add the resource role to it, and create a policy for how users can request access to that resource role. You use the **id** of the catalog that you recorded earlier to create the access package. Record the **id** of the access package to use later in this tutorial. In this step, you create a **Marketing Campaign** access package in the General catalog.
 
 ```powershell
 New-MgEntitlementManagementAccessPackage -CatalogId '54152ecb-c65d-47f2-8a4d-ba2732de0a7b'  -DisplayName 'Marketing Campaign'
 ```
 
-```Output 
+```Output
 AccessPackageAssignmentPolicies :
 AccessPackageCatalog            : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageCatalog
 AccessPackageResourceRoleScopes :
 AccessPackagesIncompatibleWith  :
 CatalogId                       : 54152ecb-c65d-47f2-8a4d-ba2732de0a7b
 CreatedBy                       : admin@M365x814237.onmicrosoft.com
-CreatedDateTime                 : 10/13/2021 9:08:02 AM
+CreatedDateTime                 : 11/5/2021 8:03:39 AM
 Description                     :
 DisplayName                     : Marketing Campaign
-Id                              : 481927e3-c76b-447e-a97d-a944f694ce03
+Id                              : bc041fda-b3ba-41fc-b911-ca95f7aac656
 IncompatibleAccessPackages      :
 IncompatibleGroups              :
 IsHidden                        : False
 IsRoleScopesVisible             : False
 ModifiedBy                      : admin@M365x814237.onmicrosoft.com
-ModifiedDateTime                : 10/13/2021 9:08:02 AM
+ModifiedDateTime                : 11/5/2021 8:03:39 AM
 AdditionalProperties            : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackages/$entity]}
 ```
-
 
 ### Add a resource role to the access package
 
@@ -210,38 +217,37 @@ Add the Member role of the group resource to the access package. In this request
 
 ```powershell
 $accessPackageResource = @{
->> "id"= '36d8d18f-b081-4867-acf5-4a8b893761e8'
->> "resourceType" ='Security Group'
->> "originId"= 'b5cd9d19-91c0-4622-93e2-537ad8a0b3ad'
->> "originSystem"= 'AadGroup'
->> }
-```
+  "id"= '4f5dac35-b025-4131-a27f-6e0e46d48dd1'
+  "resourceType" ='Security Group'
+  "originId"= '8902df17-a973-438f-8321-8b619aa18dc4'
+  "originSystem"= 'AadGroup'
+  }
 
-```powershell
 $accessPackageResourceRole = @{
->> "originId"= 'Member_b5cd9d19-91c0-4622-93e2-537ad8a0b3ad'
->> "displayName" = 'Member'
->> "originSystem" = 'AadGroup'
->> "accessPackageResource" = $accessPackageResource
->> }
-```
+  "originId"= 'Member_8902df17-a973-438f-8321-8b619aa18dc4'
+  "displayName" = 'Member'
+  "originSystem" = 'AadGroup'
+  "accessPackageResource" = $accessPackageResource
+  }
 
-```powershell
 $accessPackageResourceScope = @{
->> "originId" = 'b5cd9d19-91c0-4622-93e2-537ad8a0b3ad'
->> "originSystem" ='AadGroup'
->> }
-```
+  "originId" = '8902df17-a973-438f-8321-8b619aa18dc4'
+  "originSystem" ='AadGroup'
+  }
 
-```powershell
-New-MgEntitlementManagementAccessPackageResourceRoleScope -AccessPackageId '481927e3-c76b-447e-a97d-a944f694ce03' -AccessPackageResourceRole $accessPackageResourceRole -AccessPackageResourceScope $accessPackageResourceScope
+New-MgEntitlementManagementAccessPackageResourceRoleScope -AccessPackageId 'bc041fda-b3ba-41fc-b911-ca95f7aac656' -AccessPackageResourceRole $accessPackageResourceRole -AccessPackageResourceScope $accessPackageResourceScope
 ```
 
 ```Output
-Id                                                                        CreatedBy                         CreatedDateTime       ModifiedBy                        ModifiedDateTime
---                                                                        ---------                         ---------------       ----------                        ----------------
-2d43636d-febe-4f58-9dbf-ef1c3b9798d9_2386db28-94fc-45ce-b4bd-56188da884fe admin@M365x814237.onmicrosoft.com 10/26/2021 8:42:44 AM admin@M365x814237.onmicrosoft.com 10/26/2021 8:42:44 AM
-
+AccessPackageResourceRole  : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageResourceRole
+AccessPackageResourceScope : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageResourceScope
+CreatedBy                  : admin@M365x814237.onmicrosoft.com
+CreatedDateTime            : 11/5/2021 9:06:32 AM
+Id                         : 3c955d0f-f6d5-45f0-b465-e8e6375a3895_5fef70e1-b78f-4d21-a6ad-979d9f54daf1
+ModifiedBy                 : admin@M365x814237.onmicrosoft.com
+ModifiedDateTime           : 11/5/2021 9:06:32 AM
+AdditionalProperties       : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackages('bc041fda-b3ba-41fc-b911-ca95f7aa
+                             c656')/accessPackageResourceRoleScopes/$entity]}
 ```
 
 This access package now has one resource role, which is a group membership. The role is assigned to any user who has the access package.
@@ -384,22 +390,29 @@ In this step, you remove the changes you made and delete the **Marketing Campaig
 You must delete any assignments to the access package before you can delete it. Use the **id** of the assignment request that you recorded to delete it.
 
 ```powershell
-
+New-MgEntitlementManagementAccessPackageAssignmentRequest -RequestType 'AdminRemove' -AccessPackageAssignmentId '8c8ad080-4a09-4b2f-b730-1f5cce4837fe'
 ```
 
-```Output
+Or
+
+```powershell
+Remove-MgEntitlementManagementAccessPackageAssignment -AccessPackageAssignmentId '8c8ad080-4a09-4b2f-b730-1f5cce4837fe'
 ```
 
 ### Delete the access package assignment policy
 
 Use the id of the assignment policy that you previously recorded to delete it. Make sure all assignments are removed first.
 
+```powershell
+Remove-MgEntitlementManagementAccessPackageAssignmentPolicy -AccessPackageAssignmentPolicyId '66eb5245-7de2-471d-a545-0528353193a4'
+```
+
 ### Delete the access package
 
 Use the id of the access package that you previously recorded to delete it.
 
 ```powershell
-
+Remove-MgEntitlementManagementAccessPackage -AccessPackageId '481927e3-c76b-447e-a97d-a944f694ce03'
 ```
 
 ### Delete the user account
@@ -407,7 +420,7 @@ Use the id of the access package that you previously recorded to delete it.
 Delete the Requestor1 user account.
 
 ```powershell
-
+Remove-MgUser -UserId 'e4ef0e03-e149-4cbc-8f56-27bb22171a64'
 ```
 
 ### Delete the group
@@ -415,5 +428,5 @@ Delete the Requestor1 user account.
 Delete the **Marketing resources** group.
 
 ```powershell
-
+Remove-MgGroup -GroupId 'b5cd9d19-91c0-4622-93e2-537ad8a0b3ad'
 ```
