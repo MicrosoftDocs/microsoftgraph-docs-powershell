@@ -117,10 +117,10 @@ To add the group that you created to the catalog, provide the following property
 ```powershell
 $accessPackageResource = @{
   "originSystem" = "AadGroup "
-  OriginId= "b5cd9d19-91c0-4622-93e2-537ad8a0b3ad"
+  OriginId= "8902df17-a973-438f-8321-8b619aa18dc4"
 }
 
-New-MgEntitlementManagementAccessPackageResourceRequest -CatalogId '54152ecb-c65d-47f2-8a4d-ba2732de0a7b' -RequestType "AdminAdd" -AccessPackageResource $accessPackageResource
+New-MgEntitlementManagementAccessPackageResourceRequest -CatalogId '54152ecb-c65d-47f2-8a4d-ba2732de0a7b' -RequestType "AdminAdd" -AccessPackageResource $accessPackageResource | Format-List
 ```
 
 ```Output
@@ -135,7 +135,7 @@ RequestState          : Delivered
 RequestStatus         : Fulfilled
 RequestType           : AdminAdd
 Requestor             : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageSubject
-AdditionalProperties  : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageResourceRequests/$entity]}                                                                Delivered    Fulfilled     AdminAdd
+AdditionalProperties  : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageResourceRequests/$entity]}                                                                
 ```
 
 The request state indicates the outcome of whether the service was able to add the resource to the catalog. The value is **Delivered** if the resource was added.
@@ -262,7 +262,7 @@ Now that you have created the access package and added resources and roles, you 
 The value of the **durationInDays** property enables the **Requestor1** account to access the resources in the access package for 30 days. Record the value of the **id** property that is returned to use later in this tutorial.
 
 ```powershell
- $allowedRequestors = @(@{
+$allowedRequestors = @(@{
   "@odata.type" = '#microsoft.graph.singleUser'
   "isBackup" = $false
   "id"= 'e4ef0e03-e149-4cbc-8f56-27bb22171a64'
@@ -283,14 +283,28 @@ $requestApprovalSettings = @{
   "approvalStages"= '[]'
   }
 
-New-MgEntitlementManagementAccessPackageAssignmentPolicy -AccessPackageId '481927e3-c76b-447e-a97d-a944f694ce03' -DisplayName 'Specific users' -Description 'Specific users can request assignment'  -DurationInDays 30 -RequestorSettings $requestorSettings -RequestApprovalSettings $requestApprovalSettings
+New-MgEntitlementManagementAccessPackageAssignmentPolicy -AccessPackageId 'bc041fda-b3ba-41fc-b911-ca95f7aac656' -DisplayName 'Specific users' -Description 'Specific users can request assignment'  -DurationInDays 30 -RequestorSettings $requestorSettings -RequestApprovalSettings $requestApprovalSettings
 ```
 
 ```Output
-Id                                   AccessPackageId                      CanExtend CreatedBy                         CreatedDateTime       Description                           DisplayName    DurationInDays ExpirationDate
-                                                                                                                                                                                                                Time
---                                   ---------------                      --------- ---------                         ---------------       -----------                           -----------    -------------- --------------
-66eb5245-7de2-471d-a545-0528353193a4 481927e3-c76b-447e-a97d-a944f694ce03 False     admin@M365x814237.onmicrosoft.com 10/28/2021 2:20:42 PM Specific users can request assignment Specific users 30
+AccessPackage           : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackage
+AccessPackageCatalog    : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageCatalog
+AccessPackageId         : bc041fda-b3ba-41fc-b911-ca95f7aac656
+AccessReviewSettings    : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAssignmentReviewSettings
+CanExtend               : False
+CreatedBy               : admin@M365x814237.onmicrosoft.com
+CreatedDateTime         : 11/8/2021 7:16:07 AM
+Description             : Specific users can request assignment
+DisplayName             : Specific users
+DurationInDays          : 30
+ExpirationDateTime      :
+Id                      : f134999f-8a59-49bb-b3a9-e8365d6fff94
+ModifiedBy              : admin@M365x814237.onmicrosoft.com
+ModifiedDateTime        : 11/8/2021 7:16:07 AM
+Questions               : {}
+RequestApprovalSettings : Microsoft.Graph.PowerShell.Models.MicrosoftGraphApprovalSettings
+RequestorSettings       : Microsoft.Graph.PowerShell.Models.MicrosoftGraphRequestorSettings
+AdditionalProperties    : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/$entity]}
 ```
 
 ## Step 3: Request access
@@ -305,7 +319,7 @@ To request access to resources in the access package, you need to provide these 
 - **RequestType**: For a non-administrator user to request to create their own assignment for either a first assignment or renew assignment, the value of the requestType property is `UserAdd`.
 
 ```powershell
-New-MgEntitlementManagementAccessPackageAssignmentRequest -RequestType 'UserAdd' -AccessPackageId '481927e3-c76b-447e-a97d-a944f694ce03' -AssignmentPolicyId '66eb5245-7de2-471d-a545-0528353193a4' -TargetId 'e4ef0e03-e149-4cbc-8f56-27bb22171a64'
+New-MgEntitlementManagementAccessPackageAssignmentRequest -RequestType 'UserAdd' -AccessPackageId 'bc041fda-b3ba-41fc-b911-ca95f7aac656' -AssignmentPolicyId 'f134999f-8a59-49bb-b3a9-e8365d6fff94' -TargetId 'f5ac31b5-ae89-4d34-83ec-198072555d1d'
 ```
 
 ## Step 4: Validate that access has been assigned
@@ -319,17 +333,17 @@ Sign out of the Requestor1 account and sign back in to the administrator account
 Use the **id** property of the request to get the current status of it.
 
 ```powershell
-Get-MgEntitlementManagementAccessPackageAssignmentRequest -AccessPackageAssignmentRequestId 'e89ee9a5-670e-4306-95fa-8a5b58024f5b'| Format-List
+Get-MgEntitlementManagementAccessPackageAssignmentRequest -AccessPackageAssignmentRequestId 'c82bc0cd-4fbc-4492-8c75-54c41dc74803'| Format-List
 ```
 
 ```Output
 AccessPackage           : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackage
 AccessPackageAssignment : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageAssignment
 Answers                 : {}
-CompletedDate           : 10/28/2021 6:35:34 PM
-CreatedDateTime         : 10/28/2021 3:35:30 PM
+CompletedDate           : 11/8/2021 10:21:35 AM
+CreatedDateTime         : 11/8/2021 7:21:09 AM
 ExpirationDateTime      :
-Id                      : e89ee9a5-670e-4306-95fa-8a5b58024f5b
+Id                      : c82bc0cd-4fbc-4492-8c75-54c41dc74803
 IsValidationOnly        : False
 Justification           :
 RequestState            : Delivered
@@ -345,7 +359,7 @@ AdditionalProperties    : {[@odata.context, https://graph.microsoft.com/beta/$me
 Use the **id** of the access package policy that you created to see that resources have been assigned to the **Requestor1** user account.
 
 ```powershell
-Get-MgEntitlementManagementAccessPackageAssignment -Filter "(AccessPackageAssignmentPolicy/Id eq '66eb5245-7de2-471d-a545-0528353193a4')" | Format-List
+Get-MgEntitlementManagementAccessPackageAssignment -Filter "(AccessPackageAssignmentPolicy/Id eq 'f134999f-8a59-49bb-b3a9-e8365d6fff94')" | Format-List
 ```
 
 ```Output
@@ -353,17 +367,17 @@ AccessPackage                        : Microsoft.Graph.PowerShell.Models.Microso
 AccessPackageAssignmentPolicy        : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageAssignmentPolicy
 AccessPackageAssignmentRequests      :
 AccessPackageAssignmentResourceRoles :
-AccessPackageId                      : 481927e3-c76b-447e-a97d-a944f694ce03
-AssignmentPolicyId                   : 66eb5245-7de2-471d-a545-0528353193a4
+AccessPackageId                      : bc041fda-b3ba-41fc-b911-ca95f7aac656
+AssignmentPolicyId                   : f134999f-8a59-49bb-b3a9-e8365d6fff94
 AssignmentState                      : Delivered
 AssignmentStatus                     : Delivered
 CatalogId                            : 54152ecb-c65d-47f2-8a4d-ba2732de0a7b
 ExpiredDateTime                      :
-Id                                   : 8c8ad080-4a09-4b2f-b730-1f5cce4837fe
+Id                                   : 1634548f-cf76-4ac9-b496-f667d33d1dc0
 IsExtended                           : False
 Schedule                             : Microsoft.Graph.PowerShell.Models.MicrosoftGraphRequestSchedule
 Target                               : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageSubject
-TargetId                             : e4ef0e03-e149-4cbc-8f56-27bb22171a64
+TargetId                             : f5ac31b5-ae89-4d34-83ec-198072555d1d
 AdditionalProperties                 : {}
 ```
 
@@ -372,13 +386,13 @@ AdditionalProperties                 : {}
 After the request has been granted, you can use the **id** that you recorded for the **Marketing resources** group to see that the **requestor1** user account has been added to it.
 
 ```powershell
-Get-MgGroupMember -GroupId 'b5cd9d19-91c0-4622-93e2-537ad8a0b3ad'
+Get-MgGroupMember -GroupId '8902df17-a973-438f-8321-8b619aa18dc4'
 ```
 
 ```Output
 Id                                   DeletedDateTime
 --                                   ---------------
-e4ef0e03-e149-4cbc-8f56-27bb22171a64
+f5ac31b5-ae89-4d34-83ec-198072555d1d
 ```
 
 ## Step 5: Clean up the resources
@@ -390,13 +404,7 @@ In this step, you remove the changes you made and delete the **Marketing Campaig
 You must delete any assignments to the access package before you can delete it. Use the **id** of the assignment request that you recorded to delete it.
 
 ```powershell
-New-MgEntitlementManagementAccessPackageAssignmentRequest -RequestType 'AdminRemove' -AccessPackageAssignmentId '8c8ad080-4a09-4b2f-b730-1f5cce4837fe'
-```
-
-Or
-
-```powershell
-Remove-MgEntitlementManagementAccessPackageAssignment -AccessPackageAssignmentId '8c8ad080-4a09-4b2f-b730-1f5cce4837fe'
+New-MgEntitlementManagementAccessPackageAssignmentRequest -RequestType 'AdminRemove' -AccessPackageAssignmentId '1634548f-cf76-4ac9-b496-f667d33d1dc0'
 ```
 
 ### Delete the access package assignment policy
@@ -404,7 +412,7 @@ Remove-MgEntitlementManagementAccessPackageAssignment -AccessPackageAssignmentId
 Use the id of the assignment policy that you previously recorded to delete it. Make sure all assignments are removed first.
 
 ```powershell
-Remove-MgEntitlementManagementAccessPackageAssignmentPolicy -AccessPackageAssignmentPolicyId '66eb5245-7de2-471d-a545-0528353193a4'
+Remove-MgEntitlementManagementAccessPackageAssignmentPolicy -AccessPackageAssignmentPolicyId 'f134999f-8a59-49bb-b3a9-e8365d6fff94'
 ```
 
 ### Delete the access package
@@ -412,7 +420,7 @@ Remove-MgEntitlementManagementAccessPackageAssignmentPolicy -AccessPackageAssign
 Use the id of the access package that you previously recorded to delete it.
 
 ```powershell
-Remove-MgEntitlementManagementAccessPackage -AccessPackageId '481927e3-c76b-447e-a97d-a944f694ce03'
+Remove-MgEntitlementManagementAccessPackage -AccessPackageId 'bc041fda-b3ba-41fc-b911-ca95f7aac656'
 ```
 
 ### Delete the user account
@@ -420,7 +428,7 @@ Remove-MgEntitlementManagementAccessPackage -AccessPackageId '481927e3-c76b-447e
 Delete the Requestor1 user account.
 
 ```powershell
-Remove-MgUser -UserId 'e4ef0e03-e149-4cbc-8f56-27bb22171a64'
+Remove-MgUser -UserId 'f5ac31b5-ae89-4d34-83ec-198072555d1d'
 ```
 
 ### Delete the group
@@ -428,5 +436,5 @@ Remove-MgUser -UserId 'e4ef0e03-e149-4cbc-8f56-27bb22171a64'
 Delete the **Marketing resources** group.
 
 ```powershell
-Remove-MgGroup -GroupId 'b5cd9d19-91c0-4622-93e2-537ad8a0b3ad'
+Remove-MgGroup -GroupId '8902df17-a973-438f-8321-8b619aa18dc4'
 ```
