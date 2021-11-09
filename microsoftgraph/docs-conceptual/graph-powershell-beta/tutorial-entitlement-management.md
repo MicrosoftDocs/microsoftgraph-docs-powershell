@@ -15,6 +15,7 @@ In this tutorial, you've been asked to develop code to create a package of resou
 
 To successfully complete this tutorial, make sure you have the required prerequisites:
 
+1. Microsoft Graph PowerShell SDK is installed. Follow the [Install the Microsoft Graph PowerShell SDK](../graph-powershell-1.0/installation.md) guide to install the SDK.  
 1. To use the Azure AD entitlement management, you must have one of the following licenses:
     - Azure AD Premium P2
     - Enterprise Mobility + Security (EMS) E5 license
