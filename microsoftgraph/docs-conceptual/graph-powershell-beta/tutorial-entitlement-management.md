@@ -31,7 +31,7 @@ To successfully complete this tutorial, make sure you have the required prerequi
     Connect-MgGraph -Scopes "User.ReadWrite.All", "Group.ReadWrite.All", "EntitlementManagement.ReadWrite.All"
     ```
 
-Select **Consent on behalf of your organization** before accepting in the login dialog box.
+    Select **Consent on behalf of your organization** before accepting in the login dialog box.
 
 ## Step 1: Create a user account and a group
 
