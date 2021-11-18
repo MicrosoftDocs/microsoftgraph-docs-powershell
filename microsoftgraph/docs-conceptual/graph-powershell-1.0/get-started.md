@@ -45,19 +45,16 @@ Find-MgGraphCommand -command Get-MgUser | Select -First 1 -ExpandProperty Permis
 ```Output
 Name                                         IsAdmin Description                                   FullDescription
 ----                                         ------- -----------                                   ---------------
-DeviceManagementApps.Read.All                True    Read Microsoft Intune apps                    Allows the app to read the properties, group assignments and status of apps, app configurations and app protection policies managed by Microsoft Intune.
-DeviceManagementApps.ReadWrite.All           True    Read and write Microsoft Intune apps          Allows the app to read and write the properties, group assignments and status of apps, app configurations and app protection policies managed by Microsoft Intune.
-DeviceManagementManagedDevices.Read.All      True    Read devices Microsoft Intune devices         Allows the app to read the properties of devices managed by Microsoft Intune.
-DeviceManagementManagedDevices.ReadWrite.All True    Read and write Microsoft Intune devices       Allows the app to read and write the properties of devices managed by Microsoft Intune. Does not allow high impact operations such as remote wipe and password reset on the device’s owner.
-DeviceManagementServiceConfig.Read.All       True    Read Microsoft Intune configuration           Allows the app to read Microsoft Intune service properties including device enrollment and third party service connection configuration.
-DeviceManagementServiceConfig.ReadWrite.All  True    Read and write Microsoft Intune configuration Allows the app to read and write Microsoft Intune service properties including device enrollment and third party service connection configuration.
-Directory.AccessAsUser.All                   True    Access the directory as you                   Allows the app to have the same access to information in your work or school directory as you do.
 Directory.Read.All                           True    Read directory data                           Allows the app to read data in your organization's directory.
 Directory.ReadWrite.All                      True    Read and write directory data                 Allows the app to read and write data in your organization's directory, such as other users, groups.  It does not allow the app to delete users or groups, or reset user passwords.
 User.Read.All                                True    Read all users' full profiles                 Allows the app to read the full set of profile properties, reports, and managers of other users in your organization, on your behalf.
 User.ReadBasic.All                           False   Read all users' basic profiles                Allows the app to read a basic set of profile properties of other users in your organization on your behalf. Includes display name, first and last name, email address and photo.
 User.ReadWrite.All                           True    Read and write all users' full profiles       Allows the app to read and write the full set of profile properties, reports, and managers of other users in your organization, on your behalf.
 ```
+
+This output has been shortened for readability.
+
+For more information on using this cmdlet, see [Using Find-MgGraphCommand](find-mg-graph-command.md).
 
 ### Sign in
 
