@@ -12,18 +12,24 @@ Find-MgGraphCommand aims to make it easy for you to discover which API path a co
 The Find-MgGraphCommand allows to;
 - Pass a Microsoft Graph URL (relative and absolute) and get an equivalent Microsoft Graph PowerShell command.
 - Pass a command and get the URL it calls.
-- Pass a command or URL wildcard (.*) to find all commands that match it.
+- Pass a command or URI wildcard (.*) to find all commands that match it.
 
 The output of this cmdlet also includes the permissions required to authenticate the specified cmdlet. For more information on cmdlet permissions, see  [Using Find-MgGraphPermission](find-mg-graph-permission.md). Not all cmdlets have the permissions available on running this command. This is an ongoing feature and permissions will continue to be added.
+
+The permissions displayed do not show the privilege levels. To learn more, including how to choose permissions, permission type and what is the most privileged/least privileged permission, use the corresponding API page doc.
 
 ## Find Microsoft Graph PowerShell commands by URI
 
 ### Syntax
+
 ```powershell
 Find-MgGraphCommand -Uri <String[]> [-Method <String>] [-ApiVersion <String>] [<CommonParameters>]
 ```
 
-#### Example
+### Examples
+
+#### Example 1: Use a URI to get all related cmdlets
+
 ```powershell
 Find-MgGraphCommand -Uri '/users/{id}'
 ```
@@ -60,7 +66,9 @@ Update-MgUser Users  PATCH  /users/{user-id}                     {DeviceManageme
 Find-MgGraphCommand -Command <String[]> [-ApiVersion <String>] [<CommonParameters>]
 ```
 
-#### Example 1 : Pass a command and get the URL it calls
+### Examples
+
+#### Example 1 : Pass a command and get the URI it calls
 
 ```powershell
 Find-MgGraphCommand -Command 'Get-MgUser'
@@ -106,36 +114,39 @@ User.ReadWrite.All                           True    Read and write all users' f
 ### Syntax
 
 ```powershell
-Find-MgGraphCommand -Command .*search* [-ApiVersion <String> [<CommonParameters>]
+Find-MgGraphCommand -Command .*searchstring.* [-ApiVersion <String> [<CommonParameters>]
 ```
 
-#### Example 1: Pass a search criteria
+### Examples
+
+#### Example 1: Search for commands using a command wildcard
 
 ```powershell
-Find-MgGraphCommand -Command .*TeamTag* -APIVersion 'Beta'
+Find-MgGraphCommand -Command .*TeamTag.* -APIVersion 'Beta'
 ```
 
 ```Output
-APIVersion: beta
+ APIVersion: beta
 
-Command          Module Method URI                                    OutputType                 Permissions Variants
--------          ------ ------ ---                                    ----------                 ----------- --------
-Get-MgTeamTag    Teams  GET    /teams/{team-id}/tags                  IMicrosoftGraphTeamworkTag {}          {List}
-Get-MgTeamTag    Teams  GET    /teams/{team-id}/tags/{teamworkTag-id} IMicrosoftGraphTeamworkTag {}          {Get, GetViaIdentity}
-New-MgTeamTag    Teams  POST   /teams/{team-id}/tags                  IMicrosoftGraphTeamworkTag {}          {Create, CreateExpanded, CreateViaIdentity, CreateViaIdentityExpanded}
-Remove-MgTeamTag Teams  DELETE /teams/{team-id}/tags/{teamworkTag-id}                            {}          {Delete, DeleteViaIdentity}
-Update-MgTeamTag Teams  PATCH  /teams/{team-id}/tags/{teamworkTag-id}                            {}          {Update, UpdateExpanded, UpdateViaIdentity, UpdateViaIdentityExpanded}
+Command                Module Method URI                                                                   OutputType                       Permissions Variants
+-------                ------ ------ ---                                                                   ----------                       ----------- --------
+Get-MgTeamTag          Teams  GET    /teams/{team-id}/tags                                                 IMicrosoftGraphTeamworkTag       {}          {List}
+Get-MgTeamTag          Teams  GET    /teams/{team-id}/tags/{teamworkTag-id}                                IMicrosoftGraphTeamworkTag       {}          {Get, GetViaIdentity}
+Get-MgTeamTagMember    Teams  GET    /teams/{team-id}/tags/{teamworkTag-id}/members                        IMicrosoftGraphTeamworkTagMember {}          {List}
+Get-MgTeamTagMember    Teams  GET    /teams/{team-id}/tags/{teamworkTag-id}/members/{teamworkTagMember-id} IMicrosoftGraphTeamworkTagMember {}          {Get, GetViaIdentity}
 ```
 
-## Find Microsoft Graph PowerShell commands using a uri wildcard
+## Find Microsoft Graph PowerShell commands using a URI wildcard
 
 ### Syntax
 
 ```powershell
-Find-MgGraphCommand -Command .*search* [-ApiVersion <String> [<CommonParameters>] [-Method <String>]
+Find-MgGraphCommand -Command .*searchstring.* [-ApiVersion <String> [<CommonParameters>] [-Method <String>]
 ```
 
-#### Example 1: Pass a search criteria
+### Examples
+
+#### Example 1: Search for commands using URI wildcard
 
 ```powershell
 Find-MgGraphCommand -Uri ".*users.*" -Method 'Get' -ApiVersion 'v1.0'
@@ -147,10 +158,4 @@ Get-MgUser                                                                      
 Get-MgUserActivity                                                                    CrossDeviceExperiences       GET    /users/{user-id}/activities/{userActivity-id}
 Get-MgUserActivity                                                                    CrossDeviceExperiences       GET    /users/{user-id}/activities
 Get-MgUserActivityHistoryItem                                                         CrossDeviceExperiences       GET    /users/{user-id}/activities/{userActivity-id}/historyItems/{activityHistoryItem-id}
-Get-MgUserActivityHistoryItem                                                         CrossDeviceExperiences       GET    /users/{user-id}/activities/{userActivity-id}/historyItems
-Get-MgUserActivityHistoryItemActivity                                                 CrossDeviceExperiences       GET    /users/{user-id}/activities/{userActivity-id}/historyItems/{activityHistoryItem-id}/activity
-Get-MgUserActivityHistoryItemActivityByRef                                            CrossDeviceExperiences       GET    /users/{user-id}/activities/{userActivity-id}/historyItems/{activityHistoryItem-id}/activity/$ref
-Get-MgUserAgreementAcceptance                                                         Identity.Governance
 ```
-
-
