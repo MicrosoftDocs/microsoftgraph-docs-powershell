@@ -114,7 +114,7 @@ User.ReadWrite.All                           True    Read and write all users' f
 ### Syntax
 
 ```powershell
-Find-MgGraphCommand -Command .*searchstring.* [-ApiVersion <String> [<CommonParameters>]
+Find-MgGraphCommand -Command .*searchstring.* [-ApiVersion <String>] [<CommonParameters>]
 ```
 
 ### Examples
@@ -141,7 +141,7 @@ Get-MgTeamTagMember    Teams  GET    /teams/{team-id}/tags/{teamworkTag-id}/memb
 ### Syntax
 
 ```powershell
-Find-MgGraphCommand -Command .*searchstring.* [-ApiVersion <String> [<CommonParameters>] [-Method <String>]
+Find-MgGraphCommand -Command .*searchstring.* [-ApiVersion <String>] [<CommonParameters>] [-Method <String>]
 ```
 
 ### Examples
