@@ -2,7 +2,7 @@
 title: "Use query parameters to customize responses"
 description: "Learn how to use optional query parameters in Microsoft Graph PowerShell SDK"
 ms.topic: conceptual
-ms.date: 8/02/2021
+ms.date: 12/07/2021
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
@@ -22,11 +22,9 @@ Microsoft PowerShell SDK cmdlets may support one or more of the following OData 
 | [-Count](#count-parameter) |Retrieves the total count of matching resources|`Get-MgUser -ConsistencyLevel eventual -Count count`<br>`$count`|
 | [-Expand](#expand-parameter)| Retrieves related resources|`Get-MgGroup -GroupId '0e06b38f-931a-47db-9a9a-60ab5f492005' -Expand members  Select -ExpandProperty members`|
 | [-Filter](#filter-parameter)| Filters results (rows)|`Get-MgUser -Filter "startsWith(DisplayName, 'Conf')"`|
-| [-Format](#format-parameter)| Returns the results in the specified media format||
 | [-OrderBy](#orderby-parameter)| Orders results|`Get-MgUser -OrderBy DisplayName`|
 | [-Search](#search-parameter)| Returns results based on search criteria|`Get-MgUser -ConsistencyLevel eventual -Search '"DisplayName:Conf"'`|
 | [-Select](#select-parameter)| Filters properties (columns)|`Get-MgUser  Select DisplayName, Id`|
-| [-Skip](#skip-parameter)| Indexes into a result set. Also used by some APIs to implement paging and can be used together with `$top` to manually page results. | |
 | [-Top](#top-parameter)| Sets the page size of results. |`Get-MgUser -Top 10`|
 
 ### Count parameter
@@ -36,9 +34,9 @@ Use the `-Count` query parameter to store the count of the total number of items
 For example, the following command returns all the users and stores their count in the variable `$count`. Querying the variable will return the count of all the users.
 
 ```powershell
-Get-MgUser -ConsistencyLevel eventual -Count count
+Get-MgUser -ConsistencyLevel eventual -Count userCount
 
-$count
+$userCount
 ```
 
 The `-Count` query parameter is supported for these collections of resources and their relationships that derive from [directoryObject](/powershell/module/microsoft.graph.directoryobjects/?view=graph-powershell-1.0&preserve-view=true):
@@ -50,7 +48,7 @@ The `-Count` query parameter is supported for these collections of resources and
 
 ### Expand parameter
 
-Many Microsoft Graph resources expose both declared properties of the resource as well as its relationships with other resources. These relationships are also called reference properties or navigation properties, and they can reference either a single resource or a collection of resources. For example, the mail folders, manager, and direct reports of a user are all exposed as relationships. 
+Many Microsoft Graph resources expose both declared properties of the resource as well as its relationships with other resources. These relationships are also called reference properties or navigation properties, and they can reference either a single resource or a collection of resources. For example, the mail folders, manager, and direct reports of a user are all exposed as relationships.
 
 You can query either the properties of a resource or one of its relationships in a single command, but not both. You can use the `-Expand` query string parameter to include the expanded resource or collection referenced by a single relationship (navigation property) in your results.
 
@@ -61,25 +59,48 @@ Get-MgGroup -GroupId '0e06b38f-931a-47db-9a9a-60ab5f492005' -Expand members |
   Select -ExpandProperty members
 ```
 
-With some resource collections, you can also specify the properties to be returned in the expanded resources by adding a `$select` parameter. The following example performs the same query as the previous example but uses a [`$select`](#select-parameter) statement to limit the properties returned for the expanded child items to the **id** and **name** properties.
+```Output
+Id                                   DeletedDateTime
+--                                   ---------------
+9d3de553-a597-4bb6-9759-ed8e8f1de1f0
+973e202c-fa77-440a-831a-d35d5813669b
+9b202567-cc90-4961-8a7a-d91130212619
+e6d486c1-20f3-426d-bc5d-736c8f467254
+```
+
+With some resource collections, you can also specify the properties to be returned in the expanded resources by adding a `Select` parameter. The following example performs the same query as the previous example but uses a ['Select`](#select-parameter) statement to limit the properties returned for the expanded child items to the **id** only.
 
 ```powershell
+Get-MgGroup -GroupId '0e06b38f-931a-47db-9a9a-60ab5f492005' -Expand members | 
+  Select -ExpandProperty members |
+  Select -ExpandProperty Id
+```
 
+```Output
+9d3de553-a597-4bb6-9759-ed8e8f1de1f0
+973e202c-fa77-440a-831a-d35d5813669b
+9b202567-cc90-4961-8a7a-d91130212619
+e6d486c1-20f3-426d-bc5d-736c8f4672
 ```
 
 > [!Note] 
-Not all relationships and resources support the `-Expand` query parameter. For example, you can expand the **directReports**, **manager**, and **memberOf** relationships on a user, but you cannot expand its **events**, **messages**, or **photo** relationships. Not all resources or relationships support using `-Select` on expanded items. 
-> 
-> With Azure AD resources that derive from [directoryObject](/graph/api/resources/directoryobject), like [user](/graph/api/resources/user) and [group](/graph/api/resources/group), `-Expand` typically returns a maximum of 20 items for the expanded relationship.
+Not all relationships and resources support the `-Expand` query parameter. For example, you can expand the **directReports**, **manager**, and **memberOf** relationships on a user, but you cannot expand its **events**, **messages**, or **photo** relationships. Not all resources or relationships support using `-Select` on expanded items.
 
 ### Filter parameter
 
-Use the `-Filter` query parameter to retrieve just a subset of a collection. The `-Filter` query parameter can also be used to retrieve relationships like members, memberOf, transitiveMembers, and transitiveMemberOf. For example, get all the security groups I'm a member of.
+Use the `-Filter` query parameter to retrieve just a subset of a collection. The `-Filter` query parameter can also be used to retrieve relationships like members, memberOf, transitiveMembers, and transitiveMemberOf. 
 
 The following example can be used to find users whose display name starts with the letter 'J' using `startsWith`.
 
 ```powershell
 Get-MgUser -Filter "startsWith(DisplayName, 'J')"
+```
+
+```Output
+Id                                   DisplayName    Mail                 UserPrincipalName          UserType
+--                                   -----------    ----                 -----------------          --------
+6d620fec-c4b4-4c42-a38f-02df13707b6d Johanna Lorenz JohannaL@Contoso.com JohannaL@Contoso.com
+1bfced9a-af12-4fde-99e5-4fffd324aa7f Joni Sherman   JoniS@Contoso.com    JoniS@Contoso.com
 ```
 
 Support for `-Filter` operators varies across Microsoft Graph PowerShell cmdlets. The following logical operators are generally supported:
@@ -96,19 +117,8 @@ Support for these operators varies by entity. See the specific entity documentat
 
 The `contains` string operator is currently not supported on any Microsoft Graph PowerShell SDK resources.
 
-For more details about `-Filter` syntax, see the [OData protocol][odata-filter].  
-
-### Format parameter
-
-Use the `-Format` query parameter to specify the media format of the items returned from Microsoft Graph.
-
-For example, the following request returns the users in the organization in the json format:
-
-```powershell
-
-```
-
-> **Note:** The `$format` query parameter supports a number of formats (for example, atom, xml, and json) but results may not be returned in all formats.
+>[!Note]
+>Support for these operators varies by entity and some properties support `-Filter` only in advanced queries. 
 
 ### OrderBy parameter
 
@@ -120,22 +130,58 @@ For example, the following command returns the users in the organization ordered
 Get-MgUser -OrderBy DisplayName
 ```
 
+```Output
+Id                                   DisplayName               Mail                  UserPrincipalName              UserType
+--                                   -----------               ----                  -----------------              --------
+e8397199-7bcc-42f3-8547-d10f314f07b5 Adele Vance               AdeleV@Contoso.com    AdeleV@Contoso.com
+9d3de553-a597-4bb6-9759-ed8e8f1de1f0 Alex Wilber               AlexW@Contoso.com     AlexW@Contoso.com
+577a8b8a-ab84-4f90-a6cc-a62cd56010be Allan Deyoung             AllanD@Contoso.com    AllanD@Contoso.com
+5a45cb97-f51a-4556-89fa-a76d68ea282b Automate Bot                                    AutomateB@Contoso.com
+f0735e7b-4ffa-4150-b6a8-7d79e08803cc Bianca Pisani                                   BiancaP@Contoso.com
+````
+
 ### Search parameter
 
 Use the `-Search` query parameter to restrict the results of a request to match a search criterion.
+
+```powershell
+Get-MgUser -ConsistencyLevel eventual -Count UserCount -Search '"DisplayName:De"'
+```
+
+```Output
+Id                                   DisplayName   Mail               UserPrincipalName                  UserType
+--                                   -----------   ----               -----------------                  --------
+550c202d-aeac-4e80-84c5-b665d59f62ed Debra Berger  DebraB@Contoso.com DebraB@Contoso.com
+577a8b8a-ab84-4f90-a6cc-a62cd56010be Allan Deyoung AllanD@Contoso.com AllanD@Contoso.com
+6328a8a3-9e05-498f-8844-20ba3ee2ad18 Delia Dennis                     DeliaD@Contoso.com
+
+
+```
 
 ### Select parameter
 
 Use the `-Select` query parameter to return a set of properties that are different than the default set for an individual resource or a collection of resources. With `-Select`, you can specify a subset or a superset of the default properties.
 
-For example, when retrieving the messages of the signed-in user, you can specify that only the **from** and **subject** properties be returned:
+For example, when retrieving a list of all the users, you can specify that only the **id** and **name** properties be returned:
 
 ```powershell
-
+Get-MgUser | Select Id, DisplayName
 ```
+
+```Output
+Id                                   DisplayName
+--                                   -----------
+e8397199-7bcc-42f3-8547-d10f314f07b5 Adele Vance
+daf80309-1a1f-459d-91b6-7ae5673bc2f2 MOD Administrator
+9d3de553-a597-4bb6-9759-ed8e8f1de1f0 Alex Wilber
+577a8b8a-ab84-4f90-a6cc-a62cd56010be Allan Deyoung
+5a45cb97-f51a-4556-89fa-a76d68ea282b Automate Bot
+f0735e7b-4ffa-4150-b6a8-7d79e08803cc Bianca Pisani
+```
+
 In general, we recommend that you use `-Select` to limit the properties returned by a query to those needed by your app. This is especially true of queries that might potentially return a large result set. Limiting the properties returned in each row will reduce network load and help improve your app's performance.
 
- In `v1.0`, some Azure AD resources that derive from [directoryObject](/graph/api/resources/directoryobject), like [user](/graph/api/resources/user) and [group](/graph/api/resources/group), return a limited, default subset of properties on reads. For these resources, you must use `$select` to return properties outside of the default set.  
+ In `v1.0`, some Azure AD resources that derive from [directoryObject](/graph/api/resources/directoryobject), like [user](/graph/api/resources/user) and [group](/graph/api/resources/group), return a limited, default subset of properties on reads. For these resources, you must use `select` to return properties outside of the default set.  
 
 ### Skip parameter
 
@@ -152,10 +198,20 @@ Use the `-Top` query parameter to specify the page size of the result set.
 
 The minimum value of `-Top` is 1 and the maximum depends on the corresponding API.  
 
-For example, the following [list messages](/graph/api/user-list-messages) request returns the first five messages in the user's mailbox:
+For example, command returns the first five users.
 
-```http
-GET https://graph.microsoft.com/v1.0/me/messages?$top=5
+```powershell
+Get-MgUser -Top 5
+```
+
+```Output
+Id                                   DisplayName       Mail               UserPrincipalName
+--                                   -----------       ----               -----------------
+e8397199-7bcc-42f3-8547-d10f314f07b5 Adele Vance       AdeleV@Contoso.com AdeleV@M365x814237.OnMicro...
+daf80309-1a1f-459d-91b6-7ae5673bc2f2 MOD Administrator admin@Contoso.com  admin@M365x814237.onmicros...
+9d3de553-a597-4bb6-9759-ed8e8f1de1f0 Alex Wilber       AlexW@Contoso.com  AlexW@M365x814237.OnMicros...
+577a8b8a-ab84-4f90-a6cc-a62cd56010be Allan Deyoung     AllanD@Contoso.com AllanD@M365x814237.OnMicro...
+5a45cb97-f51a-4556-89fa-a76d68ea282b Automate Bot                         AutomateB@M365x814237.OnMi...
 ```
 
 ## Error handling for query parameters
@@ -179,7 +235,4 @@ https://graph.microsoft.com/beta/me?$expand=photo
 }
 ```
 
-However, it is important to note that query parameters specified in a request might fail silently. This can be true for unsupported query parameters as well as for unsupported combinations of query parameters. In these cases, you should examine the data returned by the request to determine whether the query parameters you specified had the desired effect. 
-
-## Next steps
-
+However, it is important to note that query parameters specified in a request might fail silently. This can be true for unsupported query parameters as well as for unsupported combinations of query parameters. In these cases, you should examine the data returned by the request to determine whether the query parameters you specified had the desired effect.
