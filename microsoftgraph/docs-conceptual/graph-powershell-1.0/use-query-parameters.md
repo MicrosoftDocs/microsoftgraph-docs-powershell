@@ -27,7 +27,7 @@ Microsoft PowerShell SDK cmdlets may support one or more of the following OData 
 | [-Select](#select-parameter)| Filters properties (columns)|`Get-MgUser  Select DisplayName, Id`|
 | [-Top](#top-parameter)| Sets the page size of results. |`Get-MgUser -Top 10`|
 
-### Count parameter
+## Count parameter
 
 Use the `-Count` query parameter to store the count of the total number of items in a collection in the specified count variable.
 
@@ -46,12 +46,12 @@ The `-Count` query parameter is supported for these collections of resources and
 - [group](/powershell/module/microsoft.graph.groups/?view=graph-powershell-1.0&preserve-view=true)
 - [user](/powershell/module/microsoft.graph.users/?view=graph-powershell-1.0&preserve-view=true)
 
-### Expand parameter
+## Expand parameter
 
 Many Microsoft Graph resources expose both declared properties of the resource as well as its relationships with other resources. These relationships are also called reference properties or navigation properties, and they can reference either a single resource or a collection of resources. For example, the mail folders, manager, and direct reports of a user are all exposed as relationships.
 
 You can query either the properties of a resource or one of its relationships in a single command, but not both. You can use the `-Expand` query string parameter to include the expanded resource or collection referenced by a single relationship (navigation property) in your results.
-
+_
 The following example gets the members of the specified group.
 
 ```powershell
@@ -86,7 +86,7 @@ e6d486c1-20f3-426d-bc5d-736c8f4672
 > [!Note] 
 Not all relationships and resources support the `-Expand` query parameter. For example, you can expand the **directReports**, **manager**, and **memberOf** relationships on a user, but you cannot expand its **events**, **messages**, or **photo** relationships. Not all resources or relationships support using `-Select` on expanded items.
 
-### Filter parameter
+## Filter parameter
 
 Use the `-Filter` query parameter to retrieve just a subset of a collection. The `-Filter` query parameter can also be used to retrieve relationships like members, memberOf, transitiveMembers, and transitiveMemberOf. 
 
@@ -120,7 +120,7 @@ The `contains` string operator is currently not supported on any Microsoft Graph
 >[!Note]
 >Support for these operators varies by entity and some properties support `-Filter` only in advanced queries. 
 
-### OrderBy parameter
+## OrderBy parameter
 
 Use the `-OrderBy` query parameter to specify the sort order of the items returned by a cmdlet.
 
@@ -131,16 +131,16 @@ Get-MgUser -OrderBy DisplayName
 ```
 
 ```Output
-Id                                   DisplayName               Mail                  UserPrincipalName              UserType
---                                   -----------               ----                  -----------------              --------
+Id                                   DisplayName               Mail                  UserPrincipalName          UserType
+--                                   -----------               ----                  -----------------          --------
 e8397199-7bcc-42f3-8547-d10f314f07b5 Adele Vance               AdeleV@Contoso.com    AdeleV@Contoso.com
 9d3de553-a597-4bb6-9759-ed8e8f1de1f0 Alex Wilber               AlexW@Contoso.com     AlexW@Contoso.com
 577a8b8a-ab84-4f90-a6cc-a62cd56010be Allan Deyoung             AllanD@Contoso.com    AllanD@Contoso.com
 5a45cb97-f51a-4556-89fa-a76d68ea282b Automate Bot                                    AutomateB@Contoso.com
 f0735e7b-4ffa-4150-b6a8-7d79e08803cc Bianca Pisani                                   BiancaP@Contoso.com
-````
+```
 
-### Search parameter
+## Search parameter
 
 Use the `-Search` query parameter to restrict the results of a request to match a search criterion.
 
@@ -149,16 +149,14 @@ Get-MgUser -ConsistencyLevel eventual -Count UserCount -Search '"DisplayName:De"
 ```
 
 ```Output
-Id                                   DisplayName   Mail               UserPrincipalName                  UserType
---                                   -----------   ----               -----------------                  --------
+Id                                   DisplayName   Mail               UserPrincipalName           UserType
+--                                   -----------   ----               -----------------           --------
 550c202d-aeac-4e80-84c5-b665d59f62ed Debra Berger  DebraB@Contoso.com DebraB@Contoso.com
 577a8b8a-ab84-4f90-a6cc-a62cd56010be Allan Deyoung AllanD@Contoso.com AllanD@Contoso.com
 6328a8a3-9e05-498f-8844-20ba3ee2ad18 Delia Dennis                     DeliaD@Contoso.com
-
-
 ```
 
-### Select parameter
+## Select parameter
 
 Use the `-Select` query parameter to return a set of properties that are different than the default set for an individual resource or a collection of resources. With `-Select`, you can specify a subset or a superset of the default properties.
 
@@ -183,16 +181,7 @@ In general, we recommend that you use `-Select` to limit the properties returned
 
  In `v1.0`, some Azure AD resources that derive from [directoryObject](/graph/api/resources/directoryobject), like [user](/graph/api/resources/user) and [group](/graph/api/resources/group), return a limited, default subset of properties on reads. For these resources, you must use `select` to return properties outside of the default set.  
 
-### Skip parameter
-
-Use the `-Skip` query parameter to set the number of items to skip at the start of a collection.
-For example, the following request returns events for the user sorted by date created, starting with the 21st event in the collection:
-
-```powershell
-
-```
-
-### Top parameter
+## Top parameter
 
 Use the `-Top` query parameter to specify the page size of the result set. 
 
@@ -216,23 +205,16 @@ daf80309-1a1f-459d-91b6-7ae5673bc2f2 MOD Administrator admin@Contoso.com  admin@
 
 ## Error handling for query parameters
 
-Some requests will return an error message if a specified query parameter is not supported. For example, you cannot use `$expand` on the `user/photo` relationship. 
+Some requests will return an error message if a specified query parameter is not supported. For example, you cannot use `contains` on the `User display name` filter 
 
-```http
-https://graph.microsoft.com/beta/me?$expand=photo
+```powershell
+Get-MgUser -Filter "Contains(DisplayName, 'Test')"
 ```
 
-```json
-{
-    "error":{
-        "code":"ExpandNotSupported",
-        "message":"Expand is not allowed for property 'Photo' according to the entity schema.",
-        "innerError":{
-            "request-id":"1653fefd-bc31-484b-bb10-8dc33cb853ec",
-            "date":"2017-07-31T20:55:01"
-        }
-    }
-}
+```output
+Get-MgUser : Unsupported property filter clause operator 'Contains'.
+At line:1 char:1
++ Get-MgUser -Filter "Contains(DisplayName, 'Test')"
 ```
 
 However, it is important to note that query parameters specified in a request might fail silently. This can be true for unsupported query parameters as well as for unsupported combinations of query parameters. In these cases, you should examine the data returned by the request to determine whether the query parameters you specified had the desired effect.
