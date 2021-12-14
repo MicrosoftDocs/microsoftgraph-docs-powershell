@@ -153,6 +153,8 @@ Find-MgGraphCommand -Uri ".*users.*" -Method 'Get' -ApiVersion 'v1.0'
 ```
 
 ```Output
+Command                                                                               Module                       Method URI
+-------                                                                               ------                       ------ ---
 Get-MgUser                                                                            Users                        GET    /users/{user-id}
 Get-MgUser                                                                            Users                        GET    /users
 Get-MgUserActivity                                                                    CrossDeviceExperiences       GET    /users/{user-id}/activities/{userActivity-id}

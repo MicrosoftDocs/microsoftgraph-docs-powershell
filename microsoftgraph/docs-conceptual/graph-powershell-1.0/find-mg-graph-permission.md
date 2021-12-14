@@ -10,7 +10,7 @@ author: msewaweru
 The Microsoft Graph PowerShell SDK application requires users to have domain knowledge of both the semantics and syntax of Microsoft Graph API permissions used to authorize access to the API. This cmdlet helps to answer the following questions:
 
 - How do I find the values to supply to the permission-related parameters of commands like New-MgApplication and other application and consent related commands?
-- What permissions are applicable to a certain domain, for example, application, directory? To use Microsoft Graph PowerShell SDK to access Microsoft Graph, users must sign in to an Azure Active Directory application using the Connect-MgGraph command. Use the [Find-MgGraphCommad](find-mg-graph-command.md) to find which permissions to use for a specific cmdlet or API.
+- What permissions are applicable to a certain domain, for example, application, directory? To use Microsoft Graph PowerShell SDK to access Microsoft Graph, users must sign in to an Azure Active Directory application using the Connect-MgGraph command. Use the [Find-MgGraphCommand](find-mg-graph-command.md) to find which permissions to use for a specific cmdlet or API.
 - Currently PowerShell commands and scripts, including those implemented with Microsoft Graph PowerShell SDK itself have no way of validating user input that refers to permissions or providing "auto-complete" user experiences to help users accurately supply input to commands
 
 ## Examples
