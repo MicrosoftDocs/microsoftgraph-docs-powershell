@@ -34,6 +34,28 @@ Each API in the Microsoft Graph is protected by one or more permission scopes. T
 
 The `User.Read.All` permission scope will enable the first two calls, and the `Group.ReadWrite.All` scope will enable the rest. These permissions require an admin account.
 
+### Using Find-MgGraphCommand to find required permissions
+
+The `Find-MgGraphCommand` cmdlet can be used to discover the required permissions for another cmdlet. For example, to see all permissions that can be used to call `Get-MgUser`, run;
+
+```powershell
+Find-MgGraphCommand -command Get-MgUser | Select -First 1 -ExpandProperty Permissions
+```
+
+```Output
+Name                                         IsAdmin Description                                   FullDescription
+----                                         ------- -----------                                   ---------------
+Directory.Read.All                           True    Read directory data                           Allows the app to read data in your organization's directory.
+Directory.ReadWrite.All                      True    Read and write directory data                 Allows the app to read and write data in your organization's directory, such as other users, groups.  It does not allow the app to delete users or groups, or reset user passwords.
+User.Read.All                                True    Read all users' full profiles                 Allows the app to read the full set of profile properties, reports, and managers of other users in your organization, on your behalf.
+User.ReadBasic.All                           False   Read all users' basic profiles                Allows the app to read a basic set of profile properties of other users in your organization on your behalf. Includes display name, first and last name, email address and photo.
+User.ReadWrite.All                           True    Read and write all users' full profiles       Allows the app to read and write the full set of profile properties, reports, and managers of other users in your organization, on your behalf.
+```
+
+This output has been shortened for readability.
+
+For more information on using this cmdlet, see [Using Find-MgGraphCommand](find-mg-graph-command.md).
+
 ### Sign in
 
 Use the `Connect-MgGraph` command to sign in with the required scopes. You'll need to sign in with an admin account to consent to the required scopes.
