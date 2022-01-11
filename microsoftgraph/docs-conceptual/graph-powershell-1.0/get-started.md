@@ -36,7 +36,7 @@ The `User.Read.All` permission scope will enable the first two calls, and the `G
 
 ### Using Find-MgGraphCommand to find required permissions
 
-The `Find-MgGraphCommand` cmdlet can be used to determine the required permissions for another cmdlet. For example, to see all permissions that can be used to call `Get-MgUser`, run;
+The `Find-MgGraphCommand` cmdlet can be used to discover the required permissions for another cmdlet. For example, to see all permissions that can be used to call `Get-MgUser`, run;
 
 ```powershell
 Find-MgGraphCommand -command Get-MgUser | Select -First 1 -ExpandProperty Permissions

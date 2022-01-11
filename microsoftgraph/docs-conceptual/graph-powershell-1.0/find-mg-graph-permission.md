@@ -13,9 +13,7 @@ The Microsoft Graph PowerShell SDK application requires users to have domain kno
 - What permissions are applicable to a certain domain, for example, application, directory? To use Microsoft Graph PowerShell SDK to access Microsoft Graph, users must sign in to an Azure Active Directory application using the Connect-MgGraph command. Use the [Find-MgGraphCommand](find-mg-graph-command.md) to find which permissions to use for a specific cmdlet or API.
 - Currently PowerShell commands and scripts, including those implemented with Microsoft Graph PowerShell SDK itself have no way of validating user input that refers to permissions or providing "auto-complete" user experiences to help users accurately supply input to commands
 
-## Examples
-
-### Example 1: Find permissions related to a given domain
+## Find permissions related to a given domain
 
 ```powershell
 Find-MgGraphPermission application
@@ -41,7 +39,7 @@ Id                                   Consent Name                               
 be74164b-cff1-491c-8741-e671cb536e13 Admin   Policy.ReadWrite.ApplicationConfiguration Allows the app to read and write your organization's application configuration policies, without a signed-in user.  This includes policies such as activityBasedTimeoutPolicy, claimsMappingPolicy, homeRealmDiscoveryPolicy, tokenIssuancePolicy  and tokenLifetimePolicy.
 ```
 
-### Example 2: Find the identifier for a specific permission
+## Find the identifier for a specific permission
 
 ```powershell
 Find-MgGraphPermission application.Read | Format-List
