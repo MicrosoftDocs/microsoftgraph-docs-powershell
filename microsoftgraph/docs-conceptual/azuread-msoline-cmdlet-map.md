@@ -6,7 +6,7 @@ ms.custom: getting-started
 ---
 
 # Find Azure AD and MSOnline cmdlets in Microsoft Graph PowerShell
-You can use this map of Azure AD PowerShell and MSOnline cmdlets to find the cmdlets that you need in the  [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/overview). For more information about the new cmdlets, see [Get started with the Microsoft Graph PowerShell SDK](/graph/powershell/get-started).
+You can use this map of Azure AD PowerShell and MSOnline cmdlets to find the cmdlets that you need in the [Microsoft Graph PowerShell SDK](overview.md). For more information about the new cmdlets, see [Get started with the Microsoft Graph PowerShell SDK](get-started.md).
 
 ## Azure AD to Microsoft Graph PowerShell by category
 

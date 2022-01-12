@@ -33,13 +33,13 @@ To understand how to migrate from Azure AD PowerShell to Microsoft Graph PowerSh
 
 ## Install the Microsoft Graph PowerShell SDK
 
-The Microsoft Graph PowerShell SDK is published on the [PowerShell Gallery](https://www.powershellgallery.com/packages/Microsoft.Graph). Follow the [Install the SDK](/graph/powershell/installation) instructions to install the the Microsoft Graph PowerShell SDK.
+The Microsoft Graph PowerShell SDK is published on the [PowerShell Gallery](https://www.powershellgallery.com/packages/Microsoft.Graph). Follow the [Install the SDK](installation.md) instructions to install the the Microsoft Graph PowerShell SDK.
 
 ## Get started
 
-To perform basic tasks, use the [Get-started](/graph/powershell/get-started) guide.
+To perform basic tasks, use the [Get started with the Microsoft Graph PowerShell SDK](get-started.md) guide.
 
 ## Next steps
 
 - If you don't have an Azure account, [create a free account](https://azure.microsoft.com/free).
-- If you already have access to an Azure Active Directory tenant, [Install the SDK](/graph/powershell/installation).
+- If you already have access to an Azure Active Directory tenant, [Install the Microsoft Graph PowerShell SDK](installation.md).

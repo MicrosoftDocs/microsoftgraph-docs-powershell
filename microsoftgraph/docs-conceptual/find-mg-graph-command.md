@@ -14,7 +14,7 @@ The Find-MgGraphCommand allows to;
 - Pass a command and get the URL it calls.
 - Pass a command or URI wildcard (.*) to find all commands that match it.
 
-The output of this cmdlet also includes the permissions required to authenticate the specified cmdlet. For more information on cmdlet permissions, see  [Using Find-MgGraphPermission](find-mg-graph-permission.md). Not all cmdlets have the permissions available on running this command. This is an ongoing feature and permissions will continue to be added.
+The output of this cmdlet also includes the permissions required to authenticate the specified cmdlet. For more information on cmdlet permissions, see [Using Find-MgGraphPermission](find-mg-graph-permission.md). Not all cmdlets have the permissions available on running this command. This is an ongoing feature and permissions will continue to be added.
 
 The permissions displayed do not show the privilege levels. To learn more, including how to choose permissions, permission type and what is the most privileged/least privileged permission, use the corresponding API page doc.
 
