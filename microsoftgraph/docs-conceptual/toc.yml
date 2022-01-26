@@ -24,5 +24,9 @@
     href: migration-steps.md
   - name: Cmdlet map
     href: azuread-msoline-cmdlet-map.md
+- name: v1.0 reference
+  href: /powershell/module/microsoft.graph.applications/?view=graph-powershell-1.0&preserve-view=true
+- name: Beta reference
+  href: /powershell/module/microsoft.graph.applications/?view=graph-powershell-beta&preserve-view=true
 
   
