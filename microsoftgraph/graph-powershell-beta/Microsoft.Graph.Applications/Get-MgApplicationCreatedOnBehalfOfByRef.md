@@ -12,12 +12,12 @@ Read-only.
 
 ## SYNTAX
 
-### Get (Default)
+### Get1 (Default)
 ```
 Get-MgApplicationCreatedOnBehalfOfByRef -ApplicationId <String> [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity1
 ```
 Get-MgApplicationCreatedOnBehalfOfByRef -InputObject <IApplicationsIdentity> [<CommonParameters>]
 ```
@@ -41,7 +41,7 @@ key: id of application
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -57,7 +57,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IApplicationsIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: GetViaIdentity1
 Aliases:
 
 Required: True

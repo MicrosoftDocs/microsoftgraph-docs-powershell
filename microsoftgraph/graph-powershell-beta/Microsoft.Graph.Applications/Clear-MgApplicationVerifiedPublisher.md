@@ -12,13 +12,13 @@ Invoke action unsetVerifiedPublisher
 
 ## SYNTAX
 
-### Unset1 (Default)
+### Unset (Default)
 ```
 Clear-MgApplicationVerifiedPublisher -ApplicationId <String> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### UnsetViaIdentity1
+### UnsetViaIdentity
 ```
 Clear-MgApplicationVerifiedPublisher -InputObject <IApplicationsIdentity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -36,7 +36,7 @@ key: id of application
 
 ```yaml
 Type: String
-Parameter Sets: Unset1
+Parameter Sets: Unset
 Aliases:
 
 Required: True
@@ -52,7 +52,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IApplicationsIdentity
-Parameter Sets: UnsetViaIdentity1
+Parameter Sets: UnsetViaIdentity
 Aliases:
 
 Required: True

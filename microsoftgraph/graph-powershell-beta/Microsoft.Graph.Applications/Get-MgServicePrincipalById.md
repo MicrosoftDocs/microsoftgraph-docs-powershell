@@ -12,13 +12,13 @@ Invoke action getByIds
 
 ## SYNTAX
 
-### GetExpanded (Default)
+### GetExpanded1 (Default)
 ```
 Get-MgServicePrincipalById [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Types <String[]>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### Get1
+### Get3
 ```
 Get-MgServicePrincipalById
  -BodyParameter <IPaths15YkyvsServiceprincipalsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>
@@ -37,7 +37,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: GetExpanded
+Parameter Sets: GetExpanded1
 Aliases:
 
 Required: False
@@ -53,7 +53,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPaths15YkyvsServiceprincipalsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Get1
+Parameter Sets: Get3
 Aliases:
 
 Required: True
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: GetExpanded
+Parameter Sets: GetExpanded1
 Aliases:
 
 Required: False
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: GetExpanded
+Parameter Sets: GetExpanded1
 Aliases:
 
 Required: False

@@ -12,26 +12,26 @@ Invoke action checkMemberObjects
 
 ## SYNTAX
 
-### CheckExpanded (Default)
+### CheckExpanded1 (Default)
 ```
 Confirm-MgApplicationMemberObject -ApplicationId <String> [-AdditionalProperties <Hashtable>] [-Ids <String[]>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Check
+### Check1
 ```
 Confirm-MgApplicationMemberObject -ApplicationId <String>
  -BodyParameter <IPaths1Lkksh4ApplicationsApplicationIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CheckViaIdentityExpanded
+### CheckViaIdentityExpanded1
 ```
 Confirm-MgApplicationMemberObject -InputObject <IApplicationsIdentity> [-AdditionalProperties <Hashtable>]
  [-Ids <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CheckViaIdentity
+### CheckViaIdentity1
 ```
 Confirm-MgApplicationMemberObject -InputObject <IApplicationsIdentity>
  -BodyParameter <IPaths1Lkksh4ApplicationsApplicationIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema>
@@ -50,7 +50,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CheckExpanded, CheckViaIdentityExpanded
+Parameter Sets: CheckExpanded1, CheckViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -65,7 +65,7 @@ key: id of application
 
 ```yaml
 Type: String
-Parameter Sets: CheckExpanded, Check
+Parameter Sets: CheckExpanded1, Check1
 Aliases:
 
 Required: True
@@ -81,7 +81,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPaths1Lkksh4ApplicationsApplicationIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Check, CheckViaIdentity
+Parameter Sets: Check1, CheckViaIdentity1
 Aliases:
 
 Required: True
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: CheckExpanded, CheckViaIdentityExpanded
+Parameter Sets: CheckExpanded1, CheckViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -112,7 +112,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IApplicationsIdentity
-Parameter Sets: CheckViaIdentityExpanded, CheckViaIdentity
+Parameter Sets: CheckViaIdentityExpanded1, CheckViaIdentity1
 Aliases:
 
 Required: True

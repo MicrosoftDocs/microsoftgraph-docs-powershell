@@ -12,26 +12,26 @@ Invoke action checkMemberObjects
 
 ## SYNTAX
 
-### CheckExpanded (Default)
+### CheckExpanded1 (Default)
 ```
 Confirm-MgServicePrincipalMemberObject -ServicePrincipalId <String> [-AdditionalProperties <Hashtable>]
  [-Ids <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Check
+### Check1
 ```
 Confirm-MgServicePrincipalMemberObject -ServicePrincipalId <String>
  -BodyParameter <IPaths1Ffhl47ServiceprincipalsServiceprincipalIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CheckViaIdentityExpanded
+### CheckViaIdentityExpanded1
 ```
 Confirm-MgServicePrincipalMemberObject -InputObject <IApplicationsIdentity> [-AdditionalProperties <Hashtable>]
  [-Ids <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CheckViaIdentity
+### CheckViaIdentity1
 ```
 Confirm-MgServicePrincipalMemberObject -InputObject <IApplicationsIdentity>
  -BodyParameter <IPaths1Ffhl47ServiceprincipalsServiceprincipalIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema>
@@ -50,7 +50,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CheckExpanded, CheckViaIdentityExpanded
+Parameter Sets: CheckExpanded1, CheckViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -66,7 +66,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPaths1Ffhl47ServiceprincipalsServiceprincipalIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Check, CheckViaIdentity
+Parameter Sets: Check1, CheckViaIdentity1
 Aliases:
 
 Required: True
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: CheckExpanded, CheckViaIdentityExpanded
+Parameter Sets: CheckExpanded1, CheckViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -97,7 +97,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IApplicationsIdentity
-Parameter Sets: CheckViaIdentityExpanded, CheckViaIdentity
+Parameter Sets: CheckViaIdentityExpanded1, CheckViaIdentity1
 Aliases:
 
 Required: True
@@ -112,7 +112,7 @@ key: id of servicePrincipal
 
 ```yaml
 Type: String
-Parameter Sets: CheckExpanded, Check
+Parameter Sets: CheckExpanded1, Check1
 Aliases:
 
 Required: True

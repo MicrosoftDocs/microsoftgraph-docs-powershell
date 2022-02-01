@@ -30,7 +30,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApplication
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApplication1
 ## NOTES
 
 ALIASES
