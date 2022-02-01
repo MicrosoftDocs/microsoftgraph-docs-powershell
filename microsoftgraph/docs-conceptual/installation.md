@@ -9,6 +9,8 @@ author: jasonjoh
 
 The Microsoft Graph PowerShell SDK is published on the [PowerShell Gallery](https://www.powershellgallery.com/packages/Microsoft.Graph). In this article you will learn how to install the Microsoft Graph PowerShell SDK using [PowerShellGet](/powershell/scripting/gallery/installing-psget).
 
+Test content.
+
 ## Prerequisites
 
 1. Microsoft Graph PowerShell is cross-platform and works with PowerShell 7 and later. It's also compatible with Windows PowerShell 5.1.
