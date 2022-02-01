@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticdevicescore
 schema: 2.0.0
@@ -15,15 +15,16 @@ User experience analytics device scores
 ### CreateExpanded (Default)
 ```
 New-MgDeviceManagementUserExperienceAnalyticDeviceScore [-AdditionalProperties <Hashtable>]
- [-AppReliabilityScore <Double>] [-DeviceName <String>] [-EndpointAnalyticsScore <Double>] [-Id <String>]
- [-Manufacturer <String>] [-Model <String>] [-StartupPerformanceScore <Double>] [-WhatIf] [-Confirm]
+ [-AppReliabilityScore <Double>] [-DeviceName <String>] [-EndpointAnalyticsScore <Double>]
+ [-HealthStatus <String>] [-Id <String>] [-Manufacturer <String>] [-Model <String>]
+ [-StartupPerformanceScore <Double>] [-WorkFromAnywhereScore <Double>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementUserExperienceAnalyticDeviceScore
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceScores> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceScores> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -37,7 +38,7 @@ User experience analytics device scores
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -53,7 +54,7 @@ The user experience analytics device app reliability score.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -66,10 +67,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analytics device scores entity consolidates the various endpoint analytics scores.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsDeviceScores
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceScores
 Parameter Sets: Create
 Aliases:
 
@@ -84,7 +85,7 @@ Accept wildcard characters: False
 The user experience analytics device name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -100,7 +101,22 @@ The user experience analytics device score.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ```yaml
-Type: Double
+Type: System.Double
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -HealthStatus
+userExperienceAnalyticsHealthState
+
+```yaml
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -115,7 +131,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -130,7 +146,7 @@ Accept wildcard characters: False
 The user experience analytics device manufacturer.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -145,7 +161,7 @@ Accept wildcard characters: False
 The user experience analytics device model.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -161,7 +177,23 @@ The user experience analytics device startup performance score.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ```yaml
-Type: Double
+Type: System.Double
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WorkFromAnywhereScore
+The user experience analytics device work From anywhere score.
+Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+
+```yaml
+Type: System.Double
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -176,7 +208,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -192,7 +224,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -209,9 +241,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceScores
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceScores
+
 ## NOTES
 
 ALIASES
@@ -227,8 +261,11 @@ BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsDeviceScores>: The user exp
   - `[AppReliabilityScore <Double?>]`: The user experience analytics device app reliability score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
   - `[DeviceName <String>]`: The user experience analytics device name.
   - `[EndpointAnalyticsScore <Double?>]`: The user experience analytics device score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+  - `[HealthStatus <String>]`: userExperienceAnalyticsHealthState
   - `[Manufacturer <String>]`: The user experience analytics device manufacturer.
   - `[Model <String>]`: The user experience analytics device model.
   - `[StartupPerformanceScore <Double?>]`: The user experience analytics device startup performance score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+  - `[WorkFromAnywhereScore <Double?>]`: The user experience analytics device work From anywhere score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ## RELATED LINKS
+

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mgchatoperation
 schema: 2.0.0
@@ -16,29 +16,31 @@ Nullable.
 ### UpdateExpanded (Default)
 ```
 Update-MgChatOperation -ChatId <String> -TeamsAsyncOperationId <String> [-AdditionalProperties <Hashtable>]
- [-AttemptsCount <Int32>] [-CreatedDateTime <DateTime>] [-Error <IMicrosoftGraphOperationError>] [-Id <String>]
- [-LastActionDateTime <DateTime>] [-OperationType <String>] [-Status <String>] [-TargetResourceId <String>]
- [-TargetResourceLocation <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AttemptsCount <Int32>] [-CreatedDateTime <DateTime>] [-Error <IMicrosoftGraphOperationError>]
+ [-Id <String>] [-LastActionDateTime <DateTime>] [-OperationType <String>] [-Status <String>]
+ [-TargetResourceId <String>] [-TargetResourceLocation <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgChatOperation -ChatId <String> -TeamsAsyncOperationId <String>
- -BodyParameter <IMicrosoftGraphTeamsAsyncOperation> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgChatOperation -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-AttemptsCount <Int32>] [-CreatedDateTime <DateTime>] [-Error <IMicrosoftGraphOperationError>] [-Id <String>]
- [-LastActionDateTime <DateTime>] [-OperationType <String>] [-Status <String>] [-TargetResourceId <String>]
- [-TargetResourceLocation <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTeamsAsyncOperation> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgChatOperation -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeamsAsyncOperation>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgChatOperation -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
+ [-AttemptsCount <Int32>] [-CreatedDateTime <DateTime>] [-Error <IMicrosoftGraphOperationError>]
+ [-Id <String>] [-LastActionDateTime <DateTime>] [-OperationType <String>] [-Status <String>]
+ [-TargetResourceId <String>] [-TargetResourceLocation <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,7 +55,7 @@ Nullable.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -68,7 +70,7 @@ Accept wildcard characters: False
 Number of times the operation was attempted before being marked successful or failed.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -81,10 +83,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 teamsAsyncOperation
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamsAsyncOperation
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAsyncOperation
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -99,8 +101,8 @@ Accept wildcard characters: False
 key: id of chat
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -114,7 +116,7 @@ Accept wildcard characters: False
 Time when the operation was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -127,10 +129,10 @@ Accept wildcard characters: False
 
 ### -Error
 operationError
-To construct, see NOTES section for ERROR properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ERROR properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOperationError
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOperationError
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -145,7 +147,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -158,11 +160,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -176,7 +178,7 @@ Accept wildcard characters: False
 Time when the async operation was last updated.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -191,7 +193,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -206,7 +208,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -221,7 +223,7 @@ Accept wildcard characters: False
 teamsAsyncOperationStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -236,7 +238,7 @@ Accept wildcard characters: False
 The ID of the object that's created or modified as result of this async operation, typically a team.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -252,7 +254,7 @@ The location of the object that's created or modified as result of this async op
 This URL should be treated as an opaque value and not parsed into its component paths.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -267,8 +269,8 @@ Accept wildcard characters: False
 key: id of teamsAsyncOperation
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -282,7 +284,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -298,7 +300,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -315,10 +317,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAsyncOperation
+
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -369,6 +374,8 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation
   - `[TeamsAsyncOperationId <String>]`: key: id of teamsAsyncOperation
   - `[TeamsTabId <String>]`: key: id of teamsTab
+  - `[TeamworkDeviceId <String>]`: key: id of teamworkDevice
+  - `[TeamworkDeviceOperationId <String>]`: key: id of teamworkDeviceOperation
   - `[TeamworkTagId <String>]`: key: id of teamworkTag
   - `[TeamworkTagMemberId <String>]`: key: id of teamworkTagMember
   - `[TimeCardId <String>]`: key: id of timeCard
@@ -380,3 +387,4 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
 ## RELATED LINKS
+

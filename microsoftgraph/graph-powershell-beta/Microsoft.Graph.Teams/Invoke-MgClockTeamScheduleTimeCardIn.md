@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/invoke-mgclockteamscheduletimecardin
 schema: 2.0.0
@@ -14,29 +14,30 @@ Invoke action clockIn
 
 ### ClockExpanded (Default)
 ```
-Invoke-MgClockTeamScheduleTimeCardIn -TeamId <String> [-AdditionalProperties <Hashtable>] [-AtApprovedLocation]
- [-Notes <IMicrosoftGraphItemBody>] [-OnBehalfOfUserId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgClockTeamScheduleTimeCardIn -TeamId <String> [-AdditionalProperties <Hashtable>]
+ [-AtApprovedLocation] [-Notes <IMicrosoftGraphItemBody>] [-OnBehalfOfUserId <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### Clock
 ```
 Invoke-MgClockTeamScheduleTimeCardIn -TeamId <String>
  -BodyParameter <IPaths1CnzyehTeamsTeamIdScheduleTimecardsMicrosoftGraphClockinPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### ClockViaIdentityExpanded
-```
-Invoke-MgClockTeamScheduleTimeCardIn -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-AtApprovedLocation] [-Notes <IMicrosoftGraphItemBody>] [-OnBehalfOfUserId <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ClockViaIdentity
 ```
 Invoke-MgClockTeamScheduleTimeCardIn -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths1CnzyehTeamsTeamIdScheduleTimecardsMicrosoftGraphClockinPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ClockViaIdentityExpanded
+```
+Invoke-MgClockTeamScheduleTimeCardIn -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
+ [-AtApprovedLocation] [-Notes <IMicrosoftGraphItemBody>] [-OnBehalfOfUserId <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -50,7 +51,7 @@ Invoke action clockIn
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ClockExpanded, ClockViaIdentityExpanded
 Aliases:
 
@@ -65,7 +66,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: ClockExpanded, ClockViaIdentityExpanded
 Aliases:
 
@@ -78,10 +79,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1CnzyehTeamsTeamIdScheduleTimecardsMicrosoftGraphClockinPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths1CnzyehTeamsTeamIdScheduleTimecardsMicrosoftGraphClockinPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Clock, ClockViaIdentity
 Aliases:
 
@@ -94,11 +95,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: ClockViaIdentityExpanded, ClockViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+Parameter Sets: ClockViaIdentity, ClockViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -110,10 +111,10 @@ Accept wildcard characters: False
 
 ### -Notes
 itemBody
-To construct, see NOTES section for NOTES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for NOTES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemBody
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemBody
 Parameter Sets: ClockExpanded, ClockViaIdentityExpanded
 Aliases:
 
@@ -128,7 +129,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ClockExpanded, ClockViaIdentityExpanded
 Aliases:
 
@@ -143,8 +144,8 @@ Accept wildcard characters: False
 key: id of team
 
 ```yaml
-Type: String
-Parameter Sets: ClockExpanded, Clock
+Type: System.String
+Parameter Sets: Clock, ClockExpanded
 Aliases:
 
 Required: True
@@ -158,7 +159,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -174,7 +175,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -191,10 +192,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1CnzyehTeamsTeamIdScheduleTimecardsMicrosoftGraphClockinPostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTimeCard
+
 ## NOTES
 
 ALIASES
@@ -234,6 +238,8 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation
   - `[TeamsAsyncOperationId <String>]`: key: id of teamsAsyncOperation
   - `[TeamsTabId <String>]`: key: id of teamsTab
+  - `[TeamworkDeviceId <String>]`: key: id of teamworkDevice
+  - `[TeamworkDeviceOperationId <String>]`: key: id of teamworkDeviceOperation
   - `[TeamworkTagId <String>]`: key: id of teamworkTag
   - `[TeamworkTagMemberId <String>]`: key: id of teamworkTagMember
   - `[TimeCardId <String>]`: key: id of timeCard
@@ -250,3 +256,4 @@ NOTES <IMicrosoftGraphItemBody>: itemBody
   - `[ContentType <String>]`: bodyType
 
 ## RELATED LINKS
+

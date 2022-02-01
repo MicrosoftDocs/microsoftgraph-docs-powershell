@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementremoteactionaudit
 schema: 2.0.0
@@ -17,13 +17,13 @@ The list of device remote action audits with the tenant.
 New-MgDeviceManagementRemoteActionAudit [-Action <String>] [-ActionState <String>]
  [-AdditionalProperties <Hashtable>] [-DeviceDisplayName <String>] [-DeviceImei <String>]
  [-DeviceOwnerUserPrincipalName <String>] [-Id <String>] [-InitiatedByUserPrincipalName <String>]
- [-ManagedDeviceId <String>] [-RequestDateTime <DateTime>] [-UserName <String>] [-WhatIf] [-Confirm]
+ [-ManagedDeviceId <String>] [-RequestDateTime <DateTime>] [-UserName <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementRemoteActionAudit -BodyParameter <IMicrosoftGraphRemoteActionAudit> [-WhatIf] [-Confirm]
+New-MgDeviceManagementRemoteActionAudit -BodyParameter <IMicrosoftGraphRemoteActionAudit> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -35,10 +35,10 @@ The list of device remote action audits with the tenant.
 ## PARAMETERS
 
 ### -Action
-remoteAction
+Remote actions Intune supports.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -50,10 +50,10 @@ Accept wildcard characters: False
 ```
 
 ### -ActionState
-actionState
+State of the action on the device
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -81,10 +81,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Report of remote actions initiated on the devices belonging to a certain tenant.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRemoteActionAudit
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRemoteActionAudit
 Parameter Sets: Create
 Aliases:
 
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 Intune device name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 IMEI of the device.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 Upn of the device owner.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 User who initiated the device action, format is UPN.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 Action target.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 Time when the action was issued, given in UTC.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 [deprecated] Please use InitiatedByUserPrincipalName instead.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -235,7 +235,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -252,9 +252,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRemoteActionAudit
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRemoteActionAudit
+
 ## NOTES
 
 ALIASES
@@ -267,8 +269,8 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER <IMicrosoftGraphRemoteActionAudit>: Report of remote actions initiated on the devices belonging to a certain tenant.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
-  - `[Action <String>]`: remoteAction
-  - `[ActionState <String>]`: actionState
+  - `[Action <String>]`: Remote actions Intune supports.
+  - `[ActionState <String>]`: State of the action on the device
   - `[DeviceDisplayName <String>]`: Intune device name.
   - `[DeviceImei <String>]`: IMEI of the device.
   - `[DeviceOwnerUserPrincipalName <String>]`: Upn of the device owner.
@@ -278,3 +280,4 @@ BODYPARAMETER <IMicrosoftGraphRemoteActionAudit>: Report of remote actions initi
   - `[UserName <String>]`: [deprecated] Please use InitiatedByUserPrincipalName instead.
 
 ## RELATED LINKS
+

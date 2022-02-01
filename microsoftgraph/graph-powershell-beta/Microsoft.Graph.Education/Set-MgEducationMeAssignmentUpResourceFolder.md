@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Education-help.xml
+external help file:
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/set-mgeducationmeassignmentupresourcefolder
 schema: 2.0.0
@@ -8,22 +8,24 @@ schema: 2.0.0
 # Set-MgEducationMeAssignmentUpResourceFolder
 
 ## SYNOPSIS
-Invoke function setUpResourcesFolder
+Invoke action setUpResourcesFolder
 
 ## SYNTAX
 
-### Set (Default)
+### Set1 (Default)
 ```
-Set-MgEducationMeAssignmentUpResourceFolder -EducationAssignmentId <String> [<CommonParameters>]
+Set-MgEducationMeAssignmentUpResourceFolder -EducationAssignmentId <String> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
-### SetViaIdentity
+### SetViaIdentity1
 ```
-Set-MgEducationMeAssignmentUpResourceFolder -InputObject <IEducationIdentity> [<CommonParameters>]
+Set-MgEducationMeAssignmentUpResourceFolder -InputObject <IEducationIdentity> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke function setUpResourcesFolder
+Invoke action setUpResourcesFolder
 
 ## EXAMPLES
 
@@ -33,8 +35,8 @@ Invoke function setUpResourcesFolder
 key: id of educationAssignment
 
 ```yaml
-Type: String
-Parameter Sets: Set
+Type: System.String
+Parameter Sets: Set1
 Aliases:
 
 Required: True
@@ -46,11 +48,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IEducationIdentity
-Parameter Sets: SetViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IEducationIdentity
+Parameter Sets: SetViaIdentity1
 Aliases:
 
 Required: True
@@ -60,15 +62,48 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### CommonParameters
 This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationAssignment
+
 ## NOTES
 
 ALIASES
@@ -93,3 +128,4 @@ INPUTOBJECT <IEducationIdentity>: Identity Parameter
   - `[EducationUserId <String>]`: key: id of educationUser
 
 ## RELATED LINKS
+

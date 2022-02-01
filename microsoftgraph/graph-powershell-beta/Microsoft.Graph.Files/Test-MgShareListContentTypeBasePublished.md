@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Files-help.xml
+external help file:
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/test-mgsharelistcontenttypebasepublished
 schema: 2.0.0
@@ -34,7 +34,7 @@ Invoke function isPublished
 key: id of contentType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Is
 Aliases:
 
@@ -47,10 +47,10 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFilesIdentity
+Type: Microsoft.Graph.PowerShell.Models.IFilesIdentity
 Parameter Sets: IsViaIdentity
 Aliases:
 
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 key: id of sharedDriveItem
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Is
 Aliases:
 
@@ -82,9 +82,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -106,9 +108,11 @@ INPUTOBJECT <IFilesIdentity>: Identity Parameter
   - `[ListItemId <String>]`: key: id of listItem
   - `[ListItemVersionId <String>]`: key: id of listItemVersion
   - `[Q <String>]`: Usage: q={q}
+  - `[RichLongRunningOperationId <String>]`: key: id of richLongRunningOperation
   - `[SharedDriveItemId <String>]`: key: id of sharedDriveItem
   - `[StartDateTime <String>]`: Usage: startDateTime={startDateTime}
   - `[SubscriptionId <String>]`: key: id of subscription
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

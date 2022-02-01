@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Files-help.xml
+external help file:
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/join-mgdrivelistcontenttypebase
 schema: 2.0.0
@@ -12,30 +12,30 @@ Invoke action associateWithHubSites
 
 ## SYNTAX
 
-### AssociateExpanded (Default)
+### AssociateExpanded1 (Default)
 ```
 Join-MgDriveListContentTypeBase -ContentTypeId <String> -DriveId <String> [-AdditionalProperties <Hashtable>]
- [-HubSiteUrls <String[]>] [-PropagateToExistingLists] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-HubSiteUrls <String[]>] [-PropagateToExistingLists] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Associate
+### Associate1
 ```
 Join-MgDriveListContentTypeBase -ContentTypeId <String> -DriveId <String>
  -BodyParameter <IPathsActxrxDrivesDriveIdListContenttypesContenttypeIdBaseMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### AssociateViaIdentityExpanded
-```
-Join-MgDriveListContentTypeBase -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
- [-HubSiteUrls <String[]>] [-PropagateToExistingLists] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### AssociateViaIdentity
+### AssociateViaIdentity1
 ```
 Join-MgDriveListContentTypeBase -InputObject <IFilesIdentity>
  -BodyParameter <IPathsActxrxDrivesDriveIdListContenttypesContenttypeIdBaseMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### AssociateViaIdentityExpanded1
+```
+Join-MgDriveListContentTypeBase -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
+ [-HubSiteUrls <String[]>] [-PropagateToExistingLists] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,8 +49,8 @@ Invoke action associateWithHubSites
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: AssociateExpanded, AssociateViaIdentityExpanded
+Type: System.Collections.Hashtable
+Parameter Sets: AssociateExpanded1, AssociateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -62,11 +62,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsActxrxDrivesDriveIdListContenttypesContenttypeIdBaseMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Associate, AssociateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IPathsActxrxDrivesDriveIdListContenttypesContenttypeIdBaseMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Associate1, AssociateViaIdentity1
 Aliases:
 
 Required: True
@@ -80,8 +80,8 @@ Accept wildcard characters: False
 key: id of contentType
 
 ```yaml
-Type: String
-Parameter Sets: AssociateExpanded, Associate
+Type: System.String
+Parameter Sets: Associate1, AssociateExpanded1
 Aliases:
 
 Required: True
@@ -95,8 +95,8 @@ Accept wildcard characters: False
 key: id of drive
 
 ```yaml
-Type: String
-Parameter Sets: AssociateExpanded, Associate
+Type: System.String
+Parameter Sets: Associate1, AssociateExpanded1
 Aliases:
 
 Required: True
@@ -110,8 +110,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
-Parameter Sets: AssociateExpanded, AssociateViaIdentityExpanded
+Type: System.String[]
+Parameter Sets: AssociateExpanded1, AssociateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -123,11 +123,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFilesIdentity
-Parameter Sets: AssociateViaIdentityExpanded, AssociateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IFilesIdentity
+Parameter Sets: AssociateViaIdentity1, AssociateViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -156,8 +156,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: AssociateExpanded, AssociateViaIdentityExpanded
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: AssociateExpanded1, AssociateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -187,7 +187,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -204,10 +204,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IPathsActxrxDrivesDriveIdListContenttypesContenttypeIdBaseMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -234,9 +237,11 @@ INPUTOBJECT <IFilesIdentity>: Identity Parameter
   - `[ListItemId <String>]`: key: id of listItem
   - `[ListItemVersionId <String>]`: key: id of listItemVersion
   - `[Q <String>]`: Usage: q={q}
+  - `[RichLongRunningOperationId <String>]`: key: id of richLongRunningOperation
   - `[SharedDriveItemId <String>]`: key: id of sharedDriveItem
   - `[StartDateTime <String>]`: Usage: startDateTime={startDateTime}
   - `[SubscriptionId <String>]`: key: id of subscription
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Applications-help.xml
+external help file:
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/invoke-mgparseserviceprincipalsynchronizationjobschemaexpression
 schema: 2.0.0
@@ -17,7 +17,7 @@ Invoke action parseExpression
 Invoke-MgParseServicePrincipalSynchronizationJobSchemaExpression -ServicePrincipalId <String>
  -SynchronizationJobId <String> [-AdditionalProperties <Hashtable>] [-Expression <String>]
  [-TargetAttributeDefinition <IMicrosoftGraphAttributeDefinition>]
- [-TestInputObject <IMicrosoftGraphExpressionInputObject>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TestInputObject <IMicrosoftGraphExpressionInputObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Parse
@@ -25,7 +25,14 @@ Invoke-MgParseServicePrincipalSynchronizationJobSchemaExpression -ServicePrincip
 Invoke-MgParseServicePrincipalSynchronizationJobSchemaExpression -ServicePrincipalId <String>
  -SynchronizationJobId <String>
  -BodyParameter <IPathsOmq7Q9ServiceprincipalsServiceprincipalIdSynchronizationJobsSynchronizationjobIdSchemaMicrosoftGraphParseexpressionPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ParseViaIdentity
+```
+Invoke-MgParseServicePrincipalSynchronizationJobSchemaExpression -InputObject <IApplicationsIdentity>
+ -BodyParameter <IPathsOmq7Q9ServiceprincipalsServiceprincipalIdSynchronizationJobsSynchronizationjobIdSchemaMicrosoftGraphParseexpressionPostRequestbodyContentApplicationJsonSchema>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ParseViaIdentityExpanded
@@ -33,14 +40,7 @@ Invoke-MgParseServicePrincipalSynchronizationJobSchemaExpression -ServicePrincip
 Invoke-MgParseServicePrincipalSynchronizationJobSchemaExpression -InputObject <IApplicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-Expression <String>]
  [-TargetAttributeDefinition <IMicrosoftGraphAttributeDefinition>]
- [-TestInputObject <IMicrosoftGraphExpressionInputObject>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### ParseViaIdentity
-```
-Invoke-MgParseServicePrincipalSynchronizationJobSchemaExpression -InputObject <IApplicationsIdentity>
- -BodyParameter <IPathsOmq7Q9ServiceprincipalsServiceprincipalIdSynchronizationJobsSynchronizationjobIdSchemaMicrosoftGraphParseexpressionPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TestInputObject <IMicrosoftGraphExpressionInputObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -54,7 +54,7 @@ Invoke action parseExpression
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ParseExpanded, ParseViaIdentityExpanded
 Aliases:
 
@@ -67,10 +67,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsOmq7Q9ServiceprincipalsServiceprincipalIdSynchronizationJobsSynchronizationjobIdSchemaMicrosoftGraphParseexpressionPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPathsOmq7Q9ServiceprincipalsServiceprincipalIdSynchronizationJobsSynchronizationjobIdSchemaMicrosoftGraphParseexpressionPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Parse, ParseViaIdentity
 Aliases:
 
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ParseExpanded, ParseViaIdentityExpanded
 Aliases:
 
@@ -98,11 +98,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IApplicationsIdentity
-Parameter Sets: ParseViaIdentityExpanded, ParseViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+Parameter Sets: ParseViaIdentity, ParseViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -116,8 +116,8 @@ Accept wildcard characters: False
 key: id of servicePrincipal
 
 ```yaml
-Type: String
-Parameter Sets: ParseExpanded, Parse
+Type: System.String
+Parameter Sets: Parse, ParseExpanded
 Aliases:
 
 Required: True
@@ -131,8 +131,8 @@ Accept wildcard characters: False
 key: id of synchronizationJob
 
 ```yaml
-Type: String
-Parameter Sets: ParseExpanded, Parse
+Type: System.String
+Parameter Sets: Parse, ParseExpanded
 Aliases:
 
 Required: True
@@ -144,10 +144,10 @@ Accept wildcard characters: False
 
 ### -TargetAttributeDefinition
 attributeDefinition
-To construct, see NOTES section for TARGETATTRIBUTEDEFINITION properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for TARGETATTRIBUTEDEFINITION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAttributeDefinition
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttributeDefinition
 Parameter Sets: ParseExpanded, ParseViaIdentityExpanded
 Aliases:
 
@@ -160,10 +160,10 @@ Accept wildcard characters: False
 
 ### -TestInputObject
 expressionInputObject
-To construct, see NOTES section for TESTINPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for TESTINPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExpressionInputObject
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExpressionInputObject
 Parameter Sets: ParseExpanded, ParseViaIdentityExpanded
 Aliases:
 
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -194,7 +194,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -211,10 +211,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IPathsOmq7Q9ServiceprincipalsServiceprincipalIdSynchronizationJobsSynchronizationjobIdSchemaMicrosoftGraphParseexpressionPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphParseExpressionResponse
+
 ## NOTES
 
 ALIASES
@@ -268,6 +271,7 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[DirectoryDefinitionId <String>]`: key: id of directoryDefinition
   - `[EndpointId <String>]`: key: id of endpoint
   - `[ExtensionPropertyId <String>]`: key: id of extensionProperty
+  - `[FederatedIdentityCredentialId <String>]`: key: id of federatedIdentityCredential
   - `[GroupId <String>]`: key: id of group
   - `[LicenseDetailsId <String>]`: key: id of licenseDetails
   - `[OnPremisesAgentGroupId <String>]`: key: id of onPremisesAgentGroup
@@ -334,4 +338,3 @@ TESTINPUTOBJECT <IMicrosoftGraphExpressionInputObject>: expressionInputObject
 
 ## RELATED LINKS
 
-## RELATED LINKS

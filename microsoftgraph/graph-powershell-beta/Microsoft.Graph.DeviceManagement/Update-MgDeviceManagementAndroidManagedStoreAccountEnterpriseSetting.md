@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementandroidmanagedstoreaccountenterprisesetting
 schema: 2.0.0
@@ -18,14 +18,15 @@ Update-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSetting [-Additiona
  [-AndroidDeviceOwnerFullyManagedEnrollmentEnabled] [-BindStatus <String>]
  [-CompanyCodes <IMicrosoftGraphAndroidEnrollmentCompanyCode[]>] [-DeviceOwnerManagementEnabled]
  [-EnrollmentTarget <String>] [-Id <String>] [-LastAppSyncDateTime <DateTime>] [-LastAppSyncStatus <String>]
- [-LastModifiedDateTime <DateTime>] [-OwnerOrganizationName <String>] [-OwnerUserPrincipalName <String>]
- [-TargetGroupIds <String[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LastModifiedDateTime <DateTime>] [-ManagedGooglePlayInitialScopeTagIds <String[]>]
+ [-OwnerOrganizationName <String>] [-OwnerUserPrincipalName <String>] [-TargetGroupIds <String[]>] [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSetting
- -BodyParameter <IMicrosoftGraphAndroidManagedStoreAccountEnterpriseSettings> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphAndroidManagedStoreAccountEnterpriseSettings> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -40,7 +41,7 @@ The singleton Android managed store account enterprise settings entity.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -55,7 +56,7 @@ Accept wildcard characters: False
 Company codes for AndroidManagedStoreAccountEnterpriseSettings
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -67,10 +68,10 @@ Accept wildcard characters: False
 ```
 
 ### -BindStatus
-androidManagedStoreAccountBindStatus
+Bind status of the tenant with the Google EMM API
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -83,10 +84,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Enterprise settings for an Android managed store account.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAndroidManagedStoreAccountEnterpriseSettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAndroidManagedStoreAccountEnterpriseSettings
 Parameter Sets: Update
 Aliases:
 
@@ -99,10 +100,10 @@ Accept wildcard characters: False
 
 ### -CompanyCodes
 Company codes for AndroidManagedStoreAccountEnterpriseSettings
-To construct, see NOTES section for COMPANYCODES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for COMPANYCODES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAndroidEnrollmentCompanyCode[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAndroidEnrollmentCompanyCode[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -117,7 +118,7 @@ Accept wildcard characters: False
 Indicates if this account is flighting for Android Device Owner Management with CloudDPC.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -129,10 +130,10 @@ Accept wildcard characters: False
 ```
 
 ### -EnrollmentTarget
-androidManagedStoreAccountEnrollmentTarget
+Android for Work device management targeting type for the account
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -147,7 +148,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -162,7 +163,7 @@ Accept wildcard characters: False
 Last completion time for app sync
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -174,10 +175,10 @@ Accept wildcard characters: False
 ```
 
 ### -LastAppSyncStatus
-androidManagedStoreAccountAppSyncStatus
+Sync status of the tenant with the Google EMM API
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -192,7 +193,22 @@ Accept wildcard characters: False
 Last modification time for Android enterprise settings
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ManagedGooglePlayInitialScopeTagIds
+Initial scope tags for MGP apps
+
+```yaml
+Type: System.String[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -207,7 +223,7 @@ Accept wildcard characters: False
 Organization name used when onboarding Android Enterprise
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -222,7 +238,7 @@ Accept wildcard characters: False
 Owner UPN that created the enterprise
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -237,7 +253,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -252,7 +268,7 @@ Accept wildcard characters: False
 Specifies which AAD groups can enroll devices in Android for Work device management if enrollmentTarget is set to 'Targeted'
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -267,7 +283,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -283,7 +299,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -300,9 +316,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAndroidManagedStoreAccountEnterpriseSettings
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -316,7 +334,7 @@ BODYPARAMETER <IMicrosoftGraphAndroidManagedStoreAccountEnterpriseSettings>: Ent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
   - `[AndroidDeviceOwnerFullyManagedEnrollmentEnabled <Boolean?>]`: Company codes for AndroidManagedStoreAccountEnterpriseSettings
-  - `[BindStatus <String>]`: androidManagedStoreAccountBindStatus
+  - `[BindStatus <String>]`: Bind status of the tenant with the Google EMM API
   - `[CompanyCodes <IMicrosoftGraphAndroidEnrollmentCompanyCode[]>]`: Company codes for AndroidManagedStoreAccountEnterpriseSettings
     - `[EnrollmentToken <String>]`: Enrollment Token used by the User to enroll their device.
     - `[QrCodeContent <String>]`: String used to generate a QR code for the token.
@@ -325,10 +343,11 @@ BODYPARAMETER <IMicrosoftGraphAndroidManagedStoreAccountEnterpriseSettings>: Ent
       - `[Type <String>]`: Indicates the content mime type.
       - `[Value <Byte[]>]`: The byte array that contains the actual content.
   - `[DeviceOwnerManagementEnabled <Boolean?>]`: Indicates if this account is flighting for Android Device Owner Management with CloudDPC.
-  - `[EnrollmentTarget <String>]`: androidManagedStoreAccountEnrollmentTarget
+  - `[EnrollmentTarget <String>]`: Android for Work device management targeting type for the account
   - `[LastAppSyncDateTime <DateTime?>]`: Last completion time for app sync
-  - `[LastAppSyncStatus <String>]`: androidManagedStoreAccountAppSyncStatus
+  - `[LastAppSyncStatus <String>]`: Sync status of the tenant with the Google EMM API
   - `[LastModifiedDateTime <DateTime?>]`: Last modification time for Android enterprise settings
+  - `[ManagedGooglePlayInitialScopeTagIds <String[]>]`: Initial scope tags for MGP apps
   - `[OwnerOrganizationName <String>]`: Organization name used when onboarding Android Enterprise
   - `[OwnerUserPrincipalName <String>]`: Owner UPN that created the enterprise
   - `[TargetGroupIds <String[]>]`: Specifies which AAD groups can enroll devices in Android for Work device management if enrollmentTarget is set to 'Targeted'
@@ -342,3 +361,4 @@ COMPANYCODES <IMicrosoftGraphAndroidEnrollmentCompanyCode[]>: Company codes for 
     - `[Value <Byte[]>]`: The byte array that contains the actual content.
 
 ## RELATED LINKS
+

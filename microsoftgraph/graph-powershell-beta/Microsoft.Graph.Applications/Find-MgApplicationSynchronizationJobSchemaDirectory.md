@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Applications-help.xml
+external help file:
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/find-mgapplicationsynchronizationjobschemadirectory
 schema: 2.0.0
@@ -15,12 +15,12 @@ Invoke action discover
 ### Discover (Default)
 ```
 Find-MgApplicationSynchronizationJobSchemaDirectory -ApplicationId <String> -DirectoryDefinitionId <String>
- -SynchronizationJobId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -SynchronizationJobId <String> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### DiscoverViaIdentity
 ```
-Find-MgApplicationSynchronizationJobSchemaDirectory -InputObject <IApplicationsIdentity> [-WhatIf] [-Confirm]
+Find-MgApplicationSynchronizationJobSchemaDirectory -InputObject <IApplicationsIdentity> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -35,7 +35,7 @@ Invoke action discover
 key: id of application
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Discover
 Aliases:
 
@@ -50,7 +50,7 @@ Accept wildcard characters: False
 key: id of directoryDefinition
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Discover
 Aliases:
 
@@ -63,10 +63,10 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IApplicationsIdentity
+Type: Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
 Parameter Sets: DiscoverViaIdentity
 Aliases:
 
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 key: id of synchronizationJob
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Discover
 Aliases:
 
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -112,7 +112,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -129,9 +129,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryDefinition
+
 ## NOTES
 
 ALIASES
@@ -151,6 +153,7 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[DirectoryDefinitionId <String>]`: key: id of directoryDefinition
   - `[EndpointId <String>]`: key: id of endpoint
   - `[ExtensionPropertyId <String>]`: key: id of extensionProperty
+  - `[FederatedIdentityCredentialId <String>]`: key: id of federatedIdentityCredential
   - `[GroupId <String>]`: key: id of group
   - `[LicenseDetailsId <String>]`: key: id of licenseDetails
   - `[OnPremisesAgentGroupId <String>]`: key: id of onPremisesAgentGroup
@@ -166,3 +169,4 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

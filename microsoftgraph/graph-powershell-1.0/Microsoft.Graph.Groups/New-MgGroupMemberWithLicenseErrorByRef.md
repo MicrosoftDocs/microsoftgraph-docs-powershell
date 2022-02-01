@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/new-mggroupmemberwithlicenseerrorbyref
 schema: 2.0.0
@@ -8,42 +8,38 @@ schema: 2.0.0
 # New-MgGroupMemberWithLicenseErrorByRef
 
 ## SYNOPSIS
-Groups and administrative units that this group is a member of.
-HTTP Methods: GET (supported for all groups).
+A list of group members with license errors from this group-based license assignment.
 Read-only.
-Nullable.
 
 ## SYNTAX
 
-### CreateExpanded2 (Default)
+### CreateExpanded4 (Default)
 ```
-New-MgGroupMemberWithLicenseErrorByRef -GroupId <String> [-AdditionalProperties <Hashtable>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgGroupMemberWithLicenseErrorByRef -GroupId <String> [-AdditionalProperties <Hashtable>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
-### Create2
+### Create4
 ```
-New-MgGroupMemberWithLicenseErrorByRef -GroupId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
+New-MgGroupMemberWithLicenseErrorByRef -GroupId <String> -BodyParameter <Hashtable> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded2
+### CreateViaIdentity4
 ```
-New-MgGroupMemberWithLicenseErrorByRef -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgGroupMemberWithLicenseErrorByRef -InputObject <IGroupsIdentity> -BodyParameter <Hashtable> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
-### CreateViaIdentity2
+### CreateViaIdentityExpanded4
 ```
-New-MgGroupMemberWithLicenseErrorByRef -InputObject <IGroupsIdentity> -BodyParameter <Hashtable> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgGroupMemberWithLicenseErrorByRef -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Groups and administrative units that this group is a member of.
-HTTP Methods: GET (supported for all groups).
+A list of group members with license errors from this group-based license assignment.
 Read-only.
-Nullable.
 
 ## EXAMPLES
 
@@ -53,8 +49,8 @@ Nullable.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded2
+Type: System.Collections.Hashtable
+Parameter Sets: CreateExpanded4, CreateViaIdentityExpanded4
 Aliases:
 
 Required: False
@@ -68,8 +64,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Hashtable
-Parameter Sets: Create2, CreateViaIdentity2
+Type: System.Collections.Hashtable
+Parameter Sets: Create4, CreateViaIdentity4
 Aliases:
 
 Required: True
@@ -83,8 +79,8 @@ Accept wildcard characters: False
 key: id of group
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded2, Create2
+Type: System.String
+Parameter Sets: Create4, CreateExpanded4
 Aliases:
 
 Required: True
@@ -96,11 +92,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: CreateViaIdentityExpanded2, CreateViaIdentity2
+Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+Parameter Sets: CreateViaIdentity4, CreateViaIdentityExpanded4
 Aliases:
 
 Required: True
@@ -114,7 +110,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -130,7 +126,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -147,10 +143,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+
 ### System.Collections.Hashtable
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsCa7EzdGroupsGroupIdMemberofRefPostResponses201ContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IPaths1Jqo6K2GroupsGroupIdMemberswithlicenseerrorsRefPostResponses201ContentApplicationJsonSchema
+
 ## NOTES
 
 ALIASES
@@ -184,3 +183,4 @@ INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

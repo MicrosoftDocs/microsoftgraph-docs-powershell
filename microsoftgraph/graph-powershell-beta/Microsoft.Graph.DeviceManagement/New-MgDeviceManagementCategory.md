@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementcategory
 schema: 2.0.0
@@ -16,14 +16,14 @@ The available categories
 ```
 New-MgDeviceManagementCategory [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
  [-HasRequiredSetting] [-Id <String>]
- [-SettingDefinitions <IMicrosoftGraphDeviceManagementSettingDefinition[]>] [-WhatIf] [-Confirm]
+ [-SettingDefinitions <IMicrosoftGraphDeviceManagementSettingDefinition[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementCategory -BodyParameter <IMicrosoftGraphDeviceManagementSettingCategory> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgDeviceManagementCategory -BodyParameter <IMicrosoftGraphDeviceManagementSettingCategory> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -37,7 +37,7 @@ The available categories
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -50,10 +50,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Entity representing a setting category
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementSettingCategory
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementSettingCategory
 Parameter Sets: Create
 Aliases:
 
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 The category name
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 The category contains top level required setting
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -111,10 +111,10 @@ Accept wildcard characters: False
 
 ### -SettingDefinitions
 The setting definitions this category contains
-To construct, see NOTES section for SETTINGDEFINITIONS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SETTINGDEFINITIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementSettingDefinition[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementSettingDefinition[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -145,7 +145,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -162,9 +162,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementSettingCategory
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementSettingCategory
+
 ## NOTES
 
 ALIASES
@@ -212,3 +214,4 @@ SETTINGDEFINITIONS <IMicrosoftGraphDeviceManagementSettingDefinition[]>: The set
   - `[ValueType <String>]`: deviceManangementIntentValueType
 
 ## RELATED LINKS
+

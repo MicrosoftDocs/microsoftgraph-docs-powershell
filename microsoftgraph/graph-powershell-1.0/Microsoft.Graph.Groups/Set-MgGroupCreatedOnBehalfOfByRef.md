@@ -1,40 +1,88 @@
 ---
-external help file: Microsoft.Graph.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Groups
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/restore-mggroup
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/set-mggroupcreatedonbehalfofbyref
 schema: 2.0.0
 ---
 
-# Restore-MgGroup
+# Set-MgGroupCreatedOnBehalfOfByRef
 
 ## SYNOPSIS
-Invoke action restore
+The user (or application) that created the group.
+Note: This is not set if the user is an administrator.
+Read-only.
 
 ## SYNTAX
 
-### Restore1 (Default)
+### SetExpanded (Default)
 ```
-Restore-MgGroup -GroupId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgGroupCreatedOnBehalfOfByRef -GroupId <String> [-AdditionalProperties <Hashtable>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
-### RestoreViaIdentity1
+### Set
 ```
-Restore-MgGroup -InputObject <IGroupsIdentity> [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgGroupCreatedOnBehalfOfByRef -GroupId <String> -BodyParameter <Hashtable> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
+```
+
+### SetViaIdentity
+```
+Set-MgGroupCreatedOnBehalfOfByRef -InputObject <IGroupsIdentity> -BodyParameter <Hashtable> [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### SetViaIdentityExpanded
+```
+Set-MgGroupCreatedOnBehalfOfByRef -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action restore
+The user (or application) that created the group.
+Note: This is not set if the user is an administrator.
+Read-only.
 
 ## EXAMPLES
 
 ## PARAMETERS
 
+### -AdditionalProperties
+Additional Parameters
+
+```yaml
+Type: System.Collections.Hashtable
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -BodyParameter
+.
+
+```yaml
+Type: System.Collections.Hashtable
+Parameter Sets: Set, SetViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -GroupId
 key: id of group
 
 ```yaml
-Type: String
-Parameter Sets: Restore1
+Type: System.String
+Parameter Sets: Set, SetExpanded
 Aliases:
 
 Required: True
@@ -46,11 +94,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: RestoreViaIdentity1
+Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+Parameter Sets: SetViaIdentity, SetViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -60,11 +108,26 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -PassThru
+Returns true when the command succeeds
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -80,7 +143,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -97,12 +160,18 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+
+### System.Collections.Hashtable
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
+### System.Boolean
+
 ## NOTES
 
 ALIASES
+
+### Set-MgGroupCreatedOnBehalfByRef
 
 COMPLEX PARAMETER PROPERTIES
 
@@ -133,3 +202,4 @@ INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

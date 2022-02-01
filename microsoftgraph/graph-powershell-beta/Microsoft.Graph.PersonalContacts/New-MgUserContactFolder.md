@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.PersonalContacts-help.xml
+external help file:
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.personalcontacts/new-mgusercontactfolder
 schema: 2.0.0
@@ -19,15 +19,22 @@ Nullable.
 New-MgUserContactFolder -UserId <String> [-AdditionalProperties <Hashtable>]
  [-ChildFolders <IMicrosoftGraphContactFolder[]>] [-Contacts <IMicrosoftGraphContact1[]>]
  [-DisplayName <String>] [-Id <String>]
- [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-ParentFolderId <String>]
+ [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]
+ [-ParentFolderId <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
- [-WellKnownName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WellKnownName <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgUserContactFolder -UserId <String> -BodyParameter <IMicrosoftGraphContactFolder> [-WhatIf] [-Confirm]
+New-MgUserContactFolder -UserId <String> -BodyParameter <IMicrosoftGraphContactFolder> [-Confirm] [-WhatIf]
  [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgUserContactFolder -InputObject <IPersonalContactsIdentity> -BodyParameter <IMicrosoftGraphContactFolder>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -35,15 +42,10 @@ New-MgUserContactFolder -UserId <String> -BodyParameter <IMicrosoftGraphContactF
 New-MgUserContactFolder -InputObject <IPersonalContactsIdentity> [-AdditionalProperties <Hashtable>]
  [-ChildFolders <IMicrosoftGraphContactFolder[]>] [-Contacts <IMicrosoftGraphContact1[]>]
  [-DisplayName <String>] [-Id <String>]
- [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-ParentFolderId <String>]
+ [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]
+ [-ParentFolderId <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
- [-WellKnownName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgUserContactFolder -InputObject <IPersonalContactsIdentity> -BodyParameter <IMicrosoftGraphContactFolder>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WellKnownName <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -59,7 +61,7 @@ Nullable.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -72,10 +74,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 contactFolder
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphContactFolder
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContactFolder
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -91,10 +93,10 @@ The collection of child folders in the folder.
 Navigation property.
 Read-only.
 Nullable.
-To construct, see NOTES section for CHILDFOLDERS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for CHILDFOLDERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphContactFolder[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContactFolder[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -110,10 +112,10 @@ The contacts in the folder.
 Navigation property.
 Read-only.
 Nullable.
-To construct, see NOTES section for CONTACTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for CONTACTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphContact1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContact1[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -128,7 +130,7 @@ Accept wildcard characters: False
 The folder's display name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -143,7 +145,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -156,11 +158,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IPersonalContactsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IPersonalContactsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -174,10 +176,10 @@ Accept wildcard characters: False
 The collection of multi-value extended properties defined for the contactFolder.
 Read-only.
 Nullable.
-To construct, see NOTES section for MULTIVALUEEXTENDEDPROPERTIES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for MULTIVALUEEXTENDEDPROPERTIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMultiValueLegacyExtendedProperty[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMultiValueLegacyExtendedProperty[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -192,7 +194,7 @@ Accept wildcard characters: False
 The ID of the folder's parent folder.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -207,10 +209,10 @@ Accept wildcard characters: False
 The collection of single-value extended properties defined for the contactFolder.
 Read-only.
 Nullable.
-To construct, see NOTES section for SINGLEVALUEEXTENDEDPROPERTIES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SINGLEVALUEEXTENDEDPROPERTIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSingleValueLegacyExtendedProperty[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSingleValueLegacyExtendedProperty[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -225,8 +227,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -241,7 +243,7 @@ The name of the folder if the folder is a recognized folder.
 Currently contacts is the only recognized contacts folder.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -256,7 +258,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -272,7 +274,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -289,10 +291,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContactFolder
+
 ### Microsoft.Graph.PowerShell.Models.IPersonalContactsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContactFolder
+
 ## NOTES
 
 ALIASES
@@ -338,19 +343,19 @@ BODYPARAMETER <IMicrosoftGraphContactFolder>: contactFolder
     - `[Gender <String>]`: The contact's gender.
     - `[Generation <String>]`: The contact's generation.
     - `[GivenName <String>]`: The contact's given name.
-    - `[ImAddresses <String[]>]`: The contact's instant messaging (IM) addresses.
-    - `[Initials <String>]`: The contact's initials.
+    - `[ImAddresses <String[]>]`: 
+    - `[Initials <String>]`: 
     - `[IsFavorite <Boolean?>]`: 
-    - `[JobTitle <String>]`: The contact's job title.
-    - `[Manager <String>]`: The name of the contact's manager.
-    - `[MiddleName <String>]`: The contact's middle name.
+    - `[JobTitle <String>]`: 
+    - `[Manager <String>]`: 
+    - `[MiddleName <String>]`: 
     - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
       - `[Id <String>]`: Read-only.
       - `[Value <String[]>]`: A collection of property values.
-    - `[NickName <String>]`: The contact's nickname.
-    - `[OfficeLocation <String>]`: The location of the contact's office.
-    - `[ParentFolderId <String>]`: The ID of the contact's parent folder.
-    - `[PersonalNotes <String>]`: The user's notes about the contact.
+    - `[NickName <String>]`: 
+    - `[OfficeLocation <String>]`: 
+    - `[ParentFolderId <String>]`: 
+    - `[PersonalNotes <String>]`: 
     - `[Phones <IMicrosoftGraphPhone[]>]`: 
       - `[Number <String>]`: The phone number.
       - `[Type <String>]`: phoneType
@@ -367,21 +372,21 @@ BODYPARAMETER <IMicrosoftGraphContactFolder>: contactFolder
       - `[State <String>]`: The state.
       - `[Street <String>]`: The street.
       - `[Type <String>]`: physicalAddressType
-    - `[Profession <String>]`: The contact's profession.
+    - `[Profession <String>]`: 
     - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the contact. Read-only. Nullable.
       - `[Id <String>]`: Read-only.
       - `[Value <String>]`: A property value.
-    - `[SpouseName <String>]`: The name of the contact's spouse/partner.
-    - `[Surname <String>]`: The contact's surname.
-    - `[Title <String>]`: The contact's title.
+    - `[SpouseName <String>]`: 
+    - `[Surname <String>]`: 
+    - `[Title <String>]`: 
     - `[Websites <IMicrosoftGraphWebsite[]>]`: 
       - `[Address <String>]`: The URL of the website.
       - `[DisplayName <String>]`: The display name of the web site.
       - `[Type <String>]`: websiteType
     - `[WeddingAnniversary <DateTime?>]`: 
-    - `[YomiCompanyName <String>]`: The phonetic Japanese company name of the contact.
-    - `[YomiGivenName <String>]`: The phonetic Japanese given name (first name) of the contact.
-    - `[YomiSurname <String>]`: The phonetic Japanese surname (last name)  of the contact.
+    - `[YomiCompanyName <String>]`: 
+    - `[YomiGivenName <String>]`: 
+    - `[YomiSurname <String>]`: 
   - `[DisplayName <String>]`: The folder's display name.
   - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the contactFolder. Read-only. Nullable.
   - `[ParentFolderId <String>]`: The ID of the folder's parent folder.
@@ -423,19 +428,19 @@ CHILDFOLDERS <IMicrosoftGraphContactFolder[]>: The collection of child folders i
     - `[Gender <String>]`: The contact's gender.
     - `[Generation <String>]`: The contact's generation.
     - `[GivenName <String>]`: The contact's given name.
-    - `[ImAddresses <String[]>]`: The contact's instant messaging (IM) addresses.
-    - `[Initials <String>]`: The contact's initials.
+    - `[ImAddresses <String[]>]`: 
+    - `[Initials <String>]`: 
     - `[IsFavorite <Boolean?>]`: 
-    - `[JobTitle <String>]`: The contact's job title.
-    - `[Manager <String>]`: The name of the contact's manager.
-    - `[MiddleName <String>]`: The contact's middle name.
+    - `[JobTitle <String>]`: 
+    - `[Manager <String>]`: 
+    - `[MiddleName <String>]`: 
     - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
       - `[Id <String>]`: Read-only.
       - `[Value <String[]>]`: A collection of property values.
-    - `[NickName <String>]`: The contact's nickname.
-    - `[OfficeLocation <String>]`: The location of the contact's office.
-    - `[ParentFolderId <String>]`: The ID of the contact's parent folder.
-    - `[PersonalNotes <String>]`: The user's notes about the contact.
+    - `[NickName <String>]`: 
+    - `[OfficeLocation <String>]`: 
+    - `[ParentFolderId <String>]`: 
+    - `[PersonalNotes <String>]`: 
     - `[Phones <IMicrosoftGraphPhone[]>]`: 
       - `[Number <String>]`: The phone number.
       - `[Type <String>]`: phoneType
@@ -452,21 +457,21 @@ CHILDFOLDERS <IMicrosoftGraphContactFolder[]>: The collection of child folders i
       - `[State <String>]`: The state.
       - `[Street <String>]`: The street.
       - `[Type <String>]`: physicalAddressType
-    - `[Profession <String>]`: The contact's profession.
+    - `[Profession <String>]`: 
     - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the contact. Read-only. Nullable.
       - `[Id <String>]`: Read-only.
       - `[Value <String>]`: A property value.
-    - `[SpouseName <String>]`: The name of the contact's spouse/partner.
-    - `[Surname <String>]`: The contact's surname.
-    - `[Title <String>]`: The contact's title.
+    - `[SpouseName <String>]`: 
+    - `[Surname <String>]`: 
+    - `[Title <String>]`: 
     - `[Websites <IMicrosoftGraphWebsite[]>]`: 
       - `[Address <String>]`: The URL of the website.
       - `[DisplayName <String>]`: The display name of the web site.
       - `[Type <String>]`: websiteType
     - `[WeddingAnniversary <DateTime?>]`: 
-    - `[YomiCompanyName <String>]`: The phonetic Japanese company name of the contact.
-    - `[YomiGivenName <String>]`: The phonetic Japanese given name (first name) of the contact.
-    - `[YomiSurname <String>]`: The phonetic Japanese surname (last name)  of the contact.
+    - `[YomiCompanyName <String>]`: 
+    - `[YomiGivenName <String>]`: 
+    - `[YomiSurname <String>]`: 
   - `[DisplayName <String>]`: The folder's display name.
   - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the contactFolder. Read-only. Nullable.
   - `[ParentFolderId <String>]`: The ID of the folder's parent folder.
@@ -505,19 +510,19 @@ CONTACTS <IMicrosoftGraphContact1[]>: The contacts in the folder. Navigation pro
   - `[Gender <String>]`: The contact's gender.
   - `[Generation <String>]`: The contact's generation.
   - `[GivenName <String>]`: The contact's given name.
-  - `[ImAddresses <String[]>]`: The contact's instant messaging (IM) addresses.
-  - `[Initials <String>]`: The contact's initials.
+  - `[ImAddresses <String[]>]`: 
+  - `[Initials <String>]`: 
   - `[IsFavorite <Boolean?>]`: 
-  - `[JobTitle <String>]`: The contact's job title.
-  - `[Manager <String>]`: The name of the contact's manager.
-  - `[MiddleName <String>]`: The contact's middle name.
+  - `[JobTitle <String>]`: 
+  - `[Manager <String>]`: 
+  - `[MiddleName <String>]`: 
   - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
     - `[Id <String>]`: Read-only.
     - `[Value <String[]>]`: A collection of property values.
-  - `[NickName <String>]`: The contact's nickname.
-  - `[OfficeLocation <String>]`: The location of the contact's office.
-  - `[ParentFolderId <String>]`: The ID of the contact's parent folder.
-  - `[PersonalNotes <String>]`: The user's notes about the contact.
+  - `[NickName <String>]`: 
+  - `[OfficeLocation <String>]`: 
+  - `[ParentFolderId <String>]`: 
+  - `[PersonalNotes <String>]`: 
   - `[Phones <IMicrosoftGraphPhone[]>]`: 
     - `[Number <String>]`: The phone number.
     - `[Type <String>]`: phoneType
@@ -534,20 +539,42 @@ CONTACTS <IMicrosoftGraphContact1[]>: The contacts in the folder. Navigation pro
     - `[State <String>]`: The state.
     - `[Street <String>]`: The street.
     - `[Type <String>]`: physicalAddressType
-  - `[Profession <String>]`: The contact's profession.
+  - `[Profession <String>]`: 
   - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the contact. Read-only. Nullable.
     - `[Id <String>]`: Read-only.
     - `[Value <String>]`: A property value.
-  - `[SpouseName <String>]`: The name of the contact's spouse/partner.
-  - `[Surname <String>]`: The contact's surname.
-  - `[Title <String>]`: The contact's title.
+  - `[SpouseName <String>]`: 
+  - `[Surname <String>]`: 
+  - `[Title <String>]`: 
   - `[Websites <IMicrosoftGraphWebsite[]>]`: 
     - `[Address <String>]`: The URL of the website.
     - `[DisplayName <String>]`: The display name of the web site.
     - `[Type <String>]`: websiteType
   - `[WeddingAnniversary <DateTime?>]`: 
-  - `[YomiCompanyName <String>]`: The phonetic Japanese company name of the contact.
-  - `[YomiGivenName <String>]`: The phonetic Japanese given name (first name) of the contact.
+  - `[YomiCompanyName <String>]`: 
+  - `[YomiGivenName <String>]`: 
+  - `[YomiSurname <String>]`: 
+
+INPUTOBJECT <IPersonalContactsIdentity>: Identity Parameter
+  - `[ContactFolderId <String>]`: key: id of contactFolder
+  - `[ContactFolderId1 <String>]`: key: id of contactFolder
+  - `[ContactId <String>]`: key: id of contact
+  - `[ExtensionId <String>]`: key: id of extension
+  - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
+  - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
+  - `[UserId <String>]`: key: id of user
+
+MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>: The collection of multi-value extended properties defined for the contactFolder. Read-only. Nullable.
+  - `[Id <String>]`: Read-only.
+  - `[Value <String[]>]`: A collection of property values.
+
+SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>: The collection of single-value extended properties defined for the contactFolder. Read-only. Nullable.
+  - `[Id <String>]`: Read-only.
+  - `[Value <String>]`: A property value.
+
+## RELATED LINKS
+
+ame (first name) of the contact.
   - `[YomiSurname <String>]`: The phonetic Japanese surname (last name)  of the contact.
 
 INPUTOBJECT <IPersonalContactsIdentity>: Identity Parameter

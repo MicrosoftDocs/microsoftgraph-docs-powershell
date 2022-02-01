@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementwindowinformationprotectionapplearningsummary
 schema: 2.0.0
@@ -12,17 +12,17 @@ The windows information protection app learning summaries.
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgDeviceManagementWindowInformationProtectionAppLearningSummary [-AdditionalProperties <Hashtable>]
- [-ApplicationName <String>] [-ApplicationType <String>] [-DeviceCount <Int32>] [-Id <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ApplicationName <String>] [-ApplicationType <String>] [-DeviceCount <Int32>] [-Id <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
 New-MgDeviceManagementWindowInformationProtectionAppLearningSummary
- -BodyParameter <IMicrosoftGraphWindowsInformationProtectionAppLearningSummary> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphWindowsInformationProtectionAppLearningSummary> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -37,8 +37,8 @@ The windows information protection app learning summaries.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -52,8 +52,8 @@ Accept wildcard characters: False
 Application Name
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -64,11 +64,11 @@ Accept wildcard characters: False
 ```
 
 ### -ApplicationType
-applicationType
+Possible types of Application
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -80,11 +80,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Windows Information Protection AppLearning Summary entity.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsInformationProtectionAppLearningSummary
-Parameter Sets: Create1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionAppLearningSummary
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -98,8 +98,8 @@ Accept wildcard characters: False
 Device Count
 
 ```yaml
-Type: Int32
-Parameter Sets: CreateExpanded1
+Type: System.Int32
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -113,8 +113,8 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -144,7 +144,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -161,9 +161,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionAppLearningSummary
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionAppLearningSummary
+
 ## NOTES
 
 ALIASES
@@ -177,7 +179,8 @@ BODYPARAMETER <IMicrosoftGraphWindowsInformationProtectionAppLearningSummary>: W
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
   - `[ApplicationName <String>]`: Application Name
-  - `[ApplicationType <String>]`: applicationType
+  - `[ApplicationType <String>]`: Possible types of Application
   - `[DeviceCount <Int32?>]`: Device Count
 
 ## RELATED LINKS
+

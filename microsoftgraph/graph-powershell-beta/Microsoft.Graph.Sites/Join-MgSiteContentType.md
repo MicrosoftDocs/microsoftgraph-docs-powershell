@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Sites-help.xml
+external help file:
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/join-mgsitecontenttype
 schema: 2.0.0
@@ -12,30 +12,30 @@ Invoke action associateWithHubSites
 
 ## SYNTAX
 
-### AssociateExpanded (Default)
+### AssociateExpanded1 (Default)
 ```
 Join-MgSiteContentType -ContentTypeId <String> -SiteId <String> [-AdditionalProperties <Hashtable>]
- [-HubSiteUrls <String[]>] [-PropagateToExistingLists] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-HubSiteUrls <String[]>] [-PropagateToExistingLists] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Associate
+### Associate1
 ```
 Join-MgSiteContentType -ContentTypeId <String> -SiteId <String>
  -BodyParameter <IPaths1IvodsgSitesSiteIdContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### AssociateViaIdentityExpanded
-```
-Join-MgSiteContentType -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
- [-HubSiteUrls <String[]>] [-PropagateToExistingLists] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### AssociateViaIdentity
+### AssociateViaIdentity1
 ```
 Join-MgSiteContentType -InputObject <ISitesIdentity>
  -BodyParameter <IPaths1IvodsgSitesSiteIdContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### AssociateViaIdentityExpanded1
+```
+Join-MgSiteContentType -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
+ [-HubSiteUrls <String[]>] [-PropagateToExistingLists] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,8 +49,8 @@ Invoke action associateWithHubSites
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: AssociateExpanded, AssociateViaIdentityExpanded
+Type: System.Collections.Hashtable
+Parameter Sets: AssociateExpanded1, AssociateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -62,11 +62,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1IvodsgSitesSiteIdContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Associate, AssociateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IPaths1IvodsgSitesSiteIdContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Associate1, AssociateViaIdentity1
 Aliases:
 
 Required: True
@@ -80,8 +80,8 @@ Accept wildcard characters: False
 key: id of contentType
 
 ```yaml
-Type: String
-Parameter Sets: AssociateExpanded, Associate
+Type: System.String
+Parameter Sets: Associate1, AssociateExpanded1
 Aliases:
 
 Required: True
@@ -95,8 +95,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
-Parameter Sets: AssociateExpanded, AssociateViaIdentityExpanded
+Type: System.String[]
+Parameter Sets: AssociateExpanded1, AssociateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -108,11 +108,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISitesIdentity
-Parameter Sets: AssociateViaIdentityExpanded, AssociateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ISitesIdentity
+Parameter Sets: AssociateViaIdentity1, AssociateViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -141,8 +141,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: AssociateExpanded, AssociateViaIdentityExpanded
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: AssociateExpanded1, AssociateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -156,8 +156,8 @@ Accept wildcard characters: False
 key: id of site
 
 ```yaml
-Type: String
-Parameter Sets: AssociateExpanded, Associate
+Type: System.String
+Parameter Sets: Associate1, AssociateExpanded1
 Aliases:
 
 Required: True
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -187,7 +187,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -204,10 +204,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1IvodsgSitesSiteIdContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -240,11 +243,19 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[OnenoteSectionId <String>]`: key: id of onenoteSection
   - `[Path <String>]`: Usage: path={path}
   - `[PermissionId <String>]`: key: id of permission
+  - `[RelationId <String>]`: key: id of relation
+  - `[RichLongRunningOperationId <String>]`: key: id of richLongRunningOperation
+  - `[SetId <String>]`: key: id of set
+  - `[SetId1 <String>]`: key: id of set
   - `[SiteId <String>]`: key: id of site
   - `[SiteId1 <String>]`: key: id of site
   - `[SitePageId <String>]`: key: id of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime={startDateTime}
+  - `[StoreId <String>]`: key: id of store
   - `[SubscriptionId <String>]`: key: id of subscription
+  - `[TermId <String>]`: key: id of term
+  - `[TermId1 <String>]`: key: id of term
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Applications-help.xml
+external help file:
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/new-mgserviceprincipal
 schema: 2.0.0
@@ -14,17 +14,19 @@ Add new entity to servicePrincipals
 
 ### CreateExpanded (Default)
 ```
-New-MgServicePrincipal [-AccountEnabled] [-AddIns <IMicrosoftGraphAddIn[]>] [-AdditionalProperties <Hashtable>]
- [-AlternativeNames <String[]>] [-AppDescription <String>] [-AppDisplayName <String>] [-AppId <String>]
- [-AppOwnerOrganizationId <String>] [-AppRoleAssignedTo <IMicrosoftGraphAppRoleAssignment1[]>]
- [-AppRoleAssignmentRequired] [-AppRoleAssignments <IMicrosoftGraphAppRoleAssignment1[]>]
- [-AppRoles <IMicrosoftGraphAppRole[]>] [-ApplicationTemplateId <String>]
+New-MgServicePrincipal [-AccountEnabled] [-AddIns <IMicrosoftGraphAddIn[]>]
+ [-AdditionalProperties <Hashtable>] [-AlternativeNames <String[]>] [-AppDescription <String>]
+ [-AppDisplayName <String>] [-AppId <String>] [-ApplicationTemplateId <String>]
+ [-AppManagementPolicies <IMicrosoftGraphAppManagementPolicy[]>] [-AppOwnerOrganizationId <String>]
+ [-AppRoleAssignedTo <IMicrosoftGraphAppRoleAssignment1[]>] [-AppRoleAssignmentRequired]
+ [-AppRoleAssignments <IMicrosoftGraphAppRoleAssignment1[]>] [-AppRoles <IMicrosoftGraphAppRole[]>]
  [-ClaimsMappingPolicies <IMicrosoftGraphClaimsMappingPolicy1[]>]
- [-CreatedObjects <IMicrosoftGraphDirectoryObject[]>]
+ [-CreatedObjects <IMicrosoftGraphDirectoryObject[]>] [-CustomSecurityAttributes <Hashtable>]
  [-DelegatedPermissionClassifications <IMicrosoftGraphDelegatedPermissionClassification[]>]
  [-DeletedDateTime <DateTime>] [-Description <String>] [-DisabledByMicrosoftStatus <String>]
  [-DisplayName <String>] [-Endpoints <IMicrosoftGraphEndpoint[]>] [-ErrorUrl <String>]
- [-HomeRealmDiscoveryPolicies <IMicrosoftGraphHomeRealmDiscoveryPolicy1[]>] [-Homepage <String>] [-Id <String>]
+ [-FederatedIdentityCredentials <IMicrosoftGraphFederatedIdentityCredential[]>] [-Homepage <String>]
+ [-HomeRealmDiscoveryPolicies <IMicrosoftGraphHomeRealmDiscoveryPolicy1[]>] [-Id <String>]
  [-Info <IMicrosoftGraphInformationalUrl>] [-KeyCredentials <IMicrosoftGraphKeyCredential[]>]
  [-LicenseDetails <IMicrosoftGraphLicenseDetails[]>] [-LoginUrl <String>] [-LogoutUrl <String>]
  [-MemberOf <IMicrosoftGraphDirectoryObject[]>] [-Notes <String>] [-NotificationEmailAddresses <String[]>]
@@ -33,19 +35,20 @@ New-MgServicePrincipal [-AccountEnabled] [-AddIns <IMicrosoftGraphAddIn[]>] [-Ad
  [-PasswordCredentials <IMicrosoftGraphPasswordCredential[]>]
  [-PasswordSingleSignOnSettings <IMicrosoftGraphPasswordSingleSignOnSettings>]
  [-PreferredSingleSignOnMode <String>] [-PreferredTokenSigningKeyEndDateTime <DateTime>]
- [-PreferredTokenSigningKeyThumbprint <String>] [-PublishedPermissionScopes <IMicrosoftGraphPermissionScope[]>]
- [-PublisherName <String>] [-ReplyUrls <String[]>] [-SamlMetadataUrl <String>]
+ [-PreferredTokenSigningKeyThumbprint <String>]
+ [-PublishedPermissionScopes <IMicrosoftGraphPermissionScope[]>] [-PublisherName <String>]
+ [-ReplyUrls <String[]>] [-SamlMetadataUrl <String>]
  [-SamlSingleSignOnSettings <IMicrosoftGraphSamlSingleSignOnSettings>] [-ServicePrincipalNames <String[]>]
  [-ServicePrincipalType <String>] [-SignInAudience <String>]
  [-Synchronization <IMicrosoftGraphSynchronization>] [-Tags <String[]>] [-TokenEncryptionKeyId <String>]
  [-TokenIssuancePolicies <IMicrosoftGraphTokenIssuancePolicy1[]>]
  [-TokenLifetimePolicies <IMicrosoftGraphTokenLifetimePolicy1[]>]
- [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgServicePrincipal -BodyParameter <IMicrosoftGraphServicePrincipal1> [-WhatIf] [-Confirm]
+New-MgServicePrincipal -BodyParameter <IMicrosoftGraphServicePrincipal1> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -54,13 +57,31 @@ Add new entity to servicePrincipals
 
 ## EXAMPLES
 
+### Example 1: Create a new service principal object
+```powershell
+$ServicePrincipalID=@{
+  "AppId" = "fc876dd1-6bcb-4304-b9b6-18ddf1526b62"
+  }
+New-MgServicePrincipal -BodyParameter $ServicePrincipalId | 
+  Format-List id, DisplayName, AppId, SignInAudience
+
+Id             : ac483a5f-f291-4499-8a62-058547724579
+DisplayName    : Example App
+AppId          : ffdf268a-2fe2-49e1-8cd7-66ecb61641ec
+SignInAudience : AzureADandPersonalMicrosoftAccount
+```
+
+In this example, the first command defines the service principal object in the variable $ServiceprincipalId.
+The second command creates a new service principal object.
+
 ## PARAMETERS
 
 ### -AccountEnabled
 true if the service principal account is enabled; otherwise, false.
+Supports $filter (eq, ne, not, in).
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -75,10 +96,10 @@ Accept wildcard characters: False
 Defines custom behavior that a consuming service can use to call an app in specific contexts.
 For example, applications that can render file streams may set the addIns property for its 'FileHandler' functionality.
 This will let services like Microsoft 365 call the application in the context of a document the user is working on.
-To construct, see NOTES section for ADDINS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ADDINS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAddIn[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAddIn[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -93,7 +114,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -106,9 +127,10 @@ Accept wildcard characters: False
 
 ### -AlternativeNames
 Used to retrieve service principals by subscription, identify resource group and full resource ids for managed identities.
+Supports $filter (eq, not, ge, le, startsWith).
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -123,7 +145,7 @@ Accept wildcard characters: False
 The description exposed by the associated application.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -138,7 +160,7 @@ Accept wildcard characters: False
 The display name exposed by the associated application.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -151,9 +173,10 @@ Accept wildcard characters: False
 
 ### -AppId
 The unique identifier for the associated application (its appId property).
+Supports $filter (eq, ne, not, in, startsWith).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -167,9 +190,26 @@ Accept wildcard characters: False
 ### -ApplicationTemplateId
 Unique identifier of the applicationTemplate that the servicePrincipal was created from.
 Read-only.
+Supports $filter (eq, ne, NOT, startsWith).
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AppManagementPolicies
+The appManagementPolicy applied to this service principal.
+To construct, please use Get-Help -Online and see NOTES section for APPMANAGEMENTPOLICIES properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppManagementPolicy[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -182,10 +222,10 @@ Accept wildcard characters: False
 
 ### -AppOwnerOrganizationId
 Contains the tenant id where the application is registered.
-This is applicable only to service principals backed by applications.
+This is applicable only to service principals backed by applications.Supports $filter (eq, ne, NOT, ge, le).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -197,11 +237,11 @@ Accept wildcard characters: False
 ```
 
 ### -AppRoleAssignedTo
-App role assignments for this app or service, granted to users, groups, and other service principals.
-To construct, see NOTES section for APPROLEASSIGNEDTO properties and create a hash table.
+App role assignments for this app or service, granted to users, groups, and other service principals.Supports $expand.
+To construct, please use Get-Help -Online and see NOTES section for APPROLEASSIGNEDTO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAppRoleAssignment1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppRoleAssignment1[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -216,9 +256,10 @@ Accept wildcard characters: False
 Specifies whether users or other service principals need to be granted an app role assignment for this service principal before users can sign in or apps can get tokens.
 The default value is false.
 Not nullable.
+Supports $filter (eq, ne, NOT).
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -231,10 +272,11 @@ Accept wildcard characters: False
 
 ### -AppRoleAssignments
 App role assignment for another app or service, granted to this service principal.
-To construct, see NOTES section for APPROLEASSIGNMENTS properties and create a hash table.
+Supports $expand.
+To construct, please use Get-Help -Online and see NOTES section for APPROLEASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAppRoleAssignment1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppRoleAssignment1[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -249,10 +291,10 @@ Accept wildcard characters: False
 The roles exposed by the application which this service principal represents.
 For more information see the appRoles property definition on the application entity.
 Not nullable.
-To construct, see NOTES section for APPROLES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for APPROLES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAppRole[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppRole[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -264,12 +306,11 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-Represents an Azure Active Directory object.
-The directoryObject type is the base type for many other directory entity types.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+servicePrincipal
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphServicePrincipal1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServicePrincipal1
 Parameter Sets: Create
 Aliases:
 
@@ -282,10 +323,11 @@ Accept wildcard characters: False
 
 ### -ClaimsMappingPolicies
 The claimsMappingPolicies assigned to this service principal.
-To construct, see NOTES section for CLAIMSMAPPINGPOLICIES properties and create a hash table.
+Supports $expand.
+To construct, please use Get-Help -Online and see NOTES section for CLAIMSMAPPINGPOLICIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphClaimsMappingPolicy1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphClaimsMappingPolicy1[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -300,10 +342,25 @@ Accept wildcard characters: False
 Directory objects created by this service principal.
 Read-only.
 Nullable.
-To construct, see NOTES section for CREATEDOBJECTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for CREATEDOBJECTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CustomSecurityAttributes
+customSecurityAttributeValue
+
+```yaml
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -316,10 +373,11 @@ Accept wildcard characters: False
 
 ### -DelegatedPermissionClassifications
 The permission classifications for delegated permissions exposed by the app that this service principal represents.
-To construct, see NOTES section for DELEGATEDPERMISSIONCLASSIFICATIONS properties and create a hash table.
+Supports $expand.
+To construct, please use Get-Help -Online and see NOTES section for DELEGATEDPERMISSIONCLASSIFICATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDelegatedPermissionClassification[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDelegatedPermissionClassification[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -334,7 +392,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -349,9 +407,10 @@ Accept wildcard characters: False
 Free text field to provide an internal end-user facing description of the service principal.
 End-user portals such MyApps will display the application description in this field.
 The maximum allowed size is 1024 characters.
+Supports $filter (eq, ne, not, ge, le, startsWith) and $search.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -365,9 +424,10 @@ Accept wildcard characters: False
 ### -DisabledByMicrosoftStatus
 Specifies whether Microsoft has disabled the registered application.
 Possible values are: null (default value), NotDisabled, and DisabledDueToViolationOfServicesAgreement (reasons may include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement).
+Supports $filter (eq, ne, not).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -380,9 +440,10 @@ Accept wildcard characters: False
 
 ### -DisplayName
 The display name for the service principal.
+Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderBy.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -396,10 +457,10 @@ Accept wildcard characters: False
 ### -Endpoints
 Endpoints available for discovery.
 Services like Sharepoint populate this property with a tenant specific SharePoint endpoints that other applications can discover and use in their experiences.
-To construct, see NOTES section for ENDPOINTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ENDPOINTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEndpoint[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEndpoint[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -415,7 +476,23 @@ Deprecated.
 Don't use.
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -FederatedIdentityCredentials
+.
+To construct, please use Get-Help -Online and see NOTES section for FEDERATEDIDENTITYCREDENTIALS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFederatedIdentityCredential[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -430,7 +507,7 @@ Accept wildcard characters: False
 Home page or landing page of the application.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -443,10 +520,11 @@ Accept wildcard characters: False
 
 ### -HomeRealmDiscoveryPolicies
 The homeRealmDiscoveryPolicies assigned to this service principal.
-To construct, see NOTES section for HOMEREALMDISCOVERYPOLICIES properties and create a hash table.
+Supports $expand.
+To construct, please use Get-Help -Online and see NOTES section for HOMEREALMDISCOVERYPOLICIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphHomeRealmDiscoveryPolicy1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphHomeRealmDiscoveryPolicy1[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -461,7 +539,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -474,10 +552,10 @@ Accept wildcard characters: False
 
 ### -Info
 informationalUrl
-To construct, see NOTES section for INFO properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInformationalUrl
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationalUrl
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -491,10 +569,11 @@ Accept wildcard characters: False
 ### -KeyCredentials
 The collection of key credentials associated with the service principal.
 Not nullable.
-To construct, see NOTES section for KEYCREDENTIALS properties and create a hash table.
+Supports $filter (eq, not, ge, le).
+To construct, please use Get-Help -Online and see NOTES section for KEYCREDENTIALS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphKeyCredential[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphKeyCredential[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -507,10 +586,10 @@ Accept wildcard characters: False
 
 ### -LicenseDetails
 .
-To construct, see NOTES section for LICENSEDETAILS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for LICENSEDETAILS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphLicenseDetails[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLicenseDetails[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -528,7 +607,7 @@ When blank, Azure AD performs IdP-initiated sign-on for applications configured 
 The user launches the application from Microsoft 365, the Azure AD My Apps, or the Azure AD SSO URL.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -543,7 +622,7 @@ Accept wildcard characters: False
 Specifies the URL that will be used by Microsoft's authorization service to logout an user using OpenId Connect front-channel, back-channel or SAML logout protocols.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -558,10 +637,11 @@ Accept wildcard characters: False
 Roles that this service principal is a member of.
 HTTP Methods: GET Read-only.
 Nullable.
-To construct, see NOTES section for MEMBEROF properties and create a hash table.
+Supports $expand.
+To construct, please use Get-Help -Online and see NOTES section for MEMBEROF properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -577,7 +657,7 @@ Free text field to capture information about the service principal, typically us
 Maximum allowed size is 1024 characters.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -593,7 +673,7 @@ Specifies the list of email addresses where Azure AD sends a notification when t
 This is only for the certificates used to sign the SAML token issued for Azure AD Gallery applications.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -608,10 +688,10 @@ Accept wildcard characters: False
 Delegated permission grants authorizing this service principal to access an API on behalf of a signed-in user.
 Read-only.
 Nullable.
-To construct, see NOTES section for OAUTH2PERMISSIONGRANTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for OAUTH2PERMISSIONGRANTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOAuth2PermissionGrant1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOAuth2PermissionGrant1[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -626,10 +706,11 @@ Accept wildcard characters: False
 Directory objects that are owned by this service principal.
 Read-only.
 Nullable.
-To construct, see NOTES section for OWNEDOBJECTS properties and create a hash table.
+Supports $expand.
+To construct, please use Get-Help -Online and see NOTES section for OWNEDOBJECTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -645,10 +726,11 @@ Directory objects that are owners of this servicePrincipal.
 The owners are a set of non-admin users or servicePrincipals who are allowed to modify this object.
 Read-only.
 Nullable.
-To construct, see NOTES section for OWNERS properties and create a hash table.
+Supports $expand.
+To construct, please use Get-Help -Online and see NOTES section for OWNERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -662,10 +744,10 @@ Accept wildcard characters: False
 ### -PasswordCredentials
 The collection of password credentials associated with the service principal.
 Not nullable.
-To construct, see NOTES section for PASSWORDCREDENTIALS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for PASSWORDCREDENTIALS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPasswordCredential[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPasswordCredential[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -678,10 +760,10 @@ Accept wildcard characters: False
 
 ### -PasswordSingleSignOnSettings
 passwordSingleSignOnSettings
-To construct, see NOTES section for PASSWORDSINGLESIGNONSETTINGS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for PASSWORDSINGLESIGNONSETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPasswordSingleSignOnSettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPasswordSingleSignOnSettings
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -698,7 +780,7 @@ Azure AD uses the preferred single sign-on mode to launch the application from M
 The supported values are password, saml, notSupported, and oidc.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -713,7 +795,7 @@ Accept wildcard characters: False
 Specifies the expiration date of the keyCredential used for token signing, marked by preferredTokenSigningKeyThumbprint.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -730,7 +812,7 @@ Do not write or otherwise rely on this property.
 May be removed in future versions.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -745,10 +827,10 @@ Accept wildcard characters: False
 The delegated permissions exposed by the application.
 For more information see the oauth2PermissionScopes property on the application entity's api property.
 Not nullable.
-To construct, see NOTES section for PUBLISHEDPERMISSIONSCOPES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for PUBLISHEDPERMISSIONSCOPES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPermissionScope[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermissionScope[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -763,7 +845,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -779,7 +861,7 @@ The URLs that user tokens are sent to for sign in with the associated applicatio
 Not nullable.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -794,7 +876,7 @@ Accept wildcard characters: False
 The url where the service exposes SAML metadata for federation.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -807,10 +889,10 @@ Accept wildcard characters: False
 
 ### -SamlSingleSignOnSettings
 samlSingleSignOnSettings
-To construct, see NOTES section for SAMLSINGLESIGNONSETTINGS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SAMLSINGLESIGNONSETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSamlSingleSignOnSettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSamlSingleSignOnSettings
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -827,9 +909,10 @@ Additional values can be added to hybrid applications.
 These values can be used to identify the permissions exposed by this app within Azure AD.
 For example,Client apps can specify a resource URI which is based on the values of this property to acquire an access token, which is the URI returned in the 'aud' claim.The any operator is required for filter expressions on multi-valued properties.
 Not nullable.
+Supports $filter (eq, not, ge, le, startsWith).
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -845,9 +928,10 @@ Identifies if the service principal represents an application or a managed ident
 This is set by Azure AD internally.
 For a service principal that represents an application this is set as Application.
 For a service principal that represent a managed identity this is set as ManagedIdentity.
+The SocialIdp type is for internal use.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -861,10 +945,10 @@ Accept wildcard characters: False
 ### -SignInAudience
 Specifies the Microsoft accounts that are supported for the current application.
 Read-only.
-Supported values are:AzureADMyOrg: Users with a Microsoft work or school account in my organization's Azure AD tenant (single-tenant).AzureADMultipleOrgs: Users with a Microsoft work or school account in any organization's Azure AD tenant (multi-tenant).AzureADandPersonalMicrosoftAccount: Users with a personal Microsoft account, or a work or school account in any organization's Azure AD tenant.PersonalMicrosoftAccount: Users with a personal Microsoft account only.
+Supported values are:AzureADMyOrg: Users with a Microsoft work or school account in my organization’s Azure AD tenant (single-tenant).AzureADMultipleOrgs: Users with a Microsoft work or school account in any organization’s Azure AD tenant (multi-tenant).AzureADandPersonalMicrosoftAccount: Users with a personal Microsoft account, or a work or school account in any organization’s Azure AD tenant.PersonalMicrosoftAccount: Users with a personal Microsoft account only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -877,10 +961,10 @@ Accept wildcard characters: False
 
 ### -Synchronization
 synchronization
-To construct, see NOTES section for SYNCHRONIZATION properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SYNCHRONIZATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSynchronization
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSynchronization
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -894,9 +978,10 @@ Accept wildcard characters: False
 ### -Tags
 Custom strings that can be used to categorize and identify the service principal.
 Not nullable.
+Supports $filter (eq, not, ge, le, startsWith).
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -913,7 +998,7 @@ When configured, Azure AD issues tokens for this application encrypted using the
 The application code that receives the encrypted token must use the matching private key to decrypt the token before it can be used for the signed-in user.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -926,10 +1011,11 @@ Accept wildcard characters: False
 
 ### -TokenIssuancePolicies
 The tokenIssuancePolicies assigned to this service principal.
-To construct, see NOTES section for TOKENISSUANCEPOLICIES properties and create a hash table.
+Supports $expand.
+To construct, please use Get-Help -Online and see NOTES section for TOKENISSUANCEPOLICIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTokenIssuancePolicy1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTokenIssuancePolicy1[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -942,10 +1028,11 @@ Accept wildcard characters: False
 
 ### -TokenLifetimePolicies
 The tokenLifetimePolicies assigned to this service principal.
-To construct, see NOTES section for TOKENLIFETIMEPOLICIES properties and create a hash table.
+Supports $expand.
+To construct, please use Get-Help -Online and see NOTES section for TOKENLIFETIMEPOLICIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTokenLifetimePolicy1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTokenLifetimePolicy1[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -958,10 +1045,10 @@ Accept wildcard characters: False
 
 ### -TransitiveMemberOf
 .
-To construct, see NOTES section for TRANSITIVEMEMBEROF properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for TRANSITIVEMEMBEROF properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -976,7 +1063,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -992,7 +1079,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -1009,9 +1096,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServicePrincipal1
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServicePrincipal1
+
 ## NOTES
 
 ALIASES
@@ -1028,7 +1117,27 @@ ADDINS <IMicrosoftGraphAddIn[]>: Defines custom behavior that a consuming servic
     - `[Value <String>]`: Value.
   - `[Type <String>]`: 
 
-APPROLEASSIGNEDTO <IMicrosoftGraphAppRoleAssignment1[]>: App role assignments for this app or service, granted to users, groups, and other service principals.
+APPMANAGEMENTPOLICIES <IMicrosoftGraphAppManagementPolicy[]>: The appManagementPolicy applied to this service principal.
+  - `[Description <String>]`: Description for this policy. Required.
+  - `[DisplayName <String>]`: Display name for this policy. Required.
+  - `[DeletedDateTime <DateTime?>]`: 
+  - `[Id <String>]`: Read-only.
+  - `[AppliesTo <IMicrosoftGraphDirectoryObject[]>]`: Collection of application and service principals to which a policy is applied.
+    - `[Id <String>]`: Read-only.
+    - `[DeletedDateTime <DateTime?>]`: 
+  - `[IsEnabled <Boolean?>]`: Denotes whether the policy is enabled.
+  - `[Restrictions <IMicrosoftGraphAppManagementConfiguration>]`: appManagementConfiguration
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration[]>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
+      - `[MaxLifetime <TimeSpan?>]`: 
+      - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Timestamp when the policy is enforced for all apps created on or after the specified date. For existing applications, the enforcement date would be back dated. To apply to all applications regardless of their creation date, this property would be null. Nullable.
+      - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
+    - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration[]>]`: Collection of password restrictions settings to be applied to an application or service principal.
+      - `[MaxLifetime <TimeSpan?>]`: 
+      - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Enforces the policy for an app created on or after the enforcement date. For existing applications, the enforcement date would be back dated. To apply to all applications, enforcement datetime would be null.
+      - `[RestrictionType <String>]`: appCredentialRestrictionType
+
+APPROLEASSIGNEDTO <IMicrosoftGraphAppRoleAssignment1[]>: App role assignments for this app or service, granted to users, groups, and other service principals.Supports $expand.
   - `[Id <String>]`: Read-only.
   - `[AppRoleId <String>]`: The identifier (id) for the app role which is assigned to the principal. This app role must be exposed in the appRoles property on the resource application's service principal (resourceId). If the resource application has not declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles. Required on create.
   - `[CreationTimestamp <DateTime?>]`: The time when the app role assignment was created.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
@@ -1038,7 +1147,7 @@ APPROLEASSIGNEDTO <IMicrosoftGraphAppRoleAssignment1[]>: App role assignments fo
   - `[ResourceDisplayName <String>]`: The display name of the resource app's service principal to which the assignment is made.
   - `[ResourceId <String>]`: The unique identifier (id) for the resource service principal for which the assignment is made. Required on create. Supports $filter (eq only).
 
-APPROLEASSIGNMENTS <IMicrosoftGraphAppRoleAssignment1[]>: App role assignment for another app or service, granted to this service principal.
+APPROLEASSIGNMENTS <IMicrosoftGraphAppRoleAssignment1[]>: App role assignment for another app or service, granted to this service principal. Supports $expand.
   - `[Id <String>]`: Read-only.
   - `[AppRoleId <String>]`: The identifier (id) for the app role which is assigned to the principal. This app role must be exposed in the appRoles property on the resource application's service principal (resourceId). If the resource application has not declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles. Required on create.
   - `[CreationTimestamp <DateTime?>]`: The time when the app role assignment was created.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
@@ -1057,23 +1166,42 @@ APPROLES <IMicrosoftGraphAppRole[]>: The roles exposed by the application which 
   - `[Origin <String>]`: Specifies if the app role is defined on the application object or on the servicePrincipal entity. Must not be included in any POST or PATCH requests. Read-only.
   - `[Value <String>]`: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal. Must not exceed 120 characters in length. Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ [ ] ^ + _  {  } ~, as well as characters in the ranges 0-9, A-Z and a-z. Any other character, including the space character, are not allowed. May not begin with ..
 
-BODYPARAMETER <IMicrosoftGraphServicePrincipal1>: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
+BODYPARAMETER <IMicrosoftGraphServicePrincipal1>: servicePrincipal
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeletedDateTime <DateTime?>]`: 
   - `[Id <String>]`: Read-only.
-  - `[AccountEnabled <Boolean?>]`: true if the service principal account is enabled; otherwise, false.
+  - `[AccountEnabled <Boolean?>]`: true if the service principal account is enabled; otherwise, false. Supports $filter (eq, ne, not, in).
   - `[AddIns <IMicrosoftGraphAddIn[]>]`: Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams may set the addIns property for its 'FileHandler' functionality. This will let services like Microsoft 365 call the application in the context of a document the user is working on.
     - `[Id <String>]`: 
     - `[Properties <IMicrosoftGraphKeyValue[]>]`: 
       - `[Key <String>]`: Key.
       - `[Value <String>]`: Value.
     - `[Type <String>]`: 
-  - `[AlternativeNames <String[]>]`: Used to retrieve service principals by subscription, identify resource group and full resource ids for managed identities.
+  - `[AlternativeNames <String[]>]`: Used to retrieve service principals by subscription, identify resource group and full resource ids for managed identities. Supports $filter (eq, not, ge, le, startsWith).
   - `[AppDescription <String>]`: The description exposed by the associated application.
   - `[AppDisplayName <String>]`: The display name exposed by the associated application.
-  - `[AppId <String>]`: The unique identifier for the associated application (its appId property).
-  - `[AppOwnerOrganizationId <String>]`: Contains the tenant id where the application is registered. This is applicable only to service principals backed by applications.
-  - `[AppRoleAssignedTo <IMicrosoftGraphAppRoleAssignment1[]>]`: App role assignments for this app or service, granted to users, groups, and other service principals.
+  - `[AppId <String>]`: The unique identifier for the associated application (its appId property). Supports $filter (eq, ne, not, in, startsWith).
+  - `[AppManagementPolicies <IMicrosoftGraphAppManagementPolicy[]>]`: The appManagementPolicy applied to this service principal.
+    - `[Description <String>]`: Description for this policy. Required.
+    - `[DisplayName <String>]`: Display name for this policy. Required.
+    - `[DeletedDateTime <DateTime?>]`: 
+    - `[Id <String>]`: Read-only.
+    - `[AppliesTo <IMicrosoftGraphDirectoryObject[]>]`: Collection of application and service principals to which a policy is applied.
+      - `[Id <String>]`: Read-only.
+      - `[DeletedDateTime <DateTime?>]`: 
+    - `[IsEnabled <Boolean?>]`: Denotes whether the policy is enabled.
+    - `[Restrictions <IMicrosoftGraphAppManagementConfiguration>]`: appManagementConfiguration
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration[]>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
+        - `[MaxLifetime <TimeSpan?>]`: 
+        - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Timestamp when the policy is enforced for all apps created on or after the specified date. For existing applications, the enforcement date would be back dated. To apply to all applications regardless of their creation date, this property would be null. Nullable.
+        - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
+      - `[PasswordCredentials <IMicrosoftGraphPasswordCredentialConfiguration[]>]`: Collection of password restrictions settings to be applied to an application or service principal.
+        - `[MaxLifetime <TimeSpan?>]`: 
+        - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Enforces the policy for an app created on or after the enforcement date. For existing applications, the enforcement date would be back dated. To apply to all applications, enforcement datetime would be null.
+        - `[RestrictionType <String>]`: appCredentialRestrictionType
+  - `[AppOwnerOrganizationId <String>]`: Contains the tenant id where the application is registered. This is applicable only to service principals backed by applications.Supports $filter (eq, ne, NOT, ge, le).
+  - `[AppRoleAssignedTo <IMicrosoftGraphAppRoleAssignment1[]>]`: App role assignments for this app or service, granted to users, groups, and other service principals.Supports $expand.
     - `[Id <String>]`: Read-only.
     - `[AppRoleId <String>]`: The identifier (id) for the app role which is assigned to the principal. This app role must be exposed in the appRoles property on the resource application's service principal (resourceId). If the resource application has not declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles. Required on create.
     - `[CreationTimestamp <DateTime?>]`: The time when the app role assignment was created.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
@@ -1082,8 +1210,8 @@ BODYPARAMETER <IMicrosoftGraphServicePrincipal1>: Represents an Azure Active Dir
     - `[PrincipalType <String>]`: The type of the assigned principal. This can either be User, Group or ServicePrincipal. Read-only.
     - `[ResourceDisplayName <String>]`: The display name of the resource app's service principal to which the assignment is made.
     - `[ResourceId <String>]`: The unique identifier (id) for the resource service principal for which the assignment is made. Required on create. Supports $filter (eq only).
-  - `[AppRoleAssignmentRequired <Boolean?>]`: Specifies whether users or other service principals need to be granted an app role assignment for this service principal before users can sign in or apps can get tokens. The default value is false. Not nullable.
-  - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment1[]>]`: App role assignment for another app or service, granted to this service principal.
+  - `[AppRoleAssignmentRequired <Boolean?>]`: Specifies whether users or other service principals need to be granted an app role assignment for this service principal before users can sign in or apps can get tokens. The default value is false. Not nullable. Supports $filter (eq, ne, NOT).
+  - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment1[]>]`: App role assignment for another app or service, granted to this service principal. Supports $expand.
   - `[AppRoles <IMicrosoftGraphAppRole[]>]`: The roles exposed by the application which this service principal represents. For more information see the appRoles property definition on the application entity. Not nullable.
     - `[AllowedMemberTypes <String[]>]`: Specifies whether this app role can be assigned to users and groups (by setting to ['User']), to other application's (by setting to ['Application'], or both (by setting to ['User', 'Application']). App roles supporting assignment to other applications' service principals are also known as application permissions. The 'Application' value is only supported for app roles defined on application entities.
     - `[Description <String>]`: The description for the app role. This is displayed when the app role is being assigned and, if the app role functions as an application permission, during  consent experiences.
@@ -1092,26 +1220,26 @@ BODYPARAMETER <IMicrosoftGraphServicePrincipal1>: Represents an Azure Active Dir
     - `[IsEnabled <Boolean?>]`: When creating or updating an app role, this must be set to true (which is the default). To delete a role, this must first be set to false.  At that point, in a subsequent call, this role may be removed.
     - `[Origin <String>]`: Specifies if the app role is defined on the application object or on the servicePrincipal entity. Must not be included in any POST or PATCH requests. Read-only.
     - `[Value <String>]`: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal. Must not exceed 120 characters in length. Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ [ ] ^ + _  {  } ~, as well as characters in the ranges 0-9, A-Z and a-z. Any other character, including the space character, are not allowed. May not begin with ..
-  - `[ApplicationTemplateId <String>]`: Unique identifier of the applicationTemplate that the servicePrincipal was created from. Read-only.
-  - `[ClaimsMappingPolicies <IMicrosoftGraphClaimsMappingPolicy1[]>]`: The claimsMappingPolicies assigned to this service principal.
+  - `[ApplicationTemplateId <String>]`: Unique identifier of the applicationTemplate that the servicePrincipal was created from. Read-only. Supports $filter (eq, ne, NOT, startsWith).
+  - `[ClaimsMappingPolicies <IMicrosoftGraphClaimsMappingPolicy1[]>]`: The claimsMappingPolicies assigned to this service principal. Supports $expand.
     - `[AppliesTo <IMicrosoftGraphDirectoryObject[]>]`: 
-      - `[Id <String>]`: Read-only.
-      - `[DeletedDateTime <DateTime?>]`: 
     - `[Definition <String[]>]`: A string collection containing a JSON string that defines the rules and settings for a policy. The syntax for the definition differs for each derived policy type. Required.
     - `[IsOrganizationDefault <Boolean?>]`: If set to true, activates this policy. There can be many policies for the same policy type, but only one can be activated as the organization default. Optional, default value is false.
-    - `[Description <String>]`: Description for this policy.
-    - `[DisplayName <String>]`: Display name for this policy.
+    - `[Description <String>]`: Description for this policy. Required.
+    - `[DisplayName <String>]`: Display name for this policy. Required.
     - `[DeletedDateTime <DateTime?>]`: 
     - `[Id <String>]`: Read-only.
   - `[CreatedObjects <IMicrosoftGraphDirectoryObject[]>]`: Directory objects created by this service principal. Read-only. Nullable.
-  - `[DelegatedPermissionClassifications <IMicrosoftGraphDelegatedPermissionClassification[]>]`: The permission classifications for delegated permissions exposed by the app that this service principal represents.
+  - `[CustomSecurityAttributes <IMicrosoftGraphCustomSecurityAttributeValue>]`: customSecurityAttributeValue
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DelegatedPermissionClassifications <IMicrosoftGraphDelegatedPermissionClassification[]>]`: The permission classifications for delegated permissions exposed by the app that this service principal represents. Supports $expand.
     - `[Id <String>]`: Read-only.
     - `[Classification <String>]`: permissionClassificationType
     - `[PermissionId <String>]`: The unique identifier (id) for the delegated permission listed in the publishedPermissionScopes collection of the servicePrincipal. Required on create. Does not support $filter.
     - `[PermissionName <String>]`: The claim value (value) for the delegated permission listed in the publishedPermissionScopes collection of the servicePrincipal. Does not support $filter.
-  - `[Description <String>]`: Free text field to provide an internal end-user facing description of the service principal. End-user portals such MyApps will display the application description in this field. The maximum allowed size is 1024 characters.
-  - `[DisabledByMicrosoftStatus <String>]`: Specifies whether Microsoft has disabled the registered application. Possible values are: null (default value), NotDisabled, and DisabledDueToViolationOfServicesAgreement (reasons may include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement).
-  - `[DisplayName <String>]`: The display name for the service principal.
+  - `[Description <String>]`: Free text field to provide an internal end-user facing description of the service principal. End-user portals such MyApps will display the application description in this field. The maximum allowed size is 1024 characters. Supports $filter (eq, ne, not, ge, le, startsWith) and $search.
+  - `[DisabledByMicrosoftStatus <String>]`: Specifies whether Microsoft has disabled the registered application. Possible values are: null (default value), NotDisabled, and DisabledDueToViolationOfServicesAgreement (reasons may include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement).  Supports $filter (eq, ne, not).
+  - `[DisplayName <String>]`: The display name for the service principal. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderBy.
   - `[Endpoints <IMicrosoftGraphEndpoint[]>]`: Endpoints available for discovery. Services like Sharepoint populate this property with a tenant specific SharePoint endpoints that other applications can discover and use in their experiences.
     - `[DeletedDateTime <DateTime?>]`: 
     - `[Id <String>]`: Read-only.
@@ -1121,12 +1249,19 @@ BODYPARAMETER <IMicrosoftGraphServicePrincipal1>: Represents an Azure Active Dir
     - `[ProviderResourceId <String>]`: For Microsoft 365 groups, this is set to a well-known name for the resource (e.g. Yammer.FeedURL etc.). Not nullable. Read-only.
     - `[Uri <String>]`: URL of the published resource. Not nullable. Read-only.
   - `[ErrorUrl <String>]`: Deprecated. Don't use.
-  - `[HomeRealmDiscoveryPolicies <IMicrosoftGraphHomeRealmDiscoveryPolicy1[]>]`: The homeRealmDiscoveryPolicies assigned to this service principal.
+  - `[FederatedIdentityCredentials <IMicrosoftGraphFederatedIdentityCredential[]>]`: 
+    - `[Id <String>]`: Read-only.
+    - `[Audiences <String[]>]`: Lists the audiences that can appear in the external token. This field is mandatory, and defaults to 'api://AzureADTokenExchange'. It says what Microsoft identity platform should accept in the aud claim in the incoming token. This value represents Azure AD in your external identity provider and has no fixed value across identity providers - you may need to create a new application registration in your identity provider to serve as the audience of this token. Required.
+    - `[Description <String>]`: The un-validated, user-provided description of the federated identity credential. Optional.
+    - `[Issuer <String>]`: The URL of the external identity provider and must match the issuer claim of the external token being exchanged. The combination of the values of issuer and subject must be unique on the app. Required.
+    - `[Name <String>]`: is the unique identifier for the federated identity credential, which has a character limit of 120 characters and must be URL friendly. It is immutable once created. Required. Not nullable. Supports $filter (eq).
+    - `[Subject <String>]`: Required. The identifier of the external software workload within the external identity provider. Like the audience value, it has no fixed format, as each identity provider uses their own - sometimes a GUID, sometimes a colon delimited identifier, sometimes arbitrary strings. The value here must match the sub claim within the token presented to Azure AD. The combination of issuer and subject must be unique on the app. Supports $filter (eq).
+  - `[HomeRealmDiscoveryPolicies <IMicrosoftGraphHomeRealmDiscoveryPolicy1[]>]`: The homeRealmDiscoveryPolicies assigned to this service principal. Supports $expand.
     - `[AppliesTo <IMicrosoftGraphDirectoryObject[]>]`: 
     - `[Definition <String[]>]`: A string collection containing a JSON string that defines the rules and settings for a policy. The syntax for the definition differs for each derived policy type. Required.
     - `[IsOrganizationDefault <Boolean?>]`: If set to true, activates this policy. There can be many policies for the same policy type, but only one can be activated as the organization default. Optional, default value is false.
-    - `[Description <String>]`: Description for this policy.
-    - `[DisplayName <String>]`: Display name for this policy.
+    - `[Description <String>]`: Description for this policy. Required.
+    - `[DisplayName <String>]`: Display name for this policy. Required.
     - `[DeletedDateTime <DateTime?>]`: 
     - `[Id <String>]`: Read-only.
   - `[Homepage <String>]`: Home page or landing page of the application.
@@ -1137,15 +1272,15 @@ BODYPARAMETER <IMicrosoftGraphServicePrincipal1>: Represents an Azure Active Dir
     - `[PrivacyStatementUrl <String>]`: Link to the application's privacy statement. For example, https://www.contoso.com/app/privacy
     - `[SupportUrl <String>]`: Link to the application's support page. For example, https://www.contoso.com/app/support
     - `[TermsOfServiceUrl <String>]`: Link to the application's terms of service statement. For example, https://www.contoso.com/app/termsofservice
-  - `[KeyCredentials <IMicrosoftGraphKeyCredential[]>]`: The collection of key credentials associated with the service principal. Not nullable.
+  - `[KeyCredentials <IMicrosoftGraphKeyCredential[]>]`: The collection of key credentials associated with the service principal. Not nullable. Supports $filter (eq, not, ge, le).
     - `[CustomKeyIdentifier <Byte[]>]`: Custom key identifier
     - `[DisplayName <String>]`: Friendly name for the key. Optional.
-    - `[EndDateTime <DateTime?>]`: The date and time at which the credential expires.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[EndDateTime <DateTime?>]`: The date and time at which the credential expires.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Key <Byte[]>]`: Value for the key credential. Should be a base 64 encoded value.
-    - `[KeyId <String>]`: The unique identifier (GUID) for the key.
-    - `[StartDateTime <DateTime?>]`: The date and time at which the credential becomes valid.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[Type <String>]`: The type of key credential; for example, 'Symmetric'.
-    - `[Usage <String>]`: A string that describes the purpose for which the key can be used; for example, 'Verify'.
+    - `[KeyId <String>]`: The unique identifier for the key.
+    - `[StartDateTime <DateTime?>]`: The date and time at which the credential becomes valid.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[Type <String>]`: The type of key credential; for example, Symmetric.
+    - `[Usage <String>]`: A string that describes the purpose for which the key can be used; for example, Verify.
   - `[LicenseDetails <IMicrosoftGraphLicenseDetails[]>]`: 
     - `[Id <String>]`: Read-only.
     - `[ServicePlans <IMicrosoftGraphServicePlanInfo[]>]`: Information about the service plans assigned with the license. Read-only, Not nullable
@@ -1157,7 +1292,7 @@ BODYPARAMETER <IMicrosoftGraphServicePrincipal1>: Represents an Azure Active Dir
     - `[SkuPartNumber <String>]`: Unique SKU display name. Equal to the skuPartNumber on the related SubscribedSku object; for example: 'AAD_Premium'. Read-only
   - `[LoginUrl <String>]`: Specifies the URL where the service provider redirects the user to Azure AD to authenticate. Azure AD uses the URL to launch the application from Microsoft 365 or the Azure AD My Apps. When blank, Azure AD performs IdP-initiated sign-on for applications configured with SAML-based single sign-on. The user launches the application from Microsoft 365, the Azure AD My Apps, or the Azure AD SSO URL.
   - `[LogoutUrl <String>]`: Specifies the URL that will be used by Microsoft's authorization service to logout an user using OpenId Connect front-channel, back-channel or SAML logout protocols.
-  - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: Roles that this service principal is a member of. HTTP Methods: GET Read-only. Nullable.
+  - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: Roles that this service principal is a member of. HTTP Methods: GET Read-only. Nullable. Supports $expand.
   - `[Notes <String>]`: Free text field to capture information about the service principal, typically used for operational purposes. Maximum allowed size is 1024 characters.
   - `[NotificationEmailAddresses <String[]>]`: Specifies the list of email addresses where Azure AD sends a notification when the active certificate is near the expiration date. This is only for the certificates used to sign the SAML token issued for Azure AD Gallery applications.
   - `[Oauth2PermissionGrants <IMicrosoftGraphOAuth2PermissionGrant1[]>]`: Delegated permission grants authorizing this service principal to access an API on behalf of a signed-in user. Read-only. Nullable.
@@ -1169,8 +1304,8 @@ BODYPARAMETER <IMicrosoftGraphServicePrincipal1>: Represents an Azure Active Dir
     - `[ResourceId <String>]`: The id of the resource service principal to which access is authorized. This identifies the API which the client is authorized to attempt to call on behalf of a signed-in user.
     - `[Scope <String>]`: A space-separated list of the claim values for delegated permissions which should be included in access tokens for the resource application (the API). For example, openid User.Read GroupMember.Read.All. Each claim value should match the value field of one of the delegated permissions defined by the API, listed in the publishedPermissionScopes property of the resource service principal.
     - `[StartTime <DateTime?>]`: Currently, the start time value is ignored, but a value is required when creating an oAuth2PermissionGrant. Required.
-  - `[OwnedObjects <IMicrosoftGraphDirectoryObject[]>]`: Directory objects that are owned by this service principal. Read-only. Nullable.
-  - `[Owners <IMicrosoftGraphDirectoryObject[]>]`: Directory objects that are owners of this servicePrincipal. The owners are a set of non-admin users or servicePrincipals who are allowed to modify this object. Read-only. Nullable.
+  - `[OwnedObjects <IMicrosoftGraphDirectoryObject[]>]`: Directory objects that are owned by this service principal. Read-only. Nullable. Supports $expand.
+  - `[Owners <IMicrosoftGraphDirectoryObject[]>]`: Directory objects that are owners of this servicePrincipal. The owners are a set of non-admin users or servicePrincipals who are allowed to modify this object. Read-only. Nullable. Supports $expand.
   - `[PasswordCredentials <IMicrosoftGraphPasswordCredential[]>]`: The collection of password credentials associated with the service principal. Not nullable.
     - `[CustomKeyIdentifier <Byte[]>]`: Do not use.
     - `[DisplayName <String>]`: Friendly name for the password. Optional.
@@ -1195,7 +1330,7 @@ BODYPARAMETER <IMicrosoftGraphServicePrincipal1>: Represents an Azure Active Dir
     - `[Id <String>]`: Unique delegated permission identifier inside the collection of delegated permissions defined for a resource application.
     - `[IsEnabled <Boolean?>]`: When creating or updating a permission, this property must be set to true (which is the default). To delete a permission, this property must first be set to false.  At that point, in a subsequent call, the permission may be removed.
     - `[Origin <String>]`: 
-    - `[Type <String>]`: Specifies whether this delegated permission should be considered safe for non-admin users to consent to on behalf of themselves, or whether an administrator should be required for consent to the permissions. This will be the default behavior, but each customer can choose to customize the behavior in their organization (by allowing, restricting or limiting user consent to this delegated permission.)
+    - `[Type <String>]`: The possible values are: User and Admin. Specifies whether this delegated permission should be considered safe for non-admin users to consent to on behalf of themselves, or whether an administrator consent should always be required. While Microsoft Graph defines the default consent requirement for each permission, the tenant administrator may override the behavior in their organization (by allowing, restricting, or limiting user consent to this delegated permission). For more information, see Configure how users consent to applications.
     - `[UserConsentDescription <String>]`: A description of the delegated permissions, intended to be read by a user granting the permission on their own behalf. This text appears in consent experiences where the user is consenting only on behalf of themselves.
     - `[UserConsentDisplayName <String>]`: A title for the permission, intended to be read by a user granting the permission on their own behalf. This text appears in consent experiences where the user is consenting only on behalf of themselves.
     - `[Value <String>]`: Specifies the value to include in the scp (scope) claim in access tokens. Must not exceed 120 characters in length. Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ [ ] ^ + _  {  } ~, as well as characters in the ranges 0-9, A-Z and a-z. Any other character, including the space character, are not allowed. May not begin with ..
@@ -1205,9 +1340,9 @@ BODYPARAMETER <IMicrosoftGraphServicePrincipal1>: Represents an Azure Active Dir
   - `[SamlSingleSignOnSettings <IMicrosoftGraphSamlSingleSignOnSettings>]`: samlSingleSignOnSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[RelayState <String>]`: The relative URI the service provider would redirect to after completion of the single sign-on flow.
-  - `[ServicePrincipalNames <String[]>]`: Contains the list of identifiersUris, copied over from the associated application. Additional values can be added to hybrid applications. These values can be used to identify the permissions exposed by this app within Azure AD. For example,Client apps can specify a resource URI which is based on the values of this property to acquire an access token, which is the URI returned in the 'aud' claim.The any operator is required for filter expressions on multi-valued properties. Not nullable.
-  - `[ServicePrincipalType <String>]`: Identifies if the service principal represents an application or a managed identity. This is set by Azure AD internally. For a service principal that represents an application this is set as Application. For a service principal that represent a managed identity this is set as ManagedIdentity.
-  - `[SignInAudience <String>]`: Specifies the Microsoft accounts that are supported for the current application. Read-only. Supported values are:AzureADMyOrg: Users with a Microsoft work or school account in my organization's Azure AD tenant (single-tenant).AzureADMultipleOrgs: Users with a Microsoft work or school account in any organization's Azure AD tenant (multi-tenant).AzureADandPersonalMicrosoftAccount: Users with a personal Microsoft account, or a work or school account in any organization's Azure AD tenant.PersonalMicrosoftAccount: Users with a personal Microsoft account only.
+  - `[ServicePrincipalNames <String[]>]`: Contains the list of identifiersUris, copied over from the associated application. Additional values can be added to hybrid applications. These values can be used to identify the permissions exposed by this app within Azure AD. For example,Client apps can specify a resource URI which is based on the values of this property to acquire an access token, which is the URI returned in the 'aud' claim.The any operator is required for filter expressions on multi-valued properties. Not nullable.  Supports $filter (eq, not, ge, le, startsWith).
+  - `[ServicePrincipalType <String>]`: Identifies if the service principal represents an application or a managed identity. This is set by Azure AD internally. For a service principal that represents an application this is set as Application. For a service principal that represent a managed identity this is set as ManagedIdentity. The SocialIdp type is for internal use.
+  - `[SignInAudience <String>]`: Specifies the Microsoft accounts that are supported for the current application. Read-only. Supported values are:AzureADMyOrg: Users with a Microsoft work or school account in my organization’s Azure AD tenant (single-tenant).AzureADMultipleOrgs: Users with a Microsoft work or school account in any organization’s Azure AD tenant (multi-tenant).AzureADandPersonalMicrosoftAccount: Users with a personal Microsoft account, or a work or school account in any organization’s Azure AD tenant.PersonalMicrosoftAccount: Users with a personal Microsoft account only.
   - `[Synchronization <IMicrosoftGraphSynchronization>]`: synchronization
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: Read-only.
@@ -1341,8 +1476,8 @@ BODYPARAMETER <IMicrosoftGraphServicePrincipal1>: Represents an Azure Active Dir
           - `[Value <Int64?>]`: Value.
         - `[TroubleshootingUrl <String>]`: In the event of an error, the URL with the troubleshooting steps for the issue.
       - `[SynchronizationJobSettings <IMicrosoftGraphKeyValuePair[]>]`: Settings associated with the job. Some settings are inherited from the template.
-        - `[Name <String>]`: Name for this key-value pair. Possible names are: AdditionalWSFedEndpointCheckResult,  AllowedAuthenticationClassReferencesCheckResult, AlwaysRequireAuthenticationCheckResult,   AutoUpdateEnabledCheckResult, ClaimsProviderNameCheckResult, EncryptClaimsCheckResult,  EncryptedNameIdRequiredCheckResult, MonitoringEnabledCheckResult,NotBeforeSkewCheckResult,  RequestMFAFromClaimsProvidersCheckResult, SignedSamlRequestsRequiredCheckResult, AdditionalAuthenticationRulesCheckResult, TokenLifetimeCheckResult,  DelegationAuthorizationRulesCheckResult, IssuanceAuthorizationRulesCheckResult, IssuanceTransformRulesCheckResult.
-        - `[Value <String>]`: Value for this key-value pair. Possible result values are 0 (when the validation check passed), 1 (when the validation check failed), or 2 (when the validation check is a warning).
+        - `[Name <String>]`: Name for this key-value pair
+        - `[Value <String>]`: Value for this key-value pair
       - `[TemplateId <String>]`: Identifier of the synchronization template this job is based on.
     - `[Secrets <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>]`: 
       - `[Key <String>]`: synchronizationSecret
@@ -1356,34 +1491,34 @@ BODYPARAMETER <IMicrosoftGraphServicePrincipal1>: Represents an Azure Active Dir
       - `[FactoryTag <String>]`: One of the well-known factory tags supported by the synchronization engine. The factoryTag tells the synchronization engine which implementation to use when processing jobs based on this template.
       - `[Metadata <IMicrosoftGraphMetadataEntry[]>]`: Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.
       - `[Schema <IMicrosoftGraphSynchronizationSchema>]`: synchronizationSchema
-  - `[Tags <String[]>]`: Custom strings that can be used to categorize and identify the service principal. Not nullable.
+  - `[Tags <String[]>]`: Custom strings that can be used to categorize and identify the service principal. Not nullable. Supports $filter (eq, not, ge, le, startsWith).
   - `[TokenEncryptionKeyId <String>]`: Specifies the keyId of a public key from the keyCredentials collection. When configured, Azure AD issues tokens for this application encrypted using the key specified by this property. The application code that receives the encrypted token must use the matching private key to decrypt the token before it can be used for the signed-in user.
-  - `[TokenIssuancePolicies <IMicrosoftGraphTokenIssuancePolicy1[]>]`: The tokenIssuancePolicies assigned to this service principal.
+  - `[TokenIssuancePolicies <IMicrosoftGraphTokenIssuancePolicy1[]>]`: The tokenIssuancePolicies assigned to this service principal. Supports $expand.
     - `[AppliesTo <IMicrosoftGraphDirectoryObject[]>]`: 
     - `[Definition <String[]>]`: A string collection containing a JSON string that defines the rules and settings for a policy. The syntax for the definition differs for each derived policy type. Required.
     - `[IsOrganizationDefault <Boolean?>]`: If set to true, activates this policy. There can be many policies for the same policy type, but only one can be activated as the organization default. Optional, default value is false.
-    - `[Description <String>]`: Description for this policy.
-    - `[DisplayName <String>]`: Display name for this policy.
+    - `[Description <String>]`: Description for this policy. Required.
+    - `[DisplayName <String>]`: Display name for this policy. Required.
     - `[DeletedDateTime <DateTime?>]`: 
     - `[Id <String>]`: Read-only.
-  - `[TokenLifetimePolicies <IMicrosoftGraphTokenLifetimePolicy1[]>]`: The tokenLifetimePolicies assigned to this service principal.
+  - `[TokenLifetimePolicies <IMicrosoftGraphTokenLifetimePolicy1[]>]`: The tokenLifetimePolicies assigned to this service principal. Supports $expand.
     - `[AppliesTo <IMicrosoftGraphDirectoryObject[]>]`: 
     - `[Definition <String[]>]`: A string collection containing a JSON string that defines the rules and settings for a policy. The syntax for the definition differs for each derived policy type. Required.
     - `[IsOrganizationDefault <Boolean?>]`: If set to true, activates this policy. There can be many policies for the same policy type, but only one can be activated as the organization default. Optional, default value is false.
-    - `[Description <String>]`: Description for this policy.
-    - `[DisplayName <String>]`: Display name for this policy.
+    - `[Description <String>]`: Description for this policy. Required.
+    - `[DisplayName <String>]`: Display name for this policy. Required.
     - `[DeletedDateTime <DateTime?>]`: 
     - `[Id <String>]`: Read-only.
   - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: 
 
-CLAIMSMAPPINGPOLICIES <IMicrosoftGraphClaimsMappingPolicy1[]>: The claimsMappingPolicies assigned to this service principal.
+CLAIMSMAPPINGPOLICIES <IMicrosoftGraphClaimsMappingPolicy1[]>: The claimsMappingPolicies assigned to this service principal. Supports $expand.
   - `[AppliesTo <IMicrosoftGraphDirectoryObject[]>]`: 
     - `[Id <String>]`: Read-only.
     - `[DeletedDateTime <DateTime?>]`: 
   - `[Definition <String[]>]`: A string collection containing a JSON string that defines the rules and settings for a policy. The syntax for the definition differs for each derived policy type. Required.
   - `[IsOrganizationDefault <Boolean?>]`: If set to true, activates this policy. There can be many policies for the same policy type, but only one can be activated as the organization default. Optional, default value is false.
-  - `[Description <String>]`: Description for this policy.
-  - `[DisplayName <String>]`: Display name for this policy.
+  - `[Description <String>]`: Description for this policy. Required.
+  - `[DisplayName <String>]`: Display name for this policy. Required.
   - `[DeletedDateTime <DateTime?>]`: 
   - `[Id <String>]`: Read-only.
 
@@ -1391,7 +1526,7 @@ CREATEDOBJECTS <IMicrosoftGraphDirectoryObject[]>: Directory objects created by 
   - `[Id <String>]`: Read-only.
   - `[DeletedDateTime <DateTime?>]`: 
 
-DELEGATEDPERMISSIONCLASSIFICATIONS <IMicrosoftGraphDelegatedPermissionClassification[]>: The permission classifications for delegated permissions exposed by the app that this service principal represents.
+DELEGATEDPERMISSIONCLASSIFICATIONS <IMicrosoftGraphDelegatedPermissionClassification[]>: The permission classifications for delegated permissions exposed by the app that this service principal represents. Supports $expand.
   - `[Id <String>]`: Read-only.
   - `[Classification <String>]`: permissionClassificationType
   - `[PermissionId <String>]`: The unique identifier (id) for the delegated permission listed in the publishedPermissionScopes collection of the servicePrincipal. Required on create. Does not support $filter.
@@ -1406,14 +1541,22 @@ ENDPOINTS <IMicrosoftGraphEndpoint[]>: Endpoints available for discovery. Servic
   - `[ProviderResourceId <String>]`: For Microsoft 365 groups, this is set to a well-known name for the resource (e.g. Yammer.FeedURL etc.). Not nullable. Read-only.
   - `[Uri <String>]`: URL of the published resource. Not nullable. Read-only.
 
-HOMEREALMDISCOVERYPOLICIES <IMicrosoftGraphHomeRealmDiscoveryPolicy1[]>: The homeRealmDiscoveryPolicies assigned to this service principal.
+FEDERATEDIDENTITYCREDENTIALS <IMicrosoftGraphFederatedIdentityCredential[]>: .
+  - `[Id <String>]`: Read-only.
+  - `[Audiences <String[]>]`: Lists the audiences that can appear in the external token. This field is mandatory, and defaults to 'api://AzureADTokenExchange'. It says what Microsoft identity platform should accept in the aud claim in the incoming token. This value represents Azure AD in your external identity provider and has no fixed value across identity providers - you may need to create a new application registration in your identity provider to serve as the audience of this token. Required.
+  - `[Description <String>]`: The un-validated, user-provided description of the federated identity credential. Optional.
+  - `[Issuer <String>]`: The URL of the external identity provider and must match the issuer claim of the external token being exchanged. The combination of the values of issuer and subject must be unique on the app. Required.
+  - `[Name <String>]`: is the unique identifier for the federated identity credential, which has a character limit of 120 characters and must be URL friendly. It is immutable once created. Required. Not nullable. Supports $filter (eq).
+  - `[Subject <String>]`: Required. The identifier of the external software workload within the external identity provider. Like the audience value, it has no fixed format, as each identity provider uses their own - sometimes a GUID, sometimes a colon delimited identifier, sometimes arbitrary strings. The value here must match the sub claim within the token presented to Azure AD. The combination of issuer and subject must be unique on the app. Supports $filter (eq).
+
+HOMEREALMDISCOVERYPOLICIES <IMicrosoftGraphHomeRealmDiscoveryPolicy1[]>: The homeRealmDiscoveryPolicies assigned to this service principal. Supports $expand.
   - `[AppliesTo <IMicrosoftGraphDirectoryObject[]>]`: 
     - `[Id <String>]`: Read-only.
     - `[DeletedDateTime <DateTime?>]`: 
   - `[Definition <String[]>]`: A string collection containing a JSON string that defines the rules and settings for a policy. The syntax for the definition differs for each derived policy type. Required.
   - `[IsOrganizationDefault <Boolean?>]`: If set to true, activates this policy. There can be many policies for the same policy type, but only one can be activated as the organization default. Optional, default value is false.
-  - `[Description <String>]`: Description for this policy.
-  - `[DisplayName <String>]`: Display name for this policy.
+  - `[Description <String>]`: Description for this policy. Required.
+  - `[DisplayName <String>]`: Display name for this policy. Required.
   - `[DeletedDateTime <DateTime?>]`: 
   - `[Id <String>]`: Read-only.
 
@@ -1425,15 +1568,15 @@ INFO <IMicrosoftGraphInformationalUrl>: informationalUrl
   - `[SupportUrl <String>]`: Link to the application's support page. For example, https://www.contoso.com/app/support
   - `[TermsOfServiceUrl <String>]`: Link to the application's terms of service statement. For example, https://www.contoso.com/app/termsofservice
 
-KEYCREDENTIALS <IMicrosoftGraphKeyCredential[]>: The collection of key credentials associated with the service principal. Not nullable.
+KEYCREDENTIALS <IMicrosoftGraphKeyCredential[]>: The collection of key credentials associated with the service principal. Not nullable. Supports $filter (eq, not, ge, le).
   - `[CustomKeyIdentifier <Byte[]>]`: Custom key identifier
   - `[DisplayName <String>]`: Friendly name for the key. Optional.
-  - `[EndDateTime <DateTime?>]`: The date and time at which the credential expires.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[EndDateTime <DateTime?>]`: The date and time at which the credential expires.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Key <Byte[]>]`: Value for the key credential. Should be a base 64 encoded value.
-  - `[KeyId <String>]`: The unique identifier (GUID) for the key.
-  - `[StartDateTime <DateTime?>]`: The date and time at which the credential becomes valid.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Type <String>]`: The type of key credential; for example, 'Symmetric'.
-  - `[Usage <String>]`: A string that describes the purpose for which the key can be used; for example, 'Verify'.
+  - `[KeyId <String>]`: The unique identifier for the key.
+  - `[StartDateTime <DateTime?>]`: The date and time at which the credential becomes valid.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[Type <String>]`: The type of key credential; for example, Symmetric.
+  - `[Usage <String>]`: A string that describes the purpose for which the key can be used; for example, Verify.
 
 LICENSEDETAILS <IMicrosoftGraphLicenseDetails[]>: .
   - `[Id <String>]`: Read-only.
@@ -1445,7 +1588,7 @@ LICENSEDETAILS <IMicrosoftGraphLicenseDetails[]>: .
   - `[SkuId <String>]`: Unique identifier (GUID) for the service SKU. Equal to the skuId property on the related SubscribedSku object. Read-only
   - `[SkuPartNumber <String>]`: Unique SKU display name. Equal to the skuPartNumber on the related SubscribedSku object; for example: 'AAD_Premium'. Read-only
 
-MEMBEROF <IMicrosoftGraphDirectoryObject[]>: Roles that this service principal is a member of. HTTP Methods: GET Read-only. Nullable.
+MEMBEROF <IMicrosoftGraphDirectoryObject[]>: Roles that this service principal is a member of. HTTP Methods: GET Read-only. Nullable. Supports $expand.
   - `[Id <String>]`: Read-only.
   - `[DeletedDateTime <DateTime?>]`: 
 
@@ -1459,11 +1602,11 @@ OAUTH2PERMISSIONGRANTS <IMicrosoftGraphOAuth2PermissionGrant1[]>: Delegated perm
   - `[Scope <String>]`: A space-separated list of the claim values for delegated permissions which should be included in access tokens for the resource application (the API). For example, openid User.Read GroupMember.Read.All. Each claim value should match the value field of one of the delegated permissions defined by the API, listed in the publishedPermissionScopes property of the resource service principal.
   - `[StartTime <DateTime?>]`: Currently, the start time value is ignored, but a value is required when creating an oAuth2PermissionGrant. Required.
 
-OWNEDOBJECTS <IMicrosoftGraphDirectoryObject[]>: Directory objects that are owned by this service principal. Read-only. Nullable.
+OWNEDOBJECTS <IMicrosoftGraphDirectoryObject[]>: Directory objects that are owned by this service principal. Read-only. Nullable. Supports $expand.
   - `[Id <String>]`: Read-only.
   - `[DeletedDateTime <DateTime?>]`: 
 
-OWNERS <IMicrosoftGraphDirectoryObject[]>: Directory objects that are owners of this servicePrincipal. The owners are a set of non-admin users or servicePrincipals who are allowed to modify this object. Read-only. Nullable.
+OWNERS <IMicrosoftGraphDirectoryObject[]>: Directory objects that are owners of this servicePrincipal. The owners are a set of non-admin users or servicePrincipals who are allowed to modify this object. Read-only. Nullable. Supports $expand.
   - `[Id <String>]`: Read-only.
   - `[DeletedDateTime <DateTime?>]`: 
 
@@ -1490,7 +1633,7 @@ PUBLISHEDPERMISSIONSCOPES <IMicrosoftGraphPermissionScope[]>: The delegated perm
   - `[Id <String>]`: Unique delegated permission identifier inside the collection of delegated permissions defined for a resource application.
   - `[IsEnabled <Boolean?>]`: When creating or updating a permission, this property must be set to true (which is the default). To delete a permission, this property must first be set to false.  At that point, in a subsequent call, the permission may be removed.
   - `[Origin <String>]`: 
-  - `[Type <String>]`: Specifies whether this delegated permission should be considered safe for non-admin users to consent to on behalf of themselves, or whether an administrator should be required for consent to the permissions. This will be the default behavior, but each customer can choose to customize the behavior in their organization (by allowing, restricting or limiting user consent to this delegated permission.)
+  - `[Type <String>]`: The possible values are: User and Admin. Specifies whether this delegated permission should be considered safe for non-admin users to consent to on behalf of themselves, or whether an administrator consent should always be required. While Microsoft Graph defines the default consent requirement for each permission, the tenant administrator may override the behavior in their organization (by allowing, restricting, or limiting user consent to this delegated permission). For more information, see Configure how users consent to applications.
   - `[UserConsentDescription <String>]`: A description of the delegated permissions, intended to be read by a user granting the permission on their own behalf. This text appears in consent experiences where the user is consenting only on behalf of themselves.
   - `[UserConsentDisplayName <String>]`: A title for the permission, intended to be read by a user granting the permission on their own behalf. This text appears in consent experiences where the user is consenting only on behalf of themselves.
   - `[Value <String>]`: Specifies the value to include in the scp (scope) claim in access tokens. Must not exceed 120 characters in length. Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ [ ] ^ + _  {  } ~, as well as characters in the ranges 0-9, A-Z and a-z. Any other character, including the space character, are not allowed. May not begin with ..
@@ -1632,8 +1775,8 @@ SYNCHRONIZATION <IMicrosoftGraphSynchronization>: synchronization
         - `[Value <Int64?>]`: Value.
       - `[TroubleshootingUrl <String>]`: In the event of an error, the URL with the troubleshooting steps for the issue.
     - `[SynchronizationJobSettings <IMicrosoftGraphKeyValuePair[]>]`: Settings associated with the job. Some settings are inherited from the template.
-      - `[Name <String>]`: Name for this key-value pair. Possible names are: AdditionalWSFedEndpointCheckResult,  AllowedAuthenticationClassReferencesCheckResult, AlwaysRequireAuthenticationCheckResult,   AutoUpdateEnabledCheckResult, ClaimsProviderNameCheckResult, EncryptClaimsCheckResult,  EncryptedNameIdRequiredCheckResult, MonitoringEnabledCheckResult,NotBeforeSkewCheckResult,  RequestMFAFromClaimsProvidersCheckResult, SignedSamlRequestsRequiredCheckResult, AdditionalAuthenticationRulesCheckResult, TokenLifetimeCheckResult,  DelegationAuthorizationRulesCheckResult, IssuanceAuthorizationRulesCheckResult, IssuanceTransformRulesCheckResult.
-      - `[Value <String>]`: Value for this key-value pair. Possible result values are 0 (when the validation check passed), 1 (when the validation check failed), or 2 (when the validation check is a warning).
+      - `[Name <String>]`: Name for this key-value pair
+      - `[Value <String>]`: Value for this key-value pair
     - `[TemplateId <String>]`: Identifier of the synchronization template this job is based on.
   - `[Secrets <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>]`: 
     - `[Key <String>]`: synchronizationSecret
@@ -1648,25 +1791,25 @@ SYNCHRONIZATION <IMicrosoftGraphSynchronization>: synchronization
     - `[Metadata <IMicrosoftGraphMetadataEntry[]>]`: Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.
     - `[Schema <IMicrosoftGraphSynchronizationSchema>]`: synchronizationSchema
 
-TOKENISSUANCEPOLICIES <IMicrosoftGraphTokenIssuancePolicy1[]>: The tokenIssuancePolicies assigned to this service principal.
+TOKENISSUANCEPOLICIES <IMicrosoftGraphTokenIssuancePolicy1[]>: The tokenIssuancePolicies assigned to this service principal. Supports $expand.
   - `[AppliesTo <IMicrosoftGraphDirectoryObject[]>]`: 
     - `[Id <String>]`: Read-only.
     - `[DeletedDateTime <DateTime?>]`: 
   - `[Definition <String[]>]`: A string collection containing a JSON string that defines the rules and settings for a policy. The syntax for the definition differs for each derived policy type. Required.
   - `[IsOrganizationDefault <Boolean?>]`: If set to true, activates this policy. There can be many policies for the same policy type, but only one can be activated as the organization default. Optional, default value is false.
-  - `[Description <String>]`: Description for this policy.
-  - `[DisplayName <String>]`: Display name for this policy.
+  - `[Description <String>]`: Description for this policy. Required.
+  - `[DisplayName <String>]`: Display name for this policy. Required.
   - `[DeletedDateTime <DateTime?>]`: 
   - `[Id <String>]`: Read-only.
 
-TOKENLIFETIMEPOLICIES <IMicrosoftGraphTokenLifetimePolicy1[]>: The tokenLifetimePolicies assigned to this service principal.
+TOKENLIFETIMEPOLICIES <IMicrosoftGraphTokenLifetimePolicy1[]>: The tokenLifetimePolicies assigned to this service principal. Supports $expand.
   - `[AppliesTo <IMicrosoftGraphDirectoryObject[]>]`: 
     - `[Id <String>]`: Read-only.
     - `[DeletedDateTime <DateTime?>]`: 
   - `[Definition <String[]>]`: A string collection containing a JSON string that defines the rules and settings for a policy. The syntax for the definition differs for each derived policy type. Required.
   - `[IsOrganizationDefault <Boolean?>]`: If set to true, activates this policy. There can be many policies for the same policy type, but only one can be activated as the organization default. Optional, default value is false.
-  - `[Description <String>]`: Description for this policy.
-  - `[DisplayName <String>]`: Display name for this policy.
+  - `[Description <String>]`: Description for this policy. Required.
+  - `[DisplayName <String>]`: Display name for this policy. Required.
   - `[DeletedDateTime <DateTime?>]`: 
   - `[Id <String>]`: Read-only.
 
@@ -1676,4 +1819,3 @@ TRANSITIVEMEMBEROF <IMicrosoftGraphDirectoryObject[]>: .
 
 ## RELATED LINKS
 
-## RELATED LINKS

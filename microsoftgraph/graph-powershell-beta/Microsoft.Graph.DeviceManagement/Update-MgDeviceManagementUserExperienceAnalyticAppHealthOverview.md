@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticapphealthoverview
 schema: 2.0.0
@@ -16,14 +16,14 @@ User experience analytics appHealth overview
 ```
 Update-MgDeviceManagementUserExperienceAnalyticAppHealthOverview [-AdditionalProperties <Hashtable>]
  [-Id <String>] [-Insights <IMicrosoftGraphUserExperienceAnalyticsInsight[]>]
- [-MetricValues <IMicrosoftGraphUserExperienceAnalyticsMetric[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [-MetricValues <IMicrosoftGraphUserExperienceAnalyticsMetric[]>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementUserExperienceAnalyticAppHealthOverview
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsCategory> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsCategory> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -38,7 +38,7 @@ User experience analytics appHealth overview
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -51,10 +51,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analytics category entity contains the scores and insights for the various metrics of a category.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsCategory
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsCategory
 Parameter Sets: Update
 Aliases:
 
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -82,10 +82,10 @@ Accept wildcard characters: False
 
 ### -Insights
 The insights for the user experience analytics category.
-To construct, see NOTES section for INSIGHTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INSIGHTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsInsight[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsInsight[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -98,10 +98,10 @@ Accept wildcard characters: False
 
 ### -MetricValues
 The metric values for the user experience analytics category.
-To construct, see NOTES section for METRICVALUES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for METRICVALUES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsMetric[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsMetric[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -147,7 +147,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -164,9 +164,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsCategory
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -201,3 +203,4 @@ METRICVALUES <IMicrosoftGraphUserExperienceAnalyticsMetric[]>: The metric values
   - `[Value <Double?>]`: The value of the user experience analytics metric.
 
 ## RELATED LINKS
+

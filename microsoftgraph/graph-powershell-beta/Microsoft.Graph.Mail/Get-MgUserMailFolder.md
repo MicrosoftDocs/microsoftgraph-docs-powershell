@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Mail-help.xml
+external help file:
 Module Name: Microsoft.Graph.Mail
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/get-mgusermailfolder
 schema: 2.0.0
@@ -16,21 +16,18 @@ Nullable.
 
 ### List1 (Default)
 ```
-Get-MgUserMailFolder -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+Get-MgUserMailFolder -UserId <String> [-Filter <String>] [-Property <String[]>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgUserMailFolder -MailFolderId <String> -UserId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgUserMailFolder -MailFolderId <String> -UserId <String> [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgUserMailFolder -InputObject <IMailIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgUserMailFolder -InputObject <IMailIdentity> [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -46,7 +43,7 @@ Nullable.
 List all pages.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: List1
 Aliases:
 
@@ -62,24 +59,9 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List1
 Aliases: CV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ExpandProperty
-Expand related entities
-
-```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: Expand
 
 Required: False
 Position: Named
@@ -92,7 +74,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List1
 Aliases:
 
@@ -105,10 +87,10 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IMailIdentity
+Type: Microsoft.Graph.PowerShell.Models.IMailIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -123,7 +105,7 @@ Accept wildcard characters: False
 key: id of mailFolder
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -138,7 +120,7 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: List1
 Aliases:
 
@@ -153,7 +135,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -164,11 +146,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Search
-Search items by search phrases
+### -Skip
+Skip the first n items
 
 ```yaml
-Type: String
+Type: System.Int32
 Parameter Sets: List1
 Aliases:
 
@@ -183,7 +165,7 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: List1
 Aliases: OrderBy
 
@@ -198,7 +180,7 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: List1
 Aliases: Limit
 
@@ -213,26 +195,11 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: List1, Get
+Type: System.String
+Parameter Sets: Get, List1
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List1
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -245,9 +212,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMailIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailFolder1
+
 ## NOTES
 
 ALIASES
@@ -264,6 +233,16 @@ INPUTOBJECT <IMailIdentity>: Identity Parameter
   - `[MailFolderId <String>]`: key: id of mailFolder
   - `[MailFolderId1 <String>]`: key: id of mailFolder
   - `[MentionId <String>]`: key: id of mention
+  - `[MessageId <String>]`: key: id of message
+  - `[MessageRuleId <String>]`: key: id of messageRule
+  - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
+  - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
+  - `[UserConfigurationId <String>]`: key: id of userConfiguration
+  - `[UserId <String>]`: key: id of user
+
+## RELATED LINKS
+
+key: id of mention
   - `[MessageId <String>]`: key: id of message
   - `[MessageRuleId <String>]`: key: id of messageRule
   - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Sites-help.xml
+external help file:
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/new-mgsitelistcontenttypecolumnpositionbyref
 schema: 2.0.0
@@ -15,25 +15,25 @@ Column order information in a content type.
 ### CreateExpanded (Default)
 ```
 New-MgSiteListContentTypeColumnPositionByRef -ContentTypeId <String> -ListId <String> -SiteId <String>
- [-AdditionalProperties <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgSiteListContentTypeColumnPositionByRef -ContentTypeId <String> -ListId <String> -SiteId <String>
- -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <Hashtable> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgSiteListContentTypeColumnPositionByRef -InputObject <ISitesIdentity> -BodyParameter <Hashtable>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgSiteListContentTypeColumnPositionByRef -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgSiteListContentTypeColumnPositionByRef -InputObject <ISitesIdentity> -BodyParameter <Hashtable> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,7 +47,7 @@ Column order information in a content type.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -77,8 +77,8 @@ Accept wildcard characters: False
 key: id of contentType
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -90,11 +90,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISitesIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ISitesIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -108,8 +108,8 @@ Accept wildcard characters: False
 key: id of list
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -123,8 +123,8 @@ Accept wildcard characters: False
 key: id of site
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -154,7 +154,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -171,10 +171,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
+
 ### System.Collections.Hashtable
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths10Znk45SitesSiteIdListsListIdContenttypesContenttypeIdColumnpositionsRefPostResponses201ContentApplicationJsonSchema
+
 ## NOTES
 
 ALIASES
@@ -202,11 +205,19 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[OnenoteSectionId <String>]`: key: id of onenoteSection
   - `[Path <String>]`: Usage: path={path}
   - `[PermissionId <String>]`: key: id of permission
+  - `[RelationId <String>]`: key: id of relation
+  - `[RichLongRunningOperationId <String>]`: key: id of richLongRunningOperation
+  - `[SetId <String>]`: key: id of set
+  - `[SetId1 <String>]`: key: id of set
   - `[SiteId <String>]`: key: id of site
   - `[SiteId1 <String>]`: key: id of site
   - `[SitePageId <String>]`: key: id of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime={startDateTime}
+  - `[StoreId <String>]`: key: id of store
   - `[SubscriptionId <String>]`: key: id of subscription
+  - `[TermId <String>]`: key: id of term
+  - `[TermId1 <String>]`: key: id of term
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

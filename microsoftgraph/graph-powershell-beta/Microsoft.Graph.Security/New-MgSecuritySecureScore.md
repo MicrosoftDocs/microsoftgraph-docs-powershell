@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecuritysecurescore
 schema: 2.0.0
@@ -18,12 +18,13 @@ New-MgSecuritySecureScore [-ActiveUserCount <Int32>] [-AdditionalProperties <Has
  [-AverageComparativeScores <IMicrosoftGraphAverageComparativeScore[]>] [-AzureTenantId <String>]
  [-ControlScores <IMicrosoftGraphControlScore[]>] [-CreatedDateTime <DateTime>] [-CurrentScore <Double>]
  [-EnabledServices <String[]>] [-Id <String>] [-LicensedUserCount <Int32>] [-MaxScore <Double>]
- [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgSecuritySecureScore -BodyParameter <IMicrosoftGraphSecureScore> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgSecuritySecureScore -BodyParameter <IMicrosoftGraphSecureScore> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -37,7 +38,7 @@ Create new navigation property to secureScores for security
 Active user count of the given tenant.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -52,7 +53,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -65,10 +66,10 @@ Accept wildcard characters: False
 
 ### -AverageComparativeScores
 Average score by different scopes (for example, average by industry, average by seating) and control category (Identity, Data, Device, Apps, Infrastructure) within the scope.
-To construct, see NOTES section for AVERAGECOMPARATIVESCORES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for AVERAGECOMPARATIVESCORES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAverageComparativeScore[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAverageComparativeScore[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -83,7 +84,7 @@ Accept wildcard characters: False
 GUID string for tenant ID.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -96,10 +97,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 secureScore
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecureScore
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecureScore
 Parameter Sets: Create
 Aliases:
 
@@ -112,10 +113,10 @@ Accept wildcard characters: False
 
 ### -ControlScores
 Contains tenant scores for a set of controls.
-To construct, see NOTES section for CONTROLSCORES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for CONTROLSCORES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphControlScore[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphControlScore[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -130,7 +131,7 @@ Accept wildcard characters: False
 The date when the entity is created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -145,7 +146,7 @@ Accept wildcard characters: False
 Tenant current attained score on specified date.
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -160,7 +161,7 @@ Accept wildcard characters: False
 Microsoft-provided services for the tenant (for example, Exchange online, Skype, Sharepoint).
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -175,7 +176,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -190,7 +191,7 @@ Accept wildcard characters: False
 Licensed user count of the given tenant.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -205,7 +206,7 @@ Accept wildcard characters: False
 Tenant maximum possible score on specified date.
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -218,10 +219,10 @@ Accept wildcard characters: False
 
 ### -VendorInformation
 securityVendorInformation
-To construct, see NOTES section for VENDORINFORMATION properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for VENDORINFORMATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityVendorInformation
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityVendorInformation
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -236,7 +237,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -252,7 +253,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -269,9 +270,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecureScore
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecureScore
+
 ## NOTES
 
 ALIASES
@@ -324,3 +327,4 @@ VENDORINFORMATION <IMicrosoftGraphSecurityVendorInformation>: securityVendorInfo
   - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required
 
 ## RELATED LINKS
+

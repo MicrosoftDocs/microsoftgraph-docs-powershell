@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Sites-help.xml
+external help file:
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/copy-mgsitecontenttypebasetodefaultcontentlocation
 schema: 2.0.0
@@ -12,32 +12,32 @@ Invoke action copyToDefaultContentLocation
 
 ## SYNTAX
 
-### CopyExpanded (Default)
+### CopyExpanded1 (Default)
 ```
 Copy-MgSiteContentTypeBaseToDefaultContentLocation -ContentTypeId <String> -SiteId <String>
  [-AdditionalProperties <Hashtable>] [-DestinationFileName <String>]
- [-SourceFile <IMicrosoftGraphItemReference>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SourceFile <IMicrosoftGraphItemReference>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Copy
+### Copy1
 ```
 Copy-MgSiteContentTypeBaseToDefaultContentLocation -ContentTypeId <String> -SiteId <String>
  -BodyParameter <IPathsKzho2HSitesSiteIdContenttypesContenttypeIdBaseMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### CopyViaIdentityExpanded
-```
-Copy-MgSiteContentTypeBaseToDefaultContentLocation -InputObject <ISitesIdentity>
- [-AdditionalProperties <Hashtable>] [-DestinationFileName <String>]
- [-SourceFile <IMicrosoftGraphItemReference>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CopyViaIdentity
+### CopyViaIdentity1
 ```
 Copy-MgSiteContentTypeBaseToDefaultContentLocation -InputObject <ISitesIdentity>
  -BodyParameter <IPathsKzho2HSitesSiteIdContenttypesContenttypeIdBaseMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CopyViaIdentityExpanded1
+```
+Copy-MgSiteContentTypeBaseToDefaultContentLocation -InputObject <ISitesIdentity>
+ [-AdditionalProperties <Hashtable>] [-DestinationFileName <String>]
+ [-SourceFile <IMicrosoftGraphItemReference>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,8 +51,8 @@ Invoke action copyToDefaultContentLocation
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
+Type: System.Collections.Hashtable
+Parameter Sets: CopyExpanded1, CopyViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -64,11 +64,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsKzho2HSitesSiteIdContenttypesContenttypeIdBaseMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Copy, CopyViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IPathsKzho2HSitesSiteIdContenttypesContenttypeIdBaseMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Copy1, CopyViaIdentity1
 Aliases:
 
 Required: True
@@ -82,8 +82,8 @@ Accept wildcard characters: False
 key: id of contentType
 
 ```yaml
-Type: String
-Parameter Sets: CopyExpanded, Copy
+Type: System.String
+Parameter Sets: Copy1, CopyExpanded1
 Aliases:
 
 Required: True
@@ -97,8 +97,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
+Type: System.String
+Parameter Sets: CopyExpanded1, CopyViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -110,11 +110,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISitesIdentity
-Parameter Sets: CopyViaIdentityExpanded, CopyViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ISitesIdentity
+Parameter Sets: CopyViaIdentity1, CopyViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -143,8 +143,8 @@ Accept wildcard characters: False
 key: id of site
 
 ```yaml
-Type: String
-Parameter Sets: CopyExpanded, Copy
+Type: System.String
+Parameter Sets: Copy1, CopyExpanded1
 Aliases:
 
 Required: True
@@ -156,11 +156,11 @@ Accept wildcard characters: False
 
 ### -SourceFile
 itemReference
-To construct, see NOTES section for SOURCEFILE properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SOURCEFILE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemReference
-Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemReference
+Parameter Sets: CopyExpanded1, CopyViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -190,7 +190,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -207,10 +207,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPathsKzho2HSitesSiteIdContenttypesContenttypeIdBaseMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -260,11 +263,18 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[OnenoteSectionId <String>]`: key: id of onenoteSection
   - `[Path <String>]`: Usage: path={path}
   - `[PermissionId <String>]`: key: id of permission
+  - `[RelationId <String>]`: key: id of relation
+  - `[RichLongRunningOperationId <String>]`: key: id of richLongRunningOperation
+  - `[SetId <String>]`: key: id of set
+  - `[SetId1 <String>]`: key: id of set
   - `[SiteId <String>]`: key: id of site
   - `[SiteId1 <String>]`: key: id of site
   - `[SitePageId <String>]`: key: id of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime={startDateTime}
+  - `[StoreId <String>]`: key: id of store
   - `[SubscriptionId <String>]`: key: id of subscription
+  - `[TermId <String>]`: key: id of term
+  - `[TermId1 <String>]`: key: id of term
   - `[UserId <String>]`: key: id of user
 
 SOURCEFILE <IMicrosoftGraphItemReference>: itemReference
@@ -287,3 +297,4 @@ SOURCEFILE <IMicrosoftGraphItemReference>: itemReference
   - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
 
 ## RELATED LINKS
+

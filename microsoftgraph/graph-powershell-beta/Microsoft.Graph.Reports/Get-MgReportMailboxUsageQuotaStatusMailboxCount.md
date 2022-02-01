@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Reports-help.xml
+external help file:
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportmailboxusagequotastatusmailboxcount
 schema: 2.0.0
@@ -14,12 +14,14 @@ Invoke function getMailboxUsageQuotaStatusMailboxCounts
 
 ### Get1 (Default)
 ```
-Get-MgReportMailboxUsageQuotaStatusMailboxCount -Period <String> [<CommonParameters>]
+Get-MgReportMailboxUsageQuotaStatusMailboxCount -Period <String> -OutFile <String> [-PassThru]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
-Get-MgReportMailboxUsageQuotaStatusMailboxCount -InputObject <IReportsIdentity> [<CommonParameters>]
+Get-MgReportMailboxUsageQuotaStatusMailboxCount -InputObject <IReportsIdentity> -OutFile <String> [-PassThru]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -31,10 +33,10 @@ Invoke function getMailboxUsageQuotaStatusMailboxCounts
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IReportsIdentity
+Type: Microsoft.Graph.PowerShell.Models.IReportsIdentity
 Parameter Sets: GetViaIdentity1
 Aliases:
 
@@ -45,11 +47,41 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -OutFile
+Path to write output file to
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PassThru
+Returns true when the command succeeds
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Period
 Usage: period={period}
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get1
 Aliases:
 
@@ -66,9 +98,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IReportsIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailboxUsageQuotaStatusMailboxCounts
+### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -84,7 +118,6 @@ INPUTOBJECT <IReportsIdentity>: Identity Parameter
   - `[Date <DateTime?>]`: Usage: date={date}
   - `[DeviceManagementCachedReportConfigurationId <String>]`: key: id of deviceManagementCachedReportConfiguration
   - `[DeviceManagementExportJobId <String>]`: key: id of deviceManagementExportJob
-  - `[DeviceManagementReportScheduleId <String>]`: key: id of deviceManagementReportSchedule
   - `[DirectoryAuditId <String>]`: key: id of directoryAudit
   - `[EndDateTime <DateTime?>]`: Usage: endDateTime={endDateTime}
   - `[Filter <String>]`: Usage: filter={filter}
@@ -104,5 +137,7 @@ INPUTOBJECT <IReportsIdentity>: Identity Parameter
   - `[Top <Int32?>]`: Usage: top={top}
   - `[UserCredentialUsageDetailsId <String>]`: key: id of userCredentialUsageDetails
   - `[UserId <String>]`: Usage: userId={userId}
+  - `[UserRegistrationDetailsId <String>]`: key: id of userRegistrationDetails
 
 ## RELATED LINKS
+

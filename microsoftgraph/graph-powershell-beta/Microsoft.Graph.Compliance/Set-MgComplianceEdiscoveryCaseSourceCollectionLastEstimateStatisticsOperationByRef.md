@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Compliance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Compliance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/set-mgcomplianceediscoverycasesourcecollectionlastestimatestatisticsoperationbyref
 schema: 2.0.0
@@ -15,27 +15,27 @@ The last estimate operation associated with the sourceCollection.
 ### SetExpanded (Default)
 ```
 Set-MgComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperationByRef -CaseId <String>
- -SourceCollectionId <String> [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm]
+ -SourceCollectionId <String> [-AdditionalProperties <Hashtable>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Set
 ```
 Set-MgComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperationByRef -CaseId <String>
- -SourceCollectionId <String> -BodyParameter <Hashtable> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### SetViaIdentityExpanded
-```
-Set-MgComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperationByRef
- -InputObject <IComplianceIdentity> [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -SourceCollectionId <String> -BodyParameter <Hashtable> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
 Set-MgComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperationByRef
- -InputObject <IComplianceIdentity> -BodyParameter <Hashtable> [-PassThru] [-WhatIf] [-Confirm]
+ -InputObject <IComplianceIdentity> -BodyParameter <Hashtable> [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### SetViaIdentityExpanded
+```
+Set-MgComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperationByRef
+ -InputObject <IComplianceIdentity> [-AdditionalProperties <Hashtable>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -50,7 +50,7 @@ The last estimate operation associated with the sourceCollection.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: Set, SetViaIdentity
 Aliases:
 
@@ -80,8 +80,8 @@ Accept wildcard characters: False
 key: id of case
 
 ```yaml
-Type: String
-Parameter Sets: SetExpanded, Set
+Type: System.String
+Parameter Sets: Set, SetExpanded
 Aliases:
 
 Required: True
@@ -93,11 +93,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IComplianceIdentity
-Parameter Sets: SetViaIdentityExpanded, SetViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IComplianceIdentity
+Parameter Sets: SetViaIdentity, SetViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -126,8 +126,8 @@ Accept wildcard characters: False
 key: id of sourceCollection
 
 ```yaml
-Type: String
-Parameter Sets: SetExpanded, Set
+Type: System.String
+Parameter Sets: Set, SetExpanded
 Aliases:
 
 Required: True
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -157,7 +157,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -174,10 +174,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
+
 ### System.Collections.Hashtable
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -203,3 +206,4 @@ INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   - `[UserSourceId <String>]`: key: id of userSource
 
 ## RELATED LINKS
+

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.CloudCommunications-help.xml
+external help file:
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/invoke-mgplaycommunicationcallprompt
 schema: 2.0.0
@@ -12,32 +12,32 @@ Invoke action playPrompt
 
 ## SYNTAX
 
-### PlayExpanded (Default)
+### PlayExpanded1 (Default)
 ```
 Invoke-MgPlayCommunicationCallPrompt -CallId <String> [-AdditionalProperties <Hashtable>]
- [-ClientContext <String>] [-Loop] [-Prompts <IMicrosoftGraphPrompt[]>] [-WhatIf] [-Confirm]
+ [-ClientContext <String>] [-Loop] [-Prompts <IMicrosoftGraphPrompt[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
-### Play
+### Play1
 ```
 Invoke-MgPlayCommunicationCallPrompt -CallId <String>
  -BodyParameter <IPaths1Gzqcv2CommunicationsCallsCallIdMicrosoftGraphPlaypromptPostRequestbodyContentApplicationJsonSchema1>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### PlayViaIdentityExpanded
-```
-Invoke-MgPlayCommunicationCallPrompt -InputObject <ICloudCommunicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-ClientContext <String>] [-Loop] [-Prompts <IMicrosoftGraphPrompt[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### PlayViaIdentity
+### PlayViaIdentity1
 ```
 Invoke-MgPlayCommunicationCallPrompt -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPaths1Gzqcv2CommunicationsCallsCallIdMicrosoftGraphPlaypromptPostRequestbodyContentApplicationJsonSchema1>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### PlayViaIdentityExpanded1
+```
+Invoke-MgPlayCommunicationCallPrompt -InputObject <ICloudCommunicationsIdentity>
+ [-AdditionalProperties <Hashtable>] [-ClientContext <String>] [-Loop] [-Prompts <IMicrosoftGraphPrompt[]>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,8 +51,8 @@ Invoke action playPrompt
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: PlayExpanded, PlayViaIdentityExpanded
+Type: System.Collections.Hashtable
+Parameter Sets: PlayExpanded1, PlayViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -64,11 +64,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Gzqcv2CommunicationsCallsCallIdMicrosoftGraphPlaypromptPostRequestbodyContentApplicationJsonSchema1
-Parameter Sets: Play, PlayViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IPaths1Gzqcv2CommunicationsCallsCallIdMicrosoftGraphPlaypromptPostRequestbodyContentApplicationJsonSchema1
+Parameter Sets: Play1, PlayViaIdentity1
 Aliases:
 
 Required: True
@@ -82,8 +82,8 @@ Accept wildcard characters: False
 key: id of call
 
 ```yaml
-Type: String
-Parameter Sets: PlayExpanded, Play
+Type: System.String
+Parameter Sets: Play1, PlayExpanded1
 Aliases:
 
 Required: True
@@ -97,8 +97,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: PlayExpanded, PlayViaIdentityExpanded
+Type: System.String
+Parameter Sets: PlayExpanded1, PlayViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -110,11 +110,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICloudCommunicationsIdentity
-Parameter Sets: PlayViaIdentityExpanded, PlayViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+Parameter Sets: PlayViaIdentity1, PlayViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -128,8 +128,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: PlayExpanded, PlayViaIdentityExpanded
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: PlayExpanded1, PlayViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -143,8 +143,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: IMicrosoftGraphPrompt[]
-Parameter Sets: PlayExpanded, PlayViaIdentityExpanded
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrompt[]
+Parameter Sets: PlayExpanded1, PlayViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -174,7 +174,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -191,10 +191,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IPaths1Gzqcv2CommunicationsCallsCallIdMicrosoftGraphPlaypromptPostRequestbodyContentApplicationJsonSchema1
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlayPromptOperation
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlayPromptOperation1
+
 ## NOTES
 
 ALIASES
@@ -211,10 +214,14 @@ BODYPARAMETER <IPaths1Gzqcv2CommunicationsCallsCallIdMicrosoftGraphPlaypromptPos
   - `[Prompts <IMicrosoftGraphPrompt[]>]`: 
 
 INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
+  - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call
   - `[CallRecordId <String>]`: key: id of callRecord
+  - `[CallTranscriptId <String>]`: key: id of callTranscript
   - `[CommsOperationId <String>]`: key: id of commsOperation
+  - `[MeetingAttendanceReportId <String>]`: key: id of meetingAttendanceReport
+  - `[MeetingRegistrationQuestionId <String>]`: key: id of meetingRegistrationQuestion
   - `[OnlineMeetingId <String>]`: key: id of onlineMeeting
   - `[ParticipantId <String>]`: key: id of participant
   - `[PresenceId <String>]`: key: id of presence
@@ -222,3 +229,4 @@ INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

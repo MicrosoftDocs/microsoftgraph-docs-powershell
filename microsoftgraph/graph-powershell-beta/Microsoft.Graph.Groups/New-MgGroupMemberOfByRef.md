@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/new-mggroupmemberofbyref
 schema: 2.0.0
@@ -8,39 +8,44 @@ schema: 2.0.0
 # New-MgGroupMemberOfByRef
 
 ## SYNOPSIS
-Users, contacts, and groups that are members of this group.
-HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only.
+Groups and administrative units that this group is a member of.
+HTTP Methods: GET (supported for all groups).
+Read-only.
 Nullable.
+Supports $expand.
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### CreateExpanded5 (Default)
 ```
-New-MgGroupMemberOfByRef -GroupId <String> [-AdditionalProperties <Hashtable>] [-WhatIf] [-Confirm]
+New-MgGroupMemberOfByRef -GroupId <String> [-AdditionalProperties <Hashtable>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
-### Create
+### Create5
 ```
-New-MgGroupMemberOfByRef -GroupId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgGroupMemberOfByRef -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgGroupMemberOfByRef -InputObject <IGroupsIdentity> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
+New-MgGroupMemberOfByRef -GroupId <String> -BodyParameter <Hashtable> [-Confirm] [-WhatIf]
  [<CommonParameters>]
+```
+
+### CreateViaIdentity5
+```
+New-MgGroupMemberOfByRef -InputObject <IGroupsIdentity> -BodyParameter <Hashtable> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded5
+```
+New-MgGroupMemberOfByRef -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Users, contacts, and groups that are members of this group.
-HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only.
+Groups and administrative units that this group is a member of.
+HTTP Methods: GET (supported for all groups).
+Read-only.
 Nullable.
+Supports $expand.
 
 ## EXAMPLES
 
@@ -50,8 +55,8 @@ Nullable.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: System.Collections.Hashtable
+Parameter Sets: CreateExpanded5, CreateViaIdentityExpanded5
 Aliases:
 
 Required: False
@@ -65,8 +70,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Hashtable
-Parameter Sets: Create, CreateViaIdentity
+Type: System.Collections.Hashtable
+Parameter Sets: Create5, CreateViaIdentity5
 Aliases:
 
 Required: True
@@ -80,8 +85,8 @@ Accept wildcard characters: False
 key: id of group
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create5, CreateExpanded5
 Aliases:
 
 Required: True
@@ -93,11 +98,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+Parameter Sets: CreateViaIdentity5, CreateViaIdentityExpanded5
 Aliases:
 
 Required: True
@@ -111,7 +116,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -127,7 +132,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -144,10 +149,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+
 ### System.Collections.Hashtable
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths15I3FyhGroupsGroupIdMembersRefPostResponses201ContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IPathsCa7EzdGroupsGroupIdMemberofRefPostResponses201ContentApplicationJsonSchema
+
 ## NOTES
 
 ALIASES
@@ -179,5 +187,9 @@ INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
   - `[User <String>]`: Usage: User={User}
   - `[UserId <String>]`: key: id of user
+
+## RELATED LINKS
+
+r
 
 ## RELATED LINKS

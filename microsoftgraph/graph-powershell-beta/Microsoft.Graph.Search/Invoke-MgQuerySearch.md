@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Search-help.xml
+external help file:
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/invoke-mgquerysearch
 schema: 2.0.0
@@ -12,18 +12,17 @@ Invoke action query
 
 ## SYNTAX
 
-### QueryExpanded1 (Default)
+### QueryExpanded (Default)
 ```
-Invoke-MgQuerySearch [-AdditionalProperties <Hashtable>]
- [-QueryAlterationOptions <IMicrosoftGraphSearchAlterationOptions>]
- [-Requests <IMicrosoftGraphSearchRequest1[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgQuerySearch [-AdditionalProperties <Hashtable>] [-Requests <IMicrosoftGraphSearchRequest1[]>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Query1
+### Query
 ```
 Invoke-MgQuerySearch
- -BodyParameter <IPaths1Kd2XrlSearchMicrosoftGraphQueryPostRequestbodyContentApplicationJsonSchema1> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -BodyParameter <IPaths1Kd2XrlSearchMicrosoftGraphQueryPostRequestbodyContentApplicationJsonSchema1>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -37,8 +36,8 @@ Invoke action query
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: QueryExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: QueryExpanded
 Aliases:
 
 Required: False
@@ -50,11 +49,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Kd2XrlSearchMicrosoftGraphQueryPostRequestbodyContentApplicationJsonSchema1
-Parameter Sets: Query1
+Type: Microsoft.Graph.PowerShell.Models.IPaths1Kd2XrlSearchMicrosoftGraphQueryPostRequestbodyContentApplicationJsonSchema1
+Parameter Sets: Query
 Aliases:
 
 Required: True
@@ -64,29 +63,13 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -QueryAlterationOptions
-searchAlterationOptions
-To construct, see NOTES section for QUERYALTERATIONOPTIONS properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphSearchAlterationOptions
-Parameter Sets: QueryExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Requests
 .
-To construct, see NOTES section for REQUESTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for REQUESTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSearchRequest1[]
-Parameter Sets: QueryExpanded1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchRequest1[]
+Parameter Sets: QueryExpanded
 Aliases:
 
 Required: False
@@ -100,7 +83,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -116,7 +99,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -133,9 +116,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1Kd2XrlSearchMicrosoftGraphQueryPostRequestbodyContentApplicationJsonSchema1
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchResponse1
+
 ## NOTES
 
 ALIASES
@@ -147,10 +132,6 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER <IPaths1Kd2XrlSearchMicrosoftGraphQueryPostRequestbodyContentApplicationJsonSchema1>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[QueryAlterationOptions <IMicrosoftGraphSearchAlterationOptions>]`: searchAlterationOptions
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[EnableModification <Boolean?>]`: Indicates whether spelling modifications are enabled. If enabled, user will get the search results for corrected query when there are no results for the original query with typos and get the spelling modification information in queryAlterationResponse property of the response. Optional.
-    - `[EnableSuggestion <Boolean?>]`: Indicates whether spelling suggestions are enabled. If enabled, user will get the search results for original search query and suggesting spelling correction in queryAlterationResponse property of the response for typos in query. Optional.
   - `[Requests <IMicrosoftGraphSearchRequest1[]>]`: 
     - `[AggregationFilters <String[]>]`: Contains one or more filters to obtain search results aggregated and filtered to a specific value of a field. Optional.Build this filter based on a prior search that aggregates by the same field. From the response of the prior search, identify the searchBucket that filters results to the specific value of the field, use the string in its aggregationFilterToken property, and build an aggregation filter string in the format '{field}:/'{aggregationFilterToken}/''. If multiple values for the same field need to be provided, use the strings in its aggregationFilterToken property and build an aggregation filter string in the format '{field}:or(/'{aggregationFilterToken1}/',/'{aggregationFilterToken2}/')'. For example, searching and aggregating drive items by file type returns a searchBucket for the file type docx in the response. You can conveniently use the aggregationFilterToken returned for this searchBucket in a subsequent search query and filter matches down to drive items of the docx file type. Example 1 and example 2 show the actual requests and responses.
     - `[Aggregations <IMicrosoftGraphAggregationOption[]>]`: Specifies aggregations (also known as refiners) to be returned alongside search results. Optional.
@@ -163,11 +144,11 @@ BODYPARAMETER <IPaths1Kd2XrlSearchMicrosoftGraphQueryPostRequestbodyContentAppli
           - `[From <String>]`: Defines the lower bound from which to compute the aggregation. This can be a numeric value or a string representation of a date using the YYYY-MM-DDTHH:mm:ss.sssZ format. Required.
           - `[To <String>]`: Defines the upper bound up to which to compute the aggregation. This can be a numeric value or a string representation of a date using the YYYY-MM-DDTHH:mm:ss.sssZ format. Required.
         - `[SortBy <String>]`: bucketAggregationSortProperty
-      - `[Field <String>]`: Specifies the field in the schema of the specified entity type that aggregation should be computed on. Required.
+      - `[Field <String>]`: Computes aggregation on the field while the field exists in current entity type. Required.
       - `[Size <Int32?>]`: The number of searchBucket resources to be returned. This is not required when the range is provided manually in the search request. Optional.
     - `[ContentSources <String[]>]`: Contains the connection to be targeted. Respects the following format : /external/connections/connectionid where connectionid is the ConnectionId defined in the Connectors Administration.  Note: contentSource is only applicable when entityType=externalItem. Optional.
     - `[EnableTopResults <Boolean?>]`: This triggers hybrid sort for messages: the first 3 messages are the most relevant. This property is only applicable to entityType=message. Optional.
-    - `[EntityTypes <String[]>]`: One or more types of resources expected in the response. Possible values are: list, site, listItem, message, event, drive, driveItem, externalItem. See known limitations for those combinations of two or more entity types that are supported in the same search request. Required.
+    - `[EntityTypes <String[]>]`: One or more types of resources expected in the response. Possible values are: list, site, listItem, message, event, drive, driveItem, person, externalItem. See known limitations for those combinations of two or more entity types that are supported in the same search request. Required.
     - `[Fields <String[]>]`: Contains the fields to be returned for each resource object specified in entityTypes, allowing customization of the fields returned by default otherwise, including additional fields such as custom managed properties from SharePoint and OneDrive, or custom fields in externalItem from content that Microsoft Graph connectors bring in. The fields property can be using the semantic labels applied to properties. For example, if a property is label as title, you can retrieve it using the following syntax : label_title.Optional.
     - `[From <Int32?>]`: Specifies the offset for the search results. Offset 0 returns the very first result. Optional.
     - `[Query <IMicrosoftGraphSearchQuery1>]`: searchQuery
@@ -176,6 +157,11 @@ BODYPARAMETER <IPaths1Kd2XrlSearchMicrosoftGraphQueryPostRequestbodyContentAppli
       - `[QueryString1 <IMicrosoftGraphSearchQueryString2>]`: searchQueryString
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Query <String>]`: Contains the actual search terms of the request.
+      - `[QueryTemplate <String>]`: 
+    - `[QueryAlterationOptions <IMicrosoftGraphSearchAlterationOptions>]`: searchAlterationOptions
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[EnableModification <Boolean?>]`: Indicates whether spelling modifications are enabled. If enabled, user will get the search results for corrected query when there are no results for the original query with typos and get the spelling modification information in queryAlterationResponse property of the response. Optional.
+      - `[EnableSuggestion <Boolean?>]`: Indicates whether spelling suggestions are enabled. If enabled, user will get the search results for original search query and suggesting spelling correction in queryAlterationResponse property of the response for typos in query. Optional.
     - `[ResultTemplateOptions <IMicrosoftGraphResultTemplateOption>]`: resultTemplateOption
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[EnableResultTemplate <Boolean?>]`: Indicates whether search display layouts are enabled. If enabled, the user will get the result template to render the search results content in the resultTemplates property of the response. The result template is based on Adaptive Cards. This property is optional.
@@ -184,11 +170,7 @@ BODYPARAMETER <IPaths1Kd2XrlSearchMicrosoftGraphQueryPostRequestbodyContentAppli
       - `[IsDescending <Boolean?>]`: True if the sort order is descending. Default is false, with the sort order as ascending. Optional.
       - `[Name <String>]`: The name of the property to sort on. Required.
     - `[StoredFields <String[]>]`: 
-
-QUERYALTERATIONOPTIONS <IMicrosoftGraphSearchAlterationOptions>: searchAlterationOptions
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[EnableModification <Boolean?>]`: Indicates whether spelling modifications are enabled. If enabled, user will get the search results for corrected query when there are no results for the original query with typos and get the spelling modification information in queryAlterationResponse property of the response. Optional.
-  - `[EnableSuggestion <Boolean?>]`: Indicates whether spelling suggestions are enabled. If enabled, user will get the search results for original search query and suggesting spelling correction in queryAlterationResponse property of the response for typos in query. Optional.
+    - `[TrimDuplicates <Boolean?>]`: 
 
 REQUESTS <IMicrosoftGraphSearchRequest1[]>: .
   - `[AggregationFilters <String[]>]`: Contains one or more filters to obtain search results aggregated and filtered to a specific value of a field. Optional.Build this filter based on a prior search that aggregates by the same field. From the response of the prior search, identify the searchBucket that filters results to the specific value of the field, use the string in its aggregationFilterToken property, and build an aggregation filter string in the format '{field}:/'{aggregationFilterToken}/''. If multiple values for the same field need to be provided, use the strings in its aggregationFilterToken property and build an aggregation filter string in the format '{field}:or(/'{aggregationFilterToken1}/',/'{aggregationFilterToken2}/')'. For example, searching and aggregating drive items by file type returns a searchBucket for the file type docx in the response. You can conveniently use the aggregationFilterToken returned for this searchBucket in a subsequent search query and filter matches down to drive items of the docx file type. Example 1 and example 2 show the actual requests and responses.
@@ -202,11 +184,11 @@ REQUESTS <IMicrosoftGraphSearchRequest1[]>: .
         - `[From <String>]`: Defines the lower bound from which to compute the aggregation. This can be a numeric value or a string representation of a date using the YYYY-MM-DDTHH:mm:ss.sssZ format. Required.
         - `[To <String>]`: Defines the upper bound up to which to compute the aggregation. This can be a numeric value or a string representation of a date using the YYYY-MM-DDTHH:mm:ss.sssZ format. Required.
       - `[SortBy <String>]`: bucketAggregationSortProperty
-    - `[Field <String>]`: Specifies the field in the schema of the specified entity type that aggregation should be computed on. Required.
+    - `[Field <String>]`: Computes aggregation on the field while the field exists in current entity type. Required.
     - `[Size <Int32?>]`: The number of searchBucket resources to be returned. This is not required when the range is provided manually in the search request. Optional.
   - `[ContentSources <String[]>]`: Contains the connection to be targeted. Respects the following format : /external/connections/connectionid where connectionid is the ConnectionId defined in the Connectors Administration.  Note: contentSource is only applicable when entityType=externalItem. Optional.
   - `[EnableTopResults <Boolean?>]`: This triggers hybrid sort for messages: the first 3 messages are the most relevant. This property is only applicable to entityType=message. Optional.
-  - `[EntityTypes <String[]>]`: One or more types of resources expected in the response. Possible values are: list, site, listItem, message, event, drive, driveItem, externalItem. See known limitations for those combinations of two or more entity types that are supported in the same search request. Required.
+  - `[EntityTypes <String[]>]`: One or more types of resources expected in the response. Possible values are: list, site, listItem, message, event, drive, driveItem, person, externalItem. See known limitations for those combinations of two or more entity types that are supported in the same search request. Required.
   - `[Fields <String[]>]`: Contains the fields to be returned for each resource object specified in entityTypes, allowing customization of the fields returned by default otherwise, including additional fields such as custom managed properties from SharePoint and OneDrive, or custom fields in externalItem from content that Microsoft Graph connectors bring in. The fields property can be using the semantic labels applied to properties. For example, if a property is label as title, you can retrieve it using the following syntax : label_title.Optional.
   - `[From <Int32?>]`: Specifies the offset for the search results. Offset 0 returns the very first result. Optional.
   - `[Query <IMicrosoftGraphSearchQuery1>]`: searchQuery
@@ -215,6 +197,11 @@ REQUESTS <IMicrosoftGraphSearchRequest1[]>: .
     - `[QueryString1 <IMicrosoftGraphSearchQueryString2>]`: searchQueryString
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Query <String>]`: Contains the actual search terms of the request.
+    - `[QueryTemplate <String>]`: 
+  - `[QueryAlterationOptions <IMicrosoftGraphSearchAlterationOptions>]`: searchAlterationOptions
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[EnableModification <Boolean?>]`: Indicates whether spelling modifications are enabled. If enabled, user will get the search results for corrected query when there are no results for the original query with typos and get the spelling modification information in queryAlterationResponse property of the response. Optional.
+    - `[EnableSuggestion <Boolean?>]`: Indicates whether spelling suggestions are enabled. If enabled, user will get the search results for original search query and suggesting spelling correction in queryAlterationResponse property of the response for typos in query. Optional.
   - `[ResultTemplateOptions <IMicrosoftGraphResultTemplateOption>]`: resultTemplateOption
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[EnableResultTemplate <Boolean?>]`: Indicates whether search display layouts are enabled. If enabled, the user will get the result template to render the search results content in the resultTemplates property of the response. The result template is based on Adaptive Cards. This property is optional.
@@ -222,6 +209,12 @@ REQUESTS <IMicrosoftGraphSearchRequest1[]>: .
   - `[SortProperties <IMicrosoftGraphSortProperty[]>]`: Contains the ordered collection of fields and direction to sort results. There can be at most 5 sort properties in the collection. Optional.
     - `[IsDescending <Boolean?>]`: True if the sort order is descending. Default is false, with the sort order as ascending. Optional.
     - `[Name <String>]`: The name of the property to sort on. Required.
+  - `[StoredFields <String[]>]`: 
+  - `[TrimDuplicates <Boolean?>]`: 
+
+## RELATED LINKS
+
+   - `[Name <String>]`: The name of the property to sort on. Required.
   - `[StoredFields <String[]>]`: 
 
 ## RELATED LINKS

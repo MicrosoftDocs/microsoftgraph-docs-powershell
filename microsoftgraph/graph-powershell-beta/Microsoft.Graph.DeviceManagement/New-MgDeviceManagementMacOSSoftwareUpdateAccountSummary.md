@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmacossoftwareupdateaccountsummary
 schema: 2.0.0
@@ -18,14 +18,14 @@ New-MgDeviceManagementMacOSSoftwareUpdateAccountSummary [-AdditionalProperties <
  [-CategorySummaries <IMicrosoftGraphMacOSSoftwareUpdateCategorySummary[]>] [-DeviceId <String>]
  [-DeviceName <String>] [-DisplayName <String>] [-FailedUpdateCount <Int32>] [-Id <String>]
  [-LastUpdatedDateTime <DateTime>] [-OSVersion <String>] [-SuccessfulUpdateCount <Int32>]
- [-TotalUpdateCount <Int32>] [-UserId <String>] [-UserPrincipalName <String>] [-WhatIf] [-Confirm]
+ [-TotalUpdateCount <Int32>] [-UserId <String>] [-UserPrincipalName <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementMacOSSoftwareUpdateAccountSummary
- -BodyParameter <IMicrosoftGraphMacOSSoftwareUpdateAccountSummary> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMacOSSoftwareUpdateAccountSummary> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -39,7 +39,7 @@ The MacOS software update account summaries for this account.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -52,10 +52,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 MacOS software update account summary report for a device and user
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMacOSSoftwareUpdateAccountSummary
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMacOSSoftwareUpdateAccountSummary
 Parameter Sets: Create
 Aliases:
 
@@ -68,10 +68,10 @@ Accept wildcard characters: False
 
 ### -CategorySummaries
 Summary of the updates by category.
-To construct, see NOTES section for CATEGORYSUMMARIES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for CATEGORYSUMMARIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMacOSSoftwareUpdateCategorySummary[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMacOSSoftwareUpdateCategorySummary[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 The device ID.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 The device name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 The name of the report
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 Number of failed updates on the device.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 Last date time the report for this device was updated.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 The OS version.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 Number of successful updates on the device.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -206,7 +206,7 @@ Accept wildcard characters: False
 Number of total updates on the device.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -221,7 +221,7 @@ Accept wildcard characters: False
 The user ID.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -236,7 +236,7 @@ Accept wildcard characters: False
 The user principal name
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -251,7 +251,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -267,7 +267,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -284,9 +284,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMacOSSoftwareUpdateAccountSummary
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMacOSSoftwareUpdateAccountSummary
+
 ## NOTES
 
 ALIASES
@@ -307,14 +309,14 @@ BODYPARAMETER <IMicrosoftGraphMacOSSoftwareUpdateAccountSummary>: MacOS software
     - `[LastUpdatedDateTime <DateTime?>]`: Last date time the report for this device was updated.
     - `[SuccessfulUpdateCount <Int32?>]`: Number of successful updates on the device
     - `[TotalUpdateCount <Int32?>]`: Number of total updates on the device
-    - `[UpdateCategory <String>]`: macOSSoftwareUpdateCategory
+    - `[UpdateCategory <String>]`: MacOS Software Update Category
     - `[UpdateStateSummaries <IMicrosoftGraphMacOSSoftwareUpdateStateSummary[]>]`: Summary of the update states.
       - `[Id <String>]`: Read-only.
       - `[DisplayName <String>]`: Human readable name of the software update
       - `[LastUpdatedDateTime <DateTime?>]`: Last date time the report for this device and product key was updated.
       - `[ProductKey <String>]`: Product key of the software update.
-      - `[State <String>]`: macOSSoftwareUpdateState
-      - `[UpdateCategory <String>]`: macOSSoftwareUpdateCategory
+      - `[State <String>]`: MacOS Software Update State
+      - `[UpdateCategory <String>]`: MacOS Software Update Category
       - `[UpdateVersion <String>]`: Version of the software update
     - `[UserId <String>]`: The user ID.
   - `[DeviceId <String>]`: The device ID.
@@ -336,15 +338,16 @@ CATEGORYSUMMARIES <IMicrosoftGraphMacOSSoftwareUpdateCategorySummary[]>: Summary
   - `[LastUpdatedDateTime <DateTime?>]`: Last date time the report for this device was updated.
   - `[SuccessfulUpdateCount <Int32?>]`: Number of successful updates on the device
   - `[TotalUpdateCount <Int32?>]`: Number of total updates on the device
-  - `[UpdateCategory <String>]`: macOSSoftwareUpdateCategory
+  - `[UpdateCategory <String>]`: MacOS Software Update Category
   - `[UpdateStateSummaries <IMicrosoftGraphMacOSSoftwareUpdateStateSummary[]>]`: Summary of the update states.
     - `[Id <String>]`: Read-only.
     - `[DisplayName <String>]`: Human readable name of the software update
     - `[LastUpdatedDateTime <DateTime?>]`: Last date time the report for this device and product key was updated.
     - `[ProductKey <String>]`: Product key of the software update.
-    - `[State <String>]`: macOSSoftwareUpdateState
-    - `[UpdateCategory <String>]`: macOSSoftwareUpdateCategory
+    - `[State <String>]`: MacOS Software Update State
+    - `[UpdateCategory <String>]`: MacOS Software Update Category
     - `[UpdateVersion <String>]`: Version of the software update
   - `[UserId <String>]`: The user ID.
 
 ## RELATED LINKS
+

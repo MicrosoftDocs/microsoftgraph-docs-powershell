@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmanageddeviceencryptionstate
 schema: 2.0.0
@@ -19,13 +19,13 @@ New-MgDeviceManagementManagedDeviceEncryptionState [-AdditionalProperties <Hasht
  [-EncryptionPolicySettingState <String>] [-EncryptionReadinessState <String>] [-EncryptionState <String>]
  [-FileVaultStates <String>] [-Id <String>] [-OSVersion <String>]
  [-PolicyDetails <IMicrosoftGraphEncryptionReportPolicyDetails[]>] [-TpmSpecificationVersion <String>]
- [-UserPrincipalName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserPrincipalName <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementManagedDeviceEncryptionState -BodyParameter <IMicrosoftGraphManagedDeviceEncryptionState>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDeviceManagementManagedDeviceEncryptionState
+ -BodyParameter <IMicrosoftGraphManagedDeviceEncryptionState> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -39,7 +39,7 @@ Encryption report for devices in this account
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -51,10 +51,10 @@ Accept wildcard characters: False
 ```
 
 ### -AdvancedBitLockerStates
-advancedBitLockerState
+Advanced BitLocker State
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -67,10 +67,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Encryption report per device
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedDeviceEncryptionState
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDeviceEncryptionState
 Parameter Sets: Create
 Aliases:
 
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 Device name
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -97,10 +97,10 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceType
-deviceTypes
+Device type.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 complianceStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -127,10 +127,10 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionReadinessState
-encryptionReadinessState
+Encryption readiness state
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -142,10 +142,10 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionState
-encryptionState
+Encryption state
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -157,10 +157,10 @@ Accept wildcard characters: False
 ```
 
 ### -FileVaultStates
-fileVaultState
+FileVault State
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 Operating system version of the device
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -203,10 +203,10 @@ Accept wildcard characters: False
 
 ### -PolicyDetails
 Policy Details
-To construct, see NOTES section for POLICYDETAILS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for POLICYDETAILS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEncryptionReportPolicyDetails[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEncryptionReportPolicyDetails[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -221,7 +221,7 @@ Accept wildcard characters: False
 Device TPM Version
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -236,7 +236,7 @@ Accept wildcard characters: False
 User name
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -251,7 +251,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -267,7 +267,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -284,9 +284,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDeviceEncryptionState
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDeviceEncryptionState
+
 ## NOTES
 
 ALIASES
@@ -299,13 +301,13 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER <IMicrosoftGraphManagedDeviceEncryptionState>: Encryption report per device
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
-  - `[AdvancedBitLockerStates <String>]`: advancedBitLockerState
+  - `[AdvancedBitLockerStates <String>]`: Advanced BitLocker State
   - `[DeviceName <String>]`: Device name
-  - `[DeviceType <String>]`: deviceTypes
+  - `[DeviceType <String>]`: Device type.
   - `[EncryptionPolicySettingState <String>]`: complianceStatus
-  - `[EncryptionReadinessState <String>]`: encryptionReadinessState
-  - `[EncryptionState <String>]`: encryptionState
-  - `[FileVaultStates <String>]`: fileVaultState
+  - `[EncryptionReadinessState <String>]`: Encryption readiness state
+  - `[EncryptionState <String>]`: Encryption state
+  - `[FileVaultStates <String>]`: FileVault State
   - `[OSVersion <String>]`: Operating system version of the device
   - `[PolicyDetails <IMicrosoftGraphEncryptionReportPolicyDetails[]>]`: Policy Details
     - `[PolicyId <String>]`: Policy Id for Encryption Report
@@ -318,3 +320,4 @@ POLICYDETAILS <IMicrosoftGraphEncryptionReportPolicyDetails[]>: Policy Details
   - `[PolicyName <String>]`: Policy Name for Encryption Report
 
 ## RELATED LINKS
+

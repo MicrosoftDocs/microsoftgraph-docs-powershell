@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticmetrichistory
 schema: 2.0.0
@@ -15,15 +15,15 @@ User experience analytics metric history
 ### CreateExpanded (Default)
 ```
 New-MgDeviceManagementUserExperienceAnalyticMetricHistory [-AdditionalProperties <Hashtable>]
- [-DeviceId <String>] [-Id <String>] [-MetricDateTime <DateTime>] [-MetricType <String>]
- [-UserExperienceAnalyticsMetric <IMicrosoftGraphUserExperienceAnalyticsMetric>] [-WhatIf] [-Confirm]
+ [-DeviceId <String>] [-Id <String>] [-MetricDateTime <DateTime>] [-MetricType <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementUserExperienceAnalyticMetricHistory
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsMetricHistory> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsMetricHistory> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -37,7 +37,7 @@ User experience analytics metric history
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -50,10 +50,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analytics metric history.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsMetricHistory
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsMetricHistory
 Parameter Sets: Create
 Aliases:
 
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 The user experience analytics device id.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 The user experience analytics metric date time.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -113,23 +113,7 @@ Accept wildcard characters: False
 The user experience analytics metric type.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -UserExperienceAnalyticsMetric
-The user experience analytics metric contains the score and units of a metric of a user experience anlaytics category.
-To construct, see NOTES section for USEREXPERIENCEANALYTICSMETRIC properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsMetric
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -144,7 +128,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -160,7 +144,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -177,9 +161,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsMetricHistory
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsMetricHistory
+
 ## NOTES
 
 ALIASES
@@ -190,6 +176,15 @@ To create the parameters described below, construct a hash table containing the 
 
 
 BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsMetricHistory>: The user experience analytics metric history.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: Read-only.
+  - `[DeviceId <String>]`: The user experience analytics device id.
+  - `[MetricDateTime <DateTime?>]`: The user experience analytics metric date time.
+  - `[MetricType <String>]`: The user experience analytics metric type.
+
+## RELATED LINKS
+
+enceAnalyticsMetricHistory>: The user experience analytics metric history.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
   - `[DeviceId <String>]`: The user experience analytics device id.

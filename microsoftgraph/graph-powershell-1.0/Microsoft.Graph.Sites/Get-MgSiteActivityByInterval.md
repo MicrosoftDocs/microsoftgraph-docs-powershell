@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Sites-help.xml
+external help file:
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/get-mgsiteactivitybyinterval
 schema: 2.0.0
@@ -19,16 +19,16 @@ Get-MgSiteActivityByInterval -SiteId <String> [<CommonParameters>]
 
 ### Get2
 ```
-Get-MgSiteActivityByInterval -SiteId <String> -EndDateTime <String> -Interval <String> -StartDateTime <String>
+Get-MgSiteActivityByInterval -EndDateTime <String> -Interval <String> -SiteId <String> -StartDateTime <String>
  [<CommonParameters>]
 ```
 
-### GetViaIdentity2
+### GetViaIdentity1
 ```
 Get-MgSiteActivityByInterval -InputObject <ISitesIdentity> [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity2
 ```
 Get-MgSiteActivityByInterval -InputObject <ISitesIdentity> [<CommonParameters>]
 ```
@@ -44,7 +44,7 @@ Invoke function getActivitiesByInterval
 Usage: endDateTime={endDateTime}
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get2
 Aliases:
 
@@ -57,11 +57,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISitesIdentity
-Parameter Sets: GetViaIdentity2, GetViaIdentity1
+Type: Microsoft.Graph.PowerShell.Models.ISitesIdentity
+Parameter Sets: GetViaIdentity1, GetViaIdentity2
 Aliases:
 
 Required: True
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 Usage: interval={interval}
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get2
 Aliases:
 
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 key: id of site
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get1, Get2
 Aliases:
 
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 Usage: startDateTime={startDateTime}
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get2
 Aliases:
 
@@ -122,9 +122,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemActivityStat1
+
 ## NOTES
 
 ALIASES
@@ -152,11 +154,19 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[OnenoteSectionId <String>]`: key: id of onenoteSection
   - `[Path <String>]`: Usage: path={path}
   - `[PermissionId <String>]`: key: id of permission
+  - `[RelationId <String>]`: key: id of relation
+  - `[RichLongRunningOperationId <String>]`: key: id of richLongRunningOperation
+  - `[SetId <String>]`: key: id of set
+  - `[SetId1 <String>]`: key: id of set
   - `[SiteId <String>]`: key: id of site
   - `[SiteId1 <String>]`: key: id of site
   - `[SitePageId <String>]`: key: id of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime={startDateTime}
+  - `[StoreId <String>]`: key: id of store
   - `[SubscriptionId <String>]`: key: id of subscription
+  - `[TermId <String>]`: key: id of term
+  - `[TermId1 <String>]`: key: id of term
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

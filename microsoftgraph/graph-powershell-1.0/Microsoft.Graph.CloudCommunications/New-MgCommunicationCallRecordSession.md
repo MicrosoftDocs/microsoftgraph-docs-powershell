@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.CloudCommunications-help.xml
+external help file:
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcallrecordsession
 schema: 2.0.0
@@ -15,35 +15,35 @@ Nullable.
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgCommunicationCallRecordSession -CallRecordId <String> [-AdditionalProperties <Hashtable>]
  [-Callee <IMicrosoftGraphCallRecordsEndpoint>] [-Caller <IMicrosoftGraphCallRecordsEndpoint>]
  [-EndDateTime <DateTime>] [-FailureInfo <IMicrosoftGraphCallRecordsFailureInfo>] [-Id <String>]
  [-Modalities <String[]>] [-Segments <IMicrosoftGraphCallRecordsSegment[]>] [-StartDateTime <DateTime>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
 New-MgCommunicationCallRecordSession -CallRecordId <String> -BodyParameter <IMicrosoftGraphCallRecordsSession>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded1
+### CreateViaIdentity
+```
+New-MgCommunicationCallRecordSession -InputObject <ICloudCommunicationsIdentity>
+ -BodyParameter <IMicrosoftGraphCallRecordsSession> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
 ```
 New-MgCommunicationCallRecordSession -InputObject <ICloudCommunicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-Callee <IMicrosoftGraphCallRecordsEndpoint>]
  [-Caller <IMicrosoftGraphCallRecordsEndpoint>] [-EndDateTime <DateTime>]
  [-FailureInfo <IMicrosoftGraphCallRecordsFailureInfo>] [-Id <String>] [-Modalities <String[]>]
- [-Segments <IMicrosoftGraphCallRecordsSegment[]>] [-StartDateTime <DateTime>] [-WhatIf] [-Confirm]
+ [-Segments <IMicrosoftGraphCallRecordsSegment[]>] [-StartDateTime <DateTime>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### CreateViaIdentity1
-```
-New-MgCommunicationCallRecordSession -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <IMicrosoftGraphCallRecordsSession> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -60,8 +60,8 @@ Nullable.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -73,11 +73,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 session
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCallRecordsSession
-Parameter Sets: Create1, CreateViaIdentity1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallRecordsSession
+Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -89,11 +89,11 @@ Accept wildcard characters: False
 
 ### -Callee
 endpoint
-To construct, see NOTES section for CALLEE properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for CALLEE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCallRecordsEndpoint
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallRecordsEndpoint
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -105,11 +105,11 @@ Accept wildcard characters: False
 
 ### -Caller
 endpoint
-To construct, see NOTES section for CALLER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for CALLER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCallRecordsEndpoint
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallRecordsEndpoint
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -123,8 +123,8 @@ Accept wildcard characters: False
 key: id of callRecord
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -140,8 +140,8 @@ The DateTimeOffset type represents date and time information using ISO 8601 form
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.DateTime
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -153,11 +153,11 @@ Accept wildcard characters: False
 
 ### -FailureInfo
 failureInfo
-To construct, see NOTES section for FAILUREINFO properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for FAILUREINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCallRecordsFailureInfo
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallRecordsFailureInfo
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -171,8 +171,8 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -184,11 +184,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICloudCommunicationsIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
+Type: Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -203,8 +203,8 @@ List of modalities present in the session.
 Possible values are: unknown, audio, video, videoBasedScreenSharing, data, screenSharing, unknownFutureValue.
 
 ```yaml
-Type: String[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String[]
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -218,11 +218,11 @@ Accept wildcard characters: False
 The list of segments involved in the session.
 Read-only.
 Nullable.
-To construct, see NOTES section for SEGMENTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SEGMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCallRecordsSegment[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallRecordsSegment[]
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -238,8 +238,8 @@ The DateTimeOffset type represents date and time information using ISO 8601 form
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.DateTime
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -253,7 +253,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -269,7 +269,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -286,10 +286,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallRecordsSession
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallRecordsSession
+
 ## NOTES
 
 ALIASES
@@ -423,10 +426,14 @@ FAILUREINFO <IMicrosoftGraphCallRecordsFailureInfo>: failureInfo
   - `[Stage <String>]`: failureStage
 
 INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
+  - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call
   - `[CallRecordId <String>]`: key: id of callRecord
+  - `[CallTranscriptId <String>]`: key: id of callTranscript
   - `[CommsOperationId <String>]`: key: id of commsOperation
+  - `[MeetingAttendanceReportId <String>]`: key: id of meetingAttendanceReport
+  - `[MeetingRegistrationQuestionId <String>]`: key: id of meetingRegistrationQuestion
   - `[OnlineMeetingId <String>]`: key: id of onlineMeeting
   - `[ParticipantId <String>]`: key: id of participant
   - `[PresenceId <String>]`: key: id of presence
@@ -530,4 +537,3 @@ SEGMENTS <IMicrosoftGraphCallRecordsSegment[]>: The list of segments involved in
 
 ## RELATED LINKS
 
-## RELATED LINKS

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Applications-help.xml
+external help file:
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/new-mgonpremisepublishingprofileagentgroupagent
 schema: 2.0.0
@@ -19,39 +19,43 @@ Nullable.
 New-MgOnPremisePublishingProfileAgentGroupAgent -OnPremisesAgentGroupId <String>
  -OnPremisesPublishingProfileId <String> [-AdditionalProperties <Hashtable>]
  [-AgentGroups <IMicrosoftGraphOnPremisesAgentGroup[]>] [-ExternalIP <String>] [-Id <String>]
- [-MachineName <String>] [-Status <String>] [-SupportedPublishingTypes <String[]>] [-WhatIf] [-Confirm]
+ [-MachineName <String>] [-Status <String>] [-SupportedPublishingTypes <String[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### CreateExpanded1
-```
-New-MgOnPremisePublishingProfileAgentGroupAgent -OnPremisesAgentGroupId <String>
- -OnPremisesPublishingProfileId <String> -OnPremisesAgentId <String> [-AdditionalProperties <Hashtable>]
- [-AgentGroups <IMicrosoftGraphOnPremisesAgentGroup[]>] [-ExternalIP <String>] [-Id <String>]
- [-MachineName <String>] [-Status <String>] [-SupportedPublishingTypes <String[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Create1
-```
-New-MgOnPremisePublishingProfileAgentGroupAgent -OnPremisesAgentGroupId <String>
- -OnPremisesPublishingProfileId <String> -OnPremisesAgentId <String>
- -BodyParameter <IMicrosoftGraphOnPremisesAgent> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgOnPremisePublishingProfileAgentGroupAgent -OnPremisesAgentGroupId <String>
- -OnPremisesPublishingProfileId <String> -BodyParameter <IMicrosoftGraphOnPremisesAgent> [-WhatIf] [-Confirm]
+ -OnPremisesPublishingProfileId <String> -BodyParameter <IMicrosoftGraphOnPremisesAgent> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded1
+### Create1
+```
+New-MgOnPremisePublishingProfileAgentGroupAgent -OnPremisesAgentGroupId <String> -OnPremisesAgentId <String>
+ -OnPremisesPublishingProfileId <String> -BodyParameter <IMicrosoftGraphOnPremisesAgent> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### CreateExpanded1
+```
+New-MgOnPremisePublishingProfileAgentGroupAgent -OnPremisesAgentGroupId <String> -OnPremisesAgentId <String>
+ -OnPremisesPublishingProfileId <String> [-AdditionalProperties <Hashtable>]
+ [-AgentGroups <IMicrosoftGraphOnPremisesAgentGroup[]>] [-ExternalIP <String>] [-Id <String>]
+ [-MachineName <String>] [-Status <String>] [-SupportedPublishingTypes <String[]>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### CreateViaIdentity
 ```
 New-MgOnPremisePublishingProfileAgentGroupAgent -InputObject <IApplicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-AgentGroups <IMicrosoftGraphOnPremisesAgentGroup[]>]
- [-ExternalIP <String>] [-Id <String>] [-MachineName <String>] [-Status <String>]
- [-SupportedPublishingTypes <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphOnPremisesAgent> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity1
+```
+New-MgOnPremisePublishingProfileAgentGroupAgent -InputObject <IApplicationsIdentity>
+ -BodyParameter <IMicrosoftGraphOnPremisesAgent> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -59,19 +63,15 @@ New-MgOnPremisePublishingProfileAgentGroupAgent -InputObject <IApplicationsIdent
 New-MgOnPremisePublishingProfileAgentGroupAgent -InputObject <IApplicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-AgentGroups <IMicrosoftGraphOnPremisesAgentGroup[]>]
  [-ExternalIP <String>] [-Id <String>] [-MachineName <String>] [-Status <String>]
- [-SupportedPublishingTypes <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SupportedPublishingTypes <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### CreateViaIdentity1
+### CreateViaIdentityExpanded1
 ```
 New-MgOnPremisePublishingProfileAgentGroupAgent -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphOnPremisesAgent> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgOnPremisePublishingProfileAgentGroupAgent -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphOnPremisesAgent> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-AgentGroups <IMicrosoftGraphOnPremisesAgentGroup[]>]
+ [-ExternalIP <String>] [-Id <String>] [-MachineName <String>] [-Status <String>]
+ [-SupportedPublishingTypes <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -87,8 +87,8 @@ Nullable.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
+Type: System.Collections.Hashtable
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -102,11 +102,11 @@ Accept wildcard characters: False
 List of onPremisesAgentGroups that an onPremisesAgent is assigned to.
 Read-only.
 Nullable.
-To construct, see NOTES section for AGENTGROUPS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for AGENTGROUPS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOnPremisesAgentGroup[]
-Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnPremisesAgentGroup[]
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -118,11 +118,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 onPremisesAgent
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOnPremisesAgent
-Parameter Sets: Create1, Create, CreateViaIdentity1, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnPremisesAgent
+Parameter Sets: Create, Create1, CreateViaIdentity, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -137,8 +137,8 @@ The external IP address as detected by the service for the agent machine.
 Read-only
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
+Type: System.String
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -152,8 +152,8 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
+Type: System.String
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -165,11 +165,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IApplicationsIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentityExpanded, CreateViaIdentity1, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentity1, CreateViaIdentityExpanded, CreateViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -184,8 +184,8 @@ The name of the machine that the aggent is running on.
 Read-only
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
+Type: System.String
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -199,8 +199,8 @@ Accept wildcard characters: False
 key: id of onPremisesAgentGroup
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateExpanded1, Create1, Create
+Type: System.String
+Parameter Sets: Create, Create1, CreateExpanded, CreateExpanded1
 Aliases:
 
 Required: True
@@ -214,8 +214,8 @@ Accept wildcard characters: False
 key: id of onPremisesAgent
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
+Type: System.String
+Parameter Sets: Create1, CreateExpanded1
 Aliases:
 
 Required: True
@@ -229,8 +229,8 @@ Accept wildcard characters: False
 key: id of onPremisesPublishingProfile
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateExpanded1, Create1, Create
+Type: System.String
+Parameter Sets: Create, Create1, CreateExpanded, CreateExpanded1
 Aliases:
 
 Required: True
@@ -244,8 +244,8 @@ Accept wildcard characters: False
 agentStatus
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
+Type: System.String
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -259,8 +259,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
-Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
+Type: System.String[]
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -274,7 +274,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -290,7 +290,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -307,10 +307,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnPremisesAgent
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnPremisesAgent
+
 ## NOTES
 
 ALIASES
@@ -369,6 +372,7 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[DirectoryDefinitionId <String>]`: key: id of directoryDefinition
   - `[EndpointId <String>]`: key: id of endpoint
   - `[ExtensionPropertyId <String>]`: key: id of extensionProperty
+  - `[FederatedIdentityCredentialId <String>]`: key: id of federatedIdentityCredential
   - `[GroupId <String>]`: key: id of group
   - `[LicenseDetailsId <String>]`: key: id of licenseDetails
   - `[OnPremisesAgentGroupId <String>]`: key: id of onPremisesAgentGroup
@@ -384,3 +388,4 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

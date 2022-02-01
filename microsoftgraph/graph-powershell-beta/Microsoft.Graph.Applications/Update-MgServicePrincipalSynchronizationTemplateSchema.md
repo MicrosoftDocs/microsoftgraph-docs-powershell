@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Applications-help.xml
+external help file:
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/update-mgserviceprincipalsynchronizationtemplateschema
 schema: 2.0.0
@@ -17,29 +17,29 @@ Default synchronization schema for the jobs based on this template.
 Update-MgServicePrincipalSynchronizationTemplateSchema -ServicePrincipalId <String>
  -SynchronizationTemplateId <String> [-AdditionalProperties <Hashtable>]
  [-Directories <IMicrosoftGraphDirectoryDefinition[]>] [-Id <String>]
- [-SynchronizationRules <IMicrosoftGraphSynchronizationRule[]>] [-Version <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-SynchronizationRules <IMicrosoftGraphSynchronizationRule[]>] [-Version <String>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgServicePrincipalSynchronizationTemplateSchema -ServicePrincipalId <String>
  -SynchronizationTemplateId <String> -BodyParameter <IMicrosoftGraphSynchronizationSchema> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgServicePrincipalSynchronizationTemplateSchema -InputObject <IApplicationsIdentity>
+ -BodyParameter <IMicrosoftGraphSynchronizationSchema> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgServicePrincipalSynchronizationTemplateSchema -InputObject <IApplicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-Directories <IMicrosoftGraphDirectoryDefinition[]>] [-Id <String>]
- [-SynchronizationRules <IMicrosoftGraphSynchronizationRule[]>] [-Version <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgServicePrincipalSynchronizationTemplateSchema -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphSynchronizationSchema> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SynchronizationRules <IMicrosoftGraphSynchronizationRule[]>] [-Version <String>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,7 +53,7 @@ Default synchronization schema for the jobs based on this template.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -66,10 +66,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 synchronizationSchema
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSynchronizationSchema
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSynchronizationSchema
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -82,10 +82,10 @@ Accept wildcard characters: False
 
 ### -Directories
 Contains the collection of directories and all of their objects.
-To construct, see NOTES section for DIRECTORIES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DIRECTORIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryDefinition[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryDefinition[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -113,11 +113,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IApplicationsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -146,8 +146,8 @@ Accept wildcard characters: False
 key: id of servicePrincipal
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -159,10 +159,10 @@ Accept wildcard characters: False
 
 ### -SynchronizationRules
 A collection of synchronization rules configured for the synchronizationJob or synchronizationTemplate.
-To construct, see NOTES section for SYNCHRONIZATIONRULES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SYNCHRONIZATIONRULES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSynchronizationRule[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSynchronizationRule[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -177,8 +177,8 @@ Accept wildcard characters: False
 key: id of synchronizationTemplate
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 The version of the schema, updated automatically with every schema change.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -223,7 +223,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -240,10 +240,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSynchronizationSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -371,6 +374,7 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[DirectoryDefinitionId <String>]`: key: id of directoryDefinition
   - `[EndpointId <String>]`: key: id of endpoint
   - `[ExtensionPropertyId <String>]`: key: id of extensionProperty
+  - `[FederatedIdentityCredentialId <String>]`: key: id of federatedIdentityCredential
   - `[GroupId <String>]`: key: id of group
   - `[LicenseDetailsId <String>]`: key: id of licenseDetails
   - `[OnPremisesAgentGroupId <String>]`: key: id of onPremisesAgentGroup
@@ -434,4 +438,3 @@ SYNCHRONIZATIONRULES <IMicrosoftGraphSynchronizationRule[]>: A collection of syn
 
 ## RELATED LINKS
 
-## RELATED LINKS

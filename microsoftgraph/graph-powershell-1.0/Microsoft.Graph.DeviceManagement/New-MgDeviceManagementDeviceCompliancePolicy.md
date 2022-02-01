@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicy
 schema: 2.0.0
@@ -17,19 +17,19 @@ The device compliance policies.
 New-MgDeviceManagementDeviceCompliancePolicy [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphDeviceCompliancePolicyAssignment[]>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DeviceSettingStateSummaries <IMicrosoftGraphSettingStateDeviceSummary[]>]
- [-DeviceStatusOverview <IMicrosoftGraphDeviceComplianceDeviceOverview>]
- [-DeviceStatuses <IMicrosoftGraphDeviceComplianceDeviceStatus[]>] [-DisplayName <String>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>]
+ [-DeviceStatuses <IMicrosoftGraphDeviceComplianceDeviceStatus[]>]
+ [-DeviceStatusOverview <IMicrosoftGraphDeviceComplianceDeviceOverview>] [-DisplayName <String>]
+ [-Id <String>] [-LastModifiedDateTime <DateTime>]
  [-ScheduledActionsForRule <IMicrosoftGraphDeviceComplianceScheduledActionForRule[]>]
- [-UserStatusOverview <IMicrosoftGraphDeviceComplianceUserOverview>]
- [-UserStatuses <IMicrosoftGraphDeviceComplianceUserStatus[]>] [-Version <Int32>] [-WhatIf] [-Confirm]
+ [-UserStatuses <IMicrosoftGraphDeviceComplianceUserStatus[]>]
+ [-UserStatusOverview <IMicrosoftGraphDeviceComplianceUserOverview>] [-Version <Int32>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgDeviceManagementDeviceCompliancePolicy -BodyParameter <IMicrosoftGraphDeviceCompliancePolicy> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgDeviceManagementDeviceCompliancePolicy -BodyParameter <IMicrosoftGraphDeviceCompliancePolicy> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,7 +43,7 @@ The device compliance policies.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -56,10 +56,10 @@ Accept wildcard characters: False
 
 ### -Assignments
 The collection of assignments for this compliance policy.
-To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceCompliancePolicyAssignment[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicyAssignment[]
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -74,10 +74,10 @@ Accept wildcard characters: False
 This is the base class for Compliance policy.
 Compliance policies are platform specific and individual per-platform compliance policies inherit from here.
 
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceCompliancePolicy
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicy
 Parameter Sets: Create1
 Aliases:
 
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 DateTime the object was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 Admin provided description of the Device Configuration.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -120,10 +120,10 @@ Accept wildcard characters: False
 
 ### -DeviceSettingStateSummaries
 Compliance Setting State Device Summary
-To construct, see NOTES section for DEVICESETTINGSTATESUMMARIES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEVICESETTINGSTATESUMMARIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSettingStateDeviceSummary[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSettingStateDeviceSummary[]
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -136,10 +136,10 @@ Accept wildcard characters: False
 
 ### -DeviceStatuses
 List of DeviceComplianceDeviceStatus.
-To construct, see NOTES section for DEVICESTATUSES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEVICESTATUSES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceComplianceDeviceStatus[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceComplianceDeviceStatus[]
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -152,10 +152,10 @@ Accept wildcard characters: False
 
 ### -DeviceStatusOverview
 deviceComplianceDeviceOverview
-To construct, see NOTES section for DEVICESTATUSOVERVIEW properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEVICESTATUSOVERVIEW properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceComplianceDeviceOverview
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceComplianceDeviceOverview
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 Admin provided name of the device configuration.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 DateTime the object was last modified.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -213,10 +213,10 @@ Accept wildcard characters: False
 
 ### -ScheduledActionsForRule
 The list of scheduled action for this rule
-To construct, see NOTES section for SCHEDULEDACTIONSFORRULE properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SCHEDULEDACTIONSFORRULE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceComplianceScheduledActionForRule[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceComplianceScheduledActionForRule[]
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -229,10 +229,10 @@ Accept wildcard characters: False
 
 ### -UserStatuses
 List of DeviceComplianceUserStatus.
-To construct, see NOTES section for USERSTATUSES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for USERSTATUSES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceComplianceUserStatus[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceComplianceUserStatus[]
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -245,10 +245,10 @@ Accept wildcard characters: False
 
 ### -UserStatusOverview
 deviceComplianceUserOverview
-To construct, see NOTES section for USERSTATUSOVERVIEW properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for USERSTATUSOVERVIEW properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceComplianceUserOverview
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceComplianceUserOverview
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -263,7 +263,7 @@ Accept wildcard characters: False
 Version of the device configuration.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -278,7 +278,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -294,7 +294,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -311,9 +311,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicy
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicy
+
 ## NOTES
 
 ALIASES
@@ -371,10 +373,10 @@ BODYPARAMETER <IMicrosoftGraphDeviceCompliancePolicy>: This is the base class fo
   - `[LastModifiedDateTime <DateTime?>]`: DateTime the object was last modified.
   - `[ScheduledActionsForRule <IMicrosoftGraphDeviceComplianceScheduledActionForRule[]>]`: The list of scheduled action for this rule
     - `[Id <String>]`: Read-only.
-    - `[RuleName <String>]`: Name of the rule which this scheduled action applies to.
-    - `[ScheduledActionConfigurations <IMicrosoftGraphDeviceComplianceActionItem[]>]`: The list of scheduled action configurations for this compliance policy.
+    - `[RuleName <String>]`: Name of the rule which this scheduled action applies to. Currently scheduled actions are created per policy instead of per rule, thus RuleName is always set to default value PasswordRequired.
+    - `[ScheduledActionConfigurations <IMicrosoftGraphDeviceComplianceActionItem[]>]`: The list of scheduled action configurations for this compliance policy. Compliance policy must have one and only one block scheduled action.
       - `[Id <String>]`: Read-only.
-      - `[ActionType <String>]`: 
+      - `[ActionType <String>]`: Scheduled Action Type Enum
       - `[GracePeriodHours <Int32?>]`: Number of hours to wait till the action will be enforced. Valid values 0 to 8760
       - `[NotificationMessageCcList <String[]>]`: A list of group IDs to speicify who to CC this notification message to.
       - `[NotificationTemplateId <String>]`: What notification Message template to use
@@ -432,10 +434,10 @@ DEVICESTATUSOVERVIEW <IMicrosoftGraphDeviceComplianceDeviceOverview>: deviceComp
 
 SCHEDULEDACTIONSFORRULE <IMicrosoftGraphDeviceComplianceScheduledActionForRule[]>: The list of scheduled action for this rule
   - `[Id <String>]`: Read-only.
-  - `[RuleName <String>]`: Name of the rule which this scheduled action applies to.
-  - `[ScheduledActionConfigurations <IMicrosoftGraphDeviceComplianceActionItem[]>]`: The list of scheduled action configurations for this compliance policy.
+  - `[RuleName <String>]`: Name of the rule which this scheduled action applies to. Currently scheduled actions are created per policy instead of per rule, thus RuleName is always set to default value PasswordRequired.
+  - `[ScheduledActionConfigurations <IMicrosoftGraphDeviceComplianceActionItem[]>]`: The list of scheduled action configurations for this compliance policy. Compliance policy must have one and only one block scheduled action.
     - `[Id <String>]`: Read-only.
-    - `[ActionType <String>]`: 
+    - `[ActionType <String>]`: Scheduled Action Type Enum
     - `[GracePeriodHours <Int32?>]`: Number of hours to wait till the action will be enforced. Valid values 0 to 8760
     - `[NotificationMessageCcList <String[]>]`: A list of group IDs to speicify who to CC this notification message to.
     - `[NotificationTemplateId <String>]`: What notification Message template to use
@@ -460,3 +462,4 @@ USERSTATUSOVERVIEW <IMicrosoftGraphDeviceComplianceUserOverview>: deviceComplian
   - `[SuccessCount <Int32?>]`: Number of succeeded Users
 
 ## RELATED LINKS
+

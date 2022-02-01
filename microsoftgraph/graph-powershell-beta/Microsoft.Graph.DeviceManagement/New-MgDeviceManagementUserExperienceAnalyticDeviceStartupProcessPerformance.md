@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticdevicestartupprocessperformance
 schema: 2.0.0
@@ -14,16 +14,16 @@ User experience analytics device Startup Process Performance
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance [-AdditionalProperties <Hashtable>]
- [-DeviceCount <Int64>] [-Id <String>] [-MedianImpactInMS <Int32>] [-ProcessName <String>]
- [-ProductName <String>] [-Publisher <String>] [-TotalImpactInMS <Int32>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance
+ [-AdditionalProperties <Hashtable>] [-DeviceCount <Int64>] [-Id <String>] [-MedianImpactInMS <Int32>]
+ [-MedianImpactInMs2 <Int64>] [-ProcessName <String>] [-ProductName <String>] [-Publisher <String>]
+ [-TotalImpactInMS <Int32>] [-TotalImpactInMs2 <Int64>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcessPerformance> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcessPerformance> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -38,7 +38,7 @@ User experience analytics device Startup Process Performance
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -51,10 +51,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analytics device startup process performance.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcessPerformance
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcessPerformance
 Parameter Sets: Create
 Aliases:
 
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 User experience analytics device startup process summarized count.
 
 ```yaml
-Type: Int64
+Type: System.Int64
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -99,7 +99,22 @@ Accept wildcard characters: False
 User experience analytics device startup process median impact in milliseconds.
 
 ```yaml
-Type: Int32
+Type: System.Int32
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MedianImpactInMs2
+User experience analytics device startup process median impact in milliseconds.
+
+```yaml
+Type: System.Int64
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -114,7 +129,7 @@ Accept wildcard characters: False
 User experience analytics device startup process name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -129,7 +144,7 @@ Accept wildcard characters: False
 The user experience analytics device startup process product name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -144,7 +159,7 @@ Accept wildcard characters: False
 The User experience analytics device startup process publisher.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -159,7 +174,22 @@ Accept wildcard characters: False
 User experience analytics device startup process total impact in milliseconds.
 
 ```yaml
-Type: Int32
+Type: System.Int32
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TotalImpactInMs2
+User experience analytics device startup process total impact in milliseconds.
+
+```yaml
+Type: System.Int64
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -174,7 +204,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -190,7 +220,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -207,9 +237,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcessPerformance
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcessPerformance
+
 ## NOTES
 
 ALIASES
@@ -224,9 +256,12 @@ BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcessPerform
   - `[Id <String>]`: Read-only.
   - `[DeviceCount <Int64?>]`: User experience analytics device startup process summarized count.
   - `[MedianImpactInMS <Int32?>]`: User experience analytics device startup process median impact in milliseconds.
+  - `[MedianImpactInMs2 <Int64?>]`: User experience analytics device startup process median impact in milliseconds.
   - `[ProcessName <String>]`: User experience analytics device startup process name.
   - `[ProductName <String>]`: The user experience analytics device startup process product name.
   - `[Publisher <String>]`: The User experience analytics device startup process publisher.
   - `[TotalImpactInMS <Int32?>]`: User experience analytics device startup process total impact in milliseconds.
+  - `[TotalImpactInMs2 <Int64?>]`: User experience analytics device startup process total impact in milliseconds.
 
 ## RELATED LINKS
+

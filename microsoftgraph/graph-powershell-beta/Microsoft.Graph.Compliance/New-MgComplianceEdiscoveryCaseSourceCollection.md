@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Compliance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Compliance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/new-mgcomplianceediscoverycasesourcecollection
 schema: 2.0.0
@@ -14,42 +14,42 @@ Returns a list of sourceCollection objects associated with this case.
 
 ### CreateExpanded (Default)
 ```
-New-MgComplianceEdiscoveryCaseSourceCollection -CaseId <String>
- [-AddToReviewSetOperation <IMicrosoftGraphEdiscoveryAddToReviewSetOperation>]
- [-AdditionalProperties <Hashtable>] [-AdditionalSources <IMicrosoftGraphEdiscoveryDataSource[]>]
- [-ContentQuery <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
+New-MgComplianceEdiscoveryCaseSourceCollection -CaseId <String> [-AdditionalProperties <Hashtable>]
+ [-AdditionalSources <IMicrosoftGraphEdiscoveryDataSource[]>]
+ [-AddToReviewSetOperation <IMicrosoftGraphEdiscoveryAddToReviewSetOperation>] [-ContentQuery <String>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-CustodianSources <IMicrosoftGraphEdiscoveryDataSource[]>] [-DataSourceScopes <String>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-LastEstimateStatisticsOperation <IMicrosoftGraphEdiscoveryEstimateStatisticsOperation>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-NoncustodialSources <IMicrosoftGraphEdiscoveryNoncustodialDataSource[]>] [-WhatIf] [-Confirm]
+ [-NoncustodialSources <IMicrosoftGraphEdiscoveryNoncustodialDataSource[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgComplianceEdiscoveryCaseSourceCollection -CaseId <String>
- -BodyParameter <IMicrosoftGraphEdiscoverySourceCollection> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgComplianceEdiscoveryCaseSourceCollection -InputObject <IComplianceIdentity>
- [-AddToReviewSetOperation <IMicrosoftGraphEdiscoveryAddToReviewSetOperation>]
- [-AdditionalProperties <Hashtable>] [-AdditionalSources <IMicrosoftGraphEdiscoveryDataSource[]>]
- [-ContentQuery <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
- [-CustodianSources <IMicrosoftGraphEdiscoveryDataSource[]>] [-DataSourceScopes <String>]
- [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-LastEstimateStatisticsOperation <IMicrosoftGraphEdiscoveryEstimateStatisticsOperation>]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-NoncustodialSources <IMicrosoftGraphEdiscoveryNoncustodialDataSource[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEdiscoverySourceCollection> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgComplianceEdiscoveryCaseSourceCollection -InputObject <IComplianceIdentity>
- -BodyParameter <IMicrosoftGraphEdiscoverySourceCollection> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEdiscoverySourceCollection> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgComplianceEdiscoveryCaseSourceCollection -InputObject <IComplianceIdentity>
+ [-AdditionalProperties <Hashtable>] [-AdditionalSources <IMicrosoftGraphEdiscoveryDataSource[]>]
+ [-AddToReviewSetOperation <IMicrosoftGraphEdiscoveryAddToReviewSetOperation>] [-ContentQuery <String>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
+ [-CustodianSources <IMicrosoftGraphEdiscoveryDataSource[]>] [-DataSourceScopes <String>]
+ [-Description <String>] [-DisplayName <String>] [-Id <String>]
+ [-LastEstimateStatisticsOperation <IMicrosoftGraphEdiscoveryEstimateStatisticsOperation>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
+ [-NoncustodialSources <IMicrosoftGraphEdiscoveryNoncustodialDataSource[]>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -63,7 +63,7 @@ Returns a list of sourceCollection objects associated with this case.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -76,10 +76,10 @@ Accept wildcard characters: False
 
 ### -AdditionalSources
 Adds an additional source to the sourceCollection.
-To construct, see NOTES section for ADDITIONALSOURCES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ADDITIONALSOURCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEdiscoveryDataSource[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryDataSource[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -92,10 +92,10 @@ Accept wildcard characters: False
 
 ### -AddToReviewSetOperation
 addToReviewSetOperation
-To construct, see NOTES section for ADDTOREVIEWSETOPERATION properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ADDTOREVIEWSETOPERATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEdiscoveryAddToReviewSetOperation
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryAddToReviewSetOperation
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -108,10 +108,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 sourceCollection
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEdiscoverySourceCollection
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoverySourceCollection
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -126,8 +126,8 @@ Accept wildcard characters: False
 key: id of case
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -140,10 +140,10 @@ Accept wildcard characters: False
 ### -ContentQuery
 The query string in KQL (Keyword Query Language) query.
 For details, see Keyword queries and search conditions for Content Search and eDiscovery.
-You can refine searches by using fields paired with values; for example, subject:'Quarterly Financials' AND Date\>=06/01/2016 AND Date\<=07/01/2016
+You can refine searches by using fields paired with values; for example, subject:'Quarterly Financials' AND Date\>=06/01/2016 AND Date\<=07/01/2016.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -156,10 +156,10 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 identitySet
-To construct, see NOTES section for CREATEDBY properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 The date and time the sourceCollection was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -187,10 +187,10 @@ Accept wildcard characters: False
 
 ### -CustodianSources
 Custodian sources that are included in the sourceCollection.
-To construct, see NOTES section for CUSTODIANSOURCES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for CUSTODIANSOURCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEdiscoveryDataSource[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryDataSource[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -205,7 +205,7 @@ Accept wildcard characters: False
 dataSourceScopes
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -217,10 +217,10 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-The description of the sourceCollection
+The description of the sourceCollection.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -232,10 +232,10 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-The display name of the sourceCollection
+The display name of the sourceCollection.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -250,7 +250,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -263,11 +263,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IComplianceIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IComplianceIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -279,10 +279,10 @@ Accept wildcard characters: False
 
 ### -LastEstimateStatisticsOperation
 estimateStatisticsOperation
-To construct, see NOTES section for LASTESTIMATESTATISTICSOPERATION properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for LASTESTIMATESTATISTICSOPERATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEdiscoveryEstimateStatisticsOperation
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryEstimateStatisticsOperation
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -295,10 +295,10 @@ Accept wildcard characters: False
 
 ### -LastModifiedBy
 identitySet
-To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -313,7 +313,7 @@ Accept wildcard characters: False
 The last date and time the sourceCollection was modified.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -326,10 +326,10 @@ Accept wildcard characters: False
 
 ### -NoncustodialSources
 noncustodialDataSource sources that are included in the sourceCollection
-To construct, see NOTES section for NONCUSTODIALSOURCES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for NONCUSTODIALSOURCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEdiscoveryNoncustodialDataSource[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryNoncustodialDataSource[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -344,7 +344,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -360,7 +360,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -377,10 +377,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoverySourceCollection
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoverySourceCollection
+
 ## NOTES
 
 ALIASES
@@ -396,8 +399,8 @@ ADDITIONALSOURCES <IMicrosoftGraphEdiscoveryDataSource[]>: Adds an additional so
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
+      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+      - `[Id <String>]`: The identifier of the identity. This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: The date and time the dataSource was created.
@@ -411,8 +414,8 @@ ADDTOREVIEWSETOPERATION <IMicrosoftGraphEdiscoveryAddToReviewSetOperation>: addT
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
+      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+      - `[Id <String>]`: The identifier of the identity. This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: The date and time the operation was created.
@@ -447,13 +450,13 @@ ADDTOREVIEWSETOPERATION <IMicrosoftGraphEdiscoveryAddToReviewSetOperation>: addT
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[CreatedDateTime <DateTime?>]`: The date and time the dataSource was created.
       - `[DisplayName <String>]`: The display name of the dataSource. This will be the name of the SharePoint site.
-    - `[ContentQuery <String>]`: The query string in KQL (Keyword Query Language) query. For details, see Keyword queries and search conditions for Content Search and eDiscovery.  You can refine searches by using fields paired with values; for example, subject:'Quarterly Financials' AND Date>=06/01/2016 AND Date<=07/01/2016
+    - `[ContentQuery <String>]`: The query string in KQL (Keyword Query Language) query. For details, see Keyword queries and search conditions for Content Search and eDiscovery. You can refine searches by using fields paired with values; for example, subject:'Quarterly Financials' AND Date>=06/01/2016 AND Date<=07/01/2016.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[CreatedDateTime <DateTime?>]`: The date and time the sourceCollection was created.
     - `[CustodianSources <IMicrosoftGraphEdiscoveryDataSource[]>]`: Custodian sources that are included in the sourceCollection.
     - `[DataSourceScopes <String>]`: dataSourceScopes
-    - `[Description <String>]`: The description of the sourceCollection
-    - `[DisplayName <String>]`: The display name of the sourceCollection
+    - `[Description <String>]`: The description of the sourceCollection.
+    - `[DisplayName <String>]`: The display name of the sourceCollection.
     - `[LastEstimateStatisticsOperation <IMicrosoftGraphEdiscoveryEstimateStatisticsOperation>]`: estimateStatisticsOperation
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Action <String>]`: caseAction
@@ -504,8 +507,8 @@ BODYPARAMETER <IMicrosoftGraphEdiscoverySourceCollection>: sourceCollection
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
+        - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+        - `[Id <String>]`: The identifier of the identity. This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[CreatedDateTime <DateTime?>]`: The date and time the operation was created.
@@ -537,13 +540,13 @@ BODYPARAMETER <IMicrosoftGraphEdiscoverySourceCollection>: sourceCollection
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[CreatedDateTime <DateTime?>]`: The date and time the dataSource was created.
     - `[DisplayName <String>]`: The display name of the dataSource. This will be the name of the SharePoint site.
-  - `[ContentQuery <String>]`: The query string in KQL (Keyword Query Language) query. For details, see Keyword queries and search conditions for Content Search and eDiscovery.  You can refine searches by using fields paired with values; for example, subject:'Quarterly Financials' AND Date>=06/01/2016 AND Date<=07/01/2016
+  - `[ContentQuery <String>]`: The query string in KQL (Keyword Query Language) query. For details, see Keyword queries and search conditions for Content Search and eDiscovery. You can refine searches by using fields paired with values; for example, subject:'Quarterly Financials' AND Date>=06/01/2016 AND Date<=07/01/2016.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[CreatedDateTime <DateTime?>]`: The date and time the sourceCollection was created.
   - `[CustodianSources <IMicrosoftGraphEdiscoveryDataSource[]>]`: Custodian sources that are included in the sourceCollection.
   - `[DataSourceScopes <String>]`: dataSourceScopes
-  - `[Description <String>]`: The description of the sourceCollection
-  - `[DisplayName <String>]`: The display name of the sourceCollection
+  - `[Description <String>]`: The description of the sourceCollection.
+  - `[DisplayName <String>]`: The display name of the sourceCollection.
   - `[LastEstimateStatisticsOperation <IMicrosoftGraphEdiscoveryEstimateStatisticsOperation>]`: estimateStatisticsOperation
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Action <String>]`: caseAction
@@ -587,8 +590,8 @@ CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
+    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+    - `[Id <String>]`: The identifier of the identity. This property is read-only.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -598,8 +601,8 @@ CUSTODIANSOURCES <IMicrosoftGraphEdiscoveryDataSource[]>: Custodian sources that
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
+      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+      - `[Id <String>]`: The identifier of the identity. This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: The date and time the dataSource was created.
@@ -628,8 +631,8 @@ LASTESTIMATESTATISTICSOPERATION <IMicrosoftGraphEdiscoveryEstimateStatisticsOper
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
+      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+      - `[Id <String>]`: The identifier of the identity. This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: The date and time the operation was created.
@@ -678,13 +681,13 @@ LASTESTIMATESTATISTICSOPERATION <IMicrosoftGraphEdiscoveryEstimateStatisticsOper
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[CreatedDateTime <DateTime?>]`: The date and time the dataSource was created.
       - `[DisplayName <String>]`: The display name of the dataSource. This will be the name of the SharePoint site.
-    - `[ContentQuery <String>]`: The query string in KQL (Keyword Query Language) query. For details, see Keyword queries and search conditions for Content Search and eDiscovery.  You can refine searches by using fields paired with values; for example, subject:'Quarterly Financials' AND Date>=06/01/2016 AND Date<=07/01/2016
+    - `[ContentQuery <String>]`: The query string in KQL (Keyword Query Language) query. For details, see Keyword queries and search conditions for Content Search and eDiscovery. You can refine searches by using fields paired with values; for example, subject:'Quarterly Financials' AND Date>=06/01/2016 AND Date<=07/01/2016.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[CreatedDateTime <DateTime?>]`: The date and time the sourceCollection was created.
     - `[CustodianSources <IMicrosoftGraphEdiscoveryDataSource[]>]`: Custodian sources that are included in the sourceCollection.
     - `[DataSourceScopes <String>]`: dataSourceScopes
-    - `[Description <String>]`: The description of the sourceCollection
-    - `[DisplayName <String>]`: The display name of the sourceCollection
+    - `[Description <String>]`: The description of the sourceCollection.
+    - `[DisplayName <String>]`: The display name of the sourceCollection.
     - `[LastEstimateStatisticsOperation <IMicrosoftGraphEdiscoveryEstimateStatisticsOperation>]`: estimateStatisticsOperation
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: The last date and time the sourceCollection was modified.
@@ -714,8 +717,8 @@ LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
+    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+    - `[Id <String>]`: The identifier of the identity. This property is read-only.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -730,8 +733,8 @@ NONCUSTODIALSOURCES <IMicrosoftGraphEdiscoveryNoncustodialDataSource[]>: noncust
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
+        - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+        - `[Id <String>]`: The identifier of the identity. This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[CreatedDateTime <DateTime?>]`: The date and time the operation was created.
@@ -744,6 +747,20 @@ NONCUSTODIALSOURCES <IMicrosoftGraphEdiscoveryNoncustodialDataSource[]>: noncust
     - `[Status <String>]`: caseOperationStatus
     - `[Id <String>]`: Read-only.
   - `[LastModifiedDateTime <DateTime?>]`: Last modified date and time of the dataSourceContainer.
+  - `[ReleasedDateTime <DateTime?>]`: Date and time that the dataSourceContainer was released from the case.
+  - `[Status <String>]`: dataSourceContainerStatus
+  - `[Id <String>]`: Read-only.
+  - `[ApplyHoldToSource <Boolean?>]`: Indicates if hold is applied to non-custodial data source (such as mailbox or site).
+  - `[DataSource <IMicrosoftGraphEdiscoveryDataSource>]`: dataSource
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: Read-only.
+    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[CreatedDateTime <DateTime?>]`: The date and time the dataSource was created.
+    - `[DisplayName <String>]`: The display name of the dataSource. This will be the name of the SharePoint site.
+
+## RELATED LINKS
+
+modified date and time of the dataSourceContainer.
   - `[ReleasedDateTime <DateTime?>]`: Date and time that the dataSourceContainer was released from the case.
   - `[Status <String>]`: dataSourceContainerStatus
   - `[Id <String>]`: Read-only.

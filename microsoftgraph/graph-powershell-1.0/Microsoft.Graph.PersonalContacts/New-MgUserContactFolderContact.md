@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.PersonalContacts-help.xml
+external help file:
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.personalcontacts/new-mgusercontactfoldercontact
 schema: 2.0.0
@@ -31,13 +31,19 @@ New-MgUserContactFolderContact -ContactFolderId <String> -UserId <String> [-Addi
  [-PersonalNotes <String>] [-Photo <IMicrosoftGraphProfilePhoto>] [-Profession <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-SpouseName <String>]
  [-Surname <String>] [-Title <String>] [-YomiCompanyName <String>] [-YomiGivenName <String>]
- [-YomiSurname <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-YomiSurname <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create1
 ```
 New-MgUserContactFolderContact -ContactFolderId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphContact> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphContact> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity1
+```
+New-MgUserContactFolderContact -InputObject <IPersonalContactsIdentity>
+ -BodyParameter <IMicrosoftGraphContact> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded1
@@ -56,13 +62,7 @@ New-MgUserContactFolderContact -InputObject <IPersonalContactsIdentity> [-Additi
  [-PersonalNotes <String>] [-Photo <IMicrosoftGraphProfilePhoto>] [-Profession <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-SpouseName <String>]
  [-Surname <String>] [-Title <String>] [-YomiCompanyName <String>] [-YomiGivenName <String>]
- [-YomiSurname <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity1
-```
-New-MgUserContactFolderContact -InputObject <IPersonalContactsIdentity> -BodyParameter <IMicrosoftGraphContact>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-YomiSurname <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -79,7 +79,7 @@ Nullable.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 The name of the contact's assistant.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -111,7 +111,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -124,10 +124,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 contact
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphContact
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContact
 Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
@@ -140,10 +140,10 @@ Accept wildcard characters: False
 
 ### -BusinessAddress
 physicalAddress
-To construct, see NOTES section for BUSINESSADDRESS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BUSINESSADDRESS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPhysicalAddress
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPhysicalAddress
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 The business home page of the contact.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 The contact's business phone numbers.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 The categories associated with the item
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -206,7 +206,7 @@ This allows Exchange to apply changes to the correct version of the object.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -221,7 +221,7 @@ Accept wildcard characters: False
 The names of the contact's children.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -236,7 +236,7 @@ Accept wildcard characters: False
 The name of the contact's company.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -251,8 +251,8 @@ Accept wildcard characters: False
 key: id of contactFolder
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
+Type: System.String
+Parameter Sets: Create1, CreateExpanded1
 Aliases:
 
 Required: True
@@ -267,7 +267,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -282,7 +282,7 @@ Accept wildcard characters: False
 The contact's department.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -300,7 +300,7 @@ Note that later updates to other properties may cause an automatically generated
 To preserve a pre-existing value, always include it as displayName in an update operation.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -313,10 +313,10 @@ Accept wildcard characters: False
 
 ### -EmailAddresses
 The contact's email addresses.
-To construct, see NOTES section for EMAILADDRESSES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for EMAILADDRESSES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEmailAddress[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEmailAddress[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -330,10 +330,10 @@ Accept wildcard characters: False
 ### -Extensions
 The collection of open extensions defined for the contact.
 Nullable.
-To construct, see NOTES section for EXTENSIONS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for EXTENSIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExtension[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExtension[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -348,7 +348,7 @@ Accept wildcard characters: False
 The name the contact is filed under.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -363,7 +363,7 @@ Accept wildcard characters: False
 The contact's generation.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -378,7 +378,7 @@ Accept wildcard characters: False
 The contact's given name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -391,10 +391,10 @@ Accept wildcard characters: False
 
 ### -HomeAddress
 physicalAddress
-To construct, see NOTES section for HOMEADDRESS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for HOMEADDRESS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPhysicalAddress
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPhysicalAddress
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -409,7 +409,7 @@ Accept wildcard characters: False
 The contact's home phone numbers.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -424,7 +424,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -436,10 +436,10 @@ Accept wildcard characters: False
 ```
 
 ### -ImAddresses
-The contact's instant messaging (IM) addresses.
+.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -451,10 +451,10 @@ Accept wildcard characters: False
 ```
 
 ### -Initials
-The contact's initials.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -467,11 +467,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IPersonalContactsIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
+Type: Microsoft.Graph.PowerShell.Models.IPersonalContactsIdentity
+Parameter Sets: CreateViaIdentity1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -482,10 +482,10 @@ Accept wildcard characters: False
 ```
 
 ### -JobTitle
-The contact's job title.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -501,7 +501,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -513,10 +513,10 @@ Accept wildcard characters: False
 ```
 
 ### -Manager
-The name of the contact's manager.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -528,10 +528,10 @@ Accept wildcard characters: False
 ```
 
 ### -MiddleName
-The contact's middle name.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -543,10 +543,10 @@ Accept wildcard characters: False
 ```
 
 ### -MobilePhone
-The contact's mobile phone number.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -561,10 +561,10 @@ Accept wildcard characters: False
 The collection of multi-value extended properties defined for the contact.
 Read-only.
 Nullable.
-To construct, see NOTES section for MULTIVALUEEXTENDEDPROPERTIES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for MULTIVALUEEXTENDEDPROPERTIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMultiValueLegacyExtendedProperty[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMultiValueLegacyExtendedProperty[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -576,10 +576,10 @@ Accept wildcard characters: False
 ```
 
 ### -NickName
-The contact's nickname.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -591,10 +591,10 @@ Accept wildcard characters: False
 ```
 
 ### -OfficeLocation
-The location of the contact's office.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -607,10 +607,10 @@ Accept wildcard characters: False
 
 ### -OtherAddress
 physicalAddress
-To construct, see NOTES section for OTHERADDRESS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for OTHERADDRESS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPhysicalAddress
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPhysicalAddress
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -622,10 +622,10 @@ Accept wildcard characters: False
 ```
 
 ### -ParentFolderId
-The ID of the contact's parent folder.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -637,10 +637,10 @@ Accept wildcard characters: False
 ```
 
 ### -PersonalNotes
-The user's notes about the contact.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -653,10 +653,10 @@ Accept wildcard characters: False
 
 ### -Photo
 profilePhoto
-To construct, see NOTES section for PHOTO properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for PHOTO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphProfilePhoto
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProfilePhoto
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -668,10 +668,10 @@ Accept wildcard characters: False
 ```
 
 ### -Profession
-The contact's profession.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -686,10 +686,10 @@ Accept wildcard characters: False
 The collection of single-value extended properties defined for the contact.
 Read-only.
 Nullable.
-To construct, see NOTES section for SINGLEVALUEEXTENDEDPROPERTIES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SINGLEVALUEEXTENDEDPROPERTIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSingleValueLegacyExtendedProperty[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSingleValueLegacyExtendedProperty[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -701,10 +701,10 @@ Accept wildcard characters: False
 ```
 
 ### -SpouseName
-The name of the contact's spouse/partner.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -716,10 +716,10 @@ Accept wildcard characters: False
 ```
 
 ### -Surname
-The contact's surname.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -731,10 +731,10 @@ Accept wildcard characters: False
 ```
 
 ### -Title
-The contact's title.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -749,8 +749,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
+Type: System.String
+Parameter Sets: Create1, CreateExpanded1
 Aliases:
 
 Required: True
@@ -761,10 +761,10 @@ Accept wildcard characters: False
 ```
 
 ### -YomiCompanyName
-The phonetic Japanese company name of the contact.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -776,10 +776,10 @@ Accept wildcard characters: False
 ```
 
 ### -YomiGivenName
-The phonetic Japanese given name (first name) of the contact.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -791,10 +791,10 @@ Accept wildcard characters: False
 ```
 
 ### -YomiSurname
-The phonetic Japanese surname (last name) of the contact.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -809,7 +809,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -825,7 +825,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -842,10 +842,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContact
+
 ### Microsoft.Graph.PowerShell.Models.IPersonalContactsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContact
+
 ## NOTES
 
 ALIASES
@@ -887,35 +890,35 @@ BODYPARAMETER <IMicrosoftGraphContact>: contact
   - `[GivenName <String>]`: The contact's given name.
   - `[HomeAddress <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
   - `[HomePhones <String[]>]`: The contact's home phone numbers.
-  - `[ImAddresses <String[]>]`: The contact's instant messaging (IM) addresses.
-  - `[Initials <String>]`: The contact's initials.
-  - `[JobTitle <String>]`: The contact's job title.
-  - `[Manager <String>]`: The name of the contact's manager.
-  - `[MiddleName <String>]`: The contact's middle name.
-  - `[MobilePhone <String>]`: The contact's mobile phone number.
+  - `[ImAddresses <String[]>]`: 
+  - `[Initials <String>]`: 
+  - `[JobTitle <String>]`: 
+  - `[Manager <String>]`: 
+  - `[MiddleName <String>]`: 
+  - `[MobilePhone <String>]`: 
   - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
     - `[Id <String>]`: Read-only.
     - `[Value <String[]>]`: A collection of property values.
-  - `[NickName <String>]`: The contact's nickname.
-  - `[OfficeLocation <String>]`: The location of the contact's office.
+  - `[NickName <String>]`: 
+  - `[OfficeLocation <String>]`: 
   - `[OtherAddress <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-  - `[ParentFolderId <String>]`: The ID of the contact's parent folder.
-  - `[PersonalNotes <String>]`: The user's notes about the contact.
+  - `[ParentFolderId <String>]`: 
+  - `[PersonalNotes <String>]`: 
   - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: Read-only.
     - `[Height <Int32?>]`: The height of the photo. Read-only.
     - `[Width <Int32?>]`: The width of the photo. Read-only.
-  - `[Profession <String>]`: The contact's profession.
+  - `[Profession <String>]`: 
   - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the contact. Read-only. Nullable.
     - `[Id <String>]`: Read-only.
     - `[Value <String>]`: A property value.
-  - `[SpouseName <String>]`: The name of the contact's spouse/partner.
-  - `[Surname <String>]`: The contact's surname.
-  - `[Title <String>]`: The contact's title.
-  - `[YomiCompanyName <String>]`: The phonetic Japanese company name of the contact.
-  - `[YomiGivenName <String>]`: The phonetic Japanese given name (first name) of the contact.
-  - `[YomiSurname <String>]`: The phonetic Japanese surname (last name)  of the contact.
+  - `[SpouseName <String>]`: 
+  - `[Surname <String>]`: 
+  - `[Title <String>]`: 
+  - `[YomiCompanyName <String>]`: 
+  - `[YomiGivenName <String>]`: 
+  - `[YomiSurname <String>]`: 
 
 BUSINESSADDRESS <IMicrosoftGraphPhysicalAddress>: physicalAddress
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -968,6 +971,12 @@ PHOTO <IMicrosoftGraphProfilePhoto>: profilePhoto
   - `[Width <Int32?>]`: The width of the photo. Read-only.
 
 SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>: The collection of single-value extended properties defined for the contact. Read-only. Nullable.
+  - `[Id <String>]`: Read-only.
+  - `[Value <String>]`: A property value.
+
+## RELATED LINKS
+
+ueLegacyExtendedProperty[]>: The collection of single-value extended properties defined for the contact. Read-only. Nullable.
   - `[Id <String>]`: Read-only.
   - `[Value <String>]`: A property value.
 

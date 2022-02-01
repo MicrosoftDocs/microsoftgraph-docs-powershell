@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticresourceperformance
 schema: 2.0.0
@@ -15,17 +15,18 @@ User experience analytics resource performance
 ### CreateExpanded (Default)
 ```
 New-MgDeviceManagementUserExperienceAnalyticResourcePerformance [-AdditionalProperties <Hashtable>]
- [-CpuSpikeTimePercentage <Double>] [-CpuSpikeTimePercentageThreshold <Double>] [-CpuSpikeTimeScore <Int32>]
- [-DeviceCount <Int64>] [-DeviceId <String>] [-DeviceName <String>] [-DeviceResourcePerformanceScore <Int32>]
- [-Id <String>] [-Manufacturer <String>] [-Model <String>] [-RamSpikeTimePercentage <Double>]
- [-RamSpikeTimePercentageThreshold <Double>] [-RamSpikeTimeScore <Int32>] [-WhatIf] [-Confirm]
+ [-AverageSpikeTimeScore <Int32>] [-CpuSpikeTimePercentage <Double>]
+ [-CpuSpikeTimePercentageThreshold <Double>] [-CpuSpikeTimeScore <Int32>] [-DeviceCount <Int64>]
+ [-DeviceId <String>] [-DeviceName <String>] [-DeviceResourcePerformanceScore <Int32>] [-Id <String>]
+ [-Manufacturer <String>] [-Model <String>] [-RamSpikeTimePercentage <Double>]
+ [-RamSpikeTimePercentageThreshold <Double>] [-RamSpikeTimeScore <Int32>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementUserExperienceAnalyticResourcePerformance
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsResourcePerformance> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsResourcePerformance> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -40,7 +41,23 @@ User experience analytics resource performance
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AverageSpikeTimeScore
+AverageSpikeTimeScore of a device or a model type.
+Valid values 0 to 100
+
+```yaml
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -53,10 +70,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analytics resource performance entity.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsResourcePerformance
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsResourcePerformance
 Parameter Sets: Create
 Aliases:
 
@@ -72,7 +89,7 @@ CPU spike time in percentage.
 Valid values 0 to 100
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -88,7 +105,7 @@ Threshold of cpuSpikeTimeScore.
 Valid values 0 to 100
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -104,7 +121,7 @@ The user experience analytics device CPU spike time score.
 Valid values 0 to 100
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -119,7 +136,7 @@ Accept wildcard characters: False
 User experience analytics summarized device count.
 
 ```yaml
-Type: Int64
+Type: System.Int64
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -134,7 +151,7 @@ Accept wildcard characters: False
 The id of the device.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -149,7 +166,7 @@ Accept wildcard characters: False
 The name of the device.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -165,7 +182,7 @@ Resource performance score of a specific device.
 Valid values 0 to 100
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -180,7 +197,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -195,7 +212,7 @@ Accept wildcard characters: False
 The user experience analytics device manufacturer.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -210,7 +227,7 @@ Accept wildcard characters: False
 The user experience analytics device model.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -226,7 +243,7 @@ RAM spike time in percentage.
 Valid values 0 to 100
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -242,7 +259,7 @@ Threshold of ramSpikeTimeScore.
 Valid values 0 to 100
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -258,7 +275,7 @@ The user experience analytics device RAM spike time score.
 Valid values 0 to 100
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -273,7 +290,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -289,7 +306,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -306,9 +323,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsResourcePerformance
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsResourcePerformance
+
 ## NOTES
 
 ALIASES
@@ -321,6 +340,7 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsResourcePerformance>: The user experience analytics resource performance entity.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
+  - `[AverageSpikeTimeScore <Int32?>]`: AverageSpikeTimeScore of a device or a model type. Valid values 0 to 100
   - `[CpuSpikeTimePercentage <Double?>]`: CPU spike time in percentage. Valid values 0 to 100
   - `[CpuSpikeTimePercentageThreshold <Double?>]`: Threshold of cpuSpikeTimeScore. Valid values 0 to 100
   - `[CpuSpikeTimeScore <Int32?>]`: The user experience analytics device CPU spike time score. Valid values 0 to 100
@@ -335,3 +355,4 @@ BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsResourcePerformance>: The u
   - `[RamSpikeTimeScore <Int32?>]`: The user experience analytics device RAM spike time score. Valid values 0 to 100
 
 ## RELATED LINKS
+

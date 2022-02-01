@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgappcatalogteamapp
 schema: 2.0.0
@@ -15,13 +15,14 @@ Create new navigation property to teamsApps for appCatalogs
 ### CreateExpanded (Default)
 ```
 New-MgAppCatalogTeamApp [-AdditionalProperties <Hashtable>]
- [-AppDefinitions <IMicrosoftGraphTeamsAppDefinition[]>] [-DisplayName <String>] [-DistributionMethod <String>]
- [-ExternalId <String>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AppDefinitions <IMicrosoftGraphTeamsAppDefinition[]>] [-DisplayName <String>]
+ [-DistributionMethod <String>] [-ExternalId <String>] [-Id <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgAppCatalogTeamApp -BodyParameter <IMicrosoftGraphTeamsApp> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgAppCatalogTeamApp -BodyParameter <IMicrosoftGraphTeamsApp> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -35,7 +36,7 @@ Create new navigation property to teamsApps for appCatalogs
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -48,10 +49,10 @@ Accept wildcard characters: False
 
 ### -AppDefinitions
 The details for each version of the app.
-To construct, see NOTES section for APPDEFINITIONS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for APPDEFINITIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamsAppDefinition[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppDefinition[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -64,10 +65,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 teamsApp
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamsApp
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsApp
 Parameter Sets: Create
 Aliases:
 
@@ -82,7 +83,7 @@ Accept wildcard characters: False
 The name of the catalog app provided by the app developer in the Microsoft Teams zip app package.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -97,7 +98,7 @@ Accept wildcard characters: False
 teamsAppDistributionMethod
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -112,7 +113,7 @@ Accept wildcard characters: False
 The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -127,7 +128,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -142,7 +143,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -158,7 +159,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -175,9 +176,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsApp
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsApp
+
 ## NOTES
 
 ALIASES
@@ -207,8 +210,8 @@ APPDEFINITIONS <IMicrosoftGraphTeamsAppDefinition[]>: The details for each versi
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
+      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+      - `[Id <String>]`: The identifier of the identity. This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[Description <String>]`: Verbose description of the application.
@@ -243,8 +246,8 @@ BODYPARAMETER <IMicrosoftGraphTeamsApp>: teamsApp
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
+        - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+        - `[Id <String>]`: The identifier of the identity. This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[Description <String>]`: Verbose description of the application.
@@ -257,6 +260,11 @@ BODYPARAMETER <IMicrosoftGraphTeamsApp>: teamsApp
     - `[Version <String>]`: The version number of the application.
   - `[DisplayName <String>]`: The name of the catalog app provided by the app developer in the Microsoft Teams zip app package.
   - `[DistributionMethod <String>]`: teamsAppDistributionMethod
+  - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
+
+## RELATED LINKS
+
+]`: teamsAppDistributionMethod
   - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
 ## RELATED LINKS

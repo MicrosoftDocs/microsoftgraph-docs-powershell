@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/new-mggroupthread
 schema: 2.0.0
@@ -17,30 +17,30 @@ Nullable.
 ```
 New-MgGroupThread -GroupId <String> [-AdditionalProperties <Hashtable>]
  [-CcRecipients <IMicrosoftGraphRecipient[]>] [-HasAttachments] [-Id <String>] [-IsLocked]
- [-LastDeliveredDateTime <DateTime>] [-Posts <IMicrosoftGraphPost[]>] [-Preview <String>]
- [-ToRecipients <IMicrosoftGraphRecipient[]>] [-Topic <String>] [-UniqueSenders <String[]>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-LastDeliveredDateTime <DateTime>] [-Posts <IMicrosoftGraphPost[]>] [-Preview <String>] [-Topic <String>]
+ [-ToRecipients <IMicrosoftGraphRecipient[]>] [-UniqueSenders <String[]>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgGroupThread -GroupId <String> -BodyParameter <IMicrosoftGraphConversationThread> [-WhatIf] [-Confirm]
+New-MgGroupThread -GroupId <String> -BodyParameter <IMicrosoftGraphConversationThread> [-Confirm] [-WhatIf]
  [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgGroupThread -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGraphConversationThread> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgGroupThread -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
  [-CcRecipients <IMicrosoftGraphRecipient[]>] [-HasAttachments] [-Id <String>] [-IsLocked]
- [-LastDeliveredDateTime <DateTime>] [-Posts <IMicrosoftGraphPost[]>] [-Preview <String>]
- [-ToRecipients <IMicrosoftGraphRecipient[]>] [-Topic <String>] [-UniqueSenders <String[]>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgGroupThread -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGraphConversationThread> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-LastDeliveredDateTime <DateTime>] [-Posts <IMicrosoftGraphPost[]>] [-Preview <String>] [-Topic <String>]
+ [-ToRecipients <IMicrosoftGraphRecipient[]>] [-UniqueSenders <String[]>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -55,7 +55,7 @@ Nullable.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -68,10 +68,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 conversationThread
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConversationThread
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversationThread
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -84,10 +84,11 @@ Accept wildcard characters: False
 
 ### -CcRecipients
 The Cc: recipients for the thread.
-To construct, see NOTES section for CCRECIPIENTS properties and create a hash table.
+Returned only on $select.
+To construct, please use Get-Help -Online and see NOTES section for CCRECIPIENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRecipient[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRecipient[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -102,8 +103,8 @@ Accept wildcard characters: False
 key: id of group
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -115,9 +116,10 @@ Accept wildcard characters: False
 
 ### -HasAttachments
 Indicates whether any of the posts within this thread has at least one attachment.
+Returned by default.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -132,7 +134,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -145,11 +147,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -161,9 +163,10 @@ Accept wildcard characters: False
 
 ### -IsLocked
 Indicates if the thread is locked.
+Returned by default.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -176,10 +179,11 @@ Accept wildcard characters: False
 
 ### -LastDeliveredDateTime
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Returned by default.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -193,10 +197,10 @@ Accept wildcard characters: False
 ### -Posts
 Read-only.
 Nullable.
-To construct, see NOTES section for POSTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for POSTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPost[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPost[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -209,9 +213,10 @@ Accept wildcard characters: False
 
 ### -Preview
 A short summary from the body of the latest post in this conversation.
+Returned by default.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -225,9 +230,10 @@ Accept wildcard characters: False
 ### -Topic
 The topic of the conversation.
 This property can be set when the conversation is created, but it cannot be updated.
+Returned by default.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -240,10 +246,11 @@ Accept wildcard characters: False
 
 ### -ToRecipients
 The To: recipients for the thread.
-To construct, see NOTES section for TORECIPIENTS properties and create a hash table.
+Returned only on $select.
+To construct, please use Get-Help -Online and see NOTES section for TORECIPIENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRecipient[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRecipient[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -256,9 +263,10 @@ Accept wildcard characters: False
 
 ### -UniqueSenders
 All the users that sent a message to this thread.
+Returned by default.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -273,7 +281,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -289,7 +297,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -306,10 +314,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversationThread
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversationThread
+
 ## NOTES
 
 ALIASES
@@ -322,21 +333,21 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER <IMicrosoftGraphConversationThread>: conversationThread
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
-  - `[CcRecipients <IMicrosoftGraphRecipient[]>]`: The Cc: recipients for the thread.
+  - `[CcRecipients <IMicrosoftGraphRecipient[]>]`: The Cc: recipients for the thread. Returned only on $select.
     - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Address <String>]`: The email address of an entity instance.
       - `[Name <String>]`: The display name of an entity instance.
-  - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this thread has at least one attachment.
-  - `[IsLocked <Boolean?>]`: Indicates if the thread is locked.
-  - `[LastDeliveredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this thread has at least one attachment. Returned by default.
+  - `[IsLocked <Boolean?>]`: Indicates if the thread is locked. Returned by default.
+  - `[LastDeliveredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default.
   - `[Posts <IMicrosoftGraphPost[]>]`: Read-only. Nullable.
     - `[Categories <String[]>]`: The categories associated with the item
     - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
     - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[Id <String>]`: Read-only.
-    - `[Attachments <IMicrosoftGraphAttachment[]>]`: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post. Read-only. Nullable.
+    - `[Attachments <IMicrosoftGraphAttachment[]>]`: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post. Read-only. Nullable. Supports $expand.
       - `[Id <String>]`: Read-only.
       - `[ContentType <String>]`: The MIME type.
       - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
@@ -349,7 +360,7 @@ BODYPARAMETER <IMicrosoftGraphConversationThread>: conversationThread
       - `[ContentType <String>]`: bodyType
     - `[ConversationId <String>]`: Unique ID of the conversation. Read-only.
     - `[ConversationThreadId <String>]`: Unique ID of the conversation thread. Read-only.
-    - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the post. Read-only. Nullable.
+    - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the post. Read-only. Nullable. Supports $expand.
       - `[Id <String>]`: Read-only.
     - `[From <IMicrosoftGraphRecipient>]`: recipient
     - `[HasAttachments <Boolean?>]`: Indicates whether the post has at least one attachment. This is a default property.
@@ -374,12 +385,12 @@ BODYPARAMETER <IMicrosoftGraphConversationThread>: conversationThread
     - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the post. Read-only. Nullable.
       - `[Id <String>]`: Read-only.
       - `[Value <String>]`: A property value.
-  - `[Preview <String>]`: A short summary from the body of the latest post in this conversation.
-  - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: The To: recipients for the thread.
-  - `[Topic <String>]`: The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated.
-  - `[UniqueSenders <String[]>]`: All the users that sent a message to this thread.
+  - `[Preview <String>]`: A short summary from the body of the latest post in this conversation. Returned by default.
+  - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: The To: recipients for the thread. Returned only on $select.
+  - `[Topic <String>]`: The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated. Returned by default.
+  - `[UniqueSenders <String[]>]`: All the users that sent a message to this thread. Returned by default.
 
-CCRECIPIENTS <IMicrosoftGraphRecipient[]>: The Cc: recipients for the thread.
+CCRECIPIENTS <IMicrosoftGraphRecipient[]>: The Cc: recipients for the thread. Returned only on $select.
   - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Address <String>]`: The email address of an entity instance.
@@ -414,7 +425,7 @@ POSTS <IMicrosoftGraphPost[]>: Read-only. Nullable.
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Id <String>]`: Read-only.
-  - `[Attachments <IMicrosoftGraphAttachment[]>]`: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post. Read-only. Nullable.
+  - `[Attachments <IMicrosoftGraphAttachment[]>]`: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post. Read-only. Nullable. Supports $expand.
     - `[Id <String>]`: Read-only.
     - `[ContentType <String>]`: The MIME type.
     - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
@@ -427,7 +438,7 @@ POSTS <IMicrosoftGraphPost[]>: Read-only. Nullable.
     - `[ContentType <String>]`: bodyType
   - `[ConversationId <String>]`: Unique ID of the conversation. Read-only.
   - `[ConversationThreadId <String>]`: Unique ID of the conversation thread. Read-only.
-  - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the post. Read-only. Nullable.
+  - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the post. Read-only. Nullable. Supports $expand.
     - `[Id <String>]`: Read-only.
   - `[From <IMicrosoftGraphRecipient>]`: recipient
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -458,7 +469,7 @@ POSTS <IMicrosoftGraphPost[]>: Read-only. Nullable.
     - `[Id <String>]`: Read-only.
     - `[Value <String>]`: A property value.
 
-TORECIPIENTS <IMicrosoftGraphRecipient[]>: The To: recipients for the thread.
+TORECIPIENTS <IMicrosoftGraphRecipient[]>: The To: recipients for the thread. Returned only on $select.
   - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Address <String>]`: The email address of an entity instance.
@@ -466,4 +477,3 @@ TORECIPIENTS <IMicrosoftGraphRecipient[]>: The To: recipients for the thread.
 
 ## RELATED LINKS
 
-## RELATED LINKS

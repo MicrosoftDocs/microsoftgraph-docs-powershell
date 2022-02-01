@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.CloudCommunications
-Module Guid: b0f80d2b-5a02-4f9f-8772-5300454c5e57
+Module Guid: 56446793-92e0-4972-b493-2b3e3a00b75d
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications
 Help Version: 1.0.0.0
 Locale: en-US
@@ -13,6 +13,9 @@ Microsoft Graph PowerShell Cmdlets
 ## Microsoft.Graph.CloudCommunications Cmdlets
 ### [Clear-MgCommunicationPresence](Clear-MgCommunicationPresence.md)
 Invoke action clearPresence
+
+### [Clear-MgCommunicationPresenceUserPreferredPresence](Clear-MgCommunicationPresenceUserPreferredPresence.md)
+Invoke action clearUserPreferredPresence
 
 ### [Get-MgCommunicationCall](Get-MgCommunicationCall.md)
 Get calls from communications
@@ -45,13 +48,31 @@ Get onlineMeetings from communications
 Get media content for the navigation property onlineMeetings from communications
 
 ### [Get-MgCommunicationOnlineMeetingAttendanceReport](Get-MgCommunicationOnlineMeetingAttendanceReport.md)
-Get meetingAttendanceReport from communications
+The attendance reports of an online meeting.
+Read-only.
+
+### [Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord](Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord.md)
+List of attendance records of an attendance report.
+Read-only.
 
 ### [Get-MgCommunicationOnlineMeetingAttendeeReport](Get-MgCommunicationOnlineMeetingAttendeeReport.md)
 Get media content for the navigation property onlineMeetings from communications
 
 ### [Get-MgCommunicationOnlineMeetingRecording](Get-MgCommunicationOnlineMeetingRecording.md)
 Get media content for the navigation property onlineMeetings from communications
+
+### [Get-MgCommunicationOnlineMeetingRegistration](Get-MgCommunicationOnlineMeetingRegistration.md)
+The registration that has been enabled for an online meeting.
+One online meeting can only have one registration enabled.
+
+### [Get-MgCommunicationOnlineMeetingRegistrationCustomQuestion](Get-MgCommunicationOnlineMeetingRegistrationCustomQuestion.md)
+Custom registration questions.
+
+### [Get-MgCommunicationOnlineMeetingTranscript](Get-MgCommunicationOnlineMeetingTranscript.md)
+Get transcripts from communications
+
+### [Get-MgCommunicationOnlineMeetingTranscriptContent](Get-MgCommunicationOnlineMeetingTranscriptContent.md)
+Get media content for the navigation property transcripts from communications
 
 ### [Get-MgCommunicationPresence](Get-MgCommunicationPresence.md)
 Invoke action getPresencesByUserId
@@ -63,13 +84,31 @@ Get onlineMeetings from users
 Get media content for the navigation property onlineMeetings from users
 
 ### [Get-MgUserOnlineMeetingAttendanceReport](Get-MgUserOnlineMeetingAttendanceReport.md)
-Get meetingAttendanceReport from users
+The attendance reports of an online meeting.
+Read-only.
+
+### [Get-MgUserOnlineMeetingAttendanceReportAttendanceRecord](Get-MgUserOnlineMeetingAttendanceReportAttendanceRecord.md)
+List of attendance records of an attendance report.
+Read-only.
 
 ### [Get-MgUserOnlineMeetingAttendeeReport](Get-MgUserOnlineMeetingAttendeeReport.md)
 Get media content for the navigation property onlineMeetings from users
 
 ### [Get-MgUserOnlineMeetingRecording](Get-MgUserOnlineMeetingRecording.md)
 Get media content for the navigation property onlineMeetings from users
+
+### [Get-MgUserOnlineMeetingRegistration](Get-MgUserOnlineMeetingRegistration.md)
+The registration that has been enabled for an online meeting.
+One online meeting can only have one registration enabled.
+
+### [Get-MgUserOnlineMeetingRegistrationCustomQuestion](Get-MgUserOnlineMeetingRegistrationCustomQuestion.md)
+Custom registration questions.
+
+### [Get-MgUserOnlineMeetingTranscript](Get-MgUserOnlineMeetingTranscript.md)
+Get transcripts from users
+
+### [Get-MgUserOnlineMeetingTranscriptContent](Get-MgUserOnlineMeetingTranscriptContent.md)
+Get media content for the navigation property transcripts from users
 
 ### [Get-MgUserPresence](Get-MgUserPresence.md)
 Get presence from users
@@ -146,11 +185,39 @@ Nullable.
 ### [New-MgCommunicationOnlineMeeting](New-MgCommunicationOnlineMeeting.md)
 Invoke action createOrGet
 
+### [New-MgCommunicationOnlineMeetingAttendanceReport](New-MgCommunicationOnlineMeetingAttendanceReport.md)
+The attendance reports of an online meeting.
+Read-only.
+
+### [New-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord](New-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord.md)
+List of attendance records of an attendance report.
+Read-only.
+
+### [New-MgCommunicationOnlineMeetingRegistrationCustomQuestion](New-MgCommunicationOnlineMeetingRegistrationCustomQuestion.md)
+Custom registration questions.
+
+### [New-MgCommunicationOnlineMeetingTranscript](New-MgCommunicationOnlineMeetingTranscript.md)
+Create new navigation property to transcripts for communications
+
 ### [New-MgCommunicationPresence](New-MgCommunicationPresence.md)
 Create new navigation property to presences for communications
 
 ### [New-MgUserOnlineMeeting](New-MgUserOnlineMeeting.md)
 Create new navigation property to onlineMeetings for users
+
+### [New-MgUserOnlineMeetingAttendanceReport](New-MgUserOnlineMeetingAttendanceReport.md)
+The attendance reports of an online meeting.
+Read-only.
+
+### [New-MgUserOnlineMeetingAttendanceReportAttendanceRecord](New-MgUserOnlineMeetingAttendanceReportAttendanceRecord.md)
+List of attendance records of an attendance report.
+Read-only.
+
+### [New-MgUserOnlineMeetingRegistrationCustomQuestion](New-MgUserOnlineMeetingRegistrationCustomQuestion.md)
+Custom registration questions.
+
+### [New-MgUserOnlineMeetingTranscript](New-MgUserOnlineMeetingTranscript.md)
+Create new navigation property to transcripts for users
 
 ### [Remove-MgCommunicationCall](Remove-MgCommunicationCall.md)
 Delete navigation property calls for communications
@@ -177,7 +244,22 @@ Nullable.
 Delete navigation property onlineMeetings for communications
 
 ### [Remove-MgCommunicationOnlineMeetingAttendanceReport](Remove-MgCommunicationOnlineMeetingAttendanceReport.md)
-Delete navigation property meetingAttendanceReport for communications
+The attendance reports of an online meeting.
+Read-only.
+
+### [Remove-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord](Remove-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord.md)
+List of attendance records of an attendance report.
+Read-only.
+
+### [Remove-MgCommunicationOnlineMeetingRegistration](Remove-MgCommunicationOnlineMeetingRegistration.md)
+The registration that has been enabled for an online meeting.
+One online meeting can only have one registration enabled.
+
+### [Remove-MgCommunicationOnlineMeetingRegistrationCustomQuestion](Remove-MgCommunicationOnlineMeetingRegistrationCustomQuestion.md)
+Custom registration questions.
+
+### [Remove-MgCommunicationOnlineMeetingTranscript](Remove-MgCommunicationOnlineMeetingTranscript.md)
+Delete navigation property transcripts for communications
 
 ### [Remove-MgCommunicationPresence](Remove-MgCommunicationPresence.md)
 Delete navigation property presences for communications
@@ -186,7 +268,22 @@ Delete navigation property presences for communications
 Delete navigation property onlineMeetings for users
 
 ### [Remove-MgUserOnlineMeetingAttendanceReport](Remove-MgUserOnlineMeetingAttendanceReport.md)
-Delete navigation property meetingAttendanceReport for users
+The attendance reports of an online meeting.
+Read-only.
+
+### [Remove-MgUserOnlineMeetingAttendanceReportAttendanceRecord](Remove-MgUserOnlineMeetingAttendanceReportAttendanceRecord.md)
+List of attendance records of an attendance report.
+Read-only.
+
+### [Remove-MgUserOnlineMeetingRegistration](Remove-MgUserOnlineMeetingRegistration.md)
+The registration that has been enabled for an online meeting.
+One online meeting can only have one registration enabled.
+
+### [Remove-MgUserOnlineMeetingRegistrationCustomQuestion](Remove-MgUserOnlineMeetingRegistrationCustomQuestion.md)
+Custom registration questions.
+
+### [Remove-MgUserOnlineMeetingTranscript](Remove-MgUserOnlineMeetingTranscript.md)
+Delete navigation property transcripts for users
 
 ### [Remove-MgUserPresence](Remove-MgUserPresence.md)
 Delete navigation property presence for users
@@ -203,8 +300,14 @@ Update media content for the navigation property onlineMeetings in communication
 ### [Set-MgCommunicationOnlineMeetingRecording](Set-MgCommunicationOnlineMeetingRecording.md)
 Update media content for the navigation property onlineMeetings in communications
 
+### [Set-MgCommunicationOnlineMeetingTranscriptContent](Set-MgCommunicationOnlineMeetingTranscriptContent.md)
+Update media content for the navigation property transcripts in communications
+
 ### [Set-MgCommunicationPresence](Set-MgCommunicationPresence.md)
 Invoke action setPresence
+
+### [Set-MgCommunicationPresenceUserPreferredPresence](Set-MgCommunicationPresenceUserPreferredPresence.md)
+Invoke action setUserPreferredPresence
 
 ### [Set-MgUserOnlineMeetingAlternativeRecording](Set-MgUserOnlineMeetingAlternativeRecording.md)
 Update media content for the navigation property onlineMeetings in users
@@ -215,8 +318,17 @@ Update media content for the navigation property onlineMeetings in users
 ### [Set-MgUserOnlineMeetingRecording](Set-MgUserOnlineMeetingRecording.md)
 Update media content for the navigation property onlineMeetings in users
 
+### [Set-MgUserOnlineMeetingTranscriptContent](Set-MgUserOnlineMeetingTranscriptContent.md)
+Update media content for the navigation property transcripts in users
+
+### [Start-MgCommunicationCallParticipantHoldMusic](Start-MgCommunicationCallParticipantHoldMusic.md)
+Invoke action startHoldMusic
+
 ### [Stop-MgCommunicationCallMediaProcessing](Stop-MgCommunicationCallMediaProcessing.md)
 Invoke action cancelMediaProcessing
+
+### [Stop-MgCommunicationCallParticipantHoldMusic](Stop-MgCommunicationCallParticipantHoldMusic.md)
+Invoke action stopHoldMusic
 
 ### [Update-MgCommunicationCallAudioRoutingGroup](Update-MgCommunicationCallAudioRoutingGroup.md)
 Read-only.
@@ -243,7 +355,22 @@ Nullable.
 Update the navigation property onlineMeetings in communications
 
 ### [Update-MgCommunicationOnlineMeetingAttendanceReport](Update-MgCommunicationOnlineMeetingAttendanceReport.md)
-Update the navigation property meetingAttendanceReport in communications
+The attendance reports of an online meeting.
+Read-only.
+
+### [Update-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord](Update-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord.md)
+List of attendance records of an attendance report.
+Read-only.
+
+### [Update-MgCommunicationOnlineMeetingRegistration](Update-MgCommunicationOnlineMeetingRegistration.md)
+The registration that has been enabled for an online meeting.
+One online meeting can only have one registration enabled.
+
+### [Update-MgCommunicationOnlineMeetingRegistrationCustomQuestion](Update-MgCommunicationOnlineMeetingRegistrationCustomQuestion.md)
+Custom registration questions.
+
+### [Update-MgCommunicationOnlineMeetingTranscript](Update-MgCommunicationOnlineMeetingTranscript.md)
+Update the navigation property transcripts in communications
 
 ### [Update-MgCommunicationPresence](Update-MgCommunicationPresence.md)
 Update the navigation property presences in communications
@@ -252,7 +379,22 @@ Update the navigation property presences in communications
 Update the navigation property onlineMeetings in users
 
 ### [Update-MgUserOnlineMeetingAttendanceReport](Update-MgUserOnlineMeetingAttendanceReport.md)
-Update the navigation property meetingAttendanceReport in users
+The attendance reports of an online meeting.
+Read-only.
+
+### [Update-MgUserOnlineMeetingAttendanceReportAttendanceRecord](Update-MgUserOnlineMeetingAttendanceReportAttendanceRecord.md)
+List of attendance records of an attendance report.
+Read-only.
+
+### [Update-MgUserOnlineMeetingRegistration](Update-MgUserOnlineMeetingRegistration.md)
+The registration that has been enabled for an online meeting.
+One online meeting can only have one registration enabled.
+
+### [Update-MgUserOnlineMeetingRegistrationCustomQuestion](Update-MgUserOnlineMeetingRegistrationCustomQuestion.md)
+Custom registration questions.
+
+### [Update-MgUserOnlineMeetingTranscript](Update-MgUserOnlineMeetingTranscript.md)
+Update the navigation property transcripts in users
 
 ### [Update-MgUserPresence](Update-MgUserPresence.md)
 Update the navigation property presence in users

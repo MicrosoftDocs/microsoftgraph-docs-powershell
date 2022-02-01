@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.ChangeNotifications-help.xml
+external help file:
 Module Name: Microsoft.Graph.ChangeNotifications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.changenotifications/get-mgsubscription
 schema: 2.0.0
@@ -14,21 +14,18 @@ Get entity from subscriptions by key
 
 ### List1 (Default)
 ```
-Get-MgSubscription [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>]
- [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [<CommonParameters>]
+Get-MgSubscription [-Property <String[]>] [-Search <String>] [-All] [-CountVariable <String>]
+ [-PageSize <Int32>] [<CommonParameters>]
 ```
 
 ### Get1
 ```
-Get-MgSubscription -SubscriptionId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgSubscription -SubscriptionId <String> [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
-Get-MgSubscription -InputObject <IChangeNotificationsIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgSubscription -InputObject <IChangeNotificationsIdentity> [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -42,7 +39,7 @@ Get entity from subscriptions by key
 List all pages.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: List1
 Aliases:
 
@@ -58,7 +55,7 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List1
 Aliases: CV
 
@@ -69,42 +66,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ExpandProperty
-Expand related entities
-
-```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: Expand
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Filter
-Filter items by property values
-
-```yaml
-Type: String
-Parameter Sets: List1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IChangeNotificationsIdentity
+Type: Microsoft.Graph.PowerShell.Models.IChangeNotificationsIdentity
 Parameter Sets: GetViaIdentity1
 Aliases:
 
@@ -119,7 +86,7 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: List1
 Aliases:
 
@@ -134,7 +101,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -149,24 +116,9 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List1
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Sort
-Order items by property values
-
-```yaml
-Type: String[]
-Parameter Sets: List1
-Aliases: OrderBy
 
 Required: False
 Position: Named
@@ -179,7 +131,7 @@ Accept wildcard characters: False
 key: id of subscription
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get1
 Aliases:
 
@@ -190,13 +142,32 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Top
-Show only the first n items
+### CommonParameters
+This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
-```yaml
-Type: Int32
-Parameter Sets: List1
-Aliases: Limit
+## INPUTS
+
+### Microsoft.Graph.PowerShell.Models.IChangeNotificationsIdentity
+
+## OUTPUTS
+
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSubscription
+
+## NOTES
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+INPUTOBJECT <IChangeNotificationsIdentity>: Identity Parameter
+  - `[SubscriptionId <String>]`: key: id of subscription
+
+## RELATED LINKS
+
+liases: Limit
 
 Required: False
 Position: Named

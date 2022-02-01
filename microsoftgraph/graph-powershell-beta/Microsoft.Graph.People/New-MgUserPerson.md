@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.People-help.xml
+external help file:
 Module Name: Microsoft.Graph.People
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/new-mguserperson
 schema: 2.0.0
@@ -23,13 +23,19 @@ New-MgUserPerson -UserId <String> [-AdditionalProperties <Hashtable>] [-Birthday
  [-MailboxType <String>] [-OfficeLocation <String>] [-PersonNotes <String>] [-PersonType <String>]
  [-Phones <IMicrosoftGraphPhone1[]>] [-PostalAddresses <IMicrosoftGraphLocation1[]>] [-Profession <String>]
  [-Sources <IMicrosoftGraphPersonDataSource[]>] [-Surname <String>] [-Title <String>]
- [-UserPrincipalName <String>] [-Websites <IMicrosoftGraphWebsite[]>] [-YomiCompany <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-UserPrincipalName <String>] [-Websites <IMicrosoftGraphWebsite[]>] [-YomiCompany <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgUserPerson -UserId <String> -BodyParameter <IMicrosoftGraphPerson1> [-WhatIf] [-Confirm]
+New-MgUserPerson -UserId <String> -BodyParameter <IMicrosoftGraphPerson1> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### CreateViaIdentity1
+```
+New-MgUserPerson -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoftGraphPerson1> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -41,14 +47,8 @@ New-MgUserPerson -InputObject <IPeopleIdentity> [-AdditionalProperties <Hashtabl
  [-MailboxType <String>] [-OfficeLocation <String>] [-PersonNotes <String>] [-PersonType <String>]
  [-Phones <IMicrosoftGraphPhone1[]>] [-PostalAddresses <IMicrosoftGraphLocation1[]>] [-Profession <String>]
  [-Sources <IMicrosoftGraphPersonDataSource[]>] [-Surname <String>] [-Title <String>]
- [-UserPrincipalName <String>] [-Websites <IMicrosoftGraphWebsite[]>] [-YomiCompany <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity1
-```
-New-MgUserPerson -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoftGraphPerson1> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-UserPrincipalName <String>] [-Websites <IMicrosoftGraphWebsite[]>] [-YomiCompany <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -65,7 +65,7 @@ A person is an aggregation of information from across mail, contacts and social 
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 The person's birthday.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -93,10 +93,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 person
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPerson1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPerson1
 Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 The name of the person's company.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 The person's department.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 The person's display name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -154,10 +154,10 @@ Accept wildcard characters: False
 
 ### -EmailAddresses
 The person's email addresses.
-To construct, see NOTES section for EMAILADDRESSES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for EMAILADDRESSES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRankedEmailAddress[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRankedEmailAddress[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 The person's given name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -200,11 +200,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IPeopleIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
+Type: Microsoft.Graph.PowerShell.Models.IPeopleIdentity
+Parameter Sets: CreateViaIdentity1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 true if the user has flagged this person as a favorite.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 The type of mailbox that is represented by the person's email address.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -248,7 +248,7 @@ Accept wildcard characters: False
 The location of the person's office.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -263,7 +263,7 @@ Accept wildcard characters: False
 Free-form notes that the user has taken about this person.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -278,7 +278,7 @@ Accept wildcard characters: False
 The type of person, for example distribution list.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -291,10 +291,10 @@ Accept wildcard characters: False
 
 ### -Phones
 The person's phone numbers.
-To construct, see NOTES section for PHONES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for PHONES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPhone1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPhone1[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -307,10 +307,10 @@ Accept wildcard characters: False
 
 ### -PostalAddresses
 The person's addresses.
-To construct, see NOTES section for POSTALADDRESSES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for POSTALADDRESSES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphLocation1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLocation1[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -325,7 +325,7 @@ Accept wildcard characters: False
 The person's profession.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -338,10 +338,10 @@ Accept wildcard characters: False
 
 ### -Sources
 The sources the user data comes from, for example Directory or Outlook Contacts.
-To construct, see NOTES section for SOURCES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SOURCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPersonDataSource[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPersonDataSource[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -356,7 +356,7 @@ Accept wildcard characters: False
 The person's surname.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -371,7 +371,7 @@ Accept wildcard characters: False
 The person's title.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -386,8 +386,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
+Type: System.String
+Parameter Sets: Create1, CreateExpanded1
 Aliases:
 
 Required: True
@@ -404,7 +404,7 @@ By convention, this should map to the person's email name.
 The general format is alias@domain.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -417,10 +417,10 @@ Accept wildcard characters: False
 
 ### -Websites
 The person's websites.
-To construct, see NOTES section for WEBSITES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for WEBSITES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWebsite[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWebsite[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -435,7 +435,7 @@ Accept wildcard characters: False
 The phonetic Japanese name of the person's company.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -450,7 +450,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -466,7 +466,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -483,10 +483,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPerson1
+
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPerson1
+
 ## NOTES
 
 ALIASES
@@ -618,3 +621,4 @@ WEBSITES <IMicrosoftGraphWebsite[]>: The person's websites.
   - `[Type <String>]`: websiteType
 
 ## RELATED LINKS
+

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Files-help.xml
+external help file:
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/restore-mgsharelistitemversion
 schema: 2.0.0
@@ -14,25 +14,25 @@ Invoke action restoreVersion
 
 ### Restore3 (Default)
 ```
-Restore-MgShareListItemVersion -ListItemVersionId <String> -SharedDriveItemId <String> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Restore-MgShareListItemVersion -ListItemVersionId <String> -SharedDriveItemId <String> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Restore2
 ```
 Restore-MgShareListItemVersion -ListItemId <String> -ListItemVersionId <String> -SharedDriveItemId <String>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### RestoreViaIdentity3
-```
-Restore-MgShareListItemVersion -InputObject <IFilesIdentity> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### RestoreViaIdentity2
 ```
-Restore-MgShareListItemVersion -InputObject <IFilesIdentity> [-PassThru] [-WhatIf] [-Confirm]
+Restore-MgShareListItemVersion -InputObject <IFilesIdentity> [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### RestoreViaIdentity3
+```
+Restore-MgShareListItemVersion -InputObject <IFilesIdentity> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -45,11 +45,11 @@ Invoke action restoreVersion
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFilesIdentity
-Parameter Sets: RestoreViaIdentity3, RestoreViaIdentity2
+Type: Microsoft.Graph.PowerShell.Models.IFilesIdentity
+Parameter Sets: RestoreViaIdentity2, RestoreViaIdentity3
 Aliases:
 
 Required: True
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 key: id of listItem
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Restore2
 Aliases:
 
@@ -78,8 +78,8 @@ Accept wildcard characters: False
 key: id of listItemVersion
 
 ```yaml
-Type: String
-Parameter Sets: Restore3, Restore2
+Type: System.String
+Parameter Sets: Restore2, Restore3
 Aliases:
 
 Required: True
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -108,8 +108,8 @@ Accept wildcard characters: False
 key: id of sharedDriveItem
 
 ```yaml
-Type: String
-Parameter Sets: Restore3, Restore2
+Type: System.String
+Parameter Sets: Restore2, Restore3
 Aliases:
 
 Required: True
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -139,7 +139,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -156,9 +156,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -180,9 +182,11 @@ INPUTOBJECT <IFilesIdentity>: Identity Parameter
   - `[ListItemId <String>]`: key: id of listItem
   - `[ListItemVersionId <String>]`: key: id of listItemVersion
   - `[Q <String>]`: Usage: q={q}
+  - `[RichLongRunningOperationId <String>]`: key: id of richLongRunningOperation
   - `[SharedDriveItemId <String>]`: key: id of sharedDriveItem
   - `[StartDateTime <String>]`: Usage: startDateTime={startDateTime}
   - `[SubscriptionId <String>]`: key: id of subscription
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

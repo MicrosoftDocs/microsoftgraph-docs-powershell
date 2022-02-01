@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Mail-help.xml
+external help file:
 Module Name: Microsoft.Graph.Mail
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/update-mgusermailfolder
 schema: 2.0.0
@@ -20,15 +20,22 @@ Update-MgUserMailFolder -MailFolderId <String> -UserId <String> [-AdditionalProp
  [-ChildFolderCount <Int32>] [-ChildFolders <IMicrosoftGraphMailFolder[]>] [-DisplayName <String>]
  [-Id <String>] [-IsHidden] [-MessageRules <IMicrosoftGraphMessageRule[]>]
  [-Messages <IMicrosoftGraphMessage[]>]
- [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-ParentFolderId <String>]
+ [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]
+ [-ParentFolderId <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
- [-TotalItemCount <Int32>] [-UnreadItemCount <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TotalItemCount <Int32>] [-UnreadItemCount <Int32>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgUserMailFolder -MailFolderId <String> -UserId <String> -BodyParameter <IMicrosoftGraphMailFolder>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity1
+```
+Update-MgUserMailFolder -InputObject <IMailIdentity> -BodyParameter <IMicrosoftGraphMailFolder> [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
@@ -37,15 +44,10 @@ Update-MgUserMailFolder -InputObject <IMailIdentity> [-AdditionalProperties <Has
  [-ChildFolderCount <Int32>] [-ChildFolders <IMicrosoftGraphMailFolder[]>] [-DisplayName <String>]
  [-Id <String>] [-IsHidden] [-MessageRules <IMicrosoftGraphMessageRule[]>]
  [-Messages <IMicrosoftGraphMessage[]>]
- [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-ParentFolderId <String>]
+ [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]
+ [-ParentFolderId <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
- [-TotalItemCount <Int32>] [-UnreadItemCount <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity1
-```
-Update-MgUserMailFolder -InputObject <IMailIdentity> -BodyParameter <IMicrosoftGraphMailFolder> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TotalItemCount <Int32>] [-UnreadItemCount <Int32>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -61,7 +63,7 @@ Nullable.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -74,10 +76,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 mailFolder
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMailFolder
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailFolder
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -92,7 +94,7 @@ Accept wildcard characters: False
 The number of immediate child mailFolders in the current mailFolder.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -105,10 +107,10 @@ Accept wildcard characters: False
 
 ### -ChildFolders
 The collection of child folders in the mailFolder.
-To construct, see NOTES section for CHILDFOLDERS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for CHILDFOLDERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMailFolder[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailFolder[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -123,7 +125,7 @@ Accept wildcard characters: False
 The mailFolder's display name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -138,7 +140,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -151,11 +153,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IMailIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Type: Microsoft.Graph.PowerShell.Models.IMailIdentity
+Parameter Sets: UpdateViaIdentity1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -171,7 +173,7 @@ This property can be set only when creating the folder.
 Find more information in Hidden mail folders.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -186,8 +188,8 @@ Accept wildcard characters: False
 key: id of mailFolder
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update1, UpdateExpanded1
 Aliases:
 
 Required: True
@@ -199,10 +201,10 @@ Accept wildcard characters: False
 
 ### -MessageRules
 The collection of rules that apply to the user's Inbox folder.
-To construct, see NOTES section for MESSAGERULES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for MESSAGERULES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMessageRule[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMessageRule[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -215,10 +217,10 @@ Accept wildcard characters: False
 
 ### -Messages
 The collection of messages in the mailFolder.
-To construct, see NOTES section for MESSAGES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for MESSAGES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMessage[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMessage[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -233,10 +235,10 @@ Accept wildcard characters: False
 The collection of multi-value extended properties defined for the mailFolder.
 Read-only.
 Nullable.
-To construct, see NOTES section for MULTIVALUEEXTENDEDPROPERTIES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for MULTIVALUEEXTENDEDPROPERTIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMultiValueLegacyExtendedProperty[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMultiValueLegacyExtendedProperty[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -251,7 +253,7 @@ Accept wildcard characters: False
 The unique identifier for the mailFolder's parent mailFolder.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -266,7 +268,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -281,10 +283,10 @@ Accept wildcard characters: False
 The collection of single-value extended properties defined for the mailFolder.
 Read-only.
 Nullable.
-To construct, see NOTES section for SINGLEVALUEEXTENDEDPROPERTIES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SINGLEVALUEEXTENDEDPROPERTIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSingleValueLegacyExtendedProperty[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSingleValueLegacyExtendedProperty[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -299,7 +301,7 @@ Accept wildcard characters: False
 The number of items in the mailFolder.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -314,7 +316,7 @@ Accept wildcard characters: False
 The number of items in the mailFolder marked as unread.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -329,8 +331,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update1, UpdateExpanded1
 Aliases:
 
 Required: True
@@ -344,7 +346,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -360,7 +362,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -377,10 +379,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMailIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailFolder
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -494,29 +499,29 @@ BODYPARAMETER <IMicrosoftGraphMailFolder>: mailFolder
     - `[HasAttachments <Boolean?>]`: Indicates whether the message has attachments. This property doesn't include inline attachments, so if a message contains only inline attachments, this property is false. To verify the existence of inline attachments, parse the body property to look for a src attribute, such as <IMG src='cid:image001.jpg@01D26CD8.6C05F070'>.
     - `[Importance <String>]`: importance
     - `[InferenceClassification <String>]`: inferenceClassificationType
-    - `[InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]`: A collection of message headers defined by RFC5322. The set includes message headers indicating the network path taken by a message from the sender to the recipient. It can also contain custom message headers that hold app data for the message.  Returned only on applying a $select query option. Read-only.
+    - `[InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]`: 
       - `[Name <String>]`: Represents the key in a key-value pair.
       - `[Value <String>]`: The value in a key-value pair.
-    - `[InternetMessageId <String>]`: The message ID in the format specified by RFC2822.
-    - `[IsDeliveryReceiptRequested <Boolean?>]`: Indicates whether a read receipt is requested for the message.
-    - `[IsDraft <Boolean?>]`: Indicates whether the message is a draft. A message is a draft if it hasn't been sent yet.
-    - `[IsRead <Boolean?>]`: Indicates whether the message has been read.
-    - `[IsReadReceiptRequested <Boolean?>]`: Indicates whether a read receipt is requested for the message.
+    - `[InternetMessageId <String>]`: 
+    - `[IsDeliveryReceiptRequested <Boolean?>]`: 
+    - `[IsDraft <Boolean?>]`: 
+    - `[IsRead <Boolean?>]`: 
+    - `[IsReadReceiptRequested <Boolean?>]`: 
     - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the message. Nullable.
       - `[Id <String>]`: Read-only.
       - `[Value <String[]>]`: A collection of property values.
-    - `[ParentFolderId <String>]`: The unique identifier for the message's parent mailFolder.
-    - `[ReceivedDateTime <DateTime?>]`: The date and time the message was received.  The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    - `[ReplyTo <IMicrosoftGraphRecipient[]>]`: The email addresses to use when replying.
+    - `[ParentFolderId <String>]`: 
+    - `[ReceivedDateTime <DateTime?>]`: 
+    - `[ReplyTo <IMicrosoftGraphRecipient[]>]`: 
     - `[Sender <IMicrosoftGraphRecipient>]`: recipient
-    - `[SentDateTime <DateTime?>]`: The date and time the message was sent.  The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[SentDateTime <DateTime?>]`: 
     - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the message. Nullable.
       - `[Id <String>]`: Read-only.
       - `[Value <String>]`: A property value.
-    - `[Subject <String>]`: The subject of the message.
-    - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: The To: recipients for the message.
+    - `[Subject <String>]`: 
+    - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: 
     - `[UniqueBody <IMicrosoftGraphItemBody>]`: itemBody
-    - `[WebLink <String>]`: The URL to open the message in Outlook on the web.You can append an ispopout argument to the end of the URL to change how the message is displayed. If ispopout is not present or if it is set to 1, then the message is shown in a popout window. If ispopout is set to 0, then the browser will show the message in the Outlook on the web review pane.The message will open in the browser if you are logged in to your mailbox via Outlook on the web. You will be prompted to login if you are not already logged in with the browser.This URL cannot be accessed from within an iFrame.
+    - `[WebLink <String>]`: 
   - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the mailFolder. Read-only. Nullable.
   - `[ParentFolderId <String>]`: The unique identifier for the mailFolder's parent mailFolder.
   - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the mailFolder. Read-only. Nullable.
@@ -626,29 +631,29 @@ CHILDFOLDERS <IMicrosoftGraphMailFolder[]>: The collection of child folders in t
     - `[HasAttachments <Boolean?>]`: Indicates whether the message has attachments. This property doesn't include inline attachments, so if a message contains only inline attachments, this property is false. To verify the existence of inline attachments, parse the body property to look for a src attribute, such as <IMG src='cid:image001.jpg@01D26CD8.6C05F070'>.
     - `[Importance <String>]`: importance
     - `[InferenceClassification <String>]`: inferenceClassificationType
-    - `[InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]`: A collection of message headers defined by RFC5322. The set includes message headers indicating the network path taken by a message from the sender to the recipient. It can also contain custom message headers that hold app data for the message.  Returned only on applying a $select query option. Read-only.
+    - `[InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]`: 
       - `[Name <String>]`: Represents the key in a key-value pair.
       - `[Value <String>]`: The value in a key-value pair.
-    - `[InternetMessageId <String>]`: The message ID in the format specified by RFC2822.
-    - `[IsDeliveryReceiptRequested <Boolean?>]`: Indicates whether a read receipt is requested for the message.
-    - `[IsDraft <Boolean?>]`: Indicates whether the message is a draft. A message is a draft if it hasn't been sent yet.
-    - `[IsRead <Boolean?>]`: Indicates whether the message has been read.
-    - `[IsReadReceiptRequested <Boolean?>]`: Indicates whether a read receipt is requested for the message.
+    - `[InternetMessageId <String>]`: 
+    - `[IsDeliveryReceiptRequested <Boolean?>]`: 
+    - `[IsDraft <Boolean?>]`: 
+    - `[IsRead <Boolean?>]`: 
+    - `[IsReadReceiptRequested <Boolean?>]`: 
     - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the message. Nullable.
       - `[Id <String>]`: Read-only.
       - `[Value <String[]>]`: A collection of property values.
-    - `[ParentFolderId <String>]`: The unique identifier for the message's parent mailFolder.
-    - `[ReceivedDateTime <DateTime?>]`: The date and time the message was received.  The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    - `[ReplyTo <IMicrosoftGraphRecipient[]>]`: The email addresses to use when replying.
+    - `[ParentFolderId <String>]`: 
+    - `[ReceivedDateTime <DateTime?>]`: 
+    - `[ReplyTo <IMicrosoftGraphRecipient[]>]`: 
     - `[Sender <IMicrosoftGraphRecipient>]`: recipient
-    - `[SentDateTime <DateTime?>]`: The date and time the message was sent.  The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[SentDateTime <DateTime?>]`: 
     - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the message. Nullable.
       - `[Id <String>]`: Read-only.
       - `[Value <String>]`: A property value.
-    - `[Subject <String>]`: The subject of the message.
-    - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: The To: recipients for the message.
+    - `[Subject <String>]`: 
+    - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: 
     - `[UniqueBody <IMicrosoftGraphItemBody>]`: itemBody
-    - `[WebLink <String>]`: The URL to open the message in Outlook on the web.You can append an ispopout argument to the end of the URL to change how the message is displayed. If ispopout is not present or if it is set to 1, then the message is shown in a popout window. If ispopout is set to 0, then the browser will show the message in the Outlook on the web review pane.The message will open in the browser if you are logged in to your mailbox via Outlook on the web. You will be prompted to login if you are not already logged in with the browser.This URL cannot be accessed from within an iFrame.
+    - `[WebLink <String>]`: 
   - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the mailFolder. Read-only. Nullable.
   - `[ParentFolderId <String>]`: The unique identifier for the mailFolder's parent mailFolder.
   - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the mailFolder. Read-only. Nullable.
@@ -763,6 +768,49 @@ MESSAGES <IMicrosoftGraphMessage[]>: The collection of messages in the mailFolde
     - `[CompletedDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
+      - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
+    - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+    - `[FlagStatus <String>]`: followupFlagStatus
+    - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+  - `[From <IMicrosoftGraphRecipient>]`: recipient
+  - `[HasAttachments <Boolean?>]`: Indicates whether the message has attachments. This property doesn't include inline attachments, so if a message contains only inline attachments, this property is false. To verify the existence of inline attachments, parse the body property to look for a src attribute, such as <IMG src='cid:image001.jpg@01D26CD8.6C05F070'>.
+  - `[Importance <String>]`: importance
+  - `[InferenceClassification <String>]`: inferenceClassificationType
+  - `[InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]`: 
+    - `[Name <String>]`: Represents the key in a key-value pair.
+    - `[Value <String>]`: The value in a key-value pair.
+  - `[InternetMessageId <String>]`: 
+  - `[IsDeliveryReceiptRequested <Boolean?>]`: 
+  - `[IsDraft <Boolean?>]`: 
+  - `[IsRead <Boolean?>]`: 
+  - `[IsReadReceiptRequested <Boolean?>]`: 
+  - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the message. Nullable.
+    - `[Id <String>]`: Read-only.
+    - `[Value <String[]>]`: A collection of property values.
+  - `[ParentFolderId <String>]`: 
+  - `[ReceivedDateTime <DateTime?>]`: 
+  - `[ReplyTo <IMicrosoftGraphRecipient[]>]`: 
+  - `[Sender <IMicrosoftGraphRecipient>]`: recipient
+  - `[SentDateTime <DateTime?>]`: 
+  - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the message. Nullable.
+    - `[Id <String>]`: Read-only.
+    - `[Value <String>]`: A property value.
+  - `[Subject <String>]`: 
+  - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: 
+  - `[UniqueBody <IMicrosoftGraphItemBody>]`: itemBody
+  - `[WebLink <String>]`: 
+
+MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>: The collection of multi-value extended properties defined for the mailFolder. Read-only. Nullable.
+  - `[Id <String>]`: Read-only.
+  - `[Value <String[]>]`: A collection of property values.
+
+SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>: The collection of single-value extended properties defined for the mailFolder. Read-only. Nullable.
+  - `[Id <String>]`: Read-only.
+  - `[Value <String>]`: A property value.
+
+## RELATED LINKS
+
+ in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
       - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
     - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[FlagStatus <String>]`: followupFlagStatus

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/new-mggrouptransitivememberbyref
 schema: 2.0.0
@@ -8,60 +8,36 @@ schema: 2.0.0
 # New-MgGroupTransitiveMemberByRef
 
 ## SYNOPSIS
-Create new navigation property ref to transitiveMemberOf for groups
+Create new navigation property ref to transitiveMembers for groups
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### CreateExpanded1 (Default)
 ```
-New-MgGroupTransitiveMemberByRef -GroupId <String> [-AdditionalProperties <Hashtable>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### CreateExpanded1
-```
-New-MgGroupTransitiveMemberByRef -GroupId <String> [-AdditionalProperties <Hashtable>] [-WhatIf] [-Confirm]
+New-MgGroupTransitiveMemberByRef -GroupId <String> [-AdditionalProperties <Hashtable>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgGroupTransitiveMemberByRef -GroupId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
+New-MgGroupTransitiveMemberByRef -GroupId <String> -BodyParameter <Hashtable> [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### Create
-```
-New-MgGroupTransitiveMemberByRef -GroupId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded1
-```
-New-MgGroupTransitiveMemberByRef -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgGroupTransitiveMemberByRef -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity1
 ```
-New-MgGroupTransitiveMemberByRef -InputObject <IGroupsIdentity> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgGroupTransitiveMemberByRef -InputObject <IGroupsIdentity> -BodyParameter <Hashtable> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
-### CreateViaIdentity
+### CreateViaIdentityExpanded1
 ```
-New-MgGroupTransitiveMemberByRef -InputObject <IGroupsIdentity> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgGroupTransitiveMemberByRef -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to transitiveMemberOf for groups
+Create new navigation property ref to transitiveMembers for groups
 
 ## EXAMPLES
 
@@ -71,8 +47,8 @@ Create new navigation property ref to transitiveMemberOf for groups
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
+Type: System.Collections.Hashtable
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -86,8 +62,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Hashtable
-Parameter Sets: Create1, Create, CreateViaIdentity1, CreateViaIdentity
+Type: System.Collections.Hashtable
+Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -101,8 +77,8 @@ Accept wildcard characters: False
 key: id of group
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateExpanded1, Create1, Create
+Type: System.String
+Parameter Sets: Create1, CreateExpanded1
 Aliases:
 
 Required: True
@@ -114,11 +90,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentityExpanded, CreateViaIdentity1, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+Parameter Sets: CreateViaIdentity1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -132,7 +108,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -148,7 +124,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -165,11 +141,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+
 ### System.Collections.Hashtable
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths12OpfrnGroupsGroupIdTransitivemembersRefPostResponses201ContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IPathsCgkcf5GroupsGroupIdTransitivememberofRefPostResponses201ContentApplicationJsonSchema
+
 ## NOTES
 
 ALIASES
@@ -190,6 +168,21 @@ INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[GroupId <String>]`: key: id of group
   - `[GroupLifecyclePolicyId <String>]`: key: id of groupLifecyclePolicy
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
+  - `[MentionId <String>]`: key: id of mention
+  - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
+  - `[NotebookId <String>]`: key: id of notebook
+  - `[OnenotePageId <String>]`: key: id of onenotePage
+  - `[OnenoteSectionId <String>]`: key: id of onenoteSection
+  - `[PostId <String>]`: key: id of post
+  - `[ProfilePhotoId <String>]`: key: id of profilePhoto
+  - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
+  - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
+  - `[User <String>]`: Usage: User={User}
+  - `[UserId <String>]`: key: id of user
+
+## RELATED LINKS
+
+tebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[MentionId <String>]`: key: id of mention
   - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
   - `[NotebookId <String>]`: key: id of notebook

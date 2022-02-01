@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Sites-help.xml
+external help file:
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/new-mgsitelist
 schema: 2.0.0
@@ -17,18 +17,25 @@ The collection of lists under this site.
 New-MgSiteList -SiteId <String> [-AdditionalProperties <Hashtable>]
  [-Columns <IMicrosoftGraphColumnDefinition1[]>] [-ContentTypes <IMicrosoftGraphContentType1[]>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedByUser <IMicrosoftGraphUser1>]
- [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Drive <IMicrosoftGraphDrive1>]
- [-ETag <String>] [-Id <String>] [-Items <IMicrosoftGraphListItem1[]>]
+ [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
+ [-Drive <IMicrosoftGraphDrive1>] [-ETag <String>] [-Id <String>] [-Items <IMicrosoftGraphListItem1[]>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedByUser <IMicrosoftGraphUser1>]
  [-LastModifiedDateTime <DateTime>] [-List <IMicrosoftGraphListInfo>] [-Name <String>]
  [-ParentReference <IMicrosoftGraphItemReference>] [-SharepointIds <IMicrosoftGraphSharepointIds>]
- [-Subscriptions <IMicrosoftGraphSubscription1[]>] [-System <Hashtable>] [-WebUrl <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Subscriptions <IMicrosoftGraphSubscription1[]>] [-System <Hashtable>] [-WebUrl <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgSiteList -SiteId <String> -BodyParameter <IMicrosoftGraphList1> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgSiteList -SiteId <String> -BodyParameter <IMicrosoftGraphList1> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgSiteList -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphList1> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -36,19 +43,13 @@ New-MgSiteList -SiteId <String> -BodyParameter <IMicrosoftGraphList1> [-WhatIf] 
 New-MgSiteList -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
  [-Columns <IMicrosoftGraphColumnDefinition1[]>] [-ContentTypes <IMicrosoftGraphContentType1[]>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedByUser <IMicrosoftGraphUser1>]
- [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Drive <IMicrosoftGraphDrive1>]
- [-ETag <String>] [-Id <String>] [-Items <IMicrosoftGraphListItem1[]>]
+ [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
+ [-Drive <IMicrosoftGraphDrive1>] [-ETag <String>] [-Id <String>] [-Items <IMicrosoftGraphListItem1[]>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedByUser <IMicrosoftGraphUser1>]
  [-LastModifiedDateTime <DateTime>] [-List <IMicrosoftGraphListInfo>] [-Name <String>]
  [-ParentReference <IMicrosoftGraphItemReference>] [-SharepointIds <IMicrosoftGraphSharepointIds>]
- [-Subscriptions <IMicrosoftGraphSubscription1[]>] [-System <Hashtable>] [-WebUrl <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgSiteList -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphList1> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Subscriptions <IMicrosoftGraphSubscription1[]>] [-System <Hashtable>] [-WebUrl <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -62,7 +63,7 @@ The collection of lists under this site.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -75,10 +76,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 list
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphList1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphList1
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -91,10 +92,10 @@ Accept wildcard characters: False
 
 ### -Columns
 The collection of field definitions for this list.
-To construct, see NOTES section for COLUMNS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for COLUMNS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphColumnDefinition1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnDefinition1[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -107,10 +108,10 @@ Accept wildcard characters: False
 
 ### -ContentTypes
 The collection of content types present in this list.
-To construct, see NOTES section for CONTENTTYPES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for CONTENTTYPES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphContentType1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentType1[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -123,10 +124,10 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 identitySet
-To construct, see NOTES section for CREATEDBY properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -138,11 +139,11 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedByUser
-Represents an Azure Active Directory user object.
-To construct, see NOTES section for CREATEDBYUSER properties and create a hash table.
+user
+To construct, please use Get-Help -Online and see NOTES section for CREATEDBYUSER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUser1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUser1
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -158,7 +159,7 @@ Date and time of item creation.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -174,7 +175,7 @@ Provides a user-visible description of the item.
 Optional.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -189,7 +190,7 @@ Accept wildcard characters: False
 The displayable title of the list.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -202,10 +203,10 @@ Accept wildcard characters: False
 
 ### -Drive
 drive
-To construct, see NOTES section for DRIVE properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DRIVE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDrive1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDrive1
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -221,7 +222,7 @@ ETag for the item.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -236,7 +237,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -249,11 +250,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISitesIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ISitesIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -265,10 +266,10 @@ Accept wildcard characters: False
 
 ### -Items
 All items contained in the list.
-To construct, see NOTES section for ITEMS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ITEMS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphListItem1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphListItem1[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -281,10 +282,10 @@ Accept wildcard characters: False
 
 ### -LastModifiedBy
 identitySet
-To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -296,11 +297,11 @@ Accept wildcard characters: False
 ```
 
 ### -LastModifiedByUser
-Represents an Azure Active Directory user object.
-To construct, see NOTES section for LASTMODIFIEDBYUSER properties and create a hash table.
+user
+To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBYUSER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUser1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUser1
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -316,7 +317,7 @@ Date and time the item was last modified.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -329,10 +330,10 @@ Accept wildcard characters: False
 
 ### -List
 listInfo
-To construct, see NOTES section for LIST properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for LIST properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphListInfo
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphListInfo
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -348,7 +349,7 @@ The name of the item.
 Read-write.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -361,10 +362,10 @@ Accept wildcard characters: False
 
 ### -ParentReference
 itemReference
-To construct, see NOTES section for PARENTREFERENCE properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for PARENTREFERENCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemReference
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemReference
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -377,10 +378,10 @@ Accept wildcard characters: False
 
 ### -SharepointIds
 sharepointIds
-To construct, see NOTES section for SHAREPOINTIDS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SHAREPOINTIDS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSharepointIds
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSharepointIds
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -395,8 +396,8 @@ Accept wildcard characters: False
 key: id of site
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -408,10 +409,10 @@ Accept wildcard characters: False
 
 ### -Subscriptions
 The set of subscriptions on the list.
-To construct, see NOTES section for SUBSCRIPTIONS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SUBSCRIPTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSubscription1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSubscription1[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -426,7 +427,7 @@ Accept wildcard characters: False
 systemFacet
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -442,7 +443,7 @@ URL that displays the resource in the browser.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -457,7 +458,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -473,7 +474,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -490,10 +491,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphList1
+
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphList1
+
 ## NOTES
 
 ALIASES
@@ -509,22 +513,22 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
+      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+      - `[Id <String>]`: The identifier of the identity. This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[CreatedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+  - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeletedDateTime <DateTime?>]`: 
     - `[Id <String>]`: Read-only.
     - `[AboutMe <String>]`: A freeform text entry field for the user to describe themselves. Returned only on $select.
-    - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. This property is required when a user is created. Supports $filter (eq, ne, NOT, and in).
+    - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. This property is required when a user is created. Supports $filter (eq, ne, not, and in).
     - `[Activities <IMicrosoftGraphUserActivity1[]>]`: The user's activities across devices. Read-only. Nullable.
       - `[Id <String>]`: Read-only.
       - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
       - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
       - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-      - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
+      - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
       - `[ContentInfo <IMicrosoftGraphJson>]`: Json
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -549,7 +553,7 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
+          - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
           - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
           - `[AlternativeText <String>]`: 
           - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -557,7 +561,7 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
         - `[Content <IMicrosoftGraphJson>]`: Json
         - `[Description <String>]`: Optional. Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
         - `[DisplayText <String>]`: Required. Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)
-    - `[AgeGroup <String>]`: Sets the age group of the user. Allowed values: null, minor, notAdult and adult. Refer to the legal age group property definitions for further information. Supports $filter (eq, ne, NOT, and in).
+    - `[AgeGroup <String>]`: Sets the age group of the user. Allowed values: null, minor, notAdult and adult. Refer to the legal age group property definitions for further information. Supports $filter (eq, ne, not, and in).
     - `[AgreementAcceptances <IMicrosoftGraphAgreementAcceptance[]>]`: The user's terms of use acceptance statuses. Read-only. Nullable.
       - `[Id <String>]`: Read-only.
       - `[AgreementFileId <String>]`: ID of the agreement file accepted by the user.
@@ -573,7 +577,7 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
       - `[UserEmail <String>]`: Email of the user when the acceptance was recorded.
       - `[UserId <String>]`: ID of the user who accepted the agreement.
       - `[UserPrincipalName <String>]`: UPN of the user when the acceptance was recorded.
-    - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment1[]>]`: Represents the app roles a user has been granted for an application.
+    - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment1[]>]`: Represents the app roles a user has been granted for an application. Supports $expand.
       - `[DeletedDateTime <DateTime?>]`: 
       - `[Id <String>]`: Read-only.
       - `[AppRoleId <String>]`: The identifier (id) for the app role which is assigned to the principal. This app role must be exposed in the appRoles property on the resource application's service principal (resourceId). If the resource application has not declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles. Required on create.
@@ -583,10 +587,10 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
       - `[PrincipalType <String>]`: The type of the assigned principal. This can either be User, Group or ServicePrincipal. Read-only.
       - `[ResourceDisplayName <String>]`: The display name of the resource app's service principal to which the assignment is made.
       - `[ResourceId <String>]`: The unique identifier (id) for the resource service principal for which the assignment is made. Required on create. Supports $filter (eq only).
-    - `[AssignedLicenses <IMicrosoftGraphAssignedLicense[]>]`: The licenses that are assigned to the user, including inherited (group-based) licenses. Not nullable. Supports $filter (eq and NOT).
+    - `[AssignedLicenses <IMicrosoftGraphAssignedLicense[]>]`: The licenses that are assigned to the user, including inherited (group-based) licenses. Not nullable. Supports $filter (eq and not).
       - `[DisabledPlans <String[]>]`: A collection of the unique identifiers for plans that have been disabled.
       - `[SkuId <String>]`: The unique identifier for the SKU.
-    - `[AssignedPlans <IMicrosoftGraphAssignedPlan[]>]`: The plans that are assigned to the user. Read-only. Not nullable.Supports $filter (eq and NOT).
+    - `[AssignedPlans <IMicrosoftGraphAssignedPlan[]>]`: The plans that are assigned to the user. Read-only. Not nullable.Supports $filter (eq and not).
       - `[AssignedDateTime <DateTime?>]`: The date and time at which the plan was assigned; for example: 2013-01-02T19:32:30Z. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[CapabilityStatus <String>]`: Condition of the capability assignment. The possible values are Enabled, Warning, Suspended, Deleted, LockedOut.
       - `[Service <String>]`: The name of the service; for example, 'Exchange'.
@@ -607,39 +611,39 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
       - `[MicrosoftAuthenticatorMethods <IMicrosoftGraphMicrosoftAuthenticatorAuthenticationMethod1[]>]`: 
         - `[Id <String>]`: Read-only.
         - `[CreatedDateTime <DateTime?>]`: The date and time that this app was registered. This property is null if the device is not registered for passwordless Phone Sign-In.
-        - `[Device <IMicrosoftGraphDevice1>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
+        - `[Device <IMicrosoftGraphDevice1>]`: device
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DeletedDateTime <DateTime?>]`: 
           - `[Id <String>]`: Read-only.
-          - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. default is true.
-          - `[AlternativeSecurityIds <IMicrosoftGraphAlternativeSecurityId[]>]`: For internal use only. Not nullable.
+          - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. Default is true.  Supports $filter (eq, ne, not, in). Only callers in Global Administrator and Cloud Device Administrator roles can set this property.
+          - `[AlternativeSecurityIds <IMicrosoftGraphAlternativeSecurityId[]>]`: For internal use only. Not nullable. Supports $filter (eq, not, ge, le).
             - `[IdentityProvider <String>]`: For internal use only
             - `[Key <Byte[]>]`: For internal use only
             - `[Type <Int32?>]`: For internal use only
-          - `[ApproximateLastSignInDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+          - `[ApproximateLastSignInDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Supports $filter (eq, ne, not, ge, le, and eq on null values) and $orderBy.
           - `[ComplianceExpirationDateTime <DateTime?>]`: The timestamp when the device is no longer deemed compliant. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-          - `[DeviceId <String>]`: Identifier set by Azure Device Registration Service at the time of registration.
+          - `[DeviceId <String>]`: Identifier set by Azure Device Registration Service at the time of registration. Supports $filter (eq, ne, not, startsWith).
           - `[DeviceMetadata <String>]`: For internal use only. Set to null.
           - `[DeviceVersion <Int32?>]`: For internal use only.
-          - `[DisplayName <String>]`: The display name for the device. Required.
+          - `[DisplayName <String>]`: The display name for the device. Required. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderBy.
           - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the device. Read-only. Nullable.
             - `[Id <String>]`: Read-only.
-          - `[IsCompliant <Boolean?>]`: true if the device complies with Mobile Device Management (MDM) policies; otherwise, false. Read-only. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
-          - `[IsManaged <Boolean?>]`: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
-          - `[MdmAppId <String>]`: Application identifier used to register device into MDM. Read-only. Supports $filter.
-          - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups that this device is a member of. Read-only. Nullable.
+          - `[IsCompliant <Boolean?>]`: true if the device complies with Mobile Device Management (MDM) policies; otherwise, false. Read-only. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices. Supports $filter (eq, ne, not).
+          - `[IsManaged <Boolean?>]`: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices. Supports $filter (eq, ne, not).
+          - `[MdmAppId <String>]`: Application identifier used to register device into MDM. Read-only. Supports $filter (eq, ne, not, startsWith).
+          - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups that this device is a member of. Read-only. Nullable. Supports $expand.
             - `[Id <String>]`: Read-only.
             - `[DeletedDateTime <DateTime?>]`: 
-          - `[OnPremisesLastSyncDateTime <DateTime?>]`: The last time at which the object was synced with the on-premises directory. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
-          - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default). Read-only.
-          - `[OperatingSystem <String>]`: The type of operating system on the device. Required.
-          - `[OperatingSystemVersion <String>]`: Operating system version of the device. Required.
-          - `[PhysicalIds <String[]>]`: For internal use only. Not nullable.
+          - `[OnPremisesLastSyncDateTime <DateTime?>]`: The last time at which the object was synced with the on-premises directory. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only. Supports $filter (eq, ne, not, ge, le, in).
+          - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default). Read-only. Supports $filter (eq, ne, not, in, and eq on null values).
+          - `[OperatingSystem <String>]`: The type of operating system on the device. Required. Supports $filter (eq, ne, not, ge, le, startsWith, and eq on null values).
+          - `[OperatingSystemVersion <String>]`: Operating system version of the device. Required. Supports $filter (eq, ne, not, ge, le, startsWith, and eq on null values).
+          - `[PhysicalIds <String[]>]`: For internal use only. Not nullable. Supports $filter (eq, not, ge, le, startsWith).
           - `[ProfileType <String>]`: The profile type of the device. Possible values: RegisteredDevice (default), SecureVM, Printer, Shared, IoT.
-          - `[RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]`: The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Currently, there can be only one owner. Read-only. Nullable.
-          - `[RegisteredUsers <IMicrosoftGraphDirectoryObject[]>]`: Collection of registered users of the device. For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration. Read-only. Nullable.
+          - `[RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]`: The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Currently, there can be only one owner. Read-only. Nullable. Supports $expand.
+          - `[RegisteredUsers <IMicrosoftGraphDirectoryObject[]>]`: Collection of registered users of the device. For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration. Read-only. Nullable. Supports $expand.
           - `[SystemLabels <String[]>]`: List of labels applied to the device by the system.
-          - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups that this device is a member of. This operation is transitive.
+          - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups that this device is a member of. This operation is transitive. Supports $expand.
           - `[TrustType <String>]`: Type of trust for the joined device. Read-only. Possible values: Workplace (indicates bring your own personal devices), AzureAd (Cloud only joined devices), ServerAd (on-premises domain joined devices joined to Azure AD). For more details, see Introduction to device management in Azure Active Directory
         - `[DeviceTag <String>]`: Tags containing app metadata.
         - `[DisplayName <String>]`: The name of the device on which this app is registered.
@@ -647,11 +651,11 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
       - `[WindowsHelloForBusinessMethods <IMicrosoftGraphWindowsHelloForBusinessAuthenticationMethod1[]>]`: 
         - `[Id <String>]`: Read-only.
         - `[CreatedDateTime <DateTime?>]`: The date and time that this Windows Hello for Business key was registered.
-        - `[Device <IMicrosoftGraphDevice1>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
+        - `[Device <IMicrosoftGraphDevice1>]`: device
         - `[DisplayName <String>]`: The name of the device on which Windows Hello for Business is registered
         - `[KeyStrength <String>]`: authenticationMethodKeyStrength
     - `[Birthday <DateTime?>]`: The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Returned only on $select.
-    - `[BusinessPhones <String[]>]`: The telephone numbers for the user. Only one number can be set for this property. Read-only for users synced from on-premises directory. Supports $filter (eq and NOT).
+    - `[BusinessPhones <String[]>]`: The telephone numbers for the user. Only one number can be set for this property. Read-only for users synced from on-premises directory. Supports $filter (eq, not, ge, le, startsWith).
     - `[Calendar <IMicrosoftGraphCalendar1>]`: calendar
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: Read-only.
@@ -672,7 +676,7 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
         - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
         - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
         - `[Id <String>]`: Read-only.
-        - `[AllowNewTimeProposals <Boolean?>]`: True if the meeting organizer allows invitees to propose a new time when responding, false otherwise. Optional. Default is true.
+        - `[AllowNewTimeProposals <Boolean?>]`: true if the meeting organizer allows invitees to propose a new time when responding; otherwise false. Optional. Default is true.
         - `[Attachments <IMicrosoftGraphAttachment[]>]`: The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event. Navigation property. Read-only. Nullable.
           - `[Id <String>]`: Read-only.
           - `[ContentType <String>]`: The MIME type.
@@ -707,12 +711,12 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
         - `[ICalUId <String>]`: A unique identifier for an event across calendars. This ID is different for each occurrence in a recurring series. Read-only.
         - `[Importance <String>]`: importance
         - `[Instances <IMicrosoftGraphEvent1[]>]`: The occurrences of a recurring series, if the event is a series master. This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series. Navigation property. Read-only. Nullable.
-        - `[IsAllDay <Boolean?>]`: Set to true if the event lasts all day.
-        - `[IsCancelled <Boolean?>]`: Set to true if the event has been canceled.
-        - `[IsDraft <Boolean?>]`: Set to true if the user has updated the meeting in Outlook but has not sent the updates to attendees. Set to false if all changes have been sent, or if the event is an appointment without any attendees.
-        - `[IsOnlineMeeting <Boolean?>]`: True if this event has online meeting information, false otherwise. Default is false. Optional.
-        - `[IsOrganizer <Boolean?>]`: Set to true if the calendar owner (specified by the owner property of the calendar) is the organizer of the event (specified by the organizer property of the event). This also applies if a delegate organized the event on behalf of the owner.
-        - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the event.
+        - `[IsAllDay <Boolean?>]`: 
+        - `[IsCancelled <Boolean?>]`: 
+        - `[IsDraft <Boolean?>]`: 
+        - `[IsOnlineMeeting <Boolean?>]`: 
+        - `[IsOrganizer <Boolean?>]`: 
+        - `[IsReminderOn <Boolean?>]`: 
         - `[Location <IMicrosoftGraphLocation1>]`: location
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Address <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
@@ -735,7 +739,7 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
           - `[LocationUri <String>]`: Optional URI representing the location.
           - `[UniqueId <String>]`: For internal use only.
           - `[UniqueIdType <String>]`: locationUniqueIdType
-        - `[Locations <IMicrosoftGraphLocation1[]>]`: The locations where the event is held or attended from. The location and locations properties always correspond with each other. If you update the location property, any prior locations in the locations collection would be removed and replaced by the new location value.
+        - `[Locations <IMicrosoftGraphLocation1[]>]`: 
         - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the event. Read-only. Nullable.
           - `[Id <String>]`: Read-only.
           - `[Value <String[]>]`: A collection of property values.
@@ -752,19 +756,19 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
           - `[TollFreeNumbers <String[]>]`: The toll free numbers that can be used to join the conference.
           - `[TollNumber <String>]`: The toll number that can be used to join the conference.
         - `[OnlineMeetingProvider <String>]`: onlineMeetingProviderType
-        - `[OnlineMeetingUrl <String>]`: A URL for an online meeting. The property is set only when an organizer specifies an event as an online meeting such as a Skype meeting. Read-only.
+        - `[OnlineMeetingUrl <String>]`: 
         - `[Organizer <IMicrosoftGraphRecipient>]`: recipient
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-        - `[OriginalEndTimeZone <String>]`: The end time zone that was set when the event was created. A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
-        - `[OriginalStart <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-        - `[OriginalStartTimeZone <String>]`: The start time zone that was set when the event was created. A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
+        - `[OriginalEndTimeZone <String>]`: 
+        - `[OriginalStart <DateTime?>]`: 
+        - `[OriginalStartTimeZone <String>]`: 
         - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs. Required if type is absoluteMonthly or absoluteYearly.
-            - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. Possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
+            - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
             - `[FirstDayOfWeek <String>]`: dayOfWeek
             - `[Index <String>]`: weekIndex
             - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type. Required.
@@ -777,20 +781,20 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
             - `[RecurrenceTimeZone <String>]`: Time zone for the startDate and endDate properties. Optional. If not specified, the time zone of the event is used.
             - `[StartDate <DateTime?>]`: The date to start applying the recurrence pattern. The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event. Must be the same value as the start property of the recurring event. Required.
             - `[Type <String>]`: recurrenceRangeType
-        - `[ReminderMinutesBeforeStart <Int32?>]`: The number of minutes before the event start time that the reminder alert occurs.
-        - `[ResponseRequested <Boolean?>]`: Default is true, which represents the organizer would like an invitee to send a response to the event.
+        - `[ReminderMinutesBeforeStart <Int32?>]`: 
+        - `[ResponseRequested <Boolean?>]`: 
         - `[ResponseStatus <IMicrosoftGraphResponseStatus>]`: responseStatus
         - `[Sensitivity <String>]`: sensitivity
-        - `[SeriesMasterId <String>]`: The ID for the recurring series master item, if this event is part of a recurring series.
+        - `[SeriesMasterId <String>]`: 
         - `[ShowAs <String>]`: freeBusyStatus
         - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the event. Read-only. Nullable.
           - `[Id <String>]`: Read-only.
           - `[Value <String>]`: A property value.
         - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-        - `[Subject <String>]`: The text of the event's subject line.
-        - `[TransactionId <String>]`: A custom identifier specified by a client app for the server to avoid redundant POST operations in case of client retries to create the same event. This is useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request. After you set transactionId when creating an event, you cannot change transactionId in a subsequent update. This property is only returned in a response payload if an app has set it. Optional.
+        - `[Subject <String>]`: 
+        - `[TransactionId <String>]`: 
         - `[Type <String>]`: eventType
-        - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in to your mailbox. Otherwise, Outlook on the web prompts you to sign in.This URL cannot be accessed from within an iFrame.
+        - `[WebLink <String>]`: 
       - `[CanEdit <Boolean?>]`: true if the user can write to the calendar, false otherwise. This property is true for the user who created the calendar. This property is also true for a user who has been shared a calendar and granted write access, through an Outlook client or the corresponding calendarPermission resource. Read-only.
       - `[CanShare <Boolean?>]`: true if the user has the permission to share the calendar, false otherwise. Only the user who created the calendar can share it. Read-only.
       - `[CanViewPrivateItems <Boolean?>]`: true if the user can read calendar items that have been marked private, false otherwise. This property is set through an Outlook client or the corresponding calendarPermission resource. Read-only.
@@ -848,7 +852,7 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
         - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
       - `[Messages <IMicrosoftGraphChatMessage1[]>]`: A collection of all the messages in the chat. Nullable.
         - `[Id <String>]`: Read-only.
-        - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: Attached files. Attachments are currently read-only - sending attachments is not supported.
+        - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: References to attached objects like files, tabs, meetings etc.
           - `[Content <String>]`: The content of the attachment. If the attachment is a rich card, set the property to the rich card object. This property and contentUrl are mutually exclusive.
           - `[ContentType <String>]`: The media type of the content attachment. It can have the following values: reference: Attachment is a link to another file. Populate the contentURL with the link to the object.Any contentTypes supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet. application/vnd.microsoft.card.announcement: An announcement header.
           - `[ContentUrl <String>]`: URL for the content of the attachment. Supported protocols: http, https, file and data.
@@ -864,6 +868,8 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
         - `[CreatedDateTime <DateTime?>]`: Timestamp of when the chat message was created.
         - `[DeletedDateTime <DateTime?>]`: Read only. Timestamp at which the chat message was deleted, or null if not deleted.
         - `[Etag <String>]`: Read-only. Version number of the chat message.
+        - `[EventDetail <IMicrosoftGraphEventMessageDetail>]`: eventMessageDetail
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[From <IMicrosoftGraphChatMessageFromIdentitySet>]`: chatMessageFromIdentitySet
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -877,7 +883,7 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
         - `[LastEditedDateTime <DateTime?>]`: Read only. Timestamp when edits to the chat message were made. Triggers an 'Edited' flag in the Teams UI. If no edits are made the value is null.
         - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
         - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
-        - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Currently supports user, bot, team, channel.
+        - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
           - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
           - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
           - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
@@ -887,10 +893,10 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
             - `[User <IMicrosoftGraphIdentity>]`: identity
             - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-              - `[Id <String>]`: Unique identifier for the identity.
+              - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+              - `[Id <String>]`: The identifier of the identity. This property is read-only.
               - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
-        - `[MessageType <String>]`: 
+        - `[MessageType <String>]`: chatMessageType
         - `[PolicyViolation <IMicrosoftGraphChatMessagePolicyViolation>]`: chatMessagePolicyViolation
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DlpAction <String>]`: chatMessagePolicyViolationDlpActionTypes
@@ -927,9 +933,10 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
         - `[TeamsApp <IMicrosoftGraphTeamsApp1>]`: teamsApp
         - `[WebUrl <String>]`: Deep link URL of the tab instance. Read only.
       - `[Topic <String>]`: (Optional) Subject or topic for the chat. Only available for group chats.
-    - `[City <String>]`: The city in which the user is located. Maximum length is 128 characters. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
-    - `[CompanyName <String>]`: The company name which the user is associated. This property can be useful for describing the company that an external user comes from. The maximum length of the company name is 64 characters.Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
-    - `[ConsentProvidedForMinor <String>]`: Sets whether consent has been obtained for minors. Allowed values: null, granted, denied and notRequired. Refer to the legal age group property definitions for further information. Supports $filter (eq, ne, NOT, and in).
+      - `[WebUrl <String>]`: The URL for the chat in Microsoft Teams. The URL should be treated as an opaque blob, and not parsed. Read-only.
+    - `[City <String>]`: The city in which the user is located. Maximum length is 128 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+    - `[CompanyName <String>]`: The company name which the user is associated. This property can be useful for describing the company that an external user comes from. The maximum length of the company name is 64 characters.Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+    - `[ConsentProvidedForMinor <String>]`: Sets whether consent has been obtained for minors. Allowed values: null, granted, denied and notRequired. Refer to the legal age group property definitions for further information. Supports $filter (eq, ne, not, and in).
     - `[ContactFolders <IMicrosoftGraphContactFolder1[]>]`: The user's contacts folders. Read-only. Nullable.
       - `[Id <String>]`: Read-only.
       - `[ChildFolders <IMicrosoftGraphContactFolder1[]>]`: The collection of child folders in the folder. Navigation property. Read-only. Nullable.
@@ -955,57 +962,57 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
         - `[GivenName <String>]`: The contact's given name.
         - `[HomeAddress <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
         - `[HomePhones <String[]>]`: The contact's home phone numbers.
-        - `[ImAddresses <String[]>]`: The contact's instant messaging (IM) addresses.
-        - `[Initials <String>]`: The contact's initials.
-        - `[JobTitle <String>]`: The contact's job title.
-        - `[Manager <String>]`: The name of the contact's manager.
-        - `[MiddleName <String>]`: The contact's middle name.
-        - `[MobilePhone <String>]`: The contact's mobile phone number.
+        - `[ImAddresses <String[]>]`: 
+        - `[Initials <String>]`: 
+        - `[JobTitle <String>]`: 
+        - `[Manager <String>]`: 
+        - `[MiddleName <String>]`: 
+        - `[MobilePhone <String>]`: 
         - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
-        - `[NickName <String>]`: The contact's nickname.
-        - `[OfficeLocation <String>]`: The location of the contact's office.
+        - `[NickName <String>]`: 
+        - `[OfficeLocation <String>]`: 
         - `[OtherAddress <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
-        - `[ParentFolderId <String>]`: The ID of the contact's parent folder.
-        - `[PersonalNotes <String>]`: The user's notes about the contact.
+        - `[ParentFolderId <String>]`: 
+        - `[PersonalNotes <String>]`: 
         - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: Read-only.
           - `[Height <Int32?>]`: The height of the photo. Read-only.
           - `[Width <Int32?>]`: The width of the photo. Read-only.
-        - `[Profession <String>]`: The contact's profession.
+        - `[Profession <String>]`: 
         - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the contact. Read-only. Nullable.
-        - `[SpouseName <String>]`: The name of the contact's spouse/partner.
-        - `[Surname <String>]`: The contact's surname.
-        - `[Title <String>]`: The contact's title.
-        - `[YomiCompanyName <String>]`: The phonetic Japanese company name of the contact.
-        - `[YomiGivenName <String>]`: The phonetic Japanese given name (first name) of the contact.
-        - `[YomiSurname <String>]`: The phonetic Japanese surname (last name)  of the contact.
+        - `[SpouseName <String>]`: 
+        - `[Surname <String>]`: 
+        - `[Title <String>]`: 
+        - `[YomiCompanyName <String>]`: 
+        - `[YomiGivenName <String>]`: 
+        - `[YomiSurname <String>]`: 
       - `[DisplayName <String>]`: The folder's display name.
       - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the contactFolder. Read-only. Nullable.
       - `[ParentFolderId <String>]`: The ID of the folder's parent folder.
       - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the contactFolder. Read-only. Nullable.
     - `[Contacts <IMicrosoftGraphContact1[]>]`: The user's contacts. Read-only. Nullable.
-    - `[Country <String>]`: The country/region in which the user is located; for example, US or UK. Maximum length is 128 characters. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
-    - `[CreatedDateTime <DateTime?>]`: The date and time the user was created. The value cannot be modified and is automatically populated when the entity is created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. Property is nullable. A null value indicates that an accurate creation time couldn't be determined for the user. Read-only. Supports $filter (eq, ne, NOT , ge, le, and in operators).
+    - `[Country <String>]`: The country/region in which the user is located; for example, US or UK. Maximum length is 128 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+    - `[CreatedDateTime <DateTime?>]`: The date and time the user was created. The value cannot be modified and is automatically populated when the entity is created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. Property is nullable. A null value indicates that an accurate creation time couldn't be determined for the user. Read-only. Supports $filter (eq, ne, not , ge, le, in).
     - `[CreatedObjects <IMicrosoftGraphDirectoryObject[]>]`: Directory objects that were created by the user. Read-only. Nullable.
-    - `[CreationType <String>]`: Indicates whether the user account was created as a regular school or work account (null), an external account (Invitation), a local account for an Azure Active Directory B2C tenant (LocalAccount) or self-service sign-up using email verification (EmailVerified). Read-only. Supports $filter (eq, ne, NOT, and in).
-    - `[Department <String>]`: The name for the department in which the user works. Maximum length is 64 characters.Supports $filter (eq, ne, NOT , ge, le, and in operators).
+    - `[CreationType <String>]`: Indicates whether the user account was created through one of the following methods:  As a regular school or work account (null). As an external account (Invitation). As a local account for an Azure Active Directory B2C tenant (LocalAccount). Through self-service sign-up by an internal user using email verification (EmailVerified). Through self-service sign-up by an external user signing up through a link that is part of a user flow (SelfServiceSignUp).  Read-only.Supports $filter (eq, ne, not, and in).
+    - `[Department <String>]`: The name for the department in which the user works. Maximum length is 64 characters.Supports $filter (eq, ne, not , ge, le, in, and eq on null values).
     - `[DeviceEnrollmentLimit <Int32?>]`: The limit on the maximum number of devices that the user is permitted to enroll. Allowed values are 5 or 1000.
     - `[DeviceManagementTroubleshootingEvents <IMicrosoftGraphDeviceManagementTroubleshootingEvent1[]>]`: The list of troubleshooting events for this user.
       - `[Id <String>]`: Read-only.
       - `[CorrelationId <String>]`: Id used for tracing the failure in the service.
       - `[EventDateTime <DateTime?>]`: Time when the event occurred .
-    - `[DirectReports <IMicrosoftGraphDirectoryObject[]>]`: The users and contacts that report to the user. (The users and contacts that have their manager property set to this user.) Read-only. Nullable.
-    - `[DisplayName <String>]`: The name displayed in the address book for the user. This value is usually the combination of the user's first name, middle initial, and last name. This property is required when a user is created and it cannot be cleared during updates. Maximum length is 256 characters. Supports $filter (eq, ne, NOT , ge, le, in, startsWith), $orderBy, and $search.
+    - `[DirectReports <IMicrosoftGraphDirectoryObject[]>]`: The users and contacts that report to the user. (The users and contacts that have their manager property set to this user.) Read-only. Nullable. Supports $expand.
+    - `[DisplayName <String>]`: The name displayed in the address book for the user. This value is usually the combination of the user's first name, middle initial, and last name. This property is required when a user is created and it cannot be cleared during updates. Maximum length is 256 characters. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values), $orderBy, and $search.
     - `[Drive <IMicrosoftGraphDrive1>]`: drive
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[CreatedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+      - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
       - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
       - `[Description <String>]`: Provides a user-visible description of the item. Optional.
       - `[ETag <String>]`: ETag for the item. Read-only.
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+      - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
       - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
       - `[Name <String>]`: The name of the item. Read-write.
       - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -1028,15 +1035,14 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
         - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
       - `[WebUrl <String>]`: URL that displays the resource in the browser. Read-only.
       - `[Id <String>]`: Read-only.
-      - `[DriveType <String>]`: Describes the type of drive represented by this resource. OneDrive personal drives will return personal. OneDrive for Business will return business. SharePoint document libraries will return documentLibrary. Read-only.
-      - `[Following <IMicrosoftGraphDriveItem1[]>]`: The list of items the user is following. Only in OneDrive for Business.
+      - `[Bundles <IMicrosoftGraphDriveItem1[]>]`: Collection of [bundles][bundle] (albums and multi-select-shared sets of items). Only in personal OneDrive.
         - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[CreatedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+        - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
         - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
         - `[Description <String>]`: Provides a user-visible description of the item. Optional.
         - `[ETag <String>]`: ETag for the item. Read-only.
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+        - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
         - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
         - `[Name <String>]`: The name of the item. Read-write.
         - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -1090,6 +1096,12 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
           - `[Track <Int32?>]`: The number of the track on the original disc for this audio file.
           - `[TrackCount <Int32?>]`: The total number of tracks on the original disc for this audio file.
           - `[Year <Int32?>]`: The year the audio file was recorded.
+        - `[Bundle <IMicrosoftGraphBundle>]`: bundle
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Album <IMicrosoftGraphAlbum>]`: album
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[CoverImageItemId <String>]`: Unique identifier of the [driveItem][] that is the cover of the album.
+          - `[ChildCount <Int32?>]`: Number of children contained immediately within this container.
         - `[CTag <String>]`: An eTag for the content of the item. This eTag is not changed if only the metadata is changed. Note This property is not returned if the item is a folder. Read-only.
         - `[Children <IMicrosoftGraphDriveItem1[]>]`: Collection containing Item objects for the immediate children of Item. Only items representing folders have children. Read-only. Nullable.
         - `[Content <Byte[]>]`: The content stream, if the item represents a file.
@@ -1126,12 +1138,12 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
         - `[ListItem <IMicrosoftGraphListItem1>]`: listItem
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-          - `[CreatedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+          - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
           - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
           - `[Description <String>]`: Provides a user-visible description of the item. Optional.
           - `[ETag <String>]`: ETag for the item. Read-only.
           - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-          - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+          - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
           - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
           - `[Name <String>]`: The name of the item. Read-write.
           - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -1161,6 +1173,9 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
           - `[Altitude <Double?>]`: Optional. The altitude (height), in feet,  above sea level for the item. Read-only.
           - `[Latitude <Double?>]`: Optional. The latitude, in decimal, for the item. Writable on OneDrive Personal.
           - `[Longitude <Double?>]`: Optional. The longitude, in decimal, for the item. Writable on OneDrive Personal.
+        - `[Malware <IMicrosoftGraphMalware>]`: malware
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Description <String>]`: Contains the virus details for the malware facet.
         - `[Package <IMicrosoftGraphPackage>]`: package
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Type <String>]`: A string indicating the type of package. While oneNote is the only currently defined value, you should expect other package types to be returned and handle them accordingly.
@@ -1173,8 +1188,20 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
           - `[Id <String>]`: Read-only.
           - `[ExpirationDateTime <DateTime?>]`: A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission. DateTime.MinValue indicates there is no expiration set for this permission. Optional.
           - `[GrantedTo <IMicrosoftGraphIdentitySet>]`: identitySet
-          - `[GrantedToIdentities <IMicrosoftGraphIdentitySet[]>]`: For link type permissions, the details of the users to whom permission was granted. Read-only.
-          - `[HasPassword <Boolean?>]`: This indicates whether password is set for this permission, it's only showing in response. Optional and Read-only and for OneDrive Personal only.
+          - `[GrantedToIdentities <IMicrosoftGraphIdentitySet[]>]`: 
+          - `[GrantedToIdentitiesV2 <IMicrosoftGraphSharePointIdentitySet[]>]`: For link type permissions, the details of the users to whom permission was granted. Read-only.
+            - `[Application <IMicrosoftGraphIdentity>]`: identity
+            - `[Device <IMicrosoftGraphIdentity>]`: identity
+            - `[User <IMicrosoftGraphIdentity>]`: identity
+            - `[Group <IMicrosoftGraphIdentity>]`: identity
+            - `[SiteGroup <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+              - `[Id <String>]`: The identifier of the identity. This property is read-only.
+              - `[LoginName <String>]`: The sign in name of the SharePoint identity.
+            - `[SiteUser <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
+          - `[GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>]`: sharePointIdentitySet
+          - `[HasPassword <Boolean?>]`: Indicates whether the password is set for this permission. This property only appears in the response. Optional. Read-only. For OneDrive Personal only.
           - `[InheritedFrom <IMicrosoftGraphItemReference>]`: itemReference
           - `[Invitation <IMicrosoftGraphSharingInvitation>]`: sharingInvitation
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1190,7 +1217,7 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
             - `[Type <String>]`: The type of the link created.
             - `[WebHtml <String>]`: For embed links, this property contains the HTML code for an <iframe> element that will embed the item in a webpage.
             - `[WebUrl <String>]`: A URL that opens the item in the browser on the OneDrive website.
-          - `[Roles <String[]>]`: The type of permission, e.g. read. See below for the full list of roles. Read-only.
+          - `[Roles <String[]>]`: The type of permission, for example, read. See below for the full list of roles. Read-only.
           - `[ShareId <String>]`: A unique token that can be used to access this shared item via the [shares API][]. Read-only.
         - `[Photo <IMicrosoftGraphPhoto>]`: photo
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1255,18 +1282,19 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
         - `[Subscriptions <IMicrosoftGraphSubscription1[]>]`: The set of subscriptions on the item. Only supported on the root of a drive.
           - `[Id <String>]`: Read-only.
           - `[ApplicationId <String>]`: Identifier of the application used to create the subscription. Read-only.
-          - `[ChangeType <String>]`: Indicates the type of change in the subscribed resource that will raise a change notification. The supported values are: created, updated, deleted. Multiple values can be combined using a comma-separated list. Required. Note: Drive root item and list change notifications support only the updated changeType. User and group change notifications support updated and deleted changeType.
-          - `[ClientState <String>]`: Specifies the value of the clientState property sent by the service in each change notification. The maximum length is 255 characters. The client can check that the change notification came from the service by comparing the value of the clientState property sent with the subscription with the value of the clientState property received with each change notification. Optional.
+          - `[ChangeType <String>]`: Required. Indicates the type of change in the subscribed resource that will raise a change notification. The supported values are: created, updated, deleted. Multiple values can be combined using a comma-separated list. Note:  Drive root item and list change notifications support only the updated changeType. User and group change notifications support updated and deleted changeType.
+          - `[ClientState <String>]`: Optional. Specifies the value of the clientState property sent by the service in each change notification. The maximum length is 255 characters. The client can check that the change notification came from the service by comparing the value of the clientState property sent with the subscription with the value of the clientState property received with each change notification.
           - `[CreatorId <String>]`: Identifier of the user or service principal that created the subscription. If the app used delegated permissions to create the subscription, this field contains the ID of the signed-in user the app called on behalf of. If the app used application permissions, this field contains the ID of the service principal corresponding to the app. Read-only.
-          - `[EncryptionCertificate <String>]`: A base64-encoded representation of a certificate with a public key used to encrypt resource data in change notifications. Optional. Required when includeResourceData is true.
-          - `[EncryptionCertificateId <String>]`: A custom app-provided identifier to help identify the certificate needed to decrypt resource data. Optional. Required when includeResourceData is true.
-          - `[ExpirationDateTime <DateTime?>]`: Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to.  See the table below for maximum supported subscription length of time. Required.
-          - `[IncludeResourceData <Boolean?>]`: When set to true, change notifications include resource data (such as content of a chat message). Optional.
+          - `[EncryptionCertificate <String>]`: A base64-encoded representation of a certificate with a public key used to encrypt resource data in change notifications. Optional but required when includeResourceData is true.
+          - `[EncryptionCertificateId <String>]`: Optional. A custom app-provided identifier to help identify the certificate needed to decrypt resource data. Required when includeResourceData is true.
+          - `[ExpirationDateTime <DateTime?>]`: Required. Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to. For the maximum supported subscription length of time, see the table below.
+          - `[IncludeResourceData <Boolean?>]`: Optional. When set to true, change notifications include resource data (such as content of a chat message).
           - `[LatestSupportedTlsVersion <String>]`: Specifies the latest version of Transport Layer Security (TLS) that the notification endpoint, specified by notificationUrl, supports. The possible values are: v1_0, v1_1, v1_2, v1_3. For subscribers whose notification endpoint supports a version lower than the currently recommended version (TLS 1.2), specifying this property by a set timeline allows them to temporarily use their deprecated version of TLS before completing their upgrade to TLS 1.2. For these subscribers, not setting this property per the timeline would result in subscription operations failing. For subscribers whose notification endpoint already supports TLS 1.2, setting this property is optional. In such cases, Microsoft Graph defaults the property to v1_2.
-          - `[LifecycleNotificationUrl <String>]`: The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved and missed notifications. This URL must make use of the HTTPS protocol. Optional. Read more about how Outlook resources use lifecycle notifications.
-          - `[NotificationQueryOptions <String>]`: OData Query Options for specifying value for the targeting resource. Clients receive notifications when resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property eg  when the print job is completed, when a print job resource isFetchable property value becomes true etc.
-          - `[NotificationUrl <String>]`: The URL of the endpoint that receives the change notifications. This URL must make use of the HTTPS protocol. Required.
-          - `[Resource <String>]`: Specifies the resource that will be monitored for changes. Do not include the base URL (https://graph.microsoft.com/beta/). See the possible resource path values for each supported resource. Required.
+          - `[LifecycleNotificationUrl <String>]`: Optional. The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved and missed notifications. This URL must make use of the HTTPS protocol.
+          - `[NotificationQueryOptions <String>]`: OData query options for specifying the value for the targeting resource. Clients receive notifications when the resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property. For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc.
+          - `[NotificationUrl <String>]`: Required. The URL of the endpoint that receives the change notifications. This URL must make use of the HTTPS protocol.
+          - `[NotificationUrlAppId <String>]`: 
+          - `[Resource <String>]`: Required. Specifies the resource that will be monitored for changes. Do not include the base URL (https://graph.microsoft.com/beta/). See the possible resource path values for each supported resource.
         - `[Thumbnails <IMicrosoftGraphThumbnailSet[]>]`: Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable.
           - `[Id <String>]`: Read-only.
           - `[Large <IMicrosoftGraphThumbnail>]`: thumbnail
@@ -1517,6 +1545,8 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
             - `[Status <String>]`: workbookOperationStatus
           - `[Tables <IMicrosoftGraphWorkbookTable1[]>]`: Represents a collection of tables associated with the workbook. Read-only.
           - `[Worksheets <IMicrosoftGraphWorkbookWorksheet1[]>]`: Represents a collection of worksheets associated with the workbook. Read-only.
+      - `[DriveType <String>]`: Describes the type of drive represented by this resource. OneDrive personal drives will return personal. OneDrive for Business will return business. SharePoint document libraries will return documentLibrary. Read-only.
+      - `[Following <IMicrosoftGraphDriveItem1[]>]`: The list of items the user is following. Only in OneDrive for Business.
       - `[Items <IMicrosoftGraphDriveItem1[]>]`: All items contained in the drive. Read-only. Nullable.
       - `[List <IMicrosoftGraphList1>]`: list
       - `[Owner <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -1536,26 +1566,26 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
       - `[System <IMicrosoftGraphSystemFacet>]`: systemFacet
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Drives <IMicrosoftGraphDrive1[]>]`: A collection of drives available for this user. Read-only.
-    - `[EmployeeHireDate <DateTime?>]`: The date and time when the user was hired or will start work in case of a future hire. Supports $filter (eq, ne, NOT , ge, le, in).
-    - `[EmployeeId <String>]`: The employee identifier assigned to the user by the organization. Supports $filter (eq, ne, NOT , ge, le, in, startsWith).
+    - `[EmployeeHireDate <DateTime?>]`: The date and time when the user was hired or will start work in case of a future hire. Supports $filter (eq, ne, not , ge, le, in).
+    - `[EmployeeId <String>]`: The employee identifier assigned to the user by the organization. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
     - `[EmployeeOrgData <IMicrosoftGraphEmployeeOrgData>]`: employeeOrgData
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CostCenter <String>]`: The cost center associated with the user. Returned only on $select. Supports $filter.
       - `[Division <String>]`: The name of the division in which the user works. Returned only on $select. Supports $filter.
-    - `[EmployeeType <String>]`: Captures enterprise worker type. For example, Employee, Contractor, Consultant, or Vendor. Supports $filter (eq, ne, NOT , ge, le, in, startsWith).
+    - `[EmployeeType <String>]`: Captures enterprise worker type. For example, Employee, Contractor, Consultant, or Vendor. Supports $filter (eq, ne, not , ge, le, in, startsWith).
     - `[Events <IMicrosoftGraphEvent1[]>]`: The user's events. Default is to show events under the Default Calendar. Read-only. Nullable.
     - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the user. Nullable.
-    - `[ExternalUserState <String>]`: For an external user invited to the tenant using the invitation API, this property represents the invited user's invitation status. For invited users, the state can be PendingAcceptance or Accepted, or null for all other users. Supports $filter (eq, ne, NOT , in).
-    - `[ExternalUserStateChangeDateTime <DateTime?>]`: Shows the timestamp for the latest change to the externalUserState property. Supports $filter (eq, ne, NOT , in).
-    - `[FaxNumber <String>]`: The fax number of the user. Supports $filter (eq, ne, NOT , ge, le, in, startsWith).
+    - `[ExternalUserState <String>]`: For an external user invited to the tenant using the invitation API, this property represents the invited user's invitation status. For invited users, the state can be PendingAcceptance or Accepted, or null for all other users. Supports $filter (eq, ne, not , in).
+    - `[ExternalUserStateChangeDateTime <DateTime?>]`: Shows the timestamp for the latest change to the externalUserState property. Supports $filter (eq, ne, not , in).
+    - `[FaxNumber <String>]`: The fax number of the user. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
     - `[FollowedSites <IMicrosoftGraphSite1[]>]`: 
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[CreatedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+      - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
       - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
       - `[Description <String>]`: Provides a user-visible description of the item. Optional.
       - `[ETag <String>]`: ETag for the item. Read-only.
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+      - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
       - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
       - `[Name <String>]`: The name of the item. Read-write.
       - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -1577,6 +1607,8 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
           - `[Choices <String[]>]`: The list of values available for this column.
           - `[DisplayAs <String>]`: How the choices are to be presented in the UX. Must be one of checkBoxes, dropDownMenu, or radioButtons
         - `[ColumnGroup <String>]`: For site columns, the name of the group this column belongs to. Helps organize related columns.
+        - `[ContentApprovalStatus <IMicrosoftGraphContentApprovalStatusColumn>]`: contentApprovalStatusColumn
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Currency <IMicrosoftGraphCurrencyColumn>]`: currencyColumn
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Locale <String>]`: Specifies the locale from which to infer the currency symbol.
@@ -1594,7 +1626,13 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
         - `[Geolocation <IMicrosoftGraphGeolocationColumn>]`: geolocationColumn
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Hidden <Boolean?>]`: Specifies whether the column is displayed in the user interface.
+        - `[HyperlinkOrPicture <IMicrosoftGraphHyperlinkOrPictureColumn>]`: hyperlinkOrPictureColumn
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[IsPicture <Boolean?>]`: Specifies whether the display format used for URL columns is an image or a hyperlink.
         - `[Indexed <Boolean?>]`: Specifies whether the column values can used for sorting and searching.
+        - `[IsDeletable <Boolean?>]`: Indicates whether this column can be deleted.
+        - `[IsReorderable <Boolean?>]`: Indicates whether values in the column can be reordered. Read-only.
+        - `[IsSealed <Boolean?>]`: Specifies whether the column can be changed.
         - `[Lookup <IMicrosoftGraphLookupColumn>]`: lookupColumn
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[AllowMultipleValues <Boolean?>]`: Indicates whether multiple values can be selected from the source.
@@ -1614,8 +1652,58 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
           - `[AllowMultipleSelection <Boolean?>]`: Indicates whether multiple values can be selected from the source.
           - `[ChooseFromType <String>]`: Whether to allow selection of people only, or people and groups. Must be one of peopleAndGroups or peopleOnly.
           - `[DisplayAs <String>]`: How to display the information about the person or group chosen. See below.
+        - `[PropagateChanges <Boolean?>]`: If true, changes to this column will be propagated to lists that implement the column.
         - `[ReadOnly <Boolean?>]`: Specifies whether the column values can be modified.
-        - `[Required <Boolean?>]`: Specifies whether the column value is not optional.
+        - `[Required <Boolean?>]`: Specifies whether the column value isn't optional.
+        - `[SourceColumn <IMicrosoftGraphColumnDefinition1>]`: columnDefinition
+        - `[Term <IMicrosoftGraphTermColumn1>]`: termColumn
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[AllowMultipleValues <Boolean?>]`: Specifies whether the column will allow more than one value
+          - `[ParentTerm <IMicrosoftGraphTermStoreTerm1>]`: term
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Id <String>]`: Read-only.
+            - `[Children <IMicrosoftGraphTermStoreTerm1[]>]`: Children of current term.
+            - `[CreatedDateTime <DateTime?>]`: Date and time of term creation. Read-only.
+            - `[Descriptions <IMicrosoftGraphTermStoreLocalizedDescription[]>]`: Description about term that is dependent on the languageTag.
+              - `[Description <String>]`: The description in the localized language.
+              - `[LanguageTag <String>]`: The language tag for the label.
+            - `[Labels <IMicrosoftGraphTermStoreLocalizedLabel[]>]`: Label metadata for a term.
+              - `[IsDefault <Boolean?>]`: Indicates whether the label is the default label.
+              - `[LanguageTag <String>]`: The language tag for the label.
+              - `[Name <String>]`: The name of the label.
+            - `[LastModifiedDateTime <DateTime?>]`: Last date and time of term modification. Read-only.
+            - `[Properties <IMicrosoftGraphKeyValue[]>]`: Collection of properties on the term.
+              - `[Key <String>]`: Key.
+              - `[Value <String>]`: Value.
+            - `[Relations <IMicrosoftGraphTermStoreRelation1[]>]`: To indicate which terms are related to the current term as either pinned or reused.
+              - `[Id <String>]`: Read-only.
+              - `[FromTerm <IMicrosoftGraphTermStoreTerm1>]`: term
+              - `[Relationship <String>]`: 
+              - `[Set <IMicrosoftGraphTermStoreSet1>]`: set
+                - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                - `[Id <String>]`: Read-only.
+                - `[Children <IMicrosoftGraphTermStoreTerm1[]>]`: Children terms of set in term [store].
+                - `[CreatedDateTime <DateTime?>]`: Date and time of set creation. Read-only.
+                - `[Description <String>]`: Description giving details on the term usage.
+                - `[LocalizedNames <IMicrosoftGraphTermStoreLocalizedName[]>]`: Name of the set for each languageTag.
+                  - `[LanguageTag <String>]`: The language tag for the label.
+                  - `[Name <String>]`: The name in the localized language.
+                - `[ParentGroup <IMicrosoftGraphTermStoreGroup1>]`: group
+                  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                  - `[Id <String>]`: Read-only.
+                  - `[CreatedDateTime <DateTime?>]`: Date and time of group creation. Read-only.
+                  - `[Description <String>]`: Description giving details on the term usage.
+                  - `[DisplayName <String>]`: Name of group.
+                  - `[ParentSiteId <String>]`: Id of the parent site of this group.
+                  - `[Scope <String>]`: 
+                  - `[Sets <IMicrosoftGraphTermStoreSet1[]>]`: All sets under the group in a term [store].
+                - `[Properties <IMicrosoftGraphKeyValue[]>]`: Custom properties for the set.
+                - `[Relations <IMicrosoftGraphTermStoreRelation1[]>]`: Indicates which terms have been pinned or reused directly under the set.
+                - `[Terms <IMicrosoftGraphTermStoreTerm1[]>]`: All the terms under the set.
+              - `[ToTerm <IMicrosoftGraphTermStoreTerm1>]`: term
+            - `[Set <IMicrosoftGraphTermStoreSet1>]`: set
+          - `[ShowFullyQualifiedName <Boolean?>]`: Specifies whether to display the entire term path or only the term label.
+          - `[TermSet <IMicrosoftGraphTermStoreSet1>]`: set
         - `[Text <IMicrosoftGraphTextColumn>]`: textColumn
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[AllowMultipleLines <Boolean?>]`: Whether to allow multiple lines of text.
@@ -1623,21 +1711,51 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
           - `[LinesForEditing <Int32?>]`: The size of the text box.
           - `[MaxLength <Int32?>]`: The maximum number of characters for the value.
           - `[TextType <String>]`: The type of text being stored. Must be one of plain or richText
+        - `[Thumbnail <IMicrosoftGraphThumbnailColumn>]`: thumbnailColumn
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Type <String>]`: columnTypes
+        - `[Validation <IMicrosoftGraphColumnValidation>]`: columnValidation
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[DefaultLanguage <String>]`: Default BCP 47 language tag for the description.
+          - `[Descriptions <IMicrosoftGraphDisplayNameLocalization[]>]`: Localized messages that explain what is needed for this column's value to be considered valid. User will be prompted with this message if validation fails.
+            - `[DisplayName <String>]`: If present, the value of this field contains the displayName string that has been set for the language present in the languageTag field.
+            - `[LanguageTag <String>]`: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
+          - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists
       - `[ContentTypes <IMicrosoftGraphContentType1[]>]`: The collection of content types defined for this site.
         - `[Id <String>]`: Read-only.
+        - `[AssociatedHubsUrls <String[]>]`: List of canonical URLs for hub sites with which this content type is associated to. This will contain all hubsites where this content type is queued to be enforced or is already enforced. Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
+        - `[Base <IMicrosoftGraphContentType1>]`: contentType
+        - `[BaseTypes <IMicrosoftGraphContentType1[]>]`: The collection of content types that are ancestors of this content type.
         - `[ColumnLinks <IMicrosoftGraphColumnLink[]>]`: The collection of columns that are required by this content type
           - `[Id <String>]`: Read-only.
           - `[Name <String>]`: The name of the column  in this content type.
+        - `[ColumnPositions <IMicrosoftGraphColumnDefinition1[]>]`: Column order information in a content type.
+        - `[Columns <IMicrosoftGraphColumnDefinition1[]>]`: The collection of column definitions for this contentType.
         - `[Description <String>]`: The descriptive text for the item.
+        - `[DocumentSet <IMicrosoftGraphDocumentSet1>]`: documentSet
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[AllowedContentTypes <IMicrosoftGraphContentTypeInfo[]>]`: Content types allowed in document set.
+          - `[DefaultContents <IMicrosoftGraphDocumentSetContent[]>]`: Default contents of document set.
+            - `[ContentType <IMicrosoftGraphContentTypeInfo>]`: contentTypeInfo
+            - `[FileName <String>]`: Name of the file in resource folder that should be added as a default content or a template in the document set
+            - `[FolderName <String>]`: Folder name in which the file will be placed when a new document set is created in the library.
+          - `[PropagateWelcomePageChanges <Boolean?>]`: Specifies whether to push welcome page changes to inherited content types.
+          - `[SharedColumns <IMicrosoftGraphColumnDefinition1[]>]`: 
+          - `[ShouldPrefixNameToFile <Boolean?>]`: Add the name of the Document Set to each file name.
+          - `[WelcomePageColumns <IMicrosoftGraphColumnDefinition1[]>]`: 
+          - `[WelcomePageUrl <String>]`: Welcome page absolute URL.
+        - `[DocumentTemplate <IMicrosoftGraphDocumentSetContent>]`: documentSetContent
         - `[Group <String>]`: The name of the group this content type belongs to. Helps organize related content types.
         - `[Hidden <Boolean?>]`: Indicates whether the content type is hidden in the list's 'New' menu.
         - `[InheritedFrom <IMicrosoftGraphItemReference>]`: itemReference
+        - `[IsBuiltIn <Boolean?>]`: Specifies if a content type is a built-in content type.
         - `[Name <String>]`: The name of the content type.
         - `[Order <IMicrosoftGraphContentTypeOrder>]`: contentTypeOrder
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Default <Boolean?>]`: Whether this is the default Content Type
           - `[Position <Int32?>]`: Specifies the position in which the Content Type appears in the selection UI.
         - `[ParentId <String>]`: The unique identifier of the content type.
+        - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.
         - `[ReadOnly <Boolean?>]`: If true, the content type cannot be modified unless this value is first set to false.
         - `[Sealed <Boolean?>]`: If true, the content type cannot be modified by users or through push-down operations. Only site collection administrators can seal or unseal content types.
       - `[DisplayName <String>]`: The full title for the site. Read-only.
@@ -1658,15 +1776,16 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
           - `[Target <String>]`: The target of the error.
         - `[Message <String>]`: A non-localized message for the developer.
         - `[Target <String>]`: The target of the error.
+      - `[ExternalColumns <IMicrosoftGraphColumnDefinition1[]>]`: The collection of column definitions available in the site that are referenced from the sites in the parent hierarchy of the current site.
       - `[Items <IMicrosoftGraphBaseItem1[]>]`: Used to address any item contained in this site. This collection cannot be enumerated.
         - `[Id <String>]`: Read-only.
         - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[CreatedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+        - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
         - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
         - `[Description <String>]`: Provides a user-visible description of the item. Optional.
         - `[ETag <String>]`: ETag for the item. Read-only.
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+        - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
         - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
         - `[Name <String>]`: The name of the item. Read-write.
         - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -1771,13 +1890,21 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
         - `[Hostname <String>]`: The hostname for the site collection. Read-only.
         - `[Root <IMicrosoftGraphRoot>]`: root
       - `[Sites <IMicrosoftGraphSite1[]>]`: The collection of the sub-sites under this site.
-    - `[GivenName <String>]`: The given name (first name) of the user. Maximum length is 64 characters. Supports $filter (eq, ne, NOT , ge, le, in, startsWith).
+      - `[TermStore <IMicrosoftGraphTermStore1>]`: store
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: Read-only.
+        - `[DefaultLanguageTag <String>]`: Default language of the term store.
+        - `[Groups <IMicrosoftGraphTermStoreGroup1[]>]`: Collection of all groups available in the term store.
+        - `[LanguageTags <String[]>]`: List of languages for the term store.
+        - `[Sets <IMicrosoftGraphTermStoreSet1[]>]`: Collection of all sets available in the term store.
+      - `[TermStores <IMicrosoftGraphTermStore1[]>]`: The collection of termStores under this site.
+    - `[GivenName <String>]`: The given name (first name) of the user. Maximum length is 64 characters. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
     - `[HireDate <DateTime?>]`: The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.  Returned only on $select.  Note: This property is specific to SharePoint Online. We recommend using the native employeeHireDate property to set and update hire date values using Microsoft Graph APIs.
-    - `[Identities <IMicrosoftGraphObjectIdentity[]>]`: Represents the identities that can be used to sign in to this user account. An identity can be provided by Microsoft (also known as a local account), by organizations, or by social identity providers such as Facebook, Google, and Microsoft, and tied to a user account. May contain multiple items with the same signInType value. Supports $filter (eq) only where the signInType is not userPrincipalName.
+    - `[Identities <IMicrosoftGraphObjectIdentity[]>]`: Represents the identities that can be used to sign in to this user account. An identity can be provided by Microsoft (also known as a local account), by organizations, or by social identity providers such as Facebook, Google, and Microsoft, and tied to a user account. May contain multiple items with the same signInType value. Supports $filter (eq) including on null values, only where the signInType is not userPrincipalName.
       - `[Issuer <String>]`: Specifies the issuer of the identity, for example facebook.com.For local accounts (where signInType is not federated), this property is the local B2C tenant default domain name, for example contoso.onmicrosoft.com.For external users from other Azure AD organization, this will be the domain of the federated organization, for example contoso.com.Supports $filter. 512 character limit.
       - `[IssuerAssignedId <String>]`: Specifies the unique identifier assigned to the user by the issuer. The combination of issuer and issuerAssignedId must be unique within the organization. Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must be a valid local part of an email addressSupports $filter. 100 character limit.
-      - `[SignInType <String>]`: Specifies the user sign-in types in your directory, such as emailAddress, userName or federated. Here, federated represents a unique identifier for a user from an issuer, that can be in any format chosen by the issuer. Additional validation is enforced on issuerAssignedId when the sign-in type is set to emailAddress or userName. This property can also be set to any custom string.
-    - `[ImAddresses <String[]>]`: The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only. Supports $filter (eq, NOT, ge, le, startsWith).
+      - `[SignInType <String>]`: Specifies the user sign-in types in your directory, such as emailAddress, userName, federated, or userPrincipalName. federated represents a unique identifier for a user from an issuer, that can be in any format chosen by the issuer. Setting or updating a userPrincipalName identity will update the value of the userPrincipalName property on the user object. The validations performed on the userPrincipalName property on the user object, for example, verified domains and acceptable characters, will be performed when setting or updating a userPrincipalName identity. Additional validation is enforced on issuerAssignedId when the sign-in type is set to emailAddress or userName. This property can also be set to any custom string.
+    - `[ImAddresses <String[]>]`: The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only. Supports $filter (eq, not, ge, le, startsWith).
     - `[InferenceClassification <IMicrosoftGraphInferenceClassification>]`: inferenceClassification
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: Read-only.
@@ -1797,7 +1924,7 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
             - `[Address <String>]`: The email address of the user who shared the item.
             - `[DisplayName <String>]`: The display name of the user who shared the item.
             - `[Id <String>]`: The id of the user who shared the item.
-          - `[SharedDateTime <DateTime?>]`: The date and time the file was last shared. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: 2014-01-01T00:00:00Z. Read-only.
+          - `[SharedDateTime <DateTime?>]`: The date and time the file was last shared. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
           - `[SharingReference <IMicrosoftGraphResourceReference>]`: resourceReference
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The item's unique identifier.
@@ -1832,14 +1959,14 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
         - `[Id <String>]`: Read-only.
         - `[LastUsed <IMicrosoftGraphUsageDetails>]`: usageDetails
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[LastAccessedDateTime <DateTime?>]`: The date and time the resource was last accessed by the user. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: 2014-01-01T00:00:00Z. Read-only.
-          - `[LastModifiedDateTime <DateTime?>]`: The date and time the resource was last modified by the user. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: 2014-01-01T00:00:00Z. Read-only.
+          - `[LastAccessedDateTime <DateTime?>]`: The date and time the resource was last accessed by the user. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+          - `[LastModifiedDateTime <DateTime?>]`: The date and time the resource was last modified by the user. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
         - `[Resource <IMicrosoftGraphEntity>]`: entity
         - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
         - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
     - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
-    - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
-    - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Supports $filter (eq, ne, NOT , ge, le, in, startsWith).
+    - `[IsResourceAccount <Boolean?>]`: Do not use – reserved for future use.
+    - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
     - `[JoinedTeams <IMicrosoftGraphTeam1[]>]`: The Microsoft Teams teams that the user is a member of. Read-only. Nullable.
       - `[Id <String>]`: Read-only.
       - `[Channels <IMicrosoftGraphChannel1[]>]`: The collection of channels & messages associated with the team.
@@ -1865,103 +1992,103 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
         - `[AllowGiphy <Boolean?>]`: If set to true, enables Giphy use.
         - `[AllowStickersAndMemes <Boolean?>]`: If set to true, enables users to include stickers and memes.
         - `[GiphyContentRating <String>]`: giphyRatingType
-      - `[Group <IMicrosoftGraphGroup1>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
+      - `[Group <IMicrosoftGraphGroup>]`: group
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DeletedDateTime <DateTime?>]`: 
         - `[Id <String>]`: Read-only.
         - `[AcceptedSenders <IMicrosoftGraphDirectoryObject[]>]`: The list of users or groups that are allowed to create post's or calendar events in this group. If this list is non-empty then only users or groups listed here are allowed to post.
         - `[AllowExternalSenders <Boolean?>]`: Indicates if people external to the organization can send messages to the group. Default value is false. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
-        - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment1[]>]`: Represents the app roles a group has been granted for an application.
+        - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment1[]>]`: Represents the app roles a group has been granted for an application. Supports $expand.
         - `[AssignedLabels <IMicrosoftGraphAssignedLabel[]>]`: The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group. Returned only on $select.
           - `[DisplayName <String>]`: The display name of the label. Read-only.
           - `[LabelId <String>]`: The unique identifier of the label.
-        - `[AssignedLicenses <IMicrosoftGraphAssignedLicense[]>]`: The licenses that are assigned to the group. Returned only on $select. Read-only.
+        - `[AssignedLicenses <IMicrosoftGraphAssignedLicense[]>]`: The licenses that are assigned to the group. Returned only on $select. Supports $filter (eq). Read-only.
         - `[AutoSubscribeNewMembers <Boolean?>]`: Indicates if new members added to the group will be auto-subscribed to receive email notifications. You can set this property in a PATCH request for the group; do not set it in the initial POST request that creates the group. Default value is false. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
         - `[Calendar <IMicrosoftGraphCalendar1>]`: calendar
         - `[CalendarView <IMicrosoftGraphEvent1[]>]`: The calendar view for the calendar. Read-only.
-        - `[Classification <String>]`: Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList setting value, based on the template definition.Returned by default.
+        - `[Classification <String>]`: Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList setting value, based on the template definition.Returned by default. Supports $filter (eq, ne, not, ge, le, startsWith).
         - `[Conversations <IMicrosoftGraphConversation1[]>]`: The group's conversations.
           - `[Id <String>]`: Read-only.
-          - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this Conversation has at least one attachment.
-          - `[LastDeliveredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-          - `[Preview <String>]`: A short summary from the body of the latest post in this converstaion.
+          - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this Conversation has at least one attachment. Supports $filter (eq, ne) and $search.
+          - `[LastDeliveredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Supports $filter (eq, ne, le, ge).
+          - `[Preview <String>]`: A short summary from the body of the latest post in this conversation.
           - `[Threads <IMicrosoftGraphConversationThread1[]>]`: A collection of all the conversation threads in the conversation. A navigation property. Read-only. Nullable.
             - `[Id <String>]`: Read-only.
-            - `[CcRecipients <IMicrosoftGraphRecipient[]>]`: The Cc: recipients for the thread.
-            - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this thread has at least one attachment.
-            - `[IsLocked <Boolean?>]`: Indicates if the thread is locked.
-            - `[LastDeliveredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-            - `[Posts <IMicrosoftGraphPost1[]>]`: Read-only. Nullable.
+            - `[CcRecipients <IMicrosoftGraphRecipient[]>]`: The Cc: recipients for the thread. Returned only on $select.
+            - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this thread has at least one attachment. Returned by default.
+            - `[IsLocked <Boolean?>]`: Indicates if the thread is locked. Returned by default.
+            - `[LastDeliveredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default.
+            - `[Posts <IMicrosoftGraphPost[]>]`: Read-only. Nullable.
               - `[Categories <String[]>]`: The categories associated with the item
               - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
               - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[Id <String>]`: Read-only.
-              - `[Attachments <IMicrosoftGraphAttachment[]>]`: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post. Read-only. Nullable.
+              - `[Attachments <IMicrosoftGraphAttachment[]>]`: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post. Read-only. Nullable. Supports $expand.
               - `[Body <IMicrosoftGraphItemBody>]`: itemBody
               - `[ConversationId <String>]`: Unique ID of the conversation. Read-only.
               - `[ConversationThreadId <String>]`: Unique ID of the conversation thread. Read-only.
-              - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the post. Read-only. Nullable.
+              - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the post. Read-only. Nullable. Supports $expand.
               - `[From <IMicrosoftGraphRecipient>]`: recipient
               - `[HasAttachments <Boolean?>]`: Indicates whether the post has at least one attachment. This is a default property.
-              - `[InReplyTo <IMicrosoftGraphPost1>]`: post
+              - `[InReplyTo <IMicrosoftGraphPost>]`: post
               - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the post. Read-only. Nullable.
               - `[NewParticipants <IMicrosoftGraphRecipient[]>]`: Conversation participants that were added to the thread as part of this post.
               - `[ReceivedDateTime <DateTime?>]`: Specifies when the post was received. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[Sender <IMicrosoftGraphRecipient>]`: recipient
               - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the post. Read-only. Nullable.
-            - `[Preview <String>]`: A short summary from the body of the latest post in this conversation.
-            - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: The To: recipients for the thread.
-            - `[Topic <String>]`: The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated.
-            - `[UniqueSenders <String[]>]`: All the users that sent a message to this thread.
+            - `[Preview <String>]`: A short summary from the body of the latest post in this conversation. Returned by default.
+            - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: The To: recipients for the thread. Returned only on $select.
+            - `[Topic <String>]`: The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated. Returned by default.
+            - `[UniqueSenders <String[]>]`: All the users that sent a message to this thread. Returned by default.
           - `[Topic <String>]`: The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated.
           - `[UniqueSenders <String[]>]`: All the users that sent a message to this Conversation.
-        - `[CreatedDateTime <DateTime?>]`: Timestamp of when the group was created. The value cannot be modified and is automatically populated when the group is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Read-only.
-        - `[CreatedOnBehalfOf <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-        - `[Description <String>]`: An optional description for the group. Returned by default.
-        - `[DisplayName <String>]`: The display name for the group. This property is required when a group is created and cannot be cleared during updates. Returned by default. Supports $filter and $orderby.
+        - `[CreatedDateTime <DateTime?>]`: Timestamp of when the group was created. The value cannot be modified and is automatically populated when the group is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Supports $filter (eq, ne, not, ge, le, in). Read-only.
+        - `[CreatedOnBehalfOf <IMicrosoftGraphDirectoryObject>]`: directoryObject
+        - `[Description <String>]`: An optional description for the group. Returned by default. Supports $filter (eq, ne, not, ge, le, startsWith) and $search.
+        - `[DisplayName <String>]`: The display name for the group. Required. Returned by default. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderBy.
         - `[Drive <IMicrosoftGraphDrive1>]`: drive
         - `[Drives <IMicrosoftGraphDrive1[]>]`: The group's drives. Read-only.
         - `[Events <IMicrosoftGraphEvent1[]>]`: The group's events.
-        - `[ExpirationDateTime <DateTime?>]`: Timestamp of when the group is set to expire. The value cannot be modified and is automatically populated when the group is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Read-only.
+        - `[ExpirationDateTime <DateTime?>]`: Timestamp of when the group is set to expire. The value cannot be modified and is automatically populated when the group is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Supports $filter (eq, ne, not, ge, le, in). Read-only.
         - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the group. Read-only. Nullable.
         - `[GroupLifecyclePolicies <IMicrosoftGraphGroupLifecyclePolicy[]>]`: The collection of lifecycle policies for this group. Read-only. Nullable.
           - `[Id <String>]`: Read-only.
           - `[AlternateNotificationEmails <String>]`: List of email address to send notifications for groups without owners. Multiple email address can be defined by separating email address with a semicolon.
           - `[GroupLifetimeInDays <Int32?>]`: Number of days before a group expires and needs to be renewed. Once renewed, the group expiration is extended by the number of days defined.
           - `[ManagedGroupTypes <String>]`: The group type for which the expiration policy applies. Possible values are All, Selected or None.
-        - `[GroupTypes <String[]>]`: Specifies the group type and its membership.  If the collection contains Unified, the group is a Microsoft 365 group; otherwise, it's either a security group or distribution group. For details, see groups overview.If the collection includes DynamicMembership, the group has dynamic membership; otherwise, membership is static.  Returned by default. Supports $filter.
-        - `[HasMembersWithLicenseErrors <Boolean?>]`: Indicates whether there are members in this group that have license errors from its group-based license assignment. This property is never returned on a GET operation. You can use it as a $filter argument to get groups that have members with license errors (that is, filter for this property being true).
+        - `[GroupTypes <String[]>]`: Specifies the group type and its membership.  If the collection contains Unified, the group is a Microsoft 365 group; otherwise, it's either a security group or distribution group. For details, see groups overview.If the collection includes DynamicMembership, the group has dynamic membership; otherwise, membership is static.  Returned by default. Supports $filter (eq, not).
+        - `[HasMembersWithLicenseErrors <Boolean?>]`: Indicates whether there are members in this group that have license errors from its group-based license assignment. This property is never returned on a GET operation. You can use it as a $filter argument to get groups that have members with license errors (that is, filter for this property being true).  Supports $filter (eq).
         - `[HideFromAddressLists <Boolean?>]`: true if the group is not displayed in certain parts of the Outlook user interface: in the Address Book, in address lists for selecting message recipients, and in the Browse Groups dialog for searching groups; false otherwise. Default value is false. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
         - `[HideFromOutlookClients <Boolean?>]`: true if the group is not displayed in Outlook clients, such as Outlook for Windows and Outlook on the web, false otherwise. Default value is false. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
         - `[IsArchived <Boolean?>]`: 
-        - `[IsAssignableToRole <Boolean?>]`: Indicates whether this group can be assigned to an Azure Active Directory role.This property can only be set while creating the group and is immutable. If set to true, the securityEnabled property must also be set to true and the group cannot be a dynamic group (that is, groupTypes cannot contain DynamicMembership).Only callers in Global Administrator and Privileged Role Administrator roles can set this property. For more, see Using a group to manage Azure AD role assignmentsReturned by default.
+        - `[IsAssignableToRole <Boolean?>]`: Indicates whether this group can be assigned to an Azure Active Directory role. Optional. This property can only be set while creating the group and is immutable. If set to true, the securityEnabled property must also be set to true and the group cannot be a dynamic group (that is, groupTypes cannot contain DynamicMembership). Only callers in Global administrator and Privileged role administrator roles can set this property. The caller must be assigned the RoleManagement.ReadWrite.Directory permission to set this property or update the membership of such groups. For more, see Using a group to manage Azure AD role assignmentsReturned by default. Supports $filter (eq, ne, not).
         - `[IsSubscribedByMail <Boolean?>]`: Indicates whether the signed-in user is subscribed to receive email conversations. Default value is true. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
         - `[LicenseProcessingState <IMicrosoftGraphLicenseProcessingState>]`: licenseProcessingState
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[State <String>]`: 
-        - `[Mail <String>]`: The SMTP address for the group, for example, 'serviceadmins@contoso.onmicrosoft.com'. Returned by default. Read-only. Supports $filter.
-        - `[MailEnabled <Boolean?>]`: Specifies whether the group is mail-enabled. Returned by default.
-        - `[MailNickname <String>]`: The mail alias for the group, unique in the organization. This property must be specified when a group is created. These characters cannot be used in the mailNickName: @()/[]';:.<>,SPACE. Returned by default. Supports $filter.
-        - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups and administrative units that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable.
-        - `[Members <IMicrosoftGraphDirectoryObject[]>]`: Users, contacts, and groups that are members of this group. HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only. Nullable.
+        - `[Mail <String>]`: The SMTP address for the group, for example, 'serviceadmins@contoso.onmicrosoft.com'. Returned by default. Read-only. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+        - `[MailEnabled <Boolean?>]`: Specifies whether the group is mail-enabled. Required. Returned by default. Supports $filter (eq, ne, not, and eq on null values).
+        - `[MailNickname <String>]`: The mail alias for the group, unique for Microsoft 365 groups in the organization. Maximum length is 64 characters. This property can contain only characters in the ASCII character set 0 - 127 except the following: @ () / [] ' ; : . <> , SPACE. Returned by default. Supports $filter (eq, ne, not, ge, le, in, startsWith).
+        - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups and administrative units that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable. Supports $expand.
+        - `[Members <IMicrosoftGraphDirectoryObject[]>]`: Members of this group, who can be users, devices, other groups, or service principals. Supports the List members, Add member, and Remove member operations. Nullable. Supports $expand including nested $select. For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName).
         - `[MembersWithLicenseErrors <IMicrosoftGraphDirectoryObject[]>]`: A list of group members with license errors from this group-based license assignment. Read-only.
-        - `[MembershipRule <String>]`: The rule that determines members for this group if the group is a dynamic group (groupTypes contains DynamicMembership). For more information about the syntax of the membership rule, see Membership Rules syntax. Returned by default.
-        - `[MembershipRuleProcessingState <String>]`: Indicates whether the dynamic membership processing is on or paused. Possible values are On or Paused. Returned by default.
+        - `[MembershipRule <String>]`: The rule that determines members for this group if the group is a dynamic group (groupTypes contains DynamicMembership). For more information about the syntax of the membership rule, see Membership Rules syntax. Returned by default. Supports $filter (eq, ne, not, ge, le, startsWith).
+        - `[MembershipRuleProcessingState <String>]`: Indicates whether the dynamic membership processing is on or paused. Possible values are On or Paused. Returned by default. Supports $filter (eq, ne, not, in).
         - `[OnPremisesDomainName <String>]`: Contains the on-premises domain FQDN, also called dnsDomainName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect.Returned by default. Read-only.
-        - `[OnPremisesLastSyncDateTime <DateTime?>]`: Indicates the last time at which the group was synced with the on-premises directory.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Read-only. Supports $filter.
+        - `[OnPremisesLastSyncDateTime <DateTime?>]`: Indicates the last time at which the group was synced with the on-premises directory.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Read-only. Supports $filter (eq, ne, not, ge, le, in).
         - `[OnPremisesNetBiosName <String>]`: Contains the on-premises netBios name synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect.Returned by default. Read-only.
-        - `[OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError[]>]`: Errors when using Microsoft synchronization product during provisioning. Returned by default.
+        - `[OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError[]>]`: Errors when using Microsoft synchronization product during provisioning. Returned by default. Supports $filter (eq, not).
           - `[Category <String>]`: Category of the provisioning error. Note: Currently, there is only one possible value. Possible value: PropertyConflict - indicates a property value is not unique. Other objects contain the same value for the property.
           - `[OccurredDateTime <DateTime?>]`: The date and time at which the error occurred.
           - `[PropertyCausingError <String>]`: Name of the directory property causing the error. Current possible values: UserPrincipalName or ProxyAddress
           - `[Value <String>]`: Value of the property causing the error.
-        - `[OnPremisesSamAccountName <String>]`: Contains the on-premises SAM account name synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect.Returned by default. Read-only.
-        - `[OnPremisesSecurityIdentifier <String>]`: Contains the on-premises security identifier (SID) for the group that was synchronized from on-premises to the cloud. Returned by default. Read-only.
-        - `[OnPremisesSyncEnabled <Boolean?>]`: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default). Returned by default. Read-only. Supports $filter.
+        - `[OnPremisesSamAccountName <String>]`: Contains the on-premises SAM account name synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect.Returned by default. Supports $filter (eq, ne, not, ge, le, in, startsWith). Read-only.
+        - `[OnPremisesSecurityIdentifier <String>]`: Contains the on-premises security identifier (SID) for the group that was synchronized from on-premises to the cloud. Returned by default. Supports $filter on null values. Read-only.
+        - `[OnPremisesSyncEnabled <Boolean?>]`: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default). Returned by default. Read-only. Supports $filter (eq, ne, not, in, and eq on null values).
         - `[Onenote <IMicrosoftGraphOnenote1>]`: onenote
-        - `[Owners <IMicrosoftGraphDirectoryObject[]>]`: The owners of the group. The owners are a set of non-admin users who are allowed to modify this object. HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only. Nullable.
-        - `[PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>]`: The permissions that have been granted for a group to a specific application.
+        - `[Owners <IMicrosoftGraphDirectoryObject[]>]`: The owners of the group who can be users or service principals. Nullable. If this property is not specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner. Supports $expand including nested $select. For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
+        - `[PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>]`: The permissions that have been granted for a group to a specific application. Supports $expand.
           - `[DeletedDateTime <DateTime?>]`: 
           - `[Id <String>]`: Read-only.
           - `[ClientAppId <String>]`: ID of the service principal of the Azure AD app that has been granted access. Read-only.
@@ -2043,15 +2170,15 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
                 - `[Category6 <String>]`: The label associated with Category 6
               - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[Owner <String>]`: ID of the Group that owns the plan. A valid group must exist before this field can be set. After it is set, this property can't be updated.
+            - `[Owner <String>]`: ID of the Group that owns the plan. A valid group must exist before this field can be set. After it is set, this property can’t be updated.
             - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Collection of tasks in the plan. Read-only. Nullable.
             - `[Title <String>]`: Required. Title of the plan.
-        - `[PreferredDataLocation <String>]`: The preferred data location for the group. For more information, see  OneDrive Online Multi-Geo. Returned by default.
-        - `[PreferredLanguage <String>]`: The preferred language for a Microsoft 365 group. Should follow ISO 639-1 Code; for example 'en-US'. Returned by default.
-        - `[ProxyAddresses <String[]>]`: Email addresses for the group that direct to the same group mailbox. For example: ['SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com']. The any operator is required for filter expressions on multi-valued properties. Returned by default. Read-only. Not nullable. Supports $filter.
+        - `[PreferredDataLocation <String>]`: The preferred data location for the Microsoft 365 group. By default, the group inherits the group creator's preferred data location. To set this property, the calling user must be assigned one of the following Azure AD roles:  Global Administrator  User Account Administrator Directory Writer  Exchange Administrator  SharePoint Administrator  For more information about this property, see  OneDrive Online Multi-Geo. Nullable. Returned by default.
+        - `[PreferredLanguage <String>]`: The preferred language for a Microsoft 365 group. Should follow ISO 639-1 Code; for example en-US. Returned by default. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+        - `[ProxyAddresses <String[]>]`: Email addresses for the group that direct to the same group mailbox. For example: ['SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com']. The any operator is required for filter expressions on multi-valued properties. Returned by default. Read-only. Not nullable. Supports $filter (eq, not, ge, le, startsWith).
         - `[RejectedSenders <IMicrosoftGraphDirectoryObject[]>]`: The list of users or groups that are not allowed to create posts or calendar events in this group. Nullable
-        - `[RenewedDateTime <DateTime?>]`: Timestamp of when the group was last renewed. This cannot be modified directly and is only updated via the renew service action. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Read-only.
-        - `[SecurityEnabled <Boolean?>]`: Specifies whether the group is a security group. Returned by default. Supports $filter.
+        - `[RenewedDateTime <DateTime?>]`: Timestamp of when the group was last renewed. This cannot be modified directly and is only updated via the renew service action. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Supports $filter (eq, ne, not, ge, le, in). Read-only.
+        - `[SecurityEnabled <Boolean?>]`: Specifies whether the group is a security group. Required.Returned by default. Supports $filter (eq, ne, not, in).
         - `[SecurityIdentifier <String>]`: Security identifier of the group, used in Windows scenarios. Returned by default.
         - `[Settings <IMicrosoftGraphGroupSetting[]>]`: Settings that can govern this group's behavior, like whether members can invite guest users to the group. Nullable.
           - `[Id <String>]`: Read-only.
@@ -2067,7 +2194,7 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
         - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: 
         - `[TransitiveMembers <IMicrosoftGraphDirectoryObject[]>]`: 
         - `[UnseenCount <Int32?>]`: Count of conversations that have received new posts since the signed-in user last visited the group. This property is the same as unseenConversationsCount.Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
-        - `[Visibility <String>]`: Specifies the group join policy and group content visibility for groups. Possible values are: Private, Public, or Hiddenmembership. Hiddenmembership can be set only for Microsoft 365 groups, when the groups are created. It can't be updated later. Other values of visibility can be updated after group creation. If visibility value is not specified during group creation on Microsoft Graph, a security group is created as Private by default and Microsoft 365 group is Public. See group visibility options to learn more. Returned by default.
+        - `[Visibility <String>]`: Specifies the group join policy and group content visibility for groups. Possible values are: Private, Public, or Hiddenmembership. Hiddenmembership can be set only for Microsoft 365 groups, when the groups are created. It can't be updated later. Other values of visibility can be updated after group creation. If visibility value is not specified during group creation on Microsoft Graph, a security group is created as Private by default and Microsoft 365 group is Public.  Groups assignable to roles are always Private. See group visibility options to learn more. Returned by default. Nullable.
       - `[GuestSettings <IMicrosoftGraphTeamGuestSettings>]`: teamGuestSettings
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[AllowCreateUpdateChannels <Boolean?>]`: If set to true, guests can add and update channels.
@@ -2256,12 +2383,13 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
         - `[Id <String>]`: Read-only.
       - `[Visibility <String>]`: teamVisibilityType
       - `[WebUrl <String>]`: A hyperlink that will go to the team in the Microsoft Teams client. This is the URL that you get when you right-click a team in the Microsoft Teams client and select Get link to team. This URL should be treated as an opaque blob, and not parsed.
-    - `[LastPasswordChangeDateTime <DateTime?>]`: The time when this Azure AD user last changed their password. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Returned only on $select.
+    - `[LastPasswordChangeDateTime <DateTime?>]`: The time when this Azure AD user last changed their password or when their password was created, , whichever date the latest action was performed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Returned only on $select.
     - `[LegalAgeGroupClassification <String>]`: Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated based on ageGroup and consentProvidedForMinor properties. Allowed values: null, minorWithOutParentalConsent, minorWithParentalConsent, minorNoParentalConsentRequired, notAdult and adult. Refer to the legal age group property definitions for further information. Returned only on $select.
     - `[LicenseAssignmentStates <IMicrosoftGraphLicenseAssignmentState[]>]`: State of license assignments for this user. Read-only. Returned only on $select.
       - `[AssignedByGroup <String>]`: The id of the group that assigns this license. If the assignment is a direct-assigned license, this field will be Null. Read-Only.
       - `[DisabledPlans <String[]>]`: The service plans that are disabled in this assignment. Read-Only.
       - `[Error <String>]`: License assignment failure error. If the license is assigned successfully, this field will be Null. Read-Only. Possible values: CountViolation, MutuallyExclusiveViolation, DependencyViolation, ProhibitedInUsageLocationViolation, UniquenessViolation, and Others. For more information on how to identify and resolve license assignment errors see here.
+      - `[LastUpdatedDateTime <DateTime?>]`: The timestamp when the state of the license assignment was last updated.
       - `[SkuId <String>]`: The unique identifier for the SKU. Read-Only.
       - `[State <String>]`: Indicate the current state of this assignment. Read-Only. Possible values: Active, ActiveWithError, Disabled and Error.
     - `[LicenseDetails <IMicrosoftGraphLicenseDetails[]>]`: A collection of this user's license details. Read-only.
@@ -2273,7 +2401,7 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
         - `[ServicePlanName <String>]`: The name of the service plan.
       - `[SkuId <String>]`: Unique identifier (GUID) for the service SKU. Equal to the skuId property on the related SubscribedSku object. Read-only
       - `[SkuPartNumber <String>]`: Unique SKU display name. Equal to the skuPartNumber on the related SubscribedSku object; for example: 'AAD_Premium'. Read-only
-    - `[Mail <String>]`: The SMTP address for the user, for example, admin@contoso.com. Changes to this property will also update the user's proxyAddresses collection to include the value as an SMTP address. While this property can contain accent characters, using them can cause access issues with other Microsoft applications for the user. Supports $filter (eq, ne, NOT, ge, le, in, startsWith, endsWith).
+    - `[Mail <String>]`: The SMTP address for the user, for example, admin@contoso.com. Changes to this property will also update the user's proxyAddresses collection to include the value as an SMTP address. For Azure AD B2C accounts, this property can be updated up to only ten times with unique SMTP addresses. This property cannot contain accent characters.  Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith, and eq on null values).
     - `[MailFolders <IMicrosoftGraphMailFolder1[]>]`: The user's mail folders. Read-only. Nullable.
       - `[Id <String>]`: Read-only.
       - `[ChildFolderCount <Int32?>]`: The number of immediate child mailFolders in the current mailFolder.
@@ -2360,31 +2488,31 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
         - `[HasAttachments <Boolean?>]`: Indicates whether the message has attachments. This property doesn't include inline attachments, so if a message contains only inline attachments, this property is false. To verify the existence of inline attachments, parse the body property to look for a src attribute, such as <IMG src='cid:image001.jpg@01D26CD8.6C05F070'>.
         - `[Importance <String>]`: importance
         - `[InferenceClassification <String>]`: inferenceClassificationType
-        - `[InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]`: A collection of message headers defined by RFC5322. The set includes message headers indicating the network path taken by a message from the sender to the recipient. It can also contain custom message headers that hold app data for the message.  Returned only on applying a $select query option. Read-only.
+        - `[InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]`: 
           - `[Name <String>]`: Represents the key in a key-value pair.
           - `[Value <String>]`: The value in a key-value pair.
-        - `[InternetMessageId <String>]`: The message ID in the format specified by RFC2822.
-        - `[IsDeliveryReceiptRequested <Boolean?>]`: Indicates whether a read receipt is requested for the message.
-        - `[IsDraft <Boolean?>]`: Indicates whether the message is a draft. A message is a draft if it hasn't been sent yet.
-        - `[IsRead <Boolean?>]`: Indicates whether the message has been read.
-        - `[IsReadReceiptRequested <Boolean?>]`: Indicates whether a read receipt is requested for the message.
+        - `[InternetMessageId <String>]`: 
+        - `[IsDeliveryReceiptRequested <Boolean?>]`: 
+        - `[IsDraft <Boolean?>]`: 
+        - `[IsRead <Boolean?>]`: 
+        - `[IsReadReceiptRequested <Boolean?>]`: 
         - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the message. Nullable.
-        - `[ParentFolderId <String>]`: The unique identifier for the message's parent mailFolder.
-        - `[ReceivedDateTime <DateTime?>]`: The date and time the message was received.  The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-        - `[ReplyTo <IMicrosoftGraphRecipient[]>]`: The email addresses to use when replying.
+        - `[ParentFolderId <String>]`: 
+        - `[ReceivedDateTime <DateTime?>]`: 
+        - `[ReplyTo <IMicrosoftGraphRecipient[]>]`: 
         - `[Sender <IMicrosoftGraphRecipient>]`: recipient
-        - `[SentDateTime <DateTime?>]`: The date and time the message was sent.  The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[SentDateTime <DateTime?>]`: 
         - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the message. Nullable.
-        - `[Subject <String>]`: The subject of the message.
-        - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: The To: recipients for the message.
+        - `[Subject <String>]`: 
+        - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: 
         - `[UniqueBody <IMicrosoftGraphItemBody>]`: itemBody
-        - `[WebLink <String>]`: The URL to open the message in Outlook on the web.You can append an ispopout argument to the end of the URL to change how the message is displayed. If ispopout is not present or if it is set to 1, then the message is shown in a popout window. If ispopout is set to 0, then the browser will show the message in the Outlook on the web review pane.The message will open in the browser if you are logged in to your mailbox via Outlook on the web. You will be prompted to login if you are not already logged in with the browser.This URL cannot be accessed from within an iFrame.
+        - `[WebLink <String>]`: 
       - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the mailFolder. Read-only. Nullable.
       - `[ParentFolderId <String>]`: The unique identifier for the mailFolder's parent mailFolder.
       - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the mailFolder. Read-only. Nullable.
       - `[TotalItemCount <Int32?>]`: The number of items in the mailFolder.
       - `[UnreadItemCount <Int32?>]`: The number of items in the mailFolder marked as unread.
-    - `[MailNickname <String>]`: The mail alias for the user. This property must be specified when a user is created. Maximum length is 64 characters. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
+    - `[MailNickname <String>]`: The mail alias for the user. This property must be specified when a user is created. Maximum length is 64 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
     - `[MailboxSettings <IMicrosoftGraphMailboxSettings1>]`: mailboxSettings
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ArchiveFolder <String>]`: Folder ID of an archive folder for the user. Read only.
@@ -2441,14 +2569,14 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
       - `[PlatformVersion <String>]`: Operating System version
       - `[UserId <String>]`: The user Id to who this app registration belongs.
       - `[Version <String>]`: Version of the entity.
-    - `[ManagedDevices <IMicrosoftGraphManagedDevice1[]>]`: The managed devices associated with the user.
+    - `[ManagedDevices <IMicrosoftGraphManagedDevice[]>]`: The managed devices associated with the user.
       - `[Id <String>]`: Read-only.
       - `[ActivationLockBypassCode <String>]`: Code that allows the Activation Lock on a device to be bypassed. This property is read-only.
       - `[AndroidSecurityPatchLevel <String>]`: Android security patch level. This property is read-only.
       - `[AzureAdDeviceId <String>]`: The unique identifier for the Azure Active Directory device. Read only. This property is read-only.
       - `[AzureAdRegistered <Boolean?>]`: Whether the device is Azure Active Directory registered. This property is read-only.
       - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires. This property is read-only.
-      - `[ComplianceState <String>]`: complianceState
+      - `[ComplianceState <String>]`: Compliance state.
       - `[ConfigurationManagerClientEnabledFeatures <IMicrosoftGraphConfigurationManagerClientEnabledFeatures1>]`: configuration Manager client enabled features
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[CompliancePolicy <Boolean?>]`: Whether compliance policy is managed by Intune
@@ -2459,10 +2587,10 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
         - `[WindowsUpdateForBusiness <Boolean?>]`: Whether Windows Update for Business is managed by Intune
       - `[DeviceActionResults <IMicrosoftGraphDeviceActionResult[]>]`: List of ComplexType deviceActionResult objects. This property is read-only.
         - `[ActionName <String>]`: Action name
-        - `[ActionState <String>]`: actionState
+        - `[ActionState <String>]`: State of the action on the device
         - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
         - `[StartDateTime <DateTime?>]`: Time the action was initiated
-      - `[DeviceCategory <IMicrosoftGraphDeviceCategory2>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+      - `[DeviceCategory <IMicrosoftGraphDeviceCategory2>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: Read-only.
         - `[Description <String>]`: Optional description for the device category.
@@ -2471,7 +2599,7 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
       - `[DeviceCompliancePolicyStates <IMicrosoftGraphDeviceCompliancePolicyState1[]>]`: Device compliance policy states for this device.
         - `[Id <String>]`: Read-only.
         - `[DisplayName <String>]`: The name of the policy for this policyBase
-        - `[PlatformType <String>]`: 
+        - `[PlatformType <String>]`: Supported platform types for policies.
         - `[SettingCount <Int32?>]`: Count of how many setting a policy holds
         - `[SettingStates <IMicrosoftGraphDeviceCompliancePolicySettingState1[]>]`: 
           - `[CurrentValue <String>]`: Current value of setting on device
@@ -2480,9 +2608,10 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
           - `[InstanceDisplayName <String>]`: Name of setting instance that is being reported.
           - `[Setting <String>]`: The setting that is being reported
           - `[SettingName <String>]`: Localized/user friendly setting name that is being reported
-          - `[Sources <IMicrosoftGraphSettingSource1[]>]`: Contributing policies
+          - `[Sources <IMicrosoftGraphSettingSource[]>]`: Contributing policies
             - `[DisplayName <String>]`: Not yet documented
             - `[Id <String>]`: Not yet documented
+            - `[SourceType <String>]`: settingSourceType
           - `[State <String>]`: complianceStatus
           - `[UserEmail <String>]`: UserEmail
           - `[UserId <String>]`: UserId
@@ -2493,7 +2622,7 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
       - `[DeviceConfigurationStates <IMicrosoftGraphDeviceConfigurationState1[]>]`: Device configuration states for this device.
         - `[Id <String>]`: Read-only.
         - `[DisplayName <String>]`: The name of the policy for this policyBase
-        - `[PlatformType <String>]`: 
+        - `[PlatformType <String>]`: Supported platform types for policies.
         - `[SettingCount <Int32?>]`: Count of how many setting a policy holds
         - `[SettingStates <IMicrosoftGraphDeviceConfigurationSettingState1[]>]`: 
           - `[CurrentValue <String>]`: Current value of setting on device
@@ -2502,7 +2631,7 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
           - `[InstanceDisplayName <String>]`: Name of setting instance that is being reported.
           - `[Setting <String>]`: The setting that is being reported
           - `[SettingName <String>]`: Localized/user friendly setting name that is being reported
-          - `[Sources <IMicrosoftGraphSettingSource1[]>]`: Contributing policies
+          - `[Sources <IMicrosoftGraphSettingSource[]>]`: Contributing policies
           - `[State <String>]`: complianceStatus
           - `[UserEmail <String>]`: UserEmail
           - `[UserId <String>]`: UserId
@@ -2510,7 +2639,7 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
           - `[UserPrincipalName <String>]`: UserPrincipalName.
         - `[State <String>]`: complianceStatus
         - `[Version <Int32?>]`: The version of the policy
-      - `[DeviceEnrollmentType <String>]`: 
+      - `[DeviceEnrollmentType <String>]`: Possible ways of adding a mobile device to management.
       - `[DeviceHealthAttestationState <IMicrosoftGraphDeviceHealthAttestationState>]`: deviceHealthAttestationState
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[AttestationIdentityKey <String>]`: TWhen an Attestation Identity Key (AIK) is present on a device, it indicates that the device has an endorsement key (EK) certificate.
@@ -2546,15 +2675,15 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
         - `[VirtualSecureMode <String>]`: VSM is a container that protects high value assets from a compromised kernel
         - `[WindowsPe <String>]`: Operating system running with limited services that is used to prepare a computer for Windows
       - `[DeviceName <String>]`: Name of the device. This property is read-only.
-      - `[DeviceRegistrationState <String>]`: deviceRegistrationState
+      - `[DeviceRegistrationState <String>]`: Device registration status.
       - `[EasActivated <Boolean?>]`: Whether the device is Exchange ActiveSync activated. This property is read-only.
       - `[EasActivationDateTime <DateTime?>]`: Exchange ActivationSync activation time of the device. This property is read-only.
       - `[EasDeviceId <String>]`: Exchange ActiveSync Id of the device. This property is read-only.
       - `[EmailAddress <String>]`: Email(s) for the user associated with the device. This property is read-only.
       - `[EnrolledDateTime <DateTime?>]`: Enrollment time of the device. This property is read-only.
       - `[EthernetMacAddress <String>]`: Ethernet MAC. This property is read-only.
-      - `[ExchangeAccessState <String>]`: deviceManagementExchangeAccessState
-      - `[ExchangeAccessStateReason <String>]`: deviceManagementExchangeAccessStateReason
+      - `[ExchangeAccessState <String>]`: Device Exchange Access State.
+      - `[ExchangeAccessStateReason <String>]`: Device Exchange Access State Reason.
       - `[ExchangeLastSuccessfulSyncDateTime <DateTime?>]`: Last time the device contacted Exchange. This property is read-only.
       - `[FreeStorageSpaceInBytes <Int64?>]`: Free Storage in Bytes. This property is read-only.
       - `[Iccid <String>]`: Integrated Circuit Card Identifier, it is A SIM card's unique identification number. This property is read-only.
@@ -2564,15 +2693,15 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
       - `[JailBroken <String>]`: whether the device is jail broken or rooted. This property is read-only.
       - `[LastSyncDateTime <DateTime?>]`: The date and time that the device last completed a successful sync with Intune. This property is read-only.
       - `[ManagedDeviceName <String>]`: Automatically generated name to identify a device. Can be overwritten to a user friendly name.
-      - `[ManagedDeviceOwnerType <String>]`: managedDeviceOwnerType
-      - `[ManagementAgent <String>]`: 
+      - `[ManagedDeviceOwnerType <String>]`: Owner type of device.
+      - `[ManagementAgent <String>]`: Management agent type.
       - `[Manufacturer <String>]`: Manufacturer of the device. This property is read-only.
       - `[Meid <String>]`: MEID. This property is read-only.
       - `[Model <String>]`: Model of the device. This property is read-only.
       - `[Notes <String>]`: Notes on the device created by IT Admin
       - `[OSVersion <String>]`: Operating system version of the device. This property is read-only.
       - `[OperatingSystem <String>]`: Operating system of the device. Windows, iOS, etc. This property is read-only.
-      - `[PartnerReportedThreatState <String>]`: managedDevicePartnerReportedHealthState
+      - `[PartnerReportedThreatState <String>]`: Available health states for the Device Health API
       - `[PhoneNumber <String>]`: Phone number of the device. This property is read-only.
       - `[PhysicalMemoryInBytes <Int64?>]`: Total Memory in Bytes. This property is read-only.
       - `[RemoteAssistanceSessionErrorDetails <String>]`: An error string that identifies issues when creating Remote Assistance session objects. This property is read-only.
@@ -2585,10 +2714,10 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
       - `[UserId <String>]`: Unique Identifier for the user associated with the device. This property is read-only.
       - `[UserPrincipalName <String>]`: Device user principal name. This property is read-only.
       - `[WiFiMacAddress <String>]`: Wi-Fi MAC. This property is read-only.
-    - `[Manager <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-    - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: The groups, directory roles and administrative units that the user is a member of. Read-only. Nullable.
+    - `[Manager <IMicrosoftGraphDirectoryObject>]`: directoryObject
+    - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: The groups, directory roles and administrative units that the user is a member of. Read-only. Nullable. Supports $expand.
     - `[Messages <IMicrosoftGraphMessage1[]>]`: The messages in a mailbox or folder. Read-only. Nullable.
-    - `[MobilePhone <String>]`: The primary cellular telephone number for the user. Read-only for users synced from on-premises directory.  Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
+    - `[MobilePhone <String>]`: The primary cellular telephone number for the user. Read-only for users synced from on-premises directory.  Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
     - `[MySite <String>]`: The URL for the user's personal site. Returned only on $select.
     - `[Oauth2PermissionGrants <IMicrosoftGraphOAuth2PermissionGrant1[]>]`: 
       - `[Id <String>]`: Read-only.
@@ -2597,7 +2726,7 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
       - `[PrincipalId <String>]`: The id of the user on behalf of whom the client is authorized to access the resource, when consentType is Principal. If consentType is AllPrincipals this value is null. Required when consentType is Principal.
       - `[ResourceId <String>]`: The id of the resource service principal to which access is authorized. This identifies the API which the client is authorized to attempt to call on behalf of a signed-in user.
       - `[Scope <String>]`: A space-separated list of the claim values for delegated permissions which should be included in access tokens for the resource application (the API). For example, openid User.Read GroupMember.Read.All. Each claim value should match the value field of one of the delegated permissions defined by the API, listed in the publishedPermissionScopes property of the resource service principal.
-    - `[OfficeLocation <String>]`: The office location in the user's place of business. Maximum length is 128 characters. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
+    - `[OfficeLocation <String>]`: The office location in the user's place of business. Maximum length is 128 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
     - `[OnPremisesDistinguishedName <String>]`: Contains the on-premises Active Directory distinguished name or DN. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only.
     - `[OnPremisesDomainName <String>]`: Contains the on-premises domainFQDN, also called dnsDomainName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only.
     - `[OnPremisesExtensionAttributes <IMicrosoftGraphOnPremisesExtensionAttributes>]`: onPremisesExtensionAttributes
@@ -2617,23 +2746,52 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
       - `[ExtensionAttribute7 <String>]`: Seventh customizable extension attribute.
       - `[ExtensionAttribute8 <String>]`: Eighth customizable extension attribute.
       - `[ExtensionAttribute9 <String>]`: Ninth customizable extension attribute.
-    - `[OnPremisesImmutableId <String>]`: This property is used to associate an on-premises Active Directory user account to their Azure AD user object. This property must be specified when creating a new user account in the Graph if you are using a federated domain for the user's userPrincipalName (UPN) property. Note: The $ and _ characters cannot be used when specifying this property. Supports $filter (eq, ne, NOT, ge, le, in).
-    - `[OnPremisesLastSyncDateTime <DateTime?>]`: Indicates the last time at which the object was synced with the on-premises directory; for example: '2013-02-16T03:04:54Z'. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Supports $filter (eq, ne, NOT, ge, le, in).
-    - `[OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError[]>]`: Errors when using Microsoft synchronization product during provisioning.
-    - `[OnPremisesSamAccountName <String>]`: Contains the on-premises sAMAccountName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
-    - `[OnPremisesSecurityIdentifier <String>]`: Contains the on-premises security identifier (SID) for the user that was synchronized from on-premises to the cloud. Read-only. Supports $filter (eq, ne, NOT, in).
-    - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default). Read-only. Supports $filter (eq, ne, NOT, in).
-    - `[OnPremisesUserPrincipalName <String>]`: Contains the on-premises userPrincipalName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
+    - `[OnPremisesImmutableId <String>]`: This property is used to associate an on-premises Active Directory user account to their Azure AD user object. This property must be specified when creating a new user account in the Graph if you are using a federated domain for the user's userPrincipalName (UPN) property. Note: The $ and _ characters cannot be used when specifying this property. Supports $filter (eq, ne, not, ge, le, in).
+    - `[OnPremisesLastSyncDateTime <DateTime?>]`: Indicates the last time at which the object was synced with the on-premises directory; for example: '2013-02-16T03:04:54Z'. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Supports $filter (eq, ne, not, ge, le, in).
+    - `[OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError[]>]`: Errors when using Microsoft synchronization product during provisioning.  Supports $filter (eq, not, ge, le).
+    - `[OnPremisesSamAccountName <String>]`: Contains the on-premises sAMAccountName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. Supports $filter (eq, ne, not, ge, le, in, startsWith).
+    - `[OnPremisesSecurityIdentifier <String>]`: Contains the on-premises security identifier (SID) for the user that was synchronized from on-premises to the cloud. Read-only. Supports $filter (eq) on null values only.
+    - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default). Read-only. Supports $filter (eq, ne, not, in, and eq on null values).
+    - `[OnPremisesUserPrincipalName <String>]`: Contains the on-premises userPrincipalName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. Supports $filter (eq, ne, not, ge, le, in, startsWith).
     - `[Onenote <IMicrosoftGraphOnenote1>]`: onenote
     - `[OnlineMeetings <IMicrosoftGraphOnlineMeeting1[]>]`: 
       - `[Id <String>]`: Read-only.
+      - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
+      - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
+      - `[AllowMeetingChat <String>]`: meetingChatMode
+      - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
       - `[AllowedPresenters <String>]`: onlineMeetingPresenters
-      - `[AudioConferencing <IMicrosoftGraphAudioConferencing1>]`: audioConferencing
+      - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]`: The attendance reports of an online meeting. Read-only.
+        - `[Id <String>]`: Read-only.
+        - `[AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>]`: List of attendance records of an attendance report. Read-only.
+          - `[Id <String>]`: Read-only.
+          - `[AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]`: List of time periods between joining and leaving a meeting.
+            - `[DurationInSeconds <Int32?>]`: Duration of the meeting interval in seconds; that is, the difference between joinDateTime and leaveDateTime.
+            - `[JoinDateTime <DateTime?>]`: The time the attendee joined in UTC.
+            - `[LeaveDateTime <DateTime?>]`: The time the attendee left in UTC.
+          - `[EmailAddress <String>]`: Email address of the user associated with this atttendance record.
+          - `[Identity <IMicrosoftGraphIdentity>]`: identity
+          - `[Role <String>]`: Role of the attendee. Possible values are: None, Attendee, Presenter, and Organizer.
+          - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
+        - `[MeetingEndDateTime <DateTime?>]`: UTC time when the meeting ended. Read-only.
+        - `[MeetingStartDateTime <DateTime?>]`: UTC time when the meeting started. Read-only.
+        - `[TotalParticipantCount <Int32?>]`: Total number of participants. Read-only.
+      - `[AttendeeReport <Byte[]>]`: The content stream of the attendee report of a Teams live event. Read-only.
+      - `[AudioConferencing <IMicrosoftGraphAudioConferencing>]`: audioConferencing
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[ConferenceId <String>]`: The conference id of the online meeting.
         - `[DialinUrl <String>]`: A URL to the externally-accessible web page that contains dial-in information.
-        - `[TollFreeNumber <String>]`: The toll-free number that connects to the Audio Conference Provider.
-        - `[TollNumber <String>]`: The toll number that connects to the Audio Conference Provider.
+        - `[TollFreeNumber <String>]`: 
+        - `[TollFreeNumbers <String[]>]`: List of toll-free numbers that are displayed in the meeting invite.
+        - `[TollNumber <String>]`: 
+        - `[TollNumbers <String[]>]`: List of toll numbers that are displayed in the meeting invite.
+      - `[BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings1>]`: broadcastMeetingSettings
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[AllowedAudience <String>]`: broadcastMeetingAudience
+        - `[IsAttendeeReportEnabled <Boolean?>]`: Indicates whether attendee report is enabled for this Teams live event. Default value is false.
+        - `[IsQuestionAndAnswerEnabled <Boolean?>]`: Indicates whether Q&A is enabled for this Teams live event. Default value is false.
+        - `[IsRecordingEnabled <Boolean?>]`: Indicates whether recording is enabled for this Teams live event. Default value is false.
+        - `[IsVideoOnDemandEnabled <Boolean?>]`: Indicates whether video on demand is enabled for this Teams live event. Default value is false.
       - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channel.
@@ -2642,6 +2800,7 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
       - `[CreationDateTime <DateTime?>]`: The meeting creation time in UTC. Read-only.
       - `[EndDateTime <DateTime?>]`: The meeting end time in UTC.
       - `[ExternalId <String>]`: The external ID. A custom ID. Optional.
+      - `[IsBroadcast <Boolean?>]`: Indicates whether this is a Teams live event.
       - `[IsEntryExitAnnounced <Boolean?>]`: Indicates whether to announce when callers join or leave.
       - `[JoinInformation <IMicrosoftGraphItemBody>]`: itemBody
       - `[JoinWebUrl <String>]`: The join URL of the online meeting. Read-only.
@@ -2651,15 +2810,16 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
         - `[Scope <String>]`: lobbyBypassScope
       - `[Participants <IMicrosoftGraphMeetingParticipants1>]`: meetingParticipants
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Attendees <IMicrosoftGraphMeetingParticipantInfo1[]>]`: Information of the meeting attendees.
+        - `[Attendees <IMicrosoftGraphMeetingParticipantInfo[]>]`: Information of the meeting attendees.
           - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
-          - `[Role <String>]`: 
+          - `[Role <String>]`: onlineMeetingRole
           - `[Upn <String>]`: User principal name of the participant.
-        - `[Organizer <IMicrosoftGraphMeetingParticipantInfo1>]`: meetingParticipantInfo
+        - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
+      - `[RecordAutomatically <Boolean?>]`: Indicates whether to record the meeting automatically.
       - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
       - `[Subject <String>]`: The subject of the online meeting.
       - `[VideoTeleconferenceId <String>]`: The video teleconferencing ID. Read-only.
-    - `[OtherMails <String[]>]`: A list of additional email addresses for the user; for example: ['bob@contoso.com', 'Robert@fabrikam.com'].NOTE: While this property can contain accent characters, they can cause access issues to first-party applications for the user.Supports $filter (eq, NOT, ge, le, in, startsWith).
+    - `[OtherMails <String[]>]`: A list of additional email addresses for the user; for example: ['bob@contoso.com', 'Robert@fabrikam.com'].NOTE: This property cannot contain accent characters.Supports $filter (eq, not, ge, le, in, startsWith).
     - `[Outlook <IMicrosoftGraphOutlookUser1>]`: outlookUser
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: Read-only.
@@ -2667,14 +2827,14 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
         - `[Id <String>]`: Read-only.
         - `[Color <String>]`: categoryColor
         - `[DisplayName <String>]`: A unique name that identifies a category in the user's mailbox. After a category is created, the name cannot be changed. Read-only.
-    - `[OwnedDevices <IMicrosoftGraphDirectoryObject[]>]`: Devices that are owned by the user. Read-only. Nullable.
-    - `[OwnedObjects <IMicrosoftGraphDirectoryObject[]>]`: Directory objects that are owned by the user. Read-only. Nullable.
-    - `[PasswordPolicies <String>]`: Specifies password policies for the user. This value is an enumeration with one possible value being DisableStrongPassword, which allows weaker passwords than the default policy to be specified. DisablePasswordExpiration can also be specified. The two may be specified together; for example: DisablePasswordExpiration, DisableStrongPassword.Supports $filter (eq, ne, NOT).
+    - `[OwnedDevices <IMicrosoftGraphDirectoryObject[]>]`: Devices that are owned by the user. Read-only. Nullable. Supports $expand.
+    - `[OwnedObjects <IMicrosoftGraphDirectoryObject[]>]`: Directory objects that are owned by the user. Read-only. Nullable. Supports $expand.
+    - `[PasswordPolicies <String>]`: Specifies password policies for the user. This value is an enumeration with one possible value being DisableStrongPassword, which allows weaker passwords than the default policy to be specified. DisablePasswordExpiration can also be specified. The two may be specified together; for example: DisablePasswordExpiration, DisableStrongPassword. For more information on the default password policies, see Azure AD pasword policies. Supports $filter (ne, not, and eq on null values).
     - `[PasswordProfile <IMicrosoftGraphPasswordProfile>]`: passwordProfile
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change her password on the next login; otherwise false. If not set, default is false. NOTE:  For Azure B2C tenants, set to false and instead use custom policies and user flows to force password reset at first sign in. See Force password reset at first logon.
       - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password. The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multi-factor authentication before password change. After a password change, this property will be automatically reset to false. If not set, default is false.
-      - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user's passwordPolicies property. By default, a strong password is required.
+      - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user’s passwordPolicies property. By default, a strong password is required.
     - `[PastProjects <String[]>]`: A list for the user to enumerate their past projects. Returned only on $select.
     - `[People <IMicrosoftGraphPerson1[]>]`: Read-only. The most relevant people to the user. The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships. A person is an aggregation of information from across mail, contacts and social networks.
       - `[Id <String>]`: Read-only.
@@ -2698,7 +2858,7 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
       - `[ScoredEmailAddresses <IMicrosoftGraphScoredEmailAddress[]>]`: The person's email addresses.
         - `[Address <String>]`: The email address.
         - `[ItemId <String>]`: 
-        - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user's communication and collaboration patterns and business relationships.
+        - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user’s communication and collaboration patterns and business relationships.
         - `[SelectionLikelihood <String>]`: selectionLikelihoodInfo
       - `[Surname <String>]`: The person's surname.
       - `[UserPrincipalName <String>]`: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
@@ -2714,20 +2874,20 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
       - `[Id <String>]`: Read-only.
       - `[Plans <IMicrosoftGraphPlannerPlan1[]>]`: Read-only. Nullable. Returns the plannerTasks assigned to the user.
       - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Read-only. Nullable. Returns the plannerTasks assigned to the user.
-    - `[PostalCode <String>]`: The postal code for the user's postal address. The postal code is specific to the user's country/region. In the United States of America, this attribute contains the ZIP code. Maximum length is 40 characters. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
-    - `[PreferredLanguage <String>]`: The preferred language for the user. Should follow ISO 639-1 Code; for example en-US. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
+    - `[PostalCode <String>]`: The postal code for the user's postal address. The postal code is specific to the user's country/region. In the United States of America, this attribute contains the ZIP code. Maximum length is 40 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+    - `[PreferredLanguage <String>]`: The preferred language for the user. Should follow ISO 639-1 Code; for example en-US. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
     - `[PreferredName <String>]`: The preferred name for the user. Returned only on $select.
     - `[Presence <IMicrosoftGraphPresence1>]`: presence
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: Read-only.
       - `[Activity <String>]`: The supplemental information to a user's availability. Possible values are Available, Away, BeRightBack, Busy, DoNotDisturb, InACall, InAConferenceCall, Inactive,InAMeeting, Offline, OffWork,OutOfOffice, PresenceUnknown,Presenting, UrgentInterruptionsOnly.
       - `[Availability <String>]`: The base presence information for a user. Possible values are Available, AvailableIdle,  Away, BeRightBack, Busy, BusyIdle, DoNotDisturb, Offline, PresenceUnknown
-    - `[ProvisionedPlans <IMicrosoftGraphProvisionedPlan[]>]`: The plans that are provisioned for the user. Read-only. Not nullable.
+    - `[ProvisionedPlans <IMicrosoftGraphProvisionedPlan[]>]`: The plans that are provisioned for the user. Read-only. Not nullable. Supports $filter (eq, not, ge, le).
       - `[CapabilityStatus <String>]`: For example, 'Enabled'.
       - `[ProvisioningStatus <String>]`: For example, 'Success'.
       - `[Service <String>]`: The name of the service; for example, 'AccessControlS2S'
-    - `[ProxyAddresses <String[]>]`: For example: ['SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com']. Read-only, Not nullable. Supports $filter (eq, NOT, ge, le, startsWith).
-    - `[RegisteredDevices <IMicrosoftGraphDirectoryObject[]>]`: Devices that are registered for the user. Read-only. Nullable.
+    - `[ProxyAddresses <String[]>]`: For example: ['SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com']. Changes to the mail property will also update this collection to include the value as an SMTP address. For more information, see mail and proxyAddresses properties. The proxy address prefixed with SMTP (capitalized) is the primary proxy address while those prefixed with smtp are the secondary proxy addresses. For Azure AD B2C accounts, this property has a limit of ten unique addresses. Read-only in Microsoft Graph; you can update this property only through the Microsoft 365 admin center. Not nullable. Supports $filter (eq, not, ge, le, startsWith).
+    - `[RegisteredDevices <IMicrosoftGraphDirectoryObject[]>]`: Devices that are registered for the user. Read-only. Nullable. Supports $expand.
     - `[Responsibilities <String[]>]`: A list for the user to enumerate their responsibilities. Returned only on $select.
     - `[Schools <String[]>]`: A list for the user to enumerate the schools they have attended. Returned only on $select.
     - `[ScopedRoleMemberOf <IMicrosoftGraphScopedRoleMembership[]>]`: The scoped-role administrative unit memberships for this user. Read-only. Nullable.
@@ -2752,12 +2912,12 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
             - `[EndTime <String>]`: End time for the time range.
             - `[StartTime <String>]`: Start time for the time range.
           - `[TimeZone <String>]`: Specifies the time zone for the indicated time.
-    - `[ShowInAddressList <Boolean?>]`: true if the Outlook global address list should contain this user, otherwise false. If not set, this will be treated as true. For users invited through the invitation manager, this property will be set to false. Supports $filter (eq, ne, NOT, in).
+    - `[ShowInAddressList <Boolean?>]`: true if the Outlook global address list should contain this user, otherwise false. If not set, this will be treated as true. For users invited through the invitation manager, this property will be set to false. Supports $filter (eq, ne, not, in).
     - `[SignInSessionsValidFromDateTime <DateTime?>]`: Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. Read-only. Use revokeSignInSessions to reset.
     - `[Skills <String[]>]`: A list for the user to enumerate their skills. Returned only on $select.
-    - `[State <String>]`: The state or province in the user's address. Maximum length is 128 characters. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
-    - `[StreetAddress <String>]`: The street address of the user's place of business. Maximum length is 1024 characters. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
-    - `[Surname <String>]`: The user's surname (family name or last name). Maximum length is 64 characters. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
+    - `[State <String>]`: The state or province in the user's address. Maximum length is 128 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+    - `[StreetAddress <String>]`: The street address of the user's place of business. Maximum length is 1024 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+    - `[Surname <String>]`: The user's surname (family name or last name). Maximum length is 64 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
     - `[Teamwork <IMicrosoftGraphUserTeamwork1>]`: userTeamwork
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: Read-only.
@@ -2798,14 +2958,14 @@ BODYPARAMETER <IMicrosoftGraphList1>: list
           - `[Title <String>]`: A brief description of the task.
         - `[WellknownListName <String>]`: wellknownListName
     - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: 
-    - `[UsageLocation <String>]`: A two letter country code (ISO standard 3166). Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries.  Examples include: US, JP, and GB. Not nullable. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
-    - `[UserPrincipalName <String>]`: The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant's collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: While this property can contain accent characters, they can cause access issues to first-party applications for the user. Supports $filter (eq, ne, NOT, ge, le, in, startsWith, endsWith) and $orderBy.
-    - `[UserType <String>]`: A string value that can be used to classify user types in your directory, such as Member and Guest. Supports $filter (eq, ne, NOT, in, startsWith, endsWith).
+    - `[UsageLocation <String>]`: A two letter country code (ISO standard 3166). Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries.  Examples include: US, JP, and GB. Not nullable. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+    - `[UserPrincipalName <String>]`: The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant's collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property cannot contain accent characters. Only the following characters are allowed A - Z, a - z, 0 - 9, ' . - _ ! # ^ ~. For the complete list of allowed characters, see username policies. Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderBy.
+    - `[UserType <String>]`: A String value that can be used to classify user types in your directory, such as Member and Guest. Supports $filter (eq, ne, not, in, and eq on null values). NOTE: For more information about the permissions for member and guest users, see What are the default user permissions in Azure Active Directory?
   - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
   - `[Description <String>]`: Provides a user-visible description of the item. Optional.
   - `[ETag <String>]`: ETag for the item. Read-only.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+  - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
   - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
   - `[Name <String>]`: The name of the item. Read-write.
   - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -2840,6 +3000,8 @@ COLUMNS <IMicrosoftGraphColumnDefinition1[]>: The collection of field definition
     - `[Choices <String[]>]`: The list of values available for this column.
     - `[DisplayAs <String>]`: How the choices are to be presented in the UX. Must be one of checkBoxes, dropDownMenu, or radioButtons
   - `[ColumnGroup <String>]`: For site columns, the name of the group this column belongs to. Helps organize related columns.
+  - `[ContentApprovalStatus <IMicrosoftGraphContentApprovalStatusColumn>]`: contentApprovalStatusColumn
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Currency <IMicrosoftGraphCurrencyColumn>]`: currencyColumn
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Locale <String>]`: Specifies the locale from which to infer the currency symbol.
@@ -2857,7 +3019,13 @@ COLUMNS <IMicrosoftGraphColumnDefinition1[]>: The collection of field definition
   - `[Geolocation <IMicrosoftGraphGeolocationColumn>]`: geolocationColumn
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Hidden <Boolean?>]`: Specifies whether the column is displayed in the user interface.
+  - `[HyperlinkOrPicture <IMicrosoftGraphHyperlinkOrPictureColumn>]`: hyperlinkOrPictureColumn
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[IsPicture <Boolean?>]`: Specifies whether the display format used for URL columns is an image or a hyperlink.
   - `[Indexed <Boolean?>]`: Specifies whether the column values can used for sorting and searching.
+  - `[IsDeletable <Boolean?>]`: Indicates whether this column can be deleted.
+  - `[IsReorderable <Boolean?>]`: Indicates whether values in the column can be reordered. Read-only.
+  - `[IsSealed <Boolean?>]`: Specifies whether the column can be changed.
   - `[Lookup <IMicrosoftGraphLookupColumn>]`: lookupColumn
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AllowMultipleValues <Boolean?>]`: Indicates whether multiple values can be selected from the source.
@@ -2877,8 +3045,58 @@ COLUMNS <IMicrosoftGraphColumnDefinition1[]>: The collection of field definition
     - `[AllowMultipleSelection <Boolean?>]`: Indicates whether multiple values can be selected from the source.
     - `[ChooseFromType <String>]`: Whether to allow selection of people only, or people and groups. Must be one of peopleAndGroups or peopleOnly.
     - `[DisplayAs <String>]`: How to display the information about the person or group chosen. See below.
+  - `[PropagateChanges <Boolean?>]`: If true, changes to this column will be propagated to lists that implement the column.
   - `[ReadOnly <Boolean?>]`: Specifies whether the column values can be modified.
-  - `[Required <Boolean?>]`: Specifies whether the column value is not optional.
+  - `[Required <Boolean?>]`: Specifies whether the column value isn't optional.
+  - `[SourceColumn <IMicrosoftGraphColumnDefinition1>]`: columnDefinition
+  - `[Term <IMicrosoftGraphTermColumn1>]`: termColumn
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[AllowMultipleValues <Boolean?>]`: Specifies whether the column will allow more than one value
+    - `[ParentTerm <IMicrosoftGraphTermStoreTerm1>]`: term
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: Read-only.
+      - `[Children <IMicrosoftGraphTermStoreTerm1[]>]`: Children of current term.
+      - `[CreatedDateTime <DateTime?>]`: Date and time of term creation. Read-only.
+      - `[Descriptions <IMicrosoftGraphTermStoreLocalizedDescription[]>]`: Description about term that is dependent on the languageTag.
+        - `[Description <String>]`: The description in the localized language.
+        - `[LanguageTag <String>]`: The language tag for the label.
+      - `[Labels <IMicrosoftGraphTermStoreLocalizedLabel[]>]`: Label metadata for a term.
+        - `[IsDefault <Boolean?>]`: Indicates whether the label is the default label.
+        - `[LanguageTag <String>]`: The language tag for the label.
+        - `[Name <String>]`: The name of the label.
+      - `[LastModifiedDateTime <DateTime?>]`: Last date and time of term modification. Read-only.
+      - `[Properties <IMicrosoftGraphKeyValue[]>]`: Collection of properties on the term.
+        - `[Key <String>]`: Key.
+        - `[Value <String>]`: Value.
+      - `[Relations <IMicrosoftGraphTermStoreRelation1[]>]`: To indicate which terms are related to the current term as either pinned or reused.
+        - `[Id <String>]`: Read-only.
+        - `[FromTerm <IMicrosoftGraphTermStoreTerm1>]`: term
+        - `[Relationship <String>]`: 
+        - `[Set <IMicrosoftGraphTermStoreSet1>]`: set
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Id <String>]`: Read-only.
+          - `[Children <IMicrosoftGraphTermStoreTerm1[]>]`: Children terms of set in term [store].
+          - `[CreatedDateTime <DateTime?>]`: Date and time of set creation. Read-only.
+          - `[Description <String>]`: Description giving details on the term usage.
+          - `[LocalizedNames <IMicrosoftGraphTermStoreLocalizedName[]>]`: Name of the set for each languageTag.
+            - `[LanguageTag <String>]`: The language tag for the label.
+            - `[Name <String>]`: The name in the localized language.
+          - `[ParentGroup <IMicrosoftGraphTermStoreGroup1>]`: group
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Id <String>]`: Read-only.
+            - `[CreatedDateTime <DateTime?>]`: Date and time of group creation. Read-only.
+            - `[Description <String>]`: Description giving details on the term usage.
+            - `[DisplayName <String>]`: Name of group.
+            - `[ParentSiteId <String>]`: Id of the parent site of this group.
+            - `[Scope <String>]`: 
+            - `[Sets <IMicrosoftGraphTermStoreSet1[]>]`: All sets under the group in a term [store].
+          - `[Properties <IMicrosoftGraphKeyValue[]>]`: Custom properties for the set.
+          - `[Relations <IMicrosoftGraphTermStoreRelation1[]>]`: Indicates which terms have been pinned or reused directly under the set.
+          - `[Terms <IMicrosoftGraphTermStoreTerm1[]>]`: All the terms under the set.
+        - `[ToTerm <IMicrosoftGraphTermStoreTerm1>]`: term
+      - `[Set <IMicrosoftGraphTermStoreSet1>]`: set
+    - `[ShowFullyQualifiedName <Boolean?>]`: Specifies whether to display the entire term path or only the term label.
+    - `[TermSet <IMicrosoftGraphTermStoreSet1>]`: set
   - `[Text <IMicrosoftGraphTextColumn>]`: textColumn
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AllowMultipleLines <Boolean?>]`: Whether to allow multiple lines of text.
@@ -2886,13 +3104,171 @@ COLUMNS <IMicrosoftGraphColumnDefinition1[]>: The collection of field definition
     - `[LinesForEditing <Int32?>]`: The size of the text box.
     - `[MaxLength <Int32?>]`: The maximum number of characters for the value.
     - `[TextType <String>]`: The type of text being stored. Must be one of plain or richText
+  - `[Thumbnail <IMicrosoftGraphThumbnailColumn>]`: thumbnailColumn
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Type <String>]`: columnTypes
+  - `[Validation <IMicrosoftGraphColumnValidation>]`: columnValidation
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DefaultLanguage <String>]`: Default BCP 47 language tag for the description.
+    - `[Descriptions <IMicrosoftGraphDisplayNameLocalization[]>]`: Localized messages that explain what is needed for this column's value to be considered valid. User will be prompted with this message if validation fails.
+      - `[DisplayName <String>]`: If present, the value of this field contains the displayName string that has been set for the language present in the languageTag field.
+      - `[LanguageTag <String>]`: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
+    - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists
 
 CONTENTTYPES <IMicrosoftGraphContentType1[]>: The collection of content types present in this list.
   - `[Id <String>]`: Read-only.
+  - `[AssociatedHubsUrls <String[]>]`: List of canonical URLs for hub sites with which this content type is associated to. This will contain all hubsites where this content type is queued to be enforced or is already enforced. Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
+  - `[Base <IMicrosoftGraphContentType1>]`: contentType
+  - `[BaseTypes <IMicrosoftGraphContentType1[]>]`: The collection of content types that are ancestors of this content type.
   - `[ColumnLinks <IMicrosoftGraphColumnLink[]>]`: The collection of columns that are required by this content type
     - `[Id <String>]`: Read-only.
     - `[Name <String>]`: The name of the column  in this content type.
+  - `[ColumnPositions <IMicrosoftGraphColumnDefinition1[]>]`: Column order information in a content type.
+    - `[Id <String>]`: Read-only.
+    - `[Boolean <IMicrosoftGraphBooleanColumn>]`: booleanColumn
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Calculated <IMicrosoftGraphCalculatedColumn>]`: calculatedColumn
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Format <String>]`: For dateTime output types, the format of the value. Must be one of dateOnly or dateTime.
+      - `[Formula <String>]`: The formula used to compute the value for this column.
+      - `[OutputType <String>]`: The output type used to format values in this column. Must be one of boolean, currency, dateTime, number, or text.
+    - `[Choice <IMicrosoftGraphChoiceColumn>]`: choiceColumn
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[AllowTextEntry <Boolean?>]`: If true, allows custom values that aren't in the configured choices.
+      - `[Choices <String[]>]`: The list of values available for this column.
+      - `[DisplayAs <String>]`: How the choices are to be presented in the UX. Must be one of checkBoxes, dropDownMenu, or radioButtons
+    - `[ColumnGroup <String>]`: For site columns, the name of the group this column belongs to. Helps organize related columns.
+    - `[ContentApprovalStatus <IMicrosoftGraphContentApprovalStatusColumn>]`: contentApprovalStatusColumn
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Currency <IMicrosoftGraphCurrencyColumn>]`: currencyColumn
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Locale <String>]`: Specifies the locale from which to infer the currency symbol.
+    - `[DateTime <IMicrosoftGraphDateTimeColumn>]`: dateTimeColumn
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayAs <String>]`: How the value should be presented in the UX. Must be one of default, friendly, or standard. See below for more details. If unspecified, treated as default.
+      - `[Format <String>]`: Indicates whether the value should be presented as a date only or a date and time. Must be one of dateOnly or dateTime
+    - `[DefaultValue <IMicrosoftGraphDefaultColumnValue>]`: defaultColumnValue
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Formula <String>]`: The formula used to compute the default value for this column.
+      - `[Value <String>]`: The direct value to use as the default value for this column.
+    - `[Description <String>]`: The user-facing description of the column.
+    - `[DisplayName <String>]`: The user-facing name of the column.
+    - `[EnforceUniqueValues <Boolean?>]`: If true, no two list items may have the same value for this column.
+    - `[Geolocation <IMicrosoftGraphGeolocationColumn>]`: geolocationColumn
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Hidden <Boolean?>]`: Specifies whether the column is displayed in the user interface.
+    - `[HyperlinkOrPicture <IMicrosoftGraphHyperlinkOrPictureColumn>]`: hyperlinkOrPictureColumn
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[IsPicture <Boolean?>]`: Specifies whether the display format used for URL columns is an image or a hyperlink.
+    - `[Indexed <Boolean?>]`: Specifies whether the column values can used for sorting and searching.
+    - `[IsDeletable <Boolean?>]`: Indicates whether this column can be deleted.
+    - `[IsReorderable <Boolean?>]`: Indicates whether values in the column can be reordered. Read-only.
+    - `[IsSealed <Boolean?>]`: Specifies whether the column can be changed.
+    - `[Lookup <IMicrosoftGraphLookupColumn>]`: lookupColumn
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[AllowMultipleValues <Boolean?>]`: Indicates whether multiple values can be selected from the source.
+      - `[AllowUnlimitedLength <Boolean?>]`: Indicates whether values in the column should be able to exceed the standard limit of 255 characters.
+      - `[ColumnName <String>]`: The name of the lookup source column.
+      - `[ListId <String>]`: The unique identifier of the lookup source list.
+      - `[PrimaryLookupColumnId <String>]`: If specified, this column is a secondary lookup, pulling an additional field from the list item looked up by the primary lookup. Use the list item looked up by the primary as the source for the column named here.
+    - `[Name <String>]`: The API-facing name of the column as it appears in the [fields][] on a [listItem][]. For the user-facing name, see displayName.
+    - `[Number <IMicrosoftGraphNumberColumn>]`: numberColumn
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DecimalPlaces <String>]`: How many decimal places to display. See below for information about the possible values.
+      - `[DisplayAs <String>]`: How the value should be presented in the UX. Must be one of number or percentage. If unspecified, treated as number.
+      - `[Maximum <Double?>]`: The maximum permitted value.
+      - `[Minimum <Double?>]`: The minimum permitted value.
+    - `[PersonOrGroup <IMicrosoftGraphPersonOrGroupColumn>]`: personOrGroupColumn
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[AllowMultipleSelection <Boolean?>]`: Indicates whether multiple values can be selected from the source.
+      - `[ChooseFromType <String>]`: Whether to allow selection of people only, or people and groups. Must be one of peopleAndGroups or peopleOnly.
+      - `[DisplayAs <String>]`: How to display the information about the person or group chosen. See below.
+    - `[PropagateChanges <Boolean?>]`: If true, changes to this column will be propagated to lists that implement the column.
+    - `[ReadOnly <Boolean?>]`: Specifies whether the column values can be modified.
+    - `[Required <Boolean?>]`: Specifies whether the column value isn't optional.
+    - `[SourceColumn <IMicrosoftGraphColumnDefinition1>]`: columnDefinition
+    - `[Term <IMicrosoftGraphTermColumn1>]`: termColumn
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[AllowMultipleValues <Boolean?>]`: Specifies whether the column will allow more than one value
+      - `[ParentTerm <IMicrosoftGraphTermStoreTerm1>]`: term
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: Read-only.
+        - `[Children <IMicrosoftGraphTermStoreTerm1[]>]`: Children of current term.
+        - `[CreatedDateTime <DateTime?>]`: Date and time of term creation. Read-only.
+        - `[Descriptions <IMicrosoftGraphTermStoreLocalizedDescription[]>]`: Description about term that is dependent on the languageTag.
+          - `[Description <String>]`: The description in the localized language.
+          - `[LanguageTag <String>]`: The language tag for the label.
+        - `[Labels <IMicrosoftGraphTermStoreLocalizedLabel[]>]`: Label metadata for a term.
+          - `[IsDefault <Boolean?>]`: Indicates whether the label is the default label.
+          - `[LanguageTag <String>]`: The language tag for the label.
+          - `[Name <String>]`: The name of the label.
+        - `[LastModifiedDateTime <DateTime?>]`: Last date and time of term modification. Read-only.
+        - `[Properties <IMicrosoftGraphKeyValue[]>]`: Collection of properties on the term.
+          - `[Key <String>]`: Key.
+          - `[Value <String>]`: Value.
+        - `[Relations <IMicrosoftGraphTermStoreRelation1[]>]`: To indicate which terms are related to the current term as either pinned or reused.
+          - `[Id <String>]`: Read-only.
+          - `[FromTerm <IMicrosoftGraphTermStoreTerm1>]`: term
+          - `[Relationship <String>]`: 
+          - `[Set <IMicrosoftGraphTermStoreSet1>]`: set
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Id <String>]`: Read-only.
+            - `[Children <IMicrosoftGraphTermStoreTerm1[]>]`: Children terms of set in term [store].
+            - `[CreatedDateTime <DateTime?>]`: Date and time of set creation. Read-only.
+            - `[Description <String>]`: Description giving details on the term usage.
+            - `[LocalizedNames <IMicrosoftGraphTermStoreLocalizedName[]>]`: Name of the set for each languageTag.
+              - `[LanguageTag <String>]`: The language tag for the label.
+              - `[Name <String>]`: The name in the localized language.
+            - `[ParentGroup <IMicrosoftGraphTermStoreGroup1>]`: group
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[Id <String>]`: Read-only.
+              - `[CreatedDateTime <DateTime?>]`: Date and time of group creation. Read-only.
+              - `[Description <String>]`: Description giving details on the term usage.
+              - `[DisplayName <String>]`: Name of group.
+              - `[ParentSiteId <String>]`: Id of the parent site of this group.
+              - `[Scope <String>]`: 
+              - `[Sets <IMicrosoftGraphTermStoreSet1[]>]`: All sets under the group in a term [store].
+            - `[Properties <IMicrosoftGraphKeyValue[]>]`: Custom properties for the set.
+            - `[Relations <IMicrosoftGraphTermStoreRelation1[]>]`: Indicates which terms have been pinned or reused directly under the set.
+            - `[Terms <IMicrosoftGraphTermStoreTerm1[]>]`: All the terms under the set.
+          - `[ToTerm <IMicrosoftGraphTermStoreTerm1>]`: term
+        - `[Set <IMicrosoftGraphTermStoreSet1>]`: set
+      - `[ShowFullyQualifiedName <Boolean?>]`: Specifies whether to display the entire term path or only the term label.
+      - `[TermSet <IMicrosoftGraphTermStoreSet1>]`: set
+    - `[Text <IMicrosoftGraphTextColumn>]`: textColumn
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[AllowMultipleLines <Boolean?>]`: Whether to allow multiple lines of text.
+      - `[AppendChangesToExistingText <Boolean?>]`: Whether updates to this column should replace existing text, or append to it.
+      - `[LinesForEditing <Int32?>]`: The size of the text box.
+      - `[MaxLength <Int32?>]`: The maximum number of characters for the value.
+      - `[TextType <String>]`: The type of text being stored. Must be one of plain or richText
+    - `[Thumbnail <IMicrosoftGraphThumbnailColumn>]`: thumbnailColumn
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Type <String>]`: columnTypes
+    - `[Validation <IMicrosoftGraphColumnValidation>]`: columnValidation
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DefaultLanguage <String>]`: Default BCP 47 language tag for the description.
+      - `[Descriptions <IMicrosoftGraphDisplayNameLocalization[]>]`: Localized messages that explain what is needed for this column's value to be considered valid. User will be prompted with this message if validation fails.
+        - `[DisplayName <String>]`: If present, the value of this field contains the displayName string that has been set for the language present in the languageTag field.
+        - `[LanguageTag <String>]`: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
+      - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists
+  - `[Columns <IMicrosoftGraphColumnDefinition1[]>]`: The collection of column definitions for this contentType.
   - `[Description <String>]`: The descriptive text for the item.
+  - `[DocumentSet <IMicrosoftGraphDocumentSet1>]`: documentSet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[AllowedContentTypes <IMicrosoftGraphContentTypeInfo[]>]`: Content types allowed in document set.
+      - `[Id <String>]`: The id of the content type.
+      - `[Name <String>]`: The name of the content type.
+    - `[DefaultContents <IMicrosoftGraphDocumentSetContent[]>]`: Default contents of document set.
+      - `[ContentType <IMicrosoftGraphContentTypeInfo>]`: contentTypeInfo
+      - `[FileName <String>]`: Name of the file in resource folder that should be added as a default content or a template in the document set
+      - `[FolderName <String>]`: Folder name in which the file will be placed when a new document set is created in the library.
+    - `[PropagateWelcomePageChanges <Boolean?>]`: Specifies whether to push welcome page changes to inherited content types.
+    - `[SharedColumns <IMicrosoftGraphColumnDefinition1[]>]`: 
+    - `[ShouldPrefixNameToFile <Boolean?>]`: Add the name of the Document Set to each file name.
+    - `[WelcomePageColumns <IMicrosoftGraphColumnDefinition1[]>]`: 
+    - `[WelcomePageUrl <String>]`: Welcome page absolute URL.
+  - `[DocumentTemplate <IMicrosoftGraphDocumentSetContent>]`: documentSetContent
   - `[Group <String>]`: The name of the group this content type belongs to. Helps organize related content types.
   - `[Hidden <Boolean?>]`: Indicates whether the content type is hidden in the list's 'New' menu.
   - `[InheritedFrom <IMicrosoftGraphItemReference>]`: itemReference
@@ -2913,12 +3289,14 @@ CONTENTTYPES <IMicrosoftGraphContentType1[]>: The collection of content types pr
       - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
       - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
     - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
+  - `[IsBuiltIn <Boolean?>]`: Specifies if a content type is a built-in content type.
   - `[Name <String>]`: The name of the content type.
   - `[Order <IMicrosoftGraphContentTypeOrder>]`: contentTypeOrder
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Default <Boolean?>]`: Whether this is the default Content Type
     - `[Position <Int32?>]`: Specifies the position in which the Content Type appears in the selection UI.
   - `[ParentId <String>]`: The unique identifier of the content type.
+  - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.
   - `[ReadOnly <Boolean?>]`: If true, the content type cannot be modified unless this value is first set to false.
   - `[Sealed <Boolean?>]`: If true, the content type cannot be modified by users or through push-down operations. Only site collection administrators can seal or unseal content types.
 
@@ -2926,23 +3304,23 @@ CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
+    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+    - `[Id <String>]`: The identifier of the identity. This property is read-only.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user object.
+CREATEDBYUSER <IMicrosoftGraphUser1>: user
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeletedDateTime <DateTime?>]`: 
   - `[Id <String>]`: Read-only.
   - `[AboutMe <String>]`: A freeform text entry field for the user to describe themselves. Returned only on $select.
-  - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. This property is required when a user is created. Supports $filter (eq, ne, NOT, and in).
+  - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. This property is required when a user is created. Supports $filter (eq, ne, not, and in).
   - `[Activities <IMicrosoftGraphUserActivity1[]>]`: The user's activities across devices. Read-only. Nullable.
     - `[Id <String>]`: Read-only.
     - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
     - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
     - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-    - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
+    - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
     - `[ContentInfo <IMicrosoftGraphJson>]`: Json
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -2967,7 +3345,7 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
+        - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
         - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
         - `[AlternativeText <String>]`: 
         - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -2975,7 +3353,7 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
       - `[Content <IMicrosoftGraphJson>]`: Json
       - `[Description <String>]`: Optional. Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
       - `[DisplayText <String>]`: Required. Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)
-  - `[AgeGroup <String>]`: Sets the age group of the user. Allowed values: null, minor, notAdult and adult. Refer to the legal age group property definitions for further information. Supports $filter (eq, ne, NOT, and in).
+  - `[AgeGroup <String>]`: Sets the age group of the user. Allowed values: null, minor, notAdult and adult. Refer to the legal age group property definitions for further information. Supports $filter (eq, ne, not, and in).
   - `[AgreementAcceptances <IMicrosoftGraphAgreementAcceptance[]>]`: The user's terms of use acceptance statuses. Read-only. Nullable.
     - `[Id <String>]`: Read-only.
     - `[AgreementFileId <String>]`: ID of the agreement file accepted by the user.
@@ -2991,7 +3369,7 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
     - `[UserEmail <String>]`: Email of the user when the acceptance was recorded.
     - `[UserId <String>]`: ID of the user who accepted the agreement.
     - `[UserPrincipalName <String>]`: UPN of the user when the acceptance was recorded.
-  - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment1[]>]`: Represents the app roles a user has been granted for an application.
+  - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment1[]>]`: Represents the app roles a user has been granted for an application. Supports $expand.
     - `[DeletedDateTime <DateTime?>]`: 
     - `[Id <String>]`: Read-only.
     - `[AppRoleId <String>]`: The identifier (id) for the app role which is assigned to the principal. This app role must be exposed in the appRoles property on the resource application's service principal (resourceId). If the resource application has not declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles. Required on create.
@@ -3001,10 +3379,10 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
     - `[PrincipalType <String>]`: The type of the assigned principal. This can either be User, Group or ServicePrincipal. Read-only.
     - `[ResourceDisplayName <String>]`: The display name of the resource app's service principal to which the assignment is made.
     - `[ResourceId <String>]`: The unique identifier (id) for the resource service principal for which the assignment is made. Required on create. Supports $filter (eq only).
-  - `[AssignedLicenses <IMicrosoftGraphAssignedLicense[]>]`: The licenses that are assigned to the user, including inherited (group-based) licenses. Not nullable. Supports $filter (eq and NOT).
+  - `[AssignedLicenses <IMicrosoftGraphAssignedLicense[]>]`: The licenses that are assigned to the user, including inherited (group-based) licenses. Not nullable. Supports $filter (eq and not).
     - `[DisabledPlans <String[]>]`: A collection of the unique identifiers for plans that have been disabled.
     - `[SkuId <String>]`: The unique identifier for the SKU.
-  - `[AssignedPlans <IMicrosoftGraphAssignedPlan[]>]`: The plans that are assigned to the user. Read-only. Not nullable.Supports $filter (eq and NOT).
+  - `[AssignedPlans <IMicrosoftGraphAssignedPlan[]>]`: The plans that are assigned to the user. Read-only. Not nullable.Supports $filter (eq and not).
     - `[AssignedDateTime <DateTime?>]`: The date and time at which the plan was assigned; for example: 2013-01-02T19:32:30Z. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[CapabilityStatus <String>]`: Condition of the capability assignment. The possible values are Enabled, Warning, Suspended, Deleted, LockedOut.
     - `[Service <String>]`: The name of the service; for example, 'Exchange'.
@@ -3025,39 +3403,39 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
     - `[MicrosoftAuthenticatorMethods <IMicrosoftGraphMicrosoftAuthenticatorAuthenticationMethod1[]>]`: 
       - `[Id <String>]`: Read-only.
       - `[CreatedDateTime <DateTime?>]`: The date and time that this app was registered. This property is null if the device is not registered for passwordless Phone Sign-In.
-      - `[Device <IMicrosoftGraphDevice1>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
+      - `[Device <IMicrosoftGraphDevice1>]`: device
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DeletedDateTime <DateTime?>]`: 
         - `[Id <String>]`: Read-only.
-        - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. default is true.
-        - `[AlternativeSecurityIds <IMicrosoftGraphAlternativeSecurityId[]>]`: For internal use only. Not nullable.
+        - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. Default is true.  Supports $filter (eq, ne, not, in). Only callers in Global Administrator and Cloud Device Administrator roles can set this property.
+        - `[AlternativeSecurityIds <IMicrosoftGraphAlternativeSecurityId[]>]`: For internal use only. Not nullable. Supports $filter (eq, not, ge, le).
           - `[IdentityProvider <String>]`: For internal use only
           - `[Key <Byte[]>]`: For internal use only
           - `[Type <Int32?>]`: For internal use only
-        - `[ApproximateLastSignInDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+        - `[ApproximateLastSignInDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Supports $filter (eq, ne, not, ge, le, and eq on null values) and $orderBy.
         - `[ComplianceExpirationDateTime <DateTime?>]`: The timestamp when the device is no longer deemed compliant. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-        - `[DeviceId <String>]`: Identifier set by Azure Device Registration Service at the time of registration.
+        - `[DeviceId <String>]`: Identifier set by Azure Device Registration Service at the time of registration. Supports $filter (eq, ne, not, startsWith).
         - `[DeviceMetadata <String>]`: For internal use only. Set to null.
         - `[DeviceVersion <Int32?>]`: For internal use only.
-        - `[DisplayName <String>]`: The display name for the device. Required.
+        - `[DisplayName <String>]`: The display name for the device. Required. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderBy.
         - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the device. Read-only. Nullable.
           - `[Id <String>]`: Read-only.
-        - `[IsCompliant <Boolean?>]`: true if the device complies with Mobile Device Management (MDM) policies; otherwise, false. Read-only. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
-        - `[IsManaged <Boolean?>]`: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
-        - `[MdmAppId <String>]`: Application identifier used to register device into MDM. Read-only. Supports $filter.
-        - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups that this device is a member of. Read-only. Nullable.
+        - `[IsCompliant <Boolean?>]`: true if the device complies with Mobile Device Management (MDM) policies; otherwise, false. Read-only. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices. Supports $filter (eq, ne, not).
+        - `[IsManaged <Boolean?>]`: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices. Supports $filter (eq, ne, not).
+        - `[MdmAppId <String>]`: Application identifier used to register device into MDM. Read-only. Supports $filter (eq, ne, not, startsWith).
+        - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups that this device is a member of. Read-only. Nullable. Supports $expand.
           - `[Id <String>]`: Read-only.
           - `[DeletedDateTime <DateTime?>]`: 
-        - `[OnPremisesLastSyncDateTime <DateTime?>]`: The last time at which the object was synced with the on-premises directory. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
-        - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default). Read-only.
-        - `[OperatingSystem <String>]`: The type of operating system on the device. Required.
-        - `[OperatingSystemVersion <String>]`: Operating system version of the device. Required.
-        - `[PhysicalIds <String[]>]`: For internal use only. Not nullable.
+        - `[OnPremisesLastSyncDateTime <DateTime?>]`: The last time at which the object was synced with the on-premises directory. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only. Supports $filter (eq, ne, not, ge, le, in).
+        - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default). Read-only. Supports $filter (eq, ne, not, in, and eq on null values).
+        - `[OperatingSystem <String>]`: The type of operating system on the device. Required. Supports $filter (eq, ne, not, ge, le, startsWith, and eq on null values).
+        - `[OperatingSystemVersion <String>]`: Operating system version of the device. Required. Supports $filter (eq, ne, not, ge, le, startsWith, and eq on null values).
+        - `[PhysicalIds <String[]>]`: For internal use only. Not nullable. Supports $filter (eq, not, ge, le, startsWith).
         - `[ProfileType <String>]`: The profile type of the device. Possible values: RegisteredDevice (default), SecureVM, Printer, Shared, IoT.
-        - `[RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]`: The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Currently, there can be only one owner. Read-only. Nullable.
-        - `[RegisteredUsers <IMicrosoftGraphDirectoryObject[]>]`: Collection of registered users of the device. For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration. Read-only. Nullable.
+        - `[RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]`: The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Currently, there can be only one owner. Read-only. Nullable. Supports $expand.
+        - `[RegisteredUsers <IMicrosoftGraphDirectoryObject[]>]`: Collection of registered users of the device. For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration. Read-only. Nullable. Supports $expand.
         - `[SystemLabels <String[]>]`: List of labels applied to the device by the system.
-        - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups that this device is a member of. This operation is transitive.
+        - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups that this device is a member of. This operation is transitive. Supports $expand.
         - `[TrustType <String>]`: Type of trust for the joined device. Read-only. Possible values: Workplace (indicates bring your own personal devices), AzureAd (Cloud only joined devices), ServerAd (on-premises domain joined devices joined to Azure AD). For more details, see Introduction to device management in Azure Active Directory
       - `[DeviceTag <String>]`: Tags containing app metadata.
       - `[DisplayName <String>]`: The name of the device on which this app is registered.
@@ -3065,11 +3443,11 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
     - `[WindowsHelloForBusinessMethods <IMicrosoftGraphWindowsHelloForBusinessAuthenticationMethod1[]>]`: 
       - `[Id <String>]`: Read-only.
       - `[CreatedDateTime <DateTime?>]`: The date and time that this Windows Hello for Business key was registered.
-      - `[Device <IMicrosoftGraphDevice1>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
+      - `[Device <IMicrosoftGraphDevice1>]`: device
       - `[DisplayName <String>]`: The name of the device on which Windows Hello for Business is registered
       - `[KeyStrength <String>]`: authenticationMethodKeyStrength
   - `[Birthday <DateTime?>]`: The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Returned only on $select.
-  - `[BusinessPhones <String[]>]`: The telephone numbers for the user. Only one number can be set for this property. Read-only for users synced from on-premises directory. Supports $filter (eq and NOT).
+  - `[BusinessPhones <String[]>]`: The telephone numbers for the user. Only one number can be set for this property. Read-only for users synced from on-premises directory. Supports $filter (eq, not, ge, le, startsWith).
   - `[Calendar <IMicrosoftGraphCalendar1>]`: calendar
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: Read-only.
@@ -3090,7 +3468,7 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
       - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[Id <String>]`: Read-only.
-      - `[AllowNewTimeProposals <Boolean?>]`: True if the meeting organizer allows invitees to propose a new time when responding, false otherwise. Optional. Default is true.
+      - `[AllowNewTimeProposals <Boolean?>]`: true if the meeting organizer allows invitees to propose a new time when responding; otherwise false. Optional. Default is true.
       - `[Attachments <IMicrosoftGraphAttachment[]>]`: The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event. Navigation property. Read-only. Nullable.
         - `[Id <String>]`: Read-only.
         - `[ContentType <String>]`: The MIME type.
@@ -3125,12 +3503,12 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
       - `[ICalUId <String>]`: A unique identifier for an event across calendars. This ID is different for each occurrence in a recurring series. Read-only.
       - `[Importance <String>]`: importance
       - `[Instances <IMicrosoftGraphEvent1[]>]`: The occurrences of a recurring series, if the event is a series master. This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series. Navigation property. Read-only. Nullable.
-      - `[IsAllDay <Boolean?>]`: Set to true if the event lasts all day.
-      - `[IsCancelled <Boolean?>]`: Set to true if the event has been canceled.
-      - `[IsDraft <Boolean?>]`: Set to true if the user has updated the meeting in Outlook but has not sent the updates to attendees. Set to false if all changes have been sent, or if the event is an appointment without any attendees.
-      - `[IsOnlineMeeting <Boolean?>]`: True if this event has online meeting information, false otherwise. Default is false. Optional.
-      - `[IsOrganizer <Boolean?>]`: Set to true if the calendar owner (specified by the owner property of the calendar) is the organizer of the event (specified by the organizer property of the event). This also applies if a delegate organized the event on behalf of the owner.
-      - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the event.
+      - `[IsAllDay <Boolean?>]`: 
+      - `[IsCancelled <Boolean?>]`: 
+      - `[IsDraft <Boolean?>]`: 
+      - `[IsOnlineMeeting <Boolean?>]`: 
+      - `[IsOrganizer <Boolean?>]`: 
+      - `[IsReminderOn <Boolean?>]`: 
       - `[Location <IMicrosoftGraphLocation1>]`: location
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Address <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
@@ -3153,7 +3531,7 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
         - `[LocationUri <String>]`: Optional URI representing the location.
         - `[UniqueId <String>]`: For internal use only.
         - `[UniqueIdType <String>]`: locationUniqueIdType
-      - `[Locations <IMicrosoftGraphLocation1[]>]`: The locations where the event is held or attended from. The location and locations properties always correspond with each other. If you update the location property, any prior locations in the locations collection would be removed and replaced by the new location value.
+      - `[Locations <IMicrosoftGraphLocation1[]>]`: 
       - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the event. Read-only. Nullable.
         - `[Id <String>]`: Read-only.
         - `[Value <String[]>]`: A collection of property values.
@@ -3170,19 +3548,19 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
         - `[TollFreeNumbers <String[]>]`: The toll free numbers that can be used to join the conference.
         - `[TollNumber <String>]`: The toll number that can be used to join the conference.
       - `[OnlineMeetingProvider <String>]`: onlineMeetingProviderType
-      - `[OnlineMeetingUrl <String>]`: A URL for an online meeting. The property is set only when an organizer specifies an event as an online meeting such as a Skype meeting. Read-only.
+      - `[OnlineMeetingUrl <String>]`: 
       - `[Organizer <IMicrosoftGraphRecipient>]`: recipient
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-      - `[OriginalEndTimeZone <String>]`: The end time zone that was set when the event was created. A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
-      - `[OriginalStart <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-      - `[OriginalStartTimeZone <String>]`: The start time zone that was set when the event was created. A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
+      - `[OriginalEndTimeZone <String>]`: 
+      - `[OriginalStart <DateTime?>]`: 
+      - `[OriginalStartTimeZone <String>]`: 
       - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs. Required if type is absoluteMonthly or absoluteYearly.
-          - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. Possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
+          - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
           - `[FirstDayOfWeek <String>]`: dayOfWeek
           - `[Index <String>]`: weekIndex
           - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type. Required.
@@ -3195,20 +3573,20 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
           - `[RecurrenceTimeZone <String>]`: Time zone for the startDate and endDate properties. Optional. If not specified, the time zone of the event is used.
           - `[StartDate <DateTime?>]`: The date to start applying the recurrence pattern. The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event. Must be the same value as the start property of the recurring event. Required.
           - `[Type <String>]`: recurrenceRangeType
-      - `[ReminderMinutesBeforeStart <Int32?>]`: The number of minutes before the event start time that the reminder alert occurs.
-      - `[ResponseRequested <Boolean?>]`: Default is true, which represents the organizer would like an invitee to send a response to the event.
+      - `[ReminderMinutesBeforeStart <Int32?>]`: 
+      - `[ResponseRequested <Boolean?>]`: 
       - `[ResponseStatus <IMicrosoftGraphResponseStatus>]`: responseStatus
       - `[Sensitivity <String>]`: sensitivity
-      - `[SeriesMasterId <String>]`: The ID for the recurring series master item, if this event is part of a recurring series.
+      - `[SeriesMasterId <String>]`: 
       - `[ShowAs <String>]`: freeBusyStatus
       - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the event. Read-only. Nullable.
         - `[Id <String>]`: Read-only.
         - `[Value <String>]`: A property value.
       - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-      - `[Subject <String>]`: The text of the event's subject line.
-      - `[TransactionId <String>]`: A custom identifier specified by a client app for the server to avoid redundant POST operations in case of client retries to create the same event. This is useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request. After you set transactionId when creating an event, you cannot change transactionId in a subsequent update. This property is only returned in a response payload if an app has set it. Optional.
+      - `[Subject <String>]`: 
+      - `[TransactionId <String>]`: 
       - `[Type <String>]`: eventType
-      - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in to your mailbox. Otherwise, Outlook on the web prompts you to sign in.This URL cannot be accessed from within an iFrame.
+      - `[WebLink <String>]`: 
     - `[CanEdit <Boolean?>]`: true if the user can write to the calendar, false otherwise. This property is true for the user who created the calendar. This property is also true for a user who has been shared a calendar and granted write access, through an Outlook client or the corresponding calendarPermission resource. Read-only.
     - `[CanShare <Boolean?>]`: true if the user has the permission to share the calendar, false otherwise. Only the user who created the calendar can share it. Read-only.
     - `[CanViewPrivateItems <Boolean?>]`: true if the user can read calendar items that have been marked private, false otherwise. This property is set through an Outlook client or the corresponding calendarPermission resource. Read-only.
@@ -3250,8 +3628,8 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Application <IMicrosoftGraphIdentity>]`: identity
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-              - `[Id <String>]`: Unique identifier for the identity.
+              - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+              - `[Id <String>]`: The identifier of the identity. This property is read-only.
             - `[Device <IMicrosoftGraphIdentity>]`: identity
             - `[User <IMicrosoftGraphIdentity>]`: identity
           - `[Description <String>]`: Verbose description of the application.
@@ -3273,7 +3651,7 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
       - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
     - `[Messages <IMicrosoftGraphChatMessage1[]>]`: A collection of all the messages in the chat. Nullable.
       - `[Id <String>]`: Read-only.
-      - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: Attached files. Attachments are currently read-only - sending attachments is not supported.
+      - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: References to attached objects like files, tabs, meetings etc.
         - `[Content <String>]`: The content of the attachment. If the attachment is a rich card, set the property to the rich card object. This property and contentUrl are mutually exclusive.
         - `[ContentType <String>]`: The media type of the content attachment. It can have the following values: reference: Attachment is a link to another file. Populate the contentURL with the link to the object.Any contentTypes supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet. application/vnd.microsoft.card.announcement: An announcement header.
         - `[ContentUrl <String>]`: URL for the content of the attachment. Supported protocols: http, https, file and data.
@@ -3289,6 +3667,8 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
       - `[CreatedDateTime <DateTime?>]`: Timestamp of when the chat message was created.
       - `[DeletedDateTime <DateTime?>]`: Read only. Timestamp at which the chat message was deleted, or null if not deleted.
       - `[Etag <String>]`: Read-only. Version number of the chat message.
+      - `[EventDetail <IMicrosoftGraphEventMessageDetail>]`: eventMessageDetail
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[From <IMicrosoftGraphChatMessageFromIdentitySet>]`: chatMessageFromIdentitySet
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -3302,7 +3682,7 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
       - `[LastEditedDateTime <DateTime?>]`: Read only. Timestamp when edits to the chat message were made. Triggers an 'Edited' flag in the Teams UI. If no edits are made the value is null.
       - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
       - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
-      - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Currently supports user, bot, team, channel.
+      - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
         - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
         - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
         - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
@@ -3312,10 +3692,10 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
           - `[User <IMicrosoftGraphIdentity>]`: identity
           - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-            - `[Id <String>]`: Unique identifier for the identity.
+            - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+            - `[Id <String>]`: The identifier of the identity. This property is read-only.
             - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
-      - `[MessageType <String>]`: 
+      - `[MessageType <String>]`: chatMessageType
       - `[PolicyViolation <IMicrosoftGraphChatMessagePolicyViolation>]`: chatMessagePolicyViolation
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DlpAction <String>]`: chatMessagePolicyViolationDlpActionTypes
@@ -3352,9 +3732,10 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
       - `[TeamsApp <IMicrosoftGraphTeamsApp1>]`: teamsApp
       - `[WebUrl <String>]`: Deep link URL of the tab instance. Read only.
     - `[Topic <String>]`: (Optional) Subject or topic for the chat. Only available for group chats.
-  - `[City <String>]`: The city in which the user is located. Maximum length is 128 characters. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
-  - `[CompanyName <String>]`: The company name which the user is associated. This property can be useful for describing the company that an external user comes from. The maximum length of the company name is 64 characters.Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
-  - `[ConsentProvidedForMinor <String>]`: Sets whether consent has been obtained for minors. Allowed values: null, granted, denied and notRequired. Refer to the legal age group property definitions for further information. Supports $filter (eq, ne, NOT, and in).
+    - `[WebUrl <String>]`: The URL for the chat in Microsoft Teams. The URL should be treated as an opaque blob, and not parsed. Read-only.
+  - `[City <String>]`: The city in which the user is located. Maximum length is 128 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+  - `[CompanyName <String>]`: The company name which the user is associated. This property can be useful for describing the company that an external user comes from. The maximum length of the company name is 64 characters.Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+  - `[ConsentProvidedForMinor <String>]`: Sets whether consent has been obtained for minors. Allowed values: null, granted, denied and notRequired. Refer to the legal age group property definitions for further information. Supports $filter (eq, ne, not, and in).
   - `[ContactFolders <IMicrosoftGraphContactFolder1[]>]`: The user's contacts folders. Read-only. Nullable.
     - `[Id <String>]`: Read-only.
     - `[ChildFolders <IMicrosoftGraphContactFolder1[]>]`: The collection of child folders in the folder. Navigation property. Read-only. Nullable.
@@ -3380,57 +3761,57 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
       - `[GivenName <String>]`: The contact's given name.
       - `[HomeAddress <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
       - `[HomePhones <String[]>]`: The contact's home phone numbers.
-      - `[ImAddresses <String[]>]`: The contact's instant messaging (IM) addresses.
-      - `[Initials <String>]`: The contact's initials.
-      - `[JobTitle <String>]`: The contact's job title.
-      - `[Manager <String>]`: The name of the contact's manager.
-      - `[MiddleName <String>]`: The contact's middle name.
-      - `[MobilePhone <String>]`: The contact's mobile phone number.
+      - `[ImAddresses <String[]>]`: 
+      - `[Initials <String>]`: 
+      - `[JobTitle <String>]`: 
+      - `[Manager <String>]`: 
+      - `[MiddleName <String>]`: 
+      - `[MobilePhone <String>]`: 
       - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
-      - `[NickName <String>]`: The contact's nickname.
-      - `[OfficeLocation <String>]`: The location of the contact's office.
+      - `[NickName <String>]`: 
+      - `[OfficeLocation <String>]`: 
       - `[OtherAddress <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
-      - `[ParentFolderId <String>]`: The ID of the contact's parent folder.
-      - `[PersonalNotes <String>]`: The user's notes about the contact.
+      - `[ParentFolderId <String>]`: 
+      - `[PersonalNotes <String>]`: 
       - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: Read-only.
         - `[Height <Int32?>]`: The height of the photo. Read-only.
         - `[Width <Int32?>]`: The width of the photo. Read-only.
-      - `[Profession <String>]`: The contact's profession.
+      - `[Profession <String>]`: 
       - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the contact. Read-only. Nullable.
-      - `[SpouseName <String>]`: The name of the contact's spouse/partner.
-      - `[Surname <String>]`: The contact's surname.
-      - `[Title <String>]`: The contact's title.
-      - `[YomiCompanyName <String>]`: The phonetic Japanese company name of the contact.
-      - `[YomiGivenName <String>]`: The phonetic Japanese given name (first name) of the contact.
-      - `[YomiSurname <String>]`: The phonetic Japanese surname (last name)  of the contact.
+      - `[SpouseName <String>]`: 
+      - `[Surname <String>]`: 
+      - `[Title <String>]`: 
+      - `[YomiCompanyName <String>]`: 
+      - `[YomiGivenName <String>]`: 
+      - `[YomiSurname <String>]`: 
     - `[DisplayName <String>]`: The folder's display name.
     - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the contactFolder. Read-only. Nullable.
     - `[ParentFolderId <String>]`: The ID of the folder's parent folder.
     - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the contactFolder. Read-only. Nullable.
   - `[Contacts <IMicrosoftGraphContact1[]>]`: The user's contacts. Read-only. Nullable.
-  - `[Country <String>]`: The country/region in which the user is located; for example, US or UK. Maximum length is 128 characters. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
-  - `[CreatedDateTime <DateTime?>]`: The date and time the user was created. The value cannot be modified and is automatically populated when the entity is created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. Property is nullable. A null value indicates that an accurate creation time couldn't be determined for the user. Read-only. Supports $filter (eq, ne, NOT , ge, le, and in operators).
+  - `[Country <String>]`: The country/region in which the user is located; for example, US or UK. Maximum length is 128 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+  - `[CreatedDateTime <DateTime?>]`: The date and time the user was created. The value cannot be modified and is automatically populated when the entity is created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. Property is nullable. A null value indicates that an accurate creation time couldn't be determined for the user. Read-only. Supports $filter (eq, ne, not , ge, le, in).
   - `[CreatedObjects <IMicrosoftGraphDirectoryObject[]>]`: Directory objects that were created by the user. Read-only. Nullable.
-  - `[CreationType <String>]`: Indicates whether the user account was created as a regular school or work account (null), an external account (Invitation), a local account for an Azure Active Directory B2C tenant (LocalAccount) or self-service sign-up using email verification (EmailVerified). Read-only. Supports $filter (eq, ne, NOT, and in).
-  - `[Department <String>]`: The name for the department in which the user works. Maximum length is 64 characters.Supports $filter (eq, ne, NOT , ge, le, and in operators).
+  - `[CreationType <String>]`: Indicates whether the user account was created through one of the following methods:  As a regular school or work account (null). As an external account (Invitation). As a local account for an Azure Active Directory B2C tenant (LocalAccount). Through self-service sign-up by an internal user using email verification (EmailVerified). Through self-service sign-up by an external user signing up through a link that is part of a user flow (SelfServiceSignUp).  Read-only.Supports $filter (eq, ne, not, and in).
+  - `[Department <String>]`: The name for the department in which the user works. Maximum length is 64 characters.Supports $filter (eq, ne, not , ge, le, in, and eq on null values).
   - `[DeviceEnrollmentLimit <Int32?>]`: The limit on the maximum number of devices that the user is permitted to enroll. Allowed values are 5 or 1000.
   - `[DeviceManagementTroubleshootingEvents <IMicrosoftGraphDeviceManagementTroubleshootingEvent1[]>]`: The list of troubleshooting events for this user.
     - `[Id <String>]`: Read-only.
     - `[CorrelationId <String>]`: Id used for tracing the failure in the service.
     - `[EventDateTime <DateTime?>]`: Time when the event occurred .
-  - `[DirectReports <IMicrosoftGraphDirectoryObject[]>]`: The users and contacts that report to the user. (The users and contacts that have their manager property set to this user.) Read-only. Nullable.
-  - `[DisplayName <String>]`: The name displayed in the address book for the user. This value is usually the combination of the user's first name, middle initial, and last name. This property is required when a user is created and it cannot be cleared during updates. Maximum length is 256 characters. Supports $filter (eq, ne, NOT , ge, le, in, startsWith), $orderBy, and $search.
+  - `[DirectReports <IMicrosoftGraphDirectoryObject[]>]`: The users and contacts that report to the user. (The users and contacts that have their manager property set to this user.) Read-only. Nullable. Supports $expand.
+  - `[DisplayName <String>]`: The name displayed in the address book for the user. This value is usually the combination of the user's first name, middle initial, and last name. This property is required when a user is created and it cannot be cleared during updates. Maximum length is 256 characters. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values), $orderBy, and $search.
   - `[Drive <IMicrosoftGraphDrive1>]`: drive
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[CreatedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+    - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
     - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
     - `[Description <String>]`: Provides a user-visible description of the item. Optional.
     - `[ETag <String>]`: ETag for the item. Read-only.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+    - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
     - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
     - `[Name <String>]`: The name of the item. Read-write.
     - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -3453,15 +3834,14 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
       - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
     - `[WebUrl <String>]`: URL that displays the resource in the browser. Read-only.
     - `[Id <String>]`: Read-only.
-    - `[DriveType <String>]`: Describes the type of drive represented by this resource. OneDrive personal drives will return personal. OneDrive for Business will return business. SharePoint document libraries will return documentLibrary. Read-only.
-    - `[Following <IMicrosoftGraphDriveItem1[]>]`: The list of items the user is following. Only in OneDrive for Business.
+    - `[Bundles <IMicrosoftGraphDriveItem1[]>]`: Collection of [bundles][bundle] (albums and multi-select-shared sets of items). Only in personal OneDrive.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[CreatedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+      - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
       - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
       - `[Description <String>]`: Provides a user-visible description of the item. Optional.
       - `[ETag <String>]`: ETag for the item. Read-only.
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+      - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
       - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
       - `[Name <String>]`: The name of the item. Read-write.
       - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -3515,6 +3895,12 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
         - `[Track <Int32?>]`: The number of the track on the original disc for this audio file.
         - `[TrackCount <Int32?>]`: The total number of tracks on the original disc for this audio file.
         - `[Year <Int32?>]`: The year the audio file was recorded.
+      - `[Bundle <IMicrosoftGraphBundle>]`: bundle
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Album <IMicrosoftGraphAlbum>]`: album
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[CoverImageItemId <String>]`: Unique identifier of the [driveItem][] that is the cover of the album.
+        - `[ChildCount <Int32?>]`: Number of children contained immediately within this container.
       - `[CTag <String>]`: An eTag for the content of the item. This eTag is not changed if only the metadata is changed. Note This property is not returned if the item is a folder. Read-only.
       - `[Children <IMicrosoftGraphDriveItem1[]>]`: Collection containing Item objects for the immediate children of Item. Only items representing folders have children. Read-only. Nullable.
       - `[Content <Byte[]>]`: The content stream, if the item represents a file.
@@ -3551,12 +3937,12 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
       - `[ListItem <IMicrosoftGraphListItem1>]`: listItem
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[CreatedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+        - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
         - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
         - `[Description <String>]`: Provides a user-visible description of the item. Optional.
         - `[ETag <String>]`: ETag for the item. Read-only.
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+        - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
         - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
         - `[Name <String>]`: The name of the item. Read-write.
         - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -3586,6 +3972,9 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
         - `[Altitude <Double?>]`: Optional. The altitude (height), in feet,  above sea level for the item. Read-only.
         - `[Latitude <Double?>]`: Optional. The latitude, in decimal, for the item. Writable on OneDrive Personal.
         - `[Longitude <Double?>]`: Optional. The longitude, in decimal, for the item. Writable on OneDrive Personal.
+      - `[Malware <IMicrosoftGraphMalware>]`: malware
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Description <String>]`: Contains the virus details for the malware facet.
       - `[Package <IMicrosoftGraphPackage>]`: package
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Type <String>]`: A string indicating the type of package. While oneNote is the only currently defined value, you should expect other package types to be returned and handle them accordingly.
@@ -3598,8 +3987,20 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
         - `[Id <String>]`: Read-only.
         - `[ExpirationDateTime <DateTime?>]`: A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission. DateTime.MinValue indicates there is no expiration set for this permission. Optional.
         - `[GrantedTo <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[GrantedToIdentities <IMicrosoftGraphIdentitySet[]>]`: For link type permissions, the details of the users to whom permission was granted. Read-only.
-        - `[HasPassword <Boolean?>]`: This indicates whether password is set for this permission, it's only showing in response. Optional and Read-only and for OneDrive Personal only.
+        - `[GrantedToIdentities <IMicrosoftGraphIdentitySet[]>]`: 
+        - `[GrantedToIdentitiesV2 <IMicrosoftGraphSharePointIdentitySet[]>]`: For link type permissions, the details of the users to whom permission was granted. Read-only.
+          - `[Application <IMicrosoftGraphIdentity>]`: identity
+          - `[Device <IMicrosoftGraphIdentity>]`: identity
+          - `[User <IMicrosoftGraphIdentity>]`: identity
+          - `[Group <IMicrosoftGraphIdentity>]`: identity
+          - `[SiteGroup <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+            - `[Id <String>]`: The identifier of the identity. This property is read-only.
+            - `[LoginName <String>]`: The sign in name of the SharePoint identity.
+          - `[SiteUser <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
+        - `[GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>]`: sharePointIdentitySet
+        - `[HasPassword <Boolean?>]`: Indicates whether the password is set for this permission. This property only appears in the response. Optional. Read-only. For OneDrive Personal only.
         - `[InheritedFrom <IMicrosoftGraphItemReference>]`: itemReference
         - `[Invitation <IMicrosoftGraphSharingInvitation>]`: sharingInvitation
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -3615,7 +4016,7 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
           - `[Type <String>]`: The type of the link created.
           - `[WebHtml <String>]`: For embed links, this property contains the HTML code for an <iframe> element that will embed the item in a webpage.
           - `[WebUrl <String>]`: A URL that opens the item in the browser on the OneDrive website.
-        - `[Roles <String[]>]`: The type of permission, e.g. read. See below for the full list of roles. Read-only.
+        - `[Roles <String[]>]`: The type of permission, for example, read. See below for the full list of roles. Read-only.
         - `[ShareId <String>]`: A unique token that can be used to access this shared item via the [shares API][]. Read-only.
       - `[Photo <IMicrosoftGraphPhoto>]`: photo
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -3680,18 +4081,19 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
       - `[Subscriptions <IMicrosoftGraphSubscription1[]>]`: The set of subscriptions on the item. Only supported on the root of a drive.
         - `[Id <String>]`: Read-only.
         - `[ApplicationId <String>]`: Identifier of the application used to create the subscription. Read-only.
-        - `[ChangeType <String>]`: Indicates the type of change in the subscribed resource that will raise a change notification. The supported values are: created, updated, deleted. Multiple values can be combined using a comma-separated list. Required. Note: Drive root item and list change notifications support only the updated changeType. User and group change notifications support updated and deleted changeType.
-        - `[ClientState <String>]`: Specifies the value of the clientState property sent by the service in each change notification. The maximum length is 255 characters. The client can check that the change notification came from the service by comparing the value of the clientState property sent with the subscription with the value of the clientState property received with each change notification. Optional.
+        - `[ChangeType <String>]`: Required. Indicates the type of change in the subscribed resource that will raise a change notification. The supported values are: created, updated, deleted. Multiple values can be combined using a comma-separated list. Note:  Drive root item and list change notifications support only the updated changeType. User and group change notifications support updated and deleted changeType.
+        - `[ClientState <String>]`: Optional. Specifies the value of the clientState property sent by the service in each change notification. The maximum length is 255 characters. The client can check that the change notification came from the service by comparing the value of the clientState property sent with the subscription with the value of the clientState property received with each change notification.
         - `[CreatorId <String>]`: Identifier of the user or service principal that created the subscription. If the app used delegated permissions to create the subscription, this field contains the ID of the signed-in user the app called on behalf of. If the app used application permissions, this field contains the ID of the service principal corresponding to the app. Read-only.
-        - `[EncryptionCertificate <String>]`: A base64-encoded representation of a certificate with a public key used to encrypt resource data in change notifications. Optional. Required when includeResourceData is true.
-        - `[EncryptionCertificateId <String>]`: A custom app-provided identifier to help identify the certificate needed to decrypt resource data. Optional. Required when includeResourceData is true.
-        - `[ExpirationDateTime <DateTime?>]`: Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to.  See the table below for maximum supported subscription length of time. Required.
-        - `[IncludeResourceData <Boolean?>]`: When set to true, change notifications include resource data (such as content of a chat message). Optional.
+        - `[EncryptionCertificate <String>]`: A base64-encoded representation of a certificate with a public key used to encrypt resource data in change notifications. Optional but required when includeResourceData is true.
+        - `[EncryptionCertificateId <String>]`: Optional. A custom app-provided identifier to help identify the certificate needed to decrypt resource data. Required when includeResourceData is true.
+        - `[ExpirationDateTime <DateTime?>]`: Required. Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to. For the maximum supported subscription length of time, see the table below.
+        - `[IncludeResourceData <Boolean?>]`: Optional. When set to true, change notifications include resource data (such as content of a chat message).
         - `[LatestSupportedTlsVersion <String>]`: Specifies the latest version of Transport Layer Security (TLS) that the notification endpoint, specified by notificationUrl, supports. The possible values are: v1_0, v1_1, v1_2, v1_3. For subscribers whose notification endpoint supports a version lower than the currently recommended version (TLS 1.2), specifying this property by a set timeline allows them to temporarily use their deprecated version of TLS before completing their upgrade to TLS 1.2. For these subscribers, not setting this property per the timeline would result in subscription operations failing. For subscribers whose notification endpoint already supports TLS 1.2, setting this property is optional. In such cases, Microsoft Graph defaults the property to v1_2.
-        - `[LifecycleNotificationUrl <String>]`: The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved and missed notifications. This URL must make use of the HTTPS protocol. Optional. Read more about how Outlook resources use lifecycle notifications.
-        - `[NotificationQueryOptions <String>]`: OData Query Options for specifying value for the targeting resource. Clients receive notifications when resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property eg  when the print job is completed, when a print job resource isFetchable property value becomes true etc.
-        - `[NotificationUrl <String>]`: The URL of the endpoint that receives the change notifications. This URL must make use of the HTTPS protocol. Required.
-        - `[Resource <String>]`: Specifies the resource that will be monitored for changes. Do not include the base URL (https://graph.microsoft.com/beta/). See the possible resource path values for each supported resource. Required.
+        - `[LifecycleNotificationUrl <String>]`: Optional. The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved and missed notifications. This URL must make use of the HTTPS protocol.
+        - `[NotificationQueryOptions <String>]`: OData query options for specifying the value for the targeting resource. Clients receive notifications when the resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property. For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc.
+        - `[NotificationUrl <String>]`: Required. The URL of the endpoint that receives the change notifications. This URL must make use of the HTTPS protocol.
+        - `[NotificationUrlAppId <String>]`: 
+        - `[Resource <String>]`: Required. Specifies the resource that will be monitored for changes. Do not include the base URL (https://graph.microsoft.com/beta/). See the possible resource path values for each supported resource.
       - `[Thumbnails <IMicrosoftGraphThumbnailSet[]>]`: Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable.
         - `[Id <String>]`: Read-only.
         - `[Large <IMicrosoftGraphThumbnail>]`: thumbnail
@@ -3942,16 +4344,18 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
           - `[Status <String>]`: workbookOperationStatus
         - `[Tables <IMicrosoftGraphWorkbookTable1[]>]`: Represents a collection of tables associated with the workbook. Read-only.
         - `[Worksheets <IMicrosoftGraphWorkbookWorksheet1[]>]`: Represents a collection of worksheets associated with the workbook. Read-only.
+    - `[DriveType <String>]`: Describes the type of drive represented by this resource. OneDrive personal drives will return personal. OneDrive for Business will return business. SharePoint document libraries will return documentLibrary. Read-only.
+    - `[Following <IMicrosoftGraphDriveItem1[]>]`: The list of items the user is following. Only in OneDrive for Business.
     - `[Items <IMicrosoftGraphDriveItem1[]>]`: All items contained in the drive. Read-only. Nullable.
     - `[List <IMicrosoftGraphList1>]`: list
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[CreatedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+      - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
       - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
       - `[Description <String>]`: Provides a user-visible description of the item. Optional.
       - `[ETag <String>]`: ETag for the item. Read-only.
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+      - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
       - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
       - `[Name <String>]`: The name of the item. Read-write.
       - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -3972,6 +4376,8 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
           - `[Choices <String[]>]`: The list of values available for this column.
           - `[DisplayAs <String>]`: How the choices are to be presented in the UX. Must be one of checkBoxes, dropDownMenu, or radioButtons
         - `[ColumnGroup <String>]`: For site columns, the name of the group this column belongs to. Helps organize related columns.
+        - `[ContentApprovalStatus <IMicrosoftGraphContentApprovalStatusColumn>]`: contentApprovalStatusColumn
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Currency <IMicrosoftGraphCurrencyColumn>]`: currencyColumn
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Locale <String>]`: Specifies the locale from which to infer the currency symbol.
@@ -3989,7 +4395,13 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
         - `[Geolocation <IMicrosoftGraphGeolocationColumn>]`: geolocationColumn
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Hidden <Boolean?>]`: Specifies whether the column is displayed in the user interface.
+        - `[HyperlinkOrPicture <IMicrosoftGraphHyperlinkOrPictureColumn>]`: hyperlinkOrPictureColumn
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[IsPicture <Boolean?>]`: Specifies whether the display format used for URL columns is an image or a hyperlink.
         - `[Indexed <Boolean?>]`: Specifies whether the column values can used for sorting and searching.
+        - `[IsDeletable <Boolean?>]`: Indicates whether this column can be deleted.
+        - `[IsReorderable <Boolean?>]`: Indicates whether values in the column can be reordered. Read-only.
+        - `[IsSealed <Boolean?>]`: Specifies whether the column can be changed.
         - `[Lookup <IMicrosoftGraphLookupColumn>]`: lookupColumn
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[AllowMultipleValues <Boolean?>]`: Indicates whether multiple values can be selected from the source.
@@ -4009,8 +4421,58 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
           - `[AllowMultipleSelection <Boolean?>]`: Indicates whether multiple values can be selected from the source.
           - `[ChooseFromType <String>]`: Whether to allow selection of people only, or people and groups. Must be one of peopleAndGroups or peopleOnly.
           - `[DisplayAs <String>]`: How to display the information about the person or group chosen. See below.
+        - `[PropagateChanges <Boolean?>]`: If true, changes to this column will be propagated to lists that implement the column.
         - `[ReadOnly <Boolean?>]`: Specifies whether the column values can be modified.
-        - `[Required <Boolean?>]`: Specifies whether the column value is not optional.
+        - `[Required <Boolean?>]`: Specifies whether the column value isn't optional.
+        - `[SourceColumn <IMicrosoftGraphColumnDefinition1>]`: columnDefinition
+        - `[Term <IMicrosoftGraphTermColumn1>]`: termColumn
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[AllowMultipleValues <Boolean?>]`: Specifies whether the column will allow more than one value
+          - `[ParentTerm <IMicrosoftGraphTermStoreTerm1>]`: term
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Id <String>]`: Read-only.
+            - `[Children <IMicrosoftGraphTermStoreTerm1[]>]`: Children of current term.
+            - `[CreatedDateTime <DateTime?>]`: Date and time of term creation. Read-only.
+            - `[Descriptions <IMicrosoftGraphTermStoreLocalizedDescription[]>]`: Description about term that is dependent on the languageTag.
+              - `[Description <String>]`: The description in the localized language.
+              - `[LanguageTag <String>]`: The language tag for the label.
+            - `[Labels <IMicrosoftGraphTermStoreLocalizedLabel[]>]`: Label metadata for a term.
+              - `[IsDefault <Boolean?>]`: Indicates whether the label is the default label.
+              - `[LanguageTag <String>]`: The language tag for the label.
+              - `[Name <String>]`: The name of the label.
+            - `[LastModifiedDateTime <DateTime?>]`: Last date and time of term modification. Read-only.
+            - `[Properties <IMicrosoftGraphKeyValue[]>]`: Collection of properties on the term.
+              - `[Key <String>]`: Key.
+              - `[Value <String>]`: Value.
+            - `[Relations <IMicrosoftGraphTermStoreRelation1[]>]`: To indicate which terms are related to the current term as either pinned or reused.
+              - `[Id <String>]`: Read-only.
+              - `[FromTerm <IMicrosoftGraphTermStoreTerm1>]`: term
+              - `[Relationship <String>]`: 
+              - `[Set <IMicrosoftGraphTermStoreSet1>]`: set
+                - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                - `[Id <String>]`: Read-only.
+                - `[Children <IMicrosoftGraphTermStoreTerm1[]>]`: Children terms of set in term [store].
+                - `[CreatedDateTime <DateTime?>]`: Date and time of set creation. Read-only.
+                - `[Description <String>]`: Description giving details on the term usage.
+                - `[LocalizedNames <IMicrosoftGraphTermStoreLocalizedName[]>]`: Name of the set for each languageTag.
+                  - `[LanguageTag <String>]`: The language tag for the label.
+                  - `[Name <String>]`: The name in the localized language.
+                - `[ParentGroup <IMicrosoftGraphTermStoreGroup1>]`: group
+                  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                  - `[Id <String>]`: Read-only.
+                  - `[CreatedDateTime <DateTime?>]`: Date and time of group creation. Read-only.
+                  - `[Description <String>]`: Description giving details on the term usage.
+                  - `[DisplayName <String>]`: Name of group.
+                  - `[ParentSiteId <String>]`: Id of the parent site of this group.
+                  - `[Scope <String>]`: 
+                  - `[Sets <IMicrosoftGraphTermStoreSet1[]>]`: All sets under the group in a term [store].
+                - `[Properties <IMicrosoftGraphKeyValue[]>]`: Custom properties for the set.
+                - `[Relations <IMicrosoftGraphTermStoreRelation1[]>]`: Indicates which terms have been pinned or reused directly under the set.
+                - `[Terms <IMicrosoftGraphTermStoreTerm1[]>]`: All the terms under the set.
+              - `[ToTerm <IMicrosoftGraphTermStoreTerm1>]`: term
+            - `[Set <IMicrosoftGraphTermStoreSet1>]`: set
+          - `[ShowFullyQualifiedName <Boolean?>]`: Specifies whether to display the entire term path or only the term label.
+          - `[TermSet <IMicrosoftGraphTermStoreSet1>]`: set
         - `[Text <IMicrosoftGraphTextColumn>]`: textColumn
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[AllowMultipleLines <Boolean?>]`: Whether to allow multiple lines of text.
@@ -4018,21 +4480,51 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
           - `[LinesForEditing <Int32?>]`: The size of the text box.
           - `[MaxLength <Int32?>]`: The maximum number of characters for the value.
           - `[TextType <String>]`: The type of text being stored. Must be one of plain or richText
+        - `[Thumbnail <IMicrosoftGraphThumbnailColumn>]`: thumbnailColumn
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Type <String>]`: columnTypes
+        - `[Validation <IMicrosoftGraphColumnValidation>]`: columnValidation
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[DefaultLanguage <String>]`: Default BCP 47 language tag for the description.
+          - `[Descriptions <IMicrosoftGraphDisplayNameLocalization[]>]`: Localized messages that explain what is needed for this column's value to be considered valid. User will be prompted with this message if validation fails.
+            - `[DisplayName <String>]`: If present, the value of this field contains the displayName string that has been set for the language present in the languageTag field.
+            - `[LanguageTag <String>]`: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
+          - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists
       - `[ContentTypes <IMicrosoftGraphContentType1[]>]`: The collection of content types present in this list.
         - `[Id <String>]`: Read-only.
+        - `[AssociatedHubsUrls <String[]>]`: List of canonical URLs for hub sites with which this content type is associated to. This will contain all hubsites where this content type is queued to be enforced or is already enforced. Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
+        - `[Base <IMicrosoftGraphContentType1>]`: contentType
+        - `[BaseTypes <IMicrosoftGraphContentType1[]>]`: The collection of content types that are ancestors of this content type.
         - `[ColumnLinks <IMicrosoftGraphColumnLink[]>]`: The collection of columns that are required by this content type
           - `[Id <String>]`: Read-only.
           - `[Name <String>]`: The name of the column  in this content type.
+        - `[ColumnPositions <IMicrosoftGraphColumnDefinition1[]>]`: Column order information in a content type.
+        - `[Columns <IMicrosoftGraphColumnDefinition1[]>]`: The collection of column definitions for this contentType.
         - `[Description <String>]`: The descriptive text for the item.
+        - `[DocumentSet <IMicrosoftGraphDocumentSet1>]`: documentSet
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[AllowedContentTypes <IMicrosoftGraphContentTypeInfo[]>]`: Content types allowed in document set.
+          - `[DefaultContents <IMicrosoftGraphDocumentSetContent[]>]`: Default contents of document set.
+            - `[ContentType <IMicrosoftGraphContentTypeInfo>]`: contentTypeInfo
+            - `[FileName <String>]`: Name of the file in resource folder that should be added as a default content or a template in the document set
+            - `[FolderName <String>]`: Folder name in which the file will be placed when a new document set is created in the library.
+          - `[PropagateWelcomePageChanges <Boolean?>]`: Specifies whether to push welcome page changes to inherited content types.
+          - `[SharedColumns <IMicrosoftGraphColumnDefinition1[]>]`: 
+          - `[ShouldPrefixNameToFile <Boolean?>]`: Add the name of the Document Set to each file name.
+          - `[WelcomePageColumns <IMicrosoftGraphColumnDefinition1[]>]`: 
+          - `[WelcomePageUrl <String>]`: Welcome page absolute URL.
+        - `[DocumentTemplate <IMicrosoftGraphDocumentSetContent>]`: documentSetContent
         - `[Group <String>]`: The name of the group this content type belongs to. Helps organize related content types.
         - `[Hidden <Boolean?>]`: Indicates whether the content type is hidden in the list's 'New' menu.
         - `[InheritedFrom <IMicrosoftGraphItemReference>]`: itemReference
+        - `[IsBuiltIn <Boolean?>]`: Specifies if a content type is a built-in content type.
         - `[Name <String>]`: The name of the content type.
         - `[Order <IMicrosoftGraphContentTypeOrder>]`: contentTypeOrder
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Default <Boolean?>]`: Whether this is the default Content Type
           - `[Position <Int32?>]`: Specifies the position in which the Content Type appears in the selection UI.
         - `[ParentId <String>]`: The unique identifier of the content type.
+        - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.
         - `[ReadOnly <Boolean?>]`: If true, the content type cannot be modified unless this value is first set to false.
         - `[Sealed <Boolean?>]`: If true, the content type cannot be modified by users or through push-down operations. Only site collection administrators can seal or unseal content types.
       - `[DisplayName <String>]`: The displayable title of the list.
@@ -4063,26 +4555,26 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
     - `[Special <IMicrosoftGraphDriveItem1[]>]`: Collection of common folders available in OneDrive. Read-only. Nullable.
     - `[System <IMicrosoftGraphSystemFacet>]`: systemFacet
   - `[Drives <IMicrosoftGraphDrive1[]>]`: A collection of drives available for this user. Read-only.
-  - `[EmployeeHireDate <DateTime?>]`: The date and time when the user was hired or will start work in case of a future hire. Supports $filter (eq, ne, NOT , ge, le, in).
-  - `[EmployeeId <String>]`: The employee identifier assigned to the user by the organization. Supports $filter (eq, ne, NOT , ge, le, in, startsWith).
+  - `[EmployeeHireDate <DateTime?>]`: The date and time when the user was hired or will start work in case of a future hire. Supports $filter (eq, ne, not , ge, le, in).
+  - `[EmployeeId <String>]`: The employee identifier assigned to the user by the organization. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
   - `[EmployeeOrgData <IMicrosoftGraphEmployeeOrgData>]`: employeeOrgData
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CostCenter <String>]`: The cost center associated with the user. Returned only on $select. Supports $filter.
     - `[Division <String>]`: The name of the division in which the user works. Returned only on $select. Supports $filter.
-  - `[EmployeeType <String>]`: Captures enterprise worker type. For example, Employee, Contractor, Consultant, or Vendor. Supports $filter (eq, ne, NOT , ge, le, in, startsWith).
+  - `[EmployeeType <String>]`: Captures enterprise worker type. For example, Employee, Contractor, Consultant, or Vendor. Supports $filter (eq, ne, not , ge, le, in, startsWith).
   - `[Events <IMicrosoftGraphEvent1[]>]`: The user's events. Default is to show events under the Default Calendar. Read-only. Nullable.
   - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the user. Nullable.
-  - `[ExternalUserState <String>]`: For an external user invited to the tenant using the invitation API, this property represents the invited user's invitation status. For invited users, the state can be PendingAcceptance or Accepted, or null for all other users. Supports $filter (eq, ne, NOT , in).
-  - `[ExternalUserStateChangeDateTime <DateTime?>]`: Shows the timestamp for the latest change to the externalUserState property. Supports $filter (eq, ne, NOT , in).
-  - `[FaxNumber <String>]`: The fax number of the user. Supports $filter (eq, ne, NOT , ge, le, in, startsWith).
+  - `[ExternalUserState <String>]`: For an external user invited to the tenant using the invitation API, this property represents the invited user's invitation status. For invited users, the state can be PendingAcceptance or Accepted, or null for all other users. Supports $filter (eq, ne, not , in).
+  - `[ExternalUserStateChangeDateTime <DateTime?>]`: Shows the timestamp for the latest change to the externalUserState property. Supports $filter (eq, ne, not , in).
+  - `[FaxNumber <String>]`: The fax number of the user. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
   - `[FollowedSites <IMicrosoftGraphSite1[]>]`: 
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[CreatedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+    - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
     - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
     - `[Description <String>]`: Provides a user-visible description of the item. Optional.
     - `[ETag <String>]`: ETag for the item. Read-only.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+    - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
     - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
     - `[Name <String>]`: The name of the item. Read-write.
     - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -4109,15 +4601,16 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
         - `[Target <String>]`: The target of the error.
       - `[Message <String>]`: A non-localized message for the developer.
       - `[Target <String>]`: The target of the error.
+    - `[ExternalColumns <IMicrosoftGraphColumnDefinition1[]>]`: The collection of column definitions available in the site that are referenced from the sites in the parent hierarchy of the current site.
     - `[Items <IMicrosoftGraphBaseItem1[]>]`: Used to address any item contained in this site. This collection cannot be enumerated.
       - `[Id <String>]`: Read-only.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[CreatedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+      - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
       - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
       - `[Description <String>]`: Provides a user-visible description of the item. Optional.
       - `[ETag <String>]`: ETag for the item. Read-only.
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+      - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
       - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
       - `[Name <String>]`: The name of the item. Read-write.
       - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -4222,13 +4715,21 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
       - `[Hostname <String>]`: The hostname for the site collection. Read-only.
       - `[Root <IMicrosoftGraphRoot>]`: root
     - `[Sites <IMicrosoftGraphSite1[]>]`: The collection of the sub-sites under this site.
-  - `[GivenName <String>]`: The given name (first name) of the user. Maximum length is 64 characters. Supports $filter (eq, ne, NOT , ge, le, in, startsWith).
+    - `[TermStore <IMicrosoftGraphTermStore1>]`: store
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: Read-only.
+      - `[DefaultLanguageTag <String>]`: Default language of the term store.
+      - `[Groups <IMicrosoftGraphTermStoreGroup1[]>]`: Collection of all groups available in the term store.
+      - `[LanguageTags <String[]>]`: List of languages for the term store.
+      - `[Sets <IMicrosoftGraphTermStoreSet1[]>]`: Collection of all sets available in the term store.
+    - `[TermStores <IMicrosoftGraphTermStore1[]>]`: The collection of termStores under this site.
+  - `[GivenName <String>]`: The given name (first name) of the user. Maximum length is 64 characters. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
   - `[HireDate <DateTime?>]`: The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.  Returned only on $select.  Note: This property is specific to SharePoint Online. We recommend using the native employeeHireDate property to set and update hire date values using Microsoft Graph APIs.
-  - `[Identities <IMicrosoftGraphObjectIdentity[]>]`: Represents the identities that can be used to sign in to this user account. An identity can be provided by Microsoft (also known as a local account), by organizations, or by social identity providers such as Facebook, Google, and Microsoft, and tied to a user account. May contain multiple items with the same signInType value. Supports $filter (eq) only where the signInType is not userPrincipalName.
+  - `[Identities <IMicrosoftGraphObjectIdentity[]>]`: Represents the identities that can be used to sign in to this user account. An identity can be provided by Microsoft (also known as a local account), by organizations, or by social identity providers such as Facebook, Google, and Microsoft, and tied to a user account. May contain multiple items with the same signInType value. Supports $filter (eq) including on null values, only where the signInType is not userPrincipalName.
     - `[Issuer <String>]`: Specifies the issuer of the identity, for example facebook.com.For local accounts (where signInType is not federated), this property is the local B2C tenant default domain name, for example contoso.onmicrosoft.com.For external users from other Azure AD organization, this will be the domain of the federated organization, for example contoso.com.Supports $filter. 512 character limit.
     - `[IssuerAssignedId <String>]`: Specifies the unique identifier assigned to the user by the issuer. The combination of issuer and issuerAssignedId must be unique within the organization. Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must be a valid local part of an email addressSupports $filter. 100 character limit.
-    - `[SignInType <String>]`: Specifies the user sign-in types in your directory, such as emailAddress, userName or federated. Here, federated represents a unique identifier for a user from an issuer, that can be in any format chosen by the issuer. Additional validation is enforced on issuerAssignedId when the sign-in type is set to emailAddress or userName. This property can also be set to any custom string.
-  - `[ImAddresses <String[]>]`: The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only. Supports $filter (eq, NOT, ge, le, startsWith).
+    - `[SignInType <String>]`: Specifies the user sign-in types in your directory, such as emailAddress, userName, federated, or userPrincipalName. federated represents a unique identifier for a user from an issuer, that can be in any format chosen by the issuer. Setting or updating a userPrincipalName identity will update the value of the userPrincipalName property on the user object. The validations performed on the userPrincipalName property on the user object, for example, verified domains and acceptable characters, will be performed when setting or updating a userPrincipalName identity. Additional validation is enforced on issuerAssignedId when the sign-in type is set to emailAddress or userName. This property can also be set to any custom string.
+  - `[ImAddresses <String[]>]`: The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only. Supports $filter (eq, not, ge, le, startsWith).
   - `[InferenceClassification <IMicrosoftGraphInferenceClassification>]`: inferenceClassification
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: Read-only.
@@ -4248,7 +4749,7 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
           - `[Address <String>]`: The email address of the user who shared the item.
           - `[DisplayName <String>]`: The display name of the user who shared the item.
           - `[Id <String>]`: The id of the user who shared the item.
-        - `[SharedDateTime <DateTime?>]`: The date and time the file was last shared. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: 2014-01-01T00:00:00Z. Read-only.
+        - `[SharedDateTime <DateTime?>]`: The date and time the file was last shared. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
         - `[SharingReference <IMicrosoftGraphResourceReference>]`: resourceReference
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: The item's unique identifier.
@@ -4283,14 +4784,14 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
       - `[Id <String>]`: Read-only.
       - `[LastUsed <IMicrosoftGraphUsageDetails>]`: usageDetails
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[LastAccessedDateTime <DateTime?>]`: The date and time the resource was last accessed by the user. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: 2014-01-01T00:00:00Z. Read-only.
-        - `[LastModifiedDateTime <DateTime?>]`: The date and time the resource was last modified by the user. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: 2014-01-01T00:00:00Z. Read-only.
+        - `[LastAccessedDateTime <DateTime?>]`: The date and time the resource was last accessed by the user. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+        - `[LastModifiedDateTime <DateTime?>]`: The date and time the resource was last modified by the user. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
       - `[Resource <IMicrosoftGraphEntity>]`: entity
       - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
       - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
   - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
-  - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
-  - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Supports $filter (eq, ne, NOT , ge, le, in, startsWith).
+  - `[IsResourceAccount <Boolean?>]`: Do not use – reserved for future use.
+  - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
   - `[JoinedTeams <IMicrosoftGraphTeam1[]>]`: The Microsoft Teams teams that the user is a member of. Read-only. Nullable.
     - `[Id <String>]`: Read-only.
     - `[Channels <IMicrosoftGraphChannel1[]>]`: The collection of channels & messages associated with the team.
@@ -4316,103 +4817,103 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
       - `[AllowGiphy <Boolean?>]`: If set to true, enables Giphy use.
       - `[AllowStickersAndMemes <Boolean?>]`: If set to true, enables users to include stickers and memes.
       - `[GiphyContentRating <String>]`: giphyRatingType
-    - `[Group <IMicrosoftGraphGroup1>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
+    - `[Group <IMicrosoftGraphGroup>]`: group
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DeletedDateTime <DateTime?>]`: 
       - `[Id <String>]`: Read-only.
       - `[AcceptedSenders <IMicrosoftGraphDirectoryObject[]>]`: The list of users or groups that are allowed to create post's or calendar events in this group. If this list is non-empty then only users or groups listed here are allowed to post.
       - `[AllowExternalSenders <Boolean?>]`: Indicates if people external to the organization can send messages to the group. Default value is false. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
-      - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment1[]>]`: Represents the app roles a group has been granted for an application.
+      - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment1[]>]`: Represents the app roles a group has been granted for an application. Supports $expand.
       - `[AssignedLabels <IMicrosoftGraphAssignedLabel[]>]`: The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group. Returned only on $select.
         - `[DisplayName <String>]`: The display name of the label. Read-only.
         - `[LabelId <String>]`: The unique identifier of the label.
-      - `[AssignedLicenses <IMicrosoftGraphAssignedLicense[]>]`: The licenses that are assigned to the group. Returned only on $select. Read-only.
+      - `[AssignedLicenses <IMicrosoftGraphAssignedLicense[]>]`: The licenses that are assigned to the group. Returned only on $select. Supports $filter (eq). Read-only.
       - `[AutoSubscribeNewMembers <Boolean?>]`: Indicates if new members added to the group will be auto-subscribed to receive email notifications. You can set this property in a PATCH request for the group; do not set it in the initial POST request that creates the group. Default value is false. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
       - `[Calendar <IMicrosoftGraphCalendar1>]`: calendar
       - `[CalendarView <IMicrosoftGraphEvent1[]>]`: The calendar view for the calendar. Read-only.
-      - `[Classification <String>]`: Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList setting value, based on the template definition.Returned by default.
+      - `[Classification <String>]`: Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList setting value, based on the template definition.Returned by default. Supports $filter (eq, ne, not, ge, le, startsWith).
       - `[Conversations <IMicrosoftGraphConversation1[]>]`: The group's conversations.
         - `[Id <String>]`: Read-only.
-        - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this Conversation has at least one attachment.
-        - `[LastDeliveredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-        - `[Preview <String>]`: A short summary from the body of the latest post in this converstaion.
+        - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this Conversation has at least one attachment. Supports $filter (eq, ne) and $search.
+        - `[LastDeliveredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Supports $filter (eq, ne, le, ge).
+        - `[Preview <String>]`: A short summary from the body of the latest post in this conversation.
         - `[Threads <IMicrosoftGraphConversationThread1[]>]`: A collection of all the conversation threads in the conversation. A navigation property. Read-only. Nullable.
           - `[Id <String>]`: Read-only.
-          - `[CcRecipients <IMicrosoftGraphRecipient[]>]`: The Cc: recipients for the thread.
-          - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this thread has at least one attachment.
-          - `[IsLocked <Boolean?>]`: Indicates if the thread is locked.
-          - `[LastDeliveredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-          - `[Posts <IMicrosoftGraphPost1[]>]`: Read-only. Nullable.
+          - `[CcRecipients <IMicrosoftGraphRecipient[]>]`: The Cc: recipients for the thread. Returned only on $select.
+          - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this thread has at least one attachment. Returned by default.
+          - `[IsLocked <Boolean?>]`: Indicates if the thread is locked. Returned by default.
+          - `[LastDeliveredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default.
+          - `[Posts <IMicrosoftGraphPost[]>]`: Read-only. Nullable.
             - `[Categories <String[]>]`: The categories associated with the item
             - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
             - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
             - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
             - `[Id <String>]`: Read-only.
-            - `[Attachments <IMicrosoftGraphAttachment[]>]`: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post. Read-only. Nullable.
+            - `[Attachments <IMicrosoftGraphAttachment[]>]`: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post. Read-only. Nullable. Supports $expand.
             - `[Body <IMicrosoftGraphItemBody>]`: itemBody
             - `[ConversationId <String>]`: Unique ID of the conversation. Read-only.
             - `[ConversationThreadId <String>]`: Unique ID of the conversation thread. Read-only.
-            - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the post. Read-only. Nullable.
+            - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the post. Read-only. Nullable. Supports $expand.
             - `[From <IMicrosoftGraphRecipient>]`: recipient
             - `[HasAttachments <Boolean?>]`: Indicates whether the post has at least one attachment. This is a default property.
-            - `[InReplyTo <IMicrosoftGraphPost1>]`: post
+            - `[InReplyTo <IMicrosoftGraphPost>]`: post
             - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the post. Read-only. Nullable.
             - `[NewParticipants <IMicrosoftGraphRecipient[]>]`: Conversation participants that were added to the thread as part of this post.
             - `[ReceivedDateTime <DateTime?>]`: Specifies when the post was received. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
             - `[Sender <IMicrosoftGraphRecipient>]`: recipient
             - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the post. Read-only. Nullable.
-          - `[Preview <String>]`: A short summary from the body of the latest post in this conversation.
-          - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: The To: recipients for the thread.
-          - `[Topic <String>]`: The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated.
-          - `[UniqueSenders <String[]>]`: All the users that sent a message to this thread.
+          - `[Preview <String>]`: A short summary from the body of the latest post in this conversation. Returned by default.
+          - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: The To: recipients for the thread. Returned only on $select.
+          - `[Topic <String>]`: The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated. Returned by default.
+          - `[UniqueSenders <String[]>]`: All the users that sent a message to this thread. Returned by default.
         - `[Topic <String>]`: The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated.
         - `[UniqueSenders <String[]>]`: All the users that sent a message to this Conversation.
-      - `[CreatedDateTime <DateTime?>]`: Timestamp of when the group was created. The value cannot be modified and is automatically populated when the group is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Read-only.
-      - `[CreatedOnBehalfOf <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-      - `[Description <String>]`: An optional description for the group. Returned by default.
-      - `[DisplayName <String>]`: The display name for the group. This property is required when a group is created and cannot be cleared during updates. Returned by default. Supports $filter and $orderby.
+      - `[CreatedDateTime <DateTime?>]`: Timestamp of when the group was created. The value cannot be modified and is automatically populated when the group is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Supports $filter (eq, ne, not, ge, le, in). Read-only.
+      - `[CreatedOnBehalfOf <IMicrosoftGraphDirectoryObject>]`: directoryObject
+      - `[Description <String>]`: An optional description for the group. Returned by default. Supports $filter (eq, ne, not, ge, le, startsWith) and $search.
+      - `[DisplayName <String>]`: The display name for the group. Required. Returned by default. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderBy.
       - `[Drive <IMicrosoftGraphDrive1>]`: drive
       - `[Drives <IMicrosoftGraphDrive1[]>]`: The group's drives. Read-only.
       - `[Events <IMicrosoftGraphEvent1[]>]`: The group's events.
-      - `[ExpirationDateTime <DateTime?>]`: Timestamp of when the group is set to expire. The value cannot be modified and is automatically populated when the group is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Read-only.
+      - `[ExpirationDateTime <DateTime?>]`: Timestamp of when the group is set to expire. The value cannot be modified and is automatically populated when the group is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Supports $filter (eq, ne, not, ge, le, in). Read-only.
       - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the group. Read-only. Nullable.
       - `[GroupLifecyclePolicies <IMicrosoftGraphGroupLifecyclePolicy[]>]`: The collection of lifecycle policies for this group. Read-only. Nullable.
         - `[Id <String>]`: Read-only.
         - `[AlternateNotificationEmails <String>]`: List of email address to send notifications for groups without owners. Multiple email address can be defined by separating email address with a semicolon.
         - `[GroupLifetimeInDays <Int32?>]`: Number of days before a group expires and needs to be renewed. Once renewed, the group expiration is extended by the number of days defined.
         - `[ManagedGroupTypes <String>]`: The group type for which the expiration policy applies. Possible values are All, Selected or None.
-      - `[GroupTypes <String[]>]`: Specifies the group type and its membership.  If the collection contains Unified, the group is a Microsoft 365 group; otherwise, it's either a security group or distribution group. For details, see groups overview.If the collection includes DynamicMembership, the group has dynamic membership; otherwise, membership is static.  Returned by default. Supports $filter.
-      - `[HasMembersWithLicenseErrors <Boolean?>]`: Indicates whether there are members in this group that have license errors from its group-based license assignment. This property is never returned on a GET operation. You can use it as a $filter argument to get groups that have members with license errors (that is, filter for this property being true).
+      - `[GroupTypes <String[]>]`: Specifies the group type and its membership.  If the collection contains Unified, the group is a Microsoft 365 group; otherwise, it's either a security group or distribution group. For details, see groups overview.If the collection includes DynamicMembership, the group has dynamic membership; otherwise, membership is static.  Returned by default. Supports $filter (eq, not).
+      - `[HasMembersWithLicenseErrors <Boolean?>]`: Indicates whether there are members in this group that have license errors from its group-based license assignment. This property is never returned on a GET operation. You can use it as a $filter argument to get groups that have members with license errors (that is, filter for this property being true).  Supports $filter (eq).
       - `[HideFromAddressLists <Boolean?>]`: true if the group is not displayed in certain parts of the Outlook user interface: in the Address Book, in address lists for selecting message recipients, and in the Browse Groups dialog for searching groups; false otherwise. Default value is false. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
       - `[HideFromOutlookClients <Boolean?>]`: true if the group is not displayed in Outlook clients, such as Outlook for Windows and Outlook on the web, false otherwise. Default value is false. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
       - `[IsArchived <Boolean?>]`: 
-      - `[IsAssignableToRole <Boolean?>]`: Indicates whether this group can be assigned to an Azure Active Directory role.This property can only be set while creating the group and is immutable. If set to true, the securityEnabled property must also be set to true and the group cannot be a dynamic group (that is, groupTypes cannot contain DynamicMembership).Only callers in Global Administrator and Privileged Role Administrator roles can set this property. For more, see Using a group to manage Azure AD role assignmentsReturned by default.
+      - `[IsAssignableToRole <Boolean?>]`: Indicates whether this group can be assigned to an Azure Active Directory role. Optional. This property can only be set while creating the group and is immutable. If set to true, the securityEnabled property must also be set to true and the group cannot be a dynamic group (that is, groupTypes cannot contain DynamicMembership). Only callers in Global administrator and Privileged role administrator roles can set this property. The caller must be assigned the RoleManagement.ReadWrite.Directory permission to set this property or update the membership of such groups. For more, see Using a group to manage Azure AD role assignmentsReturned by default. Supports $filter (eq, ne, not).
       - `[IsSubscribedByMail <Boolean?>]`: Indicates whether the signed-in user is subscribed to receive email conversations. Default value is true. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
       - `[LicenseProcessingState <IMicrosoftGraphLicenseProcessingState>]`: licenseProcessingState
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[State <String>]`: 
-      - `[Mail <String>]`: The SMTP address for the group, for example, 'serviceadmins@contoso.onmicrosoft.com'. Returned by default. Read-only. Supports $filter.
-      - `[MailEnabled <Boolean?>]`: Specifies whether the group is mail-enabled. Returned by default.
-      - `[MailNickname <String>]`: The mail alias for the group, unique in the organization. This property must be specified when a group is created. These characters cannot be used in the mailNickName: @()/[]';:.<>,SPACE. Returned by default. Supports $filter.
-      - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups and administrative units that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable.
-      - `[Members <IMicrosoftGraphDirectoryObject[]>]`: Users, contacts, and groups that are members of this group. HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only. Nullable.
+      - `[Mail <String>]`: The SMTP address for the group, for example, 'serviceadmins@contoso.onmicrosoft.com'. Returned by default. Read-only. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+      - `[MailEnabled <Boolean?>]`: Specifies whether the group is mail-enabled. Required. Returned by default. Supports $filter (eq, ne, not, and eq on null values).
+      - `[MailNickname <String>]`: The mail alias for the group, unique for Microsoft 365 groups in the organization. Maximum length is 64 characters. This property can contain only characters in the ASCII character set 0 - 127 except the following: @ () / [] ' ; : . <> , SPACE. Returned by default. Supports $filter (eq, ne, not, ge, le, in, startsWith).
+      - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups and administrative units that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable. Supports $expand.
+      - `[Members <IMicrosoftGraphDirectoryObject[]>]`: Members of this group, who can be users, devices, other groups, or service principals. Supports the List members, Add member, and Remove member operations. Nullable. Supports $expand including nested $select. For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName).
       - `[MembersWithLicenseErrors <IMicrosoftGraphDirectoryObject[]>]`: A list of group members with license errors from this group-based license assignment. Read-only.
-      - `[MembershipRule <String>]`: The rule that determines members for this group if the group is a dynamic group (groupTypes contains DynamicMembership). For more information about the syntax of the membership rule, see Membership Rules syntax. Returned by default.
-      - `[MembershipRuleProcessingState <String>]`: Indicates whether the dynamic membership processing is on or paused. Possible values are On or Paused. Returned by default.
+      - `[MembershipRule <String>]`: The rule that determines members for this group if the group is a dynamic group (groupTypes contains DynamicMembership). For more information about the syntax of the membership rule, see Membership Rules syntax. Returned by default. Supports $filter (eq, ne, not, ge, le, startsWith).
+      - `[MembershipRuleProcessingState <String>]`: Indicates whether the dynamic membership processing is on or paused. Possible values are On or Paused. Returned by default. Supports $filter (eq, ne, not, in).
       - `[OnPremisesDomainName <String>]`: Contains the on-premises domain FQDN, also called dnsDomainName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect.Returned by default. Read-only.
-      - `[OnPremisesLastSyncDateTime <DateTime?>]`: Indicates the last time at which the group was synced with the on-premises directory.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Read-only. Supports $filter.
+      - `[OnPremisesLastSyncDateTime <DateTime?>]`: Indicates the last time at which the group was synced with the on-premises directory.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Read-only. Supports $filter (eq, ne, not, ge, le, in).
       - `[OnPremisesNetBiosName <String>]`: Contains the on-premises netBios name synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect.Returned by default. Read-only.
-      - `[OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError[]>]`: Errors when using Microsoft synchronization product during provisioning. Returned by default.
+      - `[OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError[]>]`: Errors when using Microsoft synchronization product during provisioning. Returned by default. Supports $filter (eq, not).
         - `[Category <String>]`: Category of the provisioning error. Note: Currently, there is only one possible value. Possible value: PropertyConflict - indicates a property value is not unique. Other objects contain the same value for the property.
         - `[OccurredDateTime <DateTime?>]`: The date and time at which the error occurred.
         - `[PropertyCausingError <String>]`: Name of the directory property causing the error. Current possible values: UserPrincipalName or ProxyAddress
         - `[Value <String>]`: Value of the property causing the error.
-      - `[OnPremisesSamAccountName <String>]`: Contains the on-premises SAM account name synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect.Returned by default. Read-only.
-      - `[OnPremisesSecurityIdentifier <String>]`: Contains the on-premises security identifier (SID) for the group that was synchronized from on-premises to the cloud. Returned by default. Read-only.
-      - `[OnPremisesSyncEnabled <Boolean?>]`: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default). Returned by default. Read-only. Supports $filter.
+      - `[OnPremisesSamAccountName <String>]`: Contains the on-premises SAM account name synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect.Returned by default. Supports $filter (eq, ne, not, ge, le, in, startsWith). Read-only.
+      - `[OnPremisesSecurityIdentifier <String>]`: Contains the on-premises security identifier (SID) for the group that was synchronized from on-premises to the cloud. Returned by default. Supports $filter on null values. Read-only.
+      - `[OnPremisesSyncEnabled <Boolean?>]`: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default). Returned by default. Read-only. Supports $filter (eq, ne, not, in, and eq on null values).
       - `[Onenote <IMicrosoftGraphOnenote1>]`: onenote
-      - `[Owners <IMicrosoftGraphDirectoryObject[]>]`: The owners of the group. The owners are a set of non-admin users who are allowed to modify this object. HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only. Nullable.
-      - `[PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>]`: The permissions that have been granted for a group to a specific application.
+      - `[Owners <IMicrosoftGraphDirectoryObject[]>]`: The owners of the group who can be users or service principals. Nullable. If this property is not specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner. Supports $expand including nested $select. For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
+      - `[PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>]`: The permissions that have been granted for a group to a specific application. Supports $expand.
         - `[DeletedDateTime <DateTime?>]`: 
         - `[Id <String>]`: Read-only.
         - `[ClientAppId <String>]`: ID of the service principal of the Azure AD app that has been granted access. Read-only.
@@ -4494,15 +4995,15 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
               - `[Category6 <String>]`: The label associated with Category 6
             - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Owner <String>]`: ID of the Group that owns the plan. A valid group must exist before this field can be set. After it is set, this property can't be updated.
+          - `[Owner <String>]`: ID of the Group that owns the plan. A valid group must exist before this field can be set. After it is set, this property can’t be updated.
           - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Collection of tasks in the plan. Read-only. Nullable.
           - `[Title <String>]`: Required. Title of the plan.
-      - `[PreferredDataLocation <String>]`: The preferred data location for the group. For more information, see  OneDrive Online Multi-Geo. Returned by default.
-      - `[PreferredLanguage <String>]`: The preferred language for a Microsoft 365 group. Should follow ISO 639-1 Code; for example 'en-US'. Returned by default.
-      - `[ProxyAddresses <String[]>]`: Email addresses for the group that direct to the same group mailbox. For example: ['SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com']. The any operator is required for filter expressions on multi-valued properties. Returned by default. Read-only. Not nullable. Supports $filter.
+      - `[PreferredDataLocation <String>]`: The preferred data location for the Microsoft 365 group. By default, the group inherits the group creator's preferred data location. To set this property, the calling user must be assigned one of the following Azure AD roles:  Global Administrator  User Account Administrator Directory Writer  Exchange Administrator  SharePoint Administrator  For more information about this property, see  OneDrive Online Multi-Geo. Nullable. Returned by default.
+      - `[PreferredLanguage <String>]`: The preferred language for a Microsoft 365 group. Should follow ISO 639-1 Code; for example en-US. Returned by default. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+      - `[ProxyAddresses <String[]>]`: Email addresses for the group that direct to the same group mailbox. For example: ['SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com']. The any operator is required for filter expressions on multi-valued properties. Returned by default. Read-only. Not nullable. Supports $filter (eq, not, ge, le, startsWith).
       - `[RejectedSenders <IMicrosoftGraphDirectoryObject[]>]`: The list of users or groups that are not allowed to create posts or calendar events in this group. Nullable
-      - `[RenewedDateTime <DateTime?>]`: Timestamp of when the group was last renewed. This cannot be modified directly and is only updated via the renew service action. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Read-only.
-      - `[SecurityEnabled <Boolean?>]`: Specifies whether the group is a security group. Returned by default. Supports $filter.
+      - `[RenewedDateTime <DateTime?>]`: Timestamp of when the group was last renewed. This cannot be modified directly and is only updated via the renew service action. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Supports $filter (eq, ne, not, ge, le, in). Read-only.
+      - `[SecurityEnabled <Boolean?>]`: Specifies whether the group is a security group. Required.Returned by default. Supports $filter (eq, ne, not, in).
       - `[SecurityIdentifier <String>]`: Security identifier of the group, used in Windows scenarios. Returned by default.
       - `[Settings <IMicrosoftGraphGroupSetting[]>]`: Settings that can govern this group's behavior, like whether members can invite guest users to the group. Nullable.
         - `[Id <String>]`: Read-only.
@@ -4518,7 +5019,7 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
       - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: 
       - `[TransitiveMembers <IMicrosoftGraphDirectoryObject[]>]`: 
       - `[UnseenCount <Int32?>]`: Count of conversations that have received new posts since the signed-in user last visited the group. This property is the same as unseenConversationsCount.Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
-      - `[Visibility <String>]`: Specifies the group join policy and group content visibility for groups. Possible values are: Private, Public, or Hiddenmembership. Hiddenmembership can be set only for Microsoft 365 groups, when the groups are created. It can't be updated later. Other values of visibility can be updated after group creation. If visibility value is not specified during group creation on Microsoft Graph, a security group is created as Private by default and Microsoft 365 group is Public. See group visibility options to learn more. Returned by default.
+      - `[Visibility <String>]`: Specifies the group join policy and group content visibility for groups. Possible values are: Private, Public, or Hiddenmembership. Hiddenmembership can be set only for Microsoft 365 groups, when the groups are created. It can't be updated later. Other values of visibility can be updated after group creation. If visibility value is not specified during group creation on Microsoft Graph, a security group is created as Private by default and Microsoft 365 group is Public.  Groups assignable to roles are always Private. See group visibility options to learn more. Returned by default. Nullable.
     - `[GuestSettings <IMicrosoftGraphTeamGuestSettings>]`: teamGuestSettings
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AllowCreateUpdateChannels <Boolean?>]`: If set to true, guests can add and update channels.
@@ -4707,12 +5208,13 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
       - `[Id <String>]`: Read-only.
     - `[Visibility <String>]`: teamVisibilityType
     - `[WebUrl <String>]`: A hyperlink that will go to the team in the Microsoft Teams client. This is the URL that you get when you right-click a team in the Microsoft Teams client and select Get link to team. This URL should be treated as an opaque blob, and not parsed.
-  - `[LastPasswordChangeDateTime <DateTime?>]`: The time when this Azure AD user last changed their password. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Returned only on $select.
+  - `[LastPasswordChangeDateTime <DateTime?>]`: The time when this Azure AD user last changed their password or when their password was created, , whichever date the latest action was performed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Returned only on $select.
   - `[LegalAgeGroupClassification <String>]`: Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated based on ageGroup and consentProvidedForMinor properties. Allowed values: null, minorWithOutParentalConsent, minorWithParentalConsent, minorNoParentalConsentRequired, notAdult and adult. Refer to the legal age group property definitions for further information. Returned only on $select.
   - `[LicenseAssignmentStates <IMicrosoftGraphLicenseAssignmentState[]>]`: State of license assignments for this user. Read-only. Returned only on $select.
     - `[AssignedByGroup <String>]`: The id of the group that assigns this license. If the assignment is a direct-assigned license, this field will be Null. Read-Only.
     - `[DisabledPlans <String[]>]`: The service plans that are disabled in this assignment. Read-Only.
     - `[Error <String>]`: License assignment failure error. If the license is assigned successfully, this field will be Null. Read-Only. Possible values: CountViolation, MutuallyExclusiveViolation, DependencyViolation, ProhibitedInUsageLocationViolation, UniquenessViolation, and Others. For more information on how to identify and resolve license assignment errors see here.
+    - `[LastUpdatedDateTime <DateTime?>]`: The timestamp when the state of the license assignment was last updated.
     - `[SkuId <String>]`: The unique identifier for the SKU. Read-Only.
     - `[State <String>]`: Indicate the current state of this assignment. Read-Only. Possible values: Active, ActiveWithError, Disabled and Error.
   - `[LicenseDetails <IMicrosoftGraphLicenseDetails[]>]`: A collection of this user's license details. Read-only.
@@ -4724,7 +5226,7 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
       - `[ServicePlanName <String>]`: The name of the service plan.
     - `[SkuId <String>]`: Unique identifier (GUID) for the service SKU. Equal to the skuId property on the related SubscribedSku object. Read-only
     - `[SkuPartNumber <String>]`: Unique SKU display name. Equal to the skuPartNumber on the related SubscribedSku object; for example: 'AAD_Premium'. Read-only
-  - `[Mail <String>]`: The SMTP address for the user, for example, admin@contoso.com. Changes to this property will also update the user's proxyAddresses collection to include the value as an SMTP address. While this property can contain accent characters, using them can cause access issues with other Microsoft applications for the user. Supports $filter (eq, ne, NOT, ge, le, in, startsWith, endsWith).
+  - `[Mail <String>]`: The SMTP address for the user, for example, admin@contoso.com. Changes to this property will also update the user's proxyAddresses collection to include the value as an SMTP address. For Azure AD B2C accounts, this property can be updated up to only ten times with unique SMTP addresses. This property cannot contain accent characters.  Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith, and eq on null values).
   - `[MailFolders <IMicrosoftGraphMailFolder1[]>]`: The user's mail folders. Read-only. Nullable.
     - `[Id <String>]`: Read-only.
     - `[ChildFolderCount <Int32?>]`: The number of immediate child mailFolders in the current mailFolder.
@@ -4811,31 +5313,31 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
       - `[HasAttachments <Boolean?>]`: Indicates whether the message has attachments. This property doesn't include inline attachments, so if a message contains only inline attachments, this property is false. To verify the existence of inline attachments, parse the body property to look for a src attribute, such as <IMG src='cid:image001.jpg@01D26CD8.6C05F070'>.
       - `[Importance <String>]`: importance
       - `[InferenceClassification <String>]`: inferenceClassificationType
-      - `[InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]`: A collection of message headers defined by RFC5322. The set includes message headers indicating the network path taken by a message from the sender to the recipient. It can also contain custom message headers that hold app data for the message.  Returned only on applying a $select query option. Read-only.
+      - `[InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]`: 
         - `[Name <String>]`: Represents the key in a key-value pair.
         - `[Value <String>]`: The value in a key-value pair.
-      - `[InternetMessageId <String>]`: The message ID in the format specified by RFC2822.
-      - `[IsDeliveryReceiptRequested <Boolean?>]`: Indicates whether a read receipt is requested for the message.
-      - `[IsDraft <Boolean?>]`: Indicates whether the message is a draft. A message is a draft if it hasn't been sent yet.
-      - `[IsRead <Boolean?>]`: Indicates whether the message has been read.
-      - `[IsReadReceiptRequested <Boolean?>]`: Indicates whether a read receipt is requested for the message.
+      - `[InternetMessageId <String>]`: 
+      - `[IsDeliveryReceiptRequested <Boolean?>]`: 
+      - `[IsDraft <Boolean?>]`: 
+      - `[IsRead <Boolean?>]`: 
+      - `[IsReadReceiptRequested <Boolean?>]`: 
       - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the message. Nullable.
-      - `[ParentFolderId <String>]`: The unique identifier for the message's parent mailFolder.
-      - `[ReceivedDateTime <DateTime?>]`: The date and time the message was received.  The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-      - `[ReplyTo <IMicrosoftGraphRecipient[]>]`: The email addresses to use when replying.
+      - `[ParentFolderId <String>]`: 
+      - `[ReceivedDateTime <DateTime?>]`: 
+      - `[ReplyTo <IMicrosoftGraphRecipient[]>]`: 
       - `[Sender <IMicrosoftGraphRecipient>]`: recipient
-      - `[SentDateTime <DateTime?>]`: The date and time the message was sent.  The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[SentDateTime <DateTime?>]`: 
       - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the message. Nullable.
-      - `[Subject <String>]`: The subject of the message.
-      - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: The To: recipients for the message.
+      - `[Subject <String>]`: 
+      - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: 
       - `[UniqueBody <IMicrosoftGraphItemBody>]`: itemBody
-      - `[WebLink <String>]`: The URL to open the message in Outlook on the web.You can append an ispopout argument to the end of the URL to change how the message is displayed. If ispopout is not present or if it is set to 1, then the message is shown in a popout window. If ispopout is set to 0, then the browser will show the message in the Outlook on the web review pane.The message will open in the browser if you are logged in to your mailbox via Outlook on the web. You will be prompted to login if you are not already logged in with the browser.This URL cannot be accessed from within an iFrame.
+      - `[WebLink <String>]`: 
     - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the mailFolder. Read-only. Nullable.
     - `[ParentFolderId <String>]`: The unique identifier for the mailFolder's parent mailFolder.
     - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the mailFolder. Read-only. Nullable.
     - `[TotalItemCount <Int32?>]`: The number of items in the mailFolder.
     - `[UnreadItemCount <Int32?>]`: The number of items in the mailFolder marked as unread.
-  - `[MailNickname <String>]`: The mail alias for the user. This property must be specified when a user is created. Maximum length is 64 characters. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
+  - `[MailNickname <String>]`: The mail alias for the user. This property must be specified when a user is created. Maximum length is 64 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
   - `[MailboxSettings <IMicrosoftGraphMailboxSettings1>]`: mailboxSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ArchiveFolder <String>]`: Folder ID of an archive folder for the user. Read only.
@@ -4892,14 +5394,14 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
     - `[PlatformVersion <String>]`: Operating System version
     - `[UserId <String>]`: The user Id to who this app registration belongs.
     - `[Version <String>]`: Version of the entity.
-  - `[ManagedDevices <IMicrosoftGraphManagedDevice1[]>]`: The managed devices associated with the user.
+  - `[ManagedDevices <IMicrosoftGraphManagedDevice[]>]`: The managed devices associated with the user.
     - `[Id <String>]`: Read-only.
     - `[ActivationLockBypassCode <String>]`: Code that allows the Activation Lock on a device to be bypassed. This property is read-only.
     - `[AndroidSecurityPatchLevel <String>]`: Android security patch level. This property is read-only.
     - `[AzureAdDeviceId <String>]`: The unique identifier for the Azure Active Directory device. Read only. This property is read-only.
     - `[AzureAdRegistered <Boolean?>]`: Whether the device is Azure Active Directory registered. This property is read-only.
     - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires. This property is read-only.
-    - `[ComplianceState <String>]`: complianceState
+    - `[ComplianceState <String>]`: Compliance state.
     - `[ConfigurationManagerClientEnabledFeatures <IMicrosoftGraphConfigurationManagerClientEnabledFeatures1>]`: configuration Manager client enabled features
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CompliancePolicy <Boolean?>]`: Whether compliance policy is managed by Intune
@@ -4910,10 +5412,10 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
       - `[WindowsUpdateForBusiness <Boolean?>]`: Whether Windows Update for Business is managed by Intune
     - `[DeviceActionResults <IMicrosoftGraphDeviceActionResult[]>]`: List of ComplexType deviceActionResult objects. This property is read-only.
       - `[ActionName <String>]`: Action name
-      - `[ActionState <String>]`: actionState
+      - `[ActionState <String>]`: State of the action on the device
       - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
       - `[StartDateTime <DateTime?>]`: Time the action was initiated
-    - `[DeviceCategory <IMicrosoftGraphDeviceCategory2>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+    - `[DeviceCategory <IMicrosoftGraphDeviceCategory2>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: Read-only.
       - `[Description <String>]`: Optional description for the device category.
@@ -4922,7 +5424,7 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
     - `[DeviceCompliancePolicyStates <IMicrosoftGraphDeviceCompliancePolicyState1[]>]`: Device compliance policy states for this device.
       - `[Id <String>]`: Read-only.
       - `[DisplayName <String>]`: The name of the policy for this policyBase
-      - `[PlatformType <String>]`: 
+      - `[PlatformType <String>]`: Supported platform types for policies.
       - `[SettingCount <Int32?>]`: Count of how many setting a policy holds
       - `[SettingStates <IMicrosoftGraphDeviceCompliancePolicySettingState1[]>]`: 
         - `[CurrentValue <String>]`: Current value of setting on device
@@ -4931,9 +5433,10 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
         - `[InstanceDisplayName <String>]`: Name of setting instance that is being reported.
         - `[Setting <String>]`: The setting that is being reported
         - `[SettingName <String>]`: Localized/user friendly setting name that is being reported
-        - `[Sources <IMicrosoftGraphSettingSource1[]>]`: Contributing policies
+        - `[Sources <IMicrosoftGraphSettingSource[]>]`: Contributing policies
           - `[DisplayName <String>]`: Not yet documented
           - `[Id <String>]`: Not yet documented
+          - `[SourceType <String>]`: settingSourceType
         - `[State <String>]`: complianceStatus
         - `[UserEmail <String>]`: UserEmail
         - `[UserId <String>]`: UserId
@@ -4944,7 +5447,7 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
     - `[DeviceConfigurationStates <IMicrosoftGraphDeviceConfigurationState1[]>]`: Device configuration states for this device.
       - `[Id <String>]`: Read-only.
       - `[DisplayName <String>]`: The name of the policy for this policyBase
-      - `[PlatformType <String>]`: 
+      - `[PlatformType <String>]`: Supported platform types for policies.
       - `[SettingCount <Int32?>]`: Count of how many setting a policy holds
       - `[SettingStates <IMicrosoftGraphDeviceConfigurationSettingState1[]>]`: 
         - `[CurrentValue <String>]`: Current value of setting on device
@@ -4953,7 +5456,7 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
         - `[InstanceDisplayName <String>]`: Name of setting instance that is being reported.
         - `[Setting <String>]`: The setting that is being reported
         - `[SettingName <String>]`: Localized/user friendly setting name that is being reported
-        - `[Sources <IMicrosoftGraphSettingSource1[]>]`: Contributing policies
+        - `[Sources <IMicrosoftGraphSettingSource[]>]`: Contributing policies
         - `[State <String>]`: complianceStatus
         - `[UserEmail <String>]`: UserEmail
         - `[UserId <String>]`: UserId
@@ -4961,7 +5464,7 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
         - `[UserPrincipalName <String>]`: UserPrincipalName.
       - `[State <String>]`: complianceStatus
       - `[Version <Int32?>]`: The version of the policy
-    - `[DeviceEnrollmentType <String>]`: 
+    - `[DeviceEnrollmentType <String>]`: Possible ways of adding a mobile device to management.
     - `[DeviceHealthAttestationState <IMicrosoftGraphDeviceHealthAttestationState>]`: deviceHealthAttestationState
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AttestationIdentityKey <String>]`: TWhen an Attestation Identity Key (AIK) is present on a device, it indicates that the device has an endorsement key (EK) certificate.
@@ -4997,15 +5500,15 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
       - `[VirtualSecureMode <String>]`: VSM is a container that protects high value assets from a compromised kernel
       - `[WindowsPe <String>]`: Operating system running with limited services that is used to prepare a computer for Windows
     - `[DeviceName <String>]`: Name of the device. This property is read-only.
-    - `[DeviceRegistrationState <String>]`: deviceRegistrationState
+    - `[DeviceRegistrationState <String>]`: Device registration status.
     - `[EasActivated <Boolean?>]`: Whether the device is Exchange ActiveSync activated. This property is read-only.
     - `[EasActivationDateTime <DateTime?>]`: Exchange ActivationSync activation time of the device. This property is read-only.
     - `[EasDeviceId <String>]`: Exchange ActiveSync Id of the device. This property is read-only.
     - `[EmailAddress <String>]`: Email(s) for the user associated with the device. This property is read-only.
     - `[EnrolledDateTime <DateTime?>]`: Enrollment time of the device. This property is read-only.
     - `[EthernetMacAddress <String>]`: Ethernet MAC. This property is read-only.
-    - `[ExchangeAccessState <String>]`: deviceManagementExchangeAccessState
-    - `[ExchangeAccessStateReason <String>]`: deviceManagementExchangeAccessStateReason
+    - `[ExchangeAccessState <String>]`: Device Exchange Access State.
+    - `[ExchangeAccessStateReason <String>]`: Device Exchange Access State Reason.
     - `[ExchangeLastSuccessfulSyncDateTime <DateTime?>]`: Last time the device contacted Exchange. This property is read-only.
     - `[FreeStorageSpaceInBytes <Int64?>]`: Free Storage in Bytes. This property is read-only.
     - `[Iccid <String>]`: Integrated Circuit Card Identifier, it is A SIM card's unique identification number. This property is read-only.
@@ -5015,15 +5518,15 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
     - `[JailBroken <String>]`: whether the device is jail broken or rooted. This property is read-only.
     - `[LastSyncDateTime <DateTime?>]`: The date and time that the device last completed a successful sync with Intune. This property is read-only.
     - `[ManagedDeviceName <String>]`: Automatically generated name to identify a device. Can be overwritten to a user friendly name.
-    - `[ManagedDeviceOwnerType <String>]`: managedDeviceOwnerType
-    - `[ManagementAgent <String>]`: 
+    - `[ManagedDeviceOwnerType <String>]`: Owner type of device.
+    - `[ManagementAgent <String>]`: Management agent type.
     - `[Manufacturer <String>]`: Manufacturer of the device. This property is read-only.
     - `[Meid <String>]`: MEID. This property is read-only.
     - `[Model <String>]`: Model of the device. This property is read-only.
     - `[Notes <String>]`: Notes on the device created by IT Admin
     - `[OSVersion <String>]`: Operating system version of the device. This property is read-only.
     - `[OperatingSystem <String>]`: Operating system of the device. Windows, iOS, etc. This property is read-only.
-    - `[PartnerReportedThreatState <String>]`: managedDevicePartnerReportedHealthState
+    - `[PartnerReportedThreatState <String>]`: Available health states for the Device Health API
     - `[PhoneNumber <String>]`: Phone number of the device. This property is read-only.
     - `[PhysicalMemoryInBytes <Int64?>]`: Total Memory in Bytes. This property is read-only.
     - `[RemoteAssistanceSessionErrorDetails <String>]`: An error string that identifies issues when creating Remote Assistance session objects. This property is read-only.
@@ -5036,10 +5539,10 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
     - `[UserId <String>]`: Unique Identifier for the user associated with the device. This property is read-only.
     - `[UserPrincipalName <String>]`: Device user principal name. This property is read-only.
     - `[WiFiMacAddress <String>]`: Wi-Fi MAC. This property is read-only.
-  - `[Manager <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-  - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: The groups, directory roles and administrative units that the user is a member of. Read-only. Nullable.
+  - `[Manager <IMicrosoftGraphDirectoryObject>]`: directoryObject
+  - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: The groups, directory roles and administrative units that the user is a member of. Read-only. Nullable. Supports $expand.
   - `[Messages <IMicrosoftGraphMessage1[]>]`: The messages in a mailbox or folder. Read-only. Nullable.
-  - `[MobilePhone <String>]`: The primary cellular telephone number for the user. Read-only for users synced from on-premises directory.  Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
+  - `[MobilePhone <String>]`: The primary cellular telephone number for the user. Read-only for users synced from on-premises directory.  Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
   - `[MySite <String>]`: The URL for the user's personal site. Returned only on $select.
   - `[Oauth2PermissionGrants <IMicrosoftGraphOAuth2PermissionGrant1[]>]`: 
     - `[Id <String>]`: Read-only.
@@ -5048,7 +5551,7 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
     - `[PrincipalId <String>]`: The id of the user on behalf of whom the client is authorized to access the resource, when consentType is Principal. If consentType is AllPrincipals this value is null. Required when consentType is Principal.
     - `[ResourceId <String>]`: The id of the resource service principal to which access is authorized. This identifies the API which the client is authorized to attempt to call on behalf of a signed-in user.
     - `[Scope <String>]`: A space-separated list of the claim values for delegated permissions which should be included in access tokens for the resource application (the API). For example, openid User.Read GroupMember.Read.All. Each claim value should match the value field of one of the delegated permissions defined by the API, listed in the publishedPermissionScopes property of the resource service principal.
-  - `[OfficeLocation <String>]`: The office location in the user's place of business. Maximum length is 128 characters. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
+  - `[OfficeLocation <String>]`: The office location in the user's place of business. Maximum length is 128 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
   - `[OnPremisesDistinguishedName <String>]`: Contains the on-premises Active Directory distinguished name or DN. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only.
   - `[OnPremisesDomainName <String>]`: Contains the on-premises domainFQDN, also called dnsDomainName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only.
   - `[OnPremisesExtensionAttributes <IMicrosoftGraphOnPremisesExtensionAttributes>]`: onPremisesExtensionAttributes
@@ -5068,23 +5571,52 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
     - `[ExtensionAttribute7 <String>]`: Seventh customizable extension attribute.
     - `[ExtensionAttribute8 <String>]`: Eighth customizable extension attribute.
     - `[ExtensionAttribute9 <String>]`: Ninth customizable extension attribute.
-  - `[OnPremisesImmutableId <String>]`: This property is used to associate an on-premises Active Directory user account to their Azure AD user object. This property must be specified when creating a new user account in the Graph if you are using a federated domain for the user's userPrincipalName (UPN) property. Note: The $ and _ characters cannot be used when specifying this property. Supports $filter (eq, ne, NOT, ge, le, in).
-  - `[OnPremisesLastSyncDateTime <DateTime?>]`: Indicates the last time at which the object was synced with the on-premises directory; for example: '2013-02-16T03:04:54Z'. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Supports $filter (eq, ne, NOT, ge, le, in).
-  - `[OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError[]>]`: Errors when using Microsoft synchronization product during provisioning.
-  - `[OnPremisesSamAccountName <String>]`: Contains the on-premises sAMAccountName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
-  - `[OnPremisesSecurityIdentifier <String>]`: Contains the on-premises security identifier (SID) for the user that was synchronized from on-premises to the cloud. Read-only. Supports $filter (eq, ne, NOT, in).
-  - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default). Read-only. Supports $filter (eq, ne, NOT, in).
-  - `[OnPremisesUserPrincipalName <String>]`: Contains the on-premises userPrincipalName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
+  - `[OnPremisesImmutableId <String>]`: This property is used to associate an on-premises Active Directory user account to their Azure AD user object. This property must be specified when creating a new user account in the Graph if you are using a federated domain for the user's userPrincipalName (UPN) property. Note: The $ and _ characters cannot be used when specifying this property. Supports $filter (eq, ne, not, ge, le, in).
+  - `[OnPremisesLastSyncDateTime <DateTime?>]`: Indicates the last time at which the object was synced with the on-premises directory; for example: '2013-02-16T03:04:54Z'. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Supports $filter (eq, ne, not, ge, le, in).
+  - `[OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError[]>]`: Errors when using Microsoft synchronization product during provisioning.  Supports $filter (eq, not, ge, le).
+  - `[OnPremisesSamAccountName <String>]`: Contains the on-premises sAMAccountName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. Supports $filter (eq, ne, not, ge, le, in, startsWith).
+  - `[OnPremisesSecurityIdentifier <String>]`: Contains the on-premises security identifier (SID) for the user that was synchronized from on-premises to the cloud. Read-only. Supports $filter (eq) on null values only.
+  - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default). Read-only. Supports $filter (eq, ne, not, in, and eq on null values).
+  - `[OnPremisesUserPrincipalName <String>]`: Contains the on-premises userPrincipalName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. Supports $filter (eq, ne, not, ge, le, in, startsWith).
   - `[Onenote <IMicrosoftGraphOnenote1>]`: onenote
   - `[OnlineMeetings <IMicrosoftGraphOnlineMeeting1[]>]`: 
     - `[Id <String>]`: Read-only.
+    - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
+    - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
+    - `[AllowMeetingChat <String>]`: meetingChatMode
+    - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
     - `[AllowedPresenters <String>]`: onlineMeetingPresenters
-    - `[AudioConferencing <IMicrosoftGraphAudioConferencing1>]`: audioConferencing
+    - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]`: The attendance reports of an online meeting. Read-only.
+      - `[Id <String>]`: Read-only.
+      - `[AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>]`: List of attendance records of an attendance report. Read-only.
+        - `[Id <String>]`: Read-only.
+        - `[AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]`: List of time periods between joining and leaving a meeting.
+          - `[DurationInSeconds <Int32?>]`: Duration of the meeting interval in seconds; that is, the difference between joinDateTime and leaveDateTime.
+          - `[JoinDateTime <DateTime?>]`: The time the attendee joined in UTC.
+          - `[LeaveDateTime <DateTime?>]`: The time the attendee left in UTC.
+        - `[EmailAddress <String>]`: Email address of the user associated with this atttendance record.
+        - `[Identity <IMicrosoftGraphIdentity>]`: identity
+        - `[Role <String>]`: Role of the attendee. Possible values are: None, Attendee, Presenter, and Organizer.
+        - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
+      - `[MeetingEndDateTime <DateTime?>]`: UTC time when the meeting ended. Read-only.
+      - `[MeetingStartDateTime <DateTime?>]`: UTC time when the meeting started. Read-only.
+      - `[TotalParticipantCount <Int32?>]`: Total number of participants. Read-only.
+    - `[AttendeeReport <Byte[]>]`: The content stream of the attendee report of a Teams live event. Read-only.
+    - `[AudioConferencing <IMicrosoftGraphAudioConferencing>]`: audioConferencing
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ConferenceId <String>]`: The conference id of the online meeting.
       - `[DialinUrl <String>]`: A URL to the externally-accessible web page that contains dial-in information.
-      - `[TollFreeNumber <String>]`: The toll-free number that connects to the Audio Conference Provider.
-      - `[TollNumber <String>]`: The toll number that connects to the Audio Conference Provider.
+      - `[TollFreeNumber <String>]`: 
+      - `[TollFreeNumbers <String[]>]`: List of toll-free numbers that are displayed in the meeting invite.
+      - `[TollNumber <String>]`: 
+      - `[TollNumbers <String[]>]`: List of toll numbers that are displayed in the meeting invite.
+    - `[BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings1>]`: broadcastMeetingSettings
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[AllowedAudience <String>]`: broadcastMeetingAudience
+      - `[IsAttendeeReportEnabled <Boolean?>]`: Indicates whether attendee report is enabled for this Teams live event. Default value is false.
+      - `[IsQuestionAndAnswerEnabled <Boolean?>]`: Indicates whether Q&A is enabled for this Teams live event. Default value is false.
+      - `[IsRecordingEnabled <Boolean?>]`: Indicates whether recording is enabled for this Teams live event. Default value is false.
+      - `[IsVideoOnDemandEnabled <Boolean?>]`: Indicates whether video on demand is enabled for this Teams live event. Default value is false.
     - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channel.
@@ -5093,6 +5625,7 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
     - `[CreationDateTime <DateTime?>]`: The meeting creation time in UTC. Read-only.
     - `[EndDateTime <DateTime?>]`: The meeting end time in UTC.
     - `[ExternalId <String>]`: The external ID. A custom ID. Optional.
+    - `[IsBroadcast <Boolean?>]`: Indicates whether this is a Teams live event.
     - `[IsEntryExitAnnounced <Boolean?>]`: Indicates whether to announce when callers join or leave.
     - `[JoinInformation <IMicrosoftGraphItemBody>]`: itemBody
     - `[JoinWebUrl <String>]`: The join URL of the online meeting. Read-only.
@@ -5102,15 +5635,16 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
       - `[Scope <String>]`: lobbyBypassScope
     - `[Participants <IMicrosoftGraphMeetingParticipants1>]`: meetingParticipants
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Attendees <IMicrosoftGraphMeetingParticipantInfo1[]>]`: Information of the meeting attendees.
+      - `[Attendees <IMicrosoftGraphMeetingParticipantInfo[]>]`: Information of the meeting attendees.
         - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[Role <String>]`: 
+        - `[Role <String>]`: onlineMeetingRole
         - `[Upn <String>]`: User principal name of the participant.
-      - `[Organizer <IMicrosoftGraphMeetingParticipantInfo1>]`: meetingParticipantInfo
+      - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
+    - `[RecordAutomatically <Boolean?>]`: Indicates whether to record the meeting automatically.
     - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
     - `[Subject <String>]`: The subject of the online meeting.
     - `[VideoTeleconferenceId <String>]`: The video teleconferencing ID. Read-only.
-  - `[OtherMails <String[]>]`: A list of additional email addresses for the user; for example: ['bob@contoso.com', 'Robert@fabrikam.com'].NOTE: While this property can contain accent characters, they can cause access issues to first-party applications for the user.Supports $filter (eq, NOT, ge, le, in, startsWith).
+  - `[OtherMails <String[]>]`: A list of additional email addresses for the user; for example: ['bob@contoso.com', 'Robert@fabrikam.com'].NOTE: This property cannot contain accent characters.Supports $filter (eq, not, ge, le, in, startsWith).
   - `[Outlook <IMicrosoftGraphOutlookUser1>]`: outlookUser
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: Read-only.
@@ -5118,14 +5652,14 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
       - `[Id <String>]`: Read-only.
       - `[Color <String>]`: categoryColor
       - `[DisplayName <String>]`: A unique name that identifies a category in the user's mailbox. After a category is created, the name cannot be changed. Read-only.
-  - `[OwnedDevices <IMicrosoftGraphDirectoryObject[]>]`: Devices that are owned by the user. Read-only. Nullable.
-  - `[OwnedObjects <IMicrosoftGraphDirectoryObject[]>]`: Directory objects that are owned by the user. Read-only. Nullable.
-  - `[PasswordPolicies <String>]`: Specifies password policies for the user. This value is an enumeration with one possible value being DisableStrongPassword, which allows weaker passwords than the default policy to be specified. DisablePasswordExpiration can also be specified. The two may be specified together; for example: DisablePasswordExpiration, DisableStrongPassword.Supports $filter (eq, ne, NOT).
+  - `[OwnedDevices <IMicrosoftGraphDirectoryObject[]>]`: Devices that are owned by the user. Read-only. Nullable. Supports $expand.
+  - `[OwnedObjects <IMicrosoftGraphDirectoryObject[]>]`: Directory objects that are owned by the user. Read-only. Nullable. Supports $expand.
+  - `[PasswordPolicies <String>]`: Specifies password policies for the user. This value is an enumeration with one possible value being DisableStrongPassword, which allows weaker passwords than the default policy to be specified. DisablePasswordExpiration can also be specified. The two may be specified together; for example: DisablePasswordExpiration, DisableStrongPassword. For more information on the default password policies, see Azure AD pasword policies. Supports $filter (ne, not, and eq on null values).
   - `[PasswordProfile <IMicrosoftGraphPasswordProfile>]`: passwordProfile
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change her password on the next login; otherwise false. If not set, default is false. NOTE:  For Azure B2C tenants, set to false and instead use custom policies and user flows to force password reset at first sign in. See Force password reset at first logon.
     - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password. The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multi-factor authentication before password change. After a password change, this property will be automatically reset to false. If not set, default is false.
-    - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user's passwordPolicies property. By default, a strong password is required.
+    - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user’s passwordPolicies property. By default, a strong password is required.
   - `[PastProjects <String[]>]`: A list for the user to enumerate their past projects. Returned only on $select.
   - `[People <IMicrosoftGraphPerson1[]>]`: Read-only. The most relevant people to the user. The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships. A person is an aggregation of information from across mail, contacts and social networks.
     - `[Id <String>]`: Read-only.
@@ -5149,7 +5683,7 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
     - `[ScoredEmailAddresses <IMicrosoftGraphScoredEmailAddress[]>]`: The person's email addresses.
       - `[Address <String>]`: The email address.
       - `[ItemId <String>]`: 
-      - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user's communication and collaboration patterns and business relationships.
+      - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user’s communication and collaboration patterns and business relationships.
       - `[SelectionLikelihood <String>]`: selectionLikelihoodInfo
     - `[Surname <String>]`: The person's surname.
     - `[UserPrincipalName <String>]`: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
@@ -5165,20 +5699,20 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
     - `[Id <String>]`: Read-only.
     - `[Plans <IMicrosoftGraphPlannerPlan1[]>]`: Read-only. Nullable. Returns the plannerTasks assigned to the user.
     - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Read-only. Nullable. Returns the plannerTasks assigned to the user.
-  - `[PostalCode <String>]`: The postal code for the user's postal address. The postal code is specific to the user's country/region. In the United States of America, this attribute contains the ZIP code. Maximum length is 40 characters. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
-  - `[PreferredLanguage <String>]`: The preferred language for the user. Should follow ISO 639-1 Code; for example en-US. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
+  - `[PostalCode <String>]`: The postal code for the user's postal address. The postal code is specific to the user's country/region. In the United States of America, this attribute contains the ZIP code. Maximum length is 40 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+  - `[PreferredLanguage <String>]`: The preferred language for the user. Should follow ISO 639-1 Code; for example en-US. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
   - `[PreferredName <String>]`: The preferred name for the user. Returned only on $select.
   - `[Presence <IMicrosoftGraphPresence1>]`: presence
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: Read-only.
     - `[Activity <String>]`: The supplemental information to a user's availability. Possible values are Available, Away, BeRightBack, Busy, DoNotDisturb, InACall, InAConferenceCall, Inactive,InAMeeting, Offline, OffWork,OutOfOffice, PresenceUnknown,Presenting, UrgentInterruptionsOnly.
     - `[Availability <String>]`: The base presence information for a user. Possible values are Available, AvailableIdle,  Away, BeRightBack, Busy, BusyIdle, DoNotDisturb, Offline, PresenceUnknown
-  - `[ProvisionedPlans <IMicrosoftGraphProvisionedPlan[]>]`: The plans that are provisioned for the user. Read-only. Not nullable.
+  - `[ProvisionedPlans <IMicrosoftGraphProvisionedPlan[]>]`: The plans that are provisioned for the user. Read-only. Not nullable. Supports $filter (eq, not, ge, le).
     - `[CapabilityStatus <String>]`: For example, 'Enabled'.
     - `[ProvisioningStatus <String>]`: For example, 'Success'.
     - `[Service <String>]`: The name of the service; for example, 'AccessControlS2S'
-  - `[ProxyAddresses <String[]>]`: For example: ['SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com']. Read-only, Not nullable. Supports $filter (eq, NOT, ge, le, startsWith).
-  - `[RegisteredDevices <IMicrosoftGraphDirectoryObject[]>]`: Devices that are registered for the user. Read-only. Nullable.
+  - `[ProxyAddresses <String[]>]`: For example: ['SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com']. Changes to the mail property will also update this collection to include the value as an SMTP address. For more information, see mail and proxyAddresses properties. The proxy address prefixed with SMTP (capitalized) is the primary proxy address while those prefixed with smtp are the secondary proxy addresses. For Azure AD B2C accounts, this property has a limit of ten unique addresses. Read-only in Microsoft Graph; you can update this property only through the Microsoft 365 admin center. Not nullable. Supports $filter (eq, not, ge, le, startsWith).
+  - `[RegisteredDevices <IMicrosoftGraphDirectoryObject[]>]`: Devices that are registered for the user. Read-only. Nullable. Supports $expand.
   - `[Responsibilities <String[]>]`: A list for the user to enumerate their responsibilities. Returned only on $select.
   - `[Schools <String[]>]`: A list for the user to enumerate the schools they have attended. Returned only on $select.
   - `[ScopedRoleMemberOf <IMicrosoftGraphScopedRoleMembership[]>]`: The scoped-role administrative unit memberships for this user. Read-only. Nullable.
@@ -5203,12 +5737,12 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
           - `[EndTime <String>]`: End time for the time range.
           - `[StartTime <String>]`: Start time for the time range.
         - `[TimeZone <String>]`: Specifies the time zone for the indicated time.
-  - `[ShowInAddressList <Boolean?>]`: true if the Outlook global address list should contain this user, otherwise false. If not set, this will be treated as true. For users invited through the invitation manager, this property will be set to false. Supports $filter (eq, ne, NOT, in).
+  - `[ShowInAddressList <Boolean?>]`: true if the Outlook global address list should contain this user, otherwise false. If not set, this will be treated as true. For users invited through the invitation manager, this property will be set to false. Supports $filter (eq, ne, not, in).
   - `[SignInSessionsValidFromDateTime <DateTime?>]`: Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. Read-only. Use revokeSignInSessions to reset.
   - `[Skills <String[]>]`: A list for the user to enumerate their skills. Returned only on $select.
-  - `[State <String>]`: The state or province in the user's address. Maximum length is 128 characters. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
-  - `[StreetAddress <String>]`: The street address of the user's place of business. Maximum length is 1024 characters. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
-  - `[Surname <String>]`: The user's surname (family name or last name). Maximum length is 64 characters. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
+  - `[State <String>]`: The state or province in the user's address. Maximum length is 128 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+  - `[StreetAddress <String>]`: The street address of the user's place of business. Maximum length is 1024 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+  - `[Surname <String>]`: The user's surname (family name or last name). Maximum length is 64 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
   - `[Teamwork <IMicrosoftGraphUserTeamwork1>]`: userTeamwork
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: Read-only.
@@ -5249,9 +5783,9 @@ CREATEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user 
         - `[Title <String>]`: A brief description of the task.
       - `[WellknownListName <String>]`: wellknownListName
   - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: 
-  - `[UsageLocation <String>]`: A two letter country code (ISO standard 3166). Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries.  Examples include: US, JP, and GB. Not nullable. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
-  - `[UserPrincipalName <String>]`: The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant's collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: While this property can contain accent characters, they can cause access issues to first-party applications for the user. Supports $filter (eq, ne, NOT, ge, le, in, startsWith, endsWith) and $orderBy.
-  - `[UserType <String>]`: A string value that can be used to classify user types in your directory, such as Member and Guest. Supports $filter (eq, ne, NOT, in, startsWith, endsWith).
+  - `[UsageLocation <String>]`: A two letter country code (ISO standard 3166). Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries.  Examples include: US, JP, and GB. Not nullable. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+  - `[UserPrincipalName <String>]`: The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant's collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property cannot contain accent characters. Only the following characters are allowed A - Z, a - z, 0 - 9, ' . - _ ! # ^ ~. For the complete list of allowed characters, see username policies. Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderBy.
+  - `[UserType <String>]`: A String value that can be used to classify user types in your directory, such as Member and Guest. Supports $filter (eq, ne, not, in, and eq on null values). NOTE: For more information about the permissions for member and guest users, see What are the default user permissions in Azure Active Directory?
 
 DRIVE <IMicrosoftGraphDrive1>: drive
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -5259,22 +5793,22 @@ DRIVE <IMicrosoftGraphDrive1>: drive
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
+      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+      - `[Id <String>]`: The identifier of the identity. This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[CreatedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+  - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeletedDateTime <DateTime?>]`: 
     - `[Id <String>]`: Read-only.
     - `[AboutMe <String>]`: A freeform text entry field for the user to describe themselves. Returned only on $select.
-    - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. This property is required when a user is created. Supports $filter (eq, ne, NOT, and in).
+    - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. This property is required when a user is created. Supports $filter (eq, ne, not, and in).
     - `[Activities <IMicrosoftGraphUserActivity1[]>]`: The user's activities across devices. Read-only. Nullable.
       - `[Id <String>]`: Read-only.
       - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
       - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
       - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-      - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
+      - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
       - `[ContentInfo <IMicrosoftGraphJson>]`: Json
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -5299,7 +5833,7 @@ DRIVE <IMicrosoftGraphDrive1>: drive
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
+          - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
           - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
           - `[AlternativeText <String>]`: 
           - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -5307,7 +5841,7 @@ DRIVE <IMicrosoftGraphDrive1>: drive
         - `[Content <IMicrosoftGraphJson>]`: Json
         - `[Description <String>]`: Optional. Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
         - `[DisplayText <String>]`: Required. Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)
-    - `[AgeGroup <String>]`: Sets the age group of the user. Allowed values: null, minor, notAdult and adult. Refer to the legal age group property definitions for further information. Supports $filter (eq, ne, NOT, and in).
+    - `[AgeGroup <String>]`: Sets the age group of the user. Allowed values: null, minor, notAdult and adult. Refer to the legal age group property definitions for further information. Supports $filter (eq, ne, not, and in).
     - `[AgreementAcceptances <IMicrosoftGraphAgreementAcceptance[]>]`: The user's terms of use acceptance statuses. Read-only. Nullable.
       - `[Id <String>]`: Read-only.
       - `[AgreementFileId <String>]`: ID of the agreement file accepted by the user.
@@ -5323,7 +5857,7 @@ DRIVE <IMicrosoftGraphDrive1>: drive
       - `[UserEmail <String>]`: Email of the user when the acceptance was recorded.
       - `[UserId <String>]`: ID of the user who accepted the agreement.
       - `[UserPrincipalName <String>]`: UPN of the user when the acceptance was recorded.
-    - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment1[]>]`: Represents the app roles a user has been granted for an application.
+    - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment1[]>]`: Represents the app roles a user has been granted for an application. Supports $expand.
       - `[DeletedDateTime <DateTime?>]`: 
       - `[Id <String>]`: Read-only.
       - `[AppRoleId <String>]`: The identifier (id) for the app role which is assigned to the principal. This app role must be exposed in the appRoles property on the resource application's service principal (resourceId). If the resource application has not declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles. Required on create.
@@ -5333,10 +5867,10 @@ DRIVE <IMicrosoftGraphDrive1>: drive
       - `[PrincipalType <String>]`: The type of the assigned principal. This can either be User, Group or ServicePrincipal. Read-only.
       - `[ResourceDisplayName <String>]`: The display name of the resource app's service principal to which the assignment is made.
       - `[ResourceId <String>]`: The unique identifier (id) for the resource service principal for which the assignment is made. Required on create. Supports $filter (eq only).
-    - `[AssignedLicenses <IMicrosoftGraphAssignedLicense[]>]`: The licenses that are assigned to the user, including inherited (group-based) licenses. Not nullable. Supports $filter (eq and NOT).
+    - `[AssignedLicenses <IMicrosoftGraphAssignedLicense[]>]`: The licenses that are assigned to the user, including inherited (group-based) licenses. Not nullable. Supports $filter (eq and not).
       - `[DisabledPlans <String[]>]`: A collection of the unique identifiers for plans that have been disabled.
       - `[SkuId <String>]`: The unique identifier for the SKU.
-    - `[AssignedPlans <IMicrosoftGraphAssignedPlan[]>]`: The plans that are assigned to the user. Read-only. Not nullable.Supports $filter (eq and NOT).
+    - `[AssignedPlans <IMicrosoftGraphAssignedPlan[]>]`: The plans that are assigned to the user. Read-only. Not nullable.Supports $filter (eq and not).
       - `[AssignedDateTime <DateTime?>]`: The date and time at which the plan was assigned; for example: 2013-01-02T19:32:30Z. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[CapabilityStatus <String>]`: Condition of the capability assignment. The possible values are Enabled, Warning, Suspended, Deleted, LockedOut.
       - `[Service <String>]`: The name of the service; for example, 'Exchange'.
@@ -5357,39 +5891,39 @@ DRIVE <IMicrosoftGraphDrive1>: drive
       - `[MicrosoftAuthenticatorMethods <IMicrosoftGraphMicrosoftAuthenticatorAuthenticationMethod1[]>]`: 
         - `[Id <String>]`: Read-only.
         - `[CreatedDateTime <DateTime?>]`: The date and time that this app was registered. This property is null if the device is not registered for passwordless Phone Sign-In.
-        - `[Device <IMicrosoftGraphDevice1>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
+        - `[Device <IMicrosoftGraphDevice1>]`: device
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DeletedDateTime <DateTime?>]`: 
           - `[Id <String>]`: Read-only.
-          - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. default is true.
-          - `[AlternativeSecurityIds <IMicrosoftGraphAlternativeSecurityId[]>]`: For internal use only. Not nullable.
+          - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. Default is true.  Supports $filter (eq, ne, not, in). Only callers in Global Administrator and Cloud Device Administrator roles can set this property.
+          - `[AlternativeSecurityIds <IMicrosoftGraphAlternativeSecurityId[]>]`: For internal use only. Not nullable. Supports $filter (eq, not, ge, le).
             - `[IdentityProvider <String>]`: For internal use only
             - `[Key <Byte[]>]`: For internal use only
             - `[Type <Int32?>]`: For internal use only
-          - `[ApproximateLastSignInDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+          - `[ApproximateLastSignInDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Supports $filter (eq, ne, not, ge, le, and eq on null values) and $orderBy.
           - `[ComplianceExpirationDateTime <DateTime?>]`: The timestamp when the device is no longer deemed compliant. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-          - `[DeviceId <String>]`: Identifier set by Azure Device Registration Service at the time of registration.
+          - `[DeviceId <String>]`: Identifier set by Azure Device Registration Service at the time of registration. Supports $filter (eq, ne, not, startsWith).
           - `[DeviceMetadata <String>]`: For internal use only. Set to null.
           - `[DeviceVersion <Int32?>]`: For internal use only.
-          - `[DisplayName <String>]`: The display name for the device. Required.
+          - `[DisplayName <String>]`: The display name for the device. Required. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderBy.
           - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the device. Read-only. Nullable.
             - `[Id <String>]`: Read-only.
-          - `[IsCompliant <Boolean?>]`: true if the device complies with Mobile Device Management (MDM) policies; otherwise, false. Read-only. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
-          - `[IsManaged <Boolean?>]`: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
-          - `[MdmAppId <String>]`: Application identifier used to register device into MDM. Read-only. Supports $filter.
-          - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups that this device is a member of. Read-only. Nullable.
+          - `[IsCompliant <Boolean?>]`: true if the device complies with Mobile Device Management (MDM) policies; otherwise, false. Read-only. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices. Supports $filter (eq, ne, not).
+          - `[IsManaged <Boolean?>]`: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices. Supports $filter (eq, ne, not).
+          - `[MdmAppId <String>]`: Application identifier used to register device into MDM. Read-only. Supports $filter (eq, ne, not, startsWith).
+          - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups that this device is a member of. Read-only. Nullable. Supports $expand.
             - `[Id <String>]`: Read-only.
             - `[DeletedDateTime <DateTime?>]`: 
-          - `[OnPremisesLastSyncDateTime <DateTime?>]`: The last time at which the object was synced with the on-premises directory. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
-          - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default). Read-only.
-          - `[OperatingSystem <String>]`: The type of operating system on the device. Required.
-          - `[OperatingSystemVersion <String>]`: Operating system version of the device. Required.
-          - `[PhysicalIds <String[]>]`: For internal use only. Not nullable.
+          - `[OnPremisesLastSyncDateTime <DateTime?>]`: The last time at which the object was synced with the on-premises directory. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only. Supports $filter (eq, ne, not, ge, le, in).
+          - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default). Read-only. Supports $filter (eq, ne, not, in, and eq on null values).
+          - `[OperatingSystem <String>]`: The type of operating system on the device. Required. Supports $filter (eq, ne, not, ge, le, startsWith, and eq on null values).
+          - `[OperatingSystemVersion <String>]`: Operating system version of the device. Required. Supports $filter (eq, ne, not, ge, le, startsWith, and eq on null values).
+          - `[PhysicalIds <String[]>]`: For internal use only. Not nullable. Supports $filter (eq, not, ge, le, startsWith).
           - `[ProfileType <String>]`: The profile type of the device. Possible values: RegisteredDevice (default), SecureVM, Printer, Shared, IoT.
-          - `[RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]`: The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Currently, there can be only one owner. Read-only. Nullable.
-          - `[RegisteredUsers <IMicrosoftGraphDirectoryObject[]>]`: Collection of registered users of the device. For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration. Read-only. Nullable.
+          - `[RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]`: The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Currently, there can be only one owner. Read-only. Nullable. Supports $expand.
+          - `[RegisteredUsers <IMicrosoftGraphDirectoryObject[]>]`: Collection of registered users of the device. For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration. Read-only. Nullable. Supports $expand.
           - `[SystemLabels <String[]>]`: List of labels applied to the device by the system.
-          - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups that this device is a member of. This operation is transitive.
+          - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups that this device is a member of. This operation is transitive. Supports $expand.
           - `[TrustType <String>]`: Type of trust for the joined device. Read-only. Possible values: Workplace (indicates bring your own personal devices), AzureAd (Cloud only joined devices), ServerAd (on-premises domain joined devices joined to Azure AD). For more details, see Introduction to device management in Azure Active Directory
         - `[DeviceTag <String>]`: Tags containing app metadata.
         - `[DisplayName <String>]`: The name of the device on which this app is registered.
@@ -5397,11 +5931,11 @@ DRIVE <IMicrosoftGraphDrive1>: drive
       - `[WindowsHelloForBusinessMethods <IMicrosoftGraphWindowsHelloForBusinessAuthenticationMethod1[]>]`: 
         - `[Id <String>]`: Read-only.
         - `[CreatedDateTime <DateTime?>]`: The date and time that this Windows Hello for Business key was registered.
-        - `[Device <IMicrosoftGraphDevice1>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
+        - `[Device <IMicrosoftGraphDevice1>]`: device
         - `[DisplayName <String>]`: The name of the device on which Windows Hello for Business is registered
         - `[KeyStrength <String>]`: authenticationMethodKeyStrength
     - `[Birthday <DateTime?>]`: The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Returned only on $select.
-    - `[BusinessPhones <String[]>]`: The telephone numbers for the user. Only one number can be set for this property. Read-only for users synced from on-premises directory. Supports $filter (eq and NOT).
+    - `[BusinessPhones <String[]>]`: The telephone numbers for the user. Only one number can be set for this property. Read-only for users synced from on-premises directory. Supports $filter (eq, not, ge, le, startsWith).
     - `[Calendar <IMicrosoftGraphCalendar1>]`: calendar
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: Read-only.
@@ -5422,7 +5956,7 @@ DRIVE <IMicrosoftGraphDrive1>: drive
         - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
         - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
         - `[Id <String>]`: Read-only.
-        - `[AllowNewTimeProposals <Boolean?>]`: True if the meeting organizer allows invitees to propose a new time when responding, false otherwise. Optional. Default is true.
+        - `[AllowNewTimeProposals <Boolean?>]`: true if the meeting organizer allows invitees to propose a new time when responding; otherwise false. Optional. Default is true.
         - `[Attachments <IMicrosoftGraphAttachment[]>]`: The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event. Navigation property. Read-only. Nullable.
           - `[Id <String>]`: Read-only.
           - `[ContentType <String>]`: The MIME type.
@@ -5457,12 +5991,12 @@ DRIVE <IMicrosoftGraphDrive1>: drive
         - `[ICalUId <String>]`: A unique identifier for an event across calendars. This ID is different for each occurrence in a recurring series. Read-only.
         - `[Importance <String>]`: importance
         - `[Instances <IMicrosoftGraphEvent1[]>]`: The occurrences of a recurring series, if the event is a series master. This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series. Navigation property. Read-only. Nullable.
-        - `[IsAllDay <Boolean?>]`: Set to true if the event lasts all day.
-        - `[IsCancelled <Boolean?>]`: Set to true if the event has been canceled.
-        - `[IsDraft <Boolean?>]`: Set to true if the user has updated the meeting in Outlook but has not sent the updates to attendees. Set to false if all changes have been sent, or if the event is an appointment without any attendees.
-        - `[IsOnlineMeeting <Boolean?>]`: True if this event has online meeting information, false otherwise. Default is false. Optional.
-        - `[IsOrganizer <Boolean?>]`: Set to true if the calendar owner (specified by the owner property of the calendar) is the organizer of the event (specified by the organizer property of the event). This also applies if a delegate organized the event on behalf of the owner.
-        - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the event.
+        - `[IsAllDay <Boolean?>]`: 
+        - `[IsCancelled <Boolean?>]`: 
+        - `[IsDraft <Boolean?>]`: 
+        - `[IsOnlineMeeting <Boolean?>]`: 
+        - `[IsOrganizer <Boolean?>]`: 
+        - `[IsReminderOn <Boolean?>]`: 
         - `[Location <IMicrosoftGraphLocation1>]`: location
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Address <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
@@ -5485,7 +6019,7 @@ DRIVE <IMicrosoftGraphDrive1>: drive
           - `[LocationUri <String>]`: Optional URI representing the location.
           - `[UniqueId <String>]`: For internal use only.
           - `[UniqueIdType <String>]`: locationUniqueIdType
-        - `[Locations <IMicrosoftGraphLocation1[]>]`: The locations where the event is held or attended from. The location and locations properties always correspond with each other. If you update the location property, any prior locations in the locations collection would be removed and replaced by the new location value.
+        - `[Locations <IMicrosoftGraphLocation1[]>]`: 
         - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the event. Read-only. Nullable.
           - `[Id <String>]`: Read-only.
           - `[Value <String[]>]`: A collection of property values.
@@ -5502,19 +6036,19 @@ DRIVE <IMicrosoftGraphDrive1>: drive
           - `[TollFreeNumbers <String[]>]`: The toll free numbers that can be used to join the conference.
           - `[TollNumber <String>]`: The toll number that can be used to join the conference.
         - `[OnlineMeetingProvider <String>]`: onlineMeetingProviderType
-        - `[OnlineMeetingUrl <String>]`: A URL for an online meeting. The property is set only when an organizer specifies an event as an online meeting such as a Skype meeting. Read-only.
+        - `[OnlineMeetingUrl <String>]`: 
         - `[Organizer <IMicrosoftGraphRecipient>]`: recipient
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-        - `[OriginalEndTimeZone <String>]`: The end time zone that was set when the event was created. A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
-        - `[OriginalStart <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-        - `[OriginalStartTimeZone <String>]`: The start time zone that was set when the event was created. A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
+        - `[OriginalEndTimeZone <String>]`: 
+        - `[OriginalStart <DateTime?>]`: 
+        - `[OriginalStartTimeZone <String>]`: 
         - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs. Required if type is absoluteMonthly or absoluteYearly.
-            - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. Possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
+            - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
             - `[FirstDayOfWeek <String>]`: dayOfWeek
             - `[Index <String>]`: weekIndex
             - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type. Required.
@@ -5527,20 +6061,20 @@ DRIVE <IMicrosoftGraphDrive1>: drive
             - `[RecurrenceTimeZone <String>]`: Time zone for the startDate and endDate properties. Optional. If not specified, the time zone of the event is used.
             - `[StartDate <DateTime?>]`: The date to start applying the recurrence pattern. The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event. Must be the same value as the start property of the recurring event. Required.
             - `[Type <String>]`: recurrenceRangeType
-        - `[ReminderMinutesBeforeStart <Int32?>]`: The number of minutes before the event start time that the reminder alert occurs.
-        - `[ResponseRequested <Boolean?>]`: Default is true, which represents the organizer would like an invitee to send a response to the event.
+        - `[ReminderMinutesBeforeStart <Int32?>]`: 
+        - `[ResponseRequested <Boolean?>]`: 
         - `[ResponseStatus <IMicrosoftGraphResponseStatus>]`: responseStatus
         - `[Sensitivity <String>]`: sensitivity
-        - `[SeriesMasterId <String>]`: The ID for the recurring series master item, if this event is part of a recurring series.
+        - `[SeriesMasterId <String>]`: 
         - `[ShowAs <String>]`: freeBusyStatus
         - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the event. Read-only. Nullable.
           - `[Id <String>]`: Read-only.
           - `[Value <String>]`: A property value.
         - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-        - `[Subject <String>]`: The text of the event's subject line.
-        - `[TransactionId <String>]`: A custom identifier specified by a client app for the server to avoid redundant POST operations in case of client retries to create the same event. This is useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request. After you set transactionId when creating an event, you cannot change transactionId in a subsequent update. This property is only returned in a response payload if an app has set it. Optional.
+        - `[Subject <String>]`: 
+        - `[TransactionId <String>]`: 
         - `[Type <String>]`: eventType
-        - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in to your mailbox. Otherwise, Outlook on the web prompts you to sign in.This URL cannot be accessed from within an iFrame.
+        - `[WebLink <String>]`: 
       - `[CanEdit <Boolean?>]`: true if the user can write to the calendar, false otherwise. This property is true for the user who created the calendar. This property is also true for a user who has been shared a calendar and granted write access, through an Outlook client or the corresponding calendarPermission resource. Read-only.
       - `[CanShare <Boolean?>]`: true if the user has the permission to share the calendar, false otherwise. Only the user who created the calendar can share it. Read-only.
       - `[CanViewPrivateItems <Boolean?>]`: true if the user can read calendar items that have been marked private, false otherwise. This property is set through an Outlook client or the corresponding calendarPermission resource. Read-only.
@@ -5598,7 +6132,7 @@ DRIVE <IMicrosoftGraphDrive1>: drive
         - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
       - `[Messages <IMicrosoftGraphChatMessage1[]>]`: A collection of all the messages in the chat. Nullable.
         - `[Id <String>]`: Read-only.
-        - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: Attached files. Attachments are currently read-only - sending attachments is not supported.
+        - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: References to attached objects like files, tabs, meetings etc.
           - `[Content <String>]`: The content of the attachment. If the attachment is a rich card, set the property to the rich card object. This property and contentUrl are mutually exclusive.
           - `[ContentType <String>]`: The media type of the content attachment. It can have the following values: reference: Attachment is a link to another file. Populate the contentURL with the link to the object.Any contentTypes supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet. application/vnd.microsoft.card.announcement: An announcement header.
           - `[ContentUrl <String>]`: URL for the content of the attachment. Supported protocols: http, https, file and data.
@@ -5614,6 +6148,8 @@ DRIVE <IMicrosoftGraphDrive1>: drive
         - `[CreatedDateTime <DateTime?>]`: Timestamp of when the chat message was created.
         - `[DeletedDateTime <DateTime?>]`: Read only. Timestamp at which the chat message was deleted, or null if not deleted.
         - `[Etag <String>]`: Read-only. Version number of the chat message.
+        - `[EventDetail <IMicrosoftGraphEventMessageDetail>]`: eventMessageDetail
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[From <IMicrosoftGraphChatMessageFromIdentitySet>]`: chatMessageFromIdentitySet
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -5627,7 +6163,7 @@ DRIVE <IMicrosoftGraphDrive1>: drive
         - `[LastEditedDateTime <DateTime?>]`: Read only. Timestamp when edits to the chat message were made. Triggers an 'Edited' flag in the Teams UI. If no edits are made the value is null.
         - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
         - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
-        - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Currently supports user, bot, team, channel.
+        - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
           - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
           - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
           - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
@@ -5637,10 +6173,10 @@ DRIVE <IMicrosoftGraphDrive1>: drive
             - `[User <IMicrosoftGraphIdentity>]`: identity
             - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-              - `[Id <String>]`: Unique identifier for the identity.
+              - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+              - `[Id <String>]`: The identifier of the identity. This property is read-only.
               - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
-        - `[MessageType <String>]`: 
+        - `[MessageType <String>]`: chatMessageType
         - `[PolicyViolation <IMicrosoftGraphChatMessagePolicyViolation>]`: chatMessagePolicyViolation
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DlpAction <String>]`: chatMessagePolicyViolationDlpActionTypes
@@ -5677,9 +6213,10 @@ DRIVE <IMicrosoftGraphDrive1>: drive
         - `[TeamsApp <IMicrosoftGraphTeamsApp1>]`: teamsApp
         - `[WebUrl <String>]`: Deep link URL of the tab instance. Read only.
       - `[Topic <String>]`: (Optional) Subject or topic for the chat. Only available for group chats.
-    - `[City <String>]`: The city in which the user is located. Maximum length is 128 characters. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
-    - `[CompanyName <String>]`: The company name which the user is associated. This property can be useful for describing the company that an external user comes from. The maximum length of the company name is 64 characters.Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
-    - `[ConsentProvidedForMinor <String>]`: Sets whether consent has been obtained for minors. Allowed values: null, granted, denied and notRequired. Refer to the legal age group property definitions for further information. Supports $filter (eq, ne, NOT, and in).
+      - `[WebUrl <String>]`: The URL for the chat in Microsoft Teams. The URL should be treated as an opaque blob, and not parsed. Read-only.
+    - `[City <String>]`: The city in which the user is located. Maximum length is 128 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+    - `[CompanyName <String>]`: The company name which the user is associated. This property can be useful for describing the company that an external user comes from. The maximum length of the company name is 64 characters.Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+    - `[ConsentProvidedForMinor <String>]`: Sets whether consent has been obtained for minors. Allowed values: null, granted, denied and notRequired. Refer to the legal age group property definitions for further information. Supports $filter (eq, ne, not, and in).
     - `[ContactFolders <IMicrosoftGraphContactFolder1[]>]`: The user's contacts folders. Read-only. Nullable.
       - `[Id <String>]`: Read-only.
       - `[ChildFolders <IMicrosoftGraphContactFolder1[]>]`: The collection of child folders in the folder. Navigation property. Read-only. Nullable.
@@ -5705,70 +6242,70 @@ DRIVE <IMicrosoftGraphDrive1>: drive
         - `[GivenName <String>]`: The contact's given name.
         - `[HomeAddress <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
         - `[HomePhones <String[]>]`: The contact's home phone numbers.
-        - `[ImAddresses <String[]>]`: The contact's instant messaging (IM) addresses.
-        - `[Initials <String>]`: The contact's initials.
-        - `[JobTitle <String>]`: The contact's job title.
-        - `[Manager <String>]`: The name of the contact's manager.
-        - `[MiddleName <String>]`: The contact's middle name.
-        - `[MobilePhone <String>]`: The contact's mobile phone number.
+        - `[ImAddresses <String[]>]`: 
+        - `[Initials <String>]`: 
+        - `[JobTitle <String>]`: 
+        - `[Manager <String>]`: 
+        - `[MiddleName <String>]`: 
+        - `[MobilePhone <String>]`: 
         - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
-        - `[NickName <String>]`: The contact's nickname.
-        - `[OfficeLocation <String>]`: The location of the contact's office.
+        - `[NickName <String>]`: 
+        - `[OfficeLocation <String>]`: 
         - `[OtherAddress <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
-        - `[ParentFolderId <String>]`: The ID of the contact's parent folder.
-        - `[PersonalNotes <String>]`: The user's notes about the contact.
+        - `[ParentFolderId <String>]`: 
+        - `[PersonalNotes <String>]`: 
         - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: Read-only.
           - `[Height <Int32?>]`: The height of the photo. Read-only.
           - `[Width <Int32?>]`: The width of the photo. Read-only.
-        - `[Profession <String>]`: The contact's profession.
+        - `[Profession <String>]`: 
         - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the contact. Read-only. Nullable.
-        - `[SpouseName <String>]`: The name of the contact's spouse/partner.
-        - `[Surname <String>]`: The contact's surname.
-        - `[Title <String>]`: The contact's title.
-        - `[YomiCompanyName <String>]`: The phonetic Japanese company name of the contact.
-        - `[YomiGivenName <String>]`: The phonetic Japanese given name (first name) of the contact.
-        - `[YomiSurname <String>]`: The phonetic Japanese surname (last name)  of the contact.
+        - `[SpouseName <String>]`: 
+        - `[Surname <String>]`: 
+        - `[Title <String>]`: 
+        - `[YomiCompanyName <String>]`: 
+        - `[YomiGivenName <String>]`: 
+        - `[YomiSurname <String>]`: 
       - `[DisplayName <String>]`: The folder's display name.
       - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the contactFolder. Read-only. Nullable.
       - `[ParentFolderId <String>]`: The ID of the folder's parent folder.
       - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the contactFolder. Read-only. Nullable.
     - `[Contacts <IMicrosoftGraphContact1[]>]`: The user's contacts. Read-only. Nullable.
-    - `[Country <String>]`: The country/region in which the user is located; for example, US or UK. Maximum length is 128 characters. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
-    - `[CreatedDateTime <DateTime?>]`: The date and time the user was created. The value cannot be modified and is automatically populated when the entity is created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. Property is nullable. A null value indicates that an accurate creation time couldn't be determined for the user. Read-only. Supports $filter (eq, ne, NOT , ge, le, and in operators).
+    - `[Country <String>]`: The country/region in which the user is located; for example, US or UK. Maximum length is 128 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+    - `[CreatedDateTime <DateTime?>]`: The date and time the user was created. The value cannot be modified and is automatically populated when the entity is created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. Property is nullable. A null value indicates that an accurate creation time couldn't be determined for the user. Read-only. Supports $filter (eq, ne, not , ge, le, in).
     - `[CreatedObjects <IMicrosoftGraphDirectoryObject[]>]`: Directory objects that were created by the user. Read-only. Nullable.
-    - `[CreationType <String>]`: Indicates whether the user account was created as a regular school or work account (null), an external account (Invitation), a local account for an Azure Active Directory B2C tenant (LocalAccount) or self-service sign-up using email verification (EmailVerified). Read-only. Supports $filter (eq, ne, NOT, and in).
-    - `[Department <String>]`: The name for the department in which the user works. Maximum length is 64 characters.Supports $filter (eq, ne, NOT , ge, le, and in operators).
+    - `[CreationType <String>]`: Indicates whether the user account was created through one of the following methods:  As a regular school or work account (null). As an external account (Invitation). As a local account for an Azure Active Directory B2C tenant (LocalAccount). Through self-service sign-up by an internal user using email verification (EmailVerified). Through self-service sign-up by an external user signing up through a link that is part of a user flow (SelfServiceSignUp).  Read-only.Supports $filter (eq, ne, not, and in).
+    - `[Department <String>]`: The name for the department in which the user works. Maximum length is 64 characters.Supports $filter (eq, ne, not , ge, le, in, and eq on null values).
     - `[DeviceEnrollmentLimit <Int32?>]`: The limit on the maximum number of devices that the user is permitted to enroll. Allowed values are 5 or 1000.
     - `[DeviceManagementTroubleshootingEvents <IMicrosoftGraphDeviceManagementTroubleshootingEvent1[]>]`: The list of troubleshooting events for this user.
       - `[Id <String>]`: Read-only.
       - `[CorrelationId <String>]`: Id used for tracing the failure in the service.
       - `[EventDateTime <DateTime?>]`: Time when the event occurred .
-    - `[DirectReports <IMicrosoftGraphDirectoryObject[]>]`: The users and contacts that report to the user. (The users and contacts that have their manager property set to this user.) Read-only. Nullable.
-    - `[DisplayName <String>]`: The name displayed in the address book for the user. This value is usually the combination of the user's first name, middle initial, and last name. This property is required when a user is created and it cannot be cleared during updates. Maximum length is 256 characters. Supports $filter (eq, ne, NOT , ge, le, in, startsWith), $orderBy, and $search.
+    - `[DirectReports <IMicrosoftGraphDirectoryObject[]>]`: The users and contacts that report to the user. (The users and contacts that have their manager property set to this user.) Read-only. Nullable. Supports $expand.
+    - `[DisplayName <String>]`: The name displayed in the address book for the user. This value is usually the combination of the user's first name, middle initial, and last name. This property is required when a user is created and it cannot be cleared during updates. Maximum length is 256 characters. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values), $orderBy, and $search.
     - `[Drive <IMicrosoftGraphDrive1>]`: drive
     - `[Drives <IMicrosoftGraphDrive1[]>]`: A collection of drives available for this user. Read-only.
-    - `[EmployeeHireDate <DateTime?>]`: The date and time when the user was hired or will start work in case of a future hire. Supports $filter (eq, ne, NOT , ge, le, in).
-    - `[EmployeeId <String>]`: The employee identifier assigned to the user by the organization. Supports $filter (eq, ne, NOT , ge, le, in, startsWith).
+    - `[EmployeeHireDate <DateTime?>]`: The date and time when the user was hired or will start work in case of a future hire. Supports $filter (eq, ne, not , ge, le, in).
+    - `[EmployeeId <String>]`: The employee identifier assigned to the user by the organization. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
     - `[EmployeeOrgData <IMicrosoftGraphEmployeeOrgData>]`: employeeOrgData
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CostCenter <String>]`: The cost center associated with the user. Returned only on $select. Supports $filter.
       - `[Division <String>]`: The name of the division in which the user works. Returned only on $select. Supports $filter.
-    - `[EmployeeType <String>]`: Captures enterprise worker type. For example, Employee, Contractor, Consultant, or Vendor. Supports $filter (eq, ne, NOT , ge, le, in, startsWith).
+    - `[EmployeeType <String>]`: Captures enterprise worker type. For example, Employee, Contractor, Consultant, or Vendor. Supports $filter (eq, ne, not , ge, le, in, startsWith).
     - `[Events <IMicrosoftGraphEvent1[]>]`: The user's events. Default is to show events under the Default Calendar. Read-only. Nullable.
     - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the user. Nullable.
-    - `[ExternalUserState <String>]`: For an external user invited to the tenant using the invitation API, this property represents the invited user's invitation status. For invited users, the state can be PendingAcceptance or Accepted, or null for all other users. Supports $filter (eq, ne, NOT , in).
-    - `[ExternalUserStateChangeDateTime <DateTime?>]`: Shows the timestamp for the latest change to the externalUserState property. Supports $filter (eq, ne, NOT , in).
-    - `[FaxNumber <String>]`: The fax number of the user. Supports $filter (eq, ne, NOT , ge, le, in, startsWith).
+    - `[ExternalUserState <String>]`: For an external user invited to the tenant using the invitation API, this property represents the invited user's invitation status. For invited users, the state can be PendingAcceptance or Accepted, or null for all other users. Supports $filter (eq, ne, not , in).
+    - `[ExternalUserStateChangeDateTime <DateTime?>]`: Shows the timestamp for the latest change to the externalUserState property. Supports $filter (eq, ne, not , in).
+    - `[FaxNumber <String>]`: The fax number of the user. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
     - `[FollowedSites <IMicrosoftGraphSite1[]>]`: 
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[CreatedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+      - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
       - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
       - `[Description <String>]`: Provides a user-visible description of the item. Optional.
       - `[ETag <String>]`: ETag for the item. Read-only.
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+      - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
       - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
       - `[Name <String>]`: The name of the item. Read-write.
       - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -5810,12 +6347,12 @@ DRIVE <IMicrosoftGraphDrive1>: drive
             - `[DriveItem <IMicrosoftGraphDriveItem1>]`: driveItem
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-              - `[CreatedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+              - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
               - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
               - `[Description <String>]`: Provides a user-visible description of the item. Optional.
               - `[ETag <String>]`: ETag for the item. Read-only.
               - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-              - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+              - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
               - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
               - `[Name <String>]`: The name of the item. Read-write.
               - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -5840,6 +6377,12 @@ DRIVE <IMicrosoftGraphDrive1>: drive
                 - `[Track <Int32?>]`: The number of the track on the original disc for this audio file.
                 - `[TrackCount <Int32?>]`: The total number of tracks on the original disc for this audio file.
                 - `[Year <Int32?>]`: The year the audio file was recorded.
+              - `[Bundle <IMicrosoftGraphBundle>]`: bundle
+                - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                - `[Album <IMicrosoftGraphAlbum>]`: album
+                  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                  - `[CoverImageItemId <String>]`: Unique identifier of the [driveItem][] that is the cover of the album.
+                - `[ChildCount <Int32?>]`: Number of children contained immediately within this container.
               - `[CTag <String>]`: An eTag for the content of the item. This eTag is not changed if only the metadata is changed. Note This property is not returned if the item is a folder. Read-only.
               - `[Children <IMicrosoftGraphDriveItem1[]>]`: Collection containing Item objects for the immediate children of Item. Only items representing folders have children. Read-only. Nullable.
               - `[Content <Byte[]>]`: The content stream, if the item represents a file.
@@ -5876,12 +6419,12 @@ DRIVE <IMicrosoftGraphDrive1>: drive
               - `[ListItem <IMicrosoftGraphListItem1>]`: listItem
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-                - `[CreatedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+                - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
                 - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
                 - `[Description <String>]`: Provides a user-visible description of the item. Optional.
                 - `[ETag <String>]`: ETag for the item. Read-only.
                 - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-                - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+                - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
                 - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
                 - `[Name <String>]`: The name of the item. Read-write.
                 - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -5911,6 +6454,9 @@ DRIVE <IMicrosoftGraphDrive1>: drive
                 - `[Altitude <Double?>]`: Optional. The altitude (height), in feet,  above sea level for the item. Read-only.
                 - `[Latitude <Double?>]`: Optional. The latitude, in decimal, for the item. Writable on OneDrive Personal.
                 - `[Longitude <Double?>]`: Optional. The longitude, in decimal, for the item. Writable on OneDrive Personal.
+              - `[Malware <IMicrosoftGraphMalware>]`: malware
+                - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                - `[Description <String>]`: Contains the virus details for the malware facet.
               - `[Package <IMicrosoftGraphPackage>]`: package
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[Type <String>]`: A string indicating the type of package. While oneNote is the only currently defined value, you should expect other package types to be returned and handle them accordingly.
@@ -5923,8 +6469,20 @@ DRIVE <IMicrosoftGraphDrive1>: drive
                 - `[Id <String>]`: Read-only.
                 - `[ExpirationDateTime <DateTime?>]`: A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission. DateTime.MinValue indicates there is no expiration set for this permission. Optional.
                 - `[GrantedTo <IMicrosoftGraphIdentitySet>]`: identitySet
-                - `[GrantedToIdentities <IMicrosoftGraphIdentitySet[]>]`: For link type permissions, the details of the users to whom permission was granted. Read-only.
-                - `[HasPassword <Boolean?>]`: This indicates whether password is set for this permission, it's only showing in response. Optional and Read-only and for OneDrive Personal only.
+                - `[GrantedToIdentities <IMicrosoftGraphIdentitySet[]>]`: 
+                - `[GrantedToIdentitiesV2 <IMicrosoftGraphSharePointIdentitySet[]>]`: For link type permissions, the details of the users to whom permission was granted. Read-only.
+                  - `[Application <IMicrosoftGraphIdentity>]`: identity
+                  - `[Device <IMicrosoftGraphIdentity>]`: identity
+                  - `[User <IMicrosoftGraphIdentity>]`: identity
+                  - `[Group <IMicrosoftGraphIdentity>]`: identity
+                  - `[SiteGroup <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
+                    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+                    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+                    - `[LoginName <String>]`: The sign in name of the SharePoint identity.
+                  - `[SiteUser <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
+                - `[GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>]`: sharePointIdentitySet
+                - `[HasPassword <Boolean?>]`: Indicates whether the password is set for this permission. This property only appears in the response. Optional. Read-only. For OneDrive Personal only.
                 - `[InheritedFrom <IMicrosoftGraphItemReference>]`: itemReference
                 - `[Invitation <IMicrosoftGraphSharingInvitation>]`: sharingInvitation
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -5940,7 +6498,7 @@ DRIVE <IMicrosoftGraphDrive1>: drive
                   - `[Type <String>]`: The type of the link created.
                   - `[WebHtml <String>]`: For embed links, this property contains the HTML code for an <iframe> element that will embed the item in a webpage.
                   - `[WebUrl <String>]`: A URL that opens the item in the browser on the OneDrive website.
-                - `[Roles <String[]>]`: The type of permission, e.g. read. See below for the full list of roles. Read-only.
+                - `[Roles <String[]>]`: The type of permission, for example, read. See below for the full list of roles. Read-only.
                 - `[ShareId <String>]`: A unique token that can be used to access this shared item via the [shares API][]. Read-only.
               - `[Photo <IMicrosoftGraphPhoto>]`: photo
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -6005,18 +6563,19 @@ DRIVE <IMicrosoftGraphDrive1>: drive
               - `[Subscriptions <IMicrosoftGraphSubscription1[]>]`: The set of subscriptions on the item. Only supported on the root of a drive.
                 - `[Id <String>]`: Read-only.
                 - `[ApplicationId <String>]`: Identifier of the application used to create the subscription. Read-only.
-                - `[ChangeType <String>]`: Indicates the type of change in the subscribed resource that will raise a change notification. The supported values are: created, updated, deleted. Multiple values can be combined using a comma-separated list. Required. Note: Drive root item and list change notifications support only the updated changeType. User and group change notifications support updated and deleted changeType.
-                - `[ClientState <String>]`: Specifies the value of the clientState property sent by the service in each change notification. The maximum length is 255 characters. The client can check that the change notification came from the service by comparing the value of the clientState property sent with the subscription with the value of the clientState property received with each change notification. Optional.
+                - `[ChangeType <String>]`: Required. Indicates the type of change in the subscribed resource that will raise a change notification. The supported values are: created, updated, deleted. Multiple values can be combined using a comma-separated list. Note:  Drive root item and list change notifications support only the updated changeType. User and group change notifications support updated and deleted changeType.
+                - `[ClientState <String>]`: Optional. Specifies the value of the clientState property sent by the service in each change notification. The maximum length is 255 characters. The client can check that the change notification came from the service by comparing the value of the clientState property sent with the subscription with the value of the clientState property received with each change notification.
                 - `[CreatorId <String>]`: Identifier of the user or service principal that created the subscription. If the app used delegated permissions to create the subscription, this field contains the ID of the signed-in user the app called on behalf of. If the app used application permissions, this field contains the ID of the service principal corresponding to the app. Read-only.
-                - `[EncryptionCertificate <String>]`: A base64-encoded representation of a certificate with a public key used to encrypt resource data in change notifications. Optional. Required when includeResourceData is true.
-                - `[EncryptionCertificateId <String>]`: A custom app-provided identifier to help identify the certificate needed to decrypt resource data. Optional. Required when includeResourceData is true.
-                - `[ExpirationDateTime <DateTime?>]`: Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to.  See the table below for maximum supported subscription length of time. Required.
-                - `[IncludeResourceData <Boolean?>]`: When set to true, change notifications include resource data (such as content of a chat message). Optional.
+                - `[EncryptionCertificate <String>]`: A base64-encoded representation of a certificate with a public key used to encrypt resource data in change notifications. Optional but required when includeResourceData is true.
+                - `[EncryptionCertificateId <String>]`: Optional. A custom app-provided identifier to help identify the certificate needed to decrypt resource data. Required when includeResourceData is true.
+                - `[ExpirationDateTime <DateTime?>]`: Required. Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to. For the maximum supported subscription length of time, see the table below.
+                - `[IncludeResourceData <Boolean?>]`: Optional. When set to true, change notifications include resource data (such as content of a chat message).
                 - `[LatestSupportedTlsVersion <String>]`: Specifies the latest version of Transport Layer Security (TLS) that the notification endpoint, specified by notificationUrl, supports. The possible values are: v1_0, v1_1, v1_2, v1_3. For subscribers whose notification endpoint supports a version lower than the currently recommended version (TLS 1.2), specifying this property by a set timeline allows them to temporarily use their deprecated version of TLS before completing their upgrade to TLS 1.2. For these subscribers, not setting this property per the timeline would result in subscription operations failing. For subscribers whose notification endpoint already supports TLS 1.2, setting this property is optional. In such cases, Microsoft Graph defaults the property to v1_2.
-                - `[LifecycleNotificationUrl <String>]`: The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved and missed notifications. This URL must make use of the HTTPS protocol. Optional. Read more about how Outlook resources use lifecycle notifications.
-                - `[NotificationQueryOptions <String>]`: OData Query Options for specifying value for the targeting resource. Clients receive notifications when resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property eg  when the print job is completed, when a print job resource isFetchable property value becomes true etc.
-                - `[NotificationUrl <String>]`: The URL of the endpoint that receives the change notifications. This URL must make use of the HTTPS protocol. Required.
-                - `[Resource <String>]`: Specifies the resource that will be monitored for changes. Do not include the base URL (https://graph.microsoft.com/beta/). See the possible resource path values for each supported resource. Required.
+                - `[LifecycleNotificationUrl <String>]`: Optional. The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved and missed notifications. This URL must make use of the HTTPS protocol.
+                - `[NotificationQueryOptions <String>]`: OData query options for specifying the value for the targeting resource. Clients receive notifications when the resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property. For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc.
+                - `[NotificationUrl <String>]`: Required. The URL of the endpoint that receives the change notifications. This URL must make use of the HTTPS protocol.
+                - `[NotificationUrlAppId <String>]`: 
+                - `[Resource <String>]`: Required. Specifies the resource that will be monitored for changes. Do not include the base URL (https://graph.microsoft.com/beta/). See the possible resource path values for each supported resource.
               - `[Thumbnails <IMicrosoftGraphThumbnailSet[]>]`: Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable.
                 - `[Id <String>]`: Read-only.
                 - `[Large <IMicrosoftGraphThumbnail>]`: thumbnail
@@ -6295,6 +6854,8 @@ DRIVE <IMicrosoftGraphDrive1>: drive
           - `[Choices <String[]>]`: The list of values available for this column.
           - `[DisplayAs <String>]`: How the choices are to be presented in the UX. Must be one of checkBoxes, dropDownMenu, or radioButtons
         - `[ColumnGroup <String>]`: For site columns, the name of the group this column belongs to. Helps organize related columns.
+        - `[ContentApprovalStatus <IMicrosoftGraphContentApprovalStatusColumn>]`: contentApprovalStatusColumn
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Currency <IMicrosoftGraphCurrencyColumn>]`: currencyColumn
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Locale <String>]`: Specifies the locale from which to infer the currency symbol.
@@ -6312,7 +6873,13 @@ DRIVE <IMicrosoftGraphDrive1>: drive
         - `[Geolocation <IMicrosoftGraphGeolocationColumn>]`: geolocationColumn
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Hidden <Boolean?>]`: Specifies whether the column is displayed in the user interface.
+        - `[HyperlinkOrPicture <IMicrosoftGraphHyperlinkOrPictureColumn>]`: hyperlinkOrPictureColumn
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[IsPicture <Boolean?>]`: Specifies whether the display format used for URL columns is an image or a hyperlink.
         - `[Indexed <Boolean?>]`: Specifies whether the column values can used for sorting and searching.
+        - `[IsDeletable <Boolean?>]`: Indicates whether this column can be deleted.
+        - `[IsReorderable <Boolean?>]`: Indicates whether values in the column can be reordered. Read-only.
+        - `[IsSealed <Boolean?>]`: Specifies whether the column can be changed.
         - `[Lookup <IMicrosoftGraphLookupColumn>]`: lookupColumn
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[AllowMultipleValues <Boolean?>]`: Indicates whether multiple values can be selected from the source.
@@ -6332,8 +6899,58 @@ DRIVE <IMicrosoftGraphDrive1>: drive
           - `[AllowMultipleSelection <Boolean?>]`: Indicates whether multiple values can be selected from the source.
           - `[ChooseFromType <String>]`: Whether to allow selection of people only, or people and groups. Must be one of peopleAndGroups or peopleOnly.
           - `[DisplayAs <String>]`: How to display the information about the person or group chosen. See below.
+        - `[PropagateChanges <Boolean?>]`: If true, changes to this column will be propagated to lists that implement the column.
         - `[ReadOnly <Boolean?>]`: Specifies whether the column values can be modified.
-        - `[Required <Boolean?>]`: Specifies whether the column value is not optional.
+        - `[Required <Boolean?>]`: Specifies whether the column value isn't optional.
+        - `[SourceColumn <IMicrosoftGraphColumnDefinition1>]`: columnDefinition
+        - `[Term <IMicrosoftGraphTermColumn1>]`: termColumn
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[AllowMultipleValues <Boolean?>]`: Specifies whether the column will allow more than one value
+          - `[ParentTerm <IMicrosoftGraphTermStoreTerm1>]`: term
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Id <String>]`: Read-only.
+            - `[Children <IMicrosoftGraphTermStoreTerm1[]>]`: Children of current term.
+            - `[CreatedDateTime <DateTime?>]`: Date and time of term creation. Read-only.
+            - `[Descriptions <IMicrosoftGraphTermStoreLocalizedDescription[]>]`: Description about term that is dependent on the languageTag.
+              - `[Description <String>]`: The description in the localized language.
+              - `[LanguageTag <String>]`: The language tag for the label.
+            - `[Labels <IMicrosoftGraphTermStoreLocalizedLabel[]>]`: Label metadata for a term.
+              - `[IsDefault <Boolean?>]`: Indicates whether the label is the default label.
+              - `[LanguageTag <String>]`: The language tag for the label.
+              - `[Name <String>]`: The name of the label.
+            - `[LastModifiedDateTime <DateTime?>]`: Last date and time of term modification. Read-only.
+            - `[Properties <IMicrosoftGraphKeyValue[]>]`: Collection of properties on the term.
+              - `[Key <String>]`: Key.
+              - `[Value <String>]`: Value.
+            - `[Relations <IMicrosoftGraphTermStoreRelation1[]>]`: To indicate which terms are related to the current term as either pinned or reused.
+              - `[Id <String>]`: Read-only.
+              - `[FromTerm <IMicrosoftGraphTermStoreTerm1>]`: term
+              - `[Relationship <String>]`: 
+              - `[Set <IMicrosoftGraphTermStoreSet1>]`: set
+                - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                - `[Id <String>]`: Read-only.
+                - `[Children <IMicrosoftGraphTermStoreTerm1[]>]`: Children terms of set in term [store].
+                - `[CreatedDateTime <DateTime?>]`: Date and time of set creation. Read-only.
+                - `[Description <String>]`: Description giving details on the term usage.
+                - `[LocalizedNames <IMicrosoftGraphTermStoreLocalizedName[]>]`: Name of the set for each languageTag.
+                  - `[LanguageTag <String>]`: The language tag for the label.
+                  - `[Name <String>]`: The name in the localized language.
+                - `[ParentGroup <IMicrosoftGraphTermStoreGroup1>]`: group
+                  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                  - `[Id <String>]`: Read-only.
+                  - `[CreatedDateTime <DateTime?>]`: Date and time of group creation. Read-only.
+                  - `[Description <String>]`: Description giving details on the term usage.
+                  - `[DisplayName <String>]`: Name of group.
+                  - `[ParentSiteId <String>]`: Id of the parent site of this group.
+                  - `[Scope <String>]`: 
+                  - `[Sets <IMicrosoftGraphTermStoreSet1[]>]`: All sets under the group in a term [store].
+                - `[Properties <IMicrosoftGraphKeyValue[]>]`: Custom properties for the set.
+                - `[Relations <IMicrosoftGraphTermStoreRelation1[]>]`: Indicates which terms have been pinned or reused directly under the set.
+                - `[Terms <IMicrosoftGraphTermStoreTerm1[]>]`: All the terms under the set.
+              - `[ToTerm <IMicrosoftGraphTermStoreTerm1>]`: term
+            - `[Set <IMicrosoftGraphTermStoreSet1>]`: set
+          - `[ShowFullyQualifiedName <Boolean?>]`: Specifies whether to display the entire term path or only the term label.
+          - `[TermSet <IMicrosoftGraphTermStoreSet1>]`: set
         - `[Text <IMicrosoftGraphTextColumn>]`: textColumn
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[AllowMultipleLines <Boolean?>]`: Whether to allow multiple lines of text.
@@ -6341,21 +6958,51 @@ DRIVE <IMicrosoftGraphDrive1>: drive
           - `[LinesForEditing <Int32?>]`: The size of the text box.
           - `[MaxLength <Int32?>]`: The maximum number of characters for the value.
           - `[TextType <String>]`: The type of text being stored. Must be one of plain or richText
+        - `[Thumbnail <IMicrosoftGraphThumbnailColumn>]`: thumbnailColumn
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Type <String>]`: columnTypes
+        - `[Validation <IMicrosoftGraphColumnValidation>]`: columnValidation
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[DefaultLanguage <String>]`: Default BCP 47 language tag for the description.
+          - `[Descriptions <IMicrosoftGraphDisplayNameLocalization[]>]`: Localized messages that explain what is needed for this column's value to be considered valid. User will be prompted with this message if validation fails.
+            - `[DisplayName <String>]`: If present, the value of this field contains the displayName string that has been set for the language present in the languageTag field.
+            - `[LanguageTag <String>]`: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
+          - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists
       - `[ContentTypes <IMicrosoftGraphContentType1[]>]`: The collection of content types defined for this site.
         - `[Id <String>]`: Read-only.
+        - `[AssociatedHubsUrls <String[]>]`: List of canonical URLs for hub sites with which this content type is associated to. This will contain all hubsites where this content type is queued to be enforced or is already enforced. Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
+        - `[Base <IMicrosoftGraphContentType1>]`: contentType
+        - `[BaseTypes <IMicrosoftGraphContentType1[]>]`: The collection of content types that are ancestors of this content type.
         - `[ColumnLinks <IMicrosoftGraphColumnLink[]>]`: The collection of columns that are required by this content type
           - `[Id <String>]`: Read-only.
           - `[Name <String>]`: The name of the column  in this content type.
+        - `[ColumnPositions <IMicrosoftGraphColumnDefinition1[]>]`: Column order information in a content type.
+        - `[Columns <IMicrosoftGraphColumnDefinition1[]>]`: The collection of column definitions for this contentType.
         - `[Description <String>]`: The descriptive text for the item.
+        - `[DocumentSet <IMicrosoftGraphDocumentSet1>]`: documentSet
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[AllowedContentTypes <IMicrosoftGraphContentTypeInfo[]>]`: Content types allowed in document set.
+          - `[DefaultContents <IMicrosoftGraphDocumentSetContent[]>]`: Default contents of document set.
+            - `[ContentType <IMicrosoftGraphContentTypeInfo>]`: contentTypeInfo
+            - `[FileName <String>]`: Name of the file in resource folder that should be added as a default content or a template in the document set
+            - `[FolderName <String>]`: Folder name in which the file will be placed when a new document set is created in the library.
+          - `[PropagateWelcomePageChanges <Boolean?>]`: Specifies whether to push welcome page changes to inherited content types.
+          - `[SharedColumns <IMicrosoftGraphColumnDefinition1[]>]`: 
+          - `[ShouldPrefixNameToFile <Boolean?>]`: Add the name of the Document Set to each file name.
+          - `[WelcomePageColumns <IMicrosoftGraphColumnDefinition1[]>]`: 
+          - `[WelcomePageUrl <String>]`: Welcome page absolute URL.
+        - `[DocumentTemplate <IMicrosoftGraphDocumentSetContent>]`: documentSetContent
         - `[Group <String>]`: The name of the group this content type belongs to. Helps organize related content types.
         - `[Hidden <Boolean?>]`: Indicates whether the content type is hidden in the list's 'New' menu.
         - `[InheritedFrom <IMicrosoftGraphItemReference>]`: itemReference
+        - `[IsBuiltIn <Boolean?>]`: Specifies if a content type is a built-in content type.
         - `[Name <String>]`: The name of the content type.
         - `[Order <IMicrosoftGraphContentTypeOrder>]`: contentTypeOrder
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Default <Boolean?>]`: Whether this is the default Content Type
           - `[Position <Int32?>]`: Specifies the position in which the Content Type appears in the selection UI.
         - `[ParentId <String>]`: The unique identifier of the content type.
+        - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.
         - `[ReadOnly <Boolean?>]`: If true, the content type cannot be modified unless this value is first set to false.
         - `[Sealed <Boolean?>]`: If true, the content type cannot be modified by users or through push-down operations. Only site collection administrators can seal or unseal content types.
       - `[DisplayName <String>]`: The full title for the site. Read-only.
@@ -6376,27 +7023,28 @@ DRIVE <IMicrosoftGraphDrive1>: drive
           - `[Target <String>]`: The target of the error.
         - `[Message <String>]`: A non-localized message for the developer.
         - `[Target <String>]`: The target of the error.
+      - `[ExternalColumns <IMicrosoftGraphColumnDefinition1[]>]`: The collection of column definitions available in the site that are referenced from the sites in the parent hierarchy of the current site.
       - `[Items <IMicrosoftGraphBaseItem1[]>]`: Used to address any item contained in this site. This collection cannot be enumerated.
         - `[Id <String>]`: Read-only.
         - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[CreatedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+        - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
         - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
         - `[Description <String>]`: Provides a user-visible description of the item. Optional.
         - `[ETag <String>]`: ETag for the item. Read-only.
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+        - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
         - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
         - `[Name <String>]`: The name of the item. Read-write.
         - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
         - `[WebUrl <String>]`: URL that displays the resource in the browser. Read-only.
       - `[Lists <IMicrosoftGraphList1[]>]`: The collection of lists under this site.
         - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[CreatedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+        - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
         - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
         - `[Description <String>]`: Provides a user-visible description of the item. Optional.
         - `[ETag <String>]`: ETag for the item. Read-only.
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+        - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
         - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
         - `[Name <String>]`: The name of the item. Read-write.
         - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -6515,13 +7163,21 @@ DRIVE <IMicrosoftGraphDrive1>: drive
         - `[Hostname <String>]`: The hostname for the site collection. Read-only.
         - `[Root <IMicrosoftGraphRoot>]`: root
       - `[Sites <IMicrosoftGraphSite1[]>]`: The collection of the sub-sites under this site.
-    - `[GivenName <String>]`: The given name (first name) of the user. Maximum length is 64 characters. Supports $filter (eq, ne, NOT , ge, le, in, startsWith).
+      - `[TermStore <IMicrosoftGraphTermStore1>]`: store
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: Read-only.
+        - `[DefaultLanguageTag <String>]`: Default language of the term store.
+        - `[Groups <IMicrosoftGraphTermStoreGroup1[]>]`: Collection of all groups available in the term store.
+        - `[LanguageTags <String[]>]`: List of languages for the term store.
+        - `[Sets <IMicrosoftGraphTermStoreSet1[]>]`: Collection of all sets available in the term store.
+      - `[TermStores <IMicrosoftGraphTermStore1[]>]`: The collection of termStores under this site.
+    - `[GivenName <String>]`: The given name (first name) of the user. Maximum length is 64 characters. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
     - `[HireDate <DateTime?>]`: The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.  Returned only on $select.  Note: This property is specific to SharePoint Online. We recommend using the native employeeHireDate property to set and update hire date values using Microsoft Graph APIs.
-    - `[Identities <IMicrosoftGraphObjectIdentity[]>]`: Represents the identities that can be used to sign in to this user account. An identity can be provided by Microsoft (also known as a local account), by organizations, or by social identity providers such as Facebook, Google, and Microsoft, and tied to a user account. May contain multiple items with the same signInType value. Supports $filter (eq) only where the signInType is not userPrincipalName.
+    - `[Identities <IMicrosoftGraphObjectIdentity[]>]`: Represents the identities that can be used to sign in to this user account. An identity can be provided by Microsoft (also known as a local account), by organizations, or by social identity providers such as Facebook, Google, and Microsoft, and tied to a user account. May contain multiple items with the same signInType value. Supports $filter (eq) including on null values, only where the signInType is not userPrincipalName.
       - `[Issuer <String>]`: Specifies the issuer of the identity, for example facebook.com.For local accounts (where signInType is not federated), this property is the local B2C tenant default domain name, for example contoso.onmicrosoft.com.For external users from other Azure AD organization, this will be the domain of the federated organization, for example contoso.com.Supports $filter. 512 character limit.
       - `[IssuerAssignedId <String>]`: Specifies the unique identifier assigned to the user by the issuer. The combination of issuer and issuerAssignedId must be unique within the organization. Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must be a valid local part of an email addressSupports $filter. 100 character limit.
-      - `[SignInType <String>]`: Specifies the user sign-in types in your directory, such as emailAddress, userName or federated. Here, federated represents a unique identifier for a user from an issuer, that can be in any format chosen by the issuer. Additional validation is enforced on issuerAssignedId when the sign-in type is set to emailAddress or userName. This property can also be set to any custom string.
-    - `[ImAddresses <String[]>]`: The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only. Supports $filter (eq, NOT, ge, le, startsWith).
+      - `[SignInType <String>]`: Specifies the user sign-in types in your directory, such as emailAddress, userName, federated, or userPrincipalName. federated represents a unique identifier for a user from an issuer, that can be in any format chosen by the issuer. Setting or updating a userPrincipalName identity will update the value of the userPrincipalName property on the user object. The validations performed on the userPrincipalName property on the user object, for example, verified domains and acceptable characters, will be performed when setting or updating a userPrincipalName identity. Additional validation is enforced on issuerAssignedId when the sign-in type is set to emailAddress or userName. This property can also be set to any custom string.
+    - `[ImAddresses <String[]>]`: The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only. Supports $filter (eq, not, ge, le, startsWith).
     - `[InferenceClassification <IMicrosoftGraphInferenceClassification>]`: inferenceClassification
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: Read-only.
@@ -6541,7 +7197,7 @@ DRIVE <IMicrosoftGraphDrive1>: drive
             - `[Address <String>]`: The email address of the user who shared the item.
             - `[DisplayName <String>]`: The display name of the user who shared the item.
             - `[Id <String>]`: The id of the user who shared the item.
-          - `[SharedDateTime <DateTime?>]`: The date and time the file was last shared. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: 2014-01-01T00:00:00Z. Read-only.
+          - `[SharedDateTime <DateTime?>]`: The date and time the file was last shared. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
           - `[SharingReference <IMicrosoftGraphResourceReference>]`: resourceReference
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The item's unique identifier.
@@ -6576,14 +7232,14 @@ DRIVE <IMicrosoftGraphDrive1>: drive
         - `[Id <String>]`: Read-only.
         - `[LastUsed <IMicrosoftGraphUsageDetails>]`: usageDetails
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[LastAccessedDateTime <DateTime?>]`: The date and time the resource was last accessed by the user. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: 2014-01-01T00:00:00Z. Read-only.
-          - `[LastModifiedDateTime <DateTime?>]`: The date and time the resource was last modified by the user. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: 2014-01-01T00:00:00Z. Read-only.
+          - `[LastAccessedDateTime <DateTime?>]`: The date and time the resource was last accessed by the user. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+          - `[LastModifiedDateTime <DateTime?>]`: The date and time the resource was last modified by the user. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
         - `[Resource <IMicrosoftGraphEntity>]`: entity
         - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
         - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
     - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
-    - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
-    - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Supports $filter (eq, ne, NOT , ge, le, in, startsWith).
+    - `[IsResourceAccount <Boolean?>]`: Do not use – reserved for future use.
+    - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
     - `[JoinedTeams <IMicrosoftGraphTeam1[]>]`: The Microsoft Teams teams that the user is a member of. Read-only. Nullable.
       - `[Id <String>]`: Read-only.
       - `[Channels <IMicrosoftGraphChannel1[]>]`: The collection of channels & messages associated with the team.
@@ -6609,103 +7265,103 @@ DRIVE <IMicrosoftGraphDrive1>: drive
         - `[AllowGiphy <Boolean?>]`: If set to true, enables Giphy use.
         - `[AllowStickersAndMemes <Boolean?>]`: If set to true, enables users to include stickers and memes.
         - `[GiphyContentRating <String>]`: giphyRatingType
-      - `[Group <IMicrosoftGraphGroup1>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
+      - `[Group <IMicrosoftGraphGroup>]`: group
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DeletedDateTime <DateTime?>]`: 
         - `[Id <String>]`: Read-only.
         - `[AcceptedSenders <IMicrosoftGraphDirectoryObject[]>]`: The list of users or groups that are allowed to create post's or calendar events in this group. If this list is non-empty then only users or groups listed here are allowed to post.
         - `[AllowExternalSenders <Boolean?>]`: Indicates if people external to the organization can send messages to the group. Default value is false. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
-        - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment1[]>]`: Represents the app roles a group has been granted for an application.
+        - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment1[]>]`: Represents the app roles a group has been granted for an application. Supports $expand.
         - `[AssignedLabels <IMicrosoftGraphAssignedLabel[]>]`: The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group. Returned only on $select.
           - `[DisplayName <String>]`: The display name of the label. Read-only.
           - `[LabelId <String>]`: The unique identifier of the label.
-        - `[AssignedLicenses <IMicrosoftGraphAssignedLicense[]>]`: The licenses that are assigned to the group. Returned only on $select. Read-only.
+        - `[AssignedLicenses <IMicrosoftGraphAssignedLicense[]>]`: The licenses that are assigned to the group. Returned only on $select. Supports $filter (eq). Read-only.
         - `[AutoSubscribeNewMembers <Boolean?>]`: Indicates if new members added to the group will be auto-subscribed to receive email notifications. You can set this property in a PATCH request for the group; do not set it in the initial POST request that creates the group. Default value is false. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
         - `[Calendar <IMicrosoftGraphCalendar1>]`: calendar
         - `[CalendarView <IMicrosoftGraphEvent1[]>]`: The calendar view for the calendar. Read-only.
-        - `[Classification <String>]`: Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList setting value, based on the template definition.Returned by default.
+        - `[Classification <String>]`: Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList setting value, based on the template definition.Returned by default. Supports $filter (eq, ne, not, ge, le, startsWith).
         - `[Conversations <IMicrosoftGraphConversation1[]>]`: The group's conversations.
           - `[Id <String>]`: Read-only.
-          - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this Conversation has at least one attachment.
-          - `[LastDeliveredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-          - `[Preview <String>]`: A short summary from the body of the latest post in this converstaion.
+          - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this Conversation has at least one attachment. Supports $filter (eq, ne) and $search.
+          - `[LastDeliveredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Supports $filter (eq, ne, le, ge).
+          - `[Preview <String>]`: A short summary from the body of the latest post in this conversation.
           - `[Threads <IMicrosoftGraphConversationThread1[]>]`: A collection of all the conversation threads in the conversation. A navigation property. Read-only. Nullable.
             - `[Id <String>]`: Read-only.
-            - `[CcRecipients <IMicrosoftGraphRecipient[]>]`: The Cc: recipients for the thread.
-            - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this thread has at least one attachment.
-            - `[IsLocked <Boolean?>]`: Indicates if the thread is locked.
-            - `[LastDeliveredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-            - `[Posts <IMicrosoftGraphPost1[]>]`: Read-only. Nullable.
+            - `[CcRecipients <IMicrosoftGraphRecipient[]>]`: The Cc: recipients for the thread. Returned only on $select.
+            - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this thread has at least one attachment. Returned by default.
+            - `[IsLocked <Boolean?>]`: Indicates if the thread is locked. Returned by default.
+            - `[LastDeliveredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default.
+            - `[Posts <IMicrosoftGraphPost[]>]`: Read-only. Nullable.
               - `[Categories <String[]>]`: The categories associated with the item
               - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
               - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[Id <String>]`: Read-only.
-              - `[Attachments <IMicrosoftGraphAttachment[]>]`: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post. Read-only. Nullable.
+              - `[Attachments <IMicrosoftGraphAttachment[]>]`: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post. Read-only. Nullable. Supports $expand.
               - `[Body <IMicrosoftGraphItemBody>]`: itemBody
               - `[ConversationId <String>]`: Unique ID of the conversation. Read-only.
               - `[ConversationThreadId <String>]`: Unique ID of the conversation thread. Read-only.
-              - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the post. Read-only. Nullable.
+              - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the post. Read-only. Nullable. Supports $expand.
               - `[From <IMicrosoftGraphRecipient>]`: recipient
               - `[HasAttachments <Boolean?>]`: Indicates whether the post has at least one attachment. This is a default property.
-              - `[InReplyTo <IMicrosoftGraphPost1>]`: post
+              - `[InReplyTo <IMicrosoftGraphPost>]`: post
               - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the post. Read-only. Nullable.
               - `[NewParticipants <IMicrosoftGraphRecipient[]>]`: Conversation participants that were added to the thread as part of this post.
               - `[ReceivedDateTime <DateTime?>]`: Specifies when the post was received. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[Sender <IMicrosoftGraphRecipient>]`: recipient
               - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the post. Read-only. Nullable.
-            - `[Preview <String>]`: A short summary from the body of the latest post in this conversation.
-            - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: The To: recipients for the thread.
-            - `[Topic <String>]`: The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated.
-            - `[UniqueSenders <String[]>]`: All the users that sent a message to this thread.
+            - `[Preview <String>]`: A short summary from the body of the latest post in this conversation. Returned by default.
+            - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: The To: recipients for the thread. Returned only on $select.
+            - `[Topic <String>]`: The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated. Returned by default.
+            - `[UniqueSenders <String[]>]`: All the users that sent a message to this thread. Returned by default.
           - `[Topic <String>]`: The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated.
           - `[UniqueSenders <String[]>]`: All the users that sent a message to this Conversation.
-        - `[CreatedDateTime <DateTime?>]`: Timestamp of when the group was created. The value cannot be modified and is automatically populated when the group is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Read-only.
-        - `[CreatedOnBehalfOf <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-        - `[Description <String>]`: An optional description for the group. Returned by default.
-        - `[DisplayName <String>]`: The display name for the group. This property is required when a group is created and cannot be cleared during updates. Returned by default. Supports $filter and $orderby.
+        - `[CreatedDateTime <DateTime?>]`: Timestamp of when the group was created. The value cannot be modified and is automatically populated when the group is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Supports $filter (eq, ne, not, ge, le, in). Read-only.
+        - `[CreatedOnBehalfOf <IMicrosoftGraphDirectoryObject>]`: directoryObject
+        - `[Description <String>]`: An optional description for the group. Returned by default. Supports $filter (eq, ne, not, ge, le, startsWith) and $search.
+        - `[DisplayName <String>]`: The display name for the group. Required. Returned by default. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderBy.
         - `[Drive <IMicrosoftGraphDrive1>]`: drive
         - `[Drives <IMicrosoftGraphDrive1[]>]`: The group's drives. Read-only.
         - `[Events <IMicrosoftGraphEvent1[]>]`: The group's events.
-        - `[ExpirationDateTime <DateTime?>]`: Timestamp of when the group is set to expire. The value cannot be modified and is automatically populated when the group is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Read-only.
+        - `[ExpirationDateTime <DateTime?>]`: Timestamp of when the group is set to expire. The value cannot be modified and is automatically populated when the group is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Supports $filter (eq, ne, not, ge, le, in). Read-only.
         - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the group. Read-only. Nullable.
         - `[GroupLifecyclePolicies <IMicrosoftGraphGroupLifecyclePolicy[]>]`: The collection of lifecycle policies for this group. Read-only. Nullable.
           - `[Id <String>]`: Read-only.
           - `[AlternateNotificationEmails <String>]`: List of email address to send notifications for groups without owners. Multiple email address can be defined by separating email address with a semicolon.
           - `[GroupLifetimeInDays <Int32?>]`: Number of days before a group expires and needs to be renewed. Once renewed, the group expiration is extended by the number of days defined.
           - `[ManagedGroupTypes <String>]`: The group type for which the expiration policy applies. Possible values are All, Selected or None.
-        - `[GroupTypes <String[]>]`: Specifies the group type and its membership.  If the collection contains Unified, the group is a Microsoft 365 group; otherwise, it's either a security group or distribution group. For details, see groups overview.If the collection includes DynamicMembership, the group has dynamic membership; otherwise, membership is static.  Returned by default. Supports $filter.
-        - `[HasMembersWithLicenseErrors <Boolean?>]`: Indicates whether there are members in this group that have license errors from its group-based license assignment. This property is never returned on a GET operation. You can use it as a $filter argument to get groups that have members with license errors (that is, filter for this property being true).
+        - `[GroupTypes <String[]>]`: Specifies the group type and its membership.  If the collection contains Unified, the group is a Microsoft 365 group; otherwise, it's either a security group or distribution group. For details, see groups overview.If the collection includes DynamicMembership, the group has dynamic membership; otherwise, membership is static.  Returned by default. Supports $filter (eq, not).
+        - `[HasMembersWithLicenseErrors <Boolean?>]`: Indicates whether there are members in this group that have license errors from its group-based license assignment. This property is never returned on a GET operation. You can use it as a $filter argument to get groups that have members with license errors (that is, filter for this property being true).  Supports $filter (eq).
         - `[HideFromAddressLists <Boolean?>]`: true if the group is not displayed in certain parts of the Outlook user interface: in the Address Book, in address lists for selecting message recipients, and in the Browse Groups dialog for searching groups; false otherwise. Default value is false. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
         - `[HideFromOutlookClients <Boolean?>]`: true if the group is not displayed in Outlook clients, such as Outlook for Windows and Outlook on the web, false otherwise. Default value is false. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
         - `[IsArchived <Boolean?>]`: 
-        - `[IsAssignableToRole <Boolean?>]`: Indicates whether this group can be assigned to an Azure Active Directory role.This property can only be set while creating the group and is immutable. If set to true, the securityEnabled property must also be set to true and the group cannot be a dynamic group (that is, groupTypes cannot contain DynamicMembership).Only callers in Global Administrator and Privileged Role Administrator roles can set this property. For more, see Using a group to manage Azure AD role assignmentsReturned by default.
+        - `[IsAssignableToRole <Boolean?>]`: Indicates whether this group can be assigned to an Azure Active Directory role. Optional. This property can only be set while creating the group and is immutable. If set to true, the securityEnabled property must also be set to true and the group cannot be a dynamic group (that is, groupTypes cannot contain DynamicMembership). Only callers in Global administrator and Privileged role administrator roles can set this property. The caller must be assigned the RoleManagement.ReadWrite.Directory permission to set this property or update the membership of such groups. For more, see Using a group to manage Azure AD role assignmentsReturned by default. Supports $filter (eq, ne, not).
         - `[IsSubscribedByMail <Boolean?>]`: Indicates whether the signed-in user is subscribed to receive email conversations. Default value is true. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
         - `[LicenseProcessingState <IMicrosoftGraphLicenseProcessingState>]`: licenseProcessingState
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[State <String>]`: 
-        - `[Mail <String>]`: The SMTP address for the group, for example, 'serviceadmins@contoso.onmicrosoft.com'. Returned by default. Read-only. Supports $filter.
-        - `[MailEnabled <Boolean?>]`: Specifies whether the group is mail-enabled. Returned by default.
-        - `[MailNickname <String>]`: The mail alias for the group, unique in the organization. This property must be specified when a group is created. These characters cannot be used in the mailNickName: @()/[]';:.<>,SPACE. Returned by default. Supports $filter.
-        - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups and administrative units that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable.
-        - `[Members <IMicrosoftGraphDirectoryObject[]>]`: Users, contacts, and groups that are members of this group. HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only. Nullable.
+        - `[Mail <String>]`: The SMTP address for the group, for example, 'serviceadmins@contoso.onmicrosoft.com'. Returned by default. Read-only. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+        - `[MailEnabled <Boolean?>]`: Specifies whether the group is mail-enabled. Required. Returned by default. Supports $filter (eq, ne, not, and eq on null values).
+        - `[MailNickname <String>]`: The mail alias for the group, unique for Microsoft 365 groups in the organization. Maximum length is 64 characters. This property can contain only characters in the ASCII character set 0 - 127 except the following: @ () / [] ' ; : . <> , SPACE. Returned by default. Supports $filter (eq, ne, not, ge, le, in, startsWith).
+        - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups and administrative units that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable. Supports $expand.
+        - `[Members <IMicrosoftGraphDirectoryObject[]>]`: Members of this group, who can be users, devices, other groups, or service principals. Supports the List members, Add member, and Remove member operations. Nullable. Supports $expand including nested $select. For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName).
         - `[MembersWithLicenseErrors <IMicrosoftGraphDirectoryObject[]>]`: A list of group members with license errors from this group-based license assignment. Read-only.
-        - `[MembershipRule <String>]`: The rule that determines members for this group if the group is a dynamic group (groupTypes contains DynamicMembership). For more information about the syntax of the membership rule, see Membership Rules syntax. Returned by default.
-        - `[MembershipRuleProcessingState <String>]`: Indicates whether the dynamic membership processing is on or paused. Possible values are On or Paused. Returned by default.
+        - `[MembershipRule <String>]`: The rule that determines members for this group if the group is a dynamic group (groupTypes contains DynamicMembership). For more information about the syntax of the membership rule, see Membership Rules syntax. Returned by default. Supports $filter (eq, ne, not, ge, le, startsWith).
+        - `[MembershipRuleProcessingState <String>]`: Indicates whether the dynamic membership processing is on or paused. Possible values are On or Paused. Returned by default. Supports $filter (eq, ne, not, in).
         - `[OnPremisesDomainName <String>]`: Contains the on-premises domain FQDN, also called dnsDomainName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect.Returned by default. Read-only.
-        - `[OnPremisesLastSyncDateTime <DateTime?>]`: Indicates the last time at which the group was synced with the on-premises directory.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Read-only. Supports $filter.
+        - `[OnPremisesLastSyncDateTime <DateTime?>]`: Indicates the last time at which the group was synced with the on-premises directory.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Read-only. Supports $filter (eq, ne, not, ge, le, in).
         - `[OnPremisesNetBiosName <String>]`: Contains the on-premises netBios name synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect.Returned by default. Read-only.
-        - `[OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError[]>]`: Errors when using Microsoft synchronization product during provisioning. Returned by default.
+        - `[OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError[]>]`: Errors when using Microsoft synchronization product during provisioning. Returned by default. Supports $filter (eq, not).
           - `[Category <String>]`: Category of the provisioning error. Note: Currently, there is only one possible value. Possible value: PropertyConflict - indicates a property value is not unique. Other objects contain the same value for the property.
           - `[OccurredDateTime <DateTime?>]`: The date and time at which the error occurred.
           - `[PropertyCausingError <String>]`: Name of the directory property causing the error. Current possible values: UserPrincipalName or ProxyAddress
           - `[Value <String>]`: Value of the property causing the error.
-        - `[OnPremisesSamAccountName <String>]`: Contains the on-premises SAM account name synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect.Returned by default. Read-only.
-        - `[OnPremisesSecurityIdentifier <String>]`: Contains the on-premises security identifier (SID) for the group that was synchronized from on-premises to the cloud. Returned by default. Read-only.
-        - `[OnPremisesSyncEnabled <Boolean?>]`: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default). Returned by default. Read-only. Supports $filter.
+        - `[OnPremisesSamAccountName <String>]`: Contains the on-premises SAM account name synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect.Returned by default. Supports $filter (eq, ne, not, ge, le, in, startsWith). Read-only.
+        - `[OnPremisesSecurityIdentifier <String>]`: Contains the on-premises security identifier (SID) for the group that was synchronized from on-premises to the cloud. Returned by default. Supports $filter on null values. Read-only.
+        - `[OnPremisesSyncEnabled <Boolean?>]`: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default). Returned by default. Read-only. Supports $filter (eq, ne, not, in, and eq on null values).
         - `[Onenote <IMicrosoftGraphOnenote1>]`: onenote
-        - `[Owners <IMicrosoftGraphDirectoryObject[]>]`: The owners of the group. The owners are a set of non-admin users who are allowed to modify this object. HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only. Nullable.
-        - `[PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>]`: The permissions that have been granted for a group to a specific application.
+        - `[Owners <IMicrosoftGraphDirectoryObject[]>]`: The owners of the group who can be users or service principals. Nullable. If this property is not specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner. Supports $expand including nested $select. For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
+        - `[PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>]`: The permissions that have been granted for a group to a specific application. Supports $expand.
           - `[DeletedDateTime <DateTime?>]`: 
           - `[Id <String>]`: Read-only.
           - `[ClientAppId <String>]`: ID of the service principal of the Azure AD app that has been granted access. Read-only.
@@ -6787,15 +7443,15 @@ DRIVE <IMicrosoftGraphDrive1>: drive
                 - `[Category6 <String>]`: The label associated with Category 6
               - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[Owner <String>]`: ID of the Group that owns the plan. A valid group must exist before this field can be set. After it is set, this property can't be updated.
+            - `[Owner <String>]`: ID of the Group that owns the plan. A valid group must exist before this field can be set. After it is set, this property can’t be updated.
             - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Collection of tasks in the plan. Read-only. Nullable.
             - `[Title <String>]`: Required. Title of the plan.
-        - `[PreferredDataLocation <String>]`: The preferred data location for the group. For more information, see  OneDrive Online Multi-Geo. Returned by default.
-        - `[PreferredLanguage <String>]`: The preferred language for a Microsoft 365 group. Should follow ISO 639-1 Code; for example 'en-US'. Returned by default.
-        - `[ProxyAddresses <String[]>]`: Email addresses for the group that direct to the same group mailbox. For example: ['SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com']. The any operator is required for filter expressions on multi-valued properties. Returned by default. Read-only. Not nullable. Supports $filter.
+        - `[PreferredDataLocation <String>]`: The preferred data location for the Microsoft 365 group. By default, the group inherits the group creator's preferred data location. To set this property, the calling user must be assigned one of the following Azure AD roles:  Global Administrator  User Account Administrator Directory Writer  Exchange Administrator  SharePoint Administrator  For more information about this property, see  OneDrive Online Multi-Geo. Nullable. Returned by default.
+        - `[PreferredLanguage <String>]`: The preferred language for a Microsoft 365 group. Should follow ISO 639-1 Code; for example en-US. Returned by default. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+        - `[ProxyAddresses <String[]>]`: Email addresses for the group that direct to the same group mailbox. For example: ['SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com']. The any operator is required for filter expressions on multi-valued properties. Returned by default. Read-only. Not nullable. Supports $filter (eq, not, ge, le, startsWith).
         - `[RejectedSenders <IMicrosoftGraphDirectoryObject[]>]`: The list of users or groups that are not allowed to create posts or calendar events in this group. Nullable
-        - `[RenewedDateTime <DateTime?>]`: Timestamp of when the group was last renewed. This cannot be modified directly and is only updated via the renew service action. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Read-only.
-        - `[SecurityEnabled <Boolean?>]`: Specifies whether the group is a security group. Returned by default. Supports $filter.
+        - `[RenewedDateTime <DateTime?>]`: Timestamp of when the group was last renewed. This cannot be modified directly and is only updated via the renew service action. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Supports $filter (eq, ne, not, ge, le, in). Read-only.
+        - `[SecurityEnabled <Boolean?>]`: Specifies whether the group is a security group. Required.Returned by default. Supports $filter (eq, ne, not, in).
         - `[SecurityIdentifier <String>]`: Security identifier of the group, used in Windows scenarios. Returned by default.
         - `[Settings <IMicrosoftGraphGroupSetting[]>]`: Settings that can govern this group's behavior, like whether members can invite guest users to the group. Nullable.
           - `[Id <String>]`: Read-only.
@@ -6811,7 +7467,7 @@ DRIVE <IMicrosoftGraphDrive1>: drive
         - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: 
         - `[TransitiveMembers <IMicrosoftGraphDirectoryObject[]>]`: 
         - `[UnseenCount <Int32?>]`: Count of conversations that have received new posts since the signed-in user last visited the group. This property is the same as unseenConversationsCount.Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
-        - `[Visibility <String>]`: Specifies the group join policy and group content visibility for groups. Possible values are: Private, Public, or Hiddenmembership. Hiddenmembership can be set only for Microsoft 365 groups, when the groups are created. It can't be updated later. Other values of visibility can be updated after group creation. If visibility value is not specified during group creation on Microsoft Graph, a security group is created as Private by default and Microsoft 365 group is Public. See group visibility options to learn more. Returned by default.
+        - `[Visibility <String>]`: Specifies the group join policy and group content visibility for groups. Possible values are: Private, Public, or Hiddenmembership. Hiddenmembership can be set only for Microsoft 365 groups, when the groups are created. It can't be updated later. Other values of visibility can be updated after group creation. If visibility value is not specified during group creation on Microsoft Graph, a security group is created as Private by default and Microsoft 365 group is Public.  Groups assignable to roles are always Private. See group visibility options to learn more. Returned by default. Nullable.
       - `[GuestSettings <IMicrosoftGraphTeamGuestSettings>]`: teamGuestSettings
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[AllowCreateUpdateChannels <Boolean?>]`: If set to true, guests can add and update channels.
@@ -7000,12 +7656,13 @@ DRIVE <IMicrosoftGraphDrive1>: drive
         - `[Id <String>]`: Read-only.
       - `[Visibility <String>]`: teamVisibilityType
       - `[WebUrl <String>]`: A hyperlink that will go to the team in the Microsoft Teams client. This is the URL that you get when you right-click a team in the Microsoft Teams client and select Get link to team. This URL should be treated as an opaque blob, and not parsed.
-    - `[LastPasswordChangeDateTime <DateTime?>]`: The time when this Azure AD user last changed their password. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Returned only on $select.
+    - `[LastPasswordChangeDateTime <DateTime?>]`: The time when this Azure AD user last changed their password or when their password was created, , whichever date the latest action was performed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Returned only on $select.
     - `[LegalAgeGroupClassification <String>]`: Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated based on ageGroup and consentProvidedForMinor properties. Allowed values: null, minorWithOutParentalConsent, minorWithParentalConsent, minorNoParentalConsentRequired, notAdult and adult. Refer to the legal age group property definitions for further information. Returned only on $select.
     - `[LicenseAssignmentStates <IMicrosoftGraphLicenseAssignmentState[]>]`: State of license assignments for this user. Read-only. Returned only on $select.
       - `[AssignedByGroup <String>]`: The id of the group that assigns this license. If the assignment is a direct-assigned license, this field will be Null. Read-Only.
       - `[DisabledPlans <String[]>]`: The service plans that are disabled in this assignment. Read-Only.
       - `[Error <String>]`: License assignment failure error. If the license is assigned successfully, this field will be Null. Read-Only. Possible values: CountViolation, MutuallyExclusiveViolation, DependencyViolation, ProhibitedInUsageLocationViolation, UniquenessViolation, and Others. For more information on how to identify and resolve license assignment errors see here.
+      - `[LastUpdatedDateTime <DateTime?>]`: The timestamp when the state of the license assignment was last updated.
       - `[SkuId <String>]`: The unique identifier for the SKU. Read-Only.
       - `[State <String>]`: Indicate the current state of this assignment. Read-Only. Possible values: Active, ActiveWithError, Disabled and Error.
     - `[LicenseDetails <IMicrosoftGraphLicenseDetails[]>]`: A collection of this user's license details. Read-only.
@@ -7017,7 +7674,7 @@ DRIVE <IMicrosoftGraphDrive1>: drive
         - `[ServicePlanName <String>]`: The name of the service plan.
       - `[SkuId <String>]`: Unique identifier (GUID) for the service SKU. Equal to the skuId property on the related SubscribedSku object. Read-only
       - `[SkuPartNumber <String>]`: Unique SKU display name. Equal to the skuPartNumber on the related SubscribedSku object; for example: 'AAD_Premium'. Read-only
-    - `[Mail <String>]`: The SMTP address for the user, for example, admin@contoso.com. Changes to this property will also update the user's proxyAddresses collection to include the value as an SMTP address. While this property can contain accent characters, using them can cause access issues with other Microsoft applications for the user. Supports $filter (eq, ne, NOT, ge, le, in, startsWith, endsWith).
+    - `[Mail <String>]`: The SMTP address for the user, for example, admin@contoso.com. Changes to this property will also update the user's proxyAddresses collection to include the value as an SMTP address. For Azure AD B2C accounts, this property can be updated up to only ten times with unique SMTP addresses. This property cannot contain accent characters.  Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith, and eq on null values).
     - `[MailFolders <IMicrosoftGraphMailFolder1[]>]`: The user's mail folders. Read-only. Nullable.
       - `[Id <String>]`: Read-only.
       - `[ChildFolderCount <Int32?>]`: The number of immediate child mailFolders in the current mailFolder.
@@ -7104,31 +7761,31 @@ DRIVE <IMicrosoftGraphDrive1>: drive
         - `[HasAttachments <Boolean?>]`: Indicates whether the message has attachments. This property doesn't include inline attachments, so if a message contains only inline attachments, this property is false. To verify the existence of inline attachments, parse the body property to look for a src attribute, such as <IMG src='cid:image001.jpg@01D26CD8.6C05F070'>.
         - `[Importance <String>]`: importance
         - `[InferenceClassification <String>]`: inferenceClassificationType
-        - `[InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]`: A collection of message headers defined by RFC5322. The set includes message headers indicating the network path taken by a message from the sender to the recipient. It can also contain custom message headers that hold app data for the message.  Returned only on applying a $select query option. Read-only.
+        - `[InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]`: 
           - `[Name <String>]`: Represents the key in a key-value pair.
           - `[Value <String>]`: The value in a key-value pair.
-        - `[InternetMessageId <String>]`: The message ID in the format specified by RFC2822.
-        - `[IsDeliveryReceiptRequested <Boolean?>]`: Indicates whether a read receipt is requested for the message.
-        - `[IsDraft <Boolean?>]`: Indicates whether the message is a draft. A message is a draft if it hasn't been sent yet.
-        - `[IsRead <Boolean?>]`: Indicates whether the message has been read.
-        - `[IsReadReceiptRequested <Boolean?>]`: Indicates whether a read receipt is requested for the message.
+        - `[InternetMessageId <String>]`: 
+        - `[IsDeliveryReceiptRequested <Boolean?>]`: 
+        - `[IsDraft <Boolean?>]`: 
+        - `[IsRead <Boolean?>]`: 
+        - `[IsReadReceiptRequested <Boolean?>]`: 
         - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the message. Nullable.
-        - `[ParentFolderId <String>]`: The unique identifier for the message's parent mailFolder.
-        - `[ReceivedDateTime <DateTime?>]`: The date and time the message was received.  The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-        - `[ReplyTo <IMicrosoftGraphRecipient[]>]`: The email addresses to use when replying.
+        - `[ParentFolderId <String>]`: 
+        - `[ReceivedDateTime <DateTime?>]`: 
+        - `[ReplyTo <IMicrosoftGraphRecipient[]>]`: 
         - `[Sender <IMicrosoftGraphRecipient>]`: recipient
-        - `[SentDateTime <DateTime?>]`: The date and time the message was sent.  The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[SentDateTime <DateTime?>]`: 
         - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the message. Nullable.
-        - `[Subject <String>]`: The subject of the message.
-        - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: The To: recipients for the message.
+        - `[Subject <String>]`: 
+        - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: 
         - `[UniqueBody <IMicrosoftGraphItemBody>]`: itemBody
-        - `[WebLink <String>]`: The URL to open the message in Outlook on the web.You can append an ispopout argument to the end of the URL to change how the message is displayed. If ispopout is not present or if it is set to 1, then the message is shown in a popout window. If ispopout is set to 0, then the browser will show the message in the Outlook on the web review pane.The message will open in the browser if you are logged in to your mailbox via Outlook on the web. You will be prompted to login if you are not already logged in with the browser.This URL cannot be accessed from within an iFrame.
+        - `[WebLink <String>]`: 
       - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the mailFolder. Read-only. Nullable.
       - `[ParentFolderId <String>]`: The unique identifier for the mailFolder's parent mailFolder.
       - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the mailFolder. Read-only. Nullable.
       - `[TotalItemCount <Int32?>]`: The number of items in the mailFolder.
       - `[UnreadItemCount <Int32?>]`: The number of items in the mailFolder marked as unread.
-    - `[MailNickname <String>]`: The mail alias for the user. This property must be specified when a user is created. Maximum length is 64 characters. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
+    - `[MailNickname <String>]`: The mail alias for the user. This property must be specified when a user is created. Maximum length is 64 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
     - `[MailboxSettings <IMicrosoftGraphMailboxSettings1>]`: mailboxSettings
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ArchiveFolder <String>]`: Folder ID of an archive folder for the user. Read only.
@@ -7185,14 +7842,14 @@ DRIVE <IMicrosoftGraphDrive1>: drive
       - `[PlatformVersion <String>]`: Operating System version
       - `[UserId <String>]`: The user Id to who this app registration belongs.
       - `[Version <String>]`: Version of the entity.
-    - `[ManagedDevices <IMicrosoftGraphManagedDevice1[]>]`: The managed devices associated with the user.
+    - `[ManagedDevices <IMicrosoftGraphManagedDevice[]>]`: The managed devices associated with the user.
       - `[Id <String>]`: Read-only.
       - `[ActivationLockBypassCode <String>]`: Code that allows the Activation Lock on a device to be bypassed. This property is read-only.
       - `[AndroidSecurityPatchLevel <String>]`: Android security patch level. This property is read-only.
       - `[AzureAdDeviceId <String>]`: The unique identifier for the Azure Active Directory device. Read only. This property is read-only.
       - `[AzureAdRegistered <Boolean?>]`: Whether the device is Azure Active Directory registered. This property is read-only.
       - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires. This property is read-only.
-      - `[ComplianceState <String>]`: complianceState
+      - `[ComplianceState <String>]`: Compliance state.
       - `[ConfigurationManagerClientEnabledFeatures <IMicrosoftGraphConfigurationManagerClientEnabledFeatures1>]`: configuration Manager client enabled features
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[CompliancePolicy <Boolean?>]`: Whether compliance policy is managed by Intune
@@ -7203,10 +7860,10 @@ DRIVE <IMicrosoftGraphDrive1>: drive
         - `[WindowsUpdateForBusiness <Boolean?>]`: Whether Windows Update for Business is managed by Intune
       - `[DeviceActionResults <IMicrosoftGraphDeviceActionResult[]>]`: List of ComplexType deviceActionResult objects. This property is read-only.
         - `[ActionName <String>]`: Action name
-        - `[ActionState <String>]`: actionState
+        - `[ActionState <String>]`: State of the action on the device
         - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
         - `[StartDateTime <DateTime?>]`: Time the action was initiated
-      - `[DeviceCategory <IMicrosoftGraphDeviceCategory2>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+      - `[DeviceCategory <IMicrosoftGraphDeviceCategory2>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: Read-only.
         - `[Description <String>]`: Optional description for the device category.
@@ -7215,7 +7872,7 @@ DRIVE <IMicrosoftGraphDrive1>: drive
       - `[DeviceCompliancePolicyStates <IMicrosoftGraphDeviceCompliancePolicyState1[]>]`: Device compliance policy states for this device.
         - `[Id <String>]`: Read-only.
         - `[DisplayName <String>]`: The name of the policy for this policyBase
-        - `[PlatformType <String>]`: 
+        - `[PlatformType <String>]`: Supported platform types for policies.
         - `[SettingCount <Int32?>]`: Count of how many setting a policy holds
         - `[SettingStates <IMicrosoftGraphDeviceCompliancePolicySettingState1[]>]`: 
           - `[CurrentValue <String>]`: Current value of setting on device
@@ -7224,9 +7881,10 @@ DRIVE <IMicrosoftGraphDrive1>: drive
           - `[InstanceDisplayName <String>]`: Name of setting instance that is being reported.
           - `[Setting <String>]`: The setting that is being reported
           - `[SettingName <String>]`: Localized/user friendly setting name that is being reported
-          - `[Sources <IMicrosoftGraphSettingSource1[]>]`: Contributing policies
+          - `[Sources <IMicrosoftGraphSettingSource[]>]`: Contributing policies
             - `[DisplayName <String>]`: Not yet documented
             - `[Id <String>]`: Not yet documented
+            - `[SourceType <String>]`: settingSourceType
           - `[State <String>]`: complianceStatus
           - `[UserEmail <String>]`: UserEmail
           - `[UserId <String>]`: UserId
@@ -7237,7 +7895,7 @@ DRIVE <IMicrosoftGraphDrive1>: drive
       - `[DeviceConfigurationStates <IMicrosoftGraphDeviceConfigurationState1[]>]`: Device configuration states for this device.
         - `[Id <String>]`: Read-only.
         - `[DisplayName <String>]`: The name of the policy for this policyBase
-        - `[PlatformType <String>]`: 
+        - `[PlatformType <String>]`: Supported platform types for policies.
         - `[SettingCount <Int32?>]`: Count of how many setting a policy holds
         - `[SettingStates <IMicrosoftGraphDeviceConfigurationSettingState1[]>]`: 
           - `[CurrentValue <String>]`: Current value of setting on device
@@ -7246,7 +7904,7 @@ DRIVE <IMicrosoftGraphDrive1>: drive
           - `[InstanceDisplayName <String>]`: Name of setting instance that is being reported.
           - `[Setting <String>]`: The setting that is being reported
           - `[SettingName <String>]`: Localized/user friendly setting name that is being reported
-          - `[Sources <IMicrosoftGraphSettingSource1[]>]`: Contributing policies
+          - `[Sources <IMicrosoftGraphSettingSource[]>]`: Contributing policies
           - `[State <String>]`: complianceStatus
           - `[UserEmail <String>]`: UserEmail
           - `[UserId <String>]`: UserId
@@ -7254,7 +7912,7 @@ DRIVE <IMicrosoftGraphDrive1>: drive
           - `[UserPrincipalName <String>]`: UserPrincipalName.
         - `[State <String>]`: complianceStatus
         - `[Version <Int32?>]`: The version of the policy
-      - `[DeviceEnrollmentType <String>]`: 
+      - `[DeviceEnrollmentType <String>]`: Possible ways of adding a mobile device to management.
       - `[DeviceHealthAttestationState <IMicrosoftGraphDeviceHealthAttestationState>]`: deviceHealthAttestationState
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[AttestationIdentityKey <String>]`: TWhen an Attestation Identity Key (AIK) is present on a device, it indicates that the device has an endorsement key (EK) certificate.
@@ -7290,15 +7948,15 @@ DRIVE <IMicrosoftGraphDrive1>: drive
         - `[VirtualSecureMode <String>]`: VSM is a container that protects high value assets from a compromised kernel
         - `[WindowsPe <String>]`: Operating system running with limited services that is used to prepare a computer for Windows
       - `[DeviceName <String>]`: Name of the device. This property is read-only.
-      - `[DeviceRegistrationState <String>]`: deviceRegistrationState
+      - `[DeviceRegistrationState <String>]`: Device registration status.
       - `[EasActivated <Boolean?>]`: Whether the device is Exchange ActiveSync activated. This property is read-only.
       - `[EasActivationDateTime <DateTime?>]`: Exchange ActivationSync activation time of the device. This property is read-only.
       - `[EasDeviceId <String>]`: Exchange ActiveSync Id of the device. This property is read-only.
       - `[EmailAddress <String>]`: Email(s) for the user associated with the device. This property is read-only.
       - `[EnrolledDateTime <DateTime?>]`: Enrollment time of the device. This property is read-only.
       - `[EthernetMacAddress <String>]`: Ethernet MAC. This property is read-only.
-      - `[ExchangeAccessState <String>]`: deviceManagementExchangeAccessState
-      - `[ExchangeAccessStateReason <String>]`: deviceManagementExchangeAccessStateReason
+      - `[ExchangeAccessState <String>]`: Device Exchange Access State.
+      - `[ExchangeAccessStateReason <String>]`: Device Exchange Access State Reason.
       - `[ExchangeLastSuccessfulSyncDateTime <DateTime?>]`: Last time the device contacted Exchange. This property is read-only.
       - `[FreeStorageSpaceInBytes <Int64?>]`: Free Storage in Bytes. This property is read-only.
       - `[Iccid <String>]`: Integrated Circuit Card Identifier, it is A SIM card's unique identification number. This property is read-only.
@@ -7308,15 +7966,15 @@ DRIVE <IMicrosoftGraphDrive1>: drive
       - `[JailBroken <String>]`: whether the device is jail broken or rooted. This property is read-only.
       - `[LastSyncDateTime <DateTime?>]`: The date and time that the device last completed a successful sync with Intune. This property is read-only.
       - `[ManagedDeviceName <String>]`: Automatically generated name to identify a device. Can be overwritten to a user friendly name.
-      - `[ManagedDeviceOwnerType <String>]`: managedDeviceOwnerType
-      - `[ManagementAgent <String>]`: 
+      - `[ManagedDeviceOwnerType <String>]`: Owner type of device.
+      - `[ManagementAgent <String>]`: Management agent type.
       - `[Manufacturer <String>]`: Manufacturer of the device. This property is read-only.
       - `[Meid <String>]`: MEID. This property is read-only.
       - `[Model <String>]`: Model of the device. This property is read-only.
       - `[Notes <String>]`: Notes on the device created by IT Admin
       - `[OSVersion <String>]`: Operating system version of the device. This property is read-only.
       - `[OperatingSystem <String>]`: Operating system of the device. Windows, iOS, etc. This property is read-only.
-      - `[PartnerReportedThreatState <String>]`: managedDevicePartnerReportedHealthState
+      - `[PartnerReportedThreatState <String>]`: Available health states for the Device Health API
       - `[PhoneNumber <String>]`: Phone number of the device. This property is read-only.
       - `[PhysicalMemoryInBytes <Int64?>]`: Total Memory in Bytes. This property is read-only.
       - `[RemoteAssistanceSessionErrorDetails <String>]`: An error string that identifies issues when creating Remote Assistance session objects. This property is read-only.
@@ -7329,10 +7987,10 @@ DRIVE <IMicrosoftGraphDrive1>: drive
       - `[UserId <String>]`: Unique Identifier for the user associated with the device. This property is read-only.
       - `[UserPrincipalName <String>]`: Device user principal name. This property is read-only.
       - `[WiFiMacAddress <String>]`: Wi-Fi MAC. This property is read-only.
-    - `[Manager <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-    - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: The groups, directory roles and administrative units that the user is a member of. Read-only. Nullable.
+    - `[Manager <IMicrosoftGraphDirectoryObject>]`: directoryObject
+    - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: The groups, directory roles and administrative units that the user is a member of. Read-only. Nullable. Supports $expand.
     - `[Messages <IMicrosoftGraphMessage1[]>]`: The messages in a mailbox or folder. Read-only. Nullable.
-    - `[MobilePhone <String>]`: The primary cellular telephone number for the user. Read-only for users synced from on-premises directory.  Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
+    - `[MobilePhone <String>]`: The primary cellular telephone number for the user. Read-only for users synced from on-premises directory.  Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
     - `[MySite <String>]`: The URL for the user's personal site. Returned only on $select.
     - `[Oauth2PermissionGrants <IMicrosoftGraphOAuth2PermissionGrant1[]>]`: 
       - `[Id <String>]`: Read-only.
@@ -7341,7 +7999,7 @@ DRIVE <IMicrosoftGraphDrive1>: drive
       - `[PrincipalId <String>]`: The id of the user on behalf of whom the client is authorized to access the resource, when consentType is Principal. If consentType is AllPrincipals this value is null. Required when consentType is Principal.
       - `[ResourceId <String>]`: The id of the resource service principal to which access is authorized. This identifies the API which the client is authorized to attempt to call on behalf of a signed-in user.
       - `[Scope <String>]`: A space-separated list of the claim values for delegated permissions which should be included in access tokens for the resource application (the API). For example, openid User.Read GroupMember.Read.All. Each claim value should match the value field of one of the delegated permissions defined by the API, listed in the publishedPermissionScopes property of the resource service principal.
-    - `[OfficeLocation <String>]`: The office location in the user's place of business. Maximum length is 128 characters. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
+    - `[OfficeLocation <String>]`: The office location in the user's place of business. Maximum length is 128 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
     - `[OnPremisesDistinguishedName <String>]`: Contains the on-premises Active Directory distinguished name or DN. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only.
     - `[OnPremisesDomainName <String>]`: Contains the on-premises domainFQDN, also called dnsDomainName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only.
     - `[OnPremisesExtensionAttributes <IMicrosoftGraphOnPremisesExtensionAttributes>]`: onPremisesExtensionAttributes
@@ -7361,23 +8019,52 @@ DRIVE <IMicrosoftGraphDrive1>: drive
       - `[ExtensionAttribute7 <String>]`: Seventh customizable extension attribute.
       - `[ExtensionAttribute8 <String>]`: Eighth customizable extension attribute.
       - `[ExtensionAttribute9 <String>]`: Ninth customizable extension attribute.
-    - `[OnPremisesImmutableId <String>]`: This property is used to associate an on-premises Active Directory user account to their Azure AD user object. This property must be specified when creating a new user account in the Graph if you are using a federated domain for the user's userPrincipalName (UPN) property. Note: The $ and _ characters cannot be used when specifying this property. Supports $filter (eq, ne, NOT, ge, le, in).
-    - `[OnPremisesLastSyncDateTime <DateTime?>]`: Indicates the last time at which the object was synced with the on-premises directory; for example: '2013-02-16T03:04:54Z'. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Supports $filter (eq, ne, NOT, ge, le, in).
-    - `[OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError[]>]`: Errors when using Microsoft synchronization product during provisioning.
-    - `[OnPremisesSamAccountName <String>]`: Contains the on-premises sAMAccountName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
-    - `[OnPremisesSecurityIdentifier <String>]`: Contains the on-premises security identifier (SID) for the user that was synchronized from on-premises to the cloud. Read-only. Supports $filter (eq, ne, NOT, in).
-    - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default). Read-only. Supports $filter (eq, ne, NOT, in).
-    - `[OnPremisesUserPrincipalName <String>]`: Contains the on-premises userPrincipalName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
+    - `[OnPremisesImmutableId <String>]`: This property is used to associate an on-premises Active Directory user account to their Azure AD user object. This property must be specified when creating a new user account in the Graph if you are using a federated domain for the user's userPrincipalName (UPN) property. Note: The $ and _ characters cannot be used when specifying this property. Supports $filter (eq, ne, not, ge, le, in).
+    - `[OnPremisesLastSyncDateTime <DateTime?>]`: Indicates the last time at which the object was synced with the on-premises directory; for example: '2013-02-16T03:04:54Z'. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Supports $filter (eq, ne, not, ge, le, in).
+    - `[OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError[]>]`: Errors when using Microsoft synchronization product during provisioning.  Supports $filter (eq, not, ge, le).
+    - `[OnPremisesSamAccountName <String>]`: Contains the on-premises sAMAccountName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. Supports $filter (eq, ne, not, ge, le, in, startsWith).
+    - `[OnPremisesSecurityIdentifier <String>]`: Contains the on-premises security identifier (SID) for the user that was synchronized from on-premises to the cloud. Read-only. Supports $filter (eq) on null values only.
+    - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default). Read-only. Supports $filter (eq, ne, not, in, and eq on null values).
+    - `[OnPremisesUserPrincipalName <String>]`: Contains the on-premises userPrincipalName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. Supports $filter (eq, ne, not, ge, le, in, startsWith).
     - `[Onenote <IMicrosoftGraphOnenote1>]`: onenote
     - `[OnlineMeetings <IMicrosoftGraphOnlineMeeting1[]>]`: 
       - `[Id <String>]`: Read-only.
+      - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
+      - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
+      - `[AllowMeetingChat <String>]`: meetingChatMode
+      - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
       - `[AllowedPresenters <String>]`: onlineMeetingPresenters
-      - `[AudioConferencing <IMicrosoftGraphAudioConferencing1>]`: audioConferencing
+      - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]`: The attendance reports of an online meeting. Read-only.
+        - `[Id <String>]`: Read-only.
+        - `[AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>]`: List of attendance records of an attendance report. Read-only.
+          - `[Id <String>]`: Read-only.
+          - `[AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]`: List of time periods between joining and leaving a meeting.
+            - `[DurationInSeconds <Int32?>]`: Duration of the meeting interval in seconds; that is, the difference between joinDateTime and leaveDateTime.
+            - `[JoinDateTime <DateTime?>]`: The time the attendee joined in UTC.
+            - `[LeaveDateTime <DateTime?>]`: The time the attendee left in UTC.
+          - `[EmailAddress <String>]`: Email address of the user associated with this atttendance record.
+          - `[Identity <IMicrosoftGraphIdentity>]`: identity
+          - `[Role <String>]`: Role of the attendee. Possible values are: None, Attendee, Presenter, and Organizer.
+          - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
+        - `[MeetingEndDateTime <DateTime?>]`: UTC time when the meeting ended. Read-only.
+        - `[MeetingStartDateTime <DateTime?>]`: UTC time when the meeting started. Read-only.
+        - `[TotalParticipantCount <Int32?>]`: Total number of participants. Read-only.
+      - `[AttendeeReport <Byte[]>]`: The content stream of the attendee report of a Teams live event. Read-only.
+      - `[AudioConferencing <IMicrosoftGraphAudioConferencing>]`: audioConferencing
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[ConferenceId <String>]`: The conference id of the online meeting.
         - `[DialinUrl <String>]`: A URL to the externally-accessible web page that contains dial-in information.
-        - `[TollFreeNumber <String>]`: The toll-free number that connects to the Audio Conference Provider.
-        - `[TollNumber <String>]`: The toll number that connects to the Audio Conference Provider.
+        - `[TollFreeNumber <String>]`: 
+        - `[TollFreeNumbers <String[]>]`: List of toll-free numbers that are displayed in the meeting invite.
+        - `[TollNumber <String>]`: 
+        - `[TollNumbers <String[]>]`: List of toll numbers that are displayed in the meeting invite.
+      - `[BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings1>]`: broadcastMeetingSettings
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[AllowedAudience <String>]`: broadcastMeetingAudience
+        - `[IsAttendeeReportEnabled <Boolean?>]`: Indicates whether attendee report is enabled for this Teams live event. Default value is false.
+        - `[IsQuestionAndAnswerEnabled <Boolean?>]`: Indicates whether Q&A is enabled for this Teams live event. Default value is false.
+        - `[IsRecordingEnabled <Boolean?>]`: Indicates whether recording is enabled for this Teams live event. Default value is false.
+        - `[IsVideoOnDemandEnabled <Boolean?>]`: Indicates whether video on demand is enabled for this Teams live event. Default value is false.
       - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channel.
@@ -7386,6 +8073,7 @@ DRIVE <IMicrosoftGraphDrive1>: drive
       - `[CreationDateTime <DateTime?>]`: The meeting creation time in UTC. Read-only.
       - `[EndDateTime <DateTime?>]`: The meeting end time in UTC.
       - `[ExternalId <String>]`: The external ID. A custom ID. Optional.
+      - `[IsBroadcast <Boolean?>]`: Indicates whether this is a Teams live event.
       - `[IsEntryExitAnnounced <Boolean?>]`: Indicates whether to announce when callers join or leave.
       - `[JoinInformation <IMicrosoftGraphItemBody>]`: itemBody
       - `[JoinWebUrl <String>]`: The join URL of the online meeting. Read-only.
@@ -7395,15 +8083,16 @@ DRIVE <IMicrosoftGraphDrive1>: drive
         - `[Scope <String>]`: lobbyBypassScope
       - `[Participants <IMicrosoftGraphMeetingParticipants1>]`: meetingParticipants
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Attendees <IMicrosoftGraphMeetingParticipantInfo1[]>]`: Information of the meeting attendees.
+        - `[Attendees <IMicrosoftGraphMeetingParticipantInfo[]>]`: Information of the meeting attendees.
           - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
-          - `[Role <String>]`: 
+          - `[Role <String>]`: onlineMeetingRole
           - `[Upn <String>]`: User principal name of the participant.
-        - `[Organizer <IMicrosoftGraphMeetingParticipantInfo1>]`: meetingParticipantInfo
+        - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
+      - `[RecordAutomatically <Boolean?>]`: Indicates whether to record the meeting automatically.
       - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
       - `[Subject <String>]`: The subject of the online meeting.
       - `[VideoTeleconferenceId <String>]`: The video teleconferencing ID. Read-only.
-    - `[OtherMails <String[]>]`: A list of additional email addresses for the user; for example: ['bob@contoso.com', 'Robert@fabrikam.com'].NOTE: While this property can contain accent characters, they can cause access issues to first-party applications for the user.Supports $filter (eq, NOT, ge, le, in, startsWith).
+    - `[OtherMails <String[]>]`: A list of additional email addresses for the user; for example: ['bob@contoso.com', 'Robert@fabrikam.com'].NOTE: This property cannot contain accent characters.Supports $filter (eq, not, ge, le, in, startsWith).
     - `[Outlook <IMicrosoftGraphOutlookUser1>]`: outlookUser
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: Read-only.
@@ -7411,14 +8100,14 @@ DRIVE <IMicrosoftGraphDrive1>: drive
         - `[Id <String>]`: Read-only.
         - `[Color <String>]`: categoryColor
         - `[DisplayName <String>]`: A unique name that identifies a category in the user's mailbox. After a category is created, the name cannot be changed. Read-only.
-    - `[OwnedDevices <IMicrosoftGraphDirectoryObject[]>]`: Devices that are owned by the user. Read-only. Nullable.
-    - `[OwnedObjects <IMicrosoftGraphDirectoryObject[]>]`: Directory objects that are owned by the user. Read-only. Nullable.
-    - `[PasswordPolicies <String>]`: Specifies password policies for the user. This value is an enumeration with one possible value being DisableStrongPassword, which allows weaker passwords than the default policy to be specified. DisablePasswordExpiration can also be specified. The two may be specified together; for example: DisablePasswordExpiration, DisableStrongPassword.Supports $filter (eq, ne, NOT).
+    - `[OwnedDevices <IMicrosoftGraphDirectoryObject[]>]`: Devices that are owned by the user. Read-only. Nullable. Supports $expand.
+    - `[OwnedObjects <IMicrosoftGraphDirectoryObject[]>]`: Directory objects that are owned by the user. Read-only. Nullable. Supports $expand.
+    - `[PasswordPolicies <String>]`: Specifies password policies for the user. This value is an enumeration with one possible value being DisableStrongPassword, which allows weaker passwords than the default policy to be specified. DisablePasswordExpiration can also be specified. The two may be specified together; for example: DisablePasswordExpiration, DisableStrongPassword. For more information on the default password policies, see Azure AD pasword policies. Supports $filter (ne, not, and eq on null values).
     - `[PasswordProfile <IMicrosoftGraphPasswordProfile>]`: passwordProfile
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change her password on the next login; otherwise false. If not set, default is false. NOTE:  For Azure B2C tenants, set to false and instead use custom policies and user flows to force password reset at first sign in. See Force password reset at first logon.
       - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password. The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multi-factor authentication before password change. After a password change, this property will be automatically reset to false. If not set, default is false.
-      - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user's passwordPolicies property. By default, a strong password is required.
+      - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user’s passwordPolicies property. By default, a strong password is required.
     - `[PastProjects <String[]>]`: A list for the user to enumerate their past projects. Returned only on $select.
     - `[People <IMicrosoftGraphPerson1[]>]`: Read-only. The most relevant people to the user. The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships. A person is an aggregation of information from across mail, contacts and social networks.
       - `[Id <String>]`: Read-only.
@@ -7442,7 +8131,7 @@ DRIVE <IMicrosoftGraphDrive1>: drive
       - `[ScoredEmailAddresses <IMicrosoftGraphScoredEmailAddress[]>]`: The person's email addresses.
         - `[Address <String>]`: The email address.
         - `[ItemId <String>]`: 
-        - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user's communication and collaboration patterns and business relationships.
+        - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user’s communication and collaboration patterns and business relationships.
         - `[SelectionLikelihood <String>]`: selectionLikelihoodInfo
       - `[Surname <String>]`: The person's surname.
       - `[UserPrincipalName <String>]`: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
@@ -7458,20 +8147,20 @@ DRIVE <IMicrosoftGraphDrive1>: drive
       - `[Id <String>]`: Read-only.
       - `[Plans <IMicrosoftGraphPlannerPlan1[]>]`: Read-only. Nullable. Returns the plannerTasks assigned to the user.
       - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Read-only. Nullable. Returns the plannerTasks assigned to the user.
-    - `[PostalCode <String>]`: The postal code for the user's postal address. The postal code is specific to the user's country/region. In the United States of America, this attribute contains the ZIP code. Maximum length is 40 characters. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
-    - `[PreferredLanguage <String>]`: The preferred language for the user. Should follow ISO 639-1 Code; for example en-US. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
+    - `[PostalCode <String>]`: The postal code for the user's postal address. The postal code is specific to the user's country/region. In the United States of America, this attribute contains the ZIP code. Maximum length is 40 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+    - `[PreferredLanguage <String>]`: The preferred language for the user. Should follow ISO 639-1 Code; for example en-US. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
     - `[PreferredName <String>]`: The preferred name for the user. Returned only on $select.
     - `[Presence <IMicrosoftGraphPresence1>]`: presence
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: Read-only.
       - `[Activity <String>]`: The supplemental information to a user's availability. Possible values are Available, Away, BeRightBack, Busy, DoNotDisturb, InACall, InAConferenceCall, Inactive,InAMeeting, Offline, OffWork,OutOfOffice, PresenceUnknown,Presenting, UrgentInterruptionsOnly.
       - `[Availability <String>]`: The base presence information for a user. Possible values are Available, AvailableIdle,  Away, BeRightBack, Busy, BusyIdle, DoNotDisturb, Offline, PresenceUnknown
-    - `[ProvisionedPlans <IMicrosoftGraphProvisionedPlan[]>]`: The plans that are provisioned for the user. Read-only. Not nullable.
+    - `[ProvisionedPlans <IMicrosoftGraphProvisionedPlan[]>]`: The plans that are provisioned for the user. Read-only. Not nullable. Supports $filter (eq, not, ge, le).
       - `[CapabilityStatus <String>]`: For example, 'Enabled'.
       - `[ProvisioningStatus <String>]`: For example, 'Success'.
       - `[Service <String>]`: The name of the service; for example, 'AccessControlS2S'
-    - `[ProxyAddresses <String[]>]`: For example: ['SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com']. Read-only, Not nullable. Supports $filter (eq, NOT, ge, le, startsWith).
-    - `[RegisteredDevices <IMicrosoftGraphDirectoryObject[]>]`: Devices that are registered for the user. Read-only. Nullable.
+    - `[ProxyAddresses <String[]>]`: For example: ['SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com']. Changes to the mail property will also update this collection to include the value as an SMTP address. For more information, see mail and proxyAddresses properties. The proxy address prefixed with SMTP (capitalized) is the primary proxy address while those prefixed with smtp are the secondary proxy addresses. For Azure AD B2C accounts, this property has a limit of ten unique addresses. Read-only in Microsoft Graph; you can update this property only through the Microsoft 365 admin center. Not nullable. Supports $filter (eq, not, ge, le, startsWith).
+    - `[RegisteredDevices <IMicrosoftGraphDirectoryObject[]>]`: Devices that are registered for the user. Read-only. Nullable. Supports $expand.
     - `[Responsibilities <String[]>]`: A list for the user to enumerate their responsibilities. Returned only on $select.
     - `[Schools <String[]>]`: A list for the user to enumerate the schools they have attended. Returned only on $select.
     - `[ScopedRoleMemberOf <IMicrosoftGraphScopedRoleMembership[]>]`: The scoped-role administrative unit memberships for this user. Read-only. Nullable.
@@ -7496,12 +8185,12 @@ DRIVE <IMicrosoftGraphDrive1>: drive
             - `[EndTime <String>]`: End time for the time range.
             - `[StartTime <String>]`: Start time for the time range.
           - `[TimeZone <String>]`: Specifies the time zone for the indicated time.
-    - `[ShowInAddressList <Boolean?>]`: true if the Outlook global address list should contain this user, otherwise false. If not set, this will be treated as true. For users invited through the invitation manager, this property will be set to false. Supports $filter (eq, ne, NOT, in).
+    - `[ShowInAddressList <Boolean?>]`: true if the Outlook global address list should contain this user, otherwise false. If not set, this will be treated as true. For users invited through the invitation manager, this property will be set to false. Supports $filter (eq, ne, not, in).
     - `[SignInSessionsValidFromDateTime <DateTime?>]`: Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. Read-only. Use revokeSignInSessions to reset.
     - `[Skills <String[]>]`: A list for the user to enumerate their skills. Returned only on $select.
-    - `[State <String>]`: The state or province in the user's address. Maximum length is 128 characters. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
-    - `[StreetAddress <String>]`: The street address of the user's place of business. Maximum length is 1024 characters. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
-    - `[Surname <String>]`: The user's surname (family name or last name). Maximum length is 64 characters. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
+    - `[State <String>]`: The state or province in the user's address. Maximum length is 128 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+    - `[StreetAddress <String>]`: The street address of the user's place of business. Maximum length is 1024 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+    - `[Surname <String>]`: The user's surname (family name or last name). Maximum length is 64 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
     - `[Teamwork <IMicrosoftGraphUserTeamwork1>]`: userTeamwork
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: Read-only.
@@ -7542,19 +8231,20 @@ DRIVE <IMicrosoftGraphDrive1>: drive
           - `[Title <String>]`: A brief description of the task.
         - `[WellknownListName <String>]`: wellknownListName
     - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: 
-    - `[UsageLocation <String>]`: A two letter country code (ISO standard 3166). Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries.  Examples include: US, JP, and GB. Not nullable. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
-    - `[UserPrincipalName <String>]`: The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant's collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: While this property can contain accent characters, they can cause access issues to first-party applications for the user. Supports $filter (eq, ne, NOT, ge, le, in, startsWith, endsWith) and $orderBy.
-    - `[UserType <String>]`: A string value that can be used to classify user types in your directory, such as Member and Guest. Supports $filter (eq, ne, NOT, in, startsWith, endsWith).
+    - `[UsageLocation <String>]`: A two letter country code (ISO standard 3166). Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries.  Examples include: US, JP, and GB. Not nullable. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+    - `[UserPrincipalName <String>]`: The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant's collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property cannot contain accent characters. Only the following characters are allowed A - Z, a - z, 0 - 9, ' . - _ ! # ^ ~. For the complete list of allowed characters, see username policies. Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderBy.
+    - `[UserType <String>]`: A String value that can be used to classify user types in your directory, such as Member and Guest. Supports $filter (eq, ne, not, in, and eq on null values). NOTE: For more information about the permissions for member and guest users, see What are the default user permissions in Azure Active Directory?
   - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
   - `[Description <String>]`: Provides a user-visible description of the item. Optional.
   - `[ETag <String>]`: ETag for the item. Read-only.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+  - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
   - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
   - `[Name <String>]`: The name of the item. Read-write.
   - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
   - `[WebUrl <String>]`: URL that displays the resource in the browser. Read-only.
   - `[Id <String>]`: Read-only.
+  - `[Bundles <IMicrosoftGraphDriveItem1[]>]`: Collection of [bundles][bundle] (albums and multi-select-shared sets of items). Only in personal OneDrive.
   - `[DriveType <String>]`: Describes the type of drive represented by this resource. OneDrive personal drives will return personal. OneDrive for Business will return business. SharePoint document libraries will return documentLibrary. Read-only.
   - `[Following <IMicrosoftGraphDriveItem1[]>]`: The list of items the user is following. Only in OneDrive for Business.
   - `[Items <IMicrosoftGraphDriveItem1[]>]`: All items contained in the drive. Read-only. Nullable.
@@ -7593,11 +8283,18 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[OnenoteSectionId <String>]`: key: id of onenoteSection
   - `[Path <String>]`: Usage: path={path}
   - `[PermissionId <String>]`: key: id of permission
+  - `[RelationId <String>]`: key: id of relation
+  - `[RichLongRunningOperationId <String>]`: key: id of richLongRunningOperation
+  - `[SetId <String>]`: key: id of set
+  - `[SetId1 <String>]`: key: id of set
   - `[SiteId <String>]`: key: id of site
   - `[SiteId1 <String>]`: key: id of site
   - `[SitePageId <String>]`: key: id of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime={startDateTime}
+  - `[StoreId <String>]`: key: id of store
   - `[SubscriptionId <String>]`: key: id of subscription
+  - `[TermId <String>]`: key: id of term
+  - `[TermId1 <String>]`: key: id of term
   - `[UserId <String>]`: key: id of user
 
 ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
@@ -7605,22 +8302,22 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
+      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+      - `[Id <String>]`: The identifier of the identity. This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[CreatedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+  - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeletedDateTime <DateTime?>]`: 
     - `[Id <String>]`: Read-only.
     - `[AboutMe <String>]`: A freeform text entry field for the user to describe themselves. Returned only on $select.
-    - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. This property is required when a user is created. Supports $filter (eq, ne, NOT, and in).
+    - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. This property is required when a user is created. Supports $filter (eq, ne, not, and in).
     - `[Activities <IMicrosoftGraphUserActivity1[]>]`: The user's activities across devices. Read-only. Nullable.
       - `[Id <String>]`: Read-only.
       - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
       - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
       - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-      - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
+      - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
       - `[ContentInfo <IMicrosoftGraphJson>]`: Json
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -7645,7 +8342,7 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
+          - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
           - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
           - `[AlternativeText <String>]`: 
           - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -7653,7 +8350,7 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
         - `[Content <IMicrosoftGraphJson>]`: Json
         - `[Description <String>]`: Optional. Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
         - `[DisplayText <String>]`: Required. Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)
-    - `[AgeGroup <String>]`: Sets the age group of the user. Allowed values: null, minor, notAdult and adult. Refer to the legal age group property definitions for further information. Supports $filter (eq, ne, NOT, and in).
+    - `[AgeGroup <String>]`: Sets the age group of the user. Allowed values: null, minor, notAdult and adult. Refer to the legal age group property definitions for further information. Supports $filter (eq, ne, not, and in).
     - `[AgreementAcceptances <IMicrosoftGraphAgreementAcceptance[]>]`: The user's terms of use acceptance statuses. Read-only. Nullable.
       - `[Id <String>]`: Read-only.
       - `[AgreementFileId <String>]`: ID of the agreement file accepted by the user.
@@ -7669,7 +8366,7 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
       - `[UserEmail <String>]`: Email of the user when the acceptance was recorded.
       - `[UserId <String>]`: ID of the user who accepted the agreement.
       - `[UserPrincipalName <String>]`: UPN of the user when the acceptance was recorded.
-    - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment1[]>]`: Represents the app roles a user has been granted for an application.
+    - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment1[]>]`: Represents the app roles a user has been granted for an application. Supports $expand.
       - `[DeletedDateTime <DateTime?>]`: 
       - `[Id <String>]`: Read-only.
       - `[AppRoleId <String>]`: The identifier (id) for the app role which is assigned to the principal. This app role must be exposed in the appRoles property on the resource application's service principal (resourceId). If the resource application has not declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles. Required on create.
@@ -7679,10 +8376,10 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
       - `[PrincipalType <String>]`: The type of the assigned principal. This can either be User, Group or ServicePrincipal. Read-only.
       - `[ResourceDisplayName <String>]`: The display name of the resource app's service principal to which the assignment is made.
       - `[ResourceId <String>]`: The unique identifier (id) for the resource service principal for which the assignment is made. Required on create. Supports $filter (eq only).
-    - `[AssignedLicenses <IMicrosoftGraphAssignedLicense[]>]`: The licenses that are assigned to the user, including inherited (group-based) licenses. Not nullable. Supports $filter (eq and NOT).
+    - `[AssignedLicenses <IMicrosoftGraphAssignedLicense[]>]`: The licenses that are assigned to the user, including inherited (group-based) licenses. Not nullable. Supports $filter (eq and not).
       - `[DisabledPlans <String[]>]`: A collection of the unique identifiers for plans that have been disabled.
       - `[SkuId <String>]`: The unique identifier for the SKU.
-    - `[AssignedPlans <IMicrosoftGraphAssignedPlan[]>]`: The plans that are assigned to the user. Read-only. Not nullable.Supports $filter (eq and NOT).
+    - `[AssignedPlans <IMicrosoftGraphAssignedPlan[]>]`: The plans that are assigned to the user. Read-only. Not nullable.Supports $filter (eq and not).
       - `[AssignedDateTime <DateTime?>]`: The date and time at which the plan was assigned; for example: 2013-01-02T19:32:30Z. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[CapabilityStatus <String>]`: Condition of the capability assignment. The possible values are Enabled, Warning, Suspended, Deleted, LockedOut.
       - `[Service <String>]`: The name of the service; for example, 'Exchange'.
@@ -7703,39 +8400,39 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
       - `[MicrosoftAuthenticatorMethods <IMicrosoftGraphMicrosoftAuthenticatorAuthenticationMethod1[]>]`: 
         - `[Id <String>]`: Read-only.
         - `[CreatedDateTime <DateTime?>]`: The date and time that this app was registered. This property is null if the device is not registered for passwordless Phone Sign-In.
-        - `[Device <IMicrosoftGraphDevice1>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
+        - `[Device <IMicrosoftGraphDevice1>]`: device
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DeletedDateTime <DateTime?>]`: 
           - `[Id <String>]`: Read-only.
-          - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. default is true.
-          - `[AlternativeSecurityIds <IMicrosoftGraphAlternativeSecurityId[]>]`: For internal use only. Not nullable.
+          - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. Default is true.  Supports $filter (eq, ne, not, in). Only callers in Global Administrator and Cloud Device Administrator roles can set this property.
+          - `[AlternativeSecurityIds <IMicrosoftGraphAlternativeSecurityId[]>]`: For internal use only. Not nullable. Supports $filter (eq, not, ge, le).
             - `[IdentityProvider <String>]`: For internal use only
             - `[Key <Byte[]>]`: For internal use only
             - `[Type <Int32?>]`: For internal use only
-          - `[ApproximateLastSignInDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+          - `[ApproximateLastSignInDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Supports $filter (eq, ne, not, ge, le, and eq on null values) and $orderBy.
           - `[ComplianceExpirationDateTime <DateTime?>]`: The timestamp when the device is no longer deemed compliant. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-          - `[DeviceId <String>]`: Identifier set by Azure Device Registration Service at the time of registration.
+          - `[DeviceId <String>]`: Identifier set by Azure Device Registration Service at the time of registration. Supports $filter (eq, ne, not, startsWith).
           - `[DeviceMetadata <String>]`: For internal use only. Set to null.
           - `[DeviceVersion <Int32?>]`: For internal use only.
-          - `[DisplayName <String>]`: The display name for the device. Required.
+          - `[DisplayName <String>]`: The display name for the device. Required. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderBy.
           - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the device. Read-only. Nullable.
             - `[Id <String>]`: Read-only.
-          - `[IsCompliant <Boolean?>]`: true if the device complies with Mobile Device Management (MDM) policies; otherwise, false. Read-only. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
-          - `[IsManaged <Boolean?>]`: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
-          - `[MdmAppId <String>]`: Application identifier used to register device into MDM. Read-only. Supports $filter.
-          - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups that this device is a member of. Read-only. Nullable.
+          - `[IsCompliant <Boolean?>]`: true if the device complies with Mobile Device Management (MDM) policies; otherwise, false. Read-only. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices. Supports $filter (eq, ne, not).
+          - `[IsManaged <Boolean?>]`: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices. Supports $filter (eq, ne, not).
+          - `[MdmAppId <String>]`: Application identifier used to register device into MDM. Read-only. Supports $filter (eq, ne, not, startsWith).
+          - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups that this device is a member of. Read-only. Nullable. Supports $expand.
             - `[Id <String>]`: Read-only.
             - `[DeletedDateTime <DateTime?>]`: 
-          - `[OnPremisesLastSyncDateTime <DateTime?>]`: The last time at which the object was synced with the on-premises directory. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
-          - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default). Read-only.
-          - `[OperatingSystem <String>]`: The type of operating system on the device. Required.
-          - `[OperatingSystemVersion <String>]`: Operating system version of the device. Required.
-          - `[PhysicalIds <String[]>]`: For internal use only. Not nullable.
+          - `[OnPremisesLastSyncDateTime <DateTime?>]`: The last time at which the object was synced with the on-premises directory. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only. Supports $filter (eq, ne, not, ge, le, in).
+          - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default). Read-only. Supports $filter (eq, ne, not, in, and eq on null values).
+          - `[OperatingSystem <String>]`: The type of operating system on the device. Required. Supports $filter (eq, ne, not, ge, le, startsWith, and eq on null values).
+          - `[OperatingSystemVersion <String>]`: Operating system version of the device. Required. Supports $filter (eq, ne, not, ge, le, startsWith, and eq on null values).
+          - `[PhysicalIds <String[]>]`: For internal use only. Not nullable. Supports $filter (eq, not, ge, le, startsWith).
           - `[ProfileType <String>]`: The profile type of the device. Possible values: RegisteredDevice (default), SecureVM, Printer, Shared, IoT.
-          - `[RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]`: The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Currently, there can be only one owner. Read-only. Nullable.
-          - `[RegisteredUsers <IMicrosoftGraphDirectoryObject[]>]`: Collection of registered users of the device. For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration. Read-only. Nullable.
+          - `[RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]`: The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Currently, there can be only one owner. Read-only. Nullable. Supports $expand.
+          - `[RegisteredUsers <IMicrosoftGraphDirectoryObject[]>]`: Collection of registered users of the device. For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration. Read-only. Nullable. Supports $expand.
           - `[SystemLabels <String[]>]`: List of labels applied to the device by the system.
-          - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups that this device is a member of. This operation is transitive.
+          - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups that this device is a member of. This operation is transitive. Supports $expand.
           - `[TrustType <String>]`: Type of trust for the joined device. Read-only. Possible values: Workplace (indicates bring your own personal devices), AzureAd (Cloud only joined devices), ServerAd (on-premises domain joined devices joined to Azure AD). For more details, see Introduction to device management in Azure Active Directory
         - `[DeviceTag <String>]`: Tags containing app metadata.
         - `[DisplayName <String>]`: The name of the device on which this app is registered.
@@ -7743,11 +8440,11 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
       - `[WindowsHelloForBusinessMethods <IMicrosoftGraphWindowsHelloForBusinessAuthenticationMethod1[]>]`: 
         - `[Id <String>]`: Read-only.
         - `[CreatedDateTime <DateTime?>]`: The date and time that this Windows Hello for Business key was registered.
-        - `[Device <IMicrosoftGraphDevice1>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
+        - `[Device <IMicrosoftGraphDevice1>]`: device
         - `[DisplayName <String>]`: The name of the device on which Windows Hello for Business is registered
         - `[KeyStrength <String>]`: authenticationMethodKeyStrength
     - `[Birthday <DateTime?>]`: The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Returned only on $select.
-    - `[BusinessPhones <String[]>]`: The telephone numbers for the user. Only one number can be set for this property. Read-only for users synced from on-premises directory. Supports $filter (eq and NOT).
+    - `[BusinessPhones <String[]>]`: The telephone numbers for the user. Only one number can be set for this property. Read-only for users synced from on-premises directory. Supports $filter (eq, not, ge, le, startsWith).
     - `[Calendar <IMicrosoftGraphCalendar1>]`: calendar
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: Read-only.
@@ -7768,7 +8465,7 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
         - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
         - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
         - `[Id <String>]`: Read-only.
-        - `[AllowNewTimeProposals <Boolean?>]`: True if the meeting organizer allows invitees to propose a new time when responding, false otherwise. Optional. Default is true.
+        - `[AllowNewTimeProposals <Boolean?>]`: true if the meeting organizer allows invitees to propose a new time when responding; otherwise false. Optional. Default is true.
         - `[Attachments <IMicrosoftGraphAttachment[]>]`: The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event. Navigation property. Read-only. Nullable.
           - `[Id <String>]`: Read-only.
           - `[ContentType <String>]`: The MIME type.
@@ -7803,12 +8500,12 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
         - `[ICalUId <String>]`: A unique identifier for an event across calendars. This ID is different for each occurrence in a recurring series. Read-only.
         - `[Importance <String>]`: importance
         - `[Instances <IMicrosoftGraphEvent1[]>]`: The occurrences of a recurring series, if the event is a series master. This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series. Navigation property. Read-only. Nullable.
-        - `[IsAllDay <Boolean?>]`: Set to true if the event lasts all day.
-        - `[IsCancelled <Boolean?>]`: Set to true if the event has been canceled.
-        - `[IsDraft <Boolean?>]`: Set to true if the user has updated the meeting in Outlook but has not sent the updates to attendees. Set to false if all changes have been sent, or if the event is an appointment without any attendees.
-        - `[IsOnlineMeeting <Boolean?>]`: True if this event has online meeting information, false otherwise. Default is false. Optional.
-        - `[IsOrganizer <Boolean?>]`: Set to true if the calendar owner (specified by the owner property of the calendar) is the organizer of the event (specified by the organizer property of the event). This also applies if a delegate organized the event on behalf of the owner.
-        - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the event.
+        - `[IsAllDay <Boolean?>]`: 
+        - `[IsCancelled <Boolean?>]`: 
+        - `[IsDraft <Boolean?>]`: 
+        - `[IsOnlineMeeting <Boolean?>]`: 
+        - `[IsOrganizer <Boolean?>]`: 
+        - `[IsReminderOn <Boolean?>]`: 
         - `[Location <IMicrosoftGraphLocation1>]`: location
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Address <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
@@ -7831,7 +8528,7 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
           - `[LocationUri <String>]`: Optional URI representing the location.
           - `[UniqueId <String>]`: For internal use only.
           - `[UniqueIdType <String>]`: locationUniqueIdType
-        - `[Locations <IMicrosoftGraphLocation1[]>]`: The locations where the event is held or attended from. The location and locations properties always correspond with each other. If you update the location property, any prior locations in the locations collection would be removed and replaced by the new location value.
+        - `[Locations <IMicrosoftGraphLocation1[]>]`: 
         - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the event. Read-only. Nullable.
           - `[Id <String>]`: Read-only.
           - `[Value <String[]>]`: A collection of property values.
@@ -7848,19 +8545,19 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
           - `[TollFreeNumbers <String[]>]`: The toll free numbers that can be used to join the conference.
           - `[TollNumber <String>]`: The toll number that can be used to join the conference.
         - `[OnlineMeetingProvider <String>]`: onlineMeetingProviderType
-        - `[OnlineMeetingUrl <String>]`: A URL for an online meeting. The property is set only when an organizer specifies an event as an online meeting such as a Skype meeting. Read-only.
+        - `[OnlineMeetingUrl <String>]`: 
         - `[Organizer <IMicrosoftGraphRecipient>]`: recipient
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-        - `[OriginalEndTimeZone <String>]`: The end time zone that was set when the event was created. A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
-        - `[OriginalStart <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-        - `[OriginalStartTimeZone <String>]`: The start time zone that was set when the event was created. A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
+        - `[OriginalEndTimeZone <String>]`: 
+        - `[OriginalStart <DateTime?>]`: 
+        - `[OriginalStartTimeZone <String>]`: 
         - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs. Required if type is absoluteMonthly or absoluteYearly.
-            - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. Possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
+            - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
             - `[FirstDayOfWeek <String>]`: dayOfWeek
             - `[Index <String>]`: weekIndex
             - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type. Required.
@@ -7873,20 +8570,20 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
             - `[RecurrenceTimeZone <String>]`: Time zone for the startDate and endDate properties. Optional. If not specified, the time zone of the event is used.
             - `[StartDate <DateTime?>]`: The date to start applying the recurrence pattern. The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event. Must be the same value as the start property of the recurring event. Required.
             - `[Type <String>]`: recurrenceRangeType
-        - `[ReminderMinutesBeforeStart <Int32?>]`: The number of minutes before the event start time that the reminder alert occurs.
-        - `[ResponseRequested <Boolean?>]`: Default is true, which represents the organizer would like an invitee to send a response to the event.
+        - `[ReminderMinutesBeforeStart <Int32?>]`: 
+        - `[ResponseRequested <Boolean?>]`: 
         - `[ResponseStatus <IMicrosoftGraphResponseStatus>]`: responseStatus
         - `[Sensitivity <String>]`: sensitivity
-        - `[SeriesMasterId <String>]`: The ID for the recurring series master item, if this event is part of a recurring series.
+        - `[SeriesMasterId <String>]`: 
         - `[ShowAs <String>]`: freeBusyStatus
         - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the event. Read-only. Nullable.
           - `[Id <String>]`: Read-only.
           - `[Value <String>]`: A property value.
         - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-        - `[Subject <String>]`: The text of the event's subject line.
-        - `[TransactionId <String>]`: A custom identifier specified by a client app for the server to avoid redundant POST operations in case of client retries to create the same event. This is useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request. After you set transactionId when creating an event, you cannot change transactionId in a subsequent update. This property is only returned in a response payload if an app has set it. Optional.
+        - `[Subject <String>]`: 
+        - `[TransactionId <String>]`: 
         - `[Type <String>]`: eventType
-        - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in to your mailbox. Otherwise, Outlook on the web prompts you to sign in.This URL cannot be accessed from within an iFrame.
+        - `[WebLink <String>]`: 
       - `[CanEdit <Boolean?>]`: true if the user can write to the calendar, false otherwise. This property is true for the user who created the calendar. This property is also true for a user who has been shared a calendar and granted write access, through an Outlook client or the corresponding calendarPermission resource. Read-only.
       - `[CanShare <Boolean?>]`: true if the user has the permission to share the calendar, false otherwise. Only the user who created the calendar can share it. Read-only.
       - `[CanViewPrivateItems <Boolean?>]`: true if the user can read calendar items that have been marked private, false otherwise. This property is set through an Outlook client or the corresponding calendarPermission resource. Read-only.
@@ -7944,7 +8641,7 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
         - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
       - `[Messages <IMicrosoftGraphChatMessage1[]>]`: A collection of all the messages in the chat. Nullable.
         - `[Id <String>]`: Read-only.
-        - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: Attached files. Attachments are currently read-only - sending attachments is not supported.
+        - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: References to attached objects like files, tabs, meetings etc.
           - `[Content <String>]`: The content of the attachment. If the attachment is a rich card, set the property to the rich card object. This property and contentUrl are mutually exclusive.
           - `[ContentType <String>]`: The media type of the content attachment. It can have the following values: reference: Attachment is a link to another file. Populate the contentURL with the link to the object.Any contentTypes supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet. application/vnd.microsoft.card.announcement: An announcement header.
           - `[ContentUrl <String>]`: URL for the content of the attachment. Supported protocols: http, https, file and data.
@@ -7960,6 +8657,8 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
         - `[CreatedDateTime <DateTime?>]`: Timestamp of when the chat message was created.
         - `[DeletedDateTime <DateTime?>]`: Read only. Timestamp at which the chat message was deleted, or null if not deleted.
         - `[Etag <String>]`: Read-only. Version number of the chat message.
+        - `[EventDetail <IMicrosoftGraphEventMessageDetail>]`: eventMessageDetail
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[From <IMicrosoftGraphChatMessageFromIdentitySet>]`: chatMessageFromIdentitySet
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -7973,7 +8672,7 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
         - `[LastEditedDateTime <DateTime?>]`: Read only. Timestamp when edits to the chat message were made. Triggers an 'Edited' flag in the Teams UI. If no edits are made the value is null.
         - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
         - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
-        - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Currently supports user, bot, team, channel.
+        - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
           - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
           - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
           - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
@@ -7983,10 +8682,10 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
             - `[User <IMicrosoftGraphIdentity>]`: identity
             - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-              - `[Id <String>]`: Unique identifier for the identity.
+              - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+              - `[Id <String>]`: The identifier of the identity. This property is read-only.
               - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
-        - `[MessageType <String>]`: 
+        - `[MessageType <String>]`: chatMessageType
         - `[PolicyViolation <IMicrosoftGraphChatMessagePolicyViolation>]`: chatMessagePolicyViolation
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DlpAction <String>]`: chatMessagePolicyViolationDlpActionTypes
@@ -8023,9 +8722,10 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
         - `[TeamsApp <IMicrosoftGraphTeamsApp1>]`: teamsApp
         - `[WebUrl <String>]`: Deep link URL of the tab instance. Read only.
       - `[Topic <String>]`: (Optional) Subject or topic for the chat. Only available for group chats.
-    - `[City <String>]`: The city in which the user is located. Maximum length is 128 characters. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
-    - `[CompanyName <String>]`: The company name which the user is associated. This property can be useful for describing the company that an external user comes from. The maximum length of the company name is 64 characters.Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
-    - `[ConsentProvidedForMinor <String>]`: Sets whether consent has been obtained for minors. Allowed values: null, granted, denied and notRequired. Refer to the legal age group property definitions for further information. Supports $filter (eq, ne, NOT, and in).
+      - `[WebUrl <String>]`: The URL for the chat in Microsoft Teams. The URL should be treated as an opaque blob, and not parsed. Read-only.
+    - `[City <String>]`: The city in which the user is located. Maximum length is 128 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+    - `[CompanyName <String>]`: The company name which the user is associated. This property can be useful for describing the company that an external user comes from. The maximum length of the company name is 64 characters.Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+    - `[ConsentProvidedForMinor <String>]`: Sets whether consent has been obtained for minors. Allowed values: null, granted, denied and notRequired. Refer to the legal age group property definitions for further information. Supports $filter (eq, ne, not, and in).
     - `[ContactFolders <IMicrosoftGraphContactFolder1[]>]`: The user's contacts folders. Read-only. Nullable.
       - `[Id <String>]`: Read-only.
       - `[ChildFolders <IMicrosoftGraphContactFolder1[]>]`: The collection of child folders in the folder. Navigation property. Read-only. Nullable.
@@ -8051,57 +8751,57 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
         - `[GivenName <String>]`: The contact's given name.
         - `[HomeAddress <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
         - `[HomePhones <String[]>]`: The contact's home phone numbers.
-        - `[ImAddresses <String[]>]`: The contact's instant messaging (IM) addresses.
-        - `[Initials <String>]`: The contact's initials.
-        - `[JobTitle <String>]`: The contact's job title.
-        - `[Manager <String>]`: The name of the contact's manager.
-        - `[MiddleName <String>]`: The contact's middle name.
-        - `[MobilePhone <String>]`: The contact's mobile phone number.
+        - `[ImAddresses <String[]>]`: 
+        - `[Initials <String>]`: 
+        - `[JobTitle <String>]`: 
+        - `[Manager <String>]`: 
+        - `[MiddleName <String>]`: 
+        - `[MobilePhone <String>]`: 
         - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
-        - `[NickName <String>]`: The contact's nickname.
-        - `[OfficeLocation <String>]`: The location of the contact's office.
+        - `[NickName <String>]`: 
+        - `[OfficeLocation <String>]`: 
         - `[OtherAddress <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
-        - `[ParentFolderId <String>]`: The ID of the contact's parent folder.
-        - `[PersonalNotes <String>]`: The user's notes about the contact.
+        - `[ParentFolderId <String>]`: 
+        - `[PersonalNotes <String>]`: 
         - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: Read-only.
           - `[Height <Int32?>]`: The height of the photo. Read-only.
           - `[Width <Int32?>]`: The width of the photo. Read-only.
-        - `[Profession <String>]`: The contact's profession.
+        - `[Profession <String>]`: 
         - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the contact. Read-only. Nullable.
-        - `[SpouseName <String>]`: The name of the contact's spouse/partner.
-        - `[Surname <String>]`: The contact's surname.
-        - `[Title <String>]`: The contact's title.
-        - `[YomiCompanyName <String>]`: The phonetic Japanese company name of the contact.
-        - `[YomiGivenName <String>]`: The phonetic Japanese given name (first name) of the contact.
-        - `[YomiSurname <String>]`: The phonetic Japanese surname (last name)  of the contact.
+        - `[SpouseName <String>]`: 
+        - `[Surname <String>]`: 
+        - `[Title <String>]`: 
+        - `[YomiCompanyName <String>]`: 
+        - `[YomiGivenName <String>]`: 
+        - `[YomiSurname <String>]`: 
       - `[DisplayName <String>]`: The folder's display name.
       - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the contactFolder. Read-only. Nullable.
       - `[ParentFolderId <String>]`: The ID of the folder's parent folder.
       - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the contactFolder. Read-only. Nullable.
     - `[Contacts <IMicrosoftGraphContact1[]>]`: The user's contacts. Read-only. Nullable.
-    - `[Country <String>]`: The country/region in which the user is located; for example, US or UK. Maximum length is 128 characters. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
-    - `[CreatedDateTime <DateTime?>]`: The date and time the user was created. The value cannot be modified and is automatically populated when the entity is created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. Property is nullable. A null value indicates that an accurate creation time couldn't be determined for the user. Read-only. Supports $filter (eq, ne, NOT , ge, le, and in operators).
+    - `[Country <String>]`: The country/region in which the user is located; for example, US or UK. Maximum length is 128 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+    - `[CreatedDateTime <DateTime?>]`: The date and time the user was created. The value cannot be modified and is automatically populated when the entity is created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. Property is nullable. A null value indicates that an accurate creation time couldn't be determined for the user. Read-only. Supports $filter (eq, ne, not , ge, le, in).
     - `[CreatedObjects <IMicrosoftGraphDirectoryObject[]>]`: Directory objects that were created by the user. Read-only. Nullable.
-    - `[CreationType <String>]`: Indicates whether the user account was created as a regular school or work account (null), an external account (Invitation), a local account for an Azure Active Directory B2C tenant (LocalAccount) or self-service sign-up using email verification (EmailVerified). Read-only. Supports $filter (eq, ne, NOT, and in).
-    - `[Department <String>]`: The name for the department in which the user works. Maximum length is 64 characters.Supports $filter (eq, ne, NOT , ge, le, and in operators).
+    - `[CreationType <String>]`: Indicates whether the user account was created through one of the following methods:  As a regular school or work account (null). As an external account (Invitation). As a local account for an Azure Active Directory B2C tenant (LocalAccount). Through self-service sign-up by an internal user using email verification (EmailVerified). Through self-service sign-up by an external user signing up through a link that is part of a user flow (SelfServiceSignUp).  Read-only.Supports $filter (eq, ne, not, and in).
+    - `[Department <String>]`: The name for the department in which the user works. Maximum length is 64 characters.Supports $filter (eq, ne, not , ge, le, in, and eq on null values).
     - `[DeviceEnrollmentLimit <Int32?>]`: The limit on the maximum number of devices that the user is permitted to enroll. Allowed values are 5 or 1000.
     - `[DeviceManagementTroubleshootingEvents <IMicrosoftGraphDeviceManagementTroubleshootingEvent1[]>]`: The list of troubleshooting events for this user.
       - `[Id <String>]`: Read-only.
       - `[CorrelationId <String>]`: Id used for tracing the failure in the service.
       - `[EventDateTime <DateTime?>]`: Time when the event occurred .
-    - `[DirectReports <IMicrosoftGraphDirectoryObject[]>]`: The users and contacts that report to the user. (The users and contacts that have their manager property set to this user.) Read-only. Nullable.
-    - `[DisplayName <String>]`: The name displayed in the address book for the user. This value is usually the combination of the user's first name, middle initial, and last name. This property is required when a user is created and it cannot be cleared during updates. Maximum length is 256 characters. Supports $filter (eq, ne, NOT , ge, le, in, startsWith), $orderBy, and $search.
+    - `[DirectReports <IMicrosoftGraphDirectoryObject[]>]`: The users and contacts that report to the user. (The users and contacts that have their manager property set to this user.) Read-only. Nullable. Supports $expand.
+    - `[DisplayName <String>]`: The name displayed in the address book for the user. This value is usually the combination of the user's first name, middle initial, and last name. This property is required when a user is created and it cannot be cleared during updates. Maximum length is 256 characters. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values), $orderBy, and $search.
     - `[Drive <IMicrosoftGraphDrive1>]`: drive
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[CreatedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+      - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
       - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
       - `[Description <String>]`: Provides a user-visible description of the item. Optional.
       - `[ETag <String>]`: ETag for the item. Read-only.
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+      - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
       - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
       - `[Name <String>]`: The name of the item. Read-write.
       - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -8124,15 +8824,14 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
         - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
       - `[WebUrl <String>]`: URL that displays the resource in the browser. Read-only.
       - `[Id <String>]`: Read-only.
-      - `[DriveType <String>]`: Describes the type of drive represented by this resource. OneDrive personal drives will return personal. OneDrive for Business will return business. SharePoint document libraries will return documentLibrary. Read-only.
-      - `[Following <IMicrosoftGraphDriveItem1[]>]`: The list of items the user is following. Only in OneDrive for Business.
+      - `[Bundles <IMicrosoftGraphDriveItem1[]>]`: Collection of [bundles][bundle] (albums and multi-select-shared sets of items). Only in personal OneDrive.
         - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[CreatedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+        - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
         - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
         - `[Description <String>]`: Provides a user-visible description of the item. Optional.
         - `[ETag <String>]`: ETag for the item. Read-only.
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+        - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
         - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
         - `[Name <String>]`: The name of the item. Read-write.
         - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -8186,6 +8885,12 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
           - `[Track <Int32?>]`: The number of the track on the original disc for this audio file.
           - `[TrackCount <Int32?>]`: The total number of tracks on the original disc for this audio file.
           - `[Year <Int32?>]`: The year the audio file was recorded.
+        - `[Bundle <IMicrosoftGraphBundle>]`: bundle
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Album <IMicrosoftGraphAlbum>]`: album
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[CoverImageItemId <String>]`: Unique identifier of the [driveItem][] that is the cover of the album.
+          - `[ChildCount <Int32?>]`: Number of children contained immediately within this container.
         - `[CTag <String>]`: An eTag for the content of the item. This eTag is not changed if only the metadata is changed. Note This property is not returned if the item is a folder. Read-only.
         - `[Children <IMicrosoftGraphDriveItem1[]>]`: Collection containing Item objects for the immediate children of Item. Only items representing folders have children. Read-only. Nullable.
         - `[Content <Byte[]>]`: The content stream, if the item represents a file.
@@ -8225,6 +8930,9 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
           - `[Altitude <Double?>]`: Optional. The altitude (height), in feet,  above sea level for the item. Read-only.
           - `[Latitude <Double?>]`: Optional. The latitude, in decimal, for the item. Writable on OneDrive Personal.
           - `[Longitude <Double?>]`: Optional. The longitude, in decimal, for the item. Writable on OneDrive Personal.
+        - `[Malware <IMicrosoftGraphMalware>]`: malware
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Description <String>]`: Contains the virus details for the malware facet.
         - `[Package <IMicrosoftGraphPackage>]`: package
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Type <String>]`: A string indicating the type of package. While oneNote is the only currently defined value, you should expect other package types to be returned and handle them accordingly.
@@ -8237,8 +8945,20 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
           - `[Id <String>]`: Read-only.
           - `[ExpirationDateTime <DateTime?>]`: A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission. DateTime.MinValue indicates there is no expiration set for this permission. Optional.
           - `[GrantedTo <IMicrosoftGraphIdentitySet>]`: identitySet
-          - `[GrantedToIdentities <IMicrosoftGraphIdentitySet[]>]`: For link type permissions, the details of the users to whom permission was granted. Read-only.
-          - `[HasPassword <Boolean?>]`: This indicates whether password is set for this permission, it's only showing in response. Optional and Read-only and for OneDrive Personal only.
+          - `[GrantedToIdentities <IMicrosoftGraphIdentitySet[]>]`: 
+          - `[GrantedToIdentitiesV2 <IMicrosoftGraphSharePointIdentitySet[]>]`: For link type permissions, the details of the users to whom permission was granted. Read-only.
+            - `[Application <IMicrosoftGraphIdentity>]`: identity
+            - `[Device <IMicrosoftGraphIdentity>]`: identity
+            - `[User <IMicrosoftGraphIdentity>]`: identity
+            - `[Group <IMicrosoftGraphIdentity>]`: identity
+            - `[SiteGroup <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+              - `[Id <String>]`: The identifier of the identity. This property is read-only.
+              - `[LoginName <String>]`: The sign in name of the SharePoint identity.
+            - `[SiteUser <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
+          - `[GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>]`: sharePointIdentitySet
+          - `[HasPassword <Boolean?>]`: Indicates whether the password is set for this permission. This property only appears in the response. Optional. Read-only. For OneDrive Personal only.
           - `[InheritedFrom <IMicrosoftGraphItemReference>]`: itemReference
           - `[Invitation <IMicrosoftGraphSharingInvitation>]`: sharingInvitation
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -8254,7 +8974,7 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
             - `[Type <String>]`: The type of the link created.
             - `[WebHtml <String>]`: For embed links, this property contains the HTML code for an <iframe> element that will embed the item in a webpage.
             - `[WebUrl <String>]`: A URL that opens the item in the browser on the OneDrive website.
-          - `[Roles <String[]>]`: The type of permission, e.g. read. See below for the full list of roles. Read-only.
+          - `[Roles <String[]>]`: The type of permission, for example, read. See below for the full list of roles. Read-only.
           - `[ShareId <String>]`: A unique token that can be used to access this shared item via the [shares API][]. Read-only.
         - `[Photo <IMicrosoftGraphPhoto>]`: photo
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -8322,18 +9042,19 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
         - `[Subscriptions <IMicrosoftGraphSubscription1[]>]`: The set of subscriptions on the item. Only supported on the root of a drive.
           - `[Id <String>]`: Read-only.
           - `[ApplicationId <String>]`: Identifier of the application used to create the subscription. Read-only.
-          - `[ChangeType <String>]`: Indicates the type of change in the subscribed resource that will raise a change notification. The supported values are: created, updated, deleted. Multiple values can be combined using a comma-separated list. Required. Note: Drive root item and list change notifications support only the updated changeType. User and group change notifications support updated and deleted changeType.
-          - `[ClientState <String>]`: Specifies the value of the clientState property sent by the service in each change notification. The maximum length is 255 characters. The client can check that the change notification came from the service by comparing the value of the clientState property sent with the subscription with the value of the clientState property received with each change notification. Optional.
+          - `[ChangeType <String>]`: Required. Indicates the type of change in the subscribed resource that will raise a change notification. The supported values are: created, updated, deleted. Multiple values can be combined using a comma-separated list. Note:  Drive root item and list change notifications support only the updated changeType. User and group change notifications support updated and deleted changeType.
+          - `[ClientState <String>]`: Optional. Specifies the value of the clientState property sent by the service in each change notification. The maximum length is 255 characters. The client can check that the change notification came from the service by comparing the value of the clientState property sent with the subscription with the value of the clientState property received with each change notification.
           - `[CreatorId <String>]`: Identifier of the user or service principal that created the subscription. If the app used delegated permissions to create the subscription, this field contains the ID of the signed-in user the app called on behalf of. If the app used application permissions, this field contains the ID of the service principal corresponding to the app. Read-only.
-          - `[EncryptionCertificate <String>]`: A base64-encoded representation of a certificate with a public key used to encrypt resource data in change notifications. Optional. Required when includeResourceData is true.
-          - `[EncryptionCertificateId <String>]`: A custom app-provided identifier to help identify the certificate needed to decrypt resource data. Optional. Required when includeResourceData is true.
-          - `[ExpirationDateTime <DateTime?>]`: Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to.  See the table below for maximum supported subscription length of time. Required.
-          - `[IncludeResourceData <Boolean?>]`: When set to true, change notifications include resource data (such as content of a chat message). Optional.
+          - `[EncryptionCertificate <String>]`: A base64-encoded representation of a certificate with a public key used to encrypt resource data in change notifications. Optional but required when includeResourceData is true.
+          - `[EncryptionCertificateId <String>]`: Optional. A custom app-provided identifier to help identify the certificate needed to decrypt resource data. Required when includeResourceData is true.
+          - `[ExpirationDateTime <DateTime?>]`: Required. Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to. For the maximum supported subscription length of time, see the table below.
+          - `[IncludeResourceData <Boolean?>]`: Optional. When set to true, change notifications include resource data (such as content of a chat message).
           - `[LatestSupportedTlsVersion <String>]`: Specifies the latest version of Transport Layer Security (TLS) that the notification endpoint, specified by notificationUrl, supports. The possible values are: v1_0, v1_1, v1_2, v1_3. For subscribers whose notification endpoint supports a version lower than the currently recommended version (TLS 1.2), specifying this property by a set timeline allows them to temporarily use their deprecated version of TLS before completing their upgrade to TLS 1.2. For these subscribers, not setting this property per the timeline would result in subscription operations failing. For subscribers whose notification endpoint already supports TLS 1.2, setting this property is optional. In such cases, Microsoft Graph defaults the property to v1_2.
-          - `[LifecycleNotificationUrl <String>]`: The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved and missed notifications. This URL must make use of the HTTPS protocol. Optional. Read more about how Outlook resources use lifecycle notifications.
-          - `[NotificationQueryOptions <String>]`: OData Query Options for specifying value for the targeting resource. Clients receive notifications when resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property eg  when the print job is completed, when a print job resource isFetchable property value becomes true etc.
-          - `[NotificationUrl <String>]`: The URL of the endpoint that receives the change notifications. This URL must make use of the HTTPS protocol. Required.
-          - `[Resource <String>]`: Specifies the resource that will be monitored for changes. Do not include the base URL (https://graph.microsoft.com/beta/). See the possible resource path values for each supported resource. Required.
+          - `[LifecycleNotificationUrl <String>]`: Optional. The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved and missed notifications. This URL must make use of the HTTPS protocol.
+          - `[NotificationQueryOptions <String>]`: OData query options for specifying the value for the targeting resource. Clients receive notifications when the resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property. For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc.
+          - `[NotificationUrl <String>]`: Required. The URL of the endpoint that receives the change notifications. This URL must make use of the HTTPS protocol.
+          - `[NotificationUrlAppId <String>]`: 
+          - `[Resource <String>]`: Required. Specifies the resource that will be monitored for changes. Do not include the base URL (https://graph.microsoft.com/beta/). See the possible resource path values for each supported resource.
         - `[Thumbnails <IMicrosoftGraphThumbnailSet[]>]`: Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable.
           - `[Id <String>]`: Read-only.
           - `[Large <IMicrosoftGraphThumbnail>]`: thumbnail
@@ -8584,16 +9305,18 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
             - `[Status <String>]`: workbookOperationStatus
           - `[Tables <IMicrosoftGraphWorkbookTable1[]>]`: Represents a collection of tables associated with the workbook. Read-only.
           - `[Worksheets <IMicrosoftGraphWorkbookWorksheet1[]>]`: Represents a collection of worksheets associated with the workbook. Read-only.
+      - `[DriveType <String>]`: Describes the type of drive represented by this resource. OneDrive personal drives will return personal. OneDrive for Business will return business. SharePoint document libraries will return documentLibrary. Read-only.
+      - `[Following <IMicrosoftGraphDriveItem1[]>]`: The list of items the user is following. Only in OneDrive for Business.
       - `[Items <IMicrosoftGraphDriveItem1[]>]`: All items contained in the drive. Read-only. Nullable.
       - `[List <IMicrosoftGraphList1>]`: list
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[CreatedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+        - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
         - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
         - `[Description <String>]`: Provides a user-visible description of the item. Optional.
         - `[ETag <String>]`: ETag for the item. Read-only.
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+        - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
         - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
         - `[Name <String>]`: The name of the item. Read-write.
         - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -8614,6 +9337,8 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
             - `[Choices <String[]>]`: The list of values available for this column.
             - `[DisplayAs <String>]`: How the choices are to be presented in the UX. Must be one of checkBoxes, dropDownMenu, or radioButtons
           - `[ColumnGroup <String>]`: For site columns, the name of the group this column belongs to. Helps organize related columns.
+          - `[ContentApprovalStatus <IMicrosoftGraphContentApprovalStatusColumn>]`: contentApprovalStatusColumn
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Currency <IMicrosoftGraphCurrencyColumn>]`: currencyColumn
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Locale <String>]`: Specifies the locale from which to infer the currency symbol.
@@ -8631,7 +9356,13 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
           - `[Geolocation <IMicrosoftGraphGeolocationColumn>]`: geolocationColumn
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Hidden <Boolean?>]`: Specifies whether the column is displayed in the user interface.
+          - `[HyperlinkOrPicture <IMicrosoftGraphHyperlinkOrPictureColumn>]`: hyperlinkOrPictureColumn
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[IsPicture <Boolean?>]`: Specifies whether the display format used for URL columns is an image or a hyperlink.
           - `[Indexed <Boolean?>]`: Specifies whether the column values can used for sorting and searching.
+          - `[IsDeletable <Boolean?>]`: Indicates whether this column can be deleted.
+          - `[IsReorderable <Boolean?>]`: Indicates whether values in the column can be reordered. Read-only.
+          - `[IsSealed <Boolean?>]`: Specifies whether the column can be changed.
           - `[Lookup <IMicrosoftGraphLookupColumn>]`: lookupColumn
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[AllowMultipleValues <Boolean?>]`: Indicates whether multiple values can be selected from the source.
@@ -8651,8 +9382,58 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
             - `[AllowMultipleSelection <Boolean?>]`: Indicates whether multiple values can be selected from the source.
             - `[ChooseFromType <String>]`: Whether to allow selection of people only, or people and groups. Must be one of peopleAndGroups or peopleOnly.
             - `[DisplayAs <String>]`: How to display the information about the person or group chosen. See below.
+          - `[PropagateChanges <Boolean?>]`: If true, changes to this column will be propagated to lists that implement the column.
           - `[ReadOnly <Boolean?>]`: Specifies whether the column values can be modified.
-          - `[Required <Boolean?>]`: Specifies whether the column value is not optional.
+          - `[Required <Boolean?>]`: Specifies whether the column value isn't optional.
+          - `[SourceColumn <IMicrosoftGraphColumnDefinition1>]`: columnDefinition
+          - `[Term <IMicrosoftGraphTermColumn1>]`: termColumn
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[AllowMultipleValues <Boolean?>]`: Specifies whether the column will allow more than one value
+            - `[ParentTerm <IMicrosoftGraphTermStoreTerm1>]`: term
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[Id <String>]`: Read-only.
+              - `[Children <IMicrosoftGraphTermStoreTerm1[]>]`: Children of current term.
+              - `[CreatedDateTime <DateTime?>]`: Date and time of term creation. Read-only.
+              - `[Descriptions <IMicrosoftGraphTermStoreLocalizedDescription[]>]`: Description about term that is dependent on the languageTag.
+                - `[Description <String>]`: The description in the localized language.
+                - `[LanguageTag <String>]`: The language tag for the label.
+              - `[Labels <IMicrosoftGraphTermStoreLocalizedLabel[]>]`: Label metadata for a term.
+                - `[IsDefault <Boolean?>]`: Indicates whether the label is the default label.
+                - `[LanguageTag <String>]`: The language tag for the label.
+                - `[Name <String>]`: The name of the label.
+              - `[LastModifiedDateTime <DateTime?>]`: Last date and time of term modification. Read-only.
+              - `[Properties <IMicrosoftGraphKeyValue[]>]`: Collection of properties on the term.
+                - `[Key <String>]`: Key.
+                - `[Value <String>]`: Value.
+              - `[Relations <IMicrosoftGraphTermStoreRelation1[]>]`: To indicate which terms are related to the current term as either pinned or reused.
+                - `[Id <String>]`: Read-only.
+                - `[FromTerm <IMicrosoftGraphTermStoreTerm1>]`: term
+                - `[Relationship <String>]`: 
+                - `[Set <IMicrosoftGraphTermStoreSet1>]`: set
+                  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                  - `[Id <String>]`: Read-only.
+                  - `[Children <IMicrosoftGraphTermStoreTerm1[]>]`: Children terms of set in term [store].
+                  - `[CreatedDateTime <DateTime?>]`: Date and time of set creation. Read-only.
+                  - `[Description <String>]`: Description giving details on the term usage.
+                  - `[LocalizedNames <IMicrosoftGraphTermStoreLocalizedName[]>]`: Name of the set for each languageTag.
+                    - `[LanguageTag <String>]`: The language tag for the label.
+                    - `[Name <String>]`: The name in the localized language.
+                  - `[ParentGroup <IMicrosoftGraphTermStoreGroup1>]`: group
+                    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                    - `[Id <String>]`: Read-only.
+                    - `[CreatedDateTime <DateTime?>]`: Date and time of group creation. Read-only.
+                    - `[Description <String>]`: Description giving details on the term usage.
+                    - `[DisplayName <String>]`: Name of group.
+                    - `[ParentSiteId <String>]`: Id of the parent site of this group.
+                    - `[Scope <String>]`: 
+                    - `[Sets <IMicrosoftGraphTermStoreSet1[]>]`: All sets under the group in a term [store].
+                  - `[Properties <IMicrosoftGraphKeyValue[]>]`: Custom properties for the set.
+                  - `[Relations <IMicrosoftGraphTermStoreRelation1[]>]`: Indicates which terms have been pinned or reused directly under the set.
+                  - `[Terms <IMicrosoftGraphTermStoreTerm1[]>]`: All the terms under the set.
+                - `[ToTerm <IMicrosoftGraphTermStoreTerm1>]`: term
+              - `[Set <IMicrosoftGraphTermStoreSet1>]`: set
+            - `[ShowFullyQualifiedName <Boolean?>]`: Specifies whether to display the entire term path or only the term label.
+            - `[TermSet <IMicrosoftGraphTermStoreSet1>]`: set
           - `[Text <IMicrosoftGraphTextColumn>]`: textColumn
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[AllowMultipleLines <Boolean?>]`: Whether to allow multiple lines of text.
@@ -8660,21 +9441,53 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
             - `[LinesForEditing <Int32?>]`: The size of the text box.
             - `[MaxLength <Int32?>]`: The maximum number of characters for the value.
             - `[TextType <String>]`: The type of text being stored. Must be one of plain or richText
+          - `[Thumbnail <IMicrosoftGraphThumbnailColumn>]`: thumbnailColumn
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Type <String>]`: columnTypes
+          - `[Validation <IMicrosoftGraphColumnValidation>]`: columnValidation
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[DefaultLanguage <String>]`: Default BCP 47 language tag for the description.
+            - `[Descriptions <IMicrosoftGraphDisplayNameLocalization[]>]`: Localized messages that explain what is needed for this column's value to be considered valid. User will be prompted with this message if validation fails.
+              - `[DisplayName <String>]`: If present, the value of this field contains the displayName string that has been set for the language present in the languageTag field.
+              - `[LanguageTag <String>]`: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
+            - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists
         - `[ContentTypes <IMicrosoftGraphContentType1[]>]`: The collection of content types present in this list.
           - `[Id <String>]`: Read-only.
+          - `[AssociatedHubsUrls <String[]>]`: List of canonical URLs for hub sites with which this content type is associated to. This will contain all hubsites where this content type is queued to be enforced or is already enforced. Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
+          - `[Base <IMicrosoftGraphContentType1>]`: contentType
+          - `[BaseTypes <IMicrosoftGraphContentType1[]>]`: The collection of content types that are ancestors of this content type.
           - `[ColumnLinks <IMicrosoftGraphColumnLink[]>]`: The collection of columns that are required by this content type
             - `[Id <String>]`: Read-only.
             - `[Name <String>]`: The name of the column  in this content type.
+          - `[ColumnPositions <IMicrosoftGraphColumnDefinition1[]>]`: Column order information in a content type.
+          - `[Columns <IMicrosoftGraphColumnDefinition1[]>]`: The collection of column definitions for this contentType.
           - `[Description <String>]`: The descriptive text for the item.
+          - `[DocumentSet <IMicrosoftGraphDocumentSet1>]`: documentSet
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[AllowedContentTypes <IMicrosoftGraphContentTypeInfo[]>]`: Content types allowed in document set.
+              - `[Id <String>]`: The id of the content type.
+              - `[Name <String>]`: The name of the content type.
+            - `[DefaultContents <IMicrosoftGraphDocumentSetContent[]>]`: Default contents of document set.
+              - `[ContentType <IMicrosoftGraphContentTypeInfo>]`: contentTypeInfo
+              - `[FileName <String>]`: Name of the file in resource folder that should be added as a default content or a template in the document set
+              - `[FolderName <String>]`: Folder name in which the file will be placed when a new document set is created in the library.
+            - `[PropagateWelcomePageChanges <Boolean?>]`: Specifies whether to push welcome page changes to inherited content types.
+            - `[SharedColumns <IMicrosoftGraphColumnDefinition1[]>]`: 
+            - `[ShouldPrefixNameToFile <Boolean?>]`: Add the name of the Document Set to each file name.
+            - `[WelcomePageColumns <IMicrosoftGraphColumnDefinition1[]>]`: 
+            - `[WelcomePageUrl <String>]`: Welcome page absolute URL.
+          - `[DocumentTemplate <IMicrosoftGraphDocumentSetContent>]`: documentSetContent
           - `[Group <String>]`: The name of the group this content type belongs to. Helps organize related content types.
           - `[Hidden <Boolean?>]`: Indicates whether the content type is hidden in the list's 'New' menu.
           - `[InheritedFrom <IMicrosoftGraphItemReference>]`: itemReference
+          - `[IsBuiltIn <Boolean?>]`: Specifies if a content type is a built-in content type.
           - `[Name <String>]`: The name of the content type.
           - `[Order <IMicrosoftGraphContentTypeOrder>]`: contentTypeOrder
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Default <Boolean?>]`: Whether this is the default Content Type
             - `[Position <Int32?>]`: Specifies the position in which the Content Type appears in the selection UI.
           - `[ParentId <String>]`: The unique identifier of the content type.
+          - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.
           - `[ReadOnly <Boolean?>]`: If true, the content type cannot be modified unless this value is first set to false.
           - `[Sealed <Boolean?>]`: If true, the content type cannot be modified by users or through push-down operations. Only site collection administrators can seal or unseal content types.
         - `[DisplayName <String>]`: The displayable title of the list.
@@ -8705,26 +9518,26 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
       - `[Special <IMicrosoftGraphDriveItem1[]>]`: Collection of common folders available in OneDrive. Read-only. Nullable.
       - `[System <IMicrosoftGraphSystemFacet>]`: systemFacet
     - `[Drives <IMicrosoftGraphDrive1[]>]`: A collection of drives available for this user. Read-only.
-    - `[EmployeeHireDate <DateTime?>]`: The date and time when the user was hired or will start work in case of a future hire. Supports $filter (eq, ne, NOT , ge, le, in).
-    - `[EmployeeId <String>]`: The employee identifier assigned to the user by the organization. Supports $filter (eq, ne, NOT , ge, le, in, startsWith).
+    - `[EmployeeHireDate <DateTime?>]`: The date and time when the user was hired or will start work in case of a future hire. Supports $filter (eq, ne, not , ge, le, in).
+    - `[EmployeeId <String>]`: The employee identifier assigned to the user by the organization. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
     - `[EmployeeOrgData <IMicrosoftGraphEmployeeOrgData>]`: employeeOrgData
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CostCenter <String>]`: The cost center associated with the user. Returned only on $select. Supports $filter.
       - `[Division <String>]`: The name of the division in which the user works. Returned only on $select. Supports $filter.
-    - `[EmployeeType <String>]`: Captures enterprise worker type. For example, Employee, Contractor, Consultant, or Vendor. Supports $filter (eq, ne, NOT , ge, le, in, startsWith).
+    - `[EmployeeType <String>]`: Captures enterprise worker type. For example, Employee, Contractor, Consultant, or Vendor. Supports $filter (eq, ne, not , ge, le, in, startsWith).
     - `[Events <IMicrosoftGraphEvent1[]>]`: The user's events. Default is to show events under the Default Calendar. Read-only. Nullable.
     - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the user. Nullable.
-    - `[ExternalUserState <String>]`: For an external user invited to the tenant using the invitation API, this property represents the invited user's invitation status. For invited users, the state can be PendingAcceptance or Accepted, or null for all other users. Supports $filter (eq, ne, NOT , in).
-    - `[ExternalUserStateChangeDateTime <DateTime?>]`: Shows the timestamp for the latest change to the externalUserState property. Supports $filter (eq, ne, NOT , in).
-    - `[FaxNumber <String>]`: The fax number of the user. Supports $filter (eq, ne, NOT , ge, le, in, startsWith).
+    - `[ExternalUserState <String>]`: For an external user invited to the tenant using the invitation API, this property represents the invited user's invitation status. For invited users, the state can be PendingAcceptance or Accepted, or null for all other users. Supports $filter (eq, ne, not , in).
+    - `[ExternalUserStateChangeDateTime <DateTime?>]`: Shows the timestamp for the latest change to the externalUserState property. Supports $filter (eq, ne, not , in).
+    - `[FaxNumber <String>]`: The fax number of the user. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
     - `[FollowedSites <IMicrosoftGraphSite1[]>]`: 
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[CreatedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+      - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
       - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
       - `[Description <String>]`: Provides a user-visible description of the item. Optional.
       - `[ETag <String>]`: ETag for the item. Read-only.
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+      - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
       - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
       - `[Name <String>]`: The name of the item. Read-write.
       - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -8751,15 +9564,16 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
           - `[Target <String>]`: The target of the error.
         - `[Message <String>]`: A non-localized message for the developer.
         - `[Target <String>]`: The target of the error.
+      - `[ExternalColumns <IMicrosoftGraphColumnDefinition1[]>]`: The collection of column definitions available in the site that are referenced from the sites in the parent hierarchy of the current site.
       - `[Items <IMicrosoftGraphBaseItem1[]>]`: Used to address any item contained in this site. This collection cannot be enumerated.
         - `[Id <String>]`: Read-only.
         - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[CreatedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+        - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
         - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
         - `[Description <String>]`: Provides a user-visible description of the item. Optional.
         - `[ETag <String>]`: ETag for the item. Read-only.
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+        - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
         - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
         - `[Name <String>]`: The name of the item. Read-write.
         - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -8864,13 +9678,21 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
         - `[Hostname <String>]`: The hostname for the site collection. Read-only.
         - `[Root <IMicrosoftGraphRoot>]`: root
       - `[Sites <IMicrosoftGraphSite1[]>]`: The collection of the sub-sites under this site.
-    - `[GivenName <String>]`: The given name (first name) of the user. Maximum length is 64 characters. Supports $filter (eq, ne, NOT , ge, le, in, startsWith).
+      - `[TermStore <IMicrosoftGraphTermStore1>]`: store
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: Read-only.
+        - `[DefaultLanguageTag <String>]`: Default language of the term store.
+        - `[Groups <IMicrosoftGraphTermStoreGroup1[]>]`: Collection of all groups available in the term store.
+        - `[LanguageTags <String[]>]`: List of languages for the term store.
+        - `[Sets <IMicrosoftGraphTermStoreSet1[]>]`: Collection of all sets available in the term store.
+      - `[TermStores <IMicrosoftGraphTermStore1[]>]`: The collection of termStores under this site.
+    - `[GivenName <String>]`: The given name (first name) of the user. Maximum length is 64 characters. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
     - `[HireDate <DateTime?>]`: The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.  Returned only on $select.  Note: This property is specific to SharePoint Online. We recommend using the native employeeHireDate property to set and update hire date values using Microsoft Graph APIs.
-    - `[Identities <IMicrosoftGraphObjectIdentity[]>]`: Represents the identities that can be used to sign in to this user account. An identity can be provided by Microsoft (also known as a local account), by organizations, or by social identity providers such as Facebook, Google, and Microsoft, and tied to a user account. May contain multiple items with the same signInType value. Supports $filter (eq) only where the signInType is not userPrincipalName.
+    - `[Identities <IMicrosoftGraphObjectIdentity[]>]`: Represents the identities that can be used to sign in to this user account. An identity can be provided by Microsoft (also known as a local account), by organizations, or by social identity providers such as Facebook, Google, and Microsoft, and tied to a user account. May contain multiple items with the same signInType value. Supports $filter (eq) including on null values, only where the signInType is not userPrincipalName.
       - `[Issuer <String>]`: Specifies the issuer of the identity, for example facebook.com.For local accounts (where signInType is not federated), this property is the local B2C tenant default domain name, for example contoso.onmicrosoft.com.For external users from other Azure AD organization, this will be the domain of the federated organization, for example contoso.com.Supports $filter. 512 character limit.
       - `[IssuerAssignedId <String>]`: Specifies the unique identifier assigned to the user by the issuer. The combination of issuer and issuerAssignedId must be unique within the organization. Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must be a valid local part of an email addressSupports $filter. 100 character limit.
-      - `[SignInType <String>]`: Specifies the user sign-in types in your directory, such as emailAddress, userName or federated. Here, federated represents a unique identifier for a user from an issuer, that can be in any format chosen by the issuer. Additional validation is enforced on issuerAssignedId when the sign-in type is set to emailAddress or userName. This property can also be set to any custom string.
-    - `[ImAddresses <String[]>]`: The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only. Supports $filter (eq, NOT, ge, le, startsWith).
+      - `[SignInType <String>]`: Specifies the user sign-in types in your directory, such as emailAddress, userName, federated, or userPrincipalName. federated represents a unique identifier for a user from an issuer, that can be in any format chosen by the issuer. Setting or updating a userPrincipalName identity will update the value of the userPrincipalName property on the user object. The validations performed on the userPrincipalName property on the user object, for example, verified domains and acceptable characters, will be performed when setting or updating a userPrincipalName identity. Additional validation is enforced on issuerAssignedId when the sign-in type is set to emailAddress or userName. This property can also be set to any custom string.
+    - `[ImAddresses <String[]>]`: The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only. Supports $filter (eq, not, ge, le, startsWith).
     - `[InferenceClassification <IMicrosoftGraphInferenceClassification>]`: inferenceClassification
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: Read-only.
@@ -8890,7 +9712,7 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
             - `[Address <String>]`: The email address of the user who shared the item.
             - `[DisplayName <String>]`: The display name of the user who shared the item.
             - `[Id <String>]`: The id of the user who shared the item.
-          - `[SharedDateTime <DateTime?>]`: The date and time the file was last shared. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: 2014-01-01T00:00:00Z. Read-only.
+          - `[SharedDateTime <DateTime?>]`: The date and time the file was last shared. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
           - `[SharingReference <IMicrosoftGraphResourceReference>]`: resourceReference
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The item's unique identifier.
@@ -8925,14 +9747,14 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
         - `[Id <String>]`: Read-only.
         - `[LastUsed <IMicrosoftGraphUsageDetails>]`: usageDetails
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[LastAccessedDateTime <DateTime?>]`: The date and time the resource was last accessed by the user. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: 2014-01-01T00:00:00Z. Read-only.
-          - `[LastModifiedDateTime <DateTime?>]`: The date and time the resource was last modified by the user. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: 2014-01-01T00:00:00Z. Read-only.
+          - `[LastAccessedDateTime <DateTime?>]`: The date and time the resource was last accessed by the user. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+          - `[LastModifiedDateTime <DateTime?>]`: The date and time the resource was last modified by the user. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
         - `[Resource <IMicrosoftGraphEntity>]`: entity
         - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
         - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
     - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
-    - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
-    - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Supports $filter (eq, ne, NOT , ge, le, in, startsWith).
+    - `[IsResourceAccount <Boolean?>]`: Do not use – reserved for future use.
+    - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
     - `[JoinedTeams <IMicrosoftGraphTeam1[]>]`: The Microsoft Teams teams that the user is a member of. Read-only. Nullable.
       - `[Id <String>]`: Read-only.
       - `[Channels <IMicrosoftGraphChannel1[]>]`: The collection of channels & messages associated with the team.
@@ -8958,103 +9780,103 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
         - `[AllowGiphy <Boolean?>]`: If set to true, enables Giphy use.
         - `[AllowStickersAndMemes <Boolean?>]`: If set to true, enables users to include stickers and memes.
         - `[GiphyContentRating <String>]`: giphyRatingType
-      - `[Group <IMicrosoftGraphGroup1>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
+      - `[Group <IMicrosoftGraphGroup>]`: group
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DeletedDateTime <DateTime?>]`: 
         - `[Id <String>]`: Read-only.
         - `[AcceptedSenders <IMicrosoftGraphDirectoryObject[]>]`: The list of users or groups that are allowed to create post's or calendar events in this group. If this list is non-empty then only users or groups listed here are allowed to post.
         - `[AllowExternalSenders <Boolean?>]`: Indicates if people external to the organization can send messages to the group. Default value is false. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
-        - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment1[]>]`: Represents the app roles a group has been granted for an application.
+        - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment1[]>]`: Represents the app roles a group has been granted for an application. Supports $expand.
         - `[AssignedLabels <IMicrosoftGraphAssignedLabel[]>]`: The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group. Returned only on $select.
           - `[DisplayName <String>]`: The display name of the label. Read-only.
           - `[LabelId <String>]`: The unique identifier of the label.
-        - `[AssignedLicenses <IMicrosoftGraphAssignedLicense[]>]`: The licenses that are assigned to the group. Returned only on $select. Read-only.
+        - `[AssignedLicenses <IMicrosoftGraphAssignedLicense[]>]`: The licenses that are assigned to the group. Returned only on $select. Supports $filter (eq). Read-only.
         - `[AutoSubscribeNewMembers <Boolean?>]`: Indicates if new members added to the group will be auto-subscribed to receive email notifications. You can set this property in a PATCH request for the group; do not set it in the initial POST request that creates the group. Default value is false. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
         - `[Calendar <IMicrosoftGraphCalendar1>]`: calendar
         - `[CalendarView <IMicrosoftGraphEvent1[]>]`: The calendar view for the calendar. Read-only.
-        - `[Classification <String>]`: Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList setting value, based on the template definition.Returned by default.
+        - `[Classification <String>]`: Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList setting value, based on the template definition.Returned by default. Supports $filter (eq, ne, not, ge, le, startsWith).
         - `[Conversations <IMicrosoftGraphConversation1[]>]`: The group's conversations.
           - `[Id <String>]`: Read-only.
-          - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this Conversation has at least one attachment.
-          - `[LastDeliveredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-          - `[Preview <String>]`: A short summary from the body of the latest post in this converstaion.
+          - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this Conversation has at least one attachment. Supports $filter (eq, ne) and $search.
+          - `[LastDeliveredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Supports $filter (eq, ne, le, ge).
+          - `[Preview <String>]`: A short summary from the body of the latest post in this conversation.
           - `[Threads <IMicrosoftGraphConversationThread1[]>]`: A collection of all the conversation threads in the conversation. A navigation property. Read-only. Nullable.
             - `[Id <String>]`: Read-only.
-            - `[CcRecipients <IMicrosoftGraphRecipient[]>]`: The Cc: recipients for the thread.
-            - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this thread has at least one attachment.
-            - `[IsLocked <Boolean?>]`: Indicates if the thread is locked.
-            - `[LastDeliveredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-            - `[Posts <IMicrosoftGraphPost1[]>]`: Read-only. Nullable.
+            - `[CcRecipients <IMicrosoftGraphRecipient[]>]`: The Cc: recipients for the thread. Returned only on $select.
+            - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this thread has at least one attachment. Returned by default.
+            - `[IsLocked <Boolean?>]`: Indicates if the thread is locked. Returned by default.
+            - `[LastDeliveredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default.
+            - `[Posts <IMicrosoftGraphPost[]>]`: Read-only. Nullable.
               - `[Categories <String[]>]`: The categories associated with the item
               - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
               - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[Id <String>]`: Read-only.
-              - `[Attachments <IMicrosoftGraphAttachment[]>]`: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post. Read-only. Nullable.
+              - `[Attachments <IMicrosoftGraphAttachment[]>]`: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post. Read-only. Nullable. Supports $expand.
               - `[Body <IMicrosoftGraphItemBody>]`: itemBody
               - `[ConversationId <String>]`: Unique ID of the conversation. Read-only.
               - `[ConversationThreadId <String>]`: Unique ID of the conversation thread. Read-only.
-              - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the post. Read-only. Nullable.
+              - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the post. Read-only. Nullable. Supports $expand.
               - `[From <IMicrosoftGraphRecipient>]`: recipient
               - `[HasAttachments <Boolean?>]`: Indicates whether the post has at least one attachment. This is a default property.
-              - `[InReplyTo <IMicrosoftGraphPost1>]`: post
+              - `[InReplyTo <IMicrosoftGraphPost>]`: post
               - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the post. Read-only. Nullable.
               - `[NewParticipants <IMicrosoftGraphRecipient[]>]`: Conversation participants that were added to the thread as part of this post.
               - `[ReceivedDateTime <DateTime?>]`: Specifies when the post was received. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[Sender <IMicrosoftGraphRecipient>]`: recipient
               - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the post. Read-only. Nullable.
-            - `[Preview <String>]`: A short summary from the body of the latest post in this conversation.
-            - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: The To: recipients for the thread.
-            - `[Topic <String>]`: The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated.
-            - `[UniqueSenders <String[]>]`: All the users that sent a message to this thread.
+            - `[Preview <String>]`: A short summary from the body of the latest post in this conversation. Returned by default.
+            - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: The To: recipients for the thread. Returned only on $select.
+            - `[Topic <String>]`: The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated. Returned by default.
+            - `[UniqueSenders <String[]>]`: All the users that sent a message to this thread. Returned by default.
           - `[Topic <String>]`: The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated.
           - `[UniqueSenders <String[]>]`: All the users that sent a message to this Conversation.
-        - `[CreatedDateTime <DateTime?>]`: Timestamp of when the group was created. The value cannot be modified and is automatically populated when the group is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Read-only.
-        - `[CreatedOnBehalfOf <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-        - `[Description <String>]`: An optional description for the group. Returned by default.
-        - `[DisplayName <String>]`: The display name for the group. This property is required when a group is created and cannot be cleared during updates. Returned by default. Supports $filter and $orderby.
+        - `[CreatedDateTime <DateTime?>]`: Timestamp of when the group was created. The value cannot be modified and is automatically populated when the group is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Supports $filter (eq, ne, not, ge, le, in). Read-only.
+        - `[CreatedOnBehalfOf <IMicrosoftGraphDirectoryObject>]`: directoryObject
+        - `[Description <String>]`: An optional description for the group. Returned by default. Supports $filter (eq, ne, not, ge, le, startsWith) and $search.
+        - `[DisplayName <String>]`: The display name for the group. Required. Returned by default. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderBy.
         - `[Drive <IMicrosoftGraphDrive1>]`: drive
         - `[Drives <IMicrosoftGraphDrive1[]>]`: The group's drives. Read-only.
         - `[Events <IMicrosoftGraphEvent1[]>]`: The group's events.
-        - `[ExpirationDateTime <DateTime?>]`: Timestamp of when the group is set to expire. The value cannot be modified and is automatically populated when the group is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Read-only.
+        - `[ExpirationDateTime <DateTime?>]`: Timestamp of when the group is set to expire. The value cannot be modified and is automatically populated when the group is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Supports $filter (eq, ne, not, ge, le, in). Read-only.
         - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the group. Read-only. Nullable.
         - `[GroupLifecyclePolicies <IMicrosoftGraphGroupLifecyclePolicy[]>]`: The collection of lifecycle policies for this group. Read-only. Nullable.
           - `[Id <String>]`: Read-only.
           - `[AlternateNotificationEmails <String>]`: List of email address to send notifications for groups without owners. Multiple email address can be defined by separating email address with a semicolon.
           - `[GroupLifetimeInDays <Int32?>]`: Number of days before a group expires and needs to be renewed. Once renewed, the group expiration is extended by the number of days defined.
           - `[ManagedGroupTypes <String>]`: The group type for which the expiration policy applies. Possible values are All, Selected or None.
-        - `[GroupTypes <String[]>]`: Specifies the group type and its membership.  If the collection contains Unified, the group is a Microsoft 365 group; otherwise, it's either a security group or distribution group. For details, see groups overview.If the collection includes DynamicMembership, the group has dynamic membership; otherwise, membership is static.  Returned by default. Supports $filter.
-        - `[HasMembersWithLicenseErrors <Boolean?>]`: Indicates whether there are members in this group that have license errors from its group-based license assignment. This property is never returned on a GET operation. You can use it as a $filter argument to get groups that have members with license errors (that is, filter for this property being true).
+        - `[GroupTypes <String[]>]`: Specifies the group type and its membership.  If the collection contains Unified, the group is a Microsoft 365 group; otherwise, it's either a security group or distribution group. For details, see groups overview.If the collection includes DynamicMembership, the group has dynamic membership; otherwise, membership is static.  Returned by default. Supports $filter (eq, not).
+        - `[HasMembersWithLicenseErrors <Boolean?>]`: Indicates whether there are members in this group that have license errors from its group-based license assignment. This property is never returned on a GET operation. You can use it as a $filter argument to get groups that have members with license errors (that is, filter for this property being true).  Supports $filter (eq).
         - `[HideFromAddressLists <Boolean?>]`: true if the group is not displayed in certain parts of the Outlook user interface: in the Address Book, in address lists for selecting message recipients, and in the Browse Groups dialog for searching groups; false otherwise. Default value is false. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
         - `[HideFromOutlookClients <Boolean?>]`: true if the group is not displayed in Outlook clients, such as Outlook for Windows and Outlook on the web, false otherwise. Default value is false. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
         - `[IsArchived <Boolean?>]`: 
-        - `[IsAssignableToRole <Boolean?>]`: Indicates whether this group can be assigned to an Azure Active Directory role.This property can only be set while creating the group and is immutable. If set to true, the securityEnabled property must also be set to true and the group cannot be a dynamic group (that is, groupTypes cannot contain DynamicMembership).Only callers in Global Administrator and Privileged Role Administrator roles can set this property. For more, see Using a group to manage Azure AD role assignmentsReturned by default.
+        - `[IsAssignableToRole <Boolean?>]`: Indicates whether this group can be assigned to an Azure Active Directory role. Optional. This property can only be set while creating the group and is immutable. If set to true, the securityEnabled property must also be set to true and the group cannot be a dynamic group (that is, groupTypes cannot contain DynamicMembership). Only callers in Global administrator and Privileged role administrator roles can set this property. The caller must be assigned the RoleManagement.ReadWrite.Directory permission to set this property or update the membership of such groups. For more, see Using a group to manage Azure AD role assignmentsReturned by default. Supports $filter (eq, ne, not).
         - `[IsSubscribedByMail <Boolean?>]`: Indicates whether the signed-in user is subscribed to receive email conversations. Default value is true. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
         - `[LicenseProcessingState <IMicrosoftGraphLicenseProcessingState>]`: licenseProcessingState
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[State <String>]`: 
-        - `[Mail <String>]`: The SMTP address for the group, for example, 'serviceadmins@contoso.onmicrosoft.com'. Returned by default. Read-only. Supports $filter.
-        - `[MailEnabled <Boolean?>]`: Specifies whether the group is mail-enabled. Returned by default.
-        - `[MailNickname <String>]`: The mail alias for the group, unique in the organization. This property must be specified when a group is created. These characters cannot be used in the mailNickName: @()/[]';:.<>,SPACE. Returned by default. Supports $filter.
-        - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups and administrative units that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable.
-        - `[Members <IMicrosoftGraphDirectoryObject[]>]`: Users, contacts, and groups that are members of this group. HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only. Nullable.
+        - `[Mail <String>]`: The SMTP address for the group, for example, 'serviceadmins@contoso.onmicrosoft.com'. Returned by default. Read-only. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+        - `[MailEnabled <Boolean?>]`: Specifies whether the group is mail-enabled. Required. Returned by default. Supports $filter (eq, ne, not, and eq on null values).
+        - `[MailNickname <String>]`: The mail alias for the group, unique for Microsoft 365 groups in the organization. Maximum length is 64 characters. This property can contain only characters in the ASCII character set 0 - 127 except the following: @ () / [] ' ; : . <> , SPACE. Returned by default. Supports $filter (eq, ne, not, ge, le, in, startsWith).
+        - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups and administrative units that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable. Supports $expand.
+        - `[Members <IMicrosoftGraphDirectoryObject[]>]`: Members of this group, who can be users, devices, other groups, or service principals. Supports the List members, Add member, and Remove member operations. Nullable. Supports $expand including nested $select. For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName).
         - `[MembersWithLicenseErrors <IMicrosoftGraphDirectoryObject[]>]`: A list of group members with license errors from this group-based license assignment. Read-only.
-        - `[MembershipRule <String>]`: The rule that determines members for this group if the group is a dynamic group (groupTypes contains DynamicMembership). For more information about the syntax of the membership rule, see Membership Rules syntax. Returned by default.
-        - `[MembershipRuleProcessingState <String>]`: Indicates whether the dynamic membership processing is on or paused. Possible values are On or Paused. Returned by default.
+        - `[MembershipRule <String>]`: The rule that determines members for this group if the group is a dynamic group (groupTypes contains DynamicMembership). For more information about the syntax of the membership rule, see Membership Rules syntax. Returned by default. Supports $filter (eq, ne, not, ge, le, startsWith).
+        - `[MembershipRuleProcessingState <String>]`: Indicates whether the dynamic membership processing is on or paused. Possible values are On or Paused. Returned by default. Supports $filter (eq, ne, not, in).
         - `[OnPremisesDomainName <String>]`: Contains the on-premises domain FQDN, also called dnsDomainName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect.Returned by default. Read-only.
-        - `[OnPremisesLastSyncDateTime <DateTime?>]`: Indicates the last time at which the group was synced with the on-premises directory.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Read-only. Supports $filter.
+        - `[OnPremisesLastSyncDateTime <DateTime?>]`: Indicates the last time at which the group was synced with the on-premises directory.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Read-only. Supports $filter (eq, ne, not, ge, le, in).
         - `[OnPremisesNetBiosName <String>]`: Contains the on-premises netBios name synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect.Returned by default. Read-only.
-        - `[OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError[]>]`: Errors when using Microsoft synchronization product during provisioning. Returned by default.
+        - `[OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError[]>]`: Errors when using Microsoft synchronization product during provisioning. Returned by default. Supports $filter (eq, not).
           - `[Category <String>]`: Category of the provisioning error. Note: Currently, there is only one possible value. Possible value: PropertyConflict - indicates a property value is not unique. Other objects contain the same value for the property.
           - `[OccurredDateTime <DateTime?>]`: The date and time at which the error occurred.
           - `[PropertyCausingError <String>]`: Name of the directory property causing the error. Current possible values: UserPrincipalName or ProxyAddress
           - `[Value <String>]`: Value of the property causing the error.
-        - `[OnPremisesSamAccountName <String>]`: Contains the on-premises SAM account name synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect.Returned by default. Read-only.
-        - `[OnPremisesSecurityIdentifier <String>]`: Contains the on-premises security identifier (SID) for the group that was synchronized from on-premises to the cloud. Returned by default. Read-only.
-        - `[OnPremisesSyncEnabled <Boolean?>]`: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default). Returned by default. Read-only. Supports $filter.
+        - `[OnPremisesSamAccountName <String>]`: Contains the on-premises SAM account name synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect.Returned by default. Supports $filter (eq, ne, not, ge, le, in, startsWith). Read-only.
+        - `[OnPremisesSecurityIdentifier <String>]`: Contains the on-premises security identifier (SID) for the group that was synchronized from on-premises to the cloud. Returned by default. Supports $filter on null values. Read-only.
+        - `[OnPremisesSyncEnabled <Boolean?>]`: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default). Returned by default. Read-only. Supports $filter (eq, ne, not, in, and eq on null values).
         - `[Onenote <IMicrosoftGraphOnenote1>]`: onenote
-        - `[Owners <IMicrosoftGraphDirectoryObject[]>]`: The owners of the group. The owners are a set of non-admin users who are allowed to modify this object. HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only. Nullable.
-        - `[PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>]`: The permissions that have been granted for a group to a specific application.
+        - `[Owners <IMicrosoftGraphDirectoryObject[]>]`: The owners of the group who can be users or service principals. Nullable. If this property is not specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner. Supports $expand including nested $select. For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
+        - `[PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>]`: The permissions that have been granted for a group to a specific application. Supports $expand.
           - `[DeletedDateTime <DateTime?>]`: 
           - `[Id <String>]`: Read-only.
           - `[ClientAppId <String>]`: ID of the service principal of the Azure AD app that has been granted access. Read-only.
@@ -9136,15 +9958,15 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
                 - `[Category6 <String>]`: The label associated with Category 6
               - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[Owner <String>]`: ID of the Group that owns the plan. A valid group must exist before this field can be set. After it is set, this property can't be updated.
+            - `[Owner <String>]`: ID of the Group that owns the plan. A valid group must exist before this field can be set. After it is set, this property can’t be updated.
             - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Collection of tasks in the plan. Read-only. Nullable.
             - `[Title <String>]`: Required. Title of the plan.
-        - `[PreferredDataLocation <String>]`: The preferred data location for the group. For more information, see  OneDrive Online Multi-Geo. Returned by default.
-        - `[PreferredLanguage <String>]`: The preferred language for a Microsoft 365 group. Should follow ISO 639-1 Code; for example 'en-US'. Returned by default.
-        - `[ProxyAddresses <String[]>]`: Email addresses for the group that direct to the same group mailbox. For example: ['SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com']. The any operator is required for filter expressions on multi-valued properties. Returned by default. Read-only. Not nullable. Supports $filter.
+        - `[PreferredDataLocation <String>]`: The preferred data location for the Microsoft 365 group. By default, the group inherits the group creator's preferred data location. To set this property, the calling user must be assigned one of the following Azure AD roles:  Global Administrator  User Account Administrator Directory Writer  Exchange Administrator  SharePoint Administrator  For more information about this property, see  OneDrive Online Multi-Geo. Nullable. Returned by default.
+        - `[PreferredLanguage <String>]`: The preferred language for a Microsoft 365 group. Should follow ISO 639-1 Code; for example en-US. Returned by default. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+        - `[ProxyAddresses <String[]>]`: Email addresses for the group that direct to the same group mailbox. For example: ['SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com']. The any operator is required for filter expressions on multi-valued properties. Returned by default. Read-only. Not nullable. Supports $filter (eq, not, ge, le, startsWith).
         - `[RejectedSenders <IMicrosoftGraphDirectoryObject[]>]`: The list of users or groups that are not allowed to create posts or calendar events in this group. Nullable
-        - `[RenewedDateTime <DateTime?>]`: Timestamp of when the group was last renewed. This cannot be modified directly and is only updated via the renew service action. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Read-only.
-        - `[SecurityEnabled <Boolean?>]`: Specifies whether the group is a security group. Returned by default. Supports $filter.
+        - `[RenewedDateTime <DateTime?>]`: Timestamp of when the group was last renewed. This cannot be modified directly and is only updated via the renew service action. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Supports $filter (eq, ne, not, ge, le, in). Read-only.
+        - `[SecurityEnabled <Boolean?>]`: Specifies whether the group is a security group. Required.Returned by default. Supports $filter (eq, ne, not, in).
         - `[SecurityIdentifier <String>]`: Security identifier of the group, used in Windows scenarios. Returned by default.
         - `[Settings <IMicrosoftGraphGroupSetting[]>]`: Settings that can govern this group's behavior, like whether members can invite guest users to the group. Nullable.
           - `[Id <String>]`: Read-only.
@@ -9160,7 +9982,7 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
         - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: 
         - `[TransitiveMembers <IMicrosoftGraphDirectoryObject[]>]`: 
         - `[UnseenCount <Int32?>]`: Count of conversations that have received new posts since the signed-in user last visited the group. This property is the same as unseenConversationsCount.Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
-        - `[Visibility <String>]`: Specifies the group join policy and group content visibility for groups. Possible values are: Private, Public, or Hiddenmembership. Hiddenmembership can be set only for Microsoft 365 groups, when the groups are created. It can't be updated later. Other values of visibility can be updated after group creation. If visibility value is not specified during group creation on Microsoft Graph, a security group is created as Private by default and Microsoft 365 group is Public. See group visibility options to learn more. Returned by default.
+        - `[Visibility <String>]`: Specifies the group join policy and group content visibility for groups. Possible values are: Private, Public, or Hiddenmembership. Hiddenmembership can be set only for Microsoft 365 groups, when the groups are created. It can't be updated later. Other values of visibility can be updated after group creation. If visibility value is not specified during group creation on Microsoft Graph, a security group is created as Private by default and Microsoft 365 group is Public.  Groups assignable to roles are always Private. See group visibility options to learn more. Returned by default. Nullable.
       - `[GuestSettings <IMicrosoftGraphTeamGuestSettings>]`: teamGuestSettings
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[AllowCreateUpdateChannels <Boolean?>]`: If set to true, guests can add and update channels.
@@ -9349,12 +10171,13 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
         - `[Id <String>]`: Read-only.
       - `[Visibility <String>]`: teamVisibilityType
       - `[WebUrl <String>]`: A hyperlink that will go to the team in the Microsoft Teams client. This is the URL that you get when you right-click a team in the Microsoft Teams client and select Get link to team. This URL should be treated as an opaque blob, and not parsed.
-    - `[LastPasswordChangeDateTime <DateTime?>]`: The time when this Azure AD user last changed their password. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Returned only on $select.
+    - `[LastPasswordChangeDateTime <DateTime?>]`: The time when this Azure AD user last changed their password or when their password was created, , whichever date the latest action was performed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Returned only on $select.
     - `[LegalAgeGroupClassification <String>]`: Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated based on ageGroup and consentProvidedForMinor properties. Allowed values: null, minorWithOutParentalConsent, minorWithParentalConsent, minorNoParentalConsentRequired, notAdult and adult. Refer to the legal age group property definitions for further information. Returned only on $select.
     - `[LicenseAssignmentStates <IMicrosoftGraphLicenseAssignmentState[]>]`: State of license assignments for this user. Read-only. Returned only on $select.
       - `[AssignedByGroup <String>]`: The id of the group that assigns this license. If the assignment is a direct-assigned license, this field will be Null. Read-Only.
       - `[DisabledPlans <String[]>]`: The service plans that are disabled in this assignment. Read-Only.
       - `[Error <String>]`: License assignment failure error. If the license is assigned successfully, this field will be Null. Read-Only. Possible values: CountViolation, MutuallyExclusiveViolation, DependencyViolation, ProhibitedInUsageLocationViolation, UniquenessViolation, and Others. For more information on how to identify and resolve license assignment errors see here.
+      - `[LastUpdatedDateTime <DateTime?>]`: The timestamp when the state of the license assignment was last updated.
       - `[SkuId <String>]`: The unique identifier for the SKU. Read-Only.
       - `[State <String>]`: Indicate the current state of this assignment. Read-Only. Possible values: Active, ActiveWithError, Disabled and Error.
     - `[LicenseDetails <IMicrosoftGraphLicenseDetails[]>]`: A collection of this user's license details. Read-only.
@@ -9366,7 +10189,7 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
         - `[ServicePlanName <String>]`: The name of the service plan.
       - `[SkuId <String>]`: Unique identifier (GUID) for the service SKU. Equal to the skuId property on the related SubscribedSku object. Read-only
       - `[SkuPartNumber <String>]`: Unique SKU display name. Equal to the skuPartNumber on the related SubscribedSku object; for example: 'AAD_Premium'. Read-only
-    - `[Mail <String>]`: The SMTP address for the user, for example, admin@contoso.com. Changes to this property will also update the user's proxyAddresses collection to include the value as an SMTP address. While this property can contain accent characters, using them can cause access issues with other Microsoft applications for the user. Supports $filter (eq, ne, NOT, ge, le, in, startsWith, endsWith).
+    - `[Mail <String>]`: The SMTP address for the user, for example, admin@contoso.com. Changes to this property will also update the user's proxyAddresses collection to include the value as an SMTP address. For Azure AD B2C accounts, this property can be updated up to only ten times with unique SMTP addresses. This property cannot contain accent characters.  Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith, and eq on null values).
     - `[MailFolders <IMicrosoftGraphMailFolder1[]>]`: The user's mail folders. Read-only. Nullable.
       - `[Id <String>]`: Read-only.
       - `[ChildFolderCount <Int32?>]`: The number of immediate child mailFolders in the current mailFolder.
@@ -9453,31 +10276,31 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
         - `[HasAttachments <Boolean?>]`: Indicates whether the message has attachments. This property doesn't include inline attachments, so if a message contains only inline attachments, this property is false. To verify the existence of inline attachments, parse the body property to look for a src attribute, such as <IMG src='cid:image001.jpg@01D26CD8.6C05F070'>.
         - `[Importance <String>]`: importance
         - `[InferenceClassification <String>]`: inferenceClassificationType
-        - `[InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]`: A collection of message headers defined by RFC5322. The set includes message headers indicating the network path taken by a message from the sender to the recipient. It can also contain custom message headers that hold app data for the message.  Returned only on applying a $select query option. Read-only.
+        - `[InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]`: 
           - `[Name <String>]`: Represents the key in a key-value pair.
           - `[Value <String>]`: The value in a key-value pair.
-        - `[InternetMessageId <String>]`: The message ID in the format specified by RFC2822.
-        - `[IsDeliveryReceiptRequested <Boolean?>]`: Indicates whether a read receipt is requested for the message.
-        - `[IsDraft <Boolean?>]`: Indicates whether the message is a draft. A message is a draft if it hasn't been sent yet.
-        - `[IsRead <Boolean?>]`: Indicates whether the message has been read.
-        - `[IsReadReceiptRequested <Boolean?>]`: Indicates whether a read receipt is requested for the message.
+        - `[InternetMessageId <String>]`: 
+        - `[IsDeliveryReceiptRequested <Boolean?>]`: 
+        - `[IsDraft <Boolean?>]`: 
+        - `[IsRead <Boolean?>]`: 
+        - `[IsReadReceiptRequested <Boolean?>]`: 
         - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the message. Nullable.
-        - `[ParentFolderId <String>]`: The unique identifier for the message's parent mailFolder.
-        - `[ReceivedDateTime <DateTime?>]`: The date and time the message was received.  The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-        - `[ReplyTo <IMicrosoftGraphRecipient[]>]`: The email addresses to use when replying.
+        - `[ParentFolderId <String>]`: 
+        - `[ReceivedDateTime <DateTime?>]`: 
+        - `[ReplyTo <IMicrosoftGraphRecipient[]>]`: 
         - `[Sender <IMicrosoftGraphRecipient>]`: recipient
-        - `[SentDateTime <DateTime?>]`: The date and time the message was sent.  The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[SentDateTime <DateTime?>]`: 
         - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the message. Nullable.
-        - `[Subject <String>]`: The subject of the message.
-        - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: The To: recipients for the message.
+        - `[Subject <String>]`: 
+        - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: 
         - `[UniqueBody <IMicrosoftGraphItemBody>]`: itemBody
-        - `[WebLink <String>]`: The URL to open the message in Outlook on the web.You can append an ispopout argument to the end of the URL to change how the message is displayed. If ispopout is not present or if it is set to 1, then the message is shown in a popout window. If ispopout is set to 0, then the browser will show the message in the Outlook on the web review pane.The message will open in the browser if you are logged in to your mailbox via Outlook on the web. You will be prompted to login if you are not already logged in with the browser.This URL cannot be accessed from within an iFrame.
+        - `[WebLink <String>]`: 
       - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the mailFolder. Read-only. Nullable.
       - `[ParentFolderId <String>]`: The unique identifier for the mailFolder's parent mailFolder.
       - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the mailFolder. Read-only. Nullable.
       - `[TotalItemCount <Int32?>]`: The number of items in the mailFolder.
       - `[UnreadItemCount <Int32?>]`: The number of items in the mailFolder marked as unread.
-    - `[MailNickname <String>]`: The mail alias for the user. This property must be specified when a user is created. Maximum length is 64 characters. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
+    - `[MailNickname <String>]`: The mail alias for the user. This property must be specified when a user is created. Maximum length is 64 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
     - `[MailboxSettings <IMicrosoftGraphMailboxSettings1>]`: mailboxSettings
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ArchiveFolder <String>]`: Folder ID of an archive folder for the user. Read only.
@@ -9534,14 +10357,14 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
       - `[PlatformVersion <String>]`: Operating System version
       - `[UserId <String>]`: The user Id to who this app registration belongs.
       - `[Version <String>]`: Version of the entity.
-    - `[ManagedDevices <IMicrosoftGraphManagedDevice1[]>]`: The managed devices associated with the user.
+    - `[ManagedDevices <IMicrosoftGraphManagedDevice[]>]`: The managed devices associated with the user.
       - `[Id <String>]`: Read-only.
       - `[ActivationLockBypassCode <String>]`: Code that allows the Activation Lock on a device to be bypassed. This property is read-only.
       - `[AndroidSecurityPatchLevel <String>]`: Android security patch level. This property is read-only.
       - `[AzureAdDeviceId <String>]`: The unique identifier for the Azure Active Directory device. Read only. This property is read-only.
       - `[AzureAdRegistered <Boolean?>]`: Whether the device is Azure Active Directory registered. This property is read-only.
       - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires. This property is read-only.
-      - `[ComplianceState <String>]`: complianceState
+      - `[ComplianceState <String>]`: Compliance state.
       - `[ConfigurationManagerClientEnabledFeatures <IMicrosoftGraphConfigurationManagerClientEnabledFeatures1>]`: configuration Manager client enabled features
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[CompliancePolicy <Boolean?>]`: Whether compliance policy is managed by Intune
@@ -9552,10 +10375,10 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
         - `[WindowsUpdateForBusiness <Boolean?>]`: Whether Windows Update for Business is managed by Intune
       - `[DeviceActionResults <IMicrosoftGraphDeviceActionResult[]>]`: List of ComplexType deviceActionResult objects. This property is read-only.
         - `[ActionName <String>]`: Action name
-        - `[ActionState <String>]`: actionState
+        - `[ActionState <String>]`: State of the action on the device
         - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
         - `[StartDateTime <DateTime?>]`: Time the action was initiated
-      - `[DeviceCategory <IMicrosoftGraphDeviceCategory2>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+      - `[DeviceCategory <IMicrosoftGraphDeviceCategory2>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: Read-only.
         - `[Description <String>]`: Optional description for the device category.
@@ -9564,7 +10387,7 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
       - `[DeviceCompliancePolicyStates <IMicrosoftGraphDeviceCompliancePolicyState1[]>]`: Device compliance policy states for this device.
         - `[Id <String>]`: Read-only.
         - `[DisplayName <String>]`: The name of the policy for this policyBase
-        - `[PlatformType <String>]`: 
+        - `[PlatformType <String>]`: Supported platform types for policies.
         - `[SettingCount <Int32?>]`: Count of how many setting a policy holds
         - `[SettingStates <IMicrosoftGraphDeviceCompliancePolicySettingState1[]>]`: 
           - `[CurrentValue <String>]`: Current value of setting on device
@@ -9573,9 +10396,10 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
           - `[InstanceDisplayName <String>]`: Name of setting instance that is being reported.
           - `[Setting <String>]`: The setting that is being reported
           - `[SettingName <String>]`: Localized/user friendly setting name that is being reported
-          - `[Sources <IMicrosoftGraphSettingSource1[]>]`: Contributing policies
+          - `[Sources <IMicrosoftGraphSettingSource[]>]`: Contributing policies
             - `[DisplayName <String>]`: Not yet documented
             - `[Id <String>]`: Not yet documented
+            - `[SourceType <String>]`: settingSourceType
           - `[State <String>]`: complianceStatus
           - `[UserEmail <String>]`: UserEmail
           - `[UserId <String>]`: UserId
@@ -9586,7 +10410,7 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
       - `[DeviceConfigurationStates <IMicrosoftGraphDeviceConfigurationState1[]>]`: Device configuration states for this device.
         - `[Id <String>]`: Read-only.
         - `[DisplayName <String>]`: The name of the policy for this policyBase
-        - `[PlatformType <String>]`: 
+        - `[PlatformType <String>]`: Supported platform types for policies.
         - `[SettingCount <Int32?>]`: Count of how many setting a policy holds
         - `[SettingStates <IMicrosoftGraphDeviceConfigurationSettingState1[]>]`: 
           - `[CurrentValue <String>]`: Current value of setting on device
@@ -9595,7 +10419,7 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
           - `[InstanceDisplayName <String>]`: Name of setting instance that is being reported.
           - `[Setting <String>]`: The setting that is being reported
           - `[SettingName <String>]`: Localized/user friendly setting name that is being reported
-          - `[Sources <IMicrosoftGraphSettingSource1[]>]`: Contributing policies
+          - `[Sources <IMicrosoftGraphSettingSource[]>]`: Contributing policies
           - `[State <String>]`: complianceStatus
           - `[UserEmail <String>]`: UserEmail
           - `[UserId <String>]`: UserId
@@ -9603,7 +10427,7 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
           - `[UserPrincipalName <String>]`: UserPrincipalName.
         - `[State <String>]`: complianceStatus
         - `[Version <Int32?>]`: The version of the policy
-      - `[DeviceEnrollmentType <String>]`: 
+      - `[DeviceEnrollmentType <String>]`: Possible ways of adding a mobile device to management.
       - `[DeviceHealthAttestationState <IMicrosoftGraphDeviceHealthAttestationState>]`: deviceHealthAttestationState
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[AttestationIdentityKey <String>]`: TWhen an Attestation Identity Key (AIK) is present on a device, it indicates that the device has an endorsement key (EK) certificate.
@@ -9639,15 +10463,15 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
         - `[VirtualSecureMode <String>]`: VSM is a container that protects high value assets from a compromised kernel
         - `[WindowsPe <String>]`: Operating system running with limited services that is used to prepare a computer for Windows
       - `[DeviceName <String>]`: Name of the device. This property is read-only.
-      - `[DeviceRegistrationState <String>]`: deviceRegistrationState
+      - `[DeviceRegistrationState <String>]`: Device registration status.
       - `[EasActivated <Boolean?>]`: Whether the device is Exchange ActiveSync activated. This property is read-only.
       - `[EasActivationDateTime <DateTime?>]`: Exchange ActivationSync activation time of the device. This property is read-only.
       - `[EasDeviceId <String>]`: Exchange ActiveSync Id of the device. This property is read-only.
       - `[EmailAddress <String>]`: Email(s) for the user associated with the device. This property is read-only.
       - `[EnrolledDateTime <DateTime?>]`: Enrollment time of the device. This property is read-only.
       - `[EthernetMacAddress <String>]`: Ethernet MAC. This property is read-only.
-      - `[ExchangeAccessState <String>]`: deviceManagementExchangeAccessState
-      - `[ExchangeAccessStateReason <String>]`: deviceManagementExchangeAccessStateReason
+      - `[ExchangeAccessState <String>]`: Device Exchange Access State.
+      - `[ExchangeAccessStateReason <String>]`: Device Exchange Access State Reason.
       - `[ExchangeLastSuccessfulSyncDateTime <DateTime?>]`: Last time the device contacted Exchange. This property is read-only.
       - `[FreeStorageSpaceInBytes <Int64?>]`: Free Storage in Bytes. This property is read-only.
       - `[Iccid <String>]`: Integrated Circuit Card Identifier, it is A SIM card's unique identification number. This property is read-only.
@@ -9657,15 +10481,15 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
       - `[JailBroken <String>]`: whether the device is jail broken or rooted. This property is read-only.
       - `[LastSyncDateTime <DateTime?>]`: The date and time that the device last completed a successful sync with Intune. This property is read-only.
       - `[ManagedDeviceName <String>]`: Automatically generated name to identify a device. Can be overwritten to a user friendly name.
-      - `[ManagedDeviceOwnerType <String>]`: managedDeviceOwnerType
-      - `[ManagementAgent <String>]`: 
+      - `[ManagedDeviceOwnerType <String>]`: Owner type of device.
+      - `[ManagementAgent <String>]`: Management agent type.
       - `[Manufacturer <String>]`: Manufacturer of the device. This property is read-only.
       - `[Meid <String>]`: MEID. This property is read-only.
       - `[Model <String>]`: Model of the device. This property is read-only.
       - `[Notes <String>]`: Notes on the device created by IT Admin
       - `[OSVersion <String>]`: Operating system version of the device. This property is read-only.
       - `[OperatingSystem <String>]`: Operating system of the device. Windows, iOS, etc. This property is read-only.
-      - `[PartnerReportedThreatState <String>]`: managedDevicePartnerReportedHealthState
+      - `[PartnerReportedThreatState <String>]`: Available health states for the Device Health API
       - `[PhoneNumber <String>]`: Phone number of the device. This property is read-only.
       - `[PhysicalMemoryInBytes <Int64?>]`: Total Memory in Bytes. This property is read-only.
       - `[RemoteAssistanceSessionErrorDetails <String>]`: An error string that identifies issues when creating Remote Assistance session objects. This property is read-only.
@@ -9678,10 +10502,10 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
       - `[UserId <String>]`: Unique Identifier for the user associated with the device. This property is read-only.
       - `[UserPrincipalName <String>]`: Device user principal name. This property is read-only.
       - `[WiFiMacAddress <String>]`: Wi-Fi MAC. This property is read-only.
-    - `[Manager <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-    - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: The groups, directory roles and administrative units that the user is a member of. Read-only. Nullable.
+    - `[Manager <IMicrosoftGraphDirectoryObject>]`: directoryObject
+    - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: The groups, directory roles and administrative units that the user is a member of. Read-only. Nullable. Supports $expand.
     - `[Messages <IMicrosoftGraphMessage1[]>]`: The messages in a mailbox or folder. Read-only. Nullable.
-    - `[MobilePhone <String>]`: The primary cellular telephone number for the user. Read-only for users synced from on-premises directory.  Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
+    - `[MobilePhone <String>]`: The primary cellular telephone number for the user. Read-only for users synced from on-premises directory.  Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
     - `[MySite <String>]`: The URL for the user's personal site. Returned only on $select.
     - `[Oauth2PermissionGrants <IMicrosoftGraphOAuth2PermissionGrant1[]>]`: 
       - `[Id <String>]`: Read-only.
@@ -9690,7 +10514,7 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
       - `[PrincipalId <String>]`: The id of the user on behalf of whom the client is authorized to access the resource, when consentType is Principal. If consentType is AllPrincipals this value is null. Required when consentType is Principal.
       - `[ResourceId <String>]`: The id of the resource service principal to which access is authorized. This identifies the API which the client is authorized to attempt to call on behalf of a signed-in user.
       - `[Scope <String>]`: A space-separated list of the claim values for delegated permissions which should be included in access tokens for the resource application (the API). For example, openid User.Read GroupMember.Read.All. Each claim value should match the value field of one of the delegated permissions defined by the API, listed in the publishedPermissionScopes property of the resource service principal.
-    - `[OfficeLocation <String>]`: The office location in the user's place of business. Maximum length is 128 characters. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
+    - `[OfficeLocation <String>]`: The office location in the user's place of business. Maximum length is 128 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
     - `[OnPremisesDistinguishedName <String>]`: Contains the on-premises Active Directory distinguished name or DN. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only.
     - `[OnPremisesDomainName <String>]`: Contains the on-premises domainFQDN, also called dnsDomainName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only.
     - `[OnPremisesExtensionAttributes <IMicrosoftGraphOnPremisesExtensionAttributes>]`: onPremisesExtensionAttributes
@@ -9710,23 +10534,52 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
       - `[ExtensionAttribute7 <String>]`: Seventh customizable extension attribute.
       - `[ExtensionAttribute8 <String>]`: Eighth customizable extension attribute.
       - `[ExtensionAttribute9 <String>]`: Ninth customizable extension attribute.
-    - `[OnPremisesImmutableId <String>]`: This property is used to associate an on-premises Active Directory user account to their Azure AD user object. This property must be specified when creating a new user account in the Graph if you are using a federated domain for the user's userPrincipalName (UPN) property. Note: The $ and _ characters cannot be used when specifying this property. Supports $filter (eq, ne, NOT, ge, le, in).
-    - `[OnPremisesLastSyncDateTime <DateTime?>]`: Indicates the last time at which the object was synced with the on-premises directory; for example: '2013-02-16T03:04:54Z'. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Supports $filter (eq, ne, NOT, ge, le, in).
-    - `[OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError[]>]`: Errors when using Microsoft synchronization product during provisioning.
-    - `[OnPremisesSamAccountName <String>]`: Contains the on-premises sAMAccountName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
-    - `[OnPremisesSecurityIdentifier <String>]`: Contains the on-premises security identifier (SID) for the user that was synchronized from on-premises to the cloud. Read-only. Supports $filter (eq, ne, NOT, in).
-    - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default). Read-only. Supports $filter (eq, ne, NOT, in).
-    - `[OnPremisesUserPrincipalName <String>]`: Contains the on-premises userPrincipalName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
+    - `[OnPremisesImmutableId <String>]`: This property is used to associate an on-premises Active Directory user account to their Azure AD user object. This property must be specified when creating a new user account in the Graph if you are using a federated domain for the user's userPrincipalName (UPN) property. Note: The $ and _ characters cannot be used when specifying this property. Supports $filter (eq, ne, not, ge, le, in).
+    - `[OnPremisesLastSyncDateTime <DateTime?>]`: Indicates the last time at which the object was synced with the on-premises directory; for example: '2013-02-16T03:04:54Z'. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Supports $filter (eq, ne, not, ge, le, in).
+    - `[OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError[]>]`: Errors when using Microsoft synchronization product during provisioning.  Supports $filter (eq, not, ge, le).
+    - `[OnPremisesSamAccountName <String>]`: Contains the on-premises sAMAccountName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. Supports $filter (eq, ne, not, ge, le, in, startsWith).
+    - `[OnPremisesSecurityIdentifier <String>]`: Contains the on-premises security identifier (SID) for the user that was synchronized from on-premises to the cloud. Read-only. Supports $filter (eq) on null values only.
+    - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default). Read-only. Supports $filter (eq, ne, not, in, and eq on null values).
+    - `[OnPremisesUserPrincipalName <String>]`: Contains the on-premises userPrincipalName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. Supports $filter (eq, ne, not, ge, le, in, startsWith).
     - `[Onenote <IMicrosoftGraphOnenote1>]`: onenote
     - `[OnlineMeetings <IMicrosoftGraphOnlineMeeting1[]>]`: 
       - `[Id <String>]`: Read-only.
+      - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
+      - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
+      - `[AllowMeetingChat <String>]`: meetingChatMode
+      - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
       - `[AllowedPresenters <String>]`: onlineMeetingPresenters
-      - `[AudioConferencing <IMicrosoftGraphAudioConferencing1>]`: audioConferencing
+      - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]`: The attendance reports of an online meeting. Read-only.
+        - `[Id <String>]`: Read-only.
+        - `[AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>]`: List of attendance records of an attendance report. Read-only.
+          - `[Id <String>]`: Read-only.
+          - `[AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]`: List of time periods between joining and leaving a meeting.
+            - `[DurationInSeconds <Int32?>]`: Duration of the meeting interval in seconds; that is, the difference between joinDateTime and leaveDateTime.
+            - `[JoinDateTime <DateTime?>]`: The time the attendee joined in UTC.
+            - `[LeaveDateTime <DateTime?>]`: The time the attendee left in UTC.
+          - `[EmailAddress <String>]`: Email address of the user associated with this atttendance record.
+          - `[Identity <IMicrosoftGraphIdentity>]`: identity
+          - `[Role <String>]`: Role of the attendee. Possible values are: None, Attendee, Presenter, and Organizer.
+          - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
+        - `[MeetingEndDateTime <DateTime?>]`: UTC time when the meeting ended. Read-only.
+        - `[MeetingStartDateTime <DateTime?>]`: UTC time when the meeting started. Read-only.
+        - `[TotalParticipantCount <Int32?>]`: Total number of participants. Read-only.
+      - `[AttendeeReport <Byte[]>]`: The content stream of the attendee report of a Teams live event. Read-only.
+      - `[AudioConferencing <IMicrosoftGraphAudioConferencing>]`: audioConferencing
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[ConferenceId <String>]`: The conference id of the online meeting.
         - `[DialinUrl <String>]`: A URL to the externally-accessible web page that contains dial-in information.
-        - `[TollFreeNumber <String>]`: The toll-free number that connects to the Audio Conference Provider.
-        - `[TollNumber <String>]`: The toll number that connects to the Audio Conference Provider.
+        - `[TollFreeNumber <String>]`: 
+        - `[TollFreeNumbers <String[]>]`: List of toll-free numbers that are displayed in the meeting invite.
+        - `[TollNumber <String>]`: 
+        - `[TollNumbers <String[]>]`: List of toll numbers that are displayed in the meeting invite.
+      - `[BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings1>]`: broadcastMeetingSettings
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[AllowedAudience <String>]`: broadcastMeetingAudience
+        - `[IsAttendeeReportEnabled <Boolean?>]`: Indicates whether attendee report is enabled for this Teams live event. Default value is false.
+        - `[IsQuestionAndAnswerEnabled <Boolean?>]`: Indicates whether Q&A is enabled for this Teams live event. Default value is false.
+        - `[IsRecordingEnabled <Boolean?>]`: Indicates whether recording is enabled for this Teams live event. Default value is false.
+        - `[IsVideoOnDemandEnabled <Boolean?>]`: Indicates whether video on demand is enabled for this Teams live event. Default value is false.
       - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channel.
@@ -9735,6 +10588,7 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
       - `[CreationDateTime <DateTime?>]`: The meeting creation time in UTC. Read-only.
       - `[EndDateTime <DateTime?>]`: The meeting end time in UTC.
       - `[ExternalId <String>]`: The external ID. A custom ID. Optional.
+      - `[IsBroadcast <Boolean?>]`: Indicates whether this is a Teams live event.
       - `[IsEntryExitAnnounced <Boolean?>]`: Indicates whether to announce when callers join or leave.
       - `[JoinInformation <IMicrosoftGraphItemBody>]`: itemBody
       - `[JoinWebUrl <String>]`: The join URL of the online meeting. Read-only.
@@ -9744,15 +10598,16 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
         - `[Scope <String>]`: lobbyBypassScope
       - `[Participants <IMicrosoftGraphMeetingParticipants1>]`: meetingParticipants
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Attendees <IMicrosoftGraphMeetingParticipantInfo1[]>]`: Information of the meeting attendees.
+        - `[Attendees <IMicrosoftGraphMeetingParticipantInfo[]>]`: Information of the meeting attendees.
           - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
-          - `[Role <String>]`: 
+          - `[Role <String>]`: onlineMeetingRole
           - `[Upn <String>]`: User principal name of the participant.
-        - `[Organizer <IMicrosoftGraphMeetingParticipantInfo1>]`: meetingParticipantInfo
+        - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
+      - `[RecordAutomatically <Boolean?>]`: Indicates whether to record the meeting automatically.
       - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
       - `[Subject <String>]`: The subject of the online meeting.
       - `[VideoTeleconferenceId <String>]`: The video teleconferencing ID. Read-only.
-    - `[OtherMails <String[]>]`: A list of additional email addresses for the user; for example: ['bob@contoso.com', 'Robert@fabrikam.com'].NOTE: While this property can contain accent characters, they can cause access issues to first-party applications for the user.Supports $filter (eq, NOT, ge, le, in, startsWith).
+    - `[OtherMails <String[]>]`: A list of additional email addresses for the user; for example: ['bob@contoso.com', 'Robert@fabrikam.com'].NOTE: This property cannot contain accent characters.Supports $filter (eq, not, ge, le, in, startsWith).
     - `[Outlook <IMicrosoftGraphOutlookUser1>]`: outlookUser
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: Read-only.
@@ -9760,14 +10615,14 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
         - `[Id <String>]`: Read-only.
         - `[Color <String>]`: categoryColor
         - `[DisplayName <String>]`: A unique name that identifies a category in the user's mailbox. After a category is created, the name cannot be changed. Read-only.
-    - `[OwnedDevices <IMicrosoftGraphDirectoryObject[]>]`: Devices that are owned by the user. Read-only. Nullable.
-    - `[OwnedObjects <IMicrosoftGraphDirectoryObject[]>]`: Directory objects that are owned by the user. Read-only. Nullable.
-    - `[PasswordPolicies <String>]`: Specifies password policies for the user. This value is an enumeration with one possible value being DisableStrongPassword, which allows weaker passwords than the default policy to be specified. DisablePasswordExpiration can also be specified. The two may be specified together; for example: DisablePasswordExpiration, DisableStrongPassword.Supports $filter (eq, ne, NOT).
+    - `[OwnedDevices <IMicrosoftGraphDirectoryObject[]>]`: Devices that are owned by the user. Read-only. Nullable. Supports $expand.
+    - `[OwnedObjects <IMicrosoftGraphDirectoryObject[]>]`: Directory objects that are owned by the user. Read-only. Nullable. Supports $expand.
+    - `[PasswordPolicies <String>]`: Specifies password policies for the user. This value is an enumeration with one possible value being DisableStrongPassword, which allows weaker passwords than the default policy to be specified. DisablePasswordExpiration can also be specified. The two may be specified together; for example: DisablePasswordExpiration, DisableStrongPassword. For more information on the default password policies, see Azure AD pasword policies. Supports $filter (ne, not, and eq on null values).
     - `[PasswordProfile <IMicrosoftGraphPasswordProfile>]`: passwordProfile
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change her password on the next login; otherwise false. If not set, default is false. NOTE:  For Azure B2C tenants, set to false and instead use custom policies and user flows to force password reset at first sign in. See Force password reset at first logon.
       - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password. The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multi-factor authentication before password change. After a password change, this property will be automatically reset to false. If not set, default is false.
-      - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user's passwordPolicies property. By default, a strong password is required.
+      - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user’s passwordPolicies property. By default, a strong password is required.
     - `[PastProjects <String[]>]`: A list for the user to enumerate their past projects. Returned only on $select.
     - `[People <IMicrosoftGraphPerson1[]>]`: Read-only. The most relevant people to the user. The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships. A person is an aggregation of information from across mail, contacts and social networks.
       - `[Id <String>]`: Read-only.
@@ -9791,7 +10646,7 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
       - `[ScoredEmailAddresses <IMicrosoftGraphScoredEmailAddress[]>]`: The person's email addresses.
         - `[Address <String>]`: The email address.
         - `[ItemId <String>]`: 
-        - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user's communication and collaboration patterns and business relationships.
+        - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user’s communication and collaboration patterns and business relationships.
         - `[SelectionLikelihood <String>]`: selectionLikelihoodInfo
       - `[Surname <String>]`: The person's surname.
       - `[UserPrincipalName <String>]`: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
@@ -9807,20 +10662,20 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
       - `[Id <String>]`: Read-only.
       - `[Plans <IMicrosoftGraphPlannerPlan1[]>]`: Read-only. Nullable. Returns the plannerTasks assigned to the user.
       - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Read-only. Nullable. Returns the plannerTasks assigned to the user.
-    - `[PostalCode <String>]`: The postal code for the user's postal address. The postal code is specific to the user's country/region. In the United States of America, this attribute contains the ZIP code. Maximum length is 40 characters. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
-    - `[PreferredLanguage <String>]`: The preferred language for the user. Should follow ISO 639-1 Code; for example en-US. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
+    - `[PostalCode <String>]`: The postal code for the user's postal address. The postal code is specific to the user's country/region. In the United States of America, this attribute contains the ZIP code. Maximum length is 40 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+    - `[PreferredLanguage <String>]`: The preferred language for the user. Should follow ISO 639-1 Code; for example en-US. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
     - `[PreferredName <String>]`: The preferred name for the user. Returned only on $select.
     - `[Presence <IMicrosoftGraphPresence1>]`: presence
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: Read-only.
       - `[Activity <String>]`: The supplemental information to a user's availability. Possible values are Available, Away, BeRightBack, Busy, DoNotDisturb, InACall, InAConferenceCall, Inactive,InAMeeting, Offline, OffWork,OutOfOffice, PresenceUnknown,Presenting, UrgentInterruptionsOnly.
       - `[Availability <String>]`: The base presence information for a user. Possible values are Available, AvailableIdle,  Away, BeRightBack, Busy, BusyIdle, DoNotDisturb, Offline, PresenceUnknown
-    - `[ProvisionedPlans <IMicrosoftGraphProvisionedPlan[]>]`: The plans that are provisioned for the user. Read-only. Not nullable.
+    - `[ProvisionedPlans <IMicrosoftGraphProvisionedPlan[]>]`: The plans that are provisioned for the user. Read-only. Not nullable. Supports $filter (eq, not, ge, le).
       - `[CapabilityStatus <String>]`: For example, 'Enabled'.
       - `[ProvisioningStatus <String>]`: For example, 'Success'.
       - `[Service <String>]`: The name of the service; for example, 'AccessControlS2S'
-    - `[ProxyAddresses <String[]>]`: For example: ['SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com']. Read-only, Not nullable. Supports $filter (eq, NOT, ge, le, startsWith).
-    - `[RegisteredDevices <IMicrosoftGraphDirectoryObject[]>]`: Devices that are registered for the user. Read-only. Nullable.
+    - `[ProxyAddresses <String[]>]`: For example: ['SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com']. Changes to the mail property will also update this collection to include the value as an SMTP address. For more information, see mail and proxyAddresses properties. The proxy address prefixed with SMTP (capitalized) is the primary proxy address while those prefixed with smtp are the secondary proxy addresses. For Azure AD B2C accounts, this property has a limit of ten unique addresses. Read-only in Microsoft Graph; you can update this property only through the Microsoft 365 admin center. Not nullable. Supports $filter (eq, not, ge, le, startsWith).
+    - `[RegisteredDevices <IMicrosoftGraphDirectoryObject[]>]`: Devices that are registered for the user. Read-only. Nullable. Supports $expand.
     - `[Responsibilities <String[]>]`: A list for the user to enumerate their responsibilities. Returned only on $select.
     - `[Schools <String[]>]`: A list for the user to enumerate the schools they have attended. Returned only on $select.
     - `[ScopedRoleMemberOf <IMicrosoftGraphScopedRoleMembership[]>]`: The scoped-role administrative unit memberships for this user. Read-only. Nullable.
@@ -9845,12 +10700,12 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
             - `[EndTime <String>]`: End time for the time range.
             - `[StartTime <String>]`: Start time for the time range.
           - `[TimeZone <String>]`: Specifies the time zone for the indicated time.
-    - `[ShowInAddressList <Boolean?>]`: true if the Outlook global address list should contain this user, otherwise false. If not set, this will be treated as true. For users invited through the invitation manager, this property will be set to false. Supports $filter (eq, ne, NOT, in).
+    - `[ShowInAddressList <Boolean?>]`: true if the Outlook global address list should contain this user, otherwise false. If not set, this will be treated as true. For users invited through the invitation manager, this property will be set to false. Supports $filter (eq, ne, not, in).
     - `[SignInSessionsValidFromDateTime <DateTime?>]`: Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. Read-only. Use revokeSignInSessions to reset.
     - `[Skills <String[]>]`: A list for the user to enumerate their skills. Returned only on $select.
-    - `[State <String>]`: The state or province in the user's address. Maximum length is 128 characters. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
-    - `[StreetAddress <String>]`: The street address of the user's place of business. Maximum length is 1024 characters. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
-    - `[Surname <String>]`: The user's surname (family name or last name). Maximum length is 64 characters. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
+    - `[State <String>]`: The state or province in the user's address. Maximum length is 128 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+    - `[StreetAddress <String>]`: The street address of the user's place of business. Maximum length is 1024 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+    - `[Surname <String>]`: The user's surname (family name or last name). Maximum length is 64 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
     - `[Teamwork <IMicrosoftGraphUserTeamwork1>]`: userTeamwork
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: Read-only.
@@ -9891,14 +10746,14 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
           - `[Title <String>]`: A brief description of the task.
         - `[WellknownListName <String>]`: wellknownListName
     - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: 
-    - `[UsageLocation <String>]`: A two letter country code (ISO standard 3166). Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries.  Examples include: US, JP, and GB. Not nullable. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
-    - `[UserPrincipalName <String>]`: The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant's collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: While this property can contain accent characters, they can cause access issues to first-party applications for the user. Supports $filter (eq, ne, NOT, ge, le, in, startsWith, endsWith) and $orderBy.
-    - `[UserType <String>]`: A string value that can be used to classify user types in your directory, such as Member and Guest. Supports $filter (eq, ne, NOT, in, startsWith, endsWith).
+    - `[UsageLocation <String>]`: A two letter country code (ISO standard 3166). Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries.  Examples include: US, JP, and GB. Not nullable. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+    - `[UserPrincipalName <String>]`: The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant's collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property cannot contain accent characters. Only the following characters are allowed A - Z, a - z, 0 - 9, ' . - _ ! # ^ ~. For the complete list of allowed characters, see username policies. Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderBy.
+    - `[UserType <String>]`: A String value that can be used to classify user types in your directory, such as Member and Guest. Supports $filter (eq, ne, not, in, and eq on null values). NOTE: For more information about the permissions for member and guest users, see What are the default user permissions in Azure Active Directory?
   - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
   - `[Description <String>]`: Provides a user-visible description of the item. Optional.
   - `[ETag <String>]`: ETag for the item. Read-only.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+  - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
   - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
   - `[Name <String>]`: The name of the item. Read-write.
   - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -9906,9 +10761,6 @@ ITEMS <IMicrosoftGraphListItem1[]>: All items contained in the list.
   - `[Id <String>]`: Read-only.
   - `[Analytics <IMicrosoftGraphItemAnalytics1>]`: itemAnalytics
   - `[ContentType <IMicrosoftGraphContentTypeInfo>]`: contentTypeInfo
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The id of the content type.
-    - `[Name <String>]`: The name of the content type.
   - `[DriveItem <IMicrosoftGraphDriveItem1>]`: driveItem
   - `[Fields <IMicrosoftGraphFieldValueSet>]`: fieldValueSet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -9925,23 +10777,23 @@ LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
+    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+    - `[Id <String>]`: The identifier of the identity. This property is read-only.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory user object.
+LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: user
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeletedDateTime <DateTime?>]`: 
   - `[Id <String>]`: Read-only.
   - `[AboutMe <String>]`: A freeform text entry field for the user to describe themselves. Returned only on $select.
-  - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. This property is required when a user is created. Supports $filter (eq, ne, NOT, and in).
+  - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. This property is required when a user is created. Supports $filter (eq, ne, not, and in).
   - `[Activities <IMicrosoftGraphUserActivity1[]>]`: The user's activities across devices. Read-only. Nullable.
     - `[Id <String>]`: Read-only.
     - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
     - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
     - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-    - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
+    - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
     - `[ContentInfo <IMicrosoftGraphJson>]`: Json
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -9966,7 +10818,7 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
+        - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
         - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
         - `[AlternativeText <String>]`: 
         - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -9974,7 +10826,7 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
       - `[Content <IMicrosoftGraphJson>]`: Json
       - `[Description <String>]`: Optional. Longer text description of the user's unique activity (example: document name, first sentence, and/or metadata)
       - `[DisplayText <String>]`: Required. Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)
-  - `[AgeGroup <String>]`: Sets the age group of the user. Allowed values: null, minor, notAdult and adult. Refer to the legal age group property definitions for further information. Supports $filter (eq, ne, NOT, and in).
+  - `[AgeGroup <String>]`: Sets the age group of the user. Allowed values: null, minor, notAdult and adult. Refer to the legal age group property definitions for further information. Supports $filter (eq, ne, not, and in).
   - `[AgreementAcceptances <IMicrosoftGraphAgreementAcceptance[]>]`: The user's terms of use acceptance statuses. Read-only. Nullable.
     - `[Id <String>]`: Read-only.
     - `[AgreementFileId <String>]`: ID of the agreement file accepted by the user.
@@ -9990,7 +10842,7 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
     - `[UserEmail <String>]`: Email of the user when the acceptance was recorded.
     - `[UserId <String>]`: ID of the user who accepted the agreement.
     - `[UserPrincipalName <String>]`: UPN of the user when the acceptance was recorded.
-  - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment1[]>]`: Represents the app roles a user has been granted for an application.
+  - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment1[]>]`: Represents the app roles a user has been granted for an application. Supports $expand.
     - `[DeletedDateTime <DateTime?>]`: 
     - `[Id <String>]`: Read-only.
     - `[AppRoleId <String>]`: The identifier (id) for the app role which is assigned to the principal. This app role must be exposed in the appRoles property on the resource application's service principal (resourceId). If the resource application has not declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles. Required on create.
@@ -10000,10 +10852,10 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
     - `[PrincipalType <String>]`: The type of the assigned principal. This can either be User, Group or ServicePrincipal. Read-only.
     - `[ResourceDisplayName <String>]`: The display name of the resource app's service principal to which the assignment is made.
     - `[ResourceId <String>]`: The unique identifier (id) for the resource service principal for which the assignment is made. Required on create. Supports $filter (eq only).
-  - `[AssignedLicenses <IMicrosoftGraphAssignedLicense[]>]`: The licenses that are assigned to the user, including inherited (group-based) licenses. Not nullable. Supports $filter (eq and NOT).
+  - `[AssignedLicenses <IMicrosoftGraphAssignedLicense[]>]`: The licenses that are assigned to the user, including inherited (group-based) licenses. Not nullable. Supports $filter (eq and not).
     - `[DisabledPlans <String[]>]`: A collection of the unique identifiers for plans that have been disabled.
     - `[SkuId <String>]`: The unique identifier for the SKU.
-  - `[AssignedPlans <IMicrosoftGraphAssignedPlan[]>]`: The plans that are assigned to the user. Read-only. Not nullable.Supports $filter (eq and NOT).
+  - `[AssignedPlans <IMicrosoftGraphAssignedPlan[]>]`: The plans that are assigned to the user. Read-only. Not nullable.Supports $filter (eq and not).
     - `[AssignedDateTime <DateTime?>]`: The date and time at which the plan was assigned; for example: 2013-01-02T19:32:30Z. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[CapabilityStatus <String>]`: Condition of the capability assignment. The possible values are Enabled, Warning, Suspended, Deleted, LockedOut.
     - `[Service <String>]`: The name of the service; for example, 'Exchange'.
@@ -10024,39 +10876,39 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
     - `[MicrosoftAuthenticatorMethods <IMicrosoftGraphMicrosoftAuthenticatorAuthenticationMethod1[]>]`: 
       - `[Id <String>]`: Read-only.
       - `[CreatedDateTime <DateTime?>]`: The date and time that this app was registered. This property is null if the device is not registered for passwordless Phone Sign-In.
-      - `[Device <IMicrosoftGraphDevice1>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
+      - `[Device <IMicrosoftGraphDevice1>]`: device
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DeletedDateTime <DateTime?>]`: 
         - `[Id <String>]`: Read-only.
-        - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. default is true.
-        - `[AlternativeSecurityIds <IMicrosoftGraphAlternativeSecurityId[]>]`: For internal use only. Not nullable.
+        - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. Default is true.  Supports $filter (eq, ne, not, in). Only callers in Global Administrator and Cloud Device Administrator roles can set this property.
+        - `[AlternativeSecurityIds <IMicrosoftGraphAlternativeSecurityId[]>]`: For internal use only. Not nullable. Supports $filter (eq, not, ge, le).
           - `[IdentityProvider <String>]`: For internal use only
           - `[Key <Byte[]>]`: For internal use only
           - `[Type <Int32?>]`: For internal use only
-        - `[ApproximateLastSignInDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+        - `[ApproximateLastSignInDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Supports $filter (eq, ne, not, ge, le, and eq on null values) and $orderBy.
         - `[ComplianceExpirationDateTime <DateTime?>]`: The timestamp when the device is no longer deemed compliant. The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-        - `[DeviceId <String>]`: Identifier set by Azure Device Registration Service at the time of registration.
+        - `[DeviceId <String>]`: Identifier set by Azure Device Registration Service at the time of registration. Supports $filter (eq, ne, not, startsWith).
         - `[DeviceMetadata <String>]`: For internal use only. Set to null.
         - `[DeviceVersion <Int32?>]`: For internal use only.
-        - `[DisplayName <String>]`: The display name for the device. Required.
+        - `[DisplayName <String>]`: The display name for the device. Required. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderBy.
         - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the device. Read-only. Nullable.
           - `[Id <String>]`: Read-only.
-        - `[IsCompliant <Boolean?>]`: true if the device complies with Mobile Device Management (MDM) policies; otherwise, false. Read-only. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
-        - `[IsManaged <Boolean?>]`: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices.
-        - `[MdmAppId <String>]`: Application identifier used to register device into MDM. Read-only. Supports $filter.
-        - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups that this device is a member of. Read-only. Nullable.
+        - `[IsCompliant <Boolean?>]`: true if the device complies with Mobile Device Management (MDM) policies; otherwise, false. Read-only. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices. Supports $filter (eq, ne, not).
+        - `[IsManaged <Boolean?>]`: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices. Supports $filter (eq, ne, not).
+        - `[MdmAppId <String>]`: Application identifier used to register device into MDM. Read-only. Supports $filter (eq, ne, not, startsWith).
+        - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups that this device is a member of. Read-only. Nullable. Supports $expand.
           - `[Id <String>]`: Read-only.
           - `[DeletedDateTime <DateTime?>]`: 
-        - `[OnPremisesLastSyncDateTime <DateTime?>]`: The last time at which the object was synced with the on-premises directory. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
-        - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default). Read-only.
-        - `[OperatingSystem <String>]`: The type of operating system on the device. Required.
-        - `[OperatingSystemVersion <String>]`: Operating system version of the device. Required.
-        - `[PhysicalIds <String[]>]`: For internal use only. Not nullable.
+        - `[OnPremisesLastSyncDateTime <DateTime?>]`: The last time at which the object was synced with the on-premises directory. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only. Supports $filter (eq, ne, not, ge, le, in).
+        - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default). Read-only. Supports $filter (eq, ne, not, in, and eq on null values).
+        - `[OperatingSystem <String>]`: The type of operating system on the device. Required. Supports $filter (eq, ne, not, ge, le, startsWith, and eq on null values).
+        - `[OperatingSystemVersion <String>]`: Operating system version of the device. Required. Supports $filter (eq, ne, not, ge, le, startsWith, and eq on null values).
+        - `[PhysicalIds <String[]>]`: For internal use only. Not nullable. Supports $filter (eq, not, ge, le, startsWith).
         - `[ProfileType <String>]`: The profile type of the device. Possible values: RegisteredDevice (default), SecureVM, Printer, Shared, IoT.
-        - `[RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]`: The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Currently, there can be only one owner. Read-only. Nullable.
-        - `[RegisteredUsers <IMicrosoftGraphDirectoryObject[]>]`: Collection of registered users of the device. For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration. Read-only. Nullable.
+        - `[RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]`: The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Currently, there can be only one owner. Read-only. Nullable. Supports $expand.
+        - `[RegisteredUsers <IMicrosoftGraphDirectoryObject[]>]`: Collection of registered users of the device. For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration. Read-only. Nullable. Supports $expand.
         - `[SystemLabels <String[]>]`: List of labels applied to the device by the system.
-        - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups that this device is a member of. This operation is transitive.
+        - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups that this device is a member of. This operation is transitive. Supports $expand.
         - `[TrustType <String>]`: Type of trust for the joined device. Read-only. Possible values: Workplace (indicates bring your own personal devices), AzureAd (Cloud only joined devices), ServerAd (on-premises domain joined devices joined to Azure AD). For more details, see Introduction to device management in Azure Active Directory
       - `[DeviceTag <String>]`: Tags containing app metadata.
       - `[DisplayName <String>]`: The name of the device on which this app is registered.
@@ -10064,11 +10916,11 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
     - `[WindowsHelloForBusinessMethods <IMicrosoftGraphWindowsHelloForBusinessAuthenticationMethod1[]>]`: 
       - `[Id <String>]`: Read-only.
       - `[CreatedDateTime <DateTime?>]`: The date and time that this Windows Hello for Business key was registered.
-      - `[Device <IMicrosoftGraphDevice1>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
+      - `[Device <IMicrosoftGraphDevice1>]`: device
       - `[DisplayName <String>]`: The name of the device on which Windows Hello for Business is registered
       - `[KeyStrength <String>]`: authenticationMethodKeyStrength
   - `[Birthday <DateTime?>]`: The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Returned only on $select.
-  - `[BusinessPhones <String[]>]`: The telephone numbers for the user. Only one number can be set for this property. Read-only for users synced from on-premises directory. Supports $filter (eq and NOT).
+  - `[BusinessPhones <String[]>]`: The telephone numbers for the user. Only one number can be set for this property. Read-only for users synced from on-premises directory. Supports $filter (eq, not, ge, le, startsWith).
   - `[Calendar <IMicrosoftGraphCalendar1>]`: calendar
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: Read-only.
@@ -10089,7 +10941,7 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
       - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[Id <String>]`: Read-only.
-      - `[AllowNewTimeProposals <Boolean?>]`: True if the meeting organizer allows invitees to propose a new time when responding, false otherwise. Optional. Default is true.
+      - `[AllowNewTimeProposals <Boolean?>]`: true if the meeting organizer allows invitees to propose a new time when responding; otherwise false. Optional. Default is true.
       - `[Attachments <IMicrosoftGraphAttachment[]>]`: The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event. Navigation property. Read-only. Nullable.
         - `[Id <String>]`: Read-only.
         - `[ContentType <String>]`: The MIME type.
@@ -10124,12 +10976,12 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
       - `[ICalUId <String>]`: A unique identifier for an event across calendars. This ID is different for each occurrence in a recurring series. Read-only.
       - `[Importance <String>]`: importance
       - `[Instances <IMicrosoftGraphEvent1[]>]`: The occurrences of a recurring series, if the event is a series master. This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series. Navigation property. Read-only. Nullable.
-      - `[IsAllDay <Boolean?>]`: Set to true if the event lasts all day.
-      - `[IsCancelled <Boolean?>]`: Set to true if the event has been canceled.
-      - `[IsDraft <Boolean?>]`: Set to true if the user has updated the meeting in Outlook but has not sent the updates to attendees. Set to false if all changes have been sent, or if the event is an appointment without any attendees.
-      - `[IsOnlineMeeting <Boolean?>]`: True if this event has online meeting information, false otherwise. Default is false. Optional.
-      - `[IsOrganizer <Boolean?>]`: Set to true if the calendar owner (specified by the owner property of the calendar) is the organizer of the event (specified by the organizer property of the event). This also applies if a delegate organized the event on behalf of the owner.
-      - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the event.
+      - `[IsAllDay <Boolean?>]`: 
+      - `[IsCancelled <Boolean?>]`: 
+      - `[IsDraft <Boolean?>]`: 
+      - `[IsOnlineMeeting <Boolean?>]`: 
+      - `[IsOrganizer <Boolean?>]`: 
+      - `[IsReminderOn <Boolean?>]`: 
       - `[Location <IMicrosoftGraphLocation1>]`: location
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Address <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
@@ -10152,7 +11004,7 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
         - `[LocationUri <String>]`: Optional URI representing the location.
         - `[UniqueId <String>]`: For internal use only.
         - `[UniqueIdType <String>]`: locationUniqueIdType
-      - `[Locations <IMicrosoftGraphLocation1[]>]`: The locations where the event is held or attended from. The location and locations properties always correspond with each other. If you update the location property, any prior locations in the locations collection would be removed and replaced by the new location value.
+      - `[Locations <IMicrosoftGraphLocation1[]>]`: 
       - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the event. Read-only. Nullable.
         - `[Id <String>]`: Read-only.
         - `[Value <String[]>]`: A collection of property values.
@@ -10169,19 +11021,19 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
         - `[TollFreeNumbers <String[]>]`: The toll free numbers that can be used to join the conference.
         - `[TollNumber <String>]`: The toll number that can be used to join the conference.
       - `[OnlineMeetingProvider <String>]`: onlineMeetingProviderType
-      - `[OnlineMeetingUrl <String>]`: A URL for an online meeting. The property is set only when an organizer specifies an event as an online meeting such as a Skype meeting. Read-only.
+      - `[OnlineMeetingUrl <String>]`: 
       - `[Organizer <IMicrosoftGraphRecipient>]`: recipient
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-      - `[OriginalEndTimeZone <String>]`: The end time zone that was set when the event was created. A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
-      - `[OriginalStart <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-      - `[OriginalStartTimeZone <String>]`: The start time zone that was set when the event was created. A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
+      - `[OriginalEndTimeZone <String>]`: 
+      - `[OriginalStart <DateTime?>]`: 
+      - `[OriginalStartTimeZone <String>]`: 
       - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs. Required if type is absoluteMonthly or absoluteYearly.
-          - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. Possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
+          - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
           - `[FirstDayOfWeek <String>]`: dayOfWeek
           - `[Index <String>]`: weekIndex
           - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type. Required.
@@ -10194,20 +11046,20 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
           - `[RecurrenceTimeZone <String>]`: Time zone for the startDate and endDate properties. Optional. If not specified, the time zone of the event is used.
           - `[StartDate <DateTime?>]`: The date to start applying the recurrence pattern. The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event. Must be the same value as the start property of the recurring event. Required.
           - `[Type <String>]`: recurrenceRangeType
-      - `[ReminderMinutesBeforeStart <Int32?>]`: The number of minutes before the event start time that the reminder alert occurs.
-      - `[ResponseRequested <Boolean?>]`: Default is true, which represents the organizer would like an invitee to send a response to the event.
+      - `[ReminderMinutesBeforeStart <Int32?>]`: 
+      - `[ResponseRequested <Boolean?>]`: 
       - `[ResponseStatus <IMicrosoftGraphResponseStatus>]`: responseStatus
       - `[Sensitivity <String>]`: sensitivity
-      - `[SeriesMasterId <String>]`: The ID for the recurring series master item, if this event is part of a recurring series.
+      - `[SeriesMasterId <String>]`: 
       - `[ShowAs <String>]`: freeBusyStatus
       - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the event. Read-only. Nullable.
         - `[Id <String>]`: Read-only.
         - `[Value <String>]`: A property value.
       - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-      - `[Subject <String>]`: The text of the event's subject line.
-      - `[TransactionId <String>]`: A custom identifier specified by a client app for the server to avoid redundant POST operations in case of client retries to create the same event. This is useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request. After you set transactionId when creating an event, you cannot change transactionId in a subsequent update. This property is only returned in a response payload if an app has set it. Optional.
+      - `[Subject <String>]`: 
+      - `[TransactionId <String>]`: 
       - `[Type <String>]`: eventType
-      - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in to your mailbox. Otherwise, Outlook on the web prompts you to sign in.This URL cannot be accessed from within an iFrame.
+      - `[WebLink <String>]`: 
     - `[CanEdit <Boolean?>]`: true if the user can write to the calendar, false otherwise. This property is true for the user who created the calendar. This property is also true for a user who has been shared a calendar and granted write access, through an Outlook client or the corresponding calendarPermission resource. Read-only.
     - `[CanShare <Boolean?>]`: true if the user has the permission to share the calendar, false otherwise. Only the user who created the calendar can share it. Read-only.
     - `[CanViewPrivateItems <Boolean?>]`: true if the user can read calendar items that have been marked private, false otherwise. This property is set through an Outlook client or the corresponding calendarPermission resource. Read-only.
@@ -10249,8 +11101,8 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Application <IMicrosoftGraphIdentity>]`: identity
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-              - `[Id <String>]`: Unique identifier for the identity.
+              - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+              - `[Id <String>]`: The identifier of the identity. This property is read-only.
             - `[Device <IMicrosoftGraphIdentity>]`: identity
             - `[User <IMicrosoftGraphIdentity>]`: identity
           - `[Description <String>]`: Verbose description of the application.
@@ -10272,7 +11124,7 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
       - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
     - `[Messages <IMicrosoftGraphChatMessage1[]>]`: A collection of all the messages in the chat. Nullable.
       - `[Id <String>]`: Read-only.
-      - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: Attached files. Attachments are currently read-only - sending attachments is not supported.
+      - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: References to attached objects like files, tabs, meetings etc.
         - `[Content <String>]`: The content of the attachment. If the attachment is a rich card, set the property to the rich card object. This property and contentUrl are mutually exclusive.
         - `[ContentType <String>]`: The media type of the content attachment. It can have the following values: reference: Attachment is a link to another file. Populate the contentURL with the link to the object.Any contentTypes supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet. application/vnd.microsoft.card.announcement: An announcement header.
         - `[ContentUrl <String>]`: URL for the content of the attachment. Supported protocols: http, https, file and data.
@@ -10288,6 +11140,8 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
       - `[CreatedDateTime <DateTime?>]`: Timestamp of when the chat message was created.
       - `[DeletedDateTime <DateTime?>]`: Read only. Timestamp at which the chat message was deleted, or null if not deleted.
       - `[Etag <String>]`: Read-only. Version number of the chat message.
+      - `[EventDetail <IMicrosoftGraphEventMessageDetail>]`: eventMessageDetail
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[From <IMicrosoftGraphChatMessageFromIdentitySet>]`: chatMessageFromIdentitySet
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -10301,7 +11155,7 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
       - `[LastEditedDateTime <DateTime?>]`: Read only. Timestamp when edits to the chat message were made. Triggers an 'Edited' flag in the Teams UI. If no edits are made the value is null.
       - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
       - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
-      - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Currently supports user, bot, team, channel.
+      - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
         - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
         - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
         - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
@@ -10311,10 +11165,10 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
           - `[User <IMicrosoftGraphIdentity>]`: identity
           - `[Conversation <IMicrosoftGraphTeamworkConversationIdentity>]`: teamworkConversationIdentity
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-            - `[Id <String>]`: Unique identifier for the identity.
+            - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+            - `[Id <String>]`: The identifier of the identity. This property is read-only.
             - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
-      - `[MessageType <String>]`: 
+      - `[MessageType <String>]`: chatMessageType
       - `[PolicyViolation <IMicrosoftGraphChatMessagePolicyViolation>]`: chatMessagePolicyViolation
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DlpAction <String>]`: chatMessagePolicyViolationDlpActionTypes
@@ -10351,9 +11205,10 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
       - `[TeamsApp <IMicrosoftGraphTeamsApp1>]`: teamsApp
       - `[WebUrl <String>]`: Deep link URL of the tab instance. Read only.
     - `[Topic <String>]`: (Optional) Subject or topic for the chat. Only available for group chats.
-  - `[City <String>]`: The city in which the user is located. Maximum length is 128 characters. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
-  - `[CompanyName <String>]`: The company name which the user is associated. This property can be useful for describing the company that an external user comes from. The maximum length of the company name is 64 characters.Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
-  - `[ConsentProvidedForMinor <String>]`: Sets whether consent has been obtained for minors. Allowed values: null, granted, denied and notRequired. Refer to the legal age group property definitions for further information. Supports $filter (eq, ne, NOT, and in).
+    - `[WebUrl <String>]`: The URL for the chat in Microsoft Teams. The URL should be treated as an opaque blob, and not parsed. Read-only.
+  - `[City <String>]`: The city in which the user is located. Maximum length is 128 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+  - `[CompanyName <String>]`: The company name which the user is associated. This property can be useful for describing the company that an external user comes from. The maximum length of the company name is 64 characters.Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+  - `[ConsentProvidedForMinor <String>]`: Sets whether consent has been obtained for minors. Allowed values: null, granted, denied and notRequired. Refer to the legal age group property definitions for further information. Supports $filter (eq, ne, not, and in).
   - `[ContactFolders <IMicrosoftGraphContactFolder1[]>]`: The user's contacts folders. Read-only. Nullable.
     - `[Id <String>]`: Read-only.
     - `[ChildFolders <IMicrosoftGraphContactFolder1[]>]`: The collection of child folders in the folder. Navigation property. Read-only. Nullable.
@@ -10379,57 +11234,57 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
       - `[GivenName <String>]`: The contact's given name.
       - `[HomeAddress <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
       - `[HomePhones <String[]>]`: The contact's home phone numbers.
-      - `[ImAddresses <String[]>]`: The contact's instant messaging (IM) addresses.
-      - `[Initials <String>]`: The contact's initials.
-      - `[JobTitle <String>]`: The contact's job title.
-      - `[Manager <String>]`: The name of the contact's manager.
-      - `[MiddleName <String>]`: The contact's middle name.
-      - `[MobilePhone <String>]`: The contact's mobile phone number.
+      - `[ImAddresses <String[]>]`: 
+      - `[Initials <String>]`: 
+      - `[JobTitle <String>]`: 
+      - `[Manager <String>]`: 
+      - `[MiddleName <String>]`: 
+      - `[MobilePhone <String>]`: 
       - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
-      - `[NickName <String>]`: The contact's nickname.
-      - `[OfficeLocation <String>]`: The location of the contact's office.
+      - `[NickName <String>]`: 
+      - `[OfficeLocation <String>]`: 
       - `[OtherAddress <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
-      - `[ParentFolderId <String>]`: The ID of the contact's parent folder.
-      - `[PersonalNotes <String>]`: The user's notes about the contact.
+      - `[ParentFolderId <String>]`: 
+      - `[PersonalNotes <String>]`: 
       - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: Read-only.
         - `[Height <Int32?>]`: The height of the photo. Read-only.
         - `[Width <Int32?>]`: The width of the photo. Read-only.
-      - `[Profession <String>]`: The contact's profession.
+      - `[Profession <String>]`: 
       - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the contact. Read-only. Nullable.
-      - `[SpouseName <String>]`: The name of the contact's spouse/partner.
-      - `[Surname <String>]`: The contact's surname.
-      - `[Title <String>]`: The contact's title.
-      - `[YomiCompanyName <String>]`: The phonetic Japanese company name of the contact.
-      - `[YomiGivenName <String>]`: The phonetic Japanese given name (first name) of the contact.
-      - `[YomiSurname <String>]`: The phonetic Japanese surname (last name)  of the contact.
+      - `[SpouseName <String>]`: 
+      - `[Surname <String>]`: 
+      - `[Title <String>]`: 
+      - `[YomiCompanyName <String>]`: 
+      - `[YomiGivenName <String>]`: 
+      - `[YomiSurname <String>]`: 
     - `[DisplayName <String>]`: The folder's display name.
     - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the contactFolder. Read-only. Nullable.
     - `[ParentFolderId <String>]`: The ID of the folder's parent folder.
     - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the contactFolder. Read-only. Nullable.
   - `[Contacts <IMicrosoftGraphContact1[]>]`: The user's contacts. Read-only. Nullable.
-  - `[Country <String>]`: The country/region in which the user is located; for example, US or UK. Maximum length is 128 characters. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
-  - `[CreatedDateTime <DateTime?>]`: The date and time the user was created. The value cannot be modified and is automatically populated when the entity is created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. Property is nullable. A null value indicates that an accurate creation time couldn't be determined for the user. Read-only. Supports $filter (eq, ne, NOT , ge, le, and in operators).
+  - `[Country <String>]`: The country/region in which the user is located; for example, US or UK. Maximum length is 128 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+  - `[CreatedDateTime <DateTime?>]`: The date and time the user was created. The value cannot be modified and is automatically populated when the entity is created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. Property is nullable. A null value indicates that an accurate creation time couldn't be determined for the user. Read-only. Supports $filter (eq, ne, not , ge, le, in).
   - `[CreatedObjects <IMicrosoftGraphDirectoryObject[]>]`: Directory objects that were created by the user. Read-only. Nullable.
-  - `[CreationType <String>]`: Indicates whether the user account was created as a regular school or work account (null), an external account (Invitation), a local account for an Azure Active Directory B2C tenant (LocalAccount) or self-service sign-up using email verification (EmailVerified). Read-only. Supports $filter (eq, ne, NOT, and in).
-  - `[Department <String>]`: The name for the department in which the user works. Maximum length is 64 characters.Supports $filter (eq, ne, NOT , ge, le, and in operators).
+  - `[CreationType <String>]`: Indicates whether the user account was created through one of the following methods:  As a regular school or work account (null). As an external account (Invitation). As a local account for an Azure Active Directory B2C tenant (LocalAccount). Through self-service sign-up by an internal user using email verification (EmailVerified). Through self-service sign-up by an external user signing up through a link that is part of a user flow (SelfServiceSignUp).  Read-only.Supports $filter (eq, ne, not, and in).
+  - `[Department <String>]`: The name for the department in which the user works. Maximum length is 64 characters.Supports $filter (eq, ne, not , ge, le, in, and eq on null values).
   - `[DeviceEnrollmentLimit <Int32?>]`: The limit on the maximum number of devices that the user is permitted to enroll. Allowed values are 5 or 1000.
   - `[DeviceManagementTroubleshootingEvents <IMicrosoftGraphDeviceManagementTroubleshootingEvent1[]>]`: The list of troubleshooting events for this user.
     - `[Id <String>]`: Read-only.
     - `[CorrelationId <String>]`: Id used for tracing the failure in the service.
     - `[EventDateTime <DateTime?>]`: Time when the event occurred .
-  - `[DirectReports <IMicrosoftGraphDirectoryObject[]>]`: The users and contacts that report to the user. (The users and contacts that have their manager property set to this user.) Read-only. Nullable.
-  - `[DisplayName <String>]`: The name displayed in the address book for the user. This value is usually the combination of the user's first name, middle initial, and last name. This property is required when a user is created and it cannot be cleared during updates. Maximum length is 256 characters. Supports $filter (eq, ne, NOT , ge, le, in, startsWith), $orderBy, and $search.
+  - `[DirectReports <IMicrosoftGraphDirectoryObject[]>]`: The users and contacts that report to the user. (The users and contacts that have their manager property set to this user.) Read-only. Nullable. Supports $expand.
+  - `[DisplayName <String>]`: The name displayed in the address book for the user. This value is usually the combination of the user's first name, middle initial, and last name. This property is required when a user is created and it cannot be cleared during updates. Maximum length is 256 characters. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values), $orderBy, and $search.
   - `[Drive <IMicrosoftGraphDrive1>]`: drive
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[CreatedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+    - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
     - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
     - `[Description <String>]`: Provides a user-visible description of the item. Optional.
     - `[ETag <String>]`: ETag for the item. Read-only.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+    - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
     - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
     - `[Name <String>]`: The name of the item. Read-write.
     - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -10452,15 +11307,14 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
       - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
     - `[WebUrl <String>]`: URL that displays the resource in the browser. Read-only.
     - `[Id <String>]`: Read-only.
-    - `[DriveType <String>]`: Describes the type of drive represented by this resource. OneDrive personal drives will return personal. OneDrive for Business will return business. SharePoint document libraries will return documentLibrary. Read-only.
-    - `[Following <IMicrosoftGraphDriveItem1[]>]`: The list of items the user is following. Only in OneDrive for Business.
+    - `[Bundles <IMicrosoftGraphDriveItem1[]>]`: Collection of [bundles][bundle] (albums and multi-select-shared sets of items). Only in personal OneDrive.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[CreatedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+      - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
       - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
       - `[Description <String>]`: Provides a user-visible description of the item. Optional.
       - `[ETag <String>]`: ETag for the item. Read-only.
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+      - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
       - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
       - `[Name <String>]`: The name of the item. Read-write.
       - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -10514,6 +11368,12 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
         - `[Track <Int32?>]`: The number of the track on the original disc for this audio file.
         - `[TrackCount <Int32?>]`: The total number of tracks on the original disc for this audio file.
         - `[Year <Int32?>]`: The year the audio file was recorded.
+      - `[Bundle <IMicrosoftGraphBundle>]`: bundle
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Album <IMicrosoftGraphAlbum>]`: album
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[CoverImageItemId <String>]`: Unique identifier of the [driveItem][] that is the cover of the album.
+        - `[ChildCount <Int32?>]`: Number of children contained immediately within this container.
       - `[CTag <String>]`: An eTag for the content of the item. This eTag is not changed if only the metadata is changed. Note This property is not returned if the item is a folder. Read-only.
       - `[Children <IMicrosoftGraphDriveItem1[]>]`: Collection containing Item objects for the immediate children of Item. Only items representing folders have children. Read-only. Nullable.
       - `[Content <Byte[]>]`: The content stream, if the item represents a file.
@@ -10550,12 +11410,12 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
       - `[ListItem <IMicrosoftGraphListItem1>]`: listItem
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[CreatedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+        - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
         - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
         - `[Description <String>]`: Provides a user-visible description of the item. Optional.
         - `[ETag <String>]`: ETag for the item. Read-only.
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+        - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
         - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
         - `[Name <String>]`: The name of the item. Read-write.
         - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -10585,6 +11445,9 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
         - `[Altitude <Double?>]`: Optional. The altitude (height), in feet,  above sea level for the item. Read-only.
         - `[Latitude <Double?>]`: Optional. The latitude, in decimal, for the item. Writable on OneDrive Personal.
         - `[Longitude <Double?>]`: Optional. The longitude, in decimal, for the item. Writable on OneDrive Personal.
+      - `[Malware <IMicrosoftGraphMalware>]`: malware
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Description <String>]`: Contains the virus details for the malware facet.
       - `[Package <IMicrosoftGraphPackage>]`: package
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Type <String>]`: A string indicating the type of package. While oneNote is the only currently defined value, you should expect other package types to be returned and handle them accordingly.
@@ -10597,8 +11460,20 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
         - `[Id <String>]`: Read-only.
         - `[ExpirationDateTime <DateTime?>]`: A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission. DateTime.MinValue indicates there is no expiration set for this permission. Optional.
         - `[GrantedTo <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[GrantedToIdentities <IMicrosoftGraphIdentitySet[]>]`: For link type permissions, the details of the users to whom permission was granted. Read-only.
-        - `[HasPassword <Boolean?>]`: This indicates whether password is set for this permission, it's only showing in response. Optional and Read-only and for OneDrive Personal only.
+        - `[GrantedToIdentities <IMicrosoftGraphIdentitySet[]>]`: 
+        - `[GrantedToIdentitiesV2 <IMicrosoftGraphSharePointIdentitySet[]>]`: For link type permissions, the details of the users to whom permission was granted. Read-only.
+          - `[Application <IMicrosoftGraphIdentity>]`: identity
+          - `[Device <IMicrosoftGraphIdentity>]`: identity
+          - `[User <IMicrosoftGraphIdentity>]`: identity
+          - `[Group <IMicrosoftGraphIdentity>]`: identity
+          - `[SiteGroup <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+            - `[Id <String>]`: The identifier of the identity. This property is read-only.
+            - `[LoginName <String>]`: The sign in name of the SharePoint identity.
+          - `[SiteUser <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
+        - `[GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>]`: sharePointIdentitySet
+        - `[HasPassword <Boolean?>]`: Indicates whether the password is set for this permission. This property only appears in the response. Optional. Read-only. For OneDrive Personal only.
         - `[InheritedFrom <IMicrosoftGraphItemReference>]`: itemReference
         - `[Invitation <IMicrosoftGraphSharingInvitation>]`: sharingInvitation
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -10614,7 +11489,7 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
           - `[Type <String>]`: The type of the link created.
           - `[WebHtml <String>]`: For embed links, this property contains the HTML code for an <iframe> element that will embed the item in a webpage.
           - `[WebUrl <String>]`: A URL that opens the item in the browser on the OneDrive website.
-        - `[Roles <String[]>]`: The type of permission, e.g. read. See below for the full list of roles. Read-only.
+        - `[Roles <String[]>]`: The type of permission, for example, read. See below for the full list of roles. Read-only.
         - `[ShareId <String>]`: A unique token that can be used to access this shared item via the [shares API][]. Read-only.
       - `[Photo <IMicrosoftGraphPhoto>]`: photo
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -10679,18 +11554,19 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
       - `[Subscriptions <IMicrosoftGraphSubscription1[]>]`: The set of subscriptions on the item. Only supported on the root of a drive.
         - `[Id <String>]`: Read-only.
         - `[ApplicationId <String>]`: Identifier of the application used to create the subscription. Read-only.
-        - `[ChangeType <String>]`: Indicates the type of change in the subscribed resource that will raise a change notification. The supported values are: created, updated, deleted. Multiple values can be combined using a comma-separated list. Required. Note: Drive root item and list change notifications support only the updated changeType. User and group change notifications support updated and deleted changeType.
-        - `[ClientState <String>]`: Specifies the value of the clientState property sent by the service in each change notification. The maximum length is 255 characters. The client can check that the change notification came from the service by comparing the value of the clientState property sent with the subscription with the value of the clientState property received with each change notification. Optional.
+        - `[ChangeType <String>]`: Required. Indicates the type of change in the subscribed resource that will raise a change notification. The supported values are: created, updated, deleted. Multiple values can be combined using a comma-separated list. Note:  Drive root item and list change notifications support only the updated changeType. User and group change notifications support updated and deleted changeType.
+        - `[ClientState <String>]`: Optional. Specifies the value of the clientState property sent by the service in each change notification. The maximum length is 255 characters. The client can check that the change notification came from the service by comparing the value of the clientState property sent with the subscription with the value of the clientState property received with each change notification.
         - `[CreatorId <String>]`: Identifier of the user or service principal that created the subscription. If the app used delegated permissions to create the subscription, this field contains the ID of the signed-in user the app called on behalf of. If the app used application permissions, this field contains the ID of the service principal corresponding to the app. Read-only.
-        - `[EncryptionCertificate <String>]`: A base64-encoded representation of a certificate with a public key used to encrypt resource data in change notifications. Optional. Required when includeResourceData is true.
-        - `[EncryptionCertificateId <String>]`: A custom app-provided identifier to help identify the certificate needed to decrypt resource data. Optional. Required when includeResourceData is true.
-        - `[ExpirationDateTime <DateTime?>]`: Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to.  See the table below for maximum supported subscription length of time. Required.
-        - `[IncludeResourceData <Boolean?>]`: When set to true, change notifications include resource data (such as content of a chat message). Optional.
+        - `[EncryptionCertificate <String>]`: A base64-encoded representation of a certificate with a public key used to encrypt resource data in change notifications. Optional but required when includeResourceData is true.
+        - `[EncryptionCertificateId <String>]`: Optional. A custom app-provided identifier to help identify the certificate needed to decrypt resource data. Required when includeResourceData is true.
+        - `[ExpirationDateTime <DateTime?>]`: Required. Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to. For the maximum supported subscription length of time, see the table below.
+        - `[IncludeResourceData <Boolean?>]`: Optional. When set to true, change notifications include resource data (such as content of a chat message).
         - `[LatestSupportedTlsVersion <String>]`: Specifies the latest version of Transport Layer Security (TLS) that the notification endpoint, specified by notificationUrl, supports. The possible values are: v1_0, v1_1, v1_2, v1_3. For subscribers whose notification endpoint supports a version lower than the currently recommended version (TLS 1.2), specifying this property by a set timeline allows them to temporarily use their deprecated version of TLS before completing their upgrade to TLS 1.2. For these subscribers, not setting this property per the timeline would result in subscription operations failing. For subscribers whose notification endpoint already supports TLS 1.2, setting this property is optional. In such cases, Microsoft Graph defaults the property to v1_2.
-        - `[LifecycleNotificationUrl <String>]`: The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved and missed notifications. This URL must make use of the HTTPS protocol. Optional. Read more about how Outlook resources use lifecycle notifications.
-        - `[NotificationQueryOptions <String>]`: OData Query Options for specifying value for the targeting resource. Clients receive notifications when resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property eg  when the print job is completed, when a print job resource isFetchable property value becomes true etc.
-        - `[NotificationUrl <String>]`: The URL of the endpoint that receives the change notifications. This URL must make use of the HTTPS protocol. Required.
-        - `[Resource <String>]`: Specifies the resource that will be monitored for changes. Do not include the base URL (https://graph.microsoft.com/beta/). See the possible resource path values for each supported resource. Required.
+        - `[LifecycleNotificationUrl <String>]`: Optional. The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved and missed notifications. This URL must make use of the HTTPS protocol.
+        - `[NotificationQueryOptions <String>]`: OData query options for specifying the value for the targeting resource. Clients receive notifications when the resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property. For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc.
+        - `[NotificationUrl <String>]`: Required. The URL of the endpoint that receives the change notifications. This URL must make use of the HTTPS protocol.
+        - `[NotificationUrlAppId <String>]`: 
+        - `[Resource <String>]`: Required. Specifies the resource that will be monitored for changes. Do not include the base URL (https://graph.microsoft.com/beta/). See the possible resource path values for each supported resource.
       - `[Thumbnails <IMicrosoftGraphThumbnailSet[]>]`: Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable.
         - `[Id <String>]`: Read-only.
         - `[Large <IMicrosoftGraphThumbnail>]`: thumbnail
@@ -10941,16 +11817,18 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
           - `[Status <String>]`: workbookOperationStatus
         - `[Tables <IMicrosoftGraphWorkbookTable1[]>]`: Represents a collection of tables associated with the workbook. Read-only.
         - `[Worksheets <IMicrosoftGraphWorkbookWorksheet1[]>]`: Represents a collection of worksheets associated with the workbook. Read-only.
+    - `[DriveType <String>]`: Describes the type of drive represented by this resource. OneDrive personal drives will return personal. OneDrive for Business will return business. SharePoint document libraries will return documentLibrary. Read-only.
+    - `[Following <IMicrosoftGraphDriveItem1[]>]`: The list of items the user is following. Only in OneDrive for Business.
     - `[Items <IMicrosoftGraphDriveItem1[]>]`: All items contained in the drive. Read-only. Nullable.
     - `[List <IMicrosoftGraphList1>]`: list
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[CreatedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+      - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
       - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
       - `[Description <String>]`: Provides a user-visible description of the item. Optional.
       - `[ETag <String>]`: ETag for the item. Read-only.
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+      - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
       - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
       - `[Name <String>]`: The name of the item. Read-write.
       - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -10971,6 +11849,8 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
           - `[Choices <String[]>]`: The list of values available for this column.
           - `[DisplayAs <String>]`: How the choices are to be presented in the UX. Must be one of checkBoxes, dropDownMenu, or radioButtons
         - `[ColumnGroup <String>]`: For site columns, the name of the group this column belongs to. Helps organize related columns.
+        - `[ContentApprovalStatus <IMicrosoftGraphContentApprovalStatusColumn>]`: contentApprovalStatusColumn
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Currency <IMicrosoftGraphCurrencyColumn>]`: currencyColumn
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Locale <String>]`: Specifies the locale from which to infer the currency symbol.
@@ -10988,7 +11868,13 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
         - `[Geolocation <IMicrosoftGraphGeolocationColumn>]`: geolocationColumn
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Hidden <Boolean?>]`: Specifies whether the column is displayed in the user interface.
+        - `[HyperlinkOrPicture <IMicrosoftGraphHyperlinkOrPictureColumn>]`: hyperlinkOrPictureColumn
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[IsPicture <Boolean?>]`: Specifies whether the display format used for URL columns is an image or a hyperlink.
         - `[Indexed <Boolean?>]`: Specifies whether the column values can used for sorting and searching.
+        - `[IsDeletable <Boolean?>]`: Indicates whether this column can be deleted.
+        - `[IsReorderable <Boolean?>]`: Indicates whether values in the column can be reordered. Read-only.
+        - `[IsSealed <Boolean?>]`: Specifies whether the column can be changed.
         - `[Lookup <IMicrosoftGraphLookupColumn>]`: lookupColumn
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[AllowMultipleValues <Boolean?>]`: Indicates whether multiple values can be selected from the source.
@@ -11008,8 +11894,58 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
           - `[AllowMultipleSelection <Boolean?>]`: Indicates whether multiple values can be selected from the source.
           - `[ChooseFromType <String>]`: Whether to allow selection of people only, or people and groups. Must be one of peopleAndGroups or peopleOnly.
           - `[DisplayAs <String>]`: How to display the information about the person or group chosen. See below.
+        - `[PropagateChanges <Boolean?>]`: If true, changes to this column will be propagated to lists that implement the column.
         - `[ReadOnly <Boolean?>]`: Specifies whether the column values can be modified.
-        - `[Required <Boolean?>]`: Specifies whether the column value is not optional.
+        - `[Required <Boolean?>]`: Specifies whether the column value isn't optional.
+        - `[SourceColumn <IMicrosoftGraphColumnDefinition1>]`: columnDefinition
+        - `[Term <IMicrosoftGraphTermColumn1>]`: termColumn
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[AllowMultipleValues <Boolean?>]`: Specifies whether the column will allow more than one value
+          - `[ParentTerm <IMicrosoftGraphTermStoreTerm1>]`: term
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Id <String>]`: Read-only.
+            - `[Children <IMicrosoftGraphTermStoreTerm1[]>]`: Children of current term.
+            - `[CreatedDateTime <DateTime?>]`: Date and time of term creation. Read-only.
+            - `[Descriptions <IMicrosoftGraphTermStoreLocalizedDescription[]>]`: Description about term that is dependent on the languageTag.
+              - `[Description <String>]`: The description in the localized language.
+              - `[LanguageTag <String>]`: The language tag for the label.
+            - `[Labels <IMicrosoftGraphTermStoreLocalizedLabel[]>]`: Label metadata for a term.
+              - `[IsDefault <Boolean?>]`: Indicates whether the label is the default label.
+              - `[LanguageTag <String>]`: The language tag for the label.
+              - `[Name <String>]`: The name of the label.
+            - `[LastModifiedDateTime <DateTime?>]`: Last date and time of term modification. Read-only.
+            - `[Properties <IMicrosoftGraphKeyValue[]>]`: Collection of properties on the term.
+              - `[Key <String>]`: Key.
+              - `[Value <String>]`: Value.
+            - `[Relations <IMicrosoftGraphTermStoreRelation1[]>]`: To indicate which terms are related to the current term as either pinned or reused.
+              - `[Id <String>]`: Read-only.
+              - `[FromTerm <IMicrosoftGraphTermStoreTerm1>]`: term
+              - `[Relationship <String>]`: 
+              - `[Set <IMicrosoftGraphTermStoreSet1>]`: set
+                - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                - `[Id <String>]`: Read-only.
+                - `[Children <IMicrosoftGraphTermStoreTerm1[]>]`: Children terms of set in term [store].
+                - `[CreatedDateTime <DateTime?>]`: Date and time of set creation. Read-only.
+                - `[Description <String>]`: Description giving details on the term usage.
+                - `[LocalizedNames <IMicrosoftGraphTermStoreLocalizedName[]>]`: Name of the set for each languageTag.
+                  - `[LanguageTag <String>]`: The language tag for the label.
+                  - `[Name <String>]`: The name in the localized language.
+                - `[ParentGroup <IMicrosoftGraphTermStoreGroup1>]`: group
+                  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                  - `[Id <String>]`: Read-only.
+                  - `[CreatedDateTime <DateTime?>]`: Date and time of group creation. Read-only.
+                  - `[Description <String>]`: Description giving details on the term usage.
+                  - `[DisplayName <String>]`: Name of group.
+                  - `[ParentSiteId <String>]`: Id of the parent site of this group.
+                  - `[Scope <String>]`: 
+                  - `[Sets <IMicrosoftGraphTermStoreSet1[]>]`: All sets under the group in a term [store].
+                - `[Properties <IMicrosoftGraphKeyValue[]>]`: Custom properties for the set.
+                - `[Relations <IMicrosoftGraphTermStoreRelation1[]>]`: Indicates which terms have been pinned or reused directly under the set.
+                - `[Terms <IMicrosoftGraphTermStoreTerm1[]>]`: All the terms under the set.
+              - `[ToTerm <IMicrosoftGraphTermStoreTerm1>]`: term
+            - `[Set <IMicrosoftGraphTermStoreSet1>]`: set
+          - `[ShowFullyQualifiedName <Boolean?>]`: Specifies whether to display the entire term path or only the term label.
+          - `[TermSet <IMicrosoftGraphTermStoreSet1>]`: set
         - `[Text <IMicrosoftGraphTextColumn>]`: textColumn
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[AllowMultipleLines <Boolean?>]`: Whether to allow multiple lines of text.
@@ -11017,21 +11953,51 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
           - `[LinesForEditing <Int32?>]`: The size of the text box.
           - `[MaxLength <Int32?>]`: The maximum number of characters for the value.
           - `[TextType <String>]`: The type of text being stored. Must be one of plain or richText
+        - `[Thumbnail <IMicrosoftGraphThumbnailColumn>]`: thumbnailColumn
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Type <String>]`: columnTypes
+        - `[Validation <IMicrosoftGraphColumnValidation>]`: columnValidation
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[DefaultLanguage <String>]`: Default BCP 47 language tag for the description.
+          - `[Descriptions <IMicrosoftGraphDisplayNameLocalization[]>]`: Localized messages that explain what is needed for this column's value to be considered valid. User will be prompted with this message if validation fails.
+            - `[DisplayName <String>]`: If present, the value of this field contains the displayName string that has been set for the language present in the languageTag field.
+            - `[LanguageTag <String>]`: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
+          - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists
       - `[ContentTypes <IMicrosoftGraphContentType1[]>]`: The collection of content types present in this list.
         - `[Id <String>]`: Read-only.
+        - `[AssociatedHubsUrls <String[]>]`: List of canonical URLs for hub sites with which this content type is associated to. This will contain all hubsites where this content type is queued to be enforced or is already enforced. Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
+        - `[Base <IMicrosoftGraphContentType1>]`: contentType
+        - `[BaseTypes <IMicrosoftGraphContentType1[]>]`: The collection of content types that are ancestors of this content type.
         - `[ColumnLinks <IMicrosoftGraphColumnLink[]>]`: The collection of columns that are required by this content type
           - `[Id <String>]`: Read-only.
           - `[Name <String>]`: The name of the column  in this content type.
+        - `[ColumnPositions <IMicrosoftGraphColumnDefinition1[]>]`: Column order information in a content type.
+        - `[Columns <IMicrosoftGraphColumnDefinition1[]>]`: The collection of column definitions for this contentType.
         - `[Description <String>]`: The descriptive text for the item.
+        - `[DocumentSet <IMicrosoftGraphDocumentSet1>]`: documentSet
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[AllowedContentTypes <IMicrosoftGraphContentTypeInfo[]>]`: Content types allowed in document set.
+          - `[DefaultContents <IMicrosoftGraphDocumentSetContent[]>]`: Default contents of document set.
+            - `[ContentType <IMicrosoftGraphContentTypeInfo>]`: contentTypeInfo
+            - `[FileName <String>]`: Name of the file in resource folder that should be added as a default content or a template in the document set
+            - `[FolderName <String>]`: Folder name in which the file will be placed when a new document set is created in the library.
+          - `[PropagateWelcomePageChanges <Boolean?>]`: Specifies whether to push welcome page changes to inherited content types.
+          - `[SharedColumns <IMicrosoftGraphColumnDefinition1[]>]`: 
+          - `[ShouldPrefixNameToFile <Boolean?>]`: Add the name of the Document Set to each file name.
+          - `[WelcomePageColumns <IMicrosoftGraphColumnDefinition1[]>]`: 
+          - `[WelcomePageUrl <String>]`: Welcome page absolute URL.
+        - `[DocumentTemplate <IMicrosoftGraphDocumentSetContent>]`: documentSetContent
         - `[Group <String>]`: The name of the group this content type belongs to. Helps organize related content types.
         - `[Hidden <Boolean?>]`: Indicates whether the content type is hidden in the list's 'New' menu.
         - `[InheritedFrom <IMicrosoftGraphItemReference>]`: itemReference
+        - `[IsBuiltIn <Boolean?>]`: Specifies if a content type is a built-in content type.
         - `[Name <String>]`: The name of the content type.
         - `[Order <IMicrosoftGraphContentTypeOrder>]`: contentTypeOrder
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Default <Boolean?>]`: Whether this is the default Content Type
           - `[Position <Int32?>]`: Specifies the position in which the Content Type appears in the selection UI.
         - `[ParentId <String>]`: The unique identifier of the content type.
+        - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.
         - `[ReadOnly <Boolean?>]`: If true, the content type cannot be modified unless this value is first set to false.
         - `[Sealed <Boolean?>]`: If true, the content type cannot be modified by users or through push-down operations. Only site collection administrators can seal or unseal content types.
       - `[DisplayName <String>]`: The displayable title of the list.
@@ -11062,26 +12028,26 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
     - `[Special <IMicrosoftGraphDriveItem1[]>]`: Collection of common folders available in OneDrive. Read-only. Nullable.
     - `[System <IMicrosoftGraphSystemFacet>]`: systemFacet
   - `[Drives <IMicrosoftGraphDrive1[]>]`: A collection of drives available for this user. Read-only.
-  - `[EmployeeHireDate <DateTime?>]`: The date and time when the user was hired or will start work in case of a future hire. Supports $filter (eq, ne, NOT , ge, le, in).
-  - `[EmployeeId <String>]`: The employee identifier assigned to the user by the organization. Supports $filter (eq, ne, NOT , ge, le, in, startsWith).
+  - `[EmployeeHireDate <DateTime?>]`: The date and time when the user was hired or will start work in case of a future hire. Supports $filter (eq, ne, not , ge, le, in).
+  - `[EmployeeId <String>]`: The employee identifier assigned to the user by the organization. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
   - `[EmployeeOrgData <IMicrosoftGraphEmployeeOrgData>]`: employeeOrgData
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CostCenter <String>]`: The cost center associated with the user. Returned only on $select. Supports $filter.
     - `[Division <String>]`: The name of the division in which the user works. Returned only on $select. Supports $filter.
-  - `[EmployeeType <String>]`: Captures enterprise worker type. For example, Employee, Contractor, Consultant, or Vendor. Supports $filter (eq, ne, NOT , ge, le, in, startsWith).
+  - `[EmployeeType <String>]`: Captures enterprise worker type. For example, Employee, Contractor, Consultant, or Vendor. Supports $filter (eq, ne, not , ge, le, in, startsWith).
   - `[Events <IMicrosoftGraphEvent1[]>]`: The user's events. Default is to show events under the Default Calendar. Read-only. Nullable.
   - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the user. Nullable.
-  - `[ExternalUserState <String>]`: For an external user invited to the tenant using the invitation API, this property represents the invited user's invitation status. For invited users, the state can be PendingAcceptance or Accepted, or null for all other users. Supports $filter (eq, ne, NOT , in).
-  - `[ExternalUserStateChangeDateTime <DateTime?>]`: Shows the timestamp for the latest change to the externalUserState property. Supports $filter (eq, ne, NOT , in).
-  - `[FaxNumber <String>]`: The fax number of the user. Supports $filter (eq, ne, NOT , ge, le, in, startsWith).
+  - `[ExternalUserState <String>]`: For an external user invited to the tenant using the invitation API, this property represents the invited user's invitation status. For invited users, the state can be PendingAcceptance or Accepted, or null for all other users. Supports $filter (eq, ne, not , in).
+  - `[ExternalUserStateChangeDateTime <DateTime?>]`: Shows the timestamp for the latest change to the externalUserState property. Supports $filter (eq, ne, not , in).
+  - `[FaxNumber <String>]`: The fax number of the user. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
   - `[FollowedSites <IMicrosoftGraphSite1[]>]`: 
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[CreatedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+    - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
     - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
     - `[Description <String>]`: Provides a user-visible description of the item. Optional.
     - `[ETag <String>]`: ETag for the item. Read-only.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+    - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
     - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
     - `[Name <String>]`: The name of the item. Read-write.
     - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -11108,15 +12074,16 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
         - `[Target <String>]`: The target of the error.
       - `[Message <String>]`: A non-localized message for the developer.
       - `[Target <String>]`: The target of the error.
+    - `[ExternalColumns <IMicrosoftGraphColumnDefinition1[]>]`: The collection of column definitions available in the site that are referenced from the sites in the parent hierarchy of the current site.
     - `[Items <IMicrosoftGraphBaseItem1[]>]`: Used to address any item contained in this site. This collection cannot be enumerated.
       - `[Id <String>]`: Read-only.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[CreatedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+      - `[CreatedByUser <IMicrosoftGraphUser1>]`: user
       - `[CreatedDateTime <DateTime?>]`: Date and time of item creation. Read-only.
       - `[Description <String>]`: Provides a user-visible description of the item. Optional.
       - `[ETag <String>]`: ETag for the item. Read-only.
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: Represents an Azure Active Directory user object.
+      - `[LastModifiedByUser <IMicrosoftGraphUser1>]`: user
       - `[LastModifiedDateTime <DateTime?>]`: Date and time the item was last modified. Read-only.
       - `[Name <String>]`: The name of the item. Read-write.
       - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
@@ -11221,13 +12188,21 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
       - `[Hostname <String>]`: The hostname for the site collection. Read-only.
       - `[Root <IMicrosoftGraphRoot>]`: root
     - `[Sites <IMicrosoftGraphSite1[]>]`: The collection of the sub-sites under this site.
-  - `[GivenName <String>]`: The given name (first name) of the user. Maximum length is 64 characters. Supports $filter (eq, ne, NOT , ge, le, in, startsWith).
+    - `[TermStore <IMicrosoftGraphTermStore1>]`: store
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: Read-only.
+      - `[DefaultLanguageTag <String>]`: Default language of the term store.
+      - `[Groups <IMicrosoftGraphTermStoreGroup1[]>]`: Collection of all groups available in the term store.
+      - `[LanguageTags <String[]>]`: List of languages for the term store.
+      - `[Sets <IMicrosoftGraphTermStoreSet1[]>]`: Collection of all sets available in the term store.
+    - `[TermStores <IMicrosoftGraphTermStore1[]>]`: The collection of termStores under this site.
+  - `[GivenName <String>]`: The given name (first name) of the user. Maximum length is 64 characters. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
   - `[HireDate <DateTime?>]`: The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.  Returned only on $select.  Note: This property is specific to SharePoint Online. We recommend using the native employeeHireDate property to set and update hire date values using Microsoft Graph APIs.
-  - `[Identities <IMicrosoftGraphObjectIdentity[]>]`: Represents the identities that can be used to sign in to this user account. An identity can be provided by Microsoft (also known as a local account), by organizations, or by social identity providers such as Facebook, Google, and Microsoft, and tied to a user account. May contain multiple items with the same signInType value. Supports $filter (eq) only where the signInType is not userPrincipalName.
+  - `[Identities <IMicrosoftGraphObjectIdentity[]>]`: Represents the identities that can be used to sign in to this user account. An identity can be provided by Microsoft (also known as a local account), by organizations, or by social identity providers such as Facebook, Google, and Microsoft, and tied to a user account. May contain multiple items with the same signInType value. Supports $filter (eq) including on null values, only where the signInType is not userPrincipalName.
     - `[Issuer <String>]`: Specifies the issuer of the identity, for example facebook.com.For local accounts (where signInType is not federated), this property is the local B2C tenant default domain name, for example contoso.onmicrosoft.com.For external users from other Azure AD organization, this will be the domain of the federated organization, for example contoso.com.Supports $filter. 512 character limit.
     - `[IssuerAssignedId <String>]`: Specifies the unique identifier assigned to the user by the issuer. The combination of issuer and issuerAssignedId must be unique within the organization. Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must be a valid local part of an email addressSupports $filter. 100 character limit.
-    - `[SignInType <String>]`: Specifies the user sign-in types in your directory, such as emailAddress, userName or federated. Here, federated represents a unique identifier for a user from an issuer, that can be in any format chosen by the issuer. Additional validation is enforced on issuerAssignedId when the sign-in type is set to emailAddress or userName. This property can also be set to any custom string.
-  - `[ImAddresses <String[]>]`: The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only. Supports $filter (eq, NOT, ge, le, startsWith).
+    - `[SignInType <String>]`: Specifies the user sign-in types in your directory, such as emailAddress, userName, federated, or userPrincipalName. federated represents a unique identifier for a user from an issuer, that can be in any format chosen by the issuer. Setting or updating a userPrincipalName identity will update the value of the userPrincipalName property on the user object. The validations performed on the userPrincipalName property on the user object, for example, verified domains and acceptable characters, will be performed when setting or updating a userPrincipalName identity. Additional validation is enforced on issuerAssignedId when the sign-in type is set to emailAddress or userName. This property can also be set to any custom string.
+  - `[ImAddresses <String[]>]`: The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only. Supports $filter (eq, not, ge, le, startsWith).
   - `[InferenceClassification <IMicrosoftGraphInferenceClassification>]`: inferenceClassification
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: Read-only.
@@ -11247,7 +12222,7 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
           - `[Address <String>]`: The email address of the user who shared the item.
           - `[DisplayName <String>]`: The display name of the user who shared the item.
           - `[Id <String>]`: The id of the user who shared the item.
-        - `[SharedDateTime <DateTime?>]`: The date and time the file was last shared. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: 2014-01-01T00:00:00Z. Read-only.
+        - `[SharedDateTime <DateTime?>]`: The date and time the file was last shared. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
         - `[SharingReference <IMicrosoftGraphResourceReference>]`: resourceReference
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: The item's unique identifier.
@@ -11282,14 +12257,14 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
       - `[Id <String>]`: Read-only.
       - `[LastUsed <IMicrosoftGraphUsageDetails>]`: usageDetails
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[LastAccessedDateTime <DateTime?>]`: The date and time the resource was last accessed by the user. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: 2014-01-01T00:00:00Z. Read-only.
-        - `[LastModifiedDateTime <DateTime?>]`: The date and time the resource was last modified by the user. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: 2014-01-01T00:00:00Z. Read-only.
+        - `[LastAccessedDateTime <DateTime?>]`: The date and time the resource was last accessed by the user. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+        - `[LastModifiedDateTime <DateTime?>]`: The date and time the resource was last modified by the user. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
       - `[Resource <IMicrosoftGraphEntity>]`: entity
       - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
       - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
   - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
-  - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
-  - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Supports $filter (eq, ne, NOT , ge, le, in, startsWith).
+  - `[IsResourceAccount <Boolean?>]`: Do not use – reserved for future use.
+  - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
   - `[JoinedTeams <IMicrosoftGraphTeam1[]>]`: The Microsoft Teams teams that the user is a member of. Read-only. Nullable.
     - `[Id <String>]`: Read-only.
     - `[Channels <IMicrosoftGraphChannel1[]>]`: The collection of channels & messages associated with the team.
@@ -11315,103 +12290,103 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
       - `[AllowGiphy <Boolean?>]`: If set to true, enables Giphy use.
       - `[AllowStickersAndMemes <Boolean?>]`: If set to true, enables users to include stickers and memes.
       - `[GiphyContentRating <String>]`: giphyRatingType
-    - `[Group <IMicrosoftGraphGroup1>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
+    - `[Group <IMicrosoftGraphGroup>]`: group
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DeletedDateTime <DateTime?>]`: 
       - `[Id <String>]`: Read-only.
       - `[AcceptedSenders <IMicrosoftGraphDirectoryObject[]>]`: The list of users or groups that are allowed to create post's or calendar events in this group. If this list is non-empty then only users or groups listed here are allowed to post.
       - `[AllowExternalSenders <Boolean?>]`: Indicates if people external to the organization can send messages to the group. Default value is false. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
-      - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment1[]>]`: Represents the app roles a group has been granted for an application.
+      - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment1[]>]`: Represents the app roles a group has been granted for an application. Supports $expand.
       - `[AssignedLabels <IMicrosoftGraphAssignedLabel[]>]`: The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group. Returned only on $select.
         - `[DisplayName <String>]`: The display name of the label. Read-only.
         - `[LabelId <String>]`: The unique identifier of the label.
-      - `[AssignedLicenses <IMicrosoftGraphAssignedLicense[]>]`: The licenses that are assigned to the group. Returned only on $select. Read-only.
+      - `[AssignedLicenses <IMicrosoftGraphAssignedLicense[]>]`: The licenses that are assigned to the group. Returned only on $select. Supports $filter (eq). Read-only.
       - `[AutoSubscribeNewMembers <Boolean?>]`: Indicates if new members added to the group will be auto-subscribed to receive email notifications. You can set this property in a PATCH request for the group; do not set it in the initial POST request that creates the group. Default value is false. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
       - `[Calendar <IMicrosoftGraphCalendar1>]`: calendar
       - `[CalendarView <IMicrosoftGraphEvent1[]>]`: The calendar view for the calendar. Read-only.
-      - `[Classification <String>]`: Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList setting value, based on the template definition.Returned by default.
+      - `[Classification <String>]`: Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList setting value, based on the template definition.Returned by default. Supports $filter (eq, ne, not, ge, le, startsWith).
       - `[Conversations <IMicrosoftGraphConversation1[]>]`: The group's conversations.
         - `[Id <String>]`: Read-only.
-        - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this Conversation has at least one attachment.
-        - `[LastDeliveredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-        - `[Preview <String>]`: A short summary from the body of the latest post in this converstaion.
+        - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this Conversation has at least one attachment. Supports $filter (eq, ne) and $search.
+        - `[LastDeliveredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Supports $filter (eq, ne, le, ge).
+        - `[Preview <String>]`: A short summary from the body of the latest post in this conversation.
         - `[Threads <IMicrosoftGraphConversationThread1[]>]`: A collection of all the conversation threads in the conversation. A navigation property. Read-only. Nullable.
           - `[Id <String>]`: Read-only.
-          - `[CcRecipients <IMicrosoftGraphRecipient[]>]`: The Cc: recipients for the thread.
-          - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this thread has at least one attachment.
-          - `[IsLocked <Boolean?>]`: Indicates if the thread is locked.
-          - `[LastDeliveredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-          - `[Posts <IMicrosoftGraphPost1[]>]`: Read-only. Nullable.
+          - `[CcRecipients <IMicrosoftGraphRecipient[]>]`: The Cc: recipients for the thread. Returned only on $select.
+          - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this thread has at least one attachment. Returned by default.
+          - `[IsLocked <Boolean?>]`: Indicates if the thread is locked. Returned by default.
+          - `[LastDeliveredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default.
+          - `[Posts <IMicrosoftGraphPost[]>]`: Read-only. Nullable.
             - `[Categories <String[]>]`: The categories associated with the item
             - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
             - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
             - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
             - `[Id <String>]`: Read-only.
-            - `[Attachments <IMicrosoftGraphAttachment[]>]`: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post. Read-only. Nullable.
+            - `[Attachments <IMicrosoftGraphAttachment[]>]`: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post. Read-only. Nullable. Supports $expand.
             - `[Body <IMicrosoftGraphItemBody>]`: itemBody
             - `[ConversationId <String>]`: Unique ID of the conversation. Read-only.
             - `[ConversationThreadId <String>]`: Unique ID of the conversation thread. Read-only.
-            - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the post. Read-only. Nullable.
+            - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the post. Read-only. Nullable. Supports $expand.
             - `[From <IMicrosoftGraphRecipient>]`: recipient
             - `[HasAttachments <Boolean?>]`: Indicates whether the post has at least one attachment. This is a default property.
-            - `[InReplyTo <IMicrosoftGraphPost1>]`: post
+            - `[InReplyTo <IMicrosoftGraphPost>]`: post
             - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the post. Read-only. Nullable.
             - `[NewParticipants <IMicrosoftGraphRecipient[]>]`: Conversation participants that were added to the thread as part of this post.
             - `[ReceivedDateTime <DateTime?>]`: Specifies when the post was received. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
             - `[Sender <IMicrosoftGraphRecipient>]`: recipient
             - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the post. Read-only. Nullable.
-          - `[Preview <String>]`: A short summary from the body of the latest post in this conversation.
-          - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: The To: recipients for the thread.
-          - `[Topic <String>]`: The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated.
-          - `[UniqueSenders <String[]>]`: All the users that sent a message to this thread.
+          - `[Preview <String>]`: A short summary from the body of the latest post in this conversation. Returned by default.
+          - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: The To: recipients for the thread. Returned only on $select.
+          - `[Topic <String>]`: The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated. Returned by default.
+          - `[UniqueSenders <String[]>]`: All the users that sent a message to this thread. Returned by default.
         - `[Topic <String>]`: The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated.
         - `[UniqueSenders <String[]>]`: All the users that sent a message to this Conversation.
-      - `[CreatedDateTime <DateTime?>]`: Timestamp of when the group was created. The value cannot be modified and is automatically populated when the group is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Read-only.
-      - `[CreatedOnBehalfOf <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-      - `[Description <String>]`: An optional description for the group. Returned by default.
-      - `[DisplayName <String>]`: The display name for the group. This property is required when a group is created and cannot be cleared during updates. Returned by default. Supports $filter and $orderby.
+      - `[CreatedDateTime <DateTime?>]`: Timestamp of when the group was created. The value cannot be modified and is automatically populated when the group is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Supports $filter (eq, ne, not, ge, le, in). Read-only.
+      - `[CreatedOnBehalfOf <IMicrosoftGraphDirectoryObject>]`: directoryObject
+      - `[Description <String>]`: An optional description for the group. Returned by default. Supports $filter (eq, ne, not, ge, le, startsWith) and $search.
+      - `[DisplayName <String>]`: The display name for the group. Required. Returned by default. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderBy.
       - `[Drive <IMicrosoftGraphDrive1>]`: drive
       - `[Drives <IMicrosoftGraphDrive1[]>]`: The group's drives. Read-only.
       - `[Events <IMicrosoftGraphEvent1[]>]`: The group's events.
-      - `[ExpirationDateTime <DateTime?>]`: Timestamp of when the group is set to expire. The value cannot be modified and is automatically populated when the group is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Read-only.
+      - `[ExpirationDateTime <DateTime?>]`: Timestamp of when the group is set to expire. The value cannot be modified and is automatically populated when the group is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Supports $filter (eq, ne, not, ge, le, in). Read-only.
       - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the group. Read-only. Nullable.
       - `[GroupLifecyclePolicies <IMicrosoftGraphGroupLifecyclePolicy[]>]`: The collection of lifecycle policies for this group. Read-only. Nullable.
         - `[Id <String>]`: Read-only.
         - `[AlternateNotificationEmails <String>]`: List of email address to send notifications for groups without owners. Multiple email address can be defined by separating email address with a semicolon.
         - `[GroupLifetimeInDays <Int32?>]`: Number of days before a group expires and needs to be renewed. Once renewed, the group expiration is extended by the number of days defined.
         - `[ManagedGroupTypes <String>]`: The group type for which the expiration policy applies. Possible values are All, Selected or None.
-      - `[GroupTypes <String[]>]`: Specifies the group type and its membership.  If the collection contains Unified, the group is a Microsoft 365 group; otherwise, it's either a security group or distribution group. For details, see groups overview.If the collection includes DynamicMembership, the group has dynamic membership; otherwise, membership is static.  Returned by default. Supports $filter.
-      - `[HasMembersWithLicenseErrors <Boolean?>]`: Indicates whether there are members in this group that have license errors from its group-based license assignment. This property is never returned on a GET operation. You can use it as a $filter argument to get groups that have members with license errors (that is, filter for this property being true).
+      - `[GroupTypes <String[]>]`: Specifies the group type and its membership.  If the collection contains Unified, the group is a Microsoft 365 group; otherwise, it's either a security group or distribution group. For details, see groups overview.If the collection includes DynamicMembership, the group has dynamic membership; otherwise, membership is static.  Returned by default. Supports $filter (eq, not).
+      - `[HasMembersWithLicenseErrors <Boolean?>]`: Indicates whether there are members in this group that have license errors from its group-based license assignment. This property is never returned on a GET operation. You can use it as a $filter argument to get groups that have members with license errors (that is, filter for this property being true).  Supports $filter (eq).
       - `[HideFromAddressLists <Boolean?>]`: true if the group is not displayed in certain parts of the Outlook user interface: in the Address Book, in address lists for selecting message recipients, and in the Browse Groups dialog for searching groups; false otherwise. Default value is false. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
       - `[HideFromOutlookClients <Boolean?>]`: true if the group is not displayed in Outlook clients, such as Outlook for Windows and Outlook on the web, false otherwise. Default value is false. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
       - `[IsArchived <Boolean?>]`: 
-      - `[IsAssignableToRole <Boolean?>]`: Indicates whether this group can be assigned to an Azure Active Directory role.This property can only be set while creating the group and is immutable. If set to true, the securityEnabled property must also be set to true and the group cannot be a dynamic group (that is, groupTypes cannot contain DynamicMembership).Only callers in Global Administrator and Privileged Role Administrator roles can set this property. For more, see Using a group to manage Azure AD role assignmentsReturned by default.
+      - `[IsAssignableToRole <Boolean?>]`: Indicates whether this group can be assigned to an Azure Active Directory role. Optional. This property can only be set while creating the group and is immutable. If set to true, the securityEnabled property must also be set to true and the group cannot be a dynamic group (that is, groupTypes cannot contain DynamicMembership). Only callers in Global administrator and Privileged role administrator roles can set this property. The caller must be assigned the RoleManagement.ReadWrite.Directory permission to set this property or update the membership of such groups. For more, see Using a group to manage Azure AD role assignmentsReturned by default. Supports $filter (eq, ne, not).
       - `[IsSubscribedByMail <Boolean?>]`: Indicates whether the signed-in user is subscribed to receive email conversations. Default value is true. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
       - `[LicenseProcessingState <IMicrosoftGraphLicenseProcessingState>]`: licenseProcessingState
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[State <String>]`: 
-      - `[Mail <String>]`: The SMTP address for the group, for example, 'serviceadmins@contoso.onmicrosoft.com'. Returned by default. Read-only. Supports $filter.
-      - `[MailEnabled <Boolean?>]`: Specifies whether the group is mail-enabled. Returned by default.
-      - `[MailNickname <String>]`: The mail alias for the group, unique in the organization. This property must be specified when a group is created. These characters cannot be used in the mailNickName: @()/[]';:.<>,SPACE. Returned by default. Supports $filter.
-      - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups and administrative units that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable.
-      - `[Members <IMicrosoftGraphDirectoryObject[]>]`: Users, contacts, and groups that are members of this group. HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only. Nullable.
+      - `[Mail <String>]`: The SMTP address for the group, for example, 'serviceadmins@contoso.onmicrosoft.com'. Returned by default. Read-only. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+      - `[MailEnabled <Boolean?>]`: Specifies whether the group is mail-enabled. Required. Returned by default. Supports $filter (eq, ne, not, and eq on null values).
+      - `[MailNickname <String>]`: The mail alias for the group, unique for Microsoft 365 groups in the organization. Maximum length is 64 characters. This property can contain only characters in the ASCII character set 0 - 127 except the following: @ () / [] ' ; : . <> , SPACE. Returned by default. Supports $filter (eq, ne, not, ge, le, in, startsWith).
+      - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups and administrative units that this group is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable. Supports $expand.
+      - `[Members <IMicrosoftGraphDirectoryObject[]>]`: Members of this group, who can be users, devices, other groups, or service principals. Supports the List members, Add member, and Remove member operations. Nullable. Supports $expand including nested $select. For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName).
       - `[MembersWithLicenseErrors <IMicrosoftGraphDirectoryObject[]>]`: A list of group members with license errors from this group-based license assignment. Read-only.
-      - `[MembershipRule <String>]`: The rule that determines members for this group if the group is a dynamic group (groupTypes contains DynamicMembership). For more information about the syntax of the membership rule, see Membership Rules syntax. Returned by default.
-      - `[MembershipRuleProcessingState <String>]`: Indicates whether the dynamic membership processing is on or paused. Possible values are On or Paused. Returned by default.
+      - `[MembershipRule <String>]`: The rule that determines members for this group if the group is a dynamic group (groupTypes contains DynamicMembership). For more information about the syntax of the membership rule, see Membership Rules syntax. Returned by default. Supports $filter (eq, ne, not, ge, le, startsWith).
+      - `[MembershipRuleProcessingState <String>]`: Indicates whether the dynamic membership processing is on or paused. Possible values are On or Paused. Returned by default. Supports $filter (eq, ne, not, in).
       - `[OnPremisesDomainName <String>]`: Contains the on-premises domain FQDN, also called dnsDomainName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect.Returned by default. Read-only.
-      - `[OnPremisesLastSyncDateTime <DateTime?>]`: Indicates the last time at which the group was synced with the on-premises directory.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Read-only. Supports $filter.
+      - `[OnPremisesLastSyncDateTime <DateTime?>]`: Indicates the last time at which the group was synced with the on-premises directory.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Read-only. Supports $filter (eq, ne, not, ge, le, in).
       - `[OnPremisesNetBiosName <String>]`: Contains the on-premises netBios name synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect.Returned by default. Read-only.
-      - `[OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError[]>]`: Errors when using Microsoft synchronization product during provisioning. Returned by default.
+      - `[OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError[]>]`: Errors when using Microsoft synchronization product during provisioning. Returned by default. Supports $filter (eq, not).
         - `[Category <String>]`: Category of the provisioning error. Note: Currently, there is only one possible value. Possible value: PropertyConflict - indicates a property value is not unique. Other objects contain the same value for the property.
         - `[OccurredDateTime <DateTime?>]`: The date and time at which the error occurred.
         - `[PropertyCausingError <String>]`: Name of the directory property causing the error. Current possible values: UserPrincipalName or ProxyAddress
         - `[Value <String>]`: Value of the property causing the error.
-      - `[OnPremisesSamAccountName <String>]`: Contains the on-premises SAM account name synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect.Returned by default. Read-only.
-      - `[OnPremisesSecurityIdentifier <String>]`: Contains the on-premises security identifier (SID) for the group that was synchronized from on-premises to the cloud. Returned by default. Read-only.
-      - `[OnPremisesSyncEnabled <Boolean?>]`: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default). Returned by default. Read-only. Supports $filter.
+      - `[OnPremisesSamAccountName <String>]`: Contains the on-premises SAM account name synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect.Returned by default. Supports $filter (eq, ne, not, ge, le, in, startsWith). Read-only.
+      - `[OnPremisesSecurityIdentifier <String>]`: Contains the on-premises security identifier (SID) for the group that was synchronized from on-premises to the cloud. Returned by default. Supports $filter on null values. Read-only.
+      - `[OnPremisesSyncEnabled <Boolean?>]`: true if this group is synced from an on-premises directory; false if this group was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default). Returned by default. Read-only. Supports $filter (eq, ne, not, in, and eq on null values).
       - `[Onenote <IMicrosoftGraphOnenote1>]`: onenote
-      - `[Owners <IMicrosoftGraphDirectoryObject[]>]`: The owners of the group. The owners are a set of non-admin users who are allowed to modify this object. HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only. Nullable.
-      - `[PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>]`: The permissions that have been granted for a group to a specific application.
+      - `[Owners <IMicrosoftGraphDirectoryObject[]>]`: The owners of the group who can be users or service principals. Nullable. If this property is not specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner. Supports $expand including nested $select. For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
+      - `[PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>]`: The permissions that have been granted for a group to a specific application. Supports $expand.
         - `[DeletedDateTime <DateTime?>]`: 
         - `[Id <String>]`: Read-only.
         - `[ClientAppId <String>]`: ID of the service principal of the Azure AD app that has been granted access. Read-only.
@@ -11493,15 +12468,15 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
               - `[Category6 <String>]`: The label associated with Category 6
             - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Owner <String>]`: ID of the Group that owns the plan. A valid group must exist before this field can be set. After it is set, this property can't be updated.
+          - `[Owner <String>]`: ID of the Group that owns the plan. A valid group must exist before this field can be set. After it is set, this property can’t be updated.
           - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Collection of tasks in the plan. Read-only. Nullable.
           - `[Title <String>]`: Required. Title of the plan.
-      - `[PreferredDataLocation <String>]`: The preferred data location for the group. For more information, see  OneDrive Online Multi-Geo. Returned by default.
-      - `[PreferredLanguage <String>]`: The preferred language for a Microsoft 365 group. Should follow ISO 639-1 Code; for example 'en-US'. Returned by default.
-      - `[ProxyAddresses <String[]>]`: Email addresses for the group that direct to the same group mailbox. For example: ['SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com']. The any operator is required for filter expressions on multi-valued properties. Returned by default. Read-only. Not nullable. Supports $filter.
+      - `[PreferredDataLocation <String>]`: The preferred data location for the Microsoft 365 group. By default, the group inherits the group creator's preferred data location. To set this property, the calling user must be assigned one of the following Azure AD roles:  Global Administrator  User Account Administrator Directory Writer  Exchange Administrator  SharePoint Administrator  For more information about this property, see  OneDrive Online Multi-Geo. Nullable. Returned by default.
+      - `[PreferredLanguage <String>]`: The preferred language for a Microsoft 365 group. Should follow ISO 639-1 Code; for example en-US. Returned by default. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+      - `[ProxyAddresses <String[]>]`: Email addresses for the group that direct to the same group mailbox. For example: ['SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com']. The any operator is required for filter expressions on multi-valued properties. Returned by default. Read-only. Not nullable. Supports $filter (eq, not, ge, le, startsWith).
       - `[RejectedSenders <IMicrosoftGraphDirectoryObject[]>]`: The list of users or groups that are not allowed to create posts or calendar events in this group. Nullable
-      - `[RenewedDateTime <DateTime?>]`: Timestamp of when the group was last renewed. This cannot be modified directly and is only updated via the renew service action. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Read-only.
-      - `[SecurityEnabled <Boolean?>]`: Specifies whether the group is a security group. Returned by default. Supports $filter.
+      - `[RenewedDateTime <DateTime?>]`: Timestamp of when the group was last renewed. This cannot be modified directly and is only updated via the renew service action. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default. Supports $filter (eq, ne, not, ge, le, in). Read-only.
+      - `[SecurityEnabled <Boolean?>]`: Specifies whether the group is a security group. Required.Returned by default. Supports $filter (eq, ne, not, in).
       - `[SecurityIdentifier <String>]`: Security identifier of the group, used in Windows scenarios. Returned by default.
       - `[Settings <IMicrosoftGraphGroupSetting[]>]`: Settings that can govern this group's behavior, like whether members can invite guest users to the group. Nullable.
         - `[Id <String>]`: Read-only.
@@ -11517,7 +12492,7 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
       - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: 
       - `[TransitiveMembers <IMicrosoftGraphDirectoryObject[]>]`: 
       - `[UnseenCount <Int32?>]`: Count of conversations that have received new posts since the signed-in user last visited the group. This property is the same as unseenConversationsCount.Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
-      - `[Visibility <String>]`: Specifies the group join policy and group content visibility for groups. Possible values are: Private, Public, or Hiddenmembership. Hiddenmembership can be set only for Microsoft 365 groups, when the groups are created. It can't be updated later. Other values of visibility can be updated after group creation. If visibility value is not specified during group creation on Microsoft Graph, a security group is created as Private by default and Microsoft 365 group is Public. See group visibility options to learn more. Returned by default.
+      - `[Visibility <String>]`: Specifies the group join policy and group content visibility for groups. Possible values are: Private, Public, or Hiddenmembership. Hiddenmembership can be set only for Microsoft 365 groups, when the groups are created. It can't be updated later. Other values of visibility can be updated after group creation. If visibility value is not specified during group creation on Microsoft Graph, a security group is created as Private by default and Microsoft 365 group is Public.  Groups assignable to roles are always Private. See group visibility options to learn more. Returned by default. Nullable.
     - `[GuestSettings <IMicrosoftGraphTeamGuestSettings>]`: teamGuestSettings
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AllowCreateUpdateChannels <Boolean?>]`: If set to true, guests can add and update channels.
@@ -11706,12 +12681,13 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
       - `[Id <String>]`: Read-only.
     - `[Visibility <String>]`: teamVisibilityType
     - `[WebUrl <String>]`: A hyperlink that will go to the team in the Microsoft Teams client. This is the URL that you get when you right-click a team in the Microsoft Teams client and select Get link to team. This URL should be treated as an opaque blob, and not parsed.
-  - `[LastPasswordChangeDateTime <DateTime?>]`: The time when this Azure AD user last changed their password. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Returned only on $select.
+  - `[LastPasswordChangeDateTime <DateTime?>]`: The time when this Azure AD user last changed their password or when their password was created, , whichever date the latest action was performed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Returned only on $select.
   - `[LegalAgeGroupClassification <String>]`: Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated based on ageGroup and consentProvidedForMinor properties. Allowed values: null, minorWithOutParentalConsent, minorWithParentalConsent, minorNoParentalConsentRequired, notAdult and adult. Refer to the legal age group property definitions for further information. Returned only on $select.
   - `[LicenseAssignmentStates <IMicrosoftGraphLicenseAssignmentState[]>]`: State of license assignments for this user. Read-only. Returned only on $select.
     - `[AssignedByGroup <String>]`: The id of the group that assigns this license. If the assignment is a direct-assigned license, this field will be Null. Read-Only.
     - `[DisabledPlans <String[]>]`: The service plans that are disabled in this assignment. Read-Only.
     - `[Error <String>]`: License assignment failure error. If the license is assigned successfully, this field will be Null. Read-Only. Possible values: CountViolation, MutuallyExclusiveViolation, DependencyViolation, ProhibitedInUsageLocationViolation, UniquenessViolation, and Others. For more information on how to identify and resolve license assignment errors see here.
+    - `[LastUpdatedDateTime <DateTime?>]`: The timestamp when the state of the license assignment was last updated.
     - `[SkuId <String>]`: The unique identifier for the SKU. Read-Only.
     - `[State <String>]`: Indicate the current state of this assignment. Read-Only. Possible values: Active, ActiveWithError, Disabled and Error.
   - `[LicenseDetails <IMicrosoftGraphLicenseDetails[]>]`: A collection of this user's license details. Read-only.
@@ -11723,7 +12699,7 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
       - `[ServicePlanName <String>]`: The name of the service plan.
     - `[SkuId <String>]`: Unique identifier (GUID) for the service SKU. Equal to the skuId property on the related SubscribedSku object. Read-only
     - `[SkuPartNumber <String>]`: Unique SKU display name. Equal to the skuPartNumber on the related SubscribedSku object; for example: 'AAD_Premium'. Read-only
-  - `[Mail <String>]`: The SMTP address for the user, for example, admin@contoso.com. Changes to this property will also update the user's proxyAddresses collection to include the value as an SMTP address. While this property can contain accent characters, using them can cause access issues with other Microsoft applications for the user. Supports $filter (eq, ne, NOT, ge, le, in, startsWith, endsWith).
+  - `[Mail <String>]`: The SMTP address for the user, for example, admin@contoso.com. Changes to this property will also update the user's proxyAddresses collection to include the value as an SMTP address. For Azure AD B2C accounts, this property can be updated up to only ten times with unique SMTP addresses. This property cannot contain accent characters.  Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith, and eq on null values).
   - `[MailFolders <IMicrosoftGraphMailFolder1[]>]`: The user's mail folders. Read-only. Nullable.
     - `[Id <String>]`: Read-only.
     - `[ChildFolderCount <Int32?>]`: The number of immediate child mailFolders in the current mailFolder.
@@ -11810,31 +12786,31 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
       - `[HasAttachments <Boolean?>]`: Indicates whether the message has attachments. This property doesn't include inline attachments, so if a message contains only inline attachments, this property is false. To verify the existence of inline attachments, parse the body property to look for a src attribute, such as <IMG src='cid:image001.jpg@01D26CD8.6C05F070'>.
       - `[Importance <String>]`: importance
       - `[InferenceClassification <String>]`: inferenceClassificationType
-      - `[InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]`: A collection of message headers defined by RFC5322. The set includes message headers indicating the network path taken by a message from the sender to the recipient. It can also contain custom message headers that hold app data for the message.  Returned only on applying a $select query option. Read-only.
+      - `[InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]`: 
         - `[Name <String>]`: Represents the key in a key-value pair.
         - `[Value <String>]`: The value in a key-value pair.
-      - `[InternetMessageId <String>]`: The message ID in the format specified by RFC2822.
-      - `[IsDeliveryReceiptRequested <Boolean?>]`: Indicates whether a read receipt is requested for the message.
-      - `[IsDraft <Boolean?>]`: Indicates whether the message is a draft. A message is a draft if it hasn't been sent yet.
-      - `[IsRead <Boolean?>]`: Indicates whether the message has been read.
-      - `[IsReadReceiptRequested <Boolean?>]`: Indicates whether a read receipt is requested for the message.
+      - `[InternetMessageId <String>]`: 
+      - `[IsDeliveryReceiptRequested <Boolean?>]`: 
+      - `[IsDraft <Boolean?>]`: 
+      - `[IsRead <Boolean?>]`: 
+      - `[IsReadReceiptRequested <Boolean?>]`: 
       - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the message. Nullable.
-      - `[ParentFolderId <String>]`: The unique identifier for the message's parent mailFolder.
-      - `[ReceivedDateTime <DateTime?>]`: The date and time the message was received.  The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-      - `[ReplyTo <IMicrosoftGraphRecipient[]>]`: The email addresses to use when replying.
+      - `[ParentFolderId <String>]`: 
+      - `[ReceivedDateTime <DateTime?>]`: 
+      - `[ReplyTo <IMicrosoftGraphRecipient[]>]`: 
       - `[Sender <IMicrosoftGraphRecipient>]`: recipient
-      - `[SentDateTime <DateTime?>]`: The date and time the message was sent.  The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[SentDateTime <DateTime?>]`: 
       - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the message. Nullable.
-      - `[Subject <String>]`: The subject of the message.
-      - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: The To: recipients for the message.
+      - `[Subject <String>]`: 
+      - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: 
       - `[UniqueBody <IMicrosoftGraphItemBody>]`: itemBody
-      - `[WebLink <String>]`: The URL to open the message in Outlook on the web.You can append an ispopout argument to the end of the URL to change how the message is displayed. If ispopout is not present or if it is set to 1, then the message is shown in a popout window. If ispopout is set to 0, then the browser will show the message in the Outlook on the web review pane.The message will open in the browser if you are logged in to your mailbox via Outlook on the web. You will be prompted to login if you are not already logged in with the browser.This URL cannot be accessed from within an iFrame.
+      - `[WebLink <String>]`: 
     - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the mailFolder. Read-only. Nullable.
     - `[ParentFolderId <String>]`: The unique identifier for the mailFolder's parent mailFolder.
     - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the mailFolder. Read-only. Nullable.
     - `[TotalItemCount <Int32?>]`: The number of items in the mailFolder.
     - `[UnreadItemCount <Int32?>]`: The number of items in the mailFolder marked as unread.
-  - `[MailNickname <String>]`: The mail alias for the user. This property must be specified when a user is created. Maximum length is 64 characters. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
+  - `[MailNickname <String>]`: The mail alias for the user. This property must be specified when a user is created. Maximum length is 64 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
   - `[MailboxSettings <IMicrosoftGraphMailboxSettings1>]`: mailboxSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ArchiveFolder <String>]`: Folder ID of an archive folder for the user. Read only.
@@ -11891,14 +12867,14 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
     - `[PlatformVersion <String>]`: Operating System version
     - `[UserId <String>]`: The user Id to who this app registration belongs.
     - `[Version <String>]`: Version of the entity.
-  - `[ManagedDevices <IMicrosoftGraphManagedDevice1[]>]`: The managed devices associated with the user.
+  - `[ManagedDevices <IMicrosoftGraphManagedDevice[]>]`: The managed devices associated with the user.
     - `[Id <String>]`: Read-only.
     - `[ActivationLockBypassCode <String>]`: Code that allows the Activation Lock on a device to be bypassed. This property is read-only.
     - `[AndroidSecurityPatchLevel <String>]`: Android security patch level. This property is read-only.
     - `[AzureAdDeviceId <String>]`: The unique identifier for the Azure Active Directory device. Read only. This property is read-only.
     - `[AzureAdRegistered <Boolean?>]`: Whether the device is Azure Active Directory registered. This property is read-only.
     - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires. This property is read-only.
-    - `[ComplianceState <String>]`: complianceState
+    - `[ComplianceState <String>]`: Compliance state.
     - `[ConfigurationManagerClientEnabledFeatures <IMicrosoftGraphConfigurationManagerClientEnabledFeatures1>]`: configuration Manager client enabled features
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CompliancePolicy <Boolean?>]`: Whether compliance policy is managed by Intune
@@ -11909,10 +12885,10 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
       - `[WindowsUpdateForBusiness <Boolean?>]`: Whether Windows Update for Business is managed by Intune
     - `[DeviceActionResults <IMicrosoftGraphDeviceActionResult[]>]`: List of ComplexType deviceActionResult objects. This property is read-only.
       - `[ActionName <String>]`: Action name
-      - `[ActionState <String>]`: actionState
+      - `[ActionState <String>]`: State of the action on the device
       - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
       - `[StartDateTime <DateTime?>]`: Time the action was initiated
-    - `[DeviceCategory <IMicrosoftGraphDeviceCategory2>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+    - `[DeviceCategory <IMicrosoftGraphDeviceCategory2>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: Read-only.
       - `[Description <String>]`: Optional description for the device category.
@@ -11921,7 +12897,7 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
     - `[DeviceCompliancePolicyStates <IMicrosoftGraphDeviceCompliancePolicyState1[]>]`: Device compliance policy states for this device.
       - `[Id <String>]`: Read-only.
       - `[DisplayName <String>]`: The name of the policy for this policyBase
-      - `[PlatformType <String>]`: 
+      - `[PlatformType <String>]`: Supported platform types for policies.
       - `[SettingCount <Int32?>]`: Count of how many setting a policy holds
       - `[SettingStates <IMicrosoftGraphDeviceCompliancePolicySettingState1[]>]`: 
         - `[CurrentValue <String>]`: Current value of setting on device
@@ -11930,9 +12906,10 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
         - `[InstanceDisplayName <String>]`: Name of setting instance that is being reported.
         - `[Setting <String>]`: The setting that is being reported
         - `[SettingName <String>]`: Localized/user friendly setting name that is being reported
-        - `[Sources <IMicrosoftGraphSettingSource1[]>]`: Contributing policies
+        - `[Sources <IMicrosoftGraphSettingSource[]>]`: Contributing policies
           - `[DisplayName <String>]`: Not yet documented
           - `[Id <String>]`: Not yet documented
+          - `[SourceType <String>]`: settingSourceType
         - `[State <String>]`: complianceStatus
         - `[UserEmail <String>]`: UserEmail
         - `[UserId <String>]`: UserId
@@ -11943,7 +12920,7 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
     - `[DeviceConfigurationStates <IMicrosoftGraphDeviceConfigurationState1[]>]`: Device configuration states for this device.
       - `[Id <String>]`: Read-only.
       - `[DisplayName <String>]`: The name of the policy for this policyBase
-      - `[PlatformType <String>]`: 
+      - `[PlatformType <String>]`: Supported platform types for policies.
       - `[SettingCount <Int32?>]`: Count of how many setting a policy holds
       - `[SettingStates <IMicrosoftGraphDeviceConfigurationSettingState1[]>]`: 
         - `[CurrentValue <String>]`: Current value of setting on device
@@ -11952,7 +12929,7 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
         - `[InstanceDisplayName <String>]`: Name of setting instance that is being reported.
         - `[Setting <String>]`: The setting that is being reported
         - `[SettingName <String>]`: Localized/user friendly setting name that is being reported
-        - `[Sources <IMicrosoftGraphSettingSource1[]>]`: Contributing policies
+        - `[Sources <IMicrosoftGraphSettingSource[]>]`: Contributing policies
         - `[State <String>]`: complianceStatus
         - `[UserEmail <String>]`: UserEmail
         - `[UserId <String>]`: UserId
@@ -11960,7 +12937,7 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
         - `[UserPrincipalName <String>]`: UserPrincipalName.
       - `[State <String>]`: complianceStatus
       - `[Version <Int32?>]`: The version of the policy
-    - `[DeviceEnrollmentType <String>]`: 
+    - `[DeviceEnrollmentType <String>]`: Possible ways of adding a mobile device to management.
     - `[DeviceHealthAttestationState <IMicrosoftGraphDeviceHealthAttestationState>]`: deviceHealthAttestationState
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AttestationIdentityKey <String>]`: TWhen an Attestation Identity Key (AIK) is present on a device, it indicates that the device has an endorsement key (EK) certificate.
@@ -11996,15 +12973,15 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
       - `[VirtualSecureMode <String>]`: VSM is a container that protects high value assets from a compromised kernel
       - `[WindowsPe <String>]`: Operating system running with limited services that is used to prepare a computer for Windows
     - `[DeviceName <String>]`: Name of the device. This property is read-only.
-    - `[DeviceRegistrationState <String>]`: deviceRegistrationState
+    - `[DeviceRegistrationState <String>]`: Device registration status.
     - `[EasActivated <Boolean?>]`: Whether the device is Exchange ActiveSync activated. This property is read-only.
     - `[EasActivationDateTime <DateTime?>]`: Exchange ActivationSync activation time of the device. This property is read-only.
     - `[EasDeviceId <String>]`: Exchange ActiveSync Id of the device. This property is read-only.
     - `[EmailAddress <String>]`: Email(s) for the user associated with the device. This property is read-only.
     - `[EnrolledDateTime <DateTime?>]`: Enrollment time of the device. This property is read-only.
     - `[EthernetMacAddress <String>]`: Ethernet MAC. This property is read-only.
-    - `[ExchangeAccessState <String>]`: deviceManagementExchangeAccessState
-    - `[ExchangeAccessStateReason <String>]`: deviceManagementExchangeAccessStateReason
+    - `[ExchangeAccessState <String>]`: Device Exchange Access State.
+    - `[ExchangeAccessStateReason <String>]`: Device Exchange Access State Reason.
     - `[ExchangeLastSuccessfulSyncDateTime <DateTime?>]`: Last time the device contacted Exchange. This property is read-only.
     - `[FreeStorageSpaceInBytes <Int64?>]`: Free Storage in Bytes. This property is read-only.
     - `[Iccid <String>]`: Integrated Circuit Card Identifier, it is A SIM card's unique identification number. This property is read-only.
@@ -12014,15 +12991,15 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
     - `[JailBroken <String>]`: whether the device is jail broken or rooted. This property is read-only.
     - `[LastSyncDateTime <DateTime?>]`: The date and time that the device last completed a successful sync with Intune. This property is read-only.
     - `[ManagedDeviceName <String>]`: Automatically generated name to identify a device. Can be overwritten to a user friendly name.
-    - `[ManagedDeviceOwnerType <String>]`: managedDeviceOwnerType
-    - `[ManagementAgent <String>]`: 
+    - `[ManagedDeviceOwnerType <String>]`: Owner type of device.
+    - `[ManagementAgent <String>]`: Management agent type.
     - `[Manufacturer <String>]`: Manufacturer of the device. This property is read-only.
     - `[Meid <String>]`: MEID. This property is read-only.
     - `[Model <String>]`: Model of the device. This property is read-only.
     - `[Notes <String>]`: Notes on the device created by IT Admin
     - `[OSVersion <String>]`: Operating system version of the device. This property is read-only.
     - `[OperatingSystem <String>]`: Operating system of the device. Windows, iOS, etc. This property is read-only.
-    - `[PartnerReportedThreatState <String>]`: managedDevicePartnerReportedHealthState
+    - `[PartnerReportedThreatState <String>]`: Available health states for the Device Health API
     - `[PhoneNumber <String>]`: Phone number of the device. This property is read-only.
     - `[PhysicalMemoryInBytes <Int64?>]`: Total Memory in Bytes. This property is read-only.
     - `[RemoteAssistanceSessionErrorDetails <String>]`: An error string that identifies issues when creating Remote Assistance session objects. This property is read-only.
@@ -12035,10 +13012,10 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
     - `[UserId <String>]`: Unique Identifier for the user associated with the device. This property is read-only.
     - `[UserPrincipalName <String>]`: Device user principal name. This property is read-only.
     - `[WiFiMacAddress <String>]`: Wi-Fi MAC. This property is read-only.
-  - `[Manager <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-  - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: The groups, directory roles and administrative units that the user is a member of. Read-only. Nullable.
+  - `[Manager <IMicrosoftGraphDirectoryObject>]`: directoryObject
+  - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: The groups, directory roles and administrative units that the user is a member of. Read-only. Nullable. Supports $expand.
   - `[Messages <IMicrosoftGraphMessage1[]>]`: The messages in a mailbox or folder. Read-only. Nullable.
-  - `[MobilePhone <String>]`: The primary cellular telephone number for the user. Read-only for users synced from on-premises directory.  Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
+  - `[MobilePhone <String>]`: The primary cellular telephone number for the user. Read-only for users synced from on-premises directory.  Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
   - `[MySite <String>]`: The URL for the user's personal site. Returned only on $select.
   - `[Oauth2PermissionGrants <IMicrosoftGraphOAuth2PermissionGrant1[]>]`: 
     - `[Id <String>]`: Read-only.
@@ -12047,7 +13024,7 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
     - `[PrincipalId <String>]`: The id of the user on behalf of whom the client is authorized to access the resource, when consentType is Principal. If consentType is AllPrincipals this value is null. Required when consentType is Principal.
     - `[ResourceId <String>]`: The id of the resource service principal to which access is authorized. This identifies the API which the client is authorized to attempt to call on behalf of a signed-in user.
     - `[Scope <String>]`: A space-separated list of the claim values for delegated permissions which should be included in access tokens for the resource application (the API). For example, openid User.Read GroupMember.Read.All. Each claim value should match the value field of one of the delegated permissions defined by the API, listed in the publishedPermissionScopes property of the resource service principal.
-  - `[OfficeLocation <String>]`: The office location in the user's place of business. Maximum length is 128 characters. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
+  - `[OfficeLocation <String>]`: The office location in the user's place of business. Maximum length is 128 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
   - `[OnPremisesDistinguishedName <String>]`: Contains the on-premises Active Directory distinguished name or DN. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only.
   - `[OnPremisesDomainName <String>]`: Contains the on-premises domainFQDN, also called dnsDomainName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only.
   - `[OnPremisesExtensionAttributes <IMicrosoftGraphOnPremisesExtensionAttributes>]`: onPremisesExtensionAttributes
@@ -12067,23 +13044,52 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
     - `[ExtensionAttribute7 <String>]`: Seventh customizable extension attribute.
     - `[ExtensionAttribute8 <String>]`: Eighth customizable extension attribute.
     - `[ExtensionAttribute9 <String>]`: Ninth customizable extension attribute.
-  - `[OnPremisesImmutableId <String>]`: This property is used to associate an on-premises Active Directory user account to their Azure AD user object. This property must be specified when creating a new user account in the Graph if you are using a federated domain for the user's userPrincipalName (UPN) property. Note: The $ and _ characters cannot be used when specifying this property. Supports $filter (eq, ne, NOT, ge, le, in).
-  - `[OnPremisesLastSyncDateTime <DateTime?>]`: Indicates the last time at which the object was synced with the on-premises directory; for example: '2013-02-16T03:04:54Z'. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Supports $filter (eq, ne, NOT, ge, le, in).
-  - `[OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError[]>]`: Errors when using Microsoft synchronization product during provisioning.
-  - `[OnPremisesSamAccountName <String>]`: Contains the on-premises sAMAccountName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
-  - `[OnPremisesSecurityIdentifier <String>]`: Contains the on-premises security identifier (SID) for the user that was synchronized from on-premises to the cloud. Read-only. Supports $filter (eq, ne, NOT, in).
-  - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default). Read-only. Supports $filter (eq, ne, NOT, in).
-  - `[OnPremisesUserPrincipalName <String>]`: Contains the on-premises userPrincipalName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
+  - `[OnPremisesImmutableId <String>]`: This property is used to associate an on-premises Active Directory user account to their Azure AD user object. This property must be specified when creating a new user account in the Graph if you are using a federated domain for the user's userPrincipalName (UPN) property. Note: The $ and _ characters cannot be used when specifying this property. Supports $filter (eq, ne, not, ge, le, in).
+  - `[OnPremisesLastSyncDateTime <DateTime?>]`: Indicates the last time at which the object was synced with the on-premises directory; for example: '2013-02-16T03:04:54Z'. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Supports $filter (eq, ne, not, ge, le, in).
+  - `[OnPremisesProvisioningErrors <IMicrosoftGraphOnPremisesProvisioningError[]>]`: Errors when using Microsoft synchronization product during provisioning.  Supports $filter (eq, not, ge, le).
+  - `[OnPremisesSamAccountName <String>]`: Contains the on-premises sAMAccountName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. Supports $filter (eq, ne, not, ge, le, in, startsWith).
+  - `[OnPremisesSecurityIdentifier <String>]`: Contains the on-premises security identifier (SID) for the user that was synchronized from on-premises to the cloud. Read-only. Supports $filter (eq) on null values only.
+  - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; null if this object has never been synced from an on-premises directory (default). Read-only. Supports $filter (eq, ne, not, in, and eq on null values).
+  - `[OnPremisesUserPrincipalName <String>]`: Contains the on-premises userPrincipalName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. Supports $filter (eq, ne, not, ge, le, in, startsWith).
   - `[Onenote <IMicrosoftGraphOnenote1>]`: onenote
   - `[OnlineMeetings <IMicrosoftGraphOnlineMeeting1[]>]`: 
     - `[Id <String>]`: Read-only.
+    - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
+    - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
+    - `[AllowMeetingChat <String>]`: meetingChatMode
+    - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
     - `[AllowedPresenters <String>]`: onlineMeetingPresenters
-    - `[AudioConferencing <IMicrosoftGraphAudioConferencing1>]`: audioConferencing
+    - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]`: The attendance reports of an online meeting. Read-only.
+      - `[Id <String>]`: Read-only.
+      - `[AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>]`: List of attendance records of an attendance report. Read-only.
+        - `[Id <String>]`: Read-only.
+        - `[AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]`: List of time periods between joining and leaving a meeting.
+          - `[DurationInSeconds <Int32?>]`: Duration of the meeting interval in seconds; that is, the difference between joinDateTime and leaveDateTime.
+          - `[JoinDateTime <DateTime?>]`: The time the attendee joined in UTC.
+          - `[LeaveDateTime <DateTime?>]`: The time the attendee left in UTC.
+        - `[EmailAddress <String>]`: Email address of the user associated with this atttendance record.
+        - `[Identity <IMicrosoftGraphIdentity>]`: identity
+        - `[Role <String>]`: Role of the attendee. Possible values are: None, Attendee, Presenter, and Organizer.
+        - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.
+      - `[MeetingEndDateTime <DateTime?>]`: UTC time when the meeting ended. Read-only.
+      - `[MeetingStartDateTime <DateTime?>]`: UTC time when the meeting started. Read-only.
+      - `[TotalParticipantCount <Int32?>]`: Total number of participants. Read-only.
+    - `[AttendeeReport <Byte[]>]`: The content stream of the attendee report of a Teams live event. Read-only.
+    - `[AudioConferencing <IMicrosoftGraphAudioConferencing>]`: audioConferencing
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ConferenceId <String>]`: The conference id of the online meeting.
       - `[DialinUrl <String>]`: A URL to the externally-accessible web page that contains dial-in information.
-      - `[TollFreeNumber <String>]`: The toll-free number that connects to the Audio Conference Provider.
-      - `[TollNumber <String>]`: The toll number that connects to the Audio Conference Provider.
+      - `[TollFreeNumber <String>]`: 
+      - `[TollFreeNumbers <String[]>]`: List of toll-free numbers that are displayed in the meeting invite.
+      - `[TollNumber <String>]`: 
+      - `[TollNumbers <String[]>]`: List of toll numbers that are displayed in the meeting invite.
+    - `[BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings1>]`: broadcastMeetingSettings
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[AllowedAudience <String>]`: broadcastMeetingAudience
+      - `[IsAttendeeReportEnabled <Boolean?>]`: Indicates whether attendee report is enabled for this Teams live event. Default value is false.
+      - `[IsQuestionAndAnswerEnabled <Boolean?>]`: Indicates whether Q&A is enabled for this Teams live event. Default value is false.
+      - `[IsRecordingEnabled <Boolean?>]`: Indicates whether recording is enabled for this Teams live event. Default value is false.
+      - `[IsVideoOnDemandEnabled <Boolean?>]`: Indicates whether video on demand is enabled for this Teams live event. Default value is false.
     - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channel.
@@ -12092,6 +13098,7 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
     - `[CreationDateTime <DateTime?>]`: The meeting creation time in UTC. Read-only.
     - `[EndDateTime <DateTime?>]`: The meeting end time in UTC.
     - `[ExternalId <String>]`: The external ID. A custom ID. Optional.
+    - `[IsBroadcast <Boolean?>]`: Indicates whether this is a Teams live event.
     - `[IsEntryExitAnnounced <Boolean?>]`: Indicates whether to announce when callers join or leave.
     - `[JoinInformation <IMicrosoftGraphItemBody>]`: itemBody
     - `[JoinWebUrl <String>]`: The join URL of the online meeting. Read-only.
@@ -12101,15 +13108,16 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
       - `[Scope <String>]`: lobbyBypassScope
     - `[Participants <IMicrosoftGraphMeetingParticipants1>]`: meetingParticipants
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Attendees <IMicrosoftGraphMeetingParticipantInfo1[]>]`: Information of the meeting attendees.
+      - `[Attendees <IMicrosoftGraphMeetingParticipantInfo[]>]`: Information of the meeting attendees.
         - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[Role <String>]`: 
+        - `[Role <String>]`: onlineMeetingRole
         - `[Upn <String>]`: User principal name of the participant.
-      - `[Organizer <IMicrosoftGraphMeetingParticipantInfo1>]`: meetingParticipantInfo
+      - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
+    - `[RecordAutomatically <Boolean?>]`: Indicates whether to record the meeting automatically.
     - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
     - `[Subject <String>]`: The subject of the online meeting.
     - `[VideoTeleconferenceId <String>]`: The video teleconferencing ID. Read-only.
-  - `[OtherMails <String[]>]`: A list of additional email addresses for the user; for example: ['bob@contoso.com', 'Robert@fabrikam.com'].NOTE: While this property can contain accent characters, they can cause access issues to first-party applications for the user.Supports $filter (eq, NOT, ge, le, in, startsWith).
+  - `[OtherMails <String[]>]`: A list of additional email addresses for the user; for example: ['bob@contoso.com', 'Robert@fabrikam.com'].NOTE: This property cannot contain accent characters.Supports $filter (eq, not, ge, le, in, startsWith).
   - `[Outlook <IMicrosoftGraphOutlookUser1>]`: outlookUser
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: Read-only.
@@ -12117,14 +13125,14 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
       - `[Id <String>]`: Read-only.
       - `[Color <String>]`: categoryColor
       - `[DisplayName <String>]`: A unique name that identifies a category in the user's mailbox. After a category is created, the name cannot be changed. Read-only.
-  - `[OwnedDevices <IMicrosoftGraphDirectoryObject[]>]`: Devices that are owned by the user. Read-only. Nullable.
-  - `[OwnedObjects <IMicrosoftGraphDirectoryObject[]>]`: Directory objects that are owned by the user. Read-only. Nullable.
-  - `[PasswordPolicies <String>]`: Specifies password policies for the user. This value is an enumeration with one possible value being DisableStrongPassword, which allows weaker passwords than the default policy to be specified. DisablePasswordExpiration can also be specified. The two may be specified together; for example: DisablePasswordExpiration, DisableStrongPassword.Supports $filter (eq, ne, NOT).
+  - `[OwnedDevices <IMicrosoftGraphDirectoryObject[]>]`: Devices that are owned by the user. Read-only. Nullable. Supports $expand.
+  - `[OwnedObjects <IMicrosoftGraphDirectoryObject[]>]`: Directory objects that are owned by the user. Read-only. Nullable. Supports $expand.
+  - `[PasswordPolicies <String>]`: Specifies password policies for the user. This value is an enumeration with one possible value being DisableStrongPassword, which allows weaker passwords than the default policy to be specified. DisablePasswordExpiration can also be specified. The two may be specified together; for example: DisablePasswordExpiration, DisableStrongPassword. For more information on the default password policies, see Azure AD pasword policies. Supports $filter (ne, not, and eq on null values).
   - `[PasswordProfile <IMicrosoftGraphPasswordProfile>]`: passwordProfile
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change her password on the next login; otherwise false. If not set, default is false. NOTE:  For Azure B2C tenants, set to false and instead use custom policies and user flows to force password reset at first sign in. See Force password reset at first logon.
     - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password. The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multi-factor authentication before password change. After a password change, this property will be automatically reset to false. If not set, default is false.
-    - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user's passwordPolicies property. By default, a strong password is required.
+    - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user’s passwordPolicies property. By default, a strong password is required.
   - `[PastProjects <String[]>]`: A list for the user to enumerate their past projects. Returned only on $select.
   - `[People <IMicrosoftGraphPerson1[]>]`: Read-only. The most relevant people to the user. The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships. A person is an aggregation of information from across mail, contacts and social networks.
     - `[Id <String>]`: Read-only.
@@ -12148,7 +13156,7 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
     - `[ScoredEmailAddresses <IMicrosoftGraphScoredEmailAddress[]>]`: The person's email addresses.
       - `[Address <String>]`: The email address.
       - `[ItemId <String>]`: 
-      - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user's communication and collaboration patterns and business relationships.
+      - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user’s communication and collaboration patterns and business relationships.
       - `[SelectionLikelihood <String>]`: selectionLikelihoodInfo
     - `[Surname <String>]`: The person's surname.
     - `[UserPrincipalName <String>]`: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
@@ -12164,20 +13172,20 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
     - `[Id <String>]`: Read-only.
     - `[Plans <IMicrosoftGraphPlannerPlan1[]>]`: Read-only. Nullable. Returns the plannerTasks assigned to the user.
     - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Read-only. Nullable. Returns the plannerTasks assigned to the user.
-  - `[PostalCode <String>]`: The postal code for the user's postal address. The postal code is specific to the user's country/region. In the United States of America, this attribute contains the ZIP code. Maximum length is 40 characters. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
-  - `[PreferredLanguage <String>]`: The preferred language for the user. Should follow ISO 639-1 Code; for example en-US. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
+  - `[PostalCode <String>]`: The postal code for the user's postal address. The postal code is specific to the user's country/region. In the United States of America, this attribute contains the ZIP code. Maximum length is 40 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+  - `[PreferredLanguage <String>]`: The preferred language for the user. Should follow ISO 639-1 Code; for example en-US. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
   - `[PreferredName <String>]`: The preferred name for the user. Returned only on $select.
   - `[Presence <IMicrosoftGraphPresence1>]`: presence
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: Read-only.
     - `[Activity <String>]`: The supplemental information to a user's availability. Possible values are Available, Away, BeRightBack, Busy, DoNotDisturb, InACall, InAConferenceCall, Inactive,InAMeeting, Offline, OffWork,OutOfOffice, PresenceUnknown,Presenting, UrgentInterruptionsOnly.
     - `[Availability <String>]`: The base presence information for a user. Possible values are Available, AvailableIdle,  Away, BeRightBack, Busy, BusyIdle, DoNotDisturb, Offline, PresenceUnknown
-  - `[ProvisionedPlans <IMicrosoftGraphProvisionedPlan[]>]`: The plans that are provisioned for the user. Read-only. Not nullable.
+  - `[ProvisionedPlans <IMicrosoftGraphProvisionedPlan[]>]`: The plans that are provisioned for the user. Read-only. Not nullable. Supports $filter (eq, not, ge, le).
     - `[CapabilityStatus <String>]`: For example, 'Enabled'.
     - `[ProvisioningStatus <String>]`: For example, 'Success'.
     - `[Service <String>]`: The name of the service; for example, 'AccessControlS2S'
-  - `[ProxyAddresses <String[]>]`: For example: ['SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com']. Read-only, Not nullable. Supports $filter (eq, NOT, ge, le, startsWith).
-  - `[RegisteredDevices <IMicrosoftGraphDirectoryObject[]>]`: Devices that are registered for the user. Read-only. Nullable.
+  - `[ProxyAddresses <String[]>]`: For example: ['SMTP: bob@contoso.com', 'smtp: bob@sales.contoso.com']. Changes to the mail property will also update this collection to include the value as an SMTP address. For more information, see mail and proxyAddresses properties. The proxy address prefixed with SMTP (capitalized) is the primary proxy address while those prefixed with smtp are the secondary proxy addresses. For Azure AD B2C accounts, this property has a limit of ten unique addresses. Read-only in Microsoft Graph; you can update this property only through the Microsoft 365 admin center. Not nullable. Supports $filter (eq, not, ge, le, startsWith).
+  - `[RegisteredDevices <IMicrosoftGraphDirectoryObject[]>]`: Devices that are registered for the user. Read-only. Nullable. Supports $expand.
   - `[Responsibilities <String[]>]`: A list for the user to enumerate their responsibilities. Returned only on $select.
   - `[Schools <String[]>]`: A list for the user to enumerate the schools they have attended. Returned only on $select.
   - `[ScopedRoleMemberOf <IMicrosoftGraphScopedRoleMembership[]>]`: The scoped-role administrative unit memberships for this user. Read-only. Nullable.
@@ -12202,12 +13210,12 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
           - `[EndTime <String>]`: End time for the time range.
           - `[StartTime <String>]`: Start time for the time range.
         - `[TimeZone <String>]`: Specifies the time zone for the indicated time.
-  - `[ShowInAddressList <Boolean?>]`: true if the Outlook global address list should contain this user, otherwise false. If not set, this will be treated as true. For users invited through the invitation manager, this property will be set to false. Supports $filter (eq, ne, NOT, in).
+  - `[ShowInAddressList <Boolean?>]`: true if the Outlook global address list should contain this user, otherwise false. If not set, this will be treated as true. For users invited through the invitation manager, this property will be set to false. Supports $filter (eq, ne, not, in).
   - `[SignInSessionsValidFromDateTime <DateTime?>]`: Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. Read-only. Use revokeSignInSessions to reset.
   - `[Skills <String[]>]`: A list for the user to enumerate their skills. Returned only on $select.
-  - `[State <String>]`: The state or province in the user's address. Maximum length is 128 characters. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
-  - `[StreetAddress <String>]`: The street address of the user's place of business. Maximum length is 1024 characters. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
-  - `[Surname <String>]`: The user's surname (family name or last name). Maximum length is 64 characters. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
+  - `[State <String>]`: The state or province in the user's address. Maximum length is 128 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+  - `[StreetAddress <String>]`: The street address of the user's place of business. Maximum length is 1024 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+  - `[Surname <String>]`: The user's surname (family name or last name). Maximum length is 64 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
   - `[Teamwork <IMicrosoftGraphUserTeamwork1>]`: userTeamwork
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: Read-only.
@@ -12248,9 +13256,9 @@ LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: Represents an Azure Active Directory 
         - `[Title <String>]`: A brief description of the task.
       - `[WellknownListName <String>]`: wellknownListName
   - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: 
-  - `[UsageLocation <String>]`: A two letter country code (ISO standard 3166). Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries.  Examples include: US, JP, and GB. Not nullable. Supports $filter (eq, ne, NOT, ge, le, in, startsWith).
-  - `[UserPrincipalName <String>]`: The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant's collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: While this property can contain accent characters, they can cause access issues to first-party applications for the user. Supports $filter (eq, ne, NOT, ge, le, in, startsWith, endsWith) and $orderBy.
-  - `[UserType <String>]`: A string value that can be used to classify user types in your directory, such as Member and Guest. Supports $filter (eq, ne, NOT, in, startsWith, endsWith).
+  - `[UsageLocation <String>]`: A two letter country code (ISO standard 3166). Required for users that will be assigned licenses due to legal requirement to check for availability of services in countries.  Examples include: US, JP, and GB. Not nullable. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
+  - `[UserPrincipalName <String>]`: The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant's collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property cannot contain accent characters. Only the following characters are allowed A - Z, a - z, 0 - 9, ' . - _ ! # ^ ~. For the complete list of allowed characters, see username policies. Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderBy.
+  - `[UserType <String>]`: A String value that can be used to classify user types in your directory, such as Member and Guest. Supports $filter (eq, ne, not, in, and eq on null values). NOTE: For more information about the permissions for member and guest users, see What are the default user permissions in Azure Active Directory?
 
 LIST <IMicrosoftGraphListInfo>: listInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -12290,19 +13298,19 @@ SHAREPOINTIDS <IMicrosoftGraphSharepointIds>: sharepointIds
 SUBSCRIPTIONS <IMicrosoftGraphSubscription1[]>: The set of subscriptions on the list.
   - `[Id <String>]`: Read-only.
   - `[ApplicationId <String>]`: Identifier of the application used to create the subscription. Read-only.
-  - `[ChangeType <String>]`: Indicates the type of change in the subscribed resource that will raise a change notification. The supported values are: created, updated, deleted. Multiple values can be combined using a comma-separated list. Required. Note: Drive root item and list change notifications support only the updated changeType. User and group change notifications support updated and deleted changeType.
-  - `[ClientState <String>]`: Specifies the value of the clientState property sent by the service in each change notification. The maximum length is 255 characters. The client can check that the change notification came from the service by comparing the value of the clientState property sent with the subscription with the value of the clientState property received with each change notification. Optional.
+  - `[ChangeType <String>]`: Required. Indicates the type of change in the subscribed resource that will raise a change notification. The supported values are: created, updated, deleted. Multiple values can be combined using a comma-separated list. Note:  Drive root item and list change notifications support only the updated changeType. User and group change notifications support updated and deleted changeType.
+  - `[ClientState <String>]`: Optional. Specifies the value of the clientState property sent by the service in each change notification. The maximum length is 255 characters. The client can check that the change notification came from the service by comparing the value of the clientState property sent with the subscription with the value of the clientState property received with each change notification.
   - `[CreatorId <String>]`: Identifier of the user or service principal that created the subscription. If the app used delegated permissions to create the subscription, this field contains the ID of the signed-in user the app called on behalf of. If the app used application permissions, this field contains the ID of the service principal corresponding to the app. Read-only.
-  - `[EncryptionCertificate <String>]`: A base64-encoded representation of a certificate with a public key used to encrypt resource data in change notifications. Optional. Required when includeResourceData is true.
-  - `[EncryptionCertificateId <String>]`: A custom app-provided identifier to help identify the certificate needed to decrypt resource data. Optional. Required when includeResourceData is true.
-  - `[ExpirationDateTime <DateTime?>]`: Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to.  See the table below for maximum supported subscription length of time. Required.
-  - `[IncludeResourceData <Boolean?>]`: When set to true, change notifications include resource data (such as content of a chat message). Optional.
+  - `[EncryptionCertificate <String>]`: A base64-encoded representation of a certificate with a public key used to encrypt resource data in change notifications. Optional but required when includeResourceData is true.
+  - `[EncryptionCertificateId <String>]`: Optional. A custom app-provided identifier to help identify the certificate needed to decrypt resource data. Required when includeResourceData is true.
+  - `[ExpirationDateTime <DateTime?>]`: Required. Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to. For the maximum supported subscription length of time, see the table below.
+  - `[IncludeResourceData <Boolean?>]`: Optional. When set to true, change notifications include resource data (such as content of a chat message).
   - `[LatestSupportedTlsVersion <String>]`: Specifies the latest version of Transport Layer Security (TLS) that the notification endpoint, specified by notificationUrl, supports. The possible values are: v1_0, v1_1, v1_2, v1_3. For subscribers whose notification endpoint supports a version lower than the currently recommended version (TLS 1.2), specifying this property by a set timeline allows them to temporarily use their deprecated version of TLS before completing their upgrade to TLS 1.2. For these subscribers, not setting this property per the timeline would result in subscription operations failing. For subscribers whose notification endpoint already supports TLS 1.2, setting this property is optional. In such cases, Microsoft Graph defaults the property to v1_2.
-  - `[LifecycleNotificationUrl <String>]`: The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved and missed notifications. This URL must make use of the HTTPS protocol. Optional. Read more about how Outlook resources use lifecycle notifications.
-  - `[NotificationQueryOptions <String>]`: OData Query Options for specifying value for the targeting resource. Clients receive notifications when resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property eg  when the print job is completed, when a print job resource isFetchable property value becomes true etc.
-  - `[NotificationUrl <String>]`: The URL of the endpoint that receives the change notifications. This URL must make use of the HTTPS protocol. Required.
-  - `[Resource <String>]`: Specifies the resource that will be monitored for changes. Do not include the base URL (https://graph.microsoft.com/beta/). See the possible resource path values for each supported resource. Required.
+  - `[LifecycleNotificationUrl <String>]`: Optional. The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved and missed notifications. This URL must make use of the HTTPS protocol.
+  - `[NotificationQueryOptions <String>]`: OData query options for specifying the value for the targeting resource. Clients receive notifications when the resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property. For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc.
+  - `[NotificationUrl <String>]`: Required. The URL of the endpoint that receives the change notifications. This URL must make use of the HTTPS protocol.
+  - `[NotificationUrlAppId <String>]`: 
+  - `[Resource <String>]`: Required. Specifies the resource that will be monitored for changes. Do not include the base URL (https://graph.microsoft.com/beta/). See the possible resource path values for each supported resource.
 
 ## RELATED LINKS
 
-## RELATED LINKS

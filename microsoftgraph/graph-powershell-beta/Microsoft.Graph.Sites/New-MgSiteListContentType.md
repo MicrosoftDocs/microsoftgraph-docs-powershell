@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Sites-help.xml
+external help file:
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/new-mgsitelistcontenttype
 schema: 2.0.0
@@ -22,13 +22,19 @@ New-MgSiteListContentType -ListId <String> -SiteId <String> [-AdditionalProperti
  [-DocumentTemplate <IMicrosoftGraphDocumentSetContent>] [-Group <String>] [-Hidden] [-Id <String>]
  [-InheritedFrom <IMicrosoftGraphItemReference>] [-IsBuiltIn] [-Name <String>]
  [-Order <IMicrosoftGraphContentTypeOrder>] [-ParentId <String>] [-PropagateChanges] [-ReadOnly] [-Sealed]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create1
 ```
 New-MgSiteListContentType -ListId <String> -SiteId <String> -BodyParameter <IMicrosoftGraphContentType>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity1
+```
+New-MgSiteListContentType -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphContentType> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded1
@@ -41,13 +47,7 @@ New-MgSiteListContentType -InputObject <ISitesIdentity> [-AdditionalProperties <
  [-DocumentTemplate <IMicrosoftGraphDocumentSetContent>] [-Group <String>] [-Hidden] [-Id <String>]
  [-InheritedFrom <IMicrosoftGraphItemReference>] [-IsBuiltIn] [-Name <String>]
  [-Order <IMicrosoftGraphContentTypeOrder>] [-ParentId <String>] [-PropagateChanges] [-ReadOnly] [-Sealed]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity1
-```
-New-MgSiteListContentType -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphContentType> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -61,7 +61,7 @@ The collection of content types present in this list.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -78,7 +78,7 @@ This will contain all hubsites where this content type is queued to be enforced 
 Enforcing a content type means that the content type will be applied to the lists in the enforced sites.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -91,10 +91,10 @@ Accept wildcard characters: False
 
 ### -Base
 contentType
-To construct, see NOTES section for BASE properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BASE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphContentType
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentType
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -107,10 +107,10 @@ Accept wildcard characters: False
 
 ### -BaseTypes
 The collection of content types that are ancestors of this content type.
-To construct, see NOTES section for BASETYPES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BASETYPES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphContentType[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentType[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -123,10 +123,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 contentType
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphContentType
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentType
 Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
@@ -139,10 +139,10 @@ Accept wildcard characters: False
 
 ### -ColumnLinks
 The collection of columns that are required by this content type
-To construct, see NOTES section for COLUMNLINKS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for COLUMNLINKS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphColumnLink[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnLink[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -155,10 +155,10 @@ Accept wildcard characters: False
 
 ### -ColumnPositions
 Column order information in a content type.
-To construct, see NOTES section for COLUMNPOSITIONS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for COLUMNPOSITIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphColumnDefinition[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnDefinition[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -171,10 +171,10 @@ Accept wildcard characters: False
 
 ### -Columns
 The collection of column definitions for this contentType.
-To construct, see NOTES section for COLUMNS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for COLUMNS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphColumnDefinition[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnDefinition[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 The descriptive text for the item.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -202,10 +202,10 @@ Accept wildcard characters: False
 
 ### -DocumentSet
 documentSet
-To construct, see NOTES section for DOCUMENTSET properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DOCUMENTSET properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDocumentSet
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDocumentSet
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -218,10 +218,10 @@ Accept wildcard characters: False
 
 ### -DocumentTemplate
 documentSetContent
-To construct, see NOTES section for DOCUMENTTEMPLATE properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DOCUMENTTEMPLATE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDocumentSetContent
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDocumentSetContent
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -237,7 +237,7 @@ The name of the group this content type belongs to.
 Helps organize related content types.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -252,7 +252,7 @@ Accept wildcard characters: False
 Indicates whether the content type is hidden in the list's 'New' menu.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -267,7 +267,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -280,10 +280,10 @@ Accept wildcard characters: False
 
 ### -InheritedFrom
 itemReference
-To construct, see NOTES section for INHERITEDFROM properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INHERITEDFROM properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemReference
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemReference
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -296,11 +296,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISitesIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
+Type: Microsoft.Graph.PowerShell.Models.ISitesIdentity
+Parameter Sets: CreateViaIdentity1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -314,7 +314,7 @@ Accept wildcard characters: False
 Specifies if a content type is a built-in content type.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -329,8 +329,8 @@ Accept wildcard characters: False
 key: id of list
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
+Type: System.String
+Parameter Sets: Create1, CreateExpanded1
 Aliases:
 
 Required: True
@@ -344,7 +344,7 @@ Accept wildcard characters: False
 The name of the content type.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -357,10 +357,10 @@ Accept wildcard characters: False
 
 ### -Order
 contentTypeOrder
-To construct, see NOTES section for ORDER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ORDER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphContentTypeOrder
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentTypeOrder
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -375,7 +375,7 @@ Accept wildcard characters: False
 The unique identifier of the content type.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -390,7 +390,7 @@ Accept wildcard characters: False
 If true, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -405,7 +405,7 @@ Accept wildcard characters: False
 If true, the content type cannot be modified unless this value is first set to false.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -421,7 +421,7 @@ If true, the content type cannot be modified by users or through push-down opera
 Only site collection administrators can seal or unseal content types.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -436,8 +436,8 @@ Accept wildcard characters: False
 key: id of site
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
+Type: System.String
+Parameter Sets: Create1, CreateExpanded1
 Aliases:
 
 Required: True
@@ -451,7 +451,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -467,7 +467,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -484,10 +484,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentType
+
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentType
+
 ## NOTES
 
 ALIASES
@@ -546,7 +549,7 @@ BASE <IMicrosoftGraphContentType>: contentType
     - `[Indexed <Boolean?>]`: Specifies whether the column values can used for sorting and searching.
     - `[IsDeletable <Boolean?>]`: Indicates whether this column can be deleted.
     - `[IsReorderable <Boolean?>]`: Indicates whether values in the column can be reordered. Read-only.
-    - `[IsSealed <Boolean?>]`: Specifies whether column can be changed.
+    - `[IsSealed <Boolean?>]`: Specifies whether the column can be changed.
     - `[Lookup <IMicrosoftGraphLookupColumn>]`: lookupColumn
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AllowMultipleValues <Boolean?>]`: Indicates whether multiple values can be selected from the source.
@@ -566,9 +569,9 @@ BASE <IMicrosoftGraphContentType>: contentType
       - `[AllowMultipleSelection <Boolean?>]`: Indicates whether multiple values can be selected from the source.
       - `[ChooseFromType <String>]`: Whether to allow selection of people only, or people and groups. Must be one of peopleAndGroups or peopleOnly.
       - `[DisplayAs <String>]`: How to display the information about the person or group chosen. See below.
-    - `[PropagateChanges <Boolean?>]`: If 'True' changes to this column will be propagated to lists that implement the column.
+    - `[PropagateChanges <Boolean?>]`: If true, changes to this column will be propagated to lists that implement the column.
     - `[ReadOnly <Boolean?>]`: Specifies whether the column values can be modified.
-    - `[Required <Boolean?>]`: Specifies whether the column value is not optional.
+    - `[Required <Boolean?>]`: Specifies whether the column value isn't optional.
     - `[SourceColumn <IMicrosoftGraphColumnDefinition>]`: columnDefinition
     - `[Term <IMicrosoftGraphTermColumn>]`: termColumn
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -687,7 +690,7 @@ BASETYPES <IMicrosoftGraphContentType[]>: The collection of content types that a
     - `[Indexed <Boolean?>]`: Specifies whether the column values can used for sorting and searching.
     - `[IsDeletable <Boolean?>]`: Indicates whether this column can be deleted.
     - `[IsReorderable <Boolean?>]`: Indicates whether values in the column can be reordered. Read-only.
-    - `[IsSealed <Boolean?>]`: Specifies whether column can be changed.
+    - `[IsSealed <Boolean?>]`: Specifies whether the column can be changed.
     - `[Lookup <IMicrosoftGraphLookupColumn>]`: lookupColumn
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AllowMultipleValues <Boolean?>]`: Indicates whether multiple values can be selected from the source.
@@ -707,9 +710,9 @@ BASETYPES <IMicrosoftGraphContentType[]>: The collection of content types that a
       - `[AllowMultipleSelection <Boolean?>]`: Indicates whether multiple values can be selected from the source.
       - `[ChooseFromType <String>]`: Whether to allow selection of people only, or people and groups. Must be one of peopleAndGroups or peopleOnly.
       - `[DisplayAs <String>]`: How to display the information about the person or group chosen. See below.
-    - `[PropagateChanges <Boolean?>]`: If 'True' changes to this column will be propagated to lists that implement the column.
+    - `[PropagateChanges <Boolean?>]`: If true, changes to this column will be propagated to lists that implement the column.
     - `[ReadOnly <Boolean?>]`: Specifies whether the column values can be modified.
-    - `[Required <Boolean?>]`: Specifies whether the column value is not optional.
+    - `[Required <Boolean?>]`: Specifies whether the column value isn't optional.
     - `[SourceColumn <IMicrosoftGraphColumnDefinition>]`: columnDefinition
     - `[Term <IMicrosoftGraphTermColumn>]`: termColumn
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -829,7 +832,7 @@ BODYPARAMETER <IMicrosoftGraphContentType>: contentType
     - `[Indexed <Boolean?>]`: Specifies whether the column values can used for sorting and searching.
     - `[IsDeletable <Boolean?>]`: Indicates whether this column can be deleted.
     - `[IsReorderable <Boolean?>]`: Indicates whether values in the column can be reordered. Read-only.
-    - `[IsSealed <Boolean?>]`: Specifies whether column can be changed.
+    - `[IsSealed <Boolean?>]`: Specifies whether the column can be changed.
     - `[Lookup <IMicrosoftGraphLookupColumn>]`: lookupColumn
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AllowMultipleValues <Boolean?>]`: Indicates whether multiple values can be selected from the source.
@@ -849,9 +852,9 @@ BODYPARAMETER <IMicrosoftGraphContentType>: contentType
       - `[AllowMultipleSelection <Boolean?>]`: Indicates whether multiple values can be selected from the source.
       - `[ChooseFromType <String>]`: Whether to allow selection of people only, or people and groups. Must be one of peopleAndGroups or peopleOnly.
       - `[DisplayAs <String>]`: How to display the information about the person or group chosen. See below.
-    - `[PropagateChanges <Boolean?>]`: If 'True' changes to this column will be propagated to lists that implement the column.
+    - `[PropagateChanges <Boolean?>]`: If true, changes to this column will be propagated to lists that implement the column.
     - `[ReadOnly <Boolean?>]`: Specifies whether the column values can be modified.
-    - `[Required <Boolean?>]`: Specifies whether the column value is not optional.
+    - `[Required <Boolean?>]`: Specifies whether the column value isn't optional.
     - `[SourceColumn <IMicrosoftGraphColumnDefinition>]`: columnDefinition
     - `[Term <IMicrosoftGraphTermColumn>]`: termColumn
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -966,7 +969,7 @@ COLUMNPOSITIONS <IMicrosoftGraphColumnDefinition[]>: Column order information in
   - `[Indexed <Boolean?>]`: Specifies whether the column values can used for sorting and searching.
   - `[IsDeletable <Boolean?>]`: Indicates whether this column can be deleted.
   - `[IsReorderable <Boolean?>]`: Indicates whether values in the column can be reordered. Read-only.
-  - `[IsSealed <Boolean?>]`: Specifies whether column can be changed.
+  - `[IsSealed <Boolean?>]`: Specifies whether the column can be changed.
   - `[Lookup <IMicrosoftGraphLookupColumn>]`: lookupColumn
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AllowMultipleValues <Boolean?>]`: Indicates whether multiple values can be selected from the source.
@@ -986,9 +989,9 @@ COLUMNPOSITIONS <IMicrosoftGraphColumnDefinition[]>: Column order information in
     - `[AllowMultipleSelection <Boolean?>]`: Indicates whether multiple values can be selected from the source.
     - `[ChooseFromType <String>]`: Whether to allow selection of people only, or people and groups. Must be one of peopleAndGroups or peopleOnly.
     - `[DisplayAs <String>]`: How to display the information about the person or group chosen. See below.
-  - `[PropagateChanges <Boolean?>]`: If 'True' changes to this column will be propagated to lists that implement the column.
+  - `[PropagateChanges <Boolean?>]`: If true, changes to this column will be propagated to lists that implement the column.
   - `[ReadOnly <Boolean?>]`: Specifies whether the column values can be modified.
-  - `[Required <Boolean?>]`: Specifies whether the column value is not optional.
+  - `[Required <Boolean?>]`: Specifies whether the column value isn't optional.
   - `[SourceColumn <IMicrosoftGraphColumnDefinition>]`: columnDefinition
   - `[Term <IMicrosoftGraphTermColumn>]`: termColumn
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1052,7 +1055,7 @@ COLUMNS <IMicrosoftGraphColumnDefinition[]>: The collection of column definition
   - `[Indexed <Boolean?>]`: Specifies whether the column values can used for sorting and searching.
   - `[IsDeletable <Boolean?>]`: Indicates whether this column can be deleted.
   - `[IsReorderable <Boolean?>]`: Indicates whether values in the column can be reordered. Read-only.
-  - `[IsSealed <Boolean?>]`: Specifies whether column can be changed.
+  - `[IsSealed <Boolean?>]`: Specifies whether the column can be changed.
   - `[Lookup <IMicrosoftGraphLookupColumn>]`: lookupColumn
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AllowMultipleValues <Boolean?>]`: Indicates whether multiple values can be selected from the source.
@@ -1072,9 +1075,9 @@ COLUMNS <IMicrosoftGraphColumnDefinition[]>: The collection of column definition
     - `[AllowMultipleSelection <Boolean?>]`: Indicates whether multiple values can be selected from the source.
     - `[ChooseFromType <String>]`: Whether to allow selection of people only, or people and groups. Must be one of peopleAndGroups or peopleOnly.
     - `[DisplayAs <String>]`: How to display the information about the person or group chosen. See below.
-  - `[PropagateChanges <Boolean?>]`: If 'True' changes to this column will be propagated to lists that implement the column.
+  - `[PropagateChanges <Boolean?>]`: If true, changes to this column will be propagated to lists that implement the column.
   - `[ReadOnly <Boolean?>]`: Specifies whether the column values can be modified.
-  - `[Required <Boolean?>]`: Specifies whether the column value is not optional.
+  - `[Required <Boolean?>]`: Specifies whether the column value isn't optional.
   - `[SourceColumn <IMicrosoftGraphColumnDefinition>]`: columnDefinition
   - `[Term <IMicrosoftGraphTermColumn>]`: termColumn
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1148,7 +1151,7 @@ DOCUMENTSET <IMicrosoftGraphDocumentSet>: documentSet
     - `[Indexed <Boolean?>]`: Specifies whether the column values can used for sorting and searching.
     - `[IsDeletable <Boolean?>]`: Indicates whether this column can be deleted.
     - `[IsReorderable <Boolean?>]`: Indicates whether values in the column can be reordered. Read-only.
-    - `[IsSealed <Boolean?>]`: Specifies whether column can be changed.
+    - `[IsSealed <Boolean?>]`: Specifies whether the column can be changed.
     - `[Lookup <IMicrosoftGraphLookupColumn>]`: lookupColumn
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AllowMultipleValues <Boolean?>]`: Indicates whether multiple values can be selected from the source.
@@ -1168,9 +1171,9 @@ DOCUMENTSET <IMicrosoftGraphDocumentSet>: documentSet
       - `[AllowMultipleSelection <Boolean?>]`: Indicates whether multiple values can be selected from the source.
       - `[ChooseFromType <String>]`: Whether to allow selection of people only, or people and groups. Must be one of peopleAndGroups or peopleOnly.
       - `[DisplayAs <String>]`: How to display the information about the person or group chosen. See below.
-    - `[PropagateChanges <Boolean?>]`: If 'True' changes to this column will be propagated to lists that implement the column.
+    - `[PropagateChanges <Boolean?>]`: If true, changes to this column will be propagated to lists that implement the column.
     - `[ReadOnly <Boolean?>]`: Specifies whether the column values can be modified.
-    - `[Required <Boolean?>]`: Specifies whether the column value is not optional.
+    - `[Required <Boolean?>]`: Specifies whether the column value isn't optional.
     - `[SourceColumn <IMicrosoftGraphColumnDefinition>]`: columnDefinition
     - `[Term <IMicrosoftGraphTermColumn>]`: termColumn
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1243,11 +1246,18 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[OnenoteSectionId <String>]`: key: id of onenoteSection
   - `[Path <String>]`: Usage: path={path}
   - `[PermissionId <String>]`: key: id of permission
+  - `[RelationId <String>]`: key: id of relation
+  - `[RichLongRunningOperationId <String>]`: key: id of richLongRunningOperation
+  - `[SetId <String>]`: key: id of set
+  - `[SetId1 <String>]`: key: id of set
   - `[SiteId <String>]`: key: id of site
   - `[SiteId1 <String>]`: key: id of site
   - `[SitePageId <String>]`: key: id of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime={startDateTime}
+  - `[StoreId <String>]`: key: id of store
   - `[SubscriptionId <String>]`: key: id of subscription
+  - `[TermId <String>]`: key: id of term
+  - `[TermId1 <String>]`: key: id of term
   - `[UserId <String>]`: key: id of user
 
 ORDER <IMicrosoftGraphContentTypeOrder>: contentTypeOrder
@@ -1257,4 +1267,3 @@ ORDER <IMicrosoftGraphContentTypeOrder>: contentTypeOrder
 
 ## RELATED LINKS
 
-## RELATED LINKS

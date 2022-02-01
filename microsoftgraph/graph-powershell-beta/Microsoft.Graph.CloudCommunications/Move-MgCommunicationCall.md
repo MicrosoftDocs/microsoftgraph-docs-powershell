@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.CloudCommunications-help.xml
+external help file:
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/move-mgcommunicationcall
 schema: 2.0.0
@@ -15,29 +15,29 @@ Invoke action transfer
 ### TransferExpanded1 (Default)
 ```
 Move-MgCommunicationCall -CallId <String> [-AdditionalProperties <Hashtable>]
- [-TransferTarget <IMicrosoftGraphInvitationParticipantInfo1>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Transferee <IMicrosoftGraphParticipantInfo1>] [-TransferTarget <IMicrosoftGraphInvitationParticipantInfo1>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Transfer1
 ```
 Move-MgCommunicationCall -CallId <String>
  -BodyParameter <IPaths4Zbm7LCommunicationsCallsCallIdMicrosoftGraphTransferPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### TransferViaIdentityExpanded1
-```
-Move-MgCommunicationCall -InputObject <ICloudCommunicationsIdentity> [-AdditionalProperties <Hashtable>]
- [-TransferTarget <IMicrosoftGraphInvitationParticipantInfo1>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### TransferViaIdentity1
 ```
 Move-MgCommunicationCall -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPaths4Zbm7LCommunicationsCallsCallIdMicrosoftGraphTransferPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### TransferViaIdentityExpanded1
+```
+Move-MgCommunicationCall -InputObject <ICloudCommunicationsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Transferee <IMicrosoftGraphParticipantInfo1>] [-TransferTarget <IMicrosoftGraphInvitationParticipantInfo1>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,7 +51,7 @@ Invoke action transfer
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: TransferExpanded1, TransferViaIdentityExpanded1
 Aliases:
 
@@ -64,10 +64,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths4Zbm7LCommunicationsCallsCallIdMicrosoftGraphTransferPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths4Zbm7LCommunicationsCallsCallIdMicrosoftGraphTransferPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Transfer1, TransferViaIdentity1
 Aliases:
 
@@ -82,8 +82,8 @@ Accept wildcard characters: False
 key: id of call
 
 ```yaml
-Type: String
-Parameter Sets: TransferExpanded1, Transfer1
+Type: System.String
+Parameter Sets: Transfer1, TransferExpanded1
 Aliases:
 
 Required: True
@@ -95,11 +95,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICloudCommunicationsIdentity
-Parameter Sets: TransferViaIdentityExpanded1, TransferViaIdentity1
+Type: Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+Parameter Sets: TransferViaIdentity1, TransferViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -113,8 +113,24 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Transferee
+participantInfo
+To construct, please use Get-Help -Online and see NOTES section for TRANSFEREE properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphParticipantInfo1
+Parameter Sets: TransferExpanded1, TransferViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -126,10 +142,10 @@ Accept wildcard characters: False
 
 ### -TransferTarget
 invitationParticipantInfo
-To construct, see NOTES section for TRANSFERTARGET properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for TRANSFERTARGET properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInvitationParticipantInfo1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInvitationParticipantInfo1
 Parameter Sets: TransferExpanded1, TransferViaIdentityExpanded1
 Aliases:
 
@@ -144,7 +160,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -160,7 +176,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -177,10 +193,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IPaths4Zbm7LCommunicationsCallsCallIdMicrosoftGraphTransferPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -195,38 +214,75 @@ BODYPARAMETER <IPaths4Zbm7LCommunicationsCallsCallIdMicrosoftGraphTransferPostRe
   - `[TransferTarget <IMicrosoftGraphInvitationParticipantInfo1>]`: invitationParticipantInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[EndpointType <String>]`: endpointType
+    - `[Hidden <Boolean?>]`: 
     - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
+        - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+        - `[Id <String>]`: The identifier of the identity. This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
+    - `[ParticipantId <String>]`: 
+    - `[RemoveFromDefaultAudioRoutingGroup <Boolean?>]`: 
     - `[ReplacesCallId <String>]`: Optional. The call which the target idenity is currently a part of. This call will be dropped once the participant is added.
+  - `[Transferee <IMicrosoftGraphParticipantInfo1>]`: participantInfo
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[CountryCode <String>]`: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call. Read-only.
+    - `[EndpointType <String>]`: endpointType
+    - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[LanguageId <String>]`: The language culture string. Read-only.
+    - `[ParticipantId <String>]`: The participant ID of the participant. Read-only.
+    - `[PlatformId <String>]`: The client platform ID of the participant. Read-only.
+    - `[Region <String>]`: The home region of the participant. This can be a country, a continent, or a larger geographic region. This does not change based on the participant's current physical location, unlike countryCode. Read-only.
 
 INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
+  - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call
   - `[CallRecordId <String>]`: key: id of callRecord
+  - `[CallTranscriptId <String>]`: key: id of callTranscript
   - `[CommsOperationId <String>]`: key: id of commsOperation
+  - `[MeetingAttendanceReportId <String>]`: key: id of meetingAttendanceReport
+  - `[MeetingRegistrationQuestionId <String>]`: key: id of meetingRegistrationQuestion
   - `[OnlineMeetingId <String>]`: key: id of onlineMeeting
   - `[ParticipantId <String>]`: key: id of participant
   - `[PresenceId <String>]`: key: id of presence
   - `[SessionId <String>]`: key: id of session
   - `[UserId <String>]`: key: id of user
 
-TRANSFERTARGET <IMicrosoftGraphInvitationParticipantInfo1>: invitationParticipantInfo
+TRANSFEREE <IMicrosoftGraphParticipantInfo1>: participantInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[CountryCode <String>]`: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call. Read-only.
   - `[EndpointType <String>]`: endpointType
   - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
+      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+      - `[Id <String>]`: The identifier of the identity. This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[LanguageId <String>]`: The language culture string. Read-only.
+  - `[ParticipantId <String>]`: The participant ID of the participant. Read-only.
+  - `[PlatformId <String>]`: The client platform ID of the participant. Read-only.
+  - `[Region <String>]`: The home region of the participant. This can be a country, a continent, or a larger geographic region. This does not change based on the participant's current physical location, unlike countryCode. Read-only.
+
+TRANSFERTARGET <IMicrosoftGraphInvitationParticipantInfo1>: invitationParticipantInfo
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[EndpointType <String>]`: endpointType
+  - `[Hidden <Boolean?>]`: 
+  - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[ParticipantId <String>]`: 
+  - `[RemoveFromDefaultAudioRoutingGroup <Boolean?>]`: 
   - `[ReplacesCallId <String>]`: Optional. The call which the target idenity is currently a part of. This call will be dropped once the participant is added.
 
 ## RELATED LINKS
+

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Users-help.xml
+external help file:
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/update-mgusersetting
 schema: 2.0.0
@@ -19,13 +19,19 @@ Update-MgUserSetting -UserId <String> [-AdditionalProperties <Hashtable>]
  [-ContributionToContentDiscoveryAsOrganizationDisabled] [-ContributionToContentDiscoveryDisabled]
  [-Id <String>] [-ItemInsights <IMicrosoftGraphUserInsightsSettings>]
  [-RegionalAndLanguageSettings <IMicrosoftGraphRegionalAndLanguageSettings>]
- [-ShiftPreferences <IMicrosoftGraphShiftPreferences>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ShiftPreferences <IMicrosoftGraphShiftPreferences>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgUserSetting -UserId <String> -BodyParameter <IMicrosoftGraphUserSettings> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgUserSetting -UserId <String> -BodyParameter <IMicrosoftGraphUserSettings> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgUserSetting -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphUserSettings> [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -34,13 +40,7 @@ Update-MgUserSetting -InputObject <IUsersIdentity> [-AdditionalProperties <Hasht
  [-ContributionToContentDiscoveryAsOrganizationDisabled] [-ContributionToContentDiscoveryDisabled]
  [-Id <String>] [-ItemInsights <IMicrosoftGraphUserInsightsSettings>]
  [-RegionalAndLanguageSettings <IMicrosoftGraphRegionalAndLanguageSettings>]
- [-ShiftPreferences <IMicrosoftGraphShiftPreferences>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgUserSetting -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphUserSettings> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ShiftPreferences <IMicrosoftGraphShiftPreferences>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -55,7 +55,7 @@ Nullable.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -68,10 +68,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 userSettings
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserSettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserSettings
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -88,7 +88,7 @@ When set to true, the organization doesn't have access to Office Delve.
 This setting is read-only and can only be changed by administrators in the SharePoint admin center.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -104,7 +104,7 @@ When set to true, documents in the user's Office Delve are disabled.
 Users can control this setting in Office Delve.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -132,11 +132,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IUsersIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -148,10 +148,10 @@ Accept wildcard characters: False
 
 ### -ItemInsights
 userInsightsSettings
-To construct, see NOTES section for ITEMINSIGHTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ITEMINSIGHTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserInsightsSettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserInsightsSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -179,10 +179,10 @@ Accept wildcard characters: False
 
 ### -RegionalAndLanguageSettings
 regionalAndLanguageSettings
-To construct, see NOTES section for REGIONALANDLANGUAGESETTINGS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for REGIONALANDLANGUAGESETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRegionalAndLanguageSettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRegionalAndLanguageSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -195,10 +195,10 @@ Accept wildcard characters: False
 
 ### -ShiftPreferences
 shiftPreferences
-To construct, see NOTES section for SHIFTPREFERENCES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SHIFTPREFERENCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphShiftPreferences
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphShiftPreferences
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -213,8 +213,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -228,7 +228,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -244,7 +244,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -261,10 +261,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserSettings
+
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -315,8 +318,8 @@ BODYPARAMETER <IMicrosoftGraphUserSettings>: userSettings
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
+        - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+        - `[Id <String>]`: The identifier of the identity. This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -329,7 +332,7 @@ BODYPARAMETER <IMicrosoftGraphUserSettings>: userSettings
         - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs. Required if type is absoluteMonthly or absoluteYearly.
-          - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. Possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
+          - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
           - `[FirstDayOfWeek <String>]`: dayOfWeek
           - `[Index <String>]`: weekIndex
           - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type. Required.
@@ -402,8 +405,8 @@ SHIFTPREFERENCES <IMicrosoftGraphShiftPreferences>: shiftPreferences
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
+      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+      - `[Id <String>]`: The identifier of the identity. This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -416,7 +419,7 @@ SHIFTPREFERENCES <IMicrosoftGraphShiftPreferences>: shiftPreferences
       - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs. Required if type is absoluteMonthly or absoluteYearly.
-        - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. Possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
+        - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
         - `[FirstDayOfWeek <String>]`: dayOfWeek
         - `[Index <String>]`: weekIndex
         - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type. Required.
@@ -436,4 +439,3 @@ SHIFTPREFERENCES <IMicrosoftGraphShiftPreferences>: shiftPreferences
 
 ## RELATED LINKS
 
-## RELATED LINKS

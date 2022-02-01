@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgappcatalogteamappdefinitioncoloriconhostedcontent
 schema: 2.0.0
@@ -24,16 +24,16 @@ Get-MgAppCatalogTeamAppDefinitionColorIconHostedContent -TeamsAppDefinitionId <S
  -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
-```
-Get-MgAppCatalogTeamAppDefinitionColorIconHostedContent -InputObject <ITeamsIdentity> -OutFile <String>
- [-PassThru] [<CommonParameters>]
-```
-
 ### GetViaIdentity
 ```
 Get-MgAppCatalogTeamAppDefinitionColorIconHostedContent -InputObject <ITeamsIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+```
+
+### GetViaIdentity1
+```
+Get-MgAppCatalogTeamAppDefinitionColorIconHostedContent -InputObject <ITeamsIdentity> -OutFile <String>
+ [-PassThru] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,7 +47,7 @@ The contents of the app icon if the icon is hosted within the Teams infrastructu
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: Get, GetViaIdentity
 Aliases: Expand
 
@@ -60,11 +60,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: GetViaIdentity1, GetViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+Parameter Sets: GetViaIdentity, GetViaIdentity1
 Aliases:
 
 Required: True
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get1, GetViaIdentity1
 Aliases:
 
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: Get1, GetViaIdentity1
 Aliases:
 
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: Get, GetViaIdentity
 Aliases: Select
 
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 key: id of teamsAppDefinition
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get, Get1
 Aliases:
 
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 key: id of teamsApp
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get, Get1
 Aliases:
 
@@ -155,10 +155,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkHostedContent
+
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -189,6 +192,8 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation
   - `[TeamsAsyncOperationId <String>]`: key: id of teamsAsyncOperation
   - `[TeamsTabId <String>]`: key: id of teamsTab
+  - `[TeamworkDeviceId <String>]`: key: id of teamworkDevice
+  - `[TeamworkDeviceOperationId <String>]`: key: id of teamworkDeviceOperation
   - `[TeamworkTagId <String>]`: key: id of teamworkTag
   - `[TeamworkTagMemberId <String>]`: key: id of teamworkTagMember
   - `[TimeCardId <String>]`: key: id of timeCard
@@ -200,3 +205,4 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
 ## RELATED LINKS
+

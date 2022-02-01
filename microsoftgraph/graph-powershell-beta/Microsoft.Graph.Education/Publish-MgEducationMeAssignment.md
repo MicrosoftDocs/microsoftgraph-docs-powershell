@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Education-help.xml
+external help file:
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/publish-mgeducationmeassignment
 schema: 2.0.0
@@ -12,14 +12,14 @@ Invoke action publish
 
 ## SYNTAX
 
-### Publish (Default)
+### Publish1 (Default)
 ```
-Publish-MgEducationMeAssignment -EducationAssignmentId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+Publish-MgEducationMeAssignment -EducationAssignmentId <String> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### PublishViaIdentity
+### PublishViaIdentity1
 ```
-Publish-MgEducationMeAssignment -InputObject <IEducationIdentity> [-WhatIf] [-Confirm] [<CommonParameters>]
+Publish-MgEducationMeAssignment -InputObject <IEducationIdentity> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -33,8 +33,8 @@ Invoke action publish
 key: id of educationAssignment
 
 ```yaml
-Type: String
-Parameter Sets: Publish
+Type: System.String
+Parameter Sets: Publish1
 Aliases:
 
 Required: True
@@ -46,11 +46,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IEducationIdentity
-Parameter Sets: PublishViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IEducationIdentity
+Parameter Sets: PublishViaIdentity1
 Aliases:
 
 Required: True
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -80,7 +80,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -97,9 +97,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationAssignment
+
 ## NOTES
 
 ALIASES
@@ -124,3 +126,4 @@ INPUTOBJECT <IEducationIdentity>: Identity Parameter
   - `[EducationUserId <String>]`: key: id of educationUser
 
 ## RELATED LINKS
+

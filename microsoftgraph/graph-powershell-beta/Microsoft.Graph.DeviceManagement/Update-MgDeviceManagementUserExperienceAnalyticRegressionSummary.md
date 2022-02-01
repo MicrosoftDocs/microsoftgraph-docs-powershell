@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticregressionsummary
 schema: 2.0.0
@@ -17,14 +17,14 @@ User experience analytics regression summary
 Update-MgDeviceManagementUserExperienceAnalyticRegressionSummary [-AdditionalProperties <Hashtable>]
  [-Id <String>] [-ManufacturerRegression <IMicrosoftGraphUserExperienceAnalyticsMetric[]>]
  [-ModelRegression <IMicrosoftGraphUserExperienceAnalyticsMetric[]>]
- [-OperatingSystemRegression <IMicrosoftGraphUserExperienceAnalyticsMetric[]>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-OperatingSystemRegression <IMicrosoftGraphUserExperienceAnalyticsMetric[]>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementUserExperienceAnalyticRegressionSummary
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsRegressionSummary> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsRegressionSummary> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -39,7 +39,7 @@ User experience analytics regression summary
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -52,10 +52,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analytics Regression Summary.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsRegressionSummary
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsRegressionSummary
 Parameter Sets: Update
 Aliases:
 
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -83,10 +83,10 @@ Accept wildcard characters: False
 
 ### -ManufacturerRegression
 The metric values for the user experience analytics Manufacturer regression.
-To construct, see NOTES section for MANUFACTURERREGRESSION properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for MANUFACTURERREGRESSION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsMetric[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsMetric[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -99,10 +99,10 @@ Accept wildcard characters: False
 
 ### -ModelRegression
 The metric values for the user experience analytics model regression.
-To construct, see NOTES section for MODELREGRESSION properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for MODELREGRESSION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsMetric[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsMetric[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -115,10 +115,10 @@ Accept wildcard characters: False
 
 ### -OperatingSystemRegression
 The metric values for the user experience analytics operating system regression.
-To construct, see NOTES section for OPERATINGSYSTEMREGRESSION properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for OPERATINGSYSTEMREGRESSION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsMetric[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsMetric[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -164,7 +164,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -181,9 +181,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsRegressionSummary
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -219,3 +221,4 @@ OPERATINGSYSTEMREGRESSION <IMicrosoftGraphUserExperienceAnalyticsMetric[]>: The 
   - `[Value <Double?>]`: The value of the user experience analytics metric.
 
 ## RELATED LINKS
+

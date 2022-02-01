@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mgchatlastmessagepreview
 schema: 2.0.0
@@ -17,27 +17,29 @@ Currently, only the list chats operation supports this property.
 ### UpdateExpanded (Default)
 ```
 Update-MgChatLastMessagePreview -ChatId <String> [-AdditionalProperties <Hashtable>]
- [-Body <IMicrosoftGraphItemBody>] [-CreatedDateTime <DateTime>] [-From <Hashtable>] [-Id <String>]
- [-IsDeleted] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Body <IMicrosoftGraphItemBody>] [-CreatedDateTime <DateTime>] [-EventDetail <Hashtable>]
+ [-From <Hashtable>] [-Id <String>] [-IsDeleted] [-MessageType <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgChatLastMessagePreview -ChatId <String> -BodyParameter <IMicrosoftGraphChatMessageInfo> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgChatLastMessagePreview -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-Body <IMicrosoftGraphItemBody>] [-CreatedDateTime <DateTime>] [-From <Hashtable>] [-Id <String>]
- [-IsDeleted] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgChatLastMessagePreview -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphChatMessageInfo>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgChatLastMessagePreview -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Body <IMicrosoftGraphItemBody>] [-CreatedDateTime <DateTime>] [-EventDetail <Hashtable>]
+ [-From <Hashtable>] [-Id <String>] [-IsDeleted] [-MessageType <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,7 +55,7 @@ Currently, only the list chats operation supports this property.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -66,10 +68,10 @@ Accept wildcard characters: False
 
 ### -Body
 itemBody
-To construct, see NOTES section for BODY properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemBody
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemBody
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -82,10 +84,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 chatMessageInfo
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatMessageInfo
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessageInfo
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -100,8 +102,8 @@ Accept wildcard characters: False
 key: id of chat
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -115,7 +117,22 @@ Accept wildcard characters: False
 Date time object representing the time at which message was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -EventDetail
+eventMessageDetail
+
+```yaml
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -130,7 +147,7 @@ Accept wildcard characters: False
 chatMessageFromIdentitySet
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -145,7 +162,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -158,11 +175,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -176,7 +193,22 @@ Accept wildcard characters: False
 If set to true, the original message has been deleted.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MessageType
+chatMessageType
+
+```yaml
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -191,7 +223,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -206,7 +238,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -222,7 +254,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -239,10 +271,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessageInfo
+
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -265,15 +300,18 @@ BODYPARAMETER <IMicrosoftGraphChatMessageInfo>: chatMessageInfo
     - `[Content <String>]`: The content of the item.
     - `[ContentType <String>]`: bodyType
   - `[CreatedDateTime <DateTime?>]`: Date time object representing the time at which message was created.
+  - `[EventDetail <IMicrosoftGraphEventMessageDetail>]`: eventMessageDetail
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[From <IMicrosoftGraphChatMessageFromIdentitySet>]`: chatMessageFromIdentitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
+      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+      - `[Id <String>]`: The identifier of the identity. This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[IsDeleted <Boolean?>]`: If set to true, the original message has been deleted.
+  - `[MessageType <String>]`: chatMessageType
 
 INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[ChannelId <String>]`: key: id of channel
@@ -296,6 +334,8 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation
   - `[TeamsAsyncOperationId <String>]`: key: id of teamsAsyncOperation
   - `[TeamsTabId <String>]`: key: id of teamsTab
+  - `[TeamworkDeviceId <String>]`: key: id of teamworkDevice
+  - `[TeamworkDeviceOperationId <String>]`: key: id of teamworkDeviceOperation
   - `[TeamworkTagId <String>]`: key: id of teamworkTag
   - `[TeamworkTagMemberId <String>]`: key: id of teamworkTagMember
   - `[TimeCardId <String>]`: key: id of timeCard
@@ -307,3 +347,4 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
 ## RELATED LINKS
+

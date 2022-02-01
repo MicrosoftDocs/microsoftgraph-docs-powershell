@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/add-mgchatmember
 schema: 2.0.0
@@ -12,30 +12,30 @@ Invoke action add
 
 ## SYNTAX
 
-### AddExpanded (Default)
+### AddExpanded1 (Default)
 ```
 Add-MgChatMember -ChatId <String> [-AdditionalProperties <Hashtable>]
- [-Values <IMicrosoftGraphConversationMember[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Values <IMicrosoftGraphConversationMember[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Add
+### Add1
 ```
 Add-MgChatMember -ChatId <String>
  -BodyParameter <IPaths1Abk8N6ChatsChatIdMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### AddViaIdentityExpanded
-```
-Add-MgChatMember -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-Values <IMicrosoftGraphConversationMember[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### AddViaIdentity
+### AddViaIdentity1
 ```
 Add-MgChatMember -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths1Abk8N6ChatsChatIdMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### AddViaIdentityExpanded1
+```
+Add-MgChatMember -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Values <IMicrosoftGraphConversationMember[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,8 +49,8 @@ Invoke action add
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: AddExpanded, AddViaIdentityExpanded
+Type: System.Collections.Hashtable
+Parameter Sets: AddExpanded1, AddViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -62,11 +62,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Abk8N6ChatsChatIdMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Add, AddViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IPaths1Abk8N6ChatsChatIdMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Add1, AddViaIdentity1
 Aliases:
 
 Required: True
@@ -80,8 +80,8 @@ Accept wildcard characters: False
 key: id of chat
 
 ```yaml
-Type: String
-Parameter Sets: AddExpanded, Add
+Type: System.String
+Parameter Sets: Add1, AddExpanded1
 Aliases:
 
 Required: True
@@ -93,11 +93,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: AddViaIdentityExpanded, AddViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+Parameter Sets: AddViaIdentity1, AddViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -109,11 +109,11 @@ Accept wildcard characters: False
 
 ### -Values
 .
-To construct, see NOTES section for VALUES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for VALUES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConversationMember[]
-Parameter Sets: AddExpanded, AddViaIdentityExpanded
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversationMember[]
+Parameter Sets: AddExpanded1, AddViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -143,7 +143,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -160,10 +160,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1Abk8N6ChatsChatIdMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphActionResultPart
+
 ## NOTES
 
 ALIASES
@@ -202,6 +205,8 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation
   - `[TeamsAsyncOperationId <String>]`: key: id of teamsAsyncOperation
   - `[TeamsTabId <String>]`: key: id of teamsTab
+  - `[TeamworkDeviceId <String>]`: key: id of teamworkDevice
+  - `[TeamworkDeviceOperationId <String>]`: key: id of teamworkDeviceOperation
   - `[TeamworkTagId <String>]`: key: id of teamworkTag
   - `[TeamworkTagMemberId <String>]`: key: id of teamworkTagMember
   - `[TimeCardId <String>]`: key: id of timeCard
@@ -219,3 +224,4 @@ VALUES <IMicrosoftGraphConversationMember[]>: .
   - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
 
 ## RELATED LINKS
+

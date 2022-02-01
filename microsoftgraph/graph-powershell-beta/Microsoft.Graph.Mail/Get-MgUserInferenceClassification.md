@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Mail-help.xml
+external help file:
 Module Name: Microsoft.Graph.Mail
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/get-mguserinferenceclassification
 schema: 2.0.0
@@ -14,14 +14,12 @@ Relevance classification of the user's messages based on explicit designations w
 
 ### Get (Default)
 ```
-Get-MgUserInferenceClassification -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgUserInferenceClassification -UserId <String> [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgUserInferenceClassification -InputObject <IMailIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgUserInferenceClassification -InputObject <IMailIdentity> [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -31,27 +29,12 @@ Relevance classification of the user's messages based on explicit designations w
 
 ## PARAMETERS
 
-### -ExpandProperty
-Expand related entities
-
-```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: Expand
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IMailIdentity
+Type: Microsoft.Graph.PowerShell.Models.IMailIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -66,7 +49,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -81,7 +64,7 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -98,9 +81,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMailIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInferenceClassification
+
 ## NOTES
 
 ALIASES
@@ -120,6 +105,13 @@ INPUTOBJECT <IMailIdentity>: Identity Parameter
   - `[MessageId <String>]`: key: id of message
   - `[MessageRuleId <String>]`: key: id of messageRule
   - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
+  - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
+  - `[UserConfigurationId <String>]`: key: id of userConfiguration
+  - `[UserId <String>]`: key: id of user
+
+## RELATED LINKS
+
+ExtendedProperty
   - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
   - `[UserConfigurationId <String>]`: key: id of userConfiguration
   - `[UserId <String>]`: key: id of user

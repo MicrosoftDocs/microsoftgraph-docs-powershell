@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/invoke-mgreplygroupthreadpostinreplyto
 schema: 2.0.0
@@ -15,7 +15,7 @@ Invoke action reply
 ### ReplyExpanded (Default)
 ```
 Invoke-MgReplyGroupThreadPostInReplyTo -ConversationThreadId <String> -GroupId <String> -PostId <String>
- [-AdditionalProperties <Hashtable>] [-Post <IMicrosoftGraphPost>] [-PassThru] [-WhatIf] [-Confirm]
+ [-AdditionalProperties <Hashtable>] [-Post <IMicrosoftGraphPost>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -23,20 +23,20 @@ Invoke-MgReplyGroupThreadPostInReplyTo -ConversationThreadId <String> -GroupId <
 ```
 Invoke-MgReplyGroupThreadPostInReplyTo -ConversationThreadId <String> -GroupId <String> -PostId <String>
  -BodyParameter <IPaths1EjehpoGroupsGroupIdThreadsConversationthreadIdPostsPostIdInreplytoMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema1>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### ReplyViaIdentityExpanded
-```
-Invoke-MgReplyGroupThreadPostInReplyTo -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-Post <IMicrosoftGraphPost>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ReplyViaIdentity
 ```
 Invoke-MgReplyGroupThreadPostInReplyTo -InputObject <IGroupsIdentity>
  -BodyParameter <IPaths1EjehpoGroupsGroupIdThreadsConversationthreadIdPostsPostIdInreplytoMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema1>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ReplyViaIdentityExpanded
+```
+Invoke-MgReplyGroupThreadPostInReplyTo -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Post <IMicrosoftGraphPost>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -50,7 +50,7 @@ Invoke action reply
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ReplyExpanded, ReplyViaIdentityExpanded
 Aliases:
 
@@ -63,10 +63,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1EjehpoGroupsGroupIdThreadsConversationthreadIdPostsPostIdInreplytoMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema1
+Type: Microsoft.Graph.PowerShell.Models.IPaths1EjehpoGroupsGroupIdThreadsConversationthreadIdPostsPostIdInreplytoMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema1
 Parameter Sets: Reply, ReplyViaIdentity
 Aliases:
 
@@ -81,8 +81,8 @@ Accept wildcard characters: False
 key: id of conversationThread
 
 ```yaml
-Type: String
-Parameter Sets: ReplyExpanded, Reply
+Type: System.String
+Parameter Sets: Reply, ReplyExpanded
 Aliases:
 
 Required: True
@@ -96,8 +96,8 @@ Accept wildcard characters: False
 key: id of group
 
 ```yaml
-Type: String
-Parameter Sets: ReplyExpanded, Reply
+Type: System.String
+Parameter Sets: Reply, ReplyExpanded
 Aliases:
 
 Required: True
@@ -109,11 +109,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: ReplyViaIdentityExpanded, ReplyViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+Parameter Sets: ReplyViaIdentity, ReplyViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -140,10 +140,10 @@ Accept wildcard characters: False
 
 ### -Post
 post
-To construct, see NOTES section for POST properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for POST properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPost
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPost
 Parameter Sets: ReplyExpanded, ReplyViaIdentityExpanded
 Aliases:
 
@@ -158,8 +158,8 @@ Accept wildcard characters: False
 key: id of post
 
 ```yaml
-Type: String
-Parameter Sets: ReplyExpanded, Reply
+Type: System.String
+Parameter Sets: Reply, ReplyExpanded
 Aliases:
 
 Required: True
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -189,7 +189,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -206,10 +206,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IPaths1EjehpoGroupsGroupIdThreadsConversationthreadIdPostsPostIdInreplytoMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema1
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -228,7 +231,7 @@ BODYPARAMETER <IPaths1EjehpoGroupsGroupIdThreadsConversationthreadIdPostsPostIdI
     - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[Id <String>]`: Read-only.
-    - `[Attachments <IMicrosoftGraphAttachment[]>]`: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post. Read-only. Nullable.
+    - `[Attachments <IMicrosoftGraphAttachment[]>]`: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post. Read-only. Nullable. Supports $expand.
       - `[Id <String>]`: Read-only.
       - `[ContentType <String>]`: The MIME type.
       - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
@@ -241,7 +244,7 @@ BODYPARAMETER <IPaths1EjehpoGroupsGroupIdThreadsConversationthreadIdPostsPostIdI
       - `[ContentType <String>]`: bodyType
     - `[ConversationId <String>]`: Unique ID of the conversation. Read-only.
     - `[ConversationThreadId <String>]`: Unique ID of the conversation thread. Read-only.
-    - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the post. Read-only. Nullable.
+    - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the post. Read-only. Nullable. Supports $expand.
       - `[Id <String>]`: Read-only.
     - `[From <IMicrosoftGraphRecipient>]`: recipient
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -302,7 +305,7 @@ POST <IMicrosoftGraphPost>: post
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Id <String>]`: Read-only.
-  - `[Attachments <IMicrosoftGraphAttachment[]>]`: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post. Read-only. Nullable.
+  - `[Attachments <IMicrosoftGraphAttachment[]>]`: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post. Read-only. Nullable. Supports $expand.
     - `[Id <String>]`: Read-only.
     - `[ContentType <String>]`: The MIME type.
     - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
@@ -315,7 +318,7 @@ POST <IMicrosoftGraphPost>: post
     - `[ContentType <String>]`: bodyType
   - `[ConversationId <String>]`: Unique ID of the conversation. Read-only.
   - `[ConversationThreadId <String>]`: Unique ID of the conversation thread. Read-only.
-  - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the post. Read-only. Nullable.
+  - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the post. Read-only. Nullable. Supports $expand.
     - `[Id <String>]`: Read-only.
   - `[From <IMicrosoftGraphRecipient>]`: recipient
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -348,4 +351,3 @@ POST <IMicrosoftGraphPost>: post
 
 ## RELATED LINKS
 
-## RELATED LINKS

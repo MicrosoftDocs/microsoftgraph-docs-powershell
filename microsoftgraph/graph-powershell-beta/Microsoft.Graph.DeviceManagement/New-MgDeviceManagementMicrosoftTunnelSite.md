@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmicrosofttunnelsite
 schema: 2.0.0
@@ -15,18 +15,18 @@ Collection of MicrosoftTunnelSite settings associated with account.
 ### CreateExpanded (Default)
 ```
 New-MgDeviceManagementMicrosoftTunnelSite [-AdditionalProperties <Hashtable>] [-Description <String>]
- [-DisplayName <String>] [-Id <String>]
+ [-DisplayName <String>] [-Id <String>] [-InternalNetworkProbeUrl <String>]
  [-MicrosoftTunnelConfiguration <IMicrosoftGraphMicrosoftTunnelConfiguration>]
  [-MicrosoftTunnelServers <IMicrosoftGraphMicrosoftTunnelServer[]>] [-PublicAddress <String>]
  [-RoleScopeTagIds <String[]>] [-UpgradeAutomatically] [-UpgradeAvailable] [-UpgradeWindowEndTime <String>]
- [-UpgradeWindowStartTime <String>] [-UpgradeWindowUtcOffsetInMinutes <Int32>] [-WhatIf] [-Confirm]
+ [-UpgradeWindowStartTime <String>] [-UpgradeWindowUtcOffsetInMinutes <Int32>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementMicrosoftTunnelSite -BodyParameter <IMicrosoftGraphMicrosoftTunnelSite> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgDeviceManagementMicrosoftTunnelSite -BodyParameter <IMicrosoftGraphMicrosoftTunnelSite> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -40,7 +40,7 @@ Collection of MicrosoftTunnelSite settings associated with account.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -53,10 +53,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Entity that represents a Microsoft Tunnel site
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMicrosoftTunnelSite
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelSite
 Parameter Sets: Create
 Aliases:
 
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 The MicrosoftTunnelSite's description
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 The MicrosoftTunnelSite's display name
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -101,7 +101,22 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InternalNetworkProbeUrl
+The MicrosoftTunnelSite's Internal Network Access Probe URL
+
+```yaml
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -114,10 +129,10 @@ Accept wildcard characters: False
 
 ### -MicrosoftTunnelConfiguration
 Entity that represents a collection of Microsoft Tunnel settings
-To construct, see NOTES section for MICROSOFTTUNNELCONFIGURATION properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for MICROSOFTTUNNELCONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMicrosoftTunnelConfiguration
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelConfiguration
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -130,10 +145,10 @@ Accept wildcard characters: False
 
 ### -MicrosoftTunnelServers
 A list of MicrosoftTunnelServers that are registered to this MicrosoftTunnelSite
-To construct, see NOTES section for MICROSOFTTUNNELSERVERS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for MICROSOFTTUNNELSERVERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMicrosoftTunnelServer[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelServer[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -148,7 +163,7 @@ Accept wildcard characters: False
 The MicrosoftTunnelSite's public domain name or IP address
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -163,7 +178,7 @@ Accept wildcard characters: False
 List of Scope Tags for this Entity instance.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -179,7 +194,7 @@ The site's automatic upgrade setting.
 True for automatic upgrades, false for manual control
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -194,7 +209,7 @@ Accept wildcard characters: False
 True if an upgrade is available
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -209,7 +224,7 @@ Accept wildcard characters: False
 The site's upgrade window end time of day
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -224,7 +239,7 @@ Accept wildcard characters: False
 The site's upgrade window start time of day
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -239,7 +254,7 @@ Accept wildcard characters: False
 The site's timezone represented as a minute offset from UTC
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -254,7 +269,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -270,7 +285,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -287,9 +302,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelSite
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelSite
+
 ## NOTES
 
 ALIASES
@@ -304,14 +321,16 @@ BODYPARAMETER <IMicrosoftGraphMicrosoftTunnelSite>: Entity that represents a Mic
   - `[Id <String>]`: Read-only.
   - `[Description <String>]`: The MicrosoftTunnelSite's description
   - `[DisplayName <String>]`: The MicrosoftTunnelSite's display name
+  - `[InternalNetworkProbeUrl <String>]`: The MicrosoftTunnelSite's Internal Network Access Probe URL
   - `[MicrosoftTunnelConfiguration <IMicrosoftGraphMicrosoftTunnelConfiguration>]`: Entity that represents a collection of Microsoft Tunnel settings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: Read-only.
     - `[AdvancedSettings <IMicrosoftGraphKeyValuePair[]>]`: Additional settings that may be applied to the server
-      - `[Name <String>]`: Name for this key-value pair. Possible names are: AdditionalWSFedEndpointCheckResult,  AllowedAuthenticationClassReferencesCheckResult, AlwaysRequireAuthenticationCheckResult,   AutoUpdateEnabledCheckResult, ClaimsProviderNameCheckResult, EncryptClaimsCheckResult,  EncryptedNameIdRequiredCheckResult, MonitoringEnabledCheckResult,NotBeforeSkewCheckResult,  RequestMFAFromClaimsProvidersCheckResult, SignedSamlRequestsRequiredCheckResult, AdditionalAuthenticationRulesCheckResult, TokenLifetimeCheckResult,  DelegationAuthorizationRulesCheckResult, IssuanceAuthorizationRulesCheckResult, IssuanceTransformRulesCheckResult.
-      - `[Value <String>]`: Value for this key-value pair. Possible result values are 0 (when the validation check passed), 1 (when the validation check failed), or 2 (when the validation check is a warning).
+      - `[Name <String>]`: Name for this key-value pair
+      - `[Value <String>]`: Value for this key-value pair
     - `[DefaultDomainSuffix <String>]`: The Default Domain appendix that will be used by the clients
     - `[Description <String>]`: The MicrosoftTunnelConfiguration's description
+    - `[DisableUdpConnections <Boolean?>]`: When DisableUDPConnections is set, the clients and VPN server will not use DTLS connctions to tansfer data.
     - `[DisplayName <String>]`: The MicrosoftTunnelConfiguration's display name
     - `[DnsServers <String[]>]`: The DNS servers that will be used by the clients
     - `[LastUpdateDateTime <DateTime?>]`: When the MicrosoftTunnelConfiguration was last updated
@@ -323,11 +342,11 @@ BODYPARAMETER <IMicrosoftGraphMicrosoftTunnelSite>: Entity that represents a Mic
     - `[SplitDns <String[]>]`: The domains that will be resolved using the provided dns servers
   - `[MicrosoftTunnelServers <IMicrosoftGraphMicrosoftTunnelServer[]>]`: A list of MicrosoftTunnelServers that are registered to this MicrosoftTunnelSite
     - `[Id <String>]`: Read-only.
-    - `[AgentImageDigest <String>]`: The digest of the current agent image running on this server 
+    - `[AgentImageDigest <String>]`: The digest of the current agent image running on this server
     - `[DisplayName <String>]`: The MicrosoftTunnelServer's display name
     - `[LastCheckinDateTime <DateTime?>]`: When the MicrosoftTunnelServer last checked in
-    - `[ServerImageDigest <String>]`: The digest of the current server image running on this server 
-    - `[TunnelServerHealthStatus <String>]`: microsoftTunnelServerHealthStatus
+    - `[ServerImageDigest <String>]`: The digest of the current server image running on this server
+    - `[TunnelServerHealthStatus <String>]`: Enum of possible MicrosoftTunnelServer health status types
   - `[PublicAddress <String>]`: The MicrosoftTunnelSite's public domain name or IP address
   - `[RoleScopeTagIds <String[]>]`: List of Scope Tags for this Entity instance.
   - `[UpgradeAutomatically <Boolean?>]`: The site's automatic upgrade setting. True for automatic upgrades, false for manual control
@@ -340,10 +359,11 @@ MICROSOFTTUNNELCONFIGURATION <IMicrosoftGraphMicrosoftTunnelConfiguration>: Enti
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
   - `[AdvancedSettings <IMicrosoftGraphKeyValuePair[]>]`: Additional settings that may be applied to the server
-    - `[Name <String>]`: Name for this key-value pair. Possible names are: AdditionalWSFedEndpointCheckResult,  AllowedAuthenticationClassReferencesCheckResult, AlwaysRequireAuthenticationCheckResult,   AutoUpdateEnabledCheckResult, ClaimsProviderNameCheckResult, EncryptClaimsCheckResult,  EncryptedNameIdRequiredCheckResult, MonitoringEnabledCheckResult,NotBeforeSkewCheckResult,  RequestMFAFromClaimsProvidersCheckResult, SignedSamlRequestsRequiredCheckResult, AdditionalAuthenticationRulesCheckResult, TokenLifetimeCheckResult,  DelegationAuthorizationRulesCheckResult, IssuanceAuthorizationRulesCheckResult, IssuanceTransformRulesCheckResult.
-    - `[Value <String>]`: Value for this key-value pair. Possible result values are 0 (when the validation check passed), 1 (when the validation check failed), or 2 (when the validation check is a warning).
+    - `[Name <String>]`: Name for this key-value pair
+    - `[Value <String>]`: Value for this key-value pair
   - `[DefaultDomainSuffix <String>]`: The Default Domain appendix that will be used by the clients
   - `[Description <String>]`: The MicrosoftTunnelConfiguration's description
+  - `[DisableUdpConnections <Boolean?>]`: When DisableUDPConnections is set, the clients and VPN server will not use DTLS connctions to tansfer data.
   - `[DisplayName <String>]`: The MicrosoftTunnelConfiguration's display name
   - `[DnsServers <String[]>]`: The DNS servers that will be used by the clients
   - `[LastUpdateDateTime <DateTime?>]`: When the MicrosoftTunnelConfiguration was last updated
@@ -356,8 +376,15 @@ MICROSOFTTUNNELCONFIGURATION <IMicrosoftGraphMicrosoftTunnelConfiguration>: Enti
 
 MICROSOFTTUNNELSERVERS <IMicrosoftGraphMicrosoftTunnelServer[]>: A list of MicrosoftTunnelServers that are registered to this MicrosoftTunnelSite
   - `[Id <String>]`: Read-only.
-  - `[AgentImageDigest <String>]`: The digest of the current agent image running on this server 
+  - `[AgentImageDigest <String>]`: The digest of the current agent image running on this server
   - `[DisplayName <String>]`: The MicrosoftTunnelServer's display name
+  - `[LastCheckinDateTime <DateTime?>]`: When the MicrosoftTunnelServer last checked in
+  - `[ServerImageDigest <String>]`: The digest of the current server image running on this server
+  - `[TunnelServerHealthStatus <String>]`: Enum of possible MicrosoftTunnelServer health status types
+
+## RELATED LINKS
+
+[DisplayName <String>]`: The MicrosoftTunnelServer's display name
   - `[LastCheckinDateTime <DateTime?>]`: When the MicrosoftTunnelServer last checked in
   - `[ServerImageDigest <String>]`: The digest of the current server image running on this server 
   - `[TunnelServerHealthStatus <String>]`: microsoftTunnelServerHealthStatus

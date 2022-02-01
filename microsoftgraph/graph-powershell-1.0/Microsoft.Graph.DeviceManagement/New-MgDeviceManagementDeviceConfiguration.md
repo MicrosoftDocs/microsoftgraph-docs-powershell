@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdeviceconfiguration
 schema: 2.0.0
@@ -17,17 +17,18 @@ The device configurations.
 New-MgDeviceManagementDeviceConfiguration [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphDeviceConfigurationAssignment[]>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DeviceSettingStateSummaries <IMicrosoftGraphSettingStateDeviceSummary[]>]
- [-DeviceStatusOverview <IMicrosoftGraphDeviceConfigurationDeviceOverview>]
- [-DeviceStatuses <IMicrosoftGraphDeviceConfigurationDeviceStatus[]>] [-DisplayName <String>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-UserStatusOverview <IMicrosoftGraphDeviceConfigurationUserOverview>]
- [-UserStatuses <IMicrosoftGraphDeviceConfigurationUserStatus[]>] [-Version <Int32>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-DeviceStatuses <IMicrosoftGraphDeviceConfigurationDeviceStatus[]>]
+ [-DeviceStatusOverview <IMicrosoftGraphDeviceConfigurationDeviceOverview>] [-DisplayName <String>]
+ [-Id <String>] [-LastModifiedDateTime <DateTime>]
+ [-UserStatuses <IMicrosoftGraphDeviceConfigurationUserStatus[]>]
+ [-UserStatusOverview <IMicrosoftGraphDeviceConfigurationUserOverview>] [-Version <Int32>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgDeviceManagementDeviceConfiguration -BodyParameter <IMicrosoftGraphDeviceConfiguration> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgDeviceManagementDeviceConfiguration -BodyParameter <IMicrosoftGraphDeviceConfiguration> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -41,7 +42,7 @@ The device configurations.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -54,10 +55,10 @@ Accept wildcard characters: False
 
 ### -Assignments
 The list of assignments for the device configuration profile.
-To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceConfigurationAssignment[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationAssignment[]
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -70,10 +71,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Device Configuration.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceConfiguration
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfiguration
 Parameter Sets: Create1
 Aliases:
 
@@ -88,7 +89,7 @@ Accept wildcard characters: False
 DateTime the object was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -103,7 +104,7 @@ Accept wildcard characters: False
 Admin provided description of the Device Configuration.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -116,10 +117,10 @@ Accept wildcard characters: False
 
 ### -DeviceSettingStateSummaries
 Device Configuration Setting State Device Summary
-To construct, see NOTES section for DEVICESETTINGSTATESUMMARIES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEVICESETTINGSTATESUMMARIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSettingStateDeviceSummary[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSettingStateDeviceSummary[]
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -132,10 +133,10 @@ Accept wildcard characters: False
 
 ### -DeviceStatuses
 Device configuration installation status by device.
-To construct, see NOTES section for DEVICESTATUSES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEVICESTATUSES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceConfigurationDeviceStatus[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationDeviceStatus[]
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -148,10 +149,10 @@ Accept wildcard characters: False
 
 ### -DeviceStatusOverview
 deviceConfigurationDeviceOverview
-To construct, see NOTES section for DEVICESTATUSOVERVIEW properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEVICESTATUSOVERVIEW properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceConfigurationDeviceOverview
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationDeviceOverview
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -166,7 +167,7 @@ Accept wildcard characters: False
 Admin provided name of the device configuration.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -181,7 +182,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -196,7 +197,7 @@ Accept wildcard characters: False
 DateTime the object was last modified.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -209,10 +210,10 @@ Accept wildcard characters: False
 
 ### -UserStatuses
 Device configuration installation status by user.
-To construct, see NOTES section for USERSTATUSES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for USERSTATUSES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceConfigurationUserStatus[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationUserStatus[]
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -225,10 +226,10 @@ Accept wildcard characters: False
 
 ### -UserStatusOverview
 deviceConfigurationUserOverview
-To construct, see NOTES section for USERSTATUSOVERVIEW properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for USERSTATUSOVERVIEW properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceConfigurationUserOverview
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationUserOverview
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -243,7 +244,7 @@ Accept wildcard characters: False
 Version of the device configuration.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -258,7 +259,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -274,7 +275,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -291,9 +292,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfiguration
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfiguration
+
 ## NOTES
 
 ALIASES
@@ -421,3 +424,4 @@ USERSTATUSOVERVIEW <IMicrosoftGraphDeviceConfigurationUserOverview>: deviceConfi
   - `[SuccessCount <Int32?>]`: Number of succeeded Users
 
 ## RELATED LINKS
+

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Calendar-help.xml
+external help file:
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/new-mgusercalendargroup
 schema: 2.0.0
@@ -18,26 +18,26 @@ Nullable.
 ```
 New-MgUserCalendarGroup -UserId <String> [-AdditionalProperties <Hashtable>]
  [-Calendars <IMicrosoftGraphCalendar1[]>] [-ChangeKey <String>] [-ClassId <String>] [-Id <String>]
- [-Name <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Name <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgUserCalendarGroup -UserId <String> -BodyParameter <IMicrosoftGraphCalendarGroup1> [-WhatIf] [-Confirm]
+New-MgUserCalendarGroup -UserId <String> -BodyParameter <IMicrosoftGraphCalendarGroup1> [-Confirm] [-WhatIf]
  [<CommonParameters>]
+```
+
+### CreateViaIdentity1
+```
+New-MgUserCalendarGroup -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphCalendarGroup1>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded1
 ```
 New-MgUserCalendarGroup -InputObject <ICalendarIdentity> [-AdditionalProperties <Hashtable>]
  [-Calendars <IMicrosoftGraphCalendar1[]>] [-ChangeKey <String>] [-ClassId <String>] [-Id <String>]
- [-Name <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity1
-```
-New-MgUserCalendarGroup -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphCalendarGroup1>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Name <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,7 +53,7 @@ Nullable.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -66,10 +66,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 calendarGroup
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCalendarGroup1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalendarGroup1
 Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
@@ -85,10 +85,10 @@ The calendars in the calendar group.
 Navigation property.
 Read-only.
 Nullable.
-To construct, see NOTES section for CALENDARS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for CALENDARS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCalendar1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalendar1[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -106,7 +106,7 @@ This allows Exchange to apply changes to the correct version of the object.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -122,7 +122,7 @@ The class identifier.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -150,11 +150,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICalendarIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
+Type: Microsoft.Graph.PowerShell.Models.ICalendarIdentity
+Parameter Sets: CreateViaIdentity1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 The group name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -183,8 +183,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
+Type: System.String
+Parameter Sets: Create1, CreateExpanded1
 Aliases:
 
 Required: True
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -214,7 +214,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -231,10 +231,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalendarGroup1
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalendarGroup1
+
 ## NOTES
 
 ALIASES
@@ -267,7 +270,7 @@ BODYPARAMETER <IMicrosoftGraphCalendarGroup1>: calendarGroup
       - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[Id <String>]`: Read-only.
-      - `[AllowNewTimeProposals <Boolean?>]`: True if the meeting organizer allows invitees to propose a new time when responding, false otherwise. Optional. Default is true.
+      - `[AllowNewTimeProposals <Boolean?>]`: true if the meeting organizer allows invitees to propose a new time when responding; otherwise false. Optional. Default is true.
       - `[Attachments <IMicrosoftGraphAttachment[]>]`: The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event. Navigation property. Read-only. Nullable.
         - `[Id <String>]`: Read-only.
         - `[ContentType <String>]`: The MIME type.
@@ -304,12 +307,12 @@ BODYPARAMETER <IMicrosoftGraphCalendarGroup1>: calendarGroup
       - `[HideAttendees <Boolean?>]`: When set to true, each attendee only sees themselves in the meeting request and meeting Tracking list. Default is false.
       - `[Importance <String>]`: importance
       - `[Instances <IMicrosoftGraphEvent1[]>]`: The occurrences of a recurring series, if the event is a series master. This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series. Navigation property. Read-only. Nullable.
-      - `[IsAllDay <Boolean?>]`: Set to true if the event lasts all day.
-      - `[IsCancelled <Boolean?>]`: Set to true if the event has been canceled.
-      - `[IsDraft <Boolean?>]`: Set to true if the user has updated the meeting in Outlook but has not sent the updates to attendees. Set to false if all changes have been sent, or if the event is an appointment without any attendees.
-      - `[IsOnlineMeeting <Boolean?>]`: True if this event has online meeting information, false otherwise. Default is false. Optional.
-      - `[IsOrganizer <Boolean?>]`: Set to true if the calendar owner (specified by the owner property of the calendar) is the organizer of the event (specified by the organizer property of the event). This also applies if a delegate organized the event on behalf of the owner.
-      - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the event.
+      - `[IsAllDay <Boolean?>]`: 
+      - `[IsCancelled <Boolean?>]`: 
+      - `[IsDraft <Boolean?>]`: 
+      - `[IsOnlineMeeting <Boolean?>]`: 
+      - `[IsOrganizer <Boolean?>]`: 
+      - `[IsReminderOn <Boolean?>]`: 
       - `[Location <IMicrosoftGraphLocation1>]`: location
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Address <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
@@ -334,7 +337,7 @@ BODYPARAMETER <IMicrosoftGraphCalendarGroup1>: calendarGroup
         - `[LocationUri <String>]`: Optional URI representing the location.
         - `[UniqueId <String>]`: For internal use only.
         - `[UniqueIdType <String>]`: locationUniqueIdType
-      - `[Locations <IMicrosoftGraphLocation1[]>]`: The locations where the event is held or attended from. The location and locations properties always correspond with each other. If you update the location property, any prior locations in the locations collection would be removed and replaced by the new location value.
+      - `[Locations <IMicrosoftGraphLocation1[]>]`: 
       - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the event. Read-only. Nullable.
         - `[Id <String>]`: Read-only.
         - `[Value <String[]>]`: A collection of property values.
@@ -350,19 +353,19 @@ BODYPARAMETER <IMicrosoftGraphCalendarGroup1>: calendarGroup
         - `[TollFreeNumbers <String[]>]`: The toll free numbers that can be used to join the conference.
         - `[TollNumber <String>]`: The toll number that can be used to join the conference.
       - `[OnlineMeetingProvider <String>]`: onlineMeetingProviderType
-      - `[OnlineMeetingUrl <String>]`: A URL for an online meeting. The property is set only when an organizer specifies an event as an online meeting such as a Skype meeting. Read-only.
+      - `[OnlineMeetingUrl <String>]`: 
       - `[Organizer <IMicrosoftGraphRecipient>]`: recipient
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-      - `[OriginalEndTimeZone <String>]`: The end time zone that was set when the event was created. A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
-      - `[OriginalStart <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-      - `[OriginalStartTimeZone <String>]`: The start time zone that was set when the event was created. A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
+      - `[OriginalEndTimeZone <String>]`: 
+      - `[OriginalStart <DateTime?>]`: 
+      - `[OriginalStartTimeZone <String>]`: 
       - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs. Required if type is absoluteMonthly or absoluteYearly.
-          - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. Possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
+          - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
           - `[FirstDayOfWeek <String>]`: dayOfWeek
           - `[Index <String>]`: weekIndex
           - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type. Required.
@@ -375,21 +378,21 @@ BODYPARAMETER <IMicrosoftGraphCalendarGroup1>: calendarGroup
           - `[RecurrenceTimeZone <String>]`: Time zone for the startDate and endDate properties. Optional. If not specified, the time zone of the event is used.
           - `[StartDate <DateTime?>]`: The date to start applying the recurrence pattern. The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event. Must be the same value as the start property of the recurring event. Required.
           - `[Type <String>]`: recurrenceRangeType
-      - `[ReminderMinutesBeforeStart <Int32?>]`: The number of minutes before the event start time that the reminder alert occurs.
-      - `[ResponseRequested <Boolean?>]`: Default is true, which represents the organizer would like an invitee to send a response to the event.
+      - `[ReminderMinutesBeforeStart <Int32?>]`: 
+      - `[ResponseRequested <Boolean?>]`: 
       - `[ResponseStatus <IMicrosoftGraphResponseStatus>]`: responseStatus
       - `[Sensitivity <String>]`: sensitivity
-      - `[SeriesMasterId <String>]`: The ID for the recurring series master item, if this event is part of a recurring series.
+      - `[SeriesMasterId <String>]`: 
       - `[ShowAs <String>]`: freeBusyStatus
       - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the event. Read-only. Nullable.
         - `[Id <String>]`: Read-only.
         - `[Value <String>]`: A property value.
       - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-      - `[Subject <String>]`: The text of the event's subject line.
-      - `[TransactionId <String>]`: A custom identifier specified by a client app for the server to avoid redundant POST operations in case of client retries to create the same event. This is useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request. After you set transactionId when creating an event, you cannot change transactionId in a subsequent update. This property is only returned in a response payload if an app has set it. Optional.
+      - `[Subject <String>]`: 
+      - `[TransactionId <String>]`: 
       - `[Type <String>]`: eventType
       - `[Uid <String>]`: 
-      - `[WebLink <String>]`: The URL to open the event in Outlook on the web.Outlook on the web opens the event in the browser if you are signed in to your mailbox. Otherwise, Outlook on the web prompts you to sign in.This URL cannot be accessed from within an iFrame.
+      - `[WebLink <String>]`: 
     - `[CanEdit <Boolean?>]`: true if the user can write to the calendar, false otherwise. This property is true for the user who created the calendar. This property is also true for a user who has been shared a calendar and granted write access, through an Outlook client or the corresponding calendarPermission resource. Read-only.
     - `[CanShare <Boolean?>]`: true if the user has the permission to share the calendar, false otherwise. Only the user who created the calendar can share it. Read-only.
     - `[CanViewPrivateItems <Boolean?>]`: true if the user can read calendar items that have been marked private, false otherwise. This property is set through an Outlook client or the corresponding calendarPermission resource. Read-only.
@@ -431,7 +434,7 @@ CALENDARS <IMicrosoftGraphCalendar1[]>: The calendars in the calendar group. Nav
     - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[Id <String>]`: Read-only.
-    - `[AllowNewTimeProposals <Boolean?>]`: True if the meeting organizer allows invitees to propose a new time when responding, false otherwise. Optional. Default is true.
+    - `[AllowNewTimeProposals <Boolean?>]`: true if the meeting organizer allows invitees to propose a new time when responding; otherwise false. Optional. Default is true.
     - `[Attachments <IMicrosoftGraphAttachment[]>]`: The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event. Navigation property. Read-only. Nullable.
       - `[Id <String>]`: Read-only.
       - `[ContentType <String>]`: The MIME type.
@@ -468,12 +471,12 @@ CALENDARS <IMicrosoftGraphCalendar1[]>: The calendars in the calendar group. Nav
     - `[HideAttendees <Boolean?>]`: When set to true, each attendee only sees themselves in the meeting request and meeting Tracking list. Default is false.
     - `[Importance <String>]`: importance
     - `[Instances <IMicrosoftGraphEvent1[]>]`: The occurrences of a recurring series, if the event is a series master. This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series. Navigation property. Read-only. Nullable.
-    - `[IsAllDay <Boolean?>]`: Set to true if the event lasts all day.
-    - `[IsCancelled <Boolean?>]`: Set to true if the event has been canceled.
-    - `[IsDraft <Boolean?>]`: Set to true if the user has updated the meeting in Outlook but has not sent the updates to attendees. Set to false if all changes have been sent, or if the event is an appointment without any attendees.
-    - `[IsOnlineMeeting <Boolean?>]`: True if this event has online meeting information, false otherwise. Default is false. Optional.
-    - `[IsOrganizer <Boolean?>]`: Set to true if the calendar owner (specified by the owner property of the calendar) is the organizer of the event (specified by the organizer property of the event). This also applies if a delegate organized the event on behalf of the owner.
-    - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the event.
+    - `[IsAllDay <Boolean?>]`: 
+    - `[IsCancelled <Boolean?>]`: 
+    - `[IsDraft <Boolean?>]`: 
+    - `[IsOnlineMeeting <Boolean?>]`: 
+    - `[IsOrganizer <Boolean?>]`: 
+    - `[IsReminderOn <Boolean?>]`: 
     - `[Location <IMicrosoftGraphLocation1>]`: location
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Address <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
@@ -498,7 +501,7 @@ CALENDARS <IMicrosoftGraphCalendar1[]>: The calendars in the calendar group. Nav
       - `[LocationUri <String>]`: Optional URI representing the location.
       - `[UniqueId <String>]`: For internal use only.
       - `[UniqueIdType <String>]`: locationUniqueIdType
-    - `[Locations <IMicrosoftGraphLocation1[]>]`: The locations where the event is held or attended from. The location and locations properties always correspond with each other. If you update the location property, any prior locations in the locations collection would be removed and replaced by the new location value.
+    - `[Locations <IMicrosoftGraphLocation1[]>]`: 
     - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the event. Read-only. Nullable.
       - `[Id <String>]`: Read-only.
       - `[Value <String[]>]`: A collection of property values.
@@ -514,19 +517,19 @@ CALENDARS <IMicrosoftGraphCalendar1[]>: The calendars in the calendar group. Nav
       - `[TollFreeNumbers <String[]>]`: The toll free numbers that can be used to join the conference.
       - `[TollNumber <String>]`: The toll number that can be used to join the conference.
     - `[OnlineMeetingProvider <String>]`: onlineMeetingProviderType
-    - `[OnlineMeetingUrl <String>]`: A URL for an online meeting. The property is set only when an organizer specifies an event as an online meeting such as a Skype meeting. Read-only.
+    - `[OnlineMeetingUrl <String>]`: 
     - `[Organizer <IMicrosoftGraphRecipient>]`: recipient
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-    - `[OriginalEndTimeZone <String>]`: The end time zone that was set when the event was created. A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
-    - `[OriginalStart <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[OriginalStartTimeZone <String>]`: The start time zone that was set when the event was created. A value of tzone://Microsoft/Custom indicates that a legacy custom time zone was set in desktop Outlook.
+    - `[OriginalEndTimeZone <String>]`: 
+    - `[OriginalStart <DateTime?>]`: 
+    - `[OriginalStartTimeZone <String>]`: 
     - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs. Required if type is absoluteMonthly or absoluteYearly.
-        - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. Possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
+        - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
         - `[FirstDayOfWeek <String>]`: dayOfWeek
         - `[Index <String>]`: weekIndex
         - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type. Required.
@@ -539,15 +542,56 @@ CALENDARS <IMicrosoftGraphCalendar1[]>: The calendars in the calendar group. Nav
         - `[RecurrenceTimeZone <String>]`: Time zone for the startDate and endDate properties. Optional. If not specified, the time zone of the event is used.
         - `[StartDate <DateTime?>]`: The date to start applying the recurrence pattern. The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event. Must be the same value as the start property of the recurring event. Required.
         - `[Type <String>]`: recurrenceRangeType
-    - `[ReminderMinutesBeforeStart <Int32?>]`: The number of minutes before the event start time that the reminder alert occurs.
-    - `[ResponseRequested <Boolean?>]`: Default is true, which represents the organizer would like an invitee to send a response to the event.
+    - `[ReminderMinutesBeforeStart <Int32?>]`: 
+    - `[ResponseRequested <Boolean?>]`: 
     - `[ResponseStatus <IMicrosoftGraphResponseStatus>]`: responseStatus
     - `[Sensitivity <String>]`: sensitivity
-    - `[SeriesMasterId <String>]`: The ID for the recurring series master item, if this event is part of a recurring series.
+    - `[SeriesMasterId <String>]`: 
     - `[ShowAs <String>]`: freeBusyStatus
     - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the event. Read-only. Nullable.
       - `[Id <String>]`: Read-only.
       - `[Value <String>]`: A property value.
+    - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+    - `[Subject <String>]`: 
+    - `[TransactionId <String>]`: 
+    - `[Type <String>]`: eventType
+    - `[Uid <String>]`: 
+    - `[WebLink <String>]`: 
+  - `[CanEdit <Boolean?>]`: true if the user can write to the calendar, false otherwise. This property is true for the user who created the calendar. This property is also true for a user who has been shared a calendar and granted write access, through an Outlook client or the corresponding calendarPermission resource. Read-only.
+  - `[CanShare <Boolean?>]`: true if the user has the permission to share the calendar, false otherwise. Only the user who created the calendar can share it. Read-only.
+  - `[CanViewPrivateItems <Boolean?>]`: true if the user can read calendar items that have been marked private, false otherwise. This property is set through an Outlook client or the corresponding calendarPermission resource. Read-only.
+  - `[ChangeKey <String>]`: Identifies the version of the calendar object. Every time the calendar is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
+  - `[Color <String>]`: calendarColor
+  - `[DefaultOnlineMeetingProvider <String>]`: onlineMeetingProviderType
+  - `[Events <IMicrosoftGraphEvent1[]>]`: The events in the calendar. Navigation property. Read-only.
+  - `[HexColor <String>]`: The calendar color, expressed in a hex color code of three hexadecimal values, each ranging from 00 to FF and representing the red, green, or blue components of the color in the RGB color space. If the user has never explicitly set a color for the calendar, this property is  empty.
+  - `[IsDefaultCalendar <Boolean?>]`: true if this is the default calendar where new events are created by default, false otherwise.
+  - `[IsRemovable <Boolean?>]`: Indicates whether this user calendar can be deleted from the user mailbox.
+  - `[IsShared <Boolean?>]`: true if the user has shared the calendar with other users, false otherwise. Since only the user who created the calendar can share it, isShared and isSharedWithMe cannot be true for the same user. This property is set when sharing is initiated in an Outlook client, and can be reset when the sharing is cancelled through the client or the corresponding calendarPermission resource. Read-only.
+  - `[IsSharedWithMe <Boolean?>]`: true if the user has been shared this calendar, false otherwise. This property is always false for a calendar owner. This property is set when sharing is initiated in an Outlook client, and can be reset when the sharing is cancelled through the client or the corresponding calendarPermission resource. Read-only.
+  - `[IsTallyingResponses <Boolean?>]`: Indicates whether this user calendar supports tracking of meeting responses. Only meeting invites sent from users' primary calendars support tracking of meeting responses.
+  - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the calendar. Read-only. Nullable.
+  - `[Name <String>]`: The calendar name.
+  - `[Owner <IMicrosoftGraphEmailAddress>]`: emailAddress
+  - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the calendar. Read-only. Nullable.
+
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
+  - `[AttachmentId <String>]`: key: id of attachment
+  - `[CalendarGroupId <String>]`: key: id of calendarGroup
+  - `[CalendarId <String>]`: key: id of calendar
+  - `[CalendarPermissionId <String>]`: key: id of calendarPermission
+  - `[EventId <String>]`: key: id of event
+  - `[EventId1 <String>]`: key: id of event
+  - `[ExtensionId <String>]`: key: id of extension
+  - `[GroupId <String>]`: key: id of group
+  - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
+  - `[PlaceId <String>]`: key: id of place
+  - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
+  - `[UserId <String>]`: key: id of user
+
+## RELATED LINKS
+
+]`: A property value.
     - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[Subject <String>]`: The text of the event's subject line.
     - `[TransactionId <String>]`: A custom identifier specified by a client app for the server to avoid redundant POST operations in case of client retries to create the same event. This is useful when low network connectivity causes the client to time out before receiving a response from the server for the client's prior create-event request. After you set transactionId when creating an event, you cannot change transactionId in a subsequent update. This property is only returned in a response payload if an app has set it. Optional.

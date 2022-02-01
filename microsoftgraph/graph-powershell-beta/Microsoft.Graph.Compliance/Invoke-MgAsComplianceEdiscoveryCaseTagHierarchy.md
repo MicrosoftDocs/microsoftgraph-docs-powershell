@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Compliance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Compliance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/invoke-mgascomplianceediscoverycasetaghierarchy
 schema: 2.0.0
@@ -33,7 +33,7 @@ Invoke function asHierarchy
 key: id of case
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: As
 Aliases:
 
@@ -46,10 +46,10 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IComplianceIdentity
+Type: Microsoft.Graph.PowerShell.Models.IComplianceIdentity
 Parameter Sets: AsViaIdentity
 Aliases:
 
@@ -66,9 +66,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryTag
+
 ## NOTES
 
 ALIASES
@@ -94,3 +96,4 @@ INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   - `[UserSourceId <String>]`: key: id of userSource
 
 ## RELATED LINKS
+

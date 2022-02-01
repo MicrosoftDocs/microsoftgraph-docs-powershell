@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Education-help.xml
+external help file:
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/update-mgeducationsynchronizationprofile
 schema: 2.0.0
@@ -20,32 +20,32 @@ Update-MgEducationSynchronizationProfile -EducationSynchronizationProfileId <Str
  [-HandleSpecialCharacterConstraint] [-Id <String>] [-IdentitySynchronizationConfiguration <Hashtable>]
  [-LicensesToAssign <IMicrosoftGraphEducationSynchronizationLicenseAssignment[]>]
  [-ProfileStatus <IMicrosoftGraphEducationSynchronizationProfileStatus>] [-State <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgEducationSynchronizationProfile -EducationSynchronizationProfileId <String>
- -BodyParameter <IMicrosoftGraphEducationSynchronizationProfile> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphEducationSynchronizationProfile> [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgEducationSynchronizationProfile -InputObject <IEducationIdentity>
+ -BodyParameter <IMicrosoftGraphEducationSynchronizationProfile> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgEducationSynchronizationProfile -InputObject <IEducationIdentity> [-AdditionalProperties <Hashtable>]
- [-DataProvider <Hashtable>] [-DisplayName <String>] [-Errors <IMicrosoftGraphEducationSynchronizationError[]>]
- [-ExpirationDate <DateTime>] [-HandleSpecialCharacterConstraint] [-Id <String>]
- [-IdentitySynchronizationConfiguration <Hashtable>]
+ [-DataProvider <Hashtable>] [-DisplayName <String>]
+ [-Errors <IMicrosoftGraphEducationSynchronizationError[]>] [-ExpirationDate <DateTime>]
+ [-HandleSpecialCharacterConstraint] [-Id <String>] [-IdentitySynchronizationConfiguration <Hashtable>]
  [-LicensesToAssign <IMicrosoftGraphEducationSynchronizationLicenseAssignment[]>]
  [-ProfileStatus <IMicrosoftGraphEducationSynchronizationProfileStatus>] [-State <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgEducationSynchronizationProfile -InputObject <IEducationIdentity>
- -BodyParameter <IMicrosoftGraphEducationSynchronizationProfile> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -59,7 +59,7 @@ Update the navigation property synchronizationProfiles in education
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -72,10 +72,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 educationSynchronizationProfile
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationSynchronizationProfile
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSynchronizationProfile
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 educationSynchronizationDataProvider
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 Name of the configuration profile for syncing identities.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -120,8 +120,8 @@ Accept wildcard characters: False
 key: id of educationSynchronizationProfile
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -133,10 +133,10 @@ Accept wildcard characters: False
 
 ### -Errors
 All errors associated with this synchronization profile.
-To construct, see NOTES section for ERRORS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ERRORS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationSynchronizationError[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSynchronizationError[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -154,7 +154,7 @@ the profile will never expire.
 (optional)
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 Determines if School Data Sync should automatically replace unsupported special characters while syncing from source.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 educationIdentitySynchronizationConfiguration
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -212,11 +212,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IEducationIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IEducationIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -228,10 +228,10 @@ Accept wildcard characters: False
 
 ### -LicensesToAssign
 License setup configuration.
-To construct, see NOTES section for LICENSESTOASSIGN properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for LICENSESTOASSIGN properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationSynchronizationLicenseAssignment[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSynchronizationLicenseAssignment[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -246,7 +246,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -259,10 +259,10 @@ Accept wildcard characters: False
 
 ### -ProfileStatus
 educationSynchronizationProfileStatus
-To construct, see NOTES section for PROFILESTATUS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for PROFILESTATUS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationSynchronizationProfileStatus
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSynchronizationProfileStatus
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -277,7 +277,7 @@ Accept wildcard characters: False
 educationSynchronizationProfileState
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -292,7 +292,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -308,7 +308,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -325,10 +325,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSynchronizationProfile
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -362,9 +365,11 @@ BODYPARAMETER <IMicrosoftGraphEducationSynchronizationProfile>: educationSynchro
   - `[ProfileStatus <IMicrosoftGraphEducationSynchronizationProfileStatus>]`: educationSynchronizationProfileStatus
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: Read-only.
-    - `[LastActivityDateTime <DateTime?>]`: 
-    - `[LastSynchronizationDateTime <DateTime?>]`: Represents the time when most recent changes have been observed in the directory.
+    - `[ErrorCount <Int64?>]`: Number of errors during synchronization.
+    - `[LastActivityDateTime <DateTime?>]`: Represents the time when most recent changes were observed in profile.
+    - `[LastSynchronizationDateTime <DateTime?>]`: Represents the time of the most recent successful  synchronization.
     - `[Status <String>]`: educationSynchronizationStatus
+    - `[StatusMessage <String>]`: Status message for the current profile's synchronization stage.
   - `[State <String>]`: educationSynchronizationProfileState
 
 ERRORS <IMicrosoftGraphEducationSynchronizationError[]>: All errors associated with this synchronization profile.
@@ -397,8 +402,11 @@ LICENSESTOASSIGN <IMicrosoftGraphEducationSynchronizationLicenseAssignment[]>: L
 PROFILESTATUS <IMicrosoftGraphEducationSynchronizationProfileStatus>: educationSynchronizationProfileStatus
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
-  - `[LastActivityDateTime <DateTime?>]`: 
-  - `[LastSynchronizationDateTime <DateTime?>]`: Represents the time when most recent changes have been observed in the directory.
+  - `[ErrorCount <Int64?>]`: Number of errors during synchronization.
+  - `[LastActivityDateTime <DateTime?>]`: Represents the time when most recent changes were observed in profile.
+  - `[LastSynchronizationDateTime <DateTime?>]`: Represents the time of the most recent successful  synchronization.
   - `[Status <String>]`: educationSynchronizationStatus
+  - `[StatusMessage <String>]`: Status message for the current profile's synchronization stage.
 
 ## RELATED LINKS
+
