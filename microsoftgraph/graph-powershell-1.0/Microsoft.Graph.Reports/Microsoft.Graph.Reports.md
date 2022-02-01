@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Reports
 Module Guid: fa55ba4f-e53b-4749-a0ca-406b3b2da803
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports
@@ -225,42 +225,4 @@ Reports singleton
 
 ### [Update-MgDeviceManagementReport](Update-MgDeviceManagementReport.md)
 Reports singleton
-
-e function getUserArchivedPrintJobs
-
-### [Get-MgReportYammerActivityCount](Get-MgReportYammerActivityCount.md)
-Invoke function getYammerActivityCounts
-
-### [Get-MgReportYammerActivityUserCount](Get-MgReportYammerActivityUserCount.md)
-Invoke function getYammerActivityUserCounts
-
-### [Get-MgReportYammerActivityUserDetail15A5](Get-MgReportYammerActivityUserDetail15A5.md)
-Invoke function getYammerActivityUserDetail
-
-### [Get-MgReportYammerActivityUserDetailAc30](Get-MgReportYammerActivityUserDetailAc30.md)
-Invoke function getYammerActivityUserDetail
-
-### [Get-MgReportYammerDeviceUsageDistributionUserCount](Get-MgReportYammerDeviceUsageDistributionUserCount.md)
-Invoke function getYammerDeviceUsageDistributionUserCounts
-
-### [Get-MgReportYammerDeviceUsageUserCount](Get-MgReportYammerDeviceUsageUserCount.md)
-Invoke function getYammerDeviceUsageUserCounts
-
-### [Get-MgReportYammerDeviceUsageUserDetailCfad](Get-MgReportYammerDeviceUsageUserDetailCfad.md)
-Invoke function getYammerDeviceUsageUserDetail
-
-### [Get-MgReportYammerDeviceUsageUserDetailD0Ac](Get-MgReportYammerDeviceUsageUserDetailD0Ac.md)
-Invoke function getYammerDeviceUsageUserDetail
-
-### [Get-MgReportYammerGroupActivityCount](Get-MgReportYammerGroupActivityCount.md)
-Invoke function getYammerGroupsActivityCounts
-
-### [Get-MgReportYammerGroupActivityDetail0D7D](Get-MgReportYammerGroupActivityDetail0D7D.md)
-Invoke function getYammerGroupsActivityDetail
-
-### [Get-MgReportYammerGroupActivityDetailDa9A](Get-MgReportYammerGroupActivityDetailDa9A.md)
-Invoke function getYammerGroupsActivityDetail
-
-### [Get-MgReportYammerGroupActivityGroupCount](Get-MgReportYammerGroupActivityGroupCount.md)
-Invoke function getYammerGroupsActivityGroupCounts
 

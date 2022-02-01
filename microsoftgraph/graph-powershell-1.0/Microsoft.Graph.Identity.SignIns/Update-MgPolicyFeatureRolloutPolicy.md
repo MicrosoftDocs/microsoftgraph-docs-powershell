@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgpolicyfeaturerolloutpolicy
@@ -23,7 +23,7 @@ Update-MgPolicyFeatureRolloutPolicy -FeatureRolloutPolicyId <String> [-Additiona
 ### Update1
 ```
 Update-MgPolicyFeatureRolloutPolicy -FeatureRolloutPolicyId <String>
- -BodyParameter <IMicrosoftGraphFeatureRolloutPolicy> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphFeatureRolloutPolicy1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
@@ -37,7 +37,7 @@ Update-MgPolicyFeatureRolloutPolicy -InputObject <IIdentitySignInsIdentity> [-Ad
 ### UpdateViaIdentity1
 ```
 Update-MgPolicyFeatureRolloutPolicy -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphFeatureRolloutPolicy> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphFeatureRolloutPolicy1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -84,7 +84,7 @@ featureRolloutPolicy
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphFeatureRolloutPolicy
+Type: IMicrosoftGraphFeatureRolloutPolicy1
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -268,7 +268,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFeatureRolloutPolicy
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFeatureRolloutPolicy1
 ## OUTPUTS
 
 ### System.Boolean

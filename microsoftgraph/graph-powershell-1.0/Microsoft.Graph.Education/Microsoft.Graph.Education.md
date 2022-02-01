@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Education
 Module Guid: db2acbe2-a990-4439-8057-9db12cc01430
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education
@@ -93,9 +93,6 @@ Nullable.
 ### [Get-MgEducationClassTeacherDelta](Get-MgEducationClassTeacherDelta.md)
 Invoke function delta
 
-### [Get-MgEducationMe](Get-MgEducationMe.md)
-Get me from education
-
 ### [Get-MgEducationMeAssignment](Get-MgEducationMeAssignment.md)
 List of assignments for the user.
 Nullable.
@@ -163,14 +160,8 @@ Classes for which the user is a teacher.
 ### [Get-MgEducationMeTaughtClassDelta](Get-MgEducationMeTaughtClassDelta.md)
 Invoke function delta
 
-### [Get-MgEducationMeUser](Get-MgEducationMeUser.md)
-The directory user corresponding to this user.
-
 ### [Get-MgEducationMeUserByRef](Get-MgEducationMeUserByRef.md)
 The directory user corresponding to this user.
-
-### [Get-MgEducationRoot](Get-MgEducationRoot.md)
-Get education
 
 ### [Get-MgEducationSchool](Get-MgEducationSchool.md)
 Get schools from education

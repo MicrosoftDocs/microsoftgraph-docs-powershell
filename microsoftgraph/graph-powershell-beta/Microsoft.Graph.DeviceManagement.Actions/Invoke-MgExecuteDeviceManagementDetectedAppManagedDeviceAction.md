@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgexecutedevicemanagementdetectedappmanageddeviceaction
@@ -15,9 +15,10 @@ Invoke action executeAction
 ### ExecuteExpanded (Default)
 ```
 Invoke-MgExecuteDeviceManagementDetectedAppManagedDeviceAction -DetectedAppId <String> [-ActionName <String>]
- [-AdditionalProperties <Hashtable>] [-DeviceIds <String[]>] [-DeviceName <String>] [-KeepEnrollmentData]
- [-KeepUserData] [-NotificationBody <String>] [-NotificationTitle <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-CarrierUrl <String>] [-DeprovisionReason <String>]
+ [-DeviceIds <String[]>] [-DeviceName <String>] [-KeepEnrollmentData] [-KeepUserData]
+ [-NotificationBody <String>] [-NotificationTitle <String>] [-OrganizationalUnitPath <String>]
+ [-PersistEsimDataPlan] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Execute
@@ -30,9 +31,10 @@ Invoke-MgExecuteDeviceManagementDetectedAppManagedDeviceAction -DetectedAppId <S
 ### ExecuteViaIdentityExpanded
 ```
 Invoke-MgExecuteDeviceManagementDetectedAppManagedDeviceAction -InputObject <IDeviceManagementActionsIdentity>
- [-ActionName <String>] [-AdditionalProperties <Hashtable>] [-DeviceIds <String[]>] [-DeviceName <String>]
- [-KeepEnrollmentData] [-KeepUserData] [-NotificationBody <String>] [-NotificationTitle <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ActionName <String>] [-AdditionalProperties <Hashtable>] [-CarrierUrl <String>]
+ [-DeprovisionReason <String>] [-DeviceIds <String[]>] [-DeviceName <String>] [-KeepEnrollmentData]
+ [-KeepUserData] [-NotificationBody <String>] [-NotificationTitle <String>] [-OrganizationalUnitPath <String>]
+ [-PersistEsimDataPlan] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ExecuteViaIdentity
@@ -92,6 +94,36 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -CarrierUrl
+.
+
+```yaml
+Type: String
+Parameter Sets: ExecuteExpanded, ExecuteViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DeprovisionReason
+.
+
+```yaml
+Type: String
+Parameter Sets: ExecuteExpanded, ExecuteViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -216,6 +248,36 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -OrganizationalUnitPath
+.
+
+```yaml
+Type: String
+Parameter Sets: ExecuteExpanded, ExecuteViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PersistEsimDataPlan
+.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: ExecuteExpanded, ExecuteViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -253,13 +315,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IPathsYows5ODevicemanagementDetectedappsDetectedappIdManageddevicesMicrosoftGraphExecuteactionPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBulkManagedDeviceActionResult
-
 ## NOTES
 
 ALIASES

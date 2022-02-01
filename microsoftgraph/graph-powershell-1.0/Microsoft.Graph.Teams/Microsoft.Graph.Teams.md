@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Teams
 Module Guid: 70816f2b-e7a1-4c6f-a0c2-96b3dd9f572b
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams
@@ -706,39 +706,6 @@ The shifts in the schedule.
 
 ### [Update-MgTeamScheduleSwapShiftChangeRequest](Update-MgTeamScheduleSwapShiftChangeRequest.md)
 Update the navigation property swapShiftsChangeRequests in teams
-
-### [Update-MgTeamScheduleTimeOff](Update-MgTeamScheduleTimeOff.md)
-The instances of times off in the schedule.
-
-### [Update-MgTeamScheduleTimeOffReason](Update-MgTeamScheduleTimeOffReason.md)
-The set of reasons for a time off in the schedule.
-
-### [Update-MgTeamScheduleTimeOffRequest](Update-MgTeamScheduleTimeOffRequest.md)
-Update the navigation property timeOffRequests in teams
-
-### [Update-MgTeamwork](Update-MgTeamwork.md)
-Update teamwork
-
-### [Update-MgTeamworkWorkforceIntegration](Update-MgTeamworkWorkforceIntegration.md)
-Update the navigation property workforceIntegrations in teamwork
-
-### [Update-MgUserChat](Update-MgUserChat.md)
-Update the navigation property chats in users
-
-### [Update-MgUserJoinedTeam](Update-MgUserJoinedTeam.md)
-The Microsoft Teams teams that the user is a member of.
-Read-only.
-Nullable.
-
-### [Update-MgUserTeamwork](Update-MgUserTeamwork.md)
-A container for Microsoft Teams features available for the user.
-Read-only.
-Nullable.
-
-### [Update-MgUserTeamworkInstalledApp](Update-MgUserTeamworkInstalledApp.md)
-The apps installed in the personal scope of this user.
-
-erty swapShiftsChangeRequests in teams
 
 ### [Update-MgTeamScheduleTimeOff](Update-MgTeamScheduleTimeOff.md)
 The instances of times off in the schedule.

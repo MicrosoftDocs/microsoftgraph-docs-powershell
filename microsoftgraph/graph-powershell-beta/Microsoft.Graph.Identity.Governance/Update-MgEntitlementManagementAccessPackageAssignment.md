@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementaccesspackageassignment
@@ -12,7 +12,13 @@ Update the navigation property accessPackageAssignments in identityGovernance
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### Reprocess (Default)
+```
+Update-MgEntitlementManagementAccessPackageAssignment -AccessPackageAssignmentId <String> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UpdateExpanded
 ```
 Update-MgEntitlementManagementAccessPackageAssignment -AccessPackageAssignmentId <String>
  [-AccessPackage <IMicrosoftGraphAccessPackage>]
@@ -22,7 +28,7 @@ Update-MgEntitlementManagementAccessPackageAssignment -AccessPackageAssignmentId
  [-AccessPackageId <String>] [-AdditionalProperties <Hashtable>] [-AssignmentPolicyId <String>]
  [-AssignmentState <String>] [-AssignmentStatus <String>] [-CatalogId <String>] [-ExpiredDateTime <DateTime>]
  [-Id <String>] [-IsExtended] [-Schedule <IMicrosoftGraphRequestSchedule>]
- [-Target <IMicrosoftGraphAccessPackageSubject>] [-TargetId <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Target <IMicrosoftGraphAccessPackageSubject1>] [-TargetId <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -42,7 +48,7 @@ Update-MgEntitlementManagementAccessPackageAssignment -InputObject <IIdentityGov
  [-AccessPackageId <String>] [-AdditionalProperties <Hashtable>] [-AssignmentPolicyId <String>]
  [-AssignmentState <String>] [-AssignmentStatus <String>] [-CatalogId <String>] [-ExpiredDateTime <DateTime>]
  [-Id <String>] [-IsExtended] [-Schedule <IMicrosoftGraphRequestSchedule>]
- [-Target <IMicrosoftGraphAccessPackageSubject>] [-TargetId <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Target <IMicrosoftGraphAccessPackageSubject1>] [-TargetId <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -50,6 +56,12 @@ Update-MgEntitlementManagementAccessPackageAssignment -InputObject <IIdentityGov
 ```
 Update-MgEntitlementManagementAccessPackageAssignment -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IMicrosoftGraphAccessPackageAssignment> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ReprocessViaIdentity
+```
+Update-MgEntitlementManagementAccessPackageAssignment -InputObject <IIdentityGovernanceIdentity> [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -80,7 +92,7 @@ key: id of accessPackageAssignment
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: Reprocess, UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -290,7 +302,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IIdentityGovernanceIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity, ReprocessViaIdentity
 Aliases:
 
 Required: True
@@ -352,7 +364,7 @@ accessPackageSubject
 To construct, see NOTES section for TARGET properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageSubject
+Type: IMicrosoftGraphAccessPackageSubject1
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -1499,5 +1511,8 @@ TARGET <IMicrosoftGraphAccessPackageSubject>: accessPackageSubject
   - `[Type <String>]`: The resource type of the subject.
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Teams
 Module Guid: 70816f2b-e7a1-4c6f-a0c2-96b3dd9f572b
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams
@@ -511,9 +511,6 @@ The instances of times off in the schedule.
 
 ### [New-MgTeamScheduleTimeOffReason](New-MgTeamScheduleTimeOffReason.md)
 The set of reasons for a time off in the schedule.
-
-### [New-MgTeamScheduleTimeOffRequest](New-MgTeamScheduleTimeOffRequest.md)
-Create new navigation property to timeOffRequests for teams
 
 ### [New-MgTeamTag](New-MgTeamTag.md)
 The tags associated with the team.

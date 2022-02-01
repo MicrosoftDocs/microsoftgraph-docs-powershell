@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Calendar
 Module Guid: e784fed5-77b7-4104-bced-5148534467f6
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar
@@ -104,10 +104,10 @@ The collection of single-value extended properties defined for the calendar.
 Read-only.
 Nullable.
 
-### [Get-MgUserCalendarView](Get-MgUserCalendarView.md)
-The calendar view for the calendar.
-Navigation property.
+### [Get-MgUserCalendarSingleValueExtendedProperty](Get-MgUserCalendarSingleValueExtendedProperty.md)
+The collection of single-value extended properties defined for the calendar.
 Read-only.
+Nullable.
 
 ### [Get-MgUserDefaultCalendar](Get-MgUserDefaultCalendar.md)
 The user's calendars.

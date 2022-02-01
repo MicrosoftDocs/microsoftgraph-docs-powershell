@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Users.Functions
 Module Guid: 9b486e6c-f1a2-4abd-977b-bc2729eba250
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions
@@ -11,23 +11,8 @@ Locale: en-US
 Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Users.Functions Cmdlets
-### [Export-MgUserDeviceAndAppManagementData623C](Export-MgUserDeviceAndAppManagementData623C.md)
-Invoke function exportDeviceAndAppManagementData
-
-### [Export-MgUserDeviceAndAppManagementDataD390](Export-MgUserDeviceAndAppManagementDataD390.md)
-Invoke function exportDeviceAndAppManagementData
-
-### [Find-MgUserRoomAc49](Find-MgUserRoomAc49.md)
-Invoke function findRooms
-
-### [Find-MgUserRoomD266](Find-MgUserRoomD266.md)
-Invoke function findRooms
-
 ### [Find-MgUserRoomList](Find-MgUserRoomList.md)
 Invoke function findRoomLists
-
-### [Get-MgUsefectiveDeviceEnrollmentConfigurationByRef](Get-MgUsefectiveDeviceEnrollmentConfigurationByRef.md)
-Invoke function getEffectiveDeviceEnrollmentConfigurations
 
 ### [Get-MgUserCalendarEventDelta](Get-MgUserCalendarEventDelta.md)
 Invoke function delta

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementgrouppolicycategory
@@ -542,5 +542,8 @@ PARENT <IMicrosoftGraphGroupPolicyCategory>: The category entity stores the cate
   - `[Parent <IMicrosoftGraphGroupPolicyCategory>]`: The category entity stores the category of a group policy definition
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

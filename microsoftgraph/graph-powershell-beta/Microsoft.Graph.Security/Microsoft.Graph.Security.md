@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Security
 Module Guid: 36dd0f6d-61b0-48f6-abdb-636146418c56
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security
@@ -15,7 +15,7 @@ Microsoft Graph PowerShell Cmdlets
 Get securityActions from security
 
 ### [Get-MgSecurityAlert](Get-MgSecurityAlert.md)
-Notifications for suspicious or potential security issues in a customer’s tenant.
+Notifications for suspicious or potential security issues in a customer's tenant.
 
 ### [Get-MgSecurityAttackSimulation](Get-MgSecurityAttackSimulation.md)
 Represent attack simulation and training campaign of a tenant.
@@ -63,7 +63,7 @@ Get userSecurityProfiles from security
 Create new navigation property to securityActions for security
 
 ### [New-MgSecurityAlert](New-MgSecurityAlert.md)
-Notifications for suspicious or potential security issues in a customer’s tenant.
+Notifications for suspicious or potential security issues in a customer's tenant.
 
 ### [New-MgSecurityAttackSimulation](New-MgSecurityAttackSimulation.md)
 Represent attack simulation and training campaign of a tenant.
@@ -108,7 +108,7 @@ Create new navigation property to userSecurityProfiles for security
 Delete navigation property securityActions for security
 
 ### [Remove-MgSecurityAlert](Remove-MgSecurityAlert.md)
-Notifications for suspicious or potential security issues in a customer’s tenant.
+Notifications for suspicious or potential security issues in a customer's tenant.
 
 ### [Remove-MgSecurityAttackSimulation](Remove-MgSecurityAttackSimulation.md)
 Provides tenants capability to launch a simulated and realistic phishing attack and learn from it.
@@ -165,7 +165,7 @@ Invoke action submitTiIndicators
 Update the navigation property securityActions in security
 
 ### [Update-MgSecurityAlert](Update-MgSecurityAlert.md)
-Notifications for suspicious or potential security issues in a customer’s tenant.
+Notifications for suspicious or potential security issues in a customer's tenant.
 
 ### [Update-MgSecurityAlertMultiple](Update-MgSecurityAlertMultiple.md)
 Invoke action updateAlerts

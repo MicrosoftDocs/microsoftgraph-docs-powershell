@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 Module Guid: 6508ccfb-7e33-4938-aaea-8b6b9ab1024f
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement
@@ -250,10 +250,10 @@ Invoke action getMemberObjects
 ### [Get-MgDomain](Get-MgDomain.md)
 Get entity from domains by key
 
-### [Get-MgDomainNameerenceByRef](Get-MgDomainNameerenceByRef.md)
+### [Get-MgDomainDomainNameReferenceByRef](Get-MgDomainDomainNameReferenceByRef.md)
 Read-only, Nullable
 
-### [Get-MgDomainRefDomainNameerenceByRef](Get-MgDomainRefDomainNameerenceByRef.md)
+### [Get-MgDomainNameReference](Get-MgDomainNameReference.md)
 Read-only, Nullable
 
 ### [Get-MgDomainServiceConfigurationRecord](Get-MgDomainServiceConfigurationRecord.md)
@@ -385,7 +385,7 @@ Add new entity to directoryRoleTemplates
 ### [New-MgDomain](New-MgDomain.md)
 Add new entity to domains
 
-### [New-MgDomainRefDomainNameerenceByRef](New-MgDomainRefDomainNameerenceByRef.md)
+### [New-MgDomainDomainNameReferenceByRef](New-MgDomainDomainNameReferenceByRef.md)
 Read-only, Nullable
 
 ### [New-MgDomainServiceConfigurationRecord](New-MgDomainServiceConfigurationRecord.md)

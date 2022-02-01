@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgreprovisiondevicemanagementvirtualendpointcloudpc
@@ -12,15 +12,31 @@ Invoke action reprovision
 
 ## SYNTAX
 
-### Reprovision (Default)
+### ReprovisionExpanded (Default)
 ```
-Invoke-MgReprovisionDeviceManagementVirtualEndpointCloudPc -CloudPcId <String> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Invoke-MgReprovisionDeviceManagementVirtualEndpointCloudPc -CloudPcId <String>
+ [-AdditionalProperties <Hashtable>] [-OSVersion <String>] [-UserAccountType <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### Reprovision
+```
+Invoke-MgReprovisionDeviceManagementVirtualEndpointCloudPc -CloudPcId <String>
+ -BodyParameter <IPaths1U4M8FzDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphReprovisionPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ReprovisionViaIdentityExpanded
+```
+Invoke-MgReprovisionDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManagementActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-OSVersion <String>] [-UserAccountType <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### ReprovisionViaIdentity
 ```
 Invoke-MgReprovisionDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManagementActionsIdentity>
+ -BodyParameter <IPaths1U4M8FzDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphReprovisionPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -31,12 +47,43 @@ Invoke action reprovision
 
 ## PARAMETERS
 
+### -AdditionalProperties
+Additional Parameters
+
+```yaml
+Type: Hashtable
+Parameter Sets: ReprovisionExpanded, ReprovisionViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -BodyParameter
+.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: IPaths1U4M8FzDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphReprovisionPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Reprovision, ReprovisionViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -CloudPcId
 key: id of cloudPC
 
 ```yaml
 Type: String
-Parameter Sets: Reprovision
+Parameter Sets: ReprovisionExpanded, Reprovision
 Aliases:
 
 Required: True
@@ -52,7 +99,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IDeviceManagementActionsIdentity
-Parameter Sets: ReprovisionViaIdentity
+Parameter Sets: ReprovisionViaIdentityExpanded, ReprovisionViaIdentity
 Aliases:
 
 Required: True
@@ -62,12 +109,42 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -OSVersion
+cloudPcOperatingSystem
+
+```yaml
+Type: String
+Parameter Sets: ReprovisionExpanded, ReprovisionViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -PassThru
 Returns true when the command succeeds
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -UserAccountType
+cloudPcUserAccountType
+
+```yaml
+Type: String
+Parameter Sets: ReprovisionExpanded, ReprovisionViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -114,11 +191,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-
+### Microsoft.Graph.PowerShell.Models.IPaths1U4M8FzDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphReprovisionPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

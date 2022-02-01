@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementaccesspackagecatalog
@@ -26,7 +26,7 @@ New-MgEntitlementManagementAccessPackageCatalog
 
 ### Create
 ```
-New-MgEntitlementManagementAccessPackageCatalog -BodyParameter <IMicrosoftGraphAccessPackageCatalog> [-WhatIf]
+New-MgEntitlementManagementAccessPackageCatalog -BodyParameter <IMicrosoftGraphAccessPackageCatalog1> [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -124,7 +124,7 @@ accessPackageCatalog
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageCatalog
+Type: IMicrosoftGraphAccessPackageCatalog1
 Parameter Sets: Create
 Aliases:
 
@@ -327,10 +327,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageCatalog
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageCatalog1
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageCatalog
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageCatalog1
 ## NOTES
 
 ALIASES
@@ -775,5 +775,8 @@ BODYPARAMETER <IMicrosoftGraphAccessPackageCatalog>: accessPackageCatalog
   - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

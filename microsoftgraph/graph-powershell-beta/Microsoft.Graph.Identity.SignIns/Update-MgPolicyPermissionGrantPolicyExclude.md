@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgpolicypermissiongrantpolicyexclude
@@ -16,11 +16,11 @@ Automatically expanded on GET.
 ### UpdateExpanded (Default)
 ```
 Update-MgPolicyPermissionGrantPolicyExclude -PermissionGrantConditionSetId <String>
- -PermissionGrantPolicyId <String> [-AdditionalProperties <Hashtable>] [-ClientApplicationIds <String[]>]
- [-ClientApplicationPublisherIds <String[]>] [-ClientApplicationTenantIds <String[]>]
- [-ClientApplicationsFromVerifiedPublisherOnly] [-Id <String>] [-PermissionClassification <String>]
- [-PermissionType <String>] [-Permissions <String[]>] [-ResourceApplication <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -PermissionGrantPolicyId <String> [-AdditionalProperties <Hashtable>] [-CertifiedClientApplicationsOnly]
+ [-ClientApplicationIds <String[]>] [-ClientApplicationPublisherIds <String[]>]
+ [-ClientApplicationTenantIds <String[]>] [-ClientApplicationsFromVerifiedPublisherOnly] [-Id <String>]
+ [-PermissionClassification <String>] [-PermissionType <String>] [-Permissions <String[]>]
+ [-ResourceApplication <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -33,7 +33,7 @@ Update-MgPolicyPermissionGrantPolicyExclude -PermissionGrantConditionSetId <Stri
 ### UpdateViaIdentityExpanded
 ```
 Update-MgPolicyPermissionGrantPolicyExclude -InputObject <IIdentitySignInsIdentity>
- [-AdditionalProperties <Hashtable>] [-ClientApplicationIds <String[]>]
+ [-AdditionalProperties <Hashtable>] [-CertifiedClientApplicationsOnly] [-ClientApplicationIds <String[]>]
  [-ClientApplicationPublisherIds <String[]>] [-ClientApplicationTenantIds <String[]>]
  [-ClientApplicationsFromVerifiedPublisherOnly] [-Id <String>] [-PermissionClassification <String>]
  [-PermissionType <String>] [-Permissions <String[]>] [-ResourceApplication <String>] [-PassThru] [-WhatIf]
@@ -83,6 +83,23 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -CertifiedClientApplicationsOnly
+Set to true to only match on client applications that are Microsoft 365 certified.
+Set to false to match on any other client app.
+Default is false.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

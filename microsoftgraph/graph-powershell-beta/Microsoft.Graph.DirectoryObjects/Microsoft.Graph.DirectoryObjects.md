@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.DirectoryObjects
 Module Guid: 8f3a913d-f11d-45c6-abfa-070cf206a3bd
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.directoryobjects
@@ -46,11 +46,4 @@ Invoke action validateProperties
 
 ### [Update-MgDirectoryObject](Update-MgDirectoryObject.md)
 Update entity in directoryObjects
-
-operty](Test-MgDirectoryObjectProperty.md)
-Invoke action validateProperties
-
-### [Update-MgDirectoryObject](Update-MgDirectoryObject.md)
-Represents an Azure Active Directory object.
-The directoryObject type is the base type for many other directory entity types.
 

@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Reports
 Module Guid: fa55ba4f-e53b-4749-a0ca-406b3b2da803
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports
@@ -336,30 +336,4 @@ Reports singleton
 
 ### [Update-MgReportAuthenticationMethodUserRegistrationDetail](Update-MgReportAuthenticationMethodUserRegistrationDetail.md)
 Update the navigation property userRegistrationDetails in reports
-
-serDetail
-
-### [Get-MgReportYammerDeviceUsageUserDetailD0Ac](Get-MgReportYammerDeviceUsageUserDetailD0Ac.md)
-Invoke function getYammerDeviceUsageUserDetail
-
-### [Get-MgReportYammerGroupActivityCount](Get-MgReportYammerGroupActivityCount.md)
-Invoke function getYammerGroupsActivityCounts
-
-### [Get-MgReportYammerGroupActivityDetail0D7D](Get-MgReportYammerGroupActivityDetail0D7D.md)
-Invoke function getYammerGroupsActivityDetail
-
-### [Get-MgReportYammerGroupActivityDetailDa9A](Get-MgReportYammerGroupActivityDetailDa9A.md)
-Invoke function getYammerGroupsActivityDetail
-
-### [Get-MgReportYammerGroupActivityGroupCount](Get-MgReportYammerGroupActivityGroupCount.md)
-Invoke function getYammerGroupsActivityGroupCounts
-
-### [Invoke-MgUserReportAuthenticationMethodRegistered](Invoke-MgUserReportAuthenticationMethodRegistered.md)
-Invoke function usersRegisteredByFeature
-
-### [Remove-MgDeviceManagementReport](Remove-MgDeviceManagementReport.md)
-Reports singleton
-
-### [Update-MgDeviceManagementReport](Update-MgDeviceManagementReport.md)
-Reports singleton
 

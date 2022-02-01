@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportcredentialuserregistrationcount
 schema: 2.0.0
@@ -31,7 +31,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCredentialUserRegistrationCount
-
 ## NOTES
 
 ALIASES
@@ -39,5 +38,3 @@ ALIASES
 ## RELATED LINKS
 
 ALIASES
-
-## RELATED LINKS

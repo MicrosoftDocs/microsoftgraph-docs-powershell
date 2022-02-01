@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementaccesspackageassignmentrequest
@@ -32,8 +32,15 @@ New-MgEntitlementManagementAccessPackageAssignmentRequest [-AccessPackage <IMicr
  [-Answers <IMicrosoftGraphAccessPackageAnswer[]>] [-CompletedDate <DateTime>] [-CreatedDateTime <DateTime>]
  [-ExpirationDateTime <DateTime>] [-Id <String>] [-IsValidationOnly] [-Justification <String>]
  [-RequestState <String>] [-RequestStatus <String>] [-RequestType <String>]
- [-Requestor <IMicrosoftGraphAccessPackageSubject>] [-Schedule <IMicrosoftGraphRequestSchedule>] [-WhatIf]
+ [-Requestor <IMicrosoftGraphAccessPackageSubject1>] [-Schedule <IMicrosoftGraphRequestSchedule>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
+```
+
+### CreateRequestAdminAddExternal
+```
+New-MgEntitlementManagementAccessPackageAssignmentRequest [-Answers <IMicrosoftGraphAccessPackageAnswer[]>]
+ [-Justification <String>] [-RequestType <String>] -AccessPackageId <String> -AssignmentPolicyId <String>
+ [-StartDate <String>] -TargetEmail <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateRequestAdminRemove
@@ -99,7 +106,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CreateRequestAdminAdd
+Parameter Sets: CreateRequestAdminAdd, CreateRequestAdminAddExternal
 Aliases:
 
 Required: True
@@ -130,7 +137,7 @@ To construct, see NOTES section for ANSWERS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAccessPackageAnswer[]
-Parameter Sets: CreateRequestAdminAdd, CreateExpanded
+Parameter Sets: CreateRequestAdminAdd, CreateExpanded, CreateRequestAdminAddExternal
 Aliases:
 
 Required: False
@@ -144,7 +151,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CreateRequestAdminAdd
+Parameter Sets: CreateRequestAdminAdd, CreateRequestAdminAddExternal
 Aliases:
 
 Required: True
@@ -255,7 +262,7 @@ The requestor's supplied justification.
 
 ```yaml
 Type: String
-Parameter Sets: CreateRequestAdminAdd, CreateExpanded, CreateRequestAdminRemove
+Parameter Sets: CreateRequestAdminAdd, CreateExpanded, CreateRequestAdminAddExternal, CreateRequestAdminRemove
 Aliases:
 
 Required: False
@@ -270,7 +277,7 @@ accessPackageSubject
 To construct, see NOTES section for REQUESTOR properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageSubject
+Type: IMicrosoftGraphAccessPackageSubject1
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -320,7 +327,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateRequestAdminAdd, CreateExpanded, CreateRequestAdminRemove
+Parameter Sets: CreateRequestAdminAdd, CreateExpanded, CreateRequestAdminAddExternal, CreateRequestAdminRemove
 Aliases:
 
 Required: False
@@ -350,10 +357,25 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CreateRequestAdminAdd
+Parameter Sets: CreateRequestAdminAdd, CreateRequestAdminAddExternal
 Aliases:
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TargetEmail
+{{ Fill TargetEmail Description }}
+
+```yaml
+Type: String
+Parameter Sets: CreateRequestAdminAddExternal
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -1090,5 +1112,8 @@ SCHEDULE <IMicrosoftGraphRequestSchedule>: requestSchedule
   - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

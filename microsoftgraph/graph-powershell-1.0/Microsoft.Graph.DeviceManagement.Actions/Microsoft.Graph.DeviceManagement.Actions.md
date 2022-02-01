@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 Module Guid: 90b911be-7e14-43ba-8af8-14390c0c317d
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions
@@ -22,6 +22,54 @@ A request to remove the active TeamViewer connector
 
 ### [Find-MgDeviceManagementManagedDevice](Find-MgDeviceManagementManagedDevice.md)
 Locate a device
+
+### [Get-MgDeviceManagementReportCachedReport](Get-MgDeviceManagementReportCachedReport.md)
+Invoke action getCachedReport
+
+### [Get-MgDeviceManagementReportCompliancePolicyNonComplianceReport](Get-MgDeviceManagementReportCompliancePolicyNonComplianceReport.md)
+Invoke action getCompliancePolicyNonComplianceReport
+
+### [Get-MgDeviceManagementReportCompliancePolicyNonComplianceSummaryReport](Get-MgDeviceManagementReportCompliancePolicyNonComplianceSummaryReport.md)
+Invoke action getCompliancePolicyNonComplianceSummaryReport
+
+### [Get-MgDeviceManagementReportComplianceSettingNonComplianceReport](Get-MgDeviceManagementReportComplianceSettingNonComplianceReport.md)
+Invoke action getComplianceSettingNonComplianceReport
+
+### [Get-MgDeviceManagementReportConfigurationPolicyNonComplianceReport](Get-MgDeviceManagementReportConfigurationPolicyNonComplianceReport.md)
+Invoke action getConfigurationPolicyNonComplianceReport
+
+### [Get-MgDeviceManagementReportConfigurationPolicyNonComplianceSummaryReport](Get-MgDeviceManagementReportConfigurationPolicyNonComplianceSummaryReport.md)
+Invoke action getConfigurationPolicyNonComplianceSummaryReport
+
+### [Get-MgDeviceManagementReportConfigurationSettingNonComplianceReport](Get-MgDeviceManagementReportConfigurationSettingNonComplianceReport.md)
+Invoke action getConfigurationSettingNonComplianceReport
+
+### [Get-MgDeviceManagementReportDeviceManagementIntentPerSettingContributingProfile](Get-MgDeviceManagementReportDeviceManagementIntentPerSettingContributingProfile.md)
+Invoke action getDeviceManagementIntentPerSettingContributingProfiles
+
+### [Get-MgDeviceManagementReportDeviceManagementIntentSettingReport](Get-MgDeviceManagementReportDeviceManagementIntentSettingReport.md)
+Invoke action getDeviceManagementIntentSettingsReport
+
+### [Get-MgDeviceManagementReportDeviceNonComplianceReport](Get-MgDeviceManagementReportDeviceNonComplianceReport.md)
+Invoke action getDeviceNonComplianceReport
+
+### [Get-MgDeviceManagementReportFilter](Get-MgDeviceManagementReportFilter.md)
+Invoke action getReportFilters
+
+### [Get-MgDeviceManagementReportHistoricalReport](Get-MgDeviceManagementReportHistoricalReport.md)
+Invoke action getHistoricalReport
+
+### [Get-MgDeviceManagementReportPolicyNonComplianceMetadata](Get-MgDeviceManagementReportPolicyNonComplianceMetadata.md)
+Invoke action getPolicyNonComplianceMetadata
+
+### [Get-MgDeviceManagementReportPolicyNonComplianceReport](Get-MgDeviceManagementReportPolicyNonComplianceReport.md)
+Invoke action getPolicyNonComplianceReport
+
+### [Get-MgDeviceManagementReportPolicyNonComplianceSummaryReport](Get-MgDeviceManagementReportPolicyNonComplianceSummaryReport.md)
+Invoke action getPolicyNonComplianceSummaryReport
+
+### [Get-MgDeviceManagementReportSettingNonComplianceReport](Get-MgDeviceManagementReportSettingNonComplianceReport.md)
+Invoke action getSettingNonComplianceReport
 
 ### [Import-MgDeviceManagementImportedWindowAutopilotDeviceIdentity](Import-MgDeviceManagementImportedWindowAutopilotDeviceIdentity.md)
 Invoke action import

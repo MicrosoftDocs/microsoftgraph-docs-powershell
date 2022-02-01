@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointonpremisesconnection
@@ -19,7 +19,8 @@ New-MgDeviceManagementVirtualEndpointOnPremisesConnection [-AdDomainName <String
  [-HealthCheckStatus <String>]
  [-HealthCheckStatusDetails <IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetails>] [-Id <String>] [-InUse]
  [-OrganizationalUnit <String>] [-ResourceGroupId <String>] [-SubnetId <String>] [-SubscriptionId <String>]
- [-SubscriptionName <String>] [-VirtualNetworkId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SubscriptionName <String>] [-Type <String>] [-VirtualNetworkId <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -260,6 +261,21 @@ Accept wildcard characters: False
 ### -SubscriptionName
 The name of the target Azure subscription.
 Read-only.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Type
+cloudPcOnPremisesConnectionType
 
 ```yaml
 Type: String

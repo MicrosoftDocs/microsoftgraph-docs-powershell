@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/set-mgsitetermstoregroupsetrelationsetbyref
 schema: 2.0.0
@@ -15,51 +15,51 @@ The [set] in which the relation is relevant.
 ### SetExpanded (Default)
 ```
 Set-MgSiteTermStoreGroupSetRelationSetByRef -GroupId <String> -RelationId <String> -SetId <String>
- -SiteId <String> [-AdditionalProperties <Hashtable>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### Set
-```
-Set-MgSiteTermStoreGroupSetRelationSetByRef -GroupId <String> -RelationId <String> -SetId <String>
- -SiteId <String> -BodyParameter <Hashtable> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### Set1
-```
-Set-MgSiteTermStoreGroupSetRelationSetByRef -GroupId <String> -RelationId <String> -SetId <String>
- -SiteId <String> -StoreId <String> -BodyParameter <Hashtable> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ -SiteId <String> [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetExpanded1
 ```
 Set-MgSiteTermStoreGroupSetRelationSetByRef -GroupId <String> -RelationId <String> -SetId <String>
- -SiteId <String> -StoreId <String> [-AdditionalProperties <Hashtable>] [-PassThru] [-Confirm] [-WhatIf]
+ -SiteId <String> -StoreId <String> [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### SetViaIdentity
+### Set1
 ```
-Set-MgSiteTermStoreGroupSetRelationSetByRef -InputObject <ISitesIdentity> -BodyParameter <Hashtable>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### SetViaIdentity1
-```
-Set-MgSiteTermStoreGroupSetRelationSetByRef -InputObject <ISitesIdentity> -BodyParameter <Hashtable>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Set-MgSiteTermStoreGroupSetRelationSetByRef -GroupId <String> -RelationId <String> -SetId <String>
+ -SiteId <String> -StoreId <String> -BodyParameter <Hashtable> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
-### SetViaIdentityExpanded
+### Set
 ```
-Set-MgSiteTermStoreGroupSetRelationSetByRef -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Set-MgSiteTermStoreGroupSetRelationSetByRef -GroupId <String> -RelationId <String> -SetId <String>
+ -SiteId <String> -BodyParameter <Hashtable> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentityExpanded1
 ```
 Set-MgSiteTermStoreGroupSetRelationSetByRef -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### SetViaIdentityExpanded
+```
+Set-MgSiteTermStoreGroupSetRelationSetByRef -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### SetViaIdentity1
+```
+Set-MgSiteTermStoreGroupSetRelationSetByRef -InputObject <ISitesIdentity> -BodyParameter <Hashtable>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### SetViaIdentity
+```
+Set-MgSiteTermStoreGroupSetRelationSetByRef -InputObject <ISitesIdentity> -BodyParameter <Hashtable>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -73,8 +73,8 @@ The [set] in which the relation is relevant.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: SetExpanded, SetExpanded1, SetViaIdentityExpanded, SetViaIdentityExpanded1
+Type: Hashtable
+Parameter Sets: SetExpanded, SetExpanded1, SetViaIdentityExpanded1, SetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -88,8 +88,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: Set, Set1, SetViaIdentity, SetViaIdentity1
+Type: Hashtable
+Parameter Sets: Set1, Set, SetViaIdentity1, SetViaIdentity
 Aliases:
 
 Required: True
@@ -103,8 +103,8 @@ Accept wildcard characters: False
 key: id of group
 
 ```yaml
-Type: System.String
-Parameter Sets: Set, Set1, SetExpanded, SetExpanded1
+Type: String
+Parameter Sets: SetExpanded, SetExpanded1, Set1, Set
 Aliases:
 
 Required: True
@@ -119,8 +119,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ISitesIdentity
-Parameter Sets: SetViaIdentity, SetViaIdentity1, SetViaIdentityExpanded, SetViaIdentityExpanded1
+Type: ISitesIdentity
+Parameter Sets: SetViaIdentityExpanded1, SetViaIdentityExpanded, SetViaIdentity1, SetViaIdentity
 Aliases:
 
 Required: True
@@ -134,7 +134,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -149,8 +149,8 @@ Accept wildcard characters: False
 key: id of relation
 
 ```yaml
-Type: System.String
-Parameter Sets: Set, Set1, SetExpanded, SetExpanded1
+Type: String
+Parameter Sets: SetExpanded, SetExpanded1, Set1, Set
 Aliases:
 
 Required: True
@@ -164,8 +164,8 @@ Accept wildcard characters: False
 key: id of set
 
 ```yaml
-Type: System.String
-Parameter Sets: Set, Set1, SetExpanded, SetExpanded1
+Type: String
+Parameter Sets: SetExpanded, SetExpanded1, Set1, Set
 Aliases:
 
 Required: True
@@ -179,8 +179,8 @@ Accept wildcard characters: False
 key: id of site
 
 ```yaml
-Type: System.String
-Parameter Sets: Set, Set1, SetExpanded, SetExpanded1
+Type: String
+Parameter Sets: SetExpanded, SetExpanded1, Set1, Set
 Aliases:
 
 Required: True
@@ -194,8 +194,8 @@ Accept wildcard characters: False
 key: id of store
 
 ```yaml
-Type: System.String
-Parameter Sets: Set1, SetExpanded1
+Type: String
+Parameter Sets: SetExpanded1, Set1
 Aliases:
 
 Required: True
@@ -209,7 +209,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -225,7 +225,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -242,13 +242,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -291,4 +288,3 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
