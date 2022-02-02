@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementintunebrandingprofile
@@ -829,5 +829,8 @@ THEMECOLORLOGO <IMicrosoftGraphMimeContent>: Contains properties for a generic m
   - `[Value <Byte[]>]`: The byte array that contains the actual content.
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

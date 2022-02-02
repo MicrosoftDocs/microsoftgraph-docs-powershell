@@ -31,6 +31,13 @@ The management conditions associated with device management of the company.
 
 ## EXAMPLES
 
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -65,7 +72,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Management conditions are events that can be triggered dynamically such as geo-fences, time-fences, and network-fences.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphManagementCondition
@@ -158,7 +165,7 @@ Accept wildcard characters: False
 
 ### -ManagementConditionStatements
 The management condition statements associated to the management condition.
-To construct, see NOTES section for MANAGEMENTCONDITIONSTATEMENTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for MANAGEMENTCONDITIONSTATEMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphManagementConditionStatement[]
@@ -245,55 +252,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagementCondition
 ## NOTES
-
-ALIASES
-
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
-
-
-BODYPARAMETER <IMicrosoftGraphManagementCondition>: Management conditions are events that can be triggered dynamically such as geo-fences, time-fences, and network-fences.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
-  - `[ApplicablePlatforms <String[]>]`: The applicable platforms for this management condition.
-  - `[CreatedDateTime <DateTime?>]`: The time the management condition was created. Generated service side.
-  - `[Description <String>]`: The admin defined description of the management condition.
-  - `[DisplayName <String>]`: The admin defined name of the management condition.
-  - `[ETag <String>]`: ETag of the management condition. Updated service side.
-  - `[ManagementConditionStatements <IMicrosoftGraphManagementConditionStatement[]>]`: The management condition statements associated to the management condition.
-    - `[Id <String>]`: Read-only.
-    - `[ApplicablePlatforms <String[]>]`: The applicable platforms for this management condition statement.
-    - `[CreatedDateTime <DateTime?>]`: The time the management condition statement was created. Generated service side.
-    - `[Description <String>]`: The admin defined description of the management condition statement.
-    - `[DisplayName <String>]`: The admin defined name of the management condition statement.
-    - `[ETag <String>]`: ETag of the management condition statement. Updated service side.
-    - `[Expression <IMicrosoftGraphManagementConditionExpression>]`: A management condition expression is an expression that produces a boolean value when evaluated, i.e. one of true or false, indicating that a management condition statement is activated/deactivated. A management condition expression may be composed of a combination of the expression variables and boolean-valued expression operators.
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ManagementConditions <IMicrosoftGraphManagementCondition[]>]`: The management conditions associated to the management condition statement.
-    - `[ModifiedDateTime <DateTime?>]`: The time the management condition statement was last modified. Updated service side.
-  - `[ModifiedDateTime <DateTime?>]`: The time the management condition was last modified. Updated service side.
-  - `[UniqueName <String>]`: Unique name for the management condition. Used in management condition expressions.
-
-MANAGEMENTCONDITIONSTATEMENTS <IMicrosoftGraphManagementConditionStatement[]>: The management condition statements associated to the management condition.
-  - `[Id <String>]`: Read-only.
-  - `[ApplicablePlatforms <String[]>]`: The applicable platforms for this management condition statement.
-  - `[CreatedDateTime <DateTime?>]`: The time the management condition statement was created. Generated service side.
-  - `[Description <String>]`: The admin defined description of the management condition statement.
-  - `[DisplayName <String>]`: The admin defined name of the management condition statement.
-  - `[ETag <String>]`: ETag of the management condition statement. Updated service side.
-  - `[Expression <IMicrosoftGraphManagementConditionExpression>]`: A management condition expression is an expression that produces a boolean value when evaluated, i.e. one of true or false, indicating that a management condition statement is activated/deactivated. A management condition expression may be composed of a combination of the expression variables and boolean-valued expression operators.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ManagementConditions <IMicrosoftGraphManagementCondition[]>]`: The management conditions associated to the management condition statement.
-    - `[Id <String>]`: Read-only.
-    - `[ApplicablePlatforms <String[]>]`: The applicable platforms for this management condition.
-    - `[CreatedDateTime <DateTime?>]`: The time the management condition was created. Generated service side.
-    - `[Description <String>]`: The admin defined description of the management condition.
-    - `[DisplayName <String>]`: The admin defined name of the management condition.
-    - `[ETag <String>]`: ETag of the management condition. Updated service side.
-    - `[ManagementConditionStatements <IMicrosoftGraphManagementConditionStatement[]>]`: The management condition statements associated to the management condition.
-    - `[ModifiedDateTime <DateTime?>]`: The time the management condition was last modified. Updated service side.
-    - `[UniqueName <String>]`: Unique name for the management condition. Used in management condition expressions.
-  - `[ModifiedDateTime <DateTime?>]`: The time the management condition statement was last modified. Updated service side.
+Please use Get-Help -Online.
 
 ## RELATED LINKS
+
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementcondition](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementcondition)
+

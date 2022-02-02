@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgserviceprincipalapproleassignment
@@ -9,23 +9,24 @@ schema: 2.0.0
 
 ## SYNOPSIS
 App role assignment for another app or service, granted to this service principal.
+Supports $expand.
 
 ## SYNTAX
 
-### List (Default)
+### List1 (Default)
 ```
 Get-MgServicePrincipalAppRoleAssignment -ServicePrincipalId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get
+### Get1
 ```
 Get-MgServicePrincipalAppRoleAssignment -AppRoleAssignmentId <String> -ServicePrincipalId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity1
 ```
 Get-MgServicePrincipalAppRoleAssignment -InputObject <IApplicationsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
@@ -33,8 +34,42 @@ Get-MgServicePrincipalAppRoleAssignment -InputObject <IApplicationsIdentity> [-E
 
 ## DESCRIPTION
 App role assignment for another app or service, granted to this service principal.
+Supports $expand.
 
 ## EXAMPLES
+
+### Example 1: Get all application role assignments for a service principal
+```powershell
+Get-MgServicePrincipalAppRoleAssignment -ServicePrincipalId '0bdb123d-b8a7-4cc9-8cc2-bd17bad06f61' |  Format-List
+
+AppRoleId            : 00000000-0000-0000-0000-000000000000
+CreatedDateTime      : 8/31/2021 2:01:28 PM
+DeletedDateTime      :
+Id                   : PRLbC6e4yUyMwr0XutBvYfZHkKGzlbxDr2I-QJWN9rs
+PrincipalDisplayName : Example App
+PrincipalId          : 0bdb123d-b8a7-4cc9-8cc2-bd17bad06f61
+PrincipalType        : ServicePrincipal
+ResourceDisplayName  : Office 365 Management APIs
+ResourceId           : 557aedfc-007c-4904-918a-7e6fed2e7403
+AdditionalProperties : {[@odata.id, https://graph.microsoft.com/v2/fb625e04-52aa-42da-b10d-14f1195d665f/directoryObjects/$/Microsof
+                       t.DirectoryServices.ServicePrincipal('0bdb123d-b8a7-4cc9-8cc2-bd17bad06f61')/appRoleAssignments/PRLbC6e4yUyM
+                       wr0XutBvYfZHkKGzlbxDr2I-QJWN9rs]}
+
+AppRoleId            : 00000000-0000-0000-0000-000000000000
+CreatedDateTime      : 8/31/2021 1:59:44 PM
+DeletedDateTime      :
+Id                   : PRLbC6e4yUyMwr0XutBvYZsr7FiAW3pIqP4F9944yBc
+PrincipalDisplayName : Example App
+PrincipalId          : 0bdb123d-b8a7-4cc9-8cc2-bd17bad06f61
+PrincipalType        : ServicePrincipal
+ResourceDisplayName  : Office 365 SharePoint Online
+ResourceId           : 1c48f923-4fbb-4d37-b772-4d577eefec9e
+AdditionalProperties : {[@odata.id, https://graph.microsoft.com/v2/fb625e04-52aa-42da-b10d-14f1195d665f/directoryObjects/$/Microsof
+                       t.DirectoryServices.ServicePrincipal('0bdb123d-b8a7-4cc9-8cc2-bd17bad06f61')/appRoleAssignments/PRLbC6e4yUyM
+                       wr0XutBvYZsr7FiAW3pIqP4F9944yBc]}
+```
+
+This example gets the application role assignments that have been granted to the specified service principal.
 
 ## PARAMETERS
 
@@ -43,7 +78,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -58,7 +93,7 @@ key: id of appRoleAssignment
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -74,7 +109,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: List1
 Aliases: CV
 
 Required: False
@@ -104,7 +139,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -116,11 +151,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: GetViaIdentity1
 Aliases:
 
 Required: True
@@ -135,7 +170,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -165,7 +200,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -180,7 +215,7 @@ key: id of servicePrincipal
 
 ```yaml
 Type: String
-Parameter Sets: List, Get
+Parameter Sets: List1, Get1
 Aliases:
 
 Required: True
@@ -195,7 +230,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List
+Parameter Sets: List1
 Aliases: OrderBy
 
 Required: False
@@ -210,7 +245,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: List1
 Aliases: Limit
 
 Required: False
@@ -225,7 +260,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -243,7 +278,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppRoleAssignment1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppRoleAssignment
 ## NOTES
 
 ALIASES
@@ -263,6 +298,7 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[DirectoryDefinitionId <String>]`: key: id of directoryDefinition
   - `[EndpointId <String>]`: key: id of endpoint
   - `[ExtensionPropertyId <String>]`: key: id of extensionProperty
+  - `[FederatedIdentityCredentialId <String>]`: key: id of federatedIdentityCredential
   - `[GroupId <String>]`: key: id of group
   - `[LicenseDetailsId <String>]`: key: id of licenseDetails
   - `[OnPremisesAgentGroupId <String>]`: key: id of onPremisesAgentGroup

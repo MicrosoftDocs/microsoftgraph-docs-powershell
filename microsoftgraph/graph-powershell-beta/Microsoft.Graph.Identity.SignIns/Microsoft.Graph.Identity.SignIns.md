@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Identity.SignIns
 Module Guid: 8a629b81-efb0-48f0-9be9-141a12a40639
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins
@@ -16,9 +16,6 @@ Invoke action confirmCompromised
 
 ### [Get-MgDataPolicyOperation](Get-MgDataPolicyOperation.md)
 Get entity from dataPolicyOperations by key
-
-### [Get-MgIdentityConditionalAccessAuthenticationContextClasserenceByRef](Get-MgIdentityConditionalAccessAuthenticationContextClasserenceByRef.md)
-Get authenticationContextClassReferences from identity
 
 ### [Get-MgIdentityConditionalAccessNamedLocation](Get-MgIdentityConditionalAccessNamedLocation.md)
 Get namedLocations from identity
@@ -247,9 +244,6 @@ Invoke action uploadSecret
 ### [New-MgDataPolicyOperation](New-MgDataPolicyOperation.md)
 Add new entity to dataPolicyOperations
 
-### [New-MgIdentityConditionalAccessAuthenticationContextClasserenceByRef](New-MgIdentityConditionalAccessAuthenticationContextClasserenceByRef.md)
-Create new navigation property to authenticationContextClassReferences for identity
-
 ### [New-MgIdentityConditionalAccessNamedLocation](New-MgIdentityConditionalAccessNamedLocation.md)
 Create new navigation property to namedLocations for identity
 
@@ -387,9 +381,6 @@ Create new navigation property to windowsHelloForBusinessMethods for users
 
 ### [Remove-MgDataPolicyOperation](Remove-MgDataPolicyOperation.md)
 Delete entity from dataPolicyOperations
-
-### [Remove-MgIdentityConditionalAccessAuthenticationContextClasserenceByRef](Remove-MgIdentityConditionalAccessAuthenticationContextClasserenceByRef.md)
-Delete navigation property authenticationContextClassReferences for identity
 
 ### [Remove-MgIdentityConditionalAccessNamedLocation](Remove-MgIdentityConditionalAccessNamedLocation.md)
 Delete navigation property namedLocations for identity
@@ -585,9 +576,6 @@ Invoke action evaluateRemoval
 
 ### [Update-MgDataPolicyOperation](Update-MgDataPolicyOperation.md)
 Update entity in dataPolicyOperations
-
-### [Update-MgIdentityConditionalAccessAuthenticationContextClasserenceByRef](Update-MgIdentityConditionalAccessAuthenticationContextClasserenceByRef.md)
-Update the navigation property authenticationContextClassReferences in identity
 
 ### [Update-MgIdentityConditionalAccessNamedLocation](Update-MgIdentityConditionalAccessNamedLocation.md)
 Update the navigation property namedLocations in identity

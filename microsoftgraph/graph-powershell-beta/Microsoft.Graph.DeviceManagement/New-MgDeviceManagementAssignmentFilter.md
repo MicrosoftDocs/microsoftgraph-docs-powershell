@@ -30,6 +30,13 @@ The list of assignment filters
 
 ## EXAMPLES
 
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -49,7 +56,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 A class containing the properties used for Assignment Filter.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceAndAppManagementAssignmentFilter
@@ -139,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -Platform
-devicePlatformType
+Supported platform types.
 
 ```yaml
 Type: String
@@ -224,23 +231,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceAndAppManagementAssignmentFilter
 ## NOTES
-
-ALIASES
-
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
-
-
-BODYPARAMETER <IMicrosoftGraphDeviceAndAppManagementAssignmentFilter>: A class containing the properties used for Assignment Filter.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
-  - `[CreatedDateTime <DateTime?>]`: Creation time of the Assignment Filter.
-  - `[Description <String>]`: Description of the Assignment Filter.
-  - `[DisplayName <String>]`: DisplayName of the Assignment Filter.
-  - `[LastModifiedDateTime <DateTime?>]`: Last modified time of the Assignment Filter.
-  - `[Platform <String>]`: devicePlatformType
-  - `[RoleScopeTags <String[]>]`: RoleScopeTags of the Assignment Filter.
-  - `[Rule <String>]`: Rule definition of the Assignment Filter.
+Please use Get-Help -Online.
 
 ## RELATED LINKS
+
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementassignmentfilter](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementassignmentfilter)
+

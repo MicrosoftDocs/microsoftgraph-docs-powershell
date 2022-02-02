@@ -16,9 +16,10 @@ Collection of MicrosoftTunnelConfiguration settings associated with account.
 ```
 New-MgDeviceManagementMicrosoftTunnelConfiguration [-AdditionalProperties <Hashtable>]
  [-AdvancedSettings <IMicrosoftGraphKeyValuePair[]>] [-DefaultDomainSuffix <String>] [-Description <String>]
- [-DisplayName <String>] [-DnsServers <String[]>] [-Id <String>] [-LastUpdateDateTime <DateTime>]
- [-ListenPort <Int32>] [-Network <String>] [-RoleScopeTagIds <String[]>] [-RoutesExclude <String[]>]
- [-RoutesInclude <String[]>] [-SplitDns <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DisableUdpConnections] [-DisplayName <String>] [-DnsServers <String[]>] [-Id <String>]
+ [-LastUpdateDateTime <DateTime>] [-ListenPort <Int32>] [-Network <String>] [-RoleScopeTagIds <String[]>]
+ [-RoutesExclude <String[]>] [-RoutesInclude <String[]>] [-SplitDns <String[]>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -31,6 +32,13 @@ New-MgDeviceManagementMicrosoftTunnelConfiguration -BodyParameter <IMicrosoftGra
 Collection of MicrosoftTunnelConfiguration settings associated with account.
 
 ## EXAMPLES
+
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -51,7 +59,7 @@ Accept wildcard characters: False
 
 ### -AdvancedSettings
 Additional settings that may be applied to the server
-To construct, see NOTES section for ADVANCEDSETTINGS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ADVANCEDSETTINGS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphKeyValuePair[]
@@ -67,7 +75,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Entity that represents a collection of Microsoft Tunnel settings
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMicrosoftTunnelConfiguration
@@ -107,6 +115,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DisableUdpConnections
+When DisableUDPConnections is set, the clients and VPN server will not use DTLS connctions to tansfer data.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -181,7 +204,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -302,34 +325,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelConfiguration
 ## NOTES
-
-ALIASES
-
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
-
-
-ADVANCEDSETTINGS <IMicrosoftGraphKeyValuePair[]>: Additional settings that may be applied to the server
-  - `[Name <String>]`: Name for this key-value pair. Possible names are: AdditionalWSFedEndpointCheckResult,  AllowedAuthenticationClassReferencesCheckResult, AlwaysRequireAuthenticationCheckResult,   AutoUpdateEnabledCheckResult, ClaimsProviderNameCheckResult, EncryptClaimsCheckResult,  EncryptedNameIdRequiredCheckResult, MonitoringEnabledCheckResult,NotBeforeSkewCheckResult,  RequestMFAFromClaimsProvidersCheckResult, SignedSamlRequestsRequiredCheckResult, AdditionalAuthenticationRulesCheckResult, TokenLifetimeCheckResult,  DelegationAuthorizationRulesCheckResult, IssuanceAuthorizationRulesCheckResult, IssuanceTransformRulesCheckResult.
-  - `[Value <String>]`: Value for this key-value pair. Possible result values are 0 (when the validation check passed), 1 (when the validation check failed), or 2 (when the validation check is a warning).
-
-BODYPARAMETER <IMicrosoftGraphMicrosoftTunnelConfiguration>: Entity that represents a collection of Microsoft Tunnel settings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
-  - `[AdvancedSettings <IMicrosoftGraphKeyValuePair[]>]`: Additional settings that may be applied to the server
-    - `[Name <String>]`: Name for this key-value pair. Possible names are: AdditionalWSFedEndpointCheckResult,  AllowedAuthenticationClassReferencesCheckResult, AlwaysRequireAuthenticationCheckResult,   AutoUpdateEnabledCheckResult, ClaimsProviderNameCheckResult, EncryptClaimsCheckResult,  EncryptedNameIdRequiredCheckResult, MonitoringEnabledCheckResult,NotBeforeSkewCheckResult,  RequestMFAFromClaimsProvidersCheckResult, SignedSamlRequestsRequiredCheckResult, AdditionalAuthenticationRulesCheckResult, TokenLifetimeCheckResult,  DelegationAuthorizationRulesCheckResult, IssuanceAuthorizationRulesCheckResult, IssuanceTransformRulesCheckResult.
-    - `[Value <String>]`: Value for this key-value pair. Possible result values are 0 (when the validation check passed), 1 (when the validation check failed), or 2 (when the validation check is a warning).
-  - `[DefaultDomainSuffix <String>]`: The Default Domain appendix that will be used by the clients
-  - `[Description <String>]`: The MicrosoftTunnelConfiguration's description
-  - `[DisplayName <String>]`: The MicrosoftTunnelConfiguration's display name
-  - `[DnsServers <String[]>]`: The DNS servers that will be used by the clients
-  - `[LastUpdateDateTime <DateTime?>]`: When the MicrosoftTunnelConfiguration was last updated
-  - `[ListenPort <Int32?>]`: The port that both TCP and UPD will listen over on the server
-  - `[Network <String>]`: The subnet that will be used to allocate virtual address for the clients
-  - `[RoleScopeTagIds <String[]>]`: List of Scope Tags for this Entity instance.
-  - `[RoutesExclude <String[]>]`: Subsets of the routes that will not be routed by the server
-  - `[RoutesInclude <String[]>]`: The routs that will be routed by the server
-  - `[SplitDns <String[]>]`: The domains that will be resolved using the provided dns servers
+Please use Get-Help -Online.
 
 ## RELATED LINKS
+
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmicrosofttunnelconfiguration](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmicrosofttunnelconfiguration)
+

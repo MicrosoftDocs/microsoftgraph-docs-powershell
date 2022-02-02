@@ -15,7 +15,7 @@ Summary of policies in conflict state for this account.
 ### CreateExpanded (Default)
 ```
 New-MgDeviceManagementDeviceConfigurationConflictSummary [-AdditionalProperties <Hashtable>]
- [-ConflictingDeviceConfigurations <IMicrosoftGraphSettingSource1[]>] [-ContributingSettings <String[]>]
+ [-ConflictingDeviceConfigurations <IMicrosoftGraphSettingSource[]>] [-ContributingSettings <String[]>]
  [-DeviceCheckinsImpacted <Int32>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,6 +29,13 @@ New-MgDeviceManagementDeviceConfigurationConflictSummary
 Summary of policies in conflict state for this account.
 
 ## EXAMPLES
+
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -49,7 +56,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Conflict summary for a set of device configuration policies.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceConfigurationConflictSummary
@@ -65,10 +72,10 @@ Accept wildcard characters: False
 
 ### -ConflictingDeviceConfigurations
 The set of policies in conflict with the given setting
-To construct, see NOTES section for CONFLICTINGDEVICECONFIGURATIONS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for CONFLICTINGDEVICECONFIGURATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSettingSource1[]
+Type: IMicrosoftGraphSettingSource[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -104,7 +111,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -165,27 +172,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationConflictSummary
 ## NOTES
-
-ALIASES
-
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
-
-
-BODYPARAMETER <IMicrosoftGraphDeviceConfigurationConflictSummary>: Conflict summary for a set of device configuration policies.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
-  - `[ConflictingDeviceConfigurations <IMicrosoftGraphSettingSource1[]>]`: The set of policies in conflict with the given setting
-    - `[DisplayName <String>]`: Not yet documented
-    - `[Id <String>]`: Not yet documented
-    - `[SourceType <String>]`: settingSourceType
-  - `[ContributingSettings <String[]>]`: The set of settings in conflict with the given policies
-  - `[DeviceCheckinsImpacted <Int32?>]`: The count of checkins impacted by the conflicting policies and settings
-
-CONFLICTINGDEVICECONFIGURATIONS <IMicrosoftGraphSettingSource1[]>: The set of policies in conflict with the given setting
-  - `[DisplayName <String>]`: Not yet documented
-  - `[Id <String>]`: Not yet documented
-  - `[SourceType <String>]`: settingSourceType
+Please use Get-Help -Online.
 
 ## RELATED LINKS
+
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdeviceconfigurationconflictsummary](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdeviceconfigurationconflictsummary)
+

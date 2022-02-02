@@ -32,6 +32,13 @@ The singleton Android for Work settings entity.
 
 ## EXAMPLES
 
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -50,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -BindStatus
-androidForWorkBindStatus
+Bind status of the tenant with the Google EMM API
 
 ```yaml
 Type: String
@@ -66,7 +73,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Settings for Android For Work.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAndroidForWorkSettings
@@ -90,13 +97,13 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -EnrollmentTarget
-androidForWorkEnrollmentTarget
+Android for Work device management targeting type for the account
 
 ```yaml
 Type: String
@@ -141,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastAppSyncStatus
-androidForWorkSyncStatus
+Sync status of the tenant with the Google EMM API
 
 ```yaml
 Type: String
@@ -210,7 +217,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -271,25 +278,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
-
-ALIASES
-
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
-
-
-BODYPARAMETER <IMicrosoftGraphAndroidForWorkSettings>: Settings for Android For Work.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
-  - `[BindStatus <String>]`: androidForWorkBindStatus
-  - `[DeviceOwnerManagementEnabled <Boolean?>]`: Indicates if this account is flighting for Android Device Owner Management with CloudDPC.
-  - `[EnrollmentTarget <String>]`: androidForWorkEnrollmentTarget
-  - `[LastAppSyncDateTime <DateTime?>]`: Last completion time for app sync
-  - `[LastAppSyncStatus <String>]`: androidForWorkSyncStatus
-  - `[LastModifiedDateTime <DateTime?>]`: Last modification time for Android for Work settings
-  - `[OwnerOrganizationName <String>]`: Organization name used when onboarding Android for Work
-  - `[OwnerUserPrincipalName <String>]`: Owner UPN that created the enterprise
-  - `[TargetGroupIds <String[]>]`: Specifies which AAD groups can enroll devices in Android for Work device management if enrollmentTarget is set to 'Targeted'
+Please use Get-Help -Online.
 
 ## RELATED LINKS
+
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementandroidforworksetting](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementandroidforworksetting)
+

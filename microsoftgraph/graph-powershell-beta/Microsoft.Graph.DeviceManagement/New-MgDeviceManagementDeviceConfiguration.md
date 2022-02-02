@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdeviceconfiguration
@@ -60,7 +60,7 @@ Accept wildcard characters: False
 
 ### -Assignments
 The list of assignments for the device configuration profile.
-To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceConfigurationAssignment1[]
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Device Configuration.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceConfiguration1
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 
 ### -DeviceManagementApplicabilityRuleDeviceMode
 deviceManagementApplicabilityRuleDeviceMode
-To construct, see NOTES section for DEVICEMANAGEMENTAPPLICABILITYRULEDEVICEMODE properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEVICEMANAGEMENTAPPLICABILITYRULEDEVICEMODE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementApplicabilityRuleDeviceMode
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 
 ### -DeviceManagementApplicabilityRuleOSEdition
 deviceManagementApplicabilityRuleOsEdition
-To construct, see NOTES section for DEVICEMANAGEMENTAPPLICABILITYRULEOSEDITION properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEVICEMANAGEMENTAPPLICABILITYRULEOSEDITION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementApplicabilityRuleOSEdition
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 
 ### -DeviceManagementApplicabilityRuleOSVersion
 deviceManagementApplicabilityRuleOsVersion
-To construct, see NOTES section for DEVICEMANAGEMENTAPPLICABILITYRULEOSVERSION properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEVICEMANAGEMENTAPPLICABILITYRULEOSVERSION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementApplicabilityRuleOSVersion
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 
 ### -DeviceSettingStateSummaries
 Device Configuration Setting State Device Summary
-To construct, see NOTES section for DEVICESETTINGSTATESUMMARIES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEVICESETTINGSTATESUMMARIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSettingStateDeviceSummary[]
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 
 ### -DeviceStatuses
 Device configuration installation status by device.
-To construct, see NOTES section for DEVICESTATUSES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEVICESTATUSES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceConfigurationDeviceStatus1[]
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 
 ### -DeviceStatusOverview
 deviceConfigurationDeviceOverview
-To construct, see NOTES section for DEVICESTATUSOVERVIEW properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEVICESTATUSOVERVIEW properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceConfigurationDeviceOverview1
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 
 ### -GroupAssignments
 The list of group assignments for the device configuration profile.
-To construct, see NOTES section for GROUPASSIGNMENTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for GROUPASSIGNMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceConfigurationGroupAssignment[]
@@ -305,14 +305,14 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -UserStatuses
 Device configuration installation status by user.
-To construct, see NOTES section for USERSTATUSES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for USERSTATUSES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceConfigurationUserStatus[]
@@ -328,7 +328,7 @@ Accept wildcard characters: False
 
 ### -UserStatusOverview
 deviceConfigurationUserOverview
-To construct, see NOTES section for USERSTATUSOVERVIEW properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for USERSTATUSOVERVIEW properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceConfigurationUserOverview1
@@ -408,42 +408,44 @@ To create the parameters described below, construct a hash table containing the 
 
 ASSIGNMENTS <IMicrosoftGraphDeviceConfigurationAssignment1[]>: The list of assignments for the device configuration profile.
   - `[Id <String>]`: Read-only.
-  - `[Source <String>]`: deviceAndAppManagementAssignmentSource
+  - `[Intent <String>]`: The administrator intent for the assignment of the profile.
+  - `[Source <String>]`: Represents source of assignment.
   - `[SourceId <String>]`: The identifier of the source of the assignment. This property is read-only.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-    - `[DeviceAndAppManagementAssignmentFilterType <String>]`: deviceAndAppManagementAssignmentFilterType
+    - `[DeviceAndAppManagementAssignmentFilterType <String>]`: Represents type of the assignment filter.
 
 BODYPARAMETER <IMicrosoftGraphDeviceConfiguration1>: Device Configuration.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
   - `[Assignments <IMicrosoftGraphDeviceConfigurationAssignment1[]>]`: The list of assignments for the device configuration profile.
     - `[Id <String>]`: Read-only.
-    - `[Source <String>]`: deviceAndAppManagementAssignmentSource
+    - `[Intent <String>]`: The administrator intent for the assignment of the profile.
+    - `[Source <String>]`: Represents source of assignment.
     - `[SourceId <String>]`: The identifier of the source of the assignment. This property is read-only.
     - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-      - `[DeviceAndAppManagementAssignmentFilterType <String>]`: deviceAndAppManagementAssignmentFilterType
+      - `[DeviceAndAppManagementAssignmentFilterType <String>]`: Represents type of the assignment filter.
   - `[CreatedDateTime <DateTime?>]`: DateTime the object was created.
   - `[Description <String>]`: Admin provided description of the Device Configuration.
   - `[DeviceManagementApplicabilityRuleDeviceMode <IMicrosoftGraphDeviceManagementApplicabilityRuleDeviceMode>]`: deviceManagementApplicabilityRuleDeviceMode
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DeviceMode <String>]`: windows10DeviceModeType
+    - `[DeviceMode <String>]`: Windows 10 Device Mode type.
     - `[Name <String>]`: Name for object.
-    - `[RuleType <String>]`: deviceManagementApplicabilityRuleType
+    - `[RuleType <String>]`: Supported Applicability rule types for Device Configuration
   - `[DeviceManagementApplicabilityRuleOSEdition <IMicrosoftGraphDeviceManagementApplicabilityRuleOSEdition>]`: deviceManagementApplicabilityRuleOsEdition
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Name <String>]`: Name for object.
     - `[OSEditionTypes <String[]>]`: Applicability rule OS edition type.
-    - `[RuleType <String>]`: deviceManagementApplicabilityRuleType
+    - `[RuleType <String>]`: Supported Applicability rule types for Device Configuration
   - `[DeviceManagementApplicabilityRuleOSVersion <IMicrosoftGraphDeviceManagementApplicabilityRuleOSVersion>]`: deviceManagementApplicabilityRuleOsVersion
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[MaxOSVersion <String>]`: Max OS version for Applicability Rule.
     - `[MinOSVersion <String>]`: Min OS version for Applicability Rule.
     - `[Name <String>]`: Name for object.
-    - `[RuleType <String>]`: deviceManagementApplicabilityRuleType
+    - `[RuleType <String>]`: Supported Applicability rule types for Device Configuration
   - `[DeviceSettingStateSummaries <IMicrosoftGraphSettingStateDeviceSummary[]>]`: Device Configuration Setting State Device Summary
     - `[Id <String>]`: Read-only.
     - `[CompliantDeviceCount <Int32?>]`: Device Compliant count for the setting
@@ -508,22 +510,22 @@ BODYPARAMETER <IMicrosoftGraphDeviceConfiguration1>: Device Configuration.
 
 DEVICEMANAGEMENTAPPLICABILITYRULEDEVICEMODE <IMicrosoftGraphDeviceManagementApplicabilityRuleDeviceMode>: deviceManagementApplicabilityRuleDeviceMode
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DeviceMode <String>]`: windows10DeviceModeType
+  - `[DeviceMode <String>]`: Windows 10 Device Mode type.
   - `[Name <String>]`: Name for object.
-  - `[RuleType <String>]`: deviceManagementApplicabilityRuleType
+  - `[RuleType <String>]`: Supported Applicability rule types for Device Configuration
 
 DEVICEMANAGEMENTAPPLICABILITYRULEOSEDITION <IMicrosoftGraphDeviceManagementApplicabilityRuleOSEdition>: deviceManagementApplicabilityRuleOsEdition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Name <String>]`: Name for object.
   - `[OSEditionTypes <String[]>]`: Applicability rule OS edition type.
-  - `[RuleType <String>]`: deviceManagementApplicabilityRuleType
+  - `[RuleType <String>]`: Supported Applicability rule types for Device Configuration
 
 DEVICEMANAGEMENTAPPLICABILITYRULEOSVERSION <IMicrosoftGraphDeviceManagementApplicabilityRuleOSVersion>: deviceManagementApplicabilityRuleOsVersion
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[MaxOSVersion <String>]`: Max OS version for Applicability Rule.
   - `[MinOSVersion <String>]`: Min OS version for Applicability Rule.
   - `[Name <String>]`: Name for object.
-  - `[RuleType <String>]`: deviceManagementApplicabilityRuleType
+  - `[RuleType <String>]`: Supported Applicability rule types for Device Configuration
 
 DEVICESETTINGSTATESUMMARIES <IMicrosoftGraphSettingStateDeviceSummary[]>: Device Configuration Setting State Device Summary
   - `[Id <String>]`: Read-only.
@@ -568,30 +570,31 @@ GROUPASSIGNMENTS <IMicrosoftGraphDeviceConfigurationGroupAssignment[]>: The list
     - `[Id <String>]`: Read-only.
     - `[Assignments <IMicrosoftGraphDeviceConfigurationAssignment1[]>]`: The list of assignments for the device configuration profile.
       - `[Id <String>]`: Read-only.
-      - `[Source <String>]`: deviceAndAppManagementAssignmentSource
+      - `[Intent <String>]`: The administrator intent for the assignment of the profile.
+      - `[Source <String>]`: Represents source of assignment.
       - `[SourceId <String>]`: The identifier of the source of the assignment. This property is read-only.
       - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-        - `[DeviceAndAppManagementAssignmentFilterType <String>]`: deviceAndAppManagementAssignmentFilterType
+        - `[DeviceAndAppManagementAssignmentFilterType <String>]`: Represents type of the assignment filter.
     - `[CreatedDateTime <DateTime?>]`: DateTime the object was created.
     - `[Description <String>]`: Admin provided description of the Device Configuration.
     - `[DeviceManagementApplicabilityRuleDeviceMode <IMicrosoftGraphDeviceManagementApplicabilityRuleDeviceMode>]`: deviceManagementApplicabilityRuleDeviceMode
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DeviceMode <String>]`: windows10DeviceModeType
+      - `[DeviceMode <String>]`: Windows 10 Device Mode type.
       - `[Name <String>]`: Name for object.
-      - `[RuleType <String>]`: deviceManagementApplicabilityRuleType
+      - `[RuleType <String>]`: Supported Applicability rule types for Device Configuration
     - `[DeviceManagementApplicabilityRuleOSEdition <IMicrosoftGraphDeviceManagementApplicabilityRuleOSEdition>]`: deviceManagementApplicabilityRuleOsEdition
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Name <String>]`: Name for object.
       - `[OSEditionTypes <String[]>]`: Applicability rule OS edition type.
-      - `[RuleType <String>]`: deviceManagementApplicabilityRuleType
+      - `[RuleType <String>]`: Supported Applicability rule types for Device Configuration
     - `[DeviceManagementApplicabilityRuleOSVersion <IMicrosoftGraphDeviceManagementApplicabilityRuleOSVersion>]`: deviceManagementApplicabilityRuleOsVersion
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[MaxOSVersion <String>]`: Max OS version for Applicability Rule.
       - `[MinOSVersion <String>]`: Min OS version for Applicability Rule.
       - `[Name <String>]`: Name for object.
-      - `[RuleType <String>]`: deviceManagementApplicabilityRuleType
+      - `[RuleType <String>]`: Supported Applicability rule types for Device Configuration
     - `[DeviceSettingStateSummaries <IMicrosoftGraphSettingStateDeviceSummary[]>]`: Device Configuration Setting State Device Summary
       - `[Id <String>]`: Read-only.
       - `[CompliantDeviceCount <Int32?>]`: Device Compliant count for the setting
@@ -673,5 +676,14 @@ USERSTATUSOVERVIEW <IMicrosoftGraphDeviceConfigurationUserOverview1>: deviceConf
   - `[SuccessCount <Int32?>]`: Number of succeeded Users
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
+
+## RELATED LINKS
+
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

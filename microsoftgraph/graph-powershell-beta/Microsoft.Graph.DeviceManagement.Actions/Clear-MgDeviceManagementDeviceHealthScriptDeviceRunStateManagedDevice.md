@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/clear-mgdevicemanagementdevicehealthscriptdevicerunstatemanageddevice
@@ -16,7 +16,8 @@ Invoke action wipe
 ```
 Clear-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice -DeviceHealthScriptDeviceStateId <String>
  -DeviceHealthScriptId <String> [-AdditionalProperties <Hashtable>] [-KeepEnrollmentData] [-KeepUserData]
- [-MacOSUnlockCode <String>] [-UseProtectedWipe] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-MacOSUnlockCode <String>] [-PersistEsimDataPlan] [-UseProtectedWipe] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Wipe
@@ -31,8 +32,8 @@ Clear-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice -DeviceHea
 ```
 Clear-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice
  -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>] [-KeepEnrollmentData]
- [-KeepUserData] [-MacOSUnlockCode <String>] [-UseProtectedWipe] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-KeepUserData] [-MacOSUnlockCode <String>] [-PersistEsimDataPlan] [-UseProtectedWipe] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### WipeViaIdentity
@@ -187,6 +188,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -PersistEsimDataPlan
+.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: WipeExpanded, WipeViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UseProtectedWipe
 .
 
@@ -239,13 +255,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IPathsWb21PyDevicemanagementDevicehealthscriptsDevicehealthscriptIdDevicerunstatesDevicehealthscriptdevicestateIdManageddeviceMicrosoftGraphWipePostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

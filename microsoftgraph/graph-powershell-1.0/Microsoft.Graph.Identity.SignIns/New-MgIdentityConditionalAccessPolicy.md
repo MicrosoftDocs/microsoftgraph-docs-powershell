@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgidentityconditionalaccesspolicy
@@ -18,7 +18,7 @@ New-MgIdentityConditionalAccessPolicy [-AdditionalProperties <Hashtable>]
  [-Conditions <IMicrosoftGraphConditionalAccessConditionSet1>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>]
  [-GrantControls <IMicrosoftGraphConditionalAccessGrantControls>] [-Id <String>] [-ModifiedDateTime <DateTime>]
- [-SessionControls <IMicrosoftGraphConditionalAccessSessionControls>] [-State <String>] [-WhatIf] [-Confirm]
+ [-SessionControls <IMicrosoftGraphConditionalAccessSessionControls1>] [-State <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -182,7 +182,7 @@ conditionalAccessSessionControls
 To construct, see NOTES section for SESSIONCONTROLS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConditionalAccessSessionControls
+Type: IMicrosoftGraphConditionalAccessSessionControls1
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -370,5 +370,11 @@ SESSIONCONTROLS <IMicrosoftGraphConditionalAccessSessionControls>: conditionalAc
     - `[Value <Int32?>]`: The number of days or hours.
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

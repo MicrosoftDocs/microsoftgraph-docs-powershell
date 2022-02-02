@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggroupmemberofbyref
@@ -8,9 +8,11 @@ schema: 2.0.0
 # Get-MgGroupMemberOfByRef
 
 ## SYNOPSIS
-Users, contacts, and groups that are members of this group.
-HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only.
+Groups and administrative units that this group is a member of.
+HTTP Methods: GET (supported for all groups).
+Read-only.
 Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -20,9 +22,11 @@ Get-MgGroupMemberOfByRef -GroupId <String> [-Filter <String>] [-Search <String>]
 ```
 
 ## DESCRIPTION
-Users, contacts, and groups that are members of this group.
-HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only.
+Groups and administrative units that this group is a member of.
+HTTP Methods: GET (supported for all groups).
+Read-only.
 Nullable.
+Supports $expand.
 
 ## EXAMPLES
 
@@ -177,3 +181,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+
+rosoft.com/fwlink/?LinkID=113216).

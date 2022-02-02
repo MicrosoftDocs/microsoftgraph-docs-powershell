@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/new-mggroupthreadpostmention
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 mention
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMention
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 emailAddress
-To construct, see NOTES section for CREATEDBY properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEmailAddress
@@ -209,7 +209,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IGroupsIdentity
@@ -225,7 +225,7 @@ Accept wildcard characters: False
 
 ### -Mentioned
 emailAddress
-To construct, see NOTES section for MENTIONED properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for MENTIONED properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEmailAddress

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggrouppermissiongrant
@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The permissions that have been granted for a group to a specific application.
+Supports $expand.
 
 ## SYNTAX
 
@@ -33,6 +34,7 @@ Get-MgGroupPermissionGrant -InputObject <IGroupsIdentity> [-ExpandProperty <Stri
 
 ## DESCRIPTION
 The permissions that have been granted for a group to a specific application.
+Supports $expand.
 
 ## EXAMPLES
 
@@ -116,7 +118,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IGroupsIdentity

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/new-mgusermailfoldermessagerule
@@ -50,7 +50,7 @@ The collection of rules that apply to the user's Inbox folder.
 
 ### -Actions
 messageRuleActions
-To construct, see NOTES section for ACTIONS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ACTIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMessageRuleActions
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 messageRule
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMessageRule
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 
 ### -Conditions
 messageRulePredicates
-To construct, see NOTES section for CONDITIONS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for CONDITIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMessageRulePredicates
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 
 ### -Exceptions
 messageRulePredicates
-To construct, see NOTES section for EXCEPTIONS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for EXCEPTIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMessageRulePredicates
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IMailIdentity
@@ -489,5 +489,8 @@ INPUTOBJECT <IMailIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

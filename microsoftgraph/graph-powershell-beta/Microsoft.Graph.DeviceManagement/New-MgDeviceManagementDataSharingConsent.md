@@ -30,6 +30,13 @@ Data sharing consents.
 
 ## EXAMPLES
 
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -49,7 +56,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Data sharing consent information.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDataSharingConsent
@@ -88,7 +95,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -209,22 +216,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDataSharingConsent
 ## NOTES
-
-ALIASES
-
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
-
-
-BODYPARAMETER <IMicrosoftGraphDataSharingConsent>: Data sharing consent information.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
-  - `[GrantDateTime <DateTime?>]`: The time consent was granted for this account
-  - `[Granted <Boolean?>]`: The granted state for the data sharing consent
-  - `[GrantedByUpn <String>]`: The Upn of the user that granted consent for this account
-  - `[GrantedByUserId <String>]`: The UserId of the user that granted consent for this account
-  - `[ServiceDisplayName <String>]`: The display name of the service work flow
-  - `[TermsUrl <String>]`: The TermsUrl for the data sharing consent
+Please use Get-Help -Online.
 
 ## RELATED LINKS
+
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdatasharingconsent](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdatasharingconsent)
+

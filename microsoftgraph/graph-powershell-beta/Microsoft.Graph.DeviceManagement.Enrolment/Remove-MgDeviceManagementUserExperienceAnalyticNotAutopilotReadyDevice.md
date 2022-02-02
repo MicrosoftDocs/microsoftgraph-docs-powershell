@@ -1,6 +1,6 @@
----
-external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Enrolment
+﻿---
+external help file: Microsoft.Graph.DeviceManagement-help.xml
+Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/remove-mgdevicemanagementuserexperienceanalyticnotautopilotreadydevice
 schema: 2.0.0
 ---
@@ -21,9 +21,8 @@ Remove-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice
 
 ### DeleteViaIdentity
 ```
-Remove-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice
- -InputObject <IDeviceManagementEnrolmentIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Remove-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice -InputObject <IDeviceManagementIdentity>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,7 +52,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementEnrolmentIdentity
+Type: IDeviceManagementIdentity
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -130,12 +129,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementEnrolmentIdentity
-
+### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

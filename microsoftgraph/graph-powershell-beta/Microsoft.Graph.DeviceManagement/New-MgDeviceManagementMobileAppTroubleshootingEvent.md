@@ -34,11 +34,18 @@ The collection property of MobileAppTroubleshootingEvent.
 
 ## EXAMPLES
 
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
+
 ## PARAMETERS
 
 ### -AdditionalInformation
 A set of string key and string value pairs which provides additional information on the Troubleshooting event
-To construct, see NOTES section for ADDITIONALINFORMATION properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ADDITIONALINFORMATION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphKeyValuePair[]
@@ -84,7 +91,7 @@ Accept wildcard characters: False
 
 ### -AppLogCollectionRequests
 The collection property of AppLogUploadRequest.
-To construct, see NOTES section for APPLOGCOLLECTIONREQUESTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for APPLOGCOLLECTIONREQUESTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAppLogCollectionRequest[]
@@ -99,8 +106,8 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-MobileAppTroubleshootingEvent Entity.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+Event representing a users device application install status.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMobileAppTroubleshootingEvent
@@ -162,7 +169,7 @@ Accept wildcard characters: False
 
 ### -History
 Intune Mobile Application Troubleshooting History Item
-To construct, see NOTES section for HISTORY properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for HISTORY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMobileAppTroubleshootingHistoryItem[]
@@ -208,7 +215,7 @@ Accept wildcard characters: False
 
 ### -TroubleshootingErrorDetails
 Object containing detailed information about the error and its remediation.
-To construct, see NOTES section for TROUBLESHOOTINGERRORDETAILS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for TROUBLESHOOTINGERRORDETAILS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails
@@ -278,76 +285,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileAppTroubleshootingEvent
 ## NOTES
-
-ALIASES
-
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
-
-
-ADDITIONALINFORMATION <IMicrosoftGraphKeyValuePair[]>: A set of string key and string value pairs which provides additional information on the Troubleshooting event
-  - `[Name <String>]`: Name for this key-value pair. Possible names are: AdditionalWSFedEndpointCheckResult,  AllowedAuthenticationClassReferencesCheckResult, AlwaysRequireAuthenticationCheckResult,   AutoUpdateEnabledCheckResult, ClaimsProviderNameCheckResult, EncryptClaimsCheckResult,  EncryptedNameIdRequiredCheckResult, MonitoringEnabledCheckResult,NotBeforeSkewCheckResult,  RequestMFAFromClaimsProvidersCheckResult, SignedSamlRequestsRequiredCheckResult, AdditionalAuthenticationRulesCheckResult, TokenLifetimeCheckResult,  DelegationAuthorizationRulesCheckResult, IssuanceAuthorizationRulesCheckResult, IssuanceTransformRulesCheckResult.
-  - `[Value <String>]`: Value for this key-value pair. Possible result values are 0 (when the validation check passed), 1 (when the validation check failed), or 2 (when the validation check is a warning).
-
-APPLOGCOLLECTIONREQUESTS <IMicrosoftGraphAppLogCollectionRequest[]>: The collection property of AppLogUploadRequest.
-  - `[Id <String>]`: Read-only.
-  - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a terminal state
-  - `[CustomLogFolders <String[]>]`: List of log folders.
-  - `[ErrorMessage <String>]`: Error message if any during the upload process
-  - `[Status <String>]`: appLogUploadState
-
-BODYPARAMETER <IMicrosoftGraphMobileAppTroubleshootingEvent>: MobileAppTroubleshootingEvent Entity.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AdditionalInformation <IMicrosoftGraphKeyValuePair[]>]`: A set of string key and string value pairs which provides additional information on the Troubleshooting event
-    - `[Name <String>]`: Name for this key-value pair. Possible names are: AdditionalWSFedEndpointCheckResult,  AllowedAuthenticationClassReferencesCheckResult, AlwaysRequireAuthenticationCheckResult,   AutoUpdateEnabledCheckResult, ClaimsProviderNameCheckResult, EncryptClaimsCheckResult,  EncryptedNameIdRequiredCheckResult, MonitoringEnabledCheckResult,NotBeforeSkewCheckResult,  RequestMFAFromClaimsProvidersCheckResult, SignedSamlRequestsRequiredCheckResult, AdditionalAuthenticationRulesCheckResult, TokenLifetimeCheckResult,  DelegationAuthorizationRulesCheckResult, IssuanceAuthorizationRulesCheckResult, IssuanceTransformRulesCheckResult.
-    - `[Value <String>]`: Value for this key-value pair. Possible result values are 0 (when the validation check passed), 1 (when the validation check failed), or 2 (when the validation check is a warning).
-  - `[CorrelationId <String>]`: Id used for tracing the failure in the service.
-  - `[EventDateTime <DateTime?>]`: Time when the event occurred .
-  - `[EventName <String>]`: Event Name corresponding to the Troubleshooting Event. It is an Optional field
-  - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Context <String>]`: Not yet documented
-    - `[Failure <String>]`: Not yet documented
-    - `[FailureDetails <String>]`: The detailed description of what went wrong.
-    - `[Remediation <String>]`: The detailed description of how to remediate this issue.
-    - `[Resources <IMicrosoftGraphDeviceManagementTroubleshootingErrorResource[]>]`: Links to helpful documentation about this failure.
-      - `[Link <String>]`: The link to the web resource. Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID}}
-      - `[Text <String>]`: Not yet documented
-  - `[Id <String>]`: Read-only.
-  - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>]`: The collection property of AppLogUploadRequest.
-    - `[Id <String>]`: Read-only.
-    - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a terminal state
-    - `[CustomLogFolders <String[]>]`: List of log folders.
-    - `[ErrorMessage <String>]`: Error message if any during the upload process
-    - `[Status <String>]`: appLogUploadState
-  - `[ApplicationId <String>]`: Intune application identifier.
-  - `[History <IMicrosoftGraphMobileAppTroubleshootingHistoryItem[]>]`: Intune Mobile Application Troubleshooting History Item
-    - `[OccurrenceDateTime <DateTime?>]`: Time when the history item occurred.
-    - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
-  - `[ManagedDeviceIdentifier <String>]`: Device identifier created or collected by Intune.
-  - `[UserId <String>]`: Identifier for the user that tried to enroll the device.
-
-HISTORY <IMicrosoftGraphMobileAppTroubleshootingHistoryItem[]>: Intune Mobile Application Troubleshooting History Item
-  - `[OccurrenceDateTime <DateTime?>]`: Time when the history item occurred.
-  - `[TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]`: Object containing detailed information about the error and its remediation.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Context <String>]`: Not yet documented
-    - `[Failure <String>]`: Not yet documented
-    - `[FailureDetails <String>]`: The detailed description of what went wrong.
-    - `[Remediation <String>]`: The detailed description of how to remediate this issue.
-    - `[Resources <IMicrosoftGraphDeviceManagementTroubleshootingErrorResource[]>]`: Links to helpful documentation about this failure.
-      - `[Link <String>]`: The link to the web resource. Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID}}
-      - `[Text <String>]`: Not yet documented
-
-TROUBLESHOOTINGERRORDETAILS <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>: Object containing detailed information about the error and its remediation.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Context <String>]`: Not yet documented
-  - `[Failure <String>]`: Not yet documented
-  - `[FailureDetails <String>]`: The detailed description of what went wrong.
-  - `[Remediation <String>]`: The detailed description of how to remediate this issue.
-  - `[Resources <IMicrosoftGraphDeviceManagementTroubleshootingErrorResource[]>]`: Links to helpful documentation about this failure.
-    - `[Link <String>]`: The link to the web resource. Can contain any of the following formatters: {{UPN}}, {{DeviceGUID}}, {{UserGUID}}
-    - `[Text <String>]`: Not yet documented
+Please use Get-Help -Online.
 
 ## RELATED LINKS
+
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmobileapptroubleshootingevent](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmobileapptroubleshootingevent)
+

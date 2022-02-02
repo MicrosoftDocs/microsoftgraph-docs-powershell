@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgplaydevicemanagementscriptdevicerunstatemanageddevicelostmodesound
@@ -12,17 +12,35 @@ Invoke action playLostModeSound
 
 ## SYNTAX
 
-### Play (Default)
+### PlayExpanded (Default)
 ```
 Invoke-MgPlayDeviceManagementScriptDeviceRunStateManagedDeviceLostModeSound
- -DeviceManagementScriptDeviceStateId <String> -DeviceManagementScriptId <String> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -DeviceManagementScriptDeviceStateId <String> -DeviceManagementScriptId <String>
+ [-AdditionalProperties <Hashtable>] [-DurationInMinutes <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### Play
+```
+Invoke-MgPlayDeviceManagementScriptDeviceRunStateManagedDeviceLostModeSound
+ -DeviceManagementScriptDeviceStateId <String> -DeviceManagementScriptId <String>
+ -BodyParameter <IPaths1RzgvboDevicemanagementDevicemanagementscriptsDevicemanagementscriptIdDevicerunstatesDevicemanagementscriptdevicestateIdManageddeviceMicrosoftGraphPlaylostmodesoundPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### PlayViaIdentityExpanded
+```
+Invoke-MgPlayDeviceManagementScriptDeviceRunStateManagedDeviceLostModeSound
+ -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-DurationInMinutes <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### PlayViaIdentity
 ```
 Invoke-MgPlayDeviceManagementScriptDeviceRunStateManagedDeviceLostModeSound
- -InputObject <IDeviceManagementActionsIdentity> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IDeviceManagementActionsIdentity>
+ -BodyParameter <IPaths1RzgvboDevicemanagementDevicemanagementscriptsDevicemanagementscriptIdDevicerunstatesDevicemanagementscriptdevicestateIdManageddeviceMicrosoftGraphPlaylostmodesoundPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -32,12 +50,43 @@ Invoke action playLostModeSound
 
 ## PARAMETERS
 
+### -AdditionalProperties
+Additional Parameters
+
+```yaml
+Type: Hashtable
+Parameter Sets: PlayExpanded, PlayViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -BodyParameter
+.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: IPaths1RzgvboDevicemanagementDevicemanagementscriptsDevicemanagementscriptIdDevicerunstatesDevicemanagementscriptdevicestateIdManageddeviceMicrosoftGraphPlaylostmodesoundPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Play, PlayViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -DeviceManagementScriptDeviceStateId
 key: id of deviceManagementScriptDeviceState
 
 ```yaml
 Type: String
-Parameter Sets: Play
+Parameter Sets: PlayExpanded, Play
 Aliases:
 
 Required: True
@@ -52,10 +101,25 @@ key: id of deviceManagementScript
 
 ```yaml
 Type: String
-Parameter Sets: Play
+Parameter Sets: PlayExpanded, Play
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DurationInMinutes
+.
+
+```yaml
+Type: String
+Parameter Sets: PlayExpanded, PlayViaIdentityExpanded
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -68,7 +132,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IDeviceManagementActionsIdentity
-Parameter Sets: PlayViaIdentity
+Parameter Sets: PlayViaIdentityExpanded, PlayViaIdentity
 Aliases:
 
 Required: True
@@ -130,11 +194,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-
+### Microsoft.Graph.PowerShell.Models.IPaths1RzgvboDevicemanagementDevicemanagementscriptsDevicemanagementscriptIdDevicerunstatesDevicemanagementscriptdevicestateIdManageddeviceMicrosoftGraphPlaylostmodesoundPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES

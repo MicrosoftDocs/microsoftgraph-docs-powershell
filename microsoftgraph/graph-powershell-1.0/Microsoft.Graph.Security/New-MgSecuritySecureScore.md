@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecuritysecurescore
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 
 ### -AverageComparativeScores
 Average score by different scopes (for example, average by industry, average by seating) and control category (Identity, Data, Device, Apps, Infrastructure) within the scope.
-To construct, see NOTES section for AVERAGECOMPARATIVESCORES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for AVERAGECOMPARATIVESCORES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAverageComparativeScore[]
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 secureScore
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecureScore
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 
 ### -ControlScores
 Contains tenant scores for a set of controls.
-To construct, see NOTES section for CONTROLSCORES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for CONTROLSCORES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphControlScore[]
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 
 ### -VendorInformation
 securityVendorInformation
-To construct, see NOTES section for VENDORINFORMATION properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for VENDORINFORMATION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityVendorInformation

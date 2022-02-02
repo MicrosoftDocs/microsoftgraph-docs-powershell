@@ -38,6 +38,13 @@ This is the container for a mailbox and OneDrive for Business site.
 
 ## EXAMPLES
 
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
+
 ## PARAMETERS
 
 ### -All
@@ -50,7 +57,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -118,7 +125,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IComplianceIdentity
@@ -157,7 +164,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -217,7 +224,7 @@ Aliases: Limit
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -247,7 +254,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -262,27 +269,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryUserSource
 ## NOTES
-
-ALIASES
-
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
-
-
-INPUTOBJECT <IComplianceIdentity>: Identity Parameter
-  - `[CaseId <String>]`: key: id of case
-  - `[CaseOperationId <String>]`: key: id of caseOperation
-  - `[CustodianId <String>]`: key: id of custodian
-  - `[DataSourceId <String>]`: key: id of dataSource
-  - `[LegalHoldId <String>]`: key: id of legalHold
-  - `[NoncustodialDataSourceId <String>]`: key: id of noncustodialDataSource
-  - `[ReviewSetId <String>]`: key: id of reviewSet
-  - `[ReviewSetQueryId <String>]`: key: id of reviewSetQuery
-  - `[SiteSourceId <String>]`: key: id of siteSource
-  - `[SourceCollectionId <String>]`: key: id of sourceCollection
-  - `[TagId <String>]`: key: id of tag
-  - `[UnifiedGroupSourceId <String>]`: key: id of unifiedGroupSource
-  - `[UserSourceId <String>]`: key: id of userSource
+Please use Get-Help -Online.
 
 ## RELATED LINKS
+
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/get-mgcomplianceediscoverycaselegalholdusersource](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/get-mgcomplianceediscoverycaselegalholdusersource)
+

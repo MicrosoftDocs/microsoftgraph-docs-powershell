@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintprintershare
@@ -17,10 +17,10 @@ Update the navigation property printerShares in print
 Update-MgPrintPrinterShare -PrinterShareId <String> [-AdditionalProperties <Hashtable>] [-AllowAllUsers]
  [-AllowedGroups <IMicrosoftGraphGroup1[]>] [-AllowedUsers <IMicrosoftGraphUser[]>]
  [-Capabilities <IMicrosoftGraphPrinterCapabilities1>] [-CreatedDateTime <DateTime>]
- [-Defaults <IMicrosoftGraphPrinterDefaults1>] [-DisplayName <String>] [-Id <String>] [-IsAcceptingJobs]
- [-Jobs <IMicrosoftGraphPrintJob1[]>] [-Location <IMicrosoftGraphPrinterLocation1>] [-Manufacturer <String>]
+ [-Defaults <IMicrosoftGraphPrinterDefaults>] [-DisplayName <String>] [-Id <String>] [-IsAcceptingJobs]
+ [-Jobs <IMicrosoftGraphPrintJob[]>] [-Location <IMicrosoftGraphPrinterLocation1>] [-Manufacturer <String>]
  [-Model <String>] [-Name <String>] [-Printer <IMicrosoftGraphPrinter1>]
- [-Status <IMicrosoftGraphPrinterStatus1>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Status <IMicrosoftGraphPrinterStatus>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -34,10 +34,10 @@ Update-MgPrintPrinterShare -PrinterShareId <String> -BodyParameter <IMicrosoftGr
 Update-MgPrintPrinterShare -InputObject <IDevicesCloudPrintIdentity> [-AdditionalProperties <Hashtable>]
  [-AllowAllUsers] [-AllowedGroups <IMicrosoftGraphGroup1[]>] [-AllowedUsers <IMicrosoftGraphUser[]>]
  [-Capabilities <IMicrosoftGraphPrinterCapabilities1>] [-CreatedDateTime <DateTime>]
- [-Defaults <IMicrosoftGraphPrinterDefaults1>] [-DisplayName <String>] [-Id <String>] [-IsAcceptingJobs]
- [-Jobs <IMicrosoftGraphPrintJob1[]>] [-Location <IMicrosoftGraphPrinterLocation1>] [-Manufacturer <String>]
+ [-Defaults <IMicrosoftGraphPrinterDefaults>] [-DisplayName <String>] [-Id <String>] [-IsAcceptingJobs]
+ [-Jobs <IMicrosoftGraphPrintJob[]>] [-Location <IMicrosoftGraphPrinterLocation1>] [-Manufacturer <String>]
  [-Model <String>] [-Name <String>] [-Printer <IMicrosoftGraphPrinter1>]
- [-Status <IMicrosoftGraphPrinterStatus1>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Status <IMicrosoftGraphPrinterStatus>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -169,7 +169,7 @@ printerDefaults
 To construct, see NOTES section for DEFAULTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrinterDefaults1
+Type: IMicrosoftGraphPrinterDefaults
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -246,7 +246,7 @@ The list of jobs that are queued for printing by the printer/printerShare.
 To construct, see NOTES section for JOBS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintJob1[]
+Type: IMicrosoftGraphPrintJob[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -369,7 +369,7 @@ printerStatus
 To construct, see NOTES section for STATUS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrinterStatus1
+Type: IMicrosoftGraphPrinterStatus
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -15953,5 +15953,8 @@ STATUS <IMicrosoftGraphPrinterStatus1>: printerStatus
   - `[State <String>]`: printerProcessingState
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

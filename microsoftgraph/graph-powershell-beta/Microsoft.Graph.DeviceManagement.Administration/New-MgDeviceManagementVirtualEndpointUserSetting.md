@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointusersetting
@@ -17,7 +17,8 @@ Cloud PC user settings.
 New-MgDeviceManagementVirtualEndpointUserSetting [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphCloudPcUserSettingAssignment[]>] [-CreatedDateTime <DateTime>]
  [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-LocalAdminEnabled]
- [-SelfServiceEnabled] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RestorePointSetting <IMicrosoftGraphCloudPcRestorePointSetting>] [-SelfServiceEnabled] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -154,6 +155,22 @@ If the local admin option is enabled, the end user can be an admin of the cloud 
 
 ```yaml
 Type: SwitchParameter
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RestorePointSetting
+cloudPcRestorePointSetting
+To construct, please use Get-Help -Online and see NOTES section for RESTOREPOINTSETTING properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCloudPcRestorePointSetting
 Parameter Sets: CreateExpanded
 Aliases:
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/update-mgusersettingregionalandlanguagesetting
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ### -AuthoringLanguages
 Prioritized list of languages the user reads and authors in.Returned by default.
 Not nullable.
-To construct, see NOTES section for AUTHORINGLANGUAGES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for AUTHORINGLANGUAGES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphLocaleInfo[]
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 regionalAndLanguageSettings
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRegionalAndLanguageSettings
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 
 ### -DefaultDisplayLanguage
 localeInfo
-To construct, see NOTES section for DEFAULTDISPLAYLANGUAGE properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEFAULTDISPLAYLANGUAGE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphLocaleInfo
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 
 ### -DefaultRegionalFormat
 localeInfo
-To construct, see NOTES section for DEFAULTREGIONALFORMAT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEFAULTREGIONALFORMAT properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphLocaleInfo
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 
 ### -DefaultSpeechInputLanguage
 localeInfo
-To construct, see NOTES section for DEFAULTSPEECHINPUTLANGUAGE properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEFAULTSPEECHINPUTLANGUAGE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphLocaleInfo
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 
 ### -DefaultTranslationLanguage
 localeInfo
-To construct, see NOTES section for DEFAULTTRANSLATIONLANGUAGE properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEFAULTTRANSLATIONLANGUAGE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphLocaleInfo
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersIdentity
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 
 ### -RegionalFormatOverrides
 regionalFormatOverrides
-To construct, see NOTES section for REGIONALFORMATOVERRIDES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for REGIONALFORMATOVERRIDES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRegionalFormatOverrides
@@ -232,7 +232,7 @@ Accept wildcard characters: False
 
 ### -TranslationPreferences
 translationPreferences
-To construct, see NOTES section for TRANSLATIONPREFERENCES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for TRANSLATIONPREFERENCES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTranslationPreferences

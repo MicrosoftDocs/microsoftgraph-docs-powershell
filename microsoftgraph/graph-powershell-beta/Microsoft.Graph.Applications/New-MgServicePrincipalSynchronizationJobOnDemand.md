@@ -45,6 +45,13 @@ Invoke action provisionOnDemand
 
 ## EXAMPLES
 
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -64,7 +71,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsJgtujvServiceprincipalsServiceprincipalIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphProvisionondemandPostRequestbodyContentApplicationJsonSchema
@@ -80,7 +87,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
@@ -96,7 +103,7 @@ Accept wildcard characters: False
 
 ### -Parameters
 .
-To construct, see NOTES section for PARAMETERS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for PARAMETERS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSynchronizationJobApplicationParameters[]
@@ -182,50 +189,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphStringKeyStringValuePair
 ## NOTES
-
-ALIASES
-
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
-
-
-BODYPARAMETER <IPathsJgtujvServiceprincipalsServiceprincipalIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphProvisionondemandPostRequestbodyContentApplicationJsonSchema>: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Parameters <IMicrosoftGraphSynchronizationJobApplicationParameters[]>]`: 
-    - `[RuleId <String>]`: The identifier of a the synchronizationRule to be applied.
-    - `[Subjects <IMicrosoftGraphSynchronizationJobSubject[]>]`: The identifiers of one or more objects to which a synchronizationJob is to be applied.
-      - `[ObjectId <String>]`: The identifier of an object to which a synchronizationJob  is to be applied.
-      - `[ObjectTypeName <String>]`: The type of the object to which a synchronizationJob  is to be applied.
-
-INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
-  - `[AppRoleAssignmentId <String>]`: key: id of appRoleAssignment
-  - `[ApplicationId <String>]`: key: id of application
-  - `[ApplicationTemplateId <String>]`: key: id of applicationTemplate
-  - `[ConnectorGroupId <String>]`: key: id of connectorGroup
-  - `[ConnectorId <String>]`: key: id of connector
-  - `[DelegatedPermissionClassificationId <String>]`: key: id of delegatedPermissionClassification
-  - `[DirectoryDefinitionId <String>]`: key: id of directoryDefinition
-  - `[EndpointId <String>]`: key: id of endpoint
-  - `[ExtensionPropertyId <String>]`: key: id of extensionProperty
-  - `[GroupId <String>]`: key: id of group
-  - `[LicenseDetailsId <String>]`: key: id of licenseDetails
-  - `[OnPremisesAgentGroupId <String>]`: key: id of onPremisesAgentGroup
-  - `[OnPremisesAgentGroupId1 <String>]`: key: id of onPremisesAgentGroup
-  - `[OnPremisesAgentId <String>]`: key: id of onPremisesAgent
-  - `[OnPremisesAgentId1 <String>]`: key: id of onPremisesAgent
-  - `[OnPremisesPublishingProfileId <String>]`: key: id of onPremisesPublishingProfile
-  - `[PublishedResourceId <String>]`: key: id of publishedResource
-  - `[PublishedResourceId1 <String>]`: key: id of publishedResource
-  - `[ServicePrincipalId <String>]`: key: id of servicePrincipal
-  - `[SynchronizationJobId <String>]`: key: id of synchronizationJob
-  - `[SynchronizationTemplateId <String>]`: key: id of synchronizationTemplate
-  - `[UserId <String>]`: key: id of user
-
-PARAMETERS <IMicrosoftGraphSynchronizationJobApplicationParameters[]>: .
-  - `[RuleId <String>]`: The identifier of a the synchronizationRule to be applied.
-  - `[Subjects <IMicrosoftGraphSynchronizationJobSubject[]>]`: The identifiers of one or more objects to which a synchronizationJob is to be applied.
-    - `[ObjectId <String>]`: The identifier of an object to which a synchronizationJob  is to be applied.
-    - `[ObjectTypeName <String>]`: The type of the object to which a synchronizationJob  is to be applied.
+Please use Get-Help -Online.
 
 ## RELATED LINKS
+
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/new-mgserviceprincipalsynchronizationjobondemand](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/new-mgserviceprincipalsynchronizationjobondemand)
+

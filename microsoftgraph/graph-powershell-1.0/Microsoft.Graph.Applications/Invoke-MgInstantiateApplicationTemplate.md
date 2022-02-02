@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/invoke-mginstantiateapplicationtemplate
@@ -12,26 +12,26 @@ Invoke action instantiate
 
 ## SYNTAX
 
-### InstantiateExpanded (Default)
+### InstantiateExpanded1 (Default)
 ```
 Invoke-MgInstantiateApplicationTemplate -ApplicationTemplateId <String> [-AdditionalProperties <Hashtable>]
  [-DisplayName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Instantiate
+### Instantiate1
 ```
 Invoke-MgInstantiateApplicationTemplate -ApplicationTemplateId <String>
  -BodyParameter <IPathsCuokzfApplicationtemplatesApplicationtemplateIdMicrosoftGraphInstantiatePostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### InstantiateViaIdentityExpanded
+### InstantiateViaIdentityExpanded1
 ```
 Invoke-MgInstantiateApplicationTemplate -InputObject <IApplicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### InstantiateViaIdentity
+### InstantiateViaIdentity1
 ```
 Invoke-MgInstantiateApplicationTemplate -InputObject <IApplicationsIdentity>
  -BodyParameter <IPathsCuokzfApplicationtemplatesApplicationtemplateIdMicrosoftGraphInstantiatePostRequestbodyContentApplicationJsonSchema>
@@ -50,7 +50,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: InstantiateExpanded, InstantiateViaIdentityExpanded
+Parameter Sets: InstantiateExpanded1, InstantiateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -65,7 +65,7 @@ key: id of applicationTemplate
 
 ```yaml
 Type: String
-Parameter Sets: InstantiateExpanded, Instantiate
+Parameter Sets: InstantiateExpanded1, Instantiate1
 Aliases:
 
 Required: True
@@ -77,11 +77,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsCuokzfApplicationtemplatesApplicationtemplateIdMicrosoftGraphInstantiatePostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Instantiate, InstantiateViaIdentity
+Parameter Sets: Instantiate1, InstantiateViaIdentity1
 Aliases:
 
 Required: True
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: InstantiateExpanded, InstantiateViaIdentityExpanded
+Parameter Sets: InstantiateExpanded1, InstantiateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -108,11 +108,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
-Parameter Sets: InstantiateViaIdentityExpanded, InstantiateViaIdentity
+Parameter Sets: InstantiateViaIdentityExpanded1, InstantiateViaIdentity1
 Aliases:
 
 Required: True
@@ -186,6 +186,7 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[DirectoryDefinitionId <String>]`: key: id of directoryDefinition
   - `[EndpointId <String>]`: key: id of endpoint
   - `[ExtensionPropertyId <String>]`: key: id of extensionProperty
+  - `[FederatedIdentityCredentialId <String>]`: key: id of federatedIdentityCredential
   - `[GroupId <String>]`: key: id of group
   - `[LicenseDetailsId <String>]`: key: id of licenseDetails
   - `[OnPremisesAgentGroupId <String>]`: key: id of onPremisesAgentGroup

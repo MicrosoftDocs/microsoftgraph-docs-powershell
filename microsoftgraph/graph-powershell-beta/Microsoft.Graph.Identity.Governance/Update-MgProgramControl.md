@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgprogramcontrol
@@ -506,5 +506,8 @@ RESOURCE <IMicrosoftGraphProgramResource>: programResource
   - `[Type <String>]`: Type of the resource, indicating whether it is a group or an app.
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

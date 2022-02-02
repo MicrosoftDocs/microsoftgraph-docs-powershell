@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Sites
-Module Guid: 285fb4ec-4827-4fcb-9747-15024f95a2b8
+Module Guid: c320fec7-f5ea-4f10-925c-cec8994df6be
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites
 Help Version: 1.0.0.0
 Locale: en-US
@@ -14,14 +14,26 @@ Microsoft Graph PowerShell Cmdlets
 ### [Add-MgSiteContentTypeBaseTypeCopy](Add-MgSiteContentTypeBaseTypeCopy.md)
 Invoke action addCopy
 
+### [Add-MgSiteContentTypeBaseTypeCopyFromContentTypeHub](Add-MgSiteContentTypeBaseTypeCopyFromContentTypeHub.md)
+Invoke action addCopyFromContentTypeHub
+
 ### [Add-MgSiteContentTypeCopy](Add-MgSiteContentTypeCopy.md)
 Invoke action addCopy
+
+### [Add-MgSiteContentTypeCopyFromContentTypeHub](Add-MgSiteContentTypeCopyFromContentTypeHub.md)
+Invoke action addCopyFromContentTypeHub
 
 ### [Add-MgSiteListContentTypeBaseTypeCopy](Add-MgSiteListContentTypeBaseTypeCopy.md)
 Invoke action addCopy
 
+### [Add-MgSiteListContentTypeBaseTypeCopyFromContentTypeHub](Add-MgSiteListContentTypeBaseTypeCopyFromContentTypeHub.md)
+Invoke action addCopyFromContentTypeHub
+
 ### [Add-MgSiteListContentTypeCopy](Add-MgSiteListContentTypeCopy.md)
 Invoke action addCopy
+
+### [Add-MgSiteListContentTypeCopyFromContentTypeHub](Add-MgSiteListContentTypeCopyFromContentTypeHub.md)
+Invoke action addCopyFromContentTypeHub
 
 ### [Copy-MgSiteContentTypeBaseToDefaultContentLocation](Copy-MgSiteContentTypeBaseToDefaultContentLocation.md)
 Invoke action copyToDefaultContentLocation
@@ -93,6 +105,9 @@ The collection of content types that are ancestors of this content type.
 ### [Get-MgSiteContentTypeBaseTypeByRef](Get-MgSiteContentTypeBaseTypeByRef.md)
 The collection of content types that are ancestors of this content type.
 
+### [Get-MgSiteContentTypeBaseTypeCompatibleHubContentType](Get-MgSiteContentTypeBaseTypeCompatibleHubContentType.md)
+Invoke function getCompatibleHubContentTypes
+
 ### [Get-MgSiteContentTypeColumn](Get-MgSiteContentTypeColumn.md)
 The collection of column definitions for this contentType.
 
@@ -110,6 +125,9 @@ The source column for content type column.
 
 ### [Get-MgSiteContentTypeColumnSourceColumnByRef](Get-MgSiteContentTypeColumnSourceColumnByRef.md)
 The source column for content type column.
+
+### [Get-MgSiteContentTypeCompatibleHubContentType](Get-MgSiteContentTypeCompatibleHubContentType.md)
+Invoke function getCompatibleHubContentTypes
 
 ### [Get-MgSiteDelta](Get-MgSiteDelta.md)
 Invoke function delta
@@ -153,6 +171,9 @@ The collection of content types that are ancestors of this content type.
 ### [Get-MgSiteListContentTypeBaseTypeByRef](Get-MgSiteListContentTypeBaseTypeByRef.md)
 The collection of content types that are ancestors of this content type.
 
+### [Get-MgSiteListContentTypeBaseTypeCompatibleHubContentType](Get-MgSiteListContentTypeBaseTypeCompatibleHubContentType.md)
+Invoke function getCompatibleHubContentTypes
+
 ### [Get-MgSiteListContentTypeColumn](Get-MgSiteListContentTypeColumn.md)
 The collection of column definitions for this contentType.
 
@@ -170,6 +191,9 @@ The source column for content type column.
 
 ### [Get-MgSiteListContentTypeColumnSourceColumnByRef](Get-MgSiteListContentTypeColumnSourceColumnByRef.md)
 The source column for content type column.
+
+### [Get-MgSiteListContentTypeCompatibleHubContentType](Get-MgSiteListContentTypeCompatibleHubContentType.md)
+Invoke function getCompatibleHubContentTypes
 
 ### [Get-MgSiteListDrive](Get-MgSiteListDrive.md)
 Only present on document libraries.
@@ -202,6 +226,9 @@ The list of previous versions of the list item.
 ### [Get-MgSiteListItemVersionField](Get-MgSiteListItemVersionField.md)
 A collection of the fields and values for this version of the list item.
 
+### [Get-MgSiteListOperation](Get-MgSiteListOperation.md)
+The collection of long running operations for the list.
+
 ### [Get-MgSiteListSubscription](Get-MgSiteListSubscription.md)
 The set of subscriptions on the list.
 
@@ -217,6 +244,9 @@ Nullable.
 
 ### [Get-MgSiteRecentNotebook](Get-MgSiteRecentNotebook.md)
 Invoke function getRecentNotebooks
+
+### [Get-MgSiteTermStore](Get-MgSiteTermStore.md)
+The termStore under this site.
 
 ### [Get-MgSubSite](Get-MgSubSite.md)
 The collection of the sub-sites under this site.
@@ -305,6 +335,9 @@ Invoke action createLink
 
 ### [New-MgSiteListItemVersion](New-MgSiteListItemVersion.md)
 The list of previous versions of the list item.
+
+### [New-MgSiteListOperation](New-MgSiteListOperation.md)
+The collection of long running operations for the list.
 
 ### [New-MgSiteListSubscription](New-MgSiteListSubscription.md)
 The set of subscriptions on the list.
@@ -414,6 +447,9 @@ The list of previous versions of the list item.
 ### [Remove-MgSiteListItemVersionField](Remove-MgSiteListItemVersionField.md)
 A collection of the fields and values for this version of the list item.
 
+### [Remove-MgSiteListOperation](Remove-MgSiteListOperation.md)
+The collection of long running operations for the list.
+
 ### [Remove-MgSiteListSubscription](Remove-MgSiteListSubscription.md)
 The set of subscriptions on the list.
 
@@ -423,6 +459,9 @@ The collection of pages in the SitePages list in this site.
 ### [Remove-MgSitePermission](Remove-MgSitePermission.md)
 The permissions associated with the site.
 Nullable.
+
+### [Remove-MgSiteTermStore](Remove-MgSiteTermStore.md)
+The termStore under this site.
 
 ### [Restore-MgSiteListItemVersion](Restore-MgSiteListItemVersion.md)
 Invoke action restoreVersion
@@ -537,6 +576,9 @@ The list of previous versions of the list item.
 ### [Update-MgSiteListItemVersionField](Update-MgSiteListItemVersionField.md)
 A collection of the fields and values for this version of the list item.
 
+### [Update-MgSiteListOperation](Update-MgSiteListOperation.md)
+The collection of long running operations for the list.
+
 ### [Update-MgSiteListSubscription](Update-MgSiteListSubscription.md)
 The set of subscriptions on the list.
 
@@ -549,6 +591,9 @@ The collection of pages in the SitePages list in this site.
 ### [Update-MgSitePermission](Update-MgSitePermission.md)
 The permissions associated with the site.
 Nullable.
+
+### [Update-MgSiteTermStore](Update-MgSiteTermStore.md)
+The termStore under this site.
 
 ### [Update-MgSubSite](Update-MgSubSite.md)
 The collection of the sub-sites under this site.

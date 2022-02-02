@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Users.Functions
 Module Guid: 9b486e6c-f1a2-4abd-977b-bc2729eba250
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions
@@ -98,61 +98,37 @@ Invoke function cell
 ### [Invoke-MgColumnUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRange](Invoke-MgColumnUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRange.md)
 Invoke function column
 
-### [Invoke-MgColumnUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRangeAfter9C18](Invoke-MgColumnUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRangeAfter9C18.md)
+### [Invoke-MgColumnUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRangeAfter](Invoke-MgColumnUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRangeAfter.md)
 Invoke function columnsAfter
 
-### [Invoke-MgColumnUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRangeAfterDb2A](Invoke-MgColumnUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRangeAfterDb2A.md)
-Invoke function columnsAfter
-
-### [Invoke-MgColumnUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRangeBefore1Bca](Invoke-MgColumnUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRangeBefore1Bca.md)
-Invoke function columnsBefore
-
-### [Invoke-MgColumnUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRangeBefore72E4](Invoke-MgColumnUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRangeBefore72E4.md)
+### [Invoke-MgColumnUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRangeBefore](Invoke-MgColumnUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRangeBefore.md)
 Invoke function columnsBefore
 
 ### [Invoke-MgColumnUserInsightSharedResourceMicrosoftGraphWorkbookRange](Invoke-MgColumnUserInsightSharedResourceMicrosoftGraphWorkbookRange.md)
 Invoke function column
 
-### [Invoke-MgColumnUserInsightSharedResourceMicrosoftGraphWorkbookRangeAfter9C18](Invoke-MgColumnUserInsightSharedResourceMicrosoftGraphWorkbookRangeAfter9C18.md)
+### [Invoke-MgColumnUserInsightSharedResourceMicrosoftGraphWorkbookRangeAfter](Invoke-MgColumnUserInsightSharedResourceMicrosoftGraphWorkbookRangeAfter.md)
 Invoke function columnsAfter
 
-### [Invoke-MgColumnUserInsightSharedResourceMicrosoftGraphWorkbookRangeAfterDb2A](Invoke-MgColumnUserInsightSharedResourceMicrosoftGraphWorkbookRangeAfterDb2A.md)
-Invoke function columnsAfter
-
-### [Invoke-MgColumnUserInsightSharedResourceMicrosoftGraphWorkbookRangeBefore1Bca](Invoke-MgColumnUserInsightSharedResourceMicrosoftGraphWorkbookRangeBefore1Bca.md)
-Invoke function columnsBefore
-
-### [Invoke-MgColumnUserInsightSharedResourceMicrosoftGraphWorkbookRangeBefore72E4](Invoke-MgColumnUserInsightSharedResourceMicrosoftGraphWorkbookRangeBefore72E4.md)
+### [Invoke-MgColumnUserInsightSharedResourceMicrosoftGraphWorkbookRangeBefore](Invoke-MgColumnUserInsightSharedResourceMicrosoftGraphWorkbookRangeBefore.md)
 Invoke function columnsBefore
 
 ### [Invoke-MgColumnUserInsightTrendingResourceMicrosoftGraphWorkbookRange](Invoke-MgColumnUserInsightTrendingResourceMicrosoftGraphWorkbookRange.md)
 Invoke function column
 
-### [Invoke-MgColumnUserInsightTrendingResourceMicrosoftGraphWorkbookRangeAfter9C18](Invoke-MgColumnUserInsightTrendingResourceMicrosoftGraphWorkbookRangeAfter9C18.md)
+### [Invoke-MgColumnUserInsightTrendingResourceMicrosoftGraphWorkbookRangeAfter](Invoke-MgColumnUserInsightTrendingResourceMicrosoftGraphWorkbookRangeAfter.md)
 Invoke function columnsAfter
 
-### [Invoke-MgColumnUserInsightTrendingResourceMicrosoftGraphWorkbookRangeAfterDb2A](Invoke-MgColumnUserInsightTrendingResourceMicrosoftGraphWorkbookRangeAfterDb2A.md)
-Invoke function columnsAfter
-
-### [Invoke-MgColumnUserInsightTrendingResourceMicrosoftGraphWorkbookRangeBefore1Bca](Invoke-MgColumnUserInsightTrendingResourceMicrosoftGraphWorkbookRangeBefore1Bca.md)
-Invoke function columnsBefore
-
-### [Invoke-MgColumnUserInsightTrendingResourceMicrosoftGraphWorkbookRangeBefore72E4](Invoke-MgColumnUserInsightTrendingResourceMicrosoftGraphWorkbookRangeBefore72E4.md)
+### [Invoke-MgColumnUserInsightTrendingResourceMicrosoftGraphWorkbookRangeBefore](Invoke-MgColumnUserInsightTrendingResourceMicrosoftGraphWorkbookRangeBefore.md)
 Invoke function columnsBefore
 
 ### [Invoke-MgColumnUserInsightUsedResourceMicrosoftGraphWorkbookRange](Invoke-MgColumnUserInsightUsedResourceMicrosoftGraphWorkbookRange.md)
 Invoke function column
 
-### [Invoke-MgColumnUserInsightUsedResourceMicrosoftGraphWorkbookRangeAfter9C18](Invoke-MgColumnUserInsightUsedResourceMicrosoftGraphWorkbookRangeAfter9C18.md)
+### [Invoke-MgColumnUserInsightUsedResourceMicrosoftGraphWorkbookRangeAfter](Invoke-MgColumnUserInsightUsedResourceMicrosoftGraphWorkbookRangeAfter.md)
 Invoke function columnsAfter
 
-### [Invoke-MgColumnUserInsightUsedResourceMicrosoftGraphWorkbookRangeAfterDb2A](Invoke-MgColumnUserInsightUsedResourceMicrosoftGraphWorkbookRangeAfterDb2A.md)
-Invoke function columnsAfter
-
-### [Invoke-MgColumnUserInsightUsedResourceMicrosoftGraphWorkbookRangeBefore1Bca](Invoke-MgColumnUserInsightUsedResourceMicrosoftGraphWorkbookRangeBefore1Bca.md)
-Invoke function columnsBefore
-
-### [Invoke-MgColumnUserInsightUsedResourceMicrosoftGraphWorkbookRangeBefore72E4](Invoke-MgColumnUserInsightUsedResourceMicrosoftGraphWorkbookRangeBefore72E4.md)
+### [Invoke-MgColumnUserInsightUsedResourceMicrosoftGraphWorkbookRangeBefore](Invoke-MgColumnUserInsightUsedResourceMicrosoftGraphWorkbookRangeBefore.md)
 Invoke function columnsBefore
 
 ### [Invoke-MgEntireUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRangeColumn](Invoke-MgEntireUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRangeColumn.md)
@@ -230,38 +206,38 @@ Invoke function offsetRange
 ### [Invoke-MgPreviewUserOnenotePage](Invoke-MgPreviewUserOnenotePage.md)
 Invoke function preview
 
-### [Invoke-MgRangeUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRange](Invoke-MgRangeUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRange.md)
-Invoke function usedRange
-
 ### [Invoke-MgRangeUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRangeResized](Invoke-MgRangeUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRangeResized.md)
 Invoke function resizedRange
+
+### [Invoke-MgRangeUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRangeUsed](Invoke-MgRangeUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRangeUsed.md)
+Invoke function usedRange
 
 ### [Invoke-MgRangeUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRangeView](Invoke-MgRangeUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRangeView.md)
 Invoke function range
 
-### [Invoke-MgRangeUserInsightSharedResourceMicrosoftGraphWorkbookRange](Invoke-MgRangeUserInsightSharedResourceMicrosoftGraphWorkbookRange.md)
-Invoke function usedRange
-
 ### [Invoke-MgRangeUserInsightSharedResourceMicrosoftGraphWorkbookRangeResized](Invoke-MgRangeUserInsightSharedResourceMicrosoftGraphWorkbookRangeResized.md)
 Invoke function resizedRange
+
+### [Invoke-MgRangeUserInsightSharedResourceMicrosoftGraphWorkbookRangeUsed](Invoke-MgRangeUserInsightSharedResourceMicrosoftGraphWorkbookRangeUsed.md)
+Invoke function usedRange
 
 ### [Invoke-MgRangeUserInsightSharedResourceMicrosoftGraphWorkbookRangeView](Invoke-MgRangeUserInsightSharedResourceMicrosoftGraphWorkbookRangeView.md)
 Invoke function range
 
-### [Invoke-MgRangeUserInsightTrendingResourceMicrosoftGraphWorkbookRange](Invoke-MgRangeUserInsightTrendingResourceMicrosoftGraphWorkbookRange.md)
-Invoke function usedRange
-
 ### [Invoke-MgRangeUserInsightTrendingResourceMicrosoftGraphWorkbookRangeResized](Invoke-MgRangeUserInsightTrendingResourceMicrosoftGraphWorkbookRangeResized.md)
 Invoke function resizedRange
+
+### [Invoke-MgRangeUserInsightTrendingResourceMicrosoftGraphWorkbookRangeUsed](Invoke-MgRangeUserInsightTrendingResourceMicrosoftGraphWorkbookRangeUsed.md)
+Invoke function usedRange
 
 ### [Invoke-MgRangeUserInsightTrendingResourceMicrosoftGraphWorkbookRangeView](Invoke-MgRangeUserInsightTrendingResourceMicrosoftGraphWorkbookRangeView.md)
 Invoke function range
 
-### [Invoke-MgRangeUserInsightUsedResourceMicrosoftGraphWorkbookRange](Invoke-MgRangeUserInsightUsedResourceMicrosoftGraphWorkbookRange.md)
-Invoke function usedRange
-
 ### [Invoke-MgRangeUserInsightUsedResourceMicrosoftGraphWorkbookRangeResized](Invoke-MgRangeUserInsightUsedResourceMicrosoftGraphWorkbookRangeResized.md)
 Invoke function resizedRange
+
+### [Invoke-MgRangeUserInsightUsedResourceMicrosoftGraphWorkbookRangeUsed](Invoke-MgRangeUserInsightUsedResourceMicrosoftGraphWorkbookRangeUsed.md)
+Invoke function usedRange
 
 ### [Invoke-MgRangeUserInsightUsedResourceMicrosoftGraphWorkbookRangeView](Invoke-MgRangeUserInsightUsedResourceMicrosoftGraphWorkbookRangeView.md)
 Invoke function range
@@ -272,16 +248,10 @@ Invoke function recent
 ### [Invoke-MgRowUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRange](Invoke-MgRowUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRange.md)
 Invoke function row
 
-### [Invoke-MgRowUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRangeAbove251E](Invoke-MgRowUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRangeAbove251E.md)
+### [Invoke-MgRowUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRangeAbove](Invoke-MgRowUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRangeAbove.md)
 Invoke function rowsAbove
 
-### [Invoke-MgRowUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRangeAbove3Ac1](Invoke-MgRowUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRangeAbove3Ac1.md)
-Invoke function rowsAbove
-
-### [Invoke-MgRowUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRangeBelow3B3C](Invoke-MgRowUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRangeBelow3B3C.md)
-Invoke function rowsBelow
-
-### [Invoke-MgRowUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRangeBelowCb11](Invoke-MgRowUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRangeBelowCb11.md)
+### [Invoke-MgRowUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRangeBelow](Invoke-MgRowUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRangeBelow.md)
 Invoke function rowsBelow
 
 ### [Invoke-MgRowUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRangeEntire](Invoke-MgRowUserInsightSharedLastSharedMethodMicrosoftGraphWorkbookRangeEntire.md)
@@ -290,16 +260,10 @@ Invoke function entireRow
 ### [Invoke-MgRowUserInsightSharedResourceMicrosoftGraphWorkbookRange](Invoke-MgRowUserInsightSharedResourceMicrosoftGraphWorkbookRange.md)
 Invoke function row
 
-### [Invoke-MgRowUserInsightSharedResourceMicrosoftGraphWorkbookRangeAbove251E](Invoke-MgRowUserInsightSharedResourceMicrosoftGraphWorkbookRangeAbove251E.md)
+### [Invoke-MgRowUserInsightSharedResourceMicrosoftGraphWorkbookRangeAbove](Invoke-MgRowUserInsightSharedResourceMicrosoftGraphWorkbookRangeAbove.md)
 Invoke function rowsAbove
 
-### [Invoke-MgRowUserInsightSharedResourceMicrosoftGraphWorkbookRangeAbove3Ac1](Invoke-MgRowUserInsightSharedResourceMicrosoftGraphWorkbookRangeAbove3Ac1.md)
-Invoke function rowsAbove
-
-### [Invoke-MgRowUserInsightSharedResourceMicrosoftGraphWorkbookRangeBelow3B3C](Invoke-MgRowUserInsightSharedResourceMicrosoftGraphWorkbookRangeBelow3B3C.md)
-Invoke function rowsBelow
-
-### [Invoke-MgRowUserInsightSharedResourceMicrosoftGraphWorkbookRangeBelowCb11](Invoke-MgRowUserInsightSharedResourceMicrosoftGraphWorkbookRangeBelowCb11.md)
+### [Invoke-MgRowUserInsightSharedResourceMicrosoftGraphWorkbookRangeBelow](Invoke-MgRowUserInsightSharedResourceMicrosoftGraphWorkbookRangeBelow.md)
 Invoke function rowsBelow
 
 ### [Invoke-MgRowUserInsightSharedResourceMicrosoftGraphWorkbookRangeEntire](Invoke-MgRowUserInsightSharedResourceMicrosoftGraphWorkbookRangeEntire.md)
@@ -308,16 +272,10 @@ Invoke function entireRow
 ### [Invoke-MgRowUserInsightTrendingResourceMicrosoftGraphWorkbookRange](Invoke-MgRowUserInsightTrendingResourceMicrosoftGraphWorkbookRange.md)
 Invoke function row
 
-### [Invoke-MgRowUserInsightTrendingResourceMicrosoftGraphWorkbookRangeAbove251E](Invoke-MgRowUserInsightTrendingResourceMicrosoftGraphWorkbookRangeAbove251E.md)
+### [Invoke-MgRowUserInsightTrendingResourceMicrosoftGraphWorkbookRangeAbove](Invoke-MgRowUserInsightTrendingResourceMicrosoftGraphWorkbookRangeAbove.md)
 Invoke function rowsAbove
 
-### [Invoke-MgRowUserInsightTrendingResourceMicrosoftGraphWorkbookRangeAbove3Ac1](Invoke-MgRowUserInsightTrendingResourceMicrosoftGraphWorkbookRangeAbove3Ac1.md)
-Invoke function rowsAbove
-
-### [Invoke-MgRowUserInsightTrendingResourceMicrosoftGraphWorkbookRangeBelow3B3C](Invoke-MgRowUserInsightTrendingResourceMicrosoftGraphWorkbookRangeBelow3B3C.md)
-Invoke function rowsBelow
-
-### [Invoke-MgRowUserInsightTrendingResourceMicrosoftGraphWorkbookRangeBelowCb11](Invoke-MgRowUserInsightTrendingResourceMicrosoftGraphWorkbookRangeBelowCb11.md)
+### [Invoke-MgRowUserInsightTrendingResourceMicrosoftGraphWorkbookRangeBelow](Invoke-MgRowUserInsightTrendingResourceMicrosoftGraphWorkbookRangeBelow.md)
 Invoke function rowsBelow
 
 ### [Invoke-MgRowUserInsightTrendingResourceMicrosoftGraphWorkbookRangeEntire](Invoke-MgRowUserInsightTrendingResourceMicrosoftGraphWorkbookRangeEntire.md)
@@ -326,16 +284,10 @@ Invoke function entireRow
 ### [Invoke-MgRowUserInsightUsedResourceMicrosoftGraphWorkbookRange](Invoke-MgRowUserInsightUsedResourceMicrosoftGraphWorkbookRange.md)
 Invoke function row
 
-### [Invoke-MgRowUserInsightUsedResourceMicrosoftGraphWorkbookRangeAbove251E](Invoke-MgRowUserInsightUsedResourceMicrosoftGraphWorkbookRangeAbove251E.md)
+### [Invoke-MgRowUserInsightUsedResourceMicrosoftGraphWorkbookRangeAbove](Invoke-MgRowUserInsightUsedResourceMicrosoftGraphWorkbookRangeAbove.md)
 Invoke function rowsAbove
 
-### [Invoke-MgRowUserInsightUsedResourceMicrosoftGraphWorkbookRangeAbove3Ac1](Invoke-MgRowUserInsightUsedResourceMicrosoftGraphWorkbookRangeAbove3Ac1.md)
-Invoke function rowsAbove
-
-### [Invoke-MgRowUserInsightUsedResourceMicrosoftGraphWorkbookRangeBelow3B3C](Invoke-MgRowUserInsightUsedResourceMicrosoftGraphWorkbookRangeBelow3B3C.md)
-Invoke function rowsBelow
-
-### [Invoke-MgRowUserInsightUsedResourceMicrosoftGraphWorkbookRangeBelowCb11](Invoke-MgRowUserInsightUsedResourceMicrosoftGraphWorkbookRangeBelowCb11.md)
+### [Invoke-MgRowUserInsightUsedResourceMicrosoftGraphWorkbookRangeBelow](Invoke-MgRowUserInsightUsedResourceMicrosoftGraphWorkbookRangeBelow.md)
 Invoke function rowsBelow
 
 ### [Invoke-MgRowUserInsightUsedResourceMicrosoftGraphWorkbookRangeEntire](Invoke-MgRowUserInsightUsedResourceMicrosoftGraphWorkbookRangeEntire.md)

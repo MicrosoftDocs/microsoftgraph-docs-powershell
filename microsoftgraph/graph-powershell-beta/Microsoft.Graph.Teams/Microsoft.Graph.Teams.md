@@ -1,6 +1,6 @@
----
+﻿---
 Module Name: Microsoft.Graph.Teams
-Module Guid: 1ad55862-5c4c-49e8-b9d7-0a93457fa96b
+Module Guid: 70816f2b-e7a1-4c6f-a0c2-96b3dd9f572b
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams
 Help Version: 1.0.0.0
 Locale: en-US
@@ -301,6 +301,21 @@ See available templates.
 ### [Get-MgTeamwork](Get-MgTeamwork.md)
 Get teamwork
 
+### [Get-MgTeamworkDevice](Get-MgTeamworkDevice.md)
+Get devices from teamwork
+
+### [Get-MgTeamworkDeviceActivity](Get-MgTeamworkDeviceActivity.md)
+Get activity from teamwork
+
+### [Get-MgTeamworkDeviceConfiguration](Get-MgTeamworkDeviceConfiguration.md)
+Get configuration from teamwork
+
+### [Get-MgTeamworkDeviceHealth](Get-MgTeamworkDeviceHealth.md)
+Get health from teamwork
+
+### [Get-MgTeamworkDeviceOperation](Get-MgTeamworkDeviceOperation.md)
+Get operations from teamwork
+
 ### [Get-MgTeamworkWorkforceIntegration](Get-MgTeamworkWorkforceIntegration.md)
 Get workforceIntegrations from teamwork
 
@@ -331,6 +346,9 @@ The chat between the user and Teams app.
 ### [Get-MgUserTeamworkInstalledAppChatByRef](Get-MgUserTeamworkInstalledAppChatByRef.md)
 The chat between the user and Teams app.
 
+### [Hide-MgChat](Hide-MgChat.md)
+Invoke action hideForUser
+
 ### [Invoke-MgArchiveTeam](Invoke-MgArchiveTeam.md)
 Invoke action archive
 
@@ -339,6 +357,12 @@ Invoke action clockIn
 
 ### [Invoke-MgClockTeamScheduleTimeCardOut](Invoke-MgClockTeamScheduleTimeCardOut.md)
 Invoke action clockOut
+
+### [Invoke-MgMarkChatRead](Invoke-MgMarkChatRead.md)
+Invoke action markChatReadForUser
+
+### [Invoke-MgMarkChatUnread](Invoke-MgMarkChatUnread.md)
+Invoke action markChatUnreadForUser
 
 ### [Invoke-MgMessageChat](Invoke-MgMessageChat.md)
 Invoke function allMessages
@@ -354,6 +378,9 @@ Invoke action share
 
 ### [Invoke-MgUnarchiveTeam](Invoke-MgUnarchiveTeam.md)
 Invoke action unarchive
+
+### [Invoke-MgUnhideChat](Invoke-MgUnhideChat.md)
+Invoke action unhideForUser
 
 ### [New-MgAppCatalogTeamApp](New-MgAppCatalogTeamApp.md)
 Create new navigation property to teamsApps for appCatalogs
@@ -485,14 +512,17 @@ The instances of times off in the schedule.
 ### [New-MgTeamScheduleTimeOffReason](New-MgTeamScheduleTimeOffReason.md)
 The set of reasons for a time off in the schedule.
 
-### [New-MgTeamScheduleTimeOffRequest](New-MgTeamScheduleTimeOffRequest.md)
-Create new navigation property to timeOffRequests for teams
-
 ### [New-MgTeamTag](New-MgTeamTag.md)
 The tags associated with the team.
 
 ### [New-MgTeamTagMember](New-MgTeamTagMember.md)
 Users assigned to the tag.
+
+### [New-MgTeamworkDevice](New-MgTeamworkDevice.md)
+Create new navigation property to devices for teamwork
+
+### [New-MgTeamworkDeviceOperation](New-MgTeamworkDeviceOperation.md)
+Create new navigation property to operations for teamwork
 
 ### [New-MgTeamworkWorkforceIntegration](New-MgTeamworkWorkforceIntegration.md)
 Create new navigation property to workforceIntegrations for teamwork
@@ -551,16 +581,6 @@ Currently, only the list chats operation supports this property.
 A collection of all the members in the chat.
 Nullable.
 
-### [Remove-MgChatMessage](Remove-MgChatMessage.md)
-A collection of all the messages in the chat.
-Nullable.
-
-### [Remove-MgChatMessageHostedContent](Remove-MgChatMessageHostedContent.md)
-Content in a message hosted by Microsoft Teams - for example, images or code snippets.
-
-### [Remove-MgChatMessageReply](Remove-MgChatMessageReply.md)
-Replies for a specified message.
-
 ### [Remove-MgChatOperation](Remove-MgChatOperation.md)
 A collection of all the Teams async operations that ran or are running on the chat.
 Nullable.
@@ -591,17 +611,6 @@ Metadata for the location where the channel's files are stored.
 
 ### [Remove-MgTeamChannelMember](Remove-MgTeamChannelMember.md)
 A collection of membership records associated with the channel.
-
-### [Remove-MgTeamChannelMessage](Remove-MgTeamChannelMessage.md)
-A collection of all the messages in the channel.
-A navigation property.
-Nullable.
-
-### [Remove-MgTeamChannelMessageHostedContent](Remove-MgTeamChannelMessageHostedContent.md)
-Content in a message hosted by Microsoft Teams - for example, images or code snippets.
-
-### [Remove-MgTeamChannelMessageReply](Remove-MgTeamChannelMessageReply.md)
-Replies for a specified message.
 
 ### [Remove-MgTeamChannelTab](Remove-MgTeamChannelTab.md)
 A collection of all the tabs in the channel.
@@ -645,17 +654,6 @@ Metadata for the location where the channel's files are stored.
 
 ### [Remove-MgTeamPrimaryChannelMember](Remove-MgTeamPrimaryChannelMember.md)
 A collection of membership records associated with the channel.
-
-### [Remove-MgTeamPrimaryChannelMessage](Remove-MgTeamPrimaryChannelMessage.md)
-A collection of all the messages in the channel.
-A navigation property.
-Nullable.
-
-### [Remove-MgTeamPrimaryChannelMessageHostedContent](Remove-MgTeamPrimaryChannelMessageHostedContent.md)
-Content in a message hosted by Microsoft Teams - for example, images or code snippets.
-
-### [Remove-MgTeamPrimaryChannelMessageReply](Remove-MgTeamPrimaryChannelMessageReply.md)
-Replies for a specified message.
 
 ### [Remove-MgTeamPrimaryChannelTab](Remove-MgTeamPrimaryChannelTab.md)
 A collection of all the tabs in the channel.
@@ -707,6 +705,21 @@ Users assigned to the tag.
 The template this team was created from.
 See available templates.
 
+### [Remove-MgTeamworkDevice](Remove-MgTeamworkDevice.md)
+Delete navigation property devices for teamwork
+
+### [Remove-MgTeamworkDeviceActivity](Remove-MgTeamworkDeviceActivity.md)
+Delete navigation property activity for teamwork
+
+### [Remove-MgTeamworkDeviceConfiguration](Remove-MgTeamworkDeviceConfiguration.md)
+Delete navigation property configuration for teamwork
+
+### [Remove-MgTeamworkDeviceHealth](Remove-MgTeamworkDeviceHealth.md)
+Delete navigation property health for teamwork
+
+### [Remove-MgTeamworkDeviceOperation](Remove-MgTeamworkDeviceOperation.md)
+Delete navigation property operations for teamwork
+
 ### [Remove-MgTeamworkWorkforceIntegration](Remove-MgTeamworkWorkforceIntegration.md)
 Delete navigation property workforceIntegrations for teamwork
 
@@ -723,6 +736,9 @@ The apps installed in the personal scope of this user.
 
 ### [Remove-MgUserTeamworkInstalledAppChatByRef](Remove-MgUserTeamworkInstalledAppChatByRef.md)
 The chat between the user and Teams app.
+
+### [Restart-MgTeamworkDevice](Restart-MgTeamworkDevice.md)
+Invoke action restart
 
 ### [Send-MgChatActivityNotification](Send-MgChatActivityNotification.md)
 Invoke action sendActivityNotification
@@ -779,6 +795,9 @@ The chat between the user and Teams app.
 ### [Start-MgTeamScheduleTimeCardBreak](Start-MgTeamScheduleTimeCardBreak.md)
 Invoke action startBreak
 
+### [Start-MgTeamworkDeviceDiagnostic](Start-MgTeamworkDeviceDiagnostic.md)
+Invoke action runDiagnostics
+
 ### [Stop-MgTeamScheduleTimeCardBreak](Stop-MgTeamScheduleTimeCardBreak.md)
 Invoke action endBreak
 
@@ -823,9 +842,6 @@ Nullable.
 A collection of all the messages in the chat.
 Nullable.
 
-### [Update-MgChatMessageHostedContent](Update-MgChatMessageHostedContent.md)
-Content in a message hosted by Microsoft Teams - for example, images or code snippets.
-
 ### [Update-MgChatMessageReply](Update-MgChatMessageReply.md)
 Replies for a specified message.
 
@@ -858,9 +874,6 @@ A collection of membership records associated with the channel.
 A collection of all the messages in the channel.
 A navigation property.
 Nullable.
-
-### [Update-MgTeamChannelMessageHostedContent](Update-MgTeamChannelMessageHostedContent.md)
-Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
 ### [Update-MgTeamChannelMessageReply](Update-MgTeamChannelMessageReply.md)
 Replies for a specified message.
@@ -897,9 +910,6 @@ A collection of membership records associated with the channel.
 A collection of all the messages in the channel.
 A navigation property.
 Nullable.
-
-### [Update-MgTeamPrimaryChannelMessageHostedContent](Update-MgTeamPrimaryChannelMessageHostedContent.md)
-Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
 ### [Update-MgTeamPrimaryChannelMessageReply](Update-MgTeamPrimaryChannelMessageReply.md)
 Replies for a specified message.
@@ -949,6 +959,24 @@ Users assigned to the tag.
 
 ### [Update-MgTeamwork](Update-MgTeamwork.md)
 Update teamwork
+
+### [Update-MgTeamworkDevice](Update-MgTeamworkDevice.md)
+Update the navigation property devices in teamwork
+
+### [Update-MgTeamworkDeviceActivity](Update-MgTeamworkDeviceActivity.md)
+Update the navigation property activity in teamwork
+
+### [Update-MgTeamworkDeviceConfiguration](Update-MgTeamworkDeviceConfiguration.md)
+Update the navigation property configuration in teamwork
+
+### [Update-MgTeamworkDeviceHealth](Update-MgTeamworkDeviceHealth.md)
+Update the navigation property health in teamwork
+
+### [Update-MgTeamworkDeviceOperation](Update-MgTeamworkDeviceOperation.md)
+Update the navigation property operations in teamwork
+
+### [Update-MgTeamworkDeviceSoftware](Update-MgTeamworkDeviceSoftware.md)
+Invoke action updateSoftware
 
 ### [Update-MgTeamworkWorkforceIntegration](Update-MgTeamworkWorkforceIntegration.md)
 Update the navigation property workforceIntegrations in teamwork

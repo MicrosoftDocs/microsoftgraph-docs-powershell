@@ -17,8 +17,8 @@ User experience analytics remote connection
 New-MgDeviceManagementUserExperienceAnalyticRemoteConnection [-AdditionalProperties <Hashtable>]
  [-CloudPcFailurePercentage <Double>] [-CloudPcRoundTripTime <Double>] [-CloudPcSignInTime <Double>]
  [-CoreBootTime <Double>] [-CoreSignInTime <Double>] [-DeviceCount <Int32>] [-DeviceId <String>]
- [-DeviceName <String>] [-Id <String>] [-Model <String>] [-RemoteSignInTime <Double>]
- [-VirtualNetwork <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DeviceName <String>] [-Id <String>] [-Manufacturer <String>] [-Model <String>] [-RemoteSignInTime <Double>]
+ [-UserPrincipalName <String>] [-VirtualNetwork <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -32,6 +32,13 @@ New-MgDeviceManagementUserExperienceAnalyticRemoteConnection
 User experience analytics remote connection
 
 ## EXAMPLES
+
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -52,7 +59,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analyte remote connection entity.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsRemoteConnection
@@ -77,7 +84,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -93,7 +100,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -109,7 +116,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -125,7 +132,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -141,7 +148,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -157,7 +164,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -207,6 +214,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Manufacturer
+The user experience analytics manufacturer.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Model
 The user experience analytics device model.
 
@@ -228,6 +250,21 @@ Valid values 0 to 1.79769313486232E+308
 
 ```yaml
 Type: Double
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -UserPrincipalName
+The user experience analytics userPrincipalName.
+
+```yaml
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -294,27 +331,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsRemoteConnection
 ## NOTES
-
-ALIASES
-
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
-
-
-BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsRemoteConnection>: The user experience analyte remote connection entity.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
-  - `[CloudPcFailurePercentage <Double?>]`: The sign in failure percentage of Cloud PC Device. Valid values 0 to 100
-  - `[CloudPcRoundTripTime <Double?>]`: The round tip time of Cloud PC Device. Valid values 0 to 1.79769313486232E+308
-  - `[CloudPcSignInTime <Double?>]`: The sign in time of Cloud PC Device. Valid values 0 to 1.79769313486232E+308
-  - `[CoreBootTime <Double?>]`: The core boot time of Cloud PC Device. Valid values 0 to 1.79769313486232E+308
-  - `[CoreSignInTime <Double?>]`: The core sign in time of Cloud PC Device. Valid values 0 to 1.79769313486232E+308
-  - `[DeviceCount <Int32?>]`: The count of remote connection. Valid values 0 to 2147483647
-  - `[DeviceId <String>]`: The id of the device.
-  - `[DeviceName <String>]`: The name of the device.
-  - `[Model <String>]`: The user experience analytics device model.
-  - `[RemoteSignInTime <Double?>]`: The remote sign in time of Cloud PC Device. Valid values 0 to 1.79769313486232E+308
-  - `[VirtualNetwork <String>]`: The user experience analytics virtual network.
+Please use Get-Help -Online.
 
 ## RELATED LINKS
+
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticremoteconnection](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticremoteconnection)
+

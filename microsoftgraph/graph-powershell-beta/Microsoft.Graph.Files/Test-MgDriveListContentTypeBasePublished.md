@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/test-mgdrivelistcontenttypebasepublished
@@ -12,12 +12,12 @@ Invoke function isPublished
 
 ## SYNTAX
 
-### Is (Default)
+### Is1 (Default)
 ```
 Test-MgDriveListContentTypeBasePublished -ContentTypeId <String> -DriveId <String> [<CommonParameters>]
 ```
 
-### IsViaIdentity
+### IsViaIdentity1
 ```
 Test-MgDriveListContentTypeBasePublished -InputObject <IFilesIdentity> [<CommonParameters>]
 ```
@@ -34,7 +34,7 @@ key: id of contentType
 
 ```yaml
 Type: String
-Parameter Sets: Is
+Parameter Sets: Is1
 Aliases:
 
 Required: True
@@ -49,7 +49,7 @@ key: id of drive
 
 ```yaml
 Type: String
-Parameter Sets: Is
+Parameter Sets: Is1
 Aliases:
 
 Required: True
@@ -61,11 +61,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: IsViaIdentity
+Parameter Sets: IsViaIdentity1
 Aliases:
 
 Required: True
@@ -105,6 +105,7 @@ INPUTOBJECT <IFilesIdentity>: Identity Parameter
   - `[ListItemId <String>]`: key: id of listItem
   - `[ListItemVersionId <String>]`: key: id of listItemVersion
   - `[Q <String>]`: Usage: q={q}
+  - `[RichLongRunningOperationId <String>]`: key: id of richLongRunningOperation
   - `[SharedDriveItemId <String>]`: key: id of sharedDriveItem
   - `[StartDateTime <String>]`: Usage: startDateTime={startDateTime}
   - `[SubscriptionId <String>]`: key: id of subscription

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/copy-mgsitecontenttypebasetodefaultcontentlocation
@@ -12,28 +12,28 @@ Invoke action copyToDefaultContentLocation
 
 ## SYNTAX
 
-### CopyExpanded (Default)
+### CopyExpanded1 (Default)
 ```
 Copy-MgSiteContentTypeBaseToDefaultContentLocation -ContentTypeId <String> -SiteId <String>
  [-AdditionalProperties <Hashtable>] [-DestinationFileName <String>]
  [-SourceFile <IMicrosoftGraphItemReference>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Copy
+### Copy1
 ```
 Copy-MgSiteContentTypeBaseToDefaultContentLocation -ContentTypeId <String> -SiteId <String>
  -BodyParameter <IPathsKzho2HSitesSiteIdContenttypesContenttypeIdBaseMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CopyViaIdentityExpanded
+### CopyViaIdentityExpanded1
 ```
 Copy-MgSiteContentTypeBaseToDefaultContentLocation -InputObject <ISitesIdentity>
  [-AdditionalProperties <Hashtable>] [-DestinationFileName <String>]
  [-SourceFile <IMicrosoftGraphItemReference>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CopyViaIdentity
+### CopyViaIdentity1
 ```
 Copy-MgSiteContentTypeBaseToDefaultContentLocation -InputObject <ISitesIdentity>
  -BodyParameter <IPathsKzho2HSitesSiteIdContenttypesContenttypeIdBaseMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema>
@@ -52,7 +52,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
+Parameter Sets: CopyExpanded1, CopyViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -64,11 +64,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsKzho2HSitesSiteIdContenttypesContenttypeIdBaseMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Copy, CopyViaIdentity
+Parameter Sets: Copy1, CopyViaIdentity1
 Aliases:
 
 Required: True
@@ -83,7 +83,7 @@ key: id of contentType
 
 ```yaml
 Type: String
-Parameter Sets: CopyExpanded, Copy
+Parameter Sets: CopyExpanded1, Copy1
 Aliases:
 
 Required: True
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
+Parameter Sets: CopyExpanded1, CopyViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -110,11 +110,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: CopyViaIdentityExpanded, CopyViaIdentity
+Parameter Sets: CopyViaIdentityExpanded1, CopyViaIdentity1
 Aliases:
 
 Required: True
@@ -144,7 +144,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: CopyExpanded, Copy
+Parameter Sets: CopyExpanded1, Copy1
 Aliases:
 
 Required: True
@@ -156,11 +156,11 @@ Accept wildcard characters: False
 
 ### -SourceFile
 itemReference
-To construct, see NOTES section for SOURCEFILE properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SOURCEFILE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphItemReference
-Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
+Parameter Sets: CopyExpanded1, CopyViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -260,11 +260,18 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[OnenoteSectionId <String>]`: key: id of onenoteSection
   - `[Path <String>]`: Usage: path={path}
   - `[PermissionId <String>]`: key: id of permission
+  - `[RelationId <String>]`: key: id of relation
+  - `[RichLongRunningOperationId <String>]`: key: id of richLongRunningOperation
+  - `[SetId <String>]`: key: id of set
+  - `[SetId1 <String>]`: key: id of set
   - `[SiteId <String>]`: key: id of site
   - `[SiteId1 <String>]`: key: id of site
   - `[SitePageId <String>]`: key: id of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime={startDateTime}
+  - `[StoreId <String>]`: key: id of store
   - `[SubscriptionId <String>]`: key: id of subscription
+  - `[TermId <String>]`: key: id of term
+  - `[TermId1 <String>]`: key: id of term
   - `[UserId <String>]`: key: id of user
 
 SOURCEFILE <IMicrosoftGraphItemReference>: itemReference

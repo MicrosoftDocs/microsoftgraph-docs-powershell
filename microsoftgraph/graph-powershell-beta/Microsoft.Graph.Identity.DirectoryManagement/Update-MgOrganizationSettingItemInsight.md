@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganizationsettingiteminsight
@@ -23,7 +23,7 @@ Update-MgOrganizationSettingItemInsight -OrganizationId <String> [-AdditionalPro
 ### Update
 ```
 Update-MgOrganizationSettingItemInsight -OrganizationId <String>
- -BodyParameter <IMicrosoftGraphItemInsightsSettings> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphInsightsSettings> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -36,7 +36,7 @@ Update-MgOrganizationSettingItemInsight -InputObject <IIdentityDirectoryManageme
 ### UpdateViaIdentity
 ```
 Update-MgOrganizationSettingItemInsight -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphItemInsightsSettings> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphInsightsSettings> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -67,7 +67,7 @@ itemInsightsSettings
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemInsightsSettings
+Type: IMicrosoftGraphInsightsSettings
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -210,7 +210,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemInsightsSettings
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInsightsSettings
 ## OUTPUTS
 
 ### System.Boolean

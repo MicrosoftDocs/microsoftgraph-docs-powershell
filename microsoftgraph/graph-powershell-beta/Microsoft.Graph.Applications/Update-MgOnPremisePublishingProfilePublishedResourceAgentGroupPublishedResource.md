@@ -53,6 +53,13 @@ Nullable.
 
 ## EXAMPLES
 
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -74,7 +81,7 @@ Accept wildcard characters: False
 List of onPremisesAgentGroups that a publishedResource is assigned to.
 Read-only.
 Nullable.
-To construct, see NOTES section for AGENTGROUPS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for AGENTGROUPS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphOnPremisesAgentGroup[]
@@ -90,7 +97,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 publishedResource
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPublishedResource
@@ -136,7 +143,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
@@ -190,7 +197,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -297,75 +304,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
-
-ALIASES
-
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
-
-
-AGENTGROUPS <IMicrosoftGraphOnPremisesAgentGroup[]>: List of onPremisesAgentGroups that a publishedResource is assigned to. Read-only. Nullable.
-  - `[Id <String>]`: Read-only.
-  - `[Agents <IMicrosoftGraphOnPremisesAgent[]>]`: List of onPremisesAgent that are assigned to an onPremisesAgentGroup. Read-only. Nullable.
-    - `[Id <String>]`: Read-only.
-    - `[AgentGroups <IMicrosoftGraphOnPremisesAgentGroup[]>]`: List of onPremisesAgentGroups that an onPremisesAgent is assigned to. Read-only. Nullable.
-    - `[ExternalIP <String>]`: The external IP address as detected by the service for the agent machine. Read-only
-    - `[MachineName <String>]`: The name of the machine that the aggent is running on. Read-only
-    - `[Status <String>]`: agentStatus
-    - `[SupportedPublishingTypes <String[]>]`: 
-  - `[DisplayName <String>]`: Display name of the onPremisesAgentGroup.
-  - `[IsDefault <Boolean?>]`: Indicates if the onPremisesAgentGroup is the default agent group. Only a single agent group can be the default onPremisesAgentGroup and is set by the system.
-  - `[PublishedResources <IMicrosoftGraphPublishedResource[]>]`: List of publishedResource that are assigned to an onPremisesAgentGroup. Read-only. Nullable.
-    - `[Id <String>]`: Read-only.
-    - `[AgentGroups <IMicrosoftGraphOnPremisesAgentGroup[]>]`: List of onPremisesAgentGroups that a publishedResource is assigned to. Read-only. Nullable.
-    - `[DisplayName <String>]`: Display Name of the publishedResource.
-    - `[PublishingType <String>]`: onPremisesPublishingType
-    - `[ResourceName <String>]`: Name of the publishedResource.
-  - `[PublishingType <String>]`: onPremisesPublishingType
-
-BODYPARAMETER <IMicrosoftGraphPublishedResource>: publishedResource
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
-  - `[AgentGroups <IMicrosoftGraphOnPremisesAgentGroup[]>]`: List of onPremisesAgentGroups that a publishedResource is assigned to. Read-only. Nullable.
-    - `[Id <String>]`: Read-only.
-    - `[Agents <IMicrosoftGraphOnPremisesAgent[]>]`: List of onPremisesAgent that are assigned to an onPremisesAgentGroup. Read-only. Nullable.
-      - `[Id <String>]`: Read-only.
-      - `[AgentGroups <IMicrosoftGraphOnPremisesAgentGroup[]>]`: List of onPremisesAgentGroups that an onPremisesAgent is assigned to. Read-only. Nullable.
-      - `[ExternalIP <String>]`: The external IP address as detected by the service for the agent machine. Read-only
-      - `[MachineName <String>]`: The name of the machine that the aggent is running on. Read-only
-      - `[Status <String>]`: agentStatus
-      - `[SupportedPublishingTypes <String[]>]`: 
-    - `[DisplayName <String>]`: Display name of the onPremisesAgentGroup.
-    - `[IsDefault <Boolean?>]`: Indicates if the onPremisesAgentGroup is the default agent group. Only a single agent group can be the default onPremisesAgentGroup and is set by the system.
-    - `[PublishedResources <IMicrosoftGraphPublishedResource[]>]`: List of publishedResource that are assigned to an onPremisesAgentGroup. Read-only. Nullable.
-    - `[PublishingType <String>]`: onPremisesPublishingType
-  - `[DisplayName <String>]`: Display Name of the publishedResource.
-  - `[PublishingType <String>]`: onPremisesPublishingType
-  - `[ResourceName <String>]`: Name of the publishedResource.
-
-INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
-  - `[AppRoleAssignmentId <String>]`: key: id of appRoleAssignment
-  - `[ApplicationId <String>]`: key: id of application
-  - `[ApplicationTemplateId <String>]`: key: id of applicationTemplate
-  - `[ConnectorGroupId <String>]`: key: id of connectorGroup
-  - `[ConnectorId <String>]`: key: id of connector
-  - `[DelegatedPermissionClassificationId <String>]`: key: id of delegatedPermissionClassification
-  - `[DirectoryDefinitionId <String>]`: key: id of directoryDefinition
-  - `[EndpointId <String>]`: key: id of endpoint
-  - `[ExtensionPropertyId <String>]`: key: id of extensionProperty
-  - `[GroupId <String>]`: key: id of group
-  - `[LicenseDetailsId <String>]`: key: id of licenseDetails
-  - `[OnPremisesAgentGroupId <String>]`: key: id of onPremisesAgentGroup
-  - `[OnPremisesAgentGroupId1 <String>]`: key: id of onPremisesAgentGroup
-  - `[OnPremisesAgentId <String>]`: key: id of onPremisesAgent
-  - `[OnPremisesAgentId1 <String>]`: key: id of onPremisesAgent
-  - `[OnPremisesPublishingProfileId <String>]`: key: id of onPremisesPublishingProfile
-  - `[PublishedResourceId <String>]`: key: id of publishedResource
-  - `[PublishedResourceId1 <String>]`: key: id of publishedResource
-  - `[ServicePrincipalId <String>]`: key: id of servicePrincipal
-  - `[SynchronizationJobId <String>]`: key: id of synchronizationJob
-  - `[SynchronizationTemplateId <String>]`: key: id of synchronizationTemplate
-  - `[UserId <String>]`: key: id of user
+Please use Get-Help -Online.
 
 ## RELATED LINKS
+
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/update-mgonpremisepublishingprofilepublishedresourceagentgrouppublishedresource](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/update-mgonpremisepublishingprofilepublishedresourceagentgrouppublishedresource)
+

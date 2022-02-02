@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentsubmission
@@ -18,7 +18,8 @@ Nullable.
 ```
 Update-MgEducationClassAssignmentSubmission -EducationAssignmentId <String> -EducationClassId <String>
  -EducationSubmissionId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Outcomes <IMicrosoftGraphEducationOutcome[]>] [-Recipient <Hashtable>]
+ [-Outcomes <IMicrosoftGraphEducationOutcome[]>] [-ReassignedBy <IMicrosoftGraphIdentitySet>]
+ [-ReassignedDateTime <DateTime>] [-Recipient <Hashtable>]
  [-Resources <IMicrosoftGraphEducationSubmissionResource[]>] [-ResourcesFolderUrl <String>]
  [-ReturnedBy <IMicrosoftGraphIdentitySet>] [-ReturnedDateTime <DateTime>] [-Status <String>]
  [-SubmittedBy <IMicrosoftGraphIdentitySet>] [-SubmittedDateTime <DateTime>]
@@ -38,9 +39,10 @@ Update-MgEducationClassAssignmentSubmission -EducationAssignmentId <String> -Edu
 ```
 Update-MgEducationClassAssignmentSubmission -InputObject <IEducationIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Outcomes <IMicrosoftGraphEducationOutcome[]>]
- [-Recipient <Hashtable>] [-Resources <IMicrosoftGraphEducationSubmissionResource[]>]
- [-ResourcesFolderUrl <String>] [-ReturnedBy <IMicrosoftGraphIdentitySet>] [-ReturnedDateTime <DateTime>]
- [-Status <String>] [-SubmittedBy <IMicrosoftGraphIdentitySet>] [-SubmittedDateTime <DateTime>]
+ [-ReassignedBy <IMicrosoftGraphIdentitySet>] [-ReassignedDateTime <DateTime>] [-Recipient <Hashtable>]
+ [-Resources <IMicrosoftGraphEducationSubmissionResource[]>] [-ResourcesFolderUrl <String>]
+ [-ReturnedBy <IMicrosoftGraphIdentitySet>] [-ReturnedDateTime <DateTime>] [-Status <String>]
+ [-SubmittedBy <IMicrosoftGraphIdentitySet>] [-SubmittedDateTime <DateTime>]
  [-SubmittedResources <IMicrosoftGraphEducationSubmissionResource[]>]
  [-UnsubmittedBy <IMicrosoftGraphIdentitySet>] [-UnsubmittedDateTime <DateTime>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -78,7 +80,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 educationSubmission
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEducationSubmission
@@ -154,7 +156,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IEducationIdentity
@@ -171,7 +173,7 @@ Accept wildcard characters: False
 ### -Outcomes
 Read-Write.
 Nullable.
-To construct, see NOTES section for OUTCOMES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for OUTCOMES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEducationOutcome[]
@@ -200,6 +202,39 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ReassignedBy
+identitySet
+To construct, please use Get-Help -Online and see NOTES section for REASSIGNEDBY properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphIdentitySet
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ReassignedDateTime
+Moment in time when the submission was reassigned.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+
+```yaml
+Type: DateTime
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Recipient
 educationSubmissionRecipient
 
@@ -217,7 +252,7 @@ Accept wildcard characters: False
 
 ### -Resources
 Nullable.
-To construct, see NOTES section for RESOURCES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for RESOURCES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEducationSubmissionResource[]
@@ -248,7 +283,7 @@ Accept wildcard characters: False
 
 ### -ReturnedBy
 identitySet
-To construct, see NOTES section for RETURNEDBY properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for RETURNEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -296,7 +331,7 @@ Accept wildcard characters: False
 
 ### -SubmittedBy
 identitySet
-To construct, see NOTES section for SUBMITTEDBY properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SUBMITTEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -330,7 +365,7 @@ Accept wildcard characters: False
 ### -SubmittedResources
 Read-only.
 Nullable.
-To construct, see NOTES section for SUBMITTEDRESOURCES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SUBMITTEDRESOURCES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEducationSubmissionResource[]
@@ -346,7 +381,7 @@ Accept wildcard characters: False
 
 ### -UnsubmittedBy
 identitySet
-To construct, see NOTES section for UNSUBMITTEDBY properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for UNSUBMITTEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -436,11 +471,13 @@ BODYPARAMETER <IMicrosoftGraphEducationSubmission>: educationSubmission
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
+        - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+        - `[Id <String>]`: The identifier of the identity. This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[LastModifiedDateTime <DateTime?>]`: 
+    - `[LastModifiedDateTime <DateTime?>]`: Moment in time when the resource was last modified.  The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2021 is 2021-01-01T00:00:00Z.
+  - `[ReassignedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[ReassignedDateTime <DateTime?>]`: Moment in time when the submission was reassigned. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Recipient <IMicrosoftGraphEducationSubmissionRecipient>]`: educationSubmissionRecipient
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Resources <IMicrosoftGraphEducationSubmissionResource[]>]`: Nullable.
@@ -483,11 +520,20 @@ OUTCOMES <IMicrosoftGraphEducationOutcome[]>: Read-Write. Nullable.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
+      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+      - `[Id <String>]`: The identifier of the identity. This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[LastModifiedDateTime <DateTime?>]`: 
+  - `[LastModifiedDateTime <DateTime?>]`: Moment in time when the resource was last modified.  The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2021 is 2021-01-01T00:00:00Z.
+
+REASSIGNEDBY <IMicrosoftGraphIdentitySet>: identitySet
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+  - `[Device <IMicrosoftGraphIdentity>]`: identity
+  - `[User <IMicrosoftGraphIdentity>]`: identity
 
 RESOURCES <IMicrosoftGraphEducationSubmissionResource[]>: Nullable.
   - `[Id <String>]`: Read-only.
@@ -498,8 +544,8 @@ RESOURCES <IMicrosoftGraphEducationSubmissionResource[]>: Nullable.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
+        - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+        - `[Id <String>]`: The identifier of the identity. This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -511,8 +557,8 @@ RETURNEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
+    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+    - `[Id <String>]`: The identifier of the identity. This property is read-only.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -520,8 +566,8 @@ SUBMITTEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
+    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+    - `[Id <String>]`: The identifier of the identity. This property is read-only.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -534,8 +580,8 @@ SUBMITTEDRESOURCES <IMicrosoftGraphEducationSubmissionResource[]>: Read-only. Nu
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
+        - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+        - `[Id <String>]`: The identifier of the identity. This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -547,8 +593,8 @@ UNSUBMITTEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
+    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+    - `[Id <String>]`: The identifier of the identity. This property is read-only.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 

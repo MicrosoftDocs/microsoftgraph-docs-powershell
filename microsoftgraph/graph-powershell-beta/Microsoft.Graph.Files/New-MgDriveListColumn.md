@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/new-mgdrivelistcolumn
@@ -12,7 +12,7 @@ The collection of field definitions for this list.
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgDriveListColumn -DriveId <String> [-AdditionalProperties <Hashtable>] [-Boolean <Hashtable>]
  [-Calculated <IMicrosoftGraphCalculatedColumn>] [-Choice <IMicrosoftGraphChoiceColumn>]
@@ -27,13 +27,13 @@ New-MgDriveListColumn -DriveId <String> [-AdditionalProperties <Hashtable>] [-Bo
  [-Type <String>] [-Validation <IMicrosoftGraphColumnValidation>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
 New-MgDriveListColumn -DriveId <String> -BodyParameter <IMicrosoftGraphColumnDefinition> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded1
+### CreateViaIdentityExpanded
 ```
 New-MgDriveListColumn -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>] [-Boolean <Hashtable>]
  [-Calculated <IMicrosoftGraphCalculatedColumn>] [-Choice <IMicrosoftGraphChoiceColumn>]
@@ -48,7 +48,7 @@ New-MgDriveListColumn -InputObject <IFilesIdentity> [-AdditionalProperties <Hash
  [-Type <String>] [-Validation <IMicrosoftGraphColumnValidation>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentity1
+### CreateViaIdentity
 ```
 New-MgDriveListColumn -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphColumnDefinition> [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -66,7 +66,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -78,11 +78,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 columnDefinition
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphColumnDefinition
-Parameter Sets: Create1, CreateViaIdentity1
+Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -97,7 +97,7 @@ booleanColumn
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -109,11 +109,11 @@ Accept wildcard characters: False
 
 ### -Calculated
 calculatedColumn
-To construct, see NOTES section for CALCULATED properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for CALCULATED properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCalculatedColumn
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -125,11 +125,11 @@ Accept wildcard characters: False
 
 ### -Choice
 choiceColumn
-To construct, see NOTES section for CHOICE properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for CHOICE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphChoiceColumn
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -145,7 +145,7 @@ Helps organize related columns.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -160,7 +160,7 @@ contentApprovalStatusColumn
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -172,11 +172,11 @@ Accept wildcard characters: False
 
 ### -Currency
 currencyColumn
-To construct, see NOTES section for CURRENCY properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for CURRENCY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCurrencyColumn
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -188,11 +188,11 @@ Accept wildcard characters: False
 
 ### -DateTime
 dateTimeColumn
-To construct, see NOTES section for DATETIME properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DATETIME properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDateTimeColumn
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -204,11 +204,11 @@ Accept wildcard characters: False
 
 ### -DefaultValue
 defaultColumnValue
-To construct, see NOTES section for DEFAULTVALUE properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEFAULTVALUE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDefaultColumnValue
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -223,7 +223,7 @@ The user-facing description of the column.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -238,7 +238,7 @@ The user-facing name of the column.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -253,7 +253,7 @@ key: id of drive
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, Create1
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -268,7 +268,7 @@ If true, no two list items may have the same value for this column.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -283,7 +283,7 @@ geolocationColumn
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -298,7 +298,7 @@ Specifies whether the column is displayed in the user interface.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -310,11 +310,11 @@ Accept wildcard characters: False
 
 ### -HyperlinkOrPicture
 hyperlinkOrPictureColumn
-To construct, see NOTES section for HYPERLINKORPICTURE properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for HYPERLINKORPICTURE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphHyperlinkOrPictureColumn
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -329,7 +329,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -344,7 +344,7 @@ Specifies whether the column values can used for sorting and searching.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -356,11 +356,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -375,7 +375,7 @@ Indicates whether this column can be deleted.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -391,7 +391,7 @@ Read-only.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -402,11 +402,11 @@ Accept wildcard characters: False
 ```
 
 ### -IsSealed
-Specifies whether column can be changed.
+Specifies whether the column can be changed.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -418,11 +418,11 @@ Accept wildcard characters: False
 
 ### -Lookup
 lookupColumn
-To construct, see NOTES section for LOOKUP properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for LOOKUP properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphLookupColumn
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -438,7 +438,7 @@ For the user-facing name, see displayName.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -450,11 +450,11 @@ Accept wildcard characters: False
 
 ### -Number
 numberColumn
-To construct, see NOTES section for NUMBER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for NUMBER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphNumberColumn
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -466,11 +466,11 @@ Accept wildcard characters: False
 
 ### -PersonOrGroup
 personOrGroupColumn
-To construct, see NOTES section for PERSONORGROUP properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for PERSONORGROUP properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPersonOrGroupColumn
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -481,11 +481,11 @@ Accept wildcard characters: False
 ```
 
 ### -PropagateChanges
-If 'True' changes to this column will be propagated to lists that implement the column.
+If true, changes to this column will be propagated to lists that implement the column.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -500,7 +500,7 @@ Specifies whether the column values can be modified.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -511,11 +511,11 @@ Accept wildcard characters: False
 ```
 
 ### -Required
-Specifies whether the column value is not optional.
+Specifies whether the column value isn't optional.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -527,11 +527,11 @@ Accept wildcard characters: False
 
 ### -SourceColumn
 columnDefinition
-To construct, see NOTES section for SOURCECOLUMN properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SOURCECOLUMN properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphColumnDefinition
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -543,11 +543,11 @@ Accept wildcard characters: False
 
 ### -Term
 termColumn
-To construct, see NOTES section for TERM properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for TERM properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTermColumn
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -559,11 +559,11 @@ Accept wildcard characters: False
 
 ### -Text
 textColumn
-To construct, see NOTES section for TEXT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for TEXT properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTextColumn
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -578,7 +578,7 @@ thumbnailColumn
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -593,7 +593,7 @@ columnTypes
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -605,11 +605,11 @@ Accept wildcard characters: False
 
 ### -Validation
 columnValidation
-To construct, see NOTES section for VALIDATION properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for VALIDATION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphColumnValidation
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -710,7 +710,7 @@ BODYPARAMETER <IMicrosoftGraphColumnDefinition>: columnDefinition
   - `[Indexed <Boolean?>]`: Specifies whether the column values can used for sorting and searching.
   - `[IsDeletable <Boolean?>]`: Indicates whether this column can be deleted.
   - `[IsReorderable <Boolean?>]`: Indicates whether values in the column can be reordered. Read-only.
-  - `[IsSealed <Boolean?>]`: Specifies whether column can be changed.
+  - `[IsSealed <Boolean?>]`: Specifies whether the column can be changed.
   - `[Lookup <IMicrosoftGraphLookupColumn>]`: lookupColumn
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AllowMultipleValues <Boolean?>]`: Indicates whether multiple values can be selected from the source.
@@ -730,9 +730,9 @@ BODYPARAMETER <IMicrosoftGraphColumnDefinition>: columnDefinition
     - `[AllowMultipleSelection <Boolean?>]`: Indicates whether multiple values can be selected from the source.
     - `[ChooseFromType <String>]`: Whether to allow selection of people only, or people and groups. Must be one of peopleAndGroups or peopleOnly.
     - `[DisplayAs <String>]`: How to display the information about the person or group chosen. See below.
-  - `[PropagateChanges <Boolean?>]`: If 'True' changes to this column will be propagated to lists that implement the column.
+  - `[PropagateChanges <Boolean?>]`: If true, changes to this column will be propagated to lists that implement the column.
   - `[ReadOnly <Boolean?>]`: Specifies whether the column values can be modified.
-  - `[Required <Boolean?>]`: Specifies whether the column value is not optional.
+  - `[Required <Boolean?>]`: Specifies whether the column value isn't optional.
   - `[SourceColumn <IMicrosoftGraphColumnDefinition>]`: columnDefinition
   - `[Term <IMicrosoftGraphTermColumn>]`: termColumn
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -798,6 +798,7 @@ INPUTOBJECT <IFilesIdentity>: Identity Parameter
   - `[ListItemId <String>]`: key: id of listItem
   - `[ListItemVersionId <String>]`: key: id of listItemVersion
   - `[Q <String>]`: Usage: q={q}
+  - `[RichLongRunningOperationId <String>]`: key: id of richLongRunningOperation
   - `[SharedDriveItemId <String>]`: key: id of sharedDriveItem
   - `[StartDateTime <String>]`: Usage: startDateTime={startDateTime}
   - `[SubscriptionId <String>]`: key: id of subscription
@@ -865,7 +866,7 @@ SOURCECOLUMN <IMicrosoftGraphColumnDefinition>: columnDefinition
   - `[Indexed <Boolean?>]`: Specifies whether the column values can used for sorting and searching.
   - `[IsDeletable <Boolean?>]`: Indicates whether this column can be deleted.
   - `[IsReorderable <Boolean?>]`: Indicates whether values in the column can be reordered. Read-only.
-  - `[IsSealed <Boolean?>]`: Specifies whether column can be changed.
+  - `[IsSealed <Boolean?>]`: Specifies whether the column can be changed.
   - `[Lookup <IMicrosoftGraphLookupColumn>]`: lookupColumn
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AllowMultipleValues <Boolean?>]`: Indicates whether multiple values can be selected from the source.
@@ -885,9 +886,9 @@ SOURCECOLUMN <IMicrosoftGraphColumnDefinition>: columnDefinition
     - `[AllowMultipleSelection <Boolean?>]`: Indicates whether multiple values can be selected from the source.
     - `[ChooseFromType <String>]`: Whether to allow selection of people only, or people and groups. Must be one of peopleAndGroups or peopleOnly.
     - `[DisplayAs <String>]`: How to display the information about the person or group chosen. See below.
-  - `[PropagateChanges <Boolean?>]`: If 'True' changes to this column will be propagated to lists that implement the column.
+  - `[PropagateChanges <Boolean?>]`: If true, changes to this column will be propagated to lists that implement the column.
   - `[ReadOnly <Boolean?>]`: Specifies whether the column values can be modified.
-  - `[Required <Boolean?>]`: Specifies whether the column value is not optional.
+  - `[Required <Boolean?>]`: Specifies whether the column value isn't optional.
   - `[SourceColumn <IMicrosoftGraphColumnDefinition>]`: columnDefinition
   - `[Term <IMicrosoftGraphTermColumn>]`: termColumn
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

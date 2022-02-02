@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessstaffmember
@@ -18,7 +18,7 @@ Nullable.
 ```
 New-MgBookingBusinessStaffMember -BookingBusinessId <String> [-AdditionalProperties <Hashtable>]
  [-AvailabilityIsAffectedByPersonalCalendar] [-ColorIndex <Int32>] [-DisplayName <String>]
- [-EmailAddress <String>] [-Id <String>] [-Role <String>] [-UseBusinessHours]
+ [-EmailAddress <String>] [-Id <String>] [-Role <String>] [-TimeZone <String>] [-UseBusinessHours]
  [-WorkingHours <IMicrosoftGraphBookingWorkHours[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -32,7 +32,7 @@ New-MgBookingBusinessStaffMember -BookingBusinessId <String> -BodyParameter <IMi
 ```
 New-MgBookingBusinessStaffMember -InputObject <IBookingsIdentity> [-AdditionalProperties <Hashtable>]
  [-AvailabilityIsAffectedByPersonalCalendar] [-ColorIndex <Int32>] [-DisplayName <String>]
- [-EmailAddress <String>] [-Id <String>] [-Role <String>] [-UseBusinessHours]
+ [-EmailAddress <String>] [-Id <String>] [-Role <String>] [-TimeZone <String>] [-UseBusinessHours]
  [-WorkingHours <IMicrosoftGraphBookingWorkHours[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -76,14 +76,14 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -BodyParameter
 Represents a staff member who provides services in a business.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphBookingStaffMember
@@ -123,7 +123,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IBookingsIdentity
@@ -204,6 +204,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -TimeZone
+The time zone of the staff member.
+For a list of possible values, see dateTimeTimeZone.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UseBusinessHours
 True means the staff member's availability is as specified in the businessHours property of the business.
 False means the availability is determined by the staff member's workingHours property setting.
@@ -215,7 +231,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -223,7 +239,7 @@ Accept wildcard characters: False
 ### -WorkingHours
 The range of hours each day of the week that the staff member is available for booking.
 By default, they are initialized to be the same as the businessHours property of the business.
-To construct, see NOTES section for WORKINGHOURS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for WORKINGHOURS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphBookingWorkHours[]
@@ -295,25 +311,29 @@ BODYPARAMETER <IMicrosoftGraphBookingStaffMember>: Represents a staff member who
   - `[AvailabilityIsAffectedByPersonalCalendar <Boolean?>]`: True means that if the staff member is a Microsoft 365 user, the Bookings API would verify the staff member's availability in their personal calendar in Microsoft 365, before making a booking.
   - `[ColorIndex <Int32?>]`: Identifies a color to represent the staff member. The color corresponds to the color palette in the Staff details page in the Bookings app.
   - `[Role <String>]`: bookingStaffRole
+  - `[TimeZone <String>]`: The time zone of the staff member. For a list of possible values, see dateTimeTimeZone.
   - `[UseBusinessHours <Boolean?>]`: True means the staff member's availability is as specified in the businessHours property of the business. False means the availability is determined by the staff member's workingHours property setting.
   - `[WorkingHours <IMicrosoftGraphBookingWorkHours[]>]`: The range of hours each day of the week that the staff member is available for booking. By default, they are initialized to be the same as the businessHours property of the business.
     - `[Day <String>]`: dayOfWeek
     - `[TimeSlots <IMicrosoftGraphBookingWorkTimeSlot[]>]`: A list of start/end times during a day.
-      - `[End <String>]`: The time of the day that work starts. For example, 08:00:00.0000000.
-      - `[Start <String>]`: The time of the day that work stops. For example, 17:00:00.0000000.
+      - `[End <String>]`: The time of the day when work stops. For example, 17:00:00.0000000.
+      - `[Start <String>]`: The time of the day when work starts. For example, 08:00:00.0000000.
 
 INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   - `[BookingAppointmentId <String>]`: key: id of bookingAppointment
   - `[BookingBusinessId <String>]`: key: id of bookingBusiness
   - `[BookingCurrencyId <String>]`: key: id of bookingCurrency
+  - `[BookingCustomQuestionId <String>]`: key: id of bookingCustomQuestion
+  - `[BookingCustomerBaseId <String>]`: key: id of bookingCustomerBase
   - `[BookingCustomerId <String>]`: key: id of bookingCustomer
   - `[BookingServiceId <String>]`: key: id of bookingService
+  - `[BookingStaffMemberBaseId <String>]`: key: id of bookingStaffMemberBase
   - `[BookingStaffMemberId <String>]`: key: id of bookingStaffMember
 
 WORKINGHOURS <IMicrosoftGraphBookingWorkHours[]>: The range of hours each day of the week that the staff member is available for booking. By default, they are initialized to be the same as the businessHours property of the business.
   - `[Day <String>]`: dayOfWeek
   - `[TimeSlots <IMicrosoftGraphBookingWorkTimeSlot[]>]`: A list of start/end times during a day.
-    - `[End <String>]`: The time of the day that work starts. For example, 08:00:00.0000000.
-    - `[Start <String>]`: The time of the day that work stops. For example, 17:00:00.0000000.
+    - `[End <String>]`: The time of the day when work stops. For example, 17:00:00.0000000.
+    - `[Start <String>]`: The time of the day when work starts. For example, 08:00:00.0000000.
 
 ## RELATED LINKS

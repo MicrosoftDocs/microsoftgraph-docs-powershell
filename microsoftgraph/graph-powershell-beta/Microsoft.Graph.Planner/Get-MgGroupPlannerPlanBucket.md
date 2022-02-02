@@ -1,42 +1,42 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/get-mggroupplannerplanbucket
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/get-mggroupplannerplan
 schema: 2.0.0
 ---
 
-# Get-MgGroupPlannerPlanBucket
+# Get-MgGroupPlannerPlan
 
 ## SYNOPSIS
-Collection of buckets in the plan.
 Read-only.
 Nullable.
+Returns the plannerPlans owned by the group.
 
 ## SYNTAX
 
 ### List1 (Default)
 ```
-Get-MgGroupPlannerPlanBucket -GroupId <String> -PlannerPlanId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+Get-MgGroupPlannerPlan -GroupId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get
+### Get1
 ```
-Get-MgGroupPlannerPlanBucket -GroupId <String> -PlannerBucketId <String> -PlannerPlanId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
-```
-
-### GetViaIdentity
-```
-Get-MgGroupPlannerPlanBucket -InputObject <IPlannerIdentity> [-ExpandProperty <String[]>]
+Get-MgGroupPlannerPlan -GroupId <String> -PlannerPlanId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
+### GetViaIdentity1
+```
+Get-MgGroupPlannerPlan -InputObject <IPlannerIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
 ## DESCRIPTION
-Collection of buckets in the plan.
 Read-only.
 Nullable.
+Returns the plannerPlans owned by the group.
 
 ## EXAMPLES
 
@@ -108,7 +108,7 @@ key: id of group
 
 ```yaml
 Type: String
-Parameter Sets: List1, Get
+Parameter Sets: List1, Get1
 Aliases:
 
 Required: True
@@ -120,11 +120,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IPlannerIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: GetViaIdentity1
 Aliases:
 
 Required: True
@@ -149,27 +149,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PlannerBucketId
-key: id of plannerBucket
-
-```yaml
-Type: String
-Parameter Sets: Get
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -PlannerPlanId
 key: id of plannerPlan
 
 ```yaml
 Type: String
-Parameter Sets: List1, Get
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -262,7 +247,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerBucket1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerPlan1
 ## NOTES
 
 ALIASES

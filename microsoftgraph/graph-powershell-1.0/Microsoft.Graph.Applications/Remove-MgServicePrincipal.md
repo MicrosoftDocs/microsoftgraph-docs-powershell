@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/remove-mgserviceprincipal
@@ -8,8 +8,7 @@ schema: 2.0.0
 # Remove-MgServicePrincipal
 
 ## SYNOPSIS
-Represents an Azure Active Directory object.
-The directoryObject type is the base type for many other directory entity types.
+Delete entity from servicePrincipals
 
 ## SYNTAX
 
@@ -26,8 +25,7 @@ Remove-MgServicePrincipal -InputObject <IApplicationsIdentity> [-IfMatch <String
 ```
 
 ## DESCRIPTION
-Represents an Azure Active Directory object.
-The directoryObject type is the base type for many other directory entity types.
+Delete entity from servicePrincipals
 
 ## EXAMPLES
 
@@ -50,7 +48,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
@@ -153,6 +151,7 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[DirectoryDefinitionId <String>]`: key: id of directoryDefinition
   - `[EndpointId <String>]`: key: id of endpoint
   - `[ExtensionPropertyId <String>]`: key: id of extensionProperty
+  - `[FederatedIdentityCredentialId <String>]`: key: id of federatedIdentityCredential
   - `[GroupId <String>]`: key: id of group
   - `[LicenseDetailsId <String>]`: key: id of licenseDetails
   - `[OnPremisesAgentGroupId <String>]`: key: id of onPremisesAgentGroup

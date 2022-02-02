@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/get-mguserownedobjectbyref
@@ -11,6 +11,7 @@ schema: 2.0.0
 Directory objects that are owned by the user.
 Read-only.
 Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -23,6 +24,7 @@ Get-MgUserOwnedObjectByRef -UserId <String> [-Filter <String>] [-Search <String>
 Directory objects that are owned by the user.
 Read-only.
 Nullable.
+Supports $expand.
 
 ## EXAMPLES
 

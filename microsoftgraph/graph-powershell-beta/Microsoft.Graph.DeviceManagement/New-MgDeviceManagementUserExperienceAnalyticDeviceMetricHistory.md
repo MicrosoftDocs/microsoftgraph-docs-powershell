@@ -15,8 +15,7 @@ User experience analytics device metric history
 ### CreateExpanded (Default)
 ```
 New-MgDeviceManagementUserExperienceAnalyticDeviceMetricHistory [-AdditionalProperties <Hashtable>]
- [-DeviceId <String>] [-Id <String>] [-MetricDateTime <DateTime>] [-MetricType <String>]
- [-UserExperienceAnalyticsMetric <IMicrosoftGraphUserExperienceAnalyticsMetric>] [-WhatIf] [-Confirm]
+ [-DeviceId <String>] [-Id <String>] [-MetricDateTime <DateTime>] [-MetricType <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -30,6 +29,13 @@ New-MgDeviceManagementUserExperienceAnalyticDeviceMetricHistory
 User experience analytics device metric history
 
 ## EXAMPLES
+
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -50,7 +56,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analytics metric history.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsMetricHistory
@@ -124,22 +130,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -UserExperienceAnalyticsMetric
-The user experience analytics metric contains the score and units of a metric of a user experience anlaytics category.
-To construct, see NOTES section for USEREXPERIENCEANALYTICSMETRIC properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsMetric
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -181,30 +171,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsMetricHistory
 ## NOTES
-
-ALIASES
-
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
-
-
-BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsMetricHistory>: The user experience analytics metric history.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
-  - `[DeviceId <String>]`: The user experience analytics device id.
-  - `[MetricDateTime <DateTime?>]`: The user experience analytics metric date time.
-  - `[MetricType <String>]`: The user experience analytics metric type.
-  - `[UserExperienceAnalyticsMetric <IMicrosoftGraphUserExperienceAnalyticsMetric>]`: The user experience analytics metric contains the score and units of a metric of a user experience anlaytics category.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: Read-only.
-    - `[Unit <String>]`: The unit of the user experience analytics metric.
-    - `[Value <Double?>]`: The value of the user experience analytics metric.
-
-USEREXPERIENCEANALYTICSMETRIC <IMicrosoftGraphUserExperienceAnalyticsMetric>: The user experience analytics metric contains the score and units of a metric of a user experience anlaytics category.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
-  - `[Unit <String>]`: The unit of the user experience analytics metric.
-  - `[Value <Double?>]`: The value of the user experience analytics metric.
+Please use Get-Help -Online.
 
 ## RELATED LINKS
+
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticdevicemetrichistory](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticdevicemetrichistory)
+

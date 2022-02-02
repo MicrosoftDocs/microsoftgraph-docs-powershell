@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/publish-mgsitecontenttype
@@ -12,13 +12,13 @@ Invoke action publish
 
 ## SYNTAX
 
-### Publish (Default)
+### Publish1 (Default)
 ```
 Publish-MgSiteContentType -ContentTypeId <String> -SiteId <String> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### PublishViaIdentity
+### PublishViaIdentity1
 ```
 Publish-MgSiteContentType -InputObject <ISitesIdentity> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -35,7 +35,7 @@ key: id of contentType
 
 ```yaml
 Type: String
-Parameter Sets: Publish
+Parameter Sets: Publish1
 Aliases:
 
 Required: True
@@ -47,11 +47,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: PublishViaIdentity
+Parameter Sets: PublishViaIdentity1
 Aliases:
 
 Required: True
@@ -81,7 +81,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: Publish
+Parameter Sets: Publish1
 Aliases:
 
 Required: True
@@ -158,11 +158,18 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[OnenoteSectionId <String>]`: key: id of onenoteSection
   - `[Path <String>]`: Usage: path={path}
   - `[PermissionId <String>]`: key: id of permission
+  - `[RelationId <String>]`: key: id of relation
+  - `[RichLongRunningOperationId <String>]`: key: id of richLongRunningOperation
+  - `[SetId <String>]`: key: id of set
+  - `[SetId1 <String>]`: key: id of set
   - `[SiteId <String>]`: key: id of site
   - `[SiteId1 <String>]`: key: id of site
   - `[SitePageId <String>]`: key: id of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime={startDateTime}
+  - `[StoreId <String>]`: key: id of store
   - `[SubscriptionId <String>]`: key: id of subscription
+  - `[TermId <String>]`: key: id of term
+  - `[TermId1 <String>]`: key: id of term
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS

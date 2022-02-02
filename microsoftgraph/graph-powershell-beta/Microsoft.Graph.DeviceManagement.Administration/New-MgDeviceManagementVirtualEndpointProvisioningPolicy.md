@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointprovisioningpolicy
@@ -16,8 +16,10 @@ Cloud PC provisioning policy.
 ```
 New-MgDeviceManagementVirtualEndpointProvisioningPolicy [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphCloudPcProvisioningPolicyAssignment[]>] [-Description <String>]
- [-DisplayName <String>] [-Id <String>] [-ImageDisplayName <String>] [-ImageId <String>] [-ImageType <String>]
- [-OnPremisesConnectionId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DisplayName <String>] [-DomainJoinConfiguration <IMicrosoftGraphCloudPcDomainJoinConfiguration>]
+ [-Id <String>] [-ImageDisplayName <String>] [-ImageId <String>] [-ImageType <String>]
+ [-MicrosoftManagedDesktop <IMicrosoftGraphMicrosoftManagedDesktop>] [-OnPremisesConnectionId <String>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -113,6 +115,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -DomainJoinConfiguration
+cloudPcDomainJoinConfiguration
+To construct, please use Get-Help -Online and see NOTES section for DOMAINJOINCONFIGURATION properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCloudPcDomainJoinConfiguration
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Id
 Read-only.
 
@@ -164,6 +182,22 @@ cloudPcProvisioningPolicyImageType
 
 ```yaml
 Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MicrosoftManagedDesktop
+microsoftManagedDesktop
+To construct, please use Get-Help -Online and see NOTES section for MICROSOFTMANAGEDDESKTOP properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphMicrosoftManagedDesktop
 Parameter Sets: CreateExpanded
 Aliases:
 

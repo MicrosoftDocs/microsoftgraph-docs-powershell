@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecurityusersecurityprofile
@@ -36,7 +36,7 @@ Create new navigation property to userSecurityProfiles for security
 
 ### -Accounts
 .
-To construct, see NOTES section for ACCOUNTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ACCOUNTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserAccount[]
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 userSecurityProfile
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserSecurityProfile
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 
 ### -VendorInformation
 securityVendorInformation
-To construct, see NOTES section for VENDORINFORMATION properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for VENDORINFORMATION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityVendorInformation

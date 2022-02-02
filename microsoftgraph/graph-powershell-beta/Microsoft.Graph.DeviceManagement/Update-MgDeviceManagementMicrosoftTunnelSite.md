@@ -16,6 +16,7 @@ Collection of MicrosoftTunnelSite settings associated with account.
 ```
 Update-MgDeviceManagementMicrosoftTunnelSite -MicrosoftTunnelSiteId <String>
  [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
+ [-InternalNetworkProbeUrl <String>]
  [-MicrosoftTunnelConfiguration <IMicrosoftGraphMicrosoftTunnelConfiguration>]
  [-MicrosoftTunnelServers <IMicrosoftGraphMicrosoftTunnelServer[]>] [-PublicAddress <String>]
  [-RoleScopeTagIds <String[]>] [-UpgradeAutomatically] [-UpgradeAvailable] [-UpgradeWindowEndTime <String>]
@@ -33,6 +34,7 @@ Update-MgDeviceManagementMicrosoftTunnelSite -MicrosoftTunnelSiteId <String>
 ```
 Update-MgDeviceManagementMicrosoftTunnelSite -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
+ [-InternalNetworkProbeUrl <String>]
  [-MicrosoftTunnelConfiguration <IMicrosoftGraphMicrosoftTunnelConfiguration>]
  [-MicrosoftTunnelServers <IMicrosoftGraphMicrosoftTunnelServer[]>] [-PublicAddress <String>]
  [-RoleScopeTagIds <String[]>] [-UpgradeAutomatically] [-UpgradeAvailable] [-UpgradeWindowEndTime <String>]
@@ -50,6 +52,13 @@ Update-MgDeviceManagementMicrosoftTunnelSite -InputObject <IDeviceManagementIden
 Collection of MicrosoftTunnelSite settings associated with account.
 
 ## EXAMPLES
+
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -70,7 +79,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Entity that represents a Microsoft Tunnel site
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMicrosoftTunnelSite
@@ -131,7 +140,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementIdentity
@@ -145,9 +154,24 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -InternalNetworkProbeUrl
+The MicrosoftTunnelSite's Internal Network Access Probe URL
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -MicrosoftTunnelConfiguration
 Entity that represents a collection of Microsoft Tunnel settings
-To construct, see NOTES section for MICROSOFTTUNNELCONFIGURATION properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for MICROSOFTTUNNELCONFIGURATION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMicrosoftTunnelConfiguration
@@ -163,7 +187,7 @@ Accept wildcard characters: False
 
 ### -MicrosoftTunnelServers
 A list of MicrosoftTunnelServers that are registered to this MicrosoftTunnelSite
-To construct, see NOTES section for MICROSOFTTUNNELSERVERS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for MICROSOFTTUNNELSERVERS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMicrosoftTunnelServer[]
@@ -202,7 +226,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -248,7 +272,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -263,7 +287,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -308,7 +332,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -355,187 +379,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
-
-ALIASES
-
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
-
-
-BODYPARAMETER <IMicrosoftGraphMicrosoftTunnelSite>: Entity that represents a Microsoft Tunnel site
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
-  - `[Description <String>]`: The MicrosoftTunnelSite's description
-  - `[DisplayName <String>]`: The MicrosoftTunnelSite's display name
-  - `[MicrosoftTunnelConfiguration <IMicrosoftGraphMicrosoftTunnelConfiguration>]`: Entity that represents a collection of Microsoft Tunnel settings
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: Read-only.
-    - `[AdvancedSettings <IMicrosoftGraphKeyValuePair[]>]`: Additional settings that may be applied to the server
-      - `[Name <String>]`: Name for this key-value pair. Possible names are: AdditionalWSFedEndpointCheckResult,  AllowedAuthenticationClassReferencesCheckResult, AlwaysRequireAuthenticationCheckResult,   AutoUpdateEnabledCheckResult, ClaimsProviderNameCheckResult, EncryptClaimsCheckResult,  EncryptedNameIdRequiredCheckResult, MonitoringEnabledCheckResult,NotBeforeSkewCheckResult,  RequestMFAFromClaimsProvidersCheckResult, SignedSamlRequestsRequiredCheckResult, AdditionalAuthenticationRulesCheckResult, TokenLifetimeCheckResult,  DelegationAuthorizationRulesCheckResult, IssuanceAuthorizationRulesCheckResult, IssuanceTransformRulesCheckResult.
-      - `[Value <String>]`: Value for this key-value pair. Possible result values are 0 (when the validation check passed), 1 (when the validation check failed), or 2 (when the validation check is a warning).
-    - `[DefaultDomainSuffix <String>]`: The Default Domain appendix that will be used by the clients
-    - `[Description <String>]`: The MicrosoftTunnelConfiguration's description
-    - `[DisplayName <String>]`: The MicrosoftTunnelConfiguration's display name
-    - `[DnsServers <String[]>]`: The DNS servers that will be used by the clients
-    - `[LastUpdateDateTime <DateTime?>]`: When the MicrosoftTunnelConfiguration was last updated
-    - `[ListenPort <Int32?>]`: The port that both TCP and UPD will listen over on the server
-    - `[Network <String>]`: The subnet that will be used to allocate virtual address for the clients
-    - `[RoleScopeTagIds <String[]>]`: List of Scope Tags for this Entity instance.
-    - `[RoutesExclude <String[]>]`: Subsets of the routes that will not be routed by the server
-    - `[RoutesInclude <String[]>]`: The routs that will be routed by the server
-    - `[SplitDns <String[]>]`: The domains that will be resolved using the provided dns servers
-  - `[MicrosoftTunnelServers <IMicrosoftGraphMicrosoftTunnelServer[]>]`: A list of MicrosoftTunnelServers that are registered to this MicrosoftTunnelSite
-    - `[Id <String>]`: Read-only.
-    - `[AgentImageDigest <String>]`: The digest of the current agent image running on this server 
-    - `[DisplayName <String>]`: The MicrosoftTunnelServer's display name
-    - `[LastCheckinDateTime <DateTime?>]`: When the MicrosoftTunnelServer last checked in
-    - `[ServerImageDigest <String>]`: The digest of the current server image running on this server 
-    - `[TunnelServerHealthStatus <String>]`: microsoftTunnelServerHealthStatus
-  - `[PublicAddress <String>]`: The MicrosoftTunnelSite's public domain name or IP address
-  - `[RoleScopeTagIds <String[]>]`: List of Scope Tags for this Entity instance.
-  - `[UpgradeAutomatically <Boolean?>]`: The site's automatic upgrade setting. True for automatic upgrades, false for manual control
-  - `[UpgradeAvailable <Boolean?>]`: True if an upgrade is available
-  - `[UpgradeWindowEndTime <String>]`: The site's upgrade window end time of day
-  - `[UpgradeWindowStartTime <String>]`: The site's upgrade window start time of day
-  - `[UpgradeWindowUtcOffsetInMinutes <Int32?>]`: The site's timezone represented as a minute offset from UTC
-
-INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
-  - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
-  - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
-  - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema
-  - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
-  - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: key: id of assignmentFilterEvaluationStatusDetails
-  - `[DataSharingConsentId <String>]`: key: id of dataSharingConsent
-  - `[DetectedAppId <String>]`: key: id of detectedApp
-  - `[DeviceAndAppManagementAssignmentFilterId <String>]`: key: id of deviceAndAppManagementAssignmentFilter
-  - `[DeviceCategoryId <String>]`: key: id of deviceCategory
-  - `[DeviceComplianceActionItemId <String>]`: key: id of deviceComplianceActionItem
-  - `[DeviceComplianceDeviceStatusId <String>]`: key: id of deviceComplianceDeviceStatus
-  - `[DeviceCompliancePolicyAssignmentId <String>]`: key: id of deviceCompliancePolicyAssignment
-  - `[DeviceCompliancePolicyId <String>]`: key: id of deviceCompliancePolicy
-  - `[DeviceCompliancePolicySettingStateSummaryId <String>]`: key: id of deviceCompliancePolicySettingStateSummary
-  - `[DeviceCompliancePolicyStateId <String>]`: key: id of deviceCompliancePolicyState
-  - `[DeviceComplianceScheduledActionForRuleId <String>]`: key: id of deviceComplianceScheduledActionForRule
-  - `[DeviceComplianceSettingStateId <String>]`: key: id of deviceComplianceSettingState
-  - `[DeviceComplianceUserStatusId <String>]`: key: id of deviceComplianceUserStatus
-  - `[DeviceConfigurationAssignmentId <String>]`: key: id of deviceConfigurationAssignment
-  - `[DeviceConfigurationConflictSummaryId <String>]`: key: id of deviceConfigurationConflictSummary
-  - `[DeviceConfigurationDeviceStatusId <String>]`: key: id of deviceConfigurationDeviceStatus
-  - `[DeviceConfigurationGroupAssignmentId <String>]`: key: id of deviceConfigurationGroupAssignment
-  - `[DeviceConfigurationId <String>]`: key: id of deviceConfiguration
-  - `[DeviceConfigurationStateId <String>]`: key: id of deviceConfigurationState
-  - `[DeviceConfigurationUserStatusId <String>]`: key: id of deviceConfigurationUserStatus
-  - `[DeviceHealthScriptAssignmentId <String>]`: key: id of deviceHealthScriptAssignment
-  - `[DeviceHealthScriptDeviceStateId <String>]`: key: id of deviceHealthScriptDeviceState
-  - `[DeviceHealthScriptId <String>]`: key: id of deviceHealthScript
-  - `[DeviceLogCollectionResponseId <String>]`: key: id of deviceLogCollectionResponse
-  - `[DeviceManagementDerivedCredentialSettingsId <String>]`: key: id of deviceManagementDerivedCredentialSettings
-  - `[DeviceManagementIntentAssignmentId <String>]`: key: id of deviceManagementIntentAssignment
-  - `[DeviceManagementIntentDeviceSettingStateSummaryId <String>]`: key: id of deviceManagementIntentDeviceSettingStateSummary
-  - `[DeviceManagementIntentDeviceStateId <String>]`: key: id of deviceManagementIntentDeviceState
-  - `[DeviceManagementIntentId <String>]`: key: id of deviceManagementIntent
-  - `[DeviceManagementIntentSettingCategoryId <String>]`: key: id of deviceManagementIntentSettingCategory
-  - `[DeviceManagementIntentUserStateId <String>]`: key: id of deviceManagementIntentUserState
-  - `[DeviceManagementResourceAccessProfileAssignmentId <String>]`: key: id of deviceManagementResourceAccessProfileAssignment
-  - `[DeviceManagementResourceAccessProfileBaseId <String>]`: key: id of deviceManagementResourceAccessProfileBase
-  - `[DeviceManagementScriptAssignmentId <String>]`: key: id of deviceManagementScriptAssignment
-  - `[DeviceManagementScriptDeviceStateId <String>]`: key: id of deviceManagementScriptDeviceState
-  - `[DeviceManagementScriptGroupAssignmentId <String>]`: key: id of deviceManagementScriptGroupAssignment
-  - `[DeviceManagementScriptId <String>]`: key: id of deviceManagementScript
-  - `[DeviceManagementScriptUserStateId <String>]`: key: id of deviceManagementScriptUserState
-  - `[DeviceManagementSettingCategoryId <String>]`: key: id of deviceManagementSettingCategory
-  - `[DeviceManagementSettingDefinitionId <String>]`: key: id of deviceManagementSettingDefinition
-  - `[DeviceManagementSettingInstanceId <String>]`: key: id of deviceManagementSettingInstance
-  - `[DeviceManagementTemplateId <String>]`: key: id of deviceManagementTemplate
-  - `[DeviceManagementTemplateId1 <String>]`: key: id of deviceManagementTemplate
-  - `[DeviceManagementTemplateSettingCategoryId <String>]`: key: id of deviceManagementTemplateSettingCategory
-  - `[DeviceManagementTroubleshootingEventId <String>]`: key: id of deviceManagementTroubleshootingEvent
-  - `[DeviceShellScriptId <String>]`: key: id of deviceShellScript
-  - `[EmbeddedSimActivationCodePoolAssignmentId <String>]`: key: id of embeddedSIMActivationCodePoolAssignment
-  - `[EmbeddedSimActivationCodePoolId <String>]`: key: id of embeddedSIMActivationCodePool
-  - `[EmbeddedSimDeviceStateId <String>]`: key: id of embeddedSIMDeviceState
-  - `[GroupPolicyConfigurationAssignmentId <String>]`: key: id of groupPolicyConfigurationAssignment
-  - `[GroupPolicyConfigurationId <String>]`: key: id of groupPolicyConfiguration
-  - `[GroupPolicyDefinitionValueId <String>]`: key: id of groupPolicyDefinitionValue
-  - `[GroupPolicyPresentationValueId <String>]`: key: id of groupPolicyPresentationValue
-  - `[LocalizedNotificationMessageId <String>]`: key: id of localizedNotificationMessage
-  - `[MacOSSoftwareUpdateAccountSummaryId <String>]`: key: id of macOSSoftwareUpdateAccountSummary
-  - `[MacOSSoftwareUpdateCategorySummaryId <String>]`: key: id of macOSSoftwareUpdateCategorySummary
-  - `[MacOSSoftwareUpdateStateSummaryId <String>]`: key: id of macOSSoftwareUpdateStateSummary
-  - `[MalwareStateForWindowsDeviceId <String>]`: key: id of malwareStateForWindowsDevice
-  - `[ManagedDeviceEncryptionStateId <String>]`: key: id of managedDeviceEncryptionState
-  - `[ManagedDeviceId <String>]`: key: id of managedDevice
-  - `[ManagedDeviceMobileAppConfigurationStateId <String>]`: key: id of managedDeviceMobileAppConfigurationState
-  - `[ManagementConditionId <String>]`: key: id of managementCondition
-  - `[ManagementConditionStatementId <String>]`: key: id of managementConditionStatement
-  - `[MicrosoftTunnelConfigurationId <String>]`: key: id of microsoftTunnelConfiguration
-  - `[MicrosoftTunnelHealthThresholdId <String>]`: key: id of microsoftTunnelHealthThreshold
-  - `[MicrosoftTunnelServerId <String>]`: key: id of microsoftTunnelServer
-  - `[MicrosoftTunnelServerLogCollectionResponseId <String>]`: key: id of microsoftTunnelServerLogCollectionResponse
-  - `[MicrosoftTunnelSiteId <String>]`: key: id of microsoftTunnelSite
-  - `[MobileAppTroubleshootingEventId <String>]`: key: id of mobileAppTroubleshootingEvent
-  - `[NotificationMessageTemplateId <String>]`: key: id of notificationMessageTemplate
-  - `[RemoteActionAuditId <String>]`: key: id of remoteActionAudit
-  - `[SecurityBaselineSettingStateId <String>]`: key: id of securityBaselineSettingState
-  - `[SecurityBaselineStateId <String>]`: key: id of securityBaselineState
-  - `[SettingStateDeviceSummaryId <String>]`: key: id of settingStateDeviceSummary
-  - `[UserExperienceAnalyticsAppHealthAppPerformanceByAppVersionId <String>]`: key: id of userExperienceAnalyticsAppHealthAppPerformanceByAppVersion
-  - `[UserExperienceAnalyticsAppHealthAppPerformanceByOSVersionId <String>]`: key: id of userExperienceAnalyticsAppHealthAppPerformanceByOSVersion
-  - `[UserExperienceAnalyticsAppHealthApplicationPerformanceId <String>]`: key: id of userExperienceAnalyticsAppHealthApplicationPerformance
-  - `[UserExperienceAnalyticsAppHealthDeviceModelPerformanceId <String>]`: key: id of userExperienceAnalyticsAppHealthDeviceModelPerformance
-  - `[UserExperienceAnalyticsAppHealthDevicePerformanceDetailsId <String>]`: key: id of userExperienceAnalyticsAppHealthDevicePerformanceDetails
-  - `[UserExperienceAnalyticsAppHealthDevicePerformanceId <String>]`: key: id of userExperienceAnalyticsAppHealthDevicePerformance
-  - `[UserExperienceAnalyticsAppHealthOSVersionPerformanceId <String>]`: key: id of userExperienceAnalyticsAppHealthOSVersionPerformance
-  - `[UserExperienceAnalyticsBaselineId <String>]`: key: id of userExperienceAnalyticsBaseline
-  - `[UserExperienceAnalyticsCategoryId <String>]`: key: id of userExperienceAnalyticsCategory
-  - `[UserExperienceAnalyticsDevicePerformanceId <String>]`: key: id of userExperienceAnalyticsDevicePerformance
-  - `[UserExperienceAnalyticsDeviceScoresId <String>]`: key: id of userExperienceAnalyticsDeviceScores
-  - `[UserExperienceAnalyticsDeviceStartupHistoryId <String>]`: key: id of userExperienceAnalyticsDeviceStartupHistory
-  - `[UserExperienceAnalyticsDeviceStartupProcessId <String>]`: key: id of userExperienceAnalyticsDeviceStartupProcess
-  - `[UserExperienceAnalyticsDeviceStartupProcessPerformanceId <String>]`: key: id of userExperienceAnalyticsDeviceStartupProcessPerformance
-  - `[UserExperienceAnalyticsDeviceWithoutCloudIdentityId <String>]`: key: id of userExperienceAnalyticsDeviceWithoutCloudIdentity
-  - `[UserExperienceAnalyticsImpactingProcessId <String>]`: key: id of userExperienceAnalyticsImpactingProcess
-  - `[UserExperienceAnalyticsMetricHistoryId <String>]`: key: id of userExperienceAnalyticsMetricHistory
-  - `[UserExperienceAnalyticsMetricId <String>]`: key: id of userExperienceAnalyticsMetric
-  - `[UserExperienceAnalyticsNotAutopilotReadyDeviceId <String>]`: key: id of userExperienceAnalyticsNotAutopilotReadyDevice
-  - `[UserExperienceAnalyticsRemoteConnectionId <String>]`: key: id of userExperienceAnalyticsRemoteConnection
-  - `[UserExperienceAnalyticsResourcePerformanceId <String>]`: key: id of userExperienceAnalyticsResourcePerformance
-  - `[UserExperienceAnalyticsScoreHistoryId <String>]`: key: id of userExperienceAnalyticsScoreHistory
-  - `[UserExperienceAnalyticsWorkFromAnywhereDeviceId <String>]`: key: id of userExperienceAnalyticsWorkFromAnywhereDevice
-  - `[UserExperienceAnalyticsWorkFromAnywhereMetricId <String>]`: key: id of userExperienceAnalyticsWorkFromAnywhereMetric
-  - `[UserId <String>]`: key: id of user
-  - `[WindowsDeviceMalwareStateId <String>]`: key: id of windowsDeviceMalwareState
-  - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: key: id of windowsInformationProtectionAppLearningSummary
-  - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: key: id of windowsInformationProtectionNetworkLearningSummary
-  - `[WindowsMalwareInformationId <String>]`: key: id of windowsMalwareInformation
-
-MICROSOFTTUNNELCONFIGURATION <IMicrosoftGraphMicrosoftTunnelConfiguration>: Entity that represents a collection of Microsoft Tunnel settings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
-  - `[AdvancedSettings <IMicrosoftGraphKeyValuePair[]>]`: Additional settings that may be applied to the server
-    - `[Name <String>]`: Name for this key-value pair. Possible names are: AdditionalWSFedEndpointCheckResult,  AllowedAuthenticationClassReferencesCheckResult, AlwaysRequireAuthenticationCheckResult,   AutoUpdateEnabledCheckResult, ClaimsProviderNameCheckResult, EncryptClaimsCheckResult,  EncryptedNameIdRequiredCheckResult, MonitoringEnabledCheckResult,NotBeforeSkewCheckResult,  RequestMFAFromClaimsProvidersCheckResult, SignedSamlRequestsRequiredCheckResult, AdditionalAuthenticationRulesCheckResult, TokenLifetimeCheckResult,  DelegationAuthorizationRulesCheckResult, IssuanceAuthorizationRulesCheckResult, IssuanceTransformRulesCheckResult.
-    - `[Value <String>]`: Value for this key-value pair. Possible result values are 0 (when the validation check passed), 1 (when the validation check failed), or 2 (when the validation check is a warning).
-  - `[DefaultDomainSuffix <String>]`: The Default Domain appendix that will be used by the clients
-  - `[Description <String>]`: The MicrosoftTunnelConfiguration's description
-  - `[DisplayName <String>]`: The MicrosoftTunnelConfiguration's display name
-  - `[DnsServers <String[]>]`: The DNS servers that will be used by the clients
-  - `[LastUpdateDateTime <DateTime?>]`: When the MicrosoftTunnelConfiguration was last updated
-  - `[ListenPort <Int32?>]`: The port that both TCP and UPD will listen over on the server
-  - `[Network <String>]`: The subnet that will be used to allocate virtual address for the clients
-  - `[RoleScopeTagIds <String[]>]`: List of Scope Tags for this Entity instance.
-  - `[RoutesExclude <String[]>]`: Subsets of the routes that will not be routed by the server
-  - `[RoutesInclude <String[]>]`: The routs that will be routed by the server
-  - `[SplitDns <String[]>]`: The domains that will be resolved using the provided dns servers
-
-MICROSOFTTUNNELSERVERS <IMicrosoftGraphMicrosoftTunnelServer[]>: A list of MicrosoftTunnelServers that are registered to this MicrosoftTunnelSite
-  - `[Id <String>]`: Read-only.
-  - `[AgentImageDigest <String>]`: The digest of the current agent image running on this server 
-  - `[DisplayName <String>]`: The MicrosoftTunnelServer's display name
-  - `[LastCheckinDateTime <DateTime?>]`: When the MicrosoftTunnelServer last checked in
-  - `[ServerImageDigest <String>]`: The digest of the current server image running on this server 
-  - `[TunnelServerHealthStatus <String>]`: microsoftTunnelServerHealthStatus
+Please use Get-Help -Online.
 
 ## RELATED LINKS
 
-## RELATED LINKS
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementmicrosofttunnelsite](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementmicrosofttunnelsite)
+

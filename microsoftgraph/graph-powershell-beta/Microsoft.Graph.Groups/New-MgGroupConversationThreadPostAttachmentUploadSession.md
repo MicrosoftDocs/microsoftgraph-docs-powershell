@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/new-mggroupconversationthreadpostattachmentuploadsession
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 
 ### -AttachmentItem
 attachmentItem
-To construct, see NOTES section for ATTACHMENTITEM properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ATTACHMENTITEM properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAttachmentItem
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths151XiayGroupsGroupIdConversationsConversationIdThreadsConversationthreadIdPostsPostIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IGroupsIdentity
@@ -224,6 +224,7 @@ To create the parameters described below, construct a hash table containing the 
 ATTACHMENTITEM <IMicrosoftGraphAttachmentItem>: attachmentItem
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AttachmentType <String>]`: attachmentType
+  - `[ContentId <String>]`: The CID or Content-Id of the attachment for referencing in case of in-line attachments using <img src='cid:contentId'> tag in HTML messages. Optional.
   - `[ContentType <String>]`: The nature of the data in the attachment. Optional.
   - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false. Optional.
   - `[Name <String>]`: The display name of the attachment. This can be a descriptive string and does not have to be the actual file name. Required.
@@ -234,6 +235,7 @@ BODYPARAMETER <IPaths151XiayGroupsGroupIdConversationsConversationIdThreadsConve
   - `[AttachmentItem <IMicrosoftGraphAttachmentItem>]`: attachmentItem
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AttachmentType <String>]`: attachmentType
+    - `[ContentId <String>]`: The CID or Content-Id of the attachment for referencing in case of in-line attachments using <img src='cid:contentId'> tag in HTML messages. Optional.
     - `[ContentType <String>]`: The nature of the data in the attachment. Optional.
     - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false. Optional.
     - `[Name <String>]`: The display name of the attachment. This can be a descriptive string and does not have to be the actual file name. Required.

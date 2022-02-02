@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggroupcalendarschedule
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsB1HbbpGroupsGroupIdCalendarMicrosoftGraphGetschedulePostRequestbodyContentApplicationJsonSchema
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 
 ### -EndTime
 dateTimeTimeZone
-To construct, see NOTES section for ENDTIME properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ENDTIME properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDateTimeZone
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IGroupsIdentity
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 
 ### -StartTime
 dateTimeTimeZone
-To construct, see NOTES section for STARTTIME properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for STARTTIME properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDateTimeZone

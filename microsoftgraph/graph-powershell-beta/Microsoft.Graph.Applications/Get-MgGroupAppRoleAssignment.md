@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mggroupapproleassignment
@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Represents the app roles a group has been granted for an application.
+Supports $expand.
 
 ## SYNTAX
 
@@ -33,8 +34,28 @@ Get-MgGroupAppRoleAssignment -InputObject <IApplicationsIdentity> [-ExpandProper
 
 ## DESCRIPTION
 Represents the app roles a group has been granted for an application.
+Supports $expand.
 
 ## EXAMPLES
+
+### Example 1: Get appRoleAssignments granted to a group
+```powershell
+Get-MgGroupAppRoleAssignment -GroupId '2692d278-8323-4094-b286-e0ffce5e54a5' |
+  Format-List
+
+AppRoleId            : 00000000-0000-0000-0000-000000000000
+CreatedDateTime      : 7/29/2021 10:08:49 AM
+DeletedDateTime      :
+Id                   : eNKSJiODlECyhuD_zl5UpexaKrcAYuZEhjCKxfNmzDM
+PrincipalDisplayName : Marketing
+PrincipalId          : 2692d278-8323-4094-b286-e0ffce5e54a5
+PrincipalType        : Group
+ResourceDisplayName  : Common Data Service
+ResourceId           : 93af1c70-e87f-45df-8780-8af2d7afd05e
+AdditionalProperties : {}
+```
+
+This example get all app role assignments granted to the specified group.
 
 ## PARAMETERS
 
@@ -131,7 +152,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
@@ -243,7 +264,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppRoleAssignment1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppRoleAssignment
 ## NOTES
 
 ALIASES
@@ -263,6 +284,7 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[DirectoryDefinitionId <String>]`: key: id of directoryDefinition
   - `[EndpointId <String>]`: key: id of endpoint
   - `[ExtensionPropertyId <String>]`: key: id of extensionProperty
+  - `[FederatedIdentityCredentialId <String>]`: key: id of federatedIdentityCredential
   - `[GroupId <String>]`: key: id of group
   - `[LicenseDetailsId <String>]`: key: id of licenseDetails
   - `[OnPremisesAgentGroupId <String>]`: key: id of onPremisesAgentGroup

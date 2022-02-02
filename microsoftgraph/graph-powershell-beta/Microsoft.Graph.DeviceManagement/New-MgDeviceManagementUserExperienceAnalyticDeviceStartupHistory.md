@@ -35,6 +35,13 @@ User experience analytics device Startup History
 
 ## EXAMPLES
 
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -54,7 +61,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analytics device startup history entity contains device boot performance history details.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsDeviceStartupHistory
@@ -78,7 +85,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -93,7 +100,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -123,7 +130,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -138,7 +145,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -153,7 +160,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -183,7 +190,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -198,7 +205,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -228,13 +235,13 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -RestartCategory
-userExperienceAnalyticsOperatingSystemRestartCategory
+Operating System restart category
 
 ```yaml
 Type: String
@@ -305,7 +312,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -320,7 +327,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -366,32 +373,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceStartupHistory
 ## NOTES
-
-ALIASES
-
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
-
-
-BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupHistory>: The user experience analytics device startup history entity contains device boot performance history details.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
-  - `[CoreBootTimeInMS <Int32?>]`: The user experience analytics device core boot time in milliseconds.
-  - `[CoreLoginTimeInMS <Int32?>]`: The user experience analytics device core login time in milliseconds.
-  - `[DeviceId <String>]`: The user experience analytics device id.
-  - `[FeatureUpdateBootTimeInMS <Int32?>]`: The user experience analytics device feature update time in milliseconds.
-  - `[GroupPolicyBootTimeInMS <Int32?>]`: The User experience analytics Device group policy boot time in milliseconds.
-  - `[GroupPolicyLoginTimeInMS <Int32?>]`: The User experience analytics Device group policy login time in milliseconds.
-  - `[IsFeatureUpdate <Boolean?>]`: The user experience analytics device boot record is a feature update.
-  - `[IsFirstLogin <Boolean?>]`: The user experience analytics device first login.
-  - `[OperatingSystemVersion <String>]`: The user experience analytics device boot record's operating system version.
-  - `[ResponsiveDesktopTimeInMS <Int32?>]`: The user experience analytics responsive desktop time in milliseconds.
-  - `[RestartCategory <String>]`: userExperienceAnalyticsOperatingSystemRestartCategory
-  - `[RestartFaultBucket <String>]`: OS restart fault bucket. The fault bucket is used to find additional information about a system crash.
-  - `[RestartStopCode <String>]`: OS restart stop code. This shows the bug check code which can be used to look up the blue screen reason.
-  - `[StartTime <DateTime?>]`: The user experience analytics device boot start time.
-  - `[TotalBootTimeInMS <Int32?>]`: The user experience analytics device total boot time in milliseconds.
-  - `[TotalLoginTimeInMS <Int32?>]`: The user experience analytics device total login time in milliseconds.
+Please use Get-Help -Online.
 
 ## RELATED LINKS
+
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticdevicestartuphistory](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticdevicestartuphistory)
+

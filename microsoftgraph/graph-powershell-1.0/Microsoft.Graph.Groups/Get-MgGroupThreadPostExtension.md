@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggroupthreadpostextension
@@ -11,14 +11,15 @@ schema: 2.0.0
 The collection of open extensions defined for the post.
 Read-only.
 Nullable.
+Supports $expand.
 
 ## SYNTAX
 
 ### List1 (Default)
 ```
 Get-MgGroupThreadPostExtension -ConversationThreadId <String> -GroupId <String> -PostId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Skip <Int32>] [-Sort <String[]>]
+ [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get1
@@ -37,6 +38,7 @@ Get-MgGroupThreadPostExtension -InputObject <IGroupsIdentity> [-ExpandProperty <
 The collection of open extensions defined for the post.
 Read-only.
 Nullable.
+Supports $expand.
 
 ## EXAMPLES
 
@@ -150,7 +152,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IGroupsIdentity
@@ -201,21 +203,6 @@ Select properties to be returned
 Type: String[]
 Parameter Sets: (All)
 Aliases: Select
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Search
-Search items by search phrases
-
-```yaml
-Type: String
-Parameter Sets: List1
-Aliases:
 
 Required: False
 Position: Named
@@ -312,3 +299,5 @@ INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+
+`[UserId <String>]`: key: id of user

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgserviceprincipalclaimmappingpolicy
@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The claimsMappingPolicies assigned to this service principal.
+Supports $expand.
 
 ## SYNTAX
 
@@ -20,6 +21,7 @@ Get-MgServicePrincipalClaimMappingPolicy -ServicePrincipalId <String> [-ExpandPr
 
 ## DESCRIPTION
 The claimsMappingPolicies assigned to this service principal.
+Supports $expand.
 
 ## EXAMPLES
 
@@ -198,7 +200,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphClaimsMappingPolicy1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphClaimsMappingPolicy
 ## NOTES
 
 ALIASES

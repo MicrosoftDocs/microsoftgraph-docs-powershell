@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/find-mgusermeetingtime
@@ -12,7 +12,7 @@ Invoke action findMeetingTimes
 
 ## SYNTAX
 
-### FindExpanded1 (Default)
+### FindExpanded (Default)
 ```
 Find-MgUserMeetingTime -UserId <String> [-AdditionalProperties <Hashtable>]
  [-Attendees <IMicrosoftGraphAttendeeBase[]>] [-IsOrganizerOptional]
@@ -21,14 +21,14 @@ Find-MgUserMeetingTime -UserId <String> [-AdditionalProperties <Hashtable>]
  [-TimeConstraint <IMicrosoftGraphTimeConstraint>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Find1
+### Find
 ```
 Find-MgUserMeetingTime -UserId <String>
- -BodyParameter <IPathsSzpbzfUsersUserIdMicrosoftGraphFindmeetingtimesPostRequestbodyContentApplicationJsonSchema1>
+ -BodyParameter <IPathsSzpbzfUsersUserIdMicrosoftGraphFindmeetingtimesPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### FindViaIdentityExpanded1
+### FindViaIdentityExpanded
 ```
 Find-MgUserMeetingTime -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-Attendees <IMicrosoftGraphAttendeeBase[]>] [-IsOrganizerOptional]
@@ -37,10 +37,10 @@ Find-MgUserMeetingTime -InputObject <IUsersActionsIdentity> [-AdditionalProperti
  [-TimeConstraint <IMicrosoftGraphTimeConstraint>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### FindViaIdentity1
+### FindViaIdentity
 ```
 Find-MgUserMeetingTime -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPathsSzpbzfUsersUserIdMicrosoftGraphFindmeetingtimesPostRequestbodyContentApplicationJsonSchema1>
+ -BodyParameter <IPathsSzpbzfUsersUserIdMicrosoftGraphFindmeetingtimesPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -56,7 +56,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: FindExpanded1, FindViaIdentityExpanded1
+Parameter Sets: FindExpanded, FindViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -72,7 +72,7 @@ To construct, see NOTES section for ATTENDEES properties and create a hash table
 
 ```yaml
 Type: IMicrosoftGraphAttendeeBase[]
-Parameter Sets: FindExpanded1, FindViaIdentityExpanded1
+Parameter Sets: FindExpanded, FindViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -87,8 +87,8 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsSzpbzfUsersUserIdMicrosoftGraphFindmeetingtimesPostRequestbodyContentApplicationJsonSchema1
-Parameter Sets: Find1, FindViaIdentity1
+Type: IPathsSzpbzfUsersUserIdMicrosoftGraphFindmeetingtimesPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Find, FindViaIdentity
 Aliases:
 
 Required: True
@@ -104,7 +104,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: FindViaIdentityExpanded1, FindViaIdentity1
+Parameter Sets: FindViaIdentityExpanded, FindViaIdentity
 Aliases:
 
 Required: True
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: FindExpanded1, FindViaIdentityExpanded1
+Parameter Sets: FindExpanded, FindViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -135,7 +135,7 @@ To construct, see NOTES section for LOCATIONCONSTRAINT properties and create a h
 
 ```yaml
 Type: IMicrosoftGraphLocationConstraint
-Parameter Sets: FindExpanded1, FindViaIdentityExpanded1
+Parameter Sets: FindExpanded, FindViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: Int32
-Parameter Sets: FindExpanded1, FindViaIdentityExpanded1
+Parameter Sets: FindExpanded, FindViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: TimeSpan
-Parameter Sets: FindExpanded1, FindViaIdentityExpanded1
+Parameter Sets: FindExpanded, FindViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: Double
-Parameter Sets: FindExpanded1, FindViaIdentityExpanded1
+Parameter Sets: FindExpanded, FindViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: FindExpanded1, FindViaIdentityExpanded1
+Parameter Sets: FindExpanded, FindViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -211,7 +211,7 @@ To construct, see NOTES section for TIMECONSTRAINT properties and create a hash 
 
 ```yaml
 Type: IMicrosoftGraphTimeConstraint
-Parameter Sets: FindExpanded1, FindViaIdentityExpanded1
+Parameter Sets: FindExpanded, FindViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -226,7 +226,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: FindExpanded1, Find1
+Parameter Sets: FindExpanded, Find
 Aliases:
 
 Required: True
@@ -272,7 +272,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsSzpbzfUsersUserIdMicrosoftGraphFindmeetingtimesPostRequestbodyContentApplicationJsonSchema1
+### Microsoft.Graph.PowerShell.Models.IPathsSzpbzfUsersUserIdMicrosoftGraphFindmeetingtimesPostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 

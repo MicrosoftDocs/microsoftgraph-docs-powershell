@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/remove-mguserapproleassignment
@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Represents the app roles a user has been granted for an application.
+Supports $expand.
 
 ## SYNTAX
 
@@ -26,8 +27,18 @@ Remove-MgUserAppRoleAssignment -InputObject <IApplicationsIdentity> [-IfMatch <S
 
 ## DESCRIPTION
 Represents the app roles a user has been granted for an application.
+Supports $expand.
 
 ## EXAMPLES
+
+### Example 1: Remove a user's application role assignment
+```powershell
+Remove-MgUserAppRoleAssignment ` 
+-AppRoleAssignmentID '01B8ir38J0eoiYqyMt_qAVDX9vgSB6xDur4zn5zOluM' ` 
+-UserId '8a7c50d3-fcbd-4727-a889-8ab232dfea01'
+```
+
+This example removes the specified application role from the specified user.
 
 ## PARAMETERS
 
@@ -63,7 +74,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
@@ -166,6 +177,7 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[DirectoryDefinitionId <String>]`: key: id of directoryDefinition
   - `[EndpointId <String>]`: key: id of endpoint
   - `[ExtensionPropertyId <String>]`: key: id of extensionProperty
+  - `[FederatedIdentityCredentialId <String>]`: key: id of federatedIdentityCredential
   - `[GroupId <String>]`: key: id of group
   - `[LicenseDetailsId <String>]`: key: id of licenseDetails
   - `[OnPremisesAgentGroupId <String>]`: key: id of onPremisesAgentGroup

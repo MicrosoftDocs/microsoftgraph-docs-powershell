@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/invoke-mgredirectcommunicationcall
@@ -12,21 +12,21 @@ Invoke action redirect
 
 ## SYNTAX
 
-### RedirectExpanded1 (Default)
+### RedirectExpanded (Default)
 ```
 Invoke-MgRedirectCommunicationCall -CallId <String> [-AdditionalProperties <Hashtable>] [-CallbackUri <String>]
  [-Targets <IMicrosoftGraphInvitationParticipantInfo[]>] [-Timeout <Int32>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### Redirect1
+### Redirect
 ```
 Invoke-MgRedirectCommunicationCall -CallId <String>
  -BodyParameter <IPaths183Gi8UCommunicationsCallsCallIdMicrosoftGraphRedirectPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### RedirectViaIdentityExpanded1
+### RedirectViaIdentityExpanded
 ```
 Invoke-MgRedirectCommunicationCall -InputObject <ICloudCommunicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-CallbackUri <String>]
@@ -34,7 +34,7 @@ Invoke-MgRedirectCommunicationCall -InputObject <ICloudCommunicationsIdentity>
  [<CommonParameters>]
 ```
 
-### RedirectViaIdentity1
+### RedirectViaIdentity
 ```
 Invoke-MgRedirectCommunicationCall -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPaths183Gi8UCommunicationsCallsCallIdMicrosoftGraphRedirectPostRequestbodyContentApplicationJsonSchema>
@@ -53,7 +53,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: RedirectExpanded1, RedirectViaIdentityExpanded1
+Parameter Sets: RedirectExpanded, RedirectViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -65,11 +65,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths183Gi8UCommunicationsCallsCallIdMicrosoftGraphRedirectPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Redirect1, RedirectViaIdentity1
+Parameter Sets: Redirect, RedirectViaIdentity
 Aliases:
 
 Required: True
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: RedirectExpanded1, RedirectViaIdentityExpanded1
+Parameter Sets: RedirectExpanded, RedirectViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -99,7 +99,7 @@ key: id of call
 
 ```yaml
 Type: String
-Parameter Sets: RedirectExpanded1, Redirect1
+Parameter Sets: RedirectExpanded, Redirect
 Aliases:
 
 Required: True
@@ -111,11 +111,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ICloudCommunicationsIdentity
-Parameter Sets: RedirectViaIdentityExpanded1, RedirectViaIdentity1
+Parameter Sets: RedirectViaIdentityExpanded, RedirectViaIdentity
 Aliases:
 
 Required: True
@@ -142,11 +142,11 @@ Accept wildcard characters: False
 
 ### -Targets
 .
-To construct, see NOTES section for TARGETS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for TARGETS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphInvitationParticipantInfo[]
-Parameter Sets: RedirectExpanded1, RedirectViaIdentityExpanded1
+Parameter Sets: RedirectExpanded, RedirectViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: Int32
-Parameter Sets: RedirectExpanded1, RedirectViaIdentityExpanded1
+Parameter Sets: RedirectExpanded, RedirectViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -225,22 +225,29 @@ BODYPARAMETER <IPaths183Gi8UCommunicationsCallsCallIdMicrosoftGraphRedirectPostR
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CallbackUri <String>]`: 
   - `[Targets <IMicrosoftGraphInvitationParticipantInfo[]>]`: 
+    - `[Hidden <Boolean?>]`: 
     - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
+        - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+        - `[Id <String>]`: The identifier of the identity. This property is read-only.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
+    - `[ParticipantId <String>]`: 
+    - `[RemoveFromDefaultAudioRoutingGroup <Boolean?>]`: 
     - `[ReplacesCallId <String>]`: Optional. The call which the target idenity is currently a part of. This call will be dropped once the participant is added.
   - `[Timeout <Int32?>]`: 
 
 INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
+  - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call
   - `[CallRecordId <String>]`: key: id of callRecord
+  - `[CallTranscriptId <String>]`: key: id of callTranscript
   - `[CommsOperationId <String>]`: key: id of commsOperation
+  - `[MeetingAttendanceReportId <String>]`: key: id of meetingAttendanceReport
+  - `[MeetingRegistrationQuestionId <String>]`: key: id of meetingRegistrationQuestion
   - `[OnlineMeetingId <String>]`: key: id of onlineMeeting
   - `[ParticipantId <String>]`: key: id of participant
   - `[PresenceId <String>]`: key: id of presence
@@ -248,14 +255,17 @@ INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 TARGETS <IMicrosoftGraphInvitationParticipantInfo[]>: .
+  - `[Hidden <Boolean?>]`: 
   - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
+      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+      - `[Id <String>]`: The identifier of the identity. This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[ParticipantId <String>]`: 
+  - `[RemoveFromDefaultAudioRoutingGroup <Boolean?>]`: 
   - `[ReplacesCallId <String>]`: Optional. The call which the target idenity is currently a part of. This call will be dropped once the participant is added.
 
 ## RELATED LINKS

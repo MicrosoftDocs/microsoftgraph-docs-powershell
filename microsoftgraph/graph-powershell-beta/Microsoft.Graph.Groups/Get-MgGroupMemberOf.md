@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggroupmemberof
@@ -12,6 +12,7 @@ Groups and administrative units that this group is a member of.
 HTTP Methods: GET (supported for all groups).
 Read-only.
 Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -26,6 +27,7 @@ Groups and administrative units that this group is a member of.
 HTTP Methods: GET (supported for all groups).
 Read-only.
 Nullable.
+Supports $expand.
 
 ## EXAMPLES
 

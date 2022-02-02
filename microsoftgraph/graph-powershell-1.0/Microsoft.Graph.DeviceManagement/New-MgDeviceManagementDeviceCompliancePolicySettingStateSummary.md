@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicysettingstatesummary
@@ -53,7 +53,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Device Compilance Policy Setting State summary across the account.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceCompliancePolicySettingStateSummary
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 
 ### -DeviceComplianceSettingStates
 Not yet documented
-To construct, see NOTES section for DEVICECOMPLIANCESETTINGSTATES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEVICECOMPLIANCESETTINGSTATES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceComplianceSettingState[]
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlatformType
-.
+Supported platform types for policies.
 
 ```yaml
 Type: String
@@ -318,7 +318,7 @@ BODYPARAMETER <IMicrosoftGraphDeviceCompliancePolicySettingStateSummary>: Device
   - `[ErrorDeviceCount <Int32?>]`: Number of error devices
   - `[NonCompliantDeviceCount <Int32?>]`: Number of NonCompliant devices
   - `[NotApplicableDeviceCount <Int32?>]`: Number of not applicable devices
-  - `[PlatformType <String>]`: 
+  - `[PlatformType <String>]`: Supported platform types for policies.
   - `[RemediatedDeviceCount <Int32?>]`: Number of remediated devices
   - `[Setting <String>]`: The setting class name and property name.
   - `[SettingName <String>]`: Name of the setting.

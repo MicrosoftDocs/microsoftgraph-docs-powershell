@@ -33,6 +33,13 @@ Collection of resource access settings associated with account.
 
 ## EXAMPLES
 
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -52,7 +59,7 @@ Accept wildcard characters: False
 
 ### -Assignments
 The list of assignments for the device configuration profile.
-To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementResourceAccessProfileAssignment[]
@@ -68,7 +75,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Base Profile Type for Resource Access
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementResourceAccessProfileBase
@@ -182,7 +189,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -228,39 +235,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementResourceAccessProfileBase
 ## NOTES
-
-ALIASES
-
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
-
-
-ASSIGNMENTS <IMicrosoftGraphDeviceManagementResourceAccessProfileAssignment[]>: The list of assignments for the device configuration profile.
-  - `[Id <String>]`: Read-only.
-  - `[Intent <String>]`: deviceManagementResourceAccessProfileIntent
-  - `[SourceId <String>]`: The identifier of the source of the assignment.
-  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-    - `[DeviceAndAppManagementAssignmentFilterType <String>]`: deviceAndAppManagementAssignmentFilterType
-
-BODYPARAMETER <IMicrosoftGraphDeviceManagementResourceAccessProfileBase>: Base Profile Type for Resource Access
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
-  - `[Assignments <IMicrosoftGraphDeviceManagementResourceAccessProfileAssignment[]>]`: The list of assignments for the device configuration profile.
-    - `[Id <String>]`: Read-only.
-    - `[Intent <String>]`: deviceManagementResourceAccessProfileIntent
-    - `[SourceId <String>]`: The identifier of the source of the assignment.
-    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-      - `[DeviceAndAppManagementAssignmentFilterType <String>]`: deviceAndAppManagementAssignmentFilterType
-  - `[CreationDateTime <DateTime?>]`: DateTime profile was created
-  - `[Description <String>]`: Profile description
-  - `[DisplayName <String>]`: Profile display name
-  - `[LastModifiedDateTime <DateTime?>]`: DateTime profile was last modified
-  - `[RoleScopeTagIds <String[]>]`: Scope Tags
-  - `[Version <Int32?>]`: Version of the profile
+Please use Get-Help -Online.
 
 ## RELATED LINKS
+
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementresourceaccessprofile](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementresourceaccessprofile)
+

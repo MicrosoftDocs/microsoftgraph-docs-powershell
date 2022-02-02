@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointusersetting
@@ -17,7 +17,8 @@ Cloud PC user settings.
 Update-MgDeviceManagementVirtualEndpointUserSetting -CloudPcUserSettingId <String>
  [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphCloudPcUserSettingAssignment[]>]
  [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-LocalAdminEnabled] [-SelfServiceEnabled] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LocalAdminEnabled] [-RestorePointSetting <IMicrosoftGraphCloudPcRestorePointSetting>] [-SelfServiceEnabled]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -31,7 +32,8 @@ Update-MgDeviceManagementVirtualEndpointUserSetting -CloudPcUserSettingId <Strin
 Update-MgDeviceManagementVirtualEndpointUserSetting -InputObject <IDeviceManagementAdministrationIdentity>
  [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphCloudPcUserSettingAssignment[]>]
  [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-LocalAdminEnabled] [-SelfServiceEnabled] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LocalAdminEnabled] [-RestorePointSetting <IMicrosoftGraphCloudPcRestorePointSetting>] [-SelfServiceEnabled]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -215,6 +217,22 @@ Returns true when the command succeeds
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RestorePointSetting
+cloudPcRestorePointSetting
+To construct, please use Get-Help -Online and see NOTES section for RESTOREPOINTSETTING properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCloudPcRestorePointSetting
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False

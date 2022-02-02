@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/get-mguserowneddevice
@@ -11,6 +11,7 @@ schema: 2.0.0
 Devices that are owned by the user.
 Read-only.
 Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -24,6 +25,7 @@ Get-MgUserOwnedDevice -UserId <String> [-ExpandProperty <String[]>] [-Filter <St
 Devices that are owned by the user.
 Read-only.
 Nullable.
+Supports $expand.
 
 ## EXAMPLES
 

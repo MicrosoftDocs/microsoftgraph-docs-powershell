@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/get-mguserdirectreportbyref
@@ -11,6 +11,7 @@ schema: 2.0.0
 The users and contacts that report to the user.
 (The users and contacts that have their manager property set to this user.) Read-only.
 Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -23,6 +24,7 @@ Get-MgUserDirectReportByRef -UserId <String> [-Filter <String>] [-Search <String
 The users and contacts that report to the user.
 (The users and contacts that have their manager property set to this user.) Read-only.
 Nullable.
+Supports $expand.
 
 ## EXAMPLES
 

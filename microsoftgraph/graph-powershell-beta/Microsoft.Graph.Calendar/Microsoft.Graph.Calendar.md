@@ -1,6 +1,6 @@
----
+﻿---
 Module Name: Microsoft.Graph.Calendar
-Module Guid: 0a4f1d50-89fc-43ea-89eb-abdbc8be0e3f
+Module Guid: e784fed5-77b7-4104-bced-5148534467f6
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar
 Help Version: 1.0.0.0
 Locale: en-US
@@ -46,9 +46,6 @@ Nullable.
 The calendar that contains the event.
 Navigation property.
 Read-only.
-
-### [Get-MgGroupEventExceptionOccurrence](Get-MgGroupEventExceptionOccurrence.md)
-Get exceptionOccurrences from groups
 
 ### [Get-MgGroupEventExtension](Get-MgGroupEventExtension.md)
 The collection of open extensions defined for the event.
@@ -107,10 +104,10 @@ The collection of single-value extended properties defined for the calendar.
 Read-only.
 Nullable.
 
-### [Get-MgUserCalendarView](Get-MgUserCalendarView.md)
-The calendar view for the calendar.
-Navigation property.
+### [Get-MgUserCalendarSingleValueExtendedProperty](Get-MgUserCalendarSingleValueExtendedProperty.md)
+The collection of single-value extended properties defined for the calendar.
 Read-only.
+Nullable.
 
 ### [Get-MgUserDefaultCalendar](Get-MgUserDefaultCalendar.md)
 The user's calendars.
@@ -133,9 +130,6 @@ Nullable.
 The calendar that contains the event.
 Navigation property.
 Read-only.
-
-### [Get-MgUserEventExceptionOccurrence](Get-MgUserEventExceptionOccurrence.md)
-Get exceptionOccurrences from users
 
 ### [Get-MgUserEventExtension](Get-MgUserEventExtension.md)
 The collection of open extensions defined for the event.
@@ -179,9 +173,6 @@ The collection of FileAttachment, ItemAttachment, and referenceAttachment attach
 Navigation property.
 Read-only.
 Nullable.
-
-### [New-MgGroupEventExceptionOccurrence](New-MgGroupEventExceptionOccurrence.md)
-Create new navigation property to exceptionOccurrences for groups
 
 ### [New-MgGroupEventExtension](New-MgGroupEventExtension.md)
 The collection of open extensions defined for the event.
@@ -253,9 +244,6 @@ Navigation property.
 Read-only.
 Nullable.
 
-### [New-MgUserEventExceptionOccurrence](New-MgUserEventExceptionOccurrence.md)
-Create new navigation property to exceptionOccurrences for users
-
 ### [New-MgUserEventExtension](New-MgUserEventExtension.md)
 The collection of open extensions defined for the event.
 Nullable.
@@ -303,9 +291,6 @@ Nullable.
 The calendar that contains the event.
 Navigation property.
 Read-only.
-
-### [Remove-MgGroupEventExceptionOccurrence](Remove-MgGroupEventExceptionOccurrence.md)
-Delete navigation property exceptionOccurrences for groups
 
 ### [Remove-MgGroupEventExtension](Remove-MgGroupEventExtension.md)
 The collection of open extensions defined for the event.
@@ -371,9 +356,6 @@ The calendar that contains the event.
 Navigation property.
 Read-only.
 
-### [Remove-MgUserEventExceptionOccurrence](Remove-MgUserEventExceptionOccurrence.md)
-Delete navigation property exceptionOccurrences for users
-
 ### [Remove-MgUserEventExtension](Remove-MgUserEventExtension.md)
 The collection of open extensions defined for the event.
 Nullable.
@@ -416,9 +398,6 @@ The collection of FileAttachment, ItemAttachment, and referenceAttachment attach
 Navigation property.
 Read-only.
 Nullable.
-
-### [Update-MgGroupEventExceptionOccurrence](Update-MgGroupEventExceptionOccurrence.md)
-Update the navigation property exceptionOccurrences in groups
 
 ### [Update-MgGroupEventExtension](Update-MgGroupEventExtension.md)
 The collection of open extensions defined for the event.
@@ -478,9 +457,6 @@ The collection of FileAttachment, ItemAttachment, and referenceAttachment attach
 Navigation property.
 Read-only.
 Nullable.
-
-### [Update-MgUserEventExceptionOccurrence](Update-MgUserEventExceptionOccurrence.md)
-Update the navigation property exceptionOccurrences in users
 
 ### [Update-MgUserEventExtension](Update-MgUserEventExtension.md)
 The collection of open extensions defined for the event.

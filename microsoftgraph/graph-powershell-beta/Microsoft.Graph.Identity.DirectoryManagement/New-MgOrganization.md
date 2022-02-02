@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgorganization
@@ -15,7 +15,7 @@ Add new entity to organization
 ### CreateExpanded (Default)
 ```
 New-MgOrganization [-AdditionalProperties <Hashtable>] [-AssignedPlans <IMicrosoftGraphAssignedPlan[]>]
- [-Branding <IMicrosoftGraphOrganizationalBranding>] [-BusinessPhones <String[]>]
+ [-Branding <IMicrosoftGraphOrganizationalBranding1>] [-BusinessPhones <String[]>]
  [-CertificateBasedAuthConfiguration <IMicrosoftGraphCertificateBasedAuthConfiguration[]>]
  [-CertificateConnectorSetting <IMicrosoftGraphCertificateConnectorSetting>] [-City <String>]
  [-Country <String>] [-CountryLetterCode <String>] [-CreatedDateTime <DateTime>] [-DeletedDateTime <DateTime>]
@@ -95,7 +95,7 @@ organizationalBranding
 To construct, see NOTES section for BRANDING properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOrganizationalBranding
+Type: IMicrosoftGraphOrganizationalBranding1
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -781,5 +781,8 @@ VERIFIEDDOMAINS <IMicrosoftGraphVerifiedDomain[]>: The collection of domains ass
   - `[Type <String>]`: For example, 'Managed'.
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

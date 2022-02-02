@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/remove-mgapplicationpassword
@@ -12,26 +12,26 @@ Invoke action removePassword
 
 ## SYNTAX
 
-### RemoveExpanded (Default)
+### RemoveExpanded1 (Default)
 ```
 Remove-MgApplicationPassword -ApplicationId <String> [-AdditionalProperties <Hashtable>] [-KeyId <String>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Remove
+### Remove1
 ```
 Remove-MgApplicationPassword -ApplicationId <String>
  -BodyParameter <IPathsHv033BApplicationsApplicationIdMicrosoftGraphRemovepasswordPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### RemoveViaIdentityExpanded
+### RemoveViaIdentityExpanded1
 ```
 Remove-MgApplicationPassword -InputObject <IApplicationsIdentity> [-AdditionalProperties <Hashtable>]
  [-KeyId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### RemoveViaIdentity
+### RemoveViaIdentity1
 ```
 Remove-MgApplicationPassword -InputObject <IApplicationsIdentity>
  -BodyParameter <IPathsHv033BApplicationsApplicationIdMicrosoftGraphRemovepasswordPostRequestbodyContentApplicationJsonSchema>
@@ -50,7 +50,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
+Parameter Sets: RemoveExpanded1, RemoveViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -65,7 +65,7 @@ key: id of application
 
 ```yaml
 Type: String
-Parameter Sets: RemoveExpanded, Remove
+Parameter Sets: RemoveExpanded1, Remove1
 Aliases:
 
 Required: True
@@ -77,11 +77,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsHv033BApplicationsApplicationIdMicrosoftGraphRemovepasswordPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Remove, RemoveViaIdentity
+Parameter Sets: Remove1, RemoveViaIdentity1
 Aliases:
 
 Required: True
@@ -93,11 +93,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
-Parameter Sets: RemoveViaIdentityExpanded, RemoveViaIdentity
+Parameter Sets: RemoveViaIdentityExpanded1, RemoveViaIdentity1
 Aliases:
 
 Required: True
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
+Parameter Sets: RemoveExpanded1, RemoveViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -201,6 +201,7 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[DirectoryDefinitionId <String>]`: key: id of directoryDefinition
   - `[EndpointId <String>]`: key: id of endpoint
   - `[ExtensionPropertyId <String>]`: key: id of extensionProperty
+  - `[FederatedIdentityCredentialId <String>]`: key: id of federatedIdentityCredential
   - `[GroupId <String>]`: key: id of group
   - `[LicenseDetailsId <String>]`: key: id of licenseDetails
   - `[OnPremisesAgentGroupId <String>]`: key: id of onPremisesAgentGroup

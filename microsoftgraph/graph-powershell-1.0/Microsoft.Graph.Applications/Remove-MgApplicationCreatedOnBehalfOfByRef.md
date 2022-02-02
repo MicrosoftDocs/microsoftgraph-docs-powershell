@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/remove-mgapplication
@@ -8,8 +8,7 @@ schema: 2.0.0
 # Remove-MgApplication
 
 ## SYNOPSIS
-Represents an Azure Active Directory object.
-The directoryObject type is the base type for many other directory entity types.
+Delete entity from applications
 
 ## SYNTAX
 
@@ -26,10 +25,16 @@ Remove-MgApplication -InputObject <IApplicationsIdentity> [-IfMatch <String>] [-
 ```
 
 ## DESCRIPTION
-Represents an Azure Active Directory object.
-The directoryObject type is the base type for many other directory entity types.
+Delete entity from applications
 
 ## EXAMPLES
+
+### Example 1: Delete an application
+```powershell
+Remove-MgApplication -ApplicationId '1bc44759-ef10-46de-b199-40c077768fff'
+```
+
+This example deletes the specified application.
 
 ## PARAMETERS
 
@@ -65,7 +70,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
@@ -153,6 +158,7 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[DirectoryDefinitionId <String>]`: key: id of directoryDefinition
   - `[EndpointId <String>]`: key: id of endpoint
   - `[ExtensionPropertyId <String>]`: key: id of extensionProperty
+  - `[FederatedIdentityCredentialId <String>]`: key: id of federatedIdentityCredential
   - `[GroupId <String>]`: key: id of group
   - `[LicenseDetailsId <String>]`: key: id of licenseDetails
   - `[OnPremisesAgentGroupId <String>]`: key: id of onPremisesAgentGroup

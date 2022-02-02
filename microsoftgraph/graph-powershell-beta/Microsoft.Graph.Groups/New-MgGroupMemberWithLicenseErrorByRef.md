@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/new-mggroupmemberwithlicenseerrorbyref
@@ -8,42 +8,38 @@ schema: 2.0.0
 # New-MgGroupMemberWithLicenseErrorByRef
 
 ## SYNOPSIS
-Groups and administrative units that this group is a member of.
-HTTP Methods: GET (supported for all groups).
+A list of group members with license errors from this group-based license assignment.
 Read-only.
-Nullable.
 
 ## SYNTAX
 
-### CreateExpanded5 (Default)
+### CreateExpanded1 (Default)
 ```
 New-MgGroupMemberWithLicenseErrorByRef -GroupId <String> [-AdditionalProperties <Hashtable>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### Create5
+### Create1
 ```
 New-MgGroupMemberWithLicenseErrorByRef -GroupId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded5
+### CreateViaIdentityExpanded1
 ```
 New-MgGroupMemberWithLicenseErrorByRef -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentity5
+### CreateViaIdentity1
 ```
 New-MgGroupMemberWithLicenseErrorByRef -InputObject <IGroupsIdentity> -BodyParameter <Hashtable> [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Groups and administrative units that this group is a member of.
-HTTP Methods: GET (supported for all groups).
+A list of group members with license errors from this group-based license assignment.
 Read-only.
-Nullable.
 
 ## EXAMPLES
 
@@ -54,7 +50,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded5, CreateViaIdentityExpanded5
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -69,7 +65,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: Hashtable
-Parameter Sets: Create5, CreateViaIdentity5
+Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -84,7 +80,7 @@ key: id of group
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded5, Create5
+Parameter Sets: CreateExpanded1, Create1
 Aliases:
 
 Required: True
@@ -96,11 +92,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IGroupsIdentity
-Parameter Sets: CreateViaIdentityExpanded5, CreateViaIdentity5
+Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -150,7 +146,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.Collections.Hashtable
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsCa7EzdGroupsGroupIdMemberofRefPostResponses201ContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IPaths1Jqo6K2GroupsGroupIdMemberswithlicenseerrorsRefPostResponses201ContentApplicationJsonSchema
 ## NOTES
 
 ALIASES

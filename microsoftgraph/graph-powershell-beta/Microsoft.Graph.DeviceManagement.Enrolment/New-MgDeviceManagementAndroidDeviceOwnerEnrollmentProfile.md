@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/new-mgdevicemanagementandroiddeviceownerenrollmentprofile
@@ -17,9 +17,11 @@ Android device owner enrollment profile entities.
 New-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfile [-AccountId <String>]
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Description <String>]
  [-DisplayName <String>] [-EnrolledDeviceCount <Int32>] [-EnrollmentMode <String>]
- [-EnrollmentTokenType <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-QrCodeContent <String>]
- [-QrCodeImage <IMicrosoftGraphMimeContent>] [-RoleScopeTagIds <String[]>] [-TokenCreationDateTime <DateTime>]
- [-TokenExpirationDateTime <DateTime>] [-TokenValue <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-EnrollmentTokenType <String>] [-EnrollmentTokenUsageCount <Int32>] [-Id <String>]
+ [-LastModifiedDateTime <DateTime>] [-QrCodeContent <String>] [-QrCodeImage <IMicrosoftGraphMimeContent>]
+ [-RoleScopeTagIds <String[]>] [-TokenCreationDateTime <DateTime>] [-TokenExpirationDateTime <DateTime>]
+ [-TokenValue <String>] [-WifiHidden] [-WifiPassword <String>] [-WifiSecurityType <String>]
+ [-WifiSsid <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -171,6 +173,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -EnrollmentTokenUsageCount
+Total number of AOSP devices that have enrolled using the current token.
+
+```yaml
+Type: Int32
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Id
 Read-only.
 
@@ -279,6 +296,66 @@ Accept wildcard characters: False
 
 ### -TokenValue
 Value of the most recently created token for this enrollment profile.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WifiHidden
+Boolean that indicates if hidden wifi networks are enabled
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WifiPassword
+String that contains the wi-fi login password
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WifiSecurityType
+This enum represents Wi-Fi Security Types for Android Device Owner AOSP Scenarios.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WifiSsid
+String that contains the wi-fi login ssid
 
 ```yaml
 Type: String

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.DeviceManagement
-Module Guid: 4e263ea9-f7f9-4e39-9fbf-d5b8c20c2cb8
+Module Guid: 794025dc-c5d8-4b33-9d3a-aefaf83ef34c
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement
 Help Version: 1.0.0.0
 Locale: en-US
@@ -49,6 +49,7 @@ The list of scheduled action for this rule
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration.md)
 The list of scheduled action configurations for this compliance policy.
+Compliance policy must have one and only one block scheduled action.
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummary](Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummary.md)
 The summary states of compliance policy settings for this account.
@@ -151,6 +152,7 @@ The list of scheduled action for this rule
 
 ### [New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration.md)
 The list of scheduled action configurations for this compliance policy.
+Compliance policy must have one and only one block scheduled action.
 
 ### [New-MgDeviceManagementDeviceCompliancePolicySettingStateSummary](New-MgDeviceManagementDeviceCompliancePolicySettingStateSummary.md)
 The summary states of compliance policy settings for this account.
@@ -229,6 +231,7 @@ The list of scheduled action for this rule
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](Remove-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration.md)
 The list of scheduled action configurations for this compliance policy.
+Compliance policy must have one and only one block scheduled action.
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicySettingStateSummary](Remove-MgDeviceManagementDeviceCompliancePolicySettingStateSummary.md)
 The summary states of compliance policy settings for this account.
@@ -337,6 +340,7 @@ The list of scheduled action for this rule
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](Update-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration.md)
 The list of scheduled action configurations for this compliance policy.
+Compliance policy must have one and only one block scheduled action.
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummary](Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummary.md)
 The summary states of compliance policy settings for this account.

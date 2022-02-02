@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointprovisioningpolicy
@@ -16,9 +16,11 @@ Cloud PC provisioning policy.
 ```
 Update-MgDeviceManagementVirtualEndpointProvisioningPolicy -CloudPcProvisioningPolicyId <String>
  [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphCloudPcProvisioningPolicyAssignment[]>]
- [-Description <String>] [-DisplayName <String>] [-Id <String>] [-ImageDisplayName <String>]
- [-ImageId <String>] [-ImageType <String>] [-OnPremisesConnectionId <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Description <String>] [-DisplayName <String>]
+ [-DomainJoinConfiguration <IMicrosoftGraphCloudPcDomainJoinConfiguration>] [-Id <String>]
+ [-ImageDisplayName <String>] [-ImageId <String>] [-ImageType <String>]
+ [-MicrosoftManagedDesktop <IMicrosoftGraphMicrosoftManagedDesktop>] [-OnPremisesConnectionId <String>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -33,8 +35,10 @@ Update-MgDeviceManagementVirtualEndpointProvisioningPolicy -CloudPcProvisioningP
 Update-MgDeviceManagementVirtualEndpointProvisioningPolicy
  -InputObject <IDeviceManagementAdministrationIdentity> [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphCloudPcProvisioningPolicyAssignment[]>] [-Description <String>]
- [-DisplayName <String>] [-Id <String>] [-ImageDisplayName <String>] [-ImageId <String>] [-ImageType <String>]
- [-OnPremisesConnectionId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DisplayName <String>] [-DomainJoinConfiguration <IMicrosoftGraphCloudPcDomainJoinConfiguration>]
+ [-Id <String>] [-ImageDisplayName <String>] [-ImageId <String>] [-ImageType <String>]
+ [-MicrosoftManagedDesktop <IMicrosoftGraphMicrosoftManagedDesktop>] [-OnPremisesConnectionId <String>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -147,6 +151,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -DomainJoinConfiguration
+cloudPcDomainJoinConfiguration
+To construct, please use Get-Help -Online and see NOTES section for DOMAINJOINCONFIGURATION properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCloudPcDomainJoinConfiguration
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Id
 Read-only.
 
@@ -221,6 +241,22 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -MicrosoftManagedDesktop
+microsoftManagedDesktop
+To construct, please use Get-Help -Online and see NOTES section for MICROSOFTMANAGEDDESKTOP properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphMicrosoftManagedDesktop
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

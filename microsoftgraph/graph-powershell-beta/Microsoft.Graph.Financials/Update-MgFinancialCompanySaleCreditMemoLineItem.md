@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Financials-help.xml
 Module Name: Microsoft.Graph.Financials
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.financials/update-mgfinancialcompanysalecreditmemolineitem
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 item
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphItem
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFinancialsIdentity
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 
 ### -ItemCategory
 itemCategory
-To construct, see NOTES section for ITEMCATEGORY properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ITEMCATEGORY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphItemCategory
@@ -298,7 +298,7 @@ Accept wildcard characters: False
 
 ### -Picture
 .
-To construct, see NOTES section for PICTURE properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for PICTURE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPicture[]

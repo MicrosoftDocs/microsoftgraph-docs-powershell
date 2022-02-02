@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementaccesspackage
@@ -16,11 +16,13 @@ Update the navigation property accessPackages in identityGovernance
 ```
 Update-MgEntitlementManagementAccessPackage -AccessPackageId <String>
  [-AccessPackageAssignmentPolicies <IMicrosoftGraphAccessPackageAssignmentPolicy[]>]
- [-AccessPackageCatalog <IMicrosoftGraphAccessPackageCatalog>]
+ [-AccessPackageCatalog <IMicrosoftGraphAccessPackageCatalog1>]
  [-AccessPackageResourceRoleScopes <IMicrosoftGraphAccessPackageResourceRoleScope[]>]
- [-AdditionalProperties <Hashtable>] [-CatalogId <String>] [-CreatedBy <String>] [-CreatedDateTime <DateTime>]
- [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsHidden] [-IsRoleScopesVisible]
- [-ModifiedBy <String>] [-ModifiedDateTime <DateTime>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AccessPackagesIncompatibleWith <IMicrosoftGraphAccessPackage[]>] [-AdditionalProperties <Hashtable>]
+ [-CatalogId <String>] [-CreatedBy <String>] [-CreatedDateTime <DateTime>] [-Description <String>]
+ [-DisplayName <String>] [-Id <String>] [-IncompatibleAccessPackages <IMicrosoftGraphAccessPackage[]>]
+ [-IncompatibleGroups <IMicrosoftGraphGroup[]>] [-IsHidden] [-IsRoleScopesVisible] [-ModifiedBy <String>]
+ [-ModifiedDateTime <DateTime>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -33,11 +35,13 @@ Update-MgEntitlementManagementAccessPackage -AccessPackageId <String>
 ```
 Update-MgEntitlementManagementAccessPackage -InputObject <IIdentityGovernanceIdentity>
  [-AccessPackageAssignmentPolicies <IMicrosoftGraphAccessPackageAssignmentPolicy[]>]
- [-AccessPackageCatalog <IMicrosoftGraphAccessPackageCatalog>]
+ [-AccessPackageCatalog <IMicrosoftGraphAccessPackageCatalog1>]
  [-AccessPackageResourceRoleScopes <IMicrosoftGraphAccessPackageResourceRoleScope[]>]
- [-AdditionalProperties <Hashtable>] [-CatalogId <String>] [-CreatedBy <String>] [-CreatedDateTime <DateTime>]
- [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsHidden] [-IsRoleScopesVisible]
- [-ModifiedBy <String>] [-ModifiedDateTime <DateTime>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AccessPackagesIncompatibleWith <IMicrosoftGraphAccessPackage[]>] [-AdditionalProperties <Hashtable>]
+ [-CatalogId <String>] [-CreatedBy <String>] [-CreatedDateTime <DateTime>] [-Description <String>]
+ [-DisplayName <String>] [-Id <String>] [-IncompatibleAccessPackages <IMicrosoftGraphAccessPackage[]>]
+ [-IncompatibleGroups <IMicrosoftGraphGroup[]>] [-IsHidden] [-IsRoleScopesVisible] [-ModifiedBy <String>]
+ [-ModifiedDateTime <DateTime>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -75,7 +79,7 @@ accessPackageCatalog
 To construct, see NOTES section for ACCESSPACKAGECATALOG properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageCatalog
+Type: IMicrosoftGraphAccessPackageCatalog1
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -107,6 +111,23 @@ To construct, see NOTES section for ACCESSPACKAGERESOURCEROLESCOPES properties a
 
 ```yaml
 Type: IMicrosoftGraphAccessPackageResourceRoleScope[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AccessPackagesIncompatibleWith
+The access packages that are incompatible with this package.
+Read-only.
+To construct, please use Get-Help -Online and see NOTES section for ACCESSPACKAGESINCOMPATIBLEWITH properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphAccessPackage[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -232,6 +253,38 @@ Read-only.
 
 ```yaml
 Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IncompatibleAccessPackages
+The access packages whose assigned users are ineligible to be assigned this access package.
+To construct, please use Get-Help -Online and see NOTES section for INCOMPATIBLEACCESSPACKAGES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphAccessPackage[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IncompatibleGroups
+The groups whose members are ineligible to be assigned this access package.
+To construct, please use Get-Help -Online and see NOTES section for INCOMPATIBLEGROUPS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphGroup[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -914,5 +967,8 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

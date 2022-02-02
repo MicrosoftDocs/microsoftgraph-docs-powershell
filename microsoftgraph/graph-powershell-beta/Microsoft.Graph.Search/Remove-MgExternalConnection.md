@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/remove-mgexternalconnection
@@ -12,13 +12,13 @@ Delete navigation property connections for external
 
 ## SYNTAX
 
-### Delete (Default)
+### Delete1 (Default)
 ```
 Remove-MgExternalConnection -ExternalConnectionId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### DeleteViaIdentity
+### DeleteViaIdentity1
 ```
 Remove-MgExternalConnection -InputObject <ISearchIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -36,7 +36,7 @@ key: id of externalConnection
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete1
 Aliases:
 
 Required: True
@@ -63,11 +63,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISearchIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity1
 Aliases:
 
 Required: True
@@ -142,6 +142,9 @@ To create the parameters described below, construct a hash table containing the 
 
 
 INPUTOBJECT <ISearchIdentity>: Identity Parameter
+  - `[AcronymId <String>]`: key: id of acronym
+  - `[BookmarkId <String>]`: key: id of bookmark
   - `[ExternalConnectionId <String>]`: key: id of externalConnection
+  - `[QnaId <String>]`: key: id of qna
 
 ## RELATED LINKS

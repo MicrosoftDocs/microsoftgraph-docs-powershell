@@ -47,6 +47,13 @@ Returns a list of tag objects associated to this case.
 
 ## EXAMPLES
 
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -66,7 +73,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 tag
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEdiscoveryTag
@@ -112,7 +119,7 @@ Accept wildcard characters: False
 
 ### -ChildTags
 Returns the tags that are a child of a tag.
-To construct, see NOTES section for CHILDTAGS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for CHILDTAGS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEdiscoveryTag[]
@@ -128,7 +135,7 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 identitySet
-To construct, see NOTES section for CREATEDBY properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -189,7 +196,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IComplianceIdentity
@@ -220,7 +227,7 @@ Accept wildcard characters: False
 
 ### -Parent
 tag
-To construct, see NOTES section for PARENT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for PARENT properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEdiscoveryTag
@@ -244,7 +251,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -306,89 +313,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
-
-ALIASES
-
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
-
-
-BODYPARAMETER <IMicrosoftGraphEdiscoveryTag>: tag
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
-  - `[ChildSelectability <String>]`: childSelectability
-  - `[ChildTags <IMicrosoftGraphEdiscoveryTag[]>]`: Returns the tags that are a child of a tag.
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[Description <String>]`: The description for the tag.
-  - `[DisplayName <String>]`: Display name of the tag.
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time the tag was last modified.
-  - `[Parent <IMicrosoftGraphEdiscoveryTag>]`: tag
-
-CHILDTAGS <IMicrosoftGraphEdiscoveryTag[]>: Returns the tags that are a child of a tag.
-  - `[Id <String>]`: Read-only.
-  - `[ChildSelectability <String>]`: childSelectability
-  - `[ChildTags <IMicrosoftGraphEdiscoveryTag[]>]`: Returns the tags that are a child of a tag.
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[Description <String>]`: The description for the tag.
-  - `[DisplayName <String>]`: Display name of the tag.
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time the tag was last modified.
-  - `[Parent <IMicrosoftGraphEdiscoveryTag>]`: tag
-
-CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Application <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
-  - `[Device <IMicrosoftGraphIdentity>]`: identity
-  - `[User <IMicrosoftGraphIdentity>]`: identity
-
-INPUTOBJECT <IComplianceIdentity>: Identity Parameter
-  - `[CaseId <String>]`: key: id of case
-  - `[CaseOperationId <String>]`: key: id of caseOperation
-  - `[CustodianId <String>]`: key: id of custodian
-  - `[DataSourceId <String>]`: key: id of dataSource
-  - `[LegalHoldId <String>]`: key: id of legalHold
-  - `[NoncustodialDataSourceId <String>]`: key: id of noncustodialDataSource
-  - `[ReviewSetId <String>]`: key: id of reviewSet
-  - `[ReviewSetQueryId <String>]`: key: id of reviewSetQuery
-  - `[SiteSourceId <String>]`: key: id of siteSource
-  - `[SourceCollectionId <String>]`: key: id of sourceCollection
-  - `[TagId <String>]`: key: id of tag
-  - `[UnifiedGroupSourceId <String>]`: key: id of unifiedGroupSource
-  - `[UserSourceId <String>]`: key: id of userSource
-
-PARENT <IMicrosoftGraphEdiscoveryTag>: tag
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
-  - `[ChildSelectability <String>]`: childSelectability
-  - `[ChildTags <IMicrosoftGraphEdiscoveryTag[]>]`: Returns the tags that are a child of a tag.
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[Description <String>]`: The description for the tag.
-  - `[DisplayName <String>]`: Display name of the tag.
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time the tag was last modified.
-  - `[Parent <IMicrosoftGraphEdiscoveryTag>]`: tag
+Please use Get-Help -Online.
 
 ## RELATED LINKS
+
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/update-mgcomplianceediscoverycasetag](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/update-mgcomplianceediscoverycasetag)
+

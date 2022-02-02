@@ -59,6 +59,13 @@ The device management intents
 
 ## EXAMPLES
 
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -78,7 +85,7 @@ Accept wildcard characters: False
 
 ### -Assignments
 Collection of assignments
-To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementIntentAssignment[]
@@ -94,7 +101,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Entity that represents an intent to apply settings to a device
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementIntent
@@ -110,7 +117,7 @@ Accept wildcard characters: False
 
 ### -Categories
 Collection of setting categories within the intent
-To construct, see NOTES section for CATEGORIES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for CATEGORIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementIntentSettingCategory[]
@@ -156,7 +163,7 @@ Accept wildcard characters: False
 
 ### -DeviceSettingStateSummaries
 Collection of settings and their states and counts of devices that belong to corresponding state for all settings within the intent
-To construct, see NOTES section for DEVICESETTINGSTATESUMMARIES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEVICESETTINGSTATESUMMARIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementIntentDeviceSettingStateSummary[]
@@ -172,7 +179,7 @@ Accept wildcard characters: False
 
 ### -DeviceStates
 Collection of states of all devices that the intent is applied to
-To construct, see NOTES section for DEVICESTATES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEVICESTATES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementIntentDeviceState[]
@@ -188,7 +195,7 @@ Accept wildcard characters: False
 
 ### -DeviceStateSummary
 Entity that represents device state summary for an intent
-To construct, see NOTES section for DEVICESTATESUMMARY properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEVICESTATESUMMARY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementIntentDeviceStateSummary
@@ -234,7 +241,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementIdentity
@@ -258,7 +265,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -288,7 +295,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -310,7 +317,7 @@ Accept wildcard characters: False
 
 ### -Settings
 Collection of all settings to be applied
-To construct, see NOTES section for SETTINGS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SETTINGS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementSettingInstance[]
@@ -341,7 +348,7 @@ Accept wildcard characters: False
 
 ### -UserStates
 Collection of states of all users that the intent is applied to
-To construct, see NOTES section for USERSTATES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for USERSTATES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementIntentUserState[]
@@ -357,7 +364,7 @@ Accept wildcard characters: False
 
 ### -UserStateSummary
 Entity that represents user state summary for an intent
-To construct, see NOTES section for USERSTATESUMMARY properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for USERSTATESUMMARY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementIntentUserStateSummary
@@ -413,287 +420,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
-
-ALIASES
-
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
-
-
-ASSIGNMENTS <IMicrosoftGraphDeviceManagementIntentAssignment[]>: Collection of assignments
-  - `[Id <String>]`: Read-only.
-  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-    - `[DeviceAndAppManagementAssignmentFilterType <String>]`: deviceAndAppManagementAssignmentFilterType
-
-BODYPARAMETER <IMicrosoftGraphDeviceManagementIntent>: Entity that represents an intent to apply settings to a device
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
-  - `[Assignments <IMicrosoftGraphDeviceManagementIntentAssignment[]>]`: Collection of assignments
-    - `[Id <String>]`: Read-only.
-    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-      - `[DeviceAndAppManagementAssignmentFilterType <String>]`: deviceAndAppManagementAssignmentFilterType
-  - `[Categories <IMicrosoftGraphDeviceManagementIntentSettingCategory[]>]`: Collection of setting categories within the intent
-    - `[DisplayName <String>]`: The category name
-    - `[HasRequiredSetting <Boolean?>]`: The category contains top level required setting
-    - `[SettingDefinitions <IMicrosoftGraphDeviceManagementSettingDefinition[]>]`: The setting definitions this category contains
-      - `[Id <String>]`: Read-only.
-      - `[Constraints <IMicrosoftGraphDeviceManagementConstraint[]>]`: Collection of constraints for the setting value
-      - `[Dependencies <IMicrosoftGraphDeviceManagementSettingDependency[]>]`: Collection of dependencies on other settings
-        - `[Constraints <IMicrosoftGraphDeviceManagementConstraint[]>]`: Collection of constraints for the dependency setting value
-        - `[DefinitionId <String>]`: The setting definition ID of the setting depended on
-      - `[Description <String>]`: The setting's description
-      - `[DisplayName <String>]`: The setting's display name
-      - `[DocumentationUrl <String>]`: Url to setting documentation
-      - `[HeaderSubtitle <String>]`: subtitle of the setting header for more details about the category/section
-      - `[HeaderTitle <String>]`: title of the setting header represents a category/section of a setting/settings
-      - `[IsTopLevel <Boolean?>]`: If the setting is top level, it can be configured without the need to be wrapped in a collection or complex setting
-      - `[Keywords <String[]>]`: Keywords associated with the setting
-      - `[PlaceholderText <String>]`: Placeholder text as an example of valid input
-      - `[ValueType <String>]`: deviceManangementIntentValueType
-    - `[Id <String>]`: Read-only.
-    - `[Settings <IMicrosoftGraphDeviceManagementSettingInstance[]>]`: The settings this category contains
-      - `[Id <String>]`: Read-only.
-      - `[DefinitionId <String>]`: The ID of the setting definition for this instance
-      - `[ValueJson <String>]`: JSON representation of the value
-  - `[Description <String>]`: The user given description
-  - `[DeviceSettingStateSummaries <IMicrosoftGraphDeviceManagementIntentDeviceSettingStateSummary[]>]`: Collection of settings and their states and counts of devices that belong to corresponding state for all settings within the intent
-    - `[Id <String>]`: Read-only.
-    - `[CompliantCount <Int32?>]`: Number of compliant devices
-    - `[ConflictCount <Int32?>]`: Number of devices in conflict
-    - `[ErrorCount <Int32?>]`: Number of error devices
-    - `[NonCompliantCount <Int32?>]`: Number of non compliant devices
-    - `[NotApplicableCount <Int32?>]`: Number of not applicable devices
-    - `[RemediatedCount <Int32?>]`: Number of remediated devices
-    - `[SettingName <String>]`: Name of a setting
-  - `[DeviceStateSummary <IMicrosoftGraphDeviceManagementIntentDeviceStateSummary>]`: Entity that represents device state summary for an intent
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: Read-only.
-    - `[ConflictCount <Int32?>]`: Number of devices in conflict
-    - `[ErrorCount <Int32?>]`: Number of error devices
-    - `[FailedCount <Int32?>]`: Number of failed devices
-    - `[NotApplicableCount <Int32?>]`: Number of not applicable devices
-    - `[NotApplicablePlatformCount <Int32?>]`: Number of not applicable devices due to mismatch platform and policy
-    - `[SuccessCount <Int32?>]`: Number of succeeded devices
-  - `[DeviceStates <IMicrosoftGraphDeviceManagementIntentDeviceState[]>]`: Collection of states of all devices that the intent is applied to
-    - `[Id <String>]`: Read-only.
-    - `[DeviceDisplayName <String>]`: Device name that is being reported
-    - `[DeviceId <String>]`: Device id that is being reported
-    - `[LastReportedDateTime <DateTime?>]`: Last modified date time of an intent report
-    - `[State <String>]`: complianceStatus
-    - `[UserName <String>]`: The user name that is being reported on a device
-    - `[UserPrincipalName <String>]`: The user principal name that is being reported on a device
-  - `[DisplayName <String>]`: The user given display name
-  - `[IsAssigned <Boolean?>]`: Signifies whether or not the intent is assigned to users
-  - `[LastModifiedDateTime <DateTime?>]`: When the intent was last modified
-  - `[RoleScopeTagIds <String[]>]`: List of Scope Tags for this Entity instance.
-  - `[Settings <IMicrosoftGraphDeviceManagementSettingInstance[]>]`: Collection of all settings to be applied
-  - `[TemplateId <String>]`: The ID of the template this intent was created from (if any)
-  - `[UserStateSummary <IMicrosoftGraphDeviceManagementIntentUserStateSummary>]`: Entity that represents user state summary for an intent
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: Read-only.
-    - `[ConflictCount <Int32?>]`: Number of users in conflict
-    - `[ErrorCount <Int32?>]`: Number of error users
-    - `[FailedCount <Int32?>]`: Number of failed users
-    - `[NotApplicableCount <Int32?>]`: Number of not applicable users
-    - `[SuccessCount <Int32?>]`: Number of succeeded users
-  - `[UserStates <IMicrosoftGraphDeviceManagementIntentUserState[]>]`: Collection of states of all users that the intent is applied to
-    - `[Id <String>]`: Read-only.
-    - `[DeviceCount <Int32?>]`: Count of Devices that belongs to a user for an intent
-    - `[LastReportedDateTime <DateTime?>]`: Last modified date time of an intent report
-    - `[State <String>]`: complianceStatus
-    - `[UserName <String>]`: The user name that is being reported on a device
-    - `[UserPrincipalName <String>]`: The user principal name that is being reported on a device
-
-CATEGORIES <IMicrosoftGraphDeviceManagementIntentSettingCategory[]>: Collection of setting categories within the intent
-  - `[DisplayName <String>]`: The category name
-  - `[HasRequiredSetting <Boolean?>]`: The category contains top level required setting
-  - `[SettingDefinitions <IMicrosoftGraphDeviceManagementSettingDefinition[]>]`: The setting definitions this category contains
-    - `[Id <String>]`: Read-only.
-    - `[Constraints <IMicrosoftGraphDeviceManagementConstraint[]>]`: Collection of constraints for the setting value
-    - `[Dependencies <IMicrosoftGraphDeviceManagementSettingDependency[]>]`: Collection of dependencies on other settings
-      - `[Constraints <IMicrosoftGraphDeviceManagementConstraint[]>]`: Collection of constraints for the dependency setting value
-      - `[DefinitionId <String>]`: The setting definition ID of the setting depended on
-    - `[Description <String>]`: The setting's description
-    - `[DisplayName <String>]`: The setting's display name
-    - `[DocumentationUrl <String>]`: Url to setting documentation
-    - `[HeaderSubtitle <String>]`: subtitle of the setting header for more details about the category/section
-    - `[HeaderTitle <String>]`: title of the setting header represents a category/section of a setting/settings
-    - `[IsTopLevel <Boolean?>]`: If the setting is top level, it can be configured without the need to be wrapped in a collection or complex setting
-    - `[Keywords <String[]>]`: Keywords associated with the setting
-    - `[PlaceholderText <String>]`: Placeholder text as an example of valid input
-    - `[ValueType <String>]`: deviceManangementIntentValueType
-  - `[Id <String>]`: Read-only.
-  - `[Settings <IMicrosoftGraphDeviceManagementSettingInstance[]>]`: The settings this category contains
-    - `[Id <String>]`: Read-only.
-    - `[DefinitionId <String>]`: The ID of the setting definition for this instance
-    - `[ValueJson <String>]`: JSON representation of the value
-
-DEVICESETTINGSTATESUMMARIES <IMicrosoftGraphDeviceManagementIntentDeviceSettingStateSummary[]>: Collection of settings and their states and counts of devices that belong to corresponding state for all settings within the intent
-  - `[Id <String>]`: Read-only.
-  - `[CompliantCount <Int32?>]`: Number of compliant devices
-  - `[ConflictCount <Int32?>]`: Number of devices in conflict
-  - `[ErrorCount <Int32?>]`: Number of error devices
-  - `[NonCompliantCount <Int32?>]`: Number of non compliant devices
-  - `[NotApplicableCount <Int32?>]`: Number of not applicable devices
-  - `[RemediatedCount <Int32?>]`: Number of remediated devices
-  - `[SettingName <String>]`: Name of a setting
-
-DEVICESTATES <IMicrosoftGraphDeviceManagementIntentDeviceState[]>: Collection of states of all devices that the intent is applied to
-  - `[Id <String>]`: Read-only.
-  - `[DeviceDisplayName <String>]`: Device name that is being reported
-  - `[DeviceId <String>]`: Device id that is being reported
-  - `[LastReportedDateTime <DateTime?>]`: Last modified date time of an intent report
-  - `[State <String>]`: complianceStatus
-  - `[UserName <String>]`: The user name that is being reported on a device
-  - `[UserPrincipalName <String>]`: The user principal name that is being reported on a device
-
-DEVICESTATESUMMARY <IMicrosoftGraphDeviceManagementIntentDeviceStateSummary>: Entity that represents device state summary for an intent
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
-  - `[ConflictCount <Int32?>]`: Number of devices in conflict
-  - `[ErrorCount <Int32?>]`: Number of error devices
-  - `[FailedCount <Int32?>]`: Number of failed devices
-  - `[NotApplicableCount <Int32?>]`: Number of not applicable devices
-  - `[NotApplicablePlatformCount <Int32?>]`: Number of not applicable devices due to mismatch platform and policy
-  - `[SuccessCount <Int32?>]`: Number of succeeded devices
-
-INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
-  - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
-  - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
-  - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema
-  - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
-  - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: key: id of assignmentFilterEvaluationStatusDetails
-  - `[DataSharingConsentId <String>]`: key: id of dataSharingConsent
-  - `[DetectedAppId <String>]`: key: id of detectedApp
-  - `[DeviceAndAppManagementAssignmentFilterId <String>]`: key: id of deviceAndAppManagementAssignmentFilter
-  - `[DeviceCategoryId <String>]`: key: id of deviceCategory
-  - `[DeviceComplianceActionItemId <String>]`: key: id of deviceComplianceActionItem
-  - `[DeviceComplianceDeviceStatusId <String>]`: key: id of deviceComplianceDeviceStatus
-  - `[DeviceCompliancePolicyAssignmentId <String>]`: key: id of deviceCompliancePolicyAssignment
-  - `[DeviceCompliancePolicyId <String>]`: key: id of deviceCompliancePolicy
-  - `[DeviceCompliancePolicySettingStateSummaryId <String>]`: key: id of deviceCompliancePolicySettingStateSummary
-  - `[DeviceCompliancePolicyStateId <String>]`: key: id of deviceCompliancePolicyState
-  - `[DeviceComplianceScheduledActionForRuleId <String>]`: key: id of deviceComplianceScheduledActionForRule
-  - `[DeviceComplianceSettingStateId <String>]`: key: id of deviceComplianceSettingState
-  - `[DeviceComplianceUserStatusId <String>]`: key: id of deviceComplianceUserStatus
-  - `[DeviceConfigurationAssignmentId <String>]`: key: id of deviceConfigurationAssignment
-  - `[DeviceConfigurationConflictSummaryId <String>]`: key: id of deviceConfigurationConflictSummary
-  - `[DeviceConfigurationDeviceStatusId <String>]`: key: id of deviceConfigurationDeviceStatus
-  - `[DeviceConfigurationGroupAssignmentId <String>]`: key: id of deviceConfigurationGroupAssignment
-  - `[DeviceConfigurationId <String>]`: key: id of deviceConfiguration
-  - `[DeviceConfigurationStateId <String>]`: key: id of deviceConfigurationState
-  - `[DeviceConfigurationUserStatusId <String>]`: key: id of deviceConfigurationUserStatus
-  - `[DeviceHealthScriptAssignmentId <String>]`: key: id of deviceHealthScriptAssignment
-  - `[DeviceHealthScriptDeviceStateId <String>]`: key: id of deviceHealthScriptDeviceState
-  - `[DeviceHealthScriptId <String>]`: key: id of deviceHealthScript
-  - `[DeviceLogCollectionResponseId <String>]`: key: id of deviceLogCollectionResponse
-  - `[DeviceManagementDerivedCredentialSettingsId <String>]`: key: id of deviceManagementDerivedCredentialSettings
-  - `[DeviceManagementIntentAssignmentId <String>]`: key: id of deviceManagementIntentAssignment
-  - `[DeviceManagementIntentDeviceSettingStateSummaryId <String>]`: key: id of deviceManagementIntentDeviceSettingStateSummary
-  - `[DeviceManagementIntentDeviceStateId <String>]`: key: id of deviceManagementIntentDeviceState
-  - `[DeviceManagementIntentId <String>]`: key: id of deviceManagementIntent
-  - `[DeviceManagementIntentSettingCategoryId <String>]`: key: id of deviceManagementIntentSettingCategory
-  - `[DeviceManagementIntentUserStateId <String>]`: key: id of deviceManagementIntentUserState
-  - `[DeviceManagementResourceAccessProfileAssignmentId <String>]`: key: id of deviceManagementResourceAccessProfileAssignment
-  - `[DeviceManagementResourceAccessProfileBaseId <String>]`: key: id of deviceManagementResourceAccessProfileBase
-  - `[DeviceManagementScriptAssignmentId <String>]`: key: id of deviceManagementScriptAssignment
-  - `[DeviceManagementScriptDeviceStateId <String>]`: key: id of deviceManagementScriptDeviceState
-  - `[DeviceManagementScriptGroupAssignmentId <String>]`: key: id of deviceManagementScriptGroupAssignment
-  - `[DeviceManagementScriptId <String>]`: key: id of deviceManagementScript
-  - `[DeviceManagementScriptUserStateId <String>]`: key: id of deviceManagementScriptUserState
-  - `[DeviceManagementSettingCategoryId <String>]`: key: id of deviceManagementSettingCategory
-  - `[DeviceManagementSettingDefinitionId <String>]`: key: id of deviceManagementSettingDefinition
-  - `[DeviceManagementSettingInstanceId <String>]`: key: id of deviceManagementSettingInstance
-  - `[DeviceManagementTemplateId <String>]`: key: id of deviceManagementTemplate
-  - `[DeviceManagementTemplateId1 <String>]`: key: id of deviceManagementTemplate
-  - `[DeviceManagementTemplateSettingCategoryId <String>]`: key: id of deviceManagementTemplateSettingCategory
-  - `[DeviceManagementTroubleshootingEventId <String>]`: key: id of deviceManagementTroubleshootingEvent
-  - `[DeviceShellScriptId <String>]`: key: id of deviceShellScript
-  - `[EmbeddedSimActivationCodePoolAssignmentId <String>]`: key: id of embeddedSIMActivationCodePoolAssignment
-  - `[EmbeddedSimActivationCodePoolId <String>]`: key: id of embeddedSIMActivationCodePool
-  - `[EmbeddedSimDeviceStateId <String>]`: key: id of embeddedSIMDeviceState
-  - `[GroupPolicyConfigurationAssignmentId <String>]`: key: id of groupPolicyConfigurationAssignment
-  - `[GroupPolicyConfigurationId <String>]`: key: id of groupPolicyConfiguration
-  - `[GroupPolicyDefinitionValueId <String>]`: key: id of groupPolicyDefinitionValue
-  - `[GroupPolicyPresentationValueId <String>]`: key: id of groupPolicyPresentationValue
-  - `[LocalizedNotificationMessageId <String>]`: key: id of localizedNotificationMessage
-  - `[MacOSSoftwareUpdateAccountSummaryId <String>]`: key: id of macOSSoftwareUpdateAccountSummary
-  - `[MacOSSoftwareUpdateCategorySummaryId <String>]`: key: id of macOSSoftwareUpdateCategorySummary
-  - `[MacOSSoftwareUpdateStateSummaryId <String>]`: key: id of macOSSoftwareUpdateStateSummary
-  - `[MalwareStateForWindowsDeviceId <String>]`: key: id of malwareStateForWindowsDevice
-  - `[ManagedDeviceEncryptionStateId <String>]`: key: id of managedDeviceEncryptionState
-  - `[ManagedDeviceId <String>]`: key: id of managedDevice
-  - `[ManagedDeviceMobileAppConfigurationStateId <String>]`: key: id of managedDeviceMobileAppConfigurationState
-  - `[ManagementConditionId <String>]`: key: id of managementCondition
-  - `[ManagementConditionStatementId <String>]`: key: id of managementConditionStatement
-  - `[MicrosoftTunnelConfigurationId <String>]`: key: id of microsoftTunnelConfiguration
-  - `[MicrosoftTunnelHealthThresholdId <String>]`: key: id of microsoftTunnelHealthThreshold
-  - `[MicrosoftTunnelServerId <String>]`: key: id of microsoftTunnelServer
-  - `[MicrosoftTunnelServerLogCollectionResponseId <String>]`: key: id of microsoftTunnelServerLogCollectionResponse
-  - `[MicrosoftTunnelSiteId <String>]`: key: id of microsoftTunnelSite
-  - `[MobileAppTroubleshootingEventId <String>]`: key: id of mobileAppTroubleshootingEvent
-  - `[NotificationMessageTemplateId <String>]`: key: id of notificationMessageTemplate
-  - `[RemoteActionAuditId <String>]`: key: id of remoteActionAudit
-  - `[SecurityBaselineSettingStateId <String>]`: key: id of securityBaselineSettingState
-  - `[SecurityBaselineStateId <String>]`: key: id of securityBaselineState
-  - `[SettingStateDeviceSummaryId <String>]`: key: id of settingStateDeviceSummary
-  - `[UserExperienceAnalyticsAppHealthAppPerformanceByAppVersionId <String>]`: key: id of userExperienceAnalyticsAppHealthAppPerformanceByAppVersion
-  - `[UserExperienceAnalyticsAppHealthAppPerformanceByOSVersionId <String>]`: key: id of userExperienceAnalyticsAppHealthAppPerformanceByOSVersion
-  - `[UserExperienceAnalyticsAppHealthApplicationPerformanceId <String>]`: key: id of userExperienceAnalyticsAppHealthApplicationPerformance
-  - `[UserExperienceAnalyticsAppHealthDeviceModelPerformanceId <String>]`: key: id of userExperienceAnalyticsAppHealthDeviceModelPerformance
-  - `[UserExperienceAnalyticsAppHealthDevicePerformanceDetailsId <String>]`: key: id of userExperienceAnalyticsAppHealthDevicePerformanceDetails
-  - `[UserExperienceAnalyticsAppHealthDevicePerformanceId <String>]`: key: id of userExperienceAnalyticsAppHealthDevicePerformance
-  - `[UserExperienceAnalyticsAppHealthOSVersionPerformanceId <String>]`: key: id of userExperienceAnalyticsAppHealthOSVersionPerformance
-  - `[UserExperienceAnalyticsBaselineId <String>]`: key: id of userExperienceAnalyticsBaseline
-  - `[UserExperienceAnalyticsCategoryId <String>]`: key: id of userExperienceAnalyticsCategory
-  - `[UserExperienceAnalyticsDevicePerformanceId <String>]`: key: id of userExperienceAnalyticsDevicePerformance
-  - `[UserExperienceAnalyticsDeviceScoresId <String>]`: key: id of userExperienceAnalyticsDeviceScores
-  - `[UserExperienceAnalyticsDeviceStartupHistoryId <String>]`: key: id of userExperienceAnalyticsDeviceStartupHistory
-  - `[UserExperienceAnalyticsDeviceStartupProcessId <String>]`: key: id of userExperienceAnalyticsDeviceStartupProcess
-  - `[UserExperienceAnalyticsDeviceStartupProcessPerformanceId <String>]`: key: id of userExperienceAnalyticsDeviceStartupProcessPerformance
-  - `[UserExperienceAnalyticsDeviceWithoutCloudIdentityId <String>]`: key: id of userExperienceAnalyticsDeviceWithoutCloudIdentity
-  - `[UserExperienceAnalyticsImpactingProcessId <String>]`: key: id of userExperienceAnalyticsImpactingProcess
-  - `[UserExperienceAnalyticsMetricHistoryId <String>]`: key: id of userExperienceAnalyticsMetricHistory
-  - `[UserExperienceAnalyticsMetricId <String>]`: key: id of userExperienceAnalyticsMetric
-  - `[UserExperienceAnalyticsNotAutopilotReadyDeviceId <String>]`: key: id of userExperienceAnalyticsNotAutopilotReadyDevice
-  - `[UserExperienceAnalyticsRemoteConnectionId <String>]`: key: id of userExperienceAnalyticsRemoteConnection
-  - `[UserExperienceAnalyticsResourcePerformanceId <String>]`: key: id of userExperienceAnalyticsResourcePerformance
-  - `[UserExperienceAnalyticsScoreHistoryId <String>]`: key: id of userExperienceAnalyticsScoreHistory
-  - `[UserExperienceAnalyticsWorkFromAnywhereDeviceId <String>]`: key: id of userExperienceAnalyticsWorkFromAnywhereDevice
-  - `[UserExperienceAnalyticsWorkFromAnywhereMetricId <String>]`: key: id of userExperienceAnalyticsWorkFromAnywhereMetric
-  - `[UserId <String>]`: key: id of user
-  - `[WindowsDeviceMalwareStateId <String>]`: key: id of windowsDeviceMalwareState
-  - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: key: id of windowsInformationProtectionAppLearningSummary
-  - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: key: id of windowsInformationProtectionNetworkLearningSummary
-  - `[WindowsMalwareInformationId <String>]`: key: id of windowsMalwareInformation
-
-SETTINGS <IMicrosoftGraphDeviceManagementSettingInstance[]>: Collection of all settings to be applied
-  - `[Id <String>]`: Read-only.
-  - `[DefinitionId <String>]`: The ID of the setting definition for this instance
-  - `[ValueJson <String>]`: JSON representation of the value
-
-USERSTATES <IMicrosoftGraphDeviceManagementIntentUserState[]>: Collection of states of all users that the intent is applied to
-  - `[Id <String>]`: Read-only.
-  - `[DeviceCount <Int32?>]`: Count of Devices that belongs to a user for an intent
-  - `[LastReportedDateTime <DateTime?>]`: Last modified date time of an intent report
-  - `[State <String>]`: complianceStatus
-  - `[UserName <String>]`: The user name that is being reported on a device
-  - `[UserPrincipalName <String>]`: The user principal name that is being reported on a device
-
-USERSTATESUMMARY <IMicrosoftGraphDeviceManagementIntentUserStateSummary>: Entity that represents user state summary for an intent
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
-  - `[ConflictCount <Int32?>]`: Number of users in conflict
-  - `[ErrorCount <Int32?>]`: Number of error users
-  - `[FailedCount <Int32?>]`: Number of failed users
-  - `[NotApplicableCount <Int32?>]`: Number of not applicable users
-  - `[SuccessCount <Int32?>]`: Number of succeeded users
+Please use Get-Help -Online.
 
 ## RELATED LINKS
 
-## RELATED LINKS
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementintent](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementintent)
+

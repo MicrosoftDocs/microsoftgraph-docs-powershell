@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthorizationpolicy
@@ -17,6 +17,7 @@ Update the navigation property authorizationPolicy in policies
 Update-MgPolicyAuthorizationPolicy -AuthorizationPolicyId <String> [-AdditionalProperties <Hashtable>]
  [-AllowEmailVerifiedUsersToJoinOrganization] [-AllowInvitesFrom <String>]
  [-AllowedToSignUpEmailBasedSubscriptions] [-AllowedToUseSspr] [-BlockMsolPowerShell]
+ [-DefaultUserRoleOverrides <IMicrosoftGraphDefaultUserRoleOverride[]>]
  [-DefaultUserRolePermissions <IMicrosoftGraphDefaultUserRolePermissions>] [-DeletedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-EnabledPreviewFeatures <String[]>]
  [-GuestUserRoleId <String>] [-Id <String>] [-PermissionGrantPolicyIdsAssignedToDefaultUserRole <String[]>]
@@ -34,6 +35,7 @@ Update-MgPolicyAuthorizationPolicy -AuthorizationPolicyId <String>
 Update-MgPolicyAuthorizationPolicy -InputObject <IIdentitySignInsIdentity> [-AdditionalProperties <Hashtable>]
  [-AllowEmailVerifiedUsersToJoinOrganization] [-AllowInvitesFrom <String>]
  [-AllowedToSignUpEmailBasedSubscriptions] [-AllowedToUseSspr] [-BlockMsolPowerShell]
+ [-DefaultUserRoleOverrides <IMicrosoftGraphDefaultUserRoleOverride[]>]
  [-DefaultUserRolePermissions <IMicrosoftGraphDefaultUserRolePermissions>] [-DeletedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-EnabledPreviewFeatures <String[]>]
  [-GuestUserRoleId <String>] [-Id <String>] [-PermissionGrantPolicyIdsAssignedToDefaultUserRole <String[]>]
@@ -174,6 +176,22 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -DefaultUserRoleOverrides
+.
+To construct, please use Get-Help -Online and see NOTES section for DEFAULTUSERROLEOVERRIDES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphDefaultUserRoleOverride[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

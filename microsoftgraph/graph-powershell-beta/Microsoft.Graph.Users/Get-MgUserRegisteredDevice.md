@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/get-mguserregistereddevice
@@ -11,6 +11,7 @@ schema: 2.0.0
 Devices that are registered for the user.
 Read-only.
 Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -24,6 +25,7 @@ Get-MgUserRegisteredDevice -UserId <String> [-ExpandProperty <String[]>] [-Filte
 Devices that are registered for the user.
 Read-only.
 Nullable.
+Supports $expand.
 
 ## EXAMPLES
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgserviceprincipalownedobjectbyref
@@ -11,6 +11,7 @@ schema: 2.0.0
 Directory objects that are owned by this service principal.
 Read-only.
 Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -24,6 +25,7 @@ Get-MgServicePrincipalOwnedObjectByRef -ServicePrincipalId <String> [-Filter <St
 Directory objects that are owned by this service principal.
 Read-only.
 Nullable.
+Supports $expand.
 
 ## EXAMPLES
 

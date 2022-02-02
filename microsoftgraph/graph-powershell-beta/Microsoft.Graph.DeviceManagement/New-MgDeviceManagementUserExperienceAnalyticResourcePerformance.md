@@ -15,9 +15,10 @@ User experience analytics resource performance
 ### CreateExpanded (Default)
 ```
 New-MgDeviceManagementUserExperienceAnalyticResourcePerformance [-AdditionalProperties <Hashtable>]
- [-CpuSpikeTimePercentage <Double>] [-CpuSpikeTimePercentageThreshold <Double>] [-CpuSpikeTimeScore <Int32>]
- [-DeviceCount <Int64>] [-DeviceId <String>] [-DeviceName <String>] [-DeviceResourcePerformanceScore <Int32>]
- [-Id <String>] [-Manufacturer <String>] [-Model <String>] [-RamSpikeTimePercentage <Double>]
+ [-AverageSpikeTimeScore <Int32>] [-CpuSpikeTimePercentage <Double>]
+ [-CpuSpikeTimePercentageThreshold <Double>] [-CpuSpikeTimeScore <Int32>] [-DeviceCount <Int64>]
+ [-DeviceId <String>] [-DeviceName <String>] [-DeviceResourcePerformanceScore <Int32>] [-Id <String>]
+ [-Manufacturer <String>] [-Model <String>] [-RamSpikeTimePercentage <Double>]
  [-RamSpikeTimePercentageThreshold <Double>] [-RamSpikeTimeScore <Int32>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -33,6 +34,13 @@ New-MgDeviceManagementUserExperienceAnalyticResourcePerformance
 User experience analytics resource performance
 
 ## EXAMPLES
+
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -51,9 +59,25 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -AverageSpikeTimeScore
+AverageSpikeTimeScore of a device or a model type.
+Valid values 0 to 100
+
+```yaml
+Type: Int32
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -BodyParameter
 The user experience analytics resource performance entity.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsResourcePerformance
@@ -78,7 +102,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -94,7 +118,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -110,7 +134,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -125,7 +149,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -171,7 +195,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -232,7 +256,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -248,7 +272,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -264,7 +288,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -310,28 +334,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsResourcePerformance
 ## NOTES
-
-ALIASES
-
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
-
-
-BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsResourcePerformance>: The user experience analytics resource performance entity.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
-  - `[CpuSpikeTimePercentage <Double?>]`: CPU spike time in percentage. Valid values 0 to 100
-  - `[CpuSpikeTimePercentageThreshold <Double?>]`: Threshold of cpuSpikeTimeScore. Valid values 0 to 100
-  - `[CpuSpikeTimeScore <Int32?>]`: The user experience analytics device CPU spike time score. Valid values 0 to 100
-  - `[DeviceCount <Int64?>]`: User experience analytics summarized device count.
-  - `[DeviceId <String>]`: The id of the device.
-  - `[DeviceName <String>]`: The name of the device.
-  - `[DeviceResourcePerformanceScore <Int32?>]`: Resource performance score of a specific device. Valid values 0 to 100
-  - `[Manufacturer <String>]`: The user experience analytics device manufacturer.
-  - `[Model <String>]`: The user experience analytics device model.
-  - `[RamSpikeTimePercentage <Double?>]`: RAM spike time in percentage. Valid values 0 to 100
-  - `[RamSpikeTimePercentageThreshold <Double?>]`: Threshold of ramSpikeTimeScore. Valid values 0 to 100
-  - `[RamSpikeTimeScore <Int32?>]`: The user experience analytics device RAM spike time score. Valid values 0 to 100
+Please use Get-Help -Online.
 
 ## RELATED LINKS
+
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticresourceperformance](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticresourceperformance)
+

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintprinter
@@ -16,11 +16,11 @@ The list of printers registered in the tenant.
 ```
 Update-MgPrintPrinter -PrinterId <String> [-AdditionalProperties <Hashtable>]
  [-Capabilities <IMicrosoftGraphPrinterCapabilities>] [-Connectors <IMicrosoftGraphPrintConnector[]>]
- [-Defaults <IMicrosoftGraphPrinterDefaults>] [-DisplayName <String>] [-HasPhysicalDevice] [-Id <String>]
- [-IsAcceptingJobs] [-IsShared] [-Jobs <IMicrosoftGraphPrintJob[]>] [-LastSeenDateTime <DateTime>]
+ [-Defaults <IMicrosoftGraphPrinterDefaults1>] [-DisplayName <String>] [-HasPhysicalDevice] [-Id <String>]
+ [-IsAcceptingJobs] [-IsShared] [-Jobs <IMicrosoftGraphPrintJob1[]>] [-LastSeenDateTime <DateTime>]
  [-Location <IMicrosoftGraphPrinterLocation>] [-Manufacturer <String>] [-Model <String>]
  [-RegisteredDateTime <DateTime>] [-Shares <IMicrosoftGraphPrinterShare[]>]
- [-Status <IMicrosoftGraphPrinterStatus>] [-TaskTriggers <IMicrosoftGraphPrintTaskTrigger[]>] [-PassThru]
+ [-Status <IMicrosoftGraphPrinterStatus1>] [-TaskTriggers <IMicrosoftGraphPrintTaskTrigger[]>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,11 +34,11 @@ Update-MgPrintPrinter -PrinterId <String> -BodyParameter <IMicrosoftGraphPrinter
 ```
 Update-MgPrintPrinter -InputObject <IDevicesCloudPrintIdentity> [-AdditionalProperties <Hashtable>]
  [-Capabilities <IMicrosoftGraphPrinterCapabilities>] [-Connectors <IMicrosoftGraphPrintConnector[]>]
- [-Defaults <IMicrosoftGraphPrinterDefaults>] [-DisplayName <String>] [-HasPhysicalDevice] [-Id <String>]
- [-IsAcceptingJobs] [-IsShared] [-Jobs <IMicrosoftGraphPrintJob[]>] [-LastSeenDateTime <DateTime>]
+ [-Defaults <IMicrosoftGraphPrinterDefaults1>] [-DisplayName <String>] [-HasPhysicalDevice] [-Id <String>]
+ [-IsAcceptingJobs] [-IsShared] [-Jobs <IMicrosoftGraphPrintJob1[]>] [-LastSeenDateTime <DateTime>]
  [-Location <IMicrosoftGraphPrinterLocation>] [-Manufacturer <String>] [-Model <String>]
  [-RegisteredDateTime <DateTime>] [-Shares <IMicrosoftGraphPrinterShare[]>]
- [-Status <IMicrosoftGraphPrinterStatus>] [-TaskTriggers <IMicrosoftGraphPrintTaskTrigger[]>] [-PassThru]
+ [-Status <IMicrosoftGraphPrinterStatus1>] [-TaskTriggers <IMicrosoftGraphPrintTaskTrigger[]>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -123,7 +123,7 @@ printerDefaults
 To construct, see NOTES section for DEFAULTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrinterDefaults
+Type: IMicrosoftGraphPrinterDefaults1
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -232,7 +232,7 @@ The list of jobs that are queued for printing by the printer/printerShare.
 To construct, see NOTES section for JOBS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintJob[]
+Type: IMicrosoftGraphPrintJob1[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -375,7 +375,7 @@ printerStatus
 To construct, see NOTES section for STATUS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrinterStatus
+Type: IMicrosoftGraphPrinterStatus1
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -5668,5 +5668,17 @@ TASKTRIGGERS <IMicrosoftGraphPrintTaskTrigger[]>: A list of task triggers that a
   - `[Event <String>]`: printEvent
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
+
+## RELATED LINKS
+
+
+## RELATED LINKS
+
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/set-mgeducationmeassignmentsubmissionupresourcefolder
@@ -8,23 +8,24 @@ schema: 2.0.0
 # Set-MgEducationMeAssignmentSubmissionUpResourceFolder
 
 ## SYNOPSIS
-Invoke function setUpResourcesFolder
+Invoke action setUpResourcesFolder
 
 ## SYNTAX
 
 ### Set (Default)
 ```
 Set-MgEducationMeAssignmentSubmissionUpResourceFolder -EducationAssignmentId <String>
- -EducationSubmissionId <String> [<CommonParameters>]
+ -EducationSubmissionId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
-Set-MgEducationMeAssignmentSubmissionUpResourceFolder -InputObject <IEducationIdentity> [<CommonParameters>]
+Set-MgEducationMeAssignmentSubmissionUpResourceFolder -InputObject <IEducationIdentity> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke function setUpResourcesFolder
+Invoke action setUpResourcesFolder
 
 ## EXAMPLES
 
@@ -62,7 +63,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IEducationIdentity
@@ -73,6 +74,37 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

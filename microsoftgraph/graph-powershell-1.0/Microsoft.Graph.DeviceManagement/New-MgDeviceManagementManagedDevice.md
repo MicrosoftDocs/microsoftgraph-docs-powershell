@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmanageddevice
@@ -39,7 +39,7 @@ New-MgDeviceManagementManagedDevice [-ActivationLockBypassCode <String>] [-Addit
 
 ### Create1
 ```
-New-MgDeviceManagementManagedDevice -BodyParameter <IMicrosoftGraphManagedDevice1> [-WhatIf] [-Confirm]
+New-MgDeviceManagementManagedDevice -BodyParameter <IMicrosoftGraphManagedDevice> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -132,10 +132,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Devices that are managed or pre-enrolled through Intune
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedDevice1
+Type: IMicrosoftGraphManagedDevice
 Parameter Sets: Create1
 Aliases:
 
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComplianceState
-complianceState
+Compliance state.
 
 ```yaml
 Type: String
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 
 ### -ConfigurationManagerClientEnabledFeatures
 configuration Manager client enabled features
-To construct, see NOTES section for CONFIGURATIONMANAGERCLIENTENABLEDFEATURES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for CONFIGURATIONMANAGERCLIENTENABLEDFEATURES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphConfigurationManagerClientEnabledFeatures
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 ### -DeviceActionResults
 List of ComplexType deviceActionResult objects.
 This property is read-only.
-To construct, see NOTES section for DEVICEACTIONRESULTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEVICEACTIONRESULTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceActionResult[]
@@ -215,7 +215,7 @@ Device categories provides a way to organize your devices.
 Using device categories, company administrators can define their own categories that make sense to their company.
 These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment.
 You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
-To construct, see NOTES section for DEVICECATEGORY properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEVICECATEGORY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceCategory
@@ -247,7 +247,7 @@ Accept wildcard characters: False
 
 ### -DeviceCompliancePolicyStates
 Device compliance policy states for this device.
-To construct, see NOTES section for DEVICECOMPLIANCEPOLICYSTATES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEVICECOMPLIANCEPOLICYSTATES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceCompliancePolicyState[]
@@ -263,7 +263,7 @@ Accept wildcard characters: False
 
 ### -DeviceConfigurationStates
 Device configuration states for this device.
-To construct, see NOTES section for DEVICECONFIGURATIONSTATES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEVICECONFIGURATIONSTATES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceConfigurationState[]
@@ -278,7 +278,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceEnrollmentType
-.
+Possible ways of adding a mobile device to management.
 
 ```yaml
 Type: String
@@ -294,7 +294,7 @@ Accept wildcard characters: False
 
 ### -DeviceHealthAttestationState
 deviceHealthAttestationState
-To construct, see NOTES section for DEVICEHEALTHATTESTATIONSTATE properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEVICEHEALTHATTESTATIONSTATE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceHealthAttestationState
@@ -325,7 +325,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceRegistrationState
-deviceRegistrationState
+Device registration status.
 
 ```yaml
 Type: String
@@ -436,7 +436,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExchangeAccessState
-deviceManagementExchangeAccessState
+Device Exchange Access State.
 
 ```yaml
 Type: String
@@ -451,7 +451,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExchangeAccessStateReason
-deviceManagementExchangeAccessStateReason
+Device Exchange Access State Reason.
 
 ```yaml
 Type: String
@@ -625,7 +625,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedDeviceOwnerType
-managedDeviceOwnerType
+Owner type of device.
 
 ```yaml
 Type: String
@@ -640,7 +640,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagementAgent
-.
+Management agent type.
 
 ```yaml
 Type: String
@@ -751,7 +751,7 @@ Accept wildcard characters: False
 ```
 
 ### -PartnerReportedThreatState
-managedDevicePartnerReportedHealthState
+Available health states for the Device Health API
 
 ```yaml
 Type: String
@@ -993,10 +993,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDevice1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDevice
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDevice1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDevice
 ## NOTES
 
 ALIASES
@@ -1006,7 +1006,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphManagedDevice1>: Devices that are managed or pre-enrolled through Intune
+BODYPARAMETER <IMicrosoftGraphManagedDevice>: Devices that are managed or pre-enrolled through Intune
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
   - `[ActivationLockBypassCode <String>]`: Code that allows the Activation Lock on a device to be bypassed. This property is read-only.
@@ -1014,7 +1014,7 @@ BODYPARAMETER <IMicrosoftGraphManagedDevice1>: Devices that are managed or pre-e
   - `[AzureAdDeviceId <String>]`: The unique identifier for the Azure Active Directory device. Read only. This property is read-only.
   - `[AzureAdRegistered <Boolean?>]`: Whether the device is Azure Active Directory registered. This property is read-only.
   - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires. This property is read-only.
-  - `[ComplianceState <String>]`: complianceState
+  - `[ComplianceState <String>]`: Compliance state.
   - `[ConfigurationManagerClientEnabledFeatures <IMicrosoftGraphConfigurationManagerClientEnabledFeatures>]`: configuration Manager client enabled features
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CompliancePolicy <Boolean?>]`: Whether compliance policy is managed by Intune
@@ -1025,7 +1025,7 @@ BODYPARAMETER <IMicrosoftGraphManagedDevice1>: Devices that are managed or pre-e
     - `[WindowsUpdateForBusiness <Boolean?>]`: Whether Windows Update for Business is managed by Intune
   - `[DeviceActionResults <IMicrosoftGraphDeviceActionResult[]>]`: List of ComplexType deviceActionResult objects. This property is read-only.
     - `[ActionName <String>]`: Action name
-    - `[ActionState <String>]`: actionState
+    - `[ActionState <String>]`: State of the action on the device
     - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
     - `[StartDateTime <DateTime?>]`: Time the action was initiated
   - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
@@ -1037,7 +1037,7 @@ BODYPARAMETER <IMicrosoftGraphManagedDevice1>: Devices that are managed or pre-e
   - `[DeviceCompliancePolicyStates <IMicrosoftGraphDeviceCompliancePolicyState[]>]`: Device compliance policy states for this device.
     - `[Id <String>]`: Read-only.
     - `[DisplayName <String>]`: The name of the policy for this policyBase
-    - `[PlatformType <String>]`: 
+    - `[PlatformType <String>]`: Supported platform types for policies.
     - `[SettingCount <Int32?>]`: Count of how many setting a policy holds
     - `[SettingStates <IMicrosoftGraphDeviceCompliancePolicySettingState[]>]`: 
       - `[CurrentValue <String>]`: Current value of setting on device
@@ -1049,6 +1049,7 @@ BODYPARAMETER <IMicrosoftGraphManagedDevice1>: Devices that are managed or pre-e
       - `[Sources <IMicrosoftGraphSettingSource[]>]`: Contributing policies
         - `[DisplayName <String>]`: Not yet documented
         - `[Id <String>]`: Not yet documented
+        - `[SourceType <String>]`: settingSourceType
       - `[State <String>]`: complianceStatus
       - `[UserEmail <String>]`: UserEmail
       - `[UserId <String>]`: UserId
@@ -1059,7 +1060,7 @@ BODYPARAMETER <IMicrosoftGraphManagedDevice1>: Devices that are managed or pre-e
   - `[DeviceConfigurationStates <IMicrosoftGraphDeviceConfigurationState[]>]`: Device configuration states for this device.
     - `[Id <String>]`: Read-only.
     - `[DisplayName <String>]`: The name of the policy for this policyBase
-    - `[PlatformType <String>]`: 
+    - `[PlatformType <String>]`: Supported platform types for policies.
     - `[SettingCount <Int32?>]`: Count of how many setting a policy holds
     - `[SettingStates <IMicrosoftGraphDeviceConfigurationSettingState[]>]`: 
       - `[CurrentValue <String>]`: Current value of setting on device
@@ -1076,7 +1077,7 @@ BODYPARAMETER <IMicrosoftGraphManagedDevice1>: Devices that are managed or pre-e
       - `[UserPrincipalName <String>]`: UserPrincipalName.
     - `[State <String>]`: complianceStatus
     - `[Version <Int32?>]`: The version of the policy
-  - `[DeviceEnrollmentType <String>]`: 
+  - `[DeviceEnrollmentType <String>]`: Possible ways of adding a mobile device to management.
   - `[DeviceHealthAttestationState <IMicrosoftGraphDeviceHealthAttestationState>]`: deviceHealthAttestationState
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AttestationIdentityKey <String>]`: TWhen an Attestation Identity Key (AIK) is present on a device, it indicates that the device has an endorsement key (EK) certificate.
@@ -1112,15 +1113,15 @@ BODYPARAMETER <IMicrosoftGraphManagedDevice1>: Devices that are managed or pre-e
     - `[VirtualSecureMode <String>]`: VSM is a container that protects high value assets from a compromised kernel
     - `[WindowsPe <String>]`: Operating system running with limited services that is used to prepare a computer for Windows
   - `[DeviceName <String>]`: Name of the device. This property is read-only.
-  - `[DeviceRegistrationState <String>]`: deviceRegistrationState
+  - `[DeviceRegistrationState <String>]`: Device registration status.
   - `[EasActivated <Boolean?>]`: Whether the device is Exchange ActiveSync activated. This property is read-only.
   - `[EasActivationDateTime <DateTime?>]`: Exchange ActivationSync activation time of the device. This property is read-only.
   - `[EasDeviceId <String>]`: Exchange ActiveSync Id of the device. This property is read-only.
   - `[EmailAddress <String>]`: Email(s) for the user associated with the device. This property is read-only.
   - `[EnrolledDateTime <DateTime?>]`: Enrollment time of the device. This property is read-only.
   - `[EthernetMacAddress <String>]`: Ethernet MAC. This property is read-only.
-  - `[ExchangeAccessState <String>]`: deviceManagementExchangeAccessState
-  - `[ExchangeAccessStateReason <String>]`: deviceManagementExchangeAccessStateReason
+  - `[ExchangeAccessState <String>]`: Device Exchange Access State.
+  - `[ExchangeAccessStateReason <String>]`: Device Exchange Access State Reason.
   - `[ExchangeLastSuccessfulSyncDateTime <DateTime?>]`: Last time the device contacted Exchange. This property is read-only.
   - `[FreeStorageSpaceInBytes <Int64?>]`: Free Storage in Bytes. This property is read-only.
   - `[Iccid <String>]`: Integrated Circuit Card Identifier, it is A SIM card's unique identification number. This property is read-only.
@@ -1130,15 +1131,15 @@ BODYPARAMETER <IMicrosoftGraphManagedDevice1>: Devices that are managed or pre-e
   - `[JailBroken <String>]`: whether the device is jail broken or rooted. This property is read-only.
   - `[LastSyncDateTime <DateTime?>]`: The date and time that the device last completed a successful sync with Intune. This property is read-only.
   - `[ManagedDeviceName <String>]`: Automatically generated name to identify a device. Can be overwritten to a user friendly name.
-  - `[ManagedDeviceOwnerType <String>]`: managedDeviceOwnerType
-  - `[ManagementAgent <String>]`: 
+  - `[ManagedDeviceOwnerType <String>]`: Owner type of device.
+  - `[ManagementAgent <String>]`: Management agent type.
   - `[Manufacturer <String>]`: Manufacturer of the device. This property is read-only.
   - `[Meid <String>]`: MEID. This property is read-only.
   - `[Model <String>]`: Model of the device. This property is read-only.
   - `[Notes <String>]`: Notes on the device created by IT Admin
   - `[OSVersion <String>]`: Operating system version of the device. This property is read-only.
   - `[OperatingSystem <String>]`: Operating system of the device. Windows, iOS, etc. This property is read-only.
-  - `[PartnerReportedThreatState <String>]`: managedDevicePartnerReportedHealthState
+  - `[PartnerReportedThreatState <String>]`: Available health states for the Device Health API
   - `[PhoneNumber <String>]`: Phone number of the device. This property is read-only.
   - `[PhysicalMemoryInBytes <Int64?>]`: Total Memory in Bytes. This property is read-only.
   - `[RemoteAssistanceSessionErrorDetails <String>]`: An error string that identifies issues when creating Remote Assistance session objects. This property is read-only.
@@ -1163,7 +1164,7 @@ CONFIGURATIONMANAGERCLIENTENABLEDFEATURES <IMicrosoftGraphConfigurationManagerCl
 
 DEVICEACTIONRESULTS <IMicrosoftGraphDeviceActionResult[]>: List of ComplexType deviceActionResult objects. This property is read-only.
   - `[ActionName <String>]`: Action name
-  - `[ActionState <String>]`: actionState
+  - `[ActionState <String>]`: State of the action on the device
   - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
   - `[StartDateTime <DateTime?>]`: Time the action was initiated
 
@@ -1176,7 +1177,7 @@ DEVICECATEGORY <IMicrosoftGraphDeviceCategory>: Device categories provides a way
 DEVICECOMPLIANCEPOLICYSTATES <IMicrosoftGraphDeviceCompliancePolicyState[]>: Device compliance policy states for this device.
   - `[Id <String>]`: Read-only.
   - `[DisplayName <String>]`: The name of the policy for this policyBase
-  - `[PlatformType <String>]`: 
+  - `[PlatformType <String>]`: Supported platform types for policies.
   - `[SettingCount <Int32?>]`: Count of how many setting a policy holds
   - `[SettingStates <IMicrosoftGraphDeviceCompliancePolicySettingState[]>]`: 
     - `[CurrentValue <String>]`: Current value of setting on device
@@ -1188,6 +1189,7 @@ DEVICECOMPLIANCEPOLICYSTATES <IMicrosoftGraphDeviceCompliancePolicyState[]>: Dev
     - `[Sources <IMicrosoftGraphSettingSource[]>]`: Contributing policies
       - `[DisplayName <String>]`: Not yet documented
       - `[Id <String>]`: Not yet documented
+      - `[SourceType <String>]`: settingSourceType
     - `[State <String>]`: complianceStatus
     - `[UserEmail <String>]`: UserEmail
     - `[UserId <String>]`: UserId
@@ -1199,7 +1201,7 @@ DEVICECOMPLIANCEPOLICYSTATES <IMicrosoftGraphDeviceCompliancePolicyState[]>: Dev
 DEVICECONFIGURATIONSTATES <IMicrosoftGraphDeviceConfigurationState[]>: Device configuration states for this device.
   - `[Id <String>]`: Read-only.
   - `[DisplayName <String>]`: The name of the policy for this policyBase
-  - `[PlatformType <String>]`: 
+  - `[PlatformType <String>]`: Supported platform types for policies.
   - `[SettingCount <Int32?>]`: Count of how many setting a policy holds
   - `[SettingStates <IMicrosoftGraphDeviceConfigurationSettingState[]>]`: 
     - `[CurrentValue <String>]`: Current value of setting on device
@@ -1211,6 +1213,7 @@ DEVICECONFIGURATIONSTATES <IMicrosoftGraphDeviceConfigurationState[]>: Device co
     - `[Sources <IMicrosoftGraphSettingSource[]>]`: Contributing policies
       - `[DisplayName <String>]`: Not yet documented
       - `[Id <String>]`: Not yet documented
+      - `[SourceType <String>]`: settingSourceType
     - `[State <String>]`: complianceStatus
     - `[UserEmail <String>]`: UserEmail
     - `[UserId <String>]`: UserId
@@ -1255,5 +1258,14 @@ DEVICEHEALTHATTESTATIONSTATE <IMicrosoftGraphDeviceHealthAttestationState>: devi
   - `[WindowsPe <String>]`: Operating system running with limited services that is used to prepare a computer for Windows
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
+
+## RELATED LINKS
+
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

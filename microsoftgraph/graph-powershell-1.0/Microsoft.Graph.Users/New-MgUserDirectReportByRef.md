@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/new-mguserdirectreportbyref
@@ -11,6 +11,7 @@ schema: 2.0.0
 The users and contacts that report to the user.
 (The users and contacts that have their manager property set to this user.) Read-only.
 Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -42,6 +43,7 @@ New-MgUserDirectReportByRef -InputObject <IUsersIdentity> -BodyParameter <Hashta
 The users and contacts that report to the user.
 (The users and contacts that have their manager property set to this user.) Read-only.
 Nullable.
+Supports $expand.
 
 ## EXAMPLES
 
@@ -79,7 +81,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersIdentity

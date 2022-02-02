@@ -1,6 +1,6 @@
----
+﻿---
 Module Name: Microsoft.Graph.Education
-Module Guid: f596db4f-7382-488a-8590-e99799a0a9c1
+Module Guid: db2acbe2-a990-4439-8057-9db12cc01430
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education
 Help Version: 1.0.0.0
 Locale: en-US
@@ -23,8 +23,14 @@ When set, enables users to easily find assignments of a given type.
 Read-only.
 Nullable.
 
+### [Get-MgEducationClassAssignmentCategoryDelta](Get-MgEducationClassAssignmentCategoryDelta.md)
+Invoke function delta
+
 ### [Get-MgEducationClassAssignmentDefault](Get-MgEducationClassAssignmentDefault.md)
 Get assignmentDefaults from education
+
+### [Get-MgEducationClassAssignmentDelta](Get-MgEducationClassAssignmentDelta.md)
+Invoke function delta
 
 ### [Get-MgEducationClassAssignmentResource](Get-MgEducationClassAssignmentResource.md)
 Learning objects that are associated with this assignment.
@@ -95,9 +101,6 @@ Nullable.
 ### [Get-MgEducationClassTeacherDelta](Get-MgEducationClassTeacherDelta.md)
 Invoke function delta
 
-### [Get-MgEducationMe](Get-MgEducationMe.md)
-Get me from education
-
 ### [Get-MgEducationMeAssignment](Get-MgEducationMeAssignment.md)
 List of assignments for the user.
 Nullable.
@@ -106,6 +109,12 @@ Nullable.
 When set, enables users to easily find assignments of a given type.
 Read-only.
 Nullable.
+
+### [Get-MgEducationMeAssignmentCategoryDelta](Get-MgEducationMeAssignmentCategoryDelta.md)
+Invoke function delta
+
+### [Get-MgEducationMeAssignmentDelta](Get-MgEducationMeAssignmentDelta.md)
+Invoke function delta
 
 ### [Get-MgEducationMeAssignmentResource](Get-MgEducationMeAssignmentResource.md)
 Learning objects that are associated with this assignment.
@@ -165,14 +174,8 @@ Classes for which the user is a teacher.
 ### [Get-MgEducationMeTaughtClassDelta](Get-MgEducationMeTaughtClassDelta.md)
 Invoke function delta
 
-### [Get-MgEducationMeUser](Get-MgEducationMeUser.md)
-The directory user corresponding to this user.
-
 ### [Get-MgEducationMeUserByRef](Get-MgEducationMeUserByRef.md)
 The directory user corresponding to this user.
-
-### [Get-MgEducationRoot](Get-MgEducationRoot.md)
-Get education
 
 ### [Get-MgEducationSchool](Get-MgEducationSchool.md)
 Get schools from education
@@ -228,6 +231,12 @@ Nullable.
 When set, enables users to easily find assignments of a given type.
 Read-only.
 Nullable.
+
+### [Get-MgEducationUserAssignmentCategoryDelta](Get-MgEducationUserAssignmentCategoryDelta.md)
+Invoke function delta
+
+### [Get-MgEducationUserAssignmentDelta](Get-MgEducationUserAssignmentDelta.md)
+Invoke function delta
 
 ### [Get-MgEducationUserAssignmentResource](Get-MgEducationUserAssignmentResource.md)
 Learning objects that are associated with this assignment.
@@ -292,6 +301,15 @@ Invoke function delta
 
 ### [Get-MgEducationUserUserByRef](Get-MgEducationUserUserByRef.md)
 The directory user corresponding to this user.
+
+### [Invoke-MgReassignEducationClassAssignmentSubmission](Invoke-MgReassignEducationClassAssignmentSubmission.md)
+Invoke action reassign
+
+### [Invoke-MgReassignEducationMeAssignmentSubmission](Invoke-MgReassignEducationMeAssignmentSubmission.md)
+Invoke action reassign
+
+### [Invoke-MgReassignEducationUserAssignmentSubmission](Invoke-MgReassignEducationUserAssignmentSubmission.md)
+Invoke action reassign
 
 ### [Invoke-MgReturnEducationClassAssignmentSubmission](Invoke-MgReturnEducationClassAssignmentSubmission.md)
 Invoke action return
@@ -625,19 +643,19 @@ Invoke action reset
 Invoke action resume
 
 ### [Set-MgEducationClassAssignmentSubmissionUpResourceFolder](Set-MgEducationClassAssignmentSubmissionUpResourceFolder.md)
-Invoke function setUpResourcesFolder
+Invoke action setUpResourcesFolder
 
 ### [Set-MgEducationClassAssignmentUpResourceFolder](Set-MgEducationClassAssignmentUpResourceFolder.md)
-Invoke function setUpResourcesFolder
+Invoke action setUpResourcesFolder
 
 ### [Set-MgEducationClassGroupByRef](Set-MgEducationClassGroupByRef.md)
 The underlying Microsoft 365 group object.
 
 ### [Set-MgEducationMeAssignmentSubmissionUpResourceFolder](Set-MgEducationMeAssignmentSubmissionUpResourceFolder.md)
-Invoke function setUpResourcesFolder
+Invoke action setUpResourcesFolder
 
 ### [Set-MgEducationMeAssignmentUpResourceFolder](Set-MgEducationMeAssignmentUpResourceFolder.md)
-Invoke function setUpResourcesFolder
+Invoke action setUpResourcesFolder
 
 ### [Set-MgEducationMeUserByRef](Set-MgEducationMeUserByRef.md)
 The directory user corresponding to this user.
@@ -646,10 +664,10 @@ The directory user corresponding to this user.
 The underlying administrativeUnit for this school.
 
 ### [Set-MgEducationUserAssignmentSubmissionUpResourceFolder](Set-MgEducationUserAssignmentSubmissionUpResourceFolder.md)
-Invoke function setUpResourcesFolder
+Invoke action setUpResourcesFolder
 
 ### [Set-MgEducationUserAssignmentUpResourceFolder](Set-MgEducationUserAssignmentUpResourceFolder.md)
-Invoke function setUpResourcesFolder
+Invoke action setUpResourcesFolder
 
 ### [Set-MgEducationUserUserByRef](Set-MgEducationUserUserByRef.md)
 The directory user corresponding to this user.

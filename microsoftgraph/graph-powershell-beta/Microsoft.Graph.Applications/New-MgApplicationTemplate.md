@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/new-mgapplicationtemplate
@@ -12,7 +12,7 @@ Add new entity to applicationTemplates
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgApplicationTemplate [-AdditionalProperties <Hashtable>] [-Categories <String[]>] [-Description <String>]
  [-DisplayName <String>] [-HomePageUrl <String>] [-Id <String>] [-LogoUrl <String>] [-Publisher <String>]
@@ -20,7 +20,7 @@ New-MgApplicationTemplate [-AdditionalProperties <Hashtable>] [-Categories <Stri
  [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
 New-MgApplicationTemplate -BodyParameter <IMicrosoftGraphApplicationTemplate> [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -38,7 +38,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -50,11 +50,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 applicationTemplate
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphApplicationTemplate
-Parameter Sets: Create1
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -70,7 +70,7 @@ Supported values can be: Collaboration, Business Management, Consumer, Content m
 
 ```yaml
 Type: String[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -85,7 +85,7 @@ A description of the application.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -100,7 +100,7 @@ The name of the application.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -115,7 +115,7 @@ The home page URL of the application.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -130,7 +130,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -145,7 +145,7 @@ The URL to get the logo for this application.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -160,7 +160,7 @@ The name of the publisher for this application.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -176,7 +176,7 @@ The only valid value is sync.
 
 ```yaml
 Type: String[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -192,7 +192,7 @@ The supported values are oidc, password, saml, and notSupported.
 
 ```yaml
 Type: String[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False

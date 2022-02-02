@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/update-mguserinferenceclassification
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 inferenceClassification
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphInferenceClassification
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IMailIdentity
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 A set of overrides for a user to always classify messages from specific senders in certain ways: focused, or other.
 Read-only.
 Nullable.
-To construct, see NOTES section for OVERRIDES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for OVERRIDES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphInferenceClassificationOverride[]

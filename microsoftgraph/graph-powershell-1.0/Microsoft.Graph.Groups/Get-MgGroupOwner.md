@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggroupowner
@@ -8,10 +8,11 @@ schema: 2.0.0
 # Get-MgGroupOwner
 
 ## SYNOPSIS
-The owners of the group.
-The owners are a set of non-admin users who are allowed to modify this object.
-HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only.
+The owners of the group who can be users or service principals.
 Nullable.
+If this property is not specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner.
+Supports $expand including nested $select.
+For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
 
 ## SYNTAX
 
@@ -22,12 +23,24 @@ Get-MgGroupOwner -GroupId <String> [-ExpandProperty <String[]>] [-Filter <String
 ```
 
 ## DESCRIPTION
-The owners of the group.
-The owners are a set of non-admin users who are allowed to modify this object.
-HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only.
+The owners of the group who can be users or service principals.
 Nullable.
+If this property is not specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner.
+Supports $expand including nested $select.
+For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
 
 ## EXAMPLES
+
+### Example 1: Get an owner of a group
+```powershell
+Get-MgGroupOwner -GroupId '4d5f57a1-85e0-41dd-8282-ff995ad5e1c3'
+
+Id                                   DeletedDateTime
+--                                   ---------------
+5fc5c052-8774-4258-8705-0b4ab3e9a2df
+```
+
+This example gets the owner of the specified group.
 
 ## PARAMETERS
 

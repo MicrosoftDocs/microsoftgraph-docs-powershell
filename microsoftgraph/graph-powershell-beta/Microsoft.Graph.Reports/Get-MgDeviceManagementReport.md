@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgdevicemanagementreport
@@ -60,9 +60,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementReports
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementReports1
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+
+ELATED LINKS

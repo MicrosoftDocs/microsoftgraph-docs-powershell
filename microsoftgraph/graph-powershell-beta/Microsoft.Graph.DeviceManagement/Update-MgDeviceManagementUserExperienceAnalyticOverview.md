@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticoverview
@@ -50,7 +50,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analytics overview entity contains the overall score and the scores and insights of every metric of all categories.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsOverview
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 
 ### -Insights
 The user experience analytics insights.
-To construct, see NOTES section for INSIGHTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INSIGHTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsInsight[]

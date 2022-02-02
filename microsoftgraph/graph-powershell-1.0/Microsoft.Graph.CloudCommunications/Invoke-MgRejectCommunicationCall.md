@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/invoke-mgrejectcommunicationcall
@@ -12,27 +12,27 @@ Invoke action reject
 
 ## SYNTAX
 
-### RejectExpanded1 (Default)
+### RejectExpanded (Default)
 ```
 Invoke-MgRejectCommunicationCall -CallId <String> [-AdditionalProperties <Hashtable>] [-CallbackUri <String>]
  [-Reason <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Reject1
+### Reject
 ```
 Invoke-MgRejectCommunicationCall -CallId <String>
  -BodyParameter <IPaths4QrghdCommunicationsCallsCallIdMicrosoftGraphRejectPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### RejectViaIdentityExpanded1
+### RejectViaIdentityExpanded
 ```
 Invoke-MgRejectCommunicationCall -InputObject <ICloudCommunicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-CallbackUri <String>] [-Reason <String>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### RejectViaIdentity1
+### RejectViaIdentity
 ```
 Invoke-MgRejectCommunicationCall -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPaths4QrghdCommunicationsCallsCallIdMicrosoftGraphRejectPostRequestbodyContentApplicationJsonSchema>
@@ -51,7 +51,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: RejectExpanded1, RejectViaIdentityExpanded1
+Parameter Sets: RejectExpanded, RejectViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -63,11 +63,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths4QrghdCommunicationsCallsCallIdMicrosoftGraphRejectPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Reject1, RejectViaIdentity1
+Parameter Sets: Reject, RejectViaIdentity
 Aliases:
 
 Required: True
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: RejectExpanded1, RejectViaIdentityExpanded1
+Parameter Sets: RejectExpanded, RejectViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -97,7 +97,7 @@ key: id of call
 
 ```yaml
 Type: String
-Parameter Sets: RejectExpanded1, Reject1
+Parameter Sets: RejectExpanded, Reject
 Aliases:
 
 Required: True
@@ -109,11 +109,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ICloudCommunicationsIdentity
-Parameter Sets: RejectViaIdentityExpanded1, RejectViaIdentity1
+Parameter Sets: RejectViaIdentityExpanded, RejectViaIdentity
 Aliases:
 
 Required: True
@@ -143,7 +143,7 @@ rejectReason
 
 ```yaml
 Type: String
-Parameter Sets: RejectExpanded1, RejectViaIdentityExpanded1
+Parameter Sets: RejectExpanded, RejectViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -209,10 +209,14 @@ BODYPARAMETER <IPaths4QrghdCommunicationsCallsCallIdMicrosoftGraphRejectPostRequ
   - `[Reason <String>]`: rejectReason
 
 INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
+  - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call
   - `[CallRecordId <String>]`: key: id of callRecord
+  - `[CallTranscriptId <String>]`: key: id of callTranscript
   - `[CommsOperationId <String>]`: key: id of commsOperation
+  - `[MeetingAttendanceReportId <String>]`: key: id of meetingAttendanceReport
+  - `[MeetingRegistrationQuestionId <String>]`: key: id of meetingRegistrationQuestion
   - `[OnlineMeetingId <String>]`: key: id of onlineMeeting
   - `[ParticipantId <String>]`: key: id of participant
   - `[PresenceId <String>]`: key: id of presence

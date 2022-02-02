@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 Module Guid: c175882c-7b4c-4003-8d3c-c30e091920ac
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment
@@ -66,6 +66,9 @@ The imported device identities.
 ### [Get-MgDeviceManagementImportedWindowAutopilotDeviceIdentity](Get-MgDeviceManagementImportedWindowAutopilotDeviceIdentity.md)
 Collection of imported Windows autopilot devices.
 
+### [Get-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice](Get-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice.md)
+Get userExperienceAnalyticsNotAutopilotReadyDevice from deviceManagement
+
 ### [Get-MgDeviceManagementWindowAutopilotDeploymentProfile](Get-MgDeviceManagementWindowAutopilotDeploymentProfile.md)
 Windows auto pilot deployment profiles
 
@@ -110,9 +113,6 @@ A collection of windows feature update profiles
 
 ### [Get-MgDeviceManagementWindowFeatureUpdateProfileAssignment](Get-MgDeviceManagementWindowFeatureUpdateProfileAssignment.md)
 The list of group assignments of the profile.
-
-### [Get-MgDeviceManagementWindowFeatureUpdateProfileDeviceUpdateState](Get-MgDeviceManagementWindowFeatureUpdateProfileDeviceUpdateState.md)
-The list of device states this profile targeted to
 
 ### [Get-MgRoleManagement](Get-MgRoleManagement.md)
 Get roleManagement
@@ -728,6 +728,9 @@ The imported device identities.
 ### [New-MgDeviceManagementImportedWindowAutopilotDeviceIdentity](New-MgDeviceManagementImportedWindowAutopilotDeviceIdentity.md)
 Collection of imported Windows autopilot devices.
 
+### [New-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice](New-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice.md)
+Create new navigation property to userExperienceAnalyticsNotAutopilotReadyDevice for deviceManagement
+
 ### [New-MgDeviceManagementWindowAutopilotDeploymentProfile](New-MgDeviceManagementWindowAutopilotDeploymentProfile.md)
 Windows auto pilot deployment profiles
 
@@ -745,9 +748,6 @@ A collection of windows feature update profiles
 
 ### [New-MgDeviceManagementWindowFeatureUpdateProfileAssignment](New-MgDeviceManagementWindowFeatureUpdateProfileAssignment.md)
 The list of group assignments of the profile.
-
-### [New-MgDeviceManagementWindowFeatureUpdateProfileDeviceUpdateState](New-MgDeviceManagementWindowFeatureUpdateProfileDeviceUpdateState.md)
-The list of device states this profile targeted to
 
 ### [New-MgRoleManagementCloudPcResourceNamespace](New-MgRoleManagementCloudPcResourceNamespace.md)
 Create new navigation property to resourceNamespaces for roleManagement
@@ -944,6 +944,9 @@ The imported device identities.
 ### [Remove-MgDeviceManagementImportedWindowAutopilotDeviceIdentity](Remove-MgDeviceManagementImportedWindowAutopilotDeviceIdentity.md)
 Collection of imported Windows autopilot devices.
 
+### [Remove-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice](Remove-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice.md)
+Delete navigation property userExperienceAnalyticsNotAutopilotReadyDevice for deviceManagement
+
 ### [Remove-MgDeviceManagementWindowAutopilotDeploymentProfile](Remove-MgDeviceManagementWindowAutopilotDeploymentProfile.md)
 Windows auto pilot deployment profiles
 
@@ -976,9 +979,6 @@ A collection of windows feature update profiles
 
 ### [Remove-MgDeviceManagementWindowFeatureUpdateProfileAssignment](Remove-MgDeviceManagementWindowFeatureUpdateProfileAssignment.md)
 The list of group assignments of the profile.
-
-### [Remove-MgDeviceManagementWindowFeatureUpdateProfileDeviceUpdateState](Remove-MgDeviceManagementWindowFeatureUpdateProfileDeviceUpdateState.md)
-The list of device states this profile targeted to
 
 ### [Remove-MgRoleManagementCloudPc](Remove-MgRoleManagementCloudPc.md)
 Delete navigation property cloudPC for roleManagement
@@ -1511,6 +1511,9 @@ The imported device identities.
 ### [Update-MgDeviceManagementImportedWindowAutopilotDeviceIdentity](Update-MgDeviceManagementImportedWindowAutopilotDeviceIdentity.md)
 Collection of imported Windows autopilot devices.
 
+### [Update-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice](Update-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice.md)
+Update the navigation property userExperienceAnalyticsNotAutopilotReadyDevice in deviceManagement
+
 ### [Update-MgDeviceManagementWindowAutopilotDeploymentProfile](Update-MgDeviceManagementWindowAutopilotDeploymentProfile.md)
 Windows auto pilot deployment profiles
 
@@ -1520,9 +1523,6 @@ The list of assigned devices for the profile.
 ### [Update-MgDeviceManagementWindowAutopilotDeploymentProfileAssignment](Update-MgDeviceManagementWindowAutopilotDeploymentProfileAssignment.md)
 The list of group assignments for the profile.
 
-### [Update-MgDeviceManagementWindowAutopilotDeviceIdentity](Update-MgDeviceManagementWindowAutopilotDeviceIdentity.md)
-The Windows autopilot device identities contained collection.
-
 ### [Update-MgDeviceManagementWindowAutopilotSetting](Update-MgDeviceManagementWindowAutopilotSetting.md)
 The Windows autopilot account settings.
 
@@ -1531,9 +1531,6 @@ A collection of windows feature update profiles
 
 ### [Update-MgDeviceManagementWindowFeatureUpdateProfileAssignment](Update-MgDeviceManagementWindowFeatureUpdateProfileAssignment.md)
 The list of group assignments of the profile.
-
-### [Update-MgDeviceManagementWindowFeatureUpdateProfileDeviceUpdateState](Update-MgDeviceManagementWindowFeatureUpdateProfileDeviceUpdateState.md)
-The list of device states this profile targeted to
 
 ### [Update-MgRoleManagement](Update-MgRoleManagement.md)
 Update roleManagement

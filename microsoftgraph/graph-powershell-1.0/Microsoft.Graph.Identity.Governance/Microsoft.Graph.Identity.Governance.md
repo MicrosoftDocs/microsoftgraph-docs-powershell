@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Identity.Governance
 Module Guid: 432b96b2-ec8b-4599-8ec1-2e54a60587f9
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance
@@ -30,6 +30,41 @@ Get versions from agreements
 ### [Get-MgAgreementFileVersion](Get-MgAgreementFileVersion.md)
 Get versions from agreements
 
+### [Get-MgEntitlementManagementAccessPackage](Get-MgEntitlementManagementAccessPackage.md)
+Represents access package objects.
+
+### [Get-MgEntitlementManagementAccessPackageApplicablePolicyRequirement](Get-MgEntitlementManagementAccessPackageApplicablePolicyRequirement.md)
+Invoke action getApplicablePolicyRequirements
+
+### [Get-MgEntitlementManagementAccessPackageAssignmentApprovalStage](Get-MgEntitlementManagementAccessPackageAssignmentApprovalStage.md)
+Used for the approvalStages property of approval settings in the requestApprovalSettings property of an access package assignment policy.
+Specifies the primary, fallback, and escalation approvers of each stage.
+
+### [Get-MgEntitlementManagementAccessPackageCatalog](Get-MgEntitlementManagementAccessPackageCatalog.md)
+Read-only.
+Nullable.
+
+### [Get-MgEntitlementManagementAssignment](Get-MgEntitlementManagementAssignment.md)
+Represents the grant of an access package to a subject (user or group).
+
+### [Get-MgEntitlementManagementAssignmentRequest](Get-MgEntitlementManagementAssignmentRequest.md)
+Represents access package assignment requests created by or on behalf of a user.
+
+### [Get-MgEntitlementManagementCatalog](Get-MgEntitlementManagementCatalog.md)
+Represents a group of access packages.
+
+### [Get-MgEntitlementManagementConnectedOrganization](Get-MgEntitlementManagementConnectedOrganization.md)
+Represents references to a directory or domain of another organization whose users can request access.
+
+### [Get-MgEntitlementManagementConnectedOrganizationExternalSponsor](Get-MgEntitlementManagementConnectedOrganizationExternalSponsor.md)
+Nullable.
+
+### [Get-MgEntitlementManagementConnectedOrganizationInternalSponsor](Get-MgEntitlementManagementConnectedOrganizationInternalSponsor.md)
+Nullable.
+
+### [Get-MgEntitlementManagementSetting](Get-MgEntitlementManagementSetting.md)
+Represents the settings that control the behavior of Azure AD entitlement management.
+
 ### [Get-MgUserAgreementAcceptance](Get-MgUserAgreementAcceptance.md)
 The user's terms of use acceptance statuses.
 Read-only.
@@ -39,6 +74,21 @@ Nullable.
 The user's terms of use acceptance statuses.
 Read-only.
 Nullable.
+
+### [Invoke-MgFilterEntitlementManagementAccessPackage](Invoke-MgFilterEntitlementManagementAccessPackage.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterEntitlementManagementAccessPackageAssignmentApproval](Invoke-MgFilterEntitlementManagementAccessPackageAssignmentApproval.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterEntitlementManagementAssignment](Invoke-MgFilterEntitlementManagementAssignment.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterEntitlementManagementAssignmentRequest](Invoke-MgFilterEntitlementManagementAssignmentRequest.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterEntitlementManagementCatalogAccessPackage](Invoke-MgFilterEntitlementManagementCatalogAccessPackage.md)
+Invoke function filterByCurrentUser
 
 ### [New-MgAgreement](New-MgAgreement.md)
 Add new entity to agreements
@@ -60,6 +110,31 @@ Create new navigation property to versions for agreements
 
 ### [New-MgAgreementFileVersion](New-MgAgreementFileVersion.md)
 Create new navigation property to versions for agreements
+
+### [New-MgEntitlementManagementAccessPackage](New-MgEntitlementManagementAccessPackage.md)
+Represents access package objects.
+
+### [New-MgEntitlementManagementAccessPackageAssignmentApprovalStage](New-MgEntitlementManagementAccessPackageAssignmentApprovalStage.md)
+Used for the approvalStages property of approval settings in the requestApprovalSettings property of an access package assignment policy.
+Specifies the primary, fallback, and escalation approvers of each stage.
+
+### [New-MgEntitlementManagementAssignment](New-MgEntitlementManagementAssignment.md)
+Represents the grant of an access package to a subject (user or group).
+
+### [New-MgEntitlementManagementAssignmentRequest](New-MgEntitlementManagementAssignmentRequest.md)
+Represents access package assignment requests created by or on behalf of a user.
+
+### [New-MgEntitlementManagementCatalog](New-MgEntitlementManagementCatalog.md)
+Represents a group of access packages.
+
+### [New-MgEntitlementManagementConnectedOrganization](New-MgEntitlementManagementConnectedOrganization.md)
+Represents references to a directory or domain of another organization whose users can request access.
+
+### [New-MgEntitlementManagementConnectedOrganizationExternalSponsor](New-MgEntitlementManagementConnectedOrganizationExternalSponsor.md)
+Nullable.
+
+### [New-MgEntitlementManagementConnectedOrganizationInternalSponsor](New-MgEntitlementManagementConnectedOrganizationInternalSponsor.md)
+Nullable.
 
 ### [New-MgUserAgreementAcceptanceByRef](New-MgUserAgreementAcceptanceByRef.md)
 The user's terms of use acceptance statuses.
@@ -87,6 +162,40 @@ Delete navigation property versions for agreements
 ### [Remove-MgAgreementFileVersion](Remove-MgAgreementFileVersion.md)
 Delete navigation property versions for agreements
 
+### [Remove-MgEntitlementManagementAccessPackage](Remove-MgEntitlementManagementAccessPackage.md)
+Represents access package objects.
+
+### [Remove-MgEntitlementManagementAccessPackageAssignmentApproval](Remove-MgEntitlementManagementAccessPackageAssignmentApproval.md)
+Delete navigation property accessPackageAssignmentApprovals for identityGovernance
+
+### [Remove-MgEntitlementManagementAccessPackageAssignmentApprovalStage](Remove-MgEntitlementManagementAccessPackageAssignmentApprovalStage.md)
+Used for the approvalStages property of approval settings in the requestApprovalSettings property of an access package assignment policy.
+Specifies the primary, fallback, and escalation approvers of each stage.
+
+### [Remove-MgEntitlementManagementAssignment](Remove-MgEntitlementManagementAssignment.md)
+Represents the grant of an access package to a subject (user or group).
+
+### [Remove-MgEntitlementManagementAssignmentRequest](Remove-MgEntitlementManagementAssignmentRequest.md)
+Represents access package assignment requests created by or on behalf of a user.
+
+### [Remove-MgEntitlementManagementCatalog](Remove-MgEntitlementManagementCatalog.md)
+Represents a group of access packages.
+
+### [Remove-MgEntitlementManagementConnectedOrganization](Remove-MgEntitlementManagementConnectedOrganization.md)
+Represents references to a directory or domain of another organization whose users can request access.
+
+### [Remove-MgEntitlementManagementConnectedOrganizationExternalSponsor](Remove-MgEntitlementManagementConnectedOrganizationExternalSponsor.md)
+Nullable.
+
+### [Remove-MgEntitlementManagementConnectedOrganizationInternalSponsor](Remove-MgEntitlementManagementConnectedOrganizationInternalSponsor.md)
+Nullable.
+
+### [Split-MgEntitlementManagementConnectedOrganization](Split-MgEntitlementManagementConnectedOrganization.md)
+Split elements of a connectedOrganization
+
+### [Stop-MgEntitlementManagementAssignmentRequest](Stop-MgEntitlementManagementAssignmentRequest.md)
+Invoke action cancel
+
 ### [Update-MgAgreement](Update-MgAgreement.md)
 Update entity in agreements
 
@@ -105,4 +214,35 @@ Update the navigation property versions in agreements
 
 ### [Update-MgAgreementFileVersion](Update-MgAgreementFileVersion.md)
 Update the navigation property versions in agreements
+
+### [Update-MgEntitlementManagementAccessPackage](Update-MgEntitlementManagementAccessPackage.md)
+Represents access package objects.
+
+### [Update-MgEntitlementManagementAccessPackageAssignmentApproval](Update-MgEntitlementManagementAccessPackageAssignmentApproval.md)
+Update the navigation property accessPackageAssignmentApprovals in identityGovernance
+
+### [Update-MgEntitlementManagementAccessPackageAssignmentApprovalStage](Update-MgEntitlementManagementAccessPackageAssignmentApprovalStage.md)
+Used for the approvalStages property of approval settings in the requestApprovalSettings property of an access package assignment policy.
+Specifies the primary, fallback, and escalation approvers of each stage.
+
+### [Update-MgEntitlementManagementAssignment](Update-MgEntitlementManagementAssignment.md)
+Represents the grant of an access package to a subject (user or group).
+
+### [Update-MgEntitlementManagementAssignmentRequest](Update-MgEntitlementManagementAssignmentRequest.md)
+Represents access package assignment requests created by or on behalf of a user.
+
+### [Update-MgEntitlementManagementCatalog](Update-MgEntitlementManagementCatalog.md)
+Represents a group of access packages.
+
+### [Update-MgEntitlementManagementConnectedOrganization](Update-MgEntitlementManagementConnectedOrganization.md)
+Represents references to a directory or domain of another organization whose users can request access.
+
+### [Update-MgEntitlementManagementConnectedOrganizationExternalSponsor](Update-MgEntitlementManagementConnectedOrganizationExternalSponsor.md)
+Nullable.
+
+### [Update-MgEntitlementManagementConnectedOrganizationInternalSponsor](Update-MgEntitlementManagementConnectedOrganizationInternalSponsor.md)
+Nullable.
+
+### [Update-MgEntitlementManagementSetting](Update-MgEntitlementManagementSetting.md)
+Represents the settings that control the behavior of Azure AD entitlement management.
 

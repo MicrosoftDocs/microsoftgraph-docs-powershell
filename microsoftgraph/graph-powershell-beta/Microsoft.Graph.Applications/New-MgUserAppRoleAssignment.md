@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/new-mguserapproleassignment
@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Represents the app roles a user has been granted for an application.
+Supports $expand.
 
 ## SYNTAX
 
@@ -42,8 +43,29 @@ New-MgUserAppRoleAssignment -InputObject <IApplicationsIdentity>
 
 ## DESCRIPTION
 Represents the app roles a user has been granted for an application.
+Supports $expand.
 
 ## EXAMPLES
+
+### Example 1: Assign a user an application role
+```powershell
+New-MgUserAppRoleAssignment -Userid '8a7c50d3-fcbd-4727-a889-8ab232dfea01' `
+  -PrincipalId '8a7c50d3-fcbd-4727-a889-8ab232dfea01' `
+  -ResourceId '0873169c-9595-4664-9d02-499b49846ff1'  `
+  -AppRoleID '00000000-0000-0000-0000-000000000000' |
+  Format-List Id, AppRoleId, CreationTime, PrincipalDisplayName, 
+  PrincipalId, PrincipalType, ResourceDisplayName, ResourceId
+
+Id                   : 01B8ir38J0eoiYqyMt_qAWev_PSoYDBGmcqI9E2dyKI
+AppRoleId            : 00000000-0000-0000-0000-000000000000
+PrincipalDisplayName : Adele Vance
+PrincipalId          : 8a7c50d3-fcbd-4727-a889-8ab232dfea01
+PrincipalType        : User
+ResourceDisplayName  : dxprovisioning-analytics
+ResourceId           : 0873169c-9595-4664-9d02-499b49846ff1
+```
+
+This commands assigns the specified user a role in the specified application resource.
 
 ## PARAMETERS
 
@@ -82,7 +104,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 appRoleAssignment
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAppRoleAssignment1
@@ -130,7 +152,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
@@ -312,6 +334,7 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[DirectoryDefinitionId <String>]`: key: id of directoryDefinition
   - `[EndpointId <String>]`: key: id of endpoint
   - `[ExtensionPropertyId <String>]`: key: id of extensionProperty
+  - `[FederatedIdentityCredentialId <String>]`: key: id of federatedIdentityCredential
   - `[GroupId <String>]`: key: id of group
   - `[LicenseDetailsId <String>]`: key: id of licenseDetails
   - `[OnPremisesAgentGroupId <String>]`: key: id of onPremisesAgentGroup

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Financials-help.xml
 Module Name: Microsoft.Graph.Financials
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.financials/update-mgfinancialcompanysaleorder
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 
 ### -BillingPostalAddress
 postalAddressType
-To construct, see NOTES section for BILLINGPOSTALADDRESS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BILLINGPOSTALADDRESS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPostalAddressType
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 salesOrder
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSalesOrder
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 
 ### -Currency
 currency
-To construct, see NOTES section for CURRENCY properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for CURRENCY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCurrency
@@ -221,7 +221,7 @@ Accept wildcard characters: False
 
 ### -Customer
 customer
-To construct, see NOTES section for CUSTOMER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for CUSTOMER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCustomer
@@ -372,7 +372,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFinancialsIdentity
@@ -463,7 +463,7 @@ Accept wildcard characters: False
 
 ### -PaymentTerm
 paymentTerm
-To construct, see NOTES section for PAYMENTTERM properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for PAYMENTTERM properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPaymentTerm
@@ -554,7 +554,7 @@ Accept wildcard characters: False
 
 ### -SalesOrderLines
 .
-To construct, see NOTES section for SALESORDERLINES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SALESORDERLINES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSalesOrderLine[]
@@ -585,7 +585,7 @@ Accept wildcard characters: False
 
 ### -SellingPostalAddress
 postalAddressType
-To construct, see NOTES section for SELLINGPOSTALADDRESS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SELLINGPOSTALADDRESS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPostalAddressType
@@ -601,7 +601,7 @@ Accept wildcard characters: False
 
 ### -ShippingPostalAddress
 postalAddressType
-To construct, see NOTES section for SHIPPINGPOSTALADDRESS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SHIPPINGPOSTALADDRESS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPostalAddressType

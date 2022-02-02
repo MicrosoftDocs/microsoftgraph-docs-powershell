@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/remove-mggroup
@@ -8,8 +8,7 @@ schema: 2.0.0
 # Remove-MgGroup
 
 ## SYNOPSIS
-Represents an Azure Active Directory object.
-The directoryObject type is the base type for many other directory entity types.
+Delete entity from groups
 
 ## SYNTAX
 
@@ -25,10 +24,16 @@ Remove-MgGroup -InputObject <IGroupsIdentity> [-IfMatch <String>] [-PassThru] [-
 ```
 
 ## DESCRIPTION
-Represents an Azure Active Directory object.
-The directoryObject type is the base type for many other directory entity types.
+Delete entity from groups
 
 ## EXAMPLES
+
+### Example 1: Remove a group
+```powershell
+Remove-MgGroup -GroupId 'f6b9791b-dfc1-40d6-9ab6-7b29126c534a'
+```
+
+This example deletes the specified group.
 
 ## PARAMETERS
 
@@ -64,7 +69,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IGroupsIdentity

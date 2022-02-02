@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/update-mgrolemanagement
@@ -14,13 +14,15 @@ Update roleManagement
 
 ### UpdateExpanded1 (Default)
 ```
-Update-MgRoleManagement [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm]
+Update-MgRoleManagement [-AdditionalProperties <Hashtable>] [-Directory <IMicrosoftGraphRbacApplication1>]
+ [-EntitlementManagement <IMicrosoftGraphRbacApplication1>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update1
 ```
-Update-MgRoleManagement -BodyParameter <Hashtable> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgRoleManagement -BodyParameter <IMicrosoftGraphRoleManagement> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,7 +51,7 @@ Accept wildcard characters: False
 roleManagement
 
 ```yaml
-Type: Hashtable
+Type: IMicrosoftGraphRoleManagement
 Parameter Sets: Update1
 Aliases:
 
@@ -57,6 +59,38 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Directory
+rbacApplication
+To construct, please use Get-Help -Online and see NOTES section for DIRECTORY properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphRbacApplication1
+Parameter Sets: UpdateExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -EntitlementManagement
+rbacApplication
+To construct, please use Get-Help -Online and see NOTES section for ENTITLEMENTMANAGEMENT properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphRbacApplication1
+Parameter Sets: UpdateExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -111,7 +145,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### System.Collections.Hashtable
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleManagement
 ## OUTPUTS
 
 ### System.Boolean

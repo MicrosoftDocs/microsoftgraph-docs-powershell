@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/set-mgdevicemanagementsoftwareupdatestatussummarybyref
@@ -12,13 +12,13 @@ The software update status summary.
 
 ## SYNTAX
 
-### SetExpanded (Default)
+### SetExpanded1 (Default)
 ```
 Set-MgDeviceManagementSoftwareUpdateStatusSummaryByRef [-AdditionalProperties <Hashtable>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Set
+### Set1
 ```
 Set-MgDeviceManagementSoftwareUpdateStatusSummaryByRef -BodyParameter <Hashtable> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -36,7 +36,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: SetExpanded
+Parameter Sets: SetExpanded1
 Aliases:
 
 Required: False
@@ -51,7 +51,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: Hashtable
-Parameter Sets: Set
+Parameter Sets: Set1
 Aliases:
 
 Required: True

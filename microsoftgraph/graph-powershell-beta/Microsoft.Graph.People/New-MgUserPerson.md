@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/new-mguserperson
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 person
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPerson1
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 
 ### -EmailAddresses
 The person's email addresses.
-To construct, see NOTES section for EMAILADDRESSES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for EMAILADDRESSES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRankedEmailAddress[]
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IPeopleIdentity
@@ -291,7 +291,7 @@ Accept wildcard characters: False
 
 ### -Phones
 The person's phone numbers.
-To construct, see NOTES section for PHONES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for PHONES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPhone1[]
@@ -307,7 +307,7 @@ Accept wildcard characters: False
 
 ### -PostalAddresses
 The person's addresses.
-To construct, see NOTES section for POSTALADDRESSES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for POSTALADDRESSES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphLocation1[]
@@ -338,7 +338,7 @@ Accept wildcard characters: False
 
 ### -Sources
 The sources the user data comes from, for example Directory or Outlook Contacts.
-To construct, see NOTES section for SOURCES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SOURCES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPersonDataSource[]
@@ -417,7 +417,7 @@ Accept wildcard characters: False
 
 ### -Websites
 The person's websites.
-To construct, see NOTES section for WEBSITES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for WEBSITES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphWebsite[]

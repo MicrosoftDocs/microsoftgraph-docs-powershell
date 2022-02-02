@@ -33,6 +33,13 @@ Not yet documented
 
 ## EXAMPLES
 
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -52,7 +59,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 ATP onboarding State for a given device.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState
@@ -142,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlatformType
-deviceType
+Device type.
 
 ```yaml
 Type: String
@@ -302,28 +309,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState
 ## NOTES
-
-ALIASES
-
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
-
-
-BODYPARAMETER <IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState>: ATP onboarding State for a given device.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
-  - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
-  - `[DeviceId <String>]`: The Device Id that is being reported
-  - `[DeviceModel <String>]`: The device model that is being reported
-  - `[DeviceName <String>]`: The Device Name that is being reported
-  - `[PlatformType <String>]`: deviceType
-  - `[Setting <String>]`: The setting class name and property name.
-  - `[SettingName <String>]`: The Setting Name that is being reported
-  - `[State <String>]`: complianceStatus
-  - `[UserEmail <String>]`: The User email address that is being reported
-  - `[UserId <String>]`: The user Id that is being reported
-  - `[UserName <String>]`: The User Name that is being reported
-  - `[UserPrincipalName <String>]`: The User PrincipalName that is being reported
+Please use Get-Help -Online.
 
 ## RELATED LINKS
+
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementadvancedthreatprotectiononboardingstatesummaryadvancedthreatprotectiononboardingdevicesettingstate](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementadvancedthreatprotectiononboardingstatesummaryadvancedthreatprotectiononboardingdevicesettingstate)
+

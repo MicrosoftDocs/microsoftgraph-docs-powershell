@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgpolicypermissiongrantpolicyexclude
@@ -26,7 +26,7 @@ Update-MgPolicyPermissionGrantPolicyExclude -PermissionGrantConditionSetId <Stri
 ### Update1
 ```
 Update-MgPolicyPermissionGrantPolicyExclude -PermissionGrantConditionSetId <String>
- -PermissionGrantPolicyId <String> -BodyParameter <IMicrosoftGraphPermissionGrantConditionSet> [-PassThru]
+ -PermissionGrantPolicyId <String> -BodyParameter <IMicrosoftGraphPermissionGrantConditionSet1> [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -43,7 +43,7 @@ Update-MgPolicyPermissionGrantPolicyExclude -InputObject <IIdentitySignInsIdenti
 ### UpdateViaIdentity1
 ```
 Update-MgPolicyPermissionGrantPolicyExclude -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphPermissionGrantConditionSet> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphPermissionGrantConditionSet1> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -75,7 +75,7 @@ permissionGrantConditionSet
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPermissionGrantConditionSet
+Type: IMicrosoftGraphPermissionGrantConditionSet1
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -331,7 +331,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermissionGrantConditionSet
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermissionGrantConditionSet1
 ## OUTPUTS
 
 ### System.Boolean

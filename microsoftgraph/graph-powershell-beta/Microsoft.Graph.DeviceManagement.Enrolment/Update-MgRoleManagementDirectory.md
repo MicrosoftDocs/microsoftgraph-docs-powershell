@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/update-mgrolemanagementdirectory
@@ -20,7 +20,7 @@ Update-MgRoleManagementDirectory [-AdditionalProperties <Hashtable>] [-Id <Strin
  [-RoleAssignmentScheduleInstances <IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance[]>]
  [-RoleAssignmentScheduleRequests <IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest[]>]
  [-RoleAssignmentSchedules <IMicrosoftGraphUnifiedRoleAssignmentSchedule[]>]
- [-RoleAssignments <IMicrosoftGraphUnifiedRoleAssignment[]>]
+ [-RoleAssignments <IMicrosoftGraphUnifiedRoleAssignment1[]>]
  [-RoleDefinitions <IMicrosoftGraphUnifiedRoleDefinition[]>]
  [-RoleEligibilityScheduleInstances <IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance[]>]
  [-RoleEligibilityScheduleRequests <IMicrosoftGraphUnifiedRoleEligibilityScheduleRequest[]>]
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for ROLEASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRoleAssignment[]
+Type: IMicrosoftGraphUnifiedRoleAssignment1[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -1050,5 +1050,8 @@ ROLEELIGIBILITYSCHEDULES <IMicrosoftGraphUnifiedRoleEligibilitySchedule[]>: .
     - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagement
@@ -18,7 +18,7 @@ Update-MgDeviceManagement [-AdditionalProperties <Hashtable>]
  [-ApplePushNotificationCertificate <IMicrosoftGraphApplePushNotificationCertificate>]
  [-ComplianceManagementPartners <IMicrosoftGraphComplianceManagementPartner[]>]
  [-ConditionalAccessSettings <IMicrosoftGraphOnPremisesConditionalAccessSettings>]
- [-DetectedApps <IMicrosoftGraphDetectedApp1[]>] [-DeviceCategories <IMicrosoftGraphDeviceCategory[]>]
+ [-DetectedApps <IMicrosoftGraphDetectedApp[]>] [-DeviceCategories <IMicrosoftGraphDeviceCategory[]>]
  [-DeviceCompliancePolicies <IMicrosoftGraphDeviceCompliancePolicy[]>]
  [-DeviceCompliancePolicyDeviceStateSummary <IMicrosoftGraphDeviceCompliancePolicyDeviceStateSummary>]
  [-DeviceCompliancePolicySettingStateSummaries <IMicrosoftGraphDeviceCompliancePolicySettingStateSummary[]>]
@@ -31,11 +31,11 @@ Update-MgDeviceManagement [-AdditionalProperties <Hashtable>]
  [-IntuneAccountId <String>] [-IntuneBrand <IMicrosoftGraphIntuneBrand>]
  [-IosUpdateStatuses <IMicrosoftGraphIosUpdateDeviceStatus[]>]
  [-ManagedDeviceOverview <IMicrosoftGraphManagedDeviceOverview>]
- [-ManagedDevices <IMicrosoftGraphManagedDevice1[]>]
+ [-ManagedDevices <IMicrosoftGraphManagedDevice[]>]
  [-MobileThreatDefenseConnectors <IMicrosoftGraphMobileThreatDefenseConnector[]>]
  [-NotificationMessageTemplates <IMicrosoftGraphNotificationMessageTemplate[]>]
  [-RemoteAssistancePartners <IMicrosoftGraphRemoteAssistancePartner[]>]
- [-ResourceOperations <IMicrosoftGraphResourceOperation[]>]
+ [-Reports <IMicrosoftGraphDeviceManagementReports>] [-ResourceOperations <IMicrosoftGraphResourceOperation[]>]
  [-RoleAssignments <IMicrosoftGraphDeviceAndAppManagementRoleAssignment[]>]
  [-RoleDefinitions <IMicrosoftGraphRoleDefinition[]>] [-Settings <IMicrosoftGraphDeviceManagementSettings>]
  [-SoftwareUpdateStatusSummary <IMicrosoftGraphSoftwareUpdateStatusSummary>] [-SubscriptionState <String>]
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 
 ### -ApplePushNotificationCertificate
 Apple push notification certificate.
-To construct, see NOTES section for APPLEPUSHNOTIFICATIONCERTIFICATE properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for APPLEPUSHNOTIFICATIONCERTIFICATE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphApplePushNotificationCertificate
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Singleton entity that acts as a container for all device management functionality.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagement1
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 
 ### -ComplianceManagementPartners
 The list of Compliance Management Partners configured by the tenant.
-To construct, see NOTES section for COMPLIANCEMANAGEMENTPARTNERS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for COMPLIANCEMANAGEMENTPARTNERS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphComplianceManagementPartner[]
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 
 ### -ConditionalAccessSettings
 Singleton entity which represents the Exchange OnPremises Conditional Access Settings for a tenant.
-To construct, see NOTES section for CONDITIONALACCESSSETTINGS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for CONDITIONALACCESSSETTINGS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphOnPremisesConditionalAccessSettings
@@ -142,10 +142,10 @@ Accept wildcard characters: False
 
 ### -DetectedApps
 The list of detected apps associated with a device.
-To construct, see NOTES section for DETECTEDAPPS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DETECTEDAPPS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDetectedApp1[]
+Type: IMicrosoftGraphDetectedApp[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 
 ### -DeviceCategories
 The list of device categories with the tenant.
-To construct, see NOTES section for DEVICECATEGORIES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEVICECATEGORIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceCategory[]
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 
 ### -DeviceCompliancePolicies
 The device compliance policies.
-To construct, see NOTES section for DEVICECOMPLIANCEPOLICIES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEVICECOMPLIANCEPOLICIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceCompliancePolicy[]
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 
 ### -DeviceCompliancePolicyDeviceStateSummary
 deviceCompliancePolicyDeviceStateSummary
-To construct, see NOTES section for DEVICECOMPLIANCEPOLICYDEVICESTATESUMMARY properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEVICECOMPLIANCEPOLICYDEVICESTATESUMMARY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceCompliancePolicyDeviceStateSummary
@@ -206,7 +206,7 @@ Accept wildcard characters: False
 
 ### -DeviceCompliancePolicySettingStateSummaries
 The summary states of compliance policy settings for this account.
-To construct, see NOTES section for DEVICECOMPLIANCEPOLICYSETTINGSTATESUMMARIES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEVICECOMPLIANCEPOLICYSETTINGSTATESUMMARIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceCompliancePolicySettingStateSummary[]
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 
 ### -DeviceConfigurationDeviceStateSummaries
 deviceConfigurationDeviceStateSummary
-To construct, see NOTES section for DEVICECONFIGURATIONDEVICESTATESUMMARIES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEVICECONFIGURATIONDEVICESTATESUMMARIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceConfigurationDeviceStateSummary
@@ -238,7 +238,7 @@ Accept wildcard characters: False
 
 ### -DeviceConfigurations
 The device configurations.
-To construct, see NOTES section for DEVICECONFIGURATIONS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEVICECONFIGURATIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceConfiguration[]
@@ -254,7 +254,7 @@ Accept wildcard characters: False
 
 ### -DeviceEnrollmentConfigurations
 The list of device enrollment configurations
-To construct, see NOTES section for DEVICEENROLLMENTCONFIGURATIONS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEVICEENROLLMENTCONFIGURATIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceEnrollmentConfiguration[]
@@ -270,7 +270,7 @@ Accept wildcard characters: False
 
 ### -DeviceManagementPartners
 The list of Device Management Partners configured by the tenant.
-To construct, see NOTES section for DEVICEMANAGEMENTPARTNERS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEVICEMANAGEMENTPARTNERS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementPartner[]
@@ -286,7 +286,7 @@ Accept wildcard characters: False
 
 ### -ExchangeConnectors
 The list of Exchange Connectors configured by the tenant.
-To construct, see NOTES section for EXCHANGECONNECTORS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for EXCHANGECONNECTORS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementExchangeConnector[]
@@ -317,7 +317,7 @@ Accept wildcard characters: False
 
 ### -ImportedWindowsAutopilotDeviceIdentities
 Collection of imported Windows autopilot devices.
-To construct, see NOTES section for IMPORTEDWINDOWSAUTOPILOTDEVICEIDENTITIES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for IMPORTEDWINDOWSAUTOPILOTDEVICEIDENTITIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity[]
@@ -348,7 +348,7 @@ Accept wildcard characters: False
 
 ### -IntuneBrand
 intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal.
-To construct, see NOTES section for INTUNEBRAND properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INTUNEBRAND properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIntuneBrand
@@ -364,7 +364,7 @@ Accept wildcard characters: False
 
 ### -IosUpdateStatuses
 The IOS software update installation statuses for this account.
-To construct, see NOTES section for IOSUPDATESTATUSES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for IOSUPDATESTATUSES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIosUpdateDeviceStatus[]
@@ -380,7 +380,7 @@ Accept wildcard characters: False
 
 ### -ManagedDeviceOverview
 Summary data for managed devices
-To construct, see NOTES section for MANAGEDDEVICEOVERVIEW properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for MANAGEDDEVICEOVERVIEW properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphManagedDeviceOverview
@@ -396,10 +396,10 @@ Accept wildcard characters: False
 
 ### -ManagedDevices
 The list of managed devices.
-To construct, see NOTES section for MANAGEDDEVICES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for MANAGEDDEVICES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedDevice1[]
+Type: IMicrosoftGraphManagedDevice[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -412,7 +412,7 @@ Accept wildcard characters: False
 
 ### -MobileThreatDefenseConnectors
 The list of Mobile threat Defense connectors configured by the tenant.
-To construct, see NOTES section for MOBILETHREATDEFENSECONNECTORS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for MOBILETHREATDEFENSECONNECTORS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMobileThreatDefenseConnector[]
@@ -428,7 +428,7 @@ Accept wildcard characters: False
 
 ### -NotificationMessageTemplates
 The Notification Message Templates.
-To construct, see NOTES section for NOTIFICATIONMESSAGETEMPLATES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for NOTIFICATIONMESSAGETEMPLATES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphNotificationMessageTemplate[]
@@ -459,7 +459,7 @@ Accept wildcard characters: False
 
 ### -RemoteAssistancePartners
 The remote assist partners.
-To construct, see NOTES section for REMOTEASSISTANCEPARTNERS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for REMOTEASSISTANCEPARTNERS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRemoteAssistancePartner[]
@@ -473,9 +473,25 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Reports
+Singleton entity that acts as a container for all reports functionality.
+To construct, please use Get-Help -Online and see NOTES section for REPORTS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphDeviceManagementReports
+Parameter Sets: UpdateExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ResourceOperations
 The Resource Operations.
-To construct, see NOTES section for RESOURCEOPERATIONS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for RESOURCEOPERATIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphResourceOperation[]
@@ -491,7 +507,7 @@ Accept wildcard characters: False
 
 ### -RoleAssignments
 The Role Assignments.
-To construct, see NOTES section for ROLEASSIGNMENTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ROLEASSIGNMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceAndAppManagementRoleAssignment[]
@@ -507,7 +523,7 @@ Accept wildcard characters: False
 
 ### -RoleDefinitions
 The Role Definitions.
-To construct, see NOTES section for ROLEDEFINITIONS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ROLEDEFINITIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRoleDefinition[]
@@ -523,7 +539,7 @@ Accept wildcard characters: False
 
 ### -Settings
 deviceManagementSettings
-To construct, see NOTES section for SETTINGS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SETTINGS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementSettings
@@ -539,7 +555,7 @@ Accept wildcard characters: False
 
 ### -SoftwareUpdateStatusSummary
 softwareUpdateStatusSummary
-To construct, see NOTES section for SOFTWAREUPDATESTATUSSUMMARY properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SOFTWAREUPDATESTATUSSUMMARY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSoftwareUpdateStatusSummary
@@ -554,7 +570,7 @@ Accept wildcard characters: False
 ```
 
 ### -SubscriptionState
-deviceManagementSubscriptionState
+Tenant mobile device management subscription state.
 
 ```yaml
 Type: String
@@ -570,7 +586,7 @@ Accept wildcard characters: False
 
 ### -TelecomExpenseManagementPartners
 The telecom expense management partners.
-To construct, see NOTES section for TELECOMEXPENSEMANAGEMENTPARTNERS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for TELECOMEXPENSEMANAGEMENTPARTNERS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTelecomExpenseManagementPartner[]
@@ -586,7 +602,7 @@ Accept wildcard characters: False
 
 ### -TermsAndConditions
 The terms and conditions associated with device management of the company.
-To construct, see NOTES section for TERMSANDCONDITIONS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for TERMSANDCONDITIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTermsAndConditions1[]
@@ -602,7 +618,7 @@ Accept wildcard characters: False
 
 ### -TroubleshootingEvents
 The list of troubleshooting events for the tenant.
-To construct, see NOTES section for TROUBLESHOOTINGEVENTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for TROUBLESHOOTINGEVENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementTroubleshootingEvent[]
@@ -618,7 +634,7 @@ Accept wildcard characters: False
 
 ### -WindowsAutopilotDeviceIdentities
 The Windows autopilot device identities contained collection.
-To construct, see NOTES section for WINDOWSAUTOPILOTDEVICEIDENTITIES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for WINDOWSAUTOPILOTDEVICEIDENTITIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphWindowsAutopilotDeviceIdentity[]
@@ -634,7 +650,7 @@ Accept wildcard characters: False
 
 ### -WindowsInformationProtectionAppLearningSummaries
 The windows information protection app learning summaries.
-To construct, see NOTES section for WINDOWSINFORMATIONPROTECTIONAPPLEARNINGSUMMARIES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for WINDOWSINFORMATIONPROTECTIONAPPLEARNINGSUMMARIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphWindowsInformationProtectionAppLearningSummary[]
@@ -650,7 +666,7 @@ Accept wildcard characters: False
 
 ### -WindowsInformationProtectionNetworkLearningSummaries
 The windows information protection network learning summaries.
-To construct, see NOTES section for WINDOWSINFORMATIONPROTECTIONNETWORKLEARNINGSUMMARIES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for WINDOWSINFORMATIONPROTECTIONNETWORKLEARNINGSUMMARIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphWindowsInformationProtectionNetworkLearningSummary[]
@@ -747,7 +763,7 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagement1>: Singleton entity that acts as 
     - `[LastHeartbeatDateTime <DateTime?>]`: Timestamp of last heartbeat after admin onboarded to the compliance management partner
     - `[MacOSEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment[]>]`: User groups which enroll Mac devices through partner.
     - `[MacOSOnboarded <Boolean?>]`: Partner onboarded for Mac devices.
-    - `[PartnerState <String>]`: deviceManagementPartnerTenantState
+    - `[PartnerState <String>]`: Partner state of this tenant.
   - `[ConditionalAccessSettings <IMicrosoftGraphOnPremisesConditionalAccessSettings>]`: Singleton entity which represents the Exchange OnPremises Conditional Access Settings for a tenant.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: Read-only.
@@ -755,18 +771,18 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagement1>: Singleton entity that acts as 
     - `[ExcludedGroups <String[]>]`: User groups that will be exempt by on premises conditional access. All users in these groups will be exempt from the conditional access policy.
     - `[IncludedGroups <String[]>]`: User groups that will be targeted by on premises conditional access. All users in these groups will be required to have mobile device managed and compliant for mail access.
     - `[OverrideDefaultRule <Boolean?>]`: Override the default access rule when allowing a device to ensure access is granted.
-  - `[DetectedApps <IMicrosoftGraphDetectedApp1[]>]`: The list of detected apps associated with a device.
+  - `[DetectedApps <IMicrosoftGraphDetectedApp[]>]`: The list of detected apps associated with a device.
     - `[Id <String>]`: Read-only.
     - `[DeviceCount <Int32?>]`: The number of devices that have installed this application
     - `[DisplayName <String>]`: Name of the discovered application. Read-only
-    - `[ManagedDevices <IMicrosoftGraphManagedDevice1[]>]`: The devices that have the discovered application installed
+    - `[ManagedDevices <IMicrosoftGraphManagedDevice[]>]`: The devices that have the discovered application installed
       - `[Id <String>]`: Read-only.
       - `[ActivationLockBypassCode <String>]`: Code that allows the Activation Lock on a device to be bypassed. This property is read-only.
       - `[AndroidSecurityPatchLevel <String>]`: Android security patch level. This property is read-only.
       - `[AzureAdDeviceId <String>]`: The unique identifier for the Azure Active Directory device. Read only. This property is read-only.
       - `[AzureAdRegistered <Boolean?>]`: Whether the device is Azure Active Directory registered. This property is read-only.
       - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires. This property is read-only.
-      - `[ComplianceState <String>]`: complianceState
+      - `[ComplianceState <String>]`: Compliance state.
       - `[ConfigurationManagerClientEnabledFeatures <IMicrosoftGraphConfigurationManagerClientEnabledFeatures>]`: configuration Manager client enabled features
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[CompliancePolicy <Boolean?>]`: Whether compliance policy is managed by Intune
@@ -777,7 +793,7 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagement1>: Singleton entity that acts as 
         - `[WindowsUpdateForBusiness <Boolean?>]`: Whether Windows Update for Business is managed by Intune
       - `[DeviceActionResults <IMicrosoftGraphDeviceActionResult[]>]`: List of ComplexType deviceActionResult objects. This property is read-only.
         - `[ActionName <String>]`: Action name
-        - `[ActionState <String>]`: actionState
+        - `[ActionState <String>]`: State of the action on the device
         - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
         - `[StartDateTime <DateTime?>]`: Time the action was initiated
       - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
@@ -789,7 +805,7 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagement1>: Singleton entity that acts as 
       - `[DeviceCompliancePolicyStates <IMicrosoftGraphDeviceCompliancePolicyState[]>]`: Device compliance policy states for this device.
         - `[Id <String>]`: Read-only.
         - `[DisplayName <String>]`: The name of the policy for this policyBase
-        - `[PlatformType <String>]`: 
+        - `[PlatformType <String>]`: Supported platform types for policies.
         - `[SettingCount <Int32?>]`: Count of how many setting a policy holds
         - `[SettingStates <IMicrosoftGraphDeviceCompliancePolicySettingState[]>]`: 
           - `[CurrentValue <String>]`: Current value of setting on device
@@ -801,6 +817,7 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagement1>: Singleton entity that acts as 
           - `[Sources <IMicrosoftGraphSettingSource[]>]`: Contributing policies
             - `[DisplayName <String>]`: Not yet documented
             - `[Id <String>]`: Not yet documented
+            - `[SourceType <String>]`: settingSourceType
           - `[State <String>]`: complianceStatus
           - `[UserEmail <String>]`: UserEmail
           - `[UserId <String>]`: UserId
@@ -811,7 +828,7 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagement1>: Singleton entity that acts as 
       - `[DeviceConfigurationStates <IMicrosoftGraphDeviceConfigurationState[]>]`: Device configuration states for this device.
         - `[Id <String>]`: Read-only.
         - `[DisplayName <String>]`: The name of the policy for this policyBase
-        - `[PlatformType <String>]`: 
+        - `[PlatformType <String>]`: Supported platform types for policies.
         - `[SettingCount <Int32?>]`: Count of how many setting a policy holds
         - `[SettingStates <IMicrosoftGraphDeviceConfigurationSettingState[]>]`: 
           - `[CurrentValue <String>]`: Current value of setting on device
@@ -828,7 +845,7 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagement1>: Singleton entity that acts as 
           - `[UserPrincipalName <String>]`: UserPrincipalName.
         - `[State <String>]`: complianceStatus
         - `[Version <Int32?>]`: The version of the policy
-      - `[DeviceEnrollmentType <String>]`: 
+      - `[DeviceEnrollmentType <String>]`: Possible ways of adding a mobile device to management.
       - `[DeviceHealthAttestationState <IMicrosoftGraphDeviceHealthAttestationState>]`: deviceHealthAttestationState
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[AttestationIdentityKey <String>]`: TWhen an Attestation Identity Key (AIK) is present on a device, it indicates that the device has an endorsement key (EK) certificate.
@@ -864,15 +881,15 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagement1>: Singleton entity that acts as 
         - `[VirtualSecureMode <String>]`: VSM is a container that protects high value assets from a compromised kernel
         - `[WindowsPe <String>]`: Operating system running with limited services that is used to prepare a computer for Windows
       - `[DeviceName <String>]`: Name of the device. This property is read-only.
-      - `[DeviceRegistrationState <String>]`: deviceRegistrationState
+      - `[DeviceRegistrationState <String>]`: Device registration status.
       - `[EasActivated <Boolean?>]`: Whether the device is Exchange ActiveSync activated. This property is read-only.
       - `[EasActivationDateTime <DateTime?>]`: Exchange ActivationSync activation time of the device. This property is read-only.
       - `[EasDeviceId <String>]`: Exchange ActiveSync Id of the device. This property is read-only.
       - `[EmailAddress <String>]`: Email(s) for the user associated with the device. This property is read-only.
       - `[EnrolledDateTime <DateTime?>]`: Enrollment time of the device. This property is read-only.
       - `[EthernetMacAddress <String>]`: Ethernet MAC. This property is read-only.
-      - `[ExchangeAccessState <String>]`: deviceManagementExchangeAccessState
-      - `[ExchangeAccessStateReason <String>]`: deviceManagementExchangeAccessStateReason
+      - `[ExchangeAccessState <String>]`: Device Exchange Access State.
+      - `[ExchangeAccessStateReason <String>]`: Device Exchange Access State Reason.
       - `[ExchangeLastSuccessfulSyncDateTime <DateTime?>]`: Last time the device contacted Exchange. This property is read-only.
       - `[FreeStorageSpaceInBytes <Int64?>]`: Free Storage in Bytes. This property is read-only.
       - `[Iccid <String>]`: Integrated Circuit Card Identifier, it is A SIM card's unique identification number. This property is read-only.
@@ -882,15 +899,15 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagement1>: Singleton entity that acts as 
       - `[JailBroken <String>]`: whether the device is jail broken or rooted. This property is read-only.
       - `[LastSyncDateTime <DateTime?>]`: The date and time that the device last completed a successful sync with Intune. This property is read-only.
       - `[ManagedDeviceName <String>]`: Automatically generated name to identify a device. Can be overwritten to a user friendly name.
-      - `[ManagedDeviceOwnerType <String>]`: managedDeviceOwnerType
-      - `[ManagementAgent <String>]`: 
+      - `[ManagedDeviceOwnerType <String>]`: Owner type of device.
+      - `[ManagementAgent <String>]`: Management agent type.
       - `[Manufacturer <String>]`: Manufacturer of the device. This property is read-only.
       - `[Meid <String>]`: MEID. This property is read-only.
       - `[Model <String>]`: Model of the device. This property is read-only.
       - `[Notes <String>]`: Notes on the device created by IT Admin
       - `[OSVersion <String>]`: Operating system version of the device. This property is read-only.
       - `[OperatingSystem <String>]`: Operating system of the device. Windows, iOS, etc. This property is read-only.
-      - `[PartnerReportedThreatState <String>]`: managedDevicePartnerReportedHealthState
+      - `[PartnerReportedThreatState <String>]`: Available health states for the Device Health API
       - `[PhoneNumber <String>]`: Phone number of the device. This property is read-only.
       - `[PhysicalMemoryInBytes <Int64?>]`: Total Memory in Bytes. This property is read-only.
       - `[RemoteAssistanceSessionErrorDetails <String>]`: An error string that identifies issues when creating Remote Assistance session objects. This property is read-only.
@@ -947,10 +964,10 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagement1>: Singleton entity that acts as 
     - `[LastModifiedDateTime <DateTime?>]`: DateTime the object was last modified.
     - `[ScheduledActionsForRule <IMicrosoftGraphDeviceComplianceScheduledActionForRule[]>]`: The list of scheduled action for this rule
       - `[Id <String>]`: Read-only.
-      - `[RuleName <String>]`: Name of the rule which this scheduled action applies to.
-      - `[ScheduledActionConfigurations <IMicrosoftGraphDeviceComplianceActionItem[]>]`: The list of scheduled action configurations for this compliance policy.
+      - `[RuleName <String>]`: Name of the rule which this scheduled action applies to. Currently scheduled actions are created per policy instead of per rule, thus RuleName is always set to default value PasswordRequired.
+      - `[ScheduledActionConfigurations <IMicrosoftGraphDeviceComplianceActionItem[]>]`: The list of scheduled action configurations for this compliance policy. Compliance policy must have one and only one block scheduled action.
         - `[Id <String>]`: Read-only.
-        - `[ActionType <String>]`: 
+        - `[ActionType <String>]`: Scheduled Action Type Enum
         - `[GracePeriodHours <Int32?>]`: Number of hours to wait till the action will be enforced. Valid values 0 to 8760
         - `[NotificationMessageCcList <String[]>]`: A list of group IDs to speicify who to CC this notification message to.
         - `[NotificationTemplateId <String>]`: What notification Message template to use
@@ -1004,7 +1021,7 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagement1>: Singleton entity that acts as 
     - `[ErrorDeviceCount <Int32?>]`: Number of error devices
     - `[NonCompliantDeviceCount <Int32?>]`: Number of NonCompliant devices
     - `[NotApplicableDeviceCount <Int32?>]`: Number of not applicable devices
-    - `[PlatformType <String>]`: 
+    - `[PlatformType <String>]`: Supported platform types for policies.
     - `[RemediatedDeviceCount <Int32?>]`: Number of remediated devices
     - `[Setting <String>]`: The setting class name and property name.
     - `[SettingName <String>]`: Name of the setting.
@@ -1082,8 +1099,8 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagement1>: Singleton entity that acts as 
     - `[DisplayName <String>]`: Partner display name
     - `[IsConfigured <Boolean?>]`: Whether device management partner is configured or not
     - `[LastHeartbeatDateTime <DateTime?>]`: Timestamp of last heartbeat after admin enabled option Connect to Device management Partner
-    - `[PartnerAppType <String>]`: deviceManagementPartnerAppType
-    - `[PartnerState <String>]`: deviceManagementPartnerTenantState
+    - `[PartnerAppType <String>]`: Partner App Type.
+    - `[PartnerState <String>]`: Partner state of this tenant.
     - `[SingleTenantAppId <String>]`: Partner Single tenant App id
     - `[WhenPartnerDevicesWillBeMarkedAsNonCompliantDateTime <DateTime?>]`: DateTime in UTC when PartnerDevices will be marked as NonCompliant
     - `[WhenPartnerDevicesWillBeRemovedDateTime <DateTime?>]`: DateTime in UTC when PartnerDevices will be removed
@@ -1091,12 +1108,12 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagement1>: Singleton entity that acts as 
     - `[Id <String>]`: Read-only.
     - `[ConnectorServerName <String>]`: The name of the server hosting the Exchange Connector.
     - `[ExchangeAlias <String>]`: An alias assigned to the Exchange server
-    - `[ExchangeConnectorType <String>]`: deviceManagementExchangeConnectorType
+    - `[ExchangeConnectorType <String>]`: The type of Exchange Connector.
     - `[ExchangeOrganization <String>]`: Exchange Organization to the Exchange server
     - `[LastSyncDateTime <DateTime?>]`: Last sync time for the Exchange Connector
     - `[PrimarySmtpAddress <String>]`: Email address used to configure the Service To Service Exchange Connector.
     - `[ServerName <String>]`: The name of the Exchange server.
-    - `[Status <String>]`: deviceManagementExchangeConnectorStatus
+    - `[Status <String>]`: The current status of the Exchange Connector.
     - `[Version <String>]`: The version of the ExchangeConnectorAgent
   - `[ImportedWindowsAutopilotDeviceIdentities <IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity[]>]`: Collection of imported Windows autopilot devices.
     - `[Id <String>]`: Read-only.
@@ -1170,7 +1187,7 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagement1>: Singleton entity that acts as 
     - `[DualEnrolledDeviceCount <Int32?>]`: The number of devices enrolled in both MDM and EAS
     - `[EnrolledDeviceCount <Int32?>]`: Total enrolled device count. Does not include PC devices managed via Intune PC Agent
     - `[MdmEnrolledCount <Int32?>]`: The number of devices enrolled in MDM
-  - `[ManagedDevices <IMicrosoftGraphManagedDevice1[]>]`: The list of managed devices.
+  - `[ManagedDevices <IMicrosoftGraphManagedDevice[]>]`: The list of managed devices.
   - `[MobileThreatDefenseConnectors <IMicrosoftGraphMobileThreatDefenseConnector[]>]`: The list of Mobile threat Defense connectors configured by the tenant.
     - `[Id <String>]`: Read-only.
     - `[AndroidDeviceBlockedOnMissingPartnerData <Boolean?>]`: For Android, set whether Intune must receive data from the data sync partner prior to marking a device compliant
@@ -1178,12 +1195,12 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagement1>: Singleton entity that acts as 
     - `[IosDeviceBlockedOnMissingPartnerData <Boolean?>]`: For IOS, set whether Intune must receive data from the data sync partner prior to marking a device compliant
     - `[IosEnabled <Boolean?>]`: For IOS, get or set whether data from the data sync partner should be used during compliance evaluations
     - `[LastHeartbeatDateTime <DateTime?>]`: DateTime of last Heartbeat recieved from the Data Sync Partner
-    - `[PartnerState <String>]`: mobileThreatPartnerTenantState
+    - `[PartnerState <String>]`: Partner state of this tenant.
     - `[PartnerUnresponsivenessThresholdInDays <Int32?>]`: Get or Set days the per tenant tolerance to unresponsiveness for this partner integration
     - `[PartnerUnsupportedOSVersionBlocked <Boolean?>]`: Get or set whether to block devices on the enabled platforms that do not meet the minimum version requirements of the Data Sync Partner
   - `[NotificationMessageTemplates <IMicrosoftGraphNotificationMessageTemplate[]>]`: The Notification Message Templates.
     - `[Id <String>]`: Read-only.
-    - `[BrandingOptions <String>]`: 
+    - `[BrandingOptions <String>]`: Branding Options for the Message Template. Branding is defined in the Intune Admin Console.
     - `[DefaultLocale <String>]`: The default locale to fallback onto when the requested locale is not available.
     - `[DisplayName <String>]`: Display name for the Notification Message Template.
     - `[LastModifiedDateTime <DateTime?>]`: DateTime the object was last modified.
@@ -1198,8 +1215,23 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagement1>: Singleton entity that acts as 
     - `[Id <String>]`: Read-only.
     - `[DisplayName <String>]`: Display name of the partner.
     - `[LastConnectionDateTime <DateTime?>]`: Timestamp of the last request sent to Intune by the TEM partner.
-    - `[OnboardingStatus <String>]`: remoteAssistanceOnboardingStatus
+    - `[OnboardingStatus <String>]`: The current TeamViewer connector status
     - `[OnboardingUrl <String>]`: URL of the partner's onboarding portal, where an administrator can configure their Remote Assistance service.
+  - `[Reports <IMicrosoftGraphDeviceManagementReports>]`: Singleton entity that acts as a container for all reports functionality.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: Read-only.
+    - `[ExportJobs <IMicrosoftGraphDeviceManagementExportJob[]>]`: Entity representing a job to export a report
+      - `[Id <String>]`: Read-only.
+      - `[ExpirationDateTime <DateTime?>]`: Time that the exported report expires
+      - `[Filter <String>]`: Filters applied on the report
+      - `[Format <String>]`: Possible values for the file format of a report
+      - `[LocalizationType <String>]`: Configures how the requested export job is localized
+      - `[ReportName <String>]`: Name of the report
+      - `[RequestDateTime <DateTime?>]`: Time that the exported report was requested
+      - `[Select <String[]>]`: Columns selected from the report
+      - `[SnapshotId <String>]`: A snapshot is an identifiable subset of the dataset represented by the ReportName. A sessionId or CachedReportConfiguration id can be used here. If a sessionId is specified, Filter, Select, and OrderBy are applied to the data represented by the sessionId. Filter, Select, and OrderBy cannot be specified together with a CachedReportConfiguration id.
+      - `[Status <String>]`: Possible statuses associated with a generated report
+      - `[Url <String>]`: Temporary location of the exported report
   - `[ResourceOperations <IMicrosoftGraphResourceOperation[]>]`: The Resource Operations.
     - `[Id <String>]`: Read-only.
     - `[ActionName <String>]`: Type of action this operation is going to perform. The actionName should be concise and limited to as few words as possible.
@@ -1251,7 +1283,7 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagement1>: Singleton entity that acts as 
     - `[RemediatedUserCount <Int32?>]`: Number of remediated users.
     - `[UnknownDeviceCount <Int32?>]`: Number of unknown devices.
     - `[UnknownUserCount <Int32?>]`: Number of unknown users.
-  - `[SubscriptionState <String>]`: deviceManagementSubscriptionState
+  - `[SubscriptionState <String>]`: Tenant mobile device management subscription state.
   - `[TelecomExpenseManagementPartners <IMicrosoftGraphTelecomExpenseManagementPartner[]>]`: The telecom expense management partners.
     - `[Id <String>]`: Read-only.
     - `[AppAuthorized <Boolean?>]`: Whether the partner's AAD app has been authorized to access Intune.
@@ -1304,7 +1336,7 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagement1>: Singleton entity that acts as 
   - `[WindowsInformationProtectionAppLearningSummaries <IMicrosoftGraphWindowsInformationProtectionAppLearningSummary[]>]`: The windows information protection app learning summaries.
     - `[Id <String>]`: Read-only.
     - `[ApplicationName <String>]`: Application Name
-    - `[ApplicationType <String>]`: applicationType
+    - `[ApplicationType <String>]`: Possible types of Application
     - `[DeviceCount <Int32?>]`: Device Count
   - `[WindowsInformationProtectionNetworkLearningSummaries <IMicrosoftGraphWindowsInformationProtectionNetworkLearningSummary[]>]`: The windows information protection network learning summaries.
     - `[Id <String>]`: Read-only.
@@ -1323,7 +1355,7 @@ COMPLIANCEMANAGEMENTPARTNERS <IMicrosoftGraphComplianceManagementPartner[]>: The
   - `[LastHeartbeatDateTime <DateTime?>]`: Timestamp of last heartbeat after admin onboarded to the compliance management partner
   - `[MacOSEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment[]>]`: User groups which enroll Mac devices through partner.
   - `[MacOSOnboarded <Boolean?>]`: Partner onboarded for Mac devices.
-  - `[PartnerState <String>]`: deviceManagementPartnerTenantState
+  - `[PartnerState <String>]`: Partner state of this tenant.
 
 CONDITIONALACCESSSETTINGS <IMicrosoftGraphOnPremisesConditionalAccessSettings>: Singleton entity which represents the Exchange OnPremises Conditional Access Settings for a tenant.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1333,18 +1365,18 @@ CONDITIONALACCESSSETTINGS <IMicrosoftGraphOnPremisesConditionalAccessSettings>: 
   - `[IncludedGroups <String[]>]`: User groups that will be targeted by on premises conditional access. All users in these groups will be required to have mobile device managed and compliant for mail access.
   - `[OverrideDefaultRule <Boolean?>]`: Override the default access rule when allowing a device to ensure access is granted.
 
-DETECTEDAPPS <IMicrosoftGraphDetectedApp1[]>: The list of detected apps associated with a device.
+DETECTEDAPPS <IMicrosoftGraphDetectedApp[]>: The list of detected apps associated with a device.
   - `[Id <String>]`: Read-only.
   - `[DeviceCount <Int32?>]`: The number of devices that have installed this application
   - `[DisplayName <String>]`: Name of the discovered application. Read-only
-  - `[ManagedDevices <IMicrosoftGraphManagedDevice1[]>]`: The devices that have the discovered application installed
+  - `[ManagedDevices <IMicrosoftGraphManagedDevice[]>]`: The devices that have the discovered application installed
     - `[Id <String>]`: Read-only.
     - `[ActivationLockBypassCode <String>]`: Code that allows the Activation Lock on a device to be bypassed. This property is read-only.
     - `[AndroidSecurityPatchLevel <String>]`: Android security patch level. This property is read-only.
     - `[AzureAdDeviceId <String>]`: The unique identifier for the Azure Active Directory device. Read only. This property is read-only.
     - `[AzureAdRegistered <Boolean?>]`: Whether the device is Azure Active Directory registered. This property is read-only.
     - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires. This property is read-only.
-    - `[ComplianceState <String>]`: complianceState
+    - `[ComplianceState <String>]`: Compliance state.
     - `[ConfigurationManagerClientEnabledFeatures <IMicrosoftGraphConfigurationManagerClientEnabledFeatures>]`: configuration Manager client enabled features
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CompliancePolicy <Boolean?>]`: Whether compliance policy is managed by Intune
@@ -1355,7 +1387,7 @@ DETECTEDAPPS <IMicrosoftGraphDetectedApp1[]>: The list of detected apps associat
       - `[WindowsUpdateForBusiness <Boolean?>]`: Whether Windows Update for Business is managed by Intune
     - `[DeviceActionResults <IMicrosoftGraphDeviceActionResult[]>]`: List of ComplexType deviceActionResult objects. This property is read-only.
       - `[ActionName <String>]`: Action name
-      - `[ActionState <String>]`: actionState
+      - `[ActionState <String>]`: State of the action on the device
       - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
       - `[StartDateTime <DateTime?>]`: Time the action was initiated
     - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
@@ -1367,7 +1399,7 @@ DETECTEDAPPS <IMicrosoftGraphDetectedApp1[]>: The list of detected apps associat
     - `[DeviceCompliancePolicyStates <IMicrosoftGraphDeviceCompliancePolicyState[]>]`: Device compliance policy states for this device.
       - `[Id <String>]`: Read-only.
       - `[DisplayName <String>]`: The name of the policy for this policyBase
-      - `[PlatformType <String>]`: 
+      - `[PlatformType <String>]`: Supported platform types for policies.
       - `[SettingCount <Int32?>]`: Count of how many setting a policy holds
       - `[SettingStates <IMicrosoftGraphDeviceCompliancePolicySettingState[]>]`: 
         - `[CurrentValue <String>]`: Current value of setting on device
@@ -1379,6 +1411,7 @@ DETECTEDAPPS <IMicrosoftGraphDetectedApp1[]>: The list of detected apps associat
         - `[Sources <IMicrosoftGraphSettingSource[]>]`: Contributing policies
           - `[DisplayName <String>]`: Not yet documented
           - `[Id <String>]`: Not yet documented
+          - `[SourceType <String>]`: settingSourceType
         - `[State <String>]`: complianceStatus
         - `[UserEmail <String>]`: UserEmail
         - `[UserId <String>]`: UserId
@@ -1389,7 +1422,7 @@ DETECTEDAPPS <IMicrosoftGraphDetectedApp1[]>: The list of detected apps associat
     - `[DeviceConfigurationStates <IMicrosoftGraphDeviceConfigurationState[]>]`: Device configuration states for this device.
       - `[Id <String>]`: Read-only.
       - `[DisplayName <String>]`: The name of the policy for this policyBase
-      - `[PlatformType <String>]`: 
+      - `[PlatformType <String>]`: Supported platform types for policies.
       - `[SettingCount <Int32?>]`: Count of how many setting a policy holds
       - `[SettingStates <IMicrosoftGraphDeviceConfigurationSettingState[]>]`: 
         - `[CurrentValue <String>]`: Current value of setting on device
@@ -1406,7 +1439,7 @@ DETECTEDAPPS <IMicrosoftGraphDetectedApp1[]>: The list of detected apps associat
         - `[UserPrincipalName <String>]`: UserPrincipalName.
       - `[State <String>]`: complianceStatus
       - `[Version <Int32?>]`: The version of the policy
-    - `[DeviceEnrollmentType <String>]`: 
+    - `[DeviceEnrollmentType <String>]`: Possible ways of adding a mobile device to management.
     - `[DeviceHealthAttestationState <IMicrosoftGraphDeviceHealthAttestationState>]`: deviceHealthAttestationState
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AttestationIdentityKey <String>]`: TWhen an Attestation Identity Key (AIK) is present on a device, it indicates that the device has an endorsement key (EK) certificate.
@@ -1442,15 +1475,15 @@ DETECTEDAPPS <IMicrosoftGraphDetectedApp1[]>: The list of detected apps associat
       - `[VirtualSecureMode <String>]`: VSM is a container that protects high value assets from a compromised kernel
       - `[WindowsPe <String>]`: Operating system running with limited services that is used to prepare a computer for Windows
     - `[DeviceName <String>]`: Name of the device. This property is read-only.
-    - `[DeviceRegistrationState <String>]`: deviceRegistrationState
+    - `[DeviceRegistrationState <String>]`: Device registration status.
     - `[EasActivated <Boolean?>]`: Whether the device is Exchange ActiveSync activated. This property is read-only.
     - `[EasActivationDateTime <DateTime?>]`: Exchange ActivationSync activation time of the device. This property is read-only.
     - `[EasDeviceId <String>]`: Exchange ActiveSync Id of the device. This property is read-only.
     - `[EmailAddress <String>]`: Email(s) for the user associated with the device. This property is read-only.
     - `[EnrolledDateTime <DateTime?>]`: Enrollment time of the device. This property is read-only.
     - `[EthernetMacAddress <String>]`: Ethernet MAC. This property is read-only.
-    - `[ExchangeAccessState <String>]`: deviceManagementExchangeAccessState
-    - `[ExchangeAccessStateReason <String>]`: deviceManagementExchangeAccessStateReason
+    - `[ExchangeAccessState <String>]`: Device Exchange Access State.
+    - `[ExchangeAccessStateReason <String>]`: Device Exchange Access State Reason.
     - `[ExchangeLastSuccessfulSyncDateTime <DateTime?>]`: Last time the device contacted Exchange. This property is read-only.
     - `[FreeStorageSpaceInBytes <Int64?>]`: Free Storage in Bytes. This property is read-only.
     - `[Iccid <String>]`: Integrated Circuit Card Identifier, it is A SIM card's unique identification number. This property is read-only.
@@ -1460,15 +1493,15 @@ DETECTEDAPPS <IMicrosoftGraphDetectedApp1[]>: The list of detected apps associat
     - `[JailBroken <String>]`: whether the device is jail broken or rooted. This property is read-only.
     - `[LastSyncDateTime <DateTime?>]`: The date and time that the device last completed a successful sync with Intune. This property is read-only.
     - `[ManagedDeviceName <String>]`: Automatically generated name to identify a device. Can be overwritten to a user friendly name.
-    - `[ManagedDeviceOwnerType <String>]`: managedDeviceOwnerType
-    - `[ManagementAgent <String>]`: 
+    - `[ManagedDeviceOwnerType <String>]`: Owner type of device.
+    - `[ManagementAgent <String>]`: Management agent type.
     - `[Manufacturer <String>]`: Manufacturer of the device. This property is read-only.
     - `[Meid <String>]`: MEID. This property is read-only.
     - `[Model <String>]`: Model of the device. This property is read-only.
     - `[Notes <String>]`: Notes on the device created by IT Admin
     - `[OSVersion <String>]`: Operating system version of the device. This property is read-only.
     - `[OperatingSystem <String>]`: Operating system of the device. Windows, iOS, etc. This property is read-only.
-    - `[PartnerReportedThreatState <String>]`: managedDevicePartnerReportedHealthState
+    - `[PartnerReportedThreatState <String>]`: Available health states for the Device Health API
     - `[PhoneNumber <String>]`: Phone number of the device. This property is read-only.
     - `[PhysicalMemoryInBytes <Int64?>]`: Total Memory in Bytes. This property is read-only.
     - `[RemoteAssistanceSessionErrorDetails <String>]`: An error string that identifies issues when creating Remote Assistance session objects. This property is read-only.
@@ -1531,10 +1564,10 @@ DEVICECOMPLIANCEPOLICIES <IMicrosoftGraphDeviceCompliancePolicy[]>: The device c
   - `[LastModifiedDateTime <DateTime?>]`: DateTime the object was last modified.
   - `[ScheduledActionsForRule <IMicrosoftGraphDeviceComplianceScheduledActionForRule[]>]`: The list of scheduled action for this rule
     - `[Id <String>]`: Read-only.
-    - `[RuleName <String>]`: Name of the rule which this scheduled action applies to.
-    - `[ScheduledActionConfigurations <IMicrosoftGraphDeviceComplianceActionItem[]>]`: The list of scheduled action configurations for this compliance policy.
+    - `[RuleName <String>]`: Name of the rule which this scheduled action applies to. Currently scheduled actions are created per policy instead of per rule, thus RuleName is always set to default value PasswordRequired.
+    - `[ScheduledActionConfigurations <IMicrosoftGraphDeviceComplianceActionItem[]>]`: The list of scheduled action configurations for this compliance policy. Compliance policy must have one and only one block scheduled action.
       - `[Id <String>]`: Read-only.
-      - `[ActionType <String>]`: 
+      - `[ActionType <String>]`: Scheduled Action Type Enum
       - `[GracePeriodHours <Int32?>]`: Number of hours to wait till the action will be enforced. Valid values 0 to 8760
       - `[NotificationMessageCcList <String[]>]`: A list of group IDs to speicify who to CC this notification message to.
       - `[NotificationTemplateId <String>]`: What notification Message template to use
@@ -1590,7 +1623,7 @@ DEVICECOMPLIANCEPOLICYSETTINGSTATESUMMARIES <IMicrosoftGraphDeviceCompliancePoli
   - `[ErrorDeviceCount <Int32?>]`: Number of error devices
   - `[NonCompliantDeviceCount <Int32?>]`: Number of NonCompliant devices
   - `[NotApplicableDeviceCount <Int32?>]`: Number of not applicable devices
-  - `[PlatformType <String>]`: 
+  - `[PlatformType <String>]`: Supported platform types for policies.
   - `[RemediatedDeviceCount <Int32?>]`: Number of remediated devices
   - `[Setting <String>]`: The setting class name and property name.
   - `[SettingName <String>]`: Name of the setting.
@@ -1684,8 +1717,8 @@ DEVICEMANAGEMENTPARTNERS <IMicrosoftGraphDeviceManagementPartner[]>: The list of
   - `[DisplayName <String>]`: Partner display name
   - `[IsConfigured <Boolean?>]`: Whether device management partner is configured or not
   - `[LastHeartbeatDateTime <DateTime?>]`: Timestamp of last heartbeat after admin enabled option Connect to Device management Partner
-  - `[PartnerAppType <String>]`: deviceManagementPartnerAppType
-  - `[PartnerState <String>]`: deviceManagementPartnerTenantState
+  - `[PartnerAppType <String>]`: Partner App Type.
+  - `[PartnerState <String>]`: Partner state of this tenant.
   - `[SingleTenantAppId <String>]`: Partner Single tenant App id
   - `[WhenPartnerDevicesWillBeMarkedAsNonCompliantDateTime <DateTime?>]`: DateTime in UTC when PartnerDevices will be marked as NonCompliant
   - `[WhenPartnerDevicesWillBeRemovedDateTime <DateTime?>]`: DateTime in UTC when PartnerDevices will be removed
@@ -1694,12 +1727,12 @@ EXCHANGECONNECTORS <IMicrosoftGraphDeviceManagementExchangeConnector[]>: The lis
   - `[Id <String>]`: Read-only.
   - `[ConnectorServerName <String>]`: The name of the server hosting the Exchange Connector.
   - `[ExchangeAlias <String>]`: An alias assigned to the Exchange server
-  - `[ExchangeConnectorType <String>]`: deviceManagementExchangeConnectorType
+  - `[ExchangeConnectorType <String>]`: The type of Exchange Connector.
   - `[ExchangeOrganization <String>]`: Exchange Organization to the Exchange server
   - `[LastSyncDateTime <DateTime?>]`: Last sync time for the Exchange Connector
   - `[PrimarySmtpAddress <String>]`: Email address used to configure the Service To Service Exchange Connector.
   - `[ServerName <String>]`: The name of the Exchange server.
-  - `[Status <String>]`: deviceManagementExchangeConnectorStatus
+  - `[Status <String>]`: The current status of the Exchange Connector.
   - `[Version <String>]`: The version of the ExchangeConnectorAgent
 
 IMPORTEDWINDOWSAUTOPILOTDEVICEIDENTITIES <IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity[]>: Collection of imported Windows autopilot devices.
@@ -1777,14 +1810,14 @@ MANAGEDDEVICEOVERVIEW <IMicrosoftGraphManagedDeviceOverview>: Summary data for m
   - `[EnrolledDeviceCount <Int32?>]`: Total enrolled device count. Does not include PC devices managed via Intune PC Agent
   - `[MdmEnrolledCount <Int32?>]`: The number of devices enrolled in MDM
 
-MANAGEDDEVICES <IMicrosoftGraphManagedDevice1[]>: The list of managed devices.
+MANAGEDDEVICES <IMicrosoftGraphManagedDevice[]>: The list of managed devices.
   - `[Id <String>]`: Read-only.
   - `[ActivationLockBypassCode <String>]`: Code that allows the Activation Lock on a device to be bypassed. This property is read-only.
   - `[AndroidSecurityPatchLevel <String>]`: Android security patch level. This property is read-only.
   - `[AzureAdDeviceId <String>]`: The unique identifier for the Azure Active Directory device. Read only. This property is read-only.
   - `[AzureAdRegistered <Boolean?>]`: Whether the device is Azure Active Directory registered. This property is read-only.
   - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires. This property is read-only.
-  - `[ComplianceState <String>]`: complianceState
+  - `[ComplianceState <String>]`: Compliance state.
   - `[ConfigurationManagerClientEnabledFeatures <IMicrosoftGraphConfigurationManagerClientEnabledFeatures>]`: configuration Manager client enabled features
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CompliancePolicy <Boolean?>]`: Whether compliance policy is managed by Intune
@@ -1795,7 +1828,7 @@ MANAGEDDEVICES <IMicrosoftGraphManagedDevice1[]>: The list of managed devices.
     - `[WindowsUpdateForBusiness <Boolean?>]`: Whether Windows Update for Business is managed by Intune
   - `[DeviceActionResults <IMicrosoftGraphDeviceActionResult[]>]`: List of ComplexType deviceActionResult objects. This property is read-only.
     - `[ActionName <String>]`: Action name
-    - `[ActionState <String>]`: actionState
+    - `[ActionState <String>]`: State of the action on the device
     - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
     - `[StartDateTime <DateTime?>]`: Time the action was initiated
   - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
@@ -1807,7 +1840,7 @@ MANAGEDDEVICES <IMicrosoftGraphManagedDevice1[]>: The list of managed devices.
   - `[DeviceCompliancePolicyStates <IMicrosoftGraphDeviceCompliancePolicyState[]>]`: Device compliance policy states for this device.
     - `[Id <String>]`: Read-only.
     - `[DisplayName <String>]`: The name of the policy for this policyBase
-    - `[PlatformType <String>]`: 
+    - `[PlatformType <String>]`: Supported platform types for policies.
     - `[SettingCount <Int32?>]`: Count of how many setting a policy holds
     - `[SettingStates <IMicrosoftGraphDeviceCompliancePolicySettingState[]>]`: 
       - `[CurrentValue <String>]`: Current value of setting on device
@@ -1819,6 +1852,7 @@ MANAGEDDEVICES <IMicrosoftGraphManagedDevice1[]>: The list of managed devices.
       - `[Sources <IMicrosoftGraphSettingSource[]>]`: Contributing policies
         - `[DisplayName <String>]`: Not yet documented
         - `[Id <String>]`: Not yet documented
+        - `[SourceType <String>]`: settingSourceType
       - `[State <String>]`: complianceStatus
       - `[UserEmail <String>]`: UserEmail
       - `[UserId <String>]`: UserId
@@ -1829,7 +1863,7 @@ MANAGEDDEVICES <IMicrosoftGraphManagedDevice1[]>: The list of managed devices.
   - `[DeviceConfigurationStates <IMicrosoftGraphDeviceConfigurationState[]>]`: Device configuration states for this device.
     - `[Id <String>]`: Read-only.
     - `[DisplayName <String>]`: The name of the policy for this policyBase
-    - `[PlatformType <String>]`: 
+    - `[PlatformType <String>]`: Supported platform types for policies.
     - `[SettingCount <Int32?>]`: Count of how many setting a policy holds
     - `[SettingStates <IMicrosoftGraphDeviceConfigurationSettingState[]>]`: 
       - `[CurrentValue <String>]`: Current value of setting on device
@@ -1846,7 +1880,7 @@ MANAGEDDEVICES <IMicrosoftGraphManagedDevice1[]>: The list of managed devices.
       - `[UserPrincipalName <String>]`: UserPrincipalName.
     - `[State <String>]`: complianceStatus
     - `[Version <Int32?>]`: The version of the policy
-  - `[DeviceEnrollmentType <String>]`: 
+  - `[DeviceEnrollmentType <String>]`: Possible ways of adding a mobile device to management.
   - `[DeviceHealthAttestationState <IMicrosoftGraphDeviceHealthAttestationState>]`: deviceHealthAttestationState
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AttestationIdentityKey <String>]`: TWhen an Attestation Identity Key (AIK) is present on a device, it indicates that the device has an endorsement key (EK) certificate.
@@ -1882,15 +1916,15 @@ MANAGEDDEVICES <IMicrosoftGraphManagedDevice1[]>: The list of managed devices.
     - `[VirtualSecureMode <String>]`: VSM is a container that protects high value assets from a compromised kernel
     - `[WindowsPe <String>]`: Operating system running with limited services that is used to prepare a computer for Windows
   - `[DeviceName <String>]`: Name of the device. This property is read-only.
-  - `[DeviceRegistrationState <String>]`: deviceRegistrationState
+  - `[DeviceRegistrationState <String>]`: Device registration status.
   - `[EasActivated <Boolean?>]`: Whether the device is Exchange ActiveSync activated. This property is read-only.
   - `[EasActivationDateTime <DateTime?>]`: Exchange ActivationSync activation time of the device. This property is read-only.
   - `[EasDeviceId <String>]`: Exchange ActiveSync Id of the device. This property is read-only.
   - `[EmailAddress <String>]`: Email(s) for the user associated with the device. This property is read-only.
   - `[EnrolledDateTime <DateTime?>]`: Enrollment time of the device. This property is read-only.
   - `[EthernetMacAddress <String>]`: Ethernet MAC. This property is read-only.
-  - `[ExchangeAccessState <String>]`: deviceManagementExchangeAccessState
-  - `[ExchangeAccessStateReason <String>]`: deviceManagementExchangeAccessStateReason
+  - `[ExchangeAccessState <String>]`: Device Exchange Access State.
+  - `[ExchangeAccessStateReason <String>]`: Device Exchange Access State Reason.
   - `[ExchangeLastSuccessfulSyncDateTime <DateTime?>]`: Last time the device contacted Exchange. This property is read-only.
   - `[FreeStorageSpaceInBytes <Int64?>]`: Free Storage in Bytes. This property is read-only.
   - `[Iccid <String>]`: Integrated Circuit Card Identifier, it is A SIM card's unique identification number. This property is read-only.
@@ -1900,15 +1934,15 @@ MANAGEDDEVICES <IMicrosoftGraphManagedDevice1[]>: The list of managed devices.
   - `[JailBroken <String>]`: whether the device is jail broken or rooted. This property is read-only.
   - `[LastSyncDateTime <DateTime?>]`: The date and time that the device last completed a successful sync with Intune. This property is read-only.
   - `[ManagedDeviceName <String>]`: Automatically generated name to identify a device. Can be overwritten to a user friendly name.
-  - `[ManagedDeviceOwnerType <String>]`: managedDeviceOwnerType
-  - `[ManagementAgent <String>]`: 
+  - `[ManagedDeviceOwnerType <String>]`: Owner type of device.
+  - `[ManagementAgent <String>]`: Management agent type.
   - `[Manufacturer <String>]`: Manufacturer of the device. This property is read-only.
   - `[Meid <String>]`: MEID. This property is read-only.
   - `[Model <String>]`: Model of the device. This property is read-only.
   - `[Notes <String>]`: Notes on the device created by IT Admin
   - `[OSVersion <String>]`: Operating system version of the device. This property is read-only.
   - `[OperatingSystem <String>]`: Operating system of the device. Windows, iOS, etc. This property is read-only.
-  - `[PartnerReportedThreatState <String>]`: managedDevicePartnerReportedHealthState
+  - `[PartnerReportedThreatState <String>]`: Available health states for the Device Health API
   - `[PhoneNumber <String>]`: Phone number of the device. This property is read-only.
   - `[PhysicalMemoryInBytes <Int64?>]`: Total Memory in Bytes. This property is read-only.
   - `[RemoteAssistanceSessionErrorDetails <String>]`: An error string that identifies issues when creating Remote Assistance session objects. This property is read-only.
@@ -1929,13 +1963,13 @@ MOBILETHREATDEFENSECONNECTORS <IMicrosoftGraphMobileThreatDefenseConnector[]>: T
   - `[IosDeviceBlockedOnMissingPartnerData <Boolean?>]`: For IOS, set whether Intune must receive data from the data sync partner prior to marking a device compliant
   - `[IosEnabled <Boolean?>]`: For IOS, get or set whether data from the data sync partner should be used during compliance evaluations
   - `[LastHeartbeatDateTime <DateTime?>]`: DateTime of last Heartbeat recieved from the Data Sync Partner
-  - `[PartnerState <String>]`: mobileThreatPartnerTenantState
+  - `[PartnerState <String>]`: Partner state of this tenant.
   - `[PartnerUnresponsivenessThresholdInDays <Int32?>]`: Get or Set days the per tenant tolerance to unresponsiveness for this partner integration
   - `[PartnerUnsupportedOSVersionBlocked <Boolean?>]`: Get or set whether to block devices on the enabled platforms that do not meet the minimum version requirements of the Data Sync Partner
 
 NOTIFICATIONMESSAGETEMPLATES <IMicrosoftGraphNotificationMessageTemplate[]>: The Notification Message Templates.
   - `[Id <String>]`: Read-only.
-  - `[BrandingOptions <String>]`: 
+  - `[BrandingOptions <String>]`: Branding Options for the Message Template. Branding is defined in the Intune Admin Console.
   - `[DefaultLocale <String>]`: The default locale to fallback onto when the requested locale is not available.
   - `[DisplayName <String>]`: Display name for the Notification Message Template.
   - `[LastModifiedDateTime <DateTime?>]`: DateTime the object was last modified.
@@ -1951,8 +1985,24 @@ REMOTEASSISTANCEPARTNERS <IMicrosoftGraphRemoteAssistancePartner[]>: The remote 
   - `[Id <String>]`: Read-only.
   - `[DisplayName <String>]`: Display name of the partner.
   - `[LastConnectionDateTime <DateTime?>]`: Timestamp of the last request sent to Intune by the TEM partner.
-  - `[OnboardingStatus <String>]`: remoteAssistanceOnboardingStatus
+  - `[OnboardingStatus <String>]`: The current TeamViewer connector status
   - `[OnboardingUrl <String>]`: URL of the partner's onboarding portal, where an administrator can configure their Remote Assistance service.
+
+REPORTS <IMicrosoftGraphDeviceManagementReports>: Singleton entity that acts as a container for all reports functionality.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: Read-only.
+  - `[ExportJobs <IMicrosoftGraphDeviceManagementExportJob[]>]`: Entity representing a job to export a report
+    - `[Id <String>]`: Read-only.
+    - `[ExpirationDateTime <DateTime?>]`: Time that the exported report expires
+    - `[Filter <String>]`: Filters applied on the report
+    - `[Format <String>]`: Possible values for the file format of a report
+    - `[LocalizationType <String>]`: Configures how the requested export job is localized
+    - `[ReportName <String>]`: Name of the report
+    - `[RequestDateTime <DateTime?>]`: Time that the exported report was requested
+    - `[Select <String[]>]`: Columns selected from the report
+    - `[SnapshotId <String>]`: A snapshot is an identifiable subset of the dataset represented by the ReportName. A sessionId or CachedReportConfiguration id can be used here. If a sessionId is specified, Filter, Select, and OrderBy are applied to the data represented by the sessionId. Filter, Select, and OrderBy cannot be specified together with a CachedReportConfiguration id.
+    - `[Status <String>]`: Possible statuses associated with a generated report
+    - `[Url <String>]`: Temporary location of the exported report
 
 RESOURCEOPERATIONS <IMicrosoftGraphResourceOperation[]>: The Resource Operations.
   - `[Id <String>]`: Read-only.
@@ -2081,7 +2131,7 @@ WINDOWSAUTOPILOTDEVICEIDENTITIES <IMicrosoftGraphWindowsAutopilotDeviceIdentity[
 WINDOWSINFORMATIONPROTECTIONAPPLEARNINGSUMMARIES <IMicrosoftGraphWindowsInformationProtectionAppLearningSummary[]>: The windows information protection app learning summaries.
   - `[Id <String>]`: Read-only.
   - `[ApplicationName <String>]`: Application Name
-  - `[ApplicationType <String>]`: applicationType
+  - `[ApplicationType <String>]`: Possible types of Application
   - `[DeviceCount <Int32?>]`: Device Count
 
 WINDOWSINFORMATIONPROTECTIONNETWORKLEARNINGSUMMARIES <IMicrosoftGraphWindowsInformationProtectionNetworkLearningSummary[]>: The windows information protection network learning summaries.
@@ -2090,5 +2140,14 @@ WINDOWSINFORMATIONPROTECTIONNETWORKLEARNINGSUMMARIES <IMicrosoftGraphWindowsInfo
   - `[Url <String>]`: Website url
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
+
+## RELATED LINKS
+
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecurityfilesecurityprofile
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 fileSecurityProfile
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphFileSecurityProfile
@@ -210,7 +210,7 @@ Accept wildcard characters: False
 
 ### -Hashes
 .
-To construct, see NOTES section for HASHES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for HASHES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphFileHash[]
@@ -241,7 +241,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISecurityIdentity
@@ -272,7 +272,7 @@ Accept wildcard characters: False
 
 ### -MalwareStates
 .
-To construct, see NOTES section for MALWARESTATES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for MALWARESTATES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMalwareState[]
@@ -363,7 +363,7 @@ Accept wildcard characters: False
 
 ### -VendorInformation
 securityVendorInformation
-To construct, see NOTES section for VENDORINFORMATION properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for VENDORINFORMATION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityVendorInformation
@@ -379,7 +379,7 @@ Accept wildcard characters: False
 
 ### -VulnerabilityStates
 .
-To construct, see NOTES section for VULNERABILITYSTATES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for VULNERABILITYSTATES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphVulnerabilityState[]
@@ -489,10 +489,12 @@ INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[FileSecurityProfileId <String>]`: key: id of fileSecurityProfile
   - `[HostSecurityProfileId <String>]`: key: id of hostSecurityProfile
   - `[IPSecurityProfileId <String>]`: key: id of ipSecurityProfile
+  - `[IncidentId <String>]`: key: id of incident
   - `[ProviderTenantSettingId <String>]`: key: id of providerTenantSetting
   - `[SecureScoreControlProfileId <String>]`: key: id of secureScoreControlProfile
   - `[SecureScoreId <String>]`: key: id of secureScore
   - `[SecurityActionId <String>]`: key: id of securityAction
+  - `[SimulationId <String>]`: key: id of simulation
   - `[TiIndicatorId <String>]`: key: id of tiIndicator
   - `[UserSecurityProfileId <String>]`: key: id of userSecurityProfile
 

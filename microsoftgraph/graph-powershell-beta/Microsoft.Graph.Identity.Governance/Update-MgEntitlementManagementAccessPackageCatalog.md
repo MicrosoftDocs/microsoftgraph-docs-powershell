@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementaccesspackagecatalog
@@ -27,7 +27,7 @@ Update-MgEntitlementManagementAccessPackageCatalog -AccessPackageCatalogId <Stri
 ### Update
 ```
 Update-MgEntitlementManagementAccessPackageCatalog -AccessPackageCatalogId <String>
- -BodyParameter <IMicrosoftGraphAccessPackageCatalog> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageCatalog1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -45,7 +45,7 @@ Update-MgEntitlementManagementAccessPackageCatalog -InputObject <IIdentityGovern
 ### UpdateViaIdentity
 ```
 Update-MgEntitlementManagementAccessPackageCatalog -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessPackageCatalog> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageCatalog1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -157,7 +157,7 @@ accessPackageCatalog
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageCatalog
+Type: IMicrosoftGraphAccessPackageCatalog1
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -392,7 +392,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageCatalog
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageCatalog1
 ## OUTPUTS
 
 ### System.Boolean
@@ -890,5 +890,8 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

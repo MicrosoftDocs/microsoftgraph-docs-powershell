@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/publish-mgeducationmeassignment
@@ -12,12 +12,12 @@ Invoke action publish
 
 ## SYNTAX
 
-### Publish (Default)
+### Publish1 (Default)
 ```
 Publish-MgEducationMeAssignment -EducationAssignmentId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### PublishViaIdentity
+### PublishViaIdentity1
 ```
 Publish-MgEducationMeAssignment -InputObject <IEducationIdentity> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -34,7 +34,7 @@ key: id of educationAssignment
 
 ```yaml
 Type: String
-Parameter Sets: Publish
+Parameter Sets: Publish1
 Aliases:
 
 Required: True
@@ -46,11 +46,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IEducationIdentity
-Parameter Sets: PublishViaIdentity
+Parameter Sets: PublishViaIdentity1
 Aliases:
 
 Required: True

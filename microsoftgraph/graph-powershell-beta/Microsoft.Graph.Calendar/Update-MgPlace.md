@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/update-mgplace
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 
 ### -Address
 physicalAddress
-To construct, see NOTES section for ADDRESS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ADDRESS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPhysicalAddress1
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 place
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPlace1
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 
 ### -GeoCoordinates
 outlookGeoCoordinates
-To construct, see NOTES section for GEOCOORDINATES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for GEOCOORDINATES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphOutlookGeoCoordinates
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ICalendarIdentity

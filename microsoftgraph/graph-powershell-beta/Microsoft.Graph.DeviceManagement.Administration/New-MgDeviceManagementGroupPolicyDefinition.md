@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementgrouppolicydefinition
@@ -17,9 +17,12 @@ The available group policy definitions for this account.
 New-MgDeviceManagementGroupPolicyDefinition [-AdditionalProperties <Hashtable>]
  [-Category <IMicrosoftGraphGroupPolicyCategory>] [-CategoryPath <String>] [-ClassType <String>]
  [-DefinitionFile <IMicrosoftGraphGroupPolicyDefinitionFile>] [-DisplayName <String>] [-ExplainText <String>]
- [-GroupPolicyCategoryId <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-PolicyType <String>]
- [-Presentations <IMicrosoftGraphGroupPolicyPresentation[]>] [-SupportedOn <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-GroupPolicyCategoryId <String>] [-HasRelatedDefinitions] [-Id <String>] [-LastModifiedDateTime <DateTime>]
+ [-MinDeviceCspVersion <String>] [-MinUserCspVersion <String>]
+ [-NextVersionDefinition <IMicrosoftGraphGroupPolicyDefinition>] [-PolicyType <String>]
+ [-Presentations <IMicrosoftGraphGroupPolicyPresentation[]>]
+ [-PreviousVersionDefinition <IMicrosoftGraphGroupPolicyDefinition>] [-SupportedOn <String>]
+ [-Version <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -176,6 +179,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -HasRelatedDefinitions
+Signifies whether or not there are related definitions to this definition
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Id
 Read-only.
 
@@ -196,6 +214,52 @@ The date and time the entity was last modified.
 
 ```yaml
 Type: DateTime
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MinDeviceCspVersion
+Minimum required CSP version for device configuration in this definition
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MinUserCspVersion
+Minimum required CSP version for user configuration in this definition
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -NextVersionDefinition
+The entity describes all of the information about a single group policy.
+To construct, please use Get-Help -Online and see NOTES section for NEXTVERSIONDEFINITION properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphGroupPolicyDefinition
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -237,8 +301,39 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -PreviousVersionDefinition
+The entity describes all of the information about a single group policy.
+To construct, please use Get-Help -Online and see NOTES section for PREVIOUSVERSIONDEFINITION properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphGroupPolicyDefinition
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SupportedOn
 Localized string used to specify what operating system or application version is affected by the policy.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Version
+Setting definition version
 
 ```yaml
 Type: String
@@ -456,5 +551,8 @@ PRESENTATIONS <IMicrosoftGraphGroupPolicyPresentation[]>: The group policy prese
   - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

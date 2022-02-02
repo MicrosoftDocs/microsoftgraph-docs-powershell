@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgaccessreviewreviewer
@@ -14,8 +14,9 @@ The collection of reviewers for an access review, if access review reviewerType 
 
 ### CreateExpanded (Default)
 ```
-New-MgAccessReviewReviewer -AccessReviewId <String> [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-Id <String>] [-UserPrincipalName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgAccessReviewReviewer -AccessReviewId <String> [-AdditionalProperties <Hashtable>]
+ [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-UserPrincipalName <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -27,7 +28,8 @@ New-MgAccessReviewReviewer -AccessReviewId <String> -BodyParameter <IMicrosoftGr
 ### CreateViaIdentityExpanded
 ```
 New-MgAccessReviewReviewer -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>]
- [-DisplayName <String>] [-Id <String>] [-UserPrincipalName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-UserPrincipalName <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -86,6 +88,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -CreatedDateTime
+The date when the reviewer was added for the access review.
+
+```yaml
+Type: DateTime
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgapplicationowner
@@ -11,6 +11,7 @@ schema: 2.0.0
 Directory objects that are owners of the application.
 Read-only.
 Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -24,6 +25,7 @@ Get-MgApplicationOwner -ApplicationId <String> [-ExpandProperty <String[]>] [-Fi
 Directory objects that are owners of the application.
 Read-only.
 Nullable.
+Supports $expand.
 
 ## EXAMPLES
 

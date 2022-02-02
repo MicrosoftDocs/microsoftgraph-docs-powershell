@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/update-mguserperson
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 person
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPerson
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IPeopleIdentity
@@ -306,7 +306,7 @@ Accept wildcard characters: False
 
 ### -PersonType
 personType
-To construct, see NOTES section for PERSONTYPE properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for PERSONTYPE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPersonType
@@ -322,7 +322,7 @@ Accept wildcard characters: False
 
 ### -Phones
 The person's phone numbers.
-To construct, see NOTES section for PHONES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for PHONES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPhone[]
@@ -338,7 +338,7 @@ Accept wildcard characters: False
 
 ### -PostalAddresses
 The person's addresses.
-To construct, see NOTES section for POSTALADDRESSES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for POSTALADDRESSES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphLocation[]
@@ -369,7 +369,7 @@ Accept wildcard characters: False
 
 ### -ScoredEmailAddresses
 The person's email addresses.
-To construct, see NOTES section for SCOREDEMAILADDRESSES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SCOREDEMAILADDRESSES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphScoredEmailAddress[]
@@ -433,7 +433,7 @@ Accept wildcard characters: False
 
 ### -Websites
 The person's websites.
-To construct, see NOTES section for WEBSITES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for WEBSITES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphWebsite[]

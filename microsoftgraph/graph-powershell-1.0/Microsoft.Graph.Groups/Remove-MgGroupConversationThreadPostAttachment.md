@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/remove-mggroupconversationthreadpostattachment
@@ -11,6 +11,7 @@ schema: 2.0.0
 The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post.
 Read-only.
 Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -31,6 +32,7 @@ Remove-MgGroupConversationThreadPostAttachment -InputObject <IGroupsIdentity> [-
 The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post.
 Read-only.
 Nullable.
+Supports $expand.
 
 ## EXAMPLES
 
@@ -113,7 +115,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IGroupsIdentity

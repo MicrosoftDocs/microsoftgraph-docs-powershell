@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/new-mggrouptransitivememberbyref
@@ -8,17 +8,11 @@ schema: 2.0.0
 # New-MgGroupTransitiveMemberByRef
 
 ## SYNOPSIS
-Create new navigation property ref to transitiveMemberOf for groups
+Create new navigation property ref to transitiveMembers for groups
 
 ## SYNTAX
 
-### CreateExpanded2 (Default)
-```
-New-MgGroupTransitiveMemberByRef -GroupId <String> [-AdditionalProperties <Hashtable>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### CreateExpanded3
+### CreateExpanded3 (Default)
 ```
 New-MgGroupTransitiveMemberByRef -GroupId <String> [-AdditionalProperties <Hashtable>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -30,19 +24,7 @@ New-MgGroupTransitiveMemberByRef -GroupId <String> -BodyParameter <Hashtable> [-
  [<CommonParameters>]
 ```
 
-### Create2
-```
-New-MgGroupTransitiveMemberByRef -GroupId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
 ### CreateViaIdentityExpanded3
-```
-New-MgGroupTransitiveMemberByRef -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded2
 ```
 New-MgGroupTransitiveMemberByRef -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -54,14 +36,8 @@ New-MgGroupTransitiveMemberByRef -InputObject <IGroupsIdentity> -BodyParameter <
  [<CommonParameters>]
 ```
 
-### CreateViaIdentity2
-```
-New-MgGroupTransitiveMemberByRef -InputObject <IGroupsIdentity> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
 ## DESCRIPTION
-Create new navigation property ref to transitiveMemberOf for groups
+Create new navigation property ref to transitiveMembers for groups
 
 ## EXAMPLES
 
@@ -72,7 +48,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded2, CreateExpanded3, CreateViaIdentityExpanded3, CreateViaIdentityExpanded2
+Parameter Sets: CreateExpanded3, CreateViaIdentityExpanded3
 Aliases:
 
 Required: False
@@ -87,7 +63,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: Hashtable
-Parameter Sets: Create3, Create2, CreateViaIdentity3, CreateViaIdentity2
+Parameter Sets: Create3, CreateViaIdentity3
 Aliases:
 
 Required: True
@@ -102,7 +78,7 @@ key: id of group
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded2, CreateExpanded3, Create3, Create2
+Parameter Sets: CreateExpanded3, Create3
 Aliases:
 
 Required: True
@@ -114,11 +90,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IGroupsIdentity
-Parameter Sets: CreateViaIdentityExpanded3, CreateViaIdentityExpanded2, CreateViaIdentity3, CreateViaIdentity2
+Parameter Sets: CreateViaIdentityExpanded3, CreateViaIdentity3
 Aliases:
 
 Required: True
@@ -169,7 +145,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths12OpfrnGroupsGroupIdTransitivemembersRefPostResponses201ContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IPathsCgkcf5GroupsGroupIdTransitivememberofRefPostResponses201ContentApplicationJsonSchema
 ## NOTES
 
 ALIASES
@@ -203,3 +178,16 @@ INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+
+dePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
+  - `[MentionId <String>]`: key: id of mention
+  - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
+  - `[NotebookId <String>]`: key: id of notebook
+  - `[OnenotePageId <String>]`: key: id of onenotePage
+  - `[OnenoteSectionId <String>]`: key: id of onenoteSection
+  - `[PostId <String>]`: key: id of post
+  - `[ProfilePhotoId <String>]`: key: id of profilePhoto
+  - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
+  - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
+  - `[User <String>]`: Usage: User={User}
+  - `[UserId <String>]`: key: id of user

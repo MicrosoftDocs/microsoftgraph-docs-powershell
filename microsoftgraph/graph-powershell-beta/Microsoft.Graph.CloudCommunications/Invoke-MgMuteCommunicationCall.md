@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/invoke-mgmutecommunicationcall
@@ -12,26 +12,26 @@ Invoke action mute
 
 ## SYNTAX
 
-### MuteExpanded (Default)
+### MuteExpanded1 (Default)
 ```
 Invoke-MgMuteCommunicationCall -CallId <String> [-AdditionalProperties <Hashtable>] [-ClientContext <String>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Mute
+### Mute1
 ```
 Invoke-MgMuteCommunicationCall -CallId <String>
  -BodyParameter <IPaths13Zt223CommunicationsCallsCallIdMicrosoftGraphMutePostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### MuteViaIdentityExpanded
+### MuteViaIdentityExpanded1
 ```
 Invoke-MgMuteCommunicationCall -InputObject <ICloudCommunicationsIdentity> [-AdditionalProperties <Hashtable>]
  [-ClientContext <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### MuteViaIdentity
+### MuteViaIdentity1
 ```
 Invoke-MgMuteCommunicationCall -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPaths13Zt223CommunicationsCallsCallIdMicrosoftGraphMutePostRequestbodyContentApplicationJsonSchema>
@@ -50,7 +50,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: MuteExpanded, MuteViaIdentityExpanded
+Parameter Sets: MuteExpanded1, MuteViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -62,11 +62,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths13Zt223CommunicationsCallsCallIdMicrosoftGraphMutePostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Mute, MuteViaIdentity
+Parameter Sets: Mute1, MuteViaIdentity1
 Aliases:
 
 Required: True
@@ -81,7 +81,7 @@ key: id of call
 
 ```yaml
 Type: String
-Parameter Sets: MuteExpanded, Mute
+Parameter Sets: MuteExpanded1, Mute1
 Aliases:
 
 Required: True
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: MuteExpanded, MuteViaIdentityExpanded
+Parameter Sets: MuteExpanded1, MuteViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -108,11 +108,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ICloudCommunicationsIdentity
-Parameter Sets: MuteViaIdentityExpanded, MuteViaIdentity
+Parameter Sets: MuteViaIdentityExpanded1, MuteViaIdentity1
 Aliases:
 
 Required: True
@@ -177,10 +177,14 @@ BODYPARAMETER <IPaths13Zt223CommunicationsCallsCallIdMicrosoftGraphMutePostReque
   - `[ClientContext <String>]`: 
 
 INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
+  - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call
   - `[CallRecordId <String>]`: key: id of callRecord
+  - `[CallTranscriptId <String>]`: key: id of callTranscript
   - `[CommsOperationId <String>]`: key: id of commsOperation
+  - `[MeetingAttendanceReportId <String>]`: key: id of meetingAttendanceReport
+  - `[MeetingRegistrationQuestionId <String>]`: key: id of meetingRegistrationQuestion
   - `[OnlineMeetingId <String>]`: key: id of onlineMeeting
   - `[ParticipantId <String>]`: key: id of participant
   - `[PresenceId <String>]`: key: id of presence

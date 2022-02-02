@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintreport
@@ -16,7 +16,7 @@ Update the navigation property reports in print
 ```
 Update-MgPrintReport [-AdditionalProperties <Hashtable>]
  [-ApplicationSignInDetailedSummary <IMicrosoftGraphApplicationSignInDetailedSummary[]>]
- [-AuthenticationMethods <Hashtable>]
+ [-AuthenticationMethods <IMicrosoftGraphAuthenticationMethodsRoot>]
  [-CredentialUserRegistrationDetails <IMicrosoftGraphCredentialUserRegistrationDetails[]>]
  [-DailyPrintUsageByPrinter <IMicrosoftGraphPrintUsageByPrinter[]>]
  [-DailyPrintUsageByUser <IMicrosoftGraphPrintUsageByUser[]>]
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 authenticationMethodsRoot
 
 ```yaml
-Type: Hashtable
+Type: IMicrosoftGraphAuthenticationMethodsRoot
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -497,5 +497,8 @@ USERCREDENTIALUSAGEDETAILS <IMicrosoftGraphUserCredentialUsageDetails[]>: .
   - `[UserPrincipalName <String>]`: User principal name of the user performing the reset or registration workflow.
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

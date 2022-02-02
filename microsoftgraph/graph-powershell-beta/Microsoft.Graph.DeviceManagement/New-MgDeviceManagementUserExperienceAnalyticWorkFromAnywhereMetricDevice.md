@@ -17,9 +17,15 @@ The work from anywhere metric devices.
 New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice
  -UserExperienceAnalyticsWorkFromAnywhereMetricId <String> [-AdditionalProperties <Hashtable>]
  [-AutoPilotProfileAssigned] [-AutoPilotRegistered] [-AzureAdDeviceId <String>] [-AzureAdJoinType <String>]
- [-AzureAdRegistered] [-DeviceName <String>] [-Id <String>] [-ManagedBy <String>] [-Manufacturer <String>]
- [-Model <String>] [-OSDescription <String>] [-OSVersion <String>] [-Ownership <String>]
- [-SerialNumber <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AzureAdRegistered] [-CloudIdentityScore <Double>] [-CloudManagementScore <Double>]
+ [-CloudProvisioningScore <Double>] [-CompliancePolicySetToIntune] [-DeviceId <String>] [-DeviceName <String>]
+ [-HealthStatus <String>] [-Id <String>] [-IsCloudManagedGatewayEnabled] [-ManagedBy <String>]
+ [-Manufacturer <String>] [-Model <String>] [-OSCheckFailed] [-OSDescription <String>] [-OSVersion <String>]
+ [-OtherWorkloadsSetToIntune] [-Ownership <String>] [-Processor64BitCheckFailed]
+ [-ProcessorCoreCountCheckFailed] [-ProcessorFamilyCheckFailed] [-ProcessorSpeedCheckFailed] [-RamCheckFailed]
+ [-SecureBootCheckFailed] [-SerialNumber <String>] [-StorageCheckFailed] [-TenantAttached] [-TpmCheckFailed]
+ [-UpgradeEligibility <String>] [-WindowsScore <Double>] [-WorkFromAnywhereScore <Double>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -35,9 +41,15 @@ New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice
 New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice
  -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>] [-AutoPilotProfileAssigned]
  [-AutoPilotRegistered] [-AzureAdDeviceId <String>] [-AzureAdJoinType <String>] [-AzureAdRegistered]
- [-DeviceName <String>] [-Id <String>] [-ManagedBy <String>] [-Manufacturer <String>] [-Model <String>]
- [-OSDescription <String>] [-OSVersion <String>] [-Ownership <String>] [-SerialNumber <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-CloudIdentityScore <Double>] [-CloudManagementScore <Double>] [-CloudProvisioningScore <Double>]
+ [-CompliancePolicySetToIntune] [-DeviceId <String>] [-DeviceName <String>] [-HealthStatus <String>]
+ [-Id <String>] [-IsCloudManagedGatewayEnabled] [-ManagedBy <String>] [-Manufacturer <String>]
+ [-Model <String>] [-OSCheckFailed] [-OSDescription <String>] [-OSVersion <String>]
+ [-OtherWorkloadsSetToIntune] [-Ownership <String>] [-Processor64BitCheckFailed]
+ [-ProcessorCoreCountCheckFailed] [-ProcessorFamilyCheckFailed] [-ProcessorSpeedCheckFailed] [-RamCheckFailed]
+ [-SecureBootCheckFailed] [-SerialNumber <String>] [-StorageCheckFailed] [-TenantAttached] [-TpmCheckFailed]
+ [-UpgradeEligibility <String>] [-WindowsScore <Double>] [-WorkFromAnywhereScore <Double>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -52,6 +64,13 @@ New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice
 The work from anywhere metric devices.
 
 ## EXAMPLES
+
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -80,7 +99,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -95,7 +114,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -140,14 +159,14 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -BodyParameter
 The user experience analytics Device for work from anywhere report
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereDevice
@@ -161,8 +180,101 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -CloudIdentityScore
+The user experience work from anywhere per device cloud identity score.
+Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+
+```yaml
+Type: Double
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CloudManagementScore
+The user experience work from anywhere per device cloud management score.
+Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+
+```yaml
+Type: Double
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CloudProvisioningScore
+The user experience work from anywhere per device cloud provisioning score.
+Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+
+```yaml
+Type: Double
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CompliancePolicySetToIntune
+The user experience work from anywhere device's compliancePolicySetToIntune.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DeviceId
+The user experience work from anywhere device Id.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -DeviceName
 The work from anywhere device's name.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -HealthStatus
+userExperienceAnalyticsHealthState
 
 ```yaml
 Type: String
@@ -193,7 +305,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementIdentity
@@ -204,6 +316,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -IsCloudManagedGatewayEnabled
+The user experience work from anywhere device's Cloud Management Gateway for Configuration Manager is enabled.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -252,6 +379,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -OSCheckFailed
+The user experience work from anywhere device, Is OS check failed for device to upgrade to the latest version of windows.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -OSDescription
 The user experience work from anywhere device's OS Description.
 
@@ -282,6 +424,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -OtherWorkloadsSetToIntune
+The user experience work from anywhere device's otherWorkloadsSetToIntune.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Ownership
 The user experience work from anywhere device's ownership.
 
@@ -297,8 +454,158 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Processor64BitCheckFailed
+The user experience work from anywhere device, Is processor hardware 64-bit architecture check failed for device to upgrade to the latest version of windows.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProcessorCoreCountCheckFailed
+The user experience work from anywhere device, Is processor hardware core count check failed for device to upgrade to the latest version of windows.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProcessorFamilyCheckFailed
+The user experience work from anywhere device, Is processor hardware family check failed for device to upgrade to the latest version of windows.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProcessorSpeedCheckFailed
+The user experience work from anywhere device, Is processor hardware speed check failed for device to upgrade to the latest version of windows.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RamCheckFailed
+Is the user experience analytics work from anywhere device RAM hardware check failed for device to upgrade to the latest version of windows
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SecureBootCheckFailed
+The user experience work from anywhere device, Is secure boot hardware check failed for device to upgrade to the latest version of windows.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SerialNumber
 The user experience work from anywhere device's serial number.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -StorageCheckFailed
+The user experience work from anywhere device, Is storage hardware check failed for device to upgrade to the latest version of windows.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TenantAttached
+The user experience work from anywhere device's tenantAttached.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TpmCheckFailed
+The user experience work from anywhere device, Is Trusted Platform Module (TPM) hardware check failed for device to the latest version of upgrade to windows.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -UpgradeEligibility
+Work From Anywhere windows device upgrade eligibility status
 
 ```yaml
 Type: String
@@ -323,6 +630,38 @@ Aliases:
 Required: True
 Position: Named
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WindowsScore
+The user experience work from anywhere per device windows score.
+Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+
+```yaml
+Type: Double
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WorkFromAnywhereScore
+The user experience work from anywhere per device overall score.
+Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+
+```yaml
+Type: Double
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -369,141 +708,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereDevice
 ## NOTES
-
-ALIASES
-
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
-
-
-BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereDevice>: The user experience analytics Device for work from anywhere report
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
-  - `[AutoPilotProfileAssigned <Boolean?>]`: The user experience analytics work from anywhere intune device's autopilotProfileAssigned.
-  - `[AutoPilotRegistered <Boolean?>]`: The user experience work from anywhere intune device's autopilotRegistered.
-  - `[AzureAdDeviceId <String>]`: The user experience work from anywhere azure Ad device Id.
-  - `[AzureAdJoinType <String>]`: The user experience work from anywhere device's azure Ad joinType.
-  - `[AzureAdRegistered <Boolean?>]`: The user experience work from anywhere device's azureAdRegistered.
-  - `[DeviceName <String>]`: The work from anywhere device's name.
-  - `[ManagedBy <String>]`: The user experience work from anywhere management agent of the device.
-  - `[Manufacturer <String>]`: The user experience work from anywhere device's manufacturer.
-  - `[Model <String>]`: The user experience work from anywhere device's model.
-  - `[OSDescription <String>]`: The user experience work from anywhere device's OS Description.
-  - `[OSVersion <String>]`: The user experience work from anywhere device's OS Version.
-  - `[Ownership <String>]`: The user experience work from anywhere device's ownership.
-  - `[SerialNumber <String>]`: The user experience work from anywhere device's serial number.
-
-INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
-  - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
-  - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
-  - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema
-  - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
-  - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: key: id of assignmentFilterEvaluationStatusDetails
-  - `[DataSharingConsentId <String>]`: key: id of dataSharingConsent
-  - `[DetectedAppId <String>]`: key: id of detectedApp
-  - `[DeviceAndAppManagementAssignmentFilterId <String>]`: key: id of deviceAndAppManagementAssignmentFilter
-  - `[DeviceCategoryId <String>]`: key: id of deviceCategory
-  - `[DeviceComplianceActionItemId <String>]`: key: id of deviceComplianceActionItem
-  - `[DeviceComplianceDeviceStatusId <String>]`: key: id of deviceComplianceDeviceStatus
-  - `[DeviceCompliancePolicyAssignmentId <String>]`: key: id of deviceCompliancePolicyAssignment
-  - `[DeviceCompliancePolicyId <String>]`: key: id of deviceCompliancePolicy
-  - `[DeviceCompliancePolicySettingStateSummaryId <String>]`: key: id of deviceCompliancePolicySettingStateSummary
-  - `[DeviceCompliancePolicyStateId <String>]`: key: id of deviceCompliancePolicyState
-  - `[DeviceComplianceScheduledActionForRuleId <String>]`: key: id of deviceComplianceScheduledActionForRule
-  - `[DeviceComplianceSettingStateId <String>]`: key: id of deviceComplianceSettingState
-  - `[DeviceComplianceUserStatusId <String>]`: key: id of deviceComplianceUserStatus
-  - `[DeviceConfigurationAssignmentId <String>]`: key: id of deviceConfigurationAssignment
-  - `[DeviceConfigurationConflictSummaryId <String>]`: key: id of deviceConfigurationConflictSummary
-  - `[DeviceConfigurationDeviceStatusId <String>]`: key: id of deviceConfigurationDeviceStatus
-  - `[DeviceConfigurationGroupAssignmentId <String>]`: key: id of deviceConfigurationGroupAssignment
-  - `[DeviceConfigurationId <String>]`: key: id of deviceConfiguration
-  - `[DeviceConfigurationStateId <String>]`: key: id of deviceConfigurationState
-  - `[DeviceConfigurationUserStatusId <String>]`: key: id of deviceConfigurationUserStatus
-  - `[DeviceHealthScriptAssignmentId <String>]`: key: id of deviceHealthScriptAssignment
-  - `[DeviceHealthScriptDeviceStateId <String>]`: key: id of deviceHealthScriptDeviceState
-  - `[DeviceHealthScriptId <String>]`: key: id of deviceHealthScript
-  - `[DeviceLogCollectionResponseId <String>]`: key: id of deviceLogCollectionResponse
-  - `[DeviceManagementDerivedCredentialSettingsId <String>]`: key: id of deviceManagementDerivedCredentialSettings
-  - `[DeviceManagementIntentAssignmentId <String>]`: key: id of deviceManagementIntentAssignment
-  - `[DeviceManagementIntentDeviceSettingStateSummaryId <String>]`: key: id of deviceManagementIntentDeviceSettingStateSummary
-  - `[DeviceManagementIntentDeviceStateId <String>]`: key: id of deviceManagementIntentDeviceState
-  - `[DeviceManagementIntentId <String>]`: key: id of deviceManagementIntent
-  - `[DeviceManagementIntentSettingCategoryId <String>]`: key: id of deviceManagementIntentSettingCategory
-  - `[DeviceManagementIntentUserStateId <String>]`: key: id of deviceManagementIntentUserState
-  - `[DeviceManagementResourceAccessProfileAssignmentId <String>]`: key: id of deviceManagementResourceAccessProfileAssignment
-  - `[DeviceManagementResourceAccessProfileBaseId <String>]`: key: id of deviceManagementResourceAccessProfileBase
-  - `[DeviceManagementScriptAssignmentId <String>]`: key: id of deviceManagementScriptAssignment
-  - `[DeviceManagementScriptDeviceStateId <String>]`: key: id of deviceManagementScriptDeviceState
-  - `[DeviceManagementScriptGroupAssignmentId <String>]`: key: id of deviceManagementScriptGroupAssignment
-  - `[DeviceManagementScriptId <String>]`: key: id of deviceManagementScript
-  - `[DeviceManagementScriptUserStateId <String>]`: key: id of deviceManagementScriptUserState
-  - `[DeviceManagementSettingCategoryId <String>]`: key: id of deviceManagementSettingCategory
-  - `[DeviceManagementSettingDefinitionId <String>]`: key: id of deviceManagementSettingDefinition
-  - `[DeviceManagementSettingInstanceId <String>]`: key: id of deviceManagementSettingInstance
-  - `[DeviceManagementTemplateId <String>]`: key: id of deviceManagementTemplate
-  - `[DeviceManagementTemplateId1 <String>]`: key: id of deviceManagementTemplate
-  - `[DeviceManagementTemplateSettingCategoryId <String>]`: key: id of deviceManagementTemplateSettingCategory
-  - `[DeviceManagementTroubleshootingEventId <String>]`: key: id of deviceManagementTroubleshootingEvent
-  - `[DeviceShellScriptId <String>]`: key: id of deviceShellScript
-  - `[EmbeddedSimActivationCodePoolAssignmentId <String>]`: key: id of embeddedSIMActivationCodePoolAssignment
-  - `[EmbeddedSimActivationCodePoolId <String>]`: key: id of embeddedSIMActivationCodePool
-  - `[EmbeddedSimDeviceStateId <String>]`: key: id of embeddedSIMDeviceState
-  - `[GroupPolicyConfigurationAssignmentId <String>]`: key: id of groupPolicyConfigurationAssignment
-  - `[GroupPolicyConfigurationId <String>]`: key: id of groupPolicyConfiguration
-  - `[GroupPolicyDefinitionValueId <String>]`: key: id of groupPolicyDefinitionValue
-  - `[GroupPolicyPresentationValueId <String>]`: key: id of groupPolicyPresentationValue
-  - `[LocalizedNotificationMessageId <String>]`: key: id of localizedNotificationMessage
-  - `[MacOSSoftwareUpdateAccountSummaryId <String>]`: key: id of macOSSoftwareUpdateAccountSummary
-  - `[MacOSSoftwareUpdateCategorySummaryId <String>]`: key: id of macOSSoftwareUpdateCategorySummary
-  - `[MacOSSoftwareUpdateStateSummaryId <String>]`: key: id of macOSSoftwareUpdateStateSummary
-  - `[MalwareStateForWindowsDeviceId <String>]`: key: id of malwareStateForWindowsDevice
-  - `[ManagedDeviceEncryptionStateId <String>]`: key: id of managedDeviceEncryptionState
-  - `[ManagedDeviceId <String>]`: key: id of managedDevice
-  - `[ManagedDeviceMobileAppConfigurationStateId <String>]`: key: id of managedDeviceMobileAppConfigurationState
-  - `[ManagementConditionId <String>]`: key: id of managementCondition
-  - `[ManagementConditionStatementId <String>]`: key: id of managementConditionStatement
-  - `[MicrosoftTunnelConfigurationId <String>]`: key: id of microsoftTunnelConfiguration
-  - `[MicrosoftTunnelHealthThresholdId <String>]`: key: id of microsoftTunnelHealthThreshold
-  - `[MicrosoftTunnelServerId <String>]`: key: id of microsoftTunnelServer
-  - `[MicrosoftTunnelServerLogCollectionResponseId <String>]`: key: id of microsoftTunnelServerLogCollectionResponse
-  - `[MicrosoftTunnelSiteId <String>]`: key: id of microsoftTunnelSite
-  - `[MobileAppTroubleshootingEventId <String>]`: key: id of mobileAppTroubleshootingEvent
-  - `[NotificationMessageTemplateId <String>]`: key: id of notificationMessageTemplate
-  - `[RemoteActionAuditId <String>]`: key: id of remoteActionAudit
-  - `[SecurityBaselineSettingStateId <String>]`: key: id of securityBaselineSettingState
-  - `[SecurityBaselineStateId <String>]`: key: id of securityBaselineState
-  - `[SettingStateDeviceSummaryId <String>]`: key: id of settingStateDeviceSummary
-  - `[UserExperienceAnalyticsAppHealthAppPerformanceByAppVersionId <String>]`: key: id of userExperienceAnalyticsAppHealthAppPerformanceByAppVersion
-  - `[UserExperienceAnalyticsAppHealthAppPerformanceByOSVersionId <String>]`: key: id of userExperienceAnalyticsAppHealthAppPerformanceByOSVersion
-  - `[UserExperienceAnalyticsAppHealthApplicationPerformanceId <String>]`: key: id of userExperienceAnalyticsAppHealthApplicationPerformance
-  - `[UserExperienceAnalyticsAppHealthDeviceModelPerformanceId <String>]`: key: id of userExperienceAnalyticsAppHealthDeviceModelPerformance
-  - `[UserExperienceAnalyticsAppHealthDevicePerformanceDetailsId <String>]`: key: id of userExperienceAnalyticsAppHealthDevicePerformanceDetails
-  - `[UserExperienceAnalyticsAppHealthDevicePerformanceId <String>]`: key: id of userExperienceAnalyticsAppHealthDevicePerformance
-  - `[UserExperienceAnalyticsAppHealthOSVersionPerformanceId <String>]`: key: id of userExperienceAnalyticsAppHealthOSVersionPerformance
-  - `[UserExperienceAnalyticsBaselineId <String>]`: key: id of userExperienceAnalyticsBaseline
-  - `[UserExperienceAnalyticsCategoryId <String>]`: key: id of userExperienceAnalyticsCategory
-  - `[UserExperienceAnalyticsDevicePerformanceId <String>]`: key: id of userExperienceAnalyticsDevicePerformance
-  - `[UserExperienceAnalyticsDeviceScoresId <String>]`: key: id of userExperienceAnalyticsDeviceScores
-  - `[UserExperienceAnalyticsDeviceStartupHistoryId <String>]`: key: id of userExperienceAnalyticsDeviceStartupHistory
-  - `[UserExperienceAnalyticsDeviceStartupProcessId <String>]`: key: id of userExperienceAnalyticsDeviceStartupProcess
-  - `[UserExperienceAnalyticsDeviceStartupProcessPerformanceId <String>]`: key: id of userExperienceAnalyticsDeviceStartupProcessPerformance
-  - `[UserExperienceAnalyticsDeviceWithoutCloudIdentityId <String>]`: key: id of userExperienceAnalyticsDeviceWithoutCloudIdentity
-  - `[UserExperienceAnalyticsImpactingProcessId <String>]`: key: id of userExperienceAnalyticsImpactingProcess
-  - `[UserExperienceAnalyticsMetricHistoryId <String>]`: key: id of userExperienceAnalyticsMetricHistory
-  - `[UserExperienceAnalyticsMetricId <String>]`: key: id of userExperienceAnalyticsMetric
-  - `[UserExperienceAnalyticsNotAutopilotReadyDeviceId <String>]`: key: id of userExperienceAnalyticsNotAutopilotReadyDevice
-  - `[UserExperienceAnalyticsRemoteConnectionId <String>]`: key: id of userExperienceAnalyticsRemoteConnection
-  - `[UserExperienceAnalyticsResourcePerformanceId <String>]`: key: id of userExperienceAnalyticsResourcePerformance
-  - `[UserExperienceAnalyticsScoreHistoryId <String>]`: key: id of userExperienceAnalyticsScoreHistory
-  - `[UserExperienceAnalyticsWorkFromAnywhereDeviceId <String>]`: key: id of userExperienceAnalyticsWorkFromAnywhereDevice
-  - `[UserExperienceAnalyticsWorkFromAnywhereMetricId <String>]`: key: id of userExperienceAnalyticsWorkFromAnywhereMetric
-  - `[UserId <String>]`: key: id of user
-  - `[WindowsDeviceMalwareStateId <String>]`: key: id of windowsDeviceMalwareState
-  - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: key: id of windowsInformationProtectionAppLearningSummary
-  - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: key: id of windowsInformationProtectionNetworkLearningSummary
-  - `[WindowsMalwareInformationId <String>]`: key: id of windowsMalwareInformation
+Please use Get-Help -Online.
 
 ## RELATED LINKS
 
-## RELATED LINKS
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticworkfromanywheremetricdevice](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticworkfromanywheremetricdevice)
+

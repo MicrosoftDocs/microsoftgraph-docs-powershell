@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/new-mggroupconversation
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 conversation
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphConversation1
@@ -94,6 +94,7 @@ Accept wildcard characters: False
 
 ### -HasAttachments
 Indicates whether any of the posts within this Conversation has at least one attachment.
+Supports $filter (eq, ne) and $search.
 
 ```yaml
 Type: SwitchParameter
@@ -124,7 +125,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IGroupsIdentity
@@ -140,7 +141,8 @@ Accept wildcard characters: False
 
 ### -LastDeliveredDateTime
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Supports $filter (eq, ne, le, ge).
 
 ```yaml
 Type: DateTime
@@ -155,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -Preview
-A short summary from the body of the latest post in this converstaion.
+A short summary from the body of the latest post in this conversation.
 
 ```yaml
 Type: String
@@ -174,7 +176,7 @@ A collection of all the conversation threads in the conversation.
 A navigation property.
 Read-only.
 Nullable.
-To construct, see NOTES section for THREADS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for THREADS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphConversationThread1[]
@@ -272,26 +274,26 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER <IMicrosoftGraphConversation1>: conversation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
-  - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this Conversation has at least one attachment.
-  - `[LastDeliveredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Preview <String>]`: A short summary from the body of the latest post in this converstaion.
+  - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this Conversation has at least one attachment. Supports $filter (eq, ne) and $search.
+  - `[LastDeliveredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Supports $filter (eq, ne, le, ge).
+  - `[Preview <String>]`: A short summary from the body of the latest post in this conversation.
   - `[Threads <IMicrosoftGraphConversationThread1[]>]`: A collection of all the conversation threads in the conversation. A navigation property. Read-only. Nullable.
     - `[Id <String>]`: Read-only.
-    - `[CcRecipients <IMicrosoftGraphRecipient[]>]`: The Cc: recipients for the thread.
+    - `[CcRecipients <IMicrosoftGraphRecipient[]>]`: The Cc: recipients for the thread. Returned only on $select.
       - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Address <String>]`: The email address of an entity instance.
         - `[Name <String>]`: The display name of an entity instance.
-    - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this thread has at least one attachment.
-    - `[IsLocked <Boolean?>]`: Indicates if the thread is locked.
-    - `[LastDeliveredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this thread has at least one attachment. Returned by default.
+    - `[IsLocked <Boolean?>]`: Indicates if the thread is locked. Returned by default.
+    - `[LastDeliveredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default.
     - `[Posts <IMicrosoftGraphPost1[]>]`: Read-only. Nullable.
       - `[Categories <String[]>]`: The categories associated with the item
       - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
       - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[Id <String>]`: Read-only.
-      - `[Attachments <IMicrosoftGraphAttachment[]>]`: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post. Read-only. Nullable.
+      - `[Attachments <IMicrosoftGraphAttachment[]>]`: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post. Read-only. Nullable. Supports $expand.
         - `[Id <String>]`: Read-only.
         - `[ContentType <String>]`: The MIME type.
         - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
@@ -304,7 +306,7 @@ BODYPARAMETER <IMicrosoftGraphConversation1>: conversation
         - `[ContentType <String>]`: bodyType
       - `[ConversationId <String>]`: Unique ID of the conversation. Read-only.
       - `[ConversationThreadId <String>]`: Unique ID of the conversation thread. Read-only.
-      - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the post. Read-only. Nullable.
+      - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the post. Read-only. Nullable. Supports $expand.
         - `[Id <String>]`: Read-only.
       - `[From <IMicrosoftGraphRecipient>]`: recipient
       - `[HasAttachments <Boolean?>]`: Indicates whether the post has at least one attachment. This is a default property.
@@ -318,10 +320,10 @@ BODYPARAMETER <IMicrosoftGraphConversation1>: conversation
       - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the post. Read-only. Nullable.
         - `[Id <String>]`: Read-only.
         - `[Value <String>]`: A property value.
-    - `[Preview <String>]`: A short summary from the body of the latest post in this conversation.
-    - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: The To: recipients for the thread.
-    - `[Topic <String>]`: The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated.
-    - `[UniqueSenders <String[]>]`: All the users that sent a message to this thread.
+    - `[Preview <String>]`: A short summary from the body of the latest post in this conversation. Returned by default.
+    - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: The To: recipients for the thread. Returned only on $select.
+    - `[Topic <String>]`: The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated. Returned by default.
+    - `[UniqueSenders <String[]>]`: All the users that sent a message to this thread. Returned by default.
   - `[Topic <String>]`: The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated.
   - `[UniqueSenders <String[]>]`: All the users that sent a message to this Conversation.
 
@@ -350,21 +352,21 @@ INPUTOBJECT <IGroupsIdentity>: Identity Parameter
 
 THREADS <IMicrosoftGraphConversationThread1[]>: A collection of all the conversation threads in the conversation. A navigation property. Read-only. Nullable.
   - `[Id <String>]`: Read-only.
-  - `[CcRecipients <IMicrosoftGraphRecipient[]>]`: The Cc: recipients for the thread.
+  - `[CcRecipients <IMicrosoftGraphRecipient[]>]`: The Cc: recipients for the thread. Returned only on $select.
     - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Address <String>]`: The email address of an entity instance.
       - `[Name <String>]`: The display name of an entity instance.
-  - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this thread has at least one attachment.
-  - `[IsLocked <Boolean?>]`: Indicates if the thread is locked.
-  - `[LastDeliveredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this thread has at least one attachment. Returned by default.
+  - `[IsLocked <Boolean?>]`: Indicates if the thread is locked. Returned by default.
+  - `[LastDeliveredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned by default.
   - `[Posts <IMicrosoftGraphPost1[]>]`: Read-only. Nullable.
     - `[Categories <String[]>]`: The categories associated with the item
     - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
     - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[Id <String>]`: Read-only.
-    - `[Attachments <IMicrosoftGraphAttachment[]>]`: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post. Read-only. Nullable.
+    - `[Attachments <IMicrosoftGraphAttachment[]>]`: The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post. Read-only. Nullable. Supports $expand.
       - `[Id <String>]`: Read-only.
       - `[ContentType <String>]`: The MIME type.
       - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
@@ -377,7 +379,7 @@ THREADS <IMicrosoftGraphConversationThread1[]>: A collection of all the conversa
       - `[ContentType <String>]`: bodyType
     - `[ConversationId <String>]`: Unique ID of the conversation. Read-only.
     - `[ConversationThreadId <String>]`: Unique ID of the conversation thread. Read-only.
-    - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the post. Read-only. Nullable.
+    - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the post. Read-only. Nullable. Supports $expand.
       - `[Id <String>]`: Read-only.
     - `[From <IMicrosoftGraphRecipient>]`: recipient
     - `[HasAttachments <Boolean?>]`: Indicates whether the post has at least one attachment. This is a default property.
@@ -391,11 +393,14 @@ THREADS <IMicrosoftGraphConversationThread1[]>: A collection of all the conversa
     - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the post. Read-only. Nullable.
       - `[Id <String>]`: Read-only.
       - `[Value <String>]`: A property value.
-  - `[Preview <String>]`: A short summary from the body of the latest post in this conversation.
-  - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: The To: recipients for the thread.
-  - `[Topic <String>]`: The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated.
-  - `[UniqueSenders <String[]>]`: All the users that sent a message to this thread.
+  - `[Preview <String>]`: A short summary from the body of the latest post in this conversation. Returned by default.
+  - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: The To: recipients for the thread. Returned only on $select.
+  - `[Topic <String>]`: The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated. Returned by default.
+  - `[UniqueSenders <String[]>]`: All the users that sent a message to this thread. Returned by default.
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

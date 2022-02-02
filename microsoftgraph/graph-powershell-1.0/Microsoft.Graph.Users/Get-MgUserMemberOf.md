@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/get-mgusermanagerbyref
@@ -10,7 +10,8 @@ schema: 2.0.0
 ## SYNOPSIS
 The user or contact that is this user's manager.
 Read-only.
-(HTTP Methods: GET, PUT, DELETE.)
+(HTTP Methods: GET, PUT, DELETE.).
+Supports $expand.
 
 ## SYNTAX
 
@@ -27,7 +28,8 @@ Get-MgUserManagerByRef -InputObject <IUsersIdentity> [<CommonParameters>]
 ## DESCRIPTION
 The user or contact that is this user's manager.
 Read-only.
-(HTTP Methods: GET, PUT, DELETE.)
+(HTTP Methods: GET, PUT, DELETE.).
+Supports $expand.
 
 ## EXAMPLES
 
@@ -35,7 +37,7 @@ Read-only.
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersIdentity

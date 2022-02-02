@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/update-mguserlicensedetail
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 licenseDetails
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphLicenseDetails
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersIdentity
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ### -ServicePlans
 Information about the service plans assigned with the license.
 Read-only, Not nullable
-To construct, see NOTES section for SERVICEPLANS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SERVICEPLANS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphServicePlanInfo[]

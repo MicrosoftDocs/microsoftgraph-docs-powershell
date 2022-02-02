@@ -32,6 +32,13 @@ User experience analytics appHealth overview
 
 ## EXAMPLES
 
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -51,7 +58,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analytics category entity contains the scores and insights for the various metrics of a category.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsCategory
@@ -82,7 +89,7 @@ Accept wildcard characters: False
 
 ### -Insights
 The insights for the user experience analytics category.
-To construct, see NOTES section for INSIGHTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INSIGHTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsInsight[]
@@ -98,7 +105,7 @@ Accept wildcard characters: False
 
 ### -MetricValues
 The metric values for the user experience analytics category.
-To construct, see NOTES section for METRICVALUES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for METRICVALUES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsMetric[]
@@ -122,7 +129,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -168,36 +175,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
-
-ALIASES
-
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
-
-
-BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsCategory>: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
-  - `[Insights <IMicrosoftGraphUserExperienceAnalyticsInsight[]>]`: The insights for the user experience analytics category.
-    - `[InsightId <String>]`: The unique identifier of the user experience analytics insight.
-    - `[Severity <String>]`: userExperienceAnalyticsInsightSeverity
-    - `[UserExperienceAnalyticsMetricId <String>]`: The unique identifier of the user experience analytics insight.
-    - `[Values <IMicrosoftGraphUserExperienceAnalyticsInsightValue[]>]`: The value of the user experience analytics insight.
-  - `[MetricValues <IMicrosoftGraphUserExperienceAnalyticsMetric[]>]`: The metric values for the user experience analytics category.
-    - `[Id <String>]`: Read-only.
-    - `[Unit <String>]`: The unit of the user experience analytics metric.
-    - `[Value <Double?>]`: The value of the user experience analytics metric.
-
-INSIGHTS <IMicrosoftGraphUserExperienceAnalyticsInsight[]>: The insights for the user experience analytics category.
-  - `[InsightId <String>]`: The unique identifier of the user experience analytics insight.
-  - `[Severity <String>]`: userExperienceAnalyticsInsightSeverity
-  - `[UserExperienceAnalyticsMetricId <String>]`: The unique identifier of the user experience analytics insight.
-  - `[Values <IMicrosoftGraphUserExperienceAnalyticsInsightValue[]>]`: The value of the user experience analytics insight.
-
-METRICVALUES <IMicrosoftGraphUserExperienceAnalyticsMetric[]>: The metric values for the user experience analytics category.
-  - `[Id <String>]`: Read-only.
-  - `[Unit <String>]`: The unit of the user experience analytics metric.
-  - `[Value <Double?>]`: The value of the user experience analytics metric.
+Please use Get-Help -Online.
 
 ## RELATED LINKS
+
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticapphealthoverview](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticapphealthoverview)
+
