@@ -10,22 +10,6 @@
       },
       {
         "files": [
-          "**/*.md"
-        ],
-        "src": "docs-conceptual/graph-powershell-1.0",
-        "version": "graph-powershell-1.0",
-        "dest": "microsoftgraph"
-      },
-      {
-        "files": [
-          "toc.yml"
-        ],
-        "src": "docs-conceptual/graph-powershell-1.0",
-        "version": "graph-powershell-1.0",
-        "dest": "microsoftgraph/graph-powershell-1.0"
-      },
-      {
-        "files": [
           "**/*.yml"
         ],
         "exclude": [
