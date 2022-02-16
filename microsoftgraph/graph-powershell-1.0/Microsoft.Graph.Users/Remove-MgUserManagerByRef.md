@@ -10,7 +10,8 @@ schema: 2.0.0
 ## SYNOPSIS
 The user or contact that is this user's manager.
 Read-only.
-(HTTP Methods: GET, PUT, DELETE.)
+(HTTP Methods: GET, PUT, DELETE.).
+Supports $expand.
 
 ## SYNTAX
 
@@ -29,9 +30,17 @@ Remove-MgUserManagerByRef -InputObject <IUsersIdentity> [-IfMatch <String>] [-Pa
 ## DESCRIPTION
 The user or contact that is this user's manager.
 Read-only.
-(HTTP Methods: GET, PUT, DELETE.)
+(HTTP Methods: GET, PUT, DELETE.).
+Supports $expand.
 
 ## EXAMPLES
+
+### Example 1: Remove the manager of a user
+```powershell
+Remove-MgUserManagerByRef -UserId '8a7c50d3-fcbd-4727-a889-8ab232dfea01'
+```
+
+This command removes the manager of the specified user.
 
 ## PARAMETERS
 
@@ -52,7 +61,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersIdentity

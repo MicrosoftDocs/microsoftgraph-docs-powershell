@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/connect-mgdevicemanagementchromeosonboardingsetting
@@ -15,8 +15,7 @@ Invoke action connect
 ### ConnectExpanded (Default)
 ```
 Connect-MgDeviceManagementChromeOSOnboardingSetting [-AdditionalProperties <Hashtable>]
- [-OwnerUserPrincipalName <String>] [-ServiceAccountCredentials <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-OwnerAccessToken <String>] [-OwnerUserPrincipalName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Connect
@@ -64,7 +63,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -OwnerUserPrincipalName
+### -OwnerAccessToken
 .
 
 ```yaml
@@ -79,7 +78,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ServiceAccountCredentials
+### -OwnerUserPrincipalName
 .
 
 ```yaml
@@ -131,11 +130,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths5LbknhDevicemanagementChromeosonboardingsettingsMicrosoftGraphConnectPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

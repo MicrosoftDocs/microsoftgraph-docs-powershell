@@ -65,7 +65,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Management conditions are events that can be triggered dynamically such as geo-fences, time-fences, and network-fences.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphManagementCondition
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 
 ### -ManagementConditionStatements
 The management condition statements associated to the management condition.
-To construct, see NOTES section for MANAGEMENTCONDITIONSTATEMENTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for MANAGEMENTCONDITIONSTATEMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphManagementConditionStatement[]

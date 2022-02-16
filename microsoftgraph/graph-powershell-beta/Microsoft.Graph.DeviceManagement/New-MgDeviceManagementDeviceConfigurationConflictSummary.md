@@ -15,7 +15,7 @@ Summary of policies in conflict state for this account.
 ### CreateExpanded (Default)
 ```
 New-MgDeviceManagementDeviceConfigurationConflictSummary [-AdditionalProperties <Hashtable>]
- [-ConflictingDeviceConfigurations <IMicrosoftGraphSettingSource1[]>] [-ContributingSettings <String[]>]
+ [-ConflictingDeviceConfigurations <IMicrosoftGraphSettingSource[]>] [-ContributingSettings <String[]>]
  [-DeviceCheckinsImpacted <Int32>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -49,7 +49,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Conflict summary for a set of device configuration policies.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceConfigurationConflictSummary
@@ -65,10 +65,10 @@ Accept wildcard characters: False
 
 ### -ConflictingDeviceConfigurations
 The set of policies in conflict with the given setting
-To construct, see NOTES section for CONFLICTINGDEVICECONFIGURATIONS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for CONFLICTINGDEVICECONFIGURATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSettingSource1[]
+Type: IMicrosoftGraphSettingSource[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -176,14 +176,14 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER <IMicrosoftGraphDeviceConfigurationConflictSummary>: Conflict summary for a set of device configuration policies.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
-  - `[ConflictingDeviceConfigurations <IMicrosoftGraphSettingSource1[]>]`: The set of policies in conflict with the given setting
+  - `[ConflictingDeviceConfigurations <IMicrosoftGraphSettingSource[]>]`: The set of policies in conflict with the given setting
     - `[DisplayName <String>]`: Not yet documented
     - `[Id <String>]`: Not yet documented
     - `[SourceType <String>]`: settingSourceType
   - `[ContributingSettings <String[]>]`: The set of settings in conflict with the given policies
   - `[DeviceCheckinsImpacted <Int32?>]`: The count of checkins impacted by the conflicting policies and settings
 
-CONFLICTINGDEVICECONFIGURATIONS <IMicrosoftGraphSettingSource1[]>: The set of policies in conflict with the given setting
+CONFLICTINGDEVICECONFIGURATIONS <IMicrosoftGraphSettingSource[]>: The set of policies in conflict with the given setting
   - `[DisplayName <String>]`: Not yet documented
   - `[Id <String>]`: Not yet documented
   - `[SourceType <String>]`: settingSourceType

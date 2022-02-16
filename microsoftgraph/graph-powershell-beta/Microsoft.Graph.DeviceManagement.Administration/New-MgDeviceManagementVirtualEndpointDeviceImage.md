@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointdeviceimage
@@ -15,9 +15,9 @@ The image resource on cloud PC.
 ### CreateExpanded (Default)
 ```
 New-MgDeviceManagementVirtualEndpointDeviceImage [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-Id <String>] [-LastModifiedDateTime <DateTime>] [-OSBuildNumber <String>] [-OperatingSystem <String>]
- [-SourceImageResourceId <String>] [-Status <String>] [-StatusDetails <String>] [-Version <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ExpirationDate <DateTime>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-OSBuildNumber <String>]
+ [-OSStatus <String>] [-OperatingSystem <String>] [-SourceImageResourceId <String>] [-Status <String>]
+ [-StatusDetails <String>] [-Version <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -79,6 +79,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ExpirationDate
+The date the image became unavailable.
+
+```yaml
+Type: DateTime
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Id
 Read-only.
 
@@ -130,6 +145,21 @@ Accept wildcard characters: False
 ### -OSBuildNumber
 The image's OS build version.
 For example: 1909.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -OSStatus
+cloudPcDeviceImageOsStatus
 
 ```yaml
 Type: String

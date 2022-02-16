@@ -50,7 +50,7 @@ Accept wildcard characters: False
 ```
 
 ### -BindStatus
-androidForWorkBindStatus
+Bind status of the tenant with the Google EMM API
 
 ```yaml
 Type: String
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Settings for Android For Work.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAndroidForWorkSettings
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnrollmentTarget
-androidForWorkEnrollmentTarget
+Android for Work device management targeting type for the account
 
 ```yaml
 Type: String
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -LastAppSyncStatus
-androidForWorkSyncStatus
+Sync status of the tenant with the Google EMM API
 
 ```yaml
 Type: String
@@ -282,11 +282,11 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER <IMicrosoftGraphAndroidForWorkSettings>: Settings for Android For Work.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
-  - `[BindStatus <String>]`: androidForWorkBindStatus
+  - `[BindStatus <String>]`: Bind status of the tenant with the Google EMM API
   - `[DeviceOwnerManagementEnabled <Boolean?>]`: Indicates if this account is flighting for Android Device Owner Management with CloudDPC.
-  - `[EnrollmentTarget <String>]`: androidForWorkEnrollmentTarget
+  - `[EnrollmentTarget <String>]`: Android for Work device management targeting type for the account
   - `[LastAppSyncDateTime <DateTime?>]`: Last completion time for app sync
-  - `[LastAppSyncStatus <String>]`: androidForWorkSyncStatus
+  - `[LastAppSyncStatus <String>]`: Sync status of the tenant with the Google EMM API
   - `[LastModifiedDateTime <DateTime?>]`: Last modification time for Android for Work settings
   - `[OwnerOrganizationName <String>]`: Organization name used when onboarding Android for Work
   - `[OwnerUserPrincipalName <String>]`: Owner UPN that created the enterprise

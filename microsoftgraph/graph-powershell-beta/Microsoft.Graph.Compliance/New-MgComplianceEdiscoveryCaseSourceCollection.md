@@ -76,7 +76,7 @@ Accept wildcard characters: False
 
 ### -AdditionalSources
 Adds an additional source to the sourceCollection.
-To construct, see NOTES section for ADDITIONALSOURCES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ADDITIONALSOURCES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEdiscoveryDataSource[]
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 
 ### -AddToReviewSetOperation
 addToReviewSetOperation
-To construct, see NOTES section for ADDTOREVIEWSETOPERATION properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ADDTOREVIEWSETOPERATION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEdiscoveryAddToReviewSetOperation
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 sourceCollection
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEdiscoverySourceCollection
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ### -ContentQuery
 The query string in KQL (Keyword Query Language) query.
 For details, see Keyword queries and search conditions for Content Search and eDiscovery.
-You can refine searches by using fields paired with values; for example, subject:'Quarterly Financials' AND Date\>=06/01/2016 AND Date\<=07/01/2016
+You can refine searches by using fields paired with values; for example, subject:'Quarterly Financials' AND Date\>=06/01/2016 AND Date\<=07/01/2016.
 
 ```yaml
 Type: String
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 identitySet
-To construct, see NOTES section for CREATEDBY properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 
 ### -CustodianSources
 Custodian sources that are included in the sourceCollection.
-To construct, see NOTES section for CUSTODIANSOURCES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for CUSTODIANSOURCES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEdiscoveryDataSource[]
@@ -217,7 +217,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-The description of the sourceCollection
+The description of the sourceCollection.
 
 ```yaml
 Type: String
@@ -232,7 +232,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-The display name of the sourceCollection
+The display name of the sourceCollection.
 
 ```yaml
 Type: String
@@ -263,7 +263,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IComplianceIdentity
@@ -279,7 +279,7 @@ Accept wildcard characters: False
 
 ### -LastEstimateStatisticsOperation
 estimateStatisticsOperation
-To construct, see NOTES section for LASTESTIMATESTATISTICSOPERATION properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for LASTESTIMATESTATISTICSOPERATION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEdiscoveryEstimateStatisticsOperation
@@ -295,7 +295,7 @@ Accept wildcard characters: False
 
 ### -LastModifiedBy
 identitySet
-To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -326,7 +326,7 @@ Accept wildcard characters: False
 
 ### -NoncustodialSources
 noncustodialDataSource sources that are included in the sourceCollection
-To construct, see NOTES section for NONCUSTODIALSOURCES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for NONCUSTODIALSOURCES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEdiscoveryNoncustodialDataSource[]
@@ -402,6 +402,7 @@ ADDITIONALSOURCES <IMicrosoftGraphEdiscoveryDataSource[]>: Adds an additional so
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: The date and time the dataSource was created.
   - `[DisplayName <String>]`: The display name of the dataSource. This will be the name of the SharePoint site.
+  - `[HoldStatus <String>]`: dataSourceHoldStatus
 
 ADDTOREVIEWSETOPERATION <IMicrosoftGraphEdiscoveryAddToReviewSetOperation>: addToReviewSetOperation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -447,13 +448,14 @@ ADDTOREVIEWSETOPERATION <IMicrosoftGraphEdiscoveryAddToReviewSetOperation>: addT
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[CreatedDateTime <DateTime?>]`: The date and time the dataSource was created.
       - `[DisplayName <String>]`: The display name of the dataSource. This will be the name of the SharePoint site.
-    - `[ContentQuery <String>]`: The query string in KQL (Keyword Query Language) query. For details, see Keyword queries and search conditions for Content Search and eDiscovery.  You can refine searches by using fields paired with values; for example, subject:'Quarterly Financials' AND Date>=06/01/2016 AND Date<=07/01/2016
+      - `[HoldStatus <String>]`: dataSourceHoldStatus
+    - `[ContentQuery <String>]`: The query string in KQL (Keyword Query Language) query. For details, see Keyword queries and search conditions for Content Search and eDiscovery. You can refine searches by using fields paired with values; for example, subject:'Quarterly Financials' AND Date>=06/01/2016 AND Date<=07/01/2016.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[CreatedDateTime <DateTime?>]`: The date and time the sourceCollection was created.
     - `[CustodianSources <IMicrosoftGraphEdiscoveryDataSource[]>]`: Custodian sources that are included in the sourceCollection.
     - `[DataSourceScopes <String>]`: dataSourceScopes
-    - `[Description <String>]`: The description of the sourceCollection
-    - `[DisplayName <String>]`: The display name of the sourceCollection
+    - `[Description <String>]`: The description of the sourceCollection.
+    - `[DisplayName <String>]`: The display name of the sourceCollection.
     - `[LastEstimateStatisticsOperation <IMicrosoftGraphEdiscoveryEstimateStatisticsOperation>]`: estimateStatisticsOperation
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Action <String>]`: caseAction
@@ -476,6 +478,7 @@ ADDTOREVIEWSETOPERATION <IMicrosoftGraphEdiscoveryAddToReviewSetOperation>: addT
     - `[NoncustodialSources <IMicrosoftGraphEdiscoveryNoncustodialDataSource[]>]`: noncustodialDataSource sources that are included in the sourceCollection
       - `[CreatedDateTime <DateTime?>]`: Created date and time of the dataSourceContainer entity.
       - `[DisplayName <String>]`: Display name of the dataSourceContainer entity.
+      - `[HoldStatus <String>]`: dataSourceHoldStatus
       - `[LastIndexOperation <IMicrosoftGraphEdiscoveryCaseIndexOperation>]`: caseIndexOperation
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Action <String>]`: caseAction
@@ -537,13 +540,14 @@ BODYPARAMETER <IMicrosoftGraphEdiscoverySourceCollection>: sourceCollection
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[CreatedDateTime <DateTime?>]`: The date and time the dataSource was created.
     - `[DisplayName <String>]`: The display name of the dataSource. This will be the name of the SharePoint site.
-  - `[ContentQuery <String>]`: The query string in KQL (Keyword Query Language) query. For details, see Keyword queries and search conditions for Content Search and eDiscovery.  You can refine searches by using fields paired with values; for example, subject:'Quarterly Financials' AND Date>=06/01/2016 AND Date<=07/01/2016
+    - `[HoldStatus <String>]`: dataSourceHoldStatus
+  - `[ContentQuery <String>]`: The query string in KQL (Keyword Query Language) query. For details, see Keyword queries and search conditions for Content Search and eDiscovery. You can refine searches by using fields paired with values; for example, subject:'Quarterly Financials' AND Date>=06/01/2016 AND Date<=07/01/2016.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[CreatedDateTime <DateTime?>]`: The date and time the sourceCollection was created.
   - `[CustodianSources <IMicrosoftGraphEdiscoveryDataSource[]>]`: Custodian sources that are included in the sourceCollection.
   - `[DataSourceScopes <String>]`: dataSourceScopes
-  - `[Description <String>]`: The description of the sourceCollection
-  - `[DisplayName <String>]`: The display name of the sourceCollection
+  - `[Description <String>]`: The description of the sourceCollection.
+  - `[DisplayName <String>]`: The display name of the sourceCollection.
   - `[LastEstimateStatisticsOperation <IMicrosoftGraphEdiscoveryEstimateStatisticsOperation>]`: estimateStatisticsOperation
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Action <String>]`: caseAction
@@ -566,6 +570,7 @@ BODYPARAMETER <IMicrosoftGraphEdiscoverySourceCollection>: sourceCollection
   - `[NoncustodialSources <IMicrosoftGraphEdiscoveryNoncustodialDataSource[]>]`: noncustodialDataSource sources that are included in the sourceCollection
     - `[CreatedDateTime <DateTime?>]`: Created date and time of the dataSourceContainer entity.
     - `[DisplayName <String>]`: Display name of the dataSourceContainer entity.
+    - `[HoldStatus <String>]`: dataSourceHoldStatus
     - `[LastIndexOperation <IMicrosoftGraphEdiscoveryCaseIndexOperation>]`: caseIndexOperation
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Action <String>]`: caseAction
@@ -604,6 +609,7 @@ CUSTODIANSOURCES <IMicrosoftGraphEdiscoveryDataSource[]>: Custodian sources that
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: The date and time the dataSource was created.
   - `[DisplayName <String>]`: The display name of the dataSource. This will be the name of the SharePoint site.
+  - `[HoldStatus <String>]`: dataSourceHoldStatus
 
 INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   - `[CaseId <String>]`: key: id of case
@@ -678,19 +684,21 @@ LASTESTIMATESTATISTICSOPERATION <IMicrosoftGraphEdiscoveryEstimateStatisticsOper
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[CreatedDateTime <DateTime?>]`: The date and time the dataSource was created.
       - `[DisplayName <String>]`: The display name of the dataSource. This will be the name of the SharePoint site.
-    - `[ContentQuery <String>]`: The query string in KQL (Keyword Query Language) query. For details, see Keyword queries and search conditions for Content Search and eDiscovery.  You can refine searches by using fields paired with values; for example, subject:'Quarterly Financials' AND Date>=06/01/2016 AND Date<=07/01/2016
+      - `[HoldStatus <String>]`: dataSourceHoldStatus
+    - `[ContentQuery <String>]`: The query string in KQL (Keyword Query Language) query. For details, see Keyword queries and search conditions for Content Search and eDiscovery. You can refine searches by using fields paired with values; for example, subject:'Quarterly Financials' AND Date>=06/01/2016 AND Date<=07/01/2016.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[CreatedDateTime <DateTime?>]`: The date and time the sourceCollection was created.
     - `[CustodianSources <IMicrosoftGraphEdiscoveryDataSource[]>]`: Custodian sources that are included in the sourceCollection.
     - `[DataSourceScopes <String>]`: dataSourceScopes
-    - `[Description <String>]`: The description of the sourceCollection
-    - `[DisplayName <String>]`: The display name of the sourceCollection
+    - `[Description <String>]`: The description of the sourceCollection.
+    - `[DisplayName <String>]`: The display name of the sourceCollection.
     - `[LastEstimateStatisticsOperation <IMicrosoftGraphEdiscoveryEstimateStatisticsOperation>]`: estimateStatisticsOperation
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: The last date and time the sourceCollection was modified.
     - `[NoncustodialSources <IMicrosoftGraphEdiscoveryNoncustodialDataSource[]>]`: noncustodialDataSource sources that are included in the sourceCollection
       - `[CreatedDateTime <DateTime?>]`: Created date and time of the dataSourceContainer entity.
       - `[DisplayName <String>]`: Display name of the dataSourceContainer entity.
+      - `[HoldStatus <String>]`: dataSourceHoldStatus
       - `[LastIndexOperation <IMicrosoftGraphEdiscoveryCaseIndexOperation>]`: caseIndexOperation
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Action <String>]`: caseAction
@@ -722,6 +730,7 @@ LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
 NONCUSTODIALSOURCES <IMicrosoftGraphEdiscoveryNoncustodialDataSource[]>: noncustodialDataSource sources that are included in the sourceCollection
   - `[CreatedDateTime <DateTime?>]`: Created date and time of the dataSourceContainer entity.
   - `[DisplayName <String>]`: Display name of the dataSourceContainer entity.
+  - `[HoldStatus <String>]`: dataSourceHoldStatus
   - `[LastIndexOperation <IMicrosoftGraphEdiscoveryCaseIndexOperation>]`: caseIndexOperation
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Action <String>]`: caseAction
@@ -754,6 +763,7 @@ NONCUSTODIALSOURCES <IMicrosoftGraphEdiscoveryNoncustodialDataSource[]>: noncust
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[CreatedDateTime <DateTime?>]`: The date and time the dataSource was created.
     - `[DisplayName <String>]`: The display name of the dataSource. This will be the name of the SharePoint site.
+    - `[HoldStatus <String>]`: dataSourceHoldStatus
 
 ## RELATED LINKS
 

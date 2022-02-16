@@ -19,7 +19,8 @@ New-MgShareListSubscription -SharedDriveItemId <String> [-AdditionalProperties <
  [-EncryptionCertificate <String>] [-EncryptionCertificateId <String>] [-ExpirationDateTime <DateTime>]
  [-Id <String>] [-IncludeResourceData] [-LatestSupportedTlsVersion <String>]
  [-LifecycleNotificationUrl <String>] [-NotificationContentType <String>] [-NotificationQueryOptions <String>]
- [-NotificationUrl <String>] [-Resource <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-NotificationUrl <String>] [-NotificationUrlAppId <String>] [-Resource <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -35,7 +36,8 @@ New-MgShareListSubscription -InputObject <IFilesIdentity> [-AdditionalProperties
  [-EncryptionCertificate <String>] [-EncryptionCertificateId <String>] [-ExpirationDateTime <DateTime>]
  [-Id <String>] [-IncludeResourceData] [-LatestSupportedTlsVersion <String>]
  [-LifecycleNotificationUrl <String>] [-NotificationContentType <String>] [-NotificationQueryOptions <String>]
- [-NotificationUrl <String>] [-Resource <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-NotificationUrl <String>] [-NotificationUrlAppId <String>] [-Resource <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -84,7 +86,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 subscription
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSubscription
@@ -99,10 +101,10 @@ Accept wildcard characters: False
 ```
 
 ### -ChangeType
+Required.
 Indicates the type of change in the subscribed resource that will raise a change notification.
 The supported values are: created, updated, deleted.
 Multiple values can be combined using a comma-separated list.
-Required.
 Note: Drive root item and list change notifications support only the updated changeType.
 User and group change notifications support updated and deleted changeType.
 
@@ -119,10 +121,10 @@ Accept wildcard characters: False
 ```
 
 ### -ClientState
-Specifies the value of the clientState property sent by the service in each change notification.
-The maximum length is 255 characters.
-The client can check that the change notification came from the service by comparing the value of the clientState property sent with the subscription with the value of the clientState property received with each change notification.
 Optional.
+Specifies the value of the clientState property sent by the service in each change notification.
+The maximum length is 128 characters.
+The client can check that the change notification came from the service by comparing the value of the clientState property sent with the subscription with the value of the clientState property received with each change notification.
 
 ```yaml
 Type: String
@@ -138,8 +140,8 @@ Accept wildcard characters: False
 
 ### -CreatorId
 Identifier of the user or service principal that created the subscription.
-If the app used delegated permissions to create the subscription, this field contains the ID of the signed-in user the app called on behalf of.
-If the app used application permissions, this field contains the ID of the service principal corresponding to the app.
+If the app used delegated permissions to create the subscription, this field contains the id of the signed-in user the app called on behalf of.
+If the app used application permissions, this field contains the id of the service principal corresponding to the app.
 Read-only.
 
 ```yaml
@@ -156,8 +158,7 @@ Accept wildcard characters: False
 
 ### -EncryptionCertificate
 A base64-encoded representation of a certificate with a public key used to encrypt resource data in change notifications.
-Optional.
-Required when includeResourceData is true.
+Optional but required when includeResourceData is true.
 
 ```yaml
 Type: String
@@ -172,9 +173,8 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionCertificateId
-A custom app-provided identifier to help identify the certificate needed to decrypt resource data.
 Optional.
-Required when includeResourceData is true.
+A custom app-provided identifier to help identify the certificate needed to decrypt resource data.
 
 ```yaml
 Type: String
@@ -189,10 +189,10 @@ Accept wildcard characters: False
 ```
 
 ### -ExpirationDateTime
+Required.
 Specifies the date and time when the webhook subscription expires.
 The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to.
-See the table below for maximum supported subscription length of time.
-Required.
+For the maximum supported subscription length of time, see the table below.
 
 ```yaml
 Type: DateTime
@@ -222,8 +222,8 @@ Accept wildcard characters: False
 ```
 
 ### -IncludeResourceData
-When set to true, change notifications include resource data (such as content of a chat message).
 Optional.
+When set to true, change notifications include resource data (such as content of a chat message).
 
 ```yaml
 Type: SwitchParameter
@@ -239,7 +239,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFilesIdentity
@@ -274,10 +274,9 @@ Accept wildcard characters: False
 ```
 
 ### -LifecycleNotificationUrl
+Optional.
 The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved and missed notifications.
 This URL must make use of the HTTPS protocol.
-Optional.
-Read more about how Outlook resources use lifecycle notifications.
 
 ```yaml
 Type: String
@@ -292,8 +291,8 @@ Accept wildcard characters: False
 ```
 
 ### -NotificationContentType
-Desired content-type for MS Graph change notifications for supported resource types.
-The default content-type is the 'application/json' content-type.
+Desired content-type for Microsoft Graph change notifications for supported resource types.
+The default content-type is application/json.
 
 ```yaml
 Type: String
@@ -308,9 +307,10 @@ Accept wildcard characters: False
 ```
 
 ### -NotificationQueryOptions
-OData Query Options for specifying value for the targeting resource.
+OData query options for specifying value for the targeting resource.
 Clients receive notifications when resource reaches the state matching the query options provided here.
-With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property eg when the print job is completed, when a print job resource isFetchable property value becomes true etc.
+With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property.
+For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc.
 
 ```yaml
 Type: String
@@ -325,9 +325,24 @@ Accept wildcard characters: False
 ```
 
 ### -NotificationUrl
-The URL of the endpoint that receives the change notifications.
-This URL must make use of the HTTPS protocol.
 Required.
+The URL of the endpoint that will receive the change notifications.
+This URL must make use of the HTTPS protocol.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -NotificationUrlAppId
+.
 
 ```yaml
 Type: String
@@ -342,10 +357,10 @@ Accept wildcard characters: False
 ```
 
 ### -Resource
-Specifies the resource that will be monitored for changes.
-Do not include the base URL (https://graph.microsoft.com/beta/).
-See the possible resource path values for each supported resource.
 Required.
+Specifies the resource that will be monitored for changes.
+Do not include the base URL (https://graph.microsoft.com/v1.0/).
+See the possible resource path values for each supported resource.
 
 ```yaml
 Type: String
@@ -428,19 +443,20 @@ BODYPARAMETER <IMicrosoftGraphSubscription>: subscription
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
   - `[ApplicationId <String>]`: Identifier of the application used to create the subscription. Read-only.
-  - `[ChangeType <String>]`: Indicates the type of change in the subscribed resource that will raise a change notification. The supported values are: created, updated, deleted. Multiple values can be combined using a comma-separated list. Required. Note: Drive root item and list change notifications support only the updated changeType. User and group change notifications support updated and deleted changeType.
-  - `[ClientState <String>]`: Specifies the value of the clientState property sent by the service in each change notification. The maximum length is 255 characters. The client can check that the change notification came from the service by comparing the value of the clientState property sent with the subscription with the value of the clientState property received with each change notification. Optional.
-  - `[CreatorId <String>]`: Identifier of the user or service principal that created the subscription. If the app used delegated permissions to create the subscription, this field contains the ID of the signed-in user the app called on behalf of. If the app used application permissions, this field contains the ID of the service principal corresponding to the app. Read-only.
-  - `[EncryptionCertificate <String>]`: A base64-encoded representation of a certificate with a public key used to encrypt resource data in change notifications. Optional. Required when includeResourceData is true.
-  - `[EncryptionCertificateId <String>]`: A custom app-provided identifier to help identify the certificate needed to decrypt resource data. Optional. Required when includeResourceData is true.
-  - `[ExpirationDateTime <DateTime?>]`: Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to.  See the table below for maximum supported subscription length of time. Required.
-  - `[IncludeResourceData <Boolean?>]`: When set to true, change notifications include resource data (such as content of a chat message). Optional.
+  - `[ChangeType <String>]`: Required. Indicates the type of change in the subscribed resource that will raise a change notification. The supported values are: created, updated, deleted. Multiple values can be combined using a comma-separated list. Note:  Drive root item and list change notifications support only the updated changeType. User and group change notifications support updated and deleted changeType.
+  - `[ClientState <String>]`: Optional. Specifies the value of the clientState property sent by the service in each change notification. The maximum length is 128 characters. The client can check that the change notification came from the service by comparing the value of the clientState property sent with the subscription with the value of the clientState property received with each change notification.
+  - `[CreatorId <String>]`: Identifier of the user or service principal that created the subscription. If the app used delegated permissions to create the subscription, this field contains the id of the signed-in user the app called on behalf of. If the app used application permissions, this field contains the id of the service principal corresponding to the app. Read-only.
+  - `[EncryptionCertificate <String>]`: A base64-encoded representation of a certificate with a public key used to encrypt resource data in change notifications. Optional but required when includeResourceData is true.
+  - `[EncryptionCertificateId <String>]`: Optional. A custom app-provided identifier to help identify the certificate needed to decrypt resource data.
+  - `[ExpirationDateTime <DateTime?>]`: Required. Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to. For the maximum supported subscription length of time, see the table below.
+  - `[IncludeResourceData <Boolean?>]`: Optional. When set to true, change notifications include resource data (such as content of a chat message).
   - `[LatestSupportedTlsVersion <String>]`: Specifies the latest version of Transport Layer Security (TLS) that the notification endpoint, specified by notificationUrl, supports. The possible values are: v1_0, v1_1, v1_2, v1_3. For subscribers whose notification endpoint supports a version lower than the currently recommended version (TLS 1.2), specifying this property by a set timeline allows them to temporarily use their deprecated version of TLS before completing their upgrade to TLS 1.2. For these subscribers, not setting this property per the timeline would result in subscription operations failing. For subscribers whose notification endpoint already supports TLS 1.2, setting this property is optional. In such cases, Microsoft Graph defaults the property to v1_2.
-  - `[LifecycleNotificationUrl <String>]`: The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved and missed notifications. This URL must make use of the HTTPS protocol. Optional. Read more about how Outlook resources use lifecycle notifications.
-  - `[NotificationContentType <String>]`: Desired content-type for MS Graph change notifications for supported resource types. The default content-type is the 'application/json' content-type.
-  - `[NotificationQueryOptions <String>]`: OData Query Options for specifying value for the targeting resource. Clients receive notifications when resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property eg  when the print job is completed, when a print job resource isFetchable property value becomes true etc.
-  - `[NotificationUrl <String>]`: The URL of the endpoint that receives the change notifications. This URL must make use of the HTTPS protocol. Required.
-  - `[Resource <String>]`: Specifies the resource that will be monitored for changes. Do not include the base URL (https://graph.microsoft.com/beta/). See the possible resource path values for each supported resource. Required.
+  - `[LifecycleNotificationUrl <String>]`: Optional. The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved and missed notifications. This URL must make use of the HTTPS protocol.
+  - `[NotificationContentType <String>]`: Desired content-type for Microsoft Graph change notifications for supported resource types. The default content-type is application/json.
+  - `[NotificationQueryOptions <String>]`: OData query options for specifying value for the targeting resource. Clients receive notifications when resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property. For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc.
+  - `[NotificationUrl <String>]`: Required. The URL of the endpoint that will receive the change notifications. This URL must make use of the HTTPS protocol.
+  - `[NotificationUrlAppId <String>]`: 
+  - `[Resource <String>]`: Required. Specifies the resource that will be monitored for changes. Do not include the base URL (https://graph.microsoft.com/v1.0/). See the possible resource path values for each supported resource.
 
 INPUTOBJECT <IFilesIdentity>: Identity Parameter
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
@@ -454,9 +470,11 @@ INPUTOBJECT <IFilesIdentity>: Identity Parameter
   - `[ListItemId <String>]`: key: id of listItem
   - `[ListItemVersionId <String>]`: key: id of listItemVersion
   - `[Q <String>]`: Usage: q={q}
+  - `[RichLongRunningOperationId <String>]`: key: id of richLongRunningOperation
   - `[SharedDriveItemId <String>]`: key: id of sharedDriveItem
   - `[StartDateTime <String>]`: Usage: startDateTime={startDateTime}
   - `[SubscriptionId <String>]`: key: id of subscription
+  - `[Token <String>]`: Usage: token={token}
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS

@@ -53,7 +53,7 @@ Accept wildcard characters: False
 
 ### -AdvancedThreatProtectionOnboardingDeviceSettingStates
 Not yet documented
-To construct, see NOTES section for ADVANCEDTHREATPROTECTIONONBOARDINGDEVICESETTINGSTATES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ADVANCEDTHREATPROTECTIONONBOARDINGDEVICESETTINGSTATES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState[]
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Windows defender advanced threat protection onboarding state summary across the account.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAdvancedThreatProtectionOnboardingStateSummary
@@ -288,7 +288,7 @@ ADVANCEDTHREATPROTECTIONONBOARDINGDEVICESETTINGSTATES <IMicrosoftGraphAdvancedTh
   - `[DeviceId <String>]`: The Device Id that is being reported
   - `[DeviceModel <String>]`: The device model that is being reported
   - `[DeviceName <String>]`: The Device Name that is being reported
-  - `[PlatformType <String>]`: deviceType
+  - `[PlatformType <String>]`: Device type.
   - `[Setting <String>]`: The setting class name and property name.
   - `[SettingName <String>]`: The Setting Name that is being reported
   - `[State <String>]`: complianceStatus
@@ -306,7 +306,7 @@ BODYPARAMETER <IMicrosoftGraphAdvancedThreatProtectionOnboardingStateSummary>: W
     - `[DeviceId <String>]`: The Device Id that is being reported
     - `[DeviceModel <String>]`: The device model that is being reported
     - `[DeviceName <String>]`: The Device Name that is being reported
-    - `[PlatformType <String>]`: deviceType
+    - `[PlatformType <String>]`: Device type.
     - `[Setting <String>]`: The setting class name and property name.
     - `[SettingName <String>]`: The Setting Name that is being reported
     - `[State <String>]`: complianceStatus

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintshare
@@ -17,10 +17,10 @@ The list of printer shares registered in the tenant.
 New-MgPrintShare [-AdditionalProperties <Hashtable>] [-AllowAllUsers]
  [-AllowedGroups <IMicrosoftGraphGroup1[]>] [-AllowedUsers <IMicrosoftGraphUser[]>]
  [-Capabilities <IMicrosoftGraphPrinterCapabilities1>] [-CreatedDateTime <DateTime>]
- [-Defaults <IMicrosoftGraphPrinterDefaults1>] [-DisplayName <String>] [-Id <String>] [-IsAcceptingJobs]
- [-Jobs <IMicrosoftGraphPrintJob1[]>] [-Location <IMicrosoftGraphPrinterLocation1>] [-Manufacturer <String>]
+ [-Defaults <IMicrosoftGraphPrinterDefaults>] [-DisplayName <String>] [-Id <String>] [-IsAcceptingJobs]
+ [-Jobs <IMicrosoftGraphPrintJob[]>] [-Location <IMicrosoftGraphPrinterLocation1>] [-Manufacturer <String>]
  [-Model <String>] [-Name <String>] [-Printer <IMicrosoftGraphPrinter1>]
- [-Status <IMicrosoftGraphPrinterStatus1>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Status <IMicrosoftGraphPrinterStatus>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
@@ -151,7 +151,7 @@ printerDefaults
 To construct, see NOTES section for DEFAULTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrinterDefaults1
+Type: IMicrosoftGraphPrinterDefaults
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -212,7 +212,7 @@ The list of jobs that are queued for printing by the printer/printerShare.
 To construct, see NOTES section for JOBS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintJob1[]
+Type: IMicrosoftGraphPrintJob[]
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -305,7 +305,7 @@ printerStatus
 To construct, see NOTES section for STATUS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrinterStatus1
+Type: IMicrosoftGraphPrinterStatus
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -15877,5 +15877,8 @@ STATUS <IMicrosoftGraphPrinterStatus1>: printerStatus
   - `[State <String>]`: printerProcessingState
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

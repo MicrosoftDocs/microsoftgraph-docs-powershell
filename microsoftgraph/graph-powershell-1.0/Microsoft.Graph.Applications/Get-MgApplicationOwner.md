@@ -11,6 +11,7 @@ schema: 2.0.0
 Directory objects that are owners of the application.
 Read-only.
 Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -24,6 +25,7 @@ Get-MgApplicationOwner -ApplicationId <String> [-ExpandProperty <String[]>] [-Fi
 Directory objects that are owners of the application.
 Read-only.
 Nullable.
+Supports $expand.
 
 ## EXAMPLES
 

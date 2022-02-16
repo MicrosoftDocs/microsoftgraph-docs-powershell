@@ -64,7 +64,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsN3Fx9GServiceprincipalsServiceprincipalIdMicrosoftGraphAddkeyPostRequestbodyContentApplicationJsonSchema
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 
 ### -KeyCredential
 keyCredential
-To construct, see NOTES section for KEYCREDENTIAL properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for KEYCREDENTIAL properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphKeyCredential
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 
 ### -PasswordCredential
 passwordCredential
-To construct, see NOTES section for PASSWORDCREDENTIAL properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for PASSWORDCREDENTIAL properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPasswordCredential
@@ -212,12 +212,12 @@ BODYPARAMETER <IPathsN3Fx9GServiceprincipalsServiceprincipalIdMicrosoftGraphAddk
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CustomKeyIdentifier <Byte[]>]`: Custom key identifier
     - `[DisplayName <String>]`: Friendly name for the key. Optional.
-    - `[EndDateTime <DateTime?>]`: The date and time at which the credential expires.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[Key <Byte[]>]`: Value for the key credential. Should be a base 64 encoded value.
+    - `[EndDateTime <DateTime?>]`: The date and time at which the credential expires. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[Key <Byte[]>]`: The certificate's raw data in byte array converted to Base64 string. Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it is always null.
     - `[KeyId <String>]`: The unique identifier (GUID) for the key.
-    - `[StartDateTime <DateTime?>]`: The date and time at which the credential becomes valid.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[Type <String>]`: The type of key credential; for example, 'Symmetric'.
-    - `[Usage <String>]`: A string that describes the purpose for which the key can be used; for example, 'Verify'.
+    - `[StartDateTime <DateTime?>]`: The date and time at which the credential becomes valid.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[Type <String>]`: The type of key credential; for example, Symmetric, AsymmetricX509Cert.
+    - `[Usage <String>]`: A string that describes the purpose for which the key can be used; for example, Verify.
   - `[PasswordCredential <IMicrosoftGraphPasswordCredential>]`: passwordCredential
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CustomKeyIdentifier <Byte[]>]`: Do not use.
@@ -239,6 +239,7 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[DirectoryDefinitionId <String>]`: key: id of directoryDefinition
   - `[EndpointId <String>]`: key: id of endpoint
   - `[ExtensionPropertyId <String>]`: key: id of extensionProperty
+  - `[FederatedIdentityCredentialId <String>]`: key: id of federatedIdentityCredential
   - `[GroupId <String>]`: key: id of group
   - `[LicenseDetailsId <String>]`: key: id of licenseDetails
   - `[OnPremisesAgentGroupId <String>]`: key: id of onPremisesAgentGroup
@@ -257,12 +258,12 @@ KEYCREDENTIAL <IMicrosoftGraphKeyCredential>: keyCredential
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CustomKeyIdentifier <Byte[]>]`: Custom key identifier
   - `[DisplayName <String>]`: Friendly name for the key. Optional.
-  - `[EndDateTime <DateTime?>]`: The date and time at which the credential expires.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Key <Byte[]>]`: Value for the key credential. Should be a base 64 encoded value.
+  - `[EndDateTime <DateTime?>]`: The date and time at which the credential expires. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[Key <Byte[]>]`: The certificate's raw data in byte array converted to Base64 string. Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it is always null.
   - `[KeyId <String>]`: The unique identifier (GUID) for the key.
-  - `[StartDateTime <DateTime?>]`: The date and time at which the credential becomes valid.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Type <String>]`: The type of key credential; for example, 'Symmetric'.
-  - `[Usage <String>]`: A string that describes the purpose for which the key can be used; for example, 'Verify'.
+  - `[StartDateTime <DateTime?>]`: The date and time at which the credential becomes valid.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[Type <String>]`: The type of key credential; for example, Symmetric, AsymmetricX509Cert.
+  - `[Usage <String>]`: A string that describes the purpose for which the key can be used; for example, Verify.
 
 PASSWORDCREDENTIAL <IMicrosoftGraphPasswordCredential>: passwordCredential
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

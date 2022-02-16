@@ -72,7 +72,7 @@ Accept wildcard characters: False
 
 ### -Activity
 userActivity
-To construct, see NOTES section for ACTIVITY properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ACTIVITY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserActivity1
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 activityHistoryItem
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphActivityHistoryItem1
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ICrossDeviceExperiencesIdentity

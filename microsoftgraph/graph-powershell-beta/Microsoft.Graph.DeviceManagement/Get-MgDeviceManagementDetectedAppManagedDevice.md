@@ -198,7 +198,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDevice
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDevice1
 ## NOTES
 
 ALIASES

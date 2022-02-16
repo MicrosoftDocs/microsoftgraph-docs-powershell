@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgpolicyfeaturerolloutpolicy
@@ -22,7 +22,7 @@ New-MgPolicyFeatureRolloutPolicy [-AdditionalProperties <Hashtable>]
 
 ### Create1
 ```
-New-MgPolicyFeatureRolloutPolicy -BodyParameter <IMicrosoftGraphFeatureRolloutPolicy> [-WhatIf] [-Confirm]
+New-MgPolicyFeatureRolloutPolicy -BodyParameter <IMicrosoftGraphFeatureRolloutPolicy1> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -70,7 +70,7 @@ featureRolloutPolicy
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphFeatureRolloutPolicy
+Type: IMicrosoftGraphFeatureRolloutPolicy1
 Parameter Sets: Create1
 Aliases:
 
@@ -207,10 +207,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFeatureRolloutPolicy
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFeatureRolloutPolicy1
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFeatureRolloutPolicy
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFeatureRolloutPolicy1
 ## NOTES
 
 ALIASES

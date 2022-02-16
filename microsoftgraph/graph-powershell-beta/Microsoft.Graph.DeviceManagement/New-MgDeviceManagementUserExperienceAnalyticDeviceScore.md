@@ -15,8 +15,9 @@ User experience analytics device scores
 ### CreateExpanded (Default)
 ```
 New-MgDeviceManagementUserExperienceAnalyticDeviceScore [-AdditionalProperties <Hashtable>]
- [-AppReliabilityScore <Double>] [-DeviceName <String>] [-EndpointAnalyticsScore <Double>] [-Id <String>]
- [-Manufacturer <String>] [-Model <String>] [-StartupPerformanceScore <Double>] [-WhatIf] [-Confirm]
+ [-AppReliabilityScore <Double>] [-DeviceName <String>] [-EndpointAnalyticsScore <Double>]
+ [-HealthStatus <String>] [-Id <String>] [-Manufacturer <String>] [-Model <String>]
+ [-StartupPerformanceScore <Double>] [-WorkFromAnywhereScore <Double>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -66,7 +67,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analytics device scores entity consolidates the various endpoint analytics scores.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsDeviceScores
@@ -101,6 +102,21 @@ Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ```yaml
 Type: Double
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -HealthStatus
+userExperienceAnalyticsHealthState
+
+```yaml
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -172,6 +188,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -WorkFromAnywhereScore
+The user experience analytics device work From anywhere score.
+Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+
+```yaml
+Type: Double
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -227,8 +259,10 @@ BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsDeviceScores>: The user exp
   - `[AppReliabilityScore <Double?>]`: The user experience analytics device app reliability score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
   - `[DeviceName <String>]`: The user experience analytics device name.
   - `[EndpointAnalyticsScore <Double?>]`: The user experience analytics device score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+  - `[HealthStatus <String>]`: userExperienceAnalyticsHealthState
   - `[Manufacturer <String>]`: The user experience analytics device manufacturer.
   - `[Model <String>]`: The user experience analytics device model.
   - `[StartupPerformanceScore <Double?>]`: The user experience analytics device startup performance score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+  - `[WorkFromAnywhereScore <Double?>]`: The user experience analytics device work From anywhere score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ## RELATED LINKS

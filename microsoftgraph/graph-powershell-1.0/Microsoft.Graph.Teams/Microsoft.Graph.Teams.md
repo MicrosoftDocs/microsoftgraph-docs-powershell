@@ -1,6 +1,6 @@
----
+﻿---
 Module Name: Microsoft.Graph.Teams
-Module Guid: 1ad55862-5c4c-49e8-b9d7-0a93457fa96b
+Module Guid: 70816f2b-e7a1-4c6f-a0c2-96b3dd9f572b
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams
 Help Version: 1.0.0.0
 Locale: en-US
@@ -11,6 +11,18 @@ Locale: en-US
 Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Teams Cmdlets
+### [Add-MgChatMember](Add-MgChatMember.md)
+Invoke action add
+
+### [Add-MgTeamChannelMember](Add-MgTeamChannelMember.md)
+Invoke action add
+
+### [Add-MgTeamMember](Add-MgTeamMember.md)
+Invoke action add
+
+### [Add-MgTeamPrimaryChannelMember](Add-MgTeamPrimaryChannelMember.md)
+Invoke action add
+
 ### [Complete-MgTeamChannelMigration](Complete-MgTeamChannelMigration.md)
 Invoke action completeMigration
 
@@ -302,6 +314,9 @@ Add new entity to teams
 ### [New-MgTeamChannel](New-MgTeamChannel.md)
 The collection of channels & messages associated with the team.
 
+### [New-MgTeamChannelEmail](New-MgTeamChannelEmail.md)
+Invoke action provisionEmail
+
 ### [New-MgTeamChannelMember](New-MgTeamChannelMember.md)
 A collection of membership records associated with the channel.
 
@@ -328,6 +343,9 @@ Members and owners of the team.
 
 ### [New-MgTeamOperation](New-MgTeamOperation.md)
 The async operations that ran or are running on this team.
+
+### [New-MgTeamPrimaryChannelEmail](New-MgTeamPrimaryChannelEmail.md)
+Invoke action provisionEmail
 
 ### [New-MgTeamPrimaryChannelMember](New-MgTeamPrimaryChannelMember.md)
 A collection of membership records associated with the channel.
@@ -414,16 +432,6 @@ The details of this version of the app.
 A collection of all the members in the chat.
 Nullable.
 
-### [Remove-MgChatMessage](Remove-MgChatMessage.md)
-A collection of all the messages in the chat.
-Nullable.
-
-### [Remove-MgChatMessageHostedContent](Remove-MgChatMessageHostedContent.md)
-Content in a message hosted by Microsoft Teams - for example, images or code snippets.
-
-### [Remove-MgChatMessageReply](Remove-MgChatMessageReply.md)
-Replies for a specified message.
-
 ### [Remove-MgChatTab](Remove-MgChatTab.md)
 Delete navigation property tabs for chats
 
@@ -439,22 +447,14 @@ Delete entity from teams
 ### [Remove-MgTeamChannel](Remove-MgTeamChannel.md)
 The collection of channels & messages associated with the team.
 
+### [Remove-MgTeamChannelEmail](Remove-MgTeamChannelEmail.md)
+Invoke action removeEmail
+
 ### [Remove-MgTeamChannelFileFolder](Remove-MgTeamChannelFileFolder.md)
 Metadata for the location where the channel's files are stored.
 
 ### [Remove-MgTeamChannelMember](Remove-MgTeamChannelMember.md)
 A collection of membership records associated with the channel.
-
-### [Remove-MgTeamChannelMessage](Remove-MgTeamChannelMessage.md)
-A collection of all the messages in the channel.
-A navigation property.
-Nullable.
-
-### [Remove-MgTeamChannelMessageHostedContent](Remove-MgTeamChannelMessageHostedContent.md)
-Content in a message hosted by Microsoft Teams - for example, images or code snippets.
-
-### [Remove-MgTeamChannelMessageReply](Remove-MgTeamChannelMessageReply.md)
-Replies for a specified message.
 
 ### [Remove-MgTeamChannelTab](Remove-MgTeamChannelTab.md)
 A collection of all the tabs in the channel.
@@ -484,22 +484,14 @@ The async operations that ran or are running on this team.
 ### [Remove-MgTeamPrimaryChannel](Remove-MgTeamPrimaryChannel.md)
 The general channel for the team.
 
+### [Remove-MgTeamPrimaryChannelEmail](Remove-MgTeamPrimaryChannelEmail.md)
+Invoke action removeEmail
+
 ### [Remove-MgTeamPrimaryChannelFileFolder](Remove-MgTeamPrimaryChannelFileFolder.md)
 Metadata for the location where the channel's files are stored.
 
 ### [Remove-MgTeamPrimaryChannelMember](Remove-MgTeamPrimaryChannelMember.md)
 A collection of membership records associated with the channel.
-
-### [Remove-MgTeamPrimaryChannelMessage](Remove-MgTeamPrimaryChannelMessage.md)
-A collection of all the messages in the channel.
-A navigation property.
-Nullable.
-
-### [Remove-MgTeamPrimaryChannelMessageHostedContent](Remove-MgTeamPrimaryChannelMessageHostedContent.md)
-Content in a message hosted by Microsoft Teams - for example, images or code snippets.
-
-### [Remove-MgTeamPrimaryChannelMessageReply](Remove-MgTeamPrimaryChannelMessageReply.md)
-Replies for a specified message.
 
 ### [Remove-MgTeamPrimaryChannelTab](Remove-MgTeamPrimaryChannelTab.md)
 A collection of all the tabs in the channel.
@@ -631,9 +623,6 @@ Nullable.
 A collection of all the messages in the chat.
 Nullable.
 
-### [Update-MgChatMessageHostedContent](Update-MgChatMessageHostedContent.md)
-Content in a message hosted by Microsoft Teams - for example, images or code snippets.
-
 ### [Update-MgChatMessageReply](Update-MgChatMessageReply.md)
 Replies for a specified message.
 
@@ -659,9 +648,6 @@ A collection of membership records associated with the channel.
 A collection of all the messages in the channel.
 A navigation property.
 Nullable.
-
-### [Update-MgTeamChannelMessageHostedContent](Update-MgTeamChannelMessageHostedContent.md)
-Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
 ### [Update-MgTeamChannelMessageReply](Update-MgTeamChannelMessageReply.md)
 Replies for a specified message.
@@ -692,9 +678,6 @@ A collection of membership records associated with the channel.
 A collection of all the messages in the channel.
 A navigation property.
 Nullable.
-
-### [Update-MgTeamPrimaryChannelMessageHostedContent](Update-MgTeamPrimaryChannelMessageHostedContent.md)
-Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
 ### [Update-MgTeamPrimaryChannelMessageReply](Update-MgTeamPrimaryChannelMessageReply.md)
 Replies for a specified message.

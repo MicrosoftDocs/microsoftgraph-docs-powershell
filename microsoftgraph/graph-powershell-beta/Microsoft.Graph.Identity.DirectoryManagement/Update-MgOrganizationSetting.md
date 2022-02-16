@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganizationsetting
@@ -16,7 +16,7 @@ Nullable.
 ### UpdateExpanded (Default)
 ```
 Update-MgOrganizationSetting -OrganizationId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-ItemInsights <IMicrosoftGraphItemInsightsSettings>]
+ [-ItemInsights <IMicrosoftGraphInsightsSettings>] [-PeopleInsights <IMicrosoftGraphInsightsSettings>]
  [-ProfileCardProperties <IMicrosoftGraphProfileCardProperty[]>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -30,7 +30,8 @@ Update-MgOrganizationSetting -OrganizationId <String> -BodyParameter <IMicrosoft
 ### UpdateViaIdentityExpanded
 ```
 Update-MgOrganizationSetting -InputObject <IIdentityDirectoryManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-ItemInsights <IMicrosoftGraphItemInsightsSettings>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-ItemInsights <IMicrosoftGraphInsightsSettings>]
+ [-PeopleInsights <IMicrosoftGraphInsightsSettings>]
  [-ProfileCardProperties <IMicrosoftGraphProfileCardProperty[]>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -116,7 +117,7 @@ itemInsightsSettings
 To construct, see NOTES section for ITEMINSIGHTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemInsightsSettings
+Type: IMicrosoftGraphInsightsSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -148,6 +149,22 @@ Returns true when the command succeeds
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PeopleInsights
+insightsSettings
+To construct, please use Get-Help -Online and see NOTES section for PEOPLEINSIGHTS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphInsightsSettings
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False

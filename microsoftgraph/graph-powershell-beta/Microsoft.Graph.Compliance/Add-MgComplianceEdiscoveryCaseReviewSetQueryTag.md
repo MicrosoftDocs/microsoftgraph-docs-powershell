@@ -65,7 +65,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsWh2810ComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdQueriesReviewsetqueryIdMicrosoftGraphEdiscoveryApplytagsPostRequestbodyContentApplicationJsonSchema
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IComplianceIdentity
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 
 ### -TagsToAdd
 .
-To construct, see NOTES section for TAGSTOADD properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for TAGSTOADD properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEdiscoveryTag[]
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 
 ### -TagsToRemove
 .
-To construct, see NOTES section for TAGSTOREMOVE properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for TAGSTOREMOVE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEdiscoveryTag[]

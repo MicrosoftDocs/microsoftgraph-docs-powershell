@@ -8,10 +8,8 @@ schema: 2.0.0
 # Get-MgGroupMemberWithLicenseErrorByRef
 
 ## SYNOPSIS
-Groups and administrative units that this group is a member of.
-HTTP Methods: GET (supported for all groups).
+A list of group members with license errors from this group-based license assignment.
 Read-only.
-Nullable.
 
 ## SYNTAX
 
@@ -21,10 +19,8 @@ Get-MgGroupMemberWithLicenseErrorByRef -GroupId <String> [-Filter <String>] [-Se
 ```
 
 ## DESCRIPTION
-Groups and administrative units that this group is a member of.
-HTTP Methods: GET (supported for all groups).
+A list of group members with license errors from this group-based license assignment.
 Read-only.
-Nullable.
 
 ## EXAMPLES
 

@@ -12,13 +12,13 @@ Invoke action validateProperties
 
 ## SYNTAX
 
-### ValidateExpanded (Default)
+### ValidateExpanded1 (Default)
 ```
 Test-MgApplicationProperty [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-EntityType <String>]
  [-MailNickname <String>] [-OnBehalfOfUserId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Validate
+### Validate1
 ```
 Test-MgApplicationProperty
  -BodyParameter <IPathsW28MefApplicationsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>
@@ -37,7 +37,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: ValidateExpanded
+Parameter Sets: ValidateExpanded1
 Aliases:
 
 Required: False
@@ -49,11 +49,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsW28MefApplicationsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Validate
+Parameter Sets: Validate1
 Aliases:
 
 Required: True
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: ValidateExpanded
+Parameter Sets: ValidateExpanded1
 Aliases:
 
 Required: False
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: ValidateExpanded
+Parameter Sets: ValidateExpanded1
 Aliases:
 
 Required: False
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: ValidateExpanded
+Parameter Sets: ValidateExpanded1
 Aliases:
 
 Required: False
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: ValidateExpanded
+Parameter Sets: ValidateExpanded1
 Aliases:
 
 Required: False

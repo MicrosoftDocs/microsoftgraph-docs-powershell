@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementaccesspackageassignmentrequest
@@ -12,7 +12,13 @@ Update the navigation property accessPackageAssignmentRequests in identityGovern
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### Reprocess (Default)
+```
+Update-MgEntitlementManagementAccessPackageAssignmentRequest -AccessPackageAssignmentRequestId <String>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateExpanded
 ```
 Update-MgEntitlementManagementAccessPackageAssignmentRequest -AccessPackageAssignmentRequestId <String>
  [-AccessPackage <IMicrosoftGraphAccessPackage>]
@@ -20,7 +26,7 @@ Update-MgEntitlementManagementAccessPackageAssignmentRequest -AccessPackageAssig
  [-Answers <IMicrosoftGraphAccessPackageAnswer[]>] [-CompletedDate <DateTime>] [-CreatedDateTime <DateTime>]
  [-ExpirationDateTime <DateTime>] [-Id <String>] [-IsValidationOnly] [-Justification <String>]
  [-RequestState <String>] [-RequestStatus <String>] [-RequestType <String>]
- [-Requestor <IMicrosoftGraphAccessPackageSubject>] [-Schedule <IMicrosoftGraphRequestSchedule>] [-PassThru]
+ [-Requestor <IMicrosoftGraphAccessPackageSubject1>] [-Schedule <IMicrosoftGraphRequestSchedule>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -39,7 +45,7 @@ Update-MgEntitlementManagementAccessPackageAssignmentRequest -InputObject <IIden
  [-Answers <IMicrosoftGraphAccessPackageAnswer[]>] [-CompletedDate <DateTime>] [-CreatedDateTime <DateTime>]
  [-ExpirationDateTime <DateTime>] [-Id <String>] [-IsValidationOnly] [-Justification <String>]
  [-RequestState <String>] [-RequestStatus <String>] [-RequestType <String>]
- [-Requestor <IMicrosoftGraphAccessPackageSubject>] [-Schedule <IMicrosoftGraphRequestSchedule>] [-PassThru]
+ [-Requestor <IMicrosoftGraphAccessPackageSubject1>] [-Schedule <IMicrosoftGraphRequestSchedule>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -48,6 +54,12 @@ Update-MgEntitlementManagementAccessPackageAssignmentRequest -InputObject <IIden
 Update-MgEntitlementManagementAccessPackageAssignmentRequest -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IMicrosoftGraphAccessPackageAssignmentRequest> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
+```
+
+### ReprocessViaIdentity
+```
+Update-MgEntitlementManagementAccessPackageAssignmentRequest -InputObject <IIdentityGovernanceIdentity>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -94,7 +106,7 @@ key: id of accessPackageAssignmentRequest
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: Reprocess, UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -222,7 +234,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IIdentityGovernanceIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity, ReprocessViaIdentity
 Aliases:
 
 Required: True
@@ -282,7 +294,7 @@ accessPackageSubject
 To construct, see NOTES section for REQUESTOR properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageSubject
+Type: IMicrosoftGraphAccessPackageSubject1
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -1125,5 +1137,8 @@ SCHEDULE <IMicrosoftGraphRequestSchedule>: requestSchedule
   - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

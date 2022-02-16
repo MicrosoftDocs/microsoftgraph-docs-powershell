@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectory
@@ -15,9 +15,15 @@ Update directory
 ### UpdateExpanded (Default)
 ```
 Update-MgDirectory [-AdditionalProperties <Hashtable>]
- [-AdministrativeUnits <IMicrosoftGraphAdministrativeUnit[]>]
+ [-AdministrativeUnits <IMicrosoftGraphAdministrativeUnit[]>] [-AttributeSets <IMicrosoftGraphAttributeSet[]>]
+ [-CustomSecurityAttributeDefinitions <IMicrosoftGraphCustomSecurityAttributeDefinition[]>]
  [-DeletedItems <IMicrosoftGraphDirectoryObject[]>]
- [-FeatureRolloutPolicies <IMicrosoftGraphFeatureRolloutPolicy[]>] [-Id <String>]
+ [-FeatureRolloutPolicies <IMicrosoftGraphFeatureRolloutPolicy[]>]
+ [-FederationConfigurations <IMicrosoftGraphIdentityProviderBase[]>] [-Id <String>]
+ [-ImpactedResources <IMicrosoftGraphRecommendationResource[]>]
+ [-InboundSharedUserProfiles <IMicrosoftGraphInboundSharedUserProfile[]>]
+ [-OutboundSharedUserProfiles <IMicrosoftGraphOutboundSharedUserProfile[]>]
+ [-Recommendations <IMicrosoftGraphRecommendation[]>]
  [-SharedEmailDomains <IMicrosoftGraphSharedEmailDomain[]>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -66,6 +72,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -AttributeSets
+Group of related custom security attribute definitions.
+To construct, please use Get-Help -Online and see NOTES section for ATTRIBUTESETS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphAttributeSet[]
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -BodyParameter
 directory
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
@@ -79,6 +101,22 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -CustomSecurityAttributeDefinitions
+Schema of a custom security attributes (key-value pairs).
+To construct, please use Get-Help -Online and see NOTES section for CUSTOMSECURITYATTRIBUTEDEFINITIONS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCustomSecurityAttributeDefinition[]
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -116,11 +154,75 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -FederationConfigurations
+Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.
+To construct, please use Get-Help -Online and see NOTES section for FEDERATIONCONFIGURATIONS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphIdentityProviderBase[]
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Id
 Read-only.
 
 ```yaml
 Type: String
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ImpactedResources
+.
+To construct, please use Get-Help -Online and see NOTES section for IMPACTEDRESOURCES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphRecommendationResource[]
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InboundSharedUserProfiles
+.
+To construct, please use Get-Help -Online and see NOTES section for INBOUNDSHAREDUSERPROFILES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphInboundSharedUserProfile[]
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -OutboundSharedUserProfiles
+.
+To construct, please use Get-Help -Online and see NOTES section for OUTBOUNDSHAREDUSERPROFILES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphOutboundSharedUserProfile[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -137,6 +239,22 @@ Returns true when the command succeeds
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Recommendations
+.
+To construct, please use Get-Help -Online and see NOTES section for RECOMMENDATIONS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphRecommendation[]
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecurityhostsecurityprofile
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 hostSecurityProfile
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphHostSecurityProfile
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 
 ### -LogonUsers
 .
-To construct, see NOTES section for LOGONUSERS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for LOGONUSERS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphLogonUser[]
@@ -235,7 +235,7 @@ Accept wildcard characters: False
 
 ### -NetworkInterfaces
 .
-To construct, see NOTES section for NETWORKINTERFACES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for NETWORKINTERFACES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphNetworkInterface[]
@@ -341,7 +341,7 @@ Accept wildcard characters: False
 
 ### -VendorInformation
 securityVendorInformation
-To construct, see NOTES section for VENDORINFORMATION properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for VENDORINFORMATION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityVendorInformation

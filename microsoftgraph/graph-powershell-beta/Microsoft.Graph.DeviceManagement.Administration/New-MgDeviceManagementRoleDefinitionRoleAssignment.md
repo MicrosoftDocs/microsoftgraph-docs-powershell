@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementroledefinitionroleassignment
@@ -372,5 +372,8 @@ ROLEDEFINITION <IMicrosoftGraphRoleDefinition1>: The Role Definition resource. T
   - `[RoleScopeTagIds <String[]>]`: List of Scope Tags for this Entity instance.
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

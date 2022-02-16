@@ -64,7 +64,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 synchronizationSchema
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSynchronizationSchema
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 
 ### -Directories
 Contains the collection of directories and all of their objects.
-To construct, see NOTES section for DIRECTORIES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DIRECTORIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDirectoryDefinition[]
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 
 ### -SynchronizationRules
 A collection of synchronization rules configured for the synchronizationJob or synchronizationTemplate.
-To construct, see NOTES section for SYNCHRONIZATIONRULES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SYNCHRONIZATIONRULES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSynchronizationRule[]
@@ -369,6 +369,7 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[DirectoryDefinitionId <String>]`: key: id of directoryDefinition
   - `[EndpointId <String>]`: key: id of endpoint
   - `[ExtensionPropertyId <String>]`: key: id of extensionProperty
+  - `[FederatedIdentityCredentialId <String>]`: key: id of federatedIdentityCredential
   - `[GroupId <String>]`: key: id of group
   - `[LicenseDetailsId <String>]`: key: id of licenseDetails
   - `[OnPremisesAgentGroupId <String>]`: key: id of onPremisesAgentGroup

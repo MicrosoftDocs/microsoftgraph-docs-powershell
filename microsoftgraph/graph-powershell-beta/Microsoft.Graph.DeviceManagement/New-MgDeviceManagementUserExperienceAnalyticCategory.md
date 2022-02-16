@@ -49,7 +49,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analytics category entity contains the scores and insights for the various metrics of a category.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsCategory
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 
 ### -Insights
 The insights for the user experience analytics category.
-To construct, see NOTES section for INSIGHTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INSIGHTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsInsight[]
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 
 ### -MetricValues
 The metric values for the user experience analytics category.
-To construct, see NOTES section for METRICVALUES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for METRICVALUES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsMetric[]

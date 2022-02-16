@@ -65,7 +65,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 A management condition statement is a group of management conditions that enable/disable device/application configurations when all contained management conditions are met.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphManagementConditionStatement
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 
 ### -ManagementConditions
 The management conditions associated to the management condition statement.
-To construct, see NOTES section for MANAGEMENTCONDITIONS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for MANAGEMENTCONDITIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphManagementCondition[]

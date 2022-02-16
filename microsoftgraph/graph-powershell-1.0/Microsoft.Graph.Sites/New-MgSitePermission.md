@@ -16,10 +16,12 @@ Nullable.
 ### CreateExpanded1 (Default)
 ```
 New-MgSitePermission -SiteId <String> [-AdditionalProperties <Hashtable>] [-ExpirationDateTime <DateTime>]
- [-GrantedTo <IMicrosoftGraphIdentitySet>] [-GrantedToIdentities <IMicrosoftGraphIdentitySet[]>] [-HasPassword]
- [-Id <String>] [-InheritedFrom <IMicrosoftGraphItemReference>]
- [-Invitation <IMicrosoftGraphSharingInvitation>] [-Link <IMicrosoftGraphSharingLink1>] [-Roles <String[]>]
- [-ShareId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-GrantedTo <IMicrosoftGraphIdentitySet>] [-GrantedToIdentities <IMicrosoftGraphIdentitySet[]>]
+ [-GrantedToIdentitiesV2 <IMicrosoftGraphSharePointIdentitySet[]>]
+ [-GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>] [-HasPassword] [-Id <String>]
+ [-InheritedFrom <IMicrosoftGraphItemReference>] [-Invitation <IMicrosoftGraphSharingInvitation>]
+ [-Link <IMicrosoftGraphSharingLink1>] [-Roles <String[]>] [-ShareId <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create1
@@ -32,7 +34,9 @@ New-MgSitePermission -SiteId <String> -BodyParameter <IMicrosoftGraphPermission1
 ```
 New-MgSitePermission -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
  [-ExpirationDateTime <DateTime>] [-GrantedTo <IMicrosoftGraphIdentitySet>]
- [-GrantedToIdentities <IMicrosoftGraphIdentitySet[]>] [-HasPassword] [-Id <String>]
+ [-GrantedToIdentities <IMicrosoftGraphIdentitySet[]>]
+ [-GrantedToIdentitiesV2 <IMicrosoftGraphSharePointIdentitySet[]>]
+ [-GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>] [-HasPassword] [-Id <String>]
  [-InheritedFrom <IMicrosoftGraphItemReference>] [-Invitation <IMicrosoftGraphSharingInvitation>]
  [-Link <IMicrosoftGraphSharingLink1>] [-Roles <String[]>] [-ShareId <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -69,7 +73,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 permission
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPermission1
@@ -102,7 +106,7 @@ Accept wildcard characters: False
 
 ### -GrantedTo
 identitySet
-To construct, see NOTES section for GRANTEDTO properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for GRANTEDTO properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -117,9 +121,8 @@ Accept wildcard characters: False
 ```
 
 ### -GrantedToIdentities
-For link type permissions, the details of the users to whom permission was granted.
-Read-only.
-To construct, see NOTES section for GRANTEDTOIDENTITIES properties and create a hash table.
+.
+To construct, please use Get-Help -Online and see NOTES section for GRANTEDTOIDENTITIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet[]
@@ -133,9 +136,45 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -GrantedToIdentitiesV2
+For link type permissions, the details of the users to whom permission was granted.
+Read-only.
+To construct, please use Get-Help -Online and see NOTES section for GRANTEDTOIDENTITIESV2 properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphSharePointIdentitySet[]
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -GrantedToV2
+sharePointIdentitySet
+To construct, please use Get-Help -Online and see NOTES section for GRANTEDTOV2 properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphSharePointIdentitySet
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -HasPassword
-This indicates whether password is set for this permission, it's only showing in response.
-Optional and Read-only and for OneDrive Personal only.
+Indicates whether the password is set for this permission.
+This property only appears in the response.
+Optional.
+Read-only.
+For OneDrive Personal only..
 
 ```yaml
 Type: SwitchParameter
@@ -166,7 +205,7 @@ Accept wildcard characters: False
 
 ### -InheritedFrom
 itemReference
-To construct, see NOTES section for INHERITEDFROM properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INHERITEDFROM properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphItemReference
@@ -182,7 +221,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISitesIdentity
@@ -198,7 +237,7 @@ Accept wildcard characters: False
 
 ### -Invitation
 sharingInvitation
-To construct, see NOTES section for INVITATION properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INVITATION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSharingInvitation
@@ -214,7 +253,7 @@ Accept wildcard characters: False
 
 ### -Link
 sharingLink
-To construct, see NOTES section for LINK properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for LINK properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSharingLink1
@@ -229,8 +268,7 @@ Accept wildcard characters: False
 ```
 
 ### -Roles
-The type of permission, e.g.
-read.
+The type of permission, for example, read.
 See below for the full list of roles.
 Read-only.
 
@@ -247,7 +285,7 @@ Accept wildcard characters: False
 ```
 
 ### -ShareId
-A unique token that can be used to access this shared item via the [shares API][].
+A unique token that can be used to access this shared item via the **shares** API.
 Read-only.
 
 ```yaml
@@ -339,8 +377,20 @@ BODYPARAMETER <IMicrosoftGraphPermission1>: permission
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[GrantedToIdentities <IMicrosoftGraphIdentitySet[]>]`: For link type permissions, the details of the users to whom permission was granted. Read-only.
-  - `[HasPassword <Boolean?>]`: This indicates whether password is set for this permission, it's only showing in response. Optional and Read-only and for OneDrive Personal only.
+  - `[GrantedToIdentities <IMicrosoftGraphIdentitySet[]>]`: 
+  - `[GrantedToIdentitiesV2 <IMicrosoftGraphSharePointIdentitySet[]>]`: For link type permissions, the details of the users to whom permission was granted. Read-only.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+    - `[Group <IMicrosoftGraphIdentity>]`: identity
+    - `[SiteGroup <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
+      - `[LoginName <String>]`: The sign in name of the SharePoint identity.
+    - `[SiteUser <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
+  - `[GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>]`: sharePointIdentitySet
+  - `[HasPassword <Boolean?>]`: Indicates whether the password is set for this permission. This property only appears in the response. Optional. Read-only. For OneDrive Personal only..
   - `[InheritedFrom <IMicrosoftGraphItemReference>]`: itemReference
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DriveId <String>]`: Unique identifier of the drive instance that contains the item. Read-only.
@@ -373,8 +423,8 @@ BODYPARAMETER <IMicrosoftGraphPermission1>: permission
     - `[Type <String>]`: The type of the link created.
     - `[WebHtml <String>]`: For embed links, this property contains the HTML code for an <iframe> element that will embed the item in a webpage.
     - `[WebUrl <String>]`: A URL that opens the item in the browser on the OneDrive website.
-  - `[Roles <String[]>]`: The type of permission, e.g. read. See below for the full list of roles. Read-only.
-  - `[ShareId <String>]`: A unique token that can be used to access this shared item via the [shares API][]. Read-only.
+  - `[Roles <String[]>]`: The type of permission, for example, read. See below for the full list of roles. Read-only.
+  - `[ShareId <String>]`: A unique token that can be used to access this shared item via the **shares** API. Read-only.
 
 GRANTEDTO <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -385,13 +435,44 @@ GRANTEDTO <IMicrosoftGraphIdentitySet>: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-GRANTEDTOIDENTITIES <IMicrosoftGraphIdentitySet[]>: For link type permissions, the details of the users to whom permission was granted. Read-only.
+GRANTEDTOIDENTITIES <IMicrosoftGraphIdentitySet[]>: .
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
     - `[Id <String>]`: Unique identifier for the identity.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
+
+GRANTEDTOIDENTITIESV2 <IMicrosoftGraphSharePointIdentitySet[]>: For link type permissions, the details of the users to whom permission was granted. Read-only.
+  - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
+  - `[Device <IMicrosoftGraphIdentity>]`: identity
+  - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[Group <IMicrosoftGraphIdentity>]`: identity
+  - `[SiteGroup <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
+    - `[LoginName <String>]`: The sign in name of the SharePoint identity.
+  - `[SiteUser <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
+
+GRANTEDTOV2 <IMicrosoftGraphSharePointIdentitySet>: sharePointIdentitySet
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
+  - `[Device <IMicrosoftGraphIdentity>]`: identity
+  - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[Group <IMicrosoftGraphIdentity>]`: identity
+  - `[SiteGroup <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
+    - `[LoginName <String>]`: The sign in name of the SharePoint identity.
+  - `[SiteUser <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
 
 INHERITEDFROM <IMicrosoftGraphItemReference>: itemReference
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -430,11 +511,19 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[OnenoteSectionId <String>]`: key: id of onenoteSection
   - `[Path <String>]`: Usage: path={path}
   - `[PermissionId <String>]`: key: id of permission
+  - `[RelationId <String>]`: key: id of relation
+  - `[RichLongRunningOperationId <String>]`: key: id of richLongRunningOperation
+  - `[SetId <String>]`: key: id of set
+  - `[SetId1 <String>]`: key: id of set
   - `[SiteId <String>]`: key: id of site
   - `[SiteId1 <String>]`: key: id of site
   - `[SitePageId <String>]`: key: id of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime={startDateTime}
+  - `[StoreId <String>]`: key: id of store
   - `[SubscriptionId <String>]`: key: id of subscription
+  - `[TermId <String>]`: key: id of term
+  - `[TermId1 <String>]`: key: id of term
+  - `[Token <String>]`: Usage: token={token}
   - `[UserId <String>]`: key: id of user
 
 INVITATION <IMicrosoftGraphSharingInvitation>: sharingInvitation

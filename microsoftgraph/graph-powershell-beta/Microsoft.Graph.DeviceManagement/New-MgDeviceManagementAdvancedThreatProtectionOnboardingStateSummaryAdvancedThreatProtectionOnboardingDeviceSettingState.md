@@ -52,7 +52,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 ATP onboarding State for a given device.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlatformType
-deviceType
+Device type.
 
 ```yaml
 Type: String
@@ -317,7 +317,7 @@ BODYPARAMETER <IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingSta
   - `[DeviceId <String>]`: The Device Id that is being reported
   - `[DeviceModel <String>]`: The device model that is being reported
   - `[DeviceName <String>]`: The Device Name that is being reported
-  - `[PlatformType <String>]`: deviceType
+  - `[PlatformType <String>]`: Device type.
   - `[Setting <String>]`: The setting class name and property name.
   - `[SettingName <String>]`: The Setting Name that is being reported
   - `[State <String>]`: complianceStatus

@@ -51,7 +51,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Entity that stores the server log collection status.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMicrosoftTunnelServerLogCollectionResponse
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-microsoftTunnelLogCollectionStatus
+Enum type that represent the status of log collection.
 
 ```yaml
 Type: String
@@ -243,6 +243,6 @@ BODYPARAMETER <IMicrosoftGraphMicrosoftTunnelServerLogCollectionResponse>: Entit
   - `[ServerId <String>]`: ID of the server the log collection is requested upon
   - `[SizeInBytes <Int64?>]`: The size of the logs in bytes
   - `[StartDateTime <DateTime?>]`: The start time of the logs collected
-  - `[Status <String>]`: microsoftTunnelLogCollectionStatus
+  - `[Status <String>]`: Enum type that represent the status of log collection.
 
 ## RELATED LINKS

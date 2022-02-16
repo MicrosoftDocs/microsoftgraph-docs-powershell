@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The permission classifications for delegated permissions exposed by the app that this service principal represents.
+Supports $expand.
 
 ## SYNTAX
 
@@ -42,6 +43,7 @@ Update-MgServicePrincipalDelegatedPermissionClassification -InputObject <IApplic
 
 ## DESCRIPTION
 The permission classifications for delegated permissions exposed by the app that this service principal represents.
+Supports $expand.
 
 ## EXAMPLES
 
@@ -64,7 +66,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 delegatedPermissionClassification
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDelegatedPermissionClassification
@@ -125,7 +127,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
@@ -155,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -PermissionId
-The unique identifier (id) for the delegated permission listed in the publishedPermissionScopes collection of the servicePrincipal.
+The unique identifier (id) for the delegated permission listed in the oauth2PermissionScopes collection of the servicePrincipal.
 Required on create.
 Does not support $filter.
 
@@ -172,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -PermissionName
-The claim value (value) for the delegated permission listed in the publishedPermissionScopes collection of the servicePrincipal.
+The claim value (value) for the delegated permission listed in the oauth2PermissionScopes collection of the servicePrincipal.
 Does not support $filter.
 
 ```yaml
@@ -256,8 +258,8 @@ BODYPARAMETER <IMicrosoftGraphDelegatedPermissionClassification>: delegatedPermi
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
   - `[Classification <String>]`: permissionClassificationType
-  - `[PermissionId <String>]`: The unique identifier (id) for the delegated permission listed in the publishedPermissionScopes collection of the servicePrincipal. Required on create. Does not support $filter.
-  - `[PermissionName <String>]`: The claim value (value) for the delegated permission listed in the publishedPermissionScopes collection of the servicePrincipal. Does not support $filter.
+  - `[PermissionId <String>]`: The unique identifier (id) for the delegated permission listed in the oauth2PermissionScopes collection of the servicePrincipal. Required on create. Does not support $filter.
+  - `[PermissionName <String>]`: The claim value (value) for the delegated permission listed in the oauth2PermissionScopes collection of the servicePrincipal. Does not support $filter.
 
 INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[AppRoleAssignmentId <String>]`: key: id of appRoleAssignment
@@ -269,6 +271,7 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[DirectoryDefinitionId <String>]`: key: id of directoryDefinition
   - `[EndpointId <String>]`: key: id of endpoint
   - `[ExtensionPropertyId <String>]`: key: id of extensionProperty
+  - `[FederatedIdentityCredentialId <String>]`: key: id of federatedIdentityCredential
   - `[GroupId <String>]`: key: id of group
   - `[LicenseDetailsId <String>]`: key: id of licenseDetails
   - `[OnPremisesAgentGroupId <String>]`: key: id of onPremisesAgentGroup

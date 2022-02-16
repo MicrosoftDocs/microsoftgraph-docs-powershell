@@ -12,16 +12,31 @@ Invoke function getSkypeForBusinessActivityCounts
 
 ## SYNTAX
 
-### Get14 (Default)
+### Get17 (Default)
 ```
 Get-MgReportSkype -Period <String> -InputObject <IReportsIdentity> -OutFile <String> [-PassThru]
  [<CommonParameters>]
 ```
 
-### Get30
+### Get33
 ```
 Get-MgReportSkype -Period <String> -InputObject <IReportsIdentity> -OutFile <String> [-PassThru]
  [<CommonParameters>]
+```
+
+### Get32
+```
+Get-MgReportSkype -Period <String> -OutFile <String> [-PassThru] [<CommonParameters>]
+```
+
+### Get31
+```
+Get-MgReportSkype -Period <String> -OutFile <String> [-PassThru] [<CommonParameters>]
+```
+
+### Get30
+```
+Get-MgReportSkype -Period <String> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
 ### Get29
@@ -54,11 +69,6 @@ Get-MgReportSkype -Period <String> -OutFile <String> [-PassThru] [<CommonParamet
 Get-MgReportSkype -Period <String> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
-### Get23
-```
-Get-MgReportSkype -Period <String> -OutFile <String> [-PassThru] [<CommonParameters>]
-```
-
 ### Get22
 ```
 Get-MgReportSkype -Period <String> -OutFile <String> [-PassThru] [<CommonParameters>]
@@ -69,7 +79,7 @@ Get-MgReportSkype -Period <String> -OutFile <String> [-PassThru] [<CommonParamet
 Get-MgReportSkype -Period <String> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
-### Get19
+### Get20
 ```
 Get-MgReportSkype -Period <String> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
@@ -79,24 +89,29 @@ Get-MgReportSkype -Period <String> -OutFile <String> [-PassThru] [<CommonParamet
 Get-MgReportSkype -Period <String> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
-### Get17
-```
-Get-MgReportSkype -Period <String> -OutFile <String> [-PassThru] [<CommonParameters>]
-```
-
-### Get15
-```
-Get-MgReportSkype -Period <String> -OutFile <String> [-PassThru] [<CommonParameters>]
-```
-
-### Get20
+### Get23
 ```
 Get-MgReportSkype -Date <DateTime> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
-### Get16
+### Get19
 ```
 Get-MgReportSkype -Date <DateTime> -OutFile <String> [-PassThru] [<CommonParameters>]
+```
+
+### GetViaIdentity33
+```
+Get-MgReportSkype -InputObject <IReportsIdentity> -OutFile <String> [-PassThru] [<CommonParameters>]
+```
+
+### GetViaIdentity32
+```
+Get-MgReportSkype -InputObject <IReportsIdentity> -OutFile <String> [-PassThru] [<CommonParameters>]
+```
+
+### GetViaIdentity31
+```
+Get-MgReportSkype -InputObject <IReportsIdentity> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
 ### GetViaIdentity30
@@ -159,28 +174,13 @@ Get-MgReportSkype -InputObject <IReportsIdentity> -OutFile <String> [-PassThru] 
 Get-MgReportSkype -InputObject <IReportsIdentity> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
-### GetViaIdentity18
-```
-Get-MgReportSkype -InputObject <IReportsIdentity> -OutFile <String> [-PassThru] [<CommonParameters>]
-```
-
-### GetViaIdentity17
-```
-Get-MgReportSkype -InputObject <IReportsIdentity> -OutFile <String> [-PassThru] [<CommonParameters>]
-```
-
-### GetViaIdentity16
-```
-Get-MgReportSkype -InputObject <IReportsIdentity> -OutFile <String> [-PassThru] [<CommonParameters>]
-```
-
-### Get14 (Default)
+### Get17 (Default)
 ```
 Get-MgReportSkype -Period <String> -InputObject <IReportsIdentity> -OutFile <String> [-PassThru]
  [<CommonParameters>]
 ```
 
-### Get30
+### Get33
 ```
 Get-MgReportSkype -Period <String> -InputObject <IReportsIdentity> -OutFile <String> [-PassThru]
  [<CommonParameters>]
@@ -198,7 +198,7 @@ Usage: date={date}
 
 ```yaml
 Type: DateTime
-Parameter Sets: Get20, Get16
+Parameter Sets: Get23, Get19
 Aliases:
 
 Required: True
@@ -210,11 +210,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IReportsIdentity
-Parameter Sets: Get14, Get30, GetViaIdentity30, GetViaIdentity29, GetViaIdentity28, GetViaIdentity27, GetViaIdentity26, GetViaIdentity25, GetViaIdentity24, GetViaIdentity23, GetViaIdentity22, GetViaIdentity21, GetViaIdentity20, GetViaIdentity19, GetViaIdentity18, GetViaIdentity17, GetViaIdentity16
+Parameter Sets: Get17, Get33, GetViaIdentity33, GetViaIdentity32, GetViaIdentity31, GetViaIdentity30, GetViaIdentity29, GetViaIdentity28, GetViaIdentity27, GetViaIdentity26, GetViaIdentity25, GetViaIdentity24, GetViaIdentity23, GetViaIdentity22, GetViaIdentity21, GetViaIdentity20, GetViaIdentity19
 Aliases:
 
 Required: True
@@ -229,7 +229,7 @@ Path to write output file to
 
 ```yaml
 Type: String
-Parameter Sets: Get14, Get30, Get29, Get28, Get27, Get26, Get25, Get24, Get23, Get22, Get21, Get19, Get18, Get17, Get15, Get20, Get16, GetViaIdentity30, GetViaIdentity29, GetViaIdentity28, GetViaIdentity27, GetViaIdentity26, GetViaIdentity25, GetViaIdentity24, GetViaIdentity23, GetViaIdentity22, GetViaIdentity21, GetViaIdentity20, GetViaIdentity19, GetViaIdentity18, GetViaIdentity17, GetViaIdentity16
+Parameter Sets: Get17, Get33, Get32, Get31, Get30, Get29, Get28, Get27, Get26, Get25, Get24, Get22, Get21, Get20, Get18, Get23, Get19, GetViaIdentity33, GetViaIdentity32, GetViaIdentity31, GetViaIdentity30, GetViaIdentity29, GetViaIdentity28, GetViaIdentity27, GetViaIdentity26, GetViaIdentity25, GetViaIdentity24, GetViaIdentity23, GetViaIdentity22, GetViaIdentity21, GetViaIdentity20, GetViaIdentity19
 Aliases:
 
 Required: True
@@ -244,7 +244,7 @@ Returns true when the command succeeds
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: Get14, Get30, Get29, Get28, Get27, Get26, Get25, Get24, Get23, Get22, Get21, Get19, Get18, Get17, Get15, Get20, Get16, GetViaIdentity30, GetViaIdentity29, GetViaIdentity28, GetViaIdentity27, GetViaIdentity26, GetViaIdentity25, GetViaIdentity24, GetViaIdentity23, GetViaIdentity22, GetViaIdentity21, GetViaIdentity20, GetViaIdentity19, GetViaIdentity18, GetViaIdentity17, GetViaIdentity16
+Parameter Sets: Get17, Get33, Get32, Get31, Get30, Get29, Get28, Get27, Get26, Get25, Get24, Get22, Get21, Get20, Get18, Get23, Get19, GetViaIdentity33, GetViaIdentity32, GetViaIdentity31, GetViaIdentity30, GetViaIdentity29, GetViaIdentity28, GetViaIdentity27, GetViaIdentity26, GetViaIdentity25, GetViaIdentity24, GetViaIdentity23, GetViaIdentity22, GetViaIdentity21, GetViaIdentity20, GetViaIdentity19
 Aliases:
 
 Required: False
@@ -259,7 +259,7 @@ Usage: period={period}
 
 ```yaml
 Type: String
-Parameter Sets: Get14, Get30, Get29, Get28, Get27, Get26, Get25, Get24, Get23, Get22, Get21, Get19, Get18, Get17, Get15
+Parameter Sets: Get17, Get33, Get32, Get31, Get30, Get29, Get28, Get27, Get26, Get25, Get24, Get22, Get21, Get20, Get18
 Aliases:
 
 Required: True
@@ -293,7 +293,6 @@ INPUTOBJECT <IReportsIdentity>: Identity Parameter
   - `[Date <DateTime?>]`: Usage: date={date}
   - `[DeviceManagementCachedReportConfigurationId <String>]`: key: id of deviceManagementCachedReportConfiguration
   - `[DeviceManagementExportJobId <String>]`: key: id of deviceManagementExportJob
-  - `[DeviceManagementReportScheduleId <String>]`: key: id of deviceManagementReportSchedule
   - `[DirectoryAuditId <String>]`: key: id of directoryAudit
   - `[EndDateTime <DateTime?>]`: Usage: endDateTime={endDateTime}
   - `[Filter <String>]`: Usage: filter={filter}
@@ -313,5 +312,6 @@ INPUTOBJECT <IReportsIdentity>: Identity Parameter
   - `[Top <Int32?>]`: Usage: top={top}
   - `[UserCredentialUsageDetailsId <String>]`: key: id of userCredentialUsageDetails
   - `[UserId <String>]`: Usage: userId={userId}
+  - `[UserRegistrationDetailsId <String>]`: key: id of userRegistrationDetails
 
 ## RELATED LINKS

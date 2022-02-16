@@ -8,9 +8,11 @@ schema: 2.0.0
 # Get-MgGroupMemberOfByRef
 
 ## SYNOPSIS
-Users, contacts, and groups that are members of this group.
-HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only.
+Groups that this group is a member of.
+HTTP Methods: GET (supported for all groups).
+Read-only.
 Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -20,9 +22,11 @@ Get-MgGroupMemberOfByRef -GroupId <String> [-Filter <String>] [-Search <String>]
 ```
 
 ## DESCRIPTION
-Users, contacts, and groups that are members of this group.
-HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only.
+Groups that this group is a member of.
+HTTP Methods: GET (supported for all groups).
+Read-only.
 Nullable.
+Supports $expand.
 
 ## EXAMPLES
 

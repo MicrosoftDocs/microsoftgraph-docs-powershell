@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecurityfilesecurityprofile
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 fileSecurityProfile
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphFileSecurityProfile
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 
 ### -Hashes
 .
-To construct, see NOTES section for HASHES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for HASHES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphFileHash[]
@@ -220,7 +220,7 @@ Accept wildcard characters: False
 
 ### -MalwareStates
 .
-To construct, see NOTES section for MALWARESTATES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for MALWARESTATES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMalwareState[]
@@ -296,7 +296,7 @@ Accept wildcard characters: False
 
 ### -VendorInformation
 securityVendorInformation
-To construct, see NOTES section for VENDORINFORMATION properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for VENDORINFORMATION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSecurityVendorInformation
@@ -312,7 +312,7 @@ Accept wildcard characters: False
 
 ### -VulnerabilityStates
 .
-To construct, see NOTES section for VULNERABILITYSTATES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for VULNERABILITYSTATES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphVulnerabilityState[]

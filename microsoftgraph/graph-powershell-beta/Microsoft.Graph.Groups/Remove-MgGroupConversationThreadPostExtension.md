@@ -11,6 +11,7 @@ schema: 2.0.0
 The collection of open extensions defined for the post.
 Read-only.
 Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -31,6 +32,7 @@ Remove-MgGroupConversationThreadPostExtension -InputObject <IGroupsIdentity> [-I
 The collection of open extensions defined for the post.
 Read-only.
 Nullable.
+Supports $expand.
 
 ## EXAMPLES
 
@@ -113,7 +115,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IGroupsIdentity

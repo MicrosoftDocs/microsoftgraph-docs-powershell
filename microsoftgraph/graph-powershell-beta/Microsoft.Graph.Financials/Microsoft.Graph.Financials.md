@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Financials
-Module Guid: d60ab584-9f46-4c76-9f3e-6bef9aa252c1
+Module Guid: 7f9377ef-5143-4f79-a893-0e014640be2f
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.financials
 Help Version: 1.0.0.0
 Locale: en-US

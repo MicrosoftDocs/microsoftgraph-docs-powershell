@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgGroupPhoto
 
 ## SYNOPSIS
-The group's profile photo.
+The group's profile photo
 
 ## SYNTAX
 
@@ -61,7 +61,7 @@ Update-MgGroupPhoto -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGra
 ```
 
 ## DESCRIPTION
-The group's profile photo.
+The group's profile photo
 
 ## EXAMPLES
 
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 profilePhoto
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphProfilePhoto
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IGroupsIdentity

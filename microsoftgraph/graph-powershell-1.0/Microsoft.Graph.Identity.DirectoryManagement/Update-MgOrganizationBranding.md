@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganizationbranding
@@ -15,10 +15,11 @@ Update the navigation property branding in organization
 ### UpdateExpanded1 (Default)
 ```
 Update-MgOrganizationBranding -OrganizationId <String> [-AdditionalProperties <Hashtable>]
- [-BackgroundColor <String>] [-BackgroundImageInputFile <String>] [-BannerLogoInputFile <String>]
- [-Id <String>] [-Localizations <IMicrosoftGraphOrganizationalBrandingLocalization[]>]
- [-SignInPageText <String>] [-SquareLogoInputFile <String>] [-UsernameHintText <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-BackgroundColor <String>] [-BackgroundImageInputFile <String>] [-BackgroundImageRelativeUrl <String>]
+ [-BannerLogoInputFile <String>] [-BannerLogoRelativeUrl <String>] [-CdnList <String[]>] [-Id <String>]
+ [-Localizations <IMicrosoftGraphOrganizationalBrandingLocalization[]>] [-SignInPageText <String>]
+ [-SquareLogoInputFile <String>] [-SquareLogoRelativeUrl <String>] [-UsernameHintText <String>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
@@ -31,10 +32,10 @@ Update-MgOrganizationBranding -OrganizationId <String> -BodyParameter <IMicrosof
 ```
 Update-MgOrganizationBranding -InputObject <IIdentityDirectoryManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-BackgroundColor <String>] [-BackgroundImageInputFile <String>]
- [-BannerLogoInputFile <String>] [-Id <String>]
- [-Localizations <IMicrosoftGraphOrganizationalBrandingLocalization[]>] [-SignInPageText <String>]
- [-SquareLogoInputFile <String>] [-UsernameHintText <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-BackgroundImageRelativeUrl <String>] [-BannerLogoInputFile <String>] [-BannerLogoRelativeUrl <String>]
+ [-CdnList <String[]>] [-Id <String>] [-Localizations <IMicrosoftGraphOrganizationalBrandingLocalization[]>]
+ [-SignInPageText <String>] [-SquareLogoInputFile <String>] [-SquareLogoRelativeUrl <String>]
+ [-UsernameHintText <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity1
@@ -99,10 +100,42 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -BackgroundImageRelativeUrl
+A relative URL for the backgroundImage property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN.
+Read-only.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -BannerLogoInputFile
 Input File for BannerLogo (A banner version of your company logo which appears appears on the sign-in page.
 .png or .jpg no larger than 36x245px.
 We recommend using a transparent image with no padding around the logo.)
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -BannerLogoRelativeUrl
+A relative url for the bannerLogo property that is combined with a CDN base URL from the cdnList to provide the read-only version served by a CDN.
+Read-only.
 
 ```yaml
 Type: String
@@ -129,6 +162,23 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -CdnList
+A list of base URLs for all available CDN providers that are serving the assets of the current resource.
+Several CDN providers are used at the same time for high availability of read requests.
+Read-only.
+
+```yaml
+Type: String[]
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -231,6 +281,22 @@ Input File for SquareLogo (Square version of your company logo.
 This appears in Windows 10 out-of-box (OOBE) experiences and when Windows Autopilot is enabled for deployment.
 .png or .jpg no larger than 240x240px and no more than 10kb in size.
 We recommend using a transparent image with no padding around the logo.)
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SquareLogoRelativeUrl
+A relative url for the squareLogo property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN.
+Read-only.
 
 ```yaml
 Type: String

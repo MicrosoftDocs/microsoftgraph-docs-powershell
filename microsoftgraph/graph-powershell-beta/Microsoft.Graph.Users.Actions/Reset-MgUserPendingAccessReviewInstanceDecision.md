@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/reset-mguserpendingaccessreviewinstancedecision
@@ -12,10 +12,22 @@ Invoke action resetDecisions
 
 ## SYNTAX
 
-### Reset (Default)
+### Reset1 (Default)
 ```
 Reset-MgUserPendingAccessReviewInstanceDecision -AccessReviewInstanceId <String> -UserId <String> [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Reset
+```
+Reset-MgUserPendingAccessReviewInstanceDecision -AccessReviewInstanceDecisionItemId <String>
+ -AccessReviewInstanceId <String> -UserId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ResetViaIdentity1
+```
+Reset-MgUserPendingAccessReviewInstanceDecision -InputObject <IUsersActionsIdentity> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### ResetViaIdentity
@@ -31,12 +43,27 @@ Invoke action resetDecisions
 
 ## PARAMETERS
 
+### -AccessReviewInstanceDecisionItemId
+key: id of accessReviewInstanceDecisionItem
+
+```yaml
+Type: String
+Parameter Sets: Reset
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -AccessReviewInstanceId
 key: id of accessReviewInstance
 
 ```yaml
 Type: String
-Parameter Sets: Reset
+Parameter Sets: Reset1, Reset
 Aliases:
 
 Required: True
@@ -52,7 +79,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: ResetViaIdentity
+Parameter Sets: ResetViaIdentity1, ResetViaIdentity
 Aliases:
 
 Required: True
@@ -82,7 +109,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: Reset
+Parameter Sets: Reset1, Reset
 Aliases:
 
 Required: True

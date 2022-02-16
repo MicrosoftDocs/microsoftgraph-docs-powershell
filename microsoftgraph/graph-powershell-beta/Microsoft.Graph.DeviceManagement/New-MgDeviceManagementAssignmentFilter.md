@@ -49,7 +49,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 A class containing the properties used for Assignment Filter.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceAndAppManagementAssignmentFilter
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -Platform
-devicePlatformType
+Supported platform types.
 
 ```yaml
 Type: String
@@ -239,7 +239,7 @@ BODYPARAMETER <IMicrosoftGraphDeviceAndAppManagementAssignmentFilter>: A class c
   - `[Description <String>]`: Description of the Assignment Filter.
   - `[DisplayName <String>]`: DisplayName of the Assignment Filter.
   - `[LastModifiedDateTime <DateTime?>]`: Last modified time of the Assignment Filter.
-  - `[Platform <String>]`: devicePlatformType
+  - `[Platform <String>]`: Supported platform types.
   - `[RoleScopeTags <String[]>]`: RoleScopeTags of the Assignment Filter.
   - `[Rule <String>]`: Rule definition of the Assignment Filter.
 

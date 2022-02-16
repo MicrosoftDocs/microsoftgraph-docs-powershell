@@ -60,7 +60,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementReports
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementReports1
 ## NOTES
 
 ALIASES

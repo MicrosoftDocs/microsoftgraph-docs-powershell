@@ -11,6 +11,7 @@ schema: 2.0.0
 Directory objects that are owned by this service principal.
 Read-only.
 Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -42,6 +43,7 @@ New-MgServicePrincipalOwnedObjectByRef -InputObject <IApplicationsIdentity> -Bod
 Directory objects that are owned by this service principal.
 Read-only.
 Nullable.
+Supports $expand.
 
 ## EXAMPLES
 
@@ -79,7 +81,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
@@ -168,6 +170,7 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[DirectoryDefinitionId <String>]`: key: id of directoryDefinition
   - `[EndpointId <String>]`: key: id of endpoint
   - `[ExtensionPropertyId <String>]`: key: id of extensionProperty
+  - `[FederatedIdentityCredentialId <String>]`: key: id of federatedIdentityCredential
   - `[GroupId <String>]`: key: id of group
   - `[LicenseDetailsId <String>]`: key: id of licenseDetails
   - `[OnPremisesAgentGroupId <String>]`: key: id of onPremisesAgentGroup

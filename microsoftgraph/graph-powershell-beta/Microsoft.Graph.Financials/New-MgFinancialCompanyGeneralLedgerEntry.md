@@ -51,7 +51,7 @@ Create new navigation property to generalLedgerEntries for financials
 
 ### -Account
 account
-To construct, see NOTES section for ACCOUNT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ACCOUNT properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAccount
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 generalLedgerEntry
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphGeneralLedgerEntry
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFinancialsIdentity

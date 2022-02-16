@@ -50,7 +50,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Entity representing a setting category
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementSettingCategory
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 
 ### -SettingDefinitions
 The setting definitions this category contains
-To construct, see NOTES section for SETTINGDEFINITIONS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SETTINGDEFINITIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementSettingDefinition[]

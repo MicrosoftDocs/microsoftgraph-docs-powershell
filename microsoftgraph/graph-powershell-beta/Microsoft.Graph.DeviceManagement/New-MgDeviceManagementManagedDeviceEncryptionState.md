@@ -51,7 +51,7 @@ Accept wildcard characters: False
 ```
 
 ### -AdvancedBitLockerStates
-advancedBitLockerState
+Advanced BitLocker State
 
 ```yaml
 Type: String
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Encryption report per device
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphManagedDeviceEncryptionState
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceType
-deviceTypes
+Device type.
 
 ```yaml
 Type: String
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionReadinessState
-encryptionReadinessState
+Encryption readiness state
 
 ```yaml
 Type: String
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -EncryptionState
-encryptionState
+Encryption state
 
 ```yaml
 Type: String
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -FileVaultStates
-fileVaultState
+FileVault State
 
 ```yaml
 Type: String
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 
 ### -PolicyDetails
 Policy Details
-To construct, see NOTES section for POLICYDETAILS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for POLICYDETAILS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEncryptionReportPolicyDetails[]
@@ -299,13 +299,13 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER <IMicrosoftGraphManagedDeviceEncryptionState>: Encryption report per device
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
-  - `[AdvancedBitLockerStates <String>]`: advancedBitLockerState
+  - `[AdvancedBitLockerStates <String>]`: Advanced BitLocker State
   - `[DeviceName <String>]`: Device name
-  - `[DeviceType <String>]`: deviceTypes
+  - `[DeviceType <String>]`: Device type.
   - `[EncryptionPolicySettingState <String>]`: complianceStatus
-  - `[EncryptionReadinessState <String>]`: encryptionReadinessState
-  - `[EncryptionState <String>]`: encryptionState
-  - `[FileVaultStates <String>]`: fileVaultState
+  - `[EncryptionReadinessState <String>]`: Encryption readiness state
+  - `[EncryptionState <String>]`: Encryption state
+  - `[FileVaultStates <String>]`: FileVault State
   - `[OSVersion <String>]`: Operating system version of the device
   - `[PolicyDetails <IMicrosoftGraphEncryptionReportPolicyDetails[]>]`: Policy Details
     - `[PolicyId <String>]`: Policy Id for Encryption Report

@@ -15,8 +15,7 @@ User experience analytics metric history
 ### CreateExpanded (Default)
 ```
 New-MgDeviceManagementUserExperienceAnalyticMetricHistory [-AdditionalProperties <Hashtable>]
- [-DeviceId <String>] [-Id <String>] [-MetricDateTime <DateTime>] [-MetricType <String>]
- [-UserExperienceAnalyticsMetric <IMicrosoftGraphUserExperienceAnalyticsMetric>] [-WhatIf] [-Confirm]
+ [-DeviceId <String>] [-Id <String>] [-MetricDateTime <DateTime>] [-MetricType <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -50,7 +49,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analytics metric history.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsMetricHistory
@@ -124,22 +123,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -UserExperienceAnalyticsMetric
-The user experience analytics metric contains the score and units of a metric of a user experience anlaytics category.
-To construct, see NOTES section for USEREXPERIENCEANALYTICSMETRIC properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsMetric
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -195,16 +178,5 @@ BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsMetricHistory>: The user ex
   - `[DeviceId <String>]`: The user experience analytics device id.
   - `[MetricDateTime <DateTime?>]`: The user experience analytics metric date time.
   - `[MetricType <String>]`: The user experience analytics metric type.
-  - `[UserExperienceAnalyticsMetric <IMicrosoftGraphUserExperienceAnalyticsMetric>]`: The user experience analytics metric contains the score and units of a metric of a user experience anlaytics category.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: Read-only.
-    - `[Unit <String>]`: The unit of the user experience analytics metric.
-    - `[Value <Double?>]`: The value of the user experience analytics metric.
-
-USEREXPERIENCEANALYTICSMETRIC <IMicrosoftGraphUserExperienceAnalyticsMetric>: The user experience analytics metric contains the score and units of a metric of a user experience anlaytics category.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
-  - `[Unit <String>]`: The unit of the user experience analytics metric.
-  - `[Value <Double?>]`: The value of the user experience analytics metric.
 
 ## RELATED LINKS

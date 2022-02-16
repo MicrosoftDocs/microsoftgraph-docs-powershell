@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/export-mguserpersonaldata
@@ -12,26 +12,26 @@ Invoke action exportPersonalData
 
 ## SYNTAX
 
-### ExportExpanded1 (Default)
+### ExportExpanded (Default)
 ```
 Export-MgUserPersonalData -UserId <String> [-AdditionalProperties <Hashtable>] [-StorageLocation <String>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Export1
+### Export
 ```
 Export-MgUserPersonalData -UserId <String>
  -BodyParameter <IPaths1Xhdcw6UsersUserIdMicrosoftGraphExportpersonaldataPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ExportViaIdentityExpanded1
+### ExportViaIdentityExpanded
 ```
 Export-MgUserPersonalData -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-StorageLocation <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ExportViaIdentity1
+### ExportViaIdentity
 ```
 Export-MgUserPersonalData -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths1Xhdcw6UsersUserIdMicrosoftGraphExportpersonaldataPostRequestbodyContentApplicationJsonSchema>
@@ -50,7 +50,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: ExportExpanded1, ExportViaIdentityExpanded1
+Parameter Sets: ExportExpanded, ExportViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -66,7 +66,7 @@ To construct, see NOTES section for BODYPARAMETER properties and create a hash t
 
 ```yaml
 Type: IPaths1Xhdcw6UsersUserIdMicrosoftGraphExportpersonaldataPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Export1, ExportViaIdentity1
+Parameter Sets: Export, ExportViaIdentity
 Aliases:
 
 Required: True
@@ -82,7 +82,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: ExportViaIdentityExpanded1, ExportViaIdentity1
+Parameter Sets: ExportViaIdentityExpanded, ExportViaIdentity
 Aliases:
 
 Required: True
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: ExportExpanded1, ExportViaIdentityExpanded1
+Parameter Sets: ExportExpanded, ExportViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -127,7 +127,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: ExportExpanded1, Export1
+Parameter Sets: ExportExpanded, Export
 Aliases:
 
 Required: True

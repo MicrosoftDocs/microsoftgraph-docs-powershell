@@ -68,7 +68,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 educationRubric
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEducationRubric
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 identitySet
-To construct, see NOTES section for CREATEDBY properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 
 ### -Description
 educationItemBody
-To construct, see NOTES section for DESCRIPTION properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DESCRIPTION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEducationItemBody
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IEducationIdentity
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 
 ### -LastModifiedBy
 identitySet
-To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -241,7 +241,7 @@ Accept wildcard characters: False
 
 ### -Levels
 The collection of levels making up this rubric.
-To construct, see NOTES section for LEVELS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for LEVELS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRubricLevel[]
@@ -257,7 +257,7 @@ Accept wildcard characters: False
 
 ### -Qualities
 The collection of qualities making up this rubric.
-To construct, see NOTES section for QUALITIES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for QUALITIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRubricQuality[]

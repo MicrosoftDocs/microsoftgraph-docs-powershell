@@ -9,9 +9,11 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The owners of the group.
-The owners are a set of non-admin users who are allowed to modify this object.
-HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only.
+Limited to 100 owners.
 Nullable.
+If this property is not specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner.
+Supports $expand including nested $select.
+For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
 
 ## SYNTAX
 
@@ -40,11 +42,25 @@ New-MgGroupOwnerByRef -InputObject <IGroupsIdentity> -BodyParameter <Hashtable> 
 
 ## DESCRIPTION
 The owners of the group.
-The owners are a set of non-admin users who are allowed to modify this object.
-HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only.
+Limited to 100 owners.
 Nullable.
+If this property is not specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner.
+Supports $expand including nested $select.
+For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
 
 ## EXAMPLES
+
+### Example 1: Add an owner to a group
+```powershell
+$newGroupOwner =@{
+  "@odata.id"= "https://graph.microsoft.com/v1.0/users/{4de19c17-6a28-4a91-86d1-f717c3c8c229}"
+  }
+
+New-MgGroupOwnerByRef -GroupId '1cb7317c-9c49-4dc8-a358-67ad8e95217c' -BodyParameter $newGroupOwner
+```
+
+In this example, the first command defines the value of the $newGroupOwner variable.
+The second command creates the value is an owner of the specified group.
 
 ## PARAMETERS
 
@@ -95,7 +111,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IGroupsIdentity

@@ -11,6 +11,7 @@ schema: 2.0.0
 Directory objects that are owned by this service principal.
 Read-only.
 Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -24,6 +25,7 @@ Get-MgServicePrincipalOwnedObject -ServicePrincipalId <String> [-ExpandProperty 
 Directory objects that are owned by this service principal.
 Read-only.
 Nullable.
+Supports $expand.
 
 ## EXAMPLES
 

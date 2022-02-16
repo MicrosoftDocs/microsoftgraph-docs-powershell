@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgGroupSetting
 
 ## SYNOPSIS
-Settings that can govern this group's behavior, like whether members can invite guest users to the group.
+Read-only.
 Nullable.
 
 ## SYNTAX
@@ -26,7 +26,7 @@ Remove-MgGroupSetting -InputObject <IGroupsIdentity> [-IfMatch <String>] [-PassT
 ```
 
 ## DESCRIPTION
-Settings that can govern this group's behavior, like whether members can invite guest users to the group.
+Read-only.
 Nullable.
 
 ## EXAMPLES
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IGroupsIdentity

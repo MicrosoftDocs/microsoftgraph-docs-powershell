@@ -48,7 +48,7 @@ Accept wildcard characters: False
 
 ### -AppDefinitions
 The details for each version of the app.
-To construct, see NOTES section for APPDEFINITIONS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for APPDEFINITIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTeamsAppDefinition1[]
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 teamsApp
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTeamsApp1

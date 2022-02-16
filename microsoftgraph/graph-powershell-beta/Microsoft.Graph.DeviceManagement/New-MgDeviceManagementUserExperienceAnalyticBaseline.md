@@ -16,6 +16,7 @@ User experience analytics baselines
 ```
 New-MgDeviceManagementUserExperienceAnalyticBaseline [-AdditionalProperties <Hashtable>]
  [-AppHealthMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>]
+ [-BatteryHealthMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>]
  [-BestPracticesMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>] [-CreatedDateTime <DateTime>]
  [-DeviceBootPerformanceMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>] [-DisplayName <String>]
  [-Id <String>] [-IsBuiltIn] [-RebootAnalyticsMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>]
@@ -54,7 +55,23 @@ Accept wildcard characters: False
 
 ### -AppHealthMetrics
 The user experience analytics category entity contains the scores and insights for the various metrics of a category.
-To construct, see NOTES section for APPHEALTHMETRICS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for APPHEALTHMETRICS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphUserExperienceAnalyticsCategory
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -BatteryHealthMetrics
+The user experience analytics category entity contains the scores and insights for the various metrics of a category.
+To construct, please use Get-Help -Online and see NOTES section for BATTERYHEALTHMETRICS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsCategory
@@ -70,7 +87,7 @@ Accept wildcard characters: False
 
 ### -BestPracticesMetrics
 The user experience analytics category entity contains the scores and insights for the various metrics of a category.
-To construct, see NOTES section for BESTPRACTICESMETRICS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BESTPRACTICESMETRICS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsCategory
@@ -86,7 +103,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analytics baseline entity contains baseline values against which to compare the user experience analytics scores.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsBaseline
@@ -117,7 +134,7 @@ Accept wildcard characters: False
 
 ### -DeviceBootPerformanceMetrics
 The user experience analytics category entity contains the scores and insights for the various metrics of a category.
-To construct, see NOTES section for DEVICEBOOTPERFORMANCEMETRICS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEVICEBOOTPERFORMANCEMETRICS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsCategory
@@ -178,7 +195,7 @@ Accept wildcard characters: False
 
 ### -RebootAnalyticsMetrics
 The user experience analytics category entity contains the scores and insights for the various metrics of a category.
-To construct, see NOTES section for REBOOTANALYTICSMETRICS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for REBOOTANALYTICSMETRICS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsCategory
@@ -194,7 +211,7 @@ Accept wildcard characters: False
 
 ### -ResourcePerformanceMetrics
 The user experience analytics category entity contains the scores and insights for the various metrics of a category.
-To construct, see NOTES section for RESOURCEPERFORMANCEMETRICS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for RESOURCEPERFORMANCEMETRICS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsCategory
@@ -210,7 +227,7 @@ Accept wildcard characters: False
 
 ### -WorkFromAnywhereMetrics
 The user experience analytics category entity contains the scores and insights for the various metrics of a category.
-To construct, see NOTES section for WORKFROMANYWHEREMETRICS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for WORKFROMANYWHEREMETRICS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsCategory
@@ -286,6 +303,19 @@ APPHEALTHMETRICS <IMicrosoftGraphUserExperienceAnalyticsCategory>: The user expe
     - `[Unit <String>]`: The unit of the user experience analytics metric.
     - `[Value <Double?>]`: The value of the user experience analytics metric.
 
+BATTERYHEALTHMETRICS <IMicrosoftGraphUserExperienceAnalyticsCategory>: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: Read-only.
+  - `[Insights <IMicrosoftGraphUserExperienceAnalyticsInsight[]>]`: The insights for the user experience analytics category.
+    - `[InsightId <String>]`: The unique identifier of the user experience analytics insight.
+    - `[Severity <String>]`: userExperienceAnalyticsInsightSeverity
+    - `[UserExperienceAnalyticsMetricId <String>]`: The unique identifier of the user experience analytics insight.
+    - `[Values <IMicrosoftGraphUserExperienceAnalyticsInsightValue[]>]`: The value of the user experience analytics insight.
+  - `[MetricValues <IMicrosoftGraphUserExperienceAnalyticsMetric[]>]`: The metric values for the user experience analytics category.
+    - `[Id <String>]`: Read-only.
+    - `[Unit <String>]`: The unit of the user experience analytics metric.
+    - `[Value <Double?>]`: The value of the user experience analytics metric.
+
 BESTPRACTICESMETRICS <IMicrosoftGraphUserExperienceAnalyticsCategory>: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
@@ -314,6 +344,7 @@ BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsBaseline>: The user experie
       - `[Id <String>]`: Read-only.
       - `[Unit <String>]`: The unit of the user experience analytics metric.
       - `[Value <Double?>]`: The value of the user experience analytics metric.
+  - `[BatteryHealthMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>]`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
   - `[BestPracticesMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>]`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
   - `[CreatedDateTime <DateTime?>]`: The date the custom baseline was created.
   - `[DeviceBootPerformanceMetrics <IMicrosoftGraphUserExperienceAnalyticsCategory>]`: The user experience analytics category entity contains the scores and insights for the various metrics of a category.

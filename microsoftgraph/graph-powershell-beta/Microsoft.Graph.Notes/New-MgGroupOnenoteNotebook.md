@@ -72,7 +72,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 notebook
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphNotebook1
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 identitySet
-To construct, see NOTES section for CREATEDBY properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: INotesIdentity
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 
 ### -LastModifiedBy
 identitySet
-To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -250,7 +250,7 @@ Accept wildcard characters: False
 
 ### -Links
 notebookLinks
-To construct, see NOTES section for LINKS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for LINKS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphNotebookLinks
@@ -268,7 +268,7 @@ Accept wildcard characters: False
 The section groups in the notebook.
 Read-only.
 Nullable.
-To construct, see NOTES section for SECTIONGROUPS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SECTIONGROUPS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSectionGroup1[]
@@ -302,7 +302,7 @@ Accept wildcard characters: False
 The sections in the notebook.
 Read-only.
 Nullable.
-To construct, see NOTES section for SECTIONS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SECTIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphOnenoteSection1[]

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementaccesspackageassignmentpolicy
@@ -15,7 +15,7 @@ Update the navigation property accessPackageAssignmentPolicies in identityGovern
 ### UpdateExpanded (Default)
 ```
 Update-MgEntitlementManagementAccessPackageAssignmentPolicy -AccessPackageAssignmentPolicyId <String>
- [-AccessPackage <IMicrosoftGraphAccessPackage>] [-AccessPackageCatalog <IMicrosoftGraphAccessPackageCatalog>]
+ [-AccessPackage <IMicrosoftGraphAccessPackage>] [-AccessPackageCatalog <IMicrosoftGraphAccessPackageCatalog1>]
  [-AccessPackageId <String>] [-AccessReviewSettings <IMicrosoftGraphAssignmentReviewSettings>]
  [-AdditionalProperties <Hashtable>] [-CanExtend] [-CreatedBy <String>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-DurationInDays <Int32>] [-ExpirationDateTime <DateTime>]
@@ -35,7 +35,7 @@ Update-MgEntitlementManagementAccessPackageAssignmentPolicy -AccessPackageAssign
 ### UpdateViaIdentityExpanded
 ```
 Update-MgEntitlementManagementAccessPackageAssignmentPolicy -InputObject <IIdentityGovernanceIdentity>
- [-AccessPackage <IMicrosoftGraphAccessPackage>] [-AccessPackageCatalog <IMicrosoftGraphAccessPackageCatalog>]
+ [-AccessPackage <IMicrosoftGraphAccessPackage>] [-AccessPackageCatalog <IMicrosoftGraphAccessPackageCatalog1>]
  [-AccessPackageId <String>] [-AccessReviewSettings <IMicrosoftGraphAssignmentReviewSettings>]
  [-AdditionalProperties <Hashtable>] [-CanExtend] [-CreatedBy <String>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-DurationInDays <Int32>] [-ExpirationDateTime <DateTime>]
@@ -95,7 +95,7 @@ accessPackageCatalog
 To construct, see NOTES section for ACCESSPACKAGECATALOG properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageCatalog
+Type: IMicrosoftGraphAccessPackageCatalog1
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -962,5 +962,8 @@ REQUESTORSETTINGS <IMicrosoftGraphRequestorSettings>: requestorSettings
   - `[ScopeType <String>]`: Who can request. One of NoSubjects, SpecificDirectorySubjects, SpecificConnectedOrganizationSubjects, AllConfiguredConnectedOrganizationSubjects, AllExistingConnectedOrganizationSubjects, AllExistingDirectoryMemberUsers, AllExistingDirectorySubjects or AllExternalSubjects.
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

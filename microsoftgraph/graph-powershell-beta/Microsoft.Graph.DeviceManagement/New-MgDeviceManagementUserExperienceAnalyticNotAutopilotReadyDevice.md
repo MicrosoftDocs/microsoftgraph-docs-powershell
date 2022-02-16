@@ -111,7 +111,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analytics Device not windows autopilot ready.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsNotAutopilotReadyDevice

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mginformationprotection
@@ -12,7 +12,7 @@ Update informationProtection
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
 Update-MgInformationProtection [-AdditionalProperties <Hashtable>] [-Bitlocker <IMicrosoftGraphBitlocker>]
  [-DataLossPreventionPolicies <IMicrosoftGraphDataLossPreventionPolicy[]>] [-Id <String>]
@@ -23,7 +23,7 @@ Update-MgInformationProtection [-AdditionalProperties <Hashtable>] [-Bitlocker <
  [<CommonParameters>]
 ```
 
-### Update1
+### Update
 ```
 Update-MgInformationProtection -BodyParameter <IMicrosoftGraphInformationProtection> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -41,7 +41,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -57,7 +57,7 @@ To construct, see NOTES section for BITLOCKER properties and create a hash table
 
 ```yaml
 Type: IMicrosoftGraphBitlocker
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -73,7 +73,7 @@ To construct, see NOTES section for BODYPARAMETER properties and create a hash t
 
 ```yaml
 Type: IMicrosoftGraphInformationProtection
-Parameter Sets: Update1
+Parameter Sets: Update
 Aliases:
 
 Required: True
@@ -89,7 +89,7 @@ To construct, see NOTES section for DATALOSSPREVENTIONPOLICIES properties and cr
 
 ```yaml
 Type: IMicrosoftGraphDataLossPreventionPolicy[]
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -104,7 +104,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -135,7 +135,7 @@ To construct, see NOTES section for POLICY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphInformationProtectionPolicy
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -151,7 +151,7 @@ To construct, see NOTES section for SENSITIVITYLABELS properties and create a ha
 
 ```yaml
 Type: IMicrosoftGraphSensitivityLabel[]
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -167,7 +167,7 @@ To construct, see NOTES section for SENSITIVITYPOLICYSETTINGS properties and cre
 
 ```yaml
 Type: IMicrosoftGraphSensitivityPolicySettings
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -183,7 +183,7 @@ To construct, see NOTES section for THREATASSESSMENTREQUESTS properties and crea
 
 ```yaml
 Type: IMicrosoftGraphThreatAssessmentRequest[]
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -417,5 +417,8 @@ THREATASSESSMENTREQUESTS <IMicrosoftGraphThreatAssessmentRequest[]>: .
   - `[Status <String>]`: threatAssessmentStatus
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

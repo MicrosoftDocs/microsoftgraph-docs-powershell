@@ -8,13 +8,12 @@ schema: 2.0.0
 # Get-MgUserPlanner
 
 ## SYNOPSIS
-Selective Planner services available to the user.
+Entry-point to the Planner resource that might exist for a user.
 Read-only.
-Nullable.
 
 ## SYNTAX
 
-### Get (Default)
+### Get1 (Default)
 ```
 Get-MgUserPlanner -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
@@ -26,9 +25,15 @@ Get-MgUserPlanner -UserId <String> [-ExpandProperty <String[]>] [-Property <Stri
  [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get1
+### Get2
 ```
 Get-MgUserPlanner -UserId <String> -PlannerDeltaId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### GetViaIdentity2
+```
+Get-MgUserPlanner -InputObject <IPlannerIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
@@ -38,16 +43,9 @@ Get-MgUserPlanner -InputObject <IPlannerIdentity> [-ExpandProperty <String[]>] [
  [<CommonParameters>]
 ```
 
-### GetViaIdentity
-```
-Get-MgUserPlanner -InputObject <IPlannerIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
-```
-
 ## DESCRIPTION
-Selective Planner services available to the user.
+Entry-point to the Planner resource that might exist for a user.
 Read-only.
-Nullable.
 
 ## EXAMPLES
 
@@ -116,11 +114,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IPlannerIdentity
-Parameter Sets: GetViaIdentity1, GetViaIdentity
+Parameter Sets: GetViaIdentity2, GetViaIdentity1
 Aliases:
 
 Required: True
@@ -150,7 +148,7 @@ key: id of plannerDelta
 
 ```yaml
 Type: String
-Parameter Sets: Get1
+Parameter Sets: Get2
 Aliases:
 
 Required: True
@@ -225,7 +223,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: Get, List, Get1
+Parameter Sets: Get1, List, Get2
 Aliases:
 
 Required: True
@@ -259,7 +257,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerDelta
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerUser
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerUser1
 ### System.String
 ## NOTES
 

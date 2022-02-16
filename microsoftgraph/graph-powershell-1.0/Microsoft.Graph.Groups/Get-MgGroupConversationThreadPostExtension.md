@@ -11,6 +11,7 @@ schema: 2.0.0
 The collection of open extensions defined for the post.
 Read-only.
 Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -18,8 +19,8 @@ Nullable.
 ```
 Get-MgGroupConversationThreadPostExtension -ConversationId <String> -ConversationThreadId <String>
  -GroupId <String> -PostId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+ [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
+ [<CommonParameters>]
 ```
 
 ### Get
@@ -39,6 +40,7 @@ Get-MgGroupConversationThreadPostExtension -InputObject <IGroupsIdentity> [-Expa
 The collection of open extensions defined for the post.
 Read-only.
 Nullable.
+Supports $expand.
 
 ## EXAMPLES
 
@@ -167,7 +169,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IGroupsIdentity
@@ -218,21 +220,6 @@ Select properties to be returned
 Type: String[]
 Parameter Sets: (All)
 Aliases: Select
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Search
-Search items by search phrases
-
-```yaml
-Type: String
-Parameter Sets: List
-Aliases:
 
 Required: False
 Position: Named

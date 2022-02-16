@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointonpremisesconnection
@@ -19,7 +19,7 @@ Update-MgDeviceManagementVirtualEndpointOnPremisesConnection -CloudPcOnPremisesC
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-HealthCheckStatus <String>]
  [-HealthCheckStatusDetails <IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetails>] [-Id <String>] [-InUse]
  [-OrganizationalUnit <String>] [-ResourceGroupId <String>] [-SubnetId <String>] [-SubscriptionId <String>]
- [-SubscriptionName <String>] [-VirtualNetworkId <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [-SubscriptionName <String>] [-Type <String>] [-VirtualNetworkId <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -38,7 +38,7 @@ Update-MgDeviceManagementVirtualEndpointOnPremisesConnection
  [-HealthCheckStatus <String>]
  [-HealthCheckStatusDetails <IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetails>] [-Id <String>] [-InUse]
  [-OrganizationalUnit <String>] [-ResourceGroupId <String>] [-SubnetId <String>] [-SubscriptionId <String>]
- [-SubscriptionName <String>] [-VirtualNetworkId <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [-SubscriptionName <String>] [-Type <String>] [-VirtualNetworkId <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -328,6 +328,21 @@ Accept wildcard characters: False
 ### -SubscriptionName
 The name of the target Azure subscription.
 Read-only.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Type
+cloudPcOnPremisesConnectionType
 
 ```yaml
 Type: String

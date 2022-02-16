@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementmobilethreatdefenseconnector
@@ -15,10 +15,11 @@ The list of Mobile threat Defense connectors configured by the tenant.
 ### CreateExpanded (Default)
 ```
 New-MgDeviceManagementMobileThreatDefenseConnector [-AdditionalProperties <Hashtable>]
- [-AllowPartnerToCollectIosApplicationMetadata] [-AndroidDeviceBlockedOnMissingPartnerData] [-AndroidEnabled]
- [-AndroidMobileApplicationManagementEnabled] [-Id <String>] [-IosDeviceBlockedOnMissingPartnerData]
- [-IosEnabled] [-IosMobileApplicationManagementEnabled] [-LastHeartbeatDateTime <DateTime>]
- [-MacDeviceBlockedOnMissingPartnerData] [-MacEnabled] [-PartnerState <String>]
+ [-AllowPartnerToCollectIosApplicationMetadata] [-AllowPartnerToCollectIosPersonalApplicationMetadata]
+ [-AndroidDeviceBlockedOnMissingPartnerData] [-AndroidEnabled] [-AndroidMobileApplicationManagementEnabled]
+ [-Id <String>] [-IosDeviceBlockedOnMissingPartnerData] [-IosEnabled] [-IosMobileApplicationManagementEnabled]
+ [-LastHeartbeatDateTime <DateTime>] [-MacDeviceBlockedOnMissingPartnerData] [-MacEnabled]
+ [-MicrosoftDefenderForEndpointAttachEnabled] [-PartnerState <String>]
  [-PartnerUnresponsivenessThresholdInDays <Int32>] [-PartnerUnsupportedOSVersionBlocked]
  [-WindowsDeviceBlockedOnMissingPartnerData] [-WindowsEnabled] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -62,6 +63,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AllowPartnerToCollectIosPersonalApplicationMetadata
+For IOS devices, allows the admin to configure whether the data sync partner may also collect metadata about personally installed applications from Intune
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -230,6 +246,22 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MicrosoftDefenderForEndpointAttachEnabled
+When TRUE, configuration profile management via Microsoft Defender for Endpoint is enabled.
+When FALSE, configuration profile management via Microsoft Defender for Endpoint is disabled.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

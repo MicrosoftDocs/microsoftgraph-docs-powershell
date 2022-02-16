@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Identity.SignIns
 Module Guid: 8a629b81-efb0-48f0-9be9-141a12a40639
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins
@@ -25,6 +25,12 @@ Get entity from identityProviders by key
 
 ### [Get-MgInformationProtection](Get-MgInformationProtection.md)
 Get informationProtection
+
+### [Get-MgInformationProtectionBitlocker](Get-MgInformationProtectionBitlocker.md)
+Get bitlocker from informationProtection
+
+### [Get-MgInformationProtectionBitlockerRecoveryKey](Get-MgInformationProtectionBitlockerRecoveryKey.md)
+The recovery keys associated with the bitlocker entity.
 
 ### [Get-MgInformationProtectionThreatAssessmentRequest](Get-MgInformationProtectionThreatAssessmentRequest.md)
 Get threatAssessmentRequests from informationProtection
@@ -130,6 +136,9 @@ Create new navigation property to policies for identity
 ### [New-MgIdentityProvider](New-MgIdentityProvider.md)
 Add new entity to identityProviders
 
+### [New-MgInformationProtectionBitlockerRecoveryKey](New-MgInformationProtectionBitlockerRecoveryKey.md)
+The recovery keys associated with the bitlocker entity.
+
 ### [New-MgInformationProtectionThreatAssessmentRequest](New-MgInformationProtectionThreatAssessmentRequest.md)
 Create new navigation property to threatAssessmentRequests for informationProtection
 
@@ -204,6 +213,12 @@ Delete navigation property policies for identity
 
 ### [Remove-MgIdentityProvider](Remove-MgIdentityProvider.md)
 Delete entity from identityProviders
+
+### [Remove-MgInformationProtectionBitlocker](Remove-MgInformationProtectionBitlocker.md)
+Delete navigation property bitlocker for informationProtection
+
+### [Remove-MgInformationProtectionBitlockerRecoveryKey](Remove-MgInformationProtectionBitlockerRecoveryKey.md)
+The recovery keys associated with the bitlocker entity.
 
 ### [Remove-MgInformationProtectionThreatAssessmentRequest](Remove-MgInformationProtectionThreatAssessmentRequest.md)
 Delete navigation property threatAssessmentRequests for informationProtection
@@ -297,6 +312,12 @@ Update entity in identityProviders
 
 ### [Update-MgInformationProtection](Update-MgInformationProtection.md)
 Update informationProtection
+
+### [Update-MgInformationProtectionBitlocker](Update-MgInformationProtectionBitlocker.md)
+Update the navigation property bitlocker in informationProtection
+
+### [Update-MgInformationProtectionBitlockerRecoveryKey](Update-MgInformationProtectionBitlockerRecoveryKey.md)
+The recovery keys associated with the bitlocker entity.
 
 ### [Update-MgInformationProtectionThreatAssessmentRequest](Update-MgInformationProtectionThreatAssessmentRequest.md)
 Update the navigation property threatAssessmentRequests in informationProtection

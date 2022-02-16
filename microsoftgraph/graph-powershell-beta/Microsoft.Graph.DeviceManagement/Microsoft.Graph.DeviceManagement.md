@@ -1,6 +1,6 @@
----
+﻿---
 Module Name: Microsoft.Graph.DeviceManagement
-Module Guid: 4e263ea9-f7f9-4e39-9fbf-d5b8c20c2cb8
+Module Guid: 794025dc-c5d8-4b33-9d3a-aefaf83ef34c
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement
 Help Version: 1.0.0.0
 Locale: en-US
@@ -77,8 +77,12 @@ The security baseline state for different settings for a device
 ### [Get-MgDeviceManagementComanagedDeviceUser](Get-MgDeviceManagementComanagedDeviceUser.md)
 The primary users associated with the managed device.
 
+### [Get-MgDeviceManagementComanagedDeviceUserByRef](Get-MgDeviceManagementComanagedDeviceUserByRef.md)
+The primary users associated with the managed device.
+
 ### [Get-MgDeviceManagementComanagedDeviceWindowProtectionState](Get-MgDeviceManagementComanagedDeviceWindowProtectionState.md)
 The device protection status.
+This property is read-only.
 
 ### [Get-MgDeviceManagementComanagedDeviceWindowProtectionStateDetectedMalwareState](Get-MgDeviceManagementComanagedDeviceWindowProtectionStateDetectedMalwareState.md)
 Device malware list
@@ -139,6 +143,7 @@ The list of scheduled action for this rule
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration.md)
 The list of scheduled action configurations for this compliance policy.
+Compliance policy must have one and only one block scheduled action.
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummary](Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummary.md)
 The summary states of compliance policy settings for this account.
@@ -239,12 +244,6 @@ List of run states for this script across all users.
 ### [Get-MgDeviceManagementDeviceShellScriptUserRunStateDeviceRunState](Get-MgDeviceManagementDeviceShellScriptUserRunStateDeviceRunState.md)
 List of run states for this script across all devices of specific user.
 
-### [Get-MgDeviceManagementDeviceShellScriptUserRunStateDeviceRunStateManagedDevice](Get-MgDeviceManagementDeviceShellScriptUserRunStateDeviceRunStateManagedDevice.md)
-The managed devices that executes the device management script.
-
-### [Get-MgDeviceManagementDeviceShellScriptUserRunStateDeviceRunStateManagedDeviceByRef](Get-MgDeviceManagementDeviceShellScriptUserRunStateDeviceRunStateManagedDeviceByRef.md)
-The managed devices that executes the device management script.
-
 ### [Get-MgDeviceManagementEmbeddedSimActivationCodePool](Get-MgDeviceManagementEmbeddedSimActivationCodePool.md)
 The embedded SIM activation code pools created by this account.
 
@@ -269,20 +268,8 @@ The associated group policy definition with the value.
 ### [Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValueDefinitionByRef](Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValueDefinitionByRef.md)
 The associated group policy definition with the value.
 
-### [Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentation](Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentation.md)
-The group policy presentation associated with the presentation value.
-
 ### [Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue](Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue.md)
 The associated group policy presentation values with the definition value.
-
-### [Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValueDefinitionValue](Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValueDefinitionValue.md)
-The group policy definition value associated with the presentation value.
-
-### [Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValueDefinitionValueByRef](Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValueDefinitionValueByRef.md)
-The group policy definition value associated with the presentation value.
-
-### [Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValuePresentationByRef](Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValuePresentationByRef.md)
-The group policy presentation associated with the presentation value.
 
 ### [Get-MgDeviceManagementIntent](Get-MgDeviceManagementIntent.md)
 The device management intents
@@ -368,8 +355,12 @@ The security baseline state for different settings for a device
 ### [Get-MgDeviceManagementManagedDeviceUser](Get-MgDeviceManagementManagedDeviceUser.md)
 The primary users associated with the managed device.
 
+### [Get-MgDeviceManagementManagedDeviceUserByRef](Get-MgDeviceManagementManagedDeviceUserByRef.md)
+The primary users associated with the managed device.
+
 ### [Get-MgDeviceManagementManagedDeviceWindowProtectionState](Get-MgDeviceManagementManagedDeviceWindowProtectionState.md)
 The device protection status.
+This property is read-only.
 
 ### [Get-MgDeviceManagementManagedDeviceWindowProtectionStateDetectedMalwareState](Get-MgDeviceManagementManagedDeviceWindowProtectionStateDetectedMalwareState.md)
 Device malware list
@@ -443,12 +434,6 @@ List of run states for this script across all users.
 ### [Get-MgDeviceManagementScriptUserRunStateDeviceRunState](Get-MgDeviceManagementScriptUserRunStateDeviceRunState.md)
 List of run states for this script across all devices of specific user.
 
-### [Get-MgDeviceManagementScriptUserRunStateDeviceRunStateManagedDevice](Get-MgDeviceManagementScriptUserRunStateDeviceRunStateManagedDevice.md)
-The managed devices that executes the device management script.
-
-### [Get-MgDeviceManagementScriptUserRunStateDeviceRunStateManagedDeviceByRef](Get-MgDeviceManagementScriptUserRunStateDeviceRunStateManagedDeviceByRef.md)
-The managed devices that executes the device management script.
-
 ### [Get-MgDeviceManagementSettingDefinition](Get-MgDeviceManagementSettingDefinition.md)
 The device management intent setting definitions
 
@@ -482,6 +467,12 @@ User experience analytics appHealth Application Performance
 ### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersion](Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersion.md)
 User experience analytics appHealth Application Performance by App Version
 
+### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail](Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail.md)
+User experience analytics appHealth Application Performance by App Version details
+
+### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId](Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId.md)
+User experience analytics appHealth Application Performance by App Version Device Id
+
 ### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOSVersion](Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOSVersion.md)
 User experience analytics appHealth Application Performance by OS Version
 
@@ -511,6 +502,12 @@ The user experience analytics app health metrics.
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticBaselineAppHealthMetricByRef](Get-MgDeviceManagementUserExperienceAnalyticBaselineAppHealthMetricByRef.md)
 The user experience analytics app health metrics.
+
+### [Get-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetric](Get-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetric.md)
+The user experience analytics battery health metrics.
+
+### [Get-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetricByRef](Get-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetricByRef.md)
+The user experience analytics battery health metrics.
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetric](Get-MgDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetric.md)
 The user experience analytics best practices metrics.
@@ -542,6 +539,30 @@ The user experience analytics work from anywhere metrics.
 ### [Get-MgDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetricByRef](Get-MgDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetricByRef.md)
 The user experience analytics work from anywhere metrics.
 
+### [Get-MgDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact](Get-MgDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact.md)
+User Experience Analytics Battery Health App Impact
+
+### [Get-MgDeviceManagementUserExperienceAnalyticBatteryHealthCapacityDetail](Get-MgDeviceManagementUserExperienceAnalyticBatteryHealthCapacityDetail.md)
+User Experience Analytics Battery Health Capacity Details
+
+### [Get-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact](Get-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact.md)
+User Experience Analytics Battery Health Device App Impact
+
+### [Get-MgDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance](Get-MgDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance.md)
+User Experience Analytics Battery Health Device Performance
+
+### [Get-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory](Get-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory.md)
+User Experience Analytics Battery Health Device Runtime History
+
+### [Get-MgDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance](Get-MgDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance.md)
+User Experience Analytics Battery Health Model Performance
+
+### [Get-MgDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformance](Get-MgDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformance.md)
+User Experience Analytics Battery Health Os Performance
+
+### [Get-MgDeviceManagementUserExperienceAnalyticBatteryHealthRuntimeDetail](Get-MgDeviceManagementUserExperienceAnalyticBatteryHealthRuntimeDetail.md)
+User Experience Analytics Battery Health Runtime Details
+
 ### [Get-MgDeviceManagementUserExperienceAnalyticCategory](Get-MgDeviceManagementUserExperienceAnalyticCategory.md)
 User experience analytics categories
 
@@ -550,12 +571,6 @@ The metric values for the user experience analytics category.
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticDeviceMetricHistory](Get-MgDeviceManagementUserExperienceAnalyticDeviceMetricHistory.md)
 User experience analytics device metric history
-
-### [Get-MgDeviceManagementUserExperienceAnalyticDeviceMetricHistoryUserExperienceAnalyticMetric](Get-MgDeviceManagementUserExperienceAnalyticDeviceMetricHistoryUserExperienceAnalyticMetric.md)
-User experience analytics metric.
-
-### [Get-MgDeviceManagementUserExperienceAnalyticDeviceMetricHistoryUserExperienceAnalyticMetricByRef](Get-MgDeviceManagementUserExperienceAnalyticDeviceMetricHistoryUserExperienceAnalyticMetricByRef.md)
-User experience analytics metric.
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticDevicePerformance](Get-MgDeviceManagementUserExperienceAnalyticDevicePerformance.md)
 User experience analytics device performance
@@ -581,11 +596,8 @@ User experience analytics impacting process
 ### [Get-MgDeviceManagementUserExperienceAnalyticMetricHistory](Get-MgDeviceManagementUserExperienceAnalyticMetricHistory.md)
 User experience analytics metric history
 
-### [Get-MgDeviceManagementUserExperienceAnalyticMetricHistoryUserExperienceAnalyticMetric](Get-MgDeviceManagementUserExperienceAnalyticMetricHistoryUserExperienceAnalyticMetric.md)
-User experience analytics metric.
-
-### [Get-MgDeviceManagementUserExperienceAnalyticMetricHistoryUserExperienceAnalyticMetricByRef](Get-MgDeviceManagementUserExperienceAnalyticMetricHistoryUserExperienceAnalyticMetricByRef.md)
-User experience analytics metric.
+### [Get-MgDeviceManagementUserExperienceAnalyticModelScore](Get-MgDeviceManagementUserExperienceAnalyticModelScore.md)
+User experience analytics model scores
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice](Get-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice.md)
 User experience analytics devices not Windows Autopilot ready.
@@ -613,6 +625,9 @@ User experience analytics resource performance
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticScoreHistory](Get-MgDeviceManagementUserExperienceAnalyticScoreHistory.md)
 User experience analytics device Startup Score History
+
+### [Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric](Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric.md)
+User experience analytics work from anywhere hardware readiness metrics.
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric](Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric.md)
 User experience analytics work from anywhere metrics.
@@ -674,7 +689,7 @@ Security baseline states for this device.
 ### [New-MgDeviceManagementComanagedDeviceSecurityBaselineStateSettingState](New-MgDeviceManagementComanagedDeviceSecurityBaselineStateSettingState.md)
 The security baseline state for different settings for a device
 
-### [New-MgDeviceManagementComanagedDeviceUser](New-MgDeviceManagementComanagedDeviceUser.md)
+### [New-MgDeviceManagementComanagedDeviceUserByRef](New-MgDeviceManagementComanagedDeviceUserByRef.md)
 The primary users associated with the managed device.
 
 ### [New-MgDeviceManagementComanagedDeviceWindowProtectionStateDetectedMalwareState](New-MgDeviceManagementComanagedDeviceWindowProtectionStateDetectedMalwareState.md)
@@ -724,6 +739,7 @@ The list of scheduled action for this rule
 
 ### [New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration.md)
 The list of scheduled action configurations for this compliance policy.
+Compliance policy must have one and only one block scheduled action.
 
 ### [New-MgDeviceManagementDeviceCompliancePolicySettingStateSummary](New-MgDeviceManagementDeviceCompliancePolicySettingStateSummary.md)
 The summary states of compliance policy settings for this account.
@@ -863,7 +879,7 @@ Security baseline states for this device.
 ### [New-MgDeviceManagementManagedDeviceSecurityBaselineStateSettingState](New-MgDeviceManagementManagedDeviceSecurityBaselineStateSettingState.md)
 The security baseline state for different settings for a device
 
-### [New-MgDeviceManagementManagedDeviceUser](New-MgDeviceManagementManagedDeviceUser.md)
+### [New-MgDeviceManagementManagedDeviceUserByRef](New-MgDeviceManagementManagedDeviceUserByRef.md)
 The primary users associated with the managed device.
 
 ### [New-MgDeviceManagementManagedDeviceWindowProtectionStateDetectedMalwareState](New-MgDeviceManagementManagedDeviceWindowProtectionStateDetectedMalwareState.md)
@@ -950,6 +966,12 @@ User experience analytics appHealth Application Performance
 ### [New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersion](New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersion.md)
 User experience analytics appHealth Application Performance by App Version
 
+### [New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail](New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail.md)
+User experience analytics appHealth Application Performance by App Version details
+
+### [New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId](New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId.md)
+User experience analytics appHealth Application Performance by App Version Device Id
+
 ### [New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOSVersion](New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOSVersion.md)
 User experience analytics appHealth Application Performance by OS Version
 
@@ -970,6 +992,24 @@ The metric values for the user experience analytics category.
 
 ### [New-MgDeviceManagementUserExperienceAnalyticBaseline](New-MgDeviceManagementUserExperienceAnalyticBaseline.md)
 User experience analytics baselines
+
+### [New-MgDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact](New-MgDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact.md)
+User Experience Analytics Battery Health App Impact
+
+### [New-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact](New-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact.md)
+User Experience Analytics Battery Health Device App Impact
+
+### [New-MgDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance](New-MgDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance.md)
+User Experience Analytics Battery Health Device Performance
+
+### [New-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory](New-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory.md)
+User Experience Analytics Battery Health Device Runtime History
+
+### [New-MgDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance](New-MgDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance.md)
+User Experience Analytics Battery Health Model Performance
+
+### [New-MgDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformance](New-MgDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformance.md)
+User Experience Analytics Battery Health Os Performance
 
 ### [New-MgDeviceManagementUserExperienceAnalyticCategory](New-MgDeviceManagementUserExperienceAnalyticCategory.md)
 User experience analytics categories
@@ -1003,6 +1043,9 @@ User experience analytics impacting process
 
 ### [New-MgDeviceManagementUserExperienceAnalyticMetricHistory](New-MgDeviceManagementUserExperienceAnalyticMetricHistory.md)
 User experience analytics metric history
+
+### [New-MgDeviceManagementUserExperienceAnalyticModelScore](New-MgDeviceManagementUserExperienceAnalyticModelScore.md)
+User experience analytics model scores
 
 ### [New-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice](New-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice.md)
 User experience analytics devices not Windows Autopilot ready.
@@ -1097,11 +1140,9 @@ Security baseline states for this device.
 ### [Remove-MgDeviceManagementComanagedDeviceSecurityBaselineStateSettingState](Remove-MgDeviceManagementComanagedDeviceSecurityBaselineStateSettingState.md)
 The security baseline state for different settings for a device
 
-### [Remove-MgDeviceManagementComanagedDeviceUser](Remove-MgDeviceManagementComanagedDeviceUser.md)
-The primary users associated with the managed device.
-
 ### [Remove-MgDeviceManagementComanagedDeviceWindowProtectionState](Remove-MgDeviceManagementComanagedDeviceWindowProtectionState.md)
 The device protection status.
+This property is read-only.
 
 ### [Remove-MgDeviceManagementComanagedDeviceWindowProtectionStateDetectedMalwareState](Remove-MgDeviceManagementComanagedDeviceWindowProtectionStateDetectedMalwareState.md)
 Device malware list
@@ -1147,6 +1188,7 @@ The list of scheduled action for this rule
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](Remove-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration.md)
 The list of scheduled action configurations for this compliance policy.
+Compliance policy must have one and only one block scheduled action.
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicySettingStateSummary](Remove-MgDeviceManagementDeviceCompliancePolicySettingStateSummary.md)
 The summary states of compliance policy settings for this account.
@@ -1235,9 +1277,6 @@ List of run states for this script across all users.
 ### [Remove-MgDeviceManagementDeviceShellScriptUserRunStateDeviceRunState](Remove-MgDeviceManagementDeviceShellScriptUserRunStateDeviceRunState.md)
 List of run states for this script across all devices of specific user.
 
-### [Remove-MgDeviceManagementDeviceShellScriptUserRunStateDeviceRunStateManagedDeviceByRef](Remove-MgDeviceManagementDeviceShellScriptUserRunStateDeviceRunStateManagedDeviceByRef.md)
-The managed devices that executes the device management script.
-
 ### [Remove-MgDeviceManagementEmbeddedSimActivationCodePool](Remove-MgDeviceManagementEmbeddedSimActivationCodePool.md)
 The embedded SIM activation code pools created by this account.
 
@@ -1261,12 +1300,6 @@ The associated group policy definition with the value.
 
 ### [Remove-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue](Remove-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue.md)
 The associated group policy presentation values with the definition value.
-
-### [Remove-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValueDefinitionValueByRef](Remove-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValueDefinitionValueByRef.md)
-The group policy definition value associated with the presentation value.
-
-### [Remove-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValuePresentationByRef](Remove-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValuePresentationByRef.md)
-The group policy presentation associated with the presentation value.
 
 ### [Remove-MgDeviceManagementIntent](Remove-MgDeviceManagementIntent.md)
 The device management intents
@@ -1340,11 +1373,9 @@ Security baseline states for this device.
 ### [Remove-MgDeviceManagementManagedDeviceSecurityBaselineStateSettingState](Remove-MgDeviceManagementManagedDeviceSecurityBaselineStateSettingState.md)
 The security baseline state for different settings for a device
 
-### [Remove-MgDeviceManagementManagedDeviceUser](Remove-MgDeviceManagementManagedDeviceUser.md)
-The primary users associated with the managed device.
-
 ### [Remove-MgDeviceManagementManagedDeviceWindowProtectionState](Remove-MgDeviceManagementManagedDeviceWindowProtectionState.md)
 The device protection status.
+This property is read-only.
 
 ### [Remove-MgDeviceManagementManagedDeviceWindowProtectionStateDetectedMalwareState](Remove-MgDeviceManagementManagedDeviceWindowProtectionStateDetectedMalwareState.md)
 Device malware list
@@ -1412,9 +1443,6 @@ List of run states for this script across all users.
 ### [Remove-MgDeviceManagementScriptUserRunStateDeviceRunState](Remove-MgDeviceManagementScriptUserRunStateDeviceRunState.md)
 List of run states for this script across all devices of specific user.
 
-### [Remove-MgDeviceManagementScriptUserRunStateDeviceRunStateManagedDeviceByRef](Remove-MgDeviceManagementScriptUserRunStateDeviceRunStateManagedDeviceByRef.md)
-The managed devices that executes the device management script.
-
 ### [Remove-MgDeviceManagementSettingDefinition](Remove-MgDeviceManagementSettingDefinition.md)
 The device management intent setting definitions
 
@@ -1445,6 +1473,12 @@ User experience analytics appHealth Application Performance
 ### [Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersion](Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersion.md)
 User experience analytics appHealth Application Performance by App Version
 
+### [Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail](Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail.md)
+User experience analytics appHealth Application Performance by App Version details
+
+### [Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId](Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId.md)
+User experience analytics appHealth Application Performance by App Version Device Id
+
 ### [Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOSVersion](Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOSVersion.md)
 User experience analytics appHealth Application Performance by OS Version
 
@@ -1472,6 +1506,9 @@ User experience analytics baselines
 ### [Remove-MgDeviceManagementUserExperienceAnalyticBaselineAppHealthMetricByRef](Remove-MgDeviceManagementUserExperienceAnalyticBaselineAppHealthMetricByRef.md)
 The user experience analytics app health metrics.
 
+### [Remove-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetricByRef](Remove-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetricByRef.md)
+The user experience analytics battery health metrics.
+
 ### [Remove-MgDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetricByRef](Remove-MgDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetricByRef.md)
 The user experience analytics best practices metrics.
 
@@ -1487,6 +1524,30 @@ The user experience analytics resource performance metrics.
 ### [Remove-MgDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetricByRef](Remove-MgDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetricByRef.md)
 The user experience analytics work from anywhere metrics.
 
+### [Remove-MgDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact](Remove-MgDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact.md)
+User Experience Analytics Battery Health App Impact
+
+### [Remove-MgDeviceManagementUserExperienceAnalyticBatteryHealthCapacityDetail](Remove-MgDeviceManagementUserExperienceAnalyticBatteryHealthCapacityDetail.md)
+User Experience Analytics Battery Health Capacity Details
+
+### [Remove-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact](Remove-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact.md)
+User Experience Analytics Battery Health Device App Impact
+
+### [Remove-MgDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance](Remove-MgDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance.md)
+User Experience Analytics Battery Health Device Performance
+
+### [Remove-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory](Remove-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory.md)
+User Experience Analytics Battery Health Device Runtime History
+
+### [Remove-MgDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance](Remove-MgDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance.md)
+User Experience Analytics Battery Health Model Performance
+
+### [Remove-MgDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformance](Remove-MgDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformance.md)
+User Experience Analytics Battery Health Os Performance
+
+### [Remove-MgDeviceManagementUserExperienceAnalyticBatteryHealthRuntimeDetail](Remove-MgDeviceManagementUserExperienceAnalyticBatteryHealthRuntimeDetail.md)
+User Experience Analytics Battery Health Runtime Details
+
 ### [Remove-MgDeviceManagementUserExperienceAnalyticCategory](Remove-MgDeviceManagementUserExperienceAnalyticCategory.md)
 User experience analytics categories
 
@@ -1495,9 +1556,6 @@ The metric values for the user experience analytics category.
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticDeviceMetricHistory](Remove-MgDeviceManagementUserExperienceAnalyticDeviceMetricHistory.md)
 User experience analytics device metric history
-
-### [Remove-MgDeviceManagementUserExperienceAnalyticDeviceMetricHistoryUserExperienceAnalyticMetricByRef](Remove-MgDeviceManagementUserExperienceAnalyticDeviceMetricHistoryUserExperienceAnalyticMetricByRef.md)
-User experience analytics metric.
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticDevicePerformance](Remove-MgDeviceManagementUserExperienceAnalyticDevicePerformance.md)
 User experience analytics device performance
@@ -1523,8 +1581,8 @@ User experience analytics impacting process
 ### [Remove-MgDeviceManagementUserExperienceAnalyticMetricHistory](Remove-MgDeviceManagementUserExperienceAnalyticMetricHistory.md)
 User experience analytics metric history
 
-### [Remove-MgDeviceManagementUserExperienceAnalyticMetricHistoryUserExperienceAnalyticMetricByRef](Remove-MgDeviceManagementUserExperienceAnalyticMetricHistoryUserExperienceAnalyticMetricByRef.md)
-User experience analytics metric.
+### [Remove-MgDeviceManagementUserExperienceAnalyticModelScore](Remove-MgDeviceManagementUserExperienceAnalyticModelScore.md)
+User experience analytics model scores
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice](Remove-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice.md)
 User experience analytics devices not Windows Autopilot ready.
@@ -1552,6 +1610,9 @@ User experience analytics resource performance
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticScoreHistory](Remove-MgDeviceManagementUserExperienceAnalyticScoreHistory.md)
 User experience analytics device Startup Score History
+
+### [Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric](Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric.md)
+User experience analytics work from anywhere hardware readiness metrics.
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric](Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric.md)
 User experience analytics work from anywhere metrics.
@@ -1601,6 +1662,9 @@ The software update status summary.
 ### [Set-MgDeviceManagementUserExperienceAnalyticBaselineAppHealthMetricByRef](Set-MgDeviceManagementUserExperienceAnalyticBaselineAppHealthMetricByRef.md)
 The user experience analytics app health metrics.
 
+### [Set-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetricByRef](Set-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetricByRef.md)
+The user experience analytics battery health metrics.
+
 ### [Set-MgDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetricByRef](Set-MgDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetricByRef.md)
 The user experience analytics best practices metrics.
 
@@ -1616,14 +1680,8 @@ The user experience analytics resource performance metrics.
 ### [Set-MgDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetricByRef](Set-MgDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetricByRef.md)
 The user experience analytics work from anywhere metrics.
 
-### [Set-MgDeviceManagementUserExperienceAnalyticDeviceMetricHistoryUserExperienceAnalyticMetricByRef](Set-MgDeviceManagementUserExperienceAnalyticDeviceMetricHistoryUserExperienceAnalyticMetricByRef.md)
-User experience analytics metric.
-
-### [Set-MgDeviceManagementUserExperienceAnalyticMetricHistoryUserExperienceAnalyticMetricByRef](Set-MgDeviceManagementUserExperienceAnalyticMetricHistoryUserExperienceAnalyticMetricByRef.md)
-User experience analytics metric.
-
-### [Set-MgDeviceManagementUserExperienceAnalyticMetricHistoryUserExperienceAnalyticMetricByRef](Set-MgDeviceManagementUserExperienceAnalyticMetricHistoryUserExperienceAnalyticMetricByRef.md)
-User experience analytics metric.
+### [Set-MgDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetricByRef](Set-MgDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetricByRef.md)
+The user experience analytics work from anywhere metrics.
 
 ### [Update-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummary](Update-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummary.md)
 The summary state of ATP onboarding state for this account.
@@ -1676,11 +1734,9 @@ Security baseline states for this device.
 ### [Update-MgDeviceManagementComanagedDeviceSecurityBaselineStateSettingState](Update-MgDeviceManagementComanagedDeviceSecurityBaselineStateSettingState.md)
 The security baseline state for different settings for a device
 
-### [Update-MgDeviceManagementComanagedDeviceUser](Update-MgDeviceManagementComanagedDeviceUser.md)
-The primary users associated with the managed device.
-
 ### [Update-MgDeviceManagementComanagedDeviceWindowProtectionState](Update-MgDeviceManagementComanagedDeviceWindowProtectionState.md)
 The device protection status.
+This property is read-only.
 
 ### [Update-MgDeviceManagementComanagedDeviceWindowProtectionStateDetectedMalwareState](Update-MgDeviceManagementComanagedDeviceWindowProtectionStateDetectedMalwareState.md)
 Device malware list
@@ -1726,6 +1782,7 @@ The list of scheduled action for this rule
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](Update-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration.md)
 The list of scheduled action configurations for this compliance policy.
+Compliance policy must have one and only one block scheduled action.
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummary](Update-MgDeviceManagementDeviceCompliancePolicySettingStateSummary.md)
 The summary states of compliance policy settings for this account.
@@ -1892,11 +1949,9 @@ Security baseline states for this device.
 ### [Update-MgDeviceManagementManagedDeviceSecurityBaselineStateSettingState](Update-MgDeviceManagementManagedDeviceSecurityBaselineStateSettingState.md)
 The security baseline state for different settings for a device
 
-### [Update-MgDeviceManagementManagedDeviceUser](Update-MgDeviceManagementManagedDeviceUser.md)
-The primary users associated with the managed device.
-
 ### [Update-MgDeviceManagementManagedDeviceWindowProtectionState](Update-MgDeviceManagementManagedDeviceWindowProtectionState.md)
 The device protection status.
+This property is read-only.
 
 ### [Update-MgDeviceManagementManagedDeviceWindowProtectionStateDetectedMalwareState](Update-MgDeviceManagementManagedDeviceWindowProtectionStateDetectedMalwareState.md)
 Device malware list
@@ -1985,6 +2040,12 @@ User experience analytics appHealth Application Performance
 ### [Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersion](Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersion.md)
 User experience analytics appHealth Application Performance by App Version
 
+### [Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail](Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail.md)
+User experience analytics appHealth Application Performance by App Version details
+
+### [Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId](Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId.md)
+User experience analytics appHealth Application Performance by App Version Device Id
+
 ### [Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOSVersion](Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOSVersion.md)
 User experience analytics appHealth Application Performance by OS Version
 
@@ -2008,6 +2069,30 @@ The metric values for the user experience analytics category.
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticBaseline](Update-MgDeviceManagementUserExperienceAnalyticBaseline.md)
 User experience analytics baselines
+
+### [Update-MgDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact](Update-MgDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact.md)
+User Experience Analytics Battery Health App Impact
+
+### [Update-MgDeviceManagementUserExperienceAnalyticBatteryHealthCapacityDetail](Update-MgDeviceManagementUserExperienceAnalyticBatteryHealthCapacityDetail.md)
+User Experience Analytics Battery Health Capacity Details
+
+### [Update-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact](Update-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceAppImpact.md)
+User Experience Analytics Battery Health Device App Impact
+
+### [Update-MgDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance](Update-MgDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance.md)
+User Experience Analytics Battery Health Device Performance
+
+### [Update-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory](Update-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory.md)
+User Experience Analytics Battery Health Device Runtime History
+
+### [Update-MgDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance](Update-MgDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance.md)
+User Experience Analytics Battery Health Model Performance
+
+### [Update-MgDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformance](Update-MgDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformance.md)
+User Experience Analytics Battery Health Os Performance
+
+### [Update-MgDeviceManagementUserExperienceAnalyticBatteryHealthRuntimeDetail](Update-MgDeviceManagementUserExperienceAnalyticBatteryHealthRuntimeDetail.md)
+User Experience Analytics Battery Health Runtime Details
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticCategory](Update-MgDeviceManagementUserExperienceAnalyticCategory.md)
 User experience analytics categories
@@ -2042,6 +2127,9 @@ User experience analytics impacting process
 ### [Update-MgDeviceManagementUserExperienceAnalyticMetricHistory](Update-MgDeviceManagementUserExperienceAnalyticMetricHistory.md)
 User experience analytics metric history
 
+### [Update-MgDeviceManagementUserExperienceAnalyticModelScore](Update-MgDeviceManagementUserExperienceAnalyticModelScore.md)
+User experience analytics model scores
+
 ### [Update-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice](Update-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice.md)
 User experience analytics devices not Windows Autopilot ready.
 
@@ -2068,6 +2156,9 @@ User experience analytics resource performance
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticScoreHistory](Update-MgDeviceManagementUserExperienceAnalyticScoreHistory.md)
 User experience analytics device Startup Score History
+
+### [Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric](Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric.md)
+User experience analytics work from anywhere hardware readiness metrics.
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric](Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric.md)
 User experience analytics work from anywhere metrics.
