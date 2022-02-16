@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/remove-mgteamworkdeviceconfiguration
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgTeamworkDeviceConfiguration
 
 ## SYNOPSIS
-Delete navigation property configuration for teamwork
+The configuration properties of the device.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgTeamworkDeviceConfiguration -InputObject <ITeamsIdentity> [-IfMatch <St
 ```
 
 ## DESCRIPTION
-Delete navigation property configuration for teamwork
+The configuration properties of the device.
 
 ## EXAMPLES
 

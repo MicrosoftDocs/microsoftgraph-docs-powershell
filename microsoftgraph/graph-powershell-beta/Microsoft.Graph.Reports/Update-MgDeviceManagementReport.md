@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/update-mgdevicemanagementreport
@@ -226,31 +226,3 @@ EXPORTJOBS <IMicrosoftGraphDeviceManagementExportJob[]>: Entity representing a j
   - `[Url <String>]`: Temporary location of the exported report
 
 ## RELATED LINKS
-
-b[]>: Entity representing a job to export a report
-  - `[Id <String>]`: Read-only.
-  - `[ExpirationDateTime <DateTime?>]`: Time that the exported report expires
-  - `[Filter <String>]`: Filters applied on the report
-  - `[Format <String>]`: deviceManagementReportFileFormat
-  - `[LocalizationType <String>]`: deviceManagementExportJobLocalizationType
-  - `[ReportName <String>]`: Name of the report
-  - `[RequestDateTime <DateTime?>]`: Time that the exported report was requested
-  - `[Select <String[]>]`: Columns selected from the report
-  - `[SnapshotId <String>]`: A snapshot is an identifiable subset of the dataset represented by the ReportName. A sessionId or CachedReportConfiguration id can be used here. If a sessionId is specified, Filter, Select, and OrderBy are applied to the data represented by the sessionId. Filter, Select, and OrderBy cannot be specified together with a CachedReportConfiguration id.
-  - `[Status <String>]`: deviceManagementReportStatus
-  - `[Url <String>]`: Temporary location of the exported report
-
-REPORTSCHEDULES <IMicrosoftGraphDeviceManagementReportSchedule[]>: Entity representing a schedule for which reports are delivered
-  - `[Id <String>]`: Read-only.
-  - `[Emails <String[]>]`: Emails to which the scheduled reports are delivered
-  - `[EndDateTime <DateTime?>]`: Time that the delivery of the scheduled reports ends
-  - `[Filter <String>]`: Filters applied on the report
-  - `[Format <String>]`: deviceManagementReportFileFormat
-  - `[OrderBy <String[]>]`: Ordering of columns in the report
-  - `[Recurrence <String>]`: deviceManagementScheduledReportRecurrence
-  - `[ReportName <String>]`: Name of the report
-  - `[ReportScheduleName <String>]`: Name of the schedule
-  - `[Select <String[]>]`: Columns selected from the report
-  - `[StartDateTime <DateTime?>]`: Time that the delivery of the scheduled reports starts
-  - `[Subject <String>]`: Subject of the scheduled reports that are delivered
-  - `[UserId <String>]`: The Id of the User who created the report

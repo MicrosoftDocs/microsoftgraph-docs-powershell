@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/new-mggroupsetting
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgGroupSetting
 
 ## SYNOPSIS
-Settings that can govern this group's behavior, like whether members can invite guest users to the group.
+Read-only.
 Nullable.
 
 ## SYNTAX
@@ -39,7 +39,7 @@ New-MgGroupSetting -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGrap
 ```
 
 ## DESCRIPTION
-Settings that can govern this group's behavior, like whether members can invite guest users to the group.
+Read-only.
 Nullable.
 
 ## EXAMPLES
@@ -228,7 +228,7 @@ BODYPARAMETER <IMicrosoftGraphDirectorySetting>: directorySetting
   - `[DisplayName <String>]`: Display name of this group of settings, which comes from the associated template. Read-only.
   - `[TemplateId <String>]`: Unique identifier for the template used to create this group of settings. Read-only.
   - `[Values <IMicrosoftGraphSettingValue[]>]`: Collection of name value pairs. Must contain and set all the settings defined in the template.
-    - `[Name <String>]`: Name of the setting (as defined by the directorySettingTemplate).
+    - `[Name <String>]`: Name of the setting (as defined by the groupSettingTemplate).
     - `[Value <String>]`: Value of the setting.
 
 INPUTOBJECT <IGroupsIdentity>: Identity Parameter
@@ -255,7 +255,7 @@ INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 VALUES <IMicrosoftGraphSettingValue[]>: Collection of name value pairs. Must contain and set all the settings defined in the template.
-  - `[Name <String>]`: Name of the setting (as defined by the directorySettingTemplate).
+  - `[Name <String>]`: Name of the setting (as defined by the groupSettingTemplate).
   - `[Value <String>]`: Value of the setting.
 
 ## RELATED LINKS

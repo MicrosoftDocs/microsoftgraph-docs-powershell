@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/rename-mgcommunicationcallscreensharingrole
@@ -12,26 +12,26 @@ Invoke action changeScreenSharingRole
 
 ## SYNTAX
 
-### ChangeExpanded (Default)
+### ChangeExpanded1 (Default)
 ```
 Rename-MgCommunicationCallScreenSharingRole -CallId <String> [-AdditionalProperties <Hashtable>]
  [-Role <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Change
+### Change1
 ```
 Rename-MgCommunicationCallScreenSharingRole -CallId <String>
  -BodyParameter <IPathsOj95ZpCommunicationsCallsCallIdMicrosoftGraphChangescreensharingrolePostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ChangeViaIdentityExpanded
+### ChangeViaIdentityExpanded1
 ```
 Rename-MgCommunicationCallScreenSharingRole -InputObject <ICloudCommunicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-Role <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ChangeViaIdentity
+### ChangeViaIdentity1
 ```
 Rename-MgCommunicationCallScreenSharingRole -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPathsOj95ZpCommunicationsCallsCallIdMicrosoftGraphChangescreensharingrolePostRequestbodyContentApplicationJsonSchema>
@@ -50,7 +50,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: ChangeExpanded, ChangeViaIdentityExpanded
+Parameter Sets: ChangeExpanded1, ChangeViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -66,7 +66,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPathsOj95ZpCommunicationsCallsCallIdMicrosoftGraphChangescreensharingrolePostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Change, ChangeViaIdentity
+Parameter Sets: Change1, ChangeViaIdentity1
 Aliases:
 
 Required: True
@@ -81,7 +81,7 @@ key: id of call
 
 ```yaml
 Type: String
-Parameter Sets: ChangeExpanded, Change
+Parameter Sets: ChangeExpanded1, Change1
 Aliases:
 
 Required: True
@@ -97,7 +97,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ICloudCommunicationsIdentity
-Parameter Sets: ChangeViaIdentityExpanded, ChangeViaIdentity
+Parameter Sets: ChangeViaIdentityExpanded1, ChangeViaIdentity1
 Aliases:
 
 Required: True
@@ -127,7 +127,7 @@ screenSharingRole
 
 ```yaml
 Type: String
-Parameter Sets: ChangeExpanded, ChangeViaIdentityExpanded
+Parameter Sets: ChangeExpanded1, ChangeViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -196,7 +196,6 @@ INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call
   - `[CallRecordId <String>]`: key: id of callRecord
-  - `[CallTranscriptId <String>]`: key: id of callTranscript
   - `[CommsOperationId <String>]`: key: id of commsOperation
   - `[MeetingAttendanceReportId <String>]`: key: id of meetingAttendanceReport
   - `[MeetingRegistrationQuestionId <String>]`: key: id of meetingRegistrationQuestion

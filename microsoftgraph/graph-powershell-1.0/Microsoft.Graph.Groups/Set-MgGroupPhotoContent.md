@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/set-mggroupphotocontent
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgGroupPhotoContent
 
 ## SYNOPSIS
-The group's profile photo.
+The group's profile photo
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Set-MgGroupPhotoContent -InputObject <IGroupsIdentity> [-BodyParameter <Stream>]
 ```
 
 ## DESCRIPTION
-The group's profile photo.
+The group's profile photo
 
 ## EXAMPLES
 

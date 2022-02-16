@@ -30,13 +30,6 @@ User experience analytics categories
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -158,9 +151,36 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsCategory
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsCategory>: The user experience analytics category entity contains the scores and insights for the various metrics of a category.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: Read-only.
+  - `[Insights <IMicrosoftGraphUserExperienceAnalyticsInsight[]>]`: The insights for the user experience analytics category.
+    - `[InsightId <String>]`: The unique identifier of the user experience analytics insight.
+    - `[Severity <String>]`: userExperienceAnalyticsInsightSeverity
+    - `[UserExperienceAnalyticsMetricId <String>]`: The unique identifier of the user experience analytics insight.
+    - `[Values <IMicrosoftGraphUserExperienceAnalyticsInsightValue[]>]`: The value of the user experience analytics insight.
+  - `[MetricValues <IMicrosoftGraphUserExperienceAnalyticsMetric[]>]`: The metric values for the user experience analytics category.
+    - `[Id <String>]`: Read-only.
+    - `[Unit <String>]`: The unit of the user experience analytics metric.
+    - `[Value <Double?>]`: The value of the user experience analytics metric.
+
+INSIGHTS <IMicrosoftGraphUserExperienceAnalyticsInsight[]>: The insights for the user experience analytics category.
+  - `[InsightId <String>]`: The unique identifier of the user experience analytics insight.
+  - `[Severity <String>]`: userExperienceAnalyticsInsightSeverity
+  - `[UserExperienceAnalyticsMetricId <String>]`: The unique identifier of the user experience analytics insight.
+  - `[Values <IMicrosoftGraphUserExperienceAnalyticsInsightValue[]>]`: The value of the user experience analytics insight.
+
+METRICVALUES <IMicrosoftGraphUserExperienceAnalyticsMetric[]>: The metric values for the user experience analytics category.
+  - `[Id <String>]`: Read-only.
+  - `[Unit <String>]`: The unit of the user experience analytics metric.
+  - `[Value <Double?>]`: The value of the user experience analytics metric.
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticcategory](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticcategory)
-

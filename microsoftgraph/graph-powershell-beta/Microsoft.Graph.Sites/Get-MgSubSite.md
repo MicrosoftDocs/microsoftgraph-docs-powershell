@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/get-mgsubsite
@@ -12,7 +12,12 @@ The collection of the sub-sites under this site.
 
 ## SYNTAX
 
-### List (Default)
+### Get4 (Default)
+```
+Get-MgSubSite [-SiteId <String>] [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+```
+
+### List
 ```
 Get-MgSubSite [-SiteId <String>] [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
@@ -22,6 +27,12 @@ Get-MgSubSite [-SiteId <String>] [-ExpandProperty <String[]>] [-Property <String
 ### Get1
 ```
 Get-MgSubSite [-SiteId <String>] -SiteId1 <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### GetViaIdentity4
+```
+Get-MgSubSite -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
@@ -105,7 +116,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: GetViaIdentity1
+Parameter Sets: GetViaIdentity4, GetViaIdentity1
 Aliases:
 
 Required: True
@@ -165,7 +176,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: List, Get1
+Parameter Sets: Get4, List, Get1
 Aliases:
 
 Required: False
@@ -283,6 +294,7 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[SubscriptionId <String>]`: key: id of subscription
   - `[TermId <String>]`: key: id of term
   - `[TermId1 <String>]`: key: id of term
+  - `[Token <String>]`: Usage: token={token}
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS

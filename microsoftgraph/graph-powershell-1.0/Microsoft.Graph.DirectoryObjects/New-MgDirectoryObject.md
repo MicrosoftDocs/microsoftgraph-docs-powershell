@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.DirectoryObjects
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.directoryobjects/new-mgdirectoryobject
@@ -146,7 +146,3 @@ BODYPARAMETER <IMicrosoftGraphDirectoryObject>: directoryObject
   - `[DeletedDateTime <DateTime?>]`: 
 
 ## RELATED LINKS
-
-ect.
-  - `[Id <String>]`: Read-only.
-  - `[DeletedDateTime <DateTime?>]`: 

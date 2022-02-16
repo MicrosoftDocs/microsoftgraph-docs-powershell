@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/remove-mggrouppermissiongrant
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgGroupPermissionGrant
 
 ## SYNOPSIS
-The permissions that have been granted for a group to a specific application.
+The permission that has been granted for a group to a specific application.
 Supports $expand.
 
 ## SYNTAX
@@ -26,7 +26,7 @@ Remove-MgGroupPermissionGrant -InputObject <IGroupsIdentity> [-IfMatch <String>]
 ```
 
 ## DESCRIPTION
-The permissions that have been granted for a group to a specific application.
+The permission that has been granted for a group to a specific application.
 Supports $expand.
 
 ## EXAMPLES

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/remove-mggroupsetting
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgGroupSetting
 
 ## SYNOPSIS
-Settings that can govern this group's behavior, like whether members can invite guest users to the group.
+Read-only.
 Nullable.
 
 ## SYNTAX
@@ -26,7 +26,7 @@ Remove-MgGroupSetting -InputObject <IGroupsIdentity> [-IfMatch <String>] [-PassT
 ```
 
 ## DESCRIPTION
-Settings that can govern this group's behavior, like whether members can invite guest users to the group.
+Read-only.
 Nullable.
 
 ## EXAMPLES

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/get-mgsitedrive
@@ -12,7 +12,7 @@ The default drive (document library) for this site.
 
 ## SYNTAX
 
-### Get2 (Default)
+### Get1 (Default)
 ```
 Get-MgSiteDrive -SiteId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
@@ -24,19 +24,19 @@ Get-MgSiteDrive -SiteId <String> [-ExpandProperty <String[]>] [-Property <String
  [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get3
+### Get2
 ```
 Get-MgSiteDrive -SiteId <String> -DriveId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
-### GetViaIdentity3
+### GetViaIdentity2
 ```
 Get-MgSiteDrive -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
-### GetViaIdentity2
+### GetViaIdentity1
 ```
 Get-MgSiteDrive -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
@@ -85,7 +85,7 @@ key: id of drive
 
 ```yaml
 Type: String
-Parameter Sets: Get3
+Parameter Sets: Get2
 Aliases:
 
 Required: True
@@ -131,7 +131,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: GetViaIdentity3, GetViaIdentity2
+Parameter Sets: GetViaIdentity2, GetViaIdentity1
 Aliases:
 
 Required: True
@@ -191,7 +191,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: Get2, List1, Get3
+Parameter Sets: Get1, List1, Get2
 Aliases:
 
 Required: True
@@ -294,6 +294,7 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[SubscriptionId <String>]`: key: id of subscription
   - `[TermId <String>]`: key: id of term
   - `[TermId1 <String>]`: key: id of term
+  - `[Token <String>]`: Usage: token={token}
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS

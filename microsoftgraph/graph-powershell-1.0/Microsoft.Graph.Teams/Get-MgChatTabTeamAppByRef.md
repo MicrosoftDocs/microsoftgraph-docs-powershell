@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgchattabteamappbyref
@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The application that is linked to the tab.
+This cannot be changed after tab creation.
 
 ## SYNTAX
 
@@ -24,6 +25,7 @@ Get-MgChatTabTeamAppByRef -InputObject <ITeamsIdentity> [<CommonParameters>]
 
 ## DESCRIPTION
 The application that is linked to the tab.
+This cannot be changed after tab creation.
 
 ## EXAMPLES
 

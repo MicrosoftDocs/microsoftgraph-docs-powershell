@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdetectedapp
@@ -507,14 +507,5 @@ MANAGEDDEVICES <IMicrosoftGraphManagedDevice[]>: The devices that have the disco
   - `[WiFiMacAddress <String>]`: Wi-Fi MAC. This property is read-only.
 
 ## RELATED LINKS
-
-## RELATED LINKS
-
-
-## RELATED LINKS
-
-
-## RELATED LINKS
-
 
 ## RELATED LINKS

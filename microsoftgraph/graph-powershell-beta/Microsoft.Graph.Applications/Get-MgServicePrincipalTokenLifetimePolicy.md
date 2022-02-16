@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgserviceprincipaltokenlifetimepolicy
@@ -9,7 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The tokenLifetimePolicies assigned to this service principal.
-Supports $expand.
 
 ## SYNTAX
 
@@ -21,7 +20,6 @@ Get-MgServicePrincipalTokenLifetimePolicy -ServicePrincipalId <String> [-ExpandP
 
 ## DESCRIPTION
 The tokenLifetimePolicies assigned to this service principal.
-Supports $expand.
 
 ## EXAMPLES
 

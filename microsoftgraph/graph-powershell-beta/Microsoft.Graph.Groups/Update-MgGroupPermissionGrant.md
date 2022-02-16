@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/update-mggrouppermissiongrant
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgGroupPermissionGrant
 
 ## SYNOPSIS
-The permissions that have been granted for a group to a specific application.
+The permission that has been granted for a group to a specific application.
 Supports $expand.
 
 ## SYNTAX
@@ -44,7 +44,7 @@ Update-MgGroupPermissionGrant -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-The permissions that have been granted for a group to a specific application.
+The permission that has been granted for a group to a specific application.
 Supports $expand.
 
 ## EXAMPLES

@@ -32,13 +32,6 @@ The list of device remote action audits with the tenant.
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
 ## PARAMETERS
 
 ### -Action
@@ -208,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserName
-\[deprecated\] Please use InitiatedByUserPrincipalName instead.
+[deprecated] Please use InitiatedByUserPrincipalName instead.
 
 ```yaml
 Type: String
@@ -263,9 +256,25 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRemoteActionAudit
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+BODYPARAMETER <IMicrosoftGraphRemoteActionAudit>: Report of remote actions initiated on the devices belonging to a certain tenant.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: Read-only.
+  - `[Action <String>]`: Remote actions Intune supports.
+  - `[ActionState <String>]`: State of the action on the device
+  - `[DeviceDisplayName <String>]`: Intune device name.
+  - `[DeviceImei <String>]`: IMEI of the device.
+  - `[DeviceOwnerUserPrincipalName <String>]`: Upn of the device owner.
+  - `[InitiatedByUserPrincipalName <String>]`: User who initiated the device action, format is UPN.
+  - `[ManagedDeviceId <String>]`: Action target.
+  - `[RequestDateTime <DateTime?>]`: Time when the action was issued, given in UTC.
+  - `[UserName <String>]`: [deprecated] Please use InitiatedByUserPrincipalName instead.
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementremoteactionaudit](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementremoteactionaudit)
-
