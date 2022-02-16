@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/new-mgsitetermstoresettermrelation
@@ -327,25 +327,25 @@ BODYPARAMETER <IMicrosoftGraphTermStoreRelation1>: relation
       - `[Name <String>]`: The name of the label.
     - `[LastModifiedDateTime <DateTime?>]`: Last date and time of term modification. Read-only.
     - `[Properties <IMicrosoftGraphKeyValue[]>]`: Collection of properties on the term.
-      - `[Key <String>]`: Key.
-      - `[Value <String>]`: Value.
+      - `[Key <String>]`: Key for the key-value pair.
+      - `[Value <String>]`: Value for the key-value pair.
     - `[Relations <IMicrosoftGraphTermStoreRelation1[]>]`: To indicate which terms are related to the current term as either pinned or reused.
     - `[Set <IMicrosoftGraphTermStoreSet1>]`: set
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: Read-only.
       - `[Children <IMicrosoftGraphTermStoreTerm1[]>]`: Children terms of set in term [store].
       - `[CreatedDateTime <DateTime?>]`: Date and time of set creation. Read-only.
-      - `[Description <String>]`: Description giving details on the term usage.
+      - `[Description <String>]`: Description that gives details on the term usage.
       - `[LocalizedNames <IMicrosoftGraphTermStoreLocalizedName[]>]`: Name of the set for each languageTag.
         - `[LanguageTag <String>]`: The language tag for the label.
         - `[Name <String>]`: The name in the localized language.
       - `[ParentGroup <IMicrosoftGraphTermStoreGroup1>]`: group
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: Read-only.
-        - `[CreatedDateTime <DateTime?>]`: Date and time of group creation. Read-only.
-        - `[Description <String>]`: Description giving details on the term usage.
-        - `[DisplayName <String>]`: Name of group.
-        - `[ParentSiteId <String>]`: Id of the parent site of this group.
+        - `[CreatedDateTime <DateTime?>]`: Date and time of the group creation. Read-only.
+        - `[Description <String>]`: Description that gives details on the term usage.
+        - `[DisplayName <String>]`: Name of the group.
+        - `[ParentSiteId <String>]`: ID of the parent site of this group.
         - `[Scope <String>]`: 
         - `[Sets <IMicrosoftGraphTermStoreSet1[]>]`: All sets under the group in a term [store].
       - `[Properties <IMicrosoftGraphKeyValue[]>]`: Custom properties for the set.
@@ -369,8 +369,8 @@ FROMTERM <IMicrosoftGraphTermStoreTerm1>: term
     - `[Name <String>]`: The name of the label.
   - `[LastModifiedDateTime <DateTime?>]`: Last date and time of term modification. Read-only.
   - `[Properties <IMicrosoftGraphKeyValue[]>]`: Collection of properties on the term.
-    - `[Key <String>]`: Key.
-    - `[Value <String>]`: Value.
+    - `[Key <String>]`: Key for the key-value pair.
+    - `[Value <String>]`: Value for the key-value pair.
   - `[Relations <IMicrosoftGraphTermStoreRelation1[]>]`: To indicate which terms are related to the current term as either pinned or reused.
     - `[Id <String>]`: Read-only.
     - `[FromTerm <IMicrosoftGraphTermStoreTerm1>]`: term
@@ -380,17 +380,17 @@ FROMTERM <IMicrosoftGraphTermStoreTerm1>: term
       - `[Id <String>]`: Read-only.
       - `[Children <IMicrosoftGraphTermStoreTerm1[]>]`: Children terms of set in term [store].
       - `[CreatedDateTime <DateTime?>]`: Date and time of set creation. Read-only.
-      - `[Description <String>]`: Description giving details on the term usage.
+      - `[Description <String>]`: Description that gives details on the term usage.
       - `[LocalizedNames <IMicrosoftGraphTermStoreLocalizedName[]>]`: Name of the set for each languageTag.
         - `[LanguageTag <String>]`: The language tag for the label.
         - `[Name <String>]`: The name in the localized language.
       - `[ParentGroup <IMicrosoftGraphTermStoreGroup1>]`: group
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: Read-only.
-        - `[CreatedDateTime <DateTime?>]`: Date and time of group creation. Read-only.
-        - `[Description <String>]`: Description giving details on the term usage.
-        - `[DisplayName <String>]`: Name of group.
-        - `[ParentSiteId <String>]`: Id of the parent site of this group.
+        - `[CreatedDateTime <DateTime?>]`: Date and time of the group creation. Read-only.
+        - `[Description <String>]`: Description that gives details on the term usage.
+        - `[DisplayName <String>]`: Name of the group.
+        - `[ParentSiteId <String>]`: ID of the parent site of this group.
         - `[Scope <String>]`: 
         - `[Sets <IMicrosoftGraphTermStoreSet1[]>]`: All sets under the group in a term [store].
       - `[Properties <IMicrosoftGraphKeyValue[]>]`: Custom properties for the set.
@@ -429,6 +429,7 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[SubscriptionId <String>]`: key: id of subscription
   - `[TermId <String>]`: key: id of term
   - `[TermId1 <String>]`: key: id of term
+  - `[Token <String>]`: Usage: token={token}
   - `[UserId <String>]`: key: id of user
 
 SET <IMicrosoftGraphTermStoreSet1>: set
@@ -447,8 +448,8 @@ SET <IMicrosoftGraphTermStoreSet1>: set
       - `[Name <String>]`: The name of the label.
     - `[LastModifiedDateTime <DateTime?>]`: Last date and time of term modification. Read-only.
     - `[Properties <IMicrosoftGraphKeyValue[]>]`: Collection of properties on the term.
-      - `[Key <String>]`: Key.
-      - `[Value <String>]`: Value.
+      - `[Key <String>]`: Key for the key-value pair.
+      - `[Value <String>]`: Value for the key-value pair.
     - `[Relations <IMicrosoftGraphTermStoreRelation1[]>]`: To indicate which terms are related to the current term as either pinned or reused.
       - `[Id <String>]`: Read-only.
       - `[FromTerm <IMicrosoftGraphTermStoreTerm1>]`: term
@@ -457,17 +458,17 @@ SET <IMicrosoftGraphTermStoreSet1>: set
       - `[ToTerm <IMicrosoftGraphTermStoreTerm1>]`: term
     - `[Set <IMicrosoftGraphTermStoreSet1>]`: set
   - `[CreatedDateTime <DateTime?>]`: Date and time of set creation. Read-only.
-  - `[Description <String>]`: Description giving details on the term usage.
+  - `[Description <String>]`: Description that gives details on the term usage.
   - `[LocalizedNames <IMicrosoftGraphTermStoreLocalizedName[]>]`: Name of the set for each languageTag.
     - `[LanguageTag <String>]`: The language tag for the label.
     - `[Name <String>]`: The name in the localized language.
   - `[ParentGroup <IMicrosoftGraphTermStoreGroup1>]`: group
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: Read-only.
-    - `[CreatedDateTime <DateTime?>]`: Date and time of group creation. Read-only.
-    - `[Description <String>]`: Description giving details on the term usage.
-    - `[DisplayName <String>]`: Name of group.
-    - `[ParentSiteId <String>]`: Id of the parent site of this group.
+    - `[CreatedDateTime <DateTime?>]`: Date and time of the group creation. Read-only.
+    - `[Description <String>]`: Description that gives details on the term usage.
+    - `[DisplayName <String>]`: Name of the group.
+    - `[ParentSiteId <String>]`: ID of the parent site of this group.
     - `[Scope <String>]`: 
     - `[Sets <IMicrosoftGraphTermStoreSet1[]>]`: All sets under the group in a term [store].
   - `[Properties <IMicrosoftGraphKeyValue[]>]`: Custom properties for the set.
@@ -488,8 +489,8 @@ TOTERM <IMicrosoftGraphTermStoreTerm1>: term
     - `[Name <String>]`: The name of the label.
   - `[LastModifiedDateTime <DateTime?>]`: Last date and time of term modification. Read-only.
   - `[Properties <IMicrosoftGraphKeyValue[]>]`: Collection of properties on the term.
-    - `[Key <String>]`: Key.
-    - `[Value <String>]`: Value.
+    - `[Key <String>]`: Key for the key-value pair.
+    - `[Value <String>]`: Value for the key-value pair.
   - `[Relations <IMicrosoftGraphTermStoreRelation1[]>]`: To indicate which terms are related to the current term as either pinned or reused.
     - `[Id <String>]`: Read-only.
     - `[FromTerm <IMicrosoftGraphTermStoreTerm1>]`: term
@@ -499,17 +500,17 @@ TOTERM <IMicrosoftGraphTermStoreTerm1>: term
       - `[Id <String>]`: Read-only.
       - `[Children <IMicrosoftGraphTermStoreTerm1[]>]`: Children terms of set in term [store].
       - `[CreatedDateTime <DateTime?>]`: Date and time of set creation. Read-only.
-      - `[Description <String>]`: Description giving details on the term usage.
+      - `[Description <String>]`: Description that gives details on the term usage.
       - `[LocalizedNames <IMicrosoftGraphTermStoreLocalizedName[]>]`: Name of the set for each languageTag.
         - `[LanguageTag <String>]`: The language tag for the label.
         - `[Name <String>]`: The name in the localized language.
       - `[ParentGroup <IMicrosoftGraphTermStoreGroup1>]`: group
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: Read-only.
-        - `[CreatedDateTime <DateTime?>]`: Date and time of group creation. Read-only.
-        - `[Description <String>]`: Description giving details on the term usage.
-        - `[DisplayName <String>]`: Name of group.
-        - `[ParentSiteId <String>]`: Id of the parent site of this group.
+        - `[CreatedDateTime <DateTime?>]`: Date and time of the group creation. Read-only.
+        - `[Description <String>]`: Description that gives details on the term usage.
+        - `[DisplayName <String>]`: Name of the group.
+        - `[ParentSiteId <String>]`: ID of the parent site of this group.
         - `[Scope <String>]`: 
         - `[Sets <IMicrosoftGraphTermStoreSet1[]>]`: All sets under the group in a term [store].
       - `[Properties <IMicrosoftGraphKeyValue[]>]`: Custom properties for the set.
@@ -519,8 +520,5 @@ TOTERM <IMicrosoftGraphTermStoreTerm1>: term
   - `[Set <IMicrosoftGraphTermStoreSet1>]`: set
 
 ## RELATED LINKS
-
-## RELATED LINKS
-
 
 ## RELATED LINKS

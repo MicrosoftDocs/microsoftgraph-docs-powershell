@@ -52,13 +52,6 @@ One online meeting can only have one registration enabled.
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -209,7 +202,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -241,7 +234,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -350,9 +343,64 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+BODYPARAMETER <IMicrosoftGraphMeetingRegistration>: meetingRegistration
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[AllowedRegistrant <String>]`: meetingAudience
+  - `[Registrants <IMicrosoftGraphMeetingRegistrantBase[]>]`: Registrants of the online meeting.
+    - `[Id <String>]`: Read-only.
+    - `[JoinWebUrl <String>]`: A unique web URL for the registrant to join the meeting. Read-only.
+  - `[Id <String>]`: Read-only.
+  - `[CustomQuestions <IMicrosoftGraphMeetingRegistrationQuestion[]>]`: Custom registration questions.
+    - `[Id <String>]`: Read-only.
+    - `[AnswerInputType <String>]`: answerInputType
+    - `[AnswerOptions <String[]>]`: Answer options when answerInputType is radioButton.
+    - `[DisplayName <String>]`: Display name of the custom registration question.
+    - `[IsRequired <Boolean?>]`: Indicates whether the question is required. Default value is false.
+  - `[Description <String>]`: The description of the meeting.
+  - `[EndDateTime <DateTime?>]`: The meeting end time in UTC.
+  - `[RegistrationPageViewCount <Int32?>]`: The number of times the registration page has been visited. Read-only.
+  - `[RegistrationPageWebUrl <String>]`: The URL of the registration page. Read-only.
+  - `[Speakers <IMicrosoftGraphMeetingSpeaker[]>]`: The meeting speaker's information.
+    - `[Bio <String>]`: Bio of the speaker.
+    - `[DisplayName <String>]`: Display name of the speaker.
+  - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
+  - `[Subject <String>]`: The subject of the meeting.
+
+CUSTOMQUESTIONS <IMicrosoftGraphMeetingRegistrationQuestion[]>: Custom registration questions.
+  - `[Id <String>]`: Read-only.
+  - `[AnswerInputType <String>]`: answerInputType
+  - `[AnswerOptions <String[]>]`: Answer options when answerInputType is radioButton.
+  - `[DisplayName <String>]`: Display name of the custom registration question.
+  - `[IsRequired <Boolean?>]`: Indicates whether the question is required. Default value is false.
+
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
+  - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
+  - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
+  - `[CallId <String>]`: key: id of call
+  - `[CallRecordId <String>]`: key: id of callRecord
+  - `[CommsOperationId <String>]`: key: id of commsOperation
+  - `[MeetingAttendanceReportId <String>]`: key: id of meetingAttendanceReport
+  - `[MeetingRegistrationQuestionId <String>]`: key: id of meetingRegistrationQuestion
+  - `[OnlineMeetingId <String>]`: key: id of onlineMeeting
+  - `[ParticipantId <String>]`: key: id of participant
+  - `[PresenceId <String>]`: key: id of presence
+  - `[SessionId <String>]`: key: id of session
+  - `[UserId <String>]`: key: id of user
+
+REGISTRANTS <IMicrosoftGraphMeetingRegistrantBase[]>: Registrants of the online meeting.
+  - `[Id <String>]`: Read-only.
+  - `[JoinWebUrl <String>]`: A unique web URL for the registrant to join the meeting. Read-only.
+
+SPEAKERS <IMicrosoftGraphMeetingSpeaker[]>: The meeting speaker's information.
+  - `[Bio <String>]`: Bio of the speaker.
+  - `[DisplayName <String>]`: Display name of the speaker.
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationonlinemeetingregistration](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationonlinemeetingregistration)
-

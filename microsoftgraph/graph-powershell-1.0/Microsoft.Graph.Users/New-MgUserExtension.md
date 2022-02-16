@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/new-mguserextension
@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The collection of open extensions defined for the user.
+Read-only.
 Nullable.
 
 ## SYNTAX
@@ -38,6 +39,7 @@ New-MgUserExtension -InputObject <IUsersIdentity> -BodyParameter <Hashtable> [-W
 
 ## DESCRIPTION
 The collection of open extensions defined for the user.
+Read-only.
 Nullable.
 
 ## EXAMPLES

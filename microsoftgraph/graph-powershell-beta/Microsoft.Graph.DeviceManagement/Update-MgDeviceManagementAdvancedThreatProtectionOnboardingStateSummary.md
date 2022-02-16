@@ -34,13 +34,6 @@ The summary state of ATP onboarding state for this account.
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -100,7 +93,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -115,7 +108,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -130,7 +123,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -160,7 +153,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -175,7 +168,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -190,7 +183,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -205,7 +198,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -220,7 +213,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -235,7 +228,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -281,9 +274,53 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+ADVANCEDTHREATPROTECTIONONBOARDINGDEVICESETTINGSTATES <IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState[]>: Not yet documented
+  - `[Id <String>]`: Read-only.
+  - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
+  - `[DeviceId <String>]`: The Device Id that is being reported
+  - `[DeviceModel <String>]`: The device model that is being reported
+  - `[DeviceName <String>]`: The Device Name that is being reported
+  - `[PlatformType <String>]`: Device type.
+  - `[Setting <String>]`: The setting class name and property name.
+  - `[SettingName <String>]`: The Setting Name that is being reported
+  - `[State <String>]`: complianceStatus
+  - `[UserEmail <String>]`: The User email address that is being reported
+  - `[UserId <String>]`: The user Id that is being reported
+  - `[UserName <String>]`: The User Name that is being reported
+  - `[UserPrincipalName <String>]`: The User PrincipalName that is being reported
+
+BODYPARAMETER <IMicrosoftGraphAdvancedThreatProtectionOnboardingStateSummary>: Windows defender advanced threat protection onboarding state summary across the account.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: Read-only.
+  - `[AdvancedThreatProtectionOnboardingDeviceSettingStates <IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState[]>]`: Not yet documented
+    - `[Id <String>]`: Read-only.
+    - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
+    - `[DeviceId <String>]`: The Device Id that is being reported
+    - `[DeviceModel <String>]`: The device model that is being reported
+    - `[DeviceName <String>]`: The Device Name that is being reported
+    - `[PlatformType <String>]`: Device type.
+    - `[Setting <String>]`: The setting class name and property name.
+    - `[SettingName <String>]`: The Setting Name that is being reported
+    - `[State <String>]`: complianceStatus
+    - `[UserEmail <String>]`: The User email address that is being reported
+    - `[UserId <String>]`: The user Id that is being reported
+    - `[UserName <String>]`: The User Name that is being reported
+    - `[UserPrincipalName <String>]`: The User PrincipalName that is being reported
+  - `[CompliantDeviceCount <Int32?>]`: Number of compliant devices
+  - `[ConflictDeviceCount <Int32?>]`: Number of conflict devices
+  - `[ErrorDeviceCount <Int32?>]`: Number of error devices
+  - `[NonCompliantDeviceCount <Int32?>]`: Number of NonCompliant devices
+  - `[NotApplicableDeviceCount <Int32?>]`: Number of not applicable devices
+  - `[NotAssignedDeviceCount <Int32?>]`: Number of not assigned devices
+  - `[RemediatedDeviceCount <Int32?>]`: Number of remediated devices
+  - `[UnknownDeviceCount <Int32?>]`: Number of unknown devices
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementadvancedthreatprotectiononboardingstatesummary](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementadvancedthreatprotectiononboardingstatesummary)
-

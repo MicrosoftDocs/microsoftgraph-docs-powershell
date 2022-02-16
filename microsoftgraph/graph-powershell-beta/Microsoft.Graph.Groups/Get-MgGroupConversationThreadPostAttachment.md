@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggroupconversationthreadpostattachment
@@ -8,7 +8,6 @@ schema: 2.0.0
 # Get-MgGroupConversationThreadPostAttachment
 
 ## SYNOPSIS
-The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post.
 Read-only.
 Nullable.
 Supports $expand.
@@ -37,7 +36,6 @@ Get-MgGroupConversationThreadPostAttachment -InputObject <IGroupsIdentity> [-Exp
 ```
 
 ## DESCRIPTION
-The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post.
 Read-only.
 Nullable.
 Supports $expand.
@@ -315,5 +313,3 @@ INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
-rId <String>]`: key: id of user

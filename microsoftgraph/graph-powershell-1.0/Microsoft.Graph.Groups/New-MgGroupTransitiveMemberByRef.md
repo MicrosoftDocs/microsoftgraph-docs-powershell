@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/new-mggrouptransitivememberbyref
@@ -178,16 +178,3 @@ INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
-dePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
-  - `[MentionId <String>]`: key: id of mention
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
-  - `[NotebookId <String>]`: key: id of notebook
-  - `[OnenotePageId <String>]`: key: id of onenotePage
-  - `[OnenoteSectionId <String>]`: key: id of onenoteSection
-  - `[PostId <String>]`: key: id of post
-  - `[ProfilePhotoId <String>]`: key: id of profilePhoto
-  - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
-  - `[User <String>]`: Usage: User={User}
-  - `[UserId <String>]`: key: id of user

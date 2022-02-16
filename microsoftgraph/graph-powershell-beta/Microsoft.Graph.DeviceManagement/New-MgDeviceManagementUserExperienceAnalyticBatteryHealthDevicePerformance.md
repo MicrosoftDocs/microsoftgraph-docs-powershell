@@ -16,8 +16,8 @@ User Experience Analytics Battery Health Device Performance
 ```
 New-MgDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance [-AdditionalProperties <Hashtable>]
  [-BatteryAgeInDays <Int32>] [-DeviceBatteryHealthScore <Int32>] [-DeviceId <String>] [-DeviceName <String>]
- [-EstimatedRuntimeInMinutes <Int32>] [-HealthStatus <String>] [-Id <String>] [-MaxCapacityPercentage <Int32>]
- [-Model <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-EstimatedRuntimeInMinutes <Int32>] [-HealthStatus <String>] [-Id <String>] [-Manufacturer <String>]
+ [-MaxCapacityPercentage <Int32>] [-Model <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -31,13 +31,6 @@ New-MgDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance
 User Experience Analytics Battery Health Device Performance
 
 ## EXAMPLES
-
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -68,7 +61,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -101,7 +94,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -148,13 +141,13 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -HealthStatus
-The overall battery health status of the device.
+userExperienceAnalyticsHealthState
 
 ```yaml
 Type: String
@@ -183,6 +176,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Manufacturer
+The manufacturer name of the device.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -MaxCapacityPercentage
 Ratio of current capacity and design capacity of the battery with the lowest capacity.
 Unit in percentage and values range from 0-100.
@@ -195,7 +203,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -256,9 +264,25 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDevicePerformance
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthDevicePerformance>: The user experience analytics battery health device performance entity contains device level battery information.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: Read-only.
+  - `[BatteryAgeInDays <Int32?>]`: Estimated battery age. Unit in days. Valid values -2147483648 to 2147483647
+  - `[DeviceBatteryHealthScore <Int32?>]`: A weighted average of a device's maximum capacity score and runtime estimate score. Values range from 0-100. Valid values -2147483648 to 2147483647
+  - `[DeviceId <String>]`: The unique identifier of the device, Intune DeviceID.
+  - `[DeviceName <String>]`: Device friendly name.
+  - `[EstimatedRuntimeInMinutes <Int32?>]`: The estimated runtime of the device when the battery is fully charged. Unit in minutes. Valid values -2147483648 to 2147483647
+  - `[HealthStatus <String>]`: userExperienceAnalyticsHealthState
+  - `[Manufacturer <String>]`: The manufacturer name of the device.
+  - `[MaxCapacityPercentage <Int32?>]`: Ratio of current capacity and design capacity of the battery with the lowest capacity. Unit in percentage and values range from 0-100. Valid values -2147483648 to 2147483647
+  - `[Model <String>]`: The model name of the device.
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticbatteryhealthdeviceperformance](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticbatteryhealthdeviceperformance)
-

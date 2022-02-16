@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactfoldercontactextension
@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The collection of open extensions defined for the contact.
+Read-only.
 Nullable.
 
 ## SYNTAX
@@ -34,6 +35,7 @@ Get-MgUserContactFolderContactExtension -InputObject <IPersonalContactsIdentity>
 
 ## DESCRIPTION
 The collection of open extensions defined for the contact.
+Read-only.
 Nullable.
 
 ## EXAMPLES
@@ -281,6 +283,3 @@ INPUTOBJECT <IPersonalContactsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
-y: id of singleValueLegacyExtendedProperty
-  - `[UserId <String>]`: key: id of user

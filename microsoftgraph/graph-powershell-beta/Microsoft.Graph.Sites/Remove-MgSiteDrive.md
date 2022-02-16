@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/remove-mgsitedrive
@@ -12,24 +12,24 @@ The default drive (document library) for this site.
 
 ## SYNTAX
 
-### Delete2 (Default)
+### Delete (Default)
 ```
 Remove-MgSiteDrive -SiteId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Delete3
+### Delete1
 ```
 Remove-MgSiteDrive -SiteId <String> -DriveId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### DeleteViaIdentity3
+### DeleteViaIdentity1
 ```
 Remove-MgSiteDrive -InputObject <ISitesIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### DeleteViaIdentity2
+### DeleteViaIdentity
 ```
 Remove-MgSiteDrive -InputObject <ISitesIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -47,7 +47,7 @@ key: id of drive
 
 ```yaml
 Type: String
-Parameter Sets: Delete3
+Parameter Sets: Delete1
 Aliases:
 
 Required: True
@@ -78,7 +78,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: DeleteViaIdentity3, DeleteViaIdentity2
+Parameter Sets: DeleteViaIdentity1, DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -108,7 +108,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: Delete2, Delete3
+Parameter Sets: Delete, Delete1
 Aliases:
 
 Required: True
@@ -197,6 +197,7 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[SubscriptionId <String>]`: key: id of subscription
   - `[TermId <String>]`: key: id of term
   - `[TermId1 <String>]`: key: id of term
+  - `[Token <String>]`: Usage: token={token}
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS

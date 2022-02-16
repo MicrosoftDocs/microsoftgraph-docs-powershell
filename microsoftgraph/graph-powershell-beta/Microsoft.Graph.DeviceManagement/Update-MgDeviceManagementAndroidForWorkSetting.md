@@ -32,13 +32,6 @@ The singleton Android for Work settings entity.
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -97,7 +90,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -217,7 +210,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -278,9 +271,25 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+BODYPARAMETER <IMicrosoftGraphAndroidForWorkSettings>: Settings for Android For Work.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: Read-only.
+  - `[BindStatus <String>]`: Bind status of the tenant with the Google EMM API
+  - `[DeviceOwnerManagementEnabled <Boolean?>]`: Indicates if this account is flighting for Android Device Owner Management with CloudDPC.
+  - `[EnrollmentTarget <String>]`: Android for Work device management targeting type for the account
+  - `[LastAppSyncDateTime <DateTime?>]`: Last completion time for app sync
+  - `[LastAppSyncStatus <String>]`: Sync status of the tenant with the Google EMM API
+  - `[LastModifiedDateTime <DateTime?>]`: Last modification time for Android for Work settings
+  - `[OwnerOrganizationName <String>]`: Organization name used when onboarding Android for Work
+  - `[OwnerUserPrincipalName <String>]`: Owner UPN that created the enterprise
+  - `[TargetGroupIds <String[]>]`: Specifies which AAD groups can enroll devices in Android for Work device management if enrollmentTarget is set to 'Targeted'
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementandroidforworksetting](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementandroidforworksetting)
-

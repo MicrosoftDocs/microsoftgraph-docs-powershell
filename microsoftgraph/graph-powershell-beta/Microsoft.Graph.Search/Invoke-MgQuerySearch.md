@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/invoke-mgquerysearch
@@ -14,9 +14,8 @@ Invoke action query
 
 ### QueryExpanded (Default)
 ```
-Invoke-MgQuerySearch [-AdditionalProperties <Hashtable>]
- [-QueryAlterationOptions <IMicrosoftGraphSearchAlterationOptions>]
- [-Requests <IMicrosoftGraphSearchRequest1[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgQuerySearch [-AdditionalProperties <Hashtable>] [-Requests <IMicrosoftGraphSearchRequest1[]>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Query
@@ -61,22 +60,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -QueryAlterationOptions
-searchAlterationOptions
-To construct, please use Get-Help -Online and see NOTES section for QUERYALTERATIONOPTIONS properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphSearchAlterationOptions
-Parameter Sets: QueryExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -228,13 +211,5 @@ REQUESTS <IMicrosoftGraphSearchRequest1[]>: .
   - `[TrimDuplicates <Boolean?>]`: 
 
 ## RELATED LINKS
-
-   - `[Name <String>]`: The name of the property to sort on. Required.
-  - `[StoredFields <String[]>]`: 
-
-## RELATED LINKS
-
-## RELATED LINKS
-
 
 ## RELATED LINKS

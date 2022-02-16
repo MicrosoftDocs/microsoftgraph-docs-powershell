@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/get-mgsitelistcontenttypecolumnsourcecolumnbyref
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteListContentTypeColumnSourceColumnByRef
 
 ## SYNOPSIS
-The source column for content type column.
+The source column for the content type column.
 
 ## SYNTAX
 
@@ -24,7 +24,7 @@ Get-MgSiteListContentTypeColumnSourceColumnByRef -InputObject <ISitesIdentity> [
 ```
 
 ## DESCRIPTION
-The source column for content type column.
+The source column for the content type column.
 
 ## EXAMPLES
 
@@ -154,6 +154,7 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[SubscriptionId <String>]`: key: id of subscription
   - `[TermId <String>]`: key: id of term
   - `[TermId1 <String>]`: key: id of term
+  - `[Token <String>]`: Usage: token={token}
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS

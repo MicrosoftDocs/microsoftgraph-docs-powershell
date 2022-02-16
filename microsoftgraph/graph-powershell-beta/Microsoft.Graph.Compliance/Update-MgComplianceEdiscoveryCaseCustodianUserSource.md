@@ -17,7 +17,7 @@ This is the container for a custodian's mailbox and OneDrive for Business site.
 ```
 Update-MgComplianceEdiscoveryCaseCustodianUserSource -CaseId <String> -CustodianId <String>
  -UserSourceId <String> [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Email <String>] [-Id <String>]
+ [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Email <String>] [-HoldStatus <String>] [-Id <String>]
  [-IncludedSources <String>] [-SiteWebUrl <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -32,8 +32,8 @@ Update-MgComplianceEdiscoveryCaseCustodianUserSource -CaseId <String> -Custodian
 ```
 Update-MgComplianceEdiscoveryCaseCustodianUserSource -InputObject <IComplianceIdentity>
  [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
- [-DisplayName <String>] [-Email <String>] [-Id <String>] [-IncludedSources <String>] [-SiteWebUrl <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DisplayName <String>] [-Email <String>] [-HoldStatus <String>] [-Id <String>] [-IncludedSources <String>]
+ [-SiteWebUrl <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -47,13 +47,6 @@ Data source entity for a the custodian.
 This is the container for a custodian's mailbox and OneDrive for Business site.
 
 ## EXAMPLES
-
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -180,6 +173,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -HoldStatus
+dataSourceHoldStatus
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Id
 Read-only.
 
@@ -236,7 +244,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -314,9 +322,54 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+BODYPARAMETER <IMicrosoftGraphEdiscoveryUserSource>: userSource
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[CreatedDateTime <DateTime?>]`: The date and time the dataSource was created.
+  - `[DisplayName <String>]`: The display name of the dataSource. This will be the name of the SharePoint site.
+  - `[HoldStatus <String>]`: dataSourceHoldStatus
+  - `[Id <String>]`: Read-only.
+  - `[Email <String>]`: Email address of the user's mailbox.
+  - `[IncludedSources <String>]`: sourceType
+  - `[SiteWebUrl <String>]`: The URL of the user's OneDrive for Business site. Read-only.
+
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
+  - `[Device <IMicrosoftGraphIdentity>]`: identity
+  - `[User <IMicrosoftGraphIdentity>]`: identity
+
+INPUTOBJECT <IComplianceIdentity>: Identity Parameter
+  - `[CaseId <String>]`: key: id of case
+  - `[CaseOperationId <String>]`: key: id of caseOperation
+  - `[CustodianId <String>]`: key: id of custodian
+  - `[DataSourceId <String>]`: key: id of dataSource
+  - `[LegalHoldId <String>]`: key: id of legalHold
+  - `[NoncustodialDataSourceId <String>]`: key: id of noncustodialDataSource
+  - `[ReviewSetId <String>]`: key: id of reviewSet
+  - `[ReviewSetQueryId <String>]`: key: id of reviewSetQuery
+  - `[SiteSourceId <String>]`: key: id of siteSource
+  - `[SourceCollectionId <String>]`: key: id of sourceCollection
+  - `[TagId <String>]`: key: id of tag
+  - `[UnifiedGroupSourceId <String>]`: key: id of unifiedGroupSource
+  - `[UserSourceId <String>]`: key: id of userSource
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/update-mgcomplianceediscoverycasecustodianusersource](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/update-mgcomplianceediscoverycasecustodianusersource)
-

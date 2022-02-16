@@ -1,38 +1,33 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgapplicationcreatedonbehalfofbyref
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgapplicationconnectorgroupbyref
 schema: 2.0.0
 ---
 
-# Get-MgApplicationCreatedOnBehalfOfByRef
+# Get-MgApplicationConnectorGroupByRef
 
 ## SYNOPSIS
-Read-only.
+The connectorGroup the application is using with Azure AD Application Proxy.
+Nullable.
 
 ## SYNTAX
 
-### Get1 (Default)
+### Get (Default)
 ```
-Get-MgApplicationCreatedOnBehalfOfByRef -ApplicationId <String> [<CommonParameters>]
+Get-MgApplicationConnectorGroupByRef -ApplicationId <String> [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity
 ```
-Get-MgApplicationCreatedOnBehalfOfByRef -InputObject <IApplicationsIdentity> [<CommonParameters>]
+Get-MgApplicationConnectorGroupByRef -InputObject <IApplicationsIdentity> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Read-only.
+The connectorGroup the application is using with Azure AD Application Proxy.
+Nullable.
 
 ## EXAMPLES
-
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -41,7 +36,7 @@ key: id of application
 
 ```yaml
 Type: String
-Parameter Sets: Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -57,7 +52,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IApplicationsIdentity
-Parameter Sets: GetViaIdentity1
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -77,9 +72,37 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.String
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
+  - `[AppRoleAssignmentId <String>]`: key: id of appRoleAssignment
+  - `[ApplicationId <String>]`: key: id of application
+  - `[ApplicationTemplateId <String>]`: key: id of applicationTemplate
+  - `[ConnectorGroupId <String>]`: key: id of connectorGroup
+  - `[ConnectorId <String>]`: key: id of connector
+  - `[DelegatedPermissionClassificationId <String>]`: key: id of delegatedPermissionClassification
+  - `[DirectoryDefinitionId <String>]`: key: id of directoryDefinition
+  - `[EndpointId <String>]`: key: id of endpoint
+  - `[ExtensionPropertyId <String>]`: key: id of extensionProperty
+  - `[FederatedIdentityCredentialId <String>]`: key: id of federatedIdentityCredential
+  - `[GroupId <String>]`: key: id of group
+  - `[LicenseDetailsId <String>]`: key: id of licenseDetails
+  - `[OnPremisesAgentGroupId <String>]`: key: id of onPremisesAgentGroup
+  - `[OnPremisesAgentGroupId1 <String>]`: key: id of onPremisesAgentGroup
+  - `[OnPremisesAgentId <String>]`: key: id of onPremisesAgent
+  - `[OnPremisesAgentId1 <String>]`: key: id of onPremisesAgent
+  - `[OnPremisesPublishingProfileId <String>]`: key: id of onPremisesPublishingProfile
+  - `[PublishedResourceId <String>]`: key: id of publishedResource
+  - `[PublishedResourceId1 <String>]`: key: id of publishedResource
+  - `[ServicePrincipalId <String>]`: key: id of servicePrincipal
+  - `[SynchronizationJobId <String>]`: key: id of synchronizationJob
+  - `[SynchronizationTemplateId <String>]`: key: id of synchronizationTemplate
+  - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgapplicationcreatedonbehalfofbyref](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgapplicationcreatedonbehalfofbyref)
-

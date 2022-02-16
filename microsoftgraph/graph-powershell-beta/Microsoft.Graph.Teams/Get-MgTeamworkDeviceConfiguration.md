@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgteamworkdeviceconfiguration
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgTeamworkDeviceConfiguration
 
 ## SYNOPSIS
-Get configuration from teamwork
+The configuration properties of the device.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgTeamworkDeviceConfiguration -InputObject <ITeamsIdentity> [-ExpandProperty
 ```
 
 ## DESCRIPTION
-Get configuration from teamwork
+The configuration properties of the device.
 
 ## EXAMPLES
 

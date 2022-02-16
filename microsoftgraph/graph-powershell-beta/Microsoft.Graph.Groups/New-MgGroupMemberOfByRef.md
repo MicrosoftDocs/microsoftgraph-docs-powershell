@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/new-mggroupmemberofbyref
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgGroupMemberOfByRef
 
 ## SYNOPSIS
-Groups and administrative units that this group is a member of.
+Groups that this group is a member of.
 HTTP Methods: GET (supported for all groups).
 Read-only.
 Nullable.
@@ -40,7 +40,7 @@ New-MgGroupMemberOfByRef -InputObject <IGroupsIdentity> -BodyParameter <Hashtabl
 ```
 
 ## DESCRIPTION
-Groups and administrative units that this group is a member of.
+Groups that this group is a member of.
 HTTP Methods: GET (supported for all groups).
 Read-only.
 Nullable.
@@ -185,5 +185,3 @@ INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
-r

@@ -47,13 +47,6 @@ This object can only be retrieved on a single GET request (GET /applications/{id
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -229,7 +222,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -296,9 +289,46 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+BODYPARAMETER <IMicrosoftGraphFederatedIdentityCredential>: federatedIdentityCredential
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: Read-only.
+  - `[Audiences <String[]>]`: Lists the audiences that can appear in the external token. This field is mandatory, and defaults to 'api://AzureADTokenExchange'. It says what Microsoft identity platform should accept in the aud claim in the incoming token. This value represents Azure AD in your external identity provider and has no fixed value across identity providers - you may need to create a new application registration in your identity provider to serve as the audience of this token. Required.
+  - `[Description <String>]`: The un-validated, user-provided description of the federated identity credential. Optional.
+  - `[Issuer <String>]`: The URL of the external identity provider and must match the issuer claim of the external token being exchanged. The combination of the values of issuer and subject must be unique on the app. Required.
+  - `[Name <String>]`: is the unique identifier for the federated identity credential, which has a character limit of 120 characters and must be URL friendly. It is immutable once created. Required. Not nullable. Supports $filter (eq).
+  - `[Subject <String>]`: Required. The identifier of the external software workload within the external identity provider. Like the audience value, it has no fixed format, as each identity provider uses their own - sometimes a GUID, sometimes a colon delimited identifier, sometimes arbitrary strings. The value here must match the sub claim within the token presented to Azure AD. The combination of issuer and subject must be unique on the app. Supports $filter (eq).
+
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
+  - `[AppRoleAssignmentId <String>]`: key: id of appRoleAssignment
+  - `[ApplicationId <String>]`: key: id of application
+  - `[ApplicationTemplateId <String>]`: key: id of applicationTemplate
+  - `[ConnectorGroupId <String>]`: key: id of connectorGroup
+  - `[ConnectorId <String>]`: key: id of connector
+  - `[DelegatedPermissionClassificationId <String>]`: key: id of delegatedPermissionClassification
+  - `[DirectoryDefinitionId <String>]`: key: id of directoryDefinition
+  - `[EndpointId <String>]`: key: id of endpoint
+  - `[ExtensionPropertyId <String>]`: key: id of extensionProperty
+  - `[FederatedIdentityCredentialId <String>]`: key: id of federatedIdentityCredential
+  - `[GroupId <String>]`: key: id of group
+  - `[LicenseDetailsId <String>]`: key: id of licenseDetails
+  - `[OnPremisesAgentGroupId <String>]`: key: id of onPremisesAgentGroup
+  - `[OnPremisesAgentGroupId1 <String>]`: key: id of onPremisesAgentGroup
+  - `[OnPremisesAgentId <String>]`: key: id of onPremisesAgent
+  - `[OnPremisesAgentId1 <String>]`: key: id of onPremisesAgent
+  - `[OnPremisesPublishingProfileId <String>]`: key: id of onPremisesPublishingProfile
+  - `[PublishedResourceId <String>]`: key: id of publishedResource
+  - `[PublishedResourceId1 <String>]`: key: id of publishedResource
+  - `[ServicePrincipalId <String>]`: key: id of servicePrincipal
+  - `[SynchronizationJobId <String>]`: key: id of synchronizationJob
+  - `[SynchronizationTemplateId <String>]`: key: id of synchronizationTemplate
+  - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/update-mgapplicationfederatedidentitycredential](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/update-mgapplicationfederatedidentitycredential)
-

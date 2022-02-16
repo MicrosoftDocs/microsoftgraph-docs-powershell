@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgteamworkdeviceoperation
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgTeamworkDeviceOperation
 
 ## SYNOPSIS
-Get operations from teamwork
+The async operations on the device.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgTeamworkDeviceOperation -InputObject <ITeamsIdentity> [-ExpandProperty <St
 ```
 
 ## DESCRIPTION
-Get operations from teamwork
+The async operations on the device.
 
 ## EXAMPLES
 

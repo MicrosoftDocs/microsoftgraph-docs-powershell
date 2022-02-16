@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/new-mgserviceprincipalapproleassignedto
@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgServicePrincipalAppRoleAssignedTo
 
 ## SYNOPSIS
-App role assignments for this app or service, granted to users, groups, and other service principals.Supports $expand.
+App role assignments for this app or service, granted to users, groups, and other service principals.
+Supports $expand.
 
 ## SYNTAX
 
@@ -42,7 +43,8 @@ New-MgServicePrincipalAppRoleAssignedTo -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-App role assignments for this app or service, granted to users, groups, and other service principals.Supports $expand.
+App role assignments for this app or service, granted to users, groups, and other service principals.
+Supports $expand.
 
 ## EXAMPLES
 

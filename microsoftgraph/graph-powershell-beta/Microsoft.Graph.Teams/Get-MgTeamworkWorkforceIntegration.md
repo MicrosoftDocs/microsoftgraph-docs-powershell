@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgteamworkworkforceintegration
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgTeamworkWorkforceIntegration
 
 ## SYNOPSIS
-Get workforceIntegrations from teamwork
+A workforce integration with shifts.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgTeamworkWorkforceIntegration -InputObject <ITeamsIdentity> [-ExpandPropert
 ```
 
 ## DESCRIPTION
-Get workforceIntegrations from teamwork
+A workforce integration with shifts.
 
 ## EXAMPLES
 

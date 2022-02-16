@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/remove-mguserextension
@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The collection of open extensions defined for the user.
+Read-only.
 Nullable.
 
 ## SYNTAX
@@ -27,6 +28,7 @@ Remove-MgUserExtension -InputObject <IUsersIdentity> [-IfMatch <String>] [-PassT
 
 ## DESCRIPTION
 The collection of open extensions defined for the user.
+Read-only.
 Nullable.
 
 ## EXAMPLES

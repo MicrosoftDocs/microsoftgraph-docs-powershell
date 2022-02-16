@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/clear-mgapplicationverifiedpublisher
@@ -12,13 +12,13 @@ Invoke action unsetVerifiedPublisher
 
 ## SYNTAX
 
-### Unset (Default)
+### Unset1 (Default)
 ```
 Clear-MgApplicationVerifiedPublisher -ApplicationId <String> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### UnsetViaIdentity
+### UnsetViaIdentity1
 ```
 Clear-MgApplicationVerifiedPublisher -InputObject <IApplicationsIdentity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -36,7 +36,7 @@ key: id of application
 
 ```yaml
 Type: String
-Parameter Sets: Unset
+Parameter Sets: Unset1
 Aliases:
 
 Required: True
@@ -52,7 +52,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IApplicationsIdentity
-Parameter Sets: UnsetViaIdentity
+Parameter Sets: UnsetViaIdentity1
 Aliases:
 
 Required: True

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mgsharelistcontenttypecolumnsourcecolumnbyref
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgShareListContentTypeColumnSourceColumnByRef
 
 ## SYNOPSIS
-The source column for content type column.
+The source column for the content type column.
 
 ## SYNTAX
 
@@ -24,7 +24,7 @@ Get-MgShareListContentTypeColumnSourceColumnByRef -InputObject <IFilesIdentity> 
 ```
 
 ## DESCRIPTION
-The source column for content type column.
+The source column for the content type column.
 
 ## EXAMPLES
 
@@ -125,6 +125,7 @@ INPUTOBJECT <IFilesIdentity>: Identity Parameter
   - `[SharedDriveItemId <String>]`: key: id of sharedDriveItem
   - `[StartDateTime <String>]`: Usage: startDateTime={startDateTime}
   - `[SubscriptionId <String>]`: key: id of subscription
+  - `[Token <String>]`: Usage: token={token}
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS

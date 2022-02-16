@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/get-mguserevent
@@ -9,7 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The user's events.
-Default is to show events under the Default Calendar.
+Default is to show Events under the Default Calendar.
 Read-only.
 Nullable.
 
@@ -33,7 +33,7 @@ Get-MgUserEvent -InputObject <ICalendarIdentity> [-Property <String[]>] [<Common
 
 ## DESCRIPTION
 The user's events.
-Default is to show events under the Default Calendar.
+Default is to show Events under the Default Calendar.
 Read-only.
 Nullable.
 
@@ -241,12 +241,3 @@ INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
-of event
-  - `[EventId1 <String>]`: key: id of event
-  - `[ExtensionId <String>]`: key: id of extension
-  - `[GroupId <String>]`: key: id of group
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
-  - `[PlaceId <String>]`: key: id of place
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
-  - `[UserId <String>]`: key: id of user

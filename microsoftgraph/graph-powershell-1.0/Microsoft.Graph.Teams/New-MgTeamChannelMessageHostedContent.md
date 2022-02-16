@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgteamchannelmessagehostedcontent
@@ -123,7 +123,8 @@ Accept wildcard characters: False
 
 ### -ContentType
 Write only.
-Content type, such as image/png, image/jpg.
+Content type.
+sicj as image/png, image/jpg.
 
 ```yaml
 Type: String

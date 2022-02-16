@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.personalcontacts/remove-mgusercontactfoldercontactextension
@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The collection of open extensions defined for the contact.
+Read-only.
 Nullable.
 
 ## SYNTAX
@@ -27,6 +28,7 @@ Remove-MgUserContactFolderContactExtension -InputObject <IPersonalContactsIdenti
 
 ## DESCRIPTION
 The collection of open extensions defined for the contact.
+Read-only.
 Nullable.
 
 ## EXAMPLES

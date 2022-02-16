@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/remove-mgsitetermstore
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgSiteTermStore
 
 ## SYNOPSIS
-The termStore under this site.
+The default termStore under this site.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Remove-MgSiteTermStore -InputObject <ISitesIdentity> [-IfMatch <String>] [-PassT
 ```
 
 ## DESCRIPTION
-The termStore under this site.
+The default termStore under this site.
 
 ## EXAMPLES
 
@@ -198,6 +198,7 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[SubscriptionId <String>]`: key: id of subscription
   - `[TermId <String>]`: key: id of term
   - `[TermId1 <String>]`: key: id of term
+  - `[Token <String>]`: Usage: token={token}
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS

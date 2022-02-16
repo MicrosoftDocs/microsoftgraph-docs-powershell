@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DirectoryObjects-help.xml
 Module Name: Microsoft.Graph.DirectoryObjects
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.directoryobjects/update-mgdirectoryobject
@@ -209,8 +209,3 @@ INPUTOBJECT <IDirectoryObjectsIdentity>: Identity Parameter
   - `[DirectoryObjectId <String>]`: key: id of directoryObject
 
 ## RELATED LINKS
-
-`[DeletedDateTime <DateTime?>]`: 
-
-INPUTOBJECT <IDirectoryObjectsIdentity>: Identity Parameter
-  - `[DirectoryObjectId <String>]`: key: id of directoryObject
