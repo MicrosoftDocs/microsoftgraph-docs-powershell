@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/test-mgdevicemanagementassignmentfilter
@@ -50,7 +50,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1Y9WuhoDevicemanagementAssignmentfiltersMicrosoftGraphValidatefilterPostRequestbodyContentApplicationJsonSchema
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 
 ### -DeviceAndAppManagementAssignmentFilter
 A class containing the properties used for Assignment Filter.
-To construct, see NOTES section for DEVICEANDAPPMANAGEMENTASSIGNMENTFILTER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEVICEANDAPPMANAGEMENTASSIGNMENTFILTER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceAndAppManagementAssignmentFilter
@@ -138,7 +138,7 @@ BODYPARAMETER <IPaths1Y9WuhoDevicemanagementAssignmentfiltersMicrosoftGraphValid
     - `[Description <String>]`: Description of the Assignment Filter.
     - `[DisplayName <String>]`: DisplayName of the Assignment Filter.
     - `[LastModifiedDateTime <DateTime?>]`: Last modified time of the Assignment Filter.
-    - `[Platform <String>]`: devicePlatformType
+    - `[Platform <String>]`: Supported platform types.
     - `[RoleScopeTags <String[]>]`: RoleScopeTags of the Assignment Filter.
     - `[Rule <String>]`: Rule definition of the Assignment Filter.
 
@@ -149,7 +149,7 @@ DEVICEANDAPPMANAGEMENTASSIGNMENTFILTER <IMicrosoftGraphDeviceAndAppManagementAss
   - `[Description <String>]`: Description of the Assignment Filter.
   - `[DisplayName <String>]`: DisplayName of the Assignment Filter.
   - `[LastModifiedDateTime <DateTime?>]`: Last modified time of the Assignment Filter.
-  - `[Platform <String>]`: devicePlatformType
+  - `[Platform <String>]`: Supported platform types.
   - `[RoleScopeTags <String[]>]`: RoleScopeTags of the Assignment Filter.
   - `[Rule <String>]`: Rule definition of the Assignment Filter.
 

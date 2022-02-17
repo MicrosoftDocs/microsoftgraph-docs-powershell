@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementroledefinitionroleassignment
@@ -67,7 +67,7 @@ The Role Assignment resource.
 Role assignments tie together a role definition with members and scopes.
 There can be one or more role assignments per role.
 This applies to custom and built-in roles.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRoleAssignment
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementAdministrationIdentity
@@ -196,7 +196,7 @@ There are two types of roles, built-in and custom.
 Built-in roles cannot be modified.
 Both built-in roles and custom roles must have assignments to be enforced.
 Create custom roles if you want to define a role that allows any of the available resources and role permissions to be combined into a single role.
-To construct, see NOTES section for ROLEDEFINITION properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ROLEDEFINITION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRoleDefinition1
@@ -242,7 +242,7 @@ Accept wildcard characters: False
 ```
 
 ### -ScopeType
-roleAssignmentScopeType
+Specifies the type of scope for a Role Assignment.
 
 ```yaml
 Type: String
@@ -328,17 +328,21 @@ BODYPARAMETER <IMicrosoftGraphRoleAssignment>: The Role Assignment resource. Rol
     - `[RolePermissions <IMicrosoftGraphRolePermission1[]>]`: List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of the rolePermission.
     - `[RoleScopeTagIds <String[]>]`: List of Scope Tags for this Entity instance.
   - `[ScopeMembers <String[]>]`: List of ids of role scope member security groups.  These are IDs from Azure Active Directory.
-  - `[ScopeType <String>]`: roleAssignmentScopeType
+  - `[ScopeType <String>]`: Specifies the type of scope for a Role Assignment.
 
 INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[AuditEventId <String>]`: key: id of auditEvent
   - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
   - `[CloudPcDeviceImageId <String>]`: key: id of cloudPcDeviceImage
+  - `[CloudPcGalleryImageId <String>]`: key: id of cloudPcGalleryImage
   - `[CloudPcId <String>]`: key: id of cloudPC
   - `[CloudPcOnPremisesConnectionId <String>]`: key: id of cloudPcOnPremisesConnection
   - `[CloudPcProvisioningPolicyAssignmentId <String>]`: key: id of cloudPcProvisioningPolicyAssignment
   - `[CloudPcProvisioningPolicyId <String>]`: key: id of cloudPcProvisioningPolicy
+  - `[CloudPcServicePlanId <String>]`: key: id of cloudPcServicePlan
+  - `[CloudPcSnapshotId <String>]`: key: id of cloudPcSnapshot
+  - `[CloudPcSupportedRegionId <String>]`: key: id of cloudPcSupportedRegion
   - `[CloudPcUserSettingAssignmentId <String>]`: key: id of cloudPcUserSettingAssignment
   - `[CloudPcUserSettingId <String>]`: key: id of cloudPcUserSetting
   - `[ComanagementEligibleDeviceId <String>]`: key: id of comanagementEligibleDevice
@@ -397,13 +401,10 @@ ROLEDEFINITION <IMicrosoftGraphRoleDefinition1>: The Role Definition resource. T
     - `[ResourceScopes <String[]>]`: List of ids of role scope member security groups.  These are IDs from Azure Active Directory.
     - `[RoleDefinition <IMicrosoftGraphRoleDefinition1>]`: The Role Definition resource. The role definition is the foundation of role based access in Intune. The role combines an Intune resource such as a Mobile App and associated role permissions such as Create or Read for the resource. There are two types of roles, built-in and custom. Built-in roles cannot be modified. Both built-in roles and custom roles must have assignments to be enforced. Create custom roles if you want to define a role that allows any of the available resources and role permissions to be combined into a single role.
     - `[ScopeMembers <String[]>]`: List of ids of role scope member security groups.  These are IDs from Azure Active Directory.
-    - `[ScopeType <String>]`: roleAssignmentScopeType
+    - `[ScopeType <String>]`: Specifies the type of scope for a Role Assignment.
   - `[RolePermissions <IMicrosoftGraphRolePermission1[]>]`: List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of the rolePermission.
   - `[RoleScopeTagIds <String[]>]`: List of Scope Tags for this Entity instance.
 
 ## RELATED LINKS
-
-## RELATED LINKS
-
 
 ## RELATED LINKS

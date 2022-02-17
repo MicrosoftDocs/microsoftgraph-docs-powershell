@@ -78,7 +78,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 approval
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphApproval
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementEnrolmentIdentity
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 
 ### -Steps
 .
-To construct, see NOTES section for STEPS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for STEPS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphApprovalStep[]
@@ -259,7 +259,6 @@ INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[WindowsAutopilotDeviceIdentityId <String>]`: key: id of windowsAutopilotDeviceIdentity
   - `[WindowsFeatureUpdateProfileAssignmentId <String>]`: key: id of windowsFeatureUpdateProfileAssignment
   - `[WindowsFeatureUpdateProfileId <String>]`: key: id of windowsFeatureUpdateProfile
-  - `[WindowsUpdateStateId <String>]`: key: id of windowsUpdateState
 
 STEPS <IMicrosoftGraphApprovalStep[]>: .
   - `[Id <String>]`: Read-only.

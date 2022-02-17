@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgexecutedevicemanagementmanageddeviceaction
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1R3Ij5LDevicemanagementManageddevicesMicrosoftGraphExecuteactionPostRequestbodyContentApplicationJsonSchema
@@ -225,7 +225,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -282,11 +282,15 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER <IPaths1R3Ij5LDevicemanagementManageddevicesMicrosoftGraphExecuteactionPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ActionName <String>]`: managedDeviceRemoteAction
+  - `[CarrierUrl <String>]`: 
+  - `[DeprovisionReason <String>]`: 
   - `[DeviceIds <String[]>]`: 
   - `[DeviceName <String>]`: 
   - `[KeepEnrollmentData <Boolean?>]`: 
   - `[KeepUserData <Boolean?>]`: 
   - `[NotificationBody <String>]`: 
   - `[NotificationTitle <String>]`: 
+  - `[OrganizationalUnitPath <String>]`: 
+  - `[PersistEsimDataPlan <Boolean?>]`: 
 
 ## RELATED LINKS

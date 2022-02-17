@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgPolicyAuthenticationFlowPolicy
 
 ## SYNOPSIS
-Delete navigation property authenticationFlowsPolicy for policies
+The policy configuration of the self-service sign-up experience of external users.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Remove-MgPolicyAuthenticationFlowPolicy [-IfMatch <String>] [-PassThru] [-WhatIf
 ```
 
 ## DESCRIPTION
-Delete navigation property authenticationFlowsPolicy for policies
+The policy configuration of the self-service sign-up experience of external users.
 
 ## EXAMPLES
 

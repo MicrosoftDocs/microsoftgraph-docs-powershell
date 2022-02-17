@@ -68,7 +68,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 printTask
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPrintTask
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 
 ### -Definition
 printTaskDefinition
-To construct, see NOTES section for DEFINITION properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEFINITION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPrintTaskDefinition
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDevicesCloudPrintIdentity
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 
 ### -ParentUrl
 The URL for the print entity that triggered this task.
-For example, https://graph.microsoft.com/beta/print/printers/{printerId}/jobs/{jobId}.
+For example, https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{jobId}.
 Read-only.
 
 ```yaml
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 
 ### -Status
 printTaskStatus
-To construct, see NOTES section for STATUS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for STATUS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPrintTaskStatus
@@ -209,7 +209,7 @@ Accept wildcard characters: False
 
 ### -Trigger
 printTaskTrigger
-To construct, see NOTES section for TRIGGER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for TRIGGER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPrintTaskTrigger
@@ -287,7 +287,7 @@ BODYPARAMETER <IMicrosoftGraphPrintTask>: printTask
       - `[ServicePrincipalName <String>]`: Refers to the Service Principal Name is the Application name in the tenant.
     - `[DisplayName <String>]`: The name of the printTaskDefinition.
     - `[Tasks <IMicrosoftGraphPrintTask[]>]`: A list of tasks that have been created based on this definition. The list includes currently running tasks and recently completed tasks. Read-only.
-  - `[ParentUrl <String>]`: The URL for the print entity that triggered this task. For example, https://graph.microsoft.com/beta/print/printers/{printerId}/jobs/{jobId}. Read-only.
+  - `[ParentUrl <String>]`: The URL for the print entity that triggered this task. For example, https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{jobId}. Read-only.
   - `[Status <IMicrosoftGraphPrintTaskStatus>]`: printTaskStatus
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Description <String>]`: A human-readable description of the current processing state of the printTask.
@@ -311,7 +311,7 @@ DEFINITION <IMicrosoftGraphPrintTaskDefinition>: printTaskDefinition
   - `[Tasks <IMicrosoftGraphPrintTask[]>]`: A list of tasks that have been created based on this definition. The list includes currently running tasks and recently completed tasks. Read-only.
     - `[Id <String>]`: Read-only.
     - `[Definition <IMicrosoftGraphPrintTaskDefinition>]`: printTaskDefinition
-    - `[ParentUrl <String>]`: The URL for the print entity that triggered this task. For example, https://graph.microsoft.com/beta/print/printers/{printerId}/jobs/{jobId}. Read-only.
+    - `[ParentUrl <String>]`: The URL for the print entity that triggered this task. For example, https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{jobId}. Read-only.
     - `[Status <IMicrosoftGraphPrintTaskStatus>]`: printTaskStatus
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Description <String>]`: A human-readable description of the current processing state of the printTask.
@@ -354,7 +354,7 @@ TRIGGER <IMicrosoftGraphPrintTaskTrigger>: printTaskTrigger
     - `[Tasks <IMicrosoftGraphPrintTask[]>]`: A list of tasks that have been created based on this definition. The list includes currently running tasks and recently completed tasks. Read-only.
       - `[Id <String>]`: Read-only.
       - `[Definition <IMicrosoftGraphPrintTaskDefinition>]`: printTaskDefinition
-      - `[ParentUrl <String>]`: The URL for the print entity that triggered this task. For example, https://graph.microsoft.com/beta/print/printers/{printerId}/jobs/{jobId}. Read-only.
+      - `[ParentUrl <String>]`: The URL for the print entity that triggered this task. For example, https://graph.microsoft.com/v1.0/print/printers/{printerId}/jobs/{jobId}. Read-only.
       - `[Status <IMicrosoftGraphPrintTaskStatus>]`: printTaskStatus
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Description <String>]`: A human-readable description of the current processing state of the printTask.

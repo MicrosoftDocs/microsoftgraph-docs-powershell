@@ -63,7 +63,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 printConnector
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPrintConnector
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 
 ### -Location
 printerLocation
-To construct, see NOTES section for LOCATION properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for LOCATION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPrinterLocation

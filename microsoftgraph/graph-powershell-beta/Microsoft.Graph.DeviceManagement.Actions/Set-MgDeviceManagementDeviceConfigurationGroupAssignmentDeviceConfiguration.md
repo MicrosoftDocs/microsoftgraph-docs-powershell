@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/set-mgdevicemanagementdeviceconfigurationgroupassignmentdeviceconfiguration
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 
 ### -Assignments
 .
-To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceConfigurationAssignment1[]
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths35Cy05DevicemanagementDeviceconfigurationsDeviceconfigurationIdGroupassignmentsDeviceconfigurationgroupassignmentIdDeviceconfigurationMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 
 ### -DeviceConfigurationGroupAssignments
 .
-To construct, see NOTES section for DEVICECONFIGURATIONGROUPASSIGNMENTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEVICECONFIGURATIONGROUPASSIGNMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceConfigurationGroupAssignment[]
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementActionsIdentity
@@ -214,23 +214,25 @@ To create the parameters described below, construct a hash table containing the 
 
 ASSIGNMENTS <IMicrosoftGraphDeviceConfigurationAssignment1[]>: .
   - `[Id <String>]`: Read-only.
-  - `[Source <String>]`: deviceAndAppManagementAssignmentSource
+  - `[Intent <String>]`: The administrator intent for the assignment of the profile.
+  - `[Source <String>]`: Represents source of assignment.
   - `[SourceId <String>]`: The identifier of the source of the assignment. This property is read-only.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-    - `[DeviceAndAppManagementAssignmentFilterType <String>]`: deviceAndAppManagementAssignmentFilterType
+    - `[DeviceAndAppManagementAssignmentFilterType <String>]`: Represents type of the assignment filter.
 
 BODYPARAMETER <IPaths35Cy05DevicemanagementDeviceconfigurationsDeviceconfigurationIdGroupassignmentsDeviceconfigurationgroupassignmentIdDeviceconfigurationMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Assignments <IMicrosoftGraphDeviceConfigurationAssignment1[]>]`: 
     - `[Id <String>]`: Read-only.
-    - `[Source <String>]`: deviceAndAppManagementAssignmentSource
+    - `[Intent <String>]`: The administrator intent for the assignment of the profile.
+    - `[Source <String>]`: Represents source of assignment.
     - `[SourceId <String>]`: The identifier of the source of the assignment. This property is read-only.
     - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-      - `[DeviceAndAppManagementAssignmentFilterType <String>]`: deviceAndAppManagementAssignmentFilterType
+      - `[DeviceAndAppManagementAssignmentFilterType <String>]`: Represents type of the assignment filter.
   - `[DeviceConfigurationGroupAssignments <IMicrosoftGraphDeviceConfigurationGroupAssignment[]>]`: 
     - `[Id <String>]`: Read-only.
     - `[DeviceConfiguration <IMicrosoftGraphDeviceConfiguration>]`: Device Configuration.
@@ -241,20 +243,20 @@ BODYPARAMETER <IPaths35Cy05DevicemanagementDeviceconfigurationsDeviceconfigurati
       - `[Description <String>]`: Admin provided description of the Device Configuration.
       - `[DeviceManagementApplicabilityRuleDeviceMode <IMicrosoftGraphDeviceManagementApplicabilityRuleDeviceMode>]`: deviceManagementApplicabilityRuleDeviceMode
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DeviceMode <String>]`: windows10DeviceModeType
+        - `[DeviceMode <String>]`: Windows 10 Device Mode type.
         - `[Name <String>]`: Name for object.
-        - `[RuleType <String>]`: deviceManagementApplicabilityRuleType
+        - `[RuleType <String>]`: Supported Applicability rule types for Device Configuration
       - `[DeviceManagementApplicabilityRuleOSEdition <IMicrosoftGraphDeviceManagementApplicabilityRuleOSEdition>]`: deviceManagementApplicabilityRuleOsEdition
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Name <String>]`: Name for object.
         - `[OSEditionTypes <String[]>]`: Applicability rule OS edition type.
-        - `[RuleType <String>]`: deviceManagementApplicabilityRuleType
+        - `[RuleType <String>]`: Supported Applicability rule types for Device Configuration
       - `[DeviceManagementApplicabilityRuleOSVersion <IMicrosoftGraphDeviceManagementApplicabilityRuleOSVersion>]`: deviceManagementApplicabilityRuleOsVersion
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[MaxOSVersion <String>]`: Max OS version for Applicability Rule.
         - `[MinOSVersion <String>]`: Min OS version for Applicability Rule.
         - `[Name <String>]`: Name for object.
-        - `[RuleType <String>]`: deviceManagementApplicabilityRuleType
+        - `[RuleType <String>]`: Supported Applicability rule types for Device Configuration
       - `[DeviceSettingStateSummaries <IMicrosoftGraphSettingStateDeviceSummary[]>]`: Device Configuration Setting State Device Summary
         - `[Id <String>]`: Read-only.
         - `[CompliantDeviceCount <Int32?>]`: Device Compliant count for the setting
@@ -322,30 +324,31 @@ DEVICECONFIGURATIONGROUPASSIGNMENTS <IMicrosoftGraphDeviceConfigurationGroupAssi
     - `[Id <String>]`: Read-only.
     - `[Assignments <IMicrosoftGraphDeviceConfigurationAssignment1[]>]`: The list of assignments for the device configuration profile.
       - `[Id <String>]`: Read-only.
-      - `[Source <String>]`: deviceAndAppManagementAssignmentSource
+      - `[Intent <String>]`: The administrator intent for the assignment of the profile.
+      - `[Source <String>]`: Represents source of assignment.
       - `[SourceId <String>]`: The identifier of the source of the assignment. This property is read-only.
       - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-        - `[DeviceAndAppManagementAssignmentFilterType <String>]`: deviceAndAppManagementAssignmentFilterType
+        - `[DeviceAndAppManagementAssignmentFilterType <String>]`: Represents type of the assignment filter.
     - `[CreatedDateTime <DateTime?>]`: DateTime the object was created.
     - `[Description <String>]`: Admin provided description of the Device Configuration.
     - `[DeviceManagementApplicabilityRuleDeviceMode <IMicrosoftGraphDeviceManagementApplicabilityRuleDeviceMode>]`: deviceManagementApplicabilityRuleDeviceMode
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DeviceMode <String>]`: windows10DeviceModeType
+      - `[DeviceMode <String>]`: Windows 10 Device Mode type.
       - `[Name <String>]`: Name for object.
-      - `[RuleType <String>]`: deviceManagementApplicabilityRuleType
+      - `[RuleType <String>]`: Supported Applicability rule types for Device Configuration
     - `[DeviceManagementApplicabilityRuleOSEdition <IMicrosoftGraphDeviceManagementApplicabilityRuleOSEdition>]`: deviceManagementApplicabilityRuleOsEdition
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Name <String>]`: Name for object.
       - `[OSEditionTypes <String[]>]`: Applicability rule OS edition type.
-      - `[RuleType <String>]`: deviceManagementApplicabilityRuleType
+      - `[RuleType <String>]`: Supported Applicability rule types for Device Configuration
     - `[DeviceManagementApplicabilityRuleOSVersion <IMicrosoftGraphDeviceManagementApplicabilityRuleOSVersion>]`: deviceManagementApplicabilityRuleOsVersion
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[MaxOSVersion <String>]`: Max OS version for Applicability Rule.
       - `[MinOSVersion <String>]`: Min OS version for Applicability Rule.
       - `[Name <String>]`: Name for object.
-      - `[RuleType <String>]`: deviceManagementApplicabilityRuleType
+      - `[RuleType <String>]`: Supported Applicability rule types for Device Configuration
     - `[DeviceSettingStateSummaries <IMicrosoftGraphSettingStateDeviceSummary[]>]`: Device Configuration Setting State Device Summary
       - `[Id <String>]`: Read-only.
       - `[CompliantDeviceCount <Int32?>]`: Device Compliant count for the setting
@@ -411,9 +414,12 @@ INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
   - `[AppleUserInitiatedEnrollmentProfileId <String>]`: key: id of appleUserInitiatedEnrollmentProfile
+  - `[CertificateConnectorDetailsId <String>]`: key: id of certificateConnectorDetails
+  - `[CloudPcDeviceImageId <String>]`: key: id of cloudPcDeviceImage
   - `[CloudPcId <String>]`: key: id of cloudPC
   - `[CloudPcOnPremisesConnectionId <String>]`: key: id of cloudPcOnPremisesConnection
   - `[CloudPcProvisioningPolicyId <String>]`: key: id of cloudPcProvisioningPolicy
+  - `[CloudPcUserSettingId <String>]`: key: id of cloudPcUserSetting
   - `[DataSharingConsentId <String>]`: key: id of dataSharingConsent
   - `[DepOnboardingSettingId <String>]`: key: id of depOnboardingSetting
   - `[DetectedAppId <String>]`: key: id of detectedApp
@@ -427,10 +433,12 @@ INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[DeviceHealthScriptDeviceStateId <String>]`: key: id of deviceHealthScriptDeviceState
   - `[DeviceHealthScriptId <String>]`: key: id of deviceHealthScript
   - `[DeviceLogCollectionResponseId <String>]`: key: id of deviceLogCollectionResponse
+  - `[DeviceManagementCompliancePolicyId <String>]`: key: id of deviceManagementCompliancePolicy
   - `[DeviceManagementConfigurationPolicyId <String>]`: key: id of deviceManagementConfigurationPolicy
   - `[DeviceManagementExchangeConnectorId <String>]`: key: id of deviceManagementExchangeConnector
   - `[DeviceManagementIntentId <String>]`: key: id of deviceManagementIntent
   - `[DeviceManagementResourceAccessProfileBaseId <String>]`: key: id of deviceManagementResourceAccessProfileBase
+  - `[DeviceManagementReusablePolicySettingId <String>]`: key: id of deviceManagementReusablePolicySetting
   - `[DeviceManagementScriptDeviceStateId <String>]`: key: id of deviceManagementScriptDeviceState
   - `[DeviceManagementScriptId <String>]`: key: id of deviceManagementScript
   - `[DeviceManagementTemplateId <String>]`: key: id of deviceManagementTemplate
@@ -447,16 +455,15 @@ INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[MicrosoftTunnelSiteId <String>]`: key: id of microsoftTunnelSite
   - `[MobileAppTroubleshootingEventId <String>]`: key: id of mobileAppTroubleshootingEvent
   - `[NotificationMessageTemplateId <String>]`: key: id of notificationMessageTemplate
+  - `[OemWarrantyInformationOnboardingId <String>]`: key: id of oemWarrantyInformationOnboarding
   - `[RemoteAssistancePartnerId <String>]`: key: id of remoteAssistancePartner
   - `[RoleScopeTagId <String>]`: key: id of roleScopeTag
   - `[WindowsAutopilotDeploymentProfileId <String>]`: key: id of windowsAutopilotDeploymentProfile
   - `[WindowsAutopilotDeviceIdentityId <String>]`: key: id of windowsAutopilotDeviceIdentity
+  - `[WindowsDriverUpdateProfileId <String>]`: key: id of windowsDriverUpdateProfile
   - `[WindowsFeatureUpdateProfileId <String>]`: key: id of windowsFeatureUpdateProfile
   - `[WindowsQualityUpdateProfileId <String>]`: key: id of windowsQualityUpdateProfile
 
 ## RELATED LINKS
-
-## RELATED LINKS
-
 
 ## RELATED LINKS

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgprivilegedapproval
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 privilegedApproval
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPrivilegedApproval
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 
 ### -Request
 privilegedRoleAssignmentRequest
-To construct, see NOTES section for REQUEST properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for REQUEST properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPrivilegedRoleAssignmentRequest
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 
 ### -RoleInfo
 privilegedRole
-To construct, see NOTES section for ROLEINFO properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ROLEINFO properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPrivilegedRole
@@ -452,8 +452,5 @@ ROLEINFO <IMicrosoftGraphPrivilegedRole>: privilegedRole
     - `[UsersCount <Int32?>]`: The number of users that are assigned with the role.
 
 ## RELATED LINKS
-
-## RELATED LINKS
-
 
 ## RELATED LINKS

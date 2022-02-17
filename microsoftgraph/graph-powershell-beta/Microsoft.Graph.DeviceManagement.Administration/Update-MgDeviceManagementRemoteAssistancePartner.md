@@ -64,7 +64,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 RemoteAssistPartner resources represent the metadata and status of a given Remote Assistance partner service.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRemoteAssistancePartner1
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementAdministrationIdentity
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -OnboardingStatus
-remoteAssistanceOnboardingStatus
+The current TeamViewer connector status
 
 ```yaml
 Type: String
@@ -270,7 +270,7 @@ BODYPARAMETER <IMicrosoftGraphRemoteAssistancePartner1>: RemoteAssistPartner res
   - `[DisplayName <String>]`: Display name of the partner.
   - `[LastConnectionDateTime <DateTime?>]`: Timestamp of the last request sent to Intune by the TEM partner.
   - `[OnboardingRequestExpiryDateTime <DateTime?>]`: When the OnboardingStatus is Onboarding, This is the date time when the onboarding request expires.
-  - `[OnboardingStatus <String>]`: remoteAssistanceOnboardingStatus
+  - `[OnboardingStatus <String>]`: The current TeamViewer connector status
   - `[OnboardingUrl <String>]`: URL of the partner's onboarding portal, where an administrator can configure their Remote Assistance service.
 
 INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
@@ -278,10 +278,14 @@ INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
   - `[CloudPcDeviceImageId <String>]`: key: id of cloudPcDeviceImage
+  - `[CloudPcGalleryImageId <String>]`: key: id of cloudPcGalleryImage
   - `[CloudPcId <String>]`: key: id of cloudPC
   - `[CloudPcOnPremisesConnectionId <String>]`: key: id of cloudPcOnPremisesConnection
   - `[CloudPcProvisioningPolicyAssignmentId <String>]`: key: id of cloudPcProvisioningPolicyAssignment
   - `[CloudPcProvisioningPolicyId <String>]`: key: id of cloudPcProvisioningPolicy
+  - `[CloudPcServicePlanId <String>]`: key: id of cloudPcServicePlan
+  - `[CloudPcSnapshotId <String>]`: key: id of cloudPcSnapshot
+  - `[CloudPcSupportedRegionId <String>]`: key: id of cloudPcSupportedRegion
   - `[CloudPcUserSettingAssignmentId <String>]`: key: id of cloudPcUserSettingAssignment
   - `[CloudPcUserSettingId <String>]`: key: id of cloudPcUserSetting
   - `[ComanagementEligibleDeviceId <String>]`: key: id of comanagementEligibleDevice

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/update-mgdevicemanagementdeponboardingsetting
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 ### -BodyParameter
 The depOnboardingSetting represents an instance of the Apple DEP service being onboarded to Intune.
 The onboarded service instance manages an Apple Token used to synchronize data between Apple and Intune.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDepOnboardingSetting
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ### -DefaultIosEnrollmentProfile
 The DepIOSEnrollmentProfile resource represents an Apple Device Enrollment Program (DEP) enrollment profile specific to iOS configuration.
 This type of profile must be assigned to Apple DEP serial numbers before the corresponding devices can enroll via DEP.
-To construct, see NOTES section for DEFAULTIOSENROLLMENTPROFILE properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEFAULTIOSENROLLMENTPROFILE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDepIosEnrollmentProfile
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ### -DefaultMacOSEnrollmentProfile
 The DepMacOSEnrollmentProfile resource represents an Apple Device Enrollment Program (DEP) enrollment profile specific to macOS configuration.
 This type of profile must be assigned to Apple DEP serial numbers before the corresponding devices can enroll via DEP.
-To construct, see NOTES section for DEFAULTMACOSENROLLMENTPROFILE properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEFAULTMACOSENROLLMENTPROFILE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDepMacOSEnrollmentProfile
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 
 ### -EnrollmentProfiles
 The enrollment profiles.
-To construct, see NOTES section for ENROLLMENTPROFILES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ENROLLMENTPROFILES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEnrollmentProfile[]
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 
 ### -ImportedAppleDeviceIdentities
 The imported Apple device identities.
-To construct, see NOTES section for IMPORTEDAPPLEDEVICEIDENTITIES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for IMPORTEDAPPLEDEVICEIDENTITIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphImportedAppleDeviceIdentity[]
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementEnrolmentIdentity
@@ -483,11 +483,13 @@ BODYPARAMETER <IMicrosoftGraphDepOnboardingSetting>: The depOnboardingSetting re
     - `[Id <String>]`: Read-only.
     - `[AppearanceScreenDisabled <Boolean?>]`: Indicates if Apperance screen is disabled
     - `[AwaitDeviceConfiguredConfirmation <Boolean?>]`: Indicates if the device will need to wait for configured confirmation
+    - `[CarrierActivationUrl <String>]`: Carrier URL for activating device eSIM.
     - `[CompanyPortalVppTokenId <String>]`: If set, indicates which Vpp token should be used to deploy the Company Portal w/ device licensing. 'enableAuthenticationViaCompanyPortal' must be set in order for this property to be set.
     - `[DeviceToDeviceMigrationDisabled <Boolean?>]`: Indicates if Device To Device Migration is disabled
     - `[EnableSharedIPad <Boolean?>]`: This indicates whether the device is to be enrolled in a mode which enables multi user scenarios. Only applicable in shared iPads.
     - `[EnableSingleAppEnrollmentMode <Boolean?>]`: Tells the device to enable single app mode and apply app-lock during enrollment. Default is false. 'enableAuthenticationViaCompanyPortal' and 'companyPortalVppTokenId' must be set for this property to be set.
     - `[ExpressLanguageScreenDisabled <Boolean?>]`: Indicates if Express Language screen is disabled
+    - `[ForceTemporarySession <Boolean?>]`: Indicates if temporary sessions is enabled
     - `[HomeButtonScreenDisabled <Boolean?>]`: Indicates if home button sensitivity screen is disabled
     - `[IMessageAndFaceTimeScreenDisabled <Boolean?>]`: Indicates if iMessage and FaceTime screen is disabled
     - `[ITunesPairingMode <String>]`: iTunesPairingMode
@@ -496,13 +498,17 @@ BODYPARAMETER <IMicrosoftGraphDepOnboardingSetting>: The depOnboardingSetting re
       - `[Thumbprint <String>]`: The thumbprint of the management certificate
     - `[OnBoardingScreenDisabled <Boolean?>]`: Indicates if onboarding setup screen is disabled
     - `[PassCodeDisabled <Boolean?>]`: Indicates if Passcode setup pane is disabled
+    - `[PasscodeLockGracePeriodInSeconds <Int32?>]`: Indicates timeout before locked screen requires the user to enter the device passocde to unlock it
     - `[PreferredLanguageScreenDisabled <Boolean?>]`: Indicates if Preferred language screen is disabled
     - `[RestoreCompletedScreenDisabled <Boolean?>]`: Indicates if Weclome screen is disabled
     - `[RestoreFromAndroidDisabled <Boolean?>]`: Indicates if Restore from Android is disabled
     - `[SharedIPadMaximumUserCount <Int32?>]`: This specifies the maximum number of users that can use a shared iPad. Only applicable in shared iPad mode.
     - `[SimSetupScreenDisabled <Boolean?>]`: Indicates if the SIMSetup screen is disabled
     - `[SoftwareUpdateScreenDisabled <Boolean?>]`: Indicates if the mandatory sofware update screen is disabled
+    - `[TemporarySessionTimeoutInSeconds <Int32?>]`: Indicates timeout of temporary session
     - `[UpdateCompleteScreenDisabled <Boolean?>]`: Indicates if Weclome screen is disabled
+    - `[UserSessionTimeoutInSeconds <Int32?>]`: Indicates timeout of temporary session
+    - `[UserlessSharedAadModeEnabled <Boolean?>]`: Indicates that this apple device is designated to support 'shared device mode' scenarios. This is distinct from the 'shared iPad' scenario. See Shared iOS and iPadOS devices.
     - `[WatchMigrationScreenDisabled <Boolean?>]`: Indicates if the watch migration screen is disabled
     - `[WelcomeScreenDisabled <Boolean?>]`: Indicates if Weclome screen is disabled
     - `[ZoomDisabled <Boolean?>]`: Indicates if zoom setup pane is disabled
@@ -604,11 +610,13 @@ DEFAULTIOSENROLLMENTPROFILE <IMicrosoftGraphDepIosEnrollmentProfile>: The DepIOS
   - `[Id <String>]`: Read-only.
   - `[AppearanceScreenDisabled <Boolean?>]`: Indicates if Apperance screen is disabled
   - `[AwaitDeviceConfiguredConfirmation <Boolean?>]`: Indicates if the device will need to wait for configured confirmation
+  - `[CarrierActivationUrl <String>]`: Carrier URL for activating device eSIM.
   - `[CompanyPortalVppTokenId <String>]`: If set, indicates which Vpp token should be used to deploy the Company Portal w/ device licensing. 'enableAuthenticationViaCompanyPortal' must be set in order for this property to be set.
   - `[DeviceToDeviceMigrationDisabled <Boolean?>]`: Indicates if Device To Device Migration is disabled
   - `[EnableSharedIPad <Boolean?>]`: This indicates whether the device is to be enrolled in a mode which enables multi user scenarios. Only applicable in shared iPads.
   - `[EnableSingleAppEnrollmentMode <Boolean?>]`: Tells the device to enable single app mode and apply app-lock during enrollment. Default is false. 'enableAuthenticationViaCompanyPortal' and 'companyPortalVppTokenId' must be set for this property to be set.
   - `[ExpressLanguageScreenDisabled <Boolean?>]`: Indicates if Express Language screen is disabled
+  - `[ForceTemporarySession <Boolean?>]`: Indicates if temporary sessions is enabled
   - `[HomeButtonScreenDisabled <Boolean?>]`: Indicates if home button sensitivity screen is disabled
   - `[IMessageAndFaceTimeScreenDisabled <Boolean?>]`: Indicates if iMessage and FaceTime screen is disabled
   - `[ITunesPairingMode <String>]`: iTunesPairingMode
@@ -617,13 +625,17 @@ DEFAULTIOSENROLLMENTPROFILE <IMicrosoftGraphDepIosEnrollmentProfile>: The DepIOS
     - `[Thumbprint <String>]`: The thumbprint of the management certificate
   - `[OnBoardingScreenDisabled <Boolean?>]`: Indicates if onboarding setup screen is disabled
   - `[PassCodeDisabled <Boolean?>]`: Indicates if Passcode setup pane is disabled
+  - `[PasscodeLockGracePeriodInSeconds <Int32?>]`: Indicates timeout before locked screen requires the user to enter the device passocde to unlock it
   - `[PreferredLanguageScreenDisabled <Boolean?>]`: Indicates if Preferred language screen is disabled
   - `[RestoreCompletedScreenDisabled <Boolean?>]`: Indicates if Weclome screen is disabled
   - `[RestoreFromAndroidDisabled <Boolean?>]`: Indicates if Restore from Android is disabled
   - `[SharedIPadMaximumUserCount <Int32?>]`: This specifies the maximum number of users that can use a shared iPad. Only applicable in shared iPad mode.
   - `[SimSetupScreenDisabled <Boolean?>]`: Indicates if the SIMSetup screen is disabled
   - `[SoftwareUpdateScreenDisabled <Boolean?>]`: Indicates if the mandatory sofware update screen is disabled
+  - `[TemporarySessionTimeoutInSeconds <Int32?>]`: Indicates timeout of temporary session
   - `[UpdateCompleteScreenDisabled <Boolean?>]`: Indicates if Weclome screen is disabled
+  - `[UserSessionTimeoutInSeconds <Int32?>]`: Indicates timeout of temporary session
+  - `[UserlessSharedAadModeEnabled <Boolean?>]`: Indicates that this apple device is designated to support 'shared device mode' scenarios. This is distinct from the 'shared iPad' scenario. See Shared iOS and iPadOS devices.
   - `[WatchMigrationScreenDisabled <Boolean?>]`: Indicates if the watch migration screen is disabled
   - `[WelcomeScreenDisabled <Boolean?>]`: Indicates if Weclome screen is disabled
   - `[ZoomDisabled <Boolean?>]`: Indicates if zoom setup pane is disabled
@@ -727,11 +739,7 @@ INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[WindowsAutopilotDeviceIdentityId <String>]`: key: id of windowsAutopilotDeviceIdentity
   - `[WindowsFeatureUpdateProfileAssignmentId <String>]`: key: id of windowsFeatureUpdateProfileAssignment
   - `[WindowsFeatureUpdateProfileId <String>]`: key: id of windowsFeatureUpdateProfile
-  - `[WindowsUpdateStateId <String>]`: key: id of windowsUpdateState
 
 ## RELATED LINKS
-
-## RELATED LINKS
-
 
 ## RELATED LINKS

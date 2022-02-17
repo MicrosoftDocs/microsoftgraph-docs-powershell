@@ -9,9 +9,8 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The roleDefinition the assignment is for.
-Provided so that callers can get the role definition using $expand at the same time as getting the role assignment.
-roleDefinition.id will be auto expanded.
 Supports $expand.
+roleDefinition.Id will be auto expanded.
 
 ## SYNTAX
 
@@ -29,9 +28,8 @@ Get-MgRoleManagementEntitlementManagementRoleAssignmentRoleDefinitionByRef
 
 ## DESCRIPTION
 The roleDefinition the assignment is for.
-Provided so that callers can get the role definition using $expand at the same time as getting the role assignment.
-roleDefinition.id will be auto expanded.
 Supports $expand.
+roleDefinition.Id will be auto expanded.
 
 ## EXAMPLES
 
@@ -39,7 +37,7 @@ Supports $expand.
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementEnrolmentIdentity
@@ -125,6 +123,5 @@ INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[WindowsAutopilotDeviceIdentityId <String>]`: key: id of windowsAutopilotDeviceIdentity
   - `[WindowsFeatureUpdateProfileAssignmentId <String>]`: key: id of windowsFeatureUpdateProfileAssignment
   - `[WindowsFeatureUpdateProfileId <String>]`: key: id of windowsFeatureUpdateProfile
-  - `[WindowsUpdateStateId <String>]`: key: id of windowsUpdateState
 
 ## RELATED LINKS

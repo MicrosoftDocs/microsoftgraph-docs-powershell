@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgOrganizationCertificateBasedAuthConfiguration
 
 ## SYNOPSIS
-Navigation property to manage  certificate-based authentication configuration.
+Navigation property to manage certificate-based authentication configuration.
 Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
 
 ## SYNTAX
@@ -20,7 +20,7 @@ Get-MgOrganizationCertificateBasedAuthConfiguration -OrganizationId <String> [-E
 ```
 
 ## DESCRIPTION
-Navigation property to manage  certificate-based authentication configuration.
+Navigation property to manage certificate-based authentication configuration.
 Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
 
 ## EXAMPLES

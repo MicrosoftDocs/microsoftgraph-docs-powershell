@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementintunebrandingprofile
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 
 ### -Assignments
 The list of group assignments for the branding profile
-To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIntuneBrandingProfileAssignment[]
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 This entity contains data which is used in customizing the tenant level appearance of the Company Portal applications as well as the end user web portal.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIntuneBrandingProfile
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 
 ### -CompanyPortalBlockedActions
 Collection of blocked actions on the company portal as per platform and device ownership types.
-To construct, see NOTES section for COMPANYPORTALBLOCKEDACTIONS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for COMPANYPORTALBLOCKEDACTIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCompanyPortalBlockedAction[]
@@ -282,7 +282,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnrollmentAvailability
-enrollmentAvailabilityOptions
+Options available for enrollment flow customization
 
 ```yaml
 Type: String
@@ -313,7 +313,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementAdministrationIdentity
@@ -389,7 +389,7 @@ Accept wildcard characters: False
 
 ### -LandingPageCustomizedImage
 Contains properties for a generic mime content.
-To construct, see NOTES section for LANDINGPAGECUSTOMIZEDIMAGE properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for LANDINGPAGECUSTOMIZEDIMAGE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMimeContent
@@ -420,7 +420,7 @@ Accept wildcard characters: False
 
 ### -LightBackgroundLogo
 Contains properties for a generic mime content.
-To construct, see NOTES section for LIGHTBACKGROUNDLOGO properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for LIGHTBACKGROUNDLOGO properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMimeContent
@@ -616,7 +616,7 @@ Accept wildcard characters: False
 
 ### -ThemeColor
 Color in RGB.
-To construct, see NOTES section for THEMECOLOR properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for THEMECOLOR properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRgbColor
@@ -632,7 +632,7 @@ Accept wildcard characters: False
 
 ### -ThemeColorLogo
 Contains properties for a generic mime content.
-To construct, see NOTES section for THEMECOLORLOGO properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for THEMECOLORLOGO properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMimeContent
@@ -701,7 +701,7 @@ ASSIGNMENTS <IMicrosoftGraphIntuneBrandingProfileAssignment[]>: The list of grou
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-    - `[DeviceAndAppManagementAssignmentFilterType <String>]`: deviceAndAppManagementAssignmentFilterType
+    - `[DeviceAndAppManagementAssignmentFilterType <String>]`: Represents type of the assignment filter.
 
 BODYPARAMETER <IMicrosoftGraphIntuneBrandingProfile>: This entity contains data which is used in customizing the tenant level appearance of the Company Portal applications as well as the end user web portal.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -711,11 +711,11 @@ BODYPARAMETER <IMicrosoftGraphIntuneBrandingProfile>: This entity contains data 
     - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-      - `[DeviceAndAppManagementAssignmentFilterType <String>]`: deviceAndAppManagementAssignmentFilterType
+      - `[DeviceAndAppManagementAssignmentFilterType <String>]`: Represents type of the assignment filter.
   - `[CompanyPortalBlockedActions <IMicrosoftGraphCompanyPortalBlockedAction[]>]`: Collection of blocked actions on the company portal as per platform and device ownership types.
-    - `[Action <String>]`: companyPortalAction
-    - `[OwnerType <String>]`: ownerType
-    - `[Platform <String>]`: devicePlatformType
+    - `[Action <String>]`: Action on a device that can be executed in the Company Portal
+    - `[OwnerType <String>]`: Owner type of device.
+    - `[Platform <String>]`: Supported platform types.
   - `[ContactItEmailAddress <String>]`: E-mail address of the person/organization responsible for IT support
   - `[ContactItName <String>]`: Name of the person/organization responsible for IT support
   - `[ContactItNotes <String>]`: Text comments regarding the person/organization responsible for IT support
@@ -726,7 +726,7 @@ BODYPARAMETER <IMicrosoftGraphIntuneBrandingProfile>: This entity contains data 
   - `[CustomPrivacyMessage <String>]`: Text comments regarding what the admin doesn't have access to on the device
   - `[DisableClientTelemetry <Boolean?>]`: Applies to telemetry sent from all clients to the Intune service. When disabled, all proactive troubleshooting and issue warnings within the client are turned off, and telemetry settings appear inactive or hidden to the device user.
   - `[DisplayName <String>]`: Company/organization name that is displayed to end users
-  - `[EnrollmentAvailability <String>]`: enrollmentAvailabilityOptions
+  - `[EnrollmentAvailability <String>]`: Options available for enrollment flow customization
   - `[IsDefaultProfile <Boolean?>]`: Boolean that represents whether the profile is used as default or not
   - `[IsFactoryResetDisabled <Boolean?>]`: Boolean that represents whether the adminsistrator has disabled the 'Factory Reset' action on corporate owned devices.
   - `[IsRemoveDeviceDisabled <Boolean?>]`: Boolean that represents whether the adminsistrator has disabled the 'Remove Device' action on corporate owned devices.
@@ -755,19 +755,23 @@ BODYPARAMETER <IMicrosoftGraphIntuneBrandingProfile>: This entity contains data 
   - `[ThemeColorLogo <IMicrosoftGraphMimeContent>]`: Contains properties for a generic mime content.
 
 COMPANYPORTALBLOCKEDACTIONS <IMicrosoftGraphCompanyPortalBlockedAction[]>: Collection of blocked actions on the company portal as per platform and device ownership types.
-  - `[Action <String>]`: companyPortalAction
-  - `[OwnerType <String>]`: ownerType
-  - `[Platform <String>]`: devicePlatformType
+  - `[Action <String>]`: Action on a device that can be executed in the Company Portal
+  - `[OwnerType <String>]`: Owner type of device.
+  - `[Platform <String>]`: Supported platform types.
 
 INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[AuditEventId <String>]`: key: id of auditEvent
   - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
   - `[CloudPcDeviceImageId <String>]`: key: id of cloudPcDeviceImage
+  - `[CloudPcGalleryImageId <String>]`: key: id of cloudPcGalleryImage
   - `[CloudPcId <String>]`: key: id of cloudPC
   - `[CloudPcOnPremisesConnectionId <String>]`: key: id of cloudPcOnPremisesConnection
   - `[CloudPcProvisioningPolicyAssignmentId <String>]`: key: id of cloudPcProvisioningPolicyAssignment
   - `[CloudPcProvisioningPolicyId <String>]`: key: id of cloudPcProvisioningPolicy
+  - `[CloudPcServicePlanId <String>]`: key: id of cloudPcServicePlan
+  - `[CloudPcSnapshotId <String>]`: key: id of cloudPcSnapshot
+  - `[CloudPcSupportedRegionId <String>]`: key: id of cloudPcSupportedRegion
   - `[CloudPcUserSettingAssignmentId <String>]`: key: id of cloudPcUserSettingAssignment
   - `[CloudPcUserSettingId <String>]`: key: id of cloudPcUserSetting
   - `[ComanagementEligibleDeviceId <String>]`: key: id of comanagementEligibleDevice
@@ -829,8 +833,5 @@ THEMECOLORLOGO <IMicrosoftGraphMimeContent>: Contains properties for a generic m
   - `[Value <Byte[]>]`: The byte array that contains the actual content.
 
 ## RELATED LINKS
-
-## RELATED LINKS
-
 
 ## RELATED LINKS

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgprivilegedapprovalroleinfo
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 The assignments for this role.
 Read-only.
 Nullable.
-To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPrivilegedRoleAssignment[]
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 privilegedRole
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPrivilegedRole
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentityGovernanceIdentity
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 
 ### -Settings
 privilegedRoleSettings
-To construct, see NOTES section for SETTINGS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SETTINGS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPrivilegedRoleSettings
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 
 ### -Summary
 privilegedRoleSummary
-To construct, see NOTES section for SUMMARY properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SUMMARY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPrivilegedRoleSummary
@@ -339,9 +339,11 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageResourceScopeId <String>]`: key: id of accessPackageResourceScope
   - `[AccessReviewDecisionId <String>]`: key: id of accessReviewDecision
   - `[AccessReviewHistoryDefinitionId <String>]`: key: id of accessReviewHistoryDefinition
+  - `[AccessReviewHistoryInstanceId <String>]`: key: id of accessReviewHistoryInstance
   - `[AccessReviewId <String>]`: key: id of accessReview
   - `[AccessReviewId1 <String>]`: key: id of accessReview
   - `[AccessReviewInstanceDecisionItemId <String>]`: key: id of accessReviewInstanceDecisionItem
+  - `[AccessReviewInstanceDecisionItemId1 <String>]`: key: id of accessReviewInstanceDecisionItem
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewReviewerId <String>]`: key: id of accessReviewReviewer
   - `[AccessReviewScheduleDefinitionId <String>]`: key: id of accessReviewScheduleDefinition
@@ -356,11 +358,13 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[BusinessFlowTemplateId <String>]`: key: id of businessFlowTemplate
   - `[ConnectedOrganizationId <String>]`: key: id of connectedOrganization
   - `[DirectoryObjectId <String>]`: key: id of directoryObject
+  - `[GovernanceInsightId <String>]`: key: id of governanceInsight
   - `[GovernanceResourceId <String>]`: key: id of governanceResource
   - `[GovernanceRoleAssignmentId <String>]`: key: id of governanceRoleAssignment
   - `[GovernanceRoleAssignmentRequestId <String>]`: key: id of governanceRoleAssignmentRequest
   - `[GovernanceRoleDefinitionId <String>]`: key: id of governanceRoleDefinition
   - `[GovernanceRoleSettingId <String>]`: key: id of governanceRoleSetting
+  - `[GroupId <String>]`: key: id of group
   - `[On <String>]`: Usage: on={on}
   - `[PrivilegedAccessId <String>]`: key: id of privilegedAccess
   - `[PrivilegedApprovalId <String>]`: key: id of privilegedApproval
@@ -398,8 +402,5 @@ SUMMARY <IMicrosoftGraphPrivilegedRoleSummary>: privilegedRoleSummary
   - `[UsersCount <Int32?>]`: The number of users that are assigned with the role.
 
 ## RELATED LINKS
-
-## RELATED LINKS
-
 
 ## RELATED LINKS

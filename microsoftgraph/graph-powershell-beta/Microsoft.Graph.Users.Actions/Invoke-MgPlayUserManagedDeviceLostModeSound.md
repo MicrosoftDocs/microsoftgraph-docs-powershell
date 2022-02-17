@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgplayusermanageddevicelostmodesound
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgPlayUserManagedDeviceLostModeSound
 
 ## SYNOPSIS
-Remote lock
+Play lost mode sound
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Invoke-MgPlayUserManagedDeviceLostModeSound -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Remote lock
+Play lost mode sound
 
 ## EXAMPLES
 
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
@@ -204,10 +204,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
+BODYPARAMETER <IPaths1Cgto95UsersUserIdManageddevicesManageddeviceIdMicrosoftGraphPlaylostmodesoundPostRequestbodyContentApplicationJsonSchema>: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DurationInMinutes <String>]`: 
+
 INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
+  - `[AccessReviewInstanceDecisionItemId <String>]`: key: id of accessReviewInstanceDecisionItem
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
   - `[AuthenticationMethodId <String>]`: key: id of authenticationMethod
+  - `[BaseTaskId <String>]`: key: id of baseTask
+  - `[BaseTaskListId <String>]`: key: id of baseTaskList
   - `[CalendarId <String>]`: key: id of calendar
   - `[DeviceEnrollmentConfigurationId <String>]`: key: id of deviceEnrollmentConfiguration
   - `[DeviceLogCollectionResponseId <String>]`: key: id of deviceLogCollectionResponse

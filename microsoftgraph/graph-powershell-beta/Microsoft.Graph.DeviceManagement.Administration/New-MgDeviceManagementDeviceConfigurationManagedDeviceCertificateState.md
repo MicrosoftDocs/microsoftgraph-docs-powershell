@@ -53,7 +53,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 managedAllDeviceCertificateState
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphManagedAllDeviceCertificateState
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -CertificateRevokeStatus
-certificateRevocationStatus
+Certificate Revocation Status.
 
 ```yaml
 Type: String
@@ -319,7 +319,7 @@ BODYPARAMETER <IMicrosoftGraphManagedAllDeviceCertificateState>: managedAllDevic
   - `[CertificateIssuanceDateTime <DateTime?>]`: Issuance date
   - `[CertificateIssuerName <String>]`: Issuer
   - `[CertificateKeyUsages <Int32?>]`: Key Usage
-  - `[CertificateRevokeStatus <String>]`: certificateRevocationStatus
+  - `[CertificateRevokeStatus <String>]`: Certificate Revocation Status.
   - `[CertificateRevokeStatusLastChangeDateTime <DateTime?>]`: The time the revoke status was last changed
   - `[CertificateSerialNumber <String>]`: Serial number
   - `[CertificateSubjectName <String>]`: Certificate subject name

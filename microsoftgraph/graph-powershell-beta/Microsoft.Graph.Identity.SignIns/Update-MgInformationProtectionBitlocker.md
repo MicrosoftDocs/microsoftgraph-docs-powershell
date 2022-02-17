@@ -48,7 +48,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 bitlocker
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphBitlocker
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 
 ### -RecoveryKeys
 The recovery keys associated with the bitlocker entity.
-To construct, see NOTES section for RECOVERYKEYS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for RECOVERYKEYS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphBitlockerRecoveryKey[]
@@ -162,16 +162,16 @@ BODYPARAMETER <IMicrosoftGraphBitlocker>: bitlocker
   - `[Id <String>]`: Read-only.
   - `[RecoveryKeys <IMicrosoftGraphBitlockerRecoveryKey[]>]`: The recovery keys associated with the bitlocker entity.
     - `[Id <String>]`: Read-only.
-    - `[CreatedDateTime <DateTime?>]`: The date and time when the key was originally backed up to Azure Active Directory.
-    - `[DeviceId <String>]`: ID of the device the BitLocker key is originally backed up from.
-    - `[Key <String>]`: The BitLocker recovery key.
+    - `[CreatedDateTime <DateTime?>]`: The date and time when the key was originally backed up to Azure Active Directory. Not nullable.
+    - `[DeviceId <String>]`: Identifier of the device the BitLocker key is originally backed up from. Supports $filter (eq).
+    - `[Key <String>]`: The BitLocker recovery key. Returned only on $select. Not nullable.
     - `[VolumeType <String>]`: volumeType
 
 RECOVERYKEYS <IMicrosoftGraphBitlockerRecoveryKey[]>: The recovery keys associated with the bitlocker entity.
   - `[Id <String>]`: Read-only.
-  - `[CreatedDateTime <DateTime?>]`: The date and time when the key was originally backed up to Azure Active Directory.
-  - `[DeviceId <String>]`: ID of the device the BitLocker key is originally backed up from.
-  - `[Key <String>]`: The BitLocker recovery key.
+  - `[CreatedDateTime <DateTime?>]`: The date and time when the key was originally backed up to Azure Active Directory. Not nullable.
+  - `[DeviceId <String>]`: Identifier of the device the BitLocker key is originally backed up from. Supports $filter (eq).
+  - `[Key <String>]`: The BitLocker recovery key. Returned only on $select. Not nullable.
   - `[VolumeType <String>]`: volumeType
 
 ## RELATED LINKS

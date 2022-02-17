@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/update-mgdevicemanagementwindowfeatureupdateprofile
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 
 ### -Assignments
 The list of group assignments of the profile.
-To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphWindowsFeatureUpdateProfileAssignment[]
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Windows Feature Update Profile
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphWindowsFeatureUpdateProfile
@@ -210,7 +210,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementEnrolmentIdentity
@@ -355,7 +355,7 @@ ASSIGNMENTS <IMicrosoftGraphWindowsFeatureUpdateProfileAssignment[]>: The list o
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-    - `[DeviceAndAppManagementAssignmentFilterType <String>]`: deviceAndAppManagementAssignmentFilterType
+    - `[DeviceAndAppManagementAssignmentFilterType <String>]`: Represents type of the assignment filter.
 
 BODYPARAMETER <IMicrosoftGraphWindowsFeatureUpdateProfile>: Windows Feature Update Profile
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -365,38 +365,20 @@ BODYPARAMETER <IMicrosoftGraphWindowsFeatureUpdateProfile>: Windows Feature Upda
     - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-      - `[DeviceAndAppManagementAssignmentFilterType <String>]`: deviceAndAppManagementAssignmentFilterType
+      - `[DeviceAndAppManagementAssignmentFilterType <String>]`: Represents type of the assignment filter.
   - `[CreatedDateTime <DateTime?>]`: The date time that the profile was created.
   - `[DeployableContentDisplayName <String>]`: Friendly display name of the quality update profile deployable content
   - `[Description <String>]`: The description of the profile which is specified by the user.
-  - `[DeviceUpdateStates <IMicrosoftGraphWindowsUpdateState[]>]`: The list of device states this profile targeted to
-    - `[Id <String>]`: Read-only.
-    - `[DeviceDisplayName <String>]`: Device display name.
-    - `[DeviceId <String>]`: The id of the device.
-    - `[FeatureUpdateVersion <String>]`: The current feature update version of the device.
-    - `[LastScanDateTime <DateTime?>]`: The date time that the Windows Update Agent did a successful scan.
-    - `[LastSyncDateTime <DateTime?>]`: Last date time that the device sync with with Microsoft Intune.
-    - `[QualityUpdateVersion <String>]`: The Quality Update Version of the device.
-    - `[Status <String>]`: windowsUpdateStatus
-    - `[UserId <String>]`: The id of the user.
-    - `[UserPrincipalName <String>]`: User principal name.
   - `[DisplayName <String>]`: The display name of the profile.
   - `[EndOfSupportDate <DateTime?>]`: The last supported date for a feature update
   - `[FeatureUpdateVersion <String>]`: The feature update version that will be deployed to the devices targeted by this profile. The version could be any supported version for example 1709, 1803 or 1809 and so on.
   - `[LastModifiedDateTime <DateTime?>]`: The date time that the profile was last modified.
   - `[RoleScopeTagIds <String[]>]`: List of Scope Tags for this Feature Update entity.
-
-DEVICEUPDATESTATES <IMicrosoftGraphWindowsUpdateState[]>: The list of device states this profile targeted to
-  - `[Id <String>]`: Read-only.
-  - `[DeviceDisplayName <String>]`: Device display name.
-  - `[DeviceId <String>]`: The id of the device.
-  - `[FeatureUpdateVersion <String>]`: The current feature update version of the device.
-  - `[LastScanDateTime <DateTime?>]`: The date time that the Windows Update Agent did a successful scan.
-  - `[LastSyncDateTime <DateTime?>]`: Last date time that the device sync with with Microsoft Intune.
-  - `[QualityUpdateVersion <String>]`: The Quality Update Version of the device.
-  - `[Status <String>]`: windowsUpdateStatus
-  - `[UserId <String>]`: The id of the user.
-  - `[UserPrincipalName <String>]`: User principal name.
+  - `[RolloutSettings <IMicrosoftGraphWindowsUpdateRolloutSettings>]`: A complex type to store the windows update rollout settings including offer start date time, offer end date time, and days between each set of offers.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[OfferEndDateTimeInUtc <DateTime?>]`: The feature update's ending  of release date and time to be set, update, and displayed for a feature Update profile for example: 2020-06-09T10:00:00Z.
+    - `[OfferIntervalInDays <Int32?>]`: The number of day(s) between each set of offers to be set, updated, and displayed for a feature update profile, for example: if OfferStartDateTimeInUTC is 2020-06-09T10:00:00Z, and OfferIntervalInDays is 1, then the next two sets of offers will be made consecutively on 2020-06-10T10:00:00Z (next day at the same specified time) and 2020-06-11T10:00:00Z (next next day at the same specified time) with 1 day in between each set of offers.
+    - `[OfferStartDateTimeInUtc <DateTime?>]`: The feature update's starting date and time to be set, update, and displayed for a feature Update profile for example: 2020-06-09T10:00:00Z.
 
 INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
@@ -437,6 +419,11 @@ INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[WindowsAutopilotDeviceIdentityId <String>]`: key: id of windowsAutopilotDeviceIdentity
   - `[WindowsFeatureUpdateProfileAssignmentId <String>]`: key: id of windowsFeatureUpdateProfileAssignment
   - `[WindowsFeatureUpdateProfileId <String>]`: key: id of windowsFeatureUpdateProfile
-  - `[WindowsUpdateStateId <String>]`: key: id of windowsUpdateState
+
+ROLLOUTSETTINGS <IMicrosoftGraphWindowsUpdateRolloutSettings>: A complex type to store the windows update rollout settings including offer start date time, offer end date time, and days between each set of offers.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[OfferEndDateTimeInUtc <DateTime?>]`: The feature update's ending  of release date and time to be set, update, and displayed for a feature Update profile for example: 2020-06-09T10:00:00Z.
+  - `[OfferIntervalInDays <Int32?>]`: The number of day(s) between each set of offers to be set, updated, and displayed for a feature update profile, for example: if OfferStartDateTimeInUTC is 2020-06-09T10:00:00Z, and OfferIntervalInDays is 1, then the next two sets of offers will be made consecutively on 2020-06-10T10:00:00Z (next day at the same specified time) and 2020-06-11T10:00:00Z (next next day at the same specified time) with 1 day in between each set of offers.
+  - `[OfferStartDateTimeInUtc <DateTime?>]`: The feature update's starting date and time to be set, update, and displayed for a feature Update profile for example: 2020-06-09T10:00:00Z.
 
 ## RELATED LINKS

@@ -51,7 +51,7 @@ Accept wildcard characters: False
 The assignments for this role.
 Read-only.
 Nullable.
-To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPrivilegedRoleAssignment[]
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 privilegedRole
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPrivilegedRole
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 
 ### -Settings
 privilegedRoleSettings
-To construct, see NOTES section for SETTINGS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SETTINGS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPrivilegedRoleSettings
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 
 ### -Summary
 privilegedRoleSummary
-To construct, see NOTES section for SUMMARY properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SUMMARY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPrivilegedRoleSummary

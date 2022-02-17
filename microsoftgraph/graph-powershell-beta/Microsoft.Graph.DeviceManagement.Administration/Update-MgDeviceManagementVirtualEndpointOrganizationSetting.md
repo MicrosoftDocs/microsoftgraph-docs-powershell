@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementVirtualEndpointOrganizationSetting
 
 ## SYNOPSIS
-Update the navigation property organizationSettings in deviceManagement
+The Cloud PC organization settings for a tenant.
 
 ## SYNTAX
 
@@ -26,16 +26,9 @@ Update-MgDeviceManagementVirtualEndpointOrganizationSetting
 ```
 
 ## DESCRIPTION
-Update the navigation property organizationSettings in deviceManagement
+The Cloud PC organization settings for a tenant.
 
 ## EXAMPLES
-
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -110,7 +103,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -171,9 +164,18 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+BODYPARAMETER <IMicrosoftGraphCloudPcOrganizationSettings>: cloudPcOrganizationSettings
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: Read-only.
+  - `[OSVersion <String>]`: cloudPcOperatingSystem
+  - `[UserAccountType <String>]`: cloudPcUserAccountType
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointorganizationsetting](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointorganizationsetting)
-

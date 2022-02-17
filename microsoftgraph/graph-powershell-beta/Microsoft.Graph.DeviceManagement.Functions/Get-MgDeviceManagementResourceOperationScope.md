@@ -33,7 +33,7 @@ Invoke function getScopesForUser
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementFunctionsIdentity
@@ -98,6 +98,7 @@ To create the parameters described below, construct a hash table containing the 
 INPUTOBJECT <IDeviceManagementFunctionsIdentity>: Identity Parameter
   - `[Category <String>]`: Usage: category={category}
   - `[DepOnboardingSettingId <String>]`: key: id of depOnboardingSetting
+  - `[DeviceAndAppManagementAssignmentFilterId <String>]`: key: id of deviceAndAppManagementAssignmentFilter
   - `[DeviceAndAppManagementRoleAssignmentId <String>]`: key: id of deviceAndAppManagementRoleAssignment
   - `[DeviceComplianceScriptDeviceStateId <String>]`: key: id of deviceComplianceScriptDeviceState
   - `[DeviceComplianceScriptId <String>]`: key: id of deviceComplianceScript

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementsetting
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgEntitlementManagementSetting
 
 ## SYNOPSIS
-Update the navigation property settings in identityGovernance
+Represents the settings that control the behavior of Azure AD entitlement management.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ Update-MgEntitlementManagementSetting -BodyParameter <IMicrosoftGraphEntitlement
 ```
 
 ## DESCRIPTION
-Update the navigation property settings in identityGovernance
+Represents the settings that control the behavior of Azure AD entitlement management.
 
 ## EXAMPLES
 
@@ -49,7 +49,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 entitlementManagementSettings
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEntitlementManagementSettings1

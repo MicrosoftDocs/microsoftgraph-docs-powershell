@@ -82,7 +82,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Device.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphWindowsAutopilotDeviceIdentity

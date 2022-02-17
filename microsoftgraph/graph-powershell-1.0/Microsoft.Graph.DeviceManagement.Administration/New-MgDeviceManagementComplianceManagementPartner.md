@@ -53,7 +53,7 @@ Accept wildcard characters: False
 
 ### -AndroidEnrollmentAssignments
 User groups which enroll Android devices through partner.
-To construct, see NOTES section for ANDROIDENROLLMENTASSIGNMENTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ANDROIDENROLLMENTASSIGNMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphComplianceManagementPartnerAssignment[]
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Compliance management partner for all platforms
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphComplianceManagementPartner
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 
 ### -IosEnrollmentAssignments
 User groups which enroll ios devices through partner.
-To construct, see NOTES section for IOSENROLLMENTASSIGNMENTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for IOSENROLLMENTASSIGNMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphComplianceManagementPartnerAssignment[]
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 
 ### -MacOSEnrollmentAssignments
 User groups which enroll Mac devices through partner.
-To construct, see NOTES section for MACOSENROLLMENTASSIGNMENTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for MACOSENROLLMENTASSIGNMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphComplianceManagementPartnerAssignment[]
@@ -206,7 +206,7 @@ Accept wildcard characters: False
 ```
 
 ### -PartnerState
-deviceManagementPartnerTenantState
+Partner state of this tenant.
 
 ```yaml
 Type: String
@@ -286,7 +286,7 @@ BODYPARAMETER <IMicrosoftGraphComplianceManagementPartner>: Compliance managemen
   - `[LastHeartbeatDateTime <DateTime?>]`: Timestamp of last heartbeat after admin onboarded to the compliance management partner
   - `[MacOSEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment[]>]`: User groups which enroll Mac devices through partner.
   - `[MacOSOnboarded <Boolean?>]`: Partner onboarded for Mac devices.
-  - `[PartnerState <String>]`: deviceManagementPartnerTenantState
+  - `[PartnerState <String>]`: Partner state of this tenant.
 
 IOSENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment[]>: User groups which enroll ios devices through partner.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.

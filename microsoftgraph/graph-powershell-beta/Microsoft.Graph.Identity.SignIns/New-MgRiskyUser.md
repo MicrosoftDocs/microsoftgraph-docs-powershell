@@ -49,7 +49,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 riskyUser
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRiskyUser
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 
 ### -History
 The activity related to user risk level change
-To construct, see NOTES section for HISTORY properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for HISTORY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRiskyUserHistoryItem[]
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 ### -RiskLastUpdatedDateTime
 The date and time that the risky user was last updated.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 would look like this: 2014-01-01T00:00:00Z
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
 Type: DateTime
@@ -274,7 +274,7 @@ BODYPARAMETER <IMicrosoftGraphRiskyUser>: riskyUser
     - `[IsDeleted <Boolean?>]`: Indicates whether the user is deleted. Possible values are: true, false.
     - `[IsProcessing <Boolean?>]`: Indicates whether a user's risky state is being processed by the backend.
     - `[RiskDetail <String>]`: riskDetail
-    - `[RiskLastUpdatedDateTime <DateTime?>]`: The date and time that the risky user was last updated.  The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: 2014-01-01T00:00:00Z
+    - `[RiskLastUpdatedDateTime <DateTime?>]`: The date and time that the risky user was last updated.  The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[RiskLevel <String>]`: riskLevel
     - `[RiskState <String>]`: riskState
     - `[UserDisplayName <String>]`: Risky user display name.
@@ -283,14 +283,14 @@ BODYPARAMETER <IMicrosoftGraphRiskyUser>: riskyUser
     - `[Activity <IMicrosoftGraphRiskUserActivity>]`: riskUserActivity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Detail <String>]`: riskDetail
-      - `[EventTypes <String[]>]`: List of risk event types. Deprecated. Use riskEventType instead.
+      - `[EventTypes <String[]>]`: 
       - `[RiskEventTypes <String[]>]`: The type of risk event detected.
     - `[InitiatedBy <String>]`: The id of actor that does the operation.
     - `[UserId <String>]`: The id of the user.
   - `[IsDeleted <Boolean?>]`: Indicates whether the user is deleted. Possible values are: true, false.
   - `[IsProcessing <Boolean?>]`: Indicates whether a user's risky state is being processed by the backend.
   - `[RiskDetail <String>]`: riskDetail
-  - `[RiskLastUpdatedDateTime <DateTime?>]`: The date and time that the risky user was last updated.  The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: 2014-01-01T00:00:00Z
+  - `[RiskLastUpdatedDateTime <DateTime?>]`: The date and time that the risky user was last updated.  The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[RiskLevel <String>]`: riskLevel
   - `[RiskState <String>]`: riskState
   - `[UserDisplayName <String>]`: Risky user display name.
@@ -301,7 +301,7 @@ HISTORY <IMicrosoftGraphRiskyUserHistoryItem[]>: The activity related to user ri
   - `[IsDeleted <Boolean?>]`: Indicates whether the user is deleted. Possible values are: true, false.
   - `[IsProcessing <Boolean?>]`: Indicates whether a user's risky state is being processed by the backend.
   - `[RiskDetail <String>]`: riskDetail
-  - `[RiskLastUpdatedDateTime <DateTime?>]`: The date and time that the risky user was last updated.  The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: 2014-01-01T00:00:00Z
+  - `[RiskLastUpdatedDateTime <DateTime?>]`: The date and time that the risky user was last updated.  The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[RiskLevel <String>]`: riskLevel
   - `[RiskState <String>]`: riskState
   - `[UserDisplayName <String>]`: Risky user display name.
@@ -310,7 +310,7 @@ HISTORY <IMicrosoftGraphRiskyUserHistoryItem[]>: The activity related to user ri
   - `[Activity <IMicrosoftGraphRiskUserActivity>]`: riskUserActivity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Detail <String>]`: riskDetail
-    - `[EventTypes <String[]>]`: List of risk event types. Deprecated. Use riskEventType instead.
+    - `[EventTypes <String[]>]`: 
     - `[RiskEventTypes <String[]>]`: The type of risk event detected.
   - `[InitiatedBy <String>]`: The id of actor that does the operation.
   - `[UserId <String>]`: The id of the user.

@@ -81,7 +81,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Entity which represents a connection to Mobile threat defense partner.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMobileThreatDefenseConnector
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 ```
 
 ### -PartnerState
-mobileThreatPartnerTenantState
+Partner state of this tenant.
 
 ```yaml
 Type: String
@@ -257,7 +257,7 @@ BODYPARAMETER <IMicrosoftGraphMobileThreatDefenseConnector>: Entity which repres
   - `[IosDeviceBlockedOnMissingPartnerData <Boolean?>]`: For IOS, set whether Intune must receive data from the data sync partner prior to marking a device compliant
   - `[IosEnabled <Boolean?>]`: For IOS, get or set whether data from the data sync partner should be used during compliance evaluations
   - `[LastHeartbeatDateTime <DateTime?>]`: DateTime of last Heartbeat recieved from the Data Sync Partner
-  - `[PartnerState <String>]`: mobileThreatPartnerTenantState
+  - `[PartnerState <String>]`: Partner state of this tenant.
   - `[PartnerUnresponsivenessThresholdInDays <Int32?>]`: Get or Set days the per tenant tolerance to unresponsiveness for this partner integration
   - `[PartnerUnsupportedOSVersionBlocked <Boolean?>]`: Get or set whether to block devices on the enabled platforms that do not meet the minimum version requirements of the Data Sync Partner
 

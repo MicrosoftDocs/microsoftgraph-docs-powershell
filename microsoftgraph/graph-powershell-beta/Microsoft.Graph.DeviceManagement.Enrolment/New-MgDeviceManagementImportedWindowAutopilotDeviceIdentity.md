@@ -67,7 +67,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Imported windows autopilot devices.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 
 ### -State
 importedWindowsAutopilotDeviceIdentityState
-To construct, see NOTES section for STATE properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for STATE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphImportedWindowsAutopilotDeviceIdentityState

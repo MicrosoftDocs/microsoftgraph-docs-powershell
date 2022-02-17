@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgPolicyFeatureRolloutPolicy
 
 ## SYNOPSIS
-Create new navigation property to featureRolloutPolicies for policies
+The feature rollout policy associated with a directory object.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ New-MgPolicyFeatureRolloutPolicy -BodyParameter <IMicrosoftGraphFeatureRolloutPo
 ```
 
 ## DESCRIPTION
-Create new navigation property to featureRolloutPolicies for policies
+The feature rollout policy associated with a directory object.
 
 ## EXAMPLES
 
@@ -51,7 +51,7 @@ Accept wildcard characters: False
 ### -AppliesTo
 Nullable.
 Specifies a list of directoryObjects that feature is enabled for.
-To construct, see NOTES section for APPLIESTO properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for APPLIESTO properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDirectoryObject[]
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 featureRolloutPolicy
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphFeatureRolloutPolicy
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -Feature
-stagedFeatureName
+.
 
 ```yaml
 Type: String
@@ -232,7 +232,7 @@ BODYPARAMETER <IMicrosoftGraphFeatureRolloutPolicy>: featureRolloutPolicy
     - `[DeletedDateTime <DateTime?>]`: 
   - `[Description <String>]`: A description for this feature rollout policy.
   - `[DisplayName <String>]`: The display name for this  feature rollout policy.
-  - `[Feature <String>]`: stagedFeatureName
+  - `[Feature <String>]`: 
   - `[IsAppliedToOrganization <Boolean?>]`: Indicates whether this feature rollout policy should be applied to the entire organization.
   - `[IsEnabled <Boolean?>]`: Indicates whether the feature rollout is enabled.
 

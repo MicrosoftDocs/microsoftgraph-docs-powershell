@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgPolicyRoleManagementPolicyAssignment
 
 ## SYNOPSIS
-Create new navigation property to roleManagementPolicyAssignments for policies
+Represents the role management policy assignments.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ New-MgPolicyRoleManagementPolicyAssignment
 ```
 
 ## DESCRIPTION
-Create new navigation property to roleManagementPolicyAssignments for policies
+Represents the role management policy assignments.
 
 ## EXAMPLES
 
@@ -50,7 +50,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 unifiedRoleManagementPolicyAssignment
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUnifiedRoleManagementPolicyAssignment
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 
 ### -Policy
 unifiedRoleManagementPolicy
-To construct, see NOTES section for POLICY properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for POLICY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUnifiedRoleManagementPolicy
@@ -220,11 +220,11 @@ BODYPARAMETER <IMicrosoftGraphUnifiedRoleManagementPolicyAssignment>: unifiedRol
       - `[Id <String>]`: Read-only.
       - `[Target <IMicrosoftGraphUnifiedRoleManagementPolicyRuleTarget>]`: unifiedRoleManagementPolicyRuleTarget
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Caller <String>]`: 
-        - `[EnforcedSettings <String[]>]`: 
-        - `[InheritableSettings <String[]>]`: 
-        - `[Level <String>]`: 
-        - `[Operations <String[]>]`: 
+        - `[Caller <String>]`: The caller for the policy rule target. Allowed values are: None, Admin, EndUser.
+        - `[EnforcedSettings <String[]>]`: The list of settings which are enforced and cannot be overridden by child scopes. Use All for all settings.
+        - `[InheritableSettings <String[]>]`: The list of settings which can be inherited by child scopes. Use All for all settings.
+        - `[Level <String>]`: The level for the policy rule target. Allowed values are: Eligibility, Assignment.
+        - `[Operations <String[]>]`: The operations for policy rule target. Allowed values are: All, Activate, Deactivate, Assign, Update, Remove, Extend, Renew.
         - `[TargetObjects <IMicrosoftGraphDirectoryObject[]>]`: 
           - `[Id <String>]`: Read-only.
           - `[DeletedDateTime <DateTime?>]`: 
@@ -251,11 +251,11 @@ POLICY <IMicrosoftGraphUnifiedRoleManagementPolicy>: unifiedRoleManagementPolicy
     - `[Id <String>]`: Read-only.
     - `[Target <IMicrosoftGraphUnifiedRoleManagementPolicyRuleTarget>]`: unifiedRoleManagementPolicyRuleTarget
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Caller <String>]`: 
-      - `[EnforcedSettings <String[]>]`: 
-      - `[InheritableSettings <String[]>]`: 
-      - `[Level <String>]`: 
-      - `[Operations <String[]>]`: 
+      - `[Caller <String>]`: The caller for the policy rule target. Allowed values are: None, Admin, EndUser.
+      - `[EnforcedSettings <String[]>]`: The list of settings which are enforced and cannot be overridden by child scopes. Use All for all settings.
+      - `[InheritableSettings <String[]>]`: The list of settings which can be inherited by child scopes. Use All for all settings.
+      - `[Level <String>]`: The level for the policy rule target. Allowed values are: Eligibility, Assignment.
+      - `[Operations <String[]>]`: The operations for policy rule target. Allowed values are: All, Activate, Deactivate, Assign, Update, Remove, Extend, Renew.
       - `[TargetObjects <IMicrosoftGraphDirectoryObject[]>]`: 
         - `[Id <String>]`: Read-only.
         - `[DeletedDateTime <DateTime?>]`: 

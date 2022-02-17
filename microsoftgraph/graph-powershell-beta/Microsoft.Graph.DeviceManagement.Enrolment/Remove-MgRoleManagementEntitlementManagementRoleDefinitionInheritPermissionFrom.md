@@ -9,7 +9,8 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Read-only collection of role definitions that the given role definition inherits from.
-Only Azure AD built-in roles support this attribute.
+Only Azure AD built-in roles (isBuiltIn is true) support this attribute.
+Supports $expand.
 
 ## SYNTAX
 
@@ -29,7 +30,8 @@ Remove-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom
 
 ## DESCRIPTION
 Read-only collection of role definitions that the given role definition inherits from.
-Only Azure AD built-in roles support this attribute.
+Only Azure AD built-in roles (isBuiltIn is true) support this attribute.
+Supports $expand.
 
 ## EXAMPLES
 
@@ -52,7 +54,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementEnrolmentIdentity
@@ -199,6 +201,5 @@ INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[WindowsAutopilotDeviceIdentityId <String>]`: key: id of windowsAutopilotDeviceIdentity
   - `[WindowsFeatureUpdateProfileAssignmentId <String>]`: key: id of windowsFeatureUpdateProfileAssignment
   - `[WindowsFeatureUpdateProfileId <String>]`: key: id of windowsFeatureUpdateProfile
-  - `[WindowsUpdateStateId <String>]`: key: id of windowsUpdateState
 
 ## RELATED LINKS

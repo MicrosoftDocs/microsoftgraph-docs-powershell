@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementmobilethreatdefenseconnector
@@ -77,7 +77,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Entity which represents a connection to Mobile threat defense partner.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMobileThreatDefenseConnector1
@@ -261,13 +261,13 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -PartnerState
-mobileThreatPartnerTenantState
+Partner state of this tenant.
 
 ```yaml
 Type: String
@@ -394,6 +394,7 @@ BODYPARAMETER <IMicrosoftGraphMobileThreatDefenseConnector1>: Entity which repre
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
   - `[AllowPartnerToCollectIosApplicationMetadata <Boolean?>]`: For IOS devices, allows the admin to configure whether the data sync partner may also collect metadata about installed applications from Intune
+  - `[AllowPartnerToCollectIosPersonalApplicationMetadata <Boolean?>]`: For IOS devices, allows the admin to configure whether the data sync partner may also collect metadata about personally installed applications from Intune
   - `[AndroidDeviceBlockedOnMissingPartnerData <Boolean?>]`: For Android, set whether Intune must receive data from the data sync partner prior to marking a device compliant
   - `[AndroidEnabled <Boolean?>]`: For Android, set whether data from the data sync partner should be used during compliance evaluations
   - `[AndroidMobileApplicationManagementEnabled <Boolean?>]`: For Android, set whether data from the data sync partner should be used during Mobile Application Management (MAM) evaluations. Only one partner per platform may be enabled for Mobile Application Management (MAM) evaluation.
@@ -403,7 +404,8 @@ BODYPARAMETER <IMicrosoftGraphMobileThreatDefenseConnector1>: Entity which repre
   - `[LastHeartbeatDateTime <DateTime?>]`: DateTime of last Heartbeat recieved from the Data Sync Partner
   - `[MacDeviceBlockedOnMissingPartnerData <Boolean?>]`: For Mac, get or set whether Intune must receive data from the data sync partner prior to marking a device compliant
   - `[MacEnabled <Boolean?>]`: For Mac, get or set whether data from the data sync partner should be used during compliance evaluations
-  - `[PartnerState <String>]`: mobileThreatPartnerTenantState
+  - `[MicrosoftDefenderForEndpointAttachEnabled <Boolean?>]`: When TRUE, configuration profile management via Microsoft Defender for Endpoint is enabled. When FALSE, configuration profile management via Microsoft Defender for Endpoint is disabled.
+  - `[PartnerState <String>]`: Partner state of this tenant.
   - `[PartnerUnresponsivenessThresholdInDays <Int32?>]`: Get or Set days the per tenant tolerance to unresponsiveness for this partner integration
   - `[PartnerUnsupportedOSVersionBlocked <Boolean?>]`: Get or set whether to block devices on the enabled platforms that do not meet the minimum version requirements of the Data Sync Partner
   - `[WindowsDeviceBlockedOnMissingPartnerData <Boolean?>]`: For Windows, set whether Intune must receive data from the data sync partner prior to marking a device compliant

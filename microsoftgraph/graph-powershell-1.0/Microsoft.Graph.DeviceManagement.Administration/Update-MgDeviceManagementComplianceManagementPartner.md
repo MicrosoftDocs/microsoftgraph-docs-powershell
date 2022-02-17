@@ -74,7 +74,7 @@ Accept wildcard characters: False
 
 ### -AndroidEnrollmentAssignments
 User groups which enroll Android devices through partner.
-To construct, see NOTES section for ANDROIDENROLLMENTASSIGNMENTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ANDROIDENROLLMENTASSIGNMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphComplianceManagementPartnerAssignment[]
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Compliance management partner for all platforms
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphComplianceManagementPartner
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementAdministrationIdentity
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 
 ### -IosEnrollmentAssignments
 User groups which enroll ios devices through partner.
-To construct, see NOTES section for IOSENROLLMENTASSIGNMENTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for IOSENROLLMENTASSIGNMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphComplianceManagementPartnerAssignment[]
@@ -228,7 +228,7 @@ Accept wildcard characters: False
 
 ### -MacOSEnrollmentAssignments
 User groups which enroll Mac devices through partner.
-To construct, see NOTES section for MACOSENROLLMENTASSIGNMENTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for MACOSENROLLMENTASSIGNMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphComplianceManagementPartnerAssignment[]
@@ -258,7 +258,7 @@ Accept wildcard characters: False
 ```
 
 ### -PartnerState
-deviceManagementPartnerTenantState
+Partner state of this tenant.
 
 ```yaml
 Type: String
@@ -354,17 +354,21 @@ BODYPARAMETER <IMicrosoftGraphComplianceManagementPartner>: Compliance managemen
   - `[LastHeartbeatDateTime <DateTime?>]`: Timestamp of last heartbeat after admin onboarded to the compliance management partner
   - `[MacOSEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment[]>]`: User groups which enroll Mac devices through partner.
   - `[MacOSOnboarded <Boolean?>]`: Partner onboarded for Mac devices.
-  - `[PartnerState <String>]`: deviceManagementPartnerTenantState
+  - `[PartnerState <String>]`: Partner state of this tenant.
 
 INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[AuditEventId <String>]`: key: id of auditEvent
   - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
   - `[CloudPcDeviceImageId <String>]`: key: id of cloudPcDeviceImage
+  - `[CloudPcGalleryImageId <String>]`: key: id of cloudPcGalleryImage
   - `[CloudPcId <String>]`: key: id of cloudPC
   - `[CloudPcOnPremisesConnectionId <String>]`: key: id of cloudPcOnPremisesConnection
   - `[CloudPcProvisioningPolicyAssignmentId <String>]`: key: id of cloudPcProvisioningPolicyAssignment
   - `[CloudPcProvisioningPolicyId <String>]`: key: id of cloudPcProvisioningPolicy
+  - `[CloudPcServicePlanId <String>]`: key: id of cloudPcServicePlan
+  - `[CloudPcSnapshotId <String>]`: key: id of cloudPcSnapshot
+  - `[CloudPcSupportedRegionId <String>]`: key: id of cloudPcSupportedRegion
   - `[CloudPcUserSettingAssignmentId <String>]`: key: id of cloudPcUserSettingAssignment
   - `[CloudPcUserSettingId <String>]`: key: id of cloudPcUserSetting
   - `[ComanagementEligibleDeviceId <String>]`: key: id of comanagementEligibleDevice

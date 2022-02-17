@@ -47,7 +47,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 printOperation
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPrintOperation
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 
 ### -Status
 printOperationStatus
-To construct, see NOTES section for STATUS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for STATUS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPrintOperationStatus

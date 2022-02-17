@@ -30,13 +30,6 @@ The recovery keys associated with the bitlocker entity.
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -72,6 +65,7 @@ Accept wildcard characters: False
 
 ### -CreatedDateTime
 The date and time when the key was originally backed up to Azure Active Directory.
+Not nullable.
 
 ```yaml
 Type: DateTime
@@ -86,7 +80,8 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceId
-ID of the device the BitLocker key is originally backed up from.
+Identifier of the device the BitLocker key is originally backed up from.
+Supports $filter (eq).
 
 ```yaml
 Type: String
@@ -117,6 +112,8 @@ Accept wildcard characters: False
 
 ### -Key
 The BitLocker recovery key.
+Returned only on $select.
+Not nullable.
 
 ```yaml
 Type: String
@@ -186,9 +183,20 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBitlockerRecoveryKey
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+BODYPARAMETER <IMicrosoftGraphBitlockerRecoveryKey>: bitlockerRecoveryKey
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: Read-only.
+  - `[CreatedDateTime <DateTime?>]`: The date and time when the key was originally backed up to Azure Active Directory. Not nullable.
+  - `[DeviceId <String>]`: Identifier of the device the BitLocker key is originally backed up from. Supports $filter (eq).
+  - `[Key <String>]`: The BitLocker recovery key. Returned only on $select. Not nullable.
+  - `[VolumeType <String>]`: volumeType
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mginformationprotectionbitlockerrecoverykey](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mginformationprotectionbitlockerrecoverykey)
-

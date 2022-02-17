@@ -23,7 +23,7 @@ Get-MgDeviceManagementReportCompliancePolicyNonComplianceReport -OutFile <String
 ### Get1
 ```
 Get-MgDeviceManagementReportCompliancePolicyNonComplianceReport -OutFile <String>
- -BodyParameter <IPaths1Pvn7TwDevicemanagementReportsMicrosoftGraphGetcompliancepolicynoncompliancereportPostRequestbodyContentApplicationJsonSchema>
+ -BodyParameter <IPaths1Pvn7TwDevicemanagementReportsMicrosoftGraphGetcompliancepolicynoncompliancereportPostRequestbodyContentApplicationJsonSchema1>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -31,13 +31,6 @@ Get-MgDeviceManagementReportCompliancePolicyNonComplianceReport -OutFile <String
 Invoke action getCompliancePolicyNonComplianceReport
 
 ## EXAMPLES
-
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -61,7 +54,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Pvn7TwDevicemanagementReportsMicrosoftGraphGetcompliancepolicynoncompliancereportPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1Pvn7TwDevicemanagementReportsMicrosoftGraphGetcompliancepolicynoncompliancereportPostRequestbodyContentApplicationJsonSchema1
 Parameter Sets: Get1
 Aliases:
 
@@ -142,7 +135,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -217,7 +210,7 @@ Aliases: Limit
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -263,7 +256,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -273,14 +266,29 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1Pvn7TwDevicemanagementReportsMicrosoftGraphGetcompliancepolicynoncompliancereportPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IPaths1Pvn7TwDevicemanagementReportsMicrosoftGraphGetcompliancepolicynoncompliancereportPostRequestbodyContentApplicationJsonSchema1
 ## OUTPUTS
 
 ### System.Boolean
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+BODYPARAMETER <IPaths1Pvn7TwDevicemanagementReportsMicrosoftGraphGetcompliancepolicynoncompliancereportPostRequestbodyContentApplicationJsonSchema1>: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Filter <String>]`: 
+  - `[GroupBy <String[]>]`: 
+  - `[Name <String>]`: 
+  - `[OrderBy <String[]>]`: 
+  - `[Search <String>]`: 
+  - `[Select <String[]>]`: 
+  - `[SessionId <String>]`: 
+  - `[Skip <Int32?>]`: 
+  - `[Top <Int32?>]`: 
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportcompliancepolicynoncompliancereport](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportcompliancepolicynoncompliancereport)
-

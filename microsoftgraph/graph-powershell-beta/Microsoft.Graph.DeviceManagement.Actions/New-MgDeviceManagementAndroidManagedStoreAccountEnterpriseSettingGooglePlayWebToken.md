@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/new-mgdevicemanagementandroidmanagedstoreaccountenterprisesettinggoogleplaywebtoken
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSettingGooglePlayWebToken
 
 ## SYNOPSIS
-Invoke action createGooglePlayWebToken
+Generates a web token that is used in an embeddable component.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ New-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSettingGooglePlayWebTo
 ```
 
 ## DESCRIPTION
-Invoke action createGooglePlayWebToken
+Generates a web token that is used in an embeddable component.
 
 ## EXAMPLES
 
@@ -49,7 +49,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsIaia9DDevicemanagementAndroidmanagedstoreaccountenterprisesettingsMicrosoftGraphCreategoogleplaywebtokenPostRequestbodyContentApplicationJsonSchema

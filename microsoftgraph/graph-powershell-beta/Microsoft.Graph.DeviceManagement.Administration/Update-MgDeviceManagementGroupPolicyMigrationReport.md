@@ -76,7 +76,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The Group Policy migration report.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphGroupPolicyMigrationReport
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 
 ### -GroupPolicySettingMappings
 A list of group policy settings to MDM/Intune mappings.
-To construct, see NOTES section for GROUPPOLICYSETTINGMAPPINGS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for GROUPPOLICYSETTINGMAPPINGS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphGroupPolicySettingMapping[]
@@ -213,7 +213,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementAdministrationIdentity
@@ -243,7 +243,7 @@ Accept wildcard characters: False
 ```
 
 ### -MigrationReadiness
-groupPolicyMigrationReadiness
+Indicates if the Group Policy Object file is covered and ready for Intune migration.
 
 ```yaml
 Type: String
@@ -349,7 +349,7 @@ Accept wildcard characters: False
 
 ### -UnsupportedGroupPolicyExtensions
 A list of unsupported group policy extensions inside the Group Policy Object.
-To construct, see NOTES section for UNSUPPORTEDGROUPPOLICYEXTENSIONS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for UNSUPPORTEDGROUPPOLICYEXTENSIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUnsupportedGroupPolicyExtension[]
@@ -431,20 +431,20 @@ BODYPARAMETER <IMicrosoftGraphGroupPolicyMigrationReport>: The Group Policy migr
     - `[MdmCspName <String>]`: The CSP name this group policy setting maps to.
     - `[MdmMinimumOSVersion <Int32?>]`: The minimum OS version this mdm setting supports.
     - `[MdmSettingUri <String>]`: The MDM CSP URI this group policy setting maps to.
-    - `[MdmSupportedState <String>]`: mdmSupportedState
+    - `[MdmSupportedState <String>]`: Mdm Support Status of the setting.
     - `[ParentId <String>]`: Parent Id of the group policy setting.
     - `[SettingCategory <String>]`: The category the group policy setting is in.
     - `[SettingDisplayName <String>]`: The display name of this group policy setting.
     - `[SettingDisplayValue <String>]`: The display value of this group policy setting.
     - `[SettingDisplayValueType <String>]`: The display value type of this group policy setting.
     - `[SettingName <String>]`: The name of this group policy setting.
-    - `[SettingScope <String>]`: groupPolicySettingScope
-    - `[SettingType <String>]`: groupPolicySettingType
+    - `[SettingScope <String>]`: Scope of the group policy setting.
+    - `[SettingType <String>]`: Setting type of the group policy.
     - `[SettingValue <String>]`: The value of this group policy setting.
     - `[SettingValueDisplayUnits <String>]`: The display units of this group policy setting value
     - `[SettingValueType <String>]`: The value type of this group policy setting.
   - `[LastModifiedDateTime <DateTime?>]`: The date and time at which the GroupPolicyMigrationReport was last modified.
-  - `[MigrationReadiness <String>]`: groupPolicyMigrationReadiness
+  - `[MigrationReadiness <String>]`: Indicates if the Group Policy Object file is covered and ready for Intune migration.
   - `[OuDistinguishedName <String>]`: The distinguished name of the OU.
   - `[SupportedSettingsCount <Int32?>]`: The number of Group Policy Settings supported by Intune.
   - `[SupportedSettingsPercent <Int32?>]`: The Percentage of Group Policy Settings supported by Intune.
@@ -455,7 +455,7 @@ BODYPARAMETER <IMicrosoftGraphGroupPolicyMigrationReport>: The Group Policy migr
     - `[ExtensionType <String>]`: ExtensionType of the unsupported extension.
     - `[NamespaceUrl <String>]`: Namespace Url of the unsupported extension.
     - `[NodeName <String>]`: Node name of the unsupported extension.
-    - `[SettingScope <String>]`: groupPolicySettingScope
+    - `[SettingScope <String>]`: Scope of the group policy setting.
 
 GROUPPOLICYSETTINGMAPPINGS <IMicrosoftGraphGroupPolicySettingMapping[]>: A list of group policy settings to MDM/Intune mappings.
   - `[Id <String>]`: Read-only.
@@ -467,15 +467,15 @@ GROUPPOLICYSETTINGMAPPINGS <IMicrosoftGraphGroupPolicySettingMapping[]>: A list 
   - `[MdmCspName <String>]`: The CSP name this group policy setting maps to.
   - `[MdmMinimumOSVersion <Int32?>]`: The minimum OS version this mdm setting supports.
   - `[MdmSettingUri <String>]`: The MDM CSP URI this group policy setting maps to.
-  - `[MdmSupportedState <String>]`: mdmSupportedState
+  - `[MdmSupportedState <String>]`: Mdm Support Status of the setting.
   - `[ParentId <String>]`: Parent Id of the group policy setting.
   - `[SettingCategory <String>]`: The category the group policy setting is in.
   - `[SettingDisplayName <String>]`: The display name of this group policy setting.
   - `[SettingDisplayValue <String>]`: The display value of this group policy setting.
   - `[SettingDisplayValueType <String>]`: The display value type of this group policy setting.
   - `[SettingName <String>]`: The name of this group policy setting.
-  - `[SettingScope <String>]`: groupPolicySettingScope
-  - `[SettingType <String>]`: groupPolicySettingType
+  - `[SettingScope <String>]`: Scope of the group policy setting.
+  - `[SettingType <String>]`: Setting type of the group policy.
   - `[SettingValue <String>]`: The value of this group policy setting.
   - `[SettingValueDisplayUnits <String>]`: The display units of this group policy setting value
   - `[SettingValueType <String>]`: The value type of this group policy setting.
@@ -485,10 +485,14 @@ INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
   - `[CloudPcDeviceImageId <String>]`: key: id of cloudPcDeviceImage
+  - `[CloudPcGalleryImageId <String>]`: key: id of cloudPcGalleryImage
   - `[CloudPcId <String>]`: key: id of cloudPC
   - `[CloudPcOnPremisesConnectionId <String>]`: key: id of cloudPcOnPremisesConnection
   - `[CloudPcProvisioningPolicyAssignmentId <String>]`: key: id of cloudPcProvisioningPolicyAssignment
   - `[CloudPcProvisioningPolicyId <String>]`: key: id of cloudPcProvisioningPolicy
+  - `[CloudPcServicePlanId <String>]`: key: id of cloudPcServicePlan
+  - `[CloudPcSnapshotId <String>]`: key: id of cloudPcSnapshot
+  - `[CloudPcSupportedRegionId <String>]`: key: id of cloudPcSupportedRegion
   - `[CloudPcUserSettingAssignmentId <String>]`: key: id of cloudPcUserSettingAssignment
   - `[CloudPcUserSettingId <String>]`: key: id of cloudPcUserSetting
   - `[ComanagementEligibleDeviceId <String>]`: key: id of comanagementEligibleDevice
@@ -533,6 +537,8 @@ UNSUPPORTEDGROUPPOLICYEXTENSIONS <IMicrosoftGraphUnsupportedGroupPolicyExtension
   - `[ExtensionType <String>]`: ExtensionType of the unsupported extension.
   - `[NamespaceUrl <String>]`: Namespace Url of the unsupported extension.
   - `[NodeName <String>]`: Node name of the unsupported extension.
-  - `[SettingScope <String>]`: groupPolicySettingScope
+  - `[SettingScope <String>]`: Scope of the group policy setting.
+
+## RELATED LINKS
 
 ## RELATED LINKS

@@ -52,7 +52,7 @@ Accept wildcard characters: False
 
 ### -Assignments
 The list of assignments for this profile.
-To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAppleEnrollmentProfileAssignment[]
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 
 ### -AvailableEnrollmentTypeOptions
 List of available enrollment type options
-To construct, see NOTES section for AVAILABLEENROLLMENTTYPEOPTIONS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for AVAILABLEENROLLMENTTYPEOPTIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAppleOwnerTypeEnrollmentType[]
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ### -BodyParameter
 The enrollmentProfile resource represents a collection of configurations which must be provided pre-enrollment to enable enrolling certain devices whose identities have been pre-staged.
 Pre-staged device identities are assigned to this type of profile to apply the profile's configurations at enrollment of the corresponding device.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAppleUserInitiatedEnrollmentProfile
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -Platform
-devicePlatformType
+Supported platform types.
 
 ```yaml
 Type: String
@@ -273,11 +273,11 @@ ASSIGNMENTS <IMicrosoftGraphAppleEnrollmentProfileAssignment[]>: The list of ass
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-    - `[DeviceAndAppManagementAssignmentFilterType <String>]`: deviceAndAppManagementAssignmentFilterType
+    - `[DeviceAndAppManagementAssignmentFilterType <String>]`: Represents type of the assignment filter.
 
 AVAILABLEENROLLMENTTYPEOPTIONS <IMicrosoftGraphAppleOwnerTypeEnrollmentType[]>: List of available enrollment type options
   - `[EnrollmentType <String>]`: appleUserInitiatedEnrollmentType
-  - `[OwnerType <String>]`: managedDeviceOwnerType
+  - `[OwnerType <String>]`: Owner type of device.
 
 BODYPARAMETER <IMicrosoftGraphAppleUserInitiatedEnrollmentProfile>: The enrollmentProfile resource represents a collection of configurations which must be provided pre-enrollment to enable enrolling certain devices whose identities have been pre-staged. Pre-staged device identities are assigned to this type of profile to apply the profile's configurations at enrollment of the corresponding device.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -287,16 +287,16 @@ BODYPARAMETER <IMicrosoftGraphAppleUserInitiatedEnrollmentProfile>: The enrollme
     - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-      - `[DeviceAndAppManagementAssignmentFilterType <String>]`: deviceAndAppManagementAssignmentFilterType
+      - `[DeviceAndAppManagementAssignmentFilterType <String>]`: Represents type of the assignment filter.
   - `[AvailableEnrollmentTypeOptions <IMicrosoftGraphAppleOwnerTypeEnrollmentType[]>]`: List of available enrollment type options
     - `[EnrollmentType <String>]`: appleUserInitiatedEnrollmentType
-    - `[OwnerType <String>]`: managedDeviceOwnerType
+    - `[OwnerType <String>]`: Owner type of device.
   - `[CreatedDateTime <DateTime?>]`: Profile creation time
   - `[DefaultEnrollmentType <String>]`: appleUserInitiatedEnrollmentType
   - `[Description <String>]`: Description of the profile
   - `[DisplayName <String>]`: Name of the profile
   - `[LastModifiedDateTime <DateTime?>]`: Profile last modified time
-  - `[Platform <String>]`: devicePlatformType
+  - `[Platform <String>]`: Supported platform types.
   - `[Priority <Int32?>]`: Priority, 0 is highest
 
 ## RELATED LINKS

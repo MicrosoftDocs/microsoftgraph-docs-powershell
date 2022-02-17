@@ -31,13 +31,6 @@ Create new navigation property to impactedResources for directory
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
 ## PARAMETERS
 
 ### -AddedDateTime
@@ -187,7 +180,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -278,9 +271,32 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRecommendationResource
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+ADDITIONALDETAILS <IMicrosoftGraphKeyValue[]>: .
+  - `[Key <String>]`: Key for the key-value pair.
+  - `[Value <String>]`: Value for the key-value pair.
+
+BODYPARAMETER <IMicrosoftGraphRecommendationResource>: recommendationResource
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: Read-only.
+  - `[AddedDateTime <DateTime?>]`: 
+  - `[AdditionalDetails <IMicrosoftGraphKeyValue[]>]`: 
+    - `[Key <String>]`: Key for the key-value pair.
+    - `[Value <String>]`: Value for the key-value pair.
+  - `[ApiUrl <String>]`: 
+  - `[DisplayName <String>]`: 
+  - `[Owner <String>]`: 
+  - `[PortalUrl <String>]`: 
+  - `[Rank <Int32?>]`: 
+  - `[RecommendationId <String>]`: 
+  - `[ResourceType <String>]`: 
+  - `[Status <String>]`: recommendationStatus
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryimpactedresource](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryimpactedresource)
-

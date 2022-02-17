@@ -50,7 +50,7 @@ Accept wildcard characters: False
 
 ### -Assignments
 The list of group assignments for the device configuration profile
-To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEnrollmentConfigurationAssignment[]
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The Base Class of Device Enrollment Configuration
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceEnrollmentConfiguration

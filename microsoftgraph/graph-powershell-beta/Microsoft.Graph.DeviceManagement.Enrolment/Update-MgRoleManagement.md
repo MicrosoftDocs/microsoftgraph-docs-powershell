@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/update-mgrolemanagement
@@ -50,7 +50,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 roleManagement
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRoleManagement1
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 
 ### -CloudPc
 rbacApplicationMultiple
-To construct, see NOTES section for CLOUDPC properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for CLOUDPC properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRbacApplicationMultiple
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 
 ### -DeviceManagement
 rbacApplicationMultiple
-To construct, see NOTES section for DEVICEMANAGEMENT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEVICEMANAGEMENT properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRbacApplicationMultiple
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 
 ### -Directory
 rbacApplication
-To construct, see NOTES section for DIRECTORY properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DIRECTORY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRbacApplication
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 
 ### -EntitlementManagement
 rbacApplication
-To construct, see NOTES section for ENTITLEMENTMANAGEMENT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ENTITLEMENTMANAGEMENT properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRbacApplication
@@ -217,8 +217,8 @@ BODYPARAMETER <IMicrosoftGraphRoleManagement1>: roleManagement
       - `[AppScopeIds <String[]>]`: Ids of the app specific scopes when the assignment scopes are app specific. The scopes of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. App scopes are scopes that are defined and understood by this application only.
       - `[AppScopes <IMicrosoftGraphAppScope[]>]`: Read-only collection with details of the app specific scopes when the assignment scopes are app specific. Containment entity. Read-only.
         - `[Id <String>]`: Read-only.
-        - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope. Provided for display purposes since appScopeId is often an immutable, non-human-readable id. This property is read only.
-        - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope. Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope. This property is read only.
+        - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope. Provided for display purposes since appScopeId is often an immutable, non-human-readable id. Read-only.
+        - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope. Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope. Read-only.
       - `[Condition <String>]`: 
       - `[Description <String>]`: Description of the role assignment.
       - `[DirectoryScopeIds <String[]>]`: Ids of the directory objects representing the scopes of the assignment. The scopes of an assignment determine the set of resources for which the principals have been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.
@@ -232,17 +232,17 @@ BODYPARAMETER <IMicrosoftGraphRoleManagement1>: roleManagement
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: Read-only.
         - `[Description <String>]`: The description for the unifiedRoleDefinition. Read-only when isBuiltIn is true.
-        - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition. Read-only when isBuiltIn is true. Required.  Supports $filter (eq and startsWith operators only).
-        - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition[]>]`: Read-only collection of role definitions that the given role definition inherits from. Only Azure AD built-in roles support this attribute.
-        - `[IsBuiltIn <Boolean?>]`: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom. Read-only.  Supports $filter (eq operator only).
-        - `[IsEnabled <Boolean?>]`: Flag indicating if the role is enabled for assignment. If false the role is not available for assignment. Read-only when isBuiltIn is true.
-        - `[ResourceScopes <String[]>]`: List of scopes permissions granted by the role definition apply to. Currently only / is supported. Read-only when isBuiltIn is true. DO NOT USE. This is going to be deprecated soon. Attach scope to role assignment
+        - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition. Read-only when isBuiltIn is true. Required.  Supports $filter (eq, in).
+        - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition[]>]`: Read-only collection of role definitions that the given role definition inherits from. Only Azure AD built-in roles (isBuiltIn is true) support this attribute. Supports $expand.
+        - `[IsBuiltIn <Boolean?>]`: Flag indicating whether the role definition is part of the default set included in Azure Active Directory (Azure AD) or a custom definition. Read-only. Supports $filter (eq, in).
+        - `[IsEnabled <Boolean?>]`: Flag indicating whether the role is enabled for assignment. If false the role is not available for assignment. Read-only when isBuiltIn is true.
+        - `[ResourceScopes <String[]>]`: List of the scopes or permissions the role definition applies to. Currently only / is supported. Read-only when isBuiltIn is true. DO NOT USE. This will be deprecated soon. Attach scope to role assignment.
         - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]`: List of permissions included in the role. Read-only when isBuiltIn is true. Required.
-          - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource.
+          - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource. Required.
           - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective.
-          - `[ExcludedResourceActions <String[]>]`: 
-        - `[TemplateId <String>]`: Custom template identifier that can be set when isBuiltIn is false. This identifier is typically used if one needs an identifier to be the same across different directories. Read-only when isBuiltIn is true.
-        - `[Version <String>]`: Indicates version of the unifiedRoleDefinition. Read-only when isBuiltIn is true.
+          - `[ExcludedResourceActions <String[]>]`: Set of tasks that may not be performed on a resource. Not yet supported.
+        - `[TemplateId <String>]`: Custom template identifier that can be set when isBuiltIn is false but is read-only when isBuiltIn is true. This identifier is typically used if one needs an identifier to be the same across different directories.
+        - `[Version <String>]`: Indicates version of the role definition. Read-only when isBuiltIn is true.
       - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for.
     - `[RoleDefinitions <IMicrosoftGraphUnifiedRoleDefinition[]>]`: 
   - `[DeviceManagement <IMicrosoftGraphRbacApplicationMultiple>]`: rbacApplicationMultiple
@@ -266,29 +266,29 @@ BODYPARAMETER <IMicrosoftGraphRoleManagement1>: roleManagement
         - `[Status <String>]`: The step status. Possible values: InProgress, Initializing, Completed, Expired. Read-only.
     - `[RoleAssignmentScheduleInstances <IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance[]>]`: 
       - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
-      - `[AppScopeId <String>]`: Id of the app specific scope when the assignment scope is app specific. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use '/' for tenant-wide scope. App scopes are scopes that are defined and understood by this application only.
-      - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-      - `[DirectoryScopeId <String>]`: Id of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.
-      - `[Principal <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-      - `[PrincipalId <String>]`: Objectid of the principal to which the assignment is being granted to.
+      - `[AppScopeId <String>]`: Identifier of the app-specific scope when the assignment scope is app-specific. The scope of an assignment determines the set of resources for which the principal has been granted access. App scopes are scopes that are defined and understood by this application only. Use / for tenant-wide app scopes. Use directoryScopeId to limit the scope to particular directory objects, for example, administrative units.
+      - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
+      - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. Use appScopeId to limit the scope to an application only.
+      - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
+      - `[PrincipalId <String>]`: Identifier of the principal to which the assignment is being granted to. Can be a group or a user.
       - `[RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]`: unifiedRoleDefinition
-      - `[RoleDefinitionId <String>]`: ID of the unifiedRoleDefinition the assignment is for. Read only.
+      - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for. Read only.  Supports $filter (eq).
       - `[Id <String>]`: Read-only.
       - `[ActivatedUsing <IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance>]`: unifiedRoleEligibilityScheduleInstance
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
-        - `[AppScopeId <String>]`: Id of the app specific scope when the assignment scope is app specific. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use '/' for tenant-wide scope. App scopes are scopes that are defined and understood by this application only.
-        - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-        - `[DirectoryScopeId <String>]`: Id of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.
-        - `[Principal <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-        - `[PrincipalId <String>]`: Objectid of the principal to which the assignment is being granted to.
+        - `[AppScopeId <String>]`: Identifier of the app-specific scope when the assignment scope is app-specific. The scope of an assignment determines the set of resources for which the principal has been granted access. App scopes are scopes that are defined and understood by this application only. Use / for tenant-wide app scopes. Use directoryScopeId to limit the scope to particular directory objects, for example, administrative units.
+        - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
+        - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. Use appScopeId to limit the scope to an application only.
+        - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
+        - `[PrincipalId <String>]`: Identifier of the principal to which the assignment is being granted to. Can be a group or a user.
         - `[RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]`: unifiedRoleDefinition
-        - `[RoleDefinitionId <String>]`: ID of the unifiedRoleDefinition the assignment is for. Read only.
+        - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for. Read only.  Supports $filter (eq).
         - `[Id <String>]`: Read-only.
-        - `[EndDateTime <DateTime?>]`: Time that the roleEligibilityScheduleInstance will expire
+        - `[EndDateTime <DateTime?>]`: Time that the roleEligibilityScheduleInstance will expire.
         - `[MemberType <String>]`: Membership type of the assignment. It can either be Inherited, Direct, or Group.
-        - `[RoleEligibilityScheduleId <String>]`: ID of the parent roleEligibilitySchedule for this instance
-        - `[StartDateTime <DateTime?>]`: Time that the roleEligibilityScheduleInstance will start
+        - `[RoleEligibilityScheduleId <String>]`: Identifier of the parent roleEligibilitySchedule for this instance.
+        - `[StartDateTime <DateTime?>]`: Time that the roleEligibilityScheduleInstance will start.
       - `[AssignmentType <String>]`: Type of the assignment. It can either be Assigned or Activated.
       - `[EndDateTime <DateTime?>]`: Time that the roleAssignmentInstance will expire
       - `[MemberType <String>]`: Membership type of the assignment. It can either be Inherited, Direct, or Group.
@@ -296,47 +296,47 @@ BODYPARAMETER <IMicrosoftGraphRoleManagement1>: roleManagement
       - `[RoleAssignmentScheduleId <String>]`: ID of the parent roleAssignmentSchedule for this instance
       - `[StartDateTime <DateTime?>]`: Time that the roleAssignmentInstance will start
     - `[RoleAssignmentScheduleRequests <IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest[]>]`: 
-      - `[ApprovalId <String>]`: 
-      - `[CompletedDateTime <DateTime?>]`: 
+      - `[ApprovalId <String>]`: The identifier of the approval of the request.
+      - `[CompletedDateTime <DateTime?>]`: The request completion date time.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[Device <IMicrosoftGraphIdentity>]`: identity
         - `[User <IMicrosoftGraphIdentity>]`: identity
-      - `[CreatedDateTime <DateTime?>]`: 
-      - `[CustomData <String>]`: 
-      - `[Status <String>]`: 
+      - `[CreatedDateTime <DateTime?>]`: The request creation date time.
+      - `[CustomData <String>]`: Free text field to define any custom data for the request. Not used.
+      - `[Status <String>]`: The status of the request. Not nullable. The possible values are: Canceled, Denied, Failed, Granted, PendingAdminDecision, PendingApproval, PendingProvisioning, PendingScheduleCreation, Provisioned, Revoked, and ScheduleCreated. Not nullable.
       - `[Id <String>]`: Read-only.
-      - `[Action <String>]`: Representing the type of the operation on the role assignment. The value can be AdminAdd: Administrators assign users/groups to roles;UserAdd: Users activate eligible assignments; AdminUpdate: Administrators change existing role assignmentsAdminRemove: Administrators remove users/groups from roles;UserRemove: Users deactivate active assignments;UserExtend: Users request to extend their expiring assignments;AdminExtend: Administrators extend expiring assignments.UserRenew: Users request to renew their expired assignments;AdminRenew: Administrators extend expiring assignments.
+      - `[Action <String>]`: Represents the type of the operation on the role assignment. The possible values are: AdminAssign: For administrators to assign roles to users or groups.AdminRemove: For administrators to remove users or groups from roles. AdminUpdate: For administrators to change existing role assignments.AdminExtend: For administrators to extend expiring assignments.AdminRenew: For administrators to renew expired assignments.SelfActivate: For users to activate their assignments.SelfDeactivate: For users to deactivate their active assignments.SelfExtend: For users to request to extend their expiring assignments.SelfRenew: For users to request to renew their expired assignments.
       - `[ActivatedUsing <IMicrosoftGraphUnifiedRoleEligibilitySchedule>]`: unifiedRoleEligibilitySchedule
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
-        - `[AppScopeId <String>]`: Id of the app specific scope when the assignment scope is app specific. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use '/' for tenant-wide scope. App scopes are scopes that are defined and understood by this application only.
+        - `[AppScopeId <String>]`: Identifier of the app-specific scope when the assignment scope is app-specific. The scope of an assignment determines the set of resources for which the principal has been granted access. App scopes are scopes that are defined and understood by this application only. Use / for tenant-wide app scopes. Use directoryScopeId to limit the scope to particular directory objects, for example, administrative units or all users.
         - `[CreatedDateTime <DateTime?>]`: Time that the schedule was created.
-        - `[CreatedUsing <String>]`: ID of the roleAssignmentScheduleRequest that created this schedule.
-        - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-        - `[DirectoryScopeId <String>]`: Id of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.
+        - `[CreatedUsing <String>]`: Identifier of the roleAssignmentScheduleRequest that created this schedule.
+        - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
+        - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. Use appScopeId to limit the scope to an application only.
         - `[ModifiedDateTime <DateTime?>]`: Last time the schedule was updated.
-        - `[Principal <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-        - `[PrincipalId <String>]`: Objectid of the principal to which the assignment is being granted to.
+        - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
+        - `[PrincipalId <String>]`: Identifier of the principal to which the assignment is being granted to. Supports $filter (eq).
         - `[RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]`: unifiedRoleDefinition
-        - `[RoleDefinitionId <String>]`: ID of the unifiedRoleDefinition the assignment is for. Read only.
-        - `[Status <String>]`: Status for the roleAssignmentSchedule. It can include state related messages like Provisioned, Revoked, Pending Provisioning, and Pending Approval.
+        - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for. Read only. Supports $filter (eq).
+        - `[Status <String>]`: Status for the roleAssignmentSchedule. It can include state related messages like Provisioned, Revoked, Pending Provisioning, and Pending Approval. Supports $filter (eq).
         - `[Id <String>]`: Read-only.
         - `[MemberType <String>]`: Membership type of the eligible assignment. It can either be Inherited, Direct, or Group.
         - `[ScheduleInfo <IMicrosoftGraphRequestSchedule>]`: requestSchedule
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Expiration <IMicrosoftGraphExpirationPattern>]`: expirationPattern
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[Duration <TimeSpan?>]`: The requestor's desired duration of access. If specified in a request, endDateTime should not be present.
-            - `[EndDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+            - `[Duration <TimeSpan?>]`: The requestor's desired duration of access represented in ISO 8601 format for durations. For example, PT3H refers to three hours.  If specified in a request, endDateTime should not be present and the type property should be set to afterDuration.
+            - `[EndDateTime <DateTime?>]`: Timestamp of date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             - `[Type <String>]`: expirationPatternType
           - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs. Required if type is absoluteMonthly or absoluteYearly.
-              - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. Possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
+              - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
               - `[FirstDayOfWeek <String>]`: dayOfWeek
               - `[Index <String>]`: weekIndex
               - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type. Required.
@@ -351,77 +351,78 @@ BODYPARAMETER <IMicrosoftGraphRoleManagement1>: roleManagement
               - `[Type <String>]`: recurrenceRangeType
           - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
-      - `[AppScopeId <String>]`: Id of the app specific scope when the assignment scope is app specific. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use '/' for tenant-wide scope. App scopes are scopes that are defined and understood by this application only.
-      - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-      - `[DirectoryScopeId <String>]`: Id of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.
+      - `[AppScopeId <String>]`: Identifier of the app-specific scope when the assignment scope is app-specific. The scope of an assignment determines the set of resources for which the principal has been granted access. App scopes are scopes that are defined and understood by this application only. Use / for tenant-wide app scopes. Use directoryScopeId to limit the scope to particular directory objects, for example, administrative units.
+      - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
+      - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. Use appScopeId to limit the scope to an application only.
       - `[IsValidationOnly <Boolean?>]`: A boolean that determines whether the call is a validation or an actual call. Only set this property if you want to check whether an activation is subject to additional rules like MFA before actually submitting the request.
       - `[Justification <String>]`: A message provided by users and administrators when create the request about why it is needed.
-      - `[Principal <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-      - `[PrincipalId <String>]`: Objectid of the principal to which the assignment is being granted to.
+      - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
+      - `[PrincipalId <String>]`: Identifier of the principal to which the assignment is being granted to.
       - `[RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]`: unifiedRoleDefinition
-      - `[RoleDefinitionId <String>]`: ID of the unifiedRoleDefinition the assignment is for. Read only.
+      - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for. Read only.
       - `[ScheduleInfo <IMicrosoftGraphRequestSchedule>]`: requestSchedule
       - `[TargetSchedule <IMicrosoftGraphUnifiedRoleAssignmentSchedule>]`: unifiedRoleAssignmentSchedule
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
-        - `[AppScopeId <String>]`: Id of the app specific scope when the assignment scope is app specific. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use '/' for tenant-wide scope. App scopes are scopes that are defined and understood by this application only.
+        - `[AppScopeId <String>]`: Identifier of the app-specific scope when the assignment scope is app-specific. The scope of an assignment determines the set of resources for which the principal has been granted access. App scopes are scopes that are defined and understood by this application only. Use / for tenant-wide app scopes. Use directoryScopeId to limit the scope to particular directory objects, for example, administrative units or all users.
         - `[CreatedDateTime <DateTime?>]`: Time that the schedule was created.
-        - `[CreatedUsing <String>]`: ID of the roleAssignmentScheduleRequest that created this schedule.
-        - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-        - `[DirectoryScopeId <String>]`: Id of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.
+        - `[CreatedUsing <String>]`: Identifier of the roleAssignmentScheduleRequest that created this schedule.
+        - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
+        - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. Use appScopeId to limit the scope to an application only.
         - `[ModifiedDateTime <DateTime?>]`: Last time the schedule was updated.
-        - `[Principal <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-        - `[PrincipalId <String>]`: Objectid of the principal to which the assignment is being granted to.
+        - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
+        - `[PrincipalId <String>]`: Identifier of the principal to which the assignment is being granted to. Supports $filter (eq).
         - `[RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]`: unifiedRoleDefinition
-        - `[RoleDefinitionId <String>]`: ID of the unifiedRoleDefinition the assignment is for. Read only.
-        - `[Status <String>]`: Status for the roleAssignmentSchedule. It can include state related messages like Provisioned, Revoked, Pending Provisioning, and Pending Approval.
+        - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for. Read only. Supports $filter (eq).
+        - `[Status <String>]`: Status for the roleAssignmentSchedule. It can include state related messages like Provisioned, Revoked, Pending Provisioning, and Pending Approval. Supports $filter (eq).
         - `[Id <String>]`: Read-only.
         - `[ActivatedUsing <IMicrosoftGraphUnifiedRoleEligibilitySchedule>]`: unifiedRoleEligibilitySchedule
         - `[AssignmentType <String>]`: Type of the assignment. It can either be Assigned or Activated.
         - `[MemberType <String>]`: Membership type of the assignment. It can either be Inherited, Direct, or Group.
         - `[ScheduleInfo <IMicrosoftGraphRequestSchedule>]`: requestSchedule
-      - `[TargetScheduleId <String>]`: ID of the schedule object attached to the assignment.
+      - `[TargetScheduleId <String>]`: Identifier of the schedule object attached to the assignment.
       - `[TicketInfo <IMicrosoftGraphTicketInfo>]`: ticketInfo
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[TicketNumber <String>]`: Ticket number meta data
         - `[TicketSystem <String>]`: Ticket system meta data
     - `[RoleAssignmentSchedules <IMicrosoftGraphUnifiedRoleAssignmentSchedule[]>]`: 
-    - `[RoleAssignments <IMicrosoftGraphUnifiedRoleAssignment[]>]`: 
+    - `[RoleAssignments <IMicrosoftGraphUnifiedRoleAssignment1[]>]`: Resource to grant access to users or groups.
       - `[Id <String>]`: Read-only.
       - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
-      - `[AppScopeId <String>]`: Identifier of the app specific scope when the assignment scope is app specific. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. App scopes are scopes that are defined and understood by this application only.
+      - `[AppScopeId <String>]`: Identifier of the app-specific scope when the assignment scope is app-specific.  Either this property or directoryScopeId is required. App scopes are scopes that are defined and understood by this application only. Use / for tenant-wide app scopes. Use directoryScopeId to limit the scope to particular directory objects, for example, administrative units. Supports $filter (eq, in).
       - `[Condition <String>]`: 
-      - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-      - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.
-      - `[Principal <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-      - `[PrincipalId <String>]`: Identifier of the principal to which the assignment is granted. Supports $filter (eq operator only).
+      - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
+      - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment.  Either this property or appScopeId is required. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. Use appScopeId to limit the scope to an application only. Supports $filter (eq, in).
+      - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
+      - `[PrincipalId <String>]`: Identifier of the principal to which the assignment is granted. Supports $filter (eq, in).
+      - `[PrincipalOrganizationId <String>]`: 
       - `[ResourceScope <String>]`: The scope at which the unifiedRoleAssignment applies. This is / for service-wide. DO NOT USE. This property will be deprecated soon.
       - `[RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]`: unifiedRoleDefinition
-      - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for. Read-only. Supports $filter (eq operator only).
-    - `[RoleDefinitions <IMicrosoftGraphUnifiedRoleDefinition[]>]`: 
+      - `[RoleDefinitionId <String>]`: Identifier of the role definition the assignment is for. Read only. Supports $filter (eq, in).
+    - `[RoleDefinitions <IMicrosoftGraphUnifiedRoleDefinition[]>]`: Resource representing the roles allowed by RBAC providers and the permissions assigned to the roles.
     - `[RoleEligibilityScheduleInstances <IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance[]>]`: 
     - `[RoleEligibilityScheduleRequests <IMicrosoftGraphUnifiedRoleEligibilityScheduleRequest[]>]`: 
-      - `[ApprovalId <String>]`: 
-      - `[CompletedDateTime <DateTime?>]`: 
+      - `[ApprovalId <String>]`: The identifier of the approval of the request.
+      - `[CompletedDateTime <DateTime?>]`: The request completion date time.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[CreatedDateTime <DateTime?>]`: 
-      - `[CustomData <String>]`: 
-      - `[Status <String>]`: 
+      - `[CreatedDateTime <DateTime?>]`: The request creation date time.
+      - `[CustomData <String>]`: Free text field to define any custom data for the request. Not used.
+      - `[Status <String>]`: The status of the request. Not nullable. The possible values are: Canceled, Denied, Failed, Granted, PendingAdminDecision, PendingApproval, PendingProvisioning, PendingScheduleCreation, Provisioned, Revoked, and ScheduleCreated. Not nullable.
       - `[Id <String>]`: Read-only.
-      - `[Action <String>]`: Representing the type of the operation on the role assignment. The value can be AdminAdd: Administrators assign users/groups to roles;UserAdd: Users activate eligible assignments; AdminUpdate: Administrators change existing role assignmentsAdminRemove: Administrators remove users/groups from roles;UserRemove: Users deactivate active assignments;UserExtend: Users request to extend their expiring assignments;AdminExtend: Administrators extend expiring assignments.UserRenew: Users request to renew their expired assignments;AdminRenew: Administrators extend expiring assignments.
+      - `[Action <String>]`: Represents the type of the operation on the role eligibility assignment. The possible values are: AdminAssign: For administrators to assign role eligibility to users or groups to roles.AdminExtend: For administrators to extend expiring assignments.AdminUpdate: For administrators to change existing role assignments.AdminRenew: For administrators to renew expired assignments.AdminRemove: For administrators to remove users or groups from eligible roles.UserAdd: For users to activate their eligible assignments.UserExtend: For users to request to extend their expiring eligible assignments.UserRemove: For users to deactivate their active eligible assignments.UserRenew: For users to request to renew their expired eligible assignments.
       - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
-      - `[AppScopeId <String>]`: Id of the app specific scope when the assignment scope is app specific. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use '/' for tenant-wide scope. App scopes are scopes that are defined and understood by this application only.
-      - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-      - `[DirectoryScopeId <String>]`: Id of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.
+      - `[AppScopeId <String>]`: Identifier of the app-specific scope when the assignment scope is app-specific. The scope of an assignment determines the set of resources for which the principal has been granted access. App scopes are scopes that are defined and understood by this application only. Use / for tenant-wide app scopes. Use directoryScopeId to limit the scope to particular directory objects, for example, administrative units.
+      - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
+      - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. Use appScopeId to limit the scope to an application only.
       - `[IsValidationOnly <Boolean?>]`: A boolean that determines whether the call is a validation or an actual call. Only set this property if you want to check whether an activation is subject to additional rules like MFA before actually submitting the request.
       - `[Justification <String>]`: A message provided by users and administrators when create the request about why it is needed.
-      - `[Principal <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-      - `[PrincipalId <String>]`: Objectid of the principal to which the assignment is being granted to.
+      - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
+      - `[PrincipalId <String>]`: Identifier of the principal to which the assignment is being granted to. For example, a user or a group. For groups, they must be assignable to roles, that is, the isAssignableToRole of the group property set to true.
       - `[RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]`: unifiedRoleDefinition
-      - `[RoleDefinitionId <String>]`: ID of the unifiedRoleDefinition the assignment is for. Read only.
+      - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for. Read only.
       - `[ScheduleInfo <IMicrosoftGraphRequestSchedule>]`: requestSchedule
       - `[TargetSchedule <IMicrosoftGraphUnifiedRoleEligibilitySchedule>]`: unifiedRoleEligibilitySchedule
-      - `[TargetScheduleId <String>]`: ID of the schedule object attached to the assignment.
+      - `[TargetScheduleId <String>]`: The time period for which the eligibility assignment is valid.
       - `[TicketInfo <IMicrosoftGraphTicketInfo>]`: ticketInfo
     - `[RoleEligibilitySchedules <IMicrosoftGraphUnifiedRoleEligibilitySchedule[]>]`: 
   - `[EntitlementManagement <IMicrosoftGraphRbacApplication>]`: rbacApplication
@@ -449,8 +450,8 @@ CLOUDPC <IMicrosoftGraphRbacApplicationMultiple>: rbacApplicationMultiple
     - `[AppScopeIds <String[]>]`: Ids of the app specific scopes when the assignment scopes are app specific. The scopes of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. App scopes are scopes that are defined and understood by this application only.
     - `[AppScopes <IMicrosoftGraphAppScope[]>]`: Read-only collection with details of the app specific scopes when the assignment scopes are app specific. Containment entity. Read-only.
       - `[Id <String>]`: Read-only.
-      - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope. Provided for display purposes since appScopeId is often an immutable, non-human-readable id. This property is read only.
-      - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope. Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope. This property is read only.
+      - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope. Provided for display purposes since appScopeId is often an immutable, non-human-readable id. Read-only.
+      - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope. Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope. Read-only.
     - `[Condition <String>]`: 
     - `[Description <String>]`: Description of the role assignment.
     - `[DirectoryScopeIds <String[]>]`: Ids of the directory objects representing the scopes of the assignment. The scopes of an assignment determine the set of resources for which the principals have been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.
@@ -464,17 +465,17 @@ CLOUDPC <IMicrosoftGraphRbacApplicationMultiple>: rbacApplicationMultiple
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: Read-only.
       - `[Description <String>]`: The description for the unifiedRoleDefinition. Read-only when isBuiltIn is true.
-      - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition. Read-only when isBuiltIn is true. Required.  Supports $filter (eq and startsWith operators only).
-      - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition[]>]`: Read-only collection of role definitions that the given role definition inherits from. Only Azure AD built-in roles support this attribute.
-      - `[IsBuiltIn <Boolean?>]`: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom. Read-only.  Supports $filter (eq operator only).
-      - `[IsEnabled <Boolean?>]`: Flag indicating if the role is enabled for assignment. If false the role is not available for assignment. Read-only when isBuiltIn is true.
-      - `[ResourceScopes <String[]>]`: List of scopes permissions granted by the role definition apply to. Currently only / is supported. Read-only when isBuiltIn is true. DO NOT USE. This is going to be deprecated soon. Attach scope to role assignment
+      - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition. Read-only when isBuiltIn is true. Required.  Supports $filter (eq, in).
+      - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition[]>]`: Read-only collection of role definitions that the given role definition inherits from. Only Azure AD built-in roles (isBuiltIn is true) support this attribute. Supports $expand.
+      - `[IsBuiltIn <Boolean?>]`: Flag indicating whether the role definition is part of the default set included in Azure Active Directory (Azure AD) or a custom definition. Read-only. Supports $filter (eq, in).
+      - `[IsEnabled <Boolean?>]`: Flag indicating whether the role is enabled for assignment. If false the role is not available for assignment. Read-only when isBuiltIn is true.
+      - `[ResourceScopes <String[]>]`: List of the scopes or permissions the role definition applies to. Currently only / is supported. Read-only when isBuiltIn is true. DO NOT USE. This will be deprecated soon. Attach scope to role assignment.
       - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]`: List of permissions included in the role. Read-only when isBuiltIn is true. Required.
-        - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource.
+        - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource. Required.
         - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective.
-        - `[ExcludedResourceActions <String[]>]`: 
-      - `[TemplateId <String>]`: Custom template identifier that can be set when isBuiltIn is false. This identifier is typically used if one needs an identifier to be the same across different directories. Read-only when isBuiltIn is true.
-      - `[Version <String>]`: Indicates version of the unifiedRoleDefinition. Read-only when isBuiltIn is true.
+        - `[ExcludedResourceActions <String[]>]`: Set of tasks that may not be performed on a resource. Not yet supported.
+      - `[TemplateId <String>]`: Custom template identifier that can be set when isBuiltIn is false but is read-only when isBuiltIn is true. This identifier is typically used if one needs an identifier to be the same across different directories.
+      - `[Version <String>]`: Indicates version of the role definition. Read-only when isBuiltIn is true.
     - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for.
   - `[RoleDefinitions <IMicrosoftGraphUnifiedRoleDefinition[]>]`: 
 
@@ -501,8 +502,8 @@ DEVICEMANAGEMENT <IMicrosoftGraphRbacApplicationMultiple>: rbacApplicationMultip
     - `[AppScopeIds <String[]>]`: Ids of the app specific scopes when the assignment scopes are app specific. The scopes of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. App scopes are scopes that are defined and understood by this application only.
     - `[AppScopes <IMicrosoftGraphAppScope[]>]`: Read-only collection with details of the app specific scopes when the assignment scopes are app specific. Containment entity. Read-only.
       - `[Id <String>]`: Read-only.
-      - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope. Provided for display purposes since appScopeId is often an immutable, non-human-readable id. This property is read only.
-      - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope. Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope. This property is read only.
+      - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope. Provided for display purposes since appScopeId is often an immutable, non-human-readable id. Read-only.
+      - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope. Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope. Read-only.
     - `[Condition <String>]`: 
     - `[Description <String>]`: Description of the role assignment.
     - `[DirectoryScopeIds <String[]>]`: Ids of the directory objects representing the scopes of the assignment. The scopes of an assignment determine the set of resources for which the principals have been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.
@@ -516,17 +517,17 @@ DEVICEMANAGEMENT <IMicrosoftGraphRbacApplicationMultiple>: rbacApplicationMultip
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: Read-only.
       - `[Description <String>]`: The description for the unifiedRoleDefinition. Read-only when isBuiltIn is true.
-      - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition. Read-only when isBuiltIn is true. Required.  Supports $filter (eq and startsWith operators only).
-      - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition[]>]`: Read-only collection of role definitions that the given role definition inherits from. Only Azure AD built-in roles support this attribute.
-      - `[IsBuiltIn <Boolean?>]`: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom. Read-only.  Supports $filter (eq operator only).
-      - `[IsEnabled <Boolean?>]`: Flag indicating if the role is enabled for assignment. If false the role is not available for assignment. Read-only when isBuiltIn is true.
-      - `[ResourceScopes <String[]>]`: List of scopes permissions granted by the role definition apply to. Currently only / is supported. Read-only when isBuiltIn is true. DO NOT USE. This is going to be deprecated soon. Attach scope to role assignment
+      - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition. Read-only when isBuiltIn is true. Required.  Supports $filter (eq, in).
+      - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition[]>]`: Read-only collection of role definitions that the given role definition inherits from. Only Azure AD built-in roles (isBuiltIn is true) support this attribute. Supports $expand.
+      - `[IsBuiltIn <Boolean?>]`: Flag indicating whether the role definition is part of the default set included in Azure Active Directory (Azure AD) or a custom definition. Read-only. Supports $filter (eq, in).
+      - `[IsEnabled <Boolean?>]`: Flag indicating whether the role is enabled for assignment. If false the role is not available for assignment. Read-only when isBuiltIn is true.
+      - `[ResourceScopes <String[]>]`: List of the scopes or permissions the role definition applies to. Currently only / is supported. Read-only when isBuiltIn is true. DO NOT USE. This will be deprecated soon. Attach scope to role assignment.
       - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]`: List of permissions included in the role. Read-only when isBuiltIn is true. Required.
-        - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource.
+        - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource. Required.
         - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective.
-        - `[ExcludedResourceActions <String[]>]`: 
-      - `[TemplateId <String>]`: Custom template identifier that can be set when isBuiltIn is false. This identifier is typically used if one needs an identifier to be the same across different directories. Read-only when isBuiltIn is true.
-      - `[Version <String>]`: Indicates version of the unifiedRoleDefinition. Read-only when isBuiltIn is true.
+        - `[ExcludedResourceActions <String[]>]`: Set of tasks that may not be performed on a resource. Not yet supported.
+      - `[TemplateId <String>]`: Custom template identifier that can be set when isBuiltIn is false but is read-only when isBuiltIn is true. This identifier is typically used if one needs an identifier to be the same across different directories.
+      - `[Version <String>]`: Indicates version of the role definition. Read-only when isBuiltIn is true.
     - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for.
   - `[RoleDefinitions <IMicrosoftGraphUnifiedRoleDefinition[]>]`: 
 
@@ -566,48 +567,48 @@ DIRECTORY <IMicrosoftGraphRbacApplication>: rbacApplication
     - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: Read-only.
-      - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope. Provided for display purposes since appScopeId is often an immutable, non-human-readable id. This property is read only.
-      - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope. Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope. This property is read only.
-    - `[AppScopeId <String>]`: Id of the app specific scope when the assignment scope is app specific. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use '/' for tenant-wide scope. App scopes are scopes that are defined and understood by this application only.
-    - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
+      - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope. Provided for display purposes since appScopeId is often an immutable, non-human-readable id. Read-only.
+      - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope. Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope. Read-only.
+    - `[AppScopeId <String>]`: Identifier of the app-specific scope when the assignment scope is app-specific. The scope of an assignment determines the set of resources for which the principal has been granted access. App scopes are scopes that are defined and understood by this application only. Use / for tenant-wide app scopes. Use directoryScopeId to limit the scope to particular directory objects, for example, administrative units.
+    - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: Read-only.
       - `[DeletedDateTime <DateTime?>]`: 
-    - `[DirectoryScopeId <String>]`: Id of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.
-    - `[Principal <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-    - `[PrincipalId <String>]`: Objectid of the principal to which the assignment is being granted to.
+    - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. Use appScopeId to limit the scope to an application only.
+    - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
+    - `[PrincipalId <String>]`: Identifier of the principal to which the assignment is being granted to. Can be a group or a user.
     - `[RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]`: unifiedRoleDefinition
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: Read-only.
       - `[Description <String>]`: The description for the unifiedRoleDefinition. Read-only when isBuiltIn is true.
-      - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition. Read-only when isBuiltIn is true. Required.  Supports $filter (eq and startsWith operators only).
-      - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition[]>]`: Read-only collection of role definitions that the given role definition inherits from. Only Azure AD built-in roles support this attribute.
-      - `[IsBuiltIn <Boolean?>]`: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom. Read-only.  Supports $filter (eq operator only).
-      - `[IsEnabled <Boolean?>]`: Flag indicating if the role is enabled for assignment. If false the role is not available for assignment. Read-only when isBuiltIn is true.
-      - `[ResourceScopes <String[]>]`: List of scopes permissions granted by the role definition apply to. Currently only / is supported. Read-only when isBuiltIn is true. DO NOT USE. This is going to be deprecated soon. Attach scope to role assignment
+      - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition. Read-only when isBuiltIn is true. Required.  Supports $filter (eq, in).
+      - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition[]>]`: Read-only collection of role definitions that the given role definition inherits from. Only Azure AD built-in roles (isBuiltIn is true) support this attribute. Supports $expand.
+      - `[IsBuiltIn <Boolean?>]`: Flag indicating whether the role definition is part of the default set included in Azure Active Directory (Azure AD) or a custom definition. Read-only. Supports $filter (eq, in).
+      - `[IsEnabled <Boolean?>]`: Flag indicating whether the role is enabled for assignment. If false the role is not available for assignment. Read-only when isBuiltIn is true.
+      - `[ResourceScopes <String[]>]`: List of the scopes or permissions the role definition applies to. Currently only / is supported. Read-only when isBuiltIn is true. DO NOT USE. This will be deprecated soon. Attach scope to role assignment.
       - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]`: List of permissions included in the role. Read-only when isBuiltIn is true. Required.
-        - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource.
+        - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource. Required.
         - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective.
-        - `[ExcludedResourceActions <String[]>]`: 
-      - `[TemplateId <String>]`: Custom template identifier that can be set when isBuiltIn is false. This identifier is typically used if one needs an identifier to be the same across different directories. Read-only when isBuiltIn is true.
-      - `[Version <String>]`: Indicates version of the unifiedRoleDefinition. Read-only when isBuiltIn is true.
-    - `[RoleDefinitionId <String>]`: ID of the unifiedRoleDefinition the assignment is for. Read only.
+        - `[ExcludedResourceActions <String[]>]`: Set of tasks that may not be performed on a resource. Not yet supported.
+      - `[TemplateId <String>]`: Custom template identifier that can be set when isBuiltIn is false but is read-only when isBuiltIn is true. This identifier is typically used if one needs an identifier to be the same across different directories.
+      - `[Version <String>]`: Indicates version of the role definition. Read-only when isBuiltIn is true.
+    - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for. Read only.  Supports $filter (eq).
     - `[Id <String>]`: Read-only.
     - `[ActivatedUsing <IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance>]`: unifiedRoleEligibilityScheduleInstance
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
-      - `[AppScopeId <String>]`: Id of the app specific scope when the assignment scope is app specific. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use '/' for tenant-wide scope. App scopes are scopes that are defined and understood by this application only.
-      - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-      - `[DirectoryScopeId <String>]`: Id of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.
-      - `[Principal <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-      - `[PrincipalId <String>]`: Objectid of the principal to which the assignment is being granted to.
+      - `[AppScopeId <String>]`: Identifier of the app-specific scope when the assignment scope is app-specific. The scope of an assignment determines the set of resources for which the principal has been granted access. App scopes are scopes that are defined and understood by this application only. Use / for tenant-wide app scopes. Use directoryScopeId to limit the scope to particular directory objects, for example, administrative units.
+      - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
+      - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. Use appScopeId to limit the scope to an application only.
+      - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
+      - `[PrincipalId <String>]`: Identifier of the principal to which the assignment is being granted to. Can be a group or a user.
       - `[RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]`: unifiedRoleDefinition
-      - `[RoleDefinitionId <String>]`: ID of the unifiedRoleDefinition the assignment is for. Read only.
+      - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for. Read only.  Supports $filter (eq).
       - `[Id <String>]`: Read-only.
-      - `[EndDateTime <DateTime?>]`: Time that the roleEligibilityScheduleInstance will expire
+      - `[EndDateTime <DateTime?>]`: Time that the roleEligibilityScheduleInstance will expire.
       - `[MemberType <String>]`: Membership type of the assignment. It can either be Inherited, Direct, or Group.
-      - `[RoleEligibilityScheduleId <String>]`: ID of the parent roleEligibilitySchedule for this instance
-      - `[StartDateTime <DateTime?>]`: Time that the roleEligibilityScheduleInstance will start
+      - `[RoleEligibilityScheduleId <String>]`: Identifier of the parent roleEligibilitySchedule for this instance.
+      - `[StartDateTime <DateTime?>]`: Time that the roleEligibilityScheduleInstance will start.
     - `[AssignmentType <String>]`: Type of the assignment. It can either be Assigned or Activated.
     - `[EndDateTime <DateTime?>]`: Time that the roleAssignmentInstance will expire
     - `[MemberType <String>]`: Membership type of the assignment. It can either be Inherited, Direct, or Group.
@@ -615,47 +616,47 @@ DIRECTORY <IMicrosoftGraphRbacApplication>: rbacApplication
     - `[RoleAssignmentScheduleId <String>]`: ID of the parent roleAssignmentSchedule for this instance
     - `[StartDateTime <DateTime?>]`: Time that the roleAssignmentInstance will start
   - `[RoleAssignmentScheduleRequests <IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest[]>]`: 
-    - `[ApprovalId <String>]`: 
-    - `[CompletedDateTime <DateTime?>]`: 
+    - `[ApprovalId <String>]`: The identifier of the approval of the request.
+    - `[CompletedDateTime <DateTime?>]`: The request completion date time.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[CreatedDateTime <DateTime?>]`: 
-    - `[CustomData <String>]`: 
-    - `[Status <String>]`: 
+    - `[CreatedDateTime <DateTime?>]`: The request creation date time.
+    - `[CustomData <String>]`: Free text field to define any custom data for the request. Not used.
+    - `[Status <String>]`: The status of the request. Not nullable. The possible values are: Canceled, Denied, Failed, Granted, PendingAdminDecision, PendingApproval, PendingProvisioning, PendingScheduleCreation, Provisioned, Revoked, and ScheduleCreated. Not nullable.
     - `[Id <String>]`: Read-only.
-    - `[Action <String>]`: Representing the type of the operation on the role assignment. The value can be AdminAdd: Administrators assign users/groups to roles;UserAdd: Users activate eligible assignments; AdminUpdate: Administrators change existing role assignmentsAdminRemove: Administrators remove users/groups from roles;UserRemove: Users deactivate active assignments;UserExtend: Users request to extend their expiring assignments;AdminExtend: Administrators extend expiring assignments.UserRenew: Users request to renew their expired assignments;AdminRenew: Administrators extend expiring assignments.
+    - `[Action <String>]`: Represents the type of the operation on the role assignment. The possible values are: AdminAssign: For administrators to assign roles to users or groups.AdminRemove: For administrators to remove users or groups from roles. AdminUpdate: For administrators to change existing role assignments.AdminExtend: For administrators to extend expiring assignments.AdminRenew: For administrators to renew expired assignments.SelfActivate: For users to activate their assignments.SelfDeactivate: For users to deactivate their active assignments.SelfExtend: For users to request to extend their expiring assignments.SelfRenew: For users to request to renew their expired assignments.
     - `[ActivatedUsing <IMicrosoftGraphUnifiedRoleEligibilitySchedule>]`: unifiedRoleEligibilitySchedule
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
-      - `[AppScopeId <String>]`: Id of the app specific scope when the assignment scope is app specific. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use '/' for tenant-wide scope. App scopes are scopes that are defined and understood by this application only.
+      - `[AppScopeId <String>]`: Identifier of the app-specific scope when the assignment scope is app-specific. The scope of an assignment determines the set of resources for which the principal has been granted access. App scopes are scopes that are defined and understood by this application only. Use / for tenant-wide app scopes. Use directoryScopeId to limit the scope to particular directory objects, for example, administrative units or all users.
       - `[CreatedDateTime <DateTime?>]`: Time that the schedule was created.
-      - `[CreatedUsing <String>]`: ID of the roleAssignmentScheduleRequest that created this schedule.
-      - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-      - `[DirectoryScopeId <String>]`: Id of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.
+      - `[CreatedUsing <String>]`: Identifier of the roleAssignmentScheduleRequest that created this schedule.
+      - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
+      - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. Use appScopeId to limit the scope to an application only.
       - `[ModifiedDateTime <DateTime?>]`: Last time the schedule was updated.
-      - `[Principal <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-      - `[PrincipalId <String>]`: Objectid of the principal to which the assignment is being granted to.
+      - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
+      - `[PrincipalId <String>]`: Identifier of the principal to which the assignment is being granted to. Supports $filter (eq).
       - `[RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]`: unifiedRoleDefinition
-      - `[RoleDefinitionId <String>]`: ID of the unifiedRoleDefinition the assignment is for. Read only.
-      - `[Status <String>]`: Status for the roleAssignmentSchedule. It can include state related messages like Provisioned, Revoked, Pending Provisioning, and Pending Approval.
+      - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for. Read only. Supports $filter (eq).
+      - `[Status <String>]`: Status for the roleAssignmentSchedule. It can include state related messages like Provisioned, Revoked, Pending Provisioning, and Pending Approval. Supports $filter (eq).
       - `[Id <String>]`: Read-only.
       - `[MemberType <String>]`: Membership type of the eligible assignment. It can either be Inherited, Direct, or Group.
       - `[ScheduleInfo <IMicrosoftGraphRequestSchedule>]`: requestSchedule
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Expiration <IMicrosoftGraphExpirationPattern>]`: expirationPattern
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Duration <TimeSpan?>]`: The requestor's desired duration of access. If specified in a request, endDateTime should not be present.
-          - `[EndDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+          - `[Duration <TimeSpan?>]`: The requestor's desired duration of access represented in ISO 8601 format for durations. For example, PT3H refers to three hours.  If specified in a request, endDateTime should not be present and the type property should be set to afterDuration.
+          - `[EndDateTime <DateTime?>]`: Timestamp of date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
           - `[Type <String>]`: expirationPatternType
         - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs. Required if type is absoluteMonthly or absoluteYearly.
-            - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. Possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
+            - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
             - `[FirstDayOfWeek <String>]`: dayOfWeek
             - `[Index <String>]`: weekIndex
             - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type. Required.
@@ -670,77 +671,78 @@ DIRECTORY <IMicrosoftGraphRbacApplication>: rbacApplication
             - `[Type <String>]`: recurrenceRangeType
         - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
-    - `[AppScopeId <String>]`: Id of the app specific scope when the assignment scope is app specific. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use '/' for tenant-wide scope. App scopes are scopes that are defined and understood by this application only.
-    - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-    - `[DirectoryScopeId <String>]`: Id of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.
+    - `[AppScopeId <String>]`: Identifier of the app-specific scope when the assignment scope is app-specific. The scope of an assignment determines the set of resources for which the principal has been granted access. App scopes are scopes that are defined and understood by this application only. Use / for tenant-wide app scopes. Use directoryScopeId to limit the scope to particular directory objects, for example, administrative units.
+    - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
+    - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. Use appScopeId to limit the scope to an application only.
     - `[IsValidationOnly <Boolean?>]`: A boolean that determines whether the call is a validation or an actual call. Only set this property if you want to check whether an activation is subject to additional rules like MFA before actually submitting the request.
     - `[Justification <String>]`: A message provided by users and administrators when create the request about why it is needed.
-    - `[Principal <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-    - `[PrincipalId <String>]`: Objectid of the principal to which the assignment is being granted to.
+    - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
+    - `[PrincipalId <String>]`: Identifier of the principal to which the assignment is being granted to.
     - `[RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]`: unifiedRoleDefinition
-    - `[RoleDefinitionId <String>]`: ID of the unifiedRoleDefinition the assignment is for. Read only.
+    - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for. Read only.
     - `[ScheduleInfo <IMicrosoftGraphRequestSchedule>]`: requestSchedule
     - `[TargetSchedule <IMicrosoftGraphUnifiedRoleAssignmentSchedule>]`: unifiedRoleAssignmentSchedule
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
-      - `[AppScopeId <String>]`: Id of the app specific scope when the assignment scope is app specific. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use '/' for tenant-wide scope. App scopes are scopes that are defined and understood by this application only.
+      - `[AppScopeId <String>]`: Identifier of the app-specific scope when the assignment scope is app-specific. The scope of an assignment determines the set of resources for which the principal has been granted access. App scopes are scopes that are defined and understood by this application only. Use / for tenant-wide app scopes. Use directoryScopeId to limit the scope to particular directory objects, for example, administrative units or all users.
       - `[CreatedDateTime <DateTime?>]`: Time that the schedule was created.
-      - `[CreatedUsing <String>]`: ID of the roleAssignmentScheduleRequest that created this schedule.
-      - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-      - `[DirectoryScopeId <String>]`: Id of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.
+      - `[CreatedUsing <String>]`: Identifier of the roleAssignmentScheduleRequest that created this schedule.
+      - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
+      - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. Use appScopeId to limit the scope to an application only.
       - `[ModifiedDateTime <DateTime?>]`: Last time the schedule was updated.
-      - `[Principal <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-      - `[PrincipalId <String>]`: Objectid of the principal to which the assignment is being granted to.
+      - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
+      - `[PrincipalId <String>]`: Identifier of the principal to which the assignment is being granted to. Supports $filter (eq).
       - `[RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]`: unifiedRoleDefinition
-      - `[RoleDefinitionId <String>]`: ID of the unifiedRoleDefinition the assignment is for. Read only.
-      - `[Status <String>]`: Status for the roleAssignmentSchedule. It can include state related messages like Provisioned, Revoked, Pending Provisioning, and Pending Approval.
+      - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for. Read only. Supports $filter (eq).
+      - `[Status <String>]`: Status for the roleAssignmentSchedule. It can include state related messages like Provisioned, Revoked, Pending Provisioning, and Pending Approval. Supports $filter (eq).
       - `[Id <String>]`: Read-only.
       - `[ActivatedUsing <IMicrosoftGraphUnifiedRoleEligibilitySchedule>]`: unifiedRoleEligibilitySchedule
       - `[AssignmentType <String>]`: Type of the assignment. It can either be Assigned or Activated.
       - `[MemberType <String>]`: Membership type of the assignment. It can either be Inherited, Direct, or Group.
       - `[ScheduleInfo <IMicrosoftGraphRequestSchedule>]`: requestSchedule
-    - `[TargetScheduleId <String>]`: ID of the schedule object attached to the assignment.
+    - `[TargetScheduleId <String>]`: Identifier of the schedule object attached to the assignment.
     - `[TicketInfo <IMicrosoftGraphTicketInfo>]`: ticketInfo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[TicketNumber <String>]`: Ticket number meta data
       - `[TicketSystem <String>]`: Ticket system meta data
   - `[RoleAssignmentSchedules <IMicrosoftGraphUnifiedRoleAssignmentSchedule[]>]`: 
-  - `[RoleAssignments <IMicrosoftGraphUnifiedRoleAssignment[]>]`: 
+  - `[RoleAssignments <IMicrosoftGraphUnifiedRoleAssignment1[]>]`: Resource to grant access to users or groups.
     - `[Id <String>]`: Read-only.
     - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
-    - `[AppScopeId <String>]`: Identifier of the app specific scope when the assignment scope is app specific. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. App scopes are scopes that are defined and understood by this application only.
+    - `[AppScopeId <String>]`: Identifier of the app-specific scope when the assignment scope is app-specific.  Either this property or directoryScopeId is required. App scopes are scopes that are defined and understood by this application only. Use / for tenant-wide app scopes. Use directoryScopeId to limit the scope to particular directory objects, for example, administrative units. Supports $filter (eq, in).
     - `[Condition <String>]`: 
-    - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-    - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.
-    - `[Principal <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-    - `[PrincipalId <String>]`: Identifier of the principal to which the assignment is granted. Supports $filter (eq operator only).
+    - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
+    - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment.  Either this property or appScopeId is required. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. Use appScopeId to limit the scope to an application only. Supports $filter (eq, in).
+    - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
+    - `[PrincipalId <String>]`: Identifier of the principal to which the assignment is granted. Supports $filter (eq, in).
+    - `[PrincipalOrganizationId <String>]`: 
     - `[ResourceScope <String>]`: The scope at which the unifiedRoleAssignment applies. This is / for service-wide. DO NOT USE. This property will be deprecated soon.
     - `[RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]`: unifiedRoleDefinition
-    - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for. Read-only. Supports $filter (eq operator only).
-  - `[RoleDefinitions <IMicrosoftGraphUnifiedRoleDefinition[]>]`: 
+    - `[RoleDefinitionId <String>]`: Identifier of the role definition the assignment is for. Read only. Supports $filter (eq, in).
+  - `[RoleDefinitions <IMicrosoftGraphUnifiedRoleDefinition[]>]`: Resource representing the roles allowed by RBAC providers and the permissions assigned to the roles.
   - `[RoleEligibilityScheduleInstances <IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance[]>]`: 
   - `[RoleEligibilityScheduleRequests <IMicrosoftGraphUnifiedRoleEligibilityScheduleRequest[]>]`: 
-    - `[ApprovalId <String>]`: 
-    - `[CompletedDateTime <DateTime?>]`: 
+    - `[ApprovalId <String>]`: The identifier of the approval of the request.
+    - `[CompletedDateTime <DateTime?>]`: The request completion date time.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[CreatedDateTime <DateTime?>]`: 
-    - `[CustomData <String>]`: 
-    - `[Status <String>]`: 
+    - `[CreatedDateTime <DateTime?>]`: The request creation date time.
+    - `[CustomData <String>]`: Free text field to define any custom data for the request. Not used.
+    - `[Status <String>]`: The status of the request. Not nullable. The possible values are: Canceled, Denied, Failed, Granted, PendingAdminDecision, PendingApproval, PendingProvisioning, PendingScheduleCreation, Provisioned, Revoked, and ScheduleCreated. Not nullable.
     - `[Id <String>]`: Read-only.
-    - `[Action <String>]`: Representing the type of the operation on the role assignment. The value can be AdminAdd: Administrators assign users/groups to roles;UserAdd: Users activate eligible assignments; AdminUpdate: Administrators change existing role assignmentsAdminRemove: Administrators remove users/groups from roles;UserRemove: Users deactivate active assignments;UserExtend: Users request to extend their expiring assignments;AdminExtend: Administrators extend expiring assignments.UserRenew: Users request to renew their expired assignments;AdminRenew: Administrators extend expiring assignments.
+    - `[Action <String>]`: Represents the type of the operation on the role eligibility assignment. The possible values are: AdminAssign: For administrators to assign role eligibility to users or groups to roles.AdminExtend: For administrators to extend expiring assignments.AdminUpdate: For administrators to change existing role assignments.AdminRenew: For administrators to renew expired assignments.AdminRemove: For administrators to remove users or groups from eligible roles.UserAdd: For users to activate their eligible assignments.UserExtend: For users to request to extend their expiring eligible assignments.UserRemove: For users to deactivate their active eligible assignments.UserRenew: For users to request to renew their expired eligible assignments.
     - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
-    - `[AppScopeId <String>]`: Id of the app specific scope when the assignment scope is app specific. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use '/' for tenant-wide scope. App scopes are scopes that are defined and understood by this application only.
-    - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-    - `[DirectoryScopeId <String>]`: Id of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.
+    - `[AppScopeId <String>]`: Identifier of the app-specific scope when the assignment scope is app-specific. The scope of an assignment determines the set of resources for which the principal has been granted access. App scopes are scopes that are defined and understood by this application only. Use / for tenant-wide app scopes. Use directoryScopeId to limit the scope to particular directory objects, for example, administrative units.
+    - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
+    - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. Use appScopeId to limit the scope to an application only.
     - `[IsValidationOnly <Boolean?>]`: A boolean that determines whether the call is a validation or an actual call. Only set this property if you want to check whether an activation is subject to additional rules like MFA before actually submitting the request.
     - `[Justification <String>]`: A message provided by users and administrators when create the request about why it is needed.
-    - `[Principal <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-    - `[PrincipalId <String>]`: Objectid of the principal to which the assignment is being granted to.
+    - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
+    - `[PrincipalId <String>]`: Identifier of the principal to which the assignment is being granted to. For example, a user or a group. For groups, they must be assignable to roles, that is, the isAssignableToRole of the group property set to true.
     - `[RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]`: unifiedRoleDefinition
-    - `[RoleDefinitionId <String>]`: ID of the unifiedRoleDefinition the assignment is for. Read only.
+    - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for. Read only.
     - `[ScheduleInfo <IMicrosoftGraphRequestSchedule>]`: requestSchedule
     - `[TargetSchedule <IMicrosoftGraphUnifiedRoleEligibilitySchedule>]`: unifiedRoleEligibilitySchedule
-    - `[TargetScheduleId <String>]`: ID of the schedule object attached to the assignment.
+    - `[TargetScheduleId <String>]`: The time period for which the eligibility assignment is valid.
     - `[TicketInfo <IMicrosoftGraphTicketInfo>]`: ticketInfo
   - `[RoleEligibilitySchedules <IMicrosoftGraphUnifiedRoleEligibilitySchedule[]>]`: 
 
@@ -780,48 +782,48 @@ ENTITLEMENTMANAGEMENT <IMicrosoftGraphRbacApplication>: rbacApplication
     - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: Read-only.
-      - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope. Provided for display purposes since appScopeId is often an immutable, non-human-readable id. This property is read only.
-      - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope. Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope. This property is read only.
-    - `[AppScopeId <String>]`: Id of the app specific scope when the assignment scope is app specific. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use '/' for tenant-wide scope. App scopes are scopes that are defined and understood by this application only.
-    - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
+      - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope. Provided for display purposes since appScopeId is often an immutable, non-human-readable id. Read-only.
+      - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope. Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope. Read-only.
+    - `[AppScopeId <String>]`: Identifier of the app-specific scope when the assignment scope is app-specific. The scope of an assignment determines the set of resources for which the principal has been granted access. App scopes are scopes that are defined and understood by this application only. Use / for tenant-wide app scopes. Use directoryScopeId to limit the scope to particular directory objects, for example, administrative units.
+    - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: Read-only.
       - `[DeletedDateTime <DateTime?>]`: 
-    - `[DirectoryScopeId <String>]`: Id of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.
-    - `[Principal <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-    - `[PrincipalId <String>]`: Objectid of the principal to which the assignment is being granted to.
+    - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. Use appScopeId to limit the scope to an application only.
+    - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
+    - `[PrincipalId <String>]`: Identifier of the principal to which the assignment is being granted to. Can be a group or a user.
     - `[RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]`: unifiedRoleDefinition
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: Read-only.
       - `[Description <String>]`: The description for the unifiedRoleDefinition. Read-only when isBuiltIn is true.
-      - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition. Read-only when isBuiltIn is true. Required.  Supports $filter (eq and startsWith operators only).
-      - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition[]>]`: Read-only collection of role definitions that the given role definition inherits from. Only Azure AD built-in roles support this attribute.
-      - `[IsBuiltIn <Boolean?>]`: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom. Read-only.  Supports $filter (eq operator only).
-      - `[IsEnabled <Boolean?>]`: Flag indicating if the role is enabled for assignment. If false the role is not available for assignment. Read-only when isBuiltIn is true.
-      - `[ResourceScopes <String[]>]`: List of scopes permissions granted by the role definition apply to. Currently only / is supported. Read-only when isBuiltIn is true. DO NOT USE. This is going to be deprecated soon. Attach scope to role assignment
+      - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition. Read-only when isBuiltIn is true. Required.  Supports $filter (eq, in).
+      - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition[]>]`: Read-only collection of role definitions that the given role definition inherits from. Only Azure AD built-in roles (isBuiltIn is true) support this attribute. Supports $expand.
+      - `[IsBuiltIn <Boolean?>]`: Flag indicating whether the role definition is part of the default set included in Azure Active Directory (Azure AD) or a custom definition. Read-only. Supports $filter (eq, in).
+      - `[IsEnabled <Boolean?>]`: Flag indicating whether the role is enabled for assignment. If false the role is not available for assignment. Read-only when isBuiltIn is true.
+      - `[ResourceScopes <String[]>]`: List of the scopes or permissions the role definition applies to. Currently only / is supported. Read-only when isBuiltIn is true. DO NOT USE. This will be deprecated soon. Attach scope to role assignment.
       - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]`: List of permissions included in the role. Read-only when isBuiltIn is true. Required.
-        - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource.
+        - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource. Required.
         - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective.
-        - `[ExcludedResourceActions <String[]>]`: 
-      - `[TemplateId <String>]`: Custom template identifier that can be set when isBuiltIn is false. This identifier is typically used if one needs an identifier to be the same across different directories. Read-only when isBuiltIn is true.
-      - `[Version <String>]`: Indicates version of the unifiedRoleDefinition. Read-only when isBuiltIn is true.
-    - `[RoleDefinitionId <String>]`: ID of the unifiedRoleDefinition the assignment is for. Read only.
+        - `[ExcludedResourceActions <String[]>]`: Set of tasks that may not be performed on a resource. Not yet supported.
+      - `[TemplateId <String>]`: Custom template identifier that can be set when isBuiltIn is false but is read-only when isBuiltIn is true. This identifier is typically used if one needs an identifier to be the same across different directories.
+      - `[Version <String>]`: Indicates version of the role definition. Read-only when isBuiltIn is true.
+    - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for. Read only.  Supports $filter (eq).
     - `[Id <String>]`: Read-only.
     - `[ActivatedUsing <IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance>]`: unifiedRoleEligibilityScheduleInstance
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
-      - `[AppScopeId <String>]`: Id of the app specific scope when the assignment scope is app specific. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use '/' for tenant-wide scope. App scopes are scopes that are defined and understood by this application only.
-      - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-      - `[DirectoryScopeId <String>]`: Id of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.
-      - `[Principal <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-      - `[PrincipalId <String>]`: Objectid of the principal to which the assignment is being granted to.
+      - `[AppScopeId <String>]`: Identifier of the app-specific scope when the assignment scope is app-specific. The scope of an assignment determines the set of resources for which the principal has been granted access. App scopes are scopes that are defined and understood by this application only. Use / for tenant-wide app scopes. Use directoryScopeId to limit the scope to particular directory objects, for example, administrative units.
+      - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
+      - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. Use appScopeId to limit the scope to an application only.
+      - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
+      - `[PrincipalId <String>]`: Identifier of the principal to which the assignment is being granted to. Can be a group or a user.
       - `[RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]`: unifiedRoleDefinition
-      - `[RoleDefinitionId <String>]`: ID of the unifiedRoleDefinition the assignment is for. Read only.
+      - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for. Read only.  Supports $filter (eq).
       - `[Id <String>]`: Read-only.
-      - `[EndDateTime <DateTime?>]`: Time that the roleEligibilityScheduleInstance will expire
+      - `[EndDateTime <DateTime?>]`: Time that the roleEligibilityScheduleInstance will expire.
       - `[MemberType <String>]`: Membership type of the assignment. It can either be Inherited, Direct, or Group.
-      - `[RoleEligibilityScheduleId <String>]`: ID of the parent roleEligibilitySchedule for this instance
-      - `[StartDateTime <DateTime?>]`: Time that the roleEligibilityScheduleInstance will start
+      - `[RoleEligibilityScheduleId <String>]`: Identifier of the parent roleEligibilitySchedule for this instance.
+      - `[StartDateTime <DateTime?>]`: Time that the roleEligibilityScheduleInstance will start.
     - `[AssignmentType <String>]`: Type of the assignment. It can either be Assigned or Activated.
     - `[EndDateTime <DateTime?>]`: Time that the roleAssignmentInstance will expire
     - `[MemberType <String>]`: Membership type of the assignment. It can either be Inherited, Direct, or Group.
@@ -829,47 +831,47 @@ ENTITLEMENTMANAGEMENT <IMicrosoftGraphRbacApplication>: rbacApplication
     - `[RoleAssignmentScheduleId <String>]`: ID of the parent roleAssignmentSchedule for this instance
     - `[StartDateTime <DateTime?>]`: Time that the roleAssignmentInstance will start
   - `[RoleAssignmentScheduleRequests <IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest[]>]`: 
-    - `[ApprovalId <String>]`: 
-    - `[CompletedDateTime <DateTime?>]`: 
+    - `[ApprovalId <String>]`: The identifier of the approval of the request.
+    - `[CompletedDateTime <DateTime?>]`: The request completion date time.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[CreatedDateTime <DateTime?>]`: 
-    - `[CustomData <String>]`: 
-    - `[Status <String>]`: 
+    - `[CreatedDateTime <DateTime?>]`: The request creation date time.
+    - `[CustomData <String>]`: Free text field to define any custom data for the request. Not used.
+    - `[Status <String>]`: The status of the request. Not nullable. The possible values are: Canceled, Denied, Failed, Granted, PendingAdminDecision, PendingApproval, PendingProvisioning, PendingScheduleCreation, Provisioned, Revoked, and ScheduleCreated. Not nullable.
     - `[Id <String>]`: Read-only.
-    - `[Action <String>]`: Representing the type of the operation on the role assignment. The value can be AdminAdd: Administrators assign users/groups to roles;UserAdd: Users activate eligible assignments; AdminUpdate: Administrators change existing role assignmentsAdminRemove: Administrators remove users/groups from roles;UserRemove: Users deactivate active assignments;UserExtend: Users request to extend their expiring assignments;AdminExtend: Administrators extend expiring assignments.UserRenew: Users request to renew their expired assignments;AdminRenew: Administrators extend expiring assignments.
+    - `[Action <String>]`: Represents the type of the operation on the role assignment. The possible values are: AdminAssign: For administrators to assign roles to users or groups.AdminRemove: For administrators to remove users or groups from roles. AdminUpdate: For administrators to change existing role assignments.AdminExtend: For administrators to extend expiring assignments.AdminRenew: For administrators to renew expired assignments.SelfActivate: For users to activate their assignments.SelfDeactivate: For users to deactivate their active assignments.SelfExtend: For users to request to extend their expiring assignments.SelfRenew: For users to request to renew their expired assignments.
     - `[ActivatedUsing <IMicrosoftGraphUnifiedRoleEligibilitySchedule>]`: unifiedRoleEligibilitySchedule
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
-      - `[AppScopeId <String>]`: Id of the app specific scope when the assignment scope is app specific. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use '/' for tenant-wide scope. App scopes are scopes that are defined and understood by this application only.
+      - `[AppScopeId <String>]`: Identifier of the app-specific scope when the assignment scope is app-specific. The scope of an assignment determines the set of resources for which the principal has been granted access. App scopes are scopes that are defined and understood by this application only. Use / for tenant-wide app scopes. Use directoryScopeId to limit the scope to particular directory objects, for example, administrative units or all users.
       - `[CreatedDateTime <DateTime?>]`: Time that the schedule was created.
-      - `[CreatedUsing <String>]`: ID of the roleAssignmentScheduleRequest that created this schedule.
-      - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-      - `[DirectoryScopeId <String>]`: Id of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.
+      - `[CreatedUsing <String>]`: Identifier of the roleAssignmentScheduleRequest that created this schedule.
+      - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
+      - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. Use appScopeId to limit the scope to an application only.
       - `[ModifiedDateTime <DateTime?>]`: Last time the schedule was updated.
-      - `[Principal <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-      - `[PrincipalId <String>]`: Objectid of the principal to which the assignment is being granted to.
+      - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
+      - `[PrincipalId <String>]`: Identifier of the principal to which the assignment is being granted to. Supports $filter (eq).
       - `[RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]`: unifiedRoleDefinition
-      - `[RoleDefinitionId <String>]`: ID of the unifiedRoleDefinition the assignment is for. Read only.
-      - `[Status <String>]`: Status for the roleAssignmentSchedule. It can include state related messages like Provisioned, Revoked, Pending Provisioning, and Pending Approval.
+      - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for. Read only. Supports $filter (eq).
+      - `[Status <String>]`: Status for the roleAssignmentSchedule. It can include state related messages like Provisioned, Revoked, Pending Provisioning, and Pending Approval. Supports $filter (eq).
       - `[Id <String>]`: Read-only.
       - `[MemberType <String>]`: Membership type of the eligible assignment. It can either be Inherited, Direct, or Group.
       - `[ScheduleInfo <IMicrosoftGraphRequestSchedule>]`: requestSchedule
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Expiration <IMicrosoftGraphExpirationPattern>]`: expirationPattern
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Duration <TimeSpan?>]`: The requestor's desired duration of access. If specified in a request, endDateTime should not be present.
-          - `[EndDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+          - `[Duration <TimeSpan?>]`: The requestor's desired duration of access represented in ISO 8601 format for durations. For example, PT3H refers to three hours.  If specified in a request, endDateTime should not be present and the type property should be set to afterDuration.
+          - `[EndDateTime <DateTime?>]`: Timestamp of date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
           - `[Type <String>]`: expirationPatternType
         - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs. Required if type is absoluteMonthly or absoluteYearly.
-            - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. Possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
+            - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
             - `[FirstDayOfWeek <String>]`: dayOfWeek
             - `[Index <String>]`: weekIndex
             - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type. Required.
@@ -884,83 +886,81 @@ ENTITLEMENTMANAGEMENT <IMicrosoftGraphRbacApplication>: rbacApplication
             - `[Type <String>]`: recurrenceRangeType
         - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
-    - `[AppScopeId <String>]`: Id of the app specific scope when the assignment scope is app specific. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use '/' for tenant-wide scope. App scopes are scopes that are defined and understood by this application only.
-    - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-    - `[DirectoryScopeId <String>]`: Id of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.
+    - `[AppScopeId <String>]`: Identifier of the app-specific scope when the assignment scope is app-specific. The scope of an assignment determines the set of resources for which the principal has been granted access. App scopes are scopes that are defined and understood by this application only. Use / for tenant-wide app scopes. Use directoryScopeId to limit the scope to particular directory objects, for example, administrative units.
+    - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
+    - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. Use appScopeId to limit the scope to an application only.
     - `[IsValidationOnly <Boolean?>]`: A boolean that determines whether the call is a validation or an actual call. Only set this property if you want to check whether an activation is subject to additional rules like MFA before actually submitting the request.
     - `[Justification <String>]`: A message provided by users and administrators when create the request about why it is needed.
-    - `[Principal <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-    - `[PrincipalId <String>]`: Objectid of the principal to which the assignment is being granted to.
+    - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
+    - `[PrincipalId <String>]`: Identifier of the principal to which the assignment is being granted to.
     - `[RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]`: unifiedRoleDefinition
-    - `[RoleDefinitionId <String>]`: ID of the unifiedRoleDefinition the assignment is for. Read only.
+    - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for. Read only.
     - `[ScheduleInfo <IMicrosoftGraphRequestSchedule>]`: requestSchedule
     - `[TargetSchedule <IMicrosoftGraphUnifiedRoleAssignmentSchedule>]`: unifiedRoleAssignmentSchedule
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
-      - `[AppScopeId <String>]`: Id of the app specific scope when the assignment scope is app specific. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use '/' for tenant-wide scope. App scopes are scopes that are defined and understood by this application only.
+      - `[AppScopeId <String>]`: Identifier of the app-specific scope when the assignment scope is app-specific. The scope of an assignment determines the set of resources for which the principal has been granted access. App scopes are scopes that are defined and understood by this application only. Use / for tenant-wide app scopes. Use directoryScopeId to limit the scope to particular directory objects, for example, administrative units or all users.
       - `[CreatedDateTime <DateTime?>]`: Time that the schedule was created.
-      - `[CreatedUsing <String>]`: ID of the roleAssignmentScheduleRequest that created this schedule.
-      - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-      - `[DirectoryScopeId <String>]`: Id of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.
+      - `[CreatedUsing <String>]`: Identifier of the roleAssignmentScheduleRequest that created this schedule.
+      - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
+      - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. Use appScopeId to limit the scope to an application only.
       - `[ModifiedDateTime <DateTime?>]`: Last time the schedule was updated.
-      - `[Principal <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-      - `[PrincipalId <String>]`: Objectid of the principal to which the assignment is being granted to.
+      - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
+      - `[PrincipalId <String>]`: Identifier of the principal to which the assignment is being granted to. Supports $filter (eq).
       - `[RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]`: unifiedRoleDefinition
-      - `[RoleDefinitionId <String>]`: ID of the unifiedRoleDefinition the assignment is for. Read only.
-      - `[Status <String>]`: Status for the roleAssignmentSchedule. It can include state related messages like Provisioned, Revoked, Pending Provisioning, and Pending Approval.
+      - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for. Read only. Supports $filter (eq).
+      - `[Status <String>]`: Status for the roleAssignmentSchedule. It can include state related messages like Provisioned, Revoked, Pending Provisioning, and Pending Approval. Supports $filter (eq).
       - `[Id <String>]`: Read-only.
       - `[ActivatedUsing <IMicrosoftGraphUnifiedRoleEligibilitySchedule>]`: unifiedRoleEligibilitySchedule
       - `[AssignmentType <String>]`: Type of the assignment. It can either be Assigned or Activated.
       - `[MemberType <String>]`: Membership type of the assignment. It can either be Inherited, Direct, or Group.
       - `[ScheduleInfo <IMicrosoftGraphRequestSchedule>]`: requestSchedule
-    - `[TargetScheduleId <String>]`: ID of the schedule object attached to the assignment.
+    - `[TargetScheduleId <String>]`: Identifier of the schedule object attached to the assignment.
     - `[TicketInfo <IMicrosoftGraphTicketInfo>]`: ticketInfo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[TicketNumber <String>]`: Ticket number meta data
       - `[TicketSystem <String>]`: Ticket system meta data
   - `[RoleAssignmentSchedules <IMicrosoftGraphUnifiedRoleAssignmentSchedule[]>]`: 
-  - `[RoleAssignments <IMicrosoftGraphUnifiedRoleAssignment[]>]`: 
+  - `[RoleAssignments <IMicrosoftGraphUnifiedRoleAssignment1[]>]`: Resource to grant access to users or groups.
     - `[Id <String>]`: Read-only.
     - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
-    - `[AppScopeId <String>]`: Identifier of the app specific scope when the assignment scope is app specific. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. App scopes are scopes that are defined and understood by this application only.
+    - `[AppScopeId <String>]`: Identifier of the app-specific scope when the assignment scope is app-specific.  Either this property or directoryScopeId is required. App scopes are scopes that are defined and understood by this application only. Use / for tenant-wide app scopes. Use directoryScopeId to limit the scope to particular directory objects, for example, administrative units. Supports $filter (eq, in).
     - `[Condition <String>]`: 
-    - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-    - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.
-    - `[Principal <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-    - `[PrincipalId <String>]`: Identifier of the principal to which the assignment is granted. Supports $filter (eq operator only).
+    - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
+    - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment.  Either this property or appScopeId is required. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. Use appScopeId to limit the scope to an application only. Supports $filter (eq, in).
+    - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
+    - `[PrincipalId <String>]`: Identifier of the principal to which the assignment is granted. Supports $filter (eq, in).
+    - `[PrincipalOrganizationId <String>]`: 
     - `[ResourceScope <String>]`: The scope at which the unifiedRoleAssignment applies. This is / for service-wide. DO NOT USE. This property will be deprecated soon.
     - `[RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]`: unifiedRoleDefinition
-    - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for. Read-only. Supports $filter (eq operator only).
-  - `[RoleDefinitions <IMicrosoftGraphUnifiedRoleDefinition[]>]`: 
+    - `[RoleDefinitionId <String>]`: Identifier of the role definition the assignment is for. Read only. Supports $filter (eq, in).
+  - `[RoleDefinitions <IMicrosoftGraphUnifiedRoleDefinition[]>]`: Resource representing the roles allowed by RBAC providers and the permissions assigned to the roles.
   - `[RoleEligibilityScheduleInstances <IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance[]>]`: 
   - `[RoleEligibilityScheduleRequests <IMicrosoftGraphUnifiedRoleEligibilityScheduleRequest[]>]`: 
-    - `[ApprovalId <String>]`: 
-    - `[CompletedDateTime <DateTime?>]`: 
+    - `[ApprovalId <String>]`: The identifier of the approval of the request.
+    - `[CompletedDateTime <DateTime?>]`: The request completion date time.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[CreatedDateTime <DateTime?>]`: 
-    - `[CustomData <String>]`: 
-    - `[Status <String>]`: 
+    - `[CreatedDateTime <DateTime?>]`: The request creation date time.
+    - `[CustomData <String>]`: Free text field to define any custom data for the request. Not used.
+    - `[Status <String>]`: The status of the request. Not nullable. The possible values are: Canceled, Denied, Failed, Granted, PendingAdminDecision, PendingApproval, PendingProvisioning, PendingScheduleCreation, Provisioned, Revoked, and ScheduleCreated. Not nullable.
     - `[Id <String>]`: Read-only.
-    - `[Action <String>]`: Representing the type of the operation on the role assignment. The value can be AdminAdd: Administrators assign users/groups to roles;UserAdd: Users activate eligible assignments; AdminUpdate: Administrators change existing role assignmentsAdminRemove: Administrators remove users/groups from roles;UserRemove: Users deactivate active assignments;UserExtend: Users request to extend their expiring assignments;AdminExtend: Administrators extend expiring assignments.UserRenew: Users request to renew their expired assignments;AdminRenew: Administrators extend expiring assignments.
+    - `[Action <String>]`: Represents the type of the operation on the role eligibility assignment. The possible values are: AdminAssign: For administrators to assign role eligibility to users or groups to roles.AdminExtend: For administrators to extend expiring assignments.AdminUpdate: For administrators to change existing role assignments.AdminRenew: For administrators to renew expired assignments.AdminRemove: For administrators to remove users or groups from eligible roles.UserAdd: For users to activate their eligible assignments.UserExtend: For users to request to extend their expiring eligible assignments.UserRemove: For users to deactivate their active eligible assignments.UserRenew: For users to request to renew their expired eligible assignments.
     - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
-    - `[AppScopeId <String>]`: Id of the app specific scope when the assignment scope is app specific. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use '/' for tenant-wide scope. App scopes are scopes that are defined and understood by this application only.
-    - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-    - `[DirectoryScopeId <String>]`: Id of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.
+    - `[AppScopeId <String>]`: Identifier of the app-specific scope when the assignment scope is app-specific. The scope of an assignment determines the set of resources for which the principal has been granted access. App scopes are scopes that are defined and understood by this application only. Use / for tenant-wide app scopes. Use directoryScopeId to limit the scope to particular directory objects, for example, administrative units.
+    - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
+    - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. Use appScopeId to limit the scope to an application only.
     - `[IsValidationOnly <Boolean?>]`: A boolean that determines whether the call is a validation or an actual call. Only set this property if you want to check whether an activation is subject to additional rules like MFA before actually submitting the request.
     - `[Justification <String>]`: A message provided by users and administrators when create the request about why it is needed.
-    - `[Principal <IMicrosoftGraphDirectoryObject>]`: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
-    - `[PrincipalId <String>]`: Objectid of the principal to which the assignment is being granted to.
+    - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
+    - `[PrincipalId <String>]`: Identifier of the principal to which the assignment is being granted to. For example, a user or a group. For groups, they must be assignable to roles, that is, the isAssignableToRole of the group property set to true.
     - `[RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>]`: unifiedRoleDefinition
-    - `[RoleDefinitionId <String>]`: ID of the unifiedRoleDefinition the assignment is for. Read only.
+    - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for. Read only.
     - `[ScheduleInfo <IMicrosoftGraphRequestSchedule>]`: requestSchedule
     - `[TargetSchedule <IMicrosoftGraphUnifiedRoleEligibilitySchedule>]`: unifiedRoleEligibilitySchedule
-    - `[TargetScheduleId <String>]`: ID of the schedule object attached to the assignment.
+    - `[TargetScheduleId <String>]`: The time period for which the eligibility assignment is valid.
     - `[TicketInfo <IMicrosoftGraphTicketInfo>]`: ticketInfo
   - `[RoleEligibilitySchedules <IMicrosoftGraphUnifiedRoleEligibilitySchedule[]>]`: 
 
 ## RELATED LINKS
-
-## RELATED LINKS
-
 
 ## RELATED LINKS

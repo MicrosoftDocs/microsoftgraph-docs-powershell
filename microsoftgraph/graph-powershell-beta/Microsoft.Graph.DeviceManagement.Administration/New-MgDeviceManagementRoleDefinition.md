@@ -57,7 +57,7 @@ There are two types of roles, built-in and custom.
 Built-in roles cannot be modified.
 Both built-in roles and custom roles must have assignments to be enforced.
 Create custom roles if you want to define a role that allows any of the available resources and role permissions to be combined into a single role.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRoleDefinition1
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 ### -Permissions
 List of Role Permissions this role is allowed to perform.
 These must match the actionName that is defined as part of the rolePermission.
-To construct, see NOTES section for PERMISSIONS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for PERMISSIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRolePermission1[]
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 
 ### -RoleAssignments
 List of Role assignments for this role definition.
-To construct, see NOTES section for ROLEASSIGNMENTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ROLEASSIGNMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRoleAssignment[]
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ### -RolePermissions
 List of Role Permissions this role is allowed to perform.
 These must match the actionName that is defined as part of the rolePermission.
-To construct, see NOTES section for ROLEPERMISSIONS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ROLEPERMISSIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRolePermission1[]
@@ -281,7 +281,7 @@ BODYPARAMETER <IMicrosoftGraphRoleDefinition1>: The Role Definition resource. Th
     - `[ResourceScopes <String[]>]`: List of ids of role scope member security groups.  These are IDs from Azure Active Directory.
     - `[RoleDefinition <IMicrosoftGraphRoleDefinition1>]`: The Role Definition resource. The role definition is the foundation of role based access in Intune. The role combines an Intune resource such as a Mobile App and associated role permissions such as Create or Read for the resource. There are two types of roles, built-in and custom. Built-in roles cannot be modified. Both built-in roles and custom roles must have assignments to be enforced. Create custom roles if you want to define a role that allows any of the available resources and role permissions to be combined into a single role.
     - `[ScopeMembers <String[]>]`: List of ids of role scope member security groups.  These are IDs from Azure Active Directory.
-    - `[ScopeType <String>]`: roleAssignmentScopeType
+    - `[ScopeType <String>]`: Specifies the type of scope for a Role Assignment.
   - `[RolePermissions <IMicrosoftGraphRolePermission1[]>]`: List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of the rolePermission.
   - `[RoleScopeTagIds <String[]>]`: List of Scope Tags for this Entity instance.
 
@@ -312,7 +312,7 @@ ROLEASSIGNMENTS <IMicrosoftGraphRoleAssignment[]>: List of Role assignments for 
     - `[RolePermissions <IMicrosoftGraphRolePermission1[]>]`: List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of the rolePermission.
     - `[RoleScopeTagIds <String[]>]`: List of Scope Tags for this Entity instance.
   - `[ScopeMembers <String[]>]`: List of ids of role scope member security groups.  These are IDs from Azure Active Directory.
-  - `[ScopeType <String>]`: roleAssignmentScopeType
+  - `[ScopeType <String>]`: Specifies the type of scope for a Role Assignment.
 
 ROLEPERMISSIONS <IMicrosoftGraphRolePermission1[]>: List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of the rolePermission.
   - `[Actions <String[]>]`: Allowed Actions - Deprecated

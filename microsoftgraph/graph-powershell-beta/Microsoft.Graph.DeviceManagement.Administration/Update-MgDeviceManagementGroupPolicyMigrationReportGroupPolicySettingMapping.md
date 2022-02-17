@@ -93,7 +93,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The Group Policy setting to MDM/Intune mapping.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphGroupPolicySettingMapping
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementAdministrationIdentity
@@ -274,7 +274,7 @@ Accept wildcard characters: False
 ```
 
 ### -MdmSupportedState
-mdmSupportedState
+Mdm Support Status of the setting.
 
 ```yaml
 Type: String
@@ -394,7 +394,7 @@ Accept wildcard characters: False
 ```
 
 ### -SettingScope
-groupPolicySettingScope
+Scope of the group policy setting.
 
 ```yaml
 Type: String
@@ -409,7 +409,7 @@ Accept wildcard characters: False
 ```
 
 ### -SettingType
-groupPolicySettingType
+Setting type of the group policy.
 
 ```yaml
 Type: String
@@ -529,15 +529,15 @@ BODYPARAMETER <IMicrosoftGraphGroupPolicySettingMapping>: The Group Policy setti
   - `[MdmCspName <String>]`: The CSP name this group policy setting maps to.
   - `[MdmMinimumOSVersion <Int32?>]`: The minimum OS version this mdm setting supports.
   - `[MdmSettingUri <String>]`: The MDM CSP URI this group policy setting maps to.
-  - `[MdmSupportedState <String>]`: mdmSupportedState
+  - `[MdmSupportedState <String>]`: Mdm Support Status of the setting.
   - `[ParentId <String>]`: Parent Id of the group policy setting.
   - `[SettingCategory <String>]`: The category the group policy setting is in.
   - `[SettingDisplayName <String>]`: The display name of this group policy setting.
   - `[SettingDisplayValue <String>]`: The display value of this group policy setting.
   - `[SettingDisplayValueType <String>]`: The display value type of this group policy setting.
   - `[SettingName <String>]`: The name of this group policy setting.
-  - `[SettingScope <String>]`: groupPolicySettingScope
-  - `[SettingType <String>]`: groupPolicySettingType
+  - `[SettingScope <String>]`: Scope of the group policy setting.
+  - `[SettingType <String>]`: Setting type of the group policy.
   - `[SettingValue <String>]`: The value of this group policy setting.
   - `[SettingValueDisplayUnits <String>]`: The display units of this group policy setting value
   - `[SettingValueType <String>]`: The value type of this group policy setting.
@@ -547,10 +547,14 @@ INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
   - `[CloudPcDeviceImageId <String>]`: key: id of cloudPcDeviceImage
+  - `[CloudPcGalleryImageId <String>]`: key: id of cloudPcGalleryImage
   - `[CloudPcId <String>]`: key: id of cloudPC
   - `[CloudPcOnPremisesConnectionId <String>]`: key: id of cloudPcOnPremisesConnection
   - `[CloudPcProvisioningPolicyAssignmentId <String>]`: key: id of cloudPcProvisioningPolicyAssignment
   - `[CloudPcProvisioningPolicyId <String>]`: key: id of cloudPcProvisioningPolicy
+  - `[CloudPcServicePlanId <String>]`: key: id of cloudPcServicePlan
+  - `[CloudPcSnapshotId <String>]`: key: id of cloudPcSnapshot
+  - `[CloudPcSupportedRegionId <String>]`: key: id of cloudPcSupportedRegion
   - `[CloudPcUserSettingAssignmentId <String>]`: key: id of cloudPcUserSettingAssignment
   - `[CloudPcUserSettingId <String>]`: key: id of cloudPcUserSetting
   - `[ComanagementEligibleDeviceId <String>]`: key: id of comanagementEligibleDevice

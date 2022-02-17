@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgRoleManagementDirectoryRoleDefinition
 
 ## SYNOPSIS
-Create new navigation property to roleDefinitions for roleManagement
+Resource representing the roles allowed by RBAC providers and the permissions assigned to the roles.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ New-MgRoleManagementDirectoryRoleDefinition -BodyParameter <IMicrosoftGraphUnifi
 ```
 
 ## DESCRIPTION
-Create new navigation property to roleDefinitions for roleManagement
+Resource representing the roles allowed by RBAC providers and the permissions assigned to the roles.
 
 ## EXAMPLES
 
@@ -51,7 +51,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 unifiedRoleDefinition
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUnifiedRoleDefinition
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 The display name for the unifiedRoleDefinition.
 Read-only when isBuiltIn is true.
 Required.
-Supports $filter (eq and startsWith operators only).
+Supports $filter (eq, in).
 
 ```yaml
 Type: String
@@ -116,8 +116,9 @@ Accept wildcard characters: False
 
 ### -InheritsPermissionsFrom
 Read-only collection of role definitions that the given role definition inherits from.
-Only Azure AD built-in roles support this attribute.
-To construct, see NOTES section for INHERITSPERMISSIONSFROM properties and create a hash table.
+Only Azure AD built-in roles (isBuiltIn is true) support this attribute.
+Supports $expand.
+To construct, please use Get-Help -Online and see NOTES section for INHERITSPERMISSIONSFROM properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUnifiedRoleDefinition[]
@@ -132,9 +133,9 @@ Accept wildcard characters: False
 ```
 
 ### -IsBuiltIn
-Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom.
+Flag indicating whether the role definition is part of the default set included in Azure Active Directory (Azure AD) or a custom definition.
 Read-only.
-Supports $filter (eq operator only).
+Supports $filter (eq, in).
 
 ```yaml
 Type: SwitchParameter
@@ -149,7 +150,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsEnabled
-Flag indicating if the role is enabled for assignment.
+Flag indicating whether the role is enabled for assignment.
 If false the role is not available for assignment.
 Read-only when isBuiltIn is true.
 
@@ -166,12 +167,12 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceScopes
-List of scopes permissions granted by the role definition apply to.
+List of the scopes or permissions the role definition applies to.
 Currently only / is supported.
 Read-only when isBuiltIn is true.
 DO NOT USE.
-This is going to be deprecated soon.
-Attach scope to role assignment
+This will be deprecated soon.
+Attach scope to role assignment.
 
 ```yaml
 Type: String[]
@@ -189,7 +190,7 @@ Accept wildcard characters: False
 List of permissions included in the role.
 Read-only when isBuiltIn is true.
 Required.
-To construct, see NOTES section for ROLEPERMISSIONS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ROLEPERMISSIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUnifiedRolePermission[]
@@ -204,9 +205,8 @@ Accept wildcard characters: False
 ```
 
 ### -TemplateId
-Custom template identifier that can be set when isBuiltIn is false.
+Custom template identifier that can be set when isBuiltIn is false but is read-only when isBuiltIn is true.
 This identifier is typically used if one needs an identifier to be the same across different directories.
-Read-only when isBuiltIn is true.
 
 ```yaml
 Type: String
@@ -221,7 +221,7 @@ Accept wildcard characters: False
 ```
 
 ### -Version
-Indicates version of the unifiedRoleDefinition.
+Indicates version of the role definition.
 Read-only when isBuiltIn is true.
 
 ```yaml
@@ -289,36 +289,36 @@ BODYPARAMETER <IMicrosoftGraphUnifiedRoleDefinition>: unifiedRoleDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
   - `[Description <String>]`: The description for the unifiedRoleDefinition. Read-only when isBuiltIn is true.
-  - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition. Read-only when isBuiltIn is true. Required.  Supports $filter (eq and startsWith operators only).
-  - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition[]>]`: Read-only collection of role definitions that the given role definition inherits from. Only Azure AD built-in roles support this attribute.
-  - `[IsBuiltIn <Boolean?>]`: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom. Read-only.  Supports $filter (eq operator only).
-  - `[IsEnabled <Boolean?>]`: Flag indicating if the role is enabled for assignment. If false the role is not available for assignment. Read-only when isBuiltIn is true.
-  - `[ResourceScopes <String[]>]`: List of scopes permissions granted by the role definition apply to. Currently only / is supported. Read-only when isBuiltIn is true. DO NOT USE. This is going to be deprecated soon. Attach scope to role assignment
+  - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition. Read-only when isBuiltIn is true. Required.  Supports $filter (eq, in).
+  - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition[]>]`: Read-only collection of role definitions that the given role definition inherits from. Only Azure AD built-in roles (isBuiltIn is true) support this attribute. Supports $expand.
+  - `[IsBuiltIn <Boolean?>]`: Flag indicating whether the role definition is part of the default set included in Azure Active Directory (Azure AD) or a custom definition. Read-only. Supports $filter (eq, in).
+  - `[IsEnabled <Boolean?>]`: Flag indicating whether the role is enabled for assignment. If false the role is not available for assignment. Read-only when isBuiltIn is true.
+  - `[ResourceScopes <String[]>]`: List of the scopes or permissions the role definition applies to. Currently only / is supported. Read-only when isBuiltIn is true. DO NOT USE. This will be deprecated soon. Attach scope to role assignment.
   - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]`: List of permissions included in the role. Read-only when isBuiltIn is true. Required.
-    - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource.
+    - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource. Required.
     - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective.
-    - `[ExcludedResourceActions <String[]>]`: 
-  - `[TemplateId <String>]`: Custom template identifier that can be set when isBuiltIn is false. This identifier is typically used if one needs an identifier to be the same across different directories. Read-only when isBuiltIn is true.
-  - `[Version <String>]`: Indicates version of the unifiedRoleDefinition. Read-only when isBuiltIn is true.
+    - `[ExcludedResourceActions <String[]>]`: Set of tasks that may not be performed on a resource. Not yet supported.
+  - `[TemplateId <String>]`: Custom template identifier that can be set when isBuiltIn is false but is read-only when isBuiltIn is true. This identifier is typically used if one needs an identifier to be the same across different directories.
+  - `[Version <String>]`: Indicates version of the role definition. Read-only when isBuiltIn is true.
 
-INHERITSPERMISSIONSFROM <IMicrosoftGraphUnifiedRoleDefinition[]>: Read-only collection of role definitions that the given role definition inherits from. Only Azure AD built-in roles support this attribute.
+INHERITSPERMISSIONSFROM <IMicrosoftGraphUnifiedRoleDefinition[]>: Read-only collection of role definitions that the given role definition inherits from. Only Azure AD built-in roles (isBuiltIn is true) support this attribute. Supports $expand.
   - `[Id <String>]`: Read-only.
   - `[Description <String>]`: The description for the unifiedRoleDefinition. Read-only when isBuiltIn is true.
-  - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition. Read-only when isBuiltIn is true. Required.  Supports $filter (eq and startsWith operators only).
-  - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition[]>]`: Read-only collection of role definitions that the given role definition inherits from. Only Azure AD built-in roles support this attribute.
-  - `[IsBuiltIn <Boolean?>]`: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom. Read-only.  Supports $filter (eq operator only).
-  - `[IsEnabled <Boolean?>]`: Flag indicating if the role is enabled for assignment. If false the role is not available for assignment. Read-only when isBuiltIn is true.
-  - `[ResourceScopes <String[]>]`: List of scopes permissions granted by the role definition apply to. Currently only / is supported. Read-only when isBuiltIn is true. DO NOT USE. This is going to be deprecated soon. Attach scope to role assignment
+  - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition. Read-only when isBuiltIn is true. Required.  Supports $filter (eq, in).
+  - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition[]>]`: Read-only collection of role definitions that the given role definition inherits from. Only Azure AD built-in roles (isBuiltIn is true) support this attribute. Supports $expand.
+  - `[IsBuiltIn <Boolean?>]`: Flag indicating whether the role definition is part of the default set included in Azure Active Directory (Azure AD) or a custom definition. Read-only. Supports $filter (eq, in).
+  - `[IsEnabled <Boolean?>]`: Flag indicating whether the role is enabled for assignment. If false the role is not available for assignment. Read-only when isBuiltIn is true.
+  - `[ResourceScopes <String[]>]`: List of the scopes or permissions the role definition applies to. Currently only / is supported. Read-only when isBuiltIn is true. DO NOT USE. This will be deprecated soon. Attach scope to role assignment.
   - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]`: List of permissions included in the role. Read-only when isBuiltIn is true. Required.
-    - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource.
+    - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource. Required.
     - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective.
-    - `[ExcludedResourceActions <String[]>]`: 
-  - `[TemplateId <String>]`: Custom template identifier that can be set when isBuiltIn is false. This identifier is typically used if one needs an identifier to be the same across different directories. Read-only when isBuiltIn is true.
-  - `[Version <String>]`: Indicates version of the unifiedRoleDefinition. Read-only when isBuiltIn is true.
+    - `[ExcludedResourceActions <String[]>]`: Set of tasks that may not be performed on a resource. Not yet supported.
+  - `[TemplateId <String>]`: Custom template identifier that can be set when isBuiltIn is false but is read-only when isBuiltIn is true. This identifier is typically used if one needs an identifier to be the same across different directories.
+  - `[Version <String>]`: Indicates version of the role definition. Read-only when isBuiltIn is true.
 
 ROLEPERMISSIONS <IMicrosoftGraphUnifiedRolePermission[]>: List of permissions included in the role. Read-only when isBuiltIn is true. Required.
-  - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource.
+  - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource. Required.
   - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective.
-  - `[ExcludedResourceActions <String[]>]`: 
+  - `[ExcludedResourceActions <String[]>]`: Set of tasks that may not be performed on a resource. Not yet supported.
 
 ## RELATED LINKS

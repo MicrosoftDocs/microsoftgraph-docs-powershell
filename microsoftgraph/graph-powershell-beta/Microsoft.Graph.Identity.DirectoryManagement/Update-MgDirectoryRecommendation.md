@@ -52,13 +52,6 @@ Update the navigation property recommendations in directory
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
 ## PARAMETERS
 
 ### -ActionSteps
@@ -315,7 +308,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -422,9 +415,107 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+ACTIONSTEPS <IMicrosoftGraphActionStep[]>: .
+  - `[ActionUrl <IMicrosoftGraphActionUrl>]`: actionUrl
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: 
+    - `[Url <String>]`: 
+  - `[StepNumber <Int64?>]`: 
+  - `[Text <String>]`: 
+
+BODYPARAMETER <IMicrosoftGraphRecommendation>: recommendation
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: Read-only.
+  - `[ActionSteps <IMicrosoftGraphActionStep[]>]`: 
+    - `[ActionUrl <IMicrosoftGraphActionUrl>]`: actionUrl
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: 
+      - `[Url <String>]`: 
+    - `[StepNumber <Int64?>]`: 
+    - `[Text <String>]`: 
+  - `[Benefits <String>]`: 
+  - `[Category <String>]`: recommendationCategory
+  - `[CreatedDateTime <DateTime?>]`: 
+  - `[DisplayName <String>]`: 
+  - `[ImpactStartDateTime <DateTime?>]`: 
+  - `[ImpactType <String>]`: 
+  - `[ImpactedResources <IMicrosoftGraphRecommendationResource[]>]`: 
+    - `[Id <String>]`: Read-only.
+    - `[AddedDateTime <DateTime?>]`: 
+    - `[AdditionalDetails <IMicrosoftGraphKeyValue[]>]`: 
+      - `[Key <String>]`: Key for the key-value pair.
+      - `[Value <String>]`: Value for the key-value pair.
+    - `[ApiUrl <String>]`: 
+    - `[DisplayName <String>]`: 
+    - `[Owner <String>]`: 
+    - `[PortalUrl <String>]`: 
+    - `[Rank <Int32?>]`: 
+    - `[RecommendationId <String>]`: 
+    - `[ResourceType <String>]`: 
+    - `[Status <String>]`: recommendationStatus
+  - `[Insights <String>]`: 
+  - `[LastCheckedDateTime <DateTime?>]`: 
+  - `[LastModifiedBy <String>]`: 
+  - `[LastModifiedDateTime <DateTime?>]`: 
+  - `[PostponeUntilDateTime <DateTime?>]`: 
+  - `[Priority <String>]`: recommendationPriority
+  - `[Status <String>]`: recommendationStatus
+
+IMPACTEDRESOURCES <IMicrosoftGraphRecommendationResource[]>: .
+  - `[Id <String>]`: Read-only.
+  - `[AddedDateTime <DateTime?>]`: 
+  - `[AdditionalDetails <IMicrosoftGraphKeyValue[]>]`: 
+    - `[Key <String>]`: Key for the key-value pair.
+    - `[Value <String>]`: Value for the key-value pair.
+  - `[ApiUrl <String>]`: 
+  - `[DisplayName <String>]`: 
+  - `[Owner <String>]`: 
+  - `[PortalUrl <String>]`: 
+  - `[Rank <Int32?>]`: 
+  - `[RecommendationId <String>]`: 
+  - `[ResourceType <String>]`: 
+  - `[Status <String>]`: recommendationStatus
+
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
+  - `[AdministrativeUnitId <String>]`: key: id of administrativeUnit
+  - `[AllowedValueId <String>]`: key: id of allowedValue
+  - `[AttributeSetId <String>]`: key: id of attributeSet
+  - `[CommandId <String>]`: key: id of command
+  - `[ContractId <String>]`: key: id of contract
+  - `[CustomSecurityAttributeDefinitionId <String>]`: key: id of customSecurityAttributeDefinition
+  - `[DeviceId <String>]`: key: id of device
+  - `[DirectoryObjectId <String>]`: key: id of directoryObject
+  - `[DirectoryRoleId <String>]`: key: id of directoryRole
+  - `[DirectoryRoleTemplateId <String>]`: key: id of directoryRoleTemplate
+  - `[DirectorySettingId <String>]`: key: id of directorySetting
+  - `[DirectorySettingTemplateId <String>]`: key: id of directorySettingTemplate
+  - `[DomainDnsRecordId <String>]`: key: id of domainDnsRecord
+  - `[DomainId <String>]`: key: id of domain
+  - `[ExtensionId <String>]`: key: id of extension
+  - `[FeatureRolloutPolicyId <String>]`: key: id of featureRolloutPolicy
+  - `[IdentityProviderBaseId <String>]`: key: id of identityProviderBase
+  - `[InboundSharedUserProfileUserId <String>]`: key: userId of inboundSharedUserProfile
+  - `[InternalDomainFederationId <String>]`: key: id of internalDomainFederation
+  - `[OrgContactId <String>]`: key: id of orgContact
+  - `[OrganizationId <String>]`: key: id of organization
+  - `[OutboundSharedUserProfileUserId <String>]`: key: userId of outboundSharedUserProfile
+  - `[ProfileCardPropertyId <String>]`: key: id of profileCardProperty
+  - `[RecommendationId <String>]`: key: id of recommendation
+  - `[RecommendationResourceId <String>]`: key: id of recommendationResource
+  - `[ScopedRoleMembershipId <String>]`: key: id of scopedRoleMembership
+  - `[SharedEmailDomainId <String>]`: key: id of sharedEmailDomain
+  - `[SharedEmailDomainInvitationId <String>]`: key: id of sharedEmailDomainInvitation
+  - `[SubscribedSkuId <String>]`: key: id of subscribedSku
+  - `[TenantReferenceTenantId <String>]`: key: tenantId of tenantReference
+  - `[UsageRightId <String>]`: key: id of usageRight
+  - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryrecommendation](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryrecommendation)
-

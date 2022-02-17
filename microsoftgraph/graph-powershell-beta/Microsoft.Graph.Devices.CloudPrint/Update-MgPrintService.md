@@ -62,7 +62,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 printService
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPrintService1
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 Endpoints that can be used to access the service.
 Read-only.
 Nullable.
-To construct, see NOTES section for ENDPOINTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ENDPOINTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPrintServiceEndpoint1[]
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDevicesCloudPrintIdentity

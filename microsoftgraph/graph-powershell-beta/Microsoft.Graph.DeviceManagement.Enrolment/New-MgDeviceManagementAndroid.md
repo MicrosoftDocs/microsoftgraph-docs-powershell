@@ -66,7 +66,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Enrollment Profile used to enroll COSU devices using Google's Cloud Management.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAndroidForWorkEnrollmentProfile
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 
 ### -QrCodeImage
 Contains properties for a generic mime content.
-To construct, see NOTES section for QRCODEIMAGE properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for QRCODEIMAGE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMimeContent

@@ -67,7 +67,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsJaif24UsersUserIdInsightsSharedSharedinsightIdLastsharedmethodMicrosoftGraphMobileappcontentfileMicrosoftGraphCommitPostRequestbodyContentApplicationJsonSchema
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 
 ### -FileEncryptionInfo
 Contains properties for file encryption information for the content version of a line of business app.
-To construct, see NOTES section for FILEENCRYPTIONINFO properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for FILEENCRYPTIONINFO properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphFileEncryptionInfo
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
@@ -231,9 +231,12 @@ FILEENCRYPTIONINFO <IMicrosoftGraphFileEncryptionInfo>: Contains properties for 
   - `[ProfileIdentifier <String>]`: The the profile identifier.
 
 INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
+  - `[AccessReviewInstanceDecisionItemId <String>]`: key: id of accessReviewInstanceDecisionItem
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
   - `[AuthenticationMethodId <String>]`: key: id of authenticationMethod
+  - `[BaseTaskId <String>]`: key: id of baseTask
+  - `[BaseTaskListId <String>]`: key: id of baseTaskList
   - `[CalendarId <String>]`: key: id of calendar
   - `[DeviceEnrollmentConfigurationId <String>]`: key: id of deviceEnrollmentConfiguration
   - `[DeviceLogCollectionResponseId <String>]`: key: id of deviceLogCollectionResponse

@@ -40,7 +40,7 @@ Accept wildcard characters: False
 
 ### -ConnectedOrganization
 The connected organization.
-To construct, see NOTES section for CONNECTEDORGANIZATION properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for CONNECTEDORGANIZATION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphConnectedOrganization[]
@@ -76,11 +76,11 @@ CONNECTEDORGANIZATION <IMicrosoftGraphConnectedOrganization[]>: The connected or
   - `[CreatedBy <String>]`: UPN of the user who created this resource. Read-only.
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
   - `[Description <String>]`: The description of the connected organization.
-  - `[DisplayName <String>]`: The display name of the connected organization.
+  - `[DisplayName <String>]`: The display name of the connected organization. Supports $filter (eq).
   - `[ExternalSponsors <IMicrosoftGraphDirectoryObject[]>]`: Nullable.
     - `[Id <String>]`: Read-only.
     - `[DeletedDateTime <DateTime?>]`: 
-  - `[IdentitySources <IMicrosoftGraphIdentitySource[]>]`: 
+  - `[IdentitySources <IMicrosoftGraphIdentitySource[]>]`: The identity sources in this connected organization, one of azureActiveDirectoryTenant, domainIdentitySource or externalDomainFederation. Nullable.
   - `[InternalSponsors <IMicrosoftGraphDirectoryObject[]>]`: Nullable.
   - `[ModifiedBy <String>]`: UPN of the user who last modified this resource. Read-only.
   - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.

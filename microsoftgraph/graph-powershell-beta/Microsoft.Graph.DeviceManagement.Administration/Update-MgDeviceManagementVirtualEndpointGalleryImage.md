@@ -47,13 +47,6 @@ The gallery image resource on Cloud PC.
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -226,7 +219,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -275,7 +268,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -387,9 +380,80 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+BODYPARAMETER <IMicrosoftGraphCloudPcGalleryImage>: cloudPcGalleryImage
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: Read-only.
+  - `[DisplayName <String>]`: The official display name of the gallery image. Read-only.
+  - `[EndDate <DateTime?>]`: The date in which this image is no longer within long-term support. The Cloud PC will continue to provide short-term support. Read-only.
+  - `[ExpirationDate <DateTime?>]`: The date when the image is no longer available. Read-only.
+  - `[Offer <String>]`: The offer name of the gallery image. This value will be passed to Azure to get the image resource. Read-only.
+  - `[OfferDisplayName <String>]`: The official display offer name of the gallery image. For example, Windows 10 Enterprise + OS Optimizations. Read-only.
+  - `[Publisher <String>]`: The publisher name of the gallery image. This value will be passed to Azure to get the image resource. Read-only.
+  - `[RecommendedSku <String>]`: Recommended Cloud PC SKU for this gallery image. Read-only.
+  - `[SizeInGb <Int32?>]`: The size of this image in gigabytes. Read-only.
+  - `[Sku <String>]`: The SKU name of the gallery image. This value will be passed to Azure to get the image resource. Read-only.
+  - `[SkuDisplayName <String>]`: The official display stock keeping unit (SKU) name of this gallery image. For example, 2004. Read-only.
+  - `[StartDate <DateTime?>]`: The date when the image becomes available. Read-only.
+  - `[Status <String>]`: cloudPcGalleryImageStatus
+
+INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
+  - `[AuditEventId <String>]`: key: id of auditEvent
+  - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
+  - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
+  - `[CloudPcDeviceImageId <String>]`: key: id of cloudPcDeviceImage
+  - `[CloudPcGalleryImageId <String>]`: key: id of cloudPcGalleryImage
+  - `[CloudPcId <String>]`: key: id of cloudPC
+  - `[CloudPcOnPremisesConnectionId <String>]`: key: id of cloudPcOnPremisesConnection
+  - `[CloudPcProvisioningPolicyAssignmentId <String>]`: key: id of cloudPcProvisioningPolicyAssignment
+  - `[CloudPcProvisioningPolicyId <String>]`: key: id of cloudPcProvisioningPolicy
+  - `[CloudPcServicePlanId <String>]`: key: id of cloudPcServicePlan
+  - `[CloudPcSnapshotId <String>]`: key: id of cloudPcSnapshot
+  - `[CloudPcSupportedRegionId <String>]`: key: id of cloudPcSupportedRegion
+  - `[CloudPcUserSettingAssignmentId <String>]`: key: id of cloudPcUserSettingAssignment
+  - `[CloudPcUserSettingId <String>]`: key: id of cloudPcUserSetting
+  - `[ComanagementEligibleDeviceId <String>]`: key: id of comanagementEligibleDevice
+  - `[ComplianceManagementPartnerId <String>]`: key: id of complianceManagementPartner
+  - `[DeviceAndAppManagementRoleAssignmentId <String>]`: key: id of deviceAndAppManagementRoleAssignment
+  - `[DeviceManagementDomainJoinConnectorId <String>]`: key: id of deviceManagementDomainJoinConnector
+  - `[DeviceManagementExchangeConnectorId <String>]`: key: id of deviceManagementExchangeConnector
+  - `[DeviceManagementExchangeOnPremisesPolicyId <String>]`: key: id of deviceManagementExchangeOnPremisesPolicy
+  - `[DeviceManagementPartnerId <String>]`: key: id of deviceManagementPartner
+  - `[GroupPolicyCategoryId <String>]`: key: id of groupPolicyCategory
+  - `[GroupPolicyDefinitionFileId <String>]`: key: id of groupPolicyDefinitionFile
+  - `[GroupPolicyDefinitionId <String>]`: key: id of groupPolicyDefinition
+  - `[GroupPolicyMigrationReportId <String>]`: key: id of groupPolicyMigrationReport
+  - `[GroupPolicyObjectFileId <String>]`: key: id of groupPolicyObjectFile
+  - `[GroupPolicyOperationId <String>]`: key: id of groupPolicyOperation
+  - `[GroupPolicyPresentationId <String>]`: key: id of groupPolicyPresentation
+  - `[GroupPolicySettingMappingId <String>]`: key: id of groupPolicySettingMapping
+  - `[GroupPolicyUploadedDefinitionFileId <String>]`: key: id of groupPolicyUploadedDefinitionFile
+  - `[IntuneBrandingProfileAssignmentId <String>]`: key: id of intuneBrandingProfileAssignment
+  - `[IntuneBrandingProfileId <String>]`: key: id of intuneBrandingProfile
+  - `[IosUpdateDeviceStatusId <String>]`: key: id of iosUpdateDeviceStatus
+  - `[ManagedAllDeviceCertificateStateId <String>]`: key: id of managedAllDeviceCertificateState
+  - `[MobileThreatDefenseConnectorId <String>]`: key: id of mobileThreatDefenseConnector
+  - `[NdesConnectorId <String>]`: key: id of ndesConnector
+  - `[RemoteAssistancePartnerId <String>]`: key: id of remoteAssistancePartner
+  - `[ResourceOperationId <String>]`: key: id of resourceOperation
+  - `[RestrictedAppsViolationId <String>]`: key: id of restrictedAppsViolation
+  - `[RoleAssignmentId <String>]`: key: id of roleAssignment
+  - `[RoleDefinitionId <String>]`: key: id of roleDefinition
+  - `[RoleScopeTagAutoAssignmentId <String>]`: key: id of roleScopeTagAutoAssignment
+  - `[RoleScopeTagId <String>]`: key: id of roleScopeTag
+  - `[TelecomExpenseManagementPartnerId <String>]`: key: id of telecomExpenseManagementPartner
+  - `[TermsAndConditionsAcceptanceStatusId <String>]`: key: id of termsAndConditionsAcceptanceStatus
+  - `[TermsAndConditionsAssignmentId <String>]`: key: id of termsAndConditionsAssignment
+  - `[TermsAndConditionsGroupAssignmentId <String>]`: key: id of termsAndConditionsGroupAssignment
+  - `[TermsAndConditionsId <String>]`: key: id of termsAndConditions
+  - `[UnsupportedGroupPolicyExtensionId <String>]`: key: id of unsupportedGroupPolicyExtension
+  - `[UserPfxCertificateId <String>]`: key: id of userPFXCertificate
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointgalleryimage](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointgalleryimage)
-

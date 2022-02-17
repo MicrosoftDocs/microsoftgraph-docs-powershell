@@ -50,7 +50,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1JhdydfInformationprotectionDatalosspreventionpoliciesMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 
 ### -EvaluationInput
 dlpEvaluationInput
-To construct, see NOTES section for EVALUATIONINPUT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for EVALUATIONINPUT properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDlpEvaluationInput
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 
 ### -NotificationInfo
 dlpNotification
-To construct, see NOTES section for NOTIFICATIONINFO properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for NOTIFICATIONINFO properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDlpNotification

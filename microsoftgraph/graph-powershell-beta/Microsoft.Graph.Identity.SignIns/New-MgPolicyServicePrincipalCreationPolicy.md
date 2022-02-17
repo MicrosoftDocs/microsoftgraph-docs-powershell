@@ -32,13 +32,6 @@ Create new navigation property to servicePrincipalCreationPolicies for policies
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -176,7 +169,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -222,9 +215,41 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServicePrincipalCreationPolicy
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+BODYPARAMETER <IMicrosoftGraphServicePrincipalCreationPolicy>: servicePrincipalCreationPolicy
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Description <String>]`: Description for this policy. Required.
+  - `[DisplayName <String>]`: Display name for this policy. Required.
+  - `[DeletedDateTime <DateTime?>]`: 
+  - `[Id <String>]`: Read-only.
+  - `[Excludes <IMicrosoftGraphServicePrincipalCreationConditionSet[]>]`: 
+    - `[Id <String>]`: Read-only.
+    - `[ApplicationIds <String[]>]`: 
+    - `[ApplicationPublisherIds <String[]>]`: 
+    - `[ApplicationTenantIds <String[]>]`: 
+    - `[ApplicationsFromVerifiedPublisherOnly <Boolean?>]`: 
+  - `[Includes <IMicrosoftGraphServicePrincipalCreationConditionSet[]>]`: 
+  - `[IsBuiltIn <Boolean?>]`: 
+
+EXCLUDES <IMicrosoftGraphServicePrincipalCreationConditionSet[]>: .
+  - `[Id <String>]`: Read-only.
+  - `[ApplicationIds <String[]>]`: 
+  - `[ApplicationPublisherIds <String[]>]`: 
+  - `[ApplicationTenantIds <String[]>]`: 
+  - `[ApplicationsFromVerifiedPublisherOnly <Boolean?>]`: 
+
+INCLUDES <IMicrosoftGraphServicePrincipalCreationConditionSet[]>: .
+  - `[Id <String>]`: Read-only.
+  - `[ApplicationIds <String[]>]`: 
+  - `[ApplicationPublisherIds <String[]>]`: 
+  - `[ApplicationTenantIds <String[]>]`: 
+  - `[ApplicationsFromVerifiedPublisherOnly <Boolean?>]`: 
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgpolicyserviceprincipalcreationpolicy](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgpolicyserviceprincipalcreationpolicy)
-

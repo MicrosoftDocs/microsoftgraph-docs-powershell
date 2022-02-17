@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementtermandcondition
@@ -54,7 +54,7 @@ Accept wildcard characters: False
 
 ### -AcceptanceStatuses
 The list of acceptance statuses for this T&C policy.
-To construct, see NOTES section for ACCEPTANCESTATUSES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ACCEPTANCESTATUSES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTermsAndConditionsAcceptanceStatus1[]
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 
 ### -Assignments
 The list of assignments for this T&C policy.
-To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTermsAndConditionsAssignment1[]
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy.
 T&C policies' contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance.
 They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTermsAndConditions
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 
 ### -GroupAssignments
 The list of group assignments for this T&C policy.
-To construct, see NOTES section for GROUPASSIGNMENTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for GROUPASSIGNMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTermsAndConditionsGroupAssignment[]
@@ -349,7 +349,7 @@ ACCEPTANCESTATUSES <IMicrosoftGraphTermsAndConditionsAcceptanceStatus1[]>: The l
       - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-        - `[DeviceAndAppManagementAssignmentFilterType <String>]`: deviceAndAppManagementAssignmentFilterType
+        - `[DeviceAndAppManagementAssignmentFilterType <String>]`: Represents type of the assignment filter.
     - `[BodyText <String>]`: Administrator-supplied body text of the terms and conditions, typically the terms themselves. This is shown to the user on prompts to accept the T&C policy.
     - `[CreatedDateTime <DateTime?>]`: DateTime the object was created.
     - `[Description <String>]`: Administrator-supplied description of the T&C policy.
@@ -371,7 +371,7 @@ ASSIGNMENTS <IMicrosoftGraphTermsAndConditionsAssignment1[]>: The list of assign
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-    - `[DeviceAndAppManagementAssignmentFilterType <String>]`: deviceAndAppManagementAssignmentFilterType
+    - `[DeviceAndAppManagementAssignmentFilterType <String>]`: Represents type of the assignment filter.
 
 BODYPARAMETER <IMicrosoftGraphTermsAndConditions>: A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy. T&C policies' contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance. They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -389,7 +389,7 @@ BODYPARAMETER <IMicrosoftGraphTermsAndConditions>: A termsAndConditions entity r
     - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-      - `[DeviceAndAppManagementAssignmentFilterType <String>]`: deviceAndAppManagementAssignmentFilterType
+      - `[DeviceAndAppManagementAssignmentFilterType <String>]`: Represents type of the assignment filter.
   - `[BodyText <String>]`: Administrator-supplied body text of the terms and conditions, typically the terms themselves. This is shown to the user on prompts to accept the T&C policy.
   - `[CreatedDateTime <DateTime?>]`: DateTime the object was created.
   - `[Description <String>]`: Administrator-supplied description of the T&C policy.
@@ -423,7 +423,7 @@ GROUPASSIGNMENTS <IMicrosoftGraphTermsAndConditionsGroupAssignment[]>: The list 
       - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-        - `[DeviceAndAppManagementAssignmentFilterType <String>]`: deviceAndAppManagementAssignmentFilterType
+        - `[DeviceAndAppManagementAssignmentFilterType <String>]`: Represents type of the assignment filter.
     - `[BodyText <String>]`: Administrator-supplied body text of the terms and conditions, typically the terms themselves. This is shown to the user on prompts to accept the T&C policy.
     - `[CreatedDateTime <DateTime?>]`: DateTime the object was created.
     - `[Description <String>]`: Administrator-supplied description of the T&C policy.
@@ -436,8 +436,5 @@ GROUPASSIGNMENTS <IMicrosoftGraphTermsAndConditionsGroupAssignment[]>: The list 
     - `[Version <Int32?>]`: Integer indicating the current version of the terms. Incremented when an administrator makes a change to the terms and wishes to require users to re-accept the modified T&C policy.
 
 ## RELATED LINKS
-
-## RELATED LINKS
-
 
 ## RELATED LINKS
