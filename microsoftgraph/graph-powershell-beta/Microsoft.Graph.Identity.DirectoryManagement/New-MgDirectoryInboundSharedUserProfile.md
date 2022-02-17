@@ -78,8 +78,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DisplayName
-.
+### -DeviceId
+The unique identifier of the device, Intune DeviceID or SCCM device id.
 
 ```yaml
 Type: String
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: Int32
 Parameter Sets: CreateExpanded
 Aliases:
 

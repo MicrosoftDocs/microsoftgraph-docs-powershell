@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDomainDomainNameReferenceByRef
 
 ## SYNOPSIS
-Read-only, Nullable
+Get ref of alerts from security
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-MgDomainDomainNameReferenceByRef -DomainId <String> [-Filter <String>] [-Sea
 ```
 
 ## DESCRIPTION
-Read-only, Nullable
+Get ref of alerts from security
 
 ## EXAMPLES
 
@@ -55,21 +55,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DomainId
-key: id of domain
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Filter
 Filter items by property values
 
@@ -79,6 +64,21 @@ Parameter Sets: (All)
 Aliases:
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IncidentId
+key: id of incident
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False

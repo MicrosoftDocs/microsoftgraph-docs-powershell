@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDomainNameReference
 
 ## SYNOPSIS
-Read-only, Nullable
+The appManagementPolicy applied to this application.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgDomainNameReference -DomainId <String> [-ExpandProperty <String[]>] [-Filt
 ```
 
 ## DESCRIPTION
-Read-only, Nullable
+The appManagementPolicy applied to this application.
 
 ## EXAMPLES
 
@@ -40,6 +40,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ApplicationId
+key: id of application
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -CountVariable
 Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
@@ -50,21 +65,6 @@ Parameter Sets: (All)
 Aliases: CV
 
 Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DomainId
-key: id of domain
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -198,7 +198,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppManagementPolicy
 ## NOTES
 
 ALIASES

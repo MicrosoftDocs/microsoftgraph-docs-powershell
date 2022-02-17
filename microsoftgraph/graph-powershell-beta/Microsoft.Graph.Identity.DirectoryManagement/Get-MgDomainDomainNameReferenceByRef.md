@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDomainDomainNameReferenceByRef
 
 ## SYNOPSIS
-Read-only, Nullable
+The collection of the sub-sites under this site.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-MgDomainDomainNameReferenceByRef -DomainId <String> [-Filter <String>] [-Sea
 ```
 
 ## DESCRIPTION
-Read-only, Nullable
+The collection of the sub-sites under this site.
 
 ## EXAMPLES
 
@@ -49,21 +49,6 @@ Parameter Sets: (All)
 Aliases: CV
 
 Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DomainId
-key: id of domain
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -109,6 +94,21 @@ Parameter Sets: (All)
 Aliases:
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SiteId
+key: id of site
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDomainNameReference
 
 ## SYNOPSIS
-Read-only, Nullable
+Get alerts from security
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgDomainNameReference -DomainId <String> [-ExpandProperty <String[]>] [-Filt
 ```
 
 ## DESCRIPTION
-Read-only, Nullable
+Get alerts from security
 
 ## EXAMPLES
 
@@ -56,21 +56,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DomainId
-key: id of domain
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ExpandProperty
 Expand related entities
 
@@ -95,6 +80,21 @@ Parameter Sets: (All)
 Aliases:
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IncidentId
+key: id of incident
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -198,7 +198,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAlertV2
 ## NOTES
 
 ALIASES

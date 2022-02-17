@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/new-mgrolemanagemententitlementmanagementroleeligibilityschedulerequest
@@ -710,5 +710,8 @@ TICKETINFO <IMicrosoftGraphTicketInfo>: ticketInfo
   - `[TicketSystem <String>]`: Ticket system meta data
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS
