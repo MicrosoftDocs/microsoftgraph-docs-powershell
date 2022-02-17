@@ -49,7 +49,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 unifiedRbacResourceNamespace
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUnifiedRbacResourceNamespace
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 
 ### -ResourceActions
 .
-To construct, see NOTES section for RESOURCEACTIONS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for RESOURCEACTIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUnifiedRbacResourceAction[]

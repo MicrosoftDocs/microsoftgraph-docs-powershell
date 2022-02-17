@@ -8,8 +8,9 @@ schema: 2.0.0
 # Remove-MgRoleManagementEntitlementManagementRoleAssignmentAppScope
 
 ## SYNOPSIS
-Details of the app specific scope when the assignment scope is app specific.
+Read-only property with details of the app specific scope when the assignment scope is app specific.
 Containment entity.
+Supports $expand.
 
 ## SYNTAX
 
@@ -27,8 +28,9 @@ Remove-MgRoleManagementEntitlementManagementRoleAssignmentAppScope
 ```
 
 ## DESCRIPTION
-Details of the app specific scope when the assignment scope is app specific.
+Read-only property with details of the app specific scope when the assignment scope is app specific.
 Containment entity.
+Supports $expand.
 
 ## EXAMPLES
 
@@ -51,7 +53,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementEnrolmentIdentity
@@ -183,6 +185,5 @@ INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[WindowsAutopilotDeviceIdentityId <String>]`: key: id of windowsAutopilotDeviceIdentity
   - `[WindowsFeatureUpdateProfileAssignmentId <String>]`: key: id of windowsFeatureUpdateProfileAssignment
   - `[WindowsFeatureUpdateProfileId <String>]`: key: id of windowsFeatureUpdateProfile
-  - `[WindowsUpdateStateId <String>]`: key: id of windowsUpdateState
 
 ## RELATED LINKS

@@ -47,13 +47,6 @@ Represents references to a directory or domain of another organization whose use
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -256,7 +249,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -318,9 +311,88 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+BODYPARAMETER <IMicrosoftGraphConnectedOrganization1>: connectedOrganization
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: Read-only.
+  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+  - `[Description <String>]`: The description of the connected organization.
+  - `[DisplayName <String>]`: The display name of the connected organization. Supports $filter (eq).
+  - `[ExternalSponsors <IMicrosoftGraphDirectoryObject[]>]`: Nullable.
+    - `[Id <String>]`: Read-only.
+    - `[DeletedDateTime <DateTime?>]`: 
+  - `[IdentitySources <IMicrosoftGraphIdentitySource[]>]`: The identity sources in this connected organization, one of azureActiveDirectoryTenant, domainIdentitySource or externalDomainFederation. Nullable.
+  - `[InternalSponsors <IMicrosoftGraphDirectoryObject[]>]`: Nullable.
+  - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+  - `[State <String>]`: connectedOrganizationState
+
+EXTERNALSPONSORS <IMicrosoftGraphDirectoryObject[]>: Nullable.
+  - `[Id <String>]`: Read-only.
+  - `[DeletedDateTime <DateTime?>]`: 
+
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
+  - `[AccessPackageAssignmentId <String>]`: key: id of accessPackageAssignment
+  - `[AccessPackageAssignmentPolicyId <String>]`: key: id of accessPackageAssignmentPolicy
+  - `[AccessPackageAssignmentRequestId <String>]`: key: id of accessPackageAssignmentRequest
+  - `[AccessPackageAssignmentResourceRoleId <String>]`: key: id of accessPackageAssignmentResourceRole
+  - `[AccessPackageCatalogId <String>]`: key: id of accessPackageCatalog
+  - `[AccessPackageId <String>]`: key: id of accessPackage
+  - `[AccessPackageResourceEnvironmentId <String>]`: key: id of accessPackageResourceEnvironment
+  - `[AccessPackageResourceId <String>]`: key: id of accessPackageResource
+  - `[AccessPackageResourceRequestId <String>]`: key: id of accessPackageResourceRequest
+  - `[AccessPackageResourceRoleId <String>]`: key: id of accessPackageResourceRole
+  - `[AccessPackageResourceRoleScopeId <String>]`: key: id of accessPackageResourceRoleScope
+  - `[AccessPackageResourceScopeId <String>]`: key: id of accessPackageResourceScope
+  - `[AccessReviewDecisionId <String>]`: key: id of accessReviewDecision
+  - `[AccessReviewHistoryDefinitionId <String>]`: key: id of accessReviewHistoryDefinition
+  - `[AccessReviewHistoryInstanceId <String>]`: key: id of accessReviewHistoryInstance
+  - `[AccessReviewId <String>]`: key: id of accessReview
+  - `[AccessReviewId1 <String>]`: key: id of accessReview
+  - `[AccessReviewInstanceDecisionItemId <String>]`: key: id of accessReviewInstanceDecisionItem
+  - `[AccessReviewInstanceDecisionItemId1 <String>]`: key: id of accessReviewInstanceDecisionItem
+  - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
+  - `[AccessReviewReviewerId <String>]`: key: id of accessReviewReviewer
+  - `[AccessReviewScheduleDefinitionId <String>]`: key: id of accessReviewScheduleDefinition
+  - `[AgreementAcceptanceId <String>]`: key: id of agreementAcceptance
+  - `[AgreementFileLocalizationId <String>]`: key: id of agreementFileLocalization
+  - `[AgreementFileVersionId <String>]`: key: id of agreementFileVersion
+  - `[AgreementId <String>]`: key: id of agreement
+  - `[AppConsentRequestId <String>]`: key: id of appConsentRequest
+  - `[ApprovalId <String>]`: key: id of approval
+  - `[ApprovalStageId <String>]`: key: id of approvalStage
+  - `[ApprovalStepId <String>]`: key: id of approvalStep
+  - `[BusinessFlowTemplateId <String>]`: key: id of businessFlowTemplate
+  - `[ConnectedOrganizationId <String>]`: key: id of connectedOrganization
+  - `[DirectoryObjectId <String>]`: key: id of directoryObject
+  - `[GovernanceInsightId <String>]`: key: id of governanceInsight
+  - `[GovernanceResourceId <String>]`: key: id of governanceResource
+  - `[GovernanceRoleAssignmentId <String>]`: key: id of governanceRoleAssignment
+  - `[GovernanceRoleAssignmentRequestId <String>]`: key: id of governanceRoleAssignmentRequest
+  - `[GovernanceRoleDefinitionId <String>]`: key: id of governanceRoleDefinition
+  - `[GovernanceRoleSettingId <String>]`: key: id of governanceRoleSetting
+  - `[GroupId <String>]`: key: id of group
+  - `[On <String>]`: Usage: on={on}
+  - `[PrivilegedAccessId <String>]`: key: id of privilegedAccess
+  - `[PrivilegedApprovalId <String>]`: key: id of privilegedApproval
+  - `[PrivilegedOperationEventId <String>]`: key: id of privilegedOperationEvent
+  - `[PrivilegedRoleAssignmentId <String>]`: key: id of privilegedRoleAssignment
+  - `[PrivilegedRoleAssignmentRequestId <String>]`: key: id of privilegedRoleAssignmentRequest
+  - `[PrivilegedRoleId <String>]`: key: id of privilegedRole
+  - `[ProgramControlId <String>]`: key: id of programControl
+  - `[ProgramControlTypeId <String>]`: key: id of programControlType
+  - `[ProgramId <String>]`: key: id of program
+  - `[UserConsentRequestId <String>]`: key: id of userConsentRequest
+  - `[UserId <String>]`: key: id of user
+
+INTERNALSPONSORS <IMicrosoftGraphDirectoryObject[]>: Nullable.
+  - `[Id <String>]`: Read-only.
+  - `[DeletedDateTime <DateTime?>]`: 
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementconnectedorganization](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementconnectedorganization)
-

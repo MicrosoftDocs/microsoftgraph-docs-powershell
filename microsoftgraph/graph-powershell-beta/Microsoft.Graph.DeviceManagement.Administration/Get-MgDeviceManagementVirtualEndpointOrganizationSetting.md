@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementVirtualEndpointOrganizationSetting
 
 ## SYNOPSIS
-Get organizationSettings from deviceManagement
+The Cloud PC organization settings for a tenant.
 
 ## SYNTAX
 
@@ -18,16 +18,9 @@ Get-MgDeviceManagementVirtualEndpointOrganizationSetting [-ExpandProperty <Strin
 ```
 
 ## DESCRIPTION
-Get organizationSettings from deviceManagement
+The Cloud PC organization settings for a tenant.
 
 ## EXAMPLES
-
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -70,9 +63,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCloudPcOrganizationSettings
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointorganizationsetting](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointorganizationsetting)
-

@@ -51,7 +51,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 threatAssessmentRequest
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphThreatAssessmentRequest
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 identitySet
-To construct, see NOTES section for CREATEDBY properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 A collection of threat assessment results.
 Read-only.
 By default, a GET /threatAssessmentRequests/{id} does not return this property unless you apply $expand on it.
-To construct, see NOTES section for RESULTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for RESULTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphThreatAssessmentResult[]

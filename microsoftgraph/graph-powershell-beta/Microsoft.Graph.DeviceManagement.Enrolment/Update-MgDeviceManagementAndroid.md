@@ -98,7 +98,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Enrollment Profile used to enroll COSU devices using Google's Cloud Management.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAndroidForWorkEnrollmentProfile
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementEnrolmentIdentity
@@ -250,7 +250,7 @@ Accept wildcard characters: False
 
 ### -QrCodeImage
 Contains properties for a generic mime content.
-To construct, see NOTES section for QRCODEIMAGE properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for QRCODEIMAGE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMimeContent
@@ -400,7 +400,6 @@ INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[WindowsAutopilotDeviceIdentityId <String>]`: key: id of windowsAutopilotDeviceIdentity
   - `[WindowsFeatureUpdateProfileAssignmentId <String>]`: key: id of windowsFeatureUpdateProfileAssignment
   - `[WindowsFeatureUpdateProfileId <String>]`: key: id of windowsFeatureUpdateProfile
-  - `[WindowsUpdateStateId <String>]`: key: id of windowsUpdateState
 
 QRCODEIMAGE <IMicrosoftGraphMimeContent>: Contains properties for a generic mime content.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

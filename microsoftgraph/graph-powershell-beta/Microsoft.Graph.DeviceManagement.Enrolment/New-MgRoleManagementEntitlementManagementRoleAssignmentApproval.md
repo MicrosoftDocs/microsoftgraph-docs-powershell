@@ -48,7 +48,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 approval
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphApproval
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 
 ### -Steps
 .
-To construct, see NOTES section for STEPS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for STEPS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphApprovalStep[]

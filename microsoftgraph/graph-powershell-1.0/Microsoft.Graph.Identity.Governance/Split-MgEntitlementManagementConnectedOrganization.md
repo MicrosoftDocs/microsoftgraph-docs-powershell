@@ -22,17 +22,9 @@ Split elements of one or more Azure AD entitlement management connected organiza
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
 ## PARAMETERS
 
 ### -ByIdentitySource
-{{ Fill ByIdentitySource Description }}
 
 ```yaml
 Type: SwitchParameter
@@ -41,7 +33,7 @@ Aliases:
 
 Required: True
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -71,9 +63,27 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+CONNECTEDORGANIZATION <IMicrosoftGraphConnectedOrganization[]>: The connected organization.
+  - `[Id <String>]`: Read-only.
+  - `[CreatedBy <String>]`: UPN of the user who created this resource. Read-only.
+  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+  - `[Description <String>]`: The description of the connected organization.
+  - `[DisplayName <String>]`: The display name of the connected organization. Supports $filter (eq).
+  - `[ExternalSponsors <IMicrosoftGraphDirectoryObject[]>]`: Nullable.
+    - `[Id <String>]`: Read-only.
+    - `[DeletedDateTime <DateTime?>]`: 
+  - `[IdentitySources <IMicrosoftGraphIdentitySource[]>]`: The identity sources in this connected organization, one of azureActiveDirectoryTenant, domainIdentitySource or externalDomainFederation. Nullable.
+  - `[InternalSponsors <IMicrosoftGraphDirectoryObject[]>]`: Nullable.
+  - `[ModifiedBy <String>]`: UPN of the user who last modified this resource. Read-only.
+  - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+  - `[State <String>]`: connectedOrganizationState
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/split-mgentitlementmanagementconnectedorganization](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/split-mgentitlementmanagementconnectedorganization)
-

@@ -50,7 +50,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 informationProtectionLabel
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphInformationProtectionLabel
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 
 ### -Parent
 parentLabelDetails
-To construct, see NOTES section for PARENT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for PARENT properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphParentLabelDetails

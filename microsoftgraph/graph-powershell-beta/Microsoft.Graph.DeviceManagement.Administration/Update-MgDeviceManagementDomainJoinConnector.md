@@ -66,7 +66,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 A Domain Join Connector is a connector that is responsible to allocate (and delete) machine account blobs
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementDomainJoinConnector
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementAdministrationIdentity
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -State
-deviceManagementDomainJoinConnectorState
+The ODJ request states.
 
 ```yaml
 Type: String
@@ -256,7 +256,7 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagementDomainJoinConnector>: A Domain Joi
   - `[Id <String>]`: Read-only.
   - `[DisplayName <String>]`: The connector display name.
   - `[LastConnectionDateTime <DateTime?>]`: Last time connector contacted Intune.
-  - `[State <String>]`: deviceManagementDomainJoinConnectorState
+  - `[State <String>]`: The ODJ request states.
   - `[Version <String>]`: The version of the connector.
 
 INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
@@ -264,10 +264,14 @@ INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
   - `[CloudPcDeviceImageId <String>]`: key: id of cloudPcDeviceImage
+  - `[CloudPcGalleryImageId <String>]`: key: id of cloudPcGalleryImage
   - `[CloudPcId <String>]`: key: id of cloudPC
   - `[CloudPcOnPremisesConnectionId <String>]`: key: id of cloudPcOnPremisesConnection
   - `[CloudPcProvisioningPolicyAssignmentId <String>]`: key: id of cloudPcProvisioningPolicyAssignment
   - `[CloudPcProvisioningPolicyId <String>]`: key: id of cloudPcProvisioningPolicy
+  - `[CloudPcServicePlanId <String>]`: key: id of cloudPcServicePlan
+  - `[CloudPcSnapshotId <String>]`: key: id of cloudPcSnapshot
+  - `[CloudPcSupportedRegionId <String>]`: key: id of cloudPcSupportedRegion
   - `[CloudPcUserSettingAssignmentId <String>]`: key: id of cloudPcUserSettingAssignment
   - `[CloudPcUserSettingId <String>]`: key: id of cloudPcUserSetting
   - `[ComanagementEligibleDeviceId <String>]`: key: id of comanagementEligibleDevice

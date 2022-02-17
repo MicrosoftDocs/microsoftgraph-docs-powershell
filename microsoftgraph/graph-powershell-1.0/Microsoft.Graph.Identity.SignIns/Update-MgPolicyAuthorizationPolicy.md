@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgPolicyAuthorizationPolicy
 
 ## SYNOPSIS
-Update the navigation property authorizationPolicy in policies
+The policy that controls Azure AD authorization settings.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Update-MgPolicyAuthorizationPolicy -BodyParameter <IMicrosoftGraphAuthorizationP
 ```
 
 ## DESCRIPTION
-Update the navigation property authorizationPolicy in policies
+The policy that controls Azure AD authorization settings.
 
 ## EXAMPLES
 
@@ -128,9 +128,8 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-Represents an Azure Active Directory object.
-The directoryObject type is the base type for many other directory entity types.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+authorizationPolicy
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAuthorizationPolicy1
@@ -146,7 +145,7 @@ Accept wildcard characters: False
 
 ### -DefaultUserRolePermissions
 defaultUserRolePermissions
-To construct, see NOTES section for DEFAULTUSERROLEPERMISSIONS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEFAULTUSERROLEPERMISSIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDefaultUserRolePermissions1
@@ -177,6 +176,7 @@ Accept wildcard characters: False
 
 ### -Description
 Description for this policy.
+Required.
 
 ```yaml
 Type: String
@@ -192,6 +192,7 @@ Accept wildcard characters: False
 
 ### -DisplayName
 Display name for this policy.
+Required.
 
 ```yaml
 Type: String
@@ -207,7 +208,6 @@ Accept wildcard characters: False
 
 ### -GuestUserRoleId
 Represents role templateId for the role that should be granted to guest user.
-Refer to List unifiedRoleDefinitions to find the list of available role templates.
 Currently following roles are supported: User (a0b1b346-4d3e-4e8b-98f8-753987be4970), Guest User (10dae51f-b6af-4016-8d66-8c2a99b929b3), and Restricted Guest User (2af84b1e-32c8-42b7-82bc-daa82404023b).
 
 ```yaml
@@ -301,10 +301,10 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphAuthorizationPolicy1>: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
+BODYPARAMETER <IMicrosoftGraphAuthorizationPolicy1>: authorizationPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Description <String>]`: Description for this policy.
-  - `[DisplayName <String>]`: Display name for this policy.
+  - `[Description <String>]`: Description for this policy. Required.
+  - `[DisplayName <String>]`: Display name for this policy. Required.
   - `[DeletedDateTime <DateTime?>]`: 
   - `[Id <String>]`: Read-only.
   - `[AllowEmailVerifiedUsersToJoinOrganization <Boolean?>]`: Indicates whether a user can join the tenant by email validation.
@@ -318,7 +318,7 @@ BODYPARAMETER <IMicrosoftGraphAuthorizationPolicy1>: Represents an Azure Active 
     - `[AllowedToCreateSecurityGroups <Boolean?>]`: Indicates whether the default user role can create security groups.
     - `[AllowedToReadOtherUsers <Boolean?>]`: Indicates whether the default user role can read other users.
     - `[PermissionGrantPoliciesAssigned <String[]>]`: Indicates if user consent to apps is allowed, and if it is, which permission to grant consent and which app consent policy (permissionGrantPolicy) govern the permission for users to grant consent. Value should be in the format managePermissionGrantsForSelf.{id}, where {id} is the id of a built-in or custom app consent policy. An empty list indicates user consent to apps is disabled.
-  - `[GuestUserRoleId <String>]`: Represents role templateId for the role that should be granted to guest user. Refer to List unifiedRoleDefinitions to find the list of available role templates. Currently following roles are supported:  User (a0b1b346-4d3e-4e8b-98f8-753987be4970), Guest User (10dae51f-b6af-4016-8d66-8c2a99b929b3), and Restricted Guest User (2af84b1e-32c8-42b7-82bc-daa82404023b).
+  - `[GuestUserRoleId <String>]`: Represents role templateId for the role that should be granted to guest user. Currently following roles are supported:  User (a0b1b346-4d3e-4e8b-98f8-753987be4970), Guest User (10dae51f-b6af-4016-8d66-8c2a99b929b3), and Restricted Guest User (2af84b1e-32c8-42b7-82bc-daa82404023b).
 
 DEFAULTUSERROLEPERMISSIONS <IMicrosoftGraphDefaultUserRolePermissions1>: defaultUserRolePermissions
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

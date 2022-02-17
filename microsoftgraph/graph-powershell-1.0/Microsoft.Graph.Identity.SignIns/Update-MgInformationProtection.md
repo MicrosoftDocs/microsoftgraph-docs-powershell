@@ -65,7 +65,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 informationProtection
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphInformationProtection1
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 
 ### -ThreatAssessmentRequests
 .
-To construct, see NOTES section for THREATASSESSMENTREQUESTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for THREATASSESSMENTREQUESTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphThreatAssessmentRequest[]
@@ -174,9 +174,28 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
+BITLOCKER <IMicrosoftGraphBitlocker>: bitlocker
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: Read-only.
+  - `[RecoveryKeys <IMicrosoftGraphBitlockerRecoveryKey[]>]`: The recovery keys associated with the bitlocker entity.
+    - `[Id <String>]`: Read-only.
+    - `[CreatedDateTime <DateTime?>]`: The date and time when the key was originally backed up to Azure Active Directory. Not nullable.
+    - `[DeviceId <String>]`: Identifier of the device the BitLocker key is originally backed up from. Supports $filter (eq).
+    - `[Key <String>]`: The BitLocker recovery key. Returned only on $select. Not nullable.
+    - `[VolumeType <String>]`: volumeType
+
 BODYPARAMETER <IMicrosoftGraphInformationProtection1>: informationProtection
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
+  - `[Bitlocker <IMicrosoftGraphBitlocker>]`: bitlocker
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: Read-only.
+    - `[RecoveryKeys <IMicrosoftGraphBitlockerRecoveryKey[]>]`: The recovery keys associated with the bitlocker entity.
+      - `[Id <String>]`: Read-only.
+      - `[CreatedDateTime <DateTime?>]`: The date and time when the key was originally backed up to Azure Active Directory. Not nullable.
+      - `[DeviceId <String>]`: Identifier of the device the BitLocker key is originally backed up from. Supports $filter (eq).
+      - `[Key <String>]`: The BitLocker recovery key. Returned only on $select. Not nullable.
+      - `[VolumeType <String>]`: volumeType
   - `[ThreatAssessmentRequests <IMicrosoftGraphThreatAssessmentRequest[]>]`: 
     - `[Id <String>]`: Read-only.
     - `[Category <String>]`: threatCategory

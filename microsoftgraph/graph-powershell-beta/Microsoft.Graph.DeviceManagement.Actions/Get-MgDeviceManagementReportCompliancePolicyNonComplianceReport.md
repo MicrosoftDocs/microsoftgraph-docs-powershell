@@ -51,7 +51,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1Pvn7TwDevicemanagementReportsMicrosoftGraphGetcompliancepolicynoncompliancereportPostRequestbodyContentApplicationJsonSchema1
@@ -266,7 +266,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1Pvn7TwDevicemanagementReportsMicrosoftGraphGetcompliancepolicynoncompliancereportPostRequestbodyContentApplicationJsonSchema1
+### Microsoft.Graph.PowerShell.Models.IPaths1Pvn7TwDevicemanagementReportsMicrosoftGraphGetcompliancepolicynoncompliancereportPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean

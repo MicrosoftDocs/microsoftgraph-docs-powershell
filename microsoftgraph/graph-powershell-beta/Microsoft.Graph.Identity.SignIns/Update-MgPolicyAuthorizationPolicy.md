@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgPolicyAuthorizationPolicy
 
 ## SYNOPSIS
-Update the navigation property authorizationPolicy in policies
+The policy that controls Azure AD authorization settings.
 
 ## SYNTAX
 
@@ -49,7 +49,7 @@ Update-MgPolicyAuthorizationPolicy -InputObject <IIdentitySignInsIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property authorizationPolicy in policies
+The policy that controls Azure AD authorization settings.
 
 ## EXAMPLES
 
@@ -163,9 +163,8 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-Represents an Azure Active Directory object.
-The directoryObject type is the base type for many other directory entity types.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+authorizationPolicy
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAuthorizationPolicy
@@ -197,7 +196,7 @@ Accept wildcard characters: False
 
 ### -DefaultUserRolePermissions
 defaultUserRolePermissions
-To construct, see NOTES section for DEFAULTUSERROLEPERMISSIONS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEFAULTUSERROLEPERMISSIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDefaultUserRolePermissions
@@ -228,6 +227,7 @@ Accept wildcard characters: False
 
 ### -Description
 Description for this policy.
+Required.
 
 ```yaml
 Type: String
@@ -243,6 +243,7 @@ Accept wildcard characters: False
 
 ### -DisplayName
 Display name for this policy.
+Required.
 
 ```yaml
 Type: String
@@ -273,7 +274,6 @@ Accept wildcard characters: False
 
 ### -GuestUserRoleId
 Represents role templateId for the role that should be granted to guest user.
-Refer to List unifiedRoleDefinitions to find the list of available role templates.
 Currently following roles are supported: User (a0b1b346-4d3e-4e8b-98f8-753987be4970), Guest User (10dae51f-b6af-4016-8d66-8c2a99b929b3), and Restricted Guest User (2af84b1e-32c8-42b7-82bc-daa82404023b).
 
 ```yaml
@@ -305,7 +305,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentitySignInsIdentity
@@ -401,10 +401,10 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphAuthorizationPolicy>: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
+BODYPARAMETER <IMicrosoftGraphAuthorizationPolicy>: authorizationPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Description <String>]`: Description for this policy.
-  - `[DisplayName <String>]`: Display name for this policy.
+  - `[Description <String>]`: Description for this policy. Required.
+  - `[DisplayName <String>]`: Display name for this policy. Required.
   - `[DeletedDateTime <DateTime?>]`: 
   - `[Id <String>]`: Read-only.
   - `[AllowEmailVerifiedUsersToJoinOrganization <Boolean?>]`: Indicates whether a user can join the tenant by email validation.
@@ -412,14 +412,29 @@ BODYPARAMETER <IMicrosoftGraphAuthorizationPolicy>: Represents an Azure Active D
   - `[AllowedToSignUpEmailBasedSubscriptions <Boolean?>]`: Indicates whether users can sign up for email based subscriptions.
   - `[AllowedToUseSspr <Boolean?>]`: Indicates whether the Self-Serve Password Reset feature can be used by users on the tenant.
   - `[BlockMsolPowerShell <Boolean?>]`: To disable the use of MSOL PowerShell set this property to true. This will also disable user-based access to the legacy service endpoint used by MSOL PowerShell. This does not affect Azure AD Connect or Microsoft Graph.
+  - `[DefaultUserRoleOverrides <IMicrosoftGraphDefaultUserRoleOverride[]>]`: 
+    - `[Id <String>]`: Read-only.
+    - `[IsDefault <Boolean?>]`: 
+    - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]`: 
+      - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource. Required.
+      - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective.
+      - `[ExcludedResourceActions <String[]>]`: Set of tasks that may not be performed on a resource. Not yet supported.
   - `[DefaultUserRolePermissions <IMicrosoftGraphDefaultUserRolePermissions>]`: defaultUserRolePermissions
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AllowedToCreateApps <Boolean?>]`: Indicates whether the default user role can create applications.
     - `[AllowedToCreateSecurityGroups <Boolean?>]`: Indicates whether the default user role can create security groups.
     - `[AllowedToReadOtherUsers <Boolean?>]`: Indicates whether the default user role can read other users.
   - `[EnabledPreviewFeatures <String[]>]`: List of features enabled for private preview on the tenant.
-  - `[GuestUserRoleId <String>]`: Represents role templateId for the role that should be granted to guest user. Refer to List unifiedRoleDefinitions to find the list of available role templates. Currently following roles are supported:  User (a0b1b346-4d3e-4e8b-98f8-753987be4970), Guest User (10dae51f-b6af-4016-8d66-8c2a99b929b3), and Restricted Guest User (2af84b1e-32c8-42b7-82bc-daa82404023b).
+  - `[GuestUserRoleId <String>]`: Represents role templateId for the role that should be granted to guest user. Currently following roles are supported:  User (a0b1b346-4d3e-4e8b-98f8-753987be4970), Guest User (10dae51f-b6af-4016-8d66-8c2a99b929b3), and Restricted Guest User (2af84b1e-32c8-42b7-82bc-daa82404023b).
   - `[PermissionGrantPolicyIdsAssignedToDefaultUserRole <String[]>]`: Indicates if user consent to apps is allowed, and if it is, which app consent policy (permissionGrantPolicy) governs the permission for users to grant consent. Values should be in the format managePermissionGrantsForSelf.{id}, where {id} is the id of a built-in or custom app consent policy. An empty list indicates user consent to apps is disabled.
+
+DEFAULTUSERROLEOVERRIDES <IMicrosoftGraphDefaultUserRoleOverride[]>: .
+  - `[Id <String>]`: Read-only.
+  - `[IsDefault <Boolean?>]`: 
+  - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]`: 
+    - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource. Required.
+    - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective.
+    - `[ExcludedResourceActions <String[]>]`: Set of tasks that may not be performed on a resource. Not yet supported.
 
 DEFAULTUSERROLEPERMISSIONS <IMicrosoftGraphDefaultUserRolePermissions>: defaultUserRolePermissions
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -429,6 +444,7 @@ DEFAULTUSERROLEPERMISSIONS <IMicrosoftGraphDefaultUserRolePermissions>: defaultU
 
 INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: key: id of activityBasedTimeoutPolicy
+  - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AuthenticationContextClassReferenceId <String>]`: key: id of authenticationContextClassReference
   - `[AuthenticationMethodId <String>]`: key: id of authenticationMethod
   - `[AuthorizationPolicyId <String>]`: key: id of authorizationPolicy
@@ -437,6 +453,7 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[ConditionalAccessPolicyId <String>]`: key: id of conditionalAccessPolicy
   - `[DataLossPreventionPolicyId <String>]`: key: id of dataLossPreventionPolicy
   - `[DataPolicyOperationId <String>]`: key: id of dataPolicyOperation
+  - `[DefaultUserRoleOverrideId <String>]`: key: id of defaultUserRoleOverride
   - `[DirectoryObjectId <String>]`: key: id of directoryObject
   - `[EmailAuthenticationMethodId <String>]`: key: id of emailAuthenticationMethod
   - `[FeatureRolloutPolicyId <String>]`: key: id of featureRolloutPolicy
@@ -447,6 +464,7 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[InformationProtectionLabelId <String>]`: key: id of informationProtectionLabel
   - `[LongRunningOperationId <String>]`: key: id of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: key: id of microsoftAuthenticatorAuthenticationMethod
+  - `[MobilityManagementPolicyId <String>]`: key: id of mobilityManagementPolicy
   - `[NamedLocationId <String>]`: key: id of namedLocation
   - `[OAuth2PermissionGrantId <String>]`: key: id of oAuth2PermissionGrant
   - `[OrganizationId <String>]`: key: id of organization
@@ -460,6 +478,9 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[RiskyUserId <String>]`: key: id of riskyUser
   - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
   - `[SensitivityLabelId1 <String>]`: key: id of sensitivityLabel
+  - `[ServicePrincipalCreationConditionSetId <String>]`: key: id of servicePrincipalCreationConditionSet
+  - `[ServicePrincipalCreationPolicyId <String>]`: key: id of servicePrincipalCreationPolicy
+  - `[SoftwareOathAuthenticationMethodId <String>]`: key: id of softwareOathAuthenticationMethod
   - `[TemporaryAccessPassAuthenticationMethodId <String>]`: key: id of temporaryAccessPassAuthenticationMethod
   - `[ThreatAssessmentRequestId <String>]`: key: id of threatAssessmentRequest
   - `[ThreatAssessmentResultId <String>]`: key: id of threatAssessmentResult

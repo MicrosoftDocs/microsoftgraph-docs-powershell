@@ -190,5 +190,11 @@ Please use Get-Help -Online.
 
 ## RELATED LINKS
 
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointsnapshot](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointsnapshot)
+BODYPARAMETER <IMicrosoftGraphCloudPcSnapshot>: cloudPcSnapshot
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: Read-only.
+  - `[CloudPcId <String>]`: 
+  - `[CreatedDateTime <DateTime?>]`: 
+  - `[LastRestoredDateTime <DateTime?>]`: 
+  - `[Status <String>]`: cloudPcSnapshotStatus
 

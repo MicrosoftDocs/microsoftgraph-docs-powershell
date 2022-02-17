@@ -63,7 +63,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths3M6QbmUsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphCreatereplyallPostRequestbodyContentApplicationJsonSchema
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 
 ### -Message
 message
-To construct, see NOTES section for MESSAGE properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for MESSAGE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMessage
@@ -264,14 +264,14 @@ BODYPARAMETER <IPaths3M6QbmUsersUserIdMailfoldersMailfolderIdMessagesMessageIdMi
     - `[HasAttachments <Boolean?>]`: Indicates whether the message has attachments. This property doesn't include inline attachments, so if a message contains only inline attachments, this property is false. To verify the existence of inline attachments, parse the body property to look for a src attribute, such as <IMG src='cid:image001.jpg@01D26CD8.6C05F070'>.
     - `[Importance <String>]`: importance
     - `[InferenceClassification <String>]`: inferenceClassificationType
-    - `[InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]`: A collection of message headers defined by RFC5322. The set includes message headers indicating the network path taken by a message from the sender to the recipient. It can also contain custom message headers that hold app data for the message.  Returned only on applying a $select query option. Read-only.
+    - `[InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]`: 
       - `[Name <String>]`: Represents the key in a key-value pair.
       - `[Value <String>]`: The value in a key-value pair.
-    - `[InternetMessageId <String>]`: The message ID in the format specified by RFC2822.
-    - `[IsDeliveryReceiptRequested <Boolean?>]`: Indicates whether a read receipt is requested for the message.
-    - `[IsDraft <Boolean?>]`: Indicates whether the message is a draft. A message is a draft if it hasn't been sent yet.
-    - `[IsRead <Boolean?>]`: Indicates whether the message has been read.
-    - `[IsReadReceiptRequested <Boolean?>]`: Indicates whether a read receipt is requested for the message.
+    - `[InternetMessageId <String>]`: 
+    - `[IsDeliveryReceiptRequested <Boolean?>]`: 
+    - `[IsDraft <Boolean?>]`: 
+    - `[IsRead <Boolean?>]`: 
+    - `[IsReadReceiptRequested <Boolean?>]`: 
     - `[Mentions <IMicrosoftGraphMention[]>]`: A collection of mentions in the message, ordered by the createdDateTime from the newest to the oldest. By default, a GET /messages does not return this property unless you apply $expand on the property.
       - `[Id <String>]`: Read-only.
       - `[Application <String>]`: The name of the application where the mention is created. Optional. Not used and defaulted as null for message.
@@ -288,25 +288,28 @@ BODYPARAMETER <IPaths3M6QbmUsersUserIdMailfoldersMailfolderIdMessagesMessageIdMi
     - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the message. Nullable.
       - `[Id <String>]`: Read-only.
       - `[Value <String[]>]`: A collection of property values.
-    - `[ParentFolderId <String>]`: The unique identifier for the message's parent mailFolder.
-    - `[ReceivedDateTime <DateTime?>]`: The date and time the message was received.  The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    - `[ReplyTo <IMicrosoftGraphRecipient[]>]`: The email addresses to use when replying.
+    - `[ParentFolderId <String>]`: 
+    - `[ReceivedDateTime <DateTime?>]`: 
+    - `[ReplyTo <IMicrosoftGraphRecipient[]>]`: 
     - `[Sender <IMicrosoftGraphRecipient>]`: recipient
-    - `[SentDateTime <DateTime?>]`: The date and time the message was sent.  The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[SentDateTime <DateTime?>]`: 
     - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the message. Nullable.
       - `[Id <String>]`: Read-only.
       - `[Value <String>]`: A property value.
-    - `[Subject <String>]`: The subject of the message.
-    - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: The To: recipients for the message.
+    - `[Subject <String>]`: 
+    - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: 
     - `[UniqueBody <IMicrosoftGraphItemBody>]`: itemBody
     - `[UnsubscribeData <String[]>]`: 
     - `[UnsubscribeEnabled <Boolean?>]`: 
-    - `[WebLink <String>]`: The URL to open the message in Outlook on the web.You can append an ispopout argument to the end of the URL to change how the message is displayed. If ispopout is not present or if it is set to 1, then the message is shown in a popout window. If ispopout is set to 0, then the browser will show the message in the Outlook on the web review pane.The message will open in the browser if you are logged in to your mailbox via Outlook on the web. You will be prompted to login if you are not already logged in with the browser.This URL cannot be accessed from within an iFrame.
+    - `[WebLink <String>]`: 
 
 INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
+  - `[AccessReviewInstanceDecisionItemId <String>]`: key: id of accessReviewInstanceDecisionItem
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
   - `[AuthenticationMethodId <String>]`: key: id of authenticationMethod
+  - `[BaseTaskId <String>]`: key: id of baseTask
+  - `[BaseTaskListId <String>]`: key: id of baseTaskList
   - `[CalendarId <String>]`: key: id of calendar
   - `[DeviceEnrollmentConfigurationId <String>]`: key: id of deviceEnrollmentConfiguration
   - `[DeviceLogCollectionResponseId <String>]`: key: id of deviceLogCollectionResponse
@@ -370,14 +373,14 @@ MESSAGE <IMicrosoftGraphMessage>: message
   - `[HasAttachments <Boolean?>]`: Indicates whether the message has attachments. This property doesn't include inline attachments, so if a message contains only inline attachments, this property is false. To verify the existence of inline attachments, parse the body property to look for a src attribute, such as <IMG src='cid:image001.jpg@01D26CD8.6C05F070'>.
   - `[Importance <String>]`: importance
   - `[InferenceClassification <String>]`: inferenceClassificationType
-  - `[InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]`: A collection of message headers defined by RFC5322. The set includes message headers indicating the network path taken by a message from the sender to the recipient. It can also contain custom message headers that hold app data for the message.  Returned only on applying a $select query option. Read-only.
+  - `[InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]`: 
     - `[Name <String>]`: Represents the key in a key-value pair.
     - `[Value <String>]`: The value in a key-value pair.
-  - `[InternetMessageId <String>]`: The message ID in the format specified by RFC2822.
-  - `[IsDeliveryReceiptRequested <Boolean?>]`: Indicates whether a read receipt is requested for the message.
-  - `[IsDraft <Boolean?>]`: Indicates whether the message is a draft. A message is a draft if it hasn't been sent yet.
-  - `[IsRead <Boolean?>]`: Indicates whether the message has been read.
-  - `[IsReadReceiptRequested <Boolean?>]`: Indicates whether a read receipt is requested for the message.
+  - `[InternetMessageId <String>]`: 
+  - `[IsDeliveryReceiptRequested <Boolean?>]`: 
+  - `[IsDraft <Boolean?>]`: 
+  - `[IsRead <Boolean?>]`: 
+  - `[IsReadReceiptRequested <Boolean?>]`: 
   - `[Mentions <IMicrosoftGraphMention[]>]`: A collection of mentions in the message, ordered by the createdDateTime from the newest to the oldest. By default, a GET /messages does not return this property unless you apply $expand on the property.
     - `[Id <String>]`: Read-only.
     - `[Application <String>]`: The name of the application where the mention is created. Optional. Not used and defaulted as null for message.
@@ -394,20 +397,20 @@ MESSAGE <IMicrosoftGraphMessage>: message
   - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the message. Nullable.
     - `[Id <String>]`: Read-only.
     - `[Value <String[]>]`: A collection of property values.
-  - `[ParentFolderId <String>]`: The unique identifier for the message's parent mailFolder.
-  - `[ReceivedDateTime <DateTime?>]`: The date and time the message was received.  The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[ReplyTo <IMicrosoftGraphRecipient[]>]`: The email addresses to use when replying.
+  - `[ParentFolderId <String>]`: 
+  - `[ReceivedDateTime <DateTime?>]`: 
+  - `[ReplyTo <IMicrosoftGraphRecipient[]>]`: 
   - `[Sender <IMicrosoftGraphRecipient>]`: recipient
-  - `[SentDateTime <DateTime?>]`: The date and time the message was sent.  The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[SentDateTime <DateTime?>]`: 
   - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the message. Nullable.
     - `[Id <String>]`: Read-only.
     - `[Value <String>]`: A property value.
-  - `[Subject <String>]`: The subject of the message.
-  - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: The To: recipients for the message.
+  - `[Subject <String>]`: 
+  - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: 
   - `[UniqueBody <IMicrosoftGraphItemBody>]`: itemBody
   - `[UnsubscribeData <String[]>]`: 
   - `[UnsubscribeEnabled <Boolean?>]`: 
-  - `[WebLink <String>]`: The URL to open the message in Outlook on the web.You can append an ispopout argument to the end of the URL to change how the message is displayed. If ispopout is not present or if it is set to 1, then the message is shown in a popout window. If ispopout is set to 0, then the browser will show the message in the Outlook on the web review pane.The message will open in the browser if you are logged in to your mailbox via Outlook on the web. You will be prompted to login if you are not already logged in with the browser.This URL cannot be accessed from within an iFrame.
+  - `[WebLink <String>]`: 
 
 ## RELATED LINKS
 

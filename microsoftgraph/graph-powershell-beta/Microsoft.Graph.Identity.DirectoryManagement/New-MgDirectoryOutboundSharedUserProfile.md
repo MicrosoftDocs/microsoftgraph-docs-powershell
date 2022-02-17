@@ -30,13 +30,6 @@ Create new navigation property to outboundSharedUserProfiles for directory
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -172,9 +165,27 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOutboundSharedUserProfile
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+BODYPARAMETER <IMicrosoftGraphOutboundSharedUserProfile>: outboundSharedUserProfile
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DeletedDateTime <DateTime?>]`: 
+  - `[Id <String>]`: Read-only.
+  - `[Tenants <IMicrosoftGraphTenantReference[]>]`: 
+    - `[DeletedDateTime <DateTime?>]`: 
+    - `[Id <String>]`: Read-only.
+    - `[TenantId <String>]`: 
+  - `[UserId <String>]`: 
+
+TENANTS <IMicrosoftGraphTenantReference[]>: .
+  - `[DeletedDateTime <DateTime?>]`: 
+  - `[Id <String>]`: Read-only.
+  - `[TenantId <String>]`: 
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryoutboundshareduserprofile](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryoutboundshareduserprofile)
-

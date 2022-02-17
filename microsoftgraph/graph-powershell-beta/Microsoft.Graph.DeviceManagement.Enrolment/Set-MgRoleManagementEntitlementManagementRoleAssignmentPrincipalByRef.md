@@ -8,8 +8,7 @@ schema: 2.0.0
 # Set-MgRoleManagementEntitlementManagementRoleAssignmentPrincipalByRef
 
 ## SYNOPSIS
-The assigned principal.
-Provided so that callers can get the principal using $expand at the same time as getting the role assignment.
+Referencing the assigned principal.
 Read-only.
 Supports $expand.
 
@@ -42,8 +41,7 @@ Set-MgRoleManagementEntitlementManagementRoleAssignmentPrincipalByRef
 ```
 
 ## DESCRIPTION
-The assigned principal.
-Provided so that callers can get the principal using $expand at the same time as getting the role assignment.
+Referencing the assigned principal.
 Read-only.
 Supports $expand.
 
@@ -83,7 +81,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementEnrolmentIdentity
@@ -216,6 +214,5 @@ INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[WindowsAutopilotDeviceIdentityId <String>]`: key: id of windowsAutopilotDeviceIdentity
   - `[WindowsFeatureUpdateProfileAssignmentId <String>]`: key: id of windowsFeatureUpdateProfileAssignment
   - `[WindowsFeatureUpdateProfileId <String>]`: key: id of windowsFeatureUpdateProfile
-  - `[WindowsUpdateStateId <String>]`: key: id of windowsUpdateState
 
 ## RELATED LINKS

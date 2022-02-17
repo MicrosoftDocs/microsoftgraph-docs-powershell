@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEntitlementManagementAccessPackageResourceRequest
 
 ## SYNOPSIS
-Get accessPackageResourceRequests from identityGovernance
+Represents a request to add or remove a resource to or from a catalog respectively.
 
 ## SYNTAX
 
@@ -32,9 +32,34 @@ Get-MgEntitlementManagementAccessPackageResourceRequest -InputObject <IIdentityG
 ```
 
 ## DESCRIPTION
-Get accessPackageResourceRequests from identityGovernance
+Represents a request to add or remove a resource to or from a catalog respectively.
 
 ## EXAMPLES
+
+### Example 1: Get all access package resource requests
+```powershell
+Connect-MgGraph -Scopes 'EntitlementManagement.ReadWrite.All'
+Get-MgEntitlementManagementAccessPackageResourceRequest
+
+Id                                   CatalogId                            ExecuteImmediately ExpirationDateTime IsValidationOnly Justification RequestState   RequestStatus RequestType
+--                                   ---------                            ------------------ ------------------ ---------------- ------------- ------------   ------------- -----------
+88098a60-489a-4c28-bfe7-9fecd4713b81 54152ecb-c65d-47f2-8a4d-ba2732de0a7b False                                                                Delivered      Fulfilled     AdminAdd
+fcbf2d6a-3b33-412b-bb41-c91b27dff4b6 54152ecb-c65d-47f2-8a4d-ba2732de0a7b False                                                                Delivered      Fulfilled     AdminAdd
+6c8fd194-4998-4096-9812-de77d6994ffe 54152ecb-c65d-47f2-8a4d-ba2732de0a7b False                                                                Delivered      Fulfilled     AdminAdd
+4f9584b7-c8d6-4b09-8383-8303a27d2236 54152ecb-c65d-47f2-8a4d-ba2732de0a7b False                                                                Delivered      Fulfilled     AdminAdd
+52727043-09c1-412b-a3b4-7c4c4f4abfd0 54152ecb-c65d-47f2-8a4d-ba2732de0a7b False                                                                Delivered      Fulfilled     AdminAdd
+ec74bc22-8d36-44a2-b294-82c538a48c4c 54152ecb-c65d-47f2-8a4d-ba2732de0a7b False                                                                Delivered      Fulfilled     AdminAdd
+```
+
+This example gets all access package resource requests.
+
+### Example 2: Get all access package resource requests
+```powershell
+Connect-MgGraph -Scopes 'EntitlementManagement.ReadWrite.All'
+Get-MgEntitlementManagementAccessPackageResourceRequest -AccessPackageResourceRequestId '88098a60-489a-4c28-bfe7-9fecd4713b81'
+```
+
+This examples gets the access package resource request for the specified resource request id.
 
 ## PARAMETERS
 
@@ -116,7 +141,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentityGovernanceIdentity
@@ -253,9 +278,11 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageResourceScopeId <String>]`: key: id of accessPackageResourceScope
   - `[AccessReviewDecisionId <String>]`: key: id of accessReviewDecision
   - `[AccessReviewHistoryDefinitionId <String>]`: key: id of accessReviewHistoryDefinition
+  - `[AccessReviewHistoryInstanceId <String>]`: key: id of accessReviewHistoryInstance
   - `[AccessReviewId <String>]`: key: id of accessReview
   - `[AccessReviewId1 <String>]`: key: id of accessReview
   - `[AccessReviewInstanceDecisionItemId <String>]`: key: id of accessReviewInstanceDecisionItem
+  - `[AccessReviewInstanceDecisionItemId1 <String>]`: key: id of accessReviewInstanceDecisionItem
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewReviewerId <String>]`: key: id of accessReviewReviewer
   - `[AccessReviewScheduleDefinitionId <String>]`: key: id of accessReviewScheduleDefinition
@@ -270,11 +297,13 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[BusinessFlowTemplateId <String>]`: key: id of businessFlowTemplate
   - `[ConnectedOrganizationId <String>]`: key: id of connectedOrganization
   - `[DirectoryObjectId <String>]`: key: id of directoryObject
+  - `[GovernanceInsightId <String>]`: key: id of governanceInsight
   - `[GovernanceResourceId <String>]`: key: id of governanceResource
   - `[GovernanceRoleAssignmentId <String>]`: key: id of governanceRoleAssignment
   - `[GovernanceRoleAssignmentRequestId <String>]`: key: id of governanceRoleAssignmentRequest
   - `[GovernanceRoleDefinitionId <String>]`: key: id of governanceRoleDefinition
   - `[GovernanceRoleSettingId <String>]`: key: id of governanceRoleSetting
+  - `[GroupId <String>]`: key: id of group
   - `[On <String>]`: Usage: on={on}
   - `[PrivilegedAccessId <String>]`: key: id of privilegedAccess
   - `[PrivilegedApprovalId <String>]`: key: id of privilegedApproval

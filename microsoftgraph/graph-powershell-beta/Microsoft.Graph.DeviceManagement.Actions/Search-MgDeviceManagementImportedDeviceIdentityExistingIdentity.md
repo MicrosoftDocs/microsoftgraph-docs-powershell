@@ -50,7 +50,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsHi19O6DevicemanagementImporteddeviceidentitiesMicrosoftGraphSearchexistingidentitiesPostRequestbodyContentApplicationJsonSchema
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 
 ### -ImportedDeviceIdentities
 .
-To construct, see NOTES section for IMPORTEDDEVICEIDENTITIES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for IMPORTEDDEVICEIDENTITIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphImportedDeviceIdentity[]

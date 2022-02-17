@@ -34,13 +34,6 @@ Create new navigation property to recommendations for directory
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
 ## PARAMETERS
 
 ### -ActionSteps
@@ -357,9 +350,73 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRecommendation
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+ACTIONSTEPS <IMicrosoftGraphActionStep[]>: .
+  - `[ActionUrl <IMicrosoftGraphActionUrl>]`: actionUrl
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: 
+    - `[Url <String>]`: 
+  - `[StepNumber <Int64?>]`: 
+  - `[Text <String>]`: 
+
+BODYPARAMETER <IMicrosoftGraphRecommendation>: recommendation
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: Read-only.
+  - `[ActionSteps <IMicrosoftGraphActionStep[]>]`: 
+    - `[ActionUrl <IMicrosoftGraphActionUrl>]`: actionUrl
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: 
+      - `[Url <String>]`: 
+    - `[StepNumber <Int64?>]`: 
+    - `[Text <String>]`: 
+  - `[Benefits <String>]`: 
+  - `[Category <String>]`: recommendationCategory
+  - `[CreatedDateTime <DateTime?>]`: 
+  - `[DisplayName <String>]`: 
+  - `[ImpactStartDateTime <DateTime?>]`: 
+  - `[ImpactType <String>]`: 
+  - `[ImpactedResources <IMicrosoftGraphRecommendationResource[]>]`: 
+    - `[Id <String>]`: Read-only.
+    - `[AddedDateTime <DateTime?>]`: 
+    - `[AdditionalDetails <IMicrosoftGraphKeyValue[]>]`: 
+      - `[Key <String>]`: Key for the key-value pair.
+      - `[Value <String>]`: Value for the key-value pair.
+    - `[ApiUrl <String>]`: 
+    - `[DisplayName <String>]`: 
+    - `[Owner <String>]`: 
+    - `[PortalUrl <String>]`: 
+    - `[Rank <Int32?>]`: 
+    - `[RecommendationId <String>]`: 
+    - `[ResourceType <String>]`: 
+    - `[Status <String>]`: recommendationStatus
+  - `[Insights <String>]`: 
+  - `[LastCheckedDateTime <DateTime?>]`: 
+  - `[LastModifiedBy <String>]`: 
+  - `[LastModifiedDateTime <DateTime?>]`: 
+  - `[PostponeUntilDateTime <DateTime?>]`: 
+  - `[Priority <String>]`: recommendationPriority
+  - `[Status <String>]`: recommendationStatus
+
+IMPACTEDRESOURCES <IMicrosoftGraphRecommendationResource[]>: .
+  - `[Id <String>]`: Read-only.
+  - `[AddedDateTime <DateTime?>]`: 
+  - `[AdditionalDetails <IMicrosoftGraphKeyValue[]>]`: 
+    - `[Key <String>]`: Key for the key-value pair.
+    - `[Value <String>]`: Value for the key-value pair.
+  - `[ApiUrl <String>]`: 
+  - `[DisplayName <String>]`: 
+  - `[Owner <String>]`: 
+  - `[PortalUrl <String>]`: 
+  - `[Rank <Int32?>]`: 
+  - `[RecommendationId <String>]`: 
+  - `[ResourceType <String>]`: 
+  - `[Status <String>]`: recommendationStatus
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryrecommendation](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryrecommendation)
-

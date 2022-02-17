@@ -49,7 +49,7 @@ Accept wildcard characters: False
 
 ### -Assignments
 The list of assignments for this Role Scope Tag.
-To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRoleScopeTagAutoAssignment[]
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Role Scope Tag
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRoleScopeTag
@@ -126,6 +126,7 @@ Accept wildcard characters: False
 
 ### -IsBuiltIn
 Description of the Role Scope Tag.
+This property is read-only.
 
 ```yaml
 Type: SwitchParameter
@@ -193,7 +194,7 @@ ASSIGNMENTS <IMicrosoftGraphRoleScopeTagAutoAssignment[]>: The list of assignmen
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-    - `[DeviceAndAppManagementAssignmentFilterType <String>]`: deviceAndAppManagementAssignmentFilterType
+    - `[DeviceAndAppManagementAssignmentFilterType <String>]`: Represents type of the assignment filter.
 
 BODYPARAMETER <IMicrosoftGraphRoleScopeTag>: Role Scope Tag
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -203,9 +204,9 @@ BODYPARAMETER <IMicrosoftGraphRoleScopeTag>: Role Scope Tag
     - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-      - `[DeviceAndAppManagementAssignmentFilterType <String>]`: deviceAndAppManagementAssignmentFilterType
+      - `[DeviceAndAppManagementAssignmentFilterType <String>]`: Represents type of the assignment filter.
   - `[Description <String>]`: Description of the Role Scope Tag.
   - `[DisplayName <String>]`: The display or friendly name of the Role Scope Tag.
-  - `[IsBuiltIn <Boolean?>]`: Description of the Role Scope Tag.
+  - `[IsBuiltIn <Boolean?>]`: Description of the Role Scope Tag. This property is read-only.
 
 ## RELATED LINKS

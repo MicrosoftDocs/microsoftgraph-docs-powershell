@@ -8,8 +8,7 @@ schema: 2.0.0
 # Update-MgDirectorySettingTemplate
 
 ## SYNOPSIS
-Represents an Azure Active Directory object.
-The directoryObject type is the base type for many other directory entity types.
+Update entity in directorySettingTemplates
 
 ## SYNTAX
 
@@ -41,8 +40,7 @@ Update-MgDirectorySettingTemplate -InputObject <IIdentityDirectoryManagementIden
 ```
 
 ## DESCRIPTION
-Represents an Azure Active Directory object.
-The directoryObject type is the base type for many other directory entity types.
+Update entity in directorySettingTemplates
 
 ## EXAMPLES
 
@@ -64,9 +62,8 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-Represents an Azure Active Directory object.
-The directoryObject type is the base type for many other directory entity types.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+directorySettingTemplate
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDirectorySettingTemplate
@@ -159,7 +156,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentityDirectoryManagementIdentity
@@ -191,7 +188,7 @@ Accept wildcard characters: False
 ### -Values
 Collection of settingTemplateValues that list the set of available settings, defaults and types that make up this template.
 Read-only.
-To construct, see NOTES section for VALUES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for VALUES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSettingTemplateValue[]
@@ -255,22 +252,25 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphDirectorySettingTemplate>: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
+BODYPARAMETER <IMicrosoftGraphDirectorySettingTemplate>: directorySettingTemplate
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeletedDateTime <DateTime?>]`: 
   - `[Id <String>]`: Read-only.
   - `[Description <String>]`: Description of the template. Read-only.
   - `[DisplayName <String>]`: Display name of the template. Read-only.
   - `[Values <IMicrosoftGraphSettingTemplateValue[]>]`: Collection of settingTemplateValues that list the set of available settings, defaults and types that make up this template.  Read-only.
-    - `[DefaultValue <String>]`: Default value for the setting. Read-only.
-    - `[Description <String>]`: Description of the setting. Read-only.
-    - `[Name <String>]`: Name of the setting. Read-only.
-    - `[Type <String>]`: Type of the setting. Read-only.
+    - `[DefaultValue <String>]`: Default value for the setting.
+    - `[Description <String>]`: Description of the setting.
+    - `[Name <String>]`: Name of the setting.
+    - `[Type <String>]`: Type of the setting.
 
 INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   - `[AdministrativeUnitId <String>]`: key: id of administrativeUnit
+  - `[AllowedValueId <String>]`: key: id of allowedValue
+  - `[AttributeSetId <String>]`: key: id of attributeSet
   - `[CommandId <String>]`: key: id of command
   - `[ContractId <String>]`: key: id of contract
+  - `[CustomSecurityAttributeDefinitionId <String>]`: key: id of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: key: id of device
   - `[DirectoryObjectId <String>]`: key: id of directoryObject
   - `[DirectoryRoleId <String>]`: key: id of directoryRole
@@ -281,20 +281,27 @@ INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   - `[DomainId <String>]`: key: id of domain
   - `[ExtensionId <String>]`: key: id of extension
   - `[FeatureRolloutPolicyId <String>]`: key: id of featureRolloutPolicy
+  - `[IdentityProviderBaseId <String>]`: key: id of identityProviderBase
+  - `[InboundSharedUserProfileUserId <String>]`: key: userId of inboundSharedUserProfile
+  - `[InternalDomainFederationId <String>]`: key: id of internalDomainFederation
   - `[OrgContactId <String>]`: key: id of orgContact
   - `[OrganizationId <String>]`: key: id of organization
+  - `[OutboundSharedUserProfileUserId <String>]`: key: userId of outboundSharedUserProfile
   - `[ProfileCardPropertyId <String>]`: key: id of profileCardProperty
+  - `[RecommendationId <String>]`: key: id of recommendation
+  - `[RecommendationResourceId <String>]`: key: id of recommendationResource
   - `[ScopedRoleMembershipId <String>]`: key: id of scopedRoleMembership
   - `[SharedEmailDomainId <String>]`: key: id of sharedEmailDomain
   - `[SharedEmailDomainInvitationId <String>]`: key: id of sharedEmailDomainInvitation
   - `[SubscribedSkuId <String>]`: key: id of subscribedSku
+  - `[TenantReferenceTenantId <String>]`: key: tenantId of tenantReference
   - `[UsageRightId <String>]`: key: id of usageRight
   - `[UserId <String>]`: key: id of user
 
 VALUES <IMicrosoftGraphSettingTemplateValue[]>: Collection of settingTemplateValues that list the set of available settings, defaults and types that make up this template. Read-only.
-  - `[DefaultValue <String>]`: Default value for the setting. Read-only.
-  - `[Description <String>]`: Description of the setting. Read-only.
-  - `[Name <String>]`: Name of the setting. Read-only.
-  - `[Type <String>]`: Type of the setting. Read-only.
+  - `[DefaultValue <String>]`: Default value for the setting.
+  - `[Description <String>]`: Description of the setting.
+  - `[Name <String>]`: Name of the setting.
+  - `[Type <String>]`: Type of the setting.
 
 ## RELATED LINKS

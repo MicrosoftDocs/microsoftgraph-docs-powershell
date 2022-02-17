@@ -282,5 +282,15 @@ Please use Get-Help -Online.
 
 ## RELATED LINKS
 
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportrelatedappstatusreport](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportrelatedappstatusreport)
+BODYPARAMETER <IPathsUcgxcdDevicemanagementReportsMicrosoftGraphGetrelatedappsstatusreportPostRequestbodyContentApplicationJsonSchema>: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Filter <String>]`: 
+  - `[GroupBy <String[]>]`: 
+  - `[Name <String>]`: 
+  - `[OrderBy <String[]>]`: 
+  - `[Search <String>]`: 
+  - `[Select <String[]>]`: 
+  - `[SessionId <String>]`: 
+  - `[Skip <Int32?>]`: 
+  - `[Top <Int32?>]`: 
 

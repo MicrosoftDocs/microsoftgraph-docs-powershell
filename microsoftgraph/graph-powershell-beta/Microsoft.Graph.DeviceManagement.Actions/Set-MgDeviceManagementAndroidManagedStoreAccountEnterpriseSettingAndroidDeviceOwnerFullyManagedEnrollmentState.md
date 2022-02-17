@@ -8,7 +8,7 @@ schema: 2.0.0
 # Set-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSettingAndroidDeviceOwnerFullyManagedEnrollmentState
 
 ## SYNOPSIS
-Invoke action setAndroidDeviceOwnerFullyManagedEnrollmentState
+Sets the AndroidManagedStoreAccountEnterpriseSettings AndroidDeviceOwnerFullyManagedEnrollmentEnabled to the given value.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ Set-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSettingAndroidDeviceOw
 ```
 
 ## DESCRIPTION
-Invoke action setAndroidDeviceOwnerFullyManagedEnrollmentState
+Sets the AndroidManagedStoreAccountEnterpriseSettings AndroidDeviceOwnerFullyManagedEnrollmentEnabled to the given value.
 
 ## EXAMPLES
 
@@ -49,7 +49,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1Wtan1TDevicemanagementAndroidmanagedstoreaccountenterprisesettingsMicrosoftGraphSetandroiddeviceownerfullymanagedenrollmentstatePostRequestbodyContentApplicationJsonSchema

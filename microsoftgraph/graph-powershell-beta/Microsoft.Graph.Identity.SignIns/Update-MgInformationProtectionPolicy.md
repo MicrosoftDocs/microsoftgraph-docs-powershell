@@ -48,7 +48,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 informationProtectionPolicy
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphInformationProtectionPolicy
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 
 ### -Labels
 .
-To construct, see NOTES section for LABELS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for LABELS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphInformationProtectionLabel[]

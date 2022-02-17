@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgRoleManagementEntitlementManagement
 
 ## SYNOPSIS
-The RbacApplication for Entitlement Management
+Container for all entitlement management resources in Azure AD identity governance.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Remove-MgRoleManagementEntitlementManagement [-IfMatch <String>] [-PassThru] [-W
 ```
 
 ## DESCRIPTION
-The RbacApplication for Entitlement Management
+Container for all entitlement management resources in Azure AD identity governance.
 
 ## EXAMPLES
 

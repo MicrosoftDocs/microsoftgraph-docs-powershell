@@ -88,7 +88,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Represents an Autopilot flow event.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementAutopilotEvent
@@ -389,7 +389,7 @@ Accept wildcard characters: False
 
 ### -PolicyStatusDetails
 Policy and application status details for this device.
-To construct, see NOTES section for POLICYSTATUSDETAILS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for POLICYSTATUSDETAILS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail[]

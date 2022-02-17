@@ -48,7 +48,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 trustFramework
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTrustFramework
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 
 ### -KeySets
 .
-To construct, see NOTES section for KEYSETS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for KEYSETS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTrustFrameworkKeySet[]
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 
 ### -Policies
 .
-To construct, see NOTES section for POLICIES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for POLICIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTrustFrameworkPolicy[]

@@ -49,7 +49,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsDjtigpDevicemanagementGrouppolicymigrationreportsMicrosoftGraphCreatemigrationreportPostRequestbodyContentApplicationJsonSchema
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 
 ### -GroupPolicyObjectFile
 The Group Policy Object file uploaded by admin.
-To construct, see NOTES section for GROUPPOLICYOBJECTFILE properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for GROUPPOLICYOBJECTFILE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphGroupPolicyObjectFile

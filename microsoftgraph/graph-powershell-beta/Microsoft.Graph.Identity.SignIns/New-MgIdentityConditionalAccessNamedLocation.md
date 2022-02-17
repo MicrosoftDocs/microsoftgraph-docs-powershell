@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgIdentityConditionalAccessNamedLocation
 
 ## SYNOPSIS
-Create new navigation property to namedLocations for identity
+Read-only.
+Nullable.
+Returns a collection of the specified named locations.
 
 ## SYNTAX
 
@@ -26,7 +28,9 @@ New-MgIdentityConditionalAccessNamedLocation -BodyParameter <IMicrosoftGraphName
 ```
 
 ## DESCRIPTION
-Create new navigation property to namedLocations for identity
+Read-only.
+Nullable.
+Returns a collection of the specified named locations.
 
 ## EXAMPLES
 
@@ -49,7 +53,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 namedLocation
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphNamedLocation

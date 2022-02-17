@@ -55,7 +55,7 @@ There are two types of roles, built-in and custom.
 Built-in roles cannot be modified.
 Both built-in roles and custom roles must have assignments to be enforced.
 Create custom roles if you want to define a role that allows any of the available resources and role permissions to be combined into a single role.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRoleDefinition
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 
 ### -RoleAssignments
 List of Role assignments for this role definition.
-To construct, see NOTES section for ROLEASSIGNMENTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ROLEASSIGNMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRoleAssignment1[]
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ### -RolePermissions
 List of Role Permissions this role is allowed to perform.
 These must match the actionName that is defined as part of the rolePermission.
-To construct, see NOTES section for ROLEPERMISSIONS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ROLEPERMISSIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRolePermission[]

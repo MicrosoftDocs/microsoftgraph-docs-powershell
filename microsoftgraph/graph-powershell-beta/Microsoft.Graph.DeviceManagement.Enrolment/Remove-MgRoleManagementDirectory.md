@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgRoleManagementDirectory
 
 ## SYNOPSIS
-Delete navigation property directory for roleManagement
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -17,7 +18,8 @@ Remove-MgRoleManagementDirectory [-IfMatch <String>] [-PassThru] [-WhatIf] [-Con
 ```
 
 ## DESCRIPTION
-Delete navigation property directory for roleManagement
+Read-only.
+Nullable.
 
 ## EXAMPLES
 

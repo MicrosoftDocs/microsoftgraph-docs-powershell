@@ -49,8 +49,8 @@ Accept wildcard characters: False
 ```
 
 ### -AdministrativeUnits
-.
-To construct, see NOTES section for ADMINISTRATIVEUNITS properties and create a hash table.
+Conceptual container for user and group directory objects.
+To construct, please use Get-Help -Online and see NOTES section for ADMINISTRATIVEUNITS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAdministrativeUnit[]
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 directory
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDirectory1
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 Recently deleted items.
 Read-only.
 Nullable.
-To construct, see NOTES section for DELETEDITEMS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DELETEDITEMS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDirectoryObject[]
@@ -177,17 +177,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADMINISTRATIVEUNITS <IMicrosoftGraphAdministrativeUnit[]>: .
+ADMINISTRATIVEUNITS <IMicrosoftGraphAdministrativeUnit[]>: Conceptual container for user and group directory objects.
   - `[DeletedDateTime <DateTime?>]`: 
   - `[Id <String>]`: Read-only.
-  - `[Description <String>]`: An optional description for the administrative unit.
-  - `[DisplayName <String>]`: Display name for the administrative unit.
-  - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for this Administrative Unit. Nullable.
+  - `[Description <String>]`: An optional description for the administrative unit. Supports $filter (eq, ne, in, startsWith), $search.
+  - `[DisplayName <String>]`: Display name for the administrative unit. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderBy.
+  - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for this administrative unit. Nullable.
     - `[Id <String>]`: Read-only.
-  - `[Members <IMicrosoftGraphDirectoryObject[]>]`: Users and groups that are members of this Adminsitrative Unit. HTTP Methods: GET (list members), POST (add members), DELETE (remove members).
+  - `[Members <IMicrosoftGraphDirectoryObject[]>]`: Users and groups that are members of this administrative unit. Supports $expand.
     - `[Id <String>]`: Read-only.
     - `[DeletedDateTime <DateTime?>]`: 
-  - `[ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership[]>]`: Scoped-role members of this Administrative Unit.  HTTP Methods: GET (list scopedRoleMemberships), POST (add scopedRoleMembership), DELETE (remove scopedRoleMembership).
+  - `[ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership[]>]`: Scoped-role members of this administrative unit.
     - `[Id <String>]`: Read-only.
     - `[AdministrativeUnitId <String>]`: Unique identifier for the administrative unit that the directory role is scoped to
     - `[RoleId <String>]`: Unique identifier for the directory role that the member is in.
@@ -200,17 +200,17 @@ ADMINISTRATIVEUNITS <IMicrosoftGraphAdministrativeUnit[]>: .
 BODYPARAMETER <IMicrosoftGraphDirectory1>: directory
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
-  - `[AdministrativeUnits <IMicrosoftGraphAdministrativeUnit[]>]`: 
+  - `[AdministrativeUnits <IMicrosoftGraphAdministrativeUnit[]>]`: Conceptual container for user and group directory objects.
     - `[DeletedDateTime <DateTime?>]`: 
     - `[Id <String>]`: Read-only.
-    - `[Description <String>]`: An optional description for the administrative unit.
-    - `[DisplayName <String>]`: Display name for the administrative unit.
-    - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for this Administrative Unit. Nullable.
+    - `[Description <String>]`: An optional description for the administrative unit. Supports $filter (eq, ne, in, startsWith), $search.
+    - `[DisplayName <String>]`: Display name for the administrative unit. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderBy.
+    - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for this administrative unit. Nullable.
       - `[Id <String>]`: Read-only.
-    - `[Members <IMicrosoftGraphDirectoryObject[]>]`: Users and groups that are members of this Adminsitrative Unit. HTTP Methods: GET (list members), POST (add members), DELETE (remove members).
+    - `[Members <IMicrosoftGraphDirectoryObject[]>]`: Users and groups that are members of this administrative unit. Supports $expand.
       - `[Id <String>]`: Read-only.
       - `[DeletedDateTime <DateTime?>]`: 
-    - `[ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership[]>]`: Scoped-role members of this Administrative Unit.  HTTP Methods: GET (list scopedRoleMemberships), POST (add scopedRoleMembership), DELETE (remove scopedRoleMembership).
+    - `[ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership[]>]`: Scoped-role members of this administrative unit.
       - `[Id <String>]`: Read-only.
       - `[AdministrativeUnitId <String>]`: Unique identifier for the administrative unit that the directory role is scoped to
       - `[RoleId <String>]`: Unique identifier for the directory role that the member is in.

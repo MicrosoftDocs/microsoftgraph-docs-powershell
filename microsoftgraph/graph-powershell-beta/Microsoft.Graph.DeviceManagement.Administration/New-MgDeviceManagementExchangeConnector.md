@@ -50,7 +50,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Entity which represents a connection to an Exchange environment.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementExchangeConnector
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExchangeConnectorType
-deviceManagementExchangeConnectorType
+The type of Exchange Connector.
 
 ```yaml
 Type: String
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-deviceManagementExchangeConnectorStatus
+The current status of the Exchange Connector.
 
 ```yaml
 Type: String
@@ -268,12 +268,12 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagementExchangeConnector>: Entity which r
   - `[Id <String>]`: Read-only.
   - `[ConnectorServerName <String>]`: The name of the server hosting the Exchange Connector.
   - `[ExchangeAlias <String>]`: An alias assigned to the Exchange server
-  - `[ExchangeConnectorType <String>]`: deviceManagementExchangeConnectorType
+  - `[ExchangeConnectorType <String>]`: The type of Exchange Connector.
   - `[ExchangeOrganization <String>]`: Exchange Organization to the Exchange server
   - `[LastSyncDateTime <DateTime?>]`: Last sync time for the Exchange Connector
   - `[PrimarySmtpAddress <String>]`: Email address used to configure the Service To Service Exchange Connector.
   - `[ServerName <String>]`: The name of the Exchange server.
-  - `[Status <String>]`: deviceManagementExchangeConnectorStatus
+  - `[Status <String>]`: The current status of the Exchange Connector.
   - `[Version <String>]`: The version of the ExchangeConnectorAgent
 
 ## RELATED LINKS

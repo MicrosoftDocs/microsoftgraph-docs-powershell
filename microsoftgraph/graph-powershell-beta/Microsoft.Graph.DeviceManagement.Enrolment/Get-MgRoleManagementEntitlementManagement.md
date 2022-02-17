@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgRoleManagementEntitlementManagement
 
 ## SYNOPSIS
-The RbacApplication for Entitlement Management
+Container for all entitlement management resources in Azure AD identity governance.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-MgRoleManagementEntitlementManagement [-ExpandProperty <String[]>] [-Propert
 ```
 
 ## DESCRIPTION
-The RbacApplication for Entitlement Management
+Container for all entitlement management resources in Azure AD identity governance.
 
 ## EXAMPLES
 

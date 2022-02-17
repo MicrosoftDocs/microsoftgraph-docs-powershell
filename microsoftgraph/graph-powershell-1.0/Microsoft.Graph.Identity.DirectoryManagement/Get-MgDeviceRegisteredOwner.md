@@ -13,6 +13,7 @@ The registered owner is set at the time of registration.
 Currently, there can be only one owner.
 Read-only.
 Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -28,6 +29,7 @@ The registered owner is set at the time of registration.
 Currently, there can be only one owner.
 Read-only.
 Nullable.
+Supports $expand.
 
 ## EXAMPLES
 

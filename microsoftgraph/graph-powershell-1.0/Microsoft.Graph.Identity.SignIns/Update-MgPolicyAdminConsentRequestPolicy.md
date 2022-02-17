@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgPolicyAdminConsentRequestPolicy
 
 ## SYNOPSIS
-Update the navigation property adminConsentRequestPolicy in policies
+The policy by which consent requests are created and managed for the entire tenant.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Update-MgPolicyAdminConsentRequestPolicy -BodyParameter <IMicrosoftGraphAdminCon
 ```
 
 ## DESCRIPTION
-Update the navigation property adminConsentRequestPolicy in policies
+The policy by which consent requests are created and managed for the entire tenant.
 
 ## EXAMPLES
 
@@ -50,7 +50,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 adminConsentRequestPolicy
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAdminConsentRequestPolicy1
@@ -158,8 +158,9 @@ Accept wildcard characters: False
 ```
 
 ### -Reviewers
+The list of reviewers for the admin consent.
 Required.
-To construct, see NOTES section for REVIEWERS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for REVIEWERS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAccessReviewReviewerScope1[]
@@ -246,13 +247,13 @@ BODYPARAMETER <IMicrosoftGraphAdminConsentRequestPolicy1>: adminConsentRequestPo
   - `[NotifyReviewers <Boolean?>]`: Specifies whether reviewers will receive notifications. Required.
   - `[RemindersEnabled <Boolean?>]`: Specifies whether reviewers will receive reminder emails. Required.
   - `[RequestDurationInDays <Int32?>]`: Specifies the duration the request is active before it automatically expires if no decision is applied.
-  - `[Reviewers <IMicrosoftGraphAccessReviewReviewerScope1[]>]`: Required.
+  - `[Reviewers <IMicrosoftGraphAccessReviewReviewerScope1[]>]`: The list of reviewers for the admin consent. Required.
     - `[Query <String>]`: The query specifying who will be the reviewer. See table for examples.
     - `[QueryRoot <String>]`: In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query, for example, ./manager, is specified. Possible value: decisions.
     - `[QueryType <String>]`: The type of query. Examples include MicrosoftGraph and ARM.
   - `[Version <Int32?>]`: Specifies the version of this policy. When the policy is updated, this version is updated. Read-only.
 
-REVIEWERS <IMicrosoftGraphAccessReviewReviewerScope1[]>: Required.
+REVIEWERS <IMicrosoftGraphAccessReviewReviewerScope1[]>: The list of reviewers for the admin consent. Required.
   - `[Query <String>]`: The query specifying who will be the reviewer. See table for examples.
   - `[QueryRoot <String>]`: In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query, for example, ./manager, is specified. Possible value: decisions.
   - `[QueryType <String>]`: The type of query. Examples include MicrosoftGraph and ARM.

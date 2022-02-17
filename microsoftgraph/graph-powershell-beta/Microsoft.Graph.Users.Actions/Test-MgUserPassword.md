@@ -130,5 +130,7 @@ Please use Get-Help -Online.
 
 ## RELATED LINKS
 
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/test-mguserpassword](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/test-mguserpassword)
+BODYPARAMETER <IPaths14Hev5OUsersMicrosoftGraphValidatepasswordPostRequestbodyContentApplicationJsonSchema>: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Password <String>]`: 
 

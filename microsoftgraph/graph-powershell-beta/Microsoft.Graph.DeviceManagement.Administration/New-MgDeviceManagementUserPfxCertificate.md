@@ -51,7 +51,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Entity that encapsulates all information required for a user's PFX certificates.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserPfxCertificate
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -IntendedPurpose
-userPfxIntendedPurpose
+Supported values for the intended purpose of a user PFX certificate.
 
 ```yaml
 Type: String
@@ -186,7 +186,7 @@ Accept wildcard characters: False
 ```
 
 ### -PaddingScheme
-userPfxPaddingScheme
+Supported values for the padding scheme used by encryption provider.
 
 ```yaml
 Type: String
@@ -316,10 +316,10 @@ BODYPARAMETER <IMicrosoftGraphUserPfxCertificate>: Entity that encapsulates all 
   - `[EncryptedPfxBlob <Byte[]>]`: Encrypted PFX blob.
   - `[EncryptedPfxPassword <String>]`: Encrypted PFX password.
   - `[ExpirationDateTime <DateTime?>]`: Certificate's validity expiration date/time.
-  - `[IntendedPurpose <String>]`: userPfxIntendedPurpose
+  - `[IntendedPurpose <String>]`: Supported values for the intended purpose of a user PFX certificate.
   - `[KeyName <String>]`: Name of the key (within the provider) used to encrypt the blob.
   - `[LastModifiedDateTime <DateTime?>]`: Date/time when this PFX certificate was last modified.
-  - `[PaddingScheme <String>]`: userPfxPaddingScheme
+  - `[PaddingScheme <String>]`: Supported values for the padding scheme used by encryption provider.
   - `[ProviderName <String>]`: Crypto provider used to encrypt this blob.
   - `[StartDateTime <DateTime?>]`: Certificate's validity start date/time.
   - `[Thumbprint <String>]`: SHA-1 thumbprint of the PFX certificate.

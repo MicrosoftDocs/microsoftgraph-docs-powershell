@@ -72,7 +72,7 @@ Accept wildcard characters: False
 
 ### -Bitlocker
 bitlocker
-To construct, see NOTES section for BITLOCKER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BITLOCKER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphBitlocker
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 informationProtection
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphInformationProtection
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 
 ### -DataLossPreventionPolicies
 .
-To construct, see NOTES section for DATALOSSPREVENTIONPOLICIES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DATALOSSPREVENTIONPOLICIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDataLossPreventionPolicy[]
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentitySignInsIdentity
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 
 ### -Policy
 informationProtectionPolicy
-To construct, see NOTES section for POLICY properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for POLICY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphInformationProtectionPolicy
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 
 ### -SensitivityLabels
 .
-To construct, see NOTES section for SENSITIVITYLABELS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SENSITIVITYLABELS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSensitivityLabel[]
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 
 ### -SensitivityPolicySettings
 sensitivityPolicySettings
-To construct, see NOTES section for SENSITIVITYPOLICYSETTINGS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SENSITIVITYPOLICYSETTINGS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSensitivityPolicySettings
@@ -214,7 +214,7 @@ Accept wildcard characters: False
 
 ### -ThreatAssessmentRequests
 .
-To construct, see NOTES section for THREATASSESSMENTREQUESTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for THREATASSESSMENTREQUESTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphThreatAssessmentRequest[]
@@ -298,9 +298,9 @@ BITLOCKER <IMicrosoftGraphBitlocker>: bitlocker
   - `[Id <String>]`: Read-only.
   - `[RecoveryKeys <IMicrosoftGraphBitlockerRecoveryKey[]>]`: The recovery keys associated with the bitlocker entity.
     - `[Id <String>]`: Read-only.
-    - `[CreatedDateTime <DateTime?>]`: The date and time when the key was originally backed up to Azure Active Directory.
-    - `[DeviceId <String>]`: ID of the device the BitLocker key is originally backed up from.
-    - `[Key <String>]`: The BitLocker recovery key.
+    - `[CreatedDateTime <DateTime?>]`: The date and time when the key was originally backed up to Azure Active Directory. Not nullable.
+    - `[DeviceId <String>]`: Identifier of the device the BitLocker key is originally backed up from. Supports $filter (eq).
+    - `[Key <String>]`: The BitLocker recovery key. Returned only on $select. Not nullable.
     - `[VolumeType <String>]`: volumeType
 
 BODYPARAMETER <IMicrosoftGraphInformationProtection>: informationProtection
@@ -311,9 +311,9 @@ BODYPARAMETER <IMicrosoftGraphInformationProtection>: informationProtection
     - `[Id <String>]`: Read-only.
     - `[RecoveryKeys <IMicrosoftGraphBitlockerRecoveryKey[]>]`: The recovery keys associated with the bitlocker entity.
       - `[Id <String>]`: Read-only.
-      - `[CreatedDateTime <DateTime?>]`: The date and time when the key was originally backed up to Azure Active Directory.
-      - `[DeviceId <String>]`: ID of the device the BitLocker key is originally backed up from.
-      - `[Key <String>]`: The BitLocker recovery key.
+      - `[CreatedDateTime <DateTime?>]`: The date and time when the key was originally backed up to Azure Active Directory. Not nullable.
+      - `[DeviceId <String>]`: Identifier of the device the BitLocker key is originally backed up from. Supports $filter (eq).
+      - `[Key <String>]`: The BitLocker recovery key. Returned only on $select. Not nullable.
       - `[VolumeType <String>]`: volumeType
   - `[DataLossPreventionPolicies <IMicrosoftGraphDataLossPreventionPolicy[]>]`: 
     - `[Id <String>]`: Read-only.
@@ -395,6 +395,7 @@ DATALOSSPREVENTIONPOLICIES <IMicrosoftGraphDataLossPreventionPolicy[]>: .
 
 INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: key: id of activityBasedTimeoutPolicy
+  - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AuthenticationContextClassReferenceId <String>]`: key: id of authenticationContextClassReference
   - `[AuthenticationMethodId <String>]`: key: id of authenticationMethod
   - `[AuthorizationPolicyId <String>]`: key: id of authorizationPolicy
@@ -403,6 +404,7 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[ConditionalAccessPolicyId <String>]`: key: id of conditionalAccessPolicy
   - `[DataLossPreventionPolicyId <String>]`: key: id of dataLossPreventionPolicy
   - `[DataPolicyOperationId <String>]`: key: id of dataPolicyOperation
+  - `[DefaultUserRoleOverrideId <String>]`: key: id of defaultUserRoleOverride
   - `[DirectoryObjectId <String>]`: key: id of directoryObject
   - `[EmailAuthenticationMethodId <String>]`: key: id of emailAuthenticationMethod
   - `[FeatureRolloutPolicyId <String>]`: key: id of featureRolloutPolicy
@@ -413,6 +415,7 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[InformationProtectionLabelId <String>]`: key: id of informationProtectionLabel
   - `[LongRunningOperationId <String>]`: key: id of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: key: id of microsoftAuthenticatorAuthenticationMethod
+  - `[MobilityManagementPolicyId <String>]`: key: id of mobilityManagementPolicy
   - `[NamedLocationId <String>]`: key: id of namedLocation
   - `[OAuth2PermissionGrantId <String>]`: key: id of oAuth2PermissionGrant
   - `[OrganizationId <String>]`: key: id of organization
@@ -426,6 +429,9 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[RiskyUserId <String>]`: key: id of riskyUser
   - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
   - `[SensitivityLabelId1 <String>]`: key: id of sensitivityLabel
+  - `[ServicePrincipalCreationConditionSetId <String>]`: key: id of servicePrincipalCreationConditionSet
+  - `[ServicePrincipalCreationPolicyId <String>]`: key: id of servicePrincipalCreationPolicy
+  - `[SoftwareOathAuthenticationMethodId <String>]`: key: id of softwareOathAuthenticationMethod
   - `[TemporaryAccessPassAuthenticationMethodId <String>]`: key: id of temporaryAccessPassAuthenticationMethod
   - `[ThreatAssessmentRequestId <String>]`: key: id of threatAssessmentRequest
   - `[ThreatAssessmentResultId <String>]`: key: id of threatAssessmentResult
