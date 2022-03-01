@@ -85,7 +85,7 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 
 |Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
-|Add-AzureADApplicationOwner|[New-MgApplicationOwnerByRef.md](/powershell/module/microsoft.graph.applications/new-mgapplicationownerbyref.md?view=graph-powershell-1.0&preserve-view=true)|
+|Add-AzureADApplicationOwner|[New-MgApplicationOwnerByRef](/powershell/module/microsoft.graph.applications/new-mgapplicationownerbyref?view=graph-powershell-1.0&preserve-view=true)|
 |Get-AzureADApplication|[Get-MgApplication](/powershell/module/microsoft.graph.applications/get-mgapplication?view=graph-powershell-1.0&preserve-view=true)|
 |Get-AzureADApplicationExtensionProperty|[Get-MgApplicationExtensionProperty](/powershell/module/microsoft.graph.applications/get-mgapplicationextensionproperty?view=graph-powershell-1.0&preserve-view=true)|
 |Get-AzureADApplicationKeyCredential||
@@ -106,8 +106,6 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |Set-AzureADApplication|[Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0&preserve-view=true)|
 |Set-AzureADApplicationLogo|[Set-MgApplicationLogo](/powershell/module/microsoft.graph.applications/set-mgapplicationlogo?view=graph-powershell-1.0&preserve-view=true)|
 
-
-
 ### Azure AD
 
 |Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
@@ -115,7 +113,7 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |Add-AzureADMSApplicationOwner|[New-MgApplicationOwnerByRef](/powershell/module/microsoft.graph.applications/new-mgapplicationownerbyref?view=graph-powershell-1.0&preserve-view=true)|
 |Add-AzureADMSServicePrincipalDelegatedPermissionClassification|[New-MgServicePrincipalDelegatedPermissionClassification](/powershell/module/microsoft.graph.applications/new-mgserviceprincipaldelegatedpermissionclassification?view=graph-powershell-1.0&preserve-view=true)|
 |Get-AzureADApplicationProxyConnectorGroupMember||
-|Get-AzureADCurrentSessionInfo|[Get-MgContext](/powershell/module/microsoft.graph.authentication/get-mgcontext?view=graph-powershell-1.0&preserve-view=true)|
+|Get-AzureADCurrentSessionInfo|Get-MgContext|
 |Get-AzureADMSApplication|[Get-MgApplication](/powershell/module/microsoft.graph.applications/get-mgapplication?view=graph-powershell-1.0&preserve-view=true)|
 |Get-AzureADMSApplicationExtensionProperty|[Get-MgApplicationExtensionProperty](/powershell/module/microsoft.graph.applications/get-mgapplicationextensionproperty?view=graph-powershell-1.0&preserve-view=true)|
 |Get-AzureADMSApplicationOwner|[Get-MgApplicationOwner](/powershell/module/microsoft.graph.applications/get-mgapplicationowner?view=graph-powershell-1.0&preserve-view=true)|
@@ -179,9 +177,8 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 
 |Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
-|Connect-AzureAD|[Connect-MgGraph](/powershell/module/microsoft.graph.authentication/connect-mggraph?view=graph-powershell-1.0&preserve-view=true)|
-|Disconnect-AzureAD|[Disconnect-MgGraph](/powershell/module/microsoft.graph.authentication/disconnect-mggraph?view=graph-powershell-1.0&preserve-view=true)|
-
+|Connect-AzureAD|Connect-MgGraph|
+|Disconnect-AzureAD|Disconnect-MgGraph|
 
 ### Contacts
 
@@ -196,20 +193,17 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |Remove-AzureADContactManager|[Remove-MgContactManagerByRef](/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgcontactmanagerbyref?view=graph-powershell-1.0&preserve-view=true)|
 |Select-AzureADGroupIdsContactIsMemberOf|[Get-MgContactMemberOf](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactmemberof?view=graph-powershell-1.0&preserve-view=true)|
 
-
 ### Contracts
 
 |Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Get-AzureADContract|[Get-MgContract](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontract?view=graph-powershell-1.0&preserve-view=true)|
 
-
 ### Deleted objects
 
 |Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Restore-AzureADDeletedApplication|[Restore-MgApplication](/powershell/module/microsoft.graph.applications/restore-mgapplication?view=graph-powershell-1.0&preserve-view=true)|
-
 
 ### Devices
 
@@ -227,7 +221,6 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |Remove-AzureADDeviceRegisteredUser||
 |Set-AzureADDevice|[Update-MgDevice](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdevice?view=graph-powershell-1.0&preserve-view=true)|
 
-
 ### Directory
 
 |Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
@@ -236,14 +229,11 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |Get-AzureADTenantDetail|[Get-MgOrganization](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganization?view=graph-powershell-1.0&preserve-view=true)|
 |Set-AzureADTenantDetail|[Update-MgOrganization](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganization?view=graph-powershell-1.0&preserve-view=true)|
 
-
-
 ### Directory Objects
 
 |Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Get-AzureADObjectByObjectId|[Get-MgDirectoryObjectById](/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectbyid?view=graph-powershell-1.0&preserve-view=true)|
-
 
 ### Directory roles
 
@@ -256,27 +246,24 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |Get-AzureADDirectoryRoleTemplate|[Get-MgDirectoryRoleTemplate](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryroletemplate?view=graph-powershell-1.0&preserve-view=true)|
 |Remove-AzureADDirectoryRoleMember|[Remove-MgDirectoryRoleScopedMember](/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryrolescopedmember?view=graph-powershell-1.0&preserve-view=true)|
 
-
 ### Domains
 
 |Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Confirm-AzureADDomain|[Confirm-MgDomain](/powershell/module/microsoft.graph.identity.directorymanagement/confirm-mgdomain?view=graph-powershell-1.0&preserve-view=true)|
 |Get-AzureADDomain|[Get-MgDomain](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomain?view=graph-powershell-1.0&preserve-view=true)|
-|Get-AzureADDomainNameReference|[Get-MgDomainNameerenceByRef](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainnameerencebyref?view=graph-powershell-1.0&preserve-view=true)|
+|Get-AzureADDomainNameReference|[Get-MgDomainDomainNameReferenceByRef](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomaindomainnamereferencebyref?view=graph-powershell-1.0&preserve-view=true)|
 |Get-AzureADDomainServiceConfigurationRecord|[Get-MgDomainServiceConfigurationRecord](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainserviceconfigurationrecord?view=graph-powershell-1.0&preserve-view=true)|
 |Get-AzureADDomainVerificationDnsRecord|[Get-MgDomainVerificationDnsRecord](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdomainverificationdnsrecord?view=graph-powershell-1.0&preserve-view=true)|
 |New-AzureADDomain|[New-MgDomain](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdomain?view=graph-powershell-1.0&preserve-view=true)|
 |Remove-AzureADDomain|[Remove-MgDomain](/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdomain?view=graph-powershell-1.0&preserve-view=true)|
 |Set-AzureADDomain|[Update-MgDomain](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomain?view=graph-powershell-1.0&preserve-view=true)|
 
-
 ### Extension properties
 
 |Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Get-AzureADExtensionProperty|[Get-MgDirectoryObjectAvailableExtensionProperty](/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectavailableextensionproperty?view=graph-powershell-1.0&preserve-view=true)|
-
 
 ### Groups
 
@@ -309,14 +296,12 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |Set-AzureADMSGroup|[Update-MgGroup](/powershell/module/microsoft.graph.groups/update-mggroup?view=graph-powershell-1.0&preserve-view=true)|
 |Set-AzureADMSGroupLifecyclePolicy|[Update-MgGroupLifecyclePolicy](/powershell/module/microsoft.graph.groups/update-mggrouplifecyclepolicy?view=graph-powershell-1.0&preserve-view=true)|
 
-
 ### Oauth2
 
 |Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Get-AzureADOAuth2PermissionGrant|[Get-MgOauth2PermissionGrant](/powershell/module/microsoft.graph.identity.signins/get-mgoauth2permissiongrant?view=graph-powershell-1.0&preserve-view=true)|
 |Remove-AzureADOAuth2PermissionGrant|[Remove-MgOauth2PermissionGrant](/powershell/module/microsoft.graph.identity.signins/remove-mgoauth2permissiongrant?view=graph-powershell-1.0&preserve-view=true)|
-
 
 ### Service principals
 
@@ -346,9 +331,6 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |Select-AzureADGroupIdsServicePrincipalIsMemberOf|[Get-MgServicePrincipalMemberOf](/powershell/module/microsoft.graph.applications/get-mgserviceprincipalmemberof?view=graph-powershell-1.0&preserve-view=true)|
 |Set-AzureADServicePrincipal|[Update-MgServicePrincipal](/powershell/module/microsoft.graph.applications/update-mgserviceprincipal?view=graph-powershell-1.0&preserve-view=true)|
 
-
-
-
 ### Users
 
 |Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
@@ -369,20 +351,20 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |New-AzureADMSInvitation|[New-MgInvitation](/powershell/module/microsoft.graph.identity.signins/new-mginvitation?view=graph-powershell-1.0&preserve-view=true)|
 |New-AzureADUser|[New-MgUser](/powershell/module/microsoft.graph.users/new-mguser?view=graph-powershell-1.0&preserve-view=true)|
 |New-AzureADUserAppRoleAssignment|[New-MgUserAppRoleAssignment](/powershell/module/microsoft.graph.applications/new-mguserapproleassignment?view=graph-powershell-1.0&preserve-view=true)|
-|Remove-AzureADUser|[Remove-MgUser](/powershell/module/microsoft.graph.applications/remove-mguser?view=graph-powershell-1.0&preserve-view=true)|
+|Remove-AzureADUser|[Remove-MgUser](/powershell/module/microsoft.graph.users/remove-mguser?view=graph-powershell-1.0&preserve-view=true)|
 |Remove-AzureADUserAppRoleAssignment|[Remove-MgUserAppRoleAssignment](/powershell/module/microsoft.graph.applications/remove-mguserapproleassignment?view=graph-powershell-1.0&preserve-view=true)|
 |Remove-AzureADUserExtension|[Remove-MgUserExtension](/powershell/module/microsoft.graph.users/remove-mguserextension?view=graph-powershell-1.0&preserve-view=true)|
 |Remove-AzureADUserManager|[Remove-MgUserManagerByRef](/powershell/module/microsoft.graph.users/remove-mgusermanagerbyref?view=graph-powershell-1.0&preserve-view=true)|
 |Revoke-AzureADSignedInUserAllRefreshToken||
-|Revoke-AzureADUserAllRefreshToken|[Invoke-MgInvalidateUserRefreshTokenByRef](/powershell/module/microsoft.graph.users/invoke-mginvalidateuserrefreshtokenbyref?view=graph-powershell-1.0&preserve-view=true)|
+|Revoke-AzureADUserAllRefreshToken|[Invoke-MgInvalidateUserRefreshTokenByRef](/powershell/module/microsoft.graph.users.actions/invoke-mginvalidateuserrefreshtoken?view=graph-powershell-beta&preserve-view=true)|
 |Select-AzureADGroupIdsUserIsMemberOf|[Get-MgUserMemberOf](/powershell/module/microsoft.graph.users/get-mgusermemberof?view=graph-powershell-1.0&preserve-view=true)|
 |Set-AzureADUser|[Update-MgUser](/powershell/module/microsoft.graph.users/update-mguser?view=graph-powershell-1.0&preserve-view=true)|
 |Set-AzureADUserExtension|[Update-MgUserExtension](/powershell/module/microsoft.graph.users/update-mguserextension?view=graph-powershell-1.0&preserve-view=true)|
 |Set-AzureADUserLicense|[Set-MgUserLicense](/powershell/module/microsoft.graph.users.actions/set-mguserlicense?view=graph-powershell-1.0&preserve-view=true)|
 |Set-AzureADUserManager|[Set-MgUserManagerByRef](/powershell/module/microsoft.graph.users/set-mgusermanagerbyref?view=graph-powershell-1.0&preserve-view=true)|
-|Set-AzureADUserPassword|[Reset-MgUserPassword](/powershell/module/microsoft.graph.users.actions/reset-mguserpassword?view=graph-powershell-1.0&preserve-view=true)|
+|Set-AzureADUserPassword|[Update-MgUserPassword](/powershell/module/microsoft.graph.users.actions/update-mguserpassword?view=graph-powershell-1.0&preserve-view=true)|
 |Set-AzureADUserThumbnailPhoto|[Set-MgUserPhotoContent](/powershell/module/microsoft.graph.users/set-mguserphotocontent?view=graph-powershell-1.0&preserve-view=true)|
-|Update-AzureADSignedInUserPassword|[Update-MgUserPassword](/powershell/module/microsoft.graph.users/update-mguserpassword?view=graph-powershell-1.0&preserve-view=true)|
+|Update-AzureADSignedInUserPassword|[Update-MgUserPassword](/powershell/module/microsoft.graph.users.actions/update-mguserpassword?view=graph-powershell-1.0&preserve-view=true)|
 
 <sup>1</sup> This cmdlet has more than one cmdlet mapping in Microsoft Graph PowerShell.
 
@@ -397,7 +379,7 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |Add-MsolScopedRoleMember|[New-MgDirectoryRoleScopedMember](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryrolescopedmember?view=graph-powershell-1.0&preserve-view=true)|
 |Confirm-MsolDomain|[Confirm-MgDomain](/powershell/module/microsoft.graph.identity.directorymanagement/confirm-mgdomain?view=graph-powershell-1.0&preserve-view=true)|
 |Confirm-MsolEmailVerifiedDomain||
-|Connect-MsolService|[Connect-MgGraph](/powershell/module/microsoft.graph.authentication/connect-mggraph?view=graph-powershell-1.0&preserve-view=true)|
+|Connect-MsolService|Connect-MgGraph|
 |Convert-MsolDomainToFederated||
 |Convert-MsolDomainToStandard||
 |Convert-MsolFederatedUser||
