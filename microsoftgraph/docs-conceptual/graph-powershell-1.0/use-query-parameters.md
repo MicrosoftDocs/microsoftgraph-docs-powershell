@@ -11,20 +11,22 @@ ms.reviewer: darrmi, maisarissi
 
 # Use query parameters to customize responses
 
-Microsoft Graph PowerShell SDK supports optional query parameters that you can use to specify and control the amount of data returned in a response. The support for the exact query parameters varies from one cmdlet to another, and depending on the profile, can differ between the v1.0 and beta endpoints.
+The Microsoft Graph PowerShell SDK supports optional query parameters that you can use to specify and control the amount of data returned in a response. The support for the exact query parameters varies from one cmdlet to another, and depending on the profile, can differ between the v1.0 and beta endpoints.
 
 ## OData system query options
 
 Microsoft PowerShell SDK cmdlets may support one or more of the following OData system query options. These options are only supported in the GET operations.
 
+>[!TIP]
+>OData query options in the Microsoft Graph API use lower case names and specify the dollar ($) prefix while in Microsoft Graph PowerShell SDK, their names are Pascal-cased and prefixed with a hyphen (-). For example, `$count` and `$orderBy` are to Microsoft Graph API while `-Count` and `-OrderBy` respectively, are to Microsoft Graph PowerShell SDK.
 |Name|Description|Example|
 |-----|----|-----|
 | [-Count](#count-parameter) |Retrieves the total count of matching resources|`Get-MgUser -ConsistencyLevel eventual -Count count`<br>`$count`|
-| [-Expand](#expand-parameter)| Retrieves related resources|`Get-MgGroup -GroupId '0e06b38f-931a-47db-9a9a-60ab5f492005' -Expand members  Select -ExpandProperty members`|
+| [-Expand](#expand-parameter)| Retrieves related resources|`Get-MgGroup -GroupId '0e06b38f-931a-47db-9a9a-60ab5f492005' -Expand members | Select -ExpandProperty members`|
 | [-Filter](#filter-parameter)| Filters results (rows)|`Get-MgUser -Filter "startsWith(DisplayName, 'Conf')"`|
 | [-OrderBy](#orderby-parameter)| Orders results|`Get-MgUser -OrderBy DisplayName`|
 | [-Search](#search-parameter)| Returns results based on search criteria|`Get-MgUser -ConsistencyLevel eventual -Search '"DisplayName:Conf"'`|
-| [-Select](#select-parameter)| Filters properties (columns)|`Get-MgUser  Select DisplayName, Id`|
+| [-Select](#select-parameter)| Filters properties (columns)|`Get-MgUser | Select DisplayName, Id`|
 | [-Top](#top-parameter)| Sets the page size of results. |`Get-MgUser -Top 10`|
 
 ## Count parameter
@@ -39,12 +41,12 @@ Get-MgUser -ConsistencyLevel eventual -Count userCount
 $userCount
 ```
 
-The `-Count` query parameter is supported for these collections of resources and their relationships that derive from [directoryObject](/powershell/module/microsoft.graph.directoryobjects/?view=graph-powershell-1.0&preserve-view=true):
-- [application](/powershell/module/microsoft.graph.applications/?view=graph-powershell-1.0&preserve-view=true)
+The `-Count` query parameter is supported for these collections of modules which represent resources and their relationships that derive from [DirectoryObjects](/powershell/module/microsoft.graph.directoryobjects/?view=graph-powershell-1.0&preserve-view=true):
+- [Applications](/powershell/module/microsoft.graph.applications/?view=graph-powershell-1.0&preserve-view=true)
 - [orgContact](/graph/api/resources/orgcontact?view=graph-rest-beta&preserve-view=true)
-- [device](/powershell/module/microsoft.graph.devicemanagement/?view=graph-powershell-1.0&preserve-view=true)
-- [group](/powershell/module/microsoft.graph.groups/?view=graph-powershell-1.0&preserve-view=true)
-- [user](/powershell/module/microsoft.graph.users/?view=graph-powershell-1.0&preserve-view=true)
+- [devices](/powershell/module/microsoft.graph.devicemanagement/?view=graph-powershell-1.0&preserve-view=true)
+- [Groups](/powershell/module/microsoft.graph.groups/?view=graph-powershell-1.0&preserve-view=true)
+- [Users](/powershell/module/microsoft.graph.users/?view=graph-powershell-1.0&preserve-view=true)
 
 ## Expand parameter
 
@@ -68,7 +70,7 @@ Id                                   DeletedDateTime
 e6d486c1-20f3-426d-bc5d-736c8f467254
 ```
 
-With some resource collections, you can also specify the properties to be returned in the expanded resources by adding a `Select` parameter. The following example performs the same query as the previous example but uses a ['Select`](#select-parameter) statement to limit the properties returned for the expanded child items to the **id** only.
+With some resource collections, you can also specify the properties to be returned in the expanded resources by adding the `Select` parameter. The following example performs the same query as the previous example but uses a ['Select`](#select-parameter) statement to limit the properties returned for the expanded child items to the **Id** only.
 
 ```powershell
 Get-MgGroup -GroupId '0e06b38f-931a-47db-9a9a-60ab5f492005' -Expand members | 
@@ -88,7 +90,7 @@ Not all relationships and resources support the `-Expand` query parameter. For e
 
 ## Filter parameter
 
-Use the `-Filter` query parameter to retrieve just a subset of a collection. The `-Filter` query parameter can also be used to retrieve relationships like members, memberOf, transitiveMembers, and transitiveMemberOf. 
+Use the `-Filter` query parameter to retrieve just a subset of a collection. The `-Filter` query parameter can also be used to retrieve relationships like Members, MemberOf, TransitiveMember, and TransitiveMemberOf. 
 
 The following example can be used to find users whose display name starts with the letter 'J' using `startsWith`.
 
@@ -113,9 +115,7 @@ Support for `-Filter` operators varies across Microsoft Graph PowerShell cmdlets
 |Conditional operators|&#8226; and `and`<br> &#8226; or `or`|
 |Functions|&#8226; Starts with `startsWith`<br> &#8226; Ends with `endsWith` <br> &#8226; Contains `contains`|
 
-Support for these operators varies by entity. See the specific entity documentation for details.
-
-The `contains` string operator is currently not supported on any Microsoft Graph PowerShell SDK resources.
+Support for these operators varies by module. See the specific module documentation for details.
 
 >[!Note]
 >Support for these operators varies by entity and some properties support `-Filter` only in advanced queries. 
@@ -160,7 +160,7 @@ Id                                   DisplayName   Mail               UserPrinci
 
 Use the `-Select` query parameter to return a set of properties that are different than the default set for an individual resource or a collection of resources. With `-Select`, you can specify a subset or a superset of the default properties.
 
-For example, when retrieving a list of all the users, you can specify that only the **id** and **name** properties be returned:
+For example, when retrieving a list of all the users, you can specify that only the **Id** and **DisplayName** properties be returned:
 
 ```powershell
 Get-MgUser | Select Id, DisplayName
@@ -179,7 +179,7 @@ f0735e7b-4ffa-4150-b6a8-7d79e08803cc Bianca Pisani
 
 In general, we recommend that you use `-Select` to limit the properties returned by a query to those needed by your app. This is especially true of queries that might potentially return a large result set. Limiting the properties returned in each row will reduce network load and help improve your app's performance.
 
- In `v1.0`, some Azure AD resources that derive from [directoryObject](/graph/api/resources/directoryobject), like [user](/graph/api/resources/user) and [group](/graph/api/resources/group), return a limited, default subset of properties on reads. For these resources, you must use `select` to return properties outside of the default set.  
+ In `v1.0`, some Azure AD resources that derive from [directoryObject](/graph/api/resources/directoryobject), like [user](/graph/api/resources/user) and [group](/graph/api/resources/group), return a limited, default subset of properties on reads. For these resources, you must use `-Select` to return properties outside of the default set.  
 
 ## Top parameter
 
@@ -205,7 +205,7 @@ daf80309-1a1f-459d-91b6-7ae5673bc2f2 MOD Administrator admin@Contoso.com  admin@
 
 ## Error handling for query parameters
 
-Some requests will return an error message if a specified query parameter is not supported. For example, you cannot use `contains` on the `User display name` filter 
+Some requests will return an error message if a specified query parameter is not supported. For example, you cannot use the `-Contains` operator on the `DisplayName` property.
 
 ```powershell
 Get-MgUser -Filter "Contains(DisplayName, 'Test')"
