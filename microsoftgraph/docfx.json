@@ -104,7 +104,7 @@
     "dest": "microsoftgraph-docs-powershell",
 	"groups": {
       "graph-powershell-content": {
-        "moniker_range": "graph-powershell-1.0 || raph-powershell-beta",
+        "moniker_range": "graph-powershell-1.0 || graph-powershell-beta",
         "dest": "microsoftgraph"
       }
     },
