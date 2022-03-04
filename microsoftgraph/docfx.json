@@ -13,14 +13,14 @@
           "**/*.md"
         ],
         "src": "docs-conceptual",
-        "group": "graph-powershell-content"
+        "dest": "microsoftgraph"
       },
       {
         "files": [
           "toc.yml"
         ],
         "src": "docs-conceptual",
-        "group": "graph-powershell-content"
+        "dest": "microsoftgraph"
       },
       {
         "files": [
@@ -102,12 +102,9 @@
     "fileMetadata": {},
     "template": [],
     "dest": "microsoftgraph-docs-powershell",
-	"groups": {
-      "graph-powershell-content": {
-        "moniker_range": "graph-powershell-1.0 || graph-powershell-beta",
-        "dest": "microsoftgraph"
-      }
-    },
+	"monikerRange": {
+	  "docs-conceptual/**.*": "graph-powershell-1.0 || graph-powershell-beta",
+	},
     "markdownEngineName": "markdig"
   }
 }
