@@ -2,7 +2,7 @@
 title: "Use query parameters to customize responses"
 description: "Learn how to use optional query parameters in Microsoft Graph PowerShell SDK"
 ms.topic: conceptual
-ms.date: 12/07/2021
+ms.date: 03/07/2022
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
@@ -19,21 +19,22 @@ Microsoft PowerShell SDK cmdlets may support one or more of the following OData 
 
 >[!TIP]
 >OData query options in the Microsoft Graph API use lower case names and specify the dollar ($) prefix while in Microsoft Graph PowerShell SDK, their names are Pascal-cased and prefixed with a hyphen (-). For example, `$count` and `$orderBy` are to Microsoft Graph API while `-Count` and `-OrderBy` respectively, are to Microsoft Graph PowerShell SDK.
+
 |Name|Description|Example|
 |-----|----|-----|
 | [-Count](#count-parameter) |Retrieves the total count of matching resources|`Get-MgUser -ConsistencyLevel eventual -Count count`<br>`$count`|
-| [-Expand](#expand-parameter)| Retrieves related resources|`Get-MgGroup -GroupId '0e06b38f-931a-47db-9a9a-60ab5f492005' -Expand members | Select -ExpandProperty members`|
+| [-Expand](#expand-parameter)| Retrieves related resources|`Get-MgGroup -GroupId '0e06b38f-931a-47db-9a9a-60ab5f492005' -Expand members \| Select -ExpandProperty members`|
 | [-Filter](#filter-parameter)| Filters results (rows)|`Get-MgUser -Filter "startsWith(DisplayName, 'Conf')"`|
 | [-OrderBy](#orderby-parameter)| Orders results|`Get-MgUser -OrderBy DisplayName`|
 | [-Search](#search-parameter)| Returns results based on search criteria|`Get-MgUser -ConsistencyLevel eventual -Search '"DisplayName:Conf"'`|
-| [-Select](#select-parameter)| Filters properties (columns)|`Get-MgUser | Select DisplayName, Id`|
+| [-Select](#select-parameter)| Filters properties (columns)|`Get-MgUser \| Select DisplayName, Id`|
 | [-Top](#top-parameter)| Sets the page size of results. |`Get-MgUser -Top 10`|
 
 ## Count parameter
 
 Use the `-Count` query parameter to store the count of the total number of items in a collection in the specified count variable.
 
-For example, the following command returns all the users and stores their count in the variable `$count`. Querying the variable will return the count of all the users.
+For example, the following command returns all the users and stores their count in the variable `$userCount`. Querying the variable will return the count of all the users.
 
 ```powershell
 Get-MgUser -ConsistencyLevel eventual -Count userCount
@@ -41,7 +42,7 @@ Get-MgUser -ConsistencyLevel eventual -Count userCount
 $userCount
 ```
 
-The `-Count` query parameter is supported for these collections of modules which represent resources and their relationships that derive from [DirectoryObjects](/powershell/module/microsoft.graph.directoryobjects/?view=graph-powershell-1.0&preserve-view=true):
+The `-Count` query parameter is supported for these modules which represent resources and their relationships that derive from [DirectoryObjects](/powershell/module/microsoft.graph.directoryobjects/?view=graph-powershell-1.0&preserve-view=true):
 - [Applications](/powershell/module/microsoft.graph.applications/?view=graph-powershell-1.0&preserve-view=true)
 - [orgContact](/graph/api/resources/orgcontact?view=graph-rest-beta&preserve-view=true)
 - [devices](/powershell/module/microsoft.graph.devicemanagement/?view=graph-powershell-1.0&preserve-view=true)
@@ -53,7 +54,7 @@ The `-Count` query parameter is supported for these collections of modules which
 Many Microsoft Graph resources expose both declared properties of the resource as well as its relationships with other resources. These relationships are also called reference properties or navigation properties, and they can reference either a single resource or a collection of resources. For example, the mail folders, manager, and direct reports of a user are all exposed as relationships.
 
 You can query either the properties of a resource or one of its relationships in a single command, but not both. You can use the `-Expand` query string parameter to include the expanded resource or collection referenced by a single relationship (navigation property) in your results.
-_
+
 The following example gets the members of the specified group.
 
 ```powershell
@@ -86,11 +87,11 @@ e6d486c1-20f3-426d-bc5d-736c8f4672
 ```
 
 > [!Note] 
-Not all relationships and resources support the `-Expand` query parameter. For example, you can expand the **directReports**, **manager**, and **memberOf** relationships on a user, but you cannot expand its **events**, **messages**, or **photo** relationships. Not all resources or relationships support using `-Select` on expanded items.
+Not all relationships and resources support the `-Expand` query parameter. For example, you can expand the **DirectReports**, **Manager**, and **MemberOf** relationships on a user, but you cannot expand its **Events**, **Messages**, or **Photo** relationships. Not all resources or relationships support using `-Select` on expanded items.
 
 ## Filter parameter
 
-Use the `-Filter` query parameter to retrieve just a subset of a collection. The `-Filter` query parameter can also be used to retrieve relationships like Members, MemberOf, TransitiveMember, and TransitiveMemberOf. 
+Use the `-Filter` query parameter to retrieve just a subset of a collection. The `-Filter` query parameter can also be used to retrieve relationships like Members, MemberOf, TransitiveMember, and TransitiveMemberOf.
 
 The following example can be used to find users whose display name starts with the letter 'J' using `startsWith`.
 
@@ -115,10 +116,8 @@ Support for `-Filter` operators varies across Microsoft Graph PowerShell cmdlets
 |Conditional operators|&#8226; and `and`<br> &#8226; or `or`|
 |Functions|&#8226; Starts with `startsWith`<br> &#8226; Ends with `endsWith` <br> &#8226; Contains `contains`|
 
-Support for these operators varies by module. See the specific module documentation for details.
-
 >[!Note]
->Support for these operators varies by entity and some properties support `-Filter` only in advanced queries. 
+>Support for these operators varies by module and some properties support `-Filter` only in [advanced query capabilities](/graph/aad-advanced-queries?tabs=powershell).
 
 ## OrderBy parameter
 
@@ -158,7 +157,7 @@ Id                                   DisplayName   Mail               UserPrinci
 
 ## Select parameter
 
-Use the `-Select` query parameter to return a set of properties that are different than the default set for an individual resource or a collection of resources. With `-Select`, you can specify a subset or a superset of the default properties.
+Use the `-Select` query parameter to return a set of properties that are different from the default set for an individual resource or a collection of resources. With `-Select`, you can specify a subset or a superset of the default properties.
 
 For example, when retrieving a list of all the users, you can specify that only the **Id** and **DisplayName** properties be returned:
 
@@ -179,11 +178,11 @@ f0735e7b-4ffa-4150-b6a8-7d79e08803cc Bianca Pisani
 
 In general, we recommend that you use `-Select` to limit the properties returned by a query to those needed by your app. This is especially true of queries that might potentially return a large result set. Limiting the properties returned in each row will reduce network load and help improve your app's performance.
 
- In `v1.0`, some Azure AD resources that derive from [directoryObject](/graph/api/resources/directoryobject), like [user](/graph/api/resources/user) and [group](/graph/api/resources/group), return a limited, default subset of properties on reads. For these resources, you must use `-Select` to return properties outside of the default set.  
+ In `v1.0`, some Azure AD resources that derive from [DirectoryObject](/graph/api/resources/directoryobject), like [User](/graph/api/resources/user) and [Group](/graph/api/resources/group), return a limited, default subset of properties on reads. For these resources, you must use `-Select` to return properties outside of the default set.  
 
 ## Top parameter
 
-Use the `-Top` query parameter to specify the page size of the result set. 
+Use the `-Top` query parameter to specify the page size of the result set.
 
 The minimum value of `-Top` is 1 and the maximum depends on the corresponding API.  
 
