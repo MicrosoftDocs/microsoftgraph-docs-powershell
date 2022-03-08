@@ -3,12 +3,12 @@
         "packageRoot": "graph-powershell-1.0",
         "conceptualToc": "docs-conceptual/toc.yml",
         "conceptualTocUrl": "/powershell/microsoftgraph/toc.json",
-        "referenceTocUrl": "/powershell/module/graph-powershell-1.0/toc.json"
+        "referenceTocUrl": "/powershell/module/graph-powershell/toc.json"
     },
 	"graph-powershell-beta": {
         "packageRoot": "graph-powershell-beta",
         "conceptualToc": "docs-conceptual/toc.yml",
         "conceptualTocUrl": "/powershell/microsoftgraph/toc.json",
-        "referenceTocUrl": "/powershell/module/graph-powershell-beta/toc.json"
+        "referenceTocUrl": "/powershell/module/graph-powershell/toc.json"
     }
 }

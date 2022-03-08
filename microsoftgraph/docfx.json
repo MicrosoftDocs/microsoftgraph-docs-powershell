@@ -39,7 +39,7 @@
         ],
         "src": "graph-powershell-1.0",
         "version": "graph-powershell-1.0",
-        "dest": "module/graph-powershell-1.0"
+        "dest": "module/graph-powershell"
       },
       {
         "files": [
@@ -58,7 +58,7 @@
         ],
         "src": "graph-powershell-beta",
         "version": "graph-powershell-beta",
-        "dest": "module/graph-powershell-beta"
+        "dest": "module/graph-powershell"
       },
       {
         "files": [
