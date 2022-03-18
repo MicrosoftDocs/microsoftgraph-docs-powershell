@@ -145,15 +145,3 @@ To create an app role assignment, you will need the following information:
 ```Output
 
 ```
-
-## Step 3 [Optional]: Assign more delegated permissions to the service principal
-
-You can add more scopes to an already existing oauth2PermissionGrant object.
-
-```powershell
-$addpermissions = @{
-  "Scope" = "Application.Read.All, Group.Read.All"
-  }
-
-Update-MgOauth2PermissionGrant -OAuth2PermissionGrantId 'dYTqvFymPEWCtoLZx7bQYJBI-02_PSBLvNBZ_74Bem8' -Scope $Addpermissions
-```
