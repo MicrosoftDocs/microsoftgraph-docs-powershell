@@ -16,7 +16,7 @@
   items:
     - name: App-only authentication
       href: app-only.md
-    - name: Graph API permissions
+    - name: Grant API permissions
       href: tutorial-grant-api-permissions.md               
 - name: Migrate to Microsoft Graph PowerShell
   items:   

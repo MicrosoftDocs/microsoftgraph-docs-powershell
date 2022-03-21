@@ -14,7 +14,7 @@ ms.reviewer: jawoods, maisarissi
 When API permissions are granted to a client, application, or user in Azure AD, they are recorded as objects that can be accessed, updated, or deleted like other objects. Using Microsoft Graph PowerShell cmdlets to directly create permission grants is a programmatic alternative to interactive consent. This can be useful for automation scenarios, bulk management, or other custom operations in your organization.
 
 >[!Caution]
->Permissions created programmatically are not subject to review or confirmation. They take effect immediately.
+>Be Careful! Permissions created programmatically are not subject to review or confirmation. They take effect immediately.
 
 Any app or service that can manage permission grants can elevate privileges for any app, user, or group in your organization. Access to this service must be properly secured and should be limited to as few users as possible.
 
@@ -35,7 +35,7 @@ To successfully complete this tutorial, make sure you have the required prerequi
 
 ## Step 1: Create the resource app service principal
 
-The first step in granting consent is to [create the service principal](/powershell/module/microsoft.graph.applications/new-mgserviceprincipal?view=graph-powershell-1.0). To do so, you will need the `App Id` of the resource app.
+The first step in granting consent is to [create the service principal](/powershell/module/microsoft.graph.applications/new-mgserviceprincipal?view=graph-powershell-1.0&preserve-view=true). To do so, you will need the `App Id` of the resource app.
 
 ### Register an application with Azure AD
 
@@ -113,36 +113,6 @@ $params = @{
 Update-MgOauth2PermissionGrant -OAuth2PermissionGrantId 'dYTqvFymPEWCtoLZx7bQYJBI-02_PSBLvNBZ_74Bem8' -BodyParameter $params
 ```
 
-## Step 4: Assign the app to a user
-
-The last step when creating a delegated oauth2PermissionGrant is to assign the app to the user. This ensures that the app will appear in the [MyApps](https://myapps.microsoft.com/) panel for the user. It also allows users to access the app as intended if the app is configured to require user assignment.
-
-To assign the app to a user, you will need the following information:
-
-1. **PrincipalId** - object Id of the user you are assigning the app role.
-1. **ResourceId** - object Id of the service principal representing the resource app in your tenant.
-1. **AppRoleId** - Id of the app role to be assigned, defined on the service principal representing the resource.
-
-```powershell
-$params = @{
-  "PrincipalId" ="da8af13f-b6e1-4eb3-8d66-ef4132c58b91"
-  "ResourceId" = "4dfb4890-3dbf-4b20-bcd0-59ffbe017a6f"
-  "AppRoleId" = "27eff1f3-3f3e-4c7d-8bcd-f03af6045c0b"
-}
-
-New-MgServicePrincipalAppRoleAssignedTo -ServicePrincipalId "4dfb4890-3dbf-4b20-bcd0-59ffbe017a6f" -BodyParameter $params | Format-List Id, ApproleId, CreatedDateTime,PrincipalDisplayName, PrincipalId, PrincipalType, ResourceDisplayName, ResourceId
-```
-
-```Output
-Id                   : P_GK2uG2s06NZu9BMsWLkesP9xzxlWBFuqVdaK8_lsE
-AppRoleId            : 27eff1f3-3f3e-4c7d-8bcd-f03af6045c0b
-CreatedDateTime      : 3/21/2022 9:59:26 AM
-PrincipalDisplayName : Adele Vance
-PrincipalId          : da8af13f-b6e1-4eb3-8d66-ef4132c58b91
-PrincipalType        : User
-ResourceDisplayName  : New app
-ResourceId           : 4dfb4890-3dbf-4b20-bcd0-59ffbe017a6f
-```
 # [App-only access](#tab/app-only)
 
 In this step, you will assign an app role defined in the resource app to another service principal. To create an app role assignment, you will need the following information:
@@ -173,3 +143,34 @@ ResourceDisplayName  : New app
 ```
 
 The `ServicePrincipalId` must always be same as the `ResourceId` which references the service principal that exposes the app roles that you want to assign to the `PrincipalId`. In this example, the resource service principal we created in step 2 exposes the app role `27eff1f3-3f3e-4c7d-8bcd-f03af6045c0b`.
+
+## Step 3: Assign the app to a user
+
+The last step when creating a delegated oauth2PermissionGrant is to assign the app to the user. This ensures that the app will appear in the [MyApps](https://myapps.microsoft.com/) panel for the user. It also allows users to access the app as intended if the app is configured to require user assignment.
+
+To assign the app to a user, you will need the following information:
+
+1. **PrincipalId** - object Id of the user you are assigning the app role.
+1. **ResourceId** - object Id of the service principal representing the resource app in your tenant.
+1. **AppRoleId** - Id of the app role to be assigned, defined on the service principal representing the resource.
+
+```powershell
+$params = @{
+  "PrincipalId" ="da8af13f-b6e1-4eb3-8d66-ef4132c58b91"
+  "ResourceId" = "4dfb4890-3dbf-4b20-bcd0-59ffbe017a6f"
+  "AppRoleId" = "27eff1f3-3f3e-4c7d-8bcd-f03af6045c0b"
+}
+
+New-MgServicePrincipalAppRoleAssignedTo -ServicePrincipalId "4dfb4890-3dbf-4b20-bcd0-59ffbe017a6f" -BodyParameter $params | Format-List Id, ApproleId, CreatedDateTime,PrincipalDisplayName, PrincipalId, PrincipalType, ResourceDisplayName, ResourceId
+```
+
+```Output
+Id                   : P_GK2uG2s06NZu9BMsWLkesP9xzxlWBFuqVdaK8_lsE
+AppRoleId            : 27eff1f3-3f3e-4c7d-8bcd-f03af6045c0b
+CreatedDateTime      : 3/21/2022 9:59:26 AM
+PrincipalDisplayName : Adele Vance
+PrincipalId          : da8af13f-b6e1-4eb3-8d66-ef4132c58b91
+PrincipalType        : User
+ResourceDisplayName  : New app
+ResourceId           : 4dfb4890-3dbf-4b20-bcd0-59ffbe017a6f
+```
