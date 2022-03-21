@@ -144,6 +144,8 @@ ResourceDisplayName  : New app
 
 The `ServicePrincipalId` must always be same as the `ResourceId` which references the service principal that exposes the app roles that you want to assign to the `PrincipalId`. In this example, the resource service principal we created in step 2 exposes the app role `27eff1f3-3f3e-4c7d-8bcd-f03af6045c0b`.
 
+---
+
 ## Step 3: Assign the app to a user
 
 The last step when creating a delegated oauth2PermissionGrant is to assign the app to the user. This ensures that the app will appear in the [MyApps](https://myapps.microsoft.com/) panel for the user. It also allows users to access the app as intended if the app is configured to require user assignment.
