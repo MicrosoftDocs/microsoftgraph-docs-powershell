@@ -179,4 +179,4 @@ ResourceId           : 4dfb4890-3dbf-4b20-bcd0-59ffbe017a6f
 
 ## Next steps
 
-Lean more more about [app-only authentication](app-only.md).
+Lean more about [app-only authentication](app-only.md).
