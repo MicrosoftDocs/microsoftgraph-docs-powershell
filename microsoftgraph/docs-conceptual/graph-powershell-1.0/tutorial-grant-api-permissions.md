@@ -101,7 +101,7 @@ ResourceId  : 4dfb4890-3dbf-4b20-bcd0-59ffbe017a6f
 Scope       : User.Read.All, AuditLog.Read.All, Group.Read.All
 ```
 
-### Step 2b[Optional]: Assign more delegated permissions to the service principal
+### Step 2b [Optional]: Assign more delegated permissions to the service principal
 
 You can add more scopes to an already existing oauth2PermissionGrant object.
 
