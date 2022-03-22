@@ -16,8 +16,6 @@ When API permissions are granted to a client, application, or user in Azure AD, 
 >[!Caution]
 >Be Careful! Permissions created programmatically are not subject to review or confirmation. They take effect immediately.
 
-Any app or service that can manage permission grants can elevate privileges for any app, user, or group in your organization. Access to this service must be properly secured and should be limited to as few users as possible.
-
 In this tutorial, you will register an application, create a service principal and create permission grants that allow access to the service principal.
 
 ## Prerequisites
@@ -32,6 +30,9 @@ To successfully complete this tutorial, make sure you have the required prerequi
     ```
 
     Select **Consent on behalf of your organization** before accepting in the login dialog box.
+
+>[!Caution]
+>The `AppRoleAssignment.ReadWrite.All` permission allows an app or a service to manage permission grants and  elevate privileges for any app, user, or group in your organization. Access to this service must be properly secured and should be limited to as few users as possible.
 
 ## Step 1: Create the resource app service principal
 
