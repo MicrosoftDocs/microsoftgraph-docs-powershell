@@ -1,5 +1,5 @@
 ---
-title: "Assign Azure AD roles in Privileged Identity Management"
+title: "Assign Azure AD roles in Privileged Identity Management using Microsoft Graph PowerShell"
 description: "Learn how to create eligible and active role assignments in Azure AD Privileged Identity Management using Microsoft Graph PowerShell"
 ms.topic: tutorial
 ms.date: 3/23/2022
@@ -9,7 +9,7 @@ ms.author: eunicewaweru
 ms.reviewer: maisarissi
 ---
 
-# Tutorial: Assign Azure AD roles in Privileged Identity Management
+# Tutorial: Assign Azure AD roles in Privileged Identity Management using Microsoft Graph PowerShell
 
 In Azure Active Directory (Azure AD), a Global administrator can make permanent Azure AD admin role assignments.
 
