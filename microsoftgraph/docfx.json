@@ -12,17 +12,15 @@
         "files": [
           "**/*.md"
         ],
-        "src": "docs-conceptual/graph-powershell-1.0",
-        "version": "graph-powershell-1.0",
+        "src": "docs-conceptual",
         "dest": "microsoftgraph"
       },
       {
         "files": [
           "toc.yml"
         ],
-        "src": "docs-conceptual/graph-powershell-1.0",
-        "version": "graph-powershell-1.0",
-        "dest": "microsoftgraph/graph-powershell-1.0"
+        "src": "docs-conceptual",
+        "dest": "microsoftgraph"
       },
       {
         "files": [
@@ -41,23 +39,7 @@
         ],
         "src": "graph-powershell-1.0",
         "version": "graph-powershell-1.0",
-        "dest": "module/graph-powershell-1.0"
-      },
-      {
-        "files": [
-          "**/*.md"
-        ],
-        "src": "docs-conceptual/graph-powershell-beta",
-        "version": "graph-powershell-beta",
-        "dest": "microsoftgraph"
-      },
-      {
-        "files": [
-          "toc.yml"
-        ],
-        "src": "docs-conceptual/graph-powershell-beta",
-        "version": "graph-powershell-beta",
-        "dest": "microsoftgraph/graph-powershell-beta"
+        "dest": "module/graph-powershell"
       },
       {
         "files": [
@@ -76,7 +58,7 @@
         ],
         "src": "graph-powershell-beta",
         "version": "graph-powershell-beta",
-        "dest": "module/graph-powershell-beta"
+        "dest": "module/graph-powershell"
       },
       {
         "files": [
@@ -120,6 +102,9 @@
     "fileMetadata": {},
     "template": [],
     "dest": "microsoftgraph-docs-powershell",
+	"monikerRange": {
+	  "docs-conceptual/**.*": "graph-powershell-1.0 || graph-powershell-beta",
+	},
     "markdownEngineName": "markdig"
   }
 }
