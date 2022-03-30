@@ -1,92 +1,90 @@
 ---
-title: "Grant API permissions programmatically in Azure AD"
-description: "Learn how to grant both delegated and app-only permissions programmatically in Azure AD using Microsoft Graph PowerShell"
+title: "Grant delegated permissions programmatically in Azure AD"
+description: "Learn how to grant delegated permissions programmatically in Azure AD using Microsoft Graph PowerShell"
 ms.topic: tutorial
-ms.date: 3/18/2022
+ms.date: 3/30/2022
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
 ms.reviewer: jawoods, maisarissi
 ---
 
-# Tutorial: Grant API permissions programmatically in Azure AD
+# Tutorial: Grant delegated permissions programmatically in Azure AD
 
 When API permissions are granted to a client, application, or user in Azure AD, they are recorded as objects that can be accessed, updated, or deleted like other objects. Using Microsoft Graph PowerShell cmdlets to directly create permission grants is a programmatic alternative to interactive consent. This can be useful for automation scenarios, bulk management, or other custom operations in your organization.
 
 >[!Caution]
 >Be Careful! Permissions created programmatically are not subject to review or confirmation. They take effect immediately.
 
-In this tutorial, you will register an application, create a service principal and create permission grants that allow access to the service principal.
+In this tutorial, you will grant delegated permissions that are exposed by an API to an app. Delegated permissions allow an app to call an API on behalf of a signed-in user, and may sometimes be called scopes or OAuth2 permissions.
 
 ## Prerequisites
 
 To successfully complete this tutorial, make sure you have the required prerequisites:
 
 1. Microsoft Graph PowerShell SDK is installed. Follow the [Install the Microsoft Graph PowerShell SDK](../graph-powershell-1.0/installation.md) guide to install the SDK. 
-1. Microsoft Graph PowerShell using a global administrator role and the appropriate permissions. For this tutorial, the `Application.ReadWrite.All`, `DelegatedPermissionGrant.ReadWrite.All`, `AppRoleAssignment.ReadWrite.All` delegated permissions are required. To set the permissions in Microsoft Graph PowerShell, run;
+1. Microsoft Graph PowerShell using a global administrator role and the appropriate permissions. For this tutorial, the `Application.ReadWrite.All` and `DelegatedPermissionGrant.ReadWrite.All` delegated permissions are required. To set the permissions in Microsoft Graph PowerShell, run;
 
     ```powershell
-    Connect-MgGraph -Scopes "Application.ReadWrite.All", "DelegatedPermissionGrant.ReadWrite.All", "AppRoleAssignment.ReadWrite.All"
+    Connect-MgGraph -Scopes "Application.ReadWrite.All", "DelegatedPermissionGrant.ReadWrite.All"
     ```
 
     Select **Consent on behalf of your organization** before accepting in the login dialog box.
 
->[!Caution]
->The `AppRoleAssignment.ReadWrite.All` permission allows an app or a service to manage permission grants and  elevate privileges for any app, user, or group in your organization. Access to this service must be properly secured and should be limited to as few users as possible.
 
-## Step 1: Create the resource app service principal
+## Step 1: Create a service principal
 
-The first step in granting consent is to [create the service principal](/powershell/module/microsoft.graph.applications/new-mgserviceprincipal?view=graph-powershell-1.0&preserve-view=true). To do so, you will need the `App Id` of the resource app.
+The first step in granting consent is to [create the service principal](/powershell/module/microsoft.graph.applications/new-mgserviceprincipal?view=graph-powershell-1.0&preserve-view=true). To do so, you will need the `App Id` of your application.
 
 ### Register an application with Azure AD
 
-If the resource app is not available, register an application with Azure AD:
+If the application is not available, register an application with Azure AD.
 
 ```powershell
-New-MgApplication -DisplayName 'New app' | 
+New-MgApplication -DisplayName 'My application' | 
   Format-List Id, DisplayName, AppId, SignInAudience, PublisherDomain
 ```
 
 ```Output
-Id              : ea47d016-f869-4229-9e99-c59d9a5ea73e
-DisplayName     : New app
-AppId           : 120005f0-6c5a-4478-b917-a8ae68e308bb
+Id              : 40cbfad6-f138-4fb4-9e7f-5a44044efbd6
+DisplayName     : My application
+AppId           : 05210c44-437f-4a40-bd38-b5b4eaf251ef
 SignInAudience  : AzureADandPersonalMicrosoftAccount
-PublisherDomain : M365x81760664.onmicrosoft.com
+PublisherDomain : Contoso.com
 ```
 
 ### Create a service principal for the application
 
 ```powershell
-New-MgServicePrincipal -AppId '120005f0-6c5a-4478-b917-a8ae68e308bb' | 
+New-MgServicePrincipal -AppId '05210c44-437f-4a40-bd38-b5b4eaf251ef' | 
   Format-List Id, DisplayName, AppId, SignInAudience
 ```
 
 ```Output
-Id             : 4dfb4890-3dbf-4b20-bcd0-59ffbe017a6f
-DisplayName    : New app
-AppId          : 120005f0-6c5a-4478-b917-a8ae68e308bb
+Id             : 22c1770d-30df-49e7-a763-f39d2ef9b369
+DisplayName    : My application
+AppId          : 05210c44-437f-4a40-bd38-b5b4eaf251ef
 SignInAudience : AzureADandPersonalMicrosoftAccount
 ```
 
-## Step 2: Create permission grants
-
-# [Delegated access](#tab/delegated)
+## Step 2: Grant delegated permission to the service principal
 
 To create a delegated permission grant, you will need the following information:
 
-1. **ClientId** - object Id of the client service principal authorized to act on behalf of the user.
+1. **ClientId** - object Id of the client service principal authorized to act on behalf of the user. In this case, the service principal we created in step 1.
 1. **ConsentType** - `AllPrincipals` to authorize all users in the tenant or `Principal` for a single user.
 1. **PrincipalId** - Id of the user for *Principal* consents, `null` for *AllPrincipals* consents.
 1. **ResourceId** - object Id of the service principal representing the resource app in the tenant.
 1. **Scope** - space-delimited list of permission claim values, for example `User.Read.All`.
 
+In this example, the object id of the resource service principal is `a67ad0d0-a7d1-4adb-8cd9-bcdd0c866d3c`. We will grant `Group.Read.All` scope to our service principal and grant consent on behalf of all users in the tenant.
+
 ```powershell
 $params = @{
-  "ClientID" = "bcea8475-a65c-453c-82b6-82d9c7b6d060"
+  "ClientID" = "22c1770d-30df-49e7-a763-f39d2ef9b369"
   "ConsentType" = "AllPrincipals"
-  "ResourceId" = "4dfb4890-3dbf-4b20-bcd0-59ffbe017a6f"
-  "Scope" = "User.Read.All, AuditLog.Read.All, Group.Read.All"
+  "ResourceId" = "a67ad0d0-a7d1-4adb-8cd9-bcdd0c866d3c"
+  "Scope" = "Group.Read.All"
 }
 
 New-MgOauth2PermissionGrant -BodyParameter $params | 
@@ -94,12 +92,12 @@ New-MgOauth2PermissionGrant -BodyParameter $params |
 ```
 
 ```Output
-Id          : dYTqvFymPEWCtoLZx7bQYJBI-02_PSBLvNBZ_74Bem8
-ClientId    : bcea8475-a65c-453c-82b6-82d9c7b6d060
+Id          : DXfBIt8w50mnY_OdLvmzadDQeqbRp9tKjNm83QyGbTw
+ClientId    : 22c1770d-30df-49e7-a763-f39d2ef9b369
 ConsentType : AllPrincipals
 PrincipalId :
-ResourceId  : 4dfb4890-3dbf-4b20-bcd0-59ffbe017a6f
-Scope       : User.Read.All, AuditLog.Read.All, Group.Read.All
+ResourceId  : a67ad0d0-a7d1-4adb-8cd9-bcdd0c866d3c
+Scope       : Group.Read.All
 ```
 
 ### Step 2b [Optional]: Assign more delegated permissions to the service principal
@@ -108,44 +106,11 @@ You can add more scopes to an already existing oauth2PermissionGrant object.
 
 ```powershell
 $params = @{
-  Scope = "AuditLog.Read.All, User.Read.All, Group.Read.All, Application.Read.All"
+  Scope = " Group.Read.All, AuditLog.Read.All,Application.Read.All"
   }
 
-Update-MgOauth2PermissionGrant -OAuth2PermissionGrantId 'dYTqvFymPEWCtoLZx7bQYJBI-02_PSBLvNBZ_74Bem8' -BodyParameter $params
+Update-MgOauth2PermissionGrant -OAuth2PermissionGrantId 'DXfBIt8w50mnY_OdLvmzadDQeqbRp9tKjNm83QyGbTw' -BodyParameter $params
 ```
-
-# [App-only access](#tab/app-only)
-
-In this step, you will assign an app role defined in the resource app to another service principal. To create an app role assignment, you will need the following information:
-
-1. **PrincipalID** - object Id of the service principal authorized for direct access.
-1. **ResourceID** - object Id of the service principal representing the resource app in your tenant.
-1. **AppRoleId** - Id of the app role to be assigned, defined on the service principal representing the resource.
-
-```powershell
-$params = @{
-  "PrincipalId" ="bcea8475-a65c-453c-82b6-82d9c7b6d060"
-  "ResourceId" = "4dfb4890-3dbf-4b20-bcd0-59ffbe017a6f"
-  "AppRoleId" = "27eff1f3-3f3e-4c7d-8bcd-f03af6045c0b"
-}
-
-New-MgServicePrincipalAppRoleAssignment -ServicePrincipalId '4dfb4890-3dbf-4b20-bcd0-59ffbe017a6f' -BodyParameter $params | 
-  Format-List Id, AppRoleId, CreatedDateTime, PrincipalDisplayName, PrincipalId, PrincipalType, ResourceDisplayName
-```
-
-```Output
-Id                   : dYTqvFymPEWCtoLZx7bQYK0oI8o2EF9Ll0Wu0PaQTuY
-AppRoleId            : 27eff1f3-3f3e-4c7d-8bcd-f03af6045c0b
-CreatedDateTime      : 3/21/2022 9:11:26 AM
-PrincipalDisplayName : Salesforce
-PrincipalId          : bcea8475-a65c-453c-82b6-82d9c7b6d060
-PrincipalType        : ServicePrincipal
-ResourceDisplayName  : New app
-```
-
-The `ServicePrincipalId` must always be same as the `ResourceId` which references the service principal that exposes the app roles that you want to assign to the `PrincipalId`. In this example, the resource service principal we created in step 2 exposes the app role `27eff1f3-3f3e-4c7d-8bcd-f03af6045c0b`.
-
----
 
 ## Step 3: Assign the app to a user
 
@@ -160,7 +125,7 @@ To assign the app to a user, you will need the following information:
 ```powershell
 $params = @{
   "PrincipalId" ="da8af13f-b6e1-4eb3-8d66-ef4132c58b91"
-  "ResourceId" = "4dfb4890-3dbf-4b20-bcd0-59ffbe017a6f"
+  "ResourceId" = "22c1770d-30df-49e7-a763-f39d2ef9b369"
   "AppRoleId" = "27eff1f3-3f3e-4c7d-8bcd-f03af6045c0b"
 }
 
@@ -177,7 +142,3 @@ PrincipalType        : User
 ResourceDisplayName  : New app
 ResourceId           : 4dfb4890-3dbf-4b20-bcd0-59ffbe017a6f
 ```
-
-## Next steps
-
-Lean more about [app-only authentication](app-only.md).
