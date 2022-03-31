@@ -1,6 +1,6 @@
 ---
 title: "Manage access to resources in Active Directory entitlement management using Microsoft Graph PowerShell"
-description: "Learn how to manage access to resources in Active Directory (Azure AD) entitlement management using Microsoft Graph PowerShell."
+description: "Learn how to manage access to resources in Azure Active Directory (Azure AD) entitlement management using Microsoft Graph PowerShell."
 ms.topic: conceptual
 ms.date: 11/09/2021
 ms.author: eunicewaweru
@@ -13,7 +13,7 @@ ms.custom: tutorial
 
 Managing access to all the resources that employees need, such as groups, applications, and sites, is an important function for organizations. You want to grant employees the right level of access they need to be productive and remove their access when it is no longer needed. [Azure Active Directory (Azure AD) entitlement management](/azure/active-directory/governance/entitlement-management-overview) using Microsoft Graph PowerShell enables you to manage this type of access.
 
-In this tutorial, you've been asked to develop code to create a package of resources for a marketing campaign that internal users can self-service request. Requests do not require approval and user's access expires after 30 days. For this tutorial, the marketing campaign resources are just membership in a single group, but it could be a collection of groups, applications, or SharePoint Online sites.
+In this tutorial, you've been asked to develop code to create a package of resources for a marketing campaign that internal users can self-service request. Requests do not require approval and users' access expires after 30 days. For this tutorial, the marketing campaign resources are just membership in a single group, but it could be a collection of groups, applications, or SharePoint Online sites.
 
 ## Prerequisites
 
@@ -43,7 +43,7 @@ In this step you create a group named **Marketing resources** in the directory t
 
 ### Create a user account
 
-For this tutorial, you create a user account that is used to request access to the resources in the access package. When you make these calls, change `Contoso.onmicrosoft.com` to the domain name of your tenant. You can find tenant information on the Azure Active Directory overview page. Record the value of the `id` property that is returned to be used later in the tutorial.
+Create a user account and use it to request access to the resources in the access package. When you make these calls, change `contoso.onmicrosoft.com` to the domain name of your tenant. You can find tenant information on the Azure AD overview page. Record the value of the `id` property that is returned to be used later in the tutorial.
 
 ```powershell
 $passwordProfile =@{
