@@ -70,7 +70,6 @@ To create an eligible role assignment, you need the following values:
 1. **PrincipalId** - identifier of the principal to which the assignment is being granted. For example, a user or a group. For groups, they must be assignable to roles. That is, the **IsAssignableToRole** property of the group is set to `true`.
 1. **RoleDefinitionID** - identifier of the UnifiedRoleDefinition the assignment is for. It is read only.
 1. **DirectoryScopeId** - identifier of the directory object representing the scope of the assignment. Use `/` for tenant-wide scope. Use `AppScopeId` to limit the scope to an application only.
-1. **AppScopeId** - identifier of the app-specific scope when the assignment scope is app-specific.
 1. **Action** - represents the type of the operation on the role assignment. The possible values are:
 
 - `AdminAssign`: for administrators to assign roles to users or groups.
