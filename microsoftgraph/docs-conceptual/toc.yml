@@ -15,7 +15,9 @@
 - name: Learn
   items:
     - name: App-only authentication
-      href: app-only.md             
+      href: app-only.md
+    - name: Assign Azure AD roles in PIM
+      href: tutorial-pim.md               
 - name: Migrate to Microsoft Graph PowerShell
   items:   
   - name: Migrate from Azure AD PowerShell

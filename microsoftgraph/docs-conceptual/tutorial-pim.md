@@ -2,11 +2,11 @@
 title: "Assign Azure AD roles in Privileged Identity Management using Microsoft Graph PowerShell"
 description: "Learn how to create eligible and active role assignments in Azure AD Privileged Identity Management using Microsoft Graph PowerShell"
 ms.topic: tutorial
-ms.date: 3/23/2022
+ms.date: 3/31/2022
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
-ms.reviewer: maisarissi
+ms.reviewer: mandardalvi
 ---
 
 # Tutorial: Assign Azure AD roles in Privileged Identity Management using Microsoft Graph PowerShell
@@ -21,7 +21,7 @@ In this tutorial, you'll create and extend an eligible role assignments, a user 
 
 To successfully complete this tutorial, make sure you have the required prerequisites:
 
-1. Microsoft Graph PowerShell SDK is installed. Follow the [Install the Microsoft Graph PowerShell SDK](../graph-powershell-1.0/installation.md) guide to install the SDK.  
+1. Microsoft Graph PowerShell SDK is installed. Follow the [Install the Microsoft Graph PowerShell SDK](installation.md) guide to install the SDK.  
 1. To use the Azure AD Privileged Identity Management, you must have one of the following licenses:
     - Azure AD Premium P2
     - Enterprise Mobility + Security (EMS) E5 license
@@ -69,6 +69,8 @@ To create an eligible role assignment, you need the following values:
 
 1. **PrincipalId** - identifier of the principal to which the assignment is being granted. For example, a user or a group. For groups, they must be assignable to roles. That is, the **isAssignableToRole** property of the group is set to `true`.
 1. **RoleDefinitionID** - identifier of the unifiedRoleDefinition the assignment is for. It is Read only.
+1. **DirectoryScopeId** - identifier of the directory object representing the scope of the assignment. Use `/` for tenant-wide scope. Use `AppScopeId` to limit the scope to an application only.
+1. **AppScopeId** - identifier of the app-specific scope when the assignment scope is app-specific.
 1. **Action** - represents the type of the operation on the role assignment. The possible values are:
 
 - `AdminAssign`: For administrators to assign roles to users or groups.
@@ -82,7 +84,7 @@ To create an eligible role assignment, you need the following values:
 - `SelfRenew`: For users to request to renew their expired assignments.
 
 1. **Justification** - a message provided by users and administrators when creating the request about why it is needed.
-1. **ScheduleInfo** - the schedule object of the role assignment request. This property is not required when the action is `AdminRemove` or `SelfDeactivate`.
+1. **ScheduleInfo** - the schedule object of the role assignment request. This property is not required when the action is `AdminRemove` or `SelfDeactivate`. 
 
 ```powershell
 $params = @{
@@ -105,7 +107,7 @@ New-MgRoleManagementDirectoryRoleEligibilityScheduleRequest -BodyParameter $para
 ```
 
 ```Output
-Id                : 53ec3ea2-de42-4165-ae39-6b65fd51da23
+Id                : b1fca5a5-24d7-42c1-a7b5-19eed3b306e4
 Status            : Provisioned
 Action            : AdminAssign
 AppScopeId        :
@@ -114,37 +116,34 @@ RoleDefinitionId  : 88d8e3e3-8f55-4a1e-953a-9b9898b8876b
 IsValidationOnly  : False
 Justification     : Add eligible assignment
 PrincipalId       : d29e358a-a443-4d83-98b3-499a5405bb5b
-CompletedDateTime : 3/23/2022 8:27:02 AM
-CreatedDateTime   : 3/23/2022 8:27:00 AM
-TargetScheduleId  : 53ec3ea2-de42-4165-ae39-6b65fd51da23
+CompletedDateTime : 3/31/2022 3:15:10 PM
+CreatedDateTime   : 3/31/2022 3:15:08 PM
 ```
 
 To get all the all eligible role assignments for this user, run:
 
 ```powershell
-Get-MgRoleManagementDirectoryRoleEligibilitySchedule -Filter "principalId eq 'd29e358a-a443-4d83-98b3-499a5405bb5b'"  | Format-List
+Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstance -Filter "principalId eq 'd29e358a-a443-4d83-98b3-499a5405bb5b'"  | Format-List
 ```
 
 ```Output
-AppScope             : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAppScope
-AppScopeId           :
-CreatedDateTime      : 3/23/2022 8:47:29 AM
-CreatedUsing         : 2a56ce58-66db-46b5-ac92-555c9f5f94ca
-DirectoryScope       : Microsoft.Graph.PowerShell.Models.MicrosoftGraphDirectoryObject
-DirectoryScopeId     : /
-Id                   : 2a56ce58-66db-46b5-ac92-555c9f5f94ca
-MemberType           : Direct
-ModifiedDateTime     : 1/1/0001 8:00:00 AM
-Principal            : Microsoft.Graph.PowerShell.Models.MicrosoftGraphDirectoryObject
-PrincipalId          : d29e358a-a443-4d83-98b3-499a5405bb5b
-RoleDefinition       : Microsoft.Graph.PowerShell.Models.MicrosoftGraphUnifiedRoleDefinition
-RoleDefinitionId     : 88d8e3e3-8f55-4a1e-953a-9b9898b8876b
-ScheduleInfo         : Microsoft.Graph.PowerShell.Models.MicrosoftGraphRequestSchedule
-Status               : Provisioned
-AdditionalProperties : {}
+AppScope                  : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAppScope
+AppScopeId                :
+DirectoryScope            : Microsoft.Graph.PowerShell.Models.MicrosoftGraphDirectoryObject
+DirectoryScopeId          : /
+EndDateTime               : 4/1/2022 1:15:10 AM
+Id                        : 4-PYiFWPHkqVOpuYmLiHa4o1ntJDpINNmLNJmlQFu1s-1-e
+MemberType                : Direct
+Principal                 : Microsoft.Graph.PowerShell.Models.MicrosoftGraphDirectoryObject
+PrincipalId               : d29e358a-a443-4d83-98b3-499a5405bb5b
+RoleDefinition            : Microsoft.Graph.PowerShell.Models.MicrosoftGraphUnifiedRoleDefinition
+RoleDefinitionId          : 88d8e3e3-8f55-4a1e-953a-9b9898b8876b
+RoleEligibilityScheduleId : b1fca5a5-24d7-42c1-a7b5-19eed3b306e4
+StartDateTime             : 3/31/2022 3:15:10 PM
+AdditionalProperties      : {}
 ```
 
-## Step 2: Extend eligible role assignment for the user to 1 day
+## Step 3: Extend eligible role assignment for the user to 1 day
 
 As an admin, you can extend the eligible role assignment created in step 2. To do this, run:
 
@@ -169,7 +168,7 @@ New-MgRoleManagementDirectoryRoleEligibilityScheduleRequest -BodyParameter $para
 ```
 
 ```Output
-Id                : 2a56ce58-66db-46b5-ac92-555c9f5f94ca
+Id                : ba52ac85-adac-480f-a9ef-080481d0cdde
 Status            : Provisioned
 Action            : AdminExtend
 AppScopeId        :
@@ -178,12 +177,12 @@ RoleDefinitionId  : 88d8e3e3-8f55-4a1e-953a-9b9898b8876b
 IsValidationOnly  : False
 Justification     : Extend eligible assignment
 PrincipalId       : d29e358a-a443-4d83-98b3-499a5405bb5b
-CompletedDateTime : 3/23/2022 8:47:29 AM
-CreatedDateTime   : 3/23/2022 8:47:26 AM
-TargetScheduleId  : 2a56ce58-66db-46b5-ac92-555c9f5f94ca
+CompletedDateTime : 3/31/2022 3:32:19 PM
+CreatedDateTime   : 3/31/2022 3:32:16 PM
+TargetScheduleId  : ba52ac85-adac-480f-a9ef-080481d0cdde
 ```
 
-## Step 3: User activates eligible assignment for 1 hour
+## Step 4: User activates eligible assignment for 1 hour
 
 An active role assignment allows the user to gain access to all permissions defined for that role for the defined duration.
 
@@ -215,7 +214,7 @@ New-MgRoleManagementDirectoryRoleAssignmentScheduleRequest -BodyParameter $param
 ```
 
 ```Output
-Id                : f9686abb-d088-4eed-89dd-83e1a8edd391
+Id                : e8eb8d47-98a8-4868-9174-7d25bdab8f2f
 Status            : Provisioned
 Action            : SelfActivate
 AppScopeId        :
@@ -224,44 +223,44 @@ RoleDefinitionId  : 88d8e3e3-8f55-4a1e-953a-9b9898b8876b
 IsValidationOnly  : False
 Justification     : Activate assignment
 PrincipalId       : d29e358a-a443-4d83-98b3-499a5405bb5b
-CompletedDateTime : 3/23/2022 9:17:36 AM
-CreatedDateTime   : 3/23/2022 9:17:35 AM
-TargetScheduleId  : f9686abb-d088-4eed-89dd-83e1a8edd391
+CompletedDateTime : 3/31/2022 3:33:44 PM
+CreatedDateTime   : 3/31/2022 3:33:42 PM
+TargetScheduleId  : e8eb8d47-98a8-4868-9174-7d25bdab8f2f
 ```
 
 To get the existing active role assignments for this user, run:
 
 ```powershell
-Get-MgRoleManagementDirectoryRoleAssignmentSchedule -Filter "principalId eq 'd29e358a-a443-4d83-98b3-499a5405bb5b'" | Format-List
+Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstance -Filter "principalId eq 'd29e358a-a443-4d83-98b3-499a5405bb5b'" | Format-List
 ```
 
 ```Output
-ActivatedUsing       : Microsoft.Graph.PowerShell.Models.MicrosoftGraphUnifiedRoleEligibilitySchedule
-AppScope             : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAppScope
-AppScopeId           :
-AssignmentType       : Activated
-CreatedDateTime      : 3/23/2022 9:17:37 AM
-CreatedUsing         : f9686abb-d088-4eed-89dd-83e1a8edd391
-DirectoryScope       : Microsoft.Graph.PowerShell.Models.MicrosoftGraphDirectoryObject
-DirectoryScopeId     : /
-Id                   : f9686abb-d088-4eed-89dd-83e1a8edd391
-MemberType           : Direct
-ModifiedDateTime     :
-Principal            : Microsoft.Graph.PowerShell.Models.MicrosoftGraphDirectoryObject
-PrincipalId          : d29e358a-a443-4d83-98b3-499a5405bb5b
-RoleDefinition       : Microsoft.Graph.PowerShell.Models.MicrosoftGraphUnifiedRoleDefinition
-RoleDefinitionId     : 88d8e3e3-8f55-4a1e-953a-9b9898b8876b
-ScheduleInfo         : Microsoft.Graph.PowerShell.Models.MicrosoftGraphRequestSchedule
-Status               : Provisioned
-AdditionalProperties : {}
+ActivatedUsing           : Microsoft.Graph.PowerShell.Models.MicrosoftGraphUnifiedRoleEligibilityScheduleInstance
+AppScope                 : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAppScope
+AppScopeId               :
+AssignmentType           : Activated
+DirectoryScope           : Microsoft.Graph.PowerShell.Models.MicrosoftGraphDirectoryObject
+DirectoryScopeId         : /
+EndDateTime              : 3/31/2022 4:33:44 PM
+Id                       : 4-PYiFWPHkqVOpuYmLiHa4o1ntJDpINNmLNJmlQFu1s-1
+MemberType               : Direct
+Principal                : Microsoft.Graph.PowerShell.Models.MicrosoftGraphDirectoryObject
+PrincipalId              : d29e358a-a443-4d83-98b3-499a5405bb5b
+RoleAssignmentOriginId   : 4-PYiFWPHkqVOpuYmLiHa4o1ntJDpINNmLNJmlQFu1s-1
+RoleAssignmentScheduleId : e8eb8d47-98a8-4868-9174-7d25bdab8f2f
+RoleDefinition           : Microsoft.Graph.PowerShell.Models.MicrosoftGraphUnifiedRoleDefinition
+RoleDefinitionId         : 88d8e3e3-8f55-4a1e-953a-9b9898b8876b
+StartDateTime            : 3/31/2022 3:33:45 PM
+AdditionalProperties     : {}
 ```
 
-## Step 4: User deactivates an active role assignment
+## Step 5: User deactivates an active role assignment
 
-To deactivate an active role assgnment, the following values are required.
+To deactivate an active role assignment, the following values are required.
 
 1. **PrincipalId** - identifier of the principal to which the assignment is being granted. For example, a user or a group. For groups, they must be assignable to roles. That is, the **isAssignableToRole** property of the group is set to `true`.
 1. **RoleDefinitionID** - identifier of the unifiedRoleDefinition the assignment is for. Read only.
+1. **DirectoryScopeId** - identifier of the directory object representing the scope of the assignment. Use `/` for tenant-wide scope. Use `AppScopeId` to limit the scope to an application only.
 1. **Action** - this should be set to `SelfDeactivate`.
 1. **Justification** - a message provided by users and administrators when create the request about why it is needed.
 
@@ -281,32 +280,27 @@ New-MgRoleManagementDirectoryRoleAssignmentScheduleRequest -BodyParameter $param
 ```
 
 ```Output
-ActivatedUsing       : Microsoft.Graph.PowerShell.Models.MicrosoftGraphUnifiedRoleEligibilitySchedule
-AppScope             : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAppScope
-AppScopeId           :
-AssignmentType       : Assigned
-CreatedDateTime      :
-CreatedUsing         :
-DirectoryScope       : Microsoft.Graph.PowerShell.Models.MicrosoftGraphDirectoryObject
-DirectoryScopeId     : /
-Id                   : 4-PYiFWPHkqVOpuYmLiHa4o1ntJDpINNmLNJmlQFu1s-1
-MemberType           : Direct
-ModifiedDateTime     :
-Principal            : Microsoft.Graph.PowerShell.Models.MicrosoftGraphDirectoryObject
-PrincipalId          : d29e358a-a443-4d83-98b3-499a5405bb5b
-RoleDefinition       : Microsoft.Graph.PowerShell.Models.MicrosoftGraphUnifiedRoleDefinition
-RoleDefinitionId     : 88d8e3e3-8f55-4a1e-953a-9b9898b8876b
-ScheduleInfo         : Microsoft.Graph.PowerShell.Models.MicrosoftGraphRequestSchedule
-Status               : Provisioned
-AdditionalProperties : {}
+Id                : 93ae4df7-1253-459f-8a13-9aa12e8438c1
+Status            : Revoked
+Action            : SelfDeactivate
+AppScopeId        :
+DirectoryScopeId  : /
+RoleDefinitionId  : 88d8e3e3-8f55-4a1e-953a-9b9898b8876b
+IsValidationOnly  : False
+Justification     : Deactivate assignment
+PrincipalId       : d29e358a-a443-4d83-98b3-499a5405bb5b
+CompletedDateTime :
+CreatedDateTime   : 3/31/2022 3:39:05 PM
+TargetScheduleId  :
 ```
 
-### Step 5: Admin removes an eligible assignment
+## Step 6: Admin removes an eligible assignment
 
 To remove an eligible role assignment, you need the following values:
 
 1. **PrincipalId** - identifier of the principal to which the assignment is being granted. For example, a user or a group. For groups, they must be assignable to roles. That is, the **isAssignableToRole** property of the group is set to `true`.
 1. **RoleDefinitionID** - identifier of the unifiedRoleDefinition the assignment is for. Read only.
+1. **DirectoryScopeId** - identifier of the directory object representing the scope of the assignment. Use `/` for tenant-wide scope. Use `AppScopeId` to limit the scope to an application only.
 1. **Action** - this should be set to `AdminRemove`.
 1. **Justification** - a message provided by users and administrators when create the request about why it is needed.
 
@@ -326,7 +320,7 @@ New-MgRoleManagementDirectoryRoleEligibilityScheduleRequest -BodyParameter $para
 ```
 
 ```Output
-Id                : ec407c80-ce17-4334-9e15-96e32355e085
+Id                : d11c9bd1-869a-4401-8f92-3da531c49d82
 Status            : Revoked
 Action            : AdminRemove
 AppScopeId        :
@@ -336,6 +330,6 @@ IsValidationOnly  : False
 Justification     : Remove eligible assignment
 PrincipalId       : d29e358a-a443-4d83-98b3-499a5405bb5b
 CompletedDateTime :
-CreatedDateTime   : 3/23/2022 10:03:57 AM
+CreatedDateTime   : 3/31/2022 3:42:31 PM
 TargetScheduleId  :
 ```
