@@ -41,7 +41,7 @@ To successfully complete this tutorial, make sure you have the required prerequi
 
 ## Step 1: Create a user account
 
-In this step, you'll create a user who will be the target of the admin assignments. When you make these calls, change `Contoso.onmicrosoft.com` to the domain name of your tenant. You can find tenant information on the Azure Active Directory overview page.
+In this step, you'll create a user who will be the target of the admin assignments. When you make these calls, change `contoso.onmicrosoft.com` to the domain name of your tenant. You can find tenant information on the Azure Active Directory overview page.
 
 ```powershell
 $passwordProfile =@{
