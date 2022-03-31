@@ -21,7 +21,7 @@
         - name: Grant delegated API permissions
           href: tutorial-grant-delegated-api-permissions.md
         - name: Grant app-only API permissions
-          href: tutorial-grant-app-only-api-permissions                
+          href: tutorial-grant-app-only-api-permissions.md               
 - name: Migrate to Microsoft Graph PowerShell
   items:   
   - name: Migrate from Azure AD PowerShell

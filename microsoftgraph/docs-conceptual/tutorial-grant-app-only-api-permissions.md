@@ -73,8 +73,8 @@ SignInAudience : AzureADandPersonalMicrosoftAccount
 
 In this step, you will assign an app role exposed by your resource app to the service principal we created in step 1. To create an app role assignment, you will need the following information:
 
-1. **PrincipalID** - object Id of the service principal authorized for direct access.
-1. **ResourceID** - object Id of the service principal representing the resource app in your tenant.
+1. **PrincipalId** - object Id of the service principal authorized for direct access.
+1. **ResourceId** - object Id of the service principal representing the resource app in your tenant.
 1. **AppRoleId** - Id of the app role to be assigned, defined on the service principal representing the resource.
 
 ```powershell
@@ -101,4 +101,4 @@ ResourceDisplayName  : LinkedIn
 The `ServicePrincipalId` must always be same as the `ResourceId` which references the service principal that exposes the app roles that you want to assign to the `PrincipalId`.
 
 ## See also
-- [Tutorial: Grant API permissions programmatically in Azure AD](tutorial-grant-delegated-api-permissions.md)
+- [Tutorial: Grant delegated permissions programmatically in Azure AD](tutorial-grant-delegated-api-permissions.md)

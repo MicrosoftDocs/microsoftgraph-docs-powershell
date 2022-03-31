@@ -22,7 +22,7 @@ In this tutorial, you will grant delegated permissions that are exposed by an AP
 
 To successfully complete this tutorial, make sure you have the required prerequisites:
 
-1. Microsoft Graph PowerShell SDK is installed. Follow the [Install the Microsoft Graph PowerShell SDK](../graph-powershell-1.0/installation.md) guide to install the SDK. 
+1. Microsoft Graph PowerShell SDK is installed. Follow the [Install the Microsoft Graph PowerShell SDK](installation.md) guide to install the SDK.
 1. Microsoft Graph PowerShell using a global administrator role and the appropriate permissions. For this tutorial, the `Application.ReadWrite.All` and `DelegatedPermissionGrant.ReadWrite.All` delegated permissions are required. To set the permissions in Microsoft Graph PowerShell, run;
 
     ```powershell
@@ -30,7 +30,6 @@ To successfully complete this tutorial, make sure you have the required prerequi
     ```
 
     Select **Consent on behalf of your organization** before accepting in the login dialog box.
-
 
 ## Step 1: Create a service principal
 
@@ -81,7 +80,7 @@ In this example, the object id of the resource service principal is `a67ad0d0-a7
 
 ```powershell
 $params = @{
-  "ClientID" = "22c1770d-30df-49e7-a763-f39d2ef9b369"
+  "ClientId" = "22c1770d-30df-49e7-a763-f39d2ef9b369"
   "ConsentType" = "AllPrincipals"
   "ResourceId" = "a67ad0d0-a7d1-4adb-8cd9-bcdd0c866d3c"
   "Scope" = "Group.Read.All"
@@ -142,3 +141,6 @@ PrincipalType        : User
 ResourceDisplayName  : New app
 ResourceId           : 4dfb4890-3dbf-4b20-bcd0-59ffbe017a6f
 ```
+
+## See also
+- [Tutorial: Grant application permissions programmatically in Azure AD](tutorial-grant-app-only-api-permissions.md)
