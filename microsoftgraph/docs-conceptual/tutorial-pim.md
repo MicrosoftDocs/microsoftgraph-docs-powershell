@@ -15,7 +15,7 @@ In Azure Active Directory (Azure AD), a Global administrator can make permanent 
 
 The Azure AD Privileged Identity Management (PIM) service allows role administrators to make time-bound admin role assignments. Additionally, Privileged role administrators can make users eligible for Azure AD admin roles. An eligible administrator can activate the role when they need it, and their permissions expire once they're done.
 
-In this tutorial, you'll create and extend an eligible role assignments, a user activate and deactivate eligible assignments. Lastly, the admin will remove an eligible role assignment.
+In this tutorial, you'll create, extend, activate, deactivate and remove eligible role assignments.
 
 ## Prerequisites
 
@@ -67,24 +67,24 @@ In PIM, there are two types of role assignments:
 
 To create an eligible role assignment, you need the following values:
 
-1. **PrincipalId** - identifier of the principal to which the assignment is being granted. For example, a user or a group. For groups, they must be assignable to roles. That is, the **isAssignableToRole** property of the group is set to `true`.
-1. **RoleDefinitionID** - identifier of the unifiedRoleDefinition the assignment is for. It is Read only.
+1. **PrincipalId** - identifier of the principal to which the assignment is being granted. For example, a user or a group. For groups, they must be assignable to roles. That is, the **IsAssignableToRole** property of the group is set to `true`.
+1. **RoleDefinitionID** - identifier of the UnifiedRoleDefinition the assignment is for. It is read only.
 1. **DirectoryScopeId** - identifier of the directory object representing the scope of the assignment. Use `/` for tenant-wide scope. Use `AppScopeId` to limit the scope to an application only.
 1. **AppScopeId** - identifier of the app-specific scope when the assignment scope is app-specific.
 1. **Action** - represents the type of the operation on the role assignment. The possible values are:
 
-- `AdminAssign`: For administrators to assign roles to users or groups.
-- `AdminRemove`: For administrators to remove users or groups from roles.
-- `AdminUpdate`: For administrators to change existing role assignments.
-- `AdminExtend`: For administrators to extend expiring assignments.
-- `AdminRenew`: For administrators to renew expired assignments.
-- `SelfActivate`: For users to activate their assignments.
-- `SelfDeactivate`: For users to deactivate their active assignments.
-- `SelfExtend`: For users to request to extend their expiring assignments.
-- `SelfRenew`: For users to request to renew their expired assignments.
+- `AdminAssign`: for administrators to assign roles to users or groups.
+- `AdminRemove`: for administrators to remove users or groups from roles.
+- `AdminUpdate`: for administrators to change existing role assignments.
+- `AdminExtend`: for administrators to extend expiring assignments.
+- `AdminRenew`: for administrators to renew expired assignments.
+- `SelfActivate`: for users to activate their assignments.
+- `SelfDeactivate`: for users to deactivate their active assignments.
+- `SelfExtend`: for users to request to extend their expiring assignments.
+- `SelfRenew`: for users to request to renew their expired assignments.
 
 1. **Justification** - a message provided by users and administrators when creating the request about why it is needed.
-1. **ScheduleInfo** - the schedule object of the role assignment request. This property is not required when the action is `AdminRemove` or `SelfDeactivate`. 
+1. **ScheduleInfo** - the schedule object of the role assignment request. This property is not required when the action is `AdminRemove` or `SelfDeactivate`.
 
 ```powershell
 $params = @{
@@ -145,7 +145,7 @@ AdditionalProperties      : {}
 
 ## Step 3: Extend eligible role assignment for the user to 1 day
 
-As an admin, you can extend the eligible role assignment created in step 2. To do this, run:
+As the admin, you can extend the eligible role assignment created in step 2. To do this, run:
 
 ```powershell
 $params = @{
@@ -191,7 +191,7 @@ There are two way to create active role assignments:
 - an admin can directly create an active role assignment for a user without first creating an eligible role assignment.
 - A user can activate an existing eligible role assignment.
 
-To complete this step, login to the terminal as the user we created in step 1.
+In this step, you will activate the eligible role assignment created in step 2. To complete this step, login to the terminal as the user we created in step 1.
 
 ```powershell
 $params = @{
@@ -258,11 +258,11 @@ AdditionalProperties     : {}
 
 To deactivate an active role assignment, the following values are required.
 
-1. **PrincipalId** - identifier of the principal to which the assignment is being granted. For example, a user or a group. For groups, they must be assignable to roles. That is, the **isAssignableToRole** property of the group is set to `true`.
-1. **RoleDefinitionID** - identifier of the unifiedRoleDefinition the assignment is for. Read only.
+1. **PrincipalId** - identifier of the principal to which the assignment is being granted. For example, a user or a group. For groups, they must be assignable to roles. That is, the **IsAssignableToRole** property of the group is set to `true`.
+1. **RoleDefinitionID** - identifier of the UnifiedRoleDefinition the assignment is for. It is read only.
 1. **DirectoryScopeId** - identifier of the directory object representing the scope of the assignment. Use `/` for tenant-wide scope. Use `AppScopeId` to limit the scope to an application only.
 1. **Action** - this should be set to `SelfDeactivate`.
-1. **Justification** - a message provided by users and administrators when create the request about why it is needed.
+1. **Justification** - a message provided by users and administrators when creating the request about why it is needed.
 
 The **ScheduleInfo** value is not required.
 
@@ -298,11 +298,11 @@ TargetScheduleId  :
 
 To remove an eligible role assignment, you need the following values:
 
-1. **PrincipalId** - identifier of the principal to which the assignment is being granted. For example, a user or a group. For groups, they must be assignable to roles. That is, the **isAssignableToRole** property of the group is set to `true`.
-1. **RoleDefinitionID** - identifier of the unifiedRoleDefinition the assignment is for. Read only.
+1. **PrincipalId** - identifier of the principal to which the assignment is being granted. For example, a user or a group. For groups, they must be assignable to roles. That is, the **IsAssignableToRole** property of the group is set to `true`.
+1. **RoleDefinitionID** - identifier of the UnifiedRoleDefinition the assignment is for. It is read only.
 1. **DirectoryScopeId** - identifier of the directory object representing the scope of the assignment. Use `/` for tenant-wide scope. Use `AppScopeId` to limit the scope to an application only.
 1. **Action** - this should be set to `AdminRemove`.
-1. **Justification** - a message provided by users and administrators when create the request about why it is needed.
+1. **Justification** - a message provided by users and administrators when creating the request about why it is needed.
 
 The **ScheduleInfo** value is not required.
 
