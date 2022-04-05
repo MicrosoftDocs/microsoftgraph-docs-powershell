@@ -12,7 +12,7 @@ author: msewaweru
 
 Managing access to all the resources that employees need, such as groups, applications, and sites, is an important function for organizations. You want to grant employees the right level of access they need to be productive and remove their access when it's no longer needed. [Azure Active Directory (Azure AD) entitlement management](/azure/active-directory/governance/entitlement-management-overview) using Microsoft Graph PowerShell enables you to manage this type of access.
 
-In this tutorial, you've been asked to develop code to create a package of resources for a marketing campaign that internal users can use for self-service requests. Requests don't require approval and users' access expires after 30 days. Here, the marketing campaign resources are just membership in a single group, but it could be a collection of groups, applications, or SharePoint Online sites.
+In this tutorial, you'll create a package of resources for a marketing campaign that internal users can use for self-service requests. Requests don't require approval and users' access expires after 30 days. Here, the marketing campaign resources are just membership in a single group, but it could be a collection of groups, applications, or SharePoint Online sites.
 
 ## Prerequisites
 
@@ -49,9 +49,7 @@ $passwordProfile =@{
   Password = 'Contoso1234'
   ForceChangePasswordNextSignIn = $true
 }
-```
 
-```powershell
 New-MgUser -DisplayName 'Requestor1' -PasswordProfile $passwordProfile -AccountEnabled -MailNickName 'Requestor1' -UserPrincipalName 'Requestor1@contoso.onmicrosoft.com'
 ```
 
