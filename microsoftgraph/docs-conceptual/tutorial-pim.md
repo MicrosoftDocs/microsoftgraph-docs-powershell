@@ -37,7 +37,7 @@ To successfully complete this tutorial, make sure you have the required prerequi
     Connect-MgGraph -Scopes "RoleManagement.ReadWrite.Directory"
     ```
 
-    Select **Consent on behalf of your organization** before accepting in the login dialog box.
+    Select **Consent on behalf of your organization** before accepting in the sign-in dialog box.
 
 ## Step 1: Create a user account
 
@@ -62,13 +62,13 @@ d29e358a-a443-4d83-98b3-499a5405bb5b Requestor1       Requestor1@Contoso.onmicro
 
 In PIM, there are two types of role assignments:
 
-- **Eligible role assignments** - user does not have access to permissions defined for that role. They can potentially activate it to get access to all the permissions.
+- **Eligible role assignments** - user doesn't have access to permissions defined for that role. They can potentially activate it to get access to all the permissions.
 - **Active role assignments** - when a role is active, the user has access to all permissions defined for that role for the defined duration.
 
 To create an eligible role assignment, you need the following values:
 
 1. **PrincipalId** - identifier of the principal to which the assignment is being granted. For example, a user or a group. For groups, they must be assignable to roles. That is, the **IsAssignableToRole** property of the group is set to `true`.
-1. **RoleDefinitionID** - identifier of the UnifiedRoleDefinition the assignment is for. It is read only.
+1. **RoleDefinitionID** - identifier of the UnifiedRoleDefinition the assignment is for. It's read only.
 1. **DirectoryScopeId** - identifier of the directory object representing the scope of the assignment. Use `/` for tenant-wide scope. Use `AppScopeId` to limit the scope to an application only.
 1. **Action** - represents the type of the operation on the role assignment. The possible values are:
 
@@ -82,8 +82,8 @@ To create an eligible role assignment, you need the following values:
 - `SelfExtend`: for users to request to extend their expiring assignments.
 - `SelfRenew`: for users to request to renew their expired assignments.
 
-1. **Justification** - a message provided by users and administrators when creating the request about why it is needed.
-1. **ScheduleInfo** - the schedule object of the role assignment request. This property is not required when the action is `AdminRemove` or `SelfDeactivate`.
+1. **Justification** - a message provided by users and administrators when creating the request about why it's needed.
+1. **ScheduleInfo** - the schedule object of the role assignment request. This property isn't required when the action is `AdminRemove` or `SelfDeactivate`.
 
 ```powershell
 $params = @{
@@ -142,9 +142,9 @@ StartDateTime             : 3/31/2022 3:15:10 PM
 AdditionalProperties      : {}
 ```
 
-## Step 3: Extend eligible role assignment for the user to 1 day
+## Step 3: Extend eligible role assignment for the user to one day
 
-As the admin, you can extend the eligible role assignment created in step 2. To do this, run:
+As the admin, you can extend the eligible role assignment created in step 2. To extend the eligible role assignment, run:
 
 ```powershell
 $params = @{
@@ -185,12 +185,12 @@ TargetScheduleId  : ba52ac85-adac-480f-a9ef-080481d0cdde
 
 An active role assignment allows the user to gain access to all permissions defined for that role for the defined duration.
 
-There are two way to create active role assignments:
+There are two ways to create active role assignments:
 
 - an admin can directly create an active role assignment for a user without first creating an eligible role assignment.
 - A user can activate an existing eligible role assignment.
 
-In this step, you will activate the eligible role assignment created in step 2. To complete this step, login to the terminal as the user we created in step 1.
+In this step, you'll activate the eligible role assignment created in step 2. To complete this step, sign-in to the terminal as the user we created in step 1.
 
 ```powershell
 $params = @{
@@ -258,12 +258,12 @@ AdditionalProperties     : {}
 To deactivate an active role assignment, the following values are required.
 
 1. **PrincipalId** - identifier of the principal to which the assignment is being granted. For example, a user or a group. For groups, they must be assignable to roles. That is, the **IsAssignableToRole** property of the group is set to `true`.
-1. **RoleDefinitionID** - identifier of the UnifiedRoleDefinition the assignment is for. It is read only.
+1. **RoleDefinitionID** - identifier of the UnifiedRoleDefinition the assignment is for. It's read only.
 1. **DirectoryScopeId** - identifier of the directory object representing the scope of the assignment. Use `/` for tenant-wide scope. Use `AppScopeId` to limit the scope to an application only.
-1. **Action** - this should be set to `SelfDeactivate`.
-1. **Justification** - a message provided by users and administrators when creating the request about why it is needed.
+1. **Action** - set it to `SelfDeactivate`.
+1. **Justification** - a message provided by users and administrators when creating the request about why it's needed.
 
-The **ScheduleInfo** value is not required.
+The **ScheduleInfo** value isn't required.
 
 ```powershell
 $params = @{
@@ -298,12 +298,12 @@ TargetScheduleId  :
 To remove an eligible role assignment, you need the following values:
 
 1. **PrincipalId** - identifier of the principal to which the assignment is being granted. For example, a user or a group. For groups, they must be assignable to roles. That is, the **IsAssignableToRole** property of the group is set to `true`.
-1. **RoleDefinitionID** - identifier of the UnifiedRoleDefinition the assignment is for. It is read only.
+1. **RoleDefinitionID** - identifier of the UnifiedRoleDefinition the assignment is for. It's read only.
 1. **DirectoryScopeId** - identifier of the directory object representing the scope of the assignment. Use `/` for tenant-wide scope. Use `AppScopeId` to limit the scope to an application only.
-1. **Action** - this should be set to `AdminRemove`.
-1. **Justification** - a message provided by users and administrators when creating the request about why it is needed.
+1. **Action** - set to `AdminRemove`.
+1. **Justification** - a message provided by users and administrators when creating the request about why it's needed.
 
-The **ScheduleInfo** value is not required.
+The **ScheduleInfo** value isn't required.
 
 ```powershell
 $params = @{
