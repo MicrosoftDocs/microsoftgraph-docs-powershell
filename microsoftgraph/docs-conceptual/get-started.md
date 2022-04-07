@@ -1,17 +1,20 @@
 ---
 title: "Get started with the Microsoft Graph PowerShell SDK"
 description: "Get started with the Microsoft Graph PowerShell SDK by using it perform some basic tasks."
-localization_priority: Normal
+ms.localizationpriority: medium
 author: jasonjoh
+ms.topic: conceptual
+ms.date: 04/07/2022
+ms.author: jasonjoh
 ---
 
 # Get started with the Microsoft Graph PowerShell SDK
 
-In this guide you'll use the Microsoft Graph PowerShell SDK to perform some basic tasks. If you haven't already [installed the SDK](installation.md), please do so before following this guide.
+In this guide, you'll use the Microsoft Graph PowerShell SDK to perform some basic tasks. If you haven't already [installed the SDK](installation.md), do so before following this guide.
 
 ## API version
 
-By default, the SDK uses the [Microsoft Graph REST API v1.0](/graph/api/overview?view=graph-rest-1.0&preserve-view=true). You can change this by using the `Select-MgProfile` command.
+By default, the SDK uses the [Microsoft Graph REST API v1.0](/graph/api/overview?view=graph-rest-1.0&preserve-view=true). You can change the profile by using the `Select-MgProfile` command.
 
 ```powershell
 Select-MgProfile -Name "beta"
@@ -19,7 +22,7 @@ Select-MgProfile -Name "beta"
 
 ## Authentication
 
-The PowerShell SDK supports two types of authentication: delegated access, and app-only access. In this guide, you will use delegated access to login as a user, grant consent to the SDK to act on your behalf, and call the Microsoft Graph.
+The PowerShell SDK supports two types of authentication: delegated access, and app-only access. In this guide, you'll use delegated access to sign in as a user, grant consent to the SDK to act on your behalf, and call the Microsoft Graph.
 
 For details on using app-only access for unattended scenarios, see [Use app-only authentication with the Microsoft Graph PowerShell SDK](app-only.md).
 
@@ -64,7 +67,7 @@ Use the `Connect-MgGraph` command to sign in with the required scopes. You'll ne
 Connect-MgGraph -Scopes "User.Read.All","Group.ReadWrite.All"
 ```
 
-The command prompts you to go to a web page to sign in using a device code. Once you've done that, the command indicates success with a `Welcome To Microsoft Graph!` message. You only need to do this once per session.
+The command prompts you to go to a web page to sign in using a device code. Once you've done that, the command indicates success with a `Welcome To Microsoft Graph!` message. You only need to sign in once per session.
 
 > [!TIP]
 > You can add additional permissions by repeating the `Connect-MgGraph` command with the new permission scopes.
@@ -73,15 +76,17 @@ The command prompts you to go to a web page to sign in using a device code. Once
 
 Now that you're signed in, you can start making calls to Microsoft Graph.
 
+[!INCLUDE [aad-advanced-queries-note](../includes/aad-advanced-queries-note.md)]
+
 ### Get the signed-in user
 
-In this section you'll locate the signed-in user and get her user ID. You'll need that to use as a parameter to the other commands you'll use later. Start by running the following command.
+In this section, you'll locate the signed-in user and get their user ID. You'll need that to use as a parameter to the other commands you'll use later. Start by running the following command.
 
 ```powershell
 Get-MgUser
 ```
 
-This outputs a listing of users in your Microsoft 365 organization.
+This command outputs a listing of users in your Microsoft 365 organization.
 
 ```powershell
 Id                                   DisplayName              Mail                                  UserPrincipalName
@@ -109,7 +114,7 @@ Verify that worked by entering the following.
 $user.DisplayName
 ```
 
-### List the user's joined Teams
+### List the user's joined teams
 
 Now use the user's ID as a parameter to the `Get-MgUserJoinedTeam` command.
 
@@ -117,19 +122,15 @@ Now use the user's ID as a parameter to the `Get-MgUserJoinedTeam` command.
 Get-MgUserJoinedTeam -UserId $user.Id
 ```
 
-Just like the `Get-MgUser` command, this gives a list of Teams. Select one of the user's joined Teams and use its `DisplayName` to filter the list.
+Just like the `Get-MgUser` command, this command gives a list of teams. Select one of the user's joined teams and copy its `Id`.
 
-```powershell
-$team = Get-MgUserJoinedTeam -UserId $user.Id -Filter "displayName eq 'Sales and Marketing'"
-```
+### List team channels
 
-### List Team channels
-
-Now use the Team's ID as a parameter to the `Get-MgTeamChannel` command, following a similar pattern of listing all channels, then filtering the list to get the specific channel you want.
+Now use the team's ID as a parameter to the `Get-MgTeamChannel` command, following a similar pattern of listing all channels, then filtering the list to get the specific channel you want.
 
 ```powershell
 Get-MgTeamChannel -TeamId $team.Id
-$channel = Get-MgTeamChannel -TeamId $team.Id -Filter "displayName eq 'General'"
+$channel = Get-MgTeamChannel -TeamId ID_FROM_PREVIOUS_STEP -Filter "displayName eq 'General'"
 ```
 
 ### Send a message
@@ -140,7 +141,7 @@ Now that you have both the Team ID and the channel ID, you can post a message to
 New-MgTeamChannelMessage -TeamId $team.Id -ChannelId $channel.Id -Body @{ Content="Hello World" }
 ```
 
-This command differs from the previous commands you used. Instead of just querying data, it's actually creating something. In Microsoft Graph, this translates to an HTTP `POST`, and it requires an object in the body of that post. In this case, the object is a [chatMessage](/graph/resources/chatmessage?view=graph-rest-1.0&preserve-view=true). Note that the `-Body` parameter to the command maps to the `body` property on `chatMessage`. Other properties are mapped in a similar way, so you can change the message you send. For example, to send an urgent message use the following command.
+This command differs from the previous commands you used. Instead of querying data, it's actually creating something. In Microsoft Graph, this command translates to an HTTP `POST`, and it requires an object in the body of that post. In this case, the object is a [chatMessage](/graph/resources/chatmessage?view=graph-rest-1.0&preserve-view=true). The `-Body` parameter to the command maps to the `body` property on `chatMessage`. Other properties are mapped in a similar way, so you can change the message you send. For example, to send an urgent message use the following command.
 
 ```powershell
 New-MgTeamChannelMessage -TeamId $team.Id -ChannelId $channel.Id -Body @{ Content="Hello World" } -Importance "urgent"
