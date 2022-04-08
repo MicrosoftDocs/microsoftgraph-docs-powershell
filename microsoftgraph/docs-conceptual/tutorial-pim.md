@@ -246,13 +246,15 @@ AdditionalProperties     : {}
 
 ## Step 5: User deactivates an active role assignment
 
-To deactivate an active role assignment, the following values are required.
+To deactivate an active role assignment, you need the following values:
 
-1. **PrincipalId** - Identifier of the principal to which the assignment is being granted, for example, a user or a group. For groups, they must be assignable to roles. That is, the **IsAssignableToRole** property of the group is set to `true`.
-1. **RoleDefinitionID** - Identifier of the UnifiedRoleDefinition the assignment is for. It's read only. UnifiedRoleDefinition is a collection of permissions listing the operations, such as read, write, and delete that can be performed by an RBAC provider, as part of Microsoft 365 RBAC role management.
-1. **DirectoryScopeId** - Identifier of the directory object representing the scope of the assignment. Use `/` for tenant-wide scope. Use `AppScopeId` to limit the scope to an application only.
-1. **Action** - Set it to `SelfDeactivate`.
-1. **Justification** - A message provided by users and administrators when creating the request about why it's needed.
+|Value|Description|
+|----|-----|
+|**PrincipalId** | Identifier of the principal to which the assignment is being granted, for example, a user or a group. For groups, they must be assignable to roles. That is, the **IsAssignableToRole** property of the group is set to `true`.|
+|**RoleDefinitionID** | Identifier of the UnifiedRoleDefinition the assignment is for. It's read only. UnifiedRoleDefinition is a collection of permissions listing the operations, such as read, write, and delete that can be performed by an RBAC provider, as part of Microsoft 365 RBAC role management.|
+|**DirectoryScopeId** | Identifier of the directory object representing the scope of the assignment. Use `/` for tenant-wide scope. Use `AppScopeId` to limit the scope to an application only.|
+|**Action** | Set it to `SelfDeactivate`.|
+|**Justification** | A message provided by users and administrators when creating the request about why it's needed.|
 
 The **ScheduleInfo** value isn't required.
 
@@ -288,11 +290,13 @@ TargetScheduleId  :
 
 To remove an eligible role assignment, you need the following values:
 
-1. **PrincipalId** - Identifier of the principal to which the assignment is being granted. For example, a user or a group. For groups, they must be assignable to roles. That is, the **IsAssignableToRole** property of the group is set to `true`.
-1. **RoleDefinitionID** - Identifier of the UnifiedRoleDefinition the assignment is for. It's read only.
-1. **DirectoryScopeId** - Identifier of the directory object representing the scope of the assignment. Use `/` for tenant-wide scope. Use `AppScopeId` to limit the scope to an application only.
-1. **Action** - Set to `AdminRemove`.
-1. **Justification** - A message provided by users and administrators when creating the request about why it's needed.
+|Value|Description|
+|----|-----|
+|**PrincipalId** | Identifier of the principal to which the assignment is being granted. For example, a user or a group. For groups, they must be assignable to roles. That is, the **IsAssignableToRole** property of the group is set to `true`.|
+|**RoleDefinitionID** | Identifier of the UnifiedRoleDefinition the assignment is for. It's read only.|
+|**DirectoryScopeId** | Identifier of the directory object representing the scope of the assignment. Use `/` for tenant-wide scope. Use `AppScopeId` to limit the scope to an application only.|
+|**Action** | Set to `AdminRemove`.|
+|**Justification** | A message provided by users and administrators when creating the request about why it's needed.|
 
 The **ScheduleInfo** value isn't required.
 
