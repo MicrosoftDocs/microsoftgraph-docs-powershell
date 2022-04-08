@@ -15,7 +15,7 @@ In Azure Active Directory (Azure AD), a Global administrator can make permanent 
 
 The Azure AD Privileged Identity Management (PIM) service allows role administrators to make time-bound admin role assignments. Additionally, Privileged role administrators can make users eligible for Azure AD admin roles. An eligible administrator can activate the role when they need it, and their permissions expire once they're done.
 
-In this tutorial, you'll create, extend, activate, deactivate and remove eligible role assignments.
+In this tutorial, you'll create, extend, activate, deactivate, and remove eligible role assignments.
 
 ## Prerequisites
 
@@ -62,15 +62,15 @@ d29e358a-a443-4d83-98b3-499a5405bb5b Requestor1       Requestor1@Contoso.onmicro
 
 In PIM, there are two types of role assignments:
 
-- **Eligible role assignments** - user doesn't have access to permissions defined for that role. They can potentially activate it to get access to all the permissions.
-- **Active role assignments** - when a role is active, the user has access to all permissions defined for that role for the defined duration.
+- **Eligible role assignments** - The user doesn't have access to permissions defined for that role. They can potentially activate it to get access to all the permissions.
+- **Active role assignments** - When a role is active, the user has access to all permissions defined for that role for the defined duration.
 
 To create an eligible role assignment, you need the following values:
 
-1. **PrincipalId** - identifier of the principal to which the assignment is being granted. For example, a user or a group. For groups, they must be assignable to roles. That is, the **IsAssignableToRole** property of the group is set to `true`.
-1. **RoleDefinitionID** - identifier of the UnifiedRoleDefinition the assignment is for. It's read only.
-1. **DirectoryScopeId** - identifier of the directory object representing the scope of the assignment. Use `/` for tenant-wide scope. Use `AppScopeId` to limit the scope to an application only.
-1. **Action** - represents the type of the operation on the role assignment. The possible values are:
+1. **PrincipalId** - Identifier of the principal to which the assignment is being granted, for example, a user or a group. For groups, they must be assignable to roles. That is, the **IsAssignableToRole** property of the group is set to `true`.
+1. **RoleDefinitionID** - Identifier of the UnifiedRoleDefinition the assignment is for. It's read only.
+1. **DirectoryScopeId** - Identifier of the directory object representing the scope of the assignment. Use `/` for tenant-wide scope. Use `AppScopeId` to limit the scope to an application only.
+1. **Action** - The type of operation on the role assignment. The possible values are:
 
 - `AdminAssign`: for administrators to assign roles to users or groups.
 - `AdminRemove`: for administrators to remove users or groups from roles.
@@ -82,8 +82,8 @@ To create an eligible role assignment, you need the following values:
 - `SelfExtend`: for users to request to extend their expiring assignments.
 - `SelfRenew`: for users to request to renew their expired assignments.
 
-1. **Justification** - a message provided by users and administrators when creating the request about why it's needed.
-1. **ScheduleInfo** - the schedule object of the role assignment request. This property isn't required when the action is `AdminRemove` or `SelfDeactivate`.
+1. **Justification** - A message provided by users and administrators when creating the request about why it's needed.
+1. **ScheduleInfo** - The schedule object of the role assignment request. This property isn't required when the action is `AdminRemove` or `SelfDeactivate`.
 
 ```powershell
 $params = @{
@@ -187,10 +187,10 @@ An active role assignment allows the user to gain access to all permissions defi
 
 There are two ways to create active role assignments:
 
-- an admin can directly create an active role assignment for a user without first creating an eligible role assignment.
+- An admin can directly create an active role assignment for a user without first creating an eligible role assignment.
 - A user can activate an existing eligible role assignment.
 
-In this step, you'll activate the eligible role assignment created in step 2. To complete this step, sign-in to the terminal as the user we created in step 1.
+In this step, you'll activate the eligible role assignment created in step 2. To complete this step, sign in to the terminal as the user we created in step 1.
 
 ```powershell
 $params = @{
@@ -257,11 +257,11 @@ AdditionalProperties     : {}
 
 To deactivate an active role assignment, the following values are required.
 
-1. **PrincipalId** - identifier of the principal to which the assignment is being granted. For example, a user or a group. For groups, they must be assignable to roles. That is, the **IsAssignableToRole** property of the group is set to `true`.
-1. **RoleDefinitionID** - identifier of the UnifiedRoleDefinition the assignment is for. It's read only.
-1. **DirectoryScopeId** - identifier of the directory object representing the scope of the assignment. Use `/` for tenant-wide scope. Use `AppScopeId` to limit the scope to an application only.
-1. **Action** - set it to `SelfDeactivate`.
-1. **Justification** - a message provided by users and administrators when creating the request about why it's needed.
+1. **PrincipalId** - Identifier of the principal to which the assignment is being granted, for example, a user or a group. For groups, they must be assignable to roles. That is, the **IsAssignableToRole** property of the group is set to `true`.
+1. **RoleDefinitionID** - Identifier of the UnifiedRoleDefinition the assignment is for. It's read only.
+1. **DirectoryScopeId** - Identifier of the directory object representing the scope of the assignment. Use `/` for tenant-wide scope. Use `AppScopeId` to limit the scope to an application only.
+1. **Action** - Set it to `SelfDeactivate`.
+1. **Justification** - A message provided by users and administrators when creating the request about why it's needed.
 
 The **ScheduleInfo** value isn't required.
 
