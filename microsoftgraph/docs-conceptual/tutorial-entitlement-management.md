@@ -8,7 +8,7 @@ manager: CelesteDG
 author: msewaweru
 ---
 
-# Tutorial: Manage access to resources in Azure Active Directory entitlement management using Microsoft Graph PowerShell
+# Tutorial: Manage access to resources in Azure AD entitlement management using Microsoft Graph PowerShell
 
 Managing access to all the resources that employees need, such as groups, applications, and sites, is an important function for organizations. You want to grant employees the right level of access they need to be productive and remove their access when it's no longer needed. [Azure Active Directory (Azure AD) entitlement management](/azure/active-directory/governance/entitlement-management-overview) using Microsoft Graph PowerShell enables you to manage this type of access.
 
@@ -18,7 +18,7 @@ In this tutorial, you'll create a package of resources for a marketing campaign 
 
 To successfully complete this tutorial, make sure you have the required prerequisites:
 
-1. Microsoft Graph PowerShell SDK is installed. Follow the [Install the Microsoft Graph PowerShell SDK](installation.md) guide to install the SDK.  
+1. Microsoft Graph PowerShell SDK is installed. Follow the [installation guide](installation.md) for more info on how to do this.  
 1. To use the Azure AD entitlement management, you must have one of the following licenses:
     - Azure AD Premium P2
     - Enterprise Mobility + Security (EMS) E5 license
@@ -113,9 +113,9 @@ The output should only contain the catalog whose name you provided in the reques
 
 To add the group that you created to the catalog, provide the following property values:
 
-- **CatalogId** - the ID of the catalog that you're using.
-- **RequestType** - to be set to `AdminAdd`.
-- **AccessPackageResource** - representing the resource. This resource should contain two properties, **OriginSystem** which should be `AadGroup` and **originId** is the identifier of the group.
+- **CatalogId** - Specifies the ID of the catalog that you're using.
+- **RequestType** - Set to `AdminAdd`.
+- **AccessPackageResource** - Represents the resource. This resource should contain two properties: **OriginSystem** should be `AadGroup` and **originId** is the identifier of the group.
 
 ```powershell
 $accessPackageResource = @{
@@ -185,11 +185,11 @@ Id                                   Description DisplayName OriginId           
 00000000-0000-0000-0000-000000000000             Member      Member_87553228-0d72-4138-890b-36e683f883b7 AadGroup
 ```
 
-If successful a single record is returned which represents the member role of that group. If no roles are returned, check the **Id** values of the catalog and the access package resource.
+If successful, a single record is returned which represents the member role of that group. If no roles are returned, check the **Id** values of the catalog and the access package resource.
 
 ### Create the access package
 
-At this point, you have a catalog with a group resource, and you know that you'll use the resource role of group member in the access package. The next step is to create the access package. After creating the access package, you can add the resource role to it, and create a policy for how users can request access to that resource role. You use the **Id** of the catalog that you recorded earlier to create the access package. Record the **Id** of the access package to use later. In this step, you create a **Marketing Campaign** access package in the General catalog.
+At this point, you have a catalog with a group resource, and you know that you'll use the resource role of group member in the access package. The next step is to create the access package. After creating the access package, you can add the resource role to it and create a policy for how users can request access to that resource role. You use the **Id** of the catalog that you recorded earlier to create the access package. Record the **Id** of the access package to use later. In this step, you create a **Marketing Campaign** access package in the General catalog.
 
 ```powershell
 New-MgEntitlementManagementAccessPackage -CatalogId '88d3e491-5247-4209-9b56-c4c95d9694e9'  -DisplayName 'Marketing Campaign'| 
@@ -389,7 +389,7 @@ AdditionalProperties                 : {}
 
 ### Get the members of the group
 
-After the request has been granted, you can use the **Id** that you recorded for the **Marketing resources** group to see that the **requestor1** user account has been added to it.
+After the request has been granted, you can use the **Id** that you recorded for the **Marketing resources** group to see that the **Requestor1** user account has been added to it.
 
 ```powershell
 Get-MgGroupMember -GroupId '87553228-0d72-4138-890b-36e683f883b7'
@@ -407,7 +407,7 @@ In this step, remove the changes you made and delete the **Marketing Campaign** 
 
 ### Remove an access package assignment
 
-You must delete any assignments to the access package before you can delete it. Use the **Id** of the assignment request that you recorded to delete it.
+You must delete any assignments to the access package before you can delete it. Use the **Id** of the assignment request that you recorded to delete the access package itself.
 
 ```powershell
 New-MgEntitlementManagementAccessPackageAssignmentRequest -RequestType 'AdminRemove' -AccessPackageAssignmentId 'eff960a2-6b20-4611-81c2-cb3d183584d9'
@@ -415,7 +415,7 @@ New-MgEntitlementManagementAccessPackageAssignmentRequest -RequestType 'AdminRem
 
 ### Delete the access package assignment policy
 
-Use the **Id** of the assignment policy that you previously recorded to delete it. Make sure all assignments are removed first.
+To delete the assignment policy, use the **Id** of the assignment policy that you previously recorded. Make sure all assignments are removed first.
 
 ```powershell
 Remove-MgEntitlementManagementAccessPackageAssignmentPolicy -AccessPackageAssignmentPolicyId '4acf0d48-49b1-495b-816e-58933c9a9e64'
