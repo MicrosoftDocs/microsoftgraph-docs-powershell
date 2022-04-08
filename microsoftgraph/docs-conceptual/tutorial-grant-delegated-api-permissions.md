@@ -31,6 +31,9 @@ To successfully complete this tutorial, make sure you have the required prerequi
 
     Select **Consent on behalf of your organization** before accepting in the login dialog box.
 
+>[!Caution]
+>The `DelegatedPermissionGrant.ReadWrite.All` permission allows an app or a service to manage permission grants and  elevate privileges for any app, user, or group in your organization. Access to this service must be properly secured and should be limited to as few users as possible.
+
 ## Step 1: Create a service principal
 
 The first step in granting consent is to [create the service principal](/powershell/module/microsoft.graph.applications/new-mgserviceprincipal?view=graph-powershell-1.0&preserve-view=true). To do so, you will need the `App Id` of your application.
@@ -143,4 +146,5 @@ ResourceId           : 4dfb4890-3dbf-4b20-bcd0-59ffbe017a6f
 ```
 
 ## See also
+
 - [Tutorial: Grant application permissions programmatically in Azure AD](tutorial-grant-app-only-api-permissions.md)
