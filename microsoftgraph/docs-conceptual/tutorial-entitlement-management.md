@@ -42,7 +42,9 @@ In this step, you'll create a group named **Marketing resources** in the directo
 
 ### Create a user account
 
-Create a user account and use it to request access to the resources in the access package. When you make these calls, change `contoso.onmicrosoft.com` to the domain name of your tenant. You can find tenant information on the Azure AD overview page. Record the value of the returned `Id` property to use later.
+Create a user account that you'll use later to request access to the resources in the access package.
+
+When you make these calls, change `contoso.onmicrosoft.com` to the domain name of your tenant. You can find tenant information on the Azure AD overview page. Record the value of the returned `Id` property to use later.
 
 ```powershell
 $passwordProfile =@{
@@ -115,7 +117,7 @@ To add the group that you created to the catalog, provide the following property
 
 - **CatalogId** - Specifies the ID of the catalog that you're using.
 - **RequestType** - Set to `AdminAdd`.
-- **AccessPackageResource** - Represents the resource. This resource should contain two properties: **OriginSystem** should be `AadGroup` and **originId** is the identifier of the group.
+- **AccessPackageResource** - Represents the resource. This resource should contain two properties: **OriginSystem** should be `AadGroup` and **OriginId** is the identifier of the group.
 
 ```powershell
 $accessPackageResource = @{
@@ -218,7 +220,7 @@ AdditionalProperties            : {[@odata.context, https://graph.microsoft.com/
 
 ### Add a resource role to the access package
 
-Add the member role of the group resource to the access package. Provide the **Id** of the access package, **Id** of the group catalog resource for the accessPackageResource, and the **originId** of the Member role that you previously recorded.
+Add the member role of the group resource to the access package. Provide the **Id** of the access package, **Id** of the group catalog resource for the accessPackageResource, and the **OriginId** of the Member role that you previously recorded.
 
 ```powershell
 $accessPackageResource = @{
@@ -258,7 +260,7 @@ This access package now has one resource role, which is a group membership. The 
 
 ### Create an access package policy
 
-After creating the access package and adding resources and roles, you can decide who can access it by creating an access package policy. Enable the **Requestor1** user account that you created to request access to the resources in the access package. For this task, you need these values:
+After creating the access package and adding resources and roles, you can decide who can access it by creating an access package policy. Enable the **Requestor1** user account that you created in step 1 to request access to the resources in the access package. For this task, you need these values:
 
 - **Id** of the access package for the value of the **accessPackageId** property.
 - **Id** of the **Requestor1** user account for the value of the **id** property in the **allowedRequestors**.
@@ -313,14 +315,14 @@ AdditionalProperties    : {[@odata.context, https://graph.microsoft.com/beta/$me
 
 ## Step 3: Request access
 
-In this step, **Requestor1** user account requests access to the resources in the access package.
+In this step, **Requestor1** user account you created in step 1 requests access to the resources in the access package.
 
 To request access, you need to provide these values:
 
-- **TargetId**: ID of the **Requestor1** user account that you created.
-- **AssignmentPolicyId**: ID of the assignment policy.
-- **AccessPackageId**: ID of the access package.
-- **RequestType**: for a non-administrator user to request to create their own assignment for either a first assignment or renew assignment, the value of the requestType property is `UserAdd`.
+- **TargetId** - Specifies the ID of the **Requestor1** user account that you created.
+- **AssignmentPolicyId** - Specifies the ID of the assignment policy.
+- **AccessPackageId** - Specifies the ID of the access package.
+- **RequestType** - Specifies the type of request. For a non-administrator user to request to create their own assignment for either a first assignment or renew assignment, the value of the requestType property is `UserAdd`.
 
 ```powershell
 New-MgEntitlementManagementAccessPackageAssignmentRequest -RequestType 'UserAdd' -AccessPackageId '08173ced-8eae-4023-8433-cb85f29e7726' -AssignmentPolicyId '4acf0d48-49b1-495b-816e-58933c9a9e64' -TargetId '6c42590f-fcf0-4922-bac6-205f7c6aa89c'
@@ -334,7 +336,7 @@ Use the administrator account to see the status of the request.
 
 ### Get the status of the request
 
-Use the **id** property of the request to get the current status of it. The request state should be `Delivered` and request status `Fulfilled`.
+Use the **Id** property of the request to get the current status of it. The request state should be `Delivered` and request status `Fulfilled`.
 
 Run `Get-MgEntitlementManagementAccessPackageAssignmentRequest` first to get the AccessPackageAssignmentRequestId for your request based on the `CreatedDateTime`.
 
