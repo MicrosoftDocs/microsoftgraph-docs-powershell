@@ -3,6 +3,9 @@ title: "Install the Microsoft Graph PowerShell SDK"
 description: "Provides instructions for installing the Microsoft Graph PowerShell SDK."
 localization_priority: Normal
 author: jasonjoh
+ms.topic: conceptual
+ms.date: 04/07/2022
+ms.author: jasonjoh
 ---
 
 # Install the Microsoft Graph PowerShell SDK
@@ -11,15 +14,14 @@ The Microsoft Graph PowerShell SDK is published on the [PowerShell Gallery](http
 
 ## Prerequisites
 
-1. Microsoft Graph PowerShell is cross-platform and works with PowerShell 7 and later. It's also compatible with Windows PowerShell 5.1.
-1. Microsoft Graph PowerShell also works on all platforms including Windows, macOS, and Linux.
-1. A NuGet provider is required to interact with NuGet-based repositories like the PowerShell Gallery. Install a NuGet provider by running the following command:
+PowerShell 7 and later is the recommended PowerShell version for use with the Microsoft Graph PowerShell SDK on all platforms. There are no additional prerequisites to use the SDK with PowerShell 7 or later.
 
-    ```powershell
-    Install-PackageProvider -Name NuGet -Force
-    ```
+The following prerequisites are required to use the Microsoft Graph PowerShell SDK with Windows PowerShell.
 
-1. For Windows platforms, the PowerShell script execution policy must be set to `remote signed` or `less restrictive`. `Get-ExecutionPolicy` can be used to determine the current execution policy. For more information, see [about_Execution_Policies](/powershell/module/microsoft.powershell.core/about/about_execution_policies).
+- Upgrade to [PowerShell 5.1 or later](/powershell/scripting/windows-powershell/install/installing-windows-powershell#upgrading-existing-windows-powershell)
+- Install [.NET Framework 4.7.2 or later](/dotnet/framework/install/)
+- Update **PowerShellGet** to the latest version using `Install-Module PowerShellGet -Force`
+- The PowerShell script execution policy must be set to `remote signed` or `less restrictive`. Use `Get-ExecutionPolicy` to determine the current execution policy. For more information, see [about_Execution_Policies](/powershell/module/microsoft.powershell.core/about/about_execution_policies).
 To set the execution policy, run;
 
     ```powershell
@@ -29,6 +31,11 @@ To set the execution policy, run;
 ## Installation
 
 Using the **Install-Module** cmdlet is the preferred installation method for the Microsoft Graph PowerShell module.
+
+> [!NOTE]
+> Installing the main module of the SDK, Microsoft.Graph, will install all 38 sub modules. Consider only installing the necessary modules, including `Microsoft.Graph.Authentication` which is installed by default when you opt to install the sub modules individually. For a list of available Microsoft Graph modules, use `Find-Module Microsoft.Graph*`.
+> Only cmdlets for the installed modules will be available for use.
+
 Run the following command to install the SDK in PowerShell Core or Windows PowerShell.
 
 ```powershell
@@ -40,9 +47,6 @@ Optionally, you can change the scope of the installation using the `-Scope` para
 ```powershell
 Install-Module Microsoft.Graph -Scope AllUsers
 ```
-
-> [!NOTE]
-> Installing the main module of the SDK, Microsoft.Graph, will install all 38 sub modules. Consider only installing the necessary modules, including `Microsoft.Graph.Authentication` which is installed by default when you opt to install the sub modules individually. Only cmdlets for the installed modules will be available for use.
 
 Installing the SDK in one version of PowerShell does not install it for the other. Be sure to run the installation command inside the version of PowerShell you intend to use it in.
 
