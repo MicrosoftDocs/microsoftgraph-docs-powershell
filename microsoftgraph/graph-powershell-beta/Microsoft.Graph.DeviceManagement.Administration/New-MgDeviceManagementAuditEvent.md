@@ -111,7 +111,7 @@ Accept wildcard characters: False
 
 ### -Actor
 A class containing the properties for Audit Actor.
-To construct, see NOTES section for ACTOR properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ACTOR properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAuditActor
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 A class containing the properties for Audit Event.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAuditEvent
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 
 ### -Resources
 Resources being modified.
-To construct, see NOTES section for RESOURCES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for RESOURCES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAuditResource[]

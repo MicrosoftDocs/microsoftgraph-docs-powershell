@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Bookings
-Module Guid: 7586b3e2-64dd-49d3-be43-09080baf4fd0
+Module Guid: a8bc8dc1-78ad-4dbd-a8a3-21e8809c0697
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings
 Help Version: 1.0.0.0
 Locale: en-US
@@ -26,6 +26,11 @@ Nullable.
 
 ### [Get-MgBookingBusinessCustomer](Get-MgBookingBusinessCustomer.md)
 All the customers of this business.
+Read-only.
+Nullable.
+
+### [Get-MgBookingBusinessCustomQuestion](Get-MgBookingBusinessCustomQuestion.md)
+All the custom questions of this business.
 Read-only.
 Nullable.
 
@@ -60,6 +65,11 @@ All the customers of this business.
 Read-only.
 Nullable.
 
+### [New-MgBookingBusinessCustomQuestion](New-MgBookingBusinessCustomQuestion.md)
+All the custom questions of this business.
+Read-only.
+Nullable.
+
 ### [New-MgBookingBusinessService](New-MgBookingBusinessService.md)
 All the services offered by this business.
 Read-only.
@@ -91,6 +101,11 @@ Nullable.
 
 ### [Remove-MgBookingBusinessCustomer](Remove-MgBookingBusinessCustomer.md)
 All the customers of this business.
+Read-only.
+Nullable.
+
+### [Remove-MgBookingBusinessCustomQuestion](Remove-MgBookingBusinessCustomQuestion.md)
+All the custom questions of this business.
 Read-only.
 Nullable.
 
@@ -131,6 +146,11 @@ Nullable.
 
 ### [Update-MgBookingBusinessCustomer](Update-MgBookingBusinessCustomer.md)
 All the customers of this business.
+Read-only.
+Nullable.
+
+### [Update-MgBookingBusinessCustomQuestion](Update-MgBookingBusinessCustomQuestion.md)
+All the custom questions of this business.
 Read-only.
 Nullable.
 

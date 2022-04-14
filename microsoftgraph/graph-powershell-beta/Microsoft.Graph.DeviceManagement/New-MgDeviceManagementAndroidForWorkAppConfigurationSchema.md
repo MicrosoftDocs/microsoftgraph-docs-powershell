@@ -50,7 +50,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Schema describing an Android for Work application's custom configurations.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAndroidForWorkAppConfigurationSchema
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 
 ### -SchemaItems
 Collection of items each representing a named configuration option in the schema
-To construct, see NOTES section for SCHEMAITEMS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SCHEMAITEMS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAndroidForWorkAppConfigurationSchemaItem[]
@@ -164,7 +164,7 @@ BODYPARAMETER <IMicrosoftGraphAndroidForWorkAppConfigurationSchema>: Schema desc
   - `[Id <String>]`: Read-only.
   - `[ExampleJson <Byte[]>]`: UTF8 encoded byte array containing example JSON string conforming to this schema that demonstrates how to set the configuration for this app
   - `[SchemaItems <IMicrosoftGraphAndroidForWorkAppConfigurationSchemaItem[]>]`: Collection of items each representing a named configuration option in the schema
-    - `[DataType <String>]`: androidForWorkAppConfigurationSchemaItemDataType
+    - `[DataType <String>]`: Data type for a configuration item inside an Android for Work application's custom configuration schema
     - `[DefaultBoolValue <Boolean?>]`: Default value for boolean type items, if specified by the app developer
     - `[DefaultIntValue <Int32?>]`: Default value for integer type items, if specified by the app developer
     - `[DefaultStringArrayValue <String[]>]`: Default value for string array type items, if specified by the app developer
@@ -173,11 +173,11 @@ BODYPARAMETER <IMicrosoftGraphAndroidForWorkAppConfigurationSchema>: Schema desc
     - `[DisplayName <String>]`: Human readable name
     - `[SchemaItemKey <String>]`: Unique key the application uses to identify the item
     - `[Selections <IMicrosoftGraphKeyValuePair[]>]`: List of human readable name/value pairs for the valid values that can be set for this item (Choice and Multiselect items only)
-      - `[Name <String>]`: Name for this key-value pair. Possible names are: AdditionalWSFedEndpointCheckResult,  AllowedAuthenticationClassReferencesCheckResult, AlwaysRequireAuthenticationCheckResult,   AutoUpdateEnabledCheckResult, ClaimsProviderNameCheckResult, EncryptClaimsCheckResult,  EncryptedNameIdRequiredCheckResult, MonitoringEnabledCheckResult,NotBeforeSkewCheckResult,  RequestMFAFromClaimsProvidersCheckResult, SignedSamlRequestsRequiredCheckResult, AdditionalAuthenticationRulesCheckResult, TokenLifetimeCheckResult,  DelegationAuthorizationRulesCheckResult, IssuanceAuthorizationRulesCheckResult, IssuanceTransformRulesCheckResult.
-      - `[Value <String>]`: Value for this key-value pair. Possible result values are 0 (when the validation check passed), 1 (when the validation check failed), or 2 (when the validation check is a warning).
+      - `[Name <String>]`: Name for this key-value pair
+      - `[Value <String>]`: Value for this key-value pair
 
 SCHEMAITEMS <IMicrosoftGraphAndroidForWorkAppConfigurationSchemaItem[]>: Collection of items each representing a named configuration option in the schema
-  - `[DataType <String>]`: androidForWorkAppConfigurationSchemaItemDataType
+  - `[DataType <String>]`: Data type for a configuration item inside an Android for Work application's custom configuration schema
   - `[DefaultBoolValue <Boolean?>]`: Default value for boolean type items, if specified by the app developer
   - `[DefaultIntValue <Int32?>]`: Default value for integer type items, if specified by the app developer
   - `[DefaultStringArrayValue <String[]>]`: Default value for string array type items, if specified by the app developer
@@ -186,7 +186,7 @@ SCHEMAITEMS <IMicrosoftGraphAndroidForWorkAppConfigurationSchemaItem[]>: Collect
   - `[DisplayName <String>]`: Human readable name
   - `[SchemaItemKey <String>]`: Unique key the application uses to identify the item
   - `[Selections <IMicrosoftGraphKeyValuePair[]>]`: List of human readable name/value pairs for the valid values that can be set for this item (Choice and Multiselect items only)
-    - `[Name <String>]`: Name for this key-value pair. Possible names are: AdditionalWSFedEndpointCheckResult,  AllowedAuthenticationClassReferencesCheckResult, AlwaysRequireAuthenticationCheckResult,   AutoUpdateEnabledCheckResult, ClaimsProviderNameCheckResult, EncryptClaimsCheckResult,  EncryptedNameIdRequiredCheckResult, MonitoringEnabledCheckResult,NotBeforeSkewCheckResult,  RequestMFAFromClaimsProvidersCheckResult, SignedSamlRequestsRequiredCheckResult, AdditionalAuthenticationRulesCheckResult, TokenLifetimeCheckResult,  DelegationAuthorizationRulesCheckResult, IssuanceAuthorizationRulesCheckResult, IssuanceTransformRulesCheckResult.
-    - `[Value <String>]`: Value for this key-value pair. Possible result values are 0 (when the validation check passed), 1 (when the validation check failed), or 2 (when the validation check is a warning).
+    - `[Name <String>]`: Name for this key-value pair
+    - `[Value <String>]`: Value for this key-value pair
 
 ## RELATED LINKS

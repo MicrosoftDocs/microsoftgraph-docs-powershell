@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgexecutedevicemanagementmanageddeviceaction
@@ -15,8 +15,9 @@ Invoke action executeAction
 ### ExecuteExpanded (Default)
 ```
 Invoke-MgExecuteDeviceManagementManagedDeviceAction [-ActionName <String>] [-AdditionalProperties <Hashtable>]
- [-DeviceIds <String[]>] [-DeviceName <String>] [-KeepEnrollmentData] [-KeepUserData]
- [-NotificationBody <String>] [-NotificationTitle <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-CarrierUrl <String>] [-DeprovisionReason <String>] [-DeviceIds <String[]>] [-DeviceName <String>]
+ [-KeepEnrollmentData] [-KeepUserData] [-NotificationBody <String>] [-NotificationTitle <String>]
+ [-OrganizationalUnitPath <String>] [-PersistEsimDataPlan] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Execute
@@ -65,7 +66,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1R3Ij5LDevicemanagementManageddevicesMicrosoftGraphExecuteactionPostRequestbodyContentApplicationJsonSchema
@@ -76,6 +77,36 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -CarrierUrl
+.
+
+```yaml
+Type: String
+Parameter Sets: ExecuteExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DeprovisionReason
+.
+
+```yaml
+Type: String
+Parameter Sets: ExecuteExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -169,6 +200,36 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -OrganizationalUnitPath
+.
+
+```yaml
+Type: String
+Parameter Sets: ExecuteExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PersistEsimDataPlan
+.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: ExecuteExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -206,11 +267,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1R3Ij5LDevicemanagementManageddevicesMicrosoftGraphExecuteactionPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBulkManagedDeviceActionResult
-
 ## NOTES
 
 ALIASES
@@ -223,11 +282,15 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER <IPaths1R3Ij5LDevicemanagementManageddevicesMicrosoftGraphExecuteactionPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ActionName <String>]`: managedDeviceRemoteAction
+  - `[CarrierUrl <String>]`: 
+  - `[DeprovisionReason <String>]`: 
   - `[DeviceIds <String[]>]`: 
   - `[DeviceName <String>]`: 
   - `[KeepEnrollmentData <Boolean?>]`: 
   - `[KeepUserData <Boolean?>]`: 
   - `[NotificationBody <String>]`: 
   - `[NotificationTitle <String>]`: 
+  - `[OrganizationalUnitPath <String>]`: 
+  - `[PersistEsimDataPlan <Boolean?>]`: 
 
 ## RELATED LINKS

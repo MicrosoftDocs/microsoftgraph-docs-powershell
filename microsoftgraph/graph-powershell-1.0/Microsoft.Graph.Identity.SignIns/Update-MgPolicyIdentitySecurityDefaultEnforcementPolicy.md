@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgPolicyIdentitySecurityDefaultEnforcementPolicy
 
 ## SYNOPSIS
-Update the navigation property identitySecurityDefaultsEnforcementPolicy in policies
+The policy that represents the security defaults that protect against common attacks.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Update-MgPolicyIdentitySecurityDefaultEnforcementPolicy
 ```
 
 ## DESCRIPTION
-Update the navigation property identitySecurityDefaultsEnforcementPolicy in policies
+The policy that represents the security defaults that protect against common attacks.
 
 ## EXAMPLES
 
@@ -49,9 +49,8 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-Represents an Azure Active Directory object.
-The directoryObject type is the base type for many other directory entity types.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+identitySecurityDefaultsEnforcementPolicy
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySecurityDefaultsEnforcementPolicy1
@@ -82,6 +81,7 @@ Accept wildcard characters: False
 
 ### -Description
 Description for this policy.
+Required.
 
 ```yaml
 Type: String
@@ -97,6 +97,7 @@ Accept wildcard characters: False
 
 ### -DisplayName
 Display name for this policy.
+Required.
 
 ```yaml
 Type: String
@@ -204,10 +205,10 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphIdentitySecurityDefaultsEnforcementPolicy1>: Represents an Azure Active Directory object. The directoryObject type is the base type for many other directory entity types.
+BODYPARAMETER <IMicrosoftGraphIdentitySecurityDefaultsEnforcementPolicy1>: identitySecurityDefaultsEnforcementPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Description <String>]`: Description for this policy.
-  - `[DisplayName <String>]`: Display name for this policy.
+  - `[Description <String>]`: Description for this policy. Required.
+  - `[DisplayName <String>]`: Display name for this policy. Required.
   - `[DeletedDateTime <DateTime?>]`: 
   - `[Id <String>]`: Read-only.
   - `[IsEnabled <Boolean?>]`: If set to true, Azure Active Directory security defaults is enabled for the tenant.

@@ -64,7 +64,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 synchronization
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSynchronization
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
@@ -110,8 +110,8 @@ Accept wildcard characters: False
 ```
 
 ### -Jobs
-.
-To construct, see NOTES section for JOBS properties and create a hash table.
+Performs synchronization by periodically running in the background, polling for changes in one directory, and pushing them to another directory.
+To construct, please use Get-Help -Online and see NOTES section for JOBS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSynchronizationJob[]
@@ -141,8 +141,8 @@ Accept wildcard characters: False
 ```
 
 ### -Secrets
-.
-To construct, see NOTES section for SECRETS properties and create a hash table.
+Represents a collection of credentials to access provisioned cloud applications.
+To construct, please use Get-Help -Online and see NOTES section for SECRETS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]
@@ -172,8 +172,8 @@ Accept wildcard characters: False
 ```
 
 ### -Templates
-.
-To construct, see NOTES section for TEMPLATES properties and create a hash table.
+Pre-configured synchronization settings for a particular application.
+To construct, please use Get-Help -Online and see NOTES section for TEMPLATES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSynchronizationTemplate[]
@@ -240,7 +240,7 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER <IMicrosoftGraphSynchronization>: synchronization
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
-  - `[Jobs <IMicrosoftGraphSynchronizationJob[]>]`: 
+  - `[Jobs <IMicrosoftGraphSynchronizationJob[]>]`: Performs synchronization by periodically running in the background, polling for changes in one directory, and pushing them to another directory.
     - `[Id <String>]`: Read-only.
     - `[Schedule <IMicrosoftGraphSynchronizationSchedule>]`: synchronizationSchedule
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -370,13 +370,13 @@ BODYPARAMETER <IMicrosoftGraphSynchronization>: synchronization
         - `[Value <Int64?>]`: Value.
       - `[TroubleshootingUrl <String>]`: In the event of an error, the URL with the troubleshooting steps for the issue.
     - `[SynchronizationJobSettings <IMicrosoftGraphKeyValuePair[]>]`: Settings associated with the job. Some settings are inherited from the template.
-      - `[Name <String>]`: Name for this key-value pair. Possible names are: AdditionalWSFedEndpointCheckResult,  AllowedAuthenticationClassReferencesCheckResult, AlwaysRequireAuthenticationCheckResult,   AutoUpdateEnabledCheckResult, ClaimsProviderNameCheckResult, EncryptClaimsCheckResult,  EncryptedNameIdRequiredCheckResult, MonitoringEnabledCheckResult,NotBeforeSkewCheckResult,  RequestMFAFromClaimsProvidersCheckResult, SignedSamlRequestsRequiredCheckResult, AdditionalAuthenticationRulesCheckResult, TokenLifetimeCheckResult,  DelegationAuthorizationRulesCheckResult, IssuanceAuthorizationRulesCheckResult, IssuanceTransformRulesCheckResult.
-      - `[Value <String>]`: Value for this key-value pair. Possible result values are 0 (when the validation check passed), 1 (when the validation check failed), or 2 (when the validation check is a warning).
+      - `[Name <String>]`: Name for this key-value pair
+      - `[Value <String>]`: Value for this key-value pair
     - `[TemplateId <String>]`: Identifier of the synchronization template this job is based on.
-  - `[Secrets <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>]`: 
+  - `[Secrets <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>]`: Represents a collection of credentials to access provisioned cloud applications.
     - `[Key <String>]`: synchronizationSecret
     - `[Value <String>]`: The value of the secret.
-  - `[Templates <IMicrosoftGraphSynchronizationTemplate[]>]`: 
+  - `[Templates <IMicrosoftGraphSynchronizationTemplate[]>]`: Pre-configured synchronization settings for a particular application.
     - `[Id <String>]`: Read-only.
     - `[ApplicationId <String>]`: Identifier of the application this template belongs to.
     - `[Default <Boolean?>]`: true if this template is recommended to be the default for the application.
@@ -396,6 +396,7 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[DirectoryDefinitionId <String>]`: key: id of directoryDefinition
   - `[EndpointId <String>]`: key: id of endpoint
   - `[ExtensionPropertyId <String>]`: key: id of extensionProperty
+  - `[FederatedIdentityCredentialId <String>]`: key: id of federatedIdentityCredential
   - `[GroupId <String>]`: key: id of group
   - `[LicenseDetailsId <String>]`: key: id of licenseDetails
   - `[OnPremisesAgentGroupId <String>]`: key: id of onPremisesAgentGroup
@@ -410,7 +411,7 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[SynchronizationTemplateId <String>]`: key: id of synchronizationTemplate
   - `[UserId <String>]`: key: id of user
 
-JOBS <IMicrosoftGraphSynchronizationJob[]>: .
+JOBS <IMicrosoftGraphSynchronizationJob[]>: Performs synchronization by periodically running in the background, polling for changes in one directory, and pushing them to another directory.
   - `[Id <String>]`: Read-only.
   - `[Schedule <IMicrosoftGraphSynchronizationSchedule>]`: synchronizationSchedule
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -540,15 +541,15 @@ JOBS <IMicrosoftGraphSynchronizationJob[]>: .
       - `[Value <Int64?>]`: Value.
     - `[TroubleshootingUrl <String>]`: In the event of an error, the URL with the troubleshooting steps for the issue.
   - `[SynchronizationJobSettings <IMicrosoftGraphKeyValuePair[]>]`: Settings associated with the job. Some settings are inherited from the template.
-    - `[Name <String>]`: Name for this key-value pair. Possible names are: AdditionalWSFedEndpointCheckResult,  AllowedAuthenticationClassReferencesCheckResult, AlwaysRequireAuthenticationCheckResult,   AutoUpdateEnabledCheckResult, ClaimsProviderNameCheckResult, EncryptClaimsCheckResult,  EncryptedNameIdRequiredCheckResult, MonitoringEnabledCheckResult,NotBeforeSkewCheckResult,  RequestMFAFromClaimsProvidersCheckResult, SignedSamlRequestsRequiredCheckResult, AdditionalAuthenticationRulesCheckResult, TokenLifetimeCheckResult,  DelegationAuthorizationRulesCheckResult, IssuanceAuthorizationRulesCheckResult, IssuanceTransformRulesCheckResult.
-    - `[Value <String>]`: Value for this key-value pair. Possible result values are 0 (when the validation check passed), 1 (when the validation check failed), or 2 (when the validation check is a warning).
+    - `[Name <String>]`: Name for this key-value pair
+    - `[Value <String>]`: Value for this key-value pair
   - `[TemplateId <String>]`: Identifier of the synchronization template this job is based on.
 
-SECRETS <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>: .
+SECRETS <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>: Represents a collection of credentials to access provisioned cloud applications.
   - `[Key <String>]`: synchronizationSecret
   - `[Value <String>]`: The value of the secret.
 
-TEMPLATES <IMicrosoftGraphSynchronizationTemplate[]>: .
+TEMPLATES <IMicrosoftGraphSynchronizationTemplate[]>: Pre-configured synchronization settings for a particular application.
   - `[Id <String>]`: Read-only.
   - `[ApplicationId <String>]`: Identifier of the application this template belongs to.
   - `[Default <Boolean?>]`: true if this template is recommended to be the default for the application.

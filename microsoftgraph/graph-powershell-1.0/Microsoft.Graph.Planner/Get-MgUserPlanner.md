@@ -8,27 +8,25 @@ schema: 2.0.0
 # Get-MgUserPlanner
 
 ## SYNOPSIS
-Selective Planner services available to the user.
+Entry-point to the Planner resource that might exist for a user.
 Read-only.
-Nullable.
 
 ## SYNTAX
 
-### Get2 (Default)
+### Get (Default)
 ```
 Get-MgUserPlanner -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity2
+### GetViaIdentity
 ```
 Get-MgUserPlanner -InputObject <IPlannerIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Selective Planner services available to the user.
+Entry-point to the Planner resource that might exist for a user.
 Read-only.
-Nullable.
 
 ## EXAMPLES
 
@@ -51,11 +49,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IPlannerIdentity
-Parameter Sets: GetViaIdentity2
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -85,7 +83,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: Get2
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -103,7 +101,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerUser1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerUser
 ## NOTES
 
 ALIASES

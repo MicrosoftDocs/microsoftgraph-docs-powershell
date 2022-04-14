@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointusersetting
@@ -17,7 +17,8 @@ Cloud PC user settings.
 New-MgDeviceManagementVirtualEndpointUserSetting [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphCloudPcUserSettingAssignment[]>] [-CreatedDateTime <DateTime>]
  [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-LocalAdminEnabled]
- [-SelfServiceEnabled] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RestorePointSetting <IMicrosoftGraphCloudPcRestorePointSetting>] [-SelfServiceEnabled] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -52,7 +53,7 @@ Accept wildcard characters: False
 Represents the set of Microsoft 365 groups and security groups in Azure AD that have cloudPCUserSetting assigned.
 Returned only on $expand.
 For an example, see Get cloudPcUserSettingample.
-To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCloudPcUserSettingAssignment[]
@@ -68,7 +69,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 cloudPcUserSetting
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCloudPcUserSetting
@@ -150,7 +151,7 @@ Accept wildcard characters: False
 Indicates whether the local admin option is enabled.
 Default value is false.
 To enable the local admin option, change the setting to true.
-If the local admin option is enabled, the end user can be an admin of the cloud PC device.
+If the local admin option is enabled, the end user can be an admin of the Cloud PC device.
 
 ```yaml
 Type: SwitchParameter
@@ -164,10 +165,26 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -RestorePointSetting
+cloudPcRestorePointSetting
+To construct, please use Get-Help -Online and see NOTES section for RESTOREPOINTSETTING properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCloudPcRestorePointSetting
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SelfServiceEnabled
 Indicates whether the self-service option is enabled.
 Default value is false.
-To enable the self-service option, change the setting to true. If the self-service option is enabled, the end user is allowed to perform some self-service operations, such as upgrading the cloud PC through the end user portal.
+To enable the self-service option, change the setting to true. If the self-service option is enabled, the end user is allowed to perform some self-service operations, such as upgrading the Cloud PC through the end user portal.
 
 ```yaml
 Type: SwitchParameter
@@ -247,7 +264,16 @@ BODYPARAMETER <IMicrosoftGraphCloudPcUserSetting>: cloudPcUserSetting
   - `[CreatedDateTime <DateTime?>]`: The date and time the setting was created. The Timestamp type represents the date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'.
   - `[DisplayName <String>]`: The setting name displayed in the user interface.
   - `[LastModifiedDateTime <DateTime?>]`: The last date and time the setting was modified. The Timestamp type represents the date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'.
-  - `[LocalAdminEnabled <Boolean?>]`: Indicates whether the local admin option is enabled. Default value is false. To enable the local admin option, change the setting to true. If the local admin option is enabled, the end user can be an admin of the cloud PC device.
-  - `[SelfServiceEnabled <Boolean?>]`: Indicates whether the self-service option is enabled. Default value is false. To enable the self-service option, change the setting to true. If the self-service option is enabled, the end user is allowed to perform some self-service operations, such as upgrading the cloud PC through the end user portal.
+  - `[LocalAdminEnabled <Boolean?>]`: Indicates whether the local admin option is enabled. Default value is false. To enable the local admin option, change the setting to true. If the local admin option is enabled, the end user can be an admin of the Cloud PC device.
+  - `[RestorePointSetting <IMicrosoftGraphCloudPcRestorePointSetting>]`: cloudPcRestorePointSetting
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[FrequencyInHours <Int32?>]`: 
+    - `[UserRestoreEnabled <Boolean?>]`: 
+  - `[SelfServiceEnabled <Boolean?>]`: Indicates whether the self-service option is enabled. Default value is false. To enable the self-service option, change the setting to true. If the self-service option is enabled, the end user is allowed to perform some self-service operations, such as upgrading the Cloud PC through the end user portal.
+
+RESTOREPOINTSETTING <IMicrosoftGraphCloudPcRestorePointSetting>: cloudPcRestorePointSetting
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[FrequencyInHours <Int32?>]`: 
+  - `[UserRestoreEnabled <Boolean?>]`: 
 
 ## RELATED LINKS

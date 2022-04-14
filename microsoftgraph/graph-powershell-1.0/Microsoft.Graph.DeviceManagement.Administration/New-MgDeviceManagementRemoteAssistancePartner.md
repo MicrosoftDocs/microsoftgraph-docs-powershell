@@ -49,7 +49,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 RemoteAssistPartner resources represent the metadata and status of a given Remote Assistance partner service.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRemoteAssistancePartner
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -OnboardingStatus
-remoteAssistanceOnboardingStatus
+The current TeamViewer connector status
 
 ```yaml
 Type: String
@@ -192,7 +192,7 @@ BODYPARAMETER <IMicrosoftGraphRemoteAssistancePartner>: RemoteAssistPartner reso
   - `[Id <String>]`: Read-only.
   - `[DisplayName <String>]`: Display name of the partner.
   - `[LastConnectionDateTime <DateTime?>]`: Timestamp of the last request sent to Intune by the TEM partner.
-  - `[OnboardingStatus <String>]`: remoteAssistanceOnboardingStatus
+  - `[OnboardingStatus <String>]`: The current TeamViewer connector status
   - `[OnboardingUrl <String>]`: URL of the partner's onboarding portal, where an administrator can configure their Remote Assistance service.
 
 ## RELATED LINKS

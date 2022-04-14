@@ -87,7 +87,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Imported windows autopilot devices.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementEnrolmentIdentity
@@ -239,7 +239,7 @@ Accept wildcard characters: False
 
 ### -State
 importedWindowsAutopilotDeviceIdentityState
-To construct, see NOTES section for STATE properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for STATE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphImportedWindowsAutopilotDeviceIdentityState
@@ -358,7 +358,6 @@ INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[WindowsAutopilotDeviceIdentityId <String>]`: key: id of windowsAutopilotDeviceIdentity
   - `[WindowsFeatureUpdateProfileAssignmentId <String>]`: key: id of windowsFeatureUpdateProfileAssignment
   - `[WindowsFeatureUpdateProfileId <String>]`: key: id of windowsFeatureUpdateProfile
-  - `[WindowsUpdateStateId <String>]`: key: id of windowsUpdateState
 
 STATE <IMicrosoftGraphImportedWindowsAutopilotDeviceIdentityState>: importedWindowsAutopilotDeviceIdentityState
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

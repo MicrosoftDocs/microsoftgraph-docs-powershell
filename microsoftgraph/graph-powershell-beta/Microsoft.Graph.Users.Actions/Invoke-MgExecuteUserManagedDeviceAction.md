@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgexecuteusermanageddeviceaction
@@ -15,9 +15,10 @@ Invoke action executeAction
 ### ExecuteExpanded (Default)
 ```
 Invoke-MgExecuteUserManagedDeviceAction -UserId <String> [-ActionName <String>]
- [-AdditionalProperties <Hashtable>] [-DeviceIds <String[]>] [-DeviceName <String>] [-KeepEnrollmentData]
- [-KeepUserData] [-NotificationBody <String>] [-NotificationTitle <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-CarrierUrl <String>] [-DeprovisionReason <String>]
+ [-DeviceIds <String[]>] [-DeviceName <String>] [-KeepEnrollmentData] [-KeepUserData]
+ [-NotificationBody <String>] [-NotificationTitle <String>] [-OrganizationalUnitPath <String>]
+ [-PersistEsimDataPlan] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Execute
@@ -30,9 +31,10 @@ Invoke-MgExecuteUserManagedDeviceAction -UserId <String>
 ### ExecuteViaIdentityExpanded
 ```
 Invoke-MgExecuteUserManagedDeviceAction -InputObject <IUsersActionsIdentity> [-ActionName <String>]
- [-AdditionalProperties <Hashtable>] [-DeviceIds <String[]>] [-DeviceName <String>] [-KeepEnrollmentData]
- [-KeepUserData] [-NotificationBody <String>] [-NotificationTitle <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-CarrierUrl <String>] [-DeprovisionReason <String>]
+ [-DeviceIds <String[]>] [-DeviceName <String>] [-KeepEnrollmentData] [-KeepUserData]
+ [-NotificationBody <String>] [-NotificationTitle <String>] [-OrganizationalUnitPath <String>]
+ [-PersistEsimDataPlan] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ExecuteViaIdentity
@@ -81,7 +83,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1V92H65UsersUserIdManageddevicesMicrosoftGraphExecuteactionPostRequestbodyContentApplicationJsonSchema
@@ -92,6 +94,36 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -CarrierUrl
+.
+
+```yaml
+Type: String
+Parameter Sets: ExecuteExpanded, ExecuteViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DeprovisionReason
+.
+
+```yaml
+Type: String
+Parameter Sets: ExecuteExpanded, ExecuteViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -127,7 +159,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
@@ -191,6 +223,36 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
+Parameter Sets: ExecuteExpanded, ExecuteViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -OrganizationalUnitPath
+.
+
+```yaml
+Type: String
+Parameter Sets: ExecuteExpanded, ExecuteViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PersistEsimDataPlan
+.
+
+```yaml
+Type: SwitchParameter
 Parameter Sets: ExecuteExpanded, ExecuteViaIdentityExpanded
 Aliases:
 
@@ -269,17 +331,24 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER <IPaths1V92H65UsersUserIdManageddevicesMicrosoftGraphExecuteactionPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ActionName <String>]`: managedDeviceRemoteAction
+  - `[CarrierUrl <String>]`: 
+  - `[DeprovisionReason <String>]`: 
   - `[DeviceIds <String[]>]`: 
   - `[DeviceName <String>]`: 
   - `[KeepEnrollmentData <Boolean?>]`: 
   - `[KeepUserData <Boolean?>]`: 
   - `[NotificationBody <String>]`: 
   - `[NotificationTitle <String>]`: 
+  - `[OrganizationalUnitPath <String>]`: 
+  - `[PersistEsimDataPlan <Boolean?>]`: 
 
 INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
+  - `[AccessReviewInstanceDecisionItemId <String>]`: key: id of accessReviewInstanceDecisionItem
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
   - `[AuthenticationMethodId <String>]`: key: id of authenticationMethod
+  - `[BaseTaskId <String>]`: key: id of baseTask
+  - `[BaseTaskListId <String>]`: key: id of baseTaskList
   - `[CalendarId <String>]`: key: id of calendar
   - `[DeviceEnrollmentConfigurationId <String>]`: key: id of deviceEnrollmentConfiguration
   - `[DeviceLogCollectionResponseId <String>]`: key: id of deviceLogCollectionResponse

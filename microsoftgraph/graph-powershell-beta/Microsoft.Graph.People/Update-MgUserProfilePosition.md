@@ -85,7 +85,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 workPosition
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphWorkPosition
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 
 ### -Colleagues
 Colleagues that are associated with this position.
-To construct, see NOTES section for COLLEAGUES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for COLLEAGUES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRelatedPerson[]
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 identitySet
-To construct, see NOTES section for CREATEDBY properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 
 ### -Detail
 positionDetail
-To construct, see NOTES section for DETAIL properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DETAIL properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPositionDetail
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 
 ### -Inference
 inferenceData
-To construct, see NOTES section for INFERENCE properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INFERENCE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphInferenceData
@@ -210,7 +210,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IPeopleIdentity
@@ -256,7 +256,7 @@ Accept wildcard characters: False
 
 ### -LastModifiedBy
 identitySet
-To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
@@ -287,7 +287,7 @@ Accept wildcard characters: False
 
 ### -Manager
 relatedPerson
-To construct, see NOTES section for MANAGER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for MANAGER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRelatedPerson
@@ -318,7 +318,7 @@ Accept wildcard characters: False
 
 ### -Source
 personDataSources
-To construct, see NOTES section for SOURCE properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SOURCE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPersonDataSources

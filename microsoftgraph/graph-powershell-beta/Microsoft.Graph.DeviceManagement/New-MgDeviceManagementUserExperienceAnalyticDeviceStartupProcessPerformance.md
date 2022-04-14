@@ -15,9 +15,9 @@ User experience analytics device Startup Process Performance
 ### CreateExpanded (Default)
 ```
 New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance [-AdditionalProperties <Hashtable>]
- [-DeviceCount <Int64>] [-Id <String>] [-MedianImpactInMS <Int32>] [-ProcessName <String>]
- [-ProductName <String>] [-Publisher <String>] [-TotalImpactInMS <Int32>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-DeviceCount <Int64>] [-Id <String>] [-MedianImpactInMS <Int32>] [-MedianImpactInMs2 <Int64>]
+ [-ProcessName <String>] [-ProductName <String>] [-Publisher <String>] [-TotalImpactInMS <Int32>]
+ [-TotalImpactInMs2 <Int64>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -51,7 +51,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analytics device startup process performance.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcessPerformance
@@ -100,6 +100,21 @@ User experience analytics device startup process median impact in milliseconds.
 
 ```yaml
 Type: Int32
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MedianImpactInMs2
+User experience analytics device startup process median impact in milliseconds.
+
+```yaml
+Type: Int64
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -170,6 +185,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -TotalImpactInMs2
+User experience analytics device startup process total impact in milliseconds.
+
+```yaml
+Type: Int64
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -224,9 +254,11 @@ BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcessPerform
   - `[Id <String>]`: Read-only.
   - `[DeviceCount <Int64?>]`: User experience analytics device startup process summarized count.
   - `[MedianImpactInMS <Int32?>]`: User experience analytics device startup process median impact in milliseconds.
+  - `[MedianImpactInMs2 <Int64?>]`: User experience analytics device startup process median impact in milliseconds.
   - `[ProcessName <String>]`: User experience analytics device startup process name.
   - `[ProductName <String>]`: The user experience analytics device startup process product name.
   - `[Publisher <String>]`: The User experience analytics device startup process publisher.
   - `[TotalImpactInMS <Int32?>]`: User experience analytics device startup process total impact in milliseconds.
+  - `[TotalImpactInMs2 <Int64?>]`: User experience analytics device startup process total impact in milliseconds.
 
 ## RELATED LINKS

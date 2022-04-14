@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEntitlementManagementAccessPackageAssignmentPolicy
 
 ## SYNOPSIS
-Get accessPackageAssignmentPolicies from identityGovernance
+Represents the policy that governs which subjects can request or be assigned an access package via an access package assignment.
 
 ## SYNTAX
 
@@ -50,9 +50,36 @@ Get-MgEntitlementManagementAccessPackageAssignmentPolicy [-ExpandProperty <Strin
 ```
 
 ## DESCRIPTION
-Get accessPackageAssignmentPolicies from identityGovernance
+Represents the policy that governs which subjects can request or be assigned an access package via an access package assignment.
 
 ## EXAMPLES
+
+### Example 1: Get all access package policy assignment policies
+```powershell
+Connect-MgGraph -Scopes 'EntitlementManagement.ReadWrite.All'
+Get-MgEntitlementManagementAccessPackageAssignmentPolicy | Format-List
+
+AccessPackage           : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackage
+AccessPackageCatalog    : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageCatalog
+AccessPackageId         : b90cbf24-66b9-4cd8-b270-863b6fca641c
+AccessReviewSettings    : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAssignmentReviewSettings
+CanExtend               : False
+CreatedBy               : admin@M365x814237.onmicrosoft.com
+CreatedDateTime         : 9/15/2021 7:23:44 AM
+Description             : Initial Policy
+DisplayName             : Initial Policy
+DurationInDays          : 365
+ExpirationDateTime      :
+Id                      : 138874b9-326b-4e77-826b-6ac08a130938
+ModifiedBy              : admin@M365x814237.onmicrosoft.com
+ModifiedDateTime        : 9/15/2021 7:23:44 AM
+Questions               : {}
+RequestApprovalSettings : Microsoft.Graph.PowerShell.Models.MicrosoftGraphApprovalSettings
+RequestorSettings       : Microsoft.Graph.PowerShell.Models.MicrosoftGraphRequestorSettings
+AdditionalProperties    : {}
+```
+
+This example gets a list of all the access package assignment policies.
 
 ## PARAMETERS
 
@@ -164,7 +191,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentityGovernanceIdentity
@@ -301,9 +328,11 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageResourceScopeId <String>]`: key: id of accessPackageResourceScope
   - `[AccessReviewDecisionId <String>]`: key: id of accessReviewDecision
   - `[AccessReviewHistoryDefinitionId <String>]`: key: id of accessReviewHistoryDefinition
+  - `[AccessReviewHistoryInstanceId <String>]`: key: id of accessReviewHistoryInstance
   - `[AccessReviewId <String>]`: key: id of accessReview
   - `[AccessReviewId1 <String>]`: key: id of accessReview
   - `[AccessReviewInstanceDecisionItemId <String>]`: key: id of accessReviewInstanceDecisionItem
+  - `[AccessReviewInstanceDecisionItemId1 <String>]`: key: id of accessReviewInstanceDecisionItem
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewReviewerId <String>]`: key: id of accessReviewReviewer
   - `[AccessReviewScheduleDefinitionId <String>]`: key: id of accessReviewScheduleDefinition
@@ -318,11 +347,13 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[BusinessFlowTemplateId <String>]`: key: id of businessFlowTemplate
   - `[ConnectedOrganizationId <String>]`: key: id of connectedOrganization
   - `[DirectoryObjectId <String>]`: key: id of directoryObject
+  - `[GovernanceInsightId <String>]`: key: id of governanceInsight
   - `[GovernanceResourceId <String>]`: key: id of governanceResource
   - `[GovernanceRoleAssignmentId <String>]`: key: id of governanceRoleAssignment
   - `[GovernanceRoleAssignmentRequestId <String>]`: key: id of governanceRoleAssignmentRequest
   - `[GovernanceRoleDefinitionId <String>]`: key: id of governanceRoleDefinition
   - `[GovernanceRoleSettingId <String>]`: key: id of governanceRoleSetting
+  - `[GroupId <String>]`: key: id of group
   - `[On <String>]`: Usage: on={on}
   - `[PrivilegedAccessId <String>]`: key: id of privilegedAccess
   - `[PrivilegedApprovalId <String>]`: key: id of privilegedApproval

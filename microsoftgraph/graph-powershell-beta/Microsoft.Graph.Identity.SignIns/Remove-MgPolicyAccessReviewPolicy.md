@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgPolicyAccessReviewPolicy
 
 ## SYNOPSIS
-Delete navigation property accessReviewPolicy for policies
+The policy that contains directory-level access review settings.
 
 ## SYNTAX
 
@@ -17,7 +17,7 @@ Remove-MgPolicyAccessReviewPolicy [-IfMatch <String>] [-PassThru] [-WhatIf] [-Co
 ```
 
 ## DESCRIPTION
-Delete navigation property accessReviewPolicy for policies
+The policy that contains directory-level access review settings.
 
 ## EXAMPLES
 

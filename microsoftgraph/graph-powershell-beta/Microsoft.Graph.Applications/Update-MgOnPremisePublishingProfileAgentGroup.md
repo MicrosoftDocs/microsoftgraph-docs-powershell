@@ -132,7 +132,7 @@ Accept wildcard characters: False
 List of onPremisesAgent that are assigned to an onPremisesAgentGroup.
 Read-only.
 Nullable.
-To construct, see NOTES section for AGENTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for AGENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphOnPremisesAgent[]
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 onPremisesAgentGroup
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphOnPremisesAgentGroup
@@ -194,7 +194,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
@@ -303,7 +303,7 @@ Accept wildcard characters: False
 List of publishedResource that are assigned to an onPremisesAgentGroup.
 Read-only.
 Nullable.
-To construct, see NOTES section for PUBLISHEDRESOURCES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for PUBLISHEDRESOURCES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPublishedResource[]
@@ -431,6 +431,7 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[DirectoryDefinitionId <String>]`: key: id of directoryDefinition
   - `[EndpointId <String>]`: key: id of endpoint
   - `[ExtensionPropertyId <String>]`: key: id of extensionProperty
+  - `[FederatedIdentityCredentialId <String>]`: key: id of federatedIdentityCredential
   - `[GroupId <String>]`: key: id of group
   - `[LicenseDetailsId <String>]`: key: id of licenseDetails
   - `[OnPremisesAgentGroupId <String>]`: key: id of onPremisesAgentGroup

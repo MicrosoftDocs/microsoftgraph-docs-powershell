@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgPolicyTokenIssuancePolicy
 
 ## SYNOPSIS
-Create new navigation property to tokenIssuancePolicies for policies
+The policy that specifies the characteristics of SAML tokens issued by Azure AD.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ New-MgPolicyTokenIssuancePolicy -BodyParameter <Hashtable> [-WhatIf] [-Confirm] 
 ```
 
 ## DESCRIPTION
-Create new navigation property to tokenIssuancePolicies for policies
+The policy that specifies the characteristics of SAML tokens issued by Azure AD.
 
 ## EXAMPLES
 
@@ -49,7 +49,7 @@ Accept wildcard characters: False
 
 ### -AppliesTo
 .
-To construct, see NOTES section for APPLIESTO properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for APPLIESTO properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDirectoryObject[]
@@ -64,8 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-Represents an Azure Active Directory object.
-The directoryObject type is the base type for many other directory entity types.
+tokenIssuancePolicy
 
 ```yaml
 Type: Hashtable
@@ -113,6 +112,7 @@ Accept wildcard characters: False
 
 ### -Description
 Description for this policy.
+Required.
 
 ```yaml
 Type: String
@@ -128,6 +128,7 @@ Accept wildcard characters: False
 
 ### -DisplayName
 Display name for this policy.
+Required.
 
 ```yaml
 Type: String

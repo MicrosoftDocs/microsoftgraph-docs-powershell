@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEntitlementManagementAccessPackageAssignmentRequest
 
 ## SYNOPSIS
-Get accessPackageAssignmentRequests from identityGovernance
+Represents access package assignment requests created by or on behalf of a user.
 
 ## SYNTAX
 
@@ -44,9 +44,56 @@ Get-MgEntitlementManagementAccessPackageAssignmentRequest [-ExpandProperty <Stri
 ```
 
 ## DESCRIPTION
-Get accessPackageAssignmentRequests from identityGovernance
+Represents access package assignment requests created by or on behalf of a user.
 
 ## EXAMPLES
+
+### Example 1: Get all access package assignment requests
+```powershell
+Get-MgEntitlementManagementAccessPackageAssignmentRequest | Format-List
+
+AccessPackage           : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackage
+AccessPackageAssignment : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageAssignment
+Answers                 : {}
+CompletedDate           : 11/8/2021 10:21:35 AM
+CreatedDateTime         : 11/8/2021 7:21:09 AM
+ExpirationDateTime      :
+Id                      : c82bc0cd-4fbc-4492-8c75-54c41dc74803
+IsValidationOnly        : False
+Justification           :
+RequestState            : Delivered
+RequestStatus           : FulfilledNotificationTriggered
+RequestType             : UserAdd
+Requestor               : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageSubject
+Schedule                : Microsoft.Graph.PowerShell.Models.MicrosoftGraphRequestSchedule
+AdditionalProperties    : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageAssignmentRequests/$entity]}
+```
+
+This example retrieves all access package assignment requests.
+
+### Example 2: Get  access package assignment request using the request id
+```powershell
+Connect-MgGraph -Scopes 'EntitlementManagement.ReadWrite.All'
+Get-MgEntitlementManagementAccessPackageAssignmentRequest -AccessPackageAssignmentRequestId 'c82bc0cd-4fbc-4492-8c75-54c41dc74803'| Format-List
+
+AccessPackage           : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackage
+AccessPackageAssignment : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageAssignment
+Answers                 : {}
+CompletedDate           : 11/8/2021 10:21:35 AM
+CreatedDateTime         : 11/8/2021 7:21:09 AM
+ExpirationDateTime      :
+Id                      : c82bc0cd-4fbc-4492-8c75-54c41dc74803
+IsValidationOnly        : False
+Justification           :
+RequestState            : Delivered
+RequestStatus           : FulfilledNotificationTriggered
+RequestType             : UserAdd
+Requestor               : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageSubject
+Schedule                : Microsoft.Graph.PowerShell.Models.MicrosoftGraphRequestSchedule
+AdditionalProperties    : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageAssignmentRequests/$entity]}
+```
+
+This example returns the access package assignment request for the specified id.
 
 ## PARAMETERS
 
@@ -143,7 +190,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentityGovernanceIdentity
@@ -280,9 +327,11 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageResourceScopeId <String>]`: key: id of accessPackageResourceScope
   - `[AccessReviewDecisionId <String>]`: key: id of accessReviewDecision
   - `[AccessReviewHistoryDefinitionId <String>]`: key: id of accessReviewHistoryDefinition
+  - `[AccessReviewHistoryInstanceId <String>]`: key: id of accessReviewHistoryInstance
   - `[AccessReviewId <String>]`: key: id of accessReview
   - `[AccessReviewId1 <String>]`: key: id of accessReview
   - `[AccessReviewInstanceDecisionItemId <String>]`: key: id of accessReviewInstanceDecisionItem
+  - `[AccessReviewInstanceDecisionItemId1 <String>]`: key: id of accessReviewInstanceDecisionItem
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewReviewerId <String>]`: key: id of accessReviewReviewer
   - `[AccessReviewScheduleDefinitionId <String>]`: key: id of accessReviewScheduleDefinition
@@ -297,11 +346,13 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[BusinessFlowTemplateId <String>]`: key: id of businessFlowTemplate
   - `[ConnectedOrganizationId <String>]`: key: id of connectedOrganization
   - `[DirectoryObjectId <String>]`: key: id of directoryObject
+  - `[GovernanceInsightId <String>]`: key: id of governanceInsight
   - `[GovernanceResourceId <String>]`: key: id of governanceResource
   - `[GovernanceRoleAssignmentId <String>]`: key: id of governanceRoleAssignment
   - `[GovernanceRoleAssignmentRequestId <String>]`: key: id of governanceRoleAssignmentRequest
   - `[GovernanceRoleDefinitionId <String>]`: key: id of governanceRoleDefinition
   - `[GovernanceRoleSettingId <String>]`: key: id of governanceRoleSetting
+  - `[GroupId <String>]`: key: id of group
   - `[On <String>]`: Usage: on={on}
   - `[PrivilegedAccessId <String>]`: key: id of privilegedAccess
   - `[PrivilegedApprovalId <String>]`: key: id of privilegedApproval

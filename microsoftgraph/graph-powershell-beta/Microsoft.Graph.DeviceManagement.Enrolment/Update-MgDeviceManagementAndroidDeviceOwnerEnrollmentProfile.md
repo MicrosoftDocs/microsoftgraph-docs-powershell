@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/update-mgdevicemanagementandroiddeviceownerenrollmentprofile
@@ -17,10 +17,11 @@ Android device owner enrollment profile entities.
 Update-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfile -AndroidDeviceOwnerEnrollmentProfileId <String>
  [-AccountId <String>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-EnrolledDeviceCount <Int32>] [-EnrollmentMode <String>]
- [-EnrollmentTokenType <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-QrCodeContent <String>]
- [-QrCodeImage <IMicrosoftGraphMimeContent>] [-RoleScopeTagIds <String[]>] [-TokenCreationDateTime <DateTime>]
- [-TokenExpirationDateTime <DateTime>] [-TokenValue <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-EnrollmentTokenType <String>] [-EnrollmentTokenUsageCount <Int32>] [-Id <String>]
+ [-LastModifiedDateTime <DateTime>] [-QrCodeContent <String>] [-QrCodeImage <IMicrosoftGraphMimeContent>]
+ [-RoleScopeTagIds <String[]>] [-TokenCreationDateTime <DateTime>] [-TokenExpirationDateTime <DateTime>]
+ [-TokenValue <String>] [-WifiHidden] [-WifiPassword <String>] [-WifiSecurityType <String>]
+ [-WifiSsid <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -35,10 +36,11 @@ Update-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfile -AndroidDeviceOwner
 Update-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfile -InputObject <IDeviceManagementEnrolmentIdentity>
  [-AccountId <String>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-EnrolledDeviceCount <Int32>] [-EnrollmentMode <String>]
- [-EnrollmentTokenType <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-QrCodeContent <String>]
- [-QrCodeImage <IMicrosoftGraphMimeContent>] [-RoleScopeTagIds <String[]>] [-TokenCreationDateTime <DateTime>]
- [-TokenExpirationDateTime <DateTime>] [-TokenValue <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-EnrollmentTokenType <String>] [-EnrollmentTokenUsageCount <Int32>] [-Id <String>]
+ [-LastModifiedDateTime <DateTime>] [-QrCodeContent <String>] [-QrCodeImage <IMicrosoftGraphMimeContent>]
+ [-RoleScopeTagIds <String[]>] [-TokenCreationDateTime <DateTime>] [-TokenExpirationDateTime <DateTime>]
+ [-TokenValue <String>] [-WifiHidden] [-WifiPassword <String>] [-WifiSecurityType <String>]
+ [-WifiSsid <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -102,7 +104,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Enrollment Profile used to enroll Android Enterprise devices using Google's Cloud Management.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAndroidDeviceOwnerEnrollmentProfile
@@ -177,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnrollmentMode
-androidDeviceOwnerEnrollmentMode
+The enrollment mode for an enrollment profile.
 
 ```yaml
 Type: String
@@ -192,10 +194,25 @@ Accept wildcard characters: False
 ```
 
 ### -EnrollmentTokenType
-androidDeviceOwnerEnrollmentTokenType
+The enrollment token type for an enrollment profile.
 
 ```yaml
 Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -EnrollmentTokenUsageCount
+Total number of AOSP devices that have enrolled using the current token.
+
+```yaml
+Type: Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -223,7 +240,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementEnrolmentIdentity
@@ -284,7 +301,7 @@ Accept wildcard characters: False
 
 ### -QrCodeImage
 Contains properties for a generic mime content.
-To construct, see NOTES section for QRCODEIMAGE properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for QRCODEIMAGE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMimeContent
@@ -358,6 +375,66 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -WifiHidden
+Boolean that indicates if hidden wifi networks are enabled
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WifiPassword
+String that contains the wi-fi login password
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WifiSecurityType
+This enum represents Wi-Fi Security Types for Android Device Owner AOSP Scenarios.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WifiSsid
+String that contains the wi-fi login ssid
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -416,8 +493,9 @@ BODYPARAMETER <IMicrosoftGraphAndroidDeviceOwnerEnrollmentProfile>: Enrollment P
   - `[Description <String>]`: Description for the enrollment profile.
   - `[DisplayName <String>]`: Display name for the enrollment profile.
   - `[EnrolledDeviceCount <Int32?>]`: Total number of Android devices that have enrolled using this enrollment profile.
-  - `[EnrollmentMode <String>]`: androidDeviceOwnerEnrollmentMode
-  - `[EnrollmentTokenType <String>]`: androidDeviceOwnerEnrollmentTokenType
+  - `[EnrollmentMode <String>]`: The enrollment mode for an enrollment profile.
+  - `[EnrollmentTokenType <String>]`: The enrollment token type for an enrollment profile.
+  - `[EnrollmentTokenUsageCount <Int32?>]`: Total number of AOSP devices that have enrolled using the current token.
   - `[LastModifiedDateTime <DateTime?>]`: Date time the enrollment profile was last modified.
   - `[QrCodeContent <String>]`: String used to generate a QR code for the token.
   - `[QrCodeImage <IMicrosoftGraphMimeContent>]`: Contains properties for a generic mime content.
@@ -428,6 +506,10 @@ BODYPARAMETER <IMicrosoftGraphAndroidDeviceOwnerEnrollmentProfile>: Enrollment P
   - `[TokenCreationDateTime <DateTime?>]`: Date time the most recently created token was created.
   - `[TokenExpirationDateTime <DateTime?>]`: Date time the most recently created token will expire.
   - `[TokenValue <String>]`: Value of the most recently created token for this enrollment profile.
+  - `[WifiHidden <Boolean?>]`: Boolean that indicates if hidden wifi networks are enabled
+  - `[WifiPassword <String>]`: String that contains the wi-fi login password
+  - `[WifiSecurityType <String>]`: This enum represents Wi-Fi Security Types for Android Device Owner AOSP Scenarios.
+  - `[WifiSsid <String>]`: String that contains the wi-fi login ssid
 
 INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
@@ -468,7 +550,6 @@ INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[WindowsAutopilotDeviceIdentityId <String>]`: key: id of windowsAutopilotDeviceIdentity
   - `[WindowsFeatureUpdateProfileAssignmentId <String>]`: key: id of windowsFeatureUpdateProfileAssignment
   - `[WindowsFeatureUpdateProfileId <String>]`: key: id of windowsFeatureUpdateProfile
-  - `[WindowsUpdateStateId <String>]`: key: id of windowsUpdateState
 
 QRCODEIMAGE <IMicrosoftGraphMimeContent>: Contains properties for a generic mime content.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

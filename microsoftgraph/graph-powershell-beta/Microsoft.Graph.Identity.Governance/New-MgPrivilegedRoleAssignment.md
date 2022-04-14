@@ -49,7 +49,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 privilegedRoleAssignment
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPrivilegedRoleAssignment
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 
 ### -RoleInfo
 privilegedRole
-To construct, see NOTES section for ROLEINFO properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ROLEINFO properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPrivilegedRole

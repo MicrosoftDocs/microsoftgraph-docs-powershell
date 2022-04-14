@@ -72,7 +72,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 educationSynchronizationProfile
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEducationSynchronizationProfile
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 
 ### -Errors
 All errors associated with this synchronization profile.
-To construct, see NOTES section for ERRORS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ERRORS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEducationSynchronizationError[]
@@ -212,7 +212,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IEducationIdentity
@@ -228,7 +228,7 @@ Accept wildcard characters: False
 
 ### -LicensesToAssign
 License setup configuration.
-To construct, see NOTES section for LICENSESTOASSIGN properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for LICENSESTOASSIGN properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEducationSynchronizationLicenseAssignment[]
@@ -259,7 +259,7 @@ Accept wildcard characters: False
 
 ### -ProfileStatus
 educationSynchronizationProfileStatus
-To construct, see NOTES section for PROFILESTATUS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for PROFILESTATUS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEducationSynchronizationProfileStatus
@@ -362,9 +362,11 @@ BODYPARAMETER <IMicrosoftGraphEducationSynchronizationProfile>: educationSynchro
   - `[ProfileStatus <IMicrosoftGraphEducationSynchronizationProfileStatus>]`: educationSynchronizationProfileStatus
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: Read-only.
-    - `[LastActivityDateTime <DateTime?>]`: 
-    - `[LastSynchronizationDateTime <DateTime?>]`: Represents the time when most recent changes have been observed in the directory.
+    - `[ErrorCount <Int64?>]`: Number of errors during synchronization.
+    - `[LastActivityDateTime <DateTime?>]`: Represents the time when most recent changes were observed in profile.
+    - `[LastSynchronizationDateTime <DateTime?>]`: Represents the time of the most recent successful  synchronization.
     - `[Status <String>]`: educationSynchronizationStatus
+    - `[StatusMessage <String>]`: Status message for the current profile's synchronization stage.
   - `[State <String>]`: educationSynchronizationProfileState
 
 ERRORS <IMicrosoftGraphEducationSynchronizationError[]>: All errors associated with this synchronization profile.
@@ -397,8 +399,10 @@ LICENSESTOASSIGN <IMicrosoftGraphEducationSynchronizationLicenseAssignment[]>: L
 PROFILESTATUS <IMicrosoftGraphEducationSynchronizationProfileStatus>: educationSynchronizationProfileStatus
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
-  - `[LastActivityDateTime <DateTime?>]`: 
-  - `[LastSynchronizationDateTime <DateTime?>]`: Represents the time when most recent changes have been observed in the directory.
+  - `[ErrorCount <Int64?>]`: Number of errors during synchronization.
+  - `[LastActivityDateTime <DateTime?>]`: Represents the time when most recent changes were observed in profile.
+  - `[LastSynchronizationDateTime <DateTime?>]`: Represents the time of the most recent successful  synchronization.
   - `[Status <String>]`: educationSynchronizationStatus
+  - `[StatusMessage <String>]`: Status message for the current profile's synchronization stage.
 
 ## RELATED LINKS

@@ -15,13 +15,13 @@ The list of detected apps associated with a device.
 ### CreateExpanded1 (Default)
 ```
 New-MgDeviceManagementDetectedApp [-AdditionalProperties <Hashtable>] [-DeviceCount <Int32>]
- [-DisplayName <String>] [-Id <String>] [-ManagedDevices <IMicrosoftGraphManagedDevice1[]>]
+ [-DisplayName <String>] [-Id <String>] [-ManagedDevices <IMicrosoftGraphManagedDevice[]>]
  [-SizeInByte <Int64>] [-Version <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgDeviceManagementDetectedApp -BodyParameter <IMicrosoftGraphDetectedApp1> [-WhatIf] [-Confirm]
+New-MgDeviceManagementDetectedApp -BodyParameter <IMicrosoftGraphDetectedApp> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -50,10 +50,10 @@ Accept wildcard characters: False
 ### -BodyParameter
 A managed or unmanaged app that is installed on a managed device.
 Unmanaged apps will only appear for devices marked as corporate owned.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDetectedApp1
+Type: IMicrosoftGraphDetectedApp
 Parameter Sets: Create1
 Aliases:
 
@@ -112,10 +112,10 @@ Accept wildcard characters: False
 
 ### -ManagedDevices
 The devices that have the discovered application installed
-To construct, see NOTES section for MANAGEDDEVICES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for MANAGEDDEVICES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedDevice1[]
+Type: IMicrosoftGraphManagedDevice[]
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -194,10 +194,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDetectedApp1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDetectedApp
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDetectedApp1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDetectedApp
 ## NOTES
 
 ALIASES
@@ -207,19 +207,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphDetectedApp1>: A managed or unmanaged app that is installed on a managed device. Unmanaged apps will only appear for devices marked as corporate owned.
+BODYPARAMETER <IMicrosoftGraphDetectedApp>: A managed or unmanaged app that is installed on a managed device. Unmanaged apps will only appear for devices marked as corporate owned.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
   - `[DeviceCount <Int32?>]`: The number of devices that have installed this application
   - `[DisplayName <String>]`: Name of the discovered application. Read-only
-  - `[ManagedDevices <IMicrosoftGraphManagedDevice1[]>]`: The devices that have the discovered application installed
+  - `[ManagedDevices <IMicrosoftGraphManagedDevice[]>]`: The devices that have the discovered application installed
     - `[Id <String>]`: Read-only.
     - `[ActivationLockBypassCode <String>]`: Code that allows the Activation Lock on a device to be bypassed. This property is read-only.
     - `[AndroidSecurityPatchLevel <String>]`: Android security patch level. This property is read-only.
     - `[AzureAdDeviceId <String>]`: The unique identifier for the Azure Active Directory device. Read only. This property is read-only.
     - `[AzureAdRegistered <Boolean?>]`: Whether the device is Azure Active Directory registered. This property is read-only.
     - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires. This property is read-only.
-    - `[ComplianceState <String>]`: complianceState
+    - `[ComplianceState <String>]`: Compliance state.
     - `[ConfigurationManagerClientEnabledFeatures <IMicrosoftGraphConfigurationManagerClientEnabledFeatures>]`: configuration Manager client enabled features
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CompliancePolicy <Boolean?>]`: Whether compliance policy is managed by Intune
@@ -230,7 +230,7 @@ BODYPARAMETER <IMicrosoftGraphDetectedApp1>: A managed or unmanaged app that is 
       - `[WindowsUpdateForBusiness <Boolean?>]`: Whether Windows Update for Business is managed by Intune
     - `[DeviceActionResults <IMicrosoftGraphDeviceActionResult[]>]`: List of ComplexType deviceActionResult objects. This property is read-only.
       - `[ActionName <String>]`: Action name
-      - `[ActionState <String>]`: actionState
+      - `[ActionState <String>]`: State of the action on the device
       - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
       - `[StartDateTime <DateTime?>]`: Time the action was initiated
     - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
@@ -242,7 +242,7 @@ BODYPARAMETER <IMicrosoftGraphDetectedApp1>: A managed or unmanaged app that is 
     - `[DeviceCompliancePolicyStates <IMicrosoftGraphDeviceCompliancePolicyState[]>]`: Device compliance policy states for this device.
       - `[Id <String>]`: Read-only.
       - `[DisplayName <String>]`: The name of the policy for this policyBase
-      - `[PlatformType <String>]`: 
+      - `[PlatformType <String>]`: Supported platform types for policies.
       - `[SettingCount <Int32?>]`: Count of how many setting a policy holds
       - `[SettingStates <IMicrosoftGraphDeviceCompliancePolicySettingState[]>]`: 
         - `[CurrentValue <String>]`: Current value of setting on device
@@ -254,6 +254,7 @@ BODYPARAMETER <IMicrosoftGraphDetectedApp1>: A managed or unmanaged app that is 
         - `[Sources <IMicrosoftGraphSettingSource[]>]`: Contributing policies
           - `[DisplayName <String>]`: Not yet documented
           - `[Id <String>]`: Not yet documented
+          - `[SourceType <String>]`: settingSourceType
         - `[State <String>]`: complianceStatus
         - `[UserEmail <String>]`: UserEmail
         - `[UserId <String>]`: UserId
@@ -264,7 +265,7 @@ BODYPARAMETER <IMicrosoftGraphDetectedApp1>: A managed or unmanaged app that is 
     - `[DeviceConfigurationStates <IMicrosoftGraphDeviceConfigurationState[]>]`: Device configuration states for this device.
       - `[Id <String>]`: Read-only.
       - `[DisplayName <String>]`: The name of the policy for this policyBase
-      - `[PlatformType <String>]`: 
+      - `[PlatformType <String>]`: Supported platform types for policies.
       - `[SettingCount <Int32?>]`: Count of how many setting a policy holds
       - `[SettingStates <IMicrosoftGraphDeviceConfigurationSettingState[]>]`: 
         - `[CurrentValue <String>]`: Current value of setting on device
@@ -281,7 +282,7 @@ BODYPARAMETER <IMicrosoftGraphDetectedApp1>: A managed or unmanaged app that is 
         - `[UserPrincipalName <String>]`: UserPrincipalName.
       - `[State <String>]`: complianceStatus
       - `[Version <Int32?>]`: The version of the policy
-    - `[DeviceEnrollmentType <String>]`: 
+    - `[DeviceEnrollmentType <String>]`: Possible ways of adding a mobile device to management.
     - `[DeviceHealthAttestationState <IMicrosoftGraphDeviceHealthAttestationState>]`: deviceHealthAttestationState
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AttestationIdentityKey <String>]`: TWhen an Attestation Identity Key (AIK) is present on a device, it indicates that the device has an endorsement key (EK) certificate.
@@ -317,15 +318,15 @@ BODYPARAMETER <IMicrosoftGraphDetectedApp1>: A managed or unmanaged app that is 
       - `[VirtualSecureMode <String>]`: VSM is a container that protects high value assets from a compromised kernel
       - `[WindowsPe <String>]`: Operating system running with limited services that is used to prepare a computer for Windows
     - `[DeviceName <String>]`: Name of the device. This property is read-only.
-    - `[DeviceRegistrationState <String>]`: deviceRegistrationState
+    - `[DeviceRegistrationState <String>]`: Device registration status.
     - `[EasActivated <Boolean?>]`: Whether the device is Exchange ActiveSync activated. This property is read-only.
     - `[EasActivationDateTime <DateTime?>]`: Exchange ActivationSync activation time of the device. This property is read-only.
     - `[EasDeviceId <String>]`: Exchange ActiveSync Id of the device. This property is read-only.
     - `[EmailAddress <String>]`: Email(s) for the user associated with the device. This property is read-only.
     - `[EnrolledDateTime <DateTime?>]`: Enrollment time of the device. This property is read-only.
     - `[EthernetMacAddress <String>]`: Ethernet MAC. This property is read-only.
-    - `[ExchangeAccessState <String>]`: deviceManagementExchangeAccessState
-    - `[ExchangeAccessStateReason <String>]`: deviceManagementExchangeAccessStateReason
+    - `[ExchangeAccessState <String>]`: Device Exchange Access State.
+    - `[ExchangeAccessStateReason <String>]`: Device Exchange Access State Reason.
     - `[ExchangeLastSuccessfulSyncDateTime <DateTime?>]`: Last time the device contacted Exchange. This property is read-only.
     - `[FreeStorageSpaceInBytes <Int64?>]`: Free Storage in Bytes. This property is read-only.
     - `[Iccid <String>]`: Integrated Circuit Card Identifier, it is A SIM card's unique identification number. This property is read-only.
@@ -335,15 +336,15 @@ BODYPARAMETER <IMicrosoftGraphDetectedApp1>: A managed or unmanaged app that is 
     - `[JailBroken <String>]`: whether the device is jail broken or rooted. This property is read-only.
     - `[LastSyncDateTime <DateTime?>]`: The date and time that the device last completed a successful sync with Intune. This property is read-only.
     - `[ManagedDeviceName <String>]`: Automatically generated name to identify a device. Can be overwritten to a user friendly name.
-    - `[ManagedDeviceOwnerType <String>]`: managedDeviceOwnerType
-    - `[ManagementAgent <String>]`: 
+    - `[ManagedDeviceOwnerType <String>]`: Owner type of device.
+    - `[ManagementAgent <String>]`: Management agent type.
     - `[Manufacturer <String>]`: Manufacturer of the device. This property is read-only.
     - `[Meid <String>]`: MEID. This property is read-only.
     - `[Model <String>]`: Model of the device. This property is read-only.
     - `[Notes <String>]`: Notes on the device created by IT Admin
     - `[OSVersion <String>]`: Operating system version of the device. This property is read-only.
     - `[OperatingSystem <String>]`: Operating system of the device. Windows, iOS, etc. This property is read-only.
-    - `[PartnerReportedThreatState <String>]`: managedDevicePartnerReportedHealthState
+    - `[PartnerReportedThreatState <String>]`: Available health states for the Device Health API
     - `[PhoneNumber <String>]`: Phone number of the device. This property is read-only.
     - `[PhysicalMemoryInBytes <Int64?>]`: Total Memory in Bytes. This property is read-only.
     - `[RemoteAssistanceSessionErrorDetails <String>]`: An error string that identifies issues when creating Remote Assistance session objects. This property is read-only.
@@ -359,14 +360,14 @@ BODYPARAMETER <IMicrosoftGraphDetectedApp1>: A managed or unmanaged app that is 
   - `[SizeInByte <Int64?>]`: Discovered application size in bytes. Read-only
   - `[Version <String>]`: Version of the discovered application. Read-only
 
-MANAGEDDEVICES <IMicrosoftGraphManagedDevice1[]>: The devices that have the discovered application installed
+MANAGEDDEVICES <IMicrosoftGraphManagedDevice[]>: The devices that have the discovered application installed
   - `[Id <String>]`: Read-only.
   - `[ActivationLockBypassCode <String>]`: Code that allows the Activation Lock on a device to be bypassed. This property is read-only.
   - `[AndroidSecurityPatchLevel <String>]`: Android security patch level. This property is read-only.
   - `[AzureAdDeviceId <String>]`: The unique identifier for the Azure Active Directory device. Read only. This property is read-only.
   - `[AzureAdRegistered <Boolean?>]`: Whether the device is Azure Active Directory registered. This property is read-only.
   - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires. This property is read-only.
-  - `[ComplianceState <String>]`: complianceState
+  - `[ComplianceState <String>]`: Compliance state.
   - `[ConfigurationManagerClientEnabledFeatures <IMicrosoftGraphConfigurationManagerClientEnabledFeatures>]`: configuration Manager client enabled features
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CompliancePolicy <Boolean?>]`: Whether compliance policy is managed by Intune
@@ -377,7 +378,7 @@ MANAGEDDEVICES <IMicrosoftGraphManagedDevice1[]>: The devices that have the disc
     - `[WindowsUpdateForBusiness <Boolean?>]`: Whether Windows Update for Business is managed by Intune
   - `[DeviceActionResults <IMicrosoftGraphDeviceActionResult[]>]`: List of ComplexType deviceActionResult objects. This property is read-only.
     - `[ActionName <String>]`: Action name
-    - `[ActionState <String>]`: actionState
+    - `[ActionState <String>]`: State of the action on the device
     - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
     - `[StartDateTime <DateTime?>]`: Time the action was initiated
   - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
@@ -389,7 +390,7 @@ MANAGEDDEVICES <IMicrosoftGraphManagedDevice1[]>: The devices that have the disc
   - `[DeviceCompliancePolicyStates <IMicrosoftGraphDeviceCompliancePolicyState[]>]`: Device compliance policy states for this device.
     - `[Id <String>]`: Read-only.
     - `[DisplayName <String>]`: The name of the policy for this policyBase
-    - `[PlatformType <String>]`: 
+    - `[PlatformType <String>]`: Supported platform types for policies.
     - `[SettingCount <Int32?>]`: Count of how many setting a policy holds
     - `[SettingStates <IMicrosoftGraphDeviceCompliancePolicySettingState[]>]`: 
       - `[CurrentValue <String>]`: Current value of setting on device
@@ -401,6 +402,7 @@ MANAGEDDEVICES <IMicrosoftGraphManagedDevice1[]>: The devices that have the disc
       - `[Sources <IMicrosoftGraphSettingSource[]>]`: Contributing policies
         - `[DisplayName <String>]`: Not yet documented
         - `[Id <String>]`: Not yet documented
+        - `[SourceType <String>]`: settingSourceType
       - `[State <String>]`: complianceStatus
       - `[UserEmail <String>]`: UserEmail
       - `[UserId <String>]`: UserId
@@ -411,7 +413,7 @@ MANAGEDDEVICES <IMicrosoftGraphManagedDevice1[]>: The devices that have the disc
   - `[DeviceConfigurationStates <IMicrosoftGraphDeviceConfigurationState[]>]`: Device configuration states for this device.
     - `[Id <String>]`: Read-only.
     - `[DisplayName <String>]`: The name of the policy for this policyBase
-    - `[PlatformType <String>]`: 
+    - `[PlatformType <String>]`: Supported platform types for policies.
     - `[SettingCount <Int32?>]`: Count of how many setting a policy holds
     - `[SettingStates <IMicrosoftGraphDeviceConfigurationSettingState[]>]`: 
       - `[CurrentValue <String>]`: Current value of setting on device
@@ -428,7 +430,7 @@ MANAGEDDEVICES <IMicrosoftGraphManagedDevice1[]>: The devices that have the disc
       - `[UserPrincipalName <String>]`: UserPrincipalName.
     - `[State <String>]`: complianceStatus
     - `[Version <Int32?>]`: The version of the policy
-  - `[DeviceEnrollmentType <String>]`: 
+  - `[DeviceEnrollmentType <String>]`: Possible ways of adding a mobile device to management.
   - `[DeviceHealthAttestationState <IMicrosoftGraphDeviceHealthAttestationState>]`: deviceHealthAttestationState
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AttestationIdentityKey <String>]`: TWhen an Attestation Identity Key (AIK) is present on a device, it indicates that the device has an endorsement key (EK) certificate.
@@ -464,15 +466,15 @@ MANAGEDDEVICES <IMicrosoftGraphManagedDevice1[]>: The devices that have the disc
     - `[VirtualSecureMode <String>]`: VSM is a container that protects high value assets from a compromised kernel
     - `[WindowsPe <String>]`: Operating system running with limited services that is used to prepare a computer for Windows
   - `[DeviceName <String>]`: Name of the device. This property is read-only.
-  - `[DeviceRegistrationState <String>]`: deviceRegistrationState
+  - `[DeviceRegistrationState <String>]`: Device registration status.
   - `[EasActivated <Boolean?>]`: Whether the device is Exchange ActiveSync activated. This property is read-only.
   - `[EasActivationDateTime <DateTime?>]`: Exchange ActivationSync activation time of the device. This property is read-only.
   - `[EasDeviceId <String>]`: Exchange ActiveSync Id of the device. This property is read-only.
   - `[EmailAddress <String>]`: Email(s) for the user associated with the device. This property is read-only.
   - `[EnrolledDateTime <DateTime?>]`: Enrollment time of the device. This property is read-only.
   - `[EthernetMacAddress <String>]`: Ethernet MAC. This property is read-only.
-  - `[ExchangeAccessState <String>]`: deviceManagementExchangeAccessState
-  - `[ExchangeAccessStateReason <String>]`: deviceManagementExchangeAccessStateReason
+  - `[ExchangeAccessState <String>]`: Device Exchange Access State.
+  - `[ExchangeAccessStateReason <String>]`: Device Exchange Access State Reason.
   - `[ExchangeLastSuccessfulSyncDateTime <DateTime?>]`: Last time the device contacted Exchange. This property is read-only.
   - `[FreeStorageSpaceInBytes <Int64?>]`: Free Storage in Bytes. This property is read-only.
   - `[Iccid <String>]`: Integrated Circuit Card Identifier, it is A SIM card's unique identification number. This property is read-only.
@@ -482,15 +484,15 @@ MANAGEDDEVICES <IMicrosoftGraphManagedDevice1[]>: The devices that have the disc
   - `[JailBroken <String>]`: whether the device is jail broken or rooted. This property is read-only.
   - `[LastSyncDateTime <DateTime?>]`: The date and time that the device last completed a successful sync with Intune. This property is read-only.
   - `[ManagedDeviceName <String>]`: Automatically generated name to identify a device. Can be overwritten to a user friendly name.
-  - `[ManagedDeviceOwnerType <String>]`: managedDeviceOwnerType
-  - `[ManagementAgent <String>]`: 
+  - `[ManagedDeviceOwnerType <String>]`: Owner type of device.
+  - `[ManagementAgent <String>]`: Management agent type.
   - `[Manufacturer <String>]`: Manufacturer of the device. This property is read-only.
   - `[Meid <String>]`: MEID. This property is read-only.
   - `[Model <String>]`: Model of the device. This property is read-only.
   - `[Notes <String>]`: Notes on the device created by IT Admin
   - `[OSVersion <String>]`: Operating system version of the device. This property is read-only.
   - `[OperatingSystem <String>]`: Operating system of the device. Windows, iOS, etc. This property is read-only.
-  - `[PartnerReportedThreatState <String>]`: managedDevicePartnerReportedHealthState
+  - `[PartnerReportedThreatState <String>]`: Available health states for the Device Health API
   - `[PhoneNumber <String>]`: Phone number of the device. This property is read-only.
   - `[PhysicalMemoryInBytes <Int64?>]`: Total Memory in Bytes. This property is read-only.
   - `[RemoteAssistanceSessionErrorDetails <String>]`: An error string that identifies issues when creating Remote Assistance session objects. This property is read-only.

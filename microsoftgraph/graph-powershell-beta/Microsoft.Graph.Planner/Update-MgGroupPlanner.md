@@ -8,9 +8,7 @@ schema: 2.0.0
 # Update-MgGroupPlanner
 
 ## SYNOPSIS
-Selective Planner services available to the group.
-Read-only.
-Nullable.
+Entry-point to Planner resource that might exist for a Unified Group.
 
 ## SYNTAX
 
@@ -39,9 +37,7 @@ Update-MgGroupPlanner -InputObject <IPlannerIdentity> -BodyParameter <IMicrosoft
 ```
 
 ## DESCRIPTION
-Selective Planner services available to the group.
-Read-only.
-Nullable.
+Entry-point to Planner resource that might exist for a Unified Group.
 
 ## EXAMPLES
 
@@ -64,7 +60,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 plannerGroup
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPlannerGroup
@@ -110,7 +106,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IPlannerIdentity
@@ -143,7 +139,7 @@ Accept wildcard characters: False
 Read-only.
 Nullable.
 Returns the plannerPlans owned by the group.
-To construct, see NOTES section for PLANS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for PLANS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPlannerPlan1[]
@@ -212,7 +208,7 @@ BODYPARAMETER <IMicrosoftGraphPlannerGroup>: plannerGroup
   - `[Id <String>]`: Read-only.
   - `[Plans <IMicrosoftGraphPlannerPlan1[]>]`: Read-only. Nullable. Returns the plannerPlans owned by the group.
     - `[Id <String>]`: Read-only.
-    - `[Buckets <IMicrosoftGraphPlannerBucket1[]>]`: Collection of buckets in the plan. Read-only. Nullable.
+    - `[Buckets <IMicrosoftGraphPlannerBucket1[]>]`: Read-only. Nullable. Collection of buckets in the plan.
       - `[Id <String>]`: Read-only.
       - `[Name <String>]`: Name of the bucket.
       - `[OrderHint <String>]`: Hint used to order items of this type in a list view. The format is defined as outlined here.
@@ -325,7 +321,7 @@ BODYPARAMETER <IMicrosoftGraphPlannerGroup>: plannerGroup
       - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Owner <String>]`: ID of the Group that owns the plan. A valid group must exist before this field can be set. After it is set, this property can't be updated.
-    - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Collection of tasks in the plan. Read-only. Nullable.
+    - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Read-only. Nullable. Collection of tasks in the plan.
     - `[Title <String>]`: Required. Title of the plan.
 
 INPUTOBJECT <IPlannerIdentity>: Identity Parameter
@@ -340,7 +336,7 @@ INPUTOBJECT <IPlannerIdentity>: Identity Parameter
 
 PLANS <IMicrosoftGraphPlannerPlan1[]>: Read-only. Nullable. Returns the plannerPlans owned by the group.
   - `[Id <String>]`: Read-only.
-  - `[Buckets <IMicrosoftGraphPlannerBucket1[]>]`: Collection of buckets in the plan. Read-only. Nullable.
+  - `[Buckets <IMicrosoftGraphPlannerBucket1[]>]`: Read-only. Nullable. Collection of buckets in the plan.
     - `[Id <String>]`: Read-only.
     - `[Name <String>]`: Name of the bucket.
     - `[OrderHint <String>]`: Hint used to order items of this type in a list view. The format is defined as outlined here.
@@ -453,7 +449,7 @@ PLANS <IMicrosoftGraphPlannerPlan1[]>: Read-only. Nullable. Returns the plannerP
     - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Owner <String>]`: ID of the Group that owns the plan. A valid group must exist before this field can be set. After it is set, this property can't be updated.
-  - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Collection of tasks in the plan. Read-only. Nullable.
+  - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Read-only. Nullable. Collection of tasks in the plan.
   - `[Title <String>]`: Required. Title of the plan.
 
 ## RELATED LINKS

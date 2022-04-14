@@ -48,7 +48,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Entity which represents an OnPrem Ndes connector.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphNdesConnector
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 ```
 
 ### -State
-ndesConnectorState
+The current status of the Ndes Connector.
 
 ```yaml
 Type: String
@@ -176,6 +176,6 @@ BODYPARAMETER <IMicrosoftGraphNdesConnector>: Entity which represents an OnPrem 
   - `[Id <String>]`: Read-only.
   - `[DisplayName <String>]`: The friendly name of the Ndes Connector.
   - `[LastConnectionDateTime <DateTime?>]`: Last connection time for the Ndes Connector
-  - `[State <String>]`: ndesConnectorState
+  - `[State <String>]`: The current status of the Ndes Connector.
 
 ## RELATED LINKS

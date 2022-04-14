@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgTeamworkWorkforceIntegration
 
 ## SYNOPSIS
-Create new navigation property to workforceIntegrations for teamwork
+A workforce integration with shifts.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ New-MgTeamworkWorkforceIntegration -BodyParameter <IMicrosoftGraphWorkforceInteg
 ```
 
 ## DESCRIPTION
-Create new navigation property to workforceIntegrations for teamwork
+A workforce integration with shifts.
 
 ## EXAMPLES
 
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 workforceIntegration
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphWorkforceIntegration1
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 
 ### -Encryption
 workforceIntegrationEncryption
-To construct, see NOTES section for ENCRYPTION properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ENCRYPTION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphWorkforceIntegrationEncryption
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 
 ### -LastModifiedBy
 identitySet
-To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet

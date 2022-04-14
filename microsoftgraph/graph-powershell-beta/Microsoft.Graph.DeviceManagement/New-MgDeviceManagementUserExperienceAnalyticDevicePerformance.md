@@ -19,7 +19,8 @@ New-MgDeviceManagementUserExperienceAnalyticDevicePerformance [-AdditionalProper
  [-CoreBootTimeInMS <Int32>] [-CoreLoginTimeInMS <Int32>] [-DeviceCount <Int64>] [-DeviceName <String>]
  [-DiskType <String>] [-GroupPolicyBootTimeInMS <Int32>] [-GroupPolicyLoginTimeInMS <Int32>]
  [-HealthStatus <String>] [-Id <String>] [-LoginScore <Int32>] [-Manufacturer <String>] [-Model <String>]
- [-OperatingSystemVersion <String>] [-ResponsiveDesktopTimeInMS <Int32>] [-RestartCount <Int32>] [-WhatIf]
+ [-ModelStartupPerformanceScore <Double>] [-OperatingSystemVersion <String>]
+ [-ResponsiveDesktopTimeInMS <Int32>] [-RestartCount <Int32>] [-StartupPerformanceScore <Double>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -102,7 +103,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analytics device performance entity contains device boot performance details.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsDevicePerformance
@@ -311,6 +312,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ModelStartupPerformanceScore
+The user experience analytics model level startup performance score.
+Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+
+```yaml
+Type: Double
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -OperatingSystemVersion
 The user experience analytics device Operating System version.
 
@@ -347,6 +364,22 @@ Valid values 0 to 9999999
 
 ```yaml
 Type: Int32
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -StartupPerformanceScore
+The user experience analytics device startup performance score.
+Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+
+```yaml
+Type: Double
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -424,8 +457,10 @@ BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsDevicePerformance>: The use
   - `[LoginScore <Int32?>]`: The user experience analytics device login score.
   - `[Manufacturer <String>]`: The user experience analytics device manufacturer.
   - `[Model <String>]`: The user experience analytics device model.
+  - `[ModelStartupPerformanceScore <Double?>]`: The user experience analytics model level startup performance score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
   - `[OperatingSystemVersion <String>]`: The user experience analytics device Operating System version.
   - `[ResponsiveDesktopTimeInMS <Int32?>]`: The user experience analytics responsive desktop time in milliseconds.
   - `[RestartCount <Int32?>]`: Number of Restarts in the last 14 days. Valid values 0 to 9999999
+  - `[StartupPerformanceScore <Double?>]`: The user experience analytics device startup performance score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ## RELATED LINKS

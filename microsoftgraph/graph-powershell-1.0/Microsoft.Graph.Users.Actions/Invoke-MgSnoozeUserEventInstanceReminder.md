@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgsnoozeusereventinstancereminder
@@ -12,28 +12,28 @@ Invoke action snoozeReminder
 
 ## SYNTAX
 
-### SnoozeExpanded (Default)
+### SnoozeExpanded1 (Default)
 ```
 Invoke-MgSnoozeUserEventInstanceReminder -EventId <String> -EventId1 <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-NewReminderTime <IMicrosoftGraphDateTimeZone>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### Snooze
+### Snooze1
 ```
 Invoke-MgSnoozeUserEventInstanceReminder -EventId <String> -EventId1 <String> -UserId <String>
  -BodyParameter <IPaths42Qvm9UsersUserIdEventsEventIdInstancesEventId1MicrosoftGraphSnoozereminderPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SnoozeViaIdentityExpanded
+### SnoozeViaIdentityExpanded1
 ```
 Invoke-MgSnoozeUserEventInstanceReminder -InputObject <IUsersActionsIdentity>
  [-AdditionalProperties <Hashtable>] [-NewReminderTime <IMicrosoftGraphDateTimeZone>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### SnoozeViaIdentity
+### SnoozeViaIdentity1
 ```
 Invoke-MgSnoozeUserEventInstanceReminder -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths42Qvm9UsersUserIdEventsEventIdInstancesEventId1MicrosoftGraphSnoozereminderPostRequestbodyContentApplicationJsonSchema>
@@ -52,7 +52,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: SnoozeExpanded, SnoozeViaIdentityExpanded
+Parameter Sets: SnoozeExpanded1, SnoozeViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -64,11 +64,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths42Qvm9UsersUserIdEventsEventIdInstancesEventId1MicrosoftGraphSnoozereminderPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Snooze, SnoozeViaIdentity
+Parameter Sets: Snooze1, SnoozeViaIdentity1
 Aliases:
 
 Required: True
@@ -83,7 +83,7 @@ key: id of event
 
 ```yaml
 Type: String
-Parameter Sets: SnoozeExpanded, Snooze
+Parameter Sets: SnoozeExpanded1, Snooze1
 Aliases:
 
 Required: True
@@ -98,7 +98,7 @@ key: id of event
 
 ```yaml
 Type: String
-Parameter Sets: SnoozeExpanded, Snooze
+Parameter Sets: SnoozeExpanded1, Snooze1
 Aliases:
 
 Required: True
@@ -110,11 +110,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: SnoozeViaIdentityExpanded, SnoozeViaIdentity
+Parameter Sets: SnoozeViaIdentityExpanded1, SnoozeViaIdentity1
 Aliases:
 
 Required: True
@@ -126,11 +126,11 @@ Accept wildcard characters: False
 
 ### -NewReminderTime
 dateTimeTimeZone
-To construct, see NOTES section for NEWREMINDERTIME properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for NEWREMINDERTIME properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDateTimeZone
-Parameter Sets: SnoozeExpanded, SnoozeViaIdentityExpanded
+Parameter Sets: SnoozeExpanded1, SnoozeViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -160,7 +160,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: SnoozeExpanded, Snooze
+Parameter Sets: SnoozeExpanded1, Snooze1
 Aliases:
 
 Required: True
@@ -228,9 +228,12 @@ BODYPARAMETER <IPaths42Qvm9UsersUserIdEventsEventIdInstancesEventId1MicrosoftGra
     - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
 
 INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
+  - `[AccessReviewInstanceDecisionItemId <String>]`: key: id of accessReviewInstanceDecisionItem
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
   - `[AuthenticationMethodId <String>]`: key: id of authenticationMethod
+  - `[BaseTaskId <String>]`: key: id of baseTask
+  - `[BaseTaskListId <String>]`: key: id of baseTaskList
   - `[CalendarId <String>]`: key: id of calendar
   - `[DeviceEnrollmentConfigurationId <String>]`: key: id of deviceEnrollmentConfiguration
   - `[DeviceLogCollectionResponseId <String>]`: key: id of deviceLogCollectionResponse

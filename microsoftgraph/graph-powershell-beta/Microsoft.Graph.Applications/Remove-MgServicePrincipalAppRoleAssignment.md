@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 App role assignment for another app or service, granted to this service principal.
+Supports $expand.
 
 ## SYNTAX
 
@@ -26,8 +27,16 @@ Remove-MgServicePrincipalAppRoleAssignment -InputObject <IApplicationsIdentity> 
 
 ## DESCRIPTION
 App role assignment for another app or service, granted to this service principal.
+Supports $expand.
 
 ## EXAMPLES
+
+### Example 1: Remove the application role assignment for a service principal
+```powershell
+Remove-MgServicePrincipalAppRoleAssignment -AppRoleAssignmentId  'PRLbC6e4yUyMwr0XutBvYZsr7FiAW3pIqP4F9944yBc' -ServicePrincipalId '0bdb123d-b8a7-4cc9-8cc2-bd17bad06f61'
+```
+
+This example removed the assignment of the specified service principal to the specified application role id.
 
 ## PARAMETERS
 
@@ -63,7 +72,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
@@ -166,6 +175,7 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[DirectoryDefinitionId <String>]`: key: id of directoryDefinition
   - `[EndpointId <String>]`: key: id of endpoint
   - `[ExtensionPropertyId <String>]`: key: id of extensionProperty
+  - `[FederatedIdentityCredentialId <String>]`: key: id of federatedIdentityCredential
   - `[GroupId <String>]`: key: id of group
   - `[LicenseDetailsId <String>]`: key: id of licenseDetails
   - `[OnPremisesAgentGroupId <String>]`: key: id of onPremisesAgentGroup

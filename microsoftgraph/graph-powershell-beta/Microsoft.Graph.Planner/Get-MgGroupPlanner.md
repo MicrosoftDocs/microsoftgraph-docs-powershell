@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgGroupPlanner
 
 ## SYNOPSIS
-Selective Planner services available to the group.
-Read-only.
-Nullable.
+Entry-point to Planner resource that might exist for a Unified Group.
 
 ## SYNTAX
 
@@ -26,9 +24,7 @@ Get-MgGroupPlanner -InputObject <IPlannerIdentity> [-ExpandProperty <String[]>] 
 ```
 
 ## DESCRIPTION
-Selective Planner services available to the group.
-Read-only.
-Nullable.
+Entry-point to Planner resource that might exist for a Unified Group.
 
 ## EXAMPLES
 
@@ -66,7 +62,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IPlannerIdentity

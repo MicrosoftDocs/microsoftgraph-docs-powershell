@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementeffectivepermission
@@ -12,12 +12,12 @@ Retrieves the effective permissions of the currently authenticated user
 
 ## SYNTAX
 
-### Get (Default)
+### Get2 (Default)
 ```
 Get-MgDeviceManagementEffectivePermission -Scope <String> [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity1
 ```
 Get-MgDeviceManagementEffectivePermission -InputObject <IDeviceManagementFunctionsIdentity>
  [<CommonParameters>]
@@ -32,11 +32,11 @@ Retrieves the effective permissions of the currently authenticated user
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementFunctionsIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: GetViaIdentity1
 Aliases:
 
 Required: True
@@ -51,7 +51,7 @@ Usage: scope={scope}
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get2
 Aliases:
 
 Required: True
@@ -82,6 +82,7 @@ To create the parameters described below, construct a hash table containing the 
 INPUTOBJECT <IDeviceManagementFunctionsIdentity>: Identity Parameter
   - `[Category <String>]`: Usage: category={category}
   - `[DepOnboardingSettingId <String>]`: key: id of depOnboardingSetting
+  - `[DeviceAndAppManagementAssignmentFilterId <String>]`: key: id of deviceAndAppManagementAssignmentFilter
   - `[DeviceAndAppManagementRoleAssignmentId <String>]`: key: id of deviceAndAppManagementRoleAssignment
   - `[DeviceComplianceScriptDeviceStateId <String>]`: key: id of deviceComplianceScriptDeviceState
   - `[DeviceComplianceScriptId <String>]`: key: id of deviceComplianceScript

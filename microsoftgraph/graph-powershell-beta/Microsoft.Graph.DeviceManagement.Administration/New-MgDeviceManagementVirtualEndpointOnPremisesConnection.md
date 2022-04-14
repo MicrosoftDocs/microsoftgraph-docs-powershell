@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointonpremisesconnection
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementVirtualEndpointOnPremisesConnection
 
 ## SYNOPSIS
-A defined collection of Azure resource information that can be used to establish on-premises network connectivity for cloud PCs.
+A defined collection of Azure resource information that can be used to establish on-premises network connectivity for Cloud PCs.
 
 ## SYNTAX
 
@@ -19,7 +19,8 @@ New-MgDeviceManagementVirtualEndpointOnPremisesConnection [-AdDomainName <String
  [-HealthCheckStatus <String>]
  [-HealthCheckStatusDetails <IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetails>] [-Id <String>] [-InUse]
  [-OrganizationalUnit <String>] [-ResourceGroupId <String>] [-SubnetId <String>] [-SubscriptionId <String>]
- [-SubscriptionName <String>] [-VirtualNetworkId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SubscriptionName <String>] [-Type <String>] [-VirtualNetworkId <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -29,7 +30,7 @@ New-MgDeviceManagementVirtualEndpointOnPremisesConnection
 ```
 
 ## DESCRIPTION
-A defined collection of Azure resource information that can be used to establish on-premises network connectivity for cloud PCs.
+A defined collection of Azure resource information that can be used to establish on-premises network connectivity for Cloud PCs.
 
 ## EXAMPLES
 
@@ -52,6 +53,7 @@ Accept wildcard characters: False
 
 ### -AdDomainName
 The fully qualified domain name (FQDN) of the Active Directory domain you want to join.
+Optional.
 
 ```yaml
 Type: String
@@ -83,6 +85,7 @@ Accept wildcard characters: False
 ### -AdDomainUsername
 The username of an Active Directory account (user or service account) that has permissions to create computer objects in Active Directory.
 Required format: admin@contoso.com.
+Optional.
 
 ```yaml
 Type: String
@@ -98,7 +101,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 cloudPcOnPremisesConnection
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCloudPcOnPremisesConnection
@@ -144,7 +147,7 @@ Accept wildcard characters: False
 
 ### -HealthCheckStatusDetails
 cloudPcOnPremisesConnectionStatusDetails
-To construct, see NOTES section for HEALTHCHECKSTATUSDETAILS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for HEALTHCHECKSTATUSDETAILS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetails
@@ -273,6 +276,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Type
+cloudPcOnPremisesConnectionType
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -VirtualNetworkId
 The ID of the target virtual network.
 Required format: '/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}'.
@@ -341,9 +359,9 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER <IMicrosoftGraphCloudPcOnPremisesConnection>: cloudPcOnPremisesConnection
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
-  - `[AdDomainName <String>]`: The fully qualified domain name (FQDN) of the Active Directory domain you want to join.
+  - `[AdDomainName <String>]`: The fully qualified domain name (FQDN) of the Active Directory domain you want to join. Optional.
   - `[AdDomainPassword <String>]`: The password associated with adDomainUsername.
-  - `[AdDomainUsername <String>]`: The username of an Active Directory account (user or service account) that has permissions to create computer objects in Active Directory. Required format: admin@contoso.com.
+  - `[AdDomainUsername <String>]`: The username of an Active Directory account (user or service account) that has permissions to create computer objects in Active Directory. Required format: admin@contoso.com. Optional.
   - `[DisplayName <String>]`: The display name for the on-premises connection.
   - `[HealthCheckStatus <String>]`: cloudPcOnPremisesConnectionStatus
   - `[HealthCheckStatusDetails <IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetails>]`: cloudPcOnPremisesConnectionStatusDetails
@@ -364,6 +382,7 @@ BODYPARAMETER <IMicrosoftGraphCloudPcOnPremisesConnection>: cloudPcOnPremisesCon
   - `[SubnetId <String>]`: The ID of the target subnet. Required format: '/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}'.
   - `[SubscriptionId <String>]`: The ID of the target Azure subscription that's associated with your tenant.
   - `[SubscriptionName <String>]`: The name of the target Azure subscription. Read-only.
+  - `[Type <String>]`: cloudPcOnPremisesConnectionType
   - `[VirtualNetworkId <String>]`: The ID of the target virtual network. Required format: '/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}'.
 
 HEALTHCHECKSTATUSDETAILS <IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetails>: cloudPcOnPremisesConnectionStatusDetails

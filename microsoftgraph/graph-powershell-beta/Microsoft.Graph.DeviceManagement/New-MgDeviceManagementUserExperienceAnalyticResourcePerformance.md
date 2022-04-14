@@ -15,9 +15,10 @@ User experience analytics resource performance
 ### CreateExpanded (Default)
 ```
 New-MgDeviceManagementUserExperienceAnalyticResourcePerformance [-AdditionalProperties <Hashtable>]
- [-CpuSpikeTimePercentage <Double>] [-CpuSpikeTimePercentageThreshold <Double>] [-CpuSpikeTimeScore <Int32>]
- [-DeviceCount <Int64>] [-DeviceId <String>] [-DeviceName <String>] [-DeviceResourcePerformanceScore <Int32>]
- [-Id <String>] [-Manufacturer <String>] [-Model <String>] [-RamSpikeTimePercentage <Double>]
+ [-AverageSpikeTimeScore <Int32>] [-CpuSpikeTimePercentage <Double>]
+ [-CpuSpikeTimePercentageThreshold <Double>] [-CpuSpikeTimeScore <Int32>] [-DeviceCount <Int64>]
+ [-DeviceId <String>] [-DeviceName <String>] [-DeviceResourcePerformanceScore <Int32>] [-Id <String>]
+ [-Manufacturer <String>] [-Model <String>] [-RamSpikeTimePercentage <Double>]
  [-RamSpikeTimePercentageThreshold <Double>] [-RamSpikeTimeScore <Int32>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -51,9 +52,25 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -AverageSpikeTimeScore
+AverageSpikeTimeScore of a device or a model type.
+Valid values 0 to 100
+
+```yaml
+Type: Int32
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -BodyParameter
 The user experience analytics resource performance entity.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsResourcePerformance
@@ -321,6 +338,7 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsResourcePerformance>: The user experience analytics resource performance entity.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
+  - `[AverageSpikeTimeScore <Int32?>]`: AverageSpikeTimeScore of a device or a model type. Valid values 0 to 100
   - `[CpuSpikeTimePercentage <Double?>]`: CPU spike time in percentage. Valid values 0 to 100
   - `[CpuSpikeTimePercentageThreshold <Double?>]`: Threshold of cpuSpikeTimeScore. Valid values 0 to 100
   - `[CpuSpikeTimeScore <Int32?>]`: The user experience analytics device CPU spike time score. Valid values 0 to 100

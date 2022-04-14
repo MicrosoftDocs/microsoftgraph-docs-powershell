@@ -17,9 +17,15 @@ The work from anywhere metric devices.
 New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice
  -UserExperienceAnalyticsWorkFromAnywhereMetricId <String> [-AdditionalProperties <Hashtable>]
  [-AutoPilotProfileAssigned] [-AutoPilotRegistered] [-AzureAdDeviceId <String>] [-AzureAdJoinType <String>]
- [-AzureAdRegistered] [-DeviceName <String>] [-Id <String>] [-ManagedBy <String>] [-Manufacturer <String>]
- [-Model <String>] [-OSDescription <String>] [-OSVersion <String>] [-Ownership <String>]
- [-SerialNumber <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AzureAdRegistered] [-CloudIdentityScore <Double>] [-CloudManagementScore <Double>]
+ [-CloudProvisioningScore <Double>] [-CompliancePolicySetToIntune] [-DeviceId <String>] [-DeviceName <String>]
+ [-HealthStatus <String>] [-Id <String>] [-IsCloudManagedGatewayEnabled] [-ManagedBy <String>]
+ [-Manufacturer <String>] [-Model <String>] [-OSCheckFailed] [-OSDescription <String>] [-OSVersion <String>]
+ [-OtherWorkloadsSetToIntune] [-Ownership <String>] [-Processor64BitCheckFailed]
+ [-ProcessorCoreCountCheckFailed] [-ProcessorFamilyCheckFailed] [-ProcessorSpeedCheckFailed] [-RamCheckFailed]
+ [-SecureBootCheckFailed] [-SerialNumber <String>] [-StorageCheckFailed] [-TenantAttached] [-TpmCheckFailed]
+ [-UpgradeEligibility <String>] [-WindowsScore <Double>] [-WorkFromAnywhereScore <Double>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -35,9 +41,15 @@ New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice
 New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice
  -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>] [-AutoPilotProfileAssigned]
  [-AutoPilotRegistered] [-AzureAdDeviceId <String>] [-AzureAdJoinType <String>] [-AzureAdRegistered]
- [-DeviceName <String>] [-Id <String>] [-ManagedBy <String>] [-Manufacturer <String>] [-Model <String>]
- [-OSDescription <String>] [-OSVersion <String>] [-Ownership <String>] [-SerialNumber <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-CloudIdentityScore <Double>] [-CloudManagementScore <Double>] [-CloudProvisioningScore <Double>]
+ [-CompliancePolicySetToIntune] [-DeviceId <String>] [-DeviceName <String>] [-HealthStatus <String>]
+ [-Id <String>] [-IsCloudManagedGatewayEnabled] [-ManagedBy <String>] [-Manufacturer <String>]
+ [-Model <String>] [-OSCheckFailed] [-OSDescription <String>] [-OSVersion <String>]
+ [-OtherWorkloadsSetToIntune] [-Ownership <String>] [-Processor64BitCheckFailed]
+ [-ProcessorCoreCountCheckFailed] [-ProcessorFamilyCheckFailed] [-ProcessorSpeedCheckFailed] [-RamCheckFailed]
+ [-SecureBootCheckFailed] [-SerialNumber <String>] [-StorageCheckFailed] [-TenantAttached] [-TpmCheckFailed]
+ [-UpgradeEligibility <String>] [-WindowsScore <Double>] [-WorkFromAnywhereScore <Double>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -147,7 +159,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analytics Device for work from anywhere report
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereDevice
@@ -161,8 +173,101 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -CloudIdentityScore
+The user experience work from anywhere per device cloud identity score.
+Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+
+```yaml
+Type: Double
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CloudManagementScore
+The user experience work from anywhere per device cloud management score.
+Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+
+```yaml
+Type: Double
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CloudProvisioningScore
+The user experience work from anywhere per device cloud provisioning score.
+Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+
+```yaml
+Type: Double
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CompliancePolicySetToIntune
+The user experience work from anywhere device's compliancePolicySetToIntune.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DeviceId
+The user experience work from anywhere device Id.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -DeviceName
 The work from anywhere device's name.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -HealthStatus
+userExperienceAnalyticsHealthState
 
 ```yaml
 Type: String
@@ -193,7 +298,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementIdentity
@@ -204,6 +309,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -IsCloudManagedGatewayEnabled
+The user experience work from anywhere device's Cloud Management Gateway for Configuration Manager is enabled.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -252,6 +372,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -OSCheckFailed
+The user experience work from anywhere device, Is OS check failed for device to upgrade to the latest version of windows.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -OSDescription
 The user experience work from anywhere device's OS Description.
 
@@ -282,11 +417,116 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -OtherWorkloadsSetToIntune
+The user experience work from anywhere device's otherWorkloadsSetToIntune.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Ownership
 The user experience work from anywhere device's ownership.
 
 ```yaml
 Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Processor64BitCheckFailed
+The user experience work from anywhere device, Is processor hardware 64-bit architecture check failed for device to upgrade to the latest version of windows.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProcessorCoreCountCheckFailed
+The user experience work from anywhere device, Is processor hardware core count check failed for device to upgrade to the latest version of windows.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProcessorFamilyCheckFailed
+The user experience work from anywhere device, Is processor hardware family check failed for device to upgrade to the latest version of windows.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProcessorSpeedCheckFailed
+The user experience work from anywhere device, Is processor hardware speed check failed for device to upgrade to the latest version of windows.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RamCheckFailed
+Is the user experience analytics work from anywhere device RAM hardware check failed for device to upgrade to the latest version of windows
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SecureBootCheckFailed
+The user experience work from anywhere device, Is secure boot hardware check failed for device to upgrade to the latest version of windows.
+
+```yaml
+Type: SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -312,6 +552,66 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -StorageCheckFailed
+The user experience work from anywhere device, Is storage hardware check failed for device to upgrade to the latest version of windows.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TenantAttached
+The user experience work from anywhere device's tenantAttached.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TpmCheckFailed
+The user experience work from anywhere device, Is Trusted Platform Module (TPM) hardware check failed for device to the latest version of upgrade to windows.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -UpgradeEligibility
+Work From Anywhere windows device upgrade eligibility status
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserExperienceAnalyticsWorkFromAnywhereMetricId
 key: id of userExperienceAnalyticsWorkFromAnywhereMetric
 
@@ -321,6 +621,38 @@ Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WindowsScore
+The user experience work from anywhere per device windows score.
+Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+
+```yaml
+Type: Double
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WorkFromAnywhereScore
+The user experience work from anywhere per device overall score.
+Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+
+```yaml
+Type: Double
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -385,14 +717,35 @@ BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereDevice>: Th
   - `[AzureAdDeviceId <String>]`: The user experience work from anywhere azure Ad device Id.
   - `[AzureAdJoinType <String>]`: The user experience work from anywhere device's azure Ad joinType.
   - `[AzureAdRegistered <Boolean?>]`: The user experience work from anywhere device's azureAdRegistered.
+  - `[CloudIdentityScore <Double?>]`: The user experience work from anywhere per device cloud identity score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+  - `[CloudManagementScore <Double?>]`: The user experience work from anywhere per device cloud management score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+  - `[CloudProvisioningScore <Double?>]`: The user experience work from anywhere per device cloud provisioning score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+  - `[CompliancePolicySetToIntune <Boolean?>]`: The user experience work from anywhere device's compliancePolicySetToIntune.
+  - `[DeviceId <String>]`: The user experience work from anywhere device Id.
   - `[DeviceName <String>]`: The work from anywhere device's name.
+  - `[HealthStatus <String>]`: userExperienceAnalyticsHealthState
+  - `[IsCloudManagedGatewayEnabled <Boolean?>]`: The user experience work from anywhere device's Cloud Management Gateway for Configuration Manager is enabled.
   - `[ManagedBy <String>]`: The user experience work from anywhere management agent of the device.
   - `[Manufacturer <String>]`: The user experience work from anywhere device's manufacturer.
   - `[Model <String>]`: The user experience work from anywhere device's model.
+  - `[OSCheckFailed <Boolean?>]`: The user experience work from anywhere device, Is OS check failed for device to upgrade to the latest version of windows.
   - `[OSDescription <String>]`: The user experience work from anywhere device's OS Description.
   - `[OSVersion <String>]`: The user experience work from anywhere device's OS Version.
+  - `[OtherWorkloadsSetToIntune <Boolean?>]`: The user experience work from anywhere device's otherWorkloadsSetToIntune.
   - `[Ownership <String>]`: The user experience work from anywhere device's ownership.
+  - `[Processor64BitCheckFailed <Boolean?>]`: The user experience work from anywhere device, Is processor hardware 64-bit architecture check failed for device to upgrade to the latest version of windows.
+  - `[ProcessorCoreCountCheckFailed <Boolean?>]`: The user experience work from anywhere device, Is processor hardware core count check failed for device to upgrade to the latest version of windows.
+  - `[ProcessorFamilyCheckFailed <Boolean?>]`: The user experience work from anywhere device, Is processor hardware family check failed for device to upgrade to the latest version of windows.
+  - `[ProcessorSpeedCheckFailed <Boolean?>]`: The user experience work from anywhere device, Is processor hardware speed check failed for device to upgrade to the latest version of windows.
+  - `[RamCheckFailed <Boolean?>]`: Is the user experience analytics work from anywhere device RAM hardware check failed for device to upgrade to the latest version of windows
+  - `[SecureBootCheckFailed <Boolean?>]`: The user experience work from anywhere device, Is secure boot hardware check failed for device to upgrade to the latest version of windows.
   - `[SerialNumber <String>]`: The user experience work from anywhere device's serial number.
+  - `[StorageCheckFailed <Boolean?>]`: The user experience work from anywhere device, Is storage hardware check failed for device to upgrade to the latest version of windows.
+  - `[TenantAttached <Boolean?>]`: The user experience work from anywhere device's tenantAttached.
+  - `[TpmCheckFailed <Boolean?>]`: The user experience work from anywhere device, Is Trusted Platform Module (TPM) hardware check failed for device to the latest version of upgrade to windows.
+  - `[UpgradeEligibility <String>]`: Work From Anywhere windows device upgrade eligibility status
+  - `[WindowsScore <Double?>]`: The user experience work from anywhere per device windows score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+  - `[WorkFromAnywhereScore <Double?>]`: The user experience work from anywhere per device overall score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
@@ -474,6 +827,8 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[SecurityBaselineSettingStateId <String>]`: key: id of securityBaselineSettingState
   - `[SecurityBaselineStateId <String>]`: key: id of securityBaselineState
   - `[SettingStateDeviceSummaryId <String>]`: key: id of settingStateDeviceSummary
+  - `[UserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetailsId <String>]`: key: id of userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
+  - `[UserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId <String>]`: key: id of userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId
   - `[UserExperienceAnalyticsAppHealthAppPerformanceByAppVersionId <String>]`: key: id of userExperienceAnalyticsAppHealthAppPerformanceByAppVersion
   - `[UserExperienceAnalyticsAppHealthAppPerformanceByOSVersionId <String>]`: key: id of userExperienceAnalyticsAppHealthAppPerformanceByOSVersion
   - `[UserExperienceAnalyticsAppHealthApplicationPerformanceId <String>]`: key: id of userExperienceAnalyticsAppHealthApplicationPerformance
@@ -482,6 +837,12 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[UserExperienceAnalyticsAppHealthDevicePerformanceId <String>]`: key: id of userExperienceAnalyticsAppHealthDevicePerformance
   - `[UserExperienceAnalyticsAppHealthOSVersionPerformanceId <String>]`: key: id of userExperienceAnalyticsAppHealthOSVersionPerformance
   - `[UserExperienceAnalyticsBaselineId <String>]`: key: id of userExperienceAnalyticsBaseline
+  - `[UserExperienceAnalyticsBatteryHealthAppImpactId <String>]`: key: id of userExperienceAnalyticsBatteryHealthAppImpact
+  - `[UserExperienceAnalyticsBatteryHealthDeviceAppImpactId <String>]`: key: id of userExperienceAnalyticsBatteryHealthDeviceAppImpact
+  - `[UserExperienceAnalyticsBatteryHealthDevicePerformanceId <String>]`: key: id of userExperienceAnalyticsBatteryHealthDevicePerformance
+  - `[UserExperienceAnalyticsBatteryHealthDeviceRuntimeHistoryId <String>]`: key: id of userExperienceAnalyticsBatteryHealthDeviceRuntimeHistory
+  - `[UserExperienceAnalyticsBatteryHealthModelPerformanceId <String>]`: key: id of userExperienceAnalyticsBatteryHealthModelPerformance
+  - `[UserExperienceAnalyticsBatteryHealthOSPerformanceId <String>]`: key: id of userExperienceAnalyticsBatteryHealthOsPerformance
   - `[UserExperienceAnalyticsCategoryId <String>]`: key: id of userExperienceAnalyticsCategory
   - `[UserExperienceAnalyticsDevicePerformanceId <String>]`: key: id of userExperienceAnalyticsDevicePerformance
   - `[UserExperienceAnalyticsDeviceScoresId <String>]`: key: id of userExperienceAnalyticsDeviceScores
@@ -492,13 +853,14 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[UserExperienceAnalyticsImpactingProcessId <String>]`: key: id of userExperienceAnalyticsImpactingProcess
   - `[UserExperienceAnalyticsMetricHistoryId <String>]`: key: id of userExperienceAnalyticsMetricHistory
   - `[UserExperienceAnalyticsMetricId <String>]`: key: id of userExperienceAnalyticsMetric
+  - `[UserExperienceAnalyticsModelScoresId <String>]`: key: id of userExperienceAnalyticsModelScores
   - `[UserExperienceAnalyticsNotAutopilotReadyDeviceId <String>]`: key: id of userExperienceAnalyticsNotAutopilotReadyDevice
   - `[UserExperienceAnalyticsRemoteConnectionId <String>]`: key: id of userExperienceAnalyticsRemoteConnection
   - `[UserExperienceAnalyticsResourcePerformanceId <String>]`: key: id of userExperienceAnalyticsResourcePerformance
   - `[UserExperienceAnalyticsScoreHistoryId <String>]`: key: id of userExperienceAnalyticsScoreHistory
   - `[UserExperienceAnalyticsWorkFromAnywhereDeviceId <String>]`: key: id of userExperienceAnalyticsWorkFromAnywhereDevice
   - `[UserExperienceAnalyticsWorkFromAnywhereMetricId <String>]`: key: id of userExperienceAnalyticsWorkFromAnywhereMetric
-  - `[UserId <String>]`: key: id of user
+  - `[UserExperienceAnalyticsWorkFromAnywhereModelPerformanceId <String>]`: key: id of userExperienceAnalyticsWorkFromAnywhereModelPerformance
   - `[WindowsDeviceMalwareStateId <String>]`: key: id of windowsDeviceMalwareState
   - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: key: id of windowsInformationProtectionAppLearningSummary
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: key: id of windowsInformationProtectionNetworkLearningSummary

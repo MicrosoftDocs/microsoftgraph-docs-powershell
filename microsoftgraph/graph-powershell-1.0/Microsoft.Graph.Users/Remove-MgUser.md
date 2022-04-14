@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUser
 
 ## SYNOPSIS
-Represents an Azure Active Directory user object.
+Delete entity from users
 
 ## SYNTAX
 
@@ -24,7 +24,7 @@ Remove-MgUser -InputObject <IUsersIdentity> [-IfMatch <String>] [-PassThru] [-Wh
 ```
 
 ## DESCRIPTION
-Represents an Azure Active Directory user object.
+Delete entity from users
 
 ## EXAMPLES
 
@@ -61,7 +61,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersIdentity

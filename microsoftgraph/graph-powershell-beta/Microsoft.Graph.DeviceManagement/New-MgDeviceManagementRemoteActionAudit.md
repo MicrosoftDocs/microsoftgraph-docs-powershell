@@ -35,7 +35,7 @@ The list of device remote action audits with the tenant.
 ## PARAMETERS
 
 ### -Action
-remoteAction
+Remote actions Intune supports.
 
 ```yaml
 Type: String
@@ -50,7 +50,7 @@ Accept wildcard characters: False
 ```
 
 ### -ActionState
-actionState
+State of the action on the device
 
 ```yaml
 Type: String
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Report of remote actions initiated on the devices belonging to a certain tenant.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRemoteActionAudit
@@ -267,8 +267,8 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER <IMicrosoftGraphRemoteActionAudit>: Report of remote actions initiated on the devices belonging to a certain tenant.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
-  - `[Action <String>]`: remoteAction
-  - `[ActionState <String>]`: actionState
+  - `[Action <String>]`: Remote actions Intune supports.
+  - `[ActionState <String>]`: State of the action on the device
   - `[DeviceDisplayName <String>]`: Intune device name.
   - `[DeviceImei <String>]`: IMEI of the device.
   - `[DeviceOwnerUserPrincipalName <String>]`: Upn of the device owner.

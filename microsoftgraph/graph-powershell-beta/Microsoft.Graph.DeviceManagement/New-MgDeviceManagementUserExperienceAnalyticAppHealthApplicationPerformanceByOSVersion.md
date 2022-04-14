@@ -12,7 +12,7 @@ User experience analytics appHealth Application Performance by OS Version
 
 ## SYNTAX
 
-### CreateExpanded2 (Default)
+### CreateExpanded4 (Default)
 ```
 New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOSVersion
  [-ActiveDeviceCount <Int32>] [-AdditionalProperties <Hashtable>] [-AppCrashCount <Int32>]
@@ -21,7 +21,7 @@ New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOSV
  [-Confirm] [<CommonParameters>]
 ```
 
-### Create2
+### Create4
 ```
 New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOSVersion
  -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAppHealthAppPerformanceByOSVersion> [-WhatIf] [-Confirm]
@@ -41,7 +41,7 @@ Valid values -2147483648 to 2147483647
 
 ```yaml
 Type: Int32
-Parameter Sets: CreateExpanded2
+Parameter Sets: CreateExpanded4
 Aliases:
 
 Required: False
@@ -56,7 +56,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded2
+Parameter Sets: CreateExpanded4
 Aliases:
 
 Required: False
@@ -72,7 +72,7 @@ Valid values -2147483648 to 2147483647
 
 ```yaml
 Type: Int32
-Parameter Sets: CreateExpanded2
+Parameter Sets: CreateExpanded4
 Aliases:
 
 Required: False
@@ -87,7 +87,7 @@ The friendly name of the application.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded2
+Parameter Sets: CreateExpanded4
 Aliases:
 
 Required: False
@@ -102,7 +102,7 @@ The name of the application.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded2
+Parameter Sets: CreateExpanded4
 Aliases:
 
 Required: False
@@ -117,7 +117,7 @@ The publisher of the application.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded2
+Parameter Sets: CreateExpanded4
 Aliases:
 
 Required: False
@@ -133,7 +133,7 @@ Valid values -2147483648 to 2147483647
 
 ```yaml
 Type: Int32
-Parameter Sets: CreateExpanded2
+Parameter Sets: CreateExpanded4
 Aliases:
 
 Required: False
@@ -144,12 +144,12 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-The user experience analytics applicaiton performance entity contains app performance details by OS version.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+The user experience analytics application performance entity contains app performance details by OS version.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsAppHealthAppPerformanceByOSVersion
-Parameter Sets: Create2
+Parameter Sets: Create4
 Aliases:
 
 Required: True
@@ -164,7 +164,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded2
+Parameter Sets: CreateExpanded4
 Aliases:
 
 Required: False
@@ -180,7 +180,7 @@ Valid values -2147483648 to 2147483647
 
 ```yaml
 Type: Int32
-Parameter Sets: CreateExpanded2
+Parameter Sets: CreateExpanded4
 Aliases:
 
 Required: False
@@ -195,7 +195,7 @@ The os build number of the application.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded2
+Parameter Sets: CreateExpanded4
 Aliases:
 
 Required: False
@@ -210,7 +210,7 @@ The os version of the application.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded2
+Parameter Sets: CreateExpanded4
 Aliases:
 
 Required: False
@@ -269,7 +269,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsAppHealthAppPerformanceByOSVersion>: The user experience analytics applicaiton performance entity contains app performance details by OS version.
+BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsAppHealthAppPerformanceByOSVersion>: The user experience analytics application performance entity contains app performance details by OS version.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
   - `[ActiveDeviceCount <Int32?>]`: The number of devices where the app has been active. Valid values -2147483648 to 2147483647

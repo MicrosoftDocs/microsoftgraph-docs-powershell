@@ -54,7 +54,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analytics device startup history entity contains device boot performance history details.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsDeviceStartupHistory
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestartCategory
-userExperienceAnalyticsOperatingSystemRestartCategory
+Operating System restart category
 
 ```yaml
 Type: String
@@ -387,7 +387,7 @@ BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupHistory>: The 
   - `[IsFirstLogin <Boolean?>]`: The user experience analytics device first login.
   - `[OperatingSystemVersion <String>]`: The user experience analytics device boot record's operating system version.
   - `[ResponsiveDesktopTimeInMS <Int32?>]`: The user experience analytics responsive desktop time in milliseconds.
-  - `[RestartCategory <String>]`: userExperienceAnalyticsOperatingSystemRestartCategory
+  - `[RestartCategory <String>]`: Operating System restart category
   - `[RestartFaultBucket <String>]`: OS restart fault bucket. The fault bucket is used to find additional information about a system crash.
   - `[RestartStopCode <String>]`: OS restart stop code. This shows the bug check code which can be used to look up the blue screen reason.
   - `[StartTime <DateTime?>]`: The user experience analytics device boot start time.

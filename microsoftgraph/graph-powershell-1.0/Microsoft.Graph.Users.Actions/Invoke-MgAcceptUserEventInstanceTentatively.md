@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgacceptusereventinstancetentatively
@@ -12,28 +12,28 @@ Invoke action tentativelyAccept
 
 ## SYNTAX
 
-### AcceptExpanded (Default)
+### AcceptExpanded1 (Default)
 ```
 Invoke-MgAcceptUserEventInstanceTentatively -EventId <String> -EventId1 <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-Comment <String>] [-ProposedNewTime <IMicrosoftGraphTimeSlot>]
  [-SendResponse] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Accept
+### Accept1
 ```
 Invoke-MgAcceptUserEventInstanceTentatively -EventId <String> -EventId1 <String> -UserId <String>
  -BodyParameter <IPaths14D4S5WUsersUserIdEventsEventIdInstancesEventId1MicrosoftGraphTentativelyacceptPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AcceptViaIdentityExpanded
+### AcceptViaIdentityExpanded1
 ```
 Invoke-MgAcceptUserEventInstanceTentatively -InputObject <IUsersActionsIdentity>
  [-AdditionalProperties <Hashtable>] [-Comment <String>] [-ProposedNewTime <IMicrosoftGraphTimeSlot>]
  [-SendResponse] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AcceptViaIdentity
+### AcceptViaIdentity1
 ```
 Invoke-MgAcceptUserEventInstanceTentatively -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths14D4S5WUsersUserIdEventsEventIdInstancesEventId1MicrosoftGraphTentativelyacceptPostRequestbodyContentApplicationJsonSchema>
@@ -52,7 +52,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: AcceptExpanded, AcceptViaIdentityExpanded
+Parameter Sets: AcceptExpanded1, AcceptViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -64,11 +64,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths14D4S5WUsersUserIdEventsEventIdInstancesEventId1MicrosoftGraphTentativelyacceptPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Accept, AcceptViaIdentity
+Parameter Sets: Accept1, AcceptViaIdentity1
 Aliases:
 
 Required: True
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: AcceptExpanded, AcceptViaIdentityExpanded
+Parameter Sets: AcceptExpanded1, AcceptViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -98,7 +98,7 @@ key: id of event
 
 ```yaml
 Type: String
-Parameter Sets: AcceptExpanded, Accept
+Parameter Sets: AcceptExpanded1, Accept1
 Aliases:
 
 Required: True
@@ -113,7 +113,7 @@ key: id of event
 
 ```yaml
 Type: String
-Parameter Sets: AcceptExpanded, Accept
+Parameter Sets: AcceptExpanded1, Accept1
 Aliases:
 
 Required: True
@@ -125,11 +125,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: AcceptViaIdentityExpanded, AcceptViaIdentity
+Parameter Sets: AcceptViaIdentityExpanded1, AcceptViaIdentity1
 Aliases:
 
 Required: True
@@ -156,11 +156,11 @@ Accept wildcard characters: False
 
 ### -ProposedNewTime
 timeSlot
-To construct, see NOTES section for PROPOSEDNEWTIME properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for PROPOSEDNEWTIME properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTimeSlot
-Parameter Sets: AcceptExpanded, AcceptViaIdentityExpanded
+Parameter Sets: AcceptExpanded1, AcceptViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: AcceptExpanded, AcceptViaIdentityExpanded
+Parameter Sets: AcceptExpanded1, AcceptViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -190,7 +190,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: AcceptExpanded, Accept
+Parameter Sets: AcceptExpanded1, Accept1
 Aliases:
 
 Required: True
@@ -263,9 +263,12 @@ BODYPARAMETER <IPaths14D4S5WUsersUserIdEventsEventIdInstancesEventId1MicrosoftGr
   - `[SendResponse <Boolean?>]`: 
 
 INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
+  - `[AccessReviewInstanceDecisionItemId <String>]`: key: id of accessReviewInstanceDecisionItem
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
   - `[AuthenticationMethodId <String>]`: key: id of authenticationMethod
+  - `[BaseTaskId <String>]`: key: id of baseTask
+  - `[BaseTaskListId <String>]`: key: id of baseTaskList
   - `[CalendarId <String>]`: key: id of calendar
   - `[DeviceEnrollmentConfigurationId <String>]`: key: id of deviceEnrollmentConfiguration
   - `[DeviceLogCollectionResponseId <String>]`: key: id of deviceLogCollectionResponse

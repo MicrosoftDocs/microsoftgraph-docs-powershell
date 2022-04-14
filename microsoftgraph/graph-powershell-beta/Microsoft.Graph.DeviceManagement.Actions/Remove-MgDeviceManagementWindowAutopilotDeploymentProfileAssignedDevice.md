@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/remove-mgdevicemanagementwindowautopilotdeploymentprofileassigneddevice
@@ -145,14 +145,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-
-### Microsoft.Graph.PowerShell.Models.IPaths6Hyt5NDevicemanagementWindowsautopilotdeploymentprofilesWindowsautopilotdeploymentprofileIdAssigneddevicesMicrosoftGraphDeletedevicesPostRequestbodyContentApplicationJsonSchema
-
+### Microsoft.Graph.PowerShell.Models.IDeviceManagementEnrolmentIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeletedWindowsAutopilotDeviceState
-
+### System.Boolean
 ## NOTES
 
 ALIASES

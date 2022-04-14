@@ -1,6 +1,6 @@
----
+﻿---
 Module Name: Microsoft.Graph.Security
-Module Guid: 0c733737-8959-44a0-be36-ee351f61f209
+Module Guid: 36dd0f6d-61b0-48f6-abdb-636146418c56
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security
 Help Version: 1.0.0.0
 Locale: en-US
@@ -15,8 +15,10 @@ Microsoft Graph PowerShell Cmdlets
 Get securityActions from security
 
 ### [Get-MgSecurityAlert](Get-MgSecurityAlert.md)
-Read-only.
-Nullable.
+Notifications for suspicious or potential security issues in a customer's tenant.
+
+### [Get-MgSecurityAttackSimulation](Get-MgSecurityAttackSimulation.md)
+Represent attack simulation and training campaign of a tenant.
 
 ### [Get-MgSecurityCloudAppSecurityProfile](Get-MgSecurityCloudAppSecurityProfile.md)
 Get cloudAppSecurityProfiles from security
@@ -29,6 +31,15 @@ Get fileSecurityProfiles from security
 
 ### [Get-MgSecurityHostSecurityProfile](Get-MgSecurityHostSecurityProfile.md)
 Get hostSecurityProfiles from security
+
+### [Get-MgSecurityIncident](Get-MgSecurityIncident.md)
+Get incidents from security
+
+### [Get-MgSecurityIncidentAlert](Get-MgSecurityIncidentAlert.md)
+Get alerts from security
+
+### [Get-MgSecurityIncidentAlertByRef](Get-MgSecurityIncidentAlertByRef.md)
+Get ref of alerts from security
 
 ### [Get-MgSecurityIPSecurityProfile](Get-MgSecurityIPSecurityProfile.md)
 Get ipSecurityProfiles from security
@@ -52,8 +63,10 @@ Get userSecurityProfiles from security
 Create new navigation property to securityActions for security
 
 ### [New-MgSecurityAlert](New-MgSecurityAlert.md)
-Read-only.
-Nullable.
+Notifications for suspicious or potential security issues in a customer's tenant.
+
+### [New-MgSecurityAttackSimulation](New-MgSecurityAttackSimulation.md)
+Represent attack simulation and training campaign of a tenant.
 
 ### [New-MgSecurityCloudAppSecurityProfile](New-MgSecurityCloudAppSecurityProfile.md)
 Create new navigation property to cloudAppSecurityProfiles for security
@@ -66,6 +79,12 @@ Create new navigation property to fileSecurityProfiles for security
 
 ### [New-MgSecurityHostSecurityProfile](New-MgSecurityHostSecurityProfile.md)
 Create new navigation property to hostSecurityProfiles for security
+
+### [New-MgSecurityIncident](New-MgSecurityIncident.md)
+Create new navigation property to incidents for security
+
+### [New-MgSecurityIncidentAlertByRef](New-MgSecurityIncidentAlertByRef.md)
+Create new navigation property ref to alerts for security
 
 ### [New-MgSecurityIPSecurityProfile](New-MgSecurityIPSecurityProfile.md)
 Create new navigation property to ipSecurityProfiles for security
@@ -89,8 +108,10 @@ Create new navigation property to userSecurityProfiles for security
 Delete navigation property securityActions for security
 
 ### [Remove-MgSecurityAlert](Remove-MgSecurityAlert.md)
-Read-only.
-Nullable.
+Notifications for suspicious or potential security issues in a customer's tenant.
+
+### [Remove-MgSecurityAttackSimulation](Remove-MgSecurityAttackSimulation.md)
+Provides tenants capability to launch a simulated and realistic phishing attack and learn from it.
 
 ### [Remove-MgSecurityCloudAppSecurityProfile](Remove-MgSecurityCloudAppSecurityProfile.md)
 Delete navigation property cloudAppSecurityProfiles for security
@@ -103,6 +124,9 @@ Delete navigation property fileSecurityProfiles for security
 
 ### [Remove-MgSecurityHostSecurityProfile](Remove-MgSecurityHostSecurityProfile.md)
 Delete navigation property hostSecurityProfiles for security
+
+### [Remove-MgSecurityIncident](Remove-MgSecurityIncident.md)
+Delete navigation property incidents for security
 
 ### [Remove-MgSecurityIPSecurityProfile](Remove-MgSecurityIPSecurityProfile.md)
 Delete navigation property ipSecurityProfiles for security
@@ -128,6 +152,9 @@ Invoke action deleteTiIndicators
 ### [Remove-MgSecurityUserSecurityProfile](Remove-MgSecurityUserSecurityProfile.md)
 Delete navigation property userSecurityProfiles for security
 
+### [Start-MgSecurityHuntingQuery](Start-MgSecurityHuntingQuery.md)
+Invoke action runHuntingQuery
+
 ### [Stop-MgSecurityAction](Stop-MgSecurityAction.md)
 Invoke action cancelSecurityAction
 
@@ -138,8 +165,7 @@ Invoke action submitTiIndicators
 Update the navigation property securityActions in security
 
 ### [Update-MgSecurityAlert](Update-MgSecurityAlert.md)
-Read-only.
-Nullable.
+Notifications for suspicious or potential security issues in a customer's tenant.
 
 ### [Update-MgSecurityAlertMultiple](Update-MgSecurityAlertMultiple.md)
 Invoke action updateAlerts
@@ -155,6 +181,9 @@ Update the navigation property fileSecurityProfiles in security
 
 ### [Update-MgSecurityHostSecurityProfile](Update-MgSecurityHostSecurityProfile.md)
 Update the navigation property hostSecurityProfiles in security
+
+### [Update-MgSecurityIncident](Update-MgSecurityIncident.md)
+Update the navigation property incidents in security
 
 ### [Update-MgSecurityIPSecurityProfile](Update-MgSecurityIPSecurityProfile.md)
 Update the navigation property ipSecurityProfiles in security

@@ -17,8 +17,8 @@ User experience analytics remote connection
 New-MgDeviceManagementUserExperienceAnalyticRemoteConnection [-AdditionalProperties <Hashtable>]
  [-CloudPcFailurePercentage <Double>] [-CloudPcRoundTripTime <Double>] [-CloudPcSignInTime <Double>]
  [-CoreBootTime <Double>] [-CoreSignInTime <Double>] [-DeviceCount <Int32>] [-DeviceId <String>]
- [-DeviceName <String>] [-Id <String>] [-Model <String>] [-RemoteSignInTime <Double>]
- [-VirtualNetwork <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DeviceName <String>] [-Id <String>] [-Manufacturer <String>] [-Model <String>] [-RemoteSignInTime <Double>]
+ [-UserPrincipalName <String>] [-VirtualNetwork <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -52,7 +52,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analyte remote connection entity.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsRemoteConnection
@@ -207,6 +207,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Manufacturer
+The user experience analytics manufacturer.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Model
 The user experience analytics device model.
 
@@ -228,6 +243,21 @@ Valid values 0 to 1.79769313486232E+308
 
 ```yaml
 Type: Double
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -UserPrincipalName
+The user experience analytics userPrincipalName.
+
+```yaml
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -313,8 +343,10 @@ BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsRemoteConnection>: The user
   - `[DeviceCount <Int32?>]`: The count of remote connection. Valid values 0 to 2147483647
   - `[DeviceId <String>]`: The id of the device.
   - `[DeviceName <String>]`: The name of the device.
+  - `[Manufacturer <String>]`: The user experience analytics manufacturer.
   - `[Model <String>]`: The user experience analytics device model.
   - `[RemoteSignInTime <Double?>]`: The remote sign in time of Cloud PC Device. Valid values 0 to 1.79769313486232E+308
+  - `[UserPrincipalName <String>]`: The user experience analytics userPrincipalName.
   - `[VirtualNetwork <String>]`: The user experience analytics virtual network.
 
 ## RELATED LINKS

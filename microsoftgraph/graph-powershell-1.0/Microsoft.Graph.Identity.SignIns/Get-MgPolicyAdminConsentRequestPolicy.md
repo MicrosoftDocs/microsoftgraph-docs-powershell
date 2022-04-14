@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPolicyAdminConsentRequestPolicy
 
 ## SYNOPSIS
-Get adminConsentRequestPolicy from policies
+The policy by which consent requests are created and managed for the entire tenant.
 
 ## SYNTAX
 
@@ -17,7 +17,7 @@ Get-MgPolicyAdminConsentRequestPolicy [-ExpandProperty <String[]>] [-Property <S
 ```
 
 ## DESCRIPTION
-Get adminConsentRequestPolicy from policies
+The policy by which consent requests are created and managed for the entire tenant.
 
 ## EXAMPLES
 

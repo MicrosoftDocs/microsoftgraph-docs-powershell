@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 Module Guid: 6508ccfb-7e33-4938-aaea-8b6b9ab1024f
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement
@@ -335,12 +335,6 @@ Get sharedEmailDomains from directory
 ### [Get-MgDomain](Get-MgDomain.md)
 Get entity from domains by key
 
-### [Get-MgDomainNameerenceByRef](Get-MgDomainNameerenceByRef.md)
-Read-only, Nullable
-
-### [Get-MgDomainRefDomainNameerenceByRef](Get-MgDomainRefDomainNameerenceByRef.md)
-Read-only, Nullable
-
 ### [Get-MgDomainServiceConfigurationRecord](Get-MgDomainServiceConfigurationRecord.md)
 DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.
 Read-only, Nullable
@@ -519,9 +513,6 @@ Create new navigation property to sharedEmailDomains for directory
 
 ### [New-MgDomain](New-MgDomain.md)
 Add new entity to domains
-
-### [New-MgDomainRefDomainNameerenceByRef](New-MgDomainRefDomainNameerenceByRef.md)
-Read-only, Nullable
 
 ### [New-MgDomainServiceConfigurationRecord](New-MgDomainServiceConfigurationRecord.md)
 DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.

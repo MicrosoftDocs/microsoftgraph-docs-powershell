@@ -72,7 +72,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 onenotePage
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphOnenotePage1
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: INotesIdentity
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 
 ### -Links
 pageLinks
-To construct, see NOTES section for LINKS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for LINKS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPageLinks
@@ -265,7 +265,7 @@ Accept wildcard characters: False
 
 ### -ParentNotebook
 notebook
-To construct, see NOTES section for PARENTNOTEBOOK properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for PARENTNOTEBOOK properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphNotebook1
@@ -281,7 +281,7 @@ Accept wildcard characters: False
 
 ### -ParentSection
 onenoteSection
-To construct, see NOTES section for PARENTSECTION properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for PARENTSECTION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphOnenoteSection1

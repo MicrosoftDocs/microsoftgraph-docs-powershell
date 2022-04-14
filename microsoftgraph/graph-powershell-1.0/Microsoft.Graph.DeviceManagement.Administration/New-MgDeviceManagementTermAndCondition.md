@@ -53,7 +53,7 @@ Accept wildcard characters: False
 
 ### -AcceptanceStatuses
 The list of acceptance statuses for this T&C policy.
-To construct, see NOTES section for ACCEPTANCESTATUSES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ACCEPTANCESTATUSES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTermsAndConditionsAcceptanceStatus[]
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 
 ### -Assignments
 The list of assignments for this T&C policy.
-To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTermsAndConditionsAssignment[]
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy.
 T&C policies' contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance.
 They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTermsAndConditions1

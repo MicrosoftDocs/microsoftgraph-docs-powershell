@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEntitlementManagementAccessPackage
 
 ## SYNOPSIS
-Get accessPackages from identityGovernance
+Represents access package objects.
 
 ## SYNTAX
 
@@ -56,9 +56,80 @@ Get-MgEntitlementManagementAccessPackage [-ExpandProperty <String[]>] [-Property
 ```
 
 ## DESCRIPTION
-Get accessPackages from identityGovernance
+Represents access package objects.
 
 ## EXAMPLES
+
+### Example 1: Get a list of all access packages
+```powershell
+Connect-MgGraph -Scopes 'EntitlementManagement.ReadWrite.All'
+Get-MgEntitlementManagementAccessPackage | Format-List
+
+AccessPackageAssignmentPolicies :
+AccessPackageCatalog            : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageCatalog
+AccessPackageResourceRoleScopes :
+AccessPackagesIncompatibleWith  :
+CatalogId                       : 54152ecb-c65d-47f2-8a4d-ba2732de0a7b
+CreatedBy                       : admin@M365x814237.onmicrosoft.com
+CreatedDateTime                 : 11/5/2021 8:03:39 AM
+Description                     :
+DisplayName                     : Marketing Campaign
+Id                              : bc041fda-b3ba-41fc-b911-ca95f7aac656
+IncompatibleAccessPackages      :
+IncompatibleGroups              :
+IsHidden                        : False
+IsRoleScopesVisible             : False
+ModifiedBy                      : admin@M365x814237.onmicrosoft.com
+ModifiedDateTime                : 11/5/2021 9:08:44 AM
+AdditionalProperties            : {}
+
+AccessPackageAssignmentPolicies :
+AccessPackageCatalog            : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageCatalog
+AccessPackageResourceRoleScopes :
+AccessPackagesIncompatibleWith  :
+CatalogId                       : 54152ecb-c65d-47f2-8a4d-ba2732de0a7b
+CreatedBy                       : admin@M365x814237.onmicrosoft.com
+CreatedDateTime                 : 9/15/2021 7:23:44 AM
+Description                     : Access for Sales and Marketing users and guests
+DisplayName                     : Sales and Marketing
+Id                              : b90cbf24-66b9-4cd8-b270-863b6fca641c
+IncompatibleAccessPackages      :
+IncompatibleGroups              :
+IsHidden                        : False
+IsRoleScopesVisible             : False
+ModifiedBy                      : admin@M365x814237.onmicrosoft.com
+ModifiedDateTime                : 9/15/2021 7:23:44 AM
+AdditionalProperties            : {}
+```
+
+This examples returns all access packages.
+
+### Example 2: Get access package by Id
+```powershell
+Connect-MgGraph -Scopes 'EntitlementManagement.ReadWrite.All'
+Get-MgEntitlementManagementAccessPackage -AccessPackageId 'bc041fda-b3ba-41fc-b911-ca95f7aac656'| Format-List
+
+
+AccessPackageAssignmentPolicies :
+AccessPackageCatalog            : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageCatalog
+AccessPackageResourceRoleScopes :
+AccessPackagesIncompatibleWith  :
+CatalogId                       : 54152ecb-c65d-47f2-8a4d-ba2732de0a7b
+CreatedBy                       : admin@M365x814237.onmicrosoft.com
+CreatedDateTime                 : 11/5/2021 8:03:39 AM
+Description                     :
+DisplayName                     : Marketing Campaign
+Id                              : bc041fda-b3ba-41fc-b911-ca95f7aac656
+IncompatibleAccessPackages      :
+IncompatibleGroups              :
+IsHidden                        : False
+IsRoleScopesVisible             : False
+ModifiedBy                      : admin@M365x814237.onmicrosoft.com
+ModifiedDateTime                : 11/5/2021 9:08:44 AM
+AdditionalProperties            : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackages/$entity]}
+```
+
+This example returns the access package of the specified id.
 
 ## PARAMETERS
 
@@ -185,7 +256,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentityGovernanceIdentity
@@ -322,9 +393,11 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageResourceScopeId <String>]`: key: id of accessPackageResourceScope
   - `[AccessReviewDecisionId <String>]`: key: id of accessReviewDecision
   - `[AccessReviewHistoryDefinitionId <String>]`: key: id of accessReviewHistoryDefinition
+  - `[AccessReviewHistoryInstanceId <String>]`: key: id of accessReviewHistoryInstance
   - `[AccessReviewId <String>]`: key: id of accessReview
   - `[AccessReviewId1 <String>]`: key: id of accessReview
   - `[AccessReviewInstanceDecisionItemId <String>]`: key: id of accessReviewInstanceDecisionItem
+  - `[AccessReviewInstanceDecisionItemId1 <String>]`: key: id of accessReviewInstanceDecisionItem
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewReviewerId <String>]`: key: id of accessReviewReviewer
   - `[AccessReviewScheduleDefinitionId <String>]`: key: id of accessReviewScheduleDefinition
@@ -339,11 +412,13 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[BusinessFlowTemplateId <String>]`: key: id of businessFlowTemplate
   - `[ConnectedOrganizationId <String>]`: key: id of connectedOrganization
   - `[DirectoryObjectId <String>]`: key: id of directoryObject
+  - `[GovernanceInsightId <String>]`: key: id of governanceInsight
   - `[GovernanceResourceId <String>]`: key: id of governanceResource
   - `[GovernanceRoleAssignmentId <String>]`: key: id of governanceRoleAssignment
   - `[GovernanceRoleAssignmentRequestId <String>]`: key: id of governanceRoleAssignmentRequest
   - `[GovernanceRoleDefinitionId <String>]`: key: id of governanceRoleDefinition
   - `[GovernanceRoleSettingId <String>]`: key: id of governanceRoleSetting
+  - `[GroupId <String>]`: key: id of group
   - `[On <String>]`: Usage: on={on}
   - `[PrivilegedAccessId <String>]`: key: id of privilegedAccess
   - `[PrivilegedApprovalId <String>]`: key: id of privilegedApproval

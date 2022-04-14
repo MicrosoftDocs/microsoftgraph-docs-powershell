@@ -49,7 +49,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 A Domain Join Connector is a connector that is responsible to allocate (and delete) machine account blobs
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementDomainJoinConnector
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -State
-deviceManagementDomainJoinConnectorState
+The ODJ request states.
 
 ```yaml
 Type: String
@@ -192,7 +192,7 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagementDomainJoinConnector>: A Domain Joi
   - `[Id <String>]`: Read-only.
   - `[DisplayName <String>]`: The connector display name.
   - `[LastConnectionDateTime <DateTime?>]`: Last time connector contacted Intune.
-  - `[State <String>]`: deviceManagementDomainJoinConnectorState
+  - `[State <String>]`: The ODJ request states.
   - `[Version <String>]`: The version of the connector.
 
 ## RELATED LINKS

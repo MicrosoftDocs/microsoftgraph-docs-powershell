@@ -8,8 +8,8 @@ schema: 2.0.0
 # Get-MgAdministrativeUnitMemberByRef
 
 ## SYNOPSIS
-Users and groups that are members of this Adminsitrative Unit.
-HTTP Methods: GET (list members), POST (add members), DELETE (remove members).
+Users and groups that are members of this administrative unit.
+Supports $expand.
 
 ## SYNTAX
 
@@ -20,8 +20,8 @@ Get-MgAdministrativeUnitMemberByRef -AdministrativeUnitId <String> [-Filter <Str
 ```
 
 ## DESCRIPTION
-Users and groups that are members of this Adminsitrative Unit.
-HTTP Methods: GET (list members), POST (add members), DELETE (remove members).
+Users and groups that are members of this administrative unit.
+Supports $expand.
 
 ## EXAMPLES
 

@@ -48,7 +48,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 financials
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphFinancials
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 
 ### -Companies
 .
-To construct, see NOTES section for COMPANIES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for COMPANIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCompany[]

@@ -52,7 +52,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Singleton entity which represents the Exchange OnPremises Conditional Access Settings for a tenant.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphOnPremisesConditionalAccessSettings

@@ -8,39 +8,43 @@ schema: 2.0.0
 # New-MgGroupMemberOfByRef
 
 ## SYNOPSIS
-Users, contacts, and groups that are members of this group.
-HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only.
+Groups that this group is a member of.
+HTTP Methods: GET (supported for all groups).
+Read-only.
 Nullable.
+Supports $expand.
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### CreateExpanded5 (Default)
 ```
 New-MgGroupMemberOfByRef -GroupId <String> [-AdditionalProperties <Hashtable>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### Create
+### Create5
 ```
 New-MgGroupMemberOfByRef -GroupId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded
+### CreateViaIdentityExpanded5
 ```
 New-MgGroupMemberOfByRef -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentity
+### CreateViaIdentity5
 ```
 New-MgGroupMemberOfByRef -InputObject <IGroupsIdentity> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Users, contacts, and groups that are members of this group.
-HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only.
+Groups that this group is a member of.
+HTTP Methods: GET (supported for all groups).
+Read-only.
 Nullable.
+Supports $expand.
 
 ## EXAMPLES
 
@@ -51,7 +55,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded5, CreateViaIdentityExpanded5
 Aliases:
 
 Required: False
@@ -66,7 +70,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: Hashtable
-Parameter Sets: Create, CreateViaIdentity
+Parameter Sets: Create5, CreateViaIdentity5
 Aliases:
 
 Required: True
@@ -81,7 +85,7 @@ key: id of group
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, Create
+Parameter Sets: CreateExpanded5, Create5
 Aliases:
 
 Required: True
@@ -93,11 +97,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IGroupsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Parameter Sets: CreateViaIdentityExpanded5, CreateViaIdentity5
 Aliases:
 
 Required: True
@@ -147,7 +151,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.Collections.Hashtable
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths15I3FyhGroupsGroupIdMembersRefPostResponses201ContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IPathsCa7EzdGroupsGroupIdMemberofRefPostResponses201ContentApplicationJsonSchema
 ## NOTES
 
 ALIASES

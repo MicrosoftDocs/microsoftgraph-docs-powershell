@@ -64,7 +64,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsN6Sp2AUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphCreatedevicelogcollectionrequestPostRequestbodyContentApplicationJsonSchema
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 
 ### -TemplateType
 Windows Log Collection request entity.
-To construct, see NOTES section for TEMPLATETYPE properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for TEMPLATETYPE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceLogCollectionRequest
@@ -195,12 +195,15 @@ BODYPARAMETER <IPathsN6Sp2AUsersUserIdManageddevicesManageddeviceIdMicrosoftGrap
   - `[TemplateType <IMicrosoftGraphDeviceLogCollectionRequest>]`: Windows Log Collection request entity.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier
-    - `[TemplateType <String>]`: deviceLogCollectionTemplateType
+    - `[TemplateType <String>]`: Enum for the template type used for collecting logs
 
 INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
+  - `[AccessReviewInstanceDecisionItemId <String>]`: key: id of accessReviewInstanceDecisionItem
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
   - `[AuthenticationMethodId <String>]`: key: id of authenticationMethod
+  - `[BaseTaskId <String>]`: key: id of baseTask
+  - `[BaseTaskListId <String>]`: key: id of baseTaskList
   - `[CalendarId <String>]`: key: id of calendar
   - `[DeviceEnrollmentConfigurationId <String>]`: key: id of deviceEnrollmentConfiguration
   - `[DeviceLogCollectionResponseId <String>]`: key: id of deviceLogCollectionResponse
@@ -225,6 +228,6 @@ INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
 TEMPLATETYPE <IMicrosoftGraphDeviceLogCollectionRequest>: Windows Log Collection request entity.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier
-  - `[TemplateType <String>]`: deviceLogCollectionTemplateType
+  - `[TemplateType <String>]`: Enum for the template type used for collecting logs
 
 ## RELATED LINKS

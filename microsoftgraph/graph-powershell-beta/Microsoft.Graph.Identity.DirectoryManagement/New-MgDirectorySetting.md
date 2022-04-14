@@ -48,7 +48,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 directorySetting
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDirectorySetting
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ### -Values
 Collection of name value pairs.
 Must contain and set all the settings defined in the template.
-To construct, see NOTES section for VALUES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for VALUES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSettingValue[]
@@ -181,11 +181,11 @@ BODYPARAMETER <IMicrosoftGraphDirectorySetting>: directorySetting
   - `[DisplayName <String>]`: Display name of this group of settings, which comes from the associated template. Read-only.
   - `[TemplateId <String>]`: Unique identifier for the template used to create this group of settings. Read-only.
   - `[Values <IMicrosoftGraphSettingValue[]>]`: Collection of name value pairs. Must contain and set all the settings defined in the template.
-    - `[Name <String>]`: Name of the setting (as defined by the directorySettingTemplate).
+    - `[Name <String>]`: Name of the setting (as defined by the groupSettingTemplate).
     - `[Value <String>]`: Value of the setting.
 
 VALUES <IMicrosoftGraphSettingValue[]>: Collection of name value pairs. Must contain and set all the settings defined in the template.
-  - `[Name <String>]`: Name of the setting (as defined by the directorySettingTemplate).
+  - `[Name <String>]`: Name of the setting (as defined by the groupSettingTemplate).
   - `[Value <String>]`: Value of the setting.
 
 ## RELATED LINKS

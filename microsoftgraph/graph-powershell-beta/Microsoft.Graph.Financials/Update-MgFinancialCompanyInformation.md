@@ -68,7 +68,7 @@ Accept wildcard characters: False
 
 ### -Address
 postalAddressType
-To construct, see NOTES section for ADDRESS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ADDRESS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPostalAddressType
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 companyInformation
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCompanyInformation1
@@ -235,7 +235,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFinancialsIdentity

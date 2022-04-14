@@ -15,7 +15,7 @@ Invoke action addToReviewSet
 ### AddExpanded (Default)
 ```
 Add-MgComplianceEdiscoveryCaseReviewSetToReviewSet -CaseId <String> -ReviewSetId <String>
- [-AdditionalData <String>] [-AdditionalProperties <Hashtable>]
+ [-AdditionalDataOptions <String>] [-AdditionalProperties <Hashtable>]
  [-SourceCollection <IMicrosoftGraphEdiscoverySourceCollection>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -30,7 +30,7 @@ Add-MgComplianceEdiscoveryCaseReviewSetToReviewSet -CaseId <String> -ReviewSetId
 ### AddViaIdentityExpanded
 ```
 Add-MgComplianceEdiscoveryCaseReviewSetToReviewSet -InputObject <IComplianceIdentity>
- [-AdditionalData <String>] [-AdditionalProperties <Hashtable>]
+ [-AdditionalDataOptions <String>] [-AdditionalProperties <Hashtable>]
  [-SourceCollection <IMicrosoftGraphEdiscoverySourceCollection>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -49,7 +49,7 @@ Invoke action addToReviewSet
 
 ## PARAMETERS
 
-### -AdditionalData
+### -AdditionalDataOptions
 additionalDataOptions
 
 ```yaml
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1N6Pr05ComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdMicrosoftGraphEdiscoveryAddtoreviewsetPostRequestbodyContentApplicationJsonSchema
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IComplianceIdentity
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 
 ### -SourceCollection
 sourceCollection
-To construct, see NOTES section for SOURCECOLLECTION properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SOURCECOLLECTION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEdiscoverySourceCollection
@@ -224,7 +224,7 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER <IPaths1N6Pr05ComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdMicrosoftGraphEdiscoveryAddtoreviewsetPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AdditionalData <String>]`: additionalDataOptions
+  - `[AdditionalDataOptions <String>]`: additionalDataOptions
   - `[SourceCollection <IMicrosoftGraphEdiscoverySourceCollection>]`: sourceCollection
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: Read-only.
@@ -269,13 +269,14 @@ BODYPARAMETER <IPaths1N6Pr05ComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetId
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[CreatedDateTime <DateTime?>]`: The date and time the dataSource was created.
       - `[DisplayName <String>]`: The display name of the dataSource. This will be the name of the SharePoint site.
-    - `[ContentQuery <String>]`: The query string in KQL (Keyword Query Language) query. For details, see Keyword queries and search conditions for Content Search and eDiscovery.  You can refine searches by using fields paired with values; for example, subject:'Quarterly Financials' AND Date>=06/01/2016 AND Date<=07/01/2016
+      - `[HoldStatus <String>]`: dataSourceHoldStatus
+    - `[ContentQuery <String>]`: The query string in KQL (Keyword Query Language) query. For details, see Keyword queries and search conditions for Content Search and eDiscovery. You can refine searches by using fields paired with values; for example, subject:'Quarterly Financials' AND Date>=06/01/2016 AND Date<=07/01/2016.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[CreatedDateTime <DateTime?>]`: The date and time the sourceCollection was created.
     - `[CustodianSources <IMicrosoftGraphEdiscoveryDataSource[]>]`: Custodian sources that are included in the sourceCollection.
     - `[DataSourceScopes <String>]`: dataSourceScopes
-    - `[Description <String>]`: The description of the sourceCollection
-    - `[DisplayName <String>]`: The display name of the sourceCollection
+    - `[Description <String>]`: The description of the sourceCollection.
+    - `[DisplayName <String>]`: The display name of the sourceCollection.
     - `[LastEstimateStatisticsOperation <IMicrosoftGraphEdiscoveryEstimateStatisticsOperation>]`: estimateStatisticsOperation
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Action <String>]`: caseAction
@@ -298,6 +299,7 @@ BODYPARAMETER <IPaths1N6Pr05ComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetId
     - `[NoncustodialSources <IMicrosoftGraphEdiscoveryNoncustodialDataSource[]>]`: noncustodialDataSource sources that are included in the sourceCollection
       - `[CreatedDateTime <DateTime?>]`: Created date and time of the dataSourceContainer entity.
       - `[DisplayName <String>]`: Display name of the dataSourceContainer entity.
+      - `[HoldStatus <String>]`: dataSourceHoldStatus
       - `[LastIndexOperation <IMicrosoftGraphEdiscoveryCaseIndexOperation>]`: caseIndexOperation
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Action <String>]`: caseAction
@@ -374,13 +376,14 @@ SOURCECOLLECTION <IMicrosoftGraphEdiscoverySourceCollection>: sourceCollection
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[CreatedDateTime <DateTime?>]`: The date and time the dataSource was created.
     - `[DisplayName <String>]`: The display name of the dataSource. This will be the name of the SharePoint site.
-  - `[ContentQuery <String>]`: The query string in KQL (Keyword Query Language) query. For details, see Keyword queries and search conditions for Content Search and eDiscovery.  You can refine searches by using fields paired with values; for example, subject:'Quarterly Financials' AND Date>=06/01/2016 AND Date<=07/01/2016
+    - `[HoldStatus <String>]`: dataSourceHoldStatus
+  - `[ContentQuery <String>]`: The query string in KQL (Keyword Query Language) query. For details, see Keyword queries and search conditions for Content Search and eDiscovery. You can refine searches by using fields paired with values; for example, subject:'Quarterly Financials' AND Date>=06/01/2016 AND Date<=07/01/2016.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[CreatedDateTime <DateTime?>]`: The date and time the sourceCollection was created.
   - `[CustodianSources <IMicrosoftGraphEdiscoveryDataSource[]>]`: Custodian sources that are included in the sourceCollection.
   - `[DataSourceScopes <String>]`: dataSourceScopes
-  - `[Description <String>]`: The description of the sourceCollection
-  - `[DisplayName <String>]`: The display name of the sourceCollection
+  - `[Description <String>]`: The description of the sourceCollection.
+  - `[DisplayName <String>]`: The display name of the sourceCollection.
   - `[LastEstimateStatisticsOperation <IMicrosoftGraphEdiscoveryEstimateStatisticsOperation>]`: estimateStatisticsOperation
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Action <String>]`: caseAction
@@ -403,6 +406,7 @@ SOURCECOLLECTION <IMicrosoftGraphEdiscoverySourceCollection>: sourceCollection
   - `[NoncustodialSources <IMicrosoftGraphEdiscoveryNoncustodialDataSource[]>]`: noncustodialDataSource sources that are included in the sourceCollection
     - `[CreatedDateTime <DateTime?>]`: Created date and time of the dataSourceContainer entity.
     - `[DisplayName <String>]`: Display name of the dataSourceContainer entity.
+    - `[HoldStatus <String>]`: dataSourceHoldStatus
     - `[LastIndexOperation <IMicrosoftGraphEdiscoveryCaseIndexOperation>]`: caseIndexOperation
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Action <String>]`: caseAction

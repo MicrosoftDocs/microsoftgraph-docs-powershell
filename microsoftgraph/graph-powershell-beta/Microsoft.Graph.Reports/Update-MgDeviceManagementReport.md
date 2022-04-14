@@ -16,14 +16,13 @@ Reports singleton
 ```
 Update-MgDeviceManagementReport [-AdditionalProperties <Hashtable>]
  [-CachedReportConfigurations <IMicrosoftGraphDeviceManagementCachedReportConfiguration[]>]
- [-ExportJobs <IMicrosoftGraphDeviceManagementExportJob[]>] [-Id <String>]
- [-ReportSchedules <IMicrosoftGraphDeviceManagementReportSchedule[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [-ExportJobs <IMicrosoftGraphDeviceManagementExportJob[]>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDeviceManagementReport -BodyParameter <IMicrosoftGraphDeviceManagementReports> [-PassThru] [-WhatIf]
+Update-MgDeviceManagementReport -BodyParameter <IMicrosoftGraphDeviceManagementReports1> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -51,10 +50,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Singleton entity that acts as a container for all reports functionality.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementReports
+Type: IMicrosoftGraphDeviceManagementReports1
 Parameter Sets: Update
 Aliases:
 
@@ -67,7 +66,7 @@ Accept wildcard characters: False
 
 ### -CachedReportConfigurations
 Entity representing the configuration of a cached report
-To construct, see NOTES section for CACHEDREPORTCONFIGURATIONS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for CACHEDREPORTCONFIGURATIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementCachedReportConfiguration[]
@@ -83,7 +82,7 @@ Accept wildcard characters: False
 
 ### -ExportJobs
 Entity representing a job to export a report
-To construct, see NOTES section for EXPORTJOBS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for EXPORTJOBS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementExportJob[]
@@ -118,22 +117,6 @@ Returns true when the command succeeds
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ReportSchedules
-Entity representing a schedule for which reports are delivered
-To construct, see NOTES section for REPORTSCHEDULES properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphDeviceManagementReportSchedule[]
-Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -179,7 +162,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementReports
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementReports1
 ## OUTPUTS
 
 ### System.Boolean
@@ -192,7 +175,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphDeviceManagementReports>: Singleton entity that acts as a container for all reports functionality.
+BODYPARAMETER <IMicrosoftGraphDeviceManagementReports1>: Singleton entity that acts as a container for all reports functionality.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
   - `[CachedReportConfigurations <IMicrosoftGraphDeviceManagementCachedReportConfiguration[]>]`: Entity representing the configuration of a cached report
@@ -204,33 +187,19 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagementReports>: Singleton entity that ac
     - `[OrderBy <String[]>]`: Ordering of columns in the report
     - `[ReportName <String>]`: Name of the report
     - `[Select <String[]>]`: Columns selected from the report
-    - `[Status <String>]`: deviceManagementReportStatus
+    - `[Status <String>]`: Possible statuses associated with a generated report
   - `[ExportJobs <IMicrosoftGraphDeviceManagementExportJob[]>]`: Entity representing a job to export a report
     - `[Id <String>]`: Read-only.
     - `[ExpirationDateTime <DateTime?>]`: Time that the exported report expires
     - `[Filter <String>]`: Filters applied on the report
-    - `[Format <String>]`: deviceManagementReportFileFormat
-    - `[LocalizationType <String>]`: deviceManagementExportJobLocalizationType
+    - `[Format <String>]`: Possible values for the file format of a report
+    - `[LocalizationType <String>]`: Configures how the requested export job is localized
     - `[ReportName <String>]`: Name of the report
     - `[RequestDateTime <DateTime?>]`: Time that the exported report was requested
     - `[Select <String[]>]`: Columns selected from the report
     - `[SnapshotId <String>]`: A snapshot is an identifiable subset of the dataset represented by the ReportName. A sessionId or CachedReportConfiguration id can be used here. If a sessionId is specified, Filter, Select, and OrderBy are applied to the data represented by the sessionId. Filter, Select, and OrderBy cannot be specified together with a CachedReportConfiguration id.
-    - `[Status <String>]`: deviceManagementReportStatus
+    - `[Status <String>]`: Possible statuses associated with a generated report
     - `[Url <String>]`: Temporary location of the exported report
-  - `[ReportSchedules <IMicrosoftGraphDeviceManagementReportSchedule[]>]`: Entity representing a schedule for which reports are delivered
-    - `[Id <String>]`: Read-only.
-    - `[Emails <String[]>]`: Emails to which the scheduled reports are delivered
-    - `[EndDateTime <DateTime?>]`: Time that the delivery of the scheduled reports ends
-    - `[Filter <String>]`: Filters applied on the report
-    - `[Format <String>]`: deviceManagementReportFileFormat
-    - `[OrderBy <String[]>]`: Ordering of columns in the report
-    - `[Recurrence <String>]`: deviceManagementScheduledReportRecurrence
-    - `[ReportName <String>]`: Name of the report
-    - `[ReportScheduleName <String>]`: Name of the schedule
-    - `[Select <String[]>]`: Columns selected from the report
-    - `[StartDateTime <DateTime?>]`: Time that the delivery of the scheduled reports starts
-    - `[Subject <String>]`: Subject of the scheduled reports that are delivered
-    - `[UserId <String>]`: The Id of the User who created the report
 
 CACHEDREPORTCONFIGURATIONS <IMicrosoftGraphDeviceManagementCachedReportConfiguration[]>: Entity representing the configuration of a cached report
   - `[Id <String>]`: Read-only.
@@ -241,34 +210,19 @@ CACHEDREPORTCONFIGURATIONS <IMicrosoftGraphDeviceManagementCachedReportConfigura
   - `[OrderBy <String[]>]`: Ordering of columns in the report
   - `[ReportName <String>]`: Name of the report
   - `[Select <String[]>]`: Columns selected from the report
-  - `[Status <String>]`: deviceManagementReportStatus
+  - `[Status <String>]`: Possible statuses associated with a generated report
 
 EXPORTJOBS <IMicrosoftGraphDeviceManagementExportJob[]>: Entity representing a job to export a report
   - `[Id <String>]`: Read-only.
   - `[ExpirationDateTime <DateTime?>]`: Time that the exported report expires
   - `[Filter <String>]`: Filters applied on the report
-  - `[Format <String>]`: deviceManagementReportFileFormat
-  - `[LocalizationType <String>]`: deviceManagementExportJobLocalizationType
+  - `[Format <String>]`: Possible values for the file format of a report
+  - `[LocalizationType <String>]`: Configures how the requested export job is localized
   - `[ReportName <String>]`: Name of the report
   - `[RequestDateTime <DateTime?>]`: Time that the exported report was requested
   - `[Select <String[]>]`: Columns selected from the report
   - `[SnapshotId <String>]`: A snapshot is an identifiable subset of the dataset represented by the ReportName. A sessionId or CachedReportConfiguration id can be used here. If a sessionId is specified, Filter, Select, and OrderBy are applied to the data represented by the sessionId. Filter, Select, and OrderBy cannot be specified together with a CachedReportConfiguration id.
-  - `[Status <String>]`: deviceManagementReportStatus
+  - `[Status <String>]`: Possible statuses associated with a generated report
   - `[Url <String>]`: Temporary location of the exported report
-
-REPORTSCHEDULES <IMicrosoftGraphDeviceManagementReportSchedule[]>: Entity representing a schedule for which reports are delivered
-  - `[Id <String>]`: Read-only.
-  - `[Emails <String[]>]`: Emails to which the scheduled reports are delivered
-  - `[EndDateTime <DateTime?>]`: Time that the delivery of the scheduled reports ends
-  - `[Filter <String>]`: Filters applied on the report
-  - `[Format <String>]`: deviceManagementReportFileFormat
-  - `[OrderBy <String[]>]`: Ordering of columns in the report
-  - `[Recurrence <String>]`: deviceManagementScheduledReportRecurrence
-  - `[ReportName <String>]`: Name of the report
-  - `[ReportScheduleName <String>]`: Name of the schedule
-  - `[Select <String[]>]`: Columns selected from the report
-  - `[StartDateTime <DateTime?>]`: Time that the delivery of the scheduled reports starts
-  - `[Subject <String>]`: Subject of the scheduled reports that are delivered
-  - `[UserId <String>]`: The Id of the User who created the report
 
 ## RELATED LINKS

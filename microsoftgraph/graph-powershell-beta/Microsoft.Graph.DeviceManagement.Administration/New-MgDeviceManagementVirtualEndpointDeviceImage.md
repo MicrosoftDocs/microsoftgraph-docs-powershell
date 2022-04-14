@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointdeviceimage
@@ -8,16 +8,16 @@ schema: 2.0.0
 # New-MgDeviceManagementVirtualEndpointDeviceImage
 
 ## SYNOPSIS
-The image resource on cloud PC.
+The image resource on Cloud PC.
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgDeviceManagementVirtualEndpointDeviceImage [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-Id <String>] [-LastModifiedDateTime <DateTime>] [-OSBuildNumber <String>] [-OperatingSystem <String>]
- [-SourceImageResourceId <String>] [-Status <String>] [-StatusDetails <String>] [-Version <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ExpirationDate <DateTime>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-OSBuildNumber <String>]
+ [-OSStatus <String>] [-OperatingSystem <String>] [-SourceImageResourceId <String>] [-Status <String>]
+ [-StatusDetails <String>] [-Version <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -27,7 +27,7 @@ New-MgDeviceManagementVirtualEndpointDeviceImage -BodyParameter <IMicrosoftGraph
 ```
 
 ## DESCRIPTION
-The image resource on cloud PC.
+The image resource on Cloud PC.
 
 ## EXAMPLES
 
@@ -50,7 +50,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 cloudPcDeviceImage
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCloudPcDeviceImage
@@ -69,6 +69,21 @@ The image's display name.
 
 ```yaml
 Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExpirationDate
+The date the image became unavailable.
+
+```yaml
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -130,6 +145,21 @@ Accept wildcard characters: False
 ### -OSBuildNumber
 The image's OS build version.
 For example: 1909.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -OSStatus
+cloudPcDeviceImageOsStatus
 
 ```yaml
 Type: String
@@ -258,8 +288,10 @@ BODYPARAMETER <IMicrosoftGraphCloudPcDeviceImage>: cloudPcDeviceImage
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
   - `[DisplayName <String>]`: The image's display name.
+  - `[ExpirationDate <DateTime?>]`: The date the image became unavailable.
   - `[LastModifiedDateTime <DateTime?>]`: The data and time that the image was last modified. The time is shown in ISO 8601 format and  Coordinated Universal Time (UTC) time. For example, midnight UTC on Jan 1, 2014 appears as '2014-01-01T00:00:00Z'.
   - `[OSBuildNumber <String>]`: The image's OS build version. For example: 1909.
+  - `[OSStatus <String>]`: cloudPcDeviceImageOsStatus
   - `[OperatingSystem <String>]`: The image's operating system. For example: Windows 10 Enterprise.
   - `[SourceImageResourceId <String>]`: The ID of the source image resource on Azure. Required format: '/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}'.
   - `[Status <String>]`: cloudPcDeviceImageStatus

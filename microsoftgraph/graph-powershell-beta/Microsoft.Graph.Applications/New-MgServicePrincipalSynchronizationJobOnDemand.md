@@ -64,7 +64,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsJgtujvServiceprincipalsServiceprincipalIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphProvisionondemandPostRequestbodyContentApplicationJsonSchema
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 
 ### -Parameters
 .
-To construct, see NOTES section for PARAMETERS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for PARAMETERS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSynchronizationJobApplicationParameters[]
@@ -195,6 +195,11 @@ BODYPARAMETER <IPathsJgtujvServiceprincipalsServiceprincipalIdSynchronizationJob
   - `[Parameters <IMicrosoftGraphSynchronizationJobApplicationParameters[]>]`: 
     - `[RuleId <String>]`: The identifier of a the synchronizationRule to be applied.
     - `[Subjects <IMicrosoftGraphSynchronizationJobSubject[]>]`: The identifiers of one or more objects to which a synchronizationJob is to be applied.
+      - `[Links <IMicrosoftGraphSynchronizationLinkedObjects>]`: synchronizationLinkedObjects
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Manager <IMicrosoftGraphSynchronizationJobSubject>]`: synchronizationJobSubject
+        - `[Members <IMicrosoftGraphSynchronizationJobSubject[]>]`: 
+        - `[Owners <IMicrosoftGraphSynchronizationJobSubject[]>]`: 
       - `[ObjectId <String>]`: The identifier of an object to which a synchronizationJob  is to be applied.
       - `[ObjectTypeName <String>]`: The type of the object to which a synchronizationJob  is to be applied.
 
@@ -208,6 +213,7 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[DirectoryDefinitionId <String>]`: key: id of directoryDefinition
   - `[EndpointId <String>]`: key: id of endpoint
   - `[ExtensionPropertyId <String>]`: key: id of extensionProperty
+  - `[FederatedIdentityCredentialId <String>]`: key: id of federatedIdentityCredential
   - `[GroupId <String>]`: key: id of group
   - `[LicenseDetailsId <String>]`: key: id of licenseDetails
   - `[OnPremisesAgentGroupId <String>]`: key: id of onPremisesAgentGroup
@@ -225,6 +231,11 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
 PARAMETERS <IMicrosoftGraphSynchronizationJobApplicationParameters[]>: .
   - `[RuleId <String>]`: The identifier of a the synchronizationRule to be applied.
   - `[Subjects <IMicrosoftGraphSynchronizationJobSubject[]>]`: The identifiers of one or more objects to which a synchronizationJob is to be applied.
+    - `[Links <IMicrosoftGraphSynchronizationLinkedObjects>]`: synchronizationLinkedObjects
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Manager <IMicrosoftGraphSynchronizationJobSubject>]`: synchronizationJobSubject
+      - `[Members <IMicrosoftGraphSynchronizationJobSubject[]>]`: 
+      - `[Owners <IMicrosoftGraphSynchronizationJobSubject[]>]`: 
     - `[ObjectId <String>]`: The identifier of an object to which a synchronizationJob  is to be applied.
     - `[ObjectTypeName <String>]`: The type of the object to which a synchronizationJob  is to be applied.
 

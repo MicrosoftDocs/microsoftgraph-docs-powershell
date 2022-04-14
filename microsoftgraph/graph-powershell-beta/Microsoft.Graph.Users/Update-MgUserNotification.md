@@ -64,7 +64,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 notification
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphNotification
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersIdentity
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 
 ### -Payload
 payloadTypes
-To construct, see NOTES section for PAYLOAD properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for PAYLOAD properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPayloadTypes
@@ -237,7 +237,7 @@ Accept wildcard characters: False
 
 ### -TargetPolicy
 targetPolicyEndpoints
-To construct, see NOTES section for TARGETPOLICY properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for TARGETPOLICY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphTargetPolicyEndpoints

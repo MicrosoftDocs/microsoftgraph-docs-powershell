@@ -12,26 +12,26 @@ Invoke action changeScreenSharingRole
 
 ## SYNTAX
 
-### ChangeExpanded (Default)
+### ChangeExpanded1 (Default)
 ```
 Rename-MgCommunicationCallScreenSharingRole -CallId <String> [-AdditionalProperties <Hashtable>]
  [-Role <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Change
+### Change1
 ```
 Rename-MgCommunicationCallScreenSharingRole -CallId <String>
  -BodyParameter <IPathsOj95ZpCommunicationsCallsCallIdMicrosoftGraphChangescreensharingrolePostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ChangeViaIdentityExpanded
+### ChangeViaIdentityExpanded1
 ```
 Rename-MgCommunicationCallScreenSharingRole -InputObject <ICloudCommunicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-Role <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ChangeViaIdentity
+### ChangeViaIdentity1
 ```
 Rename-MgCommunicationCallScreenSharingRole -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPathsOj95ZpCommunicationsCallsCallIdMicrosoftGraphChangescreensharingrolePostRequestbodyContentApplicationJsonSchema>
@@ -50,7 +50,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: ChangeExpanded, ChangeViaIdentityExpanded
+Parameter Sets: ChangeExpanded1, ChangeViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -62,11 +62,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPathsOj95ZpCommunicationsCallsCallIdMicrosoftGraphChangescreensharingrolePostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Change, ChangeViaIdentity
+Parameter Sets: Change1, ChangeViaIdentity1
 Aliases:
 
 Required: True
@@ -81,7 +81,7 @@ key: id of call
 
 ```yaml
 Type: String
-Parameter Sets: ChangeExpanded, Change
+Parameter Sets: ChangeExpanded1, Change1
 Aliases:
 
 Required: True
@@ -93,11 +93,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ICloudCommunicationsIdentity
-Parameter Sets: ChangeViaIdentityExpanded, ChangeViaIdentity
+Parameter Sets: ChangeViaIdentityExpanded1, ChangeViaIdentity1
 Aliases:
 
 Required: True
@@ -127,7 +127,7 @@ screenSharingRole
 
 ```yaml
 Type: String
-Parameter Sets: ChangeExpanded, ChangeViaIdentityExpanded
+Parameter Sets: ChangeExpanded1, ChangeViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -192,10 +192,13 @@ BODYPARAMETER <IPathsOj95ZpCommunicationsCallsCallIdMicrosoftGraphChangescreensh
   - `[Role <String>]`: screenSharingRole
 
 INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
+  - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call
   - `[CallRecordId <String>]`: key: id of callRecord
   - `[CommsOperationId <String>]`: key: id of commsOperation
+  - `[MeetingAttendanceReportId <String>]`: key: id of meetingAttendanceReport
+  - `[MeetingRegistrationQuestionId <String>]`: key: id of meetingRegistrationQuestion
   - `[OnlineMeetingId <String>]`: key: id of onlineMeeting
   - `[ParticipantId <String>]`: key: id of participant
   - `[PresenceId <String>]`: key: id of presence

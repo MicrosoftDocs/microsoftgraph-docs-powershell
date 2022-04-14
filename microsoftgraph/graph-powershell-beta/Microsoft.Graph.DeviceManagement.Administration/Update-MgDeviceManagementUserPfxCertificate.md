@@ -68,7 +68,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Entity that encapsulates all information required for a user's PFX certificates.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserPfxCertificate
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementAdministrationIdentity
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -IntendedPurpose
-userPfxIntendedPurpose
+Supported values for the intended purpose of a user PFX certificate.
 
 ```yaml
 Type: String
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 ```
 
 ### -PaddingScheme
-userPfxPaddingScheme
+Supported values for the padding scheme used by encryption provider.
 
 ```yaml
 Type: String
@@ -380,10 +380,10 @@ BODYPARAMETER <IMicrosoftGraphUserPfxCertificate>: Entity that encapsulates all 
   - `[EncryptedPfxBlob <Byte[]>]`: Encrypted PFX blob.
   - `[EncryptedPfxPassword <String>]`: Encrypted PFX password.
   - `[ExpirationDateTime <DateTime?>]`: Certificate's validity expiration date/time.
-  - `[IntendedPurpose <String>]`: userPfxIntendedPurpose
+  - `[IntendedPurpose <String>]`: Supported values for the intended purpose of a user PFX certificate.
   - `[KeyName <String>]`: Name of the key (within the provider) used to encrypt the blob.
   - `[LastModifiedDateTime <DateTime?>]`: Date/time when this PFX certificate was last modified.
-  - `[PaddingScheme <String>]`: userPfxPaddingScheme
+  - `[PaddingScheme <String>]`: Supported values for the padding scheme used by encryption provider.
   - `[ProviderName <String>]`: Crypto provider used to encrypt this blob.
   - `[StartDateTime <DateTime?>]`: Certificate's validity start date/time.
   - `[Thumbprint <String>]`: SHA-1 thumbprint of the PFX certificate.
@@ -394,10 +394,14 @@ INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
   - `[CloudPcDeviceImageId <String>]`: key: id of cloudPcDeviceImage
+  - `[CloudPcGalleryImageId <String>]`: key: id of cloudPcGalleryImage
   - `[CloudPcId <String>]`: key: id of cloudPC
   - `[CloudPcOnPremisesConnectionId <String>]`: key: id of cloudPcOnPremisesConnection
   - `[CloudPcProvisioningPolicyAssignmentId <String>]`: key: id of cloudPcProvisioningPolicyAssignment
   - `[CloudPcProvisioningPolicyId <String>]`: key: id of cloudPcProvisioningPolicy
+  - `[CloudPcServicePlanId <String>]`: key: id of cloudPcServicePlan
+  - `[CloudPcSnapshotId <String>]`: key: id of cloudPcSnapshot
+  - `[CloudPcSupportedRegionId <String>]`: key: id of cloudPcSupportedRegion
   - `[CloudPcUserSettingAssignmentId <String>]`: key: id of cloudPcUserSettingAssignment
   - `[CloudPcUserSettingId <String>]`: key: id of cloudPcUserSetting
   - `[ComanagementEligibleDeviceId <String>]`: key: id of comanagementEligibleDevice

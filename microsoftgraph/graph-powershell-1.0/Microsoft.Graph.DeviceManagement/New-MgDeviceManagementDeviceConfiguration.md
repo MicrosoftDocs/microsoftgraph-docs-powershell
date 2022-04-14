@@ -54,7 +54,7 @@ Accept wildcard characters: False
 
 ### -Assignments
 The list of assignments for the device configuration profile.
-To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceConfigurationAssignment[]
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Device Configuration.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceConfiguration
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 
 ### -DeviceSettingStateSummaries
 Device Configuration Setting State Device Summary
-To construct, see NOTES section for DEVICESETTINGSTATESUMMARIES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEVICESETTINGSTATESUMMARIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSettingStateDeviceSummary[]
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 
 ### -DeviceStatuses
 Device configuration installation status by device.
-To construct, see NOTES section for DEVICESTATUSES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEVICESTATUSES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceConfigurationDeviceStatus[]
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 
 ### -DeviceStatusOverview
 deviceConfigurationDeviceOverview
-To construct, see NOTES section for DEVICESTATUSOVERVIEW properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DEVICESTATUSOVERVIEW properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceConfigurationDeviceOverview
@@ -209,7 +209,7 @@ Accept wildcard characters: False
 
 ### -UserStatuses
 Device configuration installation status by user.
-To construct, see NOTES section for USERSTATUSES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for USERSTATUSES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceConfigurationUserStatus[]
@@ -225,7 +225,7 @@ Accept wildcard characters: False
 
 ### -UserStatusOverview
 deviceConfigurationUserOverview
-To construct, see NOTES section for USERSTATUSOVERVIEW properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for USERSTATUSOVERVIEW properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceConfigurationUserOverview

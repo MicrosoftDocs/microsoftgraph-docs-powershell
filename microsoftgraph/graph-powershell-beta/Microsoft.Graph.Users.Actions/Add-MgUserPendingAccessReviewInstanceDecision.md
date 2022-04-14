@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/add-mguserpendingaccessreviewinstancedecision
@@ -12,10 +12,22 @@ Invoke action applyDecisions
 
 ## SYNTAX
 
-### Apply (Default)
+### Apply1 (Default)
 ```
 Add-MgUserPendingAccessReviewInstanceDecision -AccessReviewInstanceId <String> -UserId <String> [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Apply
+```
+Add-MgUserPendingAccessReviewInstanceDecision -AccessReviewInstanceDecisionItemId <String>
+ -AccessReviewInstanceId <String> -UserId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ApplyViaIdentity1
+```
+Add-MgUserPendingAccessReviewInstanceDecision -InputObject <IUsersActionsIdentity> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### ApplyViaIdentity
@@ -31,8 +43,8 @@ Invoke action applyDecisions
 
 ## PARAMETERS
 
-### -AccessReviewInstanceId
-key: id of accessReviewInstance
+### -AccessReviewInstanceDecisionItemId
+key: id of accessReviewInstanceDecisionItem
 
 ```yaml
 Type: String
@@ -46,13 +58,28 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -AccessReviewInstanceId
+key: id of accessReviewInstance
+
+```yaml
+Type: String
+Parameter Sets: Apply1, Apply
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: ApplyViaIdentity
+Parameter Sets: ApplyViaIdentity1, ApplyViaIdentity
 Aliases:
 
 Required: True
@@ -82,7 +109,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: Apply
+Parameter Sets: Apply1, Apply
 Aliases:
 
 Required: True
@@ -142,9 +169,12 @@ To create the parameters described below, construct a hash table containing the 
 
 
 INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
+  - `[AccessReviewInstanceDecisionItemId <String>]`: key: id of accessReviewInstanceDecisionItem
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
   - `[AuthenticationMethodId <String>]`: key: id of authenticationMethod
+  - `[BaseTaskId <String>]`: key: id of baseTask
+  - `[BaseTaskListId <String>]`: key: id of baseTaskList
   - `[CalendarId <String>]`: key: id of calendar
   - `[DeviceEnrollmentConfigurationId <String>]`: key: id of deviceEnrollmentConfiguration
   - `[DeviceLogCollectionResponseId <String>]`: key: id of deviceLogCollectionResponse

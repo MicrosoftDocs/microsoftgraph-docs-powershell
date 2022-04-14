@@ -10,7 +10,8 @@ schema: 2.0.0
 ## SYNOPSIS
 The user or contact that is this user's manager.
 Read-only.
-(HTTP Methods: GET, PUT, DELETE.)
+(HTTP Methods: GET, PUT, DELETE.).
+Supports $expand.
 
 ## SYNTAX
 
@@ -28,7 +29,8 @@ Get-MgUserManager -InputObject <IUsersIdentity> [-ExpandProperty <String[]>] [-P
 ## DESCRIPTION
 The user or contact that is this user's manager.
 Read-only.
-(HTTP Methods: GET, PUT, DELETE.)
+(HTTP Methods: GET, PUT, DELETE.).
+Supports $expand.
 
 ## EXAMPLES
 
@@ -62,7 +64,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersIdentity

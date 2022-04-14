@@ -11,6 +11,7 @@ schema: 2.0.0
 Devices that are owned by the user.
 Read-only.
 Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -24,6 +25,7 @@ Get-MgUserOwnedDevice -UserId <String> [-ExpandProperty <String[]>] [-Filter <St
 Devices that are owned by the user.
 Read-only.
 Nullable.
+Supports $expand.
 
 ## EXAMPLES
 

@@ -23,8 +23,8 @@ Update-MgComplianceEdiscoveryCaseSetting -CaseId <String> [-AdditionalProperties
 
 ### Update
 ```
-Update-MgComplianceEdiscoveryCaseSetting -CaseId <String> -BodyParameter <IMicrosoftGraphEdiscoverySettings>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgComplianceEdiscoveryCaseSetting -CaseId <String>
+ -BodyParameter <IMicrosoftGraphEdiscoveryCaseSettings> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -39,7 +39,7 @@ Update-MgComplianceEdiscoveryCaseSetting -InputObject <IComplianceIdentity> [-Ad
 ### UpdateViaIdentity
 ```
 Update-MgComplianceEdiscoveryCaseSetting -InputObject <IComplianceIdentity>
- -BodyParameter <IMicrosoftGraphEdiscoverySettings> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEdiscoveryCaseSettings> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -65,11 +65,11 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-settings
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+caseSettings
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEdiscoverySettings
+Type: IMicrosoftGraphEdiscoveryCaseSettings
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IComplianceIdentity
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 
 ### -Ocr
 ocrSettings
-To construct, see NOTES section for OCR properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for OCR properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEdiscoveryOcrSettings
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 
 ### -RedundancyDetection
 redundancyDetectionSettings
-To construct, see NOTES section for REDUNDANCYDETECTION properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for REDUNDANCYDETECTION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEdiscoveryRedundancyDetectionSettings
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 
 ### -TopicModeling
 topicModelingSettings
-To construct, see NOTES section for TOPICMODELING properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for TOPICMODELING properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEdiscoveryTopicModelingSettings
@@ -226,7 +226,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoverySettings
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryCaseSettings
 ## OUTPUTS
 
 ### System.Boolean
@@ -239,7 +239,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphEdiscoverySettings>: settings
+BODYPARAMETER <IMicrosoftGraphEdiscoveryCaseSettings>: caseSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
   - `[Ocr <IMicrosoftGraphEdiscoveryOcrSettings>]`: ocrSettings
@@ -250,9 +250,9 @@ BODYPARAMETER <IMicrosoftGraphEdiscoverySettings>: settings
   - `[RedundancyDetection <IMicrosoftGraphEdiscoveryRedundancyDetectionSettings>]`: redundancyDetectionSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[IsEnabled <Boolean?>]`: Indicates whether email threading and near duplicate detection are enabled.
-    - `[MaxWords <Int32?>]`: See Minimum/maximum number of words to learn more.
-    - `[MinWords <Int32?>]`: See Minimum/maximum number of words to learn more.
-    - `[SimilarityThreshold <Int32?>]`: See Document and email similarity threshold to learn more.
+    - `[MaxWords <Int32?>]`: Specifies the maximum number of words used for email threading and near duplicate detection. To learn more, see Minimum/maximum number of words.
+    - `[MinWords <Int32?>]`: Specifies the minimum number of words used for email threading and near duplicate detection. To learn more, see Minimum/maximum number of words.
+    - `[SimilarityThreshold <Int32?>]`: Specifies the similarity level for documents to be put in the same near duplicate set. To learn more, see Document and email similarity threshold.
   - `[TopicModeling <IMicrosoftGraphEdiscoveryTopicModelingSettings>]`: topicModelingSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DynamicallyAdjustTopicCount <Boolean?>]`: To learn more, see Adjust maximum number of themes dynamically.
@@ -284,9 +284,9 @@ OCR <IMicrosoftGraphEdiscoveryOcrSettings>: ocrSettings
 REDUNDANCYDETECTION <IMicrosoftGraphEdiscoveryRedundancyDetectionSettings>: redundancyDetectionSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[IsEnabled <Boolean?>]`: Indicates whether email threading and near duplicate detection are enabled.
-  - `[MaxWords <Int32?>]`: See Minimum/maximum number of words to learn more.
-  - `[MinWords <Int32?>]`: See Minimum/maximum number of words to learn more.
-  - `[SimilarityThreshold <Int32?>]`: See Document and email similarity threshold to learn more.
+  - `[MaxWords <Int32?>]`: Specifies the maximum number of words used for email threading and near duplicate detection. To learn more, see Minimum/maximum number of words.
+  - `[MinWords <Int32?>]`: Specifies the minimum number of words used for email threading and near duplicate detection. To learn more, see Minimum/maximum number of words.
+  - `[SimilarityThreshold <Int32?>]`: Specifies the similarity level for documents to be put in the same near duplicate set. To learn more, see Document and email similarity threshold.
 
 TOPICMODELING <IMicrosoftGraphEdiscoveryTopicModelingSettings>: topicModelingSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

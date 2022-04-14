@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mginformationprotection
@@ -12,7 +12,7 @@ Update informationProtection
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
 Update-MgInformationProtection [-AdditionalProperties <Hashtable>] [-Bitlocker <IMicrosoftGraphBitlocker>]
  [-DataLossPreventionPolicies <IMicrosoftGraphDataLossPreventionPolicy[]>] [-Id <String>]
@@ -23,7 +23,7 @@ Update-MgInformationProtection [-AdditionalProperties <Hashtable>] [-Bitlocker <
  [<CommonParameters>]
 ```
 
-### Update1
+### Update
 ```
 Update-MgInformationProtection -BodyParameter <IMicrosoftGraphInformationProtection> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -41,7 +41,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -53,11 +53,11 @@ Accept wildcard characters: False
 
 ### -Bitlocker
 bitlocker
-To construct, see NOTES section for BITLOCKER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BITLOCKER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphBitlocker
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -69,11 +69,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 informationProtection
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphInformationProtection
-Parameter Sets: Update1
+Parameter Sets: Update
 Aliases:
 
 Required: True
@@ -85,11 +85,11 @@ Accept wildcard characters: False
 
 ### -DataLossPreventionPolicies
 .
-To construct, see NOTES section for DATALOSSPREVENTIONPOLICIES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DATALOSSPREVENTIONPOLICIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDataLossPreventionPolicy[]
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -104,7 +104,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -131,11 +131,11 @@ Accept wildcard characters: False
 
 ### -Policy
 informationProtectionPolicy
-To construct, see NOTES section for POLICY properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for POLICY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphInformationProtectionPolicy
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -147,11 +147,11 @@ Accept wildcard characters: False
 
 ### -SensitivityLabels
 .
-To construct, see NOTES section for SENSITIVITYLABELS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SENSITIVITYLABELS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSensitivityLabel[]
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -163,11 +163,11 @@ Accept wildcard characters: False
 
 ### -SensitivityPolicySettings
 sensitivityPolicySettings
-To construct, see NOTES section for SENSITIVITYPOLICYSETTINGS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SENSITIVITYPOLICYSETTINGS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSensitivityPolicySettings
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -179,11 +179,11 @@ Accept wildcard characters: False
 
 ### -ThreatAssessmentRequests
 .
-To construct, see NOTES section for THREATASSESSMENTREQUESTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for THREATASSESSMENTREQUESTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphThreatAssessmentRequest[]
-Parameter Sets: UpdateExpanded1
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -247,9 +247,9 @@ BITLOCKER <IMicrosoftGraphBitlocker>: bitlocker
   - `[Id <String>]`: Read-only.
   - `[RecoveryKeys <IMicrosoftGraphBitlockerRecoveryKey[]>]`: The recovery keys associated with the bitlocker entity.
     - `[Id <String>]`: Read-only.
-    - `[CreatedDateTime <DateTime?>]`: The date and time when the key was originally backed up to Azure Active Directory.
-    - `[DeviceId <String>]`: ID of the device the BitLocker key is originally backed up from.
-    - `[Key <String>]`: The BitLocker recovery key.
+    - `[CreatedDateTime <DateTime?>]`: The date and time when the key was originally backed up to Azure Active Directory. Not nullable.
+    - `[DeviceId <String>]`: Identifier of the device the BitLocker key is originally backed up from. Supports $filter (eq).
+    - `[Key <String>]`: The BitLocker recovery key. Returned only on $select. Not nullable.
     - `[VolumeType <String>]`: volumeType
 
 BODYPARAMETER <IMicrosoftGraphInformationProtection>: informationProtection
@@ -260,9 +260,9 @@ BODYPARAMETER <IMicrosoftGraphInformationProtection>: informationProtection
     - `[Id <String>]`: Read-only.
     - `[RecoveryKeys <IMicrosoftGraphBitlockerRecoveryKey[]>]`: The recovery keys associated with the bitlocker entity.
       - `[Id <String>]`: Read-only.
-      - `[CreatedDateTime <DateTime?>]`: The date and time when the key was originally backed up to Azure Active Directory.
-      - `[DeviceId <String>]`: ID of the device the BitLocker key is originally backed up from.
-      - `[Key <String>]`: The BitLocker recovery key.
+      - `[CreatedDateTime <DateTime?>]`: The date and time when the key was originally backed up to Azure Active Directory. Not nullable.
+      - `[DeviceId <String>]`: Identifier of the device the BitLocker key is originally backed up from. Supports $filter (eq).
+      - `[Key <String>]`: The BitLocker recovery key. Returned only on $select. Not nullable.
       - `[VolumeType <String>]`: volumeType
   - `[DataLossPreventionPolicies <IMicrosoftGraphDataLossPreventionPolicy[]>]`: 
     - `[Id <String>]`: Read-only.
@@ -417,5 +417,8 @@ THREATASSESSMENTREQUESTS <IMicrosoftGraphThreatAssessmentRequest[]>: .
   - `[Status <String>]`: threatAssessmentStatus
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

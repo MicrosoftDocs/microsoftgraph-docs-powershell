@@ -17,8 +17,9 @@ User experience analytics appHealth Device Performance
 New-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformance [-AdditionalProperties <Hashtable>]
  [-AppCrashCount <Int32>] [-AppHangCount <Int32>] [-CrashedAppCount <Int32>] [-DeviceAppHealthScore <Double>]
  [-DeviceAppHealthStatus <String>] [-DeviceDisplayName <String>] [-DeviceId <String>]
- [-DeviceManufacturer <String>] [-DeviceModel <String>] [-Id <String>] [-MeanTimeToFailureInMinutes <Int32>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DeviceManufacturer <String>] [-DeviceModel <String>] [-HealthStatus <String>] [-Id <String>]
+ [-MeanTimeToFailureInMinutes <Int32>] [-ProcessedDateTime <DateTime>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -84,7 +85,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analytics device performance entity contains device performance details.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformance
@@ -205,6 +206,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -HealthStatus
+userExperienceAnalyticsHealthState
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Id
 Read-only.
 
@@ -226,6 +242,21 @@ Valid values -2147483648 to 2147483647
 
 ```yaml
 Type: Int32
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProcessedDateTime
+The date and time when the statistics were last computed.
+
+```yaml
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -297,6 +328,8 @@ BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformance>
   - `[DeviceId <String>]`: The id of the device.
   - `[DeviceManufacturer <String>]`: The manufacturer name of the device.
   - `[DeviceModel <String>]`: The model name of the device.
+  - `[HealthStatus <String>]`: userExperienceAnalyticsHealthState
   - `[MeanTimeToFailureInMinutes <Int32?>]`: The mean time to failure for the device in minutes. Valid values -2147483648 to 2147483647
+  - `[ProcessedDateTime <DateTime?>]`: The date and time when the statistics were last computed.
 
 ## RELATED LINKS

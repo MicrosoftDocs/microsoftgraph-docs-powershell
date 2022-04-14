@@ -12,27 +12,27 @@ Invoke action playPrompt
 
 ## SYNTAX
 
-### PlayExpanded1 (Default)
+### PlayExpanded (Default)
 ```
 Invoke-MgPlayCommunicationCallPrompt -CallId <String> [-AdditionalProperties <Hashtable>]
  [-ClientContext <String>] [-Prompts <IMicrosoftGraphPrompt[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Play1
+### Play
 ```
 Invoke-MgPlayCommunicationCallPrompt -CallId <String>
  -BodyParameter <IPaths1Gzqcv2CommunicationsCallsCallIdMicrosoftGraphPlaypromptPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### PlayViaIdentityExpanded1
+### PlayViaIdentityExpanded
 ```
 Invoke-MgPlayCommunicationCallPrompt -InputObject <ICloudCommunicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-ClientContext <String>] [-Prompts <IMicrosoftGraphPrompt[]>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### PlayViaIdentity1
+### PlayViaIdentity
 ```
 Invoke-MgPlayCommunicationCallPrompt -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPaths1Gzqcv2CommunicationsCallsCallIdMicrosoftGraphPlaypromptPostRequestbodyContentApplicationJsonSchema>
@@ -51,7 +51,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: PlayExpanded1, PlayViaIdentityExpanded1
+Parameter Sets: PlayExpanded, PlayViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -63,11 +63,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1Gzqcv2CommunicationsCallsCallIdMicrosoftGraphPlaypromptPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Play1, PlayViaIdentity1
+Parameter Sets: Play, PlayViaIdentity
 Aliases:
 
 Required: True
@@ -82,7 +82,7 @@ key: id of call
 
 ```yaml
 Type: String
-Parameter Sets: PlayExpanded1, Play1
+Parameter Sets: PlayExpanded, Play
 Aliases:
 
 Required: True
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: PlayExpanded1, PlayViaIdentityExpanded1
+Parameter Sets: PlayExpanded, PlayViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -109,11 +109,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ICloudCommunicationsIdentity
-Parameter Sets: PlayViaIdentityExpanded1, PlayViaIdentity1
+Parameter Sets: PlayViaIdentityExpanded, PlayViaIdentity
 Aliases:
 
 Required: True
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: IMicrosoftGraphPrompt[]
-Parameter Sets: PlayExpanded1, PlayViaIdentityExpanded1
+Parameter Sets: PlayExpanded, PlayViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -178,7 +178,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IPaths1Gzqcv2CommunicationsCallsCallIdMicrosoftGraphPlaypromptPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlayPromptOperation1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlayPromptOperation
 ## NOTES
 
 ALIASES
@@ -194,10 +194,13 @@ BODYPARAMETER <IPaths1Gzqcv2CommunicationsCallsCallIdMicrosoftGraphPlaypromptPos
   - `[Prompts <IMicrosoftGraphPrompt[]>]`: 
 
 INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
+  - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call
   - `[CallRecordId <String>]`: key: id of callRecord
   - `[CommsOperationId <String>]`: key: id of commsOperation
+  - `[MeetingAttendanceReportId <String>]`: key: id of meetingAttendanceReport
+  - `[MeetingRegistrationQuestionId <String>]`: key: id of meetingRegistrationQuestion
   - `[OnlineMeetingId <String>]`: key: id of onlineMeeting
   - `[ParticipantId <String>]`: key: id of participant
   - `[PresenceId <String>]`: key: id of presence

@@ -8,7 +8,8 @@ schema: 2.0.0
 # New-MgAgreementFileVersion
 
 ## SYNOPSIS
-Create new navigation property to versions for agreements
+Read-only.
+Customized versions of the terms of use agreement in the Azure AD tenant.
 
 ## SYNTAX
 
@@ -41,7 +42,8 @@ New-MgAgreementFileVersion -InputObject <IIdentityGovernanceIdentity> -BodyParam
 ```
 
 ## DESCRIPTION
-Create new navigation property to versions for agreements
+Read-only.
+Customized versions of the terms of use agreement in the Azure AD tenant.
 
 ## EXAMPLES
 
@@ -108,7 +110,8 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-.
+The date time representing when the file was created.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
 Type: DateTime
@@ -123,7 +126,8 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+Localized display name of the policy file of an agreement.
+The localized display name is shown to end users who view the agreement.
 
 ```yaml
 Type: String
@@ -139,7 +143,7 @@ Accept wildcard characters: False
 
 ### -FileData
 agreementFileData
-To construct, see NOTES section for FILEDATA properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for FILEDATA properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAgreementFileData
@@ -154,7 +158,8 @@ Accept wildcard characters: False
 ```
 
 ### -FileName
-.
+Name of the agreement file (for example, TOU.pdf).
+Read-only.
 
 ```yaml
 Type: String
@@ -185,7 +190,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentityGovernanceIdentity
@@ -200,7 +205,9 @@ Accept wildcard characters: False
 ```
 
 ### -IsDefault
-.
+If none of the languages matches the client preference, indicates whether this is the default agreement file .
+If none of the files are marked as default, the first one is treated as the default.
+Read-only.
 
 ```yaml
 Type: SwitchParameter
@@ -215,7 +222,8 @@ Accept wildcard characters: False
 ```
 
 ### -IsMajorVersion
-.
+Indicates whether the agreement file is a major version update.
+Major version updates invalidate the agreement's acceptances on the corresponding language.
 
 ```yaml
 Type: SwitchParameter
@@ -230,7 +238,11 @@ Accept wildcard characters: False
 ```
 
 ### -Language
-.
+The language of the agreement file in the format 'languagecode2-country/regioncode2'.
+'languagecode2' is a lowercase two-letter code derived from ISO 639-1, while 'country/regioncode2' is derived from ISO 3166 and usually consists of two uppercase letters, or a BCP-47 language tag.
+For example, U.S.
+English is en-US.
+Read-only.
 
 ```yaml
 Type: String
@@ -313,9 +325,11 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageResourceScopeId <String>]`: key: id of accessPackageResourceScope
   - `[AccessReviewDecisionId <String>]`: key: id of accessReviewDecision
   - `[AccessReviewHistoryDefinitionId <String>]`: key: id of accessReviewHistoryDefinition
+  - `[AccessReviewHistoryInstanceId <String>]`: key: id of accessReviewHistoryInstance
   - `[AccessReviewId <String>]`: key: id of accessReview
   - `[AccessReviewId1 <String>]`: key: id of accessReview
   - `[AccessReviewInstanceDecisionItemId <String>]`: key: id of accessReviewInstanceDecisionItem
+  - `[AccessReviewInstanceDecisionItemId1 <String>]`: key: id of accessReviewInstanceDecisionItem
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewReviewerId <String>]`: key: id of accessReviewReviewer
   - `[AccessReviewScheduleDefinitionId <String>]`: key: id of accessReviewScheduleDefinition
@@ -330,11 +344,13 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[BusinessFlowTemplateId <String>]`: key: id of businessFlowTemplate
   - `[ConnectedOrganizationId <String>]`: key: id of connectedOrganization
   - `[DirectoryObjectId <String>]`: key: id of directoryObject
+  - `[GovernanceInsightId <String>]`: key: id of governanceInsight
   - `[GovernanceResourceId <String>]`: key: id of governanceResource
   - `[GovernanceRoleAssignmentId <String>]`: key: id of governanceRoleAssignment
   - `[GovernanceRoleAssignmentRequestId <String>]`: key: id of governanceRoleAssignmentRequest
   - `[GovernanceRoleDefinitionId <String>]`: key: id of governanceRoleDefinition
   - `[GovernanceRoleSettingId <String>]`: key: id of governanceRoleSetting
+  - `[GroupId <String>]`: key: id of group
   - `[On <String>]`: Usage: on={on}
   - `[PrivilegedAccessId <String>]`: key: id of privilegedAccess
   - `[PrivilegedApprovalId <String>]`: key: id of privilegedApproval

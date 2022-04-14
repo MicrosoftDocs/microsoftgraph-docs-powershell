@@ -12,6 +12,7 @@ Users that are members of this directory role.
 HTTP Methods: GET, POST, DELETE.
 Read-only.
 Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -25,6 +26,7 @@ Users that are members of this directory role.
 HTTP Methods: GET, POST, DELETE.
 Read-only.
 Nullable.
+Supports $expand.
 
 ## EXAMPLES
 

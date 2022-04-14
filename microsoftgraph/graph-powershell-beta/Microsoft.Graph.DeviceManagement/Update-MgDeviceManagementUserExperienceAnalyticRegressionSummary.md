@@ -52,7 +52,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analytics Regression Summary.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsRegressionSummary
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 
 ### -ManufacturerRegression
 The metric values for the user experience analytics Manufacturer regression.
-To construct, see NOTES section for MANUFACTURERREGRESSION properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for MANUFACTURERREGRESSION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsMetric[]
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 
 ### -ModelRegression
 The metric values for the user experience analytics model regression.
-To construct, see NOTES section for MODELREGRESSION properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for MODELREGRESSION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsMetric[]
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 
 ### -OperatingSystemRegression
 The metric values for the user experience analytics operating system regression.
-To construct, see NOTES section for OPERATINGSYSTEMREGRESSION properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for OPERATINGSYSTEMREGRESSION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserExperienceAnalyticsMetric[]

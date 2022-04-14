@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgRoleManagementDirectory
 
 ## SYNOPSIS
-Get directory from roleManagement
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -17,7 +18,8 @@ Get-MgRoleManagementDirectory [-ExpandProperty <String[]>] [-Property <String[]>
 ```
 
 ## DESCRIPTION
-Get directory from roleManagement
+Read-only.
+Nullable.
 
 ## EXAMPLES
 

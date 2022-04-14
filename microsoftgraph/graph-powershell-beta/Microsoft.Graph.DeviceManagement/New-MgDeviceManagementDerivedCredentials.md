@@ -50,7 +50,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Entity that describes tenant level settings for derived credentials
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementDerivedCredentialSettings
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -Issuer
-deviceManagementDerivedCredentialIssuer
+Supported values for the derived credential issuer.
 
 ```yaml
 Type: String
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -NotificationType
-deviceManagementDerivedCredentialNotificationType
+Supported values for the notification type to use.
 
 ```yaml
 Type: String
@@ -193,7 +193,7 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagementDerivedCredentialSettings>: Entity
   - `[Id <String>]`: Read-only.
   - `[DisplayName <String>]`: The display name for the profile.
   - `[HelpUrl <String>]`: The URL that will be accessible to end users as they retrieve a derived credential using the Company Portal.
-  - `[Issuer <String>]`: deviceManagementDerivedCredentialIssuer
-  - `[NotificationType <String>]`: deviceManagementDerivedCredentialNotificationType
+  - `[Issuer <String>]`: Supported values for the derived credential issuer.
+  - `[NotificationType <String>]`: Supported values for the notification type to use.
 
 ## RELATED LINKS

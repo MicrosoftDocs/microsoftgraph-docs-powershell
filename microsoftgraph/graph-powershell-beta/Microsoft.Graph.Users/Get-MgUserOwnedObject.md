@@ -11,6 +11,7 @@ schema: 2.0.0
 Directory objects that are owned by the user.
 Read-only.
 Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -24,6 +25,7 @@ Get-MgUserOwnedObject -UserId <String> [-ExpandProperty <String[]>] [-Filter <St
 Directory objects that are owned by the user.
 Read-only.
 Nullable.
+Supports $expand.
 
 ## EXAMPLES
 

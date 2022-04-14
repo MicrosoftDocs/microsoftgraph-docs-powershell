@@ -68,7 +68,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Entity which represents a connection to an Exchange environment.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementExchangeConnector
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 ```
 
 ### -ExchangeConnectorType
-deviceManagementExchangeConnectorType
+The type of Exchange Connector.
 
 ```yaml
 Type: String
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementAdministrationIdentity
@@ -249,7 +249,7 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-deviceManagementExchangeConnectorStatus
+The current status of the Exchange Connector.
 
 ```yaml
 Type: String
@@ -333,12 +333,12 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagementExchangeConnector>: Entity which r
   - `[Id <String>]`: Read-only.
   - `[ConnectorServerName <String>]`: The name of the server hosting the Exchange Connector.
   - `[ExchangeAlias <String>]`: An alias assigned to the Exchange server
-  - `[ExchangeConnectorType <String>]`: deviceManagementExchangeConnectorType
+  - `[ExchangeConnectorType <String>]`: The type of Exchange Connector.
   - `[ExchangeOrganization <String>]`: Exchange Organization to the Exchange server
   - `[LastSyncDateTime <DateTime?>]`: Last sync time for the Exchange Connector
   - `[PrimarySmtpAddress <String>]`: Email address used to configure the Service To Service Exchange Connector.
   - `[ServerName <String>]`: The name of the Exchange server.
-  - `[Status <String>]`: deviceManagementExchangeConnectorStatus
+  - `[Status <String>]`: The current status of the Exchange Connector.
   - `[Version <String>]`: The version of the ExchangeConnectorAgent
 
 INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
@@ -346,10 +346,14 @@ INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
   - `[CloudPcDeviceImageId <String>]`: key: id of cloudPcDeviceImage
+  - `[CloudPcGalleryImageId <String>]`: key: id of cloudPcGalleryImage
   - `[CloudPcId <String>]`: key: id of cloudPC
   - `[CloudPcOnPremisesConnectionId <String>]`: key: id of cloudPcOnPremisesConnection
   - `[CloudPcProvisioningPolicyAssignmentId <String>]`: key: id of cloudPcProvisioningPolicyAssignment
   - `[CloudPcProvisioningPolicyId <String>]`: key: id of cloudPcProvisioningPolicy
+  - `[CloudPcServicePlanId <String>]`: key: id of cloudPcServicePlan
+  - `[CloudPcSnapshotId <String>]`: key: id of cloudPcSnapshot
+  - `[CloudPcSupportedRegionId <String>]`: key: id of cloudPcSupportedRegion
   - `[CloudPcUserSettingAssignmentId <String>]`: key: id of cloudPcUserSettingAssignment
   - `[CloudPcUserSettingId <String>]`: key: id of cloudPcUserSetting
   - `[ComanagementEligibleDeviceId <String>]`: key: id of comanagementEligibleDevice

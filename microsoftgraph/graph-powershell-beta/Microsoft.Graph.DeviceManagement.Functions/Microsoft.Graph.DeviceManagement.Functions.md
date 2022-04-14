@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.DeviceManagement.Functions
 Module Guid: 9629ac08-4760-467d-851c-bc52336edb94
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions
@@ -142,12 +142,6 @@ Invoke function getFileVaultKey
 
 ### [Get-MgDeviceManagementDeviceShellScriptUserRunStateDeviceRunStateManagedDeviceNonCompliantSetting](Get-MgDeviceManagementDeviceShellScriptUserRunStateDeviceRunStateManagedDeviceNonCompliantSetting.md)
 Invoke function getNonCompliantSettings
-
-### [Get-MgDeviceManagementEffectivePermission1F5F](Get-MgDeviceManagementEffectivePermission1F5F.md)
-Invoke function getEffectivePermissions
-
-### [Get-MgDeviceManagementEffectivePermission49B0](Get-MgDeviceManagementEffectivePermission49B0.md)
-Invoke function getEffectivePermissions
 
 ### [Get-MgDeviceManagementManagedDeviceCloudPcRemoteActionResult](Get-MgDeviceManagementManagedDeviceCloudPcRemoteActionResult.md)
 Invoke function getCloudPcRemoteActionResults

@@ -11,6 +11,7 @@ schema: 2.0.0
 Devices that are registered for the user.
 Read-only.
 Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -23,6 +24,7 @@ Get-MgUserRegisteredDeviceByRef -UserId <String> [-Filter <String>] [-Search <St
 Devices that are registered for the user.
 Read-only.
 Nullable.
+Supports $expand.
 
 ## EXAMPLES
 

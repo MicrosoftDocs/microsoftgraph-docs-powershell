@@ -8,9 +8,9 @@ schema: 2.0.0
 # New-MgGroupThreadPostAttachment
 
 ## SYNOPSIS
-The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post.
 Read-only.
 Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -41,9 +41,9 @@ New-MgGroupThreadPostAttachment -InputObject <IGroupsIdentity> -BodyParameter <I
 ```
 
 ## DESCRIPTION
-The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post.
 Read-only.
 Nullable.
+Supports $expand.
 
 ## EXAMPLES
 
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 attachment
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAttachment
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IGroupsIdentity
@@ -188,8 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-The display name of the attachment.
-This does not need to be the actual file name.
+The attachment's file name.
 
 ```yaml
 Type: String
@@ -289,7 +288,7 @@ BODYPARAMETER <IMicrosoftGraphAttachment>: attachment
   - `[ContentType <String>]`: The MIME type.
   - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
   - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
+  - `[Name <String>]`: The attachment's file name.
   - `[Size <Int32?>]`: The length of the attachment in bytes.
 
 INPUTOBJECT <IGroupsIdentity>: Identity Parameter

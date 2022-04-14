@@ -74,7 +74,7 @@ Accept wildcard characters: False
 
 ### -Address
 postalAddressType
-To construct, see NOTES section for ADDRESS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ADDRESS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPostalAddressType
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 customer
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCustomer
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 
 ### -Currency
 currency
-To construct, see NOTES section for CURRENCY properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for CURRENCY properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphCurrency
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IFinancialsIdentity
@@ -273,7 +273,7 @@ Accept wildcard characters: False
 
 ### -PaymentMethod
 paymentMethod
-To construct, see NOTES section for PAYMENTMETHOD properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for PAYMENTMETHOD properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPaymentMethod
@@ -304,7 +304,7 @@ Accept wildcard characters: False
 
 ### -PaymentTerm
 paymentTerm
-To construct, see NOTES section for PAYMENTTERM properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for PAYMENTTERM properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPaymentTerm
@@ -350,7 +350,7 @@ Accept wildcard characters: False
 
 ### -Picture
 .
-To construct, see NOTES section for PICTURE properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for PICTURE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPicture[]
@@ -366,7 +366,7 @@ Accept wildcard characters: False
 
 ### -ShipmentMethod
 shipmentMethod
-To construct, see NOTES section for SHIPMENTMETHOD properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SHIPMENTMETHOD properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphShipmentMethod

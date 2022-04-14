@@ -1,6 +1,6 @@
----
+﻿---
 Module Name: Microsoft.Graph.Applications
-Module Guid: 17d963a2-f1df-4955-bf6b-1a7b47442e21
+Module Guid: c6061b4e-c0fa-4102-a8ed-7d15bcdcf776
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications
 Help Version: 1.0.0.0
 Locale: en-US
@@ -23,6 +23,9 @@ Invoke action addKey
 ### [Add-MgServicePrincipalPassword](Add-MgServicePrincipalPassword.md)
 Invoke action addPassword
 
+### [Clear-MgApplicationVerifiedPublisher](Clear-MgApplicationVerifiedPublisher.md)
+Invoke action unsetVerifiedPublisher
+
 ### [Confirm-MgApplicationMemberGroup](Confirm-MgApplicationMemberGroup.md)
 Invoke action checkMemberGroups
 
@@ -36,8 +39,7 @@ Invoke action checkMemberGroups
 Invoke action checkMemberObjects
 
 ### [Get-MgApplication](Get-MgApplication.md)
-Represents an Azure Active Directory object.
-The directoryObject type is the base type for many other directory entity types.
+Get entity from applications by key
 
 ### [Get-MgApplicationById](Get-MgApplicationById.md)
 Invoke action getByIds
@@ -75,11 +77,13 @@ Invoke action getMemberObjects
 Directory objects that are owners of the application.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [Get-MgApplicationOwnerByRef](Get-MgApplicationOwnerByRef.md)
 Directory objects that are owners of the application.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [Get-MgApplicationTemplate](Get-MgApplicationTemplate.md)
 Get entity from applicationTemplates by key
@@ -92,31 +96,36 @@ Get ref of tokenIssuancePolicies from applications
 
 ### [Get-MgApplicationTokenLifetimePolicy](Get-MgApplicationTokenLifetimePolicy.md)
 The tokenLifetimePolicies assigned to this application.
+Supports $expand.
 
 ### [Get-MgApplicationTokenLifetimePolicyByRef](Get-MgApplicationTokenLifetimePolicyByRef.md)
 The tokenLifetimePolicies assigned to this application.
+Supports $expand.
 
 ### [Get-MgGroupAppRoleAssignment](Get-MgGroupAppRoleAssignment.md)
 Represents the app roles a group has been granted for an application.
+Supports $expand.
 
 ### [Get-MgServicePrincipal](Get-MgServicePrincipal.md)
-Represents an Azure Active Directory object.
-The directoryObject type is the base type for many other directory entity types.
+Get entity from servicePrincipals by key
 
 ### [Get-MgServicePrincipalAppRoleAssignedTo](Get-MgServicePrincipalAppRoleAssignedTo.md)
-App role assignments for this app or service, granted to users, groups, and other service principals.
+App role assignments for this app or service, granted to users, groups, and other service principals.Supports $expand.
 
 ### [Get-MgServicePrincipalAppRoleAssignment](Get-MgServicePrincipalAppRoleAssignment.md)
 App role assignment for another app or service, granted to this service principal.
+Supports $expand.
 
 ### [Get-MgServicePrincipalById](Get-MgServicePrincipalById.md)
 Invoke action getByIds
 
 ### [Get-MgServicePrincipalClaimMappingPolicy](Get-MgServicePrincipalClaimMappingPolicy.md)
 The claimsMappingPolicies assigned to this service principal.
+Supports $expand.
 
 ### [Get-MgServicePrincipalClaimMappingPolicyByRef](Get-MgServicePrincipalClaimMappingPolicyByRef.md)
 The claimsMappingPolicies assigned to this service principal.
+Supports $expand.
 
 ### [Get-MgServicePrincipalCreatedObject](Get-MgServicePrincipalCreatedObject.md)
 Directory objects created by this service principal.
@@ -130,6 +139,7 @@ Nullable.
 
 ### [Get-MgServicePrincipalDelegatedPermissionClassification](Get-MgServicePrincipalDelegatedPermissionClassification.md)
 The permission classifications for delegated permissions exposed by the app that this service principal represents.
+Supports $expand.
 
 ### [Get-MgServicePrincipalDelta](Get-MgServicePrincipalDelta.md)
 Invoke function delta
@@ -140,9 +150,11 @@ Services like Sharepoint populate this property with a tenant specific SharePoin
 
 ### [Get-MgServicePrincipalHomeRealmDiscoveryPolicy](Get-MgServicePrincipalHomeRealmDiscoveryPolicy.md)
 The homeRealmDiscoveryPolicies assigned to this service principal.
+Supports $expand.
 
 ### [Get-MgServicePrincipalHomeRealmDiscoveryPolicyByRef](Get-MgServicePrincipalHomeRealmDiscoveryPolicyByRef.md)
 The homeRealmDiscoveryPolicies assigned to this service principal.
+Supports $expand.
 
 ### [Get-MgServicePrincipalMemberGroup](Get-MgServicePrincipalMemberGroup.md)
 Invoke action getMemberGroups
@@ -170,44 +182,55 @@ Nullable.
 Directory objects that are owned by this service principal.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [Get-MgServicePrincipalOwnedObjectByRef](Get-MgServicePrincipalOwnedObjectByRef.md)
 Directory objects that are owned by this service principal.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [Get-MgServicePrincipalOwner](Get-MgServicePrincipalOwner.md)
 Directory objects that are owners of this servicePrincipal.
 The owners are a set of non-admin users or servicePrincipals who are allowed to modify this object.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [Get-MgServicePrincipalOwnerByRef](Get-MgServicePrincipalOwnerByRef.md)
 Directory objects that are owners of this servicePrincipal.
 The owners are a set of non-admin users or servicePrincipals who are allowed to modify this object.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [Get-MgServicePrincipalTokenIssuancePolicy](Get-MgServicePrincipalTokenIssuancePolicy.md)
 The tokenIssuancePolicies assigned to this service principal.
+Supports $expand.
 
 ### [Get-MgServicePrincipalTokenIssuancePolicyByRef](Get-MgServicePrincipalTokenIssuancePolicyByRef.md)
 The tokenIssuancePolicies assigned to this service principal.
+Supports $expand.
 
 ### [Get-MgServicePrincipalTokenLifetimePolicy](Get-MgServicePrincipalTokenLifetimePolicy.md)
 The tokenLifetimePolicies assigned to this service principal.
+Supports $expand.
 
 ### [Get-MgServicePrincipalTokenLifetimePolicyByRef](Get-MgServicePrincipalTokenLifetimePolicyByRef.md)
 The tokenLifetimePolicies assigned to this service principal.
+Supports $expand.
 
 ### [Get-MgServicePrincipalTokenLifetimePolicyByRef](Get-MgServicePrincipalTokenLifetimePolicyByRef.md)
 The tokenLifetimePolicies assigned to this service principal.
+Supports $expand.
 
 ### [Get-MgServicePrincipalTokenLifetimePolicyByRef](Get-MgServicePrincipalTokenLifetimePolicyByRef.md)
 The tokenLifetimePolicies assigned to this service principal.
+Supports $expand.
 
 ### [Get-MgUserAppRoleAssignment](Get-MgUserAppRoleAssignment.md)
 Represents the app roles a user has been granted for an application.
+Supports $expand.
 
 ### [Invoke-MgInstantiateApplicationTemplate](Invoke-MgInstantiateApplicationTemplate.md)
 Invoke action instantiate
@@ -226,6 +249,7 @@ Create new navigation property ref to homeRealmDiscoveryPolicies for application
 Directory objects that are owners of the application.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [New-MgApplicationTemplate](New-MgApplicationTemplate.md)
 Add new entity to applicationTemplates
@@ -235,21 +259,25 @@ Create new navigation property ref to tokenIssuancePolicies for applications
 
 ### [New-MgApplicationTokenLifetimePolicyByRef](New-MgApplicationTokenLifetimePolicyByRef.md)
 The tokenLifetimePolicies assigned to this application.
+Supports $expand.
 
 ### [New-MgGroupAppRoleAssignment](New-MgGroupAppRoleAssignment.md)
 Represents the app roles a group has been granted for an application.
+Supports $expand.
 
 ### [New-MgServicePrincipal](New-MgServicePrincipal.md)
 Add new entity to servicePrincipals
 
 ### [New-MgServicePrincipalAppRoleAssignedTo](New-MgServicePrincipalAppRoleAssignedTo.md)
-App role assignments for this app or service, granted to users, groups, and other service principals.
+App role assignments for this app or service, granted to users, groups, and other service principals.Supports $expand.
 
 ### [New-MgServicePrincipalAppRoleAssignment](New-MgServicePrincipalAppRoleAssignment.md)
 App role assignment for another app or service, granted to this service principal.
+Supports $expand.
 
 ### [New-MgServicePrincipalClaimMappingPolicyByRef](New-MgServicePrincipalClaimMappingPolicyByRef.md)
 The claimsMappingPolicies assigned to this service principal.
+Supports $expand.
 
 ### [New-MgServicePrincipalCreatedObjectByRef](New-MgServicePrincipalCreatedObjectByRef.md)
 Directory objects created by this service principal.
@@ -258,6 +286,7 @@ Nullable.
 
 ### [New-MgServicePrincipalDelegatedPermissionClassification](New-MgServicePrincipalDelegatedPermissionClassification.md)
 The permission classifications for delegated permissions exposed by the app that this service principal represents.
+Supports $expand.
 
 ### [New-MgServicePrincipalEndpoint](New-MgServicePrincipalEndpoint.md)
 Endpoints available for discovery.
@@ -265,9 +294,11 @@ Services like Sharepoint populate this property with a tenant specific SharePoin
 
 ### [New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef](New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef.md)
 The homeRealmDiscoveryPolicies assigned to this service principal.
+Supports $expand.
 
 ### [New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef](New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef.md)
 The homeRealmDiscoveryPolicies assigned to this service principal.
+Supports $expand.
 
 ### [New-MgServicePrincipalOauth2PermissionGrantByRef](New-MgServicePrincipalOauth2PermissionGrantByRef.md)
 Delegated permission grants authorizing this service principal to access an API on behalf of a signed-in user.
@@ -278,32 +309,36 @@ Nullable.
 Directory objects that are owned by this service principal.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [New-MgServicePrincipalOwnerByRef](New-MgServicePrincipalOwnerByRef.md)
 Directory objects that are owners of this servicePrincipal.
 The owners are a set of non-admin users or servicePrincipals who are allowed to modify this object.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [New-MgServicePrincipalTokenIssuancePolicyByRef](New-MgServicePrincipalTokenIssuancePolicyByRef.md)
 The tokenIssuancePolicies assigned to this service principal.
+Supports $expand.
 
 ### [New-MgServicePrincipalTokenLifetimePolicyByRef](New-MgServicePrincipalTokenLifetimePolicyByRef.md)
 The tokenLifetimePolicies assigned to this service principal.
+Supports $expand.
 
 ### [New-MgServicePrincipalTokenLifetimePolicyByRef](New-MgServicePrincipalTokenLifetimePolicyByRef.md)
 The tokenLifetimePolicies assigned to this service principal.
+Supports $expand.
 
 ### [New-MgUserAppRoleAssignment](New-MgUserAppRoleAssignment.md)
 Represents the app roles a user has been granted for an application.
+Supports $expand.
 
 ### [Remove-MgApplication](Remove-MgApplication.md)
-Represents an Azure Active Directory object.
-The directoryObject type is the base type for many other directory entity types.
+Delete entity from applications
 
 ### [Remove-MgApplication](Remove-MgApplication.md)
-Represents an Azure Active Directory object.
-The directoryObject type is the base type for many other directory entity types.
+Delete entity from applications
 
 ### [Remove-MgApplicationExtensionProperty](Remove-MgApplicationExtensionProperty.md)
 Read-only.
@@ -320,19 +355,21 @@ Delete entity from applicationTemplates
 
 ### [Remove-MgGroupAppRoleAssignment](Remove-MgGroupAppRoleAssignment.md)
 Represents the app roles a group has been granted for an application.
+Supports $expand.
 
 ### [Remove-MgServicePrincipal](Remove-MgServicePrincipal.md)
-Represents an Azure Active Directory object.
-The directoryObject type is the base type for many other directory entity types.
+Delete entity from servicePrincipals
 
 ### [Remove-MgServicePrincipalAppRoleAssignedTo](Remove-MgServicePrincipalAppRoleAssignedTo.md)
-App role assignments for this app or service, granted to users, groups, and other service principals.
+App role assignments for this app or service, granted to users, groups, and other service principals.Supports $expand.
 
 ### [Remove-MgServicePrincipalAppRoleAssignment](Remove-MgServicePrincipalAppRoleAssignment.md)
 App role assignment for another app or service, granted to this service principal.
+Supports $expand.
 
 ### [Remove-MgServicePrincipalDelegatedPermissionClassification](Remove-MgServicePrincipalDelegatedPermissionClassification.md)
 The permission classifications for delegated permissions exposed by the app that this service principal represents.
+Supports $expand.
 
 ### [Remove-MgServicePrincipalEndpoint](Remove-MgServicePrincipalEndpoint.md)
 Endpoints available for discovery.
@@ -346,6 +383,7 @@ Invoke action removePassword
 
 ### [Remove-MgUserAppRoleAssignment](Remove-MgUserAppRoleAssignment.md)
 Represents the app roles a user has been granted for an application.
+Supports $expand.
 
 ### [Restore-MgApplication](Restore-MgApplication.md)
 Invoke action restore
@@ -360,6 +398,9 @@ Invoke action restore
 The main logo for the application.
 Not nullable.
 
+### [Set-MgApplicationVerifiedPublisher](Set-MgApplicationVerifiedPublisher.md)
+Invoke action setVerifiedPublisher
+
 ### [Test-MgApplicationProperty](Test-MgApplicationProperty.md)
 Invoke action validateProperties
 
@@ -367,8 +408,7 @@ Invoke action validateProperties
 Invoke action validateProperties
 
 ### [Update-MgApplication](Update-MgApplication.md)
-Represents an Azure Active Directory object.
-The directoryObject type is the base type for many other directory entity types.
+Update entity in applications
 
 ### [Update-MgApplicationExtensionProperty](Update-MgApplicationExtensionProperty.md)
 Read-only.
@@ -379,19 +419,21 @@ Update entity in applicationTemplates
 
 ### [Update-MgGroupAppRoleAssignment](Update-MgGroupAppRoleAssignment.md)
 Represents the app roles a group has been granted for an application.
+Supports $expand.
 
 ### [Update-MgServicePrincipal](Update-MgServicePrincipal.md)
-Represents an Azure Active Directory object.
-The directoryObject type is the base type for many other directory entity types.
+Update entity in servicePrincipals
 
 ### [Update-MgServicePrincipalAppRoleAssignedTo](Update-MgServicePrincipalAppRoleAssignedTo.md)
-App role assignments for this app or service, granted to users, groups, and other service principals.
+App role assignments for this app or service, granted to users, groups, and other service principals.Supports $expand.
 
 ### [Update-MgServicePrincipalAppRoleAssignment](Update-MgServicePrincipalAppRoleAssignment.md)
 App role assignment for another app or service, granted to this service principal.
+Supports $expand.
 
 ### [Update-MgServicePrincipalDelegatedPermissionClassification](Update-MgServicePrincipalDelegatedPermissionClassification.md)
 The permission classifications for delegated permissions exposed by the app that this service principal represents.
+Supports $expand.
 
 ### [Update-MgServicePrincipalEndpoint](Update-MgServicePrincipalEndpoint.md)
 Endpoints available for discovery.
@@ -399,4 +441,5 @@ Services like Sharepoint populate this property with a tenant specific SharePoin
 
 ### [Update-MgUserAppRoleAssignment](Update-MgUserAppRoleAssignment.md)
 Represents the app roles a user has been granted for an application.
+Supports $expand.
 

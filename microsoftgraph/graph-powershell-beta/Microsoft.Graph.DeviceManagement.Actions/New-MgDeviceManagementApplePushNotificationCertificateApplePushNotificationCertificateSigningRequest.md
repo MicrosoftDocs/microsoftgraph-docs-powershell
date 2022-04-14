@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/new-mgdevicemanagementapplepushnotificationcertificateapplepushnotificationcertificatesigningrequest
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest
 
 ## SYNOPSIS
-Invoke action generateApplePushNotificationCertificateSigningRequest
+Download Apple push notification certificate signing request
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ New-MgDeviceManagementApplePushNotificationCertificateApplePushNotificationCerti
 ```
 
 ## DESCRIPTION
-Invoke action generateApplePushNotificationCertificateSigningRequest
+Download Apple push notification certificate signing request
 
 ## EXAMPLES
 
@@ -63,7 +63,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES

@@ -53,7 +53,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Entity that represents a defined collection of device settings
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementTemplate
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 
 ### -Categories
 Collection of setting categories within the template
-To construct, see NOTES section for CATEGORIES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for CATEGORIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementTemplateSettingCategory[]
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 
 ### -MigratableTo
 Collection of templates this template can migrate to
-To construct, see NOTES section for MIGRATABLETO properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for MIGRATABLETO properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementTemplate[]
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlatformType
-.
+Supported platform types for policies.
 
 ```yaml
 Type: String
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 
 ### -Settings
 Collection of all settings this template has
-To construct, see NOTES section for SETTINGS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SETTINGS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementSettingInstance[]
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 ```
 
 ### -TemplateSubtype
-deviceManagementTemplateSubtype
+Template subtype
 
 ```yaml
 Type: String
@@ -237,7 +237,7 @@ Accept wildcard characters: False
 ```
 
 ### -TemplateType
-deviceManagementTemplateType
+Template type
 
 ```yaml
 Type: String
@@ -346,11 +346,11 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagementTemplate>: Entity that represents 
   - `[IntentCount <Int32?>]`: Number of Intents created from this template.
   - `[IsDeprecated <Boolean?>]`: The template is deprecated or not. Intents cannot be created from a deprecated template.
   - `[MigratableTo <IMicrosoftGraphDeviceManagementTemplate[]>]`: Collection of templates this template can migrate to
-  - `[PlatformType <String>]`: 
+  - `[PlatformType <String>]`: Supported platform types for policies.
   - `[PublishedDateTime <DateTime?>]`: When the template was published
   - `[Settings <IMicrosoftGraphDeviceManagementSettingInstance[]>]`: Collection of all settings this template has
-  - `[TemplateSubtype <String>]`: deviceManagementTemplateSubtype
-  - `[TemplateType <String>]`: deviceManagementTemplateType
+  - `[TemplateSubtype <String>]`: Template subtype
+  - `[TemplateType <String>]`: Template type
   - `[VersionInfo <String>]`: The template's version information
 
 CATEGORIES <IMicrosoftGraphDeviceManagementTemplateSettingCategory[]>: Collection of setting categories within the template
@@ -407,11 +407,11 @@ MIGRATABLETO <IMicrosoftGraphDeviceManagementTemplate[]>: Collection of template
   - `[IntentCount <Int32?>]`: Number of Intents created from this template.
   - `[IsDeprecated <Boolean?>]`: The template is deprecated or not. Intents cannot be created from a deprecated template.
   - `[MigratableTo <IMicrosoftGraphDeviceManagementTemplate[]>]`: Collection of templates this template can migrate to
-  - `[PlatformType <String>]`: 
+  - `[PlatformType <String>]`: Supported platform types for policies.
   - `[PublishedDateTime <DateTime?>]`: When the template was published
   - `[Settings <IMicrosoftGraphDeviceManagementSettingInstance[]>]`: Collection of all settings this template has
-  - `[TemplateSubtype <String>]`: deviceManagementTemplateSubtype
-  - `[TemplateType <String>]`: deviceManagementTemplateType
+  - `[TemplateSubtype <String>]`: Template subtype
+  - `[TemplateType <String>]`: Template type
   - `[VersionInfo <String>]`: The template's version information
 
 SETTINGS <IMicrosoftGraphDeviceManagementSettingInstance[]>: Collection of all settings this template has

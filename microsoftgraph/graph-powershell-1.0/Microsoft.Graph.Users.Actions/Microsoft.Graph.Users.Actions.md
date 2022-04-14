@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Users.Actions
 Module Guid: af6c6df5-81df-42c9-a2e2-73640ab13a59
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions
@@ -73,6 +73,9 @@ Invoke action clear
 
 ### [Clear-MgUserManagedDevice](Clear-MgUserManagedDevice.md)
 Wipe a device
+
+### [Clear-MgUserPresence](Clear-MgUserPresence.md)
+Invoke action clearPresence
 
 ### [Confirm-MgUserMemberGroup](Confirm-MgUserMemberGroup.md)
 Invoke action checkMemberGroups
@@ -320,13 +323,25 @@ Invoke action snoozeReminder
 ### [Invoke-MgTargetUserInsightSharedLastSharedMethodMicrosoftGraphManagedAppProtectionApp](Invoke-MgTargetUserInsightSharedLastSharedMethodMicrosoftGraphManagedAppProtectionApp.md)
 Invoke action targetApps
 
+### [Invoke-MgTargetUserInsightSharedLastSharedMethodMicrosoftGraphTargetedManagedAppProtectionApp](Invoke-MgTargetUserInsightSharedLastSharedMethodMicrosoftGraphTargetedManagedAppProtectionApp.md)
+Invoke action targetApps
+
 ### [Invoke-MgTargetUserInsightSharedResourceMicrosoftGraphManagedAppProtectionApp](Invoke-MgTargetUserInsightSharedResourceMicrosoftGraphManagedAppProtectionApp.md)
+Invoke action targetApps
+
+### [Invoke-MgTargetUserInsightSharedResourceMicrosoftGraphTargetedManagedAppProtectionApp](Invoke-MgTargetUserInsightSharedResourceMicrosoftGraphTargetedManagedAppProtectionApp.md)
 Invoke action targetApps
 
 ### [Invoke-MgTargetUserInsightTrendingResourceMicrosoftGraphManagedAppProtectionApp](Invoke-MgTargetUserInsightTrendingResourceMicrosoftGraphManagedAppProtectionApp.md)
 Invoke action targetApps
 
+### [Invoke-MgTargetUserInsightTrendingResourceMicrosoftGraphTargetedManagedAppProtectionApp](Invoke-MgTargetUserInsightTrendingResourceMicrosoftGraphTargetedManagedAppProtectionApp.md)
+Invoke action targetApps
+
 ### [Invoke-MgTargetUserInsightUsedResourceMicrosoftGraphManagedAppProtectionApp](Invoke-MgTargetUserInsightUsedResourceMicrosoftGraphManagedAppProtectionApp.md)
+Invoke action targetApps
+
+### [Invoke-MgTargetUserInsightUsedResourceMicrosoftGraphTargetedManagedAppProtectionApp](Invoke-MgTargetUserInsightUsedResourceMicrosoftGraphTargetedManagedAppProtectionApp.md)
 Invoke action targetApps
 
 ### [Invoke-MgTranslateUserExchangeId](Invoke-MgTranslateUserExchangeId.md)
@@ -487,6 +502,9 @@ Invoke action assign
 
 ### [Set-MgUserLicense](Set-MgUserLicense.md)
 Invoke action assignLicense
+
+### [Set-MgUserPresence](Set-MgUserPresence.md)
+Invoke action setPresence
 
 ### [Skip-MgUserManagedDeviceActivationLock](Skip-MgUserManagedDeviceActivationLock.md)
 Bypass activation lock

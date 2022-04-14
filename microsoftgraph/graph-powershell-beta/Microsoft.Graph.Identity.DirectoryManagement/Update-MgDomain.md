@@ -15,10 +15,10 @@ Update entity in domains
 ### UpdateExpanded (Default)
 ```
 Update-MgDomain -DomainId <String> [-AdditionalProperties <Hashtable>] [-AuthenticationType <String>]
- [-AvailabilityStatus <String>] [-DomainNameReferences <IMicrosoftGraphDirectoryObject[]>] [-Id <String>]
- [-IsAdminManaged] [-IsDefault] [-IsInitial] [-IsRoot] [-IsVerified]
- [-PasswordNotificationWindowInDays <Int32>] [-PasswordValidityPeriodInDays <Int32>]
- [-ServiceConfigurationRecords <IMicrosoftGraphDomainDnsRecord[]>]
+ [-AvailabilityStatus <String>] [-DomainNameReferences <IMicrosoftGraphDirectoryObject[]>]
+ [-FederationConfiguration <IMicrosoftGraphInternalDomainFederation[]>] [-Id <String>] [-IsAdminManaged]
+ [-IsDefault] [-IsInitial] [-IsRoot] [-IsVerified] [-PasswordNotificationWindowInDays <Int32>]
+ [-PasswordValidityPeriodInDays <Int32>] [-ServiceConfigurationRecords <IMicrosoftGraphDomainDnsRecord[]>]
  [-SharedEmailDomainInvitations <IMicrosoftGraphSharedEmailDomainInvitation[]>]
  [-State <IMicrosoftGraphDomainState>] [-SupportedServices <String[]>]
  [-VerificationDnsRecords <IMicrosoftGraphDomainDnsRecord[]>] [-PassThru] [-WhatIf] [-Confirm]
@@ -35,8 +35,9 @@ Update-MgDomain -DomainId <String> -BodyParameter <IMicrosoftGraphDomain1> [-Pas
 ```
 Update-MgDomain -InputObject <IIdentityDirectoryManagementIdentity> [-AdditionalProperties <Hashtable>]
  [-AuthenticationType <String>] [-AvailabilityStatus <String>]
- [-DomainNameReferences <IMicrosoftGraphDirectoryObject[]>] [-Id <String>] [-IsAdminManaged] [-IsDefault]
- [-IsInitial] [-IsRoot] [-IsVerified] [-PasswordNotificationWindowInDays <Int32>]
+ [-DomainNameReferences <IMicrosoftGraphDirectoryObject[]>]
+ [-FederationConfiguration <IMicrosoftGraphInternalDomainFederation[]>] [-Id <String>] [-IsAdminManaged]
+ [-IsDefault] [-IsInitial] [-IsRoot] [-IsVerified] [-PasswordNotificationWindowInDays <Int32>]
  [-PasswordValidityPeriodInDays <Int32>] [-ServiceConfigurationRecords <IMicrosoftGraphDomainDnsRecord[]>]
  [-SharedEmailDomainInvitations <IMicrosoftGraphSharedEmailDomainInvitation[]>]
  [-State <IMicrosoftGraphDomainState>] [-SupportedServices <String[]>]
@@ -110,7 +111,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 domain
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDomain1
@@ -141,10 +142,26 @@ Accept wildcard characters: False
 
 ### -DomainNameReferences
 Read-only, Nullable
-To construct, see NOTES section for DOMAINNAMEREFERENCES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for DOMAINNAMEREFERENCES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDirectoryObject[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -FederationConfiguration
+.
+To construct, please use Get-Help -Online and see NOTES section for FEDERATIONCONFIGURATION properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphInternalDomainFederation[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -172,7 +189,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentityDirectoryManagementIdentity
@@ -320,7 +337,7 @@ Accept wildcard characters: False
 ### -ServiceConfigurationRecords
 DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.
 Read-only, Nullable
-To construct, see NOTES section for SERVICECONFIGURATIONRECORDS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SERVICECONFIGURATIONRECORDS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDomainDnsRecord[]
@@ -336,7 +353,7 @@ Accept wildcard characters: False
 
 ### -SharedEmailDomainInvitations
 .
-To construct, see NOTES section for SHAREDEMAILDOMAININVITATIONS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SHAREDEMAILDOMAININVITATIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSharedEmailDomainInvitation[]
@@ -352,7 +369,7 @@ Accept wildcard characters: False
 
 ### -State
 domainState
-To construct, see NOTES section for STATE properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for STATE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDomainState
@@ -368,7 +385,7 @@ Accept wildcard characters: False
 
 ### -SupportedServices
 The capabilities assigned to the domain.
-Can include 0, 1 or more of following values: Email, Sharepoint, EmailInternalRelayOnly, OfficeCommunicationsOnline,SharePointDefaultDomain, FullRedelegation, SharePointPublic, OrgIdAuthentication, Yammer, Intune.
+Can include 0, 1 or more of following values: Email, Sharepoint, EmailInternalRelayOnly, OfficeCommunicationsOnline, SharePointDefaultDomain, FullRedelegation, SharePointPublic, OrgIdAuthentication, Yammer, Intune.
 The values which you can add/remove using Graph API include: Email, OfficeCommunicationsOnline, Yammer.
 Not nullable
 
@@ -387,7 +404,7 @@ Accept wildcard characters: False
 ### -VerificationDnsRecords
 DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Azure AD.
 Read-only, Nullable
-To construct, see NOTES section for VERIFICATIONDNSRECORDS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for VERIFICATIONDNSRECORDS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDomainDnsRecord[]
@@ -459,6 +476,24 @@ BODYPARAMETER <IMicrosoftGraphDomain1>: domain
   - `[DomainNameReferences <IMicrosoftGraphDirectoryObject[]>]`: Read-only, Nullable
     - `[Id <String>]`: Read-only.
     - `[DeletedDateTime <DateTime?>]`: 
+  - `[FederationConfiguration <IMicrosoftGraphInternalDomainFederation[]>]`: 
+    - `[IssuerUri <String>]`: Issuer URI of the federation server.
+    - `[MetadataExchangeUri <String>]`: URI of the metadata exchange endpoint used for authentication from rich client applications.
+    - `[PassiveSignInUri <String>]`: URI that web-based clients are directed to when signing in to Azure Active Directory (Azure AD) services.
+    - `[PreferredAuthenticationProtocol <String>]`: authenticationProtocol
+    - `[SigningCertificate <String>]`: Current certificate used to sign tokens passed to the Microsoft identity platform. The certificate is formatted as a Base64 encoded string of the public portion of the federated IdP's token signing certificate and must be compatible with the X509Certificate2 class.   This property is used in the following scenarios:  if a rollover is required outside of the autorollover update a new federation service is being set up  if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated.   Azure AD updates certificates via an autorollover process in which it attempts to retrieve a new certificate from the federation service metadata, 30 days before expiry of the current certificate. If a new certificate isn't available, Azure AD monitors the metadata daily and will update the federation settings for the domain when a new certificate is available.
+    - `[DisplayName <String>]`: The display name of the identity provider.
+    - `[Id <String>]`: Read-only.
+    - `[ActiveSignInUri <String>]`: 
+    - `[FederatedIdpMfaBehavior <String>]`: federatedIdpMfaBehavior
+    - `[IsSignedAuthenticationRequestRequired <Boolean?>]`: 
+    - `[NextSigningCertificate <String>]`: 
+    - `[PromptLoginBehavior <String>]`: promptLoginBehavior
+    - `[SignOutUri <String>]`: 
+    - `[SigningCertificateUpdateStatus <IMicrosoftGraphSigningCertificateUpdateStatus>]`: signingCertificateUpdateStatus
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[CertificateUpdateResult <String>]`: 
+      - `[LastRunDateTime <DateTime?>]`: 
   - `[IsAdminManaged <Boolean?>]`: The value of the property is false if the DNS record management of the domain has been delegated to Microsoft 365. Otherwise, the value is true. Not nullable
   - `[IsDefault <Boolean?>]`: true if this is the default domain that is used for user creation. There is only one default domain per company. Not nullable
   - `[IsInitial <Boolean?>]`: true if this is the initial domain created by Microsoft Online Services (companyname.onmicrosoft.com). There is only one initial domain per company. Not nullable
@@ -483,17 +518,39 @@ BODYPARAMETER <IMicrosoftGraphDomain1>: domain
     - `[LastActionDateTime <DateTime?>]`: Timestamp for when the last activity occurred. The value is updated when an operation is scheduled, the asynchronous task starts, and when the operation completes.
     - `[Operation <String>]`: Type of asynchronous operation. The values can be ForceDelete or Verification
     - `[Status <String>]`: Current status of the operation.  Scheduled - Operation has been scheduled but has not started.  InProgress - Task has started and is in progress.  Failed - Operation has failed.
-  - `[SupportedServices <String[]>]`: The capabilities assigned to the domain. Can include 0, 1 or more of following values: Email, Sharepoint, EmailInternalRelayOnly, OfficeCommunicationsOnline,SharePointDefaultDomain, FullRedelegation, SharePointPublic, OrgIdAuthentication, Yammer, Intune. The values which you can add/remove using Graph API include: Email, OfficeCommunicationsOnline, Yammer. Not nullable
+  - `[SupportedServices <String[]>]`: The capabilities assigned to the domain. Can include 0, 1 or more of following values: Email, Sharepoint, EmailInternalRelayOnly, OfficeCommunicationsOnline, SharePointDefaultDomain, FullRedelegation, SharePointPublic, OrgIdAuthentication, Yammer, Intune. The values which you can add/remove using Graph API include: Email, OfficeCommunicationsOnline, Yammer. Not nullable
   - `[VerificationDnsRecords <IMicrosoftGraphDomainDnsRecord[]>]`: DNS records that the customer adds to the DNS zone file of the domain before the customer can complete domain ownership verification with Azure AD. Read-only, Nullable
 
 DOMAINNAMEREFERENCES <IMicrosoftGraphDirectoryObject[]>: Read-only, Nullable
   - `[Id <String>]`: Read-only.
   - `[DeletedDateTime <DateTime?>]`: 
 
+FEDERATIONCONFIGURATION <IMicrosoftGraphInternalDomainFederation[]>: .
+  - `[IssuerUri <String>]`: Issuer URI of the federation server.
+  - `[MetadataExchangeUri <String>]`: URI of the metadata exchange endpoint used for authentication from rich client applications.
+  - `[PassiveSignInUri <String>]`: URI that web-based clients are directed to when signing in to Azure Active Directory (Azure AD) services.
+  - `[PreferredAuthenticationProtocol <String>]`: authenticationProtocol
+  - `[SigningCertificate <String>]`: Current certificate used to sign tokens passed to the Microsoft identity platform. The certificate is formatted as a Base64 encoded string of the public portion of the federated IdP's token signing certificate and must be compatible with the X509Certificate2 class.   This property is used in the following scenarios:  if a rollover is required outside of the autorollover update a new federation service is being set up  if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated.   Azure AD updates certificates via an autorollover process in which it attempts to retrieve a new certificate from the federation service metadata, 30 days before expiry of the current certificate. If a new certificate isn't available, Azure AD monitors the metadata daily and will update the federation settings for the domain when a new certificate is available.
+  - `[DisplayName <String>]`: The display name of the identity provider.
+  - `[Id <String>]`: Read-only.
+  - `[ActiveSignInUri <String>]`: 
+  - `[FederatedIdpMfaBehavior <String>]`: federatedIdpMfaBehavior
+  - `[IsSignedAuthenticationRequestRequired <Boolean?>]`: 
+  - `[NextSigningCertificate <String>]`: 
+  - `[PromptLoginBehavior <String>]`: promptLoginBehavior
+  - `[SignOutUri <String>]`: 
+  - `[SigningCertificateUpdateStatus <IMicrosoftGraphSigningCertificateUpdateStatus>]`: signingCertificateUpdateStatus
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[CertificateUpdateResult <String>]`: 
+    - `[LastRunDateTime <DateTime?>]`: 
+
 INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   - `[AdministrativeUnitId <String>]`: key: id of administrativeUnit
+  - `[AllowedValueId <String>]`: key: id of allowedValue
+  - `[AttributeSetId <String>]`: key: id of attributeSet
   - `[CommandId <String>]`: key: id of command
   - `[ContractId <String>]`: key: id of contract
+  - `[CustomSecurityAttributeDefinitionId <String>]`: key: id of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: key: id of device
   - `[DirectoryObjectId <String>]`: key: id of directoryObject
   - `[DirectoryRoleId <String>]`: key: id of directoryRole
@@ -504,13 +561,20 @@ INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   - `[DomainId <String>]`: key: id of domain
   - `[ExtensionId <String>]`: key: id of extension
   - `[FeatureRolloutPolicyId <String>]`: key: id of featureRolloutPolicy
+  - `[IdentityProviderBaseId <String>]`: key: id of identityProviderBase
+  - `[InboundSharedUserProfileUserId <String>]`: key: userId of inboundSharedUserProfile
+  - `[InternalDomainFederationId <String>]`: key: id of internalDomainFederation
   - `[OrgContactId <String>]`: key: id of orgContact
   - `[OrganizationId <String>]`: key: id of organization
+  - `[OutboundSharedUserProfileUserId <String>]`: key: userId of outboundSharedUserProfile
   - `[ProfileCardPropertyId <String>]`: key: id of profileCardProperty
+  - `[RecommendationId <String>]`: key: id of recommendation
+  - `[RecommendationResourceId <String>]`: key: id of recommendationResource
   - `[ScopedRoleMembershipId <String>]`: key: id of scopedRoleMembership
   - `[SharedEmailDomainId <String>]`: key: id of sharedEmailDomain
   - `[SharedEmailDomainInvitationId <String>]`: key: id of sharedEmailDomainInvitation
   - `[SubscribedSkuId <String>]`: key: id of subscribedSku
+  - `[TenantReferenceTenantId <String>]`: key: tenantId of tenantReference
   - `[UsageRightId <String>]`: key: id of usageRight
   - `[UserId <String>]`: key: id of user
 
@@ -541,5 +605,7 @@ VERIFICATIONDNSRECORDS <IMicrosoftGraphDomainDnsRecord[]>: DNS records that the 
   - `[RecordType <String>]`: Indicates what type of DNS record this entity represents.The value can be one of the following: CName, Mx, Srv, TxtKey
   - `[SupportedService <String>]`: Microsoft Online Service or feature that has a dependency on this DNS record.Can be one of the following values: null, Email, Sharepoint, EmailInternalRelayOnly, OfficeCommunicationsOnline, SharePointDefaultDomain, FullRedelegation, SharePointPublic, OrgIdAuthentication, Yammer, Intune
   - `[Ttl <Int32?>]`: Value to use when configuring the time-to-live (ttl) property of the DNS record at the DNS host. Not nullable
+
+## RELATED LINKS
 
 ## RELATED LINKS

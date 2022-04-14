@@ -51,7 +51,7 @@ Accept wildcard characters: False
 ### -AppliesTo
 Nullable.
 Specifies a list of directoryObjects that feature is enabled for.
-To construct, see NOTES section for APPLIESTO properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for APPLIESTO properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDirectoryObject[]
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 featureRolloutPolicy
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphFeatureRolloutPolicy

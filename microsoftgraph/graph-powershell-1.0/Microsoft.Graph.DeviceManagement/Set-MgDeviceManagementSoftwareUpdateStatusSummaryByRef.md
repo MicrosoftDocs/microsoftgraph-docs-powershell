@@ -12,13 +12,13 @@ The software update status summary.
 
 ## SYNTAX
 
-### SetExpanded1 (Default)
+### SetExpanded (Default)
 ```
 Set-MgDeviceManagementSoftwareUpdateStatusSummaryByRef [-AdditionalProperties <Hashtable>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Set1
+### Set
 ```
 Set-MgDeviceManagementSoftwareUpdateStatusSummaryByRef -BodyParameter <Hashtable> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -36,7 +36,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: SetExpanded1
+Parameter Sets: SetExpanded
 Aliases:
 
 Required: False
@@ -51,7 +51,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: Hashtable
-Parameter Sets: Set1
+Parameter Sets: Set
 Aliases:
 
 Required: True

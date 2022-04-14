@@ -12,7 +12,7 @@ Invoke action recordResponse
 
 ## SYNTAX
 
-### RecordExpanded (Default)
+### RecordExpanded1 (Default)
 ```
 Invoke-MgRecordCommunicationCallResponse -CallId <String> [-AdditionalProperties <Hashtable>] [-BargeInAllowed]
  [-ClientContext <String>] [-InitialSilenceTimeoutInSeconds <Int32>] [-MaxRecordDurationInSeconds <Int32>]
@@ -20,14 +20,14 @@ Invoke-MgRecordCommunicationCallResponse -CallId <String> [-AdditionalProperties
  [-StreamWhileRecording] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Record
+### Record1
 ```
 Invoke-MgRecordCommunicationCallResponse -CallId <String>
  -BodyParameter <IPaths14Wb7KqCommunicationsCallsCallIdMicrosoftGraphRecordresponsePostRequestbodyContentApplicationJsonSchema1>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### RecordViaIdentityExpanded
+### RecordViaIdentityExpanded1
 ```
 Invoke-MgRecordCommunicationCallResponse -InputObject <ICloudCommunicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-BargeInAllowed] [-ClientContext <String>]
@@ -36,7 +36,7 @@ Invoke-MgRecordCommunicationCallResponse -InputObject <ICloudCommunicationsIdent
  [-StreamWhileRecording] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### RecordViaIdentity
+### RecordViaIdentity1
 ```
 Invoke-MgRecordCommunicationCallResponse -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPaths14Wb7KqCommunicationsCallsCallIdMicrosoftGraphRecordresponsePostRequestbodyContentApplicationJsonSchema1>
@@ -55,7 +55,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: RecordExpanded, RecordViaIdentityExpanded
+Parameter Sets: RecordExpanded1, RecordViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: RecordExpanded, RecordViaIdentityExpanded
+Parameter Sets: RecordExpanded1, RecordViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -82,11 +82,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths14Wb7KqCommunicationsCallsCallIdMicrosoftGraphRecordresponsePostRequestbodyContentApplicationJsonSchema1
-Parameter Sets: Record, RecordViaIdentity
+Parameter Sets: Record1, RecordViaIdentity1
 Aliases:
 
 Required: True
@@ -101,7 +101,7 @@ key: id of call
 
 ```yaml
 Type: String
-Parameter Sets: RecordExpanded, Record
+Parameter Sets: RecordExpanded1, Record1
 Aliases:
 
 Required: True
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: RecordExpanded, RecordViaIdentityExpanded
+Parameter Sets: RecordExpanded1, RecordViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: Int32
-Parameter Sets: RecordExpanded, RecordViaIdentityExpanded
+Parameter Sets: RecordExpanded1, RecordViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -143,11 +143,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ICloudCommunicationsIdentity
-Parameter Sets: RecordViaIdentityExpanded, RecordViaIdentity
+Parameter Sets: RecordViaIdentityExpanded1, RecordViaIdentity1
 Aliases:
 
 Required: True
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: Int32
-Parameter Sets: RecordExpanded, RecordViaIdentityExpanded
+Parameter Sets: RecordExpanded1, RecordViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: Int32
-Parameter Sets: RecordExpanded, RecordViaIdentityExpanded
+Parameter Sets: RecordExpanded1, RecordViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: RecordExpanded, RecordViaIdentityExpanded
+Parameter Sets: RecordExpanded1, RecordViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: IMicrosoftGraphPrompt[]
-Parameter Sets: RecordExpanded, RecordViaIdentityExpanded
+Parameter Sets: RecordExpanded1, RecordViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: RecordExpanded, RecordViaIdentityExpanded
+Parameter Sets: RecordExpanded1, RecordViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -237,7 +237,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: RecordExpanded, RecordViaIdentityExpanded
+Parameter Sets: RecordExpanded1, RecordViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -287,7 +287,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IPaths14Wb7KqCommunicationsCallsCallIdMicrosoftGraphRecordresponsePostRequestbodyContentApplicationJsonSchema1
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRecordOperation
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRecordOperation1
 ## NOTES
 
 ALIASES
@@ -310,10 +310,13 @@ BODYPARAMETER <IPaths14Wb7KqCommunicationsCallsCallIdMicrosoftGraphRecordrespons
   - `[StreamWhileRecording <Boolean?>]`: 
 
 INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
+  - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call
   - `[CallRecordId <String>]`: key: id of callRecord
   - `[CommsOperationId <String>]`: key: id of commsOperation
+  - `[MeetingAttendanceReportId <String>]`: key: id of meetingAttendanceReport
+  - `[MeetingRegistrationQuestionId <String>]`: key: id of meetingRegistrationQuestion
   - `[OnlineMeetingId <String>]`: key: id of onlineMeeting
   - `[ParticipantId <String>]`: key: id of participant
   - `[PresenceId <String>]`: key: id of presence

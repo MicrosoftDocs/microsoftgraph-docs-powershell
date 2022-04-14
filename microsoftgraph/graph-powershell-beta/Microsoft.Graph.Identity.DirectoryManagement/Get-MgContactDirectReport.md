@@ -11,6 +11,7 @@ schema: 2.0.0
 The contact's direct reports.
 (The users and contacts that have their manager property set to this contact.) Read-only.
 Nullable.
+Supports $expand.
 
 ## SYNTAX
 
@@ -24,6 +25,7 @@ Get-MgContactDirectReport -OrgContactId <String> [-ExpandProperty <String[]>] [-
 The contact's direct reports.
 (The users and contacts that have their manager property set to this contact.) Read-only.
 Nullable.
+Supports $expand.
 
 ## EXAMPLES
 

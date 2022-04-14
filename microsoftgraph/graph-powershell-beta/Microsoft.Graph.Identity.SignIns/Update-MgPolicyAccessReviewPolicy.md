@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgPolicyAccessReviewPolicy
 
 ## SYNOPSIS
-Update the navigation property accessReviewPolicy in policies
+The policy that contains directory-level access review settings.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ Update-MgPolicyAccessReviewPolicy -BodyParameter <IMicrosoftGraphAccessReviewPol
 ```
 
 ## DESCRIPTION
-Update the navigation property accessReviewPolicy in policies
+The policy that contains directory-level access review settings.
 
 ## EXAMPLES
 
@@ -49,7 +49,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 accessReviewPolicy
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAccessReviewPolicy

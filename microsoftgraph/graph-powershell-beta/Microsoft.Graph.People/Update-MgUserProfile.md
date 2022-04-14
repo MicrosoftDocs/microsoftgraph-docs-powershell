@@ -65,7 +65,7 @@ Represents properties that are descriptive of a user in a tenant.
 
 ### -Account
 .
-To construct, see NOTES section for ACCOUNT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ACCOUNT properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUserAccountInformation[]
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 
 ### -Addresses
 Represents details of addresses associated with the user.
-To construct, see NOTES section for ADDRESSES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ADDRESSES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphItemAddress[]
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 
 ### -Anniversaries
 Represents the details of meaningful dates associated with a person.
-To construct, see NOTES section for ANNIVERSARIES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ANNIVERSARIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPersonAnnualEvent[]
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 
 ### -Awards
 Represents the details of awards or honors associated with a person.
-To construct, see NOTES section for AWARDS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for AWARDS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPersonAward[]
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 profile
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphProfile
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 
 ### -Certifications
 Represents the details of certifications associated with a person.
-To construct, see NOTES section for CERTIFICATIONS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for CERTIFICATIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPersonCertification[]
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 
 ### -EducationalActivities
 Represents data that a user has supplied related to undergraduate, graduate, postgraduate or other educational activities.
-To construct, see NOTES section for EDUCATIONALACTIVITIES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for EDUCATIONALACTIVITIES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphEducationalActivity[]
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 
 ### -Emails
 Represents detailed information about email addresses associated with the user.
-To construct, see NOTES section for EMAILS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for EMAILS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphItemEmail[]
@@ -223,7 +223,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IPeopleIdentity
@@ -239,7 +239,7 @@ Accept wildcard characters: False
 
 ### -Interests
 Provides detailed information about interests the user has associated with themselves in various services.
-To construct, see NOTES section for INTERESTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INTERESTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPersonInterest[]
@@ -255,7 +255,7 @@ Accept wildcard characters: False
 
 ### -Languages
 Represents detailed information about languages that a user has added to their profile.
-To construct, see NOTES section for LANGUAGES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for LANGUAGES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphLanguageProficiency[]
@@ -271,7 +271,7 @@ Accept wildcard characters: False
 
 ### -Names
 Represents the names a user has added to their profile.
-To construct, see NOTES section for NAMES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for NAMES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPersonName[]
@@ -287,7 +287,7 @@ Accept wildcard characters: False
 
 ### -Notes
 Represents notes that a user has added to their profile.
-To construct, see NOTES section for NOTES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for NOTES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPersonAnnotation[]
@@ -318,7 +318,7 @@ Accept wildcard characters: False
 
 ### -Patents
 Represents patents that a user has added to their profile.
-To construct, see NOTES section for PATENTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for PATENTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphItemPatent[]
@@ -334,7 +334,7 @@ Accept wildcard characters: False
 
 ### -Phones
 Represents detailed information about phone numbers associated with a user in various services.
-To construct, see NOTES section for PHONES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for PHONES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphItemPhone[]
@@ -350,7 +350,7 @@ Accept wildcard characters: False
 
 ### -Positions
 Represents detailed information about work positions associated with a user's profile.
-To construct, see NOTES section for POSITIONS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for POSITIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphWorkPosition[]
@@ -366,7 +366,7 @@ Accept wildcard characters: False
 
 ### -Projects
 Represents detailed information about projects associated with a user.
-To construct, see NOTES section for PROJECTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for PROJECTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphProjectParticipation[]
@@ -382,7 +382,7 @@ Accept wildcard characters: False
 
 ### -Publications
 Represents details of any publications a user has added to their profile.
-To construct, see NOTES section for PUBLICATIONS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for PUBLICATIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphItemPublication[]
@@ -398,7 +398,7 @@ Accept wildcard characters: False
 
 ### -Skills
 Represents detailed information about skills associated with a user in various services.
-To construct, see NOTES section for SKILLS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SKILLS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphSkillProficiency[]
@@ -429,7 +429,7 @@ Accept wildcard characters: False
 
 ### -WebAccounts
 Represents web accounts the user has indicated they use or has added to their user profile.
-To construct, see NOTES section for WEBACCOUNTS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for WEBACCOUNTS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphWebAccount[]
@@ -445,7 +445,7 @@ Accept wildcard characters: False
 
 ### -Websites
 Represents detailed information about websites associated with a user in various services.
-To construct, see NOTES section for WEBSITES properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for WEBSITES properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPersonWebsite[]
@@ -574,8 +574,8 @@ ADDRESSES <IMicrosoftGraphItemAddress[]>: Represents details of addresses associ
   - `[GeoCoordinates <IMicrosoftGraphGeoCoordinates>]`: geoCoordinates
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Altitude <Double?>]`: Optional. The altitude (height), in feet,  above sea level for the item. Read-only.
-    - `[Latitude <Double?>]`: Optional. The latitude, in decimal, for the item. Writable on OneDrive Personal.
-    - `[Longitude <Double?>]`: Optional. The longitude, in decimal, for the item. Writable on OneDrive Personal.
+    - `[Latitude <Double?>]`: Optional. The latitude, in decimal, for the item. Read-only.
+    - `[Longitude <Double?>]`: Optional. The longitude, in decimal, for the item. Read-only.
 
 ANNIVERSARIES <IMicrosoftGraphPersonAnnualEvent[]>: Represents the details of meaningful dates associated with a person.
   - `[AllowedAudiences <String>]`: allowedAudiences
@@ -687,8 +687,8 @@ BODYPARAMETER <IMicrosoftGraphProfile>: profile
     - `[GeoCoordinates <IMicrosoftGraphGeoCoordinates>]`: geoCoordinates
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Altitude <Double?>]`: Optional. The altitude (height), in feet,  above sea level for the item. Read-only.
-      - `[Latitude <Double?>]`: Optional. The latitude, in decimal, for the item. Writable on OneDrive Personal.
-      - `[Longitude <Double?>]`: Optional. The longitude, in decimal, for the item. Writable on OneDrive Personal.
+      - `[Latitude <Double?>]`: Optional. The latitude, in decimal, for the item. Read-only.
+      - `[Longitude <Double?>]`: Optional. The longitude, in decimal, for the item. Read-only.
   - `[Anniversaries <IMicrosoftGraphPersonAnnualEvent[]>]`: Represents the details of meaningful dates associated with a person.
     - `[AllowedAudiences <String>]`: allowedAudiences
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet

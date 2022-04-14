@@ -66,7 +66,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 unifiedRbacResourceNamespace
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUnifiedRbacResourceNamespace
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDeviceManagementEnrolmentIdentity
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 
 ### -ResourceActions
 .
-To construct, see NOTES section for RESOURCEACTIONS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for RESOURCEACTIONS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphUnifiedRbacResourceAction[]
@@ -278,7 +278,6 @@ INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[WindowsAutopilotDeviceIdentityId <String>]`: key: id of windowsAutopilotDeviceIdentity
   - `[WindowsFeatureUpdateProfileAssignmentId <String>]`: key: id of windowsFeatureUpdateProfileAssignment
   - `[WindowsFeatureUpdateProfileId <String>]`: key: id of windowsFeatureUpdateProfile
-  - `[WindowsUpdateStateId <String>]`: key: id of windowsUpdateState
 
 RESOURCEACTIONS <IMicrosoftGraphUnifiedRbacResourceAction[]>: .
   - `[Id <String>]`: Read-only.

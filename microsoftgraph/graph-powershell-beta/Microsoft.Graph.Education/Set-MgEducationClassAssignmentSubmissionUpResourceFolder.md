@@ -8,23 +8,24 @@ schema: 2.0.0
 # Set-MgEducationClassAssignmentSubmissionUpResourceFolder
 
 ## SYNOPSIS
-Invoke function setUpResourcesFolder
+Invoke action setUpResourcesFolder
 
 ## SYNTAX
 
 ### Set1 (Default)
 ```
 Set-MgEducationClassAssignmentSubmissionUpResourceFolder -EducationAssignmentId <String>
- -EducationClassId <String> -EducationSubmissionId <String> [<CommonParameters>]
+ -EducationClassId <String> -EducationSubmissionId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity1
 ```
-Set-MgEducationClassAssignmentSubmissionUpResourceFolder -InputObject <IEducationIdentity> [<CommonParameters>]
+Set-MgEducationClassAssignmentSubmissionUpResourceFolder -InputObject <IEducationIdentity> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke function setUpResourcesFolder
+Invoke action setUpResourcesFolder
 
 ## EXAMPLES
 
@@ -77,7 +78,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IEducationIdentity
@@ -88,6 +89,37 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Confirm
+Prompts you for confirmation before running the cmdlet.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: cf
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WhatIf
+Shows what would happen if the cmdlet runs.
+The cmdlet is not run.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases: wi
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

@@ -51,7 +51,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Violation of restricted apps configuration profile per device per user
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRestrictedAppsViolation
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlatformType
-policyPlatformType
+Supported platform types for policies.
 
 ```yaml
 Type: String
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 
 ### -RestrictedApps
 List of violated restricted apps
-To construct, see NOTES section for RESTRICTEDAPPS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for RESTRICTEDAPPS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphManagedDeviceReportedApp[]
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 ```
 
 ### -RestrictedAppsState
-restrictedAppsState
+Restricted apps state
 
 ```yaml
 Type: String
@@ -272,10 +272,10 @@ BODYPARAMETER <IMicrosoftGraphRestrictedAppsViolation>: Violation of restricted 
   - `[DeviceConfigurationName <String>]`: Device configuration profile name
   - `[DeviceName <String>]`: Device name
   - `[ManagedDeviceId <String>]`: Managed device unique identifier, must be Guid
-  - `[PlatformType <String>]`: policyPlatformType
+  - `[PlatformType <String>]`: Supported platform types for policies.
   - `[RestrictedApps <IMicrosoftGraphManagedDeviceReportedApp[]>]`: List of violated restricted apps
     - `[AppId <String>]`: The application or bundle identifier of the application
-  - `[RestrictedAppsState <String>]`: restrictedAppsState
+  - `[RestrictedAppsState <String>]`: Restricted apps state
   - `[UserId <String>]`: User unique identifier, must be Guid
   - `[UserName <String>]`: User name
 

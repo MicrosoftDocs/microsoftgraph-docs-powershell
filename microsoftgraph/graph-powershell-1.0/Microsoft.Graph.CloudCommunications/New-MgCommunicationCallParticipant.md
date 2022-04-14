@@ -17,8 +17,8 @@ Nullable.
 ```
 New-MgCommunicationCallParticipant -CallId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-Info <IMicrosoftGraphParticipantInfo>] [-IsInLobby] [-IsMuted]
- [-MediaStreams <IMicrosoftGraphMediaStream[]>] [-RecordingInfo <IMicrosoftGraphRecordingInfo>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-MediaStreams <IMicrosoftGraphMediaStream[]>] [-Metadata <String>]
+ [-RecordingInfo <IMicrosoftGraphRecordingInfo>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -31,8 +31,8 @@ New-MgCommunicationCallParticipant -CallId <String> -BodyParameter <IMicrosoftGr
 ```
 New-MgCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Info <IMicrosoftGraphParticipantInfo>] [-IsInLobby]
- [-IsMuted] [-MediaStreams <IMicrosoftGraphMediaStream[]>] [-RecordingInfo <IMicrosoftGraphRecordingInfo>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-IsMuted] [-MediaStreams <IMicrosoftGraphMediaStream[]>] [-Metadata <String>]
+ [-RecordingInfo <IMicrosoftGraphRecordingInfo>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 participant
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphParticipant
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 
 ### -Info
 participantInfo
-To construct, see NOTES section for INFO properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INFO properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphParticipantInfo
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ICloudCommunicationsIdentity
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 
 ### -MediaStreams
 The list of media streams.
-To construct, see NOTES section for MEDIASTREAMS properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for MEDIASTREAMS properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMediaStream[]
@@ -188,9 +188,24 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Metadata
+A blob of data provided by the participant in the roster.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RecordingInfo
 recordingInfo
-To construct, see NOTES section for RECORDINGINFO properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for RECORDINGINFO properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRecordingInfo
@@ -270,15 +285,17 @@ BODYPARAMETER <IMicrosoftGraphParticipant>: participant
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[LanguageId <String>]`: The language culture string. Read-only.
-    - `[Region <String>]`: The home region of the participant. This can be a country, a continent, or a larger geographic region. This does not change based on the participant's current physical location, unlike countryCode. Read-only.
+    - `[ParticipantId <String>]`: The participant ID of the participant. Read-only.
+    - `[Region <String>]`: The home region of the participant. This can be a country, a continent, or a larger geographic region. This does not change based on the participant's current physical location. Read-only.
   - `[IsInLobby <Boolean?>]`: true if the participant is in lobby.
   - `[IsMuted <Boolean?>]`: true if the participant is muted (client or server muted).
   - `[MediaStreams <IMicrosoftGraphMediaStream[]>]`: The list of media streams.
     - `[Direction <String>]`: mediaDirection
     - `[Label <String>]`: The media stream label.
     - `[MediaType <String>]`: 
-    - `[ServerMuted <Boolean?>]`: Indicates whether the media is muted by the server.
+    - `[ServerMuted <Boolean?>]`: If the media is muted by the server.
     - `[SourceId <String>]`: The source ID.
+  - `[Metadata <String>]`: A blob of data provided by the participant in the roster.
   - `[RecordingInfo <IMicrosoftGraphRecordingInfo>]`: recordingInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Initiator <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -297,13 +314,17 @@ INFO <IMicrosoftGraphParticipantInfo>: participantInfo
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[LanguageId <String>]`: The language culture string. Read-only.
-  - `[Region <String>]`: The home region of the participant. This can be a country, a continent, or a larger geographic region. This does not change based on the participant's current physical location, unlike countryCode. Read-only.
+  - `[ParticipantId <String>]`: The participant ID of the participant. Read-only.
+  - `[Region <String>]`: The home region of the participant. This can be a country, a continent, or a larger geographic region. This does not change based on the participant's current physical location. Read-only.
 
 INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
+  - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call
   - `[CallRecordId <String>]`: key: id of callRecord
   - `[CommsOperationId <String>]`: key: id of commsOperation
+  - `[MeetingAttendanceReportId <String>]`: key: id of meetingAttendanceReport
+  - `[MeetingRegistrationQuestionId <String>]`: key: id of meetingRegistrationQuestion
   - `[OnlineMeetingId <String>]`: key: id of onlineMeeting
   - `[ParticipantId <String>]`: key: id of participant
   - `[PresenceId <String>]`: key: id of presence
@@ -314,7 +335,7 @@ MEDIASTREAMS <IMicrosoftGraphMediaStream[]>: The list of media streams.
   - `[Direction <String>]`: mediaDirection
   - `[Label <String>]`: The media stream label.
   - `[MediaType <String>]`: 
-  - `[ServerMuted <Boolean?>]`: Indicates whether the media is muted by the server.
+  - `[ServerMuted <Boolean?>]`: If the media is muted by the server.
   - `[SourceId <String>]`: The source ID.
 
 RECORDINGINFO <IMicrosoftGraphRecordingInfo>: recordingInfo

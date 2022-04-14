@@ -50,7 +50,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Entity which represents a connection to device management partner.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphDeviceManagementPartner
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 ```
 
 ### -PartnerAppType
-deviceManagementPartnerAppType
+Partner App Type.
 
 ```yaml
 Type: String
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -PartnerState
-deviceManagementPartnerTenantState
+Partner state of this tenant.
 
 ```yaml
 Type: String
@@ -254,8 +254,8 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagementPartner>: Entity which represents 
   - `[DisplayName <String>]`: Partner display name
   - `[IsConfigured <Boolean?>]`: Whether device management partner is configured or not
   - `[LastHeartbeatDateTime <DateTime?>]`: Timestamp of last heartbeat after admin enabled option Connect to Device management Partner
-  - `[PartnerAppType <String>]`: deviceManagementPartnerAppType
-  - `[PartnerState <String>]`: deviceManagementPartnerTenantState
+  - `[PartnerAppType <String>]`: Partner App Type.
+  - `[PartnerState <String>]`: Partner state of this tenant.
   - `[SingleTenantAppId <String>]`: Partner Single tenant App id
   - `[WhenPartnerDevicesWillBeMarkedAsNonCompliantDateTime <DateTime?>]`: DateTime in UTC when PartnerDevices will be marked as NonCompliant
   - `[WhenPartnerDevicesWillBeRemovedDateTime <DateTime?>]`: DateTime in UTC when PartnerDevices will be removed

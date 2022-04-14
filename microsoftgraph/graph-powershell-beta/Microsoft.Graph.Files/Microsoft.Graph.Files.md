@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Files
-Module Guid: efd8ec9e-852c-49af-b230-6c4ca3b34451
+Module Guid: 18ec7039-b90f-4d8a-9fb9-e869081b3c69
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files
 Help Version: 1.0.0.0
 Locale: en-US
@@ -14,14 +14,26 @@ Microsoft Graph PowerShell Cmdlets
 ### [Add-MgDriveListContentTypeBaseTypeCopy](Add-MgDriveListContentTypeBaseTypeCopy.md)
 Invoke action addCopy
 
+### [Add-MgDriveListContentTypeBaseTypeCopyFromContentTypeHub](Add-MgDriveListContentTypeBaseTypeCopyFromContentTypeHub.md)
+Invoke action addCopyFromContentTypeHub
+
 ### [Add-MgDriveListContentTypeCopy](Add-MgDriveListContentTypeCopy.md)
 Invoke action addCopy
+
+### [Add-MgDriveListContentTypeCopyFromContentTypeHub](Add-MgDriveListContentTypeCopyFromContentTypeHub.md)
+Invoke action addCopyFromContentTypeHub
 
 ### [Add-MgShareListContentTypeBaseTypeCopy](Add-MgShareListContentTypeBaseTypeCopy.md)
 Invoke action addCopy
 
+### [Add-MgShareListContentTypeBaseTypeCopyFromContentTypeHub](Add-MgShareListContentTypeBaseTypeCopyFromContentTypeHub.md)
+Invoke action addCopyFromContentTypeHub
+
 ### [Add-MgShareListContentTypeCopy](Add-MgShareListContentTypeCopy.md)
 Invoke action addCopy
+
+### [Add-MgShareListContentTypeCopyFromContentTypeHub](Add-MgShareListContentTypeCopyFromContentTypeHub.md)
+Invoke action addCopyFromContentTypeHub
 
 ### [Copy-MgDriveListContentTypeBaseToDefaultContentLocation](Copy-MgDriveListContentTypeBaseToDefaultContentLocation.md)
 Invoke action copyToDefaultContentLocation
@@ -95,6 +107,9 @@ The collection of content types that are ancestors of this content type.
 ### [Get-MgDriveListContentTypeBaseTypeByRef](Get-MgDriveListContentTypeBaseTypeByRef.md)
 The collection of content types that are ancestors of this content type.
 
+### [Get-MgDriveListContentTypeBaseTypeCompatibleHubContentType](Get-MgDriveListContentTypeBaseTypeCompatibleHubContentType.md)
+Invoke function getCompatibleHubContentTypes
+
 ### [Get-MgDriveListContentTypeColumn](Get-MgDriveListContentTypeColumn.md)
 The collection of column definitions for this contentType.
 
@@ -112,6 +127,9 @@ The source column for content type column.
 
 ### [Get-MgDriveListContentTypeColumnSourceColumnByRef](Get-MgDriveListContentTypeColumnSourceColumnByRef.md)
 The source column for content type column.
+
+### [Get-MgDriveListContentTypeCompatibleHubContentType](Get-MgDriveListContentTypeCompatibleHubContentType.md)
+Invoke function getCompatibleHubContentTypes
 
 ### [Get-MgDriveListDrive](Get-MgDriveListDrive.md)
 Only present on document libraries.
@@ -143,6 +161,9 @@ The list of previous versions of the list item.
 
 ### [Get-MgDriveListItemVersionField](Get-MgDriveListItemVersionField.md)
 A collection of the fields and values for this version of the list item.
+
+### [Get-MgDriveListOperation](Get-MgDriveListOperation.md)
+The collection of long running operations for the list.
 
 ### [Get-MgDriveListSubscription](Get-MgDriveListSubscription.md)
 The set of subscriptions on the list.
@@ -209,6 +230,9 @@ The collection of content types that are ancestors of this content type.
 ### [Get-MgShareListContentTypeBaseTypeByRef](Get-MgShareListContentTypeBaseTypeByRef.md)
 The collection of content types that are ancestors of this content type.
 
+### [Get-MgShareListContentTypeBaseTypeCompatibleHubContentType](Get-MgShareListContentTypeBaseTypeCompatibleHubContentType.md)
+Invoke function getCompatibleHubContentTypes
+
 ### [Get-MgShareListContentTypeColumn](Get-MgShareListContentTypeColumn.md)
 The collection of column definitions for this contentType.
 
@@ -226,6 +250,9 @@ The source column for content type column.
 
 ### [Get-MgShareListContentTypeColumnSourceColumnByRef](Get-MgShareListContentTypeColumnSourceColumnByRef.md)
 The source column for content type column.
+
+### [Get-MgShareListContentTypeCompatibleHubContentType](Get-MgShareListContentTypeCompatibleHubContentType.md)
+Invoke function getCompatibleHubContentTypes
 
 ### [Get-MgShareListDrive](Get-MgShareListDrive.md)
 Only present on document libraries.
@@ -257,6 +284,9 @@ The list of previous versions of the list item.
 
 ### [Get-MgShareListItemVersionField](Get-MgShareListItemVersionField.md)
 A collection of the fields and values for this version of the list item.
+
+### [Get-MgShareListOperation](Get-MgShareListOperation.md)
+The collection of long running operations for the list.
 
 ### [Get-MgShareListSubscription](Get-MgShareListSubscription.md)
 The set of subscriptions on the list.
@@ -345,6 +375,9 @@ Invoke action createLink
 ### [New-MgDriveListItemVersion](New-MgDriveListItemVersion.md)
 The list of previous versions of the list item.
 
+### [New-MgDriveListOperation](New-MgDriveListOperation.md)
+The collection of long running operations for the list.
+
 ### [New-MgDriveListSubscription](New-MgDriveListSubscription.md)
 The set of subscriptions on the list.
 
@@ -384,6 +417,9 @@ All items contained in the list.
 
 ### [New-MgShareListItemVersion](New-MgShareListItemVersion.md)
 The list of previous versions of the list item.
+
+### [New-MgShareListOperation](New-MgShareListOperation.md)
+The collection of long running operations for the list.
 
 ### [New-MgShareListSubscription](New-MgShareListSubscription.md)
 The set of subscriptions on the list.
@@ -471,6 +507,9 @@ The list of previous versions of the list item.
 ### [Remove-MgDriveListItemVersionField](Remove-MgDriveListItemVersionField.md)
 A collection of the fields and values for this version of the list item.
 
+### [Remove-MgDriveListOperation](Remove-MgDriveListOperation.md)
+The collection of long running operations for the list.
+
 ### [Remove-MgDriveListSubscription](Remove-MgDriveListSubscription.md)
 The set of subscriptions on the list.
 
@@ -539,6 +578,9 @@ The list of previous versions of the list item.
 
 ### [Remove-MgShareListItemVersionField](Remove-MgShareListItemVersionField.md)
 A collection of the fields and values for this version of the list item.
+
+### [Remove-MgShareListOperation](Remove-MgShareListOperation.md)
+The collection of long running operations for the list.
 
 ### [Remove-MgShareListSubscription](Remove-MgShareListSubscription.md)
 The set of subscriptions on the list.
@@ -702,6 +744,9 @@ The list of previous versions of the list item.
 ### [Update-MgDriveListItemVersionField](Update-MgDriveListItemVersionField.md)
 A collection of the fields and values for this version of the list item.
 
+### [Update-MgDriveListOperation](Update-MgDriveListOperation.md)
+The collection of long running operations for the list.
+
 ### [Update-MgDriveListSubscription](Update-MgDriveListSubscription.md)
 The set of subscriptions on the list.
 
@@ -758,6 +803,9 @@ The list of previous versions of the list item.
 
 ### [Update-MgShareListItemVersionField](Update-MgShareListItemVersionField.md)
 A collection of the fields and values for this version of the list item.
+
+### [Update-MgShareListOperation](Update-MgShareListOperation.md)
+The collection of long running operations for the list.
 
 ### [Update-MgShareListSubscription](Update-MgShareListSubscription.md)
 The set of subscriptions on the list.

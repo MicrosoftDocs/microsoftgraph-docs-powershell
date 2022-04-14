@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 The collection of open extensions defined for the contact.
+Read-only.
 Nullable.
 
 ## SYNTAX
@@ -16,7 +17,7 @@ Nullable.
 ### List1 (Default)
 ```
 Get-MgUserContactExtension -ContactId <String> -UserId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-Property <String[]>] [-Filter <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
@@ -34,6 +35,7 @@ Get-MgUserContactExtension -InputObject <IPersonalContactsIdentity> [-ExpandProp
 
 ## DESCRIPTION
 The collection of open extensions defined for the contact.
+Read-only.
 Nullable.
 
 ## EXAMPLES
@@ -133,7 +135,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IPersonalContactsIdentity
@@ -169,21 +171,6 @@ Select properties to be returned
 Type: String[]
 Parameter Sets: (All)
 Aliases: Select
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Search
-Search items by search phrases
-
-```yaml
-Type: String
-Parameter Sets: List1
-Aliases:
 
 Required: False
 Position: Named

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/move-mgusermailfolderchildfolder
@@ -12,26 +12,26 @@ Invoke action move
 
 ## SYNTAX
 
-### MoveExpanded (Default)
+### MoveExpanded1 (Default)
 ```
 Move-MgUserMailFolderChildFolder -MailFolderId <String> -MailFolderId1 <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-DestinationId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Move
+### Move1
 ```
 Move-MgUserMailFolderChildFolder -MailFolderId <String> -MailFolderId1 <String> -UserId <String>
  -BodyParameter <IPaths1Ekxa5VUsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### MoveViaIdentityExpanded
+### MoveViaIdentityExpanded1
 ```
 Move-MgUserMailFolderChildFolder -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-DestinationId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### MoveViaIdentity
+### MoveViaIdentity1
 ```
 Move-MgUserMailFolderChildFolder -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths1Ekxa5VUsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema>
@@ -50,7 +50,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: MoveExpanded, MoveViaIdentityExpanded
+Parameter Sets: MoveExpanded1, MoveViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -62,11 +62,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IPaths1Ekxa5VUsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Move, MoveViaIdentity
+Parameter Sets: Move1, MoveViaIdentity1
 Aliases:
 
 Required: True
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: MoveExpanded, MoveViaIdentityExpanded
+Parameter Sets: MoveExpanded1, MoveViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -93,11 +93,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: MoveViaIdentityExpanded, MoveViaIdentity
+Parameter Sets: MoveViaIdentityExpanded1, MoveViaIdentity1
 Aliases:
 
 Required: True
@@ -112,7 +112,7 @@ key: id of mailFolder
 
 ```yaml
 Type: String
-Parameter Sets: MoveExpanded, Move
+Parameter Sets: MoveExpanded1, Move1
 Aliases:
 
 Required: True
@@ -127,7 +127,7 @@ key: id of mailFolder
 
 ```yaml
 Type: String
-Parameter Sets: MoveExpanded, Move
+Parameter Sets: MoveExpanded1, Move1
 Aliases:
 
 Required: True
@@ -142,7 +142,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: MoveExpanded, Move
+Parameter Sets: MoveExpanded1, Move1
 Aliases:
 
 Required: True
@@ -207,9 +207,12 @@ BODYPARAMETER <IPaths1Ekxa5VUsersUserIdMailfoldersMailfolderIdChildfoldersMailfo
   - `[DestinationId <String>]`: 
 
 INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
+  - `[AccessReviewInstanceDecisionItemId <String>]`: key: id of accessReviewInstanceDecisionItem
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
   - `[AuthenticationMethodId <String>]`: key: id of authenticationMethod
+  - `[BaseTaskId <String>]`: key: id of baseTask
+  - `[BaseTaskListId <String>]`: key: id of baseTaskList
   - `[CalendarId <String>]`: key: id of calendar
   - `[DeviceEnrollmentConfigurationId <String>]`: key: id of deviceEnrollmentConfiguration
   - `[DeviceLogCollectionResponseId <String>]`: key: id of deviceLogCollectionResponse

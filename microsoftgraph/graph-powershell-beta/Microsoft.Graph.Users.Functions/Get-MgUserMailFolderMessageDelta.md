@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/get-mgusermailfoldermessagedelta
@@ -12,12 +12,12 @@ Invoke function delta
 
 ## SYNTAX
 
-### Delta1 (Default)
+### Delta (Default)
 ```
 Get-MgUserMailFolderMessageDelta -MailFolderId <String> -UserId <String> [<CommonParameters>]
 ```
 
-### DeltaViaIdentity1
+### DeltaViaIdentity
 ```
 Get-MgUserMailFolderMessageDelta -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
 ```
@@ -31,11 +31,11 @@ Invoke function delta
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IUsersFunctionsIdentity
-Parameter Sets: DeltaViaIdentity1
+Parameter Sets: DeltaViaIdentity
 Aliases:
 
 Required: True
@@ -50,7 +50,7 @@ key: id of mailFolder
 
 ```yaml
 Type: String
-Parameter Sets: Delta1
+Parameter Sets: Delta
 Aliases:
 
 Required: True
@@ -65,7 +65,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: Delta1
+Parameter Sets: Delta
 Aliases:
 
 Required: True
@@ -95,8 +95,10 @@ To create the parameters described below, construct a hash table containing the 
 
 INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
+  - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AnotherRange <String>]`: Usage: anotherRange={anotherRange}
   - `[AppConsentRequestId <String>]`: key: id of appConsentRequest
+  - `[BaseTaskListId <String>]`: key: id of baseTaskList
   - `[CalendarId <String>]`: key: id of calendar
   - `[Column <Int32?>]`: Usage: column={column}
   - `[ColumnOffset <Int32?>]`: Usage: columnOffset={columnOffset}

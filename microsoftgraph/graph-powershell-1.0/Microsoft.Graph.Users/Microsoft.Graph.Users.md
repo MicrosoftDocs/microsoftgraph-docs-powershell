@@ -1,6 +1,6 @@
----
+﻿---
 Module Name: Microsoft.Graph.Users
-Module Guid: 898a8cb3-b3ba-4190-b115-7696dc3530ee
+Module Guid: 8883c73b-6ed7-4476-84c1-e56dbededcbb
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users
 Help Version: 1.0.0.0
 Locale: en-US
@@ -12,7 +12,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Users Cmdlets
 ### [Get-MgUser](Get-MgUser.md)
-Represents an Azure Active Directory user object.
+Get entity from users by key
 
 ### [Get-MgUserCreatedObject](Get-MgUserCreatedObject.md)
 Directory objects that were created by the user.
@@ -28,11 +28,13 @@ Nullable.
 The users and contacts that report to the user.
 (The users and contacts that have their manager property set to this user.) Read-only.
 Nullable.
+Supports $expand.
 
 ### [Get-MgUserDirectReportByRef](Get-MgUserDirectReportByRef.md)
 The users and contacts that report to the user.
 (The users and contacts that have their manager property set to this user.) Read-only.
 Nullable.
+Supports $expand.
 
 ### [Get-MgUserExtension](Get-MgUserExtension.md)
 The collection of open extensions defined for the user.
@@ -45,22 +47,26 @@ Read-only.
 ### [Get-MgUserManager](Get-MgUserManager.md)
 The user or contact that is this user's manager.
 Read-only.
-(HTTP Methods: GET, PUT, DELETE.)
+(HTTP Methods: GET, PUT, DELETE.).
+Supports $expand.
 
 ### [Get-MgUserManagerByRef](Get-MgUserManagerByRef.md)
 The user or contact that is this user's manager.
 Read-only.
-(HTTP Methods: GET, PUT, DELETE.)
+(HTTP Methods: GET, PUT, DELETE.).
+Supports $expand.
 
 ### [Get-MgUserManagerByRef](Get-MgUserManagerByRef.md)
 The user or contact that is this user's manager.
 Read-only.
-(HTTP Methods: GET, PUT, DELETE.)
+(HTTP Methods: GET, PUT, DELETE.).
+Supports $expand.
 
 ### [Get-MgUserManagerByRef](Get-MgUserManagerByRef.md)
 The user or contact that is this user's manager.
 Read-only.
-(HTTP Methods: GET, PUT, DELETE.)
+(HTTP Methods: GET, PUT, DELETE.).
+Supports $expand.
 
 ### [Get-MgUserOauth2PermissionGrant](Get-MgUserOauth2PermissionGrant.md)
 Get oauth2PermissionGrants from users
@@ -75,21 +81,25 @@ A list of categories defined for the user.
 Devices that are owned by the user.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [Get-MgUserOwnedDeviceByRef](Get-MgUserOwnedDeviceByRef.md)
 Devices that are owned by the user.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [Get-MgUserOwnedObject](Get-MgUserOwnedObject.md)
 Directory objects that are owned by the user.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [Get-MgUserOwnedObjectByRef](Get-MgUserOwnedObjectByRef.md)
 Directory objects that are owned by the user.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [Get-MgUserPhoto](Get-MgUserPhoto.md)
 The user's profile photo.
@@ -103,17 +113,19 @@ Read-only.
 Devices that are registered for the user.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [Get-MgUserRegisteredDeviceByRef](Get-MgUserRegisteredDeviceByRef.md)
 Devices that are registered for the user.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [Get-MgUserSetting](Get-MgUserSetting.md)
 Read-only.
 Nullable.
 
-### [Get-MgUserSettingShiftPerenceByRef](Get-MgUserSettingShiftPerenceByRef.md)
+### [Get-MgUserSettingShiftPreference](Get-MgUserSettingShiftPreference.md)
 The shift preferences for the user.
 
 ### [Get-MgUserTodoList](Get-MgUserTodoList.md)
@@ -153,10 +165,7 @@ Nullable.
 The users and contacts that report to the user.
 (The users and contacts that have their manager property set to this user.) Read-only.
 Nullable.
-
-### [New-MgUserExtension](New-MgUserExtension.md)
-The collection of open extensions defined for the user.
-Nullable.
+Supports $expand.
 
 ### [New-MgUserExtension](New-MgUserExtension.md)
 The collection of open extensions defined for the user.
@@ -172,11 +181,13 @@ A list of categories defined for the user.
 Devices that are owned by the user.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [New-MgUserOwnedObjectByRef](New-MgUserOwnedObjectByRef.md)
 Directory objects that are owned by the user.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [New-MgUserPhoto](New-MgUserPhoto.md)
 Read-only.
@@ -186,6 +197,7 @@ Nullable.
 Devices that are registered for the user.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [New-MgUserTodoList](New-MgUserTodoList.md)
 The task lists in the users mailbox.
@@ -210,7 +222,7 @@ A collection of resources linked to the task.
 A collection of resources linked to the task.
 
 ### [Remove-MgUser](Remove-MgUser.md)
-Represents an Azure Active Directory user object.
+Delete entity from users
 
 ### [Remove-MgUserExtension](Remove-MgUserExtension.md)
 The collection of open extensions defined for the user.
@@ -223,7 +235,8 @@ Read-only.
 ### [Remove-MgUserManagerByRef](Remove-MgUserManagerByRef.md)
 The user or contact that is this user's manager.
 Read-only.
-(HTTP Methods: GET, PUT, DELETE.)
+(HTTP Methods: GET, PUT, DELETE.).
+Supports $expand.
 
 ### [Remove-MgUserOutlookMasterCategory](Remove-MgUserOutlookMasterCategory.md)
 A list of categories defined for the user.
@@ -236,7 +249,7 @@ Read-only.
 Read-only.
 Nullable.
 
-### [Remove-MgUserSettingShiftPerenceByRef](Remove-MgUserSettingShiftPerenceByRef.md)
+### [Remove-MgUserSettingShiftPreference](Remove-MgUserSettingShiftPreference.md)
 The shift preferences for the user.
 
 ### [Remove-MgUserTodoList](Remove-MgUserTodoList.md)
@@ -261,14 +274,15 @@ A collection of resources linked to the task.
 ### [Set-MgUserManagerByRef](Set-MgUserManagerByRef.md)
 The user or contact that is this user's manager.
 Read-only.
-(HTTP Methods: GET, PUT, DELETE.)
+(HTTP Methods: GET, PUT, DELETE.).
+Supports $expand.
 
 ### [Set-MgUserPhotoContent](Set-MgUserPhotoContent.md)
 The user's profile photo.
 Read-only.
 
 ### [Update-MgUser](Update-MgUser.md)
-Represents an Azure Active Directory user object.
+Update entity in users
 
 ### [Update-MgUserExtension](Update-MgUserExtension.md)
 The collection of open extensions defined for the user.
@@ -289,7 +303,7 @@ Read-only.
 Read-only.
 Nullable.
 
-### [Update-MgUserSettingShiftPerenceByRef](Update-MgUserSettingShiftPerenceByRef.md)
+### [Update-MgUserSettingShiftPreference](Update-MgUserSettingShiftPreference.md)
 The shift preferences for the user.
 
 ### [Update-MgUserTodoList](Update-MgUserTodoList.md)

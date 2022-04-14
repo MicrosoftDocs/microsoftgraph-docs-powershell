@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgprivilegedaccessroleassignment
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 governanceRoleAssignment
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphGovernanceRoleAssignment
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IIdentityGovernanceIdentity
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 
 ### -LinkedEligibleRoleAssignment
 governanceRoleAssignment
-To construct, see NOTES section for LINKEDELIGIBLEROLEASSIGNMENT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for LINKEDELIGIBLEROLEASSIGNMENT properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphGovernanceRoleAssignment
@@ -261,7 +261,7 @@ Accept wildcard characters: False
 
 ### -Resource
 governanceResource
-To construct, see NOTES section for RESOURCE properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for RESOURCE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphGovernanceResource
@@ -293,7 +293,7 @@ Accept wildcard characters: False
 
 ### -RoleDefinition
 governanceRoleDefinition
-To construct, see NOTES section for ROLEDEFINITION properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for ROLEDEFINITION properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphGovernanceRoleDefinition
@@ -357,7 +357,7 @@ Accept wildcard characters: False
 
 ### -Subject
 governanceSubject
-To construct, see NOTES section for SUBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for SUBJECT properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphGovernanceSubject
@@ -461,7 +461,7 @@ BODYPARAMETER <IMicrosoftGraphGovernanceRoleAssignment>: governanceRoleAssignmen
       - `[Reason <String>]`: A message provided by users and administrators when create the request about why it is needed.
       - `[RequestedDateTime <DateTime?>]`: Read-only. The request create time. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[Resource <IMicrosoftGraphGovernanceResource>]`: governanceResource
-      - `[ResourceId <String>]`: Required. The id of the resource which the role assignment request is associated with.
+      - `[ResourceId <String>]`: Required. The unique identifier of the Azure resource that is associated with the role assignment request. Azure resources can include subscriptions, resource groups, virtual machines, and SQL databases.
       - `[RoleDefinition <IMicrosoftGraphGovernanceRoleDefinition>]`: governanceRoleDefinition
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: Read-only.
@@ -486,7 +486,7 @@ BODYPARAMETER <IMicrosoftGraphGovernanceRoleAssignment>: governanceRoleAssignmen
           - `[UserEligibleSettings <IMicrosoftGraphGovernanceRuleSetting[]>]`: The rule settings that are evaluated when a user tries to add an eligible role assignment. The setting is not supported for now.
           - `[UserMemberSettings <IMicrosoftGraphGovernanceRuleSetting[]>]`: The rule settings that are evaluated when a user tries to activate his role assignment.
         - `[TemplateId <String>]`: 
-      - `[RoleDefinitionId <String>]`: Required. The id of the role definition which the role assignment request is associated with.
+      - `[RoleDefinitionId <String>]`: Required. The identifier of the Azure role definition that the role assignment request is associated with.
       - `[Schedule <IMicrosoftGraphGovernanceSchedule>]`: governanceSchedule
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Duration <TimeSpan?>]`: The duration of a role assignment. It is in format of a TimeSpan.
@@ -507,7 +507,7 @@ BODYPARAMETER <IMicrosoftGraphGovernanceRoleAssignment>: governanceRoleAssignmen
         - `[Email <String>]`: The email address of the user subject. If the subject is in other types, it is empty.
         - `[PrincipalName <String>]`: The principal name of the user subject. If the subject is in other types, it is empty.
         - `[Type <String>]`: The type of the subject. The value can be User, Group, and ServicePrincipal.
-      - `[SubjectId <String>]`: Required. The id of the subject which the role assignment request is associated with.
+      - `[SubjectId <String>]`: Required. The unique identifier of the principal or subject that the role assignment request is associated with. Principals can be users, groups, or service principals.
       - `[Type <String>]`: Required. Representing the type of the operation on the role assignment. The possible values are: AdminAdd , UserAdd , AdminUpdate , AdminRemove , UserRemove , UserExtend , AdminExtend , UserRenew , AdminRenew.
     - `[RoleAssignments <IMicrosoftGraphGovernanceRoleAssignment[]>]`: The collection of role assignments for the resource.
     - `[RoleDefinitions <IMicrosoftGraphGovernanceRoleDefinition[]>]`: The collection of role defintions for the resource.
@@ -537,9 +537,11 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageResourceScopeId <String>]`: key: id of accessPackageResourceScope
   - `[AccessReviewDecisionId <String>]`: key: id of accessReviewDecision
   - `[AccessReviewHistoryDefinitionId <String>]`: key: id of accessReviewHistoryDefinition
+  - `[AccessReviewHistoryInstanceId <String>]`: key: id of accessReviewHistoryInstance
   - `[AccessReviewId <String>]`: key: id of accessReview
   - `[AccessReviewId1 <String>]`: key: id of accessReview
   - `[AccessReviewInstanceDecisionItemId <String>]`: key: id of accessReviewInstanceDecisionItem
+  - `[AccessReviewInstanceDecisionItemId1 <String>]`: key: id of accessReviewInstanceDecisionItem
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewReviewerId <String>]`: key: id of accessReviewReviewer
   - `[AccessReviewScheduleDefinitionId <String>]`: key: id of accessReviewScheduleDefinition
@@ -554,11 +556,13 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[BusinessFlowTemplateId <String>]`: key: id of businessFlowTemplate
   - `[ConnectedOrganizationId <String>]`: key: id of connectedOrganization
   - `[DirectoryObjectId <String>]`: key: id of directoryObject
+  - `[GovernanceInsightId <String>]`: key: id of governanceInsight
   - `[GovernanceResourceId <String>]`: key: id of governanceResource
   - `[GovernanceRoleAssignmentId <String>]`: key: id of governanceRoleAssignment
   - `[GovernanceRoleAssignmentRequestId <String>]`: key: id of governanceRoleAssignmentRequest
   - `[GovernanceRoleDefinitionId <String>]`: key: id of governanceRoleDefinition
   - `[GovernanceRoleSettingId <String>]`: key: id of governanceRoleSetting
+  - `[GroupId <String>]`: key: id of group
   - `[On <String>]`: Usage: on={on}
   - `[PrivilegedAccessId <String>]`: key: id of privilegedAccess
   - `[PrivilegedApprovalId <String>]`: key: id of privilegedApproval
@@ -596,7 +600,7 @@ LINKEDELIGIBLEROLEASSIGNMENT <IMicrosoftGraphGovernanceRoleAssignment>: governan
       - `[Reason <String>]`: A message provided by users and administrators when create the request about why it is needed.
       - `[RequestedDateTime <DateTime?>]`: Read-only. The request create time. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[Resource <IMicrosoftGraphGovernanceResource>]`: governanceResource
-      - `[ResourceId <String>]`: Required. The id of the resource which the role assignment request is associated with.
+      - `[ResourceId <String>]`: Required. The unique identifier of the Azure resource that is associated with the role assignment request. Azure resources can include subscriptions, resource groups, virtual machines, and SQL databases.
       - `[RoleDefinition <IMicrosoftGraphGovernanceRoleDefinition>]`: governanceRoleDefinition
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: Read-only.
@@ -621,7 +625,7 @@ LINKEDELIGIBLEROLEASSIGNMENT <IMicrosoftGraphGovernanceRoleAssignment>: governan
           - `[UserEligibleSettings <IMicrosoftGraphGovernanceRuleSetting[]>]`: The rule settings that are evaluated when a user tries to add an eligible role assignment. The setting is not supported for now.
           - `[UserMemberSettings <IMicrosoftGraphGovernanceRuleSetting[]>]`: The rule settings that are evaluated when a user tries to activate his role assignment.
         - `[TemplateId <String>]`: 
-      - `[RoleDefinitionId <String>]`: Required. The id of the role definition which the role assignment request is associated with.
+      - `[RoleDefinitionId <String>]`: Required. The identifier of the Azure role definition that the role assignment request is associated with.
       - `[Schedule <IMicrosoftGraphGovernanceSchedule>]`: governanceSchedule
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Duration <TimeSpan?>]`: The duration of a role assignment. It is in format of a TimeSpan.
@@ -642,7 +646,7 @@ LINKEDELIGIBLEROLEASSIGNMENT <IMicrosoftGraphGovernanceRoleAssignment>: governan
         - `[Email <String>]`: The email address of the user subject. If the subject is in other types, it is empty.
         - `[PrincipalName <String>]`: The principal name of the user subject. If the subject is in other types, it is empty.
         - `[Type <String>]`: The type of the subject. The value can be User, Group, and ServicePrincipal.
-      - `[SubjectId <String>]`: Required. The id of the subject which the role assignment request is associated with.
+      - `[SubjectId <String>]`: Required. The unique identifier of the principal or subject that the role assignment request is associated with. Principals can be users, groups, or service principals.
       - `[Type <String>]`: Required. Representing the type of the operation on the role assignment. The possible values are: AdminAdd , UserAdd , AdminUpdate , AdminRemove , UserRemove , UserExtend , AdminExtend , UserRenew , AdminRenew.
     - `[RoleAssignments <IMicrosoftGraphGovernanceRoleAssignment[]>]`: The collection of role assignments for the resource.
     - `[RoleDefinitions <IMicrosoftGraphGovernanceRoleDefinition[]>]`: The collection of role defintions for the resource.
@@ -672,7 +676,7 @@ RESOURCE <IMicrosoftGraphGovernanceResource>: governanceResource
     - `[Reason <String>]`: A message provided by users and administrators when create the request about why it is needed.
     - `[RequestedDateTime <DateTime?>]`: Read-only. The request create time. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[Resource <IMicrosoftGraphGovernanceResource>]`: governanceResource
-    - `[ResourceId <String>]`: Required. The id of the resource which the role assignment request is associated with.
+    - `[ResourceId <String>]`: Required. The unique identifier of the Azure resource that is associated with the role assignment request. Azure resources can include subscriptions, resource groups, virtual machines, and SQL databases.
     - `[RoleDefinition <IMicrosoftGraphGovernanceRoleDefinition>]`: governanceRoleDefinition
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: Read-only.
@@ -697,7 +701,7 @@ RESOURCE <IMicrosoftGraphGovernanceResource>: governanceResource
         - `[UserEligibleSettings <IMicrosoftGraphGovernanceRuleSetting[]>]`: The rule settings that are evaluated when a user tries to add an eligible role assignment. The setting is not supported for now.
         - `[UserMemberSettings <IMicrosoftGraphGovernanceRuleSetting[]>]`: The rule settings that are evaluated when a user tries to activate his role assignment.
       - `[TemplateId <String>]`: 
-    - `[RoleDefinitionId <String>]`: Required. The id of the role definition which the role assignment request is associated with.
+    - `[RoleDefinitionId <String>]`: Required. The identifier of the Azure role definition that the role assignment request is associated with.
     - `[Schedule <IMicrosoftGraphGovernanceSchedule>]`: governanceSchedule
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Duration <TimeSpan?>]`: The duration of a role assignment. It is in format of a TimeSpan.
@@ -718,7 +722,7 @@ RESOURCE <IMicrosoftGraphGovernanceResource>: governanceResource
       - `[Email <String>]`: The email address of the user subject. If the subject is in other types, it is empty.
       - `[PrincipalName <String>]`: The principal name of the user subject. If the subject is in other types, it is empty.
       - `[Type <String>]`: The type of the subject. The value can be User, Group, and ServicePrincipal.
-    - `[SubjectId <String>]`: Required. The id of the subject which the role assignment request is associated with.
+    - `[SubjectId <String>]`: Required. The unique identifier of the principal or subject that the role assignment request is associated with. Principals can be users, groups, or service principals.
     - `[Type <String>]`: Required. Representing the type of the operation on the role assignment. The possible values are: AdminAdd , UserAdd , AdminUpdate , AdminRemove , UserRemove , UserExtend , AdminExtend , UserRenew , AdminRenew.
   - `[RoleAssignments <IMicrosoftGraphGovernanceRoleAssignment[]>]`: The collection of role assignments for the resource.
     - `[Id <String>]`: Read-only.
@@ -761,9 +765,9 @@ ROLEDEFINITION <IMicrosoftGraphGovernanceRoleDefinition>: governanceRoleDefiniti
       - `[Reason <String>]`: A message provided by users and administrators when create the request about why it is needed.
       - `[RequestedDateTime <DateTime?>]`: Read-only. The request create time. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[Resource <IMicrosoftGraphGovernanceResource>]`: governanceResource
-      - `[ResourceId <String>]`: Required. The id of the resource which the role assignment request is associated with.
+      - `[ResourceId <String>]`: Required. The unique identifier of the Azure resource that is associated with the role assignment request. Azure resources can include subscriptions, resource groups, virtual machines, and SQL databases.
       - `[RoleDefinition <IMicrosoftGraphGovernanceRoleDefinition>]`: governanceRoleDefinition
-      - `[RoleDefinitionId <String>]`: Required. The id of the role definition which the role assignment request is associated with.
+      - `[RoleDefinitionId <String>]`: Required. The identifier of the Azure role definition that the role assignment request is associated with.
       - `[Schedule <IMicrosoftGraphGovernanceSchedule>]`: governanceSchedule
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Duration <TimeSpan?>]`: The duration of a role assignment. It is in format of a TimeSpan.
@@ -784,7 +788,7 @@ ROLEDEFINITION <IMicrosoftGraphGovernanceRoleDefinition>: governanceRoleDefiniti
         - `[Email <String>]`: The email address of the user subject. If the subject is in other types, it is empty.
         - `[PrincipalName <String>]`: The principal name of the user subject. If the subject is in other types, it is empty.
         - `[Type <String>]`: The type of the subject. The value can be User, Group, and ServicePrincipal.
-      - `[SubjectId <String>]`: Required. The id of the subject which the role assignment request is associated with.
+      - `[SubjectId <String>]`: Required. The unique identifier of the principal or subject that the role assignment request is associated with. Principals can be users, groups, or service principals.
       - `[Type <String>]`: Required. Representing the type of the operation on the role assignment. The possible values are: AdminAdd , UserAdd , AdminUpdate , AdminRemove , UserRemove , UserExtend , AdminExtend , UserRenew , AdminRenew.
     - `[RoleAssignments <IMicrosoftGraphGovernanceRoleAssignment[]>]`: The collection of role assignments for the resource.
       - `[Id <String>]`: Read-only.
@@ -833,5 +837,8 @@ SUBJECT <IMicrosoftGraphGovernanceSubject>: governanceSubject
   - `[Type <String>]`: The type of the subject. The value can be User, Group, and ServicePrincipal.
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

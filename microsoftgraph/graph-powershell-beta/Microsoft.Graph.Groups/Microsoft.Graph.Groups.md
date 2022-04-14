@@ -1,6 +1,6 @@
----
+﻿---
 Module Name: Microsoft.Graph.Groups
-Module Guid: b7761a4e-a89e-4185-8e4f-06552d63547a
+Module Guid: afc1e372-8199-4650-9c1f-12bb085bd540
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups
 Help Version: 1.0.0.0
 Locale: en-US
@@ -39,8 +39,7 @@ Invoke action copyToNotebook
 Invoke action copyToSectionGroup
 
 ### [Get-MgGroup](Get-MgGroup.md)
-Represents an Azure Active Directory object.
-The directoryObject type is the base type for many other directory entity types.
+Get entity from groups by key
 
 ### [Get-MgGroupAcceptedSender](Get-MgGroupAcceptedSender.md)
 The list of users or groups that are allowed to create post's or calendar events in this group.
@@ -76,11 +75,13 @@ Nullable.
 The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [Get-MgGroupConversationThreadPostExtension](Get-MgGroupConversationThreadPostExtension.md)
 The collection of open extensions defined for the post.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [Get-MgGroupConversationThreadPostMention](Get-MgGroupConversationThreadPostMention.md)
 Get mentions from groups
@@ -125,13 +126,18 @@ Nullable.
 Get entity from groupLifecyclePolicies by key
 
 ### [Get-MgGroupMember](Get-MgGroupMember.md)
-Users, contacts, and groups that are members of this group.
-HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only.
+Members of this group, who can be users, devices, other groups, or service principals.
+Supports the List members, Add member, and Remove member operations.
 Nullable.
+Supports $expand including nested $select.
+For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName).
 
 ### [Get-MgGroupMemberByRef](Get-MgGroupMemberByRef.md)
-A list of group members with license errors from this group-based license assignment.
-Read-only.
+Members of this group, who can be users, devices, other groups, or service principals.
+Supports the List members, Add member, and Remove member operations.
+Nullable.
+Supports $expand including nested $select.
+For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName).
 
 ### [Get-MgGroupMemberGroup](Get-MgGroupMemberGroup.md)
 Invoke action getMemberGroups
@@ -144,21 +150,22 @@ Groups and administrative units that this group is a member of.
 HTTP Methods: GET (supported for all groups).
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [Get-MgGroupMemberOfByRef](Get-MgGroupMemberOfByRef.md)
-Users, contacts, and groups that are members of this group.
-HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only.
+Groups and administrative units that this group is a member of.
+HTTP Methods: GET (supported for all groups).
+Read-only.
 Nullable.
+Supports $expand.
 
 ### [Get-MgGroupMemberWithLicenseError](Get-MgGroupMemberWithLicenseError.md)
 A list of group members with license errors from this group-based license assignment.
 Read-only.
 
 ### [Get-MgGroupMemberWithLicenseErrorByRef](Get-MgGroupMemberWithLicenseErrorByRef.md)
-Groups and administrative units that this group is a member of.
-HTTP Methods: GET (supported for all groups).
+A list of group members with license errors from this group-based license assignment.
 Read-only.
-Nullable.
 
 ### [Get-MgGroupOnenoteNotebookFromWebUrl](Get-MgGroupOnenoteNotebookFromWebUrl.md)
 Invoke action getNotebookFromWebUrl
@@ -167,19 +174,22 @@ Invoke action getNotebookFromWebUrl
 Invoke function getRecentNotebooks
 
 ### [Get-MgGroupOwner](Get-MgGroupOwner.md)
-The owners of the group.
-The owners are a set of non-admin users who are allowed to modify this object.
-HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only.
+The owners of the group who can be users or service principals.
 Nullable.
+If this property is not specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner.
+Supports $expand including nested $select.
+For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
 
 ### [Get-MgGroupOwnerByRef](Get-MgGroupOwnerByRef.md)
-The owners of the group.
-The owners are a set of non-admin users who are allowed to modify this object.
-HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only.
+The owners of the group who can be users or service principals.
 Nullable.
+If this property is not specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner.
+Supports $expand including nested $select.
+For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
 
 ### [Get-MgGroupPermissionGrant](Get-MgGroupPermissionGrant.md)
 The permissions that have been granted for a group to a specific application.
+Supports $expand.
 
 ### [Get-MgGroupPhoto](Get-MgGroupPhoto.md)
 The group's profile photo.
@@ -211,11 +221,13 @@ Nullable.
 The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [Get-MgGroupThreadPostExtension](Get-MgGroupThreadPostExtension.md)
 The collection of open extensions defined for the post.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [Get-MgGroupThreadPostMention](Get-MgGroupThreadPostMention.md)
 Get mentions from groups
@@ -357,6 +369,7 @@ Nullable.
 The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [New-MgGroupConversationThreadPostAttachmentUploadSession](New-MgGroupConversationThreadPostAttachmentUploadSession.md)
 Invoke action createUploadSession
@@ -365,6 +378,7 @@ Invoke action createUploadSession
 The collection of open extensions defined for the post.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [New-MgGroupConversationThreadPostMention](New-MgGroupConversationThreadPostMention.md)
 Create new navigation property to mentions for groups
@@ -396,28 +410,33 @@ Add new entity to groupLifecyclePolicies
 Add a member to an Office 365 group or security group through the members navigation property.
 
 ### [New-MgGroupMemberByRef](New-MgGroupMemberByRef.md)
-A list of group members with license errors from this group-based license assignment.
-Read-only.
+Members of this group, who can be users, devices, other groups, or service principals.
+Supports the List members, Add member, and Remove member operations.
+Nullable.
+Supports $expand including nested $select.
+For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName).
 
 ### [New-MgGroupMemberOfByRef](New-MgGroupMemberOfByRef.md)
-Users, contacts, and groups that are members of this group.
-HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only.
-Nullable.
-
-### [New-MgGroupMemberWithLicenseErrorByRef](New-MgGroupMemberWithLicenseErrorByRef.md)
 Groups and administrative units that this group is a member of.
 HTTP Methods: GET (supported for all groups).
 Read-only.
 Nullable.
+Supports $expand.
+
+### [New-MgGroupMemberWithLicenseErrorByRef](New-MgGroupMemberWithLicenseErrorByRef.md)
+A list of group members with license errors from this group-based license assignment.
+Read-only.
 
 ### [New-MgGroupOwnerByRef](New-MgGroupOwnerByRef.md)
-The owners of the group.
-The owners are a set of non-admin users who are allowed to modify this object.
-HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only.
+The owners of the group who can be users or service principals.
 Nullable.
+If this property is not specified when creating a Microsoft 365 group, the calling user is automatically assigned as the group owner.
+Supports $expand including nested $select.
+For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
 
 ### [New-MgGroupPermissionGrant](New-MgGroupPermissionGrant.md)
 The permissions that have been granted for a group to a specific application.
+Supports $expand.
 
 ### [New-MgGroupPhoto](New-MgGroupPhoto.md)
 The profile photos owned by the group.
@@ -444,6 +463,7 @@ Nullable.
 The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [New-MgGroupThreadPostAttachmentUploadSession](New-MgGroupThreadPostAttachmentUploadSession.md)
 Invoke action createUploadSession
@@ -452,6 +472,7 @@ Invoke action createUploadSession
 The collection of open extensions defined for the post.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [New-MgGroupThreadPostMention](New-MgGroupThreadPostMention.md)
 Create new navigation property to mentions for groups
@@ -467,6 +488,9 @@ Read-only.
 Nullable.
 
 ### [New-MgGroupTransitiveMemberByRef](New-MgGroupTransitiveMemberByRef.md)
+Create new navigation property ref to transitiveMembers for groups
+
+### [New-MgGroupTransitiveMemberOfByRef](New-MgGroupTransitiveMemberOfByRef.md)
 Create new navigation property ref to transitiveMemberOf for groups
 
 ### [New-MgUserJoinedGroup](New-MgUserJoinedGroup.md)
@@ -474,8 +498,7 @@ Read-only.
 Nullable.
 
 ### [Remove-MgGroup](Remove-MgGroup.md)
-Represents an Azure Active Directory object.
-The directoryObject type is the base type for many other directory entity types.
+Delete entity from groups
 
 ### [Remove-MgGroupConversation](Remove-MgGroupConversation.md)
 The group's conversations.
@@ -494,11 +517,13 @@ Nullable.
 The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [Remove-MgGroupConversationThreadPostExtension](Remove-MgGroupConversationThreadPostExtension.md)
 The collection of open extensions defined for the post.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [Remove-MgGroupConversationThreadPostMention](Remove-MgGroupConversationThreadPostMention.md)
 Delete navigation property mentions for groups
@@ -539,6 +564,7 @@ Delete entity from groupLifecyclePolicies
 
 ### [Remove-MgGroupPermissionGrant](Remove-MgGroupPermissionGrant.md)
 The permissions that have been granted for a group to a specific application.
+Supports $expand.
 
 ### [Remove-MgGroupPhoto](Remove-MgGroupPhoto.md)
 The group's profile photo.
@@ -559,11 +585,13 @@ Nullable.
 The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [Remove-MgGroupThreadPostExtension](Remove-MgGroupThreadPostExtension.md)
 The collection of open extensions defined for the post.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [Remove-MgGroupThreadPostMention](Remove-MgGroupThreadPostMention.md)
 Delete navigation property mentions for groups
@@ -610,8 +638,7 @@ Invoke action evaluateDynamicMembership
 Invoke action validateProperties
 
 ### [Update-MgGroup](Update-MgGroup.md)
-Represents an Azure Active Directory object.
-The directoryObject type is the base type for many other directory entity types.
+Update entity in groups
 
 ### [Update-MgGroupConversation](Update-MgGroupConversation.md)
 The group's conversations.
@@ -630,11 +657,13 @@ Nullable.
 The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [Update-MgGroupConversationThreadPostExtension](Update-MgGroupConversationThreadPostExtension.md)
 The collection of open extensions defined for the post.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [Update-MgGroupConversationThreadPostMention](Update-MgGroupConversationThreadPostMention.md)
 Update the navigation property mentions in groups
@@ -667,6 +696,7 @@ Invoke action onenotePatchContent
 
 ### [Update-MgGroupPermissionGrant](Update-MgGroupPermissionGrant.md)
 The permissions that have been granted for a group to a specific application.
+Supports $expand.
 
 ### [Update-MgGroupPhoto](Update-MgGroupPhoto.md)
 The group's profile photo.
@@ -687,11 +717,13 @@ Nullable.
 The collection of fileAttachment, itemAttachment, and referenceAttachment attachments for the post.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [Update-MgGroupThreadPostExtension](Update-MgGroupThreadPostExtension.md)
 The collection of open extensions defined for the post.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [Update-MgGroupThreadPostMention](Update-MgGroupThreadPostMention.md)
 Update the navigation property mentions in groups

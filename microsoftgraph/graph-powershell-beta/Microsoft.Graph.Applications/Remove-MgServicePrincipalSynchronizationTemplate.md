@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgServicePrincipalSynchronizationTemplate
 
 ## SYNOPSIS
-Delete navigation property templates for servicePrincipals
+Pre-configured synchronization settings for a particular application.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgServicePrincipalSynchronizationTemplate -InputObject <IApplicationsIden
 ```
 
 ## DESCRIPTION
-Delete navigation property templates for servicePrincipals
+Pre-configured synchronization settings for a particular application.
 
 ## EXAMPLES
 
@@ -48,7 +48,7 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IApplicationsIdentity
@@ -166,6 +166,7 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[DirectoryDefinitionId <String>]`: key: id of directoryDefinition
   - `[EndpointId <String>]`: key: id of endpoint
   - `[ExtensionPropertyId <String>]`: key: id of extensionProperty
+  - `[FederatedIdentityCredentialId <String>]`: key: id of federatedIdentityCredential
   - `[GroupId <String>]`: key: id of group
   - `[LicenseDetailsId <String>]`: key: id of licenseDetails
   - `[OnPremisesAgentGroupId <String>]`: key: id of onPremisesAgentGroup
