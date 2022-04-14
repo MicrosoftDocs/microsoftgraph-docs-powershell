@@ -18,7 +18,7 @@
       href: app-only.md
     - name: Manage access to resources
       href: tutorial-entitlement-management.md
-    -name: Assign Azure AD roles in PIM
+    - name: Assign Azure AD roles in PIM
       href: tutorial-pim.md                
 - name: Migrate to Microsoft Graph PowerShell
   items:   
