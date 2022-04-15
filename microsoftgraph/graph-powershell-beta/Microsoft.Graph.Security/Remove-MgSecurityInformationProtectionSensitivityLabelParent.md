@@ -1,31 +1,31 @@
-﻿---
+---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/remove-mgsecurityincident
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/remove-mgsecurityinformationprotectionsensitivitylabelparent
 schema: 2.0.0
 ---
 
-# Remove-MgSecurityIncident
+# Remove-MgSecurityInformationProtectionSensitivityLabelParent
 
 ## SYNOPSIS
-Delete navigation property incidents for security
+Delete navigation property parent for security
 
 ## SYNTAX
 
 ### Delete (Default)
 ```
-Remove-MgSecurityIncident -IncidentId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Remove-MgSecurityInformationProtectionSensitivityLabelParent -SensitivityLabelId <String> [-IfMatch <String>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgSecurityIncident -InputObject <ISecurityIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Remove-MgSecurityInformationProtectionSensitivityLabelParent -InputObject <ISecurityIdentity>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete navigation property incidents for security
+Delete navigation property parent for security
 
 ## EXAMPLES
 
@@ -47,21 +47,6 @@ Parameter Sets: (All)
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -IncidentId
-key: id of incident
-
-```yaml
-Type: String
-Parameter Sets: Delete
-Aliases:
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -93,6 +78,21 @@ Parameter Sets: (All)
 Aliases:
 
 Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SensitivityLabelId
+key: id of sensitivityLabel
+
+```yaml
+Type: String
+Parameter Sets: Delete
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -144,19 +144,5 @@ Please use Get-Help -Online.
 
 ## RELATED LINKS
 
-INPUTOBJECT <ISecurityIdentity>: Identity Parameter
-  - `[AlertId <String>]`: key: id of alert
-  - `[CloudAppSecurityProfileId <String>]`: key: id of cloudAppSecurityProfile
-  - `[DomainSecurityProfileId <String>]`: key: id of domainSecurityProfile
-  - `[FileSecurityProfileId <String>]`: key: id of fileSecurityProfile
-  - `[HostSecurityProfileId <String>]`: key: id of hostSecurityProfile
-  - `[IPSecurityProfileId <String>]`: key: id of ipSecurityProfile
-  - `[IncidentId <String>]`: key: id of incident
-  - `[ProviderTenantSettingId <String>]`: key: id of providerTenantSetting
-  - `[SecureScoreControlProfileId <String>]`: key: id of secureScoreControlProfile
-  - `[SecureScoreId <String>]`: key: id of secureScore
-  - `[SecurityActionId <String>]`: key: id of securityAction
-  - `[SimulationId <String>]`: key: id of simulation
-  - `[TiIndicatorId <String>]`: key: id of tiIndicator
-  - `[UserSecurityProfileId <String>]`: key: id of userSecurityProfile
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/remove-mgsecurityinformationprotectionsensitivitylabelparent](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/remove-mgsecurityinformationprotectionsensitivitylabelparent)
 

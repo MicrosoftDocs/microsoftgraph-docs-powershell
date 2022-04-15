@@ -1,40 +1,47 @@
-﻿---
+---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/get-mgsecurityincident
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationautomation
 schema: 2.0.0
 ---
 
-# Get-MgSecurityIncident
+# Get-MgSecurityAttackSimulationAutomation
 
 ## SYNOPSIS
-Get incidents from security
+Represents simulation automations created to run on a tenant.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgSecurityIncident [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+Get-MgSecurityAttackSimulationAutomation [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgSecurityIncident -IncidentId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgSecurityAttackSimulationAutomation -SimulationAutomationId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgSecurityIncident -InputObject <ISecurityIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgSecurityAttackSimulationAutomation -InputObject <ISecurityIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get incidents from security
+Represents simulation automations created to run on a tenant.
 
 ## EXAMPLES
+
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -48,7 +55,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -99,21 +106,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -IncidentId
-key: id of incident
-
-```yaml
-Type: String
-Parameter Sets: Get
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -InputObject
 Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -140,7 +132,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -175,6 +167,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -SimulationAutomationId
+key: id of simulationAutomation
+
+```yaml
+Type: String
+Parameter Sets: Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -200,7 +207,7 @@ Aliases: Limit
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -215,7 +222,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -228,30 +235,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIncident
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSimulationAutomation
 ## NOTES
-
-ALIASES
-
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
-
-
-INPUTOBJECT <ISecurityIdentity>: Identity Parameter
-  - `[AlertId <String>]`: key: id of alert
-  - `[CloudAppSecurityProfileId <String>]`: key: id of cloudAppSecurityProfile
-  - `[DomainSecurityProfileId <String>]`: key: id of domainSecurityProfile
-  - `[FileSecurityProfileId <String>]`: key: id of fileSecurityProfile
-  - `[HostSecurityProfileId <String>]`: key: id of hostSecurityProfile
-  - `[IPSecurityProfileId <String>]`: key: id of ipSecurityProfile
-  - `[IncidentId <String>]`: key: id of incident
-  - `[ProviderTenantSettingId <String>]`: key: id of providerTenantSetting
-  - `[SecureScoreControlProfileId <String>]`: key: id of secureScoreControlProfile
-  - `[SecureScoreId <String>]`: key: id of secureScore
-  - `[SecurityActionId <String>]`: key: id of securityAction
-  - `[SimulationId <String>]`: key: id of simulation
-  - `[TiIndicatorId <String>]`: key: id of tiIndicator
-  - `[UserSecurityProfileId <String>]`: key: id of userSecurityProfile
+Please use Get-Help -Online.
 
 ## RELATED LINKS
+
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationautomation](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/get-mgsecurityattacksimulationautomation)
+
