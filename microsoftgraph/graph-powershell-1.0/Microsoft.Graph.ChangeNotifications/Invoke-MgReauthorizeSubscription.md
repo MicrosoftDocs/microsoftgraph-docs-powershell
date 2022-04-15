@@ -1,50 +1,41 @@
-﻿---
+---
 external help file: Microsoft.Graph.ChangeNotifications-help.xml
 Module Name: Microsoft.Graph.ChangeNotifications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.changenotifications/remove-mgsubscription
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.changenotifications/invoke-mgreauthorizesubscription
 schema: 2.0.0
 ---
 
-# Remove-MgSubscription
+# Invoke-MgReauthorizeSubscription
 
 ## SYNOPSIS
-Delete entity from subscriptions
+Invoke action reauthorize
 
 ## SYNTAX
 
-### Delete (Default)
+### Reauthorize (Default)
 ```
-Remove-MgSubscription -SubscriptionId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+Invoke-MgReauthorizeSubscription -SubscriptionId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ReauthorizeViaIdentity
+```
+Invoke-MgReauthorizeSubscription -InputObject <IChangeNotificationsIdentity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### DeleteViaIdentity
-```
-Remove-MgSubscription -InputObject <IChangeNotificationsIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
 ## DESCRIPTION
-Delete entity from subscriptions
+Invoke action reauthorize
 
 ## EXAMPLES
 
-## PARAMETERS
-
-### -IfMatch
-ETag
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
 ```
+
+{{ Add example description here }}
+
+## PARAMETERS
 
 ### -InputObject
 Identity Parameter
@@ -52,7 +43,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IChangeNotificationsIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: ReauthorizeViaIdentity
 Aliases:
 
 Required: True
@@ -72,7 +63,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -82,7 +73,7 @@ key: id of subscription
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Reauthorize
 Aliases:
 
 Required: True
@@ -133,15 +124,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
-
-ALIASES
-
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
-
-
-INPUTOBJECT <IChangeNotificationsIdentity>: Identity Parameter
-  - `[SubscriptionId <String>]`: key: id of subscription
+Please use Get-Help -Online.
 
 ## RELATED LINKS
+
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.changenotifications/invoke-mgreauthorizesubscription](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.changenotifications/invoke-mgreauthorizesubscription)
+
