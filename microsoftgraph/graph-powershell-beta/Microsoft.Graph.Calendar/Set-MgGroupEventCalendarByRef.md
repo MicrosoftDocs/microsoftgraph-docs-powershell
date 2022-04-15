@@ -1,44 +1,95 @@
-﻿---
+---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/remove-mgusereventextension
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/set-mggroupeventcalendarbyref
 schema: 2.0.0
 ---
 
-# Remove-MgUserEventExtension
+# Set-MgGroupEventCalendarByRef
 
 ## SYNOPSIS
-The collection of open extensions defined for the event.
-Nullable.
+The calendar that contains the event.
+Navigation property.
+Read-only.
 
 ## SYNTAX
 
-### Delete (Default)
+### SetExpanded1 (Default)
 ```
-Remove-MgUserEventExtension -EventId <String> -ExtensionId <String> -UserId <String> [-IfMatch <String>]
+Set-MgGroupEventCalendarByRef -EventId <String> -GroupId <String> [-AdditionalProperties <Hashtable>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity
+### Set1
 ```
-Remove-MgUserEventExtension -InputObject <ICalendarIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
+Set-MgGroupEventCalendarByRef -EventId <String> -GroupId <String> -BodyParameter <Hashtable> [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### SetViaIdentityExpanded1
+```
+Set-MgGroupEventCalendarByRef -InputObject <ICalendarIdentity> [-AdditionalProperties <Hashtable>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### SetViaIdentity1
+```
+Set-MgGroupEventCalendarByRef -InputObject <ICalendarIdentity> -BodyParameter <Hashtable> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The collection of open extensions defined for the event.
-Nullable.
+The calendar that contains the event.
+Navigation property.
+Read-only.
 
 ## EXAMPLES
 
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
+
 ## PARAMETERS
+
+### -AdditionalProperties
+Additional Parameters
+
+```yaml
+Type: Hashtable
+Parameter Sets: SetExpanded1, SetViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -BodyParameter
+.
+
+```yaml
+Type: Hashtable
+Parameter Sets: Set1, SetViaIdentity1
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
 
 ### -EventId
 key: id of event
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: SetExpanded1, Set1
 Aliases:
 
 Required: True
@@ -48,30 +99,15 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ExtensionId
-key: id of extension
+### -GroupId
+key: id of group
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: SetExpanded1, Set1
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -IfMatch
-ETag
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -84,7 +120,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ICalendarIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: SetViaIdentityExpanded1, SetViaIdentity1
 Aliases:
 
 Required: True
@@ -104,22 +140,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -UserId
-key: id of user
-
-```yaml
-Type: String
-Parameter Sets: Delete
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -161,30 +182,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
+### System.Collections.Hashtable
 ## OUTPUTS
 
 ### System.Boolean
 ## NOTES
-
-ALIASES
-
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
-
-
-INPUTOBJECT <ICalendarIdentity>: Identity Parameter
-  - `[AttachmentId <String>]`: key: id of attachment
-  - `[CalendarGroupId <String>]`: key: id of calendarGroup
-  - `[CalendarId <String>]`: key: id of calendar
-  - `[CalendarPermissionId <String>]`: key: id of calendarPermission
-  - `[EventId <String>]`: key: id of event
-  - `[EventId1 <String>]`: key: id of event
-  - `[ExtensionId <String>]`: key: id of extension
-  - `[GroupId <String>]`: key: id of group
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
-  - `[PlaceId <String>]`: key: id of place
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
-  - `[UserId <String>]`: key: id of user
+Please use Get-Help -Online.
 
 ## RELATED LINKS
+
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/set-mggroupeventcalendarbyref](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/set-mggroupeventcalendarbyref)
+
