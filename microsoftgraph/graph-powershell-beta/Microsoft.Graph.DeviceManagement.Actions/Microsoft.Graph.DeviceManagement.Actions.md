@@ -18,19 +18,19 @@ Invoke action addLanguageFiles
 Invoke action approveApps
 
 ### [Clear-MgDeviceManagementComanagedDevice](Clear-MgDeviceManagementComanagedDevice.md)
-Invoke action wipe
+Wipe a device
 
 ### [Clear-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice](Clear-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice.md)
-Invoke action wipe
+Wipe a device
 
 ### [Clear-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDevice](Clear-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDevice.md)
-Invoke action wipe
+Wipe a device
 
 ### [Clear-MgDeviceManagementManagedDevice](Clear-MgDeviceManagementManagedDevice.md)
-Invoke action wipe
+Wipe a device
 
 ### [Clear-MgDeviceManagementScriptDeviceRunStateManagedDevice](Clear-MgDeviceManagementScriptDeviceRunStateManagedDevice.md)
-Invoke action wipe
+Wipe a device
 
 ### [Complete-MgDeviceManagementAndroidForWorkSettingSignup](Complete-MgDeviceManagementAndroidForWorkSettingSignup.md)
 Invoke action completeSignup
@@ -41,23 +41,47 @@ Invoke action completeSignup
 ### [Connect-MgDeviceManagementChromeOSOnboardingSetting](Connect-MgDeviceManagementChromeOSOnboardingSetting.md)
 Invoke action connect
 
+### [Copy-MgDeviceManagementReusablePolicySetting](Copy-MgDeviceManagementReusablePolicySetting.md)
+Invoke action clone
+
+### [Disable-MgDeviceManagementComanagedDevice](Disable-MgDeviceManagementComanagedDevice.md)
+Invoke action disable
+
 ### [Disable-MgDeviceManagementComanagedDeviceLostMode](Disable-MgDeviceManagementComanagedDeviceLostMode.md)
-Invoke action disableLostMode
+Disable lost mode
+
+### [Disable-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice](Disable-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice.md)
+Invoke action disable
 
 ### [Disable-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceLostMode](Disable-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceLostMode.md)
-Invoke action disableLostMode
+Disable lost mode
+
+### [Disable-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDevice](Disable-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDevice.md)
+Invoke action disable
 
 ### [Disable-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceLostMode](Disable-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceLostMode.md)
-Invoke action disableLostMode
+Disable lost mode
+
+### [Disable-MgDeviceManagementManagedDevice](Disable-MgDeviceManagementManagedDevice.md)
+Invoke action disable
 
 ### [Disable-MgDeviceManagementManagedDeviceLostMode](Disable-MgDeviceManagementManagedDeviceLostMode.md)
-Invoke action disableLostMode
+Disable lost mode
+
+### [Disable-MgDeviceManagementOemWarrantyInformationOnboarding](Disable-MgDeviceManagementOemWarrantyInformationOnboarding.md)
+Invoke action disable
+
+### [Disable-MgDeviceManagementScriptDeviceRunStateManagedDevice](Disable-MgDeviceManagementScriptDeviceRunStateManagedDevice.md)
+Invoke action disable
 
 ### [Disable-MgDeviceManagementScriptDeviceRunStateManagedDeviceLostMode](Disable-MgDeviceManagementScriptDeviceRunStateManagedDeviceLostMode.md)
-Invoke action disableLostMode
+Disable lost mode
+
+### [Disconnect-MgDeviceManagementChromeOSOnboardingSetting](Disconnect-MgDeviceManagementChromeOSOnboardingSetting.md)
+Invoke action disconnect
 
 ### [Disconnect-MgDeviceManagementRemoteAssistancePartner](Disconnect-MgDeviceManagementRemoteAssistancePartner.md)
-Invoke action disconnect
+A request to remove the active TeamViewer connector
 
 ### [Enable-MgDeviceManagementAndroidDeviceAdministratorEnrollment](Enable-MgDeviceManagementAndroidDeviceAdministratorEnrollment.md)
 Invoke action enableAndroidDeviceAdministratorEnrollment
@@ -66,46 +90,57 @@ Invoke action enableAndroidDeviceAdministratorEnrollment
 Invoke action enable
 
 ### [Enable-MgDeviceManagementComanagedDeviceLostMode](Enable-MgDeviceManagementComanagedDeviceLostMode.md)
-Invoke action enableLostMode
+Enable lost mode
 
 ### [Enable-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceLostMode](Enable-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceLostMode.md)
-Invoke action enableLostMode
+Enable lost mode
 
 ### [Enable-MgDeviceManagementDeviceHealthScriptGlobalScript](Enable-MgDeviceManagementDeviceHealthScriptGlobalScript.md)
 Invoke action enableGlobalScripts
 
 ### [Enable-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceLostMode](Enable-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceLostMode.md)
-Invoke action enableLostMode
+Enable lost mode
 
 ### [Enable-MgDeviceManagementLegacyPcManagement](Enable-MgDeviceManagementLegacyPcManagement.md)
 Invoke action enableLegacyPcManagement
 
 ### [Enable-MgDeviceManagementManagedDeviceLostMode](Enable-MgDeviceManagementManagedDeviceLostMode.md)
-Invoke action enableLostMode
+Enable lost mode
+
+### [Enable-MgDeviceManagementOemWarrantyInformationOnboarding](Enable-MgDeviceManagementOemWarrantyInformationOnboarding.md)
+Invoke action enable
 
 ### [Enable-MgDeviceManagementScriptDeviceRunStateManagedDeviceLostMode](Enable-MgDeviceManagementScriptDeviceRunStateManagedDeviceLostMode.md)
-Invoke action enableLostMode
+Enable lost mode
 
 ### [Enable-MgDeviceManagementUnlicensedAdminstrator](Enable-MgDeviceManagementUnlicensedAdminstrator.md)
-Invoke action enableUnlicensedAdminstrators
+Upon enabling, users assigned as administrators via Role Assignment Memberships will no longer require an assigned Intune license.
+You are limited to 350 unlicensed direct members for each AAD security group in a role assignment, but you can assign multiple AAD security groups to a role if you need to support more than 350 unlicensed administrators.
+Licensed administrators will continue to function as-is in that transitive memberships apply and are not subject to the 350 member limit.
 
 ### [Find-MgDeviceManagementComanagedDevice](Find-MgDeviceManagementComanagedDevice.md)
-Invoke action locateDevice
+Locate a device
 
 ### [Find-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice](Find-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice.md)
-Invoke action locateDevice
+Locate a device
 
 ### [Find-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDevice](Find-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDevice.md)
-Invoke action locateDevice
+Locate a device
 
 ### [Find-MgDeviceManagementManagedDevice](Find-MgDeviceManagementManagedDevice.md)
-Invoke action locateDevice
+Locate a device
 
 ### [Find-MgDeviceManagementScriptDeviceRunStateManagedDevice](Find-MgDeviceManagementScriptDeviceRunStateManagedDevice.md)
-Invoke action locateDevice
+Locate a device
 
 ### [Get-MgDeviceManagementAssignmentFilterStatusDetail](Get-MgDeviceManagementAssignmentFilterStatusDetail.md)
 Invoke action getAssignmentFiltersStatusDetails
+
+### [Get-MgDeviceManagementCertificateConnectorDetailHealthMetric](Get-MgDeviceManagementCertificateConnectorDetailHealthMetric.md)
+Invoke action getHealthMetrics
+
+### [Get-MgDeviceManagementCertificateConnectorDetailHealthMetricTimeSeries](Get-MgDeviceManagementCertificateConnectorDetailHealthMetricTimeSeries.md)
+Invoke action getHealthMetricTimeSeries
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyDeviceScheduledToRetire](Get-MgDeviceManagementDeviceCompliancePolicyDeviceScheduledToRetire.md)
 Invoke action getDevicesScheduledToRetire
@@ -114,7 +149,7 @@ Invoke action getDevicesScheduledToRetire
 Invoke action getTargetedUsersAndDevices
 
 ### [Get-MgDeviceManagementDeviceHealthScriptGlobalScriptHighestAvailableVersion](Get-MgDeviceManagementDeviceHealthScriptGlobalScriptHighestAvailableVersion.md)
-Invoke action getGlobalScriptHighestAvailableVersion
+Update the Proprietary Device Health Script
 
 ### [Get-MgDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerHealthMetric](Get-MgDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServerHealthMetric.md)
 Invoke action getHealthMetrics
@@ -137,14 +172,32 @@ Invoke action getAppStatusOverviewReport
 ### [Get-MgDeviceManagementReportCachedReport](Get-MgDeviceManagementReportCachedReport.md)
 Invoke action getCachedReport
 
+### [Get-MgDeviceManagementReportCompliancePolicyDeviceReport](Get-MgDeviceManagementReportCompliancePolicyDeviceReport.md)
+Invoke action getCompliancePolicyDevicesReport
+
+### [Get-MgDeviceManagementReportCompliancePolicyDeviceSummaryReport](Get-MgDeviceManagementReportCompliancePolicyDeviceSummaryReport.md)
+Invoke action getCompliancePolicyDeviceSummaryReport
+
 ### [Get-MgDeviceManagementReportCompliancePolicyNonComplianceReport](Get-MgDeviceManagementReportCompliancePolicyNonComplianceReport.md)
 Invoke action getCompliancePolicyNonComplianceReport
 
 ### [Get-MgDeviceManagementReportCompliancePolicyNonComplianceSummaryReport](Get-MgDeviceManagementReportCompliancePolicyNonComplianceSummaryReport.md)
 Invoke action getCompliancePolicyNonComplianceSummaryReport
 
+### [Get-MgDeviceManagementReportCompliancePolicyReport](Get-MgDeviceManagementReportCompliancePolicyReport.md)
+Invoke action getCompliancePoliciesReportForDevice
+
+### [Get-MgDeviceManagementReportComplianceSettingDetailReport](Get-MgDeviceManagementReportComplianceSettingDetailReport.md)
+Invoke action getComplianceSettingDetailsReport
+
 ### [Get-MgDeviceManagementReportComplianceSettingNonComplianceReport](Get-MgDeviceManagementReportComplianceSettingNonComplianceReport.md)
 Invoke action getComplianceSettingNonComplianceReport
+
+### [Get-MgDeviceManagementReportComplianceSettingReport](Get-MgDeviceManagementReportComplianceSettingReport.md)
+Invoke action getComplianceSettingsReport
+
+### [Get-MgDeviceManagementReportConfigManagerDevicePolicyStatusReport](Get-MgDeviceManagementReportConfigManagerDevicePolicyStatusReport.md)
+Invoke action getConfigManagerDevicePolicyStatusReport
 
 ### [Get-MgDeviceManagementReportConfigurationPolicyDeviceReport](Get-MgDeviceManagementReportConfigurationPolicyDeviceReport.md)
 Invoke action getConfigurationPolicyDevicesReport
@@ -161,6 +214,9 @@ Invoke action getConfigurationPolicyNonComplianceSummaryReport
 ### [Get-MgDeviceManagementReportConfigurationPolicyReport](Get-MgDeviceManagementReportConfigurationPolicyReport.md)
 Invoke action getConfigurationPoliciesReportForDevice
 
+### [Get-MgDeviceManagementReportConfigurationPolicySettingDeviceSummaryReport](Get-MgDeviceManagementReportConfigurationPolicySettingDeviceSummaryReport.md)
+Invoke action getConfigurationPolicySettingsDeviceSummaryReport
+
 ### [Get-MgDeviceManagementReportConfigurationSettingDetailReport](Get-MgDeviceManagementReportConfigurationSettingDetailReport.md)
 Invoke action getConfigurationSettingDetailsReport
 
@@ -170,11 +226,26 @@ Invoke action getConfigurationSettingNonComplianceReport
 ### [Get-MgDeviceManagementReportConfigurationSettingReport](Get-MgDeviceManagementReportConfigurationSettingReport.md)
 Invoke action getConfigurationSettingsReport
 
+### [Get-MgDeviceManagementReportDeviceConfigurationPolicySettingSummaryReport](Get-MgDeviceManagementReportDeviceConfigurationPolicySettingSummaryReport.md)
+Invoke action getDeviceConfigurationPolicySettingsSummaryReport
+
+### [Get-MgDeviceManagementReportDeviceConfigurationPolicyStatusSummary](Get-MgDeviceManagementReportDeviceConfigurationPolicyStatusSummary.md)
+Invoke action getDeviceConfigurationPolicyStatusSummary
+
 ### [Get-MgDeviceManagementReportDeviceInstallStatusReport](Get-MgDeviceManagementReportDeviceInstallStatusReport.md)
 Invoke action getDeviceInstallStatusReport
 
+### [Get-MgDeviceManagementReportDeviceManagementIntentPerSettingContributingProfile](Get-MgDeviceManagementReportDeviceManagementIntentPerSettingContributingProfile.md)
+Invoke action getDeviceManagementIntentPerSettingContributingProfiles
+
+### [Get-MgDeviceManagementReportDeviceManagementIntentSettingReport](Get-MgDeviceManagementReportDeviceManagementIntentSettingReport.md)
+Invoke action getDeviceManagementIntentSettingsReport
+
 ### [Get-MgDeviceManagementReportDeviceNonComplianceReport](Get-MgDeviceManagementReportDeviceNonComplianceReport.md)
 Invoke action getDeviceNonComplianceReport
+
+### [Get-MgDeviceManagementReportEnrollmentConfigurationPolicy](Get-MgDeviceManagementReportEnrollmentConfigurationPolicy.md)
+Invoke action getEnrollmentConfigurationPoliciesByDevice
 
 ### [Get-MgDeviceManagementReportFailedMobileAppReport](Get-MgDeviceManagementReportFailedMobileAppReport.md)
 Invoke action getFailedMobileAppsReport
@@ -184,6 +255,9 @@ Invoke action getFailedMobileAppsSummaryReport
 
 ### [Get-MgDeviceManagementReportFilter](Get-MgDeviceManagementReportFilter.md)
 Invoke action getReportFilters
+
+### [Get-MgDeviceManagementReportGroupPolicySettingDeviceSettingReport](Get-MgDeviceManagementReportGroupPolicySettingDeviceSettingReport.md)
+Invoke action getGroupPolicySettingsDeviceSettingsReport
 
 ### [Get-MgDeviceManagementReportHistoricalReport](Get-MgDeviceManagementReportHistoricalReport.md)
 Invoke action getHistoricalReport
@@ -199,6 +273,18 @@ Invoke action getPolicyNonComplianceReport
 
 ### [Get-MgDeviceManagementReportPolicyNonComplianceSummaryReport](Get-MgDeviceManagementReportPolicyNonComplianceSummaryReport.md)
 Invoke action getPolicyNonComplianceSummaryReport
+
+### [Get-MgDeviceManagementReportQuietTimePolicyUserReport](Get-MgDeviceManagementReportQuietTimePolicyUserReport.md)
+Invoke action getQuietTimePolicyUsersReport
+
+### [Get-MgDeviceManagementReportQuietTimePolicyUserSummaryReport](Get-MgDeviceManagementReportQuietTimePolicyUserSummaryReport.md)
+Invoke action getQuietTimePolicyUserSummaryReport
+
+### [Get-MgDeviceManagementReportRelatedAppStatusReport](Get-MgDeviceManagementReportRelatedAppStatusReport.md)
+Invoke action getRelatedAppsStatusReport
+
+### [Get-MgDeviceManagementReportRemoteAssistanceSessionReport](Get-MgDeviceManagementReportRemoteAssistanceSessionReport.md)
+Invoke action getRemoteAssistanceSessionsReport
 
 ### [Get-MgDeviceManagementReportSettingNonComplianceReport](Get-MgDeviceManagementReportSettingNonComplianceReport.md)
 Invoke action getSettingNonComplianceReport
@@ -248,29 +334,93 @@ Invoke action importOffice365DeviceConfigurationPolicies
 ### [Import-MgDeviceManagementTemplateOffice365DeviceConfigurationPolicy](Import-MgDeviceManagementTemplateOffice365DeviceConfigurationPolicy.md)
 Invoke action importOffice365DeviceConfigurationPolicies
 
+### [Initialize-MgDeviceManagementComanagedDeviceEsim](Initialize-MgDeviceManagementComanagedDeviceEsim.md)
+Activate eSIM on the device.
+
+### [Initialize-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceEsim](Initialize-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceEsim.md)
+Activate eSIM on the device.
+
+### [Initialize-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceEsim](Initialize-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceEsim.md)
+Activate eSIM on the device.
+
+### [Initialize-MgDeviceManagementManagedDeviceEsim](Initialize-MgDeviceManagementManagedDeviceEsim.md)
+Activate eSIM on the device.
+
+### [Initialize-MgDeviceManagementScriptDeviceRunStateManagedDeviceEsim](Initialize-MgDeviceManagementScriptDeviceRunStateManagedDeviceEsim.md)
+Activate eSIM on the device.
+
 ### [Invoke-MgAccountDeviceManagementWindowAutopilotDeviceIdentity](Invoke-MgAccountDeviceManagementWindowAutopilotDeviceIdentity.md)
-Invoke action unassignResourceAccountFromDevice
+Unassigns the resource account from an Autopilot device.
 
 ### [Invoke-MgBeginDeviceManagementRemoteAssistancePartnerOnboarding](Invoke-MgBeginDeviceManagementRemoteAssistancePartnerOnboarding.md)
-Invoke action beginOnboarding
+A request to start onboarding.
+Must be coupled with the appropriate TeamViewer account information
+
+### [Invoke-MgBulkDeviceManagementComanagedDeviceReprovisionCloudPc](Invoke-MgBulkDeviceManagementComanagedDeviceReprovisionCloudPc.md)
+Invoke action bulkReprovisionCloudPc
+
+### [Invoke-MgBulkDeviceManagementComanagedDeviceRestoreCloudPc](Invoke-MgBulkDeviceManagementComanagedDeviceRestoreCloudPc.md)
+Invoke action bulkRestoreCloudPc
+
+### [Invoke-MgBulkDeviceManagementDetectedAppManagedDeviceReprovisionCloudPc](Invoke-MgBulkDeviceManagementDetectedAppManagedDeviceReprovisionCloudPc.md)
+Invoke action bulkReprovisionCloudPc
+
+### [Invoke-MgBulkDeviceManagementDetectedAppManagedDeviceRestoreCloudPc](Invoke-MgBulkDeviceManagementDetectedAppManagedDeviceRestoreCloudPc.md)
+Invoke action bulkRestoreCloudPc
+
+### [Invoke-MgBulkDeviceManagementManagedDeviceReprovisionCloudPc](Invoke-MgBulkDeviceManagementManagedDeviceReprovisionCloudPc.md)
+Invoke action bulkReprovisionCloudPc
+
+### [Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc](Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc.md)
+Invoke action bulkRestoreCloudPc
 
 ### [Invoke-MgCleanDeviceManagementComanagedDeviceWindowDevice](Invoke-MgCleanDeviceManagementComanagedDeviceWindowDevice.md)
-Invoke action cleanWindowsDevice
+Clean Windows device
 
 ### [Invoke-MgCleanDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceWindowDevice](Invoke-MgCleanDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceWindowDevice.md)
-Invoke action cleanWindowsDevice
+Clean Windows device
 
 ### [Invoke-MgCleanDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceWindowDevice](Invoke-MgCleanDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceWindowDevice.md)
-Invoke action cleanWindowsDevice
+Clean Windows device
 
 ### [Invoke-MgCleanDeviceManagementManagedDeviceWindowDevice](Invoke-MgCleanDeviceManagementManagedDeviceWindowDevice.md)
-Invoke action cleanWindowsDevice
+Clean Windows device
 
 ### [Invoke-MgCleanDeviceManagementScriptDeviceRunStateManagedDeviceWindowDevice](Invoke-MgCleanDeviceManagementScriptDeviceRunStateManagedDeviceWindowDevice.md)
-Invoke action cleanWindowsDevice
+Clean Windows device
+
+### [Invoke-MgCloudDeviceManagementComanagedDevice](Invoke-MgCloudDeviceManagementComanagedDevice.md)
+Invoke action reprovisionCloudPc
+
+### [Invoke-MgCloudDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice](Invoke-MgCloudDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice.md)
+Invoke action reprovisionCloudPc
+
+### [Invoke-MgCloudDeviceManagementDeviceShellScriptDeviceRunStateManagedDevice](Invoke-MgCloudDeviceManagementDeviceShellScriptDeviceRunStateManagedDevice.md)
+Invoke action reprovisionCloudPc
+
+### [Invoke-MgCloudDeviceManagementManagedDevice](Invoke-MgCloudDeviceManagementManagedDevice.md)
+Invoke action reprovisionCloudPc
+
+### [Invoke-MgCloudDeviceManagementScriptDeviceRunStateManagedDevice](Invoke-MgCloudDeviceManagementScriptDeviceRunStateManagedDevice.md)
+Invoke action reprovisionCloudPc
 
 ### [Invoke-MgConsentDeviceManagementDataSharingConsentToDataSharing](Invoke-MgConsentDeviceManagementDataSharingConsentToDataSharing.md)
 Invoke action consentToDataSharing
+
+### [Invoke-MgDeprovisionDeviceManagementComanagedDevice](Invoke-MgDeprovisionDeviceManagementComanagedDevice.md)
+Invoke action deprovision
+
+### [Invoke-MgDeprovisionDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice](Invoke-MgDeprovisionDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice.md)
+Invoke action deprovision
+
+### [Invoke-MgDeprovisionDeviceManagementDeviceShellScriptDeviceRunStateManagedDevice](Invoke-MgDeprovisionDeviceManagementDeviceShellScriptDeviceRunStateManagedDevice.md)
+Invoke action deprovision
+
+### [Invoke-MgDeprovisionDeviceManagementManagedDevice](Invoke-MgDeprovisionDeviceManagementManagedDevice.md)
+Invoke action deprovision
+
+### [Invoke-MgDeprovisionDeviceManagementScriptDeviceRunStateManagedDevice](Invoke-MgDeprovisionDeviceManagementScriptDeviceRunStateManagedDevice.md)
+Invoke action deprovision
 
 ### [Invoke-MgDeviceManagementDeviceConfigurationAssignedAccessMultiModeProfile](Invoke-MgDeviceManagementDeviceConfigurationAssignedAccessMultiModeProfile.md)
 Invoke action assignedAccessMultiModeProfiles
@@ -279,19 +429,19 @@ Invoke action assignedAccessMultiModeProfiles
 Invoke action windowsPrivacyAccessControls
 
 ### [Invoke-MgDownDeviceManagementComanagedDeviceShut](Invoke-MgDownDeviceManagementComanagedDeviceShut.md)
-Invoke action shutDown
+Shut down device
 
 ### [Invoke-MgDownDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceShut](Invoke-MgDownDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceShut.md)
-Invoke action shutDown
+Shut down device
 
 ### [Invoke-MgDownDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceShut](Invoke-MgDownDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceShut.md)
-Invoke action shutDown
+Shut down device
 
 ### [Invoke-MgDownDeviceManagementManagedDeviceShut](Invoke-MgDownDeviceManagementManagedDeviceShut.md)
-Invoke action shutDown
+Shut down device
 
 ### [Invoke-MgDownDeviceManagementScriptDeviceRunStateManagedDeviceShut](Invoke-MgDownDeviceManagementScriptDeviceRunStateManagedDeviceShut.md)
-Invoke action shutDown
+Shut down device
 
 ### [Invoke-MgExecuteDeviceManagementComanagedDeviceAction](Invoke-MgExecuteDeviceManagementComanagedDeviceAction.md)
 Invoke action executeAction
@@ -302,17 +452,20 @@ Invoke action executeAction
 ### [Invoke-MgExecuteDeviceManagementManagedDeviceAction](Invoke-MgExecuteDeviceManagementManagedDeviceAction.md)
 Invoke action executeAction
 
+### [Invoke-MgExecuteDeviceManagementWindowDriverUpdateProfileAction](Invoke-MgExecuteDeviceManagementWindowDriverUpdateProfileAction.md)
+Invoke action executeAction
+
 ### [Invoke-MgExtendDeviceManagementDeviceConfigurationGroupAssignmentDeviceConfigurationMicrosoftGraphWindowUpdateForBusinessConfigurationFeatureUpdatePause](Invoke-MgExtendDeviceManagementDeviceConfigurationGroupAssignmentDeviceConfigurationMicrosoftGraphWindowUpdateForBusinessConfigurationFeatureUpdatePause.md)
-Invoke action extendFeatureUpdatesPause
+Extend Feature Updates Pause for a Windows Update for Business ring.
 
 ### [Invoke-MgExtendDeviceManagementDeviceConfigurationGroupAssignmentDeviceConfigurationMicrosoftGraphWindowUpdateForBusinessConfigurationQualityUpdatePause](Invoke-MgExtendDeviceManagementDeviceConfigurationGroupAssignmentDeviceConfigurationMicrosoftGraphWindowUpdateForBusinessConfigurationQualityUpdatePause.md)
-Invoke action extendQualityUpdatesPause
+Extend Quality Updates Pause for a Windows Update for Business ring.
 
 ### [Invoke-MgExtendDeviceManagementDeviceConfigurationMicrosoftGraphWindowUpdateForBusinessConfigurationFeatureUpdatePause](Invoke-MgExtendDeviceManagementDeviceConfigurationMicrosoftGraphWindowUpdateForBusinessConfigurationFeatureUpdatePause.md)
-Invoke action extendFeatureUpdatesPause
+Extend Feature Updates Pause for a Windows Update for Business ring.
 
 ### [Invoke-MgExtendDeviceManagementDeviceConfigurationMicrosoftGraphWindowUpdateForBusinessConfigurationQualityUpdatePause](Invoke-MgExtendDeviceManagementDeviceConfigurationMicrosoftGraphWindowUpdateForBusinessConfigurationQualityUpdatePause.md)
-Invoke action extendQualityUpdatesPause
+Extend Quality Updates Pause for a Windows Update for Business ring.
 
 ### [Invoke-MgHasDeviceManagementDeviceCompliancePolicyPayloadLink](Invoke-MgHasDeviceManagementDeviceCompliancePolicyPayloadLink.md)
 Invoke action hasPayloadLinks
@@ -330,16 +483,16 @@ Invoke action hasPayloadLinks
 Invoke action hasPayloadLinks
 
 ### [Invoke-MgLogoutDeviceManagementComanagedDeviceSharedAppleDeviceActiveUser](Invoke-MgLogoutDeviceManagementComanagedDeviceSharedAppleDeviceActiveUser.md)
-Invoke action logoutSharedAppleDeviceActiveUser
+Logout shared Apple device active user
 
 ### [Invoke-MgLogoutDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceSharedAppleDeviceActiveUser](Invoke-MgLogoutDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceSharedAppleDeviceActiveUser.md)
-Invoke action logoutSharedAppleDeviceActiveUser
+Logout shared Apple device active user
 
 ### [Invoke-MgLogoutDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceSharedAppleDeviceActiveUser](Invoke-MgLogoutDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceSharedAppleDeviceActiveUser.md)
-Invoke action logoutSharedAppleDeviceActiveUser
+Logout shared Apple device active user
 
 ### [Invoke-MgLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser](Invoke-MgLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser.md)
-Invoke action logoutSharedAppleDeviceActiveUser
+Logout shared Apple device active user
 
 ### [Invoke-MgOverrideDeviceManagementComanagedDeviceComplianceState](Invoke-MgOverrideDeviceManagementComanagedDeviceComplianceState.md)
 Invoke action overrideComplianceState
@@ -357,64 +510,85 @@ Invoke action overrideComplianceState
 Invoke action overrideComplianceState
 
 ### [Invoke-MgPlayDeviceManagementComanagedDeviceLostModeSound](Invoke-MgPlayDeviceManagementComanagedDeviceLostModeSound.md)
-Invoke action playLostModeSound
+Play lost mode sound
 
 ### [Invoke-MgPlayDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceLostModeSound](Invoke-MgPlayDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceLostModeSound.md)
-Invoke action playLostModeSound
+Play lost mode sound
 
 ### [Invoke-MgPlayDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceLostModeSound](Invoke-MgPlayDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceLostModeSound.md)
-Invoke action playLostModeSound
+Play lost mode sound
 
 ### [Invoke-MgPlayDeviceManagementManagedDeviceLostModeSound](Invoke-MgPlayDeviceManagementManagedDeviceLostModeSound.md)
-Invoke action playLostModeSound
+Play lost mode sound
 
 ### [Invoke-MgPlayDeviceManagementScriptDeviceRunStateManagedDeviceLostModeSound](Invoke-MgPlayDeviceManagementScriptDeviceRunStateManagedDeviceLostModeSound.md)
-Invoke action playLostModeSound
+Play lost mode sound
+
+### [Invoke-MgQueryDeviceManagementResourceAccessProfile](Invoke-MgQueryDeviceManagementResourceAccessProfile.md)
+Invoke action queryByPlatformType
+
+### [Invoke-MgReenableDeviceManagementComanagedDevice](Invoke-MgReenableDeviceManagementComanagedDevice.md)
+Invoke action reenable
+
+### [Invoke-MgReenableDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice](Invoke-MgReenableDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice.md)
+Invoke action reenable
+
+### [Invoke-MgReenableDeviceManagementDeviceShellScriptDeviceRunStateManagedDevice](Invoke-MgReenableDeviceManagementDeviceShellScriptDeviceRunStateManagedDevice.md)
+Invoke action reenable
+
+### [Invoke-MgReenableDeviceManagementManagedDevice](Invoke-MgReenableDeviceManagementManagedDevice.md)
+Invoke action reenable
+
+### [Invoke-MgReenableDeviceManagementScriptDeviceRunStateManagedDevice](Invoke-MgReenableDeviceManagementScriptDeviceRunStateManagedDevice.md)
+Invoke action reenable
 
 ### [Invoke-MgReprovisionDeviceManagementVirtualEndpointCloudPc](Invoke-MgReprovisionDeviceManagementVirtualEndpointCloudPc.md)
 Invoke action reprovision
 
 ### [Invoke-MgRetireDeviceManagementComanagedDevice](Invoke-MgRetireDeviceManagementComanagedDevice.md)
-Invoke action retire
+Retire a device
 
 ### [Invoke-MgRetireDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice](Invoke-MgRetireDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice.md)
-Invoke action retire
+Retire a device
 
 ### [Invoke-MgRetireDeviceManagementDeviceShellScriptDeviceRunStateManagedDevice](Invoke-MgRetireDeviceManagementDeviceShellScriptDeviceRunStateManagedDevice.md)
-Invoke action retire
+Retire a device
 
 ### [Invoke-MgRetireDeviceManagementManagedDevice](Invoke-MgRetireDeviceManagementManagedDevice.md)
-Invoke action retire
+Retire a device
 
 ### [Invoke-MgRetireDeviceManagementScriptDeviceRunStateManagedDevice](Invoke-MgRetireDeviceManagementScriptDeviceRunStateManagedDevice.md)
-Invoke action retire
+Retire a device
+
+### [Invoke-MgReuploadDeviceManagementVirtualEndpointDeviceImage](Invoke-MgReuploadDeviceManagementVirtualEndpointDeviceImage.md)
+Invoke action reupload
 
 ### [Invoke-MgRotateDeviceManagementComanagedDeviceBitLockerKey](Invoke-MgRotateDeviceManagementComanagedDeviceBitLockerKey.md)
-Invoke action rotateBitLockerKeys
+Rotate BitLockerKeys
 
 ### [Invoke-MgRotateDeviceManagementComanagedDeviceFileVaultKey](Invoke-MgRotateDeviceManagementComanagedDeviceFileVaultKey.md)
 Invoke action rotateFileVaultKey
 
 ### [Invoke-MgRotateDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceBitLockerKey](Invoke-MgRotateDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceBitLockerKey.md)
-Invoke action rotateBitLockerKeys
+Rotate BitLockerKeys
 
 ### [Invoke-MgRotateDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceFileVaultKey](Invoke-MgRotateDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceFileVaultKey.md)
 Invoke action rotateFileVaultKey
 
 ### [Invoke-MgRotateDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceBitLockerKey](Invoke-MgRotateDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceBitLockerKey.md)
-Invoke action rotateBitLockerKeys
+Rotate BitLockerKeys
 
 ### [Invoke-MgRotateDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceFileVaultKey](Invoke-MgRotateDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceFileVaultKey.md)
 Invoke action rotateFileVaultKey
 
 ### [Invoke-MgRotateDeviceManagementManagedDeviceBitLockerKey](Invoke-MgRotateDeviceManagementManagedDeviceBitLockerKey.md)
-Invoke action rotateBitLockerKeys
+Rotate BitLockerKeys
 
 ### [Invoke-MgRotateDeviceManagementManagedDeviceFileVaultKey](Invoke-MgRotateDeviceManagementManagedDeviceFileVaultKey.md)
 Invoke action rotateFileVaultKey
 
 ### [Invoke-MgRotateDeviceManagementScriptDeviceRunStateManagedDeviceBitLockerKey](Invoke-MgRotateDeviceManagementScriptDeviceRunStateManagedDeviceBitLockerKey.md)
-Invoke action rotateBitLockerKeys
+Rotate BitLockerKeys
 
 ### [Invoke-MgRotateDeviceManagementScriptDeviceRunStateManagedDeviceFileVaultKey](Invoke-MgRotateDeviceManagementScriptDeviceRunStateManagedDeviceFileVaultKey.md)
 Invoke action rotateFileVaultKey
@@ -440,11 +614,14 @@ Invoke action scheduleActionsForRules
 ### [Invoke-MgShareDeviceManagementDepOnboardingSetting](Invoke-MgShareDeviceManagementDepOnboardingSetting.md)
 Invoke action shareForSchoolDataSyncService
 
+### [Invoke-MgTroubleshootDeviceManagementVirtualEndpointCloudPc](Invoke-MgTroubleshootDeviceManagementVirtualEndpointCloudPc.md)
+Invoke action troubleshoot
+
 ### [Invoke-MgUnassignDeviceManagementWindowAutopilotDeploymentProfileAssignedDeviceUserFromDevice](Invoke-MgUnassignDeviceManagementWindowAutopilotDeploymentProfileAssignedDeviceUserFromDevice.md)
-Invoke action unassignUserFromDevice
+Unassigns the user from an Autopilot device.
 
 ### [Invoke-MgUnassignDeviceManagementWindowAutopilotDeviceIdentityUserFromDevice](Invoke-MgUnassignDeviceManagementWindowAutopilotDeviceIdentityUserFromDevice.md)
-Invoke action unassignUserFromDevice
+Unassigns the user from an Autopilot device.
 
 ### [Invoke-MgUnbindDeviceManagementAndroidForWorkSetting](Invoke-MgUnbindDeviceManagementAndroidForWorkSetting.md)
 Invoke action unbind
@@ -456,28 +633,37 @@ Invoke action unbind
 Invoke action unshareForSchoolDataSyncService
 
 ### [Invoke-MgUploadDeviceManagementDepOnboardingSettingDepToken](Invoke-MgUploadDeviceManagementDepOnboardingSettingDepToken.md)
-Invoke action uploadDepToken
+Uploads a new Device Enrollment Program token
 
 ### [Invoke-MgUploadDeviceManagementGroupPolicyUploadedDefinitionFileNewVersion](Invoke-MgUploadDeviceManagementGroupPolicyUploadedDefinitionFileNewVersion.md)
 Invoke action uploadNewVersion
 
 ### [Lock-MgDeviceManagementComanagedDeviceRemote](Lock-MgDeviceManagementComanagedDeviceRemote.md)
-Invoke action remoteLock
+Remote lock
 
 ### [Lock-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceRemote](Lock-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceRemote.md)
-Invoke action remoteLock
+Remote lock
 
 ### [Lock-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceRemote](Lock-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceRemote.md)
-Invoke action remoteLock
+Remote lock
 
 ### [Lock-MgDeviceManagementManagedDeviceRemote](Lock-MgDeviceManagementManagedDeviceRemote.md)
-Invoke action remoteLock
+Remote lock
 
 ### [Lock-MgDeviceManagementScriptDeviceRunStateManagedDeviceRemote](Lock-MgDeviceManagementScriptDeviceRunStateManagedDeviceRemote.md)
-Invoke action remoteLock
+Remote lock
+
+### [Move-MgDeviceManagementComanagedDeviceToOu](Move-MgDeviceManagementComanagedDeviceToOu.md)
+Invoke action moveDevicesToOU
+
+### [Move-MgDeviceManagementDetectedAppManagedDeviceToOu](Move-MgDeviceManagementDetectedAppManagedDeviceToOu.md)
+Invoke action moveDevicesToOU
 
 ### [Move-MgDeviceManagementIntentToTemplate](Move-MgDeviceManagementIntentToTemplate.md)
 Invoke action migrateToTemplate
+
+### [Move-MgDeviceManagementManagedDeviceToOu](Move-MgDeviceManagementManagedDeviceToOu.md)
+Invoke action moveDevicesToOU
 
 ### [New-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfileToken](New-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfileToken.md)
 Invoke action createToken
@@ -486,16 +672,19 @@ Invoke action createToken
 Invoke action createToken
 
 ### [New-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSettingGooglePlayWebToken](New-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSettingGooglePlayWebToken.md)
-Invoke action createGooglePlayWebToken
+Generates a web token that is used in an embeddable component.
 
 ### [New-MgDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest](New-MgDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest.md)
-Invoke action generateApplePushNotificationCertificateSigningRequest
+Download Apple push notification certificate signing request
 
 ### [New-MgDeviceManagementComanagedDeviceLogCollectionRequestDownloadUrl](New-MgDeviceManagementComanagedDeviceLogCollectionRequestDownloadUrl.md)
 Invoke action createDownloadUrl
 
+### [New-MgDeviceManagementConfigurationPolicyCopy](New-MgDeviceManagementConfigurationPolicyCopy.md)
+Invoke action createCopy
+
 ### [New-MgDeviceManagementDepOnboardingSettingEncryptionPublicKey](New-MgDeviceManagementDepOnboardingSettingEncryptionPublicKey.md)
-Invoke action generateEncryptionPublicKey
+Generate a public key to use to encrypt the Apple device enrollment program token
 
 ### [New-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceLogCollectionRequest](New-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceLogCollectionRequest.md)
 Invoke action createDeviceLogCollectionRequest
@@ -531,13 +720,13 @@ Invoke action createInstance
 Invoke action createInstance
 
 ### [Remove-MgDeviceManagementComanagedDeviceUserFromSharedAppleDevice](Remove-MgDeviceManagementComanagedDeviceUserFromSharedAppleDevice.md)
-Invoke action deleteUserFromSharedAppleDevice
+Delete user from shared Apple device
 
 ### [Remove-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceUserFromSharedAppleDevice](Remove-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceUserFromSharedAppleDevice.md)
-Invoke action deleteUserFromSharedAppleDevice
+Delete user from shared Apple device
 
 ### [Remove-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceUserFromSharedAppleDevice](Remove-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceUserFromSharedAppleDevice.md)
-Invoke action deleteUserFromSharedAppleDevice
+Delete user from shared Apple device
 
 ### [Remove-MgDeviceManagementGroupPolicyUploadedDefinitionFile](Remove-MgDeviceManagementGroupPolicyUploadedDefinitionFile.md)
 Invoke action remove
@@ -546,10 +735,16 @@ Invoke action remove
 Invoke action removeLanguageFiles
 
 ### [Remove-MgDeviceManagementManagedDeviceUserFromSharedAppleDevice](Remove-MgDeviceManagementManagedDeviceUserFromSharedAppleDevice.md)
-Invoke action deleteUserFromSharedAppleDevice
+Delete user from shared Apple device
 
 ### [Remove-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDevice](Remove-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDevice.md)
 Invoke action deleteDevices
+
+### [Rename-MgDeviceManagementVirtualEndpointCloudPc](Rename-MgDeviceManagementVirtualEndpointCloudPc.md)
+Invoke action rename
+
+### [Rename-MgDeviceManagementVirtualEndpointCloudPcUserAccountType](Rename-MgDeviceManagementVirtualEndpointCloudPcUserAccountType.md)
+Invoke action changeUserAccountType
 
 ### [Request-MgDeviceManagementAndroidForWorkSettingSignupUrl](Request-MgDeviceManagementAndroidForWorkSettingSignupUrl.md)
 Invoke action requestSignupUrl
@@ -558,64 +753,100 @@ Invoke action requestSignupUrl
 Invoke action requestSignupUrl
 
 ### [Request-MgDeviceManagementComanagedDeviceRemoteAssistance](Request-MgDeviceManagementComanagedDeviceRemoteAssistance.md)
-Invoke action requestRemoteAssistance
+Request remote assistance
 
 ### [Request-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceRemoteAssistance](Request-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceRemoteAssistance.md)
-Invoke action requestRemoteAssistance
+Request remote assistance
 
 ### [Request-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceRemoteAssistance](Request-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceRemoteAssistance.md)
-Invoke action requestRemoteAssistance
+Request remote assistance
 
 ### [Request-MgDeviceManagementManagedDeviceRemoteAssistance](Request-MgDeviceManagementManagedDeviceRemoteAssistance.md)
-Invoke action requestRemoteAssistance
+Request remote assistance
+
+### [Request-MgDeviceManagementMicrosoftTunnelSiteUpgrade](Request-MgDeviceManagementMicrosoftTunnelSiteUpgrade.md)
+Invoke action requestUpgrade
 
 ### [Request-MgDeviceManagementScriptDeviceRunStateManagedDeviceRemoteAssistance](Request-MgDeviceManagementScriptDeviceRunStateManagedDeviceRemoteAssistance.md)
-Invoke action requestRemoteAssistance
+Request remote assistance
 
 ### [Reset-MgDeviceManagementComanagedDevicePasscode](Reset-MgDeviceManagementComanagedDevicePasscode.md)
-Invoke action resetPasscode
+Reset passcode
 
 ### [Reset-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevicePasscode](Reset-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevicePasscode.md)
-Invoke action resetPasscode
+Reset passcode
 
 ### [Reset-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDevicePasscode](Reset-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDevicePasscode.md)
-Invoke action resetPasscode
+Reset passcode
 
 ### [Reset-MgDeviceManagementManagedDevicePasscode](Reset-MgDeviceManagementManagedDevicePasscode.md)
-Invoke action resetPasscode
+Reset passcode
 
 ### [Reset-MgDeviceManagementScriptDeviceRunStateManagedDevicePasscode](Reset-MgDeviceManagementScriptDeviceRunStateManagedDevicePasscode.md)
-Invoke action resetPasscode
+Reset passcode
+
+### [Resize-MgDeviceManagementComanagedDeviceCloudPc](Resize-MgDeviceManagementComanagedDeviceCloudPc.md)
+Invoke action resizeCloudPc
+
+### [Resize-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceCloudPc](Resize-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceCloudPc.md)
+Invoke action resizeCloudPc
+
+### [Resize-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceCloudPc](Resize-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceCloudPc.md)
+Invoke action resizeCloudPc
+
+### [Resize-MgDeviceManagementManagedDeviceCloudPc](Resize-MgDeviceManagementManagedDeviceCloudPc.md)
+Invoke action resizeCloudPc
+
+### [Resize-MgDeviceManagementScriptDeviceRunStateManagedDeviceCloudPc](Resize-MgDeviceManagementScriptDeviceRunStateManagedDeviceCloudPc.md)
+Invoke action resizeCloudPc
 
 ### [Restart-MgDeviceManagementComanagedDeviceNow](Restart-MgDeviceManagementComanagedDeviceNow.md)
-Invoke action rebootNow
+Reboot device
 
 ### [Restart-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceNow](Restart-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceNow.md)
-Invoke action rebootNow
+Reboot device
 
 ### [Restart-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceNow](Restart-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceNow.md)
-Invoke action rebootNow
+Reboot device
 
 ### [Restart-MgDeviceManagementManagedDeviceNow](Restart-MgDeviceManagementManagedDeviceNow.md)
-Invoke action rebootNow
+Reboot device
 
 ### [Restart-MgDeviceManagementScriptDeviceRunStateManagedDeviceNow](Restart-MgDeviceManagementScriptDeviceRunStateManagedDeviceNow.md)
-Invoke action rebootNow
+Reboot device
+
+### [Restart-MgDeviceManagementVirtualEndpointCloudPc](Restart-MgDeviceManagementVirtualEndpointCloudPc.md)
+Invoke action reboot
+
+### [Restore-MgDeviceManagementComanagedDeviceCloudPc](Restore-MgDeviceManagementComanagedDeviceCloudPc.md)
+Invoke action restoreCloudPc
 
 ### [Restore-MgDeviceManagementComanagedDevicePasscode](Restore-MgDeviceManagementComanagedDevicePasscode.md)
-Invoke action recoverPasscode
+Recover passcode
+
+### [Restore-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceCloudPc](Restore-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceCloudPc.md)
+Invoke action restoreCloudPc
 
 ### [Restore-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevicePasscode](Restore-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevicePasscode.md)
-Invoke action recoverPasscode
+Recover passcode
+
+### [Restore-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceCloudPc](Restore-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceCloudPc.md)
+Invoke action restoreCloudPc
 
 ### [Restore-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDevicePasscode](Restore-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDevicePasscode.md)
-Invoke action recoverPasscode
+Recover passcode
+
+### [Restore-MgDeviceManagementManagedDeviceCloudPc](Restore-MgDeviceManagementManagedDeviceCloudPc.md)
+Invoke action restoreCloudPc
 
 ### [Restore-MgDeviceManagementManagedDevicePasscode](Restore-MgDeviceManagementManagedDevicePasscode.md)
-Invoke action recoverPasscode
+Recover passcode
+
+### [Restore-MgDeviceManagementScriptDeviceRunStateManagedDeviceCloudPc](Restore-MgDeviceManagementScriptDeviceRunStateManagedDeviceCloudPc.md)
+Invoke action restoreCloudPc
 
 ### [Restore-MgDeviceManagementScriptDeviceRunStateManagedDevicePasscode](Restore-MgDeviceManagementScriptDeviceRunStateManagedDevicePasscode.md)
-Invoke action recoverPasscode
+Recover passcode
 
 ### [Revoke-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfileToken](Revoke-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfileToken.md)
 Invoke action revokeToken
@@ -624,19 +855,19 @@ Invoke action revokeToken
 Invoke action revokeToken
 
 ### [Revoke-MgDeviceManagementComanagedDeviceAppleVppLicense](Revoke-MgDeviceManagementComanagedDeviceAppleVppLicense.md)
-Invoke action revokeAppleVppLicenses
+Revoke all Apple Vpp licenses for a device
 
 ### [Revoke-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceAppleVppLicense](Revoke-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceAppleVppLicense.md)
-Invoke action revokeAppleVppLicenses
+Revoke all Apple Vpp licenses for a device
 
 ### [Revoke-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceAppleVppLicense](Revoke-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceAppleVppLicense.md)
-Invoke action revokeAppleVppLicenses
+Revoke all Apple Vpp licenses for a device
 
 ### [Revoke-MgDeviceManagementManagedDeviceAppleVppLicense](Revoke-MgDeviceManagementManagedDeviceAppleVppLicense.md)
-Invoke action revokeAppleVppLicenses
+Revoke all Apple Vpp licenses for a device
 
 ### [Revoke-MgDeviceManagementScriptDeviceRunStateManagedDeviceAppleVppLicense](Revoke-MgDeviceManagementScriptDeviceRunStateManagedDeviceAppleVppLicense.md)
-Invoke action revokeAppleVppLicenses
+Revoke all Apple Vpp licenses for a device
 
 ### [Search-MgDeviceManagementImportedDeviceIdentityExistingIdentity](Search-MgDeviceManagementImportedDeviceIdentityExistingIdentity.md)
 Invoke action searchExistingIdentities
@@ -651,16 +882,22 @@ Invoke action sendCustomNotificationToCompanyPortal
 Invoke action sendCustomNotificationToCompanyPortal
 
 ### [Send-MgDeviceManagementNotificationMessageTemplateTestMessage](Send-MgDeviceManagementNotificationMessageTemplateTestMessage.md)
-Invoke action sendTestMessage
+Sends test message using the specified notificationMessageTemplate in the default locale
 
 ### [Set-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSettingAndroidDeviceOwnerFullyManagedEnrollmentState](Set-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSettingAndroidDeviceOwnerFullyManagedEnrollmentState.md)
-Invoke action setAndroidDeviceOwnerFullyManagedEnrollmentState
+Sets the AndroidManagedStoreAccountEnterpriseSettings AndroidDeviceOwnerFullyManagedEnrollmentEnabled to the given value.
 
 ### [Set-MgDeviceManagementAppleUserInitiatedEnrollmentProfilePriority](Set-MgDeviceManagementAppleUserInitiatedEnrollmentProfilePriority.md)
 Invoke action setPriority
 
 ### [Set-MgDeviceManagementComanagedDeviceName](Set-MgDeviceManagementComanagedDeviceName.md)
-Invoke action setDeviceName
+Set device name of the device.
+
+### [Set-MgDeviceManagementCompliancePolicy](Set-MgDeviceManagementCompliancePolicy.md)
+Invoke action assign
+
+### [Set-MgDeviceManagementCompliancePolicyScheduledAction](Set-MgDeviceManagementCompliancePolicyScheduledAction.md)
+Invoke action setScheduledActions
 
 ### [Set-MgDeviceManagementConfigurationPolicy](Set-MgDeviceManagementConfigurationPolicy.md)
 Invoke action assign
@@ -696,13 +933,13 @@ Invoke action setPriority
 Invoke action assign
 
 ### [Set-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceName](Set-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceName.md)
-Invoke action setDeviceName
+Set device name of the device.
 
 ### [Set-MgDeviceManagementDeviceShellScript](Set-MgDeviceManagementDeviceShellScript.md)
 Invoke action assign
 
 ### [Set-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceName](Set-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceName.md)
-Invoke action setDeviceName
+Set device name of the device.
 
 ### [Set-MgDeviceManagementEmbeddedSimActivationCodePool](Set-MgDeviceManagementEmbeddedSimActivationCodePool.md)
 Invoke action assign
@@ -717,7 +954,7 @@ Invoke action assign
 Invoke action assign
 
 ### [Set-MgDeviceManagementManagedDeviceName](Set-MgDeviceManagementManagedDeviceName.md)
-Invoke action setDeviceName
+Set device name of the device.
 
 ### [Set-MgDeviceManagementResourceAccessProfile](Set-MgDeviceManagementResourceAccessProfile.md)
 Invoke action assign
@@ -729,16 +966,19 @@ Invoke action assign
 Invoke action assign
 
 ### [Set-MgDeviceManagementScriptDeviceRunStateManagedDeviceName](Set-MgDeviceManagementScriptDeviceRunStateManagedDeviceName.md)
-Invoke action setDeviceName
+Set device name of the device.
 
 ### [Set-MgDeviceManagementVirtualEndpointProvisioningPolicy](Set-MgDeviceManagementVirtualEndpointProvisioningPolicy.md)
+Invoke action assign
+
+### [Set-MgDeviceManagementVirtualEndpointUserSetting](Set-MgDeviceManagementVirtualEndpointUserSetting.md)
 Invoke action assign
 
 ### [Set-MgDeviceManagementWindowAutopilotDeploymentProfile](Set-MgDeviceManagementWindowAutopilotDeploymentProfile.md)
 Invoke action assign
 
 ### [Set-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDeviceUserToDevice](Set-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDeviceUserToDevice.md)
-Invoke action assignUserToDevice
+Assigns user to Autopilot devices.
 
 ### [Set-MgDeviceManagementWindowAutopilotDeviceIdentityDeploymentProfile](Set-MgDeviceManagementWindowAutopilotDeviceIdentityDeploymentProfile.md)
 Invoke action assign
@@ -747,10 +987,13 @@ Invoke action assign
 Invoke action assign
 
 ### [Set-MgDeviceManagementWindowAutopilotDeviceIdentityResourceAccountToDevice](Set-MgDeviceManagementWindowAutopilotDeviceIdentityResourceAccountToDevice.md)
-Invoke action assignResourceAccountToDevice
+Assigns resource account to Autopilot devices.
 
 ### [Set-MgDeviceManagementWindowAutopilotDeviceIdentityUserToDevice](Set-MgDeviceManagementWindowAutopilotDeviceIdentityUserToDevice.md)
-Invoke action assignUserToDevice
+Assigns user to Autopilot devices.
+
+### [Set-MgDeviceManagementWindowDriverUpdateProfile](Set-MgDeviceManagementWindowDriverUpdateProfile.md)
+Invoke action assign
 
 ### [Set-MgDeviceManagementWindowFeatureUpdateProfile](Set-MgDeviceManagementWindowFeatureUpdateProfile.md)
 Invoke action assign
@@ -759,34 +1002,37 @@ Invoke action assign
 Invoke action assign
 
 ### [Skip-MgDeviceManagementComanagedDeviceActivationLock](Skip-MgDeviceManagementComanagedDeviceActivationLock.md)
-Invoke action bypassActivationLock
+Bypass activation lock
 
 ### [Skip-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceActivationLock](Skip-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceActivationLock.md)
-Invoke action bypassActivationLock
+Bypass activation lock
 
 ### [Skip-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceActivationLock](Skip-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceActivationLock.md)
-Invoke action bypassActivationLock
+Bypass activation lock
 
 ### [Skip-MgDeviceManagementManagedDeviceActivationLock](Skip-MgDeviceManagementManagedDeviceActivationLock.md)
-Invoke action bypassActivationLock
+Bypass activation lock
 
 ### [Skip-MgDeviceManagementScriptDeviceRunStateManagedDeviceActivationLock](Skip-MgDeviceManagementScriptDeviceRunStateManagedDeviceActivationLock.md)
-Invoke action bypassActivationLock
+Bypass activation lock
 
 ### [Start-MgDeviceManagementComanagedDeviceConfigurationManagerAction](Start-MgDeviceManagementComanagedDeviceConfigurationManagerAction.md)
-Invoke action triggerConfigurationManagerAction
+Trigger action on ConfigurationManager client
 
 ### [Start-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceConfigurationManagerAction](Start-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceConfigurationManagerAction.md)
-Invoke action triggerConfigurationManagerAction
+Trigger action on ConfigurationManager client
 
 ### [Start-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceConfigurationManagerAction](Start-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceConfigurationManagerAction.md)
-Invoke action triggerConfigurationManagerAction
+Trigger action on ConfigurationManager client
 
 ### [Start-MgDeviceManagementManagedDeviceConfigurationManagerAction](Start-MgDeviceManagementManagedDeviceConfigurationManagerAction.md)
-Invoke action triggerConfigurationManagerAction
+Trigger action on ConfigurationManager client
 
 ### [Start-MgDeviceManagementVirtualEndpointOnPremisConnectionHealthCheck](Start-MgDeviceManagementVirtualEndpointOnPremisConnectionHealthCheck.md)
 Invoke action runHealthChecks
+
+### [Stop-MgDeviceManagementVirtualEndpointCloudPcGracePeriod](Stop-MgDeviceManagementVirtualEndpointCloudPcGracePeriod.md)
+Invoke action endGracePeriod
 
 ### [Sync-MgDeviceManagementAndroidForWorkSettingApp](Sync-MgDeviceManagementAndroidForWorkSettingApp.md)
 Invoke action syncApps
@@ -798,7 +1044,7 @@ Invoke action syncApps
 Invoke action syncDevice
 
 ### [Sync-MgDeviceManagementDepOnboardingSetting](Sync-MgDeviceManagementDepOnboardingSetting.md)
-Invoke action syncWithAppleDeviceEnrollmentProgram
+Synchronizes between Apple Device Enrollment Program and Intune
 
 ### [Sync-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice](Sync-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice.md)
 Invoke action syncDevice
@@ -816,7 +1062,13 @@ Invoke action syncDevice
 Invoke action syncDevice
 
 ### [Sync-MgDeviceManagementWindowAutopilotSetting](Sync-MgDeviceManagementWindowAutopilotSetting.md)
-Invoke action sync
+Initiates a sync of all AutoPilot registered devices from Store for Business and other portals.
+If the sync successful, this action returns a 204 No Content response code.
+If a sync is already in progress, the action returns a 409 Conflict response code.
+If this sync action is called within 10 minutes of the previous sync, the action returns a 429 Too Many Requests response code.
+
+### [Sync-MgDeviceManagementWindowDriverUpdateProfileInventory](Sync-MgDeviceManagementWindowDriverUpdateProfileInventory.md)
+Sync the driver inventory of a WindowsDriverUpdateProfile.
 
 ### [Test-MgDeviceManagementAssignmentFilter](Test-MgDeviceManagementAssignmentFilter.md)
 Invoke action validateFilter
@@ -837,7 +1089,7 @@ Invoke action windowsDefenderUpdateSignatures
 Invoke action updateWindowsDeviceAccount
 
 ### [Update-MgDeviceManagementDeviceHealthScriptGlobalScript](Update-MgDeviceManagementDeviceHealthScriptGlobalScript.md)
-Invoke action updateGlobalScript
+Update the Proprietary Device Health Script
 
 ### [Update-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDevice](Update-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDevice.md)
 Invoke action windowsDefenderUpdateSignatures
@@ -861,5 +1113,5 @@ Invoke action updateWindowsDeviceAccount
 Invoke action updateAdDomainPassword
 
 ### [Update-MgDeviceManagementWindowAutopilotDeviceIdentityDeviceProperty](Update-MgDeviceManagementWindowAutopilotDeviceIdentityDeviceProperty.md)
-Invoke action updateDeviceProperties
+Updates properties on Autopilot devices.
 
