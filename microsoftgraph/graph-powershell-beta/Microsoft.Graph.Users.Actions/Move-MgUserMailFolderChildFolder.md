@@ -12,26 +12,26 @@ Invoke action move
 
 ## SYNTAX
 
-### MoveExpanded (Default)
+### MoveExpanded1 (Default)
 ```
 Move-MgUserMailFolderChildFolder -MailFolderId <String> -MailFolderId1 <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-DestinationId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Move
+### Move1
 ```
 Move-MgUserMailFolderChildFolder -MailFolderId <String> -MailFolderId1 <String> -UserId <String>
  -BodyParameter <IPaths1Ekxa5VUsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### MoveViaIdentityExpanded
+### MoveViaIdentityExpanded1
 ```
 Move-MgUserMailFolderChildFolder -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-DestinationId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### MoveViaIdentity
+### MoveViaIdentity1
 ```
 Move-MgUserMailFolderChildFolder -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths1Ekxa5VUsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema>
@@ -50,7 +50,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: MoveExpanded, MoveViaIdentityExpanded
+Parameter Sets: MoveExpanded1, MoveViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -66,7 +66,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPaths1Ekxa5VUsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Move, MoveViaIdentity
+Parameter Sets: Move1, MoveViaIdentity1
 Aliases:
 
 Required: True
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: MoveExpanded, MoveViaIdentityExpanded
+Parameter Sets: MoveExpanded1, MoveViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -97,7 +97,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: MoveViaIdentityExpanded, MoveViaIdentity
+Parameter Sets: MoveViaIdentityExpanded1, MoveViaIdentity1
 Aliases:
 
 Required: True
@@ -112,7 +112,7 @@ key: id of mailFolder
 
 ```yaml
 Type: String
-Parameter Sets: MoveExpanded, Move
+Parameter Sets: MoveExpanded1, Move1
 Aliases:
 
 Required: True
@@ -127,7 +127,7 @@ key: id of mailFolder
 
 ```yaml
 Type: String
-Parameter Sets: MoveExpanded, Move
+Parameter Sets: MoveExpanded1, Move1
 Aliases:
 
 Required: True
@@ -142,7 +142,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: MoveExpanded, Move
+Parameter Sets: MoveExpanded1, Move1
 Aliases:
 
 Required: True
