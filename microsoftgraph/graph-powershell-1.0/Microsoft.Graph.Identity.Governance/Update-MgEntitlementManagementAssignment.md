@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementassignment
@@ -16,9 +16,9 @@ Represents the grant of an access package to a subject (user or group).
 ```
 Update-MgEntitlementManagementAssignment -AccessPackageAssignmentId <String>
  [-AccessPackage <IMicrosoftGraphAccessPackage1>] [-AdditionalProperties <Hashtable>]
- [-ExpiredDateTime <DateTime>] [-Id <String>] [-Schedule <IMicrosoftGraphEntitlementManagementSchedule>]
- [-State <String>] [-Status <String>] [-Target <IMicrosoftGraphAccessPackageSubject>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-AssignmentPolicy <IMicrosoftGraphAccessPackageAssignmentPolicy1>] [-ExpiredDateTime <DateTime>]
+ [-Id <String>] [-Schedule <IMicrosoftGraphEntitlementManagementSchedule>] [-State <String>] [-Status <String>]
+ [-Target <IMicrosoftGraphAccessPackageSubject1>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -31,9 +31,9 @@ Update-MgEntitlementManagementAssignment -AccessPackageAssignmentId <String>
 ```
 Update-MgEntitlementManagementAssignment -InputObject <IIdentityGovernanceIdentity>
  [-AccessPackage <IMicrosoftGraphAccessPackage1>] [-AdditionalProperties <Hashtable>]
- [-ExpiredDateTime <DateTime>] [-Id <String>] [-Schedule <IMicrosoftGraphEntitlementManagementSchedule>]
- [-State <String>] [-Status <String>] [-Target <IMicrosoftGraphAccessPackageSubject>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-AssignmentPolicy <IMicrosoftGraphAccessPackageAssignmentPolicy1>] [-ExpiredDateTime <DateTime>]
+ [-Id <String>] [-Schedule <IMicrosoftGraphEntitlementManagementSchedule>] [-State <String>] [-Status <String>]
+ [-Target <IMicrosoftGraphAccessPackageSubject1>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -85,6 +85,22 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AssignmentPolicy
+accessPackageAssignmentPolicy
+To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENTPOLICY properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphAccessPackageAssignmentPolicy1
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -226,7 +242,7 @@ accessPackageSubject
 To construct, please use Get-Help -Online and see NOTES section for TARGET properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageSubject
+Type: IMicrosoftGraphAccessPackageSubject1
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -486,5 +502,8 @@ TARGET <IMicrosoftGraphAccessPackageSubject1>: accessPackageSubject
   - `[SubjectType <String>]`: accessPackageSubjectType
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

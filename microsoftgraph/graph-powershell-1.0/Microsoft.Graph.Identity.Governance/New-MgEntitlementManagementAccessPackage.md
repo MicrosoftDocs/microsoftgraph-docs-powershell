@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementaccesspackage
@@ -15,7 +15,8 @@ Represents access package objects.
 ### CreateExpanded1 (Default)
 ```
 New-MgEntitlementManagementAccessPackage [-AdditionalProperties <Hashtable>]
- [-Catalog <IMicrosoftGraphAccessPackageCatalog>] [-CreatedDateTime <DateTime>] [-Description <String>]
+ [-AssignmentPolicies <IMicrosoftGraphAccessPackageAssignmentPolicy1[]>]
+ [-Catalog <IMicrosoftGraphAccessPackageCatalog1>] [-CreatedDateTime <DateTime>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>] [-IsHidden] [-ModifiedDateTime <DateTime>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -48,6 +49,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -AssignmentPolicies
+.
+To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENTPOLICIES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphAccessPackageAssignmentPolicy1[]
+Parameter Sets: CreateExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -BodyParameter
 accessPackage
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
@@ -69,7 +86,7 @@ accessPackageCatalog
 To construct, please use Get-Help -Online and see NOTES section for CATALOG properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageCatalog
+Type: IMicrosoftGraphAccessPackageCatalog1
 Parameter Sets: CreateExpanded1
 Aliases:
 
