@@ -16,7 +16,9 @@ Nullable.
 ### UpdateExpanded (Default)
 ```
 Update-MgOrganizationSetting -OrganizationId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-ItemInsights <IMicrosoftGraphInsightsSettings>] [-PeopleInsights <IMicrosoftGraphInsightsSettings>]
+ [-ItemInsights <IMicrosoftGraphInsightsSettings>]
+ [-MicrosoftApplicationDataAccess <IMicrosoftGraphMicrosoftApplicationDataAccessSettings>]
+ [-PeopleInsights <IMicrosoftGraphInsightsSettings>]
  [-ProfileCardProperties <IMicrosoftGraphProfileCardProperty[]>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -31,6 +33,7 @@ Update-MgOrganizationSetting -OrganizationId <String> -BodyParameter <IMicrosoft
 ```
 Update-MgOrganizationSetting -InputObject <IIdentityDirectoryManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-ItemInsights <IMicrosoftGraphInsightsSettings>]
+ [-MicrosoftApplicationDataAccess <IMicrosoftGraphMicrosoftApplicationDataAccessSettings>]
  [-PeopleInsights <IMicrosoftGraphInsightsSettings>]
  [-ProfileCardProperties <IMicrosoftGraphProfileCardProperty[]>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -118,6 +121,22 @@ To construct, please use Get-Help -Online and see NOTES section for ITEMINSIGHTS
 
 ```yaml
 Type: IMicrosoftGraphInsightsSettings
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MicrosoftApplicationDataAccess
+microsoftApplicationDataAccessSettings
+To construct, please use Get-Help -Online and see NOTES section for MICROSOFTAPPLICATIONDATAACCESS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphMicrosoftApplicationDataAccessSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
