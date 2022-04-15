@@ -1,38 +1,38 @@
 ---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeetingtranscript
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallcontentsharingsession
 schema: 2.0.0
 ---
 
-# Get-MgCommunicationOnlineMeetingTranscript
+# Get-MgCommunicationCallContentSharingSession
 
 ## SYNOPSIS
-Get transcripts from communications
+Get contentSharingSessions from communications
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgCommunicationOnlineMeetingTranscript -OnlineMeetingId <String> [-ExpandProperty <String[]>]
+Get-MgCommunicationCallContentSharingSession -CallId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgCommunicationOnlineMeetingTranscript -CallTranscriptId <String> -OnlineMeetingId <String>
+Get-MgCommunicationCallContentSharingSession -CallId <String> -ContentSharingSessionId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgCommunicationOnlineMeetingTranscript -InputObject <ICloudCommunicationsIdentity>
+Get-MgCommunicationCallContentSharingSession -InputObject <ICloudCommunicationsIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get transcripts from communications
+Get contentSharingSessions from communications
 
 ## EXAMPLES
 
@@ -60,8 +60,23 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -CallTranscriptId
-key: id of callTranscript
+### -CallId
+key: id of call
+
+```yaml
+Type: String
+Parameter Sets: List, Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ContentSharingSessionId
+key: id of contentSharingSession
 
 ```yaml
 Type: String
@@ -134,21 +149,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -OnlineMeetingId
-key: id of onlineMeeting
-
-```yaml
-Type: String
-Parameter Sets: List, Get
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -250,11 +250,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallTranscript
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentSharingSession
+### System.String
 ## NOTES
 Please use Get-Help -Online.
 
 ## RELATED LINKS
 
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeetingtranscript](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeetingtranscript)
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallcontentsharingsession](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallcontentsharingsession)
 
