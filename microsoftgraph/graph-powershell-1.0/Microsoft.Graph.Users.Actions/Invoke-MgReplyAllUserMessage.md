@@ -12,26 +12,26 @@ Invoke action replyAll
 
 ## SYNTAX
 
-### ReplyExpanded1 (Default)
+### ReplyExpanded3 (Default)
 ```
 Invoke-MgReplyAllUserMessage -MessageId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
  [-Comment <String>] [-Message <IMicrosoftGraphMessage1>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Reply1
+### Reply3
 ```
 Invoke-MgReplyAllUserMessage -MessageId <String> -UserId <String>
  -BodyParameter <IPathsKn6R94UsersUserIdMessagesMessageIdMicrosoftGraphReplyallPostRequestbodyContentApplicationJsonSchema1>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ReplyViaIdentityExpanded1
+### ReplyViaIdentityExpanded3
 ```
 Invoke-MgReplyAllUserMessage -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-Comment <String>] [-Message <IMicrosoftGraphMessage1>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ReplyViaIdentity1
+### ReplyViaIdentity3
 ```
 Invoke-MgReplyAllUserMessage -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsKn6R94UsersUserIdMessagesMessageIdMicrosoftGraphReplyallPostRequestbodyContentApplicationJsonSchema1>
@@ -50,7 +50,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: ReplyExpanded1, ReplyViaIdentityExpanded1
+Parameter Sets: ReplyExpanded3, ReplyViaIdentityExpanded3
 Aliases:
 
 Required: False
@@ -66,7 +66,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPathsKn6R94UsersUserIdMessagesMessageIdMicrosoftGraphReplyallPostRequestbodyContentApplicationJsonSchema1
-Parameter Sets: Reply1, ReplyViaIdentity1
+Parameter Sets: Reply3, ReplyViaIdentity3
 Aliases:
 
 Required: True
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: ReplyExpanded1, ReplyViaIdentityExpanded1
+Parameter Sets: ReplyExpanded3, ReplyViaIdentityExpanded3
 Aliases:
 
 Required: False
@@ -97,7 +97,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: ReplyViaIdentityExpanded1, ReplyViaIdentity1
+Parameter Sets: ReplyViaIdentityExpanded3, ReplyViaIdentity3
 Aliases:
 
 Required: True
@@ -113,7 +113,7 @@ To construct, please use Get-Help -Online and see NOTES section for MESSAGE prop
 
 ```yaml
 Type: IMicrosoftGraphMessage1
-Parameter Sets: ReplyExpanded1, ReplyViaIdentityExpanded1
+Parameter Sets: ReplyExpanded3, ReplyViaIdentityExpanded3
 Aliases:
 
 Required: False
@@ -128,7 +128,7 @@ key: id of message
 
 ```yaml
 Type: String
-Parameter Sets: ReplyExpanded1, Reply1
+Parameter Sets: ReplyExpanded3, Reply3
 Aliases:
 
 Required: True
@@ -158,7 +158,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: ReplyExpanded1, Reply1
+Parameter Sets: ReplyExpanded3, Reply3
 Aliases:
 
 Required: True
@@ -382,6 +382,9 @@ MESSAGE <IMicrosoftGraphMessage1>: message
   - `[WebLink <String>]`: 
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS
 
