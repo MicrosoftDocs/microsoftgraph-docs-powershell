@@ -1,34 +1,41 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/invoke-mgrenewgrouplifecyclepolicy
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/test-mggroupdynamicmembershiprule
 schema: 2.0.0
 ---
 
-# Invoke-MgRenewGroupLifecyclePolicy
+# Test-MgGroupDynamicMembershipRule
 
 ## SYNOPSIS
-Invoke action renewGroup
+Invoke action evaluateDynamicMembership
 
 ## SYNTAX
 
-### RenewExpanded (Default)
+### EvaluateExpanded1 (Default)
 ```
-Invoke-MgRenewGroupLifecyclePolicy [-AdditionalProperties <Hashtable>] [-GroupId <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Test-MgGroupDynamicMembershipRule [-AdditionalProperties <Hashtable>] [-MemberId <String>]
+ [-MembershipRule <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Renew
+### Evaluate1
 ```
-Invoke-MgRenewGroupLifecyclePolicy
- -BodyParameter <IPaths8F8L4QGrouplifecyclepoliciesMicrosoftGraphRenewgroupPostRequestbodyContentApplicationJsonSchema>
+Test-MgGroupDynamicMembershipRule
+ -BodyParameter <IPaths1R12J7LGroupsMicrosoftGraphEvaluatedynamicmembershipPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action renewGroup
+Invoke action evaluateDynamicMembership
 
 ## EXAMPLES
+
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -37,7 +44,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: RenewExpanded
+Parameter Sets: EvaluateExpanded1
 Aliases:
 
 Required: False
@@ -52,8 +59,8 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths8F8L4QGrouplifecyclepoliciesMicrosoftGraphRenewgroupPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Renew
+Type: IPaths1R12J7LGroupsMicrosoftGraphEvaluatedynamicmembershipPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Evaluate1
 Aliases:
 
 Required: True
@@ -63,12 +70,27 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -GroupId
+### -MemberId
 .
 
 ```yaml
 Type: String
-Parameter Sets: RenewExpanded
+Parameter Sets: EvaluateExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MembershipRule
+.
+
+```yaml
+Type: String
+Parameter Sets: EvaluateExpanded1
 Aliases:
 
 Required: False
@@ -114,21 +136,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths8F8L4QGrouplifecyclepoliciesMicrosoftGraphRenewgroupPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IPaths1R12J7LGroupsMicrosoftGraphEvaluatedynamicmembershipPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvaluateDynamicMembershipResult
 ## NOTES
-
-ALIASES
-
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
-
-
-BODYPARAMETER <IPaths8F8L4QGrouplifecyclepoliciesMicrosoftGraphRenewgroupPostRequestbodyContentApplicationJsonSchema>: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[GroupId <String>]`: 
+Please use Get-Help -Online.
 
 ## RELATED LINKS
+
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/test-mggroupdynamicmembershiprule](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/test-mggroupdynamicmembershiprule)
+
