@@ -20,6 +20,7 @@ Update-MgEntitlementManagementAccessPackageCatalog -AccessPackageCatalogId <Stri
  [-AccessPackageResources <IMicrosoftGraphAccessPackageResource[]>]
  [-AccessPackages <IMicrosoftGraphAccessPackage[]>] [-AdditionalProperties <Hashtable>]
  [-CatalogStatus <String>] [-CatalogType <String>] [-CreatedBy <String>] [-CreatedDateTime <DateTime>]
+ [-CustomAccessPackageWorkflowExtensions <IMicrosoftGraphCustomAccessPackageWorkflowExtension[]>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsExternallyVisible] [-ModifiedBy <String>]
  [-ModifiedDateTime <DateTime>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -27,7 +28,7 @@ Update-MgEntitlementManagementAccessPackageCatalog -AccessPackageCatalogId <Stri
 ### Update
 ```
 Update-MgEntitlementManagementAccessPackageCatalog -AccessPackageCatalogId <String>
- -BodyParameter <IMicrosoftGraphAccessPackageCatalog1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageCatalog> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -38,6 +39,7 @@ Update-MgEntitlementManagementAccessPackageCatalog -InputObject <IIdentityGovern
  [-AccessPackageResources <IMicrosoftGraphAccessPackageResource[]>]
  [-AccessPackages <IMicrosoftGraphAccessPackage[]>] [-AdditionalProperties <Hashtable>]
  [-CatalogStatus <String>] [-CatalogType <String>] [-CreatedBy <String>] [-CreatedDateTime <DateTime>]
+ [-CustomAccessPackageWorkflowExtensions <IMicrosoftGraphCustomAccessPackageWorkflowExtension[]>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsExternallyVisible] [-ModifiedBy <String>]
  [-ModifiedDateTime <DateTime>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -45,7 +47,7 @@ Update-MgEntitlementManagementAccessPackageCatalog -InputObject <IIdentityGovern
 ### UpdateViaIdentity
 ```
 Update-MgEntitlementManagementAccessPackageCatalog -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessPackageCatalog1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageCatalog> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -158,7 +160,7 @@ accessPackageCatalog
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageCatalog1
+Type: IMicrosoftGraphAccessPackageCatalog
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -222,6 +224,22 @@ Read-only.
 
 ```yaml
 Type: DateTime
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CustomAccessPackageWorkflowExtensions
+.
+To construct, please use Get-Help -Online and see NOTES section for CUSTOMACCESSPACKAGEWORKFLOWEXTENSIONS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCustomAccessPackageWorkflowExtension[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -394,7 +412,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageCatalog1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageCatalog
 ## OUTPUTS
 
 ### System.Boolean
@@ -8656,6 +8674,9 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS
 

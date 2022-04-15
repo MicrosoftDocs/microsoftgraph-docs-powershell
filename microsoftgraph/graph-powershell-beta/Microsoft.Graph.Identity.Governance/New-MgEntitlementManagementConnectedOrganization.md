@@ -20,7 +20,7 @@ New-MgEntitlementManagementConnectedOrganization [-Description <String>] [-Displ
 
 ### Create
 ```
-New-MgEntitlementManagementConnectedOrganization -BodyParameter <IMicrosoftGraphConnectedOrganization1>
+New-MgEntitlementManagementConnectedOrganization -BodyParameter <IMicrosoftGraphConnectedOrganization>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -61,7 +61,7 @@ connectedOrganization
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConnectedOrganization1
+Type: IMicrosoftGraphConnectedOrganization
 Parameter Sets: Create
 Aliases:
 
@@ -298,11 +298,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConnectedOrganization1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConnectedOrganization
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConnectedOrganization
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConnectedOrganization1
 ## NOTES
 
 ALIASES
