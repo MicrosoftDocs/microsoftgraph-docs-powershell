@@ -1,31 +1,38 @@
-﻿---
+---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/get-mguseronenotesectionpage
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/get-mguseronenotesectiongroupsectiongroupbyref
 schema: 2.0.0
 ---
 
-# Get-MgUserOnenoteSectionPage
+# Get-MgUserOnenoteSectionGroupSectionGroupByRef
 
 ## SYNOPSIS
-The collection of pages in the section.
+The section groups in the section.
 Read-only.
 Nullable.
 
 ## SYNTAX
 
 ```
-Get-MgUserOnenoteSectionPage -OnenoteSectionId <String> -UserId <String> [-ExpandProperty <String[]>]
- [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+Get-MgUserOnenoteSectionGroupSectionGroupByRef -SectionGroupId <String> -UserId <String> [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The collection of pages in the section.
+The section groups in the section.
 Read-only.
 Nullable.
 
 ## EXAMPLES
+
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -39,7 +46,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -52,21 +59,6 @@ By default, this variable will be set in the global scope.
 Type: String
 Parameter Sets: (All)
 Aliases: CV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ExpandProperty
-Expand related entities
-
-```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: Expand
 
 Required: False
 Position: Named
@@ -90,21 +82,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -OnenoteSectionId
-key: id of onenoteSection
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -PageSize
 Sets the page size of results.
 
@@ -115,22 +92,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Property
-Select properties to be returned
-
-```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: Select
-
-Required: False
-Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -144,6 +106,21 @@ Parameter Sets: (All)
 Aliases:
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SectionGroupId
+key: id of sectionGroup
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -175,7 +152,7 @@ Aliases: Limit
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -205,7 +182,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -217,9 +194,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnenotePage
+### System.String
 ## NOTES
-
-ALIASES
+Please use Get-Help -Online.
 
 ## RELATED LINKS
+
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/get-mguseronenotesectiongroupsectiongroupbyref](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/get-mguseronenotesectiongroupsectiongroupbyref)
+
