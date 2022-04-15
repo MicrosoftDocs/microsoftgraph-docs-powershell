@@ -15,10 +15,14 @@ Microsoft Graph PowerShell Cmdlets
 Get entity from dataPolicyOperations by key
 
 ### [Get-MgIdentityConditionalAccessNamedLocation](Get-MgIdentityConditionalAccessNamedLocation.md)
-Get namedLocations from identity
+Read-only.
+Nullable.
+Returns a collection of the specified named locations.
 
 ### [Get-MgIdentityConditionalAccessPolicy](Get-MgIdentityConditionalAccessPolicy.md)
-Get policies from identity
+Read-only.
+Nullable.
+Returns a collection of the specified Conditional Access (CA) policies.
 
 ### [Get-MgIdentityProvider](Get-MgIdentityProvider.md)
 Get entity from identityProviders by key
@@ -47,46 +51,46 @@ Get entity from oauth2PermissionGrants by key
 Invoke function delta
 
 ### [Get-MgOrganizationCertificateBasedAuthConfiguration](Get-MgOrganizationCertificateBasedAuthConfiguration.md)
-Navigation property to manage  certificate-based authentication configuration.
+Navigation property to manage certificate-based authentication configuration.
 Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
 
 ### [Get-MgOrganizationCertificateBasedAuthConfigurationByRef](Get-MgOrganizationCertificateBasedAuthConfigurationByRef.md)
-Navigation property to manage  certificate-based authentication configuration.
+Navigation property to manage certificate-based authentication configuration.
 Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
 
 ### [Get-MgPolicyActivityBasedTimeoutPolicy](Get-MgPolicyActivityBasedTimeoutPolicy.md)
-Get activityBasedTimeoutPolicies from policies
+The policy that controls the idle time out for web sessions for applications.
 
 ### [Get-MgPolicyAdminConsentRequestPolicy](Get-MgPolicyAdminConsentRequestPolicy.md)
-Get adminConsentRequestPolicy from policies
+The policy by which consent requests are created and managed for the entire tenant.
 
 ### [Get-MgPolicyAuthenticationFlowPolicy](Get-MgPolicyAuthenticationFlowPolicy.md)
-Get authenticationFlowsPolicy from policies
+The policy configuration of the self-service sign-up experience of external users.
 
 ### [Get-MgPolicyAuthenticationMethodPolicy](Get-MgPolicyAuthenticationMethodPolicy.md)
-Get authenticationMethodsPolicy from policies
+The authentication methods and the users that are allowed to use them to sign in and perform multi-factor authentication (MFA) in Azure Active Directory (Azure AD).
 
 ### [Get-MgPolicyAuthorizationPolicy](Get-MgPolicyAuthorizationPolicy.md)
-Get authorizationPolicy from policies
+The policy that controls Azure AD authorization settings.
 
 ### [Get-MgPolicyClaimMappingPolicy](Get-MgPolicyClaimMappingPolicy.md)
-Get claimsMappingPolicies from policies
+The claim-mapping policies for WS-Fed, SAML, OAuth 2.0, and OpenID Connect protocols, for tokens issued to a specific application.
 
 ### [Get-MgPolicyFeatureRolloutPolicy](Get-MgPolicyFeatureRolloutPolicy.md)
-Get featureRolloutPolicies from policies
+The feature rollout policy associated with a directory object.
 
 ### [Get-MgPolicyFeatureRolloutPolicyApplyTo](Get-MgPolicyFeatureRolloutPolicyApplyTo.md)
 Nullable.
 Specifies a list of directoryObjects that feature is enabled for.
 
 ### [Get-MgPolicyHomeRealmDiscoveryPolicy](Get-MgPolicyHomeRealmDiscoveryPolicy.md)
-Get homeRealmDiscoveryPolicies from policies
+The policy to control Azure AD authentication behavior for federated users.
 
 ### [Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy](Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy.md)
-Get identitySecurityDefaultsEnforcementPolicy from policies
+The policy that represents the security defaults that protect against common attacks.
 
 ### [Get-MgPolicyPermissionGrantPolicy](Get-MgPolicyPermissionGrantPolicy.md)
-Get permissionGrantPolicies from policies
+The policy that specifies the conditions under which consent can be granted.
 
 ### [Get-MgPolicyPermissionGrantPolicyExclude](Get-MgPolicyPermissionGrantPolicyExclude.md)
 Condition sets which are excluded in this permission grant policy.
@@ -97,10 +101,10 @@ Condition sets which are included in this permission grant policy.
 Automatically expanded on GET.
 
 ### [Get-MgPolicyTokenIssuancePolicy](Get-MgPolicyTokenIssuancePolicy.md)
-Get tokenIssuancePolicies from policies
+The policy that specifies the characteristics of SAML tokens issued by Azure AD.
 
 ### [Get-MgPolicyTokenLifetimePolicy](Get-MgPolicyTokenLifetimePolicy.md)
-Get tokenLifetimePolicies from policies
+The policy that controls the lifetime of a JWT access token, an ID token, or a SAML 1.1/2.0 token issued by Azure AD.
 
 ### [Get-MgUserAuthenticationFido2Method](Get-MgUserAuthenticationFido2Method.md)
 Get fido2Methods from users
@@ -128,10 +132,14 @@ Invoke function availableProviderTypes
 Add new entity to dataPolicyOperations
 
 ### [New-MgIdentityConditionalAccessNamedLocation](New-MgIdentityConditionalAccessNamedLocation.md)
-Create new navigation property to namedLocations for identity
+Read-only.
+Nullable.
+Returns a collection of the specified named locations.
 
 ### [New-MgIdentityConditionalAccessPolicy](New-MgIdentityConditionalAccessPolicy.md)
-Create new navigation property to policies for identity
+Read-only.
+Nullable.
+Returns a collection of the specified Conditional Access (CA) policies.
 
 ### [New-MgIdentityProvider](New-MgIdentityProvider.md)
 Add new entity to identityProviders
@@ -154,27 +162,27 @@ Add new entity to invitations
 Add new entity to oauth2PermissionGrants
 
 ### [New-MgOrganizationCertificateBasedAuthConfigurationByRef](New-MgOrganizationCertificateBasedAuthConfigurationByRef.md)
-Navigation property to manage  certificate-based authentication configuration.
+Navigation property to manage certificate-based authentication configuration.
 Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
 
 ### [New-MgPolicyActivityBasedTimeoutPolicy](New-MgPolicyActivityBasedTimeoutPolicy.md)
-Create new navigation property to activityBasedTimeoutPolicies for policies
+The policy that controls the idle time out for web sessions for applications.
 
 ### [New-MgPolicyClaimMappingPolicy](New-MgPolicyClaimMappingPolicy.md)
-Create new navigation property to claimsMappingPolicies for policies
+The claim-mapping policies for WS-Fed, SAML, OAuth 2.0, and OpenID Connect protocols, for tokens issued to a specific application.
 
 ### [New-MgPolicyFeatureRolloutPolicy](New-MgPolicyFeatureRolloutPolicy.md)
-Create new navigation property to featureRolloutPolicies for policies
+The feature rollout policy associated with a directory object.
 
 ### [New-MgPolicyFeatureRolloutPolicyApplyTo](New-MgPolicyFeatureRolloutPolicyApplyTo.md)
 Nullable.
 Specifies a list of directoryObjects that feature is enabled for.
 
 ### [New-MgPolicyHomeRealmDiscoveryPolicy](New-MgPolicyHomeRealmDiscoveryPolicy.md)
-Create new navigation property to homeRealmDiscoveryPolicies for policies
+The policy to control Azure AD authentication behavior for federated users.
 
 ### [New-MgPolicyPermissionGrantPolicy](New-MgPolicyPermissionGrantPolicy.md)
-Create new navigation property to permissionGrantPolicies for policies
+The policy that specifies the conditions under which consent can be granted.
 
 ### [New-MgPolicyPermissionGrantPolicyExclude](New-MgPolicyPermissionGrantPolicyExclude.md)
 Condition sets which are excluded in this permission grant policy.
@@ -185,10 +193,10 @@ Condition sets which are included in this permission grant policy.
 Automatically expanded on GET.
 
 ### [New-MgPolicyTokenIssuancePolicy](New-MgPolicyTokenIssuancePolicy.md)
-Create new navigation property to tokenIssuancePolicies for policies
+The policy that specifies the characteristics of SAML tokens issued by Azure AD.
 
 ### [New-MgPolicyTokenLifetimePolicy](New-MgPolicyTokenLifetimePolicy.md)
-Create new navigation property to tokenLifetimePolicies for policies
+The policy that controls the lifetime of a JWT access token, an ID token, or a SAML 1.1/2.0 token issued by Azure AD.
 
 ### [New-MgUserAuthenticationFido2Method](New-MgUserAuthenticationFido2Method.md)
 Create new navigation property to fido2Methods for users
@@ -206,10 +214,14 @@ Create new navigation property to windowsHelloForBusinessMethods for users
 Delete entity from dataPolicyOperations
 
 ### [Remove-MgIdentityConditionalAccessNamedLocation](Remove-MgIdentityConditionalAccessNamedLocation.md)
-Delete navigation property namedLocations for identity
+Read-only.
+Nullable.
+Returns a collection of the specified named locations.
 
 ### [Remove-MgIdentityConditionalAccessPolicy](Remove-MgIdentityConditionalAccessPolicy.md)
-Delete navigation property policies for identity
+Read-only.
+Nullable.
+Returns a collection of the specified Conditional Access (CA) policies.
 
 ### [Remove-MgIdentityProvider](Remove-MgIdentityProvider.md)
 Delete entity from identityProviders
@@ -232,38 +244,38 @@ By default, a GET /threatAssessmentRequests/{id} does not return this property u
 Delete entity from oauth2PermissionGrants
 
 ### [Remove-MgPolicyActivityBasedTimeoutPolicy](Remove-MgPolicyActivityBasedTimeoutPolicy.md)
-Delete navigation property activityBasedTimeoutPolicies for policies
+The policy that controls the idle time out for web sessions for applications.
 
 ### [Remove-MgPolicyAdminConsentRequestPolicy](Remove-MgPolicyAdminConsentRequestPolicy.md)
-Delete navigation property adminConsentRequestPolicy for policies
+The policy by which consent requests are created and managed for the entire tenant.
 
 ### [Remove-MgPolicyAuthenticationFlowPolicy](Remove-MgPolicyAuthenticationFlowPolicy.md)
-Delete navigation property authenticationFlowsPolicy for policies
+The policy configuration of the self-service sign-up experience of external users.
 
 ### [Remove-MgPolicyAuthenticationMethodPolicy](Remove-MgPolicyAuthenticationMethodPolicy.md)
-Delete navigation property authenticationMethodsPolicy for policies
+The authentication methods and the users that are allowed to use them to sign in and perform multi-factor authentication (MFA) in Azure Active Directory (Azure AD).
 
 ### [Remove-MgPolicyAuthorizationPolicy](Remove-MgPolicyAuthorizationPolicy.md)
-Delete navigation property authorizationPolicy for policies
+The policy that controls Azure AD authorization settings.
 
 ### [Remove-MgPolicyClaimMappingPolicy](Remove-MgPolicyClaimMappingPolicy.md)
-Delete navigation property claimsMappingPolicies for policies
+The claim-mapping policies for WS-Fed, SAML, OAuth 2.0, and OpenID Connect protocols, for tokens issued to a specific application.
 
 ### [Remove-MgPolicyFeatureRolloutPolicy](Remove-MgPolicyFeatureRolloutPolicy.md)
-Delete navigation property featureRolloutPolicies for policies
+The feature rollout policy associated with a directory object.
 
 ### [Remove-MgPolicyFeatureRolloutPolicyApplyTo](Remove-MgPolicyFeatureRolloutPolicyApplyTo.md)
 Nullable.
 Specifies a list of directoryObjects that feature is enabled for.
 
 ### [Remove-MgPolicyHomeRealmDiscoveryPolicy](Remove-MgPolicyHomeRealmDiscoveryPolicy.md)
-Delete navigation property homeRealmDiscoveryPolicies for policies
+The policy to control Azure AD authentication behavior for federated users.
 
 ### [Remove-MgPolicyIdentitySecurityDefaultEnforcementPolicy](Remove-MgPolicyIdentitySecurityDefaultEnforcementPolicy.md)
-Delete navigation property identitySecurityDefaultsEnforcementPolicy for policies
+The policy that represents the security defaults that protect against common attacks.
 
 ### [Remove-MgPolicyPermissionGrantPolicy](Remove-MgPolicyPermissionGrantPolicy.md)
-Delete navigation property permissionGrantPolicies for policies
+The policy that specifies the conditions under which consent can be granted.
 
 ### [Remove-MgPolicyPermissionGrantPolicyExclude](Remove-MgPolicyPermissionGrantPolicyExclude.md)
 Condition sets which are excluded in this permission grant policy.
@@ -274,10 +286,10 @@ Condition sets which are included in this permission grant policy.
 Automatically expanded on GET.
 
 ### [Remove-MgPolicyTokenIssuancePolicy](Remove-MgPolicyTokenIssuancePolicy.md)
-Delete navigation property tokenIssuancePolicies for policies
+The policy that specifies the characteristics of SAML tokens issued by Azure AD.
 
 ### [Remove-MgPolicyTokenLifetimePolicy](Remove-MgPolicyTokenLifetimePolicy.md)
-Delete navigation property tokenLifetimePolicies for policies
+The policy that controls the lifetime of a JWT access token, an ID token, or a SAML 1.1/2.0 token issued by Azure AD.
 
 ### [Remove-MgUserAuthenticationFido2Method](Remove-MgUserAuthenticationFido2Method.md)
 Delete navigation property fido2Methods for users
@@ -302,10 +314,14 @@ The registered device on which this Windows Hello for Business key resides.
 Update entity in dataPolicyOperations
 
 ### [Update-MgIdentityConditionalAccessNamedLocation](Update-MgIdentityConditionalAccessNamedLocation.md)
-Update the navigation property namedLocations in identity
+Read-only.
+Nullable.
+Returns a collection of the specified named locations.
 
 ### [Update-MgIdentityConditionalAccessPolicy](Update-MgIdentityConditionalAccessPolicy.md)
-Update the navigation property policies in identity
+Read-only.
+Nullable.
+Returns a collection of the specified Conditional Access (CA) policies.
 
 ### [Update-MgIdentityProvider](Update-MgIdentityProvider.md)
 Update entity in identityProviders
@@ -331,38 +347,38 @@ By default, a GET /threatAssessmentRequests/{id} does not return this property u
 Update entity in oauth2PermissionGrants
 
 ### [Update-MgPolicyActivityBasedTimeoutPolicy](Update-MgPolicyActivityBasedTimeoutPolicy.md)
-Update the navigation property activityBasedTimeoutPolicies in policies
+The policy that controls the idle time out for web sessions for applications.
 
 ### [Update-MgPolicyAdminConsentRequestPolicy](Update-MgPolicyAdminConsentRequestPolicy.md)
-Update the navigation property adminConsentRequestPolicy in policies
+The policy by which consent requests are created and managed for the entire tenant.
 
 ### [Update-MgPolicyAuthenticationFlowPolicy](Update-MgPolicyAuthenticationFlowPolicy.md)
-Update the navigation property authenticationFlowsPolicy in policies
+The policy configuration of the self-service sign-up experience of external users.
 
 ### [Update-MgPolicyAuthenticationMethodPolicy](Update-MgPolicyAuthenticationMethodPolicy.md)
-Update the navigation property authenticationMethodsPolicy in policies
+The authentication methods and the users that are allowed to use them to sign in and perform multi-factor authentication (MFA) in Azure Active Directory (Azure AD).
 
 ### [Update-MgPolicyAuthorizationPolicy](Update-MgPolicyAuthorizationPolicy.md)
-Update the navigation property authorizationPolicy in policies
+The policy that controls Azure AD authorization settings.
 
 ### [Update-MgPolicyClaimMappingPolicy](Update-MgPolicyClaimMappingPolicy.md)
-Update the navigation property claimsMappingPolicies in policies
+The claim-mapping policies for WS-Fed, SAML, OAuth 2.0, and OpenID Connect protocols, for tokens issued to a specific application.
 
 ### [Update-MgPolicyFeatureRolloutPolicy](Update-MgPolicyFeatureRolloutPolicy.md)
-Update the navigation property featureRolloutPolicies in policies
+The feature rollout policy associated with a directory object.
 
 ### [Update-MgPolicyFeatureRolloutPolicyApplyTo](Update-MgPolicyFeatureRolloutPolicyApplyTo.md)
 Nullable.
 Specifies a list of directoryObjects that feature is enabled for.
 
 ### [Update-MgPolicyHomeRealmDiscoveryPolicy](Update-MgPolicyHomeRealmDiscoveryPolicy.md)
-Update the navigation property homeRealmDiscoveryPolicies in policies
+The policy to control Azure AD authentication behavior for federated users.
 
 ### [Update-MgPolicyIdentitySecurityDefaultEnforcementPolicy](Update-MgPolicyIdentitySecurityDefaultEnforcementPolicy.md)
-Update the navigation property identitySecurityDefaultsEnforcementPolicy in policies
+The policy that represents the security defaults that protect against common attacks.
 
 ### [Update-MgPolicyPermissionGrantPolicy](Update-MgPolicyPermissionGrantPolicy.md)
-Update the navigation property permissionGrantPolicies in policies
+The policy that specifies the conditions under which consent can be granted.
 
 ### [Update-MgPolicyPermissionGrantPolicyExclude](Update-MgPolicyPermissionGrantPolicyExclude.md)
 Condition sets which are excluded in this permission grant policy.
@@ -373,10 +389,10 @@ Condition sets which are included in this permission grant policy.
 Automatically expanded on GET.
 
 ### [Update-MgPolicyTokenIssuancePolicy](Update-MgPolicyTokenIssuancePolicy.md)
-Update the navigation property tokenIssuancePolicies in policies
+The policy that specifies the characteristics of SAML tokens issued by Azure AD.
 
 ### [Update-MgPolicyTokenLifetimePolicy](Update-MgPolicyTokenLifetimePolicy.md)
-Update the navigation property tokenLifetimePolicies in policies
+The policy that controls the lifetime of a JWT access token, an ID token, or a SAML 1.1/2.0 token issued by Azure AD.
 
 ### [Update-MgUserAuthenticationFido2Method](Update-MgUserAuthenticationFido2Method.md)
 Update the navigation property fido2Methods in users
