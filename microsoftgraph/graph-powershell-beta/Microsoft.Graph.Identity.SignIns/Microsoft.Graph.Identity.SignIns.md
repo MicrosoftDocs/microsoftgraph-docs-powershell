@@ -11,17 +11,29 @@ Locale: en-US
 Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Identity.SignIns Cmdlets
+### [Confirm-MgInformationProtectionSignature](Confirm-MgInformationProtectionSignature.md)
+Invoke action verifySignature
+
 ### [Confirm-MgRiskyUserCompromised](Confirm-MgRiskyUserCompromised.md)
 Invoke action confirmCompromised
 
 ### [Get-MgDataPolicyOperation](Get-MgDataPolicyOperation.md)
 Get entity from dataPolicyOperations by key
 
+### [Get-MgIdentityConditionalAccessAuthenticationContextClassReference](Get-MgIdentityConditionalAccessAuthenticationContextClassReference.md)
+Read-only.
+Nullable.
+Returns a collection of the specified authentication context class references.
+
 ### [Get-MgIdentityConditionalAccessNamedLocation](Get-MgIdentityConditionalAccessNamedLocation.md)
-Get namedLocations from identity
+Read-only.
+Nullable.
+Returns a collection of the specified named locations.
 
 ### [Get-MgIdentityConditionalAccessPolicy](Get-MgIdentityConditionalAccessPolicy.md)
-Get policies from identity
+Read-only.
+Nullable.
+Returns a collection of the specified Conditional Access (CA) policies.
 
 ### [Get-MgIdentityProvider](Get-MgIdentityProvider.md)
 Get entity from identityProviders by key
@@ -65,55 +77,79 @@ Get entity from oauth2PermissionGrants by key
 Invoke function delta
 
 ### [Get-MgOrganizationCertificateBasedAuthConfiguration](Get-MgOrganizationCertificateBasedAuthConfiguration.md)
-Navigation property to manage  certificate-based authentication configuration.
+Navigation property to manage certificate-based authentication configuration.
 Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
 
 ### [Get-MgOrganizationCertificateBasedAuthConfigurationByRef](Get-MgOrganizationCertificateBasedAuthConfigurationByRef.md)
-Navigation property to manage  certificate-based authentication configuration.
+Navigation property to manage certificate-based authentication configuration.
 Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
 
 ### [Get-MgPolicyAccessReviewPolicy](Get-MgPolicyAccessReviewPolicy.md)
-Get accessReviewPolicy from policies
+The policy that contains directory-level access review settings.
 
 ### [Get-MgPolicyActivityBasedTimeoutPolicy](Get-MgPolicyActivityBasedTimeoutPolicy.md)
-Get activityBasedTimeoutPolicies from policies
+The policy that controls the idle time out for web sessions for applications.
 
 ### [Get-MgPolicyAdminConsentRequestPolicy](Get-MgPolicyAdminConsentRequestPolicy.md)
-Get adminConsentRequestPolicy from policies
+The policy by which consent requests are created and managed for the entire tenant.
+
+### [Get-MgPolicyAppManagementPolicy](Get-MgPolicyAppManagementPolicy.md)
+The policies that enforce app management restrictions for specific applications and service principals, overriding the defaultAppManagementPolicy.
+
+### [Get-MgPolicyAppManagementPolicyApplyTo](Get-MgPolicyAppManagementPolicyApplyTo.md)
+Collection of application and service principals to which a policy is applied.
+
+### [Get-MgPolicyAppManagementPolicyApplyToByRef](Get-MgPolicyAppManagementPolicyApplyToByRef.md)
+Collection of application and service principals to which a policy is applied.
 
 ### [Get-MgPolicyAuthenticationFlowPolicy](Get-MgPolicyAuthenticationFlowPolicy.md)
-Get authenticationFlowsPolicy from policies
+The policy configuration of the self-service sign-up experience of external users.
 
 ### [Get-MgPolicyAuthenticationMethodPolicy](Get-MgPolicyAuthenticationMethodPolicy.md)
-Get authenticationMethodsPolicy from policies
+The authentication methods and the users that are allowed to use them to sign in and perform multi-factor authentication (MFA) in Azure Active Directory (Azure AD).
 
 ### [Get-MgPolicyAuthorizationPolicy](Get-MgPolicyAuthorizationPolicy.md)
-Get authorizationPolicy from policies
+The policy that controls Azure AD authorization settings.
+
+### [Get-MgPolicyAuthorizationPolicyDefaultUserRoleOverride](Get-MgPolicyAuthorizationPolicyDefaultUserRoleOverride.md)
+Get defaultUserRoleOverrides from policies
 
 ### [Get-MgPolicyB2CAuthenticationMethodPolicy](Get-MgPolicyB2CAuthenticationMethodPolicy.md)
 Get b2cAuthenticationMethodsPolicy from policies
 
 ### [Get-MgPolicyClaimMappingPolicy](Get-MgPolicyClaimMappingPolicy.md)
-Get claimsMappingPolicies from policies
+The claim-mapping policies for WS-Fed, SAML, OAuth 2.0, and OpenID Connect protocols, for tokens issued to a specific application.
+
+### [Get-MgPolicyDefaultAppManagementPolicy](Get-MgPolicyDefaultAppManagementPolicy.md)
+The tenant-wide policy that enforces app management restrictions for all applications and service principals.
 
 ### [Get-MgPolicyDirectoryRoleAccessReviewPolicy](Get-MgPolicyDirectoryRoleAccessReviewPolicy.md)
 Get directoryRoleAccessReviewPolicy from policies
 
+### [Get-MgPolicyExternalIdentityPolicy](Get-MgPolicyExternalIdentityPolicy.md)
+Get externalIdentitiesPolicy from policies
+
 ### [Get-MgPolicyFeatureRolloutPolicy](Get-MgPolicyFeatureRolloutPolicy.md)
-Get featureRolloutPolicies from policies
+The feature rollout policy associated with a directory object.
 
 ### [Get-MgPolicyFeatureRolloutPolicyApplyTo](Get-MgPolicyFeatureRolloutPolicyApplyTo.md)
 Nullable.
 Specifies a list of directoryObjects that feature is enabled for.
 
 ### [Get-MgPolicyHomeRealmDiscoveryPolicy](Get-MgPolicyHomeRealmDiscoveryPolicy.md)
-Get homeRealmDiscoveryPolicies from policies
+The policy to control Azure AD authentication behavior for federated users.
 
 ### [Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy](Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy.md)
-Get identitySecurityDefaultsEnforcementPolicy from policies
+The policy that represents the security defaults that protect against common attacks.
+
+### [Get-MgPolicyMobileAppManagementPolicy](Get-MgPolicyMobileAppManagementPolicy.md)
+The policy that defines auto-enrollment configuration for a mobility management (MDM or MAM) application.
+
+### [Get-MgPolicyMobileDeviceManagementPolicy](Get-MgPolicyMobileDeviceManagementPolicy.md)
+Get mobileDeviceManagementPolicies from policies
 
 ### [Get-MgPolicyPermissionGrantPolicy](Get-MgPolicyPermissionGrantPolicy.md)
-Get permissionGrantPolicies from policies
+The policy that specifies the conditions under which consent can be granted.
 
 ### [Get-MgPolicyPermissionGrantPolicyExclude](Get-MgPolicyPermissionGrantPolicyExclude.md)
 Condition sets which are excluded in this permission grant policy.
@@ -124,10 +160,10 @@ Condition sets which are included in this permission grant policy.
 Automatically expanded on GET.
 
 ### [Get-MgPolicyRoleManagementPolicy](Get-MgPolicyRoleManagementPolicy.md)
-Get roleManagementPolicies from policies
+Represents the role management policies.
 
 ### [Get-MgPolicyRoleManagementPolicyAssignment](Get-MgPolicyRoleManagementPolicyAssignment.md)
-Get roleManagementPolicyAssignments from policies
+Represents the role management policy assignments.
 
 ### [Get-MgPolicyRoleManagementPolicyAssignmentPolicy](Get-MgPolicyRoleManagementPolicyAssignmentPolicy.md)
 The policy for the assignment.
@@ -144,11 +180,20 @@ If there is a tenant wide policy to enforce enabling approval rule, the effectiv
 ### [Get-MgPolicyRoleManagementPolicyRule](Get-MgPolicyRoleManagementPolicyRule.md)
 The collection of rules like approval rule, expiration rule, etc.
 
+### [Get-MgPolicyServicePrincipalCreationPolicy](Get-MgPolicyServicePrincipalCreationPolicy.md)
+Get servicePrincipalCreationPolicies from policies
+
+### [Get-MgPolicyServicePrincipalCreationPolicyExclude](Get-MgPolicyServicePrincipalCreationPolicyExclude.md)
+Get excludes from policies
+
+### [Get-MgPolicyServicePrincipalCreationPolicyInclude](Get-MgPolicyServicePrincipalCreationPolicyInclude.md)
+Get includes from policies
+
 ### [Get-MgPolicyTokenIssuancePolicy](Get-MgPolicyTokenIssuancePolicy.md)
-Get tokenIssuancePolicies from policies
+The policy that specifies the characteristics of SAML tokens issued by Azure AD.
 
 ### [Get-MgPolicyTokenLifetimePolicy](Get-MgPolicyTokenLifetimePolicy.md)
-Get tokenLifetimePolicies from policies
+The policy that controls the lifetime of a JWT access token, an ID token, or a SAML 1.1/2.0 token issued by Azure AD.
 
 ### [Get-MgRiskDetection](Get-MgRiskDetection.md)
 Get entity from riskDetections by key
@@ -205,6 +250,9 @@ Get passwordMethods from users
 ### [Get-MgUserAuthenticationPhoneMethod](Get-MgUserAuthenticationPhoneMethod.md)
 Get phoneMethods from users
 
+### [Get-MgUserAuthenticationSoftwareOathMethod](Get-MgUserAuthenticationSoftwareOathMethod.md)
+Get softwareOathMethods from users
+
 ### [Get-MgUserAuthenticationTemporaryAccessPassMethod](Get-MgUserAuthenticationTemporaryAccessPassMethod.md)
 Get temporaryAccessPassMethods from users
 
@@ -232,6 +280,9 @@ Invoke action dismiss
 ### [Invoke-MgExtractInformationProtectionPolicyLabel](Invoke-MgExtractInformationProtectionPolicyLabel.md)
 Invoke action extractLabel
 
+### [Invoke-MgSignInformationProtectionDigest](Invoke-MgSignInformationProtectionDigest.md)
+Invoke action signDigest
+
 ### [Invoke-MgUploadTrustFrameworkKeySetCertificate](Invoke-MgUploadTrustFrameworkKeySetCertificate.md)
 Invoke action uploadCertificate
 
@@ -244,11 +295,20 @@ Invoke action uploadSecret
 ### [New-MgDataPolicyOperation](New-MgDataPolicyOperation.md)
 Add new entity to dataPolicyOperations
 
+### [New-MgIdentityConditionalAccessAuthenticationContextClassReference](New-MgIdentityConditionalAccessAuthenticationContextClassReference.md)
+Read-only.
+Nullable.
+Returns a collection of the specified authentication context class references.
+
 ### [New-MgIdentityConditionalAccessNamedLocation](New-MgIdentityConditionalAccessNamedLocation.md)
-Create new navigation property to namedLocations for identity
+Read-only.
+Nullable.
+Returns a collection of the specified named locations.
 
 ### [New-MgIdentityConditionalAccessPolicy](New-MgIdentityConditionalAccessPolicy.md)
-Create new navigation property to policies for identity
+Read-only.
+Nullable.
+Returns a collection of the specified Conditional Access (CA) policies.
 
 ### [New-MgIdentityProvider](New-MgIdentityProvider.md)
 Add new entity to identityProviders
@@ -280,30 +340,45 @@ Add new entity to invitations
 Add new entity to oauth2PermissionGrants
 
 ### [New-MgOrganizationCertificateBasedAuthConfigurationByRef](New-MgOrganizationCertificateBasedAuthConfigurationByRef.md)
-Navigation property to manage  certificate-based authentication configuration.
+Navigation property to manage certificate-based authentication configuration.
 Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
 
 ### [New-MgPolicyActivityBasedTimeoutPolicy](New-MgPolicyActivityBasedTimeoutPolicy.md)
-Create new navigation property to activityBasedTimeoutPolicies for policies
+The policy that controls the idle time out for web sessions for applications.
+
+### [New-MgPolicyAppManagementPolicy](New-MgPolicyAppManagementPolicy.md)
+The policies that enforce app management restrictions for specific applications and service principals, overriding the defaultAppManagementPolicy.
+
+### [New-MgPolicyAppManagementPolicyApplyToByRef](New-MgPolicyAppManagementPolicyApplyToByRef.md)
+Collection of application and service principals to which a policy is applied.
 
 ### [New-MgPolicyAuthorizationPolicy](New-MgPolicyAuthorizationPolicy.md)
-Create new navigation property to authorizationPolicy for policies
+The policy that controls Azure AD authorization settings.
+
+### [New-MgPolicyAuthorizationPolicyDefaultUserRoleOverride](New-MgPolicyAuthorizationPolicyDefaultUserRoleOverride.md)
+Create new navigation property to defaultUserRoleOverrides for policies
 
 ### [New-MgPolicyClaimMappingPolicy](New-MgPolicyClaimMappingPolicy.md)
-Create new navigation property to claimsMappingPolicies for policies
+The claim-mapping policies for WS-Fed, SAML, OAuth 2.0, and OpenID Connect protocols, for tokens issued to a specific application.
 
 ### [New-MgPolicyFeatureRolloutPolicy](New-MgPolicyFeatureRolloutPolicy.md)
-Create new navigation property to featureRolloutPolicies for policies
+The feature rollout policy associated with a directory object.
 
 ### [New-MgPolicyFeatureRolloutPolicyApplyTo](New-MgPolicyFeatureRolloutPolicyApplyTo.md)
 Nullable.
 Specifies a list of directoryObjects that feature is enabled for.
 
 ### [New-MgPolicyHomeRealmDiscoveryPolicy](New-MgPolicyHomeRealmDiscoveryPolicy.md)
-Create new navigation property to homeRealmDiscoveryPolicies for policies
+The policy to control Azure AD authentication behavior for federated users.
+
+### [New-MgPolicyMobileAppManagementPolicy](New-MgPolicyMobileAppManagementPolicy.md)
+The policy that defines auto-enrollment configuration for a mobility management (MDM or MAM) application.
+
+### [New-MgPolicyMobileDeviceManagementPolicy](New-MgPolicyMobileDeviceManagementPolicy.md)
+Create new navigation property to mobileDeviceManagementPolicies for policies
 
 ### [New-MgPolicyPermissionGrantPolicy](New-MgPolicyPermissionGrantPolicy.md)
-Create new navigation property to permissionGrantPolicies for policies
+The policy that specifies the conditions under which consent can be granted.
 
 ### [New-MgPolicyPermissionGrantPolicyExclude](New-MgPolicyPermissionGrantPolicyExclude.md)
 Condition sets which are excluded in this permission grant policy.
@@ -314,10 +389,10 @@ Condition sets which are included in this permission grant policy.
 Automatically expanded on GET.
 
 ### [New-MgPolicyRoleManagementPolicy](New-MgPolicyRoleManagementPolicy.md)
-Create new navigation property to roleManagementPolicies for policies
+Represents the role management policies.
 
 ### [New-MgPolicyRoleManagementPolicyAssignment](New-MgPolicyRoleManagementPolicyAssignment.md)
-Create new navigation property to roleManagementPolicyAssignments for policies
+Represents the role management policy assignments.
 
 ### [New-MgPolicyRoleManagementPolicyEffectiveRule](New-MgPolicyRoleManagementPolicyEffectiveRule.md)
 The list of effective rules like approval rule, expiration rule, etc.
@@ -328,11 +403,20 @@ If there is a tenant wide policy to enforce enabling approval rule, the effectiv
 ### [New-MgPolicyRoleManagementPolicyRule](New-MgPolicyRoleManagementPolicyRule.md)
 The collection of rules like approval rule, expiration rule, etc.
 
+### [New-MgPolicyServicePrincipalCreationPolicy](New-MgPolicyServicePrincipalCreationPolicy.md)
+Create new navigation property to servicePrincipalCreationPolicies for policies
+
+### [New-MgPolicyServicePrincipalCreationPolicyExclude](New-MgPolicyServicePrincipalCreationPolicyExclude.md)
+Create new navigation property to excludes for policies
+
+### [New-MgPolicyServicePrincipalCreationPolicyInclude](New-MgPolicyServicePrincipalCreationPolicyInclude.md)
+Create new navigation property to includes for policies
+
 ### [New-MgPolicyTokenIssuancePolicy](New-MgPolicyTokenIssuancePolicy.md)
-Create new navigation property to tokenIssuancePolicies for policies
+The policy that specifies the characteristics of SAML tokens issued by Azure AD.
 
 ### [New-MgPolicyTokenLifetimePolicy](New-MgPolicyTokenLifetimePolicy.md)
-Create new navigation property to tokenLifetimePolicies for policies
+The policy that controls the lifetime of a JWT access token, an ID token, or a SAML 1.1/2.0 token issued by Azure AD.
 
 ### [New-MgRiskDetection](New-MgRiskDetection.md)
 Add new entity to riskDetections
@@ -373,6 +457,9 @@ Create new navigation property to passwordlessMicrosoftAuthenticatorMethods for 
 ### [New-MgUserAuthenticationPhoneMethod](New-MgUserAuthenticationPhoneMethod.md)
 Create new navigation property to phoneMethods for users
 
+### [New-MgUserAuthenticationSoftwareOathMethod](New-MgUserAuthenticationSoftwareOathMethod.md)
+Create new navigation property to softwareOathMethods for users
+
 ### [New-MgUserAuthenticationTemporaryAccessPassMethod](New-MgUserAuthenticationTemporaryAccessPassMethod.md)
 Create new navigation property to temporaryAccessPassMethods for users
 
@@ -382,11 +469,20 @@ Create new navigation property to windowsHelloForBusinessMethods for users
 ### [Remove-MgDataPolicyOperation](Remove-MgDataPolicyOperation.md)
 Delete entity from dataPolicyOperations
 
+### [Remove-MgIdentityConditionalAccessAuthenticationContextClassReference](Remove-MgIdentityConditionalAccessAuthenticationContextClassReference.md)
+Read-only.
+Nullable.
+Returns a collection of the specified authentication context class references.
+
 ### [Remove-MgIdentityConditionalAccessNamedLocation](Remove-MgIdentityConditionalAccessNamedLocation.md)
-Delete navigation property namedLocations for identity
+Read-only.
+Nullable.
+Returns a collection of the specified named locations.
 
 ### [Remove-MgIdentityConditionalAccessPolicy](Remove-MgIdentityConditionalAccessPolicy.md)
-Delete navigation property policies for identity
+Read-only.
+Nullable.
+Returns a collection of the specified Conditional Access (CA) policies.
 
 ### [Remove-MgIdentityProvider](Remove-MgIdentityProvider.md)
 Delete entity from identityProviders
@@ -424,47 +520,65 @@ By default, a GET /threatAssessmentRequests/{id} does not return this property u
 Delete entity from oauth2PermissionGrants
 
 ### [Remove-MgPolicyAccessReviewPolicy](Remove-MgPolicyAccessReviewPolicy.md)
-Delete navigation property accessReviewPolicy for policies
+The policy that contains directory-level access review settings.
 
 ### [Remove-MgPolicyActivityBasedTimeoutPolicy](Remove-MgPolicyActivityBasedTimeoutPolicy.md)
-Delete navigation property activityBasedTimeoutPolicies for policies
+The policy that controls the idle time out for web sessions for applications.
 
 ### [Remove-MgPolicyAdminConsentRequestPolicy](Remove-MgPolicyAdminConsentRequestPolicy.md)
-Delete navigation property adminConsentRequestPolicy for policies
+The policy by which consent requests are created and managed for the entire tenant.
+
+### [Remove-MgPolicyAppManagementPolicy](Remove-MgPolicyAppManagementPolicy.md)
+The policies that enforce app management restrictions for specific applications and service principals, overriding the defaultAppManagementPolicy.
 
 ### [Remove-MgPolicyAuthenticationFlowPolicy](Remove-MgPolicyAuthenticationFlowPolicy.md)
-Delete navigation property authenticationFlowsPolicy for policies
+The policy configuration of the self-service sign-up experience of external users.
 
 ### [Remove-MgPolicyAuthenticationMethodPolicy](Remove-MgPolicyAuthenticationMethodPolicy.md)
-Delete navigation property authenticationMethodsPolicy for policies
+The authentication methods and the users that are allowed to use them to sign in and perform multi-factor authentication (MFA) in Azure Active Directory (Azure AD).
 
 ### [Remove-MgPolicyAuthorizationPolicy](Remove-MgPolicyAuthorizationPolicy.md)
-Delete navigation property authorizationPolicy for policies
+The policy that controls Azure AD authorization settings.
+
+### [Remove-MgPolicyAuthorizationPolicyDefaultUserRoleOverride](Remove-MgPolicyAuthorizationPolicyDefaultUserRoleOverride.md)
+Delete navigation property defaultUserRoleOverrides for policies
 
 ### [Remove-MgPolicyB2CAuthenticationMethodPolicy](Remove-MgPolicyB2CAuthenticationMethodPolicy.md)
 Delete navigation property b2cAuthenticationMethodsPolicy for policies
 
 ### [Remove-MgPolicyClaimMappingPolicy](Remove-MgPolicyClaimMappingPolicy.md)
-Delete navigation property claimsMappingPolicies for policies
+The claim-mapping policies for WS-Fed, SAML, OAuth 2.0, and OpenID Connect protocols, for tokens issued to a specific application.
+
+### [Remove-MgPolicyDefaultAppManagementPolicy](Remove-MgPolicyDefaultAppManagementPolicy.md)
+The tenant-wide policy that enforces app management restrictions for all applications and service principals.
 
 ### [Remove-MgPolicyDirectoryRoleAccessReviewPolicy](Remove-MgPolicyDirectoryRoleAccessReviewPolicy.md)
 Delete navigation property directoryRoleAccessReviewPolicy for policies
 
+### [Remove-MgPolicyExternalIdentityPolicy](Remove-MgPolicyExternalIdentityPolicy.md)
+Delete navigation property externalIdentitiesPolicy for policies
+
 ### [Remove-MgPolicyFeatureRolloutPolicy](Remove-MgPolicyFeatureRolloutPolicy.md)
-Delete navigation property featureRolloutPolicies for policies
+The feature rollout policy associated with a directory object.
 
 ### [Remove-MgPolicyFeatureRolloutPolicyApplyTo](Remove-MgPolicyFeatureRolloutPolicyApplyTo.md)
 Nullable.
 Specifies a list of directoryObjects that feature is enabled for.
 
 ### [Remove-MgPolicyHomeRealmDiscoveryPolicy](Remove-MgPolicyHomeRealmDiscoveryPolicy.md)
-Delete navigation property homeRealmDiscoveryPolicies for policies
+The policy to control Azure AD authentication behavior for federated users.
 
 ### [Remove-MgPolicyIdentitySecurityDefaultEnforcementPolicy](Remove-MgPolicyIdentitySecurityDefaultEnforcementPolicy.md)
-Delete navigation property identitySecurityDefaultsEnforcementPolicy for policies
+The policy that represents the security defaults that protect against common attacks.
+
+### [Remove-MgPolicyMobileAppManagementPolicy](Remove-MgPolicyMobileAppManagementPolicy.md)
+The policy that defines auto-enrollment configuration for a mobility management (MDM or MAM) application.
+
+### [Remove-MgPolicyMobileDeviceManagementPolicy](Remove-MgPolicyMobileDeviceManagementPolicy.md)
+Delete navigation property mobileDeviceManagementPolicies for policies
 
 ### [Remove-MgPolicyPermissionGrantPolicy](Remove-MgPolicyPermissionGrantPolicy.md)
-Delete navigation property permissionGrantPolicies for policies
+The policy that specifies the conditions under which consent can be granted.
 
 ### [Remove-MgPolicyPermissionGrantPolicyExclude](Remove-MgPolicyPermissionGrantPolicyExclude.md)
 Condition sets which are excluded in this permission grant policy.
@@ -475,10 +589,10 @@ Condition sets which are included in this permission grant policy.
 Automatically expanded on GET.
 
 ### [Remove-MgPolicyRoleManagementPolicy](Remove-MgPolicyRoleManagementPolicy.md)
-Delete navigation property roleManagementPolicies for policies
+Represents the role management policies.
 
 ### [Remove-MgPolicyRoleManagementPolicyAssignment](Remove-MgPolicyRoleManagementPolicyAssignment.md)
-Delete navigation property roleManagementPolicyAssignments for policies
+Represents the role management policy assignments.
 
 ### [Remove-MgPolicyRoleManagementPolicyAssignmentPolicyByRef](Remove-MgPolicyRoleManagementPolicyAssignmentPolicyByRef.md)
 The policy for the assignment.
@@ -492,11 +606,20 @@ If there is a tenant wide policy to enforce enabling approval rule, the effectiv
 ### [Remove-MgPolicyRoleManagementPolicyRule](Remove-MgPolicyRoleManagementPolicyRule.md)
 The collection of rules like approval rule, expiration rule, etc.
 
+### [Remove-MgPolicyServicePrincipalCreationPolicy](Remove-MgPolicyServicePrincipalCreationPolicy.md)
+Delete navigation property servicePrincipalCreationPolicies for policies
+
+### [Remove-MgPolicyServicePrincipalCreationPolicyExclude](Remove-MgPolicyServicePrincipalCreationPolicyExclude.md)
+Delete navigation property excludes for policies
+
+### [Remove-MgPolicyServicePrincipalCreationPolicyInclude](Remove-MgPolicyServicePrincipalCreationPolicyInclude.md)
+Delete navigation property includes for policies
+
 ### [Remove-MgPolicyTokenIssuancePolicy](Remove-MgPolicyTokenIssuancePolicy.md)
-Delete navigation property tokenIssuancePolicies for policies
+The policy that specifies the characteristics of SAML tokens issued by Azure AD.
 
 ### [Remove-MgPolicyTokenLifetimePolicy](Remove-MgPolicyTokenLifetimePolicy.md)
-Delete navigation property tokenLifetimePolicies for policies
+The policy that controls the lifetime of a JWT access token, an ID token, or a SAML 1.1/2.0 token issued by Azure AD.
 
 ### [Remove-MgRiskDetection](Remove-MgRiskDetection.md)
 Delete entity from riskDetections
@@ -544,6 +667,9 @@ Delete navigation property passwordMethods for users
 ### [Remove-MgUserAuthenticationPhoneMethod](Remove-MgUserAuthenticationPhoneMethod.md)
 Delete navigation property phoneMethods for users
 
+### [Remove-MgUserAuthenticationSoftwareOathMethod](Remove-MgUserAuthenticationSoftwareOathMethod.md)
+Delete navigation property softwareOathMethods for users
+
 ### [Remove-MgUserAuthenticationTemporaryAccessPassMethod](Remove-MgUserAuthenticationTemporaryAccessPassMethod.md)
 Delete navigation property temporaryAccessPassMethods for users
 
@@ -577,11 +703,20 @@ Invoke action evaluateRemoval
 ### [Update-MgDataPolicyOperation](Update-MgDataPolicyOperation.md)
 Update entity in dataPolicyOperations
 
+### [Update-MgIdentityConditionalAccessAuthenticationContextClassReference](Update-MgIdentityConditionalAccessAuthenticationContextClassReference.md)
+Read-only.
+Nullable.
+Returns a collection of the specified authentication context class references.
+
 ### [Update-MgIdentityConditionalAccessNamedLocation](Update-MgIdentityConditionalAccessNamedLocation.md)
-Update the navigation property namedLocations in identity
+Read-only.
+Nullable.
+Returns a collection of the specified named locations.
 
 ### [Update-MgIdentityConditionalAccessPolicy](Update-MgIdentityConditionalAccessPolicy.md)
-Update the navigation property policies in identity
+Read-only.
+Nullable.
+Returns a collection of the specified Conditional Access (CA) policies.
 
 ### [Update-MgIdentityProvider](Update-MgIdentityProvider.md)
 Update entity in identityProviders
@@ -622,47 +757,62 @@ By default, a GET /threatAssessmentRequests/{id} does not return this property u
 Update entity in oauth2PermissionGrants
 
 ### [Update-MgPolicyAccessReviewPolicy](Update-MgPolicyAccessReviewPolicy.md)
-Update the navigation property accessReviewPolicy in policies
+The policy that contains directory-level access review settings.
 
 ### [Update-MgPolicyActivityBasedTimeoutPolicy](Update-MgPolicyActivityBasedTimeoutPolicy.md)
-Update the navigation property activityBasedTimeoutPolicies in policies
+The policy that controls the idle time out for web sessions for applications.
 
 ### [Update-MgPolicyAdminConsentRequestPolicy](Update-MgPolicyAdminConsentRequestPolicy.md)
-Update the navigation property adminConsentRequestPolicy in policies
+The policy by which consent requests are created and managed for the entire tenant.
+
+### [Update-MgPolicyAppManagementPolicy](Update-MgPolicyAppManagementPolicy.md)
+The policies that enforce app management restrictions for specific applications and service principals, overriding the defaultAppManagementPolicy.
 
 ### [Update-MgPolicyAuthenticationFlowPolicy](Update-MgPolicyAuthenticationFlowPolicy.md)
-Update the navigation property authenticationFlowsPolicy in policies
+The policy configuration of the self-service sign-up experience of external users.
 
 ### [Update-MgPolicyAuthenticationMethodPolicy](Update-MgPolicyAuthenticationMethodPolicy.md)
-Update the navigation property authenticationMethodsPolicy in policies
+The authentication methods and the users that are allowed to use them to sign in and perform multi-factor authentication (MFA) in Azure Active Directory (Azure AD).
 
 ### [Update-MgPolicyAuthorizationPolicy](Update-MgPolicyAuthorizationPolicy.md)
-Update the navigation property authorizationPolicy in policies
+The policy that controls Azure AD authorization settings.
 
 ### [Update-MgPolicyB2CAuthenticationMethodPolicy](Update-MgPolicyB2CAuthenticationMethodPolicy.md)
 Update the navigation property b2cAuthenticationMethodsPolicy in policies
 
 ### [Update-MgPolicyClaimMappingPolicy](Update-MgPolicyClaimMappingPolicy.md)
-Update the navigation property claimsMappingPolicies in policies
+The claim-mapping policies for WS-Fed, SAML, OAuth 2.0, and OpenID Connect protocols, for tokens issued to a specific application.
+
+### [Update-MgPolicyDefaultAppManagementPolicy](Update-MgPolicyDefaultAppManagementPolicy.md)
+The tenant-wide policy that enforces app management restrictions for all applications and service principals.
 
 ### [Update-MgPolicyDirectoryRoleAccessReviewPolicy](Update-MgPolicyDirectoryRoleAccessReviewPolicy.md)
 Update the navigation property directoryRoleAccessReviewPolicy in policies
 
+### [Update-MgPolicyExternalIdentityPolicy](Update-MgPolicyExternalIdentityPolicy.md)
+Update the navigation property externalIdentitiesPolicy in policies
+
 ### [Update-MgPolicyFeatureRolloutPolicy](Update-MgPolicyFeatureRolloutPolicy.md)
-Update the navigation property featureRolloutPolicies in policies
+The feature rollout policy associated with a directory object.
 
 ### [Update-MgPolicyFeatureRolloutPolicyApplyTo](Update-MgPolicyFeatureRolloutPolicyApplyTo.md)
 Nullable.
 Specifies a list of directoryObjects that feature is enabled for.
 
 ### [Update-MgPolicyHomeRealmDiscoveryPolicy](Update-MgPolicyHomeRealmDiscoveryPolicy.md)
-Update the navigation property homeRealmDiscoveryPolicies in policies
+The policy to control Azure AD authentication behavior for federated users.
 
 ### [Update-MgPolicyIdentitySecurityDefaultEnforcementPolicy](Update-MgPolicyIdentitySecurityDefaultEnforcementPolicy.md)
-Update the navigation property identitySecurityDefaultsEnforcementPolicy in policies
+The policy that represents the security defaults that protect against common attacks.
+
+### [Update-MgPolicyMobileAppManagementPolicy](Update-MgPolicyMobileAppManagementPolicy.md)
+The policy that defines auto-enrollment configuration for a mobility management (MDM or MAM) application.
+
+### [Update-MgPolicyMobileDeviceManagementPolicy](Update-MgPolicyMobileDeviceManagementPolicy.md)
+Update the navigation property mobileDeviceManagementPolicies in policies
 
 ### [Update-MgPolicyPermissionGrantPolicy](Update-MgPolicyPermissionGrantPolicy.md)
-Update the navigation property permissionGrantPolicies in policies
+The policy that specifies the conditions under which consent can be granted.
 
 ### [Update-MgPolicyPermissionGrantPolicyExclude](Update-MgPolicyPermissionGrantPolicyExclude.md)
 Condition sets which are excluded in this permission grant policy.
@@ -673,10 +823,10 @@ Condition sets which are included in this permission grant policy.
 Automatically expanded on GET.
 
 ### [Update-MgPolicyRoleManagementPolicy](Update-MgPolicyRoleManagementPolicy.md)
-Update the navigation property roleManagementPolicies in policies
+Represents the role management policies.
 
 ### [Update-MgPolicyRoleManagementPolicyAssignment](Update-MgPolicyRoleManagementPolicyAssignment.md)
-Update the navigation property roleManagementPolicyAssignments in policies
+Represents the role management policy assignments.
 
 ### [Update-MgPolicyRoleManagementPolicyEffectiveRule](Update-MgPolicyRoleManagementPolicyEffectiveRule.md)
 The list of effective rules like approval rule, expiration rule, etc.
@@ -687,11 +837,17 @@ If there is a tenant wide policy to enforce enabling approval rule, the effectiv
 ### [Update-MgPolicyRoleManagementPolicyRule](Update-MgPolicyRoleManagementPolicyRule.md)
 The collection of rules like approval rule, expiration rule, etc.
 
+### [Update-MgPolicyServicePrincipalCreationPolicyExclude](Update-MgPolicyServicePrincipalCreationPolicyExclude.md)
+Update the navigation property excludes in policies
+
+### [Update-MgPolicyServicePrincipalCreationPolicyInclude](Update-MgPolicyServicePrincipalCreationPolicyInclude.md)
+Update the navigation property includes in policies
+
 ### [Update-MgPolicyTokenIssuancePolicy](Update-MgPolicyTokenIssuancePolicy.md)
-Update the navigation property tokenIssuancePolicies in policies
+The policy that specifies the characteristics of SAML tokens issued by Azure AD.
 
 ### [Update-MgPolicyTokenLifetimePolicy](Update-MgPolicyTokenLifetimePolicy.md)
-Update the navigation property tokenLifetimePolicies in policies
+The policy that controls the lifetime of a JWT access token, an ID token, or a SAML 1.1/2.0 token issued by Azure AD.
 
 ### [Update-MgRiskDetection](Update-MgRiskDetection.md)
 Update entity in riskDetections
@@ -738,6 +894,9 @@ Update the navigation property device in users
 
 ### [Update-MgUserAuthenticationPhoneMethod](Update-MgUserAuthenticationPhoneMethod.md)
 Update the navigation property phoneMethods in users
+
+### [Update-MgUserAuthenticationSoftwareOathMethod](Update-MgUserAuthenticationSoftwareOathMethod.md)
+Update the navigation property softwareOathMethods in users
 
 ### [Update-MgUserAuthenticationTemporaryAccessPassMethod](Update-MgUserAuthenticationTemporaryAccessPassMethod.md)
 Update the navigation property temporaryAccessPassMethods in users
