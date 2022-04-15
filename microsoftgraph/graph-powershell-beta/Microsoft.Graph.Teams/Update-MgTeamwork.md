@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mgteamwork
 schema: 2.0.0
@@ -15,13 +15,13 @@ Update teamwork
 ### UpdateExpanded (Default)
 ```
 Update-MgTeamwork [-AdditionalProperties <Hashtable>] [-Devices <IMicrosoftGraphTeamworkDevice[]>]
- [-Id <String>] [-WorkforceIntegrations <IMicrosoftGraphWorkforceIntegration[]>] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-Id <String>] [-WorkforceIntegrations <IMicrosoftGraphWorkforceIntegration[]>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgTeamwork -BodyParameter <IMicrosoftGraphTeamwork> [-PassThru] [-Confirm] [-WhatIf]
+Update-MgTeamwork -BodyParameter <IMicrosoftGraphTeamwork> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -36,7 +36,7 @@ Update teamwork
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -52,7 +52,7 @@ teamwork
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamwork
+Type: IMicrosoftGraphTeamwork
 Parameter Sets: Update
 Aliases:
 
@@ -68,7 +68,7 @@ The Teams devices provisioned for the tenant.
 To construct, please use Get-Help -Online and see NOTES section for DEVICES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkDevice[]
+Type: IMicrosoftGraphTeamworkDevice[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -114,7 +114,7 @@ A workforce integration with shifts.
 To construct, please use Get-Help -Online and see NOTES section for WORKFORCEINTEGRATIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWorkforceIntegration[]
+Type: IMicrosoftGraphWorkforceIntegration[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -145,7 +145,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -162,11 +162,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamwork
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -643,3 +641,4 @@ WORKFORCEINTEGRATIONS <IMicrosoftGraphWorkforceIntegration[]>: A workforce integ
 
 ## RELATED LINKS
 
+## RELATED LINKS

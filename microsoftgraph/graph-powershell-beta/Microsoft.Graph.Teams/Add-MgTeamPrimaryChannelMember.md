@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/add-mgteamprimarychannelmember
 schema: 2.0.0
@@ -15,27 +15,27 @@ Invoke action add
 ### AddExpanded (Default)
 ```
 Add-MgTeamPrimaryChannelMember -TeamId <String> [-AdditionalProperties <Hashtable>]
- [-Values <IMicrosoftGraphConversationMember[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Values <IMicrosoftGraphConversationMember[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Add
 ```
 Add-MgTeamPrimaryChannelMember -TeamId <String>
  -BodyParameter <IPathsU53MjcTeamsTeamIdPrimarychannelMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### AddViaIdentityExpanded
+```
+Add-MgTeamPrimaryChannelMember -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Values <IMicrosoftGraphConversationMember[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AddViaIdentity
 ```
 Add-MgTeamPrimaryChannelMember -InputObject <ITeamsIdentity>
  -BodyParameter <IPathsU53MjcTeamsTeamIdPrimarychannelMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### AddViaIdentityExpanded
-```
-Add-MgTeamPrimaryChannelMember -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-Values <IMicrosoftGraphConversationMember[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,7 +49,7 @@ Invoke action add
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: AddExpanded, AddViaIdentityExpanded
 Aliases:
 
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPathsU53MjcTeamsTeamIdPrimarychannelMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema
+Type: IPathsU53MjcTeamsTeamIdPrimarychannelMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Add, AddViaIdentity
 Aliases:
 
@@ -81,8 +81,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-Parameter Sets: AddViaIdentity, AddViaIdentityExpanded
+Type: ITeamsIdentity
+Parameter Sets: AddViaIdentityExpanded, AddViaIdentity
 Aliases:
 
 Required: True
@@ -96,8 +96,8 @@ Accept wildcard characters: False
 key: id of team
 
 ```yaml
-Type: System.String
-Parameter Sets: Add, AddExpanded
+Type: String
+Parameter Sets: AddExpanded, Add
 Aliases:
 
 Required: True
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for VALUES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversationMember[]
+Type: IMicrosoftGraphConversationMember[]
 Parameter Sets: AddExpanded, AddViaIdentityExpanded
 Aliases:
 
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -143,7 +143,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -160,13 +160,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPathsU53MjcTeamsTeamIdPrimarychannelMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphActionResultPart
-
 ## NOTES
 
 ALIASES
@@ -229,4 +226,3 @@ VALUES <IMicrosoftGraphConversationMember[]>: .
   - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
 
 ## RELATED LINKS
-
