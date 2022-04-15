@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticmodelscore
 schema: 2.0.0
@@ -16,22 +16,15 @@ User experience analytics model scores
 ```
 Update-MgDeviceManagementUserExperienceAnalyticModelScore -UserExperienceAnalyticsModelScoresId <String>
  [-AdditionalProperties <Hashtable>] [-AppReliabilityScore <Double>] [-EndpointAnalyticsScore <Double>]
- [-HealthStatus <String>] [-Id <String>] [-Manufacturer <String>] [-Model <String>]
- [-ModelDeviceCount <Int64>] [-StartupPerformanceScore <Double>] [-WorkFromAnywhereScore <Double>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-HealthStatus <String>] [-Id <String>] [-Manufacturer <String>] [-Model <String>] [-ModelDeviceCount <Int64>]
+ [-StartupPerformanceScore <Double>] [-WorkFromAnywhereScore <Double>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementUserExperienceAnalyticModelScore -UserExperienceAnalyticsModelScoresId <String>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsModelScores> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgDeviceManagementUserExperienceAnalyticModelScore -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsModelScores> [-PassThru] [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsModelScores> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -39,9 +32,16 @@ Update-MgDeviceManagementUserExperienceAnalyticModelScore -InputObject <IDeviceM
 ```
 Update-MgDeviceManagementUserExperienceAnalyticModelScore -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-AppReliabilityScore <Double>] [-EndpointAnalyticsScore <Double>]
- [-HealthStatus <String>] [-Id <String>] [-Manufacturer <String>] [-Model <String>]
- [-ModelDeviceCount <Int64>] [-StartupPerformanceScore <Double>] [-WorkFromAnywhereScore <Double>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-HealthStatus <String>] [-Id <String>] [-Manufacturer <String>] [-Model <String>] [-ModelDeviceCount <Int64>]
+ [-StartupPerformanceScore <Double>] [-WorkFromAnywhereScore <Double>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgDeviceManagementUserExperienceAnalyticModelScore -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsModelScores> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -55,7 +55,7 @@ User experience analytics model scores
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -71,7 +71,7 @@ The user experience analytics model app reliability score.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ```yaml
-Type: System.Double
+Type: Double
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -87,7 +87,7 @@ The user experience analytics model scores entity consolidates the various endpo
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsModelScores
+Type: IMicrosoftGraphUserExperienceAnalyticsModelScores
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -103,7 +103,7 @@ The user experience analytics model score.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ```yaml
-Type: System.Double
+Type: Double
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 userExperienceAnalyticsHealthState
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -149,8 +149,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 A unique identifier of the user experience analytics model scores: device manufacturer.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 A unique identifier of the user experience analytics model scores: device model.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -195,7 +195,7 @@ The user experience analytics model device count.
 Valid values -9.22337203685478E+18 to 9.22337203685478E+18
 
 ```yaml
-Type: System.Int64
+Type: Int64
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -210,7 +210,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -226,7 +226,7 @@ The user experience analytics model startup performance score.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ```yaml
-Type: System.Double
+Type: Double
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -241,8 +241,8 @@ Accept wildcard characters: False
 key: id of userExperienceAnalyticsModelScores
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -257,7 +257,7 @@ The user experience analytics model work from anywhere score.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ```yaml
-Type: System.Double
+Type: Double
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -272,7 +272,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -288,7 +288,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -305,13 +305,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsModelScores
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -454,3 +451,4 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
+## RELATED LINKS

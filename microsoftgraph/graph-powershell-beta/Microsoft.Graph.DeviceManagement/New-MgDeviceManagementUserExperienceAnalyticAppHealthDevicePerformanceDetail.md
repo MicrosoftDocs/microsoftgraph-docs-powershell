@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticapphealthdeviceperformancedetail
 schema: 2.0.0
@@ -15,15 +15,15 @@ User experience analytics device performance details
 ### CreateExpanded (Default)
 ```
 New-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail
- [-AdditionalProperties <Hashtable>] [-AppDisplayName <String>] [-AppPublisher <String>]
- [-AppVersion <String>] [-DeviceDisplayName <String>] [-DeviceId <String>] [-EventDateTime <DateTime>]
- [-EventType <String>] [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-AppDisplayName <String>] [-AppPublisher <String>] [-AppVersion <String>]
+ [-DeviceDisplayName <String>] [-DeviceId <String>] [-EventDateTime <DateTime>] [-EventType <String>]
+ [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformanceDetails> [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformanceDetails> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -38,7 +38,7 @@ User experience analytics device performance details
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -53,7 +53,7 @@ Accept wildcard characters: False
 The friendly name of the application for which the event occurred.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 The publisher of the application.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 The version of the application.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -99,7 +99,7 @@ The user experience analytics device performance entity contains device performa
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformanceDetails
+Type: IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformanceDetails
 Parameter Sets: Create
 Aliases:
 
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 The name of the device.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 The id of the device.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 The time the event occurred.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 The type of the event.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -205,7 +205,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -222,11 +222,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformanceDetails
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformanceDetails
-
 ## NOTES
 
 ALIASES
@@ -248,4 +246,3 @@ BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformanceD
   - `[EventType <String>]`: The type of the event.
 
 ## RELATED LINKS
-

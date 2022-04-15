@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticbatteryhealthruntimedetail
 schema: 2.0.0
@@ -16,15 +16,15 @@ User Experience Analytics Battery Health Runtime Details
 ```
 Update-MgDeviceManagementUserExperienceAnalyticBatteryHealthRuntimeDetail [-ActiveDevices <Int32>]
  [-AdditionalProperties <Hashtable>] [-BatteryRuntimeFair <Int32>] [-BatteryRuntimeGood <Int32>]
- [-BatteryRuntimePoor <Int32>] [-Id <String>] [-LastRefreshedDateTime <DateTime>] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-BatteryRuntimePoor <Int32>] [-Id <String>] [-LastRefreshedDateTime <DateTime>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementUserExperienceAnalyticBatteryHealthRuntimeDetail
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthRuntimeDetails> [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthRuntimeDetails> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -39,7 +39,7 @@ Number of active devices within the tenant.
 Valid values -2147483648 to 2147483647
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -54,7 +54,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -70,7 +70,7 @@ Number of devices whose active runtime is greater than 3 hours but lesser than 5
 Valid values -2147483648 to 2147483647
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -86,7 +86,7 @@ Number of devices whose active runtime is greater than 5 hours.
 Valid values -2147483648 to 2147483647
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -102,7 +102,7 @@ Number of devices whose active runtime is lesser than 3 hours.
 Valid values -2147483648 to 2147483647
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -118,7 +118,7 @@ The user experience analytics battery health runtime entity contains count of de
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthRuntimeDetails
+Type: IMicrosoftGraphUserExperienceAnalyticsBatteryHealthRuntimeDetails
 Parameter Sets: Update
 Aliases:
 
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 Recorded date time of this runtime details instance.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -194,7 +194,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -211,11 +211,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthRuntimeDetails
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -235,4 +233,3 @@ BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthRuntimeDetails
   - `[LastRefreshedDateTime <DateTime?>]`: Recorded date time of this runtime details instance.
 
 ## RELATED LINKS
-
