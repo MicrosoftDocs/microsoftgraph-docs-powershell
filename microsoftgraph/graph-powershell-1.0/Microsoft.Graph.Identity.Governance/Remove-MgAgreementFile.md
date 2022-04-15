@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/remove-mgagreementfile
@@ -16,8 +16,8 @@ Use the  file property instead.
 
 ### Delete2 (Default)
 ```
-Remove-MgAgreementFile -AgreementFileLocalizationId <String> -AgreementId <String> [-IfMatch <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgAgreementFile -AgreementId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity2
@@ -34,21 +34,6 @@ Use the  file property instead.
 ## EXAMPLES
 
 ## PARAMETERS
-
-### -AgreementFileLocalizationId
-key: id of agreementFileLocalization
-
-```yaml
-Type: String
-Parameter Sets: Delete2
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -AgreementId
 key: id of agreement
