@@ -17,7 +17,7 @@ Update print
 Update-MgPrint [-AdditionalProperties <Hashtable>] [-Connectors <IMicrosoftGraphPrintConnector[]>]
  [-Operations <IMicrosoftGraphPrintOperation[]>] [-Printers <IMicrosoftGraphPrinter[]>]
  [-Services <IMicrosoftGraphPrintService[]>] [-Settings <IMicrosoftGraphPrintSettings>]
- [-Shares <IMicrosoftGraphPrinterShare[]>] [-TaskDefinitions <IMicrosoftGraphPrintTaskDefinition[]>]
+ [-Shares <IMicrosoftGraphPrinterShare1[]>] [-TaskDefinitions <IMicrosoftGraphPrintTaskDefinition[]>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -164,7 +164,7 @@ The list of printer shares registered in the tenant.
 To construct, please use Get-Help -Online and see NOTES section for SHARES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrinterShare[]
+Type: IMicrosoftGraphPrinterShare1[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -8330,6 +8330,9 @@ TASKDEFINITIONS <IMicrosoftGraphPrintTaskDefinition[]>: List of abstract definit
       - `[Event <String>]`: printEvent
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS
 
