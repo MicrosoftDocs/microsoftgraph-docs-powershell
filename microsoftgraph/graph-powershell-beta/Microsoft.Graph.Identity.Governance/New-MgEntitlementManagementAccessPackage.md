@@ -16,7 +16,7 @@ Represents access package objects.
 ```
 New-MgEntitlementManagementAccessPackage
  [-AccessPackageAssignmentPolicies <IMicrosoftGraphAccessPackageAssignmentPolicy[]>]
- [-AccessPackageCatalog <IMicrosoftGraphAccessPackageCatalog1>]
+ [-AccessPackageCatalog <IMicrosoftGraphAccessPackageCatalog>]
  [-AccessPackageResourceRoleScopes <IMicrosoftGraphAccessPackageResourceRoleScope[]>]
  [-AccessPackagesIncompatibleWith <IMicrosoftGraphAccessPackage[]>] [-AdditionalProperties <Hashtable>]
  [-CatalogId <String>] [-CreatedBy <String>] [-CreatedDateTime <DateTime>] [-Description <String>]
@@ -88,7 +88,7 @@ accessPackageCatalog
 To construct, please use Get-Help -Online and see NOTES section for ACCESSPACKAGECATALOG properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageCatalog1
+Type: IMicrosoftGraphAccessPackageCatalog
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -24413,6 +24413,9 @@ INCOMPATIBLEGROUPS <IMicrosoftGraphGroup[]>: The groups whose members are inelig
   - `[Visibility <String>]`: Specifies the group join policy and group content visibility for groups. Possible values are: Private, Public, or Hiddenmembership. Hiddenmembership can be set only for Microsoft 365 groups, when the groups are created. It can't be updated later. Other values of visibility can be updated after group creation. If visibility value is not specified during group creation on Microsoft Graph, a security group is created as Private by default and Microsoft 365 group is Public.  Groups assignable to roles are always Private. See group visibility options to learn more. Returned by default. Nullable.
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS
 
