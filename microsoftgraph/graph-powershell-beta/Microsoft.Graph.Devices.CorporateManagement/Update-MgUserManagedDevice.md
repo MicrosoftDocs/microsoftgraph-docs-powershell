@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgusermanageddevice
@@ -13743,5 +13743,8 @@ WINDOWSPROTECTIONSTATE <IMicrosoftGraphWindowsProtectionState>: Device protectio
   - `[TamperProtectionEnabled <Boolean?>]`: Indicates whether the Windows Defender tamper protection feature is enabled.
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS
