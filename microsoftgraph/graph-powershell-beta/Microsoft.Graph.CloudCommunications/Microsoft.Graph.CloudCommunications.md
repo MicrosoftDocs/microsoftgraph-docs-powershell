@@ -11,8 +11,14 @@ Locale: en-US
 Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.CloudCommunications Cmdlets
+### [Add-MgCommunicationCallLargeGalleryView](Add-MgCommunicationCallLargeGalleryView.md)
+Invoke action addLargeGalleryView
+
 ### [Clear-MgCommunicationPresence](Clear-MgCommunicationPresence.md)
 Invoke action clearPresence
+
+### [Clear-MgCommunicationPresenceUserPreferredPresence](Clear-MgCommunicationPresenceUserPreferredPresence.md)
+Invoke action clearUserPreferredPresence
 
 ### [Get-MgCommunicationCall](Get-MgCommunicationCall.md)
 Get calls from communications
@@ -20,6 +26,9 @@ Get calls from communications
 ### [Get-MgCommunicationCallAudioRoutingGroup](Get-MgCommunicationCallAudioRoutingGroup.md)
 Read-only.
 Nullable.
+
+### [Get-MgCommunicationCallContentSharingSession](Get-MgCommunicationCallContentSharingSession.md)
+Get contentSharingSessions from communications
 
 ### [Get-MgCommunicationCallOperation](Get-MgCommunicationCallOperation.md)
 Read-only.
@@ -41,6 +50,9 @@ Nullable.
 ### [Get-MgCommunicationOnlineMeeting](Get-MgCommunicationOnlineMeeting.md)
 Get onlineMeetings from communications
 
+### [Get-MgCommunicationOnlineMeetingAlternativeRecording](Get-MgCommunicationOnlineMeetingAlternativeRecording.md)
+Get media content for the navigation property onlineMeetings from communications
+
 ### [Get-MgCommunicationOnlineMeetingAttendanceReport](Get-MgCommunicationOnlineMeetingAttendanceReport.md)
 The attendance reports of an online meeting.
 Read-only.
@@ -52,11 +64,24 @@ Read-only.
 ### [Get-MgCommunicationOnlineMeetingAttendeeReport](Get-MgCommunicationOnlineMeetingAttendeeReport.md)
 Get media content for the navigation property onlineMeetings from communications
 
+### [Get-MgCommunicationOnlineMeetingRecording](Get-MgCommunicationOnlineMeetingRecording.md)
+Get media content for the navigation property onlineMeetings from communications
+
+### [Get-MgCommunicationOnlineMeetingRegistration](Get-MgCommunicationOnlineMeetingRegistration.md)
+The registration that has been enabled for an online meeting.
+One online meeting can only have one registration enabled.
+
+### [Get-MgCommunicationOnlineMeetingRegistrationCustomQuestion](Get-MgCommunicationOnlineMeetingRegistrationCustomQuestion.md)
+Custom registration questions.
+
 ### [Get-MgCommunicationPresence](Get-MgCommunicationPresence.md)
 Invoke action getPresencesByUserId
 
 ### [Get-MgUserOnlineMeeting](Get-MgUserOnlineMeeting.md)
 Get onlineMeetings from users
+
+### [Get-MgUserOnlineMeetingAlternativeRecording](Get-MgUserOnlineMeetingAlternativeRecording.md)
+Get media content for the navigation property onlineMeetings from users
 
 ### [Get-MgUserOnlineMeetingAttendanceReport](Get-MgUserOnlineMeetingAttendanceReport.md)
 The attendance reports of an online meeting.
@@ -68,6 +93,16 @@ Read-only.
 
 ### [Get-MgUserOnlineMeetingAttendeeReport](Get-MgUserOnlineMeetingAttendeeReport.md)
 Get media content for the navigation property onlineMeetings from users
+
+### [Get-MgUserOnlineMeetingRecording](Get-MgUserOnlineMeetingRecording.md)
+Get media content for the navigation property onlineMeetings from users
+
+### [Get-MgUserOnlineMeetingRegistration](Get-MgUserOnlineMeetingRegistration.md)
+The registration that has been enabled for an online meeting.
+One online meeting can only have one registration enabled.
+
+### [Get-MgUserOnlineMeetingRegistrationCustomQuestion](Get-MgUserOnlineMeetingRegistrationCustomQuestion.md)
+Custom registration questions.
 
 ### [Get-MgUserPresence](Get-MgUserPresence.md)
 Get presence from users
@@ -87,6 +122,9 @@ Invoke action keepAlive
 ### [Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality](Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality.md)
 Invoke action logTeleconferenceDeviceQuality
 
+### [Invoke-MgMuteAllCommunicationCallParticipant](Invoke-MgMuteAllCommunicationCallParticipant.md)
+Invoke action mute
+
 ### [Invoke-MgMuteCommunicationCall](Invoke-MgMuteCommunicationCall.md)
 Invoke action mute
 
@@ -95,6 +133,9 @@ Invoke action muteAll
 
 ### [Invoke-MgPlayCommunicationCallPrompt](Invoke-MgPlayCommunicationCallPrompt.md)
 Invoke action playPrompt
+
+### [Invoke-MgRecordCommunicationCall](Invoke-MgRecordCommunicationCall.md)
+Invoke action record
 
 ### [Invoke-MgRecordCommunicationCallResponse](Invoke-MgRecordCommunicationCallResponse.md)
 Invoke action recordResponse
@@ -121,6 +162,9 @@ Create new navigation property to calls for communications
 Read-only.
 Nullable.
 
+### [New-MgCommunicationCallContentSharingSession](New-MgCommunicationCallContentSharingSession.md)
+Create new navigation property to contentSharingSessions for communications
+
 ### [New-MgCommunicationCallOperation](New-MgCommunicationCallOperation.md)
 Read-only.
 Nullable.
@@ -146,6 +190,9 @@ Read-only.
 List of attendance records of an attendance report.
 Read-only.
 
+### [New-MgCommunicationOnlineMeetingRegistrationCustomQuestion](New-MgCommunicationOnlineMeetingRegistrationCustomQuestion.md)
+Custom registration questions.
+
 ### [New-MgCommunicationPresence](New-MgCommunicationPresence.md)
 Create new navigation property to presences for communications
 
@@ -160,12 +207,18 @@ Read-only.
 List of attendance records of an attendance report.
 Read-only.
 
+### [New-MgUserOnlineMeetingRegistrationCustomQuestion](New-MgUserOnlineMeetingRegistrationCustomQuestion.md)
+Custom registration questions.
+
 ### [Remove-MgCommunicationCall](Remove-MgCommunicationCall.md)
 Delete navigation property calls for communications
 
 ### [Remove-MgCommunicationCallAudioRoutingGroup](Remove-MgCommunicationCallAudioRoutingGroup.md)
 Read-only.
 Nullable.
+
+### [Remove-MgCommunicationCallContentSharingSession](Remove-MgCommunicationCallContentSharingSession.md)
+Delete navigation property contentSharingSessions for communications
 
 ### [Remove-MgCommunicationCallOperation](Remove-MgCommunicationCallOperation.md)
 Read-only.
@@ -192,6 +245,13 @@ Read-only.
 List of attendance records of an attendance report.
 Read-only.
 
+### [Remove-MgCommunicationOnlineMeetingRegistration](Remove-MgCommunicationOnlineMeetingRegistration.md)
+The registration that has been enabled for an online meeting.
+One online meeting can only have one registration enabled.
+
+### [Remove-MgCommunicationOnlineMeetingRegistrationCustomQuestion](Remove-MgCommunicationOnlineMeetingRegistrationCustomQuestion.md)
+Custom registration questions.
+
 ### [Remove-MgCommunicationPresence](Remove-MgCommunicationPresence.md)
 Delete navigation property presences for communications
 
@@ -206,19 +266,41 @@ Read-only.
 List of attendance records of an attendance report.
 Read-only.
 
+### [Remove-MgUserOnlineMeetingRegistration](Remove-MgUserOnlineMeetingRegistration.md)
+The registration that has been enabled for an online meeting.
+One online meeting can only have one registration enabled.
+
+### [Remove-MgUserOnlineMeetingRegistrationCustomQuestion](Remove-MgUserOnlineMeetingRegistrationCustomQuestion.md)
+Custom registration questions.
+
 ### [Remove-MgUserPresence](Remove-MgUserPresence.md)
 Delete navigation property presence for users
 
 ### [Rename-MgCommunicationCallScreenSharingRole](Rename-MgCommunicationCallScreenSharingRole.md)
 Invoke action changeScreenSharingRole
 
+### [Set-MgCommunicationOnlineMeetingAlternativeRecording](Set-MgCommunicationOnlineMeetingAlternativeRecording.md)
+Update media content for the navigation property onlineMeetings in communications
+
 ### [Set-MgCommunicationOnlineMeetingAttendeeReport](Set-MgCommunicationOnlineMeetingAttendeeReport.md)
+Update media content for the navigation property onlineMeetings in communications
+
+### [Set-MgCommunicationOnlineMeetingRecording](Set-MgCommunicationOnlineMeetingRecording.md)
 Update media content for the navigation property onlineMeetings in communications
 
 ### [Set-MgCommunicationPresence](Set-MgCommunicationPresence.md)
 Invoke action setPresence
 
+### [Set-MgCommunicationPresenceUserPreferredPresence](Set-MgCommunicationPresenceUserPreferredPresence.md)
+Invoke action setUserPreferredPresence
+
+### [Set-MgUserOnlineMeetingAlternativeRecording](Set-MgUserOnlineMeetingAlternativeRecording.md)
+Update media content for the navigation property onlineMeetings in users
+
 ### [Set-MgUserOnlineMeetingAttendeeReport](Set-MgUserOnlineMeetingAttendeeReport.md)
+Update media content for the navigation property onlineMeetings in users
+
+### [Set-MgUserOnlineMeetingRecording](Set-MgUserOnlineMeetingRecording.md)
 Update media content for the navigation property onlineMeetings in users
 
 ### [Start-MgCommunicationCallParticipantHoldMusic](Start-MgCommunicationCallParticipantHoldMusic.md)
@@ -233,6 +315,9 @@ Invoke action stopHoldMusic
 ### [Update-MgCommunicationCallAudioRoutingGroup](Update-MgCommunicationCallAudioRoutingGroup.md)
 Read-only.
 Nullable.
+
+### [Update-MgCommunicationCallContentSharingSession](Update-MgCommunicationCallContentSharingSession.md)
+Update the navigation property contentSharingSessions in communications
 
 ### [Update-MgCommunicationCallOperation](Update-MgCommunicationCallOperation.md)
 Read-only.
@@ -262,6 +347,13 @@ Read-only.
 List of attendance records of an attendance report.
 Read-only.
 
+### [Update-MgCommunicationOnlineMeetingRegistration](Update-MgCommunicationOnlineMeetingRegistration.md)
+The registration that has been enabled for an online meeting.
+One online meeting can only have one registration enabled.
+
+### [Update-MgCommunicationOnlineMeetingRegistrationCustomQuestion](Update-MgCommunicationOnlineMeetingRegistrationCustomQuestion.md)
+Custom registration questions.
+
 ### [Update-MgCommunicationPresence](Update-MgCommunicationPresence.md)
 Update the navigation property presences in communications
 
@@ -275,6 +367,13 @@ Read-only.
 ### [Update-MgUserOnlineMeetingAttendanceReportAttendanceRecord](Update-MgUserOnlineMeetingAttendanceReportAttendanceRecord.md)
 List of attendance records of an attendance report.
 Read-only.
+
+### [Update-MgUserOnlineMeetingRegistration](Update-MgUserOnlineMeetingRegistration.md)
+The registration that has been enabled for an online meeting.
+One online meeting can only have one registration enabled.
+
+### [Update-MgUserOnlineMeetingRegistrationCustomQuestion](Update-MgUserOnlineMeetingRegistrationCustomQuestion.md)
+Custom registration questions.
 
 ### [Update-MgUserPresence](Update-MgUserPresence.md)
 Update the navigation property presence in users
