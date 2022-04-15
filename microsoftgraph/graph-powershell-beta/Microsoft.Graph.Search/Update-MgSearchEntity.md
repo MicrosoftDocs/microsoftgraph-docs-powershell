@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Search-help.xml
+external help file:
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/update-mgsearchentity
 schema: 2.0.0
@@ -15,13 +15,13 @@ Update search
 ### UpdateExpanded1 (Default)
 ```
 Update-MgSearchEntity [-Acronyms <IMicrosoftGraphSearchAcronym[]>] [-AdditionalProperties <Hashtable>]
- [-Bookmarks <IMicrosoftGraphSearchBookmark[]>] [-Id <String>] [-Qnas <IMicrosoftGraphSearchQna[]>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Bookmarks <IMicrosoftGraphSearchBookmark[]>] [-Id <String>] [-Qnas <IMicrosoftGraphSearchQna[]>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update1
 ```
-Update-MgSearchEntity -BodyParameter <IMicrosoftGraphSearchEntity1> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgSearchEntity -BodyParameter <IMicrosoftGraphSearchEntity1> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -33,11 +33,11 @@ Update search
 ## PARAMETERS
 
 ### -Acronyms
-.
+Administrative answer in Microsoft Search results to define common acronyms in a organization.
 To construct, please use Get-Help -Online and see NOTES section for ACRONYMS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSearchAcronym[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchAcronym[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -52,7 +52,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -68,7 +68,7 @@ searchEntity
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSearchEntity1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchEntity1
 Parameter Sets: Update1
 Aliases:
 
@@ -80,11 +80,11 @@ Accept wildcard characters: False
 ```
 
 ### -Bookmarks
-.
+Administrative answer in Microsoft Search results for common search queries in an organization.
 To construct, please use Get-Help -Online and see NOTES section for BOOKMARKS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSearchBookmark[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchBookmark[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -126,11 +126,11 @@ Accept wildcard characters: False
 ```
 
 ### -Qnas
-.
+Administrative answer in Microsoft Search results which provide answers for specific search keywords in an organization.
 To construct, please use Get-Help -Online and see NOTES section for QNAS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSearchQna[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchQna[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -161,7 +161,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -178,9 +178,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchEntity1
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -190,9 +192,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACRONYMS <IMicrosoftGraphSearchAcronym[]>: .
-  - `[Description <String>]`: 
-  - `[DisplayName <String>]`: 
+ACRONYMS <IMicrosoftGraphSearchAcronym[]>: Administrative answer in Microsoft Search results to define common acronyms in a organization.
+  - `[Description <String>]`: Search answer description shown on search results page.
+  - `[DisplayName <String>]`: Search answer name displayed in search results.
   - `[LastModifiedBy <IMicrosoftGraphSearchIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphSearchIdentity>]`: identity
@@ -201,18 +203,18 @@ ACRONYMS <IMicrosoftGraphSearchAcronym[]>: .
       - `[Id <String>]`: 
     - `[Device <IMicrosoftGraphSearchIdentity>]`: identity
     - `[User <IMicrosoftGraphSearchIdentity>]`: identity
-  - `[LastModifiedDateTime <DateTime?>]`: 
-  - `[WebUrl <String>]`: 
+  - `[LastModifiedDateTime <DateTime?>]`: Timestamp of when the search answer is created or edited. Read-only.
+  - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they will go to this URL.
   - `[Id <String>]`: Read-only.
-  - `[StandsFor <String>]`: 
+  - `[StandsFor <String>]`: What the acronym stands for.
   - `[State <String>]`: answerState
 
 BODYPARAMETER <IMicrosoftGraphSearchEntity1>: searchEntity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
-  - `[Acronyms <IMicrosoftGraphSearchAcronym[]>]`: 
-    - `[Description <String>]`: 
-    - `[DisplayName <String>]`: 
+  - `[Acronyms <IMicrosoftGraphSearchAcronym[]>]`: Administrative answer in Microsoft Search results to define common acronyms in a organization.
+    - `[Description <String>]`: Search answer description shown on search results page.
+    - `[DisplayName <String>]`: Search answer name displayed in search results.
     - `[LastModifiedBy <IMicrosoftGraphSearchIdentitySet>]`: identitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphSearchIdentity>]`: identity
@@ -221,58 +223,58 @@ BODYPARAMETER <IMicrosoftGraphSearchEntity1>: searchEntity
         - `[Id <String>]`: 
       - `[Device <IMicrosoftGraphSearchIdentity>]`: identity
       - `[User <IMicrosoftGraphSearchIdentity>]`: identity
-    - `[LastModifiedDateTime <DateTime?>]`: 
-    - `[WebUrl <String>]`: 
+    - `[LastModifiedDateTime <DateTime?>]`: Timestamp of when the search answer is created or edited. Read-only.
+    - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they will go to this URL.
     - `[Id <String>]`: Read-only.
-    - `[StandsFor <String>]`: 
+    - `[StandsFor <String>]`: What the acronym stands for.
     - `[State <String>]`: answerState
-  - `[Bookmarks <IMicrosoftGraphSearchBookmark[]>]`: 
-    - `[Description <String>]`: 
-    - `[DisplayName <String>]`: 
+  - `[Bookmarks <IMicrosoftGraphSearchBookmark[]>]`: Administrative answer in Microsoft Search results for common search queries in an organization.
+    - `[Description <String>]`: Search answer description shown on search results page.
+    - `[DisplayName <String>]`: Search answer name displayed in search results.
     - `[LastModifiedBy <IMicrosoftGraphSearchIdentitySet>]`: identitySet
-    - `[LastModifiedDateTime <DateTime?>]`: 
-    - `[WebUrl <String>]`: 
+    - `[LastModifiedDateTime <DateTime?>]`: Timestamp of when the search answer is created or edited. Read-only.
+    - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they will go to this URL.
     - `[Id <String>]`: Read-only.
-    - `[AvailabilityEndDateTime <DateTime?>]`: 
-    - `[AvailabilityStartDateTime <DateTime?>]`: 
-    - `[Categories <String[]>]`: 
-    - `[GroupIds <String[]>]`: 
-    - `[IsSuggested <Boolean?>]`: 
+    - `[AvailabilityEndDateTime <DateTime?>]`: Timestamp of when the bookmark will stop to appear as a search result. Set as null for always available.
+    - `[AvailabilityStartDateTime <DateTime?>]`: Timestamp of when the bookmark will start to appear as a search result. Set as null for always available.
+    - `[Categories <String[]>]`: Categories commonly used to describe this bookmark. For example, IT and HR.
+    - `[GroupIds <String[]>]`: List of security groups able to view this bookmark.
+    - `[IsSuggested <Boolean?>]`: True if this bookmark was suggested to the admin by a user or was mined and suggested by Microsoft. Read-only.
     - `[Keywords <IMicrosoftGraphSearchAnswerKeyword>]`: answerKeyword
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Keywords <String[]>]`: 
-      - `[MatchSimilarKeywords <Boolean?>]`: 
-      - `[ReservedKeywords <String[]>]`: 
-    - `[LanguageTags <String[]>]`: 
-    - `[Platforms <String[]>]`: 
-    - `[PowerAppIds <String[]>]`: 
+      - `[Keywords <String[]>]`: A collection of keywords used to trigger the search answer.
+      - `[MatchSimilarKeywords <Boolean?>]`: If true, indicates that the search term contains similar words to the keywords that should trigger the search answer.
+      - `[ReservedKeywords <String[]>]`: Unique keywords that will guarantee the search answer is triggered.
+    - `[LanguageTags <String[]>]`: A list of language names that are geographically specific and that this bookmark can be viewed in. Each language tag value follows the pattern {language}-{REGION}. As an example, en-US is English as used in the United States. See supported language tags for the list of possible values.
+    - `[Platforms <String[]>]`: List of devices and operating systems able to view this bookmark. Possible values are: unknown, android, androidForWork, ios, macOS, windowsPhone81, windowsPhone81AndLater, windows10AndLater, androidWorkProfile, androidASOP.
+    - `[PowerAppIds <String[]>]`: List of Power Apps associated with this bookmark. If users add existing Power Apps to a bookmark, they can complete tasks, such as to enter vacation time or to report expenses on the search results page.
     - `[State <String>]`: answerState
-    - `[TargetedVariations <IMicrosoftGraphSearchAnswerVariant[]>]`: 
-      - `[Description <String>]`: 
-      - `[DisplayName <String>]`: 
+    - `[TargetedVariations <IMicrosoftGraphSearchAnswerVariant[]>]`: Variations of a bookmark for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings will apply to all variations.
+      - `[Description <String>]`: Answer variation description shown on search results page.
+      - `[DisplayName <String>]`: Answer variation name displayed in search results.
       - `[LanguageTag <String>]`: 
       - `[Platform <String>]`: Supported platform types.
-      - `[WebUrl <String>]`: 
-  - `[Qnas <IMicrosoftGraphSearchQna[]>]`: 
-    - `[Description <String>]`: 
-    - `[DisplayName <String>]`: 
+      - `[WebUrl <String>]`: Answer variation URL link. When users click this answer variation in search results, they will go to this URL.
+  - `[Qnas <IMicrosoftGraphSearchQna[]>]`: Administrative answer in Microsoft Search results which provide answers for specific search keywords in an organization.
+    - `[Description <String>]`: Search answer description shown on search results page.
+    - `[DisplayName <String>]`: Search answer name displayed in search results.
     - `[LastModifiedBy <IMicrosoftGraphSearchIdentitySet>]`: identitySet
-    - `[LastModifiedDateTime <DateTime?>]`: 
-    - `[WebUrl <String>]`: 
+    - `[LastModifiedDateTime <DateTime?>]`: Timestamp of when the search answer is created or edited. Read-only.
+    - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they will go to this URL.
     - `[Id <String>]`: Read-only.
-    - `[AvailabilityEndDateTime <DateTime?>]`: 
-    - `[AvailabilityStartDateTime <DateTime?>]`: 
-    - `[GroupIds <String[]>]`: 
-    - `[IsSuggested <Boolean?>]`: 
+    - `[AvailabilityEndDateTime <DateTime?>]`: Timestamp of when the qna will stop to appear as a search result. Set as null for always available.
+    - `[AvailabilityStartDateTime <DateTime?>]`: Timestamp of when the qna will start to appear as a search result. Set as null for always available.
+    - `[GroupIds <String[]>]`: List of security groups able to view this qna.
+    - `[IsSuggested <Boolean?>]`: True if this qna was suggested to the admin by a user or was mined and suggested by Microsoft. Read-only.
     - `[Keywords <IMicrosoftGraphSearchAnswerKeyword>]`: answerKeyword
-    - `[LanguageTags <String[]>]`: 
-    - `[Platforms <String[]>]`: 
+    - `[LanguageTags <String[]>]`: A list of language names that are geographically specific and that this QnA can be viewed in. Each language tag value follows the pattern {language}-{REGION}. As an example, en-US is English as used in the United States. See supported language tags for the list of possible values.
+    - `[Platforms <String[]>]`: List of devices and operating systems able to view this qna. Possible values are: unknown, android, androidForWork, ios, macOS, windowsPhone81, windowsPhone81AndLater, windows10AndLater, androidWorkProfile, androidASOP.
     - `[State <String>]`: answerState
-    - `[TargetedVariations <IMicrosoftGraphSearchAnswerVariant[]>]`: 
+    - `[TargetedVariations <IMicrosoftGraphSearchAnswerVariant[]>]`: Variations of a qna for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings will apply to all variations.
 
-BOOKMARKS <IMicrosoftGraphSearchBookmark[]>: .
-  - `[Description <String>]`: 
-  - `[DisplayName <String>]`: 
+BOOKMARKS <IMicrosoftGraphSearchBookmark[]>: Administrative answer in Microsoft Search results for common search queries in an organization.
+  - `[Description <String>]`: Search answer description shown on search results page.
+  - `[DisplayName <String>]`: Search answer name displayed in search results.
   - `[LastModifiedBy <IMicrosoftGraphSearchIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphSearchIdentity>]`: identity
@@ -281,33 +283,33 @@ BOOKMARKS <IMicrosoftGraphSearchBookmark[]>: .
       - `[Id <String>]`: 
     - `[Device <IMicrosoftGraphSearchIdentity>]`: identity
     - `[User <IMicrosoftGraphSearchIdentity>]`: identity
-  - `[LastModifiedDateTime <DateTime?>]`: 
-  - `[WebUrl <String>]`: 
+  - `[LastModifiedDateTime <DateTime?>]`: Timestamp of when the search answer is created or edited. Read-only.
+  - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they will go to this URL.
   - `[Id <String>]`: Read-only.
-  - `[AvailabilityEndDateTime <DateTime?>]`: 
-  - `[AvailabilityStartDateTime <DateTime?>]`: 
-  - `[Categories <String[]>]`: 
-  - `[GroupIds <String[]>]`: 
-  - `[IsSuggested <Boolean?>]`: 
+  - `[AvailabilityEndDateTime <DateTime?>]`: Timestamp of when the bookmark will stop to appear as a search result. Set as null for always available.
+  - `[AvailabilityStartDateTime <DateTime?>]`: Timestamp of when the bookmark will start to appear as a search result. Set as null for always available.
+  - `[Categories <String[]>]`: Categories commonly used to describe this bookmark. For example, IT and HR.
+  - `[GroupIds <String[]>]`: List of security groups able to view this bookmark.
+  - `[IsSuggested <Boolean?>]`: True if this bookmark was suggested to the admin by a user or was mined and suggested by Microsoft. Read-only.
   - `[Keywords <IMicrosoftGraphSearchAnswerKeyword>]`: answerKeyword
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Keywords <String[]>]`: 
-    - `[MatchSimilarKeywords <Boolean?>]`: 
-    - `[ReservedKeywords <String[]>]`: 
-  - `[LanguageTags <String[]>]`: 
-  - `[Platforms <String[]>]`: 
-  - `[PowerAppIds <String[]>]`: 
+    - `[Keywords <String[]>]`: A collection of keywords used to trigger the search answer.
+    - `[MatchSimilarKeywords <Boolean?>]`: If true, indicates that the search term contains similar words to the keywords that should trigger the search answer.
+    - `[ReservedKeywords <String[]>]`: Unique keywords that will guarantee the search answer is triggered.
+  - `[LanguageTags <String[]>]`: A list of language names that are geographically specific and that this bookmark can be viewed in. Each language tag value follows the pattern {language}-{REGION}. As an example, en-US is English as used in the United States. See supported language tags for the list of possible values.
+  - `[Platforms <String[]>]`: List of devices and operating systems able to view this bookmark. Possible values are: unknown, android, androidForWork, ios, macOS, windowsPhone81, windowsPhone81AndLater, windows10AndLater, androidWorkProfile, androidASOP.
+  - `[PowerAppIds <String[]>]`: List of Power Apps associated with this bookmark. If users add existing Power Apps to a bookmark, they can complete tasks, such as to enter vacation time or to report expenses on the search results page.
   - `[State <String>]`: answerState
-  - `[TargetedVariations <IMicrosoftGraphSearchAnswerVariant[]>]`: 
-    - `[Description <String>]`: 
-    - `[DisplayName <String>]`: 
+  - `[TargetedVariations <IMicrosoftGraphSearchAnswerVariant[]>]`: Variations of a bookmark for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings will apply to all variations.
+    - `[Description <String>]`: Answer variation description shown on search results page.
+    - `[DisplayName <String>]`: Answer variation name displayed in search results.
     - `[LanguageTag <String>]`: 
     - `[Platform <String>]`: Supported platform types.
-    - `[WebUrl <String>]`: 
+    - `[WebUrl <String>]`: Answer variation URL link. When users click this answer variation in search results, they will go to this URL.
 
-QNAS <IMicrosoftGraphSearchQna[]>: .
-  - `[Description <String>]`: 
-  - `[DisplayName <String>]`: 
+QNAS <IMicrosoftGraphSearchQna[]>: Administrative answer in Microsoft Search results which provide answers for specific search keywords in an organization.
+  - `[Description <String>]`: Search answer description shown on search results page.
+  - `[DisplayName <String>]`: Search answer name displayed in search results.
   - `[LastModifiedBy <IMicrosoftGraphSearchIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphSearchIdentity>]`: identity
@@ -316,26 +318,27 @@ QNAS <IMicrosoftGraphSearchQna[]>: .
       - `[Id <String>]`: 
     - `[Device <IMicrosoftGraphSearchIdentity>]`: identity
     - `[User <IMicrosoftGraphSearchIdentity>]`: identity
-  - `[LastModifiedDateTime <DateTime?>]`: 
-  - `[WebUrl <String>]`: 
+  - `[LastModifiedDateTime <DateTime?>]`: Timestamp of when the search answer is created or edited. Read-only.
+  - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they will go to this URL.
   - `[Id <String>]`: Read-only.
-  - `[AvailabilityEndDateTime <DateTime?>]`: 
-  - `[AvailabilityStartDateTime <DateTime?>]`: 
-  - `[GroupIds <String[]>]`: 
-  - `[IsSuggested <Boolean?>]`: 
+  - `[AvailabilityEndDateTime <DateTime?>]`: Timestamp of when the qna will stop to appear as a search result. Set as null for always available.
+  - `[AvailabilityStartDateTime <DateTime?>]`: Timestamp of when the qna will start to appear as a search result. Set as null for always available.
+  - `[GroupIds <String[]>]`: List of security groups able to view this qna.
+  - `[IsSuggested <Boolean?>]`: True if this qna was suggested to the admin by a user or was mined and suggested by Microsoft. Read-only.
   - `[Keywords <IMicrosoftGraphSearchAnswerKeyword>]`: answerKeyword
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Keywords <String[]>]`: 
-    - `[MatchSimilarKeywords <Boolean?>]`: 
-    - `[ReservedKeywords <String[]>]`: 
-  - `[LanguageTags <String[]>]`: 
-  - `[Platforms <String[]>]`: 
+    - `[Keywords <String[]>]`: A collection of keywords used to trigger the search answer.
+    - `[MatchSimilarKeywords <Boolean?>]`: If true, indicates that the search term contains similar words to the keywords that should trigger the search answer.
+    - `[ReservedKeywords <String[]>]`: Unique keywords that will guarantee the search answer is triggered.
+  - `[LanguageTags <String[]>]`: A list of language names that are geographically specific and that this QnA can be viewed in. Each language tag value follows the pattern {language}-{REGION}. As an example, en-US is English as used in the United States. See supported language tags for the list of possible values.
+  - `[Platforms <String[]>]`: List of devices and operating systems able to view this qna. Possible values are: unknown, android, androidForWork, ios, macOS, windowsPhone81, windowsPhone81AndLater, windows10AndLater, androidWorkProfile, androidASOP.
   - `[State <String>]`: answerState
-  - `[TargetedVariations <IMicrosoftGraphSearchAnswerVariant[]>]`: 
-    - `[Description <String>]`: 
-    - `[DisplayName <String>]`: 
+  - `[TargetedVariations <IMicrosoftGraphSearchAnswerVariant[]>]`: Variations of a qna for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings will apply to all variations.
+    - `[Description <String>]`: Answer variation description shown on search results page.
+    - `[DisplayName <String>]`: Answer variation name displayed in search results.
     - `[LanguageTag <String>]`: 
     - `[Platform <String>]`: Supported platform types.
-    - `[WebUrl <String>]`: 
+    - `[WebUrl <String>]`: Answer variation URL link. When users click this answer variation in search results, they will go to this URL.
 
 ## RELATED LINKS
+

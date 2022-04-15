@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Search-help.xml
+external help file:
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/update-mgsearchbookmark
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgSearchBookmark
 
 ## SYNOPSIS
-Update the navigation property bookmarks in search
+Administrative answer in Microsoft Search results for common search queries in an organization.
 
 ## SYNTAX
 
@@ -20,14 +20,20 @@ Update-MgSearchBookmark -BookmarkId <String> [-AdditionalProperties <Hashtable>]
  [-Keywords <IMicrosoftGraphSearchAnswerKeyword>] [-LanguageTags <String[]>]
  [-LastModifiedBy <IMicrosoftGraphSearchIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-Platforms <String[]>] [-PowerAppIds <String[]>] [-State <String>]
- [-TargetedVariations <IMicrosoftGraphSearchAnswerVariant[]>] [-WebUrl <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-TargetedVariations <IMicrosoftGraphSearchAnswerVariant[]>] [-WebUrl <String>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgSearchBookmark -BookmarkId <String> -BodyParameter <IMicrosoftGraphSearchBookmark> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgSearchBookmark -InputObject <ISearchIdentity> -BodyParameter <IMicrosoftGraphSearchBookmark>
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -38,18 +44,12 @@ Update-MgSearchBookmark -InputObject <ISearchIdentity> [-AdditionalProperties <H
  [-Keywords <IMicrosoftGraphSearchAnswerKeyword>] [-LanguageTags <String[]>]
  [-LastModifiedBy <IMicrosoftGraphSearchIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-Platforms <String[]>] [-PowerAppIds <String[]>] [-State <String>]
- [-TargetedVariations <IMicrosoftGraphSearchAnswerVariant[]>] [-WebUrl <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgSearchBookmark -InputObject <ISearchIdentity> -BodyParameter <IMicrosoftGraphSearchBookmark>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TargetedVariations <IMicrosoftGraphSearchAnswerVariant[]>] [-WebUrl <String>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property bookmarks in search
+Administrative answer in Microsoft Search results for common search queries in an organization.
 
 ## EXAMPLES
 
@@ -59,7 +59,7 @@ Update the navigation property bookmarks in search
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -71,10 +71,11 @@ Accept wildcard characters: False
 ```
 
 ### -AvailabilityEndDateTime
-.
+Timestamp of when the bookmark will stop to appear as a search result.
+Set as null for always available.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -86,10 +87,11 @@ Accept wildcard characters: False
 ```
 
 ### -AvailabilityStartDateTime
-.
+Timestamp of when the bookmark will start to appear as a search result.
+Set as null for always available.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -105,7 +107,7 @@ bookmark
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSearchBookmark
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchBookmark
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -120,8 +122,8 @@ Accept wildcard characters: False
 key: id of bookmark
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -132,10 +134,11 @@ Accept wildcard characters: False
 ```
 
 ### -Categories
-.
+Categories commonly used to describe this bookmark.
+For example, IT and HR.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -147,10 +150,10 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-.
+Search answer description shown on search results page.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -162,10 +165,10 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+Search answer name displayed in search results.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -177,10 +180,10 @@ Accept wildcard characters: False
 ```
 
 ### -GroupIds
-.
+List of security groups able to view this bookmark.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -195,7 +198,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -211,8 +214,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISearchIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ISearchIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -223,10 +226,11 @@ Accept wildcard characters: False
 ```
 
 ### -IsSuggested
-.
+True if this bookmark was suggested to the admin by a user or was mined and suggested by Microsoft.
+Read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -242,7 +246,7 @@ answerKeyword
 To construct, please use Get-Help -Online and see NOTES section for KEYWORDS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSearchAnswerKeyword
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchAnswerKeyword
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -254,10 +258,13 @@ Accept wildcard characters: False
 ```
 
 ### -LanguageTags
-.
+A list of language names that are geographically specific and that this bookmark can be viewed in.
+Each language tag value follows the pattern {language}-{REGION}.
+As an example, en-US is English as used in the United States.
+See supported language tags for the list of possible values.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -273,7 +280,7 @@ identitySet
 To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSearchIdentitySet
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchIdentitySet
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -285,10 +292,11 @@ Accept wildcard characters: False
 ```
 
 ### -LastModifiedDateTime
-.
+Timestamp of when the search answer is created or edited.
+Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -303,7 +311,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -315,10 +323,11 @@ Accept wildcard characters: False
 ```
 
 ### -Platforms
-.
+List of devices and operating systems able to view this bookmark.
+Possible values are: unknown, android, androidForWork, ios, macOS, windowsPhone81, windowsPhone81AndLater, windows10AndLater, androidWorkProfile, androidASOP.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -330,10 +339,11 @@ Accept wildcard characters: False
 ```
 
 ### -PowerAppIds
-.
+List of Power Apps associated with this bookmark.
+If users add existing Power Apps to a bookmark, they can complete tasks, such as to enter vacation time or to report expenses on the search results page.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -348,7 +358,7 @@ Accept wildcard characters: False
 answerState
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -360,11 +370,13 @@ Accept wildcard characters: False
 ```
 
 ### -TargetedVariations
-.
+Variations of a bookmark for different countries or devices.
+Use when you need to show different content to users based on their device, country/region, or both.
+The date and group settings will apply to all variations.
 To construct, please use Get-Help -Online and see NOTES section for TARGETEDVARIATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSearchAnswerVariant[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchAnswerVariant[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -376,10 +388,11 @@ Accept wildcard characters: False
 ```
 
 ### -WebUrl
-.
+Search answer URL link.
+When users click this search answer in search results, they will go to this URL.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -394,7 +407,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -410,7 +423,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -427,10 +440,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchBookmark
+
 ### Microsoft.Graph.PowerShell.Models.ISearchIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -442,8 +458,8 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER <IMicrosoftGraphSearchBookmark>: bookmark
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Description <String>]`: 
-  - `[DisplayName <String>]`: 
+  - `[Description <String>]`: Search answer description shown on search results page.
+  - `[DisplayName <String>]`: Search answer name displayed in search results.
   - `[LastModifiedBy <IMicrosoftGraphSearchIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphSearchIdentity>]`: identity
@@ -452,29 +468,29 @@ BODYPARAMETER <IMicrosoftGraphSearchBookmark>: bookmark
       - `[Id <String>]`: 
     - `[Device <IMicrosoftGraphSearchIdentity>]`: identity
     - `[User <IMicrosoftGraphSearchIdentity>]`: identity
-  - `[LastModifiedDateTime <DateTime?>]`: 
-  - `[WebUrl <String>]`: 
+  - `[LastModifiedDateTime <DateTime?>]`: Timestamp of when the search answer is created or edited. Read-only.
+  - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they will go to this URL.
   - `[Id <String>]`: Read-only.
-  - `[AvailabilityEndDateTime <DateTime?>]`: 
-  - `[AvailabilityStartDateTime <DateTime?>]`: 
-  - `[Categories <String[]>]`: 
-  - `[GroupIds <String[]>]`: 
-  - `[IsSuggested <Boolean?>]`: 
+  - `[AvailabilityEndDateTime <DateTime?>]`: Timestamp of when the bookmark will stop to appear as a search result. Set as null for always available.
+  - `[AvailabilityStartDateTime <DateTime?>]`: Timestamp of when the bookmark will start to appear as a search result. Set as null for always available.
+  - `[Categories <String[]>]`: Categories commonly used to describe this bookmark. For example, IT and HR.
+  - `[GroupIds <String[]>]`: List of security groups able to view this bookmark.
+  - `[IsSuggested <Boolean?>]`: True if this bookmark was suggested to the admin by a user or was mined and suggested by Microsoft. Read-only.
   - `[Keywords <IMicrosoftGraphSearchAnswerKeyword>]`: answerKeyword
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Keywords <String[]>]`: 
-    - `[MatchSimilarKeywords <Boolean?>]`: 
-    - `[ReservedKeywords <String[]>]`: 
-  - `[LanguageTags <String[]>]`: 
-  - `[Platforms <String[]>]`: 
-  - `[PowerAppIds <String[]>]`: 
+    - `[Keywords <String[]>]`: A collection of keywords used to trigger the search answer.
+    - `[MatchSimilarKeywords <Boolean?>]`: If true, indicates that the search term contains similar words to the keywords that should trigger the search answer.
+    - `[ReservedKeywords <String[]>]`: Unique keywords that will guarantee the search answer is triggered.
+  - `[LanguageTags <String[]>]`: A list of language names that are geographically specific and that this bookmark can be viewed in. Each language tag value follows the pattern {language}-{REGION}. As an example, en-US is English as used in the United States. See supported language tags for the list of possible values.
+  - `[Platforms <String[]>]`: List of devices and operating systems able to view this bookmark. Possible values are: unknown, android, androidForWork, ios, macOS, windowsPhone81, windowsPhone81AndLater, windows10AndLater, androidWorkProfile, androidASOP.
+  - `[PowerAppIds <String[]>]`: List of Power Apps associated with this bookmark. If users add existing Power Apps to a bookmark, they can complete tasks, such as to enter vacation time or to report expenses on the search results page.
   - `[State <String>]`: answerState
-  - `[TargetedVariations <IMicrosoftGraphSearchAnswerVariant[]>]`: 
-    - `[Description <String>]`: 
-    - `[DisplayName <String>]`: 
+  - `[TargetedVariations <IMicrosoftGraphSearchAnswerVariant[]>]`: Variations of a bookmark for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings will apply to all variations.
+    - `[Description <String>]`: Answer variation description shown on search results page.
+    - `[DisplayName <String>]`: Answer variation name displayed in search results.
     - `[LanguageTag <String>]`: 
     - `[Platform <String>]`: Supported platform types.
-    - `[WebUrl <String>]`: 
+    - `[WebUrl <String>]`: Answer variation URL link. When users click this answer variation in search results, they will go to this URL.
 
 INPUTOBJECT <ISearchIdentity>: Identity Parameter
   - `[AcronymId <String>]`: key: id of acronym
@@ -484,9 +500,9 @@ INPUTOBJECT <ISearchIdentity>: Identity Parameter
 
 KEYWORDS <IMicrosoftGraphSearchAnswerKeyword>: answerKeyword
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Keywords <String[]>]`: 
-  - `[MatchSimilarKeywords <Boolean?>]`: 
-  - `[ReservedKeywords <String[]>]`: 
+  - `[Keywords <String[]>]`: A collection of keywords used to trigger the search answer.
+  - `[MatchSimilarKeywords <Boolean?>]`: If true, indicates that the search term contains similar words to the keywords that should trigger the search answer.
+  - `[ReservedKeywords <String[]>]`: Unique keywords that will guarantee the search answer is triggered.
 
 LASTMODIFIEDBY <IMicrosoftGraphSearchIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -497,11 +513,12 @@ LASTMODIFIEDBY <IMicrosoftGraphSearchIdentitySet>: identitySet
   - `[Device <IMicrosoftGraphSearchIdentity>]`: identity
   - `[User <IMicrosoftGraphSearchIdentity>]`: identity
 
-TARGETEDVARIATIONS <IMicrosoftGraphSearchAnswerVariant[]>: .
-  - `[Description <String>]`: 
-  - `[DisplayName <String>]`: 
+TARGETEDVARIATIONS <IMicrosoftGraphSearchAnswerVariant[]>: Variations of a bookmark for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings will apply to all variations.
+  - `[Description <String>]`: Answer variation description shown on search results page.
+  - `[DisplayName <String>]`: Answer variation name displayed in search results.
   - `[LanguageTag <String>]`: 
   - `[Platform <String>]`: Supported platform types.
-  - `[WebUrl <String>]`: 
+  - `[WebUrl <String>]`: Answer variation URL link. When users click this answer variation in search results, they will go to this URL.
 
 ## RELATED LINKS
+
