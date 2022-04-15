@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Reports-help.xml
+external help file:
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/invoke-mguserreportauthenticationmethodregistered
 schema: 2.0.0
@@ -17,24 +17,29 @@ Invoke function usersRegisteredByFeature
 Invoke-MgUserReportAuthenticationMethodRegistered [<CommonParameters>]
 ```
 
-### Users3
-```
-Invoke-MgUserReportAuthenticationMethodRegistered -IncludedUserRoles <String> -IncludedUserTypes <String>
- [<CommonParameters>]
-```
-
 ### Users1
 ```
 Invoke-MgUserReportAuthenticationMethodRegistered -IncludedUserRoles <String> -IncludedUserTypes <String>
  [<CommonParameters>]
 ```
 
-### UsersViaIdentity1
+### Users2
+```
+Invoke-MgUserReportAuthenticationMethodRegistered [<CommonParameters>]
+```
+
+### Users3
+```
+Invoke-MgUserReportAuthenticationMethodRegistered -IncludedUserRoles <String> -IncludedUserTypes <String>
+ [<CommonParameters>]
+```
+
+### UsersViaIdentity
 ```
 Invoke-MgUserReportAuthenticationMethodRegistered -InputObject <IReportsIdentity> [<CommonParameters>]
 ```
 
-### UsersViaIdentity
+### UsersViaIdentity1
 ```
 Invoke-MgUserReportAuthenticationMethodRegistered -InputObject <IReportsIdentity> [<CommonParameters>]
 ```
@@ -50,8 +55,8 @@ Invoke function usersRegisteredByFeature
 Usage: includedUserRoles={includedUserRoles}
 
 ```yaml
-Type: String
-Parameter Sets: Users3, Users1
+Type: System.String
+Parameter Sets: Users1, Users3
 Aliases:
 
 Required: True
@@ -65,8 +70,8 @@ Accept wildcard characters: False
 Usage: includedUserTypes={includedUserTypes}
 
 ```yaml
-Type: String
-Parameter Sets: Users3, Users1
+Type: System.String
+Parameter Sets: Users1, Users3
 Aliases:
 
 Required: True
@@ -81,8 +86,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IReportsIdentity
-Parameter Sets: UsersViaIdentity1, UsersViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IReportsIdentity
+Parameter Sets: UsersViaIdentity, UsersViaIdentity1
 Aliases:
 
 Required: True
@@ -98,10 +103,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IReportsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserRegistrationFeatureSummary
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserRegistrationMethodSummary
+
 ## NOTES
 
 ALIASES
@@ -139,3 +147,4 @@ INPUTOBJECT <IReportsIdentity>: Identity Parameter
   - `[UserRegistrationDetailsId <String>]`: key: id of userRegistrationDetails
 
 ## RELATED LINKS
+

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Reports-help.xml
+external help file:
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportemailactivityuserdetail
 schema: 2.0.0
@@ -22,13 +22,13 @@ Get-MgReportEmailActivityUserDetail -Date <DateTime> -OutFile <String> [-PassThr
 Get-MgReportEmailActivityUserDetail -Period <String> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
-### GetViaIdentity3
+### GetViaIdentity2
 ```
 Get-MgReportEmailActivityUserDetail -InputObject <IReportsIdentity> -OutFile <String> [-PassThru]
  [<CommonParameters>]
 ```
 
-### GetViaIdentity2
+### GetViaIdentity3
 ```
 Get-MgReportEmailActivityUserDetail -InputObject <IReportsIdentity> -OutFile <String> [-PassThru]
  [<CommonParameters>]
@@ -45,7 +45,7 @@ Invoke function getEmailActivityUserDetail
 Usage: date={date}
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: Get2
 Aliases:
 
@@ -61,8 +61,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IReportsIdentity
-Parameter Sets: GetViaIdentity3, GetViaIdentity2
+Type: Microsoft.Graph.PowerShell.Models.IReportsIdentity
+Parameter Sets: GetViaIdentity2, GetViaIdentity3
 Aliases:
 
 Required: True
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 Usage: period={period}
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get3
 Aliases:
 
@@ -123,9 +123,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IReportsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -163,3 +165,4 @@ INPUTOBJECT <IReportsIdentity>: Identity Parameter
   - `[UserRegistrationDetailsId <String>]`: key: id of userRegistrationDetails
 
 ## RELATED LINKS
+
