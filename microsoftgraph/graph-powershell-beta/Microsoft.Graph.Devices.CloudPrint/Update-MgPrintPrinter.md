@@ -19,8 +19,8 @@ Update-MgPrintPrinter -PrinterId <String> [-AcceptingJobs] [-AdditionalPropertie
  [-Defaults <IMicrosoftGraphPrinterDefaults>] [-DisplayName <String>] [-HasPhysicalDevice] [-Id <String>]
  [-IsAcceptingJobs] [-IsShared] [-Jobs <IMicrosoftGraphPrintJob[]>] [-LastSeenDateTime <DateTime>]
  [-Location <IMicrosoftGraphPrinterLocation1>] [-Manufacturer <String>] [-Model <String>] [-Name <String>]
- [-RegisteredDateTime <DateTime>] [-Share <IMicrosoftGraphPrinterShare1>]
- [-Shares <IMicrosoftGraphPrinterShare1[]>] [-Status <IMicrosoftGraphPrinterStatus>]
+ [-RegisteredDateTime <DateTime>] [-Share <IMicrosoftGraphPrinterShare>]
+ [-Shares <IMicrosoftGraphPrinterShare[]>] [-Status <IMicrosoftGraphPrinterStatus>]
  [-TaskTriggers <IMicrosoftGraphPrintTaskTrigger1[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -38,8 +38,8 @@ Update-MgPrintPrinter -InputObject <IDevicesCloudPrintIdentity> [-AcceptingJobs]
  [-DisplayName <String>] [-HasPhysicalDevice] [-Id <String>] [-IsAcceptingJobs] [-IsShared]
  [-Jobs <IMicrosoftGraphPrintJob[]>] [-LastSeenDateTime <DateTime>]
  [-Location <IMicrosoftGraphPrinterLocation1>] [-Manufacturer <String>] [-Model <String>] [-Name <String>]
- [-RegisteredDateTime <DateTime>] [-Share <IMicrosoftGraphPrinterShare1>]
- [-Shares <IMicrosoftGraphPrinterShare1[]>] [-Status <IMicrosoftGraphPrinterStatus>]
+ [-RegisteredDateTime <DateTime>] [-Share <IMicrosoftGraphPrinterShare>]
+ [-Shares <IMicrosoftGraphPrinterShare[]>] [-Status <IMicrosoftGraphPrinterStatus>]
  [-TaskTriggers <IMicrosoftGraphPrintTaskTrigger1[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -387,7 +387,7 @@ printerShare
 To construct, please use Get-Help -Online and see NOTES section for SHARE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrinterShare1
+Type: IMicrosoftGraphPrinterShare
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -406,7 +406,7 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for SHARES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrinterShare1[]
+Type: IMicrosoftGraphPrinterShare[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -13159,6 +13159,9 @@ TASKTRIGGERS <IMicrosoftGraphPrintTaskTrigger1[]>: A list of task triggers that 
   - `[Event <String>]`: printEvent
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS
 

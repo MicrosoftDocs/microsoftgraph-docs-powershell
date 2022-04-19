@@ -29,8 +29,14 @@ Exports the mobile configuration
 ### [Get-MgDeviceManagementAssignedRoleDetail](Get-MgDeviceManagementAssignedRoleDetail.md)
 Retrieves the assigned role definitions and role assignments of the currently authenticated user.
 
+### [Get-MgDeviceManagementAssignmentFilterPlatformSupportedProperty](Get-MgDeviceManagementAssignmentFilterPlatformSupportedProperty.md)
+Invoke function getPlatformSupportedProperties
+
 ### [Get-MgDeviceManagementAssignmentFilterState](Get-MgDeviceManagementAssignmentFilterState.md)
 Invoke function getState
+
+### [Get-MgDeviceManagementAssignmentFilterSupportedProperty](Get-MgDeviceManagementAssignmentFilterSupportedProperty.md)
+Invoke function getSupportedProperties
 
 ### [Get-MgDeviceManagementAuditEventAuditActivityType](Get-MgDeviceManagementAuditEventAuditActivityType.md)
 Invoke function getAuditActivityTypes
@@ -46,6 +52,9 @@ Invoke function getFileVaultKey
 
 ### [Get-MgDeviceManagementComanagedDeviceNonCompliantSetting](Get-MgDeviceManagementComanagedDeviceNonCompliantSetting.md)
 Invoke function getNonCompliantSettings
+
+### [Get-MgDeviceManagementComanagedDeviceOemWarranty](Get-MgDeviceManagementComanagedDeviceOemWarranty.md)
+Invoke function getOemWarranty
 
 ### [Get-MgDeviceManagementComanagedDeviceSummary](Get-MgDeviceManagementComanagedDeviceSummary.md)
 Invoke function getComanagedDevicesSummary
@@ -83,6 +92,9 @@ Invoke function getFileVaultKey
 ### [Get-MgDeviceManagementDeviceComplianceScriptDeviceRunStateManagedDeviceNonCompliantSetting](Get-MgDeviceManagementDeviceComplianceScriptDeviceRunStateManagedDeviceNonCompliantSetting.md)
 Invoke function getNonCompliantSettings
 
+### [Get-MgDeviceManagementDeviceComplianceScriptDeviceRunStateManagedDeviceOemWarranty](Get-MgDeviceManagementDeviceComplianceScriptDeviceRunStateManagedDeviceOemWarranty.md)
+Invoke function getOemWarranty
+
 ### [Get-MgDeviceManagementDeviceConfigurationGroupAssignmentDeviceConfigurationOmaSettingPlainTextValue](Get-MgDeviceManagementDeviceConfigurationGroupAssignmentDeviceConfigurationOmaSettingPlainTextValue.md)
 Invoke function getOmaSettingPlainTextValue
 
@@ -101,6 +113,9 @@ Invoke function getFileVaultKey
 ### [Get-MgDeviceManagementDeviceCustomAttributeShellScriptDeviceRunStateManagedDeviceNonCompliantSetting](Get-MgDeviceManagementDeviceCustomAttributeShellScriptDeviceRunStateManagedDeviceNonCompliantSetting.md)
 Invoke function getNonCompliantSettings
 
+### [Get-MgDeviceManagementDeviceCustomAttributeShellScriptDeviceRunStateManagedDeviceOemWarranty](Get-MgDeviceManagementDeviceCustomAttributeShellScriptDeviceRunStateManagedDeviceOemWarranty.md)
+Invoke function getOemWarranty
+
 ### [Get-MgDeviceManagementDeviceCustomAttributeShellScriptUserRunStateDeviceRunStateManagedDeviceCloudPcRemoteActionResult](Get-MgDeviceManagementDeviceCustomAttributeShellScriptUserRunStateDeviceRunStateManagedDeviceCloudPcRemoteActionResult.md)
 Invoke function getCloudPcRemoteActionResults
 
@@ -110,6 +125,9 @@ Invoke function getFileVaultKey
 ### [Get-MgDeviceManagementDeviceCustomAttributeShellScriptUserRunStateDeviceRunStateManagedDeviceNonCompliantSetting](Get-MgDeviceManagementDeviceCustomAttributeShellScriptUserRunStateDeviceRunStateManagedDeviceNonCompliantSetting.md)
 Invoke function getNonCompliantSettings
 
+### [Get-MgDeviceManagementDeviceCustomAttributeShellScriptUserRunStateDeviceRunStateManagedDeviceOemWarranty](Get-MgDeviceManagementDeviceCustomAttributeShellScriptUserRunStateDeviceRunStateManagedDeviceOemWarranty.md)
+Invoke function getOemWarranty
+
 ### [Get-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceCloudPcRemoteActionResult](Get-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceCloudPcRemoteActionResult.md)
 Invoke function getCloudPcRemoteActionResults
 
@@ -118,6 +136,9 @@ Invoke function getFileVaultKey
 
 ### [Get-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceNonCompliantSetting](Get-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceNonCompliantSetting.md)
 Invoke function getNonCompliantSettings
+
+### [Get-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceOemWarranty](Get-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceOemWarranty.md)
+Invoke function getOemWarranty
 
 ### [Get-MgDeviceManagementDeviceHealthScriptRemediationHistory](Get-MgDeviceManagementDeviceHealthScriptRemediationHistory.md)
 Function to get the number of remediations by a device health scripts
@@ -134,6 +155,9 @@ Invoke function getFileVaultKey
 ### [Get-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceNonCompliantSetting](Get-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceNonCompliantSetting.md)
 Invoke function getNonCompliantSettings
 
+### [Get-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceOemWarranty](Get-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceOemWarranty.md)
+Invoke function getOemWarranty
+
 ### [Get-MgDeviceManagementDeviceShellScriptUserRunStateDeviceRunStateManagedDeviceCloudPcRemoteActionResult](Get-MgDeviceManagementDeviceShellScriptUserRunStateDeviceRunStateManagedDeviceCloudPcRemoteActionResult.md)
 Invoke function getCloudPcRemoteActionResults
 
@@ -143,6 +167,12 @@ Invoke function getFileVaultKey
 ### [Get-MgDeviceManagementDeviceShellScriptUserRunStateDeviceRunStateManagedDeviceNonCompliantSetting](Get-MgDeviceManagementDeviceShellScriptUserRunStateDeviceRunStateManagedDeviceNonCompliantSetting.md)
 Invoke function getNonCompliantSettings
 
+### [Get-MgDeviceManagementDeviceShellScriptUserRunStateDeviceRunStateManagedDeviceOemWarranty](Get-MgDeviceManagementDeviceShellScriptUserRunStateDeviceRunStateManagedDeviceOemWarranty.md)
+Invoke function getOemWarranty
+
+### [Get-MgDeviceManagementEffectivePermission](Get-MgDeviceManagementEffectivePermission.md)
+Invoke function getEffectivePermissions
+
 ### [Get-MgDeviceManagementManagedDeviceCloudPcRemoteActionResult](Get-MgDeviceManagementManagedDeviceCloudPcRemoteActionResult.md)
 Invoke function getCloudPcRemoteActionResults
 
@@ -151,6 +181,9 @@ Invoke function getFileVaultKey
 
 ### [Get-MgDeviceManagementManagedDeviceNonCompliantSetting](Get-MgDeviceManagementManagedDeviceNonCompliantSetting.md)
 Invoke function getNonCompliantSettings
+
+### [Get-MgDeviceManagementManagedDeviceOemWarranty](Get-MgDeviceManagementManagedDeviceOemWarranty.md)
+Invoke function getOemWarranty
 
 ### [Get-MgDeviceManagementResourceOperationScope](Get-MgDeviceManagementResourceOperationScope.md)
 Invoke function getScopesForUser
@@ -170,6 +203,9 @@ Invoke function getFileVaultKey
 ### [Get-MgDeviceManagementScriptDeviceRunStateManagedDeviceNonCompliantSetting](Get-MgDeviceManagementScriptDeviceRunStateManagedDeviceNonCompliantSetting.md)
 Invoke function getNonCompliantSettings
 
+### [Get-MgDeviceManagementScriptDeviceRunStateManagedDeviceOemWarranty](Get-MgDeviceManagementScriptDeviceRunStateManagedDeviceOemWarranty.md)
+Invoke function getOemWarranty
+
 ### [Get-MgDeviceManagementScriptUserRunStateDeviceRunStateManagedDeviceCloudPcRemoteActionResult](Get-MgDeviceManagementScriptUserRunStateDeviceRunStateManagedDeviceCloudPcRemoteActionResult.md)
 Invoke function getCloudPcRemoteActionResults
 
@@ -178,6 +214,9 @@ Invoke function getFileVaultKey
 
 ### [Get-MgDeviceManagementScriptUserRunStateDeviceRunStateManagedDeviceNonCompliantSetting](Get-MgDeviceManagementScriptUserRunStateDeviceRunStateManagedDeviceNonCompliantSetting.md)
 Invoke function getNonCompliantSettings
+
+### [Get-MgDeviceManagementScriptUserRunStateDeviceRunStateManagedDeviceOemWarranty](Get-MgDeviceManagementScriptUserRunStateDeviceRunStateManagedDeviceOemWarranty.md)
+Invoke function getOemWarranty
 
 ### [Get-MgDeviceManagementSuggestedEnrollmentLimit](Get-MgDeviceManagementSuggestedEnrollmentLimit.md)
 Invoke function getSuggestedEnrollmentLimit

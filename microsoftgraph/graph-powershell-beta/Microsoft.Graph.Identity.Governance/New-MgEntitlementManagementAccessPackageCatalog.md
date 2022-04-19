@@ -20,13 +20,14 @@ New-MgEntitlementManagementAccessPackageCatalog
  [-AccessPackageResources <IMicrosoftGraphAccessPackageResource[]>]
  [-AccessPackages <IMicrosoftGraphAccessPackage[]>] [-AdditionalProperties <Hashtable>]
  [-CatalogStatus <String>] [-CatalogType <String>] [-CreatedBy <String>] [-CreatedDateTime <DateTime>]
+ [-CustomAccessPackageWorkflowExtensions <IMicrosoftGraphCustomAccessPackageWorkflowExtension[]>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsExternallyVisible] [-ModifiedBy <String>]
  [-ModifiedDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgEntitlementManagementAccessPackageCatalog -BodyParameter <IMicrosoftGraphAccessPackageCatalog1> [-WhatIf]
+New-MgEntitlementManagementAccessPackageCatalog -BodyParameter <IMicrosoftGraphAccessPackageCatalog> [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -125,7 +126,7 @@ accessPackageCatalog
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageCatalog1
+Type: IMicrosoftGraphAccessPackageCatalog
 Parameter Sets: Create
 Aliases:
 
@@ -189,6 +190,22 @@ Read-only.
 
 ```yaml
 Type: DateTime
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CustomAccessPackageWorkflowExtensions
+.
+To construct, please use Get-Help -Online and see NOTES section for CUSTOMACCESSPACKAGEWORKFLOWEXTENSIONS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCustomAccessPackageWorkflowExtension[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -329,10 +346,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageCatalog1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageCatalog
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageCatalog1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageCatalog
 ## NOTES
 
 ALIASES
@@ -8537,6 +8554,9 @@ BODYPARAMETER <IMicrosoftGraphAccessPackageCatalog1>: accessPackageCatalog
   - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS
 

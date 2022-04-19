@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/set-mgdrivelistcolumnsourcecolumnbyref
@@ -12,25 +12,25 @@ The source column for the content type column.
 
 ## SYNTAX
 
-### SetExpanded1 (Default)
+### SetExpanded (Default)
 ```
 Set-MgDriveListColumnSourceColumnByRef -ColumnDefinitionId <String> -DriveId <String>
  [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Set1
+### Set
 ```
 Set-MgDriveListColumnSourceColumnByRef -ColumnDefinitionId <String> -DriveId <String>
  -BodyParameter <Hashtable> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SetViaIdentityExpanded1
+### SetViaIdentityExpanded
 ```
 Set-MgDriveListColumnSourceColumnByRef -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SetViaIdentity1
+### SetViaIdentity
 ```
 Set-MgDriveListColumnSourceColumnByRef -InputObject <IFilesIdentity> -BodyParameter <Hashtable> [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -48,7 +48,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: SetExpanded1, SetViaIdentityExpanded1
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: Hashtable
-Parameter Sets: Set1, SetViaIdentity1
+Parameter Sets: Set, SetViaIdentity
 Aliases:
 
 Required: True
@@ -78,7 +78,7 @@ key: id of columnDefinition
 
 ```yaml
 Type: String
-Parameter Sets: SetExpanded1, Set1
+Parameter Sets: SetExpanded, Set
 Aliases:
 
 Required: True
@@ -93,7 +93,7 @@ key: id of drive
 
 ```yaml
 Type: String
-Parameter Sets: SetExpanded1, Set1
+Parameter Sets: SetExpanded, Set
 Aliases:
 
 Required: True
@@ -109,7 +109,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: SetViaIdentityExpanded1, SetViaIdentity1
+Parameter Sets: SetViaIdentityExpanded, SetViaIdentity
 Aliases:
 
 Required: True

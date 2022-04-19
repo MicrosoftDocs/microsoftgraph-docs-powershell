@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcall
@@ -16,8 +16,9 @@ Create new navigation property to calls for communications
 ```
 New-MgCommunicationCall [-ActiveModalities <String[]>] [-AdditionalProperties <Hashtable>]
  [-AnsweredBy <IMicrosoftGraphParticipantInfo1>] [-AudioRoutingGroups <IMicrosoftGraphAudioRoutingGroup1[]>]
- [-CallChainId <String>] [-CallOptions <IMicrosoftGraphCallOptions>] [-CallRoutes <IMicrosoftGraphCallRoute[]>]
- [-CallbackUri <String>] [-ChatInfo <IMicrosoftGraphChatInfo>] [-Direction <String>] [-Id <String>]
+ [-CallChainId <String>] [-CallOptions <IMicrosoftGraphCallOptions1>]
+ [-CallRoutes <IMicrosoftGraphCallRoute[]>] [-CallbackUri <String>] [-ChatInfo <IMicrosoftGraphChatInfo>]
+ [-ContentSharingSessions <IMicrosoftGraphContentSharingSession[]>] [-Direction <String>] [-Id <String>]
  [-IncomingContext <IMicrosoftGraphIncomingContext>] [-MediaConfig <IMicrosoftGraphMediaConfig1>]
  [-MediaState <IMicrosoftGraphCallMediaState>] [-MeetingCapability <IMicrosoftGraphMeetingCapability>]
  [-MeetingInfo <IMicrosoftGraphMeetingInfo1>] [-MyParticipantId <String>]
@@ -159,7 +160,7 @@ callOptions
 To construct, please use Get-Help -Online and see NOTES section for CALLOPTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCallOptions
+Type: IMicrosoftGraphCallOptions1
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -193,6 +194,22 @@ To construct, please use Get-Help -Online and see NOTES section for CHATINFO pro
 
 ```yaml
 Type: IMicrosoftGraphChatInfo
+Parameter Sets: CreateExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ContentSharingSessions
+.
+To construct, please use Get-Help -Online and see NOTES section for CONTENTSHARINGSESSIONS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphContentSharingSession[]
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -645,9 +662,10 @@ BODYPARAMETER <IMicrosoftGraphCall1>: call
     - `[RoutingMode <String>]`: 
     - `[Sources <String[]>]`: List of source participant ids.
   - `[CallChainId <String>]`: A unique identifier for all the participant calls in a conference or a unique identifier for two participant calls in a P2P call.  This needs to be copied over from Microsoft.Graph.Call.CallChainId.
-  - `[CallOptions <IMicrosoftGraphCallOptions>]`: callOptions
+  - `[CallOptions <IMicrosoftGraphCallOptions1>]`: callOptions
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[HideBotAfterEscalation <Boolean?>]`: 
+    - `[IsContentSharingNotificationEnabled <Boolean?>]`: 
   - `[CallRoutes <IMicrosoftGraphCallRoute[]>]`: The routing information on how the call was retargeted. Read-only.
     - `[Final <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[Original <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -658,6 +676,8 @@ BODYPARAMETER <IMicrosoftGraphCall1>: call
     - `[MessageId <String>]`: The unique identifier of a message in a Microsoft Teams channel.
     - `[ReplyChainMessageId <String>]`: The ID of the reply message.
     - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
+  - `[ContentSharingSessions <IMicrosoftGraphContentSharingSession[]>]`: 
+    - `[Id <String>]`: Read-only.
   - `[Direction <String>]`: callDirection
   - `[IncomingContext <IMicrosoftGraphIncomingContext>]`: incomingContext
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -731,9 +751,10 @@ BODYPARAMETER <IMicrosoftGraphCall1>: call
     - `[LastModifiedDateTime <DateTime?>]`: The state modified time in UTC.
     - `[State <String>]`: callTranscriptionState
 
-CALLOPTIONS <IMicrosoftGraphCallOptions>: callOptions
+CALLOPTIONS <IMicrosoftGraphCallOptions1>: callOptions
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[HideBotAfterEscalation <Boolean?>]`: 
+  - `[IsContentSharingNotificationEnabled <Boolean?>]`: 
 
 CALLROUTES <IMicrosoftGraphCallRoute[]>: The routing information on how the call was retargeted. Read-only.
   - `[Final <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -752,6 +773,9 @@ CHATINFO <IMicrosoftGraphChatInfo>: chatInfo
   - `[MessageId <String>]`: The unique identifier of a message in a Microsoft Teams channel.
   - `[ReplyChainMessageId <String>]`: The ID of the reply message.
   - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
+
+CONTENTSHARINGSESSIONS <IMicrosoftGraphContentSharingSession[]>: .
+  - `[Id <String>]`: Read-only.
 
 INCOMINGCONTEXT <IMicrosoftGraphIncomingContext>: incomingContext
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

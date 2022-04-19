@@ -22,13 +22,15 @@ Information about acceptances of this agreement.
 Default PDF linked to this agreement.
 
 ### [Get-MgAgreementFileLocalization](Get-MgAgreementFileLocalization.md)
-Get localizations from agreements
+The localized version of the terms of use agreement files attached to the agreement.
 
 ### [Get-MgAgreementFileLocalizationVersion](Get-MgAgreementFileLocalizationVersion.md)
-Get versions from agreements
+Read-only.
+Customized versions of the terms of use agreement in the Azure AD tenant.
 
 ### [Get-MgAgreementFileVersion](Get-MgAgreementFileVersion.md)
-Get versions from agreements
+Read-only.
+Customized versions of the terms of use agreement in the Azure AD tenant.
 
 ### [Get-MgEntitlementManagementAccessPackage](Get-MgEntitlementManagementAccessPackage.md)
 Represents access package objects.
@@ -87,9 +89,6 @@ Invoke function filterByCurrentUser
 ### [Invoke-MgFilterEntitlementManagementAssignmentRequest](Invoke-MgFilterEntitlementManagementAssignmentRequest.md)
 Invoke function filterByCurrentUser
 
-### [Invoke-MgFilterEntitlementManagementCatalogAccessPackage](Invoke-MgFilterEntitlementManagementCatalogAccessPackage.md)
-Invoke function filterByCurrentUser
-
 ### [New-MgAgreement](New-MgAgreement.md)
 Add new entity to agreements
 
@@ -103,13 +102,15 @@ Note: This property is in the process of being deprecated.
 Use the  file property instead.
 
 ### [New-MgAgreementFileLocalization](New-MgAgreementFileLocalization.md)
-Create new navigation property to localizations for agreements
+The localized version of the terms of use agreement files attached to the agreement.
 
 ### [New-MgAgreementFileLocalizationVersion](New-MgAgreementFileLocalizationVersion.md)
-Create new navigation property to versions for agreements
+Read-only.
+Customized versions of the terms of use agreement in the Azure AD tenant.
 
 ### [New-MgAgreementFileVersion](New-MgAgreementFileVersion.md)
-Create new navigation property to versions for agreements
+Read-only.
+Customized versions of the terms of use agreement in the Azure AD tenant.
 
 ### [New-MgEntitlementManagementAccessPackage](New-MgEntitlementManagementAccessPackage.md)
 Represents access package objects.
@@ -154,13 +155,15 @@ Note: This property is in the process of being deprecated.
 Use the  file property instead.
 
 ### [Remove-MgAgreementFileLocalization](Remove-MgAgreementFileLocalization.md)
-Delete navigation property localizations for agreements
+The localized version of the terms of use agreement files attached to the agreement.
 
 ### [Remove-MgAgreementFileLocalizationVersion](Remove-MgAgreementFileLocalizationVersion.md)
-Delete navigation property versions for agreements
+Read-only.
+Customized versions of the terms of use agreement in the Azure AD tenant.
 
 ### [Remove-MgAgreementFileVersion](Remove-MgAgreementFileVersion.md)
-Delete navigation property versions for agreements
+Read-only.
+Customized versions of the terms of use agreement in the Azure AD tenant.
 
 ### [Remove-MgEntitlementManagementAccessPackage](Remove-MgEntitlementManagementAccessPackage.md)
 Represents access package objects.
@@ -190,9 +193,6 @@ Nullable.
 ### [Remove-MgEntitlementManagementConnectedOrganizationInternalSponsor](Remove-MgEntitlementManagementConnectedOrganizationInternalSponsor.md)
 Nullable.
 
-### [Split-MgEntitlementManagementConnectedOrganization](Split-MgEntitlementManagementConnectedOrganization.md)
-Split elements of a connectedOrganization
-
 ### [Stop-MgEntitlementManagementAssignmentRequest](Stop-MgEntitlementManagementAssignmentRequest.md)
 Invoke action cancel
 
@@ -207,16 +207,15 @@ Information about acceptances of this agreement.
 Default PDF linked to this agreement.
 
 ### [Update-MgAgreementFileLocalization](Update-MgAgreementFileLocalization.md)
-Update the navigation property localizations in agreements
+The localized version of the terms of use agreement files attached to the agreement.
 
 ### [Update-MgAgreementFileLocalizationVersion](Update-MgAgreementFileLocalizationVersion.md)
-Update the navigation property versions in agreements
+Read-only.
+Customized versions of the terms of use agreement in the Azure AD tenant.
 
 ### [Update-MgAgreementFileVersion](Update-MgAgreementFileVersion.md)
-Update the navigation property versions in agreements
-
-### [Update-MgEntitlementManagementAccessPackage](Update-MgEntitlementManagementAccessPackage.md)
-Represents access package objects.
+Read-only.
+Customized versions of the terms of use agreement in the Azure AD tenant.
 
 ### [Update-MgEntitlementManagementAccessPackageAssignmentApproval](Update-MgEntitlementManagementAccessPackageAssignmentApproval.md)
 Update the navigation property accessPackageAssignmentApprovals in identityGovernance
@@ -236,9 +235,6 @@ Represents a group of access packages.
 
 ### [Update-MgEntitlementManagementConnectedOrganization](Update-MgEntitlementManagementConnectedOrganization.md)
 Represents references to a directory or domain of another organization whose users can request access.
-
-### [Update-MgEntitlementManagementConnectedOrganizationExternalSponsor](Update-MgEntitlementManagementConnectedOrganizationExternalSponsor.md)
-Nullable.
 
 ### [Update-MgEntitlementManagementConnectedOrganizationInternalSponsor](Update-MgEntitlementManagementConnectedOrganizationInternalSponsor.md)
 Nullable.

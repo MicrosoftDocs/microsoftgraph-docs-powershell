@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportsharepointsiteusagedetail
@@ -12,23 +12,23 @@ Invoke function getSharePointSiteUsageDetail
 
 ## SYNTAX
 
-### Get (Default)
+### Get2 (Default)
 ```
 Get-MgReportSharePointSiteUsageDetail -Date <DateTime> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
-### Get1
+### Get3
 ```
 Get-MgReportSharePointSiteUsageDetail -Period <String> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity3
 ```
 Get-MgReportSharePointSiteUsageDetail -InputObject <IReportsIdentity> -OutFile <String> [-PassThru]
  [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity2
 ```
 Get-MgReportSharePointSiteUsageDetail -InputObject <IReportsIdentity> -OutFile <String> [-PassThru]
  [<CommonParameters>]
@@ -46,7 +46,7 @@ Usage: date={date}
 
 ```yaml
 Type: DateTime
-Parameter Sets: Get
+Parameter Sets: Get2
 Aliases:
 
 Required: True
@@ -62,7 +62,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IReportsIdentity
-Parameter Sets: GetViaIdentity1, GetViaIdentity
+Parameter Sets: GetViaIdentity3, GetViaIdentity2
 Aliases:
 
 Required: True
@@ -107,7 +107,7 @@ Usage: period={period}
 
 ```yaml
 Type: String
-Parameter Sets: Get1
+Parameter Sets: Get3
 Aliases:
 
 Required: True

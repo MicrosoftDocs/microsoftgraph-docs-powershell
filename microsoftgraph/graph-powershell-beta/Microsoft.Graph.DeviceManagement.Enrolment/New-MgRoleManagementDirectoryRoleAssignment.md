@@ -216,21 +216,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PrincipalOrganizationId
-.
-
-```yaml
-Type: String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResourceScope
 The scope at which the unifiedRoleAssignment applies.
 This is / for service-wide.

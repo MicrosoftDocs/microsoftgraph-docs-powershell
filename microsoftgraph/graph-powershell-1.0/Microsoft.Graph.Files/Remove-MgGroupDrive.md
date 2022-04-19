@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/remove-mggroupdrive
@@ -8,36 +8,25 @@ schema: 2.0.0
 # Remove-MgGroupDrive
 
 ## SYNOPSIS
-The group's default drive.
+The group's drives.
 Read-only.
 
 ## SYNTAX
 
-### Delete2 (Default)
+### Delete1 (Default)
 ```
-Remove-MgGroupDrive -GroupId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Delete3
-```
-Remove-MgGroupDrive -GroupId <String> -DriveId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgGroupDrive -DriveId <String> -GroupId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### DeleteViaIdentity3
-```
-Remove-MgGroupDrive -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### DeleteViaIdentity2
+### DeleteViaIdentity1
 ```
 Remove-MgGroupDrive -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The group's default drive.
+The group's drives.
 Read-only.
 
 ## EXAMPLES
@@ -49,7 +38,7 @@ key: id of drive
 
 ```yaml
 Type: String
-Parameter Sets: Delete3
+Parameter Sets: Delete1
 Aliases:
 
 Required: True
@@ -64,7 +53,7 @@ key: id of group
 
 ```yaml
 Type: String
-Parameter Sets: Delete2, Delete3
+Parameter Sets: Delete1
 Aliases:
 
 Required: True
@@ -95,7 +84,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: DeleteViaIdentity3, DeleteViaIdentity2
+Parameter Sets: DeleteViaIdentity1
 Aliases:
 
 Required: True

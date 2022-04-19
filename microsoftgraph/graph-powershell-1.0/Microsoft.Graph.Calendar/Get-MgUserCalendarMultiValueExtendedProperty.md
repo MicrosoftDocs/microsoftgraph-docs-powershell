@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/get-mgusercalendarmultivalueextendedproperty
@@ -21,13 +21,13 @@ Get-MgUserCalendarMultiValueExtendedProperty -UserId <String> [-ExpandProperty <
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get1
+### Get2
 ```
 Get-MgUserCalendarMultiValueExtendedProperty -MultiValueLegacyExtendedPropertyId <String> -UserId <String>
  -CalendarId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### Get
+### Get1
 ```
 Get-MgUserCalendarMultiValueExtendedProperty -MultiValueLegacyExtendedPropertyId <String> -UserId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
@@ -40,13 +40,13 @@ Get-MgUserCalendarMultiValueExtendedProperty -UserId <String> -CalendarId <Strin
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity2
 ```
 Get-MgUserCalendarMultiValueExtendedProperty -InputObject <ICalendarIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity1
 ```
 Get-MgUserCalendarMultiValueExtendedProperty -InputObject <ICalendarIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
@@ -81,7 +81,7 @@ key: id of calendar
 
 ```yaml
 Type: String
-Parameter Sets: Get1, List1
+Parameter Sets: Get2, List1
 Aliases:
 
 Required: True
@@ -143,7 +143,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ICalendarIdentity
-Parameter Sets: GetViaIdentity1, GetViaIdentity
+Parameter Sets: GetViaIdentity2, GetViaIdentity1
 Aliases:
 
 Required: True
@@ -158,7 +158,7 @@ key: id of multiValueLegacyExtendedProperty
 
 ```yaml
 Type: String
-Parameter Sets: Get1, Get
+Parameter Sets: Get2, Get1
 Aliases:
 
 Required: True
@@ -248,7 +248,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: List, Get1, Get, List1
+Parameter Sets: List, Get2, Get1, List1
 Aliases:
 
 Required: True

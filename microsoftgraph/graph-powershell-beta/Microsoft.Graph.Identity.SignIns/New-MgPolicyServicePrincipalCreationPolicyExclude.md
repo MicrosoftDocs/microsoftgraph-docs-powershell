@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgpolicyserviceprincipalcreationpolicyexclude
@@ -16,8 +16,8 @@ Create new navigation property to excludes for policies
 ```
 New-MgPolicyServicePrincipalCreationPolicyExclude -ServicePrincipalCreationPolicyId <String>
  [-AdditionalProperties <Hashtable>] [-ApplicationIds <String[]>] [-ApplicationPublisherIds <String[]>]
- [-ApplicationTenantIds <String[]>] [-ApplicationsFromVerifiedPublisherOnly] [-Id <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ApplicationTenantIds <String[]>] [-ApplicationsFromVerifiedPublisherOnly] [-CertifiedApplicationsOnly]
+ [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -30,8 +30,8 @@ New-MgPolicyServicePrincipalCreationPolicyExclude -ServicePrincipalCreationPolic
 ```
 New-MgPolicyServicePrincipalCreationPolicyExclude -InputObject <IIdentitySignInsIdentity>
  [-AdditionalProperties <Hashtable>] [-ApplicationIds <String[]>] [-ApplicationPublisherIds <String[]>]
- [-ApplicationTenantIds <String[]>] [-ApplicationsFromVerifiedPublisherOnly] [-Id <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ApplicationTenantIds <String[]>] [-ApplicationsFromVerifiedPublisherOnly] [-CertifiedApplicationsOnly]
+ [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -135,6 +135,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -CertifiedApplicationsOnly
+.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementconnectedorganization
@@ -12,25 +12,19 @@ Represents references to a directory or domain of another organization whose use
 
 ## SYNTAX
 
-### CreateWithDomainIdentitySource (Default)
-```
-New-MgEntitlementManagementConnectedOrganization [-Description <String>] [-DisplayName <String>]
- [-State <String>] -DomainName <String> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create1
-```
-New-MgEntitlementManagementConnectedOrganization -BodyParameter <IMicrosoftGraphConnectedOrganization>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateExpanded1
+### CreateExpanded1 (Default)
 ```
 New-MgEntitlementManagementConnectedOrganization [-AdditionalProperties <Hashtable>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
  [-ExternalSponsors <IMicrosoftGraphDirectoryObject[]>] [-Id <String>]
  [-IdentitySources <IMicrosoftGraphIdentitySource[]>] [-InternalSponsors <IMicrosoftGraphDirectoryObject[]>]
  [-ModifiedDateTime <DateTime>] [-State <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Create1
+```
+New-MgEntitlementManagementConnectedOrganization -BodyParameter <IMicrosoftGraphConnectedOrganization1>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -60,7 +54,7 @@ connectedOrganization
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConnectedOrganization
+Type: IMicrosoftGraphConnectedOrganization1
 Parameter Sets: Create1
 Aliases:
 
@@ -93,7 +87,7 @@ The description of the connected organization.
 
 ```yaml
 Type: String
-Parameter Sets: CreateWithDomainIdentitySource, CreateExpanded1
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -109,25 +103,10 @@ Supports $filter (eq).
 
 ```yaml
 Type: String
-Parameter Sets: CreateWithDomainIdentitySource, CreateExpanded1
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DomainName
-The domain name of the connected organization identity source.
-
-```yaml
-Type: String
-Parameter Sets: CreateWithDomainIdentitySource
-Aliases:
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -219,7 +198,7 @@ connectedOrganizationState
 
 ```yaml
 Type: String
-Parameter Sets: CreateWithDomainIdentitySource, CreateExpanded1
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -265,10 +244,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConnectedOrganization
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConnectedOrganization1
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConnectedOrganization
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConnectedOrganization1
 ## NOTES
 
 ALIASES

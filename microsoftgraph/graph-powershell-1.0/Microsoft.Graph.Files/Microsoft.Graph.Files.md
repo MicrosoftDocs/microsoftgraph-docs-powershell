@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Files
 Module Guid: 18ec7039-b90f-4d8a-9fb9-e869081b3c69
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files
@@ -42,15 +42,9 @@ Get entity from drives by key
 Collection of [bundles][bundle] (albums and multi-select-shared sets of items).
 Only in personal OneDrive.
 
-### [Get-MgDriveBundleContent](Get-MgDriveBundleContent.md)
-Get media content for the navigation property bundles from drives
-
 ### [Get-MgDriveFollowing](Get-MgDriveFollowing.md)
 The list of items the user is following.
 Only in OneDrive for Business.
-
-### [Get-MgDriveFollowingContent](Get-MgDriveFollowingContent.md)
-Get media content for the navigation property following from drives
 
 ### [Get-MgDriveItem](Get-MgDriveItem.md)
 All items contained in the drive.
@@ -69,10 +63,10 @@ Nullable.
 The collection of field definitions for this list.
 
 ### [Get-MgDriveListColumnSourceColumn](Get-MgDriveListColumnSourceColumn.md)
-The source column for content type column.
+The source column for the content type column.
 
 ### [Get-MgDriveListColumnSourceColumnByRef](Get-MgDriveListColumnSourceColumnByRef.md)
-The source column for content type column.
+The source column for the content type column.
 
 ### [Get-MgDriveListContentType](Get-MgDriveListContentType.md)
 The collection of content types present in this list.
@@ -93,7 +87,7 @@ The collection of content types that are ancestors of this content type.
 The collection of column definitions for this contentType.
 
 ### [Get-MgDriveListContentTypeColumnLink](Get-MgDriveListContentTypeColumnLink.md)
-The collection of columns that are required by this content type
+The collection of columns that are required by this content type.
 
 ### [Get-MgDriveListContentTypeColumnPosition](Get-MgDriveListContentTypeColumnPosition.md)
 Column order information in a content type.
@@ -102,10 +96,10 @@ Column order information in a content type.
 Column order information in a content type.
 
 ### [Get-MgDriveListContentTypeColumnSourceColumn](Get-MgDriveListContentTypeColumnSourceColumn.md)
-The source column for content type column.
+The source column for the content type column.
 
 ### [Get-MgDriveListContentTypeColumnSourceColumnByRef](Get-MgDriveListContentTypeColumnSourceColumnByRef.md)
-The source column for content type column.
+The source column for the content type column.
 
 ### [Get-MgDriveListDrive](Get-MgDriveListDrive.md)
 Only present on document libraries.
@@ -125,9 +119,6 @@ Analytics about the view activities that took place on this item.
 
 ### [Get-MgDriveListItemDriveItem](Get-MgDriveListItemDriveItem.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
-
-### [Get-MgDriveListItemDriveItemContent](Get-MgDriveListItemDriveItemContent.md)
-Get media content for the navigation property driveItem from drives
 
 ### [Get-MgDriveListItemField](Get-MgDriveListItemField.md)
 The values of the columns set on this list item.
@@ -153,9 +144,6 @@ Collection of common folders available in OneDrive.
 Read-only.
 Nullable.
 
-### [Get-MgDriveSpecialContent](Get-MgDriveSpecialContent.md)
-Get media content for the navigation property special from drives
-
 ### [Get-MgGroupDrive](Get-MgGroupDrive.md)
 The group's default drive.
 Read-only.
@@ -163,15 +151,9 @@ Read-only.
 ### [Get-MgShareDriveItem](Get-MgShareDriveItem.md)
 Used to access the underlying driveItem
 
-### [Get-MgShareDriveItemContent](Get-MgShareDriveItemContent.md)
-Get media content for the navigation property driveItem from shares
-
 ### [Get-MgShareItem](Get-MgShareItem.md)
 All driveItems contained in the sharing root.
 This collection cannot be enumerated.
-
-### [Get-MgShareItemContent](Get-MgShareItemContent.md)
-Get media content for the navigation property items from shares
 
 ### [Get-MgShareList](Get-MgShareList.md)
 Used to access the underlying list
@@ -180,10 +162,10 @@ Used to access the underlying list
 The collection of field definitions for this list.
 
 ### [Get-MgShareListColumnSourceColumn](Get-MgShareListColumnSourceColumn.md)
-The source column for content type column.
+The source column for the content type column.
 
 ### [Get-MgShareListColumnSourceColumnByRef](Get-MgShareListColumnSourceColumnByRef.md)
-The source column for content type column.
+The source column for the content type column.
 
 ### [Get-MgShareListContentType](Get-MgShareListContentType.md)
 The collection of content types present in this list.
@@ -204,7 +186,7 @@ The collection of content types that are ancestors of this content type.
 The collection of column definitions for this contentType.
 
 ### [Get-MgShareListContentTypeColumnLink](Get-MgShareListContentTypeColumnLink.md)
-The collection of columns that are required by this content type
+The collection of columns that are required by this content type.
 
 ### [Get-MgShareListContentTypeColumnPosition](Get-MgShareListContentTypeColumnPosition.md)
 Column order information in a content type.
@@ -213,10 +195,10 @@ Column order information in a content type.
 Column order information in a content type.
 
 ### [Get-MgShareListContentTypeColumnSourceColumn](Get-MgShareListContentTypeColumnSourceColumn.md)
-The source column for content type column.
+The source column for the content type column.
 
 ### [Get-MgShareListContentTypeColumnSourceColumnByRef](Get-MgShareListContentTypeColumnSourceColumnByRef.md)
-The source column for content type column.
+The source column for the content type column.
 
 ### [Get-MgShareListDrive](Get-MgShareListDrive.md)
 Only present on document libraries.
@@ -237,9 +219,6 @@ Analytics about the view activities that took place on this item.
 ### [Get-MgShareListItemDriveItem](Get-MgShareListItemDriveItem.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
 
-### [Get-MgShareListItemDriveItemContent](Get-MgShareListItemDriveItemContent.md)
-Get media content for the navigation property driveItem from shares
-
 ### [Get-MgShareListItemField](Get-MgShareListItemField.md)
 The values of the columns set on this list item.
 
@@ -258,9 +237,6 @@ Used to access the permission representing the underlying sharing link
 ### [Get-MgShareRoot](Get-MgShareRoot.md)
 Used to access the underlying driveItem.
 Deprecated -- use driveItem instead.
-
-### [Get-MgShareRootContent](Get-MgShareRootContent.md)
-Get media content for the navigation property root from shares
 
 ### [Get-MgShareSharedDriveItemSharedDriveItem](Get-MgShareSharedDriveItemSharedDriveItem.md)
 Get entity from shares by key
@@ -296,14 +272,6 @@ Invoke action associateWithHubSites
 ### [New-MgDrive](New-MgDrive.md)
 Add new entity to drives
 
-### [New-MgDriveBundle](New-MgDriveBundle.md)
-Collection of [bundles][bundle] (albums and multi-select-shared sets of items).
-Only in personal OneDrive.
-
-### [New-MgDriveFollowing](New-MgDriveFollowing.md)
-The list of items the user is following.
-Only in OneDrive for Business.
-
 ### [New-MgDriveItem](New-MgDriveItem.md)
 All items contained in the drive.
 Read-only.
@@ -322,7 +290,7 @@ The collection of content types that are ancestors of this content type.
 The collection of column definitions for this contentType.
 
 ### [New-MgDriveListContentTypeColumnLink](New-MgDriveListContentTypeColumnLink.md)
-The collection of columns that are required by this content type
+The collection of columns that are required by this content type.
 
 ### [New-MgDriveListContentTypeColumnPositionByRef](New-MgDriveListContentTypeColumnPositionByRef.md)
 Column order information in a content type.
@@ -336,18 +304,9 @@ The list of previous versions of the list item.
 ### [New-MgDriveListSubscription](New-MgDriveListSubscription.md)
 The set of subscriptions on the list.
 
-### [New-MgDriveSpecial](New-MgDriveSpecial.md)
-Collection of common folders available in OneDrive.
-Read-only.
-Nullable.
-
 ### [New-MgGroupDrive](New-MgGroupDrive.md)
 The group's drives.
 Read-only.
-
-### [New-MgShareItem](New-MgShareItem.md)
-All driveItems contained in the sharing root.
-This collection cannot be enumerated.
 
 ### [New-MgShareListColumn](New-MgShareListColumn.md)
 The collection of field definitions for this list.
@@ -362,7 +321,7 @@ The collection of content types that are ancestors of this content type.
 The collection of column definitions for this contentType.
 
 ### [New-MgShareListContentTypeColumnLink](New-MgShareListContentTypeColumnLink.md)
-The collection of columns that are required by this content type
+The collection of columns that are required by this content type.
 
 ### [New-MgShareListContentTypeColumnPositionByRef](New-MgShareListContentTypeColumnPositionByRef.md)
 Column order information in a content type.
@@ -398,14 +357,6 @@ Invoke action publish
 ### [Remove-MgDrive](Remove-MgDrive.md)
 Delete entity from drives
 
-### [Remove-MgDriveBundle](Remove-MgDriveBundle.md)
-Collection of [bundles][bundle] (albums and multi-select-shared sets of items).
-Only in personal OneDrive.
-
-### [Remove-MgDriveFollowing](Remove-MgDriveFollowing.md)
-The list of items the user is following.
-Only in OneDrive for Business.
-
 ### [Remove-MgDriveItem](Remove-MgDriveItem.md)
 All items contained in the drive.
 Read-only.
@@ -420,7 +371,7 @@ Nullable.
 The collection of field definitions for this list.
 
 ### [Remove-MgDriveListColumnSourceColumnByRef](Remove-MgDriveListColumnSourceColumnByRef.md)
-The source column for content type column.
+The source column for the content type column.
 
 ### [Remove-MgDriveListContentType](Remove-MgDriveListContentType.md)
 The collection of content types present in this list.
@@ -432,23 +383,16 @@ Parent contentType from which this content type is derived.
 The collection of column definitions for this contentType.
 
 ### [Remove-MgDriveListContentTypeColumnLink](Remove-MgDriveListContentTypeColumnLink.md)
-The collection of columns that are required by this content type
+The collection of columns that are required by this content type.
 
 ### [Remove-MgDriveListContentTypeColumnSourceColumnByRef](Remove-MgDriveListContentTypeColumnSourceColumnByRef.md)
-The source column for content type column.
-
-### [Remove-MgDriveListDrive](Remove-MgDriveListDrive.md)
-Only present on document libraries.
-Allows access to the list as a [drive][] resource with [driveItems][driveItem].
+The source column for the content type column.
 
 ### [Remove-MgDriveListItem](Remove-MgDriveListItem.md)
 All items contained in the list.
 
 ### [Remove-MgDriveListItemAnalyticByRef](Remove-MgDriveListItemAnalyticByRef.md)
 Analytics about the view activities that took place on this item.
-
-### [Remove-MgDriveListItemDriveItem](Remove-MgDriveListItemDriveItem.md)
-For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
 
 ### [Remove-MgDriveListItemField](Remove-MgDriveListItemField.md)
 The values of the columns set on this list item.
@@ -466,21 +410,9 @@ The set of subscriptions on the list.
 The root folder of the drive.
 Read-only.
 
-### [Remove-MgDriveSpecial](Remove-MgDriveSpecial.md)
-Collection of common folders available in OneDrive.
-Read-only.
-Nullable.
-
 ### [Remove-MgGroupDrive](Remove-MgGroupDrive.md)
-The group's default drive.
+The group's drives.
 Read-only.
-
-### [Remove-MgShareDriveItem](Remove-MgShareDriveItem.md)
-Used to access the underlying driveItem
-
-### [Remove-MgShareItem](Remove-MgShareItem.md)
-All driveItems contained in the sharing root.
-This collection cannot be enumerated.
 
 ### [Remove-MgShareList](Remove-MgShareList.md)
 Used to access the underlying list
@@ -489,7 +421,7 @@ Used to access the underlying list
 The collection of field definitions for this list.
 
 ### [Remove-MgShareListColumnSourceColumnByRef](Remove-MgShareListColumnSourceColumnByRef.md)
-The source column for content type column.
+The source column for the content type column.
 
 ### [Remove-MgShareListContentType](Remove-MgShareListContentType.md)
 The collection of content types present in this list.
@@ -501,23 +433,16 @@ Parent contentType from which this content type is derived.
 The collection of column definitions for this contentType.
 
 ### [Remove-MgShareListContentTypeColumnLink](Remove-MgShareListContentTypeColumnLink.md)
-The collection of columns that are required by this content type
+The collection of columns that are required by this content type.
 
 ### [Remove-MgShareListContentTypeColumnSourceColumnByRef](Remove-MgShareListContentTypeColumnSourceColumnByRef.md)
-The source column for content type column.
-
-### [Remove-MgShareListDrive](Remove-MgShareListDrive.md)
-Only present on document libraries.
-Allows access to the list as a [drive][] resource with [driveItems][driveItem].
+The source column for the content type column.
 
 ### [Remove-MgShareListItem](Remove-MgShareListItem.md)
 All items contained in the list.
 
 ### [Remove-MgShareListItemAnalyticByRef](Remove-MgShareListItemAnalyticByRef.md)
 Analytics about the view activities that took place on this item.
-
-### [Remove-MgShareListItemDriveItem](Remove-MgShareListItemDriveItem.md)
-For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
 
 ### [Remove-MgShareListItemField](Remove-MgShareListItemField.md)
 The values of the columns set on this list item.
@@ -534,18 +459,11 @@ The set of subscriptions on the list.
 ### [Remove-MgSharePermission](Remove-MgSharePermission.md)
 Used to access the permission representing the underlying sharing link
 
-### [Remove-MgShareRoot](Remove-MgShareRoot.md)
-Used to access the underlying driveItem.
-Deprecated -- use driveItem instead.
-
 ### [Remove-MgShareSharedDriveItemSharedDriveItem](Remove-MgShareSharedDriveItemSharedDriveItem.md)
 Delete entity from shares
 
-### [Remove-MgShareSite](Remove-MgShareSite.md)
-Used to access the underlying site
-
 ### [Remove-MgUserDrive](Remove-MgUserDrive.md)
-The user's OneDrive.
+A collection of drives available for this user.
 Read-only.
 
 ### [Restore-MgDriveListItemVersion](Restore-MgDriveListItemVersion.md)
@@ -557,59 +475,35 @@ Invoke action restoreVersion
 ### [Search-MgDrive](Search-MgDrive.md)
 Invoke function search
 
-### [Set-MgDriveBundleContent](Set-MgDriveBundleContent.md)
-Update media content for the navigation property bundles in drives
-
-### [Set-MgDriveFollowingContent](Set-MgDriveFollowingContent.md)
-Update media content for the navigation property following in drives
-
 ### [Set-MgDriveItemContent](Set-MgDriveItemContent.md)
 Update media content for the navigation property items in drives
 
 ### [Set-MgDriveListColumnSourceColumnByRef](Set-MgDriveListColumnSourceColumnByRef.md)
-The source column for content type column.
+The source column for the content type column.
 
 ### [Set-MgDriveListContentTypeBaseByRef](Set-MgDriveListContentTypeBaseByRef.md)
 Parent contentType from which this content type is derived.
 
 ### [Set-MgDriveListContentTypeColumnSourceColumnByRef](Set-MgDriveListContentTypeColumnSourceColumnByRef.md)
-The source column for content type column.
+The source column for the content type column.
 
 ### [Set-MgDriveListItemAnalyticByRef](Set-MgDriveListItemAnalyticByRef.md)
 Analytics about the view activities that took place on this item.
 
-### [Set-MgDriveListItemDriveItemContent](Set-MgDriveListItemDriveItemContent.md)
-Update media content for the navigation property driveItem in drives
-
 ### [Set-MgDriveRootContent](Set-MgDriveRootContent.md)
 Update media content for the navigation property root in drives
 
-### [Set-MgDriveSpecialContent](Set-MgDriveSpecialContent.md)
-Update media content for the navigation property special in drives
-
-### [Set-MgShareDriveItemContent](Set-MgShareDriveItemContent.md)
-Update media content for the navigation property driveItem in shares
-
-### [Set-MgShareItemContent](Set-MgShareItemContent.md)
-Update media content for the navigation property items in shares
-
 ### [Set-MgShareListColumnSourceColumnByRef](Set-MgShareListColumnSourceColumnByRef.md)
-The source column for content type column.
+The source column for the content type column.
 
 ### [Set-MgShareListContentTypeBaseByRef](Set-MgShareListContentTypeBaseByRef.md)
 Parent contentType from which this content type is derived.
 
 ### [Set-MgShareListContentTypeColumnSourceColumnByRef](Set-MgShareListContentTypeColumnSourceColumnByRef.md)
-The source column for content type column.
+The source column for the content type column.
 
 ### [Set-MgShareListItemAnalyticByRef](Set-MgShareListItemAnalyticByRef.md)
 Analytics about the view activities that took place on this item.
-
-### [Set-MgShareListItemDriveItemContent](Set-MgShareListItemDriveItemContent.md)
-Update media content for the navigation property driveItem in shares
-
-### [Set-MgShareRootContent](Set-MgShareRootContent.md)
-Update media content for the navigation property root in shares
 
 ### [Test-MgDriveListContentTypeBasePublished](Test-MgDriveListContentTypeBasePublished.md)
 Invoke function isPublished
@@ -638,14 +532,6 @@ Invoke action unpublish
 ### [Update-MgDrive](Update-MgDrive.md)
 Update entity in drives
 
-### [Update-MgDriveBundle](Update-MgDriveBundle.md)
-Collection of [bundles][bundle] (albums and multi-select-shared sets of items).
-Only in personal OneDrive.
-
-### [Update-MgDriveFollowing](Update-MgDriveFollowing.md)
-The list of items the user is following.
-Only in OneDrive for Business.
-
 ### [Update-MgDriveItem](Update-MgDriveItem.md)
 All items contained in the drive.
 Read-only.
@@ -666,17 +552,10 @@ The collection of content types present in this list.
 The collection of column definitions for this contentType.
 
 ### [Update-MgDriveListContentTypeColumnLink](Update-MgDriveListContentTypeColumnLink.md)
-The collection of columns that are required by this content type
-
-### [Update-MgDriveListDrive](Update-MgDriveListDrive.md)
-Only present on document libraries.
-Allows access to the list as a [drive][] resource with [driveItems][driveItem].
+The collection of columns that are required by this content type.
 
 ### [Update-MgDriveListItem](Update-MgDriveListItem.md)
 All items contained in the list.
-
-### [Update-MgDriveListItemDriveItem](Update-MgDriveListItemDriveItem.md)
-For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
 
 ### [Update-MgDriveListItemField](Update-MgDriveListItemField.md)
 The values of the columns set on this list item.
@@ -694,21 +573,9 @@ The set of subscriptions on the list.
 The root folder of the drive.
 Read-only.
 
-### [Update-MgDriveSpecial](Update-MgDriveSpecial.md)
-Collection of common folders available in OneDrive.
-Read-only.
-Nullable.
-
 ### [Update-MgGroupDrive](Update-MgGroupDrive.md)
-The group's default drive.
+The group's drives.
 Read-only.
-
-### [Update-MgShareDriveItem](Update-MgShareDriveItem.md)
-Used to access the underlying driveItem
-
-### [Update-MgShareItem](Update-MgShareItem.md)
-All driveItems contained in the sharing root.
-This collection cannot be enumerated.
 
 ### [Update-MgShareList](Update-MgShareList.md)
 Used to access the underlying list
@@ -723,17 +590,10 @@ The collection of content types present in this list.
 The collection of column definitions for this contentType.
 
 ### [Update-MgShareListContentTypeColumnLink](Update-MgShareListContentTypeColumnLink.md)
-The collection of columns that are required by this content type
-
-### [Update-MgShareListDrive](Update-MgShareListDrive.md)
-Only present on document libraries.
-Allows access to the list as a [drive][] resource with [driveItems][driveItem].
+The collection of columns that are required by this content type.
 
 ### [Update-MgShareListItem](Update-MgShareListItem.md)
 All items contained in the list.
-
-### [Update-MgShareListItemDriveItem](Update-MgShareListItemDriveItem.md)
-For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
 
 ### [Update-MgShareListItemField](Update-MgShareListItemField.md)
 The values of the columns set on this list item.
@@ -750,17 +610,10 @@ The set of subscriptions on the list.
 ### [Update-MgSharePermission](Update-MgSharePermission.md)
 Used to access the permission representing the underlying sharing link
 
-### [Update-MgShareRoot](Update-MgShareRoot.md)
-Used to access the underlying driveItem.
-Deprecated -- use driveItem instead.
-
 ### [Update-MgShareSharedDriveItemSharedDriveItem](Update-MgShareSharedDriveItemSharedDriveItem.md)
 Update entity in shares
 
-### [Update-MgShareSite](Update-MgShareSite.md)
-Used to access the underlying site
-
 ### [Update-MgUserDrive](Update-MgUserDrive.md)
-The user's OneDrive.
+A collection of drives available for this user.
 Read-only.
 

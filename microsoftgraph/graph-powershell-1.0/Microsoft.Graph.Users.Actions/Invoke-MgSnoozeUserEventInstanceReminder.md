@@ -12,28 +12,28 @@ Invoke action snoozeReminder
 
 ## SYNTAX
 
-### SnoozeExpanded1 (Default)
+### SnoozeExpanded (Default)
 ```
 Invoke-MgSnoozeUserEventInstanceReminder -EventId <String> -EventId1 <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-NewReminderTime <IMicrosoftGraphDateTimeZone>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### Snooze1
+### Snooze
 ```
 Invoke-MgSnoozeUserEventInstanceReminder -EventId <String> -EventId1 <String> -UserId <String>
  -BodyParameter <IPaths42Qvm9UsersUserIdEventsEventIdInstancesEventId1MicrosoftGraphSnoozereminderPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SnoozeViaIdentityExpanded1
+### SnoozeViaIdentityExpanded
 ```
 Invoke-MgSnoozeUserEventInstanceReminder -InputObject <IUsersActionsIdentity>
  [-AdditionalProperties <Hashtable>] [-NewReminderTime <IMicrosoftGraphDateTimeZone>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### SnoozeViaIdentity1
+### SnoozeViaIdentity
 ```
 Invoke-MgSnoozeUserEventInstanceReminder -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths42Qvm9UsersUserIdEventsEventIdInstancesEventId1MicrosoftGraphSnoozereminderPostRequestbodyContentApplicationJsonSchema>
@@ -52,7 +52,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: SnoozeExpanded1, SnoozeViaIdentityExpanded1
+Parameter Sets: SnoozeExpanded, SnoozeViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -68,7 +68,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPaths42Qvm9UsersUserIdEventsEventIdInstancesEventId1MicrosoftGraphSnoozereminderPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Snooze1, SnoozeViaIdentity1
+Parameter Sets: Snooze, SnoozeViaIdentity
 Aliases:
 
 Required: True
@@ -83,7 +83,7 @@ key: id of event
 
 ```yaml
 Type: String
-Parameter Sets: SnoozeExpanded1, Snooze1
+Parameter Sets: SnoozeExpanded, Snooze
 Aliases:
 
 Required: True
@@ -98,7 +98,7 @@ key: id of event
 
 ```yaml
 Type: String
-Parameter Sets: SnoozeExpanded1, Snooze1
+Parameter Sets: SnoozeExpanded, Snooze
 Aliases:
 
 Required: True
@@ -114,7 +114,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: SnoozeViaIdentityExpanded1, SnoozeViaIdentity1
+Parameter Sets: SnoozeViaIdentityExpanded, SnoozeViaIdentity
 Aliases:
 
 Required: True
@@ -130,7 +130,7 @@ To construct, please use Get-Help -Online and see NOTES section for NEWREMINDERT
 
 ```yaml
 Type: IMicrosoftGraphDateTimeZone
-Parameter Sets: SnoozeExpanded1, SnoozeViaIdentityExpanded1
+Parameter Sets: SnoozeExpanded, SnoozeViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -160,7 +160,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: SnoozeExpanded1, Snooze1
+Parameter Sets: SnoozeExpanded, Snooze
 Aliases:
 
 Required: True

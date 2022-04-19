@@ -38,6 +38,7 @@ Supports $expand.
 
 ### [Get-MgUserExtension](Get-MgUserExtension.md)
 The collection of open extensions defined for the user.
+Read-only.
 Nullable.
 
 ### [Get-MgUserLicenseDetail](Get-MgUserLicenseDetail.md)
@@ -169,6 +170,12 @@ Supports $expand.
 
 ### [New-MgUserExtension](New-MgUserExtension.md)
 The collection of open extensions defined for the user.
+Read-only.
+Nullable.
+
+### [New-MgUserExtension](New-MgUserExtension.md)
+The collection of open extensions defined for the user.
+Read-only.
 Nullable.
 
 ### [New-MgUserOauth2PermissionGrantByRef](New-MgUserOauth2PermissionGrantByRef.md)
@@ -226,6 +233,7 @@ Delete entity from users
 
 ### [Remove-MgUserExtension](Remove-MgUserExtension.md)
 The collection of open extensions defined for the user.
+Read-only.
 Nullable.
 
 ### [Remove-MgUserLicenseDetail](Remove-MgUserLicenseDetail.md)
@@ -286,6 +294,7 @@ Update entity in users
 
 ### [Update-MgUserExtension](Update-MgUserExtension.md)
 The collection of open extensions defined for the user.
+Read-only.
 Nullable.
 
 ### [Update-MgUserLicenseDetail](Update-MgUserLicenseDetail.md)

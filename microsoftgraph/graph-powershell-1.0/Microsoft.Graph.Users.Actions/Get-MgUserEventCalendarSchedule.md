@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/get-mgusereventcalendarschedule
@@ -12,28 +12,28 @@ Invoke action getSchedule
 
 ## SYNTAX
 
-### GetExpanded (Default)
+### GetExpanded1 (Default)
 ```
 Get-MgUserEventCalendarSchedule -EventId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
  [-AvailabilityViewInterval <Int32>] [-EndTime <IMicrosoftGraphDateTimeZone>] [-Schedules <String[]>]
  [-StartTime <IMicrosoftGraphDateTimeZone>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Get
+### Get1
 ```
 Get-MgUserEventCalendarSchedule -EventId <String> -UserId <String>
  -BodyParameter <IPaths11Iq6NwUsersUserIdEventsEventIdCalendarMicrosoftGraphGetschedulePostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### GetViaIdentityExpanded
+### GetViaIdentityExpanded1
 ```
 Get-MgUserEventCalendarSchedule -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-AvailabilityViewInterval <Int32>] [-EndTime <IMicrosoftGraphDateTimeZone>] [-Schedules <String[]>]
  [-StartTime <IMicrosoftGraphDateTimeZone>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity1
 ```
 Get-MgUserEventCalendarSchedule -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths11Iq6NwUsersUserIdEventsEventIdCalendarMicrosoftGraphGetschedulePostRequestbodyContentApplicationJsonSchema>
@@ -52,7 +52,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: GetExpanded, GetViaIdentityExpanded
+Parameter Sets: GetExpanded1, GetViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: Int32
-Parameter Sets: GetExpanded, GetViaIdentityExpanded
+Parameter Sets: GetExpanded1, GetViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -83,7 +83,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPaths11Iq6NwUsersUserIdEventsEventIdCalendarMicrosoftGraphGetschedulePostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Get, GetViaIdentity
+Parameter Sets: Get1, GetViaIdentity1
 Aliases:
 
 Required: True
@@ -99,7 +99,7 @@ To construct, please use Get-Help -Online and see NOTES section for ENDTIME prop
 
 ```yaml
 Type: IMicrosoftGraphDateTimeZone
-Parameter Sets: GetExpanded, GetViaIdentityExpanded
+Parameter Sets: GetExpanded1, GetViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -114,7 +114,7 @@ key: id of event
 
 ```yaml
 Type: String
-Parameter Sets: GetExpanded, Get
+Parameter Sets: GetExpanded1, Get1
 Aliases:
 
 Required: True
@@ -130,7 +130,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: GetViaIdentityExpanded, GetViaIdentity
+Parameter Sets: GetViaIdentityExpanded1, GetViaIdentity1
 Aliases:
 
 Required: True
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: GetExpanded, GetViaIdentityExpanded
+Parameter Sets: GetExpanded1, GetViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -161,7 +161,7 @@ To construct, please use Get-Help -Online and see NOTES section for STARTTIME pr
 
 ```yaml
 Type: IMicrosoftGraphDateTimeZone
-Parameter Sets: GetExpanded, GetViaIdentityExpanded
+Parameter Sets: GetExpanded1, GetViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -176,7 +176,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: GetExpanded, Get
+Parameter Sets: GetExpanded1, Get1
 Aliases:
 
 Required: True

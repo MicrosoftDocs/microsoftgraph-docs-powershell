@@ -12,26 +12,26 @@ Invoke action assignLicense
 
 ## SYNTAX
 
-### AssignExpanded1 (Default)
+### AssignExpanded (Default)
 ```
 Set-MgUserLicense -UserId <String> [-AddLicenses <IMicrosoftGraphAssignedLicense[]>]
  [-AdditionalProperties <Hashtable>] [-RemoveLicenses <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Assign1
+### Assign
 ```
 Set-MgUserLicense -UserId <String>
  -BodyParameter <IPathsBfhtneUsersUserIdMicrosoftGraphAssignlicensePostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AssignViaIdentityExpanded1
+### AssignViaIdentityExpanded
 ```
 Set-MgUserLicense -InputObject <IUsersActionsIdentity> [-AddLicenses <IMicrosoftGraphAssignedLicense[]>]
  [-AdditionalProperties <Hashtable>] [-RemoveLicenses <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AssignViaIdentity1
+### AssignViaIdentity
 ```
 Set-MgUserLicense -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsBfhtneUsersUserIdMicrosoftGraphAssignlicensePostRequestbodyContentApplicationJsonSchema>
@@ -50,7 +50,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: AssignExpanded1, AssignViaIdentityExpanded1
+Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -66,7 +66,7 @@ To construct, please use Get-Help -Online and see NOTES section for ADDLICENSES 
 
 ```yaml
 Type: IMicrosoftGraphAssignedLicense[]
-Parameter Sets: AssignExpanded1, AssignViaIdentityExpanded1
+Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -82,7 +82,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPathsBfhtneUsersUserIdMicrosoftGraphAssignlicensePostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Assign1, AssignViaIdentity1
+Parameter Sets: Assign, AssignViaIdentity
 Aliases:
 
 Required: True
@@ -98,7 +98,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: AssignViaIdentityExpanded1, AssignViaIdentity1
+Parameter Sets: AssignViaIdentityExpanded, AssignViaIdentity
 Aliases:
 
 Required: True
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: AssignExpanded1, AssignViaIdentityExpanded1
+Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -128,7 +128,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: AssignExpanded1, Assign1
+Parameter Sets: AssignExpanded, Assign
 Aliases:
 
 Required: True

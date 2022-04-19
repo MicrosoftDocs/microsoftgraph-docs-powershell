@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryinboundshareduserprofile
@@ -15,9 +15,8 @@ Update the navigation property inboundSharedUserProfiles in directory
 ### UpdateExpanded (Default)
 ```
 Update-MgDirectoryInboundSharedUserProfile -InboundSharedUserProfileUserId <String>
- [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>] [-DisplayName <String>]
- [-HomeTenantId <String>] [-Id <String>] [-UserId <String>] [-UserPrincipalName <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-HomeTenantId <String>] [-UserId <String>]
+ [-UserPrincipalName <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -29,9 +28,8 @@ Update-MgDirectoryInboundSharedUserProfile -InboundSharedUserProfileUserId <Stri
 ### UpdateViaIdentityExpanded
 ```
 Update-MgDirectoryInboundSharedUserProfile -InputObject <IIdentityDirectoryManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>] [-DisplayName <String>]
- [-HomeTenantId <String>] [-Id <String>] [-UserId <String>] [-UserPrincipalName <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-HomeTenantId <String>] [-UserId <String>]
+ [-UserPrincipalName <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -78,21 +76,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -DeletedDateTime
-.
-
-```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -DisplayName
 .
 
@@ -110,21 +93,6 @@ Accept wildcard characters: False
 
 ### -HomeTenantId
 .
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Id
-Read-only.
 
 ```yaml
 Type: String
