@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgredirectuserinsightsharedlastsharedmethodmicrosoftgraphprintjob
@@ -15,7 +15,7 @@ Invoke action redirect
 ### RedirectExpanded (Default)
 ```
 Invoke-MgRedirectUserInsightSharedLastSharedMethodMicrosoftGraphPrintJob -SharedInsightId <String>
- -UserId <String> [-AdditionalProperties <Hashtable>] [-Configuration <IMicrosoftGraphPrintJobConfiguration>]
+ -UserId <String> [-AdditionalProperties <Hashtable>] [-Configuration <IMicrosoftGraphPrintJobConfiguration1>]
  [-DestinationPrinterId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -30,7 +30,7 @@ Invoke-MgRedirectUserInsightSharedLastSharedMethodMicrosoftGraphPrintJob -Shared
 ### RedirectViaIdentityExpanded
 ```
 Invoke-MgRedirectUserInsightSharedLastSharedMethodMicrosoftGraphPrintJob -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-Configuration <IMicrosoftGraphPrintJobConfiguration>]
+ [-AdditionalProperties <Hashtable>] [-Configuration <IMicrosoftGraphPrintJobConfiguration1>]
  [-DestinationPrinterId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -84,7 +84,7 @@ printJobConfiguration
 To construct, please use Get-Help -Online and see NOTES section for CONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintJobConfiguration
+Type: IMicrosoftGraphPrintJobConfiguration1
 Parameter Sets: RedirectExpanded, RedirectViaIdentityExpanded
 Aliases:
 
@@ -196,7 +196,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintJob
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintJob1
 ## NOTES
 
 ALIASES

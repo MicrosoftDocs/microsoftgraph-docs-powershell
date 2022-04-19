@@ -16,7 +16,7 @@ Represents access package objects.
 ```
 Update-MgEntitlementManagementAccessPackage -AccessPackageId <String>
  [-AccessPackageAssignmentPolicies <IMicrosoftGraphAccessPackageAssignmentPolicy[]>]
- [-AccessPackageCatalog <IMicrosoftGraphAccessPackageCatalog1>]
+ [-AccessPackageCatalog <IMicrosoftGraphAccessPackageCatalog>]
  [-AccessPackageResourceRoleScopes <IMicrosoftGraphAccessPackageResourceRoleScope[]>]
  [-AccessPackagesIncompatibleWith <IMicrosoftGraphAccessPackage[]>] [-AdditionalProperties <Hashtable>]
  [-CatalogId <String>] [-CreatedBy <String>] [-CreatedDateTime <DateTime>] [-Description <String>]
@@ -35,7 +35,7 @@ Update-MgEntitlementManagementAccessPackage -AccessPackageId <String>
 ```
 Update-MgEntitlementManagementAccessPackage -InputObject <IIdentityGovernanceIdentity>
  [-AccessPackageAssignmentPolicies <IMicrosoftGraphAccessPackageAssignmentPolicy[]>]
- [-AccessPackageCatalog <IMicrosoftGraphAccessPackageCatalog1>]
+ [-AccessPackageCatalog <IMicrosoftGraphAccessPackageCatalog>]
  [-AccessPackageResourceRoleScopes <IMicrosoftGraphAccessPackageResourceRoleScope[]>]
  [-AccessPackagesIncompatibleWith <IMicrosoftGraphAccessPackage[]>] [-AdditionalProperties <Hashtable>]
  [-CatalogId <String>] [-CreatedBy <String>] [-CreatedDateTime <DateTime>] [-Description <String>]
@@ -80,7 +80,7 @@ accessPackageCatalog
 To construct, please use Get-Help -Online and see NOTES section for ACCESSPACKAGECATALOG properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageCatalog1
+Type: IMicrosoftGraphAccessPackageCatalog
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -24506,6 +24506,9 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS
 

@@ -19,7 +19,7 @@ New-MgDeviceManagementVirtualEndpointProvisioningPolicy [-AdditionalProperties <
  [-DisplayName <String>] [-DomainJoinConfiguration <IMicrosoftGraphCloudPcDomainJoinConfiguration>]
  [-Id <String>] [-ImageDisplayName <String>] [-ImageId <String>] [-ImageType <String>]
  [-MicrosoftManagedDesktop <IMicrosoftGraphMicrosoftManagedDesktop>] [-OnPremisesConnectionId <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WindowsSettings <IMicrosoftGraphCloudPcWindowsSettings>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -217,6 +217,22 @@ To ensure that Cloud PCs have network connectivity and that they domain join, ch
 
 ```yaml
 Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WindowsSettings
+cloudPcWindowsSettings
+To construct, please use Get-Help -Online and see NOTES section for WINDOWSSETTINGS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCloudPcWindowsSettings
 Parameter Sets: CreateExpanded
 Aliases:
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementaccesspackageassignmentapproval
@@ -22,7 +22,7 @@ Update-MgEntitlementManagementAccessPackageAssignmentApproval -ApprovalId <Strin
 ### Update
 ```
 Update-MgEntitlementManagementAccessPackageAssignmentApproval -ApprovalId <String>
- -BodyParameter <IMicrosoftGraphApproval1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphApproval> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -35,7 +35,7 @@ Update-MgEntitlementManagementAccessPackageAssignmentApproval -InputObject <IIde
 ### UpdateViaIdentity
 ```
 Update-MgEntitlementManagementAccessPackageAssignmentApproval -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphApproval1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphApproval> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -80,7 +80,7 @@ approval
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphApproval1
+Type: IMicrosoftGraphApproval
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -190,7 +190,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApproval1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApproval
 ## OUTPUTS
 
 ### System.Boolean

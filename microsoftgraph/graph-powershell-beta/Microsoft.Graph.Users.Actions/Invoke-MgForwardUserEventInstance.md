@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgforwardusereventinstance
@@ -12,28 +12,28 @@ Invoke action forward
 
 ## SYNTAX
 
-### ForwardExpanded (Default)
+### ForwardExpanded1 (Default)
 ```
 Invoke-MgForwardUserEventInstance -EventId <String> -EventId1 <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-Comment <String>] [-ToRecipients <IMicrosoftGraphRecipient[]>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Forward
+### Forward1
 ```
 Invoke-MgForwardUserEventInstance -EventId <String> -EventId1 <String> -UserId <String>
  -BodyParameter <IPaths1K9ImduUsersUserIdEventsEventIdInstancesEventId1MicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ForwardViaIdentityExpanded
+### ForwardViaIdentityExpanded1
 ```
 Invoke-MgForwardUserEventInstance -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-Comment <String>] [-ToRecipients <IMicrosoftGraphRecipient[]>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### ForwardViaIdentity
+### ForwardViaIdentity1
 ```
 Invoke-MgForwardUserEventInstance -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths1K9ImduUsersUserIdEventsEventIdInstancesEventId1MicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>
@@ -52,7 +52,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: ForwardExpanded, ForwardViaIdentityExpanded
+Parameter Sets: ForwardExpanded1, ForwardViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -68,7 +68,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPaths1K9ImduUsersUserIdEventsEventIdInstancesEventId1MicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Forward, ForwardViaIdentity
+Parameter Sets: Forward1, ForwardViaIdentity1
 Aliases:
 
 Required: True
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: ForwardExpanded, ForwardViaIdentityExpanded
+Parameter Sets: ForwardExpanded1, ForwardViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -98,7 +98,7 @@ key: id of event
 
 ```yaml
 Type: String
-Parameter Sets: ForwardExpanded, Forward
+Parameter Sets: ForwardExpanded1, Forward1
 Aliases:
 
 Required: True
@@ -113,7 +113,7 @@ key: id of event
 
 ```yaml
 Type: String
-Parameter Sets: ForwardExpanded, Forward
+Parameter Sets: ForwardExpanded1, Forward1
 Aliases:
 
 Required: True
@@ -129,7 +129,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: ForwardViaIdentityExpanded, ForwardViaIdentity
+Parameter Sets: ForwardViaIdentityExpanded1, ForwardViaIdentity1
 Aliases:
 
 Required: True
@@ -160,7 +160,7 @@ To construct, please use Get-Help -Online and see NOTES section for TORECIPIENTS
 
 ```yaml
 Type: IMicrosoftGraphRecipient[]
-Parameter Sets: ForwardExpanded, ForwardViaIdentityExpanded
+Parameter Sets: ForwardExpanded1, ForwardViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -175,7 +175,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: ForwardExpanded, Forward
+Parameter Sets: ForwardExpanded1, Forward1
 Aliases:
 
 Required: True

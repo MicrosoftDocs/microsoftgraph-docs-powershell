@@ -25,7 +25,8 @@ Update-MgRoleManagementDirectory [-AdditionalProperties <Hashtable>] [-Id <Strin
  [-RoleDefinitions <IMicrosoftGraphUnifiedRoleDefinition[]>]
  [-RoleEligibilityScheduleInstances <IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance[]>]
  [-RoleEligibilityScheduleRequests <IMicrosoftGraphUnifiedRoleEligibilityScheduleRequest[]>]
- [-RoleEligibilitySchedules <IMicrosoftGraphUnifiedRoleEligibilitySchedule[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [-RoleEligibilitySchedules <IMicrosoftGraphUnifiedRoleEligibilitySchedule[]>]
+ [-TransitiveRoleAssignments <IMicrosoftGraphUnifiedRoleAssignment1[]>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -254,6 +255,22 @@ To construct, please use Get-Help -Online and see NOTES section for ROLEELIGIBIL
 
 ```yaml
 Type: IMicrosoftGraphUnifiedRoleEligibilitySchedule[]
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TransitiveRoleAssignments
+.
+To construct, please use Get-Help -Online and see NOTES section for TRANSITIVEROLEASSIGNMENTS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphUnifiedRoleAssignment1[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -1054,6 +1071,9 @@ ROLEELIGIBILITYSCHEDULES <IMicrosoftGraphUnifiedRoleEligibilitySchedule[]>: .
     - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS
 

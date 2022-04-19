@@ -15,9 +15,10 @@ Represents the policy that governs which subjects can request or be assigned an 
 ### CreateExpanded (Default)
 ```
 New-MgEntitlementManagementAccessPackageAssignmentPolicy [-AccessPackage <IMicrosoftGraphAccessPackage>]
- [-AccessPackageCatalog <IMicrosoftGraphAccessPackageCatalog1>] [-AccessPackageId <String>]
+ [-AccessPackageCatalog <IMicrosoftGraphAccessPackageCatalog>] [-AccessPackageId <String>]
  [-AccessReviewSettings <IMicrosoftGraphAssignmentReviewSettings>] [-AdditionalProperties <Hashtable>]
- [-CanExtend] [-CreatedBy <String>] [-CreatedDateTime <DateTime>] [-Description <String>]
+ [-CanExtend] [-CreatedBy <String>] [-CreatedDateTime <DateTime>]
+ [-CustomExtensionHandlers <IMicrosoftGraphCustomExtensionHandler[]>] [-Description <String>]
  [-DisplayName <String>] [-DurationInDays <Int32>] [-ExpirationDateTime <DateTime>] [-Id <String>]
  [-ModifiedBy <String>] [-ModifiedDateTime <DateTime>] [-Questions <IMicrosoftGraphAccessPackageQuestion[]>]
  [-RequestApprovalSettings <IMicrosoftGraphApprovalSettings>]
@@ -107,7 +108,7 @@ accessPackageCatalog
 To construct, please use Get-Help -Online and see NOTES section for ACCESSPACKAGECATALOG properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageCatalog1
+Type: IMicrosoftGraphAccessPackageCatalog
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -216,6 +217,23 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
 Type: DateTime
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CustomExtensionHandlers
+The collection of stages when to execute one or more custom access package workflow extensions.
+Supports $expand.
+To construct, please use Get-Help -Online and see NOTES section for CUSTOMEXTENSIONHANDLERS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCustomExtensionHandler[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -12528,6 +12546,9 @@ REQUESTORSETTINGS <IMicrosoftGraphRequestorSettings>: requestorSettings
   - `[ScopeType <String>]`: Who can request. One of NoSubjects, SpecificDirectorySubjects, SpecificConnectedOrganizationSubjects, AllConfiguredConnectedOrganizationSubjects, AllExistingConnectedOrganizationSubjects, AllExistingDirectoryMemberUsers, AllExistingDirectorySubjects or AllExternalSubjects.
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS
 

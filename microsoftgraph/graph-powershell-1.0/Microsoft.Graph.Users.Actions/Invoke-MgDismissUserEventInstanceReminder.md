@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgdismissusereventinstancereminder
@@ -12,13 +12,13 @@ Invoke action dismissReminder
 
 ## SYNTAX
 
-### Dismiss1 (Default)
+### Dismiss (Default)
 ```
 Invoke-MgDismissUserEventInstanceReminder -EventId <String> -EventId1 <String> -UserId <String> [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DismissViaIdentity1
+### DismissViaIdentity
 ```
 Invoke-MgDismissUserEventInstanceReminder -InputObject <IUsersActionsIdentity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -36,7 +36,7 @@ key: id of event
 
 ```yaml
 Type: String
-Parameter Sets: Dismiss1
+Parameter Sets: Dismiss
 Aliases:
 
 Required: True
@@ -51,7 +51,7 @@ key: id of event
 
 ```yaml
 Type: String
-Parameter Sets: Dismiss1
+Parameter Sets: Dismiss
 Aliases:
 
 Required: True
@@ -67,7 +67,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: DismissViaIdentity1
+Parameter Sets: DismissViaIdentity
 Aliases:
 
 Required: True
@@ -97,7 +97,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: Dismiss1
+Parameter Sets: Dismiss
 Aliases:
 
 Required: True

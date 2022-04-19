@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/update-mguserperson
@@ -8,9 +8,10 @@ schema: 2.0.0
 # Update-MgUserPerson
 
 ## SYNOPSIS
-People that are relevant to the user.
 Read-only.
-Nullable.
+The most relevant people to the user.
+The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships.
+A person is an aggregation of information from across mail, contacts and social networks.
 
 ## SYNTAX
 
@@ -51,9 +52,10 @@ Update-MgUserPerson -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoftGra
 ```
 
 ## DESCRIPTION
-People that are relevant to the user.
 Read-only.
-Nullable.
+The most relevant people to the user.
+The collection is ordered by their relevance to the user, which is determined by the user's communication, collaboration and business relationships.
+A person is an aggregation of information from across mail, contacts and social networks.
 
 ## EXAMPLES
 

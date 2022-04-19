@@ -11,6 +11,12 @@ Locale: en-US
 Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Users.Functions Cmdlets
+### [Export-MgUserDeviceAndAppManagementData](Export-MgUserDeviceAndAppManagementData.md)
+Invoke function exportDeviceAndAppManagementData
+
+### [Find-MgUserRoom](Find-MgUserRoom.md)
+Invoke function findRooms
+
 ### [Find-MgUserRoomList](Find-MgUserRoomList.md)
 Invoke function findRoomLists
 
@@ -31,6 +37,9 @@ Invoke function delta
 
 ### [Get-MgUserDelta](Get-MgUserDelta.md)
 Invoke function delta
+
+### [Get-MgUserEffectiveDeviceEnrollmentConfiguration](Get-MgUserEffectiveDeviceEnrollmentConfiguration.md)
+Invoke function getEffectiveDeviceEnrollmentConfigurations
 
 ### [Get-MgUserEventDelta](Get-MgUserEventDelta.md)
 Invoke function delta
@@ -71,6 +80,9 @@ Invoke function getFileVaultKey
 ### [Get-MgUserManagedDeviceNonCompliantSetting](Get-MgUserManagedDeviceNonCompliantSetting.md)
 Invoke function getNonCompliantSettings
 
+### [Get-MgUserManagedDeviceOemWarranty](Get-MgUserManagedDeviceOemWarranty.md)
+Invoke function getOemWarranty
+
 ### [Get-MgUserManagedDeviceWithAppFailure](Get-MgUserManagedDeviceWithAppFailure.md)
 Retrieves the list of devices with failed apps
 
@@ -81,6 +93,15 @@ Invoke function delta
 Invoke function getRecentNotebooks
 
 ### [Get-MgUserPlannerAllDelta](Get-MgUserPlannerAllDelta.md)
+Invoke function delta
+
+### [Get-MgUserTaskAlltaskDelta](Get-MgUserTaskAlltaskDelta.md)
+Invoke function delta
+
+### [Get-MgUserTaskListDelta](Get-MgUserTaskListDelta.md)
+Invoke function delta
+
+### [Get-MgUserTaskListTaskDelta](Get-MgUserTaskListTaskDelta.md)
 Invoke function delta
 
 ### [Get-MgUserTodoListDelta](Get-MgUserTodoListDelta.md)
@@ -108,6 +129,12 @@ Invoke function filterByCurrentUser
 Invoke function filterByCurrentUser
 
 ### [Invoke-MgFilterUserPendingAccessReviewInstanceDecision](Invoke-MgFilterUserPendingAccessReviewInstanceDecision.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterUserPendingAccessReviewInstanceStage](Invoke-MgFilterUserPendingAccessReviewInstanceStage.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgFilterUserPendingAccessReviewInstanceStageDecision](Invoke-MgFilterUserPendingAccessReviewInstanceStageDecision.md)
 Invoke function filterByCurrentUser
 
 ### [Invoke-MgPendingUserApp](Invoke-MgPendingUserApp.md)

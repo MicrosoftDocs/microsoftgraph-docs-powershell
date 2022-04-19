@@ -53,7 +53,7 @@ Invoke function getAttackSimulationSimulationUserCoverage
 Container for navigation properties for Azure AD authentication methods resources.
 
 ### [Get-MgReportAuthenticationMethodUserRegistrationDetail](Get-MgReportAuthenticationMethodUserRegistrationDetail.md)
-Get userRegistrationDetails from reports
+Represents the state of a user's authentication methods, including which methods are registered and which features the user is registered and capable of (such as multi-factor authentication, self-service password reset, and passwordless authentication).
 
 ### [Get-MgReportAzureAdApplicationSign](Get-MgReportAzureAdApplicationSign.md)
 Invoke function getAzureADApplicationSignInSummary
@@ -323,17 +323,17 @@ Invoke function getYammerGroupsActivityGroupCounts
 Invoke function usersRegisteredByFeature
 
 ### [New-MgReportAuthenticationMethodUserRegistrationDetail](New-MgReportAuthenticationMethodUserRegistrationDetail.md)
-Create new navigation property to userRegistrationDetails for reports
+Represents the state of a user's authentication methods, including which methods are registered and which features the user is registered and capable of (such as multi-factor authentication, self-service password reset, and passwordless authentication).
 
 ### [Remove-MgDeviceManagementReport](Remove-MgDeviceManagementReport.md)
 Reports singleton
 
 ### [Remove-MgReportAuthenticationMethodUserRegistrationDetail](Remove-MgReportAuthenticationMethodUserRegistrationDetail.md)
-Delete navigation property userRegistrationDetails for reports
+Represents the state of a user's authentication methods, including which methods are registered and which features the user is registered and capable of (such as multi-factor authentication, self-service password reset, and passwordless authentication).
 
 ### [Update-MgDeviceManagementReport](Update-MgDeviceManagementReport.md)
 Reports singleton
 
 ### [Update-MgReportAuthenticationMethodUserRegistrationDetail](Update-MgReportAuthenticationMethodUserRegistrationDetail.md)
-Update the navigation property userRegistrationDetails in reports
+Represents the state of a user's authentication methods, including which methods are registered and which features the user is registered and capable of (such as multi-factor authentication, self-service password reset, and passwordless authentication).
 

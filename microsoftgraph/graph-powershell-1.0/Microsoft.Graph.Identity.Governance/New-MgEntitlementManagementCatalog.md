@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementcatalog
@@ -22,7 +22,7 @@ New-MgEntitlementManagementCatalog [-AccessPackages <IMicrosoftGraphAccessPackag
 
 ### Create
 ```
-New-MgEntitlementManagementCatalog -BodyParameter <IMicrosoftGraphAccessPackageCatalog> [-WhatIf] [-Confirm]
+New-MgEntitlementManagementCatalog -BodyParameter <IMicrosoftGraphAccessPackageCatalog1> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -72,7 +72,7 @@ accessPackageCatalog
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageCatalog
+Type: IMicrosoftGraphAccessPackageCatalog1
 Parameter Sets: Create
 Aliases:
 
@@ -244,10 +244,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageCatalog
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageCatalog1
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageCatalog
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageCatalog1
 ## NOTES
 
 ALIASES

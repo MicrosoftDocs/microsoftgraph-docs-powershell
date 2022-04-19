@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/invoke-mganswercommunicationcall
@@ -12,7 +12,7 @@ Invoke action answer
 
 ## SYNTAX
 
-### AnswerExpanded (Default)
+### AnswerExpanded1 (Default)
 ```
 Invoke-MgAnswerCommunicationCall -CallId <String> [-AcceptedModalities <String[]>]
  [-AdditionalProperties <Hashtable>] [-CallOptions <Hashtable>] [-CallbackUri <String>]
@@ -20,14 +20,14 @@ Invoke-MgAnswerCommunicationCall -CallId <String> [-AcceptedModalities <String[]
  [<CommonParameters>]
 ```
 
-### Answer
+### Answer1
 ```
 Invoke-MgAnswerCommunicationCall -CallId <String>
- -BodyParameter <IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema>
+ -BodyParameter <IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema1>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AnswerViaIdentityExpanded
+### AnswerViaIdentityExpanded1
 ```
 Invoke-MgAnswerCommunicationCall -InputObject <ICloudCommunicationsIdentity> [-AcceptedModalities <String[]>]
  [-AdditionalProperties <Hashtable>] [-CallOptions <Hashtable>] [-CallbackUri <String>]
@@ -35,10 +35,10 @@ Invoke-MgAnswerCommunicationCall -InputObject <ICloudCommunicationsIdentity> [-A
  [<CommonParameters>]
 ```
 
-### AnswerViaIdentity
+### AnswerViaIdentity1
 ```
 Invoke-MgAnswerCommunicationCall -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema>
+ -BodyParameter <IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema1>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -54,7 +54,7 @@ Invoke action answer
 
 ```yaml
 Type: String[]
-Parameter Sets: AnswerExpanded, AnswerViaIdentityExpanded
+Parameter Sets: AnswerExpanded1, AnswerViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -69,7 +69,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: AnswerExpanded, AnswerViaIdentityExpanded
+Parameter Sets: AnswerExpanded1, AnswerViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -84,8 +84,8 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Answer, AnswerViaIdentity
+Type: IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema1
+Parameter Sets: Answer1, AnswerViaIdentity1
 Aliases:
 
 Required: True
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: AnswerExpanded, AnswerViaIdentityExpanded
+Parameter Sets: AnswerExpanded1, AnswerViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -115,7 +115,7 @@ key: id of call
 
 ```yaml
 Type: String
-Parameter Sets: AnswerExpanded, Answer
+Parameter Sets: AnswerExpanded1, Answer1
 Aliases:
 
 Required: True
@@ -130,7 +130,7 @@ incomingCallOptions
 
 ```yaml
 Type: Hashtable
-Parameter Sets: AnswerExpanded, AnswerViaIdentityExpanded
+Parameter Sets: AnswerExpanded1, AnswerViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -146,7 +146,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ICloudCommunicationsIdentity
-Parameter Sets: AnswerViaIdentityExpanded, AnswerViaIdentity
+Parameter Sets: AnswerViaIdentityExpanded1, AnswerViaIdentity1
 Aliases:
 
 Required: True
@@ -162,7 +162,7 @@ To construct, please use Get-Help -Online and see NOTES section for MEDIACONFIG 
 
 ```yaml
 Type: IMicrosoftGraphMediaConfig1
-Parameter Sets: AnswerExpanded, AnswerViaIdentityExpanded
+Parameter Sets: AnswerExpanded1, AnswerViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: Int32
-Parameter Sets: AnswerExpanded, AnswerViaIdentityExpanded
+Parameter Sets: AnswerExpanded1, AnswerViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -239,7 +239,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-### Microsoft.Graph.PowerShell.Models.IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema1
 ## OUTPUTS
 
 ### System.Boolean
@@ -252,12 +252,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER <IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema1>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AcceptedModalities <String[]>]`: 
-  - `[CallOptions <IMicrosoftGraphIncomingCallOptions>]`: incomingCallOptions
+  - `[CallOptions <IMicrosoftGraphIncomingCallOptions1>]`: incomingCallOptions
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[HideBotAfterEscalation <Boolean?>]`: 
+    - `[IsContentSharingNotificationEnabled <Boolean?>]`: 
   - `[CallbackUri <String>]`: 
   - `[MediaConfig <IMicrosoftGraphMediaConfig1>]`: mediaConfig
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -270,6 +271,7 @@ INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[CallId <String>]`: key: id of call
   - `[CallRecordId <String>]`: key: id of callRecord
   - `[CommsOperationId <String>]`: key: id of commsOperation
+  - `[ContentSharingSessionId <String>]`: key: id of contentSharingSession
   - `[MeetingAttendanceReportId <String>]`: key: id of meetingAttendanceReport
   - `[MeetingRegistrationQuestionId <String>]`: key: id of meetingRegistrationQuestion
   - `[OnlineMeetingId <String>]`: key: id of onlineMeeting

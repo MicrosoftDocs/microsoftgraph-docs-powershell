@@ -19,7 +19,7 @@ Update-MgPrintPrinter -PrinterId <String> [-AdditionalProperties <Hashtable>]
  [-Defaults <IMicrosoftGraphPrinterDefaults1>] [-DisplayName <String>] [-HasPhysicalDevice] [-Id <String>]
  [-IsAcceptingJobs] [-IsShared] [-Jobs <IMicrosoftGraphPrintJob1[]>] [-LastSeenDateTime <DateTime>]
  [-Location <IMicrosoftGraphPrinterLocation>] [-Manufacturer <String>] [-Model <String>]
- [-RegisteredDateTime <DateTime>] [-Shares <IMicrosoftGraphPrinterShare[]>]
+ [-RegisteredDateTime <DateTime>] [-Shares <IMicrosoftGraphPrinterShare1[]>]
  [-Status <IMicrosoftGraphPrinterStatus1>] [-TaskTriggers <IMicrosoftGraphPrintTaskTrigger[]>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -37,7 +37,7 @@ Update-MgPrintPrinter -InputObject <IDevicesCloudPrintIdentity> [-AdditionalProp
  [-Defaults <IMicrosoftGraphPrinterDefaults1>] [-DisplayName <String>] [-HasPhysicalDevice] [-Id <String>]
  [-IsAcceptingJobs] [-IsShared] [-Jobs <IMicrosoftGraphPrintJob1[]>] [-LastSeenDateTime <DateTime>]
  [-Location <IMicrosoftGraphPrinterLocation>] [-Manufacturer <String>] [-Model <String>]
- [-RegisteredDateTime <DateTime>] [-Shares <IMicrosoftGraphPrinterShare[]>]
+ [-RegisteredDateTime <DateTime>] [-Shares <IMicrosoftGraphPrinterShare1[]>]
  [-Status <IMicrosoftGraphPrinterStatus1>] [-TaskTriggers <IMicrosoftGraphPrintTaskTrigger[]>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -359,7 +359,7 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for SHARES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrinterShare[]
+Type: IMicrosoftGraphPrinterShare1[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -6000,6 +6000,9 @@ TASKTRIGGERS <IMicrosoftGraphPrintTaskTrigger[]>: A list of task triggers that a
   - `[Event <String>]`: printEvent
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS
 

@@ -12,12 +12,12 @@ Invoke function delta
 
 ## SYNTAX
 
-### Delta1 (Default)
+### Delta (Default)
 ```
 Get-MgUserMailFolderMessageDelta -MailFolderId <String> -UserId <String> [<CommonParameters>]
 ```
 
-### DeltaViaIdentity1
+### DeltaViaIdentity
 ```
 Get-MgUserMailFolderMessageDelta -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
 ```
@@ -35,7 +35,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersFunctionsIdentity
-Parameter Sets: DeltaViaIdentity1
+Parameter Sets: DeltaViaIdentity
 Aliases:
 
 Required: True
@@ -50,7 +50,7 @@ key: id of mailFolder
 
 ```yaml
 Type: String
-Parameter Sets: Delta1
+Parameter Sets: Delta
 Aliases:
 
 Required: True
@@ -65,7 +65,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: Delta1
+Parameter Sets: Delta
 Aliases:
 
 Required: True

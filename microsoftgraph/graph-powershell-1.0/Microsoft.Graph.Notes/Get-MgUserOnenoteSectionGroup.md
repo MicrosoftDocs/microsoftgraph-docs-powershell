@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/get-mguseronenotesectiongroup
@@ -14,14 +14,14 @@ Nullable.
 
 ## SYNTAX
 
-### List (Default)
+### List1 (Default)
 ```
 Get-MgUserOnenoteSectionGroup -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
  [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### List1
+### List2
 ```
 Get-MgUserOnenoteSectionGroup -SectionGroupId <String> -UserId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
@@ -54,7 +54,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List, List1
+Parameter Sets: List1, List2
 Aliases:
 
 Required: False
@@ -70,7 +70,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List, List1
+Parameter Sets: List1, List2
 Aliases: CV
 
 Required: False
@@ -100,7 +100,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List, List1
+Parameter Sets: List1, List2
 Aliases:
 
 Required: False
@@ -131,7 +131,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List, List1
+Parameter Sets: List1, List2
 Aliases:
 
 Required: False
@@ -161,7 +161,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List, List1
+Parameter Sets: List1, List2
 Aliases:
 
 Required: False
@@ -176,7 +176,7 @@ key: id of sectionGroup
 
 ```yaml
 Type: String
-Parameter Sets: List1, Get
+Parameter Sets: List2, Get
 Aliases:
 
 Required: True
@@ -191,7 +191,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List, List1
+Parameter Sets: List1, List2
 Aliases: OrderBy
 
 Required: False
@@ -206,7 +206,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List, List1
+Parameter Sets: List1, List2
 Aliases: Limit
 
 Required: False
@@ -221,7 +221,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: List, List1, Get
+Parameter Sets: List1, List2, Get
 Aliases:
 
 Required: True
@@ -236,7 +236,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List, List1
+Parameter Sets: List1, List2
 Aliases:
 
 Required: False

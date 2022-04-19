@@ -20,12 +20,13 @@ New-MgPrintPrinterShare [-AdditionalProperties <Hashtable>] [-AllowAllUsers]
  [-Defaults <IMicrosoftGraphPrinterDefaults>] [-DisplayName <String>] [-Id <String>] [-IsAcceptingJobs]
  [-Jobs <IMicrosoftGraphPrintJob[]>] [-Location <IMicrosoftGraphPrinterLocation1>] [-Manufacturer <String>]
  [-Model <String>] [-Name <String>] [-Printer <IMicrosoftGraphPrinter1>]
- [-Status <IMicrosoftGraphPrinterStatus>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Status <IMicrosoftGraphPrinterStatus>] [-ViewPoint <IMicrosoftGraphPrinterShareViewpoint>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgPrintPrinterShare -BodyParameter <IMicrosoftGraphPrinterShare1> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgPrintPrinterShare -BodyParameter <IMicrosoftGraphPrinterShare> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -103,7 +104,7 @@ printerShare
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrinterShare1
+Type: IMicrosoftGraphPrinterShare
 Parameter Sets: Create
 Aliases:
 
@@ -316,6 +317,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ViewPoint
+printerShareViewpoint
+To construct, please use Get-Help -Online and see NOTES section for VIEWPOINT properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphPrinterShareViewpoint
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -352,10 +369,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrinterShare1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrinterShare
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrinterShare1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrinterShare
 ## NOTES
 
 ALIASES
@@ -16617,6 +16634,9 @@ STATUS <IMicrosoftGraphPrinterStatus>: printerStatus
   - `[State <String>]`: printerProcessingState
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS
 

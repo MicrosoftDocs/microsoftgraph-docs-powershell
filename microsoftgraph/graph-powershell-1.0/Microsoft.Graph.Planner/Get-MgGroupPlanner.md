@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/get-mggroupplanner
@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgGroupPlanner
 
 ## SYNOPSIS
-Entry-point to Planner resource that might exist for a Unified Group.
+Selective Planner services available to the group.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -24,7 +26,9 @@ Get-MgGroupPlanner -InputObject <IPlannerIdentity> [-ExpandProperty <String[]>] 
 ```
 
 ## DESCRIPTION
-Entry-point to Planner resource that might exist for a Unified Group.
+Selective Planner services available to the group.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
