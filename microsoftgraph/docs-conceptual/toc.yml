@@ -19,7 +19,11 @@
     - name: Manage access to resources
       href: tutorial-entitlement-management.md
     - name: Assign Azure AD roles in PIM
-      href: tutorial-pim.md                
+      href: tutorial-pim.md
+    - name: Query parameters
+      items:
+        - name: Use query parameters
+          href: use-query-parameters.md                  
 - name: Migrate to Microsoft Graph PowerShell
   items:   
   - name: Migrate from Azure AD PowerShell

@@ -1,17 +1,17 @@
 ---
-title: "Use query parameters to customize responses"
-description: "Learn how to use optional query parameters in Microsoft Graph PowerShell SDK"
+title: "Use query parameters to customize PowerShell query outputs"
+description: "Learn how to use optional query parameters in Microsoft Graph PowerShell SDK to customize the output"
 ms.topic: conceptual
-ms.date: 03/07/2022
+ms.date: 04/20/2022
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
-ms.reviewer: darrmi, maisarissi
+ms.reviewer: maisarissi
 ---
 
-# Use query parameters to customize responses
+# Use query parameters to customize PowerShell query outputs
 
-The Microsoft Graph PowerShell SDK supports optional query parameters that you can use to specify and control the amount of data returned in a response. The support for the exact query parameters varies from one cmdlet to another, and depending on the profile, can differ between the v1.0 and beta endpoints.
+Microsoft Graph PowerShell SDK supports optional query parameters you can use to control the amount of data returned in an output. The support for the exact query parameters varies from one cmdlet to another, and depending on the profile, can differ between the v1.0 and beta endpoints.
 
 ## OData system query options
 
@@ -32,7 +32,7 @@ Microsoft PowerShell SDK cmdlets may support one or more of the following OData 
 
 ## Count parameter
 
-Use the `-Count` query parameter to store the count of the total number of items in a collection in the specified count variable.
+Use the `-Count` query parameter to store the count of the total number of items in a collection in the specified count variable. On resources that derive from [DirectoryObjects](/powershell/module/microsoft.graph.directoryobjects/?view=graph-powershell-1.0&preserve-view=true), `-Count` is only supported in [advanced queries](/graph/aad-advanced-queries).
 
 For example, the following command returns all the users and stores their count in the variable `$userCount`. Querying the variable will return the count of all the users.
 
@@ -42,7 +42,7 @@ Get-MgUser -ConsistencyLevel eventual -Count userCount
 $userCount
 ```
 
-The `-Count` query parameter is supported for these modules which represent resources and their relationships that derive from [DirectoryObjects](/powershell/module/microsoft.graph.directoryobjects/?view=graph-powershell-1.0&preserve-view=true):
+The `-Count` query parameter is supported for these modules that represent resources and their relationships that derive from [DirectoryObjects](/powershell/module/microsoft.graph.directoryobjects/?view=graph-powershell-1.0&preserve-view=true) and only in [advanced queries](/graph/aad-advanced-queries).
 - [Applications](/powershell/module/microsoft.graph.applications/?view=graph-powershell-1.0&preserve-view=true)
 - [orgContact](/graph/api/resources/orgcontact?view=graph-rest-beta&preserve-view=true)
 - [devices](/powershell/module/microsoft.graph.devicemanagement/?view=graph-powershell-1.0&preserve-view=true)
@@ -51,7 +51,7 @@ The `-Count` query parameter is supported for these modules which represent reso
 
 ## Expand parameter
 
-Many Microsoft Graph resources expose both declared properties of the resource as well as its relationships with other resources. These relationships are also called reference properties or navigation properties, and they can reference either a single resource or a collection of resources. For example, the mail folders, manager, and direct reports of a user are all exposed as relationships.
+Many Microsoft Graph resources expose both declared properties of the resource and its relationships with other resources. These relationships are also called reference properties or navigation properties, and they can reference either a single resource or a collection of resources. For example, the mail folders, manager, and direct reports of a user are all exposed as relationships.
 
 You can query either the properties of a resource or one of its relationships in a single command, but not both. You can use the `-Expand` query string parameter to include the expanded resource or collection referenced by a single relationship (navigation property) in your results.
 
@@ -106,7 +106,7 @@ Id                                   DisplayName    Mail                 UserPri
 1bfced9a-af12-4fde-99e5-4fffd324aa7f Joni Sherman   JoniS@Contoso.com    JoniS@Contoso.com
 ```
 
-Support for `-Filter` operators varies across Microsoft Graph PowerShell cmdlets. The following logical operators are generally supported:
+Support for `-Filter` operators varies across Microsoft Graph PowerShell cmdlets. The following logical operators are supported:
 
 |Operator type|Operator|
 |------|------|
@@ -117,7 +117,7 @@ Support for `-Filter` operators varies across Microsoft Graph PowerShell cmdlets
 |Functions|&#8226; Starts with `startsWith`<br> &#8226; Ends with `endsWith` <br> &#8226; Contains `contains`|
 
 >[!Note]
->Support for these operators varies by module and some properties support `-Filter` only in [advanced query capabilities](/graph/aad-advanced-queries?tabs=powershell).
+>Support for these operators varies by module and some properties support `-Filter` only in [advanced queries](/graph/aad-advanced-queries?tabs=powershell).
 
 ## OrderBy parameter
 
@@ -155,6 +155,9 @@ Id                                   DisplayName   Mail               UserPrinci
 6328a8a3-9e05-498f-8844-20ba3ee2ad18 Delia Dennis                     DeliaD@Contoso.com
 ```
 
+>[!Note]
+>Support for `-Search` varies by module and some properties support `-Search` only in [advanced queries](/graph/aad-advanced-queries?tabs=powershell).
+
 ## Select parameter
 
 Use the `-Select` query parameter to return a set of properties that are different from the default set for an individual resource or a collection of resources. With `-Select`, you can specify a subset or a superset of the default properties.
@@ -176,7 +179,7 @@ daf80309-1a1f-459d-91b6-7ae5673bc2f2 MOD Administrator
 f0735e7b-4ffa-4150-b6a8-7d79e08803cc Bianca Pisani
 ```
 
-In general, we recommend that you use `-Select` to limit the properties returned by a query to those needed by your app. This is especially true of queries that might potentially return a large result set. Limiting the properties returned in each row will reduce network load and help improve your app's performance.
+We recommend that you use `-Select` to limit the properties returned by a query to those properties needed by your app. This is especially true of queries that might potentially return a large result set. Limiting the properties returned in each row will reduce network load and help improve your app's performance.
 
  In `v1.0`, some Azure AD resources that derive from [DirectoryObject](/graph/api/resources/directoryobject), like [User](/graph/api/resources/user) and [Group](/graph/api/resources/group), return a limited, default subset of properties on reads. For these resources, you must use `-Select` to return properties outside of the default set.  
 
@@ -204,7 +207,7 @@ daf80309-1a1f-459d-91b6-7ae5673bc2f2 MOD Administrator admin@Contoso.com  admin@
 
 ## Error handling for query parameters
 
-Some requests will return an error message if a specified query parameter is not supported. For example, you cannot use the `-Contains` operator on the `DisplayName` property.
+Some requests will return an error message if a specified query parameter isn't supported. For example, you can't use the `-Contains` operator on the `DisplayName` property.
 
 ```powershell
 Get-MgUser -Filter "Contains(DisplayName, 'Test')"
@@ -216,4 +219,4 @@ At line:1 char:1
 + Get-MgUser -Filter "Contains(DisplayName, 'Test')"
 ```
 
-However, it is important to note that query parameters specified in a request might fail silently. This can be true for unsupported query parameters as well as for unsupported combinations of query parameters. In these cases, you should examine the data returned by the request to determine whether the query parameters you specified had the desired effect.
+However, it's important to note that query parameters specified in a request might fail silently. This can be true for unsupported query parameters and for unsupported combinations of query parameters. In these cases, you should examine the data returned by the request to determine whether the query parameters you specified had the desired effect.
