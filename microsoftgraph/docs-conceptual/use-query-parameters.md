@@ -15,13 +15,13 @@ Microsoft Graph PowerShell SDK supports optional query parameters you can use to
 
 ## OData system query options
 
-Microsoft PowerShell SDK cmdlets may support one or more of the following OData system query options. These options are only supported in the GET operations.
+Microsoft PowerShell SDK cmdlets may support one or more of the following OData system query options. These query options are compatible with [OData V4.0 query language](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752356) and are only supported in the GET operations.
 
 >[!TIP]
 >OData query options in the Microsoft Graph API use lower case names and specify the dollar ($) prefix while in Microsoft Graph PowerShell SDK, their names are Pascal-cased and prefixed with a hyphen (-). For example, `$count` and `$orderBy` are to Microsoft Graph API while `-Count` and `-OrderBy` respectively, are to Microsoft Graph PowerShell SDK.
 
 |Name|Description|Example|
-|-----|----|-----|
+|--------|----|-----|
 | [-Count](#count-parameter) |Retrieves the total count of matching resources|`Get-MgUser -ConsistencyLevel eventual -Count count`<br>`$count`|
 | [-Expand](#expand-parameter)| Retrieves related resources|`Get-MgGroup -GroupId '0e06b38f-931a-47db-9a9a-60ab5f492005' -Expand members \| Select -ExpandProperty members`|
 | [-Filter](#filter-parameter)| Filters results (rows)|`Get-MgUser -Filter "startsWith(DisplayName, 'Conf')"`|
@@ -44,8 +44,8 @@ $userCount
 
 The `-Count` query parameter is supported for these modules that represent resources and their relationships that derive from [DirectoryObjects](/powershell/module/microsoft.graph.directoryobjects/?view=graph-powershell-1.0&preserve-view=true) and only in [advanced queries](/graph/aad-advanced-queries).
 - [Applications](/powershell/module/microsoft.graph.applications/?view=graph-powershell-1.0&preserve-view=true)
-- [orgContact](/graph/api/resources/orgcontact?view=graph-rest-beta&preserve-view=true)
-- [devices](/powershell/module/microsoft.graph.devicemanagement/?view=graph-powershell-1.0&preserve-view=true)
+- [OrgContact](/graph/api/resources/orgcontact?view=graph-rest-beta&preserve-view=true)
+- [Devices](/powershell/module/microsoft.graph.devicemanagement/?view=graph-powershell-1.0&preserve-view=true)
 - [Groups](/powershell/module/microsoft.graph.groups/?view=graph-powershell-1.0&preserve-view=true)
 - [Users](/powershell/module/microsoft.graph.users/?view=graph-powershell-1.0&preserve-view=true)
 
@@ -91,7 +91,7 @@ Not all relationships and resources support the `-Expand` query parameter. For e
 
 ## Filter parameter
 
-Use the `-Filter` query parameter to retrieve just a subset of a collection. The `-Filter` query parameter can also be used to retrieve relationships like Members, MemberOf, TransitiveMember, and TransitiveMemberOf.
+Use the `-Filter` query parameter to retrieve a subset of a collection. The `-Filter` query parameter can also be used to retrieve relationships like Members, MemberOf, TransitiveMember, and TransitiveMemberOf.
 
 The following example can be used to find users whose display name starts with the letter 'J' using `startsWith`.
 
@@ -181,7 +181,7 @@ f0735e7b-4ffa-4150-b6a8-7d79e08803cc Bianca Pisani
 
 We recommend that you use `-Select` to limit the properties returned by a query to those properties needed by your app. This is especially true of queries that might potentially return a large result set. Limiting the properties returned in each row will reduce network load and help improve your app's performance.
 
- In `v1.0`, some Azure AD resources that derive from [DirectoryObject](/graph/api/resources/directoryobject), like [User](/graph/api/resources/user) and [Group](/graph/api/resources/group), return a limited, default subset of properties on reads. For these resources, you must use `-Select` to return properties outside of the default set.  
+ Some Azure AD resources that derive from [DirectoryObject](/graph/api/resources/directoryobject), like [User](/graph/api/resources/user) and [Group](/graph/api/resources/group), return a limited, default subset of properties on reads. For these resources, you must use `-Select` to return properties outside of the default set.  
 
 ## Top parameter
 
@@ -189,7 +189,7 @@ Use the `-Top` query parameter to specify the page size of the result set.
 
 The minimum value of `-Top` is 1 and the maximum depends on the corresponding API.  
 
-For example, command returns the first five users.
+For example, this command returns the first five users.
 
 ```powershell
 Get-MgUser -Top 5
