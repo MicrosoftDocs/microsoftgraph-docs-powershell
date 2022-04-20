@@ -18,9 +18,9 @@ Update-MgDeviceManagementVirtualEndpointOnPremisesConnection -CloudPcOnPremisesC
  [-AdDomainName <String>] [-AdDomainPassword <String>] [-AdDomainUsername <String>]
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-HealthCheckStatus <String>]
  [-HealthCheckStatusDetails <IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetails>] [-Id <String>] [-InUse]
- [-OrganizationalUnit <String>] [-ResourceGroupId <String>] [-SubnetId <String>] [-SubscriptionId <String>]
- [-SubscriptionName <String>] [-Type <String>] [-VirtualNetworkId <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ManagedBy <String>] [-OrganizationalUnit <String>] [-ResourceGroupId <String>] [-SubnetId <String>]
+ [-SubscriptionId <String>] [-SubscriptionName <String>] [-Type <String>] [-VirtualNetworkId <String>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -37,9 +37,9 @@ Update-MgDeviceManagementVirtualEndpointOnPremisesConnection
  [-AdDomainUsername <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
  [-HealthCheckStatus <String>]
  [-HealthCheckStatusDetails <IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetails>] [-Id <String>] [-InUse]
- [-OrganizationalUnit <String>] [-ResourceGroupId <String>] [-SubnetId <String>] [-SubscriptionId <String>]
- [-SubscriptionName <String>] [-Type <String>] [-VirtualNetworkId <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ManagedBy <String>] [-OrganizationalUnit <String>] [-ResourceGroupId <String>] [-SubnetId <String>]
+ [-SubscriptionId <String>] [-SubscriptionName <String>] [-Type <String>] [-VirtualNetworkId <String>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -238,6 +238,21 @@ Read-only.
 
 ```yaml
 Type: SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ManagedBy
+cloudPcManagementService
+
+```yaml
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 

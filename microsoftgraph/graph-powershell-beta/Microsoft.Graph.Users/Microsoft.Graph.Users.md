@@ -38,6 +38,7 @@ Supports $expand.
 
 ### [Get-MgUserExtension](Get-MgUserExtension.md)
 The collection of open extensions defined for the user.
+Read-only.
 Nullable.
 
 ### [Get-MgUserLicenseDetail](Get-MgUserLicenseDetail.md)
@@ -217,6 +218,9 @@ Supports $expand.
 Read-only.
 Nullable.
 
+### [Get-MgUserSettingContactMergeSuggestion](Get-MgUserSettingContactMergeSuggestion.md)
+The user's settings for the visibility of merge suggestion for the duplicate contacts in the user's contact list.
+
 ### [Get-MgUserSettingItemInsight](Get-MgUserSettingItemInsight.md)
 The user's settings for the visibility of meeting hour insights, and insights derived between a user and other items in Microsoft 365, such as documents or sites.
 Get userInsightsSettings through this navigation property.
@@ -276,6 +280,12 @@ Supports $expand.
 
 ### [New-MgUserExtension](New-MgUserExtension.md)
 The collection of open extensions defined for the user.
+Read-only.
+Nullable.
+
+### [New-MgUserExtension](New-MgUserExtension.md)
+The collection of open extensions defined for the user.
+Read-only.
 Nullable.
 
 ### [New-MgUserNotification](New-MgUserNotification.md)
@@ -429,6 +439,7 @@ Delete entity from users
 
 ### [Remove-MgUserExtension](Remove-MgUserExtension.md)
 The collection of open extensions defined for the user.
+Read-only.
 Nullable.
 
 ### [Remove-MgUserLicenseDetail](Remove-MgUserLicenseDetail.md)
@@ -544,6 +555,9 @@ Read-only.
 Read-only.
 Nullable.
 
+### [Remove-MgUserSettingContactMergeSuggestion](Remove-MgUserSettingContactMergeSuggestion.md)
+The user's settings for the visibility of merge suggestion for the duplicate contacts in the user's contact list.
+
 ### [Remove-MgUserSettingItemInsight](Remove-MgUserSettingItemInsight.md)
 The user's settings for the visibility of meeting hour insights, and insights derived between a user and other items in Microsoft 365, such as documents or sites.
 Get userInsightsSettings through this navigation property.
@@ -588,6 +602,7 @@ Update entity in users
 
 ### [Update-MgUserExtension](Update-MgUserExtension.md)
 The collection of open extensions defined for the user.
+Read-only.
 Nullable.
 
 ### [Update-MgUserLicenseDetail](Update-MgUserLicenseDetail.md)
@@ -696,6 +711,9 @@ Read-only.
 ### [Update-MgUserSetting](Update-MgUserSetting.md)
 Read-only.
 Nullable.
+
+### [Update-MgUserSettingContactMergeSuggestion](Update-MgUserSettingContactMergeSuggestion.md)
+The user's settings for the visibility of merge suggestion for the duplicate contacts in the user's contact list.
 
 ### [Update-MgUserSettingItemInsight](Update-MgUserSettingItemInsight.md)
 The user's settings for the visibility of meeting hour insights, and insights derived between a user and other items in Microsoft 365, such as documents or sites.

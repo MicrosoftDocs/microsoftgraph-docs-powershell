@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mgdrivelistitemactivity
@@ -12,23 +12,23 @@ Invoke function getActivitiesByInterval
 
 ## SYNTAX
 
-### Get1 (Default)
+### Get (Default)
 ```
 Get-MgDriveListItemActivity -DriveId <String> -ListItemId <String> [<CommonParameters>]
 ```
 
-### Get2
+### Get1
 ```
 Get-MgDriveListItemActivity -DriveId <String> -ListItemId <String> -EndDateTime <String> -Interval <String>
  -StartDateTime <String> [<CommonParameters>]
 ```
 
-### GetViaIdentity2
+### GetViaIdentity1
 ```
 Get-MgDriveListItemActivity -InputObject <IFilesIdentity> [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity
 ```
 Get-MgDriveListItemActivity -InputObject <IFilesIdentity> [<CommonParameters>]
 ```
@@ -45,7 +45,7 @@ key: id of drive
 
 ```yaml
 Type: String
-Parameter Sets: Get1, Get2
+Parameter Sets: Get, Get1
 Aliases:
 
 Required: True
@@ -60,7 +60,7 @@ Usage: endDateTime={endDateTime}
 
 ```yaml
 Type: String
-Parameter Sets: Get2
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -76,7 +76,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: GetViaIdentity2, GetViaIdentity1
+Parameter Sets: GetViaIdentity1, GetViaIdentity
 Aliases:
 
 Required: True
@@ -91,7 +91,7 @@ Usage: interval={interval}
 
 ```yaml
 Type: String
-Parameter Sets: Get2
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -106,7 +106,7 @@ key: id of listItem
 
 ```yaml
 Type: String
-Parameter Sets: Get1, Get2
+Parameter Sets: Get, Get1
 Aliases:
 
 Required: True
@@ -121,7 +121,7 @@ Usage: startDateTime={startDateTime}
 
 ```yaml
 Type: String
-Parameter Sets: Get2
+Parameter Sets: Get1
 Aliases:
 
 Required: True

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/update-mgusersettingcontactmergesuggestion
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserSettingContactMergeSuggestion
 
 ## SYNOPSIS
-Update the navigation property contactMergeSuggestions in users
+The user's settings for the visibility of merge suggestion for the duplicate contacts in the user's contact list.
 
 ## SYNTAX
 
@@ -37,7 +37,7 @@ Update-MgUserSettingContactMergeSuggestion -InputObject <IUsersIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property contactMergeSuggestions in users
+The user's settings for the visibility of merge suggestion for the duplicate contacts in the user's contact list.
 
 ## EXAMPLES
 
@@ -106,7 +106,8 @@ Accept wildcard characters: False
 ```
 
 ### -IsEnabled
-.
+true if the duplicate contact merge suggestions feature is enabled for the user; false if the feature is disabled.
+Default value is true.
 
 ```yaml
 Type: SwitchParameter
@@ -203,7 +204,7 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER <IMicrosoftGraphContactMergeSuggestions>: contactMergeSuggestions
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
-  - `[IsEnabled <Boolean?>]`: 
+  - `[IsEnabled <Boolean?>]`: true if the duplicate contact merge suggestions feature is enabled for the user; false if the feature is disabled. Default value is true.
 
 INPUTOBJECT <IUsersIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment

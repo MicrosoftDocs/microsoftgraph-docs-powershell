@@ -21,18 +21,18 @@ Read-only.
 Nullable.
 Returns the plannerPlans owned by the group.
 
-### [Get-MgGroupPlannerPlan](Get-MgGroupPlannerPlan.md)
-Read-only.
-Nullable.
-Returns the plannerPlans owned by the group.
-
-### [Get-MgGroupPlannerPlanDetail](Get-MgGroupPlannerPlanDetail.md)
-Additional details about the plan.
+### [Get-MgGroupPlannerPlanBucket](Get-MgGroupPlannerPlanBucket.md)
+Collection of buckets in the plan.
 Read-only.
 Nullable.
 
 ### [Get-MgGroupPlannerPlanDetail](Get-MgGroupPlannerPlanDetail.md)
 Additional details about the plan.
+Read-only.
+Nullable.
+
+### [Get-MgGroupPlannerPlanTask](Get-MgGroupPlannerPlanTask.md)
+Collection of tasks in the plan.
 Read-only.
 Nullable.
 
@@ -44,28 +44,28 @@ Read-only.
 Nullable.
 Returns a collection of the specified buckets
 
-### [Get-MgPlannerBucket](Get-MgPlannerBucket.md)
+### [Get-MgPlannerBucketTask](Get-MgPlannerBucketTask.md)
 Read-only.
 Nullable.
-Returns a collection of the specified buckets
+The collection of tasks in the bucket.
 
 ### [Get-MgPlannerPlan](Get-MgPlannerPlan.md)
 Read-only.
 Nullable.
 Returns a collection of the specified plans
 
-### [Get-MgPlannerPlan](Get-MgPlannerPlan.md)
-Read-only.
-Nullable.
-Returns a collection of the specified plans
-
-### [Get-MgPlannerPlanDetail](Get-MgPlannerPlanDetail.md)
-Additional details about the plan.
+### [Get-MgPlannerPlanBucket](Get-MgPlannerPlanBucket.md)
+Collection of buckets in the plan.
 Read-only.
 Nullable.
 
 ### [Get-MgPlannerPlanDetail](Get-MgPlannerPlanDetail.md)
 Additional details about the plan.
+Read-only.
+Nullable.
+
+### [Get-MgPlannerPlanTask](Get-MgPlannerPlanTask.md)
+Collection of tasks in the plan.
 Read-only.
 Nullable.
 
@@ -118,6 +118,11 @@ Read-only.
 Nullable.
 Returns the plannerPlans that the user marked as favorites.
 
+### [Get-MgUserPlannerPlan](Get-MgUserPlannerPlan.md)
+Read-only.
+Nullable.
+Returns the plannerTasks assigned to the user.
+
 ### [Get-MgUserPlannerRecentPlan](Get-MgUserPlannerRecentPlan.md)
 Read-only.
 Nullable.
@@ -127,6 +132,11 @@ Returns the plannerPlans that have been recently viewed by the user in apps that
 Read-only.
 Nullable.
 Returns the plannerPlans contained by the plannerRosters the user is a member.
+
+### [Get-MgUserPlannerTask](Get-MgUserPlannerTask.md)
+Read-only.
+Nullable.
+Returns the plannerTasks assigned to the user.
 
 ### [New-MgPlannerBucket](New-MgPlannerBucket.md)
 Read-only.

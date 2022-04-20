@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 Module Guid: ce7c7fdf-8125-44b9-be8c-88fb1abf0347
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration
@@ -93,6 +93,9 @@ The group policy definitions associated with the file.
 ### [Get-MgDeviceManagementGroupPolicyDefinitionFileDefinitionByRef](Get-MgDeviceManagementGroupPolicyDefinitionFileDefinitionByRef.md)
 The group policy definitions associated with the file.
 
+### [Get-MgDeviceManagementGroupPolicyDefinitionNextVersionDefinition](Get-MgDeviceManagementGroupPolicyDefinitionNextVersionDefinition.md)
+Definition of the next version of this definition
+
 ### [Get-MgDeviceManagementGroupPolicyDefinitionPresentation](Get-MgDeviceManagementGroupPolicyDefinitionPresentation.md)
 The group policy presentations associated with the definition.
 
@@ -101,6 +104,9 @@ The group policy definition associated with the presentation.
 
 ### [Get-MgDeviceManagementGroupPolicyDefinitionPresentationDefinitionByRef](Get-MgDeviceManagementGroupPolicyDefinitionPresentationDefinitionByRef.md)
 The group policy definition associated with the presentation.
+
+### [Get-MgDeviceManagementGroupPolicyDefinitionPreviouVersionDefinition](Get-MgDeviceManagementGroupPolicyDefinitionPreviouVersionDefinition.md)
+Definition of the previous version of this definition
 
 ### [Get-MgDeviceManagementGroupPolicyMigrationReport](Get-MgDeviceManagementGroupPolicyMigrationReport.md)
 A list of Group Policy migration reports.
@@ -211,10 +217,16 @@ Cloud PC audit event.
 Cloud managed virtual desktops.
 
 ### [Get-MgDeviceManagementVirtualEndpointDeviceImage](Get-MgDeviceManagementVirtualEndpointDeviceImage.md)
-The image resource on cloud PC.
+The image resource on Cloud PC.
+
+### [Get-MgDeviceManagementVirtualEndpointGalleryImage](Get-MgDeviceManagementVirtualEndpointGalleryImage.md)
+The gallery image resource on Cloud PC.
 
 ### [Get-MgDeviceManagementVirtualEndpointOnPremisesConnection](Get-MgDeviceManagementVirtualEndpointOnPremisesConnection.md)
-A defined collection of Azure resource information that can be used to establish on-premises network connectivity for cloud PCs.
+A defined collection of Azure resource information that can be used to establish on-premises network connectivity for Cloud PCs.
+
+### [Get-MgDeviceManagementVirtualEndpointOrganizationSetting](Get-MgDeviceManagementVirtualEndpointOrganizationSetting.md)
+The Cloud PC organization settings for a tenant.
 
 ### [Get-MgDeviceManagementVirtualEndpointProvisioningPolicy](Get-MgDeviceManagementVirtualEndpointProvisioningPolicy.md)
 Cloud PC provisioning policy.
@@ -224,6 +236,15 @@ A defined collection of provisioning policy assignments.
 Represents the set of Microsoft 365 groups and security groups in Azure AD that have provisioning policy assigned.
 Returned only on $expand.
 See an example of getting the assignments relationship.
+
+### [Get-MgDeviceManagementVirtualEndpointServicePlan](Get-MgDeviceManagementVirtualEndpointServicePlan.md)
+Cloud PC service plans.
+
+### [Get-MgDeviceManagementVirtualEndpointSnapshot](Get-MgDeviceManagementVirtualEndpointSnapshot.md)
+Get snapshots from deviceManagement
+
+### [Get-MgDeviceManagementVirtualEndpointSupportedRegion](Get-MgDeviceManagementVirtualEndpointSupportedRegion.md)
+Cloud PC supported regions.
 
 ### [Get-MgDeviceManagementVirtualEndpointUserSetting](Get-MgDeviceManagementVirtualEndpointUserSetting.md)
 Cloud PC user settings.
@@ -357,10 +378,13 @@ The list of group assignments for this T&C policy.
 Collection of PFX certificates associated with a user.
 
 ### [New-MgDeviceManagementVirtualEndpointDeviceImage](New-MgDeviceManagementVirtualEndpointDeviceImage.md)
-The image resource on cloud PC.
+The image resource on Cloud PC.
+
+### [New-MgDeviceManagementVirtualEndpointGalleryImage](New-MgDeviceManagementVirtualEndpointGalleryImage.md)
+The gallery image resource on Cloud PC.
 
 ### [New-MgDeviceManagementVirtualEndpointOnPremisesConnection](New-MgDeviceManagementVirtualEndpointOnPremisesConnection.md)
-A defined collection of Azure resource information that can be used to establish on-premises network connectivity for cloud PCs.
+A defined collection of Azure resource information that can be used to establish on-premises network connectivity for Cloud PCs.
 
 ### [New-MgDeviceManagementVirtualEndpointProvisioningPolicy](New-MgDeviceManagementVirtualEndpointProvisioningPolicy.md)
 Cloud PC provisioning policy.
@@ -370,6 +394,15 @@ A defined collection of provisioning policy assignments.
 Represents the set of Microsoft 365 groups and security groups in Azure AD that have provisioning policy assigned.
 Returned only on $expand.
 See an example of getting the assignments relationship.
+
+### [New-MgDeviceManagementVirtualEndpointServicePlan](New-MgDeviceManagementVirtualEndpointServicePlan.md)
+Cloud PC service plans.
+
+### [New-MgDeviceManagementVirtualEndpointSnapshot](New-MgDeviceManagementVirtualEndpointSnapshot.md)
+Create new navigation property to snapshots for deviceManagement
+
+### [New-MgDeviceManagementVirtualEndpointSupportedRegion](New-MgDeviceManagementVirtualEndpointSupportedRegion.md)
+Cloud PC supported regions.
 
 ### [New-MgDeviceManagementVirtualEndpointUserSetting](New-MgDeviceManagementVirtualEndpointUserSetting.md)
 Cloud PC user settings.
@@ -434,11 +467,17 @@ The group policy file associated with the definition.
 ### [Remove-MgDeviceManagementGroupPolicyDefinitionFile](Remove-MgDeviceManagementGroupPolicyDefinitionFile.md)
 The available group policy definition files for this account.
 
+### [Remove-MgDeviceManagementGroupPolicyDefinitionNextVersionDefinition](Remove-MgDeviceManagementGroupPolicyDefinitionNextVersionDefinition.md)
+Definition of the next version of this definition
+
 ### [Remove-MgDeviceManagementGroupPolicyDefinitionPresentation](Remove-MgDeviceManagementGroupPolicyDefinitionPresentation.md)
 The group policy presentations associated with the definition.
 
 ### [Remove-MgDeviceManagementGroupPolicyDefinitionPresentationDefinitionByRef](Remove-MgDeviceManagementGroupPolicyDefinitionPresentationDefinitionByRef.md)
 The group policy definition associated with the presentation.
+
+### [Remove-MgDeviceManagementGroupPolicyDefinitionPreviouVersionDefinition](Remove-MgDeviceManagementGroupPolicyDefinitionPreviouVersionDefinition.md)
+Definition of the previous version of this definition
 
 ### [Remove-MgDeviceManagementGroupPolicyMigrationReport](Remove-MgDeviceManagementGroupPolicyMigrationReport.md)
 A list of Group Policy migration reports.
@@ -522,10 +561,16 @@ Navigation link to the terms and conditions that are assigned.
 Collection of PFX certificates associated with a user.
 
 ### [Remove-MgDeviceManagementVirtualEndpointDeviceImage](Remove-MgDeviceManagementVirtualEndpointDeviceImage.md)
-The image resource on cloud PC.
+The image resource on Cloud PC.
+
+### [Remove-MgDeviceManagementVirtualEndpointGalleryImage](Remove-MgDeviceManagementVirtualEndpointGalleryImage.md)
+The gallery image resource on Cloud PC.
 
 ### [Remove-MgDeviceManagementVirtualEndpointOnPremisesConnection](Remove-MgDeviceManagementVirtualEndpointOnPremisesConnection.md)
-A defined collection of Azure resource information that can be used to establish on-premises network connectivity for cloud PCs.
+A defined collection of Azure resource information that can be used to establish on-premises network connectivity for Cloud PCs.
+
+### [Remove-MgDeviceManagementVirtualEndpointOrganizationSetting](Remove-MgDeviceManagementVirtualEndpointOrganizationSetting.md)
+The Cloud PC organization settings for a tenant.
 
 ### [Remove-MgDeviceManagementVirtualEndpointProvisioningPolicy](Remove-MgDeviceManagementVirtualEndpointProvisioningPolicy.md)
 Cloud PC provisioning policy.
@@ -535,6 +580,15 @@ A defined collection of provisioning policy assignments.
 Represents the set of Microsoft 365 groups and security groups in Azure AD that have provisioning policy assigned.
 Returned only on $expand.
 See an example of getting the assignments relationship.
+
+### [Remove-MgDeviceManagementVirtualEndpointServicePlan](Remove-MgDeviceManagementVirtualEndpointServicePlan.md)
+Cloud PC service plans.
+
+### [Remove-MgDeviceManagementVirtualEndpointSnapshot](Remove-MgDeviceManagementVirtualEndpointSnapshot.md)
+Delete navigation property snapshots for deviceManagement
+
+### [Remove-MgDeviceManagementVirtualEndpointSupportedRegion](Remove-MgDeviceManagementVirtualEndpointSupportedRegion.md)
+Cloud PC supported regions.
 
 ### [Remove-MgDeviceManagementVirtualEndpointUserSetting](Remove-MgDeviceManagementVirtualEndpointUserSetting.md)
 Cloud PC user settings.
@@ -611,8 +665,14 @@ The available group policy definitions for this account.
 ### [Update-MgDeviceManagementGroupPolicyDefinitionFile](Update-MgDeviceManagementGroupPolicyDefinitionFile.md)
 The available group policy definition files for this account.
 
+### [Update-MgDeviceManagementGroupPolicyDefinitionNextVersionDefinition](Update-MgDeviceManagementGroupPolicyDefinitionNextVersionDefinition.md)
+Definition of the next version of this definition
+
 ### [Update-MgDeviceManagementGroupPolicyDefinitionPresentation](Update-MgDeviceManagementGroupPolicyDefinitionPresentation.md)
 The group policy presentations associated with the definition.
+
+### [Update-MgDeviceManagementGroupPolicyDefinitionPreviouVersionDefinition](Update-MgDeviceManagementGroupPolicyDefinitionPreviouVersionDefinition.md)
+Definition of the previous version of this definition
 
 ### [Update-MgDeviceManagementGroupPolicyMigrationReport](Update-MgDeviceManagementGroupPolicyMigrationReport.md)
 A list of Group Policy migration reports.
@@ -690,10 +750,16 @@ The list of group assignments for this T&C policy.
 Collection of PFX certificates associated with a user.
 
 ### [Update-MgDeviceManagementVirtualEndpointDeviceImage](Update-MgDeviceManagementVirtualEndpointDeviceImage.md)
-The image resource on cloud PC.
+The image resource on Cloud PC.
+
+### [Update-MgDeviceManagementVirtualEndpointGalleryImage](Update-MgDeviceManagementVirtualEndpointGalleryImage.md)
+The gallery image resource on Cloud PC.
 
 ### [Update-MgDeviceManagementVirtualEndpointOnPremisesConnection](Update-MgDeviceManagementVirtualEndpointOnPremisesConnection.md)
-A defined collection of Azure resource information that can be used to establish on-premises network connectivity for cloud PCs.
+A defined collection of Azure resource information that can be used to establish on-premises network connectivity for Cloud PCs.
+
+### [Update-MgDeviceManagementVirtualEndpointOrganizationSetting](Update-MgDeviceManagementVirtualEndpointOrganizationSetting.md)
+The Cloud PC organization settings for a tenant.
 
 ### [Update-MgDeviceManagementVirtualEndpointProvisioningPolicy](Update-MgDeviceManagementVirtualEndpointProvisioningPolicy.md)
 Cloud PC provisioning policy.
@@ -703,6 +769,12 @@ A defined collection of provisioning policy assignments.
 Represents the set of Microsoft 365 groups and security groups in Azure AD that have provisioning policy assigned.
 Returned only on $expand.
 See an example of getting the assignments relationship.
+
+### [Update-MgDeviceManagementVirtualEndpointSnapshot](Update-MgDeviceManagementVirtualEndpointSnapshot.md)
+Update the navigation property snapshots in deviceManagement
+
+### [Update-MgDeviceManagementVirtualEndpointSupportedRegion](Update-MgDeviceManagementVirtualEndpointSupportedRegion.md)
+Cloud PC supported regions.
 
 ### [Update-MgDeviceManagementVirtualEndpointUserSetting](Update-MgDeviceManagementVirtualEndpointUserSetting.md)
 Cloud PC user settings.

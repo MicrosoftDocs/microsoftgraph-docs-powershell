@@ -11,6 +11,9 @@ Locale: en-US
 Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.ChangeNotifications Cmdlets
+### [Get-MgSubscription](Get-MgSubscription.md)
+Get entity from subscriptions by key
+
 ### [New-MgSubscription](New-MgSubscription.md)
 Add new entity to subscriptions
 

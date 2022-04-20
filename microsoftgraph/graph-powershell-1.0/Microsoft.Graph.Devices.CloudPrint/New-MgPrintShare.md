@@ -25,7 +25,7 @@ New-MgPrintShare [-AdditionalProperties <Hashtable>] [-AllowAllUsers] [-AllowedG
 
 ### Create
 ```
-New-MgPrintShare -BodyParameter <IMicrosoftGraphPrinterShare> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgPrintShare -BodyParameter <IMicrosoftGraphPrinterShare1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -103,7 +103,7 @@ printerShare
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrinterShare
+Type: IMicrosoftGraphPrinterShare1
 Parameter Sets: Create
 Aliases:
 
@@ -337,10 +337,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrinterShare
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrinterShare1
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrinterShare
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrinterShare1
 ## NOTES
 
 ALIASES
@@ -10812,6 +10812,9 @@ STATUS <IMicrosoftGraphPrinterStatus1>: printerStatus
   - `[State <String>]`: printerProcessingState
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS
 

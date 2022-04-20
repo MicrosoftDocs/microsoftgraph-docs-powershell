@@ -24,9 +24,10 @@ Update-MgEntitlementManagementAccessPackageAssignmentRequest -AccessPackageAssig
  [-AccessPackage <IMicrosoftGraphAccessPackage>]
  [-AccessPackageAssignment <IMicrosoftGraphAccessPackageAssignment>] [-AdditionalProperties <Hashtable>]
  [-Answers <IMicrosoftGraphAccessPackageAnswer[]>] [-CompletedDate <DateTime>] [-CreatedDateTime <DateTime>]
+ [-CustomExtensionHandlerInstances <IMicrosoftGraphCustomExtensionHandlerInstance[]>]
  [-ExpirationDateTime <DateTime>] [-Id <String>] [-IsValidationOnly] [-Justification <String>]
  [-RequestState <String>] [-RequestStatus <String>] [-RequestType <String>]
- [-Requestor <IMicrosoftGraphAccessPackageSubject1>] [-Schedule <IMicrosoftGraphRequestSchedule>] [-PassThru]
+ [-Requestor <IMicrosoftGraphAccessPackageSubject>] [-Schedule <IMicrosoftGraphRequestSchedule>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -43,9 +44,10 @@ Update-MgEntitlementManagementAccessPackageAssignmentRequest -InputObject <IIden
  [-AccessPackage <IMicrosoftGraphAccessPackage>]
  [-AccessPackageAssignment <IMicrosoftGraphAccessPackageAssignment>] [-AdditionalProperties <Hashtable>]
  [-Answers <IMicrosoftGraphAccessPackageAnswer[]>] [-CompletedDate <DateTime>] [-CreatedDateTime <DateTime>]
+ [-CustomExtensionHandlerInstances <IMicrosoftGraphCustomExtensionHandlerInstance[]>]
  [-ExpirationDateTime <DateTime>] [-Id <String>] [-IsValidationOnly] [-Justification <String>]
  [-RequestState <String>] [-RequestStatus <String>] [-RequestType <String>]
- [-Requestor <IMicrosoftGraphAccessPackageSubject1>] [-Schedule <IMicrosoftGraphRequestSchedule>] [-PassThru]
+ [-Requestor <IMicrosoftGraphAccessPackageSubject>] [-Schedule <IMicrosoftGraphRequestSchedule>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -198,6 +200,23 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -CustomExtensionHandlerInstances
+A collection of custom workflow extension instances being run on an assignment request.
+Read-only.
+To construct, please use Get-Help -Online and see NOTES section for CUSTOMEXTENSIONHANDLERINSTANCES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCustomExtensionHandlerInstance[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ExpirationDateTime
 .
 
@@ -294,7 +313,7 @@ accessPackageSubject
 To construct, please use Get-Help -Online and see NOTES section for REQUESTOR properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageSubject1
+Type: IMicrosoftGraphAccessPackageSubject
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -12735,6 +12754,9 @@ SCHEDULE <IMicrosoftGraphRequestSchedule>: requestSchedule
   - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS
 

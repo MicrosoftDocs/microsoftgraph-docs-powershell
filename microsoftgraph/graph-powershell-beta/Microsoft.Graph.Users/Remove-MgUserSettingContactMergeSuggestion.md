@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/remove-mgusersettingcontactmergesuggestion
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgUserSettingContactMergeSuggestion
 
 ## SYNOPSIS
-Delete navigation property contactMergeSuggestions for users
+The user's settings for the visibility of merge suggestion for the duplicate contacts in the user's contact list.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgUserSettingContactMergeSuggestion -InputObject <IUsersIdentity> [-IfMat
 ```
 
 ## DESCRIPTION
-Delete navigation property contactMergeSuggestions for users
+The user's settings for the visibility of merge suggestion for the duplicate contacts in the user's contact list.
 
 ## EXAMPLES
 

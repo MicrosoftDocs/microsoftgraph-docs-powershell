@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryinboundshareduserprofile
@@ -14,9 +14,9 @@ Create new navigation property to inboundSharedUserProfiles for directory
 
 ### CreateExpanded (Default)
 ```
-New-MgDirectoryInboundSharedUserProfile [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>]
- [-DisplayName <String>] [-HomeTenantId <String>] [-Id <String>] [-UserId <String>]
- [-UserPrincipalName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDirectoryInboundSharedUserProfile [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
+ [-HomeTenantId <String>] [-UserId <String>] [-UserPrincipalName <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -63,23 +63,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -DeletedDateTime
+### -DisplayName
 .
-
-```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DeviceId
-The unique identifier of the device, Intune DeviceID or SCCM device id.
 
 ```yaml
 Type: String
@@ -95,21 +80,6 @@ Accept wildcard characters: False
 
 ### -HomeTenantId
 .
-
-```yaml
-Type: Int32
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Id
-Read-only.
 
 ```yaml
 Type: String

@@ -47,6 +47,11 @@ The calendar that contains the event.
 Navigation property.
 Read-only.
 
+### [Get-MgGroupEventCalendarByRef](Get-MgGroupEventCalendarByRef.md)
+The calendar that contains the event.
+Navigation property.
+Read-only.
+
 ### [Get-MgGroupEventExtension](Get-MgGroupEventExtension.md)
 The collection of open extensions defined for the event.
 Nullable.
@@ -104,10 +109,10 @@ The collection of single-value extended properties defined for the calendar.
 Read-only.
 Nullable.
 
-### [Get-MgUserCalendarSingleValueExtendedProperty](Get-MgUserCalendarSingleValueExtendedProperty.md)
-The collection of single-value extended properties defined for the calendar.
+### [Get-MgUserCalendarView](Get-MgUserCalendarView.md)
+The calendar view for the calendar.
+Navigation property.
 Read-only.
-Nullable.
 
 ### [Get-MgUserDefaultCalendar](Get-MgUserDefaultCalendar.md)
 The user's calendars.
@@ -127,6 +132,11 @@ Read-only.
 Nullable.
 
 ### [Get-MgUserEventCalendar](Get-MgUserEventCalendar.md)
+The calendar that contains the event.
+Navigation property.
+Read-only.
+
+### [Get-MgUserEventCalendarByRef](Get-MgUserEventCalendarByRef.md)
 The calendar that contains the event.
 Navigation property.
 Read-only.
@@ -287,7 +297,7 @@ Navigation property.
 Read-only.
 Nullable.
 
-### [Remove-MgGroupEventCalendar](Remove-MgGroupEventCalendar.md)
+### [Remove-MgGroupEventCalendarByRef](Remove-MgGroupEventCalendarByRef.md)
 The calendar that contains the event.
 Navigation property.
 Read-only.
@@ -351,7 +361,7 @@ Navigation property.
 Read-only.
 Nullable.
 
-### [Remove-MgUserEventCalendar](Remove-MgUserEventCalendar.md)
+### [Remove-MgUserEventCalendarByRef](Remove-MgUserEventCalendarByRef.md)
 The calendar that contains the event.
 Navigation property.
 Read-only.
@@ -376,6 +386,16 @@ Nullable.
 The collection of single-value extended properties defined for the event.
 Read-only.
 Nullable.
+
+### [Set-MgGroupEventCalendarByRef](Set-MgGroupEventCalendarByRef.md)
+The calendar that contains the event.
+Navigation property.
+Read-only.
+
+### [Set-MgUserEventCalendarByRef](Set-MgUserEventCalendarByRef.md)
+The calendar that contains the event.
+Navigation property.
+Read-only.
 
 ### [Update-MgGroupCalendarMultiValueExtendedProperty](Update-MgGroupCalendarMultiValueExtendedProperty.md)
 The collection of multi-value extended properties defined for the calendar.

@@ -20,7 +20,8 @@ Update-MgDeviceManagementVirtualEndpointProvisioningPolicy -CloudPcProvisioningP
  [-DomainJoinConfiguration <IMicrosoftGraphCloudPcDomainJoinConfiguration>] [-Id <String>]
  [-ImageDisplayName <String>] [-ImageId <String>] [-ImageType <String>]
  [-MicrosoftManagedDesktop <IMicrosoftGraphMicrosoftManagedDesktop>] [-OnPremisesConnectionId <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WindowsSettings <IMicrosoftGraphCloudPcWindowsSettings>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
@@ -38,7 +39,8 @@ Update-MgDeviceManagementVirtualEndpointProvisioningPolicy
  [-DisplayName <String>] [-DomainJoinConfiguration <IMicrosoftGraphCloudPcDomainJoinConfiguration>]
  [-Id <String>] [-ImageDisplayName <String>] [-ImageId <String>] [-ImageType <String>]
  [-MicrosoftManagedDesktop <IMicrosoftGraphMicrosoftManagedDesktop>] [-OnPremisesConnectionId <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WindowsSettings <IMicrosoftGraphCloudPcWindowsSettings>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -285,6 +287,22 @@ Returns true when the command succeeds
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WindowsSettings
+cloudPcWindowsSettings
+To construct, please use Get-Help -Online and see NOTES section for WINDOWSSETTINGS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCloudPcWindowsSettings
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False

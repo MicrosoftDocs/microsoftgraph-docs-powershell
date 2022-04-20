@@ -277,7 +277,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConnectedOrganization
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConnectedOrganization1
 ## NOTES
 
 ALIASES

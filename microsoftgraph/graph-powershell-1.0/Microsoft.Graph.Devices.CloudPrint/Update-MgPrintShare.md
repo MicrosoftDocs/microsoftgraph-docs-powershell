@@ -25,8 +25,8 @@ Update-MgPrintShare -PrinterShareId <String> [-AdditionalProperties <Hashtable>]
 
 ### Update
 ```
-Update-MgPrintShare -PrinterShareId <String> -BodyParameter <IMicrosoftGraphPrinterShare> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgPrintShare -PrinterShareId <String> -BodyParameter <IMicrosoftGraphPrinterShare1> [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -42,7 +42,7 @@ Update-MgPrintShare -InputObject <IDevicesCloudPrintIdentity> [-AdditionalProper
 
 ### UpdateViaIdentity
 ```
-Update-MgPrintShare -InputObject <IDevicesCloudPrintIdentity> -BodyParameter <IMicrosoftGraphPrinterShare>
+Update-MgPrintShare -InputObject <IDevicesCloudPrintIdentity> -BodyParameter <IMicrosoftGraphPrinterShare1>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -121,7 +121,7 @@ printerShare
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrinterShare
+Type: IMicrosoftGraphPrinterShare1
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -402,7 +402,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrinterShare
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrinterShare1
 ## OUTPUTS
 
 ### System.Boolean
@@ -10888,6 +10888,9 @@ STATUS <IMicrosoftGraphPrinterStatus1>: printerStatus
   - `[State <String>]`: printerProcessingState
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS
 
