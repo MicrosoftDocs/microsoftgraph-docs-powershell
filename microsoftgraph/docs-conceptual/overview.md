@@ -3,13 +3,12 @@ title: 'Microsoft Graph PowerShell SDK overview'
 description: Provides a description and getting started information for the Microsoft Graph PowerShell SDK.
 services: active-directory
 
-ms.devlang: powershell
 ms.topic: overview
 ms.date: 8/18/2021
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
-ms.reviewer: darrmi, maisarissi
+ms.reviewer: maisarissi
 ---
 # Microsoft Graph PowerShell overview
 
