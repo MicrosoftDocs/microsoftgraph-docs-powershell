@@ -1,6 +1,7 @@
 ---
 title: "Assign Azure AD roles in Privileged Identity Management using Microsoft Graph PowerShell"
 description: "Learn how to create eligible and active role assignments in Azure AD Privileged Identity Management using Microsoft Graph PowerShell"
+
 ms.topic: tutorial
 ms.date: 3/31/2022
 author: msewaweru

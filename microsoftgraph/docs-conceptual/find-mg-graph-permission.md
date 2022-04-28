@@ -1,8 +1,12 @@
 ---
 title: "Using Find-MgGraphPermission cmdlet"
 description: "Learn how to use the Find-MgGraphPermission to discover permissions related to a domain."
-localization_priority: Normal
+
+ms.topic: conceptual
+ms.date: 01/11/2022
 author: msewaweru
+manager: CelesteDG
+ms.author: eunicewaweru
 ---
 
 # Using Find-MgGraphPermission cmdlet
