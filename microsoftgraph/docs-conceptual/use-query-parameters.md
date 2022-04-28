@@ -219,4 +219,6 @@ At line:1 char:1
 + Get-MgUser -Filter "Contains(DisplayName, 'Test')"
 ```
 
+Unsupported filter error could be returned when the `-Filter` query is not correct or when the property is only supported in [advanced queries](/graph/aad-advanced-queries?tabs=powershell) and either -ConsistencyLevel or -Count is missing.
+
 However, it's important to note that query parameters specified in a request might fail silently. This can be true for unsupported query parameters and for unsupported combinations of query parameters. In these cases, you should examine the data returned by the request to determine whether the query parameters you specified had the desired effect.
