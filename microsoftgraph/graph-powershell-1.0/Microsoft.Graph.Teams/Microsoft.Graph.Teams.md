@@ -107,6 +107,9 @@ The collection of channels and messages associated with the team.
 ### [Get-MgTeamChannelFileFolder](Get-MgTeamChannelFileFolder.md)
 Metadata for the location where the channel's files are stored.
 
+### [Get-MgTeamChannelFileFolderByRef](Get-MgTeamChannelFileFolderByRef.md)
+Metadata for the location where the channel's files are stored.
+
 ### [Get-MgTeamChannelMember](Get-MgTeamChannelMember.md)
 A collection of membership records associated with the channel.
 
@@ -170,6 +173,9 @@ The async operations that ran or are running on this team.
 The general channel for the team.
 
 ### [Get-MgTeamPrimaryChannelFileFolder](Get-MgTeamPrimaryChannelFileFolder.md)
+Metadata for the location where the channel's files are stored.
+
+### [Get-MgTeamPrimaryChannelFileFolderByRef](Get-MgTeamPrimaryChannelFileFolderByRef.md)
 Metadata for the location where the channel's files are stored.
 
 ### [Get-MgTeamPrimaryChannelMember](Get-MgTeamPrimaryChannelMember.md)
@@ -454,6 +460,9 @@ The collection of channels and messages associated with the team.
 ### [Remove-MgTeamChannelEmail](Remove-MgTeamChannelEmail.md)
 Invoke action removeEmail
 
+### [Remove-MgTeamChannelFileFolderByRef](Remove-MgTeamChannelFileFolderByRef.md)
+Metadata for the location where the channel's files are stored.
+
 ### [Remove-MgTeamChannelMember](Remove-MgTeamChannelMember.md)
 A collection of membership records associated with the channel.
 
@@ -488,6 +497,9 @@ The general channel for the team.
 
 ### [Remove-MgTeamPrimaryChannelEmail](Remove-MgTeamPrimaryChannelEmail.md)
 Invoke action removeEmail
+
+### [Remove-MgTeamPrimaryChannelFileFolderByRef](Remove-MgTeamPrimaryChannelFileFolderByRef.md)
+Metadata for the location where the channel's files are stored.
 
 ### [Remove-MgTeamPrimaryChannelMember](Remove-MgTeamPrimaryChannelMember.md)
 A collection of membership records associated with the channel.
@@ -572,6 +584,9 @@ The details of this version of the app.
 The application that is linked to the tab.
 This cannot be changed after tab creation.
 
+### [Set-MgTeamChannelFileFolderByRef](Set-MgTeamChannelFileFolderByRef.md)
+Metadata for the location where the channel's files are stored.
+
 ### [Set-MgTeamChannelTabTeamAppByRef](Set-MgTeamChannelTabTeamAppByRef.md)
 The application that is linked to the tab.
 This cannot be changed after tab creation.
@@ -584,6 +599,9 @@ The app that is installed.
 
 ### [Set-MgTeamInstalledAppTeamAppDefinitionByRef](Set-MgTeamInstalledAppTeamAppDefinitionByRef.md)
 The details of this version of the app.
+
+### [Set-MgTeamPrimaryChannelFileFolderByRef](Set-MgTeamPrimaryChannelFileFolderByRef.md)
+Metadata for the location where the channel's files are stored.
 
 ### [Set-MgTeamPrimaryChannelTabTeamAppByRef](Set-MgTeamPrimaryChannelTabTeamAppByRef.md)
 The application that is linked to the tab.
