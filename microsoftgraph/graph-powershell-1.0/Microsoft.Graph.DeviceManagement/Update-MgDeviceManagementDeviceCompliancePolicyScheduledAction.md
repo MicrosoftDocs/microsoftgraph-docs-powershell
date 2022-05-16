@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecompliancepolicyscheduledaction
 schema: 2.0.0
@@ -18,21 +18,14 @@ This is a required property when creating any individual per-platform compliance
 Update-MgDeviceManagementDeviceCompliancePolicyScheduledAction -DeviceCompliancePolicyId <String>
  -DeviceComplianceScheduledActionForRuleId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-RuleName <String>] [-ScheduledActionConfigurations <IMicrosoftGraphDeviceComplianceActionItem[]>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgDeviceManagementDeviceCompliancePolicyScheduledAction -DeviceCompliancePolicyId <String>
  -DeviceComplianceScheduledActionForRuleId <String>
- -BodyParameter <IMicrosoftGraphDeviceComplianceScheduledActionForRule> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity1
-```
-Update-MgDeviceManagementDeviceCompliancePolicyScheduledAction -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceComplianceScheduledActionForRule> [-PassThru] [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphDeviceComplianceScheduledActionForRule> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -40,8 +33,15 @@ Update-MgDeviceManagementDeviceCompliancePolicyScheduledAction -InputObject <IDe
 ```
 Update-MgDeviceManagementDeviceCompliancePolicyScheduledAction -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-RuleName <String>]
- [-ScheduledActionConfigurations <IMicrosoftGraphDeviceComplianceActionItem[]>] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-ScheduledActionConfigurations <IMicrosoftGraphDeviceComplianceActionItem[]>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity1
+```
+Update-MgDeviceManagementDeviceCompliancePolicyScheduledAction -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceComplianceScheduledActionForRule> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -56,7 +56,7 @@ This is a required property when creating any individual per-platform compliance
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -72,7 +72,7 @@ Scheduled Action for Rule
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceComplianceScheduledActionForRule
+Type: IMicrosoftGraphDeviceComplianceScheduledActionForRule
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -87,8 +87,8 @@ Accept wildcard characters: False
 key: id of deviceCompliancePolicy
 
 ```yaml
-Type: System.String
-Parameter Sets: Update1, UpdateExpanded1
+Type: String
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -102,8 +102,8 @@ Accept wildcard characters: False
 key: id of deviceComplianceScheduledActionForRule
 
 ```yaml
-Type: System.String
-Parameter Sets: Update1, UpdateExpanded1
+Type: String
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -133,8 +133,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentity1, UpdateViaIdentityExpanded1
+Type: IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -164,7 +164,7 @@ Name of the rule which this scheduled action applies to.
 Currently scheduled actions are created per policy instead of per rule, thus RuleName is always set to default value PasswordRequired.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -181,7 +181,7 @@ Compliance policy must have one and only one block scheduled action.
 To construct, please use Get-Help -Online and see NOTES section for SCHEDULEDACTIONCONFIGURATIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceComplianceActionItem[]
+Type: IMicrosoftGraphDeviceComplianceActionItem[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -212,7 +212,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -229,13 +229,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceComplianceScheduledActionForRule
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -384,3 +381,4 @@ SCHEDULEDACTIONCONFIGURATIONS <IMicrosoftGraphDeviceComplianceActionItem[]>: The
 
 ## RELATED LINKS
 
+## RELATED LINKS
