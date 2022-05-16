@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/invoke-mghaveteamchannel
 schema: 2.0.0
@@ -28,20 +28,13 @@ Invoke function doesUserHaveAccess
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
 ## PARAMETERS
 
 ### -ChannelId
 key: id of channel
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Have
 Aliases:
 
@@ -57,7 +50,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
+Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
 Parameter Sets: HaveViaIdentity
 Aliases:
 
@@ -72,7 +65,7 @@ Accept wildcard characters: False
 key: id of team
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Have
 Aliases:
 
@@ -87,7 +80,7 @@ Accept wildcard characters: False
 Usage: tenantId={tenantId}
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Have
 Aliases:
 
@@ -102,7 +95,7 @@ Accept wildcard characters: False
 Usage: userId={userId}
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Have
 Aliases:
 
@@ -117,7 +110,7 @@ Accept wildcard characters: False
 Usage: userPrincipalName={userPrincipalName}
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Have
 Aliases:
 
@@ -134,13 +127,57 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
+  - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
+  - `[ChannelId <String>]`: key: id of channel
+  - `[ChatId <String>]`: key: id of chat
+  - `[ChatMessageHostedContentId <String>]`: key: id of chatMessageHostedContent
+  - `[ChatMessageId <String>]`: key: id of chatMessage
+  - `[ChatMessageId1 <String>]`: key: id of chatMessage
+  - `[ConversationMemberId <String>]`: key: id of conversationMember
+  - `[GroupId <String>]`: key: id of group
+  - `[OfferShiftRequestId <String>]`: key: id of offerShiftRequest
+  - `[OpenShiftChangeRequestId <String>]`: key: id of openShiftChangeRequest
+  - `[OpenShiftId <String>]`: key: id of openShift
+  - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
+  - `[SchedulingGroupId <String>]`: key: id of schedulingGroup
+  - `[SharedWithChannelTeamInfoId <String>]`: key: id of sharedWithChannelTeamInfo
+  - `[ShiftId <String>]`: key: id of shift
+  - `[SwapShiftsChangeRequestId <String>]`: key: id of swapShiftsChangeRequest
+  - `[TeamId <String>]`: key: id of team
+  - `[TeamsAppDefinitionId <String>]`: key: id of teamsAppDefinition
+  - `[TeamsAppId <String>]`: key: id of teamsApp
+  - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation
+  - `[TeamsAsyncOperationId <String>]`: key: id of teamsAsyncOperation
+  - `[TeamsTabId <String>]`: key: id of teamsTab
+  - `[TeamworkDeviceId <String>]`: key: id of teamworkDevice
+  - `[TeamworkDeviceOperationId <String>]`: key: id of teamworkDeviceOperation
+  - `[TeamworkTagId <String>]`: key: id of teamworkTag
+  - `[TeamworkTagMemberId <String>]`: key: id of teamworkTagMember
+  - `[TenantId <String>]`: Usage: tenantId={tenantId}
+  - `[TimeCardId <String>]`: key: id of timeCard
+  - `[TimeOffId <String>]`: key: id of timeOff
+  - `[TimeOffReasonId <String>]`: key: id of timeOffReason
+  - `[TimeOffRequestId <String>]`: key: id of timeOffRequest
+  - `[UserId <String>]`: key: id of user
+  - `[UserId1 <String>]`: Usage: userId={userId}
+  - `[UserPrincipalName <String>]`: Usage: userPrincipalName={userPrincipalName}
+  - `[UserScopeTeamsAppInstallationId <String>]`: key: id of userScopeTeamsAppInstallation
+  - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/invoke-mghaveteamchannel](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/invoke-mghaveteamchannel)
 
