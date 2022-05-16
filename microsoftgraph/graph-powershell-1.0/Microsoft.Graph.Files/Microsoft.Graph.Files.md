@@ -42,7 +42,15 @@ Get entity from drives by key
 Collection of [bundles][bundle] (albums and multi-select-shared sets of items).
 Only in personal OneDrive.
 
+### [Get-MgDriveBundleByRef](Get-MgDriveBundleByRef.md)
+Collection of [bundles][bundle] (albums and multi-select-shared sets of items).
+Only in personal OneDrive.
+
 ### [Get-MgDriveFollowing](Get-MgDriveFollowing.md)
+The list of items the user is following.
+Only in OneDrive for Business.
+
+### [Get-MgDriveFollowingByRef](Get-MgDriveFollowingByRef.md)
 The list of items the user is following.
 Only in OneDrive for Business.
 
@@ -105,6 +113,10 @@ The source column for the content type column.
 Only present on document libraries.
 Allows access to the list as a [drive][] resource with [driveItems][driveItem].
 
+### [Get-MgDriveListDriveByRef](Get-MgDriveListDriveByRef.md)
+Only present on document libraries.
+Allows access to the list as a [drive][] resource with [driveItems][driveItem].
+
 ### [Get-MgDriveListItem](Get-MgDriveListItem.md)
 All items contained in the list.
 
@@ -118,6 +130,9 @@ Analytics about the view activities that took place on this item.
 Analytics about the view activities that took place on this item.
 
 ### [Get-MgDriveListItemDriveItem](Get-MgDriveListItemDriveItem.md)
+For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
+
+### [Get-MgDriveListItemDriveItemByRef](Get-MgDriveListItemDriveItemByRef.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
 
 ### [Get-MgDriveListItemField](Get-MgDriveListItemField.md)
@@ -144,14 +159,30 @@ Collection of common folders available in OneDrive.
 Read-only.
 Nullable.
 
+### [Get-MgDriveSpecialByRef](Get-MgDriveSpecialByRef.md)
+Collection of common folders available in OneDrive.
+Read-only.
+Nullable.
+
 ### [Get-MgGroupDrive](Get-MgGroupDrive.md)
+The group's default drive.
+Read-only.
+
+### [Get-MgGroupDriveByRef](Get-MgGroupDriveByRef.md)
 The group's default drive.
 Read-only.
 
 ### [Get-MgShareDriveItem](Get-MgShareDriveItem.md)
 Used to access the underlying driveItem
 
+### [Get-MgShareDriveItemByRef](Get-MgShareDriveItemByRef.md)
+Used to access the underlying driveItem
+
 ### [Get-MgShareItem](Get-MgShareItem.md)
+All driveItems contained in the sharing root.
+This collection cannot be enumerated.
+
+### [Get-MgShareItemByRef](Get-MgShareItemByRef.md)
 All driveItems contained in the sharing root.
 This collection cannot be enumerated.
 
@@ -204,6 +235,10 @@ The source column for the content type column.
 Only present on document libraries.
 Allows access to the list as a [drive][] resource with [driveItems][driveItem].
 
+### [Get-MgShareListDriveByRef](Get-MgShareListDriveByRef.md)
+Only present on document libraries.
+Allows access to the list as a [drive][] resource with [driveItems][driveItem].
+
 ### [Get-MgShareListItem](Get-MgShareListItem.md)
 All items contained in the list.
 
@@ -217,6 +252,9 @@ Analytics about the view activities that took place on this item.
 Analytics about the view activities that took place on this item.
 
 ### [Get-MgShareListItemDriveItem](Get-MgShareListItemDriveItem.md)
+For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
+
+### [Get-MgShareListItemDriveItemByRef](Get-MgShareListItemDriveItemByRef.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
 
 ### [Get-MgShareListItemField](Get-MgShareListItemField.md)
@@ -238,13 +276,24 @@ Used to access the permission representing the underlying sharing link
 Used to access the underlying driveItem.
 Deprecated -- use driveItem instead.
 
+### [Get-MgShareRootByRef](Get-MgShareRootByRef.md)
+Used to access the underlying driveItem.
+Deprecated -- use driveItem instead.
+
 ### [Get-MgShareSharedDriveItemSharedDriveItem](Get-MgShareSharedDriveItemSharedDriveItem.md)
 Get entity from shares by key
 
 ### [Get-MgShareSite](Get-MgShareSite.md)
 Used to access the underlying site
 
+### [Get-MgShareSiteByRef](Get-MgShareSiteByRef.md)
+Used to access the underlying site
+
 ### [Get-MgUserDrive](Get-MgUserDrive.md)
+The user's OneDrive.
+Read-only.
+
+### [Get-MgUserDriveByRef](Get-MgUserDriveByRef.md)
 The user's OneDrive.
 Read-only.
 
@@ -271,6 +320,14 @@ Invoke action associateWithHubSites
 
 ### [New-MgDrive](New-MgDrive.md)
 Add new entity to drives
+
+### [New-MgDriveBundleByRef](New-MgDriveBundleByRef.md)
+Collection of [bundles][bundle] (albums and multi-select-shared sets of items).
+Only in personal OneDrive.
+
+### [New-MgDriveFollowingByRef](New-MgDriveFollowingByRef.md)
+The list of items the user is following.
+Only in OneDrive for Business.
 
 ### [New-MgDriveItem](New-MgDriveItem.md)
 All items contained in the drive.
@@ -304,9 +361,18 @@ The list of previous versions of the list item.
 ### [New-MgDriveListSubscription](New-MgDriveListSubscription.md)
 The set of subscriptions on the list.
 
+### [New-MgDriveSpecialByRef](New-MgDriveSpecialByRef.md)
+Collection of common folders available in OneDrive.
+Read-only.
+Nullable.
+
 ### [New-MgGroupDrive](New-MgGroupDrive.md)
 The group's drives.
 Read-only.
+
+### [New-MgShareItemByRef](New-MgShareItemByRef.md)
+All driveItems contained in the sharing root.
+This collection cannot be enumerated.
 
 ### [New-MgShareListColumn](New-MgShareListColumn.md)
 The collection of field definitions for this list.
@@ -388,11 +454,18 @@ The collection of columns that are required by this content type.
 ### [Remove-MgDriveListContentTypeColumnSourceColumnByRef](Remove-MgDriveListContentTypeColumnSourceColumnByRef.md)
 The source column for the content type column.
 
+### [Remove-MgDriveListDriveByRef](Remove-MgDriveListDriveByRef.md)
+Only present on document libraries.
+Allows access to the list as a [drive][] resource with [driveItems][driveItem].
+
 ### [Remove-MgDriveListItem](Remove-MgDriveListItem.md)
 All items contained in the list.
 
 ### [Remove-MgDriveListItemAnalyticByRef](Remove-MgDriveListItemAnalyticByRef.md)
 Analytics about the view activities that took place on this item.
+
+### [Remove-MgDriveListItemDriveItemByRef](Remove-MgDriveListItemDriveItemByRef.md)
+For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
 
 ### [Remove-MgDriveListItemField](Remove-MgDriveListItemField.md)
 The values of the columns set on this list item.
@@ -413,6 +486,13 @@ Read-only.
 ### [Remove-MgGroupDrive](Remove-MgGroupDrive.md)
 The group's drives.
 Read-only.
+
+### [Remove-MgGroupDriveByRef](Remove-MgGroupDriveByRef.md)
+The group's default drive.
+Read-only.
+
+### [Remove-MgShareDriveItemByRef](Remove-MgShareDriveItemByRef.md)
+Used to access the underlying driveItem
 
 ### [Remove-MgShareList](Remove-MgShareList.md)
 Used to access the underlying list
@@ -438,11 +518,18 @@ The collection of columns that are required by this content type.
 ### [Remove-MgShareListContentTypeColumnSourceColumnByRef](Remove-MgShareListContentTypeColumnSourceColumnByRef.md)
 The source column for the content type column.
 
+### [Remove-MgShareListDriveByRef](Remove-MgShareListDriveByRef.md)
+Only present on document libraries.
+Allows access to the list as a [drive][] resource with [driveItems][driveItem].
+
 ### [Remove-MgShareListItem](Remove-MgShareListItem.md)
 All items contained in the list.
 
 ### [Remove-MgShareListItemAnalyticByRef](Remove-MgShareListItemAnalyticByRef.md)
 Analytics about the view activities that took place on this item.
+
+### [Remove-MgShareListItemDriveItemByRef](Remove-MgShareListItemDriveItemByRef.md)
+For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
 
 ### [Remove-MgShareListItemField](Remove-MgShareListItemField.md)
 The values of the columns set on this list item.
@@ -459,11 +546,22 @@ The set of subscriptions on the list.
 ### [Remove-MgSharePermission](Remove-MgSharePermission.md)
 Used to access the permission representing the underlying sharing link
 
+### [Remove-MgShareRootByRef](Remove-MgShareRootByRef.md)
+Used to access the underlying driveItem.
+Deprecated -- use driveItem instead.
+
 ### [Remove-MgShareSharedDriveItemSharedDriveItem](Remove-MgShareSharedDriveItemSharedDriveItem.md)
 Delete entity from shares
 
+### [Remove-MgShareSiteByRef](Remove-MgShareSiteByRef.md)
+Used to access the underlying site
+
 ### [Remove-MgUserDrive](Remove-MgUserDrive.md)
 A collection of drives available for this user.
+Read-only.
+
+### [Remove-MgUserDriveByRef](Remove-MgUserDriveByRef.md)
+The user's OneDrive.
 Read-only.
 
 ### [Restore-MgDriveListItemVersion](Restore-MgDriveListItemVersion.md)
@@ -487,11 +585,25 @@ Parent contentType from which this content type is derived.
 ### [Set-MgDriveListContentTypeColumnSourceColumnByRef](Set-MgDriveListContentTypeColumnSourceColumnByRef.md)
 The source column for the content type column.
 
+### [Set-MgDriveListDriveByRef](Set-MgDriveListDriveByRef.md)
+Only present on document libraries.
+Allows access to the list as a [drive][] resource with [driveItems][driveItem].
+
 ### [Set-MgDriveListItemAnalyticByRef](Set-MgDriveListItemAnalyticByRef.md)
 Analytics about the view activities that took place on this item.
 
+### [Set-MgDriveListItemDriveItemByRef](Set-MgDriveListItemDriveItemByRef.md)
+For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
+
 ### [Set-MgDriveRootContent](Set-MgDriveRootContent.md)
 Update media content for the navigation property root in drives
+
+### [Set-MgGroupDriveByRef](Set-MgGroupDriveByRef.md)
+The group's default drive.
+Read-only.
+
+### [Set-MgShareDriveItemByRef](Set-MgShareDriveItemByRef.md)
+Used to access the underlying driveItem
 
 ### [Set-MgShareListColumnSourceColumnByRef](Set-MgShareListColumnSourceColumnByRef.md)
 The source column for the content type column.
@@ -502,8 +614,26 @@ Parent contentType from which this content type is derived.
 ### [Set-MgShareListContentTypeColumnSourceColumnByRef](Set-MgShareListContentTypeColumnSourceColumnByRef.md)
 The source column for the content type column.
 
+### [Set-MgShareListDriveByRef](Set-MgShareListDriveByRef.md)
+Only present on document libraries.
+Allows access to the list as a [drive][] resource with [driveItems][driveItem].
+
 ### [Set-MgShareListItemAnalyticByRef](Set-MgShareListItemAnalyticByRef.md)
 Analytics about the view activities that took place on this item.
+
+### [Set-MgShareListItemDriveItemByRef](Set-MgShareListItemDriveItemByRef.md)
+For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
+
+### [Set-MgShareRootByRef](Set-MgShareRootByRef.md)
+Used to access the underlying driveItem.
+Deprecated -- use driveItem instead.
+
+### [Set-MgShareSiteByRef](Set-MgShareSiteByRef.md)
+Used to access the underlying site
+
+### [Set-MgUserDriveByRef](Set-MgUserDriveByRef.md)
+The user's OneDrive.
+Read-only.
 
 ### [Test-MgDriveListContentTypeBasePublished](Test-MgDriveListContentTypeBasePublished.md)
 Invoke function isPublished
