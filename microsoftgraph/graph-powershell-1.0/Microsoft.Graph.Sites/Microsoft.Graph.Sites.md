@@ -213,9 +213,6 @@ Nullable.
 ### [Get-MgSiteRecentNotebook](Get-MgSiteRecentNotebook.md)
 Invoke function getRecentNotebooks
 
-### [Get-MgSiteSiteByRef](Get-MgSiteSiteByRef.md)
-The collection of the sub-sites under this site.
-
 ### [Get-MgSiteTermStore](Get-MgSiteTermStore.md)
 The default termStore under this site.
 
@@ -530,9 +527,6 @@ The set of subscriptions on the list.
 The permissions associated with the site.
 Nullable.
 
-### [New-MgSiteSiteByRef](New-MgSiteSiteByRef.md)
-The collection of the sub-sites under this site.
-
 ### [New-MgSiteTermStore](New-MgSiteTermStore.md)
 The collection of termStores under this site.
 
@@ -583,9 +577,6 @@ Children of current term.
 
 ### [New-MgSiteTermStoreSetTermRelation](New-MgSiteTermStoreSetTermRelation.md)
 To indicate which terms are related to the current term as either pinned or reused.
-
-### [New-MgSubSite](New-MgSubSite.md)
-Add new entity to sites
 
 ### [New-MgUserFollowedSiteByRef](New-MgUserFollowedSiteByRef.md)
 Create new navigation property ref to followedSites for users
@@ -1081,7 +1072,4 @@ Children of current term.
 
 ### [Update-MgSiteTermStoreSetTermRelation](Update-MgSiteTermStoreSetTermRelation.md)
 To indicate which terms are related to the current term as either pinned or reused.
-
-### [Update-MgSubSite](Update-MgSubSite.md)
-Update entity in sites
 
