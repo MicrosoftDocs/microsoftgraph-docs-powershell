@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgdeclineusereventinstance
@@ -12,28 +12,28 @@ Invoke action decline
 
 ## SYNTAX
 
-### DeclineExpanded1 (Default)
+### DeclineExpanded (Default)
 ```
 Invoke-MgDeclineUserEventInstance -EventId <String> -EventId1 <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-Comment <String>] [-ProposedNewTime <IMicrosoftGraphTimeSlot>]
  [-SendResponse] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Decline1
+### Decline
 ```
 Invoke-MgDeclineUserEventInstance -EventId <String> -EventId1 <String> -UserId <String>
  -BodyParameter <IPathsYv35ByUsersUserIdEventsEventIdInstancesEventId1MicrosoftGraphDeclinePostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeclineViaIdentityExpanded1
+### DeclineViaIdentityExpanded
 ```
 Invoke-MgDeclineUserEventInstance -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-Comment <String>] [-ProposedNewTime <IMicrosoftGraphTimeSlot>] [-SendResponse] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### DeclineViaIdentity1
+### DeclineViaIdentity
 ```
 Invoke-MgDeclineUserEventInstance -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsYv35ByUsersUserIdEventsEventIdInstancesEventId1MicrosoftGraphDeclinePostRequestbodyContentApplicationJsonSchema>
@@ -52,7 +52,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: DeclineExpanded1, DeclineViaIdentityExpanded1
+Parameter Sets: DeclineExpanded, DeclineViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -68,7 +68,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPathsYv35ByUsersUserIdEventsEventIdInstancesEventId1MicrosoftGraphDeclinePostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Decline1, DeclineViaIdentity1
+Parameter Sets: Decline, DeclineViaIdentity
 Aliases:
 
 Required: True
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: DeclineExpanded1, DeclineViaIdentityExpanded1
+Parameter Sets: DeclineExpanded, DeclineViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -98,7 +98,7 @@ key: id of event
 
 ```yaml
 Type: String
-Parameter Sets: DeclineExpanded1, Decline1
+Parameter Sets: DeclineExpanded, Decline
 Aliases:
 
 Required: True
@@ -113,7 +113,7 @@ key: id of event
 
 ```yaml
 Type: String
-Parameter Sets: DeclineExpanded1, Decline1
+Parameter Sets: DeclineExpanded, Decline
 Aliases:
 
 Required: True
@@ -129,7 +129,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: DeclineViaIdentityExpanded1, DeclineViaIdentity1
+Parameter Sets: DeclineViaIdentityExpanded, DeclineViaIdentity
 Aliases:
 
 Required: True
@@ -160,7 +160,7 @@ To construct, please use Get-Help -Online and see NOTES section for PROPOSEDNEWT
 
 ```yaml
 Type: IMicrosoftGraphTimeSlot
-Parameter Sets: DeclineExpanded1, DeclineViaIdentityExpanded1
+Parameter Sets: DeclineExpanded, DeclineViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: DeclineExpanded1, DeclineViaIdentityExpanded1
+Parameter Sets: DeclineExpanded, DeclineViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -190,7 +190,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: DeclineExpanded1, Decline1
+Parameter Sets: DeclineExpanded, Decline
 Aliases:
 
 Required: True

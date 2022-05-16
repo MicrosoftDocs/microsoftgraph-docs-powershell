@@ -23,6 +23,9 @@ Invoke action addKey
 ### [Add-MgServicePrincipalPassword](Add-MgServicePrincipalPassword.md)
 Invoke action addPassword
 
+### [Add-MgServicePrincipalTokenSigningCertificate](Add-MgServicePrincipalTokenSigningCertificate.md)
+Invoke action addTokenSigningCertificate
+
 ### [Clear-MgApplicationVerifiedPublisher](Clear-MgApplicationVerifiedPublisher.md)
 Invoke action unsetVerifiedPublisher
 
@@ -110,7 +113,8 @@ Supports $expand.
 Get entity from servicePrincipals by key
 
 ### [Get-MgServicePrincipalAppRoleAssignedTo](Get-MgServicePrincipalAppRoleAssignedTo.md)
-App role assignments for this app or service, granted to users, groups, and other service principals.Supports $expand.
+App role assignments for this app or service, granted to users, groups, and other service principals.
+Supports $expand.
 
 ### [Get-MgServicePrincipalAppRoleAssignment](Get-MgServicePrincipalAppRoleAssignment.md)
 App role assignment for another app or service, granted to this service principal.
@@ -206,27 +210,21 @@ Supports $expand.
 
 ### [Get-MgServicePrincipalTokenIssuancePolicy](Get-MgServicePrincipalTokenIssuancePolicy.md)
 The tokenIssuancePolicies assigned to this service principal.
-Supports $expand.
 
 ### [Get-MgServicePrincipalTokenIssuancePolicyByRef](Get-MgServicePrincipalTokenIssuancePolicyByRef.md)
 The tokenIssuancePolicies assigned to this service principal.
-Supports $expand.
 
 ### [Get-MgServicePrincipalTokenLifetimePolicy](Get-MgServicePrincipalTokenLifetimePolicy.md)
 The tokenLifetimePolicies assigned to this service principal.
-Supports $expand.
 
 ### [Get-MgServicePrincipalTokenLifetimePolicyByRef](Get-MgServicePrincipalTokenLifetimePolicyByRef.md)
 The tokenLifetimePolicies assigned to this service principal.
-Supports $expand.
 
 ### [Get-MgServicePrincipalTokenLifetimePolicyByRef](Get-MgServicePrincipalTokenLifetimePolicyByRef.md)
 The tokenLifetimePolicies assigned to this service principal.
-Supports $expand.
 
 ### [Get-MgServicePrincipalTokenLifetimePolicyByRef](Get-MgServicePrincipalTokenLifetimePolicyByRef.md)
 The tokenLifetimePolicies assigned to this service principal.
-Supports $expand.
 
 ### [Get-MgUserAppRoleAssignment](Get-MgUserAppRoleAssignment.md)
 Represents the app roles a user has been granted for an application.
@@ -269,7 +267,8 @@ Supports $expand.
 Add new entity to servicePrincipals
 
 ### [New-MgServicePrincipalAppRoleAssignedTo](New-MgServicePrincipalAppRoleAssignedTo.md)
-App role assignments for this app or service, granted to users, groups, and other service principals.Supports $expand.
+App role assignments for this app or service, granted to users, groups, and other service principals.
+Supports $expand.
 
 ### [New-MgServicePrincipalAppRoleAssignment](New-MgServicePrincipalAppRoleAssignment.md)
 App role assignment for another app or service, granted to this service principal.
@@ -320,15 +319,12 @@ Supports $expand.
 
 ### [New-MgServicePrincipalTokenIssuancePolicyByRef](New-MgServicePrincipalTokenIssuancePolicyByRef.md)
 The tokenIssuancePolicies assigned to this service principal.
-Supports $expand.
 
 ### [New-MgServicePrincipalTokenLifetimePolicyByRef](New-MgServicePrincipalTokenLifetimePolicyByRef.md)
 The tokenLifetimePolicies assigned to this service principal.
-Supports $expand.
 
 ### [New-MgServicePrincipalTokenLifetimePolicyByRef](New-MgServicePrincipalTokenLifetimePolicyByRef.md)
 The tokenLifetimePolicies assigned to this service principal.
-Supports $expand.
 
 ### [New-MgUserAppRoleAssignment](New-MgUserAppRoleAssignment.md)
 Represents the app roles a user has been granted for an application.
@@ -361,7 +357,8 @@ Supports $expand.
 Delete entity from servicePrincipals
 
 ### [Remove-MgServicePrincipalAppRoleAssignedTo](Remove-MgServicePrincipalAppRoleAssignedTo.md)
-App role assignments for this app or service, granted to users, groups, and other service principals.Supports $expand.
+App role assignments for this app or service, granted to users, groups, and other service principals.
+Supports $expand.
 
 ### [Remove-MgServicePrincipalAppRoleAssignment](Remove-MgServicePrincipalAppRoleAssignment.md)
 App role assignment for another app or service, granted to this service principal.
@@ -425,7 +422,8 @@ Supports $expand.
 Update entity in servicePrincipals
 
 ### [Update-MgServicePrincipalAppRoleAssignedTo](Update-MgServicePrincipalAppRoleAssignedTo.md)
-App role assignments for this app or service, granted to users, groups, and other service principals.Supports $expand.
+App role assignments for this app or service, granted to users, groups, and other service principals.
+Supports $expand.
 
 ### [Update-MgServicePrincipalAppRoleAssignment](Update-MgServicePrincipalAppRoleAssignment.md)
 App role assignment for another app or service, granted to this service principal.

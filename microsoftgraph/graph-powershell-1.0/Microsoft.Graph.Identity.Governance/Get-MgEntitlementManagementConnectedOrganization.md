@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementconnectedorganization
@@ -12,10 +12,11 @@ Represents references to a directory or domain of another organization whose use
 
 ## SYNTAX
 
-### ListAll (Default)
+### List1 (Default)
 ```
 Get-MgEntitlementManagementConnectedOrganization [-ExpandProperty <String[]>] [-Property <String[]>]
- [-Sort <String[]>] [-All] [<CommonParameters>]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
+ [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get1
@@ -30,25 +31,6 @@ Get-MgEntitlementManagementConnectedOrganization -InputObject <IIdentityGovernan
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### List1
-```
-Get-MgEntitlementManagementConnectedOrganization [-ExpandProperty <String[]>] [-Property <String[]>]
- [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
- [-All] [-CountVariable <String>] [<CommonParameters>]
-```
-
-### ListByDisplayNameContains
-```
-Get-MgEntitlementManagementConnectedOrganization [-ExpandProperty <String[]>] [-Property <String[]>]
- [-Sort <String[]>] [-Top <Int32>] -DisplayNameContains <String> [-All] [<CommonParameters>]
-```
-
-### ListByDisplayNameEq
-```
-Get-MgEntitlementManagementConnectedOrganization [-ExpandProperty <String[]>] [-Property <String[]>]
- [-Sort <String[]>] [-Top <Int32>] -DisplayNameEq <String> [-All] [<CommonParameters>]
-```
-
 ## DESCRIPTION
 Represents references to a directory or domain of another organization whose users can request access.
 
@@ -61,7 +43,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: ListAll, List1, ListByDisplayNameContains, ListByDisplayNameEq
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -96,36 +78,6 @@ Parameter Sets: List1
 Aliases: CV
 
 Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DisplayNameContains
-Filter items by property values
-
-```yaml
-Type: String
-Parameter Sets: ListByDisplayNameContains
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DisplayNameEq
-Filter items by property values
-
-```yaml
-Type: String
-Parameter Sets: ListByDisplayNameEq
-Aliases:
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -228,7 +180,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: ListAll, List1, ListByDisplayNameContains, ListByDisplayNameEq
+Parameter Sets: List1
 Aliases: OrderBy
 
 Required: False
@@ -243,7 +195,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1, ListByDisplayNameContains, ListByDisplayNameEq
+Parameter Sets: List1
 Aliases: Limit
 
 Required: False
@@ -276,7 +228,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConnectedOrganization
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConnectedOrganization1
 ## NOTES
 
 ALIASES

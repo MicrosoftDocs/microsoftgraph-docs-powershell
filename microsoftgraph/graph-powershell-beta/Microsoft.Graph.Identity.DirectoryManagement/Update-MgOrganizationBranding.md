@@ -129,22 +129,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BackgroundImageRelativeUrl
-A relative URL for the backgroundImage property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN.
-Read-only.
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -BannerLogoInputFile
 Input File for BannerLogo (A banner version of your company logo that appears on the sign-in page.
 The allowed types are PNG or JPEG no larger than 36 × 245 pixels.
@@ -733,5 +717,8 @@ LOGINPAGETEXTVISIBILITYSETTINGS <IMicrosoftGraphLoginPageTextVisibilitySettings>
   - `[HideTermsOfUse <Boolean?>]`: 
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

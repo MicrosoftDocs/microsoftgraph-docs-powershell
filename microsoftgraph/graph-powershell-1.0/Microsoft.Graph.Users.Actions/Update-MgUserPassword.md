@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/update-mguserpassword
@@ -12,26 +12,26 @@ Invoke action changePassword
 
 ## SYNTAX
 
-### ChangeExpanded (Default)
+### ChangeExpanded1 (Default)
 ```
 Update-MgUserPassword -UserId <String> [-AdditionalProperties <Hashtable>] [-CurrentPassword <String>]
  [-NewPassword <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Change
+### Change1
 ```
 Update-MgUserPassword -UserId <String>
  -BodyParameter <IPaths3Mx0JpUsersUserIdMicrosoftGraphChangepasswordPostRequestbodyContentApplicationJsonSchema1>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ChangeViaIdentityExpanded
+### ChangeViaIdentityExpanded1
 ```
 Update-MgUserPassword -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-CurrentPassword <String>] [-NewPassword <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ChangeViaIdentity
+### ChangeViaIdentity1
 ```
 Update-MgUserPassword -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths3Mx0JpUsersUserIdMicrosoftGraphChangepasswordPostRequestbodyContentApplicationJsonSchema1>
@@ -50,7 +50,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: ChangeExpanded, ChangeViaIdentityExpanded
+Parameter Sets: ChangeExpanded1, ChangeViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -66,7 +66,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPaths3Mx0JpUsersUserIdMicrosoftGraphChangepasswordPostRequestbodyContentApplicationJsonSchema1
-Parameter Sets: Change, ChangeViaIdentity
+Parameter Sets: Change1, ChangeViaIdentity1
 Aliases:
 
 Required: True
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: ChangeExpanded, ChangeViaIdentityExpanded
+Parameter Sets: ChangeExpanded1, ChangeViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -97,7 +97,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: ChangeViaIdentityExpanded, ChangeViaIdentity
+Parameter Sets: ChangeViaIdentityExpanded1, ChangeViaIdentity1
 Aliases:
 
 Required: True
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: ChangeExpanded, ChangeViaIdentityExpanded
+Parameter Sets: ChangeExpanded1, ChangeViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -142,7 +142,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: ChangeExpanded, Change
+Parameter Sets: ChangeExpanded1, Change1
 Aliases:
 
 Required: True

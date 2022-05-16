@@ -15,10 +15,10 @@ Update print
 ### UpdateExpanded (Default)
 ```
 Update-MgPrint [-AdditionalProperties <Hashtable>] [-Connectors <IMicrosoftGraphPrintConnector1[]>]
- [-Operations <IMicrosoftGraphPrintOperation[]>] [-PrinterShares <IMicrosoftGraphPrinterShare1[]>]
+ [-Operations <IMicrosoftGraphPrintOperation[]>] [-PrinterShares <IMicrosoftGraphPrinterShare[]>]
  [-Printers <IMicrosoftGraphPrinter1[]>] [-Reports <IMicrosoftGraphReportRoot>]
  [-Services <IMicrosoftGraphPrintService1[]>] [-Settings <IMicrosoftGraphPrintSettings>]
- [-Shares <IMicrosoftGraphPrinterShare1[]>] [-TaskDefinitions <IMicrosoftGraphPrintTaskDefinition1[]>]
+ [-Shares <IMicrosoftGraphPrinterShare[]>] [-TaskDefinitions <IMicrosoftGraphPrintTaskDefinition1[]>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for PRINTERSHARES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrinterShare1[]
+Type: IMicrosoftGraphPrinterShare[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -197,7 +197,7 @@ The list of printer shares registered in the tenant.
 To construct, please use Get-Help -Online and see NOTES section for SHARES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrinterShare1[]
+Type: IMicrosoftGraphPrinterShare[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -17016,6 +17016,9 @@ TASKDEFINITIONS <IMicrosoftGraphPrintTaskDefinition1[]>: List of abstract defini
       - `[Event <String>]`: printEvent
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS
 

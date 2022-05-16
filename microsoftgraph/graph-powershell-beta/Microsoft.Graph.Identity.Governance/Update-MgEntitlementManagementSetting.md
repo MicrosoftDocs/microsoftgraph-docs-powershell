@@ -21,8 +21,8 @@ Update-MgEntitlementManagementSetting [-AdditionalProperties <Hashtable>]
 
 ### Update
 ```
-Update-MgEntitlementManagementSetting -BodyParameter <IMicrosoftGraphEntitlementManagementSettings1>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgEntitlementManagementSetting -BodyParameter <IMicrosoftGraphEntitlementManagementSettings> [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -52,7 +52,7 @@ entitlementManagementSettings
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEntitlementManagementSettings1
+Type: IMicrosoftGraphEntitlementManagementSettings
 Parameter Sets: Update
 Aliases:
 
@@ -159,7 +159,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEntitlementManagementSettings1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEntitlementManagementSettings
 ## OUTPUTS
 
 ### System.Boolean

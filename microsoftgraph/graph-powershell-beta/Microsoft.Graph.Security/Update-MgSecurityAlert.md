@@ -8,11 +8,12 @@ schema: 2.0.0
 # Update-MgSecurityAlert
 
 ## SYNOPSIS
-Notifications for suspicious or potential security issues in a customer's tenant.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### UpdateExpanded1 (Default)
 ```
 Update-MgSecurityAlert -AlertId <String> [-ActivityGroupName <String>] [-AdditionalProperties <Hashtable>]
  [-AlertDetections <IMicrosoftGraphAlertDetection[]>] [-AssignedTo <String>] [-AzureSubscriptionId <String>]
@@ -36,13 +37,13 @@ Update-MgSecurityAlert -AlertId <String> [-ActivityGroupName <String>] [-Additio
  [<CommonParameters>]
 ```
 
-### Update
+### Update1
 ```
 Update-MgSecurityAlert -AlertId <String> -BodyParameter <IMicrosoftGraphAlert> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded
+### UpdateViaIdentityExpanded1
 ```
 Update-MgSecurityAlert -InputObject <ISecurityIdentity> [-ActivityGroupName <String>]
  [-AdditionalProperties <Hashtable>] [-AlertDetections <IMicrosoftGraphAlertDetection[]>]
@@ -66,14 +67,15 @@ Update-MgSecurityAlert -InputObject <ISecurityIdentity> [-ActivityGroupName <Str
  [<CommonParameters>]
 ```
 
-### UpdateViaIdentity
+### UpdateViaIdentity1
 ```
 Update-MgSecurityAlert -InputObject <ISecurityIdentity> -BodyParameter <IMicrosoftGraphAlert> [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Notifications for suspicious or potential security issues in a customer's tenant.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 
@@ -84,7 +86,7 @@ Name or alias of the activity group (attacker) this alert is attributed to.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -99,7 +101,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -115,7 +117,7 @@ To construct, please use Get-Help -Online and see NOTES section for ALERTDETECTI
 
 ```yaml
 Type: IMicrosoftGraphAlertDetection[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -130,7 +132,7 @@ key: id of alert
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -145,7 +147,7 @@ Name of the analyst the alert is assigned to for triage, investigation, or remed
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -160,7 +162,7 @@ Azure subscription ID, present if this alert is related to an Azure resource.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -176,7 +178,7 @@ Required.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -192,7 +194,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IMicrosoftGraphAlert
-Parameter Sets: Update, UpdateViaIdentity
+Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -207,7 +209,7 @@ Category of the alert (for example, credentialTheft, ransomware, etc.).
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -224,7 +226,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z (supports updat
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -240,7 +242,7 @@ To construct, please use Get-Help -Online and see NOTES section for CLOUDAPPSTAT
 
 ```yaml
 Type: IMicrosoftGraphCloudAppSecurityState[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -255,7 +257,7 @@ Customer-provided comments on alert (for customer alert management) (supports up
 
 ```yaml
 Type: String[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -270,7 +272,7 @@ Confidence of the detection logic (percentage between 1-100).
 
 ```yaml
 Type: Int32
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -288,7 +290,7 @@ Required.
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -303,7 +305,7 @@ Alert description.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -318,7 +320,7 @@ Set of alerts related to this alert entity (each alert is pushed to the SIEM as 
 
 ```yaml
 Type: String[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -336,7 +338,7 @@ Required.
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -351,7 +353,7 @@ alertFeedback
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -367,7 +369,7 @@ To construct, please use Get-Help -Online and see NOTES section for FILESTATES p
 
 ```yaml
 Type: IMicrosoftGraphFileSecurityState[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -383,7 +385,7 @@ To construct, please use Get-Help -Online and see NOTES section for HISTORYSTATE
 
 ```yaml
 Type: IMicrosoftGraphAlertHistoryState[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -399,7 +401,7 @@ To construct, please use Get-Help -Online and see NOTES section for HOSTSTATES p
 
 ```yaml
 Type: IMicrosoftGraphHostSecurityState[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -414,7 +416,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -429,7 +431,7 @@ IDs of incidents related to current alert.
 
 ```yaml
 Type: String[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -445,7 +447,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISecurityIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -461,7 +463,7 @@ To construct, please use Get-Help -Online and see NOTES section for INVESTIGATIO
 
 ```yaml
 Type: IMicrosoftGraphInvestigationSecurityState[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -476,7 +478,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -493,7 +495,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -509,7 +511,7 @@ To construct, please use Get-Help -Online and see NOTES section for MALWARESTATE
 
 ```yaml
 Type: IMicrosoftGraphMalwareState[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -525,7 +527,7 @@ To construct, please use Get-Help -Online and see NOTES section for MESSAGESECUR
 
 ```yaml
 Type: IMicrosoftGraphMessageSecurityState[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -541,7 +543,7 @@ To construct, please use Get-Help -Online and see NOTES section for NETWORKCONNE
 
 ```yaml
 Type: IMicrosoftGraphNetworkConnection[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -572,7 +574,7 @@ To construct, please use Get-Help -Online and see NOTES section for PROCESSES pr
 
 ```yaml
 Type: IMicrosoftGraphProcess[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -587,7 +589,7 @@ Vendor/provider recommended action(s) to take as a result of the alert (for exam
 
 ```yaml
 Type: String[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -603,7 +605,7 @@ To construct, please use Get-Help -Online and see NOTES section for REGISTRYKEYS
 
 ```yaml
 Type: IMicrosoftGraphRegistryKeyState[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -620,7 +622,7 @@ To construct, please use Get-Help -Online and see NOTES section for SECURITYRESO
 
 ```yaml
 Type: IMicrosoftGraphSecurityResource[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -635,7 +637,7 @@ alertSeverity
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -650,7 +652,7 @@ Hyperlinks (URIs) to the source material related to the alert, for example, prov
 
 ```yaml
 Type: String[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -665,7 +667,7 @@ alertStatus
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -680,7 +682,7 @@ User-definable labels that can be applied to an alert and can serve as filter co
 
 ```yaml
 Type: String[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -696,7 +698,7 @@ Required.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -714,7 +716,7 @@ To construct, please use Get-Help -Online and see NOTES section for TRIGGERS pro
 
 ```yaml
 Type: IMicrosoftGraphAlertTrigger[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -730,7 +732,7 @@ To construct, please use Get-Help -Online and see NOTES section for URICLICKSECU
 
 ```yaml
 Type: IMicrosoftGraphUriClickSecurityState[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -746,7 +748,7 @@ To construct, please use Get-Help -Online and see NOTES section for USERSTATES p
 
 ```yaml
 Type: IMicrosoftGraphUserSecurityState[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -762,7 +764,7 @@ To construct, please use Get-Help -Online and see NOTES section for VENDORINFORM
 
 ```yaml
 Type: IMicrosoftGraphSecurityVendorInformation
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -778,7 +780,7 @@ To construct, please use Get-Help -Online and see NOTES section for VULNERABILIT
 
 ```yaml
 Type: IMicrosoftGraphVulnerabilityState[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -916,7 +918,7 @@ BODYPARAMETER <IMicrosoftGraphAlert>: alert
     - `[MessageSubject <String>]`: 
     - `[NetworkMessageId <String>]`: 
   - `[NetworkConnections <IMicrosoftGraphNetworkConnection[]>]`: Security-related stateful information generated by the provider about the network connection(s) related to this alert.
-    - `[ApplicationName <String>]`: Name of the application managing the network connection (for example, Facebook, SMTP, etc.).
+    - `[ApplicationName <String>]`: Name of the application managing the network connection (for example, Facebook or SMTP).
     - `[DestinationAddress <String>]`: Destination IP address (of the network connection).
     - `[DestinationDomain <String>]`: Destination domain portion of the destination URL. (for example 'www.contoso.com').
     - `[DestinationLocation <String>]`: Location (by IP address mapping) associated with the destination of a network connection.
@@ -1047,11 +1049,13 @@ INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[FileSecurityProfileId <String>]`: key: id of fileSecurityProfile
   - `[HostSecurityProfileId <String>]`: key: id of hostSecurityProfile
   - `[IPSecurityProfileId <String>]`: key: id of ipSecurityProfile
-  - `[IncidentId <String>]`: key: id of incident
   - `[ProviderTenantSettingId <String>]`: key: id of providerTenantSetting
   - `[SecureScoreControlProfileId <String>]`: key: id of secureScoreControlProfile
   - `[SecureScoreId <String>]`: key: id of secureScore
   - `[SecurityActionId <String>]`: key: id of securityAction
+  - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
+  - `[SimulationAutomationId <String>]`: key: id of simulationAutomation
+  - `[SimulationAutomationRunId <String>]`: key: id of simulationAutomationRun
   - `[SimulationId <String>]`: key: id of simulation
   - `[TiIndicatorId <String>]`: key: id of tiIndicator
   - `[UserSecurityProfileId <String>]`: key: id of userSecurityProfile
@@ -1079,7 +1083,7 @@ MESSAGESECURITYSTATES <IMicrosoftGraphMessageSecurityState[]>: .
   - `[NetworkMessageId <String>]`: 
 
 NETWORKCONNECTIONS <IMicrosoftGraphNetworkConnection[]>: Security-related stateful information generated by the provider about the network connection(s) related to this alert.
-  - `[ApplicationName <String>]`: Name of the application managing the network connection (for example, Facebook, SMTP, etc.).
+  - `[ApplicationName <String>]`: Name of the application managing the network connection (for example, Facebook or SMTP).
   - `[DestinationAddress <String>]`: Destination IP address (of the network connection).
   - `[DestinationDomain <String>]`: Destination domain portion of the destination URL. (for example 'www.contoso.com').
   - `[DestinationLocation <String>]`: Location (by IP address mapping) associated with the destination of a network connection.

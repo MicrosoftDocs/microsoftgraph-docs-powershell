@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/remove-mggroupplannerplandetail
@@ -8,9 +8,9 @@ schema: 2.0.0
 # Remove-MgGroupPlannerPlanDetail
 
 ## SYNOPSIS
+Additional details about the plan.
 Read-only.
 Nullable.
-Additional details about the plan.
 
 ## SYNTAX
 
@@ -27,9 +27,9 @@ Remove-MgGroupPlannerPlanDetail -InputObject <IPlannerIdentity> [-IfMatch <Strin
 ```
 
 ## DESCRIPTION
+Additional details about the plan.
 Read-only.
 Nullable.
-Additional details about the plan.
 
 ## EXAMPLES
 

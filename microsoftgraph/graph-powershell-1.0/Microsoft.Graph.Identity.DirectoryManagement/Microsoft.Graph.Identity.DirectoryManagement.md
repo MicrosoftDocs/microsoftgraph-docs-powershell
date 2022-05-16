@@ -51,8 +51,7 @@ Invoke action checkMemberGroups
 Invoke action checkMemberObjects
 
 ### [Get-MgContact](Get-MgContact.md)
-Represents an Azure Active Directory object.
-The directoryObject type is the base type for many other directory entity types.
+Get entity from contacts by key
 
 ### [Get-MgContactById](Get-MgContactById.md)
 Invoke action getByIds
@@ -64,19 +63,23 @@ Invoke function delta
 The contact's direct reports.
 (The users and contacts that have their manager property set to this contact.) Read-only.
 Nullable.
+Supports $expand.
 
 ### [Get-MgContactDirectReportByRef](Get-MgContactDirectReportByRef.md)
 The contact's direct reports.
 (The users and contacts that have their manager property set to this contact.) Read-only.
 Nullable.
+Supports $expand.
 
 ### [Get-MgContactManager](Get-MgContactManager.md)
 The user or contact that is this contact's manager.
 Read-only.
+Supports $expand.
 
 ### [Get-MgContactManagerByRef](Get-MgContactManagerByRef.md)
 The user or contact that is this contact's manager.
 Read-only.
+Supports $expand.
 
 ### [Get-MgContactMemberGroup](Get-MgContactMemberGroup.md)
 Invoke action getMemberGroups
@@ -97,8 +100,7 @@ Invoke action getMemberObjects
 Invoke action getMemberObjects
 
 ### [Get-MgContract](Get-MgContract.md)
-Represents an Azure Active Directory object.
-The directoryObject type is the base type for many other directory entity types.
+Get entity from contracts by key
 
 ### [Get-MgContractById](Get-MgContractById.md)
 Invoke action getByIds
@@ -113,8 +115,7 @@ Invoke action getMemberObjects
 Get entities from devices
 
 ### [Get-MgDeviceById](Get-MgDeviceById.md)
-Represents an Azure Active Directory object.
-The directoryObject type is the base type for many other directory entity types.
+Get entity from devices by key
 
 ### [Get-MgDeviceExtension](Get-MgDeviceExtension.md)
 The collection of open extensions defined for the device.
@@ -139,6 +140,7 @@ The registered owner is set at the time of registration.
 Currently, there can be only one owner.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [Get-MgDeviceRegisteredOwnerByRef](Get-MgDeviceRegisteredOwnerByRef.md)
 The user that cloud joined the device or registered their personal device.
@@ -146,55 +148,59 @@ The registered owner is set at the time of registration.
 Currently, there can be only one owner.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [Get-MgDeviceRegisteredUser](Get-MgDeviceRegisteredUser.md)
 Collection of registered users of the device.
 For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [Get-MgDeviceRegisteredUserByRef](Get-MgDeviceRegisteredUserByRef.md)
 Collection of registered users of the device.
 For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [Get-MgDeviceRegisteredUserByRef](Get-MgDeviceRegisteredUserByRef.md)
 Collection of registered users of the device.
 For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [Get-MgDeviceRegisteredUserByRef](Get-MgDeviceRegisteredUserByRef.md)
 Collection of registered users of the device.
 For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [Get-MgDirectory](Get-MgDirectory.md)
 Get directory
 
 ### [Get-MgDirectoryAdministrativeUnit](Get-MgDirectoryAdministrativeUnit.md)
-Get administrativeUnits from directory
+Conceptual container for user and group directory objects.
 
 ### [Get-MgDirectoryAdministrativeUnitDelta](Get-MgDirectoryAdministrativeUnitDelta.md)
 Invoke function delta
 
 ### [Get-MgDirectoryAdministrativeUnitExtension](Get-MgDirectoryAdministrativeUnitExtension.md)
-The collection of open extensions defined for this Administrative Unit.
+The collection of open extensions defined for this administrative unit.
 Nullable.
 
 ### [Get-MgDirectoryAdministrativeUnitMember](Get-MgDirectoryAdministrativeUnitMember.md)
-Users and groups that are members of this Adminsitrative Unit.
-HTTP Methods: GET (list members), POST (add members), DELETE (remove members).
+Users and groups that are members of this administrative unit.
+Supports $expand.
 
 ### [Get-MgDirectoryAdministrativeUnitMemberByRef](Get-MgDirectoryAdministrativeUnitMemberByRef.md)
-Users and groups that are members of this Adminsitrative Unit.
-HTTP Methods: GET (list members), POST (add members), DELETE (remove members).
+Users and groups that are members of this administrative unit.
+Supports $expand.
 
 ### [Get-MgDirectoryAdministrativeUnitScopedRoleMember](Get-MgDirectoryAdministrativeUnitScopedRoleMember.md)
-Scoped-role members of this Administrative Unit.
-HTTP Methods: GET (list scopedRoleMemberships), POST (add scopedRoleMembership), DELETE (remove scopedRoleMembership).
+Scoped-role members of this administrative unit.
 
 ### [Get-MgDirectoryDeletedItem](Get-MgDirectoryDeletedItem.md)
 Recently deleted items.
@@ -202,8 +208,7 @@ Read-only.
 Nullable.
 
 ### [Get-MgDirectoryRole](Get-MgDirectoryRole.md)
-Represents an Azure Active Directory object.
-The directoryObject type is the base type for many other directory entity types.
+Get entity from directoryRoles by key
 
 ### [Get-MgDirectoryRoleById](Get-MgDirectoryRoleById.md)
 Invoke action getByIds
@@ -216,12 +221,14 @@ Users that are members of this directory role.
 HTTP Methods: GET, POST, DELETE.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [Get-MgDirectoryRoleMemberByRef](Get-MgDirectoryRoleMemberByRef.md)
 Users that are members of this directory role.
 HTTP Methods: GET, POST, DELETE.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [Get-MgDirectoryRoleMemberGroup](Get-MgDirectoryRoleMemberGroup.md)
 Invoke action getMemberGroups
@@ -235,8 +242,7 @@ Read-only.
 Nullable.
 
 ### [Get-MgDirectoryRoleTemplate](Get-MgDirectoryRoleTemplate.md)
-Represents an Azure Active Directory object.
-The directoryObject type is the base type for many other directory entity types.
+Get entity from directoryRoleTemplates by key
 
 ### [Get-MgDirectoryRoleTemplateById](Get-MgDirectoryRoleTemplateById.md)
 Invoke action getByIds
@@ -251,10 +257,10 @@ Invoke action getMemberObjects
 Get entity from domains by key
 
 ### [Get-MgDomainDomainNameReferenceByRef](Get-MgDomainDomainNameReferenceByRef.md)
-Read-only, Nullable
+Get ref of alerts from security
 
 ### [Get-MgDomainNameReference](Get-MgDomainNameReference.md)
-Read-only, Nullable
+Get alerts from security
 
 ### [Get-MgDomainServiceConfigurationRecord](Get-MgDomainServiceConfigurationRecord.md)
 DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.
@@ -265,7 +271,7 @@ DNS records that the customer adds to the DNS zone file of the domain before the
 Read-only, Nullable
 
 ### [Get-MgOrganization](Get-MgOrganization.md)
-The organization resource represents an instance of global settings and resources which operate and are provisioned at the tenant-level.
+Get entity from organization by key
 
 ### [Get-MgOrganizationBranding](Get-MgOrganizationBranding.md)
 Get branding from organization
@@ -274,7 +280,8 @@ Get branding from organization
 Invoke action getByIds
 
 ### [Get-MgOrganizationExtension](Get-MgOrganizationExtension.md)
-The collection of open extensions defined for the organization resource.
+The collection of open extensions defined for the organization.
+Read-only.
 Nullable.
 
 ### [Get-MgOrganizationMemberGroup](Get-MgOrganizationMemberGroup.md)
@@ -299,16 +306,19 @@ Add new entity to contacts
 The contact's direct reports.
 (The users and contacts that have their manager property set to this contact.) Read-only.
 Nullable.
+Supports $expand.
 
 ### [New-MgContactDirectReportByRef](New-MgContactDirectReportByRef.md)
 The contact's direct reports.
 (The users and contacts that have their manager property set to this contact.) Read-only.
 Nullable.
+Supports $expand.
 
 ### [New-MgContactDirectReportByRef](New-MgContactDirectReportByRef.md)
 The contact's direct reports.
 (The users and contacts that have their manager property set to this contact.) Read-only.
 Nullable.
+Supports $expand.
 
 ### [New-MgContract](New-MgContract.md)
 Add new entity to contracts
@@ -332,33 +342,35 @@ The registered owner is set at the time of registration.
 Currently, there can be only one owner.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [New-MgDeviceRegisteredUserByRef](New-MgDeviceRegisteredUserByRef.md)
 Collection of registered users of the device.
 For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [New-MgDeviceRegisteredUserByRef](New-MgDeviceRegisteredUserByRef.md)
 Collection of registered users of the device.
 For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [New-MgDirectoryAdministrativeUnit](New-MgDirectoryAdministrativeUnit.md)
-Create new navigation property to administrativeUnits for directory
+Conceptual container for user and group directory objects.
 
 ### [New-MgDirectoryAdministrativeUnitExtension](New-MgDirectoryAdministrativeUnitExtension.md)
-The collection of open extensions defined for this Administrative Unit.
+The collection of open extensions defined for this administrative unit.
 Nullable.
 
 ### [New-MgDirectoryAdministrativeUnitMemberByRef](New-MgDirectoryAdministrativeUnitMemberByRef.md)
-Users and groups that are members of this Adminsitrative Unit.
-HTTP Methods: GET (list members), POST (add members), DELETE (remove members).
+Users and groups that are members of this administrative unit.
+Supports $expand.
 
 ### [New-MgDirectoryAdministrativeUnitScopedRoleMember](New-MgDirectoryAdministrativeUnitScopedRoleMember.md)
-Scoped-role members of this Administrative Unit.
-HTTP Methods: GET (list scopedRoleMemberships), POST (add scopedRoleMembership), DELETE (remove scopedRoleMembership).
+Scoped-role members of this administrative unit.
 
 ### [New-MgDirectoryDeletedItem](New-MgDirectoryDeletedItem.md)
 Recently deleted items.
@@ -373,6 +385,7 @@ Users that are members of this directory role.
 HTTP Methods: GET, POST, DELETE.
 Read-only.
 Nullable.
+Supports $expand.
 
 ### [New-MgDirectoryRoleScopedMember](New-MgDirectoryRoleScopedMember.md)
 Members of this directory role that are scoped to administrative units.
@@ -400,7 +413,8 @@ Read-only, Nullable
 Add new entity to organization
 
 ### [New-MgOrganizationExtension](New-MgOrganizationExtension.md)
-The collection of open extensions defined for the organization resource.
+The collection of open extensions defined for the organization.
+Read-only.
 Nullable.
 
 ### [New-MgSubscribedSku](New-MgSubscribedSku.md)
@@ -410,20 +424,18 @@ Add new entity to subscribedSkus
 Add new entity to subscribedSkus
 
 ### [Remove-MgContact](Remove-MgContact.md)
-Represents an Azure Active Directory object.
-The directoryObject type is the base type for many other directory entity types.
+Delete entity from contacts
 
 ### [Remove-MgContactManagerByRef](Remove-MgContactManagerByRef.md)
 The user or contact that is this contact's manager.
 Read-only.
+Supports $expand.
 
 ### [Remove-MgContract](Remove-MgContract.md)
-Represents an Azure Active Directory object.
-The directoryObject type is the base type for many other directory entity types.
+Delete entity from contracts
 
 ### [Remove-MgDevice](Remove-MgDevice.md)
-Represents an Azure Active Directory object.
-The directoryObject type is the base type for many other directory entity types.
+Delete entity from devices
 
 ### [Remove-MgDeviceExtension](Remove-MgDeviceExtension.md)
 The collection of open extensions defined for the device.
@@ -431,15 +443,14 @@ Read-only.
 Nullable.
 
 ### [Remove-MgDirectoryAdministrativeUnit](Remove-MgDirectoryAdministrativeUnit.md)
-Delete navigation property administrativeUnits for directory
+Conceptual container for user and group directory objects.
 
 ### [Remove-MgDirectoryAdministrativeUnitExtension](Remove-MgDirectoryAdministrativeUnitExtension.md)
-The collection of open extensions defined for this Administrative Unit.
+The collection of open extensions defined for this administrative unit.
 Nullable.
 
 ### [Remove-MgDirectoryAdministrativeUnitScopedRoleMember](Remove-MgDirectoryAdministrativeUnitScopedRoleMember.md)
-Scoped-role members of this Administrative Unit.
-HTTP Methods: GET (list scopedRoleMemberships), POST (add scopedRoleMembership), DELETE (remove scopedRoleMembership).
+Scoped-role members of this administrative unit.
 
 ### [Remove-MgDirectoryDeletedItem](Remove-MgDirectoryDeletedItem.md)
 Recently deleted items.
@@ -447,8 +458,7 @@ Read-only.
 Nullable.
 
 ### [Remove-MgDirectoryRole](Remove-MgDirectoryRole.md)
-Represents an Azure Active Directory object.
-The directoryObject type is the base type for many other directory entity types.
+Delete entity from directoryRoles
 
 ### [Remove-MgDirectoryRoleScopedMember](Remove-MgDirectoryRoleScopedMember.md)
 Members of this directory role that are scoped to administrative units.
@@ -456,8 +466,7 @@ Read-only.
 Nullable.
 
 ### [Remove-MgDirectoryRoleTemplate](Remove-MgDirectoryRoleTemplate.md)
-Represents an Azure Active Directory object.
-The directoryObject type is the base type for many other directory entity types.
+Delete entity from directoryRoleTemplates
 
 ### [Remove-MgDomain](Remove-MgDomain.md)
 Delete entity from domains
@@ -471,13 +480,14 @@ DNS records that the customer adds to the DNS zone file of the domain before the
 Read-only, Nullable
 
 ### [Remove-MgOrganization](Remove-MgOrganization.md)
-The organization resource represents an instance of global settings and resources which operate and are provisioned at the tenant-level.
+Delete entity from organization
 
 ### [Remove-MgOrganizationBranding](Remove-MgOrganizationBranding.md)
 Delete navigation property branding for organization
 
 ### [Remove-MgOrganizationExtension](Remove-MgOrganizationExtension.md)
-The collection of open extensions defined for the organization resource.
+The collection of open extensions defined for the organization.
+Read-only.
 Nullable.
 
 ### [Remove-MgSubscribedSku](Remove-MgSubscribedSku.md)
@@ -507,6 +517,7 @@ Invoke action restore
 ### [Set-MgContactManagerByRef](Set-MgContactManagerByRef.md)
 The user or contact that is this contact's manager.
 Read-only.
+Supports $expand.
 
 ### [Set-MgOrganizationMobileDeviceManagementAuthority](Set-MgOrganizationMobileDeviceManagementAuthority.md)
 Set mobile device management authority
@@ -530,16 +541,13 @@ Invoke action validateProperties
 Invoke action validateProperties
 
 ### [Update-MgContact](Update-MgContact.md)
-Represents an Azure Active Directory object.
-The directoryObject type is the base type for many other directory entity types.
+Update entity in contacts
 
 ### [Update-MgContract](Update-MgContract.md)
-Represents an Azure Active Directory object.
-The directoryObject type is the base type for many other directory entity types.
+Update entity in contracts
 
 ### [Update-MgDevice](Update-MgDevice.md)
-Represents an Azure Active Directory object.
-The directoryObject type is the base type for many other directory entity types.
+Update entity in devices
 
 ### [Update-MgDeviceExtension](Update-MgDeviceExtension.md)
 The collection of open extensions defined for the device.
@@ -550,15 +558,14 @@ Nullable.
 Update directory
 
 ### [Update-MgDirectoryAdministrativeUnit](Update-MgDirectoryAdministrativeUnit.md)
-Update the navigation property administrativeUnits in directory
+Conceptual container for user and group directory objects.
 
 ### [Update-MgDirectoryAdministrativeUnitExtension](Update-MgDirectoryAdministrativeUnitExtension.md)
-The collection of open extensions defined for this Administrative Unit.
+The collection of open extensions defined for this administrative unit.
 Nullable.
 
 ### [Update-MgDirectoryAdministrativeUnitScopedRoleMember](Update-MgDirectoryAdministrativeUnitScopedRoleMember.md)
-Scoped-role members of this Administrative Unit.
-HTTP Methods: GET (list scopedRoleMemberships), POST (add scopedRoleMembership), DELETE (remove scopedRoleMembership).
+Scoped-role members of this administrative unit.
 
 ### [Update-MgDirectoryDeletedItem](Update-MgDirectoryDeletedItem.md)
 Recently deleted items.
@@ -566,8 +573,7 @@ Read-only.
 Nullable.
 
 ### [Update-MgDirectoryRole](Update-MgDirectoryRole.md)
-Represents an Azure Active Directory object.
-The directoryObject type is the base type for many other directory entity types.
+Update entity in directoryRoles
 
 ### [Update-MgDirectoryRoleScopedMember](Update-MgDirectoryRoleScopedMember.md)
 Members of this directory role that are scoped to administrative units.
@@ -575,8 +581,7 @@ Read-only.
 Nullable.
 
 ### [Update-MgDirectoryRoleTemplate](Update-MgDirectoryRoleTemplate.md)
-Represents an Azure Active Directory object.
-The directoryObject type is the base type for many other directory entity types.
+Update entity in directoryRoleTemplates
 
 ### [Update-MgDomain](Update-MgDomain.md)
 Update entity in domains
@@ -590,13 +595,14 @@ DNS records that the customer adds to the DNS zone file of the domain before the
 Read-only, Nullable
 
 ### [Update-MgOrganization](Update-MgOrganization.md)
-The organization resource represents an instance of global settings and resources which operate and are provisioned at the tenant-level.
+Update entity in organization
 
 ### [Update-MgOrganizationBranding](Update-MgOrganizationBranding.md)
 Update the navigation property branding in organization
 
 ### [Update-MgOrganizationExtension](Update-MgOrganizationExtension.md)
-The collection of open extensions defined for the organization resource.
+The collection of open extensions defined for the organization.
+Read-only.
 Nullable.
 
 ### [Update-MgSubscribedSku](Update-MgSubscribedSku.md)

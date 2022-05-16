@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/get-mgsearchbookmark
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSearchBookmark
 
 ## SYNOPSIS
-Get bookmarks from search
+Administrative answer in Microsoft Search results for common search queries in an organization.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgSearchBookmark -InputObject <ISearchIdentity> [-ExpandProperty <String[]>]
 ```
 
 ## DESCRIPTION
-Get bookmarks from search
+Administrative answer in Microsoft Search results for common search queries in an organization.
 
 ## EXAMPLES
 

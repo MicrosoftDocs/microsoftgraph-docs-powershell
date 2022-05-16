@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/get-mgsite
@@ -8,30 +8,29 @@ schema: 2.0.0
 # Get-MgSite
 
 ## SYNOPSIS
-Get entity from sites by key
+Invoke function getByPath
 
 ## SYNTAX
 
 ### List1 (Default)
 ```
-Get-MgSite [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>]
+Get-MgSite [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>]
  [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
  [<CommonParameters>]
 ```
 
 ### Get2
 ```
-Get-MgSite -SiteId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgSite -Path <String> -SiteId <String> [<CommonParameters>]
 ```
 
 ### GetViaIdentity2
 ```
-Get-MgSite -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgSite -InputObject <ISitesIdentity> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get entity from sites by key
+Invoke function getByPath
 
 ## EXAMPLES
 
@@ -73,7 +72,7 @@ Expand related entities
 
 ```yaml
 Type: String[]
-Parameter Sets: (All)
+Parameter Sets: List1
 Aliases: Expand
 
 Required: False
@@ -129,12 +128,27 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Path
+Usage: path={path}
+
+```yaml
+Type: String
+Parameter Sets: Get2
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Property
 Select properties to be returned
 
 ```yaml
 Type: String[]
-Parameter Sets: (All)
+Parameter Sets: List1
 Aliases: Select
 
 Required: False
@@ -241,7 +255,6 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink
   - `[ContentTypeId <String>]`: key: id of contentType
-  - `[DriveId <String>]`: key: id of drive
   - `[EndDateTime <String>]`: Usage: endDateTime={endDateTime}
   - `[GroupId <String>]`: key: id of group
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
@@ -260,7 +273,6 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[SetId <String>]`: key: id of set
   - `[SetId1 <String>]`: key: id of set
   - `[SiteId <String>]`: key: id of site
-  - `[SiteId1 <String>]`: key: id of site
   - `[SitePageId <String>]`: key: id of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime={startDateTime}
   - `[StoreId <String>]`: key: id of store

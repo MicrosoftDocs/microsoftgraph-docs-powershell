@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/get-mgsitedrive
@@ -22,18 +22,6 @@ Get-MgSiteDrive -SiteId <String> [-ExpandProperty <String[]>] [-Property <String
 Get-MgSiteDrive -SiteId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [<CommonParameters>]
-```
-
-### Get2
-```
-Get-MgSiteDrive -SiteId <String> -DriveId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
-```
-
-### GetViaIdentity2
-```
-Get-MgSiteDrive -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
@@ -80,21 +68,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DriveId
-key: id of drive
-
-```yaml
-Type: String
-Parameter Sets: Get2
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ExpandProperty
 Expand related entities
 
@@ -131,7 +104,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: GetViaIdentity2, GetViaIdentity1
+Parameter Sets: GetViaIdentity1
 Aliases:
 
 Required: True
@@ -191,7 +164,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: Get1, List1, Get2
+Parameter Sets: Get1, List1
 Aliases:
 
 Required: True
@@ -268,7 +241,6 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink
   - `[ContentTypeId <String>]`: key: id of contentType
-  - `[DriveId <String>]`: key: id of drive
   - `[EndDateTime <String>]`: Usage: endDateTime={endDateTime}
   - `[GroupId <String>]`: key: id of group
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
@@ -287,7 +259,6 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[SetId <String>]`: key: id of set
   - `[SetId1 <String>]`: key: id of set
   - `[SiteId <String>]`: key: id of site
-  - `[SiteId1 <String>]`: key: id of site
   - `[SitePageId <String>]`: key: id of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime={startDateTime}
   - `[StoreId <String>]`: key: id of store

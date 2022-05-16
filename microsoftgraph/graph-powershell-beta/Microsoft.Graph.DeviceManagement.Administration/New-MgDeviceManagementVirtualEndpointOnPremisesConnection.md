@@ -18,9 +18,9 @@ New-MgDeviceManagementVirtualEndpointOnPremisesConnection [-AdDomainName <String
  [-AdDomainUsername <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
  [-HealthCheckStatus <String>]
  [-HealthCheckStatusDetails <IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetails>] [-Id <String>] [-InUse]
- [-OrganizationalUnit <String>] [-ResourceGroupId <String>] [-SubnetId <String>] [-SubscriptionId <String>]
- [-SubscriptionName <String>] [-Type <String>] [-VirtualNetworkId <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ManagedBy <String>] [-OrganizationalUnit <String>] [-ResourceGroupId <String>] [-SubnetId <String>]
+ [-SubscriptionId <String>] [-SubscriptionName <String>] [-Type <String>] [-VirtualNetworkId <String>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -186,6 +186,21 @@ Read-only.
 
 ```yaml
 Type: SwitchParameter
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ManagedBy
+cloudPcManagementService
+
+```yaml
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 

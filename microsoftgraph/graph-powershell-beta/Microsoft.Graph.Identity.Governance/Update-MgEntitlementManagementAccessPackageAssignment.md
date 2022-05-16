@@ -28,7 +28,7 @@ Update-MgEntitlementManagementAccessPackageAssignment -AccessPackageAssignmentId
  [-AccessPackageId <String>] [-AdditionalProperties <Hashtable>] [-AssignmentPolicyId <String>]
  [-AssignmentState <String>] [-AssignmentStatus <String>] [-CatalogId <String>] [-ExpiredDateTime <DateTime>]
  [-Id <String>] [-IsExtended] [-Schedule <IMicrosoftGraphRequestSchedule>]
- [-Target <IMicrosoftGraphAccessPackageSubject1>] [-TargetId <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Target <IMicrosoftGraphAccessPackageSubject>] [-TargetId <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -48,7 +48,7 @@ Update-MgEntitlementManagementAccessPackageAssignment -InputObject <IIdentityGov
  [-AccessPackageId <String>] [-AdditionalProperties <Hashtable>] [-AssignmentPolicyId <String>]
  [-AssignmentState <String>] [-AssignmentStatus <String>] [-CatalogId <String>] [-ExpiredDateTime <DateTime>]
  [-Id <String>] [-IsExtended] [-Schedule <IMicrosoftGraphRequestSchedule>]
- [-Target <IMicrosoftGraphAccessPackageSubject1>] [-TargetId <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Target <IMicrosoftGraphAccessPackageSubject>] [-TargetId <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -365,7 +365,7 @@ accessPackageSubject
 To construct, please use Get-Help -Online and see NOTES section for TARGET properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageSubject1
+Type: IMicrosoftGraphAccessPackageSubject
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -20844,6 +20844,9 @@ TARGET <IMicrosoftGraphAccessPackageSubject>: accessPackageSubject
   - `[Type <String>]`: The resource type of the subject.
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS
 

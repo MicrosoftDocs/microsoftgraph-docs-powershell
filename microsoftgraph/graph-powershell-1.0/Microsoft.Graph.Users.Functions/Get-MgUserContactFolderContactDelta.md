@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/get-mgusercontactfoldercontactdelta
@@ -12,12 +12,12 @@ Invoke function delta
 
 ## SYNTAX
 
-### Delta (Default)
+### Delta1 (Default)
 ```
 Get-MgUserContactFolderContactDelta -ContactFolderId <String> -UserId <String> [<CommonParameters>]
 ```
 
-### DeltaViaIdentity
+### DeltaViaIdentity1
 ```
 Get-MgUserContactFolderContactDelta -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
 ```
@@ -34,7 +34,7 @@ key: id of contactFolder
 
 ```yaml
 Type: String
-Parameter Sets: Delta
+Parameter Sets: Delta1
 Aliases:
 
 Required: True
@@ -50,7 +50,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersFunctionsIdentity
-Parameter Sets: DeltaViaIdentity
+Parameter Sets: DeltaViaIdentity1
 Aliases:
 
 Required: True
@@ -65,7 +65,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: Delta
+Parameter Sets: Delta1
 Aliases:
 
 Required: True

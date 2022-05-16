@@ -26,6 +26,9 @@ Wipe a device
 ### [Clear-MgUserPresence](Clear-MgUserPresence.md)
 Invoke action clearPresence
 
+### [Clear-MgUserPresenceUserPreferredPresence](Clear-MgUserPresenceUserPreferredPresence.md)
+Invoke action clearUserPreferredPresence
+
 ### [Complete-MgUserOutlookTask](Complete-MgUserOutlookTask.md)
 Invoke action complete
 
@@ -67,6 +70,9 @@ Invoke action copyToSectionGroup
 
 ### [Disable-MgUserAuthenticationMethodSmSign](Disable-MgUserAuthenticationMethodSmSign.md)
 Invoke action disableSmsSignIn
+
+### [Disable-MgUserManagedDevice](Disable-MgUserManagedDevice.md)
+Invoke action disable
 
 ### [Disable-MgUserManagedDeviceLostMode](Disable-MgUserManagedDeviceLostMode.md)
 Disable lost mode
@@ -152,11 +158,17 @@ Invoke action tentativelyAccept
 ### [Invoke-MgAcceptUserPendingAccessReviewInstanceRecommendation](Invoke-MgAcceptUserPendingAccessReviewInstanceRecommendation.md)
 Invoke action acceptRecommendations
 
+### [Invoke-MgBatchUserPendingAccessReviewInstanceDecisionInstanceRecordDecision](Invoke-MgBatchUserPendingAccessReviewInstanceDecisionInstanceRecordDecision.md)
+Invoke action batchRecordDecisions
+
 ### [Invoke-MgBatchUserPendingAccessReviewInstanceRecordDecision](Invoke-MgBatchUserPendingAccessReviewInstanceRecordDecision.md)
 Invoke action batchRecordDecisions
 
 ### [Invoke-MgBulkUserManagedDeviceReprovisionCloudPc](Invoke-MgBulkUserManagedDeviceReprovisionCloudPc.md)
 Invoke action bulkReprovisionCloudPc
+
+### [Invoke-MgBulkUserManagedDeviceRestoreCloudPc](Invoke-MgBulkUserManagedDeviceRestoreCloudPc.md)
+Invoke action bulkRestoreCloudPc
 
 ### [Invoke-MgCleanUserManagedDeviceWindowDevice](Invoke-MgCleanUserManagedDeviceWindowDevice.md)
 Clean Windows device
@@ -178,6 +190,9 @@ Invoke action decline
 
 ### [Invoke-MgDeclineUserMessageMicrosoftGraphEventMessageRequest](Invoke-MgDeclineUserMessageMicrosoftGraphEventMessageRequest.md)
 Invoke action decline
+
+### [Invoke-MgDeprovisionUserManagedDevice](Invoke-MgDeprovisionUserManagedDevice.md)
+Invoke action deprovision
 
 ### [Invoke-MgDismissUserEventInstanceReminder](Invoke-MgDismissUserEventInstanceReminder.md)
 Invoke action dismissReminder
@@ -206,6 +221,9 @@ Invoke action forward
 ### [Invoke-MgHasUserDeviceEnrollmentConfigurationPayloadLink](Invoke-MgHasUserDeviceEnrollmentConfigurationPayloadLink.md)
 Invoke action hasPayloadLinks
 
+### [Invoke-MgInvalidateUserRefreshToken](Invoke-MgInvalidateUserRefreshToken.md)
+Invoke action invalidateAllRefreshTokens
+
 ### [Invoke-MgLicenseUser](Invoke-MgLicenseUser.md)
 Invoke action reprocessLicenseAssignment
 
@@ -216,7 +234,13 @@ Logout shared Apple device active user
 Invoke action overrideComplianceState
 
 ### [Invoke-MgPlayUserManagedDeviceLostModeSound](Invoke-MgPlayUserManagedDeviceLostModeSound.md)
-Remote lock
+Play lost mode sound
+
+### [Invoke-MgRecordUserPendingAccessReviewInstanceDecision](Invoke-MgRecordUserPendingAccessReviewInstanceDecision.md)
+Invoke action recordAllDecisions
+
+### [Invoke-MgReenableUserManagedDevice](Invoke-MgReenableUserManagedDevice.md)
+Invoke action reenable
 
 ### [Invoke-MgReplyAllUserMailFolderMessage](Invoke-MgReplyAllUserMailFolderMessage.md)
 Invoke action replyAll
@@ -269,7 +293,16 @@ Invoke action move
 ### [Move-MgUserMailFolderMessage](Move-MgUserMailFolderMessage.md)
 Invoke action move
 
+### [Move-MgUserManagedDeviceToOu](Move-MgUserManagedDeviceToOu.md)
+Invoke action moveDevicesToOU
+
 ### [Move-MgUserMessage](Move-MgUserMessage.md)
+Invoke action move
+
+### [Move-MgUserTaskAlltask](Move-MgUserTaskAlltask.md)
+Invoke action move
+
+### [Move-MgUserTaskListTask](Move-MgUserTaskListTask.md)
 Invoke action move
 
 ### [New-MgUserEventAttachmentUploadSession](New-MgUserEventAttachmentUploadSession.md)
@@ -347,6 +380,9 @@ Reboot device
 ### [Restore-MgUser](Restore-MgUser.md)
 Invoke action restore
 
+### [Restore-MgUserManagedDeviceCloudPc](Restore-MgUserManagedDeviceCloudPc.md)
+Invoke action restoreCloudPc
+
 ### [Restore-MgUserManagedDevicePasscode](Restore-MgUserManagedDevicePasscode.md)
 Recover passcode
 
@@ -389,6 +425,9 @@ Set device name of the device.
 ### [Set-MgUserPresence](Set-MgUserPresence.md)
 Invoke action setPresence
 
+### [Set-MgUserPresenceUserPreferredPresence](Set-MgUserPresenceUserPreferredPresence.md)
+Invoke action setUserPreferredPresence
+
 ### [Skip-MgUserManagedDeviceActivationLock](Skip-MgUserManagedDeviceActivationLock.md)
 Bypass activation lock
 
@@ -409,6 +448,9 @@ Invoke action stop
 
 ### [Sync-MgUserManagedDevice](Sync-MgUserManagedDevice.md)
 Invoke action syncDevice
+
+### [Test-MgUserPassword](Test-MgUserPassword.md)
+Invoke action validatePassword
 
 ### [Test-MgUserProperty](Test-MgUserProperty.md)
 Invoke action validateProperties

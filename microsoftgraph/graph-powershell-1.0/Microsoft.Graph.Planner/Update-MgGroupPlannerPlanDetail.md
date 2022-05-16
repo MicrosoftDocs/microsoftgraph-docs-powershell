@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/update-mggroupplannerplandetail
@@ -8,9 +8,9 @@ schema: 2.0.0
 # Update-MgGroupPlannerPlanDetail
 
 ## SYNOPSIS
+Additional details about the plan.
 Read-only.
 Nullable.
-Additional details about the plan.
 
 ## SYNTAX
 
@@ -41,9 +41,9 @@ Update-MgGroupPlannerPlanDetail -InputObject <IPlannerIdentity>
 ```
 
 ## DESCRIPTION
+Additional details about the plan.
 Read-only.
 Nullable.
-Additional details about the plan.
 
 ## EXAMPLES
 

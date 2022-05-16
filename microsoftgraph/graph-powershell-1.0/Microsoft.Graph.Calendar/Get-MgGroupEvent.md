@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/get-mggroupevent
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupEvent
 
 ## SYNOPSIS
-The group's calendar events.
+The group's events.
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ Get-MgGroupEvent -InputObject <ICalendarIdentity> [-Property <String[]>] [<Commo
 ```
 
 ## DESCRIPTION
-The group's calendar events.
+The group's events.
 
 ## EXAMPLES
 

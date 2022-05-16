@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceaccessreviewdecision
@@ -19,6 +19,7 @@ Update-MgIdentityGovernanceAccessReviewDecision -AccessReviewInstanceDecisionIte
  [-AppliedDateTime <DateTime>] [-ApplyResult <String>] [-Decision <String>] [-Id <String>]
  [-Insights <IMicrosoftGraphGovernanceInsight[]>] [-Instance <IMicrosoftGraphAccessReviewInstance>]
  [-Justification <String>] [-Principal <IMicrosoftGraphIdentity>] [-PrincipalLink <String>]
+ [-PrincipalResourceMembership <IMicrosoftGraphDecisionItemPrincipalResourceMembership>]
  [-Recommendation <String>] [-Resource <IMicrosoftGraphAccessReviewInstanceDecisionItemResource>]
  [-ResourceLink <String>] [-ReviewedBy <IMicrosoftGraphUserIdentity>] [-ReviewedDateTime <DateTime>]
  [-Target <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -38,6 +39,7 @@ Update-MgIdentityGovernanceAccessReviewDecision -InputObject <IIdentityGovernanc
  [-AppliedDateTime <DateTime>] [-ApplyResult <String>] [-Decision <String>] [-Id <String>]
  [-Insights <IMicrosoftGraphGovernanceInsight[]>] [-Instance <IMicrosoftGraphAccessReviewInstance>]
  [-Justification <String>] [-Principal <IMicrosoftGraphIdentity>] [-PrincipalLink <String>]
+ [-PrincipalResourceMembership <IMicrosoftGraphDecisionItemPrincipalResourceMembership>]
  [-Recommendation <String>] [-Resource <IMicrosoftGraphAccessReviewInstanceDecisionItemResource>]
  [-ResourceLink <String>] [-ReviewedBy <IMicrosoftGraphUserIdentity>] [-ReviewedDateTime <DateTime>]
  [-Target <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -307,6 +309,22 @@ Read-only.
 
 ```yaml
 Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PrincipalResourceMembership
+decisionItemPrincipalResourceMembership
+To construct, please use Get-Help -Online and see NOTES section for PRINCIPALRESOURCEMEMBERSHIP properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphDecisionItemPrincipalResourceMembership
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -767,5 +785,8 @@ REVIEWEDBY <IMicrosoftGraphUserIdentity>: userIdentity
   - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

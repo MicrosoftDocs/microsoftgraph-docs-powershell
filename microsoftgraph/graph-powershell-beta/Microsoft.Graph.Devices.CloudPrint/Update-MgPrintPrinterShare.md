@@ -20,12 +20,13 @@ Update-MgPrintPrinterShare -PrinterShareId <String> [-AdditionalProperties <Hash
  [-Defaults <IMicrosoftGraphPrinterDefaults>] [-DisplayName <String>] [-Id <String>] [-IsAcceptingJobs]
  [-Jobs <IMicrosoftGraphPrintJob[]>] [-Location <IMicrosoftGraphPrinterLocation1>] [-Manufacturer <String>]
  [-Model <String>] [-Name <String>] [-Printer <IMicrosoftGraphPrinter1>]
- [-Status <IMicrosoftGraphPrinterStatus>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Status <IMicrosoftGraphPrinterStatus>] [-ViewPoint <IMicrosoftGraphPrinterShareViewpoint>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgPrintPrinterShare -PrinterShareId <String> -BodyParameter <IMicrosoftGraphPrinterShare1> [-PassThru]
+Update-MgPrintPrinterShare -PrinterShareId <String> -BodyParameter <IMicrosoftGraphPrinterShare> [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -37,13 +38,14 @@ Update-MgPrintPrinterShare -InputObject <IDevicesCloudPrintIdentity> [-Additiona
  [-Defaults <IMicrosoftGraphPrinterDefaults>] [-DisplayName <String>] [-Id <String>] [-IsAcceptingJobs]
  [-Jobs <IMicrosoftGraphPrintJob[]>] [-Location <IMicrosoftGraphPrinterLocation1>] [-Manufacturer <String>]
  [-Model <String>] [-Name <String>] [-Printer <IMicrosoftGraphPrinter1>]
- [-Status <IMicrosoftGraphPrinterStatus>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Status <IMicrosoftGraphPrinterStatus>] [-ViewPoint <IMicrosoftGraphPrinterShareViewpoint>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgPrintPrinterShare -InputObject <IDevicesCloudPrintIdentity>
- -BodyParameter <IMicrosoftGraphPrinterShare1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPrinterShare> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -121,7 +123,7 @@ printerShare
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrinterShare1
+Type: IMicrosoftGraphPrinterShare
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -380,6 +382,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ViewPoint
+printerShareViewpoint
+To construct, please use Get-Help -Online and see NOTES section for VIEWPOINT properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphPrinterShareViewpoint
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -417,7 +435,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrinterShare1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrinterShare
 ## OUTPUTS
 
 ### System.Boolean
@@ -16693,6 +16711,9 @@ STATUS <IMicrosoftGraphPrinterStatus>: printerStatus
   - `[State <String>]`: printerProcessingState
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS
 

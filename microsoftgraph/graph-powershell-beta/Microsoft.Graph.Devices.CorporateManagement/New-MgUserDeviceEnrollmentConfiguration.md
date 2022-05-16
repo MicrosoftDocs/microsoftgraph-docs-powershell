@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/new-mguserdeviceenrollmentconfiguration
@@ -16,8 +16,9 @@ Get enrollment configurations targeted to the user
 ```
 New-MgUserDeviceEnrollmentConfiguration -UserId <String> [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphEnrollmentConfigurationAssignment[]>] [-CreatedDateTime <DateTime>]
- [-Description <String>] [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-Priority <Int32>] [-RoleScopeTagIds <String[]>] [-Version <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Description <String>] [-DeviceEnrollmentConfigurationType <String>] [-DisplayName <String>] [-Id <String>]
+ [-LastModifiedDateTime <DateTime>] [-Priority <Int32>] [-RoleScopeTagIds <String[]>] [-Version <Int32>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -30,9 +31,9 @@ New-MgUserDeviceEnrollmentConfiguration -UserId <String>
 ```
 New-MgUserDeviceEnrollmentConfiguration -InputObject <IDevicesCorporateManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphEnrollmentConfigurationAssignment[]>]
- [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-Priority <Int32>] [-RoleScopeTagIds <String[]>] [-Version <Int32>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-CreatedDateTime <DateTime>] [-Description <String>] [-DeviceEnrollmentConfigurationType <String>]
+ [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Priority <Int32>]
+ [-RoleScopeTagIds <String[]>] [-Version <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -112,6 +113,21 @@ Accept wildcard characters: False
 
 ### -Description
 The description of the device enrollment configuration
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DeviceEnrollmentConfigurationType
+Describes the TemplateFamily for the Template entity
 
 ```yaml
 Type: String

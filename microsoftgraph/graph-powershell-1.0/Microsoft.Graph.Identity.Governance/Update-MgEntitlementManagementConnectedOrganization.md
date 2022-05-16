@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementconnectedorganization
@@ -24,7 +24,7 @@ Update-MgEntitlementManagementConnectedOrganization -ConnectedOrganizationId <St
 ### Update1
 ```
 Update-MgEntitlementManagementConnectedOrganization -ConnectedOrganizationId <String>
- -BodyParameter <IMicrosoftGraphConnectedOrganization> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphConnectedOrganization1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
@@ -39,7 +39,7 @@ Update-MgEntitlementManagementConnectedOrganization -InputObject <IIdentityGover
 ### UpdateViaIdentity1
 ```
 Update-MgEntitlementManagementConnectedOrganization -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphConnectedOrganization> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphConnectedOrganization1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -69,7 +69,7 @@ connectedOrganization
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConnectedOrganization
+Type: IMicrosoftGraphConnectedOrganization1
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -306,7 +306,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConnectedOrganization
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConnectedOrganization1
 ## OUTPUTS
 
 ### System.Boolean

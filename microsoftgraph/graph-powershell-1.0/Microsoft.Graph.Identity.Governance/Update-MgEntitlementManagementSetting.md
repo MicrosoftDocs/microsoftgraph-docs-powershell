@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementsetting
@@ -21,8 +21,8 @@ Update-MgEntitlementManagementSetting [-AdditionalProperties <Hashtable>]
 
 ### Update1
 ```
-Update-MgEntitlementManagementSetting -BodyParameter <IMicrosoftGraphEntitlementManagementSettings> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgEntitlementManagementSetting -BodyParameter <IMicrosoftGraphEntitlementManagementSettings1>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -52,7 +52,7 @@ entitlementManagementSettings
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEntitlementManagementSettings
+Type: IMicrosoftGraphEntitlementManagementSettings1
 Parameter Sets: Update1
 Aliases:
 
@@ -159,7 +159,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEntitlementManagementSettings
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEntitlementManagementSettings1
 ## OUTPUTS
 
 ### System.Boolean

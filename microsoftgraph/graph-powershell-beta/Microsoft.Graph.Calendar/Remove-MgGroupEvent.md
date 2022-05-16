@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/remove-mggroupevent
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgGroupEvent
 
 ## SYNOPSIS
-The group's calendar events.
+The group's events.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgGroupEvent -InputObject <ICalendarIdentity> [-IfMatch <String>] [-PassT
 ```
 
 ## DESCRIPTION
-The group's calendar events.
+The group's events.
 
 ## EXAMPLES
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementassignmentrequest
@@ -18,7 +18,7 @@ Update-MgEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestI
  [-AccessPackage <IMicrosoftGraphAccessPackage1>] [-AdditionalProperties <Hashtable>]
  [-Assignment <IMicrosoftGraphAccessPackageAssignment1>] [-CompletedDateTime <DateTime>]
  [-CreatedDateTime <DateTime>] [-Id <String>] [-RequestType <String>]
- [-Requestor <IMicrosoftGraphAccessPackageSubject>] [-Schedule <IMicrosoftGraphEntitlementManagementSchedule>]
+ [-Requestor <IMicrosoftGraphAccessPackageSubject1>] [-Schedule <IMicrosoftGraphEntitlementManagementSchedule>]
  [-State <String>] [-Status <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,7 +35,7 @@ Update-MgEntitlementManagementAssignmentRequest -InputObject <IIdentityGovernanc
  [-AccessPackage <IMicrosoftGraphAccessPackage1>] [-AdditionalProperties <Hashtable>]
  [-Assignment <IMicrosoftGraphAccessPackageAssignment1>] [-CompletedDateTime <DateTime>]
  [-CreatedDateTime <DateTime>] [-Id <String>] [-RequestType <String>]
- [-Requestor <IMicrosoftGraphAccessPackageSubject>] [-Schedule <IMicrosoftGraphEntitlementManagementSchedule>]
+ [-Requestor <IMicrosoftGraphAccessPackageSubject1>] [-Schedule <IMicrosoftGraphEntitlementManagementSchedule>]
  [-State <String>] [-Status <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -214,7 +214,7 @@ accessPackageSubject
 To construct, please use Get-Help -Online and see NOTES section for REQUESTOR properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageSubject
+Type: IMicrosoftGraphAccessPackageSubject1
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -621,5 +621,8 @@ SCHEDULE <IMicrosoftGraphEntitlementManagementSchedule>: entitlementManagementSc
   - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
+
+## RELATED LINKS
+
 
 ## RELATED LINKS

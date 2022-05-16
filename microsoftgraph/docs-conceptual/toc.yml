@@ -16,12 +16,10 @@
   items:
     - name: App-only authentication
       href: app-only.md
-    - name: Grant API permissions
-      items:
-        - name: Grant delegated API permissions
-          href: tutorial-grant-delegated-api-permissions.md
-        - name: Grant app-only API permissions
-          href: tutorial-grant-app-only-api-permissions.md               
+    - name: Manage access to resources
+      href: tutorial-entitlement-management.md
+    - name: Assign Azure AD roles in PIM
+      href: tutorial-pim.md                  
 - name: Migrate to Microsoft Graph PowerShell
   items:   
   - name: Migrate from Azure AD PowerShell
