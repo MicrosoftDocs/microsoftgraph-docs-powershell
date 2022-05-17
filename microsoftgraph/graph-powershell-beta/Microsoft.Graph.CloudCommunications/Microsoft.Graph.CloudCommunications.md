@@ -11,6 +11,9 @@ Locale: en-US
 Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.CloudCommunications Cmdlets
+### [Add-MgCommunicationCallLargeGalleryView](Add-MgCommunicationCallLargeGalleryView.md)
+Invoke action addLargeGalleryView
+
 ### [Clear-MgCommunicationPresence](Clear-MgCommunicationPresence.md)
 Invoke action clearPresence
 
@@ -23,6 +26,9 @@ Get calls from communications
 ### [Get-MgCommunicationCallAudioRoutingGroup](Get-MgCommunicationCallAudioRoutingGroup.md)
 Read-only.
 Nullable.
+
+### [Get-MgCommunicationCallContentSharingSession](Get-MgCommunicationCallContentSharingSession.md)
+Get contentSharingSessions from communications
 
 ### [Get-MgCommunicationCallOperation](Get-MgCommunicationCallOperation.md)
 Read-only.
@@ -156,6 +162,9 @@ Create new navigation property to calls for communications
 Read-only.
 Nullable.
 
+### [New-MgCommunicationCallContentSharingSession](New-MgCommunicationCallContentSharingSession.md)
+Create new navigation property to contentSharingSessions for communications
+
 ### [New-MgCommunicationCallOperation](New-MgCommunicationCallOperation.md)
 Read-only.
 Nullable.
@@ -207,6 +216,9 @@ Delete navigation property calls for communications
 ### [Remove-MgCommunicationCallAudioRoutingGroup](Remove-MgCommunicationCallAudioRoutingGroup.md)
 Read-only.
 Nullable.
+
+### [Remove-MgCommunicationCallContentSharingSession](Remove-MgCommunicationCallContentSharingSession.md)
+Delete navigation property contentSharingSessions for communications
 
 ### [Remove-MgCommunicationCallOperation](Remove-MgCommunicationCallOperation.md)
 Read-only.
@@ -303,6 +315,9 @@ Invoke action stopHoldMusic
 ### [Update-MgCommunicationCallAudioRoutingGroup](Update-MgCommunicationCallAudioRoutingGroup.md)
 Read-only.
 Nullable.
+
+### [Update-MgCommunicationCallContentSharingSession](Update-MgCommunicationCallContentSharingSession.md)
+Update the navigation property contentSharingSessions in communications
 
 ### [Update-MgCommunicationCallOperation](Update-MgCommunicationCallOperation.md)
 Read-only.
