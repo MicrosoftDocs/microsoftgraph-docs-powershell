@@ -26,6 +26,9 @@ Invoke action addToReviewSet
 ### [Add-MgComplianceEdiscoveryCaseSourceCollectionNoncustodialSourceHold](Add-MgComplianceEdiscoveryCaseSourceCollectionNoncustodialSourceHold.md)
 Invoke action applyHold
 
+### [Clear-MgComplianceEdiscoveryCaseSourceCollectionData](Clear-MgComplianceEdiscoveryCaseSourceCollectionData.md)
+Invoke action purgeData
+
 ### [Close-MgComplianceEdiscoveryCase](Close-MgComplianceEdiscoveryCase.md)
 Invoke action close
 
