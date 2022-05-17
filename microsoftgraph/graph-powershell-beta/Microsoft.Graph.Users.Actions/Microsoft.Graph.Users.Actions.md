@@ -155,6 +155,9 @@ Invoke action accept
 ### [Invoke-MgAcceptUserMessageMicrosoftGraphEventMessageRequestTentatively](Invoke-MgAcceptUserMessageMicrosoftGraphEventMessageRequestTentatively.md)
 Invoke action tentativelyAccept
 
+### [Invoke-MgAcceptUserPendingAccessReviewInstanceDecisionInstanceRecommendation](Invoke-MgAcceptUserPendingAccessReviewInstanceDecisionInstanceRecommendation.md)
+Invoke action acceptRecommendations
+
 ### [Invoke-MgAcceptUserPendingAccessReviewInstanceRecommendation](Invoke-MgAcceptUserPendingAccessReviewInstanceRecommendation.md)
 Invoke action acceptRecommendations
 
@@ -206,6 +209,9 @@ Shut down device
 ### [Invoke-MgExecuteUserManagedDeviceAction](Invoke-MgExecuteUserManagedDeviceAction.md)
 Invoke action executeAction
 
+### [Invoke-MgExtractUserSecurityInformationProtectionSensitivityLabelContentLabel](Invoke-MgExtractUserSecurityInformationProtectionSensitivityLabelContentLabel.md)
+Invoke action extractContentLabel
+
 ### [Invoke-MgForwardUserEvent](Invoke-MgForwardUserEvent.md)
 Invoke action forward
 
@@ -254,6 +260,9 @@ Invoke action reply
 ### [Invoke-MgReplyUserMessage](Invoke-MgReplyUserMessage.md)
 Invoke action reply
 
+### [Invoke-MgReprovisionUserCloudPc](Invoke-MgReprovisionUserCloudPc.md)
+Invoke action reprovision
+
 ### [Invoke-MgRetireUserManagedDevice](Invoke-MgRetireUserManagedDevice.md)
 Retire a device
 
@@ -274,6 +283,9 @@ Invoke action snoozeReminder
 
 ### [Invoke-MgTranslateUserExchangeId](Invoke-MgTranslateUserExchangeId.md)
 Invoke action translateExchangeIds
+
+### [Invoke-MgTroubleshootUserCloudPc](Invoke-MgTroubleshootUserCloudPc.md)
+Invoke action troubleshoot
 
 ### [Invoke-MgUnsubscribeUserMailFolderMessage](Invoke-MgUnsubscribeUserMailFolderMessage.md)
 Invoke action unsubscribe
@@ -359,6 +371,12 @@ Retire all devices from management for this user
 ### [Remove-MgUserManagedDeviceUserFromSharedAppleDevice](Remove-MgUserManagedDeviceUserFromSharedAppleDevice.md)
 Delete user from shared Apple device
 
+### [Rename-MgUserCloudPc](Rename-MgUserCloudPc.md)
+Invoke action rename
+
+### [Rename-MgUserCloudPcUserAccountType](Rename-MgUserCloudPcUserAccountType.md)
+Invoke action changeUserAccountType
+
 ### [Request-MgUserManagedDeviceRemoteAssistance](Request-MgUserManagedDeviceRemoteAssistance.md)
 Request remote assistance
 
@@ -373,6 +391,9 @@ Invoke action resetDecisions
 
 ### [Resize-MgUserManagedDeviceCloudPc](Resize-MgUserManagedDeviceCloudPc.md)
 Invoke action resizeCloudPc
+
+### [Restart-MgUserCloudPc](Restart-MgUserCloudPc.md)
+Invoke action reboot
 
 ### [Restart-MgUserManagedDeviceNow](Restart-MgUserManagedDeviceNow.md)
 Reboot device
@@ -404,6 +425,9 @@ Invoke action sendCustomNotificationToCompanyPortal
 ### [Send-MgUserMessage](Send-MgUserMessage.md)
 Invoke action send
 
+### [Send-MgUserPendingAccessReviewInstanceDecisionInstanceReminder](Send-MgUserPendingAccessReviewInstanceDecisionInstanceReminder.md)
+Invoke action sendReminder
+
 ### [Send-MgUserPendingAccessReviewInstanceReminder](Send-MgUserPendingAccessReviewInstanceReminder.md)
 Invoke action sendReminder
 
@@ -434,6 +458,9 @@ Bypass activation lock
 ### [Start-MgUserManagedDeviceConfigurationManagerAction](Start-MgUserManagedDeviceConfigurationManagerAction.md)
 Trigger action on ConfigurationManager client
 
+### [Stop-MgUserCloudPcGracePeriod](Stop-MgUserCloudPcGracePeriod.md)
+Invoke action endGracePeriod
+
 ### [Stop-MgUserEvent](Stop-MgUserEvent.md)
 Invoke action cancel
 
@@ -443,7 +470,13 @@ Invoke action cancel
 ### [Stop-MgUserPendingAccessReviewInstance](Stop-MgUserPendingAccessReviewInstance.md)
 Invoke action stop
 
+### [Stop-MgUserPendingAccessReviewInstanceDecisionInstance](Stop-MgUserPendingAccessReviewInstanceDecisionInstance.md)
+Invoke action stop
+
 ### [Stop-MgUserPendingAccessReviewInstanceDefinition](Stop-MgUserPendingAccessReviewInstanceDefinition.md)
+Invoke action stop
+
+### [Stop-MgUserPendingAccessReviewInstanceStage](Stop-MgUserPendingAccessReviewInstanceStage.md)
 Invoke action stop
 
 ### [Sync-MgUserManagedDevice](Sync-MgUserManagedDevice.md)
@@ -454,6 +487,15 @@ Invoke action validatePassword
 
 ### [Test-MgUserProperty](Test-MgUserProperty.md)
 Invoke action validateProperties
+
+### [Test-MgUserSecurityInformationProtectionSensitivityLabelApplication](Test-MgUserSecurityInformationProtectionSensitivityLabelApplication.md)
+Invoke action evaluateApplication
+
+### [Test-MgUserSecurityInformationProtectionSensitivityLabelClassificationResult](Test-MgUserSecurityInformationProtectionSensitivityLabelClassificationResult.md)
+Invoke action evaluateClassificationResults
+
+### [Test-MgUserSecurityInformationProtectionSensitivityLabelRemoval](Test-MgUserSecurityInformationProtectionSensitivityLabelRemoval.md)
+Invoke action evaluateRemoval
 
 ### [Unblock-MgUserManagedApp](Unblock-MgUserManagedApp.md)
 Unblocks the managed app user from app check-in.
