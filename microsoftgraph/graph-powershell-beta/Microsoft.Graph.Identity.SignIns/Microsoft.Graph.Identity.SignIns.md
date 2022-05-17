@@ -120,6 +120,15 @@ Get b2cAuthenticationMethodsPolicy from policies
 ### [Get-MgPolicyClaimMappingPolicy](Get-MgPolicyClaimMappingPolicy.md)
 The claim-mapping policies for WS-Fed, SAML, OAuth 2.0, and OpenID Connect protocols, for tokens issued to a specific application.
 
+### [Get-MgPolicyCrossTenantAccessPolicy](Get-MgPolicyCrossTenantAccessPolicy.md)
+The custom rules that define an access scenario when interacting with external Azure AD tenants.
+
+### [Get-MgPolicyCrossTenantAccessPolicyDefault](Get-MgPolicyCrossTenantAccessPolicyDefault.md)
+Defines the default configuration for how your organization interacts with external Azure Active Directory organizations.
+
+### [Get-MgPolicyCrossTenantAccessPolicyPartner](Get-MgPolicyCrossTenantAccessPolicyPartner.md)
+Defines partner-specific configurations for external Azure Active Directory organizations.
+
 ### [Get-MgPolicyDefaultAppManagementPolicy](Get-MgPolicyDefaultAppManagementPolicy.md)
 The tenant-wide policy that enforces app management restrictions for all applications and service principals.
 
@@ -361,6 +370,9 @@ Create new navigation property to defaultUserRoleOverrides for policies
 ### [New-MgPolicyClaimMappingPolicy](New-MgPolicyClaimMappingPolicy.md)
 The claim-mapping policies for WS-Fed, SAML, OAuth 2.0, and OpenID Connect protocols, for tokens issued to a specific application.
 
+### [New-MgPolicyCrossTenantAccessPolicyPartner](New-MgPolicyCrossTenantAccessPolicyPartner.md)
+Defines partner-specific configurations for external Azure Active Directory organizations.
+
 ### [New-MgPolicyFeatureRolloutPolicy](New-MgPolicyFeatureRolloutPolicy.md)
 The feature rollout policy associated with a directory object.
 
@@ -549,6 +561,15 @@ Delete navigation property b2cAuthenticationMethodsPolicy for policies
 ### [Remove-MgPolicyClaimMappingPolicy](Remove-MgPolicyClaimMappingPolicy.md)
 The claim-mapping policies for WS-Fed, SAML, OAuth 2.0, and OpenID Connect protocols, for tokens issued to a specific application.
 
+### [Remove-MgPolicyCrossTenantAccessPolicy](Remove-MgPolicyCrossTenantAccessPolicy.md)
+The custom rules that define an access scenario when interacting with external Azure AD tenants.
+
+### [Remove-MgPolicyCrossTenantAccessPolicyDefault](Remove-MgPolicyCrossTenantAccessPolicyDefault.md)
+Defines the default configuration for how your organization interacts with external Azure Active Directory organizations.
+
+### [Remove-MgPolicyCrossTenantAccessPolicyPartner](Remove-MgPolicyCrossTenantAccessPolicyPartner.md)
+Defines partner-specific configurations for external Azure Active Directory organizations.
+
 ### [Remove-MgPolicyDefaultAppManagementPolicy](Remove-MgPolicyDefaultAppManagementPolicy.md)
 The tenant-wide policy that enforces app management restrictions for all applications and service principals.
 
@@ -682,6 +703,9 @@ The registered device on which this Windows Hello for Business key resides.
 ### [Remove-MgUserInformationProtection](Remove-MgUserInformationProtection.md)
 Delete navigation property informationProtection for users
 
+### [Reset-MgPolicyCrossTenantAccessPolicyDefaultToSystemDefault](Reset-MgPolicyCrossTenantAccessPolicyDefaultToSystemDefault.md)
+Invoke action resetToSystemDefault
+
 ### [Set-MgPolicyRoleManagementPolicyAssignmentPolicyByRef](Set-MgPolicyRoleManagementPolicyAssignmentPolicyByRef.md)
 The policy for the assignment.
 
@@ -777,11 +801,23 @@ The authentication methods and the users that are allowed to use them to sign in
 ### [Update-MgPolicyAuthorizationPolicy](Update-MgPolicyAuthorizationPolicy.md)
 The policy that controls Azure AD authorization settings.
 
+### [Update-MgPolicyAuthorizationPolicyDefaultUserRoleOverride](Update-MgPolicyAuthorizationPolicyDefaultUserRoleOverride.md)
+Update the navigation property defaultUserRoleOverrides in policies
+
 ### [Update-MgPolicyB2CAuthenticationMethodPolicy](Update-MgPolicyB2CAuthenticationMethodPolicy.md)
 Update the navigation property b2cAuthenticationMethodsPolicy in policies
 
 ### [Update-MgPolicyClaimMappingPolicy](Update-MgPolicyClaimMappingPolicy.md)
 The claim-mapping policies for WS-Fed, SAML, OAuth 2.0, and OpenID Connect protocols, for tokens issued to a specific application.
+
+### [Update-MgPolicyCrossTenantAccessPolicy](Update-MgPolicyCrossTenantAccessPolicy.md)
+The custom rules that define an access scenario when interacting with external Azure AD tenants.
+
+### [Update-MgPolicyCrossTenantAccessPolicyDefault](Update-MgPolicyCrossTenantAccessPolicyDefault.md)
+Defines the default configuration for how your organization interacts with external Azure Active Directory organizations.
+
+### [Update-MgPolicyCrossTenantAccessPolicyPartner](Update-MgPolicyCrossTenantAccessPolicyPartner.md)
+Defines partner-specific configurations for external Azure Active Directory organizations.
 
 ### [Update-MgPolicyDefaultAppManagementPolicy](Update-MgPolicyDefaultAppManagementPolicy.md)
 The tenant-wide policy that enforces app management restrictions for all applications and service principals.
@@ -836,6 +872,9 @@ If there is a tenant wide policy to enforce enabling approval rule, the effectiv
 
 ### [Update-MgPolicyRoleManagementPolicyRule](Update-MgPolicyRoleManagementPolicyRule.md)
 The collection of rules like approval rule, expiration rule, etc.
+
+### [Update-MgPolicyServicePrincipalCreationPolicy](Update-MgPolicyServicePrincipalCreationPolicy.md)
+Update the navigation property servicePrincipalCreationPolicies in policies
 
 ### [Update-MgPolicyServicePrincipalCreationPolicyExclude](Update-MgPolicyServicePrincipalCreationPolicyExclude.md)
 Update the navigation property excludes in policies
