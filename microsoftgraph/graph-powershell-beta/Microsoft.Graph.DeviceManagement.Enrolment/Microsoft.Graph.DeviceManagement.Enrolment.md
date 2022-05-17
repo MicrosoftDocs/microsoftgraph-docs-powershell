@@ -430,6 +430,44 @@ Property indicating the schedule for an eligible role assignment.
 ### [Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestTargetScheduleByRef](Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestTargetScheduleByRef.md)
 Property indicating the schedule for an eligible role assignment.
 
+### [Get-MgRoleManagementDirectoryTransitiveRoleAssignment](Get-MgRoleManagementDirectoryTransitiveRoleAssignment.md)
+Get transitiveRoleAssignments from roleManagement
+
+### [Get-MgRoleManagementDirectoryTransitiveRoleAssignmentAppScope](Get-MgRoleManagementDirectoryTransitiveRoleAssignmentAppScope.md)
+Read-only property with details of the app specific scope when the assignment scope is app specific.
+Containment entity.
+Supports $expand.
+
+### [Get-MgRoleManagementDirectoryTransitiveRoleAssignmentDirectoryScope](Get-MgRoleManagementDirectoryTransitiveRoleAssignmentDirectoryScope.md)
+The directory object that is the scope of the assignment.
+Read-only.
+Supports $expand.
+
+### [Get-MgRoleManagementDirectoryTransitiveRoleAssignmentDirectoryScopeByRef](Get-MgRoleManagementDirectoryTransitiveRoleAssignmentDirectoryScopeByRef.md)
+The directory object that is the scope of the assignment.
+Read-only.
+Supports $expand.
+
+### [Get-MgRoleManagementDirectoryTransitiveRoleAssignmentPrincipal](Get-MgRoleManagementDirectoryTransitiveRoleAssignmentPrincipal.md)
+Referencing the assigned principal.
+Read-only.
+Supports $expand.
+
+### [Get-MgRoleManagementDirectoryTransitiveRoleAssignmentPrincipalByRef](Get-MgRoleManagementDirectoryTransitiveRoleAssignmentPrincipalByRef.md)
+Referencing the assigned principal.
+Read-only.
+Supports $expand.
+
+### [Get-MgRoleManagementDirectoryTransitiveRoleAssignmentRoleDefinition](Get-MgRoleManagementDirectoryTransitiveRoleAssignmentRoleDefinition.md)
+The roleDefinition the assignment is for.
+Supports $expand.
+roleDefinition.Id will be auto expanded.
+
+### [Get-MgRoleManagementDirectoryTransitiveRoleAssignmentRoleDefinitionByRef](Get-MgRoleManagementDirectoryTransitiveRoleAssignmentRoleDefinitionByRef.md)
+The roleDefinition the assignment is for.
+Supports $expand.
+roleDefinition.Id will be auto expanded.
+
 ### [Get-MgRoleManagementEntitlementManagement](Get-MgRoleManagementEntitlementManagement.md)
 Container for all entitlement management resources in Azure AD identity governance.
 
@@ -617,6 +655,44 @@ Property indicating the schedule for an eligible role assignment.
 
 ### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestTargetScheduleByRef](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestTargetScheduleByRef.md)
 Property indicating the schedule for an eligible role assignment.
+
+### [Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignment](Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignment.md)
+Get transitiveRoleAssignments from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentAppScope](Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentAppScope.md)
+Read-only property with details of the app specific scope when the assignment scope is app specific.
+Containment entity.
+Supports $expand.
+
+### [Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentDirectoryScope](Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentDirectoryScope.md)
+The directory object that is the scope of the assignment.
+Read-only.
+Supports $expand.
+
+### [Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentDirectoryScopeByRef](Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentDirectoryScopeByRef.md)
+The directory object that is the scope of the assignment.
+Read-only.
+Supports $expand.
+
+### [Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentPrincipal](Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentPrincipal.md)
+Referencing the assigned principal.
+Read-only.
+Supports $expand.
+
+### [Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentPrincipalByRef](Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentPrincipalByRef.md)
+Referencing the assigned principal.
+Read-only.
+Supports $expand.
+
+### [Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentRoleDefinition](Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentRoleDefinition.md)
+The roleDefinition the assignment is for.
+Supports $expand.
+roleDefinition.Id will be auto expanded.
+
+### [Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentRoleDefinitionByRef](Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentRoleDefinitionByRef.md)
+The roleDefinition the assignment is for.
+Supports $expand.
+roleDefinition.Id will be auto expanded.
 
 ### [Import-MgRoleManagementCloudPcResourceNamespaceResourceAction](Import-MgRoleManagementCloudPcResourceNamespaceResourceAction.md)
 Invoke action importResourceActions
@@ -853,6 +929,9 @@ Create new navigation property to roleEligibilityScheduleInstances for roleManag
 ### [New-MgRoleManagementDirectoryRoleEligibilityScheduleRequest](New-MgRoleManagementDirectoryRoleEligibilityScheduleRequest.md)
 Create new navigation property to roleEligibilityScheduleRequests for roleManagement
 
+### [New-MgRoleManagementDirectoryTransitiveRoleAssignment](New-MgRoleManagementDirectoryTransitiveRoleAssignment.md)
+Create new navigation property to transitiveRoleAssignments for roleManagement
+
 ### [New-MgRoleManagementEntitlementManagementResourceNamespace](New-MgRoleManagementEntitlementManagementResourceNamespace.md)
 Create new navigation property to resourceNamespaces for roleManagement
 
@@ -893,6 +972,9 @@ Create new navigation property to roleEligibilityScheduleInstances for roleManag
 
 ### [New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest.md)
 Create new navigation property to roleEligibilityScheduleRequests for roleManagement
+
+### [New-MgRoleManagementEntitlementManagementTransitiveRoleAssignment](New-MgRoleManagementEntitlementManagementTransitiveRoleAssignment.md)
+Create new navigation property to transitiveRoleAssignments for roleManagement
 
 ### [Remove-MgDeviceManagementAndroid](Remove-MgDeviceManagementAndroid.md)
 Android for Work enrollment profile entities.
@@ -1166,6 +1248,29 @@ roleDefinition.Id will be auto expanded.
 ### [Remove-MgRoleManagementDirectoryRoleEligibilityScheduleRequestTargetScheduleByRef](Remove-MgRoleManagementDirectoryRoleEligibilityScheduleRequestTargetScheduleByRef.md)
 Property indicating the schedule for an eligible role assignment.
 
+### [Remove-MgRoleManagementDirectoryTransitiveRoleAssignment](Remove-MgRoleManagementDirectoryTransitiveRoleAssignment.md)
+Delete navigation property transitiveRoleAssignments for roleManagement
+
+### [Remove-MgRoleManagementDirectoryTransitiveRoleAssignmentAppScope](Remove-MgRoleManagementDirectoryTransitiveRoleAssignmentAppScope.md)
+Read-only property with details of the app specific scope when the assignment scope is app specific.
+Containment entity.
+Supports $expand.
+
+### [Remove-MgRoleManagementDirectoryTransitiveRoleAssignmentDirectoryScopeByRef](Remove-MgRoleManagementDirectoryTransitiveRoleAssignmentDirectoryScopeByRef.md)
+The directory object that is the scope of the assignment.
+Read-only.
+Supports $expand.
+
+### [Remove-MgRoleManagementDirectoryTransitiveRoleAssignmentPrincipalByRef](Remove-MgRoleManagementDirectoryTransitiveRoleAssignmentPrincipalByRef.md)
+Referencing the assigned principal.
+Read-only.
+Supports $expand.
+
+### [Remove-MgRoleManagementDirectoryTransitiveRoleAssignmentRoleDefinitionByRef](Remove-MgRoleManagementDirectoryTransitiveRoleAssignmentRoleDefinitionByRef.md)
+The roleDefinition the assignment is for.
+Supports $expand.
+roleDefinition.Id will be auto expanded.
+
 ### [Remove-MgRoleManagementEntitlementManagement](Remove-MgRoleManagementEntitlementManagement.md)
 Container for all entitlement management resources in Azure AD identity governance.
 
@@ -1286,6 +1391,29 @@ roleDefinition.Id will be auto expanded.
 ### [Remove-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestTargetScheduleByRef](Remove-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestTargetScheduleByRef.md)
 Property indicating the schedule for an eligible role assignment.
 
+### [Remove-MgRoleManagementEntitlementManagementTransitiveRoleAssignment](Remove-MgRoleManagementEntitlementManagementTransitiveRoleAssignment.md)
+Delete navigation property transitiveRoleAssignments for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentAppScope](Remove-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentAppScope.md)
+Read-only property with details of the app specific scope when the assignment scope is app specific.
+Containment entity.
+Supports $expand.
+
+### [Remove-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentDirectoryScopeByRef](Remove-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentDirectoryScopeByRef.md)
+The directory object that is the scope of the assignment.
+Read-only.
+Supports $expand.
+
+### [Remove-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentPrincipalByRef](Remove-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentPrincipalByRef.md)
+Referencing the assigned principal.
+Read-only.
+Supports $expand.
+
+### [Remove-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentRoleDefinitionByRef](Remove-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentRoleDefinitionByRef.md)
+The roleDefinition the assignment is for.
+Supports $expand.
+roleDefinition.Id will be auto expanded.
+
 ### [Set-MgDeviceManagementDepOnboardingSettingDefaultIoEnrollmentProfileByRef](Set-MgDeviceManagementDepOnboardingSettingDefaultIoEnrollmentProfileByRef.md)
 Default iOS Enrollment Profile
 
@@ -1382,6 +1510,21 @@ roleDefinition.Id will be auto expanded.
 ### [Set-MgRoleManagementDirectoryRoleEligibilityScheduleRequestTargetScheduleByRef](Set-MgRoleManagementDirectoryRoleEligibilityScheduleRequestTargetScheduleByRef.md)
 Property indicating the schedule for an eligible role assignment.
 
+### [Set-MgRoleManagementDirectoryTransitiveRoleAssignmentDirectoryScopeByRef](Set-MgRoleManagementDirectoryTransitiveRoleAssignmentDirectoryScopeByRef.md)
+The directory object that is the scope of the assignment.
+Read-only.
+Supports $expand.
+
+### [Set-MgRoleManagementDirectoryTransitiveRoleAssignmentPrincipalByRef](Set-MgRoleManagementDirectoryTransitiveRoleAssignmentPrincipalByRef.md)
+Referencing the assigned principal.
+Read-only.
+Supports $expand.
+
+### [Set-MgRoleManagementDirectoryTransitiveRoleAssignmentRoleDefinitionByRef](Set-MgRoleManagementDirectoryTransitiveRoleAssignmentRoleDefinitionByRef.md)
+The roleDefinition the assignment is for.
+Supports $expand.
+roleDefinition.Id will be auto expanded.
+
 ### [Set-MgRoleManagementEntitlementManagementRoleAssignmentDirectoryScopeByRef](Set-MgRoleManagementEntitlementManagementRoleAssignmentDirectoryScopeByRef.md)
 The directory object that is the scope of the assignment.
 Read-only.
@@ -1449,6 +1592,21 @@ roleDefinition.Id will be auto expanded.
 
 ### [Set-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestTargetScheduleByRef](Set-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestTargetScheduleByRef.md)
 Property indicating the schedule for an eligible role assignment.
+
+### [Set-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentDirectoryScopeByRef](Set-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentDirectoryScopeByRef.md)
+The directory object that is the scope of the assignment.
+Read-only.
+Supports $expand.
+
+### [Set-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentPrincipalByRef](Set-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentPrincipalByRef.md)
+Referencing the assigned principal.
+Read-only.
+Supports $expand.
+
+### [Set-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentRoleDefinitionByRef](Set-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentRoleDefinitionByRef.md)
+The roleDefinition the assignment is for.
+Supports $expand.
+roleDefinition.Id will be auto expanded.
 
 ### [Stop-MgRoleManagementDirectoryRoleAssignmentScheduleRequest](Stop-MgRoleManagementDirectoryRoleAssignmentScheduleRequest.md)
 Invoke action cancel
@@ -1638,6 +1796,14 @@ Update the navigation property roleEligibilityScheduleInstances in roleManagemen
 ### [Update-MgRoleManagementDirectoryRoleEligibilityScheduleRequest](Update-MgRoleManagementDirectoryRoleEligibilityScheduleRequest.md)
 Update the navigation property roleEligibilityScheduleRequests in roleManagement
 
+### [Update-MgRoleManagementDirectoryTransitiveRoleAssignment](Update-MgRoleManagementDirectoryTransitiveRoleAssignment.md)
+Update the navigation property transitiveRoleAssignments in roleManagement
+
+### [Update-MgRoleManagementDirectoryTransitiveRoleAssignmentAppScope](Update-MgRoleManagementDirectoryTransitiveRoleAssignmentAppScope.md)
+Read-only property with details of the app specific scope when the assignment scope is app specific.
+Containment entity.
+Supports $expand.
+
 ### [Update-MgRoleManagementEntitlementManagement](Update-MgRoleManagementEntitlementManagement.md)
 Container for all entitlement management resources in Azure AD identity governance.
 
@@ -1689,4 +1855,12 @@ Update the navigation property roleEligibilityScheduleInstances in roleManagemen
 
 ### [Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest.md)
 Update the navigation property roleEligibilityScheduleRequests in roleManagement
+
+### [Update-MgRoleManagementEntitlementManagementTransitiveRoleAssignment](Update-MgRoleManagementEntitlementManagementTransitiveRoleAssignment.md)
+Update the navigation property transitiveRoleAssignments in roleManagement
+
+### [Update-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentAppScope](Update-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentAppScope.md)
+Read-only property with details of the app specific scope when the assignment scope is app specific.
+Containment entity.
+Supports $expand.
 
