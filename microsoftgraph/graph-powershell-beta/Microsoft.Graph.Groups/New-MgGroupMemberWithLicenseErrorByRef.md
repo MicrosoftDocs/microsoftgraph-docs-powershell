@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/new-mggroupmemberwithlicenseerrorbyref
 schema: 2.0.0
@@ -15,26 +15,26 @@ Read-only.
 
 ### CreateExpanded1 (Default)
 ```
-New-MgGroupMemberWithLicenseErrorByRef -GroupId <String> [-AdditionalProperties <Hashtable>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+New-MgGroupMemberWithLicenseErrorByRef -GroupId <String> [-AdditionalProperties <Hashtable>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgGroupMemberWithLicenseErrorByRef -GroupId <String> -BodyParameter <Hashtable> [-Confirm] [-WhatIf]
+New-MgGroupMemberWithLicenseErrorByRef -GroupId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
  [<CommonParameters>]
-```
-
-### CreateViaIdentity1
-```
-New-MgGroupMemberWithLicenseErrorByRef -InputObject <IGroupsIdentity> -BodyParameter <Hashtable> [-Confirm]
- [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded1
 ```
 New-MgGroupMemberWithLicenseErrorByRef -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity1
+```
+New-MgGroupMemberWithLicenseErrorByRef -InputObject <IGroupsIdentity> -BodyParameter <Hashtable> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,7 +49,7 @@ Read-only.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
@@ -79,8 +79,8 @@ Accept wildcard characters: False
 key: id of group
 
 ```yaml
-Type: System.String
-Parameter Sets: Create1, CreateExpanded1
+Type: String
+Parameter Sets: CreateExpanded1, Create1
 Aliases:
 
 Required: True
@@ -95,8 +95,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-Parameter Sets: CreateViaIdentity1, CreateViaIdentityExpanded1
+Type: IGroupsIdentity
+Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -126,7 +126,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -143,13 +143,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1Jqo6K2GroupsGroupIdMemberswithlicenseerrorsRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES
@@ -183,4 +180,3 @@ INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
