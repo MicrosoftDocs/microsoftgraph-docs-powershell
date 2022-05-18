@@ -770,6 +770,9 @@ Represents the set of Microsoft 365 groups and security groups in Azure AD that 
 Returned only on $expand.
 See an example of getting the assignments relationship.
 
+### [Update-MgDeviceManagementVirtualEndpointServicePlan](Update-MgDeviceManagementVirtualEndpointServicePlan.md)
+Cloud PC service plans.
+
 ### [Update-MgDeviceManagementVirtualEndpointSnapshot](Update-MgDeviceManagementVirtualEndpointSnapshot.md)
 Update the navigation property snapshots in deviceManagement
 
