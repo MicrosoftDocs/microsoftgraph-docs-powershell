@@ -66,6 +66,9 @@ Analytics about the view activities that took place in this site.
 ### [Get-MgSiteApplicableContentType](Get-MgSiteApplicableContentType.md)
 Invoke function getApplicableContentTypesForList
 
+### [Get-MgSiteByPath](Get-MgSiteByPath.md)
+Invoke function getByPath
+
 ### [Get-MgSiteColumn](Get-MgSiteColumn.md)
 The collection of column definitions reusable across lists under this site.
 
@@ -441,6 +444,9 @@ The [set] in which the term is created.
 ### [Get-MgSubSite](Get-MgSubSite.md)
 Get entity from sites by key
 
+### [Get-MgSubSiteByRef](Get-MgSubSiteByRef.md)
+The collection of the sub-sites under this site.
+
 ### [Get-MgUserFollowedSite](Get-MgUserFollowedSite.md)
 Get followedSites from users
 
@@ -577,6 +583,9 @@ Children of current term.
 
 ### [New-MgSiteTermStoreSetTermRelation](New-MgSiteTermStoreSetTermRelation.md)
 To indicate which terms are related to the current term as either pinned or reused.
+
+### [New-MgSubSiteByRef](New-MgSubSiteByRef.md)
+The collection of the sub-sites under this site.
 
 ### [New-MgUserFollowedSiteByRef](New-MgUserFollowedSiteByRef.md)
 Create new navigation property ref to followedSites for users
@@ -966,6 +975,9 @@ Invoke action unpublish
 ### [Update-MgGroupSite](Update-MgGroupSite.md)
 The list of SharePoint sites in this group.
 Access the default site with /sites/root.
+
+### [Update-MgSite](Update-MgSite.md)
+Update entity in sites
 
 ### [Update-MgSiteColumn](Update-MgSiteColumn.md)
 The collection of column definitions reusable across lists under this site.
