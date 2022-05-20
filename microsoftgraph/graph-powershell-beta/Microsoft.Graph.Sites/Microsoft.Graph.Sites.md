@@ -261,6 +261,9 @@ The default termStore under this site.
 ### [Get-MgSubSite](Get-MgSubSite.md)
 The collection of the sub-sites under this site.
 
+### [Get-MgSubSiteByRef](Get-MgSubSiteByRef.md)
+The collection of the sub-sites under this site.
+
 ### [Get-MgUserFollowedSite](Get-MgUserFollowedSite.md)
 Get followedSites from users
 
@@ -355,6 +358,9 @@ The collection of pages in the SitePages list in this site.
 ### [New-MgSitePermission](New-MgSitePermission.md)
 The permissions associated with the site.
 Nullable.
+
+### [New-MgSubSiteByRef](New-MgSubSiteByRef.md)
+The collection of the sub-sites under this site.
 
 ### [New-MgUserFollowedSiteByRef](New-MgUserFollowedSiteByRef.md)
 Create new navigation property ref to followedSites for users
