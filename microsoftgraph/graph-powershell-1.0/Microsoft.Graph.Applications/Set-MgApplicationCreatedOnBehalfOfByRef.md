@@ -1,41 +1,84 @@
-﻿---
-external help file: Microsoft.Graph.Applications-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Applications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/restore-mgserviceprincipal
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/set-mgapplicationcreatedonbehalfofbyref
 schema: 2.0.0
 ---
 
-# Restore-MgServicePrincipal
+# Set-MgApplicationCreatedOnBehalfOfByRef
 
 ## SYNOPSIS
-Invoke action restore
+Read-only.
 
 ## SYNTAX
 
-### Restore1 (Default)
+### SetExpanded1 (Default)
 ```
-Restore-MgServicePrincipal -ServicePrincipalId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgApplicationCreatedOnBehalfOfByRef -ApplicationId <String> [-AdditionalProperties <Hashtable>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### RestoreViaIdentity1
+### Set1
 ```
-Restore-MgServicePrincipal -InputObject <IApplicationsIdentity> [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgApplicationCreatedOnBehalfOfByRef -ApplicationId <String> -BodyParameter <Hashtable> [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### SetViaIdentity1
+```
+Set-MgApplicationCreatedOnBehalfOfByRef -InputObject <IApplicationsIdentity> -BodyParameter <Hashtable>
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### SetViaIdentityExpanded1
+```
+Set-MgApplicationCreatedOnBehalfOfByRef -InputObject <IApplicationsIdentity>
+ [-AdditionalProperties <Hashtable>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action restore
+Read-only.
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -AdditionalProperties
+Additional Parameters
 
 ```yaml
-Type: IApplicationsIdentity
-Parameter Sets: RestoreViaIdentity1
+Type: System.Collections.Hashtable
+Parameter Sets: SetExpanded1, SetViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ApplicationId
+key: id of application
+
+```yaml
+Type: System.String
+Parameter Sets: Set1, SetExpanded1
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -BodyParameter
+.
+
+```yaml
+Type: System.Collections.Hashtable
+Parameter Sets: Set1, SetViaIdentity1
 Aliases:
 
 Required: True
@@ -45,15 +88,31 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ServicePrincipalId
-key: id of servicePrincipal
+### -InputObject
+Identity Parameter
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: String
-Parameter Sets: Restore1
+Type: Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+Parameter Sets: SetViaIdentity1, SetViaIdentityExpanded1
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -PassThru
+Returns true when the command succeeds
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -64,7 +123,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -80,7 +139,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -97,12 +156,18 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+
+### System.Collections.Hashtable
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
+### System.Boolean
+
 ## NOTES
 
 ALIASES
+
+### Set-MgApplicationCreatedOnBehalfByRef
 
 COMPLEX PARAMETER PROPERTIES
 
@@ -135,3 +200,4 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

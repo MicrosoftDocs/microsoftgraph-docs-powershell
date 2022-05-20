@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Sites-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/get-mgsitelistitemdelta
 schema: 2.0.0
@@ -22,12 +22,12 @@ Get-MgSiteListItemDelta -ListId <String> -SiteId <String> [<CommonParameters>]
 Get-MgSiteListItemDelta -ListId <String> -SiteId <String> -Token <String> [<CommonParameters>]
 ```
 
-### DeltaViaIdentity1
+### DeltaViaIdentity
 ```
 Get-MgSiteListItemDelta -InputObject <ISitesIdentity> [<CommonParameters>]
 ```
 
-### DeltaViaIdentity
+### DeltaViaIdentity1
 ```
 Get-MgSiteListItemDelta -InputObject <ISitesIdentity> [<CommonParameters>]
 ```
@@ -44,8 +44,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISitesIdentity
-Parameter Sets: DeltaViaIdentity1, DeltaViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ISitesIdentity
+Parameter Sets: DeltaViaIdentity, DeltaViaIdentity1
 Aliases:
 
 Required: True
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 key: id of list
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delta, Delta1
 Aliases:
 
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 key: id of site
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delta, Delta1
 Aliases:
 
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 Usage: token={token}
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delta1
 Aliases:
 
@@ -106,9 +106,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphListItem
+
 ## NOTES
 
 ALIASES
@@ -150,3 +152,4 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+
