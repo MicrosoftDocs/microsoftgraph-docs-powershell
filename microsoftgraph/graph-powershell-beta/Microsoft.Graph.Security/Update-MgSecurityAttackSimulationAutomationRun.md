@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecurityattacksimulationautomationrun
 schema: 2.0.0
@@ -16,28 +16,28 @@ A collection of simulation automation runs.
 ```
 Update-MgSecurityAttackSimulationAutomationRun -SimulationAutomationId <String>
  -SimulationAutomationRunId <String> [-AdditionalProperties <Hashtable>] [-EndDateTime <DateTime>]
- [-Id <String>] [-SimulationId <String>] [-StartDateTime <DateTime>] [-Status <String>] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-Id <String>] [-SimulationId <String>] [-StartDateTime <DateTime>] [-Status <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgSecurityAttackSimulationAutomationRun -SimulationAutomationId <String>
  -SimulationAutomationRunId <String> -BodyParameter <IMicrosoftGraphSimulationAutomationRun> [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgSecurityAttackSimulationAutomationRun -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSimulationAutomationRun> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgSecurityAttackSimulationAutomationRun -InputObject <ISecurityIdentity>
  [-AdditionalProperties <Hashtable>] [-EndDateTime <DateTime>] [-Id <String>] [-SimulationId <String>]
- [-StartDateTime <DateTime>] [-Status <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-StartDateTime <DateTime>] [-Status <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgSecurityAttackSimulationAutomationRun -InputObject <ISecurityIdentity>
+ -BodyParameter <IMicrosoftGraphSimulationAutomationRun> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,7 +51,7 @@ A collection of simulation automation runs.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -67,7 +67,7 @@ simulationAutomationRun
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSimulationAutomationRun
+Type: IMicrosoftGraphSimulationAutomationRun
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 Date and time when the run ends in an attack simulation automation.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -113,8 +113,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ISecurityIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: ISecurityIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -143,8 +143,8 @@ Accept wildcard characters: False
 key: id of simulationAutomation
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -158,8 +158,8 @@ Accept wildcard characters: False
 key: id of simulationAutomationRun
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 Unique identifier for the attack simulation campaign initiated in the attack simulation automation run.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 Date and time when the run starts in an attack simulation automation.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 simulationAutomationRunStatus
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -234,7 +234,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -251,13 +251,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSimulationAutomationRun
-
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -294,4 +291,3 @@ INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[UserSecurityProfileId <String>]`: key: id of userSecurityProfile
 
 ## RELATED LINKS
-
