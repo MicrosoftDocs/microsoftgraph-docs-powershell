@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Reports-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/update-mgdevicemanagementreport
 schema: 2.0.0
@@ -15,14 +15,14 @@ Reports singleton
 ### UpdateExpanded1 (Default)
 ```
 Update-MgDeviceManagementReport [-AdditionalProperties <Hashtable>]
- [-ExportJobs <IMicrosoftGraphDeviceManagementExportJob[]>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [-ExportJobs <IMicrosoftGraphDeviceManagementExportJob[]>] [-Id <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update1
 ```
-Update-MgDeviceManagementReport -BodyParameter <IMicrosoftGraphDeviceManagementReports> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgDeviceManagementReport -BodyParameter <IMicrosoftGraphDeviceManagementReports> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,7 +36,7 @@ Reports singleton
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -52,7 +52,7 @@ Singleton entity that acts as a container for all reports functionality.
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementReports
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementReports
 Parameter Sets: Update1
 Aliases:
 
@@ -68,7 +68,7 @@ Entity representing a job to export a report
 To construct, please use Get-Help -Online and see NOTES section for EXPORTJOBS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementExportJob[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementExportJob[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -129,7 +129,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -146,9 +146,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementReports
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -188,3 +190,4 @@ EXPORTJOBS <IMicrosoftGraphDeviceManagementExportJob[]>: Entity representing a j
   - `[Url <String>]`: Temporary location of the exported report
 
 ## RELATED LINKS
+

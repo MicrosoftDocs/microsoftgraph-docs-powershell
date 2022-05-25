@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Search-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/update-mgsearchentity
 schema: 2.0.0
@@ -15,13 +15,13 @@ Update search
 ### UpdateExpanded1 (Default)
 ```
 Update-MgSearchEntity [-Acronyms <IMicrosoftGraphSearchAcronym[]>] [-AdditionalProperties <Hashtable>]
- [-Bookmarks <IMicrosoftGraphSearchBookmark[]>] [-Id <String>] [-Qnas <IMicrosoftGraphSearchQna[]>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Bookmarks <IMicrosoftGraphSearchBookmark[]>] [-Id <String>] [-Qnas <IMicrosoftGraphSearchQna[]>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update1
 ```
-Update-MgSearchEntity -BodyParameter <IMicrosoftGraphSearchEntity1> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgSearchEntity -BodyParameter <IMicrosoftGraphSearchEntity1> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -37,7 +37,7 @@ Administrative answer in Microsoft Search results to define common acronyms in a
 To construct, please use Get-Help -Online and see NOTES section for ACRONYMS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSearchAcronym[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchAcronym[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -52,7 +52,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -68,7 +68,7 @@ searchEntity
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSearchEntity1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchEntity1
 Parameter Sets: Update1
 Aliases:
 
@@ -84,7 +84,7 @@ Administrative answer in Microsoft Search results for common search queries in a
 To construct, please use Get-Help -Online and see NOTES section for BOOKMARKS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSearchBookmark[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchBookmark[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -130,7 +130,7 @@ Administrative answer in Microsoft Search results which provide answers for spec
 To construct, please use Get-Help -Online and see NOTES section for QNAS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSearchQna[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchQna[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -161,7 +161,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -178,9 +178,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchEntity1
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -340,4 +342,3 @@ QNAS <IMicrosoftGraphSearchQna[]>: Administrative answer in Microsoft Search res
 
 ## RELATED LINKS
 
-## RELATED LINKS
