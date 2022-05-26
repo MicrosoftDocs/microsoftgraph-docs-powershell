@@ -52,7 +52,7 @@ The list of SharePoint sites in this group.
 Access the default site with /sites/root.
 
 ### [Get-MgSite](Get-MgSite.md)
-Invoke function getByPath
+Get entity from sites by key
 
 ### [Get-MgSiteActivityByInterval](Get-MgSiteActivityByInterval.md)
 Invoke function getActivitiesByInterval
@@ -442,7 +442,7 @@ The [set] in which the term is created.
 The [set] in which the term is created.
 
 ### [Get-MgSubSite](Get-MgSubSite.md)
-Get entity from sites by key
+The collection of the sub-sites under this site.
 
 ### [Get-MgSubSiteByRef](Get-MgSubSiteByRef.md)
 The collection of the sub-sites under this site.

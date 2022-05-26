@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/new-mgsitecontenttypecolumn
 schema: 2.0.0
@@ -15,47 +15,45 @@ The collection of column definitions for this contentType.
 ### CreateExpanded (Default)
 ```
 New-MgSiteContentTypeColumn -ContentTypeId <String> -SiteId <String> [-AdditionalProperties <Hashtable>]
- [-Boolean <Hashtable>] [-Calculated <IMicrosoftGraphCalculatedColumn>]
- [-Choice <IMicrosoftGraphChoiceColumn>] [-ColumnGroup <String>] [-ContentApprovalStatus <Hashtable>]
- [-Currency <IMicrosoftGraphCurrencyColumn>] [-DateTime <IMicrosoftGraphDateTimeColumn>]
- [-DefaultValue <IMicrosoftGraphDefaultColumnValue>] [-Description <String>] [-DisplayName <String>]
- [-EnforceUniqueValues] [-Geolocation <Hashtable>] [-Hidden]
+ [-Boolean <Hashtable>] [-Calculated <IMicrosoftGraphCalculatedColumn>] [-Choice <IMicrosoftGraphChoiceColumn>]
+ [-ColumnGroup <String>] [-ContentApprovalStatus <Hashtable>] [-Currency <IMicrosoftGraphCurrencyColumn>]
+ [-DateTime <IMicrosoftGraphDateTimeColumn>] [-DefaultValue <IMicrosoftGraphDefaultColumnValue>]
+ [-Description <String>] [-DisplayName <String>] [-EnforceUniqueValues] [-Geolocation <Hashtable>] [-Hidden]
  [-HyperlinkOrPicture <IMicrosoftGraphHyperlinkOrPictureColumn>] [-Id <String>] [-Indexed] [-IsDeletable]
  [-IsReorderable] [-IsSealed] [-Lookup <IMicrosoftGraphLookupColumn>] [-Name <String>]
  [-Number <IMicrosoftGraphNumberColumn>] [-PersonOrGroup <IMicrosoftGraphPersonOrGroupColumn>]
  [-PropagateChanges] [-ReadOnly] [-Required] [-SourceColumn <IMicrosoftGraphColumnDefinition1>]
  [-SourceContentType <IMicrosoftGraphContentTypeInfo>] [-Term <IMicrosoftGraphTermColumn1>]
  [-Text <IMicrosoftGraphTextColumn>] [-Thumbnail <Hashtable>] [-Type <String>]
- [-Validation <IMicrosoftGraphColumnValidation>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Validation <IMicrosoftGraphColumnValidation>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgSiteContentTypeColumn -ContentTypeId <String> -SiteId <String>
- -BodyParameter <IMicrosoftGraphColumnDefinition1> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgSiteContentTypeColumn -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphColumnDefinition1>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphColumnDefinition1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgSiteContentTypeColumn -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
- [-Boolean <Hashtable>] [-Calculated <IMicrosoftGraphCalculatedColumn>]
- [-Choice <IMicrosoftGraphChoiceColumn>] [-ColumnGroup <String>] [-ContentApprovalStatus <Hashtable>]
- [-Currency <IMicrosoftGraphCurrencyColumn>] [-DateTime <IMicrosoftGraphDateTimeColumn>]
- [-DefaultValue <IMicrosoftGraphDefaultColumnValue>] [-Description <String>] [-DisplayName <String>]
- [-EnforceUniqueValues] [-Geolocation <Hashtable>] [-Hidden]
+ [-Boolean <Hashtable>] [-Calculated <IMicrosoftGraphCalculatedColumn>] [-Choice <IMicrosoftGraphChoiceColumn>]
+ [-ColumnGroup <String>] [-ContentApprovalStatus <Hashtable>] [-Currency <IMicrosoftGraphCurrencyColumn>]
+ [-DateTime <IMicrosoftGraphDateTimeColumn>] [-DefaultValue <IMicrosoftGraphDefaultColumnValue>]
+ [-Description <String>] [-DisplayName <String>] [-EnforceUniqueValues] [-Geolocation <Hashtable>] [-Hidden]
  [-HyperlinkOrPicture <IMicrosoftGraphHyperlinkOrPictureColumn>] [-Id <String>] [-Indexed] [-IsDeletable]
  [-IsReorderable] [-IsSealed] [-Lookup <IMicrosoftGraphLookupColumn>] [-Name <String>]
  [-Number <IMicrosoftGraphNumberColumn>] [-PersonOrGroup <IMicrosoftGraphPersonOrGroupColumn>]
  [-PropagateChanges] [-ReadOnly] [-Required] [-SourceColumn <IMicrosoftGraphColumnDefinition1>]
  [-SourceContentType <IMicrosoftGraphContentTypeInfo>] [-Term <IMicrosoftGraphTermColumn1>]
  [-Text <IMicrosoftGraphTextColumn>] [-Thumbnail <Hashtable>] [-Type <String>]
- [-Validation <IMicrosoftGraphColumnValidation>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Validation <IMicrosoftGraphColumnValidation>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgSiteContentTypeColumn -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphColumnDefinition1>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -69,7 +67,7 @@ The collection of column definitions for this contentType.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -85,7 +83,7 @@ columnDefinition
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnDefinition1
+Type: IMicrosoftGraphColumnDefinition1
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -100,7 +98,7 @@ Accept wildcard characters: False
 booleanColumn
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -116,7 +114,7 @@ calculatedColumn
 To construct, please use Get-Help -Online and see NOTES section for CALCULATED properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalculatedColumn
+Type: IMicrosoftGraphCalculatedColumn
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -132,7 +130,7 @@ choiceColumn
 To construct, please use Get-Help -Online and see NOTES section for CHOICE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChoiceColumn
+Type: IMicrosoftGraphChoiceColumn
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -148,7 +146,7 @@ For site columns, the name of the group this column belongs to.
 Helps organize related columns.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -163,7 +161,7 @@ Accept wildcard characters: False
 contentApprovalStatusColumn
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -178,8 +176,8 @@ Accept wildcard characters: False
 key: id of contentType
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -194,7 +192,7 @@ currencyColumn
 To construct, please use Get-Help -Online and see NOTES section for CURRENCY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCurrencyColumn
+Type: IMicrosoftGraphCurrencyColumn
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -210,7 +208,7 @@ dateTimeColumn
 To construct, please use Get-Help -Online and see NOTES section for DATETIME properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDateTimeColumn
+Type: IMicrosoftGraphDateTimeColumn
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -226,7 +224,7 @@ defaultColumnValue
 To construct, please use Get-Help -Online and see NOTES section for DEFAULTVALUE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDefaultColumnValue
+Type: IMicrosoftGraphDefaultColumnValue
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -241,7 +239,7 @@ Accept wildcard characters: False
 The user-facing description of the column.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -256,7 +254,7 @@ Accept wildcard characters: False
 The user-facing name of the column.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -271,7 +269,7 @@ Accept wildcard characters: False
 If true, no two list items may have the same value for this column.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -286,7 +284,7 @@ Accept wildcard characters: False
 geolocationColumn
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -301,7 +299,7 @@ Accept wildcard characters: False
 Specifies whether the column is displayed in the user interface.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -317,7 +315,7 @@ hyperlinkOrPictureColumn
 To construct, please use Get-Help -Online and see NOTES section for HYPERLINKORPICTURE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphHyperlinkOrPictureColumn
+Type: IMicrosoftGraphHyperlinkOrPictureColumn
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -332,7 +330,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -347,7 +345,7 @@ Accept wildcard characters: False
 Specifies whether the column values can be used for sorting and searching.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -363,8 +361,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ISitesIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: ISitesIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -378,7 +376,7 @@ Accept wildcard characters: False
 Indicates whether this column can be deleted.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -394,7 +392,7 @@ Indicates whether values in the column can be reordered.
 Read-only.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -409,7 +407,7 @@ Accept wildcard characters: False
 Specifies whether the column can be changed.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -425,7 +423,7 @@ lookupColumn
 To construct, please use Get-Help -Online and see NOTES section for LOOKUP properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLookupColumn
+Type: IMicrosoftGraphLookupColumn
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -441,7 +439,7 @@ The API-facing name of the column as it appears in the [fields][] on a [listItem
 For the user-facing name, see displayName.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -457,7 +455,7 @@ numberColumn
 To construct, please use Get-Help -Online and see NOTES section for NUMBER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphNumberColumn
+Type: IMicrosoftGraphNumberColumn
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -473,7 +471,7 @@ personOrGroupColumn
 To construct, please use Get-Help -Online and see NOTES section for PERSONORGROUP properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPersonOrGroupColumn
+Type: IMicrosoftGraphPersonOrGroupColumn
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -488,7 +486,7 @@ Accept wildcard characters: False
 If 'true', changes to this column will be propagated to lists that implement the column.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -503,7 +501,7 @@ Accept wildcard characters: False
 Specifies whether the column values can be modified.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -518,7 +516,7 @@ Accept wildcard characters: False
 Specifies whether the column value isn't optional.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -533,8 +531,8 @@ Accept wildcard characters: False
 key: id of site
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -549,7 +547,7 @@ columnDefinition
 To construct, please use Get-Help -Online and see NOTES section for SOURCECOLUMN properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnDefinition1
+Type: IMicrosoftGraphColumnDefinition1
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -565,7 +563,7 @@ contentTypeInfo
 To construct, please use Get-Help -Online and see NOTES section for SOURCECONTENTTYPE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentTypeInfo
+Type: IMicrosoftGraphContentTypeInfo
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -581,7 +579,7 @@ termColumn
 To construct, please use Get-Help -Online and see NOTES section for TERM properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermColumn1
+Type: IMicrosoftGraphTermColumn1
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -597,7 +595,7 @@ textColumn
 To construct, please use Get-Help -Online and see NOTES section for TEXT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTextColumn
+Type: IMicrosoftGraphTextColumn
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -612,7 +610,7 @@ Accept wildcard characters: False
 thumbnailColumn
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -627,7 +625,7 @@ Accept wildcard characters: False
 columnTypes
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -643,7 +641,7 @@ columnValidation
 To construct, please use Get-Help -Online and see NOTES section for VALIDATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnValidation
+Type: IMicrosoftGraphColumnValidation
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -658,7 +656,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -674,7 +672,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -691,13 +689,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnDefinition1
-
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnDefinition1
-
 ## NOTES
 
 ALIASES
@@ -1131,3 +1126,4 @@ VALIDATION <IMicrosoftGraphColumnValidation>: columnValidation
 
 ## RELATED LINKS
 
+## RELATED LINKS

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/get-mgsitetermstoresetchildrelationfromtermbyref
 schema: 2.0.0
@@ -23,15 +23,15 @@ Get-MgSiteTermStoreSetChildRelationFromTermByRef -RelationId <String> -SetId <St
 ### Get1
 ```
 Get-MgSiteTermStoreSetChildRelationFromTermByRef -RelationId <String> -SetId <String> -SiteId <String>
- -StoreId <String> -TermId <String> [<CommonParameters>]
+ -TermId <String> -StoreId <String> [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity1
 ```
 Get-MgSiteTermStoreSetChildRelationFromTermByRef -InputObject <ISitesIdentity> [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity
 ```
 Get-MgSiteTermStoreSetChildRelationFromTermByRef -InputObject <ISitesIdentity> [<CommonParameters>]
 ```
@@ -50,8 +50,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ISitesIdentity
-Parameter Sets: GetViaIdentity, GetViaIdentity1
+Type: ISitesIdentity
+Parameter Sets: GetViaIdentity1, GetViaIdentity
 Aliases:
 
 Required: True
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 key: id of relation
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get, Get1
 Aliases:
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 key: id of set
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get, Get1
 Aliases:
 
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 key: id of site
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get, Get1
 Aliases:
 
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 key: id of store
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get1
 Aliases:
 
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 key: id of term
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get, Get1
 Aliases:
 
@@ -142,11 +142,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES
@@ -188,4 +186,3 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
