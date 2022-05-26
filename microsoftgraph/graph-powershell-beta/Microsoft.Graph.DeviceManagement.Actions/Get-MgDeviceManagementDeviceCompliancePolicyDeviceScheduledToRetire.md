@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementdevicecompliancepolicydevicescheduledtoretire
 schema: 2.0.0
@@ -13,7 +13,7 @@ Invoke action getDevicesScheduledToRetire
 ## SYNTAX
 
 ```
-Get-MgDeviceManagementDeviceCompliancePolicyDeviceScheduledToRetire [-Confirm] [-WhatIf] [<CommonParameters>]
+Get-MgDeviceManagementDeviceCompliancePolicyDeviceScheduledToRetire [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -27,7 +27,7 @@ Invoke action getDevicesScheduledToRetire
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -43,7 +43,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -62,10 +62,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRetireScheduledManagedDevice
-
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
-

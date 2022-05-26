@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/new-mgdevicemanagementdeviceshellscriptdevicerunstatemanageddevicelogcollectionrequest
 schema: 2.0.0
@@ -16,8 +16,8 @@ Invoke action createDeviceLogCollectionRequest
 ```
 New-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceLogCollectionRequest
  -DeviceManagementScriptDeviceStateId <String> -DeviceShellScriptId <String>
- [-AdditionalProperties <Hashtable>] [-TemplateType <IMicrosoftGraphDeviceLogCollectionRequest>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-TemplateType <IMicrosoftGraphDeviceLogCollectionRequest>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -25,7 +25,14 @@ New-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceLogCollectionR
 New-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceLogCollectionRequest
  -DeviceManagementScriptDeviceStateId <String> -DeviceShellScriptId <String>
  -BodyParameter <IPaths1P98AgxDevicemanagementDeviceshellscriptsDeviceshellscriptIdDevicerunstatesDevicemanagementscriptdevicestateIdManageddeviceMicrosoftGraphCreatedevicelogcollectionrequestPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceLogCollectionRequest
+ -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-TemplateType <IMicrosoftGraphDeviceLogCollectionRequest>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -33,14 +40,7 @@ New-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceLogCollectionR
 New-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceLogCollectionRequest
  -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths1P98AgxDevicemanagementDeviceshellscriptsDeviceshellscriptIdDevicerunstatesDevicemanagementscriptdevicestateIdManageddeviceMicrosoftGraphCreatedevicelogcollectionrequestPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceLogCollectionRequest
- -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-TemplateType <IMicrosoftGraphDeviceLogCollectionRequest>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -54,7 +54,7 @@ Invoke action createDeviceLogCollectionRequest
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths1P98AgxDevicemanagementDeviceshellscriptsDeviceshellscriptIdDevicerunstatesDevicemanagementscriptdevicestateIdManageddeviceMicrosoftGraphCreatedevicelogcollectionrequestPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1P98AgxDevicemanagementDeviceshellscriptsDeviceshellscriptIdDevicerunstatesDevicemanagementscriptdevicestateIdManageddeviceMicrosoftGraphCreatedevicelogcollectionrequestPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -85,8 +85,8 @@ Accept wildcard characters: False
 key: id of deviceManagementScriptDeviceState
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -100,8 +100,8 @@ Accept wildcard characters: False
 key: id of deviceShellScript
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -116,8 +116,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IDeviceManagementActionsIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -132,7 +132,7 @@ Windows Log Collection request entity.
 To construct, please use Get-Help -Online and see NOTES section for TEMPLATETYPE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceLogCollectionRequest
+Type: IMicrosoftGraphDeviceLogCollectionRequest
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -163,7 +163,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -180,13 +180,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IPaths1P98AgxDevicemanagementDeviceshellscriptsDeviceshellscriptIdDevicerunstatesDevicemanagementscriptdevicestateIdManageddeviceMicrosoftGraphCreatedevicelogcollectionrequestPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceLogCollectionResponse
-
 ## NOTES
 
 ALIASES
@@ -264,4 +261,3 @@ TEMPLATETYPE <IMicrosoftGraphDeviceLogCollectionRequest>: Windows Log Collection
   - `[TemplateType <String>]`: Enum for the template type used for collecting logs
 
 ## RELATED LINKS
-

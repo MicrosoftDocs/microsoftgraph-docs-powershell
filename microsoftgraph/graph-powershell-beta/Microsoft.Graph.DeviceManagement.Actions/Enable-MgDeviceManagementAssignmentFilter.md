@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/enable-mgdevicemanagementassignmentfilter
 schema: 2.0.0
@@ -14,15 +14,15 @@ Invoke action enable
 
 ### EnableExpanded (Default)
 ```
-Enable-MgDeviceManagementAssignmentFilter [-AdditionalProperties <Hashtable>] [-Enable] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Enable-MgDeviceManagementAssignmentFilter [-AdditionalProperties <Hashtable>] [-Enable] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Enable
 ```
 Enable-MgDeviceManagementAssignmentFilter
  -BodyParameter <IPaths1Wi1TrqDevicemanagementAssignmentfiltersMicrosoftGraphEnablePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,7 +36,7 @@ Invoke action enable
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: EnableExpanded
 Aliases:
 
@@ -52,7 +52,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths1Wi1TrqDevicemanagementAssignmentfiltersMicrosoftGraphEnablePostRequestbodyContentApplicationJsonSchema
+Type: IPaths1Wi1TrqDevicemanagementAssignmentfiltersMicrosoftGraphEnablePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Enable
 Aliases:
 
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: EnableExpanded
 Aliases:
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -113,7 +113,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -130,11 +130,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1Wi1TrqDevicemanagementAssignmentfiltersMicrosoftGraphEnablePostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -149,4 +147,3 @@ BODYPARAMETER <IPaths1Wi1TrqDevicemanagementAssignmentfiltersMicrosoftGraphEnabl
   - `[Enable <Boolean?>]`: 
 
 ## RELATED LINKS
-

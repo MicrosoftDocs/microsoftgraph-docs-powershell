@@ -374,22 +374,22 @@ Invoke action bulkReprovisionCloudPc
 ### [Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc](Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc.md)
 Invoke action bulkRestoreCloudPc
 
-### [Invoke-MgBulkReprovisionDeviceManagementComanagedDeviceCloudPc](Invoke-MgBulkReprovisionDeviceManagementComanagedDeviceCloudPc.md)
-Invoke action bulkReprovisionCloudPc
-
-### [Invoke-MgBulkReprovisionDeviceManagementDetectedAppManagedDeviceCloudPc](Invoke-MgBulkReprovisionDeviceManagementDetectedAppManagedDeviceCloudPc.md)
-Invoke action bulkReprovisionCloudPc
-
-### [Invoke-MgBulkReprovisionDeviceManagementManagedDeviceCloudPc](Invoke-MgBulkReprovisionDeviceManagementManagedDeviceCloudPc.md)
-Invoke action bulkReprovisionCloudPc
-
-### [Invoke-MgBulkRestoreDeviceManagementComanagedDeviceCloudPc](Invoke-MgBulkRestoreDeviceManagementComanagedDeviceCloudPc.md)
+### [Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc](Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc.md)
 Invoke action bulkRestoreCloudPc
 
-### [Invoke-MgBulkRestoreDeviceManagementDetectedAppManagedDeviceCloudPc](Invoke-MgBulkRestoreDeviceManagementDetectedAppManagedDeviceCloudPc.md)
+### [Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc](Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc.md)
 Invoke action bulkRestoreCloudPc
 
-### [Invoke-MgBulkRestoreDeviceManagementManagedDeviceCloudPc](Invoke-MgBulkRestoreDeviceManagementManagedDeviceCloudPc.md)
+### [Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc](Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc.md)
+Invoke action bulkRestoreCloudPc
+
+### [Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc](Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc.md)
+Invoke action bulkRestoreCloudPc
+
+### [Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc](Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc.md)
+Invoke action bulkRestoreCloudPc
+
+### [Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc](Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc.md)
 Invoke action bulkRestoreCloudPc
 
 ### [Invoke-MgCleanDeviceManagementComanagedDeviceWindowDevice](Invoke-MgCleanDeviceManagementComanagedDeviceWindowDevice.md)
@@ -560,20 +560,20 @@ Invoke action reenable
 ### [Invoke-MgReenableDeviceManagementScriptDeviceRunStateManagedDevice](Invoke-MgReenableDeviceManagementScriptDeviceRunStateManagedDevice.md)
 Invoke action reenable
 
-### [Invoke-MgReprovisionDeviceManagementComanagedDeviceCloudPc](Invoke-MgReprovisionDeviceManagementComanagedDeviceCloudPc.md)
-Invoke action reprovisionCloudPc
+### [Invoke-MgReenableDeviceManagementScriptDeviceRunStateManagedDevice](Invoke-MgReenableDeviceManagementScriptDeviceRunStateManagedDevice.md)
+Invoke action reenable
 
-### [Invoke-MgReprovisionDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceCloudPc](Invoke-MgReprovisionDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceCloudPc.md)
-Invoke action reprovisionCloudPc
+### [Invoke-MgReenableDeviceManagementScriptDeviceRunStateManagedDevice](Invoke-MgReenableDeviceManagementScriptDeviceRunStateManagedDevice.md)
+Invoke action reenable
 
-### [Invoke-MgReprovisionDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceCloudPc](Invoke-MgReprovisionDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceCloudPc.md)
-Invoke action reprovisionCloudPc
+### [Invoke-MgReenableDeviceManagementScriptDeviceRunStateManagedDevice](Invoke-MgReenableDeviceManagementScriptDeviceRunStateManagedDevice.md)
+Invoke action reenable
 
-### [Invoke-MgReprovisionDeviceManagementManagedDeviceCloudPc](Invoke-MgReprovisionDeviceManagementManagedDeviceCloudPc.md)
-Invoke action reprovisionCloudPc
+### [Invoke-MgReenableDeviceManagementScriptDeviceRunStateManagedDevice](Invoke-MgReenableDeviceManagementScriptDeviceRunStateManagedDevice.md)
+Invoke action reenable
 
-### [Invoke-MgReprovisionDeviceManagementScriptDeviceRunStateManagedDeviceCloudPc](Invoke-MgReprovisionDeviceManagementScriptDeviceRunStateManagedDeviceCloudPc.md)
-Invoke action reprovisionCloudPc
+### [Invoke-MgReenableDeviceManagementScriptDeviceRunStateManagedDevice](Invoke-MgReenableDeviceManagementScriptDeviceRunStateManagedDevice.md)
+Invoke action reenable
 
 ### [Invoke-MgReprovisionDeviceManagementVirtualEndpointCloudPc](Invoke-MgReprovisionDeviceManagementVirtualEndpointCloudPc.md)
 Invoke action reprovision

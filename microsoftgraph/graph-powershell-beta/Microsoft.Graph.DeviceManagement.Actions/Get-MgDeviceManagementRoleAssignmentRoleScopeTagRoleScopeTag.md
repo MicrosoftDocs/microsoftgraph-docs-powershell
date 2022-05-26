@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementroleassignmentrolescopetagrolescopetag
 schema: 2.0.0
@@ -15,27 +15,27 @@ Invoke action getRoleScopeTagsById
 ### GetExpanded (Default)
 ```
 Get-MgDeviceManagementRoleAssignmentRoleScopeTagRoleScopeTag -DeviceAndAppManagementRoleAssignmentId <String>
- [-AdditionalProperties <Hashtable>] [-RoleScopeTagIds <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-RoleScopeTagIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgDeviceManagementRoleAssignmentRoleScopeTagRoleScopeTag -DeviceAndAppManagementRoleAssignmentId <String>
  -BodyParameter <IPathsC9T4K6DevicemanagementRoleassignmentsDeviceandappmanagementroleassignmentIdRolescopetagsMicrosoftGraphGetrolescopetagsbyidPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### GetViaIdentityExpanded
+```
+Get-MgDeviceManagementRoleAssignmentRoleScopeTagRoleScopeTag -InputObject <IDeviceManagementActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-RoleScopeTagIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgDeviceManagementRoleAssignmentRoleScopeTagRoleScopeTag -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPathsC9T4K6DevicemanagementRoleassignmentsDeviceandappmanagementroleassignmentIdRolescopetagsMicrosoftGraphGetrolescopetagsbyidPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### GetViaIdentityExpanded
-```
-Get-MgDeviceManagementRoleAssignmentRoleScopeTagRoleScopeTag -InputObject <IDeviceManagementActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-RoleScopeTagIds <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,7 +49,7 @@ Invoke action getRoleScopeTagsById
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPathsC9T4K6DevicemanagementRoleassignmentsDeviceandappmanagementroleassignmentIdRolescopetagsMicrosoftGraphGetrolescopetagsbyidPostRequestbodyContentApplicationJsonSchema
+Type: IPathsC9T4K6DevicemanagementRoleassignmentsDeviceandappmanagementroleassignmentIdRolescopetagsMicrosoftGraphGetrolescopetagsbyidPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Get, GetViaIdentity
 Aliases:
 
@@ -80,8 +80,8 @@ Accept wildcard characters: False
 key: id of deviceAndAppManagementRoleAssignment
 
 ```yaml
-Type: System.String
-Parameter Sets: Get, GetExpanded
+Type: String
+Parameter Sets: GetExpanded, Get
 Aliases:
 
 Required: True
@@ -96,8 +96,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-Parameter Sets: GetViaIdentity, GetViaIdentityExpanded
+Type: IDeviceManagementActionsIdentity
+Parameter Sets: GetViaIdentityExpanded, GetViaIdentity
 Aliases:
 
 Required: True
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -142,7 +142,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -159,13 +159,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IPathsC9T4K6DevicemanagementRoleassignmentsDeviceandappmanagementroleassignmentIdRolescopetagsMicrosoftGraphGetrolescopetagsbyidPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleScopeTag
-
 ## NOTES
 
 ALIASES
@@ -235,4 +232,3 @@ INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[WindowsQualityUpdateProfileId <String>]`: key: id of windowsQualityUpdateProfile
 
 ## RELATED LINKS
-
