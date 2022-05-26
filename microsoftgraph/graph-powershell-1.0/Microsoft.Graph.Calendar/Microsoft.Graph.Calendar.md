@@ -34,7 +34,7 @@ Navigation property.
 Read-only.
 
 ### [Get-MgGroupEvent](Get-MgGroupEvent.md)
-The group's events.
+The group's calendar events.
 
 ### [Get-MgGroupEventAttachment](Get-MgGroupEventAttachment.md)
 The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
@@ -121,7 +121,7 @@ Nullable.
 
 ### [Get-MgUserEvent](Get-MgUserEvent.md)
 The user's events.
-Default is to show events under the Default Calendar.
+Default is to show Events under the Default Calendar.
 Read-only.
 Nullable.
 
@@ -176,7 +176,7 @@ Read-only.
 Nullable.
 
 ### [New-MgGroupEvent](New-MgGroupEvent.md)
-The group's events.
+The group's calendar events.
 
 ### [New-MgGroupEventAttachment](New-MgGroupEventAttachment.md)
 The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
@@ -244,7 +244,7 @@ Nullable.
 
 ### [New-MgUserEvent](New-MgUserEvent.md)
 The user's events.
-Default is to show events under the Default Calendar.
+Default is to show Events under the Default Calendar.
 Read-only.
 Nullable.
 
@@ -289,7 +289,7 @@ Read-only.
 Nullable.
 
 ### [Remove-MgGroupEvent](Remove-MgGroupEvent.md)
-The group's events.
+The group's calendar events.
 
 ### [Remove-MgGroupEventAttachment](Remove-MgGroupEventAttachment.md)
 The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
@@ -351,7 +351,7 @@ Nullable.
 
 ### [Remove-MgUserEvent](Remove-MgUserEvent.md)
 The user's events.
-Default is to show events under the Default Calendar.
+Default is to show Events under the Default Calendar.
 Read-only.
 Nullable.
 
@@ -411,7 +411,7 @@ Read-only.
 Nullable.
 
 ### [Update-MgGroupEvent](Update-MgGroupEvent.md)
-The group's events.
+The group's calendar events.
 
 ### [Update-MgGroupEventAttachment](Update-MgGroupEventAttachment.md)
 The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
@@ -468,7 +468,7 @@ Nullable.
 
 ### [Update-MgUserEvent](Update-MgUserEvent.md)
 The user's events.
-Default is to show events under the Default Calendar.
+Default is to show Events under the Default Calendar.
 Read-only.
 Nullable.
 
