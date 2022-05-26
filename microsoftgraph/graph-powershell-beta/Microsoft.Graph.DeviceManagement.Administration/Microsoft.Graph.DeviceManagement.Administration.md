@@ -241,7 +241,7 @@ See an example of getting the assignments relationship.
 Cloud PC service plans.
 
 ### [Get-MgDeviceManagementVirtualEndpointSnapshot](Get-MgDeviceManagementVirtualEndpointSnapshot.md)
-Get snapshots from deviceManagement
+Cloud PC snapshots.
 
 ### [Get-MgDeviceManagementVirtualEndpointSupportedRegion](Get-MgDeviceManagementVirtualEndpointSupportedRegion.md)
 Cloud PC supported regions.
@@ -399,7 +399,7 @@ See an example of getting the assignments relationship.
 Cloud PC service plans.
 
 ### [New-MgDeviceManagementVirtualEndpointSnapshot](New-MgDeviceManagementVirtualEndpointSnapshot.md)
-Create new navigation property to snapshots for deviceManagement
+Cloud PC snapshots.
 
 ### [New-MgDeviceManagementVirtualEndpointSupportedRegion](New-MgDeviceManagementVirtualEndpointSupportedRegion.md)
 Cloud PC supported regions.
@@ -585,7 +585,7 @@ See an example of getting the assignments relationship.
 Cloud PC service plans.
 
 ### [Remove-MgDeviceManagementVirtualEndpointSnapshot](Remove-MgDeviceManagementVirtualEndpointSnapshot.md)
-Delete navigation property snapshots for deviceManagement
+Cloud PC snapshots.
 
 ### [Remove-MgDeviceManagementVirtualEndpointSupportedRegion](Remove-MgDeviceManagementVirtualEndpointSupportedRegion.md)
 Cloud PC supported regions.
@@ -774,7 +774,7 @@ See an example of getting the assignments relationship.
 Cloud PC service plans.
 
 ### [Update-MgDeviceManagementVirtualEndpointSnapshot](Update-MgDeviceManagementVirtualEndpointSnapshot.md)
-Update the navigation property snapshots in deviceManagement
+Cloud PC snapshots.
 
 ### [Update-MgDeviceManagementVirtualEndpointSupportedRegion](Update-MgDeviceManagementVirtualEndpointSupportedRegion.md)
 Cloud PC supported regions.
