@@ -1,43 +1,49 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgcontacttransitivememberofbyref
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgcontactdirectreportbyref
 schema: 2.0.0
 ---
 
-# New-MgContactTransitiveMemberOfByRef
+# New-MgContactDirectReportByRef
 
 ## SYNOPSIS
-Create new navigation property ref to transitiveMemberOf for contacts
+The contact's direct reports.
+(The users and contacts that have their manager property set to this contact.) Read-only.
+Nullable.
+Supports $expand.
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
-New-MgContactTransitiveMemberOfByRef -OrgContactId <String> [-AdditionalProperties <Hashtable>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
-```
-
-### Create1
-```
-New-MgContactTransitiveMemberOfByRef -OrgContactId <String> -BodyParameter <Hashtable> [-Confirm] [-WhatIf]
+New-MgContactDirectReportByRef -OrgContactId <String> [-AdditionalProperties <Hashtable>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### CreateViaIdentity1
+### Create
 ```
-New-MgContactTransitiveMemberOfByRef -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <Hashtable> [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgContactDirectReportByRef -OrgContactId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded1
+### CreateViaIdentityExpanded
 ```
-New-MgContactTransitiveMemberOfByRef -InputObject <IIdentityDirectoryManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgContactDirectReportByRef -InputObject <IIdentityDirectoryManagementIdentity>
+ [-AdditionalProperties <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgContactDirectReportByRef -InputObject <IIdentityDirectoryManagementIdentity> -BodyParameter <Hashtable>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to transitiveMemberOf for contacts
+The contact's direct reports.
+(The users and contacts that have their manager property set to this contact.) Read-only.
+Nullable.
+Supports $expand.
 
 ## EXAMPLES
 
@@ -47,8 +53,8 @@ Create new navigation property ref to transitiveMemberOf for contacts
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: Hashtable
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -62,8 +68,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: Create1, CreateViaIdentity1
+Type: Hashtable
+Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -78,8 +84,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-Parameter Sets: CreateViaIdentity1, CreateViaIdentityExpanded1
+Type: IIdentityDirectoryManagementIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -93,8 +99,8 @@ Accept wildcard characters: False
 key: id of orgContact
 
 ```yaml
-Type: System.String
-Parameter Sets: Create1, CreateExpanded1
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -108,7 +114,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -124,7 +130,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -141,18 +147,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths7T79UmContactsOrgcontactIdTransitivememberofRefPostResponses201ContentApplicationJsonSchema
-
+### Microsoft.Graph.PowerShell.Models.IPathsR1Ojz8ContactsOrgcontactIdDirectreportsRefPostResponses201ContentApplicationJsonSchema
 ## NOTES
 
 ALIASES
-
-### New-MgContactTransitiveMemberByRef
 
 COMPLEX PARAMETER PROPERTIES
 
@@ -194,4 +195,3 @@ INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

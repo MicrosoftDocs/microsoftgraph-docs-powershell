@@ -384,13 +384,13 @@ Get sharedEmailDomains from directory
 Get entity from domains by key
 
 ### [Get-MgDomainDomainNameReferenceByRef](Get-MgDomainDomainNameReferenceByRef.md)
-The collection of the sub-sites under this site.
+Read-only, Nullable
 
 ### [Get-MgDomainFederationConfiguration](Get-MgDomainFederationConfiguration.md)
 Get federationConfiguration from domains
 
 ### [Get-MgDomainNameReference](Get-MgDomainNameReference.md)
-The appManagementPolicy applied to this application.
+Read-only, Nullable
 
 ### [Get-MgDomainServiceConfigurationRecord](Get-MgDomainServiceConfigurationRecord.md)
 DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.

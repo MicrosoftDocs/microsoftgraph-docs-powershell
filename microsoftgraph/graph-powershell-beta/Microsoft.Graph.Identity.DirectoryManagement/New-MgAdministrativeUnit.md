@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgadministrativeunit
 schema: 2.0.0
@@ -17,12 +17,12 @@ Add new entity to administrativeUnits
 New-MgAdministrativeUnit [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-Extensions <IMicrosoftGraphExtension[]>] [-Id <String>]
  [-Members <IMicrosoftGraphDirectoryObject[]>] [-ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership[]>]
- [-Visibility <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Visibility <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgAdministrativeUnit -BodyParameter <IMicrosoftGraphAdministrativeUnit> [-Confirm] [-WhatIf]
+New-MgAdministrativeUnit -BodyParameter <IMicrosoftGraphAdministrativeUnit> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -38,7 +38,6 @@ New-MgDirectoryAdministrativeUnit -DisplayName 'Test Unit'
 DeletedDateTime Id                                   Description DisplayName Visibility
 --------------- --                                   ----------- ----------- ----------
                 416f19a5-2e01-4d15-a78c-d9028fee1ebb             Test Unit
-
 ```
 
 This example creates a new administrative unit.
@@ -49,7 +48,7 @@ This example creates a new administrative unit.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -65,7 +64,7 @@ administrativeUnit
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAdministrativeUnit
+Type: IMicrosoftGraphAdministrativeUnit
 Parameter Sets: Create
 Aliases:
 
@@ -81,7 +80,7 @@ Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -97,7 +96,7 @@ An optional description for the administrative unit.
 Supports $filter (eq, ne, in, startsWith), $search.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -113,7 +112,7 @@ Display name for the administrative unit.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderBy.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -130,7 +129,7 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for EXTENSIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExtension[]
+Type: IMicrosoftGraphExtension[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -145,7 +144,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -162,7 +161,7 @@ Supports $expand.
 To construct, please use Get-Help -Online and see NOTES section for MEMBERS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
+Type: IMicrosoftGraphDirectoryObject[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -178,7 +177,7 @@ Scoped-role members of this administrative unit.
 To construct, please use Get-Help -Online and see NOTES section for SCOPEDROLEMEMBERS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphScopedRoleMembership[]
+Type: IMicrosoftGraphScopedRoleMembership[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -196,7 +195,7 @@ If not set (value is null), the default behavior is public.
 When set to HiddenMembership, only members of the administrative unit can list other members of the administrative unit.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -211,7 +210,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -227,7 +226,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -244,11 +243,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAdministrativeUnit
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAdministrativeUnit
-
 ## NOTES
 
 ALIASES
@@ -296,4 +293,3 @@ SCOPEDROLEMEMBERS <IMicrosoftGraphScopedRoleMembership[]>: Scoped-role members o
     - `[Id <String>]`: Unique identifier for the identity.
 
 ## RELATED LINKS
-
