@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgtargetuserinsightsharedresourcemicrosoftgraphtargetedmanagedappprotectionapp
 schema: 2.0.0
@@ -14,24 +14,17 @@ Invoke action targetApps
 
 ### TargetExpanded (Default)
 ```
-Invoke-MgTargetUserInsightSharedResourceMicrosoftGraphTargetedManagedAppProtectionApp -SharedInsightId <String>
- -UserId <String> [-AdditionalProperties <Hashtable>] [-AppGroupType <String>]
- [-Apps <IMicrosoftGraphManagedMobileApp[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgTargetUserInsightSharedResourceMicrosoftGraphTargetedManagedAppProtectionApp
+ -SharedInsightId <String> -UserId <String> [-AdditionalProperties <Hashtable>] [-AppGroupType <String>]
+ [-Apps <IMicrosoftGraphManagedMobileApp[]>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Target
 ```
-Invoke-MgTargetUserInsightSharedResourceMicrosoftGraphTargetedManagedAppProtectionApp -SharedInsightId <String>
- -UserId <String>
- -BodyParameter <IPaths1Sebqo5UsersUserIdInsightsSharedSharedinsightIdResourceMicrosoftGraphTargetedmanagedappprotectionMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### TargetViaIdentityExpanded
-```
 Invoke-MgTargetUserInsightSharedResourceMicrosoftGraphTargetedManagedAppProtectionApp
- -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>] [-AppGroupType <String>]
- [-Apps <IMicrosoftGraphManagedMobileApp[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -SharedInsightId <String> -UserId <String>
+ -BodyParameter <IPaths1Sebqo5UsersUserIdInsightsSharedSharedinsightIdResourceMicrosoftGraphTargetedmanagedappprotectionMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### TargetViaIdentity
@@ -39,7 +32,14 @@ Invoke-MgTargetUserInsightSharedResourceMicrosoftGraphTargetedManagedAppProtecti
 Invoke-MgTargetUserInsightSharedResourceMicrosoftGraphTargetedManagedAppProtectionApp
  -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths1Sebqo5UsersUserIdInsightsSharedSharedinsightIdResourceMicrosoftGraphTargetedmanagedappprotectionMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### TargetViaIdentityExpanded
+```
+Invoke-MgTargetUserInsightSharedResourceMicrosoftGraphTargetedManagedAppProtectionApp
+ -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>] [-AppGroupType <String>]
+ [-Apps <IMicrosoftGraphManagedMobileApp[]>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,7 +53,7 @@ Invoke action targetApps
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: TargetExpanded, TargetViaIdentityExpanded
 Aliases:
 
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 Indicates a collection of apps to target which can be one of several pre-defined lists of apps or a manually selected list of apps
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: TargetExpanded, TargetViaIdentityExpanded
 Aliases:
 
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for APPS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedMobileApp[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedMobileApp[]
 Parameter Sets: TargetExpanded, TargetViaIdentityExpanded
 Aliases:
 
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Sebqo5UsersUserIdInsightsSharedSharedinsightIdResourceMicrosoftGraphTargetedmanagedappprotectionMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths1Sebqo5UsersUserIdInsightsSharedSharedinsightIdResourceMicrosoftGraphTargetedmanagedappprotectionMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Target, TargetViaIdentity
 Aliases:
 
@@ -116,8 +116,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: TargetViaIdentityExpanded, TargetViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: TargetViaIdentity, TargetViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -146,8 +146,8 @@ Accept wildcard characters: False
 key: id of sharedInsight
 
 ```yaml
-Type: String
-Parameter Sets: TargetExpanded, Target
+Type: System.String
+Parameter Sets: Target, TargetExpanded
 Aliases:
 
 Required: True
@@ -161,8 +161,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: TargetExpanded, Target
+Type: System.String
+Parameter Sets: Target, TargetExpanded
 Aliases:
 
 Required: True
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -192,7 +192,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -209,10 +209,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1Sebqo5UsersUserIdInsightsSharedSharedinsightIdResourceMicrosoftGraphTargetedmanagedappprotectionMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -240,11 +243,13 @@ BODYPARAMETER <IPaths1Sebqo5UsersUserIdInsightsSharedSharedinsightIdResourceMicr
 INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceDecisionItemId <String>]`: key: id of accessReviewInstanceDecisionItem
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
+  - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
   - `[AuthenticationMethodId <String>]`: key: id of authenticationMethod
   - `[BaseTaskId <String>]`: key: id of baseTask
   - `[BaseTaskListId <String>]`: key: id of baseTaskList
   - `[CalendarId <String>]`: key: id of calendar
+  - `[CloudPcId <String>]`: key: id of cloudPC
   - `[DeviceEnrollmentConfigurationId <String>]`: key: id of deviceEnrollmentConfiguration
   - `[DeviceLogCollectionResponseId <String>]`: key: id of deviceLogCollectionResponse
   - `[EventId <String>]`: key: id of event
@@ -266,3 +271,4 @@ INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+
