@@ -316,7 +316,7 @@ Read-only.
 Nullable.
 
 ### [New-MgUserOnenoteSectionGroup](New-MgUserOnenoteSectionGroup.md)
-The section groups in the section.
+The section groups in all OneNote notebooks that are owned by the user or group.
 Read-only.
 Nullable.
 
