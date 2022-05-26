@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/invoke-mgfilteruserpendingaccessreviewinstancestage
 schema: 2.0.0
@@ -20,8 +20,7 @@ Invoke-MgFilterUserPendingAccessReviewInstanceStage -AccessReviewInstanceId <Str
 
 ### FilterViaIdentity
 ```
-Invoke-MgFilterUserPendingAccessReviewInstanceStage -InputObject <IUsersFunctionsIdentity>
- [<CommonParameters>]
+Invoke-MgFilterUserPendingAccessReviewInstanceStage -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -35,7 +34,7 @@ Invoke function filterByCurrentUser
 key: id of accessReviewInstance
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Filter
 Aliases:
 
@@ -51,7 +50,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
+Type: IUsersFunctionsIdentity
 Parameter Sets: FilterViaIdentity
 Aliases:
 
@@ -66,7 +65,7 @@ Accept wildcard characters: False
 Usage: on={on}
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Filter
 Aliases:
 
@@ -81,7 +80,7 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Filter
 Aliases:
 
@@ -98,11 +97,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessReviewStage
-
 ## NOTES
 
 ALIASES
@@ -149,4 +146,3 @@ INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   - `[ValuesOnly <Boolean?>]`: Usage: valuesOnly={valuesOnly}
 
 ## RELATED LINKS
-
