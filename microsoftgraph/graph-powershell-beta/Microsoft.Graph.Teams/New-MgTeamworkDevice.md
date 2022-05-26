@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgteamworkdevice
 schema: 2.0.0
@@ -21,12 +21,12 @@ New-MgTeamworkDevice [-Activity <IMicrosoftGraphTeamworkDeviceActivity>] [-Activ
  [-HardwareDetail <IMicrosoftGraphTeamworkHardwareDetail>] [-Health <IMicrosoftGraphTeamworkDeviceHealth>]
  [-HealthStatus <String>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedDateTime <DateTime>] [-Notes <String>] [-Operations <IMicrosoftGraphTeamworkDeviceOperation[]>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgTeamworkDevice -BodyParameter <IMicrosoftGraphTeamworkDevice> [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgTeamworkDevice -BodyParameter <IMicrosoftGraphTeamworkDevice> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -41,7 +41,7 @@ teamworkDeviceActivity
 To construct, please use Get-Help -Online and see NOTES section for ACTIVITY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkDeviceActivity
+Type: IMicrosoftGraphTeamworkDeviceActivity
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -56,7 +56,7 @@ Accept wildcard characters: False
 teamworkDeviceActivityState
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -87,7 +87,7 @@ teamworkDevice
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkDevice
+Type: IMicrosoftGraphTeamworkDevice
 Parameter Sets: Create
 Aliases:
 
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 The company asset tag assigned by the admin on the device.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -118,7 +118,7 @@ teamworkDeviceConfiguration
 To construct, please use Get-Help -Online and see NOTES section for CONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkDeviceConfiguration
+Type: IMicrosoftGraphTeamworkDeviceConfiguration
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -134,7 +134,7 @@ identitySet
 To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
+Type: IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 The UTC date and time when the device was enrolled to the tenant.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -165,7 +165,7 @@ teamworkUserIdentity
 To construct, please use Get-Help -Online and see NOTES section for CURRENTUSER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkUserIdentity
+Type: IMicrosoftGraphTeamworkUserIdentity
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 teamworkDeviceType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -196,7 +196,7 @@ teamworkHardwareDetail
 To construct, please use Get-Help -Online and see NOTES section for HARDWAREDETAIL properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkHardwareDetail
+Type: IMicrosoftGraphTeamworkHardwareDetail
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -212,7 +212,7 @@ teamworkDeviceHealth
 To construct, please use Get-Help -Online and see NOTES section for HEALTH properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkDeviceHealth
+Type: IMicrosoftGraphTeamworkDeviceHealth
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 teamworkDeviceHealthStatus
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -242,7 +242,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -258,7 +258,7 @@ identitySet
 To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
+Type: IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -273,7 +273,7 @@ Accept wildcard characters: False
 The UTC date and time when the device detail was last modified.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -288,7 +288,7 @@ Accept wildcard characters: False
 The notes added by the admin to the device.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -304,7 +304,7 @@ The async operations on the device.
 To construct, please use Get-Help -Online and see NOTES section for OPERATIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkDeviceOperation[]
+Type: IMicrosoftGraphTeamworkDeviceOperation[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -319,7 +319,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -335,7 +335,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -352,11 +352,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkDevice
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkDevice
-
 ## NOTES
 
 ALIASES
@@ -831,3 +829,4 @@ OPERATIONS <IMicrosoftGraphTeamworkDeviceOperation[]>: The async operations on t
 
 ## RELATED LINKS
 
+## RELATED LINKS
