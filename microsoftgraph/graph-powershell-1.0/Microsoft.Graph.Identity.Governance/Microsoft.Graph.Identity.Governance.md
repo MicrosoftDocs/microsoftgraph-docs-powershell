@@ -39,8 +39,7 @@ Represents access package objects.
 Invoke action getApplicablePolicyRequirements
 
 ### [Get-MgEntitlementManagementAccessPackageAssignmentApprovalStage](Get-MgEntitlementManagementAccessPackageAssignmentApprovalStage.md)
-Used for the approvalStages property of approval settings in the requestApprovalSettings property of an access package assignment policy.
-Specifies the primary, fallback, and escalation approvers of each stage.
+A collection of stages in the approval decision.
 
 ### [Get-MgEntitlementManagementAccessPackageAssignmentPolicy](Get-MgEntitlementManagementAccessPackageAssignmentPolicy.md)
 Get assignmentPolicies from identityGovernance
@@ -134,8 +133,9 @@ Information about acceptances of this agreement.
 
 ### [New-MgAgreementFile](New-MgAgreementFile.md)
 PDFs linked to this agreement.
-Note: This property is in the process of being deprecated.
+This property is in the process of being deprecated.
 Use the  file property instead.
+Supports $expand.
 
 ### [New-MgAgreementFileLocalization](New-MgAgreementFileLocalization.md)
 The localized version of the terms of use agreement files attached to the agreement.
@@ -152,8 +152,7 @@ Customized versions of the terms of use agreement in the Azure AD tenant.
 Represents access package objects.
 
 ### [New-MgEntitlementManagementAccessPackageAssignmentApprovalStage](New-MgEntitlementManagementAccessPackageAssignmentApprovalStage.md)
-Used for the approvalStages property of approval settings in the requestApprovalSettings property of an access package assignment policy.
-Specifies the primary, fallback, and escalation approvers of each stage.
+A collection of stages in the approval decision.
 
 ### [New-MgEntitlementManagementAccessPackageAssignmentPolicy](New-MgEntitlementManagementAccessPackageAssignmentPolicy.md)
 Create new navigation property to assignmentPolicies for identityGovernance
@@ -198,9 +197,7 @@ Read-only.
 Information about acceptances of this agreement.
 
 ### [Remove-MgAgreementFile](Remove-MgAgreementFile.md)
-PDFs linked to this agreement.
-Note: This property is in the process of being deprecated.
-Use the  file property instead.
+Default PDF linked to this agreement.
 
 ### [Remove-MgAgreementFileLocalization](Remove-MgAgreementFileLocalization.md)
 The localized version of the terms of use agreement files attached to the agreement.
@@ -217,11 +214,10 @@ Customized versions of the terms of use agreement in the Azure AD tenant.
 Represents access package objects.
 
 ### [Remove-MgEntitlementManagementAccessPackageAssignmentApproval](Remove-MgEntitlementManagementAccessPackageAssignmentApproval.md)
-Delete navigation property accessPackageAssignmentApprovals for identityGovernance
+Approval stages for assignment requests.
 
 ### [Remove-MgEntitlementManagementAccessPackageAssignmentApprovalStage](Remove-MgEntitlementManagementAccessPackageAssignmentApprovalStage.md)
-Used for the approvalStages property of approval settings in the requestApprovalSettings property of an access package assignment policy.
-Specifies the primary, fallback, and escalation approvers of each stage.
+A collection of stages in the approval decision.
 
 ### [Remove-MgEntitlementManagementAccessPackageAssignmentPolicy](Remove-MgEntitlementManagementAccessPackageAssignmentPolicy.md)
 Delete navigation property assignmentPolicies for identityGovernance
@@ -305,11 +301,10 @@ Customized versions of the terms of use agreement in the Azure AD tenant.
 Represents access package objects.
 
 ### [Update-MgEntitlementManagementAccessPackageAssignmentApproval](Update-MgEntitlementManagementAccessPackageAssignmentApproval.md)
-Update the navigation property accessPackageAssignmentApprovals in identityGovernance
+Approval stages for assignment requests.
 
 ### [Update-MgEntitlementManagementAccessPackageAssignmentApprovalStage](Update-MgEntitlementManagementAccessPackageAssignmentApprovalStage.md)
-Used for the approvalStages property of approval settings in the requestApprovalSettings property of an access package assignment policy.
-Specifies the primary, fallback, and escalation approvers of each stage.
+A collection of stages in the approval decision.
 
 ### [Update-MgEntitlementManagementAccessPackageAssignmentPolicy](Update-MgEntitlementManagementAccessPackageAssignmentPolicy.md)
 Update the navigation property assignmentPolicies in identityGovernance
