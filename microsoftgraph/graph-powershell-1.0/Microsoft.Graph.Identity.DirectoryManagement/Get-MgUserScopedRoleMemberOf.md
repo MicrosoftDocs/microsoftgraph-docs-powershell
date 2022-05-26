@@ -1,44 +1,57 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mguserscopedrolememberof
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgsubscribedsku
 schema: 2.0.0
 ---
 
-# Get-MgUserScopedRoleMemberOf
+# Get-MgSubscribedSku
 
 ## SYNOPSIS
-The scoped-role administrative unit memberships for this user.
-Read-only.
-Nullable.
+Get entity from subscribedSkus by key
 
 ## SYNTAX
 
 ### List1 (Default)
 ```
-Get-MgUserScopedRoleMemberOf -UserId <String> [-ExpandProperty <String[]>] [-Filter <String>]
- [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-All]
- [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
+Get-MgSubscribedSku [-Property <String[]>] [-Search <String>] [-Sort <String[]>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get1
 ```
-Get-MgUserScopedRoleMemberOf -ScopedRoleMembershipId <String> -UserId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgSubscribedSku -SubscribedSkuId <String> [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
-Get-MgUserScopedRoleMemberOf -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgSubscribedSku -InputObject <IIdentityDirectoryManagementIdentity> [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The scoped-role administrative unit memberships for this user.
-Read-only.
-Nullable.
+Get entity from subscribedSkus by key
 
 ## EXAMPLES
+
+### Example 1: Get subscribed SKUs
+```powershell
+Get-MgSubscribedSKU | Format-List
+
+AppliesTo            : User
+CapabilityStatus     : Enabled
+ConsumedUnits        : 23
+Id                   : fb625e04-52aa-42da-b10d-14f1195d665f_cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46
+PrepaidUnits         : Microsoft.Graph.PowerShell.Models.MicrosoftGraphLicenseUnitsDetail
+ServicePlans         : {M365_LIGHTHOUSE_PARTNER_PLAN1, WINDOWSUPDATEFORBUSINESS_DEPLOYMENTSERVICE, UNIVERSAL_PRINT_01,
+                       M365_LIGHTHOUSE_CUSTOMER_PLAN1...}
+SkuId                : cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46
+SkuPartNumber        : SPB
+AdditionalProperties : {[@odata.id, https://graph.microsoft.com/v2/fb625e04-52aa-42da-b10d-14f1195d665f/subscribedSkus/fb625e04-52a
+                       a-42da-b10d-14f1195d665f_cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46]}
+```
+
+This command gets the information about the service SKU that the company has subscribed to.
 
 ## PARAMETERS
 
@@ -46,7 +59,7 @@ Nullable.
 List all pages.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: List1
 Aliases:
 
@@ -62,39 +75,9 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: List1
 Aliases: CV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ExpandProperty
-Expand related entities
-
-```yaml
-Type: System.String[]
-Parameter Sets: (All)
-Aliases: Expand
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Filter
-Filter items by property values
-
-```yaml
-Type: System.String
-Parameter Sets: List1
-Aliases:
 
 Required: False
 Position: Named
@@ -108,7 +91,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+Type: IIdentityDirectoryManagementIdentity
 Parameter Sets: GetViaIdentity1
 Aliases:
 
@@ -123,7 +106,7 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: List1
 Aliases:
 
@@ -138,7 +121,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -149,41 +132,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ScopedRoleMembershipId
-key: id of scopedRoleMembership
-
-```yaml
-Type: System.String
-Parameter Sets: Get1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Search
 Search items by search phrases
 
 ```yaml
-Type: System.String
-Parameter Sets: List1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: System.Int32
+Type: String
 Parameter Sets: List1
 Aliases:
 
@@ -198,7 +151,7 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: List1
 Aliases: OrderBy
 
@@ -209,27 +162,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Top
-Show only the first n items
+### -SubscribedSkuId
+key: id of subscribedSku
 
 ```yaml
-Type: System.Int32
-Parameter Sets: List1
-Aliases: Limit
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -UserId
-key: id of user
-
-```yaml
-Type: System.String
-Parameter Sets: Get1, List1
+Type: String
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -245,16 +183,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphScopedRoleMembership
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSubscribedSku
 ## NOTES
 
 ALIASES
-
-### Get-MgUserScopedRoleMember
 
 COMPLEX PARAMETER PROPERTIES
 
@@ -296,4 +230,3 @@ INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

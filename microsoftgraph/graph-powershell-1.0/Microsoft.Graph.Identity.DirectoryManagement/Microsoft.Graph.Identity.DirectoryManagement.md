@@ -257,10 +257,10 @@ Invoke action getMemberObjects
 Get entity from domains by key
 
 ### [Get-MgDomainDomainNameReferenceByRef](Get-MgDomainDomainNameReferenceByRef.md)
-Get ref of alerts from security
+Read-only, Nullable
 
 ### [Get-MgDomainNameReference](Get-MgDomainNameReference.md)
-Get alerts from security
+Read-only, Nullable
 
 ### [Get-MgDomainServiceConfigurationRecord](Get-MgDomainServiceConfigurationRecord.md)
 DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.
