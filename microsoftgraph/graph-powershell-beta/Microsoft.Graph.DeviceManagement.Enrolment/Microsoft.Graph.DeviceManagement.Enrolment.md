@@ -124,7 +124,7 @@ Get cloudPC from roleManagement
 Get resourceNamespaces from roleManagement
 
 ### [Get-MgRoleManagementCloudPcResourceNamespaceResourceAction](Get-MgRoleManagementCloudPcResourceNamespaceResourceAction.md)
-Get resourceActions from roleManagement
+Operations that an authorized principal are allowed to perform.
 
 ### [Get-MgRoleManagementCloudPcResourceNamespaceResourceActionResourceScope](Get-MgRoleManagementCloudPcResourceNamespaceResourceActionResourceScope.md)
 Get resourceScope from roleManagement
@@ -186,7 +186,7 @@ The RbacApplication for Device Management
 Get resourceNamespaces from roleManagement
 
 ### [Get-MgRoleManagementDeviceManagementResourceNamespaceResourceAction](Get-MgRoleManagementDeviceManagementResourceNamespaceResourceAction.md)
-Get resourceActions from roleManagement
+Operations that an authorized principal are allowed to perform.
 
 ### [Get-MgRoleManagementDeviceManagementResourceNamespaceResourceActionResourceScope](Get-MgRoleManagementDeviceManagementResourceNamespaceResourceActionResourceScope.md)
 Get resourceScope from roleManagement
@@ -249,7 +249,7 @@ Nullable.
 Get resourceNamespaces from roleManagement
 
 ### [Get-MgRoleManagementDirectoryResourceNamespaceResourceAction](Get-MgRoleManagementDirectoryResourceNamespaceResourceAction.md)
-Get resourceActions from roleManagement
+Operations that an authorized principal are allowed to perform.
 
 ### [Get-MgRoleManagementDirectoryResourceNamespaceResourceActionResourceScope](Get-MgRoleManagementDirectoryResourceNamespaceResourceActionResourceScope.md)
 Get resourceScope from roleManagement
@@ -469,13 +469,13 @@ Supports $expand.
 roleDefinition.Id will be auto expanded.
 
 ### [Get-MgRoleManagementEntitlementManagement](Get-MgRoleManagementEntitlementManagement.md)
-Container for all entitlement management resources in Azure AD identity governance.
+Container for roles and assignments for entitlement management resources.
 
 ### [Get-MgRoleManagementEntitlementManagementResourceNamespace](Get-MgRoleManagementEntitlementManagementResourceNamespace.md)
 Get resourceNamespaces from roleManagement
 
 ### [Get-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction](Get-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction.md)
-Get resourceActions from roleManagement
+Operations that an authorized principal are allowed to perform.
 
 ### [Get-MgRoleManagementEntitlementManagementResourceNamespaceResourceActionResourceScope](Get-MgRoleManagementEntitlementManagementResourceNamespaceResourceActionResourceScope.md)
 Get resourceScope from roleManagement
@@ -824,7 +824,7 @@ The list of group assignments of the profile.
 Create new navigation property to resourceNamespaces for roleManagement
 
 ### [New-MgRoleManagementCloudPcResourceNamespaceResourceAction](New-MgRoleManagementCloudPcResourceNamespaceResourceAction.md)
-Create new navigation property to resourceActions for roleManagement
+Operations that an authorized principal are allowed to perform.
 
 ### [New-MgRoleManagementCloudPcRoleAssignment](New-MgRoleManagementCloudPcRoleAssignment.md)
 Create new navigation property to roleAssignments for roleManagement
@@ -858,7 +858,7 @@ Supports $expand.
 Create new navigation property to resourceNamespaces for roleManagement
 
 ### [New-MgRoleManagementDeviceManagementResourceNamespaceResourceAction](New-MgRoleManagementDeviceManagementResourceNamespaceResourceAction.md)
-Create new navigation property to resourceActions for roleManagement
+Operations that an authorized principal are allowed to perform.
 
 ### [New-MgRoleManagementDeviceManagementRoleAssignment](New-MgRoleManagementDeviceManagementRoleAssignment.md)
 Create new navigation property to roleAssignments for roleManagement
@@ -892,7 +892,7 @@ Supports $expand.
 Create new navigation property to resourceNamespaces for roleManagement
 
 ### [New-MgRoleManagementDirectoryResourceNamespaceResourceAction](New-MgRoleManagementDirectoryResourceNamespaceResourceAction.md)
-Create new navigation property to resourceActions for roleManagement
+Operations that an authorized principal are allowed to perform.
 
 ### [New-MgRoleManagementDirectoryRoleAssignment](New-MgRoleManagementDirectoryRoleAssignment.md)
 Resource to grant access to users or groups.
@@ -936,7 +936,7 @@ Create new navigation property to transitiveRoleAssignments for roleManagement
 Create new navigation property to resourceNamespaces for roleManagement
 
 ### [New-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction](New-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction.md)
-Create new navigation property to resourceActions for roleManagement
+Operations that an authorized principal are allowed to perform.
 
 ### [New-MgRoleManagementEntitlementManagementRoleAssignment](New-MgRoleManagementEntitlementManagementRoleAssignment.md)
 Resource to grant access to users or groups.
@@ -1068,7 +1068,7 @@ Delete navigation property cloudPC for roleManagement
 Delete navigation property resourceNamespaces for roleManagement
 
 ### [Remove-MgRoleManagementCloudPcResourceNamespaceResourceAction](Remove-MgRoleManagementCloudPcResourceNamespaceResourceAction.md)
-Delete navigation property resourceActions for roleManagement
+Operations that an authorized principal are allowed to perform.
 
 ### [Remove-MgRoleManagementCloudPcResourceNamespaceResourceActionResourceScope](Remove-MgRoleManagementCloudPcResourceNamespaceResourceActionResourceScope.md)
 Delete navigation property resourceScope for roleManagement
@@ -1101,7 +1101,7 @@ The RbacApplication for Device Management
 Delete navigation property resourceNamespaces for roleManagement
 
 ### [Remove-MgRoleManagementDeviceManagementResourceNamespaceResourceAction](Remove-MgRoleManagementDeviceManagementResourceNamespaceResourceAction.md)
-Delete navigation property resourceActions for roleManagement
+Operations that an authorized principal are allowed to perform.
 
 ### [Remove-MgRoleManagementDeviceManagementResourceNamespaceResourceActionResourceScope](Remove-MgRoleManagementDeviceManagementResourceNamespaceResourceActionResourceScope.md)
 Delete navigation property resourceScope for roleManagement
@@ -1135,7 +1135,7 @@ Nullable.
 Delete navigation property resourceNamespaces for roleManagement
 
 ### [Remove-MgRoleManagementDirectoryResourceNamespaceResourceAction](Remove-MgRoleManagementDirectoryResourceNamespaceResourceAction.md)
-Delete navigation property resourceActions for roleManagement
+Operations that an authorized principal are allowed to perform.
 
 ### [Remove-MgRoleManagementDirectoryResourceNamespaceResourceActionResourceScope](Remove-MgRoleManagementDirectoryResourceNamespaceResourceActionResourceScope.md)
 Delete navigation property resourceScope for roleManagement
@@ -1272,13 +1272,13 @@ Supports $expand.
 roleDefinition.Id will be auto expanded.
 
 ### [Remove-MgRoleManagementEntitlementManagement](Remove-MgRoleManagementEntitlementManagement.md)
-Container for all entitlement management resources in Azure AD identity governance.
+Container for roles and assignments for entitlement management resources.
 
 ### [Remove-MgRoleManagementEntitlementManagementResourceNamespace](Remove-MgRoleManagementEntitlementManagementResourceNamespace.md)
 Delete navigation property resourceNamespaces for roleManagement
 
 ### [Remove-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction](Remove-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction.md)
-Delete navigation property resourceActions for roleManagement
+Operations that an authorized principal are allowed to perform.
 
 ### [Remove-MgRoleManagementEntitlementManagementResourceNamespaceResourceActionResourceScope](Remove-MgRoleManagementEntitlementManagementResourceNamespaceResourceActionResourceScope.md)
 Delete navigation property resourceScope for roleManagement
@@ -1694,7 +1694,7 @@ Update the navigation property cloudPC in roleManagement
 Update the navigation property resourceNamespaces in roleManagement
 
 ### [Update-MgRoleManagementCloudPcResourceNamespaceResourceAction](Update-MgRoleManagementCloudPcResourceNamespaceResourceAction.md)
-Update the navigation property resourceActions in roleManagement
+Operations that an authorized principal are allowed to perform.
 
 ### [Update-MgRoleManagementCloudPcResourceNamespaceResourceActionResourceScope](Update-MgRoleManagementCloudPcResourceNamespaceResourceActionResourceScope.md)
 Update the navigation property resourceScope in roleManagement
@@ -1722,7 +1722,7 @@ The RbacApplication for Device Management
 Update the navigation property resourceNamespaces in roleManagement
 
 ### [Update-MgRoleManagementDeviceManagementResourceNamespaceResourceAction](Update-MgRoleManagementDeviceManagementResourceNamespaceResourceAction.md)
-Update the navigation property resourceActions in roleManagement
+Operations that an authorized principal are allowed to perform.
 
 ### [Update-MgRoleManagementDeviceManagementResourceNamespaceResourceActionResourceScope](Update-MgRoleManagementDeviceManagementResourceNamespaceResourceActionResourceScope.md)
 Update the navigation property resourceScope in roleManagement
@@ -1751,7 +1751,7 @@ Nullable.
 Update the navigation property resourceNamespaces in roleManagement
 
 ### [Update-MgRoleManagementDirectoryResourceNamespaceResourceAction](Update-MgRoleManagementDirectoryResourceNamespaceResourceAction.md)
-Update the navigation property resourceActions in roleManagement
+Operations that an authorized principal are allowed to perform.
 
 ### [Update-MgRoleManagementDirectoryResourceNamespaceResourceActionResourceScope](Update-MgRoleManagementDirectoryResourceNamespaceResourceActionResourceScope.md)
 Update the navigation property resourceScope in roleManagement
@@ -1805,13 +1805,13 @@ Containment entity.
 Supports $expand.
 
 ### [Update-MgRoleManagementEntitlementManagement](Update-MgRoleManagementEntitlementManagement.md)
-Container for all entitlement management resources in Azure AD identity governance.
+Container for roles and assignments for entitlement management resources.
 
 ### [Update-MgRoleManagementEntitlementManagementResourceNamespace](Update-MgRoleManagementEntitlementManagementResourceNamespace.md)
 Update the navigation property resourceNamespaces in roleManagement
 
 ### [Update-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction](Update-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction.md)
-Update the navigation property resourceActions in roleManagement
+Operations that an authorized principal are allowed to perform.
 
 ### [Update-MgRoleManagementEntitlementManagementResourceNamespaceResourceActionResourceScope](Update-MgRoleManagementEntitlementManagementResourceNamespaceResourceActionResourceScope.md)
 Update the navigation property resourceScope in roleManagement
