@@ -110,20 +110,23 @@ The policy that controls the lifetime of a JWT access token, an ID token, or a S
 Get fido2Methods from users
 
 ### [Get-MgUserAuthenticationMethod](Get-MgUserAuthenticationMethod.md)
-Get methods from users
+Represents all authentication methods registered to a user.
 
 ### [Get-MgUserAuthenticationMicrosoftAuthenticatorMethod](Get-MgUserAuthenticationMicrosoftAuthenticatorMethod.md)
-Get microsoftAuthenticatorMethods from users
+The details of the Microsoft Authenticator app registered to a user for authentication.
 
 ### [Get-MgUserAuthenticationMicrosoftAuthenticatorMethodDevice](Get-MgUserAuthenticationMicrosoftAuthenticatorMethodDevice.md)
 The registered device on which Microsoft Authenticator resides.
 This property is null if the device is not registered for passwordless Phone Sign-In.
 
 ### [Get-MgUserAuthenticationWindowHello](Get-MgUserAuthenticationWindowHello.md)
-Get windowsHelloForBusinessMethods from users
+Represents the Windows Hello for Business authentication method registered to a user for authentication.
 
 ### [Get-MgUserAuthenticationWindowHelloForBusinessMethodDevice](Get-MgUserAuthenticationWindowHelloForBusinessMethodDevice.md)
 The registered device on which this Windows Hello for Business key resides.
+Supports $expand.
+When you get a user's Windows Hello for Business registration information, this property is returned only on a single GET and when you specify ?$expand.
+For example, GET /users/admin@contoso.com/authentication/windowsHelloForBusinessMethods/_jpuR-TGZtk6aQCLF3BQjA2?$expand=device.
 
 ### [Invoke-MgAvailableIdentityProviderType](Invoke-MgAvailableIdentityProviderType.md)
 Invoke function availableProviderTypes
@@ -202,13 +205,13 @@ The policy that controls the lifetime of a JWT access token, an ID token, or a S
 Create new navigation property to fido2Methods for users
 
 ### [New-MgUserAuthenticationMethod](New-MgUserAuthenticationMethod.md)
-Create new navigation property to methods for users
+Represents all authentication methods registered to a user.
 
 ### [New-MgUserAuthenticationMicrosoftAuthenticatorMethod](New-MgUserAuthenticationMicrosoftAuthenticatorMethod.md)
-Create new navigation property to microsoftAuthenticatorMethods for users
+The details of the Microsoft Authenticator app registered to a user for authentication.
 
 ### [New-MgUserAuthenticationWindowHello](New-MgUserAuthenticationWindowHello.md)
-Create new navigation property to windowsHelloForBusinessMethods for users
+Represents the Windows Hello for Business authentication method registered to a user for authentication.
 
 ### [Remove-MgDataPolicyOperation](Remove-MgDataPolicyOperation.md)
 Delete entity from dataPolicyOperations
@@ -295,20 +298,23 @@ The policy that controls the lifetime of a JWT access token, an ID token, or a S
 Delete navigation property fido2Methods for users
 
 ### [Remove-MgUserAuthenticationMethod](Remove-MgUserAuthenticationMethod.md)
-Delete navigation property methods for users
+Represents all authentication methods registered to a user.
 
 ### [Remove-MgUserAuthenticationMicrosoftAuthenticatorMethod](Remove-MgUserAuthenticationMicrosoftAuthenticatorMethod.md)
-Delete navigation property microsoftAuthenticatorMethods for users
+The details of the Microsoft Authenticator app registered to a user for authentication.
 
 ### [Remove-MgUserAuthenticationMicrosoftAuthenticatorMethodDevice](Remove-MgUserAuthenticationMicrosoftAuthenticatorMethodDevice.md)
 The registered device on which Microsoft Authenticator resides.
 This property is null if the device is not registered for passwordless Phone Sign-In.
 
 ### [Remove-MgUserAuthenticationWindowHello](Remove-MgUserAuthenticationWindowHello.md)
-Delete navigation property windowsHelloForBusinessMethods for users
+Represents the Windows Hello for Business authentication method registered to a user for authentication.
 
 ### [Remove-MgUserAuthenticationWindowHelloForBusinessMethodDevice](Remove-MgUserAuthenticationWindowHelloForBusinessMethodDevice.md)
 The registered device on which this Windows Hello for Business key resides.
+Supports $expand.
+When you get a user's Windows Hello for Business registration information, this property is returned only on a single GET and when you specify ?$expand.
+For example, GET /users/admin@contoso.com/authentication/windowsHelloForBusinessMethods/_jpuR-TGZtk6aQCLF3BQjA2?$expand=device.
 
 ### [Update-MgDataPolicyOperation](Update-MgDataPolicyOperation.md)
 Update entity in dataPolicyOperations
@@ -398,18 +404,21 @@ The policy that controls the lifetime of a JWT access token, an ID token, or a S
 Update the navigation property fido2Methods in users
 
 ### [Update-MgUserAuthenticationMethod](Update-MgUserAuthenticationMethod.md)
-Update the navigation property methods in users
+Represents all authentication methods registered to a user.
 
 ### [Update-MgUserAuthenticationMicrosoftAuthenticatorMethod](Update-MgUserAuthenticationMicrosoftAuthenticatorMethod.md)
-Update the navigation property microsoftAuthenticatorMethods in users
+The details of the Microsoft Authenticator app registered to a user for authentication.
 
 ### [Update-MgUserAuthenticationMicrosoftAuthenticatorMethodDevice](Update-MgUserAuthenticationMicrosoftAuthenticatorMethodDevice.md)
 The registered device on which Microsoft Authenticator resides.
 This property is null if the device is not registered for passwordless Phone Sign-In.
 
 ### [Update-MgUserAuthenticationWindowHello](Update-MgUserAuthenticationWindowHello.md)
-Update the navigation property windowsHelloForBusinessMethods in users
+Represents the Windows Hello for Business authentication method registered to a user for authentication.
 
 ### [Update-MgUserAuthenticationWindowHelloForBusinessMethodDevice](Update-MgUserAuthenticationWindowHelloForBusinessMethodDevice.md)
 The registered device on which this Windows Hello for Business key resides.
+Supports $expand.
+When you get a user's Windows Hello for Business registration information, this property is returned only on a single GET and when you specify ?$expand.
+For example, GET /users/admin@contoso.com/authentication/windowsHelloForBusinessMethods/_jpuR-TGZtk6aQCLF3BQjA2?$expand=device.
 
