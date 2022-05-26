@@ -120,10 +120,11 @@ Read-only.
 Nullable.
 
 ### [Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceRole](Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceRole.md)
-Get accessPackageResourceRoles from identityGovernance
+The roles in each resource in a catalog.
+Read-only.
 
 ### [Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceScope](Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceScope.md)
-Get accessPackageResourceScopes from identityGovernance
+Read-only.
 
 ### [Get-MgEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension](Get-MgEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension.md)
 Get customAccessPackageWorkflowExtensions from identityGovernance
@@ -149,7 +150,7 @@ A reference to a resource associated with an access package catalog.
 
 ### [Get-MgEntitlementManagementAccessPackageResourceAccessPackageResourceEnvironmentByRef](Get-MgEntitlementManagementAccessPackageResourceAccessPackageResourceEnvironmentByRef.md)
 Contains the environment information for the resource.
-This can be set using either the @odata.bind annotation or the environment's originId.
+This can be set using either the @odata.bind annotation or the environment's originId.Supports $expand.
 
 ### [Get-MgEntitlementManagementAccessPackageResourceEnvironment](Get-MgEntitlementManagementAccessPackageResourceEnvironment.md)
 A reference to the geolocation environment in which a resource is located.
@@ -194,7 +195,7 @@ Supports $select.
 Read-only.
 
 ### [Get-MgIdentityGovernanceAccessReviewDecisionInstanceDecision](Get-MgIdentityGovernanceAccessReviewDecisionInstanceDecision.md)
-Each user reviewed in an accessReviewInstance has a decision item representing if they were approved, denied, or not yet reviewed.
+Each principal reviewed in an accessReviewInstance has a decision item representing if they were approved, denied, or not yet reviewed.
 
 ### [Get-MgIdentityGovernanceAccessReviewDecisionInstanceDefinition](Get-MgIdentityGovernanceAccessReviewDecisionInstanceDefinition.md)
 There is exactly one accessReviewScheduleDefinition associated with each instance.
@@ -386,8 +387,9 @@ Information about acceptances of this agreement.
 
 ### [New-MgAgreementFile](New-MgAgreementFile.md)
 PDFs linked to this agreement.
-Note: This property is in the process of being deprecated.
+This property is in the process of being deprecated.
 Use the  file property instead.
+Supports $expand.
 
 ### [New-MgAgreementFileLocalization](New-MgAgreementFileLocalization.md)
 The localized version of the terms of use agreement files attached to the agreement.
@@ -473,7 +475,7 @@ Supports $select.
 Read-only.
 
 ### [New-MgIdentityGovernanceAccessReviewDecisionInstanceDecision](New-MgIdentityGovernanceAccessReviewDecisionInstanceDecision.md)
-Each user reviewed in an accessReviewInstance has a decision item representing if they were approved, denied, or not yet reviewed.
+Each principal reviewed in an accessReviewInstance has a decision item representing if they were approved, denied, or not yet reviewed.
 
 ### [New-MgIdentityGovernanceAccessReviewDecisionInstanceStage](New-MgIdentityGovernanceAccessReviewDecisionInstanceStage.md)
 If the instance has multiple stages, this returns the collection of stages.
@@ -597,7 +599,7 @@ Nullable.
 Represents the grant of an access package to a subject (user or group).
 
 ### [Remove-MgEntitlementManagementAccessPackageAssignmentApproval](Remove-MgEntitlementManagementAccessPackageAssignmentApproval.md)
-Delete navigation property accessPackageAssignmentApprovals for identityGovernance
+Approval stages for assignment requests.
 
 ### [Remove-MgEntitlementManagementAccessPackageAssignmentApprovalStep](Remove-MgEntitlementManagementAccessPackageAssignmentApprovalStep.md)
 Delete navigation property steps for identityGovernance
@@ -641,7 +643,7 @@ Delete navigation property customAccessPackageWorkflowExtensions for identityGov
 
 ### [Remove-MgEntitlementManagementAccessPackageResourceAccessPackageResourceEnvironmentByRef](Remove-MgEntitlementManagementAccessPackageResourceAccessPackageResourceEnvironmentByRef.md)
 Contains the environment information for the resource.
-This can be set using either the @odata.bind annotation or the environment's originId.
+This can be set using either the @odata.bind annotation or the environment's originId.Supports $expand.
 
 ### [Remove-MgEntitlementManagementAccessPackageResourceRequest](Remove-MgEntitlementManagementAccessPackageResourceRequest.md)
 Represents a request to add or remove a resource to or from a catalog respectively.
@@ -815,7 +817,7 @@ Supports $expand.
 
 ### [Set-MgEntitlementManagementAccessPackageResourceAccessPackageResourceEnvironmentByRef](Set-MgEntitlementManagementAccessPackageResourceAccessPackageResourceEnvironmentByRef.md)
 Contains the environment information for the resource.
-This can be set using either the @odata.bind annotation or the environment's originId.
+This can be set using either the @odata.bind annotation or the environment's originId.Supports $expand.
 
 ### [Set-MgEntitlementManagementAccessPackageResourceRequestAccessPackageResourceByRef](Set-MgEntitlementManagementAccessPackageResourceRequestAccessPackageResourceByRef.md)
 Nullable.
@@ -895,7 +897,7 @@ Represents access package objects.
 Invoke action reprocess
 
 ### [Update-MgEntitlementManagementAccessPackageAssignmentApproval](Update-MgEntitlementManagementAccessPackageAssignmentApproval.md)
-Update the navigation property accessPackageAssignmentApprovals in identityGovernance
+Approval stages for assignment requests.
 
 ### [Update-MgEntitlementManagementAccessPackageAssignmentApprovalStep](Update-MgEntitlementManagementAccessPackageAssignmentApprovalStep.md)
 Update the navigation property steps in identityGovernance
@@ -952,7 +954,7 @@ Supports $select.
 Read-only.
 
 ### [Update-MgIdentityGovernanceAccessReviewDecisionInstanceDecision](Update-MgIdentityGovernanceAccessReviewDecisionInstanceDecision.md)
-Each user reviewed in an accessReviewInstance has a decision item representing if they were approved, denied, or not yet reviewed.
+Each principal reviewed in an accessReviewInstance has a decision item representing if they were approved, denied, or not yet reviewed.
 
 ### [Update-MgIdentityGovernanceAccessReviewDecisionInstanceStage](Update-MgIdentityGovernanceAccessReviewDecisionInstanceStage.md)
 If the instance has multiple stages, this returns the collection of stages.
