@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/invoke-mgrangeuserinsighttrendingresourcemicrosoftgraphworkbookrangeused
 schema: 2.0.0
@@ -21,19 +21,19 @@ Invoke-MgRangeUserInsightTrendingResourceMicrosoftGraphWorkbookRangeUsed -Trendi
 ### Range1
 ```
 Invoke-MgRangeUserInsightTrendingResourceMicrosoftGraphWorkbookRangeUsed -TrendingId <String> -UserId <String>
- -ValuesOnly [<CommonParameters>]
-```
-
-### RangeViaIdentity
-```
-Invoke-MgRangeUserInsightTrendingResourceMicrosoftGraphWorkbookRangeUsed
- -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
+ [-ValuesOnly] [<CommonParameters>]
 ```
 
 ### RangeViaIdentity1
 ```
-Invoke-MgRangeUserInsightTrendingResourceMicrosoftGraphWorkbookRangeUsed
- -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
+Invoke-MgRangeUserInsightTrendingResourceMicrosoftGraphWorkbookRangeUsed -InputObject <IUsersFunctionsIdentity>
+ [<CommonParameters>]
+```
+
+### RangeViaIdentity
+```
+Invoke-MgRangeUserInsightTrendingResourceMicrosoftGraphWorkbookRangeUsed -InputObject <IUsersFunctionsIdentity>
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -48,8 +48,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
-Parameter Sets: RangeViaIdentity, RangeViaIdentity1
+Type: IUsersFunctionsIdentity
+Parameter Sets: RangeViaIdentity1, RangeViaIdentity
 Aliases:
 
 Required: True
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 key: id of trending
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Range, Range1
 Aliases:
 
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Range, Range1
 Aliases:
 
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 Usage: valuesOnly={valuesOnly}
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: Range1
 Aliases:
 
@@ -110,11 +110,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWorkbookRange
-
 ## NOTES
 
 ALIASES
@@ -161,4 +159,3 @@ INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   - `[ValuesOnly <Boolean?>]`: Usage: valuesOnly={valuesOnly}
 
 ## RELATED LINKS
-
