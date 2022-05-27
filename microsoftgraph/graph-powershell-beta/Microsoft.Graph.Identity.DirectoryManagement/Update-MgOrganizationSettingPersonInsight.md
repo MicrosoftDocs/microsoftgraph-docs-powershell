@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganizationsettingpersoninsight
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisabledForGroup
-The ID of an Azure AD group, of which the specified type of insights are disabled for its members.
+The ID of an Azure Active Directory group, of which the specified type of insights are disabled for its members.
 Default is empty.
 Optional.
 
@@ -226,7 +226,7 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER <IMicrosoftGraphInsightsSettings>: insightsSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
-  - `[DisabledForGroup <String>]`: The ID of an Azure AD group, of which the specified type of insights are disabled for its members. Default is empty. Optional.
+  - `[DisabledForGroup <String>]`: The ID of an Azure Active Directory group, of which the specified type of insights are disabled for its members. Default is empty. Optional.
   - `[IsEnabledInOrganization <Boolean?>]`: true if the specified type of insights are enabled for the organization; false if the specified type of insights are disabled for all users without exceptions. Default is true. Optional.
 
 INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdomainfederationconfiguration
@@ -28,6 +28,13 @@ Remove-MgDomainFederationConfiguration -InputObject <IIdentityDirectoryManagemen
 Delete navigation property federationConfiguration for domains
 
 ## EXAMPLES
+
+### Example 1: Remove federation settigs for a federated domain
+```powershell
+Remove-MgDomainFederationConfiguration -DomainId 'contoso.com' -InternalDomainFederationId '2a8ce608-bb34-473f-9e0f-f373ee4cbc5a'
+```
+
+This example removes the federation settings of the specified federated domain.
 
 ## PARAMETERS
 

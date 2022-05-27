@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgriskdetection
@@ -69,6 +69,9 @@ Accept wildcard characters: False
 
 ### -AdditionalInfo
 Additional information associated with the risk detection in JSON format.
+For example, '[{/'Key/':/'userAgent/',/'Value/':/'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36/'}]'.
+Possible keys in the additionalInfo JSON string are: userAgent, alertUrl, relatedEventTimeInUtc, relatedUserAgent, deviceInformation, relatedLocation, requestId, correlationId, lastActivityTimeInUtc, malwareName, clientLocation, clientIp, riskReasons.
+For more information about riskReasons and possible values, see riskReasons values.
 
 ```yaml
 Type: String
@@ -132,7 +135,7 @@ Accept wildcard characters: False
 ### -DetectedDateTime
 Date and time that the risk was detected.
 The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is look like this: 2014-01-01T00:00:00Z
+For example, midnight UTC on Jan 1, 2014 looks like this: 2014-01-01T00:00:00Z
 
 ```yaml
 Type: DateTime
@@ -257,8 +260,9 @@ Accept wildcard characters: False
 
 ### -RiskEventType
 The type of risk event detected.
-The possible values are unlikelyTravel, anonymizedIPAddress, maliciousIPAddress, unfamiliarFeatures, malwareInfectedIPAddress, suspiciousIPAddress, leakedCredentials, investigationsThreatIntelligence, generic,adminConfirmedUserCompromised, mcasImpossibleTravel, mcasSuspiciousInboxManipulationRules, investigationsThreatIntelligenceSigninLinked, maliciousIPAddressValidCredentialsBlockedIP, and unknownFutureValue.
-If the risk detection is a premium detection, will show generic
+The possible values are unlikelyTravel, anonymizedIPAddress, maliciousIPAddress, unfamiliarFeatures, malwareInfectedIPAddress, suspiciousIPAddress, leakedCredentials, investigationsThreatIntelligence, generic,adminConfirmedUserCompromised, passwordSpray, impossibleTravel, newCountry, anomalousToken, tokenIssuerAnomaly,suspiciousBrowser, riskyIPAddress, mcasSuspiciousInboxManipulationRules, suspiciousInboxForwarding, and unknownFutureValue.
+If the risk detection is a premium detection, will show generic.
+For more information about each value, see riskEventType values.
 
 ```yaml
 Type: String
@@ -447,9 +451,9 @@ BODYPARAMETER <IMicrosoftGraphRiskDetection>: riskDetection
   - `[Id <String>]`: Read-only.
   - `[Activity <String>]`: activityType
   - `[ActivityDateTime <DateTime?>]`: Date and time that the risky activity occurred. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is look like this: 2014-01-01T00:00:00Z
-  - `[AdditionalInfo <String>]`: Additional information associated with the risk detection in JSON format.
+  - `[AdditionalInfo <String>]`: Additional information associated with the risk detection in JSON format. For example, '[{/'Key/':/'userAgent/',/'Value/':/'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36/'}]'. Possible keys in the additionalInfo JSON string are: userAgent, alertUrl, relatedEventTimeInUtc, relatedUserAgent, deviceInformation, relatedLocation, requestId, correlationId, lastActivityTimeInUtc, malwareName, clientLocation, clientIp, riskReasons. For more information about riskReasons and possible values, see riskReasons values.
   - `[CorrelationId <String>]`: Correlation ID of the sign-in associated with the risk detection. This property is null if the risk detection is not associated with a sign-in.
-  - `[DetectedDateTime <DateTime?>]`: Date and time that the risk was detected. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is look like this: 2014-01-01T00:00:00Z
+  - `[DetectedDateTime <DateTime?>]`: Date and time that the risk was detected. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 looks like this: 2014-01-01T00:00:00Z
   - `[DetectionTimingType <String>]`: riskDetectionTimingType
   - `[IPAddress <String>]`: Provides the IP address of the client from where the risk occurred.
   - `[LastUpdatedDateTime <DateTime?>]`: Date and time that the risk detection was last updated. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is look like this: 2014-01-01T00:00:00Z
@@ -465,7 +469,7 @@ BODYPARAMETER <IMicrosoftGraphRiskDetection>: riskDetection
     - `[State <String>]`: Provides the State where the sign-in originated. This is calculated using latitude/longitude information from the sign-in activity.
   - `[RequestId <String>]`: Request ID of the sign-in associated with the risk detection. This property is null if the risk detection is not associated with a sign-in.
   - `[RiskDetail <String>]`: riskDetail
-  - `[RiskEventType <String>]`: The type of risk event detected. The possible values are unlikelyTravel, anonymizedIPAddress, maliciousIPAddress, unfamiliarFeatures, malwareInfectedIPAddress, suspiciousIPAddress, leakedCredentials, investigationsThreatIntelligence, generic,adminConfirmedUserCompromised, mcasImpossibleTravel, mcasSuspiciousInboxManipulationRules, investigationsThreatIntelligenceSigninLinked, maliciousIPAddressValidCredentialsBlockedIP, and unknownFutureValue. If the risk detection is a premium detection, will show generic
+  - `[RiskEventType <String>]`: The type of risk event detected. The possible values are unlikelyTravel, anonymizedIPAddress, maliciousIPAddress, unfamiliarFeatures, malwareInfectedIPAddress, suspiciousIPAddress, leakedCredentials, investigationsThreatIntelligence, generic,adminConfirmedUserCompromised, passwordSpray, impossibleTravel, newCountry, anomalousToken, tokenIssuerAnomaly,suspiciousBrowser, riskyIPAddress, mcasSuspiciousInboxManipulationRules, suspiciousInboxForwarding, and unknownFutureValue. If the risk detection is a premium detection, will show generic. For more information about each value, see riskEventType values.
   - `[RiskLevel <String>]`: riskLevel
   - `[RiskState <String>]`: riskState
   - `[RiskType <String>]`: riskEventType

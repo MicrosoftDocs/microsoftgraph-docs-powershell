@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryroletemplate
@@ -77,7 +77,8 @@ Accept wildcard characters: False
 ```
 
 ### -DeletedDateTime
-.
+Date and time when this object was deleted.
+Always null when the object hasn't been deleted.
 
 ```yaml
 Type: DateTime
@@ -236,7 +237,7 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER <IMicrosoftGraphDirectoryRoleTemplate>: directoryRoleTemplate
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DeletedDateTime <DateTime?>]`: 
+  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: Read-only.
   - `[Description <String>]`: The description to set for the directory role. Read-only.
   - `[DisplayName <String>]`: The display name to set for the directory role. Read-only.

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/new-mgsiteonenotesectiongroupsectiongroupbyref
@@ -44,13 +44,6 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
-
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -172,9 +165,23 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IPaths6Y9EgcSitesSiteIdOnenoteSectiongroupsSectiongroupIdSectiongroupsRefPostResponses201ContentApplicationJsonSchema
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+INPUTOBJECT <INotesIdentity>: Identity Parameter
+  - `[GroupId <String>]`: key: id of group
+  - `[NotebookId <String>]`: key: id of notebook
+  - `[OnenoteOperationId <String>]`: key: id of onenoteOperation
+  - `[OnenotePageId <String>]`: key: id of onenotePage
+  - `[OnenoteResourceId <String>]`: key: id of onenoteResource
+  - `[OnenoteSectionId <String>]`: key: id of onenoteSection
+  - `[SectionGroupId <String>]`: key: id of sectionGroup
+  - `[SiteId <String>]`: key: id of site
+  - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/new-mgsiteonenotesectiongroupsectiongroupbyref](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/new-mgsiteonenotesectiongroupsectiongroupbyref)
-

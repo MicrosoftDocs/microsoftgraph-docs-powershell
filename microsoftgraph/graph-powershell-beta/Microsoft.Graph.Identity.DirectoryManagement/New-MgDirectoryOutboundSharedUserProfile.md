@@ -144,17 +144,11 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER <IMicrosoftGraphOutboundSharedUserProfile>: outboundSharedUserProfile
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DeletedDateTime <DateTime?>]`: 
-  - `[Id <String>]`: Read-only.
   - `[Tenants <IMicrosoftGraphTenantReference[]>]`: 
-    - `[DeletedDateTime <DateTime?>]`: 
-    - `[Id <String>]`: Read-only.
     - `[TenantId <String>]`: 
   - `[UserId <String>]`: 
 
 TENANTS <IMicrosoftGraphTenantReference[]>: .
-  - `[DeletedDateTime <DateTime?>]`: 
-  - `[Id <String>]`: Read-only.
   - `[TenantId <String>]`: 
 
 ## RELATED LINKS

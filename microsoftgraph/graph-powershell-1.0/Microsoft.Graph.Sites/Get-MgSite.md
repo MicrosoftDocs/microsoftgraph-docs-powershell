@@ -8,29 +8,30 @@ schema: 2.0.0
 # Get-MgSite
 
 ## SYNOPSIS
-Invoke function getByPath
+Get entity from sites by key
 
 ## SYNTAX
 
 ### List1 (Default)
 ```
-Get-MgSite [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>]
+Get-MgSite [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>]
  [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
  [<CommonParameters>]
 ```
 
-### Get2
+### Get1
 ```
-Get-MgSite -Path <String> -SiteId <String> [<CommonParameters>]
+Get-MgSite -SiteId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity2
+### GetViaIdentity1
 ```
-Get-MgSite -InputObject <ISitesIdentity> [<CommonParameters>]
+Get-MgSite -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke function getByPath
+Get entity from sites by key
 
 ## EXAMPLES
 
@@ -72,7 +73,7 @@ Expand related entities
 
 ```yaml
 Type: String[]
-Parameter Sets: List1
+Parameter Sets: (All)
 Aliases: Expand
 
 Required: False
@@ -103,7 +104,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: GetViaIdentity2
+Parameter Sets: GetViaIdentity1
 Aliases:
 
 Required: True
@@ -128,27 +129,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Path
-Usage: path={path}
-
-```yaml
-Type: String
-Parameter Sets: Get2
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Property
 Select properties to be returned
 
 ```yaml
 Type: String[]
-Parameter Sets: List1
+Parameter Sets: (All)
 Aliases: Select
 
 Required: False
@@ -178,7 +164,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: Get2
+Parameter Sets: Get1
 Aliases:
 
 Required: True

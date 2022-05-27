@@ -401,7 +401,7 @@ BODYPARAMETER <IMicrosoftGraphUnifiedRoleAssignmentMultiple>: unifiedRoleAssignm
   - `[DirectoryScopeIds <String[]>]`: Ids of the directory objects representing the scopes of the assignment. The scopes of an assignment determine the set of resources for which the principals have been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.
   - `[DirectoryScopes <IMicrosoftGraphDirectoryObject[]>]`: Read-only collection referencing the directory objects that are scope of the assignment. Provided so that callers can get the directory objects using $expand at the same time as getting the role assignment. Read-only.  Supports $expand.
     - `[Id <String>]`: Read-only.
-    - `[DeletedDateTime <DateTime?>]`: 
+    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[DisplayName <String>]`: Name of the role assignment. Required.
   - `[PrincipalIds <String[]>]`: Identifiers of the principals to which the assignment is granted.  Supports $filter (any operator only).
   - `[Principals <IMicrosoftGraphDirectoryObject[]>]`: Read-only collection referencing the assigned principals. Provided so that callers can get the principals using $expand at the same time as getting the role assignment. Read-only.  Supports $expand.
@@ -424,7 +424,7 @@ BODYPARAMETER <IMicrosoftGraphUnifiedRoleAssignmentMultiple>: unifiedRoleAssignm
 
 DIRECTORYSCOPES <IMicrosoftGraphDirectoryObject[]>: Read-only collection referencing the directory objects that are scope of the assignment. Provided so that callers can get the directory objects using $expand at the same time as getting the role assignment. Read-only. Supports $expand.
   - `[Id <String>]`: Read-only.
-  - `[DeletedDateTime <DateTime?>]`: 
+  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
 INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
@@ -468,7 +468,7 @@ INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
 
 PRINCIPALS <IMicrosoftGraphDirectoryObject[]>: Read-only collection referencing the assigned principals. Provided so that callers can get the principals using $expand at the same time as getting the role assignment. Read-only. Supports $expand.
   - `[Id <String>]`: Read-only.
-  - `[DeletedDateTime <DateTime?>]`: 
+  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
 ROLEDEFINITION <IMicrosoftGraphUnifiedRoleDefinition>: unifiedRoleDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -487,11 +487,5 @@ ROLEDEFINITION <IMicrosoftGraphUnifiedRoleDefinition>: unifiedRoleDefinition
   - `[Version <String>]`: Indicates version of the role definition. Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
-
-## RELATED LINKS
-
-
-## RELATED LINKS
-
 
 ## RELATED LINKS

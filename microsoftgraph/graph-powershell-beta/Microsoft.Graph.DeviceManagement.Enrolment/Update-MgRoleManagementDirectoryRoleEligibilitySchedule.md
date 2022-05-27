@@ -447,7 +447,7 @@ BODYPARAMETER <IMicrosoftGraphUnifiedRoleEligibilitySchedule>: unifiedRoleEligib
   - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: Read-only.
-    - `[DeletedDateTime <DateTime?>]`: 
+    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. Use appScopeId to limit the scope to an application only.
   - `[ModifiedDateTime <DateTime?>]`: Last time the schedule was updated.
   - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
@@ -501,7 +501,7 @@ BODYPARAMETER <IMicrosoftGraphUnifiedRoleEligibilitySchedule>: unifiedRoleEligib
 DIRECTORYSCOPE <IMicrosoftGraphDirectoryObject>: directoryObject
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
-  - `[DeletedDateTime <DateTime?>]`: 
+  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
 INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
@@ -546,7 +546,7 @@ INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
 PRINCIPAL <IMicrosoftGraphDirectoryObject>: directoryObject
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
-  - `[DeletedDateTime <DateTime?>]`: 
+  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
 ROLEDEFINITION <IMicrosoftGraphUnifiedRoleDefinition>: unifiedRoleDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -592,11 +592,5 @@ SCHEDULEINFO <IMicrosoftGraphRequestSchedule>: requestSchedule
   - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
-
-## RELATED LINKS
-
-
-## RELATED LINKS
-
 
 ## RELATED LINKS

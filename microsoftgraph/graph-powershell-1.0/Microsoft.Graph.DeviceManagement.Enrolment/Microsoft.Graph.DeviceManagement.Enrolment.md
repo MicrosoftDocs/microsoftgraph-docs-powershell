@@ -81,7 +81,7 @@ Only Azure AD built-in roles (isBuiltIn is true) support this attribute.
 Supports $expand.
 
 ### [Get-MgRoleManagementEntitlementManagement](Get-MgRoleManagementEntitlementManagement.md)
-Container for all entitlement management resources in Azure AD identity governance.
+Container for roles and assignments for entitlement management resources.
 
 ### [Get-MgRoleManagementEntitlementManagementRoleAssignment](Get-MgRoleManagementEntitlementManagementRoleAssignment.md)
 Resource to grant access to users or groups.
@@ -215,7 +215,7 @@ Only Azure AD built-in roles (isBuiltIn is true) support this attribute.
 Supports $expand.
 
 ### [Remove-MgRoleManagementEntitlementManagement](Remove-MgRoleManagementEntitlementManagement.md)
-Container for all entitlement management resources in Azure AD identity governance.
+Container for roles and assignments for entitlement management resources.
 
 ### [Remove-MgRoleManagementEntitlementManagementRoleAssignment](Remove-MgRoleManagementEntitlementManagementRoleAssignment.md)
 Resource to grant access to users or groups.
@@ -315,7 +315,7 @@ Only Azure AD built-in roles (isBuiltIn is true) support this attribute.
 Supports $expand.
 
 ### [Update-MgRoleManagementEntitlementManagement](Update-MgRoleManagementEntitlementManagement.md)
-Container for all entitlement management resources in Azure AD identity governance.
+Container for roles and assignments for entitlement management resources.
 
 ### [Update-MgRoleManagementEntitlementManagementRoleAssignment](Update-MgRoleManagementEntitlementManagementRoleAssignment.md)
 Resource to grant access to users or groups.

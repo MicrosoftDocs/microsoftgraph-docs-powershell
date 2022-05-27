@@ -631,6 +631,9 @@ Invoke action cancel
 ### [Test-MgGroupDynamicMembership](Test-MgGroupDynamicMembership.md)
 Invoke action evaluateDynamicMembership
 
+### [Test-MgGroupDynamicMembershipRule](Test-MgGroupDynamicMembershipRule.md)
+Invoke action evaluateDynamicMembership
+
 ### [Test-MgGroupProperty](Test-MgGroupProperty.md)
 Invoke action validateProperties
 

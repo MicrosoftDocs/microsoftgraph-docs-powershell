@@ -573,7 +573,7 @@ ACTIVATEDUSING <IMicrosoftGraphUnifiedRoleEligibilitySchedule>: unifiedRoleEligi
   - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: Read-only.
-    - `[DeletedDateTime <DateTime?>]`: 
+    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. Use appScopeId to limit the scope to an application only.
   - `[ModifiedDateTime <DateTime?>]`: Last time the schedule was updated.
   - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
@@ -660,7 +660,7 @@ BODYPARAMETER <IMicrosoftGraphUnifiedRoleAssignmentScheduleRequest>: unifiedRole
     - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: Read-only.
-      - `[DeletedDateTime <DateTime?>]`: 
+      - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
     - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. Use appScopeId to limit the scope to an application only.
     - `[ModifiedDateTime <DateTime?>]`: Last time the schedule was updated.
     - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
@@ -758,7 +758,7 @@ CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
 DIRECTORYSCOPE <IMicrosoftGraphDirectoryObject>: directoryObject
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
-  - `[DeletedDateTime <DateTime?>]`: 
+  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
 INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
@@ -803,7 +803,7 @@ INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
 PRINCIPAL <IMicrosoftGraphDirectoryObject>: directoryObject
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
-  - `[DeletedDateTime <DateTime?>]`: 
+  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
 ROLEDEFINITION <IMicrosoftGraphUnifiedRoleDefinition>: unifiedRoleDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -861,7 +861,7 @@ TARGETSCHEDULE <IMicrosoftGraphUnifiedRoleAssignmentSchedule>: unifiedRoleAssign
   - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: Read-only.
-    - `[DeletedDateTime <DateTime?>]`: 
+    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. Use appScopeId to limit the scope to an application only.
   - `[ModifiedDateTime <DateTime?>]`: Last time the schedule was updated.
   - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
@@ -936,11 +936,5 @@ TICKETINFO <IMicrosoftGraphTicketInfo>: ticketInfo
   - `[TicketSystem <String>]`: Ticket system meta data
 
 ## RELATED LINKS
-
-## RELATED LINKS
-
-
-## RELATED LINKS
-
 
 ## RELATED LINKS

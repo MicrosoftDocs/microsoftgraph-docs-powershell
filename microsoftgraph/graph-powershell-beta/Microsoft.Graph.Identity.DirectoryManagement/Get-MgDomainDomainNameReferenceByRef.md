@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDomainDomainNameReferenceByRef
 
 ## SYNOPSIS
-The collection of the sub-sites under this site.
+Read-only, Nullable
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-MgDomainDomainNameReferenceByRef -DomainId <String> [-Filter <String>] [-Sea
 ```
 
 ## DESCRIPTION
-The collection of the sub-sites under this site.
+Read-only, Nullable
 
 ## EXAMPLES
 

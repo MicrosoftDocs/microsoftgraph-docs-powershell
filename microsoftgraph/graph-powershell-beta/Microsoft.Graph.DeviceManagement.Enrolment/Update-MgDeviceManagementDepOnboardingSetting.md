@@ -508,7 +508,7 @@ BODYPARAMETER <IMicrosoftGraphDepOnboardingSetting>: The depOnboardingSetting re
     - `[TemporarySessionTimeoutInSeconds <Int32?>]`: Indicates timeout of temporary session
     - `[UpdateCompleteScreenDisabled <Boolean?>]`: Indicates if Weclome screen is disabled
     - `[UserSessionTimeoutInSeconds <Int32?>]`: Indicates timeout of temporary session
-    - `[UserlessSharedAadModeEnabled <Boolean?>]`: Indicates that this apple device is designated to support 'shared device mode' scenarios. This is distinct from the 'shared iPad' scenario. See Shared iOS and iPadOS devices.
+    - `[UserlessSharedAadModeEnabled <Boolean?>]`: Indicates that this apple device is designated to support 'shared device mode' scenarios. This is distinct from the 'shared iPad' scenario. See Shared iOS and iPadOS devices
     - `[WatchMigrationScreenDisabled <Boolean?>]`: Indicates if the watch migration screen is disabled
     - `[WelcomeScreenDisabled <Boolean?>]`: Indicates if Weclome screen is disabled
     - `[ZoomDisabled <Boolean?>]`: Indicates if zoom setup pane is disabled
@@ -635,7 +635,7 @@ DEFAULTIOSENROLLMENTPROFILE <IMicrosoftGraphDepIosEnrollmentProfile>: The DepIOS
   - `[TemporarySessionTimeoutInSeconds <Int32?>]`: Indicates timeout of temporary session
   - `[UpdateCompleteScreenDisabled <Boolean?>]`: Indicates if Weclome screen is disabled
   - `[UserSessionTimeoutInSeconds <Int32?>]`: Indicates timeout of temporary session
-  - `[UserlessSharedAadModeEnabled <Boolean?>]`: Indicates that this apple device is designated to support 'shared device mode' scenarios. This is distinct from the 'shared iPad' scenario. See Shared iOS and iPadOS devices.
+  - `[UserlessSharedAadModeEnabled <Boolean?>]`: Indicates that this apple device is designated to support 'shared device mode' scenarios. This is distinct from the 'shared iPad' scenario. See Shared iOS and iPadOS devices
   - `[WatchMigrationScreenDisabled <Boolean?>]`: Indicates if the watch migration screen is disabled
   - `[WelcomeScreenDisabled <Boolean?>]`: Indicates if Weclome screen is disabled
   - `[ZoomDisabled <Boolean?>]`: Indicates if zoom setup pane is disabled
@@ -741,11 +741,5 @@ INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: key: id of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
-
-## RELATED LINKS
-
-
-## RELATED LINKS
-
 
 ## RELATED LINKS

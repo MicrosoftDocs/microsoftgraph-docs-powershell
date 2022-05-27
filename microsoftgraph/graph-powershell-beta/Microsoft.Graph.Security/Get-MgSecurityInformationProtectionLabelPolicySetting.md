@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/get-mgsecurityinformationprotectionlabelpolicysetting
@@ -21,13 +21,6 @@ Get-MgSecurityInformationProtectionLabelPolicySetting [-ExpandProperty <String[]
 Get labelPolicySettings from security
 
 ## EXAMPLES
-
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -70,9 +63,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityInformationProtectionPolicySetting
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/get-mgsecurityinformationprotectionlabelpolicysetting](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/get-mgsecurityinformationprotectionlabelpolicysetting)
-

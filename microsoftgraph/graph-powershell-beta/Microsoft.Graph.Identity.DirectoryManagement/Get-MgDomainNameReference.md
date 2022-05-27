@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDomainNameReference
 
 ## SYNOPSIS
-The appManagementPolicy applied to this application.
+Read-only, Nullable
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgDomainNameReference -DomainId <String> [-ExpandProperty <String[]>] [-Filt
 ```
 
 ## DESCRIPTION
-The appManagementPolicy applied to this application.
+Read-only, Nullable
 
 ## EXAMPLES
 

@@ -224,6 +224,9 @@ Invoke function getSuggestedEnrollmentLimit
 ### [Get-MgDeviceManagementVirtualEndpointAuditEventAuditActivityType](Get-MgDeviceManagementVirtualEndpointAuditEventAuditActivityType.md)
 Invoke function getAuditActivityTypes
 
+### [Get-MgDeviceManagementVirtualEndpointCloudPcLaunchInfo](Get-MgDeviceManagementVirtualEndpointCloudPcLaunchInfo.md)
+Invoke function getCloudPcLaunchInfo
+
 ### [Get-MgDeviceManagementVirtualEndpointDeviceImageSourceImage](Get-MgDeviceManagementVirtualEndpointDeviceImageSourceImage.md)
 Invoke function getSourceImages
 

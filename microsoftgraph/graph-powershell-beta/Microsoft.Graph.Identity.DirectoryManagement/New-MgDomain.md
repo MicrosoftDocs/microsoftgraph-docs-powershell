@@ -406,7 +406,7 @@ BODYPARAMETER <IMicrosoftGraphDomain1>: domain
   - `[AvailabilityStatus <String>]`: This property is always null except when the verify action is used. When the verify action is used, a domain entity is returned in the response. The availabilityStatus property of the domain entity in the response is either AvailableImmediately or EmailVerifiedDomainTakeoverScheduled.
   - `[DomainNameReferences <IMicrosoftGraphDirectoryObject[]>]`: Read-only, Nullable
     - `[Id <String>]`: Read-only.
-    - `[DeletedDateTime <DateTime?>]`: 
+    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[FederationConfiguration <IMicrosoftGraphInternalDomainFederation[]>]`: 
     - `[IssuerUri <String>]`: Issuer URI of the federation server.
     - `[MetadataExchangeUri <String>]`: URI of the metadata exchange endpoint used for authentication from rich client applications.
@@ -454,7 +454,7 @@ BODYPARAMETER <IMicrosoftGraphDomain1>: domain
 
 DOMAINNAMEREFERENCES <IMicrosoftGraphDirectoryObject[]>: Read-only, Nullable
   - `[Id <String>]`: Read-only.
-  - `[DeletedDateTime <DateTime?>]`: 
+  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
 FEDERATIONCONFIGURATION <IMicrosoftGraphInternalDomainFederation[]>: .
   - `[IssuerUri <String>]`: Issuer URI of the federation server.
@@ -504,8 +504,5 @@ VERIFICATIONDNSRECORDS <IMicrosoftGraphDomainDnsRecord[]>: DNS records that the 
   - `[Ttl <Int32?>]`: Value to use when configuring the time-to-live (ttl) property of the DNS record at the DNS host. Not nullable
 
 ## RELATED LINKS
-
-## RELATED LINKS
-
 
 ## RELATED LINKS

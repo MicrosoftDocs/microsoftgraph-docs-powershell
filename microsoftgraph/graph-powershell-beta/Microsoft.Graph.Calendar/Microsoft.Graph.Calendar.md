@@ -34,7 +34,7 @@ Navigation property.
 Read-only.
 
 ### [Get-MgGroupEvent](Get-MgGroupEvent.md)
-The group's events.
+The group's calendar events.
 
 ### [Get-MgGroupEventAttachment](Get-MgGroupEventAttachment.md)
 The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
@@ -43,6 +43,11 @@ Read-only.
 Nullable.
 
 ### [Get-MgGroupEventCalendar](Get-MgGroupEventCalendar.md)
+The calendar that contains the event.
+Navigation property.
+Read-only.
+
+### [Get-MgGroupEventCalendarByRef](Get-MgGroupEventCalendarByRef.md)
 The calendar that contains the event.
 Navigation property.
 Read-only.
@@ -119,7 +124,7 @@ Nullable.
 
 ### [Get-MgUserEvent](Get-MgUserEvent.md)
 The user's events.
-Default is to show events under the Default Calendar.
+Default is to show Events under the Default Calendar.
 Read-only.
 Nullable.
 
@@ -130,6 +135,11 @@ Read-only.
 Nullable.
 
 ### [Get-MgUserEventCalendar](Get-MgUserEventCalendar.md)
+The calendar that contains the event.
+Navigation property.
+Read-only.
+
+### [Get-MgUserEventCalendarByRef](Get-MgUserEventCalendarByRef.md)
 The calendar that contains the event.
 Navigation property.
 Read-only.
@@ -172,7 +182,7 @@ Read-only.
 Nullable.
 
 ### [New-MgGroupEvent](New-MgGroupEvent.md)
-The group's events.
+The group's calendar events.
 
 ### [New-MgGroupEventAttachment](New-MgGroupEventAttachment.md)
 The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
@@ -243,7 +253,7 @@ Nullable.
 
 ### [New-MgUserEvent](New-MgUserEvent.md)
 The user's events.
-Default is to show events under the Default Calendar.
+Default is to show Events under the Default Calendar.
 Read-only.
 Nullable.
 
@@ -291,13 +301,18 @@ Read-only.
 Nullable.
 
 ### [Remove-MgGroupEvent](Remove-MgGroupEvent.md)
-The group's events.
+The group's calendar events.
 
 ### [Remove-MgGroupEventAttachment](Remove-MgGroupEventAttachment.md)
 The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
 Navigation property.
 Read-only.
 Nullable.
+
+### [Remove-MgGroupEventCalendarByRef](Remove-MgGroupEventCalendarByRef.md)
+The calendar that contains the event.
+Navigation property.
+Read-only.
 
 ### [Remove-MgGroupEventExceptionOccurrence](Remove-MgGroupEventExceptionOccurrence.md)
 Delete navigation property exceptionOccurrences for groups
@@ -351,7 +366,7 @@ Nullable.
 
 ### [Remove-MgUserEvent](Remove-MgUserEvent.md)
 The user's events.
-Default is to show events under the Default Calendar.
+Default is to show Events under the Default Calendar.
 Read-only.
 Nullable.
 
@@ -360,6 +375,11 @@ The collection of FileAttachment, ItemAttachment, and referenceAttachment attach
 Navigation property.
 Read-only.
 Nullable.
+
+### [Remove-MgUserEventCalendarByRef](Remove-MgUserEventCalendarByRef.md)
+The calendar that contains the event.
+Navigation property.
+Read-only.
 
 ### [Remove-MgUserEventExceptionOccurrence](Remove-MgUserEventExceptionOccurrence.md)
 Delete navigation property exceptionOccurrences for users
@@ -385,6 +405,16 @@ The collection of single-value extended properties defined for the event.
 Read-only.
 Nullable.
 
+### [Set-MgGroupEventCalendarByRef](Set-MgGroupEventCalendarByRef.md)
+The calendar that contains the event.
+Navigation property.
+Read-only.
+
+### [Set-MgUserEventCalendarByRef](Set-MgUserEventCalendarByRef.md)
+The calendar that contains the event.
+Navigation property.
+Read-only.
+
 ### [Update-MgGroupCalendarMultiValueExtendedProperty](Update-MgGroupCalendarMultiValueExtendedProperty.md)
 The collection of multi-value extended properties defined for the calendar.
 Read-only.
@@ -399,7 +429,7 @@ Read-only.
 Nullable.
 
 ### [Update-MgGroupEvent](Update-MgGroupEvent.md)
-The group's events.
+The group's calendar events.
 
 ### [Update-MgGroupEventAttachment](Update-MgGroupEventAttachment.md)
 The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event.
@@ -459,7 +489,7 @@ Nullable.
 
 ### [Update-MgUserEvent](Update-MgUserEvent.md)
 The user's events.
-Default is to show events under the Default Calendar.
+Default is to show Events under the Default Calendar.
 Read-only.
 Nullable.
 

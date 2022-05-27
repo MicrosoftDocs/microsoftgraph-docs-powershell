@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomainfederationconfiguration
@@ -52,6 +52,13 @@ Update-MgDomainFederationConfiguration -InputObject <IIdentityDirectoryManagemen
 Update the navigation property federationConfiguration in domains
 
 ## EXAMPLES
+
+### Example 1: Update the federation settings for a federated domain
+```powershell
+Update-MgDomainFederationConfiguration -DomainId 'contoso.com' -InternalDomainFederationId '2a8ce608-bb34-473f-9e0f-f373ee4cbc5a' -DisplayName "Contoso name change"
+```
+
+This example updates the DisplayName setting.
 
 ## PARAMETERS
 

@@ -234,8 +234,6 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER <IMicrosoftGraphInboundSharedUserProfile>: inboundSharedUserProfile
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DeletedDateTime <DateTime?>]`: 
-  - `[Id <String>]`: Read-only.
   - `[DisplayName <String>]`: 
   - `[HomeTenantId <String>]`: 
   - `[UserId <String>]`: 

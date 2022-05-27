@@ -14,6 +14,9 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgSubscription](Get-MgSubscription.md)
 Get entity from subscriptions by key
 
+### [Invoke-MgReauthorizeSubscription](Invoke-MgReauthorizeSubscription.md)
+Invoke action reauthorize
+
 ### [New-MgSubscription](New-MgSubscription.md)
 Add new entity to subscriptions
 

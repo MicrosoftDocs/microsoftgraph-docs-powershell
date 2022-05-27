@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgpolicyserviceprincipalcreationpolicy
@@ -66,7 +66,8 @@ Accept wildcard characters: False
 ```
 
 ### -DeletedDateTime
-.
+Date and time when this object was deleted.
+Always null when the object hasn't been deleted.
 
 ```yaml
 Type: DateTime
@@ -227,7 +228,7 @@ BODYPARAMETER <IMicrosoftGraphServicePrincipalCreationPolicy>: servicePrincipalC
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Description <String>]`: Description for this policy. Required.
   - `[DisplayName <String>]`: Display name for this policy. Required.
-  - `[DeletedDateTime <DateTime?>]`: 
+  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: Read-only.
   - `[Excludes <IMicrosoftGraphServicePrincipalCreationConditionSet[]>]`: 
     - `[Id <String>]`: Read-only.
@@ -235,6 +236,7 @@ BODYPARAMETER <IMicrosoftGraphServicePrincipalCreationPolicy>: servicePrincipalC
     - `[ApplicationPublisherIds <String[]>]`: 
     - `[ApplicationTenantIds <String[]>]`: 
     - `[ApplicationsFromVerifiedPublisherOnly <Boolean?>]`: 
+    - `[CertifiedApplicationsOnly <Boolean?>]`: 
   - `[Includes <IMicrosoftGraphServicePrincipalCreationConditionSet[]>]`: 
   - `[IsBuiltIn <Boolean?>]`: 
 
@@ -244,6 +246,7 @@ EXCLUDES <IMicrosoftGraphServicePrincipalCreationConditionSet[]>: .
   - `[ApplicationPublisherIds <String[]>]`: 
   - `[ApplicationTenantIds <String[]>]`: 
   - `[ApplicationsFromVerifiedPublisherOnly <Boolean?>]`: 
+  - `[CertifiedApplicationsOnly <Boolean?>]`: 
 
 INCLUDES <IMicrosoftGraphServicePrincipalCreationConditionSet[]>: .
   - `[Id <String>]`: Read-only.
@@ -251,5 +254,6 @@ INCLUDES <IMicrosoftGraphServicePrincipalCreationConditionSet[]>: .
   - `[ApplicationPublisherIds <String[]>]`: 
   - `[ApplicationTenantIds <String[]>]`: 
   - `[ApplicationsFromVerifiedPublisherOnly <Boolean?>]`: 
+  - `[CertifiedApplicationsOnly <Boolean?>]`: 
 
 ## RELATED LINKS

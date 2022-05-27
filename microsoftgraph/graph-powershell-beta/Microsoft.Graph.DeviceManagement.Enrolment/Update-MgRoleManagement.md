@@ -199,19 +199,19 @@ BODYPARAMETER <IMicrosoftGraphRoleManagement1>: roleManagement
     - `[Id <String>]`: Read-only.
     - `[ResourceNamespaces <IMicrosoftGraphUnifiedRbacResourceNamespace[]>]`: 
       - `[Id <String>]`: Read-only.
-      - `[Name <String>]`: 
-      - `[ResourceActions <IMicrosoftGraphUnifiedRbacResourceAction[]>]`: 
+      - `[Name <String>]`: Name of the resource namespace. Typically, the same name as the id property, such as microsoft.aad.b2c. Required. Supports $filter (eq, startsWith).
+      - `[ResourceActions <IMicrosoftGraphUnifiedRbacResourceAction[]>]`: Operations that an authorized principal are allowed to perform.
         - `[Id <String>]`: Read-only.
-        - `[ActionVerb <String>]`: 
-        - `[Description <String>]`: 
-        - `[Name <String>]`: 
+        - `[ActionVerb <String>]`: HTTP method for the action, such as DELETE, GET, PATCH, POST, PUT, or null. Supports $filter (eq) but not for null values.
+        - `[Description <String>]`: Description for the action. Supports $filter (eq).
+        - `[Name <String>]`: Name for the action within the resource namespace, such as microsoft.insights/programs/update. Can include slash character (/). Case insensitive. Required. Supports $filter (eq).
         - `[ResourceScope <IMicrosoftGraphUnifiedRbacResourceScope>]`: unifiedRbacResourceScope
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: Read-only.
           - `[DisplayName <String>]`: 
           - `[Scope <String>]`: 
           - `[Type <String>]`: 
-        - `[ResourceScopeId <String>]`: 
+        - `[ResourceScopeId <String>]`: Not implemented.
     - `[RoleAssignments <IMicrosoftGraphUnifiedRoleAssignmentMultiple[]>]`: 
       - `[Id <String>]`: Read-only.
       - `[AppScopeIds <String[]>]`: Ids of the app specific scopes when the assignment scopes are app specific. The scopes of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. App scopes are scopes that are defined and understood by this application only.
@@ -224,7 +224,7 @@ BODYPARAMETER <IMicrosoftGraphRoleManagement1>: roleManagement
       - `[DirectoryScopeIds <String[]>]`: Ids of the directory objects representing the scopes of the assignment. The scopes of an assignment determine the set of resources for which the principals have been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.
       - `[DirectoryScopes <IMicrosoftGraphDirectoryObject[]>]`: Read-only collection referencing the directory objects that are scope of the assignment. Provided so that callers can get the directory objects using $expand at the same time as getting the role assignment. Read-only.  Supports $expand.
         - `[Id <String>]`: Read-only.
-        - `[DeletedDateTime <DateTime?>]`: 
+        - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
       - `[DisplayName <String>]`: Name of the role assignment. Required.
       - `[PrincipalIds <String[]>]`: Identifiers of the principals to which the assignment is granted.  Supports $filter (any operator only).
       - `[Principals <IMicrosoftGraphDirectoryObject[]>]`: Read-only collection referencing the assigned principals. Provided so that callers can get the principals using $expand at the same time as getting the role assignment. Read-only.  Supports $expand.
@@ -425,6 +425,7 @@ BODYPARAMETER <IMicrosoftGraphRoleManagement1>: roleManagement
       - `[TargetScheduleId <String>]`: The time period for which the eligibility assignment is valid.
       - `[TicketInfo <IMicrosoftGraphTicketInfo>]`: ticketInfo
     - `[RoleEligibilitySchedules <IMicrosoftGraphUnifiedRoleEligibilitySchedule[]>]`: 
+    - `[TransitiveRoleAssignments <IMicrosoftGraphUnifiedRoleAssignment1[]>]`: 
   - `[EntitlementManagement <IMicrosoftGraphRbacApplication>]`: rbacApplication
 
 CLOUDPC <IMicrosoftGraphRbacApplicationMultiple>: rbacApplicationMultiple
@@ -432,19 +433,19 @@ CLOUDPC <IMicrosoftGraphRbacApplicationMultiple>: rbacApplicationMultiple
   - `[Id <String>]`: Read-only.
   - `[ResourceNamespaces <IMicrosoftGraphUnifiedRbacResourceNamespace[]>]`: 
     - `[Id <String>]`: Read-only.
-    - `[Name <String>]`: 
-    - `[ResourceActions <IMicrosoftGraphUnifiedRbacResourceAction[]>]`: 
+    - `[Name <String>]`: Name of the resource namespace. Typically, the same name as the id property, such as microsoft.aad.b2c. Required. Supports $filter (eq, startsWith).
+    - `[ResourceActions <IMicrosoftGraphUnifiedRbacResourceAction[]>]`: Operations that an authorized principal are allowed to perform.
       - `[Id <String>]`: Read-only.
-      - `[ActionVerb <String>]`: 
-      - `[Description <String>]`: 
-      - `[Name <String>]`: 
+      - `[ActionVerb <String>]`: HTTP method for the action, such as DELETE, GET, PATCH, POST, PUT, or null. Supports $filter (eq) but not for null values.
+      - `[Description <String>]`: Description for the action. Supports $filter (eq).
+      - `[Name <String>]`: Name for the action within the resource namespace, such as microsoft.insights/programs/update. Can include slash character (/). Case insensitive. Required. Supports $filter (eq).
       - `[ResourceScope <IMicrosoftGraphUnifiedRbacResourceScope>]`: unifiedRbacResourceScope
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: Read-only.
         - `[DisplayName <String>]`: 
         - `[Scope <String>]`: 
         - `[Type <String>]`: 
-      - `[ResourceScopeId <String>]`: 
+      - `[ResourceScopeId <String>]`: Not implemented.
   - `[RoleAssignments <IMicrosoftGraphUnifiedRoleAssignmentMultiple[]>]`: 
     - `[Id <String>]`: Read-only.
     - `[AppScopeIds <String[]>]`: Ids of the app specific scopes when the assignment scopes are app specific. The scopes of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. App scopes are scopes that are defined and understood by this application only.
@@ -457,7 +458,7 @@ CLOUDPC <IMicrosoftGraphRbacApplicationMultiple>: rbacApplicationMultiple
     - `[DirectoryScopeIds <String[]>]`: Ids of the directory objects representing the scopes of the assignment. The scopes of an assignment determine the set of resources for which the principals have been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.
     - `[DirectoryScopes <IMicrosoftGraphDirectoryObject[]>]`: Read-only collection referencing the directory objects that are scope of the assignment. Provided so that callers can get the directory objects using $expand at the same time as getting the role assignment. Read-only.  Supports $expand.
       - `[Id <String>]`: Read-only.
-      - `[DeletedDateTime <DateTime?>]`: 
+      - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
     - `[DisplayName <String>]`: Name of the role assignment. Required.
     - `[PrincipalIds <String[]>]`: Identifiers of the principals to which the assignment is granted.  Supports $filter (any operator only).
     - `[Principals <IMicrosoftGraphDirectoryObject[]>]`: Read-only collection referencing the assigned principals. Provided so that callers can get the principals using $expand at the same time as getting the role assignment. Read-only.  Supports $expand.
@@ -484,19 +485,19 @@ DEVICEMANAGEMENT <IMicrosoftGraphRbacApplicationMultiple>: rbacApplicationMultip
   - `[Id <String>]`: Read-only.
   - `[ResourceNamespaces <IMicrosoftGraphUnifiedRbacResourceNamespace[]>]`: 
     - `[Id <String>]`: Read-only.
-    - `[Name <String>]`: 
-    - `[ResourceActions <IMicrosoftGraphUnifiedRbacResourceAction[]>]`: 
+    - `[Name <String>]`: Name of the resource namespace. Typically, the same name as the id property, such as microsoft.aad.b2c. Required. Supports $filter (eq, startsWith).
+    - `[ResourceActions <IMicrosoftGraphUnifiedRbacResourceAction[]>]`: Operations that an authorized principal are allowed to perform.
       - `[Id <String>]`: Read-only.
-      - `[ActionVerb <String>]`: 
-      - `[Description <String>]`: 
-      - `[Name <String>]`: 
+      - `[ActionVerb <String>]`: HTTP method for the action, such as DELETE, GET, PATCH, POST, PUT, or null. Supports $filter (eq) but not for null values.
+      - `[Description <String>]`: Description for the action. Supports $filter (eq).
+      - `[Name <String>]`: Name for the action within the resource namespace, such as microsoft.insights/programs/update. Can include slash character (/). Case insensitive. Required. Supports $filter (eq).
       - `[ResourceScope <IMicrosoftGraphUnifiedRbacResourceScope>]`: unifiedRbacResourceScope
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: Read-only.
         - `[DisplayName <String>]`: 
         - `[Scope <String>]`: 
         - `[Type <String>]`: 
-      - `[ResourceScopeId <String>]`: 
+      - `[ResourceScopeId <String>]`: Not implemented.
   - `[RoleAssignments <IMicrosoftGraphUnifiedRoleAssignmentMultiple[]>]`: 
     - `[Id <String>]`: Read-only.
     - `[AppScopeIds <String[]>]`: Ids of the app specific scopes when the assignment scopes are app specific. The scopes of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. App scopes are scopes that are defined and understood by this application only.
@@ -509,7 +510,7 @@ DEVICEMANAGEMENT <IMicrosoftGraphRbacApplicationMultiple>: rbacApplicationMultip
     - `[DirectoryScopeIds <String[]>]`: Ids of the directory objects representing the scopes of the assignment. The scopes of an assignment determine the set of resources for which the principals have been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.
     - `[DirectoryScopes <IMicrosoftGraphDirectoryObject[]>]`: Read-only collection referencing the directory objects that are scope of the assignment. Provided so that callers can get the directory objects using $expand at the same time as getting the role assignment. Read-only.  Supports $expand.
       - `[Id <String>]`: Read-only.
-      - `[DeletedDateTime <DateTime?>]`: 
+      - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
     - `[DisplayName <String>]`: Name of the role assignment. Required.
     - `[PrincipalIds <String[]>]`: Identifiers of the principals to which the assignment is granted.  Supports $filter (any operator only).
     - `[Principals <IMicrosoftGraphDirectoryObject[]>]`: Read-only collection referencing the assigned principals. Provided so that callers can get the principals using $expand at the same time as getting the role assignment. Read-only.  Supports $expand.
@@ -536,19 +537,19 @@ DIRECTORY <IMicrosoftGraphRbacApplication>: rbacApplication
   - `[Id <String>]`: Read-only.
   - `[ResourceNamespaces <IMicrosoftGraphUnifiedRbacResourceNamespace[]>]`: 
     - `[Id <String>]`: Read-only.
-    - `[Name <String>]`: 
-    - `[ResourceActions <IMicrosoftGraphUnifiedRbacResourceAction[]>]`: 
+    - `[Name <String>]`: Name of the resource namespace. Typically, the same name as the id property, such as microsoft.aad.b2c. Required. Supports $filter (eq, startsWith).
+    - `[ResourceActions <IMicrosoftGraphUnifiedRbacResourceAction[]>]`: Operations that an authorized principal are allowed to perform.
       - `[Id <String>]`: Read-only.
-      - `[ActionVerb <String>]`: 
-      - `[Description <String>]`: 
-      - `[Name <String>]`: 
+      - `[ActionVerb <String>]`: HTTP method for the action, such as DELETE, GET, PATCH, POST, PUT, or null. Supports $filter (eq) but not for null values.
+      - `[Description <String>]`: Description for the action. Supports $filter (eq).
+      - `[Name <String>]`: Name for the action within the resource namespace, such as microsoft.insights/programs/update. Can include slash character (/). Case insensitive. Required. Supports $filter (eq).
       - `[ResourceScope <IMicrosoftGraphUnifiedRbacResourceScope>]`: unifiedRbacResourceScope
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: Read-only.
         - `[DisplayName <String>]`: 
         - `[Scope <String>]`: 
         - `[Type <String>]`: 
-      - `[ResourceScopeId <String>]`: 
+      - `[ResourceScopeId <String>]`: Not implemented.
   - `[RoleAssignmentApprovals <IMicrosoftGraphApproval[]>]`: 
     - `[Id <String>]`: Read-only.
     - `[Steps <IMicrosoftGraphApprovalStep[]>]`: 
@@ -573,7 +574,7 @@ DIRECTORY <IMicrosoftGraphRbacApplication>: rbacApplication
     - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: Read-only.
-      - `[DeletedDateTime <DateTime?>]`: 
+      - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
     - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. Use appScopeId to limit the scope to an application only.
     - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
     - `[PrincipalId <String>]`: Identifier of the principal to which the assignment is being granted to. Can be a group or a user.
@@ -745,25 +746,26 @@ DIRECTORY <IMicrosoftGraphRbacApplication>: rbacApplication
     - `[TargetScheduleId <String>]`: The time period for which the eligibility assignment is valid.
     - `[TicketInfo <IMicrosoftGraphTicketInfo>]`: ticketInfo
   - `[RoleEligibilitySchedules <IMicrosoftGraphUnifiedRoleEligibilitySchedule[]>]`: 
+  - `[TransitiveRoleAssignments <IMicrosoftGraphUnifiedRoleAssignment1[]>]`: 
 
 ENTITLEMENTMANAGEMENT <IMicrosoftGraphRbacApplication>: rbacApplication
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
   - `[ResourceNamespaces <IMicrosoftGraphUnifiedRbacResourceNamespace[]>]`: 
     - `[Id <String>]`: Read-only.
-    - `[Name <String>]`: 
-    - `[ResourceActions <IMicrosoftGraphUnifiedRbacResourceAction[]>]`: 
+    - `[Name <String>]`: Name of the resource namespace. Typically, the same name as the id property, such as microsoft.aad.b2c. Required. Supports $filter (eq, startsWith).
+    - `[ResourceActions <IMicrosoftGraphUnifiedRbacResourceAction[]>]`: Operations that an authorized principal are allowed to perform.
       - `[Id <String>]`: Read-only.
-      - `[ActionVerb <String>]`: 
-      - `[Description <String>]`: 
-      - `[Name <String>]`: 
+      - `[ActionVerb <String>]`: HTTP method for the action, such as DELETE, GET, PATCH, POST, PUT, or null. Supports $filter (eq) but not for null values.
+      - `[Description <String>]`: Description for the action. Supports $filter (eq).
+      - `[Name <String>]`: Name for the action within the resource namespace, such as microsoft.insights/programs/update. Can include slash character (/). Case insensitive. Required. Supports $filter (eq).
       - `[ResourceScope <IMicrosoftGraphUnifiedRbacResourceScope>]`: unifiedRbacResourceScope
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: Read-only.
         - `[DisplayName <String>]`: 
         - `[Scope <String>]`: 
         - `[Type <String>]`: 
-      - `[ResourceScopeId <String>]`: 
+      - `[ResourceScopeId <String>]`: Not implemented.
   - `[RoleAssignmentApprovals <IMicrosoftGraphApproval[]>]`: 
     - `[Id <String>]`: Read-only.
     - `[Steps <IMicrosoftGraphApprovalStep[]>]`: 
@@ -788,7 +790,7 @@ ENTITLEMENTMANAGEMENT <IMicrosoftGraphRbacApplication>: rbacApplication
     - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: Read-only.
-      - `[DeletedDateTime <DateTime?>]`: 
+      - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
     - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. Use appScopeId to limit the scope to an application only.
     - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
     - `[PrincipalId <String>]`: Identifier of the principal to which the assignment is being granted to. Can be a group or a user.
@@ -960,13 +962,8 @@ ENTITLEMENTMANAGEMENT <IMicrosoftGraphRbacApplication>: rbacApplication
     - `[TargetScheduleId <String>]`: The time period for which the eligibility assignment is valid.
     - `[TicketInfo <IMicrosoftGraphTicketInfo>]`: ticketInfo
   - `[RoleEligibilitySchedules <IMicrosoftGraphUnifiedRoleEligibilitySchedule[]>]`: 
+  - `[TransitiveRoleAssignments <IMicrosoftGraphUnifiedRoleAssignment1[]>]`: 
 
 ## RELATED LINKS
-
-## RELATED LINKS
-
-
-## RELATED LINKS
-
 
 ## RELATED LINKS

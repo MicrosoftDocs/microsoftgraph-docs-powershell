@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/get-mgsecurityinformationprotection
@@ -20,13 +20,6 @@ Get-MgSecurityInformationProtection [-ExpandProperty <String[]>] [-Property <Str
 Get informationProtection from security
 
 ## EXAMPLES
-
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -69,9 +62,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityInformationProtection
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/get-mgsecurityinformationprotection](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/get-mgsecurityinformationprotection)
-

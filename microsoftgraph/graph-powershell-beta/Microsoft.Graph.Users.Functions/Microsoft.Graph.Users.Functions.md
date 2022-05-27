@@ -23,6 +23,9 @@ Invoke function findRoomLists
 ### [Get-MgUserCalendarEventDelta](Get-MgUserCalendarEventDelta.md)
 Invoke function delta
 
+### [Get-MgUserCloudPcLaunchInfo](Get-MgUserCloudPcLaunchInfo.md)
+Invoke function getCloudPcLaunchInfo
+
 ### [Get-MgUserContactDelta](Get-MgUserContactDelta.md)
 Invoke function delta
 

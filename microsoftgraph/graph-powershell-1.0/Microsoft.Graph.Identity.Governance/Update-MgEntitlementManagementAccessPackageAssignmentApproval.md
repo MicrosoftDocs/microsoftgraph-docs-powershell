@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgEntitlementManagementAccessPackageAssignmentApproval
 
 ## SYNOPSIS
-Update the navigation property accessPackageAssignmentApprovals in identityGovernance
+Approval stages for assignment requests.
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Update-MgEntitlementManagementAccessPackageAssignmentApproval -InputObject <IIde
 ```
 
 ## DESCRIPTION
-Update the navigation property accessPackageAssignmentApprovals in identityGovernance
+Approval stages for assignment requests.
 
 ## EXAMPLES
 
@@ -138,8 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -Stages
-Used for the approvalStages property of approval settings in the requestApprovalSettings property of an access package assignment policy.
-Specifies the primary, fallback, and escalation approvers of each stage.
+A collection of stages in the approval decision.
 To construct, please use Get-Help -Online and see NOTES section for STAGES properties and create a hash table.
 
 ```yaml
@@ -204,10 +203,10 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphApproval>: approval
+BODYPARAMETER <IMicrosoftGraphApproval1>: approval
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
-  - `[Stages <IMicrosoftGraphApprovalStage1[]>]`: Used for the approvalStages property of approval settings in the requestApprovalSettings property of an access package assignment policy. Specifies the primary, fallback, and escalation approvers of each stage.
+  - `[Stages <IMicrosoftGraphApprovalStage1[]>]`: A collection of stages in the approval decision.
     - `[Id <String>]`: Read-only.
     - `[AssignedToMe <Boolean?>]`: Indicates whether the stage is assigned to the calling user to review. Read-only.
     - `[DisplayName <String>]`: The label provided by the policy creator to identify an approval stage. Read-only.
@@ -215,8 +214,8 @@ BODYPARAMETER <IMicrosoftGraphApproval>: approval
     - `[ReviewResult <String>]`: The result of this approval record. Possible values include: NotReviewed, Approved, Denied.
     - `[ReviewedBy <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[ReviewedDateTime <DateTime?>]`: The date and time when a decision was recorded. The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
     - `[Status <String>]`: The stage status. Possible values: InProgress, Initializing, Completed, Expired. Read-only.
 
@@ -243,6 +242,7 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewReviewerId <String>]`: key: id of accessReviewReviewer
   - `[AccessReviewScheduleDefinitionId <String>]`: key: id of accessReviewScheduleDefinition
+  - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AgreementAcceptanceId <String>]`: key: id of agreementAcceptance
   - `[AgreementFileLocalizationId <String>]`: key: id of agreementFileLocalization
   - `[AgreementFileVersionId <String>]`: key: id of agreementFileVersion
@@ -253,6 +253,8 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[ApprovalStepId <String>]`: key: id of approvalStep
   - `[BusinessFlowTemplateId <String>]`: key: id of businessFlowTemplate
   - `[ConnectedOrganizationId <String>]`: key: id of connectedOrganization
+  - `[CustomAccessPackageWorkflowExtensionId <String>]`: key: id of customAccessPackageWorkflowExtension
+  - `[CustomExtensionHandlerId <String>]`: key: id of customExtensionHandler
   - `[DirectoryObjectId <String>]`: key: id of directoryObject
   - `[GovernanceInsightId <String>]`: key: id of governanceInsight
   - `[GovernanceResourceId <String>]`: key: id of governanceResource
@@ -260,7 +262,6 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[GovernanceRoleAssignmentRequestId <String>]`: key: id of governanceRoleAssignmentRequest
   - `[GovernanceRoleDefinitionId <String>]`: key: id of governanceRoleDefinition
   - `[GovernanceRoleSettingId <String>]`: key: id of governanceRoleSetting
-  - `[GroupId <String>]`: key: id of group
   - `[On <String>]`: Usage: on={on}
   - `[PrivilegedAccessId <String>]`: key: id of privilegedAccess
   - `[PrivilegedApprovalId <String>]`: key: id of privilegedApproval
@@ -274,7 +275,7 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[UserConsentRequestId <String>]`: key: id of userConsentRequest
   - `[UserId <String>]`: key: id of user
 
-STAGES <IMicrosoftGraphApprovalStage1[]>: Used for the approvalStages property of approval settings in the requestApprovalSettings property of an access package assignment policy. Specifies the primary, fallback, and escalation approvers of each stage.
+STAGES <IMicrosoftGraphApprovalStage1[]>: A collection of stages in the approval decision.
   - `[Id <String>]`: Read-only.
   - `[AssignedToMe <Boolean?>]`: Indicates whether the stage is assigned to the calling user to review. Read-only.
   - `[DisplayName <String>]`: The label provided by the policy creator to identify an approval stage. Read-only.
@@ -282,8 +283,8 @@ STAGES <IMicrosoftGraphApprovalStage1[]>: Used for the approvalStages property o
   - `[ReviewResult <String>]`: The result of this approval record. Possible values include: NotReviewed, Approved, Denied.
   - `[ReviewedBy <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
   - `[ReviewedDateTime <DateTime?>]`: The date and time when a decision was recorded. The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
   - `[Status <String>]`: The stage status. Possible values: InProgress, Initializing, Completed, Expired. Read-only.
 

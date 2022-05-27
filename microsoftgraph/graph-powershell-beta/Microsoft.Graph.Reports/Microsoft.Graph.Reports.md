@@ -67,6 +67,15 @@ Invoke function getAzureADLicenseUsage
 ### [Get-MgReportAzureAdUserFeatureUsage](Get-MgReportAzureAdUserFeatureUsage.md)
 Invoke function getAzureADUserFeatureUsage
 
+### [Get-MgReportBrowserDistributionUserCount](Get-MgReportBrowserDistributionUserCount.md)
+Invoke function getBrowserDistributionUserCounts
+
+### [Get-MgReportBrowserUserCount](Get-MgReportBrowserUserCount.md)
+Invoke function getBrowserUserCounts
+
+### [Get-MgReportBrowserUserDetail](Get-MgReportBrowserUserDetail.md)
+Invoke function getBrowserUserDetail
+
 ### [Get-MgReportCredentialUsageSummary](Get-MgReportCredentialUsageSummary.md)
 Invoke function getCredentialUsageSummary
 
@@ -250,6 +259,15 @@ Invoke function getSharePointSiteUsageStorage
 ### [Get-MgReportSkype](Get-MgReportSkype.md)
 Invoke function getSkypeForBusinessActivityCounts
 
+### [Get-MgReportTeamActivityCount](Get-MgReportTeamActivityCount.md)
+Invoke function getTeamsTeamActivityCounts
+
+### [Get-MgReportTeamActivityDetail](Get-MgReportTeamActivityDetail.md)
+Invoke function getTeamsTeamActivityDetail
+
+### [Get-MgReportTeamActivityDistributionCount](Get-MgReportTeamActivityDistributionCount.md)
+Invoke function getTeamsTeamActivityDistributionCounts
+
 ### [Get-MgReportTeamDeviceUsageDistributionTotalUserCount](Get-MgReportTeamDeviceUsageDistributionTotalUserCount.md)
 Invoke function getTeamsDeviceUsageDistributionTotalUserCounts
 
@@ -276,6 +294,9 @@ Invoke function getTeamsUserActivityDistributionUserCounts
 
 ### [Get-MgReportTeamUserActivityTotalCount](Get-MgReportTeamUserActivityTotalCount.md)
 Invoke function getTeamsUserActivityTotalCounts
+
+### [Get-MgReportTeamUserActivityTotalDistributionCount](Get-MgReportTeamUserActivityTotalDistributionCount.md)
+Invoke function getTeamsUserActivityTotalDistributionCounts
 
 ### [Get-MgReportTeamUserActivityTotalUserCount](Get-MgReportTeamUserActivityTotalUserCount.md)
 Invoke function getTeamsUserActivityTotalUserCounts

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDomainNameReference
 
 ## SYNOPSIS
-Get alerts from security
+Read-only, Nullable
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgDomainNameReference -DomainId <String> [-ExpandProperty <String[]>] [-Filt
 ```
 
 ## DESCRIPTION
-Get alerts from security
+Read-only, Nullable
 
 ## EXAMPLES
 

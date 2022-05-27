@@ -444,8 +444,8 @@ BODYPARAMETER <IMicrosoftGraphAccessReview>: accessReview
   - `[BusinessFlowTemplateId <String>]`: The business flow template identifier. Required on create.  This value is case sensitive.
   - `[CreatedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
     - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
     - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
   - `[Decisions <IMicrosoftGraphAccessReviewDecision[]>]`: The collection of decisions for this access review.
@@ -466,14 +466,14 @@ BODYPARAMETER <IMicrosoftGraphAccessReview>: accessReview
   - `[MyDecisions <IMicrosoftGraphAccessReviewDecision[]>]`: The collection of decisions for the caller, if the caller is a reviewer.
   - `[ReviewedEntity <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
   - `[ReviewerType <String>]`: The relationship type of reviewer to the target object, one of self, delegated or entityOwners. Required on create.
   - `[Reviewers <IMicrosoftGraphAccessReviewReviewer[]>]`: The collection of reviewers for an access review, if access review reviewerType is of type delegated.
     - `[Id <String>]`: Read-only.
     - `[CreatedDateTime <DateTime?>]`: The date when the reviewer was added for the access review.
     - `[DisplayName <String>]`: Name of reviewer.
-    - `[UserPrincipalName <String>]`: User principal name of the user.
+    - `[UserPrincipalName <String>]`: User principal name of the reviewer.
   - `[Settings <IMicrosoftGraphAccessReviewSettings>]`: accessReviewSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AccessRecommendationsEnabled <Boolean?>]`: Indicates whether showing recommendations to reviewers is enabled.
@@ -497,8 +497,8 @@ BODYPARAMETER <IMicrosoftGraphAccessReview>: accessReview
 
 CREATEDBY <IMicrosoftGraphUserIdentity>: userIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-  - `[Id <String>]`: The identifier of the identity. This property is read-only.
+  - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+  - `[Id <String>]`: Unique identifier for the identity.
   - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
   - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
 
@@ -508,8 +508,8 @@ DECISIONS <IMicrosoftGraphAccessReviewDecision[]>: The collection of decisions f
   - `[AccessReviewId <String>]`: The feature-generated id of the access review.
   - `[AppliedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
     - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
     - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
   - `[AppliedDateTime <DateTime?>]`: The date and time when the review decision was applied.
@@ -542,6 +542,7 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewReviewerId <String>]`: key: id of accessReviewReviewer
   - `[AccessReviewScheduleDefinitionId <String>]`: key: id of accessReviewScheduleDefinition
+  - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AgreementAcceptanceId <String>]`: key: id of agreementAcceptance
   - `[AgreementFileLocalizationId <String>]`: key: id of agreementFileLocalization
   - `[AgreementFileVersionId <String>]`: key: id of agreementFileVersion
@@ -552,6 +553,8 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[ApprovalStepId <String>]`: key: id of approvalStep
   - `[BusinessFlowTemplateId <String>]`: key: id of businessFlowTemplate
   - `[ConnectedOrganizationId <String>]`: key: id of connectedOrganization
+  - `[CustomAccessPackageWorkflowExtensionId <String>]`: key: id of customAccessPackageWorkflowExtension
+  - `[CustomExtensionHandlerId <String>]`: key: id of customExtensionHandler
   - `[DirectoryObjectId <String>]`: key: id of directoryObject
   - `[GovernanceInsightId <String>]`: key: id of governanceInsight
   - `[GovernanceResourceId <String>]`: key: id of governanceResource
@@ -559,7 +562,6 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[GovernanceRoleAssignmentRequestId <String>]`: key: id of governanceRoleAssignmentRequest
   - `[GovernanceRoleDefinitionId <String>]`: key: id of governanceRoleDefinition
   - `[GovernanceRoleSettingId <String>]`: key: id of governanceRoleSetting
-  - `[GroupId <String>]`: key: id of group
   - `[On <String>]`: Usage: on={on}
   - `[PrivilegedAccessId <String>]`: key: id of privilegedAccess
   - `[PrivilegedApprovalId <String>]`: key: id of privilegedApproval
@@ -578,8 +580,8 @@ INSTANCES <IMicrosoftGraphAccessReview[]>: The collection of access reviews inst
   - `[BusinessFlowTemplateId <String>]`: The business flow template identifier. Required on create.  This value is case sensitive.
   - `[CreatedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
     - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
     - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
   - `[Decisions <IMicrosoftGraphAccessReviewDecision[]>]`: The collection of decisions for this access review.
@@ -600,14 +602,14 @@ INSTANCES <IMicrosoftGraphAccessReview[]>: The collection of access reviews inst
   - `[MyDecisions <IMicrosoftGraphAccessReviewDecision[]>]`: The collection of decisions for the caller, if the caller is a reviewer.
   - `[ReviewedEntity <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
   - `[ReviewerType <String>]`: The relationship type of reviewer to the target object, one of self, delegated or entityOwners. Required on create.
   - `[Reviewers <IMicrosoftGraphAccessReviewReviewer[]>]`: The collection of reviewers for an access review, if access review reviewerType is of type delegated.
     - `[Id <String>]`: Read-only.
     - `[CreatedDateTime <DateTime?>]`: The date when the reviewer was added for the access review.
     - `[DisplayName <String>]`: Name of reviewer.
-    - `[UserPrincipalName <String>]`: User principal name of the user.
+    - `[UserPrincipalName <String>]`: User principal name of the reviewer.
   - `[Settings <IMicrosoftGraphAccessReviewSettings>]`: accessReviewSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AccessRecommendationsEnabled <Boolean?>]`: Indicates whether showing recommendations to reviewers is enabled.
@@ -635,8 +637,8 @@ MYDECISIONS <IMicrosoftGraphAccessReviewDecision[]>: The collection of decisions
   - `[AccessReviewId <String>]`: The feature-generated id of the access review.
   - `[AppliedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
     - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
     - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
   - `[AppliedDateTime <DateTime?>]`: The date and time when the review decision was applied.
@@ -648,14 +650,14 @@ MYDECISIONS <IMicrosoftGraphAccessReviewDecision[]>: The collection of decisions
 
 REVIEWEDENTITY <IMicrosoftGraphIdentity>: identity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-  - `[Id <String>]`: The identifier of the identity. This property is read-only.
+  - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+  - `[Id <String>]`: Unique identifier for the identity.
 
 REVIEWERS <IMicrosoftGraphAccessReviewReviewer[]>: The collection of reviewers for an access review, if access review reviewerType is of type delegated.
   - `[Id <String>]`: Read-only.
   - `[CreatedDateTime <DateTime?>]`: The date when the reviewer was added for the access review.
   - `[DisplayName <String>]`: Name of reviewer.
-  - `[UserPrincipalName <String>]`: User principal name of the user.
+  - `[UserPrincipalName <String>]`: User principal name of the reviewer.
 
 SETTINGS <IMicrosoftGraphAccessReviewSettings>: accessReviewSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -677,11 +679,5 @@ SETTINGS <IMicrosoftGraphAccessReviewSettings>: accessReviewSettings
   - `[RemindersEnabled <Boolean?>]`: Indicates whether sending reminder emails to reviewers is enabled.
 
 ## RELATED LINKS
-
-## RELATED LINKS
-
-
-## RELATED LINKS
-
 
 ## RELATED LINKS

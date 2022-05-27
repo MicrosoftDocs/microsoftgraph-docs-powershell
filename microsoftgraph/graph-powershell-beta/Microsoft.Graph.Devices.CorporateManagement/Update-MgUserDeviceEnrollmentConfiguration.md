@@ -367,6 +367,7 @@ BODYPARAMETER <IMicrosoftGraphDeviceEnrollmentConfiguration>: The Base Class of 
       - `[DeviceAndAppManagementAssignmentFilterType <String>]`: Represents type of the assignment filter.
   - `[CreatedDateTime <DateTime?>]`: Created date time in UTC of the device enrollment configuration
   - `[Description <String>]`: The description of the device enrollment configuration
+  - `[DeviceEnrollmentConfigurationType <String>]`: Describes the TemplateFamily for the Template entity
   - `[DisplayName <String>]`: The display name of the device enrollment configuration
   - `[LastModifiedDateTime <DateTime?>]`: Last modified date time in UTC of the device enrollment configuration
   - `[Priority <Int32?>]`: Priority is used when a user exists in multiple groups that are assigned enrollment configuration. Users are subject only to the configuration with the lowest priority value.

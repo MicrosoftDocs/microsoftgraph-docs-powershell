@@ -17,10 +17,16 @@ Invoke action add
 ### [Add-MgTeamChannelMember](Add-MgTeamChannelMember.md)
 Invoke action add
 
+### [Add-MgTeamChannelSharedWithTeamAllowedMember](Add-MgTeamChannelSharedWithTeamAllowedMember.md)
+Invoke action add
+
 ### [Add-MgTeamMember](Add-MgTeamMember.md)
 Invoke action add
 
 ### [Add-MgTeamPrimaryChannelMember](Add-MgTeamPrimaryChannelMember.md)
+Invoke action add
+
+### [Add-MgTeamPrimaryChannelSharedWithTeamAllowedMember](Add-MgTeamPrimaryChannelSharedWithTeamAllowedMember.md)
 Invoke action add
 
 ### [Complete-MgTeamChannelMigration](Complete-MgTeamChannelMigration.md)
@@ -127,10 +133,19 @@ Get team from groups
 ### [Get-MgTeam](Get-MgTeam.md)
 Get entity from teams by key
 
+### [Get-MgTeamAllChannelMessage](Get-MgTeamAllChannelMessage.md)
+Invoke function getAllMessages
+
 ### [Get-MgTeamChannel](Get-MgTeamChannel.md)
 The collection of channels and messages associated with the team.
 
+### [Get-MgTeamChannelByRef](Get-MgTeamChannelByRef.md)
+Get ref of allChannels from teams
+
 ### [Get-MgTeamChannelFileFolder](Get-MgTeamChannelFileFolder.md)
+Metadata for the location where the channel's files are stored.
+
+### [Get-MgTeamChannelFileFolderByRef](Get-MgTeamChannelFileFolderByRef.md)
 Metadata for the location where the channel's files are stored.
 
 ### [Get-MgTeamChannelMember](Get-MgTeamChannelMember.md)
@@ -153,6 +168,15 @@ Replies for a specified message.
 ### [Get-MgTeamChannelMessageReplyDelta](Get-MgTeamChannelMessageReplyDelta.md)
 Invoke function delta
 
+### [Get-MgTeamChannelShared](Get-MgTeamChannelShared.md)
+Get sharedWithTeams from teams
+
+### [Get-MgTeamChannelSharedWithTeamAllowedMember](Get-MgTeamChannelSharedWithTeamAllowedMember.md)
+Get allowedMembers from teams
+
+### [Get-MgTeamChannelSharedWithTeamAllowedMemberByRef](Get-MgTeamChannelSharedWithTeamAllowedMemberByRef.md)
+Get ref of allowedMembers from teams
+
 ### [Get-MgTeamChannelTab](Get-MgTeamChannelTab.md)
 A collection of all the tabs in the channel.
 A navigation property.
@@ -167,6 +191,15 @@ This cannot be changed after tab creation.
 
 ### [Get-MgTeamGroupByRef](Get-MgTeamGroupByRef.md)
 Get ref of group from teams
+
+### [Get-MgTeamIncomingChannel](Get-MgTeamIncomingChannel.md)
+Get incomingChannels from teams
+
+### [Get-MgTeamIncomingChannelByRef](Get-MgTeamIncomingChannelByRef.md)
+Get ref of incomingChannels from teams
+
+### [Get-MgTeamIncomingChannelMessage](Get-MgTeamIncomingChannelMessage.md)
+Invoke function getAllMessages
 
 ### [Get-MgTeamInstalledApp](Get-MgTeamInstalledApp.md)
 The apps installed in this team.
@@ -219,6 +252,9 @@ The general channel for the team.
 ### [Get-MgTeamPrimaryChannelFileFolder](Get-MgTeamPrimaryChannelFileFolder.md)
 Metadata for the location where the channel's files are stored.
 
+### [Get-MgTeamPrimaryChannelFileFolderByRef](Get-MgTeamPrimaryChannelFileFolderByRef.md)
+Metadata for the location where the channel's files are stored.
+
 ### [Get-MgTeamPrimaryChannelMember](Get-MgTeamPrimaryChannelMember.md)
 A collection of membership records associated with the channel.
 
@@ -238,6 +274,15 @@ Replies for a specified message.
 
 ### [Get-MgTeamPrimaryChannelMessageReplyDelta](Get-MgTeamPrimaryChannelMessageReplyDelta.md)
 Invoke function delta
+
+### [Get-MgTeamPrimaryChannelShared](Get-MgTeamPrimaryChannelShared.md)
+Get sharedWithTeams from teams
+
+### [Get-MgTeamPrimaryChannelSharedWithTeamAllowedMember](Get-MgTeamPrimaryChannelSharedWithTeamAllowedMember.md)
+Get allowedMembers from teams
+
+### [Get-MgTeamPrimaryChannelSharedWithTeamAllowedMemberByRef](Get-MgTeamPrimaryChannelSharedWithTeamAllowedMemberByRef.md)
+Get ref of allowedMembers from teams
 
 ### [Get-MgTeamPrimaryChannelTab](Get-MgTeamPrimaryChannelTab.md)
 A collection of all the tabs in the channel.
@@ -337,6 +382,9 @@ A container for Microsoft Teams features available for the user.
 Read-only.
 Nullable.
 
+### [Get-MgUserTeamworkAssociatedTeam](Get-MgUserTeamworkAssociatedTeam.md)
+Get associatedTeams from users
+
 ### [Get-MgUserTeamworkInstalledApp](Get-MgUserTeamworkInstalledApp.md)
 The apps installed in the personal scope of this user.
 
@@ -358,6 +406,12 @@ Invoke action clockIn
 ### [Invoke-MgClockTeamScheduleTimeCardOut](Invoke-MgClockTeamScheduleTimeCardOut.md)
 Invoke action clockOut
 
+### [Invoke-MgHaveTeamChannel](Invoke-MgHaveTeamChannel.md)
+Invoke function doesUserHaveAccess
+
+### [Invoke-MgHaveTeamPrimaryChannel](Invoke-MgHaveTeamPrimaryChannel.md)
+Invoke function doesUserHaveAccess
+
 ### [Invoke-MgMarkChatRead](Invoke-MgMarkChatRead.md)
 Invoke action markChatReadForUser
 
@@ -370,11 +424,35 @@ Invoke function allMessages
 ### [Invoke-MgMessageTeam](Invoke-MgMessageTeam.md)
 Invoke function allMessages
 
+### [Invoke-MgMessageTeamAllChannel](Invoke-MgMessageTeamAllChannel.md)
+Invoke function allMessages
+
 ### [Invoke-MgMessageTeamChannel](Invoke-MgMessageTeamChannel.md)
+Invoke function allMessages
+
+### [Invoke-MgMessageTeamIncomingChannel](Invoke-MgMessageTeamIncomingChannel.md)
 Invoke function allMessages
 
 ### [Invoke-MgShareTeamSchedule](Invoke-MgShareTeamSchedule.md)
 Invoke action share
+
+### [Invoke-MgSoftChatMessageDelete](Invoke-MgSoftChatMessageDelete.md)
+Invoke action softDelete
+
+### [Invoke-MgSoftChatMessageReplyDelete](Invoke-MgSoftChatMessageReplyDelete.md)
+Invoke action softDelete
+
+### [Invoke-MgSoftTeamChannelMessageDelete](Invoke-MgSoftTeamChannelMessageDelete.md)
+Invoke action softDelete
+
+### [Invoke-MgSoftTeamChannelMessageReplyDelete](Invoke-MgSoftTeamChannelMessageReplyDelete.md)
+Invoke action softDelete
+
+### [Invoke-MgSoftTeamPrimaryChannelMessageDelete](Invoke-MgSoftTeamPrimaryChannelMessageDelete.md)
+Invoke action softDelete
+
+### [Invoke-MgSoftTeamPrimaryChannelMessageReplyDelete](Invoke-MgSoftTeamPrimaryChannelMessageReplyDelete.md)
+Invoke action softDelete
 
 ### [Invoke-MgUnarchiveTeam](Invoke-MgUnarchiveTeam.md)
 Invoke action unarchive
@@ -426,6 +504,9 @@ Add new entity to teams
 ### [New-MgTeamChannel](New-MgTeamChannel.md)
 The collection of channels and messages associated with the team.
 
+### [New-MgTeamChannelByRef](New-MgTeamChannelByRef.md)
+Create new navigation property ref to allChannels for teams
+
 ### [New-MgTeamChannelEmail](New-MgTeamChannelEmail.md)
 Invoke action provisionEmail
 
@@ -443,9 +524,18 @@ Content in a message hosted by Microsoft Teams - for example, images or code sni
 ### [New-MgTeamChannelMessageReply](New-MgTeamChannelMessageReply.md)
 Replies for a specified message.
 
+### [New-MgTeamChannelShared](New-MgTeamChannelShared.md)
+Create new navigation property to sharedWithTeams for teams
+
+### [New-MgTeamChannelSharedWithTeamAllowedMemberByRef](New-MgTeamChannelSharedWithTeamAllowedMemberByRef.md)
+Create new navigation property ref to allowedMembers for teams
+
 ### [New-MgTeamChannelTab](New-MgTeamChannelTab.md)
 A collection of all the tabs in the channel.
 A navigation property.
+
+### [New-MgTeamIncomingChannelByRef](New-MgTeamIncomingChannelByRef.md)
+Create new navigation property ref to incomingChannels for teams
 
 ### [New-MgTeamInstalledApp](New-MgTeamInstalledApp.md)
 The apps installed in this team.
@@ -481,6 +571,12 @@ Content in a message hosted by Microsoft Teams - for example, images or code sni
 
 ### [New-MgTeamPrimaryChannelMessageReply](New-MgTeamPrimaryChannelMessageReply.md)
 Replies for a specified message.
+
+### [New-MgTeamPrimaryChannelShared](New-MgTeamPrimaryChannelShared.md)
+Create new navigation property to sharedWithTeams for teams
+
+### [New-MgTeamPrimaryChannelSharedWithTeamAllowedMemberByRef](New-MgTeamPrimaryChannelSharedWithTeamAllowedMemberByRef.md)
+Create new navigation property ref to allowedMembers for teams
 
 ### [New-MgTeamPrimaryChannelTab](New-MgTeamPrimaryChannelTab.md)
 A collection of all the tabs in the channel.
@@ -538,6 +634,9 @@ Create new navigation property to chats for users
 The Microsoft Teams teams that the user is a member of.
 Read-only.
 Nullable.
+
+### [New-MgUserTeamworkAssociatedTeam](New-MgUserTeamworkAssociatedTeam.md)
+Create new navigation property to associatedTeams for users
 
 ### [New-MgUserTeamworkInstalledApp](New-MgUserTeamworkInstalledApp.md)
 The apps installed in the personal scope of this user.
@@ -612,8 +711,14 @@ The collection of channels and messages associated with the team.
 ### [Remove-MgTeamChannelEmail](Remove-MgTeamChannelEmail.md)
 Invoke action removeEmail
 
+### [Remove-MgTeamChannelFileFolderByRef](Remove-MgTeamChannelFileFolderByRef.md)
+Metadata for the location where the channel's files are stored.
+
 ### [Remove-MgTeamChannelMember](Remove-MgTeamChannelMember.md)
 A collection of membership records associated with the channel.
+
+### [Remove-MgTeamChannelShared](Remove-MgTeamChannelShared.md)
+Delete navigation property sharedWithTeams for teams
 
 ### [Remove-MgTeamChannelTab](Remove-MgTeamChannelTab.md)
 A collection of all the tabs in the channel.
@@ -653,8 +758,14 @@ The general channel for the team.
 ### [Remove-MgTeamPrimaryChannelEmail](Remove-MgTeamPrimaryChannelEmail.md)
 Invoke action removeEmail
 
+### [Remove-MgTeamPrimaryChannelFileFolderByRef](Remove-MgTeamPrimaryChannelFileFolderByRef.md)
+Metadata for the location where the channel's files are stored.
+
 ### [Remove-MgTeamPrimaryChannelMember](Remove-MgTeamPrimaryChannelMember.md)
 A collection of membership records associated with the channel.
+
+### [Remove-MgTeamPrimaryChannelShared](Remove-MgTeamPrimaryChannelShared.md)
+Delete navigation property sharedWithTeams for teams
 
 ### [Remove-MgTeamPrimaryChannelTab](Remove-MgTeamPrimaryChannelTab.md)
 A collection of all the tabs in the channel.
@@ -733,6 +844,9 @@ A container for Microsoft Teams features available for the user.
 Read-only.
 Nullable.
 
+### [Remove-MgUserTeamworkAssociatedTeam](Remove-MgUserTeamworkAssociatedTeam.md)
+Delete navigation property associatedTeams for users
+
 ### [Remove-MgUserTeamworkInstalledApp](Remove-MgUserTeamworkInstalledApp.md)
 The apps installed in the personal scope of this user.
 
@@ -764,6 +878,9 @@ The details of this version of the app.
 The application that is linked to the tab.
 This cannot be changed after tab creation.
 
+### [Set-MgTeamChannelFileFolderByRef](Set-MgTeamChannelFileFolderByRef.md)
+Metadata for the location where the channel's files are stored.
+
 ### [Set-MgTeamChannelTabTeamAppByRef](Set-MgTeamChannelTabTeamAppByRef.md)
 The application that is linked to the tab.
 This cannot be changed after tab creation.
@@ -779,6 +896,9 @@ The details of this version of the app.
 
 ### [Set-MgTeamPhotoContent](Set-MgTeamPhotoContent.md)
 The team photo.
+
+### [Set-MgTeamPrimaryChannelFileFolderByRef](Set-MgTeamPrimaryChannelFileFolderByRef.md)
+Metadata for the location where the channel's files are stored.
 
 ### [Set-MgTeamPrimaryChannelTabTeamAppByRef](Set-MgTeamPrimaryChannelTabTeamAppByRef.md)
 The application that is linked to the tab.
@@ -799,6 +919,24 @@ Invoke action runDiagnostics
 
 ### [Stop-MgTeamScheduleTimeCardBreak](Stop-MgTeamScheduleTimeCardBreak.md)
 Invoke action endBreak
+
+### [Undo-MgChatMessageReplySoftDelete](Undo-MgChatMessageReplySoftDelete.md)
+Invoke action undoSoftDelete
+
+### [Undo-MgChatMessageSoftDelete](Undo-MgChatMessageSoftDelete.md)
+Invoke action undoSoftDelete
+
+### [Undo-MgTeamChannelMessageReplySoftDelete](Undo-MgTeamChannelMessageReplySoftDelete.md)
+Invoke action undoSoftDelete
+
+### [Undo-MgTeamChannelMessageSoftDelete](Undo-MgTeamChannelMessageSoftDelete.md)
+Invoke action undoSoftDelete
+
+### [Undo-MgTeamPrimaryChannelMessageReplySoftDelete](Undo-MgTeamPrimaryChannelMessageReplySoftDelete.md)
+Invoke action undoSoftDelete
+
+### [Undo-MgTeamPrimaryChannelMessageSoftDelete](Undo-MgTeamPrimaryChannelMessageSoftDelete.md)
+Invoke action undoSoftDelete
 
 ### [Update-MgAppCatalogTeamApp](Update-MgAppCatalogTeamApp.md)
 Update the navigation property teamsApps in appCatalogs
@@ -875,6 +1013,9 @@ Nullable.
 ### [Update-MgTeamChannelMessageReply](Update-MgTeamChannelMessageReply.md)
 Replies for a specified message.
 
+### [Update-MgTeamChannelShared](Update-MgTeamChannelShared.md)
+Update the navigation property sharedWithTeams in teams
+
 ### [Update-MgTeamChannelTab](Update-MgTeamChannelTab.md)
 A collection of all the tabs in the channel.
 A navigation property.
@@ -907,6 +1048,9 @@ Nullable.
 
 ### [Update-MgTeamPrimaryChannelMessageReply](Update-MgTeamPrimaryChannelMessageReply.md)
 Replies for a specified message.
+
+### [Update-MgTeamPrimaryChannelShared](Update-MgTeamPrimaryChannelShared.md)
+Update the navigation property sharedWithTeams in teams
 
 ### [Update-MgTeamPrimaryChannelTab](Update-MgTeamPrimaryChannelTab.md)
 A collection of all the tabs in the channel.
@@ -982,6 +1126,9 @@ Update the navigation property chats in users
 A container for Microsoft Teams features available for the user.
 Read-only.
 Nullable.
+
+### [Update-MgUserTeamworkAssociatedTeam](Update-MgUserTeamworkAssociatedTeam.md)
+Update the navigation property associatedTeams in users
 
 ### [Update-MgUserTeamworkInstalledApp](Update-MgUserTeamworkInstalledApp.md)
 The apps installed in the personal scope of this user.

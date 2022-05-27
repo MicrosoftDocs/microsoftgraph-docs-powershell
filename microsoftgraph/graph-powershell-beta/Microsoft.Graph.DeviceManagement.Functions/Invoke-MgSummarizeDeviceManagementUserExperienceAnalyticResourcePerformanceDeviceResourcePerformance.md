@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions/invoke-mgsummarizedevicemanagementuserexperienceanalyticresourceperformancedeviceresourceperformance
@@ -82,6 +82,7 @@ To create the parameters described below, construct a hash table containing the 
 
 INPUTOBJECT <IDeviceManagementFunctionsIdentity>: Identity Parameter
   - `[Category <String>]`: Usage: category={category}
+  - `[CloudPcId <String>]`: key: id of cloudPC
   - `[DepOnboardingSettingId <String>]`: key: id of depOnboardingSetting
   - `[DeviceAndAppManagementAssignmentFilterId <String>]`: key: id of deviceAndAppManagementAssignmentFilter
   - `[DeviceAndAppManagementRoleAssignmentId <String>]`: key: id of deviceAndAppManagementRoleAssignment

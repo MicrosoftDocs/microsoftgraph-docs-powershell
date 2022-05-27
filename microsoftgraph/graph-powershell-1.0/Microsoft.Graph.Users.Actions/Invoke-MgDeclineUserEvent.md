@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgdeclineuserevent
@@ -242,19 +242,21 @@ BODYPARAMETER <IPathsT4Hh9DUsersUserIdEventsEventIdMicrosoftGraphDeclinePostRequ
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
-      - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
+      - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+      - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
     - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
   - `[SendResponse <Boolean?>]`: 
 
 INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceDecisionItemId <String>]`: key: id of accessReviewInstanceDecisionItem
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
+  - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
   - `[AuthenticationMethodId <String>]`: key: id of authenticationMethod
   - `[BaseTaskId <String>]`: key: id of baseTask
   - `[BaseTaskListId <String>]`: key: id of baseTaskList
   - `[CalendarId <String>]`: key: id of calendar
+  - `[CloudPcId <String>]`: key: id of cloudPC
   - `[DeviceEnrollmentConfigurationId <String>]`: key: id of deviceEnrollmentConfiguration
   - `[DeviceLogCollectionResponseId <String>]`: key: id of deviceLogCollectionResponse
   - `[EventId <String>]`: key: id of event
@@ -279,8 +281,8 @@ PROPOSEDNEWTIME <IMicrosoftGraphTimeSlot>: timeSlot
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
-    - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
+    - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+    - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
   - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
 
 ## RELATED LINKS

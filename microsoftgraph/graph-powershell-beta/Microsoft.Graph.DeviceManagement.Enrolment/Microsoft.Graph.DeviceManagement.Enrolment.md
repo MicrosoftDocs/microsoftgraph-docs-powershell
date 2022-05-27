@@ -124,7 +124,7 @@ Get cloudPC from roleManagement
 Get resourceNamespaces from roleManagement
 
 ### [Get-MgRoleManagementCloudPcResourceNamespaceResourceAction](Get-MgRoleManagementCloudPcResourceNamespaceResourceAction.md)
-Get resourceActions from roleManagement
+Operations that an authorized principal are allowed to perform.
 
 ### [Get-MgRoleManagementCloudPcResourceNamespaceResourceActionResourceScope](Get-MgRoleManagementCloudPcResourceNamespaceResourceActionResourceScope.md)
 Get resourceScope from roleManagement
@@ -186,7 +186,7 @@ The RbacApplication for Device Management
 Get resourceNamespaces from roleManagement
 
 ### [Get-MgRoleManagementDeviceManagementResourceNamespaceResourceAction](Get-MgRoleManagementDeviceManagementResourceNamespaceResourceAction.md)
-Get resourceActions from roleManagement
+Operations that an authorized principal are allowed to perform.
 
 ### [Get-MgRoleManagementDeviceManagementResourceNamespaceResourceActionResourceScope](Get-MgRoleManagementDeviceManagementResourceNamespaceResourceActionResourceScope.md)
 Get resourceScope from roleManagement
@@ -249,7 +249,7 @@ Nullable.
 Get resourceNamespaces from roleManagement
 
 ### [Get-MgRoleManagementDirectoryResourceNamespaceResourceAction](Get-MgRoleManagementDirectoryResourceNamespaceResourceAction.md)
-Get resourceActions from roleManagement
+Operations that an authorized principal are allowed to perform.
 
 ### [Get-MgRoleManagementDirectoryResourceNamespaceResourceActionResourceScope](Get-MgRoleManagementDirectoryResourceNamespaceResourceActionResourceScope.md)
 Get resourceScope from roleManagement
@@ -430,14 +430,52 @@ Property indicating the schedule for an eligible role assignment.
 ### [Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestTargetScheduleByRef](Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestTargetScheduleByRef.md)
 Property indicating the schedule for an eligible role assignment.
 
+### [Get-MgRoleManagementDirectoryTransitiveRoleAssignment](Get-MgRoleManagementDirectoryTransitiveRoleAssignment.md)
+Get transitiveRoleAssignments from roleManagement
+
+### [Get-MgRoleManagementDirectoryTransitiveRoleAssignmentAppScope](Get-MgRoleManagementDirectoryTransitiveRoleAssignmentAppScope.md)
+Read-only property with details of the app specific scope when the assignment scope is app specific.
+Containment entity.
+Supports $expand.
+
+### [Get-MgRoleManagementDirectoryTransitiveRoleAssignmentDirectoryScope](Get-MgRoleManagementDirectoryTransitiveRoleAssignmentDirectoryScope.md)
+The directory object that is the scope of the assignment.
+Read-only.
+Supports $expand.
+
+### [Get-MgRoleManagementDirectoryTransitiveRoleAssignmentDirectoryScopeByRef](Get-MgRoleManagementDirectoryTransitiveRoleAssignmentDirectoryScopeByRef.md)
+The directory object that is the scope of the assignment.
+Read-only.
+Supports $expand.
+
+### [Get-MgRoleManagementDirectoryTransitiveRoleAssignmentPrincipal](Get-MgRoleManagementDirectoryTransitiveRoleAssignmentPrincipal.md)
+Referencing the assigned principal.
+Read-only.
+Supports $expand.
+
+### [Get-MgRoleManagementDirectoryTransitiveRoleAssignmentPrincipalByRef](Get-MgRoleManagementDirectoryTransitiveRoleAssignmentPrincipalByRef.md)
+Referencing the assigned principal.
+Read-only.
+Supports $expand.
+
+### [Get-MgRoleManagementDirectoryTransitiveRoleAssignmentRoleDefinition](Get-MgRoleManagementDirectoryTransitiveRoleAssignmentRoleDefinition.md)
+The roleDefinition the assignment is for.
+Supports $expand.
+roleDefinition.Id will be auto expanded.
+
+### [Get-MgRoleManagementDirectoryTransitiveRoleAssignmentRoleDefinitionByRef](Get-MgRoleManagementDirectoryTransitiveRoleAssignmentRoleDefinitionByRef.md)
+The roleDefinition the assignment is for.
+Supports $expand.
+roleDefinition.Id will be auto expanded.
+
 ### [Get-MgRoleManagementEntitlementManagement](Get-MgRoleManagementEntitlementManagement.md)
-Container for all entitlement management resources in Azure AD identity governance.
+Container for roles and assignments for entitlement management resources.
 
 ### [Get-MgRoleManagementEntitlementManagementResourceNamespace](Get-MgRoleManagementEntitlementManagementResourceNamespace.md)
 Get resourceNamespaces from roleManagement
 
 ### [Get-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction](Get-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction.md)
-Get resourceActions from roleManagement
+Operations that an authorized principal are allowed to perform.
 
 ### [Get-MgRoleManagementEntitlementManagementResourceNamespaceResourceActionResourceScope](Get-MgRoleManagementEntitlementManagementResourceNamespaceResourceActionResourceScope.md)
 Get resourceScope from roleManagement
@@ -618,6 +656,44 @@ Property indicating the schedule for an eligible role assignment.
 ### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestTargetScheduleByRef](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestTargetScheduleByRef.md)
 Property indicating the schedule for an eligible role assignment.
 
+### [Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignment](Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignment.md)
+Get transitiveRoleAssignments from roleManagement
+
+### [Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentAppScope](Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentAppScope.md)
+Read-only property with details of the app specific scope when the assignment scope is app specific.
+Containment entity.
+Supports $expand.
+
+### [Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentDirectoryScope](Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentDirectoryScope.md)
+The directory object that is the scope of the assignment.
+Read-only.
+Supports $expand.
+
+### [Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentDirectoryScopeByRef](Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentDirectoryScopeByRef.md)
+The directory object that is the scope of the assignment.
+Read-only.
+Supports $expand.
+
+### [Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentPrincipal](Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentPrincipal.md)
+Referencing the assigned principal.
+Read-only.
+Supports $expand.
+
+### [Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentPrincipalByRef](Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentPrincipalByRef.md)
+Referencing the assigned principal.
+Read-only.
+Supports $expand.
+
+### [Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentRoleDefinition](Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentRoleDefinition.md)
+The roleDefinition the assignment is for.
+Supports $expand.
+roleDefinition.Id will be auto expanded.
+
+### [Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentRoleDefinitionByRef](Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentRoleDefinitionByRef.md)
+The roleDefinition the assignment is for.
+Supports $expand.
+roleDefinition.Id will be auto expanded.
+
 ### [Import-MgRoleManagementCloudPcResourceNamespaceResourceAction](Import-MgRoleManagementCloudPcResourceNamespaceResourceAction.md)
 Invoke action importResourceActions
 
@@ -748,7 +824,7 @@ The list of group assignments of the profile.
 Create new navigation property to resourceNamespaces for roleManagement
 
 ### [New-MgRoleManagementCloudPcResourceNamespaceResourceAction](New-MgRoleManagementCloudPcResourceNamespaceResourceAction.md)
-Create new navigation property to resourceActions for roleManagement
+Operations that an authorized principal are allowed to perform.
 
 ### [New-MgRoleManagementCloudPcRoleAssignment](New-MgRoleManagementCloudPcRoleAssignment.md)
 Create new navigation property to roleAssignments for roleManagement
@@ -782,7 +858,7 @@ Supports $expand.
 Create new navigation property to resourceNamespaces for roleManagement
 
 ### [New-MgRoleManagementDeviceManagementResourceNamespaceResourceAction](New-MgRoleManagementDeviceManagementResourceNamespaceResourceAction.md)
-Create new navigation property to resourceActions for roleManagement
+Operations that an authorized principal are allowed to perform.
 
 ### [New-MgRoleManagementDeviceManagementRoleAssignment](New-MgRoleManagementDeviceManagementRoleAssignment.md)
 Create new navigation property to roleAssignments for roleManagement
@@ -816,7 +892,7 @@ Supports $expand.
 Create new navigation property to resourceNamespaces for roleManagement
 
 ### [New-MgRoleManagementDirectoryResourceNamespaceResourceAction](New-MgRoleManagementDirectoryResourceNamespaceResourceAction.md)
-Create new navigation property to resourceActions for roleManagement
+Operations that an authorized principal are allowed to perform.
 
 ### [New-MgRoleManagementDirectoryRoleAssignment](New-MgRoleManagementDirectoryRoleAssignment.md)
 Resource to grant access to users or groups.
@@ -853,11 +929,14 @@ Create new navigation property to roleEligibilityScheduleInstances for roleManag
 ### [New-MgRoleManagementDirectoryRoleEligibilityScheduleRequest](New-MgRoleManagementDirectoryRoleEligibilityScheduleRequest.md)
 Create new navigation property to roleEligibilityScheduleRequests for roleManagement
 
+### [New-MgRoleManagementDirectoryTransitiveRoleAssignment](New-MgRoleManagementDirectoryTransitiveRoleAssignment.md)
+Create new navigation property to transitiveRoleAssignments for roleManagement
+
 ### [New-MgRoleManagementEntitlementManagementResourceNamespace](New-MgRoleManagementEntitlementManagementResourceNamespace.md)
 Create new navigation property to resourceNamespaces for roleManagement
 
 ### [New-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction](New-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction.md)
-Create new navigation property to resourceActions for roleManagement
+Operations that an authorized principal are allowed to perform.
 
 ### [New-MgRoleManagementEntitlementManagementRoleAssignment](New-MgRoleManagementEntitlementManagementRoleAssignment.md)
 Resource to grant access to users or groups.
@@ -893,6 +972,9 @@ Create new navigation property to roleEligibilityScheduleInstances for roleManag
 
 ### [New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest.md)
 Create new navigation property to roleEligibilityScheduleRequests for roleManagement
+
+### [New-MgRoleManagementEntitlementManagementTransitiveRoleAssignment](New-MgRoleManagementEntitlementManagementTransitiveRoleAssignment.md)
+Create new navigation property to transitiveRoleAssignments for roleManagement
 
 ### [Remove-MgDeviceManagementAndroid](Remove-MgDeviceManagementAndroid.md)
 Android for Work enrollment profile entities.
@@ -986,7 +1068,7 @@ Delete navigation property cloudPC for roleManagement
 Delete navigation property resourceNamespaces for roleManagement
 
 ### [Remove-MgRoleManagementCloudPcResourceNamespaceResourceAction](Remove-MgRoleManagementCloudPcResourceNamespaceResourceAction.md)
-Delete navigation property resourceActions for roleManagement
+Operations that an authorized principal are allowed to perform.
 
 ### [Remove-MgRoleManagementCloudPcResourceNamespaceResourceActionResourceScope](Remove-MgRoleManagementCloudPcResourceNamespaceResourceActionResourceScope.md)
 Delete navigation property resourceScope for roleManagement
@@ -1019,7 +1101,7 @@ The RbacApplication for Device Management
 Delete navigation property resourceNamespaces for roleManagement
 
 ### [Remove-MgRoleManagementDeviceManagementResourceNamespaceResourceAction](Remove-MgRoleManagementDeviceManagementResourceNamespaceResourceAction.md)
-Delete navigation property resourceActions for roleManagement
+Operations that an authorized principal are allowed to perform.
 
 ### [Remove-MgRoleManagementDeviceManagementResourceNamespaceResourceActionResourceScope](Remove-MgRoleManagementDeviceManagementResourceNamespaceResourceActionResourceScope.md)
 Delete navigation property resourceScope for roleManagement
@@ -1053,7 +1135,7 @@ Nullable.
 Delete navigation property resourceNamespaces for roleManagement
 
 ### [Remove-MgRoleManagementDirectoryResourceNamespaceResourceAction](Remove-MgRoleManagementDirectoryResourceNamespaceResourceAction.md)
-Delete navigation property resourceActions for roleManagement
+Operations that an authorized principal are allowed to perform.
 
 ### [Remove-MgRoleManagementDirectoryResourceNamespaceResourceActionResourceScope](Remove-MgRoleManagementDirectoryResourceNamespaceResourceActionResourceScope.md)
 Delete navigation property resourceScope for roleManagement
@@ -1166,14 +1248,37 @@ roleDefinition.Id will be auto expanded.
 ### [Remove-MgRoleManagementDirectoryRoleEligibilityScheduleRequestTargetScheduleByRef](Remove-MgRoleManagementDirectoryRoleEligibilityScheduleRequestTargetScheduleByRef.md)
 Property indicating the schedule for an eligible role assignment.
 
+### [Remove-MgRoleManagementDirectoryTransitiveRoleAssignment](Remove-MgRoleManagementDirectoryTransitiveRoleAssignment.md)
+Delete navigation property transitiveRoleAssignments for roleManagement
+
+### [Remove-MgRoleManagementDirectoryTransitiveRoleAssignmentAppScope](Remove-MgRoleManagementDirectoryTransitiveRoleAssignmentAppScope.md)
+Read-only property with details of the app specific scope when the assignment scope is app specific.
+Containment entity.
+Supports $expand.
+
+### [Remove-MgRoleManagementDirectoryTransitiveRoleAssignmentDirectoryScopeByRef](Remove-MgRoleManagementDirectoryTransitiveRoleAssignmentDirectoryScopeByRef.md)
+The directory object that is the scope of the assignment.
+Read-only.
+Supports $expand.
+
+### [Remove-MgRoleManagementDirectoryTransitiveRoleAssignmentPrincipalByRef](Remove-MgRoleManagementDirectoryTransitiveRoleAssignmentPrincipalByRef.md)
+Referencing the assigned principal.
+Read-only.
+Supports $expand.
+
+### [Remove-MgRoleManagementDirectoryTransitiveRoleAssignmentRoleDefinitionByRef](Remove-MgRoleManagementDirectoryTransitiveRoleAssignmentRoleDefinitionByRef.md)
+The roleDefinition the assignment is for.
+Supports $expand.
+roleDefinition.Id will be auto expanded.
+
 ### [Remove-MgRoleManagementEntitlementManagement](Remove-MgRoleManagementEntitlementManagement.md)
-Container for all entitlement management resources in Azure AD identity governance.
+Container for roles and assignments for entitlement management resources.
 
 ### [Remove-MgRoleManagementEntitlementManagementResourceNamespace](Remove-MgRoleManagementEntitlementManagementResourceNamespace.md)
 Delete navigation property resourceNamespaces for roleManagement
 
 ### [Remove-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction](Remove-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction.md)
-Delete navigation property resourceActions for roleManagement
+Operations that an authorized principal are allowed to perform.
 
 ### [Remove-MgRoleManagementEntitlementManagementResourceNamespaceResourceActionResourceScope](Remove-MgRoleManagementEntitlementManagementResourceNamespaceResourceActionResourceScope.md)
 Delete navigation property resourceScope for roleManagement
@@ -1286,6 +1391,29 @@ roleDefinition.Id will be auto expanded.
 ### [Remove-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestTargetScheduleByRef](Remove-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestTargetScheduleByRef.md)
 Property indicating the schedule for an eligible role assignment.
 
+### [Remove-MgRoleManagementEntitlementManagementTransitiveRoleAssignment](Remove-MgRoleManagementEntitlementManagementTransitiveRoleAssignment.md)
+Delete navigation property transitiveRoleAssignments for roleManagement
+
+### [Remove-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentAppScope](Remove-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentAppScope.md)
+Read-only property with details of the app specific scope when the assignment scope is app specific.
+Containment entity.
+Supports $expand.
+
+### [Remove-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentDirectoryScopeByRef](Remove-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentDirectoryScopeByRef.md)
+The directory object that is the scope of the assignment.
+Read-only.
+Supports $expand.
+
+### [Remove-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentPrincipalByRef](Remove-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentPrincipalByRef.md)
+Referencing the assigned principal.
+Read-only.
+Supports $expand.
+
+### [Remove-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentRoleDefinitionByRef](Remove-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentRoleDefinitionByRef.md)
+The roleDefinition the assignment is for.
+Supports $expand.
+roleDefinition.Id will be auto expanded.
+
 ### [Set-MgDeviceManagementDepOnboardingSettingDefaultIoEnrollmentProfileByRef](Set-MgDeviceManagementDepOnboardingSettingDefaultIoEnrollmentProfileByRef.md)
 Default iOS Enrollment Profile
 
@@ -1382,6 +1510,21 @@ roleDefinition.Id will be auto expanded.
 ### [Set-MgRoleManagementDirectoryRoleEligibilityScheduleRequestTargetScheduleByRef](Set-MgRoleManagementDirectoryRoleEligibilityScheduleRequestTargetScheduleByRef.md)
 Property indicating the schedule for an eligible role assignment.
 
+### [Set-MgRoleManagementDirectoryTransitiveRoleAssignmentDirectoryScopeByRef](Set-MgRoleManagementDirectoryTransitiveRoleAssignmentDirectoryScopeByRef.md)
+The directory object that is the scope of the assignment.
+Read-only.
+Supports $expand.
+
+### [Set-MgRoleManagementDirectoryTransitiveRoleAssignmentPrincipalByRef](Set-MgRoleManagementDirectoryTransitiveRoleAssignmentPrincipalByRef.md)
+Referencing the assigned principal.
+Read-only.
+Supports $expand.
+
+### [Set-MgRoleManagementDirectoryTransitiveRoleAssignmentRoleDefinitionByRef](Set-MgRoleManagementDirectoryTransitiveRoleAssignmentRoleDefinitionByRef.md)
+The roleDefinition the assignment is for.
+Supports $expand.
+roleDefinition.Id will be auto expanded.
+
 ### [Set-MgRoleManagementEntitlementManagementRoleAssignmentDirectoryScopeByRef](Set-MgRoleManagementEntitlementManagementRoleAssignmentDirectoryScopeByRef.md)
 The directory object that is the scope of the assignment.
 Read-only.
@@ -1449,6 +1592,21 @@ roleDefinition.Id will be auto expanded.
 
 ### [Set-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestTargetScheduleByRef](Set-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestTargetScheduleByRef.md)
 Property indicating the schedule for an eligible role assignment.
+
+### [Set-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentDirectoryScopeByRef](Set-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentDirectoryScopeByRef.md)
+The directory object that is the scope of the assignment.
+Read-only.
+Supports $expand.
+
+### [Set-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentPrincipalByRef](Set-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentPrincipalByRef.md)
+Referencing the assigned principal.
+Read-only.
+Supports $expand.
+
+### [Set-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentRoleDefinitionByRef](Set-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentRoleDefinitionByRef.md)
+The roleDefinition the assignment is for.
+Supports $expand.
+roleDefinition.Id will be auto expanded.
 
 ### [Stop-MgRoleManagementDirectoryRoleAssignmentScheduleRequest](Stop-MgRoleManagementDirectoryRoleAssignmentScheduleRequest.md)
 Invoke action cancel
@@ -1536,7 +1694,7 @@ Update the navigation property cloudPC in roleManagement
 Update the navigation property resourceNamespaces in roleManagement
 
 ### [Update-MgRoleManagementCloudPcResourceNamespaceResourceAction](Update-MgRoleManagementCloudPcResourceNamespaceResourceAction.md)
-Update the navigation property resourceActions in roleManagement
+Operations that an authorized principal are allowed to perform.
 
 ### [Update-MgRoleManagementCloudPcResourceNamespaceResourceActionResourceScope](Update-MgRoleManagementCloudPcResourceNamespaceResourceActionResourceScope.md)
 Update the navigation property resourceScope in roleManagement
@@ -1564,7 +1722,7 @@ The RbacApplication for Device Management
 Update the navigation property resourceNamespaces in roleManagement
 
 ### [Update-MgRoleManagementDeviceManagementResourceNamespaceResourceAction](Update-MgRoleManagementDeviceManagementResourceNamespaceResourceAction.md)
-Update the navigation property resourceActions in roleManagement
+Operations that an authorized principal are allowed to perform.
 
 ### [Update-MgRoleManagementDeviceManagementResourceNamespaceResourceActionResourceScope](Update-MgRoleManagementDeviceManagementResourceNamespaceResourceActionResourceScope.md)
 Update the navigation property resourceScope in roleManagement
@@ -1593,7 +1751,7 @@ Nullable.
 Update the navigation property resourceNamespaces in roleManagement
 
 ### [Update-MgRoleManagementDirectoryResourceNamespaceResourceAction](Update-MgRoleManagementDirectoryResourceNamespaceResourceAction.md)
-Update the navigation property resourceActions in roleManagement
+Operations that an authorized principal are allowed to perform.
 
 ### [Update-MgRoleManagementDirectoryResourceNamespaceResourceActionResourceScope](Update-MgRoleManagementDirectoryResourceNamespaceResourceActionResourceScope.md)
 Update the navigation property resourceScope in roleManagement
@@ -1638,14 +1796,22 @@ Update the navigation property roleEligibilityScheduleInstances in roleManagemen
 ### [Update-MgRoleManagementDirectoryRoleEligibilityScheduleRequest](Update-MgRoleManagementDirectoryRoleEligibilityScheduleRequest.md)
 Update the navigation property roleEligibilityScheduleRequests in roleManagement
 
+### [Update-MgRoleManagementDirectoryTransitiveRoleAssignment](Update-MgRoleManagementDirectoryTransitiveRoleAssignment.md)
+Update the navigation property transitiveRoleAssignments in roleManagement
+
+### [Update-MgRoleManagementDirectoryTransitiveRoleAssignmentAppScope](Update-MgRoleManagementDirectoryTransitiveRoleAssignmentAppScope.md)
+Read-only property with details of the app specific scope when the assignment scope is app specific.
+Containment entity.
+Supports $expand.
+
 ### [Update-MgRoleManagementEntitlementManagement](Update-MgRoleManagementEntitlementManagement.md)
-Container for all entitlement management resources in Azure AD identity governance.
+Container for roles and assignments for entitlement management resources.
 
 ### [Update-MgRoleManagementEntitlementManagementResourceNamespace](Update-MgRoleManagementEntitlementManagementResourceNamespace.md)
 Update the navigation property resourceNamespaces in roleManagement
 
 ### [Update-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction](Update-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction.md)
-Update the navigation property resourceActions in roleManagement
+Operations that an authorized principal are allowed to perform.
 
 ### [Update-MgRoleManagementEntitlementManagementResourceNamespaceResourceActionResourceScope](Update-MgRoleManagementEntitlementManagementResourceNamespaceResourceActionResourceScope.md)
 Update the navigation property resourceScope in roleManagement
@@ -1689,4 +1855,12 @@ Update the navigation property roleEligibilityScheduleInstances in roleManagemen
 
 ### [Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest.md)
 Update the navigation property roleEligibilityScheduleRequests in roleManagement
+
+### [Update-MgRoleManagementEntitlementManagementTransitiveRoleAssignment](Update-MgRoleManagementEntitlementManagementTransitiveRoleAssignment.md)
+Update the navigation property transitiveRoleAssignments in roleManagement
+
+### [Update-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentAppScope](Update-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentAppScope.md)
+Read-only property with details of the app specific scope when the assignment scope is app specific.
+Containment entity.
+Supports $expand.
 
