@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgtrustframework
 schema: 2.0.0
@@ -15,12 +15,12 @@ Update trustFramework
 ### UpdateExpanded (Default)
 ```
 Update-MgTrustFramework [-AdditionalProperties <Hashtable>] [-KeySets <IMicrosoftGraphTrustFrameworkKeySet[]>]
- [-Policies <IMicrosoftGraphTrustFrameworkPolicy[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Policies <IMicrosoftGraphTrustFrameworkPolicy[]>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgTrustFramework -BodyParameter <IMicrosoftGraphTrustFramework> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgTrustFramework -BodyParameter <IMicrosoftGraphTrustFramework> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -35,7 +35,7 @@ Update trustFramework
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -51,7 +51,7 @@ trustFramework
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTrustFramework
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTrustFramework
 Parameter Sets: Update
 Aliases:
 
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for KEYSETS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTrustFrameworkKeySet[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTrustFrameworkKeySet[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for POLICIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTrustFrameworkPolicy[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTrustFrameworkPolicy[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -129,7 +129,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -146,9 +146,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTrustFramework
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -206,3 +208,4 @@ POLICIES <IMicrosoftGraphTrustFrameworkPolicy[]>: .
   - `[Id <String>]`: Read-only.
 
 ## RELATED LINKS
+

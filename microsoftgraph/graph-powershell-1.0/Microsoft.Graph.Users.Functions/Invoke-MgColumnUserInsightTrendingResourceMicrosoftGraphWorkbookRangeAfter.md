@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Users.Functions-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/invoke-mgcolumnuserinsighttrendingresourcemicrosoftgraphworkbookrangeafter
 schema: 2.0.0
@@ -20,17 +20,17 @@ Invoke-MgColumnUserInsightTrendingResourceMicrosoftGraphWorkbookRangeAfter -Tren
 
 ### Columns1
 ```
-Invoke-MgColumnUserInsightTrendingResourceMicrosoftGraphWorkbookRangeAfter -TrendingId <String>
- -UserId <String> -Count <Int32> [<CommonParameters>]
+Invoke-MgColumnUserInsightTrendingResourceMicrosoftGraphWorkbookRangeAfter -Count <Int32> -TrendingId <String>
+ -UserId <String> [<CommonParameters>]
 ```
 
-### ColumnsViaIdentity1
+### ColumnsViaIdentity
 ```
 Invoke-MgColumnUserInsightTrendingResourceMicrosoftGraphWorkbookRangeAfter
  -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
 ```
 
-### ColumnsViaIdentity
+### ColumnsViaIdentity1
 ```
 Invoke-MgColumnUserInsightTrendingResourceMicrosoftGraphWorkbookRangeAfter
  -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
@@ -47,7 +47,7 @@ Invoke function columnsAfter
 Usage: count={count}
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: Columns1
 Aliases:
 
@@ -63,8 +63,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersFunctionsIdentity
-Parameter Sets: ColumnsViaIdentity1, ColumnsViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
+Parameter Sets: ColumnsViaIdentity, ColumnsViaIdentity1
 Aliases:
 
 Required: True
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 key: id of trending
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Columns, Columns1
 Aliases:
 
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Columns, Columns1
 Aliases:
 
@@ -110,9 +110,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWorkbookRange
+
 ## NOTES
 
 ALIASES
@@ -159,3 +161,4 @@ INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   - `[ValuesOnly <Boolean?>]`: Usage: valuesOnly={valuesOnly}
 
 ## RELATED LINKS
+

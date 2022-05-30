@@ -1,88 +1,41 @@
-﻿---
-external help file: Microsoft.Graph.Files-help.xml
-Module Name: Microsoft.Graph.Files
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD:microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Files/Remove-MgShareDriveItemByRef.md
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/remove-mgsharedriveitembyref
-schema: 2.0.0
 ---
-
-# Remove-MgShareDriveItemByRef
-=======
->>>>>>> live
+external help file:
+Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/remove-mgsharesitebyref
 schema: 2.0.0
 ---
 
 # Remove-MgShareSiteByRef
-<<<<<<< HEAD
 
 ## SYNOPSIS
 Used to access the underlying site
-=======
->>>>>>> live:microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Files/Remove-MgShareSiteByRef.md
-
-## SYNOPSIS
-Used to access the underlying driveItem
->>>>>>> live
 
 ## SYNTAX
 
 ### Delete1 (Default)
 ```
-<<<<<<< HEAD
-Remove-MgShareSiteByRef -SharedDriveItemId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
-=======
-<<<<<<< HEAD:microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Files/Remove-MgShareDriveItemByRef.md
-Remove-MgShareDriveItemByRef -SharedDriveItemId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
-=======
-Remove-MgShareSiteByRef -SharedDriveItemId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
->>>>>>> live:microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Files/Remove-MgShareSiteByRef.md
->>>>>>> live
+Remove-MgShareSiteByRef -SharedDriveItemId <String> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity1
 ```
-<<<<<<< HEAD
-Remove-MgShareSiteByRef -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
-=======
-<<<<<<< HEAD:microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Files/Remove-MgShareDriveItemByRef.md
-Remove-MgShareDriveItemByRef -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
-=======
-Remove-MgShareSiteByRef -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
->>>>>>> live:microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Files/Remove-MgShareSiteByRef.md
->>>>>>> live
+Remove-MgShareSiteByRef -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-<<<<<<< HEAD
 Used to access the underlying site
 
 ## EXAMPLES
 
-=======
-Used to access the underlying driveItem
-
-## EXAMPLES
-
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
->>>>>>> live
 ## PARAMETERS
 
 ### -IfMatch
 ETag
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -98,7 +51,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFilesIdentity
+Type: Microsoft.Graph.PowerShell.Models.IFilesIdentity
 Parameter Sets: DeleteViaIdentity1
 Aliases:
 
@@ -113,17 +66,13 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
 Required: False
 Position: Named
-<<<<<<< HEAD
 Default value: None
-=======
-Default value: False
->>>>>>> live
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -132,7 +81,7 @@ Accept wildcard characters: False
 key: id of sharedDriveItem
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete1
 Aliases:
 
@@ -147,7 +96,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -163,7 +112,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -180,11 +129,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
-<<<<<<< HEAD
 
 ALIASES
 
@@ -213,11 +163,4 @@ INPUTOBJECT <IFilesIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-=======
-Please use Get-Help -Online.
 
-## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/remove-mgsharesitebyref](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/remove-mgsharesitebyref)
-
->>>>>>> live

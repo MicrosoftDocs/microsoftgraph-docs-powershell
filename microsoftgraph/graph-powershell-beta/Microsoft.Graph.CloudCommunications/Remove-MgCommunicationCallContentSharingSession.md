@@ -1,22 +1,5 @@
-<<<<<<< HEAD
-﻿---
-=======
 ---
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.WindowsUpdates/Remove-MgWindowsUpdatesDeployment.md
-external help file: Microsoft.Graph.WindowsUpdates-help.xml
-Module Name: Microsoft.Graph.WindowsUpdates
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/remove-mgwindowsupdatesdeployment
-schema: 2.0.0
----
-
-# Remove-MgWindowsUpdatesDeployment
-
-## SYNOPSIS
-Deployments created using the deployment service.
-Read-only.
-=======
->>>>>>> live
-external help file: Microsoft.Graph.CloudCommunications-help.xml
+external help file:
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/remove-mgcommunicationcallcontentsharingsession
 schema: 2.0.0
@@ -26,79 +9,33 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property contentSharingSessions for communications
-<<<<<<< HEAD
-=======
->>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.CloudCommunications/Remove-MgCommunicationCallContentSharingSession.md
->>>>>>> live
 
 ## SYNTAX
 
 ### Delete (Default)
 ```
-<<<<<<< HEAD
 Remove-MgCommunicationCallContentSharingSession -CallId <String> -ContentSharingSessionId <String>
- [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-=======
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.WindowsUpdates/Remove-MgWindowsUpdatesDeployment.md
-Remove-MgWindowsUpdatesDeployment -DeploymentId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-=======
-Remove-MgCommunicationCallContentSharingSession -CallId <String> -ContentSharingSessionId <String>
- [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
->>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.CloudCommunications/Remove-MgCommunicationCallContentSharingSession.md
->>>>>>> live
+ [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.WindowsUpdates/Remove-MgWindowsUpdatesDeployment.md
-Remove-MgWindowsUpdatesDeployment -InputObject <IWindowsUpdatesIdentity> [-IfMatch <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-## DESCRIPTION
-Deployments created using the deployment service.
-Read-only.
-=======
->>>>>>> live
-Remove-MgCommunicationCallContentSharingSession -InputObject <ICloudCommunicationsIdentity> [-IfMatch <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgCommunicationCallContentSharingSession -InputObject <ICloudCommunicationsIdentity>
+ [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Delete navigation property contentSharingSessions for communications
-<<<<<<< HEAD
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-=======
->>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.CloudCommunications/Remove-MgCommunicationCallContentSharingSession.md
-
-## EXAMPLES
-
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
-## PARAMETERS
-
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.WindowsUpdates/Remove-MgWindowsUpdatesDeployment.md
-### -DeploymentId
-key: id of deployment
-=======
->>>>>>> live
 ### -CallId
 key: id of call
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete
 Aliases:
 
@@ -111,13 +48,9 @@ Accept wildcard characters: False
 
 ### -ContentSharingSessionId
 key: id of contentSharingSession
-<<<<<<< HEAD
-=======
->>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.CloudCommunications/Remove-MgCommunicationCallContentSharingSession.md
->>>>>>> live
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete
 Aliases:
 
@@ -132,7 +65,7 @@ Accept wildcard characters: False
 ETag
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -148,11 +81,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-<<<<<<< HEAD
-Type: ICloudCommunicationsIdentity
-=======
-Type: IWindowsUpdatesIdentity
->>>>>>> live
+Type: Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -167,17 +96,13 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
 Required: False
 Position: Named
-<<<<<<< HEAD
 Default value: None
-=======
-Default value: False
->>>>>>> live
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -186,7 +111,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -202,7 +127,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -218,16 +143,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-<<<<<<< HEAD
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-=======
-### Microsoft.Graph.PowerShell.Models.IWindowsUpdatesIdentity
->>>>>>> live
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
-<<<<<<< HEAD
 
 ALIASES
 
@@ -252,15 +174,4 @@ INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-=======
-Please use Get-Help -Online.
 
-## RELATED LINKS
-
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.WindowsUpdates/Remove-MgWindowsUpdatesDeployment.md
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/remove-mgwindowsupdatesdeployment](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/remove-mgwindowsupdatesdeployment)
-=======
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/remove-mgcommunicationcallcontentsharingsession](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/remove-mgcommunicationcallcontentsharingsession)
->>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.CloudCommunications/Remove-MgCommunicationCallContentSharingSession.md
-
->>>>>>> live

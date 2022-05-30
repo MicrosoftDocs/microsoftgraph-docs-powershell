@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgconsentdevicemanagementdatasharingconsenttodatasharing
 schema: 2.0.0
@@ -14,14 +14,14 @@ Invoke action consentToDataSharing
 
 ### Consent (Default)
 ```
-Invoke-MgConsentDeviceManagementDataSharingConsentToDataSharing -DataSharingConsentId <String> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Invoke-MgConsentDeviceManagementDataSharingConsentToDataSharing -DataSharingConsentId <String> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### ConsentViaIdentity
 ```
-Invoke-MgConsentDeviceManagementDataSharingConsentToDataSharing -InputObject <IDeviceManagementActionsIdentity>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgConsentDeviceManagementDataSharingConsentToDataSharing
+ -InputObject <IDeviceManagementActionsIdentity> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -35,7 +35,7 @@ Invoke action consentToDataSharing
 key: id of dataSharingConsent
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Consent
 Aliases:
 
@@ -51,7 +51,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementActionsIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
 Parameter Sets: ConsentViaIdentity
 Aliases:
 
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -82,7 +82,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -99,9 +99,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDataSharingConsent
+
 ## NOTES
 
 ALIASES
@@ -167,3 +169,4 @@ INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[WindowsQualityUpdateProfileId <String>]`: key: id of windowsQualityUpdateProfile
 
 ## RELATED LINKS
+

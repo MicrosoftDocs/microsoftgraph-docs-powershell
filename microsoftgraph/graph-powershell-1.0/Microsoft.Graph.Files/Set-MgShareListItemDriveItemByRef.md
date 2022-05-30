@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Files-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/set-mgsharelistitemdriveitembyref
 schema: 2.0.0
@@ -15,49 +15,49 @@ For document libraries, the driveItem relationship exposes the listItem as a [dr
 ### SetExpanded3 (Default)
 ```
 Set-MgShareListItemDriveItemByRef -SharedDriveItemId <String> [-AdditionalProperties <Hashtable>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### SetExpanded2
-```
-Set-MgShareListItemDriveItemByRef -ListItemId <String> -SharedDriveItemId <String>
- [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Set2
 ```
 Set-MgShareListItemDriveItemByRef -ListItemId <String> -SharedDriveItemId <String> -BodyParameter <Hashtable>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Set3
 ```
-Set-MgShareListItemDriveItemByRef -SharedDriveItemId <String> -BodyParameter <Hashtable> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Set-MgShareListItemDriveItemByRef -SharedDriveItemId <String> -BodyParameter <Hashtable> [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### SetViaIdentityExpanded3
+### SetExpanded2
 ```
-Set-MgShareListItemDriveItemByRef -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### SetViaIdentityExpanded2
-```
-Set-MgShareListItemDriveItemByRef -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### SetViaIdentity3
-```
-Set-MgShareListItemDriveItemByRef -InputObject <IFilesIdentity> -BodyParameter <Hashtable> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgShareListItemDriveItemByRef -ListItemId <String> -SharedDriveItemId <String>
+ [-AdditionalProperties <Hashtable>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### SetViaIdentity2
 ```
 Set-MgShareListItemDriveItemByRef -InputObject <IFilesIdentity> -BodyParameter <Hashtable> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### SetViaIdentity3
+```
+Set-MgShareListItemDriveItemByRef -InputObject <IFilesIdentity> -BodyParameter <Hashtable> [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### SetViaIdentityExpanded2
+```
+Set-MgShareListItemDriveItemByRef -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### SetViaIdentityExpanded3
+```
+Set-MgShareListItemDriveItemByRef -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -65,21 +65,14 @@ For document libraries, the driveItem relationship exposes the listItem as a [dr
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: SetExpanded3, SetExpanded2, SetViaIdentityExpanded3, SetViaIdentityExpanded2
+Type: System.Collections.Hashtable
+Parameter Sets: SetExpanded2, SetExpanded3, SetViaIdentityExpanded2, SetViaIdentityExpanded3
 Aliases:
 
 Required: False
@@ -93,8 +86,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Hashtable
-Parameter Sets: Set2, Set3, SetViaIdentity3, SetViaIdentity2
+Type: System.Collections.Hashtable
+Parameter Sets: Set2, Set3, SetViaIdentity2, SetViaIdentity3
 Aliases:
 
 Required: True
@@ -109,8 +102,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFilesIdentity
-Parameter Sets: SetViaIdentityExpanded3, SetViaIdentityExpanded2, SetViaIdentity3, SetViaIdentity2
+Type: Microsoft.Graph.PowerShell.Models.IFilesIdentity
+Parameter Sets: SetViaIdentity2, SetViaIdentity3, SetViaIdentityExpanded2, SetViaIdentityExpanded3
 Aliases:
 
 Required: True
@@ -124,8 +117,8 @@ Accept wildcard characters: False
 key: id of listItem
 
 ```yaml
-Type: String
-Parameter Sets: SetExpanded2, Set2
+Type: System.String
+Parameter Sets: Set2, SetExpanded2
 Aliases:
 
 Required: True
@@ -139,13 +132,13 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -154,8 +147,8 @@ Accept wildcard characters: False
 key: id of sharedDriveItem
 
 ```yaml
-Type: String
-Parameter Sets: SetExpanded3, SetExpanded2, Set2, Set3
+Type: System.String
+Parameter Sets: Set2, Set3, SetExpanded2, SetExpanded3
 Aliases:
 
 Required: True
@@ -169,7 +162,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -185,7 +178,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -202,14 +195,40 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
+
 ### System.Collections.Hashtable
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
+  - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
+  - `[ColumnLinkId <String>]`: key: id of columnLink
+  - `[ContentTypeId <String>]`: key: id of contentType
+  - `[DriveId <String>]`: key: id of drive
+  - `[DriveItemId <String>]`: key: id of driveItem
+  - `[EndDateTime <String>]`: Usage: endDateTime={endDateTime}
+  - `[GroupId <String>]`: key: id of group
+  - `[Interval <String>]`: Usage: interval={interval}
+  - `[ListItemId <String>]`: key: id of listItem
+  - `[ListItemVersionId <String>]`: key: id of listItemVersion
+  - `[Q <String>]`: Usage: q={q}
+  - `[RichLongRunningOperationId <String>]`: key: id of richLongRunningOperation
+  - `[SharedDriveItemId <String>]`: key: id of sharedDriveItem
+  - `[StartDateTime <String>]`: Usage: startDateTime={startDateTime}
+  - `[SubscriptionId <String>]`: key: id of subscription
+  - `[Token <String>]`: Usage: token={token}
+  - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/set-mgsharelistitemdriveitembyref](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/set-mgsharelistitemdriveitembyref)
 
