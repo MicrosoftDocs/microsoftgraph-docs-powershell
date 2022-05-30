@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/invoke-mgtargetdeviceappmgtmanagedapppolicymicrosoftgraphtargetedmanagedappprotectionapp
 schema: 2.0.0
@@ -16,7 +16,7 @@ Invoke action targetApps
 ```
 Invoke-MgTargetDeviceAppMgtManagedAppPolicyMicrosoftGraphTargetedManagedAppProtectionApp
  -ManagedAppPolicyId <String> [-AdditionalProperties <Hashtable>] [-AppGroupType <String>]
- [-Apps <IMicrosoftGraphManagedMobileApp[]>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Apps <IMicrosoftGraphManagedMobileApp[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Target1
@@ -24,7 +24,15 @@ Invoke-MgTargetDeviceAppMgtManagedAppPolicyMicrosoftGraphTargetedManagedAppProte
 Invoke-MgTargetDeviceAppMgtManagedAppPolicyMicrosoftGraphTargetedManagedAppProtectionApp
  -ManagedAppPolicyId <String>
  -BodyParameter <IPathsQpliqhDeviceappmanagementManagedapppoliciesManagedapppolicyIdMicrosoftGraphTargetedmanagedappprotectionMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### TargetViaIdentityExpanded1
+```
+Invoke-MgTargetDeviceAppMgtManagedAppPolicyMicrosoftGraphTargetedManagedAppProtectionApp
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>]
+ [-AppGroupType <String>] [-Apps <IMicrosoftGraphManagedMobileApp[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### TargetViaIdentity1
@@ -32,15 +40,7 @@ Invoke-MgTargetDeviceAppMgtManagedAppPolicyMicrosoftGraphTargetedManagedAppProte
 Invoke-MgTargetDeviceAppMgtManagedAppPolicyMicrosoftGraphTargetedManagedAppProtectionApp
  -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IPathsQpliqhDeviceappmanagementManagedapppoliciesManagedapppolicyIdMicrosoftGraphTargetedmanagedappprotectionMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### TargetViaIdentityExpanded1
-```
-Invoke-MgTargetDeviceAppMgtManagedAppPolicyMicrosoftGraphTargetedManagedAppProtectionApp
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>]
- [-AppGroupType <String>] [-Apps <IMicrosoftGraphManagedMobileApp[]>] [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -54,7 +54,7 @@ Invoke action targetApps
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: TargetExpanded1, TargetViaIdentityExpanded1
 Aliases:
 
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 Indicates a collection of apps to target which can be one of several pre-defined lists of apps or a manually selected list of apps
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: TargetExpanded1, TargetViaIdentityExpanded1
 Aliases:
 
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for APPS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedMobileApp[]
+Type: IMicrosoftGraphManagedMobileApp[]
 Parameter Sets: TargetExpanded1, TargetViaIdentityExpanded1
 Aliases:
 
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPathsQpliqhDeviceappmanagementManagedapppoliciesManagedapppolicyIdMicrosoftGraphTargetedmanagedappprotectionMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema
+Type: IPathsQpliqhDeviceappmanagementManagedapppoliciesManagedapppolicyIdMicrosoftGraphTargetedmanagedappprotectionMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Target1, TargetViaIdentity1
 Aliases:
 
@@ -117,8 +117,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-Parameter Sets: TargetViaIdentity1, TargetViaIdentityExpanded1
+Type: IDevicesCorporateManagementIdentity
+Parameter Sets: TargetViaIdentityExpanded1, TargetViaIdentity1
 Aliases:
 
 Required: True
@@ -132,8 +132,8 @@ Accept wildcard characters: False
 key: id of managedAppPolicy
 
 ```yaml
-Type: System.String
-Parameter Sets: Target1, TargetExpanded1
+Type: String
+Parameter Sets: TargetExpanded1, Target1
 Aliases:
 
 Required: True
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -178,7 +178,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -195,13 +195,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IPathsQpliqhDeviceappmanagementManagedapppoliciesManagedapppolicyIdMicrosoftGraphTargetedmanagedappprotectionMicrosoftGraphTargetappsPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -294,4 +291,3 @@ INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   - `[WindowsInformationProtectionWipeActionId <String>]`: key: id of windowsInformationProtectionWipeAction
 
 ## RELATED LINKS
-
