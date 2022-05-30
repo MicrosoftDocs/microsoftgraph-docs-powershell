@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/new-mgrolemanagementdevicemanagementresourcenamespaceresourceaction
 schema: 2.0.0
@@ -17,20 +17,13 @@ Operations that an authorized principal are allowed to perform.
 New-MgRoleManagementDeviceManagementResourceNamespaceResourceAction -UnifiedRbacResourceNamespaceId <String>
  [-ActionVerb <String>] [-AdditionalProperties <Hashtable>] [-Description <String>] [-Id <String>]
  [-Name <String>] [-ResourceScope <IMicrosoftGraphUnifiedRbacResourceScope>] [-ResourceScopeId <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgRoleManagementDeviceManagementResourceNamespaceResourceAction -UnifiedRbacResourceNamespaceId <String>
- -BodyParameter <IMicrosoftGraphUnifiedRbacResourceAction> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgRoleManagementDeviceManagementResourceNamespaceResourceAction
- -InputObject <IDeviceManagementEnrolmentIdentity> -BodyParameter <IMicrosoftGraphUnifiedRbacResourceAction>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUnifiedRbacResourceAction> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -38,8 +31,15 @@ New-MgRoleManagementDeviceManagementResourceNamespaceResourceAction
 New-MgRoleManagementDeviceManagementResourceNamespaceResourceAction
  -InputObject <IDeviceManagementEnrolmentIdentity> [-ActionVerb <String>] [-AdditionalProperties <Hashtable>]
  [-Description <String>] [-Id <String>] [-Name <String>]
- [-ResourceScope <IMicrosoftGraphUnifiedRbacResourceScope>] [-ResourceScopeId <String>] [-Confirm] [-WhatIf]
+ [-ResourceScope <IMicrosoftGraphUnifiedRbacResourceScope>] [-ResourceScopeId <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgRoleManagementDeviceManagementResourceNamespaceResourceAction
+ -InputObject <IDeviceManagementEnrolmentIdentity> -BodyParameter <IMicrosoftGraphUnifiedRbacResourceAction>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -54,7 +54,7 @@ HTTP method for the action, such as DELETE, GET, PATCH, POST, PUT, or null.
 Supports $filter (eq) but not for null values.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -85,7 +85,7 @@ unifiedRbacResourceAction
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRbacResourceAction
+Type: IMicrosoftGraphUnifiedRbacResourceAction
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -101,7 +101,7 @@ Description for the action.
 Supports $filter (eq).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -132,8 +132,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementEnrolmentIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IDeviceManagementEnrolmentIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -151,7 +151,7 @@ Required.
 Supports $filter (eq).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -167,7 +167,7 @@ unifiedRbacResourceScope
 To construct, please use Get-Help -Online and see NOTES section for RESOURCESCOPE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRbacResourceScope
+Type: IMicrosoftGraphUnifiedRbacResourceScope
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 Not implemented.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -197,8 +197,8 @@ Accept wildcard characters: False
 key: id of unifiedRbacResourceNamespace
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -212,7 +212,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -228,7 +228,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -245,13 +245,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementEnrolmentIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRbacResourceAction
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRbacResourceAction
-
 ## NOTES
 
 ALIASES
@@ -323,4 +320,3 @@ RESOURCESCOPE <IMicrosoftGraphUnifiedRbacResourceScope>: unifiedRbacResourceScop
   - `[Type <String>]`: 
 
 ## RELATED LINKS
-
