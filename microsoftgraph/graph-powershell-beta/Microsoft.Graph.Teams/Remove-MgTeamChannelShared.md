@@ -1,4 +1,21 @@
+<<<<<<< HEAD
 ﻿---
+=======
+---
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.WindowsUpdates/Remove-MgWindowsUpdatesUpdatableAsset.md
+external help file: Microsoft.Graph.WindowsUpdates-help.xml
+Module Name: Microsoft.Graph.WindowsUpdates
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/remove-mgwindowsupdatesupdatableasset
+schema: 2.0.0
+---
+
+# Remove-MgWindowsUpdatesUpdatableAsset
+
+## SYNOPSIS
+Assets registered with the deployment service that can receive updates.
+Read-only.
+=======
+>>>>>>> live
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/remove-mgteamchannelshared
@@ -9,28 +26,72 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete navigation property sharedWithTeams for teams
+<<<<<<< HEAD
+=======
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Teams/Remove-MgTeamChannelShared.md
+>>>>>>> live
 
 ## SYNTAX
 
 ### Delete (Default)
 ```
+<<<<<<< HEAD
 Remove-MgTeamChannelShared -ChannelId <String> -SharedWithChannelTeamInfoId <String> -TeamId <String>
  [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+=======
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.WindowsUpdates/Remove-MgWindowsUpdatesUpdatableAsset.md
+Remove-MgWindowsUpdatesUpdatableAsset -UpdatableAssetId <String> [-IfMatch <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+=======
+Remove-MgTeamChannelShared -ChannelId <String> -SharedWithChannelTeamInfoId <String> -TeamId <String>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Teams/Remove-MgTeamChannelShared.md
+>>>>>>> live
 ```
 
 ### DeleteViaIdentity
 ```
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.WindowsUpdates/Remove-MgWindowsUpdatesUpdatableAsset.md
+Remove-MgWindowsUpdatesUpdatableAsset -InputObject <IWindowsUpdatesIdentity> [-IfMatch <String>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Assets registered with the deployment service that can receive updates.
+Read-only.
+=======
+>>>>>>> live
 Remove-MgTeamChannelShared -InputObject <ITeamsIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Delete navigation property sharedWithTeams for teams
+<<<<<<< HEAD
 
 ## EXAMPLES
 
 ## PARAMETERS
 
+=======
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Teams/Remove-MgTeamChannelShared.md
+
+## EXAMPLES
+
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
+
+## PARAMETERS
+
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.WindowsUpdates/Remove-MgWindowsUpdatesUpdatableAsset.md
+=======
+>>>>>>> live
 ### -ChannelId
 key: id of channel
 
@@ -46,6 +107,10 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+<<<<<<< HEAD
+=======
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Teams/Remove-MgTeamChannelShared.md
+>>>>>>> live
 ### -IfMatch
 ETag
 
@@ -66,7 +131,15 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
+<<<<<<< HEAD
 Type: ITeamsIdentity
+=======
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.WindowsUpdates/Remove-MgWindowsUpdatesUpdatableAsset.md
+Type: IWindowsUpdatesIdentity
+=======
+Type: ITeamsIdentity
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Teams/Remove-MgTeamChannelShared.md
+>>>>>>> live
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -79,6 +152,11 @@ Accept wildcard characters: False
 
 ### -PassThru
 Returns true when the command succeeds
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.WindowsUpdates/Remove-MgWindowsUpdatesUpdatableAsset.md
+=======
+>>>>>>> live
 
 ```yaml
 Type: SwitchParameter
@@ -87,13 +165,21 @@ Aliases:
 
 Required: False
 Position: Named
+<<<<<<< HEAD
 Default value: None
+=======
+Default value: False
+>>>>>>> live
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -SharedWithChannelTeamInfoId
 key: id of sharedWithChannelTeamInfo
+<<<<<<< HEAD
+=======
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Teams/Remove-MgTeamChannelShared.md
+>>>>>>> live
 
 ```yaml
 Type: String
@@ -107,8 +193,18 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+<<<<<<< HEAD
 ### -TeamId
 key: id of team
+=======
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.WindowsUpdates/Remove-MgWindowsUpdatesUpdatableAsset.md
+### -UpdatableAssetId
+key: id of updatableAsset
+=======
+### -TeamId
+key: id of team
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Teams/Remove-MgTeamChannelShared.md
+>>>>>>> live
 
 ```yaml
 Type: String
@@ -158,11 +254,20 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+<<<<<<< HEAD
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+=======
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.WindowsUpdates/Remove-MgWindowsUpdatesUpdatableAsset.md
+### Microsoft.Graph.PowerShell.Models.IWindowsUpdatesIdentity
+=======
+### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Teams/Remove-MgTeamChannelShared.md
+>>>>>>> live
 ## OUTPUTS
 
 ### System.Boolean
 ## NOTES
+<<<<<<< HEAD
 
 ALIASES
 
@@ -210,3 +315,15 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
 ## RELATED LINKS
+=======
+Please use Get-Help -Online.
+
+## RELATED LINKS
+
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.WindowsUpdates/Remove-MgWindowsUpdatesUpdatableAsset.md
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/remove-mgwindowsupdatesupdatableasset](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/remove-mgwindowsupdatesupdatableasset)
+=======
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/remove-mgteamchannelshared](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/remove-mgteamchannelshared)
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Teams/Remove-MgTeamChannelShared.md
+
+>>>>>>> live

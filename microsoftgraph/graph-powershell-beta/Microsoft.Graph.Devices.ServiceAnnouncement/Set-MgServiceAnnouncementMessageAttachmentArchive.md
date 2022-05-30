@@ -12,7 +12,7 @@ Update media content for the navigation property messages in admin
 
 ## SYNTAX
 
-### Set (Default)
+### SetExpanded (Default)
 ```
 Set-MgServiceAnnouncementMessageAttachmentArchive -ServiceUpdateMessageId <String> [-BodyParameter <Stream>]
  -InFile <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -31,18 +31,18 @@ Update media content for the navigation property messages in admin
 
 ## PARAMETERS
 
-### -BodyParameter
-.
+### -AdditionalProperties
+Additional Parameters
 
 ```yaml
-Type: Stream
-Parameter Sets: (All)
+Type: Hashtable
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue)
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -53,7 +53,7 @@ If you omit the path, the current location will be used.
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: SetExpanded, Set
 Aliases:
 
 Required: True
@@ -89,7 +89,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

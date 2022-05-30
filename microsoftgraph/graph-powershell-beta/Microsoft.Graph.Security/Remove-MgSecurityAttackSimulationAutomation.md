@@ -1,6 +1,10 @@
-﻿---
+---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
+<<<<<<< HEAD
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Security/Remove-MgSecurityAttackSimulationAutomation.md
+=======
+>>>>>>> live
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/remove-mgsecurityattacksimulationautomation
 schema: 2.0.0
 ---
@@ -9,26 +13,75 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Represents simulation automations created to run on a tenant.
+<<<<<<< HEAD
+=======
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/remove-mgsecurityattacksimulationautomationrun
+schema: 2.0.0
+---
+
+# Remove-MgSecurityAttackSimulationAutomationRun
+
+## SYNOPSIS
+A collection of simulation automation runs.
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Security/Remove-MgSecurityAttackSimulationAutomationRun.md
+=======
+>>>>>>> live
 
 ## SYNTAX
 
 ### Delete (Default)
 ```
+<<<<<<< HEAD
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Security/Remove-MgSecurityAttackSimulationAutomation.md
 Remove-MgSecurityAttackSimulationAutomation -SimulationAutomationId <String> [-IfMatch <String>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
+=======
+Remove-MgSecurityAttackSimulationAutomationRun -SimulationAutomationId <String>
+ -SimulationAutomationRunId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Security/Remove-MgSecurityAttackSimulationAutomationRun.md
+=======
+Remove-MgSecurityAttackSimulationAutomation -SimulationAutomationId <String> [-IfMatch <String>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+>>>>>>> live
 ```
 
 ### DeleteViaIdentity
 ```
+<<<<<<< HEAD
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Security/Remove-MgSecurityAttackSimulationAutomation.md
 Remove-MgSecurityAttackSimulationAutomation -InputObject <ISecurityIdentity> [-IfMatch <String>] [-PassThru]
+=======
+Remove-MgSecurityAttackSimulationAutomationRun -InputObject <ISecurityIdentity> [-IfMatch <String>] [-PassThru]
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Security/Remove-MgSecurityAttackSimulationAutomationRun.md
+=======
+Remove-MgSecurityAttackSimulationAutomation -InputObject <ISecurityIdentity> [-IfMatch <String>] [-PassThru]
+>>>>>>> live
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
+<<<<<<< HEAD
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Security/Remove-MgSecurityAttackSimulationAutomation.md
+Represents simulation automations created to run on a tenant.
+=======
+A collection of simulation automation runs.
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Security/Remove-MgSecurityAttackSimulationAutomationRun.md
+
+## EXAMPLES
+
+=======
 Represents simulation automations created to run on a tenant.
 
 ## EXAMPLES
 
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
+
+>>>>>>> live
 ## PARAMETERS
 
 ### -IfMatch
@@ -72,6 +125,37 @@ Aliases:
 
 Required: False
 Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SimulationAutomationId
+key: id of simulationAutomation
+
+```yaml
+Type: String
+Parameter Sets: Delete
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+<<<<<<< HEAD
+### -SimulationAutomationRunId
+key: id of simulationAutomationRun
+
+```yaml
+Type: String
+Parameter Sets: Delete
+Aliases:
+
+Required: True
+Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
@@ -92,6 +176,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+=======
+>>>>>>> live
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -133,6 +219,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
+<<<<<<< HEAD
 
 ALIASES
 
@@ -141,6 +228,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Security/Remove-MgSecurityAttackSimulationAutomation.md
 INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: key: id of alert
   - `[CloudAppSecurityProfileId <String>]`: key: id of cloudAppSecurityProfile
@@ -158,5 +246,16 @@ INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[SimulationId <String>]`: key: id of simulation
   - `[TiIndicatorId <String>]`: key: id of tiIndicator
   - `[UserSecurityProfileId <String>]`: key: id of userSecurityProfile
+=======
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/remove-mgsecurityattacksimulationautomationrun](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/remove-mgsecurityattacksimulationautomationrun)
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Security/Remove-MgSecurityAttackSimulationAutomationRun.md
 
 ## RELATED LINKS
+=======
+Please use Get-Help -Online.
+
+## RELATED LINKS
+
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/remove-mgsecurityattacksimulationautomation](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/remove-mgsecurityattacksimulationautomation)
+
+>>>>>>> live

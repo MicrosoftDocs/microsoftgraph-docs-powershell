@@ -1,4 +1,20 @@
+<<<<<<< HEAD
 ﻿---
+=======
+---
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.WindowsUpdates/Update-MgWindowsUpdatesDeploymentAudience.md
+external help file: Microsoft.Graph.WindowsUpdates-help.xml
+Module Name: Microsoft.Graph.WindowsUpdates
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/update-mgwindowsupdatesdeploymentaudience
+schema: 2.0.0
+---
+
+# Update-MgWindowsUpdatesDeploymentAudience
+
+## SYNOPSIS
+Invoke action updateAudience
+=======
+>>>>>>> live
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mguserteamworkassociatedteam
@@ -9,37 +25,93 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property associatedTeams in users
+<<<<<<< HEAD
+=======
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Teams/Update-MgUserTeamworkAssociatedTeam.md
+>>>>>>> live
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
+<<<<<<< HEAD
 Update-MgUserTeamworkAssociatedTeam -AssociatedTeamInfoId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-Team <IMicrosoftGraphTeam>]
  [-TenantId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+=======
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.WindowsUpdates/Update-MgWindowsUpdatesDeploymentAudience.md
+Update-MgWindowsUpdatesDeploymentAudience -DeploymentId <String>
+ [-AddExclusions <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>]
+ [-AddMembers <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>] [-AdditionalProperties <Hashtable>]
+ [-RemoveExclusions <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>]
+ [-RemoveMembers <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+=======
+Update-MgUserTeamworkAssociatedTeam -AssociatedTeamInfoId <String> -UserId <String>
+ [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-Team <IMicrosoftGraphTeam>]
+ [-TenantId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Teams/Update-MgUserTeamworkAssociatedTeam.md
+>>>>>>> live
 ```
 
 ### Update
 ```
+<<<<<<< HEAD
 Update-MgUserTeamworkAssociatedTeam -AssociatedTeamInfoId <String> -UserId <String> -BodyParameter <Hashtable>
+=======
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.WindowsUpdates/Update-MgWindowsUpdatesDeploymentAudience.md
+Update-MgWindowsUpdatesDeploymentAudience -DeploymentId <String>
+ -BodyParameter <IPathsGxoqhAdminWindowsUpdatesDeploymentsDeploymentIdAudienceMicrosoftGraphWindowsupdatesUpdateaudiencePostRequestbodyContentApplicationJsonSchema>
+=======
+Update-MgUserTeamworkAssociatedTeam -AssociatedTeamInfoId <String> -UserId <String> -BodyParameter <Hashtable>
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Teams/Update-MgUserTeamworkAssociatedTeam.md
+>>>>>>> live
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
+<<<<<<< HEAD
 Update-MgUserTeamworkAssociatedTeam -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-DisplayName <String>] [-Id <String>] [-Team <IMicrosoftGraphTeam>] [-TenantId <String>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
+=======
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.WindowsUpdates/Update-MgWindowsUpdatesDeploymentAudience.md
+Update-MgWindowsUpdatesDeploymentAudience -InputObject <IWindowsUpdatesIdentity>
+ [-AddExclusions <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>]
+ [-AddMembers <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>] [-AdditionalProperties <Hashtable>]
+ [-RemoveExclusions <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>]
+ [-RemoveMembers <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+=======
+Update-MgUserTeamworkAssociatedTeam -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
+ [-DisplayName <String>] [-Id <String>] [-Team <IMicrosoftGraphTeam>] [-TenantId <String>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Teams/Update-MgUserTeamworkAssociatedTeam.md
+>>>>>>> live
 ```
 
 ### UpdateViaIdentity
 ```
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.WindowsUpdates/Update-MgWindowsUpdatesDeploymentAudience.md
+Update-MgWindowsUpdatesDeploymentAudience -InputObject <IWindowsUpdatesIdentity>
+ -BodyParameter <IPathsGxoqhAdminWindowsUpdatesDeploymentsDeploymentIdAudienceMicrosoftGraphWindowsupdatesUpdateaudiencePostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Invoke action updateAudience
+=======
+>>>>>>> live
 Update-MgUserTeamworkAssociatedTeam -InputObject <ITeamsIdentity> -BodyParameter <Hashtable> [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property associatedTeams in users
+<<<<<<< HEAD
 
 ## EXAMPLES
 
@@ -50,6 +122,27 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
+=======
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Teams/Update-MgUserTeamworkAssociatedTeam.md
+
+## EXAMPLES
+
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
+
+## PARAMETERS
+
+### -AddExclusions
+.
+To construct, please use Get-Help -Online and see NOTES section for ADDEXCLUSIONS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphWindowsUpdatesUpdatableAsset[]
+>>>>>>> live
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -60,6 +153,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+<<<<<<< HEAD
 ### -AssociatedTeamInfoId
 key: id of associatedTeamInfo
 
@@ -69,18 +163,50 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+=======
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.WindowsUpdates/Update-MgWindowsUpdatesDeploymentAudience.md
+### -AdditionalProperties
+Additional Parameters
+=======
+### -AssociatedTeamInfoId
+key: id of associatedTeamInfo
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Teams/Update-MgUserTeamworkAssociatedTeam.md
+
+```yaml
+Type: Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+>>>>>>> live
 Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.WindowsUpdates/Update-MgWindowsUpdatesDeploymentAudience.md
+### -AddMembers
+.
+To construct, please use Get-Help -Online and see NOTES section for ADDMEMBERS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphWindowsUpdatesUpdatableAsset[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+=======
+>>>>>>> live
 ### -BodyParameter
 associatedTeamInfo
 
 ```yaml
 Type: Hashtable
 Parameter Sets: Update, UpdateViaIdentity
+<<<<<<< HEAD
+=======
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Teams/Update-MgUserTeamworkAssociatedTeam.md
+>>>>>>> live
 Aliases:
 
 Required: True
@@ -90,6 +216,7 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+<<<<<<< HEAD
 ### -DisplayName
 .
 
@@ -114,6 +241,42 @@ Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
+=======
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.WindowsUpdates/Update-MgWindowsUpdatesDeploymentAudience.md
+### -BodyParameter
+=======
+### -DisplayName
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Teams/Update-MgUserTeamworkAssociatedTeam.md
+.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.WindowsUpdates/Update-MgWindowsUpdatesDeploymentAudience.md
+Type: IPathsGxoqhAdminWindowsUpdatesDeploymentsDeploymentIdAudienceMicrosoftGraphWindowsupdatesUpdateaudiencePostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Update, UpdateViaIdentity
+=======
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Teams/Update-MgUserTeamworkAssociatedTeam.md
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -DeploymentId
+key: id of deployment
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, Update
+Aliases:
+
+Required: True
+>>>>>>> live
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -125,7 +288,15 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
+<<<<<<< HEAD
 Type: ITeamsIdentity
+=======
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.WindowsUpdates/Update-MgWindowsUpdatesDeploymentAudience.md
+Type: IWindowsUpdatesIdentity
+=======
+Type: ITeamsIdentity
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Teams/Update-MgUserTeamworkAssociatedTeam.md
+>>>>>>> live
 Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
@@ -145,8 +316,15 @@ Parameter Sets: (All)
 Aliases:
 
 Required: False
+<<<<<<< HEAD
 Position: Named
 Default value: None
+=======
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.WindowsUpdates/Update-MgWindowsUpdatesDeploymentAudience.md
+=======
+Position: Named
+Default value: False
+>>>>>>> live
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -161,17 +339,38 @@ Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
+<<<<<<< HEAD
 Position: Named
 Default value: None
+=======
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Teams/Update-MgUserTeamworkAssociatedTeam.md
+Position: Named
+Default value: False
+>>>>>>> live
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.WindowsUpdates/Update-MgWindowsUpdatesDeploymentAudience.md
+### -RemoveExclusions
+.
+To construct, please use Get-Help -Online and see NOTES section for REMOVEEXCLUSIONS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphWindowsUpdatesUpdatableAsset[]
+=======
+>>>>>>> live
 ### -TenantId
 .
 
 ```yaml
 Type: String
+<<<<<<< HEAD
+=======
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Teams/Update-MgUserTeamworkAssociatedTeam.md
+>>>>>>> live
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -182,6 +381,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+<<<<<<< HEAD
 ### -UserId
 key: id of user
 
@@ -191,6 +391,18 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+=======
+### -RemoveMembers
+.
+To construct, please use Get-Help -Online and see NOTES section for REMOVEMEMBERS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphWindowsUpdatesUpdatableAsset[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+>>>>>>> live
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -233,12 +445,23 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+<<<<<<< HEAD
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
 ### System.Collections.Hashtable
+=======
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.WindowsUpdates/Update-MgWindowsUpdatesDeploymentAudience.md
+### Microsoft.Graph.PowerShell.Models.IPathsGxoqhAdminWindowsUpdatesDeploymentsDeploymentIdAudienceMicrosoftGraphWindowsupdatesUpdateaudiencePostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IWindowsUpdatesIdentity
+=======
+### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### System.Collections.Hashtable
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Teams/Update-MgUserTeamworkAssociatedTeam.md
+>>>>>>> live
 ## OUTPUTS
 
 ### System.Boolean
 ## NOTES
+<<<<<<< HEAD
 
 ALIASES
 
@@ -4509,3 +4732,15 @@ TEAM <IMicrosoftGraphTeam>: team
 ## RELATED LINKS
 
 ## RELATED LINKS
+=======
+Please use Get-Help -Online.
+
+## RELATED LINKS
+
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.WindowsUpdates/Update-MgWindowsUpdatesDeploymentAudience.md
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/update-mgwindowsupdatesdeploymentaudience](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/update-mgwindowsupdatesdeploymentaudience)
+=======
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mguserteamworkassociatedteam](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mguserteamworkassociatedteam)
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Teams/Update-MgUserTeamworkAssociatedTeam.md
+
+>>>>>>> live

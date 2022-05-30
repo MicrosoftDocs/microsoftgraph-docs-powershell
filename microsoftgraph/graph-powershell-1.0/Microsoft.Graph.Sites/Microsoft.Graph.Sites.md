@@ -52,7 +52,7 @@ The list of SharePoint sites in this group.
 Access the default site with /sites/root.
 
 ### [Get-MgSite](Get-MgSite.md)
-Get entity from sites by key
+Invoke function getByPath
 
 ### [Get-MgSiteActivityByInterval](Get-MgSiteActivityByInterval.md)
 Invoke function getActivitiesByInterval
@@ -65,9 +65,6 @@ Analytics about the view activities that took place in this site.
 
 ### [Get-MgSiteApplicableContentType](Get-MgSiteApplicableContentType.md)
 Invoke function getApplicableContentTypesForList
-
-### [Get-MgSiteByPath](Get-MgSiteByPath.md)
-Invoke function getByPath
 
 ### [Get-MgSiteColumn](Get-MgSiteColumn.md)
 The collection of column definitions reusable across lists under this site.
@@ -215,6 +212,9 @@ Nullable.
 
 ### [Get-MgSiteRecentNotebook](Get-MgSiteRecentNotebook.md)
 Invoke function getRecentNotebooks
+
+### [Get-MgSiteSiteByRef](Get-MgSiteSiteByRef.md)
+The collection of the sub-sites under this site.
 
 ### [Get-MgSiteTermStore](Get-MgSiteTermStore.md)
 The default termStore under this site.
@@ -442,7 +442,7 @@ The [set] in which the term is created.
 The [set] in which the term is created.
 
 ### [Get-MgSubSite](Get-MgSubSite.md)
-The collection of the sub-sites under this site.
+Get entity from sites by key
 
 ### [Get-MgSubSiteByRef](Get-MgSubSiteByRef.md)
 The collection of the sub-sites under this site.
@@ -532,6 +532,9 @@ The set of subscriptions on the list.
 ### [New-MgSitePermission](New-MgSitePermission.md)
 The permissions associated with the site.
 Nullable.
+
+### [New-MgSiteSiteByRef](New-MgSiteSiteByRef.md)
+The collection of the sub-sites under this site.
 
 ### [New-MgSiteTermStore](New-MgSiteTermStore.md)
 The collection of termStores under this site.
@@ -975,9 +978,6 @@ Invoke action unpublish
 ### [Update-MgGroupSite](Update-MgGroupSite.md)
 The list of SharePoint sites in this group.
 Access the default site with /sites/root.
-
-### [Update-MgSite](Update-MgSite.md)
-Update entity in sites
 
 ### [Update-MgSiteColumn](Update-MgSiteColumn.md)
 The collection of column definitions reusable across lists under this site.

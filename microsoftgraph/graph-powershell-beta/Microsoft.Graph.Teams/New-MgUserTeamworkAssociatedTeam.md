@@ -1,4 +1,21 @@
+<<<<<<< HEAD
 ﻿---
+=======
+---
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.WindowsUpdates/New-MgWindowsUpdatesDeployment.md
+external help file: Microsoft.Graph.WindowsUpdates-help.xml
+Module Name: Microsoft.Graph.WindowsUpdates
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/new-mgwindowsupdatesdeployment
+schema: 2.0.0
+---
+
+# New-MgWindowsUpdatesDeployment
+
+## SYNOPSIS
+Deployments created using the deployment service.
+Read-only.
+=======
+>>>>>>> live
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mguserteamworkassociatedteam
@@ -9,17 +26,40 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to associatedTeams for users
+<<<<<<< HEAD
+=======
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Teams/New-MgUserTeamworkAssociatedTeam.md
+>>>>>>> live
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
+<<<<<<< HEAD
 New-MgUserTeamworkAssociatedTeam -UserId <String> [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
  [-Id <String>] [-Team <IMicrosoftGraphTeam>] [-TenantId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+=======
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.WindowsUpdates/New-MgWindowsUpdatesDeployment.md
+New-MgWindowsUpdatesDeployment [-AdditionalProperties <Hashtable>]
+ [-Audience <IMicrosoftGraphWindowsUpdatesDeploymentAudience>] [-Content <Hashtable>]
+ [-CreatedDateTime <DateTime>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
+ [-Settings <IMicrosoftGraphWindowsUpdatesDeploymentSettings>]
+ [-State <IMicrosoftGraphWindowsUpdatesDeploymentState>] [-WhatIf] [-Confirm] [<CommonParameters>]
+=======
+New-MgUserTeamworkAssociatedTeam -UserId <String> [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
+ [-Id <String>] [-Team <IMicrosoftGraphTeam>] [-TenantId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Teams/New-MgUserTeamworkAssociatedTeam.md
+>>>>>>> live
 ```
 
 ### Create
 ```
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.WindowsUpdates/New-MgWindowsUpdatesDeployment.md
+New-MgWindowsUpdatesDeployment -BodyParameter <IMicrosoftGraphWindowsUpdatesDeployment> [-WhatIf] [-Confirm]
+=======
+>>>>>>> live
 New-MgUserTeamworkAssociatedTeam -UserId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -34,14 +74,37 @@ New-MgUserTeamworkAssociatedTeam -InputObject <ITeamsIdentity> [-AdditionalPrope
 ### CreateViaIdentity
 ```
 New-MgUserTeamworkAssociatedTeam -InputObject <ITeamsIdentity> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
+<<<<<<< HEAD
+=======
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Teams/New-MgUserTeamworkAssociatedTeam.md
+>>>>>>> live
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
+<<<<<<< HEAD
 Create new navigation property to associatedTeams for users
 
 ## EXAMPLES
 
+=======
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.WindowsUpdates/New-MgWindowsUpdatesDeployment.md
+Deployments created using the deployment service.
+Read-only.
+=======
+Create new navigation property to associatedTeams for users
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Teams/New-MgUserTeamworkAssociatedTeam.md
+
+## EXAMPLES
+
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
+
+>>>>>>> live
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -49,7 +112,27 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
+<<<<<<< HEAD
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+=======
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Audience
+deploymentAudience
+To construct, please use Get-Help -Online and see NOTES section for AUDIENCE properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphWindowsUpdatesDeploymentAudience
+Parameter Sets: CreateExpanded
+>>>>>>> live
 Aliases:
 
 Required: False
@@ -60,11 +143,26 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.WindowsUpdates/New-MgWindowsUpdatesDeployment.md
+deployment
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphWindowsUpdatesDeployment
+Parameter Sets: Create
+=======
+>>>>>>> live
 associatedTeamInfo
 
 ```yaml
 Type: Hashtable
 Parameter Sets: Create, CreateViaIdentity
+<<<<<<< HEAD
+=======
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Teams/New-MgUserTeamworkAssociatedTeam.md
+>>>>>>> live
 Aliases:
 
 Required: True
@@ -74,12 +172,44 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.WindowsUpdates/New-MgWindowsUpdatesDeployment.md
+### -Content
+deployableContent
+
+```yaml
+Type: Hashtable
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CreatedDateTime
+The date and time the deployment was created.
+Returned by default.
+Read-only.
+
+```yaml
+Type: DateTime
+Parameter Sets: CreateExpanded
+=======
+>>>>>>> live
 ### -DisplayName
 .
 
 ```yaml
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+<<<<<<< HEAD
+=======
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Teams/New-MgUserTeamworkAssociatedTeam.md
+>>>>>>> live
 Aliases:
 
 Required: False
@@ -94,7 +224,11 @@ Read-only.
 
 ```yaml
 Type: String
+<<<<<<< HEAD
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+=======
+Parameter Sets: CreateExpanded
+>>>>>>> live
 Aliases:
 
 Required: False
@@ -104,6 +238,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+<<<<<<< HEAD
 ### -InputObject
 Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -120,6 +255,39 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+=======
+### -LastModifiedDateTime
+The date and time the deployment was last modified.
+Returned by default.
+Read-only.
+
+```yaml
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.WindowsUpdates/New-MgWindowsUpdatesDeployment.md
+Type: DateTime
+Parameter Sets: CreateExpanded
+=======
+Type: ITeamsIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Teams/New-MgUserTeamworkAssociatedTeam.md
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.WindowsUpdates/New-MgWindowsUpdatesDeployment.md
+### -Settings
+deploymentSettings
+To construct, please use Get-Help -Online and see NOTES section for SETTINGS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphWindowsUpdatesDeploymentSettings
+Parameter Sets: CreateExpanded
+=======
+>>>>>>> live
 ### -Team
 team
 To construct, please use Get-Help -Online and see NOTES section for TEAM properties and create a hash table.
@@ -142,6 +310,10 @@ Accept wildcard characters: False
 ```yaml
 Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+<<<<<<< HEAD
+=======
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Teams/New-MgUserTeamworkAssociatedTeam.md
+>>>>>>> live
 Aliases:
 
 Required: False
@@ -151,6 +323,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+<<<<<<< HEAD
 ### -UserId
 key: id of user
 
@@ -160,6 +333,18 @@ Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
+=======
+### -State
+deploymentState
+To construct, please use Get-Help -Online and see NOTES section for STATE properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphWindowsUpdatesDeploymentState
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+>>>>>>> live
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -202,11 +387,21 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.WindowsUpdates/New-MgWindowsUpdatesDeployment.md
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsUpdatesDeployment
+## OUTPUTS
+
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsUpdatesDeployment
+=======
+>>>>>>> live
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
 ### System.Collections.Hashtable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAssociatedTeamInfo
+<<<<<<< HEAD
 ## NOTES
 
 ALIASES
@@ -4478,3 +4673,17 @@ TEAM <IMicrosoftGraphTeam>: team
 ## RELATED LINKS
 
 ## RELATED LINKS
+=======
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Teams/New-MgUserTeamworkAssociatedTeam.md
+## NOTES
+Please use Get-Help -Online.
+
+## RELATED LINKS
+
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.WindowsUpdates/New-MgWindowsUpdatesDeployment.md
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/new-mgwindowsupdatesdeployment](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/new-mgwindowsupdatesdeployment)
+=======
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mguserteamworkassociatedteam](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mguserteamworkassociatedteam)
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Teams/New-MgUserTeamworkAssociatedTeam.md
+
+>>>>>>> live

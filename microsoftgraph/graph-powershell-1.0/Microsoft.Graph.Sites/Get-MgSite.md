@@ -8,30 +8,29 @@ schema: 2.0.0
 # Get-MgSite
 
 ## SYNOPSIS
-Get entity from sites by key
+Invoke function getByPath
 
 ## SYNTAX
 
 ### List1 (Default)
 ```
-Get-MgSite [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>]
+Get-MgSite [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>]
  [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
  [<CommonParameters>]
 ```
 
 ### Get1
 ```
-Get-MgSite -SiteId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgSite -Path <String> -SiteId <String> [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
-Get-MgSite -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgSite -InputObject <ISitesIdentity> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get entity from sites by key
+Invoke function getByPath
 
 ## EXAMPLES
 
@@ -73,7 +72,7 @@ Expand related entities
 
 ```yaml
 Type: String[]
-Parameter Sets: (All)
+Parameter Sets: List1
 Aliases: Expand
 
 Required: False
@@ -129,12 +128,27 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Path
+Usage: path={path}
+
+```yaml
+Type: String
+Parameter Sets: Get2
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Property
 Select properties to be returned
 
 ```yaml
 Type: String[]
-Parameter Sets: (All)
+Parameter Sets: List1
 Aliases: Select
 
 Required: False

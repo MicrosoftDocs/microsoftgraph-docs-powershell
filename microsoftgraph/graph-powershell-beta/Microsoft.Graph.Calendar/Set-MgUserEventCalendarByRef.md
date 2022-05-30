@@ -1,4 +1,21 @@
+<<<<<<< HEAD
 ﻿---
+=======
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Devices.ServiceAnnouncement/Set-MgServiceAnnouncementMessageAttachmentArchive.md
+﻿---
+external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
+Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.serviceannouncement/set-mgserviceannouncementmessageattachmentarchive
+schema: 2.0.0
+---
+
+# Set-MgServiceAnnouncementMessageAttachmentArchive
+
+## SYNOPSIS
+Update media content for the navigation property messages in admin
+=======
+---
+>>>>>>> live
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/set-mgusereventcalendarbyref
@@ -11,11 +28,22 @@ schema: 2.0.0
 The calendar that contains the event.
 Navigation property.
 Read-only.
+<<<<<<< HEAD
+=======
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Calendar/Set-MgUserEventCalendarByRef.md
+>>>>>>> live
 
 ## SYNTAX
 
 ### SetExpanded (Default)
 ```
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Devices.ServiceAnnouncement/Set-MgServiceAnnouncementMessageAttachmentArchive.md
+Set-MgServiceAnnouncementMessageAttachmentArchive -ServiceUpdateMessageId <String> [-BodyParameter <Stream>]
+ -InFile <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+=======
+>>>>>>> live
 Set-MgUserEventCalendarByRef -EventId <String> -UserId <String> [-AdditionalProperties <Hashtable>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -30,10 +58,25 @@ Set-MgUserEventCalendarByRef -EventId <String> -UserId <String> -BodyParameter <
 ```
 Set-MgUserEventCalendarByRef -InputObject <ICalendarIdentity> [-AdditionalProperties <Hashtable>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
+<<<<<<< HEAD
+=======
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Calendar/Set-MgUserEventCalendarByRef.md
+>>>>>>> live
 ```
 
 ### SetViaIdentity
 ```
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Devices.ServiceAnnouncement/Set-MgServiceAnnouncementMessageAttachmentArchive.md
+Set-MgServiceAnnouncementMessageAttachmentArchive -InputObject <IDevicesServiceAnnouncementIdentity>
+ [-BodyParameter <Stream>] -InFile <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Update media content for the navigation property messages in admin
+=======
+>>>>>>> live
 Set-MgUserEventCalendarByRef -InputObject <ICalendarIdentity> -BodyParameter <Hashtable> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
@@ -42,6 +85,10 @@ Set-MgUserEventCalendarByRef -InputObject <ICalendarIdentity> -BodyParameter <Ha
 The calendar that contains the event.
 Navigation property.
 Read-only.
+<<<<<<< HEAD
+=======
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Calendar/Set-MgUserEventCalendarByRef.md
+>>>>>>> live
 
 ## EXAMPLES
 
@@ -62,6 +109,15 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Devices.ServiceAnnouncement/Set-MgServiceAnnouncementMessageAttachmentArchive.md
+### -InFile
+The path to the file to upload.
+This should include a path and file name.
+If you omit the path, the current location will be used.
+=======
+>>>>>>> live
 ### -BodyParameter
 .
 
@@ -79,6 +135,10 @@ Accept wildcard characters: False
 
 ### -EventId
 key: id of event
+<<<<<<< HEAD
+=======
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Calendar/Set-MgUserEventCalendarByRef.md
+>>>>>>> live
 
 ```yaml
 Type: String
@@ -97,8 +157,18 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
+<<<<<<< HEAD
 Type: ICalendarIdentity
 Parameter Sets: SetViaIdentityExpanded, SetViaIdentity
+=======
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Devices.ServiceAnnouncement/Set-MgServiceAnnouncementMessageAttachmentArchive.md
+Type: IDevicesServiceAnnouncementIdentity
+Parameter Sets: SetViaIdentity
+=======
+Type: ICalendarIdentity
+Parameter Sets: SetViaIdentityExpanded, SetViaIdentity
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Calendar/Set-MgUserEventCalendarByRef.md
+>>>>>>> live
 Aliases:
 
 Required: True
@@ -118,17 +188,36 @@ Aliases:
 
 Required: False
 Position: Named
+<<<<<<< HEAD
 Default value: None
+=======
+Default value: False
+>>>>>>> live
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Devices.ServiceAnnouncement/Set-MgServiceAnnouncementMessageAttachmentArchive.md
+### -ServiceUpdateMessageId
+key: id of serviceUpdateMessage
+
+```yaml
+Type: String
+Parameter Sets: Set
+=======
+>>>>>>> live
 ### -UserId
 key: id of user
 
 ```yaml
 Type: String
 Parameter Sets: SetExpanded, Set
+<<<<<<< HEAD
+=======
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Calendar/Set-MgUserEventCalendarByRef.md
+>>>>>>> live
 Aliases:
 
 Required: True
@@ -174,8 +263,18 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+<<<<<<< HEAD
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
 ### System.Collections.Hashtable
+=======
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Devices.ServiceAnnouncement/Set-MgServiceAnnouncementMessageAttachmentArchive.md
+### Microsoft.Graph.PowerShell.Models.IDevicesServiceAnnouncementIdentity
+### System.IO.Stream
+=======
+### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
+### System.Collections.Hashtable
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Calendar/Set-MgUserEventCalendarByRef.md
+>>>>>>> live
 ## OUTPUTS
 
 ### System.Boolean
@@ -187,6 +286,7 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
+<<<<<<< HEAD
 
 INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
@@ -201,5 +301,17 @@ INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   - `[PlaceId <String>]`: key: id of place
   - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
   - `[UserId <String>]`: key: id of user
+=======
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Devices.ServiceAnnouncement/Set-MgServiceAnnouncementMessageAttachmentArchive.md
+=======
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/set-mgusereventcalendarbyref](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/set-mgusereventcalendarbyref)
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Calendar/Set-MgUserEventCalendarByRef.md
+
+INPUTOBJECT <IDevicesServiceAnnouncementIdentity>: Identity Parameter
+  - `[ServiceAnnouncementAttachmentId <String>]`: key: id of serviceAnnouncementAttachment
+  - `[ServiceHealthId <String>]`: key: id of serviceHealth
+  - `[ServiceHealthIssueId <String>]`: key: id of serviceHealthIssue
+  - `[ServiceUpdateMessageId <String>]`: key: id of serviceUpdateMessage
+>>>>>>> live
 
 ## RELATED LINKS

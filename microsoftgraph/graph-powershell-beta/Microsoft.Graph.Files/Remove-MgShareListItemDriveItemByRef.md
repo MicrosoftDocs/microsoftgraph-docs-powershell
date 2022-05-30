@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgShareListItemDriveItemByRef
 
 ## SYNOPSIS
-For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
+For document libraries, the driveItem relationship exposes the listItem as a \[driveItem\]\[\]
 
 ## SYNTAX
 
@@ -37,9 +37,16 @@ Remove-MgShareListItemDriveItemByRef -InputObject <IFilesIdentity> [-IfMatch <St
 ```
 
 ## DESCRIPTION
-For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
+For document libraries, the driveItem relationship exposes the listItem as a \[driveItem\]\[\]
 
 ## EXAMPLES
+
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -99,7 +106,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -160,31 +167,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
-
-ALIASES
-
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
-
-
-INPUTOBJECT <IFilesIdentity>: Identity Parameter
-  - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
-  - `[ColumnLinkId <String>]`: key: id of columnLink
-  - `[ContentTypeId <String>]`: key: id of contentType
-  - `[DriveId <String>]`: key: id of drive
-  - `[DriveItemId <String>]`: key: id of driveItem
-  - `[EndDateTime <String>]`: Usage: endDateTime={endDateTime}
-  - `[GroupId <String>]`: key: id of group
-  - `[Interval <String>]`: Usage: interval={interval}
-  - `[ListItemId <String>]`: key: id of listItem
-  - `[ListItemVersionId <String>]`: key: id of listItemVersion
-  - `[Q <String>]`: Usage: q={q}
-  - `[RichLongRunningOperationId <String>]`: key: id of richLongRunningOperation
-  - `[SharedDriveItemId <String>]`: key: id of sharedDriveItem
-  - `[StartDateTime <String>]`: Usage: startDateTime={startDateTime}
-  - `[SubscriptionId <String>]`: key: id of subscription
-  - `[Token <String>]`: Usage: token={token}
-  - `[UserId <String>]`: key: id of user
+Please use Get-Help -Online.
 
 ## RELATED LINKS
+
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/remove-mgsharelistitemdriveitembyref](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/remove-mgsharelistitemdriveitembyref)
+

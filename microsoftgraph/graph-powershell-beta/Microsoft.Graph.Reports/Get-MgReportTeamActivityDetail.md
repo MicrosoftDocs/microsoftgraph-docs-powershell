@@ -1,4 +1,21 @@
+<<<<<<< HEAD
 ﻿---
+=======
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementMessageAttachmentArchive.md
+﻿---
+external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
+Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.serviceannouncement/get-mgserviceannouncementmessageattachmentarchive
+schema: 2.0.0
+---
+
+# Get-MgServiceAnnouncementMessageAttachmentArchive
+
+## SYNOPSIS
+Get media content for the navigation property messages from admin
+=======
+---
+>>>>>>> live
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportteamactivitydetail
@@ -9,11 +26,22 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function getTeamsTeamActivityDetail
+<<<<<<< HEAD
+=======
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Reports/Get-MgReportTeamActivityDetail.md
+>>>>>>> live
 
 ## SYNTAX
 
 ### Get (Default)
 ```
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementMessageAttachmentArchive.md
+Get-MgServiceAnnouncementMessageAttachmentArchive -ServiceUpdateMessageId <String> -OutFile <String>
+ [-PassThru] [<CommonParameters>]
+=======
+>>>>>>> live
 Get-MgReportTeamActivityDetail -Date <DateTime> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
@@ -26,21 +54,45 @@ Get-MgReportTeamActivityDetail -Period <String> -OutFile <String> [-PassThru] [<
 ```
 Get-MgReportTeamActivityDetail -InputObject <IReportsIdentity> -OutFile <String> [-PassThru]
  [<CommonParameters>]
+<<<<<<< HEAD
+=======
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Reports/Get-MgReportTeamActivityDetail.md
+>>>>>>> live
 ```
 
 ### GetViaIdentity
 ```
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementMessageAttachmentArchive.md
+Get-MgServiceAnnouncementMessageAttachmentArchive -InputObject <IDevicesServiceAnnouncementIdentity>
+ -OutFile <String> [-PassThru] [<CommonParameters>]
+```
+
+## DESCRIPTION
+Get media content for the navigation property messages from admin
+=======
+>>>>>>> live
 Get-MgReportTeamActivityDetail -InputObject <IReportsIdentity> -OutFile <String> [-PassThru]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke function getTeamsTeamActivityDetail
+<<<<<<< HEAD
+=======
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Reports/Get-MgReportTeamActivityDetail.md
+>>>>>>> live
 
 ## EXAMPLES
 
 ## PARAMETERS
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementMessageAttachmentArchive.md
+=======
+>>>>>>> live
 ### -Date
 Usage: date={date}
 
@@ -56,13 +108,27 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+<<<<<<< HEAD
+=======
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Reports/Get-MgReportTeamActivityDetail.md
+>>>>>>> live
 ### -InputObject
 Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
+<<<<<<< HEAD
 Type: IReportsIdentity
 Parameter Sets: GetViaIdentity1, GetViaIdentity
+=======
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementMessageAttachmentArchive.md
+Type: IDevicesServiceAnnouncementIdentity
+Parameter Sets: GetViaIdentity
+=======
+Type: IReportsIdentity
+Parameter Sets: GetViaIdentity1, GetViaIdentity
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Reports/Get-MgReportTeamActivityDetail.md
+>>>>>>> live
 Aliases:
 
 Required: True
@@ -97,17 +163,36 @@ Aliases:
 
 Required: False
 Position: Named
+<<<<<<< HEAD
 Default value: None
+=======
+Default value: False
+>>>>>>> live
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementMessageAttachmentArchive.md
+### -ServiceUpdateMessageId
+key: id of serviceUpdateMessage
+
+```yaml
+Type: String
+Parameter Sets: Get
+=======
+>>>>>>> live
 ### -Period
 Usage: period={period}
 
 ```yaml
 Type: String
 Parameter Sets: Get1
+<<<<<<< HEAD
+=======
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Reports/Get-MgReportTeamActivityDetail.md
+>>>>>>> live
 Aliases:
 
 Required: True
@@ -122,7 +207,15 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+<<<<<<< HEAD
 ### Microsoft.Graph.PowerShell.Models.IReportsIdentity
+=======
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementMessageAttachmentArchive.md
+### Microsoft.Graph.PowerShell.Models.IDevicesServiceAnnouncementIdentity
+=======
+### Microsoft.Graph.PowerShell.Models.IReportsIdentity
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Reports/Get-MgReportTeamActivityDetail.md
+>>>>>>> live
 ## OUTPUTS
 
 ### System.Boolean
@@ -134,6 +227,7 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
+<<<<<<< HEAD
 
 INPUTOBJECT <IReportsIdentity>: Identity Parameter
   - `[ApplicationSignInDetailedSummaryId <String>]`: key: id of applicationSignInDetailedSummary
@@ -161,5 +255,17 @@ INPUTOBJECT <IReportsIdentity>: Identity Parameter
   - `[UserCredentialUsageDetailsId <String>]`: key: id of userCredentialUsageDetails
   - `[UserId <String>]`: Usage: userId={userId}
   - `[UserRegistrationDetailsId <String>]`: key: id of userRegistrationDetails
+=======
+<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementMessageAttachmentArchive.md
+=======
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportteamactivitydetail](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportteamactivitydetail)
+>>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Reports/Get-MgReportTeamActivityDetail.md
+
+INPUTOBJECT <IDevicesServiceAnnouncementIdentity>: Identity Parameter
+  - `[ServiceAnnouncementAttachmentId <String>]`: key: id of serviceAnnouncementAttachment
+  - `[ServiceHealthId <String>]`: key: id of serviceHealth
+  - `[ServiceHealthIssueId <String>]`: key: id of serviceHealthIssue
+  - `[ServiceUpdateMessageId <String>]`: key: id of serviceUpdateMessage
+>>>>>>> live
 
 ## RELATED LINKS

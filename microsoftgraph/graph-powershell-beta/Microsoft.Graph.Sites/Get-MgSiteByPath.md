@@ -12,9 +12,20 @@ Invoke function getByPath
 
 ## SYNTAX
 
-### Get (Default)
+### Get3 (Default)
+```
+Get-MgSiteByPath -SiteId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+```
+
+### Get
 ```
 Get-MgSiteByPath -Path <String> -SiteId <String> [<CommonParameters>]
+```
+
+### GetViaIdentity3
+```
+Get-MgSiteByPath -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -29,13 +40,28 @@ Invoke function getByPath
 
 ## PARAMETERS
 
+### -ExpandProperty
+Expand related entities
+
+```yaml
+Type: String[]
+Parameter Sets: Get3, GetViaIdentity3
+Aliases: Expand
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: GetViaIdentity3, GetViaIdentity
 Aliases:
 
 Required: True
@@ -60,12 +86,27 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Property
+Select properties to be returned
+
+```yaml
+Type: String[]
+Parameter Sets: Get3, GetViaIdentity3
+Aliases: Select
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SiteId
 key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get3, Get
 Aliases:
 
 Required: True
