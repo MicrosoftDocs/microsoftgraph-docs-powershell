@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/remove-mgdevicemanagementdeviceshellscriptdevicerunstatemanageddeviceuserfromsharedappledevice
 schema: 2.0.0
@@ -16,7 +16,7 @@ Delete user from shared Apple device
 ```
 Remove-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceUserFromSharedAppleDevice
  -DeviceManagementScriptDeviceStateId <String> -DeviceShellScriptId <String>
- [-AdditionalProperties <Hashtable>] [-UserPrincipalName <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [-AdditionalProperties <Hashtable>] [-UserPrincipalName <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -25,7 +25,14 @@ Remove-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceUserFromSha
 Remove-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceUserFromSharedAppleDevice
  -DeviceManagementScriptDeviceStateId <String> -DeviceShellScriptId <String>
  -BodyParameter <IPaths3Uwt37DevicemanagementDeviceshellscriptsDeviceshellscriptIdDevicerunstatesDevicemanagementscriptdevicestateIdManageddeviceMicrosoftGraphDeleteuserfromsharedappledevicePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DeleteViaIdentityExpanded
+```
+Remove-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceUserFromSharedAppleDevice
+ -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-UserPrincipalName <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
@@ -33,14 +40,7 @@ Remove-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceUserFromSha
 Remove-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceUserFromSharedAppleDevice
  -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths3Uwt37DevicemanagementDeviceshellscriptsDeviceshellscriptIdDevicerunstatesDevicemanagementscriptdevicestateIdManageddeviceMicrosoftGraphDeleteuserfromsharedappledevicePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### DeleteViaIdentityExpanded
-```
-Remove-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceUserFromSharedAppleDevice
- -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-UserPrincipalName <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -54,7 +54,7 @@ Delete user from shared Apple device
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: DeleteExpanded, DeleteViaIdentityExpanded
 Aliases:
 
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths3Uwt37DevicemanagementDeviceshellscriptsDeviceshellscriptIdDevicerunstatesDevicemanagementscriptdevicestateIdManageddeviceMicrosoftGraphDeleteuserfromsharedappledevicePostRequestbodyContentApplicationJsonSchema
+Type: IPaths3Uwt37DevicemanagementDeviceshellscriptsDeviceshellscriptIdDevicerunstatesDevicemanagementscriptdevicestateIdManageddeviceMicrosoftGraphDeleteuserfromsharedappledevicePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Delete, DeleteViaIdentity
 Aliases:
 
@@ -85,8 +85,8 @@ Accept wildcard characters: False
 key: id of deviceManagementScriptDeviceState
 
 ```yaml
-Type: System.String
-Parameter Sets: Delete, DeleteExpanded
+Type: String
+Parameter Sets: DeleteExpanded, Delete
 Aliases:
 
 Required: True
@@ -100,8 +100,8 @@ Accept wildcard characters: False
 key: id of deviceShellScript
 
 ```yaml
-Type: System.String
-Parameter Sets: Delete, DeleteExpanded
+Type: String
+Parameter Sets: DeleteExpanded, Delete
 Aliases:
 
 Required: True
@@ -116,8 +116,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-Parameter Sets: DeleteViaIdentity, DeleteViaIdentityExpanded
+Type: IDeviceManagementActionsIdentity
+Parameter Sets: DeleteViaIdentityExpanded, DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: DeleteExpanded, DeleteViaIdentityExpanded
 Aliases:
 
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -177,7 +177,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -194,13 +194,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IPaths3Uwt37DevicemanagementDeviceshellscriptsDeviceshellscriptIdDevicerunstatesDevicemanagementscriptdevicestateIdManageddeviceMicrosoftGraphDeleteuserfromsharedappledevicePostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -270,4 +267,3 @@ INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[WindowsQualityUpdateProfileId <String>]`: key: id of windowsQualityUpdateProfile
 
 ## RELATED LINKS
-

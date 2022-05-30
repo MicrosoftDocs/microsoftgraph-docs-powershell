@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/set-mgdevicemanagementcompliancepolicyscheduledaction
 schema: 2.0.0
@@ -16,7 +16,7 @@ Invoke action setScheduledActions
 ```
 Set-MgDeviceManagementCompliancePolicyScheduledAction -DeviceManagementCompliancePolicyId <String>
  [-AdditionalProperties <Hashtable>]
- [-ScheduledActions <IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule[]>] [-Confirm] [-WhatIf]
+ [-ScheduledActions <IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -24,22 +24,22 @@ Set-MgDeviceManagementCompliancePolicyScheduledAction -DeviceManagementComplianc
 ```
 Set-MgDeviceManagementCompliancePolicyScheduledAction -DeviceManagementCompliancePolicyId <String>
  -BodyParameter <IPaths13I2FdeDevicemanagementCompliancepoliciesDevicemanagementcompliancepolicyIdMicrosoftGraphSetscheduledactionsPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### SetViaIdentity
-```
-Set-MgDeviceManagementCompliancePolicyScheduledAction -InputObject <IDeviceManagementActionsIdentity>
- -BodyParameter <IPaths13I2FdeDevicemanagementCompliancepoliciesDevicemanagementcompliancepolicyIdMicrosoftGraphSetscheduledactionsPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentityExpanded
 ```
 Set-MgDeviceManagementCompliancePolicyScheduledAction -InputObject <IDeviceManagementActionsIdentity>
  [-AdditionalProperties <Hashtable>]
- [-ScheduledActions <IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule[]>] [-Confirm] [-WhatIf]
+ [-ScheduledActions <IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
+```
+
+### SetViaIdentity
+```
+Set-MgDeviceManagementCompliancePolicyScheduledAction -InputObject <IDeviceManagementActionsIdentity>
+ -BodyParameter <IPaths13I2FdeDevicemanagementCompliancepoliciesDevicemanagementcompliancepolicyIdMicrosoftGraphSetscheduledactionsPostRequestbodyContentApplicationJsonSchema>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,7 +53,7 @@ Invoke action setScheduledActions
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths13I2FdeDevicemanagementCompliancepoliciesDevicemanagementcompliancepolicyIdMicrosoftGraphSetscheduledactionsPostRequestbodyContentApplicationJsonSchema
+Type: IPaths13I2FdeDevicemanagementCompliancepoliciesDevicemanagementcompliancepolicyIdMicrosoftGraphSetscheduledactionsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Set, SetViaIdentity
 Aliases:
 
@@ -84,8 +84,8 @@ Accept wildcard characters: False
 key: id of deviceManagementCompliancePolicy
 
 ```yaml
-Type: System.String
-Parameter Sets: Set, SetExpanded
+Type: String
+Parameter Sets: SetExpanded, Set
 Aliases:
 
 Required: True
@@ -100,8 +100,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-Parameter Sets: SetViaIdentity, SetViaIdentityExpanded
+Type: IDeviceManagementActionsIdentity
+Parameter Sets: SetViaIdentityExpanded, SetViaIdentity
 Aliases:
 
 Required: True
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for SCHEDULEDACTIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule[]
+Type: IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule[]
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -147,7 +147,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -164,13 +164,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IPaths13I2FdeDevicemanagementCompliancepoliciesDevicemanagementcompliancepolicyIdMicrosoftGraphSetscheduledactionsPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule
-
 ## NOTES
 
 ALIASES
@@ -258,4 +255,3 @@ SCHEDULEDACTIONS <IMicrosoftGraphDeviceManagementComplianceScheduledActionForRul
     - `[NotificationTemplateId <String>]`: What notification Message template to use
 
 ## RELATED LINKS
-

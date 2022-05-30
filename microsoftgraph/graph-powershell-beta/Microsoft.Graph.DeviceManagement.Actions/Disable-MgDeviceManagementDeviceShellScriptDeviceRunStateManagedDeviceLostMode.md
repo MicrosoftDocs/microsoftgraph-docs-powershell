@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/disable-mgdevicemanagementdeviceshellscriptdevicerunstatemanageddevicelostmode
 schema: 2.0.0
@@ -15,14 +15,14 @@ Disable lost mode
 ### Disable (Default)
 ```
 Disable-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceLostMode
- -DeviceManagementScriptDeviceStateId <String> -DeviceShellScriptId <String> [-PassThru] [-Confirm] [-WhatIf]
+ -DeviceManagementScriptDeviceStateId <String> -DeviceShellScriptId <String> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### DisableViaIdentity
 ```
 Disable-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceLostMode
- -InputObject <IDeviceManagementActionsIdentity> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ -InputObject <IDeviceManagementActionsIdentity> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,7 +36,7 @@ Disable lost mode
 key: id of deviceManagementScriptDeviceState
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Disable
 Aliases:
 
@@ -51,7 +51,7 @@ Accept wildcard characters: False
 key: id of deviceShellScript
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Disable
 Aliases:
 
@@ -67,7 +67,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
+Type: IDeviceManagementActionsIdentity
 Parameter Sets: DisableViaIdentity
 Aliases:
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -113,7 +113,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -130,11 +130,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -200,4 +198,3 @@ INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[WindowsQualityUpdateProfileId <String>]`: key: id of windowsQualityUpdateProfile
 
 ## RELATED LINKS
-

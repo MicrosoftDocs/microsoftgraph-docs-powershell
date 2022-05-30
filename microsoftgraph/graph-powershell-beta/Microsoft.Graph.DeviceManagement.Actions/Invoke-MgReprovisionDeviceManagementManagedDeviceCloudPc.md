@@ -1,58 +1,43 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgreprovisiondevicemanagementmanageddevicecloudpc
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgreenabledevicemanagementscriptdevicerunstatemanageddevice
 schema: 2.0.0
 ---
 
-# Invoke-MgReprovisionDeviceManagementManagedDeviceCloudPc
+# Invoke-MgReenableDeviceManagementScriptDeviceRunStateManagedDevice
 
 ## SYNOPSIS
-Invoke action reprovisionCloudPc
+Invoke action reenable
 
 ## SYNTAX
 
-### Cloud (Default)
+### Reenable (Default)
 ```
-Invoke-MgReprovisionDeviceManagementManagedDeviceCloudPc -ManagedDeviceId <String> [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Invoke-MgReenableDeviceManagementScriptDeviceRunStateManagedDevice
+ -DeviceManagementScriptDeviceStateId <String> -DeviceManagementScriptId <String> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
-### CloudViaIdentity
+### ReenableViaIdentity
 ```
-Invoke-MgReprovisionDeviceManagementManagedDeviceCloudPc -InputObject <IDeviceManagementActionsIdentity>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Invoke-MgReenableDeviceManagementScriptDeviceRunStateManagedDevice
+ -InputObject <IDeviceManagementActionsIdentity> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action reprovisionCloudPc
+Invoke action reenable
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -DeviceManagementScriptDeviceStateId
+key: id of deviceManagementScriptDeviceState
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-Parameter Sets: CloudViaIdentity
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -ManagedDeviceId
-key: id of managedDevice
-
-```yaml
-Type: System.String
-Parameter Sets: Cloud
+Type: String
+Parameter Sets: Reenable
 Aliases:
 
 Required: True
@@ -62,11 +47,42 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -DeviceManagementScriptId
+key: id of deviceManagementScript
+
+```yaml
+Type: String
+Parameter Sets: Reenable
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InputObject
+Identity Parameter
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+
+```yaml
+Type: IDeviceManagementActionsIdentity
+Parameter Sets: ReenableViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -PassThru
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -81,7 +97,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -97,7 +113,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -114,16 +130,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
-
-### Invoke-MgCloudDeviceManagementManagedDevice
 
 COMPLEX PARAMETER PROPERTIES
 
@@ -186,4 +198,3 @@ INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[WindowsQualityUpdateProfileId <String>]`: key: id of windowsQualityUpdateProfile
 
 ## RELATED LINKS
-

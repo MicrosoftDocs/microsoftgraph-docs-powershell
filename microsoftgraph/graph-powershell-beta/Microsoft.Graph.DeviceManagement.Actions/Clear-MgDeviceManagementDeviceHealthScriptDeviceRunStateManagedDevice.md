@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/clear-mgdevicemanagementdevicehealthscriptdevicerunstatemanageddevice
 schema: 2.0.0
@@ -14,18 +14,26 @@ Wipe a device
 
 ### WipeExpanded (Default)
 ```
-Clear-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice
- -DeviceHealthScriptDeviceStateId <String> -DeviceHealthScriptId <String> [-AdditionalProperties <Hashtable>]
- [-KeepEnrollmentData] [-KeepUserData] [-MacOSUnlockCode <String>] [-PersistEsimDataPlan] [-UseProtectedWipe]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Clear-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice -DeviceHealthScriptDeviceStateId <String>
+ -DeviceHealthScriptId <String> [-AdditionalProperties <Hashtable>] [-KeepEnrollmentData] [-KeepUserData]
+ [-MacOSUnlockCode <String>] [-PersistEsimDataPlan] [-UseProtectedWipe] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Wipe
 ```
-Clear-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice
- -DeviceHealthScriptDeviceStateId <String> -DeviceHealthScriptId <String>
+Clear-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice -DeviceHealthScriptDeviceStateId <String>
+ -DeviceHealthScriptId <String>
  -BodyParameter <IPathsWb21PyDevicemanagementDevicehealthscriptsDevicehealthscriptIdDevicerunstatesDevicehealthscriptdevicestateIdManageddeviceMicrosoftGraphWipePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### WipeViaIdentityExpanded
+```
+Clear-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice
+ -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>] [-KeepEnrollmentData]
+ [-KeepUserData] [-MacOSUnlockCode <String>] [-PersistEsimDataPlan] [-UseProtectedWipe] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### WipeViaIdentity
@@ -33,15 +41,7 @@ Clear-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice
 Clear-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice
  -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPathsWb21PyDevicemanagementDevicehealthscriptsDevicehealthscriptIdDevicerunstatesDevicehealthscriptdevicestateIdManageddeviceMicrosoftGraphWipePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### WipeViaIdentityExpanded
-```
-Clear-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice
- -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>] [-KeepEnrollmentData]
- [-KeepUserData] [-MacOSUnlockCode <String>] [-PersistEsimDataPlan] [-UseProtectedWipe] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -55,7 +55,7 @@ Wipe a device
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: WipeExpanded, WipeViaIdentityExpanded
 Aliases:
 
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPathsWb21PyDevicemanagementDevicehealthscriptsDevicehealthscriptIdDevicerunstatesDevicehealthscriptdevicestateIdManageddeviceMicrosoftGraphWipePostRequestbodyContentApplicationJsonSchema
+Type: IPathsWb21PyDevicemanagementDevicehealthscriptsDevicehealthscriptIdDevicerunstatesDevicehealthscriptdevicestateIdManageddeviceMicrosoftGraphWipePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Wipe, WipeViaIdentity
 Aliases:
 
@@ -86,8 +86,8 @@ Accept wildcard characters: False
 key: id of deviceHealthScriptDeviceState
 
 ```yaml
-Type: System.String
-Parameter Sets: Wipe, WipeExpanded
+Type: String
+Parameter Sets: WipeExpanded, Wipe
 Aliases:
 
 Required: True
@@ -101,8 +101,8 @@ Accept wildcard characters: False
 key: id of deviceHealthScript
 
 ```yaml
-Type: System.String
-Parameter Sets: Wipe, WipeExpanded
+Type: String
+Parameter Sets: WipeExpanded, Wipe
 Aliases:
 
 Required: True
@@ -117,8 +117,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-Parameter Sets: WipeViaIdentity, WipeViaIdentityExpanded
+Type: IDeviceManagementActionsIdentity
+Parameter Sets: WipeViaIdentityExpanded, WipeViaIdentity
 Aliases:
 
 Required: True
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: WipeExpanded, WipeViaIdentityExpanded
 Aliases:
 
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: WipeExpanded, WipeViaIdentityExpanded
 Aliases:
 
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: WipeExpanded, WipeViaIdentityExpanded
 Aliases:
 
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: WipeExpanded, WipeViaIdentityExpanded
 Aliases:
 
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: WipeExpanded, WipeViaIdentityExpanded
 Aliases:
 
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -238,7 +238,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -255,13 +255,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IPathsWb21PyDevicemanagementDevicehealthscriptsDevicehealthscriptIdDevicerunstatesDevicehealthscriptdevicestateIdManageddeviceMicrosoftGraphWipePostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -335,4 +332,3 @@ INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[WindowsQualityUpdateProfileId <String>]`: key: id of windowsQualityUpdateProfile
 
 ## RELATED LINKS
-

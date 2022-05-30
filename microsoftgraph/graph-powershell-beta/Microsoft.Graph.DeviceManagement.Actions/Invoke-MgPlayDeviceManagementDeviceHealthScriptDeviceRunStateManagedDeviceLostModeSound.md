@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgplaydevicemanagementdevicehealthscriptdevicerunstatemanageddevicelostmodesound
 schema: 2.0.0
@@ -16,7 +16,7 @@ Play lost mode sound
 ```
 Invoke-MgPlayDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceLostModeSound
  -DeviceHealthScriptDeviceStateId <String> -DeviceHealthScriptId <String> [-AdditionalProperties <Hashtable>]
- [-DurationInMinutes <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-DurationInMinutes <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Play
@@ -24,7 +24,14 @@ Invoke-MgPlayDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceLostMo
 Invoke-MgPlayDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceLostModeSound
  -DeviceHealthScriptDeviceStateId <String> -DeviceHealthScriptId <String>
  -BodyParameter <IPathsTb5AcfDevicemanagementDevicehealthscriptsDevicehealthscriptIdDevicerunstatesDevicehealthscriptdevicestateIdManageddeviceMicrosoftGraphPlaylostmodesoundPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### PlayViaIdentityExpanded
+```
+Invoke-MgPlayDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceLostModeSound
+ -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-DurationInMinutes <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### PlayViaIdentity
@@ -32,14 +39,7 @@ Invoke-MgPlayDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceLostMo
 Invoke-MgPlayDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceLostModeSound
  -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPathsTb5AcfDevicemanagementDevicehealthscriptsDevicehealthscriptIdDevicerunstatesDevicehealthscriptdevicestateIdManageddeviceMicrosoftGraphPlaylostmodesoundPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### PlayViaIdentityExpanded
-```
-Invoke-MgPlayDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceLostModeSound
- -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-DurationInMinutes <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,7 +53,7 @@ Play lost mode sound
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: PlayExpanded, PlayViaIdentityExpanded
 Aliases:
 
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPathsTb5AcfDevicemanagementDevicehealthscriptsDevicehealthscriptIdDevicerunstatesDevicehealthscriptdevicestateIdManageddeviceMicrosoftGraphPlaylostmodesoundPostRequestbodyContentApplicationJsonSchema
+Type: IPathsTb5AcfDevicemanagementDevicehealthscriptsDevicehealthscriptIdDevicerunstatesDevicehealthscriptdevicestateIdManageddeviceMicrosoftGraphPlaylostmodesoundPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Play, PlayViaIdentity
 Aliases:
 
@@ -84,8 +84,8 @@ Accept wildcard characters: False
 key: id of deviceHealthScriptDeviceState
 
 ```yaml
-Type: System.String
-Parameter Sets: Play, PlayExpanded
+Type: String
+Parameter Sets: PlayExpanded, Play
 Aliases:
 
 Required: True
@@ -99,8 +99,8 @@ Accept wildcard characters: False
 key: id of deviceHealthScript
 
 ```yaml
-Type: System.String
-Parameter Sets: Play, PlayExpanded
+Type: String
+Parameter Sets: PlayExpanded, Play
 Aliases:
 
 Required: True
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: PlayExpanded, PlayViaIdentityExpanded
 Aliases:
 
@@ -130,8 +130,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-Parameter Sets: PlayViaIdentity, PlayViaIdentityExpanded
+Type: IDeviceManagementActionsIdentity
+Parameter Sets: PlayViaIdentityExpanded, PlayViaIdentity
 Aliases:
 
 Required: True
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -176,7 +176,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -193,13 +193,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IPathsTb5AcfDevicemanagementDevicehealthscriptsDevicehealthscriptIdDevicerunstatesDevicehealthscriptdevicestateIdManageddeviceMicrosoftGraphPlaylostmodesoundPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -269,4 +266,3 @@ INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[WindowsQualityUpdateProfileId <String>]`: key: id of windowsQualityUpdateProfile
 
 ## RELATED LINKS
-

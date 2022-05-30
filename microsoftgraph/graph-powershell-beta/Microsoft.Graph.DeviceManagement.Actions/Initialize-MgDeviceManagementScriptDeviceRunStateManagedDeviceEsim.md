@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/initialize-mgdevicemanagementscriptdevicerunstatemanageddeviceesim
 schema: 2.0.0
@@ -16,7 +16,7 @@ Activate eSIM on the device.
 ```
 Initialize-MgDeviceManagementScriptDeviceRunStateManagedDeviceEsim
  -DeviceManagementScriptDeviceStateId <String> -DeviceManagementScriptId <String>
- [-AdditionalProperties <Hashtable>] [-CarrierUrl <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [-AdditionalProperties <Hashtable>] [-CarrierUrl <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -25,7 +25,14 @@ Initialize-MgDeviceManagementScriptDeviceRunStateManagedDeviceEsim
 Initialize-MgDeviceManagementScriptDeviceRunStateManagedDeviceEsim
  -DeviceManagementScriptDeviceStateId <String> -DeviceManagementScriptId <String>
  -BodyParameter <IPaths93Nt6IDevicemanagementDevicemanagementscriptsDevicemanagementscriptIdDevicerunstatesDevicemanagementscriptdevicestateIdManageddeviceMicrosoftGraphActivatedeviceesimPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ActivateViaIdentityExpanded
+```
+Initialize-MgDeviceManagementScriptDeviceRunStateManagedDeviceEsim
+ -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>] [-CarrierUrl <String>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ActivateViaIdentity
@@ -33,14 +40,7 @@ Initialize-MgDeviceManagementScriptDeviceRunStateManagedDeviceEsim
 Initialize-MgDeviceManagementScriptDeviceRunStateManagedDeviceEsim
  -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths93Nt6IDevicemanagementDevicemanagementscriptsDevicemanagementscriptIdDevicerunstatesDevicemanagementscriptdevicestateIdManageddeviceMicrosoftGraphActivatedeviceesimPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### ActivateViaIdentityExpanded
-```
-Initialize-MgDeviceManagementScriptDeviceRunStateManagedDeviceEsim
- -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>] [-CarrierUrl <String>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -54,7 +54,7 @@ Activate eSIM on the device.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: ActivateExpanded, ActivateViaIdentityExpanded
 Aliases:
 
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths93Nt6IDevicemanagementDevicemanagementscriptsDevicemanagementscriptIdDevicerunstatesDevicemanagementscriptdevicestateIdManageddeviceMicrosoftGraphActivatedeviceesimPostRequestbodyContentApplicationJsonSchema
+Type: IPaths93Nt6IDevicemanagementDevicemanagementscriptsDevicemanagementscriptIdDevicerunstatesDevicemanagementscriptdevicestateIdManageddeviceMicrosoftGraphActivatedeviceesimPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Activate, ActivateViaIdentity
 Aliases:
 
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: ActivateExpanded, ActivateViaIdentityExpanded
 Aliases:
 
@@ -100,8 +100,8 @@ Accept wildcard characters: False
 key: id of deviceManagementScriptDeviceState
 
 ```yaml
-Type: System.String
-Parameter Sets: Activate, ActivateExpanded
+Type: String
+Parameter Sets: ActivateExpanded, Activate
 Aliases:
 
 Required: True
@@ -115,8 +115,8 @@ Accept wildcard characters: False
 key: id of deviceManagementScript
 
 ```yaml
-Type: System.String
-Parameter Sets: Activate, ActivateExpanded
+Type: String
+Parameter Sets: ActivateExpanded, Activate
 Aliases:
 
 Required: True
@@ -131,8 +131,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-Parameter Sets: ActivateViaIdentity, ActivateViaIdentityExpanded
+Type: IDeviceManagementActionsIdentity
+Parameter Sets: ActivateViaIdentityExpanded, ActivateViaIdentity
 Aliases:
 
 Required: True
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -177,7 +177,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -194,13 +194,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IPaths93Nt6IDevicemanagementDevicemanagementscriptsDevicemanagementscriptIdDevicerunstatesDevicemanagementscriptdevicestateIdManageddeviceMicrosoftGraphActivatedeviceesimPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -270,4 +267,3 @@ INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[WindowsQualityUpdateProfileId <String>]`: key: id of windowsQualityUpdateProfile
 
 ## RELATED LINKS
-
