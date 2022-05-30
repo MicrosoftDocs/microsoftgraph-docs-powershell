@@ -197,15 +197,6 @@ Get excludes from policies
 ### [Get-MgPolicyServicePrincipalCreationPolicyInclude](Get-MgPolicyServicePrincipalCreationPolicyInclude.md)
 Get includes from policies
 
-### [Get-MgPolicyServicePrincipalCreationPolicy](Get-MgPolicyServicePrincipalCreationPolicy.md)
-Get servicePrincipalCreationPolicies from policies
-
-### [Get-MgPolicyServicePrincipalCreationPolicyExclude](Get-MgPolicyServicePrincipalCreationPolicyExclude.md)
-Get excludes from policies
-
-### [Get-MgPolicyServicePrincipalCreationPolicyInclude](Get-MgPolicyServicePrincipalCreationPolicyInclude.md)
-Get includes from policies
-
 ### [Get-MgPolicyTokenIssuancePolicy](Get-MgPolicyTokenIssuancePolicy.md)
 The policy that specifies the characteristics of SAML tokens issued by Azure AD.
 
@@ -266,9 +257,6 @@ Represents the details of the password authentication method registered to a use
 
 ### [Get-MgUserAuthenticationPhoneMethod](Get-MgUserAuthenticationPhoneMethod.md)
 Represents the phone registered to a user for authentication.
-
-### [Get-MgUserAuthenticationSoftwareOathMethod](Get-MgUserAuthenticationSoftwareOathMethod.md)
-Get softwareOathMethods from users
 
 ### [Get-MgUserAuthenticationSoftwareOathMethod](Get-MgUserAuthenticationSoftwareOathMethod.md)
 Get softwareOathMethods from users
@@ -437,15 +425,6 @@ Create new navigation property to excludes for policies
 ### [New-MgPolicyServicePrincipalCreationPolicyInclude](New-MgPolicyServicePrincipalCreationPolicyInclude.md)
 Create new navigation property to includes for policies
 
-### [New-MgPolicyServicePrincipalCreationPolicy](New-MgPolicyServicePrincipalCreationPolicy.md)
-Create new navigation property to servicePrincipalCreationPolicies for policies
-
-### [New-MgPolicyServicePrincipalCreationPolicyExclude](New-MgPolicyServicePrincipalCreationPolicyExclude.md)
-Create new navigation property to excludes for policies
-
-### [New-MgPolicyServicePrincipalCreationPolicyInclude](New-MgPolicyServicePrincipalCreationPolicyInclude.md)
-Create new navigation property to includes for policies
-
 ### [New-MgPolicyTokenIssuancePolicy](New-MgPolicyTokenIssuancePolicy.md)
 The policy that specifies the characteristics of SAML tokens issued by Azure AD.
 
@@ -490,9 +469,6 @@ Represents the Microsoft Authenticator Passwordless Phone Sign-in methods regist
 
 ### [New-MgUserAuthenticationPhoneMethod](New-MgUserAuthenticationPhoneMethod.md)
 Represents the phone registered to a user for authentication.
-
-### [New-MgUserAuthenticationSoftwareOathMethod](New-MgUserAuthenticationSoftwareOathMethod.md)
-Create new navigation property to softwareOathMethods for users
 
 ### [New-MgUserAuthenticationSoftwareOathMethod](New-MgUserAuthenticationSoftwareOathMethod.md)
 Create new navigation property to softwareOathMethods for users
@@ -660,15 +636,6 @@ Delete navigation property excludes for policies
 ### [Remove-MgPolicyServicePrincipalCreationPolicyInclude](Remove-MgPolicyServicePrincipalCreationPolicyInclude.md)
 Delete navigation property includes for policies
 
-### [Remove-MgPolicyServicePrincipalCreationPolicy](Remove-MgPolicyServicePrincipalCreationPolicy.md)
-Delete navigation property servicePrincipalCreationPolicies for policies
-
-### [Remove-MgPolicyServicePrincipalCreationPolicyExclude](Remove-MgPolicyServicePrincipalCreationPolicyExclude.md)
-Delete navigation property excludes for policies
-
-### [Remove-MgPolicyServicePrincipalCreationPolicyInclude](Remove-MgPolicyServicePrincipalCreationPolicyInclude.md)
-Delete navigation property includes for policies
-
 ### [Remove-MgPolicyTokenIssuancePolicy](Remove-MgPolicyTokenIssuancePolicy.md)
 The policy that specifies the characteristics of SAML tokens issued by Azure AD.
 
@@ -720,9 +687,6 @@ Represents the details of the password authentication method registered to a use
 
 ### [Remove-MgUserAuthenticationPhoneMethod](Remove-MgUserAuthenticationPhoneMethod.md)
 Represents the phone registered to a user for authentication.
-
-### [Remove-MgUserAuthenticationSoftwareOathMethod](Remove-MgUserAuthenticationSoftwareOathMethod.md)
-Delete navigation property softwareOathMethods for users
 
 ### [Remove-MgUserAuthenticationSoftwareOathMethod](Remove-MgUserAuthenticationSoftwareOathMethod.md)
 Delete navigation property softwareOathMethods for users
@@ -920,12 +884,6 @@ Update the navigation property excludes in policies
 ### [Update-MgPolicyServicePrincipalCreationPolicyInclude](Update-MgPolicyServicePrincipalCreationPolicyInclude.md)
 Update the navigation property includes in policies
 
-### [Update-MgPolicyServicePrincipalCreationPolicyExclude](Update-MgPolicyServicePrincipalCreationPolicyExclude.md)
-Update the navigation property excludes in policies
-
-### [Update-MgPolicyServicePrincipalCreationPolicyInclude](Update-MgPolicyServicePrincipalCreationPolicyInclude.md)
-Update the navigation property includes in policies
-
 ### [Update-MgPolicyTokenIssuancePolicy](Update-MgPolicyTokenIssuancePolicy.md)
 The policy that specifies the characteristics of SAML tokens issued by Azure AD.
 
@@ -977,9 +935,6 @@ Update the navigation property device in users
 
 ### [Update-MgUserAuthenticationPhoneMethod](Update-MgUserAuthenticationPhoneMethod.md)
 Represents the phone registered to a user for authentication.
-
-### [Update-MgUserAuthenticationSoftwareOathMethod](Update-MgUserAuthenticationSoftwareOathMethod.md)
-Update the navigation property softwareOathMethods in users
 
 ### [Update-MgUserAuthenticationSoftwareOathMethod](Update-MgUserAuthenticationSoftwareOathMethod.md)
 Update the navigation property softwareOathMethods in users
