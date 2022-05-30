@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdevice
 schema: 2.0.0
@@ -15,11 +15,11 @@ Update entity in devices
 ### UpdateExpanded1 (Default)
 ```
 Update-MgDevice -DeviceId <String> [-AccountEnabled] [-AdditionalProperties <Hashtable>]
- [-AlternativeSecurityIds <IMicrosoftGraphAlternativeSecurityId[]>]
- [-ApproximateLastSignInDateTime <DateTime>] [-Commands <IMicrosoftGraphCommand[]>]
- [-ComplianceExpirationDateTime <DateTime>] [-DeletedDateTime <DateTime>] [-DeviceCategory <String>]
- [-DeviceId1 <String>] [-DeviceMetadata <String>] [-DeviceOwnership <String>] [-DeviceVersion <Int32>]
- [-DisplayName <String>] [-DomainName <String>] [-EnrollmentProfileName <String>] [-EnrollmentType <String>]
+ [-AlternativeSecurityIds <IMicrosoftGraphAlternativeSecurityId[]>] [-ApproximateLastSignInDateTime <DateTime>]
+ [-Commands <IMicrosoftGraphCommand[]>] [-ComplianceExpirationDateTime <DateTime>]
+ [-DeletedDateTime <DateTime>] [-DeviceCategory <String>] [-DeviceId1 <String>] [-DeviceMetadata <String>]
+ [-DeviceOwnership <String>] [-DeviceVersion <Int32>] [-DisplayName <String>] [-DomainName <String>]
+ [-EnrollmentProfileName <String>] [-EnrollmentType <String>]
  [-ExtensionAttributes <IMicrosoftGraphOnPremisesExtensionAttributes>]
  [-Extensions <IMicrosoftGraphExtension[]>] [-Hostnames <String[]>] [-Id <String>] [-IsCompliant] [-IsManaged]
  [-IsRooted] [-Kind <String>] [-ManagementType <String>] [-Manufacturer <String>] [-MdmAppId <String>]
@@ -29,24 +29,12 @@ Update-MgDevice -DeviceId <String> [-AccountEnabled] [-AdditionalProperties <Has
  [-RegisteredOwners <IMicrosoftGraphDirectoryObject[]>] [-RegisteredUsers <IMicrosoftGraphDirectoryObject[]>]
  [-RegistrationDateTime <DateTime>] [-Status <String>] [-SystemLabels <String[]>]
  [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>] [-TrustType <String>]
- [-UsageRights <IMicrosoftGraphUsageRight[]>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### Update1
-```
-Update-MgDevice -DeviceId <String> -BodyParameter <IMicrosoftGraphDevice1> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity1
-```
-Update-MgDevice -InputObject <IIdentityDirectoryManagementIdentity> -BodyParameter <IMicrosoftGraphDevice1>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-UsageRights <IMicrosoftGraphUsageRight[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
 ```
-Update-MgDevice -InputObject <IIdentityDirectoryManagementIdentity> [-DeviceId <String>] [-AccountEnabled]
+Update-MgDevice [-DeviceId <String>] -InputObject <IIdentityDirectoryManagementIdentity> [-AccountEnabled]
  [-AdditionalProperties <Hashtable>] [-AlternativeSecurityIds <IMicrosoftGraphAlternativeSecurityId[]>]
  [-ApproximateLastSignInDateTime <DateTime>] [-Commands <IMicrosoftGraphCommand[]>]
  [-ComplianceExpirationDateTime <DateTime>] [-DeletedDateTime <DateTime>] [-DeviceCategory <String>]
@@ -61,7 +49,19 @@ Update-MgDevice -InputObject <IIdentityDirectoryManagementIdentity> [-DeviceId <
  [-RegisteredOwners <IMicrosoftGraphDirectoryObject[]>] [-RegisteredUsers <IMicrosoftGraphDirectoryObject[]>]
  [-RegistrationDateTime <DateTime>] [-Status <String>] [-SystemLabels <String[]>]
  [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>] [-TrustType <String>]
- [-UsageRights <IMicrosoftGraphUsageRight[]>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-UsageRights <IMicrosoftGraphUsageRight[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update1
+```
+Update-MgDevice -DeviceId <String> -BodyParameter <IMicrosoftGraphDevice1> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity1
+```
+Update-MgDevice -InputObject <IIdentityDirectoryManagementIdentity> -BodyParameter <IMicrosoftGraphDevice1>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -79,7 +79,7 @@ Supports $filter (eq, ne, not, in).
 Only callers in Global Administrator and Cloud Device Administrator roles can set this property.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -112,7 +112,7 @@ Supports $filter (eq, not, ge, le).
 To construct, please use Get-Help -Online and see NOTES section for ALTERNATIVESECURITYIDS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAlternativeSecurityId[]
+Type: IMicrosoftGraphAlternativeSecurityId[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -130,7 +130,7 @@ Read-only.
 Supports $filter (eq, ne, not, ge, le, and eq on null values) and $orderBy.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -146,7 +146,7 @@ device
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDevice1
+Type: IMicrosoftGraphDevice1
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -162,7 +162,7 @@ Set of commands sent to this device.
 To construct, please use Get-Help -Online and see NOTES section for COMMANDS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCommand[]
+Type: IMicrosoftGraphCommand[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -180,7 +180,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -196,7 +196,7 @@ Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -211,7 +211,7 @@ Accept wildcard characters: False
 User-defined property set by Intune to automatically add devices to groups and simplify managing devices.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -226,11 +226,23 @@ Accept wildcard characters: False
 key: id of device
 
 ```yaml
-Type: System.String
-Parameter Sets: Update1, UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: String
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+```yaml
+Type: String
+Parameter Sets: UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -242,7 +254,7 @@ Unique identifier set by Azure Device Registration Service at the time of regist
 Supports $filter (eq, ne, not, startsWith).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -258,7 +270,7 @@ For internal use only.
 Set to null.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -275,7 +287,7 @@ This property is set by Intune.
 Possible values are: unknown, company, personal.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -290,7 +302,7 @@ Accept wildcard characters: False
 For internal use only.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -307,7 +319,7 @@ Required.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderBy.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -323,7 +335,7 @@ The on-premises domain name of Hybrid Azure AD joined devices.
 This property is set by Intune.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -340,7 +352,7 @@ For example, Apple Device Enrollment Profile, Device enrollment - Corporate devi
 This property is set by Intune.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -357,7 +369,7 @@ This property is set by Intune.
 Possible values are: unknown, userEnrollment, deviceEnrollmentManager, appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment, windowsBulkAzureDomainJoin, windowsCoManagement.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -373,7 +385,7 @@ onPremisesExtensionAttributes
 To construct, please use Get-Help -Online and see NOTES section for EXTENSIONATTRIBUTES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnPremisesExtensionAttributes
+Type: IMicrosoftGraphOnPremisesExtensionAttributes
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -391,7 +403,7 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for EXTENSIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExtension[]
+Type: IMicrosoftGraphExtension[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -406,7 +418,7 @@ Accept wildcard characters: False
 List of hostNames for the device.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -421,7 +433,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -437,8 +449,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-Parameter Sets: UpdateViaIdentity1, UpdateViaIdentityExpanded1
+Type: IIdentityDirectoryManagementIdentity
+Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -455,7 +467,7 @@ This can only be updated by Intune for any device OS type or by an approved MDM 
 Supports $filter (eq, ne, not).
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -472,7 +484,7 @@ This can only be updated by Intune for any device OS type or by an approved MDM 
 Supports $filter (eq, ne, not).
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -488,7 +500,7 @@ true if device is rooted; false if device is jail-broken.
 This can only be updated by Intune.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -504,7 +516,7 @@ Form factor of device.
 Only returned if user signs in with a Microsoft account as part of Project Rome.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -521,7 +533,7 @@ This property is set by Intune.
 Possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -537,7 +549,7 @@ Manufacturer of the device.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -554,7 +566,7 @@ Read-only.
 Supports $filter (eq, ne, not, startsWith).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -573,7 +585,7 @@ Supports $expand.
 To construct, please use Get-Help -Online and see NOTES section for MEMBEROF properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
+Type: IMicrosoftGraphDirectoryObject[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -589,7 +601,7 @@ Model of the device.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -605,7 +617,7 @@ Friendly name of a device.
 Only returned if user signs in with a Microsoft account as part of Project Rome.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -623,7 +635,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z Read-only.
 Supports $filter (eq, ne, not, ge, le, in).
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -640,7 +652,7 @@ Read-only.
 Supports $filter (eq, ne, not, in, and eq on null values).
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -657,7 +669,7 @@ Required.
 Supports $filter (eq, ne, not, ge, le, startsWith, and eq on null values).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -674,7 +686,7 @@ Required.
 Supports $filter (eq, ne, not, ge, le, startsWith, and eq on null values).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -689,7 +701,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -706,7 +718,7 @@ Not nullable.
 Supports $filter (eq, not, ge, le, startsWith).
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -723,7 +735,7 @@ Only returned if user signs in with a Microsoft account as part of Project Rome.
 Only returned if user signs in with a Microsoft account as part of Project Rome.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -739,7 +751,7 @@ The profile type of the device.
 Possible values: RegisteredDevice (default), SecureVM, Printer, Shared, IoT.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -760,7 +772,7 @@ Supports $expand.
 To construct, please use Get-Help -Online and see NOTES section for REGISTEREDOWNERS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
+Type: IMicrosoftGraphDirectoryObject[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -780,7 +792,7 @@ Supports $expand.
 To construct, please use Get-Help -Online and see NOTES section for REGISTEREDUSERS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
+Type: IMicrosoftGraphDirectoryObject[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -798,7 +810,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -814,7 +826,7 @@ Device is online or offline.
 Only returned if user signs in with a Microsoft account as part of Project Rome.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -829,7 +841,7 @@ Accept wildcard characters: False
 List of labels applied to the device by the system.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -847,7 +859,7 @@ Supports $expand.
 To construct, please use Get-Help -Online and see NOTES section for TRANSITIVEMEMBEROF properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
+Type: IMicrosoftGraphDirectoryObject[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -865,7 +877,7 @@ Possible values: Workplace (indicates bring your own personal devices), AzureAd 
 For more details, see Introduction to device management in Azure Active Directory
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -881,7 +893,7 @@ Represents the usage rights a device has been granted.
 To construct, please use Get-Help -Online and see NOTES section for USAGERIGHTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUsageRight[]
+Type: IMicrosoftGraphUsageRight[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -896,7 +908,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -912,7 +924,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -929,13 +941,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDevice1
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -1130,3 +1139,4 @@ USAGERIGHTS <IMicrosoftGraphUsageRight[]>: Represents the usage rights a device 
 
 ## RELATED LINKS
 
+## RELATED LINKS
