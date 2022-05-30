@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/new-mgserviceprincipalfederatedidentitycredential
 schema: 2.0.0
@@ -16,26 +16,26 @@ Create new navigation property to federatedIdentityCredentials for servicePrinci
 ```
 New-MgServicePrincipalFederatedIdentityCredential -ServicePrincipalId <String>
  [-AdditionalProperties <Hashtable>] [-Audiences <String[]>] [-Description <String>] [-Id <String>]
- [-Issuer <String>] [-Name <String>] [-Subject <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Issuer <String>] [-Name <String>] [-Subject <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgServicePrincipalFederatedIdentityCredential -ServicePrincipalId <String>
- -BodyParameter <IMicrosoftGraphFederatedIdentityCredential> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgServicePrincipalFederatedIdentityCredential -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphFederatedIdentityCredential> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphFederatedIdentityCredential> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgServicePrincipalFederatedIdentityCredential -InputObject <IApplicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-Audiences <String[]>] [-Description <String>] [-Id <String>]
- [-Issuer <String>] [-Name <String>] [-Subject <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Issuer <String>] [-Name <String>] [-Subject <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgServicePrincipalFederatedIdentityCredential -InputObject <IApplicationsIdentity>
+ -BodyParameter <IMicrosoftGraphFederatedIdentityCredential> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,7 +49,7 @@ Create new navigation property to federatedIdentityCredentials for servicePrinci
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -68,7 +68,7 @@ This value represents Azure AD in your external identity provider and has no fix
 Required.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -84,7 +84,7 @@ federatedIdentityCredential
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFederatedIdentityCredential
+Type: IMicrosoftGraphFederatedIdentityCredential
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -100,7 +100,7 @@ The un-validated, user-provided description of the federated identity credential
 Optional.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -131,8 +131,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IApplicationsIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -148,7 +148,7 @@ The combination of the values of issuer and subject must be unique on the app.
 Required.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -167,7 +167,7 @@ Not nullable.
 Supports $filter (eq).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -182,8 +182,8 @@ Accept wildcard characters: False
 key: id of servicePrincipal
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -202,7 +202,7 @@ The combination of issuer and subject must be unique on the app.
 Supports $filter (eq).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -217,7 +217,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -233,7 +233,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -250,13 +250,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFederatedIdentityCredential
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFederatedIdentityCredential
-
 ## NOTES
 
 ALIASES
@@ -301,4 +298,3 @@ INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
