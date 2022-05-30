@@ -145,19 +145,6 @@ The groups whose members are ineligible to be assigned this access package.
 ### [Get-MgEntitlementManagementAccessPackageIncompatibleGroupByRef](Get-MgEntitlementManagementAccessPackageIncompatibleGroupByRef.md)
 The groups whose members are ineligible to be assigned this access package.
 
-### [Get-MgEntitlementManagementAccessPackageIncompatible](Get-MgEntitlementManagementAccessPackageIncompatible.md)
-The access packages that are incompatible with this package.
-Read-only.
-
-### [Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackage](Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackage.md)
-The  access packages whose assigned users are ineligible to be assigned this access package.
-
-### [Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef](Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef.md)
-The  access packages whose assigned users are ineligible to be assigned this access package.
-
-### [Get-MgEntitlementManagementAccessPackageIncompatibleGroup](Get-MgEntitlementManagementAccessPackageIncompatibleGroup.md)
-The groups whose members are ineligible to be assigned this access package.
-
 ### [Get-MgEntitlementManagementAccessPackageResource](Get-MgEntitlementManagementAccessPackageResource.md)
 A reference to a resource associated with an access package catalog.
 
