@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/invoke-mgrowuserinsighttrendingresourcemicrosoftgraphworkbookrangeabove
 schema: 2.0.0
@@ -20,17 +20,17 @@ Invoke-MgRowUserInsightTrendingResourceMicrosoftGraphWorkbookRangeAbove -Trendin
 
 ### Rows1
 ```
-Invoke-MgRowUserInsightTrendingResourceMicrosoftGraphWorkbookRangeAbove -Count <Int32> -TrendingId <String>
- -UserId <String> [<CommonParameters>]
+Invoke-MgRowUserInsightTrendingResourceMicrosoftGraphWorkbookRangeAbove -TrendingId <String> -UserId <String>
+ -Count <Int32> [<CommonParameters>]
 ```
 
-### RowsViaIdentity
+### RowsViaIdentity1
 ```
 Invoke-MgRowUserInsightTrendingResourceMicrosoftGraphWorkbookRangeAbove -InputObject <IUsersFunctionsIdentity>
  [<CommonParameters>]
 ```
 
-### RowsViaIdentity1
+### RowsViaIdentity
 ```
 Invoke-MgRowUserInsightTrendingResourceMicrosoftGraphWorkbookRangeAbove -InputObject <IUsersFunctionsIdentity>
  [<CommonParameters>]
@@ -47,7 +47,7 @@ Invoke function rowsAbove
 Usage: count={count}
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: Rows1
 Aliases:
 
@@ -63,8 +63,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
-Parameter Sets: RowsViaIdentity, RowsViaIdentity1
+Type: IUsersFunctionsIdentity
+Parameter Sets: RowsViaIdentity1, RowsViaIdentity
 Aliases:
 
 Required: True
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 key: id of trending
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Rows, Rows1
 Aliases:
 
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Rows, Rows1
 Aliases:
 
@@ -110,11 +110,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWorkbookRange
-
 ## NOTES
 
 ALIASES
@@ -161,4 +159,3 @@ INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   - `[ValuesOnly <Boolean?>]`: Usage: valuesOnly={valuesOnly}
 
 ## RELATED LINKS
-
