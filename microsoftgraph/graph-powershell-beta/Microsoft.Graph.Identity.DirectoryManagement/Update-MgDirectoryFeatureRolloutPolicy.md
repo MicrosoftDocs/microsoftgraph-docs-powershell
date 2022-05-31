@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryfeaturerolloutpolicy
@@ -283,14 +283,14 @@ To create the parameters described below, construct a hash table containing the 
 
 APPLIESTO <IMicrosoftGraphDirectoryObject[]>: Nullable. Specifies a list of directoryObjects that feature is enabled for.
   - `[Id <String>]`: Read-only.
-  - `[DeletedDateTime <DateTime?>]`: 
+  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
 BODYPARAMETER <IMicrosoftGraphFeatureRolloutPolicy>: featureRolloutPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
   - `[AppliesTo <IMicrosoftGraphDirectoryObject[]>]`: Nullable. Specifies a list of directoryObjects that feature is enabled for.
     - `[Id <String>]`: Read-only.
-    - `[DeletedDateTime <DateTime?>]`: 
+    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Description <String>]`: A description for this feature rollout policy.
   - `[DisplayName <String>]`: The display name for this  feature rollout policy.
   - `[Feature <String>]`: stagedFeatureName

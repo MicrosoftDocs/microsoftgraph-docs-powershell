@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/remove-mgrolemanagemententitlementmanagement
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgRoleManagementEntitlementManagement
 
 ## SYNOPSIS
-Container for all entitlement management resources in Azure AD identity governance.
+Container for roles and assignments for entitlement management resources.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Remove-MgRoleManagementEntitlementManagement [-IfMatch <String>] [-PassThru] [-W
 ```
 
 ## DESCRIPTION
-Container for all entitlement management resources in Azure AD identity governance.
+Container for roles and assignments for entitlement management resources.
 
 ## EXAMPLES
 

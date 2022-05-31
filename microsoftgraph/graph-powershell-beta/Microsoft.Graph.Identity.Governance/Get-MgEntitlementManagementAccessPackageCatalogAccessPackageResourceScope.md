@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackagecatalogaccesspackageresourcescope
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceScope
 
 ## SYNOPSIS
-Get accessPackageResourceScopes from identityGovernance
+Read-only.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceScope -Acces
 ```
 
 ## DESCRIPTION
-Get accessPackageResourceScopes from identityGovernance
+Read-only.
 
 ## EXAMPLES
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementvirtualendpointsnapshot
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementVirtualEndpointSnapshot
 
 ## SYNOPSIS
-Delete navigation property snapshots for deviceManagement
+Cloud PC snapshots.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgDeviceManagementVirtualEndpointSnapshot -InputObject <IDeviceManagement
 ```
 
 ## DESCRIPTION
-Delete navigation property snapshots for deviceManagement
+Cloud PC snapshots.
 
 ## EXAMPLES
 

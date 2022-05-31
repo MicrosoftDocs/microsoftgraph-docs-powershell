@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgpolicyappmanagementpolicyapplyto
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPolicyAppManagementPolicyApplyTo
 
 ## SYNOPSIS
-Collection of application and service principals to which a policy is applied.
+Get appliesTo from policies
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgPolicyAppManagementPolicyApplyTo -AppManagementPolicyId <String> [-ExpandP
 ```
 
 ## DESCRIPTION
-Collection of application and service principals to which a policy is applied.
+Get appliesTo from policies
 
 ## EXAMPLES
 

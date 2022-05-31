@@ -1,11 +1,16 @@
 ---
 title: "Find Azure AD and MSOnline cmdlets in Microsoft Graph PowerShell"
 description: "Use this map of the Azure AD PowerShell and MSOnline cmdlets to find their Microsoft Graph PowerShell equivalents."
+
+ms.topic: conceptual
+ms.date: 05/30/2022
 author: msewaweru
-ms.custom: getting-started
+manager: CelesteDG
+ms.author: eunicewaweru
 ---
 
 # Find Azure AD and MSOnline cmdlets in Microsoft Graph PowerShell
+
 You can use this map of Azure AD PowerShell and MSOnline cmdlets to find the cmdlets that you need in the  [Microsoft Graph PowerShell SDK](/powershell/microsoftgraph/overview). For more information about the new cmdlets, see [Get started with the Microsoft Graph PowerShell SDK](/graph/powershell/get-started).
 
 ## Azure AD to Microsoft Graph PowerShell by category
@@ -362,7 +367,7 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |Set-AzureADUserExtension|[Update-MgUserExtension](/powershell/module/microsoft.graph.users/update-mguserextension?view=graph-powershell-1.0&preserve-view=true)|
 |Set-AzureADUserLicense|[Set-MgUserLicense](/powershell/module/microsoft.graph.users.actions/set-mguserlicense?view=graph-powershell-1.0&preserve-view=true)|
 |Set-AzureADUserManager|[Set-MgUserManagerByRef](/powershell/module/microsoft.graph.users/set-mgusermanagerbyref?view=graph-powershell-1.0&preserve-view=true)|
-|Set-AzureADUserPassword|[Update-MgUserPassword](/powershell/module/microsoft.graph.users.actions/update-mguserpassword?view=graph-powershell-1.0&preserve-view=true)|
+|Set-AzureADUserPassword|[Update-MgUser](/powershell/module/microsoft.graph.users/update-mguser?view=graph-powershell-1.0&preserve-view=true)|
 |Set-AzureADUserThumbnailPhoto|[Set-MgUserPhotoContent](/powershell/module/microsoft.graph.users/set-mguserphotocontent?view=graph-powershell-1.0&preserve-view=true)|
 |Update-AzureADSignedInUserPassword|[Update-MgUserPassword](/powershell/module/microsoft.graph.users.actions/update-mguserpassword?view=graph-powershell-1.0&preserve-view=true)|
 

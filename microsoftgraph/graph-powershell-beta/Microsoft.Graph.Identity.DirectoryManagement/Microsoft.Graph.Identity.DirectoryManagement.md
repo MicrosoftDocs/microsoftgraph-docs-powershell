@@ -384,13 +384,13 @@ Get sharedEmailDomains from directory
 Get entity from domains by key
 
 ### [Get-MgDomainDomainNameReferenceByRef](Get-MgDomainDomainNameReferenceByRef.md)
-The collection of the sub-sites under this site.
+Read-only, Nullable
 
 ### [Get-MgDomainFederationConfiguration](Get-MgDomainFederationConfiguration.md)
 Get federationConfiguration from domains
 
 ### [Get-MgDomainNameReference](Get-MgDomainNameReference.md)
-The appManagementPolicy applied to this application.
+Read-only, Nullable
 
 ### [Get-MgDomainServiceConfigurationRecord](Get-MgDomainServiceConfigurationRecord.md)
 DNS records the customer adds to the DNS zone file of the domain before the domain can be used by Microsoft Online services.
@@ -430,6 +430,9 @@ Nullable.
 ### [Get-MgOrganizationSettingItemInsight](Get-MgOrganizationSettingItemInsight.md)
 Contains the properties that are configured by an administrator for the visibility of Microsoft Graph-derived insights, between a user and other items in Microsoft 365, such as documents or sites.
 List itemInsights returns the settings to display or return item insights in an organization.
+
+### [Get-MgOrganizationSettingMicrosoftApplicationDataAccess](Get-MgOrganizationSettingMicrosoftApplicationDataAccess.md)
+Get microsoftApplicationDataAccess from organization
 
 ### [Get-MgOrganizationSettingPersonInsight](Get-MgOrganizationSettingPersonInsight.md)
 Contains the properties that are configured by an administrator for the visibility of a list of people relevant and working with a user in Microsoft 365.
@@ -821,6 +824,9 @@ Nullable.
 Contains the properties that are configured by an administrator for the visibility of Microsoft Graph-derived insights, between a user and other items in Microsoft 365, such as documents or sites.
 List itemInsights returns the settings to display or return item insights in an organization.
 
+### [Remove-MgOrganizationSettingMicrosoftApplicationDataAccess](Remove-MgOrganizationSettingMicrosoftApplicationDataAccess.md)
+Delete navigation property microsoftApplicationDataAccess for organization
+
 ### [Remove-MgOrganizationSettingPersonInsight](Remove-MgOrganizationSettingPersonInsight.md)
 Contains the properties that are configured by an administrator for the visibility of a list of people relevant and working with a user in Microsoft 365.
 List peopleInsights returns the settings to display or return people insights in an organization.
@@ -958,6 +964,9 @@ Update the navigation property impactedResources in directory
 ### [Update-MgDirectoryInboundSharedUserProfile](Update-MgDirectoryInboundSharedUserProfile.md)
 Update the navigation property inboundSharedUserProfiles in directory
 
+### [Update-MgDirectoryOutboundSharedUserProfile](Update-MgDirectoryOutboundSharedUserProfile.md)
+Update the navigation property outboundSharedUserProfiles in directory
+
 ### [Update-MgDirectoryOutboundSharedUserProfileTenant](Update-MgDirectoryOutboundSharedUserProfileTenant.md)
 Update the navigation property tenants in directory
 
@@ -1022,6 +1031,9 @@ Nullable.
 ### [Update-MgOrganizationSettingItemInsight](Update-MgOrganizationSettingItemInsight.md)
 Contains the properties that are configured by an administrator for the visibility of Microsoft Graph-derived insights, between a user and other items in Microsoft 365, such as documents or sites.
 List itemInsights returns the settings to display or return item insights in an organization.
+
+### [Update-MgOrganizationSettingMicrosoftApplicationDataAccess](Update-MgOrganizationSettingMicrosoftApplicationDataAccess.md)
+Update the navigation property microsoftApplicationDataAccess in organization
 
 ### [Update-MgOrganizationSettingPersonInsight](Update-MgOrganizationSettingPersonInsight.md)
 Contains the properties that are configured by an administrator for the visibility of a list of people relevant and working with a user in Microsoft 365.

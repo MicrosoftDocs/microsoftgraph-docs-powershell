@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecurityinformationprotection
@@ -30,13 +30,6 @@ Update-MgSecurityInformationProtection -BodyParameter <IMicrosoftGraphSecurityIn
 Update the navigation property informationProtection in security
 
 ## EXAMPLES
-
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -112,7 +105,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -174,9 +167,56 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+BODYPARAMETER <IMicrosoftGraphSecurityInformationProtection>: informationProtection
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: Read-only.
+  - `[LabelPolicySettings <IMicrosoftGraphSecurityInformationProtectionPolicySetting>]`: informationProtectionPolicySetting
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: Read-only.
+    - `[DefaultLabelId <String>]`: 
+    - `[IsDowngradeJustificationRequired <Boolean?>]`: 
+    - `[IsMandatory <Boolean?>]`: 
+    - `[MoreInfoUrl <String>]`: 
+  - `[SensitivityLabels <IMicrosoftGraphSecuritySensitivityLabel[]>]`: 
+    - `[Id <String>]`: Read-only.
+    - `[Color <String>]`: 
+    - `[ContentFormats <String[]>]`: 
+    - `[Description <String>]`: 
+    - `[HasProtection <Boolean?>]`: 
+    - `[IsActive <Boolean?>]`: 
+    - `[IsAppliable <Boolean?>]`: 
+    - `[Name <String>]`: 
+    - `[Parent <IMicrosoftGraphSecuritySensitivityLabel>]`: sensitivityLabel
+    - `[Sensitivity <Int32?>]`: 
+    - `[Tooltip <String>]`: 
+
+LABELPOLICYSETTINGS <IMicrosoftGraphSecurityInformationProtectionPolicySetting>: informationProtectionPolicySetting
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: Read-only.
+  - `[DefaultLabelId <String>]`: 
+  - `[IsDowngradeJustificationRequired <Boolean?>]`: 
+  - `[IsMandatory <Boolean?>]`: 
+  - `[MoreInfoUrl <String>]`: 
+
+SENSITIVITYLABELS <IMicrosoftGraphSecuritySensitivityLabel[]>: .
+  - `[Id <String>]`: Read-only.
+  - `[Color <String>]`: 
+  - `[ContentFormats <String[]>]`: 
+  - `[Description <String>]`: 
+  - `[HasProtection <Boolean?>]`: 
+  - `[IsActive <Boolean?>]`: 
+  - `[IsAppliable <Boolean?>]`: 
+  - `[Name <String>]`: 
+  - `[Parent <IMicrosoftGraphSecuritySensitivityLabel>]`: sensitivityLabel
+  - `[Sensitivity <Int32?>]`: 
+  - `[Tooltip <String>]`: 
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecurityinformationprotection](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecurityinformationprotection)
-

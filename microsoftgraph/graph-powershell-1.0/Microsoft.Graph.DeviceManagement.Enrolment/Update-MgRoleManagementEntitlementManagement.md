@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgRoleManagementEntitlementManagement
 
 ## SYNOPSIS
-Container for all entitlement management resources in Azure AD identity governance.
+Container for roles and assignments for entitlement management resources.
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ Update-MgRoleManagementEntitlementManagement -BodyParameter <IMicrosoftGraphRbac
 ```
 
 ## DESCRIPTION
-Container for all entitlement management resources in Azure AD identity governance.
+Container for roles and assignments for entitlement management resources.
 
 ## EXAMPLES
 
@@ -190,7 +190,7 @@ BODYPARAMETER <IMicrosoftGraphRbacApplication1>: rbacApplication
     - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: Read-only.
-      - `[DeletedDateTime <DateTime?>]`: 
+      - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
     - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment.  Either this property or appScopeId is required. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. Use appScopeId to limit the scope to an application only. Supports $filter (eq, in).
     - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
     - `[PrincipalId <String>]`: Identifier of the principal to which the assignment is granted. Supports $filter (eq, in).
@@ -224,7 +224,7 @@ ROLEASSIGNMENTS <IMicrosoftGraphUnifiedRoleAssignment[]>: Resource to grant acce
   - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: Read-only.
-    - `[DeletedDateTime <DateTime?>]`: 
+    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment.  Either this property or appScopeId is required. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. Use appScopeId to limit the scope to an application only. Supports $filter (eq, in).
   - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
   - `[PrincipalId <String>]`: Identifier of the principal to which the assignment is granted. Supports $filter (eq, in).
@@ -261,8 +261,5 @@ ROLEDEFINITIONS <IMicrosoftGraphUnifiedRoleDefinition1[]>: Resource representing
   - `[Version <String>]`: Indicates version of the role definition. Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
-
-## RELATED LINKS
-
 
 ## RELATED LINKS

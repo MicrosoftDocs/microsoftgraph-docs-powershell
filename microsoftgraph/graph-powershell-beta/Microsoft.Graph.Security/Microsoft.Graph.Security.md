@@ -21,6 +21,12 @@ Nullable.
 ### [Get-MgSecurityAttackSimulation](Get-MgSecurityAttackSimulation.md)
 Represents an attack simulation training campaign in a tenant.
 
+### [Get-MgSecurityAttackSimulationAutomation](Get-MgSecurityAttackSimulationAutomation.md)
+Represents simulation automations created to run on a tenant.
+
+### [Get-MgSecurityAttackSimulationAutomationRun](Get-MgSecurityAttackSimulationAutomationRun.md)
+A collection of simulation automation runs.
+
 ### [Get-MgSecurityCloudAppSecurityProfile](Get-MgSecurityCloudAppSecurityProfile.md)
 Get cloudAppSecurityProfiles from security
 
@@ -32,6 +38,18 @@ Get fileSecurityProfiles from security
 
 ### [Get-MgSecurityHostSecurityProfile](Get-MgSecurityHostSecurityProfile.md)
 Get hostSecurityProfiles from security
+
+### [Get-MgSecurityInformationProtection](Get-MgSecurityInformationProtection.md)
+Get informationProtection from security
+
+### [Get-MgSecurityInformationProtectionLabelPolicySetting](Get-MgSecurityInformationProtectionLabelPolicySetting.md)
+Get labelPolicySettings from security
+
+### [Get-MgSecurityInformationProtectionSensitivityLabel](Get-MgSecurityInformationProtectionSensitivityLabel.md)
+Get sensitivityLabels from security
+
+### [Get-MgSecurityInformationProtectionSensitivityLabelParent](Get-MgSecurityInformationProtectionSensitivityLabelParent.md)
+Get parent from security
 
 ### [Get-MgSecurityIPSecurityProfile](Get-MgSecurityIPSecurityProfile.md)
 Get ipSecurityProfiles from security
@@ -51,6 +69,9 @@ Get tiIndicators from security
 ### [Get-MgSecurityUserSecurityProfile](Get-MgSecurityUserSecurityProfile.md)
 Get userSecurityProfiles from security
 
+### [Invoke-MgExtractSecurityInformationProtectionSensitivityLabelContentLabel](Invoke-MgExtractSecurityInformationProtectionSensitivityLabelContentLabel.md)
+Invoke action extractContentLabel
+
 ### [New-MgSecurityAction](New-MgSecurityAction.md)
 Create new navigation property to securityActions for security
 
@@ -60,6 +81,12 @@ Nullable.
 
 ### [New-MgSecurityAttackSimulation](New-MgSecurityAttackSimulation.md)
 Represents an attack simulation training campaign in a tenant.
+
+### [New-MgSecurityAttackSimulationAutomation](New-MgSecurityAttackSimulationAutomation.md)
+Represents simulation automations created to run on a tenant.
+
+### [New-MgSecurityAttackSimulationAutomationRun](New-MgSecurityAttackSimulationAutomationRun.md)
+A collection of simulation automation runs.
 
 ### [New-MgSecurityCloudAppSecurityProfile](New-MgSecurityCloudAppSecurityProfile.md)
 Create new navigation property to cloudAppSecurityProfiles for security
@@ -72,6 +99,9 @@ Create new navigation property to fileSecurityProfiles for security
 
 ### [New-MgSecurityHostSecurityProfile](New-MgSecurityHostSecurityProfile.md)
 Create new navigation property to hostSecurityProfiles for security
+
+### [New-MgSecurityInformationProtectionSensitivityLabel](New-MgSecurityInformationProtectionSensitivityLabel.md)
+Create new navigation property to sensitivityLabels for security
 
 ### [New-MgSecurityIPSecurityProfile](New-MgSecurityIPSecurityProfile.md)
 Create new navigation property to ipSecurityProfiles for security
@@ -101,6 +131,12 @@ Nullable.
 ### [Remove-MgSecurityAttackSimulation](Remove-MgSecurityAttackSimulation.md)
 Provides tenants capability to launch a simulated and realistic phishing attack and learn from it.
 
+### [Remove-MgSecurityAttackSimulationAutomation](Remove-MgSecurityAttackSimulationAutomation.md)
+Represents simulation automations created to run on a tenant.
+
+### [Remove-MgSecurityAttackSimulationAutomationRun](Remove-MgSecurityAttackSimulationAutomationRun.md)
+A collection of simulation automation runs.
+
 ### [Remove-MgSecurityCloudAppSecurityProfile](Remove-MgSecurityCloudAppSecurityProfile.md)
 Delete navigation property cloudAppSecurityProfiles for security
 
@@ -112,6 +148,18 @@ Delete navigation property fileSecurityProfiles for security
 
 ### [Remove-MgSecurityHostSecurityProfile](Remove-MgSecurityHostSecurityProfile.md)
 Delete navigation property hostSecurityProfiles for security
+
+### [Remove-MgSecurityInformationProtection](Remove-MgSecurityInformationProtection.md)
+Delete navigation property informationProtection for security
+
+### [Remove-MgSecurityInformationProtectionLabelPolicySetting](Remove-MgSecurityInformationProtectionLabelPolicySetting.md)
+Delete navigation property labelPolicySettings for security
+
+### [Remove-MgSecurityInformationProtectionSensitivityLabel](Remove-MgSecurityInformationProtectionSensitivityLabel.md)
+Delete navigation property sensitivityLabels for security
+
+### [Remove-MgSecurityInformationProtectionSensitivityLabelParent](Remove-MgSecurityInformationProtectionSensitivityLabelParent.md)
+Delete navigation property parent for security
 
 ### [Remove-MgSecurityIPSecurityProfile](Remove-MgSecurityIPSecurityProfile.md)
 Delete navigation property ipSecurityProfiles for security
@@ -143,6 +191,15 @@ Invoke action cancelSecurityAction
 ### [Submit-MgSecurityTiIndicator](Submit-MgSecurityTiIndicator.md)
 Invoke action submitTiIndicators
 
+### [Test-MgSecurityInformationProtectionSensitivityLabelApplication](Test-MgSecurityInformationProtectionSensitivityLabelApplication.md)
+Invoke action evaluateApplication
+
+### [Test-MgSecurityInformationProtectionSensitivityLabelClassificationResult](Test-MgSecurityInformationProtectionSensitivityLabelClassificationResult.md)
+Invoke action evaluateClassificationResults
+
+### [Test-MgSecurityInformationProtectionSensitivityLabelRemoval](Test-MgSecurityInformationProtectionSensitivityLabelRemoval.md)
+Invoke action evaluateRemoval
+
 ### [Update-MgSecurityAction](Update-MgSecurityAction.md)
 Update the navigation property securityActions in security
 
@@ -152,6 +209,12 @@ Nullable.
 
 ### [Update-MgSecurityAlertMultiple](Update-MgSecurityAlertMultiple.md)
 Invoke action updateAlerts
+
+### [Update-MgSecurityAttackSimulationAutomation](Update-MgSecurityAttackSimulationAutomation.md)
+Represents simulation automations created to run on a tenant.
+
+### [Update-MgSecurityAttackSimulationAutomationRun](Update-MgSecurityAttackSimulationAutomationRun.md)
+A collection of simulation automation runs.
 
 ### [Update-MgSecurityCloudAppSecurityProfile](Update-MgSecurityCloudAppSecurityProfile.md)
 Update the navigation property cloudAppSecurityProfiles in security
@@ -164,6 +227,18 @@ Update the navigation property fileSecurityProfiles in security
 
 ### [Update-MgSecurityHostSecurityProfile](Update-MgSecurityHostSecurityProfile.md)
 Update the navigation property hostSecurityProfiles in security
+
+### [Update-MgSecurityInformationProtection](Update-MgSecurityInformationProtection.md)
+Update the navigation property informationProtection in security
+
+### [Update-MgSecurityInformationProtectionLabelPolicySetting](Update-MgSecurityInformationProtectionLabelPolicySetting.md)
+Update the navigation property labelPolicySettings in security
+
+### [Update-MgSecurityInformationProtectionSensitivityLabel](Update-MgSecurityInformationProtectionSensitivityLabel.md)
+Update the navigation property sensitivityLabels in security
+
+### [Update-MgSecurityInformationProtectionSensitivityLabelParent](Update-MgSecurityInformationProtectionSensitivityLabelParent.md)
+Update the navigation property parent in security
 
 ### [Update-MgSecurityIPSecurityProfile](Update-MgSecurityIPSecurityProfile.md)
 Update the navigation property ipSecurityProfiles in security

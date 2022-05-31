@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgrolemanagemententitlementmanagementresourcenamespaceresourceaction
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction
 
 ## SYNOPSIS
-Get resourceActions from roleManagement
+Operations that an authorized principal are allowed to perform.
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction
 ```
 
 ## DESCRIPTION
-Get resourceActions from roleManagement
+Operations that an authorized principal are allowed to perform.
 
 ## EXAMPLES
 

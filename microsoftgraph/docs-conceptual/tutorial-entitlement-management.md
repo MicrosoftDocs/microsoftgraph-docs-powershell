@@ -1,6 +1,7 @@
 ---
 title: "Manage access to resources in Azure AD entitlement management using Microsoft Graph PowerShell"
 description: "Learn how to manage access to resources in Azure Active Directory (Azure AD) entitlement management using Microsoft Graph PowerShell."
+
 ms.topic: tutorial
 ms.date: 04/06/2022
 ms.author: eunicewaweru

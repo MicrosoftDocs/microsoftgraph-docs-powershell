@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationmicrosoftauthenticatormethod
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgUserAuthenticationMicrosoftAuthenticatorMethod
 
 ## SYNOPSIS
-Get microsoftAuthenticatorMethods from users
+The details of the Microsoft Authenticator app registered to a user for authentication.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgUserAuthenticationMicrosoftAuthenticatorMethod -InputObject <IIdentitySign
 ```
 
 ## DESCRIPTION
-Get microsoftAuthenticatorMethods from users
+The details of the Microsoft Authenticator app registered to a user for authentication.
 
 ## EXAMPLES
 
@@ -262,6 +262,7 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[BitlockerRecoveryKeyId <String>]`: key: id of bitlockerRecoveryKey
   - `[ClaimsMappingPolicyId <String>]`: key: id of claimsMappingPolicy
   - `[ConditionalAccessPolicyId <String>]`: key: id of conditionalAccessPolicy
+  - `[CrossTenantAccessPolicyConfigurationPartnerTenantId <String>]`: key: tenantId of crossTenantAccessPolicyConfigurationPartner
   - `[DataLossPreventionPolicyId <String>]`: key: id of dataLossPreventionPolicy
   - `[DataPolicyOperationId <String>]`: key: id of dataPolicyOperation
   - `[DefaultUserRoleOverrideId <String>]`: key: id of defaultUserRoleOverride

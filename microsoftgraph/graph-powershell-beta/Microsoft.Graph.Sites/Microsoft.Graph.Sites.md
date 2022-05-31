@@ -64,7 +64,7 @@ The list of SharePoint sites in this group.
 Access the default site with /sites/root.
 
 ### [Get-MgSite](Get-MgSite.md)
-Get entities from sites
+Get entity from sites by key
 
 ### [Get-MgSiteActivityByInterval](Get-MgSiteActivityByInterval.md)
 Invoke function getActivitiesByInterval
@@ -135,6 +135,9 @@ Invoke function delta
 ### [Get-MgSiteDrive](Get-MgSiteDrive.md)
 The default drive (document library) for this site.
 
+### [Get-MgSiteDriveByRef](Get-MgSiteDriveByRef.md)
+The default drive (document library) for this site.
+
 ### [Get-MgSiteExternalColumn](Get-MgSiteExternalColumn.md)
 The collection of column definitions available in the site that are referenced from the sites in the parent hierarchy of the current site.
 
@@ -199,6 +202,10 @@ Invoke function getCompatibleHubContentTypes
 Only present on document libraries.
 Allows access to the list as a [drive][] resource with [driveItems][driveItem].
 
+### [Get-MgSiteListDriveByRef](Get-MgSiteListDriveByRef.md)
+Only present on document libraries.
+Allows access to the list as a [drive][] resource with [driveItems][driveItem].
+
 ### [Get-MgSiteListItem](Get-MgSiteListItem.md)
 All items contained in the list.
 
@@ -215,6 +222,9 @@ Analytics about the view activities that took place on this item.
 Invoke function delta
 
 ### [Get-MgSiteListItemDriveItem](Get-MgSiteListItemDriveItem.md)
+For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
+
+### [Get-MgSiteListItemDriveItemByRef](Get-MgSiteListItemDriveItemByRef.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
 
 ### [Get-MgSiteListItemField](Get-MgSiteListItemField.md)
@@ -251,6 +261,9 @@ The default termStore under this site.
 ### [Get-MgSubSite](Get-MgSubSite.md)
 The collection of the sub-sites under this site.
 
+### [Get-MgSubSiteByRef](Get-MgSubSiteByRef.md)
+The collection of the sub-sites under this site.
+
 ### [Get-MgUserFollowedSite](Get-MgUserFollowedSite.md)
 Get followedSites from users
 
@@ -279,9 +292,6 @@ Invoke action associateWithHubSites
 The list of SharePoint sites in this group.
 Access the default site with /sites/root.
 
-### [New-MgSite](New-MgSite.md)
-Add new entity to sites
-
 ### [New-MgSiteColumn](New-MgSiteColumn.md)
 The collection of column definitions reusable across lists under this site.
 
@@ -299,6 +309,9 @@ The collection of columns that are required by this content type.
 
 ### [New-MgSiteContentTypeColumnPositionByRef](New-MgSiteContentTypeColumnPositionByRef.md)
 Column order information in a content type.
+
+### [New-MgSiteDriveByRef](New-MgSiteDriveByRef.md)
+The collection of drives (document libraries) under this site.
 
 ### [New-MgSiteExternalColumnByRef](New-MgSiteExternalColumnByRef.md)
 The collection of column definitions available in the site that are referenced from the sites in the parent hierarchy of the current site.
@@ -346,6 +359,9 @@ The collection of pages in the SitePages list in this site.
 The permissions associated with the site.
 Nullable.
 
+### [New-MgSubSiteByRef](New-MgSubSiteByRef.md)
+The collection of the sub-sites under this site.
+
 ### [New-MgUserFollowedSiteByRef](New-MgUserFollowedSiteByRef.md)
 Create new navigation property ref to followedSites for users
 
@@ -392,6 +408,9 @@ The collection of columns that are required by this content type.
 ### [Remove-MgSiteContentTypeColumnSourceColumnByRef](Remove-MgSiteContentTypeColumnSourceColumnByRef.md)
 The source column for the content type column.
 
+### [Remove-MgSiteDriveByRef](Remove-MgSiteDriveByRef.md)
+The default drive (document library) for this site.
+
 ### [Remove-MgSiteList](Remove-MgSiteList.md)
 The collection of lists under this site.
 
@@ -416,11 +435,18 @@ The collection of columns that are required by this content type.
 ### [Remove-MgSiteListContentTypeColumnSourceColumnByRef](Remove-MgSiteListContentTypeColumnSourceColumnByRef.md)
 The source column for the content type column.
 
+### [Remove-MgSiteListDriveByRef](Remove-MgSiteListDriveByRef.md)
+Only present on document libraries.
+Allows access to the list as a [drive][] resource with [driveItems][driveItem].
+
 ### [Remove-MgSiteListItem](Remove-MgSiteListItem.md)
 All items contained in the list.
 
 ### [Remove-MgSiteListItemAnalyticByRef](Remove-MgSiteListItemAnalyticByRef.md)
 Analytics about the view activities that took place on this item.
+
+### [Remove-MgSiteListItemDriveItemByRef](Remove-MgSiteListItemDriveItemByRef.md)
+For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
 
 ### [Remove-MgSiteListItemField](Remove-MgSiteListItemField.md)
 The values of the columns set on this list item.
@@ -465,6 +491,9 @@ Parent contentType from which this content type is derived.
 ### [Set-MgSiteContentTypeColumnSourceColumnByRef](Set-MgSiteContentTypeColumnSourceColumnByRef.md)
 The source column for the content type column.
 
+### [Set-MgSiteDriveByRef](Set-MgSiteDriveByRef.md)
+The default drive (document library) for this site.
+
 ### [Set-MgSiteListColumnSourceColumnByRef](Set-MgSiteListColumnSourceColumnByRef.md)
 The source column for the content type column.
 
@@ -474,8 +503,15 @@ Parent contentType from which this content type is derived.
 ### [Set-MgSiteListContentTypeColumnSourceColumnByRef](Set-MgSiteListContentTypeColumnSourceColumnByRef.md)
 The source column for the content type column.
 
+### [Set-MgSiteListDriveByRef](Set-MgSiteListDriveByRef.md)
+Only present on document libraries.
+Allows access to the list as a [drive][] resource with [driveItems][driveItem].
+
 ### [Set-MgSiteListItemAnalyticByRef](Set-MgSiteListItemAnalyticByRef.md)
 Analytics about the view activities that took place on this item.
+
+### [Set-MgSiteListItemDriveItemByRef](Set-MgSiteListItemDriveItemByRef.md)
+For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
 
 ### [Test-MgSiteContentTypeBasePublished](Test-MgSiteContentTypeBasePublished.md)
 Invoke function isPublished

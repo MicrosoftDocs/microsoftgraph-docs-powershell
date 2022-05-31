@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDomainDomainNameReferenceByRef
 
 ## SYNOPSIS
-Get ref of alerts from security
+Read-only, Nullable
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-MgDomainDomainNameReferenceByRef -DomainId <String> [-Filter <String>] [-Sea
 ```
 
 ## DESCRIPTION
-Get ref of alerts from security
+Read-only, Nullable
 
 ## EXAMPLES
 

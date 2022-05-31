@@ -176,7 +176,7 @@ BODYPARAMETER <IMicrosoftGraphRoleManagement>: roleManagement
       - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: Read-only.
-        - `[DeletedDateTime <DateTime?>]`: 
+        - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
       - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment.  Either this property or appScopeId is required. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. Use appScopeId to limit the scope to an application only. Supports $filter (eq, in).
       - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
       - `[PrincipalId <String>]`: Identifier of the principal to which the assignment is granted. Supports $filter (eq, in).
@@ -214,7 +214,7 @@ DIRECTORY <IMicrosoftGraphRbacApplication1>: rbacApplication
     - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: Read-only.
-      - `[DeletedDateTime <DateTime?>]`: 
+      - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
     - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment.  Either this property or appScopeId is required. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. Use appScopeId to limit the scope to an application only. Supports $filter (eq, in).
     - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
     - `[PrincipalId <String>]`: Identifier of the principal to which the assignment is granted. Supports $filter (eq, in).
@@ -251,7 +251,7 @@ ENTITLEMENTMANAGEMENT <IMicrosoftGraphRbacApplication1>: rbacApplication
     - `[DirectoryScope <IMicrosoftGraphDirectoryObject>]`: directoryObject
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: Read-only.
-      - `[DeletedDateTime <DateTime?>]`: 
+      - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
     - `[DirectoryScopeId <String>]`: Identifier of the directory object representing the scope of the assignment.  Either this property or appScopeId is required. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use / for tenant-wide scope. Use appScopeId to limit the scope to an application only. Supports $filter (eq, in).
     - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
     - `[PrincipalId <String>]`: Identifier of the principal to which the assignment is granted. Supports $filter (eq, in).
@@ -274,8 +274,5 @@ ENTITLEMENTMANAGEMENT <IMicrosoftGraphRbacApplication1>: rbacApplication
   - `[RoleDefinitions <IMicrosoftGraphUnifiedRoleDefinition1[]>]`: Resource representing the roles allowed by RBAC providers and the permissions assigned to the roles.
 
 ## RELATED LINKS
-
-## RELATED LINKS
-
 
 ## RELATED LINKS

@@ -1,8 +1,12 @@
 ---
 title: "Using Find-MgGraphCommand cmdlet"
 description: "Learn how to use the Find-MgGraphCommand to aid in discoverability of cmdlets."
-localization_priority: Normal
+
+ms.topic: conceptual
+ms.date: 01/11/2022
 author: msewaweru
+manager: CelesteDG
+ms.author: eunicewaweru
 ---
 
 # Using Find-MgGraphCommand cmdlet

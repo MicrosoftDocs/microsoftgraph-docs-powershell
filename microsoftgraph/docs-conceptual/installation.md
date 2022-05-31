@@ -1,6 +1,7 @@
 ---
 title: "Install the Microsoft Graph PowerShell SDK"
-description: "Provides instructions for installing the Microsoft Graph PowerShell SDK."
+description: "Learn how to install the Microsoft Graph PowerShell SDK with PowerShellGet."
+
 localization_priority: Normal
 author: jasonjoh
 ms.topic: conceptual

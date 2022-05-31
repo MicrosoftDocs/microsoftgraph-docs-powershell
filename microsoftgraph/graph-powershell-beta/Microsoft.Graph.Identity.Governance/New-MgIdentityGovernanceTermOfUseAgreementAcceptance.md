@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancetermofuseagreementacceptance
@@ -31,13 +31,6 @@ New-MgIdentityGovernanceTermOfUseAgreementAcceptance -BodyParameter <IMicrosoftG
 Represents the current status of a user's response to a company's customizable terms of use agreement.
 
 ## EXAMPLES
-
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -326,9 +319,29 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAgreementAcceptance
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+BODYPARAMETER <IMicrosoftGraphAgreementAcceptance>: agreementAcceptance
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: Read-only.
+  - `[AgreementFileId <String>]`: The identifier of the agreement file accepted by the user.
+  - `[AgreementId <String>]`: The identifier of the agreement.
+  - `[DeviceDisplayName <String>]`: The display name of the device used for accepting the agreement.
+  - `[DeviceId <String>]`: The unique identifier of the device used for accepting the agreement.
+  - `[DeviceOSType <String>]`: The operating system used to accept the agreement.
+  - `[DeviceOSVersion <String>]`: The operating system version of the device used to accept the agreement.
+  - `[ExpirationDateTime <DateTime?>]`: The expiration date time of the acceptance. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[RecordedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[State <String>]`: agreementAcceptanceState
+  - `[UserDisplayName <String>]`: Display name of the user when the acceptance was recorded.
+  - `[UserEmail <String>]`: Email of the user when the acceptance was recorded.
+  - `[UserId <String>]`: The identifier of the user who accepted the agreement.
+  - `[UserPrincipalName <String>]`: UPN of the user when the acceptance was recorded.
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancetermofuseagreementacceptance](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancetermofuseagreementacceptance)
-

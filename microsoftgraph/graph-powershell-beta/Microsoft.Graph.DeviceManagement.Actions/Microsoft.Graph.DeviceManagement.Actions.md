@@ -374,6 +374,24 @@ Invoke action bulkReprovisionCloudPc
 ### [Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc](Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc.md)
 Invoke action bulkRestoreCloudPc
 
+### [Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc](Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc.md)
+Invoke action bulkRestoreCloudPc
+
+### [Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc](Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc.md)
+Invoke action bulkRestoreCloudPc
+
+### [Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc](Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc.md)
+Invoke action bulkRestoreCloudPc
+
+### [Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc](Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc.md)
+Invoke action bulkRestoreCloudPc
+
+### [Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc](Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc.md)
+Invoke action bulkRestoreCloudPc
+
+### [Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc](Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc.md)
+Invoke action bulkRestoreCloudPc
+
 ### [Invoke-MgCleanDeviceManagementComanagedDeviceWindowDevice](Invoke-MgCleanDeviceManagementComanagedDeviceWindowDevice.md)
 Clean Windows device
 
@@ -537,6 +555,21 @@ Invoke action reenable
 Invoke action reenable
 
 ### [Invoke-MgReenableDeviceManagementManagedDevice](Invoke-MgReenableDeviceManagementManagedDevice.md)
+Invoke action reenable
+
+### [Invoke-MgReenableDeviceManagementScriptDeviceRunStateManagedDevice](Invoke-MgReenableDeviceManagementScriptDeviceRunStateManagedDevice.md)
+Invoke action reenable
+
+### [Invoke-MgReenableDeviceManagementScriptDeviceRunStateManagedDevice](Invoke-MgReenableDeviceManagementScriptDeviceRunStateManagedDevice.md)
+Invoke action reenable
+
+### [Invoke-MgReenableDeviceManagementScriptDeviceRunStateManagedDevice](Invoke-MgReenableDeviceManagementScriptDeviceRunStateManagedDevice.md)
+Invoke action reenable
+
+### [Invoke-MgReenableDeviceManagementScriptDeviceRunStateManagedDevice](Invoke-MgReenableDeviceManagementScriptDeviceRunStateManagedDevice.md)
+Invoke action reenable
+
+### [Invoke-MgReenableDeviceManagementScriptDeviceRunStateManagedDevice](Invoke-MgReenableDeviceManagementScriptDeviceRunStateManagedDevice.md)
 Invoke action reenable
 
 ### [Invoke-MgReenableDeviceManagementScriptDeviceRunStateManagedDevice](Invoke-MgReenableDeviceManagementScriptDeviceRunStateManagedDevice.md)

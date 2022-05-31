@@ -443,7 +443,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphSubscription>: subscription
+BODYPARAMETER <IMicrosoftGraphSubscription1>: subscription
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: Read-only.
   - `[ApplicationId <String>]`: Optional. Identifier of the application used to create the subscription. Read-only.

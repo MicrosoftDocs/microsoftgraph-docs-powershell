@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/invoke-mgrangeuserinsightusedresourcemicrosoftgraphworkbookrangeused
@@ -40,13 +40,6 @@ Invoke-MgRangeUserInsightUsedResourceMicrosoftGraphWorkbookRangeUsed -InputObjec
 Invoke function usedRange
 
 ## EXAMPLES
-
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -106,7 +99,7 @@ Aliases:
 
 Required: True
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -136,6 +129,7 @@ INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   - `[AppConsentRequestId <String>]`: key: id of appConsentRequest
   - `[BaseTaskListId <String>]`: key: id of baseTaskList
   - `[CalendarId <String>]`: key: id of calendar
+  - `[CloudPcId <String>]`: key: id of cloudPC
   - `[Column <Int32?>]`: Usage: column={column}
   - `[ColumnOffset <Int32?>]`: Usage: columnOffset={columnOffset}
   - `[ContactFolderId <String>]`: key: id of contactFolder
@@ -165,6 +159,3 @@ INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   - `[ValuesOnly <Boolean?>]`: Usage: valuesOnly={valuesOnly}
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/invoke-mgrangeuserinsightusedresourcemicrosoftgraphworkbookrangeused](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/invoke-mgrangeuserinsightusedresourcemicrosoftgraphworkbookrangeused)
-
