@@ -8,9 +8,7 @@ schema: 2.0.0
 # Update-MgGroupPlanner
 
 ## SYNOPSIS
-Selective Planner services available to the group.
-Read-only.
-Nullable.
+Entry-point to Planner resource that might exist for a Unified Group.
 
 ## SYNTAX
 
@@ -39,9 +37,7 @@ Update-MgGroupPlanner -InputObject <IPlannerIdentity> -BodyParameter <IMicrosoft
 ```
 
 ## DESCRIPTION
-Selective Planner services available to the group.
-Read-only.
-Nullable.
+Entry-point to Planner resource that might exist for a Unified Group.
 
 ## EXAMPLES
 
@@ -212,7 +208,7 @@ BODYPARAMETER <IMicrosoftGraphPlannerGroup1>: plannerGroup
   - `[Id <String>]`: Read-only.
   - `[Plans <IMicrosoftGraphPlannerPlan[]>]`: Read-only. Nullable. Returns the plannerPlans owned by the group.
     - `[Id <String>]`: Read-only.
-    - `[Buckets <IMicrosoftGraphPlannerBucket[]>]`: Collection of buckets in the plan. Read-only. Nullable.
+    - `[Buckets <IMicrosoftGraphPlannerBucket[]>]`: Read-only. Nullable. Collection of buckets in the plan.
       - `[Id <String>]`: Read-only.
       - `[Name <String>]`: Name of the bucket.
       - `[OrderHint <String>]`: Hint used to order items of this type in a list view. The format is defined as outlined here.
@@ -241,8 +237,8 @@ BODYPARAMETER <IMicrosoftGraphPlannerGroup1>: plannerGroup
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Application <IMicrosoftGraphIdentity>]`: identity
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-            - `[Id <String>]`: The identifier of the identity. This property is read-only.
+            - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+            - `[Id <String>]`: Unique identifier for the identity.
           - `[Device <IMicrosoftGraphIdentity>]`: identity
           - `[User <IMicrosoftGraphIdentity>]`: identity
         - `[CompletedDateTime <DateTime?>]`: Read-only. Date and time at which the 'percentComplete' of the task is set to '100'. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -287,7 +283,7 @@ BODYPARAMETER <IMicrosoftGraphPlannerGroup1>: plannerGroup
       - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Owner <String>]`: ID of the Group that owns the plan. A valid group must exist before this field can be set. After it is set, this property can't be updated.
-    - `[Tasks <IMicrosoftGraphPlannerTask[]>]`: Collection of tasks in the plan. Read-only. Nullable.
+    - `[Tasks <IMicrosoftGraphPlannerTask[]>]`: Read-only. Nullable. Collection of tasks in the plan.
     - `[Title <String>]`: Required. Title of the plan.
 
 INPUTOBJECT <IPlannerIdentity>: Identity Parameter
@@ -302,7 +298,7 @@ INPUTOBJECT <IPlannerIdentity>: Identity Parameter
 
 PLANS <IMicrosoftGraphPlannerPlan[]>: Read-only. Nullable. Returns the plannerPlans owned by the group.
   - `[Id <String>]`: Read-only.
-  - `[Buckets <IMicrosoftGraphPlannerBucket[]>]`: Collection of buckets in the plan. Read-only. Nullable.
+  - `[Buckets <IMicrosoftGraphPlannerBucket[]>]`: Read-only. Nullable. Collection of buckets in the plan.
     - `[Id <String>]`: Read-only.
     - `[Name <String>]`: Name of the bucket.
     - `[OrderHint <String>]`: Hint used to order items of this type in a list view. The format is defined as outlined here.
@@ -331,8 +327,8 @@ PLANS <IMicrosoftGraphPlannerPlan[]>: Read-only. Nullable. Returns the plannerPl
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Application <IMicrosoftGraphIdentity>]`: identity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-          - `[Id <String>]`: The identifier of the identity. This property is read-only.
+          - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          - `[Id <String>]`: Unique identifier for the identity.
         - `[Device <IMicrosoftGraphIdentity>]`: identity
         - `[User <IMicrosoftGraphIdentity>]`: identity
       - `[CompletedDateTime <DateTime?>]`: Read-only. Date and time at which the 'percentComplete' of the task is set to '100'. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -377,7 +373,7 @@ PLANS <IMicrosoftGraphPlannerPlan[]>: Read-only. Nullable. Returns the plannerPl
     - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Owner <String>]`: ID of the Group that owns the plan. A valid group must exist before this field can be set. After it is set, this property can't be updated.
-  - `[Tasks <IMicrosoftGraphPlannerTask[]>]`: Collection of tasks in the plan. Read-only. Nullable.
+  - `[Tasks <IMicrosoftGraphPlannerTask[]>]`: Read-only. Nullable. Collection of tasks in the plan.
   - `[Title <String>]`: Required. Title of the plan.
 
 ## RELATED LINKS

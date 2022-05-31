@@ -182,21 +182,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SharedWithChannelTeamInfoId
-key: id of sharedWithChannelTeamInfo
-
-```yaml
-Type: String
-Parameter Sets: Get
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Sort
 Order items by property values
 
@@ -206,21 +191,6 @@ Parameter Sets: List
 Aliases: OrderBy
 
 Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -UpdatableAssetId
-key: id of updatableAsset
-
-```yaml
-Type: String
-Parameter Sets: Get
-Aliases:
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -238,6 +208,21 @@ Aliases: Limit
 Required: False
 Position: Named
 Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -UpdatableAssetId
+key: id of updatableAsset
+
+```yaml
+Type: String
+Parameter Sets: Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

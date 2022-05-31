@@ -12,24 +12,24 @@ The collection of the sub-sites under this site.
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgSubSiteByRef -SiteId <String> [-AdditionalProperties <Hashtable>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
 New-MgSubSiteByRef -SiteId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded1
+### CreateViaIdentityExpanded
 ```
 New-MgSubSiteByRef -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### CreateViaIdentity1
+### CreateViaIdentity
 ```
 New-MgSubSiteByRef -InputObject <ISitesIdentity> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -47,7 +47,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: Hashtable
-Parameter Sets: Create1, CreateViaIdentity1
+Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -78,7 +78,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -93,7 +93,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, Create1
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True

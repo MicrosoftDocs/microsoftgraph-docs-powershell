@@ -12,7 +12,7 @@ Update media content for the navigation property attachments in admin
 
 ## SYNTAX
 
-### SetExpanded (Default)
+### Set (Default)
 ```
 Set-MgServiceAnnouncementMessageAttachmentContent -ServiceAnnouncementAttachmentId <String>
  -ServiceUpdateMessageId <String> [-BodyParameter <Stream>] -InFile <String> [-PassThru] [-WhatIf] [-Confirm]
@@ -32,18 +32,18 @@ Update media content for the navigation property attachments in admin
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -BodyParameter
+.
 
 ```yaml
-Type: Hashtable
-Parameter Sets: SetExpanded, SetViaIdentityExpanded
+Type: Stream
+Parameter Sets: (All)
 Aliases:
 
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -53,19 +53,20 @@ This should include a path and file name.
 If you omit the path, the current location will be used.
 
 ```yaml
-Type: ISitesIdentity
-Parameter Sets: SetViaIdentityExpanded, SetViaIdentity
+Type: String
+Parameter Sets: (All)
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue)
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ListId
-key: id of list
+### -InputObject
+Identity Parameter
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
 Type: IDevicesServiceAnnouncementIdentity
@@ -75,7 +76,7 @@ Aliases:
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -114,7 +115,7 @@ key: id of serviceUpdateMessage
 
 ```yaml
 Type: String
-Parameter Sets: SetExpanded, Set
+Parameter Sets: Set
 Aliases:
 
 Required: True

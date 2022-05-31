@@ -75,13 +75,13 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: String
-Parameter Sets: Delete
+Type: SwitchParameter
+Parameter Sets: (All)
 Aliases:
 
-Required: True
+Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

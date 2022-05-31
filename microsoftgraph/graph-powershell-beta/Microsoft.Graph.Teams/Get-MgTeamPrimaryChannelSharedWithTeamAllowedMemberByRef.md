@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 ﻿---
-=======
----
->>>>>>> live
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgteamprimarychannelsharedwithteamallowedmemberbyref
@@ -27,16 +23,6 @@ Get ref of allowedMembers from teams
 
 ## EXAMPLES
 
-<<<<<<< HEAD
-=======
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
->>>>>>> live
 ## PARAMETERS
 
 ### -All
@@ -49,11 +35,7 @@ Aliases:
 
 Required: False
 Position: Named
-<<<<<<< HEAD
 Default value: None
-=======
-Default value: False
->>>>>>> live
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -99,11 +81,7 @@ Aliases:
 
 Required: False
 Position: Named
-<<<<<<< HEAD
 Default value: None
-=======
-Default value: 0
->>>>>>> live
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -178,11 +156,7 @@ Aliases: Limit
 
 Required: False
 Position: Named
-<<<<<<< HEAD
 Default value: None
-=======
-Default value: 0
->>>>>>> live
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -197,11 +171,7 @@ Aliases:
 
 Required: False
 Position: Named
-<<<<<<< HEAD
 Default value: None
-=======
-Default value: 0
->>>>>>> live
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -215,16 +185,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.String
 ## NOTES
-<<<<<<< HEAD
 
 ALIASES
 
 ## RELATED LINKS
-=======
-Please use Get-Help -Online.
-
-## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgteamprimarychannelsharedwithteamallowedmemberbyref](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgteamprimarychannelsharedwithteamallowedmemberbyref)
-
->>>>>>> live

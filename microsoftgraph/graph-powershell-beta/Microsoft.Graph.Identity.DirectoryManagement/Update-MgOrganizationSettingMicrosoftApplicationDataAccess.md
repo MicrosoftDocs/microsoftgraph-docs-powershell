@@ -1,21 +1,4 @@
-<<<<<<< HEAD
 ﻿---
-=======
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallContentSharingSession.md
-﻿---
-external help file: Microsoft.Graph.CloudCommunications-help.xml
-Module Name: Microsoft.Graph.CloudCommunications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationcallcontentsharingsession
-schema: 2.0.0
----
-
-# Update-MgCommunicationCallContentSharingSession
-
-## SYNOPSIS
-Update the navigation property contentSharingSessions in communications
-=======
----
->>>>>>> live
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganizationsettingmicrosoftapplicationdataaccess
@@ -26,80 +9,32 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property microsoftApplicationDataAccess in organization
-<<<<<<< HEAD
-=======
->>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganizationSettingMicrosoftApplicationDataAccess.md
->>>>>>> live
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
-<<<<<<< HEAD
 Update-MgOrganizationSettingMicrosoftApplicationDataAccess -OrganizationId <String>
  [-AdditionalProperties <Hashtable>] [-DisabledForGroup <String>] [-Id <String>]
  [-IsEnabledForAllMicrosoftApplications] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-=======
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallContentSharingSession.md
-Update-MgCommunicationCallContentSharingSession -CallId <String> -ContentSharingSessionId <String>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-=======
-Update-MgOrganizationSettingMicrosoftApplicationDataAccess -OrganizationId <String>
- [-AdditionalProperties <Hashtable>] [-DisabledForGroup <String>] [-Id <String>]
- [-IsEnabledForAllMicrosoftApplications] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
->>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganizationSettingMicrosoftApplicationDataAccess.md
->>>>>>> live
 ```
 
 ### Update
 ```
-<<<<<<< HEAD
 Update-MgOrganizationSettingMicrosoftApplicationDataAccess -OrganizationId <String>
  -BodyParameter <IMicrosoftGraphMicrosoftApplicationDataAccessSettings> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
-=======
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallContentSharingSession.md
-Update-MgCommunicationCallContentSharingSession -CallId <String> -ContentSharingSessionId <String>
- -BodyParameter <Hashtable> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-=======
-Update-MgOrganizationSettingMicrosoftApplicationDataAccess -OrganizationId <String>
- -BodyParameter <IMicrosoftGraphMicrosoftApplicationDataAccessSettings> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
->>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganizationSettingMicrosoftApplicationDataAccess.md
->>>>>>> live
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-<<<<<<< HEAD
 Update-MgOrganizationSettingMicrosoftApplicationDataAccess -InputObject <IIdentityDirectoryManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-DisabledForGroup <String>] [-Id <String>]
  [-IsEnabledForAllMicrosoftApplications] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-=======
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallContentSharingSession.md
-Update-MgCommunicationCallContentSharingSession -InputObject <ICloudCommunicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-=======
-Update-MgOrganizationSettingMicrosoftApplicationDataAccess -InputObject <IIdentityDirectoryManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-DisabledForGroup <String>] [-Id <String>]
- [-IsEnabledForAllMicrosoftApplications] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
->>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganizationSettingMicrosoftApplicationDataAccess.md
->>>>>>> live
 ```
 
 ### UpdateViaIdentity
 ```
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallContentSharingSession.md
-Update-MgCommunicationCallContentSharingSession -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <Hashtable> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-## DESCRIPTION
-Update the navigation property contentSharingSessions in communications
-=======
->>>>>>> live
 Update-MgOrganizationSettingMicrosoftApplicationDataAccess -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <IMicrosoftGraphMicrosoftApplicationDataAccessSettings> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -107,10 +42,6 @@ Update-MgOrganizationSettingMicrosoftApplicationDataAccess -InputObject <IIdenti
 
 ## DESCRIPTION
 Update the navigation property microsoftApplicationDataAccess in organization
-<<<<<<< HEAD
-=======
->>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganizationSettingMicrosoftApplicationDataAccess.md
->>>>>>> live
 
 ## EXAMPLES
 
@@ -132,24 +63,11 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallContentSharingSession.md
-contentSharingSession
-
-```yaml
-Type: Hashtable
-=======
->>>>>>> live
 microsoftApplicationDataAccessSettings
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphMicrosoftApplicationDataAccessSettings
-<<<<<<< HEAD
-=======
->>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganizationSettingMicrosoftApplicationDataAccess.md
->>>>>>> live
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -160,18 +78,8 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-<<<<<<< HEAD
 ### -DisabledForGroup
 .
-=======
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallContentSharingSession.md
-### -CallId
-key: id of call
-=======
-### -DisabledForGroup
-.
->>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganizationSettingMicrosoftApplicationDataAccess.md
->>>>>>> live
 
 ```yaml
 Type: String
@@ -185,17 +93,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallContentSharingSession.md
-### -ContentSharingSessionId
-key: id of contentSharingSession
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
-=======
->>>>>>> live
 ### -Id
 Read-only.
 
@@ -218,10 +115,6 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 ```yaml
 Type: IIdentityDirectoryManagementIdentity
 Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
-<<<<<<< HEAD
-=======
->>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganizationSettingMicrosoftApplicationDataAccess.md
->>>>>>> live
 Aliases:
 
 Required: True
@@ -241,51 +134,23 @@ Aliases:
 
 Required: False
 Position: Named
-<<<<<<< HEAD
 Default value: None
-=======
-Default value: False
->>>>>>> live
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallContentSharingSession.md
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
-
-```yaml
-Type: ICloudCommunicationsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
-=======
->>>>>>> live
 ### -OrganizationId
 key: id of organization
 
 ```yaml
 Type: String
 Parameter Sets: UpdateExpanded, Update
-<<<<<<< HEAD
-=======
->>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganizationSettingMicrosoftApplicationDataAccess.md
->>>>>>> live
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
-<<<<<<< HEAD
 Accept pipeline input: False
-=======
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallContentSharingSession.md
-Accept pipeline input: True (ByValue)
-=======
-Accept pipeline input: False
->>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganizationSettingMicrosoftApplicationDataAccess.md
->>>>>>> live
 Accept wildcard characters: False
 ```
 
@@ -340,18 +205,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-<<<<<<< HEAD
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMicrosoftApplicationDataAccessSettings
-=======
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallContentSharingSession.md
-### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-### System.Collections.Hashtable
-=======
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMicrosoftApplicationDataAccessSettings
->>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganizationSettingMicrosoftApplicationDataAccess.md
->>>>>>> live
 ## OUTPUTS
 
 ### System.Boolean
@@ -363,7 +218,6 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
-<<<<<<< HEAD
 
 BODYPARAMETER <IMicrosoftGraphMicrosoftApplicationDataAccessSettings>: microsoftApplicationDataAccessSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -403,26 +257,6 @@ INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   - `[SubscribedSkuId <String>]`: key: id of subscribedSku
   - `[TenantReferenceTenantId <String>]`: key: tenantId of tenantReference
   - `[UsageRightId <String>]`: key: id of usageRight
-=======
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.CloudCommunications/Update-MgCommunicationCallContentSharingSession.md
-=======
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganizationsettingmicrosoftapplicationdataaccess](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganizationsettingmicrosoftapplicationdataaccess)
->>>>>>> live:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganizationSettingMicrosoftApplicationDataAccess.md
-
-INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
-  - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
-  - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
-  - `[CallId <String>]`: key: id of call
-  - `[CallRecordId <String>]`: key: id of callRecord
-  - `[CommsOperationId <String>]`: key: id of commsOperation
-  - `[ContentSharingSessionId <String>]`: key: id of contentSharingSession
-  - `[MeetingAttendanceReportId <String>]`: key: id of meetingAttendanceReport
-  - `[MeetingRegistrationQuestionId <String>]`: key: id of meetingRegistrationQuestion
-  - `[OnlineMeetingId <String>]`: key: id of onlineMeeting
-  - `[ParticipantId <String>]`: key: id of participant
-  - `[PresenceId <String>]`: key: id of presence
-  - `[SessionId <String>]`: key: id of session
->>>>>>> live
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS

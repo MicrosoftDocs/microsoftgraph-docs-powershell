@@ -13,10 +13,6 @@ Only in OneDrive for Business.
 
 ## SYNTAX
 
-<<<<<<< HEAD
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Files/New-MgDriveFollowingByRef.md
-=======
->>>>>>> live
 ### CreateExpanded (Default)
 ```
 New-MgDriveFollowingByRef -DriveId <String> [-AdditionalProperties <Hashtable>] [-WhatIf] [-Confirm]
@@ -31,38 +27,11 @@ New-MgDriveFollowingByRef -DriveId <String> -BodyParameter <Hashtable> [-WhatIf]
 
 ### CreateViaIdentityExpanded
 ```
-<<<<<<< HEAD
-=======
-### CreateExpanded1 (Default)
-```
-New-MgDriveFollowingByRef -DriveId <String> [-AdditionalProperties <Hashtable>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Create1
-```
-New-MgDriveFollowingByRef -DriveId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded1
-```
->>>>>>> live:microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Files/New-MgDriveFollowingByRef.md
-=======
->>>>>>> live
 New-MgDriveFollowingByRef -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-<<<<<<< HEAD
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Files/New-MgDriveFollowingByRef.md
 ### CreateViaIdentity
-=======
-### CreateViaIdentity1
->>>>>>> live:microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Files/New-MgDriveFollowingByRef.md
-=======
-### CreateViaIdentity
->>>>>>> live
 ```
 New-MgDriveFollowingByRef -InputObject <IFilesIdentity> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -74,13 +43,6 @@ Only in OneDrive for Business.
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -88,15 +50,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-<<<<<<< HEAD
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Files/New-MgDriveFollowingByRef.md
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-=======
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
->>>>>>> live:microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Files/New-MgDriveFollowingByRef.md
-=======
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
->>>>>>> live
 Aliases:
 
 Required: False
@@ -111,15 +65,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: Hashtable
-<<<<<<< HEAD
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Files/New-MgDriveFollowingByRef.md
 Parameter Sets: Create, CreateViaIdentity
-=======
-Parameter Sets: Create1, CreateViaIdentity1
->>>>>>> live:microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Files/New-MgDriveFollowingByRef.md
-=======
-Parameter Sets: Create, CreateViaIdentity
->>>>>>> live
 Aliases:
 
 Required: True
@@ -134,15 +80,7 @@ key: id of drive
 
 ```yaml
 Type: String
-<<<<<<< HEAD
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Files/New-MgDriveFollowingByRef.md
 Parameter Sets: CreateExpanded, Create
-=======
-Parameter Sets: CreateExpanded1, Create1
->>>>>>> live:microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Files/New-MgDriveFollowingByRef.md
-=======
-Parameter Sets: CreateExpanded, Create
->>>>>>> live
 Aliases:
 
 Required: True
@@ -158,15 +96,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IFilesIdentity
-<<<<<<< HEAD
-<<<<<<< HEAD:microsoftgraph/graph-powershell-beta/Microsoft.Graph.Files/New-MgDriveFollowingByRef.md
 Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
-=======
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
->>>>>>> live:microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Files/New-MgDriveFollowingByRef.md
-=======
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
->>>>>>> live
 Aliases:
 
 Required: True
@@ -218,9 +148,31 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IPathsLayc76DrivesDriveIdFollowingRefPostResponses201ContentApplicationJsonSchema
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
+  - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
+  - `[ColumnLinkId <String>]`: key: id of columnLink
+  - `[ContentTypeId <String>]`: key: id of contentType
+  - `[DriveId <String>]`: key: id of drive
+  - `[DriveItemId <String>]`: key: id of driveItem
+  - `[EndDateTime <String>]`: Usage: endDateTime={endDateTime}
+  - `[GroupId <String>]`: key: id of group
+  - `[Interval <String>]`: Usage: interval={interval}
+  - `[ListItemId <String>]`: key: id of listItem
+  - `[ListItemVersionId <String>]`: key: id of listItemVersion
+  - `[Q <String>]`: Usage: q={q}
+  - `[RichLongRunningOperationId <String>]`: key: id of richLongRunningOperation
+  - `[SharedDriveItemId <String>]`: key: id of sharedDriveItem
+  - `[StartDateTime <String>]`: Usage: startDateTime={startDateTime}
+  - `[SubscriptionId <String>]`: key: id of subscription
+  - `[Token <String>]`: Usage: token={token}
+  - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/new-mgdrivefollowingbyref](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/new-mgdrivefollowingbyref)
-
