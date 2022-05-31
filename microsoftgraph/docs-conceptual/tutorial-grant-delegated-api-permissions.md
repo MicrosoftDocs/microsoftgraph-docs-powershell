@@ -6,17 +6,17 @@ ms.date: 3/30/2022
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
-ms.reviewer: jawoods, maisarissi
+ms.reviewer: jawoods, phsignor
 ---
 
-# Tutorial: Grant delegated permissions programmatically in Azure AD
+# Tutorial: Grant delegated permissions in Azure AD
 
-When API permissions are granted to a client, application, or user in Azure AD, they are recorded as objects that can be accessed, updated, or deleted like other objects. Using Microsoft Graph PowerShell cmdlets to directly create permission grants is a programmatic alternative to interactive consent. This can be useful for automation scenarios, bulk management, or other custom operations in your organization.
+When you grant API permissions to a client app in Azure AD, the permission grants are recorded as objects that can be accessed, updated, or deleted like other objects. Using Microsoft Graph PowerShell cmdlets to directly create permission grants is a programmatic alternative to [interactive consent](/azure/active-directory/manage-apps/consent-and-permissions-overview). This can be useful for automation scenarios, bulk management, or other custom operations in your organization.
 
 >[!Caution]
 >Be Careful! Permissions created programmatically are not subject to review or confirmation. They take effect immediately.
 
-In this tutorial, you will grant delegated permissions that are exposed by an API to an app. Delegated permissions allow an app to call an API on behalf of a signed-in user, and may sometimes be called scopes or OAuth2 permissions.
+In this tutorial, you'll grant delegated permissions that are exposed by an API to an app. Delegated permissions, also called scopes or OAuth2 permissions, allow an app to call an API on behalf of a signed-in user.
 
 ## Prerequisites
 
@@ -32,11 +32,11 @@ To successfully complete this tutorial, make sure you have the required prerequi
     Select **Consent on behalf of your organization** before accepting in the login dialog box.
 
 >[!Caution]
->The `DelegatedPermissionGrant.ReadWrite.All` permission allows an app or a service to manage permission grants and  elevate privileges for any app, user, or group in your organization. Access to this service must be properly secured and should be limited to as few users as possible.
+>The `DelegatedPermissionGrant.ReadWrite.All` permission allows an app or a service to manage permission grants and elevate privileges for any app, user, or group in your organization. Access to this service must be properly secured and should be limited to as few users as possible.
 
 ## Step 1: Create a service principal
 
-The first step in granting consent is to [create the service principal](/powershell/module/microsoft.graph.applications/new-mgserviceprincipal?view=graph-powershell-1.0&preserve-view=true). To do so, you will need the `App Id` of your application.
+The first step in granting consent is to [create the service principal](/powershell/module/microsoft.graph.applications/new-mgserviceprincipal?view=graph-powershell-1.0&preserve-view=true). To do so, you'll need the `App Id` of your application.
 
 ### Register an application with Azure AD
 
@@ -71,7 +71,7 @@ SignInAudience : AzureADandPersonalMicrosoftAccount
 
 ## Step 2: Grant delegated permission to the service principal
 
-To create a delegated permission grant, you will need the following information:
+To create a delegated permission grant, you'll need the following information:
 
 1. **ClientId** - object Id of the client service principal authorized to act on behalf of the user. In this case, the service principal we created in step 1.
 1. **ConsentType** - `AllPrincipals` to authorize all users in the tenant or `Principal` for a single user.
@@ -79,7 +79,7 @@ To create a delegated permission grant, you will need the following information:
 1. **ResourceId** - object Id of the service principal representing the resource app in the tenant.
 1. **Scope** - space-delimited list of permission claim values, for example `User.Read.All`.
 
-In this example, the object id of the resource service principal is `a67ad0d0-a7d1-4adb-8cd9-bcdd0c866d3c`. We will grant `Group.Read.All` scope to our service principal and grant consent on behalf of all users in the tenant.
+In this example, the object id of the resource service principal is `a67ad0d0-a7d1-4adb-8cd9-bcdd0c866d3c`. You'll grant `Group.Read.All` scope to the service principal and grant consent on behalf of all users in the tenant.
 
 ```powershell
 $params = @{
@@ -118,7 +118,7 @@ Update-MgOauth2PermissionGrant -OAuth2PermissionGrantId 'DXfBIt8w50mnY_OdLvmzadD
 
 The last step when creating a delegated oauth2PermissionGrant is to assign the app to the user. This ensures that the app will appear in the [MyApps](https://myapps.microsoft.com/) panel for the user. It also allows users to access the app as intended if the app is configured to require user assignment.
 
-To assign the app to a user, you will need the following information:
+To assign the app to a user, you'll need the following information:
 
 1. **PrincipalId** - object Id of the user you are assigning the app role.
 1. **ResourceId** - object Id of the service principal representing the resource app in your tenant.

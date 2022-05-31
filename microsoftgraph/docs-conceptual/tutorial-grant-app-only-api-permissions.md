@@ -6,17 +6,17 @@ ms.date: 3/30/2022
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
-ms.reviewer: jawoods
+ms.reviewer: jawoods, phsignor 
 ---
 
-# Tutorial: Grant application permissions programmatically in Azure AD
+# Tutorial: Grant app roles in Azure AD
 
-When you grant API permissions to a client, application, or user in Azure AD, they are recorded as objects that can be accessed, updated, or deleted like other objects. Using Microsoft Graph PowerShell cmdlets to directly create permission grants is a programmatic alternative to interactive consent. This can be useful for automation scenarios, bulk management, or other custom operations in your organization.
+When you grant API permissions to a client app in Azure AD, the permission grants are recorded as objects that can be accessed, updated, or deleted like other objects. Using Microsoft Graph PowerShell cmdlets to directly create permission grants is a programmatic alternative to [interactive consent](/azure/active-directory/manage-apps/consent-and-permissions-overview). This can be useful for automation scenarios, bulk management, or other custom operations in your organization.
 
 >[!Caution]
 >Be Careful! Permissions created programmatically are not subject to review or confirmation. They take effect immediately.
 
-In this tutorial, you will grant application permissions that are exposed by an API to an app. Applications permissions allow an app to call an API with it's own identity, and may sometimes be called app roles, app-only permissions, or direct access permissions.
+In this tutorial, you'll grant app roles that are exposed by an API to an app. App roles, also called application permissions, app-only permissions, or direct access permissions, allow an app to call an API with it's own identity.
 
 ## Prerequisites
 
@@ -32,11 +32,11 @@ To successfully complete this tutorial, make sure you have the required prerequi
     Select **Consent on behalf of your organization** before accepting in the login dialog box.
 
 >[!Caution]
->The `AppRoleAssignment.ReadWrite.All` permission allows an app or a service to manage permission grants and  elevate privileges for any app, user, or group in your organization. Access to this service must be properly secured and should be limited to as few users as possible.
+>The `AppRoleAssignment.ReadWrite.All` permission allows an app or a service to manage permission grants and elevate privileges for any app, user, or group in your organization. Access to this service must be properly secured and should be limited to as few users as possible.
 
 ## Step 1: Create a service principal
 
-The first step in granting consent is to [create the service principal](/powershell/module/microsoft.graph.applications/new-mgserviceprincipal?view=graph-powershell-1.0&preserve-view=true). To do so, you will need the `App Id` of your application.
+The first step in granting consent is to [create the service principal](/powershell/module/microsoft.graph.applications/new-mgserviceprincipal?view=graph-powershell-1.0&preserve-view=true). To do so, you'll need the `App Id` of your application.
 
 ### Register an application with Azure AD
 
@@ -71,7 +71,7 @@ SignInAudience : AzureADandPersonalMicrosoftAccount
 
 ## Step 2: Assign an app role to the service principal
 
-In this step, you will assign an app role exposed by your resource app to the service principal we created in step 1. To create an app role assignment, you will need the following information:
+In this step, you'll assign an app role exposed by your resource app to the service principal we created in step 1. To create an app role assignment, you'll need the following information:
 
 1. **PrincipalId** - object Id of the service principal authorized for direct access.
 1. **ResourceId** - object Id of the service principal representing the resource app in your tenant.
