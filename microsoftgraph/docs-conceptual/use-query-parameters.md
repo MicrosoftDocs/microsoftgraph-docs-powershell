@@ -11,14 +11,14 @@ ms.reviewer: maisarissi
 
 # Use query parameters to customize PowerShell query outputs
 
-Microsoft Graph PowerShell SDK supports optional query parameters you can use to control the amount of data returned in an output. The support for the exact query parameters varies from one cmdlet to another, and depending on the profile, can differ between the v1.0 and beta endpoints.
+Microsoft Graph PowerShell SDK supports optional query parameters that you can use to control the amount of data returned in an output. Support for the exact query parameters varies from one cmdlet to another, and depending on the profile, can differ between the v1.0 and beta endpoints.
 
 ## OData system query options
 
-Microsoft PowerShell SDK cmdlets may support one or more of the following OData system query options. These query options are compatible with [OData V4.0 query language](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752356) and are only supported in the GET operations.
+Microsoft PowerShell SDK cmdlets may support one or more of the following OData system query options, which are compatible with [OData V4.0 query language](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part2-url-conventions/odata-v4.0-errata03-os-part2-url-conventions-complete.html#_Toc453752356) and are only supported in the GET operations.
 
 >[!TIP]
->OData query options in the Microsoft Graph API use lower case names and specify the dollar ($) prefix while in Microsoft Graph PowerShell SDK, their names are Pascal-cased and prefixed with a hyphen (-). For example, `$count` and `$orderBy` are to Microsoft Graph API while `-Count` and `-OrderBy` respectively, are to Microsoft Graph PowerShell SDK.
+>OData query options in the Microsoft Graph API use lowercase names and specify the dollar ($) prefix while in Microsoft Graph PowerShell SDK, their names are Pascal-cased and prefixed with a hyphen (-). For example, `$count` and `$orderBy` are to Microsoft Graph API while `-Count` and `-OrderBy` (respectively) are to Microsoft Graph PowerShell SDK.
 
 |Name|Description|Example|
 |--------|----|-----|
@@ -51,7 +51,7 @@ The `-Count` query parameter is supported for these modules that represent resou
 
 ## Expand parameter
 
-Many Microsoft Graph resources expose both declared properties of the resource and its relationships with other resources. These relationships are also called reference properties or navigation properties, and they can reference either a single resource or a collection of resources. For example, the mail folders, manager, and direct reports of a user are all exposed as relationships.
+Many Microsoft Graph resources expose both declared properties of the resource and their relationships with other resources. These relationships are also called reference properties or navigation properties, and they can reference either a single resource or a collection of resources. For example, the mail folders, manager, and direct reports of a user are all exposed as relationships.
 
 You can query either the properties of a resource or one of its relationships in a single command, but not both. You can use the `-Expand` query string parameter to include the expanded resource or collection referenced by a single relationship (navigation property) in your results.
 
