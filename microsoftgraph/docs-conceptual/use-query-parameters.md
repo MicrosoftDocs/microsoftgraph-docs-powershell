@@ -55,7 +55,7 @@ Many Microsoft Graph resources expose both declared properties of the resource a
 
 You can query either the properties of a resource or one of its relationships in a single command, but not both. You can use the `-Expand` query string parameter to include the expanded resource or collection referenced by a single relationship (navigation property) in your results.
 
-The following example gets the members of the specified group.
+The following example exposes the members of the specified group.
 
 ```powershell
 Get-MgGroup -GroupId '0e06b38f-931a-47db-9a9a-60ab5f492005' -Expand members | 
@@ -221,4 +221,4 @@ At line:1 char:1
 
 Unsupported filter error could be returned when the `-Filter` query is not correct or when the property is only supported in [advanced queries](/graph/aad-advanced-queries?tabs=powershell) and either -ConsistencyLevel or -Count is missing.
 
-However, it's important to note that query parameters specified in a request might fail silently. This can be true for unsupported query parameters and for unsupported combinations of query parameters. In these cases, you should examine the data returned by the request to determine whether the query parameters you specified had the desired effect.
+Query parameters specified in a request might fail silently. This can be true for unsupported query parameters and for unsupported combinations of query parameters. In these cases, you should examine the data returned by the request to determine whether the query parameters you specified had the desired effect.
