@@ -3,7 +3,7 @@ title: "Error handling and troubleshooting cmdlets"
 description: "Learn how to diagnose common errors in Microsoft Graph PowerShell"
 
 ms.topic: conceptual
-ms.date: 05/31/2022
+ms.date: 06/07/2022
 ms.author: eunicewaweru
 manager: CelesteDG
 author: msewaweru
@@ -14,7 +14,7 @@ reviewer: maisarissi,peombwa
 
 This article explains how to determine, diagnose, and fix issues that you might encounter when using Microsoft Graph PowerShell.
 
-Before troubleshooting any errors, always ensure that you are running the most recent version of the SDK. To the SDK version you are running, run:
+Before troubleshooting any errors, always ensure that you're running the most recent version of the SDK. To get the SDK version you're running, run:
 
 ```powershell
 Get-InstalledModule
@@ -26,8 +26,54 @@ The version of the `Microsoft.Graph` module should be the most recent compared t
 Update-Module Microsoft.Graph
 ```
 
-## Authentication errors
+## Authentication and authorization errors
+
+Authorization errors can occur as a result of a number of issues, most of which generate a 403 error. The common causes for these error are:
+
+- Lack of permissions
+- Lack of the correct scopes
 
 ## Module installation and import errors
 
-## Debugging service commands
+## Using common parameters
+
+### Using -Debug
+
+The -Debug parameter provides a powerful way to examine a script while it's running to identify and correct errors in the script. The following are the important parts of a -Debug output:
+
+1. **cmdletBeginProcessing** - this part allows you to confirm the cmdlet you are running and the parameter list provided to the cmdlet. For example, `DEBUG: [CmdletBeginProcessing]: - Get-MgUser begin processing with parameterSet 'List1'.` shows that we are running the `Get-MgUser` cmdlet and the parameter list is `List1`.
+1. **AuthType** - this will either be `delegated` or `application`.
+1. **AuthProviderType** - the type of authentication that you've used. For example, interactive, device-code, certificate, among others.
+1. **Scopes** - This shows all the scopes that you've authenticated to for the particular application, acquired by decoding the access token and getting the SCP claim.
+1. **HTTP request** - This comprises of:
+    1. Method - could be GET, POST, PUSH, UPDATE
+    1. Uri - Uri will change based on the cloud you are connected to and the version of the SDK you are connected to.
+    1. Body - shows the body of your request.
+1. **HTTP response** - This will comprise of the following information:
+    1. Status code - this part provide the error code that has been return. When it shows `OK` it means that the command run successfully.
+        1. Bad request - take the uri and call it via Invoke-MgGraphRequest to determine if it is a service or a client issue.
+    1. Headers - The most important header is the `request-id`. This helps the support team to determine the cause of the failure. Use this id as you log any issues for the support team to troubleshoot.
+    1. **Body** - shows what the service returns. The most important part of the body is the `@odata.nextLink` gives provides a link to fetch the next page when the results have multiple pages. If the request fails, the body will contain the error code and the error message.
+
+Using the `-Debug` parameter is especially helpful when you want to open a support ticket. It will allow you to get the `request-id` that is required when logging such issues.
+
+### Using -ErrorVariable
+
+When you run a PowerShell cmdlet and an error occurs, the error record will be appended to the *automatic variable* named `$error`. When you use the `-ErrorVariable` parameter in a call to a command, the error is assigned to the variable name that you specify. Even when you use the `-ErrorVariable` parameter, the `$error` variable is still updated.
+
+By default, the -ErrorVariable parameter will overwrite the variable with the name that you specify. If you want to append an error to the variable, instead of overwriting it, you can put a plus sign (+) in front of the variable name. For example,
+
+```powershell
+Get-MgUser -UserId 'doesNotExist' -ErrorVariable MyError
+$MyError.Count # Should be 1
+Get-MgUser -UserId 'doesNotExist' -ErrorVariable +MyError
+$MyError.Count # Should be 2
+```
+
+### Using ErrorAction
+
+The `-ErrorAction` common parameter allows you to specify which action to take if a command fails. The available options are: **Stop***, **Continue**, **SilentlyContinue**, **Ignore**, or **Inquire**.
+
+When you specify the ErrorAction parameter during a call to a command, the specified behavior will override the `$ErrorActionPreference` variable in Windows PowerShell
+
+By default, Windows PowerShell uses an error action preference of **Continue**, which means that errors will be written out to the host, but the script will continue to execute. Hence, these types of errors are known as non-terminating errors. If you set $ErrorActionPreference to **Stop** or if you use Stop as the parameter value for -ErrorAction, Windows PowerShell will stop the script execution at the point an error occurs. When these errors occur, they are considered terminating errors.
