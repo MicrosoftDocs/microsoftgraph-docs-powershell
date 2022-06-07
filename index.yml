@@ -5,11 +5,11 @@ summary: Microsoft Graph PowerShell is a service that provides access to all Mic
 
 metadata:
   title: Microsoft Graph PowerShell documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Learn how to use Microsoft Graph PowerShell to manage you Azure AD by automating tasks.   # Required; article description that is displayed in search results. < 160 chars.
+  description: The Microsoft Graph PowerShell SDK acts as an API wrapper for the Microsoft Graph APIs, exposing the entire API set for use in PowerShell. Learn how to use Microsoft Graph PowerShell to manage identities at scale and automate bulk administrative tasks.   # Required; article description that is displayed in search results. < 160 chars.
   ms.topic: landing-page # Required
   author: msewaweru #Required; your GitHub user alias, with correct capitalization.
   ms.author: eunicewaweru #Required; microsoft alias of author; optional team alias.
-  ms.date: 05/13/2022 #Required; mm/dd/yyyy format.
+  ms.date: 06/07/2022 #Required; mm/dd/yyyy format.
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -33,9 +33,9 @@ landingContent:
             url: navigating.md  
 
   # Card (optional)
-  - title: Learn
+  - title: Common use cases
     linkLists:
-      - linkListType: get-started
+      - linkListType: quickstart
         links:
           - text: Using Find-MgGraphCommand
             url: find-mg-graph-command.md
@@ -65,12 +65,24 @@ landingContent:
   # Card
   - title: References
     linkLists:
+      - linkListType: reference
+        links:
+          - text: Get-MgUser
+            url: ../graph-powershell-1.0/Microsoft.Graph.Users/Get-MgUser.md
+          - text: Get-MgGroup
+            url: ../graph-powershell-1.0/Microsoft.Graph.Users/Get-MgGroup.md
+          - text: Set-MgUserLicense
+            url: ../graph-powershell-1.0/Microsoft.Graph.Users.Actions/Set-MgUserLicense.md
+          - text: Update-MgUser
+            url: ../graph-powershell-1.0/Microsoft.Graph.Users.Actions/Update-MgUser.md
+          - text: Get-MgGroupMember
+            url: ../graph-powershell-1.0/Microsoft.Graph.Users.Actions/Get-MgGroupMember.md
+
       - linkListType: reference 
         links:
           - text: Cmdlet reference
             url: ../graph-powershell-1.0/Microsoft.Graph.Applications/Add-MgApplicationKey.md
-          - text: API reference
-            url: https://docs.microsoft.com/en-us/graph/api/overview?view=graph-rest-1.0
+
 
   # Card (optional)
   - title: Help & support
@@ -83,19 +95,6 @@ landingContent:
             url: https://docs.microsoft.com/en-us/graph/permissions-reference
           - text: Advanced query capabilities
             url: https://docs.microsoft.com/en-us/graph/aad-advanced-queries?tabs=http
+          - text: API reference
+            url: https://docs.microsoft.com/en-us/graph/api/overview?view=graph-rest-1.0  
 
-  # Card (optional)
-  - title: Popular cmdlets
-    linkLists:
-      - linkListType: 
-        links:
-          - text: Get-MgUser
-            url: ../graph-powershell-1.0/Microsoft.Graph.Users/Get-MgUser.md
-          - text: Get-MgGroup
-            url: ../graph-powershell-1.0/Microsoft.Graph.Users/Get-MgGroup.md
-          - text: Set-MgUserLicense
-            url: ../graph-powershell-1.0/Microsoft.Graph.Users.Actions/Set-MgUserLicense.md
-          - text: Update-MgUser
-            url: ../graph-powershell-1.0/Microsoft.Graph.Users.Actions/Update-MgUser.md
-          - text: Get-MgGroupMember
-            url: ../graph-powershell-1.0/Microsoft.Graph.Users.Actions/Get-MgGroupMember.md
