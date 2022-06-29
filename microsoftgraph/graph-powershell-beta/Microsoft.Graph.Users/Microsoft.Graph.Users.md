@@ -19,18 +19,7 @@ Directory objects that were created by the user.
 Read-only.
 Nullable.
 
-### [Get-MgUserCreatedObjectByRef](Get-MgUserCreatedObjectByRef.md)
-Directory objects that were created by the user.
-Read-only.
-Nullable.
-
 ### [Get-MgUserDirectReport](Get-MgUserDirectReport.md)
-The users and contacts that report to the user.
-(The users and contacts that have their manager property set to this user.) Read-only.
-Nullable.
-Supports $expand.
-
-### [Get-MgUserDirectReportByRef](Get-MgUserDirectReportByRef.md)
 The users and contacts that report to the user.
 (The users and contacts that have their manager property set to this user.) Read-only.
 Nullable.
@@ -74,9 +63,6 @@ Get notifications from users
 
 ### [Get-MgUserOauth2PermissionGrant](Get-MgUserOauth2PermissionGrant.md)
 Get oauth2PermissionGrants from users
-
-### [Get-MgUserOauth2PermissionGrantByRef](Get-MgUserOauth2PermissionGrantByRef.md)
-Get ref of oauth2PermissionGrants from users
 
 ### [Get-MgUserOutlookMasterCategory](Get-MgUserOutlookMasterCategory.md)
 A list of categories defined for the user.
@@ -176,19 +162,7 @@ Read-only.
 Nullable.
 Supports $expand.
 
-### [Get-MgUserOwnedDeviceByRef](Get-MgUserOwnedDeviceByRef.md)
-Devices that are owned by the user.
-Read-only.
-Nullable.
-Supports $expand.
-
 ### [Get-MgUserOwnedObject](Get-MgUserOwnedObject.md)
-Directory objects that are owned by the user.
-Read-only.
-Nullable.
-Supports $expand.
-
-### [Get-MgUserOwnedObjectByRef](Get-MgUserOwnedObjectByRef.md)
 Directory objects that are owned by the user.
 Read-only.
 Nullable.
@@ -203,12 +177,6 @@ The user's profile photo.
 Read-only.
 
 ### [Get-MgUserRegisteredDevice](Get-MgUserRegisteredDevice.md)
-Devices that are registered for the user.
-Read-only.
-Nullable.
-Supports $expand.
-
-### [Get-MgUserRegisteredDeviceByRef](Get-MgUserRegisteredDeviceByRef.md)
 Devices that are registered for the user.
 Read-only.
 Nullable.
@@ -260,23 +228,8 @@ A collection of resources linked to the task.
 The transitive reports for a user.
 Read-only.
 
-### [Get-MgUserTransitiveReportByRef](Get-MgUserTransitiveReportByRef.md)
-The transitive reports for a user.
-Read-only.
-
 ### [New-MgUser](New-MgUser.md)
 Add new entity to users
-
-### [New-MgUserCreatedObjectByRef](New-MgUserCreatedObjectByRef.md)
-Directory objects that were created by the user.
-Read-only.
-Nullable.
-
-### [New-MgUserDirectReportByRef](New-MgUserDirectReportByRef.md)
-The users and contacts that report to the user.
-(The users and contacts that have their manager property set to this user.) Read-only.
-Nullable.
-Supports $expand.
 
 ### [New-MgUserExtension](New-MgUserExtension.md)
 The collection of open extensions defined for the user.
@@ -290,9 +243,6 @@ Nullable.
 
 ### [New-MgUserNotification](New-MgUserNotification.md)
 Create new navigation property to notifications for users
-
-### [New-MgUserOauth2PermissionGrantByRef](New-MgUserOauth2PermissionGrantByRef.md)
-Create new navigation property ref to oauth2PermissionGrants for users
 
 ### [New-MgUserOutlookMasterCategory](New-MgUserOutlookMasterCategory.md)
 A list of categories defined for the user.
@@ -386,27 +336,9 @@ The collection of single-value extended properties defined for the task.
 Read-only.
 Nullable.
 
-### [New-MgUserOwnedDeviceByRef](New-MgUserOwnedDeviceByRef.md)
-Devices that are owned by the user.
-Read-only.
-Nullable.
-Supports $expand.
-
-### [New-MgUserOwnedObjectByRef](New-MgUserOwnedObjectByRef.md)
-Directory objects that are owned by the user.
-Read-only.
-Nullable.
-Supports $expand.
-
 ### [New-MgUserPhoto](New-MgUserPhoto.md)
 Read-only.
 Nullable.
-
-### [New-MgUserRegisteredDeviceByRef](New-MgUserRegisteredDeviceByRef.md)
-Devices that are registered for the user.
-Read-only.
-Nullable.
-Supports $expand.
 
 ### [New-MgUserTodoList](New-MgUserTodoList.md)
 The task lists in the users mailbox.
@@ -429,10 +361,6 @@ A collection of resources linked to the task.
 
 ### [New-MgUserTodoListTaskLinkedResource](New-MgUserTodoListTaskLinkedResource.md)
 A collection of resources linked to the task.
-
-### [New-MgUserTransitiveReportByRef](New-MgUserTransitiveReportByRef.md)
-The transitive reports for a user.
-Read-only.
 
 ### [Remove-MgUser](Remove-MgUser.md)
 Delete entity from users
