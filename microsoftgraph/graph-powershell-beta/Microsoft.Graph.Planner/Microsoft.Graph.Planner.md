@@ -78,9 +78,6 @@ Retrieves the members of the plannerRoster.
 ### [Get-MgPlannerRosterPlan](Get-MgPlannerRosterPlan.md)
 Retrieves the plans contained by the plannerRoster.
 
-### [Get-MgPlannerRosterPlanByRef](Get-MgPlannerRosterPlanByRef.md)
-Retrieves the plans contained by the plannerRoster.
-
 ### [Get-MgPlannerTask](Get-MgPlannerTask.md)
 Read-only.
 Nullable.
@@ -152,9 +149,6 @@ Returns a collection of the specified rosters
 
 ### [New-MgPlannerRosterMember](New-MgPlannerRosterMember.md)
 Retrieves the members of the plannerRoster.
-
-### [New-MgPlannerRosterPlanByRef](New-MgPlannerRosterPlanByRef.md)
-Retrieves the plans contained by the plannerRoster.
 
 ### [New-MgPlannerTask](New-MgPlannerTask.md)
 Read-only.
