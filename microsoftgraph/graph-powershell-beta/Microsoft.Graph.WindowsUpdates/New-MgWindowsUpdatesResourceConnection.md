@@ -1,32 +1,31 @@
 ---
 external help file: Microsoft.Graph.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.WindowsUpdates
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/invoke-mgenrollwindowsupdatesupdatableassetbyid
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/new-mgwindowsupdatesresourceconnection
 schema: 2.0.0
 ---
 
-# Invoke-MgEnrollWindowsUpdatesUpdatableAssetById
+# New-MgWindowsUpdatesResourceConnection
 
 ## SYNOPSIS
-Invoke action enrollAssetsById
+Create new navigation property to resourceConnections for admin
 
 ## SYNTAX
 
-### EnrollExpanded (Default)
+### CreateExpanded (Default)
 ```
-Invoke-MgEnrollWindowsUpdatesUpdatableAssetById [-AdditionalProperties <Hashtable>] [-Ids <String[]>]
- [-MemberEntityType <String>] [-UpdateCategory <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgWindowsUpdatesResourceConnection [-AdditionalProperties <Hashtable>] [-Id <String>] [-State <String>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Enroll
+### Create
 ```
-Invoke-MgEnrollWindowsUpdatesUpdatableAssetById
- -BodyParameter <IPaths134Mc7AdminWindowsUpdatesUpdatableassetsMicrosoftGraphWindowsupdatesEnrollassetsbyidPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgWindowsUpdatesResourceConnection -BodyParameter <IMicrosoftGraphWindowsUpdatesResourceConnection>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action enrollAssetsById
+Create new navigation property to resourceConnections for admin
 
 ## EXAMPLES
 
@@ -44,7 +43,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: EnrollExpanded
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -55,12 +54,12 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-.
+resourceConnection
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths134Mc7AdminWindowsUpdatesUpdatableassetsMicrosoftGraphWindowsupdatesEnrollassetsbyidPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Enroll
+Type: IMicrosoftGraphWindowsUpdatesResourceConnection
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -70,12 +69,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Ids
+### -Id
 .
 
 ```yaml
-Type: String[]
-Parameter Sets: EnrollExpanded
+Type: String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -85,42 +84,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -MemberEntityType
-.
+### -State
+resourceConnectionState
 
 ```yaml
 Type: String
-Parameter Sets: EnrollExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -UpdateCategory
-updateCategory
-
-```yaml
-Type: String
-Parameter Sets: EnrollExpanded
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -166,14 +135,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths134Mc7AdminWindowsUpdatesUpdatableassetsMicrosoftGraphWindowsupdatesEnrollassetsbyidPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsUpdatesResourceConnection
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsUpdatesResourceConnection
 ## NOTES
 Please use Get-Help -Online.
 
 ## RELATED LINKS
 
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/invoke-mgenrollwindowsupdatesupdatableassetbyid](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/invoke-mgenrollwindowsupdatesupdatableassetbyid)
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/new-mgwindowsupdatesresourceconnection](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/new-mgwindowsupdatesresourceconnection)
 
