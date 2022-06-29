@@ -101,9 +101,6 @@ Invoke action getSchedule
 ### [Get-MgUserDefaultCalendarSchedule](Get-MgUserDefaultCalendarSchedule.md)
 Invoke action getSchedule
 
-### [Get-MgUserEventCalendarSchedule](Get-MgUserEventCalendarSchedule.md)
-Invoke action getSchedule
-
 ### [Get-MgUserMailTip](Get-MgUserMailTip.md)
 Invoke action getMailTips
 
@@ -137,32 +134,8 @@ Invoke action tentativelyAccept
 ### [Invoke-MgAcceptUserEventTentatively](Invoke-MgAcceptUserEventTentatively.md)
 Invoke action tentativelyAccept
 
-### [Invoke-MgAcceptUserMailFolderMessageMicrosoftGraphCalendarSharingMessage](Invoke-MgAcceptUserMailFolderMessageMicrosoftGraphCalendarSharingMessage.md)
-Invoke action accept
-
-### [Invoke-MgAcceptUserMailFolderMessageMicrosoftGraphEventMessageRequest](Invoke-MgAcceptUserMailFolderMessageMicrosoftGraphEventMessageRequest.md)
-Invoke action accept
-
-### [Invoke-MgAcceptUserMailFolderMessageMicrosoftGraphEventMessageRequestTentatively](Invoke-MgAcceptUserMailFolderMessageMicrosoftGraphEventMessageRequestTentatively.md)
-Invoke action tentativelyAccept
-
-### [Invoke-MgAcceptUserMessageMicrosoftGraphCalendarSharingMessage](Invoke-MgAcceptUserMessageMicrosoftGraphCalendarSharingMessage.md)
-Invoke action accept
-
-### [Invoke-MgAcceptUserMessageMicrosoftGraphEventMessageRequest](Invoke-MgAcceptUserMessageMicrosoftGraphEventMessageRequest.md)
-Invoke action accept
-
-### [Invoke-MgAcceptUserMessageMicrosoftGraphEventMessageRequestTentatively](Invoke-MgAcceptUserMessageMicrosoftGraphEventMessageRequestTentatively.md)
-Invoke action tentativelyAccept
-
-### [Invoke-MgAcceptUserPendingAccessReviewInstanceDecisionInstanceRecommendation](Invoke-MgAcceptUserPendingAccessReviewInstanceDecisionInstanceRecommendation.md)
-Invoke action acceptRecommendations
-
 ### [Invoke-MgAcceptUserPendingAccessReviewInstanceRecommendation](Invoke-MgAcceptUserPendingAccessReviewInstanceRecommendation.md)
 Invoke action acceptRecommendations
-
-### [Invoke-MgBatchUserPendingAccessReviewInstanceDecisionInstanceRecordDecision](Invoke-MgBatchUserPendingAccessReviewInstanceDecisionInstanceRecordDecision.md)
-Invoke action batchRecordDecisions
 
 ### [Invoke-MgBatchUserPendingAccessReviewInstanceRecordDecision](Invoke-MgBatchUserPendingAccessReviewInstanceRecordDecision.md)
 Invoke action batchRecordDecisions
@@ -192,12 +165,6 @@ Invoke action createOrGet
 Invoke action decline
 
 ### [Invoke-MgDeclineUserEventInstance](Invoke-MgDeclineUserEventInstance.md)
-Invoke action decline
-
-### [Invoke-MgDeclineUserMailFolderMessageMicrosoftGraphEventMessageRequest](Invoke-MgDeclineUserMailFolderMessageMicrosoftGraphEventMessageRequest.md)
-Invoke action decline
-
-### [Invoke-MgDeclineUserMessageMicrosoftGraphEventMessageRequest](Invoke-MgDeclineUserMessageMicrosoftGraphEventMessageRequest.md)
 Invoke action decline
 
 ### [Invoke-MgDeprovisionUserManagedDevice](Invoke-MgDeprovisionUserManagedDevice.md)
@@ -407,9 +374,6 @@ Invoke action reboot
 ### [Restart-MgUserManagedDeviceNow](Restart-MgUserManagedDeviceNow.md)
 Reboot device
 
-### [Restore-MgUser](Restore-MgUser.md)
-Invoke action restore
-
 ### [Restore-MgUserManagedDeviceCloudPc](Restore-MgUserManagedDeviceCloudPc.md)
 Invoke action restoreCloudPc
 
@@ -433,9 +397,6 @@ Invoke action sendCustomNotificationToCompanyPortal
 
 ### [Send-MgUserMessage](Send-MgUserMessage.md)
 Invoke action send
-
-### [Send-MgUserPendingAccessReviewInstanceDecisionInstanceReminder](Send-MgUserPendingAccessReviewInstanceDecisionInstanceReminder.md)
-Invoke action sendReminder
 
 ### [Send-MgUserPendingAccessReviewInstanceReminder](Send-MgUserPendingAccessReviewInstanceReminder.md)
 Invoke action sendReminder
@@ -477,12 +438,6 @@ Invoke action cancel
 Invoke action cancel
 
 ### [Stop-MgUserPendingAccessReviewInstance](Stop-MgUserPendingAccessReviewInstance.md)
-Invoke action stop
-
-### [Stop-MgUserPendingAccessReviewInstanceDecisionInstance](Stop-MgUserPendingAccessReviewInstanceDecisionInstance.md)
-Invoke action stop
-
-### [Stop-MgUserPendingAccessReviewInstanceDefinition](Stop-MgUserPendingAccessReviewInstanceDefinition.md)
 Invoke action stop
 
 ### [Stop-MgUserPendingAccessReviewInstanceStage](Stop-MgUserPendingAccessReviewInstanceStage.md)

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/clear-mgusermanagedappregistrationbydevicetag
 schema: 2.0.0
@@ -12,31 +12,31 @@ Issues a wipe operation on an app registration with specified device tag.
 
 ## SYNTAX
 
-### WipeExpanded (Default)
+### WipeExpanded1 (Default)
 ```
 Clear-MgUserManagedAppRegistrationByDeviceTag -UserId <String> [-AdditionalProperties <Hashtable>]
- [-DeviceTag <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-DeviceTag <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Wipe
+### Wipe1
 ```
 Clear-MgUserManagedAppRegistrationByDeviceTag -UserId <String>
- -BodyParameter <IPaths1X1038LUsersUserIdMicrosoftGraphWipemanagedappregistrationbydevicetagPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IPathsVloam1UsersUserIdMicrosoftGraphWipemanagedappregistrationsbydevicetagPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### WipeViaIdentity
+### WipeViaIdentityExpanded1
 ```
 Clear-MgUserManagedAppRegistrationByDeviceTag -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPaths1X1038LUsersUserIdMicrosoftGraphWipemanagedappregistrationbydevicetagPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### WipeViaIdentityExpanded
-```
-Clear-MgUserManagedAppRegistrationByDeviceTag -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-DeviceTag <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [-AdditionalProperties <Hashtable>] [-DeviceTag <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
+```
+
+### WipeViaIdentity1
+```
+Clear-MgUserManagedAppRegistrationByDeviceTag -InputObject <IUsersActionsIdentity>
+ -BodyParameter <IPathsVloam1UsersUserIdMicrosoftGraphWipemanagedappregistrationsbydevicetagPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -50,8 +50,8 @@ Issues a wipe operation on an app registration with specified device tag.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: WipeExpanded, WipeViaIdentityExpanded
+Type: Hashtable
+Parameter Sets: WipeExpanded1, WipeViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -66,8 +66,8 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths1X1038LUsersUserIdMicrosoftGraphWipemanagedappregistrationbydevicetagPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Wipe, WipeViaIdentity
+Type: IPathsVloam1UsersUserIdMicrosoftGraphWipemanagedappregistrationsbydevicetagPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Wipe1, WipeViaIdentity1
 Aliases:
 
 Required: True
@@ -81,8 +81,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
-Parameter Sets: WipeExpanded, WipeViaIdentityExpanded
+Type: String
+Parameter Sets: WipeExpanded1, WipeViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -97,8 +97,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-Parameter Sets: WipeViaIdentity, WipeViaIdentityExpanded
+Type: IUsersActionsIdentity
+Parameter Sets: WipeViaIdentityExpanded1, WipeViaIdentity1
 Aliases:
 
 Required: True
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -127,8 +127,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Wipe, WipeExpanded
+Type: String
+Parameter Sets: WipeExpanded1, Wipe1
 Aliases:
 
 Required: True
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -158,7 +158,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -174,14 +174,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1X1038LUsersUserIdMicrosoftGraphWipemanagedappregistrationbydevicetagPostRequestbodyContentApplicationJsonSchema
-
+### Microsoft.Graph.PowerShell.Models.IPathsVloam1UsersUserIdMicrosoftGraphWipemanagedappregistrationsbydevicetagPostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -226,4 +223,3 @@ INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

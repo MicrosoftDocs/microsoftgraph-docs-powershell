@@ -1,58 +1,73 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgbulkrestoreusermanageddevicecloudpc
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgbatchuserpendingaccessreviewinstancerecorddecision
 schema: 2.0.0
 ---
 
-# Invoke-MgBulkRestoreUserManagedDeviceCloudPc
+# Invoke-MgBatchUserPendingAccessReviewInstanceRecordDecision
 
 ## SYNOPSIS
-Invoke action bulkRestoreCloudPc
+Invoke action batchRecordDecisions
 
 ## SYNTAX
 
-### BulkExpanded (Default)
+### BatchExpanded (Default)
 ```
-Invoke-MgBulkRestoreUserManagedDeviceCloudPc -UserId <String> [-AdditionalProperties <Hashtable>]
- [-ManagedDeviceIds <String[]>] [-RestorePointDateTime <DateTime>] [-TimeRange <String>] [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### Bulk
-```
-Invoke-MgBulkRestoreUserManagedDeviceCloudPc -UserId <String>
- -BodyParameter <IPaths14X3W2OUsersUserIdManageddevicesMicrosoftGraphBulkrestorecloudpcPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+Invoke-MgBatchUserPendingAccessReviewInstanceRecordDecision -AccessReviewInstanceId <String> -UserId <String>
+ [-AdditionalProperties <Hashtable>] [-Decision <String>] [-Justification <String>] [-PrincipalId <String>]
+ [-ResourceId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### BulkViaIdentity
+### Batch
 ```
-Invoke-MgBulkRestoreUserManagedDeviceCloudPc -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPaths14X3W2OUsersUserIdManageddevicesMicrosoftGraphBulkrestorecloudpcPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+Invoke-MgBatchUserPendingAccessReviewInstanceRecordDecision -AccessReviewInstanceId <String> -UserId <String>
+ -BodyParameter <IPaths16Y92DkUsersUserIdPendingaccessreviewinstancesAccessreviewinstanceIdMicrosoftGraphBatchrecorddecisionsPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### BulkViaIdentityExpanded
+### BatchViaIdentityExpanded
 ```
-Invoke-MgBulkRestoreUserManagedDeviceCloudPc -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-ManagedDeviceIds <String[]>] [-RestorePointDateTime <DateTime>]
- [-TimeRange <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+Invoke-MgBatchUserPendingAccessReviewInstanceRecordDecision -InputObject <IUsersActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-Decision <String>] [-Justification <String>] [-PrincipalId <String>]
+ [-ResourceId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### BatchViaIdentity
+```
+Invoke-MgBatchUserPendingAccessReviewInstanceRecordDecision -InputObject <IUsersActionsIdentity>
+ -BodyParameter <IPaths16Y92DkUsersUserIdPendingaccessreviewinstancesAccessreviewinstanceIdMicrosoftGraphBatchrecorddecisionsPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action bulkRestoreCloudPc
+Invoke action batchRecordDecisions
 
 ## EXAMPLES
 
 ## PARAMETERS
 
+### -AccessReviewInstanceId
+key: id of accessReviewInstance
+
+```yaml
+Type: String
+Parameter Sets: BatchExpanded, Batch
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: BulkExpanded, BulkViaIdentityExpanded
+Type: Hashtable
+Parameter Sets: BatchExpanded, BatchViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -67,14 +82,29 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths14X3W2OUsersUserIdManageddevicesMicrosoftGraphBulkrestorecloudpcPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Bulk, BulkViaIdentity
+Type: IPaths16Y92DkUsersUserIdPendingaccessreviewinstancesAccessreviewinstanceIdMicrosoftGraphBatchrecorddecisionsPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Batch, BatchViaIdentity
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Decision
+.
+
+```yaml
+Type: String
+Parameter Sets: BatchExpanded, BatchViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -83,8 +113,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-Parameter Sets: BulkViaIdentity, BulkViaIdentityExpanded
+Type: IUsersActionsIdentity
+Parameter Sets: BatchViaIdentityExpanded, BatchViaIdentity
 Aliases:
 
 Required: True
@@ -94,12 +124,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ManagedDeviceIds
+### -Justification
 .
 
 ```yaml
-Type: System.String[]
-Parameter Sets: BulkExpanded, BulkViaIdentityExpanded
+Type: String
+Parameter Sets: BatchExpanded, BatchViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -109,12 +139,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -RestorePointDateTime
-.
+### -PassThru
+Returns true when the command succeeds
 
 ```yaml
-Type: System.DateTime
-Parameter Sets: BulkExpanded, BulkViaIdentityExpanded
+Type: SwitchParameter
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -124,12 +154,27 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -TimeRange
-restoreTimeRange
+### -PrincipalId
+.
 
 ```yaml
-Type: System.String
-Parameter Sets: BulkExpanded, BulkViaIdentityExpanded
+Type: String
+Parameter Sets: BatchExpanded, BatchViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceId
+.
+
+```yaml
+Type: String
+Parameter Sets: BatchExpanded, BatchViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -143,8 +188,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Bulk, BulkExpanded
+Type: String
+Parameter Sets: BatchExpanded, Batch
 Aliases:
 
 Required: True
@@ -158,7 +203,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -174,7 +219,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -190,30 +235,26 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths14X3W2OUsersUserIdManageddevicesMicrosoftGraphBulkrestorecloudpcPostRequestbodyContentApplicationJsonSchema
-
+### Microsoft.Graph.PowerShell.Models.IPaths16Y92DkUsersUserIdPendingaccessreviewinstancesAccessreviewinstanceIdMicrosoftGraphBatchrecorddecisionsPostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCloudPcBulkRemoteActionResult
-
+### System.Boolean
 ## NOTES
 
 ALIASES
-
-### Invoke-MgBulkUserManagedDeviceRestoreCloudPc
 
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPaths14X3W2OUsersUserIdManageddevicesMicrosoftGraphBulkrestorecloudpcPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER <IPaths16Y92DkUsersUserIdPendingaccessreviewinstancesAccessreviewinstanceIdMicrosoftGraphBatchrecorddecisionsPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ManagedDeviceIds <String[]>]`: 
-  - `[RestorePointDateTime <DateTime?>]`: 
-  - `[TimeRange <String>]`: restoreTimeRange
+  - `[Decision <String>]`: 
+  - `[Justification <String>]`: 
+  - `[PrincipalId <String>]`: 
+  - `[ResourceId <String>]`: 
 
 INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceDecisionItemId <String>]`: key: id of accessReviewInstanceDecisionItem
@@ -246,4 +287,3 @@ INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

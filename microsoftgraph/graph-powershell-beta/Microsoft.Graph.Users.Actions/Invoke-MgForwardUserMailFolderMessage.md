@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgforwardusermailfoldermessage
 schema: 2.0.0
@@ -12,32 +12,32 @@ Invoke action forward
 
 ## SYNTAX
 
-### ForwardExpanded1 (Default)
+### ForwardExpanded (Default)
 ```
 Invoke-MgForwardUserMailFolderMessage -MailFolderId <String> -MessageId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-Comment <String>] [-Message <IMicrosoftGraphMessage>]
- [-ToRecipients <IMicrosoftGraphRecipient[]>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-ToRecipients <IMicrosoftGraphRecipient[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Forward1
+### Forward
 ```
 Invoke-MgForwardUserMailFolderMessage -MailFolderId <String> -MessageId <String> -UserId <String>
- -BodyParameter <IPaths1X7Dum0UsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IPaths1X7Dum0UsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema1>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ForwardViaIdentity1
-```
-Invoke-MgForwardUserMailFolderMessage -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPaths1X7Dum0UsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### ForwardViaIdentityExpanded1
+### ForwardViaIdentityExpanded
 ```
 Invoke-MgForwardUserMailFolderMessage -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-Comment <String>] [-Message <IMicrosoftGraphMessage>] [-ToRecipients <IMicrosoftGraphRecipient[]>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ForwardViaIdentity
+```
+Invoke-MgForwardUserMailFolderMessage -InputObject <IUsersActionsIdentity>
+ -BodyParameter <IPaths1X7Dum0UsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema1>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,8 +51,8 @@ Invoke action forward
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: ForwardExpanded1, ForwardViaIdentityExpanded1
+Type: Hashtable
+Parameter Sets: ForwardExpanded, ForwardViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -67,8 +67,8 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths1X7Dum0UsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Forward1, ForwardViaIdentity1
+Type: IPaths1X7Dum0UsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema1
+Parameter Sets: Forward, ForwardViaIdentity
 Aliases:
 
 Required: True
@@ -82,8 +82,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
-Parameter Sets: ForwardExpanded1, ForwardViaIdentityExpanded1
+Type: String
+Parameter Sets: ForwardExpanded, ForwardViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -98,8 +98,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-Parameter Sets: ForwardViaIdentity1, ForwardViaIdentityExpanded1
+Type: IUsersActionsIdentity
+Parameter Sets: ForwardViaIdentityExpanded, ForwardViaIdentity
 Aliases:
 
 Required: True
@@ -113,8 +113,8 @@ Accept wildcard characters: False
 key: id of mailFolder
 
 ```yaml
-Type: System.String
-Parameter Sets: Forward1, ForwardExpanded1
+Type: String
+Parameter Sets: ForwardExpanded, Forward
 Aliases:
 
 Required: True
@@ -129,8 +129,8 @@ message
 To construct, please use Get-Help -Online and see NOTES section for MESSAGE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMessage
-Parameter Sets: ForwardExpanded1, ForwardViaIdentityExpanded1
+Type: IMicrosoftGraphMessage
+Parameter Sets: ForwardExpanded, ForwardViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -144,8 +144,8 @@ Accept wildcard characters: False
 key: id of message
 
 ```yaml
-Type: System.String
-Parameter Sets: Forward1, ForwardExpanded1
+Type: String
+Parameter Sets: ForwardExpanded, Forward
 Aliases:
 
 Required: True
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -175,8 +175,8 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for TORECIPIENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRecipient[]
-Parameter Sets: ForwardExpanded1, ForwardViaIdentityExpanded1
+Type: IMicrosoftGraphRecipient[]
+Parameter Sets: ForwardExpanded, ForwardViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -190,8 +190,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Forward1, ForwardExpanded1
+Type: String
+Parameter Sets: ForwardExpanded, Forward
 Aliases:
 
 Required: True
@@ -205,7 +205,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -221,7 +221,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -237,14 +237,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1X7Dum0UsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema
-
+### Microsoft.Graph.PowerShell.Models.IPaths1X7Dum0UsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema1
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -458,3 +455,4 @@ TORECIPIENTS <IMicrosoftGraphRecipient[]>: .
 
 ## RELATED LINKS
 
+## RELATED LINKS
