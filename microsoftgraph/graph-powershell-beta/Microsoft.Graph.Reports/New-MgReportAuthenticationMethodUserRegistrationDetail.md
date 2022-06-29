@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/new-mgreportauthenticationmethoduserregistrationdetail
 schema: 2.0.0
@@ -14,16 +14,16 @@ Represents the state of a user's authentication methods, including which methods
 
 ### CreateExpanded (Default)
 ```
-New-MgReportAuthenticationMethodUserRegistrationDetail [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-IsMfaCapable] [-IsMfaRegistered] [-IsPasswordlessCapable] [-IsSsprCapable] [-IsSsprEnabled]
- [-IsSsprRegistered] [-MethodsRegistered <String[]>] [-UserDisplayName <String>] [-UserPrincipalName <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgReportAuthenticationMethodUserRegistrationDetail [-AdditionalProperties <Hashtable>]
+ [-DefaultMfaMethod <String>] [-Id <String>] [-IsMfaCapable] [-IsMfaRegistered] [-IsPasswordlessCapable]
+ [-IsSsprCapable] [-IsSsprEnabled] [-IsSsprRegistered] [-MethodsRegistered <String[]>]
+ [-UserDisplayName <String>] [-UserPrincipalName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgReportAuthenticationMethodUserRegistrationDetail -BodyParameter <IMicrosoftGraphUserRegistrationDetails>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -37,7 +37,7 @@ Represents the state of a user's authentication methods, including which methods
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -53,7 +53,7 @@ userRegistrationDetails
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserRegistrationDetails
+Type: IMicrosoftGraphUserRegistrationDetails
 Parameter Sets: Create
 Aliases:
 
@@ -64,11 +64,26 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -DefaultMfaMethod
+defaultMfaMethodType
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Id
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -85,7 +100,7 @@ The method must be allowed by the authentication methods policy.
 Supports $filter (eq).
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -102,7 +117,7 @@ The method may not necessarily be allowed by the authentication methods policy.
 Supports $filter (eq).
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -118,7 +133,7 @@ Whether the user has registered a passwordless strong authentication method (inc
 Supports $filter (eq).
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -134,7 +149,7 @@ Whether the user has registered the required number of authentication methods fo
 Supports $filter (eq).
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -151,7 +166,7 @@ The user may not necessarily have registered the required number of authenticati
 Supports $filter (eq).
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -168,7 +183,7 @@ The user may not necessarily be allowed to perform self-service password reset b
 Supports $filter (eq).
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -184,7 +199,7 @@ Collection of authentication methods registered, such as mobilePhone, email, fid
 Supports $filter (any with eq).
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -200,7 +215,7 @@ The user display name, such as Adele Vance.
 Supports $filter (eq, startsWith) and $orderBy.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -216,7 +231,7 @@ The user principal name, such as AdeleV@contoso.com.
 Supports $filter (eq, startsWith) and $orderBy.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -231,7 +246,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -247,7 +262,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -264,11 +279,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserRegistrationDetails
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserRegistrationDetails
-
 ## NOTES
 
 ALIASES
@@ -292,4 +305,3 @@ BODYPARAMETER <IMicrosoftGraphUserRegistrationDetails>: userRegistrationDetails
   - `[UserPrincipalName <String>]`: The user principal name, such as AdeleV@contoso.com. Supports $filter (eq, startsWith) and $orderBy.
 
 ## RELATED LINKS
-

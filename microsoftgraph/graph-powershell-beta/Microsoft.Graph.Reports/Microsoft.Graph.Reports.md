@@ -85,9 +85,6 @@ Invoke function getCredentialUserRegistrationCount
 ### [Get-MgReportCredentialUserRegistrationDetail](Get-MgReportCredentialUserRegistrationDetail.md)
 Details of the usage of self-service password reset and multi-factor authentication (MFA) for all registered users.
 
-### [Get-MgReportDailyPrintUsage](Get-MgReportDailyPrintUsage.md)
-Get dailyPrintUsageByPrinter from reports
-
 ### [Get-MgReportDailyPrintUsageSummaryByPrinter](Get-MgReportDailyPrintUsageSummaryByPrinter.md)
 Get dailyPrintUsageSummariesByPrinter from reports
 
@@ -159,9 +156,6 @@ Metadata for the enrollment failure trends report
 
 ### [Get-MgReportManagedDeviceEnrollmentTopFailures](Get-MgReportManagedDeviceEnrollmentTopFailures.md)
 Invoke function managedDeviceEnrollmentTopFailures
-
-### [Get-MgReportMonthlyPrintUsage](Get-MgReportMonthlyPrintUsage.md)
-Get monthlyPrintUsageByPrinter from reports
 
 ### [Get-MgReportMonthlyPrintUsageSummaryByPrinter](Get-MgReportMonthlyPrintUsageSummaryByPrinter.md)
 Get monthlyPrintUsageSummariesByPrinter from reports
@@ -256,9 +250,6 @@ Invoke function getSharePointSiteUsageSiteCounts
 ### [Get-MgReportSharePointSiteUsageStorage](Get-MgReportSharePointSiteUsageStorage.md)
 Invoke function getSharePointSiteUsageStorage
 
-### [Get-MgReportSkype](Get-MgReportSkype.md)
-Invoke function getSkypeForBusinessActivityCounts
-
 ### [Get-MgReportTeamActivityCount](Get-MgReportTeamActivityCount.md)
 Invoke function getTeamsTeamActivityCounts
 
@@ -339,9 +330,6 @@ Invoke function getYammerGroupsActivityDetail
 
 ### [Get-MgReportYammerGroupActivityGroupCount](Get-MgReportYammerGroupActivityGroupCount.md)
 Invoke function getYammerGroupsActivityGroupCounts
-
-### [Invoke-MgUserReportAuthenticationMethodRegistered](Invoke-MgUserReportAuthenticationMethodRegistered.md)
-Invoke function usersRegisteredByFeature
 
 ### [New-MgReportAuthenticationMethodUserRegistrationDetail](New-MgReportAuthenticationMethodUserRegistrationDetail.md)
 Represents the state of a user's authentication methods, including which methods are registered and which features the user is registered and capable of (such as multi-factor authentication, self-service password reset, and passwordless authentication).
