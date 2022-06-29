@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementuserpfxcertificate
 schema: 2.0.0
@@ -16,15 +16,16 @@ Collection of PFX certificates associated with a user.
 ```
 New-MgDeviceManagementUserPfxCertificate [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
  [-EncryptedPfxBlobInputFile <String>] [-EncryptedPfxPassword <String>] [-ExpirationDateTime <DateTime>]
- [-Id <String>] [-IntendedPurpose <String>] [-KeyName <String>] [-LastModifiedDateTime <DateTime>]
- [-PaddingScheme <String>] [-ProviderName <String>] [-StartDateTime <DateTime>] [-Thumbprint <String>]
- [-UserPrincipalName <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Id <String>] [-IntendedPurpose <UserPfxIntendedPurpose>] [-KeyName <String>]
+ [-LastModifiedDateTime <DateTime>] [-PaddingScheme <UserPfxPaddingScheme>] [-ProviderName <String>]
+ [-StartDateTime <DateTime>] [-Thumbprint <String>] [-UserPrincipalName <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementUserPfxCertificate -BodyParameter <IMicrosoftGraphUserPfxCertificate> [-Confirm]
- [-WhatIf] [<CommonParameters>]
+New-MgDeviceManagementUserPfxCertificate -BodyParameter <IMicrosoftGraphUserPfxCertificate> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -38,7 +39,7 @@ Collection of PFX certificates associated with a user.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -54,7 +55,7 @@ Entity that encapsulates all information required for a user's PFX certificates.
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserPfxCertificate
+Type: IMicrosoftGraphUserPfxCertificate
 Parameter Sets: Create
 Aliases:
 
@@ -69,7 +70,7 @@ Accept wildcard characters: False
 Date/time when this PFX certificate was imported.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -84,7 +85,7 @@ Accept wildcard characters: False
 Input File for EncryptedPfxBlob (Encrypted PFX blob.)
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -99,7 +100,7 @@ Accept wildcard characters: False
 Encrypted PFX password.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -114,7 +115,7 @@ Accept wildcard characters: False
 Certificate's validity expiration date/time.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -129,7 +130,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -144,7 +145,7 @@ Accept wildcard characters: False
 Supported values for the intended purpose of a user PFX certificate.
 
 ```yaml
-Type: System.String
+Type: UserPfxIntendedPurpose
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -159,7 +160,7 @@ Accept wildcard characters: False
 Name of the key (within the provider) used to encrypt the blob.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -174,7 +175,7 @@ Accept wildcard characters: False
 Date/time when this PFX certificate was last modified.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -189,7 +190,7 @@ Accept wildcard characters: False
 Supported values for the padding scheme used by encryption provider.
 
 ```yaml
-Type: System.String
+Type: UserPfxPaddingScheme
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -204,7 +205,7 @@ Accept wildcard characters: False
 Crypto provider used to encrypt this blob.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -219,7 +220,7 @@ Accept wildcard characters: False
 Certificate's validity start date/time.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -234,7 +235,7 @@ Accept wildcard characters: False
 SHA-1 thumbprint of the PFX certificate.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -249,7 +250,7 @@ Accept wildcard characters: False
 User Principal Name of the PFX certificate.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -264,7 +265,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -280,7 +281,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -297,11 +298,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserPfxCertificate
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserPfxCertificate
-
 ## NOTES
 
 ALIASES
@@ -328,4 +327,3 @@ BODYPARAMETER <IMicrosoftGraphUserPfxCertificate>: Entity that encapsulates all 
   - `[UserPrincipalName <String>]`: User Principal Name of the PFX certificate.
 
 ## RELATED LINKS
-

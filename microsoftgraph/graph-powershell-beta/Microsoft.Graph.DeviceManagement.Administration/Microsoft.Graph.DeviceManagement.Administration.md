@@ -51,25 +51,13 @@ The available group policy categories for this account.
 ### [Get-MgDeviceManagementGroupPolicyCategoryChild](Get-MgDeviceManagementGroupPolicyCategoryChild.md)
 The children categories
 
-### [Get-MgDeviceManagementGroupPolicyCategoryChildByRef](Get-MgDeviceManagementGroupPolicyCategoryChildByRef.md)
-The children categories
-
 ### [Get-MgDeviceManagementGroupPolicyCategoryDefinition](Get-MgDeviceManagementGroupPolicyCategoryDefinition.md)
-The immediate GroupPolicyDefinition children of the category
-
-### [Get-MgDeviceManagementGroupPolicyCategoryDefinitionByRef](Get-MgDeviceManagementGroupPolicyCategoryDefinitionByRef.md)
 The immediate GroupPolicyDefinition children of the category
 
 ### [Get-MgDeviceManagementGroupPolicyCategoryDefinitionFile](Get-MgDeviceManagementGroupPolicyCategoryDefinitionFile.md)
 The id of the definition file the category came from
 
-### [Get-MgDeviceManagementGroupPolicyCategoryDefinitionFileByRef](Get-MgDeviceManagementGroupPolicyCategoryDefinitionFileByRef.md)
-The id of the definition file the category came from
-
 ### [Get-MgDeviceManagementGroupPolicyCategoryParent](Get-MgDeviceManagementGroupPolicyCategoryParent.md)
-The parent category
-
-### [Get-MgDeviceManagementGroupPolicyCategoryParentByRef](Get-MgDeviceManagementGroupPolicyCategoryParentByRef.md)
 The parent category
 
 ### [Get-MgDeviceManagementGroupPolicyDefinition](Get-MgDeviceManagementGroupPolicyDefinition.md)
@@ -78,19 +66,10 @@ The available group policy definitions for this account.
 ### [Get-MgDeviceManagementGroupPolicyDefinitionCategory](Get-MgDeviceManagementGroupPolicyDefinitionCategory.md)
 The group policy category associated with the definition.
 
-### [Get-MgDeviceManagementGroupPolicyDefinitionCategoryByRef](Get-MgDeviceManagementGroupPolicyDefinitionCategoryByRef.md)
-The group policy category associated with the definition.
-
-### [Get-MgDeviceManagementGroupPolicyDefinitionDefinitionFileByRef](Get-MgDeviceManagementGroupPolicyDefinitionDefinitionFileByRef.md)
-The group policy file associated with the definition.
-
 ### [Get-MgDeviceManagementGroupPolicyDefinitionFile](Get-MgDeviceManagementGroupPolicyDefinitionFile.md)
 The available group policy definition files for this account.
 
 ### [Get-MgDeviceManagementGroupPolicyDefinitionFileDefinition](Get-MgDeviceManagementGroupPolicyDefinitionFileDefinition.md)
-The group policy definitions associated with the file.
-
-### [Get-MgDeviceManagementGroupPolicyDefinitionFileDefinitionByRef](Get-MgDeviceManagementGroupPolicyDefinitionFileDefinitionByRef.md)
 The group policy definitions associated with the file.
 
 ### [Get-MgDeviceManagementGroupPolicyDefinitionNextVersionDefinition](Get-MgDeviceManagementGroupPolicyDefinitionNextVersionDefinition.md)
@@ -100,9 +79,6 @@ Definition of the next version of this definition
 The group policy presentations associated with the definition.
 
 ### [Get-MgDeviceManagementGroupPolicyDefinitionPresentationDefinition](Get-MgDeviceManagementGroupPolicyDefinitionPresentationDefinition.md)
-The group policy definition associated with the presentation.
-
-### [Get-MgDeviceManagementGroupPolicyDefinitionPresentationDefinitionByRef](Get-MgDeviceManagementGroupPolicyDefinitionPresentationDefinitionByRef.md)
 The group policy definition associated with the presentation.
 
 ### [Get-MgDeviceManagementGroupPolicyDefinitionPreviouVersionDefinition](Get-MgDeviceManagementGroupPolicyDefinitionPreviouVersionDefinition.md)
@@ -156,9 +132,6 @@ The Role Assignments.
 ### [Get-MgDeviceManagementRoleAssignmentRoleScopeTag](Get-MgDeviceManagementRoleAssignmentRoleScopeTag.md)
 The set of Role Scope Tags defined on the Role Assignment.
 
-### [Get-MgDeviceManagementRoleAssignmentRoleScopeTagByRef](Get-MgDeviceManagementRoleAssignmentRoleScopeTagByRef.md)
-The set of Role Scope Tags defined on the Role Assignment.
-
 ### [Get-MgDeviceManagementRoleDefinition](Get-MgDeviceManagementRoleDefinition.md)
 The Role Definitions.
 
@@ -166,9 +139,6 @@ The Role Definitions.
 List of Role assignments for this role definition.
 
 ### [Get-MgDeviceManagementRoleDefinitionRoleAssignmentRoleDefinition](Get-MgDeviceManagementRoleDefinitionRoleAssignmentRoleDefinition.md)
-Role definition this assignment is part of.
-
-### [Get-MgDeviceManagementRoleDefinitionRoleAssignmentRoleDefinitionByRef](Get-MgDeviceManagementRoleDefinitionRoleAssignmentRoleDefinitionByRef.md)
 Role definition this assignment is part of.
 
 ### [Get-MgDeviceManagementRoleScopeTag](Get-MgDeviceManagementRoleScopeTag.md)
@@ -189,9 +159,6 @@ The list of acceptance statuses for this T&C policy.
 ### [Get-MgDeviceManagementTermAndConditionAcceptanceStatusesTermAndCondition](Get-MgDeviceManagementTermAndConditionAcceptanceStatusesTermAndCondition.md)
 Navigation link to the terms and conditions that are assigned.
 
-### [Get-MgDeviceManagementTermAndConditionAcceptanceStatusesTermAndConditionByRef](Get-MgDeviceManagementTermAndConditionAcceptanceStatusesTermAndConditionByRef.md)
-Navigation link to the terms and conditions that are assigned.
-
 ### [Get-MgDeviceManagementTermAndConditionAssignment](Get-MgDeviceManagementTermAndConditionAssignment.md)
 The list of assignments for this T&C policy.
 
@@ -199,9 +166,6 @@ The list of assignments for this T&C policy.
 The list of group assignments for this T&C policy.
 
 ### [Get-MgDeviceManagementTermAndConditionGroupAssignmentTermAndCondition](Get-MgDeviceManagementTermAndConditionGroupAssignmentTermAndCondition.md)
-Navigation link to the terms and conditions that are assigned.
-
-### [Get-MgDeviceManagementTermAndConditionGroupAssignmentTermAndConditionByRef](Get-MgDeviceManagementTermAndConditionGroupAssignmentTermAndConditionByRef.md)
 Navigation link to the terms and conditions that are assigned.
 
 ### [Get-MgDeviceManagementUserPfxCertificate](Get-MgDeviceManagementUserPfxCertificate.md)
@@ -284,20 +248,11 @@ The list of Exchange On Premisis policies configured by the tenant.
 ### [New-MgDeviceManagementGroupPolicyCategory](New-MgDeviceManagementGroupPolicyCategory.md)
 The available group policy categories for this account.
 
-### [New-MgDeviceManagementGroupPolicyCategoryChildByRef](New-MgDeviceManagementGroupPolicyCategoryChildByRef.md)
-The children categories
-
-### [New-MgDeviceManagementGroupPolicyCategoryDefinitionByRef](New-MgDeviceManagementGroupPolicyCategoryDefinitionByRef.md)
-The immediate GroupPolicyDefinition children of the category
-
 ### [New-MgDeviceManagementGroupPolicyDefinition](New-MgDeviceManagementGroupPolicyDefinition.md)
 The available group policy definitions for this account.
 
 ### [New-MgDeviceManagementGroupPolicyDefinitionFile](New-MgDeviceManagementGroupPolicyDefinitionFile.md)
 The available group policy definition files for this account.
-
-### [New-MgDeviceManagementGroupPolicyDefinitionFileDefinitionByRef](New-MgDeviceManagementGroupPolicyDefinitionFileDefinitionByRef.md)
-The group policy definitions associated with the file.
 
 ### [New-MgDeviceManagementGroupPolicyDefinitionPresentation](New-MgDeviceManagementGroupPolicyDefinitionPresentation.md)
 The group policy presentations associated with the definition.
@@ -343,9 +298,6 @@ The Resource Operations.
 
 ### [New-MgDeviceManagementRoleAssignment](New-MgDeviceManagementRoleAssignment.md)
 The Role Assignments.
-
-### [New-MgDeviceManagementRoleAssignmentRoleScopeTagByRef](New-MgDeviceManagementRoleAssignmentRoleScopeTagByRef.md)
-The set of Role Scope Tags defined on the Role Assignment.
 
 ### [New-MgDeviceManagementRoleDefinition](New-MgDeviceManagementRoleDefinition.md)
 The Role Definitions.
@@ -449,20 +401,8 @@ On premises conditional access will require devices to be both enrolled and comp
 ### [Remove-MgDeviceManagementGroupPolicyCategory](Remove-MgDeviceManagementGroupPolicyCategory.md)
 The available group policy categories for this account.
 
-### [Remove-MgDeviceManagementGroupPolicyCategoryDefinitionFileByRef](Remove-MgDeviceManagementGroupPolicyCategoryDefinitionFileByRef.md)
-The id of the definition file the category came from
-
-### [Remove-MgDeviceManagementGroupPolicyCategoryParentByRef](Remove-MgDeviceManagementGroupPolicyCategoryParentByRef.md)
-The parent category
-
 ### [Remove-MgDeviceManagementGroupPolicyDefinition](Remove-MgDeviceManagementGroupPolicyDefinition.md)
 The available group policy definitions for this account.
-
-### [Remove-MgDeviceManagementGroupPolicyDefinitionCategoryByRef](Remove-MgDeviceManagementGroupPolicyDefinitionCategoryByRef.md)
-The group policy category associated with the definition.
-
-### [Remove-MgDeviceManagementGroupPolicyDefinitionDefinitionFileByRef](Remove-MgDeviceManagementGroupPolicyDefinitionDefinitionFileByRef.md)
-The group policy file associated with the definition.
 
 ### [Remove-MgDeviceManagementGroupPolicyDefinitionFile](Remove-MgDeviceManagementGroupPolicyDefinitionFile.md)
 The available group policy definition files for this account.
@@ -472,9 +412,6 @@ Definition of the next version of this definition
 
 ### [Remove-MgDeviceManagementGroupPolicyDefinitionPresentation](Remove-MgDeviceManagementGroupPolicyDefinitionPresentation.md)
 The group policy presentations associated with the definition.
-
-### [Remove-MgDeviceManagementGroupPolicyDefinitionPresentationDefinitionByRef](Remove-MgDeviceManagementGroupPolicyDefinitionPresentationDefinitionByRef.md)
-The group policy definition associated with the presentation.
 
 ### [Remove-MgDeviceManagementGroupPolicyDefinitionPreviouVersionDefinition](Remove-MgDeviceManagementGroupPolicyDefinitionPreviouVersionDefinition.md)
 Definition of the previous version of this definition
@@ -527,9 +464,6 @@ The Role Definitions.
 ### [Remove-MgDeviceManagementRoleDefinitionRoleAssignment](Remove-MgDeviceManagementRoleDefinitionRoleAssignment.md)
 List of Role assignments for this role definition.
 
-### [Remove-MgDeviceManagementRoleDefinitionRoleAssignmentRoleDefinitionByRef](Remove-MgDeviceManagementRoleDefinitionRoleAssignmentRoleDefinitionByRef.md)
-Role definition this assignment is part of.
-
 ### [Remove-MgDeviceManagementRoleScopeTag](Remove-MgDeviceManagementRoleScopeTag.md)
 The Role Scope Tags.
 
@@ -545,17 +479,11 @@ The terms and conditions associated with device management of the company.
 ### [Remove-MgDeviceManagementTermAndConditionAcceptanceStatuses](Remove-MgDeviceManagementTermAndConditionAcceptanceStatuses.md)
 The list of acceptance statuses for this T&C policy.
 
-### [Remove-MgDeviceManagementTermAndConditionAcceptanceStatusesTermAndConditionByRef](Remove-MgDeviceManagementTermAndConditionAcceptanceStatusesTermAndConditionByRef.md)
-Navigation link to the terms and conditions that are assigned.
-
 ### [Remove-MgDeviceManagementTermAndConditionAssignment](Remove-MgDeviceManagementTermAndConditionAssignment.md)
 The list of assignments for this T&C policy.
 
 ### [Remove-MgDeviceManagementTermAndConditionGroupAssignment](Remove-MgDeviceManagementTermAndConditionGroupAssignment.md)
 The list of group assignments for this T&C policy.
-
-### [Remove-MgDeviceManagementTermAndConditionGroupAssignmentTermAndConditionByRef](Remove-MgDeviceManagementTermAndConditionGroupAssignmentTermAndConditionByRef.md)
-Navigation link to the terms and conditions that are assigned.
 
 ### [Remove-MgDeviceManagementUserPfxCertificate](Remove-MgDeviceManagementUserPfxCertificate.md)
 Collection of PFX certificates associated with a user.
@@ -597,30 +525,6 @@ Cloud PC user settings.
 Represents the set of Microsoft 365 groups and security groups in Azure AD that have cloudPCUserSetting assigned.
 Returned only on $expand.
 For an example, see Get cloudPcUserSettingample.
-
-### [Set-MgDeviceManagementGroupPolicyCategoryDefinitionFileByRef](Set-MgDeviceManagementGroupPolicyCategoryDefinitionFileByRef.md)
-The id of the definition file the category came from
-
-### [Set-MgDeviceManagementGroupPolicyCategoryParentByRef](Set-MgDeviceManagementGroupPolicyCategoryParentByRef.md)
-The parent category
-
-### [Set-MgDeviceManagementGroupPolicyDefinitionCategoryByRef](Set-MgDeviceManagementGroupPolicyDefinitionCategoryByRef.md)
-The group policy category associated with the definition.
-
-### [Set-MgDeviceManagementGroupPolicyDefinitionDefinitionFileByRef](Set-MgDeviceManagementGroupPolicyDefinitionDefinitionFileByRef.md)
-The group policy file associated with the definition.
-
-### [Set-MgDeviceManagementGroupPolicyDefinitionPresentationDefinitionByRef](Set-MgDeviceManagementGroupPolicyDefinitionPresentationDefinitionByRef.md)
-The group policy definition associated with the presentation.
-
-### [Set-MgDeviceManagementRoleDefinitionRoleAssignmentRoleDefinitionByRef](Set-MgDeviceManagementRoleDefinitionRoleAssignmentRoleDefinitionByRef.md)
-Role definition this assignment is part of.
-
-### [Set-MgDeviceManagementTermAndConditionAcceptanceStatusesTermAndConditionByRef](Set-MgDeviceManagementTermAndConditionAcceptanceStatusesTermAndConditionByRef.md)
-Navigation link to the terms and conditions that are assigned.
-
-### [Set-MgDeviceManagementTermAndConditionGroupAssignmentTermAndConditionByRef](Set-MgDeviceManagementTermAndConditionGroupAssignmentTermAndConditionByRef.md)
-Navigation link to the terms and conditions that are assigned.
 
 ### [Update-MgDeviceManagementApplePushNotificationCertificate](Update-MgDeviceManagementApplePushNotificationCertificate.md)
 Apple push notification certificate.
