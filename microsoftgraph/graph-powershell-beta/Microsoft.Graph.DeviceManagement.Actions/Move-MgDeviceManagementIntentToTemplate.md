@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/move-mgdevicemanagementintenttotemplate
 schema: 2.0.0
@@ -15,28 +15,28 @@ Invoke action migrateToTemplate
 ### MigrateExpanded (Default)
 ```
 Move-MgDeviceManagementIntentToTemplate -DeviceManagementIntentId <String> [-AdditionalProperties <Hashtable>]
- [-NewTemplateId <String>] [-PreserveCustomValues] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-NewTemplateId <String>] [-PreserveCustomValues] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Migrate
 ```
 Move-MgDeviceManagementIntentToTemplate -DeviceManagementIntentId <String>
  -BodyParameter <IPaths1S6He5TDevicemanagementIntentsDevicemanagementintentIdMicrosoftGraphMigratetotemplatePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### MigrateViaIdentityExpanded
-```
-Move-MgDeviceManagementIntentToTemplate -InputObject <IDeviceManagementActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-NewTemplateId <String>] [-PreserveCustomValues] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### MigrateViaIdentity
 ```
 Move-MgDeviceManagementIntentToTemplate -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths1S6He5TDevicemanagementIntentsDevicemanagementintentIdMicrosoftGraphMigratetotemplatePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### MigrateViaIdentityExpanded
+```
+Move-MgDeviceManagementIntentToTemplate -InputObject <IDeviceManagementActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-NewTemplateId <String>] [-PreserveCustomValues] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -50,7 +50,7 @@ Invoke action migrateToTemplate
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: MigrateExpanded, MigrateViaIdentityExpanded
 Aliases:
 
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1S6He5TDevicemanagementIntentsDevicemanagementintentIdMicrosoftGraphMigratetotemplatePostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths1S6He5TDevicemanagementIntentsDevicemanagementintentIdMicrosoftGraphMigratetotemplatePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Migrate, MigrateViaIdentity
 Aliases:
 
@@ -81,8 +81,8 @@ Accept wildcard characters: False
 key: id of deviceManagementIntent
 
 ```yaml
-Type: String
-Parameter Sets: MigrateExpanded, Migrate
+Type: System.String
+Parameter Sets: Migrate, MigrateExpanded
 Aliases:
 
 Required: True
@@ -97,8 +97,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementActionsIdentity
-Parameter Sets: MigrateViaIdentityExpanded, MigrateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
+Parameter Sets: MigrateViaIdentity, MigrateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: MigrateExpanded, MigrateViaIdentityExpanded
 Aliases:
 
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: MigrateExpanded, MigrateViaIdentityExpanded
 Aliases:
 
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -173,7 +173,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -190,10 +190,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IPaths1S6He5TDevicemanagementIntentsDevicemanagementintentIdMicrosoftGraphMigratetotemplatePostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -264,3 +267,4 @@ INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[WindowsQualityUpdateProfileId <String>]`: key: id of windowsQualityUpdateProfile
 
 ## RELATED LINKS
+

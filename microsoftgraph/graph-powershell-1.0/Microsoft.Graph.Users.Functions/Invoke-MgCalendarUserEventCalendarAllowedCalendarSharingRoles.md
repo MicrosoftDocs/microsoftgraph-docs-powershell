@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Users.Functions-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/invoke-mgcalendarusereventcalendarallowedcalendarsharingroles
 schema: 2.0.0
@@ -14,8 +14,8 @@ Invoke function allowedCalendarSharingRoles
 
 ### Calendar1 (Default)
 ```
-Invoke-MgCalendarUserEventCalendarAllowedCalendarSharingRoles -EventId <String> -User <String> -UserId <String>
- [<CommonParameters>]
+Invoke-MgCalendarUserEventCalendarAllowedCalendarSharingRoles -EventId <String> -User <String>
+ -UserId <String> [<CommonParameters>]
 ```
 
 ### CalendarViaIdentity1
@@ -35,7 +35,7 @@ Invoke function allowedCalendarSharingRoles
 key: id of event
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Calendar1
 Aliases:
 
@@ -51,7 +51,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersFunctionsIdentity
+Type: Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
 Parameter Sets: CalendarViaIdentity1
 Aliases:
 
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 Usage: User={User}
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Calendar1
 Aliases:
 
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Calendar1
 Aliases:
 
@@ -98,9 +98,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
+
 ## OUTPUTS
 
 ### System.String
+
 ## NOTES
 
 ALIASES
@@ -147,3 +149,4 @@ INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   - `[ValuesOnly <Boolean?>]`: Usage: valuesOnly={valuesOnly}
 
 ## RELATED LINKS
+

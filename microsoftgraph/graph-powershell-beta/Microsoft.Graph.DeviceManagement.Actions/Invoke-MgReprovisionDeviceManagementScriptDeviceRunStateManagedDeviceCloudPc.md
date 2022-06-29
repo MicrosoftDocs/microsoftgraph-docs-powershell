@@ -1,32 +1,32 @@
-﻿---
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgreenabledevicemanagementscriptdevicerunstatemanageddevice
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgreprovisiondevicemanagementscriptdevicerunstatemanageddevicecloudpc
 schema: 2.0.0
 ---
 
-# Invoke-MgReenableDeviceManagementScriptDeviceRunStateManagedDevice
+# Invoke-MgReprovisionDeviceManagementScriptDeviceRunStateManagedDeviceCloudPc
 
 ## SYNOPSIS
-Invoke action reenable
+Invoke action reprovisionCloudPc
 
 ## SYNTAX
 
-### Reenable (Default)
+### Cloud (Default)
 ```
-Invoke-MgReenableDeviceManagementScriptDeviceRunStateManagedDevice
- -DeviceManagementScriptDeviceStateId <String> -DeviceManagementScriptId <String> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Invoke-MgReprovisionDeviceManagementScriptDeviceRunStateManagedDeviceCloudPc
+ -DeviceManagementScriptDeviceStateId <String> -DeviceManagementScriptId <String> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
-### ReenableViaIdentity
+### CloudViaIdentity
 ```
-Invoke-MgReenableDeviceManagementScriptDeviceRunStateManagedDevice
- -InputObject <IDeviceManagementActionsIdentity> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgReprovisionDeviceManagementScriptDeviceRunStateManagedDeviceCloudPc
+ -InputObject <IDeviceManagementActionsIdentity> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action reenable
+Invoke action reprovisionCloudPc
 
 ## EXAMPLES
 
@@ -36,8 +36,8 @@ Invoke action reenable
 key: id of deviceManagementScriptDeviceState
 
 ```yaml
-Type: String
-Parameter Sets: Reenable
+Type: System.String
+Parameter Sets: Cloud
 Aliases:
 
 Required: True
@@ -51,8 +51,8 @@ Accept wildcard characters: False
 key: id of deviceManagementScript
 
 ```yaml
-Type: String
-Parameter Sets: Reenable
+Type: System.String
+Parameter Sets: Cloud
 Aliases:
 
 Required: True
@@ -67,8 +67,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementActionsIdentity
-Parameter Sets: ReenableViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
+Parameter Sets: CloudViaIdentity
 Aliases:
 
 Required: True
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -113,7 +113,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -130,12 +130,16 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
+
+### Invoke-MgCloudDeviceManagementScriptDeviceRunStateManagedDevice
 
 COMPLEX PARAMETER PROPERTIES
 
@@ -198,3 +202,4 @@ INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[WindowsQualityUpdateProfileId <String>]`: key: id of windowsQualityUpdateProfile
 
 ## RELATED LINKS
+

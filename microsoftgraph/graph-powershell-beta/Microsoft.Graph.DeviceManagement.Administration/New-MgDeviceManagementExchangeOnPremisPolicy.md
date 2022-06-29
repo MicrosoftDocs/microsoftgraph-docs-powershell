@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementexchangeonpremispolicy
 schema: 2.0.0
@@ -19,13 +19,13 @@ New-MgDeviceManagementExchangeOnPremisPolicy
  [-ConditionalAccessSettings <IMicrosoftGraphOnPremisesConditionalAccessSettings>]
  [-DefaultAccessLevel <String>] [-Id <String>]
  [-KnownDeviceClasses <IMicrosoftGraphDeviceManagementExchangeDeviceClass[]>]
- [-NotificationContentInputFile <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-NotificationContentInputFile <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementExchangeOnPremisPolicy
- -BodyParameter <IMicrosoftGraphDeviceManagementExchangeOnPremisesPolicy> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphDeviceManagementExchangeOnPremisesPolicy> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -42,7 +42,7 @@ The access rules apply globally to the entire Exchange organization
 To construct, please use Get-Help -Online and see NOTES section for ACCESSRULES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementExchangeAccessRule[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementExchangeAccessRule[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -73,7 +73,7 @@ Singleton entity which represents the Exchange OnPremises policy configured for 
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementExchangeOnPremisesPolicy
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementExchangeOnPremisesPolicy
 Parameter Sets: Create
 Aliases:
 
@@ -89,7 +89,7 @@ Singleton entity which represents the Exchange OnPremises Conditional Access Set
 To construct, please use Get-Help -Online and see NOTES section for CONDITIONALACCESSSETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOnPremisesConditionalAccessSettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnPremisesConditionalAccessSettings
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 Access Level in Exchange.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -135,7 +135,7 @@ The list of device classes known to Exchange
 To construct, please use Get-Help -Online and see NOTES section for KNOWNDEVICECLASSES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementExchangeDeviceClass[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementExchangeDeviceClass[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -151,7 +151,7 @@ Input File for NotificationContent (Notification text that will be sent to users
 This is UTF8 encoded byte array HTML.)
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -182,7 +182,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -199,9 +199,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementExchangeOnPremisesPolicy
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementExchangeOnPremisesPolicy
+
 ## NOTES
 
 ALIASES
@@ -251,3 +253,4 @@ KNOWNDEVICECLASSES <IMicrosoftGraphDeviceManagementExchangeDeviceClass[]>: The l
   - `[Type <String>]`: Criteria which defines the type of device this access rule will apply to
 
 ## RELATED LINKS
+

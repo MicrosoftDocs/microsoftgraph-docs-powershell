@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgscandevicemanagementdeviceshellscriptdevicerunstatemanageddevicewindowdefender
 schema: 2.0.0
@@ -16,7 +16,7 @@ Invoke action windowsDefenderScan
 ```
 Invoke-MgScanDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceWindowDefender
  -DeviceManagementScriptDeviceStateId <String> -DeviceShellScriptId <String>
- [-AdditionalProperties <Hashtable>] [-QuickScan] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-QuickScan] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Scan
@@ -24,14 +24,7 @@ Invoke-MgScanDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceWindowD
 Invoke-MgScanDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceWindowDefender
  -DeviceManagementScriptDeviceStateId <String> -DeviceShellScriptId <String>
  -BodyParameter <IPaths1Mtr2IDevicemanagementDeviceshellscriptsDeviceshellscriptIdDevicerunstatesDevicemanagementscriptdevicestateIdManageddeviceMicrosoftGraphWindowsdefenderscanPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### ScanViaIdentityExpanded
-```
-Invoke-MgScanDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceWindowDefender
- -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>] [-QuickScan] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ScanViaIdentity
@@ -39,7 +32,14 @@ Invoke-MgScanDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceWindowD
 Invoke-MgScanDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceWindowDefender
  -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths1Mtr2IDevicemanagementDeviceshellscriptsDeviceshellscriptIdDevicerunstatesDevicemanagementscriptdevicestateIdManageddeviceMicrosoftGraphWindowsdefenderscanPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ScanViaIdentityExpanded
+```
+Invoke-MgScanDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceWindowDefender
+ -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>] [-QuickScan] [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,7 +53,7 @@ Invoke action windowsDefenderScan
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ScanExpanded, ScanViaIdentityExpanded
 Aliases:
 
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Mtr2IDevicemanagementDeviceshellscriptsDeviceshellscriptIdDevicerunstatesDevicemanagementscriptdevicestateIdManageddeviceMicrosoftGraphWindowsdefenderscanPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths1Mtr2IDevicemanagementDeviceshellscriptsDeviceshellscriptIdDevicerunstatesDevicemanagementscriptdevicestateIdManageddeviceMicrosoftGraphWindowsdefenderscanPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Scan, ScanViaIdentity
 Aliases:
 
@@ -84,8 +84,8 @@ Accept wildcard characters: False
 key: id of deviceManagementScriptDeviceState
 
 ```yaml
-Type: String
-Parameter Sets: ScanExpanded, Scan
+Type: System.String
+Parameter Sets: Scan, ScanExpanded
 Aliases:
 
 Required: True
@@ -99,8 +99,8 @@ Accept wildcard characters: False
 key: id of deviceShellScript
 
 ```yaml
-Type: String
-Parameter Sets: ScanExpanded, Scan
+Type: System.String
+Parameter Sets: Scan, ScanExpanded
 Aliases:
 
 Required: True
@@ -115,8 +115,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementActionsIdentity
-Parameter Sets: ScanViaIdentityExpanded, ScanViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
+Parameter Sets: ScanViaIdentity, ScanViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: ScanExpanded, ScanViaIdentityExpanded
 Aliases:
 
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -176,7 +176,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -193,10 +193,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IPaths1Mtr2IDevicemanagementDeviceshellscriptsDeviceshellscriptIdDevicerunstatesDevicemanagementscriptdevicestateIdManageddeviceMicrosoftGraphWindowsdefenderscanPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -266,3 +269,4 @@ INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[WindowsQualityUpdateProfileId <String>]`: key: id of windowsQualityUpdateProfile
 
 ## RELATED LINKS
+

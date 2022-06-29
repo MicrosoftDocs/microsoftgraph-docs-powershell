@@ -1,59 +1,58 @@
-﻿---
-external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgusermobileapptroubleshootingeventapplogcollectionrequest
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/set-mgdeviceappmgtmobileappuserstatusesdevicestatusesappbyref
 schema: 2.0.0
 ---
 
-# Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest
+# Set-MgDeviceAppMgtMobileAppUserStatusesDeviceStatusesAppByRef
 
 ## SYNOPSIS
-The collection property of AppLogUploadRequest.
+The navigation link to the mobile app.
 
 ## SYNTAX
 
-### Delete (Default)
+### SetExpanded (Default)
 ```
-Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest -AppLogCollectionRequestId <String>
- -MobileAppTroubleshootingEventId <String> -UserId <String> [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Set-MgDeviceAppMgtMobileAppUserStatusesDeviceStatusesAppByRef -MobileAppId <String>
+ -MobileAppInstallStatusId <String> -UserAppInstallStatusId <String> [-AdditionalProperties <Hashtable>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity
+### Set
 ```
-Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest
- -InputObject <IDevicesCorporateManagementIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Set-MgDeviceAppMgtMobileAppUserStatusesDeviceStatusesAppByRef -MobileAppId <String>
+ -MobileAppInstallStatusId <String> -UserAppInstallStatusId <String> -BodyParameter <Hashtable> [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### SetViaIdentity
+```
+Set-MgDeviceAppMgtMobileAppUserStatusesDeviceStatusesAppByRef
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <Hashtable> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
+```
+
+### SetViaIdentityExpanded
+```
+Set-MgDeviceAppMgtMobileAppUserStatusesDeviceStatusesAppByRef
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The collection property of AppLogUploadRequest.
+The navigation link to the mobile app.
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AppLogCollectionRequestId
-key: id of appLogCollectionRequest
+### -AdditionalProperties
+Additional Parameters
 
 ```yaml
-Type: String
-Parameter Sets: Delete
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -IfMatch
-ETag
-
-```yaml
-Type: String
-Parameter Sets: (All)
+Type: System.Collections.Hashtable
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -63,13 +62,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -BodyParameter
+.
 
 ```yaml
-Type: IDevicesCorporateManagementIdentity
-Parameter Sets: DeleteViaIdentity
+Type: System.Collections.Hashtable
+Parameter Sets: Set, SetViaIdentity
 Aliases:
 
 Required: True
@@ -79,12 +77,43 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -MobileAppTroubleshootingEventId
-key: id of mobileAppTroubleshootingEvent
+### -InputObject
+Identity Parameter
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: String
-Parameter Sets: Delete
+Type: Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
+Parameter Sets: SetViaIdentity, SetViaIdentityExpanded
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -MobileAppId
+key: id of mobileApp
+
+```yaml
+Type: System.String
+Parameter Sets: Set, SetExpanded
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MobileAppInstallStatusId
+key: id of mobileAppInstallStatus
+
+```yaml
+Type: System.String
+Parameter Sets: Set, SetExpanded
 Aliases:
 
 Required: True
@@ -98,7 +127,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -109,12 +138,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -UserId
-key: id of user
+### -UserAppInstallStatusId
+key: id of userAppInstallStatus
 
 ```yaml
-Type: String
-Parameter Sets: Delete
+Type: System.String
+Parameter Sets: Set, SetExpanded
 Aliases:
 
 Required: True
@@ -128,7 +157,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -144,7 +173,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -161,12 +190,18 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
+
+### System.Collections.Hashtable
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
+
+### Set-MgDeviceAppManagementMobileAppUserStatusesDeviceStatusesGraphRefApp
 
 COMPLEX PARAMETER PROPERTIES
 
@@ -241,3 +276,4 @@ INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   - `[WindowsInformationProtectionWipeActionId <String>]`: key: id of windowsInformationProtectionWipeAction
 
 ## RELATED LINKS
+

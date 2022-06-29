@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Financials-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Financials
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.financials/invoke-mgfinancialcompanyjournal
 schema: 2.0.0
@@ -14,13 +14,13 @@ Invoke action post
 
 ### Post (Default)
 ```
-Invoke-MgFinancialCompanyJournal -CompanyId <String> -JournalId <String> [-PassThru] [-WhatIf] [-Confirm]
+Invoke-MgFinancialCompanyJournal -CompanyId <String> -JournalId <String> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### PostViaIdentity
 ```
-Invoke-MgFinancialCompanyJournal -InputObject <IFinancialsIdentity> [-PassThru] [-WhatIf] [-Confirm]
+Invoke-MgFinancialCompanyJournal -InputObject <IFinancialsIdentity> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -35,7 +35,7 @@ Invoke action post
 key: id of company
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Post
 Aliases:
 
@@ -51,7 +51,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFinancialsIdentity
+Type: Microsoft.Graph.PowerShell.Models.IFinancialsIdentity
 Parameter Sets: PostViaIdentity
 Aliases:
 
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 key: id of journal
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Post
 Aliases:
 
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -112,7 +112,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -129,9 +129,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFinancialsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -180,3 +182,4 @@ INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
   - `[VendorId <String>]`: key: id of vendor
 
 ## RELATED LINKS
+

@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions/confirm-mgdevicemanagementwindowenrollmentautodiscovery
 schema: 2.0.0
@@ -34,7 +34,7 @@ Invoke function verifyWindowsEnrollmentAutoDiscovery
 Usage: domainName={domainName}
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Verify1
 Aliases:
 
@@ -50,7 +50,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementFunctionsIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementFunctionsIdentity
 Parameter Sets: VerifyViaIdentity1
 Aliases:
 
@@ -67,9 +67,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementFunctionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -117,3 +119,4 @@ INPUTOBJECT <IDeviceManagementFunctionsIdentity>: Identity Parameter
   - `[Userid <String>]`: Usage: userid={userid}
 
 ## RELATED LINKS
+

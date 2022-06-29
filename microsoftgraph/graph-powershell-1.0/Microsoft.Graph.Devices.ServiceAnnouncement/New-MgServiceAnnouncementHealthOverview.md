@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.serviceannouncement/new-mgserviceannouncementhealthoverview
 schema: 2.0.0
@@ -16,13 +16,13 @@ This property is a contained navigation property, it is nullable and readonly.
 ### CreateExpanded1 (Default)
 ```
 New-MgServiceAnnouncementHealthOverview [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Issues <IMicrosoftGraphServiceHealthIssue[]>] [-Service <String>] [-Status <String>] [-WhatIf] [-Confirm]
+ [-Issues <IMicrosoftGraphServiceHealthIssue[]>] [-Service <String>] [-Status <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgServiceAnnouncementHealthOverview -BodyParameter <IMicrosoftGraphServiceHealth> [-WhatIf] [-Confirm]
+New-MgServiceAnnouncementHealthOverview -BodyParameter <IMicrosoftGraphServiceHealth> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -38,7 +38,7 @@ This property is a contained navigation property, it is nullable and readonly.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -54,7 +54,7 @@ serviceHealth
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphServiceHealth
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServiceHealth
 Parameter Sets: Create1
 Aliases:
 
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -85,7 +85,7 @@ A collection of issues that happened on the service, with detailed information f
 To construct, please use Get-Help -Online and see NOTES section for ISSUES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphServiceHealthIssue[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServiceHealthIssue[]
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -101,7 +101,7 @@ The service name.
 Use the list healthOverviews operation to get exact string names for services subscribed by the tenant.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 serviceHealthStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -147,7 +147,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -164,9 +164,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServiceHealth
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServiceHealth
+
 ## NOTES
 
 ALIASES
@@ -232,3 +234,4 @@ ISSUES <IMicrosoftGraphServiceHealthIssue[]>: A collection of issues that happen
   - `[Status <String>]`: serviceHealthStatus
 
 ## RELATED LINKS
+

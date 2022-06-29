@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Users.Actions-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgdeclineuserinsightusedresourcemicrosoftgraphschedulechangerequest
 schema: 2.0.0
@@ -15,7 +15,7 @@ Invoke action decline
 ### DeclineExpanded (Default)
 ```
 Invoke-MgDeclineUserInsightUsedResourceMicrosoftGraphScheduleChangeRequest -UsedInsightId <String>
- -UserId <String> [-AdditionalProperties <Hashtable>] [-Message <String>] [-PassThru] [-WhatIf] [-Confirm]
+ -UserId <String> [-AdditionalProperties <Hashtable>] [-Message <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -24,20 +24,22 @@ Invoke-MgDeclineUserInsightUsedResourceMicrosoftGraphScheduleChangeRequest -Used
 Invoke-MgDeclineUserInsightUsedResourceMicrosoftGraphScheduleChangeRequest -UsedInsightId <String>
  -UserId <String>
  -BodyParameter <IPaths198J79AUsersUserIdInsightsUsedUsedinsightIdResourceMicrosoftGraphSchedulechangerequestMicrosoftGraphDeclinePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### DeclineViaIdentityExpanded
-```
-Invoke-MgDeclineUserInsightUsedResourceMicrosoftGraphScheduleChangeRequest -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-Message <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### DeclineViaIdentity
 ```
-Invoke-MgDeclineUserInsightUsedResourceMicrosoftGraphScheduleChangeRequest -InputObject <IUsersActionsIdentity>
+Invoke-MgDeclineUserInsightUsedResourceMicrosoftGraphScheduleChangeRequest
+ -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths198J79AUsersUserIdInsightsUsedUsedinsightIdResourceMicrosoftGraphSchedulechangerequestMicrosoftGraphDeclinePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### DeclineViaIdentityExpanded
+```
+Invoke-MgDeclineUserInsightUsedResourceMicrosoftGraphScheduleChangeRequest
+ -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>] [-Message <String>] [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,7 +53,7 @@ Invoke action decline
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: DeclineExpanded, DeclineViaIdentityExpanded
 Aliases:
 
@@ -67,7 +69,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths198J79AUsersUserIdInsightsUsedUsedinsightIdResourceMicrosoftGraphSchedulechangerequestMicrosoftGraphDeclinePostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths198J79AUsersUserIdInsightsUsedUsedinsightIdResourceMicrosoftGraphSchedulechangerequestMicrosoftGraphDeclinePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Decline, DeclineViaIdentity
 Aliases:
 
@@ -83,8 +85,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: DeclineViaIdentityExpanded, DeclineViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: DeclineViaIdentity, DeclineViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -98,7 +100,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: DeclineExpanded, DeclineViaIdentityExpanded
 Aliases:
 
@@ -113,7 +115,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -128,8 +130,8 @@ Accept wildcard characters: False
 key: id of usedInsight
 
 ```yaml
-Type: String
-Parameter Sets: DeclineExpanded, Decline
+Type: System.String
+Parameter Sets: Decline, DeclineExpanded
 Aliases:
 
 Required: True
@@ -143,8 +145,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: DeclineExpanded, Decline
+Type: System.String
+Parameter Sets: Decline, DeclineExpanded
 Aliases:
 
 Required: True
@@ -158,7 +160,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -174,7 +176,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -191,10 +193,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths198J79AUsersUserIdInsightsUsedUsedinsightIdResourceMicrosoftGraphSchedulechangerequestMicrosoftGraphDeclinePostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -239,3 +244,4 @@ INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

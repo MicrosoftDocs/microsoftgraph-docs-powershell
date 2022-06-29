@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Users.Actions-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/merge-mguserinsightusedresourcemicrosoftgraphworkbookrange
 schema: 2.0.0
@@ -15,27 +15,27 @@ Invoke action merge
 ### MergeExpanded (Default)
 ```
 Merge-MgUserInsightUsedResourceMicrosoftGraphWorkbookRange -UsedInsightId <String> -UserId <String> [-Across]
- [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Merge
 ```
 Merge-MgUserInsightUsedResourceMicrosoftGraphWorkbookRange -UsedInsightId <String> -UserId <String>
  -BodyParameter <IPaths117AyikUsersUserIdInsightsUsedUsedinsightIdResourceMicrosoftGraphWorkbookrangeMicrosoftGraphMergePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### MergeViaIdentityExpanded
-```
-Merge-MgUserInsightUsedResourceMicrosoftGraphWorkbookRange -InputObject <IUsersActionsIdentity> [-Across]
- [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### MergeViaIdentity
 ```
 Merge-MgUserInsightUsedResourceMicrosoftGraphWorkbookRange -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths117AyikUsersUserIdInsightsUsedUsedinsightIdResourceMicrosoftGraphWorkbookrangeMicrosoftGraphMergePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### MergeViaIdentityExpanded
+```
+Merge-MgUserInsightUsedResourceMicrosoftGraphWorkbookRange -InputObject <IUsersActionsIdentity> [-Across]
+ [-AdditionalProperties <Hashtable>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,7 +49,7 @@ Invoke action merge
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: MergeExpanded, MergeViaIdentityExpanded
 Aliases:
 
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: MergeExpanded, MergeViaIdentityExpanded
 Aliases:
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths117AyikUsersUserIdInsightsUsedUsedinsightIdResourceMicrosoftGraphWorkbookrangeMicrosoftGraphMergePostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths117AyikUsersUserIdInsightsUsedUsedinsightIdResourceMicrosoftGraphWorkbookrangeMicrosoftGraphMergePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Merge, MergeViaIdentity
 Aliases:
 
@@ -96,8 +96,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: MergeViaIdentityExpanded, MergeViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: MergeViaIdentity, MergeViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -126,8 +126,8 @@ Accept wildcard characters: False
 key: id of usedInsight
 
 ```yaml
-Type: String
-Parameter Sets: MergeExpanded, Merge
+Type: System.String
+Parameter Sets: Merge, MergeExpanded
 Aliases:
 
 Required: True
@@ -141,8 +141,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: MergeExpanded, Merge
+Type: System.String
+Parameter Sets: Merge, MergeExpanded
 Aliases:
 
 Required: True
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -172,7 +172,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -189,10 +189,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths117AyikUsersUserIdInsightsUsedUsedinsightIdResourceMicrosoftGraphWorkbookrangeMicrosoftGraphMergePostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -237,3 +240,4 @@ INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

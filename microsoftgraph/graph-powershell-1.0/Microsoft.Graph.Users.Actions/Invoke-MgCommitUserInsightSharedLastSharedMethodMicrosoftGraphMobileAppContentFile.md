@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Users.Actions-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgcommituserinsightsharedlastsharedmethodmicrosoftgraphmobileappcontentfile
 schema: 2.0.0
@@ -15,8 +15,9 @@ Commits a file of a given app.
 ### CommitExpanded (Default)
 ```
 Invoke-MgCommitUserInsightSharedLastSharedMethodMicrosoftGraphMobileAppContentFile -SharedInsightId <String>
- -UserId <String> [-AdditionalProperties <Hashtable>] [-FileEncryptionInfo <IMicrosoftGraphFileEncryptionInfo>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -UserId <String> [-AdditionalProperties <Hashtable>]
+ [-FileEncryptionInfo <IMicrosoftGraphFileEncryptionInfo>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### Commit
@@ -24,15 +25,7 @@ Invoke-MgCommitUserInsightSharedLastSharedMethodMicrosoftGraphMobileAppContentFi
 Invoke-MgCommitUserInsightSharedLastSharedMethodMicrosoftGraphMobileAppContentFile -SharedInsightId <String>
  -UserId <String>
  -BodyParameter <IPathsJaif24UsersUserIdInsightsSharedSharedinsightIdLastsharedmethodMicrosoftGraphMobileappcontentfileMicrosoftGraphCommitPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CommitViaIdentityExpanded
-```
-Invoke-MgCommitUserInsightSharedLastSharedMethodMicrosoftGraphMobileAppContentFile
- -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-FileEncryptionInfo <IMicrosoftGraphFileEncryptionInfo>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CommitViaIdentity
@@ -40,7 +33,15 @@ Invoke-MgCommitUserInsightSharedLastSharedMethodMicrosoftGraphMobileAppContentFi
 Invoke-MgCommitUserInsightSharedLastSharedMethodMicrosoftGraphMobileAppContentFile
  -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsJaif24UsersUserIdInsightsSharedSharedinsightIdLastsharedmethodMicrosoftGraphMobileappcontentfileMicrosoftGraphCommitPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CommitViaIdentityExpanded
+```
+Invoke-MgCommitUserInsightSharedLastSharedMethodMicrosoftGraphMobileAppContentFile
+ -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-FileEncryptionInfo <IMicrosoftGraphFileEncryptionInfo>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -54,7 +55,7 @@ Commits a file of a given app.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CommitExpanded, CommitViaIdentityExpanded
 Aliases:
 
@@ -70,7 +71,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsJaif24UsersUserIdInsightsSharedSharedinsightIdLastsharedmethodMicrosoftGraphMobileappcontentfileMicrosoftGraphCommitPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPathsJaif24UsersUserIdInsightsSharedSharedinsightIdLastsharedmethodMicrosoftGraphMobileappcontentfileMicrosoftGraphCommitPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Commit, CommitViaIdentity
 Aliases:
 
@@ -86,7 +87,7 @@ Contains properties for file encryption information for the content version of a
 To construct, please use Get-Help -Online and see NOTES section for FILEENCRYPTIONINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphFileEncryptionInfo
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFileEncryptionInfo
 Parameter Sets: CommitExpanded, CommitViaIdentityExpanded
 Aliases:
 
@@ -102,8 +103,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: CommitViaIdentityExpanded, CommitViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: CommitViaIdentity, CommitViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -117,7 +118,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -132,8 +133,8 @@ Accept wildcard characters: False
 key: id of sharedInsight
 
 ```yaml
-Type: String
-Parameter Sets: CommitExpanded, Commit
+Type: System.String
+Parameter Sets: Commit, CommitExpanded
 Aliases:
 
 Required: True
@@ -147,8 +148,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: CommitExpanded, Commit
+Type: System.String
+Parameter Sets: Commit, CommitExpanded
 Aliases:
 
 Required: True
@@ -162,7 +163,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -178,7 +179,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -195,10 +196,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPathsJaif24UsersUserIdInsightsSharedSharedinsightIdLastsharedmethodMicrosoftGraphMobileappcontentfileMicrosoftGraphCommitPostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -261,3 +265,4 @@ INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

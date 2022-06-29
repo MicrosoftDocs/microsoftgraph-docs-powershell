@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/invoke-mgschedulerolemanagemententitlementmanagement
 schema: 2.0.0
@@ -35,7 +35,7 @@ Invoke function roleScheduleInstances
 Usage: appScopeId={appScopeId}
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Schedule
 Aliases:
 
@@ -50,7 +50,7 @@ Accept wildcard characters: False
 Usage: directoryScopeId={directoryScopeId}
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Schedule
 Aliases:
 
@@ -66,7 +66,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementEnrolmentIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementEnrolmentIdentity
 Parameter Sets: ScheduleViaIdentity
 Aliases:
 
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 Usage: principalId={principalId}
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Schedule
 Aliases:
 
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 Usage: roleDefinitionId={roleDefinitionId}
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Schedule
 Aliases:
 
@@ -113,9 +113,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementEnrolmentIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleScheduleInstanceBase
+
 ## NOTES
 
 ALIASES
@@ -166,3 +168,4 @@ INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: key: id of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+
