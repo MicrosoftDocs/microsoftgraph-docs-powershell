@@ -71,9 +71,6 @@ Gets diagnostics validation status for a given user.
 ### [Get-MgUserManagedAppPolicy](Get-MgUserManagedAppPolicy.md)
 Gets app restrictions for a given user.
 
-### [Get-MgUserManagedAppRegistrationUserId](Get-MgUserManagedAppRegistrationUserId.md)
-Invoke function getUserIdsWithFlaggedAppRegistration
-
 ### [Get-MgUserManagedDeviceCloudPcRemoteActionResult](Get-MgUserManagedDeviceCloudPcRemoteActionResult.md)
 Invoke function getCloudPcRemoteActionResults
 
@@ -115,30 +112,6 @@ Invoke function delta
 
 ### [Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles](Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles.md)
 Invoke function allowedCalendarSharingRoles
-
-### [Invoke-MgCalendarUserEventCalendarAllowedCalendarSharingRoles](Invoke-MgCalendarUserEventCalendarAllowedCalendarSharingRoles.md)
-Invoke function allowedCalendarSharingRoles
-
-### [Invoke-MgFilterUserAppConsentRequestForApproval](Invoke-MgFilterUserAppConsentRequestForApproval.md)
-Invoke function filterByCurrentUser
-
-### [Invoke-MgFilterUserAppConsentRequestForApprovalUserConsentRequest](Invoke-MgFilterUserAppConsentRequestForApprovalUserConsentRequest.md)
-Invoke function filterByCurrentUser
-
-### [Invoke-MgFilterUserApproval](Invoke-MgFilterUserApproval.md)
-Invoke function filterByCurrentUser
-
-### [Invoke-MgFilterUserPendingAccessReviewInstance](Invoke-MgFilterUserPendingAccessReviewInstance.md)
-Invoke function filterByCurrentUser
-
-### [Invoke-MgFilterUserPendingAccessReviewInstanceDecision](Invoke-MgFilterUserPendingAccessReviewInstanceDecision.md)
-Invoke function filterByCurrentUser
-
-### [Invoke-MgFilterUserPendingAccessReviewInstanceStage](Invoke-MgFilterUserPendingAccessReviewInstanceStage.md)
-Invoke function filterByCurrentUser
-
-### [Invoke-MgFilterUserPendingAccessReviewInstanceStageDecision](Invoke-MgFilterUserPendingAccessReviewInstanceStageDecision.md)
-Invoke function filterByCurrentUser
 
 ### [Invoke-MgPendingUserApp](Invoke-MgPendingUserApp.md)
 Retrieves the list of devices with failed or pending apps

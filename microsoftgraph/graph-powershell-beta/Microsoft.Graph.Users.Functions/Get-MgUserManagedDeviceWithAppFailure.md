@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/get-mgusermanageddevicewithappfailure
 schema: 2.0.0
@@ -17,17 +17,7 @@ Retrieves the list of devices with failed apps
 Get-MgUserManagedDeviceWithAppFailure -UserId <String> [<CommonParameters>]
 ```
 
-### Get1
-```
-Get-MgUserManagedDeviceWithAppFailure -UserId <String> [<CommonParameters>]
-```
-
 ### GetViaIdentity
-```
-Get-MgUserManagedDeviceWithAppFailure -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
-```
-
-### GetViaIdentity1
 ```
 Get-MgUserManagedDeviceWithAppFailure -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
 ```
@@ -44,8 +34,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
-Parameter Sets: GetViaIdentity, GetViaIdentity1
+Type: IUsersFunctionsIdentity
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -59,8 +49,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Get, Get1
+Type: String
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -76,13 +66,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
-
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDeviceSummarizedAppState
-
 ### System.String
-
 ## NOTES
 
 ALIASES
@@ -129,4 +115,3 @@ INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   - `[ValuesOnly <Boolean?>]`: Usage: valuesOnly={valuesOnly}
 
 ## RELATED LINKS
-
