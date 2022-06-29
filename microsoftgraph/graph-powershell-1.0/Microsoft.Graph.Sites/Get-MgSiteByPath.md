@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/get-mgsitebypath
 schema: 2.0.0
@@ -12,12 +12,12 @@ Invoke function getByPath
 
 ## SYNTAX
 
-### Get2 (Default)
+### Get1 (Default)
 ```
 Get-MgSiteByPath -Path <String> -SiteId <String> [<CommonParameters>]
 ```
 
-### GetViaIdentity2
+### GetViaIdentity1
 ```
 Get-MgSiteByPath -InputObject <ISitesIdentity> [<CommonParameters>]
 ```
@@ -34,8 +34,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ISitesIdentity
-Parameter Sets: GetViaIdentity2
+Type: ISitesIdentity
+Parameter Sets: GetViaIdentity1
 Aliases:
 
 Required: True
@@ -49,8 +49,8 @@ Accept wildcard characters: False
 Usage: path={path}
 
 ```yaml
-Type: System.String
-Parameter Sets: Get2
+Type: String
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -64,8 +64,8 @@ Accept wildcard characters: False
 key: id of site
 
 ```yaml
-Type: System.String
-Parameter Sets: Get2
+Type: String
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -81,11 +81,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSite1
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSite
 ## NOTES
 
 ALIASES
@@ -127,4 +125,3 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/get-mgsubsite
 schema: 2.0.0
@@ -12,10 +12,23 @@ The collection of the sub-sites under this site.
 
 ## SYNTAX
 
+### List3 (Default)
 ```
-Get-MgSubSite [-SiteId <String>] [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>]
- [-PageSize <Int32>] [<CommonParameters>]
+Get-MgSubSite [-SiteId <String>] [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [<CommonParameters>]
+```
+
+### Get3
+```
+Get-MgSubSite [-SiteId <String>] -SiteId1 <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
+```
+
+### GetViaIdentity3
+```
+Get-MgSubSite -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -29,8 +42,8 @@ The collection of the sub-sites under this site.
 List all pages.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: (All)
+Type: SwitchParameter
+Parameter Sets: List3
 Aliases:
 
 Required: False
@@ -45,8 +58,8 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: System.String
-Parameter Sets: (All)
+Type: String
+Parameter Sets: List3
 Aliases: CV
 
 Required: False
@@ -60,7 +73,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -75,8 +88,8 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: System.String
-Parameter Sets: (All)
+Type: String
+Parameter Sets: List3
 Aliases:
 
 Required: False
@@ -86,12 +99,28 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -InputObject
+Identity Parameter
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+
+```yaml
+Type: ISitesIdentity
+Parameter Sets: GetViaIdentity3
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -PageSize
 Sets the page size of results.
 
 ```yaml
-Type: System.Int32
-Parameter Sets: (All)
+Type: Int32
+Parameter Sets: List3
 Aliases:
 
 Required: False
@@ -105,7 +134,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -120,8 +149,8 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: System.String
-Parameter Sets: (All)
+Type: String
+Parameter Sets: List3
 Aliases:
 
 Required: False
@@ -135,8 +164,8 @@ Accept wildcard characters: False
 key: id of site
 
 ```yaml
-Type: System.String
-Parameter Sets: (All)
+Type: String
+Parameter Sets: List3, Get3
 Aliases:
 
 Required: False
@@ -146,15 +175,15 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skip
-Skip the first n items
+### -SiteId1
+key: id of site
 
 ```yaml
-Type: System.Int32
-Parameter Sets: (All)
+Type: String
+Parameter Sets: Get3
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -165,8 +194,8 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: System.String[]
-Parameter Sets: (All)
+Type: String[]
+Parameter Sets: List3
 Aliases: OrderBy
 
 Required: False
@@ -180,9 +209,24 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: System.Int32
-Parameter Sets: (All)
+Type: Int32
+Parameter Sets: List3
 Aliases: Limit
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List3
+Aliases:
 
 Required: False
 Position: Named
@@ -196,13 +240,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### Microsoft.Graph.PowerShell.Models.ISitesIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSite1
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSite
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
-

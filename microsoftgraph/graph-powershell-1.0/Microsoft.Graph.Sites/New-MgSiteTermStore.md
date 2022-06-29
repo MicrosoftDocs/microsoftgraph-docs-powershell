@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/new-mgsitetermstore
 schema: 2.0.0
@@ -16,26 +16,26 @@ The collection of termStores under this site.
 ```
 New-MgSiteTermStore -SiteId <String> [-AdditionalProperties <Hashtable>] [-DefaultLanguageTag <String>]
  [-Groups <IMicrosoftGraphTermStoreGroup1[]>] [-Id <String>] [-LanguageTags <String[]>]
- [-Sets <IMicrosoftGraphTermStoreSet1[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Sets <IMicrosoftGraphTermStoreSet[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgSiteTermStore -SiteId <String> -BodyParameter <IMicrosoftGraphTermStore1> [-Confirm] [-WhatIf]
+New-MgSiteTermStore -SiteId <String> -BodyParameter <IMicrosoftGraphTermStore1> [-WhatIf] [-Confirm]
  [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgSiteTermStore -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphTermStore1> [-Confirm]
- [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgSiteTermStore -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
  [-DefaultLanguageTag <String>] [-Groups <IMicrosoftGraphTermStoreGroup1[]>] [-Id <String>]
- [-LanguageTags <String[]>] [-Sets <IMicrosoftGraphTermStoreSet1[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-LanguageTags <String[]>] [-Sets <IMicrosoftGraphTermStoreSet[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgSiteTermStore -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphTermStore1> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,7 +49,7 @@ The collection of termStores under this site.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -65,7 +65,7 @@ store
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStore1
+Type: IMicrosoftGraphTermStore1
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 Default language of the term store.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -96,7 +96,7 @@ Collection of all groups available in the term store.
 To construct, please use Get-Help -Online and see NOTES section for GROUPS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreGroup1[]
+Type: IMicrosoftGraphTermStoreGroup1[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -127,8 +127,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ISitesIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: ISitesIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 List of languages for the term store.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -158,7 +158,7 @@ Collection of all sets available in the term store.
 To construct, please use Get-Help -Online and see NOTES section for SETS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreSet1[]
+Type: IMicrosoftGraphTermStoreSet[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -173,8 +173,8 @@ Accept wildcard characters: False
 key: id of site
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -204,7 +204,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -221,13 +221,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStore1
-
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStore1
-
 ## NOTES
 
 ALIASES
@@ -400,3 +397,4 @@ SETS <IMicrosoftGraphTermStoreSet1[]>: Collection of all sets available in the t
 
 ## RELATED LINKS
 
+## RELATED LINKS

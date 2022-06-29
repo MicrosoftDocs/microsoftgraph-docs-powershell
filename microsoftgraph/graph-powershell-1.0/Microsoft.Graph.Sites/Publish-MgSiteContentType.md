@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/publish-mgsitecontenttype
 schema: 2.0.0
@@ -12,15 +12,15 @@ Invoke action publish
 
 ## SYNTAX
 
-### Publish (Default)
+### Publish1 (Default)
 ```
-Publish-MgSiteContentType -ContentTypeId <String> -SiteId <String> [-PassThru] [-Confirm] [-WhatIf]
+Publish-MgSiteContentType -ContentTypeId <String> -SiteId <String> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### PublishViaIdentity
+### PublishViaIdentity1
 ```
-Publish-MgSiteContentType -InputObject <ISitesIdentity> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Publish-MgSiteContentType -InputObject <ISitesIdentity> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -34,8 +34,8 @@ Invoke action publish
 key: id of contentType
 
 ```yaml
-Type: System.String
-Parameter Sets: Publish
+Type: String
+Parameter Sets: Publish1
 Aliases:
 
 Required: True
@@ -50,8 +50,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ISitesIdentity
-Parameter Sets: PublishViaIdentity
+Type: ISitesIdentity
+Parameter Sets: PublishViaIdentity1
 Aliases:
 
 Required: True
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -80,8 +80,8 @@ Accept wildcard characters: False
 key: id of site
 
 ```yaml
-Type: System.String
-Parameter Sets: Publish
+Type: String
+Parameter Sets: Publish1
 Aliases:
 
 Required: True
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -111,7 +111,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -128,11 +128,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -174,4 +172,3 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

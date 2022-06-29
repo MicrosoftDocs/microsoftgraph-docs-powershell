@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/update-mgsitetermstoresettermrelation
 schema: 2.0.0
@@ -12,61 +12,61 @@ To indicate which terms are related to the current term as either pinned or reus
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### UpdateExpanded2 (Default)
 ```
 Update-MgSiteTermStoreSetTermRelation -RelationId <String> -SetId <String> -SiteId <String> -TermId <String>
- [-AdditionalProperties <Hashtable>] [-FromTerm <IMicrosoftGraphTermStoreTerm1>] [-Id <String>]
- [-Relationship <String>] [-Set <IMicrosoftGraphTermStoreSet1>] [-ToTerm <IMicrosoftGraphTermStoreTerm1>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-FromTerm <IMicrosoftGraphTermStoreTerm>] [-Id <String>]
+ [-Relationship <String>] [-Set <IMicrosoftGraphTermStoreSet>] [-ToTerm <IMicrosoftGraphTermStoreTerm>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateExpanded
+```
+Update-MgSiteTermStoreSetTermRelation -RelationId <String> -SetId <String> -SiteId <String> -StoreId <String>
+ -TermId <String> [-AdditionalProperties <Hashtable>] [-FromTerm <IMicrosoftGraphTermStoreTerm>] [-Id <String>]
+ [-Relationship <String>] [-Set <IMicrosoftGraphTermStoreSet>] [-ToTerm <IMicrosoftGraphTermStoreTerm>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update2
+```
+Update-MgSiteTermStoreSetTermRelation -RelationId <String> -SetId <String> -SiteId <String> -TermId <String>
+ -BodyParameter <IMicrosoftGraphTermStoreRelation1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgSiteTermStoreSetTermRelation -RelationId <String> -SetId <String> -SiteId <String> -TermId <String>
- -BodyParameter <IMicrosoftGraphTermStoreRelation> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### Update1
-```
 Update-MgSiteTermStoreSetTermRelation -RelationId <String> -SetId <String> -SiteId <String> -StoreId <String>
- -TermId <String> -BodyParameter <IMicrosoftGraphTermStoreRelation> [-PassThru] [-Confirm] [-WhatIf]
+ -TermId <String> -BodyParameter <IMicrosoftGraphTermStoreRelation1> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### UpdateExpanded1
+### UpdateViaIdentityExpanded2
 ```
-Update-MgSiteTermStoreSetTermRelation -RelationId <String> -SetId <String> -SiteId <String> -StoreId <String>
- -TermId <String> [-AdditionalProperties <Hashtable>] [-FromTerm <IMicrosoftGraphTermStoreTerm1>]
- [-Id <String>] [-Relationship <String>] [-Set <IMicrosoftGraphTermStoreSet1>]
- [-ToTerm <IMicrosoftGraphTermStoreTerm1>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgSiteTermStoreSetTermRelation -InputObject <ISitesIdentity>
- -BodyParameter <IMicrosoftGraphTermStoreRelation> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity1
-```
-Update-MgSiteTermStoreSetTermRelation -InputObject <ISitesIdentity>
- -BodyParameter <IMicrosoftGraphTermStoreRelation> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Update-MgSiteTermStoreSetTermRelation -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
+ [-FromTerm <IMicrosoftGraphTermStoreTerm>] [-Id <String>] [-Relationship <String>]
+ [-Set <IMicrosoftGraphTermStoreSet>] [-ToTerm <IMicrosoftGraphTermStoreTerm>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgSiteTermStoreSetTermRelation -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
- [-FromTerm <IMicrosoftGraphTermStoreTerm1>] [-Id <String>] [-Relationship <String>]
- [-Set <IMicrosoftGraphTermStoreSet1>] [-ToTerm <IMicrosoftGraphTermStoreTerm1>] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-FromTerm <IMicrosoftGraphTermStoreTerm>] [-Id <String>] [-Relationship <String>]
+ [-Set <IMicrosoftGraphTermStoreSet>] [-ToTerm <IMicrosoftGraphTermStoreTerm>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded1
+### UpdateViaIdentity2
 ```
-Update-MgSiteTermStoreSetTermRelation -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
- [-FromTerm <IMicrosoftGraphTermStoreTerm1>] [-Id <String>] [-Relationship <String>]
- [-Set <IMicrosoftGraphTermStoreSet1>] [-ToTerm <IMicrosoftGraphTermStoreTerm1>] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Update-MgSiteTermStoreSetTermRelation -InputObject <ISitesIdentity>
+ -BodyParameter <IMicrosoftGraphTermStoreRelation1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgSiteTermStoreSetTermRelation -InputObject <ISitesIdentity>
+ -BodyParameter <IMicrosoftGraphTermStoreRelation1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -80,8 +80,8 @@ To indicate which terms are related to the current term as either pinned or reus
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
+Type: Hashtable
+Parameter Sets: UpdateExpanded2, UpdateExpanded, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -96,8 +96,8 @@ relation
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreRelation
-Parameter Sets: Update, Update1, UpdateViaIdentity, UpdateViaIdentity1
+Type: IMicrosoftGraphTermStoreRelation1
+Parameter Sets: Update2, Update, UpdateViaIdentity2, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -112,8 +112,8 @@ term
 To construct, please use Get-Help -Online and see NOTES section for FROMTERM properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreTerm1
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
+Type: IMicrosoftGraphTermStoreTerm
+Parameter Sets: UpdateExpanded2, UpdateExpanded, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -127,8 +127,8 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
+Type: String
+Parameter Sets: UpdateExpanded2, UpdateExpanded, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -143,8 +143,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ISitesIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentity1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
+Type: ISitesIdentity
+Parameter Sets: UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded, UpdateViaIdentity2, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -173,8 +173,8 @@ Accept wildcard characters: False
 key: id of relation
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, Update1, UpdateExpanded, UpdateExpanded1
+Type: String
+Parameter Sets: UpdateExpanded2, UpdateExpanded, Update2, Update
 Aliases:
 
 Required: True
@@ -188,8 +188,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
+Type: String
+Parameter Sets: UpdateExpanded2, UpdateExpanded, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -204,8 +204,8 @@ set
 To construct, please use Get-Help -Online and see NOTES section for SET properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreSet1
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
+Type: IMicrosoftGraphTermStoreSet
+Parameter Sets: UpdateExpanded2, UpdateExpanded, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -219,8 +219,8 @@ Accept wildcard characters: False
 key: id of set
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, Update1, UpdateExpanded, UpdateExpanded1
+Type: String
+Parameter Sets: UpdateExpanded2, UpdateExpanded, Update2, Update
 Aliases:
 
 Required: True
@@ -234,8 +234,8 @@ Accept wildcard characters: False
 key: id of site
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, Update1, UpdateExpanded, UpdateExpanded1
+Type: String
+Parameter Sets: UpdateExpanded2, UpdateExpanded, Update2, Update
 Aliases:
 
 Required: True
@@ -249,8 +249,8 @@ Accept wildcard characters: False
 key: id of store
 
 ```yaml
-Type: System.String
-Parameter Sets: Update1, UpdateExpanded1
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -264,8 +264,8 @@ Accept wildcard characters: False
 key: id of term
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, Update1, UpdateExpanded, UpdateExpanded1
+Type: String
+Parameter Sets: UpdateExpanded2, UpdateExpanded, Update2, Update
 Aliases:
 
 Required: True
@@ -280,8 +280,8 @@ term
 To construct, please use Get-Help -Online and see NOTES section for TOTERM properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreTerm1
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
+Type: IMicrosoftGraphTermStoreTerm
+Parameter Sets: UpdateExpanded2, UpdateExpanded, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -295,7 +295,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -311,7 +311,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -327,14 +327,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreRelation
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreRelation1
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -553,3 +550,4 @@ TOTERM <IMicrosoftGraphTermStoreTerm1>: term
 
 ## RELATED LINKS
 
+## RELATED LINKS
