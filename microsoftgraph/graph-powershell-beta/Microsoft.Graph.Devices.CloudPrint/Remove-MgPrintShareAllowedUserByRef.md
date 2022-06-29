@@ -1,43 +1,63 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprinttaskdefinitiontaskdefinitionbyref
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintsharealloweduserbyref
 schema: 2.0.0
 ---
 
-# Remove-MgPrintTaskDefinitionTaskDefinitionByRef
+# Remove-MgPrintShareAllowedUserByRef
 
 ## SYNOPSIS
-The printTaskDefinition that was used to create this task.
-Read-only.
+Delete ref of navigation property allowedUsers for print
 
 ## SYNTAX
 
-### Delete (Default)
+### Delete1 (Default)
 ```
-Remove-MgPrintTaskDefinitionTaskDefinitionByRef -PrintTaskDefinitionId <String> -PrintTaskId <String>
- [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Remove-MgPrintShareAllowedUserByRef -PrinterShareId <String> -UserId <String> [-Id <String>]
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity
+### DeleteViaIdentity1
 ```
-Remove-MgPrintTaskDefinitionTaskDefinitionByRef -InputObject <IDevicesCloudPrintIdentity> [-IfMatch <String>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Remove-MgPrintShareAllowedUserByRef -InputObject <IDevicesCloudPrintIdentity> [-Id <String>]
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The printTaskDefinition that was used to create this task.
-Read-only.
+Delete ref of navigation property allowedUsers for print
 
 ## EXAMPLES
 
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
+
 ## PARAMETERS
+
+### -Id
+Delete Uri
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -IfMatch
 ETag
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -53,8 +73,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-Parameter Sets: DeleteViaIdentity
+Type: IDevicesCloudPrintIdentity
+Parameter Sets: DeleteViaIdentity1
 Aliases:
 
 Required: True
@@ -68,23 +88,23 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PrintTaskDefinitionId
-key: id of printTaskDefinition
+### -PrinterShareId
+key: id of printerShare
 
 ```yaml
-Type: System.String
-Parameter Sets: Delete
+Type: String
+Parameter Sets: Delete1
 Aliases:
 
 Required: True
@@ -94,12 +114,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PrintTaskId
-key: id of printTask
+### -UserId
+key: id of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Delete
+Type: String
+Parameter Sets: Delete1
 Aliases:
 
 Required: True
@@ -113,7 +133,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -129,7 +149,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -146,30 +166,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
-
-ALIASES
-
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
-
-
-INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
-  - `[PrintConnectorId <String>]`: key: id of printConnector
-  - `[PrintOperationId <String>]`: key: id of printOperation
-  - `[PrintServiceEndpointId <String>]`: key: id of printServiceEndpoint
-  - `[PrintServiceId <String>]`: key: id of printService
-  - `[PrintTaskDefinitionId <String>]`: key: id of printTaskDefinition
-  - `[PrintTaskId <String>]`: key: id of printTask
-  - `[PrintTaskTriggerId <String>]`: key: id of printTaskTrigger
-  - `[PrinterId <String>]`: key: id of printer
-  - `[PrinterShareId <String>]`: key: id of printerShare
+Please use Get-Help -Online.
 
 ## RELATED LINKS
+
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintsharealloweduserbyref](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintsharealloweduserbyref)
 
