@@ -47,27 +47,12 @@ The directory object that is the scope of the assignment.
 Read-only.
 Supports $expand.
 
-### [Get-MgRoleManagementDirectoryRoleAssignmentDirectoryScopeByRef](Get-MgRoleManagementDirectoryRoleAssignmentDirectoryScopeByRef.md)
-The directory object that is the scope of the assignment.
-Read-only.
-Supports $expand.
-
 ### [Get-MgRoleManagementDirectoryRoleAssignmentPrincipal](Get-MgRoleManagementDirectoryRoleAssignmentPrincipal.md)
 Referencing the assigned principal.
 Read-only.
 Supports $expand.
 
-### [Get-MgRoleManagementDirectoryRoleAssignmentPrincipalByRef](Get-MgRoleManagementDirectoryRoleAssignmentPrincipalByRef.md)
-Referencing the assigned principal.
-Read-only.
-Supports $expand.
-
 ### [Get-MgRoleManagementDirectoryRoleAssignmentRoleDefinition](Get-MgRoleManagementDirectoryRoleAssignmentRoleDefinition.md)
-The roleDefinition the assignment is for.
-Supports $expand.
-roleDefinition.Id will be auto expanded.
-
-### [Get-MgRoleManagementDirectoryRoleAssignmentRoleDefinitionByRef](Get-MgRoleManagementDirectoryRoleAssignmentRoleDefinitionByRef.md)
 The roleDefinition the assignment is for.
 Supports $expand.
 roleDefinition.Id will be auto expanded.
@@ -96,27 +81,12 @@ The directory object that is the scope of the assignment.
 Read-only.
 Supports $expand.
 
-### [Get-MgRoleManagementEntitlementManagementRoleAssignmentDirectoryScopeByRef](Get-MgRoleManagementEntitlementManagementRoleAssignmentDirectoryScopeByRef.md)
-The directory object that is the scope of the assignment.
-Read-only.
-Supports $expand.
-
 ### [Get-MgRoleManagementEntitlementManagementRoleAssignmentPrincipal](Get-MgRoleManagementEntitlementManagementRoleAssignmentPrincipal.md)
 Referencing the assigned principal.
 Read-only.
 Supports $expand.
 
-### [Get-MgRoleManagementEntitlementManagementRoleAssignmentPrincipalByRef](Get-MgRoleManagementEntitlementManagementRoleAssignmentPrincipalByRef.md)
-Referencing the assigned principal.
-Read-only.
-Supports $expand.
-
 ### [Get-MgRoleManagementEntitlementManagementRoleAssignmentRoleDefinition](Get-MgRoleManagementEntitlementManagementRoleAssignmentRoleDefinition.md)
-The roleDefinition the assignment is for.
-Supports $expand.
-roleDefinition.Id will be auto expanded.
-
-### [Get-MgRoleManagementEntitlementManagementRoleAssignmentRoleDefinitionByRef](Get-MgRoleManagementEntitlementManagementRoleAssignmentRoleDefinitionByRef.md)
 The roleDefinition the assignment is for.
 Supports $expand.
 roleDefinition.Id will be auto expanded.
@@ -191,21 +161,6 @@ Read-only property with details of the app specific scope when the assignment sc
 Containment entity.
 Supports $expand.
 
-### [Remove-MgRoleManagementDirectoryRoleAssignmentDirectoryScopeByRef](Remove-MgRoleManagementDirectoryRoleAssignmentDirectoryScopeByRef.md)
-The directory object that is the scope of the assignment.
-Read-only.
-Supports $expand.
-
-### [Remove-MgRoleManagementDirectoryRoleAssignmentPrincipalByRef](Remove-MgRoleManagementDirectoryRoleAssignmentPrincipalByRef.md)
-Referencing the assigned principal.
-Read-only.
-Supports $expand.
-
-### [Remove-MgRoleManagementDirectoryRoleAssignmentRoleDefinitionByRef](Remove-MgRoleManagementDirectoryRoleAssignmentRoleDefinitionByRef.md)
-The roleDefinition the assignment is for.
-Supports $expand.
-roleDefinition.Id will be auto expanded.
-
 ### [Remove-MgRoleManagementDirectoryRoleDefinition](Remove-MgRoleManagementDirectoryRoleDefinition.md)
 Resource representing the roles allowed by RBAC providers and the permissions assigned to the roles.
 
@@ -225,21 +180,6 @@ Read-only property with details of the app specific scope when the assignment sc
 Containment entity.
 Supports $expand.
 
-### [Remove-MgRoleManagementEntitlementManagementRoleAssignmentDirectoryScopeByRef](Remove-MgRoleManagementEntitlementManagementRoleAssignmentDirectoryScopeByRef.md)
-The directory object that is the scope of the assignment.
-Read-only.
-Supports $expand.
-
-### [Remove-MgRoleManagementEntitlementManagementRoleAssignmentPrincipalByRef](Remove-MgRoleManagementEntitlementManagementRoleAssignmentPrincipalByRef.md)
-Referencing the assigned principal.
-Read-only.
-Supports $expand.
-
-### [Remove-MgRoleManagementEntitlementManagementRoleAssignmentRoleDefinitionByRef](Remove-MgRoleManagementEntitlementManagementRoleAssignmentRoleDefinitionByRef.md)
-The roleDefinition the assignment is for.
-Supports $expand.
-roleDefinition.Id will be auto expanded.
-
 ### [Remove-MgRoleManagementEntitlementManagementRoleDefinition](Remove-MgRoleManagementEntitlementManagementRoleDefinition.md)
 Resource representing the roles allowed by RBAC providers and the permissions assigned to the roles.
 
@@ -247,36 +187,6 @@ Resource representing the roles allowed by RBAC providers and the permissions as
 Read-only collection of role definitions that the given role definition inherits from.
 Only Azure AD built-in roles (isBuiltIn is true) support this attribute.
 Supports $expand.
-
-### [Set-MgRoleManagementDirectoryRoleAssignmentDirectoryScopeByRef](Set-MgRoleManagementDirectoryRoleAssignmentDirectoryScopeByRef.md)
-The directory object that is the scope of the assignment.
-Read-only.
-Supports $expand.
-
-### [Set-MgRoleManagementDirectoryRoleAssignmentPrincipalByRef](Set-MgRoleManagementDirectoryRoleAssignmentPrincipalByRef.md)
-Referencing the assigned principal.
-Read-only.
-Supports $expand.
-
-### [Set-MgRoleManagementDirectoryRoleAssignmentRoleDefinitionByRef](Set-MgRoleManagementDirectoryRoleAssignmentRoleDefinitionByRef.md)
-The roleDefinition the assignment is for.
-Supports $expand.
-roleDefinition.Id will be auto expanded.
-
-### [Set-MgRoleManagementEntitlementManagementRoleAssignmentDirectoryScopeByRef](Set-MgRoleManagementEntitlementManagementRoleAssignmentDirectoryScopeByRef.md)
-The directory object that is the scope of the assignment.
-Read-only.
-Supports $expand.
-
-### [Set-MgRoleManagementEntitlementManagementRoleAssignmentPrincipalByRef](Set-MgRoleManagementEntitlementManagementRoleAssignmentPrincipalByRef.md)
-Referencing the assigned principal.
-Read-only.
-Supports $expand.
-
-### [Set-MgRoleManagementEntitlementManagementRoleAssignmentRoleDefinitionByRef](Set-MgRoleManagementEntitlementManagementRoleAssignmentRoleDefinitionByRef.md)
-The roleDefinition the assignment is for.
-Supports $expand.
-roleDefinition.Id will be auto expanded.
 
 ### [Update-MgDeviceManagementConditionalAccessSetting](Update-MgDeviceManagementConditionalAccessSetting.md)
 The Exchange on premises conditional access settings.
