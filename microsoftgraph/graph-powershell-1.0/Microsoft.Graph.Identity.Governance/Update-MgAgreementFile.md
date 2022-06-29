@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgagreementfile
 schema: 2.0.0
@@ -12,34 +12,34 @@ Default PDF linked to this agreement.
 
 ## SYNTAX
 
-### UpdateExpanded2 (Default)
+### UpdateExpanded1 (Default)
 ```
 Update-MgAgreementFile -AgreementId <String> [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
  [-DisplayName <String>] [-FileData <IMicrosoftGraphAgreementFileData>] [-FileName <String>] [-Id <String>]
  [-IsDefault] [-IsMajorVersion] [-Language <String>]
- [-Localizations <IMicrosoftGraphAgreementFileLocalization[]>] [-PassThru] [-Confirm] [-WhatIf]
+ [-Localizations <IMicrosoftGraphAgreementFileLocalization[]>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### Update2
+### Update1
 ```
 Update-MgAgreementFile -AgreementId <String> -BodyParameter <IMicrosoftGraphAgreementFile> [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity2
-```
-Update-MgAgreementFile -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAgreementFile> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded2
+### UpdateViaIdentityExpanded1
 ```
 Update-MgAgreementFile -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>]
  [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-FileData <IMicrosoftGraphAgreementFileData>]
  [-FileName <String>] [-Id <String>] [-IsDefault] [-IsMajorVersion] [-Language <String>]
- [-Localizations <IMicrosoftGraphAgreementFileLocalization[]>] [-PassThru] [-Confirm] [-WhatIf]
+ [-Localizations <IMicrosoftGraphAgreementFileLocalization[]>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
+```
+
+### UpdateViaIdentity1
+```
+Update-MgAgreementFile -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphAgreementFile>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,8 +53,8 @@ Default PDF linked to this agreement.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: UpdateExpanded2, UpdateViaIdentityExpanded2
+Type: Hashtable
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -68,8 +68,8 @@ Accept wildcard characters: False
 key: id of agreement
 
 ```yaml
-Type: System.String
-Parameter Sets: Update2, UpdateExpanded2
+Type: String
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -84,8 +84,8 @@ agreementFile
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAgreementFile
-Parameter Sets: Update2, UpdateViaIdentity2
+Type: IMicrosoftGraphAgreementFile
+Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -100,8 +100,8 @@ The date time representing when the file was created.The Timestamp type represen
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: System.DateTime
-Parameter Sets: UpdateExpanded2, UpdateViaIdentityExpanded2
+Type: DateTime
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -116,8 +116,8 @@ Localized display name of the policy file of an agreement.
 The localized display name is shown to end users who view the agreement.
 
 ```yaml
-Type: System.String
-Parameter Sets: UpdateExpanded2, UpdateViaIdentityExpanded2
+Type: String
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -132,8 +132,8 @@ agreementFileData
 To construct, please use Get-Help -Online and see NOTES section for FILEDATA properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAgreementFileData
-Parameter Sets: UpdateExpanded2, UpdateViaIdentityExpanded2
+Type: IMicrosoftGraphAgreementFileData
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -148,8 +148,8 @@ Name of the agreement file (for example, TOU.pdf).
 Read-only.
 
 ```yaml
-Type: System.String
-Parameter Sets: UpdateExpanded2, UpdateViaIdentityExpanded2
+Type: String
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -163,8 +163,8 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
-Parameter Sets: UpdateExpanded2, UpdateViaIdentityExpanded2
+Type: String
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -179,8 +179,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-Parameter Sets: UpdateViaIdentity2, UpdateViaIdentityExpanded2
+Type: IIdentityGovernanceIdentity
+Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -196,8 +196,8 @@ If none of the files are marked as default, the first one is treated as the defa
 Read-only.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: UpdateExpanded2, UpdateViaIdentityExpanded2
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -212,8 +212,8 @@ Indicates whether the agreement file is a major version update.
 Major version updates invalidate the agreement's acceptances on the corresponding language.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: UpdateExpanded2, UpdateViaIdentityExpanded2
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -231,8 +231,8 @@ English is en-US.
 Read-only.
 
 ```yaml
-Type: System.String
-Parameter Sets: UpdateExpanded2, UpdateViaIdentityExpanded2
+Type: String
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -247,8 +247,8 @@ The localized version of the terms of use agreement files attached to the agreem
 To construct, please use Get-Help -Online and see NOTES section for LOCALIZATIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAgreementFileLocalization[]
-Parameter Sets: UpdateExpanded2, UpdateViaIdentityExpanded2
+Type: IMicrosoftGraphAgreementFileLocalization[]
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -262,7 +262,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -277,7 +277,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -293,7 +293,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -310,13 +310,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAgreementFile
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -440,3 +437,4 @@ LOCALIZATIONS <IMicrosoftGraphAgreementFileLocalization[]>: The localized versio
 
 ## RELATED LINKS
 
+## RELATED LINKS

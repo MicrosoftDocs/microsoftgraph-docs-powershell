@@ -28,10 +28,6 @@ The localized version of the terms of use agreement files attached to the agreem
 Read-only.
 Customized versions of the terms of use agreement in the Azure AD tenant.
 
-### [Get-MgAgreementFileVersion](Get-MgAgreementFileVersion.md)
-Read-only.
-Customized versions of the terms of use agreement in the Azure AD tenant.
-
 ### [Get-MgEntitlementManagementAccessPackage](Get-MgEntitlementManagementAccessPackage.md)
 Represents access package objects.
 
@@ -51,9 +47,6 @@ Nullable.
 ### [Get-MgEntitlementManagementAssignment](Get-MgEntitlementManagementAssignment.md)
 Represents the grant of an access package to a subject (user or group).
 
-### [Get-MgEntitlementManagementAssignmentAssignmentPolicyByRef](Get-MgEntitlementManagementAssignmentAssignmentPolicyByRef.md)
-Get ref of assignmentPolicy from identityGovernance
-
 ### [Get-MgEntitlementManagementAssignmentPolicy](Get-MgEntitlementManagementAssignmentPolicy.md)
 Get assignmentPolicies from identityGovernance
 
@@ -63,20 +56,8 @@ Read-only.
 Nullable.
 Supports $expand.
 
-### [Get-MgEntitlementManagementAssignmentPolicyAccessPackageApplicablePolicyRequirement](Get-MgEntitlementManagementAssignmentPolicyAccessPackageApplicablePolicyRequirement.md)
-Invoke action getApplicablePolicyRequirements
-
-### [Get-MgEntitlementManagementAssignmentPolicyAccessPackageByRef](Get-MgEntitlementManagementAssignmentPolicyAccessPackageByRef.md)
-The access package with this policy.
-Read-only.
-Nullable.
-Supports $expand.
-
 ### [Get-MgEntitlementManagementAssignmentPolicyCatalog](Get-MgEntitlementManagementAssignmentPolicyCatalog.md)
 Get catalog from identityGovernance
-
-### [Get-MgEntitlementManagementAssignmentPolicyCatalogByRef](Get-MgEntitlementManagementAssignmentPolicyCatalogByRef.md)
-Get ref of catalog from identityGovernance
 
 ### [Get-MgEntitlementManagementAssignmentRequest](Get-MgEntitlementManagementAssignmentRequest.md)
 Represents access package assignment requests created by or on behalf of a user.
@@ -107,23 +88,6 @@ The user's terms of use acceptance statuses.
 Read-only.
 Nullable.
 
-### [Get-MgUserAgreementAcceptanceByRef](Get-MgUserAgreementAcceptanceByRef.md)
-The user's terms of use acceptance statuses.
-Read-only.
-Nullable.
-
-### [Invoke-MgFilterEntitlementManagementAccessPackage](Invoke-MgFilterEntitlementManagementAccessPackage.md)
-Invoke function filterByCurrentUser
-
-### [Invoke-MgFilterEntitlementManagementAccessPackageAssignmentApproval](Invoke-MgFilterEntitlementManagementAccessPackageAssignmentApproval.md)
-Invoke function filterByCurrentUser
-
-### [Invoke-MgFilterEntitlementManagementAssignment](Invoke-MgFilterEntitlementManagementAssignment.md)
-Invoke function filterByCurrentUser
-
-### [Invoke-MgFilterEntitlementManagementAssignmentRequest](Invoke-MgFilterEntitlementManagementAssignmentRequest.md)
-Invoke function filterByCurrentUser
-
 ### [New-MgAgreement](New-MgAgreement.md)
 Add new entity to agreements
 
@@ -131,20 +95,10 @@ Add new entity to agreements
 Read-only.
 Information about acceptances of this agreement.
 
-### [New-MgAgreementFile](New-MgAgreementFile.md)
-PDFs linked to this agreement.
-This property is in the process of being deprecated.
-Use the  file property instead.
-Supports $expand.
-
 ### [New-MgAgreementFileLocalization](New-MgAgreementFileLocalization.md)
 The localized version of the terms of use agreement files attached to the agreement.
 
 ### [New-MgAgreementFileLocalizationVersion](New-MgAgreementFileLocalizationVersion.md)
-Read-only.
-Customized versions of the terms of use agreement in the Azure AD tenant.
-
-### [New-MgAgreementFileVersion](New-MgAgreementFileVersion.md)
 Read-only.
 Customized versions of the terms of use agreement in the Azure AD tenant.
 
@@ -172,22 +126,11 @@ Represents a group of access packages.
 ### [New-MgEntitlementManagementConnectedOrganization](New-MgEntitlementManagementConnectedOrganization.md)
 Represents references to a directory or domain of another organization whose users can request access.
 
-### [New-MgEntitlementManagementConnectedOrganizationExternalSponsor](New-MgEntitlementManagementConnectedOrganizationExternalSponsor.md)
-Nullable.
-
-### [New-MgEntitlementManagementConnectedOrganizationInternalSponsor](New-MgEntitlementManagementConnectedOrganizationInternalSponsor.md)
-Nullable.
-
 ### [New-MgIdentityGovernanceTermOfUseAgreement](New-MgIdentityGovernanceTermOfUseAgreement.md)
 Represents a tenant's customizable terms of use agreement that's created and managed with Azure Active Directory (Azure AD).
 
 ### [New-MgIdentityGovernanceTermOfUseAgreementAcceptance](New-MgIdentityGovernanceTermOfUseAgreementAcceptance.md)
 Represents the current status of a user's response to a company's customizable terms of use agreement.
-
-### [New-MgUserAgreementAcceptanceByRef](New-MgUserAgreementAcceptanceByRef.md)
-The user's terms of use acceptance statuses.
-Read-only.
-Nullable.
 
 ### [Remove-MgAgreement](Remove-MgAgreement.md)
 Delete entity from agreements
@@ -206,10 +149,6 @@ The localized version of the terms of use agreement files attached to the agreem
 Read-only.
 Customized versions of the terms of use agreement in the Azure AD tenant.
 
-### [Remove-MgAgreementFileVersion](Remove-MgAgreementFileVersion.md)
-Read-only.
-Customized versions of the terms of use agreement in the Azure AD tenant.
-
 ### [Remove-MgEntitlementManagementAccessPackage](Remove-MgEntitlementManagementAccessPackage.md)
 Represents access package objects.
 
@@ -225,20 +164,8 @@ Delete navigation property assignmentPolicies for identityGovernance
 ### [Remove-MgEntitlementManagementAssignment](Remove-MgEntitlementManagementAssignment.md)
 Represents the grant of an access package to a subject (user or group).
 
-### [Remove-MgEntitlementManagementAssignmentAssignmentPolicyByRef](Remove-MgEntitlementManagementAssignmentAssignmentPolicyByRef.md)
-Delete ref of navigation property assignmentPolicy for identityGovernance
-
 ### [Remove-MgEntitlementManagementAssignmentPolicy](Remove-MgEntitlementManagementAssignmentPolicy.md)
 Delete navigation property assignmentPolicies for identityGovernance
-
-### [Remove-MgEntitlementManagementAssignmentPolicyAccessPackageByRef](Remove-MgEntitlementManagementAssignmentPolicyAccessPackageByRef.md)
-The access package with this policy.
-Read-only.
-Nullable.
-Supports $expand.
-
-### [Remove-MgEntitlementManagementAssignmentPolicyCatalogByRef](Remove-MgEntitlementManagementAssignmentPolicyCatalogByRef.md)
-Delete ref of navigation property catalog for identityGovernance
 
 ### [Remove-MgEntitlementManagementAssignmentRequest](Remove-MgEntitlementManagementAssignmentRequest.md)
 Represents access package assignment requests created by or on behalf of a user.
@@ -249,29 +176,11 @@ Represents a group of access packages.
 ### [Remove-MgEntitlementManagementConnectedOrganization](Remove-MgEntitlementManagementConnectedOrganization.md)
 Represents references to a directory or domain of another organization whose users can request access.
 
-### [Remove-MgEntitlementManagementConnectedOrganizationExternalSponsor](Remove-MgEntitlementManagementConnectedOrganizationExternalSponsor.md)
-Nullable.
-
-### [Remove-MgEntitlementManagementConnectedOrganizationInternalSponsor](Remove-MgEntitlementManagementConnectedOrganizationInternalSponsor.md)
-Nullable.
-
 ### [Remove-MgIdentityGovernanceTermOfUseAgreement](Remove-MgIdentityGovernanceTermOfUseAgreement.md)
 Represents a tenant's customizable terms of use agreement that's created and managed with Azure Active Directory (Azure AD).
 
 ### [Remove-MgIdentityGovernanceTermOfUseAgreementAcceptance](Remove-MgIdentityGovernanceTermOfUseAgreementAcceptance.md)
 Represents the current status of a user's response to a company's customizable terms of use agreement.
-
-### [Set-MgEntitlementManagementAssignmentAssignmentPolicyByRef](Set-MgEntitlementManagementAssignmentAssignmentPolicyByRef.md)
-Update the ref of navigation property assignmentPolicy in identityGovernance
-
-### [Set-MgEntitlementManagementAssignmentPolicyAccessPackageByRef](Set-MgEntitlementManagementAssignmentPolicyAccessPackageByRef.md)
-The access package with this policy.
-Read-only.
-Nullable.
-Supports $expand.
-
-### [Set-MgEntitlementManagementAssignmentPolicyCatalogByRef](Set-MgEntitlementManagementAssignmentPolicyCatalogByRef.md)
-Update the ref of navigation property catalog in identityGovernance
 
 ### [Stop-MgEntitlementManagementAssignmentRequest](Stop-MgEntitlementManagementAssignmentRequest.md)
 Invoke action cancel
@@ -290,10 +199,6 @@ Default PDF linked to this agreement.
 The localized version of the terms of use agreement files attached to the agreement.
 
 ### [Update-MgAgreementFileLocalizationVersion](Update-MgAgreementFileLocalizationVersion.md)
-Read-only.
-Customized versions of the terms of use agreement in the Azure AD tenant.
-
-### [Update-MgAgreementFileVersion](Update-MgAgreementFileVersion.md)
 Read-only.
 Customized versions of the terms of use agreement in the Azure AD tenant.
 
@@ -323,12 +228,6 @@ Represents a group of access packages.
 
 ### [Update-MgEntitlementManagementConnectedOrganization](Update-MgEntitlementManagementConnectedOrganization.md)
 Represents references to a directory or domain of another organization whose users can request access.
-
-### [Update-MgEntitlementManagementConnectedOrganizationExternalSponsor](Update-MgEntitlementManagementConnectedOrganizationExternalSponsor.md)
-Nullable.
-
-### [Update-MgEntitlementManagementConnectedOrganizationInternalSponsor](Update-MgEntitlementManagementConnectedOrganizationInternalSponsor.md)
-Nullable.
 
 ### [Update-MgEntitlementManagementSetting](Update-MgEntitlementManagementSetting.md)
 Represents the settings that control the behavior of Azure AD entitlement management.
