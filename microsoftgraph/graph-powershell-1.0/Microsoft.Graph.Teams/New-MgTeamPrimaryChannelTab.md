@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgteamprimarychanneltab
 schema: 2.0.0
@@ -13,30 +13,30 @@ A navigation property.
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgTeamPrimaryChannelTab -TeamId <String> [-AdditionalProperties <Hashtable>]
  [-Configuration <IMicrosoftGraphTeamsTabConfiguration>] [-DisplayName <String>] [-Id <String>]
- [-TeamsApp <IMicrosoftGraphTeamsApp1>] [-WebUrl <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-TeamsApp <IMicrosoftGraphTeamsApp1>] [-WebUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
-New-MgTeamPrimaryChannelTab -TeamId <String> -BodyParameter <IMicrosoftGraphTeamsTab1> [-Confirm] [-WhatIf]
+New-MgTeamPrimaryChannelTab -TeamId <String> -BodyParameter <IMicrosoftGraphTeamsTab> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### CreateViaIdentity1
-```
-New-MgTeamPrimaryChannelTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeamsTab1> [-Confirm]
- [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded1
+### CreateViaIdentityExpanded
 ```
 New-MgTeamPrimaryChannelTab -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-Configuration <IMicrosoftGraphTeamsTabConfiguration>] [-DisplayName <String>] [-Id <String>]
- [-TeamsApp <IMicrosoftGraphTeamsApp1>] [-WebUrl <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-TeamsApp <IMicrosoftGraphTeamsApp1>] [-WebUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgTeamPrimaryChannelTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeamsTab> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,8 +51,8 @@ A navigation property.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: Hashtable
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -67,8 +67,8 @@ teamsTab
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsTab1
-Parameter Sets: Create1, CreateViaIdentity1
+Type: IMicrosoftGraphTeamsTab
+Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -83,8 +83,8 @@ teamsTabConfiguration
 To construct, please use Get-Help -Online and see NOTES section for CONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsTabConfiguration
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: IMicrosoftGraphTeamsTabConfiguration
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -98,8 +98,8 @@ Accept wildcard characters: False
 Name of the tab.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -113,8 +113,8 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -129,8 +129,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-Parameter Sets: CreateViaIdentity1, CreateViaIdentityExpanded1
+Type: ITeamsIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -144,8 +144,8 @@ Accept wildcard characters: False
 key: id of team
 
 ```yaml
-Type: System.String
-Parameter Sets: Create1, CreateExpanded1
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -160,8 +160,8 @@ teamsApp
 To construct, please use Get-Help -Online and see NOTES section for TEAMSAPP properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsApp1
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: IMicrosoftGraphTeamsApp1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -176,8 +176,8 @@ Deep link URL of the tab instance.
 Read only.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -207,7 +207,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -223,14 +223,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsTab1
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsTab
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsTab1
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsTab
 ## NOTES
 
 ALIASES
@@ -351,4 +348,3 @@ TEAMSAPP <IMicrosoftGraphTeamsApp1>: teamsApp
   - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
 ## RELATED LINKS
-

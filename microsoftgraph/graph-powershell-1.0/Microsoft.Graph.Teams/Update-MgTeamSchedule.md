@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mgteamschedule
 schema: 2.0.0
@@ -12,44 +12,44 @@ The schedule of shifts for this team.
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
 Update-MgTeamSchedule -TeamId <String> [-AdditionalProperties <Hashtable>] [-Enabled] [-Id <String>]
- [-OfferShiftRequests <IMicrosoftGraphOfferShiftRequest1[]>] [-OfferShiftRequestsEnabled]
- [-OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest1[]>]
- [-OpenShifts <IMicrosoftGraphOpenShift1[]>] [-OpenShiftsEnabled] [-ProvisionStatus <String>]
- [-ProvisionStatusCode <String>] [-SchedulingGroups <IMicrosoftGraphSchedulingGroup1[]>]
- [-Shifts <IMicrosoftGraphShift1[]>] [-SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest1[]>]
- [-SwapShiftsRequestsEnabled] [-TimeClockEnabled] [-TimeOffReasons <IMicrosoftGraphTimeOffReason1[]>]
- [-TimeOffRequests <IMicrosoftGraphTimeOffRequest1[]>] [-TimeOffRequestsEnabled]
- [-TimesOff <IMicrosoftGraphTimeOff1[]>] [-TimeZone <String>] [-WorkforceIntegrationIds <String[]>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-OfferShiftRequests <IMicrosoftGraphOfferShiftRequest[]>] [-OfferShiftRequestsEnabled]
+ [-OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest[]>]
+ [-OpenShifts <IMicrosoftGraphOpenShift[]>] [-OpenShiftsEnabled] [-ProvisionStatus <String>]
+ [-ProvisionStatusCode <String>] [-SchedulingGroups <IMicrosoftGraphSchedulingGroup[]>]
+ [-Shifts <IMicrosoftGraphShift[]>] [-SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest[]>]
+ [-SwapShiftsRequestsEnabled] [-TimeClockEnabled] [-TimeOffReasons <IMicrosoftGraphTimeOffReason[]>]
+ [-TimeOffRequests <IMicrosoftGraphTimeOffRequest[]>] [-TimeOffRequestsEnabled] [-TimeZone <String>]
+ [-TimesOff <IMicrosoftGraphTimeOff[]>] [-WorkforceIntegrationIds <String[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
-### Update1
+### Update
 ```
-Update-MgTeamSchedule -TeamId <String> -BodyParameter <IMicrosoftGraphSchedule1> [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity1
-```
-Update-MgTeamSchedule -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphSchedule1> [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+Update-MgTeamSchedule -TeamId <String> -BodyParameter <IMicrosoftGraphSchedule> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded1
+### UpdateViaIdentityExpanded
 ```
 Update-MgTeamSchedule -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>] [-Enabled]
- [-Id <String>] [-OfferShiftRequests <IMicrosoftGraphOfferShiftRequest1[]>] [-OfferShiftRequestsEnabled]
- [-OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest1[]>]
- [-OpenShifts <IMicrosoftGraphOpenShift1[]>] [-OpenShiftsEnabled] [-ProvisionStatus <String>]
- [-ProvisionStatusCode <String>] [-SchedulingGroups <IMicrosoftGraphSchedulingGroup1[]>]
- [-Shifts <IMicrosoftGraphShift1[]>] [-SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest1[]>]
- [-SwapShiftsRequestsEnabled] [-TimeClockEnabled] [-TimeOffReasons <IMicrosoftGraphTimeOffReason1[]>]
- [-TimeOffRequests <IMicrosoftGraphTimeOffRequest1[]>] [-TimeOffRequestsEnabled]
- [-TimesOff <IMicrosoftGraphTimeOff1[]>] [-TimeZone <String>] [-WorkforceIntegrationIds <String[]>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Id <String>] [-OfferShiftRequests <IMicrosoftGraphOfferShiftRequest[]>] [-OfferShiftRequestsEnabled]
+ [-OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest[]>]
+ [-OpenShifts <IMicrosoftGraphOpenShift[]>] [-OpenShiftsEnabled] [-ProvisionStatus <String>]
+ [-ProvisionStatusCode <String>] [-SchedulingGroups <IMicrosoftGraphSchedulingGroup[]>]
+ [-Shifts <IMicrosoftGraphShift[]>] [-SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest[]>]
+ [-SwapShiftsRequestsEnabled] [-TimeClockEnabled] [-TimeOffReasons <IMicrosoftGraphTimeOffReason[]>]
+ [-TimeOffRequests <IMicrosoftGraphTimeOffRequest[]>] [-TimeOffRequestsEnabled] [-TimeZone <String>]
+ [-TimesOff <IMicrosoftGraphTimeOff[]>] [-WorkforceIntegrationIds <String[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgTeamSchedule -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphSchedule> [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -63,8 +63,8 @@ The schedule of shifts for this team.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -79,8 +79,8 @@ schedule
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSchedule1
-Parameter Sets: Update1, UpdateViaIdentity1
+Type: IMicrosoftGraphSchedule
+Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -95,8 +95,8 @@ Indicates whether the schedule is enabled for the team.
 Required.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -110,8 +110,8 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -126,8 +126,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-Parameter Sets: UpdateViaIdentity1, UpdateViaIdentityExpanded1
+Type: ITeamsIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -142,8 +142,8 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for OFFERSHIFTREQUESTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOfferShiftRequest1[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: IMicrosoftGraphOfferShiftRequest[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -157,8 +157,8 @@ Accept wildcard characters: False
 Indicates whether offer shift requests are enabled for the schedule.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -173,8 +173,8 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for OPENSHIFTCHANGEREQUESTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOpenShiftChangeRequest1[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: IMicrosoftGraphOpenShiftChangeRequest[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -189,8 +189,8 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for OPENSHIFTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOpenShift1[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: IMicrosoftGraphOpenShift[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -204,8 +204,8 @@ Accept wildcard characters: False
 Indicates whether open shifts are enabled for the schedule.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -219,7 +219,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -234,8 +234,8 @@ Accept wildcard characters: False
 operationStatus
 
 ```yaml
-Type: System.String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -249,8 +249,8 @@ Accept wildcard characters: False
 Additional information about why schedule provisioning failed.
 
 ```yaml
-Type: System.String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -265,8 +265,8 @@ The logical grouping of users in the schedule (usually by role).
 To construct, please use Get-Help -Online and see NOTES section for SCHEDULINGGROUPS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSchedulingGroup1[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: IMicrosoftGraphSchedulingGroup[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -281,8 +281,8 @@ The shifts in the schedule.
 To construct, please use Get-Help -Online and see NOTES section for SHIFTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphShift1[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: IMicrosoftGraphShift[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -297,8 +297,8 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for SWAPSHIFTSCHANGEREQUESTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSwapShiftsChangeRequest1[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: IMicrosoftGraphSwapShiftsChangeRequest[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -312,8 +312,8 @@ Accept wildcard characters: False
 Indicates whether swap shifts requests are enabled for the schedule.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -327,8 +327,8 @@ Accept wildcard characters: False
 key: id of team
 
 ```yaml
-Type: System.String
-Parameter Sets: Update1, UpdateExpanded1
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -342,8 +342,8 @@ Accept wildcard characters: False
 Indicates whether time clock is enabled for the schedule.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -358,8 +358,8 @@ The set of reasons for a time off in the schedule.
 To construct, please use Get-Help -Online and see NOTES section for TIMEOFFREASONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTimeOffReason1[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: IMicrosoftGraphTimeOffReason[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -374,8 +374,8 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for TIMEOFFREQUESTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTimeOffRequest1[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: IMicrosoftGraphTimeOffRequest[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -389,8 +389,8 @@ Accept wildcard characters: False
 Indicates whether time off requests are enabled for the schedule.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -405,8 +405,8 @@ The instances of times off in the schedule.
 To construct, please use Get-Help -Online and see NOTES section for TIMESOFF properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTimeOff1[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: IMicrosoftGraphTimeOff[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -421,8 +421,8 @@ Indicates the time zone of the schedule team using tz database format.
 Required.
 
 ```yaml
-Type: System.String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -436,8 +436,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: String[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -451,7 +451,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -467,7 +467,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -483,14 +483,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSchedule1
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSchedule
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -903,3 +900,4 @@ TIMESOFF <IMicrosoftGraphTimeOff1[]>: The instances of times off in the schedule
 
 ## RELATED LINKS
 
+## RELATED LINKS

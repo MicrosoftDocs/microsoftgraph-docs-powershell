@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgteamprimarychannelemail
 schema: 2.0.0
@@ -12,14 +12,14 @@ Invoke action provisionEmail
 
 ## SYNTAX
 
-### Provision1 (Default)
+### Provision (Default)
 ```
-New-MgTeamPrimaryChannelEmail -TeamId <String> [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgTeamPrimaryChannelEmail -TeamId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ProvisionViaIdentity1
+### ProvisionViaIdentity
 ```
-New-MgTeamPrimaryChannelEmail -InputObject <ITeamsIdentity> [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgTeamPrimaryChannelEmail -InputObject <ITeamsIdentity> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -34,8 +34,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-Parameter Sets: ProvisionViaIdentity1
+Type: ITeamsIdentity
+Parameter Sets: ProvisionViaIdentity
 Aliases:
 
 Required: True
@@ -49,8 +49,8 @@ Accept wildcard characters: False
 key: id of team
 
 ```yaml
-Type: System.String
-Parameter Sets: Provision1
+Type: String
+Parameter Sets: Provision
 Aliases:
 
 Required: True
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -80,7 +80,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -97,11 +97,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES
@@ -150,4 +148,3 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
 ## RELATED LINKS
-

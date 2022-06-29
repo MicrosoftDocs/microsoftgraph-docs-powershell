@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgteamprimarychannelmessage
 schema: 2.0.0
@@ -14,7 +14,7 @@ Nullable.
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgTeamPrimaryChannelMessage -TeamId <String> [-AdditionalProperties <Hashtable>]
  [-Attachments <IMicrosoftGraphChatMessageAttachment[]>] [-Body <IMicrosoftGraphItemBody>]
@@ -22,26 +22,20 @@ New-MgTeamPrimaryChannelMessage -TeamId <String> [-AdditionalProperties <Hashtab
  [-DeletedDateTime <DateTime>] [-Etag <String>] [-EventDetail <Hashtable>] [-From <Hashtable>]
  [-HostedContents <IMicrosoftGraphChatMessageHostedContent[]>] [-Id <String>] [-Importance <String>]
  [-LastEditedDateTime <DateTime>] [-LastModifiedDateTime <DateTime>] [-Locale <String>]
- [-Mentions <IMicrosoftGraphChatMessageMention1[]>] [-MessageType <String>]
+ [-Mentions <IMicrosoftGraphChatMessageMention[]>] [-MessageType <String>]
  [-PolicyViolation <IMicrosoftGraphChatMessagePolicyViolation>]
  [-Reactions <IMicrosoftGraphChatMessageReaction[]>] [-Replies <IMicrosoftGraphChatMessage1[]>]
- [-ReplyToId <String>] [-Subject <String>] [-Summary <String>] [-WebUrl <String>] [-Confirm] [-WhatIf]
+ [-ReplyToId <String>] [-Subject <String>] [-Summary <String>] [-WebUrl <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
-New-MgTeamPrimaryChannelMessage -TeamId <String> -BodyParameter <IMicrosoftGraphChatMessage1> [-Confirm]
- [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity1
-```
-New-MgTeamPrimaryChannelMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphChatMessage1>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgTeamPrimaryChannelMessage -TeamId <String> -BodyParameter <IMicrosoftGraphChatMessage1> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded1
+### CreateViaIdentityExpanded
 ```
 New-MgTeamPrimaryChannelMessage -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-Attachments <IMicrosoftGraphChatMessageAttachment[]>] [-Body <IMicrosoftGraphItemBody>]
@@ -49,11 +43,17 @@ New-MgTeamPrimaryChannelMessage -InputObject <ITeamsIdentity> [-AdditionalProper
  [-DeletedDateTime <DateTime>] [-Etag <String>] [-EventDetail <Hashtable>] [-From <Hashtable>]
  [-HostedContents <IMicrosoftGraphChatMessageHostedContent[]>] [-Id <String>] [-Importance <String>]
  [-LastEditedDateTime <DateTime>] [-LastModifiedDateTime <DateTime>] [-Locale <String>]
- [-Mentions <IMicrosoftGraphChatMessageMention1[]>] [-MessageType <String>]
+ [-Mentions <IMicrosoftGraphChatMessageMention[]>] [-MessageType <String>]
  [-PolicyViolation <IMicrosoftGraphChatMessagePolicyViolation>]
  [-Reactions <IMicrosoftGraphChatMessageReaction[]>] [-Replies <IMicrosoftGraphChatMessage1[]>]
- [-ReplyToId <String>] [-Subject <String>] [-Summary <String>] [-WebUrl <String>] [-Confirm] [-WhatIf]
+ [-ReplyToId <String>] [-Subject <String>] [-Summary <String>] [-WebUrl <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgTeamPrimaryChannelMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphChatMessage1>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -69,8 +69,8 @@ Nullable.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: Hashtable
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -85,8 +85,8 @@ References to attached objects like files, tabs, meetings etc.
 To construct, please use Get-Help -Online and see NOTES section for ATTACHMENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessageAttachment[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: IMicrosoftGraphChatMessageAttachment[]
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -101,8 +101,8 @@ itemBody
 To construct, please use Get-Help -Online and see NOTES section for BODY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemBody
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: IMicrosoftGraphItemBody
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -117,8 +117,8 @@ chatMessage
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessage1
-Parameter Sets: Create1, CreateViaIdentity1
+Type: IMicrosoftGraphChatMessage1
+Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -133,8 +133,8 @@ channelIdentity
 To construct, please use Get-Help -Online and see NOTES section for CHANNELIDENTITY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChannelIdentity
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: IMicrosoftGraphChannelIdentity
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -148,8 +148,8 @@ Accept wildcard characters: False
 If the message was sent in a chat, represents the identity of the chat.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -163,8 +163,8 @@ Accept wildcard characters: False
 Timestamp of when the chat message was created.
 
 ```yaml
-Type: System.DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: DateTime
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -179,8 +179,8 @@ Read only.
 Timestamp at which the chat message was deleted, or null if not deleted.
 
 ```yaml
-Type: System.DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: DateTime
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -195,8 +195,8 @@ Read-only.
 Version number of the chat message.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -210,8 +210,8 @@ Accept wildcard characters: False
 eventMessageDetail
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: Hashtable
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -225,8 +225,8 @@ Accept wildcard characters: False
 chatMessageFromIdentitySet
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: Hashtable
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -241,8 +241,8 @@ Content in a message hosted by Microsoft Teams - for example, images or code sni
 To construct, please use Get-Help -Online and see NOTES section for HOSTEDCONTENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessageHostedContent[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: IMicrosoftGraphChatMessageHostedContent[]
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -256,8 +256,8 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -271,8 +271,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -287,8 +287,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-Parameter Sets: CreateViaIdentity1, CreateViaIdentityExpanded1
+Type: ITeamsIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -305,8 +305,8 @@ Triggers an 'Edited' flag in the Teams UI.
 If no edits are made the value is null.
 
 ```yaml
-Type: System.DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: DateTime
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -321,8 +321,8 @@ Read only.
 Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
 
 ```yaml
-Type: System.DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: DateTime
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -337,8 +337,8 @@ Locale of the chat message set by the client.
 Always set to en-us.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -354,8 +354,8 @@ Supported entities are: user, bot, team, and channel.
 To construct, please use Get-Help -Online and see NOTES section for MENTIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessageMention1[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: IMicrosoftGraphChatMessageMention[]
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -369,8 +369,8 @@ Accept wildcard characters: False
 chatMessageType
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -385,8 +385,8 @@ chatMessagePolicyViolation
 To construct, please use Get-Help -Online and see NOTES section for POLICYVIOLATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessagePolicyViolation
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: IMicrosoftGraphChatMessagePolicyViolation
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -401,8 +401,8 @@ Reactions for this chat message (for example, Like).
 To construct, please use Get-Help -Online and see NOTES section for REACTIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessageReaction[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: IMicrosoftGraphChatMessageReaction[]
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -417,8 +417,8 @@ Replies for a specified message.
 To construct, please use Get-Help -Online and see NOTES section for REPLIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessage1[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: IMicrosoftGraphChatMessage1[]
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -434,8 +434,8 @@ ID of the parent chat message or root chat message of the thread.
 (Only applies to chat messages in channels, not chats.)
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -449,8 +449,8 @@ Accept wildcard characters: False
 The subject of the chat message, in plaintext.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -465,8 +465,8 @@ Summary text of the chat message that could be used for push notifications and s
 Only applies to channel chat messages, not chat messages in a chat.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -480,8 +480,8 @@ Accept wildcard characters: False
 key: id of team
 
 ```yaml
-Type: System.String
-Parameter Sets: Create1, CreateExpanded1
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -496,8 +496,8 @@ Read-only.
 Link to the message in Microsoft Teams.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -511,7 +511,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -527,7 +527,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -544,13 +544,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessage1
-
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessage1
-
 ## NOTES
 
 ALIASES
@@ -821,3 +818,4 @@ REPLIES <IMicrosoftGraphChatMessage1[]>: Replies for a specified message.
 
 ## RELATED LINKS
 
+## RELATED LINKS

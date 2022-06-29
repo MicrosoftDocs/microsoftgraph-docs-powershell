@@ -54,13 +54,7 @@ Nullable.
 ### [Get-MgChatInstalledAppTeamApp](Get-MgChatInstalledAppTeamApp.md)
 The app that is installed.
 
-### [Get-MgChatInstalledAppTeamAppByRef](Get-MgChatInstalledAppTeamAppByRef.md)
-The app that is installed.
-
 ### [Get-MgChatInstalledAppTeamAppDefinition](Get-MgChatInstalledAppTeamAppDefinition.md)
-The details of this version of the app.
-
-### [Get-MgChatInstalledAppTeamAppDefinitionByRef](Get-MgChatInstalledAppTeamAppDefinitionByRef.md)
 The details of this version of the app.
 
 ### [Get-MgChatMember](Get-MgChatMember.md)
@@ -91,10 +85,6 @@ Nullable.
 The application that is linked to the tab.
 This cannot be changed after tab creation.
 
-### [Get-MgChatTabTeamAppByRef](Get-MgChatTabTeamAppByRef.md)
-The application that is linked to the tab.
-This cannot be changed after tab creation.
-
 ### [Get-MgGroupTeam](Get-MgGroupTeam.md)
 Get team from groups
 
@@ -105,9 +95,6 @@ Get entity from teams by key
 The collection of channels and messages associated with the team.
 
 ### [Get-MgTeamChannelFileFolder](Get-MgTeamChannelFileFolder.md)
-Metadata for the location where the channel's files are stored.
-
-### [Get-MgTeamChannelFileFolderByRef](Get-MgTeamChannelFileFolderByRef.md)
 Metadata for the location where the channel's files are stored.
 
 ### [Get-MgTeamChannelMember](Get-MgTeamChannelMember.md)
@@ -138,26 +125,13 @@ A navigation property.
 The application that is linked to the tab.
 This cannot be changed after tab creation.
 
-### [Get-MgTeamChannelTabTeamAppByRef](Get-MgTeamChannelTabTeamAppByRef.md)
-The application that is linked to the tab.
-This cannot be changed after tab creation.
-
-### [Get-MgTeamGroupByRef](Get-MgTeamGroupByRef.md)
-Get ref of group from teams
-
 ### [Get-MgTeamInstalledApp](Get-MgTeamInstalledApp.md)
 The apps installed in this team.
 
 ### [Get-MgTeamInstalledAppTeamApp](Get-MgTeamInstalledAppTeamApp.md)
 The app that is installed.
 
-### [Get-MgTeamInstalledAppTeamAppByRef](Get-MgTeamInstalledAppTeamAppByRef.md)
-The app that is installed.
-
 ### [Get-MgTeamInstalledAppTeamAppDefinition](Get-MgTeamInstalledAppTeamAppDefinition.md)
-The details of this version of the app.
-
-### [Get-MgTeamInstalledAppTeamAppDefinitionByRef](Get-MgTeamInstalledAppTeamAppDefinitionByRef.md)
 The details of this version of the app.
 
 ### [Get-MgTeamMember](Get-MgTeamMember.md)
@@ -173,9 +147,6 @@ The async operations that ran or are running on this team.
 The general channel for the team.
 
 ### [Get-MgTeamPrimaryChannelFileFolder](Get-MgTeamPrimaryChannelFileFolder.md)
-Metadata for the location where the channel's files are stored.
-
-### [Get-MgTeamPrimaryChannelFileFolderByRef](Get-MgTeamPrimaryChannelFileFolderByRef.md)
 Metadata for the location where the channel's files are stored.
 
 ### [Get-MgTeamPrimaryChannelMember](Get-MgTeamPrimaryChannelMember.md)
@@ -203,10 +174,6 @@ A collection of all the tabs in the channel.
 A navigation property.
 
 ### [Get-MgTeamPrimaryChannelTabTeamApp](Get-MgTeamPrimaryChannelTabTeamApp.md)
-The application that is linked to the tab.
-This cannot be changed after tab creation.
-
-### [Get-MgTeamPrimaryChannelTabTeamAppByRef](Get-MgTeamPrimaryChannelTabTeamAppByRef.md)
 The application that is linked to the tab.
 This cannot be changed after tab creation.
 
@@ -244,10 +211,6 @@ Get timeOffRequests from teams
 The template this team was created from.
 See available templates.
 
-### [Get-MgTeamTemplateByRef](Get-MgTeamTemplateByRef.md)
-The template this team was created from.
-See available templates.
-
 ### [Get-MgTeamwork](Get-MgTeamwork.md)
 Get teamwork
 
@@ -271,9 +234,6 @@ Nullable.
 The apps installed in the personal scope of this user.
 
 ### [Get-MgUserTeamworkInstalledAppChat](Get-MgUserTeamworkInstalledAppChat.md)
-The chat between the user and Teams app.
-
-### [Get-MgUserTeamworkInstalledAppChatByRef](Get-MgUserTeamworkInstalledAppChatByRef.md)
 The chat between the user and Teams app.
 
 ### [Invoke-MgArchiveTeam](Invoke-MgArchiveTeam.md)
@@ -406,11 +366,6 @@ A workforce integration with shifts.
 ### [New-MgUserChat](New-MgUserChat.md)
 Create new navigation property to chats for users
 
-### [New-MgUserJoinedTeam](New-MgUserJoinedTeam.md)
-The Microsoft Teams teams that the user is a member of.
-Read-only.
-Nullable.
-
 ### [New-MgUserTeamworkInstalledApp](New-MgUserTeamworkInstalledApp.md)
 The apps installed in the personal scope of this user.
 
@@ -430,12 +385,6 @@ Delete entity from chats
 A collection of all the apps in the chat.
 Nullable.
 
-### [Remove-MgChatInstalledAppTeamAppByRef](Remove-MgChatInstalledAppTeamAppByRef.md)
-The app that is installed.
-
-### [Remove-MgChatInstalledAppTeamAppDefinitionByRef](Remove-MgChatInstalledAppTeamAppDefinitionByRef.md)
-The details of this version of the app.
-
 ### [Remove-MgChatMember](Remove-MgChatMember.md)
 A collection of all the members in the chat.
 Nullable.
@@ -443,10 +392,6 @@ Nullable.
 ### [Remove-MgChatTab](Remove-MgChatTab.md)
 A collection of all the tabs in the chat.
 Nullable.
-
-### [Remove-MgChatTabTeamAppByRef](Remove-MgChatTabTeamAppByRef.md)
-The application that is linked to the tab.
-This cannot be changed after tab creation.
 
 ### [Remove-MgGroupTeam](Remove-MgGroupTeam.md)
 Delete navigation property team for groups
@@ -460,9 +405,6 @@ The collection of channels and messages associated with the team.
 ### [Remove-MgTeamChannelEmail](Remove-MgTeamChannelEmail.md)
 Invoke action removeEmail
 
-### [Remove-MgTeamChannelFileFolderByRef](Remove-MgTeamChannelFileFolderByRef.md)
-Metadata for the location where the channel's files are stored.
-
 ### [Remove-MgTeamChannelMember](Remove-MgTeamChannelMember.md)
 A collection of membership records associated with the channel.
 
@@ -470,21 +412,8 @@ A collection of membership records associated with the channel.
 A collection of all the tabs in the channel.
 A navigation property.
 
-### [Remove-MgTeamChannelTabTeamAppByRef](Remove-MgTeamChannelTabTeamAppByRef.md)
-The application that is linked to the tab.
-This cannot be changed after tab creation.
-
-### [Remove-MgTeamGroupByRef](Remove-MgTeamGroupByRef.md)
-Delete ref of navigation property group for teams
-
 ### [Remove-MgTeamInstalledApp](Remove-MgTeamInstalledApp.md)
 The apps installed in this team.
-
-### [Remove-MgTeamInstalledAppTeamAppByRef](Remove-MgTeamInstalledAppTeamAppByRef.md)
-The app that is installed.
-
-### [Remove-MgTeamInstalledAppTeamAppDefinitionByRef](Remove-MgTeamInstalledAppTeamAppDefinitionByRef.md)
-The details of this version of the app.
 
 ### [Remove-MgTeamMember](Remove-MgTeamMember.md)
 Members and owners of the team.
@@ -498,19 +427,12 @@ The general channel for the team.
 ### [Remove-MgTeamPrimaryChannelEmail](Remove-MgTeamPrimaryChannelEmail.md)
 Invoke action removeEmail
 
-### [Remove-MgTeamPrimaryChannelFileFolderByRef](Remove-MgTeamPrimaryChannelFileFolderByRef.md)
-Metadata for the location where the channel's files are stored.
-
 ### [Remove-MgTeamPrimaryChannelMember](Remove-MgTeamPrimaryChannelMember.md)
 A collection of membership records associated with the channel.
 
 ### [Remove-MgTeamPrimaryChannelTab](Remove-MgTeamPrimaryChannelTab.md)
 A collection of all the tabs in the channel.
 A navigation property.
-
-### [Remove-MgTeamPrimaryChannelTabTeamAppByRef](Remove-MgTeamPrimaryChannelTabTeamAppByRef.md)
-The application that is linked to the tab.
-This cannot be changed after tab creation.
 
 ### [Remove-MgTeamSchedule](Remove-MgTeamSchedule.md)
 The schedule of shifts for this team.
@@ -542,20 +464,11 @@ The set of reasons for a time off in the schedule.
 ### [Remove-MgTeamScheduleTimeOffRequest](Remove-MgTeamScheduleTimeOffRequest.md)
 Delete navigation property timeOffRequests for teams
 
-### [Remove-MgTeamTemplateByRef](Remove-MgTeamTemplateByRef.md)
-The template this team was created from.
-See available templates.
-
 ### [Remove-MgTeamworkWorkforceIntegration](Remove-MgTeamworkWorkforceIntegration.md)
 A workforce integration with shifts.
 
 ### [Remove-MgUserChat](Remove-MgUserChat.md)
 Delete navigation property chats for users
-
-### [Remove-MgUserJoinedTeam](Remove-MgUserJoinedTeam.md)
-The Microsoft Teams teams that the user is a member of.
-Read-only.
-Nullable.
 
 ### [Remove-MgUserTeamwork](Remove-MgUserTeamwork.md)
 A container for Microsoft Teams features available for the user.
@@ -565,54 +478,11 @@ Nullable.
 ### [Remove-MgUserTeamworkInstalledApp](Remove-MgUserTeamworkInstalledApp.md)
 The apps installed in the personal scope of this user.
 
-### [Remove-MgUserTeamworkInstalledAppChatByRef](Remove-MgUserTeamworkInstalledAppChatByRef.md)
-The chat between the user and Teams app.
-
 ### [Send-MgChatActivityNotification](Send-MgChatActivityNotification.md)
 Invoke action sendActivityNotification
 
 ### [Send-MgTeamActivityNotification](Send-MgTeamActivityNotification.md)
 Invoke action sendActivityNotification
-
-### [Set-MgChatInstalledAppTeamAppByRef](Set-MgChatInstalledAppTeamAppByRef.md)
-The app that is installed.
-
-### [Set-MgChatInstalledAppTeamAppDefinitionByRef](Set-MgChatInstalledAppTeamAppDefinitionByRef.md)
-The details of this version of the app.
-
-### [Set-MgChatTabTeamAppByRef](Set-MgChatTabTeamAppByRef.md)
-The application that is linked to the tab.
-This cannot be changed after tab creation.
-
-### [Set-MgTeamChannelFileFolderByRef](Set-MgTeamChannelFileFolderByRef.md)
-Metadata for the location where the channel's files are stored.
-
-### [Set-MgTeamChannelTabTeamAppByRef](Set-MgTeamChannelTabTeamAppByRef.md)
-The application that is linked to the tab.
-This cannot be changed after tab creation.
-
-### [Set-MgTeamGroupByRef](Set-MgTeamGroupByRef.md)
-Update the ref of navigation property group in teams
-
-### [Set-MgTeamInstalledAppTeamAppByRef](Set-MgTeamInstalledAppTeamAppByRef.md)
-The app that is installed.
-
-### [Set-MgTeamInstalledAppTeamAppDefinitionByRef](Set-MgTeamInstalledAppTeamAppDefinitionByRef.md)
-The details of this version of the app.
-
-### [Set-MgTeamPrimaryChannelFileFolderByRef](Set-MgTeamPrimaryChannelFileFolderByRef.md)
-Metadata for the location where the channel's files are stored.
-
-### [Set-MgTeamPrimaryChannelTabTeamAppByRef](Set-MgTeamPrimaryChannelTabTeamAppByRef.md)
-The application that is linked to the tab.
-This cannot be changed after tab creation.
-
-### [Set-MgTeamTemplateByRef](Set-MgTeamTemplateByRef.md)
-The template this team was created from.
-See available templates.
-
-### [Set-MgUserTeamworkInstalledAppChatByRef](Set-MgUserTeamworkInstalledAppChatByRef.md)
-The chat between the user and Teams app.
 
 ### [Update-MgAppCatalogTeamApp](Update-MgAppCatalogTeamApp.md)
 Update the navigation property teamsApps in appCatalogs
@@ -735,16 +605,8 @@ A workforce integration with shifts.
 ### [Update-MgUserChat](Update-MgUserChat.md)
 Update the navigation property chats in users
 
-### [Update-MgUserJoinedTeam](Update-MgUserJoinedTeam.md)
-The Microsoft Teams teams that the user is a member of.
-Read-only.
-Nullable.
-
 ### [Update-MgUserTeamwork](Update-MgUserTeamwork.md)
 A container for Microsoft Teams features available for the user.
 Read-only.
 Nullable.
-
-### [Update-MgUserTeamworkInstalledApp](Update-MgUserTeamworkInstalledApp.md)
-The apps installed in the personal scope of this user.
 
