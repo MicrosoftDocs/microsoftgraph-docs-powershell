@@ -20,9 +20,6 @@ The list of detected apps associated with a device.
 ### [Get-MgDeviceManagementDetectedAppManagedDevice](Get-MgDeviceManagementDetectedAppManagedDevice.md)
 The devices that have the discovered application installed
 
-### [Get-MgDeviceManagementDetectedAppManagedDeviceByRef](Get-MgDeviceManagementDetectedAppManagedDeviceByRef.md)
-The devices that have the discovered application installed
-
 ### [Get-MgDeviceManagementDeviceCategory](Get-MgDeviceManagementDeviceCategory.md)
 The list of device categories with the tenant.
 
@@ -43,10 +40,6 @@ List of DeviceComplianceDeviceStatus.
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview](Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview.md)
 Device compliance devices status overview
-
-### [Get-MgDeviceManagementDeviceCompliancePolicyScheduledAction](Get-MgDeviceManagementDeviceCompliancePolicyScheduledAction.md)
-The list of scheduled action per rule for this compliance policy.
-This is a required property when creating any individual per-platform compliance policies.
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration.md)
 The list of scheduled action configurations for this compliance policy.
@@ -103,9 +96,6 @@ Device configuration states for this device.
 ### [Get-MgDeviceManagementManagedDeviceOverview](Get-MgDeviceManagementManagedDeviceOverview.md)
 Device overview
 
-### [Get-MgDeviceManagementManagedDeviceOverviewByRef](Get-MgDeviceManagementManagedDeviceOverviewByRef.md)
-Device overview
-
 ### [Get-MgDeviceManagementNotificationMessageTemplate](Get-MgDeviceManagementNotificationMessageTemplate.md)
 The Notification Message Templates.
 
@@ -113,9 +103,6 @@ The Notification Message Templates.
 The list of localized messages for this Notification Message Template.
 
 ### [Get-MgDeviceManagementSoftwareUpdateStatusSummary](Get-MgDeviceManagementSoftwareUpdateStatusSummary.md)
-The software update status summary.
-
-### [Get-MgDeviceManagementSoftwareUpdateStatusSummaryByRef](Get-MgDeviceManagementSoftwareUpdateStatusSummaryByRef.md)
 The software update status summary.
 
 ### [Get-MgDeviceManagementTroubleshootingEvent](Get-MgDeviceManagementTroubleshootingEvent.md)
@@ -129,9 +116,6 @@ The windows information protection network learning summaries.
 
 ### [New-MgDeviceManagementDetectedApp](New-MgDeviceManagementDetectedApp.md)
 The list of detected apps associated with a device.
-
-### [New-MgDeviceManagementDetectedAppManagedDeviceByRef](New-MgDeviceManagementDetectedAppManagedDeviceByRef.md)
-The devices that have the discovered application installed
 
 ### [New-MgDeviceManagementDeviceCategory](New-MgDeviceManagementDeviceCategory.md)
 The list of device categories with the tenant.
@@ -147,10 +131,6 @@ Compliance Setting State Device Summary
 
 ### [New-MgDeviceManagementDeviceCompliancePolicyDeviceStatuses](New-MgDeviceManagementDeviceCompliancePolicyDeviceStatuses.md)
 List of DeviceComplianceDeviceStatus.
-
-### [New-MgDeviceManagementDeviceCompliancePolicyScheduledAction](New-MgDeviceManagementDeviceCompliancePolicyScheduledAction.md)
-The list of scheduled action per rule for this compliance policy.
-This is a required property when creating any individual per-platform compliance policies.
 
 ### [New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration.md)
 The list of scheduled action configurations for this compliance policy.
@@ -228,10 +208,6 @@ List of DeviceComplianceDeviceStatus.
 ### [Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview](Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview.md)
 Device compliance devices status overview
 
-### [Remove-MgDeviceManagementDeviceCompliancePolicyScheduledAction](Remove-MgDeviceManagementDeviceCompliancePolicyScheduledAction.md)
-The list of scheduled action per rule for this compliance policy.
-This is a required property when creating any individual per-platform compliance policies.
-
 ### [Remove-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](Remove-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration.md)
 The list of scheduled action configurations for this compliance policy.
 Compliance policy must have one and only one block scheduled action.
@@ -284,17 +260,11 @@ Device compliance policy states for this device.
 ### [Remove-MgDeviceManagementManagedDeviceConfigurationState](Remove-MgDeviceManagementManagedDeviceConfigurationState.md)
 Device configuration states for this device.
 
-### [Remove-MgDeviceManagementManagedDeviceOverviewByRef](Remove-MgDeviceManagementManagedDeviceOverviewByRef.md)
-Device overview
-
 ### [Remove-MgDeviceManagementNotificationMessageTemplate](Remove-MgDeviceManagementNotificationMessageTemplate.md)
 The Notification Message Templates.
 
 ### [Remove-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage](Remove-MgDeviceManagementNotificationMessageTemplateLocalizedNotificationMessage.md)
 The list of localized messages for this Notification Message Template.
-
-### [Remove-MgDeviceManagementSoftwareUpdateStatusSummaryByRef](Remove-MgDeviceManagementSoftwareUpdateStatusSummaryByRef.md)
-The software update status summary.
 
 ### [Remove-MgDeviceManagementTroubleshootingEvent](Remove-MgDeviceManagementTroubleshootingEvent.md)
 The list of troubleshooting events for the tenant.
@@ -304,12 +274,6 @@ The windows information protection app learning summaries.
 
 ### [Remove-MgDeviceManagementWindowInformationProtectionNetworkLearningSummary](Remove-MgDeviceManagementWindowInformationProtectionNetworkLearningSummary.md)
 The windows information protection network learning summaries.
-
-### [Set-MgDeviceManagementManagedDeviceOverviewByRef](Set-MgDeviceManagementManagedDeviceOverviewByRef.md)
-Device overview
-
-### [Set-MgDeviceManagementSoftwareUpdateStatusSummaryByRef](Set-MgDeviceManagementSoftwareUpdateStatusSummaryByRef.md)
-The software update status summary.
 
 ### [Update-MgDeviceManagement](Update-MgDeviceManagement.md)
 Update deviceManagement
@@ -337,10 +301,6 @@ List of DeviceComplianceDeviceStatus.
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview](Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview.md)
 Device compliance devices status overview
-
-### [Update-MgDeviceManagementDeviceCompliancePolicyScheduledAction](Update-MgDeviceManagementDeviceCompliancePolicyScheduledAction.md)
-The list of scheduled action per rule for this compliance policy.
-This is a required property when creating any individual per-platform compliance policies.
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](Update-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration.md)
 The list of scheduled action configurations for this compliance policy.
