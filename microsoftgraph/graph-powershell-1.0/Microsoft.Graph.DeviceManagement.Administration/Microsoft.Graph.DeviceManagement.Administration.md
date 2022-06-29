@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 Module Guid: ce7c7fdf-8125-44b9-be8c-88fb1abf0347
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration
@@ -47,9 +47,6 @@ List of Role assignments for this role definition.
 ### [Get-MgDeviceManagementRoleDefinitionRoleAssignmentRoleDefinition](Get-MgDeviceManagementRoleDefinitionRoleAssignmentRoleDefinition.md)
 Role definition this assignment is part of.
 
-### [Get-MgDeviceManagementRoleDefinitionRoleAssignmentRoleDefinitionByRef](Get-MgDeviceManagementRoleDefinitionRoleAssignmentRoleDefinitionByRef.md)
-Role definition this assignment is part of.
-
 ### [Get-MgDeviceManagementTelecomExpenseManagementPartner](Get-MgDeviceManagementTelecomExpenseManagementPartner.md)
 The telecom expense management partners.
 
@@ -60,9 +57,6 @@ The terms and conditions associated with device management of the company.
 The list of acceptance statuses for this T&C policy.
 
 ### [Get-MgDeviceManagementTermAndConditionAcceptanceStatusesTermAndCondition](Get-MgDeviceManagementTermAndConditionAcceptanceStatusesTermAndCondition.md)
-Navigation link to the terms and conditions that are assigned.
-
-### [Get-MgDeviceManagementTermAndConditionAcceptanceStatusesTermAndConditionByRef](Get-MgDeviceManagementTermAndConditionAcceptanceStatusesTermAndConditionByRef.md)
 Navigation link to the terms and conditions that are assigned.
 
 ### [Get-MgDeviceManagementTermAndConditionAssignment](Get-MgDeviceManagementTermAndConditionAssignment.md)
@@ -143,9 +137,6 @@ The Role Definitions.
 ### [Remove-MgDeviceManagementRoleDefinitionRoleAssignment](Remove-MgDeviceManagementRoleDefinitionRoleAssignment.md)
 List of Role assignments for this role definition.
 
-### [Remove-MgDeviceManagementRoleDefinitionRoleAssignmentRoleDefinitionByRef](Remove-MgDeviceManagementRoleDefinitionRoleAssignmentRoleDefinitionByRef.md)
-Role definition this assignment is part of.
-
 ### [Remove-MgDeviceManagementTelecomExpenseManagementPartner](Remove-MgDeviceManagementTelecomExpenseManagementPartner.md)
 The telecom expense management partners.
 
@@ -155,17 +146,8 @@ The terms and conditions associated with device management of the company.
 ### [Remove-MgDeviceManagementTermAndConditionAcceptanceStatuses](Remove-MgDeviceManagementTermAndConditionAcceptanceStatuses.md)
 The list of acceptance statuses for this T&C policy.
 
-### [Remove-MgDeviceManagementTermAndConditionAcceptanceStatusesTermAndConditionByRef](Remove-MgDeviceManagementTermAndConditionAcceptanceStatusesTermAndConditionByRef.md)
-Navigation link to the terms and conditions that are assigned.
-
 ### [Remove-MgDeviceManagementTermAndConditionAssignment](Remove-MgDeviceManagementTermAndConditionAssignment.md)
 The list of assignments for this T&C policy.
-
-### [Set-MgDeviceManagementRoleDefinitionRoleAssignmentRoleDefinitionByRef](Set-MgDeviceManagementRoleDefinitionRoleAssignmentRoleDefinitionByRef.md)
-Role definition this assignment is part of.
-
-### [Set-MgDeviceManagementTermAndConditionAcceptanceStatusesTermAndConditionByRef](Set-MgDeviceManagementTermAndConditionAcceptanceStatusesTermAndConditionByRef.md)
-Navigation link to the terms and conditions that are assigned.
 
 ### [Update-MgDeviceManagementApplePushNotificationCertificate](Update-MgDeviceManagementApplePushNotificationCertificate.md)
 Apple push notification certificate.

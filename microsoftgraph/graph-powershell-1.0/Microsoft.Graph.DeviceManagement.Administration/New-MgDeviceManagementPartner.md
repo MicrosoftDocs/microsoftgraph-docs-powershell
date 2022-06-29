@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementpartner
 schema: 2.0.0
@@ -15,14 +15,15 @@ The list of Device Management Partners configured by the tenant.
 ### CreateExpanded (Default)
 ```
 New-MgDeviceManagementPartner [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
- [-IsConfigured] [-LastHeartbeatDateTime <DateTime>] [-PartnerAppType <String>] [-PartnerState <String>]
- [-SingleTenantAppId <String>] [-WhenPartnerDevicesWillBeMarkedAsNonCompliantDateTime <DateTime>]
- [-WhenPartnerDevicesWillBeRemovedDateTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-IsConfigured] [-LastHeartbeatDateTime <DateTime>] [-PartnerAppType <DeviceManagementPartnerAppType>]
+ [-PartnerState <DeviceManagementPartnerTenantState>] [-SingleTenantAppId <String>]
+ [-WhenPartnerDevicesWillBeMarkedAsNonCompliantDateTime <DateTime>]
+ [-WhenPartnerDevicesWillBeRemovedDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementPartner -BodyParameter <IMicrosoftGraphDeviceManagementPartner> [-Confirm] [-WhatIf]
+New-MgDeviceManagementPartner -BodyParameter <IMicrosoftGraphDeviceManagementPartner1> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -37,7 +38,7 @@ The list of Device Management Partners configured by the tenant.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -53,7 +54,7 @@ Entity which represents a connection to device management partner.
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementPartner
+Type: IMicrosoftGraphDeviceManagementPartner1
 Parameter Sets: Create
 Aliases:
 
@@ -68,7 +69,7 @@ Accept wildcard characters: False
 Partner display name
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -83,7 +84,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -98,7 +99,7 @@ Accept wildcard characters: False
 Whether device management partner is configured or not
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -113,7 +114,7 @@ Accept wildcard characters: False
 Timestamp of last heartbeat after admin enabled option Connect to Device management Partner
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -128,7 +129,7 @@ Accept wildcard characters: False
 Partner App Type.
 
 ```yaml
-Type: System.String
+Type: DeviceManagementPartnerAppType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -143,7 +144,7 @@ Accept wildcard characters: False
 Partner state of this tenant.
 
 ```yaml
-Type: System.String
+Type: DeviceManagementPartnerTenantState
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -158,7 +159,7 @@ Accept wildcard characters: False
 Partner Single tenant App id
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -173,7 +174,7 @@ Accept wildcard characters: False
 DateTime in UTC when PartnerDevices will be marked as NonCompliant
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -188,7 +189,7 @@ Accept wildcard characters: False
 DateTime in UTC when PartnerDevices will be removed
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -203,7 +204,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -219,7 +220,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -235,12 +236,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementPartner
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementPartner1
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementPartner
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementPartner1
 ## NOTES
 
 ALIASES
@@ -263,4 +262,3 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagementPartner>: Entity which represents 
   - `[WhenPartnerDevicesWillBeRemovedDateTime <DateTime?>]`: DateTime in UTC when PartnerDevices will be removed
 
 ## RELATED LINKS
-
