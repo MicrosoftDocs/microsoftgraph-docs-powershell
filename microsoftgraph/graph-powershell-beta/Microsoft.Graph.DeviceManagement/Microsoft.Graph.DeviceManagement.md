@@ -59,9 +59,6 @@ Device configuration states for this device.
 ### [Get-MgDeviceManagementComanagedDeviceDetectedApp](Get-MgDeviceManagementComanagedDeviceDetectedApp.md)
 All applications currently installed on the device
 
-### [Get-MgDeviceManagementComanagedDeviceDetectedAppByRef](Get-MgDeviceManagementComanagedDeviceDetectedAppByRef.md)
-All applications currently installed on the device
-
 ### [Get-MgDeviceManagementComanagedDeviceLogCollectionRequest](Get-MgDeviceManagementComanagedDeviceLogCollectionRequest.md)
 List of log collection requests
 
@@ -77,30 +74,12 @@ The security baseline state for different settings for a device
 ### [Get-MgDeviceManagementComanagedDeviceUser](Get-MgDeviceManagementComanagedDeviceUser.md)
 The primary users associated with the managed device.
 
-### [Get-MgDeviceManagementComanagedDeviceUserByRef](Get-MgDeviceManagementComanagedDeviceUserByRef.md)
-The primary users associated with the managed device.
-
 ### [Get-MgDeviceManagementComanagedDeviceWindowProtectionState](Get-MgDeviceManagementComanagedDeviceWindowProtectionState.md)
 The device protection status.
 This property is read-only.
 
 ### [Get-MgDeviceManagementComanagedDeviceWindowProtectionStateDetectedMalwareState](Get-MgDeviceManagementComanagedDeviceWindowProtectionStateDetectedMalwareState.md)
 Device malware list
-
-### [Get-MgDeviceManagementCondition](Get-MgDeviceManagementCondition.md)
-The management conditions associated with device management of the company.
-
-### [Get-MgDeviceManagementConditionManagementConditionStatementByRef](Get-MgDeviceManagementConditionManagementConditionStatementByRef.md)
-The management condition statements associated to the management condition.
-
-### [Get-MgDeviceManagementConditionStatement](Get-MgDeviceManagementConditionStatement.md)
-The management condition statements associated with device management of the company.
-
-### [Get-MgDeviceManagementConditionStatementManagementCondition](Get-MgDeviceManagementConditionStatementManagementCondition.md)
-The management conditions associated to the management condition statement.
-
-### [Get-MgDeviceManagementConditionStatementManagementConditionByRef](Get-MgDeviceManagementConditionStatementManagementConditionByRef.md)
-The management conditions associated to the management condition statement.
 
 ### [Get-MgDeviceManagementDataSharingConsent](Get-MgDeviceManagementDataSharingConsent.md)
 Data sharing consents.
@@ -112,9 +91,6 @@ Collection of Derived credential settings associated with account.
 The list of detected apps associated with a device.
 
 ### [Get-MgDeviceManagementDetectedAppManagedDevice](Get-MgDeviceManagementDetectedAppManagedDevice.md)
-The devices that have the discovered application installed
-
-### [Get-MgDeviceManagementDetectedAppManagedDeviceByRef](Get-MgDeviceManagementDetectedAppManagedDeviceByRef.md)
 The devices that have the discovered application installed
 
 ### [Get-MgDeviceManagementDeviceCategory](Get-MgDeviceManagementDeviceCategory.md)
@@ -137,10 +113,6 @@ List of DeviceComplianceDeviceStatus.
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview](Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview.md)
 Device compliance devices status overview
-
-### [Get-MgDeviceManagementDeviceCompliancePolicyScheduledAction](Get-MgDeviceManagementDeviceCompliancePolicyScheduledAction.md)
-The list of scheduled action per rule for this compliance policy.
-This is a required property when creating any individual per-platform compliance policies.
 
 ### [Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration.md)
 The list of scheduled action configurations for this compliance policy.
@@ -185,9 +157,6 @@ The list of group assignments for the device configuration profile.
 ### [Get-MgDeviceManagementDeviceConfigurationGroupAssignmentDeviceConfiguration](Get-MgDeviceManagementDeviceConfigurationGroupAssignmentDeviceConfiguration.md)
 The navigation link to the Device Configuration being targeted.
 
-### [Get-MgDeviceManagementDeviceConfigurationGroupAssignmentDeviceConfigurationByRef](Get-MgDeviceManagementDeviceConfigurationGroupAssignmentDeviceConfigurationByRef.md)
-The navigation link to the Device Configuration being targeted.
-
 ### [Get-MgDeviceManagementDeviceConfigurationUserStateSummary](Get-MgDeviceManagementDeviceConfigurationUserStateSummary.md)
 The device configuration user state summary for this account.
 
@@ -209,9 +178,6 @@ List of run states for the device health script across all devices
 ### [Get-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice](Get-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice.md)
 The managed device on which the device health script executed
 
-### [Get-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceByRef](Get-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceByRef.md)
-The managed device on which the device health script executed
-
 ### [Get-MgDeviceManagementDeviceHealthScriptRunSummary](Get-MgDeviceManagementDeviceHealthScriptRunSummary.md)
 High level run summary for device health script.
 
@@ -227,16 +193,10 @@ List of run states for this script across all devices.
 ### [Get-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDevice](Get-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDevice.md)
 The managed devices that executes the device management script.
 
-### [Get-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceByRef](Get-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceByRef.md)
-The managed devices that executes the device management script.
-
 ### [Get-MgDeviceManagementDeviceShellScriptGroupAssignment](Get-MgDeviceManagementDeviceShellScriptGroupAssignment.md)
 The list of group assignments for the device management script.
 
 ### [Get-MgDeviceManagementDeviceShellScriptRunSummary](Get-MgDeviceManagementDeviceShellScriptRunSummary.md)
-Run summary for device management script.
-
-### [Get-MgDeviceManagementDeviceShellScriptRunSummaryByRef](Get-MgDeviceManagementDeviceShellScriptRunSummaryByRef.md)
 Run summary for device management script.
 
 ### [Get-MgDeviceManagementDeviceShellScriptUserRunState](Get-MgDeviceManagementDeviceShellScriptUserRunState.md)
@@ -264,9 +224,6 @@ The list of group assignments for the configuration.
 The list of enabled or disabled group policy definition values for the configuration.
 
 ### [Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValueDefinition](Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValueDefinition.md)
-The associated group policy definition with the value.
-
-### [Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValueDefinitionByRef](Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValueDefinitionByRef.md)
 The associated group policy definition with the value.
 
 ### [Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue](Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue.md)
@@ -329,9 +286,6 @@ Device configuration states for this device.
 ### [Get-MgDeviceManagementManagedDeviceDetectedApp](Get-MgDeviceManagementManagedDeviceDetectedApp.md)
 All applications currently installed on the device
 
-### [Get-MgDeviceManagementManagedDeviceDetectedAppByRef](Get-MgDeviceManagementManagedDeviceDetectedAppByRef.md)
-All applications currently installed on the device
-
 ### [Get-MgDeviceManagementManagedDeviceEncryptionState](Get-MgDeviceManagementManagedDeviceEncryptionState.md)
 Encryption report for devices in this account
 
@@ -344,9 +298,6 @@ Managed device mobile app configuration states for this device.
 ### [Get-MgDeviceManagementManagedDeviceOverview](Get-MgDeviceManagementManagedDeviceOverview.md)
 Device overview
 
-### [Get-MgDeviceManagementManagedDeviceOverviewByRef](Get-MgDeviceManagementManagedDeviceOverviewByRef.md)
-Device overview
-
 ### [Get-MgDeviceManagementManagedDeviceSecurityBaselineState](Get-MgDeviceManagementManagedDeviceSecurityBaselineState.md)
 Security baseline states for this device.
 
@@ -354,9 +305,6 @@ Security baseline states for this device.
 The security baseline state for different settings for a device
 
 ### [Get-MgDeviceManagementManagedDeviceUser](Get-MgDeviceManagementManagedDeviceUser.md)
-The primary users associated with the managed device.
-
-### [Get-MgDeviceManagementManagedDeviceUserByRef](Get-MgDeviceManagementManagedDeviceUserByRef.md)
 The primary users associated with the managed device.
 
 ### [Get-MgDeviceManagementManagedDeviceWindowProtectionState](Get-MgDeviceManagementManagedDeviceWindowProtectionState.md)
@@ -417,16 +365,10 @@ List of run states for this script across all devices.
 ### [Get-MgDeviceManagementScriptDeviceRunStateManagedDevice](Get-MgDeviceManagementScriptDeviceRunStateManagedDevice.md)
 The managed devices that executes the device management script.
 
-### [Get-MgDeviceManagementScriptDeviceRunStateManagedDeviceByRef](Get-MgDeviceManagementScriptDeviceRunStateManagedDeviceByRef.md)
-The managed devices that executes the device management script.
-
 ### [Get-MgDeviceManagementScriptGroupAssignment](Get-MgDeviceManagementScriptGroupAssignment.md)
 The list of group assignments for the device management script.
 
 ### [Get-MgDeviceManagementScriptRunSummary](Get-MgDeviceManagementScriptRunSummary.md)
-Run summary for device management script.
-
-### [Get-MgDeviceManagementScriptRunSummaryByRef](Get-MgDeviceManagementScriptRunSummaryByRef.md)
 Run summary for device management script.
 
 ### [Get-MgDeviceManagementScriptUserRunState](Get-MgDeviceManagementScriptUserRunState.md)
@@ -439,9 +381,6 @@ List of run states for this script across all devices of specific user.
 The device management intent setting definitions
 
 ### [Get-MgDeviceManagementSoftwareUpdateStatusSummary](Get-MgDeviceManagementSoftwareUpdateStatusSummary.md)
-The software update status summary.
-
-### [Get-MgDeviceManagementSoftwareUpdateStatusSummaryByRef](Get-MgDeviceManagementSoftwareUpdateStatusSummaryByRef.md)
 The software update status summary.
 
 ### [Get-MgDeviceManagementTemplate](Get-MgDeviceManagementTemplate.md)
@@ -474,7 +413,7 @@ User experience analytics appHealth Application Performance by App Version detai
 ### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId](Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId.md)
 User experience analytics appHealth Application Performance by App Version Device Id
 
-### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOSVersion](Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOSVersion.md)
+### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion](Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion.md)
 User experience analytics appHealth Application Performance by OS Version
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance](Get-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance.md)
@@ -501,43 +440,22 @@ User experience analytics baselines
 ### [Get-MgDeviceManagementUserExperienceAnalyticBaselineAppHealthMetric](Get-MgDeviceManagementUserExperienceAnalyticBaselineAppHealthMetric.md)
 The user experience analytics app health metrics.
 
-### [Get-MgDeviceManagementUserExperienceAnalyticBaselineAppHealthMetricByRef](Get-MgDeviceManagementUserExperienceAnalyticBaselineAppHealthMetricByRef.md)
-The user experience analytics app health metrics.
-
 ### [Get-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetric](Get-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetric.md)
-The user experience analytics battery health metrics.
-
-### [Get-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetricByRef](Get-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetricByRef.md)
 The user experience analytics battery health metrics.
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetric](Get-MgDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetric.md)
 The user experience analytics best practices metrics.
 
-### [Get-MgDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetricByRef](Get-MgDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetricByRef.md)
-The user experience analytics best practices metrics.
-
 ### [Get-MgDeviceManagementUserExperienceAnalyticBaselineDeviceBootPerformanceMetric](Get-MgDeviceManagementUserExperienceAnalyticBaselineDeviceBootPerformanceMetric.md)
-The user experience analytics device boot performance metrics.
-
-### [Get-MgDeviceManagementUserExperienceAnalyticBaselineDeviceBootPerformanceMetricByRef](Get-MgDeviceManagementUserExperienceAnalyticBaselineDeviceBootPerformanceMetricByRef.md)
 The user experience analytics device boot performance metrics.
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticBaselineRebootAnalyticMetric](Get-MgDeviceManagementUserExperienceAnalyticBaselineRebootAnalyticMetric.md)
 The user experience analytics reboot analytics metrics.
 
-### [Get-MgDeviceManagementUserExperienceAnalyticBaselineRebootAnalyticMetricByRef](Get-MgDeviceManagementUserExperienceAnalyticBaselineRebootAnalyticMetricByRef.md)
-The user experience analytics reboot analytics metrics.
-
 ### [Get-MgDeviceManagementUserExperienceAnalyticBaselineResourcePerformanceMetric](Get-MgDeviceManagementUserExperienceAnalyticBaselineResourcePerformanceMetric.md)
 The user experience analytics resource performance metrics.
 
-### [Get-MgDeviceManagementUserExperienceAnalyticBaselineResourcePerformanceMetricByRef](Get-MgDeviceManagementUserExperienceAnalyticBaselineResourcePerformanceMetricByRef.md)
-The user experience analytics resource performance metrics.
-
 ### [Get-MgDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetric](Get-MgDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetric.md)
-The user experience analytics work from anywhere metrics.
-
-### [Get-MgDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetricByRef](Get-MgDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetricByRef.md)
 The user experience analytics work from anywhere metrics.
 
 ### [Get-MgDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact](Get-MgDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact.md)
@@ -681,9 +599,6 @@ Device compliance policy states for this device.
 ### [New-MgDeviceManagementComanagedDeviceConfigurationState](New-MgDeviceManagementComanagedDeviceConfigurationState.md)
 Device configuration states for this device.
 
-### [New-MgDeviceManagementComanagedDeviceDetectedAppByRef](New-MgDeviceManagementComanagedDeviceDetectedAppByRef.md)
-All applications currently installed on the device
-
 ### [New-MgDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationState](New-MgDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationState.md)
 Managed device mobile app configuration states for this device.
 
@@ -693,23 +608,8 @@ Security baseline states for this device.
 ### [New-MgDeviceManagementComanagedDeviceSecurityBaselineStateSettingState](New-MgDeviceManagementComanagedDeviceSecurityBaselineStateSettingState.md)
 The security baseline state for different settings for a device
 
-### [New-MgDeviceManagementComanagedDeviceUserByRef](New-MgDeviceManagementComanagedDeviceUserByRef.md)
-The primary users associated with the managed device.
-
 ### [New-MgDeviceManagementComanagedDeviceWindowProtectionStateDetectedMalwareState](New-MgDeviceManagementComanagedDeviceWindowProtectionStateDetectedMalwareState.md)
 Device malware list
-
-### [New-MgDeviceManagementCondition](New-MgDeviceManagementCondition.md)
-The management conditions associated with device management of the company.
-
-### [New-MgDeviceManagementConditionManagementConditionStatementByRef](New-MgDeviceManagementConditionManagementConditionStatementByRef.md)
-The management condition statements associated to the management condition.
-
-### [New-MgDeviceManagementConditionStatement](New-MgDeviceManagementConditionStatement.md)
-The management condition statements associated with device management of the company.
-
-### [New-MgDeviceManagementConditionStatementManagementConditionByRef](New-MgDeviceManagementConditionStatementManagementConditionByRef.md)
-The management conditions associated to the management condition statement.
 
 ### [New-MgDeviceManagementDataSharingConsent](New-MgDeviceManagementDataSharingConsent.md)
 Data sharing consents.
@@ -719,9 +619,6 @@ Collection of Derived credential settings associated with account.
 
 ### [New-MgDeviceManagementDetectedApp](New-MgDeviceManagementDetectedApp.md)
 The list of detected apps associated with a device.
-
-### [New-MgDeviceManagementDetectedAppManagedDeviceByRef](New-MgDeviceManagementDetectedAppManagedDeviceByRef.md)
-The devices that have the discovered application installed
 
 ### [New-MgDeviceManagementDeviceCategory](New-MgDeviceManagementDeviceCategory.md)
 The list of device categories with the tenant.
@@ -737,10 +634,6 @@ Compliance Setting State Device Summary
 
 ### [New-MgDeviceManagementDeviceCompliancePolicyDeviceStatuses](New-MgDeviceManagementDeviceCompliancePolicyDeviceStatuses.md)
 List of DeviceComplianceDeviceStatus.
-
-### [New-MgDeviceManagementDeviceCompliancePolicyScheduledAction](New-MgDeviceManagementDeviceCompliancePolicyScheduledAction.md)
-The list of scheduled action per rule for this compliance policy.
-This is a required property when creating any individual per-platform compliance policies.
 
 ### [New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration.md)
 The list of scheduled action configurations for this compliance policy.
@@ -869,9 +762,6 @@ Device compliance policy states for this device.
 ### [New-MgDeviceManagementManagedDeviceConfigurationState](New-MgDeviceManagementManagedDeviceConfigurationState.md)
 Device configuration states for this device.
 
-### [New-MgDeviceManagementManagedDeviceDetectedAppByRef](New-MgDeviceManagementManagedDeviceDetectedAppByRef.md)
-All applications currently installed on the device
-
 ### [New-MgDeviceManagementManagedDeviceEncryptionState](New-MgDeviceManagementManagedDeviceEncryptionState.md)
 Encryption report for devices in this account
 
@@ -883,9 +773,6 @@ Security baseline states for this device.
 
 ### [New-MgDeviceManagementManagedDeviceSecurityBaselineStateSettingState](New-MgDeviceManagementManagedDeviceSecurityBaselineStateSettingState.md)
 The security baseline state for different settings for a device
-
-### [New-MgDeviceManagementManagedDeviceUserByRef](New-MgDeviceManagementManagedDeviceUserByRef.md)
-The primary users associated with the managed device.
 
 ### [New-MgDeviceManagementManagedDeviceWindowProtectionStateDetectedMalwareState](New-MgDeviceManagementManagedDeviceWindowProtectionStateDetectedMalwareState.md)
 Device malware list
@@ -977,7 +864,7 @@ User experience analytics appHealth Application Performance by App Version detai
 ### [New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId](New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId.md)
 User experience analytics appHealth Application Performance by App Version Device Id
 
-### [New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOSVersion](New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOSVersion.md)
+### [New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion](New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion.md)
 User experience analytics appHealth Application Performance by OS Version
 
 ### [New-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance](New-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance.md)
@@ -1155,12 +1042,6 @@ This property is read-only.
 ### [Remove-MgDeviceManagementComanagedDeviceWindowProtectionStateDetectedMalwareState](Remove-MgDeviceManagementComanagedDeviceWindowProtectionStateDetectedMalwareState.md)
 Device malware list
 
-### [Remove-MgDeviceManagementCondition](Remove-MgDeviceManagementCondition.md)
-The management conditions associated with device management of the company.
-
-### [Remove-MgDeviceManagementConditionStatement](Remove-MgDeviceManagementConditionStatement.md)
-The management condition statements associated with device management of the company.
-
 ### [Remove-MgDeviceManagementDataSharingConsent](Remove-MgDeviceManagementDataSharingConsent.md)
 Data sharing consents.
 
@@ -1190,10 +1071,6 @@ List of DeviceComplianceDeviceStatus.
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview](Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview.md)
 Device compliance devices status overview
-
-### [Remove-MgDeviceManagementDeviceCompliancePolicyScheduledAction](Remove-MgDeviceManagementDeviceCompliancePolicyScheduledAction.md)
-The list of scheduled action per rule for this compliance policy.
-This is a required property when creating any individual per-platform compliance policies.
 
 ### [Remove-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](Remove-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration.md)
 The list of scheduled action configurations for this compliance policy.
@@ -1235,9 +1112,6 @@ Device Configuration devices status overview
 ### [Remove-MgDeviceManagementDeviceConfigurationGroupAssignment](Remove-MgDeviceManagementDeviceConfigurationGroupAssignment.md)
 The list of group assignments for the device configuration profile.
 
-### [Remove-MgDeviceManagementDeviceConfigurationGroupAssignmentDeviceConfigurationByRef](Remove-MgDeviceManagementDeviceConfigurationGroupAssignmentDeviceConfigurationByRef.md)
-The navigation link to the Device Configuration being targeted.
-
 ### [Remove-MgDeviceManagementDeviceConfigurationUserStateSummary](Remove-MgDeviceManagementDeviceConfigurationUserStateSummary.md)
 The device configuration user state summary for this account.
 
@@ -1256,9 +1130,6 @@ The list of group assignments for the device health script
 ### [Remove-MgDeviceManagementDeviceHealthScriptDeviceRunState](Remove-MgDeviceManagementDeviceHealthScriptDeviceRunState.md)
 List of run states for the device health script across all devices
 
-### [Remove-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceByRef](Remove-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceByRef.md)
-The managed device on which the device health script executed
-
 ### [Remove-MgDeviceManagementDeviceHealthScriptRunSummary](Remove-MgDeviceManagementDeviceHealthScriptRunSummary.md)
 High level run summary for device health script.
 
@@ -1271,14 +1142,8 @@ The list of group assignments for the device management script.
 ### [Remove-MgDeviceManagementDeviceShellScriptDeviceRunState](Remove-MgDeviceManagementDeviceShellScriptDeviceRunState.md)
 List of run states for this script across all devices.
 
-### [Remove-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceByRef](Remove-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceByRef.md)
-The managed devices that executes the device management script.
-
 ### [Remove-MgDeviceManagementDeviceShellScriptGroupAssignment](Remove-MgDeviceManagementDeviceShellScriptGroupAssignment.md)
 The list of group assignments for the device management script.
-
-### [Remove-MgDeviceManagementDeviceShellScriptRunSummaryByRef](Remove-MgDeviceManagementDeviceShellScriptRunSummaryByRef.md)
-Run summary for device management script.
 
 ### [Remove-MgDeviceManagementDeviceShellScriptUserRunState](Remove-MgDeviceManagementDeviceShellScriptUserRunState.md)
 List of run states for this script across all users.
@@ -1303,9 +1168,6 @@ The list of group assignments for the configuration.
 
 ### [Remove-MgDeviceManagementGroupPolicyConfigurationDefinitionValue](Remove-MgDeviceManagementGroupPolicyConfigurationDefinitionValue.md)
 The list of enabled or disabled group policy definition values for the configuration.
-
-### [Remove-MgDeviceManagementGroupPolicyConfigurationDefinitionValueDefinitionByRef](Remove-MgDeviceManagementGroupPolicyConfigurationDefinitionValueDefinitionByRef.md)
-The associated group policy definition with the value.
 
 ### [Remove-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue](Remove-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue.md)
 The associated group policy presentation values with the definition value.
@@ -1373,9 +1235,6 @@ List of log collection requests
 ### [Remove-MgDeviceManagementManagedDeviceMobileAppConfigurationState](Remove-MgDeviceManagementManagedDeviceMobileAppConfigurationState.md)
 Managed device mobile app configuration states for this device.
 
-### [Remove-MgDeviceManagementManagedDeviceOverviewByRef](Remove-MgDeviceManagementManagedDeviceOverviewByRef.md)
-Device overview
-
 ### [Remove-MgDeviceManagementManagedDeviceSecurityBaselineState](Remove-MgDeviceManagementManagedDeviceSecurityBaselineState.md)
 Security baseline states for this device.
 
@@ -1437,14 +1296,8 @@ The list of group assignments for the device management script.
 ### [Remove-MgDeviceManagementScriptDeviceRunState](Remove-MgDeviceManagementScriptDeviceRunState.md)
 List of run states for this script across all devices.
 
-### [Remove-MgDeviceManagementScriptDeviceRunStateManagedDeviceByRef](Remove-MgDeviceManagementScriptDeviceRunStateManagedDeviceByRef.md)
-The managed devices that executes the device management script.
-
 ### [Remove-MgDeviceManagementScriptGroupAssignment](Remove-MgDeviceManagementScriptGroupAssignment.md)
 The list of group assignments for the device management script.
-
-### [Remove-MgDeviceManagementScriptRunSummaryByRef](Remove-MgDeviceManagementScriptRunSummaryByRef.md)
-Run summary for device management script.
 
 ### [Remove-MgDeviceManagementScriptUserRunState](Remove-MgDeviceManagementScriptUserRunState.md)
 List of run states for this script across all users.
@@ -1454,9 +1307,6 @@ List of run states for this script across all devices of specific user.
 
 ### [Remove-MgDeviceManagementSettingDefinition](Remove-MgDeviceManagementSettingDefinition.md)
 The device management intent setting definitions
-
-### [Remove-MgDeviceManagementSoftwareUpdateStatusSummaryByRef](Remove-MgDeviceManagementSoftwareUpdateStatusSummaryByRef.md)
-The software update status summary.
 
 ### [Remove-MgDeviceManagementTemplate](Remove-MgDeviceManagementTemplate.md)
 The available templates
@@ -1488,7 +1338,7 @@ User experience analytics appHealth Application Performance by App Version detai
 ### [Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId](Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId.md)
 User experience analytics appHealth Application Performance by App Version Device Id
 
-### [Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOSVersion](Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOSVersion.md)
+### [Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion](Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion.md)
 User experience analytics appHealth Application Performance by OS Version
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance](Remove-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance.md)
@@ -1511,27 +1361,6 @@ The metric values for the user experience analytics category.
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticBaseline](Remove-MgDeviceManagementUserExperienceAnalyticBaseline.md)
 User experience analytics baselines
-
-### [Remove-MgDeviceManagementUserExperienceAnalyticBaselineAppHealthMetricByRef](Remove-MgDeviceManagementUserExperienceAnalyticBaselineAppHealthMetricByRef.md)
-The user experience analytics app health metrics.
-
-### [Remove-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetricByRef](Remove-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetricByRef.md)
-The user experience analytics battery health metrics.
-
-### [Remove-MgDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetricByRef](Remove-MgDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetricByRef.md)
-The user experience analytics best practices metrics.
-
-### [Remove-MgDeviceManagementUserExperienceAnalyticBaselineDeviceBootPerformanceMetricByRef](Remove-MgDeviceManagementUserExperienceAnalyticBaselineDeviceBootPerformanceMetricByRef.md)
-The user experience analytics device boot performance metrics.
-
-### [Remove-MgDeviceManagementUserExperienceAnalyticBaselineRebootAnalyticMetricByRef](Remove-MgDeviceManagementUserExperienceAnalyticBaselineRebootAnalyticMetricByRef.md)
-The user experience analytics reboot analytics metrics.
-
-### [Remove-MgDeviceManagementUserExperienceAnalyticBaselineResourcePerformanceMetricByRef](Remove-MgDeviceManagementUserExperienceAnalyticBaselineResourcePerformanceMetricByRef.md)
-The user experience analytics resource performance metrics.
-
-### [Remove-MgDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetricByRef](Remove-MgDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetricByRef.md)
-The user experience analytics work from anywhere metrics.
 
 ### [Remove-MgDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact](Remove-MgDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact.md)
 User Experience Analytics Battery Health App Impact
@@ -1644,57 +1473,6 @@ The list of affected malware in the tenant.
 ### [Remove-MgDeviceManagementWindowMalwareInformationDeviceMalwareState](Remove-MgDeviceManagementWindowMalwareInformationDeviceMalwareState.md)
 List of devices affected by current malware with the malware state on each device
 
-### [Set-MgDeviceManagementDeviceConfigurationGroupAssignmentDeviceConfigurationByRef](Set-MgDeviceManagementDeviceConfigurationGroupAssignmentDeviceConfigurationByRef.md)
-The navigation link to the Device Configuration being targeted.
-
-### [Set-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceByRef](Set-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDeviceByRef.md)
-The managed device on which the device health script executed
-
-### [Set-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceByRef](Set-MgDeviceManagementDeviceShellScriptDeviceRunStateManagedDeviceByRef.md)
-The managed devices that executes the device management script.
-
-### [Set-MgDeviceManagementDeviceShellScriptRunSummaryByRef](Set-MgDeviceManagementDeviceShellScriptRunSummaryByRef.md)
-Run summary for device management script.
-
-### [Set-MgDeviceManagementGroupPolicyConfigurationDefinitionValueDefinitionByRef](Set-MgDeviceManagementGroupPolicyConfigurationDefinitionValueDefinitionByRef.md)
-The associated group policy definition with the value.
-
-### [Set-MgDeviceManagementManagedDeviceOverviewByRef](Set-MgDeviceManagementManagedDeviceOverviewByRef.md)
-Device overview
-
-### [Set-MgDeviceManagementScriptDeviceRunStateManagedDeviceByRef](Set-MgDeviceManagementScriptDeviceRunStateManagedDeviceByRef.md)
-The managed devices that executes the device management script.
-
-### [Set-MgDeviceManagementScriptRunSummaryByRef](Set-MgDeviceManagementScriptRunSummaryByRef.md)
-Run summary for device management script.
-
-### [Set-MgDeviceManagementSoftwareUpdateStatusSummaryByRef](Set-MgDeviceManagementSoftwareUpdateStatusSummaryByRef.md)
-The software update status summary.
-
-### [Set-MgDeviceManagementUserExperienceAnalyticBaselineAppHealthMetricByRef](Set-MgDeviceManagementUserExperienceAnalyticBaselineAppHealthMetricByRef.md)
-The user experience analytics app health metrics.
-
-### [Set-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetricByRef](Set-MgDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetricByRef.md)
-The user experience analytics battery health metrics.
-
-### [Set-MgDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetricByRef](Set-MgDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetricByRef.md)
-The user experience analytics best practices metrics.
-
-### [Set-MgDeviceManagementUserExperienceAnalyticBaselineDeviceBootPerformanceMetricByRef](Set-MgDeviceManagementUserExperienceAnalyticBaselineDeviceBootPerformanceMetricByRef.md)
-The user experience analytics device boot performance metrics.
-
-### [Set-MgDeviceManagementUserExperienceAnalyticBaselineRebootAnalyticMetricByRef](Set-MgDeviceManagementUserExperienceAnalyticBaselineRebootAnalyticMetricByRef.md)
-The user experience analytics reboot analytics metrics.
-
-### [Set-MgDeviceManagementUserExperienceAnalyticBaselineResourcePerformanceMetricByRef](Set-MgDeviceManagementUserExperienceAnalyticBaselineResourcePerformanceMetricByRef.md)
-The user experience analytics resource performance metrics.
-
-### [Set-MgDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetricByRef](Set-MgDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetricByRef.md)
-The user experience analytics work from anywhere metrics.
-
-### [Set-MgDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetricByRef](Set-MgDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetricByRef.md)
-The user experience analytics work from anywhere metrics.
-
 ### [Update-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummary](Update-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummary.md)
 The summary state of ATP onboarding state for this account.
 
@@ -1753,12 +1531,6 @@ This property is read-only.
 ### [Update-MgDeviceManagementComanagedDeviceWindowProtectionStateDetectedMalwareState](Update-MgDeviceManagementComanagedDeviceWindowProtectionStateDetectedMalwareState.md)
 Device malware list
 
-### [Update-MgDeviceManagementCondition](Update-MgDeviceManagementCondition.md)
-The management conditions associated with device management of the company.
-
-### [Update-MgDeviceManagementConditionStatement](Update-MgDeviceManagementConditionStatement.md)
-The management condition statements associated with device management of the company.
-
 ### [Update-MgDeviceManagementDataSharingConsent](Update-MgDeviceManagementDataSharingConsent.md)
 Data sharing consents.
 
@@ -1788,10 +1560,6 @@ List of DeviceComplianceDeviceStatus.
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview](Update-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview.md)
 Device compliance devices status overview
-
-### [Update-MgDeviceManagementDeviceCompliancePolicyScheduledAction](Update-MgDeviceManagementDeviceCompliancePolicyScheduledAction.md)
-The list of scheduled action per rule for this compliance policy.
-This is a required property when creating any individual per-platform compliance policies.
 
 ### [Update-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](Update-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration.md)
 The list of scheduled action configurations for this compliance policy.
@@ -2059,7 +1827,7 @@ User experience analytics appHealth Application Performance by App Version detai
 ### [Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId](Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId.md)
 User experience analytics appHealth Application Performance by App Version Device Id
 
-### [Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOSVersion](Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOSVersion.md)
+### [Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion](Update-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion.md)
 User experience analytics appHealth Application Performance by OS Version
 
 ### [Update-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance](Update-MgDeviceManagementUserExperienceAnalyticAppHealthDeviceModelPerformance.md)

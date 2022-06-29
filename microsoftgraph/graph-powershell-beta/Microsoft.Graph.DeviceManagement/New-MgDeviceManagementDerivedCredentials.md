@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementderivedcredentials
 schema: 2.0.0
@@ -15,14 +15,15 @@ Collection of Derived credential settings associated with account.
 ### CreateExpanded (Default)
 ```
 New-MgDeviceManagementDerivedCredentials [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-HelpUrl <String>] [-Id <String>] [-Issuer <String>] [-NotificationType <String>] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ [-HelpUrl <String>] [-Id <String>] [-Issuer <DeviceManagementDerivedCredentialIssuer>]
+ [-NotificationType <DeviceManagementDerivedCredentialNotificationType>] [-RenewalThresholdPercentage <Int32>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementDerivedCredentials
- -BodyParameter <IMicrosoftGraphDeviceManagementDerivedCredentialSettings> [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphDeviceManagementDerivedCredentialSettings> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -37,7 +38,7 @@ Collection of Derived credential settings associated with account.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -53,7 +54,7 @@ Entity that describes tenant level settings for derived credentials
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementDerivedCredentialSettings
+Type: IMicrosoftGraphDeviceManagementDerivedCredentialSettings
 Parameter Sets: Create
 Aliases:
 
@@ -68,7 +69,7 @@ Accept wildcard characters: False
 The display name for the profile.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -83,7 +84,7 @@ Accept wildcard characters: False
 The URL that will be accessible to end users as they retrieve a derived credential using the Company Portal.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -98,7 +99,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -113,7 +114,7 @@ Accept wildcard characters: False
 Supported values for the derived credential issuer.
 
 ```yaml
-Type: System.String
+Type: DeviceManagementDerivedCredentialIssuer
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -128,7 +129,7 @@ Accept wildcard characters: False
 Supported values for the notification type to use.
 
 ```yaml
-Type: System.String
+Type: DeviceManagementDerivedCredentialNotificationType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -139,11 +140,26 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -RenewalThresholdPercentage
+The nominal percentage of time before certificate renewal is initiated by the client.
+
+```yaml
+Type: Int32
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -159,7 +175,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -176,11 +192,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementDerivedCredentialSettings
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementDerivedCredentialSettings
-
 ## NOTES
 
 ALIASES
@@ -199,4 +213,3 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagementDerivedCredentialSettings>: Entity
   - `[NotificationType <String>]`: Supported values for the notification type to use.
 
 ## RELATED LINKS
-

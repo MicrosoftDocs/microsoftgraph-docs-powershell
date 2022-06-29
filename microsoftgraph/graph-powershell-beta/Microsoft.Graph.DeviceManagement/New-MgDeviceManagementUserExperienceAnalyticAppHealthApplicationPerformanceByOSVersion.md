@@ -1,31 +1,31 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticapphealthapplicationperformancebyosversion
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOSVersion
+# New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion
 
 ## SYNOPSIS
 User experience analytics appHealth Application Performance by OS Version
 
 ## SYNTAX
 
-### CreateExpanded4 (Default)
+### CreateExpanded (Default)
 ```
-New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOSVersion
+New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion
  [-ActiveDeviceCount <Int32>] [-AdditionalProperties <Hashtable>] [-AppCrashCount <Int32>]
  [-AppDisplayName <String>] [-AppName <String>] [-AppPublisher <String>] [-AppUsageDuration <Int32>]
- [-Id <String>] [-MeanTimeToFailureInMinutes <Int32>] [-OSBuildNumber <String>] [-OSVersion <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Id <String>] [-MeanTimeToFailureInMinutes <Int32>] [-OSBuildNumber <String>] [-OSVersion <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
-### Create4
+### Create
 ```
-New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOSVersion
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAppHealthAppPerformanceByOSVersion> [-Confirm]
- [-WhatIf] [<CommonParameters>]
+New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAppHealthAppPerformanceByOSVersion> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -40,8 +40,8 @@ The number of devices where the app has been active.
 Valid values -2147483648 to 2147483647
 
 ```yaml
-Type: System.Int32
-Parameter Sets: CreateExpanded4
+Type: Int32
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -55,8 +55,8 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: CreateExpanded4
+Type: Hashtable
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -71,8 +71,8 @@ The number of crashes for the app.
 Valid values -2147483648 to 2147483647
 
 ```yaml
-Type: System.Int32
-Parameter Sets: CreateExpanded4
+Type: Int32
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -86,8 +86,8 @@ Accept wildcard characters: False
 The friendly name of the application.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded4
+Type: String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -101,8 +101,8 @@ Accept wildcard characters: False
 The name of the application.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded4
+Type: String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -116,8 +116,8 @@ Accept wildcard characters: False
 The publisher of the application.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded4
+Type: String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -132,8 +132,8 @@ The total usage time of the application in minutes.
 Valid values -2147483648 to 2147483647
 
 ```yaml
-Type: System.Int32
-Parameter Sets: CreateExpanded4
+Type: Int32
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -148,8 +148,8 @@ The user experience analytics application performance entity contains app perfor
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthAppPerformanceByOSVersion
-Parameter Sets: Create4
+Type: IMicrosoftGraphUserExperienceAnalyticsAppHealthAppPerformanceByOSVersion
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -163,8 +163,8 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded4
+Type: String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -179,8 +179,8 @@ The mean time to failure for the app in minutes.
 Valid values -2147483648 to 2147483647
 
 ```yaml
-Type: System.Int32
-Parameter Sets: CreateExpanded4
+Type: Int32
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -194,8 +194,8 @@ Accept wildcard characters: False
 The os build number of the application.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded4
+Type: String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -209,8 +209,8 @@ Accept wildcard characters: False
 The os version of the application.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded4
+Type: String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -224,7 +224,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -240,7 +240,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -257,11 +257,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthAppPerformanceByOSVersion
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthAppPerformanceByOSVersion
-
 ## NOTES
 
 ALIASES
@@ -285,4 +283,3 @@ BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsAppHealthAppPerformanceByOS
   - `[OSVersion <String>]`: The os version of the application.
 
 ## RELATED LINKS
-
