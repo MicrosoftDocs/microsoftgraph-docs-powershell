@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgpolicyserviceprincipalcreationpolicy
 schema: 2.0.0
@@ -17,14 +17,14 @@ Create new navigation property to servicePrincipalCreationPolicies for policies
 New-MgPolicyServicePrincipalCreationPolicy [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>]
  [-Excludes <IMicrosoftGraphServicePrincipalCreationConditionSet[]>] [-Id <String>]
- [-Includes <IMicrosoftGraphServicePrincipalCreationConditionSet[]>] [-IsBuiltIn] [-Confirm] [-WhatIf]
+ [-Includes <IMicrosoftGraphServicePrincipalCreationConditionSet[]>] [-IsBuiltIn] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgPolicyServicePrincipalCreationPolicy -BodyParameter <IMicrosoftGraphServicePrincipalCreationPolicy>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -38,7 +38,7 @@ Create new navigation property to servicePrincipalCreationPolicies for policies
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -54,7 +54,7 @@ servicePrincipalCreationPolicy
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServicePrincipalCreationPolicy
+Type: IMicrosoftGraphServicePrincipalCreationPolicy
 Parameter Sets: Create
 Aliases:
 
@@ -70,7 +70,7 @@ Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -86,7 +86,7 @@ Description for this policy.
 Required.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -102,7 +102,7 @@ Display name for this policy.
 Required.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for EXCLUDES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServicePrincipalCreationConditionSet[]
+Type: IMicrosoftGraphServicePrincipalCreationConditionSet[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for INCLUDES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServicePrincipalCreationConditionSet[]
+Type: IMicrosoftGraphServicePrincipalCreationConditionSet[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -195,7 +195,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -212,11 +212,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServicePrincipalCreationPolicy
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServicePrincipalCreationPolicy
-
 ## NOTES
 
 ALIASES
@@ -259,4 +257,3 @@ INCLUDES <IMicrosoftGraphServicePrincipalCreationConditionSet[]>: .
   - `[CertifiedApplicationsOnly <Boolean?>]`: 
 
 ## RELATED LINKS
-

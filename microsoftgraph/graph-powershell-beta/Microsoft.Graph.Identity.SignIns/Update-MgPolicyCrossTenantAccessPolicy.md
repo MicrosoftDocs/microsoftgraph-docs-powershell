@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgpolicycrosstenantaccesspolicy
 schema: 2.0.0
@@ -14,17 +14,17 @@ The custom rules that define an access scenario when interacting with external A
 
 ### UpdateExpanded (Default)
 ```
-Update-MgPolicyCrossTenantAccessPolicy [-AdditionalProperties <Hashtable>]
+Update-MgPolicyCrossTenantAccessPolicy [-AdditionalProperties <Hashtable>] [-AllowedCloudEndpoints <String[]>]
  [-Default <IMicrosoftGraphCrossTenantAccessPolicyConfigurationDefault>] [-Definition <String[]>]
  [-DeletedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-Partners <IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner[]>] [-PassThru] [-Confirm] [-WhatIf]
+ [-Partners <IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner[]>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgPolicyCrossTenantAccessPolicy -BodyParameter <IMicrosoftGraphCrossTenantAccessPolicy> [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -38,7 +38,24 @@ The custom rules that define an access scenario when interacting with external A
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AllowedCloudEndpoints
+Used to specify which Microsoft clouds an organization would like to collaborate with.
+By default, this value is empty.
+Supported values for this field are: microsoftonline.com, microsoftonline.us, and partner.microsoftonline.cn.
+
+```yaml
+Type: String[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -54,7 +71,7 @@ crossTenantAccessPolicy
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCrossTenantAccessPolicy
+Type: IMicrosoftGraphCrossTenantAccessPolicy
 Parameter Sets: Update
 Aliases:
 
@@ -70,7 +87,7 @@ crossTenantAccessPolicyConfigurationDefault
 To construct, please use Get-Help -Online and see NOTES section for DEFAULT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCrossTenantAccessPolicyConfigurationDefault
+Type: IMicrosoftGraphCrossTenantAccessPolicyConfigurationDefault
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -85,7 +102,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -101,7 +118,7 @@ Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -117,7 +134,7 @@ Description for this policy.
 Required.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -133,7 +150,7 @@ Display name for this policy.
 Required.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -148,7 +165,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -164,7 +181,7 @@ Defines partner-specific configurations for external Azure Active Directory orga
 To construct, please use Get-Help -Online and see NOTES section for PARTNERS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner[]
+Type: IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -179,7 +196,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -194,7 +211,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -210,7 +227,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -227,11 +244,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCrossTenantAccessPolicy
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -324,4 +339,3 @@ PARTNERS <IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner[]>: Defines
   - `[TenantId <String>]`: The tenant identifier for the partner Azure AD organization. Read-only. Key.
 
 ## RELATED LINKS
-

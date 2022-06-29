@@ -80,10 +80,6 @@ Invoke function delta
 Navigation property to manage certificate-based authentication configuration.
 Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
 
-### [Get-MgOrganizationCertificateBasedAuthConfigurationByRef](Get-MgOrganizationCertificateBasedAuthConfigurationByRef.md)
-Navigation property to manage certificate-based authentication configuration.
-Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
-
 ### [Get-MgPolicyAccessReviewPolicy](Get-MgPolicyAccessReviewPolicy.md)
 The policy that contains directory-level access review settings.
 
@@ -98,9 +94,6 @@ The policies that enforce app management restrictions for specific applications 
 
 ### [Get-MgPolicyAppManagementPolicyApplyTo](Get-MgPolicyAppManagementPolicyApplyTo.md)
 Get appliesTo from policies
-
-### [Get-MgPolicyAppManagementPolicyApplyToByRef](Get-MgPolicyAppManagementPolicyApplyToByRef.md)
-Get ref of appliesTo from policies
 
 ### [Get-MgPolicyAuthenticationFlowPolicy](Get-MgPolicyAuthenticationFlowPolicy.md)
 The policy configuration of the self-service sign-up experience of external users.
@@ -175,9 +168,6 @@ Represents the role management policies.
 Represents the role management policy assignments.
 
 ### [Get-MgPolicyRoleManagementPolicyAssignmentPolicy](Get-MgPolicyRoleManagementPolicyAssignmentPolicy.md)
-The policy for the assignment.
-
-### [Get-MgPolicyRoleManagementPolicyAssignmentPolicyByRef](Get-MgPolicyRoleManagementPolicyAssignmentPolicyByRef.md)
 The policy for the assignment.
 
 ### [Get-MgPolicyRoleManagementPolicyEffectiveRule](Get-MgPolicyRoleManagementPolicyEffectiveRule.md)
@@ -264,9 +254,6 @@ Get softwareOathMethods from users
 ### [Get-MgUserAuthenticationTemporaryAccessPassMethod](Get-MgUserAuthenticationTemporaryAccessPassMethod.md)
 Represents a Temporary Access Pass registered to a user for authentication through time-limited passcodes.
 
-### [Get-MgUserAuthenticationWindowHello](Get-MgUserAuthenticationWindowHello.md)
-Represents the Windows Hello for Business authentication method registered to a user for authentication.
-
 ### [Get-MgUserAuthenticationWindowHelloForBusinessMethodDevice](Get-MgUserAuthenticationWindowHelloForBusinessMethodDevice.md)
 The registered device on which this Windows Hello for Business key resides.
 Supports $expand.
@@ -350,18 +337,11 @@ Add new entity to invitations
 ### [New-MgOauth2PermissionGrant](New-MgOauth2PermissionGrant.md)
 Add new entity to oauth2PermissionGrants
 
-### [New-MgOrganizationCertificateBasedAuthConfigurationByRef](New-MgOrganizationCertificateBasedAuthConfigurationByRef.md)
-Navigation property to manage certificate-based authentication configuration.
-Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
-
 ### [New-MgPolicyActivityBasedTimeoutPolicy](New-MgPolicyActivityBasedTimeoutPolicy.md)
 The policy that controls the idle time out for web sessions for applications.
 
 ### [New-MgPolicyAppManagementPolicy](New-MgPolicyAppManagementPolicy.md)
 The policies that enforce app management restrictions for specific applications and service principals, overriding the defaultAppManagementPolicy.
-
-### [New-MgPolicyAppManagementPolicyApplyToByRef](New-MgPolicyAppManagementPolicyApplyToByRef.md)
-Create new navigation property ref to appliesTo for policies
 
 ### [New-MgPolicyAuthorizationPolicy](New-MgPolicyAuthorizationPolicy.md)
 The policy that controls Azure AD authorization settings.
@@ -476,9 +456,6 @@ Create new navigation property to softwareOathMethods for users
 ### [New-MgUserAuthenticationTemporaryAccessPassMethod](New-MgUserAuthenticationTemporaryAccessPassMethod.md)
 Represents a Temporary Access Pass registered to a user for authentication through time-limited passcodes.
 
-### [New-MgUserAuthenticationWindowHello](New-MgUserAuthenticationWindowHello.md)
-Represents the Windows Hello for Business authentication method registered to a user for authentication.
-
 ### [Remove-MgDataPolicyOperation](Remove-MgDataPolicyOperation.md)
 Delete entity from dataPolicyOperations
 
@@ -502,12 +479,6 @@ Delete entity from identityProviders
 
 ### [Remove-MgIdentityUserFlow](Remove-MgIdentityUserFlow.md)
 Delete navigation property userFlows for identity
-
-### [Remove-MgInformationProtectionBitlocker](Remove-MgInformationProtectionBitlocker.md)
-Delete navigation property bitlocker for informationProtection
-
-### [Remove-MgInformationProtectionBitlockerRecoveryKey](Remove-MgInformationProtectionBitlockerRecoveryKey.md)
-The recovery keys associated with the bitlocker entity.
 
 ### [Remove-MgInformationProtectionDataLossPreventionPolicy](Remove-MgInformationProtectionDataLossPreventionPolicy.md)
 Delete navigation property dataLossPreventionPolicies for informationProtection
@@ -583,10 +554,6 @@ Delete navigation property externalIdentitiesPolicy for policies
 ### [Remove-MgPolicyFeatureRolloutPolicy](Remove-MgPolicyFeatureRolloutPolicy.md)
 The feature rollout policy associated with a directory object.
 
-### [Remove-MgPolicyFeatureRolloutPolicyApplyTo](Remove-MgPolicyFeatureRolloutPolicyApplyTo.md)
-Nullable.
-Specifies a list of directoryObjects that feature is enabled for.
-
 ### [Remove-MgPolicyHomeRealmDiscoveryPolicy](Remove-MgPolicyHomeRealmDiscoveryPolicy.md)
 The policy to control Azure AD authentication behavior for federated users.
 
@@ -615,9 +582,6 @@ Represents the role management policies.
 
 ### [Remove-MgPolicyRoleManagementPolicyAssignment](Remove-MgPolicyRoleManagementPolicyAssignment.md)
 Represents the role management policy assignments.
-
-### [Remove-MgPolicyRoleManagementPolicyAssignmentPolicyByRef](Remove-MgPolicyRoleManagementPolicyAssignmentPolicyByRef.md)
-The policy for the assignment.
 
 ### [Remove-MgPolicyRoleManagementPolicyEffectiveRule](Remove-MgPolicyRoleManagementPolicyEffectiveRule.md)
 Not implemented.
@@ -694,9 +658,6 @@ Delete navigation property softwareOathMethods for users
 ### [Remove-MgUserAuthenticationTemporaryAccessPassMethod](Remove-MgUserAuthenticationTemporaryAccessPassMethod.md)
 Represents a Temporary Access Pass registered to a user for authentication through time-limited passcodes.
 
-### [Remove-MgUserAuthenticationWindowHello](Remove-MgUserAuthenticationWindowHello.md)
-Represents the Windows Hello for Business authentication method registered to a user for authentication.
-
 ### [Remove-MgUserAuthenticationWindowHelloForBusinessMethodDevice](Remove-MgUserAuthenticationWindowHelloForBusinessMethodDevice.md)
 The registered device on which this Windows Hello for Business key resides.
 Supports $expand.
@@ -708,9 +669,6 @@ Delete navigation property informationProtection for users
 
 ### [Reset-MgPolicyCrossTenantAccessPolicyDefaultToSystemDefault](Reset-MgPolicyCrossTenantAccessPolicyDefaultToSystemDefault.md)
 Invoke action resetToSystemDefault
-
-### [Set-MgPolicyRoleManagementPolicyAssignmentPolicyByRef](Set-MgPolicyRoleManagementPolicyAssignmentPolicyByRef.md)
-The policy for the assignment.
 
 ### [Set-MgTrustFrameworkPolicyContent](Set-MgTrustFrameworkPolicyContent.md)
 Update media content for the navigation property policies in trustFramework
@@ -756,9 +714,6 @@ Update informationProtection
 
 ### [Update-MgInformationProtectionBitlocker](Update-MgInformationProtectionBitlocker.md)
 Update the navigation property bitlocker in informationProtection
-
-### [Update-MgInformationProtectionBitlockerRecoveryKey](Update-MgInformationProtectionBitlockerRecoveryKey.md)
-The recovery keys associated with the bitlocker entity.
 
 ### [Update-MgInformationProtectionDataLossPreventionPolicy](Update-MgInformationProtectionDataLossPreventionPolicy.md)
 Update the navigation property dataLossPreventionPolicies in informationProtection
@@ -833,10 +788,6 @@ Update the navigation property externalIdentitiesPolicy in policies
 
 ### [Update-MgPolicyFeatureRolloutPolicy](Update-MgPolicyFeatureRolloutPolicy.md)
 The feature rollout policy associated with a directory object.
-
-### [Update-MgPolicyFeatureRolloutPolicyApplyTo](Update-MgPolicyFeatureRolloutPolicyApplyTo.md)
-Nullable.
-Specifies a list of directoryObjects that feature is enabled for.
 
 ### [Update-MgPolicyHomeRealmDiscoveryPolicy](Update-MgPolicyHomeRealmDiscoveryPolicy.md)
 The policy to control Azure AD authentication behavior for federated users.
@@ -941,9 +892,6 @@ Update the navigation property softwareOathMethods in users
 
 ### [Update-MgUserAuthenticationTemporaryAccessPassMethod](Update-MgUserAuthenticationTemporaryAccessPassMethod.md)
 Represents a Temporary Access Pass registered to a user for authentication through time-limited passcodes.
-
-### [Update-MgUserAuthenticationWindowHello](Update-MgUserAuthenticationWindowHello.md)
-Represents the Windows Hello for Business authentication method registered to a user for authentication.
 
 ### [Update-MgUserAuthenticationWindowHelloForBusinessMethodDevice](Update-MgUserAuthenticationWindowHelloForBusinessMethodDevice.md)
 The registered device on which this Windows Hello for Business key resides.

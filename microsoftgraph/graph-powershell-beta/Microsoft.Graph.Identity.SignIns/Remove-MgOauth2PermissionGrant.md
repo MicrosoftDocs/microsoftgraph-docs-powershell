@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/remove-mgoauth2permissiongrant
@@ -12,13 +12,13 @@ Delete entity from oauth2PermissionGrants
 
 ## SYNTAX
 
-### Delete1 (Default)
+### Delete (Default)
 ```
 Remove-MgOauth2PermissionGrant -OAuth2PermissionGrantId <String> [-IfMatch <String>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity1
+### DeleteViaIdentity
 ```
 Remove-MgOauth2PermissionGrant -InputObject <IIdentitySignInsIdentity> [-IfMatch <String>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -52,7 +52,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IIdentitySignInsIdentity
-Parameter Sets: DeleteViaIdentity1
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -67,7 +67,7 @@ key: id of oAuth2PermissionGrant
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: Delete
 Aliases:
 
 Required: True

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgpolicypermissiongrantpolicy
 schema: 2.0.0
@@ -15,14 +15,14 @@ The policy that specifies the conditions under which consent can be granted.
 ### CreateExpanded (Default)
 ```
 New-MgPolicyPermissionGrantPolicy [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>]
- [-Description <String>] [-DisplayName <String>] [-Excludes <IMicrosoftGraphPermissionGrantConditionSet[]>]
- [-Id <String>] [-Includes <IMicrosoftGraphPermissionGrantConditionSet[]>] [-Confirm] [-WhatIf]
+ [-Description <String>] [-DisplayName <String>] [-Excludes <IMicrosoftGraphPermissionGrantConditionSet1[]>]
+ [-Id <String>] [-Includes <IMicrosoftGraphPermissionGrantConditionSet1[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgPolicyPermissionGrantPolicy -BodyParameter <IMicrosoftGraphPermissionGrantPolicy> [-Confirm] [-WhatIf]
+New-MgPolicyPermissionGrantPolicy -BodyParameter <IMicrosoftGraphPermissionGrantPolicy1> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -37,7 +37,7 @@ The policy that specifies the conditions under which consent can be granted.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -53,7 +53,7 @@ permissionGrantPolicy
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermissionGrantPolicy
+Type: IMicrosoftGraphPermissionGrantPolicy1
 Parameter Sets: Create
 Aliases:
 
@@ -69,7 +69,7 @@ Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -85,7 +85,7 @@ Description for this policy.
 Required.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -101,7 +101,7 @@ Display name for this policy.
 Required.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -118,7 +118,7 @@ Automatically expanded on GET.
 To construct, please use Get-Help -Online and see NOTES section for EXCLUDES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermissionGrantConditionSet[]
+Type: IMicrosoftGraphPermissionGrantConditionSet1[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -150,7 +150,7 @@ Automatically expanded on GET.
 To construct, please use Get-Help -Online and see NOTES section for INCLUDES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermissionGrantConditionSet[]
+Type: IMicrosoftGraphPermissionGrantConditionSet1[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -181,7 +181,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -197,12 +197,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermissionGrantPolicy
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermissionGrantPolicy1
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermissionGrantPolicy
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermissionGrantPolicy1
 ## NOTES
 
 ALIASES
@@ -256,4 +254,3 @@ INCLUDES <IMicrosoftGraphPermissionGrantConditionSet[]>: Condition sets which ar
   - `[ResourceApplication <String>]`: The appId of the resource application (e.g. the API) for which a permission is being granted, or any to match with any resource application or API. Default is any.
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mginformationprotectionbitlocker
 schema: 2.0.0
@@ -12,16 +12,16 @@ Update the navigation property bitlocker in informationProtection
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### UpdateExpanded1 (Default)
 ```
 Update-MgInformationProtectionBitlocker [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-RecoveryKeys <IMicrosoftGraphBitlockerRecoveryKey[]>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-RecoveryKeys <IMicrosoftGraphBitlockerRecoveryKey[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update
+### Update1
 ```
-Update-MgInformationProtectionBitlocker -BodyParameter <IMicrosoftGraphBitlocker> [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Update-MgInformationProtectionBitlocker -BodyParameter <IMicrosoftGraphBitlocker> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -35,8 +35,8 @@ Update the navigation property bitlocker in informationProtection
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: UpdateExpanded
+Type: Hashtable
+Parameter Sets: UpdateExpanded1
 Aliases:
 
 Required: False
@@ -51,8 +51,8 @@ bitlocker
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBitlocker
-Parameter Sets: Update
+Type: IMicrosoftGraphBitlocker
+Parameter Sets: Update1
 Aliases:
 
 Required: True
@@ -66,8 +66,8 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
-Parameter Sets: UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded1
 Aliases:
 
 Required: False
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -97,8 +97,8 @@ The recovery keys associated with the bitlocker entity.
 To construct, please use Get-Help -Online and see NOTES section for RECOVERYKEYS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBitlockerRecoveryKey[]
-Parameter Sets: UpdateExpanded
+Type: IMicrosoftGraphBitlockerRecoveryKey[]
+Parameter Sets: UpdateExpanded1
 Aliases:
 
 Required: False
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -128,7 +128,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -145,11 +145,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBitlocker
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -177,4 +175,3 @@ RECOVERYKEYS <IMicrosoftGraphBitlockerRecoveryKey[]>: The recovery keys associat
   - `[VolumeType <String>]`: volumeType
 
 ## RELATED LINKS
-

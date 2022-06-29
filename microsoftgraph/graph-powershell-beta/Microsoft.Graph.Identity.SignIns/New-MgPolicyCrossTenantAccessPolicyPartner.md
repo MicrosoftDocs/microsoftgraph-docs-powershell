@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgpolicycrosstenantaccesspolicypartner
 schema: 2.0.0
@@ -18,15 +18,15 @@ New-MgPolicyCrossTenantAccessPolicyPartner [-AdditionalProperties <Hashtable>]
  [-B2BCollaborationInbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]
  [-B2BCollaborationOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]
  [-B2BDirectConnectInbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]
- [-B2BDirectConnectOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>] [-Id <String>]
- [-InboundTrust <IMicrosoftGraphCrossTenantAccessPolicyInboundTrust>] [-IsServiceProvider]
- [-TenantId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-B2BDirectConnectOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]
+ [-InboundTrust <IMicrosoftGraphCrossTenantAccessPolicyInboundTrust>] [-IsServiceProvider] [-TenantId <String>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgPolicyCrossTenantAccessPolicyPartner
- -BodyParameter <IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner> [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -41,7 +41,7 @@ Defines partner-specific configurations for external Azure Active Directory orga
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -57,7 +57,7 @@ crossTenantAccessPolicyB2BSetting
 To construct, please use Get-Help -Online and see NOTES section for B2BCOLLABORATIONINBOUND properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCrossTenantAccessPolicyB2BSetting
+Type: IMicrosoftGraphCrossTenantAccessPolicyB2BSetting
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -73,7 +73,7 @@ crossTenantAccessPolicyB2BSetting
 To construct, please use Get-Help -Online and see NOTES section for B2BCOLLABORATIONOUTBOUND properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCrossTenantAccessPolicyB2BSetting
+Type: IMicrosoftGraphCrossTenantAccessPolicyB2BSetting
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -89,7 +89,7 @@ crossTenantAccessPolicyB2BSetting
 To construct, please use Get-Help -Online and see NOTES section for B2BDIRECTCONNECTINBOUND properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCrossTenantAccessPolicyB2BSetting
+Type: IMicrosoftGraphCrossTenantAccessPolicyB2BSetting
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -105,7 +105,7 @@ crossTenantAccessPolicyB2BSetting
 To construct, please use Get-Help -Online and see NOTES section for B2BDIRECTCONNECTOUTBOUND properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCrossTenantAccessPolicyB2BSetting
+Type: IMicrosoftGraphCrossTenantAccessPolicyB2BSetting
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -121,7 +121,7 @@ crossTenantAccessPolicyConfigurationPartner
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner
+Type: IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner
 Parameter Sets: Create
 Aliases:
 
@@ -132,27 +132,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Id
-Read-only.
-
-```yaml
-Type: System.String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -InboundTrust
 crossTenantAccessPolicyInboundTrust
 To construct, please use Get-Help -Online and see NOTES section for INBOUNDTRUST properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCrossTenantAccessPolicyInboundTrust
+Type: IMicrosoftGraphCrossTenantAccessPolicyInboundTrust
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -167,7 +152,7 @@ Accept wildcard characters: False
 Identifies whether the partner-specific configuration is a Cloud Service Provider for your organization.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -184,7 +169,7 @@ Read-only.
 Key.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -199,7 +184,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -215,7 +200,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -232,11 +217,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner
-
 ## NOTES
 
 ALIASES
@@ -316,4 +299,3 @@ INBOUNDTRUST <IMicrosoftGraphCrossTenantAccessPolicyInboundTrust>: crossTenantAc
   - `[IsMfaAccepted <Boolean?>]`: Specifies whether MFA from external Azure AD organizations is trusted.
 
 ## RELATED LINKS
-

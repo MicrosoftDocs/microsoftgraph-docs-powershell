@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mginformationprotectionthreatassessmentrequestresult
 schema: 2.0.0
@@ -14,30 +14,30 @@ By default, a GET /threatAssessmentRequests/{id} does not return this property u
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgInformationProtectionThreatAssessmentRequestResult -ThreatAssessmentRequestId <String>
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Id <String>] [-Message <String>]
- [-ResultType <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-ResultType <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
 New-MgInformationProtectionThreatAssessmentRequestResult -ThreatAssessmentRequestId <String>
- -BodyParameter <IMicrosoftGraphThreatAssessmentResult> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphThreatAssessmentResult> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentity1
-```
-New-MgInformationProtectionThreatAssessmentRequestResult -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphThreatAssessmentResult> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded1
+### CreateViaIdentityExpanded
 ```
 New-MgInformationProtectionThreatAssessmentRequestResult -InputObject <IIdentitySignInsIdentity>
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Id <String>] [-Message <String>]
- [-ResultType <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-ResultType <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgInformationProtectionThreatAssessmentRequestResult -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphThreatAssessmentResult> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,8 +53,8 @@ By default, a GET /threatAssessmentRequests/{id} does not return this property u
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: Hashtable
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -69,8 +69,8 @@ threatAssessmentResult
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphThreatAssessmentResult
-Parameter Sets: Create1, CreateViaIdentity1
+Type: IMicrosoftGraphThreatAssessmentResult
+Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -85,8 +85,8 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: System.DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: DateTime
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -100,8 +100,8 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -116,8 +116,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-Parameter Sets: CreateViaIdentity1, CreateViaIdentityExpanded1
+Type: IIdentitySignInsIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -131,8 +131,8 @@ Accept wildcard characters: False
 The result message for each threat assessment.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -146,8 +146,8 @@ Accept wildcard characters: False
 threatAssessmentResultType
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -161,8 +161,8 @@ Accept wildcard characters: False
 key: id of threatAssessmentRequest
 
 ```yaml
-Type: System.String
-Parameter Sets: Create1, CreateExpanded1
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -192,7 +192,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -209,13 +209,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphThreatAssessmentResult
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphThreatAssessmentResult
-
 ## NOTES
 
 ALIASES
@@ -286,4 +283,3 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-

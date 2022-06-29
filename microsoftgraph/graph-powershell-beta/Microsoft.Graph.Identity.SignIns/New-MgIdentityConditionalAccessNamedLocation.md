@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgidentityconditionalaccessnamedlocation
 schema: 2.0.0
@@ -17,14 +17,14 @@ Returns a collection of the specified named locations.
 ### CreateExpanded (Default)
 ```
 New-MgIdentityConditionalAccessNamedLocation [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
- [-DisplayName <String>] [-Id <String>] [-ModifiedDateTime <DateTime>] [-Confirm] [-WhatIf]
+ [-DisplayName <String>] [-Id <String>] [-ModifiedDateTime <DateTime>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgIdentityConditionalAccessNamedLocation -BodyParameter <IMicrosoftGraphNamedLocation> [-Confirm]
- [-WhatIf] [<CommonParameters>]
+New-MgIdentityConditionalAccessNamedLocation -BodyParameter <IMicrosoftGraphNamedLocation> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -40,7 +40,7 @@ Returns a collection of the specified named locations.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -56,7 +56,7 @@ namedLocation
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphNamedLocation
+Type: IMicrosoftGraphNamedLocation
 Parameter Sets: Create
 Aliases:
 
@@ -73,7 +73,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 Human-readable name of the location.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -120,7 +120,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -151,7 +151,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -168,11 +168,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphNamedLocation
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphNamedLocation
-
 ## NOTES
 
 ALIASES
@@ -190,4 +188,3 @@ BODYPARAMETER <IMicrosoftGraphNamedLocation>: namedLocation
   - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents last modified date and time of the location using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
 
 ## RELATED LINKS
-
