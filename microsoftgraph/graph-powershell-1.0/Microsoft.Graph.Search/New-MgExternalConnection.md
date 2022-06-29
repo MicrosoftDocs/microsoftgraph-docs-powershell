@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/new-mgexternalconnection
 schema: 2.0.0
@@ -12,21 +12,21 @@ Create new navigation property to connections for external
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### CreateExpanded1 (Default)
 ```
 New-MgExternalConnection [-AdditionalProperties <Hashtable>]
  [-Configuration <IMicrosoftGraphExternalConnectorsConfiguration>] [-Description <String>]
  [-Groups <IMicrosoftGraphExternalConnectorsExternalGroup[]>] [-Id <String>]
- [-Items <IMicrosoftGraphExternalConnectorsExternalItem[]>] [-Name <String>]
+ [-Items <IMicrosoftGraphExternalConnectorsExternalItem1[]>] [-Name <String>]
  [-Operations <IMicrosoftGraphExternalConnectorsConnectionOperation[]>]
- [-Schema <IMicrosoftGraphExternalConnectorsSchema>] [-State <String>] [-Confirm] [-WhatIf]
+ [-Schema <IMicrosoftGraphExternalConnectorsSchema1>] [-State <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### Create
+### Create1
 ```
-New-MgExternalConnection -BodyParameter <IMicrosoftGraphExternalConnectorsExternalConnection> [-Confirm]
- [-WhatIf] [<CommonParameters>]
+New-MgExternalConnection -BodyParameter <IMicrosoftGraphExternalConnectorsExternalConnection1> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -40,8 +40,8 @@ Create new navigation property to connections for external
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: CreateExpanded
+Type: Hashtable
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -56,8 +56,8 @@ externalConnection
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalConnection
-Parameter Sets: Create
+Type: IMicrosoftGraphExternalConnectorsExternalConnection1
+Parameter Sets: Create1
 Aliases:
 
 Required: True
@@ -72,8 +72,8 @@ configuration
 To construct, please use Get-Help -Online and see NOTES section for CONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsConfiguration
-Parameter Sets: CreateExpanded
+Type: IMicrosoftGraphExternalConnectorsConfiguration
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -88,8 +88,8 @@ Description of the connection displayed in the Microsoft 365 admin center.
 Optional.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -105,8 +105,8 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for GROUPS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalGroup[]
-Parameter Sets: CreateExpanded
+Type: IMicrosoftGraphExternalConnectorsExternalGroup[]
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -120,8 +120,8 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -137,8 +137,8 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for ITEMS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalItem[]
-Parameter Sets: CreateExpanded
+Type: IMicrosoftGraphExternalConnectorsExternalItem1[]
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -154,8 +154,8 @@ Maximum length of 128 characters.
 Required.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -171,8 +171,8 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for OPERATIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsConnectionOperation[]
-Parameter Sets: CreateExpanded
+Type: IMicrosoftGraphExternalConnectorsConnectionOperation[]
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -187,8 +187,8 @@ schema
 To construct, please use Get-Help -Online and see NOTES section for SCHEMA properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsSchema
-Parameter Sets: CreateExpanded
+Type: IMicrosoftGraphExternalConnectorsSchema1
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -202,8 +202,8 @@ Accept wildcard characters: False
 connectionState
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -217,7 +217,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -233,7 +233,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -249,12 +249,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalConnection
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalConnection1
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalConnection
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalConnection1
 ## NOTES
 
 ALIASES
@@ -384,3 +382,4 @@ SCHEMA <IMicrosoftGraphExternalConnectorsSchema>: schema
 
 ## RELATED LINKS
 
+## RELATED LINKS
