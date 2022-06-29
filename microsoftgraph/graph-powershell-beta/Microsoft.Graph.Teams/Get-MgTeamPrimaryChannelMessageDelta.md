@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgteamprimarychannelmessagedelta
 schema: 2.0.0
@@ -12,12 +12,12 @@ Invoke function delta
 
 ## SYNTAX
 
-### Delta (Default)
+### Delta1 (Default)
 ```
 Get-MgTeamPrimaryChannelMessageDelta -TeamId <String> [<CommonParameters>]
 ```
 
-### DeltaViaIdentity
+### DeltaViaIdentity1
 ```
 Get-MgTeamPrimaryChannelMessageDelta -InputObject <ITeamsIdentity> [<CommonParameters>]
 ```
@@ -34,8 +34,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-Parameter Sets: DeltaViaIdentity
+Type: ITeamsIdentity
+Parameter Sets: DeltaViaIdentity1
 Aliases:
 
 Required: True
@@ -49,8 +49,8 @@ Accept wildcard characters: False
 key: id of team
 
 ```yaml
-Type: System.String
-Parameter Sets: Delta
+Type: String
+Parameter Sets: Delta1
 Aliases:
 
 Required: True
@@ -66,11 +66,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessage
-
 ## NOTES
 
 ALIASES
@@ -119,4 +117,3 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
 ## RELATED LINKS
-

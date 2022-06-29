@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mguserteamworkinstalledapp
 schema: 2.0.0
@@ -12,30 +12,30 @@ The apps installed in the personal scope of this user.
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### CreateExpanded1 (Default)
 ```
 New-MgUserTeamworkInstalledApp -UserId <String> [-AdditionalProperties <Hashtable>]
  [-Chat <IMicrosoftGraphChat>] [-Id <String>] [-TeamsApp <IMicrosoftGraphTeamsApp>]
- [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition1>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create
+### Create1
 ```
-New-MgUserTeamworkInstalledApp -UserId <String> -BodyParameter <IMicrosoftGraphUserScopeTeamsAppInstallation>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgUserTeamworkInstalledApp -InputObject <ITeamsIdentity>
- -BodyParameter <IMicrosoftGraphUserScopeTeamsAppInstallation> [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgUserTeamworkInstalledApp -UserId <String> -BodyParameter <IMicrosoftGraphUserScopeTeamsAppInstallation1>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded
+### CreateViaIdentityExpanded1
 ```
 New-MgUserTeamworkInstalledApp -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-Chat <IMicrosoftGraphChat>] [-Id <String>] [-TeamsApp <IMicrosoftGraphTeamsApp>]
- [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition1>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity1
+```
+New-MgUserTeamworkInstalledApp -InputObject <ITeamsIdentity>
+ -BodyParameter <IMicrosoftGraphUserScopeTeamsAppInstallation1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,8 +49,8 @@ The apps installed in the personal scope of this user.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: Hashtable
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -65,8 +65,8 @@ userScopeTeamsAppInstallation
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserScopeTeamsAppInstallation
-Parameter Sets: Create, CreateViaIdentity
+Type: IMicrosoftGraphUserScopeTeamsAppInstallation1
+Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -81,8 +81,8 @@ chat
 To construct, please use Get-Help -Online and see NOTES section for CHAT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChat
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: IMicrosoftGraphChat
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -96,8 +96,8 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: String
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -112,8 +112,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: ITeamsIdentity
+Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -128,8 +128,8 @@ teamsApp
 To construct, please use Get-Help -Online and see NOTES section for TEAMSAPP properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsApp
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: IMicrosoftGraphTeamsApp
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -144,8 +144,8 @@ teamsAppDefinition
 To construct, please use Get-Help -Online and see NOTES section for TEAMSAPPDEFINITION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppDefinition
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: IMicrosoftGraphTeamsAppDefinition1
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -159,8 +159,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded1, Create1
 Aliases:
 
 Required: True
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -190,7 +190,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -206,14 +206,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserScopeTeamsAppInstallation
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserScopeTeamsAppInstallation1
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserScopeTeamsAppInstallation
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserScopeTeamsAppInstallation1
 ## NOTES
 
 ALIASES
@@ -725,3 +722,4 @@ TEAMSAPPDEFINITION <IMicrosoftGraphTeamsAppDefinition>: teamsAppDefinition
 
 ## RELATED LINKS
 
+## RELATED LINKS

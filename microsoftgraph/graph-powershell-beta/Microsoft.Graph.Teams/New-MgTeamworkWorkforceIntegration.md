@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgteamworkworkforceintegration
 schema: 2.0.0
@@ -12,18 +12,18 @@ A workforce integration with shifts.
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### CreateExpanded1 (Default)
 ```
 New-MgTeamworkWorkforceIntegration [-AdditionalProperties <Hashtable>] [-ApiVersion <Int32>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-DisplayName <String>]
  [-EligibilityFilteringEnabledEntities <String>] [-Encryption <IMicrosoftGraphWorkforceIntegrationEncryption>]
  [-Id <String>] [-IsActive] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-SupportedEntities <String>] [-Supports <String>] [-Url <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-SupportedEntities <String>] [-Supports <String>] [-Url <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create
+### Create1
 ```
-New-MgTeamworkWorkforceIntegration -BodyParameter <IMicrosoftGraphWorkforceIntegration> [-Confirm] [-WhatIf]
+New-MgTeamworkWorkforceIntegration -BodyParameter <IMicrosoftGraphWorkforceIntegration1> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -38,8 +38,8 @@ A workforce integration with shifts.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: CreateExpanded
+Type: Hashtable
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -54,8 +54,8 @@ API version for the call back URL.
 Start with 1.
 
 ```yaml
-Type: System.Int32
-Parameter Sets: CreateExpanded
+Type: Int32
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -70,8 +70,8 @@ workforceIntegration
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWorkforceIntegration
-Parameter Sets: Create
+Type: IMicrosoftGraphWorkforceIntegration1
+Parameter Sets: Create1
 Aliases:
 
 Required: True
@@ -86,8 +86,8 @@ identitySet
 To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
-Parameter Sets: CreateExpanded
+Type: IMicrosoftGraphIdentitySet
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -102,8 +102,8 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: System.DateTime
-Parameter Sets: CreateExpanded
+Type: DateTime
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -117,8 +117,8 @@ Accept wildcard characters: False
 Name of the workforce integration.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -132,8 +132,8 @@ Accept wildcard characters: False
 eligibilityFilteringEnabledEntities
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -148,8 +148,8 @@ workforceIntegrationEncryption
 To construct, please use Get-Help -Online and see NOTES section for ENCRYPTION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWorkforceIntegrationEncryption
-Parameter Sets: CreateExpanded
+Type: IMicrosoftGraphWorkforceIntegrationEncryption
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -163,8 +163,8 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -178,8 +178,8 @@ Accept wildcard characters: False
 Indicates whether this workforce integration is currently active and available.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: CreateExpanded
+Type: SwitchParameter
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -194,8 +194,8 @@ identitySet
 To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
-Parameter Sets: CreateExpanded
+Type: IMicrosoftGraphIdentitySet
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -210,8 +210,8 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: System.DateTime
-Parameter Sets: CreateExpanded
+Type: DateTime
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -225,8 +225,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -240,8 +240,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -255,8 +255,8 @@ Accept wildcard characters: False
 Workforce Integration URL for callbacks from the Shifts service.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -270,7 +270,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -286,7 +286,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -302,12 +302,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWorkforceIntegration
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWorkforceIntegration1
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWorkforceIntegration
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWorkforceIntegration1
 ## NOTES
 
 ALIASES
@@ -367,4 +365,3 @@ LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
-

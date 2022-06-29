@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/invoke-mghaveteamchannel
 schema: 2.0.0
@@ -14,13 +14,14 @@ Invoke function doesUserHaveAccess
 
 ### Have (Default)
 ```
-Invoke-MgHaveTeamChannel -ChannelId <String> -TeamId <String> -TenantId <String> -UserId <String>
- -UserPrincipalName <String> [<CommonParameters>]
+Invoke-MgHaveTeamChannel -ChannelId <String> -TeamId <String> [-TenantId <String>] [-UserId <String>]
+ [-UserPrincipalName <String>] [<CommonParameters>]
 ```
 
 ### HaveViaIdentity
 ```
-Invoke-MgHaveTeamChannel -InputObject <ITeamsIdentity> [<CommonParameters>]
+Invoke-MgHaveTeamChannel -InputObject <ITeamsIdentity> [-TenantId <String>] [-UserId <String>]
+ [-UserPrincipalName <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -34,7 +35,7 @@ Invoke function doesUserHaveAccess
 key: id of channel
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Have
 Aliases:
 
@@ -50,7 +51,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+Type: ITeamsIdentity
 Parameter Sets: HaveViaIdentity
 Aliases:
 
@@ -65,7 +66,7 @@ Accept wildcard characters: False
 key: id of team
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Have
 Aliases:
 
@@ -80,11 +81,11 @@ Accept wildcard characters: False
 Usage: tenantId={tenantId}
 
 ```yaml
-Type: System.String
-Parameter Sets: Have
+Type: String
+Parameter Sets: (All)
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -95,11 +96,11 @@ Accept wildcard characters: False
 Usage: userId={userId}
 
 ```yaml
-Type: System.String
-Parameter Sets: Have
+Type: String
+Parameter Sets: (All)
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -110,11 +111,11 @@ Accept wildcard characters: False
 Usage: userPrincipalName={userPrincipalName}
 
 ```yaml
-Type: System.String
-Parameter Sets: Have
+Type: String
+Parameter Sets: (All)
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -127,11 +128,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -180,4 +179,3 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
 ## RELATED LINKS
-

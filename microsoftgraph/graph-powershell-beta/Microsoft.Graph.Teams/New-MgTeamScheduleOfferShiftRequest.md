@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgteamscheduleoffershiftrequest
 schema: 2.0.0
@@ -12,30 +12,24 @@ Create new navigation property to offerShiftRequests for teams
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### CreateExpanded1 (Default)
 ```
-New-MgTeamScheduleOfferShiftRequest -TeamId <String> [-AdditionalProperties <Hashtable>]
- [-AssignedTo <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-Id <String>]
+New-MgTeamScheduleOfferShiftRequest -TeamId <String> [-AdditionalProperties <Hashtable>] [-AssignedTo <String>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-ManagerActionDateTime <DateTime>] [-ManagerActionMessage <String>] [-ManagerUserId <String>]
  [-RecipientActionDateTime <DateTime>] [-RecipientActionMessage <String>] [-RecipientUserId <String>]
  [-SenderDateTime <DateTime>] [-SenderMessage <String>] [-SenderShiftId <String>] [-SenderUserId <String>]
- [-State <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-State <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create
+### Create1
 ```
-New-MgTeamScheduleOfferShiftRequest -TeamId <String> -BodyParameter <IMicrosoftGraphOfferShiftRequest>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity>
- -BodyParameter <IMicrosoftGraphOfferShiftRequest> [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgTeamScheduleOfferShiftRequest -TeamId <String> -BodyParameter <IMicrosoftGraphOfferShiftRequest1>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded
+### CreateViaIdentityExpanded1
 ```
 New-MgTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-AssignedTo <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-Id <String>]
@@ -43,7 +37,13 @@ New-MgTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity> [-AdditionalPr
  [-ManagerActionDateTime <DateTime>] [-ManagerActionMessage <String>] [-ManagerUserId <String>]
  [-RecipientActionDateTime <DateTime>] [-RecipientActionMessage <String>] [-RecipientUserId <String>]
  [-SenderDateTime <DateTime>] [-SenderMessage <String>] [-SenderShiftId <String>] [-SenderUserId <String>]
- [-State <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-State <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity1
+```
+New-MgTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity>
+ -BodyParameter <IMicrosoftGraphOfferShiftRequest1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -57,8 +57,8 @@ Create new navigation property to offerShiftRequests for teams
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: Hashtable
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -72,8 +72,8 @@ Accept wildcard characters: False
 scheduleChangeRequestActor
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: String
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -88,8 +88,8 @@ offerShiftRequest
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOfferShiftRequest
-Parameter Sets: Create, CreateViaIdentity
+Type: IMicrosoftGraphOfferShiftRequest1
+Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -104,8 +104,8 @@ identitySet
 To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: IMicrosoftGraphIdentitySet
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -120,8 +120,8 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: System.DateTime
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: DateTime
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -135,8 +135,8 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: String
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -151,8 +151,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: ITeamsIdentity
+Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -167,8 +167,8 @@ identitySet
 To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: IMicrosoftGraphIdentitySet
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -183,8 +183,8 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: System.DateTime
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: DateTime
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -198,8 +198,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.DateTime
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: DateTime
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -213,8 +213,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: String
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -228,8 +228,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: String
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -244,8 +244,8 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: System.DateTime
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: DateTime
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -259,8 +259,8 @@ Accept wildcard characters: False
 Custom message sent by recipient of the offer shift request.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: String
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -274,8 +274,8 @@ Accept wildcard characters: False
 User ID of the recipient of the offer shift request.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: String
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -289,8 +289,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.DateTime
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: DateTime
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -304,8 +304,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: String
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -319,8 +319,8 @@ Accept wildcard characters: False
 User ID of the sender of the offer shift request.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: String
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -334,8 +334,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: String
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -349,8 +349,8 @@ Accept wildcard characters: False
 scheduleChangeState
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: String
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -364,8 +364,8 @@ Accept wildcard characters: False
 key: id of team
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded1, Create1
 Aliases:
 
 Required: True
@@ -379,7 +379,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -395,7 +395,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -411,14 +411,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOfferShiftRequest
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOfferShiftRequest1
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOfferShiftRequest
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOfferShiftRequest1
 ## NOTES
 
 ALIASES
@@ -512,4 +509,3 @@ LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
-

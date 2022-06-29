@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mguserchat
 schema: 2.0.0
@@ -12,41 +12,43 @@ Create new navigation property to chats for users
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### CreateExpanded1 (Default)
 ```
 New-MgUserChat -UserId <String> [-AdditionalProperties <Hashtable>] [-ChatType <String>]
- [-CreatedDateTime <DateTime>] [-Id <String>] [-InstalledApps <IMicrosoftGraphTeamsAppInstallation[]>]
+ [-CreatedDateTime <DateTime>] [-Id <String>] [-InstalledApps <IMicrosoftGraphTeamsAppInstallation1[]>]
  [-LastMessagePreview <IMicrosoftGraphChatMessageInfo>] [-LastUpdatedDateTime <DateTime>]
  [-Members <IMicrosoftGraphConversationMember[]>] [-Messages <IMicrosoftGraphChatMessage[]>]
  [-OnlineMeetingInfo <IMicrosoftGraphTeamworkOnlineMeetingInfo>]
- [-Operations <IMicrosoftGraphTeamsAsyncOperation[]>]
- [-PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>] [-Tabs <IMicrosoftGraphTeamsTab[]>]
+ [-Operations <IMicrosoftGraphTeamsAsyncOperation1[]>]
+ [-PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>]
+ [-PinnedMessages <IMicrosoftGraphPinnedChatMessageInfo[]>] [-Tabs <IMicrosoftGraphTeamsTab1[]>]
  [-TenantId <String>] [-Topic <String>] [-Viewpoint <IMicrosoftGraphChatViewpoint>] [-WebUrl <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create
+### Create1
 ```
-New-MgUserChat -UserId <String> -BodyParameter <IMicrosoftGraphChat> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgUserChat -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphChat> [-Confirm] [-WhatIf]
- [<CommonParameters>]
+New-MgUserChat -UserId <String> -BodyParameter <IMicrosoftGraphChat> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded
+### CreateViaIdentityExpanded1
 ```
 New-MgUserChat -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>] [-ChatType <String>]
- [-CreatedDateTime <DateTime>] [-Id <String>] [-InstalledApps <IMicrosoftGraphTeamsAppInstallation[]>]
+ [-CreatedDateTime <DateTime>] [-Id <String>] [-InstalledApps <IMicrosoftGraphTeamsAppInstallation1[]>]
  [-LastMessagePreview <IMicrosoftGraphChatMessageInfo>] [-LastUpdatedDateTime <DateTime>]
  [-Members <IMicrosoftGraphConversationMember[]>] [-Messages <IMicrosoftGraphChatMessage[]>]
  [-OnlineMeetingInfo <IMicrosoftGraphTeamworkOnlineMeetingInfo>]
- [-Operations <IMicrosoftGraphTeamsAsyncOperation[]>]
- [-PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>] [-Tabs <IMicrosoftGraphTeamsTab[]>]
+ [-Operations <IMicrosoftGraphTeamsAsyncOperation1[]>]
+ [-PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>]
+ [-PinnedMessages <IMicrosoftGraphPinnedChatMessageInfo[]>] [-Tabs <IMicrosoftGraphTeamsTab1[]>]
  [-TenantId <String>] [-Topic <String>] [-Viewpoint <IMicrosoftGraphChatViewpoint>] [-WebUrl <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity1
+```
+New-MgUserChat -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphChat> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -60,8 +62,8 @@ Create new navigation property to chats for users
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: Hashtable
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -76,8 +78,8 @@ chat
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChat
-Parameter Sets: Create, CreateViaIdentity
+Type: IMicrosoftGraphChat
+Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -91,8 +93,8 @@ Accept wildcard characters: False
 chatType
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: String
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -107,8 +109,8 @@ Date and time at which the chat was created.
 Read-only.
 
 ```yaml
-Type: System.DateTime
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: DateTime
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -122,8 +124,8 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: String
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -138,8 +140,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: ITeamsIdentity
+Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -155,8 +157,8 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for INSTALLEDAPPS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppInstallation[]
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: IMicrosoftGraphTeamsAppInstallation1[]
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -171,8 +173,8 @@ chatMessageInfo
 To construct, please use Get-Help -Online and see NOTES section for LASTMESSAGEPREVIEW properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessageInfo
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: IMicrosoftGraphChatMessageInfo
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -187,8 +189,8 @@ Date and time at which the chat was renamed or list of members were last changed
 Read-only.
 
 ```yaml
-Type: System.DateTime
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: DateTime
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -204,8 +206,8 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for MEMBERS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversationMember[]
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: IMicrosoftGraphConversationMember[]
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -221,8 +223,8 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for MESSAGES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessage[]
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: IMicrosoftGraphChatMessage[]
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -237,8 +239,8 @@ teamworkOnlineMeetingInfo
 To construct, please use Get-Help -Online and see NOTES section for ONLINEMEETINGINFO properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkOnlineMeetingInfo
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: IMicrosoftGraphTeamworkOnlineMeetingInfo
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -254,8 +256,8 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for OPERATIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAsyncOperation[]
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: IMicrosoftGraphTeamsAsyncOperation1[]
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -270,8 +272,25 @@ A collection of permissions granted to apps for the chat.
 To construct, please use Get-Help -Online and see NOTES section for PERMISSIONGRANTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphResourceSpecificPermissionGrant[]
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: IMicrosoftGraphResourceSpecificPermissionGrant[]
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PinnedMessages
+A collection of all the pinned messages in the chat.
+Nullable.
+To construct, please use Get-Help -Online and see NOTES section for PINNEDMESSAGES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphPinnedChatMessageInfo[]
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -287,8 +306,8 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for TABS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsTab[]
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: IMicrosoftGraphTeamsTab1[]
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -303,8 +322,8 @@ The identifier of the tenant in which the chat was created.
 Read-only.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: String
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -319,8 +338,8 @@ Accept wildcard characters: False
 Only available for group chats.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: String
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -334,8 +353,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded1, Create1
 Aliases:
 
 Required: True
@@ -350,8 +369,8 @@ chatViewpoint
 To construct, please use Get-Help -Online and see NOTES section for VIEWPOINT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatViewpoint
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: IMicrosoftGraphChatViewpoint
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -367,8 +386,8 @@ The URL should be treated as an opaque blob, and not parsed.
 Read-only.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: String
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -382,7 +401,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -398,7 +417,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -415,13 +434,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChat
-
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChat
-
 ## NOTES
 
 ALIASES
@@ -905,3 +921,4 @@ VIEWPOINT <IMicrosoftGraphChatViewpoint>: chatViewpoint
 
 ## RELATED LINKS
 
+## RELATED LINKS

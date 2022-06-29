@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgappcatalogteamappdefinition
 schema: 2.0.0
@@ -12,36 +12,36 @@ The details for each version of the app.
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgAppCatalogTeamAppDefinition -TeamsAppId <String> [-AdditionalProperties <Hashtable>]
  [-AllowedInstallationScopes <String>] [-AzureAdAppId <String>] [-Bot <Hashtable>]
  [-ColorIcon <IMicrosoftGraphTeamsAppIcon>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
  [-OutlineIcon <IMicrosoftGraphTeamsAppIcon>] [-PublishingState <String>] [-Shortdescription <String>]
- [-TeamsAppId1 <String>] [-Version <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-TeamsAppId1 <String>] [-Version <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### CreateViaIdentityExpanded
 ```
-New-MgAppCatalogTeamAppDefinition -TeamsAppId <String> -BodyParameter <IMicrosoftGraphTeamsAppDefinition>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity1
-```
-New-MgAppCatalogTeamAppDefinition -InputObject <ITeamsIdentity>
- -BodyParameter <IMicrosoftGraphTeamsAppDefinition> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded1
-```
-New-MgAppCatalogTeamAppDefinition -InputObject <ITeamsIdentity> [-TeamsAppId <String>]
+New-MgAppCatalogTeamAppDefinition [-TeamsAppId <String>] -InputObject <ITeamsIdentity>
  [-AdditionalProperties <Hashtable>] [-AllowedInstallationScopes <String>] [-AzureAdAppId <String>]
  [-Bot <Hashtable>] [-ColorIcon <IMicrosoftGraphTeamsAppIcon>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
  [-OutlineIcon <IMicrosoftGraphTeamsAppIcon>] [-PublishingState <String>] [-Shortdescription <String>]
- [-Version <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Version <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Create
+```
+New-MgAppCatalogTeamAppDefinition -TeamsAppId <String> -BodyParameter <IMicrosoftGraphTeamsAppDefinition1>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgAppCatalogTeamAppDefinition -InputObject <ITeamsIdentity>
+ -BodyParameter <IMicrosoftGraphTeamsAppDefinition1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -55,8 +55,8 @@ The details for each version of the app.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: Hashtable
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -70,8 +70,8 @@ Accept wildcard characters: False
 teamsAppInstallationScopes
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -85,8 +85,8 @@ Accept wildcard characters: False
 The WebApplicationInfo.Id from the Teams app manifest.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -101,8 +101,8 @@ teamsAppDefinition
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppDefinition
-Parameter Sets: Create1, CreateViaIdentity1
+Type: IMicrosoftGraphTeamsAppDefinition1
+Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -116,8 +116,8 @@ Accept wildcard characters: False
 teamworkBot
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: Hashtable
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -132,8 +132,8 @@ teamsAppIcon
 To construct, please use Get-Help -Online and see NOTES section for COLORICON properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppIcon
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: IMicrosoftGraphTeamsAppIcon
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -148,8 +148,8 @@ identitySet
 To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: IMicrosoftGraphIdentitySet
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -163,8 +163,8 @@ Accept wildcard characters: False
 Verbose description of the application.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -178,8 +178,8 @@ Accept wildcard characters: False
 The name of the app provided by the app developer.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -193,8 +193,8 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -209,8 +209,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-Parameter Sets: CreateViaIdentity1, CreateViaIdentityExpanded1
+Type: ITeamsIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -224,8 +224,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: DateTime
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -240,8 +240,8 @@ teamsAppIcon
 To construct, please use Get-Help -Online and see NOTES section for OUTLINEICON properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppIcon
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: IMicrosoftGraphTeamsAppIcon
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -255,8 +255,8 @@ Accept wildcard characters: False
 teamsAppPublishingState
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -270,8 +270,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -285,11 +285,23 @@ Accept wildcard characters: False
 key: id of teamsApp
 
 ```yaml
-Type: System.String
-Parameter Sets: Create1, CreateExpanded1, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+```yaml
+Type: String
+Parameter Sets: CreateViaIdentityExpanded
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -300,8 +312,8 @@ Accept wildcard characters: False
 The ID from the Teams app manifest.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1
+Type: String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -315,8 +327,8 @@ Accept wildcard characters: False
 The version number of the application.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -330,7 +342,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -346,7 +358,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -362,14 +374,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppDefinition
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppDefinition1
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppDefinition
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppDefinition1
 ## NOTES
 
 ALIASES
@@ -481,4 +490,3 @@ OUTLINEICON <IMicrosoftGraphTeamsAppIcon>: teamsAppIcon
   - `[WebUrl <String>]`: The web URL that can be used for downloading the image.
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mgteamwork
 schema: 2.0.0
@@ -12,16 +12,18 @@ Update teamwork
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### UpdateExpanded1 (Default)
 ```
-Update-MgTeamwork [-AdditionalProperties <Hashtable>] [-Devices <IMicrosoftGraphTeamworkDevice[]>]
- [-Id <String>] [-WorkforceIntegrations <IMicrosoftGraphWorkforceIntegration[]>] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Update-MgTeamwork [-AdditionalProperties <Hashtable>] [-DeletedTeams <IMicrosoftGraphDeletedTeam[]>]
+ [-Devices <IMicrosoftGraphTeamworkDevice[]>] [-Id <String>]
+ [-TeamsAppSettings <IMicrosoftGraphTeamsAppSettings>]
+ [-WorkforceIntegrations <IMicrosoftGraphWorkforceIntegration1[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
-### Update
+### Update1
 ```
-Update-MgTeamwork -BodyParameter <IMicrosoftGraphTeamwork> [-PassThru] [-Confirm] [-WhatIf]
+Update-MgTeamwork -BodyParameter <IMicrosoftGraphTeamwork> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -36,8 +38,8 @@ Update teamwork
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: UpdateExpanded
+Type: Hashtable
+Parameter Sets: UpdateExpanded1
 Aliases:
 
 Required: False
@@ -52,8 +54,8 @@ teamwork
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamwork
-Parameter Sets: Update
+Type: IMicrosoftGraphTeamwork
+Parameter Sets: Update1
 Aliases:
 
 Required: True
@@ -63,13 +65,29 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -DeletedTeams
+.
+To construct, please use Get-Help -Online and see NOTES section for DELETEDTEAMS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphDeletedTeam[]
+Parameter Sets: UpdateExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Devices
 The Teams devices provisioned for the tenant.
 To construct, please use Get-Help -Online and see NOTES section for DEVICES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkDevice[]
-Parameter Sets: UpdateExpanded
+Type: IMicrosoftGraphTeamworkDevice[]
+Parameter Sets: UpdateExpanded1
 Aliases:
 
 Required: False
@@ -83,8 +101,8 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
-Parameter Sets: UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded1
 Aliases:
 
 Required: False
@@ -98,8 +116,24 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TeamsAppSettings
+teamsAppSettings
+To construct, please use Get-Help -Online and see NOTES section for TEAMSAPPSETTINGS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphTeamsAppSettings
+Parameter Sets: UpdateExpanded1
 Aliases:
 
 Required: False
@@ -114,8 +148,8 @@ A workforce integration with shifts.
 To construct, please use Get-Help -Online and see NOTES section for WORKFORCEINTEGRATIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWorkforceIntegration[]
-Parameter Sets: UpdateExpanded
+Type: IMicrosoftGraphWorkforceIntegration1[]
+Parameter Sets: UpdateExpanded1
 Aliases:
 
 Required: False
@@ -129,7 +163,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -145,7 +179,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -162,11 +196,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamwork
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -643,3 +675,4 @@ WORKFORCEINTEGRATIONS <IMicrosoftGraphWorkforceIntegration[]>: A workforce integ
 
 ## RELATED LINKS
 
+## RELATED LINKS
