@@ -89,9 +89,6 @@ This object can only be retrieved on a single GET request (GET /applications/{id
 ### [Get-MgApplicationHomeRealmDiscoveryPolicy](Get-MgApplicationHomeRealmDiscoveryPolicy.md)
 Get homeRealmDiscoveryPolicies from applications
 
-### [Get-MgApplicationHomeRealmDiscoveryPolicyByRef](Get-MgApplicationHomeRealmDiscoveryPolicyByRef.md)
-Get ref of homeRealmDiscoveryPolicies from applications
-
 ### [Get-MgApplicationLogo](Get-MgApplicationLogo.md)
 The main logo for the application.
 Not nullable.
@@ -204,10 +201,6 @@ Nullable.
 Read-only.
 Nullable.
 
-### [Get-MgOnPremisePublishingProfileConnectorGroupApplicationByRef](Get-MgOnPremisePublishingProfileConnectorGroupApplicationByRef.md)
-Read-only.
-Nullable.
-
 ### [Get-MgOnPremisePublishingProfileConnectorGroupMember](Get-MgOnPremisePublishingProfileConnectorGroupMember.md)
 Read-only.
 Nullable.
@@ -226,23 +219,10 @@ List of onPremisesAgentGroups that a publishedResource is assigned to.
 Read-only.
 Nullable.
 
-### [Get-MgOnPremisePublishingProfilePublishedResourceAgentGroupAgent](Get-MgOnPremisePublishingProfilePublishedResourceAgentGroupAgent.md)
-List of onPremisesAgent that are assigned to an onPremisesAgentGroup.
-Read-only.
-Nullable.
-
-### [Get-MgOnPremisePublishingProfilePublishedResourceAgentGroupPublishedResource](Get-MgOnPremisePublishingProfilePublishedResourceAgentGroupPublishedResource.md)
-List of publishedResource that are assigned to an onPremisesAgentGroup.
-Read-only.
-Nullable.
-
 ### [Get-MgServicePrincipal](Get-MgServicePrincipal.md)
 Get entity from servicePrincipals by key
 
 ### [Get-MgServicePrincipalAppManagementPolicy](Get-MgServicePrincipalAppManagementPolicy.md)
-The appManagementPolicy applied to this service principal.
-
-### [Get-MgServicePrincipalAppManagementPolicyByRef](Get-MgServicePrincipalAppManagementPolicyByRef.md)
 The appManagementPolicy applied to this service principal.
 
 ### [Get-MgServicePrincipalAppRoleAssignedTo](Get-MgServicePrincipalAppRoleAssignedTo.md)
@@ -265,11 +245,6 @@ The claimsMappingPolicies assigned to this service principal.
 Supports $expand.
 
 ### [Get-MgServicePrincipalCreatedObject](Get-MgServicePrincipalCreatedObject.md)
-Directory objects created by this service principal.
-Read-only.
-Nullable.
-
-### [Get-MgServicePrincipalCreatedObjectByRef](Get-MgServicePrincipalCreatedObjectByRef.md)
 Directory objects created by this service principal.
 Read-only.
 Nullable.
@@ -316,18 +291,7 @@ Delegated permission grants authorizing this service principal to access an API 
 Read-only.
 Nullable.
 
-### [Get-MgServicePrincipalOauth2PermissionGrantByRef](Get-MgServicePrincipalOauth2PermissionGrantByRef.md)
-Delegated permission grants authorizing this service principal to access an API on behalf of a signed-in user.
-Read-only.
-Nullable.
-
 ### [Get-MgServicePrincipalOwnedObject](Get-MgServicePrincipalOwnedObject.md)
-Directory objects that are owned by this service principal.
-Read-only.
-Nullable.
-Supports $expand.
-
-### [Get-MgServicePrincipalOwnedObjectByRef](Get-MgServicePrincipalOwnedObjectByRef.md)
 Directory objects that are owned by this service principal.
 Read-only.
 Nullable.
@@ -377,19 +341,7 @@ Contains the collection of directories and all of their objects.
 ### [Get-MgServicePrincipalTokenIssuancePolicy](Get-MgServicePrincipalTokenIssuancePolicy.md)
 The tokenIssuancePolicies assigned to this service principal.
 
-### [Get-MgServicePrincipalTokenIssuancePolicyByRef](Get-MgServicePrincipalTokenIssuancePolicyByRef.md)
-The tokenIssuancePolicies assigned to this service principal.
-
 ### [Get-MgServicePrincipalTokenLifetimePolicy](Get-MgServicePrincipalTokenLifetimePolicy.md)
-The tokenLifetimePolicies assigned to this service principal.
-
-### [Get-MgServicePrincipalTokenLifetimePolicyByRef](Get-MgServicePrincipalTokenLifetimePolicyByRef.md)
-The tokenLifetimePolicies assigned to this service principal.
-
-### [Get-MgServicePrincipalTokenLifetimePolicyByRef](Get-MgServicePrincipalTokenLifetimePolicyByRef.md)
-The tokenLifetimePolicies assigned to this service principal.
-
-### [Get-MgServicePrincipalTokenLifetimePolicyByRef](Get-MgServicePrincipalTokenLifetimePolicyByRef.md)
 The tokenLifetimePolicies assigned to this service principal.
 
 ### [Get-MgServicePrincipalUserOwnedObject](Get-MgServicePrincipalUserOwnedObject.md)
@@ -451,9 +403,6 @@ Nullable.
 ### [New-MgApplicationFederatedIdentityCredential](New-MgApplicationFederatedIdentityCredential.md)
 Federated identities for applications.
 This object can only be retrieved on a single GET request (GET /applications/{id}/federatedIdentityCredentials).
-
-### [New-MgApplicationHomeRealmDiscoveryPolicyByRef](New-MgApplicationHomeRealmDiscoveryPolicyByRef.md)
-Create new navigation property ref to homeRealmDiscoveryPolicies for applications
 
 ### [New-MgApplicationOwnerByRef](New-MgApplicationOwnerByRef.md)
 Directory objects that are owners of the application.
@@ -528,14 +477,6 @@ List of existing connectorGroup objects for applications published through Appli
 Read-only.
 Nullable.
 
-### [New-MgOnPremisePublishingProfileConnectorGroupApplicationByRef](New-MgOnPremisePublishingProfileConnectorGroupApplicationByRef.md)
-Read-only.
-Nullable.
-
-### [New-MgOnPremisePublishingProfileConnectorMemberOf](New-MgOnPremisePublishingProfileConnectorMemberOf.md)
-The connectorGroup that the connector is a member of.
-Read-only.
-
 ### [New-MgOnPremisePublishingProfilePublishedResource](New-MgOnPremisePublishingProfilePublishedResource.md)
 List of existing publishedResource objects.
 Read-only.
@@ -546,21 +487,8 @@ List of onPremisesAgentGroups that a publishedResource is assigned to.
 Read-only.
 Nullable.
 
-### [New-MgOnPremisePublishingProfilePublishedResourceAgentGroupAgent](New-MgOnPremisePublishingProfilePublishedResourceAgentGroupAgent.md)
-List of onPremisesAgent that are assigned to an onPremisesAgentGroup.
-Read-only.
-Nullable.
-
-### [New-MgOnPremisePublishingProfilePublishedResourceAgentGroupPublishedResource](New-MgOnPremisePublishingProfilePublishedResourceAgentGroupPublishedResource.md)
-List of publishedResource that are assigned to an onPremisesAgentGroup.
-Read-only.
-Nullable.
-
 ### [New-MgServicePrincipal](New-MgServicePrincipal.md)
 Add new entity to servicePrincipals
-
-### [New-MgServicePrincipalAppManagementPolicyByRef](New-MgServicePrincipalAppManagementPolicyByRef.md)
-The appManagementPolicy applied to this service principal.
 
 ### [New-MgServicePrincipalAppRoleAssignedTo](New-MgServicePrincipalAppRoleAssignedTo.md)
 App role assignments for this app or service, granted to users, groups, and other service principals.
@@ -573,11 +501,6 @@ Supports $expand.
 ### [New-MgServicePrincipalClaimMappingPolicyByRef](New-MgServicePrincipalClaimMappingPolicyByRef.md)
 The claimsMappingPolicies assigned to this service principal.
 Supports $expand.
-
-### [New-MgServicePrincipalCreatedObjectByRef](New-MgServicePrincipalCreatedObjectByRef.md)
-Directory objects created by this service principal.
-Read-only.
-Nullable.
 
 ### [New-MgServicePrincipalDelegatedPermissionClassification](New-MgServicePrincipalDelegatedPermissionClassification.md)
 The permission classifications for delegated permissions exposed by the app that this service principal represents.
@@ -599,17 +522,6 @@ Create new navigation property to licenseDetails for servicePrincipals
 
 ### [New-MgServicePrincipalLicenseDetail](New-MgServicePrincipalLicenseDetail.md)
 Create new navigation property to licenseDetails for servicePrincipals
-
-### [New-MgServicePrincipalOauth2PermissionGrantByRef](New-MgServicePrincipalOauth2PermissionGrantByRef.md)
-Delegated permission grants authorizing this service principal to access an API on behalf of a signed-in user.
-Read-only.
-Nullable.
-
-### [New-MgServicePrincipalOwnedObjectByRef](New-MgServicePrincipalOwnedObjectByRef.md)
-Directory objects that are owned by this service principal.
-Read-only.
-Nullable.
-Supports $expand.
 
 ### [New-MgServicePrincipalOwnerByRef](New-MgServicePrincipalOwnerByRef.md)
 Directory objects that are owners of this servicePrincipal.
@@ -635,15 +547,6 @@ Pre-configured synchronization settings for a particular application.
 
 ### [New-MgServicePrincipalSynchronizationTemplateSchemaDirectory](New-MgServicePrincipalSynchronizationTemplateSchemaDirectory.md)
 Contains the collection of directories and all of their objects.
-
-### [New-MgServicePrincipalTokenIssuancePolicyByRef](New-MgServicePrincipalTokenIssuancePolicyByRef.md)
-The tokenIssuancePolicies assigned to this service principal.
-
-### [New-MgServicePrincipalTokenLifetimePolicyByRef](New-MgServicePrincipalTokenLifetimePolicyByRef.md)
-The tokenLifetimePolicies assigned to this service principal.
-
-### [New-MgServicePrincipalTokenLifetimePolicyByRef](New-MgServicePrincipalTokenLifetimePolicyByRef.md)
-The tokenLifetimePolicies assigned to this service principal.
 
 ### [New-MgUserAppRoleAssignment](New-MgUserAppRoleAssignment.md)
 Represents the app roles a user has been granted for an application.
@@ -731,11 +634,6 @@ List of publishedResource that are assigned to an onPremisesAgentGroup.
 Read-only.
 Nullable.
 
-### [Remove-MgOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroup](Remove-MgOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroup.md)
-List of onPremisesAgentGroups that a publishedResource is assigned to.
-Read-only.
-Nullable.
-
 ### [Remove-MgOnPremisePublishingProfileConnector](Remove-MgOnPremisePublishingProfileConnector.md)
 List of existing connector objects for applications published through Application Proxy.
 Read-only.
@@ -746,27 +644,8 @@ List of existing connectorGroup objects for applications published through Appli
 Read-only.
 Nullable.
 
-### [Remove-MgOnPremisePublishingProfileConnectorMemberOf](Remove-MgOnPremisePublishingProfileConnectorMemberOf.md)
-The connectorGroup that the connector is a member of.
-Read-only.
-
 ### [Remove-MgOnPremisePublishingProfilePublishedResource](Remove-MgOnPremisePublishingProfilePublishedResource.md)
 List of existing publishedResource objects.
-Read-only.
-Nullable.
-
-### [Remove-MgOnPremisePublishingProfilePublishedResourceAgentGroup](Remove-MgOnPremisePublishingProfilePublishedResourceAgentGroup.md)
-List of onPremisesAgentGroups that a publishedResource is assigned to.
-Read-only.
-Nullable.
-
-### [Remove-MgOnPremisePublishingProfilePublishedResourceAgentGroupAgent](Remove-MgOnPremisePublishingProfilePublishedResourceAgentGroupAgent.md)
-List of onPremisesAgent that are assigned to an onPremisesAgentGroup.
-Read-only.
-Nullable.
-
-### [Remove-MgOnPremisePublishingProfilePublishedResourceAgentGroupPublishedResource](Remove-MgOnPremisePublishingProfilePublishedResourceAgentGroupPublishedResource.md)
-List of publishedResource that are assigned to an onPremisesAgentGroup.
 Read-only.
 Nullable.
 
@@ -828,12 +707,6 @@ Invoke action restart
 
 ### [Restart-MgServicePrincipalSynchronizationJob](Restart-MgServicePrincipalSynchronizationJob.md)
 Invoke action restart
-
-### [Restore-MgApplication](Restore-MgApplication.md)
-Invoke action restore
-
-### [Restore-MgServicePrincipal](Restore-MgServicePrincipal.md)
-Invoke action restore
 
 ### [Set-MgApplicationConnectorGroupByRef](Set-MgApplicationConnectorGroupByRef.md)
 The connectorGroup the application is using with Azure AD Application Proxy.
@@ -942,11 +815,6 @@ List of publishedResource that are assigned to an onPremisesAgentGroup.
 Read-only.
 Nullable.
 
-### [Update-MgOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroup](Update-MgOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroup.md)
-List of onPremisesAgentGroups that a publishedResource is assigned to.
-Read-only.
-Nullable.
-
 ### [Update-MgOnPremisePublishingProfileConnector](Update-MgOnPremisePublishingProfileConnector.md)
 List of existing connector objects for applications published through Application Proxy.
 Read-only.
@@ -957,27 +825,8 @@ List of existing connectorGroup objects for applications published through Appli
 Read-only.
 Nullable.
 
-### [Update-MgOnPremisePublishingProfileConnectorMemberOf](Update-MgOnPremisePublishingProfileConnectorMemberOf.md)
-The connectorGroup that the connector is a member of.
-Read-only.
-
 ### [Update-MgOnPremisePublishingProfilePublishedResource](Update-MgOnPremisePublishingProfilePublishedResource.md)
 List of existing publishedResource objects.
-Read-only.
-Nullable.
-
-### [Update-MgOnPremisePublishingProfilePublishedResourceAgentGroup](Update-MgOnPremisePublishingProfilePublishedResourceAgentGroup.md)
-List of onPremisesAgentGroups that a publishedResource is assigned to.
-Read-only.
-Nullable.
-
-### [Update-MgOnPremisePublishingProfilePublishedResourceAgentGroupAgent](Update-MgOnPremisePublishingProfilePublishedResourceAgentGroupAgent.md)
-List of onPremisesAgent that are assigned to an onPremisesAgentGroup.
-Read-only.
-Nullable.
-
-### [Update-MgOnPremisePublishingProfilePublishedResourceAgentGroupPublishedResource](Update-MgOnPremisePublishingProfilePublishedResourceAgentGroupPublishedResource.md)
-List of publishedResource that are assigned to an onPremisesAgentGroup.
 Read-only.
 Nullable.
 

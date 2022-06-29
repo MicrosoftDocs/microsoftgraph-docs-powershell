@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/new-mgapplication
 schema: 2.0.0
@@ -14,13 +14,13 @@ Add new entity to applications
 
 ### CreateExpanded (Default)
 ```
-New-MgApplication [-AdditionalProperties <Hashtable>] [-Api <IMicrosoftGraphApiApplication1>]
- [-AppId <String>] [-AppManagementPolicies <IMicrosoftGraphAppManagementPolicy[]>]
- [-AppRoles <IMicrosoftGraphAppRole[]>] [-Certification <IMicrosoftGraphCertification>]
- [-ConnectorGroup <IMicrosoftGraphConnectorGroup>] [-CreatedDateTime <DateTime>]
- [-CreatedOnBehalfOf <IMicrosoftGraphDirectoryObject>] [-DefaultRedirectUri <String>]
- [-DeletedDateTime <DateTime>] [-Description <String>] [-DisabledByMicrosoftStatus <String>]
- [-DisplayName <String>] [-ExtensionProperties <IMicrosoftGraphExtensionProperty[]>]
+New-MgApplication [-AdditionalProperties <Hashtable>] [-Api <IMicrosoftGraphApiApplication1>] [-AppId <String>]
+ [-AppManagementPolicies <IMicrosoftGraphAppManagementPolicy[]>] [-AppRoles <IMicrosoftGraphAppRole[]>]
+ [-Certification <IMicrosoftGraphCertification>] [-ConnectorGroup <IMicrosoftGraphConnectorGroup>]
+ [-CreatedDateTime <DateTime>] [-CreatedOnBehalfOf <IMicrosoftGraphDirectoryObject>]
+ [-DefaultRedirectUri <String>] [-DeletedDateTime <DateTime>] [-Description <String>]
+ [-DisabledByMicrosoftStatus <String>] [-DisplayName <String>]
+ [-ExtensionProperties <IMicrosoftGraphExtensionProperty[]>]
  [-FederatedIdentityCredentials <IMicrosoftGraphFederatedIdentityCredential[]>]
  [-GroupMembershipClaims <String>] [-HomeRealmDiscoveryPolicies <IMicrosoftGraphHomeRealmDiscoveryPolicy1[]>]
  [-Id <String>] [-IdentifierUris <String[]>] [-Info <IMicrosoftGraphInformationalUrl>]
@@ -30,17 +30,18 @@ New-MgApplication [-AdditionalProperties <Hashtable>] [-Api <IMicrosoftGraphApiA
  [-ParentalControlSettings <IMicrosoftGraphParentalControlSettings>]
  [-PasswordCredentials <IMicrosoftGraphPasswordCredential[]>]
  [-PublicClient <IMicrosoftGraphPublicClientApplication>] [-PublisherDomain <String>]
- [-RequiredResourceAccess <IMicrosoftGraphRequiredResourceAccess[]>] [-SignInAudience <String>]
- [-Spa <IMicrosoftGraphSpaApplication>] [-Synchronization <IMicrosoftGraphSynchronization>] [-Tags <String[]>]
- [-TokenEncryptionKeyId <String>] [-TokenIssuancePolicies <IMicrosoftGraphTokenIssuancePolicy1[]>]
+ [-RequiredResourceAccess <IMicrosoftGraphRequiredResourceAccess[]>] [-SamlMetadataUrl <String>]
+ [-ServiceManagementReference <String>] [-SignInAudience <String>] [-Spa <IMicrosoftGraphSpaApplication>]
+ [-Synchronization <IMicrosoftGraphSynchronization>] [-Tags <String[]>] [-TokenEncryptionKeyId <String>]
+ [-TokenIssuancePolicies <IMicrosoftGraphTokenIssuancePolicy1[]>]
  [-TokenLifetimePolicies <IMicrosoftGraphTokenLifetimePolicy1[]>] [-UniqueName <String>]
  [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-Web <IMicrosoftGraphWebApplication1>]
- [-Windows <IMicrosoftGraphWindowsApplication>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Windows <IMicrosoftGraphWindowsApplication>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgApplication -BodyParameter <IMicrosoftGraphApplication> [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgApplication -BodyParameter <IMicrosoftGraphApplication> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -68,7 +69,7 @@ This example creates a new application.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -84,7 +85,7 @@ apiApplication
 To construct, please use Get-Help -Online and see NOTES section for API properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApiApplication1
+Type: IMicrosoftGraphApiApplication1
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -101,7 +102,7 @@ Not nullable.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -117,7 +118,7 @@ The appManagementPolicy applied to this application.
 To construct, please use Get-Help -Online and see NOTES section for APPMANAGEMENTPOLICIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppManagementPolicy[]
+Type: IMicrosoftGraphAppManagementPolicy[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -135,7 +136,7 @@ Not nullable.
 To construct, please use Get-Help -Online and see NOTES section for APPROLES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppRole[]
+Type: IMicrosoftGraphAppRole[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -151,7 +152,7 @@ application
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApplication
+Type: IMicrosoftGraphApplication
 Parameter Sets: Create
 Aliases:
 
@@ -167,7 +168,7 @@ certification
 To construct, please use Get-Help -Online and see NOTES section for CERTIFICATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCertification
+Type: IMicrosoftGraphCertification
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -183,7 +184,7 @@ connectorGroup
 To construct, please use Get-Help -Online and see NOTES section for CONNECTORGROUP properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConnectorGroup
+Type: IMicrosoftGraphConnectorGroup
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -202,7 +203,7 @@ Read-only.
 Supports $filter (eq, ne, not, ge, le, in, and eq on null values) and $orderBy.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -218,7 +219,7 @@ directoryObject
 To construct, please use Get-Help -Online and see NOTES section for CREATEDONBEHALFOF properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
+Type: IMicrosoftGraphDirectoryObject
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -236,7 +237,7 @@ Azure AD also sends the token to this default URI in SAML IdP-initiated single s
 The value must match one of the configured redirect URIs for the application.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -252,7 +253,7 @@ Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -269,7 +270,7 @@ The maximum allowed size is 1024 characters.
 Supports $filter (eq, ne, not, ge, le, startsWith) and $search.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -286,7 +287,7 @@ Possible values are: null (default value), NotDisabled, and DisabledDueToViolati
 Supports $filter (eq, ne, not).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -302,7 +303,7 @@ The display name for the application.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderBy.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -319,7 +320,7 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for EXTENSIONPROPERTIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExtensionProperty[]
+Type: IMicrosoftGraphExtensionProperty[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -336,7 +337,7 @@ This object can only be retrieved on a single GET request (GET /applications/{id
 To construct, please use Get-Help -Online and see NOTES section for FEDERATEDIDENTITYCREDENTIALS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFederatedIdentityCredential[]
+Type: IMicrosoftGraphFederatedIdentityCredential[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -352,7 +353,7 @@ Configures the groups claim issued in a user or OAuth 2.0 access token that the 
 To set this attribute, use one of the following valid string values: None, SecurityGroup (for security groups and Azure AD roles), All (this gets all of the security groups, distribution groups, and Azure AD directory roles that the signed-in user is a member of).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -368,7 +369,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for HOMEREALMDISCOVERYPOLICIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphHomeRealmDiscoveryPolicy1[]
+Type: IMicrosoftGraphHomeRealmDiscoveryPolicy1[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -383,7 +384,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -403,7 +404,7 @@ Not nullable.
 Supports $filter (eq, ne, ge, le, startsWith).
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -419,7 +420,7 @@ informationalUrl
 To construct, please use Get-Help -Online and see NOTES section for INFO properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationalUrl
+Type: IMicrosoftGraphInformationalUrl
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -435,7 +436,7 @@ Specifies whether this application supports device authentication without a user
 The default is false.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -454,7 +455,7 @@ For example, the ROPC flow where it is configured without specifying a redirect 
 In those cases Azure AD interprets the application type based on the value of this property.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -472,7 +473,7 @@ Supports $filter (eq, not, ge, le).
 To construct, please use Get-Help -Online and see NOTES section for KEYCREDENTIALS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphKeyCredential[]
+Type: IMicrosoftGraphKeyCredential[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -488,7 +489,7 @@ Input File for Logo (The main logo for the application.
 Not nullable.)
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -503,7 +504,7 @@ Accept wildcard characters: False
 Notes relevant for the management of the application.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -519,7 +520,7 @@ onPremisesPublishing
 To construct, please use Get-Help -Online and see NOTES section for ONPREMISESPUBLISHING properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnPremisesPublishing
+Type: IMicrosoftGraphOnPremisesPublishing
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -535,7 +536,7 @@ optionalClaims
 To construct, please use Get-Help -Online and see NOTES section for OPTIONALCLAIMS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOptionalClaims
+Type: IMicrosoftGraphOptionalClaims
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -554,7 +555,7 @@ Supports $expand.
 To construct, please use Get-Help -Online and see NOTES section for OWNERS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
+Type: IMicrosoftGraphDirectoryObject[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -570,7 +571,7 @@ parentalControlSettings
 To construct, please use Get-Help -Online and see NOTES section for PARENTALCONTROLSETTINGS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphParentalControlSettings
+Type: IMicrosoftGraphParentalControlSettings
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -587,7 +588,7 @@ Not nullable.
 To construct, please use Get-Help -Online and see NOTES section for PASSWORDCREDENTIALS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPasswordCredential[]
+Type: IMicrosoftGraphPasswordCredential[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -603,7 +604,7 @@ publicClientApplication
 To construct, please use Get-Help -Online and see NOTES section for PUBLICCLIENT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPublicClientApplication
+Type: IMicrosoftGraphPublicClientApplication
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -621,7 +622,7 @@ For more information, see How to: Configure an application's publisher domain.
 Supports $filter (eq, ne, ge, le, startsWith).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -643,7 +644,40 @@ Supports $filter (eq, not, ge, le).
 To construct, please use Get-Help -Online and see NOTES section for REQUIREDRESOURCEACCESS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRequiredResourceAccess[]
+Type: IMicrosoftGraphRequiredResourceAccess[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SamlMetadataUrl
+The URL where the service exposes SAML metadata for federation.
+This property is valid only for single-tenant applications.
+Nullable.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ServiceManagementReference
+References application or service contact information from a Service or Asset Management database.
+Nullable.
+
+```yaml
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -661,7 +695,7 @@ See more in the table below.
 Supports $filter (eq, ne, not).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -677,7 +711,7 @@ spaApplication
 To construct, please use Get-Help -Online and see NOTES section for SPA properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSpaApplication
+Type: IMicrosoftGraphSpaApplication
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -693,7 +727,7 @@ synchronization
 To construct, please use Get-Help -Online and see NOTES section for SYNCHRONIZATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSynchronization
+Type: IMicrosoftGraphSynchronization
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -710,7 +744,7 @@ Not nullable.
 Supports $filter (eq, not, ge, le, startsWith).
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -727,7 +761,7 @@ When configured, Azure AD encrypts all the tokens it emits by using the key this
 The application code that receives the encrypted token must use the matching private key to decrypt the token before it can be used for the signed-in user.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -743,7 +777,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for TOKENISSUANCEPOLICIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTokenIssuancePolicy1[]
+Type: IMicrosoftGraphTokenIssuancePolicy1[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -760,7 +794,7 @@ Supports $expand.
 To construct, please use Get-Help -Online and see NOTES section for TOKENLIFETIMEPOLICIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTokenLifetimePolicy1[]
+Type: IMicrosoftGraphTokenLifetimePolicy1[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -777,7 +811,7 @@ Immutable.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -793,7 +827,7 @@ verifiedPublisher
 To construct, please use Get-Help -Online and see NOTES section for VERIFIEDPUBLISHER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphVerifiedPublisher
+Type: IMicrosoftGraphVerifiedPublisher
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -809,7 +843,7 @@ webApplication
 To construct, please use Get-Help -Online and see NOTES section for WEB properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWebApplication1
+Type: IMicrosoftGraphWebApplication1
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -825,7 +859,7 @@ windowsApplication
 To construct, please use Get-Help -Online and see NOTES section for WINDOWS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsApplication
+Type: IMicrosoftGraphWindowsApplication
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -840,7 +874,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -856,7 +890,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -873,11 +907,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApplication
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApplication
-
 ## NOTES
 
 ALIASES
@@ -2043,3 +2075,4 @@ WINDOWS <IMicrosoftGraphWindowsApplication>: windowsApplication
 
 ## RELATED LINKS
 
+## RELATED LINKS
