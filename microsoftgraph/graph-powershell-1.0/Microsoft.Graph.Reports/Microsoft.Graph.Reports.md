@@ -31,9 +31,6 @@ Reports singleton
 ### [Get-MgDeviceManagementReportExportJob](Get-MgDeviceManagementReportExportJob.md)
 Entity representing a job to export a report
 
-### [Get-MgReportDailyPrintUsage](Get-MgReportDailyPrintUsage.md)
-Get dailyPrintUsageByPrinter from reports
-
 ### [Get-MgReportDeviceConfigurationDeviceActivity](Get-MgReportDeviceConfigurationDeviceActivity.md)
 Metadata for the device configuration device activity report
 
@@ -81,9 +78,6 @@ Invoke function managedDeviceEnrollmentFailureDetails
 
 ### [Get-MgReportManagedDeviceEnrollmentTopFailures](Get-MgReportManagedDeviceEnrollmentTopFailures.md)
 Invoke function managedDeviceEnrollmentTopFailures
-
-### [Get-MgReportMonthlyPrintUsage](Get-MgReportMonthlyPrintUsage.md)
-Get monthlyPrintUsageByPrinter from reports
 
 ### [Get-MgReportOffice365ActivationCount](Get-MgReportOffice365ActivationCount.md)
 Invoke function getOffice365ActivationCounts
@@ -168,9 +162,6 @@ Invoke function getSharePointSiteUsageSiteCounts
 
 ### [Get-MgReportSharePointSiteUsageStorage](Get-MgReportSharePointSiteUsageStorage.md)
 Invoke function getSharePointSiteUsageStorage
-
-### [Get-MgReportSkype](Get-MgReportSkype.md)
-Invoke function getSkypeForBusinessActivityCounts
 
 ### [Get-MgReportTeamDeviceUsageDistributionUserCount](Get-MgReportTeamDeviceUsageDistributionUserCount.md)
 Invoke function getTeamsDeviceUsageDistributionUserCounts
