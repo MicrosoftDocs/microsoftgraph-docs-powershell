@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/new-mggroupconversation
 schema: 2.0.0
@@ -12,31 +12,31 @@ The group's conversations.
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgGroupConversation -GroupId <String> [-AdditionalProperties <Hashtable>] [-HasAttachments] [-Id <String>]
- [-LastDeliveredDateTime <DateTime>] [-Preview <String>] [-Threads <IMicrosoftGraphConversationThread[]>]
- [-Topic <String>] [-UniqueSenders <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-LastDeliveredDateTime <DateTime>] [-Preview <String>] [-Threads <IMicrosoftGraphConversationThread1[]>]
+ [-Topic <String>] [-UniqueSenders <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
-New-MgGroupConversation -GroupId <String> -BodyParameter <IMicrosoftGraphConversation> [-Confirm] [-WhatIf]
+New-MgGroupConversation -GroupId <String> -BodyParameter <IMicrosoftGraphConversation1> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### CreateViaIdentity1
-```
-New-MgGroupConversation -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGraphConversation> [-Confirm]
- [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded1
+### CreateViaIdentityExpanded
 ```
 New-MgGroupConversation -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>] [-HasAttachments]
  [-Id <String>] [-LastDeliveredDateTime <DateTime>] [-Preview <String>]
- [-Threads <IMicrosoftGraphConversationThread[]>] [-Topic <String>] [-UniqueSenders <String[]>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-Threads <IMicrosoftGraphConversationThread1[]>] [-Topic <String>] [-UniqueSenders <String[]>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgGroupConversation -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGraphConversation1> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -50,8 +50,8 @@ The group's conversations.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: Hashtable
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -66,8 +66,8 @@ conversation
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversation
-Parameter Sets: Create1, CreateViaIdentity1
+Type: IMicrosoftGraphConversation1
+Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -81,8 +81,8 @@ Accept wildcard characters: False
 key: id of group
 
 ```yaml
-Type: System.String
-Parameter Sets: Create1, CreateExpanded1
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -97,8 +97,8 @@ Indicates whether any of the posts within this Conversation has at least one att
 Supports $filter (eq, ne) and $search.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -112,8 +112,8 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -128,8 +128,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-Parameter Sets: CreateViaIdentity1, CreateViaIdentityExpanded1
+Type: IGroupsIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -144,8 +144,8 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: System.DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: DateTime
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -160,8 +160,8 @@ A short summary from the body of the latest post in this conversation.
 Supports $filter (eq, ne, le, ge).
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -179,8 +179,8 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for THREADS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversationThread[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: IMicrosoftGraphConversationThread1[]
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -195,8 +195,8 @@ The topic of the conversation.
 This property can be set when the conversation is created, but it cannot be updated.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -210,8 +210,8 @@ Accept wildcard characters: False
 All the users that sent a message to this Conversation.
 
 ```yaml
-Type: System.String[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: String[]
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -225,7 +225,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -241,7 +241,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -258,13 +258,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversation
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversation1
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversation
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversation1
 ## NOTES
 
 ALIASES
@@ -425,3 +422,4 @@ THREADS <IMicrosoftGraphConversationThread[]>: A collection of all the conversat
 
 ## RELATED LINKS
 
+## RELATED LINKS

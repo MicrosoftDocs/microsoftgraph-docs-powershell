@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/invoke-mgacceptgroupevent
 schema: 2.0.0
@@ -12,30 +12,30 @@ Invoke action accept
 
 ## SYNTAX
 
-### AcceptExpanded1 (Default)
+### AcceptExpanded (Default)
 ```
 Invoke-MgAcceptGroupEvent -EventId <String> -GroupId <String> [-AdditionalProperties <Hashtable>]
- [-Comment <String>] [-SendResponse] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Comment <String>] [-SendResponse] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Accept1
+### Accept
 ```
 Invoke-MgAcceptGroupEvent -EventId <String> -GroupId <String>
  -BodyParameter <IPathsEy6J5AGroupsGroupIdEventsEventIdMicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AcceptViaIdentity1
+### AcceptViaIdentityExpanded
+```
+Invoke-MgAcceptGroupEvent -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Comment <String>] [-SendResponse] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### AcceptViaIdentity
 ```
 Invoke-MgAcceptGroupEvent -InputObject <IGroupsIdentity>
  -BodyParameter <IPathsEy6J5AGroupsGroupIdEventsEventIdMicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### AcceptViaIdentityExpanded1
-```
-Invoke-MgAcceptGroupEvent -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-Comment <String>] [-SendResponse] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,8 +49,8 @@ Invoke action accept
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: AcceptExpanded1, AcceptViaIdentityExpanded1
+Type: Hashtable
+Parameter Sets: AcceptExpanded, AcceptViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -65,8 +65,8 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPathsEy6J5AGroupsGroupIdEventsEventIdMicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Accept1, AcceptViaIdentity1
+Type: IPathsEy6J5AGroupsGroupIdEventsEventIdMicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Accept, AcceptViaIdentity
 Aliases:
 
 Required: True
@@ -80,8 +80,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
-Parameter Sets: AcceptExpanded1, AcceptViaIdentityExpanded1
+Type: String
+Parameter Sets: AcceptExpanded, AcceptViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -95,8 +95,8 @@ Accept wildcard characters: False
 key: id of event
 
 ```yaml
-Type: System.String
-Parameter Sets: Accept1, AcceptExpanded1
+Type: String
+Parameter Sets: AcceptExpanded, Accept
 Aliases:
 
 Required: True
@@ -110,8 +110,8 @@ Accept wildcard characters: False
 key: id of group
 
 ```yaml
-Type: System.String
-Parameter Sets: Accept1, AcceptExpanded1
+Type: String
+Parameter Sets: AcceptExpanded, Accept
 Aliases:
 
 Required: True
@@ -126,8 +126,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-Parameter Sets: AcceptViaIdentity1, AcceptViaIdentityExpanded1
+Type: IGroupsIdentity
+Parameter Sets: AcceptViaIdentityExpanded, AcceptViaIdentity
 Aliases:
 
 Required: True
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -156,8 +156,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: AcceptExpanded1, AcceptViaIdentityExpanded1
+Type: SwitchParameter
+Parameter Sets: AcceptExpanded, AcceptViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -187,7 +187,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -204,13 +204,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IPathsEy6J5AGroupsGroupIdEventsEventIdMicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -249,4 +246,3 @@ INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

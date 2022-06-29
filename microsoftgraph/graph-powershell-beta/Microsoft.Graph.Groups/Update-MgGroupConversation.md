@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/update-mggroupconversation
 schema: 2.0.0
@@ -12,32 +12,32 @@ The group's conversations.
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
 Update-MgGroupConversation -ConversationId <String> -GroupId <String> [-AdditionalProperties <Hashtable>]
  [-HasAttachments] [-Id <String>] [-LastDeliveredDateTime <DateTime>] [-Preview <String>]
- [-Threads <IMicrosoftGraphConversationThread[]>] [-Topic <String>] [-UniqueSenders <String[]>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Threads <IMicrosoftGraphConversationThread1[]>] [-Topic <String>] [-UniqueSenders <String[]>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update1
+### Update
 ```
 Update-MgGroupConversation -ConversationId <String> -GroupId <String>
- -BodyParameter <IMicrosoftGraphConversation> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphConversation1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### UpdateViaIdentityExpanded
 ```
-Update-MgGroupConversation -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGraphConversation>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Update-MgGroupConversation -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>] [-HasAttachments]
+ [-Id <String>] [-LastDeliveredDateTime <DateTime>] [-Preview <String>]
+ [-Threads <IMicrosoftGraphConversationThread1[]>] [-Topic <String>] [-UniqueSenders <String[]>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded1
+### UpdateViaIdentity
 ```
-Update-MgGroupConversation -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-HasAttachments] [-Id <String>] [-LastDeliveredDateTime <DateTime>] [-Preview <String>]
- [-Threads <IMicrosoftGraphConversationThread[]>] [-Topic <String>] [-UniqueSenders <String[]>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+Update-MgGroupConversation -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGraphConversation1>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,8 +51,8 @@ The group's conversations.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -67,8 +67,8 @@ conversation
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversation
-Parameter Sets: Update1, UpdateViaIdentity1
+Type: IMicrosoftGraphConversation1
+Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -82,8 +82,8 @@ Accept wildcard characters: False
 key: id of conversation
 
 ```yaml
-Type: System.String
-Parameter Sets: Update1, UpdateExpanded1
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -97,8 +97,8 @@ Accept wildcard characters: False
 key: id of group
 
 ```yaml
-Type: System.String
-Parameter Sets: Update1, UpdateExpanded1
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -113,8 +113,8 @@ Indicates whether any of the posts within this Conversation has at least one att
 Supports $filter (eq, ne) and $search.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -128,8 +128,8 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -144,8 +144,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-Parameter Sets: UpdateViaIdentity1, UpdateViaIdentityExpanded1
+Type: IGroupsIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -160,8 +160,8 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: System.DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: DateTime
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -191,8 +191,8 @@ A short summary from the body of the latest post in this conversation.
 Supports $filter (eq, ne, le, ge).
 
 ```yaml
-Type: System.String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -210,8 +210,8 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for THREADS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversationThread[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: IMicrosoftGraphConversationThread1[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -226,8 +226,8 @@ The topic of the conversation.
 This property can be set when the conversation is created, but it cannot be updated.
 
 ```yaml
-Type: System.String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -241,8 +241,8 @@ Accept wildcard characters: False
 All the users that sent a message to this Conversation.
 
 ```yaml
-Type: System.String[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: String[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -256,7 +256,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -272,7 +272,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -289,13 +289,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversation
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversation1
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -456,3 +453,4 @@ THREADS <IMicrosoftGraphConversationThread[]>: A collection of all the conversat
 
 ## RELATED LINKS
 
+## RELATED LINKS

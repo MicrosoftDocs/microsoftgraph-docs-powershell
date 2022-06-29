@@ -17,9 +17,6 @@ Invoke action addFavorite
 ### [Add-MgGroupToLifecyclePolicy](Add-MgGroupToLifecyclePolicy.md)
 Invoke action addGroup
 
-### [Confirm-MgGroupGrantedPermission](Confirm-MgGroupGrantedPermission.md)
-Invoke action checkGrantedPermissionsForApp
-
 ### [Confirm-MgGroupMemberGroup](Confirm-MgGroupMemberGroup.md)
 Invoke action checkMemberGroups
 
@@ -151,18 +148,7 @@ Read-only.
 Nullable.
 Supports $expand.
 
-### [Get-MgGroupMemberOfByRef](Get-MgGroupMemberOfByRef.md)
-Groups that this group is a member of.
-HTTP Methods: GET (supported for all groups).
-Read-only.
-Nullable.
-Supports $expand.
-
 ### [Get-MgGroupMemberWithLicenseError](Get-MgGroupMemberWithLicenseError.md)
-A list of group members with license errors from this group-based license assignment.
-Read-only.
-
-### [Get-MgGroupMemberWithLicenseErrorByRef](Get-MgGroupMemberWithLicenseErrorByRef.md)
 A list of group members with license errors from this group-based license assignment.
 Read-only.
 
@@ -245,14 +231,8 @@ Nullable.
 ### [Get-MgGroupTransitiveMember](Get-MgGroupTransitiveMember.md)
 Get transitiveMembers from groups
 
-### [Get-MgGroupTransitiveMemberByRef](Get-MgGroupTransitiveMemberByRef.md)
-Get ref of transitiveMembers from groups
-
 ### [Get-MgGroupTransitiveMemberOf](Get-MgGroupTransitiveMemberOf.md)
 Get transitiveMemberOf from groups
-
-### [Get-MgGroupTransitiveMemberOfByRef](Get-MgGroupTransitiveMemberOfByRef.md)
-Get ref of transitiveMemberOf from groups
 
 ### [Get-MgGroupUserOwnedObject](Get-MgGroupUserOwnedObject.md)
 Invoke action getUserOwnedObjects
@@ -339,12 +319,6 @@ Invoke action snoozeReminder
 ### [Invoke-MgSnoozeGroupEventReminder](Invoke-MgSnoozeGroupEventReminder.md)
 Invoke action snoozeReminder
 
-### [Invoke-MgSubscribeGroup](Invoke-MgSubscribeGroup.md)
-Invoke action subscribeByMail
-
-### [Invoke-MgUnsubscribeGroup](Invoke-MgUnsubscribeGroup.md)
-Invoke action unsubscribeByMail
-
 ### [New-MgGroup](New-MgGroup.md)
 Add new entity to groups
 
@@ -415,17 +389,6 @@ Nullable.
 Supports $expand including nested $select.
 For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName).
 
-### [New-MgGroupMemberOfByRef](New-MgGroupMemberOfByRef.md)
-Groups that this group is a member of.
-HTTP Methods: GET (supported for all groups).
-Read-only.
-Nullable.
-Supports $expand.
-
-### [New-MgGroupMemberWithLicenseErrorByRef](New-MgGroupMemberWithLicenseErrorByRef.md)
-A list of group members with license errors from this group-based license assignment.
-Read-only.
-
 ### [New-MgGroupOwnerByRef](New-MgGroupOwnerByRef.md)
 The owners of the group.
 Limited to 100 owners.
@@ -485,12 +448,6 @@ Nullable.
 The collection of single-value extended properties defined for the post.
 Read-only.
 Nullable.
-
-### [New-MgGroupTransitiveMemberByRef](New-MgGroupTransitiveMemberByRef.md)
-Create new navigation property ref to transitiveMembers for groups
-
-### [New-MgGroupTransitiveMemberOfByRef](New-MgGroupTransitiveMemberOfByRef.md)
-Create new navigation property ref to transitiveMemberOf for groups
 
 ### [New-MgUserJoinedGroup](New-MgUserJoinedGroup.md)
 Read-only.
@@ -603,18 +560,8 @@ The collection of single-value extended properties defined for the post.
 Read-only.
 Nullable.
 
-### [Remove-MgUserJoinedGroup](Remove-MgUserJoinedGroup.md)
-Read-only.
-Nullable.
-
 ### [Reset-MgGroupUnseenCount](Reset-MgGroupUnseenCount.md)
 Invoke action resetUnseenCount
-
-### [Restore-MgGroup](Restore-MgGroup.md)
-Invoke action restore
-
-### [Restore-MgGroup](Restore-MgGroup.md)
-Invoke action restore
 
 ### [Set-MgGroupLicense](Set-MgGroupLicense.md)
 Invoke action assignLicense
@@ -733,10 +680,6 @@ Nullable.
 
 ### [Update-MgGroupThreadPostSingleValueExtendedProperty](Update-MgGroupThreadPostSingleValueExtendedProperty.md)
 The collection of single-value extended properties defined for the post.
-Read-only.
-Nullable.
-
-### [Update-MgUserJoinedGroup](Update-MgUserJoinedGroup.md)
 Read-only.
 Nullable.
 
