@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgprogramcontrol
 schema: 2.0.0
@@ -17,41 +17,71 @@ Add new entity to programControls
 New-MgProgramControl [-ProgramId <String>] [-AdditionalProperties <Hashtable>] [-ControlId <String>]
  [-ControlTypeId <String>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
  [-Owner <IMicrosoftGraphUserIdentity>] [-Program <IMicrosoftGraphProgram>]
- [-Resource <IMicrosoftGraphProgramResource>] [-Status <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### Create
-```
-New-MgProgramControl -BodyParameter <IMicrosoftGraphProgramControl> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### Create1
-```
-New-MgProgramControl -ProgramId <String> -BodyParameter <IMicrosoftGraphProgramControl> [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ [-Resource <IMicrosoftGraphProgramResource>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateExpanded1
 ```
+New-MgProgramControl -ProgramControlId <String> [-ProgramId <String>] [-AdditionalProperties <Hashtable>]
+ [-ControlId <String>] [-ControlTypeId <String>] [-CreatedDateTime <DateTime>] [-DisplayName <String>]
+ [-Id <String>] [-Owner <IMicrosoftGraphUserIdentity>] [-Program <IMicrosoftGraphProgram>]
+ [-Resource <IMicrosoftGraphProgramResource>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Create1
+```
+New-MgProgramControl -ProgramControlId <String> -BodyParameter <IMicrosoftGraphProgramControl> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded1
+```
+New-MgProgramControl [-ProgramId <String>] -InputObject <IIdentityGovernanceIdentity>
+ [-AdditionalProperties <Hashtable>] [-ControlId <String>] [-ControlTypeId <String>]
+ [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-Owner <IMicrosoftGraphUserIdentity>]
+ [-Program <IMicrosoftGraphProgram>] [-Resource <IMicrosoftGraphProgramResource>] [-Status <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgProgramControl [-ProgramId <String>] -InputObject <IIdentityGovernanceIdentity>
+ [-AdditionalProperties <Hashtable>] [-ControlId <String>] [-ControlTypeId <String>]
+ [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-Owner <IMicrosoftGraphUserIdentity>]
+ [-Program <IMicrosoftGraphProgram>] [-Resource <IMicrosoftGraphProgramResource>] [-Status <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### CreateExpanded2
+```
 New-MgProgramControl -ProgramId <String> [-AdditionalProperties <Hashtable>] [-ControlId <String>]
  [-ControlTypeId <String>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
- [-Owner <IMicrosoftGraphUserIdentity>] [-Program <IMicrosoftGraphProgram>] [-ProgramId1 <String>]
- [-Resource <IMicrosoftGraphProgramResource>] [-Status <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Owner <IMicrosoftGraphUserIdentity>] [-Program <IMicrosoftGraphProgram>]
+ [-Resource <IMicrosoftGraphProgramResource>] [-Status <String>] [-ProgramId1 <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### Create2
+```
+New-MgProgramControl -ProgramId <String> -BodyParameter <IMicrosoftGraphProgramControl> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### CreateViaIdentity1
+```
+New-MgProgramControl -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphProgramControl>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgProgramControl -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphProgramControl>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded
+### Create
 ```
-New-MgProgramControl -InputObject <IIdentityGovernanceIdentity> [-ProgramId <String>]
- [-AdditionalProperties <Hashtable>] [-ControlId <String>] [-ControlTypeId <String>]
- [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-Owner <IMicrosoftGraphUserIdentity>]
- [-Program <IMicrosoftGraphProgram>] [-Resource <IMicrosoftGraphProgramResource>] [-Status <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgProgramControl -BodyParameter <IMicrosoftGraphProgramControl> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -65,8 +95,8 @@ Add new entity to programControls
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded
+Type: Hashtable
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded, CreateExpanded2
 Aliases:
 
 Required: False
@@ -81,8 +111,8 @@ programControl
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProgramControl
-Parameter Sets: Create, Create1, CreateViaIdentity
+Type: IMicrosoftGraphProgramControl
+Parameter Sets: Create1, Create2, CreateViaIdentity1, CreateViaIdentity, Create
 Aliases:
 
 Required: True
@@ -97,8 +127,8 @@ The controlId of the control, in particular the identifier of an access review.
 Required on create.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded
+Type: String
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded, CreateExpanded2
 Aliases:
 
 Required: False
@@ -113,8 +143,8 @@ The programControlType identifies the type of program control - for example, a c
 Required on create.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded
+Type: String
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded, CreateExpanded2
 Aliases:
 
 Required: False
@@ -128,8 +158,8 @@ Accept wildcard characters: False
 The creation date and time of the program control.
 
 ```yaml
-Type: System.DateTime
-Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded
+Type: DateTime
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded, CreateExpanded2
 Aliases:
 
 Required: False
@@ -143,8 +173,8 @@ Accept wildcard characters: False
 The name of the control.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded
+Type: String
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded, CreateExpanded2
 Aliases:
 
 Required: False
@@ -158,8 +188,8 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded
+Type: String
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded, CreateExpanded2
 Aliases:
 
 Required: False
@@ -174,8 +204,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IIdentityGovernanceIdentity
+Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentityExpanded, CreateViaIdentity1, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -190,8 +220,8 @@ userIdentity
 To construct, please use Get-Help -Online and see NOTES section for OWNER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserIdentity
-Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded
+Type: IMicrosoftGraphUserIdentity
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded, CreateExpanded2
 Aliases:
 
 Required: False
@@ -206,11 +236,26 @@ program
 To construct, please use Get-Help -Online and see NOTES section for PROGRAM properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProgram
-Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded
+Type: IMicrosoftGraphProgram
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded, CreateExpanded2
 Aliases:
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ProgramControlId
+key: id of programControl
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded1, Create1
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -221,8 +266,20 @@ Accept wildcard characters: False
 key: id of program
 
 ```yaml
-Type: System.String
-Parameter Sets: Create1, CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded
+Type: String
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded2, Create2
 Aliases:
 
 Required: True
@@ -237,8 +294,8 @@ The programId of the program this control is a part of.
 Required on create.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1
+Type: String
+Parameter Sets: CreateExpanded2
 Aliases:
 
 Required: False
@@ -253,8 +310,8 @@ programResource
 To construct, please use Get-Help -Online and see NOTES section for RESOURCE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProgramResource
-Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded
+Type: IMicrosoftGraphProgramResource
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded, CreateExpanded2
 Aliases:
 
 Required: False
@@ -268,8 +325,8 @@ Accept wildcard characters: False
 The life cycle status of the control.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded
+Type: String
+Parameter Sets: CreateExpanded, CreateExpanded1, CreateViaIdentityExpanded1, CreateViaIdentityExpanded, CreateExpanded2
 Aliases:
 
 Required: False
@@ -283,7 +340,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -299,7 +356,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -316,13 +373,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProgramControl
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProgramControl
-
 ## NOTES
 
 ALIASES
@@ -456,3 +510,4 @@ RESOURCE <IMicrosoftGraphProgramResource>: programResource
 
 ## RELATED LINKS
 
+## RELATED LINKS

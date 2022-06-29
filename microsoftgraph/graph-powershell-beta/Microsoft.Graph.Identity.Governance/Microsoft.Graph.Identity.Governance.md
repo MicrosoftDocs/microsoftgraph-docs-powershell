@@ -49,23 +49,11 @@ The localized version of the terms of use agreement files attached to the agreem
 Read-only.
 Customized versions of the terms of use agreement in the Azure AD tenant.
 
-### [Get-MgAgreementFileVersion](Get-MgAgreementFileVersion.md)
-Read-only.
-Customized versions of the terms of use agreement in the Azure AD tenant.
-
 ### [Get-MgBusinessFlowTemplate](Get-MgBusinessFlowTemplate.md)
 Get entity from businessFlowTemplates by key
 
 ### [Get-MgEntitlementManagementAccessPackage](Get-MgEntitlementManagementAccessPackage.md)
 Represents access package objects.
-
-### [Get-MgEntitlementManagementAccessPackageAccessPackageCatalogByRef](Get-MgEntitlementManagementAccessPackageAccessPackageCatalogByRef.md)
-Read-only.
-Nullable.
-
-### [Get-MgEntitlementManagementAccessPackageAccessPackageIncompatibleByRef](Get-MgEntitlementManagementAccessPackageAccessPackageIncompatibleByRef.md)
-The access packages that are incompatible with this package.
-Read-only.
 
 ### [Get-MgEntitlementManagementAccessPackageApplicablePolicyRequirement](Get-MgEntitlementManagementAccessPackageApplicablePolicyRequirement.md)
 Invoke action getApplicablePolicyRequirements
@@ -76,15 +64,6 @@ Represents the grant of an access package to a subject (user or group).
 ### [Get-MgEntitlementManagementAccessPackageAssignmentPolicy](Get-MgEntitlementManagementAccessPackageAssignmentPolicy.md)
 Represents the policy that governs which subjects can request or be assigned an access package via an access package assignment.
 
-### [Get-MgEntitlementManagementAccessPackageAssignmentPolicyAccessPackageByRef](Get-MgEntitlementManagementAccessPackageAssignmentPolicyAccessPackageByRef.md)
-The access package with this policy.
-Read-only.
-Nullable.
-Supports $expand.
-
-### [Get-MgEntitlementManagementAccessPackageAssignmentPolicyAccessPackageCatalogByRef](Get-MgEntitlementManagementAccessPackageAssignmentPolicyAccessPackageCatalogByRef.md)
-Get ref of accessPackageCatalog from identityGovernance
-
 ### [Get-MgEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionHandler](Get-MgEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionHandler.md)
 The collection of stages when to execute one or more custom access package workflow extensions.
 Supports $expand.
@@ -92,25 +71,8 @@ Supports $expand.
 ### [Get-MgEntitlementManagementAccessPackageAssignmentRequest](Get-MgEntitlementManagementAccessPackageAssignmentRequest.md)
 Represents access package assignment requests created by or on behalf of a user.
 
-### [Get-MgEntitlementManagementAccessPackageAssignmentRequestAccessPackageAssignmentByRef](Get-MgEntitlementManagementAccessPackageAssignmentRequestAccessPackageAssignmentByRef.md)
-For a requestType of UserAdd or AdminAdd, this is an access package assignment requested to be created.
-For a requestType of UserRemove, AdminRemove or SystemRemove, this has the id property of an existing assignment to be removed.
-Supports $expand.
-
-### [Get-MgEntitlementManagementAccessPackageAssignmentRequestAccessPackageByRef](Get-MgEntitlementManagementAccessPackageAssignmentRequestAccessPackageByRef.md)
-The access package associated with the accessPackageAssignmentRequest.
-An access package defines the collections of resource roles and the policies for how one or more users can get access to those resources.
-Read-only.
-Nullable.
-Supports $expand.
-
 ### [Get-MgEntitlementManagementAccessPackageAssignmentResourceRole](Get-MgEntitlementManagementAccessPackageAssignmentResourceRole.md)
 Represents the resource-specific role which a subject has been assigned through an access package assignment.
-
-### [Get-MgEntitlementManagementAccessPackageAssignmentResourceRoleAccessPackageAssignmentByRef](Get-MgEntitlementManagementAccessPackageAssignmentResourceRoleAccessPackageAssignmentByRef.md)
-The access package assignments resulting in this role assignment.
-Read-only.
-Nullable.
 
 ### [Get-MgEntitlementManagementAccessPackageCatalog](Get-MgEntitlementManagementAccessPackageCatalog.md)
 Represents a group of access packages.
@@ -129,10 +91,6 @@ Read-only.
 ### [Get-MgEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension](Get-MgEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension.md)
 Get customAccessPackageWorkflowExtensions from identityGovernance
 
-### [Get-MgEntitlementManagementAccessPackageIncompatible](Get-MgEntitlementManagementAccessPackageIncompatible.md)
-The access packages that are incompatible with this package.
-Read-only.
-
 ### [Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackage](Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackage.md)
 The  access packages whose assigned users are ineligible to be assigned this access package.
 
@@ -148,22 +106,11 @@ The groups whose members are ineligible to be assigned this access package.
 ### [Get-MgEntitlementManagementAccessPackageResource](Get-MgEntitlementManagementAccessPackageResource.md)
 A reference to a resource associated with an access package catalog.
 
-### [Get-MgEntitlementManagementAccessPackageResourceAccessPackageResourceEnvironmentByRef](Get-MgEntitlementManagementAccessPackageResourceAccessPackageResourceEnvironmentByRef.md)
-Contains the environment information for the resource.
-This can be set using either the @odata.bind annotation or the environment's originId.Supports $expand.
-
 ### [Get-MgEntitlementManagementAccessPackageResourceEnvironment](Get-MgEntitlementManagementAccessPackageResourceEnvironment.md)
 A reference to the geolocation environment in which a resource is located.
 
-### [Get-MgEntitlementManagementAccessPackageResourceEnvironmentAccessPackageResourceByRef](Get-MgEntitlementManagementAccessPackageResourceEnvironmentAccessPackageResourceByRef.md)
-Read-only.
-Required.
-
 ### [Get-MgEntitlementManagementAccessPackageResourceRequest](Get-MgEntitlementManagementAccessPackageResourceRequest.md)
 Represents a request to add or remove a resource to or from a catalog respectively.
-
-### [Get-MgEntitlementManagementAccessPackageResourceRequestAccessPackageResourceByRef](Get-MgEntitlementManagementAccessPackageResourceRequestAccessPackageResourceByRef.md)
-Nullable.
 
 ### [Get-MgEntitlementManagementConnectedOrganization](Get-MgEntitlementManagementConnectedOrganization.md)
 Represents references to a directory or domain of another organization whose users can request access.
@@ -198,10 +145,6 @@ Read-only.
 Each principal reviewed in an accessReviewInstance has a decision item representing if they were approved, denied, or not yet reviewed.
 
 ### [Get-MgIdentityGovernanceAccessReviewDecisionInstanceDefinition](Get-MgIdentityGovernanceAccessReviewDecisionInstanceDefinition.md)
-There is exactly one accessReviewScheduleDefinition associated with each instance.
-It is the parent schedule for the instance, where instances are created for each recurrence of a review definition and each group selected to review by the definition.
-
-### [Get-MgIdentityGovernanceAccessReviewDecisionInstanceDefinitionByRef](Get-MgIdentityGovernanceAccessReviewDecisionInstanceDefinitionByRef.md)
 There is exactly one accessReviewScheduleDefinition associated with each instance.
 It is the parent schedule for the instance, where instances are created for each recurrence of a review definition and each group selected to review by the definition.
 
@@ -244,10 +187,6 @@ Get entity from privilegedApproval by key
 Read-only.
 The role assignment request for this approval object
 
-### [Get-MgPrivilegedApprovalRequestByRef](Get-MgPrivilegedApprovalRequestByRef.md)
-Read-only.
-The role assignment request for this approval object
-
 ### [Get-MgPrivilegedApprovalRoleInfo](Get-MgPrivilegedApprovalRoleInfo.md)
 Read-only.
 Nullable.
@@ -257,11 +196,6 @@ Get entity from privilegedOperationEvents by key
 
 ### [Get-MgPrivilegedRole](Get-MgPrivilegedRole.md)
 Get entity from privilegedRoles by key
-
-### [Get-MgPrivilegedRoleAssignmentByRef](Get-MgPrivilegedRoleAssignmentByRef.md)
-The assignments for this role.
-Read-only.
-Nullable.
 
 ### [Get-MgPrivilegedRoleAssignmentRequest](Get-MgPrivilegedRoleAssignmentRequest.md)
 Get entity from privilegedRoleAssignmentRequests by key
@@ -304,40 +238,11 @@ The user's terms of use acceptance statuses.
 Read-only.
 Nullable.
 
-### [Get-MgUserAgreementAcceptanceByRef](Get-MgUserAgreementAcceptanceByRef.md)
-The user's terms of use acceptance statuses.
-Read-only.
-Nullable.
-
 ### [Invoke-MgAcceptIdentityGovernanceAccessReviewDecisionInstanceRecommendation](Invoke-MgAcceptIdentityGovernanceAccessReviewDecisionInstanceRecommendation.md)
 Invoke action acceptRecommendations
 
 ### [Invoke-MgBatchIdentityGovernanceAccessReviewDecisionInstanceRecordDecision](Invoke-MgBatchIdentityGovernanceAccessReviewDecisionInstanceRecordDecision.md)
 Invoke action batchRecordDecisions
-
-### [Invoke-MgFilterEntitlementManagementAccessPackage](Invoke-MgFilterEntitlementManagementAccessPackage.md)
-Invoke function filterByCurrentUser
-
-### [Invoke-MgFilterEntitlementManagementAccessPackageAssignment](Invoke-MgFilterEntitlementManagementAccessPackageAssignment.md)
-Invoke function filterByCurrentUser
-
-### [Invoke-MgFilterEntitlementManagementAccessPackageAssignmentApproval](Invoke-MgFilterEntitlementManagementAccessPackageAssignmentApproval.md)
-Invoke function filterByCurrentUser
-
-### [Invoke-MgFilterEntitlementManagementAccessPackageAssignmentRequest](Invoke-MgFilterEntitlementManagementAccessPackageAssignmentRequest.md)
-Invoke function filterByCurrentUser
-
-### [Invoke-MgFilterIdentityGovernanceAccessReviewDecision](Invoke-MgFilterIdentityGovernanceAccessReviewDecision.md)
-Invoke function filterByCurrentUser
-
-### [Invoke-MgFilterIdentityGovernanceAccessReviewDecisionInstanceDecision](Invoke-MgFilterIdentityGovernanceAccessReviewDecisionInstanceDecision.md)
-Invoke function filterByCurrentUser
-
-### [Invoke-MgFilterIdentityGovernanceAccessReviewDecisionInstanceStage](Invoke-MgFilterIdentityGovernanceAccessReviewDecisionInstanceStage.md)
-Invoke function filterByCurrentUser
-
-### [Invoke-MgFilterIdentityGovernanceAccessReviewDecisionInstanceStageDecision](Invoke-MgFilterIdentityGovernanceAccessReviewDecisionInstanceStageDecision.md)
-Invoke function filterByCurrentUser
 
 ### [Invoke-MgMyPrivilegedApprovalRequest](Invoke-MgMyPrivilegedApprovalRequest.md)
 Invoke function myRequests
@@ -385,20 +290,10 @@ Add new entity to agreements
 Read-only.
 Information about acceptances of this agreement.
 
-### [New-MgAgreementFile](New-MgAgreementFile.md)
-PDFs linked to this agreement.
-This property is in the process of being deprecated.
-Use the  file property instead.
-Supports $expand.
-
 ### [New-MgAgreementFileLocalization](New-MgAgreementFileLocalization.md)
 The localized version of the terms of use agreement files attached to the agreement.
 
 ### [New-MgAgreementFileLocalizationVersion](New-MgAgreementFileLocalizationVersion.md)
-Read-only.
-Customized versions of the terms of use agreement in the Azure AD tenant.
-
-### [New-MgAgreementFileVersion](New-MgAgreementFileVersion.md)
 Read-only.
 Customized versions of the terms of use agreement in the Azure AD tenant.
 
@@ -407,10 +302,6 @@ Add new entity to businessFlowTemplates
 
 ### [New-MgEntitlementManagementAccessPackage](New-MgEntitlementManagementAccessPackage.md)
 Represents access package objects.
-
-### [New-MgEntitlementManagementAccessPackageAccessPackageIncompatibleByRef](New-MgEntitlementManagementAccessPackageAccessPackageIncompatibleByRef.md)
-The access packages that are incompatible with this package.
-Read-only.
 
 ### [New-MgEntitlementManagementAccessPackageAssignment](New-MgEntitlementManagementAccessPackageAssignment.md)
 Create a new entitlement management accessPackageAssignment
@@ -425,11 +316,6 @@ Supports $expand.
 ### [New-MgEntitlementManagementAccessPackageAssignmentRequest](New-MgEntitlementManagementAccessPackageAssignmentRequest.md)
 Represents access package assignment requests created by or on behalf of a user.
 
-### [New-MgEntitlementManagementAccessPackageAssignmentResourceRoleAccessPackageAssignmentByRef](New-MgEntitlementManagementAccessPackageAssignmentResourceRoleAccessPackageAssignmentByRef.md)
-The access package assignments resulting in this role assignment.
-Read-only.
-Nullable.
-
 ### [New-MgEntitlementManagementAccessPackageCatalog](New-MgEntitlementManagementAccessPackageCatalog.md)
 Represents a group of access packages.
 
@@ -442,10 +328,6 @@ The  access packages whose assigned users are ineligible to be assigned this acc
 ### [New-MgEntitlementManagementAccessPackageIncompatibleGroupByRef](New-MgEntitlementManagementAccessPackageIncompatibleGroupByRef.md)
 The groups whose members are ineligible to be assigned this access package.
 
-### [New-MgEntitlementManagementAccessPackageResourceEnvironmentAccessPackageResourceByRef](New-MgEntitlementManagementAccessPackageResourceEnvironmentAccessPackageResourceByRef.md)
-Read-only.
-Required.
-
 ### [New-MgEntitlementManagementAccessPackageResourceRequest](New-MgEntitlementManagementAccessPackageResourceRequest.md)
 Represents a request to add or remove a resource to or from a catalog respectively.
 
@@ -454,12 +336,6 @@ Nullable.
 
 ### [New-MgEntitlementManagementConnectedOrganization](New-MgEntitlementManagementConnectedOrganization.md)
 Represents references to a directory or domain of another organization whose users can request access.
-
-### [New-MgEntitlementManagementConnectedOrganizationExternalSponsor](New-MgEntitlementManagementConnectedOrganizationExternalSponsor.md)
-Nullable.
-
-### [New-MgEntitlementManagementConnectedOrganizationInternalSponsor](New-MgEntitlementManagementConnectedOrganizationInternalSponsor.md)
-Nullable.
 
 ### [New-MgIdentityGovernanceAccessReviewDecision](New-MgIdentityGovernanceAccessReviewDecision.md)
 Represents an Azure AD access review decision on an instance of a review.
@@ -521,11 +397,6 @@ Add new entity to privilegedRoles
 ### [New-MgPrivilegedRoleAssignment](New-MgPrivilegedRoleAssignment.md)
 Add new entity to privilegedRoleAssignments
 
-### [New-MgPrivilegedRoleAssignmentByRef](New-MgPrivilegedRoleAssignmentByRef.md)
-The assignments for this role.
-Read-only.
-Nullable.
-
 ### [New-MgPrivilegedRoleAssignmentEligible](New-MgPrivilegedRoleAssignmentEligible.md)
 Invoke action makeEligible
 
@@ -543,11 +414,6 @@ Add new entity to programControls
 
 ### [New-MgProgramControlType](New-MgProgramControlType.md)
 Add new entity to programControlTypes
-
-### [New-MgUserAgreementAcceptanceByRef](New-MgUserAgreementAcceptanceByRef.md)
-The user's terms of use acceptance statuses.
-Read-only.
-Nullable.
 
 ### [Remove-MgAccessReview](Remove-MgAccessReview.md)
 Delete entity from accessReviews
@@ -581,19 +447,11 @@ The localized version of the terms of use agreement files attached to the agreem
 Read-only.
 Customized versions of the terms of use agreement in the Azure AD tenant.
 
-### [Remove-MgAgreementFileVersion](Remove-MgAgreementFileVersion.md)
-Read-only.
-Customized versions of the terms of use agreement in the Azure AD tenant.
-
 ### [Remove-MgBusinessFlowTemplate](Remove-MgBusinessFlowTemplate.md)
 Delete entity from businessFlowTemplates
 
 ### [Remove-MgEntitlementManagementAccessPackage](Remove-MgEntitlementManagementAccessPackage.md)
 Represents access package objects.
-
-### [Remove-MgEntitlementManagementAccessPackageAccessPackageCatalogByRef](Remove-MgEntitlementManagementAccessPackageAccessPackageCatalogByRef.md)
-Read-only.
-Nullable.
 
 ### [Remove-MgEntitlementManagementAccessPackageAssignment](Remove-MgEntitlementManagementAccessPackageAssignment.md)
 Represents the grant of an access package to a subject (user or group).
@@ -607,15 +465,6 @@ Delete navigation property steps for identityGovernance
 ### [Remove-MgEntitlementManagementAccessPackageAssignmentPolicy](Remove-MgEntitlementManagementAccessPackageAssignmentPolicy.md)
 Represents the policy that governs which subjects can request or be assigned an access package via an access package assignment.
 
-### [Remove-MgEntitlementManagementAccessPackageAssignmentPolicyAccessPackageByRef](Remove-MgEntitlementManagementAccessPackageAssignmentPolicyAccessPackageByRef.md)
-The access package with this policy.
-Read-only.
-Nullable.
-Supports $expand.
-
-### [Remove-MgEntitlementManagementAccessPackageAssignmentPolicyAccessPackageCatalogByRef](Remove-MgEntitlementManagementAccessPackageAssignmentPolicyAccessPackageCatalogByRef.md)
-Delete ref of navigation property accessPackageCatalog for identityGovernance
-
 ### [Remove-MgEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionHandler](Remove-MgEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionHandler.md)
 The collection of stages when to execute one or more custom access package workflow extensions.
 Supports $expand.
@@ -623,45 +472,20 @@ Supports $expand.
 ### [Remove-MgEntitlementManagementAccessPackageAssignmentRequest](Remove-MgEntitlementManagementAccessPackageAssignmentRequest.md)
 Represents access package assignment requests created by or on behalf of a user.
 
-### [Remove-MgEntitlementManagementAccessPackageAssignmentRequestAccessPackageAssignmentByRef](Remove-MgEntitlementManagementAccessPackageAssignmentRequestAccessPackageAssignmentByRef.md)
-For a requestType of UserAdd or AdminAdd, this is an access package assignment requested to be created.
-For a requestType of UserRemove, AdminRemove or SystemRemove, this has the id property of an existing assignment to be removed.
-Supports $expand.
-
-### [Remove-MgEntitlementManagementAccessPackageAssignmentRequestAccessPackageByRef](Remove-MgEntitlementManagementAccessPackageAssignmentRequestAccessPackageByRef.md)
-The access package associated with the accessPackageAssignmentRequest.
-An access package defines the collections of resource roles and the policies for how one or more users can get access to those resources.
-Read-only.
-Nullable.
-Supports $expand.
-
 ### [Remove-MgEntitlementManagementAccessPackageCatalog](Remove-MgEntitlementManagementAccessPackageCatalog.md)
 Represents a group of access packages.
 
 ### [Remove-MgEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension](Remove-MgEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension.md)
 Delete navigation property customAccessPackageWorkflowExtensions for identityGovernance
 
-### [Remove-MgEntitlementManagementAccessPackageResourceAccessPackageResourceEnvironmentByRef](Remove-MgEntitlementManagementAccessPackageResourceAccessPackageResourceEnvironmentByRef.md)
-Contains the environment information for the resource.
-This can be set using either the @odata.bind annotation or the environment's originId.Supports $expand.
-
 ### [Remove-MgEntitlementManagementAccessPackageResourceRequest](Remove-MgEntitlementManagementAccessPackageResourceRequest.md)
 Represents a request to add or remove a resource to or from a catalog respectively.
-
-### [Remove-MgEntitlementManagementAccessPackageResourceRequestAccessPackageResourceByRef](Remove-MgEntitlementManagementAccessPackageResourceRequestAccessPackageResourceByRef.md)
-Nullable.
 
 ### [Remove-MgEntitlementManagementAccessPackageResourceRoleScope](Remove-MgEntitlementManagementAccessPackageResourceRoleScope.md)
 Nullable.
 
 ### [Remove-MgEntitlementManagementConnectedOrganization](Remove-MgEntitlementManagementConnectedOrganization.md)
 Represents references to a directory or domain of another organization whose users can request access.
-
-### [Remove-MgEntitlementManagementConnectedOrganizationExternalSponsor](Remove-MgEntitlementManagementConnectedOrganizationExternalSponsor.md)
-Nullable.
-
-### [Remove-MgEntitlementManagementConnectedOrganizationInternalSponsor](Remove-MgEntitlementManagementConnectedOrganizationInternalSponsor.md)
-Nullable.
 
 ### [Remove-MgIdentityGovernanceAccessReviewDecision](Remove-MgIdentityGovernanceAccessReviewDecision.md)
 Represents an Azure AD access review decision on an instance of a review.
@@ -682,10 +506,6 @@ Read-only.
 
 ### [Remove-MgIdentityGovernanceAccessReviewDecisionInstanceDecision](Remove-MgIdentityGovernanceAccessReviewDecisionInstanceDecision.md)
 Each principal reviewed in an accessReviewInstance has a decision item representing if they were approved, denied, or not yet reviewed.
-
-### [Remove-MgIdentityGovernanceAccessReviewDecisionInstanceDefinitionByRef](Remove-MgIdentityGovernanceAccessReviewDecisionInstanceDefinitionByRef.md)
-There is exactly one accessReviewScheduleDefinition associated with each instance.
-It is the parent schedule for the instance, where instances are created for each recurrence of a review definition and each group selected to review by the definition.
 
 ### [Remove-MgIdentityGovernanceAccessReviewDecisionInstanceStage](Remove-MgIdentityGovernanceAccessReviewDecisionInstanceStage.md)
 If the instance has multiple stages, this returns the collection of stages.
@@ -721,10 +541,6 @@ A collection of role settings for the provider.
 
 ### [Remove-MgPrivilegedApproval](Remove-MgPrivilegedApproval.md)
 Delete entity from privilegedApproval
-
-### [Remove-MgPrivilegedApprovalRequestByRef](Remove-MgPrivilegedApprovalRequestByRef.md)
-Read-only.
-The role assignment request for this approval object
 
 ### [Remove-MgPrivilegedApprovalRoleInfo](Remove-MgPrivilegedApprovalRoleInfo.md)
 Read-only.
@@ -790,46 +606,6 @@ Invoke action sendReminder
 ### [Send-MgIdentityGovernanceAccessReviewDecisionInstanceReminder](Send-MgIdentityGovernanceAccessReviewDecisionInstanceReminder.md)
 Invoke action sendReminder
 
-### [Set-MgEntitlementManagementAccessPackageAccessPackageCatalogByRef](Set-MgEntitlementManagementAccessPackageAccessPackageCatalogByRef.md)
-Read-only.
-Nullable.
-
-### [Set-MgEntitlementManagementAccessPackageAssignmentPolicyAccessPackageByRef](Set-MgEntitlementManagementAccessPackageAssignmentPolicyAccessPackageByRef.md)
-The access package with this policy.
-Read-only.
-Nullable.
-Supports $expand.
-
-### [Set-MgEntitlementManagementAccessPackageAssignmentPolicyAccessPackageCatalogByRef](Set-MgEntitlementManagementAccessPackageAssignmentPolicyAccessPackageCatalogByRef.md)
-Update the ref of navigation property accessPackageCatalog in identityGovernance
-
-### [Set-MgEntitlementManagementAccessPackageAssignmentRequestAccessPackageAssignmentByRef](Set-MgEntitlementManagementAccessPackageAssignmentRequestAccessPackageAssignmentByRef.md)
-For a requestType of UserAdd or AdminAdd, this is an access package assignment requested to be created.
-For a requestType of UserRemove, AdminRemove or SystemRemove, this has the id property of an existing assignment to be removed.
-Supports $expand.
-
-### [Set-MgEntitlementManagementAccessPackageAssignmentRequestAccessPackageByRef](Set-MgEntitlementManagementAccessPackageAssignmentRequestAccessPackageByRef.md)
-The access package associated with the accessPackageAssignmentRequest.
-An access package defines the collections of resource roles and the policies for how one or more users can get access to those resources.
-Read-only.
-Nullable.
-Supports $expand.
-
-### [Set-MgEntitlementManagementAccessPackageResourceAccessPackageResourceEnvironmentByRef](Set-MgEntitlementManagementAccessPackageResourceAccessPackageResourceEnvironmentByRef.md)
-Contains the environment information for the resource.
-This can be set using either the @odata.bind annotation or the environment's originId.Supports $expand.
-
-### [Set-MgEntitlementManagementAccessPackageResourceRequestAccessPackageResourceByRef](Set-MgEntitlementManagementAccessPackageResourceRequestAccessPackageResourceByRef.md)
-Nullable.
-
-### [Set-MgIdentityGovernanceAccessReviewDecisionInstanceDefinitionByRef](Set-MgIdentityGovernanceAccessReviewDecisionInstanceDefinitionByRef.md)
-There is exactly one accessReviewScheduleDefinition associated with each instance.
-It is the parent schedule for the instance, where instances are created for each recurrence of a review definition and each group selected to review by the definition.
-
-### [Set-MgPrivilegedApprovalRequestByRef](Set-MgPrivilegedApprovalRequestByRef.md)
-Read-only.
-The role assignment request for this approval object
-
 ### [Split-MgEntitlementManagementConnectedOrganization](Split-MgEntitlementManagementConnectedOrganization.md)
 Split elements of a connectedOrganization
 
@@ -840,9 +616,6 @@ Invoke action stop
 Invoke action cancel
 
 ### [Stop-MgIdentityGovernanceAccessReviewDecisionInstance](Stop-MgIdentityGovernanceAccessReviewDecisionInstance.md)
-Invoke action stop
-
-### [Stop-MgIdentityGovernanceAccessReviewDecisionInstanceDefinition](Stop-MgIdentityGovernanceAccessReviewDecisionInstanceDefinition.md)
 Invoke action stop
 
 ### [Stop-MgIdentityGovernanceAccessReviewDecisionInstanceStage](Stop-MgIdentityGovernanceAccessReviewDecisionInstanceStage.md)
@@ -880,10 +653,6 @@ Default PDF linked to this agreement.
 The localized version of the terms of use agreement files attached to the agreement.
 
 ### [Update-MgAgreementFileLocalizationVersion](Update-MgAgreementFileLocalizationVersion.md)
-Read-only.
-Customized versions of the terms of use agreement in the Azure AD tenant.
-
-### [Update-MgAgreementFileVersion](Update-MgAgreementFileVersion.md)
 Read-only.
 Customized versions of the terms of use agreement in the Azure AD tenant.
 
@@ -926,12 +695,6 @@ Nullable.
 
 ### [Update-MgEntitlementManagementConnectedOrganization](Update-MgEntitlementManagementConnectedOrganization.md)
 Represents references to a directory or domain of another organization whose users can request access.
-
-### [Update-MgEntitlementManagementConnectedOrganizationExternalSponsor](Update-MgEntitlementManagementConnectedOrganizationExternalSponsor.md)
-Nullable.
-
-### [Update-MgEntitlementManagementConnectedOrganizationInternalSponsor](Update-MgEntitlementManagementConnectedOrganizationInternalSponsor.md)
-Nullable.
 
 ### [Update-MgEntitlementManagementSetting](Update-MgEntitlementManagementSetting.md)
 Represents the settings that control the behavior of Azure AD entitlement management.
