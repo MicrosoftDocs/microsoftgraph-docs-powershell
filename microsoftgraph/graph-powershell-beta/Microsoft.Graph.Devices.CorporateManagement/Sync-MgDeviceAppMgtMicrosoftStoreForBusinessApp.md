@@ -1,55 +1,46 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/remove-mgdeviceappmgtwindowmanagementappbyref
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/sync-mgdeviceappmgtmicrosoftstoreforbusinessapp
 schema: 2.0.0
 ---
 
-# Remove-MgDeviceAppMgtWindowManagementAppByRef
+# Sync-MgDeviceAppMgtMicrosoftStoreForBusinessApp
 
 ## SYNOPSIS
-Windows management app.
+Invoke action syncMicrosoftStoreForBusinessApps
 
 ## SYNTAX
 
 ```
-Remove-MgDeviceAppMgtWindowManagementAppByRef [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+Sync-MgDeviceAppMgtMicrosoftStoreForBusinessApp [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Windows management app.
+Invoke action syncMicrosoftStoreForBusinessApps
 
 ## EXAMPLES
 
-## PARAMETERS
-
-### -IfMatch
-ETag
-
-```yaml
-Type: System.String
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
 ```
+
+{{ Add example description here }}
+
+## PARAMETERS
 
 ### -PassThru
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -58,7 +49,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -74,7 +65,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -93,12 +84,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
-
-ALIASES
-
-### Remove-MgDeviceAppManagementGraphRefWindowManagementApp
+Please use Get-Help -Online.
 
 ## RELATED LINKS
+
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/sync-mgdeviceappmgtmicrosoftstoreforbusinessapp](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/sync-mgdeviceappmgtmicrosoftstoreforbusinessapp)
 

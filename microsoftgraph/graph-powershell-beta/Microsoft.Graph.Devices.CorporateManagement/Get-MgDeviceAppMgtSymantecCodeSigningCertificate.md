@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtsymanteccodesigningcertificate
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppMgtSymantecCodeSigningCertificate
 
 ## SYNOPSIS
-The WinPhone Symantec Code Signing Certificate.
+Get symantecCodeSigningCertificate from deviceAppManagement
 
 ## SYNTAX
 
@@ -18,9 +18,16 @@ Get-MgDeviceAppMgtSymantecCodeSigningCertificate [-ExpandProperty <String[]>] [-
 ```
 
 ## DESCRIPTION
-The WinPhone Symantec Code Signing Certificate.
+Get symantecCodeSigningCertificate from deviceAppManagement
 
 ## EXAMPLES
+
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -28,7 +35,7 @@ The WinPhone Symantec Code Signing Certificate.
 Expand related entities
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -43,7 +50,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -62,12 +69,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSymantecCodeSigningCertificate
-
 ## NOTES
-
-ALIASES
-
-### Get-MgDeviceAppManagementSymantecCodeSigningCertificate
+Please use Get-Help -Online.
 
 ## RELATED LINKS
+
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtsymanteccodesigningcertificate](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtsymanteccodesigningcertificate)
 

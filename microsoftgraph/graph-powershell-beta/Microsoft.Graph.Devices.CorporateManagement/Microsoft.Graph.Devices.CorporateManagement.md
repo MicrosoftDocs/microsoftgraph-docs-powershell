@@ -38,9 +38,6 @@ The list of troubleshooting events for this user.
 ### [Get-MgUserManagedAppRegistration](Get-MgUserManagedAppRegistration.md)
 Zero or more managed app registrations that belong to the user.
 
-### [Get-MgUserManagedAppRegistrationByRef](Get-MgUserManagedAppRegistrationByRef.md)
-Zero or more managed app registrations that belong to the user.
-
 ### [Get-MgUserManagedDevice](Get-MgUserManagedDevice.md)
 The managed devices associated with the user.
 
@@ -59,9 +56,6 @@ Device configuration states for this device.
 ### [Get-MgUserManagedDeviceDetectedApp](Get-MgUserManagedDeviceDetectedApp.md)
 All applications currently installed on the device
 
-### [Get-MgUserManagedDeviceDetectedAppByRef](Get-MgUserManagedDeviceDetectedAppByRef.md)
-All applications currently installed on the device
-
 ### [Get-MgUserManagedDeviceLogCollectionResponse](Get-MgUserManagedDeviceLogCollectionResponse.md)
 List of log collection requests
 
@@ -75,9 +69,6 @@ Security baseline states for this device.
 The security baseline state for different settings for a device
 
 ### [Get-MgUserManagedDeviceUser](Get-MgUserManagedDeviceUser.md)
-The primary users associated with the managed device.
-
-### [Get-MgUserManagedDeviceUserByRef](Get-MgUserManagedDeviceUserByRef.md)
 The primary users associated with the managed device.
 
 ### [Get-MgUserManagedDeviceWindowProtectionState](Get-MgUserManagedDeviceWindowProtectionState.md)
@@ -99,9 +90,6 @@ The collection property of AppLogUploadRequest.
 ### [Get-MgUserWindowInformationProtectionDeviceRegistration](Get-MgUserWindowInformationProtectionDeviceRegistration.md)
 Zero or more WIP device registrations that belong to the user.
 
-### [Get-MgUserWindowInformationProtectionDeviceRegistrationByRef](Get-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
 ### [Invoke-MgHasDeviceAppMgtAndroidManagedAppProtectionPayloadLink](Invoke-MgHasDeviceAppMgtAndroidManagedAppProtectionPayloadLink.md)
 Invoke action hasPayloadLinks
 
@@ -121,12 +109,6 @@ Invoke action hasPayloadLinks
 Invoke action hasPayloadLinks
 
 ### [Invoke-MgTargetDeviceAppMgtManagedAppPolicyApp](Invoke-MgTargetDeviceAppMgtManagedAppPolicyApp.md)
-Invoke action targetApps
-
-### [Invoke-MgTargetDeviceAppMgtManagedAppPolicyMicrosoftGraphManagedAppProtectionApp](Invoke-MgTargetDeviceAppMgtManagedAppPolicyMicrosoftGraphManagedAppProtectionApp.md)
-Invoke action targetApps
-
-### [Invoke-MgTargetDeviceAppMgtManagedAppPolicyMicrosoftGraphTargetedManagedAppProtectionApp](Invoke-MgTargetDeviceAppMgtManagedAppPolicyMicrosoftGraphTargetedManagedAppProtectionApp.md)
 Invoke action targetApps
 
 ### [Invoke-MgTargetDeviceAppMgtManagedAppRegistrationAppliedPolicyApp](Invoke-MgTargetDeviceAppMgtManagedAppRegistrationAppliedPolicyApp.md)
@@ -312,9 +294,6 @@ The list of group assignments for the device configuration profile
 ### [New-MgUserDeviceManagementTroubleshootingEvent](New-MgUserDeviceManagementTroubleshootingEvent.md)
 The list of troubleshooting events for this user.
 
-### [New-MgUserManagedAppRegistrationByRef](New-MgUserManagedAppRegistrationByRef.md)
-Zero or more managed app registrations that belong to the user.
-
 ### [New-MgUserManagedDevice](New-MgUserManagedDevice.md)
 The managed devices associated with the user.
 
@@ -326,9 +305,6 @@ Device compliance policy states for this device.
 
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
 Device configuration states for this device.
-
-### [New-MgUserManagedDeviceDetectedAppByRef](New-MgUserManagedDeviceDetectedAppByRef.md)
-All applications currently installed on the device
 
 ### [New-MgUserManagedDeviceLogCollectionResponse](New-MgUserManagedDeviceLogCollectionResponse.md)
 List of log collection requests
@@ -342,9 +318,6 @@ Security baseline states for this device.
 ### [New-MgUserManagedDeviceSecurityBaselineStateSettingState](New-MgUserManagedDeviceSecurityBaselineStateSettingState.md)
 The security baseline state for different settings for a device
 
-### [New-MgUserManagedDeviceUserByRef](New-MgUserManagedDeviceUserByRef.md)
-The primary users associated with the managed device.
-
 ### [New-MgUserManagedDeviceWindowProtectionStateDetectedMalwareState](New-MgUserManagedDeviceWindowProtectionStateDetectedMalwareState.md)
 Device malware list
 
@@ -356,204 +329,6 @@ The list of mobile app troubleshooting events for this user.
 
 ### [New-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](New-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
 The collection property of AppLogUploadRequest.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
-
-### [New-MgUserWindowInformationProtectionDeviceRegistrationByRef](New-MgUserWindowInformationProtectionDeviceRegistrationByRef.md)
-Zero or more WIP device registrations that belong to the user.
 
 ### [Remove-MgOfficeClientConfiguration](Remove-MgOfficeClientConfiguration.md)
 List of office Client configuration.
