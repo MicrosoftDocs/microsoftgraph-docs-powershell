@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/test-mgsitecontenttypepublished
 schema: 2.0.0
@@ -12,12 +12,12 @@ Invoke function isPublished
 
 ## SYNTAX
 
-### Is1 (Default)
+### Is (Default)
 ```
 Test-MgSiteContentTypePublished -ContentTypeId <String> -SiteId <String> [<CommonParameters>]
 ```
 
-### IsViaIdentity1
+### IsViaIdentity
 ```
 Test-MgSiteContentTypePublished -InputObject <ISitesIdentity> [<CommonParameters>]
 ```
@@ -33,8 +33,8 @@ Invoke function isPublished
 key: id of contentType
 
 ```yaml
-Type: System.String
-Parameter Sets: Is1
+Type: String
+Parameter Sets: Is
 Aliases:
 
 Required: True
@@ -49,8 +49,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ISitesIdentity
-Parameter Sets: IsViaIdentity1
+Type: ISitesIdentity
+Parameter Sets: IsViaIdentity
 Aliases:
 
 Required: True
@@ -64,8 +64,8 @@ Accept wildcard characters: False
 key: id of site
 
 ```yaml
-Type: System.String
-Parameter Sets: Is1
+Type: String
+Parameter Sets: Is
 Aliases:
 
 Required: True
@@ -81,11 +81,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -127,4 +125,3 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
