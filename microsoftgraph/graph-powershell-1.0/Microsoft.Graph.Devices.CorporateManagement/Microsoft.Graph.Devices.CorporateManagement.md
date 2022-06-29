@@ -17,9 +17,6 @@ The list of troubleshooting events for this user.
 ### [Get-MgUserManagedAppRegistration](Get-MgUserManagedAppRegistration.md)
 Zero or more managed app registrations that belong to the user.
 
-### [Get-MgUserManagedAppRegistrationByRef](Get-MgUserManagedAppRegistrationByRef.md)
-Zero or more managed app registrations that belong to the user.
-
 ### [Get-MgUserManagedDevice](Get-MgUserManagedDevice.md)
 The managed devices associated with the user.
 
@@ -33,12 +30,6 @@ Device compliance policy states for this device.
 Device configuration states for this device.
 
 ### [Invoke-MgTargetDeviceAppMgtManagedAppPolicyApp](Invoke-MgTargetDeviceAppMgtManagedAppPolicyApp.md)
-Invoke action targetApps
-
-### [Invoke-MgTargetDeviceAppMgtManagedAppPolicyMicrosoftGraphManagedAppProtectionApp](Invoke-MgTargetDeviceAppMgtManagedAppPolicyMicrosoftGraphManagedAppProtectionApp.md)
-Invoke action targetApps
-
-### [Invoke-MgTargetDeviceAppMgtManagedAppPolicyMicrosoftGraphTargetedManagedAppProtectionApp](Invoke-MgTargetDeviceAppMgtManagedAppPolicyMicrosoftGraphTargetedManagedAppProtectionApp.md)
 Invoke action targetApps
 
 ### [Invoke-MgTargetDeviceAppMgtManagedAppRegistrationAppliedPolicyApp](Invoke-MgTargetDeviceAppMgtManagedAppRegistrationAppliedPolicyApp.md)
@@ -145,9 +136,6 @@ Invoke action targetApps
 
 ### [New-MgUserDeviceManagementTroubleshootingEvent](New-MgUserDeviceManagementTroubleshootingEvent.md)
 The list of troubleshooting events for this user.
-
-### [New-MgUserManagedAppRegistrationByRef](New-MgUserManagedAppRegistrationByRef.md)
-Zero or more managed app registrations that belong to the user.
 
 ### [New-MgUserManagedDevice](New-MgUserManagedDevice.md)
 The managed devices associated with the user.
