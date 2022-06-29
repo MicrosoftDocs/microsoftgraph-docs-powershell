@@ -1,38 +1,60 @@
-﻿---
+---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/remove-mgsearchacronym
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/remove-mgexternalconnectionitem
 schema: 2.0.0
 ---
 
-# Remove-MgSearchAcronym
+# Remove-MgExternalConnectionItem
 
 ## SYNOPSIS
-Administrative answer in Microsoft Search results to define common acronyms in a organization.
+Delete navigation property items for external
 
 ## SYNTAX
 
 ### Delete (Default)
 ```
-Remove-MgSearchAcronym -AcronymId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Remove-MgExternalConnectionItem -ExternalConnectionId <String> -ExternalItemId <String> [-IfMatch <String>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgSearchAcronym -InputObject <ISearchIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Remove-MgExternalConnectionItem -InputObject <ISearchIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Administrative answer in Microsoft Search results to define common acronyms in a organization.
+Delete navigation property items for external
 
 ## EXAMPLES
 
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
+
 ## PARAMETERS
 
-### -AcronymId
-key: id of acronym
+### -ExternalConnectionId
+key: id of externalConnection
+
+```yaml
+Type: String
+Parameter Sets: Delete
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExternalItemId
+key: id of externalItem
 
 ```yaml
 Type: String
@@ -87,7 +109,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -133,18 +155,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
-
-ALIASES
-
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
-
-
-INPUTOBJECT <ISearchIdentity>: Identity Parameter
-  - `[AcronymId <String>]`: key: id of acronym
-  - `[BookmarkId <String>]`: key: id of bookmark
-  - `[ExternalConnectionId <String>]`: key: id of externalConnection
-  - `[QnaId <String>]`: key: id of qna
+Please use Get-Help -Online.
 
 ## RELATED LINKS
+
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/remove-mgexternalconnectionitem](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/remove-mgexternalconnectionitem)
+

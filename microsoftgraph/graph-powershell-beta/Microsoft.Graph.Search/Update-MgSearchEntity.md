@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/update-mgsearchentity
 schema: 2.0.0
@@ -12,16 +12,16 @@ Update search
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
 Update-MgSearchEntity [-Acronyms <IMicrosoftGraphSearchAcronym[]>] [-AdditionalProperties <Hashtable>]
- [-Bookmarks <IMicrosoftGraphSearchBookmark[]>] [-Id <String>] [-Qnas <IMicrosoftGraphSearchQna[]>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Bookmarks <IMicrosoftGraphSearchBookmark[]>] [-Id <String>] [-Qnas <IMicrosoftGraphSearchQna[]>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update1
+### Update
 ```
-Update-MgSearchEntity -BodyParameter <IMicrosoftGraphSearchEntity1> [-PassThru] [-Confirm] [-WhatIf]
+Update-MgSearchEntity -BodyParameter <IMicrosoftGraphSearchEntity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -37,8 +37,8 @@ Administrative answer in Microsoft Search results to define common acronyms in a
 To construct, please use Get-Help -Online and see NOTES section for ACRONYMS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchAcronym[]
-Parameter Sets: UpdateExpanded1
+Type: IMicrosoftGraphSearchAcronym[]
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -52,8 +52,8 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: UpdateExpanded1
+Type: Hashtable
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -68,8 +68,8 @@ searchEntity
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchEntity1
-Parameter Sets: Update1
+Type: IMicrosoftGraphSearchEntity
+Parameter Sets: Update
 Aliases:
 
 Required: True
@@ -84,8 +84,8 @@ Administrative answer in Microsoft Search results for common search queries in a
 To construct, please use Get-Help -Online and see NOTES section for BOOKMARKS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchBookmark[]
-Parameter Sets: UpdateExpanded1
+Type: IMicrosoftGraphSearchBookmark[]
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -99,8 +99,8 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
-Parameter Sets: UpdateExpanded1
+Type: String
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -130,8 +130,8 @@ Administrative answer in Microsoft Search results which provide answers for spec
 To construct, please use Get-Help -Online and see NOTES section for QNAS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchQna[]
-Parameter Sets: UpdateExpanded1
+Type: IMicrosoftGraphSearchQna[]
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -161,7 +161,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -177,12 +177,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchEntity1
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchEntity
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -342,3 +340,4 @@ QNAS <IMicrosoftGraphSearchQna[]>: Administrative answer in Microsoft Search res
 
 ## RELATED LINKS
 
+## RELATED LINKS
