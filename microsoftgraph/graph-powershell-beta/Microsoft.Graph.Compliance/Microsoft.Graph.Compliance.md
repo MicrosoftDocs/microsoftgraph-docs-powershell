@@ -23,9 +23,6 @@ Invoke action applyTags
 ### [Add-MgComplianceEdiscoveryCaseReviewSetToReviewSet](Add-MgComplianceEdiscoveryCaseReviewSetToReviewSet.md)
 Invoke action addToReviewSet
 
-### [Add-MgComplianceEdiscoveryCaseSourceCollectionNoncustodialSourceHold](Add-MgComplianceEdiscoveryCaseSourceCollectionNoncustodialSourceHold.md)
-Invoke action applyHold
-
 ### [Clear-MgComplianceEdiscoveryCaseSourceCollectionData](Clear-MgComplianceEdiscoveryCaseSourceCollectionData.md)
 Invoke action purgeData
 
@@ -54,16 +51,10 @@ Data source entity for SharePoint sites associated with the custodian.
 ### [Get-MgComplianceEdiscoveryCaseCustodianSiteSourceSite](Get-MgComplianceEdiscoveryCaseCustodianSiteSourceSite.md)
 The SharePoint site associated with the siteSource.
 
-### [Get-MgComplianceEdiscoveryCaseCustodianSiteSourceSiteByRef](Get-MgComplianceEdiscoveryCaseCustodianSiteSourceSiteByRef.md)
-The SharePoint site associated with the siteSource.
-
 ### [Get-MgComplianceEdiscoveryCaseCustodianUnifiedGroupSource](Get-MgComplianceEdiscoveryCaseCustodianUnifiedGroupSource.md)
 Data source entity for groups associated with the custodian.
 
 ### [Get-MgComplianceEdiscoveryCaseCustodianUnifiedGroupSourceGroup](Get-MgComplianceEdiscoveryCaseCustodianUnifiedGroupSourceGroup.md)
-The group associated with the unifiedGroupSource.
-
-### [Get-MgComplianceEdiscoveryCaseCustodianUnifiedGroupSourceGroupByRef](Get-MgComplianceEdiscoveryCaseCustodianUnifiedGroupSourceGroupByRef.md)
 The group associated with the unifiedGroupSource.
 
 ### [Get-MgComplianceEdiscoveryCaseCustodianUserSource](Get-MgComplianceEdiscoveryCaseCustodianUserSource.md)
@@ -80,16 +71,10 @@ Data source entity for SharePoint sites associated with the legal hold.
 ### [Get-MgComplianceEdiscoveryCaseLegalHoldSiteSourceSite](Get-MgComplianceEdiscoveryCaseLegalHoldSiteSourceSite.md)
 The SharePoint site associated with the siteSource.
 
-### [Get-MgComplianceEdiscoveryCaseLegalHoldSiteSourceSiteByRef](Get-MgComplianceEdiscoveryCaseLegalHoldSiteSourceSiteByRef.md)
-The SharePoint site associated with the siteSource.
-
 ### [Get-MgComplianceEdiscoveryCaseLegalHoldUnifiedGroupSource](Get-MgComplianceEdiscoveryCaseLegalHoldUnifiedGroupSource.md)
 Get unifiedGroupSources from compliance
 
 ### [Get-MgComplianceEdiscoveryCaseLegalHoldUnifiedGroupSourceGroup](Get-MgComplianceEdiscoveryCaseLegalHoldUnifiedGroupSourceGroup.md)
-The group associated with the unifiedGroupSource.
-
-### [Get-MgComplianceEdiscoveryCaseLegalHoldUnifiedGroupSourceGroupByRef](Get-MgComplianceEdiscoveryCaseLegalHoldUnifiedGroupSourceGroupByRef.md)
 The group associated with the unifiedGroupSource.
 
 ### [Get-MgComplianceEdiscoveryCaseLegalHoldUserSource](Get-MgComplianceEdiscoveryCaseLegalHoldUserSource.md)
@@ -103,9 +88,6 @@ Nullable.
 ### [Get-MgComplianceEdiscoveryCaseOperation](Get-MgComplianceEdiscoveryCaseOperation.md)
 Returns a list of case operation objects for this case.
 Nullable.
-
-### [Get-MgComplianceEdiscoveryCaseOperationMicrosoftGraphEdiscoveryCaseExportOperationDownloadUrl](Get-MgComplianceEdiscoveryCaseOperationMicrosoftGraphEdiscoveryCaseExportOperationDownloadUrl.md)
-Invoke function getDownloadUrl
 
 ### [Get-MgComplianceEdiscoveryCaseReviewSet](Get-MgComplianceEdiscoveryCaseReviewSet.md)
 Returns a list of reviewSet objects in the case.
@@ -128,25 +110,13 @@ Adds an additional source to the sourceCollection.
 ### [Get-MgComplianceEdiscoveryCaseSourceCollectionAddToReviewSetOperation](Get-MgComplianceEdiscoveryCaseSourceCollectionAddToReviewSetOperation.md)
 Adds the results of the sourceCollection to the specified reviewSet.
 
-### [Get-MgComplianceEdiscoveryCaseSourceCollectionAddToReviewSetOperationByRef](Get-MgComplianceEdiscoveryCaseSourceCollectionAddToReviewSetOperationByRef.md)
-Adds the results of the sourceCollection to the specified reviewSet.
-
 ### [Get-MgComplianceEdiscoveryCaseSourceCollectionCustodianSource](Get-MgComplianceEdiscoveryCaseSourceCollectionCustodianSource.md)
-Custodian sources that are included in the sourceCollection.
-
-### [Get-MgComplianceEdiscoveryCaseSourceCollectionCustodianSourceByRef](Get-MgComplianceEdiscoveryCaseSourceCollectionCustodianSourceByRef.md)
 Custodian sources that are included in the sourceCollection.
 
 ### [Get-MgComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperation](Get-MgComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperation.md)
 The last estimate operation associated with the sourceCollection.
 
-### [Get-MgComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperationByRef](Get-MgComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperationByRef.md)
-The last estimate operation associated with the sourceCollection.
-
 ### [Get-MgComplianceEdiscoveryCaseSourceCollectionNoncustodialSource](Get-MgComplianceEdiscoveryCaseSourceCollectionNoncustodialSource.md)
-noncustodialDataSource sources that are included in the sourceCollection
-
-### [Get-MgComplianceEdiscoveryCaseSourceCollectionNoncustodialSourceByRef](Get-MgComplianceEdiscoveryCaseSourceCollectionNoncustodialSourceByRef.md)
 noncustodialDataSource sources that are included in the sourceCollection
 
 ### [Get-MgComplianceEdiscoveryCaseTag](Get-MgComplianceEdiscoveryCaseTag.md)
@@ -155,20 +125,11 @@ Returns a list of tag objects associated to this case.
 ### [Get-MgComplianceEdiscoveryCaseTagChildTag](Get-MgComplianceEdiscoveryCaseTagChildTag.md)
 Returns the tags that are a child of a tag.
 
-### [Get-MgComplianceEdiscoveryCaseTagChildTagByRef](Get-MgComplianceEdiscoveryCaseTagChildTagByRef.md)
-Returns the tags that are a child of a tag.
-
 ### [Get-MgComplianceEdiscoveryCaseTagParent](Get-MgComplianceEdiscoveryCaseTagParent.md)
-Returns the parent tag of the specified tag.
-
-### [Get-MgComplianceEdiscoveryCaseTagParentByRef](Get-MgComplianceEdiscoveryCaseTagParentByRef.md)
 Returns the parent tag of the specified tag.
 
 ### [Initialize-MgComplianceEdiscoveryCaseCustodian](Initialize-MgComplianceEdiscoveryCaseCustodian.md)
 Invoke action activate
-
-### [Invoke-MgAsComplianceEdiscoveryCaseTagChildTagHierarchy](Invoke-MgAsComplianceEdiscoveryCaseTagChildTagHierarchy.md)
-Invoke function asHierarchy
 
 ### [Invoke-MgAsComplianceEdiscoveryCaseTagHierarchy](Invoke-MgAsComplianceEdiscoveryCaseTagHierarchy.md)
 Invoke function asHierarchy
@@ -233,17 +194,8 @@ Returns a list of sourceCollection objects associated with this case.
 ### [New-MgComplianceEdiscoveryCaseSourceCollectionAdditionalSource](New-MgComplianceEdiscoveryCaseSourceCollectionAdditionalSource.md)
 Adds an additional source to the sourceCollection.
 
-### [New-MgComplianceEdiscoveryCaseSourceCollectionCustodianSourceByRef](New-MgComplianceEdiscoveryCaseSourceCollectionCustodianSourceByRef.md)
-Custodian sources that are included in the sourceCollection.
-
-### [New-MgComplianceEdiscoveryCaseSourceCollectionNoncustodialSourceByRef](New-MgComplianceEdiscoveryCaseSourceCollectionNoncustodialSourceByRef.md)
-noncustodialDataSource sources that are included in the sourceCollection
-
 ### [New-MgComplianceEdiscoveryCaseTag](New-MgComplianceEdiscoveryCaseTag.md)
 Returns a list of tag objects associated to this case.
-
-### [New-MgComplianceEdiscoveryCaseTagChildTagByRef](New-MgComplianceEdiscoveryCaseTagChildTagByRef.md)
-Returns the tags that are a child of a tag.
 
 ### [Publish-MgComplianceEdiscoveryCaseCustodian](Publish-MgComplianceEdiscoveryCaseCustodian.md)
 Invoke action release
@@ -267,14 +219,8 @@ Invoke action removeHold
 ### [Remove-MgComplianceEdiscoveryCaseCustodianSiteSource](Remove-MgComplianceEdiscoveryCaseCustodianSiteSource.md)
 Data source entity for SharePoint sites associated with the custodian.
 
-### [Remove-MgComplianceEdiscoveryCaseCustodianSiteSourceSiteByRef](Remove-MgComplianceEdiscoveryCaseCustodianSiteSourceSiteByRef.md)
-The SharePoint site associated with the siteSource.
-
 ### [Remove-MgComplianceEdiscoveryCaseCustodianUnifiedGroupSource](Remove-MgComplianceEdiscoveryCaseCustodianUnifiedGroupSource.md)
 Data source entity for groups associated with the custodian.
-
-### [Remove-MgComplianceEdiscoveryCaseCustodianUnifiedGroupSourceGroupByRef](Remove-MgComplianceEdiscoveryCaseCustodianUnifiedGroupSourceGroupByRef.md)
-The group associated with the unifiedGroupSource.
 
 ### [Remove-MgComplianceEdiscoveryCaseCustodianUserSource](Remove-MgComplianceEdiscoveryCaseCustodianUserSource.md)
 Data source entity for a the custodian.
@@ -287,14 +233,8 @@ Nullable.
 ### [Remove-MgComplianceEdiscoveryCaseLegalHoldSiteSource](Remove-MgComplianceEdiscoveryCaseLegalHoldSiteSource.md)
 Data source entity for SharePoint sites associated with the legal hold.
 
-### [Remove-MgComplianceEdiscoveryCaseLegalHoldSiteSourceSiteByRef](Remove-MgComplianceEdiscoveryCaseLegalHoldSiteSourceSiteByRef.md)
-The SharePoint site associated with the siteSource.
-
 ### [Remove-MgComplianceEdiscoveryCaseLegalHoldUnifiedGroupSource](Remove-MgComplianceEdiscoveryCaseLegalHoldUnifiedGroupSource.md)
 Delete navigation property unifiedGroupSources for compliance
-
-### [Remove-MgComplianceEdiscoveryCaseLegalHoldUnifiedGroupSourceGroupByRef](Remove-MgComplianceEdiscoveryCaseLegalHoldUnifiedGroupSourceGroupByRef.md)
-The group associated with the unifiedGroupSource.
 
 ### [Remove-MgComplianceEdiscoveryCaseLegalHoldUserSource](Remove-MgComplianceEdiscoveryCaseLegalHoldUserSource.md)
 Data source entity for a the legal hold.
@@ -329,44 +269,11 @@ Returns a list of sourceCollection objects associated with this case.
 ### [Remove-MgComplianceEdiscoveryCaseSourceCollectionAdditionalSource](Remove-MgComplianceEdiscoveryCaseSourceCollectionAdditionalSource.md)
 Adds an additional source to the sourceCollection.
 
-### [Remove-MgComplianceEdiscoveryCaseSourceCollectionAddToReviewSetOperationByRef](Remove-MgComplianceEdiscoveryCaseSourceCollectionAddToReviewSetOperationByRef.md)
-Adds the results of the sourceCollection to the specified reviewSet.
-
-### [Remove-MgComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperationByRef](Remove-MgComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperationByRef.md)
-The last estimate operation associated with the sourceCollection.
-
-### [Remove-MgComplianceEdiscoveryCaseSourceCollectionNoncustodialSourceHold](Remove-MgComplianceEdiscoveryCaseSourceCollectionNoncustodialSourceHold.md)
-Invoke action removeHold
-
 ### [Remove-MgComplianceEdiscoveryCaseTag](Remove-MgComplianceEdiscoveryCaseTag.md)
 Returns a list of tag objects associated to this case.
 
-### [Remove-MgComplianceEdiscoveryCaseTagParentByRef](Remove-MgComplianceEdiscoveryCaseTagParentByRef.md)
-Returns the parent tag of the specified tag.
-
 ### [Reset-MgComplianceEdiscoveryCaseSettingToDefault](Reset-MgComplianceEdiscoveryCaseSettingToDefault.md)
 Invoke action resetToDefault
-
-### [Set-MgComplianceEdiscoveryCaseCustodianSiteSourceSiteByRef](Set-MgComplianceEdiscoveryCaseCustodianSiteSourceSiteByRef.md)
-The SharePoint site associated with the siteSource.
-
-### [Set-MgComplianceEdiscoveryCaseCustodianUnifiedGroupSourceGroupByRef](Set-MgComplianceEdiscoveryCaseCustodianUnifiedGroupSourceGroupByRef.md)
-The group associated with the unifiedGroupSource.
-
-### [Set-MgComplianceEdiscoveryCaseLegalHoldSiteSourceSiteByRef](Set-MgComplianceEdiscoveryCaseLegalHoldSiteSourceSiteByRef.md)
-The SharePoint site associated with the siteSource.
-
-### [Set-MgComplianceEdiscoveryCaseLegalHoldUnifiedGroupSourceGroupByRef](Set-MgComplianceEdiscoveryCaseLegalHoldUnifiedGroupSourceGroupByRef.md)
-The group associated with the unifiedGroupSource.
-
-### [Set-MgComplianceEdiscoveryCaseSourceCollectionAddToReviewSetOperationByRef](Set-MgComplianceEdiscoveryCaseSourceCollectionAddToReviewSetOperationByRef.md)
-Adds the results of the sourceCollection to the specified reviewSet.
-
-### [Set-MgComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperationByRef](Set-MgComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperationByRef.md)
-The last estimate operation associated with the sourceCollection.
-
-### [Set-MgComplianceEdiscoveryCaseTagParentByRef](Set-MgComplianceEdiscoveryCaseTagParentByRef.md)
-Returns the parent tag of the specified tag.
 
 ### [Update-MgCompliance](Update-MgCompliance.md)
 Update compliance
