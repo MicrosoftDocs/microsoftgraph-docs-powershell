@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/test-mgdrivelistcontenttypepublished
 schema: 2.0.0
@@ -12,12 +12,12 @@ Invoke function isPublished
 
 ## SYNTAX
 
-### Is1 (Default)
+### Is (Default)
 ```
 Test-MgDriveListContentTypePublished -ContentTypeId <String> -DriveId <String> [<CommonParameters>]
 ```
 
-### IsViaIdentity1
+### IsViaIdentity
 ```
 Test-MgDriveListContentTypePublished -InputObject <IFilesIdentity> [<CommonParameters>]
 ```
@@ -33,8 +33,8 @@ Invoke function isPublished
 key: id of contentType
 
 ```yaml
-Type: System.String
-Parameter Sets: Is1
+Type: String
+Parameter Sets: Is
 Aliases:
 
 Required: True
@@ -48,8 +48,8 @@ Accept wildcard characters: False
 key: id of drive
 
 ```yaml
-Type: System.String
-Parameter Sets: Is1
+Type: String
+Parameter Sets: Is
 Aliases:
 
 Required: True
@@ -64,8 +64,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IFilesIdentity
-Parameter Sets: IsViaIdentity1
+Type: IFilesIdentity
+Parameter Sets: IsViaIdentity
 Aliases:
 
 Required: True
@@ -81,11 +81,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -115,4 +113,3 @@ INPUTOBJECT <IFilesIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
