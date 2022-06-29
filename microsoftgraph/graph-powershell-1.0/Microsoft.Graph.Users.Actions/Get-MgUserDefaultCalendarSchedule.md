@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/get-mguserdefaultcalendarschedule
 schema: 2.0.0
@@ -12,32 +12,32 @@ Invoke action getSchedule
 
 ## SYNTAX
 
-### GetExpanded (Default)
+### GetExpanded2 (Default)
 ```
 Get-MgUserDefaultCalendarSchedule -UserId <String> [-AdditionalProperties <Hashtable>]
  [-AvailabilityViewInterval <Int32>] [-EndTime <IMicrosoftGraphDateTimeZone>] [-Schedules <String[]>]
- [-StartTime <IMicrosoftGraphDateTimeZone>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-StartTime <IMicrosoftGraphDateTimeZone>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Get
+### Get2
 ```
 Get-MgUserDefaultCalendarSchedule -UserId <String>
  -BodyParameter <IPathsQe3PsvUsersUserIdCalendarMicrosoftGraphGetschedulePostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### GetViaIdentity
-```
-Get-MgUserDefaultCalendarSchedule -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPathsQe3PsvUsersUserIdCalendarMicrosoftGraphGetschedulePostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### GetViaIdentityExpanded
+### GetViaIdentityExpanded2
 ```
 Get-MgUserDefaultCalendarSchedule -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-AvailabilityViewInterval <Int32>] [-EndTime <IMicrosoftGraphDateTimeZone>] [-Schedules <String[]>]
- [-StartTime <IMicrosoftGraphDateTimeZone>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-StartTime <IMicrosoftGraphDateTimeZone>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### GetViaIdentity2
+```
+Get-MgUserDefaultCalendarSchedule -InputObject <IUsersActionsIdentity>
+ -BodyParameter <IPathsQe3PsvUsersUserIdCalendarMicrosoftGraphGetschedulePostRequestbodyContentApplicationJsonSchema>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,8 +51,8 @@ Invoke action getSchedule
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: GetExpanded, GetViaIdentityExpanded
+Type: Hashtable
+Parameter Sets: GetExpanded2, GetViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -66,8 +66,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Int32
-Parameter Sets: GetExpanded, GetViaIdentityExpanded
+Type: Int32
+Parameter Sets: GetExpanded2, GetViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -82,8 +82,8 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPathsQe3PsvUsersUserIdCalendarMicrosoftGraphGetschedulePostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Get, GetViaIdentity
+Type: IPathsQe3PsvUsersUserIdCalendarMicrosoftGraphGetschedulePostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Get2, GetViaIdentity2
 Aliases:
 
 Required: True
@@ -98,8 +98,8 @@ dateTimeTimeZone
 To construct, please use Get-Help -Online and see NOTES section for ENDTIME properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDateTimeZone
-Parameter Sets: GetExpanded, GetViaIdentityExpanded
+Type: IMicrosoftGraphDateTimeZone
+Parameter Sets: GetExpanded2, GetViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -114,8 +114,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-Parameter Sets: GetViaIdentity, GetViaIdentityExpanded
+Type: IUsersActionsIdentity
+Parameter Sets: GetViaIdentityExpanded2, GetViaIdentity2
 Aliases:
 
 Required: True
@@ -129,8 +129,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String[]
-Parameter Sets: GetExpanded, GetViaIdentityExpanded
+Type: String[]
+Parameter Sets: GetExpanded2, GetViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -145,8 +145,8 @@ dateTimeTimeZone
 To construct, please use Get-Help -Online and see NOTES section for STARTTIME properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDateTimeZone
-Parameter Sets: GetExpanded, GetViaIdentityExpanded
+Type: IMicrosoftGraphDateTimeZone
+Parameter Sets: GetExpanded2, GetViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -160,8 +160,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Get, GetExpanded
+Type: String
+Parameter Sets: GetExpanded2, Get2
 Aliases:
 
 Required: True
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -191,7 +191,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -208,13 +208,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPathsQe3PsvUsersUserIdCalendarMicrosoftGraphGetschedulePostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphScheduleInformation
-
 ## NOTES
 
 ALIASES
@@ -275,4 +272,3 @@ STARTTIME <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
 
 ## RELATED LINKS
-
