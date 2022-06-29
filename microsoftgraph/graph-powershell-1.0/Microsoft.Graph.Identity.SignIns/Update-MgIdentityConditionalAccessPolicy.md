@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgidentityconditionalaccesspolicy
 schema: 2.0.0
@@ -17,35 +17,33 @@ Returns a collection of the specified Conditional Access (CA) policies.
 ### UpdateExpanded1 (Default)
 ```
 Update-MgIdentityConditionalAccessPolicy -ConditionalAccessPolicyId <String>
- [-AdditionalProperties <Hashtable>] [-Conditions <IMicrosoftGraphConditionalAccessConditionSet1>]
+ [-AdditionalProperties <Hashtable>] [-Conditions <IMicrosoftGraphConditionalAccessConditionSet>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
- [-GrantControls <IMicrosoftGraphConditionalAccessGrantControls>] [-Id <String>]
- [-ModifiedDateTime <DateTime>] [-SessionControls <IMicrosoftGraphConditionalAccessSessionControls1>]
- [-State <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-GrantControls <IMicrosoftGraphConditionalAccessGrantControls>] [-Id <String>] [-ModifiedDateTime <DateTime>]
+ [-SessionControls <IMicrosoftGraphConditionalAccessSessionControls>] [-State <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgIdentityConditionalAccessPolicy -ConditionalAccessPolicyId <String>
- -BodyParameter <IMicrosoftGraphConditionalAccessPolicy1> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity1
-```
-Update-MgIdentityConditionalAccessPolicy -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphConditionalAccessPolicy1> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphConditionalAccessPolicy> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
 ```
 Update-MgIdentityConditionalAccessPolicy -InputObject <IIdentitySignInsIdentity>
- [-AdditionalProperties <Hashtable>] [-Conditions <IMicrosoftGraphConditionalAccessConditionSet1>]
+ [-AdditionalProperties <Hashtable>] [-Conditions <IMicrosoftGraphConditionalAccessConditionSet>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
- [-GrantControls <IMicrosoftGraphConditionalAccessGrantControls>] [-Id <String>]
- [-ModifiedDateTime <DateTime>] [-SessionControls <IMicrosoftGraphConditionalAccessSessionControls1>]
- [-State <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-GrantControls <IMicrosoftGraphConditionalAccessGrantControls>] [-Id <String>] [-ModifiedDateTime <DateTime>]
+ [-SessionControls <IMicrosoftGraphConditionalAccessSessionControls>] [-State <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity1
+```
+Update-MgIdentityConditionalAccessPolicy -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphConditionalAccessPolicy> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -61,7 +59,7 @@ Returns a collection of the specified Conditional Access (CA) policies.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -77,7 +75,7 @@ conditionalAccessPolicy
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConditionalAccessPolicy1
+Type: IMicrosoftGraphConditionalAccessPolicy
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -92,8 +90,8 @@ Accept wildcard characters: False
 key: id of conditionalAccessPolicy
 
 ```yaml
-Type: System.String
-Parameter Sets: Update1, UpdateExpanded1
+Type: String
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -108,7 +106,7 @@ conditionalAccessConditionSet
 To construct, please use Get-Help -Online and see NOTES section for CONDITIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConditionalAccessConditionSet1
+Type: IMicrosoftGraphConditionalAccessConditionSet
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -125,7 +123,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Readonly.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -140,7 +138,7 @@ Accept wildcard characters: False
 Not used.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -155,7 +153,7 @@ Accept wildcard characters: False
 Specifies a display name for the conditionalAccessPolicy object.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -171,7 +169,7 @@ conditionalAccessGrantControls
 To construct, please use Get-Help -Online and see NOTES section for GRANTCONTROLS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConditionalAccessGrantControls
+Type: IMicrosoftGraphConditionalAccessGrantControls
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -186,7 +184,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -202,8 +200,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-Parameter Sets: UpdateViaIdentity1, UpdateViaIdentityExpanded1
+Type: IIdentitySignInsIdentity
+Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -219,7 +217,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Readonly.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -234,7 +232,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -250,7 +248,7 @@ conditionalAccessSessionControls
 To construct, please use Get-Help -Online and see NOTES section for SESSIONCONTROLS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConditionalAccessSessionControls1
+Type: IMicrosoftGraphConditionalAccessSessionControls
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -265,7 +263,7 @@ Accept wildcard characters: False
 conditionalAccessPolicyState
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -280,7 +278,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -296,7 +294,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -313,13 +311,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConditionalAccessPolicy1
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConditionalAccessPolicy
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -520,3 +515,4 @@ SESSIONCONTROLS <IMicrosoftGraphConditionalAccessSessionControls1>: conditionalA
 
 ## RELATED LINKS
 
+## RELATED LINKS

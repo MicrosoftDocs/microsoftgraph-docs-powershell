@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationflowpolicy
 schema: 2.0.0
@@ -16,14 +16,14 @@ The policy configuration of the self-service sign-up experience of external user
 ```
 Update-MgPolicyAuthenticationFlowPolicy [-AdditionalProperties <Hashtable>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>]
- [-SelfServiceSignUp <IMicrosoftGraphSelfServiceSignUpAuthenticationFlowConfiguration>] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-SelfServiceSignUp <IMicrosoftGraphSelfServiceSignUpAuthenticationFlowConfiguration>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgPolicyAuthenticationFlowPolicy -BodyParameter <IMicrosoftGraphAuthenticationFlowsPolicy> [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -37,7 +37,7 @@ The policy configuration of the self-service sign-up experience of external user
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -53,7 +53,7 @@ authenticationFlowsPolicy
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationFlowsPolicy
+Type: IMicrosoftGraphAuthenticationFlowsPolicy
 Parameter Sets: Update1
 Aliases:
 
@@ -71,7 +71,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -89,7 +89,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -135,7 +135,7 @@ selfServiceSignUpAuthenticationFlowConfiguration
 To construct, please use Get-Help -Online and see NOTES section for SELFSERVICESIGNUP properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSelfServiceSignUpAuthenticationFlowConfiguration
+Type: IMicrosoftGraphSelfServiceSignUpAuthenticationFlowConfiguration
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -166,7 +166,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -183,11 +183,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationFlowsPolicy
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -211,4 +209,3 @@ SELFSERVICESIGNUP <IMicrosoftGraphSelfServiceSignUpAuthenticationFlowConfigurati
   - `[IsEnabled <Boolean?>]`: Indicates whether self-service sign-up flow is enabled or disabled. The default value is false. This property is not a key. Required.
 
 ## RELATED LINKS
-

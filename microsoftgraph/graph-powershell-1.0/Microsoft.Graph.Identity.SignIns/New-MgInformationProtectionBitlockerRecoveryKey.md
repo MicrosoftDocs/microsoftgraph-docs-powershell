@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mginformationprotectionbitlockerrecoverykey
 schema: 2.0.0
@@ -12,17 +12,17 @@ The recovery keys associated with the bitlocker entity.
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgInformationProtectionBitlockerRecoveryKey [-AdditionalProperties <Hashtable>]
  [-CreatedDateTime <DateTime>] [-DeviceId <String>] [-Id <String>] [-Key <String>] [-VolumeType <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
-New-MgInformationProtectionBitlockerRecoveryKey -BodyParameter <IMicrosoftGraphBitlockerRecoveryKey>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgInformationProtectionBitlockerRecoveryKey -BodyParameter <IMicrosoftGraphBitlockerRecoveryKey> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,8 +36,8 @@ The recovery keys associated with the bitlocker entity.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: CreateExpanded1
+Type: Hashtable
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -52,8 +52,8 @@ bitlockerRecoveryKey
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBitlockerRecoveryKey
-Parameter Sets: Create1
+Type: IMicrosoftGraphBitlockerRecoveryKey
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -68,8 +68,8 @@ The date and time when the key was originally backed up to Azure Active Director
 Not nullable.
 
 ```yaml
-Type: System.DateTime
-Parameter Sets: CreateExpanded1
+Type: DateTime
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -84,8 +84,8 @@ Identifier of the device the BitLocker key is originally backed up from.
 Supports $filter (eq).
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1
+Type: String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -99,8 +99,8 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1
+Type: String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -116,8 +116,8 @@ Returned only on $select.
 Not nullable.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1
+Type: String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -131,8 +131,8 @@ Accept wildcard characters: False
 volumeType
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1
+Type: String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -162,7 +162,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -179,11 +179,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBitlockerRecoveryKey
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBitlockerRecoveryKey
-
 ## NOTES
 
 ALIASES
@@ -202,4 +200,3 @@ BODYPARAMETER <IMicrosoftGraphBitlockerRecoveryKey>: bitlockerRecoveryKey
   - `[VolumeType <String>]`: volumeType
 
 ## RELATED LINKS
-

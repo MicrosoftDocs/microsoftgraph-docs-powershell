@@ -54,10 +54,6 @@ Invoke function delta
 Navigation property to manage certificate-based authentication configuration.
 Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
 
-### [Get-MgOrganizationCertificateBasedAuthConfigurationByRef](Get-MgOrganizationCertificateBasedAuthConfigurationByRef.md)
-Navigation property to manage certificate-based authentication configuration.
-Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
-
 ### [Get-MgPolicyActivityBasedTimeoutPolicy](Get-MgPolicyActivityBasedTimeoutPolicy.md)
 The policy that controls the idle time out for web sessions for applications.
 
@@ -119,9 +115,6 @@ The details of the Microsoft Authenticator app registered to a user for authenti
 The registered device on which Microsoft Authenticator resides.
 This property is null if the device is not registered for passwordless Phone Sign-In.
 
-### [Get-MgUserAuthenticationWindowHello](Get-MgUserAuthenticationWindowHello.md)
-Represents the Windows Hello for Business authentication method registered to a user for authentication.
-
 ### [Get-MgUserAuthenticationWindowHelloForBusinessMethodDevice](Get-MgUserAuthenticationWindowHelloForBusinessMethodDevice.md)
 The registered device on which this Windows Hello for Business key resides.
 Supports $expand.
@@ -163,10 +156,6 @@ Add new entity to invitations
 
 ### [New-MgOauth2PermissionGrant](New-MgOauth2PermissionGrant.md)
 Add new entity to oauth2PermissionGrants
-
-### [New-MgOrganizationCertificateBasedAuthConfigurationByRef](New-MgOrganizationCertificateBasedAuthConfigurationByRef.md)
-Navigation property to manage certificate-based authentication configuration.
-Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
 
 ### [New-MgPolicyActivityBasedTimeoutPolicy](New-MgPolicyActivityBasedTimeoutPolicy.md)
 The policy that controls the idle time out for web sessions for applications.
@@ -210,9 +199,6 @@ Represents all authentication methods registered to a user.
 ### [New-MgUserAuthenticationMicrosoftAuthenticatorMethod](New-MgUserAuthenticationMicrosoftAuthenticatorMethod.md)
 The details of the Microsoft Authenticator app registered to a user for authentication.
 
-### [New-MgUserAuthenticationWindowHello](New-MgUserAuthenticationWindowHello.md)
-Represents the Windows Hello for Business authentication method registered to a user for authentication.
-
 ### [Remove-MgDataPolicyOperation](Remove-MgDataPolicyOperation.md)
 Delete entity from dataPolicyOperations
 
@@ -228,12 +214,6 @@ Returns a collection of the specified Conditional Access (CA) policies.
 
 ### [Remove-MgIdentityProvider](Remove-MgIdentityProvider.md)
 Delete entity from identityProviders
-
-### [Remove-MgInformationProtectionBitlocker](Remove-MgInformationProtectionBitlocker.md)
-Delete navigation property bitlocker for informationProtection
-
-### [Remove-MgInformationProtectionBitlockerRecoveryKey](Remove-MgInformationProtectionBitlockerRecoveryKey.md)
-The recovery keys associated with the bitlocker entity.
 
 ### [Remove-MgInformationProtectionThreatAssessmentRequest](Remove-MgInformationProtectionThreatAssessmentRequest.md)
 Delete navigation property threatAssessmentRequests for informationProtection
@@ -266,10 +246,6 @@ The claim-mapping policies for WS-Fed, SAML, OAuth 2.0, and OpenID Connect proto
 
 ### [Remove-MgPolicyFeatureRolloutPolicy](Remove-MgPolicyFeatureRolloutPolicy.md)
 The feature rollout policy associated with a directory object.
-
-### [Remove-MgPolicyFeatureRolloutPolicyApplyTo](Remove-MgPolicyFeatureRolloutPolicyApplyTo.md)
-Nullable.
-Specifies a list of directoryObjects that feature is enabled for.
 
 ### [Remove-MgPolicyHomeRealmDiscoveryPolicy](Remove-MgPolicyHomeRealmDiscoveryPolicy.md)
 The policy to control Azure AD authentication behavior for federated users.
@@ -307,9 +283,6 @@ The details of the Microsoft Authenticator app registered to a user for authenti
 The registered device on which Microsoft Authenticator resides.
 This property is null if the device is not registered for passwordless Phone Sign-In.
 
-### [Remove-MgUserAuthenticationWindowHello](Remove-MgUserAuthenticationWindowHello.md)
-Represents the Windows Hello for Business authentication method registered to a user for authentication.
-
 ### [Remove-MgUserAuthenticationWindowHelloForBusinessMethodDevice](Remove-MgUserAuthenticationWindowHelloForBusinessMethodDevice.md)
 The registered device on which this Windows Hello for Business key resides.
 Supports $expand.
@@ -337,9 +310,6 @@ Update informationProtection
 
 ### [Update-MgInformationProtectionBitlocker](Update-MgInformationProtectionBitlocker.md)
 Update the navigation property bitlocker in informationProtection
-
-### [Update-MgInformationProtectionBitlockerRecoveryKey](Update-MgInformationProtectionBitlockerRecoveryKey.md)
-The recovery keys associated with the bitlocker entity.
 
 ### [Update-MgInformationProtectionThreatAssessmentRequest](Update-MgInformationProtectionThreatAssessmentRequest.md)
 Update the navigation property threatAssessmentRequests in informationProtection
@@ -372,10 +342,6 @@ The claim-mapping policies for WS-Fed, SAML, OAuth 2.0, and OpenID Connect proto
 
 ### [Update-MgPolicyFeatureRolloutPolicy](Update-MgPolicyFeatureRolloutPolicy.md)
 The feature rollout policy associated with a directory object.
-
-### [Update-MgPolicyFeatureRolloutPolicyApplyTo](Update-MgPolicyFeatureRolloutPolicyApplyTo.md)
-Nullable.
-Specifies a list of directoryObjects that feature is enabled for.
 
 ### [Update-MgPolicyHomeRealmDiscoveryPolicy](Update-MgPolicyHomeRealmDiscoveryPolicy.md)
 The policy to control Azure AD authentication behavior for federated users.
@@ -412,9 +378,6 @@ The details of the Microsoft Authenticator app registered to a user for authenti
 ### [Update-MgUserAuthenticationMicrosoftAuthenticatorMethodDevice](Update-MgUserAuthenticationMicrosoftAuthenticatorMethodDevice.md)
 The registered device on which Microsoft Authenticator resides.
 This property is null if the device is not registered for passwordless Phone Sign-In.
-
-### [Update-MgUserAuthenticationWindowHello](Update-MgUserAuthenticationWindowHello.md)
-Represents the Windows Hello for Business authentication method registered to a user for authentication.
 
 ### [Update-MgUserAuthenticationWindowHelloForBusinessMethodDevice](Update-MgUserAuthenticationWindowHelloForBusinessMethodDevice.md)
 The registered device on which this Windows Hello for Business key resides.
