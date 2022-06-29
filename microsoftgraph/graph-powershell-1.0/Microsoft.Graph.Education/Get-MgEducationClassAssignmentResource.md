@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationclassassignmentresource
 schema: 2.0.0
@@ -14,11 +14,11 @@ Nullable.
 
 ## SYNTAX
 
-### List1 (Default)
+### List (Default)
 ```
 Get-MgEducationClassAssignmentResource -EducationAssignmentId <String> -EducationClassId <String>
- [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
@@ -46,8 +46,8 @@ Nullable.
 List all pages.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: List1
+Type: SwitchParameter
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -62,8 +62,8 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: System.String
-Parameter Sets: List1
+Type: String
+Parameter Sets: List
 Aliases: CV
 
 Required: False
@@ -77,8 +77,8 @@ Accept wildcard characters: False
 key: id of educationAssignment
 
 ```yaml
-Type: System.String
-Parameter Sets: Get, List1
+Type: String
+Parameter Sets: List, Get
 Aliases:
 
 Required: True
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 key: id of educationAssignmentResource
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -107,8 +107,8 @@ Accept wildcard characters: False
 key: id of educationClass
 
 ```yaml
-Type: System.String
-Parameter Sets: Get, List1
+Type: String
+Parameter Sets: List, Get
 Aliases:
 
 Required: True
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -137,8 +137,8 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: System.String
-Parameter Sets: List1
+Type: String
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -153,7 +153,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IEducationIdentity
+Type: IEducationIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -168,8 +168,8 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: System.Int32
-Parameter Sets: List1
+Type: Int32
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -198,23 +198,8 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: System.String
-Parameter Sets: List1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: System.Int32
-Parameter Sets: List1
+Type: String
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -228,8 +213,8 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: System.String[]
-Parameter Sets: List1
+Type: String[]
+Parameter Sets: List
 Aliases: OrderBy
 
 Required: False
@@ -243,9 +228,24 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: System.Int32
-Parameter Sets: List1
+Type: Int32
+Parameter Sets: List
 Aliases: Limit
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List
+Aliases:
 
 Required: False
 Position: Named
@@ -260,11 +260,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationAssignmentResource
-
 ## NOTES
 
 ALIASES
@@ -289,4 +287,3 @@ INPUTOBJECT <IEducationIdentity>: Identity Parameter
   - `[EducationUserId <String>]`: key: id of educationUser
 
 ## RELATED LINKS
-
