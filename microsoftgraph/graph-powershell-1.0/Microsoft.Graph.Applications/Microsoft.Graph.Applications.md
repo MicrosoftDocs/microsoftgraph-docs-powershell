@@ -63,9 +63,6 @@ Nullable.
 ### [Get-MgApplicationHomeRealmDiscoveryPolicy](Get-MgApplicationHomeRealmDiscoveryPolicy.md)
 Get homeRealmDiscoveryPolicies from applications
 
-### [Get-MgApplicationHomeRealmDiscoveryPolicyByRef](Get-MgApplicationHomeRealmDiscoveryPolicyByRef.md)
-Get ref of homeRealmDiscoveryPolicies from applications
-
 ### [Get-MgApplicationLogo](Get-MgApplicationLogo.md)
 The main logo for the application.
 Not nullable.
@@ -136,11 +133,6 @@ Directory objects created by this service principal.
 Read-only.
 Nullable.
 
-### [Get-MgServicePrincipalCreatedObjectByRef](Get-MgServicePrincipalCreatedObjectByRef.md)
-Directory objects created by this service principal.
-Read-only.
-Nullable.
-
 ### [Get-MgServicePrincipalDelegatedPermissionClassification](Get-MgServicePrincipalDelegatedPermissionClassification.md)
 The permission classifications for delegated permissions exposed by the app that this service principal represents.
 Supports $expand.
@@ -177,18 +169,7 @@ Delegated permission grants authorizing this service principal to access an API 
 Read-only.
 Nullable.
 
-### [Get-MgServicePrincipalOauth2PermissionGrantByRef](Get-MgServicePrincipalOauth2PermissionGrantByRef.md)
-Delegated permission grants authorizing this service principal to access an API on behalf of a signed-in user.
-Read-only.
-Nullable.
-
 ### [Get-MgServicePrincipalOwnedObject](Get-MgServicePrincipalOwnedObject.md)
-Directory objects that are owned by this service principal.
-Read-only.
-Nullable.
-Supports $expand.
-
-### [Get-MgServicePrincipalOwnedObjectByRef](Get-MgServicePrincipalOwnedObjectByRef.md)
 Directory objects that are owned by this service principal.
 Read-only.
 Nullable.
@@ -211,19 +192,7 @@ Supports $expand.
 ### [Get-MgServicePrincipalTokenIssuancePolicy](Get-MgServicePrincipalTokenIssuancePolicy.md)
 The tokenIssuancePolicies assigned to this service principal.
 
-### [Get-MgServicePrincipalTokenIssuancePolicyByRef](Get-MgServicePrincipalTokenIssuancePolicyByRef.md)
-The tokenIssuancePolicies assigned to this service principal.
-
 ### [Get-MgServicePrincipalTokenLifetimePolicy](Get-MgServicePrincipalTokenLifetimePolicy.md)
-The tokenLifetimePolicies assigned to this service principal.
-
-### [Get-MgServicePrincipalTokenLifetimePolicyByRef](Get-MgServicePrincipalTokenLifetimePolicyByRef.md)
-The tokenLifetimePolicies assigned to this service principal.
-
-### [Get-MgServicePrincipalTokenLifetimePolicyByRef](Get-MgServicePrincipalTokenLifetimePolicyByRef.md)
-The tokenLifetimePolicies assigned to this service principal.
-
-### [Get-MgServicePrincipalTokenLifetimePolicyByRef](Get-MgServicePrincipalTokenLifetimePolicyByRef.md)
 The tokenLifetimePolicies assigned to this service principal.
 
 ### [Get-MgUserAppRoleAssignment](Get-MgUserAppRoleAssignment.md)
@@ -239,9 +208,6 @@ Add new entity to applications
 ### [New-MgApplicationExtensionProperty](New-MgApplicationExtensionProperty.md)
 Read-only.
 Nullable.
-
-### [New-MgApplicationHomeRealmDiscoveryPolicyByRef](New-MgApplicationHomeRealmDiscoveryPolicyByRef.md)
-Create new navigation property ref to homeRealmDiscoveryPolicies for applications
 
 ### [New-MgApplicationOwnerByRef](New-MgApplicationOwnerByRef.md)
 Directory objects that are owners of the application.
@@ -278,11 +244,6 @@ Supports $expand.
 The claimsMappingPolicies assigned to this service principal.
 Supports $expand.
 
-### [New-MgServicePrincipalCreatedObjectByRef](New-MgServicePrincipalCreatedObjectByRef.md)
-Directory objects created by this service principal.
-Read-only.
-Nullable.
-
 ### [New-MgServicePrincipalDelegatedPermissionClassification](New-MgServicePrincipalDelegatedPermissionClassification.md)
 The permission classifications for delegated permissions exposed by the app that this service principal represents.
 Supports $expand.
@@ -299,32 +260,12 @@ Supports $expand.
 The homeRealmDiscoveryPolicies assigned to this service principal.
 Supports $expand.
 
-### [New-MgServicePrincipalOauth2PermissionGrantByRef](New-MgServicePrincipalOauth2PermissionGrantByRef.md)
-Delegated permission grants authorizing this service principal to access an API on behalf of a signed-in user.
-Read-only.
-Nullable.
-
-### [New-MgServicePrincipalOwnedObjectByRef](New-MgServicePrincipalOwnedObjectByRef.md)
-Directory objects that are owned by this service principal.
-Read-only.
-Nullable.
-Supports $expand.
-
 ### [New-MgServicePrincipalOwnerByRef](New-MgServicePrincipalOwnerByRef.md)
 Directory objects that are owners of this servicePrincipal.
 The owners are a set of non-admin users or servicePrincipals who are allowed to modify this object.
 Read-only.
 Nullable.
 Supports $expand.
-
-### [New-MgServicePrincipalTokenIssuancePolicyByRef](New-MgServicePrincipalTokenIssuancePolicyByRef.md)
-The tokenIssuancePolicies assigned to this service principal.
-
-### [New-MgServicePrincipalTokenLifetimePolicyByRef](New-MgServicePrincipalTokenLifetimePolicyByRef.md)
-The tokenLifetimePolicies assigned to this service principal.
-
-### [New-MgServicePrincipalTokenLifetimePolicyByRef](New-MgServicePrincipalTokenLifetimePolicyByRef.md)
-The tokenLifetimePolicies assigned to this service principal.
 
 ### [New-MgUserAppRoleAssignment](New-MgUserAppRoleAssignment.md)
 Represents the app roles a user has been granted for an application.
@@ -381,15 +322,6 @@ Invoke action removePassword
 ### [Remove-MgUserAppRoleAssignment](Remove-MgUserAppRoleAssignment.md)
 Represents the app roles a user has been granted for an application.
 Supports $expand.
-
-### [Restore-MgApplication](Restore-MgApplication.md)
-Invoke action restore
-
-### [Restore-MgServicePrincipal](Restore-MgServicePrincipal.md)
-Invoke action restore
-
-### [Restore-MgServicePrincipal](Restore-MgServicePrincipal.md)
-Invoke action restore
 
 ### [Set-MgApplicationLogo](Set-MgApplicationLogo.md)
 The main logo for the application.
