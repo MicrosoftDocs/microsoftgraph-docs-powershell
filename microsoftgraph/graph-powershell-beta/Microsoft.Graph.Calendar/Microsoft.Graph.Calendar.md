@@ -47,11 +47,6 @@ The calendar that contains the event.
 Navigation property.
 Read-only.
 
-### [Get-MgGroupEventCalendarByRef](Get-MgGroupEventCalendarByRef.md)
-The calendar that contains the event.
-Navigation property.
-Read-only.
-
 ### [Get-MgGroupEventExceptionOccurrence](Get-MgGroupEventExceptionOccurrence.md)
 Get exceptionOccurrences from groups
 
@@ -135,11 +130,6 @@ Read-only.
 Nullable.
 
 ### [Get-MgUserEventCalendar](Get-MgUserEventCalendar.md)
-The calendar that contains the event.
-Navigation property.
-Read-only.
-
-### [Get-MgUserEventCalendarByRef](Get-MgUserEventCalendarByRef.md)
 The calendar that contains the event.
 Navigation property.
 Read-only.
@@ -309,11 +299,6 @@ Navigation property.
 Read-only.
 Nullable.
 
-### [Remove-MgGroupEventCalendarByRef](Remove-MgGroupEventCalendarByRef.md)
-The calendar that contains the event.
-Navigation property.
-Read-only.
-
 ### [Remove-MgGroupEventExceptionOccurrence](Remove-MgGroupEventExceptionOccurrence.md)
 Delete navigation property exceptionOccurrences for groups
 
@@ -376,11 +361,6 @@ Navigation property.
 Read-only.
 Nullable.
 
-### [Remove-MgUserEventCalendarByRef](Remove-MgUserEventCalendarByRef.md)
-The calendar that contains the event.
-Navigation property.
-Read-only.
-
 ### [Remove-MgUserEventExceptionOccurrence](Remove-MgUserEventExceptionOccurrence.md)
 Delete navigation property exceptionOccurrences for users
 
@@ -404,16 +384,6 @@ Nullable.
 The collection of single-value extended properties defined for the event.
 Read-only.
 Nullable.
-
-### [Set-MgGroupEventCalendarByRef](Set-MgGroupEventCalendarByRef.md)
-The calendar that contains the event.
-Navigation property.
-Read-only.
-
-### [Set-MgUserEventCalendarByRef](Set-MgUserEventCalendarByRef.md)
-The calendar that contains the event.
-Navigation property.
-Read-only.
 
 ### [Update-MgGroupCalendarMultiValueExtendedProperty](Update-MgGroupCalendarMultiValueExtendedProperty.md)
 The collection of multi-value extended properties defined for the calendar.
