@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/invoke-mgschedulerolemanagementdirectory
 schema: 2.0.0
@@ -12,16 +12,9 @@ Invoke function roleScheduleInstances
 
 ## SYNTAX
 
-### Schedule (Default)
 ```
-Invoke-MgScheduleRoleManagementDirectory -AppScopeId <String> -DirectoryScopeId <String> -PrincipalId <String>
- -RoleDefinitionId <String> [<CommonParameters>]
-```
-
-### ScheduleViaIdentity
-```
-Invoke-MgScheduleRoleManagementDirectory -InputObject <IDeviceManagementEnrolmentIdentity>
- [<CommonParameters>]
+Invoke-MgScheduleRoleManagementDirectory [-AppScopeId <String>] [-DirectoryScopeId <String>]
+ [-PrincipalId <String>] [-RoleDefinitionId <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -35,11 +28,11 @@ Invoke function roleScheduleInstances
 Usage: appScopeId={appScopeId}
 
 ```yaml
-Type: System.String
-Parameter Sets: Schedule
+Type: String
+Parameter Sets: (All)
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -50,30 +43,14 @@ Accept wildcard characters: False
 Usage: directoryScopeId={directoryScopeId}
 
 ```yaml
-Type: System.String
-Parameter Sets: Schedule
+Type: String
+Parameter Sets: (All)
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementEnrolmentIdentity
-Parameter Sets: ScheduleViaIdentity
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -81,11 +58,11 @@ Accept wildcard characters: False
 Usage: principalId={principalId}
 
 ```yaml
-Type: System.String
-Parameter Sets: Schedule
+Type: String
+Parameter Sets: (All)
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -96,11 +73,11 @@ Accept wildcard characters: False
 Usage: roleDefinitionId={roleDefinitionId}
 
 ```yaml
-Type: System.String
-Parameter Sets: Schedule
+Type: String
+Parameter Sets: (All)
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -112,12 +89,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementEnrolmentIdentity
-
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleScheduleInstanceBase
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleScheduleInstanceBase1
 ## NOTES
 
 ALIASES
@@ -168,4 +142,3 @@ INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[WindowsFeatureUpdateProfileId <String>]`: key: id of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
-

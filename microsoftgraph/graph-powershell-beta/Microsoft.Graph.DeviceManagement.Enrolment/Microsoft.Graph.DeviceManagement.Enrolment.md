@@ -11,9 +11,6 @@ Locale: en-US
 Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.DeviceManagement.Enrolment Cmdlets
-### [Get-MgDeviceManagementAndroid](Get-MgDeviceManagementAndroid.md)
-Android for Work enrollment profile entities.
-
 ### [Get-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfile](Get-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfile.md)
 Android device owner enrollment profile entities.
 
@@ -39,13 +36,7 @@ This collections of multiple DEP tokens per-tenant.
 ### [Get-MgDeviceManagementDepOnboardingSettingDefaultIoEnrollmentProfile](Get-MgDeviceManagementDepOnboardingSettingDefaultIoEnrollmentProfile.md)
 Default iOS Enrollment Profile
 
-### [Get-MgDeviceManagementDepOnboardingSettingDefaultIoEnrollmentProfileByRef](Get-MgDeviceManagementDepOnboardingSettingDefaultIoEnrollmentProfileByRef.md)
-Default iOS Enrollment Profile
-
 ### [Get-MgDeviceManagementDepOnboardingSettingDefaultMacOSEnrollmentProfile](Get-MgDeviceManagementDepOnboardingSettingDefaultMacOSEnrollmentProfile.md)
-Default MacOs Enrollment Profile
-
-### [Get-MgDeviceManagementDepOnboardingSettingDefaultMacOSEnrollmentProfileByRef](Get-MgDeviceManagementDepOnboardingSettingDefaultMacOSEnrollmentProfileByRef.md)
 Default MacOs Enrollment Profile
 
 ### [Get-MgDeviceManagementDepOnboardingSettingEnrollmentProfile](Get-MgDeviceManagementDepOnboardingSettingEnrollmentProfile.md)
@@ -78,13 +69,7 @@ The list of assigned devices for the profile.
 ### [Get-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDeviceDeploymentProfile](Get-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDeviceDeploymentProfile.md)
 Deployment profile currently assigned to the Windows autopilot device.
 
-### [Get-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDeviceDeploymentProfileByRef](Get-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDeviceDeploymentProfileByRef.md)
-Deployment profile currently assigned to the Windows autopilot device.
-
 ### [Get-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDeviceIntendedDeploymentProfile](Get-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDeviceIntendedDeploymentProfile.md)
-Deployment profile intended to be assigned to the Windows autopilot device.
-
-### [Get-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDeviceIntendedDeploymentProfileByRef](Get-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDeviceIntendedDeploymentProfileByRef.md)
 Deployment profile intended to be assigned to the Windows autopilot device.
 
 ### [Get-MgDeviceManagementWindowAutopilotDeploymentProfileAssignment](Get-MgDeviceManagementWindowAutopilotDeploymentProfileAssignment.md)
@@ -96,13 +81,7 @@ The Windows autopilot device identities contained collection.
 ### [Get-MgDeviceManagementWindowAutopilotDeviceIdentityDeploymentProfile](Get-MgDeviceManagementWindowAutopilotDeviceIdentityDeploymentProfile.md)
 Deployment profile currently assigned to the Windows autopilot device.
 
-### [Get-MgDeviceManagementWindowAutopilotDeviceIdentityDeploymentProfileByRef](Get-MgDeviceManagementWindowAutopilotDeviceIdentityDeploymentProfileByRef.md)
-Deployment profile currently assigned to the Windows autopilot device.
-
 ### [Get-MgDeviceManagementWindowAutopilotDeviceIdentityIntendedDeploymentProfile](Get-MgDeviceManagementWindowAutopilotDeviceIdentityIntendedDeploymentProfile.md)
-Deployment profile intended to be assigned to the Windows autopilot device.
-
-### [Get-MgDeviceManagementWindowAutopilotDeviceIdentityIntendedDeploymentProfileByRef](Get-MgDeviceManagementWindowAutopilotDeviceIdentityIntendedDeploymentProfileByRef.md)
 Deployment profile intended to be assigned to the Windows autopilot device.
 
 ### [Get-MgDeviceManagementWindowAutopilotSetting](Get-MgDeviceManagementWindowAutopilotSetting.md)
@@ -143,30 +122,13 @@ Provided so that callers can get the directory objects using $expand at the same
 Read-only.
 Supports $expand.
 
-### [Get-MgRoleManagementCloudPcRoleAssignmentDirectoryScopeByRef](Get-MgRoleManagementCloudPcRoleAssignmentDirectoryScopeByRef.md)
-Read-only collection referencing the directory objects that are scope of the assignment.
-Provided so that callers can get the directory objects using $expand at the same time as getting the role assignment.
-Read-only.
-Supports $expand.
-
 ### [Get-MgRoleManagementCloudPcRoleAssignmentPrincipal](Get-MgRoleManagementCloudPcRoleAssignmentPrincipal.md)
 Read-only collection referencing the assigned principals.
 Provided so that callers can get the principals using $expand at the same time as getting the role assignment.
 Read-only.
 Supports $expand.
 
-### [Get-MgRoleManagementCloudPcRoleAssignmentPrincipalByRef](Get-MgRoleManagementCloudPcRoleAssignmentPrincipalByRef.md)
-Read-only collection referencing the assigned principals.
-Provided so that callers can get the principals using $expand at the same time as getting the role assignment.
-Read-only.
-Supports $expand.
-
 ### [Get-MgRoleManagementCloudPcRoleAssignmentRoleDefinition](Get-MgRoleManagementCloudPcRoleAssignmentRoleDefinition.md)
-Specifies the roleDefinition that the assignment is for.
-Provided so that callers can get the role definition using $expand at the same time as getting the role assignment.
-Supports $filter (eq operator on id, isBuiltIn, and displayName, and startsWith operator on displayName)  and $expand.
-
-### [Get-MgRoleManagementCloudPcRoleAssignmentRoleDefinitionByRef](Get-MgRoleManagementCloudPcRoleAssignmentRoleDefinitionByRef.md)
 Specifies the roleDefinition that the assignment is for.
 Provided so that callers can get the role definition using $expand at the same time as getting the role assignment.
 Supports $filter (eq operator on id, isBuiltIn, and displayName, and startsWith operator on displayName)  and $expand.
@@ -205,30 +167,13 @@ Provided so that callers can get the directory objects using $expand at the same
 Read-only.
 Supports $expand.
 
-### [Get-MgRoleManagementDeviceManagementRoleAssignmentDirectoryScopeByRef](Get-MgRoleManagementDeviceManagementRoleAssignmentDirectoryScopeByRef.md)
-Read-only collection referencing the directory objects that are scope of the assignment.
-Provided so that callers can get the directory objects using $expand at the same time as getting the role assignment.
-Read-only.
-Supports $expand.
-
 ### [Get-MgRoleManagementDeviceManagementRoleAssignmentPrincipal](Get-MgRoleManagementDeviceManagementRoleAssignmentPrincipal.md)
 Read-only collection referencing the assigned principals.
 Provided so that callers can get the principals using $expand at the same time as getting the role assignment.
 Read-only.
 Supports $expand.
 
-### [Get-MgRoleManagementDeviceManagementRoleAssignmentPrincipalByRef](Get-MgRoleManagementDeviceManagementRoleAssignmentPrincipalByRef.md)
-Read-only collection referencing the assigned principals.
-Provided so that callers can get the principals using $expand at the same time as getting the role assignment.
-Read-only.
-Supports $expand.
-
 ### [Get-MgRoleManagementDeviceManagementRoleAssignmentRoleDefinition](Get-MgRoleManagementDeviceManagementRoleAssignmentRoleDefinition.md)
-Specifies the roleDefinition that the assignment is for.
-Provided so that callers can get the role definition using $expand at the same time as getting the role assignment.
-Supports $filter (eq operator on id, isBuiltIn, and displayName, and startsWith operator on displayName)  and $expand.
-
-### [Get-MgRoleManagementDeviceManagementRoleAssignmentRoleDefinitionByRef](Get-MgRoleManagementDeviceManagementRoleAssignmentRoleDefinitionByRef.md)
 Specifies the roleDefinition that the assignment is for.
 Provided so that callers can get the role definition using $expand at the same time as getting the role assignment.
 Supports $filter (eq operator on id, isBuiltIn, and displayName, and startsWith operator on displayName)  and $expand.
@@ -273,27 +218,12 @@ The directory object that is the scope of the assignment.
 Read-only.
 Supports $expand.
 
-### [Get-MgRoleManagementDirectoryRoleAssignmentDirectoryScopeByRef](Get-MgRoleManagementDirectoryRoleAssignmentDirectoryScopeByRef.md)
-The directory object that is the scope of the assignment.
-Read-only.
-Supports $expand.
-
 ### [Get-MgRoleManagementDirectoryRoleAssignmentPrincipal](Get-MgRoleManagementDirectoryRoleAssignmentPrincipal.md)
 Referencing the assigned principal.
 Read-only.
 Supports $expand.
 
-### [Get-MgRoleManagementDirectoryRoleAssignmentPrincipalByRef](Get-MgRoleManagementDirectoryRoleAssignmentPrincipalByRef.md)
-Referencing the assigned principal.
-Read-only.
-Supports $expand.
-
 ### [Get-MgRoleManagementDirectoryRoleAssignmentRoleDefinition](Get-MgRoleManagementDirectoryRoleAssignmentRoleDefinition.md)
-The roleDefinition the assignment is for.
-Supports $expand.
-roleDefinition.Id will be auto expanded.
-
-### [Get-MgRoleManagementDirectoryRoleAssignmentRoleDefinitionByRef](Get-MgRoleManagementDirectoryRoleAssignmentRoleDefinitionByRef.md)
 The roleDefinition the assignment is for.
 Supports $expand.
 roleDefinition.Id will be auto expanded.
@@ -304,16 +234,10 @@ Get roleAssignmentSchedules from roleManagement
 ### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleActivatedUsing](Get-MgRoleManagementDirectoryRoleAssignmentScheduleActivatedUsing.md)
 If the roleAssignmentSchedule is activated by a roleEligibilitySchedule, this is the link to that schedule.
 
-### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleActivatedUsingByRef](Get-MgRoleManagementDirectoryRoleAssignmentScheduleActivatedUsingByRef.md)
-If the roleAssignmentSchedule is activated by a roleEligibilitySchedule, this is the link to that schedule.
-
 ### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstance](Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstance.md)
 Get roleAssignmentScheduleInstances from roleManagement
 
 ### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceActivatedUsing](Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceActivatedUsing.md)
-If the roleAssignmentScheduleInstance is activated by a roleEligibilityScheduleRequest, this is the link to the related schedule instance.
-
-### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceActivatedUsingByRef](Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceActivatedUsingByRef.md)
 If the roleAssignmentScheduleInstance is activated by a roleEligibilityScheduleRequest, this is the link to the related schedule instance.
 
 ### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequest](Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequest.md)
@@ -322,23 +246,11 @@ Get roleAssignmentScheduleRequests from roleManagement
 ### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestActivatedUsing](Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestActivatedUsing.md)
 If the request is from an eligible administrator to activate a role, this parameter will show the related eligible assignment for that activation.
 
-### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestActivatedUsingByRef](Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestActivatedUsingByRef.md)
-If the request is from an eligible administrator to activate a role, this parameter will show the related eligible assignment for that activation.
-
 ### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestAppScope](Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestAppScope.md)
 Read-only property with details of the app specific scope when the assignment scope is app specific.
 Containment entity.
 
-### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestAppScopeByRef](Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestAppScopeByRef.md)
-Read-only property with details of the app specific scope when the assignment scope is app specific.
-Containment entity.
-
 ### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestDirectoryScope](Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestDirectoryScope.md)
-Property referencing the directory object that is the scope of the assignment.
-Provided so that callers can get the directory object using $expand at the same time as getting the role assignment.
-Read-only.
-
-### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestDirectoryScopeByRef](Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestDirectoryScopeByRef.md)
 Property referencing the directory object that is the scope of the assignment.
 Provided so that callers can get the directory object using $expand at the same time as getting the role assignment.
 Read-only.
@@ -348,25 +260,12 @@ Property referencing the principal that is getting a role assignment through the
 Provided so that callers can get the principal using $expand at the same time as getting the role assignment.
 Read-only.
 
-### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestPrincipalByRef](Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestPrincipalByRef.md)
-Property referencing the principal that is getting a role assignment through the request.
-Provided so that callers can get the principal using $expand at the same time as getting the role assignment.
-Read-only.
-
 ### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestRoleDefinition](Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestRoleDefinition.md)
 Property indicating the roleDefinition the assignment is for.
 Provided so that callers can get the role definition using $expand at the same time as getting the role assignment.
 roleDefinition.Id will be auto expanded.
 
-### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestRoleDefinitionByRef](Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestRoleDefinitionByRef.md)
-Property indicating the roleDefinition the assignment is for.
-Provided so that callers can get the role definition using $expand at the same time as getting the role assignment.
-roleDefinition.Id will be auto expanded.
-
 ### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestTargetSchedule](Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestTargetSchedule.md)
-Property indicating the schedule for an eligible role assignment.
-
-### [Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestTargetScheduleByRef](Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequestTargetScheduleByRef.md)
 Property indicating the schedule for an eligible role assignment.
 
 ### [Get-MgRoleManagementDirectoryRoleDefinition](Get-MgRoleManagementDirectoryRoleDefinition.md)
@@ -390,16 +289,7 @@ Get roleEligibilityScheduleRequests from roleManagement
 Read-only property with details of the app-specific scope when the assignment scope is app-specific.
 Containment entity.
 
-### [Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestAppScopeByRef](Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestAppScopeByRef.md)
-Read-only property with details of the app-specific scope when the assignment scope is app-specific.
-Containment entity.
-
 ### [Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestDirectoryScope](Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestDirectoryScope.md)
-Property referencing the directory object that is the scope of the assignment.
-Provided so that callers can get the directory object using $expand at the same time as getting the role assignment.
-Read-only.
-
-### [Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestDirectoryScopeByRef](Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestDirectoryScopeByRef.md)
 Property referencing the directory object that is the scope of the assignment.
 Provided so that callers can get the directory object using $expand at the same time as getting the role assignment.
 Read-only.
@@ -409,25 +299,12 @@ Property referencing the principal that is getting a role assignment through the
 Provided so that callers can get the principal using $expand at the same time as getting the role assignment.
 Read-only.
 
-### [Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestPrincipalByRef](Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestPrincipalByRef.md)
-Property referencing the principal that is getting a role assignment through the request.
-Provided so that callers can get the principal using $expand at the same time as getting the role assignment.
-Read-only.
-
 ### [Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestRoleDefinition](Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestRoleDefinition.md)
 Property indicating the roleDefinition the assignment is for.
 Provided so that callers can get the role definition using $expand at the same time as getting the role assignment.
 roleDefinition.Id will be auto expanded.
 
-### [Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestRoleDefinitionByRef](Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestRoleDefinitionByRef.md)
-Property indicating the roleDefinition the assignment is for.
-Provided so that callers can get the role definition using $expand at the same time as getting the role assignment.
-roleDefinition.Id will be auto expanded.
-
 ### [Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestTargetSchedule](Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestTargetSchedule.md)
-Property indicating the schedule for an eligible role assignment.
-
-### [Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestTargetScheduleByRef](Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestTargetScheduleByRef.md)
 Property indicating the schedule for an eligible role assignment.
 
 ### [Get-MgRoleManagementDirectoryTransitiveRoleAssignment](Get-MgRoleManagementDirectoryTransitiveRoleAssignment.md)
@@ -443,27 +320,12 @@ The directory object that is the scope of the assignment.
 Read-only.
 Supports $expand.
 
-### [Get-MgRoleManagementDirectoryTransitiveRoleAssignmentDirectoryScopeByRef](Get-MgRoleManagementDirectoryTransitiveRoleAssignmentDirectoryScopeByRef.md)
-The directory object that is the scope of the assignment.
-Read-only.
-Supports $expand.
-
 ### [Get-MgRoleManagementDirectoryTransitiveRoleAssignmentPrincipal](Get-MgRoleManagementDirectoryTransitiveRoleAssignmentPrincipal.md)
 Referencing the assigned principal.
 Read-only.
 Supports $expand.
 
-### [Get-MgRoleManagementDirectoryTransitiveRoleAssignmentPrincipalByRef](Get-MgRoleManagementDirectoryTransitiveRoleAssignmentPrincipalByRef.md)
-Referencing the assigned principal.
-Read-only.
-Supports $expand.
-
 ### [Get-MgRoleManagementDirectoryTransitiveRoleAssignmentRoleDefinition](Get-MgRoleManagementDirectoryTransitiveRoleAssignmentRoleDefinition.md)
-The roleDefinition the assignment is for.
-Supports $expand.
-roleDefinition.Id will be auto expanded.
-
-### [Get-MgRoleManagementDirectoryTransitiveRoleAssignmentRoleDefinitionByRef](Get-MgRoleManagementDirectoryTransitiveRoleAssignmentRoleDefinitionByRef.md)
 The roleDefinition the assignment is for.
 Supports $expand.
 roleDefinition.Id will be auto expanded.
@@ -499,27 +361,12 @@ The directory object that is the scope of the assignment.
 Read-only.
 Supports $expand.
 
-### [Get-MgRoleManagementEntitlementManagementRoleAssignmentDirectoryScopeByRef](Get-MgRoleManagementEntitlementManagementRoleAssignmentDirectoryScopeByRef.md)
-The directory object that is the scope of the assignment.
-Read-only.
-Supports $expand.
-
 ### [Get-MgRoleManagementEntitlementManagementRoleAssignmentPrincipal](Get-MgRoleManagementEntitlementManagementRoleAssignmentPrincipal.md)
 Referencing the assigned principal.
 Read-only.
 Supports $expand.
 
-### [Get-MgRoleManagementEntitlementManagementRoleAssignmentPrincipalByRef](Get-MgRoleManagementEntitlementManagementRoleAssignmentPrincipalByRef.md)
-Referencing the assigned principal.
-Read-only.
-Supports $expand.
-
 ### [Get-MgRoleManagementEntitlementManagementRoleAssignmentRoleDefinition](Get-MgRoleManagementEntitlementManagementRoleAssignmentRoleDefinition.md)
-The roleDefinition the assignment is for.
-Supports $expand.
-roleDefinition.Id will be auto expanded.
-
-### [Get-MgRoleManagementEntitlementManagementRoleAssignmentRoleDefinitionByRef](Get-MgRoleManagementEntitlementManagementRoleAssignmentRoleDefinitionByRef.md)
 The roleDefinition the assignment is for.
 Supports $expand.
 roleDefinition.Id will be auto expanded.
@@ -530,16 +377,10 @@ Get roleAssignmentSchedules from roleManagement
 ### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleActivatedUsing](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleActivatedUsing.md)
 If the roleAssignmentSchedule is activated by a roleEligibilitySchedule, this is the link to that schedule.
 
-### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleActivatedUsingByRef](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleActivatedUsingByRef.md)
-If the roleAssignmentSchedule is activated by a roleEligibilitySchedule, this is the link to that schedule.
-
 ### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance.md)
 Get roleAssignmentScheduleInstances from roleManagement
 
 ### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceActivatedUsing](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceActivatedUsing.md)
-If the roleAssignmentScheduleInstance is activated by a roleEligibilityScheduleRequest, this is the link to the related schedule instance.
-
-### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceActivatedUsingByRef](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceActivatedUsingByRef.md)
 If the roleAssignmentScheduleInstance is activated by a roleEligibilityScheduleRequest, this is the link to the related schedule instance.
 
 ### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest.md)
@@ -548,23 +389,11 @@ Get roleAssignmentScheduleRequests from roleManagement
 ### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestActivatedUsing](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestActivatedUsing.md)
 If the request is from an eligible administrator to activate a role, this parameter will show the related eligible assignment for that activation.
 
-### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestActivatedUsingByRef](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestActivatedUsingByRef.md)
-If the request is from an eligible administrator to activate a role, this parameter will show the related eligible assignment for that activation.
-
 ### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestAppScope](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestAppScope.md)
 Read-only property with details of the app specific scope when the assignment scope is app specific.
 Containment entity.
 
-### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestAppScopeByRef](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestAppScopeByRef.md)
-Read-only property with details of the app specific scope when the assignment scope is app specific.
-Containment entity.
-
 ### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestDirectoryScope](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestDirectoryScope.md)
-Property referencing the directory object that is the scope of the assignment.
-Provided so that callers can get the directory object using $expand at the same time as getting the role assignment.
-Read-only.
-
-### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestDirectoryScopeByRef](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestDirectoryScopeByRef.md)
 Property referencing the directory object that is the scope of the assignment.
 Provided so that callers can get the directory object using $expand at the same time as getting the role assignment.
 Read-only.
@@ -574,25 +403,12 @@ Property referencing the principal that is getting a role assignment through the
 Provided so that callers can get the principal using $expand at the same time as getting the role assignment.
 Read-only.
 
-### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestPrincipalByRef](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestPrincipalByRef.md)
-Property referencing the principal that is getting a role assignment through the request.
-Provided so that callers can get the principal using $expand at the same time as getting the role assignment.
-Read-only.
-
 ### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestRoleDefinition](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestRoleDefinition.md)
 Property indicating the roleDefinition the assignment is for.
 Provided so that callers can get the role definition using $expand at the same time as getting the role assignment.
 roleDefinition.Id will be auto expanded.
 
-### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestRoleDefinitionByRef](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestRoleDefinitionByRef.md)
-Property indicating the roleDefinition the assignment is for.
-Provided so that callers can get the role definition using $expand at the same time as getting the role assignment.
-roleDefinition.Id will be auto expanded.
-
 ### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestTargetSchedule](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestTargetSchedule.md)
-Property indicating the schedule for an eligible role assignment.
-
-### [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestTargetScheduleByRef](Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestTargetScheduleByRef.md)
 Property indicating the schedule for an eligible role assignment.
 
 ### [Get-MgRoleManagementEntitlementManagementRoleDefinition](Get-MgRoleManagementEntitlementManagementRoleDefinition.md)
@@ -616,16 +432,7 @@ Get roleEligibilityScheduleRequests from roleManagement
 Read-only property with details of the app-specific scope when the assignment scope is app-specific.
 Containment entity.
 
-### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestAppScopeByRef](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestAppScopeByRef.md)
-Read-only property with details of the app-specific scope when the assignment scope is app-specific.
-Containment entity.
-
 ### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestDirectoryScope](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestDirectoryScope.md)
-Property referencing the directory object that is the scope of the assignment.
-Provided so that callers can get the directory object using $expand at the same time as getting the role assignment.
-Read-only.
-
-### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestDirectoryScopeByRef](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestDirectoryScopeByRef.md)
 Property referencing the directory object that is the scope of the assignment.
 Provided so that callers can get the directory object using $expand at the same time as getting the role assignment.
 Read-only.
@@ -635,25 +442,12 @@ Property referencing the principal that is getting a role assignment through the
 Provided so that callers can get the principal using $expand at the same time as getting the role assignment.
 Read-only.
 
-### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestPrincipalByRef](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestPrincipalByRef.md)
-Property referencing the principal that is getting a role assignment through the request.
-Provided so that callers can get the principal using $expand at the same time as getting the role assignment.
-Read-only.
-
 ### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestRoleDefinition](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestRoleDefinition.md)
 Property indicating the roleDefinition the assignment is for.
 Provided so that callers can get the role definition using $expand at the same time as getting the role assignment.
 roleDefinition.Id will be auto expanded.
 
-### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestRoleDefinitionByRef](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestRoleDefinitionByRef.md)
-Property indicating the roleDefinition the assignment is for.
-Provided so that callers can get the role definition using $expand at the same time as getting the role assignment.
-roleDefinition.Id will be auto expanded.
-
 ### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestTargetSchedule](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestTargetSchedule.md)
-Property indicating the schedule for an eligible role assignment.
-
-### [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestTargetScheduleByRef](Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestTargetScheduleByRef.md)
 Property indicating the schedule for an eligible role assignment.
 
 ### [Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignment](Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignment.md)
@@ -669,27 +463,12 @@ The directory object that is the scope of the assignment.
 Read-only.
 Supports $expand.
 
-### [Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentDirectoryScopeByRef](Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentDirectoryScopeByRef.md)
-The directory object that is the scope of the assignment.
-Read-only.
-Supports $expand.
-
 ### [Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentPrincipal](Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentPrincipal.md)
 Referencing the assigned principal.
 Read-only.
 Supports $expand.
 
-### [Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentPrincipalByRef](Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentPrincipalByRef.md)
-Referencing the assigned principal.
-Read-only.
-Supports $expand.
-
 ### [Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentRoleDefinition](Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentRoleDefinition.md)
-The roleDefinition the assignment is for.
-Supports $expand.
-roleDefinition.Id will be auto expanded.
-
-### [Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentRoleDefinitionByRef](Get-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentRoleDefinitionByRef.md)
 The roleDefinition the assignment is for.
 Supports $expand.
 roleDefinition.Id will be auto expanded.
@@ -706,48 +485,6 @@ Invoke action importResourceActions
 ### [Import-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction](Import-MgRoleManagementEntitlementManagementResourceNamespaceResourceAction.md)
 Invoke action importResourceActions
 
-### [Invoke-MgFilterRoleManagementDirectoryRoleAssignmentApproval](Invoke-MgFilterRoleManagementDirectoryRoleAssignmentApproval.md)
-Invoke function filterByCurrentUser
-
-### [Invoke-MgFilterRoleManagementDirectoryRoleAssignmentSchedule](Invoke-MgFilterRoleManagementDirectoryRoleAssignmentSchedule.md)
-Invoke function filterByCurrentUser
-
-### [Invoke-MgFilterRoleManagementDirectoryRoleAssignmentScheduleInstance](Invoke-MgFilterRoleManagementDirectoryRoleAssignmentScheduleInstance.md)
-Invoke function filterByCurrentUser
-
-### [Invoke-MgFilterRoleManagementDirectoryRoleAssignmentScheduleRequest](Invoke-MgFilterRoleManagementDirectoryRoleAssignmentScheduleRequest.md)
-Invoke function filterByCurrentUser
-
-### [Invoke-MgFilterRoleManagementDirectoryRoleEligibilitySchedule](Invoke-MgFilterRoleManagementDirectoryRoleEligibilitySchedule.md)
-Invoke function filterByCurrentUser
-
-### [Invoke-MgFilterRoleManagementDirectoryRoleEligibilityScheduleInstance](Invoke-MgFilterRoleManagementDirectoryRoleEligibilityScheduleInstance.md)
-Invoke function filterByCurrentUser
-
-### [Invoke-MgFilterRoleManagementDirectoryRoleEligibilityScheduleRequest](Invoke-MgFilterRoleManagementDirectoryRoleEligibilityScheduleRequest.md)
-Invoke function filterByCurrentUser
-
-### [Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentApproval](Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentApproval.md)
-Invoke function filterByCurrentUser
-
-### [Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentSchedule](Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentSchedule.md)
-Invoke function filterByCurrentUser
-
-### [Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentScheduleInstance](Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentScheduleInstance.md)
-Invoke function filterByCurrentUser
-
-### [Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentScheduleRequest](Invoke-MgFilterRoleManagementEntitlementManagementRoleAssignmentScheduleRequest.md)
-Invoke function filterByCurrentUser
-
-### [Invoke-MgFilterRoleManagementEntitlementManagementRoleEligibilitySchedule](Invoke-MgFilterRoleManagementEntitlementManagementRoleEligibilitySchedule.md)
-Invoke function filterByCurrentUser
-
-### [Invoke-MgFilterRoleManagementEntitlementManagementRoleEligibilityScheduleInstance](Invoke-MgFilterRoleManagementEntitlementManagementRoleEligibilityScheduleInstance.md)
-Invoke function filterByCurrentUser
-
-### [Invoke-MgFilterRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](Invoke-MgFilterRoleManagementEntitlementManagementRoleEligibilityScheduleRequest.md)
-Invoke function filterByCurrentUser
-
 ### [Invoke-MgRoleManagementDirectorySchedule](Invoke-MgRoleManagementDirectorySchedule.md)
 Invoke function roleSchedules
 
@@ -759,9 +496,6 @@ Invoke function roleScheduleInstances
 
 ### [Invoke-MgScheduleRoleManagementEntitlementManagement](Invoke-MgScheduleRoleManagementEntitlementManagement.md)
 Invoke function roleScheduleInstances
-
-### [New-MgDeviceManagementAndroid](New-MgDeviceManagementAndroid.md)
-Android for Work enrollment profile entities.
 
 ### [New-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfile](New-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfile.md)
 Android device owner enrollment profile entities.
@@ -834,18 +568,6 @@ Read-only collection with details of the app specific scopes when the assignment
 Containment entity.
 Read-only.
 
-### [New-MgRoleManagementCloudPcRoleAssignmentDirectoryScopeByRef](New-MgRoleManagementCloudPcRoleAssignmentDirectoryScopeByRef.md)
-Read-only collection referencing the directory objects that are scope of the assignment.
-Provided so that callers can get the directory objects using $expand at the same time as getting the role assignment.
-Read-only.
-Supports $expand.
-
-### [New-MgRoleManagementCloudPcRoleAssignmentPrincipalByRef](New-MgRoleManagementCloudPcRoleAssignmentPrincipalByRef.md)
-Read-only collection referencing the assigned principals.
-Provided so that callers can get the principals using $expand at the same time as getting the role assignment.
-Read-only.
-Supports $expand.
-
 ### [New-MgRoleManagementCloudPcRoleDefinition](New-MgRoleManagementCloudPcRoleDefinition.md)
 Create new navigation property to roleDefinitions for roleManagement
 
@@ -867,18 +589,6 @@ Create new navigation property to roleAssignments for roleManagement
 Read-only collection with details of the app specific scopes when the assignment scopes are app specific.
 Containment entity.
 Read-only.
-
-### [New-MgRoleManagementDeviceManagementRoleAssignmentDirectoryScopeByRef](New-MgRoleManagementDeviceManagementRoleAssignmentDirectoryScopeByRef.md)
-Read-only collection referencing the directory objects that are scope of the assignment.
-Provided so that callers can get the directory objects using $expand at the same time as getting the role assignment.
-Read-only.
-Supports $expand.
-
-### [New-MgRoleManagementDeviceManagementRoleAssignmentPrincipalByRef](New-MgRoleManagementDeviceManagementRoleAssignmentPrincipalByRef.md)
-Read-only collection referencing the assigned principals.
-Provided so that callers can get the principals using $expand at the same time as getting the role assignment.
-Read-only.
-Supports $expand.
 
 ### [New-MgRoleManagementDeviceManagementRoleDefinition](New-MgRoleManagementDeviceManagementRoleDefinition.md)
 Create new navigation property to roleDefinitions for roleManagement
@@ -976,9 +686,6 @@ Create new navigation property to roleEligibilityScheduleRequests for roleManage
 ### [New-MgRoleManagementEntitlementManagementTransitiveRoleAssignment](New-MgRoleManagementEntitlementManagementTransitiveRoleAssignment.md)
 Create new navigation property to transitiveRoleAssignments for roleManagement
 
-### [Remove-MgDeviceManagementAndroid](Remove-MgDeviceManagementAndroid.md)
-Android for Work enrollment profile entities.
-
 ### [Remove-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfile](Remove-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfile.md)
 Android device owner enrollment profile entities.
 
@@ -1000,12 +707,6 @@ On premises conditional access will require devices to be both enrolled and comp
 
 ### [Remove-MgDeviceManagementDepOnboardingSetting](Remove-MgDeviceManagementDepOnboardingSetting.md)
 This collections of multiple DEP tokens per-tenant.
-
-### [Remove-MgDeviceManagementDepOnboardingSettingDefaultIoEnrollmentProfileByRef](Remove-MgDeviceManagementDepOnboardingSettingDefaultIoEnrollmentProfileByRef.md)
-Default iOS Enrollment Profile
-
-### [Remove-MgDeviceManagementDepOnboardingSettingDefaultMacOSEnrollmentProfileByRef](Remove-MgDeviceManagementDepOnboardingSettingDefaultMacOSEnrollmentProfileByRef.md)
-Default MacOs Enrollment Profile
 
 ### [Remove-MgDeviceManagementDepOnboardingSettingEnrollmentProfile](Remove-MgDeviceManagementDepOnboardingSettingEnrollmentProfile.md)
 The enrollment profiles.
@@ -1034,23 +735,11 @@ Windows auto pilot deployment profiles
 ### [Remove-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDevice](Remove-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDevice.md)
 The list of assigned devices for the profile.
 
-### [Remove-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDeviceDeploymentProfileByRef](Remove-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDeviceDeploymentProfileByRef.md)
-Deployment profile currently assigned to the Windows autopilot device.
-
-### [Remove-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDeviceIntendedDeploymentProfileByRef](Remove-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDeviceIntendedDeploymentProfileByRef.md)
-Deployment profile intended to be assigned to the Windows autopilot device.
-
 ### [Remove-MgDeviceManagementWindowAutopilotDeploymentProfileAssignment](Remove-MgDeviceManagementWindowAutopilotDeploymentProfileAssignment.md)
 The list of group assignments for the profile.
 
 ### [Remove-MgDeviceManagementWindowAutopilotDeviceIdentity](Remove-MgDeviceManagementWindowAutopilotDeviceIdentity.md)
 The Windows autopilot device identities contained collection.
-
-### [Remove-MgDeviceManagementWindowAutopilotDeviceIdentityDeploymentProfileByRef](Remove-MgDeviceManagementWindowAutopilotDeviceIdentityDeploymentProfileByRef.md)
-Deployment profile currently assigned to the Windows autopilot device.
-
-### [Remove-MgDeviceManagementWindowAutopilotDeviceIdentityIntendedDeploymentProfileByRef](Remove-MgDeviceManagementWindowAutopilotDeviceIdentityIntendedDeploymentProfileByRef.md)
-Deployment profile intended to be assigned to the Windows autopilot device.
 
 ### [Remove-MgDeviceManagementWindowAutopilotSetting](Remove-MgDeviceManagementWindowAutopilotSetting.md)
 The Windows autopilot account settings.
@@ -1081,11 +770,6 @@ Read-only collection with details of the app specific scopes when the assignment
 Containment entity.
 Read-only.
 
-### [Remove-MgRoleManagementCloudPcRoleAssignmentRoleDefinitionByRef](Remove-MgRoleManagementCloudPcRoleAssignmentRoleDefinitionByRef.md)
-Specifies the roleDefinition that the assignment is for.
-Provided so that callers can get the role definition using $expand at the same time as getting the role assignment.
-Supports $filter (eq operator on id, isBuiltIn, and displayName, and startsWith operator on displayName)  and $expand.
-
 ### [Remove-MgRoleManagementCloudPcRoleDefinition](Remove-MgRoleManagementCloudPcRoleDefinition.md)
 Delete navigation property roleDefinitions for roleManagement
 
@@ -1113,11 +797,6 @@ Delete navigation property roleAssignments for roleManagement
 Read-only collection with details of the app specific scopes when the assignment scopes are app specific.
 Containment entity.
 Read-only.
-
-### [Remove-MgRoleManagementDeviceManagementRoleAssignmentRoleDefinitionByRef](Remove-MgRoleManagementDeviceManagementRoleAssignmentRoleDefinitionByRef.md)
-Specifies the roleDefinition that the assignment is for.
-Provided so that callers can get the role definition using $expand at the same time as getting the role assignment.
-Supports $filter (eq operator on id, isBuiltIn, and displayName, and startsWith operator on displayName)  and $expand.
 
 ### [Remove-MgRoleManagementDeviceManagementRoleDefinition](Remove-MgRoleManagementDeviceManagementRoleDefinition.md)
 Delete navigation property roleDefinitions for roleManagement
@@ -1154,60 +833,14 @@ Read-only property with details of the app specific scope when the assignment sc
 Containment entity.
 Supports $expand.
 
-### [Remove-MgRoleManagementDirectoryRoleAssignmentDirectoryScopeByRef](Remove-MgRoleManagementDirectoryRoleAssignmentDirectoryScopeByRef.md)
-The directory object that is the scope of the assignment.
-Read-only.
-Supports $expand.
-
-### [Remove-MgRoleManagementDirectoryRoleAssignmentPrincipalByRef](Remove-MgRoleManagementDirectoryRoleAssignmentPrincipalByRef.md)
-Referencing the assigned principal.
-Read-only.
-Supports $expand.
-
-### [Remove-MgRoleManagementDirectoryRoleAssignmentRoleDefinitionByRef](Remove-MgRoleManagementDirectoryRoleAssignmentRoleDefinitionByRef.md)
-The roleDefinition the assignment is for.
-Supports $expand.
-roleDefinition.Id will be auto expanded.
-
 ### [Remove-MgRoleManagementDirectoryRoleAssignmentSchedule](Remove-MgRoleManagementDirectoryRoleAssignmentSchedule.md)
 Delete navigation property roleAssignmentSchedules for roleManagement
-
-### [Remove-MgRoleManagementDirectoryRoleAssignmentScheduleActivatedUsingByRef](Remove-MgRoleManagementDirectoryRoleAssignmentScheduleActivatedUsingByRef.md)
-If the roleAssignmentSchedule is activated by a roleEligibilitySchedule, this is the link to that schedule.
 
 ### [Remove-MgRoleManagementDirectoryRoleAssignmentScheduleInstance](Remove-MgRoleManagementDirectoryRoleAssignmentScheduleInstance.md)
 Delete navigation property roleAssignmentScheduleInstances for roleManagement
 
-### [Remove-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceActivatedUsingByRef](Remove-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceActivatedUsingByRef.md)
-If the roleAssignmentScheduleInstance is activated by a roleEligibilityScheduleRequest, this is the link to the related schedule instance.
-
 ### [Remove-MgRoleManagementDirectoryRoleAssignmentScheduleRequest](Remove-MgRoleManagementDirectoryRoleAssignmentScheduleRequest.md)
 Delete navigation property roleAssignmentScheduleRequests for roleManagement
-
-### [Remove-MgRoleManagementDirectoryRoleAssignmentScheduleRequestActivatedUsingByRef](Remove-MgRoleManagementDirectoryRoleAssignmentScheduleRequestActivatedUsingByRef.md)
-If the request is from an eligible administrator to activate a role, this parameter will show the related eligible assignment for that activation.
-
-### [Remove-MgRoleManagementDirectoryRoleAssignmentScheduleRequestAppScopeByRef](Remove-MgRoleManagementDirectoryRoleAssignmentScheduleRequestAppScopeByRef.md)
-Read-only property with details of the app specific scope when the assignment scope is app specific.
-Containment entity.
-
-### [Remove-MgRoleManagementDirectoryRoleAssignmentScheduleRequestDirectoryScopeByRef](Remove-MgRoleManagementDirectoryRoleAssignmentScheduleRequestDirectoryScopeByRef.md)
-Property referencing the directory object that is the scope of the assignment.
-Provided so that callers can get the directory object using $expand at the same time as getting the role assignment.
-Read-only.
-
-### [Remove-MgRoleManagementDirectoryRoleAssignmentScheduleRequestPrincipalByRef](Remove-MgRoleManagementDirectoryRoleAssignmentScheduleRequestPrincipalByRef.md)
-Property referencing the principal that is getting a role assignment through the request.
-Provided so that callers can get the principal using $expand at the same time as getting the role assignment.
-Read-only.
-
-### [Remove-MgRoleManagementDirectoryRoleAssignmentScheduleRequestRoleDefinitionByRef](Remove-MgRoleManagementDirectoryRoleAssignmentScheduleRequestRoleDefinitionByRef.md)
-Property indicating the roleDefinition the assignment is for.
-Provided so that callers can get the role definition using $expand at the same time as getting the role assignment.
-roleDefinition.Id will be auto expanded.
-
-### [Remove-MgRoleManagementDirectoryRoleAssignmentScheduleRequestTargetScheduleByRef](Remove-MgRoleManagementDirectoryRoleAssignmentScheduleRequestTargetScheduleByRef.md)
-Property indicating the schedule for an eligible role assignment.
 
 ### [Remove-MgRoleManagementDirectoryRoleDefinition](Remove-MgRoleManagementDirectoryRoleDefinition.md)
 Resource representing the roles allowed by RBAC providers and the permissions assigned to the roles.
@@ -1226,28 +859,6 @@ Delete navigation property roleEligibilityScheduleInstances for roleManagement
 ### [Remove-MgRoleManagementDirectoryRoleEligibilityScheduleRequest](Remove-MgRoleManagementDirectoryRoleEligibilityScheduleRequest.md)
 Delete navigation property roleEligibilityScheduleRequests for roleManagement
 
-### [Remove-MgRoleManagementDirectoryRoleEligibilityScheduleRequestAppScopeByRef](Remove-MgRoleManagementDirectoryRoleEligibilityScheduleRequestAppScopeByRef.md)
-Read-only property with details of the app-specific scope when the assignment scope is app-specific.
-Containment entity.
-
-### [Remove-MgRoleManagementDirectoryRoleEligibilityScheduleRequestDirectoryScopeByRef](Remove-MgRoleManagementDirectoryRoleEligibilityScheduleRequestDirectoryScopeByRef.md)
-Property referencing the directory object that is the scope of the assignment.
-Provided so that callers can get the directory object using $expand at the same time as getting the role assignment.
-Read-only.
-
-### [Remove-MgRoleManagementDirectoryRoleEligibilityScheduleRequestPrincipalByRef](Remove-MgRoleManagementDirectoryRoleEligibilityScheduleRequestPrincipalByRef.md)
-Property referencing the principal that is getting a role assignment through the request.
-Provided so that callers can get the principal using $expand at the same time as getting the role assignment.
-Read-only.
-
-### [Remove-MgRoleManagementDirectoryRoleEligibilityScheduleRequestRoleDefinitionByRef](Remove-MgRoleManagementDirectoryRoleEligibilityScheduleRequestRoleDefinitionByRef.md)
-Property indicating the roleDefinition the assignment is for.
-Provided so that callers can get the role definition using $expand at the same time as getting the role assignment.
-roleDefinition.Id will be auto expanded.
-
-### [Remove-MgRoleManagementDirectoryRoleEligibilityScheduleRequestTargetScheduleByRef](Remove-MgRoleManagementDirectoryRoleEligibilityScheduleRequestTargetScheduleByRef.md)
-Property indicating the schedule for an eligible role assignment.
-
 ### [Remove-MgRoleManagementDirectoryTransitiveRoleAssignment](Remove-MgRoleManagementDirectoryTransitiveRoleAssignment.md)
 Delete navigation property transitiveRoleAssignments for roleManagement
 
@@ -1255,21 +866,6 @@ Delete navigation property transitiveRoleAssignments for roleManagement
 Read-only property with details of the app specific scope when the assignment scope is app specific.
 Containment entity.
 Supports $expand.
-
-### [Remove-MgRoleManagementDirectoryTransitiveRoleAssignmentDirectoryScopeByRef](Remove-MgRoleManagementDirectoryTransitiveRoleAssignmentDirectoryScopeByRef.md)
-The directory object that is the scope of the assignment.
-Read-only.
-Supports $expand.
-
-### [Remove-MgRoleManagementDirectoryTransitiveRoleAssignmentPrincipalByRef](Remove-MgRoleManagementDirectoryTransitiveRoleAssignmentPrincipalByRef.md)
-Referencing the assigned principal.
-Read-only.
-Supports $expand.
-
-### [Remove-MgRoleManagementDirectoryTransitiveRoleAssignmentRoleDefinitionByRef](Remove-MgRoleManagementDirectoryTransitiveRoleAssignmentRoleDefinitionByRef.md)
-The roleDefinition the assignment is for.
-Supports $expand.
-roleDefinition.Id will be auto expanded.
 
 ### [Remove-MgRoleManagementEntitlementManagement](Remove-MgRoleManagementEntitlementManagement.md)
 Container for roles and assignments for entitlement management resources.
@@ -1297,60 +893,14 @@ Read-only property with details of the app specific scope when the assignment sc
 Containment entity.
 Supports $expand.
 
-### [Remove-MgRoleManagementEntitlementManagementRoleAssignmentDirectoryScopeByRef](Remove-MgRoleManagementEntitlementManagementRoleAssignmentDirectoryScopeByRef.md)
-The directory object that is the scope of the assignment.
-Read-only.
-Supports $expand.
-
-### [Remove-MgRoleManagementEntitlementManagementRoleAssignmentPrincipalByRef](Remove-MgRoleManagementEntitlementManagementRoleAssignmentPrincipalByRef.md)
-Referencing the assigned principal.
-Read-only.
-Supports $expand.
-
-### [Remove-MgRoleManagementEntitlementManagementRoleAssignmentRoleDefinitionByRef](Remove-MgRoleManagementEntitlementManagementRoleAssignmentRoleDefinitionByRef.md)
-The roleDefinition the assignment is for.
-Supports $expand.
-roleDefinition.Id will be auto expanded.
-
 ### [Remove-MgRoleManagementEntitlementManagementRoleAssignmentSchedule](Remove-MgRoleManagementEntitlementManagementRoleAssignmentSchedule.md)
 Delete navigation property roleAssignmentSchedules for roleManagement
-
-### [Remove-MgRoleManagementEntitlementManagementRoleAssignmentScheduleActivatedUsingByRef](Remove-MgRoleManagementEntitlementManagementRoleAssignmentScheduleActivatedUsingByRef.md)
-If the roleAssignmentSchedule is activated by a roleEligibilitySchedule, this is the link to that schedule.
 
 ### [Remove-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance](Remove-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance.md)
 Delete navigation property roleAssignmentScheduleInstances for roleManagement
 
-### [Remove-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceActivatedUsingByRef](Remove-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceActivatedUsingByRef.md)
-If the roleAssignmentScheduleInstance is activated by a roleEligibilityScheduleRequest, this is the link to the related schedule instance.
-
 ### [Remove-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest](Remove-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest.md)
 Delete navigation property roleAssignmentScheduleRequests for roleManagement
-
-### [Remove-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestActivatedUsingByRef](Remove-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestActivatedUsingByRef.md)
-If the request is from an eligible administrator to activate a role, this parameter will show the related eligible assignment for that activation.
-
-### [Remove-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestAppScopeByRef](Remove-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestAppScopeByRef.md)
-Read-only property with details of the app specific scope when the assignment scope is app specific.
-Containment entity.
-
-### [Remove-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestDirectoryScopeByRef](Remove-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestDirectoryScopeByRef.md)
-Property referencing the directory object that is the scope of the assignment.
-Provided so that callers can get the directory object using $expand at the same time as getting the role assignment.
-Read-only.
-
-### [Remove-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestPrincipalByRef](Remove-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestPrincipalByRef.md)
-Property referencing the principal that is getting a role assignment through the request.
-Provided so that callers can get the principal using $expand at the same time as getting the role assignment.
-Read-only.
-
-### [Remove-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestRoleDefinitionByRef](Remove-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestRoleDefinitionByRef.md)
-Property indicating the roleDefinition the assignment is for.
-Provided so that callers can get the role definition using $expand at the same time as getting the role assignment.
-roleDefinition.Id will be auto expanded.
-
-### [Remove-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestTargetScheduleByRef](Remove-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestTargetScheduleByRef.md)
-Property indicating the schedule for an eligible role assignment.
 
 ### [Remove-MgRoleManagementEntitlementManagementRoleDefinition](Remove-MgRoleManagementEntitlementManagementRoleDefinition.md)
 Resource representing the roles allowed by RBAC providers and the permissions assigned to the roles.
@@ -1369,28 +919,6 @@ Delete navigation property roleEligibilityScheduleInstances for roleManagement
 ### [Remove-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](Remove-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest.md)
 Delete navigation property roleEligibilityScheduleRequests for roleManagement
 
-### [Remove-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestAppScopeByRef](Remove-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestAppScopeByRef.md)
-Read-only property with details of the app-specific scope when the assignment scope is app-specific.
-Containment entity.
-
-### [Remove-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestDirectoryScopeByRef](Remove-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestDirectoryScopeByRef.md)
-Property referencing the directory object that is the scope of the assignment.
-Provided so that callers can get the directory object using $expand at the same time as getting the role assignment.
-Read-only.
-
-### [Remove-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestPrincipalByRef](Remove-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestPrincipalByRef.md)
-Property referencing the principal that is getting a role assignment through the request.
-Provided so that callers can get the principal using $expand at the same time as getting the role assignment.
-Read-only.
-
-### [Remove-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestRoleDefinitionByRef](Remove-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestRoleDefinitionByRef.md)
-Property indicating the roleDefinition the assignment is for.
-Provided so that callers can get the role definition using $expand at the same time as getting the role assignment.
-roleDefinition.Id will be auto expanded.
-
-### [Remove-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestTargetScheduleByRef](Remove-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestTargetScheduleByRef.md)
-Property indicating the schedule for an eligible role assignment.
-
 ### [Remove-MgRoleManagementEntitlementManagementTransitiveRoleAssignment](Remove-MgRoleManagementEntitlementManagementTransitiveRoleAssignment.md)
 Delete navigation property transitiveRoleAssignments for roleManagement
 
@@ -1398,215 +926,6 @@ Delete navigation property transitiveRoleAssignments for roleManagement
 Read-only property with details of the app specific scope when the assignment scope is app specific.
 Containment entity.
 Supports $expand.
-
-### [Remove-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentDirectoryScopeByRef](Remove-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentDirectoryScopeByRef.md)
-The directory object that is the scope of the assignment.
-Read-only.
-Supports $expand.
-
-### [Remove-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentPrincipalByRef](Remove-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentPrincipalByRef.md)
-Referencing the assigned principal.
-Read-only.
-Supports $expand.
-
-### [Remove-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentRoleDefinitionByRef](Remove-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentRoleDefinitionByRef.md)
-The roleDefinition the assignment is for.
-Supports $expand.
-roleDefinition.Id will be auto expanded.
-
-### [Set-MgDeviceManagementDepOnboardingSettingDefaultIoEnrollmentProfileByRef](Set-MgDeviceManagementDepOnboardingSettingDefaultIoEnrollmentProfileByRef.md)
-Default iOS Enrollment Profile
-
-### [Set-MgDeviceManagementDepOnboardingSettingDefaultMacOSEnrollmentProfileByRef](Set-MgDeviceManagementDepOnboardingSettingDefaultMacOSEnrollmentProfileByRef.md)
-Default MacOs Enrollment Profile
-
-### [Set-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDeviceDeploymentProfileByRef](Set-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDeviceDeploymentProfileByRef.md)
-Deployment profile currently assigned to the Windows autopilot device.
-
-### [Set-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDeviceIntendedDeploymentProfileByRef](Set-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDeviceIntendedDeploymentProfileByRef.md)
-Deployment profile intended to be assigned to the Windows autopilot device.
-
-### [Set-MgDeviceManagementWindowAutopilotDeviceIdentityDeploymentProfileByRef](Set-MgDeviceManagementWindowAutopilotDeviceIdentityDeploymentProfileByRef.md)
-Deployment profile currently assigned to the Windows autopilot device.
-
-### [Set-MgDeviceManagementWindowAutopilotDeviceIdentityIntendedDeploymentProfileByRef](Set-MgDeviceManagementWindowAutopilotDeviceIdentityIntendedDeploymentProfileByRef.md)
-Deployment profile intended to be assigned to the Windows autopilot device.
-
-### [Set-MgRoleManagementCloudPcRoleAssignmentRoleDefinitionByRef](Set-MgRoleManagementCloudPcRoleAssignmentRoleDefinitionByRef.md)
-Specifies the roleDefinition that the assignment is for.
-Provided so that callers can get the role definition using $expand at the same time as getting the role assignment.
-Supports $filter (eq operator on id, isBuiltIn, and displayName, and startsWith operator on displayName)  and $expand.
-
-### [Set-MgRoleManagementDeviceManagementRoleAssignmentRoleDefinitionByRef](Set-MgRoleManagementDeviceManagementRoleAssignmentRoleDefinitionByRef.md)
-Specifies the roleDefinition that the assignment is for.
-Provided so that callers can get the role definition using $expand at the same time as getting the role assignment.
-Supports $filter (eq operator on id, isBuiltIn, and displayName, and startsWith operator on displayName)  and $expand.
-
-### [Set-MgRoleManagementDirectoryRoleAssignmentDirectoryScopeByRef](Set-MgRoleManagementDirectoryRoleAssignmentDirectoryScopeByRef.md)
-The directory object that is the scope of the assignment.
-Read-only.
-Supports $expand.
-
-### [Set-MgRoleManagementDirectoryRoleAssignmentPrincipalByRef](Set-MgRoleManagementDirectoryRoleAssignmentPrincipalByRef.md)
-Referencing the assigned principal.
-Read-only.
-Supports $expand.
-
-### [Set-MgRoleManagementDirectoryRoleAssignmentRoleDefinitionByRef](Set-MgRoleManagementDirectoryRoleAssignmentRoleDefinitionByRef.md)
-The roleDefinition the assignment is for.
-Supports $expand.
-roleDefinition.Id will be auto expanded.
-
-### [Set-MgRoleManagementDirectoryRoleAssignmentScheduleActivatedUsingByRef](Set-MgRoleManagementDirectoryRoleAssignmentScheduleActivatedUsingByRef.md)
-If the roleAssignmentSchedule is activated by a roleEligibilitySchedule, this is the link to that schedule.
-
-### [Set-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceActivatedUsingByRef](Set-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceActivatedUsingByRef.md)
-If the roleAssignmentScheduleInstance is activated by a roleEligibilityScheduleRequest, this is the link to the related schedule instance.
-
-### [Set-MgRoleManagementDirectoryRoleAssignmentScheduleRequestActivatedUsingByRef](Set-MgRoleManagementDirectoryRoleAssignmentScheduleRequestActivatedUsingByRef.md)
-If the request is from an eligible administrator to activate a role, this parameter will show the related eligible assignment for that activation.
-
-### [Set-MgRoleManagementDirectoryRoleAssignmentScheduleRequestAppScopeByRef](Set-MgRoleManagementDirectoryRoleAssignmentScheduleRequestAppScopeByRef.md)
-Read-only property with details of the app specific scope when the assignment scope is app specific.
-Containment entity.
-
-### [Set-MgRoleManagementDirectoryRoleAssignmentScheduleRequestDirectoryScopeByRef](Set-MgRoleManagementDirectoryRoleAssignmentScheduleRequestDirectoryScopeByRef.md)
-Property referencing the directory object that is the scope of the assignment.
-Provided so that callers can get the directory object using $expand at the same time as getting the role assignment.
-Read-only.
-
-### [Set-MgRoleManagementDirectoryRoleAssignmentScheduleRequestPrincipalByRef](Set-MgRoleManagementDirectoryRoleAssignmentScheduleRequestPrincipalByRef.md)
-Property referencing the principal that is getting a role assignment through the request.
-Provided so that callers can get the principal using $expand at the same time as getting the role assignment.
-Read-only.
-
-### [Set-MgRoleManagementDirectoryRoleAssignmentScheduleRequestRoleDefinitionByRef](Set-MgRoleManagementDirectoryRoleAssignmentScheduleRequestRoleDefinitionByRef.md)
-Property indicating the roleDefinition the assignment is for.
-Provided so that callers can get the role definition using $expand at the same time as getting the role assignment.
-roleDefinition.Id will be auto expanded.
-
-### [Set-MgRoleManagementDirectoryRoleAssignmentScheduleRequestTargetScheduleByRef](Set-MgRoleManagementDirectoryRoleAssignmentScheduleRequestTargetScheduleByRef.md)
-Property indicating the schedule for an eligible role assignment.
-
-### [Set-MgRoleManagementDirectoryRoleEligibilityScheduleRequestAppScopeByRef](Set-MgRoleManagementDirectoryRoleEligibilityScheduleRequestAppScopeByRef.md)
-Read-only property with details of the app-specific scope when the assignment scope is app-specific.
-Containment entity.
-
-### [Set-MgRoleManagementDirectoryRoleEligibilityScheduleRequestDirectoryScopeByRef](Set-MgRoleManagementDirectoryRoleEligibilityScheduleRequestDirectoryScopeByRef.md)
-Property referencing the directory object that is the scope of the assignment.
-Provided so that callers can get the directory object using $expand at the same time as getting the role assignment.
-Read-only.
-
-### [Set-MgRoleManagementDirectoryRoleEligibilityScheduleRequestPrincipalByRef](Set-MgRoleManagementDirectoryRoleEligibilityScheduleRequestPrincipalByRef.md)
-Property referencing the principal that is getting a role assignment through the request.
-Provided so that callers can get the principal using $expand at the same time as getting the role assignment.
-Read-only.
-
-### [Set-MgRoleManagementDirectoryRoleEligibilityScheduleRequestRoleDefinitionByRef](Set-MgRoleManagementDirectoryRoleEligibilityScheduleRequestRoleDefinitionByRef.md)
-Property indicating the roleDefinition the assignment is for.
-Provided so that callers can get the role definition using $expand at the same time as getting the role assignment.
-roleDefinition.Id will be auto expanded.
-
-### [Set-MgRoleManagementDirectoryRoleEligibilityScheduleRequestTargetScheduleByRef](Set-MgRoleManagementDirectoryRoleEligibilityScheduleRequestTargetScheduleByRef.md)
-Property indicating the schedule for an eligible role assignment.
-
-### [Set-MgRoleManagementDirectoryTransitiveRoleAssignmentDirectoryScopeByRef](Set-MgRoleManagementDirectoryTransitiveRoleAssignmentDirectoryScopeByRef.md)
-The directory object that is the scope of the assignment.
-Read-only.
-Supports $expand.
-
-### [Set-MgRoleManagementDirectoryTransitiveRoleAssignmentPrincipalByRef](Set-MgRoleManagementDirectoryTransitiveRoleAssignmentPrincipalByRef.md)
-Referencing the assigned principal.
-Read-only.
-Supports $expand.
-
-### [Set-MgRoleManagementDirectoryTransitiveRoleAssignmentRoleDefinitionByRef](Set-MgRoleManagementDirectoryTransitiveRoleAssignmentRoleDefinitionByRef.md)
-The roleDefinition the assignment is for.
-Supports $expand.
-roleDefinition.Id will be auto expanded.
-
-### [Set-MgRoleManagementEntitlementManagementRoleAssignmentDirectoryScopeByRef](Set-MgRoleManagementEntitlementManagementRoleAssignmentDirectoryScopeByRef.md)
-The directory object that is the scope of the assignment.
-Read-only.
-Supports $expand.
-
-### [Set-MgRoleManagementEntitlementManagementRoleAssignmentPrincipalByRef](Set-MgRoleManagementEntitlementManagementRoleAssignmentPrincipalByRef.md)
-Referencing the assigned principal.
-Read-only.
-Supports $expand.
-
-### [Set-MgRoleManagementEntitlementManagementRoleAssignmentRoleDefinitionByRef](Set-MgRoleManagementEntitlementManagementRoleAssignmentRoleDefinitionByRef.md)
-The roleDefinition the assignment is for.
-Supports $expand.
-roleDefinition.Id will be auto expanded.
-
-### [Set-MgRoleManagementEntitlementManagementRoleAssignmentScheduleActivatedUsingByRef](Set-MgRoleManagementEntitlementManagementRoleAssignmentScheduleActivatedUsingByRef.md)
-If the roleAssignmentSchedule is activated by a roleEligibilitySchedule, this is the link to that schedule.
-
-### [Set-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceActivatedUsingByRef](Set-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceActivatedUsingByRef.md)
-If the roleAssignmentScheduleInstance is activated by a roleEligibilityScheduleRequest, this is the link to the related schedule instance.
-
-### [Set-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestActivatedUsingByRef](Set-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestActivatedUsingByRef.md)
-If the request is from an eligible administrator to activate a role, this parameter will show the related eligible assignment for that activation.
-
-### [Set-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestAppScopeByRef](Set-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestAppScopeByRef.md)
-Read-only property with details of the app specific scope when the assignment scope is app specific.
-Containment entity.
-
-### [Set-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestDirectoryScopeByRef](Set-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestDirectoryScopeByRef.md)
-Property referencing the directory object that is the scope of the assignment.
-Provided so that callers can get the directory object using $expand at the same time as getting the role assignment.
-Read-only.
-
-### [Set-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestPrincipalByRef](Set-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestPrincipalByRef.md)
-Property referencing the principal that is getting a role assignment through the request.
-Provided so that callers can get the principal using $expand at the same time as getting the role assignment.
-Read-only.
-
-### [Set-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestRoleDefinitionByRef](Set-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestRoleDefinitionByRef.md)
-Property indicating the roleDefinition the assignment is for.
-Provided so that callers can get the role definition using $expand at the same time as getting the role assignment.
-roleDefinition.Id will be auto expanded.
-
-### [Set-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestTargetScheduleByRef](Set-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestTargetScheduleByRef.md)
-Property indicating the schedule for an eligible role assignment.
-
-### [Set-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestAppScopeByRef](Set-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestAppScopeByRef.md)
-Read-only property with details of the app-specific scope when the assignment scope is app-specific.
-Containment entity.
-
-### [Set-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestDirectoryScopeByRef](Set-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestDirectoryScopeByRef.md)
-Property referencing the directory object that is the scope of the assignment.
-Provided so that callers can get the directory object using $expand at the same time as getting the role assignment.
-Read-only.
-
-### [Set-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestPrincipalByRef](Set-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestPrincipalByRef.md)
-Property referencing the principal that is getting a role assignment through the request.
-Provided so that callers can get the principal using $expand at the same time as getting the role assignment.
-Read-only.
-
-### [Set-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestRoleDefinitionByRef](Set-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestRoleDefinitionByRef.md)
-Property indicating the roleDefinition the assignment is for.
-Provided so that callers can get the role definition using $expand at the same time as getting the role assignment.
-roleDefinition.Id will be auto expanded.
-
-### [Set-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestTargetScheduleByRef](Set-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequestTargetScheduleByRef.md)
-Property indicating the schedule for an eligible role assignment.
-
-### [Set-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentDirectoryScopeByRef](Set-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentDirectoryScopeByRef.md)
-The directory object that is the scope of the assignment.
-Read-only.
-Supports $expand.
-
-### [Set-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentPrincipalByRef](Set-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentPrincipalByRef.md)
-Referencing the assigned principal.
-Read-only.
-Supports $expand.
-
-### [Set-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentRoleDefinitionByRef](Set-MgRoleManagementEntitlementManagementTransitiveRoleAssignmentRoleDefinitionByRef.md)
-The roleDefinition the assignment is for.
-Supports $expand.
-roleDefinition.Id will be auto expanded.
 
 ### [Stop-MgRoleManagementDirectoryRoleAssignmentScheduleRequest](Stop-MgRoleManagementDirectoryRoleAssignmentScheduleRequest.md)
 Invoke action cancel
@@ -1619,9 +938,6 @@ Invoke action cancel
 
 ### [Stop-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](Stop-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest.md)
 Invoke action cancel
-
-### [Update-MgDeviceManagementAndroid](Update-MgDeviceManagementAndroid.md)
-Android for Work enrollment profile entities.
 
 ### [Update-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfile](Update-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfile.md)
 Android device owner enrollment profile entities.

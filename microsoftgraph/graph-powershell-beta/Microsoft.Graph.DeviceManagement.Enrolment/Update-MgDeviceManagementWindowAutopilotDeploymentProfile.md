@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/update-mgdevicemanagementwindowautopilotdeploymentprofile
 schema: 2.0.0
@@ -15,39 +15,41 @@ Windows auto pilot deployment profiles
 ### UpdateExpanded (Default)
 ```
 Update-MgDeviceManagementWindowAutopilotDeploymentProfile -WindowsAutopilotDeploymentProfileId <String>
- [-AdditionalProperties <Hashtable>] [-AssignedDevices <IMicrosoftGraphWindowsAutopilotDeviceIdentity1[]>]
+ [-AdditionalProperties <Hashtable>] [-AssignedDevices <IMicrosoftGraphWindowsAutopilotDeviceIdentity[]>]
  [-Assignments <IMicrosoftGraphWindowsAutopilotDeploymentProfileAssignment[]>] [-CreatedDateTime <DateTime>]
- [-Description <String>] [-DeviceNameTemplate <String>] [-DeviceType <String>] [-DisplayName <String>]
- [-EnableWhiteGlove] [-EnrollmentStatusScreenSettings <IMicrosoftGraphWindowsEnrollmentStatusScreenSettings>]
+ [-Description <String>] [-DeviceNameTemplate <String>] [-DeviceType <WindowsAutopilotDeviceType>]
+ [-DisplayName <String>] [-EnableWhiteGlove]
+ [-EnrollmentStatusScreenSettings <IMicrosoftGraphWindowsEnrollmentStatusScreenSettings>]
  [-ExtractHardwareHash] [-Id <String>] [-Language <String>] [-LastModifiedDateTime <DateTime>]
  [-ManagementServiceAppId <String>] [-OutOfBoxExperienceSettings <IMicrosoftGraphOutOfBoxExperienceSettings>]
- [-RoleScopeTagIds <String[]>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-RoleScopeTagIds <String[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementWindowAutopilotDeploymentProfile -WindowsAutopilotDeploymentProfileId <String>
- -BodyParameter <IMicrosoftGraphWindowsAutopilotDeploymentProfile> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgDeviceManagementWindowAutopilotDeploymentProfile -InputObject <IDeviceManagementEnrolmentIdentity>
- -BodyParameter <IMicrosoftGraphWindowsAutopilotDeploymentProfile> [-PassThru] [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphWindowsAutopilotDeploymentProfile> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgDeviceManagementWindowAutopilotDeploymentProfile -InputObject <IDeviceManagementEnrolmentIdentity>
- [-AdditionalProperties <Hashtable>] [-AssignedDevices <IMicrosoftGraphWindowsAutopilotDeviceIdentity1[]>]
+ [-AdditionalProperties <Hashtable>] [-AssignedDevices <IMicrosoftGraphWindowsAutopilotDeviceIdentity[]>]
  [-Assignments <IMicrosoftGraphWindowsAutopilotDeploymentProfileAssignment[]>] [-CreatedDateTime <DateTime>]
- [-Description <String>] [-DeviceNameTemplate <String>] [-DeviceType <String>] [-DisplayName <String>]
- [-EnableWhiteGlove] [-EnrollmentStatusScreenSettings <IMicrosoftGraphWindowsEnrollmentStatusScreenSettings>]
+ [-Description <String>] [-DeviceNameTemplate <String>] [-DeviceType <WindowsAutopilotDeviceType>]
+ [-DisplayName <String>] [-EnableWhiteGlove]
+ [-EnrollmentStatusScreenSettings <IMicrosoftGraphWindowsEnrollmentStatusScreenSettings>]
  [-ExtractHardwareHash] [-Id <String>] [-Language <String>] [-LastModifiedDateTime <DateTime>]
  [-ManagementServiceAppId <String>] [-OutOfBoxExperienceSettings <IMicrosoftGraphOutOfBoxExperienceSettings>]
- [-RoleScopeTagIds <String[]>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-RoleScopeTagIds <String[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgDeviceManagementWindowAutopilotDeploymentProfile -InputObject <IDeviceManagementEnrolmentIdentity>
+ -BodyParameter <IMicrosoftGraphWindowsAutopilotDeploymentProfile> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -61,7 +63,7 @@ Windows auto pilot deployment profiles
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -77,7 +79,7 @@ The list of assigned devices for the profile.
 To construct, please use Get-Help -Online and see NOTES section for ASSIGNEDDEVICES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsAutopilotDeviceIdentity1[]
+Type: IMicrosoftGraphWindowsAutopilotDeviceIdentity[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -93,7 +95,7 @@ The list of group assignments for the profile.
 To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsAutopilotDeploymentProfileAssignment[]
+Type: IMicrosoftGraphWindowsAutopilotDeploymentProfileAssignment[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -109,7 +111,7 @@ Windows Autopilot Deployment Profile
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsAutopilotDeploymentProfile
+Type: IMicrosoftGraphWindowsAutopilotDeploymentProfile
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -124,7 +126,7 @@ Accept wildcard characters: False
 Profile creation time
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -139,7 +141,7 @@ Accept wildcard characters: False
 Description of the profile
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -156,7 +158,7 @@ This can be a custom text and can also contain either the serial number of the d
 The total length of the text generated by the template can be no more than 15 characters.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -171,7 +173,7 @@ Accept wildcard characters: False
 windowsAutopilotDeviceType
 
 ```yaml
-Type: System.String
+Type: WindowsAutopilotDeviceType
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -186,7 +188,7 @@ Accept wildcard characters: False
 Name of the profile
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -201,7 +203,7 @@ Accept wildcard characters: False
 Enable Autopilot White Glove for the profile.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -217,7 +219,7 @@ Enrollment status screen setting
 To construct, please use Get-Help -Online and see NOTES section for ENROLLMENTSTATUSSCREENSETTINGS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsEnrollmentStatusScreenSettings
+Type: IMicrosoftGraphWindowsEnrollmentStatusScreenSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -232,7 +234,7 @@ Accept wildcard characters: False
 HardwareHash Extraction for the profile
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -247,7 +249,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -263,8 +265,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementEnrolmentIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IDeviceManagementEnrolmentIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -278,7 +280,7 @@ Accept wildcard characters: False
 Language configured on the device
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -293,7 +295,7 @@ Accept wildcard characters: False
 Profile last modified time
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -308,7 +310,7 @@ Accept wildcard characters: False
 AzureAD management app ID used during client device-based enrollment discovery
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -324,7 +326,7 @@ Out of box experience setting
 To construct, please use Get-Help -Online and see NOTES section for OUTOFBOXEXPERIENCESETTINGS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOutOfBoxExperienceSettings
+Type: IMicrosoftGraphOutOfBoxExperienceSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -339,7 +341,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -354,7 +356,7 @@ Accept wildcard characters: False
 Scope tags for the profile.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -369,8 +371,8 @@ Accept wildcard characters: False
 key: id of windowsAutopilotDeploymentProfile
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -384,7 +386,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -400,7 +402,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -417,13 +419,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementEnrolmentIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsAutopilotDeploymentProfile
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -631,3 +630,4 @@ OUTOFBOXEXPERIENCESETTINGS <IMicrosoftGraphOutOfBoxExperienceSettings>: Out of b
 
 ## RELATED LINKS
 
+## RELATED LINKS

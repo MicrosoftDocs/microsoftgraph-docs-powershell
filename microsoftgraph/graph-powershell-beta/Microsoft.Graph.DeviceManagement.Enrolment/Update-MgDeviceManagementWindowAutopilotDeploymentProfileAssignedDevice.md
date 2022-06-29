@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/update-mgdevicemanagementwindowautopilotdeploymentprofileassigneddevice
 schema: 2.0.0
@@ -18,13 +18,17 @@ Update-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDevice
  -WindowsAutopilotDeploymentProfileId <String> -WindowsAutopilotDeviceIdentityId <String>
  [-AdditionalProperties <Hashtable>] [-AddressableUserName <String>] [-AzureActiveDirectoryDeviceId <String>]
  [-AzureAdDeviceId <String>] [-DeploymentProfile <IMicrosoftGraphWindowsAutopilotDeploymentProfile>]
- [-DeploymentProfileAssignedDateTime <DateTime>] [-DeploymentProfileAssignmentDetailedStatus <String>]
- [-DeploymentProfileAssignmentStatus <String>] [-DisplayName <String>] [-EnrollmentState <String>]
- [-GroupTag <String>] [-Id <String>]
+ [-DeploymentProfileAssignedDateTime <DateTime>]
+ [-DeploymentProfileAssignmentDetailedStatus <WindowsAutopilotProfileAssignmentDetailedStatus>]
+ [-DeploymentProfileAssignmentStatus <WindowsAutopilotProfileAssignmentStatus>]
+ [-DeviceAccountPassword <String>] [-DeviceAccountUpn <String>] [-DeviceFriendlyName <String>]
+ [-DisplayName <String>] [-EnrollmentState <EnrollmentState>] [-GroupTag <String>] [-Id <String>]
  [-IntendedDeploymentProfile <IMicrosoftGraphWindowsAutopilotDeploymentProfile>]
  [-LastContactedDateTime <DateTime>] [-ManagedDeviceId <String>] [-Manufacturer <String>] [-Model <String>]
- [-ProductKey <String>] [-PurchaseOrderIdentifier <String>] [-ResourceName <String>] [-SerialNumber <String>]
- [-SkuNumber <String>] [-SystemFamily <String>] [-UserPrincipalName <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [-ProductKey <String>] [-PurchaseOrderIdentifier <String>]
+ [-RemediationState <WindowsAutopilotDeviceRemediationState>]
+ [-RemediationStateLastModifiedDateTime <DateTime>] [-ResourceName <String>] [-SerialNumber <String>]
+ [-SkuNumber <String>] [-SystemFamily <String>] [-UserPrincipalName <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -32,15 +36,7 @@ Update-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDevice
 ```
 Update-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDevice
  -WindowsAutopilotDeploymentProfileId <String> -WindowsAutopilotDeviceIdentityId <String>
- -BodyParameter <IMicrosoftGraphWindowsAutopilotDeviceIdentity1> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDevice
- -InputObject <IDeviceManagementEnrolmentIdentity>
- -BodyParameter <IMicrosoftGraphWindowsAutopilotDeviceIdentity1> [-PassThru] [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphWindowsAutopilotDeviceIdentity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -50,13 +46,25 @@ Update-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDevice
  -InputObject <IDeviceManagementEnrolmentIdentity> [-AdditionalProperties <Hashtable>]
  [-AddressableUserName <String>] [-AzureActiveDirectoryDeviceId <String>] [-AzureAdDeviceId <String>]
  [-DeploymentProfile <IMicrosoftGraphWindowsAutopilotDeploymentProfile>]
- [-DeploymentProfileAssignedDateTime <DateTime>] [-DeploymentProfileAssignmentDetailedStatus <String>]
- [-DeploymentProfileAssignmentStatus <String>] [-DisplayName <String>] [-EnrollmentState <String>]
- [-GroupTag <String>] [-Id <String>]
+ [-DeploymentProfileAssignedDateTime <DateTime>]
+ [-DeploymentProfileAssignmentDetailedStatus <WindowsAutopilotProfileAssignmentDetailedStatus>]
+ [-DeploymentProfileAssignmentStatus <WindowsAutopilotProfileAssignmentStatus>]
+ [-DeviceAccountPassword <String>] [-DeviceAccountUpn <String>] [-DeviceFriendlyName <String>]
+ [-DisplayName <String>] [-EnrollmentState <EnrollmentState>] [-GroupTag <String>] [-Id <String>]
  [-IntendedDeploymentProfile <IMicrosoftGraphWindowsAutopilotDeploymentProfile>]
  [-LastContactedDateTime <DateTime>] [-ManagedDeviceId <String>] [-Manufacturer <String>] [-Model <String>]
- [-ProductKey <String>] [-PurchaseOrderIdentifier <String>] [-ResourceName <String>] [-SerialNumber <String>]
- [-SkuNumber <String>] [-SystemFamily <String>] [-UserPrincipalName <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [-ProductKey <String>] [-PurchaseOrderIdentifier <String>]
+ [-RemediationState <WindowsAutopilotDeviceRemediationState>]
+ [-RemediationStateLastModifiedDateTime <DateTime>] [-ResourceName <String>] [-SerialNumber <String>]
+ [-SkuNumber <String>] [-SystemFamily <String>] [-UserPrincipalName <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgDeviceManagementWindowAutopilotDeploymentProfileAssignedDevice
+ -InputObject <IDeviceManagementEnrolmentIdentity>
+ -BodyParameter <IMicrosoftGraphWindowsAutopilotDeviceIdentity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -71,7 +79,7 @@ The list of assigned devices for the profile.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -86,7 +94,7 @@ Accept wildcard characters: False
 Addressable user name.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -101,7 +109,7 @@ Accept wildcard characters: False
 AAD Device ID - to be deprecated
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -116,7 +124,7 @@ Accept wildcard characters: False
 AAD Device ID
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -132,7 +140,7 @@ The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Devic
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsAutopilotDeviceIdentity1
+Type: IMicrosoftGraphWindowsAutopilotDeviceIdentity
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -148,7 +156,7 @@ Windows Autopilot Deployment Profile
 To construct, please use Get-Help -Online and see NOTES section for DEPLOYMENTPROFILE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsAutopilotDeploymentProfile
+Type: IMicrosoftGraphWindowsAutopilotDeploymentProfile
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -163,7 +171,7 @@ Accept wildcard characters: False
 Profile set time of the Windows autopilot device.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -178,7 +186,7 @@ Accept wildcard characters: False
 windowsAutopilotProfileAssignmentDetailedStatus
 
 ```yaml
-Type: System.String
+Type: WindowsAutopilotProfileAssignmentDetailedStatus
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -193,7 +201,52 @@ Accept wildcard characters: False
 windowsAutopilotProfileAssignmentStatus
 
 ```yaml
-Type: System.String
+Type: WindowsAutopilotProfileAssignmentStatus
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DeviceAccountPassword
+Surface Hub Device Account Password
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DeviceAccountUpn
+Surface Hub Device Account Upn
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DeviceFriendlyName
+Surface Hub Device Friendly Name
+
+```yaml
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -208,7 +261,7 @@ Accept wildcard characters: False
 Display Name
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -223,7 +276,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: EnrollmentState
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -238,7 +291,7 @@ Accept wildcard characters: False
 Group Tag of the Windows autopilot device.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -253,7 +306,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -269,8 +322,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementEnrolmentIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IDeviceManagementEnrolmentIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -285,7 +338,7 @@ Windows Autopilot Deployment Profile
 To construct, please use Get-Help -Online and see NOTES section for INTENDEDDEPLOYMENTPROFILE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsAutopilotDeploymentProfile
+Type: IMicrosoftGraphWindowsAutopilotDeploymentProfile
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -300,7 +353,7 @@ Accept wildcard characters: False
 Intune Last Contacted Date Time of the Windows autopilot device.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -315,7 +368,7 @@ Accept wildcard characters: False
 Managed Device ID
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -330,7 +383,7 @@ Accept wildcard characters: False
 Oem manufacturer of the Windows autopilot device.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -345,7 +398,7 @@ Accept wildcard characters: False
 Model name of the Windows autopilot device.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -360,7 +413,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -375,7 +428,7 @@ Accept wildcard characters: False
 Product Key of the Windows autopilot device.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -390,7 +443,37 @@ Accept wildcard characters: False
 Purchase Order Identifier of the Windows autopilot device.
 
 ```yaml
-Type: System.String
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RemediationState
+Device remediation status, indicating whether or not hardware has been changed for an Autopilot-registered device.
+
+```yaml
+Type: WindowsAutopilotDeviceRemediationState
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RemediationStateLastModifiedDateTime
+RemediationState set time of Autopilot device.
+
+```yaml
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -405,7 +488,7 @@ Accept wildcard characters: False
 Resource Name.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -420,7 +503,7 @@ Accept wildcard characters: False
 Serial number of the Windows autopilot device.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -435,7 +518,7 @@ Accept wildcard characters: False
 SKU Number
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -450,7 +533,7 @@ Accept wildcard characters: False
 System Family
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -465,7 +548,7 @@ Accept wildcard characters: False
 User Principal Name.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -480,8 +563,8 @@ Accept wildcard characters: False
 key: id of windowsAutopilotDeploymentProfile
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -495,8 +578,8 @@ Accept wildcard characters: False
 key: id of windowsAutopilotDeviceIdentity
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -510,7 +593,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -526,7 +609,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -543,13 +626,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementEnrolmentIdentity
-
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsAutopilotDeviceIdentity1
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsAutopilotDeviceIdentity
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -794,3 +874,4 @@ INTENDEDDEPLOYMENTPROFILE <IMicrosoftGraphWindowsAutopilotDeploymentProfile>: Wi
 
 ## RELATED LINKS
 
+## RELATED LINKS
