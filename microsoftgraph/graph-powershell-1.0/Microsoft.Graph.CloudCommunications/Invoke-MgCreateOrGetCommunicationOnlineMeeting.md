@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/invoke-mgcreateorgetcommunicationonlinemeeting
 schema: 2.0.0
@@ -12,25 +12,19 @@ Create new navigation property to onlineMeetings for communications
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### CreateExpanded1 (Default)
 ```
 Invoke-MgCreateOrGetCommunicationOnlineMeeting [-AdditionalProperties <Hashtable>]
- [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic] [-AllowedPresenters <String>]
- [-AllowMeetingChat <String>] [-AllowTeamworkReactions]
- [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>] [-AttendeeReportInputFile <String>]
- [-AudioConferencing <IMicrosoftGraphAudioConferencing>]
- [-BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings>] [-ChatInfo <IMicrosoftGraphChatInfo>]
- [-CreationDateTime <DateTime>] [-EndDateTime <DateTime>] [-ExternalId <String>] [-Id <String>] [-IsBroadcast]
- [-IsEntryExitAnnounced] [-JoinInformation <IMicrosoftGraphItemBody>] [-JoinWebUrl <String>]
- [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]
- [-Participants <IMicrosoftGraphMeetingParticipants>] [-RecordAutomatically] [-StartDateTime <DateTime>]
- [-Subject <String>] [-VideoTeleconferenceId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-ChatInfo <IMicrosoftGraphChatInfo>] [-EndDateTime <DateTime>] [-ExternalId <String>]
+ [-Participants <IMicrosoftGraphMeetingParticipants>] [-StartDateTime <DateTime>] [-Subject <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
-### Create
+### Create1
 ```
-Invoke-MgCreateOrGetCommunicationOnlineMeeting -BodyParameter <IMicrosoftGraphOnlineMeeting> [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Invoke-MgCreateOrGetCommunicationOnlineMeeting
+ -BodyParameter <IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -44,132 +38,8 @@ Create new navigation property to onlineMeetings for communications
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AllowAttendeeToEnableCamera
-Indicates whether attendees can turn on their camera.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AllowAttendeeToEnableMic
-Indicates whether attendees can turn on their microphone.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AllowedPresenters
-onlineMeetingPresenters
-
-```yaml
-Type: System.String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AllowMeetingChat
-meetingChatMode
-
-```yaml
-Type: System.String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AllowTeamworkReactions
-Indicates whether Teams reactions are enabled for the meeting.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AttendanceReports
-The attendance reports of an online meeting.
-Read-only.
-To construct, please use Get-Help -Online and see NOTES section for ATTENDANCEREPORTS properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMeetingAttendanceReport[]
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AttendeeReportInputFile
-Input File for AttendeeReport (The content stream of the attendee report of a Microsoft Teams live event.
-Read-only.)
-
-```yaml
-Type: System.String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AudioConferencing
-audioConferencing
-To construct, please use Get-Help -Online and see NOTES section for AUDIOCONFERENCING properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAudioConferencing
-Parameter Sets: CreateExpanded
+Type: Hashtable
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -184,8 +54,8 @@ onlineMeeting
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnlineMeeting
-Parameter Sets: Create
+Type: IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Create1
 Aliases:
 
 Required: True
@@ -195,45 +65,13 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -BroadcastSettings
-broadcastMeetingSettings
-To construct, please use Get-Help -Online and see NOTES section for BROADCASTSETTINGS properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBroadcastMeetingSettings
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ChatInfo
 chatInfo
 To construct, please use Get-Help -Online and see NOTES section for CHATINFO properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatInfo
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -CreationDateTime
-The meeting creation time in UTC.
-Read-only.
-
-```yaml
-Type: System.DateTime
-Parameter Sets: CreateExpanded
+Type: IMicrosoftGraphChatInfo
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -247,8 +85,8 @@ Accept wildcard characters: False
 The meeting end time in UTC.
 
 ```yaml
-Type: System.DateTime
-Parameter Sets: CreateExpanded
+Type: DateTime
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -264,101 +102,8 @@ A custom ID.
 Optional.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Id
-Read-only.
-
-```yaml
-Type: System.String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -IsBroadcast
-Indicates if this is a Teams live event.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -IsEntryExitAnnounced
-Indicates whether to announce when callers join or leave.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -JoinInformation
-itemBody
-To construct, please use Get-Help -Online and see NOTES section for JOININFORMATION properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemBody
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -JoinWebUrl
-The join URL of the online meeting.
-Read-only.
-
-```yaml
-Type: System.String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -LobbyBypassSettings
-lobbyBypassSettings
-To construct, please use Get-Help -Online and see NOTES section for LOBBYBYPASSSETTINGS properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLobbyBypassSettings
-Parameter Sets: CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -373,23 +118,8 @@ meetingParticipants
 To construct, please use Get-Help -Online and see NOTES section for PARTICIPANTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMeetingParticipants
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -RecordAutomatically
-Indicates whether to record the meeting automatically.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: CreateExpanded
+Type: IMicrosoftGraphMeetingParticipants
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -403,8 +133,8 @@ Accept wildcard characters: False
 The meeting start time in UTC.
 
 ```yaml
-Type: System.DateTime
-Parameter Sets: CreateExpanded
+Type: DateTime
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -418,24 +148,8 @@ Accept wildcard characters: False
 The subject of the online meeting.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -VideoTeleconferenceId
-The video teleconferencing ID.
-Read-only.
-
-```yaml
-Type: System.String
-Parameter Sets: CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -449,7 +163,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -465,7 +179,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -481,12 +195,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnlineMeeting
-
+### Microsoft.Graph.PowerShell.Models.IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnlineMeeting
-
 ## NOTES
 
 ALIASES
@@ -642,3 +354,4 @@ PARTICIPANTS <IMicrosoftGraphMeetingParticipants>: meetingParticipants
 
 ## RELATED LINKS
 
+## RELATED LINKS
