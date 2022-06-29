@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/confirm-mgcontactmembergroup
 schema: 2.0.0
@@ -12,30 +12,30 @@ Invoke action checkMemberGroups
 
 ## SYNTAX
 
-### CheckExpanded1 (Default)
+### CheckExpanded (Default)
 ```
 Confirm-MgContactMemberGroup -OrgContactId <String> [-AdditionalProperties <Hashtable>] [-GroupIds <String[]>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Check1
+### Check
 ```
 Confirm-MgContactMemberGroup -OrgContactId <String>
- -BodyParameter <IPaths175Njh2ContactsOrgcontactIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema1>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IPaths175Njh2ContactsOrgcontactIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CheckViaIdentity1
+### CheckViaIdentityExpanded
 ```
 Confirm-MgContactMemberGroup -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IPaths175Njh2ContactsOrgcontactIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema1>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-GroupIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CheckViaIdentityExpanded1
+### CheckViaIdentity
 ```
 Confirm-MgContactMemberGroup -InputObject <IIdentityDirectoryManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-GroupIds <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IPaths175Njh2ContactsOrgcontactIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,8 +49,8 @@ Invoke action checkMemberGroups
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: CheckExpanded1, CheckViaIdentityExpanded1
+Type: Hashtable
+Parameter Sets: CheckExpanded, CheckViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -65,8 +65,8 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths175Njh2ContactsOrgcontactIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema1
-Parameter Sets: Check1, CheckViaIdentity1
+Type: IPaths175Njh2ContactsOrgcontactIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Check, CheckViaIdentity
 Aliases:
 
 Required: True
@@ -80,8 +80,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String[]
-Parameter Sets: CheckExpanded1, CheckViaIdentityExpanded1
+Type: String[]
+Parameter Sets: CheckExpanded, CheckViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -96,8 +96,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-Parameter Sets: CheckViaIdentity1, CheckViaIdentityExpanded1
+Type: IIdentityDirectoryManagementIdentity
+Parameter Sets: CheckViaIdentityExpanded, CheckViaIdentity
 Aliases:
 
 Required: True
@@ -111,8 +111,8 @@ Accept wildcard characters: False
 key: id of orgContact
 
 ```yaml
-Type: System.String
-Parameter Sets: Check1, CheckExpanded1
+Type: String
+Parameter Sets: CheckExpanded, Check
 Aliases:
 
 Required: True
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -142,7 +142,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -159,13 +159,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
-### Microsoft.Graph.PowerShell.Models.IPaths175Njh2ContactsOrgcontactIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema1
-
+### Microsoft.Graph.PowerShell.Models.IPaths175Njh2ContactsOrgcontactIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES
@@ -214,4 +211,3 @@ INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

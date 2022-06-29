@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontact
 schema: 2.0.0
@@ -14,21 +14,20 @@ Get entity from contacts by key
 
 ### List (Default)
 ```
-Get-MgContact [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>]
- [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ConsistencyLevel <String>] [-All]
- [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
+Get-MgContact [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>]
+ [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-ConsistencyLevel <String>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgContact -OrgContactId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ConsistencyLevel <String>] [<CommonParameters>]
+Get-MgContact -OrgContactId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgContact -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [-ConsistencyLevel <String>] [<CommonParameters>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,7 +35,7 @@ Get entity from contacts by key
 
 ## EXAMPLES
 
-### Example 1: Retrieve contact objects in the directory 
+### Example 1: Retrieve contact objects in the directory
 ```powershell
 Get-MgContact | Format-List Id, DisplayName, Mail, MailNickname
 
@@ -54,7 +53,7 @@ This example retrieves all contact objects in the directory.
 List all pages.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: List
 Aliases:
 
@@ -70,8 +69,8 @@ Indicates the requested consistency level.
 Documentation URL: https://developer.microsoft.com/en-us/office/blogs/microsoft-graph-advanced-queries-for-directory-objects-are-now-generally-available/
 
 ```yaml
-Type: System.String
-Parameter Sets: (All)
+Type: String
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -86,7 +85,7 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: List
 Aliases: CV
 
@@ -101,7 +100,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -116,7 +115,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: List
 Aliases:
 
@@ -132,7 +131,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+Type: IIdentityDirectoryManagementIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -147,7 +146,7 @@ Accept wildcard characters: False
 key: id of orgContact
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -162,7 +161,7 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: List
 Aliases:
 
@@ -177,7 +176,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -192,22 +191,7 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: System.String
-Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: System.Int32
+Type: String
 Parameter Sets: List
 Aliases:
 
@@ -222,7 +206,7 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: List
 Aliases: OrderBy
 
@@ -237,9 +221,24 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: List
 Aliases: Limit
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List
+Aliases:
 
 Required: False
 Position: Named
@@ -254,11 +253,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOrgContact1
-
 ## NOTES
 
 ALIASES
@@ -303,4 +300,3 @@ INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

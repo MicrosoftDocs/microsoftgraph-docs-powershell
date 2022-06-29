@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/invoke-mgdismissdirectoryrecommendation
 schema: 2.0.0
@@ -15,27 +15,27 @@ Invoke action dismiss
 ### DismissExpanded (Default)
 ```
 Invoke-MgDismissDirectoryRecommendation -RecommendationId <String> [-AdditionalProperties <Hashtable>]
- [-DismissReason <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-DismissReason <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Dismiss
 ```
 Invoke-MgDismissDirectoryRecommendation -RecommendationId <String>
  -BodyParameter <IPathsTqf0JxDirectoryRecommendationsRecommendationIdMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DismissViaIdentityExpanded
+```
+Invoke-MgDismissDirectoryRecommendation -InputObject <IIdentityDirectoryManagementIdentity>
+ [-AdditionalProperties <Hashtable>] [-DismissReason <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DismissViaIdentity
 ```
 Invoke-MgDismissDirectoryRecommendation -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <IPathsTqf0JxDirectoryRecommendationsRecommendationIdMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### DismissViaIdentityExpanded
-```
-Invoke-MgDismissDirectoryRecommendation -InputObject <IIdentityDirectoryManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-DismissReason <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,7 +49,7 @@ Invoke action dismiss
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: DismissExpanded, DismissViaIdentityExpanded
 Aliases:
 
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPathsTqf0JxDirectoryRecommendationsRecommendationIdMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema
+Type: IPathsTqf0JxDirectoryRecommendationsRecommendationIdMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Dismiss, DismissViaIdentity
 Aliases:
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: DismissExpanded, DismissViaIdentityExpanded
 Aliases:
 
@@ -96,8 +96,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-Parameter Sets: DismissViaIdentity, DismissViaIdentityExpanded
+Type: IIdentityDirectoryManagementIdentity
+Parameter Sets: DismissViaIdentityExpanded, DismissViaIdentity
 Aliases:
 
 Required: True
@@ -111,8 +111,8 @@ Accept wildcard characters: False
 key: id of recommendation
 
 ```yaml
-Type: System.String
-Parameter Sets: Dismiss, DismissExpanded
+Type: String
+Parameter Sets: DismissExpanded, Dismiss
 Aliases:
 
 Required: True
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -142,7 +142,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -159,13 +159,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IPathsTqf0JxDirectoryRecommendationsRecommendationIdMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRecommendation
-
 ## NOTES
 
 ALIASES
@@ -214,4 +211,3 @@ INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

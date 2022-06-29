@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryoutboundshareduserprofiletenant
 schema: 2.0.0
@@ -15,25 +15,25 @@ Create new navigation property to tenants for directory
 ### CreateExpanded (Default)
 ```
 New-MgDirectoryOutboundSharedUserProfileTenant -OutboundSharedUserProfileUserId <String>
- [-AdditionalProperties <Hashtable>] [-TenantId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-TenantId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDirectoryOutboundSharedUserProfileTenant -OutboundSharedUserProfileUserId <String>
- -BodyParameter <IMicrosoftGraphTenantReference> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgDirectoryOutboundSharedUserProfileTenant -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphTenantReference> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTenantReference> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgDirectoryOutboundSharedUserProfileTenant -InputObject <IIdentityDirectoryManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-TenantId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-TenantId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgDirectoryOutboundSharedUserProfileTenant -InputObject <IIdentityDirectoryManagementIdentity>
+ -BodyParameter <IMicrosoftGraphTenantReference> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,7 +47,7 @@ Create new navigation property to tenants for directory
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -63,7 +63,7 @@ tenantReference
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTenantReference
+Type: IMicrosoftGraphTenantReference
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -79,8 +79,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IIdentityDirectoryManagementIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -94,8 +94,8 @@ Accept wildcard characters: False
 key: userId of outboundSharedUserProfile
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -140,7 +140,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -157,13 +157,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTenantReference
-
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES
@@ -212,4 +209,3 @@ INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

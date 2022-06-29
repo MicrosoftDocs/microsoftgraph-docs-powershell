@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevicebyid
 schema: 2.0.0
@@ -14,27 +14,15 @@ Invoke action getByIds
 
 ### GetExpanded (Default)
 ```
-Get-MgDeviceById [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Types <String[]>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Get-MgDeviceById [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Types <String[]>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgDeviceById
  -BodyParameter <IPaths1545W8NDevicesMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### Get3
-```
-Get-MgDeviceById -DeviceId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ConsistencyLevel <String>] [<CommonParameters>]
-```
-
-### GetViaIdentity1
-```
-Get-MgDeviceById -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [-ConsistencyLevel <String>] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -48,7 +36,7 @@ Invoke action getByIds
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: GetExpanded
 Aliases:
 
@@ -64,7 +52,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths1545W8NDevicesMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1545W8NDevicesMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Get
 Aliases:
 
@@ -75,90 +63,13 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ConsistencyLevel
-Indicates the requested consistency level.
-Documentation URL: https://developer.microsoft.com/en-us/office/blogs/microsoft-graph-advanced-queries-for-directory-objects-are-now-generally-available/
-
-```yaml
-Type: System.String
-Parameter Sets: Get3, GetViaIdentity1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DeviceId
-key: id of device
-
-```yaml
-Type: System.String
-Parameter Sets: Get3
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ExpandProperty
-Expand related entities
-
-```yaml
-Type: System.String[]
-Parameter Sets: Get3, GetViaIdentity1
-Aliases: Expand
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Ids
 .
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: GetExpanded
 Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-Parameter Sets: GetViaIdentity1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Property
-Select properties to be returned
-
-```yaml
-Type: System.String[]
-Parameter Sets: Get3, GetViaIdentity1
-Aliases: Select
 
 Required: False
 Position: Named
@@ -171,7 +82,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: GetExpanded
 Aliases:
 
@@ -186,7 +97,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -202,7 +113,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -218,16 +129,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IPaths1545W8NDevicesMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDevice1
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
-
 ## NOTES
 
 ALIASES
@@ -277,4 +182,3 @@ INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

@@ -122,18 +122,7 @@ The contact's direct reports.
 Nullable.
 Supports $expand.
 
-### [Get-MgContactDirectReportByRef](Get-MgContactDirectReportByRef.md)
-The contact's direct reports.
-(The users and contacts that have their manager property set to this contact.) Read-only.
-Nullable.
-Supports $expand.
-
 ### [Get-MgContactManager](Get-MgContactManager.md)
-The user or contact that is this contact's manager.
-Read-only.
-Supports $expand.
-
-### [Get-MgContactManagerByRef](Get-MgContactManagerByRef.md)
 The user or contact that is this contact's manager.
 Read-only.
 Supports $expand.
@@ -157,10 +146,6 @@ Invoke action getMemberObjects
 Invoke action getMemberObjects
 
 ### [Get-MgContactTransitiveReport](Get-MgContactTransitiveReport.md)
-The transitive reports for a contact.
-Read-only.
-
-### [Get-MgContactTransitiveReportByRef](Get-MgContactTransitiveReportByRef.md)
 The transitive reports for a contact.
 Read-only.
 
@@ -225,27 +210,6 @@ Nullable.
 Supports $expand.
 
 ### [Get-MgDeviceRegisteredUser](Get-MgDeviceRegisteredUser.md)
-Collection of registered users of the device.
-For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
-Read-only.
-Nullable.
-Supports $expand.
-
-### [Get-MgDeviceRegisteredUserByRef](Get-MgDeviceRegisteredUserByRef.md)
-Collection of registered users of the device.
-For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
-Read-only.
-Nullable.
-Supports $expand.
-
-### [Get-MgDeviceRegisteredUserByRef](Get-MgDeviceRegisteredUserByRef.md)
-Collection of registered users of the device.
-For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
-Read-only.
-Nullable.
-Supports $expand.
-
-### [Get-MgDeviceRegisteredUserByRef](Get-MgDeviceRegisteredUserByRef.md)
 Collection of registered users of the device.
 For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
 Read-only.
@@ -383,9 +347,6 @@ Get sharedEmailDomains from directory
 ### [Get-MgDomain](Get-MgDomain.md)
 Get entity from domains by key
 
-### [Get-MgDomainDomainNameReferenceByRef](Get-MgDomainDomainNameReferenceByRef.md)
-Read-only, Nullable
-
 ### [Get-MgDomainFederationConfiguration](Get-MgDomainFederationConfiguration.md)
 Get federationConfiguration from domains
 
@@ -504,28 +465,6 @@ Scoped-role members of this administrative unit.
 ### [New-MgContact](New-MgContact.md)
 Add new entity to contacts
 
-### [New-MgContactDirectReportByRef](New-MgContactDirectReportByRef.md)
-The contact's direct reports.
-(The users and contacts that have their manager property set to this contact.) Read-only.
-Nullable.
-Supports $expand.
-
-### [New-MgContactDirectReportByRef](New-MgContactDirectReportByRef.md)
-The contact's direct reports.
-(The users and contacts that have their manager property set to this contact.) Read-only.
-Nullable.
-Supports $expand.
-
-### [New-MgContactDirectReportByRef](New-MgContactDirectReportByRef.md)
-The contact's direct reports.
-(The users and contacts that have their manager property set to this contact.) Read-only.
-Nullable.
-Supports $expand.
-
-### [New-MgContactTransitiveReportByRef](New-MgContactTransitiveReportByRef.md)
-The transitive reports for a contact.
-Read-only.
-
 ### [New-MgContract](New-MgContract.md)
 Add new entity to contracts
 
@@ -549,20 +488,6 @@ Nullable.
 The user that cloud joined the device or registered their personal device.
 The registered owner is set at the time of registration.
 Currently, there can be only one owner.
-Read-only.
-Nullable.
-Supports $expand.
-
-### [New-MgDeviceRegisteredUserByRef](New-MgDeviceRegisteredUserByRef.md)
-Collection of registered users of the device.
-For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
-Read-only.
-Nullable.
-Supports $expand.
-
-### [New-MgDeviceRegisteredUserByRef](New-MgDeviceRegisteredUserByRef.md)
-Collection of registered users of the device.
-For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
 Read-only.
 Nullable.
 Supports $expand.
@@ -646,9 +571,6 @@ Create new navigation property to sharedEmailDomains for directory
 ### [New-MgDomain](New-MgDomain.md)
 Add new entity to domains
 
-### [New-MgDomainDomainNameReferenceByRef](New-MgDomainDomainNameReferenceByRef.md)
-Read-only, Nullable
-
 ### [New-MgDomainFederationConfiguration](New-MgDomainFederationConfiguration.md)
 Create new navigation property to federationConfiguration for domains
 
@@ -694,11 +616,6 @@ Scoped-role members of this administrative unit.
 ### [Remove-MgContact](Remove-MgContact.md)
 Delete entity from contacts
 
-### [Remove-MgContactManagerByRef](Remove-MgContactManagerByRef.md)
-The user or contact that is this contact's manager.
-Read-only.
-Supports $expand.
-
 ### [Remove-MgContract](Remove-MgContract.md)
 Delete entity from contracts
 
@@ -736,10 +653,6 @@ Nullable.
 
 ### [Remove-MgDirectoryFeatureRolloutPolicy](Remove-MgDirectoryFeatureRolloutPolicy.md)
 Nullable.
-
-### [Remove-MgDirectoryFeatureRolloutPolicyApplyTo](Remove-MgDirectoryFeatureRolloutPolicyApplyTo.md)
-Nullable.
-Specifies a list of directoryObjects that feature is enabled for.
 
 ### [Remove-MgDirectoryFederationConfiguration](Remove-MgDirectoryFederationConfiguration.md)
 Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.
@@ -841,35 +754,6 @@ Delete entity from subscribedSkus
 ### [Remove-MgSubscribedSku](Remove-MgSubscribedSku.md)
 Delete entity from subscribedSkus
 
-### [Restore-MgAdministrativeUnit](Restore-MgAdministrativeUnit.md)
-Invoke action restore
-
-### [Restore-MgContact](Restore-MgContact.md)
-Invoke action restore
-
-### [Restore-MgContract](Restore-MgContract.md)
-Invoke action restore
-
-### [Restore-MgDevice](Restore-MgDevice.md)
-Invoke action restore
-
-### [Restore-MgDirectoryRole](Restore-MgDirectoryRole.md)
-Invoke action restore
-
-### [Restore-MgDirectoryRoleTemplate](Restore-MgDirectoryRoleTemplate.md)
-Invoke action restore
-
-### [Restore-MgDirectorySettingTemplate](Restore-MgDirectorySettingTemplate.md)
-Invoke action restore
-
-### [Restore-MgOrganization](Restore-MgOrganization.md)
-Invoke action restore
-
-### [Set-MgContactManagerByRef](Set-MgContactManagerByRef.md)
-The user or contact that is this contact's manager.
-Read-only.
-Supports $expand.
-
 ### [Set-MgOrganizationMobileDeviceManagementAuthority](Set-MgOrganizationMobileDeviceManagementAuthority.md)
 Set mobile device management authority
 
@@ -950,10 +834,6 @@ Nullable.
 
 ### [Update-MgDirectoryFeatureRolloutPolicy](Update-MgDirectoryFeatureRolloutPolicy.md)
 Nullable.
-
-### [Update-MgDirectoryFeatureRolloutPolicyApplyTo](Update-MgDirectoryFeatureRolloutPolicyApplyTo.md)
-Nullable.
-Specifies a list of directoryObjects that feature is enabled for.
 
 ### [Update-MgDirectoryFederationConfiguration](Update-MgDirectoryFederationConfiguration.md)
 Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.

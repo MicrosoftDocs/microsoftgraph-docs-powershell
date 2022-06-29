@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomainfederationconfiguration
 schema: 2.0.0
@@ -19,23 +19,15 @@ Update-MgDomainFederationConfiguration -DomainId <String> -InternalDomainFederat
  [-FederatedIdpMfaBehavior <String>] [-Id <String>] [-IsSignedAuthenticationRequestRequired]
  [-IssuerUri <String>] [-MetadataExchangeUri <String>] [-NextSigningCertificate <String>]
  [-PassiveSignInUri <String>] [-PreferredAuthenticationProtocol <String>] [-PromptLoginBehavior <String>]
- [-SigningCertificate <String>]
- [-SigningCertificateUpdateStatus <IMicrosoftGraphSigningCertificateUpdateStatus>] [-SignOutUri <String>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-SignOutUri <String>] [-SigningCertificate <String>]
+ [-SigningCertificateUpdateStatus <IMicrosoftGraphSigningCertificateUpdateStatus>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDomainFederationConfiguration -DomainId <String> -InternalDomainFederationId <String>
- -BodyParameter <IMicrosoftGraphInternalDomainFederation> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgDomainFederationConfiguration -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphInternalDomainFederation> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphInternalDomainFederation> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -45,9 +37,15 @@ Update-MgDomainFederationConfiguration -InputObject <IIdentityDirectoryManagemen
  [-FederatedIdpMfaBehavior <String>] [-Id <String>] [-IsSignedAuthenticationRequestRequired]
  [-IssuerUri <String>] [-MetadataExchangeUri <String>] [-NextSigningCertificate <String>]
  [-PassiveSignInUri <String>] [-PreferredAuthenticationProtocol <String>] [-PromptLoginBehavior <String>]
- [-SigningCertificate <String>]
- [-SigningCertificateUpdateStatus <IMicrosoftGraphSigningCertificateUpdateStatus>] [-SignOutUri <String>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-SignOutUri <String>] [-SigningCertificate <String>]
+ [-SigningCertificateUpdateStatus <IMicrosoftGraphSigningCertificateUpdateStatus>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgDomainFederationConfiguration -InputObject <IIdentityDirectoryManagementIdentity>
+ -BodyParameter <IMicrosoftGraphInternalDomainFederation> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -57,7 +55,7 @@ Update the navigation property federationConfiguration in domains
 
 ### Example 1: Update the federation settings for a federated domain
 ```powershell
-Update-MgDomainFederationConfiguration -DomainId 'contoso.com' -InternalDomainFederationId '2a8ce608-bb34-473f-9e0f-f373ee4cbc5a' -DisplayName "Contoso name change" 
+Update-MgDomainFederationConfiguration -DomainId 'contoso.com' -InternalDomainFederationId '2a8ce608-bb34-473f-9e0f-f373ee4cbc5a' -DisplayName "Contoso name change"
 ```
 
 This example updates the DisplayName setting.
@@ -68,7 +66,7 @@ This example updates the DisplayName setting.
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -83,7 +81,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -99,7 +97,7 @@ internalDomainFederation
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInternalDomainFederation
+Type: IMicrosoftGraphInternalDomainFederation
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -114,7 +112,7 @@ Accept wildcard characters: False
 The display name of the identity provider.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -129,8 +127,8 @@ Accept wildcard characters: False
 key: id of domain
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -144,7 +142,7 @@ Accept wildcard characters: False
 federatedIdpMfaBehavior
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -159,7 +157,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -175,8 +173,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IIdentityDirectoryManagementIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -190,8 +188,8 @@ Accept wildcard characters: False
 key: id of internalDomainFederation
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -205,7 +203,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -220,7 +218,7 @@ Accept wildcard characters: False
 Issuer URI of the federation server.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -235,7 +233,7 @@ Accept wildcard characters: False
 URI of the metadata exchange endpoint used for authentication from rich client applications.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -250,7 +248,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -265,7 +263,7 @@ Accept wildcard characters: False
 URI that web-based clients are directed to when signing in to Azure Active Directory (Azure AD) services.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -280,7 +278,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -295,7 +293,7 @@ Accept wildcard characters: False
 authenticationProtocol
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -310,7 +308,7 @@ Accept wildcard characters: False
 promptLoginBehavior
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -329,7 +327,7 @@ Azure AD updates certificates via an autorollover process in which it attempts t
 If a new certificate isn't available, Azure AD monitors the metadata daily and will update the federation settings for the domain when a new certificate is available.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -345,7 +343,7 @@ signingCertificateUpdateStatus
 To construct, please use Get-Help -Online and see NOTES section for SIGNINGCERTIFICATEUPDATESTATUS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSigningCertificateUpdateStatus
+Type: IMicrosoftGraphSigningCertificateUpdateStatus
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -360,7 +358,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -375,7 +373,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -391,7 +389,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -408,13 +406,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInternalDomainFederation
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -484,4 +479,3 @@ SIGNINGCERTIFICATEUPDATESTATUS <IMicrosoftGraphSigningCertificateUpdateStatus>: 
   - `[LastRunDateTime <DateTime?>]`: 
 
 ## RELATED LINKS
-

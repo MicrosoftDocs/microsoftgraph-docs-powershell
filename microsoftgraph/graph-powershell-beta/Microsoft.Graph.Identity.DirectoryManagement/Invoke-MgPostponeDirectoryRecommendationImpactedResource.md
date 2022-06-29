@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/invoke-mgpostponedirectoryrecommendationimpactedresource
 schema: 2.0.0
@@ -16,7 +16,7 @@ Invoke action postpone
 ```
 Invoke-MgPostponeDirectoryRecommendationImpactedResource -RecommendationId <String>
  -RecommendationResourceId <String> [-AdditionalProperties <Hashtable>] [-PostponeUntilDateTime <DateTime>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Postpone
@@ -24,21 +24,21 @@ Invoke-MgPostponeDirectoryRecommendationImpactedResource -RecommendationId <Stri
 Invoke-MgPostponeDirectoryRecommendationImpactedResource -RecommendationId <String>
  -RecommendationResourceId <String>
  -BodyParameter <IPathsU2678MDirectoryRecommendationsRecommendationIdImpactedresourcesRecommendationresourceIdMicrosoftGraphPostponePostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### PostponeViaIdentityExpanded
+```
+Invoke-MgPostponeDirectoryRecommendationImpactedResource -InputObject <IIdentityDirectoryManagementIdentity>
+ [-AdditionalProperties <Hashtable>] [-PostponeUntilDateTime <DateTime>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### PostponeViaIdentity
 ```
 Invoke-MgPostponeDirectoryRecommendationImpactedResource -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <IPathsU2678MDirectoryRecommendationsRecommendationIdImpactedresourcesRecommendationresourceIdMicrosoftGraphPostponePostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### PostponeViaIdentityExpanded
-```
-Invoke-MgPostponeDirectoryRecommendationImpactedResource -InputObject <IIdentityDirectoryManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-PostponeUntilDateTime <DateTime>] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -52,7 +52,7 @@ Invoke action postpone
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: PostponeExpanded, PostponeViaIdentityExpanded
 Aliases:
 
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPathsU2678MDirectoryRecommendationsRecommendationIdImpactedresourcesRecommendationresourceIdMicrosoftGraphPostponePostRequestbodyContentApplicationJsonSchema
+Type: IPathsU2678MDirectoryRecommendationsRecommendationIdImpactedresourcesRecommendationresourceIdMicrosoftGraphPostponePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Postpone, PostponeViaIdentity
 Aliases:
 
@@ -84,8 +84,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-Parameter Sets: PostponeViaIdentity, PostponeViaIdentityExpanded
+Type: IIdentityDirectoryManagementIdentity
+Parameter Sets: PostponeViaIdentityExpanded, PostponeViaIdentity
 Aliases:
 
 Required: True
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: PostponeExpanded, PostponeViaIdentityExpanded
 Aliases:
 
@@ -114,8 +114,8 @@ Accept wildcard characters: False
 key: id of recommendation
 
 ```yaml
-Type: System.String
-Parameter Sets: Postpone, PostponeExpanded
+Type: String
+Parameter Sets: PostponeExpanded, Postpone
 Aliases:
 
 Required: True
@@ -129,8 +129,8 @@ Accept wildcard characters: False
 key: id of recommendationResource
 
 ```yaml
-Type: System.String
-Parameter Sets: Postpone, PostponeExpanded
+Type: String
+Parameter Sets: PostponeExpanded, Postpone
 Aliases:
 
 Required: True
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -160,7 +160,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -177,13 +177,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IPathsU2678MDirectoryRecommendationsRecommendationIdImpactedresourcesRecommendationresourceIdMicrosoftGraphPostponePostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRecommendationResource
-
 ## NOTES
 
 ALIASES
@@ -232,4 +229,3 @@ INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
