@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancetermofuse
 schema: 2.0.0
@@ -16,13 +16,13 @@ Update the navigation property termsOfUse in identityGovernance
 ```
 Update-MgIdentityGovernanceTermOfUse [-AdditionalProperties <Hashtable>]
  [-AgreementAcceptances <IMicrosoftGraphAgreementAcceptance[]>] [-Agreements <IMicrosoftGraphAgreement[]>]
- [-Id <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Id <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgIdentityGovernanceTermOfUse -BodyParameter <IMicrosoftGraphTermsOfUseContainer> [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+Update-MgIdentityGovernanceTermOfUse -BodyParameter <IMicrosoftGraphTermsOfUseContainer> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,7 +36,7 @@ Update the navigation property termsOfUse in identityGovernance
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -52,7 +52,7 @@ Represents the current status of a user's response to a company's customizable t
 To construct, please use Get-Help -Online and see NOTES section for AGREEMENTACCEPTANCES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAgreementAcceptance[]
+Type: IMicrosoftGraphAgreementAcceptance[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -68,7 +68,7 @@ Represents a tenant's customizable terms of use agreement that's created and man
 To construct, please use Get-Help -Online and see NOTES section for AGREEMENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAgreement[]
+Type: IMicrosoftGraphAgreement[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -84,7 +84,7 @@ termsOfUseContainer
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermsOfUseContainer
+Type: IMicrosoftGraphTermsOfUseContainer
 Parameter Sets: Update
 Aliases:
 
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -145,7 +145,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -162,11 +162,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermsOfUseContainer
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -312,3 +310,4 @@ BODYPARAMETER <IMicrosoftGraphTermsOfUseContainer>: termsOfUseContainer
 
 ## RELATED LINKS
 
+## RELATED LINKS
