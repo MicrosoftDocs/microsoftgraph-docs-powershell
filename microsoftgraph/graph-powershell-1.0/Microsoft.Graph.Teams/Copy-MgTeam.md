@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/copy-mgteam
 schema: 2.0.0
@@ -12,32 +12,32 @@ Invoke action clone
 
 ## SYNTAX
 
-### CloneExpanded (Default)
+### CloneExpanded1 (Default)
 ```
 Copy-MgTeam -TeamId <String> [-AdditionalProperties <Hashtable>] [-Classification <String>]
  [-Description <String>] [-DisplayName <String>] [-MailNickname <String>] [-PartsToClone <String>]
- [-Visibility <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Visibility <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Clone
+### Clone1
 ```
 Copy-MgTeam -TeamId <String>
  -BodyParameter <IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema1>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CloneViaIdentity
-```
-Copy-MgTeam -InputObject <ITeamsIdentity>
- -BodyParameter <IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema1>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CloneViaIdentityExpanded
+### CloneViaIdentityExpanded1
 ```
 Copy-MgTeam -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>] [-Classification <String>]
  [-Description <String>] [-DisplayName <String>] [-MailNickname <String>] [-PartsToClone <String>]
- [-Visibility <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Visibility <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CloneViaIdentity1
+```
+Copy-MgTeam -InputObject <ITeamsIdentity>
+ -BodyParameter <IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema1>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,8 +51,8 @@ Invoke action clone
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: CloneExpanded, CloneViaIdentityExpanded
+Type: Hashtable
+Parameter Sets: CloneExpanded1, CloneViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -67,8 +67,8 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema1
-Parameter Sets: Clone, CloneViaIdentity
+Type: IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema1
+Parameter Sets: Clone1, CloneViaIdentity1
 Aliases:
 
 Required: True
@@ -82,8 +82,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
-Parameter Sets: CloneExpanded, CloneViaIdentityExpanded
+Type: String
+Parameter Sets: CloneExpanded1, CloneViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -97,8 +97,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
-Parameter Sets: CloneExpanded, CloneViaIdentityExpanded
+Type: String
+Parameter Sets: CloneExpanded1, CloneViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -112,8 +112,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
-Parameter Sets: CloneExpanded, CloneViaIdentityExpanded
+Type: String
+Parameter Sets: CloneExpanded1, CloneViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -128,8 +128,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-Parameter Sets: CloneViaIdentity, CloneViaIdentityExpanded
+Type: ITeamsIdentity
+Parameter Sets: CloneViaIdentityExpanded1, CloneViaIdentity1
 Aliases:
 
 Required: True
@@ -143,8 +143,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
-Parameter Sets: CloneExpanded, CloneViaIdentityExpanded
+Type: String
+Parameter Sets: CloneExpanded1, CloneViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -158,8 +158,8 @@ Accept wildcard characters: False
 clonableTeamParts
 
 ```yaml
-Type: System.String
-Parameter Sets: CloneExpanded, CloneViaIdentityExpanded
+Type: String
+Parameter Sets: CloneExpanded1, CloneViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -188,8 +188,8 @@ Accept wildcard characters: False
 key: id of team
 
 ```yaml
-Type: System.String
-Parameter Sets: Clone, CloneExpanded
+Type: String
+Parameter Sets: CloneExpanded1, Clone1
 Aliases:
 
 Required: True
@@ -203,8 +203,8 @@ Accept wildcard characters: False
 teamVisibilityType
 
 ```yaml
-Type: System.String
-Parameter Sets: CloneExpanded, CloneViaIdentityExpanded
+Type: String
+Parameter Sets: CloneExpanded1, CloneViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -234,7 +234,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -251,13 +251,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema1
-
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -314,4 +311,3 @@ INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
 ## RELATED LINKS
-
