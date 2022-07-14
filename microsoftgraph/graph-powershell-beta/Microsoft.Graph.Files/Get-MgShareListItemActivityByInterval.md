@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mgsharelistitemactivitybyinterval
 schema: 2.0.0
@@ -24,12 +24,12 @@ Get-MgShareListItemActivityByInterval -EndDateTime <String> -Interval <String> -
  -SharedDriveItemId <String> -StartDateTime <String> [<CommonParameters>]
 ```
 
-### GetViaIdentity4
+### GetViaIdentity5
 ```
 Get-MgShareListItemActivityByInterval -InputObject <IFilesIdentity> [<CommonParameters>]
 ```
 
-### GetViaIdentity5
+### GetViaIdentity4
 ```
 Get-MgShareListItemActivityByInterval -InputObject <IFilesIdentity> [<CommonParameters>]
 ```
@@ -45,8 +45,8 @@ Invoke function getActivitiesByInterval
 Usage: endDateTime='{endDateTime}'
 
 ```yaml
-Type: System.String
-Parameter Sets: Get4, Get5
+Type: String
+Parameter Sets: Get5, Get4
 Aliases:
 
 Required: True
@@ -61,8 +61,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IFilesIdentity
-Parameter Sets: GetViaIdentity4, GetViaIdentity5
+Type: IFilesIdentity
+Parameter Sets: GetViaIdentity5, GetViaIdentity4
 Aliases:
 
 Required: True
@@ -76,8 +76,8 @@ Accept wildcard characters: False
 Usage: interval='{interval}'
 
 ```yaml
-Type: System.String
-Parameter Sets: Get4, Get5
+Type: String
+Parameter Sets: Get5, Get4
 Aliases:
 
 Required: True
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 key: id of listItem
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get4
 Aliases:
 
@@ -106,8 +106,8 @@ Accept wildcard characters: False
 key: id of sharedDriveItem
 
 ```yaml
-Type: System.String
-Parameter Sets: Get4, Get5
+Type: String
+Parameter Sets: Get5, Get4
 Aliases:
 
 Required: True
@@ -121,8 +121,8 @@ Accept wildcard characters: False
 Usage: startDateTime='{startDateTime}'
 
 ```yaml
-Type: System.String
-Parameter Sets: Get4, Get5
+Type: String
+Parameter Sets: Get5, Get4
 Aliases:
 
 Required: True
@@ -138,11 +138,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemActivityStat1
-
 ## NOTES
 
 ALIASES
@@ -178,4 +176,3 @@ INPUTOBJECT <IFilesIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

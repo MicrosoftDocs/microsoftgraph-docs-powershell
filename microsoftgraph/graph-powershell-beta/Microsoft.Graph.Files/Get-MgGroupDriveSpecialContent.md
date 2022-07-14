@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mggroupdrivespecialcontent
 schema: 2.0.0
@@ -20,8 +20,7 @@ Get-MgGroupDriveSpecialContent -DriveId <String> -DriveItemId <String> -GroupId 
 
 ### GetViaIdentity1
 ```
-Get-MgGroupDriveSpecialContent -InputObject <IFilesIdentity> -OutFile <String> [-PassThru]
- [<CommonParameters>]
+Get-MgGroupDriveSpecialContent -InputObject <IFilesIdentity> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -35,7 +34,7 @@ Get content for the navigation property special from groups
 key: id of drive
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get1
 Aliases:
 
@@ -50,7 +49,7 @@ Accept wildcard characters: False
 key: id of driveItem
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get1
 Aliases:
 
@@ -65,7 +64,7 @@ Accept wildcard characters: False
 key: id of group
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get1
 Aliases:
 
@@ -81,7 +80,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IFilesIdentity
+Type: IFilesIdentity
 Parameter Sets: GetViaIdentity1
 Aliases:
 
@@ -96,7 +95,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -111,7 +110,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -128,11 +127,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -168,4 +165,3 @@ INPUTOBJECT <IFilesIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
