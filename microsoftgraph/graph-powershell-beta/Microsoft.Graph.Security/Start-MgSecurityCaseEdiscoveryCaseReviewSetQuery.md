@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/start-mgsecuritycaseediscoverycasereviewsetquery
 schema: 2.0.0
@@ -34,7 +34,7 @@ Invoke function run
 key: id of ediscoveryCase
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Run
 Aliases:
 
@@ -49,7 +49,7 @@ Accept wildcard characters: False
 key: id of ediscoveryReviewSet
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Run
 Aliases:
 
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 key: id of ediscoveryReviewSetQuery
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Run
 Aliases:
 
@@ -80,7 +80,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+Type: ISecurityIdentity
 Parameter Sets: RunViaIdentity
 Aliases:
 
@@ -97,11 +97,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryFile
-
 ## NOTES
 
 ALIASES
@@ -151,4 +149,3 @@ INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[UserSourceId <String>]`: key: id of userSource
 
 ## RELATED LINKS
-
