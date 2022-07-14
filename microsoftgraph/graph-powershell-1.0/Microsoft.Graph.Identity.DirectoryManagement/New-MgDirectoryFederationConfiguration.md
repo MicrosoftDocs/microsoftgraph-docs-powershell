@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryfederationconfiguration
 schema: 2.0.0
@@ -15,13 +15,13 @@ Create new navigation property to federationConfigurations for directory
 ### CreateExpanded1 (Default)
 ```
 New-MgDirectoryFederationConfiguration [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgDirectoryFederationConfiguration -BodyParameter <IMicrosoftGraphIdentityProviderBase> [-Confirm]
- [-WhatIf] [<CommonParameters>]
+New-MgDirectoryFederationConfiguration -BodyParameter <IMicrosoftGraphIdentityProviderBase> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -35,7 +35,7 @@ Create new navigation property to federationConfigurations for directory
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -51,7 +51,7 @@ identityProviderBase
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityProviderBase
+Type: IMicrosoftGraphIdentityProviderBase
 Parameter Sets: Create1
 Aliases:
 
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 The display name of the identity provider.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -112,7 +112,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -129,11 +129,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityProviderBase
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityProviderBase
-
 ## NOTES
 
 ALIASES
@@ -149,4 +147,3 @@ BODYPARAMETER <IMicrosoftGraphIdentityProviderBase>: identityProviderBase
   - `[DisplayName <String>]`: The display name of the identity provider.
 
 ## RELATED LINKS
-
