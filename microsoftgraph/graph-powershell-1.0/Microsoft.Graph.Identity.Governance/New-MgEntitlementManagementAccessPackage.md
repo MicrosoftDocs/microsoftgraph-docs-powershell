@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementaccesspackage
 schema: 2.0.0
@@ -17,13 +17,13 @@ Create new navigation property to accessPackages for identityGovernance
 New-MgEntitlementManagementAccessPackage [-AdditionalProperties <Hashtable>]
  [-AssignmentPolicies <IMicrosoftGraphAccessPackageAssignmentPolicy1[]>]
  [-Catalog <IMicrosoftGraphAccessPackageCatalog1>] [-CreatedDateTime <DateTime>] [-Description <String>]
- [-DisplayName <String>] [-Id <String>] [-IsHidden] [-ModifiedDateTime <DateTime>] [-Confirm] [-WhatIf]
+ [-DisplayName <String>] [-Id <String>] [-IsHidden] [-ModifiedDateTime <DateTime>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgEntitlementManagementAccessPackage -BodyParameter <IMicrosoftGraphAccessPackage1> [-Confirm] [-WhatIf]
+New-MgEntitlementManagementAccessPackage -BodyParameter <IMicrosoftGraphAccessPackage1> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -38,7 +38,7 @@ Create new navigation property to accessPackages for identityGovernance
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -54,7 +54,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENTPOLICIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageAssignmentPolicy1[]
+Type: IMicrosoftGraphAccessPackageAssignmentPolicy1[]
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -70,7 +70,7 @@ accessPackage
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackage1
+Type: IMicrosoftGraphAccessPackage1
 Parameter Sets: Create1
 Aliases:
 
@@ -86,7 +86,7 @@ accessPackageCatalog
 To construct, please use Get-Help -Online and see NOTES section for CATALOG properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageCatalog1
+Type: IMicrosoftGraphAccessPackageCatalog1
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -103,7 +103,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 The description of the access package.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -134,7 +134,7 @@ The display name of the access package.
 Supports $filter (eq, contains).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 Whether the access package is hidden from the requestor.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -181,7 +181,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -212,7 +212,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -229,11 +229,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackage1
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackage1
-
 ## NOTES
 
 ALIASES
@@ -511,3 +509,4 @@ CATALOG <IMicrosoftGraphAccessPackageCatalog1>: accessPackageCatalog
 
 ## RELATED LINKS
 
+## RELATED LINKS

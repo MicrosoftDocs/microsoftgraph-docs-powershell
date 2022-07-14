@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementassignment
 schema: 2.0.0
@@ -14,20 +14,7 @@ Invoke action reprocess
 
 ### Reprocess (Default)
 ```
-Update-MgEntitlementManagementAssignment -AccessPackageAssignmentId <String> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### ReprocessViaIdentity
-```
-Update-MgEntitlementManagementAssignment -InputObject <IIdentityGovernanceIdentity> [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgEntitlementManagementAssignment -AccessPackageAssignmentId <String>
- -BodyParameter <IMicrosoftGraphAccessPackageAssignment1> [-PassThru] [-Confirm] [-WhatIf]
+Update-MgEntitlementManagementAssignment -AccessPackageAssignmentId <String> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -36,16 +23,14 @@ Update-MgEntitlementManagementAssignment -AccessPackageAssignmentId <String>
 Update-MgEntitlementManagementAssignment -AccessPackageAssignmentId <String>
  [-AccessPackage <IMicrosoftGraphAccessPackage1>] [-AdditionalProperties <Hashtable>]
  [-AssignmentPolicy <IMicrosoftGraphAccessPackageAssignmentPolicy1>] [-ExpiredDateTime <DateTime>]
- [-Id <String>] [-Schedule <IMicrosoftGraphEntitlementManagementSchedule>] [-State <String>]
- [-Status <String>] [-Target <IMicrosoftGraphAccessPackageSubject1>] [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ [-Id <String>] [-Schedule <IMicrosoftGraphEntitlementManagementSchedule>] [-State <String>] [-Status <String>]
+ [-Target <IMicrosoftGraphAccessPackageSubject1>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity
+### Update
 ```
-Update-MgEntitlementManagementAssignment -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessPackageAssignment1> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+Update-MgEntitlementManagementAssignment -AccessPackageAssignmentId <String>
+ -BodyParameter <IMicrosoftGraphAccessPackageAssignment1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -53,9 +38,20 @@ Update-MgEntitlementManagementAssignment -InputObject <IIdentityGovernanceIdenti
 Update-MgEntitlementManagementAssignment -InputObject <IIdentityGovernanceIdentity>
  [-AccessPackage <IMicrosoftGraphAccessPackage1>] [-AdditionalProperties <Hashtable>]
  [-AssignmentPolicy <IMicrosoftGraphAccessPackageAssignmentPolicy1>] [-ExpiredDateTime <DateTime>]
- [-Id <String>] [-Schedule <IMicrosoftGraphEntitlementManagementSchedule>] [-State <String>]
- [-Status <String>] [-Target <IMicrosoftGraphAccessPackageSubject1>] [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ [-Id <String>] [-Schedule <IMicrosoftGraphEntitlementManagementSchedule>] [-State <String>] [-Status <String>]
+ [-Target <IMicrosoftGraphAccessPackageSubject1>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgEntitlementManagementAssignment -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IMicrosoftGraphAccessPackageAssignment1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ReprocessViaIdentity
+```
+Update-MgEntitlementManagementAssignment -InputObject <IIdentityGovernanceIdentity> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -70,7 +66,7 @@ accessPackage
 To construct, please use Get-Help -Online and see NOTES section for ACCESSPACKAGE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackage1
+Type: IMicrosoftGraphAccessPackage1
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -85,8 +81,8 @@ Accept wildcard characters: False
 key: id of accessPackageAssignment
 
 ```yaml
-Type: System.String
-Parameter Sets: Reprocess, Update, UpdateExpanded
+Type: String
+Parameter Sets: Reprocess, UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -100,7 +96,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -116,7 +112,7 @@ accessPackageAssignmentPolicy
 To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENTPOLICY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageAssignmentPolicy1
+Type: IMicrosoftGraphAccessPackageAssignmentPolicy1
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -132,7 +128,7 @@ accessPackageAssignment
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageAssignment1
+Type: IMicrosoftGraphAccessPackageAssignment1
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -148,7 +144,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -163,7 +159,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -179,8 +175,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-Parameter Sets: ReprocessViaIdentity, UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IIdentityGovernanceIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity, ReprocessViaIdentity
 Aliases:
 
 Required: True
@@ -194,7 +190,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -210,7 +206,7 @@ entitlementManagementSchedule
 To construct, please use Get-Help -Online and see NOTES section for SCHEDULE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEntitlementManagementSchedule
+Type: IMicrosoftGraphEntitlementManagementSchedule
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -225,7 +221,7 @@ Accept wildcard characters: False
 accessPackageAssignmentState
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -242,7 +238,7 @@ Possible values include Delivering, Delivered, NearExpiry1DayNotificationTrigger
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -258,7 +254,7 @@ accessPackageSubject
 To construct, please use Get-Help -Online and see NOTES section for TARGET properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageSubject1
+Type: IMicrosoftGraphAccessPackageSubject1
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -273,7 +269,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -289,7 +285,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -306,13 +302,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageAssignment1
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -734,3 +727,4 @@ TARGET <IMicrosoftGraphAccessPackageSubject1>: accessPackageSubject
 
 ## RELATED LINKS
 
+## RELATED LINKS

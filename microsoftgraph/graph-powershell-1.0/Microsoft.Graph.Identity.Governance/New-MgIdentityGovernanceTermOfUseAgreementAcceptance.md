@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancetermofuseagreementacceptance
 schema: 2.0.0
@@ -18,45 +18,45 @@ New-MgIdentityGovernanceTermOfUseAgreementAcceptance [-AgreementId <String>]
  [-AdditionalProperties <Hashtable>] [-AgreementFileId <String>] [-DeviceDisplayName <String>]
  [-DeviceId <String>] [-DeviceOSType <String>] [-DeviceOSVersion <String>] [-ExpirationDateTime <DateTime>]
  [-Id <String>] [-RecordedDateTime <DateTime>] [-State <String>] [-UserDisplayName <String>]
- [-UserEmail <String>] [-UserId <String>] [-UserPrincipalName <String>] [-Confirm] [-WhatIf]
+ [-UserEmail <String>] [-UserId <String>] [-UserPrincipalName <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### Create2
+### CreateViaIdentityExpanded1
 ```
-New-MgIdentityGovernanceTermOfUseAgreementAcceptance -BodyParameter <IMicrosoftGraphAgreementAcceptance>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### Create3
-```
-New-MgIdentityGovernanceTermOfUseAgreementAcceptance -AgreementId <String>
- -BodyParameter <IMicrosoftGraphAgreementAcceptance> [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgIdentityGovernanceTermOfUseAgreementAcceptance [-AgreementId <String>]
+ -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>] [-AgreementFileId <String>]
+ [-DeviceDisplayName <String>] [-DeviceId <String>] [-DeviceOSType <String>] [-DeviceOSVersion <String>]
+ [-ExpirationDateTime <DateTime>] [-Id <String>] [-RecordedDateTime <DateTime>] [-State <String>]
+ [-UserDisplayName <String>] [-UserEmail <String>] [-UserId <String>] [-UserPrincipalName <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateExpanded3
 ```
 New-MgIdentityGovernanceTermOfUseAgreementAcceptance -AgreementId <String> [-AdditionalProperties <Hashtable>]
- [-AgreementFileId <String>] [-AgreementId1 <String>] [-DeviceDisplayName <String>] [-DeviceId <String>]
- [-DeviceOSType <String>] [-DeviceOSVersion <String>] [-ExpirationDateTime <DateTime>] [-Id <String>]
- [-RecordedDateTime <DateTime>] [-State <String>] [-UserDisplayName <String>] [-UserEmail <String>]
- [-UserId <String>] [-UserPrincipalName <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-AgreementFileId <String>] [-DeviceDisplayName <String>] [-DeviceId <String>] [-DeviceOSType <String>]
+ [-DeviceOSVersion <String>] [-ExpirationDateTime <DateTime>] [-Id <String>] [-RecordedDateTime <DateTime>]
+ [-State <String>] [-UserDisplayName <String>] [-UserEmail <String>] [-UserId <String>]
+ [-UserPrincipalName <String>] [-AgreementId1 <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Create3
+```
+New-MgIdentityGovernanceTermOfUseAgreementAcceptance -AgreementId <String>
+ -BodyParameter <IMicrosoftGraphAgreementAcceptance> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity1
 ```
 New-MgIdentityGovernanceTermOfUseAgreementAcceptance -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAgreementAcceptance> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAgreementAcceptance> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded1
+### Create2
 ```
-New-MgIdentityGovernanceTermOfUseAgreementAcceptance -InputObject <IIdentityGovernanceIdentity>
- [-AgreementId <String>] [-AdditionalProperties <Hashtable>] [-AgreementFileId <String>]
- [-DeviceDisplayName <String>] [-DeviceId <String>] [-DeviceOSType <String>] [-DeviceOSVersion <String>]
- [-ExpirationDateTime <DateTime>] [-Id <String>] [-RecordedDateTime <DateTime>] [-State <String>]
- [-UserDisplayName <String>] [-UserEmail <String>] [-UserId <String>] [-UserPrincipalName <String>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+New-MgIdentityGovernanceTermOfUseAgreementAcceptance -BodyParameter <IMicrosoftGraphAgreementAcceptance>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -70,8 +70,8 @@ Create new navigation property to agreementAcceptances for identityGovernance
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: CreateExpanded2, CreateExpanded3, CreateViaIdentityExpanded1
+Type: Hashtable
+Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded1, CreateExpanded3
 Aliases:
 
 Required: False
@@ -85,8 +85,8 @@ Accept wildcard characters: False
 ID of the agreement file accepted by the user.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded2, CreateExpanded3, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded1, CreateExpanded3
 Aliases:
 
 Required: False
@@ -100,8 +100,20 @@ Accept wildcard characters: False
 key: id of agreement
 
 ```yaml
-Type: System.String
-Parameter Sets: Create3, CreateExpanded2, CreateExpanded3, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded3, Create3
 Aliases:
 
 Required: True
@@ -115,7 +127,7 @@ Accept wildcard characters: False
 ID of the agreement.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded3
 Aliases:
 
@@ -131,8 +143,8 @@ agreementAcceptance
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAgreementAcceptance
-Parameter Sets: Create2, Create3, CreateViaIdentity1
+Type: IMicrosoftGraphAgreementAcceptance
+Parameter Sets: Create3, CreateViaIdentity1, Create2
 Aliases:
 
 Required: True
@@ -146,8 +158,8 @@ Accept wildcard characters: False
 The display name of the device used for accepting the agreement.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded2, CreateExpanded3, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded1, CreateExpanded3
 Aliases:
 
 Required: False
@@ -161,8 +173,8 @@ Accept wildcard characters: False
 The unique identifier of the device used for accepting the agreement.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded2, CreateExpanded3, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded1, CreateExpanded3
 Aliases:
 
 Required: False
@@ -176,8 +188,8 @@ Accept wildcard characters: False
 The operating system used for accepting the agreement.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded2, CreateExpanded3, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded1, CreateExpanded3
 Aliases:
 
 Required: False
@@ -191,8 +203,8 @@ Accept wildcard characters: False
 The operating system version of the device used for accepting the agreement.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded2, CreateExpanded3, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded1, CreateExpanded3
 Aliases:
 
 Required: False
@@ -208,8 +220,8 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: System.DateTime
-Parameter Sets: CreateExpanded2, CreateExpanded3, CreateViaIdentityExpanded1
+Type: DateTime
+Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded1, CreateExpanded3
 Aliases:
 
 Required: False
@@ -223,8 +235,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded2, CreateExpanded3, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded1, CreateExpanded3
 Aliases:
 
 Required: False
@@ -239,8 +251,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-Parameter Sets: CreateViaIdentity1, CreateViaIdentityExpanded1
+Type: IIdentityGovernanceIdentity
+Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -255,8 +267,8 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: System.DateTime
-Parameter Sets: CreateExpanded2, CreateExpanded3, CreateViaIdentityExpanded1
+Type: DateTime
+Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded1, CreateExpanded3
 Aliases:
 
 Required: False
@@ -270,8 +282,8 @@ Accept wildcard characters: False
 agreementAcceptanceState
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded2, CreateExpanded3, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded1, CreateExpanded3
 Aliases:
 
 Required: False
@@ -285,8 +297,8 @@ Accept wildcard characters: False
 Display name of the user when the acceptance was recorded.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded2, CreateExpanded3, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded1, CreateExpanded3
 Aliases:
 
 Required: False
@@ -300,8 +312,8 @@ Accept wildcard characters: False
 Email of the user when the acceptance was recorded.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded2, CreateExpanded3, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded1, CreateExpanded3
 Aliases:
 
 Required: False
@@ -315,8 +327,8 @@ Accept wildcard characters: False
 ID of the user who accepted the agreement.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded2, CreateExpanded3, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded1, CreateExpanded3
 Aliases:
 
 Required: False
@@ -330,8 +342,8 @@ Accept wildcard characters: False
 UPN of the user when the acceptance was recorded.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded2, CreateExpanded3, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded1, CreateExpanded3
 Aliases:
 
 Required: False
@@ -345,7 +357,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -361,7 +373,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -378,13 +390,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAgreementAcceptance
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAgreementAcceptance
-
 ## NOTES
 
 ALIASES
@@ -474,4 +483,3 @@ INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

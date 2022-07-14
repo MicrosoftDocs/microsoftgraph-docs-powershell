@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementassignment
 schema: 2.0.0
@@ -17,14 +17,14 @@ Create new navigation property to assignments for identityGovernance
 New-MgEntitlementManagementAssignment [-AccessPackage <IMicrosoftGraphAccessPackage1>]
  [-AdditionalProperties <Hashtable>] [-AssignmentPolicy <IMicrosoftGraphAccessPackageAssignmentPolicy1>]
  [-ExpiredDateTime <DateTime>] [-Id <String>] [-Schedule <IMicrosoftGraphEntitlementManagementSchedule>]
- [-State <String>] [-Status <String>] [-Target <IMicrosoftGraphAccessPackageSubject1>] [-Confirm] [-WhatIf]
+ [-State <String>] [-Status <String>] [-Target <IMicrosoftGraphAccessPackageSubject1>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgEntitlementManagementAssignment -BodyParameter <IMicrosoftGraphAccessPackageAssignment1> [-Confirm]
- [-WhatIf] [<CommonParameters>]
+New-MgEntitlementManagementAssignment -BodyParameter <IMicrosoftGraphAccessPackageAssignment1> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -39,7 +39,7 @@ accessPackage
 To construct, please use Get-Help -Online and see NOTES section for ACCESSPACKAGE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackage1
+Type: IMicrosoftGraphAccessPackage1
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -54,7 +54,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -70,7 +70,7 @@ accessPackageAssignmentPolicy
 To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENTPOLICY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageAssignmentPolicy1
+Type: IMicrosoftGraphAccessPackageAssignmentPolicy1
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -86,7 +86,7 @@ accessPackageAssignment
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageAssignment1
+Type: IMicrosoftGraphAccessPackageAssignment1
 Parameter Sets: Create
 Aliases:
 
@@ -102,7 +102,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -133,7 +133,7 @@ entitlementManagementSchedule
 To construct, please use Get-Help -Online and see NOTES section for SCHEDULE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEntitlementManagementSchedule
+Type: IMicrosoftGraphEntitlementManagementSchedule
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 accessPackageAssignmentState
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -165,7 +165,7 @@ Possible values include Delivering, Delivered, NearExpiry1DayNotificationTrigger
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -181,7 +181,7 @@ accessPackageSubject
 To construct, please use Get-Help -Online and see NOTES section for TARGET properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageSubject1
+Type: IMicrosoftGraphAccessPackageSubject1
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -212,7 +212,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -229,11 +229,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageAssignment1
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageAssignment1
-
 ## NOTES
 
 ALIASES
@@ -593,3 +591,4 @@ TARGET <IMicrosoftGraphAccessPackageSubject1>: accessPackageSubject
 
 ## RELATED LINKS
 
+## RELATED LINKS
