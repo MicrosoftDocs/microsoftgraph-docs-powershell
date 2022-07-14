@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessservice
 schema: 2.0.0
@@ -21,19 +21,13 @@ New-MgBookingBusinessService -BookingBusinessId <String> [-AdditionalInformation
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsHiddenFromCustomers] [-IsLocationOnline]
  [-MaximumAttendeesCount <Int32>] [-Notes <String>] [-PostBuffer <TimeSpan>] [-PreBuffer <TimeSpan>]
  [-SchedulingPolicy <IMicrosoftGraphBookingSchedulingPolicy>] [-SmsNotificationsEnabled]
- [-StaffMemberIds <String[]>] [-WebUrl <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-StaffMemberIds <String[]>] [-WebUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
 New-MgBookingBusinessService -BookingBusinessId <String> -BodyParameter <IMicrosoftGraphBookingService1>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity1
-```
-New-MgBookingBusinessService -InputObject <IBookingsIdentity> -BodyParameter <IMicrosoftGraphBookingService1>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded1
@@ -45,7 +39,13 @@ New-MgBookingBusinessService -InputObject <IBookingsIdentity> [-AdditionalInform
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsHiddenFromCustomers] [-IsLocationOnline]
  [-MaximumAttendeesCount <Int32>] [-Notes <String>] [-PostBuffer <TimeSpan>] [-PreBuffer <TimeSpan>]
  [-SchedulingPolicy <IMicrosoftGraphBookingSchedulingPolicy>] [-SmsNotificationsEnabled]
- [-StaffMemberIds <String[]>] [-WebUrl <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-StaffMemberIds <String[]>] [-WebUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity1
+```
+New-MgBookingBusinessService -InputObject <IBookingsIdentity> -BodyParameter <IMicrosoftGraphBookingService1>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -59,7 +59,7 @@ Create new navigation property to services for solutions
 Additional information that is sent to the customer when an appointment is confirmed.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -90,7 +90,7 @@ Represents a particular service offered by a booking business.
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingService1
+Type: IMicrosoftGraphBookingService1
 Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
@@ -105,8 +105,8 @@ Accept wildcard characters: False
 key: id of bookingBusiness
 
 ```yaml
-Type: System.String
-Parameter Sets: Create1, CreateExpanded1
+Type: String
+Parameter Sets: CreateExpanded1, Create1
 Aliases:
 
 Required: True
@@ -121,7 +121,7 @@ Contains the set of custom questions associated with a particular service.
 To construct, please use Get-Help -Online and see NOTES section for CUSTOMQUESTIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingQuestionAssignment[]
+Type: IMicrosoftGraphBookingQuestionAssignment[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -137,7 +137,7 @@ The default length of the service, represented in numbers of days, hours, minute
 For example, P11D23H59M59.999999999999S.
 
 ```yaml
-Type: System.TimeSpan
+Type: TimeSpan
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -153,7 +153,7 @@ location
 To construct, please use Get-Help -Online and see NOTES section for DEFAULTLOCATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLocation1
+Type: IMicrosoftGraphLocation1
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 The default monetary price for the service.
 
 ```yaml
-Type: System.Double
+Type: Double
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 Represents the type of pricing of a booking service.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Support.BookingPriceType
+Type: BookingPriceType
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -200,7 +200,7 @@ The value of this property is available only when reading this bookingService by
 To construct, please use Get-Help -Online and see NOTES section for DEFAULTREMINDERS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingReminder1[]
+Type: IMicrosoftGraphBookingReminder1[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 A text description for the service.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -230,7 +230,7 @@ Accept wildcard characters: False
 A service name.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -245,7 +245,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -261,8 +261,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IBookingsIdentity
-Parameter Sets: CreateViaIdentity1, CreateViaIdentityExpanded1
+Type: IBookingsIdentity
+Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -276,7 +276,7 @@ Accept wildcard characters: False
 True means this service is not available to customers for booking.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -292,7 +292,7 @@ True indicates that the appointments for the service will be held online.
 Default value is false.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -309,7 +309,7 @@ If maximumAttendeesCount of the service is greater than 1, pass valid customer I
 To create a customer, use the Create bookingCustomer operation.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -324,7 +324,7 @@ Accept wildcard characters: False
 Additional information about this service.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -339,7 +339,7 @@ Accept wildcard characters: False
 The time to buffer after an appointment for this service ends, and before the next customer appointment can be booked.
 
 ```yaml
-Type: System.TimeSpan
+Type: TimeSpan
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -354,7 +354,7 @@ Accept wildcard characters: False
 The time to buffer before an appointment for this service can start.
 
 ```yaml
-Type: System.TimeSpan
+Type: TimeSpan
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -370,7 +370,7 @@ This type represents the set of policies that dictate how bookings can be create
 To construct, please use Get-Help -Online and see NOTES section for SCHEDULINGPOLICY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingSchedulingPolicy
+Type: IMicrosoftGraphBookingSchedulingPolicy
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -386,7 +386,7 @@ True indicates SMS notifications can be sent to the customers for the appointmen
 Default value is false.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -401,7 +401,7 @@ Accept wildcard characters: False
 Represents those staff members who provide this service.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -416,7 +416,7 @@ Accept wildcard characters: False
 The URL a customer uses to access the service.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -431,7 +431,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -447,7 +447,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -464,13 +464,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IBookingsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingService1
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingService1
-
 ## NOTES
 
 ALIASES
@@ -587,4 +584,3 @@ SCHEDULINGPOLICY <IMicrosoftGraphBookingSchedulingPolicy>: This type represents 
   - `[TimeSlotInterval <TimeSpan?>]`: Duration of each time slot, denoted in ISO 8601 format.
 
 ## RELATED LINKS
-
