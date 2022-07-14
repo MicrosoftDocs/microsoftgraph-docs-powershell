@@ -1,45 +1,46 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgbulkreprovisionusermanageddevicecloudpc
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgbufferuserinformationprotectionencrypt
 schema: 2.0.0
 ---
 
-# Invoke-MgBulkReprovisionUserManagedDeviceCloudPc
+# Invoke-MgBufferUserInformationProtectionEncrypt
 
 ## SYNOPSIS
-Invoke action bulkReprovisionCloudPc
+Invoke action encryptBuffer
 
 ## SYNTAX
 
-### BulkExpanded (Default)
+### BufferExpanded (Default)
 ```
-Invoke-MgBulkReprovisionUserManagedDeviceCloudPc -UserId <String> [-AdditionalProperties <Hashtable>]
- [-ManagedDeviceIds <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### Bulk
-```
-Invoke-MgBulkReprovisionUserManagedDeviceCloudPc -UserId <String>
- -BodyParameter <IPaths1Ue24DiUsersUserIdManageddevicesMicrosoftGraphBulkreprovisioncloudpcPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+Invoke-MgBufferUserInformationProtectionEncrypt -UserId <String> [-AdditionalProperties <Hashtable>]
+ [-BufferInputFile <String>] [-LabelId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### BulkViaIdentity
+### Buffer
 ```
-Invoke-MgBulkReprovisionUserManagedDeviceCloudPc -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPaths1Ue24DiUsersUserIdManageddevicesMicrosoftGraphBulkreprovisioncloudpcPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+Invoke-MgBufferUserInformationProtectionEncrypt -UserId <String>
+ -BodyParameter <IPaths1Tk0VlkUsersUserIdInformationprotectionMicrosoftGraphEncryptbufferPostRequestbodyContentApplicationJsonSchema>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### BulkViaIdentityExpanded
+### BufferViaIdentityExpanded
 ```
-Invoke-MgBulkReprovisionUserManagedDeviceCloudPc -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-ManagedDeviceIds <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+Invoke-MgBufferUserInformationProtectionEncrypt -InputObject <IUsersActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-BufferInputFile <String>] [-LabelId <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### BufferViaIdentity
+```
+Invoke-MgBufferUserInformationProtectionEncrypt -InputObject <IUsersActionsIdentity>
+ -BodyParameter <IPaths1Tk0VlkUsersUserIdInformationprotectionMicrosoftGraphEncryptbufferPostRequestbodyContentApplicationJsonSchema>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action bulkReprovisionCloudPc
+Invoke action encryptBuffer
 
 ## EXAMPLES
 
@@ -49,8 +50,8 @@ Invoke action bulkReprovisionCloudPc
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: BulkExpanded, BulkViaIdentityExpanded
+Type: Hashtable
+Parameter Sets: BufferExpanded, BufferViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -65,14 +66,29 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths1Ue24DiUsersUserIdManageddevicesMicrosoftGraphBulkreprovisioncloudpcPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Bulk, BulkViaIdentity
+Type: IPaths1Tk0VlkUsersUserIdInformationprotectionMicrosoftGraphEncryptbufferPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Buffer, BufferViaIdentity
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -BufferInputFile
+Input File for Buffer (.)
+
+```yaml
+Type: String
+Parameter Sets: BufferExpanded, BufferViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -81,8 +97,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-Parameter Sets: BulkViaIdentity, BulkViaIdentityExpanded
+Type: IUsersActionsIdentity
+Parameter Sets: BufferViaIdentityExpanded, BufferViaIdentity
 Aliases:
 
 Required: True
@@ -92,12 +108,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ManagedDeviceIds
+### -LabelId
 .
 
 ```yaml
-Type: System.String[]
-Parameter Sets: BulkExpanded, BulkViaIdentityExpanded
+Type: String
+Parameter Sets: BufferExpanded, BufferViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -111,8 +127,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Bulk, BulkExpanded
+Type: String
+Parameter Sets: BufferExpanded, Buffer
 Aliases:
 
 Required: True
@@ -126,7 +142,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -142,7 +158,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -158,28 +174,24 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1Ue24DiUsersUserIdManageddevicesMicrosoftGraphBulkreprovisioncloudpcPostRequestbodyContentApplicationJsonSchema
-
+### Microsoft.Graph.PowerShell.Models.IPaths1Tk0VlkUsersUserIdInformationprotectionMicrosoftGraphEncryptbufferPostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCloudPcBulkRemoteActionResult
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBufferEncryptionResult
 ## NOTES
 
 ALIASES
-
-### Invoke-MgBulkUserManagedDeviceReprovisionCloudPc
 
 COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPaths1Ue24DiUsersUserIdManageddevicesMicrosoftGraphBulkreprovisioncloudpcPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER <IPaths1Tk0VlkUsersUserIdInformationprotectionMicrosoftGraphEncryptbufferPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ManagedDeviceIds <String[]>]`: 
+  - `[Buffer <Byte[]>]`: 
+  - `[LabelId <String>]`: 
 
 INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
@@ -229,4 +241,3 @@ INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-

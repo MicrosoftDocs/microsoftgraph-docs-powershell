@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgreprovisionusercloudpc
 schema: 2.0.0
@@ -15,27 +15,27 @@ Invoke action reprovision
 ### ReprovisionExpanded (Default)
 ```
 Invoke-MgReprovisionUserCloudPc -CloudPcId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-OSVersion <String>] [-UserAccountType <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-OSVersion <String>] [-UserAccountType <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Reprovision
 ```
 Invoke-MgReprovisionUserCloudPc -CloudPcId <String> -UserId <String>
  -BodyParameter <IPaths1Yi5ZtbUsersUserIdCloudpcsCloudpcIdMicrosoftGraphReprovisionPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ReprovisionViaIdentityExpanded
+```
+Invoke-MgReprovisionUserCloudPc -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-OSVersion <String>] [-UserAccountType <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ReprovisionViaIdentity
 ```
 Invoke-MgReprovisionUserCloudPc -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths1Yi5ZtbUsersUserIdCloudpcsCloudpcIdMicrosoftGraphReprovisionPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### ReprovisionViaIdentityExpanded
-```
-Invoke-MgReprovisionUserCloudPc -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-OSVersion <String>] [-UserAccountType <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,7 +49,7 @@ Invoke action reprovision
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: ReprovisionExpanded, ReprovisionViaIdentityExpanded
 Aliases:
 
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths1Yi5ZtbUsersUserIdCloudpcsCloudpcIdMicrosoftGraphReprovisionPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1Yi5ZtbUsersUserIdCloudpcsCloudpcIdMicrosoftGraphReprovisionPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Reprovision, ReprovisionViaIdentity
 Aliases:
 
@@ -80,8 +80,8 @@ Accept wildcard characters: False
 key: id of cloudPC
 
 ```yaml
-Type: System.String
-Parameter Sets: Reprovision, ReprovisionExpanded
+Type: String
+Parameter Sets: ReprovisionExpanded, Reprovision
 Aliases:
 
 Required: True
@@ -96,8 +96,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-Parameter Sets: ReprovisionViaIdentity, ReprovisionViaIdentityExpanded
+Type: IUsersActionsIdentity
+Parameter Sets: ReprovisionViaIdentityExpanded, ReprovisionViaIdentity
 Aliases:
 
 Required: True
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 cloudPcOperatingSystem
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: ReprovisionExpanded, ReprovisionViaIdentityExpanded
 Aliases:
 
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 cloudPcUserAccountType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: ReprovisionExpanded, ReprovisionViaIdentityExpanded
 Aliases:
 
@@ -156,8 +156,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Reprovision, ReprovisionExpanded
+Type: String
+Parameter Sets: ReprovisionExpanded, Reprovision
 Aliases:
 
 Required: True
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -187,7 +187,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -204,13 +204,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1Yi5ZtbUsersUserIdCloudpcsCloudpcIdMicrosoftGraphReprovisionPostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -273,4 +270,3 @@ INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-
