@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementgrouppolicydefinitionfile
 schema: 2.0.0
@@ -18,21 +18,14 @@ Update-MgDeviceManagementGroupPolicyDefinitionFile -GroupPolicyDefinitionFileId 
  [-AdditionalProperties <Hashtable>] [-Definitions <IMicrosoftGraphGroupPolicyDefinition[]>]
  [-Description <String>] [-DisplayName <String>] [-FileName <String>] [-Id <String>]
  [-LanguageCodes <String[]>] [-LastModifiedDateTime <DateTime>] [-PolicyType <GroupPolicyType>]
- [-Revision <String>] [-TargetNamespace <String>] [-TargetPrefix <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [-Revision <String>] [-TargetNamespace <String>] [-TargetPrefix <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementGroupPolicyDefinitionFile -GroupPolicyDefinitionFileId <String>
- -BodyParameter <IMicrosoftGraphGroupPolicyDefinitionFile> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgDeviceManagementGroupPolicyDefinitionFile -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphGroupPolicyDefinitionFile> [-PassThru] [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphGroupPolicyDefinitionFile> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -42,7 +35,14 @@ Update-MgDeviceManagementGroupPolicyDefinitionFile -InputObject <IDeviceManageme
  [-AdditionalProperties <Hashtable>] [-Definitions <IMicrosoftGraphGroupPolicyDefinition[]>]
  [-Description <String>] [-DisplayName <String>] [-FileName <String>] [-Id <String>]
  [-LanguageCodes <String[]>] [-LastModifiedDateTime <DateTime>] [-PolicyType <GroupPolicyType>]
- [-Revision <String>] [-TargetNamespace <String>] [-TargetPrefix <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [-Revision <String>] [-TargetNamespace <String>] [-TargetPrefix <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgDeviceManagementGroupPolicyDefinitionFile -InputObject <IDeviceManagementAdministrationIdentity>
+ -BodyParameter <IMicrosoftGraphGroupPolicyDefinitionFile> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -57,7 +57,7 @@ Update the navigation property groupPolicyDefinitionFiles in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -75,7 +75,7 @@ The group policy definition file also contains the languages supported as determ
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyDefinitionFile
+Type: IMicrosoftGraphGroupPolicyDefinitionFile
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -91,7 +91,7 @@ The group policy definitions associated with the file.
 To construct, please use Get-Help -Online and see NOTES section for DEFINITIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyDefinition[]
+Type: IMicrosoftGraphGroupPolicyDefinition[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -107,7 +107,7 @@ The localized description of the policy settings in the ADMX file.
 The default value is empty.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 The localized friendly name of the ADMX file.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -138,7 +138,7 @@ The file name of the ADMX file without the path.
 For example: edge.admx
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -153,8 +153,8 @@ Accept wildcard characters: False
 key: id of groupPolicyDefinitionFile
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -168,7 +168,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -184,8 +184,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IDeviceManagementAdministrationIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 The supported language codes for the ADMX file.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -214,7 +214,7 @@ Accept wildcard characters: False
 The date and time the entity was last modified.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -229,7 +229,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -244,7 +244,7 @@ Accept wildcard characters: False
 Type of Group Policy File or Definition.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Support.GroupPolicyType
+Type: GroupPolicyType
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -259,7 +259,7 @@ Accept wildcard characters: False
 The revision version associated with the file.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -274,7 +274,7 @@ Accept wildcard characters: False
 Specifies the URI used to identify the namespace within the ADMX file.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -289,7 +289,7 @@ Accept wildcard characters: False
 Specifies the logical name that refers to the namespace within the ADMX file.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -304,7 +304,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -320,7 +320,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -337,13 +337,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyDefinitionFile
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -498,3 +495,4 @@ INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
+## RELATED LINKS
