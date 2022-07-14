@@ -38,9 +38,6 @@ Add new entity to directoryObjects
 ### [Remove-MgDirectoryObject](Remove-MgDirectoryObject.md)
 Delete entity from directoryObjects
 
-### [Restore-MgDirectoryObject](Restore-MgDirectoryObject.md)
-Invoke action restore
-
 ### [Test-MgDirectoryObjectProperty](Test-MgDirectoryObjectProperty.md)
 Invoke action validateProperties
 
