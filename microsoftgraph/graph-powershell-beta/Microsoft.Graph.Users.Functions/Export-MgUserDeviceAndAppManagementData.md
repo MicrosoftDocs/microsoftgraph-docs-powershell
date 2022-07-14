@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/export-mguserdeviceandappmanagementdata
 schema: 2.0.0
@@ -19,17 +19,17 @@ Export-MgUserDeviceAndAppManagementData -UserId <String> -OutFile <String> [-Pas
 
 ### Export1
 ```
-Export-MgUserDeviceAndAppManagementData -Skip <Int32> -Top <Int32> -UserId <String> -OutFile <String>
+Export-MgUserDeviceAndAppManagementData -UserId <String> -Skip <Int32> -Top <Int32> -OutFile <String>
  [-PassThru] [<CommonParameters>]
 ```
 
-### ExportViaIdentity
+### ExportViaIdentity1
 ```
 Export-MgUserDeviceAndAppManagementData -InputObject <IUsersFunctionsIdentity> -OutFile <String> [-PassThru]
  [<CommonParameters>]
 ```
 
-### ExportViaIdentity1
+### ExportViaIdentity
 ```
 Export-MgUserDeviceAndAppManagementData -InputObject <IUsersFunctionsIdentity> -OutFile <String> [-PassThru]
  [<CommonParameters>]
@@ -47,8 +47,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
-Parameter Sets: ExportViaIdentity, ExportViaIdentity1
+Type: IUsersFunctionsIdentity
+Parameter Sets: ExportViaIdentity1, ExportViaIdentity
 Aliases:
 
 Required: True
@@ -62,7 +62,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -77,7 +77,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -88,26 +88,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Skip
-Usage: skip={skip}
-
-```yaml
-Type: System.Int32
-Parameter Sets: Export1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Top
 Usage: top={top}
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: Export1
 Aliases: Limit
 
@@ -122,8 +107,23 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Export, Export1
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Usage: skip={skip}
+
+```yaml
+Type: Int32
+Parameter Sets: Export1
 Aliases:
 
 Required: True
@@ -139,11 +139,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -190,4 +188,3 @@ INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

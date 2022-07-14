@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/find-mguserroom
 schema: 2.0.0
@@ -19,15 +19,15 @@ Find-MgUserRoom -UserId <String> [<CommonParameters>]
 
 ### Find1
 ```
-Find-MgUserRoom -RoomList <String> -UserId <String> [<CommonParameters>]
+Find-MgUserRoom -UserId <String> -RoomList <String> [<CommonParameters>]
 ```
 
-### FindViaIdentity
+### FindViaIdentity1
 ```
 Find-MgUserRoom -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
 ```
 
-### FindViaIdentity1
+### FindViaIdentity
 ```
 Find-MgUserRoom -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
 ```
@@ -44,8 +44,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
-Parameter Sets: FindViaIdentity, FindViaIdentity1
+Type: IUsersFunctionsIdentity
+Parameter Sets: FindViaIdentity1, FindViaIdentity
 Aliases:
 
 Required: True
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 Usage: RoomList='{RoomList}'
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Find1
 Aliases:
 
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Find, Find1
 Aliases:
 
@@ -91,11 +91,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEmailAddress
-
 ## NOTES
 
 ALIASES
@@ -142,4 +140,3 @@ INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
