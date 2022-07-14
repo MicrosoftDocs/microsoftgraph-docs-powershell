@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/get-mguserdrivelistitemactivitybyinterval
 schema: 2.0.0
@@ -24,12 +24,12 @@ Get-MgUserDriveListItemActivityByInterval -DriveId <String> -EndDateTime <String
  -ListItemId <String> -StartDateTime <String> -UserId <String> [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity2
 ```
 Get-MgUserDriveListItemActivityByInterval -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
 ```
 
-### GetViaIdentity2
+### GetViaIdentity
 ```
 Get-MgUserDriveListItemActivityByInterval -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
 ```
@@ -45,8 +45,8 @@ Invoke function getActivitiesByInterval
 key: id of drive
 
 ```yaml
-Type: System.String
-Parameter Sets: Get, Get2
+Type: String
+Parameter Sets: Get2, Get
 Aliases:
 
 Required: True
@@ -60,7 +60,7 @@ Accept wildcard characters: False
 Usage: endDateTime='{endDateTime}'
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -76,8 +76,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
-Parameter Sets: GetViaIdentity, GetViaIdentity2
+Type: IUsersFunctionsIdentity
+Parameter Sets: GetViaIdentity2, GetViaIdentity
 Aliases:
 
 Required: True
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 Usage: interval='{interval}'
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -106,8 +106,8 @@ Accept wildcard characters: False
 key: id of listItem
 
 ```yaml
-Type: System.String
-Parameter Sets: Get, Get2
+Type: String
+Parameter Sets: Get2, Get
 Aliases:
 
 Required: True
@@ -121,7 +121,7 @@ Accept wildcard characters: False
 Usage: startDateTime='{startDateTime}'
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -136,8 +136,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Get, Get2
+Type: String
+Parameter Sets: Get2, Get
 Aliases:
 
 Required: True
@@ -153,11 +153,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemActivityStat
-
 ## NOTES
 
 ALIASES
@@ -204,4 +202,3 @@ INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

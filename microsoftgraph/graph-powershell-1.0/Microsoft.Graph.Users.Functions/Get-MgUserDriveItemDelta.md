@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/get-mguserdriveitemdelta
 schema: 2.0.0
@@ -19,16 +19,16 @@ Get-MgUserDriveItemDelta -DriveId <String> -DriveItemId <String> -UserId <String
 
 ### Delta3
 ```
-Get-MgUserDriveItemDelta -DriveId <String> -DriveItemId <String> -Token <String> -UserId <String>
+Get-MgUserDriveItemDelta -DriveId <String> -DriveItemId <String> -UserId <String> -Token <String>
  [<CommonParameters>]
 ```
 
-### DeltaViaIdentity2
+### DeltaViaIdentity3
 ```
 Get-MgUserDriveItemDelta -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
 ```
 
-### DeltaViaIdentity3
+### DeltaViaIdentity2
 ```
 Get-MgUserDriveItemDelta -InputObject <IUsersFunctionsIdentity> [<CommonParameters>]
 ```
@@ -44,7 +44,7 @@ Invoke function delta
 key: id of drive
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delta2, Delta3
 Aliases:
 
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 key: id of driveItem
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delta2, Delta3
 Aliases:
 
@@ -75,8 +75,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
-Parameter Sets: DeltaViaIdentity2, DeltaViaIdentity3
+Type: IUsersFunctionsIdentity
+Parameter Sets: DeltaViaIdentity3, DeltaViaIdentity2
 Aliases:
 
 Required: True
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 Usage: token='{token}'
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delta3
 Aliases:
 
@@ -105,7 +105,7 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delta2, Delta3
 Aliases:
 
@@ -122,11 +122,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDriveItem
-
 ## NOTES
 
 ALIASES
@@ -173,4 +171,3 @@ INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
