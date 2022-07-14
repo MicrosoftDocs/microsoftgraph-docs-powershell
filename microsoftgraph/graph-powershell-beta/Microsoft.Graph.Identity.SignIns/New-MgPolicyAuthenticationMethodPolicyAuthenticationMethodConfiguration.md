@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgpolicyauthenticationmethodpolicyauthenticationmethodconfiguration
 schema: 2.0.0
@@ -15,13 +15,13 @@ Create new navigation property to authenticationMethodConfigurations for policie
 ### CreateExpanded (Default)
 ```
 New-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-State <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Id <String>] [-State <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
- -BodyParameter <IMicrosoftGraphAuthenticationMethodConfiguration> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAuthenticationMethodConfiguration> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -35,7 +35,7 @@ Create new navigation property to authenticationMethodConfigurations for policie
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -51,7 +51,7 @@ authenticationMethodConfiguration
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationMethodConfiguration
+Type: IMicrosoftGraphAuthenticationMethodConfiguration
 Parameter Sets: Create
 Aliases:
 
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 authenticationMethodState
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -112,7 +112,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -129,11 +129,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationMethodConfiguration
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationMethodConfiguration
-
 ## NOTES
 
 ALIASES
@@ -149,4 +147,3 @@ BODYPARAMETER <IMicrosoftGraphAuthenticationMethodConfiguration>: authentication
   - `[State <String>]`: authenticationMethodState
 
 ## RELATED LINKS
-

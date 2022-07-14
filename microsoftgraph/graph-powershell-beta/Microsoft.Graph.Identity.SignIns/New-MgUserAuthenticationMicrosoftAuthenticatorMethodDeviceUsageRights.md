@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mguserauthenticationmicrosoftauthenticatormethoddeviceusagerights
 schema: 2.0.0
@@ -16,7 +16,7 @@ Create new navigation property to usageRights for users
 ```
 New-MgUserAuthenticationMicrosoftAuthenticatorMethodDeviceUsageRights
  -MicrosoftAuthenticatorAuthenticationMethodId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-CatalogId <String>] [-Id <String>] [-ServiceIdentifier <String>] [-State <String>] [-Confirm] [-WhatIf]
+ [-CatalogId <String>] [-Id <String>] [-ServiceIdentifier <String>] [-State <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -24,20 +24,20 @@ New-MgUserAuthenticationMicrosoftAuthenticatorMethodDeviceUsageRights
 ```
 New-MgUserAuthenticationMicrosoftAuthenticatorMethodDeviceUsageRights
  -MicrosoftAuthenticatorAuthenticationMethodId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphUsageRight> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgUserAuthenticationMicrosoftAuthenticatorMethodDeviceUsageRights -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphUsageRight> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUsageRight> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgUserAuthenticationMicrosoftAuthenticatorMethodDeviceUsageRights -InputObject <IIdentitySignInsIdentity>
  [-AdditionalProperties <Hashtable>] [-CatalogId <String>] [-Id <String>] [-ServiceIdentifier <String>]
- [-State <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-State <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgUserAuthenticationMicrosoftAuthenticatorMethodDeviceUsageRights -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphUsageRight> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,7 +51,7 @@ Create new navigation property to usageRights for users
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -67,7 +67,7 @@ usageRight
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUsageRight
+Type: IMicrosoftGraphUsageRight
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 Product id corresponding to the usage right.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -113,8 +113,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IIdentitySignInsIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -128,8 +128,8 @@ Accept wildcard characters: False
 key: id of microsoftAuthenticatorAuthenticationMethod
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 Identifier of the service corresponding to the usage right.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 usageRightState
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -173,8 +173,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -204,7 +204,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -221,13 +221,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUsageRight
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUsageRight
-
 ## NOTES
 
 ALIASES
@@ -307,4 +304,3 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-

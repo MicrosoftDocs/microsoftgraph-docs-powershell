@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mguserauthenticationmicrosoftauthenticatormethoddeviceregisteredownerbyref
 schema: 2.0.0
@@ -16,27 +16,27 @@ Create new navigation property ref to registeredOwners for users
 ```
 New-MgUserAuthenticationMicrosoftAuthenticatorMethodDeviceRegisteredOwnerByRef
  -MicrosoftAuthenticatorAuthenticationMethodId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgUserAuthenticationMicrosoftAuthenticatorMethodDeviceRegisteredOwnerByRef
- -MicrosoftAuthenticatorAuthenticationMethodId <String> -UserId <String> -BodyParameter <Hashtable> [-Confirm]
- [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgUserAuthenticationMicrosoftAuthenticatorMethodDeviceRegisteredOwnerByRef
- -InputObject <IIdentitySignInsIdentity> -BodyParameter <Hashtable> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -MicrosoftAuthenticatorAuthenticationMethodId <String> -UserId <String> -BodyParameter <Hashtable> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgUserAuthenticationMicrosoftAuthenticatorMethodDeviceRegisteredOwnerByRef
- -InputObject <IIdentitySignInsIdentity> [-AdditionalProperties <Hashtable>] [-Confirm] [-WhatIf]
+ -InputObject <IIdentitySignInsIdentity> [-AdditionalProperties <Hashtable>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgUserAuthenticationMicrosoftAuthenticatorMethodDeviceRegisteredOwnerByRef
+ -InputObject <IIdentitySignInsIdentity> -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -50,7 +50,7 @@ Create new navigation property ref to registeredOwners for users
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -81,8 +81,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IIdentitySignInsIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -96,8 +96,8 @@ Accept wildcard characters: False
 key: id of microsoftAuthenticatorAuthenticationMethod
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -111,8 +111,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -142,7 +142,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -159,13 +159,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPathsHpdd8LUsersUserIdAuthenticationMicrosoftauthenticatormethodsMicrosoftauthenticatorauthenticationmethodIdDeviceRegisteredownersRefPostResponses201ContentApplicationJsonSchema
-
 ## NOTES
 
 ALIASES
@@ -238,4 +235,3 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-

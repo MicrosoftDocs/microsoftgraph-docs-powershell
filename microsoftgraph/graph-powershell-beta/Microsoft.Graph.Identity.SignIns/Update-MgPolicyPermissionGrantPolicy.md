@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgpolicypermissiongrantpolicy
 schema: 2.0.0
@@ -17,20 +17,14 @@ Update the navigation property permissionGrantPolicies in policies
 Update-MgPolicyPermissionGrantPolicy -PermissionGrantPolicyId <String> [-AdditionalProperties <Hashtable>]
  [-DeletedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
  [-Excludes <IMicrosoftGraphPermissionGrantConditionSet1[]>] [-Id <String>]
- [-Includes <IMicrosoftGraphPermissionGrantConditionSet1[]>] [-PassThru] [-Confirm] [-WhatIf]
+ [-Includes <IMicrosoftGraphPermissionGrantConditionSet1[]>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgPolicyPermissionGrantPolicy -PermissionGrantPolicyId <String>
- -BodyParameter <IMicrosoftGraphPermissionGrantPolicy1> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgPolicyPermissionGrantPolicy -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphPermissionGrantPolicy1> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPermissionGrantPolicy1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -38,8 +32,14 @@ Update-MgPolicyPermissionGrantPolicy -InputObject <IIdentitySignInsIdentity>
 Update-MgPolicyPermissionGrantPolicy -InputObject <IIdentitySignInsIdentity>
  [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>] [-Description <String>]
  [-DisplayName <String>] [-Excludes <IMicrosoftGraphPermissionGrantConditionSet1[]>] [-Id <String>]
- [-Includes <IMicrosoftGraphPermissionGrantConditionSet1[]>] [-PassThru] [-Confirm] [-WhatIf]
+ [-Includes <IMicrosoftGraphPermissionGrantConditionSet1[]>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgPolicyPermissionGrantPolicy -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphPermissionGrantPolicy1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,7 +53,7 @@ Update the navigation property permissionGrantPolicies in policies
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -69,7 +69,7 @@ permissionGrantPolicy
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermissionGrantPolicy1
+Type: IMicrosoftGraphPermissionGrantPolicy1
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -85,7 +85,7 @@ Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -101,7 +101,7 @@ Description for this policy.
 Required.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -117,7 +117,7 @@ Display name for this policy.
 Required.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -134,7 +134,7 @@ Automatically expanded on GET.
 To construct, please use Get-Help -Online and see NOTES section for EXCLUDES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermissionGrantConditionSet1[]
+Type: IMicrosoftGraphPermissionGrantConditionSet1[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -166,7 +166,7 @@ Automatically expanded on GET.
 To construct, please use Get-Help -Online and see NOTES section for INCLUDES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermissionGrantConditionSet1[]
+Type: IMicrosoftGraphPermissionGrantConditionSet1[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -182,8 +182,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IIdentitySignInsIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -212,8 +212,8 @@ Accept wildcard characters: False
 key: id of permissionGrantPolicy
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -243,7 +243,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -260,13 +260,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermissionGrantPolicy1
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -383,3 +380,4 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
+## RELATED LINKS

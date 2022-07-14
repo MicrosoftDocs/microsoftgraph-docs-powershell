@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mguserauthenticationwindowhelloforbusinessmethod
 schema: 2.0.0
@@ -17,21 +17,14 @@ Update the navigation property windowsHelloForBusinessMethods in users
 Update-MgUserAuthenticationWindowHelloForBusinessMethod -UserId <String>
  -WindowsHelloForBusinessAuthenticationMethodId <String> [-AdditionalProperties <Hashtable>]
  [-CreatedDateTime <DateTime>] [-Device <IMicrosoftGraphDevice1>] [-DisplayName <String>] [-Id <String>]
- [-KeyStrength <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-KeyStrength <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgUserAuthenticationWindowHelloForBusinessMethod -UserId <String>
  -WindowsHelloForBusinessAuthenticationMethodId <String>
- -BodyParameter <IMicrosoftGraphWindowsHelloForBusinessAuthenticationMethod1> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgUserAuthenticationWindowHelloForBusinessMethod -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphWindowsHelloForBusinessAuthenticationMethod1> [-PassThru] [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphWindowsHelloForBusinessAuthenticationMethod1> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -39,7 +32,14 @@ Update-MgUserAuthenticationWindowHelloForBusinessMethod -InputObject <IIdentityS
 ```
 Update-MgUserAuthenticationWindowHelloForBusinessMethod -InputObject <IIdentitySignInsIdentity>
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Device <IMicrosoftGraphDevice1>]
- [-DisplayName <String>] [-Id <String>] [-KeyStrength <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [-DisplayName <String>] [-Id <String>] [-KeyStrength <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgUserAuthenticationWindowHelloForBusinessMethod -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphWindowsHelloForBusinessAuthenticationMethod1> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -54,7 +54,7 @@ Update the navigation property windowsHelloForBusinessMethods in users
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -70,7 +70,7 @@ windowsHelloForBusinessAuthenticationMethod
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsHelloForBusinessAuthenticationMethod1
+Type: IMicrosoftGraphWindowsHelloForBusinessAuthenticationMethod1
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 The date and time that this Windows Hello for Business key was registered.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -101,7 +101,7 @@ device
 To construct, please use Get-Help -Online and see NOTES section for DEVICE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDevice1
+Type: IMicrosoftGraphDevice1
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 The name of the device on which Windows Hello for Business is registered
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -147,8 +147,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IIdentitySignInsIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 authenticationMethodKeyStrength
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -192,8 +192,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -207,8 +207,8 @@ Accept wildcard characters: False
 key: id of windowsHelloForBusinessAuthenticationMethod
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -238,7 +238,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -255,13 +255,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsHelloForBusinessAuthenticationMethod1
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -515,3 +512,4 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
+## RELATED LINKS

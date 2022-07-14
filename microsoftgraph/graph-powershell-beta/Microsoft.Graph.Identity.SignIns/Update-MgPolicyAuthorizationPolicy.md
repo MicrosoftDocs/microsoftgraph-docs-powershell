@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthorizationpolicy
 schema: 2.0.0
@@ -15,37 +15,37 @@ Update the navigation property authorizationPolicy in policies
 ### UpdateExpanded (Default)
 ```
 Update-MgPolicyAuthorizationPolicy -AuthorizationPolicyId <String> [-AdditionalProperties <Hashtable>]
- [-AllowedToSignUpEmailBasedSubscriptions] [-AllowedToUseSspr] [-AllowEmailVerifiedUsersToJoinOrganization]
- [-AllowInvitesFrom <String>] [-BlockMsolPowerShell]
+ [-AllowEmailVerifiedUsersToJoinOrganization] [-AllowInvitesFrom <String>]
+ [-AllowedToSignUpEmailBasedSubscriptions] [-AllowedToUseSspr] [-BlockMsolPowerShell]
  [-DefaultUserRoleOverrides <IMicrosoftGraphDefaultUserRoleOverride[]>]
  [-DefaultUserRolePermissions <IMicrosoftGraphDefaultUserRolePermissions1>] [-DeletedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-EnabledPreviewFeatures <String[]>]
  [-GuestUserRoleId <String>] [-Id <String>] [-PermissionGrantPolicyIdsAssignedToDefaultUserRole <String[]>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgPolicyAuthorizationPolicy -AuthorizationPolicyId <String>
- -BodyParameter <IMicrosoftGraphAuthorizationPolicy1> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgPolicyAuthorizationPolicy -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphAuthorizationPolicy1> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAuthorizationPolicy1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgPolicyAuthorizationPolicy -InputObject <IIdentitySignInsIdentity> [-AdditionalProperties <Hashtable>]
- [-AllowedToSignUpEmailBasedSubscriptions] [-AllowedToUseSspr] [-AllowEmailVerifiedUsersToJoinOrganization]
- [-AllowInvitesFrom <String>] [-BlockMsolPowerShell]
+ [-AllowEmailVerifiedUsersToJoinOrganization] [-AllowInvitesFrom <String>]
+ [-AllowedToSignUpEmailBasedSubscriptions] [-AllowedToUseSspr] [-BlockMsolPowerShell]
  [-DefaultUserRoleOverrides <IMicrosoftGraphDefaultUserRoleOverride[]>]
  [-DefaultUserRolePermissions <IMicrosoftGraphDefaultUserRolePermissions1>] [-DeletedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-EnabledPreviewFeatures <String[]>]
  [-GuestUserRoleId <String>] [-Id <String>] [-PermissionGrantPolicyIdsAssignedToDefaultUserRole <String[]>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgPolicyAuthorizationPolicy -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphAuthorizationPolicy1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -59,7 +59,7 @@ Update the navigation property authorizationPolicy in policies
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 Indicates whether users can sign up for email based subscriptions.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 Indicates whether the Self-Serve Password Reset feature can be used by users on the tenant.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 Indicates whether a user can join the tenant by email validation.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 allowInvitesFrom
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -134,8 +134,8 @@ Accept wildcard characters: False
 key: id of authorizationPolicy
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -151,7 +151,7 @@ This will also disable user-based access to the legacy service endpoint used by 
 This does not affect Azure AD Connect or Microsoft Graph.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -167,7 +167,7 @@ authorizationPolicy
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthorizationPolicy1
+Type: IMicrosoftGraphAuthorizationPolicy1
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for DEFAULTUSERROLEOVERRIDES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDefaultUserRoleOverride[]
+Type: IMicrosoftGraphDefaultUserRoleOverride[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -199,7 +199,7 @@ defaultUserRolePermissions
 To construct, please use Get-Help -Online and see NOTES section for DEFAULTUSERROLEPERMISSIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDefaultUserRolePermissions1
+Type: IMicrosoftGraphDefaultUserRolePermissions1
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -215,7 +215,7 @@ Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -231,7 +231,7 @@ Description for this policy.
 Required.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -247,7 +247,7 @@ Display name for this policy.
 Required.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -262,7 +262,7 @@ Accept wildcard characters: False
 List of features enabled for private preview on the tenant.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -279,7 +279,7 @@ Refer to List unifiedRoleDefinitions to find the list of available role template
 Currently following roles are supported: User (a0b1b346-4d3e-4e8b-98f8-753987be4970), Guest User (10dae51f-b6af-4016-8d66-8c2a99b929b3), and Restricted Guest User (2af84b1e-32c8-42b7-82bc-daa82404023b).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -294,7 +294,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -310,8 +310,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IIdentitySignInsIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -325,7 +325,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -342,7 +342,7 @@ Values should be in the format managePermissionGrantsForSelf.{id}, where {id} is
 An empty list indicates user consent to apps is disabled.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -357,7 +357,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -373,7 +373,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -390,13 +390,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthorizationPolicy1
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -510,4 +507,3 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-

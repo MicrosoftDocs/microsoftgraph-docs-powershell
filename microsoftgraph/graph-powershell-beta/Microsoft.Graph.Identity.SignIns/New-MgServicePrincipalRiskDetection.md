@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgserviceprincipalriskdetection
 schema: 2.0.0
@@ -16,17 +16,17 @@ Create new navigation property to servicePrincipalRiskDetections for identityPro
 ```
 New-MgServicePrincipalRiskDetection [-Activity <String>] [-ActivityDateTime <DateTime>]
  [-AdditionalInfo <String>] [-AdditionalProperties <Hashtable>] [-AppId <String>] [-CorrelationId <String>]
- [-DetectedDateTime <DateTime>] [-DetectionTimingType <String>] [-Id <String>] [-IPAddress <String>]
+ [-DetectedDateTime <DateTime>] [-DetectionTimingType <String>] [-IPAddress <String>] [-Id <String>]
  [-KeyIds <String[]>] [-LastUpdatedDateTime <DateTime>] [-Location <IMicrosoftGraphSignInLocation>]
  [-RequestId <String>] [-RiskDetail <String>] [-RiskEventType <String>] [-RiskLevel <String>]
  [-RiskState <String>] [-ServicePrincipalDisplayName <String>] [-ServicePrincipalId <String>]
- [-Source <String>] [-TokenIssuerType <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Source <String>] [-TokenIssuerType <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgServicePrincipalRiskDetection -BodyParameter <IMicrosoftGraphServicePrincipalRiskDetection> [-Confirm]
- [-WhatIf] [<CommonParameters>]
+New-MgServicePrincipalRiskDetection -BodyParameter <IMicrosoftGraphServicePrincipalRiskDetection> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -40,7 +40,7 @@ Create new navigation property to servicePrincipalRiskDetections for identityPro
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -57,7 +57,7 @@ The DateTimeOffset type represents date and time information using ISO 8601 form
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -73,7 +73,7 @@ Additional information associated with the risk detection.
 This string value is represented as a JSON object with the quotations escaped.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 The unique identifier for the associated application.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -119,7 +119,7 @@ servicePrincipalRiskDetection
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServicePrincipalRiskDetection
+Type: IMicrosoftGraphServicePrincipalRiskDetection
 Parameter Sets: Create
 Aliases:
 
@@ -135,7 +135,7 @@ Correlation ID of the sign-in activity associated with the risk detection.
 This property is null if the risk detection is not associated with a sign-in activity.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -152,7 +152,7 @@ The DateTimeOffset type represents date and time information using ISO 8601 form
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 riskDetectionTimingType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 Provides the IP address of the client from where the risk occurred.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -212,7 +212,7 @@ Accept wildcard characters: False
 The unique identifier (GUID) for the key credential associated with the risk detection.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 Date and time when the risk detection was last updated.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -243,7 +243,7 @@ signInLocation
 To construct, please use Get-Help -Online and see NOTES section for LOCATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSignInLocation
+Type: IMicrosoftGraphSignInLocation
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -260,7 +260,7 @@ This property is null if the risk detection is not associated with a sign-in act
 Supports $filter (eq).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -275,7 +275,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -292,7 +292,7 @@ The possible values are: investigationsThreatIntelligence, generic, adminConfirm
 Supports $filter (eq).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -307,7 +307,7 @@ Accept wildcard characters: False
 riskLevel
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -322,7 +322,7 @@ Accept wildcard characters: False
 riskState
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -337,7 +337,7 @@ Accept wildcard characters: False
 The display name for the service principal.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -353,7 +353,7 @@ The unique identifier for the service principal.
 Supports $filter (eq).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -369,7 +369,7 @@ Source of the risk detection.
 For example, identityProtection.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -384,7 +384,7 @@ Accept wildcard characters: False
 tokenIssuerType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -399,7 +399,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -415,7 +415,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -432,11 +432,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServicePrincipalRiskDetection
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServicePrincipalRiskDetection
-
 ## NOTES
 
 ALIASES
@@ -491,4 +489,3 @@ LOCATION <IMicrosoftGraphSignInLocation>: signInLocation
   - `[State <String>]`: Provides the State where the sign-in originated. This is calculated using latitude/longitude information from the sign-in activity.
 
 ## RELATED LINKS
-

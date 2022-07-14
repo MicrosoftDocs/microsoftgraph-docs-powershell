@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgoauth2permissiongrantdelta
@@ -30,7 +30,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOAuth2PermissionGrant
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOAuth2PermissionGrant1
 ## NOTES
 
 ALIASES

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mguserauthenticationwindowhelloforbusinessmethoddeviceusagerights
 schema: 2.0.0
@@ -16,30 +16,30 @@ Update the navigation property usageRights in users
 ```
 Update-MgUserAuthenticationWindowHelloForBusinessMethodDeviceUsageRights -UsageRightId <String>
  -UserId <String> -WindowsHelloForBusinessAuthenticationMethodId <String> [-AdditionalProperties <Hashtable>]
- [-CatalogId <String>] [-Id <String>] [-ServiceIdentifier <String>] [-State <String>] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-CatalogId <String>] [-Id <String>] [-ServiceIdentifier <String>] [-State <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgUserAuthenticationWindowHelloForBusinessMethodDeviceUsageRights -UsageRightId <String>
  -UserId <String> -WindowsHelloForBusinessAuthenticationMethodId <String>
- -BodyParameter <IMicrosoftGraphUsageRight> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgUserAuthenticationWindowHelloForBusinessMethodDeviceUsageRights
- -InputObject <IIdentitySignInsIdentity> -BodyParameter <IMicrosoftGraphUsageRight> [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUsageRight> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgUserAuthenticationWindowHelloForBusinessMethodDeviceUsageRights
  -InputObject <IIdentitySignInsIdentity> [-AdditionalProperties <Hashtable>] [-CatalogId <String>]
- [-Id <String>] [-ServiceIdentifier <String>] [-State <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [-Id <String>] [-ServiceIdentifier <String>] [-State <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgUserAuthenticationWindowHelloForBusinessMethodDeviceUsageRights
+ -InputObject <IIdentitySignInsIdentity> -BodyParameter <IMicrosoftGraphUsageRight> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,7 +53,7 @@ Update the navigation property usageRights in users
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -69,7 +69,7 @@ usageRight
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUsageRight
+Type: IMicrosoftGraphUsageRight
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 Product id corresponding to the usage right.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -115,8 +115,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IIdentitySignInsIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 Identifier of the service corresponding to the usage right.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 usageRightState
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -175,8 +175,8 @@ Accept wildcard characters: False
 key: id of usageRight
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -190,8 +190,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -205,8 +205,8 @@ Accept wildcard characters: False
 key: id of windowsHelloForBusinessAuthenticationMethod
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -220,7 +220,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -236,7 +236,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -253,13 +253,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUsageRight
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -339,4 +336,3 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-

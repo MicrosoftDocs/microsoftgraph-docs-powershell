@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mguserinformationprotectionpolicylabel
 schema: 2.0.0
@@ -16,20 +16,14 @@ Create new navigation property to labels for users
 ```
 New-MgUserInformationProtectionPolicyLabel -UserId <String> [-AdditionalProperties <Hashtable>]
  [-Color <String>] [-Description <String>] [-Id <String>] [-IsActive] [-Name <String>]
- [-Parent <IMicrosoftGraphParentLabelDetails>] [-Sensitivity <Int32>] [-Tooltip <String>] [-Confirm] [-WhatIf]
+ [-Parent <IMicrosoftGraphParentLabelDetails>] [-Sensitivity <Int32>] [-Tooltip <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgUserInformationProtectionPolicyLabel -UserId <String>
- -BodyParameter <IMicrosoftGraphInformationProtectionLabel> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgUserInformationProtectionPolicyLabel -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphInformationProtectionLabel> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphInformationProtectionLabel> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -37,7 +31,13 @@ New-MgUserInformationProtectionPolicyLabel -InputObject <IIdentitySignInsIdentit
 New-MgUserInformationProtectionPolicyLabel -InputObject <IIdentitySignInsIdentity>
  [-AdditionalProperties <Hashtable>] [-Color <String>] [-Description <String>] [-Id <String>] [-IsActive]
  [-Name <String>] [-Parent <IMicrosoftGraphParentLabelDetails>] [-Sensitivity <Int32>] [-Tooltip <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgUserInformationProtectionPolicyLabel -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphInformationProtectionLabel> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,7 +51,7 @@ Create new navigation property to labels for users
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -67,7 +67,7 @@ informationProtectionLabel
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationProtectionLabel
+Type: IMicrosoftGraphInformationProtectionLabel
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 The color that the UI should display for the label, if configured.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 The admin-defined description for the label.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -128,8 +128,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IIdentitySignInsIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -144,7 +144,7 @@ Indicates whether the label is active or not.
 Active labels should be hidden or disabled in UI.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 The plaintext name of the label.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -175,7 +175,7 @@ parentLabelDetails
 To construct, please use Get-Help -Online and see NOTES section for PARENT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphParentLabelDetails
+Type: IMicrosoftGraphParentLabelDetails
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 The sensitivity value of the label, where lower is less sensitive.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -205,7 +205,7 @@ Accept wildcard characters: False
 The tooltip that should be displayed for the label in a UI.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -220,8 +220,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -235,7 +235,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -251,7 +251,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -268,13 +268,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationProtectionLabel
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationProtectionLabel
-
 ## NOTES
 
 ALIASES
@@ -378,4 +375,3 @@ PARENT <IMicrosoftGraphParentLabelDetails>: parentLabelDetails
   - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a user interface.
 
 ## RELATED LINKS
-

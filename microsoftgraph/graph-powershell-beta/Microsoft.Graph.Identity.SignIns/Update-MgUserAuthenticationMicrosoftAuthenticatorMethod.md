@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mguserauthenticationmicrosoftauthenticatormethod
 schema: 2.0.0
@@ -17,29 +17,29 @@ Update the navigation property microsoftAuthenticatorMethods in users
 Update-MgUserAuthenticationMicrosoftAuthenticatorMethod -MicrosoftAuthenticatorAuthenticationMethodId <String>
  -UserId <String> [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
  [-Device <IMicrosoftGraphDevice1>] [-DeviceTag <String>] [-DisplayName <String>] [-Id <String>]
- [-PhoneAppVersion <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PhoneAppVersion <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgUserAuthenticationMicrosoftAuthenticatorMethod -MicrosoftAuthenticatorAuthenticationMethodId <String>
  -UserId <String> -BodyParameter <IMicrosoftGraphMicrosoftAuthenticatorAuthenticationMethod1> [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgUserAuthenticationMicrosoftAuthenticatorMethod -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphMicrosoftAuthenticatorAuthenticationMethod1> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgUserAuthenticationMicrosoftAuthenticatorMethod -InputObject <IIdentitySignInsIdentity>
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Device <IMicrosoftGraphDevice1>]
- [-DeviceTag <String>] [-DisplayName <String>] [-Id <String>] [-PhoneAppVersion <String>] [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-DeviceTag <String>] [-DisplayName <String>] [-Id <String>] [-PhoneAppVersion <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgUserAuthenticationMicrosoftAuthenticatorMethod -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphMicrosoftAuthenticatorAuthenticationMethod1> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,7 +53,7 @@ Update the navigation property microsoftAuthenticatorMethods in users
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -69,7 +69,7 @@ microsoftAuthenticatorAuthenticationMethod
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMicrosoftAuthenticatorAuthenticationMethod1
+Type: IMicrosoftGraphMicrosoftAuthenticatorAuthenticationMethod1
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -85,7 +85,7 @@ The date and time that this app was registered.
 This property is null if the device is not registered for passwordless Phone Sign-In.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -101,7 +101,7 @@ device
 To construct, please use Get-Help -Online and see NOTES section for DEVICE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDevice1
+Type: IMicrosoftGraphDevice1
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 Tags containing app metadata.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 The name of the device on which this app is registered.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -162,8 +162,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IIdentitySignInsIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -177,8 +177,8 @@ Accept wildcard characters: False
 key: id of microsoftAuthenticatorAuthenticationMethod
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 Numerical version of this instance of the Authenticator app.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -222,8 +222,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -237,7 +237,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -253,7 +253,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -270,13 +270,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMicrosoftAuthenticatorAuthenticationMethod1
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -531,3 +528,4 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
+## RELATED LINKS

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgpolicyrolemanagementpolicy
 schema: 2.0.0
@@ -14,36 +14,36 @@ Update the navigation property roleManagementPolicies in policies
 
 ### UpdateExpanded (Default)
 ```
-Update-MgPolicyRoleManagementPolicy -UnifiedRoleManagementPolicyId <String>
- [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>]
+Update-MgPolicyRoleManagementPolicy -UnifiedRoleManagementPolicyId <String> [-AdditionalProperties <Hashtable>]
+ [-Description <String>] [-DisplayName <String>]
  [-EffectiveRules <IMicrosoftGraphUnifiedRoleManagementPolicyRule1[]>] [-Id <String>] [-IsOrganizationDefault]
  [-LastModifiedBy <IMicrosoftGraphIdentity>] [-LastModifiedDateTime <DateTime>]
  [-Rules <IMicrosoftGraphUnifiedRoleManagementPolicyRule1[]>] [-ScopeId <String>] [-ScopeType <String>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgPolicyRoleManagementPolicy -UnifiedRoleManagementPolicyId <String>
- -BodyParameter <IMicrosoftGraphUnifiedRoleManagementPolicy1> [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgPolicyRoleManagementPolicy -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphUnifiedRoleManagementPolicy1> [-PassThru] [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphUnifiedRoleManagementPolicy1> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgPolicyRoleManagementPolicy -InputObject <IIdentitySignInsIdentity>
- [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>]
+Update-MgPolicyRoleManagementPolicy -InputObject <IIdentitySignInsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Description <String>] [-DisplayName <String>]
  [-EffectiveRules <IMicrosoftGraphUnifiedRoleManagementPolicyRule1[]>] [-Id <String>] [-IsOrganizationDefault]
  [-LastModifiedBy <IMicrosoftGraphIdentity>] [-LastModifiedDateTime <DateTime>]
  [-Rules <IMicrosoftGraphUnifiedRoleManagementPolicyRule1[]>] [-ScopeId <String>] [-ScopeType <String>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgPolicyRoleManagementPolicy -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphUnifiedRoleManagementPolicy1> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -57,7 +57,7 @@ Update the navigation property roleManagementPolicies in policies
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -73,7 +73,7 @@ unifiedRoleManagementPolicy
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementPolicy1
+Type: IMicrosoftGraphUnifiedRoleManagementPolicy1
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 Description for the policy.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 Display name for the policy.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -121,7 +121,7 @@ Supports $expand.
 To construct, please use Get-Help -Online and see NOTES section for EFFECTIVERULES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementPolicyRule1[]
+Type: IMicrosoftGraphUnifiedRoleManagementPolicyRule1[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -136,7 +136,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -152,8 +152,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IIdentitySignInsIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -169,7 +169,7 @@ Set the scopeId to / and scopeType to Directory.
 Supports $filter (eq, ne).
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -185,7 +185,7 @@ identity
 To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentity
+Type: IMicrosoftGraphIdentity
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 The time when the role setting was last modified.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -232,7 +232,7 @@ Supports $expand.
 To construct, please use Get-Help -Online and see NOTES section for RULES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementPolicyRule1[]
+Type: IMicrosoftGraphUnifiedRoleManagementPolicyRule1[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -249,7 +249,7 @@ Can be / for the tenant or a group ID.
 Required.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -266,7 +266,7 @@ One of Directory, DirectoryRole.
 Required.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -281,8 +281,8 @@ Accept wildcard characters: False
 key: id of unifiedRoleManagementPolicy
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -296,7 +296,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -312,7 +312,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -329,13 +329,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementPolicy1
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -467,3 +464,4 @@ RULES <IMicrosoftGraphUnifiedRoleManagementPolicyRule1[]>: The collection of rul
 
 ## RELATED LINKS
 
+## RELATED LINKS
