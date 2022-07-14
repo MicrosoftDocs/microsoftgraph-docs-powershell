@@ -1,46 +1,47 @@
 ---
 external help file: Microsoft.Graph.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.WindowsUpdates
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/add-mgwindowsupdatesupdatableassetmemberbyid
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/remove-mgwindowsupdatesdeploymentaudiencememberbyid
 schema: 2.0.0
 ---
 
-# Add-MgWindowsUpdatesUpdatableAssetMemberById
+# Remove-MgWindowsUpdatesDeploymentAudienceMemberById
 
 ## SYNOPSIS
-Invoke action addMembersById
+Invoke action removeMembersById
 
 ## SYNTAX
 
-### AddExpanded (Default)
+### RemoveExpanded (Default)
 ```
-Add-MgWindowsUpdatesUpdatableAssetMemberById -UpdatableAssetId <String> [-AdditionalProperties <Hashtable>]
- [-Ids <String[]>] [-MemberEntityType <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Add
-```
-Add-MgWindowsUpdatesUpdatableAssetMemberById -UpdatableAssetId <String>
- -BodyParameter <IPathsHfkndjAdminWindowsUpdatesUpdatableassetsUpdatableassetIdMicrosoftGraphWindowsupdatesAddmembersbyidPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### AddViaIdentityExpanded
-```
-Add-MgWindowsUpdatesUpdatableAssetMemberById -InputObject <IWindowsUpdatesIdentity>
+Remove-MgWindowsUpdatesDeploymentAudienceMemberById -DeploymentId <String> -UpdatableAssetId <String>
  [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-MemberEntityType <String>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### AddViaIdentity
+### Remove
 ```
-Add-MgWindowsUpdatesUpdatableAssetMemberById -InputObject <IWindowsUpdatesIdentity>
- -BodyParameter <IPathsHfkndjAdminWindowsUpdatesUpdatableassetsUpdatableassetIdMicrosoftGraphWindowsupdatesAddmembersbyidPostRequestbodyContentApplicationJsonSchema>
+Remove-MgWindowsUpdatesDeploymentAudienceMemberById -DeploymentId <String> -UpdatableAssetId <String>
+ -BodyParameter <IPaths1Xlrv16AdminWindowsUpdatesDeploymentsDeploymentIdAudienceMembersUpdatableassetIdMicrosoftGraphWindowsupdatesRemovemembersbyidPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### RemoveViaIdentityExpanded
+```
+Remove-MgWindowsUpdatesDeploymentAudienceMemberById -InputObject <IWindowsUpdatesIdentity>
+ [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-MemberEntityType <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### RemoveViaIdentity
+```
+Remove-MgWindowsUpdatesDeploymentAudienceMemberById -InputObject <IWindowsUpdatesIdentity>
+ -BodyParameter <IPaths1Xlrv16AdminWindowsUpdatesDeploymentsDeploymentIdAudienceMembersUpdatableassetIdMicrosoftGraphWindowsupdatesRemovemembersbyidPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action addMembersById
+Invoke action removeMembersById
 
 ## EXAMPLES
 
@@ -58,7 +59,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: AddExpanded, AddViaIdentityExpanded
+Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -73,8 +74,8 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsHfkndjAdminWindowsUpdatesUpdatableassetsUpdatableassetIdMicrosoftGraphWindowsupdatesAddmembersbyidPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Add, AddViaIdentity
+Type: IPaths1Xlrv16AdminWindowsUpdatesDeploymentsDeploymentIdAudienceMembersUpdatableassetIdMicrosoftGraphWindowsupdatesRemovemembersbyidPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Remove, RemoveViaIdentity
 Aliases:
 
 Required: True
@@ -84,12 +85,27 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -DeploymentId
+key: id of deployment
+
+```yaml
+Type: String
+Parameter Sets: RemoveExpanded, Remove
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Ids
 .
 
 ```yaml
 Type: String[]
-Parameter Sets: AddExpanded, AddViaIdentityExpanded
+Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -105,7 +121,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IWindowsUpdatesIdentity
-Parameter Sets: AddViaIdentityExpanded, AddViaIdentity
+Parameter Sets: RemoveViaIdentityExpanded, RemoveViaIdentity
 Aliases:
 
 Required: True
@@ -120,7 +136,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: AddExpanded, AddViaIdentityExpanded
+Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -150,7 +166,7 @@ key: id of updatableAsset
 
 ```yaml
 Type: String
-Parameter Sets: AddExpanded, Add
+Parameter Sets: RemoveExpanded, Remove
 Aliases:
 
 Required: True
@@ -196,7 +212,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsHfkndjAdminWindowsUpdatesUpdatableassetsUpdatableassetIdMicrosoftGraphWindowsupdatesAddmembersbyidPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IPaths1Xlrv16AdminWindowsUpdatesDeploymentsDeploymentIdAudienceMembersUpdatableassetIdMicrosoftGraphWindowsupdatesRemovemembersbyidPostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.PowerShell.Models.IWindowsUpdatesIdentity
 ## OUTPUTS
 
@@ -206,5 +222,5 @@ Please use Get-Help -Online.
 
 ## RELATED LINKS
 
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/add-mgwindowsupdatesupdatableassetmemberbyid](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/add-mgwindowsupdatesupdatableassetmemberbyid)
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/remove-mgwindowsupdatesdeploymentaudiencememberbyid](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/remove-mgwindowsupdatesdeploymentaudiencememberbyid)
 

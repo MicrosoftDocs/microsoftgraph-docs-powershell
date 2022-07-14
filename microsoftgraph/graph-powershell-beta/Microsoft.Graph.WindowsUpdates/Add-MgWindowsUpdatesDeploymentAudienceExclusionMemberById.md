@@ -1,47 +1,47 @@
 ---
 external help file: Microsoft.Graph.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.WindowsUpdates
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/add-mgwindowsupdatesdeploymentaudiencemember
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/add-mgwindowsupdatesdeploymentaudienceexclusionmemberbyid
 schema: 2.0.0
 ---
 
-# Add-MgWindowsUpdatesDeploymentAudienceMember
+# Add-MgWindowsUpdatesDeploymentAudienceExclusionMemberById
 
 ## SYNOPSIS
-Invoke action addMembers
+Invoke action addMembersById
 
 ## SYNTAX
 
 ### AddExpanded (Default)
 ```
-Add-MgWindowsUpdatesDeploymentAudienceMember -DeploymentId <String> -UpdatableAssetId <String>
- [-AdditionalProperties <Hashtable>] [-Assets <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Add-MgWindowsUpdatesDeploymentAudienceExclusionMemberById -DeploymentId <String> -UpdatableAssetId <String>
+ [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-MemberEntityType <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Add
 ```
-Add-MgWindowsUpdatesDeploymentAudienceMember -DeploymentId <String> -UpdatableAssetId <String>
- -BodyParameter <IPathsWx3DylAdminWindowsUpdatesDeploymentsDeploymentIdAudienceMembersUpdatableassetIdMicrosoftGraphWindowsupdatesAddmembersPostRequestbodyContentApplicationJsonSchema>
+Add-MgWindowsUpdatesDeploymentAudienceExclusionMemberById -DeploymentId <String> -UpdatableAssetId <String>
+ -BodyParameter <IPaths1Qu5FucAdminWindowsUpdatesDeploymentsDeploymentIdAudienceExclusionsUpdatableassetIdMicrosoftGraphWindowsupdatesAddmembersbyidPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AddViaIdentityExpanded
 ```
-Add-MgWindowsUpdatesDeploymentAudienceMember -InputObject <IWindowsUpdatesIdentity>
- [-AdditionalProperties <Hashtable>] [-Assets <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Add-MgWindowsUpdatesDeploymentAudienceExclusionMemberById -InputObject <IWindowsUpdatesIdentity>
+ [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-MemberEntityType <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### AddViaIdentity
 ```
-Add-MgWindowsUpdatesDeploymentAudienceMember -InputObject <IWindowsUpdatesIdentity>
- -BodyParameter <IPathsWx3DylAdminWindowsUpdatesDeploymentsDeploymentIdAudienceMembersUpdatableassetIdMicrosoftGraphWindowsupdatesAddmembersPostRequestbodyContentApplicationJsonSchema>
+Add-MgWindowsUpdatesDeploymentAudienceExclusionMemberById -InputObject <IWindowsUpdatesIdentity>
+ -BodyParameter <IPaths1Qu5FucAdminWindowsUpdatesDeploymentsDeploymentIdAudienceExclusionsUpdatableassetIdMicrosoftGraphWindowsupdatesAddmembersbyidPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action addMembers
+Invoke action addMembersById
 
 ## EXAMPLES
 
@@ -69,28 +69,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Assets
-.
-To construct, please use Get-Help -Online and see NOTES section for ASSETS properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphWindowsUpdatesUpdatableAsset[]
-Parameter Sets: AddExpanded, AddViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -BodyParameter
 .
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsWx3DylAdminWindowsUpdatesDeploymentsDeploymentIdAudienceMembersUpdatableassetIdMicrosoftGraphWindowsupdatesAddmembersPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1Qu5FucAdminWindowsUpdatesDeploymentsDeploymentIdAudienceExclusionsUpdatableassetIdMicrosoftGraphWindowsupdatesAddmembersbyidPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Add, AddViaIdentity
 Aliases:
 
@@ -116,6 +100,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Ids
+.
+
+```yaml
+Type: String[]
+Parameter Sets: AddExpanded, AddViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -129,6 +128,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -MemberEntityType
+.
+
+```yaml
+Type: String
+Parameter Sets: AddExpanded, AddViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -198,7 +212,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsWx3DylAdminWindowsUpdatesDeploymentsDeploymentIdAudienceMembersUpdatableassetIdMicrosoftGraphWindowsupdatesAddmembersPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IPaths1Qu5FucAdminWindowsUpdatesDeploymentsDeploymentIdAudienceExclusionsUpdatableassetIdMicrosoftGraphWindowsupdatesAddmembersbyidPostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.PowerShell.Models.IWindowsUpdatesIdentity
 ## OUTPUTS
 
@@ -208,5 +222,5 @@ Please use Get-Help -Online.
 
 ## RELATED LINKS
 
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/add-mgwindowsupdatesdeploymentaudiencemember](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/add-mgwindowsupdatesdeploymentaudiencemember)
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/add-mgwindowsupdatesdeploymentaudienceexclusionmemberbyid](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/add-mgwindowsupdatesdeploymentaudienceexclusionmemberbyid)
 

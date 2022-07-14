@@ -1,31 +1,31 @@
 ---
 external help file: Microsoft.Graph.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.WindowsUpdates
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/remove-mgwindowsupdatesdeployment
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/remove-mgwindowsupdatesresourceconnection
 schema: 2.0.0
 ---
 
-# Remove-MgWindowsUpdatesDeployment
+# Remove-MgWindowsUpdatesResourceConnection
 
 ## SYNOPSIS
-Delete navigation property deployments for admin
+Delete navigation property resourceConnections for admin
 
 ## SYNTAX
 
 ### Delete (Default)
 ```
-Remove-MgWindowsUpdatesDeployment -DeploymentId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Remove-MgWindowsUpdatesResourceConnection -ResourceConnectionId <String> [-IfMatch <String>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgWindowsUpdatesDeployment -InputObject <IWindowsUpdatesIdentity> [-IfMatch <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgWindowsUpdatesResourceConnection -InputObject <IWindowsUpdatesIdentity> [-IfMatch <String>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete navigation property deployments for admin
+Delete navigation property resourceConnections for admin
 
 ## EXAMPLES
 
@@ -37,21 +37,6 @@ PS C:\> {{ Add example code here }}
 {{ Add example description here }}
 
 ## PARAMETERS
-
-### -DeploymentId
-key: id of deployment
-
-```yaml
-Type: String
-Parameter Sets: Delete
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -IfMatch
 ETag
@@ -95,6 +80,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceConnectionId
+key: id of resourceConnection
+
+```yaml
+Type: String
+Parameter Sets: Delete
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -144,5 +144,5 @@ Please use Get-Help -Online.
 
 ## RELATED LINKS
 
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/remove-mgwindowsupdatesdeployment](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/remove-mgwindowsupdatesdeployment)
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/remove-mgwindowsupdatesresourceconnection](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/remove-mgwindowsupdatesresourceconnection)
 

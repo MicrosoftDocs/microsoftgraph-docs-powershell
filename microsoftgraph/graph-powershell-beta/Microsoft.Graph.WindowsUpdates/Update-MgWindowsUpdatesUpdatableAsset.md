@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.WindowsUpdates
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/update-mgwindowsupdatesupdatableasset
 schema: 2.0.0
@@ -8,40 +8,45 @@ schema: 2.0.0
 # Update-MgWindowsUpdatesUpdatableAsset
 
 ## SYNOPSIS
-Assets registered with the deployment service that can receive updates.
-Read-only.
+Update the navigation property updatableAssets in admin
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgWindowsUpdatesUpdatableAsset -UpdatableAssetId <String> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Id <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgWindowsUpdatesUpdatableAsset -UpdatableAssetId <String> -BodyParameter <Hashtable> [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgWindowsUpdatesUpdatableAsset -InputObject <IWindowsUpdatesIdentity> -BodyParameter <Hashtable>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgWindowsUpdatesUpdatableAsset -InputObject <IWindowsUpdatesIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgWindowsUpdatesUpdatableAsset -InputObject <IWindowsUpdatesIdentity> -BodyParameter <Hashtable>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Assets registered with the deployment service that can receive updates.
-Read-only.
+Update the navigation property updatableAssets in admin
 
 ## EXAMPLES
+
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -49,7 +54,7 @@ Read-only.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -64,7 +69,7 @@ Accept wildcard characters: False
 updatableAsset
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -76,10 +81,10 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -95,8 +100,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IWindowsUpdatesIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IWindowsUpdatesIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -110,13 +115,13 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -125,8 +130,8 @@ Accept wildcard characters: False
 key: id of updatableAsset
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -140,7 +145,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -156,7 +161,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -173,28 +178,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IWindowsUpdatesIdentity
-
 ### System.Collections.Hashtable
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
-
-ALIASES
-
-### Update-MgWuUpdatableAsset
-
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
-
-
-INPUTOBJECT <IWindowsUpdatesIdentity>: Identity Parameter
-  - `[CatalogEntryId <String>]`: key: id of catalogEntry
-  - `[DeploymentId <String>]`: key: id of deployment
-  - `[UpdatableAssetId <String>]`: key: id of updatableAsset
+Please use Get-Help -Online.
 
 ## RELATED LINKS
+
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/update-mgwindowsupdatesupdatableasset](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/update-mgwindowsupdatesupdatableasset)
 

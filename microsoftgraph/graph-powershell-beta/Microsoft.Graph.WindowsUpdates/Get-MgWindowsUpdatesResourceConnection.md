@@ -1,38 +1,38 @@
 ---
 external help file: Microsoft.Graph.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.WindowsUpdates
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/get-mgwindowsupdatesdeploymentaudiencemember
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/get-mgwindowsupdatesresourceconnection
 schema: 2.0.0
 ---
 
-# Get-MgWindowsUpdatesDeploymentAudienceMember
+# Get-MgWindowsUpdatesResourceConnection
 
 ## SYNOPSIS
-Get members from admin
+Get resourceConnections from admin
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgWindowsUpdatesDeploymentAudienceMember -DeploymentId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+Get-MgWindowsUpdatesResourceConnection [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgWindowsUpdatesDeploymentAudienceMember -DeploymentId <String> -UpdatableAssetId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgWindowsUpdatesResourceConnection -ResourceConnectionId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgWindowsUpdatesDeploymentAudienceMember -InputObject <IWindowsUpdatesIdentity>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgWindowsUpdatesResourceConnection -InputObject <IWindowsUpdatesIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get members from admin
+Get resourceConnections from admin
 
 ## EXAMPLES
 
@@ -70,21 +70,6 @@ Parameter Sets: List
 Aliases: CV
 
 Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DeploymentId
-key: id of deployment
-
-```yaml
-Type: String
-Parameter Sets: List, Get
-Aliases:
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -167,6 +152,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ResourceConnectionId
+key: id of resourceConnection
+
+```yaml
+Type: String
+Parameter Sets: Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Search
 Search items by search phrases
 
@@ -212,21 +212,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -UpdatableAssetId
-key: id of updatableAsset
-
-```yaml
-Type: String
-Parameter Sets: Get
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Skip
 Skip the first n items
 
@@ -250,12 +235,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IWindowsUpdatesIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsUpdatesUpdatableAsset
-### System.String
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsUpdatesResourceConnection
 ## NOTES
 Please use Get-Help -Online.
 
 ## RELATED LINKS
 
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/get-mgwindowsupdatesdeploymentaudiencemember](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/get-mgwindowsupdatesdeploymentaudiencemember)
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/get-mgwindowsupdatesresourceconnection](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/get-mgwindowsupdatesresourceconnection)
 
