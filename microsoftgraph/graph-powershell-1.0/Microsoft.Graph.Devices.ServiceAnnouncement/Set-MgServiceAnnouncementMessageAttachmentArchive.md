@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.serviceannouncement/set-mgserviceannouncementmessageattachmentarchive
 schema: 2.0.0
@@ -14,14 +14,14 @@ Update media content for the navigation property messages in admin
 
 ### Set1 (Default)
 ```
-Set-MgServiceAnnouncementMessageAttachmentArchive -ServiceUpdateMessageId <String> -InFile <String>
- [-BodyParameter <Stream>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Set-MgServiceAnnouncementMessageAttachmentArchive -ServiceUpdateMessageId <String> [-BodyParameter <Stream>]
+ -InFile <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SetViaIdentity1
 ```
 Set-MgServiceAnnouncementMessageAttachmentArchive -InputObject <IDevicesServiceAnnouncementIdentity>
- -InFile <String> [-BodyParameter <Stream>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-BodyParameter <Stream>] -InFile <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -35,7 +35,7 @@ Update media content for the navigation property messages in admin
 .
 
 ```yaml
-Type: System.IO.Stream
+Type: Stream
 Parameter Sets: (All)
 Aliases:
 
@@ -52,7 +52,7 @@ This should include a path and file name.
 If you omit the path, the current location will be used.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -68,7 +68,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDevicesServiceAnnouncementIdentity
+Type: IDevicesServiceAnnouncementIdentity
 Parameter Sets: SetViaIdentity1
 Aliases:
 
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 key: id of serviceUpdateMessage
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Set1
 Aliases:
 
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -129,7 +129,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -146,13 +146,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesServiceAnnouncementIdentity
-
 ### System.IO.Stream
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -169,4 +166,3 @@ INPUTOBJECT <IDevicesServiceAnnouncementIdentity>: Identity Parameter
   - `[ServiceUpdateMessageId <String>]`: key: id of serviceUpdateMessage
 
 ## RELATED LINKS
-
