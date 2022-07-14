@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementremoteassistancepartner
 schema: 2.0.0
@@ -8,25 +8,25 @@ schema: 2.0.0
 # New-MgDeviceManagementRemoteAssistancePartner
 
 ## SYNOPSIS
-The remote assist partners.
+Create new navigation property to remoteAssistancePartners for deviceManagement
 
 ## SYNTAX
 
 ### CreateExpanded1 (Default)
 ```
 New-MgDeviceManagementRemoteAssistancePartner [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-Id <String>] [-LastConnectionDateTime <DateTime>] [-OnboardingStatus <String>] [-OnboardingUrl <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-LastConnectionDateTime <DateTime>] [-OnboardingStatus <RemoteAssistanceOnboardingStatus>]
+ [-OnboardingUrl <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgDeviceManagementRemoteAssistancePartner -BodyParameter <IMicrosoftGraphRemoteAssistancePartner> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgDeviceManagementRemoteAssistancePartner -BodyParameter <IMicrosoftGraphRemoteAssistancePartner1>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The remote assist partners.
+Create new navigation property to remoteAssistancePartners for deviceManagement
 
 ## EXAMPLES
 
@@ -36,7 +36,7 @@ The remote assist partners.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -52,7 +52,7 @@ RemoteAssistPartner resources represent the metadata and status of a given Remot
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRemoteAssistancePartner
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRemoteAssistancePartner1
 Parameter Sets: Create1
 Aliases:
 
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 Display name of the partner.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -79,10 +79,10 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 Timestamp of the last request sent to Intune by the TEM partner.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 The current TeamViewer connector status
 
 ```yaml
-Type: String
+Type: Microsoft.Graph.PowerShell.Support.RemoteAssistanceOnboardingStatus
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 URL of the partner's onboarding portal, where an administrator can configure their Remote Assistance service.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -158,7 +158,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -174,10 +174,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRemoteAssistancePartner
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRemoteAssistancePartner1
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRemoteAssistancePartner
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRemoteAssistancePartner1
+
 ## NOTES
 
 ALIASES
@@ -187,12 +189,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphRemoteAssistancePartner>: RemoteAssistPartner resources represent the metadata and status of a given Remote Assistance partner service.
+BODYPARAMETER <IMicrosoftGraphRemoteAssistancePartner1>: RemoteAssistPartner resources represent the metadata and status of a given Remote Assistance partner service.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[DisplayName <String>]`: Display name of the partner.
   - `[LastConnectionDateTime <DateTime?>]`: Timestamp of the last request sent to Intune by the TEM partner.
-  - `[OnboardingStatus <String>]`: The current TeamViewer connector status
+  - `[OnboardingStatus <RemoteAssistanceOnboardingStatus?>]`: The current TeamViewer connector status
   - `[OnboardingUrl <String>]`: URL of the partner's onboarding portal, where an administrator can configure their Remote Assistance service.
 
 ## RELATED LINKS
+

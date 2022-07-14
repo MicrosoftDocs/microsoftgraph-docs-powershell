@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/invoke-mgbufferinformationprotectionencrypt
 schema: 2.0.0
@@ -15,14 +15,14 @@ Invoke action encryptBuffer
 ### BufferExpanded (Default)
 ```
 Invoke-MgBufferInformationProtectionEncrypt [-AdditionalProperties <Hashtable>] [-BufferInputFile <String>]
- [-LabelId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LabelId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Buffer
 ```
 Invoke-MgBufferInformationProtectionEncrypt
  -BodyParameter <IPathsBetdbaInformationprotectionMicrosoftGraphEncryptbufferPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,7 +36,7 @@ Invoke action encryptBuffer
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: BufferExpanded
 Aliases:
 
@@ -52,7 +52,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsBetdbaInformationprotectionMicrosoftGraphEncryptbufferPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPathsBetdbaInformationprotectionMicrosoftGraphEncryptbufferPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Buffer
 Aliases:
 
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 Input File for Buffer (.)
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: BufferExpanded
 Aliases:
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: BufferExpanded
 Aliases:
 
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -113,7 +113,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -130,9 +130,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPathsBetdbaInformationprotectionMicrosoftGraphEncryptbufferPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBufferEncryptionResult
+
 ## NOTES
 
 ALIASES
@@ -148,3 +150,4 @@ BODYPARAMETER <IPathsBetdbaInformationprotectionMicrosoftGraphEncryptbufferPostR
   - `[LabelId <String>]`: 
 
 ## RELATED LINKS
+

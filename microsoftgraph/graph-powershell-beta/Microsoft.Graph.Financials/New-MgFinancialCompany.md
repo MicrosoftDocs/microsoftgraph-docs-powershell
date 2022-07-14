@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Financials-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Financials
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.financials/new-mgfinancialcompany
 schema: 2.0.0
@@ -21,7 +21,7 @@ New-MgFinancialCompany [-Accounts <IMicrosoftGraphAccount[]>] [-AdditionalProper
  [-CountriesRegions <IMicrosoftGraphCountryRegion[]>] [-Currencies <IMicrosoftGraphCurrency[]>]
  [-CustomerPaymentJournals <IMicrosoftGraphCustomerPaymentJournal[]>]
  [-CustomerPayments <IMicrosoftGraphCustomerPayment[]>] [-Customers <IMicrosoftGraphCustomer[]>]
- [-DimensionValues <IMicrosoftGraphDimensionValue[]>] [-Dimensions <IMicrosoftGraphDimension[]>]
+ [-Dimensions <IMicrosoftGraphDimension[]>] [-DimensionValues <IMicrosoftGraphDimensionValue[]>]
  [-DisplayName <String>] [-Employees <IMicrosoftGraphEmployee[]>]
  [-GeneralLedgerEntries <IMicrosoftGraphGeneralLedgerEntry[]>] [-Id <String>]
  [-ItemCategories <IMicrosoftGraphItemCategory[]>] [-Items <IMicrosoftGraphItem[]>]
@@ -36,13 +36,13 @@ New-MgFinancialCompany [-Accounts <IMicrosoftGraphAccount[]>] [-AdditionalProper
  [-SalesQuoteLines <IMicrosoftGraphSalesQuoteLine[]>] [-SalesQuotes <IMicrosoftGraphSalesQuote[]>]
  [-ShipmentMethods <IMicrosoftGraphShipmentMethod[]>] [-SystemVersion <String>]
  [-TaxAreas <IMicrosoftGraphTaxArea[]>] [-TaxGroups <IMicrosoftGraphTaxGroup[]>]
- [-UnitsOfMeasure <IMicrosoftGraphUnitOfMeasure[]>] [-Vendors <IMicrosoftGraphVendor[]>] [-WhatIf] [-Confirm]
+ [-UnitsOfMeasure <IMicrosoftGraphUnitOfMeasure[]>] [-Vendors <IMicrosoftGraphVendor[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgFinancialCompany -BodyParameter <IMicrosoftGraphCompany> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgFinancialCompany -BodyParameter <IMicrosoftGraphCompany> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -57,7 +57,7 @@ Create new navigation property to companies for financials
 To construct, please use Get-Help -Online and see NOTES section for ACCOUNTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccount[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccount[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for AGEDACCOUNTSPAYABLE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAgedAccountsPayable[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAgedAccountsPayable[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for AGEDACCOUNTSRECEIVABLE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAgedAccountsReceivable[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAgedAccountsReceivable[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -120,7 +120,7 @@ company
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCompany
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCompany
 Parameter Sets: Create
 Aliases:
 
@@ -135,7 +135,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -151,7 +151,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for COMPANYINFORMATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCompanyInformation1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCompanyInformation1[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for COUNTRIESREGIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCountryRegion[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCountryRegion[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -183,7 +183,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for CURRENCIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCurrency[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCurrency[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for CUSTOMERPAYMENTJOURNALS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCustomerPaymentJournal[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCustomerPaymentJournal[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for CUSTOMERPAYMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCustomerPayment[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCustomerPayment[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -231,7 +231,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for CUSTOMERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCustomer[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCustomer[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -247,7 +247,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for DIMENSIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDimension[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDimension[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -263,7 +263,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for DIMENSIONVALUES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDimensionValue[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDimensionValue[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -278,7 +278,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -294,7 +294,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for EMPLOYEES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEmployee[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEmployee[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -310,7 +310,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for GENERALLEDGERENTRIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGeneralLedgerEntry[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGeneralLedgerEntry[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -325,7 +325,7 @@ Accept wildcard characters: False
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -341,7 +341,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for ITEMCATEGORIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemCategory[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemCategory[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -357,7 +357,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for ITEMS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItem[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItem[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -373,7 +373,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for JOURNALLINES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphJournalLine[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphJournalLine[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -389,7 +389,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for JOURNALS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphJournal[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphJournal[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -404,7 +404,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -420,7 +420,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for PAYMENTMETHODS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPaymentMethod[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPaymentMethod[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -436,7 +436,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for PAYMENTTERMS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPaymentTerm[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPaymentTerm[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -452,7 +452,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for PICTURE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPicture[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPicture[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -468,7 +468,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for PURCHASEINVOICELINES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPurchaseInvoiceLine[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPurchaseInvoiceLine[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -484,7 +484,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for PURCHASEINVOICES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPurchaseInvoice[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPurchaseInvoice[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -500,7 +500,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for SALESCREDITMEMOLINES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSalesCreditMemoLine[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSalesCreditMemoLine[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -516,7 +516,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for SALESCREDITMEMOS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSalesCreditMemo[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSalesCreditMemo[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -532,7 +532,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for SALESINVOICELINES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSalesInvoiceLine[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSalesInvoiceLine[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -548,7 +548,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for SALESINVOICES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSalesInvoice[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSalesInvoice[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -564,7 +564,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for SALESORDERLINES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSalesOrderLine[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSalesOrderLine[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -580,7 +580,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for SALESORDERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSalesOrder[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSalesOrder[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -596,7 +596,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for SALESQUOTELINES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSalesQuoteLine[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSalesQuoteLine[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -612,7 +612,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for SALESQUOTES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSalesQuote[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSalesQuote[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -628,7 +628,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for SHIPMENTMETHODS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphShipmentMethod[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphShipmentMethod[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -643,7 +643,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -659,7 +659,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for TAXAREAS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTaxArea[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTaxArea[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -675,7 +675,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for TAXGROUPS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTaxGroup[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTaxGroup[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -691,7 +691,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for UNITSOFMEASURE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnitOfMeasure[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnitOfMeasure[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -707,7 +707,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for VENDORS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphVendor[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphVendor[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -722,7 +722,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -738,7 +738,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -755,9 +755,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCompany
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCompany
+
 ## NOTES
 
 ALIASES
@@ -3041,4 +3043,3 @@ VENDORS <IMicrosoftGraphVendor[]>: .
 
 ## RELATED LINKS
 
-## RELATED LINKS

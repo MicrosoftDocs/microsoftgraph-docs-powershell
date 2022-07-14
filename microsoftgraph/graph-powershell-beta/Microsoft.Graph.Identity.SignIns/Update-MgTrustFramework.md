@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgtrustframework
 schema: 2.0.0
@@ -15,12 +15,12 @@ Update trustFramework
 ### UpdateExpanded (Default)
 ```
 Update-MgTrustFramework [-AdditionalProperties <Hashtable>] [-KeySets <IMicrosoftGraphTrustFrameworkKeySet[]>]
- [-Policies <IMicrosoftGraphTrustFrameworkPolicy[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Policies <IMicrosoftGraphTrustFrameworkPolicy[]>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgTrustFramework -BodyParameter <IMicrosoftGraphTrustFramework> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgTrustFramework -BodyParameter <IMicrosoftGraphTrustFramework> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -35,7 +35,7 @@ Update trustFramework
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -51,7 +51,7 @@ trustFramework
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTrustFramework
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTrustFramework
 Parameter Sets: Update
 Aliases:
 
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for KEYSETS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTrustFrameworkKeySet[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTrustFrameworkKeySet[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for POLICIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTrustFrameworkPolicy[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTrustFrameworkPolicy[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -129,7 +129,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -146,9 +146,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTrustFramework
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -161,7 +163,7 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER <IMicrosoftGraphTrustFramework>: trustFramework
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[KeySets <IMicrosoftGraphTrustFrameworkKeySet[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Keys <IMicrosoftGraphTrustFrameworkKey[]>]`: A collection of the keys.
       - `[D <String>]`: RSA Key - private exponent. Field cannot be read back.
       - `[Dp <String>]`: RSA Key - first exponent. Field cannot be read back.
@@ -180,10 +182,10 @@ BODYPARAMETER <IMicrosoftGraphTrustFramework>: trustFramework
       - `[X5C <String[]>]`: The x5c (X.509 certificate chain) parameter contains a chain of one or more PKIX certificates RFC 5280.
       - `[X5T <String>]`: The x5t (X.509 certificate SHA-1 thumbprint) parameter is a base64url-encoded SHA-1 thumbprint (a.k.a. digest) of the DER encoding of an X.509 certificate RFC 5280.
   - `[Policies <IMicrosoftGraphTrustFrameworkPolicy[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
 
 KEYSETS <IMicrosoftGraphTrustFrameworkKeySet[]>: .
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Keys <IMicrosoftGraphTrustFrameworkKey[]>]`: A collection of the keys.
     - `[D <String>]`: RSA Key - private exponent. Field cannot be read back.
     - `[Dp <String>]`: RSA Key - first exponent. Field cannot be read back.
@@ -203,6 +205,7 @@ KEYSETS <IMicrosoftGraphTrustFrameworkKeySet[]>: .
     - `[X5T <String>]`: The x5t (X.509 certificate SHA-1 thumbprint) parameter is a base64url-encoded SHA-1 thumbprint (a.k.a. digest) of the DER encoding of an X.509 certificate RFC 5280.
 
 POLICIES <IMicrosoftGraphTrustFrameworkPolicy[]>: .
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
 
 ## RELATED LINKS
+

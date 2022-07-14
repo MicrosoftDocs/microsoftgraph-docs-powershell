@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Users-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/get-mguserphotocontent
 schema: 2.0.0
@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgUserPhotoContent
 
 ## SYNOPSIS
-The user's profile photo.
-Read-only.
+Get media content for the navigation property photo from users
 
 ## SYNTAX
 
@@ -20,13 +19,8 @@ Get-MgUserPhotoContent -UserId <String> -OutFile <String> [-PassThru] [<CommonPa
 
 ### Get3
 ```
-Get-MgUserPhotoContent -UserId <String> -ProfilePhotoId <String> -OutFile <String> [-PassThru]
+Get-MgUserPhotoContent -ProfilePhotoId <String> -UserId <String> -OutFile <String> [-PassThru]
  [<CommonParameters>]
-```
-
-### GetViaIdentity3
-```
-Get-MgUserPhotoContent -InputObject <IUsersIdentity> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
 ### GetViaIdentity2
@@ -34,9 +28,13 @@ Get-MgUserPhotoContent -InputObject <IUsersIdentity> -OutFile <String> [-PassThr
 Get-MgUserPhotoContent -InputObject <IUsersIdentity> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
+### GetViaIdentity3
+```
+Get-MgUserPhotoContent -InputObject <IUsersIdentity> -OutFile <String> [-PassThru] [<CommonParameters>]
+```
+
 ## DESCRIPTION
-The user's profile photo.
-Read-only.
+Get media content for the navigation property photo from users
 
 ## EXAMPLES
 
@@ -47,8 +45,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersIdentity
-Parameter Sets: GetViaIdentity3, GetViaIdentity2
+Type: Microsoft.Graph.PowerShell.Models.IUsersIdentity
+Parameter Sets: GetViaIdentity2, GetViaIdentity3
 Aliases:
 
 Required: True
@@ -62,7 +60,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -77,7 +75,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -92,7 +90,7 @@ Accept wildcard characters: False
 key: id of profilePhoto
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get3
 Aliases:
 
@@ -107,7 +105,7 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get2, Get3
 Aliases:
 
@@ -124,9 +122,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -137,12 +137,17 @@ To create the parameters described below, construct a hash table containing the 
 
 
 INPUTOBJECT <IUsersIdentity>: Identity Parameter
+  - `[AttachmentBaseId <String>]`: key: id of attachmentBase
   - `[AttachmentId <String>]`: key: id of attachment
+  - `[AttachmentSessionId <String>]`: key: id of attachmentSession
+  - `[ChecklistItemId <String>]`: key: id of checklistItem
+  - `[DirectoryObjectId <String>]`: key: id of directoryObject
   - `[ExtensionId <String>]`: key: id of extension
   - `[LicenseDetailsId <String>]`: key: id of licenseDetails
   - `[LinkedResourceId <String>]`: key: id of linkedResource
   - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
   - `[NotificationId <String>]`: key: id of notification
+  - `[OAuth2PermissionGrantId <String>]`: key: id of oAuth2PermissionGrant
   - `[OutlookCategoryId <String>]`: key: id of outlookCategory
   - `[OutlookTaskFolderId <String>]`: key: id of outlookTaskFolder
   - `[OutlookTaskGroupId <String>]`: key: id of outlookTaskGroup
@@ -154,3 +159,4 @@ INPUTOBJECT <IUsersIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

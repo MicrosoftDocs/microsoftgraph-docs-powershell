@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Security-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulationautomation
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSecurityAttackSimulationAutomation
 
 ## SYNOPSIS
-Represents simulation automations created to run on a tenant.
+Create new navigation property to simulationAutomations for security
 
 ## SYNTAX
 
@@ -18,18 +18,18 @@ New-MgSecurityAttackSimulationAutomation [-AdditionalProperties <Hashtable>]
  [-CreatedBy <IMicrosoftGraphEmailIdentity>] [-CreatedDateTime <DateTime>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphEmailIdentity>]
  [-LastModifiedDateTime <DateTime>] [-LastRunDateTime <DateTime>] [-NextRunDateTime <DateTime>]
- [-Runs <IMicrosoftGraphSimulationAutomationRun[]>] [-Status <String>] [-WhatIf] [-Confirm]
+ [-Runs <IMicrosoftGraphSimulationAutomationRun[]>] [-Status <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgSecurityAttackSimulationAutomation -BodyParameter <IMicrosoftGraphSimulationAutomation> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgSecurityAttackSimulationAutomation -BodyParameter <IMicrosoftGraphSimulationAutomation> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Represents simulation automations created to run on a tenant.
+Create new navigation property to simulationAutomations for security
 
 ## EXAMPLES
 
@@ -39,7 +39,7 @@ Represents simulation automations created to run on a tenant.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -55,7 +55,7 @@ simulationAutomation
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSimulationAutomation
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSimulationAutomation
 Parameter Sets: Create
 Aliases:
 
@@ -71,7 +71,7 @@ emailIdentity
 To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEmailIdentity
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEmailIdentity
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -86,7 +86,7 @@ Accept wildcard characters: False
 Date and time when the attack simulation automation was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -101,7 +101,7 @@ Accept wildcard characters: False
 Description of the attack simulation automation.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -117,7 +117,7 @@ Display name of the attack simulation automation.
 Supports $filter and $orderby.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -129,10 +129,10 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -148,7 +148,7 @@ emailIdentity
 To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEmailIdentity
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEmailIdentity
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 Date and time when the attack simulation automation was most recently modified.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 Date and time of the latest run of the attack simulation automation.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 Date and time of the upcoming run of the attack simulation automation.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -209,7 +209,7 @@ A collection of simulation automation runs.
 To construct, please use Get-Help -Online and see NOTES section for RUNS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSimulationAutomationRun[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSimulationAutomationRun[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -224,7 +224,7 @@ Accept wildcard characters: False
 simulationAutomationStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -239,7 +239,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -255,7 +255,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -272,9 +272,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSimulationAutomation
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSimulationAutomation
+
 ## NOTES
 
 ALIASES
@@ -286,7 +288,7 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER <IMicrosoftGraphSimulationAutomation>: simulationAutomation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[CreatedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
@@ -300,7 +302,7 @@ BODYPARAMETER <IMicrosoftGraphSimulationAutomation>: simulationAutomation
   - `[LastRunDateTime <DateTime?>]`: Date and time of the latest run of the attack simulation automation.
   - `[NextRunDateTime <DateTime?>]`: Date and time of the upcoming run of the attack simulation automation.
   - `[Runs <IMicrosoftGraphSimulationAutomationRun[]>]`: A collection of simulation automation runs.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[EndDateTime <DateTime?>]`: Date and time when the run ends in an attack simulation automation.
     - `[SimulationId <String>]`: Unique identifier for the attack simulation campaign initiated in the attack simulation automation run.
     - `[StartDateTime <DateTime?>]`: Date and time when the run starts in an attack simulation automation.
@@ -320,10 +322,11 @@ LASTMODIFIEDBY <IMicrosoftGraphEmailIdentity>: emailIdentity
   - `[Email <String>]`: Email address of the user.
 
 RUNS <IMicrosoftGraphSimulationAutomationRun[]>: A collection of simulation automation runs.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[EndDateTime <DateTime?>]`: Date and time when the run ends in an attack simulation automation.
   - `[SimulationId <String>]`: Unique identifier for the attack simulation campaign initiated in the attack simulation automation run.
   - `[StartDateTime <DateTime?>]`: Date and time when the run starts in an attack simulation automation.
   - `[Status <String>]`: simulationAutomationRunStatus
 
 ## RELATED LINKS
+

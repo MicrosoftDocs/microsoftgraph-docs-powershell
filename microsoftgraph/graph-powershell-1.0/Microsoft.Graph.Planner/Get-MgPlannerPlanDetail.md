@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Planner-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/get-mgplannerplandetail
 schema: 2.0.0
@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgPlannerPlanDetail
 
 ## SYNOPSIS
-Read-only.
-Nullable.
-Additional details about the plan.
+Get details from planner
 
 ## SYNTAX
 
@@ -27,9 +25,7 @@ Get-MgPlannerPlanDetail -InputObject <IPlannerIdentity> [-ExpandProperty <String
 ```
 
 ## DESCRIPTION
-Read-only.
-Nullable.
-Additional details about the plan.
+Get details from planner
 
 ## EXAMPLES
 
@@ -39,7 +35,7 @@ Additional details about the plan.
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -55,7 +51,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IPlannerIdentity
+Type: Microsoft.Graph.PowerShell.Models.IPlannerIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -70,7 +66,7 @@ Accept wildcard characters: False
 key: id of plannerPlan
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -85,7 +81,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -102,9 +98,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerPlanDetails
+
 ## NOTES
 
 ALIASES
@@ -125,3 +123,4 @@ INPUTOBJECT <IPlannerIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

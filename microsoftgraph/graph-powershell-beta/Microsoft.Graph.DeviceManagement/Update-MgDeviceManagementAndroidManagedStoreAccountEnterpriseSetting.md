@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementandroidmanagedstoreaccountenterprisesetting
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSetting
 
 ## SYNOPSIS
-The singleton Android managed store account enterprise settings entity.
+Update the navigation property androidManagedStoreAccountEnterpriseSettings in deviceManagement
 
 ## SYNTAX
 
@@ -20,18 +20,18 @@ Update-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSetting [-Additiona
  [-EnrollmentTarget <String>] [-Id <String>] [-LastAppSyncDateTime <DateTime>] [-LastAppSyncStatus <String>]
  [-LastModifiedDateTime <DateTime>] [-ManagedGooglePlayInitialScopeTagIds <String[]>]
  [-OwnerOrganizationName <String>] [-OwnerUserPrincipalName <String>] [-TargetGroupIds <String[]>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSetting
- -BodyParameter <IMicrosoftGraphAndroidManagedStoreAccountEnterpriseSettings> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphAndroidManagedStoreAccountEnterpriseSettings> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The singleton Android managed store account enterprise settings entity.
+Update the navigation property androidManagedStoreAccountEnterpriseSettings in deviceManagement
 
 ## EXAMPLES
 
@@ -41,7 +41,7 @@ The singleton Android managed store account enterprise settings entity.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -56,7 +56,7 @@ Accept wildcard characters: False
 Company codes for AndroidManagedStoreAccountEnterpriseSettings
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 Bind status of the tenant with the Google EMM API
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -87,7 +87,7 @@ Enterprise settings for an Android managed store account.
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAndroidManagedStoreAccountEnterpriseSettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAndroidManagedStoreAccountEnterpriseSettings
 Parameter Sets: Update
 Aliases:
 
@@ -103,7 +103,7 @@ Company codes for AndroidManagedStoreAccountEnterpriseSettings
 To construct, please use Get-Help -Online and see NOTES section for COMPANYCODES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAndroidEnrollmentCompanyCode[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAndroidEnrollmentCompanyCode[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 Indicates if this account is flighting for Android Device Owner Management with CloudDPC.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 Android for Work device management targeting type for the account
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -145,10 +145,10 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 Last completion time for app sync
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 Sync status of the tenant with the Google EMM API
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 Last modification time for Android enterprise settings
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 Initial scope tags for MGP apps
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -223,7 +223,7 @@ Accept wildcard characters: False
 Organization name used when onboarding Android Enterprise
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -238,7 +238,7 @@ Accept wildcard characters: False
 Owner UPN that created the enterprise
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -253,7 +253,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -268,7 +268,7 @@ Accept wildcard characters: False
 Specifies which AAD groups can enroll devices in Android for Work device management if enrollmentTarget is set to 'Targeted'
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -283,7 +283,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -299,7 +299,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -316,9 +316,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAndroidManagedStoreAccountEnterpriseSettings
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -330,7 +332,7 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER <IMicrosoftGraphAndroidManagedStoreAccountEnterpriseSettings>: Enterprise settings for an Android managed store account.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[AndroidDeviceOwnerFullyManagedEnrollmentEnabled <Boolean?>]`: Company codes for AndroidManagedStoreAccountEnterpriseSettings
   - `[BindStatus <String>]`: Bind status of the tenant with the Google EMM API
   - `[CompanyCodes <IMicrosoftGraphAndroidEnrollmentCompanyCode[]>]`: Company codes for AndroidManagedStoreAccountEnterpriseSettings
@@ -359,3 +361,4 @@ COMPANYCODES <IMicrosoftGraphAndroidEnrollmentCompanyCode[]>: Company codes for 
     - `[Value <Byte[]>]`: The byte array that contains the actual content.
 
 ## RELATED LINKS
+

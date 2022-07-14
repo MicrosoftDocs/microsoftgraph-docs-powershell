@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/new-mgdevicemanagementandroiddeviceownerenrollmentprofile
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfile
 
 ## SYNOPSIS
-Android device owner enrollment profile entities.
+Create new navigation property to androidDeviceOwnerEnrollmentProfiles for deviceManagement
 
 ## SYNTAX
 
@@ -16,22 +16,22 @@ Android device owner enrollment profile entities.
 ```
 New-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfile [-AccountId <String>]
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Description <String>]
- [-DisplayName <String>] [-EnrolledDeviceCount <Int32>] [-EnrollmentMode <String>]
- [-EnrollmentTokenType <String>] [-EnrollmentTokenUsageCount <Int32>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-QrCodeContent <String>] [-QrCodeImage <IMicrosoftGraphMimeContent>]
- [-RoleScopeTagIds <String[]>] [-TokenCreationDateTime <DateTime>] [-TokenExpirationDateTime <DateTime>]
- [-TokenValue <String>] [-WifiHidden] [-WifiPassword <String>] [-WifiSecurityType <String>]
- [-WifiSsid <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DisplayName <String>] [-EnrolledDeviceCount <Int32>] [-EnrollmentMode <AndroidDeviceOwnerEnrollmentMode>]
+ [-EnrollmentTokenType <AndroidDeviceOwnerEnrollmentTokenType>] [-EnrollmentTokenUsageCount <Int32>]
+ [-Id <String>] [-LastModifiedDateTime <DateTime>] [-QrCodeContent <String>]
+ [-QrCodeImage <IMicrosoftGraphMimeContent>] [-RoleScopeTagIds <String[]>] [-TokenCreationDateTime <DateTime>]
+ [-TokenExpirationDateTime <DateTime>] [-TokenValue <String>] [-WifiHidden] [-WifiPassword <String>]
+ [-WifiSecurityType <AospWifiSecurityType>] [-WifiSsid <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfile
- -BodyParameter <IMicrosoftGraphAndroidDeviceOwnerEnrollmentProfile> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAndroidDeviceOwnerEnrollmentProfile> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Android device owner enrollment profile entities.
+Create new navigation property to androidDeviceOwnerEnrollmentProfiles for deviceManagement
 
 ## EXAMPLES
 
@@ -41,7 +41,7 @@ Android device owner enrollment profile entities.
 Tenant GUID the enrollment profile belongs to.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -56,7 +56,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -72,7 +72,7 @@ Enrollment Profile used to enroll Android Enterprise devices using Google's Clou
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAndroidDeviceOwnerEnrollmentProfile
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAndroidDeviceOwnerEnrollmentProfile
 Parameter Sets: Create
 Aliases:
 
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 Date time the enrollment profile was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 Description for the enrollment profile.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 Display name for the enrollment profile.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -132,7 +132,7 @@ Accept wildcard characters: False
 Total number of Android devices that have enrolled using this enrollment profile.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 The enrollment mode for an enrollment profile.
 
 ```yaml
-Type: String
+Type: Microsoft.Graph.PowerShell.Support.AndroidDeviceOwnerEnrollmentMode
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 The enrollment token type for an enrollment profile.
 
 ```yaml
-Type: String
+Type: Microsoft.Graph.PowerShell.Support.AndroidDeviceOwnerEnrollmentTokenType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 Total number of AOSP devices that have enrolled using the current token.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -189,10 +189,10 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 Date time the enrollment profile was last modified.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 String used to generate a QR code for the token.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -238,7 +238,7 @@ Contains properties for a generic mime content.
 To construct, please use Get-Help -Online and see NOTES section for QRCODEIMAGE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMimeContent
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMimeContent
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -253,7 +253,7 @@ Accept wildcard characters: False
 List of Scope Tags for this Entity instance.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -268,7 +268,7 @@ Accept wildcard characters: False
 Date time the most recently created token was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -283,7 +283,7 @@ Accept wildcard characters: False
 Date time the most recently created token will expire.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -298,7 +298,7 @@ Accept wildcard characters: False
 Value of the most recently created token for this enrollment profile.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -313,7 +313,7 @@ Accept wildcard characters: False
 Boolean that indicates if hidden wifi networks are enabled
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -328,7 +328,7 @@ Accept wildcard characters: False
 String that contains the wi-fi login password
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -343,7 +343,7 @@ Accept wildcard characters: False
 This enum represents Wi-Fi Security Types for Android Device Owner AOSP Scenarios.
 
 ```yaml
-Type: String
+Type: Microsoft.Graph.PowerShell.Support.AospWifiSecurityType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -358,7 +358,7 @@ Accept wildcard characters: False
 String that contains the wi-fi login ssid
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -373,7 +373,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -389,7 +389,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -406,9 +406,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAndroidDeviceOwnerEnrollmentProfile
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAndroidDeviceOwnerEnrollmentProfile
+
 ## NOTES
 
 ALIASES
@@ -420,14 +422,14 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER <IMicrosoftGraphAndroidDeviceOwnerEnrollmentProfile>: Enrollment Profile used to enroll Android Enterprise devices using Google's Cloud Management.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[AccountId <String>]`: Tenant GUID the enrollment profile belongs to.
   - `[CreatedDateTime <DateTime?>]`: Date time the enrollment profile was created.
   - `[Description <String>]`: Description for the enrollment profile.
   - `[DisplayName <String>]`: Display name for the enrollment profile.
   - `[EnrolledDeviceCount <Int32?>]`: Total number of Android devices that have enrolled using this enrollment profile.
-  - `[EnrollmentMode <String>]`: The enrollment mode for an enrollment profile.
-  - `[EnrollmentTokenType <String>]`: The enrollment token type for an enrollment profile.
+  - `[EnrollmentMode <AndroidDeviceOwnerEnrollmentMode?>]`: The enrollment mode for an enrollment profile.
+  - `[EnrollmentTokenType <AndroidDeviceOwnerEnrollmentTokenType?>]`: The enrollment token type for an enrollment profile.
   - `[EnrollmentTokenUsageCount <Int32?>]`: Total number of AOSP devices that have enrolled using the current token.
   - `[LastModifiedDateTime <DateTime?>]`: Date time the enrollment profile was last modified.
   - `[QrCodeContent <String>]`: String used to generate a QR code for the token.
@@ -441,7 +443,7 @@ BODYPARAMETER <IMicrosoftGraphAndroidDeviceOwnerEnrollmentProfile>: Enrollment P
   - `[TokenValue <String>]`: Value of the most recently created token for this enrollment profile.
   - `[WifiHidden <Boolean?>]`: Boolean that indicates if hidden wifi networks are enabled
   - `[WifiPassword <String>]`: String that contains the wi-fi login password
-  - `[WifiSecurityType <String>]`: This enum represents Wi-Fi Security Types for Android Device Owner AOSP Scenarios.
+  - `[WifiSecurityType <AospWifiSecurityType?>]`: This enum represents Wi-Fi Security Types for Android Device Owner AOSP Scenarios.
   - `[WifiSsid <String>]`: String that contains the wi-fi login ssid
 
 QRCODEIMAGE <IMicrosoftGraphMimeContent>: Contains properties for a generic mime content.
@@ -450,3 +452,4 @@ QRCODEIMAGE <IMicrosoftGraphMimeContent>: Contains properties for a generic mime
   - `[Value <Byte[]>]`: The byte array that contains the actual content.
 
 ## RELATED LINKS
+

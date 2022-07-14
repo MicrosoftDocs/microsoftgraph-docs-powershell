@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgidentityconditionalaccessauthenticationcontextclassreference
 schema: 2.0.0
@@ -8,29 +8,25 @@ schema: 2.0.0
 # New-MgIdentityConditionalAccessAuthenticationContextClassReference
 
 ## SYNOPSIS
-Read-only.
-Nullable.
-Returns a collection of the specified authentication context class references.
+Create new navigation property to authenticationContextClassReferences for identity
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgIdentityConditionalAccessAuthenticationContextClassReference [-AdditionalProperties <Hashtable>]
- [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsAvailable] [-WhatIf] [-Confirm]
+ [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsAvailable] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgIdentityConditionalAccessAuthenticationContextClassReference
- -BodyParameter <IMicrosoftGraphAuthenticationContextClassReference> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAuthenticationContextClassReference> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Read-only.
-Nullable.
-Returns a collection of the specified authentication context class references.
+Create new navigation property to authenticationContextClassReferences for identity
 
 ## EXAMPLES
 
@@ -40,7 +36,7 @@ Returns a collection of the specified authentication context class references.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -56,7 +52,7 @@ authenticationContextClassReference
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAuthenticationContextClassReference
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationContextClassReference
 Parameter Sets: Create
 Aliases:
 
@@ -73,7 +69,7 @@ This value should be used to provide secondary text to describe the authenticati
 For example, selection UX.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -90,7 +86,7 @@ This value should be used to identify the authentication context class reference
 For example, selection UX.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -102,10 +98,10 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -121,7 +117,7 @@ Indicates whether the authenticationContextClassReference has been published by 
 When it is set to false it should not be shown in admin UX experiences because the value is not currently available for selection.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -136,7 +132,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -152,7 +148,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -169,9 +165,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationContextClassReference
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationContextClassReference
+
 ## NOTES
 
 ALIASES
@@ -183,9 +181,10 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER <IMicrosoftGraphAuthenticationContextClassReference>: authenticationContextClassReference
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Description <String>]`: A short explanation of the policies that are enforced by authenticationContextClassReference. This value should be used to provide secondary text to describe the authentication context class reference when building user facing admin experiences. For example, selection UX.
   - `[DisplayName <String>]`: The display name is the friendly name of the authenticationContextClassReference. This value should be used to identify the authentication context class reference when building user facing admin experiences. For example, selection UX.
   - `[IsAvailable <Boolean?>]`: Indicates whether the authenticationContextClassReference has been published by the security admin and is ready for use by apps. When it is set to false it should not be shown in admin UX experiences because the value is not currently available for selection.
 
 ## RELATED LINKS
+

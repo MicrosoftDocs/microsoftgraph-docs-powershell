@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementgrouppolicymigrationreportgrouppolicysettingmapping
 schema: 2.0.0
@@ -8,27 +8,36 @@ schema: 2.0.0
 # New-MgDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
 
 ## SYNOPSIS
-A list of group policy settings to MDM/Intune mappings.
+Create new navigation property to groupPolicySettingMappings for deviceManagement
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
- -GroupPolicyMigrationReportId <String> [-AdditionalProperties <Hashtable>] [-AdmxSettingDefinitionId <String>]
- [-ChildIdList <String[]>] [-Id <String>] [-IntuneSettingDefinitionId <String>]
- [-IntuneSettingUriList <String[]>] [-IsMdmSupported] [-MdmCspName <String>] [-MdmMinimumOSVersion <Int32>]
- [-MdmSettingUri <String>] [-MdmSupportedState <String>] [-ParentId <String>] [-SettingCategory <String>]
+ -GroupPolicyMigrationReportId <String> [-AdditionalProperties <Hashtable>]
+ [-AdmxSettingDefinitionId <String>] [-ChildIdList <String[]>] [-Id <String>]
+ [-IntuneSettingDefinitionId <String>] [-IntuneSettingUriList <String[]>] [-IsMdmSupported]
+ [-MdmCspName <String>] [-MdmMinimumOSVersion <Int32>] [-MdmSettingUri <String>]
+ [-MdmSupportedState <MdmSupportedState>] [-ParentId <String>] [-SettingCategory <String>]
  [-SettingDisplayName <String>] [-SettingDisplayValue <String>] [-SettingDisplayValueType <String>]
- [-SettingName <String>] [-SettingScope <String>] [-SettingType <String>] [-SettingValue <String>]
- [-SettingValueDisplayUnits <String>] [-SettingValueType <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SettingName <String>] [-SettingScope <GroupPolicySettingScope>] [-SettingType <GroupPolicySettingType>]
+ [-SettingValue <String>] [-SettingValueDisplayUnits <String>] [-SettingValueType <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
- -GroupPolicyMigrationReportId <String> -BodyParameter <IMicrosoftGraphGroupPolicySettingMapping> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -GroupPolicyMigrationReportId <String> -BodyParameter <IMicrosoftGraphGroupPolicySettingMapping> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
+ -InputObject <IDeviceManagementAdministrationIdentity>
+ -BodyParameter <IMicrosoftGraphGroupPolicySettingMapping> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -37,22 +46,16 @@ New-MgDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
  -InputObject <IDeviceManagementAdministrationIdentity> [-AdditionalProperties <Hashtable>]
  [-AdmxSettingDefinitionId <String>] [-ChildIdList <String[]>] [-Id <String>]
  [-IntuneSettingDefinitionId <String>] [-IntuneSettingUriList <String[]>] [-IsMdmSupported]
- [-MdmCspName <String>] [-MdmMinimumOSVersion <Int32>] [-MdmSettingUri <String>] [-MdmSupportedState <String>]
- [-ParentId <String>] [-SettingCategory <String>] [-SettingDisplayName <String>]
- [-SettingDisplayValue <String>] [-SettingDisplayValueType <String>] [-SettingName <String>]
- [-SettingScope <String>] [-SettingType <String>] [-SettingValue <String>] [-SettingValueDisplayUnits <String>]
- [-SettingValueType <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping
- -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphGroupPolicySettingMapping> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-MdmCspName <String>] [-MdmMinimumOSVersion <Int32>] [-MdmSettingUri <String>]
+ [-MdmSupportedState <MdmSupportedState>] [-ParentId <String>] [-SettingCategory <String>]
+ [-SettingDisplayName <String>] [-SettingDisplayValue <String>] [-SettingDisplayValueType <String>]
+ [-SettingName <String>] [-SettingScope <GroupPolicySettingScope>] [-SettingType <GroupPolicySettingType>]
+ [-SettingValue <String>] [-SettingValueDisplayUnits <String>] [-SettingValueType <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-A list of group policy settings to MDM/Intune mappings.
+Create new navigation property to groupPolicySettingMappings for deviceManagement
 
 ## EXAMPLES
 
@@ -62,7 +65,7 @@ A list of group policy settings to MDM/Intune mappings.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -77,7 +80,7 @@ Accept wildcard characters: False
 Admx Group Policy Id
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -93,7 +96,7 @@ The Group Policy setting to MDM/Intune mapping.
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicySettingMapping
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicySettingMapping
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -108,7 +111,7 @@ Accept wildcard characters: False
 List of Child Ids of the group policy setting.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -123,8 +126,8 @@ Accept wildcard characters: False
 key: id of groupPolicyMigrationReport
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -135,10 +138,10 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -154,8 +157,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementAdministrationIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -169,7 +172,7 @@ Accept wildcard characters: False
 The Intune Setting Definition Id
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -184,7 +187,7 @@ Accept wildcard characters: False
 The list of Intune Setting URIs this group policy setting maps to
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -199,7 +202,7 @@ Accept wildcard characters: False
 Indicates if the setting is supported by Intune or not
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -214,7 +217,7 @@ Accept wildcard characters: False
 The CSP name this group policy setting maps to.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -229,7 +232,7 @@ Accept wildcard characters: False
 The minimum OS version this mdm setting supports.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -244,7 +247,7 @@ Accept wildcard characters: False
 The MDM CSP URI this group policy setting maps to.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -259,7 +262,7 @@ Accept wildcard characters: False
 Mdm Support Status of the setting.
 
 ```yaml
-Type: String
+Type: Microsoft.Graph.PowerShell.Support.MdmSupportedState
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -274,7 +277,7 @@ Accept wildcard characters: False
 Parent Id of the group policy setting.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -289,7 +292,7 @@ Accept wildcard characters: False
 The category the group policy setting is in.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -304,7 +307,7 @@ Accept wildcard characters: False
 The display name of this group policy setting.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -319,7 +322,7 @@ Accept wildcard characters: False
 The display value of this group policy setting.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -334,7 +337,7 @@ Accept wildcard characters: False
 The display value type of this group policy setting.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -349,7 +352,7 @@ Accept wildcard characters: False
 The name of this group policy setting.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -364,7 +367,7 @@ Accept wildcard characters: False
 Scope of the group policy setting.
 
 ```yaml
-Type: String
+Type: Microsoft.Graph.PowerShell.Support.GroupPolicySettingScope
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -379,7 +382,7 @@ Accept wildcard characters: False
 Setting type of the group policy.
 
 ```yaml
-Type: String
+Type: Microsoft.Graph.PowerShell.Support.GroupPolicySettingType
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -394,7 +397,7 @@ Accept wildcard characters: False
 The value of this group policy setting.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -409,7 +412,7 @@ Accept wildcard characters: False
 The display units of this group policy setting value
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -424,7 +427,7 @@ Accept wildcard characters: False
 The value type of this group policy setting.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -439,7 +442,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -455,7 +458,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -472,10 +475,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicySettingMapping
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicySettingMapping
+
 ## NOTES
 
 ALIASES
@@ -487,7 +493,7 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER <IMicrosoftGraphGroupPolicySettingMapping>: The Group Policy setting to MDM/Intune mapping.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[AdmxSettingDefinitionId <String>]`: Admx Group Policy Id
   - `[ChildIdList <String[]>]`: List of Child Ids of the group policy setting.
   - `[IntuneSettingDefinitionId <String>]`: The Intune Setting Definition Id
@@ -496,15 +502,15 @@ BODYPARAMETER <IMicrosoftGraphGroupPolicySettingMapping>: The Group Policy setti
   - `[MdmCspName <String>]`: The CSP name this group policy setting maps to.
   - `[MdmMinimumOSVersion <Int32?>]`: The minimum OS version this mdm setting supports.
   - `[MdmSettingUri <String>]`: The MDM CSP URI this group policy setting maps to.
-  - `[MdmSupportedState <String>]`: Mdm Support Status of the setting.
+  - `[MdmSupportedState <MdmSupportedState?>]`: Mdm Support Status of the setting.
   - `[ParentId <String>]`: Parent Id of the group policy setting.
   - `[SettingCategory <String>]`: The category the group policy setting is in.
   - `[SettingDisplayName <String>]`: The display name of this group policy setting.
   - `[SettingDisplayValue <String>]`: The display value of this group policy setting.
   - `[SettingDisplayValueType <String>]`: The display value type of this group policy setting.
   - `[SettingName <String>]`: The name of this group policy setting.
-  - `[SettingScope <String>]`: Scope of the group policy setting.
-  - `[SettingType <String>]`: Setting type of the group policy.
+  - `[SettingScope <GroupPolicySettingScope?>]`: Scope of the group policy setting.
+  - `[SettingType <GroupPolicySettingType?>]`: Setting type of the group policy.
   - `[SettingValue <String>]`: The value of this group policy setting.
   - `[SettingValueDisplayUnits <String>]`: The display units of this group policy setting value
   - `[SettingValueType <String>]`: The value type of this group policy setting.
@@ -532,6 +538,7 @@ INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[DeviceManagementExchangeOnPremisesPolicyId <String>]`: key: id of deviceManagementExchangeOnPremisesPolicy
   - `[DeviceManagementPartnerId <String>]`: key: id of deviceManagementPartner
   - `[GroupPolicyCategoryId <String>]`: key: id of groupPolicyCategory
+  - `[GroupPolicyCategoryId1 <String>]`: key: id of groupPolicyCategory
   - `[GroupPolicyDefinitionFileId <String>]`: key: id of groupPolicyDefinitionFile
   - `[GroupPolicyDefinitionId <String>]`: key: id of groupPolicyDefinition
   - `[GroupPolicyMigrationReportId <String>]`: key: id of groupPolicyMigrationReport
@@ -562,3 +569,4 @@ INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[UserPfxCertificateId <String>]`: key: id of userPFXCertificate
 
 ## RELATED LINKS
+

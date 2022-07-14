@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Security-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecurityprovidertenantsetting
 schema: 2.0.0
@@ -16,26 +16,26 @@ Update the navigation property providerTenantSettings in security
 ```
 Update-MgSecurityProviderTenantSetting -ProviderTenantSettingId <String> [-AdditionalProperties <Hashtable>]
  [-AzureTenantId <String>] [-Enabled] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Provider <String>]
- [-Vendor <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Vendor <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgSecurityProviderTenantSetting -ProviderTenantSettingId <String>
- -BodyParameter <IMicrosoftGraphProviderTenantSetting> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphProviderTenantSetting> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgSecurityProviderTenantSetting -InputObject <ISecurityIdentity>
+ -BodyParameter <IMicrosoftGraphProviderTenantSetting> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgSecurityProviderTenantSetting -InputObject <ISecurityIdentity> [-AdditionalProperties <Hashtable>]
  [-AzureTenantId <String>] [-Enabled] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Provider <String>]
- [-Vendor <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgSecurityProviderTenantSetting -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphProviderTenantSetting> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Vendor <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,7 +49,7 @@ Update the navigation property providerTenantSettings in security
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -80,7 +80,7 @@ providerTenantSetting
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphProviderTenantSetting
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProviderTenantSetting
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -107,10 +107,10 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -126,8 +126,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -171,7 +171,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -186,8 +186,8 @@ Accept wildcard characters: False
 key: id of providerTenantSetting
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -201,7 +201,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -232,7 +232,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -249,10 +249,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProviderTenantSetting
+
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -264,7 +267,7 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER <IMicrosoftGraphProviderTenantSetting>: providerTenantSetting
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[AzureTenantId <String>]`: 
   - `[Enabled <Boolean?>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
@@ -273,12 +276,29 @@ BODYPARAMETER <IMicrosoftGraphProviderTenantSetting>: providerTenantSetting
 
 INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: key: id of alert
+  - `[AuthoredNoteId <String>]`: key: id of authoredNote
+  - `[CaseOperationId <String>]`: key: id of caseOperation
   - `[CloudAppSecurityProfileId <String>]`: key: id of cloudAppSecurityProfile
+  - `[DataSourceId <String>]`: key: id of dataSource
+  - `[DispositionReviewStageId <String>]`: key: id of dispositionReviewStage
   - `[DomainSecurityProfileId <String>]`: key: id of domainSecurityProfile
+  - `[EdiscoveryCaseId <String>]`: key: id of ediscoveryCase
+  - `[EdiscoveryCustodianId <String>]`: key: id of ediscoveryCustodian
+  - `[EdiscoveryFileId <String>]`: key: id of ediscoveryFile
+  - `[EdiscoveryHoldPolicyId <String>]`: key: id of ediscoveryHoldPolicy
+  - `[EdiscoveryNoncustodialDataSourceId <String>]`: key: id of ediscoveryNoncustodialDataSource
+  - `[EdiscoveryReviewSetId <String>]`: key: id of ediscoveryReviewSet
+  - `[EdiscoveryReviewSetQueryId <String>]`: key: id of ediscoveryReviewSetQuery
+  - `[EdiscoveryReviewTagId <String>]`: key: id of ediscoveryReviewTag
+  - `[EdiscoveryReviewTagId1 <String>]`: key: id of ediscoveryReviewTag
+  - `[EdiscoverySearchId <String>]`: key: id of ediscoverySearch
   - `[FileSecurityProfileId <String>]`: key: id of fileSecurityProfile
   - `[HostSecurityProfileId <String>]`: key: id of hostSecurityProfile
   - `[IPSecurityProfileId <String>]`: key: id of ipSecurityProfile
   - `[ProviderTenantSettingId <String>]`: key: id of providerTenantSetting
+  - `[RetentionEventId <String>]`: key: id of retentionEvent
+  - `[RetentionEventTypeId <String>]`: key: id of retentionEventType
+  - `[RetentionLabelId <String>]`: key: id of retentionLabel
   - `[SecureScoreControlProfileId <String>]`: key: id of secureScoreControlProfile
   - `[SecureScoreId <String>]`: key: id of secureScore
   - `[SecurityActionId <String>]`: key: id of securityAction
@@ -286,7 +306,12 @@ INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[SimulationAutomationId <String>]`: key: id of simulationAutomation
   - `[SimulationAutomationRunId <String>]`: key: id of simulationAutomationRun
   - `[SimulationId <String>]`: key: id of simulation
+  - `[SiteSourceId <String>]`: key: id of siteSource
+  - `[SubjectRightsRequestId <String>]`: key: id of subjectRightsRequest
   - `[TiIndicatorId <String>]`: key: id of tiIndicator
+  - `[UnifiedGroupSourceId <String>]`: key: id of unifiedGroupSource
   - `[UserSecurityProfileId <String>]`: key: id of userSecurityProfile
+  - `[UserSourceId <String>]`: key: id of userSource
 
 ## RELATED LINKS
+

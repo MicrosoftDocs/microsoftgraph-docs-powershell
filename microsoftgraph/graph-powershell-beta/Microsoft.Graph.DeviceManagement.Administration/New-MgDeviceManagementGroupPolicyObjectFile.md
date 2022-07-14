@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementgrouppolicyobjectfile
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementGroupPolicyObjectFile
 
 ## SYNOPSIS
-A list of Group Policy Object files uploaded.
+Create new navigation property to groupPolicyObjectFiles for deviceManagement
 
 ## SYNTAX
 
@@ -16,17 +16,17 @@ A list of Group Policy Object files uploaded.
 ```
 New-MgDeviceManagementGroupPolicyObjectFile [-AdditionalProperties <Hashtable>] [-Content <String>]
  [-CreatedDateTime <DateTime>] [-GroupPolicyObjectId <String>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-OuDistinguishedName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LastModifiedDateTime <DateTime>] [-OuDistinguishedName <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementGroupPolicyObjectFile -BodyParameter <IMicrosoftGraphGroupPolicyObjectFile> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgDeviceManagementGroupPolicyObjectFile -BodyParameter <IMicrosoftGraphGroupPolicyObjectFile> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-A list of Group Policy Object files uploaded.
+Create new navigation property to groupPolicyObjectFiles for deviceManagement
 
 ## EXAMPLES
 
@@ -36,7 +36,7 @@ A list of Group Policy Object files uploaded.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -52,7 +52,7 @@ The Group Policy Object file uploaded by admin.
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicyObjectFile
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyObjectFile
 Parameter Sets: Create
 Aliases:
 
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 The Group Policy Object file content.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 The date and time at which the GroupPolicy was first uploaded.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 The Group Policy Object GUID from GPO Xml content
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -109,10 +109,10 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 The date and time at which the GroupPolicyObjectFile was last modified.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 The distinguished name of the OU.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -173,7 +173,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -190,9 +190,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyObjectFile
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyObjectFile
+
 ## NOTES
 
 ALIASES
@@ -204,7 +206,7 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER <IMicrosoftGraphGroupPolicyObjectFile>: The Group Policy Object file uploaded by admin.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Content <String>]`: The Group Policy Object file content.
   - `[CreatedDateTime <DateTime?>]`: The date and time at which the GroupPolicy was first uploaded.
   - `[GroupPolicyObjectId <String>]`: The Group Policy Object GUID from GPO Xml content
@@ -212,3 +214,4 @@ BODYPARAMETER <IMicrosoftGraphGroupPolicyObjectFile>: The Group Policy Object fi
   - `[OuDistinguishedName <String>]`: The distinguished name of the OU.
 
 ## RELATED LINKS
+

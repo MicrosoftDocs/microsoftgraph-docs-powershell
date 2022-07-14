@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementsetting
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgEntitlementManagementSetting
 
 ## SYNOPSIS
-Represents the settings that control the behavior of Azure AD entitlement management.
+Get settings from identityGovernance
 
 ## SYNTAX
 
@@ -17,7 +17,7 @@ Get-MgEntitlementManagementSetting [-ExpandProperty <String[]>] [-Property <Stri
 ```
 
 ## DESCRIPTION
-Represents the settings that control the behavior of Azure AD entitlement management.
+Get settings from identityGovernance
 
 ## EXAMPLES
 
@@ -27,7 +27,7 @@ Represents the settings that control the behavior of Azure AD entitlement manage
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -42,7 +42,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -61,8 +61,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEntitlementManagementSettings1
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+

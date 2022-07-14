@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgpolicydefaultappmanagementpolicy
 schema: 2.0.0
@@ -8,16 +8,17 @@ schema: 2.0.0
 # Get-MgPolicyDefaultAppManagementPolicy
 
 ## SYNOPSIS
-The tenant-wide policy that enforces app management restrictions for all applications and service principals.
+Get defaultAppManagementPolicy from policies
 
 ## SYNTAX
 
 ```
-Get-MgPolicyDefaultAppManagementPolicy [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgPolicyDefaultAppManagementPolicy [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The tenant-wide policy that enforces app management restrictions for all applications and service principals.
+Get defaultAppManagementPolicy from policies
 
 ## EXAMPLES
 
@@ -27,7 +28,7 @@ The tenant-wide policy that enforces app management restrictions for all applica
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -42,7 +43,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -61,8 +62,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTenantAppManagementPolicy
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+

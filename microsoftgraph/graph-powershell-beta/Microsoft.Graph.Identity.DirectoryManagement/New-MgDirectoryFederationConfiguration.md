@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryfederationconfiguration
 schema: 2.0.0
@@ -8,24 +8,24 @@ schema: 2.0.0
 # New-MgDirectoryFederationConfiguration
 
 ## SYNOPSIS
-Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.
+Create new navigation property to federationConfigurations for directory
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgDirectoryFederationConfiguration [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDirectoryFederationConfiguration -BodyParameter <IMicrosoftGraphIdentityProviderBase> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgDirectoryFederationConfiguration -BodyParameter <IMicrosoftGraphIdentityProviderBase> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.
+Create new navigation property to federationConfigurations for directory
 
 ## EXAMPLES
 
@@ -35,7 +35,7 @@ Configure domain federation with organizations whose identity provider (IdP) sup
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -51,7 +51,7 @@ identityProviderBase
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentityProviderBase
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityProviderBase
 Parameter Sets: Create
 Aliases:
 
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 The display name of the identity provider.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -78,10 +78,10 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -112,7 +112,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -129,9 +129,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityProviderBase
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityProviderBase
+
 ## NOTES
 
 ALIASES
@@ -143,7 +145,8 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER <IMicrosoftGraphIdentityProviderBase>: identityProviderBase
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[DisplayName <String>]`: The display name of the identity provider.
 
 ## RELATED LINKS
+

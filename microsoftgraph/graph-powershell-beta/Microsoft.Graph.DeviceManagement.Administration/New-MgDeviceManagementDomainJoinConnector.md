@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementdomainjoinconnector
 schema: 2.0.0
@@ -8,25 +8,25 @@ schema: 2.0.0
 # New-MgDeviceManagementDomainJoinConnector
 
 ## SYNOPSIS
-A list of connector objects.
+Create new navigation property to domainJoinConnectors for deviceManagement
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgDeviceManagementDomainJoinConnector [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-Id <String>] [-LastConnectionDateTime <DateTime>] [-State <String>] [-Version <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Id <String>] [-LastConnectionDateTime <DateTime>] [-State <DeviceManagementDomainJoinConnectorState>]
+ [-Version <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementDomainJoinConnector -BodyParameter <IMicrosoftGraphDeviceManagementDomainJoinConnector>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-A list of connector objects.
+Create new navigation property to domainJoinConnectors for deviceManagement
 
 ## EXAMPLES
 
@@ -36,7 +36,7 @@ A list of connector objects.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -52,7 +52,7 @@ A Domain Join Connector is a connector that is responsible to allocate (and dele
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementDomainJoinConnector
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementDomainJoinConnector
 Parameter Sets: Create
 Aliases:
 
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 The connector display name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -79,10 +79,10 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 Last time connector contacted Intune.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 The ODJ request states.
 
 ```yaml
-Type: String
+Type: Microsoft.Graph.PowerShell.Support.DeviceManagementDomainJoinConnectorState
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 The version of the connector.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -158,7 +158,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -175,9 +175,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementDomainJoinConnector
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementDomainJoinConnector
+
 ## NOTES
 
 ALIASES
@@ -189,10 +191,11 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER <IMicrosoftGraphDeviceManagementDomainJoinConnector>: A Domain Join Connector is a connector that is responsible to allocate (and delete) machine account blobs
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[DisplayName <String>]`: The connector display name.
   - `[LastConnectionDateTime <DateTime?>]`: Last time connector contacted Intune.
-  - `[State <String>]`: The ODJ request states.
+  - `[State <DeviceManagementDomainJoinConnectorState?>]`: The ODJ request states.
   - `[Version <String>]`: The version of the connector.
 
 ## RELATED LINKS
+

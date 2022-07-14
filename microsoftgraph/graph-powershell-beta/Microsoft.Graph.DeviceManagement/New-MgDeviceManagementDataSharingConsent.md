@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdatasharingconsent
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementDataSharingConsent
 
 ## SYNOPSIS
-Data sharing consents.
+Create new navigation property to dataSharingConsents for deviceManagement
 
 ## SYNTAX
 
@@ -16,17 +16,17 @@ Data sharing consents.
 ```
 New-MgDeviceManagementDataSharingConsent [-AdditionalProperties <Hashtable>] [-GrantDateTime <DateTime>]
  [-Granted] [-GrantedByUpn <String>] [-GrantedByUserId <String>] [-Id <String>] [-ServiceDisplayName <String>]
- [-TermsUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TermsUrl <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementDataSharingConsent -BodyParameter <IMicrosoftGraphDataSharingConsent> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgDeviceManagementDataSharingConsent -BodyParameter <IMicrosoftGraphDataSharingConsent> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Data sharing consents.
+Create new navigation property to dataSharingConsents for deviceManagement
 
 ## EXAMPLES
 
@@ -36,7 +36,7 @@ Data sharing consents.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -52,7 +52,7 @@ Data sharing consent information.
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDataSharingConsent
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDataSharingConsent
 Parameter Sets: Create
 Aliases:
 
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 The time consent was granted for this account
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 The granted state for the data sharing consent
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 The Upn of the user that granted consent for this account
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 The UserId of the user that granted consent for this account
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -124,10 +124,10 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 The display name of the service work flow
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 The TermsUrl for the data sharing consent
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -188,7 +188,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -205,9 +205,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDataSharingConsent
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDataSharingConsent
+
 ## NOTES
 
 ALIASES
@@ -219,7 +221,7 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER <IMicrosoftGraphDataSharingConsent>: Data sharing consent information.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[GrantDateTime <DateTime?>]`: The time consent was granted for this account
   - `[Granted <Boolean?>]`: The granted state for the data sharing consent
   - `[GrantedByUpn <String>]`: The Upn of the user that granted consent for this account
@@ -228,3 +230,4 @@ BODYPARAMETER <IMicrosoftGraphDataSharingConsent>: Data sharing consent informat
   - `[TermsUrl <String>]`: The TermsUrl for the data sharing consent
 
 ## RELATED LINKS
+

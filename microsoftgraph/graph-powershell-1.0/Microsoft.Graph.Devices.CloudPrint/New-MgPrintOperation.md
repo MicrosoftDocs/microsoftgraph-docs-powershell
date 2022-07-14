@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintoperation
 schema: 2.0.0
@@ -8,23 +8,23 @@ schema: 2.0.0
 # New-MgPrintOperation
 
 ## SYNOPSIS
-The list of print long running operations.
+Create new navigation property to operations for print
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### CreateExpanded1 (Default)
 ```
 New-MgPrintOperation [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Id <String>]
- [-Status <IMicrosoftGraphPrintOperationStatus>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Status <IMicrosoftGraphPrintOperationStatus>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Create
+### Create1
 ```
-New-MgPrintOperation -BodyParameter <IMicrosoftGraphPrintOperation> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgPrintOperation -BodyParameter <IMicrosoftGraphPrintOperation> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The list of print long running operations.
+Create new navigation property to operations for print
 
 ## EXAMPLES
 
@@ -34,8 +34,8 @@ The list of print long running operations.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded
+Type: System.Collections.Hashtable
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -50,8 +50,8 @@ printOperation
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintOperation
-Parameter Sets: Create
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintOperation
+Parameter Sets: Create1
 Aliases:
 
 Required: True
@@ -66,8 +66,8 @@ The DateTimeOffset when the operation was created.
 Read-only.
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded
+Type: System.DateTime
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -78,11 +78,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded
+Type: System.String
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -97,8 +97,8 @@ printOperationStatus
 To construct, please use Get-Help -Online and see NOTES section for STATUS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintOperationStatus
-Parameter Sets: CreateExpanded
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintOperationStatus
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -128,7 +128,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -145,9 +145,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintOperation
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintOperation
+
 ## NOTES
 
 ALIASES
@@ -159,7 +161,7 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER <IMicrosoftGraphPrintOperation>: printOperation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[CreatedDateTime <DateTime?>]`: The DateTimeOffset when the operation was created. Read-only.
   - `[Status <IMicrosoftGraphPrintOperationStatus>]`: printOperationStatus
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -172,3 +174,4 @@ STATUS <IMicrosoftGraphPrintOperationStatus>: printOperationStatus
   - `[State <String>]`: printOperationProcessingState
 
 ## RELATED LINKS
+

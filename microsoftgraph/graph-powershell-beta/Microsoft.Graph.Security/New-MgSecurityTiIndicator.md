@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Security-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecuritytiindicator
 schema: 2.0.0
@@ -14,12 +14,12 @@ Create new navigation property to tiIndicators for security
 
 ### CreateExpanded (Default)
 ```
-New-MgSecurityTiIndicator [-Action <String>] [-ActivityGroupNames <String[]>] [-AdditionalInformation <String>]
- [-AdditionalProperties <Hashtable>] [-AzureTenantId <String>] [-Confidence <Int32>] [-Description <String>]
- [-DiamondModel <String>] [-DomainName <String>] [-EmailEncoding <String>] [-EmailLanguage <String>]
- [-EmailRecipient <String>] [-EmailSenderAddress <String>] [-EmailSenderName <String>]
- [-EmailSourceDomain <String>] [-EmailSourceIPAddress <String>] [-EmailSubject <String>]
- [-EmailXMailer <String>] [-ExpirationDateTime <DateTime>] [-ExternalId <String>]
+New-MgSecurityTiIndicator [-Action <String>] [-ActivityGroupNames <String[]>]
+ [-AdditionalInformation <String>] [-AdditionalProperties <Hashtable>] [-AzureTenantId <String>]
+ [-Confidence <Int32>] [-Description <String>] [-DiamondModel <String>] [-DomainName <String>]
+ [-EmailEncoding <String>] [-EmailLanguage <String>] [-EmailRecipient <String>] [-EmailSenderAddress <String>]
+ [-EmailSenderName <String>] [-EmailSourceDomain <String>] [-EmailSourceIPAddress <String>]
+ [-EmailSubject <String>] [-EmailXMailer <String>] [-ExpirationDateTime <DateTime>] [-ExternalId <String>]
  [-FileCompileDateTime <DateTime>] [-FileCreatedDateTime <DateTime>] [-FileHashType <String>]
  [-FileHashValue <String>] [-FileMutexName <String>] [-FileName <String>] [-FilePacker <String>]
  [-FilePath <String>] [-FileSize <Int64>] [-FileType <String>] [-Id <String>] [-IngestedDateTime <DateTime>]
@@ -30,12 +30,13 @@ New-MgSecurityTiIndicator [-Action <String>] [-ActivityGroupNames <String[]>] [-
  [-NetworkProtocol <Int32>] [-NetworkSourceAsn <Int64>] [-NetworkSourceCidrBlock <String>]
  [-NetworkSourceIPv4 <String>] [-NetworkSourceIPv6 <String>] [-NetworkSourcePort <Int32>] [-PassiveOnly]
  [-Severity <Int32>] [-Tags <String[]>] [-TargetProduct <String>] [-ThreatType <String>] [-TlpLevel <String>]
- [-Url <String>] [-UserAgent <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Url <String>] [-UserAgent <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgSecurityTiIndicator -BodyParameter <IMicrosoftGraphTiIndicator> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgSecurityTiIndicator -BodyParameter <IMicrosoftGraphTiIndicator> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,7 +50,7 @@ Create new navigation property to tiIndicators for security
 tiAction
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -64,7 +65,7 @@ Accept wildcard characters: False
 The cyber threat intelligence name(s) for the parties responsible for the malicious activity covered by the threat indicator.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -80,7 +81,7 @@ A catchall area into which extra data from the indicator not covered by the othe
 Data placed into additionalInformation will typically not be utilized by the targetProduct security tool.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -95,7 +96,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -112,7 +113,7 @@ The Azure Active Directory tenant id of submitting client.
 Required.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -128,7 +129,7 @@ tiIndicator
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTiIndicator
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTiIndicator
 Parameter Sets: Create
 Aliases:
 
@@ -141,10 +142,10 @@ Accept wildcard characters: False
 
 ### -Confidence
 An integer representing the confidence the data within the indicator accurately identifies malicious behavior.
-Acceptable values are 0 - 100 with 100 being the highest.
+Acceptable values are 0 – 100 with 100 being the highest.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -160,7 +161,7 @@ Brief description (100 characters or less) of the threat represented by the indi
 Required.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -175,7 +176,7 @@ Accept wildcard characters: False
 diamondModel
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -190,7 +191,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -205,7 +206,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -220,7 +221,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -235,7 +236,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -250,7 +251,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -265,7 +266,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -280,7 +281,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -295,7 +296,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -310,7 +311,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -325,7 +326,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -344,7 +345,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Required.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -356,11 +357,11 @@ Accept wildcard characters: False
 ```
 
 ### -ExternalId
-An identification number that ties the indicator back to the indicator provider's system (e.g.
+An identification number that ties the indicator back to the indicator provider’s system (e.g.
 a foreign key).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -375,7 +376,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -390,7 +391,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -405,7 +406,7 @@ Accept wildcard characters: False
 fileHashType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -420,7 +421,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -435,7 +436,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -450,7 +451,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -465,7 +466,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -480,7 +481,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -495,7 +496,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int64
+Type: System.Int64
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -510,7 +511,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -522,10 +523,10 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -542,7 +543,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -556,10 +557,10 @@ Accept wildcard characters: False
 ### -IsActive
 Used to deactivate indicators within system.
 By default, any indicator submitted is set as active.
-However, providers may submit existing indicators with this set to 'False' to deactivate indicators in the system.
+However, providers may submit existing indicators with this set to ‘False’ to deactivate indicators in the system.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -572,10 +573,10 @@ Accept wildcard characters: False
 
 ### -KillChain
 A JSON array of strings that describes which point or points on the Kill Chain this indicator targets.
-See 'killChain values' below for exact values.
+See ‘killChain values’ below for exact values.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -591,7 +592,7 @@ Scenarios in which the indicator may cause false positives.
 This should be human-readable text.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -608,7 +609,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -624,7 +625,7 @@ The malware family name associated with an indicator if it exists.
 Microsoft prefers the Microsoft malware family name if at all possible which can be found via the Windows Defender Security Intelligence threat encyclopedia.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -639,7 +640,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -654,7 +655,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int64
+Type: System.Int64
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -669,7 +670,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -684,7 +685,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -699,7 +700,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -714,7 +715,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -729,7 +730,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -744,7 +745,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -759,7 +760,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -774,7 +775,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -789,7 +790,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int64
+Type: System.Int64
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -804,7 +805,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -819,7 +820,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -834,7 +835,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -849,7 +850,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -862,12 +863,12 @@ Accept wildcard characters: False
 
 ### -PassiveOnly
 Determines if the indicator should trigger an event that is visible to an end-user.
-When set to 'true,' security tools will not notify the end user that a 'hit' has occurred.
+When set to ‘true,’ security tools will not notify the end user that a ‘hit’ has occurred.
 This is most often treated as audit or silent mode by security products where they will simply log that a match occurred but will not perform the action.
 Default value is false.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -880,11 +881,11 @@ Accept wildcard characters: False
 
 ### -Severity
 An integer representing the severity of the malicious behavior identified by the data within the indicator.
-Acceptable values are 0 - 5 where 5 is the most severe and zero is not severe at all.
+Acceptable values are 0 – 5 where 5 is the most severe and zero is not severe at all.
 Default value is 3.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -899,7 +900,7 @@ Accept wildcard characters: False
 A JSON array of strings that stores arbitrary tags/keywords.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -916,7 +917,7 @@ Acceptable values are: Azure Sentinel, Microsoft Defender ATP.
 Required
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -933,7 +934,7 @@ Possible values are: Botnet, C2, CryptoMining, Darknet, DDoS, MaliciousUrl, Malw
 Required.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -948,7 +949,7 @@ Accept wildcard characters: False
 tlpLevel
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -963,7 +964,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -978,7 +979,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -993,7 +994,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -1009,7 +1010,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -1026,9 +1027,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTiIndicator
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTiIndicator
+
 ## NOTES
 
 ALIASES
@@ -1040,12 +1043,12 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER <IMicrosoftGraphTiIndicator>: tiIndicator
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Action <String>]`: tiAction
   - `[ActivityGroupNames <String[]>]`: The cyber threat intelligence name(s) for the parties responsible for the malicious activity covered by the threat indicator.
   - `[AdditionalInformation <String>]`: A catchall area into which extra data from the indicator not covered by the other tiIndicator properties may be placed. Data placed into additionalInformation will typically not be utilized by the targetProduct security tool.
   - `[AzureTenantId <String>]`: Stamped by the system when the indicator is ingested. The Azure Active Directory tenant id of submitting client. Required.
-  - `[Confidence <Int32?>]`: An integer representing the confidence the data within the indicator accurately identifies malicious behavior. Acceptable values are 0 - 100 with 100 being the highest.
+  - `[Confidence <Int32?>]`: An integer representing the confidence the data within the indicator accurately identifies malicious behavior. Acceptable values are 0 – 100 with 100 being the highest.
   - `[Description <String>]`: Brief description (100 characters or less) of the threat represented by the indicator. Required.
   - `[DiamondModel <String>]`: diamondModel
   - `[DomainName <String>]`: 
@@ -1059,7 +1062,7 @@ BODYPARAMETER <IMicrosoftGraphTiIndicator>: tiIndicator
   - `[EmailSubject <String>]`: 
   - `[EmailXMailer <String>]`: 
   - `[ExpirationDateTime <DateTime?>]`: DateTime string indicating when the Indicator expires. All indicators must have an expiration date to avoid stale indicators persisting in the system. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Required.
-  - `[ExternalId <String>]`: An identification number that ties the indicator back to the indicator provider's system (e.g. a foreign key).
+  - `[ExternalId <String>]`: An identification number that ties the indicator back to the indicator provider’s system (e.g. a foreign key).
   - `[FileCompileDateTime <DateTime?>]`: 
   - `[FileCreatedDateTime <DateTime?>]`: 
   - `[FileHashType <String>]`: fileHashType
@@ -1071,8 +1074,8 @@ BODYPARAMETER <IMicrosoftGraphTiIndicator>: tiIndicator
   - `[FileSize <Int64?>]`: 
   - `[FileType <String>]`: 
   - `[IngestedDateTime <DateTime?>]`: Stamped by the system when the indicator is ingested. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[IsActive <Boolean?>]`: Used to deactivate indicators within system. By default, any indicator submitted is set as active. However, providers may submit existing indicators with this set to 'False' to deactivate indicators in the system.
-  - `[KillChain <String[]>]`: A JSON array of strings that describes which point or points on the Kill Chain this indicator targets. See 'killChain values' below for exact values.
+  - `[IsActive <Boolean?>]`: Used to deactivate indicators within system. By default, any indicator submitted is set as active. However, providers may submit existing indicators with this set to ‘False’ to deactivate indicators in the system.
+  - `[KillChain <String[]>]`: A JSON array of strings that describes which point or points on the Kill Chain this indicator targets. See ‘killChain values’ below for exact values.
   - `[KnownFalsePositives <String>]`: Scenarios in which the indicator may cause false positives. This should be human-readable text.
   - `[LastReportedDateTime <DateTime?>]`: The last time the indicator was seen. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[MalwareFamilyNames <String[]>]`: The malware family name associated with an indicator if it exists. Microsoft prefers the Microsoft malware family name if at all possible which can be found via the Windows Defender Security Intelligence threat encyclopedia.
@@ -1091,8 +1094,8 @@ BODYPARAMETER <IMicrosoftGraphTiIndicator>: tiIndicator
   - `[NetworkSourceIPv4 <String>]`: 
   - `[NetworkSourceIPv6 <String>]`: 
   - `[NetworkSourcePort <Int32?>]`: 
-  - `[PassiveOnly <Boolean?>]`: Determines if the indicator should trigger an event that is visible to an end-user. When set to 'true,' security tools will not notify the end user that a 'hit' has occurred. This is most often treated as audit or silent mode by security products where they will simply log that a match occurred but will not perform the action. Default value is false.
-  - `[Severity <Int32?>]`: An integer representing the severity of the malicious behavior identified by the data within the indicator. Acceptable values are 0 - 5 where 5 is the most severe and zero is not severe at all. Default value is 3.
+  - `[PassiveOnly <Boolean?>]`: Determines if the indicator should trigger an event that is visible to an end-user. When set to ‘true,’ security tools will not notify the end user that a ‘hit’ has occurred. This is most often treated as audit or silent mode by security products where they will simply log that a match occurred but will not perform the action. Default value is false.
+  - `[Severity <Int32?>]`: An integer representing the severity of the malicious behavior identified by the data within the indicator. Acceptable values are 0 – 5 where 5 is the most severe and zero is not severe at all. Default value is 3.
   - `[Tags <String[]>]`: A JSON array of strings that stores arbitrary tags/keywords.
   - `[TargetProduct <String>]`: A string value representing a single security product to which the indicator should be applied. Acceptable values are: Azure Sentinel, Microsoft Defender ATP. Required
   - `[ThreatType <String>]`: Each indicator must have a valid Indicator Threat Type. Possible values are: Botnet, C2, CryptoMining, Darknet, DDoS, MaliciousUrl, Malware, Phishing, Proxy, PUA, WatchList. Required.
@@ -1101,3 +1104,4 @@ BODYPARAMETER <IMicrosoftGraphTiIndicator>: tiIndicator
   - `[UserAgent <String>]`: 
 
 ## RELATED LINKS
+

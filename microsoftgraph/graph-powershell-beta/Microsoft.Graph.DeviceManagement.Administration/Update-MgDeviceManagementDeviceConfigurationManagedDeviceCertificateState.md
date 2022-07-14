@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementdeviceconfigurationmanageddevicecertificatestate
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState
 
 ## SYNOPSIS
-Summary of all certificates for all devices.
+Update the navigation property deviceConfigurationsAllManagedDeviceCertificateStates in deviceManagement
 
 ## SYNTAX
 
@@ -18,17 +18,26 @@ Update-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState
  -ManagedAllDeviceCertificateStateId <String> [-AdditionalProperties <Hashtable>]
  [-CertificateExpirationDateTime <DateTime>] [-CertificateExtendedKeyUsages <String>]
  [-CertificateIssuanceDateTime <DateTime>] [-CertificateIssuerName <String>] [-CertificateKeyUsages <Int32>]
- [-CertificateRevokeStatus <String>] [-CertificateRevokeStatusLastChangeDateTime <DateTime>]
- [-CertificateSerialNumber <String>] [-CertificateSubjectName <String>] [-CertificateThumbprint <String>]
- [-Id <String>] [-ManagedDeviceDisplayName <String>] [-UserPrincipalName <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-CertificateRevokeStatus <CertificateRevocationStatus>]
+ [-CertificateRevokeStatusLastChangeDateTime <DateTime>] [-CertificateSerialNumber <String>]
+ [-CertificateSubjectName <String>] [-CertificateThumbprint <String>] [-Id <String>]
+ [-ManagedDeviceDisplayName <String>] [-UserPrincipalName <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState
  -ManagedAllDeviceCertificateStateId <String> -BodyParameter <IMicrosoftGraphManagedAllDeviceCertificateState>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState
+ -InputObject <IDeviceManagementAdministrationIdentity>
+ -BodyParameter <IMicrosoftGraphManagedAllDeviceCertificateState> [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -37,22 +46,15 @@ Update-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState
  -InputObject <IDeviceManagementAdministrationIdentity> [-AdditionalProperties <Hashtable>]
  [-CertificateExpirationDateTime <DateTime>] [-CertificateExtendedKeyUsages <String>]
  [-CertificateIssuanceDateTime <DateTime>] [-CertificateIssuerName <String>] [-CertificateKeyUsages <Int32>]
- [-CertificateRevokeStatus <String>] [-CertificateRevokeStatusLastChangeDateTime <DateTime>]
- [-CertificateSerialNumber <String>] [-CertificateSubjectName <String>] [-CertificateThumbprint <String>]
- [-Id <String>] [-ManagedDeviceDisplayName <String>] [-UserPrincipalName <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState
- -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphManagedAllDeviceCertificateState> [-PassThru] [-WhatIf] [-Confirm]
+ [-CertificateRevokeStatus <CertificateRevocationStatus>]
+ [-CertificateRevokeStatusLastChangeDateTime <DateTime>] [-CertificateSerialNumber <String>]
+ [-CertificateSubjectName <String>] [-CertificateThumbprint <String>] [-Id <String>]
+ [-ManagedDeviceDisplayName <String>] [-UserPrincipalName <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Summary of all certificates for all devices.
+Update the navigation property deviceConfigurationsAllManagedDeviceCertificateStates in deviceManagement
 
 ## EXAMPLES
 
@@ -62,7 +64,7 @@ Summary of all certificates for all devices.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -78,7 +80,7 @@ managedAllDeviceCertificateState
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedAllDeviceCertificateState
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedAllDeviceCertificateState
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -93,7 +95,7 @@ Accept wildcard characters: False
 Certificate expiry date
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -108,7 +110,7 @@ Accept wildcard characters: False
 Enhanced Key Usage
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -123,7 +125,7 @@ Accept wildcard characters: False
 Issuance date
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -138,7 +140,7 @@ Accept wildcard characters: False
 Issuer
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -153,7 +155,7 @@ Accept wildcard characters: False
 Key Usage
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -168,7 +170,7 @@ Accept wildcard characters: False
 Certificate Revocation Status.
 
 ```yaml
-Type: String
+Type: Microsoft.Graph.PowerShell.Support.CertificateRevocationStatus
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -183,7 +185,7 @@ Accept wildcard characters: False
 The time the revoke status was last changed
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -198,7 +200,7 @@ Accept wildcard characters: False
 Serial number
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -213,7 +215,7 @@ Accept wildcard characters: False
 Certificate subject name
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -228,7 +230,7 @@ Accept wildcard characters: False
 Thumbprint
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -240,10 +242,10 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -259,8 +261,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementAdministrationIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -274,8 +276,8 @@ Accept wildcard characters: False
 key: id of managedAllDeviceCertificateState
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -289,7 +291,7 @@ Accept wildcard characters: False
 Device display name
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -304,7 +306,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -319,7 +321,7 @@ Accept wildcard characters: False
 User principal name
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -334,7 +336,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -350,7 +352,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -367,10 +369,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedAllDeviceCertificateState
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -382,13 +387,13 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER <IMicrosoftGraphManagedAllDeviceCertificateState>: managedAllDeviceCertificateState
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[CertificateExpirationDateTime <DateTime?>]`: Certificate expiry date
   - `[CertificateExtendedKeyUsages <String>]`: Enhanced Key Usage
   - `[CertificateIssuanceDateTime <DateTime?>]`: Issuance date
   - `[CertificateIssuerName <String>]`: Issuer
   - `[CertificateKeyUsages <Int32?>]`: Key Usage
-  - `[CertificateRevokeStatus <String>]`: Certificate Revocation Status.
+  - `[CertificateRevokeStatus <CertificateRevocationStatus?>]`: Certificate Revocation Status.
   - `[CertificateRevokeStatusLastChangeDateTime <DateTime?>]`: The time the revoke status was last changed
   - `[CertificateSerialNumber <String>]`: Serial number
   - `[CertificateSubjectName <String>]`: Certificate subject name
@@ -419,6 +424,7 @@ INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[DeviceManagementExchangeOnPremisesPolicyId <String>]`: key: id of deviceManagementExchangeOnPremisesPolicy
   - `[DeviceManagementPartnerId <String>]`: key: id of deviceManagementPartner
   - `[GroupPolicyCategoryId <String>]`: key: id of groupPolicyCategory
+  - `[GroupPolicyCategoryId1 <String>]`: key: id of groupPolicyCategory
   - `[GroupPolicyDefinitionFileId <String>]`: key: id of groupPolicyDefinitionFile
   - `[GroupPolicyDefinitionId <String>]`: key: id of groupPolicyDefinition
   - `[GroupPolicyMigrationReportId <String>]`: key: id of groupPolicyMigrationReport
@@ -449,3 +455,4 @@ INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[UserPfxCertificateId <String>]`: key: id of userPFXCertificate
 
 ## RELATED LINKS
+

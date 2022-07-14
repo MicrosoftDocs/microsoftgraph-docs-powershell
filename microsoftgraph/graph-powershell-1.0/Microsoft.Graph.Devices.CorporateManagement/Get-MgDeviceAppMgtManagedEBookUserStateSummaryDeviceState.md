@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtmanagedebookuserstatesummarydevicestate
 schema: 2.0.0
@@ -8,16 +8,16 @@ schema: 2.0.0
 # Get-MgDeviceAppMgtManagedEBookUserStateSummaryDeviceState
 
 ## SYNOPSIS
-The install state of the eBook.
+Get deviceStates from deviceAppManagement
 
 ## SYNTAX
 
 ### List1 (Default)
 ```
 Get-MgDeviceAppMgtManagedEBookUserStateSummaryDeviceState -ManagedEBookId <String>
- -UserInstallStateSummaryId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+ -UserInstallStateSummaryId <String> [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>]
+ [-PageSize <Int32>] [<CommonParameters>]
 ```
 
 ### Get1
@@ -34,16 +34,9 @@ Get-MgDeviceAppMgtManagedEBookUserStateSummaryDeviceState -InputObject <IDevices
 ```
 
 ## DESCRIPTION
-The install state of the eBook.
+Get deviceStates from deviceAppManagement
 
 ## EXAMPLES
-
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -51,13 +44,13 @@ PS C:\> {{ Add example code here }}
 List all pages.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: List1
 Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -67,7 +60,7 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List1
 Aliases: CV
 
@@ -82,7 +75,7 @@ Accept wildcard characters: False
 key: id of deviceInstallState
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get1
 Aliases:
 
@@ -97,7 +90,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -112,7 +105,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List1
 Aliases:
 
@@ -128,7 +121,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCorporateManagementIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
 Parameter Sets: GetViaIdentity1
 Aliases:
 
@@ -143,8 +136,8 @@ Accept wildcard characters: False
 key: id of managedEBook
 
 ```yaml
-Type: String
-Parameter Sets: List1, Get1
+Type: System.String
+Parameter Sets: Get1, List1
 Aliases:
 
 Required: True
@@ -158,13 +151,13 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: List1
 Aliases:
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -173,7 +166,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -188,7 +181,22 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: List1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
 Parameter Sets: List1
 Aliases:
 
@@ -203,7 +211,7 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: List1
 Aliases: OrderBy
 
@@ -218,13 +226,13 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: List1
 Aliases: Limit
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -233,28 +241,13 @@ Accept wildcard characters: False
 key: id of userInstallStateSummary
 
 ```yaml
-Type: String
-Parameter Sets: List1, Get1
+Type: System.String
+Parameter Sets: Get1, List1
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List1
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -265,13 +258,90 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceInstallState
+
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+### Get-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceState
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
+  - `[AndroidManagedAppProtectionId <String>]`: key: id of androidManagedAppProtection
+  - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
+  - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: key: id of assignmentFilterEvaluationStatusDetails
+  - `[BundleId <String>]`: Usage: bundleId='{bundleId}'
+  - `[Count <Int64?>]`: Usage: count={count}
+  - `[DefaultManagedAppProtectionId <String>]`: key: id of defaultManagedAppProtection
+  - `[DetectedAppId <String>]`: key: id of detectedApp
+  - `[DeviceAppManagementTaskId <String>]`: key: id of deviceAppManagementTask
+  - `[DeviceCompliancePolicyStateId <String>]`: key: id of deviceCompliancePolicyState
+  - `[DeviceConfigurationStateId <String>]`: key: id of deviceConfigurationState
+  - `[DeviceEnrollmentConfigurationId <String>]`: key: id of deviceEnrollmentConfiguration
+  - `[DeviceId <String>]`: Usage: deviceId='{deviceId}'
+  - `[DeviceInstallStateId <String>]`: key: id of deviceInstallState
+  - `[DeviceLogCollectionResponseId <String>]`: key: id of deviceLogCollectionResponse
+  - `[DeviceManagementTroubleshootingEventId <String>]`: key: id of deviceManagementTroubleshootingEvent
+  - `[EnrollmentConfigurationAssignmentId <String>]`: key: id of enrollmentConfigurationAssignment
+  - `[EnterpriseCodeSigningCertificateId <String>]`: key: id of enterpriseCodeSigningCertificate
+  - `[IosLobAppProvisioningConfigurationAssignmentId <String>]`: key: id of iosLobAppProvisioningConfigurationAssignment
+  - `[IosLobAppProvisioningConfigurationId <String>]`: key: id of iosLobAppProvisioningConfiguration
+  - `[IosManagedAppProtectionId <String>]`: key: id of iosManagedAppProtection
+  - `[ManagedAppOperationId <String>]`: key: id of managedAppOperation
+  - `[ManagedAppPolicyId <String>]`: key: id of managedAppPolicy
+  - `[ManagedAppRegistrationId <String>]`: key: id of managedAppRegistration
+  - `[ManagedAppStatusId <String>]`: key: id of managedAppStatus
+  - `[ManagedDeviceId <String>]`: key: id of managedDevice
+  - `[ManagedDeviceMobileAppConfigurationAssignmentId <String>]`: key: id of managedDeviceMobileAppConfigurationAssignment
+  - `[ManagedDeviceMobileAppConfigurationDeviceStatusId <String>]`: key: id of managedDeviceMobileAppConfigurationDeviceStatus
+  - `[ManagedDeviceMobileAppConfigurationId <String>]`: key: id of managedDeviceMobileAppConfiguration
+  - `[ManagedDeviceMobileAppConfigurationStateId <String>]`: key: id of managedDeviceMobileAppConfigurationState
+  - `[ManagedDeviceMobileAppConfigurationUserStatusId <String>]`: key: id of managedDeviceMobileAppConfigurationUserStatus
+  - `[ManagedEBookAssignmentId <String>]`: key: id of managedEBookAssignment
+  - `[ManagedEBookCategoryId <String>]`: key: id of managedEBookCategory
+  - `[ManagedEBookId <String>]`: key: id of managedEBook
+  - `[ManagedMobileAppId <String>]`: key: id of managedMobileApp
+  - `[MdmWindowsInformationProtectionPolicyId <String>]`: key: id of mdmWindowsInformationProtectionPolicy
+  - `[MobileAppAssignmentId <String>]`: key: id of mobileAppAssignment
+  - `[MobileAppCategoryId <String>]`: key: id of mobileAppCategory
+  - `[MobileAppId <String>]`: key: id of mobileApp
+  - `[MobileAppInstallStatusId <String>]`: key: id of mobileAppInstallStatus
+  - `[MobileAppIntentAndStateId <String>]`: key: id of mobileAppIntentAndState
+  - `[MobileAppProvisioningConfigGroupAssignmentId <String>]`: key: id of mobileAppProvisioningConfigGroupAssignment
+  - `[MobileAppRelationshipId <String>]`: key: id of mobileAppRelationship
+  - `[MobileAppTroubleshootingEventId <String>]`: key: id of mobileAppTroubleshootingEvent
+  - `[OfficeClientConfigurationAssignmentId <String>]`: key: id of officeClientConfigurationAssignment
+  - `[OfficeClientConfigurationId <String>]`: key: id of officeClientConfiguration
+  - `[PolicySetAssignmentId <String>]`: key: id of policySetAssignment
+  - `[PolicySetId <String>]`: key: id of policySet
+  - `[PolicySetItemId <String>]`: key: id of policySetItem
+  - `[SecurityBaselineSettingStateId <String>]`: key: id of securityBaselineSettingState
+  - `[SecurityBaselineStateId <String>]`: key: id of securityBaselineState
+  - `[SideLoadingKeyId <String>]`: key: id of sideLoadingKey
+  - `[Status <String>]`: Usage: status='{status}'
+  - `[TargetedManagedAppConfigurationId <String>]`: key: id of targetedManagedAppConfiguration
+  - `[TargetedManagedAppPolicyAssignmentId <String>]`: key: id of targetedManagedAppPolicyAssignment
+  - `[UserAppInstallStatusId <String>]`: key: id of userAppInstallStatus
+  - `[UserId <String>]`: key: id of user
+  - `[UserInstallStateSummaryId <String>]`: key: id of userInstallStateSummary
+  - `[UserPrincipalName <String>]`: Usage: userPrincipalName='{userPrincipalName}'
+  - `[VppTokenId <String>]`: key: id of vppToken
+  - `[WindowsDefenderApplicationControlSupplementalPolicyAssignmentId <String>]`: key: id of windowsDefenderApplicationControlSupplementalPolicyAssignment
+  - `[WindowsDefenderApplicationControlSupplementalPolicyDeploymentStatusId <String>]`: key: id of windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
+  - `[WindowsDefenderApplicationControlSupplementalPolicyId <String>]`: key: id of windowsDefenderApplicationControlSupplementalPolicy
+  - `[WindowsDeviceMalwareStateId <String>]`: key: id of windowsDeviceMalwareState
+  - `[WindowsInformationProtectionDeviceRegistrationId <String>]`: key: id of windowsInformationProtectionDeviceRegistration
+  - `[WindowsInformationProtectionPolicyId <String>]`: key: id of windowsInformationProtectionPolicy
+  - `[WindowsInformationProtectionWipeActionId <String>]`: key: id of windowsInformationProtectionWipeAction
+  - `[WindowsManagedAppProtectionId <String>]`: key: id of windowsManagedAppProtection
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtmanagedebookuserstatesummarydevicestate](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtmanagedebookuserstatesummarydevicestate)
 

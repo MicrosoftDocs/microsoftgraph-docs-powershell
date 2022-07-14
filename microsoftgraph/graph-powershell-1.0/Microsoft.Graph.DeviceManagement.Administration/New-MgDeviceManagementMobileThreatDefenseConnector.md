@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementmobilethreatdefenseconnector
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementMobileThreatDefenseConnector
 
 ## SYNOPSIS
-The list of Mobile threat Defense connectors configured by the tenant.
+Create new navigation property to mobileThreatDefenseConnectors for deviceManagement
 
 ## SYNTAX
 
@@ -17,18 +17,18 @@ The list of Mobile threat Defense connectors configured by the tenant.
 New-MgDeviceManagementMobileThreatDefenseConnector [-AdditionalProperties <Hashtable>]
  [-AndroidDeviceBlockedOnMissingPartnerData] [-AndroidEnabled] [-Id <String>]
  [-IosDeviceBlockedOnMissingPartnerData] [-IosEnabled] [-LastHeartbeatDateTime <DateTime>]
- [-PartnerState <String>] [-PartnerUnresponsivenessThresholdInDays <Int32>]
- [-PartnerUnsupportedOSVersionBlocked] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PartnerState <MobileThreatPartnerTenantState>] [-PartnerUnresponsivenessThresholdInDays <Int32>]
+ [-PartnerUnsupportedOSVersionBlocked] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgDeviceManagementMobileThreatDefenseConnector -BodyParameter <IMicrosoftGraphMobileThreatDefenseConnector>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDeviceManagementMobileThreatDefenseConnector
+ -BodyParameter <IMicrosoftGraphMobileThreatDefenseConnector1> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The list of Mobile threat Defense connectors configured by the tenant.
+Create new navigation property to mobileThreatDefenseConnectors for deviceManagement
 
 ## EXAMPLES
 
@@ -38,7 +38,7 @@ The list of Mobile threat Defense connectors configured by the tenant.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -53,7 +53,7 @@ Accept wildcard characters: False
 For Android, set whether Intune must receive data from the data sync partner prior to marking a device compliant
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 For Android, set whether data from the data sync partner should be used during compliance evaluations
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -84,7 +84,7 @@ Entity which represents a connection to Mobile threat defense partner.
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMobileThreatDefenseConnector
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileThreatDefenseConnector1
 Parameter Sets: Create1
 Aliases:
 
@@ -96,10 +96,10 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 For IOS, set whether Intune must receive data from the data sync partner prior to marking a device compliant
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 For IOS, get or set whether data from the data sync partner should be used during compliance evaluations
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 DateTime of last Heartbeat recieved from the Data Sync Partner
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 Partner state of this tenant.
 
 ```yaml
-Type: String
+Type: Microsoft.Graph.PowerShell.Support.MobileThreatPartnerTenantState
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 Get or Set days the per tenant tolerance to unresponsiveness for this partner integration
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -189,7 +189,7 @@ Accept wildcard characters: False
 Get or set whether to block devices on the enabled platforms that do not meet the minimum version requirements of the Data Sync Partner
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -204,7 +204,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -220,7 +220,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -236,10 +236,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileThreatDefenseConnector
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileThreatDefenseConnector1
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileThreatDefenseConnector
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileThreatDefenseConnector1
+
 ## NOTES
 
 ALIASES
@@ -249,16 +251,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphMobileThreatDefenseConnector>: Entity which represents a connection to Mobile threat defense partner.
+BODYPARAMETER <IMicrosoftGraphMobileThreatDefenseConnector1>: Entity which represents a connection to Mobile threat defense partner.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[AndroidDeviceBlockedOnMissingPartnerData <Boolean?>]`: For Android, set whether Intune must receive data from the data sync partner prior to marking a device compliant
   - `[AndroidEnabled <Boolean?>]`: For Android, set whether data from the data sync partner should be used during compliance evaluations
   - `[IosDeviceBlockedOnMissingPartnerData <Boolean?>]`: For IOS, set whether Intune must receive data from the data sync partner prior to marking a device compliant
   - `[IosEnabled <Boolean?>]`: For IOS, get or set whether data from the data sync partner should be used during compliance evaluations
   - `[LastHeartbeatDateTime <DateTime?>]`: DateTime of last Heartbeat recieved from the Data Sync Partner
-  - `[PartnerState <String>]`: Partner state of this tenant.
+  - `[PartnerState <MobileThreatPartnerTenantState?>]`: Partner state of this tenant.
   - `[PartnerUnresponsivenessThresholdInDays <Int32?>]`: Get or Set days the per tenant tolerance to unresponsiveness for this partner integration
   - `[PartnerUnsupportedOSVersionBlocked <Boolean?>]`: Get or set whether to block devices on the enabled platforms that do not meet the minimum version requirements of the Data Sync Partner
 
 ## RELATED LINKS
+

@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Applications-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/new-mgapplicationtemplate
 schema: 2.0.0
@@ -17,13 +17,13 @@ Add new entity to applicationTemplates
 New-MgApplicationTemplate [-AdditionalProperties <Hashtable>] [-Categories <String[]>] [-Description <String>]
  [-DisplayName <String>] [-HomePageUrl <String>] [-Id <String>]
  [-InformationalUrls <IMicrosoftGraphInformationalUrls>] [-LogoUrl <String>] [-Publisher <String>]
- [-SupportedProvisioningTypes <String[]>] [-SupportedSingleSignOnModes <String[]>] [-WhatIf] [-Confirm]
+ [-SupportedProvisioningTypes <String[]>] [-SupportedSingleSignOnModes <String[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgApplicationTemplate -BodyParameter <IMicrosoftGraphApplicationTemplate1> [-WhatIf] [-Confirm]
+New-MgApplicationTemplate -BodyParameter <IMicrosoftGraphApplicationTemplate> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -38,7 +38,7 @@ Add new entity to applicationTemplates
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -54,7 +54,7 @@ applicationTemplate
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphApplicationTemplate1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApplicationTemplate
 Parameter Sets: Create
 Aliases:
 
@@ -70,7 +70,7 @@ The list of categories for the application.
 Supported values can be: Collaboration, Business Management, Consumer, Content management, CRM, Data services, Developer services, E-commerce, Education, ERP, Finance, Health, Human resources, IT infrastructure, Mail, Management, Marketing, Media, Productivity, Project management, Telecommunications, Tools, Travel, and Web design & hosting.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 A description of the application.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 The name of the application.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 The home page URL of the application.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -127,10 +127,10 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -146,7 +146,7 @@ informationalUrls
 To construct, please use Get-Help -Online and see NOTES section for INFORMATIONALURLS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInformationalUrls
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationalUrls
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 The URL to get the logo for this application.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 The name of the publisher for this application.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -192,7 +192,7 @@ The list of provisioning modes supported by this application.
 The only valid value is sync.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -208,7 +208,7 @@ The list of single sign-on modes supported by this application.
 The supported values are oidc, password, saml, and notSupported.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -223,7 +223,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -239,7 +239,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -255,10 +255,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApplicationTemplate1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApplicationTemplate
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApplicationTemplate1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApplicationTemplate
+
 ## NOTES
 
 ALIASES
@@ -268,9 +270,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphApplicationTemplate1>: applicationTemplate
+BODYPARAMETER <IMicrosoftGraphApplicationTemplate>: applicationTemplate
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Categories <String[]>]`: The list of categories for the application. Supported values can be: Collaboration, Business Management, Consumer, Content management, CRM, Data services, Developer services, E-commerce, Education, ERP, Finance, Health, Human resources, IT infrastructure, Mail, Management, Marketing, Media, Productivity, Project management, Telecommunications, Tools, Travel, and Web design & hosting.
   - `[Description <String>]`: A description of the application.
   - `[DisplayName <String>]`: The name of the application.
@@ -290,3 +292,4 @@ INFORMATIONALURLS <IMicrosoftGraphInformationalUrls>: informationalUrls
   - `[SingleSignOnDocumentationUrl <String>]`: 
 
 ## RELATED LINKS
+

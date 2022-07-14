@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgtrustframeworkkeyset
 schema: 2.0.0
@@ -15,12 +15,12 @@ Create new navigation property to keySets for trustFramework
 ### CreateExpanded (Default)
 ```
 New-MgTrustFrameworkKeySet [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Keys <IMicrosoftGraphTrustFrameworkKey[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Keys <IMicrosoftGraphTrustFrameworkKey[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgTrustFrameworkKeySet -BodyParameter <IMicrosoftGraphTrustFrameworkKeySet> [-WhatIf] [-Confirm]
+New-MgTrustFrameworkKeySet -BodyParameter <IMicrosoftGraphTrustFrameworkKeySet> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -35,7 +35,7 @@ Create new navigation property to keySets for trustFramework
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -51,7 +51,7 @@ trustFrameworkKeySet
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTrustFrameworkKeySet
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTrustFrameworkKeySet
 Parameter Sets: Create
 Aliases:
 
@@ -63,10 +63,10 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -82,7 +82,7 @@ A collection of the keys.
 To construct, please use Get-Help -Online and see NOTES section for KEYS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTrustFrameworkKey[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTrustFrameworkKey[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -113,7 +113,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -130,9 +130,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTrustFrameworkKeySet
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTrustFrameworkKeySet
+
 ## NOTES
 
 ALIASES
@@ -144,7 +146,7 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER <IMicrosoftGraphTrustFrameworkKeySet>: trustFrameworkKeySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Keys <IMicrosoftGraphTrustFrameworkKey[]>]`: A collection of the keys.
     - `[D <String>]`: RSA Key - private exponent. Field cannot be read back.
     - `[Dp <String>]`: RSA Key - first exponent. Field cannot be read back.
@@ -182,3 +184,4 @@ KEYS <IMicrosoftGraphTrustFrameworkKey[]>: A collection of the keys.
   - `[X5T <String>]`: The x5t (X.509 certificate SHA-1 thumbprint) parameter is a base64url-encoded SHA-1 thumbprint (a.k.a. digest) of the DER encoding of an X.509 certificate RFC 5280.
 
 ## RELATED LINKS
+

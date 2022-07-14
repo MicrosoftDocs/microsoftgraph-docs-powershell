@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintprintertasktriggerdefinition
 schema: 2.0.0
@@ -8,14 +8,13 @@ schema: 2.0.0
 # Get-MgPrintPrinterTaskTriggerDefinition
 
 ## SYNOPSIS
-An abstract definition that will be used to create a printTask when triggered by a print event.
-Read-only.
+Get definition from print
 
 ## SYNTAX
 
 ### Get1 (Default)
 ```
-Get-MgPrintPrinterTaskTriggerDefinition -PrintTaskTriggerId <String> -PrinterId <String>
+Get-MgPrintPrinterTaskTriggerDefinition -PrinterId <String> -PrintTaskTriggerId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
@@ -26,8 +25,7 @@ Get-MgPrintPrinterTaskTriggerDefinition -InputObject <IDevicesCloudPrintIdentity
 ```
 
 ## DESCRIPTION
-An abstract definition that will be used to create a printTask when triggered by a print event.
-Read-only.
+Get definition from print
 
 ## EXAMPLES
 
@@ -37,7 +35,7 @@ Read-only.
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -53,7 +51,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCloudPrintIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
 Parameter Sets: GetViaIdentity1
 Aliases:
 
@@ -68,7 +66,7 @@ Accept wildcard characters: False
 key: id of printer
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get1
 Aliases:
 
@@ -83,7 +81,7 @@ Accept wildcard characters: False
 key: id of printTaskTrigger
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get1
 Aliases:
 
@@ -98,7 +96,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -115,9 +113,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintTaskDefinition1
+
 ## NOTES
 
 ALIASES
@@ -128,6 +128,7 @@ To create the parameters described below, construct a hash table containing the 
 
 
 INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
+  - `[GroupId <String>]`: key: id of group
   - `[PrintConnectorId <String>]`: key: id of printConnector
   - `[PrintOperationId <String>]`: key: id of printOperation
   - `[PrintServiceEndpointId <String>]`: key: id of printServiceEndpoint
@@ -137,5 +138,7 @@ INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
   - `[PrintTaskTriggerId <String>]`: key: id of printTaskTrigger
   - `[PrinterId <String>]`: key: id of printer
   - `[PrinterShareId <String>]`: key: id of printerShare
+  - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

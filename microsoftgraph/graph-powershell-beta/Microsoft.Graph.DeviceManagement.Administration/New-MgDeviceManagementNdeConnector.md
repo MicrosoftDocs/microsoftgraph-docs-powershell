@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementndeconnector
 schema: 2.0.0
@@ -8,24 +8,24 @@ schema: 2.0.0
 # New-MgDeviceManagementNdeConnector
 
 ## SYNOPSIS
-The collection of Ndes connectors for this account.
+Create new navigation property to ndesConnectors for deviceManagement
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgDeviceManagementNdeConnector [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
- [-LastConnectionDateTime <DateTime>] [-State <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LastConnectionDateTime <DateTime>] [-State <NdesConnectorState>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementNdeConnector -BodyParameter <IMicrosoftGraphNdesConnector> [-WhatIf] [-Confirm]
+New-MgDeviceManagementNdeConnector -BodyParameter <IMicrosoftGraphNdesConnector> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The collection of Ndes connectors for this account.
+Create new navigation property to ndesConnectors for deviceManagement
 
 ## EXAMPLES
 
@@ -35,7 +35,7 @@ The collection of Ndes connectors for this account.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -51,7 +51,7 @@ Entity which represents an OnPrem Ndes connector.
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphNdesConnector
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphNdesConnector
 Parameter Sets: Create
 Aliases:
 
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 The friendly name of the Ndes Connector.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -78,10 +78,10 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 Last connection time for the Ndes Connector
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 The current status of the Ndes Connector.
 
 ```yaml
-Type: String
+Type: Microsoft.Graph.PowerShell.Support.NdesConnectorState
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -142,7 +142,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -159,9 +159,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphNdesConnector
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphNdesConnector
+
 ## NOTES
 
 ALIASES
@@ -173,9 +175,10 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER <IMicrosoftGraphNdesConnector>: Entity which represents an OnPrem Ndes connector.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[DisplayName <String>]`: The friendly name of the Ndes Connector.
   - `[LastConnectionDateTime <DateTime?>]`: Last connection time for the Ndes Connector
-  - `[State <String>]`: The current status of the Ndes Connector.
+  - `[State <NdesConnectorState?>]`: The current status of the Ndes Connector.
 
 ## RELATED LINKS
+

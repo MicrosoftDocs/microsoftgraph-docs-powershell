@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.CloudCommunications-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeetingregistration
 schema: 2.0.0
@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgCommunicationOnlineMeetingRegistration
 
 ## SYNOPSIS
-The registration that has been enabled for an online meeting.
-One online meeting can only have one registration enabled.
+Get registration from communications
 
 ## SYNTAX
 
@@ -26,8 +25,7 @@ Get-MgCommunicationOnlineMeetingRegistration -InputObject <ICloudCommunicationsI
 ```
 
 ## DESCRIPTION
-The registration that has been enabled for an online meeting.
-One online meeting can only have one registration enabled.
+Get registration from communications
 
 ## EXAMPLES
 
@@ -37,7 +35,7 @@ One online meeting can only have one registration enabled.
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -53,7 +51,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICloudCommunicationsIdentity
+Type: Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -68,7 +66,7 @@ Accept wildcard characters: False
 key: id of onlineMeeting
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -83,7 +81,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -100,9 +98,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMeetingRegistration
+
 ## NOTES
 
 ALIASES
@@ -128,3 +128,4 @@ INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+

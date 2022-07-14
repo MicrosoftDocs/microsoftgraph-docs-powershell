@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgexecutedevicemanagementwindowdriverupdateprofileaction
 schema: 2.0.0
@@ -16,28 +16,29 @@ Invoke action executeAction
 ```
 Invoke-MgExecuteDeviceManagementWindowDriverUpdateProfileAction -WindowsDriverUpdateProfileId <String>
  [-ActionName <String>] [-AdditionalProperties <Hashtable>] [-DeploymentDate <DateTime>]
- [-DriverIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DriverIds <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Execute
 ```
 Invoke-MgExecuteDeviceManagementWindowDriverUpdateProfileAction -WindowsDriverUpdateProfileId <String>
  -BodyParameter <IPathsYsc0TiDevicemanagementWindowsdriverupdateprofilesWindowsdriverupdateprofileIdMicrosoftGraphExecuteactionPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### ExecuteViaIdentityExpanded
-```
-Invoke-MgExecuteDeviceManagementWindowDriverUpdateProfileAction -InputObject <IDeviceManagementActionsIdentity>
- [-ActionName <String>] [-AdditionalProperties <Hashtable>] [-DeploymentDate <DateTime>]
- [-DriverIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ExecuteViaIdentity
 ```
-Invoke-MgExecuteDeviceManagementWindowDriverUpdateProfileAction -InputObject <IDeviceManagementActionsIdentity>
+Invoke-MgExecuteDeviceManagementWindowDriverUpdateProfileAction
+ -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPathsYsc0TiDevicemanagementWindowsdriverupdateprofilesWindowsdriverupdateprofileIdMicrosoftGraphExecuteactionPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ExecuteViaIdentityExpanded
+```
+Invoke-MgExecuteDeviceManagementWindowDriverUpdateProfileAction
+ -InputObject <IDeviceManagementActionsIdentity> [-ActionName <String>] [-AdditionalProperties <Hashtable>]
+ [-DeploymentDate <DateTime>] [-DriverIds <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,7 +52,7 @@ Invoke action executeAction
 An enum type to represent approval actions of single or list of drivers.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ExecuteExpanded, ExecuteViaIdentityExpanded
 Aliases:
 
@@ -66,7 +67,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ExecuteExpanded, ExecuteViaIdentityExpanded
 Aliases:
 
@@ -82,7 +83,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsYsc0TiDevicemanagementWindowsdriverupdateprofilesWindowsdriverupdateprofileIdMicrosoftGraphExecuteactionPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPathsYsc0TiDevicemanagementWindowsdriverupdateprofilesWindowsdriverupdateprofileIdMicrosoftGraphExecuteactionPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Execute, ExecuteViaIdentity
 Aliases:
 
@@ -97,7 +98,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: ExecuteExpanded, ExecuteViaIdentityExpanded
 Aliases:
 
@@ -112,7 +113,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: ExecuteExpanded, ExecuteViaIdentityExpanded
 Aliases:
 
@@ -128,8 +129,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementActionsIdentity
-Parameter Sets: ExecuteViaIdentityExpanded, ExecuteViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
+Parameter Sets: ExecuteViaIdentity, ExecuteViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -143,8 +144,8 @@ Accept wildcard characters: False
 key: id of windowsDriverUpdateProfile
 
 ```yaml
-Type: String
-Parameter Sets: ExecuteExpanded, Execute
+Type: System.String
+Parameter Sets: Execute, ExecuteExpanded
 Aliases:
 
 Required: True
@@ -158,7 +159,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -174,7 +175,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -191,10 +192,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IPathsYsc0TiDevicemanagementWindowsdriverupdateprofilesWindowsdriverupdateprofileIdMicrosoftGraphExecuteactionPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBulkDriverActionResult
+
 ## NOTES
 
 ALIASES
@@ -266,3 +270,4 @@ INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[WindowsQualityUpdateProfileId <String>]`: key: id of windowsQualityUpdateProfile
 
 ## RELATED LINKS
+

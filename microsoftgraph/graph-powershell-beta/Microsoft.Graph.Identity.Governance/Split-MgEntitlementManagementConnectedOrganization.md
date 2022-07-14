@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/split-mgentitlementmanagementconnectedorganization
 schema: 2.0.0
@@ -13,7 +13,7 @@ Split elements of a connectedOrganization
 ## SYNTAX
 
 ```
-Split-MgEntitlementManagementConnectedOrganization [-ByIdentitySource]
+Split-MgEntitlementManagementConnectedOrganization -ByIdentitySource
  [-ConnectedOrganization <IMicrosoftGraphConnectedOrganization[]>] [<CommonParameters>]
 ```
 
@@ -26,8 +26,9 @@ Split elements of one or more Azure AD entitlement management connected organiza
 
 ### -ByIdentitySource
 
+
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -43,7 +44,7 @@ The connected organization.
 To construct, please use Get-Help -Online and see NOTES section for CONNECTEDORGANIZATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConnectedOrganization[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConnectedOrganization[]
 Parameter Sets: (All)
 Aliases:
 
@@ -60,6 +61,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConnectedOrganization[]
+
 ## OUTPUTS
 
 ## NOTES
@@ -72,18 +74,19 @@ To create the parameters described below, construct a hash table containing the 
 
 
 CONNECTEDORGANIZATION <IMicrosoftGraphConnectedOrganization[]>: The connected organization.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[CreatedBy <String>]`: UPN of the user who created this resource. Read-only.
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
   - `[Description <String>]`: The description of the connected organization.
   - `[DisplayName <String>]`: The display name of the connected organization. Supports $filter (eq).
-  - `[ExternalSponsors <IMicrosoftGraphDirectoryObject[]>]`: Nullable.
-    - `[Id <String>]`: Read-only.
+  - `[ExternalSponsors <IMicrosoftGraphDirectoryObject[]>]`: 
+    - `[Id <String>]`: 
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-  - `[IdentitySources <IMicrosoftGraphIdentitySource[]>]`: The identity sources in this connected organization, one of azureActiveDirectoryTenant, domainIdentitySource or externalDomainFederation. Nullable.
-  - `[InternalSponsors <IMicrosoftGraphDirectoryObject[]>]`: Nullable.
+  - `[IdentitySources <IMicrosoftGraphIdentitySource[]>]`: The identity sources in this connected organization, one of azureActiveDirectoryTenant, crossCloudAzureActiveDirectoryTenant, domainIdentitySource or externalDomainFederation. Read-only. Nullable. Supports $select and $filter(eq). To filter by the derived types, you must declare the resource using its full OData cast, for example, $filter=identitySources/any(is:is/microsoft.graph.azureActiveDirectoryTenant/tenantId eq 'bcfdfff4-cbc3-43f2-9000-ba7b7515054f').
+  - `[InternalSponsors <IMicrosoftGraphDirectoryObject[]>]`: 
   - `[ModifiedBy <String>]`: UPN of the user who last modified this resource. Read-only.
   - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
   - `[State <String>]`: connectedOrganizationState
 
 ## RELATED LINKS
+

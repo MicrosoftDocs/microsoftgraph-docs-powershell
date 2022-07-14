@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mginformationprotectionbitlockerrecoverykey
 schema: 2.0.0
@@ -8,25 +8,25 @@ schema: 2.0.0
 # New-MgInformationProtectionBitlockerRecoveryKey
 
 ## SYNOPSIS
-The recovery keys associated with the bitlocker entity.
+Create new navigation property to recoveryKeys for informationProtection
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### CreateExpanded1 (Default)
 ```
 New-MgInformationProtectionBitlockerRecoveryKey [-AdditionalProperties <Hashtable>]
  [-CreatedDateTime <DateTime>] [-DeviceId <String>] [-Id <String>] [-Key <String>] [-VolumeType <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Create
+### Create1
 ```
-New-MgInformationProtectionBitlockerRecoveryKey -BodyParameter <IMicrosoftGraphBitlockerRecoveryKey> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgInformationProtectionBitlockerRecoveryKey -BodyParameter <IMicrosoftGraphBitlockerRecoveryKey>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The recovery keys associated with the bitlocker entity.
+Create new navigation property to recoveryKeys for informationProtection
 
 ## EXAMPLES
 
@@ -36,8 +36,8 @@ The recovery keys associated with the bitlocker entity.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded
+Type: System.Collections.Hashtable
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -52,8 +52,8 @@ bitlockerRecoveryKey
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphBitlockerRecoveryKey
-Parameter Sets: Create
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBitlockerRecoveryKey
+Parameter Sets: Create1
 Aliases:
 
 Required: True
@@ -65,11 +65,10 @@ Accept wildcard characters: False
 
 ### -CreatedDateTime
 The date and time when the key was originally backed up to Azure Active Directory.
-Not nullable.
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded
+Type: System.DateTime
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -80,12 +79,11 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceId
-Identifier of the device the BitLocker key is originally backed up from.
-Supports $filter (eq).
+ID of the device the BitLocker key is originally backed up from.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded
+Type: System.String
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -96,11 +94,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded
+Type: System.String
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -112,12 +110,10 @@ Accept wildcard characters: False
 
 ### -Key
 The BitLocker recovery key.
-Returned only on $select.
-Not nullable.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded
+Type: System.String
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -131,8 +127,8 @@ Accept wildcard characters: False
 volumeType
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded
+Type: System.String
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -146,7 +142,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -162,7 +158,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -179,9 +175,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBitlockerRecoveryKey
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBitlockerRecoveryKey
+
 ## NOTES
 
 ALIASES
@@ -193,10 +191,11 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER <IMicrosoftGraphBitlockerRecoveryKey>: bitlockerRecoveryKey
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
-  - `[CreatedDateTime <DateTime?>]`: The date and time when the key was originally backed up to Azure Active Directory. Not nullable.
-  - `[DeviceId <String>]`: Identifier of the device the BitLocker key is originally backed up from. Supports $filter (eq).
-  - `[Key <String>]`: The BitLocker recovery key. Returned only on $select. Not nullable.
+  - `[Id <String>]`: 
+  - `[CreatedDateTime <DateTime?>]`: The date and time when the key was originally backed up to Azure Active Directory.
+  - `[DeviceId <String>]`: ID of the device the BitLocker key is originally backed up from.
+  - `[Key <String>]`: The BitLocker recovery key.
   - `[VolumeType <String>]`: volumeType
 
 ## RELATED LINKS
+

@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/new-mgdevicemanagementimporteddeviceidentity
 schema: 2.0.0
@@ -8,26 +8,27 @@ schema: 2.0.0
 # New-MgDeviceManagementImportedDeviceIdentity
 
 ## SYNOPSIS
-The imported device identities.
+Create new navigation property to importedDeviceIdentities for deviceManagement
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgDeviceManagementImportedDeviceIdentity [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
- [-Description <String>] [-EnrollmentState <String>] [-Id <String>] [-ImportedDeviceIdentifier <String>]
- [-ImportedDeviceIdentityType <String>] [-LastContactedDateTime <DateTime>] [-LastModifiedDateTime <DateTime>]
- [-Platform <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Description <String>] [-EnrollmentState <EnrollmentState>] [-Id <String>]
+ [-ImportedDeviceIdentifier <String>] [-ImportedDeviceIdentityType <ImportedDeviceIdentityType>]
+ [-LastContactedDateTime <DateTime>] [-LastModifiedDateTime <DateTime>] [-Platform <Platform>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementImportedDeviceIdentity -BodyParameter <IMicrosoftGraphImportedDeviceIdentity> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgDeviceManagementImportedDeviceIdentity -BodyParameter <IMicrosoftGraphImportedDeviceIdentity> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The imported device identities.
+Create new navigation property to importedDeviceIdentities for deviceManagement
 
 ## EXAMPLES
 
@@ -37,7 +38,7 @@ The imported device identities.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -53,7 +54,7 @@ The importedDeviceIdentity resource represents a unique hardware identity of a d
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphImportedDeviceIdentity
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphImportedDeviceIdentity
 Parameter Sets: Create
 Aliases:
 
@@ -68,7 +69,7 @@ Accept wildcard characters: False
 Created Date Time of the device
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -83,7 +84,7 @@ Accept wildcard characters: False
 The description of the device
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -98,7 +99,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: Microsoft.Graph.PowerShell.Support.EnrollmentState
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -110,10 +111,10 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -128,7 +129,7 @@ Accept wildcard characters: False
 Imported Device Identifier
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -143,7 +144,7 @@ Accept wildcard characters: False
 importedDeviceIdentityType
 
 ```yaml
-Type: String
+Type: Microsoft.Graph.PowerShell.Support.ImportedDeviceIdentityType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -158,7 +159,7 @@ Accept wildcard characters: False
 Last Contacted Date Time of the device
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -173,7 +174,7 @@ Accept wildcard characters: False
 Last Modified DateTime of the description
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -188,7 +189,7 @@ Accept wildcard characters: False
 platform
 
 ```yaml
-Type: String
+Type: Microsoft.Graph.PowerShell.Support.Platform
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -203,7 +204,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -219,7 +220,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -236,9 +237,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphImportedDeviceIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphImportedDeviceIdentity
+
 ## NOTES
 
 ALIASES
@@ -250,14 +253,15 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER <IMicrosoftGraphImportedDeviceIdentity>: The importedDeviceIdentity resource represents a unique hardware identity of a device that has been pre-staged for pre-enrollment configuration.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[CreatedDateTime <DateTime?>]`: Created Date Time of the device
   - `[Description <String>]`: The description of the device
-  - `[EnrollmentState <String>]`: 
+  - `[EnrollmentState <EnrollmentState?>]`: 
   - `[ImportedDeviceIdentifier <String>]`: Imported Device Identifier
-  - `[ImportedDeviceIdentityType <String>]`: importedDeviceIdentityType
+  - `[ImportedDeviceIdentityType <ImportedDeviceIdentityType?>]`: importedDeviceIdentityType
   - `[LastContactedDateTime <DateTime?>]`: Last Contacted Date Time of the device
   - `[LastModifiedDateTime <DateTime?>]`: Last Modified DateTime of the description
-  - `[Platform <String>]`: platform
+  - `[Platform <Platform?>]`: platform
 
 ## RELATED LINKS
+

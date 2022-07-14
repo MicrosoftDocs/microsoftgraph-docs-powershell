@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgusermanageddevice
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserManagedDevice
 
 ## SYNOPSIS
-The managed devices associated with the user.
+Create new navigation property to managedDevices for users
 
 ## SYNTAX
 
@@ -16,67 +16,74 @@ The managed devices associated with the user.
 ```
 New-MgUserManagedDevice -UserId <String> [-ActivationLockBypassCode <String>]
  [-AdditionalProperties <Hashtable>] [-AndroidSecurityPatchLevel <String>] [-AzureAdDeviceId <String>]
- [-AzureAdRegistered] [-ComplianceGracePeriodExpirationDateTime <DateTime>] [-ComplianceState <String>]
+ [-AzureAdRegistered] [-ComplianceGracePeriodExpirationDateTime <DateTime>]
+ [-ComplianceState <ComplianceState>]
  [-ConfigurationManagerClientEnabledFeatures <IMicrosoftGraphConfigurationManagerClientEnabledFeatures1>]
- [-DeviceActionResults <IMicrosoftGraphDeviceActionResult[]>]
+ [-DeviceActionResults <IMicrosoftGraphDeviceActionResult1[]>]
  [-DeviceCategory <IMicrosoftGraphDeviceCategory2>] [-DeviceCategoryDisplayName <String>]
  [-DeviceCompliancePolicyStates <IMicrosoftGraphDeviceCompliancePolicyState1[]>]
- [-DeviceConfigurationStates <IMicrosoftGraphDeviceConfigurationState1[]>] [-DeviceEnrollmentType <String>]
+ [-DeviceConfigurationStates <IMicrosoftGraphDeviceConfigurationState1[]>]
+ [-DeviceEnrollmentType <DeviceEnrollmentType>]
  [-DeviceHealthAttestationState <IMicrosoftGraphDeviceHealthAttestationState>] [-DeviceName <String>]
- [-DeviceRegistrationState <String>] [-EasActivated] [-EasActivationDateTime <DateTime>]
- [-EasDeviceId <String>] [-EmailAddress <String>] [-EnrolledDateTime <DateTime>] [-EthernetMacAddress <String>]
- [-ExchangeAccessState <String>] [-ExchangeAccessStateReason <String>]
+ [-DeviceRegistrationState <DeviceRegistrationState>] [-EasActivated] [-EasActivationDateTime <DateTime>]
+ [-EasDeviceId <String>] [-EmailAddress <String>] [-EnrolledDateTime <DateTime>]
+ [-EthernetMacAddress <String>] [-ExchangeAccessState <DeviceManagementExchangeAccessState>]
+ [-ExchangeAccessStateReason <DeviceManagementExchangeAccessStateReason>]
  [-ExchangeLastSuccessfulSyncDateTime <DateTime>] [-FreeStorageSpaceInBytes <Int64>] [-Iccid <String>]
  [-Id <String>] [-Imei <String>] [-IsEncrypted] [-IsSupervised] [-JailBroken <String>]
- [-LastSyncDateTime <DateTime>] [-ManagedDeviceName <String>] [-ManagedDeviceOwnerType <String>]
- [-ManagementAgent <String>] [-Manufacturer <String>] [-Meid <String>] [-Model <String>] [-Notes <String>]
- [-OSVersion <String>] [-OperatingSystem <String>] [-PartnerReportedThreatState <String>]
+ [-LastSyncDateTime <DateTime>] [-ManagedDeviceName <String>]
+ [-ManagedDeviceOwnerType <ManagedDeviceOwnerType>] [-ManagementAgent <ManagementAgentType>]
+ [-Manufacturer <String>] [-Meid <String>] [-Model <String>] [-Notes <String>] [-OperatingSystem <String>]
+ [-OSVersion <String>] [-PartnerReportedThreatState <ManagedDevicePartnerReportedHealthState>]
  [-PhoneNumber <String>] [-PhysicalMemoryInBytes <Int64>] [-RemoteAssistanceSessionErrorDetails <String>]
  [-RemoteAssistanceSessionUrl <String>] [-SerialNumber <String>] [-SubscriberCarrier <String>]
  [-TotalStorageSpaceInBytes <Int64>] [-Udid <String>] [-UserDisplayName <String>] [-UserId1 <String>]
- [-UserPrincipalName <String>] [-WiFiMacAddress <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded1
-```
-New-MgUserManagedDevice [-UserId <String>] -InputObject <IDevicesCorporateManagementIdentity>
- [-ActivationLockBypassCode <String>] [-AdditionalProperties <Hashtable>] [-AndroidSecurityPatchLevel <String>]
- [-AzureAdDeviceId <String>] [-AzureAdRegistered] [-ComplianceGracePeriodExpirationDateTime <DateTime>]
- [-ComplianceState <String>]
- [-ConfigurationManagerClientEnabledFeatures <IMicrosoftGraphConfigurationManagerClientEnabledFeatures1>]
- [-DeviceActionResults <IMicrosoftGraphDeviceActionResult[]>]
- [-DeviceCategory <IMicrosoftGraphDeviceCategory2>] [-DeviceCategoryDisplayName <String>]
- [-DeviceCompliancePolicyStates <IMicrosoftGraphDeviceCompliancePolicyState1[]>]
- [-DeviceConfigurationStates <IMicrosoftGraphDeviceConfigurationState1[]>] [-DeviceEnrollmentType <String>]
- [-DeviceHealthAttestationState <IMicrosoftGraphDeviceHealthAttestationState>] [-DeviceName <String>]
- [-DeviceRegistrationState <String>] [-EasActivated] [-EasActivationDateTime <DateTime>]
- [-EasDeviceId <String>] [-EmailAddress <String>] [-EnrolledDateTime <DateTime>] [-EthernetMacAddress <String>]
- [-ExchangeAccessState <String>] [-ExchangeAccessStateReason <String>]
- [-ExchangeLastSuccessfulSyncDateTime <DateTime>] [-FreeStorageSpaceInBytes <Int64>] [-Iccid <String>]
- [-Id <String>] [-Imei <String>] [-IsEncrypted] [-IsSupervised] [-JailBroken <String>]
- [-LastSyncDateTime <DateTime>] [-ManagedDeviceName <String>] [-ManagedDeviceOwnerType <String>]
- [-ManagementAgent <String>] [-Manufacturer <String>] [-Meid <String>] [-Model <String>] [-Notes <String>]
- [-OSVersion <String>] [-OperatingSystem <String>] [-PartnerReportedThreatState <String>]
- [-PhoneNumber <String>] [-PhysicalMemoryInBytes <Int64>] [-RemoteAssistanceSessionErrorDetails <String>]
- [-RemoteAssistanceSessionUrl <String>] [-SerialNumber <String>] [-SubscriberCarrier <String>]
- [-TotalStorageSpaceInBytes <Int64>] [-Udid <String>] [-UserDisplayName <String>] [-UserPrincipalName <String>]
- [-WiFiMacAddress <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserPrincipalName <String>] [-WiFiMacAddress <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgUserManagedDevice -UserId <String> -BodyParameter <IMicrosoftGraphManagedDevice1> [-WhatIf] [-Confirm]
+New-MgUserManagedDevice -UserId <String> -BodyParameter <IMicrosoftGraphManagedDevice1> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### CreateViaIdentity1
 ```
 New-MgUserManagedDevice -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphManagedDevice1> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphManagedDevice1> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded1
+```
+New-MgUserManagedDevice -InputObject <IDevicesCorporateManagementIdentity> [-UserId <String>]
+ [-ActivationLockBypassCode <String>] [-AdditionalProperties <Hashtable>]
+ [-AndroidSecurityPatchLevel <String>] [-AzureAdDeviceId <String>] [-AzureAdRegistered]
+ [-ComplianceGracePeriodExpirationDateTime <DateTime>] [-ComplianceState <ComplianceState>]
+ [-ConfigurationManagerClientEnabledFeatures <IMicrosoftGraphConfigurationManagerClientEnabledFeatures1>]
+ [-DeviceActionResults <IMicrosoftGraphDeviceActionResult1[]>]
+ [-DeviceCategory <IMicrosoftGraphDeviceCategory2>] [-DeviceCategoryDisplayName <String>]
+ [-DeviceCompliancePolicyStates <IMicrosoftGraphDeviceCompliancePolicyState1[]>]
+ [-DeviceConfigurationStates <IMicrosoftGraphDeviceConfigurationState1[]>]
+ [-DeviceEnrollmentType <DeviceEnrollmentType>]
+ [-DeviceHealthAttestationState <IMicrosoftGraphDeviceHealthAttestationState>] [-DeviceName <String>]
+ [-DeviceRegistrationState <DeviceRegistrationState>] [-EasActivated] [-EasActivationDateTime <DateTime>]
+ [-EasDeviceId <String>] [-EmailAddress <String>] [-EnrolledDateTime <DateTime>]
+ [-EthernetMacAddress <String>] [-ExchangeAccessState <DeviceManagementExchangeAccessState>]
+ [-ExchangeAccessStateReason <DeviceManagementExchangeAccessStateReason>]
+ [-ExchangeLastSuccessfulSyncDateTime <DateTime>] [-FreeStorageSpaceInBytes <Int64>] [-Iccid <String>]
+ [-Id <String>] [-Imei <String>] [-IsEncrypted] [-IsSupervised] [-JailBroken <String>]
+ [-LastSyncDateTime <DateTime>] [-ManagedDeviceName <String>]
+ [-ManagedDeviceOwnerType <ManagedDeviceOwnerType>] [-ManagementAgent <ManagementAgentType>]
+ [-Manufacturer <String>] [-Meid <String>] [-Model <String>] [-Notes <String>] [-OperatingSystem <String>]
+ [-OSVersion <String>] [-PartnerReportedThreatState <ManagedDevicePartnerReportedHealthState>]
+ [-PhoneNumber <String>] [-PhysicalMemoryInBytes <Int64>] [-RemoteAssistanceSessionErrorDetails <String>]
+ [-RemoteAssistanceSessionUrl <String>] [-SerialNumber <String>] [-SubscriberCarrier <String>]
+ [-TotalStorageSpaceInBytes <Int64>] [-Udid <String>] [-UserDisplayName <String>]
+ [-UserPrincipalName <String>] [-WiFiMacAddress <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The managed devices associated with the user.
+Create new navigation property to managedDevices for users
 
 ## EXAMPLES
 
@@ -87,7 +94,7 @@ Code that allows the Activation Lock on a device to be bypassed.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -102,7 +109,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -118,7 +125,7 @@ Android security patch level.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -135,7 +142,7 @@ Read only.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -151,7 +158,7 @@ Whether the device is Azure Active Directory registered.
 This property is read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -167,7 +174,7 @@ Devices that are managed or pre-enrolled through Intune
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedDevice1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDevice1
 Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
@@ -183,7 +190,7 @@ The DateTime when device compliance grace period expires.
 This property is read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -198,7 +205,7 @@ Accept wildcard characters: False
 Compliance state.
 
 ```yaml
-Type: String
+Type: Microsoft.Graph.PowerShell.Support.ComplianceState
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -214,7 +221,7 @@ configuration Manager client enabled features
 To construct, please use Get-Help -Online and see NOTES section for CONFIGURATIONMANAGERCLIENTENABLEDFEATURES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConfigurationManagerClientEnabledFeatures1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConfigurationManagerClientEnabledFeatures1
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -231,7 +238,7 @@ This property is read-only.
 To construct, please use Get-Help -Online and see NOTES section for DEVICEACTIONRESULTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceActionResult[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceActionResult1[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -250,7 +257,7 @@ You can filter reports and create dynamic Azure Active Directory device groups b
 To construct, please use Get-Help -Online and see NOTES section for DEVICECATEGORY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceCategory2
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCategory2
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -266,7 +273,7 @@ Device category display name.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -282,7 +289,7 @@ Device compliance policy states for this device.
 To construct, please use Get-Help -Online and see NOTES section for DEVICECOMPLIANCEPOLICYSTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceCompliancePolicyState1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicyState1[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -298,7 +305,7 @@ Device configuration states for this device.
 To construct, please use Get-Help -Online and see NOTES section for DEVICECONFIGURATIONSTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceConfigurationState1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationState1[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -313,7 +320,7 @@ Accept wildcard characters: False
 Possible ways of adding a mobile device to management.
 
 ```yaml
-Type: String
+Type: Microsoft.Graph.PowerShell.Support.DeviceEnrollmentType
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -329,7 +336,7 @@ deviceHealthAttestationState
 To construct, please use Get-Help -Online and see NOTES section for DEVICEHEALTHATTESTATIONSTATE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceHealthAttestationState
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceHealthAttestationState
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -345,7 +352,7 @@ Name of the device.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -360,7 +367,7 @@ Accept wildcard characters: False
 Device registration status.
 
 ```yaml
-Type: String
+Type: Microsoft.Graph.PowerShell.Support.DeviceRegistrationState
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -376,7 +383,7 @@ Whether the device is Exchange ActiveSync activated.
 This property is read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -392,7 +399,7 @@ Exchange ActivationSync activation time of the device.
 This property is read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -408,7 +415,7 @@ Exchange ActiveSync Id of the device.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -424,7 +431,7 @@ Email(s) for the user associated with the device.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -440,7 +447,7 @@ Enrollment time of the device.
 This property is read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -456,7 +463,7 @@ Ethernet MAC.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -471,7 +478,7 @@ Accept wildcard characters: False
 Device Exchange Access State.
 
 ```yaml
-Type: String
+Type: Microsoft.Graph.PowerShell.Support.DeviceManagementExchangeAccessState
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -486,7 +493,7 @@ Accept wildcard characters: False
 Device Exchange Access State Reason.
 
 ```yaml
-Type: String
+Type: Microsoft.Graph.PowerShell.Support.DeviceManagementExchangeAccessStateReason
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -502,7 +509,7 @@ Last time the device contacted Exchange.
 This property is read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -518,7 +525,7 @@ Free Storage in Bytes.
 This property is read-only.
 
 ```yaml
-Type: Int64
+Type: System.Int64
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -534,7 +541,7 @@ Integrated Circuit Card Identifier, it is A SIM card's unique identification num
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -546,10 +553,10 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -565,7 +572,7 @@ IMEI.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -581,8 +588,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCorporateManagementIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
+Type: Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
+Parameter Sets: CreateViaIdentity1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -597,7 +604,7 @@ Device encryption status.
 This property is read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -613,7 +620,7 @@ Device supervised status.
 This property is read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -629,7 +636,7 @@ whether the device is jail broken or rooted.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -645,7 +652,7 @@ The date and time that the device last completed a successful sync with Intune.
 This property is read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -661,7 +668,7 @@ Automatically generated name to identify a device.
 Can be overwritten to a user friendly name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -676,7 +683,7 @@ Accept wildcard characters: False
 Owner type of device.
 
 ```yaml
-Type: String
+Type: Microsoft.Graph.PowerShell.Support.ManagedDeviceOwnerType
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -691,7 +698,7 @@ Accept wildcard characters: False
 Management agent type.
 
 ```yaml
-Type: String
+Type: Microsoft.Graph.PowerShell.Support.ManagementAgentType
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -707,7 +714,7 @@ Manufacturer of the device.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -723,7 +730,7 @@ MEID.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -739,7 +746,7 @@ Model of the device.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -754,7 +761,7 @@ Accept wildcard characters: False
 Notes on the device created by IT Admin
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -771,7 +778,7 @@ Windows, iOS, etc.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -787,7 +794,7 @@ Operating system version of the device.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -802,7 +809,7 @@ Accept wildcard characters: False
 Available health states for the Device Health API
 
 ```yaml
-Type: String
+Type: Microsoft.Graph.PowerShell.Support.ManagedDevicePartnerReportedHealthState
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -818,7 +825,7 @@ Phone number of the device.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -834,7 +841,7 @@ Total Memory in Bytes.
 This property is read-only.
 
 ```yaml
-Type: Int64
+Type: System.Int64
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -850,7 +857,7 @@ An error string that identifies issues when creating Remote Assistance session o
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -866,7 +873,7 @@ Url that allows a Remote Assistance session to be established with the device.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -882,7 +889,7 @@ SerialNumber.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -898,7 +905,7 @@ Subscriber Carrier.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -914,7 +921,7 @@ Total Storage in Bytes.
 This property is read-only.
 
 ```yaml
-Type: Int64
+Type: System.Int64
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -930,7 +937,7 @@ Unique Device Identifier for iOS and macOS devices.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -946,7 +953,7 @@ User display name.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -961,23 +968,11 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
+Type: System.String
+Parameter Sets: Create1, CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-```yaml
-Type: String
-Parameter Sets: CreateViaIdentityExpanded1
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -989,7 +984,7 @@ Unique Identifier for the user associated with the device.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -1005,7 +1000,7 @@ Device user principal name.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -1021,7 +1016,7 @@ Wi-Fi MAC.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -1036,7 +1031,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -1052,7 +1047,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -1069,10 +1064,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDevice1
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDevice1
+
 ## NOTES
 
 ALIASES
@@ -1084,13 +1082,13 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER <IMicrosoftGraphManagedDevice1>: Devices that are managed or pre-enrolled through Intune
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[ActivationLockBypassCode <String>]`: Code that allows the Activation Lock on a device to be bypassed. This property is read-only.
   - `[AndroidSecurityPatchLevel <String>]`: Android security patch level. This property is read-only.
   - `[AzureAdDeviceId <String>]`: The unique identifier for the Azure Active Directory device. Read only. This property is read-only.
   - `[AzureAdRegistered <Boolean?>]`: Whether the device is Azure Active Directory registered. This property is read-only.
   - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires. This property is read-only.
-  - `[ComplianceState <String>]`: Compliance state.
+  - `[ComplianceState <ComplianceState?>]`: Compliance state.
   - `[ConfigurationManagerClientEnabledFeatures <IMicrosoftGraphConfigurationManagerClientEnabledFeatures1>]`: configuration Manager client enabled features
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CompliancePolicy <Boolean?>]`: Whether compliance policy is managed by Intune
@@ -1099,21 +1097,21 @@ BODYPARAMETER <IMicrosoftGraphManagedDevice1>: Devices that are managed or pre-e
     - `[ModernApps <Boolean?>]`: Whether modern application is managed by Intune
     - `[ResourceAccess <Boolean?>]`: Whether resource access is managed by Intune
     - `[WindowsUpdateForBusiness <Boolean?>]`: Whether Windows Update for Business is managed by Intune
-  - `[DeviceActionResults <IMicrosoftGraphDeviceActionResult[]>]`: List of ComplexType deviceActionResult objects. This property is read-only.
+  - `[DeviceActionResults <IMicrosoftGraphDeviceActionResult1[]>]`: List of ComplexType deviceActionResult objects. This property is read-only.
     - `[ActionName <String>]`: Action name
-    - `[ActionState <String>]`: State of the action on the device
+    - `[ActionState <ActionState?>]`: State of the action on the device
     - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
     - `[StartDateTime <DateTime?>]`: Time the action was initiated
-  - `[DeviceCategory <IMicrosoftGraphDeviceCategory2>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+  - `[DeviceCategory <IMicrosoftGraphDeviceCategory2>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Description <String>]`: Optional description for the device category.
     - `[DisplayName <String>]`: Display name for the device category.
   - `[DeviceCategoryDisplayName <String>]`: Device category display name. This property is read-only.
   - `[DeviceCompliancePolicyStates <IMicrosoftGraphDeviceCompliancePolicyState1[]>]`: Device compliance policy states for this device.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[DisplayName <String>]`: The name of the policy for this policyBase
-    - `[PlatformType <String>]`: Supported platform types for policies.
+    - `[PlatformType <PolicyPlatformType?>]`: Supported platform types for policies.
     - `[SettingCount <Int32?>]`: Count of how many setting a policy holds
     - `[SettingStates <IMicrosoftGraphDeviceCompliancePolicySettingState1[]>]`: 
       - `[CurrentValue <String>]`: Current value of setting on device
@@ -1134,9 +1132,9 @@ BODYPARAMETER <IMicrosoftGraphManagedDevice1>: Devices that are managed or pre-e
     - `[State <String>]`: complianceStatus
     - `[Version <Int32?>]`: The version of the policy
   - `[DeviceConfigurationStates <IMicrosoftGraphDeviceConfigurationState1[]>]`: Device configuration states for this device.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[DisplayName <String>]`: The name of the policy for this policyBase
-    - `[PlatformType <String>]`: Supported platform types for policies.
+    - `[PlatformType <PolicyPlatformType?>]`: Supported platform types for policies.
     - `[SettingCount <Int32?>]`: Count of how many setting a policy holds
     - `[SettingStates <IMicrosoftGraphDeviceConfigurationSettingState1[]>]`: 
       - `[CurrentValue <String>]`: Current value of setting on device
@@ -1153,7 +1151,7 @@ BODYPARAMETER <IMicrosoftGraphManagedDevice1>: Devices that are managed or pre-e
       - `[UserPrincipalName <String>]`: UserPrincipalName.
     - `[State <String>]`: complianceStatus
     - `[Version <Int32?>]`: The version of the policy
-  - `[DeviceEnrollmentType <String>]`: Possible ways of adding a mobile device to management.
+  - `[DeviceEnrollmentType <DeviceEnrollmentType?>]`: Possible ways of adding a mobile device to management.
   - `[DeviceHealthAttestationState <IMicrosoftGraphDeviceHealthAttestationState>]`: deviceHealthAttestationState
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AttestationIdentityKey <String>]`: TWhen an Attestation Identity Key (AIK) is present on a device, it indicates that the device has an endorsement key (EK) certificate.
@@ -1189,15 +1187,15 @@ BODYPARAMETER <IMicrosoftGraphManagedDevice1>: Devices that are managed or pre-e
     - `[VirtualSecureMode <String>]`: VSM is a container that protects high value assets from a compromised kernel
     - `[WindowsPe <String>]`: Operating system running with limited services that is used to prepare a computer for Windows
   - `[DeviceName <String>]`: Name of the device. This property is read-only.
-  - `[DeviceRegistrationState <String>]`: Device registration status.
+  - `[DeviceRegistrationState <DeviceRegistrationState?>]`: Device registration status.
   - `[EasActivated <Boolean?>]`: Whether the device is Exchange ActiveSync activated. This property is read-only.
   - `[EasActivationDateTime <DateTime?>]`: Exchange ActivationSync activation time of the device. This property is read-only.
   - `[EasDeviceId <String>]`: Exchange ActiveSync Id of the device. This property is read-only.
   - `[EmailAddress <String>]`: Email(s) for the user associated with the device. This property is read-only.
   - `[EnrolledDateTime <DateTime?>]`: Enrollment time of the device. This property is read-only.
   - `[EthernetMacAddress <String>]`: Ethernet MAC. This property is read-only.
-  - `[ExchangeAccessState <String>]`: Device Exchange Access State.
-  - `[ExchangeAccessStateReason <String>]`: Device Exchange Access State Reason.
+  - `[ExchangeAccessState <DeviceManagementExchangeAccessState?>]`: Device Exchange Access State.
+  - `[ExchangeAccessStateReason <DeviceManagementExchangeAccessStateReason?>]`: Device Exchange Access State Reason.
   - `[ExchangeLastSuccessfulSyncDateTime <DateTime?>]`: Last time the device contacted Exchange. This property is read-only.
   - `[FreeStorageSpaceInBytes <Int64?>]`: Free Storage in Bytes. This property is read-only.
   - `[Iccid <String>]`: Integrated Circuit Card Identifier, it is A SIM card's unique identification number. This property is read-only.
@@ -1207,15 +1205,15 @@ BODYPARAMETER <IMicrosoftGraphManagedDevice1>: Devices that are managed or pre-e
   - `[JailBroken <String>]`: whether the device is jail broken or rooted. This property is read-only.
   - `[LastSyncDateTime <DateTime?>]`: The date and time that the device last completed a successful sync with Intune. This property is read-only.
   - `[ManagedDeviceName <String>]`: Automatically generated name to identify a device. Can be overwritten to a user friendly name.
-  - `[ManagedDeviceOwnerType <String>]`: Owner type of device.
-  - `[ManagementAgent <String>]`: Management agent type.
+  - `[ManagedDeviceOwnerType <ManagedDeviceOwnerType?>]`: Owner type of device.
+  - `[ManagementAgent <ManagementAgentType?>]`: Management agent type.
   - `[Manufacturer <String>]`: Manufacturer of the device. This property is read-only.
   - `[Meid <String>]`: MEID. This property is read-only.
   - `[Model <String>]`: Model of the device. This property is read-only.
   - `[Notes <String>]`: Notes on the device created by IT Admin
   - `[OSVersion <String>]`: Operating system version of the device. This property is read-only.
   - `[OperatingSystem <String>]`: Operating system of the device. Windows, iOS, etc. This property is read-only.
-  - `[PartnerReportedThreatState <String>]`: Available health states for the Device Health API
+  - `[PartnerReportedThreatState <ManagedDevicePartnerReportedHealthState?>]`: Available health states for the Device Health API
   - `[PhoneNumber <String>]`: Phone number of the device. This property is read-only.
   - `[PhysicalMemoryInBytes <Int64?>]`: Total Memory in Bytes. This property is read-only.
   - `[RemoteAssistanceSessionErrorDetails <String>]`: An error string that identifies issues when creating Remote Assistance session objects. This property is read-only.
@@ -1238,22 +1236,22 @@ CONFIGURATIONMANAGERCLIENTENABLEDFEATURES <IMicrosoftGraphConfigurationManagerCl
   - `[ResourceAccess <Boolean?>]`: Whether resource access is managed by Intune
   - `[WindowsUpdateForBusiness <Boolean?>]`: Whether Windows Update for Business is managed by Intune
 
-DEVICEACTIONRESULTS <IMicrosoftGraphDeviceActionResult[]>: List of ComplexType deviceActionResult objects. This property is read-only.
+DEVICEACTIONRESULTS <IMicrosoftGraphDeviceActionResult1[]>: List of ComplexType deviceActionResult objects. This property is read-only.
   - `[ActionName <String>]`: Action name
-  - `[ActionState <String>]`: State of the action on the device
+  - `[ActionState <ActionState?>]`: State of the action on the device
   - `[LastUpdatedDateTime <DateTime?>]`: Time the action state was last updated
   - `[StartDateTime <DateTime?>]`: Time the action was initiated
 
-DEVICECATEGORY <IMicrosoftGraphDeviceCategory2>: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+DEVICECATEGORY <IMicrosoftGraphDeviceCategory2>: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Description <String>]`: Optional description for the device category.
   - `[DisplayName <String>]`: Display name for the device category.
 
 DEVICECOMPLIANCEPOLICYSTATES <IMicrosoftGraphDeviceCompliancePolicyState1[]>: Device compliance policy states for this device.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[DisplayName <String>]`: The name of the policy for this policyBase
-  - `[PlatformType <String>]`: Supported platform types for policies.
+  - `[PlatformType <PolicyPlatformType?>]`: Supported platform types for policies.
   - `[SettingCount <Int32?>]`: Count of how many setting a policy holds
   - `[SettingStates <IMicrosoftGraphDeviceCompliancePolicySettingState1[]>]`: 
     - `[CurrentValue <String>]`: Current value of setting on device
@@ -1275,9 +1273,9 @@ DEVICECOMPLIANCEPOLICYSTATES <IMicrosoftGraphDeviceCompliancePolicyState1[]>: De
   - `[Version <Int32?>]`: The version of the policy
 
 DEVICECONFIGURATIONSTATES <IMicrosoftGraphDeviceConfigurationState1[]>: Device configuration states for this device.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[DisplayName <String>]`: The name of the policy for this policyBase
-  - `[PlatformType <String>]`: Supported platform types for policies.
+  - `[PlatformType <PolicyPlatformType?>]`: Supported platform types for policies.
   - `[SettingCount <Int32?>]`: Count of how many setting a policy holds
   - `[SettingStates <IMicrosoftGraphDeviceConfigurationSettingState1[]>]`: 
     - `[CurrentValue <String>]`: Current value of setting on device
@@ -1337,14 +1335,15 @@ INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   - `[AndroidManagedAppProtectionId <String>]`: key: id of androidManagedAppProtection
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
   - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: key: id of assignmentFilterEvaluationStatusDetails
-  - `[BundleId <String>]`: Usage: bundleId={bundleId}
+  - `[BundleId <String>]`: Usage: bundleId='{bundleId}'
   - `[Count <Int64?>]`: Usage: count={count}
   - `[DefaultManagedAppProtectionId <String>]`: key: id of defaultManagedAppProtection
+  - `[DetectedAppId <String>]`: key: id of detectedApp
   - `[DeviceAppManagementTaskId <String>]`: key: id of deviceAppManagementTask
   - `[DeviceCompliancePolicyStateId <String>]`: key: id of deviceCompliancePolicyState
   - `[DeviceConfigurationStateId <String>]`: key: id of deviceConfigurationState
   - `[DeviceEnrollmentConfigurationId <String>]`: key: id of deviceEnrollmentConfiguration
-  - `[DeviceId <String>]`: Usage: deviceId={deviceId}
+  - `[DeviceId <String>]`: Usage: deviceId='{deviceId}'
   - `[DeviceInstallStateId <String>]`: key: id of deviceInstallState
   - `[DeviceLogCollectionResponseId <String>]`: key: id of deviceLogCollectionResponse
   - `[DeviceManagementTroubleshootingEventId <String>]`: key: id of deviceManagementTroubleshootingEvent
@@ -1384,13 +1383,13 @@ INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   - `[SecurityBaselineSettingStateId <String>]`: key: id of securityBaselineSettingState
   - `[SecurityBaselineStateId <String>]`: key: id of securityBaselineState
   - `[SideLoadingKeyId <String>]`: key: id of sideLoadingKey
-  - `[Status <String>]`: Usage: status={status}
+  - `[Status <String>]`: Usage: status='{status}'
   - `[TargetedManagedAppConfigurationId <String>]`: key: id of targetedManagedAppConfiguration
   - `[TargetedManagedAppPolicyAssignmentId <String>]`: key: id of targetedManagedAppPolicyAssignment
   - `[UserAppInstallStatusId <String>]`: key: id of userAppInstallStatus
   - `[UserId <String>]`: key: id of user
   - `[UserInstallStateSummaryId <String>]`: key: id of userInstallStateSummary
-  - `[UserPrincipalName <String>]`: Usage: userPrincipalName={userPrincipalName}
+  - `[UserPrincipalName <String>]`: Usage: userPrincipalName='{userPrincipalName}'
   - `[VppTokenId <String>]`: key: id of vppToken
   - `[WindowsDefenderApplicationControlSupplementalPolicyAssignmentId <String>]`: key: id of windowsDefenderApplicationControlSupplementalPolicyAssignment
   - `[WindowsDefenderApplicationControlSupplementalPolicyDeploymentStatusId <String>]`: key: id of windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
@@ -1399,7 +1398,7 @@ INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   - `[WindowsInformationProtectionDeviceRegistrationId <String>]`: key: id of windowsInformationProtectionDeviceRegistration
   - `[WindowsInformationProtectionPolicyId <String>]`: key: id of windowsInformationProtectionPolicy
   - `[WindowsInformationProtectionWipeActionId <String>]`: key: id of windowsInformationProtectionWipeAction
+  - `[WindowsManagedAppProtectionId <String>]`: key: id of windowsManagedAppProtection
 
 ## RELATED LINKS
 
-## RELATED LINKS

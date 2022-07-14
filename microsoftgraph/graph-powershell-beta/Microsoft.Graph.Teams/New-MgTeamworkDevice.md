@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Teams-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgteamworkdevice
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgTeamworkDevice
 
 ## SYNOPSIS
-The Teams devices provisioned for the tenant.
+Create new navigation property to devices for teamwork
 
 ## SYNTAX
 
@@ -21,16 +21,16 @@ New-MgTeamworkDevice [-Activity <IMicrosoftGraphTeamworkDeviceActivity>] [-Activ
  [-HardwareDetail <IMicrosoftGraphTeamworkHardwareDetail>] [-Health <IMicrosoftGraphTeamworkDeviceHealth>]
  [-HealthStatus <String>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedDateTime <DateTime>] [-Notes <String>] [-Operations <IMicrosoftGraphTeamworkDeviceOperation[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgTeamworkDevice -BodyParameter <IMicrosoftGraphTeamworkDevice> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgTeamworkDevice -BodyParameter <IMicrosoftGraphTeamworkDevice> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The Teams devices provisioned for the tenant.
+Create new navigation property to devices for teamwork
 
 ## EXAMPLES
 
@@ -41,7 +41,7 @@ teamworkDeviceActivity
 To construct, please use Get-Help -Online and see NOTES section for ACTIVITY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamworkDeviceActivity
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkDeviceActivity
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -56,7 +56,7 @@ Accept wildcard characters: False
 teamworkDeviceActivityState
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -87,7 +87,7 @@ teamworkDevice
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamworkDevice
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkDevice
 Parameter Sets: Create
 Aliases:
 
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 The company asset tag assigned by the admin on the device.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -118,7 +118,7 @@ teamworkDeviceConfiguration
 To construct, please use Get-Help -Online and see NOTES section for CONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamworkDeviceConfiguration
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkDeviceConfiguration
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -134,7 +134,7 @@ identitySet
 To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 The UTC date and time when the device was enrolled to the tenant.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -165,7 +165,7 @@ teamworkUserIdentity
 To construct, please use Get-Help -Online and see NOTES section for CURRENTUSER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamworkUserIdentity
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkUserIdentity
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 teamworkDeviceType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -196,7 +196,7 @@ teamworkHardwareDetail
 To construct, please use Get-Help -Online and see NOTES section for HARDWAREDETAIL properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamworkHardwareDetail
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkHardwareDetail
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -212,7 +212,7 @@ teamworkDeviceHealth
 To construct, please use Get-Help -Online and see NOTES section for HEALTH properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamworkDeviceHealth
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkDeviceHealth
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -227,7 +227,7 @@ Accept wildcard characters: False
 teamworkDeviceHealthStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -239,10 +239,10 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -258,7 +258,7 @@ identitySet
 To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -273,7 +273,7 @@ Accept wildcard characters: False
 The UTC date and time when the device detail was last modified.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -288,7 +288,7 @@ Accept wildcard characters: False
 The notes added by the admin to the device.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -304,7 +304,7 @@ The async operations on the device.
 To construct, please use Get-Help -Online and see NOTES section for OPERATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamworkDeviceOperation[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkDeviceOperation[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -319,7 +319,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -335,7 +335,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -352,9 +352,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkDevice
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkDevice
+
 ## NOTES
 
 ALIASES
@@ -366,12 +368,12 @@ To create the parameters described below, construct a hash table containing the 
 
 ACTIVITY <IMicrosoftGraphTeamworkDeviceActivity>: teamworkDeviceActivity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[ActivePeripherals <IMicrosoftGraphTeamworkActivePeripherals>]`: teamworkActivePeripherals
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CommunicationSpeaker <IMicrosoftGraphTeamworkPeripheral>]`: teamworkPeripheral
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[DisplayName <String>]`: Display name for the peripheral.
       - `[ProductId <String>]`: The product ID of the device. Each product from a vendor has its own ID.
       - `[VendorId <String>]`: The unique identifier for the vendor of the device. Each vendor has a unique ID.
@@ -393,15 +395,15 @@ ACTIVITY <IMicrosoftGraphTeamworkDeviceActivity>: teamworkDeviceActivity
 
 BODYPARAMETER <IMicrosoftGraphTeamworkDevice>: teamworkDevice
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Activity <IMicrosoftGraphTeamworkDeviceActivity>]`: teamworkDeviceActivity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[ActivePeripherals <IMicrosoftGraphTeamworkActivePeripherals>]`: teamworkActivePeripherals
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CommunicationSpeaker <IMicrosoftGraphTeamworkPeripheral>]`: teamworkPeripheral
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: Read-only.
+        - `[Id <String>]`: 
         - `[DisplayName <String>]`: Display name for the peripheral.
         - `[ProductId <String>]`: The product ID of the device. Each product from a vendor has its own ID.
         - `[VendorId <String>]`: The unique identifier for the vendor of the device. Each vendor has a unique ID.
@@ -424,7 +426,7 @@ BODYPARAMETER <IMicrosoftGraphTeamworkDevice>: teamworkDevice
   - `[CompanyAssetTag <String>]`: The company asset tag assigned by the admin on the device.
   - `[Configuration <IMicrosoftGraphTeamworkDeviceConfiguration>]`: teamworkDeviceConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[CameraConfiguration <IMicrosoftGraphTeamworkCameraConfiguration>]`: teamworkCameraConfiguration
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Cameras <IMicrosoftGraphTeamworkPeripheral[]>]`: 
@@ -541,7 +543,7 @@ BODYPARAMETER <IMicrosoftGraphTeamworkDevice>: teamworkDevice
     - `[UniqueId <String>]`: The unique identifier for the device.
   - `[Health <IMicrosoftGraphTeamworkDeviceHealth>]`: teamworkDeviceHealth
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[Connection <IMicrosoftGraphTeamworkConnection>]`: teamworkConnection
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ConnectionStatus <String>]`: teamworkConnectionStatus
@@ -588,7 +590,7 @@ BODYPARAMETER <IMicrosoftGraphTeamworkDevice>: teamworkDevice
   - `[LastModifiedDateTime <DateTime?>]`: The UTC date and time when the device detail was last modified.
   - `[Notes <String>]`: The notes added by the admin to the device.
   - `[Operations <IMicrosoftGraphTeamworkDeviceOperation[]>]`: The async operations on the device.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[CompletedDateTime <DateTime?>]`: Time at which the operation reached a final state (for example, Successful, Failed, and Cancelled).
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[CreatedDateTime <DateTime?>]`: The UTC date and time when the device operation was created.
@@ -604,11 +606,11 @@ BODYPARAMETER <IMicrosoftGraphTeamworkDevice>: teamworkDevice
 
 CONFIGURATION <IMicrosoftGraphTeamworkDeviceConfiguration>: teamworkDeviceConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[CameraConfiguration <IMicrosoftGraphTeamworkCameraConfiguration>]`: teamworkCameraConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Cameras <IMicrosoftGraphTeamworkPeripheral[]>]`: 
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
       - `[DisplayName <String>]`: Display name for the peripheral.
       - `[ProductId <String>]`: The product ID of the device. Each product from a vendor has its own ID.
       - `[VendorId <String>]`: The unique identifier for the vendor of the device. Each vendor has a unique ID.
@@ -741,7 +743,7 @@ HARDWAREDETAIL <IMicrosoftGraphTeamworkHardwareDetail>: teamworkHardwareDetail
 
 HEALTH <IMicrosoftGraphTeamworkDeviceHealth>: teamworkDeviceHealth
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Connection <IMicrosoftGraphTeamworkConnection>]`: teamworkConnection
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ConnectionStatus <String>]`: teamworkConnectionStatus
@@ -763,7 +765,7 @@ HEALTH <IMicrosoftGraphTeamworkDeviceHealth>: teamworkDeviceHealth
       - `[IsOptional <Boolean?>]`: True if the peripheral is optional. Used for health computation.
       - `[Peripheral <IMicrosoftGraphTeamworkPeripheral>]`: teamworkPeripheral
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: Read-only.
+        - `[Id <String>]`: 
         - `[DisplayName <String>]`: Display name for the peripheral.
         - `[ProductId <String>]`: The product ID of the device. Each product from a vendor has its own ID.
         - `[VendorId <String>]`: The unique identifier for the vendor of the device. Each vendor has a unique ID.
@@ -806,7 +808,7 @@ LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 OPERATIONS <IMicrosoftGraphTeamworkDeviceOperation[]>: The async operations on the device.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[CompletedDateTime <DateTime?>]`: Time at which the operation reached a final state (for example, Successful, Failed, and Cancelled).
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -829,4 +831,3 @@ OPERATIONS <IMicrosoftGraphTeamworkDeviceOperation[]>: The async operations on t
 
 ## RELATED LINKS
 
-## RELATED LINKS

@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementassignmentfilter
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementAssignmentFilter
 
 ## SYNOPSIS
-The list of assignment filters
+Create new navigation property to assignmentFilters for deviceManagement
 
 ## SYNTAX
 
@@ -16,17 +16,18 @@ The list of assignment filters
 ```
 New-MgDeviceManagementAssignmentFilter [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-Platform <String>] [-RoleScopeTags <String[]>] [-Rule <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Platform <DevicePlatformType>] [-RoleScopeTags <String[]>] [-Rule <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementAssignmentFilter -BodyParameter <IMicrosoftGraphDeviceAndAppManagementAssignmentFilter>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The list of assignment filters
+Create new navigation property to assignmentFilters for deviceManagement
 
 ## EXAMPLES
 
@@ -36,7 +37,7 @@ The list of assignment filters
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -52,7 +53,7 @@ A class containing the properties used for Assignment Filter.
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceAndAppManagementAssignmentFilter
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceAndAppManagementAssignmentFilter
 Parameter Sets: Create
 Aliases:
 
@@ -67,7 +68,7 @@ Accept wildcard characters: False
 Creation time of the Assignment Filter.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -82,7 +83,7 @@ Accept wildcard characters: False
 Description of the Assignment Filter.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -97,7 +98,7 @@ Accept wildcard characters: False
 DisplayName of the Assignment Filter.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -109,10 +110,10 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -127,7 +128,7 @@ Accept wildcard characters: False
 Last modified time of the Assignment Filter.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -142,7 +143,7 @@ Accept wildcard characters: False
 Supported platform types.
 
 ```yaml
-Type: String
+Type: Microsoft.Graph.PowerShell.Support.DevicePlatformType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -157,7 +158,7 @@ Accept wildcard characters: False
 RoleScopeTags of the Assignment Filter.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -172,7 +173,7 @@ Accept wildcard characters: False
 Rule definition of the Assignment Filter.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -187,7 +188,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -203,7 +204,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -220,9 +221,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceAndAppManagementAssignmentFilter
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceAndAppManagementAssignmentFilter
+
 ## NOTES
 
 ALIASES
@@ -234,13 +237,14 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER <IMicrosoftGraphDeviceAndAppManagementAssignmentFilter>: A class containing the properties used for Assignment Filter.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[CreatedDateTime <DateTime?>]`: Creation time of the Assignment Filter.
   - `[Description <String>]`: Description of the Assignment Filter.
   - `[DisplayName <String>]`: DisplayName of the Assignment Filter.
   - `[LastModifiedDateTime <DateTime?>]`: Last modified time of the Assignment Filter.
-  - `[Platform <String>]`: Supported platform types.
+  - `[Platform <DevicePlatformType?>]`: Supported platform types.
   - `[RoleScopeTags <String[]>]`: RoleScopeTags of the Assignment Filter.
   - `[Rule <String>]`: Rule definition of the Assignment Filter.
 
 ## RELATED LINKS
+

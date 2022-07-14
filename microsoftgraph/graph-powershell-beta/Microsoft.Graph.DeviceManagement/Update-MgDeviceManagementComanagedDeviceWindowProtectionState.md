@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementcomanageddevicewindowprotectionstate
 schema: 2.0.0
@@ -8,8 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementComanagedDeviceWindowProtectionState
 
 ## SYNOPSIS
-The device protection status.
-This property is read-only.
+Update the navigation property windowsProtectionState in deviceManagement
 
 ## SYNTAX
 
@@ -17,45 +16,44 @@ This property is read-only.
 ```
 Update-MgDeviceManagementComanagedDeviceWindowProtectionState -ManagedDeviceId <String>
  [-AdditionalProperties <Hashtable>] [-AntiMalwareVersion <String>]
- [-DetectedMalwareState <IMicrosoftGraphWindowsDeviceMalwareState[]>] [-DeviceState <String>]
- [-EngineVersion <String>] [-FullScanOverdue] [-FullScanRequired] [-Id <String>] [-IsVirtualMachine]
- [-LastFullScanDateTime <DateTime>] [-LastFullScanSignatureVersion <String>]
- [-LastQuickScanDateTime <DateTime>] [-LastQuickScanSignatureVersion <String>]
- [-LastReportedDateTime <DateTime>] [-MalwareProtectionEnabled] [-NetworkInspectionSystemEnabled]
- [-ProductStatus <String>] [-QuickScanOverdue] [-RealTimeProtectionEnabled] [-RebootRequired]
- [-SignatureUpdateOverdue] [-SignatureVersion <String>] [-TamperProtectionEnabled] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-DetectedMalwareState <IMicrosoftGraphWindowsDeviceMalwareState[]>]
+ [-DeviceState <WindowsDeviceHealthState>] [-EngineVersion <String>] [-FullScanOverdue] [-FullScanRequired]
+ [-Id <String>] [-IsVirtualMachine] [-LastFullScanDateTime <DateTime>]
+ [-LastFullScanSignatureVersion <String>] [-LastQuickScanDateTime <DateTime>]
+ [-LastQuickScanSignatureVersion <String>] [-LastReportedDateTime <DateTime>] [-MalwareProtectionEnabled]
+ [-NetworkInspectionSystemEnabled] [-ProductStatus <WindowsDefenderProductStatus>] [-QuickScanOverdue]
+ [-RealTimeProtectionEnabled] [-RebootRequired] [-SignatureUpdateOverdue] [-SignatureVersion <String>]
+ [-TamperProtectionEnabled] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementComanagedDeviceWindowProtectionState -ManagedDeviceId <String>
- -BodyParameter <IMicrosoftGraphWindowsProtectionState> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWindowsProtectionState> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgDeviceManagementComanagedDeviceWindowProtectionState -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphWindowsProtectionState> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgDeviceManagementComanagedDeviceWindowProtectionState -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-AntiMalwareVersion <String>]
- [-DetectedMalwareState <IMicrosoftGraphWindowsDeviceMalwareState[]>] [-DeviceState <String>]
- [-EngineVersion <String>] [-FullScanOverdue] [-FullScanRequired] [-Id <String>] [-IsVirtualMachine]
- [-LastFullScanDateTime <DateTime>] [-LastFullScanSignatureVersion <String>]
- [-LastQuickScanDateTime <DateTime>] [-LastQuickScanSignatureVersion <String>]
- [-LastReportedDateTime <DateTime>] [-MalwareProtectionEnabled] [-NetworkInspectionSystemEnabled]
- [-ProductStatus <String>] [-QuickScanOverdue] [-RealTimeProtectionEnabled] [-RebootRequired]
- [-SignatureUpdateOverdue] [-SignatureVersion <String>] [-TamperProtectionEnabled] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgDeviceManagementComanagedDeviceWindowProtectionState -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphWindowsProtectionState> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DetectedMalwareState <IMicrosoftGraphWindowsDeviceMalwareState[]>]
+ [-DeviceState <WindowsDeviceHealthState>] [-EngineVersion <String>] [-FullScanOverdue] [-FullScanRequired]
+ [-Id <String>] [-IsVirtualMachine] [-LastFullScanDateTime <DateTime>]
+ [-LastFullScanSignatureVersion <String>] [-LastQuickScanDateTime <DateTime>]
+ [-LastQuickScanSignatureVersion <String>] [-LastReportedDateTime <DateTime>] [-MalwareProtectionEnabled]
+ [-NetworkInspectionSystemEnabled] [-ProductStatus <WindowsDefenderProductStatus>] [-QuickScanOverdue]
+ [-RealTimeProtectionEnabled] [-RebootRequired] [-SignatureUpdateOverdue] [-SignatureVersion <String>]
+ [-TamperProtectionEnabled] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The device protection status.
-This property is read-only.
+Update the navigation property windowsProtectionState in deviceManagement
 
 ## EXAMPLES
 
@@ -65,7 +63,7 @@ This property is read-only.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -80,7 +78,7 @@ Accept wildcard characters: False
 Current anti malware version
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -96,7 +94,7 @@ Device protection status entity.
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsProtectionState
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsProtectionState
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -112,7 +110,7 @@ Device malware list
 To construct, please use Get-Help -Online and see NOTES section for DETECTEDMALWARESTATE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsDeviceMalwareState[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsDeviceMalwareState[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -127,7 +125,7 @@ Accept wildcard characters: False
 Computer endpoint protection state
 
 ```yaml
-Type: String
+Type: Microsoft.Graph.PowerShell.Support.WindowsDeviceHealthState
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -142,7 +140,7 @@ Accept wildcard characters: False
 Current endpoint protection engine's version
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -157,7 +155,7 @@ Accept wildcard characters: False
 Full scan overdue or not
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -172,7 +170,7 @@ Accept wildcard characters: False
 Full scan required or not
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -184,10 +182,10 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -203,8 +201,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -218,7 +216,7 @@ Accept wildcard characters: False
 Indicates whether the device is a virtual machine.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -233,7 +231,7 @@ Accept wildcard characters: False
 Last quick scan datetime
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -248,7 +246,7 @@ Accept wildcard characters: False
 Last full scan signature version
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -263,7 +261,7 @@ Accept wildcard characters: False
 Last quick scan datetime
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -278,7 +276,7 @@ Accept wildcard characters: False
 Last quick scan signature version
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -293,7 +291,7 @@ Accept wildcard characters: False
 Last device health status reported time
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -308,7 +306,7 @@ Accept wildcard characters: False
 Anti malware is enabled or not
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -323,8 +321,8 @@ Accept wildcard characters: False
 key: id of managedDevice
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -338,7 +336,7 @@ Accept wildcard characters: False
 Network inspection system enabled or not
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -353,7 +351,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -368,7 +366,7 @@ Accept wildcard characters: False
 Product Status of Windows Defender
 
 ```yaml
-Type: String
+Type: Microsoft.Graph.PowerShell.Support.WindowsDefenderProductStatus
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -383,7 +381,7 @@ Accept wildcard characters: False
 Quick scan overdue or not
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -398,7 +396,7 @@ Accept wildcard characters: False
 Real time protection is enabled or not
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -413,7 +411,7 @@ Accept wildcard characters: False
 Reboot required or not
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -428,7 +426,7 @@ Accept wildcard characters: False
 Signature out of date or not
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -443,7 +441,7 @@ Accept wildcard characters: False
 Current malware definitions version
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -458,7 +456,7 @@ Accept wildcard characters: False
 Indicates whether the Windows Defender tamper protection feature is enabled.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -473,7 +471,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -489,7 +487,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -506,10 +504,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsProtectionState
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -521,21 +522,21 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER <IMicrosoftGraphWindowsProtectionState>: Device protection status entity.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[AntiMalwareVersion <String>]`: Current anti malware version
   - `[DetectedMalwareState <IMicrosoftGraphWindowsDeviceMalwareState[]>]`: Device malware list
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[AdditionalInformationUrl <String>]`: Information URL to learn more about the malware
-    - `[Category <String>]`: Malware category id
+    - `[Category <WindowsMalwareCategory?>]`: Malware category id
     - `[DetectionCount <Int32?>]`: Number of times the malware is detected
     - `[DisplayName <String>]`: Malware name
-    - `[ExecutionState <String>]`: Malware execution status
+    - `[ExecutionState <WindowsMalwareExecutionState?>]`: Malware execution status
     - `[InitialDetectionDateTime <DateTime?>]`: Initial detection datetime of the malware
     - `[LastStateChangeDateTime <DateTime?>]`: The last time this particular threat was changed
-    - `[Severity <String>]`: Malware severity
-    - `[State <String>]`: Malware current status
-    - `[ThreatState <String>]`: Malware threat status
-  - `[DeviceState <String>]`: Computer endpoint protection state
+    - `[Severity <WindowsMalwareSeverity?>]`: Malware severity
+    - `[State <WindowsMalwareState?>]`: Malware current status
+    - `[ThreatState <WindowsMalwareThreatState?>]`: Malware threat status
+  - `[DeviceState <WindowsDeviceHealthState?>]`: Computer endpoint protection state
   - `[EngineVersion <String>]`: Current endpoint protection engine's version
   - `[FullScanOverdue <Boolean?>]`: Full scan overdue or not?
   - `[FullScanRequired <Boolean?>]`: Full scan required or not?
@@ -547,7 +548,7 @@ BODYPARAMETER <IMicrosoftGraphWindowsProtectionState>: Device protection status 
   - `[LastReportedDateTime <DateTime?>]`: Last device health status reported time
   - `[MalwareProtectionEnabled <Boolean?>]`: Anti malware is enabled or not
   - `[NetworkInspectionSystemEnabled <Boolean?>]`: Network inspection system enabled or not?
-  - `[ProductStatus <String>]`: Product Status of Windows Defender
+  - `[ProductStatus <WindowsDefenderProductStatus?>]`: Product Status of Windows Defender
   - `[QuickScanOverdue <Boolean?>]`: Quick scan overdue or not?
   - `[RealTimeProtectionEnabled <Boolean?>]`: Real time protection is enabled or not?
   - `[RebootRequired <Boolean?>]`: Reboot required or not?
@@ -556,17 +557,17 @@ BODYPARAMETER <IMicrosoftGraphWindowsProtectionState>: Device protection status 
   - `[TamperProtectionEnabled <Boolean?>]`: Indicates whether the Windows Defender tamper protection feature is enabled.
 
 DETECTEDMALWARESTATE <IMicrosoftGraphWindowsDeviceMalwareState[]>: Device malware list
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[AdditionalInformationUrl <String>]`: Information URL to learn more about the malware
-  - `[Category <String>]`: Malware category id
+  - `[Category <WindowsMalwareCategory?>]`: Malware category id
   - `[DetectionCount <Int32?>]`: Number of times the malware is detected
   - `[DisplayName <String>]`: Malware name
-  - `[ExecutionState <String>]`: Malware execution status
+  - `[ExecutionState <WindowsMalwareExecutionState?>]`: Malware execution status
   - `[InitialDetectionDateTime <DateTime?>]`: Initial detection datetime of the malware
   - `[LastStateChangeDateTime <DateTime?>]`: The last time this particular threat was changed
-  - `[Severity <String>]`: Malware severity
-  - `[State <String>]`: Malware current status
-  - `[ThreatState <String>]`: Malware threat status
+  - `[Severity <WindowsMalwareSeverity?>]`: Malware severity
+  - `[State <WindowsMalwareState?>]`: Malware current status
+  - `[ThreatState <WindowsMalwareThreatState?>]`: Malware threat status
 
 INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
@@ -598,6 +599,15 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[DeviceHealthScriptDeviceStateId <String>]`: key: id of deviceHealthScriptDeviceState
   - `[DeviceHealthScriptId <String>]`: key: id of deviceHealthScript
   - `[DeviceLogCollectionResponseId <String>]`: key: id of deviceLogCollectionResponse
+  - `[DeviceManagementComplianceActionItemId <String>]`: key: id of deviceManagementComplianceActionItem
+  - `[DeviceManagementCompliancePolicyId <String>]`: key: id of deviceManagementCompliancePolicy
+  - `[DeviceManagementComplianceScheduledActionForRuleId <String>]`: key: id of deviceManagementComplianceScheduledActionForRule
+  - `[DeviceManagementConfigurationPolicyAssignmentId <String>]`: key: id of deviceManagementConfigurationPolicyAssignment
+  - `[DeviceManagementConfigurationPolicyId <String>]`: key: id of deviceManagementConfigurationPolicy
+  - `[DeviceManagementConfigurationPolicyTemplateId <String>]`: key: id of deviceManagementConfigurationPolicyTemplate
+  - `[DeviceManagementConfigurationSettingDefinitionId <String>]`: key: id of deviceManagementConfigurationSettingDefinition
+  - `[DeviceManagementConfigurationSettingId <String>]`: key: id of deviceManagementConfigurationSetting
+  - `[DeviceManagementConfigurationSettingTemplateId <String>]`: key: id of deviceManagementConfigurationSettingTemplate
   - `[DeviceManagementDerivedCredentialSettingsId <String>]`: key: id of deviceManagementDerivedCredentialSettings
   - `[DeviceManagementIntentAssignmentId <String>]`: key: id of deviceManagementIntentAssignment
   - `[DeviceManagementIntentDeviceSettingStateSummaryId <String>]`: key: id of deviceManagementIntentDeviceSettingStateSummary
@@ -635,8 +645,6 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[ManagedDeviceEncryptionStateId <String>]`: key: id of managedDeviceEncryptionState
   - `[ManagedDeviceId <String>]`: key: id of managedDevice
   - `[ManagedDeviceMobileAppConfigurationStateId <String>]`: key: id of managedDeviceMobileAppConfigurationState
-  - `[ManagementConditionId <String>]`: key: id of managementCondition
-  - `[ManagementConditionStatementId <String>]`: key: id of managementConditionStatement
   - `[MicrosoftTunnelConfigurationId <String>]`: key: id of microsoftTunnelConfiguration
   - `[MicrosoftTunnelHealthThresholdId <String>]`: key: id of microsoftTunnelHealthThreshold
   - `[MicrosoftTunnelServerId <String>]`: key: id of microsoftTunnelServer
@@ -666,6 +674,7 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[UserExperienceAnalyticsBatteryHealthOSPerformanceId <String>]`: key: id of userExperienceAnalyticsBatteryHealthOsPerformance
   - `[UserExperienceAnalyticsCategoryId <String>]`: key: id of userExperienceAnalyticsCategory
   - `[UserExperienceAnalyticsDevicePerformanceId <String>]`: key: id of userExperienceAnalyticsDevicePerformance
+  - `[UserExperienceAnalyticsDeviceScopeId <String>]`: key: id of userExperienceAnalyticsDeviceScope
   - `[UserExperienceAnalyticsDeviceScoresId <String>]`: key: id of userExperienceAnalyticsDeviceScores
   - `[UserExperienceAnalyticsDeviceStartupHistoryId <String>]`: key: id of userExperienceAnalyticsDeviceStartupHistory
   - `[UserExperienceAnalyticsDeviceStartupProcessId <String>]`: key: id of userExperienceAnalyticsDeviceStartupProcess
@@ -689,4 +698,3 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
 
 ## RELATED LINKS
 
-## RELATED LINKS

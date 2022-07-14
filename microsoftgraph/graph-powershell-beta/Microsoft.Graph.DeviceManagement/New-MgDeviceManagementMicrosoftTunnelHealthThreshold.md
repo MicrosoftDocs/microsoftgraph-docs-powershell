@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmicrosofttunnelhealththreshold
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementMicrosoftTunnelHealthThreshold
 
 ## SYNOPSIS
-Collection of MicrosoftTunnelHealthThreshold settings associated with account.
+Create new navigation property to microsoftTunnelHealthThresholds for deviceManagement
 
 ## SYNTAX
 
@@ -16,17 +16,17 @@ Collection of MicrosoftTunnelHealthThreshold settings associated with account.
 ```
 New-MgDeviceManagementMicrosoftTunnelHealthThreshold [-AdditionalProperties <Hashtable>]
  [-DefaultHealthyThreshold <Int64>] [-DefaultUnhealthyThreshold <Int64>] [-HealthyThreshold <Int64>]
- [-Id <String>] [-UnhealthyThreshold <Int64>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-UnhealthyThreshold <Int64>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementMicrosoftTunnelHealthThreshold
- -BodyParameter <IMicrosoftGraphMicrosoftTunnelHealthThreshold> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMicrosoftTunnelHealthThreshold> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Collection of MicrosoftTunnelHealthThreshold settings associated with account.
+Create new navigation property to microsoftTunnelHealthThresholds for deviceManagement
 
 ## EXAMPLES
 
@@ -36,7 +36,7 @@ Collection of MicrosoftTunnelHealthThreshold settings associated with account.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -52,7 +52,7 @@ Entity that represents the health thresholds of a health metric.
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMicrosoftTunnelHealthThreshold
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelHealthThreshold
 Parameter Sets: Create
 Aliases:
 
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 The default threshold for being healthy
 
 ```yaml
-Type: Int64
+Type: System.Int64
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 The default threshold for being unhealthy
 
 ```yaml
-Type: Int64
+Type: System.Int64
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 The threshold for being healthy
 
 ```yaml
-Type: Int64
+Type: System.Int64
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -109,10 +109,10 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 The threshold for being unhealthy
 
 ```yaml
-Type: Int64
+Type: System.Int64
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -158,7 +158,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -175,9 +175,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelHealthThreshold
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelHealthThreshold
+
 ## NOTES
 
 ALIASES
@@ -189,10 +191,11 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER <IMicrosoftGraphMicrosoftTunnelHealthThreshold>: Entity that represents the health thresholds of a health metric.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[DefaultHealthyThreshold <Int64?>]`: The default threshold for being healthy
   - `[DefaultUnhealthyThreshold <Int64?>]`: The default threshold for being unhealthy
   - `[HealthyThreshold <Int64?>]`: The threshold for being healthy
   - `[UnhealthyThreshold <Int64?>]`: The threshold for being unhealthy
 
 ## RELATED LINKS
+

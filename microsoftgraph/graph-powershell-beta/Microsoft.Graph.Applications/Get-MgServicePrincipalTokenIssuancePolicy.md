@@ -1,5 +1,5 @@
-﻿---
-external help file: Microsoft.Graph.Applications-help.xml
+---
+external help file:
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgserviceprincipaltokenissuancepolicy
 schema: 2.0.0
@@ -8,18 +8,31 @@ schema: 2.0.0
 # Get-MgServicePrincipalTokenIssuancePolicy
 
 ## SYNOPSIS
-The tokenIssuancePolicies assigned to this service principal.
+Get tokenIssuancePolicies from servicePrincipals
 
 ## SYNTAX
 
+### List (Default)
 ```
 Get-MgServicePrincipalTokenIssuancePolicy -ServicePrincipalId <String> [-ExpandProperty <String[]>]
- [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+ [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>]
+ [-Top <Int32>] [-All] [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
+```
+
+### Get
+```
+Get-MgServicePrincipalTokenIssuancePolicy -ServicePrincipalId <String> -TokenIssuancePolicyId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+```
+
+### GetViaIdentity
+```
+Get-MgServicePrincipalTokenIssuancePolicy -InputObject <IApplicationsIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The tokenIssuancePolicies assigned to this service principal.
+Get tokenIssuancePolicies from servicePrincipals
 
 ## EXAMPLES
 
@@ -29,8 +42,8 @@ The tokenIssuancePolicies assigned to this service principal.
 List all pages.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -45,8 +58,8 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: String
-Parameter Sets: (All)
+Type: System.String
+Parameter Sets: List
 Aliases: CV
 
 Required: False
@@ -60,7 +73,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -75,8 +88,8 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
-Parameter Sets: (All)
+Type: System.String
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -86,12 +99,28 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -InputObject
+Identity Parameter
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+Parameter Sets: GetViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -PageSize
 Sets the page size of results.
 
 ```yaml
-Type: Int32
-Parameter Sets: (All)
+Type: System.Int32
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -105,7 +134,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -120,8 +149,8 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
-Parameter Sets: (All)
+Type: System.String
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -135,41 +164,11 @@ Accept wildcard characters: False
 key: id of servicePrincipal
 
 ```yaml
-Type: String
-Parameter Sets: (All)
+Type: System.String
+Parameter Sets: Get, List
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Sort
-Order items by property values
-
-```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: OrderBy
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Top
-Show only the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases: Limit
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -180,9 +179,54 @@ Accept wildcard characters: False
 Skip the first n items
 
 ```yaml
-Type: Int32
-Parameter Sets: (All)
+Type: System.Int32
+Parameter Sets: List
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Sort
+Order items by property values
+
+```yaml
+Type: System.String[]
+Parameter Sets: List
+Aliases: OrderBy
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TokenIssuancePolicyId
+key: id of tokenIssuancePolicy
+
+```yaml
+Type: System.String
+Parameter Sets: Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Top
+Show only the first n items
+
+```yaml
+Type: System.Int32
+Parameter Sets: List
+Aliases: Limit
 
 Required: False
 Position: Named
@@ -196,11 +240,50 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTokenIssuancePolicy1
+
 ## NOTES
 
 ALIASES
 
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
+  - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
+  - `[AppRoleAssignmentId <String>]`: key: id of appRoleAssignment
+  - `[ApplicationId <String>]`: key: id of application
+  - `[ApplicationTemplateId <String>]`: key: id of applicationTemplate
+  - `[ClaimsMappingPolicyId <String>]`: key: id of claimsMappingPolicy
+  - `[ConnectorGroupId <String>]`: key: id of connectorGroup
+  - `[ConnectorId <String>]`: key: id of connector
+  - `[DelegatedPermissionClassificationId <String>]`: key: id of delegatedPermissionClassification
+  - `[DirectoryDefinitionId <String>]`: key: id of directoryDefinition
+  - `[DirectoryObjectId <String>]`: key: id of directoryObject
+  - `[EndpointId <String>]`: key: id of endpoint
+  - `[ExtensionPropertyId <String>]`: key: id of extensionProperty
+  - `[FederatedIdentityCredentialId <String>]`: key: id of federatedIdentityCredential
+  - `[GroupId <String>]`: key: id of group
+  - `[HomeRealmDiscoveryPolicyId <String>]`: key: id of homeRealmDiscoveryPolicy
+  - `[LicenseDetailsId <String>]`: key: id of licenseDetails
+  - `[OAuth2PermissionGrantId <String>]`: key: id of oAuth2PermissionGrant
+  - `[OnPremisesAgentGroupId <String>]`: key: id of onPremisesAgentGroup
+  - `[OnPremisesAgentGroupId1 <String>]`: key: id of onPremisesAgentGroup
+  - `[OnPremisesAgentId <String>]`: key: id of onPremisesAgent
+  - `[OnPremisesPublishingProfileId <String>]`: key: id of onPremisesPublishingProfile
+  - `[PublishedResourceId <String>]`: key: id of publishedResource
+  - `[ServicePrincipalId <String>]`: key: id of servicePrincipal
+  - `[SynchronizationJobId <String>]`: key: id of synchronizationJob
+  - `[SynchronizationTemplateId <String>]`: key: id of synchronizationTemplate
+  - `[TokenIssuancePolicyId <String>]`: key: id of tokenIssuancePolicy
+  - `[TokenLifetimePolicyId <String>]`: key: id of tokenLifetimePolicy
+  - `[UserId <String>]`: key: id of user
+
 ## RELATED LINKS
+
