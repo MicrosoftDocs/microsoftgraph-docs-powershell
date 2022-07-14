@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/new-mgsitetermstoregroupset
 schema: 2.0.0
@@ -18,52 +18,30 @@ New-MgSiteTermStoreGroupSet -GroupId <String> -SiteId <String> [-AdditionalPrope
  [-Children <IMicrosoftGraphTermStoreTerm[]>] [-CreatedDateTime <DateTime>] [-Description <String>]
  [-Id <String>] [-LocalizedNames <IMicrosoftGraphTermStoreLocalizedName[]>]
  [-ParentGroup <IMicrosoftGraphTermStoreGroup1>] [-Properties <IMicrosoftGraphKeyValue[]>]
- [-Relations <IMicrosoftGraphTermStoreRelation1[]>] [-Terms <IMicrosoftGraphTermStoreTerm[]>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
-```
-
-### Create
-```
-New-MgSiteTermStoreGroupSet -GroupId <String> -SiteId <String> -StoreId <String>
- -BodyParameter <IMicrosoftGraphTermStoreSet> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### Create2
-```
-New-MgSiteTermStoreGroupSet -GroupId <String> -SiteId <String> -BodyParameter <IMicrosoftGraphTermStoreSet>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Relations <IMicrosoftGraphTermStoreRelation1[]>] [-Terms <IMicrosoftGraphTermStoreTerm[]>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateExpanded
 ```
 New-MgSiteTermStoreGroupSet -GroupId <String> -SiteId <String> -StoreId <String>
- [-AdditionalProperties <Hashtable>] [-Children <IMicrosoftGraphTermStoreTerm[]>]
- [-CreatedDateTime <DateTime>] [-Description <String>] [-Id <String>]
- [-LocalizedNames <IMicrosoftGraphTermStoreLocalizedName[]>] [-ParentGroup <IMicrosoftGraphTermStoreGroup1>]
- [-Properties <IMicrosoftGraphKeyValue[]>] [-Relations <IMicrosoftGraphTermStoreRelation1[]>]
- [-Terms <IMicrosoftGraphTermStoreTerm[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgSiteTermStoreGroupSet -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphTermStoreSet>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity2
-```
-New-MgSiteTermStoreGroupSet -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphTermStoreSet>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgSiteTermStoreGroupSet -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
- [-Children <IMicrosoftGraphTermStoreTerm[]>] [-CreatedDateTime <DateTime>] [-Description <String>]
- [-Id <String>] [-LocalizedNames <IMicrosoftGraphTermStoreLocalizedName[]>]
+ [-AdditionalProperties <Hashtable>] [-Children <IMicrosoftGraphTermStoreTerm[]>] [-CreatedDateTime <DateTime>]
+ [-Description <String>] [-Id <String>] [-LocalizedNames <IMicrosoftGraphTermStoreLocalizedName[]>]
  [-ParentGroup <IMicrosoftGraphTermStoreGroup1>] [-Properties <IMicrosoftGraphKeyValue[]>]
- [-Relations <IMicrosoftGraphTermStoreRelation1[]>] [-Terms <IMicrosoftGraphTermStoreTerm[]>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-Relations <IMicrosoftGraphTermStoreRelation1[]>] [-Terms <IMicrosoftGraphTermStoreTerm[]>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### Create2
+```
+New-MgSiteTermStoreGroupSet -GroupId <String> -SiteId <String> -BodyParameter <IMicrosoftGraphTermStoreSet>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Create
+```
+New-MgSiteTermStoreGroupSet -GroupId <String> -SiteId <String> -StoreId <String>
+ -BodyParameter <IMicrosoftGraphTermStoreSet> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded2
@@ -72,8 +50,30 @@ New-MgSiteTermStoreGroupSet -InputObject <ISitesIdentity> [-AdditionalProperties
  [-Children <IMicrosoftGraphTermStoreTerm[]>] [-CreatedDateTime <DateTime>] [-Description <String>]
  [-Id <String>] [-LocalizedNames <IMicrosoftGraphTermStoreLocalizedName[]>]
  [-ParentGroup <IMicrosoftGraphTermStoreGroup1>] [-Properties <IMicrosoftGraphKeyValue[]>]
- [-Relations <IMicrosoftGraphTermStoreRelation1[]>] [-Terms <IMicrosoftGraphTermStoreTerm[]>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-Relations <IMicrosoftGraphTermStoreRelation1[]>] [-Terms <IMicrosoftGraphTermStoreTerm[]>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgSiteTermStoreGroupSet -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
+ [-Children <IMicrosoftGraphTermStoreTerm[]>] [-CreatedDateTime <DateTime>] [-Description <String>]
+ [-Id <String>] [-LocalizedNames <IMicrosoftGraphTermStoreLocalizedName[]>]
+ [-ParentGroup <IMicrosoftGraphTermStoreGroup1>] [-Properties <IMicrosoftGraphKeyValue[]>]
+ [-Relations <IMicrosoftGraphTermStoreRelation1[]>] [-Terms <IMicrosoftGraphTermStoreTerm[]>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity2
+```
+New-MgSiteTermStoreGroupSet -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphTermStoreSet>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgSiteTermStoreGroupSet -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphTermStoreSet>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -87,8 +87,8 @@ Create new navigation property to sets for sites
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: CreateExpanded, CreateExpanded2, CreateViaIdentityExpanded, CreateViaIdentityExpanded2
+Type: Hashtable
+Parameter Sets: CreateExpanded2, CreateExpanded, CreateViaIdentityExpanded2, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -103,8 +103,8 @@ set
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreSet
-Parameter Sets: Create, Create2, CreateViaIdentity, CreateViaIdentity2
+Type: IMicrosoftGraphTermStoreSet
+Parameter Sets: Create2, Create, CreateViaIdentity2, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -119,8 +119,8 @@ Children terms of set in term [store].
 To construct, please use Get-Help -Online and see NOTES section for CHILDREN properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreTerm[]
-Parameter Sets: CreateExpanded, CreateExpanded2, CreateViaIdentityExpanded, CreateViaIdentityExpanded2
+Type: IMicrosoftGraphTermStoreTerm[]
+Parameter Sets: CreateExpanded2, CreateExpanded, CreateViaIdentityExpanded2, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -135,8 +135,8 @@ Date and time of set creation.
 Read-only.
 
 ```yaml
-Type: System.DateTime
-Parameter Sets: CreateExpanded, CreateExpanded2, CreateViaIdentityExpanded, CreateViaIdentityExpanded2
+Type: DateTime
+Parameter Sets: CreateExpanded2, CreateExpanded, CreateViaIdentityExpanded2, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -150,8 +150,8 @@ Accept wildcard characters: False
 Description giving details on the term usage.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded, CreateExpanded2, CreateViaIdentityExpanded, CreateViaIdentityExpanded2
+Type: String
+Parameter Sets: CreateExpanded2, CreateExpanded, CreateViaIdentityExpanded2, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -165,8 +165,8 @@ Accept wildcard characters: False
 key: id of group
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, Create2, CreateExpanded, CreateExpanded2
+Type: String
+Parameter Sets: CreateExpanded2, CreateExpanded, Create2, Create
 Aliases:
 
 Required: True
@@ -180,8 +180,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded, CreateExpanded2, CreateViaIdentityExpanded, CreateViaIdentityExpanded2
+Type: String
+Parameter Sets: CreateExpanded2, CreateExpanded, CreateViaIdentityExpanded2, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -196,8 +196,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ISitesIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentity2, CreateViaIdentityExpanded, CreateViaIdentityExpanded2
+Type: ISitesIdentity
+Parameter Sets: CreateViaIdentityExpanded2, CreateViaIdentityExpanded, CreateViaIdentity2, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -212,8 +212,8 @@ Name of the set for each languageTag.
 To construct, please use Get-Help -Online and see NOTES section for LOCALIZEDNAMES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreLocalizedName[]
-Parameter Sets: CreateExpanded, CreateExpanded2, CreateViaIdentityExpanded, CreateViaIdentityExpanded2
+Type: IMicrosoftGraphTermStoreLocalizedName[]
+Parameter Sets: CreateExpanded2, CreateExpanded, CreateViaIdentityExpanded2, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -228,8 +228,8 @@ group
 To construct, please use Get-Help -Online and see NOTES section for PARENTGROUP properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreGroup1
-Parameter Sets: CreateExpanded, CreateExpanded2, CreateViaIdentityExpanded, CreateViaIdentityExpanded2
+Type: IMicrosoftGraphTermStoreGroup1
+Parameter Sets: CreateExpanded2, CreateExpanded, CreateViaIdentityExpanded2, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -244,8 +244,8 @@ Custom properties for the set.
 To construct, please use Get-Help -Online and see NOTES section for PROPERTIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphKeyValue[]
-Parameter Sets: CreateExpanded, CreateExpanded2, CreateViaIdentityExpanded, CreateViaIdentityExpanded2
+Type: IMicrosoftGraphKeyValue[]
+Parameter Sets: CreateExpanded2, CreateExpanded, CreateViaIdentityExpanded2, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -260,8 +260,8 @@ Indicates which terms have been pinned or reused directly under the set.
 To construct, please use Get-Help -Online and see NOTES section for RELATIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreRelation1[]
-Parameter Sets: CreateExpanded, CreateExpanded2, CreateViaIdentityExpanded, CreateViaIdentityExpanded2
+Type: IMicrosoftGraphTermStoreRelation1[]
+Parameter Sets: CreateExpanded2, CreateExpanded, CreateViaIdentityExpanded2, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -275,8 +275,8 @@ Accept wildcard characters: False
 key: id of site
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, Create2, CreateExpanded, CreateExpanded2
+Type: String
+Parameter Sets: CreateExpanded2, CreateExpanded, Create2, Create
 Aliases:
 
 Required: True
@@ -290,8 +290,8 @@ Accept wildcard characters: False
 key: id of store
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -306,8 +306,8 @@ All the terms under the set.
 To construct, please use Get-Help -Online and see NOTES section for TERMS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreTerm[]
-Parameter Sets: CreateExpanded, CreateExpanded2, CreateViaIdentityExpanded, CreateViaIdentityExpanded2
+Type: IMicrosoftGraphTermStoreTerm[]
+Parameter Sets: CreateExpanded2, CreateExpanded, CreateViaIdentityExpanded2, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -321,7 +321,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -337,7 +337,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -354,13 +354,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreSet
-
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreSet
-
 ## NOTES
 
 ALIASES
@@ -632,3 +629,4 @@ TERMS <IMicrosoftGraphTermStoreTerm[]>: All the terms under the set.
 
 ## RELATED LINKS
 
+## RELATED LINKS
