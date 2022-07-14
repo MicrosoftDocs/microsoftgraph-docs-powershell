@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportskypeforbusinessdeviceusageuserdetail
 schema: 2.0.0
@@ -24,16 +24,16 @@ Get-MgReportSkypeForBusinessDeviceUsageUserDetail -Period <String> -OutFile <Str
  [<CommonParameters>]
 ```
 
-### GetViaIdentity
-```
-Get-MgReportSkypeForBusinessDeviceUsageUserDetail -InputObject <IReportsIdentity> -OutFile <String>
- [-PassThru] [<CommonParameters>]
-```
-
 ### GetViaIdentity1
 ```
-Get-MgReportSkypeForBusinessDeviceUsageUserDetail -InputObject <IReportsIdentity> -OutFile <String>
- [-PassThru] [<CommonParameters>]
+Get-MgReportSkypeForBusinessDeviceUsageUserDetail -InputObject <IReportsIdentity> -OutFile <String> [-PassThru]
+ [<CommonParameters>]
+```
+
+### GetViaIdentity
+```
+Get-MgReportSkypeForBusinessDeviceUsageUserDetail -InputObject <IReportsIdentity> -OutFile <String> [-PassThru]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,7 +47,7 @@ Invoke function getSkypeForBusinessDeviceUsageUserDetail
 Usage: date={date}
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: Get
 Aliases:
 
@@ -63,8 +63,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IReportsIdentity
-Parameter Sets: GetViaIdentity, GetViaIdentity1
+Type: IReportsIdentity
+Parameter Sets: GetViaIdentity1, GetViaIdentity
 Aliases:
 
 Required: True
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -108,7 +108,7 @@ Accept wildcard characters: False
 Usage: period='{period}'
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get1
 Aliases:
 
@@ -125,11 +125,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IReportsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -167,4 +165,3 @@ INPUTOBJECT <IReportsIdentity>: Identity Parameter
   - `[UserRegistrationDetailsId <String>]`: key: id of userRegistrationDetails
 
 ## RELATED LINKS
-
