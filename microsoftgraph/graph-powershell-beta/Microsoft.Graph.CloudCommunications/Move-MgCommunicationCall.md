@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/move-mgcommunicationcall
 schema: 2.0.0
@@ -15,29 +15,29 @@ Invoke action transfer
 ### TransferExpanded1 (Default)
 ```
 Move-MgCommunicationCall -CallId <String> [-AdditionalProperties <Hashtable>]
- [-Transferee <IMicrosoftGraphParticipantInfo1>] [-TransferTarget <IMicrosoftGraphInvitationParticipantInfo1>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-TransferTarget <IMicrosoftGraphInvitationParticipantInfo1>] [-Transferee <IMicrosoftGraphParticipantInfo1>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Transfer1
 ```
 Move-MgCommunicationCall -CallId <String>
  -BodyParameter <IPaths4Zbm7LCommunicationsCallsCallIdMicrosoftGraphTransferPostRequestbodyContentApplicationJsonSchema1>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### TransferViaIdentityExpanded1
+```
+Move-MgCommunicationCall -InputObject <ICloudCommunicationsIdentity> [-AdditionalProperties <Hashtable>]
+ [-TransferTarget <IMicrosoftGraphInvitationParticipantInfo1>] [-Transferee <IMicrosoftGraphParticipantInfo1>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### TransferViaIdentity1
 ```
 Move-MgCommunicationCall -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPaths4Zbm7LCommunicationsCallsCallIdMicrosoftGraphTransferPostRequestbodyContentApplicationJsonSchema1>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### TransferViaIdentityExpanded1
-```
-Move-MgCommunicationCall -InputObject <ICloudCommunicationsIdentity> [-AdditionalProperties <Hashtable>]
- [-Transferee <IMicrosoftGraphParticipantInfo1>] [-TransferTarget <IMicrosoftGraphInvitationParticipantInfo1>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,7 +51,7 @@ Invoke action transfer
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: TransferExpanded1, TransferViaIdentityExpanded1
 Aliases:
 
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths4Zbm7LCommunicationsCallsCallIdMicrosoftGraphTransferPostRequestbodyContentApplicationJsonSchema1
+Type: IPaths4Zbm7LCommunicationsCallsCallIdMicrosoftGraphTransferPostRequestbodyContentApplicationJsonSchema1
 Parameter Sets: Transfer1, TransferViaIdentity1
 Aliases:
 
@@ -82,8 +82,8 @@ Accept wildcard characters: False
 key: id of call
 
 ```yaml
-Type: System.String
-Parameter Sets: Transfer1, TransferExpanded1
+Type: String
+Parameter Sets: TransferExpanded1, Transfer1
 Aliases:
 
 Required: True
@@ -98,8 +98,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-Parameter Sets: TransferViaIdentity1, TransferViaIdentityExpanded1
+Type: ICloudCommunicationsIdentity
+Parameter Sets: TransferViaIdentityExpanded1, TransferViaIdentity1
 Aliases:
 
 Required: True
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -129,7 +129,7 @@ participantInfo
 To construct, please use Get-Help -Online and see NOTES section for TRANSFEREE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphParticipantInfo1
+Type: IMicrosoftGraphParticipantInfo1
 Parameter Sets: TransferExpanded1, TransferViaIdentityExpanded1
 Aliases:
 
@@ -145,7 +145,7 @@ invitationParticipantInfo
 To construct, please use Get-Help -Online and see NOTES section for TRANSFERTARGET properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInvitationParticipantInfo1
+Type: IMicrosoftGraphInvitationParticipantInfo1
 Parameter Sets: TransferExpanded1, TransferViaIdentityExpanded1
 Aliases:
 
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -176,7 +176,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -193,13 +193,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IPaths4Zbm7LCommunicationsCallsCallIdMicrosoftGraphTransferPostRequestbodyContentApplicationJsonSchema1
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -285,4 +282,3 @@ TRANSFERTARGET <IMicrosoftGraphInvitationParticipantInfo1>: invitationParticipan
   - `[ReplacesCallId <String>]`: Optional. The call which the target identity is currently a part of. For peer-to-peer case, the call will be dropped once the participant is added successfully.
 
 ## RELATED LINKS
-

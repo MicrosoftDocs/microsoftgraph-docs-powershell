@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationonlinemeetingattendancereport
 schema: 2.0.0
@@ -16,27 +16,27 @@ Create new navigation property to attendanceReports for communications
 ```
 New-MgCommunicationOnlineMeetingAttendanceReport -OnlineMeetingId <String> [-AdditionalProperties <Hashtable>]
  [-AttendanceRecords <IMicrosoftGraphAttendanceRecord1[]>] [-Id <String>] [-MeetingEndDateTime <DateTime>]
- [-MeetingStartDateTime <DateTime>] [-TotalParticipantCount <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-MeetingStartDateTime <DateTime>] [-TotalParticipantCount <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
 New-MgCommunicationOnlineMeetingAttendanceReport -OnlineMeetingId <String>
- -BodyParameter <IMicrosoftGraphMeetingAttendanceReport1> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity1
-```
-New-MgCommunicationOnlineMeetingAttendanceReport -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <IMicrosoftGraphMeetingAttendanceReport1> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMeetingAttendanceReport1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded1
 ```
 New-MgCommunicationOnlineMeetingAttendanceReport -InputObject <ICloudCommunicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-AttendanceRecords <IMicrosoftGraphAttendanceRecord1[]>] [-Id <String>]
- [-MeetingEndDateTime <DateTime>] [-MeetingStartDateTime <DateTime>] [-TotalParticipantCount <Int32>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-MeetingEndDateTime <DateTime>] [-MeetingStartDateTime <DateTime>] [-TotalParticipantCount <Int32>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity1
+```
+New-MgCommunicationOnlineMeetingAttendanceReport -InputObject <ICloudCommunicationsIdentity>
+ -BodyParameter <IMicrosoftGraphMeetingAttendanceReport1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -50,7 +50,7 @@ Create new navigation property to attendanceReports for communications
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -67,7 +67,7 @@ Read-only.
 To construct, please use Get-Help -Online and see NOTES section for ATTENDANCERECORDS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttendanceRecord1[]
+Type: IMicrosoftGraphAttendanceRecord1[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -83,7 +83,7 @@ meetingAttendanceReport
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMeetingAttendanceReport1
+Type: IMicrosoftGraphMeetingAttendanceReport1
 Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -114,8 +114,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-Parameter Sets: CreateViaIdentity1, CreateViaIdentityExpanded1
+Type: ICloudCommunicationsIdentity
+Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -130,7 +130,7 @@ UTC time when the meeting ended.
 Read-only.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -146,7 +146,7 @@ UTC time when the meeting started.
 Read-only.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -161,8 +161,8 @@ Accept wildcard characters: False
 key: id of onlineMeeting
 
 ```yaml
-Type: System.String
-Parameter Sets: Create1, CreateExpanded1
+Type: String
+Parameter Sets: CreateExpanded1, Create1
 Aliases:
 
 Required: True
@@ -177,7 +177,7 @@ Total number of participants.
 Read-only.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -208,7 +208,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -225,13 +225,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMeetingAttendanceReport1
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMeetingAttendanceReport1
-
 ## NOTES
 
 ALIASES
@@ -293,4 +290,3 @@ INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-

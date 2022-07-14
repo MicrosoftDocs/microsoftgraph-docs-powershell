@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationcallrecordsession
 schema: 2.0.0
@@ -18,20 +18,14 @@ Update-MgCommunicationCallRecordSession -CallRecordId <String> -SessionId <Strin
  [-AdditionalProperties <Hashtable>] [-Callee <IMicrosoftGraphCallRecordsEndpoint>]
  [-Caller <IMicrosoftGraphCallRecordsEndpoint>] [-EndDateTime <DateTime>]
  [-FailureInfo <IMicrosoftGraphCallRecordsFailureInfo>] [-Id <String>] [-Modalities <String[]>]
- [-Segments <IMicrosoftGraphCallRecordsSegment[]>] [-StartDateTime <DateTime>] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-Segments <IMicrosoftGraphCallRecordsSegment[]>] [-StartDateTime <DateTime>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgCommunicationCallRecordSession -CallRecordId <String> -SessionId <String>
- -BodyParameter <IMicrosoftGraphCallRecordsSession> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity1
-```
-Update-MgCommunicationCallRecordSession -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <IMicrosoftGraphCallRecordsSession> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCallRecordsSession> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
@@ -40,8 +34,14 @@ Update-MgCommunicationCallRecordSession -InputObject <ICloudCommunicationsIdenti
  [-AdditionalProperties <Hashtable>] [-Callee <IMicrosoftGraphCallRecordsEndpoint>]
  [-Caller <IMicrosoftGraphCallRecordsEndpoint>] [-EndDateTime <DateTime>]
  [-FailureInfo <IMicrosoftGraphCallRecordsFailureInfo>] [-Id <String>] [-Modalities <String[]>]
- [-Segments <IMicrosoftGraphCallRecordsSegment[]>] [-StartDateTime <DateTime>] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-Segments <IMicrosoftGraphCallRecordsSegment[]>] [-StartDateTime <DateTime>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity1
+```
+Update-MgCommunicationCallRecordSession -InputObject <ICloudCommunicationsIdentity>
+ -BodyParameter <IMicrosoftGraphCallRecordsSession> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -55,7 +55,7 @@ Update the navigation property sessions in communications
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -71,7 +71,7 @@ session
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallRecordsSession
+Type: IMicrosoftGraphCallRecordsSession
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -87,7 +87,7 @@ endpoint
 To construct, please use Get-Help -Online and see NOTES section for CALLEE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallRecordsEndpoint
+Type: IMicrosoftGraphCallRecordsEndpoint
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -103,7 +103,7 @@ endpoint
 To construct, please use Get-Help -Online and see NOTES section for CALLER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallRecordsEndpoint
+Type: IMicrosoftGraphCallRecordsEndpoint
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -118,8 +118,8 @@ Accept wildcard characters: False
 key: id of callRecord
 
 ```yaml
-Type: System.String
-Parameter Sets: Update1, UpdateExpanded1
+Type: String
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -135,7 +135,7 @@ The DateTimeOffset type represents date and time information using ISO 8601 form
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -151,7 +151,7 @@ failureInfo
 To construct, please use Get-Help -Online and see NOTES section for FAILUREINFO properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallRecordsFailureInfo
+Type: IMicrosoftGraphCallRecordsFailureInfo
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -182,8 +182,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-Parameter Sets: UpdateViaIdentity1, UpdateViaIdentityExpanded1
+Type: ICloudCommunicationsIdentity
+Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -198,7 +198,7 @@ List of modalities present in the session.
 Possible values are: unknown, audio, video, videoBasedScreenSharing, data, screenSharing, unknownFutureValue.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -213,7 +213,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -231,7 +231,7 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for SEGMENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallRecordsSegment[]
+Type: IMicrosoftGraphCallRecordsSegment[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -246,8 +246,8 @@ Accept wildcard characters: False
 key: id of session
 
 ```yaml
-Type: System.String
-Parameter Sets: Update1, UpdateExpanded1
+Type: String
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -263,7 +263,7 @@ The DateTimeOffset type represents date and time information using ISO 8601 form
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -278,7 +278,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -294,7 +294,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -311,13 +311,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallRecordsSession
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -576,3 +573,4 @@ SEGMENTS <IMicrosoftGraphCallRecordsSegment[]>: The list of segments involved in
 
 ## RELATED LINKS
 
+## RELATED LINKS

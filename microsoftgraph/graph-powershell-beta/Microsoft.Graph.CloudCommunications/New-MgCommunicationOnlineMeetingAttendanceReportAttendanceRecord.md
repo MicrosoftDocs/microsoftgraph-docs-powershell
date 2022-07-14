@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationonlinemeetingattendancereportattendancerecord
 schema: 2.0.0
@@ -17,20 +17,7 @@ Create new navigation property to attendanceRecords for communications
 New-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord -OnlineMeetingId <String>
  [-AdditionalProperties <Hashtable>] [-AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]
  [-EmailAddress <String>] [-Id <String>] [-Identity <IMicrosoftGraphIdentity>] [-RegistrantId <String>]
- [-Role <String>] [-TotalAttendanceInSeconds <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### Create1
-```
-New-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord -MeetingAttendanceReportId <String>
- -OnlineMeetingId <String> -BodyParameter <IMicrosoftGraphAttendanceRecord1> [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### Create2
-```
-New-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord -OnlineMeetingId <String>
- -BodyParameter <IMicrosoftGraphAttendanceRecord1> [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Role <String>] [-TotalAttendanceInSeconds <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateExpanded1
@@ -39,27 +26,20 @@ New-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord -MeetingAttenda
  -OnlineMeetingId <String> [-AdditionalProperties <Hashtable>]
  [-AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>] [-EmailAddress <String>] [-Id <String>]
  [-Identity <IMicrosoftGraphIdentity>] [-RegistrantId <String>] [-Role <String>]
- [-TotalAttendanceInSeconds <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-TotalAttendanceInSeconds <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentity1
+### Create1
 ```
-New-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <IMicrosoftGraphAttendanceRecord1> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity2
-```
-New-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <IMicrosoftGraphAttendanceRecord1> [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord -MeetingAttendanceReportId <String>
+ -OnlineMeetingId <String> -BodyParameter <IMicrosoftGraphAttendanceRecord1> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded1
+### Create2
 ```
-New-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord -InputObject <ICloudCommunicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]
- [-EmailAddress <String>] [-Id <String>] [-Identity <IMicrosoftGraphIdentity>] [-RegistrantId <String>]
- [-Role <String>] [-TotalAttendanceInSeconds <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord -OnlineMeetingId <String>
+ -BodyParameter <IMicrosoftGraphAttendanceRecord1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded2
@@ -67,7 +47,27 @@ New-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord -InputObject <I
 New-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord -InputObject <ICloudCommunicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]
  [-EmailAddress <String>] [-Id <String>] [-Identity <IMicrosoftGraphIdentity>] [-RegistrantId <String>]
- [-Role <String>] [-TotalAttendanceInSeconds <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Role <String>] [-TotalAttendanceInSeconds <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded1
+```
+New-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord -InputObject <ICloudCommunicationsIdentity>
+ [-AdditionalProperties <Hashtable>] [-AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]
+ [-EmailAddress <String>] [-Id <String>] [-Identity <IMicrosoftGraphIdentity>] [-RegistrantId <String>]
+ [-Role <String>] [-TotalAttendanceInSeconds <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity2
+```
+New-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord -InputObject <ICloudCommunicationsIdentity>
+ -BodyParameter <IMicrosoftGraphAttendanceRecord1> [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity1
+```
+New-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord -InputObject <ICloudCommunicationsIdentity>
+ -BodyParameter <IMicrosoftGraphAttendanceRecord1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -81,8 +81,8 @@ Create new navigation property to attendanceRecords for communications
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: CreateExpanded1, CreateExpanded2, CreateViaIdentityExpanded1, CreateViaIdentityExpanded2
+Type: Hashtable
+Parameter Sets: CreateExpanded2, CreateExpanded1, CreateViaIdentityExpanded2, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -97,8 +97,8 @@ List of time periods between joining and leaving a meeting.
 To construct, please use Get-Help -Online and see NOTES section for ATTENDANCEINTERVALS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttendanceInterval[]
-Parameter Sets: CreateExpanded1, CreateExpanded2, CreateViaIdentityExpanded1, CreateViaIdentityExpanded2
+Type: IMicrosoftGraphAttendanceInterval[]
+Parameter Sets: CreateExpanded2, CreateExpanded1, CreateViaIdentityExpanded2, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -113,8 +113,8 @@ attendanceRecord
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttendanceRecord1
-Parameter Sets: Create1, Create2, CreateViaIdentity1, CreateViaIdentity2
+Type: IMicrosoftGraphAttendanceRecord1
+Parameter Sets: Create1, Create2, CreateViaIdentity2, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -128,8 +128,8 @@ Accept wildcard characters: False
 Email address of the user associated with this atttendance record.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1, CreateExpanded2, CreateViaIdentityExpanded1, CreateViaIdentityExpanded2
+Type: String
+Parameter Sets: CreateExpanded2, CreateExpanded1, CreateViaIdentityExpanded2, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -143,8 +143,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1, CreateExpanded2, CreateViaIdentityExpanded1, CreateViaIdentityExpanded2
+Type: String
+Parameter Sets: CreateExpanded2, CreateExpanded1, CreateViaIdentityExpanded2, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -159,8 +159,8 @@ identity
 To construct, please use Get-Help -Online and see NOTES section for IDENTITY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentity
-Parameter Sets: CreateExpanded1, CreateExpanded2, CreateViaIdentityExpanded1, CreateViaIdentityExpanded2
+Type: IMicrosoftGraphIdentity
+Parameter Sets: CreateExpanded2, CreateExpanded1, CreateViaIdentityExpanded2, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -175,8 +175,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-Parameter Sets: CreateViaIdentity1, CreateViaIdentity2, CreateViaIdentityExpanded1, CreateViaIdentityExpanded2
+Type: ICloudCommunicationsIdentity
+Parameter Sets: CreateViaIdentityExpanded2, CreateViaIdentityExpanded1, CreateViaIdentity2, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -190,8 +190,8 @@ Accept wildcard characters: False
 key: id of meetingAttendanceReport
 
 ```yaml
-Type: System.String
-Parameter Sets: Create1, CreateExpanded1
+Type: String
+Parameter Sets: CreateExpanded1, Create1
 Aliases:
 
 Required: True
@@ -205,8 +205,8 @@ Accept wildcard characters: False
 key: id of onlineMeeting
 
 ```yaml
-Type: System.String
-Parameter Sets: Create1, Create2, CreateExpanded1, CreateExpanded2
+Type: String
+Parameter Sets: CreateExpanded2, CreateExpanded1, Create1, Create2
 Aliases:
 
 Required: True
@@ -221,8 +221,8 @@ Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1, CreateExpanded2, CreateViaIdentityExpanded1, CreateViaIdentityExpanded2
+Type: String
+Parameter Sets: CreateExpanded2, CreateExpanded1, CreateViaIdentityExpanded2, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -237,8 +237,8 @@ Role of the attendee.
 Possible values are: None, Attendee, Presenter, and Organizer.
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1, CreateExpanded2, CreateViaIdentityExpanded1, CreateViaIdentityExpanded2
+Type: String
+Parameter Sets: CreateExpanded2, CreateExpanded1, CreateViaIdentityExpanded2, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -252,8 +252,8 @@ Accept wildcard characters: False
 Total duration of the attendances in seconds.
 
 ```yaml
-Type: System.Int32
-Parameter Sets: CreateExpanded1, CreateExpanded2, CreateViaIdentityExpanded1, CreateViaIdentityExpanded2
+Type: Int32
+Parameter Sets: CreateExpanded2, CreateExpanded1, CreateViaIdentityExpanded2, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -267,7 +267,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -283,7 +283,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -300,13 +300,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttendanceRecord1
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttendanceRecord1
-
 ## NOTES
 
 ALIASES
@@ -358,4 +355,3 @@ INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
