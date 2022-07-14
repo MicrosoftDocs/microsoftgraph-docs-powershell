@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/confirm-mguserauthenticationwindowhelloforbusinessmethoddevicememberobject
 schema: 2.0.0
@@ -16,7 +16,7 @@ Invoke action checkMemberObjects
 ```
 Confirm-MgUserAuthenticationWindowHelloForBusinessMethodDeviceMemberObject -UserId <String>
  -WindowsHelloForBusinessAuthenticationMethodId <String> [-AdditionalProperties <Hashtable>] [-Ids <String[]>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Check1
@@ -24,22 +24,20 @@ Confirm-MgUserAuthenticationWindowHelloForBusinessMethodDeviceMemberObject -User
 Confirm-MgUserAuthenticationWindowHelloForBusinessMethodDeviceMemberObject -UserId <String>
  -WindowsHelloForBusinessAuthenticationMethodId <String>
  -BodyParameter <IPaths18TgfjqUsersUserIdAuthenticationWindowshelloforbusinessmethodsWindowshelloforbusinessauthenticationmethodIdDeviceMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CheckViaIdentity1
-```
-Confirm-MgUserAuthenticationWindowHelloForBusinessMethodDeviceMemberObject
- -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPaths18TgfjqUsersUserIdAuthenticationWindowshelloforbusinessmethodsWindowshelloforbusinessauthenticationmethodIdDeviceMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CheckViaIdentityExpanded1
 ```
-Confirm-MgUserAuthenticationWindowHelloForBusinessMethodDeviceMemberObject
- -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Confirm-MgUserAuthenticationWindowHelloForBusinessMethodDeviceMemberObject -InputObject <IUsersActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CheckViaIdentity1
+```
+Confirm-MgUserAuthenticationWindowHelloForBusinessMethodDeviceMemberObject -InputObject <IUsersActionsIdentity>
+ -BodyParameter <IPaths18TgfjqUsersUserIdAuthenticationWindowshelloforbusinessmethodsWindowshelloforbusinessauthenticationmethodIdDeviceMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,7 +51,7 @@ Invoke action checkMemberObjects
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CheckExpanded1, CheckViaIdentityExpanded1
 Aliases:
 
@@ -69,7 +67,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths18TgfjqUsersUserIdAuthenticationWindowshelloforbusinessmethodsWindowshelloforbusinessauthenticationmethodIdDeviceMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema
+Type: IPaths18TgfjqUsersUserIdAuthenticationWindowshelloforbusinessmethodsWindowshelloforbusinessauthenticationmethodIdDeviceMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Check1, CheckViaIdentity1
 Aliases:
 
@@ -84,7 +82,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: CheckExpanded1, CheckViaIdentityExpanded1
 Aliases:
 
@@ -100,8 +98,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-Parameter Sets: CheckViaIdentity1, CheckViaIdentityExpanded1
+Type: IUsersActionsIdentity
+Parameter Sets: CheckViaIdentityExpanded1, CheckViaIdentity1
 Aliases:
 
 Required: True
@@ -115,8 +113,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Check1, CheckExpanded1
+Type: String
+Parameter Sets: CheckExpanded1, Check1
 Aliases:
 
 Required: True
@@ -130,8 +128,8 @@ Accept wildcard characters: False
 key: id of windowsHelloForBusinessAuthenticationMethod
 
 ```yaml
-Type: System.String
-Parameter Sets: Check1, CheckExpanded1
+Type: String
+Parameter Sets: CheckExpanded1, Check1
 Aliases:
 
 Required: True
@@ -145,7 +143,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -161,7 +159,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -178,13 +176,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths18TgfjqUsersUserIdAuthenticationWindowshelloforbusinessmethodsWindowshelloforbusinessauthenticationmethodIdDeviceMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### System.String
-
 ## NOTES
 
 ALIASES
@@ -246,4 +241,3 @@ INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-
