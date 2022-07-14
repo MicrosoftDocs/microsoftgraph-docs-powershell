@@ -1,39 +1,57 @@
-﻿---
+---
 external help file: Microsoft.Graph.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.CrossDeviceExperiences
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences/remove-mguseractivity
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences/remove-mguserdeviceusagerights
 schema: 2.0.0
 ---
 
-# Remove-MgUserActivity
+# Remove-MgUserDeviceUsageRights
 
 ## SYNOPSIS
-The user's activities across devices.
-Read-only.
-Nullable.
+Delete navigation property usageRights for users
 
 ## SYNTAX
 
 ### Delete (Default)
 ```
-Remove-MgUserActivity -UserActivityId <String> -UserId <String> [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Remove-MgUserDeviceUsageRights -DeviceId <String> -UsageRightId <String> -UserId <String> [-IfMatch <String>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgUserActivity -InputObject <ICrossDeviceExperiencesIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Remove-MgUserDeviceUsageRights -InputObject <ICrossDeviceExperiencesIdentity> [-IfMatch <String>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The user's activities across devices.
-Read-only.
-Nullable.
+Delete navigation property usageRights for users
 
 ## EXAMPLES
 
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
+
 ## PARAMETERS
+
+### -DeviceId
+key: id of device
+
+```yaml
+Type: String
+Parameter Sets: Delete
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -IfMatch
 ETag
@@ -76,13 +94,13 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -UserActivityId
-key: id of userActivity
+### -UsageRightId
+key: id of usageRight
 
 ```yaml
 Type: String
@@ -152,18 +170,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
-
-ALIASES
-
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
-
-
-INPUTOBJECT <ICrossDeviceExperiencesIdentity>: Identity Parameter
-  - `[ActivityHistoryItemId <String>]`: key: id of activityHistoryItem
-  - `[DeviceId <String>]`: key: id of device
-  - `[UserActivityId <String>]`: key: id of userActivity
-  - `[UserId <String>]`: key: id of user
+Please use Get-Help -Online.
 
 ## RELATED LINKS
+
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences/remove-mguserdeviceusagerights](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences/remove-mguserdeviceusagerights)
+

@@ -1,42 +1,91 @@
-﻿---
+---
 external help file: Microsoft.Graph.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.CrossDeviceExperiences
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences/remove-mguserdevice
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences/new-mguserdeviceextension
 schema: 2.0.0
 ---
 
-# Remove-MgUserDevice
+# New-MgUserDeviceExtension
 
 ## SYNOPSIS
-Delete navigation property devices for users
+Create new navigation property to extensions for users
 
 ## SYNTAX
 
-### Delete (Default)
+### CreateExpanded (Default)
 ```
-Remove-MgUserDevice -DeviceId <String> -UserId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+New-MgUserDeviceExtension -DeviceId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
+ [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Create
+```
+New-MgUserDeviceExtension -DeviceId <String> -UserId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### DeleteViaIdentity
+### CreateViaIdentityExpanded
 ```
-Remove-MgUserDevice -InputObject <ICrossDeviceExperiencesIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
+New-MgUserDeviceExtension -InputObject <ICrossDeviceExperiencesIdentity> [-AdditionalProperties <Hashtable>]
+ [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgUserDeviceExtension -InputObject <ICrossDeviceExperiencesIdentity> -BodyParameter <Hashtable> [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete navigation property devices for users
+Create new navigation property to extensions for users
 
 ## EXAMPLES
 
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
+
 ## PARAMETERS
+
+### -AdditionalProperties
+Additional Parameters
+
+```yaml
+Type: Hashtable
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -BodyParameter
+extension
+
+```yaml
+Type: Hashtable
+Parameter Sets: Create, CreateViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
 
 ### -DeviceId
 key: id of device
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -46,12 +95,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -IfMatch
-ETag
+### -Id
+.
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -67,7 +116,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ICrossDeviceExperiencesIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -77,27 +126,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -UserId
 key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -144,22 +178,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICrossDeviceExperiencesIdentity
+### System.Collections.Hashtable
 ## OUTPUTS
 
-### System.Boolean
+### System.String
 ## NOTES
-
-ALIASES
-
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
-
-
-INPUTOBJECT <ICrossDeviceExperiencesIdentity>: Identity Parameter
-  - `[ActivityHistoryItemId <String>]`: key: id of activityHistoryItem
-  - `[DeviceId <String>]`: key: id of device
-  - `[UserActivityId <String>]`: key: id of userActivity
-  - `[UserId <String>]`: key: id of user
+Please use Get-Help -Online.
 
 ## RELATED LINKS
+
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences/new-mguserdeviceextension](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences/new-mguserdeviceextension)
+

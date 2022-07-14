@@ -1,40 +1,34 @@
-﻿---
+---
 external help file: Microsoft.Graph.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.CrossDeviceExperiences
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences/get-mguserdevice
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences/get-mguserdeviceregisteredownerbyref
 schema: 2.0.0
 ---
 
-# Get-MgUserDevice
+# Get-MgUserDeviceRegisteredOwnerByRef
 
 ## SYNOPSIS
-Get devices from users
+Get ref of registeredOwners from users
 
 ## SYNTAX
 
-### List (Default)
 ```
-Get-MgUserDevice -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
-```
-
-### Get
-```
-Get-MgUserDevice -DeviceId <String> -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgUserDeviceRegisteredOwnerByRef -DeviceId <String> -UserId <String> [-Filter <String>] [-Search <String>]
+ [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
  [<CommonParameters>]
 ```
 
-### GetViaIdentity
-```
-Get-MgUserDevice -InputObject <ICrossDeviceExperiencesIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
-```
-
 ## DESCRIPTION
-Get devices from users
+Get ref of registeredOwners from users
 
 ## EXAMPLES
+
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -43,12 +37,12 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List
+Parameter Sets: (All)
 Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -59,7 +53,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: (All)
 Aliases: CV
 
 Required: False
@@ -74,25 +68,10 @@ key: id of device
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: (All)
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ExpandProperty
-Expand related entities
-
-```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: Expand
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -104,29 +83,13 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: (All)
 Aliases:
 
 Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
-
-```yaml
-Type: ICrossDeviceExperiencesIdentity
-Parameter Sets: GetViaIdentity
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -135,27 +98,12 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: (All)
 Aliases:
 
 Required: False
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Property
-Select properties to be returned
-
-```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: Select
-
-Required: False
-Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -165,7 +113,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -180,7 +128,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List
+Parameter Sets: (All)
 Aliases: OrderBy
 
 Required: False
@@ -195,12 +143,12 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: (All)
 Aliases: Limit
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -210,7 +158,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: List, Get
+Parameter Sets: (All)
 Aliases:
 
 Required: True
@@ -225,12 +173,12 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: (All)
 Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -240,23 +188,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICrossDeviceExperiencesIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDevice
+### System.String
 ## NOTES
-
-ALIASES
-
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
-
-
-INPUTOBJECT <ICrossDeviceExperiencesIdentity>: Identity Parameter
-  - `[ActivityHistoryItemId <String>]`: key: id of activityHistoryItem
-  - `[DeviceId <String>]`: key: id of device
-  - `[UserActivityId <String>]`: key: id of userActivity
-  - `[UserId <String>]`: key: id of user
+Please use Get-Help -Online.
 
 ## RELATED LINKS
+
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences/get-mguserdeviceregisteredownerbyref](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences/get-mguserdeviceregisteredownerbyref)
+

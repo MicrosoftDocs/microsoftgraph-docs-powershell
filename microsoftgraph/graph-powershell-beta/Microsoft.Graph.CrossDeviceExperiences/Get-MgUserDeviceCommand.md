@@ -1,40 +1,47 @@
-﻿---
+---
 external help file: Microsoft.Graph.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.CrossDeviceExperiences
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences/get-mguserdevice
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences/get-mguserdevicecommand
 schema: 2.0.0
 ---
 
-# Get-MgUserDevice
+# Get-MgUserDeviceCommand
 
 ## SYNOPSIS
-Get devices from users
+Get commands from users
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgUserDevice -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+Get-MgUserDeviceCommand -DeviceId <String> -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
+ [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgUserDevice -DeviceId <String> -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgUserDeviceCommand -CommandId <String> -DeviceId <String> -UserId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgUserDevice -InputObject <ICrossDeviceExperiencesIdentity> [-ExpandProperty <String[]>]
+Get-MgUserDeviceCommand -InputObject <ICrossDeviceExperiencesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get devices from users
+Get commands from users
 
 ## EXAMPLES
+
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -47,6 +54,21 @@ Parameter Sets: List
 Aliases:
 
 Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CommandId
+key: id of command
+
+```yaml
+Type: String
+Parameter Sets: Get
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -74,7 +96,7 @@ key: id of device
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: List, Get
 Aliases:
 
 Required: True
@@ -140,7 +162,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -200,7 +222,7 @@ Aliases: Limit
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -230,7 +252,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -243,20 +265,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.ICrossDeviceExperiencesIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDevice
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCommand
 ## NOTES
-
-ALIASES
-
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
-
-
-INPUTOBJECT <ICrossDeviceExperiencesIdentity>: Identity Parameter
-  - `[ActivityHistoryItemId <String>]`: key: id of activityHistoryItem
-  - `[DeviceId <String>]`: key: id of device
-  - `[UserActivityId <String>]`: key: id of userActivity
-  - `[UserId <String>]`: key: id of user
+Please use Get-Help -Online.
 
 ## RELATED LINKS
+
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences/get-mguserdevicecommand](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences/get-mguserdevicecommand)
+
