@@ -93,9 +93,6 @@ Retire a device
 ### [Invoke-MgScanDeviceManagementManagedDeviceWindowDefender](Invoke-MgScanDeviceManagementManagedDeviceWindowDefender.md)
 Invoke action windowsDefenderScan
 
-### [Invoke-MgScheduleDeviceManagementDeviceCompliancePolicyAction](Invoke-MgScheduleDeviceManagementDeviceCompliancePolicyAction.md)
-Invoke action scheduleActionsForRules
-
 ### [Invoke-MgUnassignDeviceManagementWindowAutopilotDeviceIdentityUserFromDevice](Invoke-MgUnassignDeviceManagementWindowAutopilotDeviceIdentityUserFromDevice.md)
 Unassigns the user from an Autopilot device.
 
