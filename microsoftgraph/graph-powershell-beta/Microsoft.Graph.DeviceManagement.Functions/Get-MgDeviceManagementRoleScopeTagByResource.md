@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementrolescopetagbyresource
 schema: 2.0.0
@@ -12,7 +12,7 @@ Invoke function getRoleScopeTagsByResource
 
 ## SYNTAX
 
-### Get1 (Default)
+### Get (Default)
 ```
 Get-MgDeviceManagementRoleScopeTagByResource -Resource <String> [<CommonParameters>]
 ```
@@ -35,7 +35,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementFunctionsIdentity
+Type: IDeviceManagementFunctionsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -50,8 +50,8 @@ Accept wildcard characters: False
 Usage: resource={resource}
 
 ```yaml
-Type: System.String
-Parameter Sets: Get1
+Type: String
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -67,11 +67,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementFunctionsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleScopeTag
-
 ## NOTES
 
 ALIASES
@@ -119,4 +117,3 @@ INPUTOBJECT <IDeviceManagementFunctionsIdentity>: Identity Parameter
   - `[Userid <String>]`: Usage: userid={userid}
 
 ## RELATED LINKS
-
