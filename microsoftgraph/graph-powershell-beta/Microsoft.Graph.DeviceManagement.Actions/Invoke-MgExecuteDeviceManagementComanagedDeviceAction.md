@@ -14,7 +14,7 @@ Invoke action executeAction
 
 ### ExecuteExpanded (Default)
 ```
-Invoke-MgExecuteDeviceManagementComanagedDeviceAction [-ActionName <String>]
+Invoke-MgExecuteDeviceManagementComanagedDeviceAction [-ActionName <ManagedDeviceRemoteAction>]
  [-AdditionalProperties <Hashtable>] [-CarrierUrl <String>] [-DeprovisionReason <String>]
  [-DeviceIds <String[]>] [-DeviceName <String>] [-KeepEnrollmentData] [-KeepUserData]
  [-NotificationBody <String>] [-NotificationTitle <String>] [-OrganizationalUnitPath <String>]
@@ -39,7 +39,7 @@ Invoke action executeAction
 managedDeviceRemoteAction
 
 ```yaml
-Type: String
+Type: ManagedDeviceRemoteAction
 Parameter Sets: ExecuteExpanded
 Aliases:
 

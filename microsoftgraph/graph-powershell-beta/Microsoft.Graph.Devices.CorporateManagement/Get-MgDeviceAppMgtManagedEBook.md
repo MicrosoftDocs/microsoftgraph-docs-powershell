@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppMgtManagedEBook
 
 ## SYNOPSIS
-The Managed eBook.
+Get managedEBooks from deviceAppManagement
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceAppMgtManagedEBook -InputObject <IDevicesCorporateManagementIdentity
 ```
 
 ## DESCRIPTION
-The Managed eBook.
+Get managedEBooks from deviceAppManagement
 
 ## EXAMPLES
 

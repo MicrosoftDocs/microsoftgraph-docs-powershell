@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mguserauthenticationfido2method
@@ -23,7 +23,7 @@ Update-MgUserAuthenticationFido2Method -Fido2AuthenticationMethodId <String> -Us
 ### Update
 ```
 Update-MgUserAuthenticationFido2Method -Fido2AuthenticationMethodId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphFido2AuthenticationMethod> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphFido2AuthenticationMethod1> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -38,7 +38,7 @@ Update-MgUserAuthenticationFido2Method -InputObject <IIdentitySignInsIdentity> [
 ### UpdateViaIdentity
 ```
 Update-MgUserAuthenticationFido2Method -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphFido2AuthenticationMethod> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphFido2AuthenticationMethod1> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -115,7 +115,7 @@ fido2AuthenticationMethod
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphFido2AuthenticationMethod
+Type: IMicrosoftGraphFido2AuthenticationMethod1
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -299,7 +299,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFido2AuthenticationMethod
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFido2AuthenticationMethod1
 ## OUTPUTS
 
 ### System.Boolean

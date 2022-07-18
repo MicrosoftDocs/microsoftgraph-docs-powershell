@@ -15,7 +15,8 @@ Invoke action setScheduledRetireState
 ### SetExpanded (Default)
 ```
 Set-MgDeviceManagementDeviceCompliancePolicyScheduledRetireState [-AdditionalProperties <Hashtable>]
- [-ManagedDeviceIds <String[]>] [-State <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ManagedDeviceIds <String[]>] [-State <ScheduledRetireState>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Set
@@ -97,7 +98,7 @@ Accept wildcard characters: False
 Cancel or confirm scheduled retire
 
 ```yaml
-Type: String
+Type: ScheduledRetireState
 Parameter Sets: SetExpanded
 Aliases:
 

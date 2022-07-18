@@ -8,15 +8,15 @@ schema: 2.0.0
 # Update-MgDeviceManagementWindowAutopilotSetting
 
 ## SYNOPSIS
-The Windows autopilot account settings.
+Update the navigation property windowsAutopilotSettings in deviceManagement
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgDeviceManagementWindowAutopilotSetting [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-LastManualSyncTriggerDateTime <DateTime>] [-LastSyncDateTime <DateTime>] [-SyncStatus <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LastManualSyncTriggerDateTime <DateTime>] [-LastSyncDateTime <DateTime>]
+ [-SyncStatus <WindowsAutopilotSyncStatus>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -26,7 +26,7 @@ Update-MgDeviceManagementWindowAutopilotSetting -BodyParameter <IMicrosoftGraphW
 ```
 
 ## DESCRIPTION
-The Windows autopilot account settings.
+Update the navigation property windowsAutopilotSettings in deviceManagement
 
 ## EXAMPLES
 
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 windowsAutopilotSyncStatus
 
 ```yaml
-Type: String
+Type: WindowsAutopilotSyncStatus
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -189,9 +189,9 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER <IMicrosoftGraphWindowsAutopilotSettings>: The windowsAutopilotSettings resource represents a Windows Autopilot Account to sync data with Windows device data sync service.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[LastManualSyncTriggerDateTime <DateTime?>]`: Last data sync date time with DDS service.
   - `[LastSyncDateTime <DateTime?>]`: Last data sync date time with DDS service.
-  - `[SyncStatus <String>]`: windowsAutopilotSyncStatus
+  - `[SyncStatus <WindowsAutopilotSyncStatus?>]`: windowsAutopilotSyncStatus
 
 ## RELATED LINKS

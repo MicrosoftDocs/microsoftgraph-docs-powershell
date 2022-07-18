@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgOrganization
 
 ## SYNOPSIS
-Get entity from organization by key
+Get organization
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgOrganization [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter 
  [<CommonParameters>]
 ```
 
-### Get2
+### Get1
 ```
 Get-MgOrganization -OrganizationId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
@@ -32,7 +32,7 @@ Get-MgOrganization -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandP
 ```
 
 ## DESCRIPTION
-Get entity from organization by key
+Get organization
 
 ## EXAMPLES
 
@@ -120,7 +120,7 @@ key: id of organization
 
 ```yaml
 Type: String
-Parameter Sets: Get2
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -228,7 +228,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOrganization
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOrganization1
 ## NOTES
 
 ALIASES
@@ -260,6 +260,7 @@ INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   - `[InternalDomainFederationId <String>]`: key: id of internalDomainFederation
   - `[OrgContactId <String>]`: key: id of orgContact
   - `[OrganizationId <String>]`: key: id of organization
+  - `[OrganizationalBrandingLocalizationId <String>]`: key: id of organizationalBrandingLocalization
   - `[OutboundSharedUserProfileUserId <String>]`: key: userId of outboundSharedUserProfile
   - `[ProfileCardPropertyId <String>]`: key: id of profileCardProperty
   - `[RecommendationId <String>]`: key: id of recommendation

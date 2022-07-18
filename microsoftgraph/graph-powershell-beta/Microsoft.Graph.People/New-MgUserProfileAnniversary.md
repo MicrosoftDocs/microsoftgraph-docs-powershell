@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserProfileAnniversary
 
 ## SYNOPSIS
-Represents the details of meaningful dates associated with a person.
+Create new navigation property to anniversaries for users
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ New-MgUserProfileAnniversary -InputObject <IPeopleIdentity> -BodyParameter <IMic
 ```
 
 ## DESCRIPTION
-Represents the details of meaningful dates associated with a person.
+Create new navigation property to anniversaries for users
 
 ## EXAMPLES
 
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -367,7 +367,7 @@ BODYPARAMETER <IMicrosoftGraphPersonAnnualEvent>: personAnnualEvent
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String[]>]`: 
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Date <DateTime?>]`: 
   - `[DisplayName <String>]`: 
   - `[Type <String>]`: personAnnualEventType

@@ -15,8 +15,8 @@ Invoke action overrideComplianceState
 ### OverrideExpanded (Default)
 ```
 Invoke-MgOverrideDeviceManagementManagedDeviceComplianceState -ManagedDeviceId <String>
- [-AdditionalProperties <Hashtable>] [-ComplianceState <String>] [-RemediationUrl <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-ComplianceState <AdministratorConfiguredDeviceComplianceState>]
+ [-RemediationUrl <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Override
@@ -29,8 +29,8 @@ Invoke-MgOverrideDeviceManagementManagedDeviceComplianceState -ManagedDeviceId <
 ### OverrideViaIdentityExpanded
 ```
 Invoke-MgOverrideDeviceManagementManagedDeviceComplianceState -InputObject <IDeviceManagementActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-ComplianceState <String>] [-RemediationUrl <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-ComplianceState <AdministratorConfiguredDeviceComplianceState>]
+ [-RemediationUrl <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### OverrideViaIdentity
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 Administrator configured device compliance state Enum
 
 ```yaml
-Type: String
+Type: AdministratorConfiguredDeviceComplianceState
 Parameter Sets: OverrideExpanded, OverrideViaIdentityExpanded
 Aliases:
 

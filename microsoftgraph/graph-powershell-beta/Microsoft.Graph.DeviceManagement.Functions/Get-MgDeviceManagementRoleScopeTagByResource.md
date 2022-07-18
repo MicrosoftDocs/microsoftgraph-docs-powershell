@@ -12,7 +12,7 @@ Invoke function getRoleScopeTagsByResource
 
 ## SYNTAX
 
-### Get1 (Default)
+### Get (Default)
 ```
 Get-MgDeviceManagementRoleScopeTagByResource -Resource <String> [<CommonParameters>]
 ```
@@ -51,7 +51,7 @@ Usage: resource={resource}
 
 ```yaml
 Type: String
-Parameter Sets: Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True

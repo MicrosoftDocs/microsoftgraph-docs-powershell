@@ -8,8 +8,7 @@ schema: 2.0.0
 # Remove-MgWindowsUpdatesUpdatableAsset
 
 ## SYNOPSIS
-Assets registered with the deployment service that can receive updates.
-Read-only.
+Delete navigation property updatableAssets for admin
 
 ## SYNTAX
 
@@ -26,8 +25,7 @@ Remove-MgWindowsUpdatesUpdatableAsset -InputObject <IWindowsUpdatesIdentity> [-I
 ```
 
 ## DESCRIPTION
-Assets registered with the deployment service that can receive updates.
-Read-only.
+Delete navigation property updatableAssets for admin
 
 ## EXAMPLES
 

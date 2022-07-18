@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Financials
 Module Guid: 7f9377ef-5143-4f79-a893-0e014640be2f
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.financials
@@ -431,9 +431,6 @@ Get taxAreas from financials
 ### [Get-MgFinancialCompanyTaxGroup](Get-MgFinancialCompanyTaxGroup.md)
 Get taxGroups from financials
 
-### [Get-MgFinancialCompanyUnit](Get-MgFinancialCompanyUnit.md)
-Get unitsOfMeasure from financials
-
 ### [Get-MgFinancialCompanyVendor](Get-MgFinancialCompanyVendor.md)
 Get vendors from financials
 
@@ -623,26 +620,11 @@ Create new navigation property to taxAreas for financials
 ### [New-MgFinancialCompanyTaxGroup](New-MgFinancialCompanyTaxGroup.md)
 Create new navigation property to taxGroups for financials
 
-### [New-MgFinancialCompanyUnit](New-MgFinancialCompanyUnit.md)
-Create new navigation property to unitsOfMeasure for financials
-
 ### [New-MgFinancialCompanyVendor](New-MgFinancialCompanyVendor.md)
 Create new navigation property to vendors for financials
 
 ### [New-MgFinancialCompanyVendorPicture](New-MgFinancialCompanyVendorPicture.md)
 Create new navigation property to picture for financials
-
-### [Remove-MgFinancialCompany](Remove-MgFinancialCompany.md)
-Delete navigation property companies for financials
-
-### [Remove-MgFinancialCompanyAccount](Remove-MgFinancialCompanyAccount.md)
-Delete navigation property accounts for financials
-
-### [Remove-MgFinancialCompanyAgedAccountPayable](Remove-MgFinancialCompanyAgedAccountPayable.md)
-Delete navigation property agedAccountsPayable for financials
-
-### [Remove-MgFinancialCompanyAgedAccountReceivable](Remove-MgFinancialCompanyAgedAccountReceivable.md)
-Delete navigation property agedAccountsReceivable for financials
 
 ### [Remove-MgFinancialCompanyCountryRegion](Remove-MgFinancialCompanyCountryRegion.md)
 Delete navigation property countriesRegions for financials
@@ -673,9 +655,6 @@ Delete navigation property shipmentMethod for financials
 
 ### [Remove-MgFinancialCompanyCustomerPaymentJournal](Remove-MgFinancialCompanyCustomerPaymentJournal.md)
 Delete navigation property customerPaymentJournals for financials
-
-### [Remove-MgFinancialCompanyCustomerPaymentJournalAccount](Remove-MgFinancialCompanyCustomerPaymentJournalAccount.md)
-Delete navigation property account for financials
 
 ### [Remove-MgFinancialCompanyCustomerPaymentJournalCustomerPayment](Remove-MgFinancialCompanyCustomerPaymentJournalCustomerPayment.md)
 Delete navigation property customerPayments for financials
@@ -710,26 +689,11 @@ Delete navigation property picture for financials
 ### [Remove-MgFinancialCompanyCustomerShipmentMethod](Remove-MgFinancialCompanyCustomerShipmentMethod.md)
 Delete navigation property shipmentMethod for financials
 
-### [Remove-MgFinancialCompanyDimension](Remove-MgFinancialCompanyDimension.md)
-Delete navigation property dimensions for financials
-
-### [Remove-MgFinancialCompanyDimensionValue](Remove-MgFinancialCompanyDimensionValue.md)
-Delete navigation property dimensionValues for financials
-
 ### [Remove-MgFinancialCompanyEmployee](Remove-MgFinancialCompanyEmployee.md)
 Delete navigation property employees for financials
 
 ### [Remove-MgFinancialCompanyEmployeePicture](Remove-MgFinancialCompanyEmployeePicture.md)
 Delete navigation property picture for financials
-
-### [Remove-MgFinancialCompanyGeneralLedgerEntry](Remove-MgFinancialCompanyGeneralLedgerEntry.md)
-Delete navigation property generalLedgerEntries for financials
-
-### [Remove-MgFinancialCompanyGeneralLedgerEntryAccount](Remove-MgFinancialCompanyGeneralLedgerEntryAccount.md)
-Delete navigation property account for financials
-
-### [Remove-MgFinancialCompanyInformation](Remove-MgFinancialCompanyInformation.md)
-Delete navigation property companyInformation for financials
 
 ### [Remove-MgFinancialCompanyItem](Remove-MgFinancialCompanyItem.md)
 Delete navigation property items for financials
@@ -743,14 +707,8 @@ Delete navigation property picture for financials
 ### [Remove-MgFinancialCompanyJournal](Remove-MgFinancialCompanyJournal.md)
 Delete navigation property journals for financials
 
-### [Remove-MgFinancialCompanyJournalAccount](Remove-MgFinancialCompanyJournalAccount.md)
-Delete navigation property account for financials
-
 ### [Remove-MgFinancialCompanyJournalLine](Remove-MgFinancialCompanyJournalLine.md)
 Delete navigation property journalLines for financials
-
-### [Remove-MgFinancialCompanyJournalLineAccount](Remove-MgFinancialCompanyJournalLineAccount.md)
-Delete navigation property account for financials
 
 ### [Remove-MgFinancialCompanyPaymentMethod](Remove-MgFinancialCompanyPaymentMethod.md)
 Delete navigation property paymentMethods for financials
@@ -761,17 +719,8 @@ Delete navigation property paymentTerms for financials
 ### [Remove-MgFinancialCompanyPicture](Remove-MgFinancialCompanyPicture.md)
 Delete navigation property picture for financials
 
-### [Remove-MgFinancialCompanyPurchaseInvoice](Remove-MgFinancialCompanyPurchaseInvoice.md)
-Delete navigation property purchaseInvoices for financials
-
 ### [Remove-MgFinancialCompanyPurchaseInvoiceCurrency](Remove-MgFinancialCompanyPurchaseInvoiceCurrency.md)
 Delete navigation property currency for financials
-
-### [Remove-MgFinancialCompanyPurchaseInvoiceLine](Remove-MgFinancialCompanyPurchaseInvoiceLine.md)
-Delete navigation property purchaseInvoiceLines for financials
-
-### [Remove-MgFinancialCompanyPurchaseInvoiceLineAccount](Remove-MgFinancialCompanyPurchaseInvoiceLineAccount.md)
-Delete navigation property account for financials
 
 ### [Remove-MgFinancialCompanyPurchaseInvoiceLineItem](Remove-MgFinancialCompanyPurchaseInvoiceLineItem.md)
 Delete navigation property item for financials
@@ -797,9 +746,6 @@ Delete navigation property paymentTerm for financials
 ### [Remove-MgFinancialCompanyPurchaseInvoiceVendorPicture](Remove-MgFinancialCompanyPurchaseInvoiceVendorPicture.md)
 Delete navigation property picture for financials
 
-### [Remove-MgFinancialCompanySaleCreditMemo](Remove-MgFinancialCompanySaleCreditMemo.md)
-Delete navigation property salesCreditMemos for financials
-
 ### [Remove-MgFinancialCompanySaleCreditMemoCurrency](Remove-MgFinancialCompanySaleCreditMemoCurrency.md)
 Delete navigation property currency for financials
 
@@ -821,12 +767,6 @@ Delete navigation property picture for financials
 ### [Remove-MgFinancialCompanySaleCreditMemoCustomerShipmentMethod](Remove-MgFinancialCompanySaleCreditMemoCustomerShipmentMethod.md)
 Delete navigation property shipmentMethod for financials
 
-### [Remove-MgFinancialCompanySaleCreditMemoLine](Remove-MgFinancialCompanySaleCreditMemoLine.md)
-Delete navigation property salesCreditMemoLines for financials
-
-### [Remove-MgFinancialCompanySaleCreditMemoLineAccount](Remove-MgFinancialCompanySaleCreditMemoLineAccount.md)
-Delete navigation property account for financials
-
 ### [Remove-MgFinancialCompanySaleCreditMemoLineItem](Remove-MgFinancialCompanySaleCreditMemoLineItem.md)
 Delete navigation property item for financials
 
@@ -839,12 +779,6 @@ Delete navigation property picture for financials
 ### [Remove-MgFinancialCompanySaleCreditMemoPaymentTerm](Remove-MgFinancialCompanySaleCreditMemoPaymentTerm.md)
 Delete navigation property paymentTerm for financials
 
-### [Remove-MgFinancialCompanySaleCreditMemoSaleCreditMemoLine](Remove-MgFinancialCompanySaleCreditMemoSaleCreditMemoLine.md)
-Delete navigation property salesCreditMemoLines for financials
-
-### [Remove-MgFinancialCompanySaleCreditMemoSaleCreditMemoLineAccount](Remove-MgFinancialCompanySaleCreditMemoSaleCreditMemoLineAccount.md)
-Delete navigation property account for financials
-
 ### [Remove-MgFinancialCompanySaleCreditMemoSaleCreditMemoLineItem](Remove-MgFinancialCompanySaleCreditMemoSaleCreditMemoLineItem.md)
 Delete navigation property item for financials
 
@@ -853,9 +787,6 @@ Delete navigation property itemCategory for financials
 
 ### [Remove-MgFinancialCompanySaleCreditMemoSaleCreditMemoLineItemPicture](Remove-MgFinancialCompanySaleCreditMemoSaleCreditMemoLineItemPicture.md)
 Delete navigation property picture for financials
-
-### [Remove-MgFinancialCompanySaleInvoice](Remove-MgFinancialCompanySaleInvoice.md)
-Delete navigation property salesInvoices for financials
 
 ### [Remove-MgFinancialCompanySaleInvoiceCurrency](Remove-MgFinancialCompanySaleInvoiceCurrency.md)
 Delete navigation property currency for financials
@@ -878,12 +809,6 @@ Delete navigation property picture for financials
 ### [Remove-MgFinancialCompanySaleInvoiceCustomerShipmentMethod](Remove-MgFinancialCompanySaleInvoiceCustomerShipmentMethod.md)
 Delete navigation property shipmentMethod for financials
 
-### [Remove-MgFinancialCompanySaleInvoiceLine](Remove-MgFinancialCompanySaleInvoiceLine.md)
-Delete navigation property salesInvoiceLines for financials
-
-### [Remove-MgFinancialCompanySaleInvoiceLineAccount](Remove-MgFinancialCompanySaleInvoiceLineAccount.md)
-Delete navigation property account for financials
-
 ### [Remove-MgFinancialCompanySaleInvoiceLineItem](Remove-MgFinancialCompanySaleInvoiceLineItem.md)
 Delete navigation property item for financials
 
@@ -898,9 +823,6 @@ Delete navigation property paymentTerm for financials
 
 ### [Remove-MgFinancialCompanySaleInvoiceShipmentMethod](Remove-MgFinancialCompanySaleInvoiceShipmentMethod.md)
 Delete navigation property shipmentMethod for financials
-
-### [Remove-MgFinancialCompanySaleOrder](Remove-MgFinancialCompanySaleOrder.md)
-Delete navigation property salesOrders for financials
 
 ### [Remove-MgFinancialCompanySaleOrderCurrency](Remove-MgFinancialCompanySaleOrderCurrency.md)
 Delete navigation property currency for financials
@@ -923,12 +845,6 @@ Delete navigation property picture for financials
 ### [Remove-MgFinancialCompanySaleOrderCustomerShipmentMethod](Remove-MgFinancialCompanySaleOrderCustomerShipmentMethod.md)
 Delete navigation property shipmentMethod for financials
 
-### [Remove-MgFinancialCompanySaleOrderLine](Remove-MgFinancialCompanySaleOrderLine.md)
-Delete navigation property salesOrderLines for financials
-
-### [Remove-MgFinancialCompanySaleOrderLineAccount](Remove-MgFinancialCompanySaleOrderLineAccount.md)
-Delete navigation property account for financials
-
 ### [Remove-MgFinancialCompanySaleOrderLineItem](Remove-MgFinancialCompanySaleOrderLineItem.md)
 Delete navigation property item for financials
 
@@ -940,9 +856,6 @@ Delete navigation property picture for financials
 
 ### [Remove-MgFinancialCompanySaleOrderPaymentTerm](Remove-MgFinancialCompanySaleOrderPaymentTerm.md)
 Delete navigation property paymentTerm for financials
-
-### [Remove-MgFinancialCompanySaleQuote](Remove-MgFinancialCompanySaleQuote.md)
-Delete navigation property salesQuotes for financials
 
 ### [Remove-MgFinancialCompanySaleQuoteCurrency](Remove-MgFinancialCompanySaleQuoteCurrency.md)
 Delete navigation property currency for financials
@@ -964,12 +877,6 @@ Delete navigation property picture for financials
 
 ### [Remove-MgFinancialCompanySaleQuoteCustomerShipmentMethod](Remove-MgFinancialCompanySaleQuoteCustomerShipmentMethod.md)
 Delete navigation property shipmentMethod for financials
-
-### [Remove-MgFinancialCompanySaleQuoteLine](Remove-MgFinancialCompanySaleQuoteLine.md)
-Delete navigation property salesQuoteLines for financials
-
-### [Remove-MgFinancialCompanySaleQuoteLineAccount](Remove-MgFinancialCompanySaleQuoteLineAccount.md)
-Delete navigation property account for financials
 
 ### [Remove-MgFinancialCompanySaleQuoteLineItem](Remove-MgFinancialCompanySaleQuoteLineItem.md)
 Delete navigation property item for financials
@@ -994,9 +901,6 @@ Delete navigation property taxAreas for financials
 
 ### [Remove-MgFinancialCompanyTaxGroup](Remove-MgFinancialCompanyTaxGroup.md)
 Delete navigation property taxGroups for financials
-
-### [Remove-MgFinancialCompanyUnit](Remove-MgFinancialCompanyUnit.md)
-Delete navigation property unitsOfMeasure for financials
 
 ### [Remove-MgFinancialCompanyVendor](Remove-MgFinancialCompanyVendor.md)
 Delete navigation property vendors for financials
@@ -1085,18 +989,6 @@ Invoke action cancelAndSend
 ### [Update-MgFinancial](Update-MgFinancial.md)
 Update financials
 
-### [Update-MgFinancialCompany](Update-MgFinancialCompany.md)
-Update the navigation property companies in financials
-
-### [Update-MgFinancialCompanyAccount](Update-MgFinancialCompanyAccount.md)
-Update the navigation property accounts in financials
-
-### [Update-MgFinancialCompanyAgedAccountPayable](Update-MgFinancialCompanyAgedAccountPayable.md)
-Update the navigation property agedAccountsPayable in financials
-
-### [Update-MgFinancialCompanyAgedAccountReceivable](Update-MgFinancialCompanyAgedAccountReceivable.md)
-Update the navigation property agedAccountsReceivable in financials
-
 ### [Update-MgFinancialCompanyCountryRegion](Update-MgFinancialCompanyCountryRegion.md)
 Update the navigation property countriesRegions in financials
 
@@ -1163,20 +1055,11 @@ Update the navigation property picture in financials
 ### [Update-MgFinancialCompanyCustomerShipmentMethod](Update-MgFinancialCompanyCustomerShipmentMethod.md)
 Update the navigation property shipmentMethod in financials
 
-### [Update-MgFinancialCompanyDimension](Update-MgFinancialCompanyDimension.md)
-Update the navigation property dimensions in financials
-
-### [Update-MgFinancialCompanyDimensionValue](Update-MgFinancialCompanyDimensionValue.md)
-Update the navigation property dimensionValues in financials
-
 ### [Update-MgFinancialCompanyEmployee](Update-MgFinancialCompanyEmployee.md)
 Update the navigation property employees in financials
 
 ### [Update-MgFinancialCompanyEmployeePicture](Update-MgFinancialCompanyEmployeePicture.md)
 Update the navigation property picture in financials
-
-### [Update-MgFinancialCompanyGeneralLedgerEntry](Update-MgFinancialCompanyGeneralLedgerEntry.md)
-Update the navigation property generalLedgerEntries in financials
 
 ### [Update-MgFinancialCompanyGeneralLedgerEntryAccount](Update-MgFinancialCompanyGeneralLedgerEntryAccount.md)
 Update the navigation property account in financials
@@ -1447,9 +1330,6 @@ Update the navigation property taxAreas in financials
 
 ### [Update-MgFinancialCompanyTaxGroup](Update-MgFinancialCompanyTaxGroup.md)
 Update the navigation property taxGroups in financials
-
-### [Update-MgFinancialCompanyUnit](Update-MgFinancialCompanyUnit.md)
-Update the navigation property unitsOfMeasure in financials
 
 ### [Update-MgFinancialCompanyVendor](Update-MgFinancialCompanyVendor.md)
 Update the navigation property vendors in financials

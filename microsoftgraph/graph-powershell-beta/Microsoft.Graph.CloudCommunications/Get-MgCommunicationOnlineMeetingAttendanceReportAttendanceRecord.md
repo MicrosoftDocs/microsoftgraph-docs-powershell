@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord
 
 ## SYNOPSIS
-List of attendance records of an attendance report.
-Read-only.
+Get attendanceRecords from communications
 
 ## SYNTAX
 
@@ -54,8 +53,7 @@ Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord -InputObject <I
 ```
 
 ## DESCRIPTION
-List of attendance records of an attendance report.
-Read-only.
+Get attendanceRecords from communications
 
 ## EXAMPLES
 

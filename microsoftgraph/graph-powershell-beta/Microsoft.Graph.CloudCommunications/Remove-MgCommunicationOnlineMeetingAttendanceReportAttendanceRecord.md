@@ -8,8 +8,7 @@ schema: 2.0.0
 # Remove-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord
 
 ## SYNOPSIS
-List of attendance records of an attendance report.
-Read-only.
+Delete navigation property attendanceRecords for communications
 
 ## SYNTAX
 
@@ -39,8 +38,7 @@ Remove-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord -InputObject
 ```
 
 ## DESCRIPTION
-List of attendance records of an attendance report.
-Read-only.
+Delete navigation property attendanceRecords for communications
 
 ## EXAMPLES
 

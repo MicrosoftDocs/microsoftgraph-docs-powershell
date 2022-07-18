@@ -14,7 +14,8 @@ Invoke function getPlatformSupportedProperties
 
 ### Get (Default)
 ```
-Get-MgDeviceManagementAssignmentFilterPlatformSupportedProperty -Platform <String> [<CommonParameters>]
+Get-MgDeviceManagementAssignmentFilterPlatformSupportedProperty -Platform <DevicePlatformType>
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -50,7 +51,7 @@ Accept wildcard characters: False
 Usage: platform={platform}
 
 ```yaml
-Type: String
+Type: DevicePlatformType
 Parameter Sets: Get
 Aliases:
 

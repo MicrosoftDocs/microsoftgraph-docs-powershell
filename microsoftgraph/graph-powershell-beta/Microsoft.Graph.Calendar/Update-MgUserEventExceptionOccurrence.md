@@ -19,8 +19,8 @@ Update-MgUserEventExceptionOccurrence -EventId <String> -EventId1 <String> -User
  [-Attendees <IMicrosoftGraphAttendee[]>] [-Body <IMicrosoftGraphItemBody>] [-BodyPreview <String>]
  [-Calendar <IMicrosoftGraphCalendar1>] [-CancelledOccurrences <String[]>] [-Categories <String[]>]
  [-ChangeKey <String>] [-CreatedDateTime <DateTime>] [-End <IMicrosoftGraphDateTimeZone>]
- [-ExceptionOccurrences <IMicrosoftGraphEvent1[]>] [-Extensions <IMicrosoftGraphExtension[]>] [-HasAttachments]
- [-HideAttendees] [-Id <String>] [-Importance <String>] [-Instances <IMicrosoftGraphEvent1[]>] [-IsAllDay]
+ [-ExceptionOccurrences <IMicrosoftGraphEvent[]>] [-Extensions <IMicrosoftGraphExtension[]>] [-HasAttachments]
+ [-HideAttendees] [-Id <String>] [-Importance <String>] [-Instances <IMicrosoftGraphEvent[]>] [-IsAllDay]
  [-IsCancelled] [-IsDraft] [-IsOnlineMeeting] [-IsOrganizer] [-IsReminderOn] [-LastModifiedDateTime <DateTime>]
  [-Location <IMicrosoftGraphLocation1>] [-Locations <IMicrosoftGraphLocation1[]>]
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-OccurrenceId <String>]
@@ -37,7 +37,7 @@ Update-MgUserEventExceptionOccurrence -EventId <String> -EventId1 <String> -User
 ### Update
 ```
 Update-MgUserEventExceptionOccurrence -EventId <String> -EventId1 <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphEvent1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEvent> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -47,8 +47,8 @@ Update-MgUserEventExceptionOccurrence -InputObject <ICalendarIdentity> [-Additio
  [-Body <IMicrosoftGraphItemBody>] [-BodyPreview <String>] [-Calendar <IMicrosoftGraphCalendar1>]
  [-CancelledOccurrences <String[]>] [-Categories <String[]>] [-ChangeKey <String>]
  [-CreatedDateTime <DateTime>] [-End <IMicrosoftGraphDateTimeZone>]
- [-ExceptionOccurrences <IMicrosoftGraphEvent1[]>] [-Extensions <IMicrosoftGraphExtension[]>] [-HasAttachments]
- [-HideAttendees] [-Id <String>] [-Importance <String>] [-Instances <IMicrosoftGraphEvent1[]>] [-IsAllDay]
+ [-ExceptionOccurrences <IMicrosoftGraphEvent[]>] [-Extensions <IMicrosoftGraphExtension[]>] [-HasAttachments]
+ [-HideAttendees] [-Id <String>] [-Importance <String>] [-Instances <IMicrosoftGraphEvent[]>] [-IsAllDay]
  [-IsCancelled] [-IsDraft] [-IsOnlineMeeting] [-IsOrganizer] [-IsReminderOn] [-LastModifiedDateTime <DateTime>]
  [-Location <IMicrosoftGraphLocation1>] [-Locations <IMicrosoftGraphLocation1[]>]
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-OccurrenceId <String>]
@@ -64,7 +64,7 @@ Update-MgUserEventExceptionOccurrence -InputObject <ICalendarIdentity> [-Additio
 
 ### UpdateViaIdentity
 ```
-Update-MgUserEventExceptionOccurrence -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphEvent1>
+Update-MgUserEventExceptionOccurrence -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphEvent>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -163,7 +163,7 @@ event
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEvent1
+Type: IMicrosoftGraphEvent
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -322,7 +322,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for EXCEPTIONOCCURRENCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEvent1[]
+Type: IMicrosoftGraphEvent[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -436,7 +436,7 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for INSTANCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEvent1[]
+Type: IMicrosoftGraphEvent[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -1008,7 +1008,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent
 ## OUTPUTS
 
 ### System.Boolean

@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgWindowsUpdatesDeployment
 
 ## SYNOPSIS
-Deployments created using the deployment service.
-Read-only.
+Create new navigation property to deployments for admin
 
 ## SYNTAX
 
@@ -29,8 +28,7 @@ New-MgWindowsUpdatesDeployment -BodyParameter <IMicrosoftGraphWindowsUpdatesDepl
 ```
 
 ## DESCRIPTION
-Deployments created using the deployment service.
-Read-only.
+Create new navigation property to deployments for admin
 
 ## EXAMPLES
 
@@ -123,7 +121,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String

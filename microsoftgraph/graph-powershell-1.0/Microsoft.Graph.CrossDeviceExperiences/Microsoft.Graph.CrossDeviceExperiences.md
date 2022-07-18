@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.CrossDeviceExperiences
 Module Guid: b913deb3-95ba-4431-9581-8fad02aafc7c
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences
@@ -24,10 +24,6 @@ NavigationProperty/Containment; navigation property to the activity's historyIte
 Optional.
 NavigationProperty/Containment; navigation property to the associated activity.
 
-### [Get-MgUserActivityHistoryItemActivityByRef](Get-MgUserActivityHistoryItemActivityByRef.md)
-Optional.
-NavigationProperty/Containment; navigation property to the associated activity.
-
 ### [New-MgUserActivity](New-MgUserActivity.md)
 The user's activities across devices.
 Read-only.
@@ -45,14 +41,6 @@ Nullable.
 ### [Remove-MgUserActivityHistoryItem](Remove-MgUserActivityHistoryItem.md)
 Optional.
 NavigationProperty/Containment; navigation property to the activity's historyItems.
-
-### [Remove-MgUserActivityHistoryItemActivityByRef](Remove-MgUserActivityHistoryItemActivityByRef.md)
-Optional.
-NavigationProperty/Containment; navigation property to the associated activity.
-
-### [Set-MgUserActivityHistoryItemActivityByRef](Set-MgUserActivityHistoryItemActivityByRef.md)
-Optional.
-NavigationProperty/Containment; navigation property to the associated activity.
 
 ### [Update-MgUserActivity](Update-MgUserActivity.md)
 The user's activities across devices.

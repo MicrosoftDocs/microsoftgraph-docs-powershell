@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppMgtMobileAppConfigurationAssignment
 
 ## SYNOPSIS
-The list of group assignemenets for app configration.
+Get assignments from deviceAppManagement
 
 ## SYNTAX
 
@@ -33,7 +33,7 @@ Get-MgDeviceAppMgtMobileAppConfigurationAssignment -InputObject <IDevicesCorpora
 ```
 
 ## DESCRIPTION
-The list of group assignemenets for app configration.
+Get assignments from deviceAppManagement
 
 ## EXAMPLES
 

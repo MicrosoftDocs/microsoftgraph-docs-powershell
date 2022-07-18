@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserProfileWebAccount
 
 ## SYNOPSIS
-Represents web accounts the user has indicated they use or has added to their user profile.
+Update the navigation property webAccounts in users
 
 ## SYNTAX
 
@@ -47,7 +47,7 @@ Update-MgUserProfileWebAccount -InputObject <IPeopleIdentity> -BodyParameter <IM
 ```
 
 ## DESCRIPTION
-Represents web accounts the user has indicated they use or has added to their user profile.
+Update the navigation property webAccounts in users
 
 ## EXAMPLES
 
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -459,7 +459,7 @@ BODYPARAMETER <IMicrosoftGraphWebAccount>: webAccount
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String[]>]`: 
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Description <String>]`: Contains the description the user has provided for the account on the service being referenced.
   - `[Service <IMicrosoftGraphServiceInformation>]`: serviceInformation
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

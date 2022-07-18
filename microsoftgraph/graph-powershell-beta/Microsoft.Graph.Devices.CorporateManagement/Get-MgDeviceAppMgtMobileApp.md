@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppMgtMobileApp
 
 ## SYNOPSIS
-The mobile apps.
+Get mobileApps from deviceAppManagement
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceAppMgtMobileApp -InputObject <IDevicesCorporateManagementIdentity> [
 ```
 
 ## DESCRIPTION
-The mobile apps.
+Get mobileApps from deviceAppManagement
 
 ## EXAMPLES
 

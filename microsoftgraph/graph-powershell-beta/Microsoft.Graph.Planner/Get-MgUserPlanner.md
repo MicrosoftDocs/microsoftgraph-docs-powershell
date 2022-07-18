@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgUserPlanner
 
 ## SYNOPSIS
-Entry-point to the Planner resource that might exist for a user.
-Read-only.
+Get planner from users
 
 ## SYNTAX
 
@@ -44,8 +43,7 @@ Get-MgUserPlanner -InputObject <IPlannerIdentity> [-ExpandProperty <String[]>] [
 ```
 
 ## DESCRIPTION
-Entry-point to the Planner resource that might exist for a user.
-Read-only.
+Get planner from users
 
 ## EXAMPLES
 
@@ -257,7 +255,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerDelta
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerUser1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerUser
 ### System.String
 ## NOTES
 

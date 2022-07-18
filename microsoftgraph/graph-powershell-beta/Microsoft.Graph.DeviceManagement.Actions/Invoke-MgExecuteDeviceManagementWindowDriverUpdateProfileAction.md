@@ -15,7 +15,7 @@ Invoke action executeAction
 ### ExecuteExpanded (Default)
 ```
 Invoke-MgExecuteDeviceManagementWindowDriverUpdateProfileAction -WindowsDriverUpdateProfileId <String>
- [-ActionName <String>] [-AdditionalProperties <Hashtable>] [-DeploymentDate <DateTime>]
+ [-ActionName <DriverApprovalAction>] [-AdditionalProperties <Hashtable>] [-DeploymentDate <DateTime>]
  [-DriverIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ Invoke-MgExecuteDeviceManagementWindowDriverUpdateProfileAction -WindowsDriverUp
 ### ExecuteViaIdentityExpanded
 ```
 Invoke-MgExecuteDeviceManagementWindowDriverUpdateProfileAction -InputObject <IDeviceManagementActionsIdentity>
- [-ActionName <String>] [-AdditionalProperties <Hashtable>] [-DeploymentDate <DateTime>]
+ [-ActionName <DriverApprovalAction>] [-AdditionalProperties <Hashtable>] [-DeploymentDate <DateTime>]
  [-DriverIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -51,7 +51,7 @@ Invoke action executeAction
 An enum type to represent approval actions of single or list of drivers.
 
 ```yaml
-Type: String
+Type: DriverApprovalAction
 Parameter Sets: ExecuteExpanded, ExecuteViaIdentityExpanded
 Aliases:
 

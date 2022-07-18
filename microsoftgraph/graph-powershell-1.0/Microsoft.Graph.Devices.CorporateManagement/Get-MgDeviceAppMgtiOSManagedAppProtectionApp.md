@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppMgtiOSManagedAppProtectionApp
 
 ## SYNOPSIS
-List of apps to which the policy is deployed.
+Get apps from deviceAppManagement
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceAppMgtiOSManagedAppProtectionApp -InputObject <IDevicesCorporateMana
 ```
 
 ## DESCRIPTION
-List of apps to which the policy is deployed.
+Get apps from deviceAppManagement
 
 ## EXAMPLES
 

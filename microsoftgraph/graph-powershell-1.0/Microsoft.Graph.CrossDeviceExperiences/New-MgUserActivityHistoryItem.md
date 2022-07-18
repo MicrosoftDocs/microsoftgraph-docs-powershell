@@ -25,7 +25,7 @@ New-MgUserActivityHistoryItem -UserActivityId <String> -UserId <String> [-Active
 ### Create
 ```
 New-MgUserActivityHistoryItem -UserActivityId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphActivityHistoryItem> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphActivityHistoryItem1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -40,7 +40,7 @@ New-MgUserActivityHistoryItem -InputObject <ICrossDeviceExperiencesIdentity> [-A
 ### CreateViaIdentity
 ```
 New-MgUserActivityHistoryItem -InputObject <ICrossDeviceExperiencesIdentity>
- -BodyParameter <IMicrosoftGraphActivityHistoryItem> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphActivityHistoryItem1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -104,7 +104,7 @@ activityHistoryItem
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphActivityHistoryItem
+Type: IMicrosoftGraphActivityHistoryItem1
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -327,10 +327,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICrossDeviceExperiencesIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphActivityHistoryItem
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphActivityHistoryItem1
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphActivityHistoryItem
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphActivityHistoryItem1
 ## NOTES
 
 ALIASES

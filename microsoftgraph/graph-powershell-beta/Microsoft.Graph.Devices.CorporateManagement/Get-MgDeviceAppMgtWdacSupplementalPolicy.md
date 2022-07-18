@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppMgtWdacSupplementalPolicy
 
 ## SYNOPSIS
-The collection of Windows Defender Application Control Supplemental Policies.
+Get wdacSupplementalPolicies from deviceAppManagement
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceAppMgtWdacSupplementalPolicy -InputObject <IDevicesCorporateManageme
 ```
 
 ## DESCRIPTION
-The collection of Windows Defender Application Control Supplemental Policies.
+Get wdacSupplementalPolicies from deviceAppManagement
 
 ## EXAMPLES
 

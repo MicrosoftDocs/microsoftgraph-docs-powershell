@@ -8,15 +8,15 @@ schema: 2.0.0
 # New-MgDeviceManagementWindowInformationProtectionAppLearningSummary
 
 ## SYNOPSIS
-The windows information protection app learning summaries.
+Create new navigation property to windowsInformationProtectionAppLearningSummaries for deviceManagement
 
 ## SYNTAX
 
 ### CreateExpanded1 (Default)
 ```
 New-MgDeviceManagementWindowInformationProtectionAppLearningSummary [-AdditionalProperties <Hashtable>]
- [-ApplicationName <String>] [-ApplicationType <String>] [-DeviceCount <Int32>] [-Id <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ApplicationName <String>] [-ApplicationType <ApplicationType>] [-DeviceCount <Int32>] [-Id <String>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
@@ -27,7 +27,7 @@ New-MgDeviceManagementWindowInformationProtectionAppLearningSummary
 ```
 
 ## DESCRIPTION
-The windows information protection app learning summaries.
+Create new navigation property to windowsInformationProtectionAppLearningSummaries for deviceManagement
 
 ## EXAMPLES
 
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 Possible types of Application
 
 ```yaml
-Type: String
+Type: ApplicationType
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -175,9 +175,9 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER <IMicrosoftGraphWindowsInformationProtectionAppLearningSummary>: Windows Information Protection AppLearning Summary entity.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[ApplicationName <String>]`: Application Name
-  - `[ApplicationType <String>]`: Possible types of Application
+  - `[ApplicationType <ApplicationType?>]`: Possible types of Application
   - `[DeviceCount <Int32?>]`: Device Count
 
 ## RELATED LINKS

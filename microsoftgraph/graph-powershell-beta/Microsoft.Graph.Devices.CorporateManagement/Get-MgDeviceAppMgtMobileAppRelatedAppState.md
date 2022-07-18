@@ -39,7 +39,7 @@ PS C:\> {{ Add example code here }}
 ## PARAMETERS
 
 ### -DeviceId
-Usage: deviceId={deviceId}
+Usage: deviceId='{deviceId}'
 
 ```yaml
 Type: String
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserPrincipalName
-Usage: userPrincipalName={userPrincipalName}
+Usage: userPrincipalName='{userPrincipalName}'
 
 ```yaml
 Type: String

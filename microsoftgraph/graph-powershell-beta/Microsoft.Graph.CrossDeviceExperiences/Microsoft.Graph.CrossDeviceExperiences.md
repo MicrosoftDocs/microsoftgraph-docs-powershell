@@ -24,10 +24,6 @@ NavigationProperty/Containment; navigation property to the activity's historyIte
 Optional.
 NavigationProperty/Containment; navigation property to the associated activity.
 
-### [Get-MgUserActivityHistoryItemActivityByRef](Get-MgUserActivityHistoryItemActivityByRef.md)
-Optional.
-NavigationProperty/Containment; navigation property to the associated activity.
-
 ### [Get-MgUserDevice](Get-MgUserDevice.md)
 Get devices from users
 
@@ -52,16 +48,8 @@ Nullable.
 Optional.
 NavigationProperty/Containment; navigation property to the activity's historyItems.
 
-### [Remove-MgUserActivityHistoryItemActivityByRef](Remove-MgUserActivityHistoryItemActivityByRef.md)
-Optional.
-NavigationProperty/Containment; navigation property to the associated activity.
-
 ### [Remove-MgUserDevice](Remove-MgUserDevice.md)
 Delete navigation property devices for users
-
-### [Set-MgUserActivityHistoryItemActivityByRef](Set-MgUserActivityHistoryItemActivityByRef.md)
-Optional.
-NavigationProperty/Containment; navigation property to the associated activity.
 
 ### [Update-MgUserActivity](Update-MgUserActivity.md)
 The user's activities across devices.

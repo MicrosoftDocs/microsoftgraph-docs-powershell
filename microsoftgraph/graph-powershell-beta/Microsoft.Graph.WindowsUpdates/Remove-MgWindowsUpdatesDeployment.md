@@ -8,8 +8,7 @@ schema: 2.0.0
 # Remove-MgWindowsUpdatesDeployment
 
 ## SYNOPSIS
-Deployments created using the deployment service.
-Read-only.
+Delete navigation property deployments for admin
 
 ## SYNTAX
 
@@ -26,8 +25,7 @@ Remove-MgWindowsUpdatesDeployment -InputObject <IWindowsUpdatesIdentity> [-IfMat
 ```
 
 ## DESCRIPTION
-Deployments created using the deployment service.
-Read-only.
+Delete navigation property deployments for admin
 
 ## EXAMPLES
 

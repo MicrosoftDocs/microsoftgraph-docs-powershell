@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgWindowsUpdatesDeploymentAudienceMember
 
 ## SYNOPSIS
-Specifies the assets to include in the audience.
+Get members from admin
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgWindowsUpdatesDeploymentAudienceMember -InputObject <IWindowsUpdatesIdenti
 ```
 
 ## DESCRIPTION
-Specifies the assets to include in the audience.
+Get members from admin
 
 ## EXAMPLES
 
