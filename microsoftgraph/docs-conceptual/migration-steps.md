@@ -32,6 +32,32 @@ The following list summarizes the key advantages of using the Microsoft Graph Po
 
 Scripts written in Azure AD PowerShell won't automatically work with Microsoft Graph PowerShell. The new cmdlet names have been designed to be easy to learn. Instead of using `AzureAD` or `AzureADMS` in cdmlet names, use `Mg`. For example, the old cmdlet `Get-AzureADUser` has become `Get-MgUser`. However, migration is more than just becoming familiar with the new cmdlet names. There are renamed modules, parameters, and other important changes.
 
+### Document current scripts
+
+Use the following criteria to check your scripts:
+
+- Purpose
+- Cmdlets used (inc. # of calls)
+- Frequency of execution
+- Importance
+- Length
+- Location
+- Still required
+- Improvement points (e.g. filter left, authentication, script analyzer, etc.)
+- Score (optional)
+
+### Update current scripts
+
+- Start simple / low score
+- Map cmdlets
+- Map parameters / switches
+- Map filters
+- Check cmdlet documentation
+- Human updates frequently occurring
+- aka.ms/MSGraphExplorer
+- Understand output objects
+- Use dedicated apps and adhere to least privilege
+
 To find the new cmdlets, see the [Cmdlet map](azuread-msoline-cmdlet-map.md).
 
 ### Convert your scripts
