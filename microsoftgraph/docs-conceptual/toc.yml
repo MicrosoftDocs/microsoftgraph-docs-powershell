@@ -8,6 +8,8 @@
       href: get-started.md 
     - name: Navigating the SDK
       href: navigating.md
+    - name: Using the authentication cmdlets
+      href: authentication-commands.md  
     - name: Using Find-MgGraphCommand
       href: find-mg-graph-command.md
     - name: Using Find-MgGraphPermission
