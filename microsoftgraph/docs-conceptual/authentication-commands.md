@@ -3,7 +3,7 @@ title: "Using Microsoft Graph PowerShell authentication commands"
 description: "Learn how to use the authentication cmdlets in Microsoft Graph PowerShell"
 
 ms.topic: conceptual
-ms.date: 07/19/2022
+ms.date: 07/20/2022
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
@@ -11,11 +11,11 @@ ms.author: eunicewaweru
 
 # Authentication module cmdlets in Microsoft Graph PowerShell
 
-Microsoft Graph PowerShell supports two types of authentication: delegated and app-only access. There are a number of cmdlets that can be used to manage the different parameters required during authentication. For example, environment, application id. In this article we will look at the different cmdlets that are associated with authentication.
+Microsoft Graph PowerShell supports two types of authentication: delegated and app-only access. There are a number of cmdlets that can be used to manage the different parameters required during authentication. For example, environment, application ID. In this article, we'll look at the different cmdlets that are associated with authentication.
 
 ## Using Connect-MgGraph
 
-Connect-MgGraph must be invoked before any commands that access Microsoft Graph. This cmdlets get the access token which is managed by the Microsoft Graph .NET Core SDK which used the Microsoft Authentication Library.
+Connect-MgGraph must be invoked before any commands that access Microsoft Graph. This cmdlet gets the access token, which is managed by the Microsoft Graph .NET Core SDK and uses the Microsoft Authentication Library.
 
 ### Delegated access
 
@@ -41,7 +41,7 @@ Connect-MgGraph -AccessToken $AccessToken
 
 ### App-only access via client credential with a certificate
 
-To use this method ensure that the certificate you are using is available before calling Connect-MgGraph. For more info, see [Use app-only authentication with the Microsoft Graph PowerShell SDK](app-only.md).
+To use this method, ensure that the certificate you're using is available before calling Connect-MgGraph. For more info, see [Use app-only authentication with the Microsoft Graph PowerShell SDK](app-only.md).
 
 - Using certificate thumb print
 
@@ -71,9 +71,9 @@ Connect-MgGraph -Environment USGov
 
 ## Using Disconnect-MgGraph
 
-Once you're signed-in, you will remain signed-in until you invoke **Disconnect-MgGraph**. Microsoft Graph PowerShell automatically refreshes the access token for you and sign-in persists across PowerShell sessions because Microsoft Graph PowerShell securely caches the token.
+Once you're signed-in, you'll remain signed-in until you invoke **Disconnect-MgGraph**. Microsoft Graph PowerShell automatically refreshes the access token for you and sign-in persists across PowerShell sessions because Microsoft Graph PowerShell securely caches the token.
 
-Use **Disconnect-MgGraph** to sign-out
+Use **Disconnect-MgGraph** to sign out
 
 ```powershell
 Disconnect-MgGraph
@@ -81,11 +81,11 @@ Disconnect-MgGraph
 
 ## Using Get-MgContext
 
-Get-MgContext is used to retrieve the details about your current session. This includes;
+Get-MgContext is used to retrieve the details about your current session, which includes;
 - ClientID
 - TenantID
 - Certificate Thumbprint
-- Scopes that you have consented to
+- Scopes that you've consented to
 - AuthType: Delegated or app-only
 - AuthProviderType
 - CertificateName
@@ -96,7 +96,7 @@ Get-MgContext is used to retrieve the details about your current session. This i
 - PSHostVersion
 - ClientTimeOut
 
-To retrieve this details run;
+To retrieve the session details run;
 
 ```powershell
 Get-MgContext
@@ -118,7 +118,7 @@ PSHostVersion         : 5.1.17763.1
 ClientTimeout         : 00:05:00
 ```
 
-To retrieve all the scopes that you have consented to, expand the Scopes property using the -ExpandProperty paramater.
+To retrieve all the scopes that you've consented to, expand the Scopes property using the -ExpandProperty parameter.
 
 ```powershell
 Get-MgContext | Select -First 1 -ExpandProperty Scopes
@@ -138,11 +138,9 @@ User.Read
 User.ReadWrite.All
 ```
 
-## Know and change your current profile
-
-By default the Microsoft Graph PowerShell commands target the V1.0 API version. Commands for APIs that are only available in beta are not available in PowerShell by default. 
-
 ## Using Get-MgProfile
+
+By default the Microsoft Graph PowerShell commands target the V1.0 API version. Commands for APIs that are only available in beta aren't available in PowerShell by default. 
 
 To check your current profile, use Get-MgProfile.
 
@@ -170,7 +168,7 @@ To switch back to using v1.0 API commands, specify **v1.0** for the name paramet
 
 ## Using InvokeGraphRequest
 
-Invoke-MgGraphRequest issues REST API requests to the Graph API. It works for any Graph API if you know the REST URI, method and optional body parameter. This is especially useful for accessing APIs for which there isn't an equivalent cmdlet yet.
+Invoke-MgGraphRequest issues REST API requests to the Graph API. It works for any Graph API if you know the REST URI, method and optional body parameter. This command is especially useful for accessing APIs for which there isn't an equivalent cmdlet yet.
 
 To retrieve the details of the signed-in user, run;
 
@@ -195,11 +193,9 @@ businessPhones                 {425-555-0100}
 surname                        Administrator
 ```
 
-## Environment cmdlets
+## Using Get-MgEnvironment
 
 When we use Connect-MgGraph, we can choose to target other environments. By default, Connect-MgGraph targets global public clouds.
-
-## Using Get-MgEnvironment
 
 To get a list of all clouds that you can choose from, run;
 
