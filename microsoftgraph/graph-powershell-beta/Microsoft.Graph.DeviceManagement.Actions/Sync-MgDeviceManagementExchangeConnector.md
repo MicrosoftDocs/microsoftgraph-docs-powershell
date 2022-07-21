@@ -15,7 +15,8 @@ Invoke action sync
 ### SyncExpanded (Default)
 ```
 Sync-MgDeviceManagementExchangeConnector -DeviceManagementExchangeConnectorId <String>
- [-AdditionalProperties <Hashtable>] [-SyncType <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-SyncType <DeviceManagementExchangeConnectorSyncType>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Sync
@@ -28,7 +29,8 @@ Sync-MgDeviceManagementExchangeConnector -DeviceManagementExchangeConnectorId <S
 ### SyncViaIdentityExpanded
 ```
 Sync-MgDeviceManagementExchangeConnector -InputObject <IDeviceManagementActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-SyncType <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-SyncType <DeviceManagementExchangeConnectorSyncType>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### SyncViaIdentity
@@ -126,7 +128,7 @@ Accept wildcard characters: False
 The type of Exchange Connector sync requested.
 
 ```yaml
-Type: String
+Type: DeviceManagementExchangeConnectorSyncType
 Parameter Sets: SyncExpanded, SyncViaIdentityExpanded
 Aliases:
 

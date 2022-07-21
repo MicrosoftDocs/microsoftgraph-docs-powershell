@@ -132,7 +132,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IPaths5LbknhDevicemanagementChromeosonboardingsettingsMicrosoftGraphConnectPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### System.String
+### Microsoft.Graph.PowerShell.Support.ChromeOSOnboardingStatus
 ## NOTES
 
 ALIASES

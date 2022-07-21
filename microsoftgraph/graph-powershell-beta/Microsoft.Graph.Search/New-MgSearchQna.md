@@ -18,8 +18,9 @@ New-MgSearchQna [-AdditionalProperties <Hashtable>] [-AvailabilityEndDateTime <D
  [-AvailabilityStartDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-GroupIds <String[]>]
  [-Id <String>] [-IsSuggested] [-Keywords <IMicrosoftGraphSearchAnswerKeyword>] [-LanguageTags <String[]>]
  [-LastModifiedBy <IMicrosoftGraphSearchIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-Platforms <String[]>] [-State <String>] [-TargetedVariations <IMicrosoftGraphSearchAnswerVariant[]>]
- [-WebUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Platforms <DevicePlatformType[]>] [-State <String>]
+ [-TargetedVariations <IMicrosoftGraphSearchAnswerVariant[]>] [-WebUrl <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -244,7 +245,7 @@ List of devices and operating systems able to view this qna.
 Possible values are: unknown, android, androidForWork, ios, macOS, windowsPhone81, windowsPhone81AndLater, windows10AndLater, androidWorkProfile, androidASOP.
 
 ```yaml
-Type: String[]
+Type: DevicePlatformType[]
 Parameter Sets: CreateExpanded
 Aliases:
 

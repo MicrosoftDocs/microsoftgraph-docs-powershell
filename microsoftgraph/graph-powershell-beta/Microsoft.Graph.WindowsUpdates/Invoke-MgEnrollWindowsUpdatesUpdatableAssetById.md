@@ -12,13 +12,13 @@ Invoke action enrollAssetsById
 
 ## SYNTAX
 
-### EnrollExpanded1 (Default)
+### EnrollExpanded (Default)
 ```
 Invoke-MgEnrollWindowsUpdatesUpdatableAssetById [-AdditionalProperties <Hashtable>] [-Ids <String[]>]
  [-MemberEntityType <String>] [-UpdateCategory <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Enroll1
+### Enroll
 ```
 Invoke-MgEnrollWindowsUpdatesUpdatableAssetById
  -BodyParameter <IPaths134Mc7AdminWindowsUpdatesUpdatableassetsMicrosoftGraphWindowsupdatesEnrollassetsbyidPostRequestbodyContentApplicationJsonSchema>
@@ -44,7 +44,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: EnrollExpanded1
+Parameter Sets: EnrollExpanded
 Aliases:
 
 Required: False
@@ -60,7 +60,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPaths134Mc7AdminWindowsUpdatesUpdatableassetsMicrosoftGraphWindowsupdatesEnrollassetsbyidPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Enroll1
+Parameter Sets: Enroll
 Aliases:
 
 Required: True
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: EnrollExpanded1
+Parameter Sets: EnrollExpanded
 Aliases:
 
 Required: False
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: EnrollExpanded1
+Parameter Sets: EnrollExpanded
 Aliases:
 
 Required: False
@@ -120,7 +120,7 @@ updateCategory
 
 ```yaml
 Type: String
-Parameter Sets: EnrollExpanded1
+Parameter Sets: EnrollExpanded
 Aliases:
 
 Required: False

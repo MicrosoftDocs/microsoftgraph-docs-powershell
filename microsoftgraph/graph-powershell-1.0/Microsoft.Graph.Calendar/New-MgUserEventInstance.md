@@ -24,7 +24,7 @@ New-MgUserEventInstance -EventId <String> -UserId <String> [-AdditionalPropertie
  [-Categories <String[]>] [-ChangeKey <String>] [-CreatedDateTime <DateTime>]
  [-End <IMicrosoftGraphDateTimeZone>] [-Extensions <IMicrosoftGraphExtension[]>] [-HasAttachments]
  [-HideAttendees] [-ICalUId <String>] [-Id <String>] [-Importance <String>]
- [-Instances <IMicrosoftGraphEvent[]>] [-IsAllDay] [-IsCancelled] [-IsDraft] [-IsOnlineMeeting] [-IsOrganizer]
+ [-Instances <IMicrosoftGraphEvent1[]>] [-IsAllDay] [-IsCancelled] [-IsDraft] [-IsOnlineMeeting] [-IsOrganizer]
  [-IsReminderOn] [-LastModifiedDateTime <DateTime>] [-Location <IMicrosoftGraphLocation>]
  [-Locations <IMicrosoftGraphLocation[]>]
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]
@@ -40,7 +40,7 @@ New-MgUserEventInstance -EventId <String> -UserId <String> [-AdditionalPropertie
 
 ### Create1
 ```
-New-MgUserEventInstance -EventId <String> -UserId <String> -BodyParameter <IMicrosoftGraphEvent> [-WhatIf]
+New-MgUserEventInstance -EventId <String> -UserId <String> -BodyParameter <IMicrosoftGraphEvent1> [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -52,7 +52,7 @@ New-MgUserEventInstance -InputObject <ICalendarIdentity> [-AdditionalProperties 
  [-Categories <String[]>] [-ChangeKey <String>] [-CreatedDateTime <DateTime>]
  [-End <IMicrosoftGraphDateTimeZone>] [-Extensions <IMicrosoftGraphExtension[]>] [-HasAttachments]
  [-HideAttendees] [-ICalUId <String>] [-Id <String>] [-Importance <String>]
- [-Instances <IMicrosoftGraphEvent[]>] [-IsAllDay] [-IsCancelled] [-IsDraft] [-IsOnlineMeeting] [-IsOrganizer]
+ [-Instances <IMicrosoftGraphEvent1[]>] [-IsAllDay] [-IsCancelled] [-IsDraft] [-IsOnlineMeeting] [-IsOrganizer]
  [-IsReminderOn] [-LastModifiedDateTime <DateTime>] [-Location <IMicrosoftGraphLocation>]
  [-Locations <IMicrosoftGraphLocation[]>]
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]
@@ -68,7 +68,7 @@ New-MgUserEventInstance -InputObject <ICalendarIdentity> [-AdditionalProperties 
 
 ### CreateViaIdentity1
 ```
-New-MgUserEventInstance -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphEvent> [-WhatIf]
+New-MgUserEventInstance -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphEvent1> [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -171,7 +171,7 @@ event
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEvent
+Type: IMicrosoftGraphEvent1
 Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
@@ -414,7 +414,7 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for INSTANCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEvent[]
+Type: IMicrosoftGraphEvent1[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -941,10 +941,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent1
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent1
 ## NOTES
 
 ALIASES

@@ -8,8 +8,7 @@ schema: 2.0.0
 # Update-MgCommunicationOnlineMeetingAttendanceReport
 
 ## SYNOPSIS
-The attendance reports of an online meeting.
-Read-only.
+Update the navigation property attendanceReports in communications
 
 ## SYNTAX
 
@@ -72,8 +71,7 @@ Update-MgCommunicationOnlineMeetingAttendanceReport -InputObject <ICloudCommunic
 ```
 
 ## DESCRIPTION
-The attendance reports of an online meeting.
-Read-only.
+Update the navigation property attendanceReports in communications
 
 ## EXAMPLES
 
@@ -128,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -302,7 +300,7 @@ To create the parameters described below, construct a hash table containing the 
 
 
 ATTENDANCERECORDS <IMicrosoftGraphAttendanceRecord1[]>: List of attendance records of an attendance report. Read-only.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]`: List of time periods between joining and leaving a meeting.
     - `[DurationInSeconds <Int32?>]`: Duration of the meeting interval in seconds; that is, the difference between joinDateTime and leaveDateTime.
     - `[JoinDateTime <DateTime?>]`: The time the attendee joined in UTC.
@@ -318,9 +316,9 @@ ATTENDANCERECORDS <IMicrosoftGraphAttendanceRecord1[]>: List of attendance recor
 
 BODYPARAMETER <IMicrosoftGraphMeetingAttendanceReport1>: meetingAttendanceReport
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[AttendanceRecords <IMicrosoftGraphAttendanceRecord1[]>]`: List of attendance records of an attendance report. Read-only.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]`: List of time periods between joining and leaving a meeting.
       - `[DurationInSeconds <Int32?>]`: Duration of the meeting interval in seconds; that is, the difference between joinDateTime and leaveDateTime.
       - `[JoinDateTime <DateTime?>]`: The time the attendee joined in UTC.

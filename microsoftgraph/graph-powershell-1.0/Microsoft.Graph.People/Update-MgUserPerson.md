@@ -8,9 +8,7 @@ schema: 2.0.0
 # Update-MgUserPerson
 
 ## SYNOPSIS
-People that are relevant to the user.
-Read-only.
-Nullable.
+Update the navigation property people in users
 
 ## SYNTAX
 
@@ -28,7 +26,7 @@ Update-MgUserPerson -PersonId <String> -UserId <String> [-AdditionalProperties <
 
 ### Update
 ```
-Update-MgUserPerson -PersonId <String> -UserId <String> -BodyParameter <IMicrosoftGraphPerson> [-PassThru]
+Update-MgUserPerson -PersonId <String> -UserId <String> -BodyParameter <IMicrosoftGraphPerson1> [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -46,14 +44,12 @@ Update-MgUserPerson -InputObject <IPeopleIdentity> [-AdditionalProperties <Hasht
 
 ### UpdateViaIdentity
 ```
-Update-MgUserPerson -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoftGraphPerson> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgUserPerson -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoftGraphPerson1> [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-People that are relevant to the user.
-Read-only.
-Nullable.
+Update the navigation property people in users
 
 ## EXAMPLES
 
@@ -94,7 +90,7 @@ person
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPerson
+Type: IMicrosoftGraphPerson1
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -166,7 +162,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -496,7 +492,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPerson
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPerson1
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
 ## OUTPUTS
 
@@ -510,9 +506,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphPerson>: person
+BODYPARAMETER <IMicrosoftGraphPerson1>: person
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Birthday <String>]`: The person's birthday.
   - `[CompanyName <String>]`: The name of the person's company.
   - `[Department <String>]`: The person's department.

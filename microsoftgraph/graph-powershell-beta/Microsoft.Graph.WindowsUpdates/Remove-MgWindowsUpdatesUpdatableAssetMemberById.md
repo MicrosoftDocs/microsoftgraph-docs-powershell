@@ -12,27 +12,27 @@ Invoke action removeMembersById
 
 ## SYNTAX
 
-### RemoveExpanded1 (Default)
+### RemoveExpanded (Default)
 ```
 Remove-MgWindowsUpdatesUpdatableAssetMemberById -UpdatableAssetId <String> [-AdditionalProperties <Hashtable>]
  [-Ids <String[]>] [-MemberEntityType <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Remove1
+### Remove
 ```
 Remove-MgWindowsUpdatesUpdatableAssetMemberById -UpdatableAssetId <String>
  -BodyParameter <IPaths1Kqj7RfAdminWindowsUpdatesUpdatableassetsUpdatableassetIdMicrosoftGraphWindowsupdatesRemovemembersbyidPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### RemoveViaIdentityExpanded1
+### RemoveViaIdentityExpanded
 ```
 Remove-MgWindowsUpdatesUpdatableAssetMemberById -InputObject <IWindowsUpdatesIdentity>
  [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-MemberEntityType <String>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### RemoveViaIdentity1
+### RemoveViaIdentity
 ```
 Remove-MgWindowsUpdatesUpdatableAssetMemberById -InputObject <IWindowsUpdatesIdentity>
  -BodyParameter <IPaths1Kqj7RfAdminWindowsUpdatesUpdatableassetsUpdatableassetIdMicrosoftGraphWindowsupdatesRemovemembersbyidPostRequestbodyContentApplicationJsonSchema>
@@ -58,7 +58,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: RemoveExpanded1, RemoveViaIdentityExpanded1
+Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -74,7 +74,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPaths1Kqj7RfAdminWindowsUpdatesUpdatableassetsUpdatableassetIdMicrosoftGraphWindowsupdatesRemovemembersbyidPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Remove1, RemoveViaIdentity1
+Parameter Sets: Remove, RemoveViaIdentity
 Aliases:
 
 Required: True
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: RemoveExpanded1, RemoveViaIdentityExpanded1
+Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -105,7 +105,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IWindowsUpdatesIdentity
-Parameter Sets: RemoveViaIdentityExpanded1, RemoveViaIdentity1
+Parameter Sets: RemoveViaIdentityExpanded, RemoveViaIdentity
 Aliases:
 
 Required: True
@@ -120,7 +120,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: RemoveExpanded1, RemoveViaIdentityExpanded1
+Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -150,7 +150,7 @@ key: id of updatableAsset
 
 ```yaml
 Type: String
-Parameter Sets: RemoveExpanded1, Remove1
+Parameter Sets: RemoveExpanded, Remove
 Aliases:
 
 Required: True

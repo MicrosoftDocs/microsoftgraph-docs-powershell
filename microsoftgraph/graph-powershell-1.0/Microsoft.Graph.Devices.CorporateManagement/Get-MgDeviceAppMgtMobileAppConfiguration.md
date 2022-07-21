@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppMgtMobileAppConfiguration
 
 ## SYNOPSIS
-The Managed Device Mobile Application Configurations.
+Get mobileAppConfigurations from deviceAppManagement
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceAppMgtMobileAppConfiguration -InputObject <IDevicesCorporateManageme
 ```
 
 ## DESCRIPTION
-The Managed Device Mobile Application Configurations.
+Get mobileAppConfigurations from deviceAppManagement
 
 ## EXAMPLES
 

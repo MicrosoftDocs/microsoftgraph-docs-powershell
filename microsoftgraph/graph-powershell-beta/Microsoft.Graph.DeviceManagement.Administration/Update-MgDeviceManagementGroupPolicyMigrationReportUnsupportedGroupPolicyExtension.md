@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension
 
 ## SYNOPSIS
-A list of unsupported group policy extensions inside the Group Policy Object.
+Update the navigation property unsupportedGroupPolicyExtensions in deviceManagement
 
 ## SYNTAX
 
@@ -17,7 +17,8 @@ A list of unsupported group policy extensions inside the Group Policy Object.
 Update-MgDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension
  -GroupPolicyMigrationReportId <String> -UnsupportedGroupPolicyExtensionId <String>
  [-AdditionalProperties <Hashtable>] [-ExtensionType <String>] [-Id <String>] [-NamespaceUrl <String>]
- [-NodeName <String>] [-SettingScope <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-NodeName <String>] [-SettingScope <GroupPolicySettingScope>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
@@ -33,7 +34,7 @@ Update-MgDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtensi
 Update-MgDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension
  -InputObject <IDeviceManagementAdministrationIdentity> [-AdditionalProperties <Hashtable>]
  [-ExtensionType <String>] [-Id <String>] [-NamespaceUrl <String>] [-NodeName <String>]
- [-SettingScope <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SettingScope <GroupPolicySettingScope>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -45,7 +46,7 @@ Update-MgDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtensi
 ```
 
 ## DESCRIPTION
-A list of unsupported group policy extensions inside the Group Policy Object.
+Update the navigation property unsupportedGroupPolicyExtensions in deviceManagement
 
 ## EXAMPLES
 
@@ -113,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -192,7 +193,7 @@ Accept wildcard characters: False
 Scope of the group policy setting.
 
 ```yaml
-Type: String
+Type: GroupPolicySettingScope
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -270,11 +271,11 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER <IMicrosoftGraphUnsupportedGroupPolicyExtension>: Unsupported Group Policy Extension.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[ExtensionType <String>]`: ExtensionType of the unsupported extension.
   - `[NamespaceUrl <String>]`: Namespace Url of the unsupported extension.
   - `[NodeName <String>]`: Node name of the unsupported extension.
-  - `[SettingScope <String>]`: Scope of the group policy setting.
+  - `[SettingScope <GroupPolicySettingScope?>]`: Scope of the group policy setting.
 
 INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[AuditEventId <String>]`: key: id of auditEvent
@@ -299,6 +300,7 @@ INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[DeviceManagementExchangeOnPremisesPolicyId <String>]`: key: id of deviceManagementExchangeOnPremisesPolicy
   - `[DeviceManagementPartnerId <String>]`: key: id of deviceManagementPartner
   - `[GroupPolicyCategoryId <String>]`: key: id of groupPolicyCategory
+  - `[GroupPolicyCategoryId1 <String>]`: key: id of groupPolicyCategory
   - `[GroupPolicyDefinitionFileId <String>]`: key: id of groupPolicyDefinitionFile
   - `[GroupPolicyDefinitionId <String>]`: key: id of groupPolicyDefinition
   - `[GroupPolicyMigrationReportId <String>]`: key: id of groupPolicyMigrationReport

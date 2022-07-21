@@ -12,7 +12,7 @@ The permissions of the users with whom the calendar is shared.
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### UpdateExpanded2 (Default)
 ```
 Update-MgUserCalendarPermission -CalendarPermissionId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-AllowedRoles <String[]>] [-EmailAddress <IMicrosoftGraphEmailAddress>]
@@ -20,7 +20,7 @@ Update-MgUserCalendarPermission -CalendarPermissionId <String> -UserId <String>
  [<CommonParameters>]
 ```
 
-### UpdateExpanded1
+### UpdateExpanded3
 ```
 Update-MgUserCalendarPermission -CalendarPermissionId <String> -UserId <String> -CalendarId <String>
  [-AdditionalProperties <Hashtable>] [-AllowedRoles <String[]>] [-EmailAddress <IMicrosoftGraphEmailAddress>]
@@ -28,39 +28,39 @@ Update-MgUserCalendarPermission -CalendarPermissionId <String> -UserId <String> 
  [<CommonParameters>]
 ```
 
-### Update1
+### Update3
 ```
 Update-MgUserCalendarPermission -CalendarPermissionId <String> -UserId <String> -CalendarId <String>
  -BodyParameter <IMicrosoftGraphCalendarPermission> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update
+### Update2
 ```
 Update-MgUserCalendarPermission -CalendarPermissionId <String> -UserId <String>
  -BodyParameter <IMicrosoftGraphCalendarPermission> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded1
+### UpdateViaIdentityExpanded3
 ```
 Update-MgUserCalendarPermission -InputObject <ICalendarIdentity> [-AdditionalProperties <Hashtable>]
  [-AllowedRoles <String[]>] [-EmailAddress <IMicrosoftGraphEmailAddress>] [-Id <String>]
  [-IsInsideOrganization] [-IsRemovable] [-Role <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded
+### UpdateViaIdentityExpanded2
 ```
 Update-MgUserCalendarPermission -InputObject <ICalendarIdentity> [-AdditionalProperties <Hashtable>]
  [-AllowedRoles <String[]>] [-EmailAddress <IMicrosoftGraphEmailAddress>] [-Id <String>]
  [-IsInsideOrganization] [-IsRemovable] [-Role <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### UpdateViaIdentity3
 ```
 Update-MgUserCalendarPermission -InputObject <ICalendarIdentity>
  -BodyParameter <IMicrosoftGraphCalendarPermission> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity
+### UpdateViaIdentity2
 ```
 Update-MgUserCalendarPermission -InputObject <ICalendarIdentity>
  -BodyParameter <IMicrosoftGraphCalendarPermission> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -78,7 +78,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -94,7 +94,7 @@ Possible values are: none, freeBusyRead, limitedRead, read, write, delegateWitho
 
 ```yaml
 Type: String[]
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -110,7 +110,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IMicrosoftGraphCalendarPermission
-Parameter Sets: Update1, Update, UpdateViaIdentity1, UpdateViaIdentity
+Parameter Sets: Update3, Update2, UpdateViaIdentity3, UpdateViaIdentity2
 Aliases:
 
 Required: True
@@ -125,7 +125,7 @@ key: id of calendar
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Parameter Sets: UpdateExpanded3, Update3
 Aliases:
 
 Required: True
@@ -140,7 +140,7 @@ key: id of calendarPermission
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, Update1, Update
+Parameter Sets: UpdateExpanded2, UpdateExpanded3, Update3, Update2
 Aliases:
 
 Required: True
@@ -156,7 +156,7 @@ To construct, please use Get-Help -Online and see NOTES section for EMAILADDRESS
 
 ```yaml
 Type: IMicrosoftGraphEmailAddress
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -171,7 +171,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -187,7 +187,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ICalendarIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentity1, UpdateViaIdentity
+Parameter Sets: UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2, UpdateViaIdentity3, UpdateViaIdentity2
 Aliases:
 
 Required: True
@@ -202,7 +202,7 @@ True if the user in context (sharee or delegate) is inside the same organization
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -219,7 +219,7 @@ You cannot remove 'My organization' as a sharee to a calendar.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -249,7 +249,7 @@ calendarRoleType
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded2, UpdateExpanded3, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -264,7 +264,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, Update1, Update
+Parameter Sets: UpdateExpanded2, UpdateExpanded3, Update3, Update2
 Aliases:
 
 Required: True

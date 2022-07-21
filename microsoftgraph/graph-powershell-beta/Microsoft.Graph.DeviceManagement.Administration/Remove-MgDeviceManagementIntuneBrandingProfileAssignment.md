@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgDeviceManagementIntuneBrandingProfileAssignment
 
 ## SYNOPSIS
-The list of group assignments for the branding profile
+Delete navigation property assignments for deviceManagement
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Remove-MgDeviceManagementIntuneBrandingProfileAssignment -InputObject <IDeviceMa
 ```
 
 ## DESCRIPTION
-The list of group assignments for the branding profile
+Delete navigation property assignments for deviceManagement
 
 ## EXAMPLES
 
@@ -179,6 +179,7 @@ INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[DeviceManagementExchangeOnPremisesPolicyId <String>]`: key: id of deviceManagementExchangeOnPremisesPolicy
   - `[DeviceManagementPartnerId <String>]`: key: id of deviceManagementPartner
   - `[GroupPolicyCategoryId <String>]`: key: id of groupPolicyCategory
+  - `[GroupPolicyCategoryId1 <String>]`: key: id of groupPolicyCategory
   - `[GroupPolicyDefinitionFileId <String>]`: key: id of groupPolicyDefinitionFile
   - `[GroupPolicyDefinitionId <String>]`: key: id of groupPolicyDefinition
   - `[GroupPolicyMigrationReportId <String>]`: key: id of groupPolicyMigrationReport

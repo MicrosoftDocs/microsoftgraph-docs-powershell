@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgWindowsUpdatesDeployment
 
 ## SYNOPSIS
-Deployments created using the deployment service.
-Read-only.
+Get deployments from admin
 
 ## SYNTAX
 
@@ -33,8 +32,7 @@ Get-MgWindowsUpdatesDeployment -InputObject <IWindowsUpdatesIdentity> [-ExpandPr
 ```
 
 ## DESCRIPTION
-Deployments created using the deployment service.
-Read-only.
+Get deployments from admin
 
 ## EXAMPLES
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserProfileName
 
 ## SYNOPSIS
-Represents the names a user has added to their profile.
+Create new navigation property to names for users
 
 ## SYNTAX
 
@@ -48,7 +48,7 @@ New-MgUserProfileName -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoftG
 ```
 
 ## DESCRIPTION
-Represents the names a user has added to their profile.
+Create new navigation property to names for users
 
 ## EXAMPLES
 
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -493,7 +493,7 @@ BODYPARAMETER <IMicrosoftGraphPersonName>: personName
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String[]>]`: 
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[DisplayName <String>]`: Provides an ordered rendering of firstName and lastName depending on the locale of the user or their device.
   - `[First <String>]`: First name of the user.
   - `[Initials <String>]`: Initials of the user.

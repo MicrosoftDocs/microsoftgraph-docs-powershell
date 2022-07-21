@@ -19,16 +19,16 @@ Get-MgDirectoryObject [-ExpandProperty <String[]>] [-Property <String[]>] [-Filt
  [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get1
+### Get
 ```
 Get-MgDirectoryObject -DirectoryObjectId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ConsistencyLevel <String>] [<CommonParameters>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgDirectoryObject -InputObject <IDirectoryObjectsIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [-ConsistencyLevel <String>] [<CommonParameters>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -59,7 +59,7 @@ Documentation URL: https://developer.microsoft.com/en-us/office/blogs/microsoft-
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -90,7 +90,7 @@ key: id of directoryObject
 
 ```yaml
 Type: String
-Parameter Sets: Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True

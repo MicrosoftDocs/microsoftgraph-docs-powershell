@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgDirectoryFeatureRolloutPolicyApplyTo
 
 ## SYNOPSIS
-Nullable.
-Specifies a list of directoryObjects that feature is enabled for.
+Create new navigation property to appliesTo for directory
 
 ## SYNTAX
 
@@ -39,8 +38,7 @@ New-MgDirectoryFeatureRolloutPolicyApplyTo -InputObject <IIdentityDirectoryManag
 ```
 
 ## DESCRIPTION
-Nullable.
-Specifies a list of directoryObjects that feature is enabled for.
+Create new navigation property to appliesTo for directory
 
 ## EXAMPLES
 
@@ -109,7 +107,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -191,7 +189,7 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER <IMicrosoftGraphDirectoryObject>: directoryObject
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
 INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
@@ -216,6 +214,7 @@ INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   - `[InternalDomainFederationId <String>]`: key: id of internalDomainFederation
   - `[OrgContactId <String>]`: key: id of orgContact
   - `[OrganizationId <String>]`: key: id of organization
+  - `[OrganizationalBrandingLocalizationId <String>]`: key: id of organizationalBrandingLocalization
   - `[OutboundSharedUserProfileUserId <String>]`: key: userId of outboundSharedUserProfile
   - `[ProfileCardPropertyId <String>]`: key: id of profileCardProperty
   - `[RecommendationId <String>]`: key: id of recommendation

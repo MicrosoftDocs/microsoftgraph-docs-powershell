@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgUserProfileSkill
 
 ## SYNOPSIS
-Represents detailed information about skills associated with a user in various services.
+Update the navigation property skills in users
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Update-MgUserProfileSkill -InputObject <IPeopleIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Represents detailed information about skills associated with a user in various services.
+Update the navigation property skills in users
 
 ## EXAMPLES
 
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -445,7 +445,7 @@ BODYPARAMETER <IMicrosoftGraphSkillProficiency>: skillProficiency
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String[]>]`: 
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[Categories <String[]>]`: Contains categories a user has associated with the skill (for example, personal, professional, hobby).
   - `[CollaborationTags <String[]>]`: Contains experience scenario tags a user has associated with the interest. Allowed values in the collection are: askMeAbout, ableToMentor, wantsToLearn, wantsToImprove.
   - `[DisplayName <String>]`: Contains a friendly name for the skill.

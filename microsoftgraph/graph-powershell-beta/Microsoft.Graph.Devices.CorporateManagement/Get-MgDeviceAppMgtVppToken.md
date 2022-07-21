@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppMgtVppToken
 
 ## SYNOPSIS
-List of Vpp tokens for this organization.
+Get vppTokens from deviceAppManagement
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceAppMgtVppToken -InputObject <IDevicesCorporateManagementIdentity> [-
 ```
 
 ## DESCRIPTION
-List of Vpp tokens for this organization.
+Get vppTokens from deviceAppManagement
 
 ## EXAMPLES
 

@@ -15,8 +15,8 @@ Create new navigation property to teamsApps for appCatalogs
 ### CreateExpanded1 (Default)
 ```
 New-MgAppCatalogTeamApp [-AdditionalProperties <Hashtable>]
- [-AppDefinitions <IMicrosoftGraphTeamsAppDefinition1[]>] [-DisplayName <String>]
- [-DistributionMethod <String>] [-ExternalId <String>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AppDefinitions <IMicrosoftGraphTeamsAppDefinition[]>] [-DisplayName <String>] [-DistributionMethod <String>]
+ [-ExternalId <String>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
@@ -51,7 +51,7 @@ The details for each version of the app.
 To construct, please use Get-Help -Online and see NOTES section for APPDEFINITIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamsAppDefinition1[]
+Type: IMicrosoftGraphTeamsAppDefinition[]
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -187,11 +187,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-APPDEFINITIONS <IMicrosoftGraphTeamsAppDefinition1[]>: The details for each version of the app.
-  - `[Id <String>]`: Read-only.
+APPDEFINITIONS <IMicrosoftGraphTeamsAppDefinition[]>: The details for each version of the app.
+  - `[Id <String>]`: 
   - `[Bot <IMicrosoftGraphTeamworkBot>]`: teamworkBot
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -210,12 +210,12 @@ APPDEFINITIONS <IMicrosoftGraphTeamsAppDefinition1[]>: The details for each vers
 
 BODYPARAMETER <IMicrosoftGraphTeamsApp1>: teamsApp
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
-  - `[AppDefinitions <IMicrosoftGraphTeamsAppDefinition1[]>]`: The details for each version of the app.
-    - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
+  - `[AppDefinitions <IMicrosoftGraphTeamsAppDefinition[]>]`: The details for each version of the app.
+    - `[Id <String>]`: 
     - `[Bot <IMicrosoftGraphTeamworkBot>]`: teamworkBot
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: Read-only.
+      - `[Id <String>]`: 
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity

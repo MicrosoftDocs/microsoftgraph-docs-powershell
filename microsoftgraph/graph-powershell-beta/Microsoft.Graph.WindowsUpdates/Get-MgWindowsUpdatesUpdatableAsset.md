@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgWindowsUpdatesUpdatableAsset
 
 ## SYNOPSIS
-Assets registered with the deployment service that can receive updates.
-Read-only.
+Get updatableAssets from admin
 
 ## SYNTAX
 
@@ -33,8 +32,7 @@ Get-MgWindowsUpdatesUpdatableAsset -InputObject <IWindowsUpdatesIdentity> [-Expa
 ```
 
 ## DESCRIPTION
-Assets registered with the deployment service that can receive updates.
-Read-only.
+Get updatableAssets from admin
 
 ## EXAMPLES
 

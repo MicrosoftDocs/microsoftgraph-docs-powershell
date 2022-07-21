@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgPolicyAppManagementPolicy
 
 ## SYNOPSIS
-The policies that enforce app management restrictions for specific applications and service principals, overriding the defaultAppManagementPolicy.
+Create new navigation property to appManagementPolicies for policies
 
 ## SYNTAX
 
@@ -27,7 +27,7 @@ New-MgPolicyAppManagementPolicy -BodyParameter <IMicrosoftGraphAppManagementPoli
 ```
 
 ## DESCRIPTION
-The policies that enforce app management restrictions for specific applications and service principals, overriding the defaultAppManagementPolicy.
+Create new navigation property to appManagementPolicies for policies
 
 ## EXAMPLES
 
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -224,7 +224,7 @@ To create the parameters described below, construct a hash table containing the 
 
 
 APPLIESTO <IMicrosoftGraphDirectoryObject[]>: .
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
 BODYPARAMETER <IMicrosoftGraphAppManagementPolicy>: appManagementPolicy
@@ -232,9 +232,9 @@ BODYPARAMETER <IMicrosoftGraphAppManagementPolicy>: appManagementPolicy
   - `[Description <String>]`: Description for this policy. Required.
   - `[DisplayName <String>]`: Display name for this policy. Required.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[AppliesTo <IMicrosoftGraphDirectoryObject[]>]`: 
-    - `[Id <String>]`: Read-only.
+    - `[Id <String>]`: 
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[IsEnabled <Boolean?>]`: 
   - `[Restrictions <IMicrosoftGraphAppManagementConfiguration>]`: appManagementConfiguration

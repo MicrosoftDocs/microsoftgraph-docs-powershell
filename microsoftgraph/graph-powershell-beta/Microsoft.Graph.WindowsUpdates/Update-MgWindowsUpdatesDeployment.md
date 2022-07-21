@@ -8,8 +8,7 @@ schema: 2.0.0
 # Update-MgWindowsUpdatesDeployment
 
 ## SYNOPSIS
-Deployments created using the deployment service.
-Read-only.
+Update the navigation property deployments in admin
 
 ## SYNTAX
 
@@ -44,8 +43,7 @@ Update-MgWindowsUpdatesDeployment -InputObject <IWindowsUpdatesIdentity>
 ```
 
 ## DESCRIPTION
-Deployments created using the deployment service.
-Read-only.
+Update the navigation property deployments in admin
 
 ## EXAMPLES
 
@@ -153,7 +151,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String

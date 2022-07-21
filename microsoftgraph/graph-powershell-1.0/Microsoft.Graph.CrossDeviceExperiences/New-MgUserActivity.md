@@ -20,7 +20,7 @@ New-MgUserActivity -UserId <String> [-ActivationUrl <String>] [-ActivitySourceHo
  [-AdditionalProperties <Hashtable>] [-AppActivityId <String>] [-AppDisplayName <String>]
  [-ContentInfo <Hashtable>] [-ContentUrl <String>] [-CreatedDateTime <DateTime>]
  [-ExpirationDateTime <DateTime>] [-FallbackUrl <String>]
- [-HistoryItems <IMicrosoftGraphActivityHistoryItem[]>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
+ [-HistoryItems <IMicrosoftGraphActivityHistoryItem1[]>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
  [-Status <String>] [-UserTimezone <String>] [-VisualElements <IMicrosoftGraphVisualInfo>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -37,7 +37,7 @@ New-MgUserActivity -InputObject <ICrossDeviceExperiencesIdentity> [-ActivationUr
  [-ActivitySourceHost <String>] [-AdditionalProperties <Hashtable>] [-AppActivityId <String>]
  [-AppDisplayName <String>] [-ContentInfo <Hashtable>] [-ContentUrl <String>] [-CreatedDateTime <DateTime>]
  [-ExpirationDateTime <DateTime>] [-FallbackUrl <String>]
- [-HistoryItems <IMicrosoftGraphActivityHistoryItem[]>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
+ [-HistoryItems <IMicrosoftGraphActivityHistoryItem1[]>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
  [-Status <String>] [-UserTimezone <String>] [-VisualElements <IMicrosoftGraphVisualInfo>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -244,7 +244,7 @@ NavigationProperty/Containment; navigation property to the activity's historyIte
 To construct, please use Get-Help -Online and see NOTES section for HISTORYITEMS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphActivityHistoryItem[]
+Type: IMicrosoftGraphActivityHistoryItem1[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 

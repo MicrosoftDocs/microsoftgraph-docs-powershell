@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSecurityAttackSimulation
 
 ## SYNOPSIS
-Represents an attack simulation training campaign in a tenant.
+Create new navigation property to simulations for security
 
 ## SYNTAX
 
@@ -29,7 +29,7 @@ New-MgSecurityAttackSimulation -BodyParameter <IMicrosoftGraphSimulation> [-What
 ```
 
 ## DESCRIPTION
-Represents an attack simulation training campaign in a tenant.
+Create new navigation property to simulations for security
 
 ## EXAMPLES
 
@@ -190,7 +190,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -364,7 +364,7 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER <IMicrosoftGraphSimulation>: simulation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[AttackTechnique <String>]`: simulationAttackTechnique
   - `[AttackType <String>]`: simulationAttackType
   - `[AutomationId <String>]`: Unique identifier for the attack simulation automation.

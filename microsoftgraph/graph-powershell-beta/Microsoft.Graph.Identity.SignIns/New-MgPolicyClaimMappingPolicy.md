@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgPolicyClaimMappingPolicy
 
 ## SYNOPSIS
-The claim-mapping policies for WS-Fed, SAML, OAuth 2.0, and OpenID Connect protocols, for tokens issued to a specific application.
+Create new navigation property to claimsMappingPolicies for policies
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ New-MgPolicyClaimMappingPolicy -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [
 ```
 
 ## DESCRIPTION
-The claim-mapping policies for WS-Fed, SAML, OAuth 2.0, and OpenID Connect protocols, for tokens issued to a specific application.
+Create new navigation property to claimsMappingPolicies for policies
 
 ## EXAMPLES
 
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -214,7 +214,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### System.Collections.Hashtable
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphClaimsMappingPolicy
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphClaimsMappingPolicy1
 ## NOTES
 
 ALIASES
@@ -225,7 +225,7 @@ To create the parameters described below, construct a hash table containing the 
 
 
 APPLIESTO <IMicrosoftGraphDirectoryObject[]>: .
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
 ## RELATED LINKS

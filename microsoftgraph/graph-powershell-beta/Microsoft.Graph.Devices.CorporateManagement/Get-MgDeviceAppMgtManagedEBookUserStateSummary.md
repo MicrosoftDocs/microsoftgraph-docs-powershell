@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppMgtManagedEBookUserStateSummary
 
 ## SYNOPSIS
-The list of installation states for this eBook.
+Get userStateSummary from deviceAppManagement
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceAppMgtManagedEBookUserStateSummary -InputObject <IDevicesCorporateMa
 ```
 
 ## DESCRIPTION
-The list of installation states for this eBook.
+Get userStateSummary from deviceAppManagement
 
 ## EXAMPLES
 

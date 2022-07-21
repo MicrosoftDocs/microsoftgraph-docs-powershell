@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementPartner
 
 ## SYNOPSIS
-The list of Device Management Partners configured by the tenant.
+Create new navigation property to deviceManagementPartners for deviceManagement
 
 ## SYNTAX
 
@@ -16,8 +16,9 @@ The list of Device Management Partners configured by the tenant.
 ```
 New-MgDeviceManagementPartner [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
  [-GroupsRequiringPartnerEnrollment <IMicrosoftGraphDeviceManagementPartnerAssignment[]>] [-Id <String>]
- [-IsConfigured] [-LastHeartbeatDateTime <DateTime>] [-PartnerAppType <String>] [-PartnerState <String>]
- [-SingleTenantAppId <String>] [-WhenPartnerDevicesWillBeMarkedAsNonCompliant <DateTime>]
+ [-IsConfigured] [-LastHeartbeatDateTime <DateTime>] [-PartnerAppType <DeviceManagementPartnerAppType>]
+ [-PartnerState <DeviceManagementPartnerTenantState>] [-SingleTenantAppId <String>]
+ [-WhenPartnerDevicesWillBeMarkedAsNonCompliant <DateTime>]
  [-WhenPartnerDevicesWillBeMarkedAsNonCompliantDateTime <DateTime>]
  [-WhenPartnerDevicesWillBeRemoved <DateTime>] [-WhenPartnerDevicesWillBeRemovedDateTime <DateTime>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -25,12 +26,12 @@ New-MgDeviceManagementPartner [-AdditionalProperties <Hashtable>] [-DisplayName 
 
 ### Create1
 ```
-New-MgDeviceManagementPartner -BodyParameter <IMicrosoftGraphDeviceManagementPartner1> [-WhatIf] [-Confirm]
+New-MgDeviceManagementPartner -BodyParameter <IMicrosoftGraphDeviceManagementPartner> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The list of Device Management Partners configured by the tenant.
+Create new navigation property to deviceManagementPartners for deviceManagement
 
 ## EXAMPLES
 
@@ -56,7 +57,7 @@ Entity which represents a connection to device management partner.
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementPartner1
+Type: IMicrosoftGraphDeviceManagementPartner
 Parameter Sets: Create1
 Aliases:
 
@@ -99,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-Read-only.
+.
 
 ```yaml
 Type: String
@@ -147,7 +148,7 @@ Accept wildcard characters: False
 Partner App Type.
 
 ```yaml
-Type: String
+Type: DeviceManagementPartnerAppType
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -162,7 +163,7 @@ Accept wildcard characters: False
 Partner state of this tenant.
 
 ```yaml
-Type: String
+Type: DeviceManagementPartnerTenantState
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -286,10 +287,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementPartner1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementPartner
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementPartner1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementPartner
 ## NOTES
 
 ALIASES
@@ -299,19 +300,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphDeviceManagementPartner1>: Entity which represents a connection to device management partner.
+BODYPARAMETER <IMicrosoftGraphDeviceManagementPartner>: Entity which represents a connection to device management partner.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
+  - `[Id <String>]`: 
   - `[DisplayName <String>]`: Partner display name
   - `[GroupsRequiringPartnerEnrollment <IMicrosoftGraphDeviceManagementPartnerAssignment[]>]`: User groups that specifies whether enrollment is through partner.
     - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-      - `[DeviceAndAppManagementAssignmentFilterType <String>]`: Represents type of the assignment filter.
+      - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
   - `[IsConfigured <Boolean?>]`: Whether device management partner is configured or not
   - `[LastHeartbeatDateTime <DateTime?>]`: Timestamp of last heartbeat after admin enabled option Connect to Device management Partner
-  - `[PartnerAppType <String>]`: Partner App Type.
-  - `[PartnerState <String>]`: Partner state of this tenant.
+  - `[PartnerAppType <DeviceManagementPartnerAppType?>]`: Partner App Type.
+  - `[PartnerState <DeviceManagementPartnerTenantState?>]`: Partner state of this tenant.
   - `[SingleTenantAppId <String>]`: Partner Single tenant App id
   - `[WhenPartnerDevicesWillBeMarkedAsNonCompliant <DateTime?>]`: DateTime in UTC when PartnerDevices will be marked as NonCompliant. This will become obselete soon.
   - `[WhenPartnerDevicesWillBeMarkedAsNonCompliantDateTime <DateTime?>]`: DateTime in UTC when PartnerDevices will be marked as NonCompliant
@@ -322,6 +323,6 @@ GROUPSREQUIRINGPARTNERENROLLMENT <IMicrosoftGraphDeviceManagementPartnerAssignme
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-    - `[DeviceAndAppManagementAssignmentFilterType <String>]`: Represents type of the assignment filter.
+    - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
 ## RELATED LINKS

@@ -13,13 +13,13 @@ Read-only.
 
 ## SYNTAX
 
-### Set (Default)
+### Set1 (Default)
 ```
 Set-MgUserContactFolderContactPhotoContent -ContactFolderId <String> -ContactId <String> -UserId <String>
  [-BodyParameter <Stream>] -InFile <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SetViaIdentity
+### SetViaIdentity1
 ```
 Set-MgUserContactFolderContactPhotoContent -InputObject <IPersonalContactsIdentity> [-BodyParameter <Stream>]
  -InFile <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -53,7 +53,7 @@ key: id of contactFolder
 
 ```yaml
 Type: String
-Parameter Sets: Set
+Parameter Sets: Set1
 Aliases:
 
 Required: True
@@ -68,7 +68,7 @@ key: id of contact
 
 ```yaml
 Type: String
-Parameter Sets: Set
+Parameter Sets: Set1
 Aliases:
 
 Required: True
@@ -101,7 +101,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IPersonalContactsIdentity
-Parameter Sets: SetViaIdentity
+Parameter Sets: SetViaIdentity1
 Aliases:
 
 Required: True
@@ -131,7 +131,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: Set
+Parameter Sets: Set1
 Aliases:
 
 Required: True
