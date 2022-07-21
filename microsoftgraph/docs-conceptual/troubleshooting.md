@@ -3,18 +3,18 @@ title: "Error handling and troubleshooting cmdlets"
 description: "Learn how to diagnose common errors in Microsoft Graph PowerShell"
 
 ms.topic: conceptual
-ms.date: 06/07/2022
+ms.date: 07/21/2022
 ms.author: eunicewaweru
 manager: CelesteDG
 author: msewaweru
 reviewer: maisarissi,peombwa
 ---
 
-# Troubleshooting the Microsoft Graph PowerShell Module
+# Troubleshooting common errors in Microsoft Graph PowerShell Module
 
 This article explains how to determine, diagnose, and fix issues that you might encounter when using Microsoft Graph PowerShell.
 
-Before troubleshooting any errors, always ensure that you're running the most recent version of the SDK. To get the SDK version you're running, run:
+Before troubleshooting any errors, ensure that you're running the most recent version of the SDK. To get the SDK version you're running, run:
 
 ```powershell
 Get-InstalledModule
@@ -24,6 +24,28 @@ The version of the `Microsoft.Graph` module should be the most recent compared t
 
 ```PowerShell
 Update-Module Microsoft.Graph
+```
+
+## Profile related errors
+
+By default the Microsoft Graph PowerShell commands target the v1.0 API version. Commands for APIs that are only available in beta aren't available in PowerShell by default. As a result, you might encounter an error if you run a command that is not available in your current profile.
+
+To check the API version targeted by your command, run:
+
+```powershell
+Find-MgGraphCommand -Command $CommandName
+```
+
+Once you've established the right API version to target, confirm your current profile by running:
+
+```powershell
+Get-MgProfile
+```
+
+Use Select-MgProfile to switch between **v1.0** and **beta** versions of the API. To switch to the beta version, run:
+
+```powershell
+Select-MgProfile -Name Beta
 ```
 
 ## Authentication and authorization errors
@@ -37,7 +59,11 @@ Find the permissions required for a specific cmdlet or API, use [Find-MgGraphCom
 
 Microsoft Graph PowerShell scopes are consented to when you run Connect-MgGraph. Here, you specify the scopes that you require using the **-Scopes** parameter.
 
-For example, in the error below, the user lacks the permissions to run New-MgServicePrincipal. To find the permissions required for this operation, run:
+For example, in the error below, the user lacks the permissions to run New-MgServicePrincipal.
+
+:::image type="content" source="images/permissions-error.png" alt-text="Insufficient privileges error":::
+
+To find the permissions required for this operation, run:
 
 ```powershell
 Find-MgGraphCommand -command New-MgServicePrincipal | Select -First 1 -ExpandProperty Permissions
@@ -50,12 +76,8 @@ Application.ReadWrite.All True    Read and write applications Allows the app to 
 ```
 
 Run `Connect-MgGraph -Scopes Application.ReadWrite.All` and retry to correct the error.
- 
-## Module installation and import errors
 
-## Using common parameters
-
-### Using -Debug
+## Using -Debug
 
 The -Debug parameter provides a powerful way to examine a script while it's running to identify and correct errors in the script. The following are the important parts of a -Debug output:
 
@@ -81,8 +103,9 @@ Get-MgUser -UserId 'DoesNotExist' -Debug
 
 To enable debug logging for an entire PowerShell session, you set the value of the DebugPreference variable to `Continue`.
 
-```
+```powershell
 $DebugPreference = 'Continue'
+```
 
 Using the `-Debug` parameter is especially helpful when you want to open a support ticket. It will allow you to get the `request-id` that is required when logging such issues.
 
