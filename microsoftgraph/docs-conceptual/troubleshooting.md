@@ -20,7 +20,7 @@ Before troubleshooting any errors, always ensure that you're running the most re
 Get-InstalledModule
 ```
 
-The version of the `Microsoft.Graph` module should be the most recent compared to the latest release in the [PowerShell gallery](https://www.powershellgallery.com/packages/Microsoft.Graph). If your installed module is not upto date, update your module by running:
+The version of the `Microsoft.Graph` module should be the most recent compared to the latest release in the [PowerShell gallery](https://www.powershellgallery.com/packages/Microsoft.Graph). If your installed module is not up to date, update your module by running:
 
 ```PowerShell
 Update-Module Microsoft.Graph
@@ -33,6 +33,24 @@ Authorization errors can occur as a result of a number of issues, most of which 
 - Lack of permissions
 - Lack of the correct scopes
 
+Find the permissions required for a specific cmdlet or API, use [Find-MgGraphCommand cmdlet](find-mg-graph-command.md)
+
+Microsoft Graph PowerShell scopes are consented to when you run Connect-MgGraph. Here, you specify the scopes that you require using the **-Scopes** parameter.
+
+For example, in the error below, the user lacks the permissions to run New-MgServicePrincipal. To find the permissions required for this operation, run:
+
+```powershell
+Find-MgGraphCommand -command New-MgServicePrincipal | Select -First 1 -ExpandProperty Permissions
+```
+
+```Output
+Name                      IsAdmin Description                 FullDescription
+----                      ------- -----------                 ---------------
+Application.ReadWrite.All True    Read and write applications Allows the app to create, read, update and delete applications and service principals on your behalf. Does not allow management of consent grants.
+```
+
+Run `Connect-MgGraph -Scopes Application.ReadWrite.All` and retry to correct the error.
+ 
 ## Module installation and import errors
 
 ## Using common parameters
@@ -50,10 +68,21 @@ The -Debug parameter provides a powerful way to examine a script while it's runn
     1. Uri - Uri will change based on the cloud you are connected to and the version of the SDK you are connected to.
     1. Body - shows the body of your request.
 1. **HTTP response** - This will comprise of the following information:
-    1. Status code - this part provide the error code that has been return. When it shows `OK` it means that the command run successfully.
-        1. Bad request - take the uri and call it via Invoke-MgGraphRequest to determine if it is a service or a client issue.
-    1. Headers - The most important header is the `request-id`. This helps the support team to determine the cause of the failure. Use this id as you log any issues for the support team to troubleshoot.
-    1. **Body** - shows what the service returns. The most important part of the body is the `@odata.nextLink` gives provides a link to fetch the next page when the results have multiple pages. If the request fails, the body will contain the error code and the error message.
+    1. Status code - this part provides the error code returned. When it shows `OK` it means that the command run successfully.
+    1. Bad request - take the uri and call it via Invoke-MgGraphRequest to determine if it is a service or a client issue.
+    1. Headers - The most important header is the `request-id`. This helps the support team to determine the cause of the failure. Use this ID as you log any issues for the support team to troubleshoot.
+    1. **Body** - shows what the service returns. The most important part of the body is the `@odata.nextLink` which provides a link to fetch the next page when the result is in multiple pages. If the request fails, the body will contain the error code and the error message.
+
+To enable debug logging on a per command basis, specify the Debug parameter.
+
+```powershell
+Get-MgUser -UserId 'DoesNotExist' -Debug
+```
+
+To enable debug logging for an entire PowerShell session, you set the value of the DebugPreference variable to `Continue`.
+
+```
+$DebugPreference = 'Continue'
 
 Using the `-Debug` parameter is especially helpful when you want to open a support ticket. It will allow you to get the `request-id` that is required when logging such issues.
 
