@@ -71,11 +71,11 @@ Connect-MgGraph -Environment USGov
 ```
 
 >[!NOTE]
->Globally registered apps don't replicate to China cloud. You'll need to register your own applications in mooncake and use it when connecting to Graph.
+>Globally registered apps don't replicate to China cloud. You'll need to register your own applications in Mooncake and use them when connecting to Graph.
 
 ## Using Disconnect-MgGraph
 
-Once you're signed-in, you'll remain signed-in until you invoke **Disconnect-MgGraph**. Microsoft Graph PowerShell automatically refreshes the access token for you and sign-in persists across PowerShell sessions because Microsoft Graph PowerShell securely caches the token.
+Once you're signed in, you'll remain signed in until you invoke **Disconnect-MgGraph**. Microsoft Graph PowerShell automatically refreshes the access token for you and sign-in persists across PowerShell sessions because Microsoft Graph PowerShell securely caches the token.
 
 Use **Disconnect-MgGraph** to sign out.
 
