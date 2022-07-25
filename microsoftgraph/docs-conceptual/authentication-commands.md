@@ -121,7 +121,7 @@ Canary https://login.microsoftonline.com https://canary.graph.microsoft.com User
 
 Use this cmdlet to update the details of a user-defined environment.
 
-To update the GraphEndPoint value for the environment we created above, run:
+To update the `GraphEndPoint` value for the environment we created above, run:
 
 ```powershell
 Set-MgEnvironment -Name Canary -GraphEndPoint 'https://canary.graph.onmicrosoft.com' -AzureADEndPoint 'https://login.microsoftonline.com'
