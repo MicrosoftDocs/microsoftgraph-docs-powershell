@@ -64,14 +64,14 @@ To use this method, the certificate is loaded from `Cert:\CurrentUser\My\` when 
 
 ### Connecting to an environment or cloud
 
-By default, Connect-MgGraph targets the global public cloud.To explicitly target other clouds, for example, US Government and China cloud, use the **-Environment** parameter. Use [Get-MgEnvironment](#using-get-mgenvironment) to list all the clouds you can choose from.
+By default, Connect-MgGraph targets the global public cloud. To explicitly target other clouds, for example, US Government and China cloud, use the **-Environment** parameter. Use [Get-MgEnvironment](#using-get-mgenvironment) to list all the clouds you can choose from.
 
 ```powershell
 Connect-MgGraph -Environment USGov
 ```
 
 >[!NOTE]
->Globally registered apps don't replicate to China cloud. You'll need to register your own applications in Mooncake and use them when connecting to Graph.
+>Globally registered apps don't replicate to China cloud. You'll need to register your own applications in China cloud and use them when connecting to Graph.
 
 ## Using Disconnect-MgGraph
 
