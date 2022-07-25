@@ -3,7 +3,7 @@ title: "Using Microsoft Graph PowerShell authentication commands"
 description: "Learn how to use the authentication cmdlets in Microsoft Graph PowerShell"
 
 ms.topic: conceptual
-ms.date: 07/20/2022
+ms.date: 07/25/2022
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
@@ -64,14 +64,14 @@ To use this method, the certificate is loaded from `Cert:\CurrentUser\My\` when 
 
 ### Connecting to an environment or cloud
 
-By default, Connect-MgGraph targets the global public cloud. To explicitly target other clouds, for example, US Government and China cloud, use the **-Environment** parameter. Use [Get-MgEnvironment](#using-get-mgenvironment) to list all the clouds you can choose from.
+By default, Connect-MgGraph targets the global public cloud. To explicitly target other clouds, for example, US Government and Azure China, use the **-Environment** parameter. Use [Get-MgEnvironment](#using-get-mgenvironment) to list all the clouds you can choose from.
 
 ```powershell
 Connect-MgGraph -Environment USGov
 ```
 
 >[!NOTE]
->Globally registered apps don't replicate to China cloud. You'll need to register your own applications in China cloud and use them when connecting to Graph.
+>Globally registered apps don't replicate to Azure China. You'll need to register your own applications in Azure China and use them when connecting to Graph.
 
 ## Using Disconnect-MgGraph
 
@@ -85,7 +85,7 @@ Disconnect-MgGraph
 
 ## Using Get-MgEnvironment
 
-When we use Connect-MgGraph, we can choose to target other environments. By default, Connect-MgGraph targets global public clouds.
+When we use Connect-MgGraph, we can choose to target other environments. By default, Connect-MgGraph targets the global public cloud.
 
 To get a list of all clouds that you can choose from, run:
 
@@ -122,6 +122,7 @@ Canary https://login.microsoftonline.com https://canary.graph.microsoft.com User
 Use this cmdlet to update the details of a user-defined environment.
 
 To update the GraphEndPoint value for the environment we created above, run:
+
 ```powershell
 Set-MgEnvironment -Name Canary -GraphEndPoint 'https://canary.graph.onmicrosoft.com' -AzureADEndPoint 'https://login.microsoftonline.com'
 ```
