@@ -2,7 +2,7 @@
 title: "Error handling and troubleshooting cmdlets"
 description: "Learn how to diagnose common errors in Microsoft Graph PowerShell"
 
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.date: 07/21/2022
 ms.author: eunicewaweru
 manager: CelesteDG
@@ -50,12 +50,9 @@ Select-MgProfile -Name Beta
 
 ## Authentication and authorization errors
 
-Authorization errors can occur as a result of a number of issues, most of which generate a 403 error. The common causes for these error are:
+Authorization errors can occur as a result of a number of issues, most of which generate a 403 error. The common cause for these errors is lack of permissions.
 
-- Lack of permissions
-- Lack of the correct scopes
-
-To find the permissions required for a specific cmdlet or API, use [Find-MgGraphCommand](find-mg-graph-command.md) cmdlet.
+To find the permissions required for a specific cmdlet or API, use [Find-MgGraphCommand](find-mg-graph-command.md) cmdlet or the [API permissions reference](/graph/permissions-reference).
 
 Microsoft Graph PowerShell scopes are consented to when you run Connect-MgGraph. Here, you specify the scopes that you require using the **-Scopes** parameter.
 
@@ -63,7 +60,7 @@ For example, in the error below, the user lacks the permissions to run New-MgSer
 
 :::image type="content" source="images/permissions-error.png" alt-text="Insufficient privileges error":::
 
-To find the permissions required for this operation, run:
+To find the permissions required for this operation in delegated access, run:
 
 ```powershell
 Find-MgGraphCommand -command New-MgServicePrincipal | Select -First 1 -ExpandProperty Permissions
@@ -76,6 +73,10 @@ Application.ReadWrite.All True    Read and write applications Allows the app to 
 ```
 
 Run `Connect-MgGraph -Scopes Application.ReadWrite.All` and retry to correct the error.
+
+For app-only access, pre-configure the applications permissions your app needs when you register your app. Application permissions will require administrator consent, which can be consented to either using the [Azure portal](/graph/auth-v2-service) or using a sign-up experience in your app.
+
+For more info, see [app-only authentication](app-only.md).
 
 ## Using -Debug
 
@@ -90,10 +91,10 @@ The -Debug parameter provides a powerful way to examine a script while it's runn
     1. Uri - Uri will change based on the cloud you are connected to and the version of the SDK you are connected to.
     1. Body - shows the body of your request.
 1. **HTTP response** - This will comprise of the following information:
-    1. Status code - this part provides the error code returned. 
+    1. Status code - this part provides the error code returned.
         1. When it shows `OK` it means that the command run successfully.
         1. When it shows `Bad request`, take the uri and call it via Invoke-MgGraphRequest to determine if it is a service or a client issue.
-    1. Headers - The most important header is the `request-id`. This helps the support team to determine the cause of the failure. Use this ID as you log any issues for the support team to troubleshoot.
+    1. Headers - The most important header is the `request-id` and `Date`. This helps the support team to determine the cause of the failure. Use this ID and timestamp as you log any issues for the support team to troubleshoot.
     1. Body - shows what the service returns. The most important part of the body is the `@odata.nextLink` which provides a link to fetch the next page when the result is in multiple pages. If the request fails, the body will contain the error code and the error message.
 
 To enable debug logging on a per command basis, specify the Debug parameter.
@@ -108,7 +109,7 @@ To enable debug logging for an entire PowerShell session, you set the value of t
 $DebugPreference = 'Continue'
 ```
 
-Using the `-Debug` parameter is helpful when you want to open a support ticket. It will allow you to get the `request-id` that is required when logging such issues.
+Using the `-Debug` parameter is helpful when you want to open a support ticket. It will allow you to get the `request-id` and `Date` that is required when logging such issues. 
 
 ### Using -ErrorVariable
 
@@ -130,3 +131,10 @@ The `-ErrorAction` common parameter allows you to specify which action to take i
 When you specify the ErrorAction parameter during a call to a command, the specified behavior will override the `$ErrorActionPreference` variable in Windows PowerShell
 
 By default, Windows PowerShell uses an error action preference of **Continue**, which means that errors will be written out to the host, but the script will continue to execute. If you set `$ErrorActionPreference` to **Stop** or if you use Stop as the parameter value for -ErrorAction, Windows PowerShell will stop the script execution at the point an error occurs.
+
+## Next steps
+
+For more information related to troubleshooting, see:
+
+- [API reliability & support](/graph/best-practices-concept)
+- [API permissions reference](/graph/permissions-reference)
