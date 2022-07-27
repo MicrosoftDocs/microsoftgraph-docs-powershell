@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementtermandconditionacceptancestatuses
@@ -285,7 +285,7 @@ BODYPARAMETER <IMicrosoftGraphTermsAndConditionsAcceptanceStatus>: A termsAndCon
   - `[UserDisplayName <String>]`: Display name of the user whose acceptance the entity represents.
   - `[UserPrincipalName <String>]`: The userPrincipalName of the User that accepted the term.
 
-INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: key: id of auditEvent
   - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
