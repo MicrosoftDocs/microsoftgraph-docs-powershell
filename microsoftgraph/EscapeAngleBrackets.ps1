@@ -54,7 +54,7 @@ function Get-Files{
     )
     $moduleImportName = "$ModulePrefix.$ModuleName"
     $moduleDocsPath = Join-Path $PSScriptRoot "$GraphProfilePath\$moduleImportName"
-    Update-Files -ModuleDocsPath $moduleDocsPath
+    Update-Files -ModuleDocsPath $moduleDocsPath -GraphProfile $GraphProfile -ModuleName $ModuleName
 }
 
 if (-not (Test-Path $ModuleMappingConfigPath)) {
@@ -67,17 +67,26 @@ if ($ModulesToGenerate.Count -eq 0) {
 function Update-Files{
         param (
         [ValidateNotNullOrEmpty()]
-        [string] $ModuleDocsPath
+        [string] $ModuleDocsPath,
+        [ValidateSet("beta", "v1.0")]
+        [string] $GraphProfile = "v1.0",
+        [ValidateNotNullOrEmpty()]
+        [string] $ModuleName = "Users"
     )
     foreach($filePath in Get-ChildItem $ModuleDocsPath){
-      Add-Back-Ticks -FilePath $filePath
+      Add-Back-Ticks -FilePath $filePath -GraphProfile $GraphProfile -ModuleName $ModuleName
       #Start-Sleep -Seconds 5
     }
 }
 function Add-Back-Ticks{
     param (
         [ValidateNotNullOrEmpty()]
-        [string] $FilePath
+        [string] $FilePath,
+        [string] $ModuleDocsPath,
+        [ValidateSet("beta", "v1.0")]
+        [string] $GraphProfile = "v1.0",
+        [ValidateNotNullOrEmpty()]
+        [string] $ModuleName = "Users"
     )
     $tempFilePath = "$env:TEMP\$($FilePath | Split-Path -Leaf)"
     $findStart='<'
@@ -96,13 +105,17 @@ function Add-Back-Ticks{
     $text > $tempFilePath
     Remove-Item -Path $FilePath
     Move-Item -Path $tempFilePath -Destination $FilePath
-    Refine_File -FilePath $FilePath
+    Refine_File -FilePath $FilePath -GraphProfile $GraphProfile -ModuleName $ModuleName
 
 }
 function Refine_File{
     param (
         [ValidateNotNullOrEmpty()]
-        [string] $FilePath
+        [string] $FilePath,
+        [ValidateSet("beta", "v1.0")]
+        [string] $GraphProfile = "v1.0",
+        [ValidateNotNullOrEmpty()]
+        [string] $ModuleName = "Users"
     )
     $tempFilePath = "$env:TEMP\$($FilePath | Split-Path -Leaf)"
 
@@ -116,13 +129,17 @@ function Refine_File{
     $text > $tempFilePath
     Remove-Item -Path $FilePath
     Move-Item -Path $tempFilePath -Destination $FilePath
-    Special-Escape -FilePath $FilePath
+    Special-Escape -FilePath $FilePath -GraphProfile $GraphProfile -ModuleName $ModuleName
 }
 
 function Special-Escape{
      param (
         [ValidateNotNullOrEmpty()]
-        [string] $FilePath
+        [string] $FilePath,
+        [ValidateSet("beta", "v1.0")]
+        [string] $GraphProfile = "v1.0",
+        [ValidateNotNullOrEmpty()]
+        [string] $ModuleName = "Users"
     )
     $tempFilePath = "$env:TEMP\$($filePath | Split-Path -Leaf)"
     $s = @{}
@@ -136,7 +153,9 @@ function Special-Escape{
 	(Get-Content -Path $FilePath) -replace $string, $a | Add-Content -Path $tempFilePath
     Remove-Item -Path $FilePath
     Move-Item -Path $tempFilePath -Destination $FilePath
-	 }  
+	 }
+    git add $FilePath
+    git commit -m "Docs cleanup for $ModuleName-$GraphProfile"  
 }
 Escape-Angle-Brackets -ModulesToGenerate $ModulesToGenerate
 Write-Host -ForegroundColor Green "-------------Done-------------"
