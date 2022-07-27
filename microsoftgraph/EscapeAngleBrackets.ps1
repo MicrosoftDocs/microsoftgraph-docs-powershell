@@ -116,7 +116,27 @@ function Refine_File{
     $text > $tempFilePath
     Remove-Item -Path $FilePath
     Move-Item -Path $tempFilePath -Destination $FilePath
+    Special-Escape -FilePath $FilePath
+}
 
+function Special-Escape{
+     param (
+        [ValidateNotNullOrEmpty()]
+        [string] $FilePath
+    )
+    $tempFilePath = "$env:TEMP\$($filePath | Split-Path -Leaf)"
+    $s = @{}
+    $s.Add("0", "<country code>")
+    $s.Add("1", "<extension>")
+    $s.Add("2", "<number>")
+    $s.Add("3", "<at id='{index}'>") 
+    $s.Values | ForEach-Object {  
+    $string = $_
+	$a = $string.Replace('<','`<').Replace('>','>`')
+	(Get-Content -Path $FilePath) -replace $string, $a | Add-Content -Path $tempFilePath
+    Remove-Item -Path $FilePath
+    Move-Item -Path $tempFilePath -Destination $FilePath
+	 }  
 }
 Escape-Angle-Brackets -ModulesToGenerate $ModulesToGenerate
 Write-Host -ForegroundColor Green "-------------Done-------------"
