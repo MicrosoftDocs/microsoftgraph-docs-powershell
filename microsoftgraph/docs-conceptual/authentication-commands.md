@@ -71,7 +71,15 @@ Connect-MgGraph -Environment USGov
 ```
 
 >[!NOTE]
->Globally registered apps don't replicate to Azure China. You'll need to register your own applications in Azure China and use them when connecting to Graph.
+>Globally registered apps don't replicate to Azure China. You'll need to register your own applications in Azure China and use them when connecting to Microsoft Graph.
+
+### Connecting to an environment as a different identity
+
+To connect as a different identity other than CurrentUser, specify the **-ContextScope** parameter with the value **Process**.
+
+```powershell
+Connect-MgGraph -ContextScope Process -ForceRefresh
+```
 
 ## Using Disconnect-MgGraph
 
@@ -100,56 +108,11 @@ China    https://login.chinacloudapi.cn    https://microsoftgraph.chinacloudapi.
 Global   https://login.microsoftonline.com https://graph.microsoft.com             Built-in
 USGov    https://login.microsoftonline.us  https://graph.microsoft.us              Built-in
 USGovDoD https://login.microsoftonline.us  https://dod-graph.microsoft.us          Built-in
-Germany  https://login.microsoftonline.de  https://graph.microsoft.de              Built-in
-```
-
-## Using Add-MgEnvironment
-
-You can create custom environments with the **Add-MgEnvironment** cmdlet.
-
-```powershell
-Add-MgEnvironment -Name 'Canary' -GraphEndPoint 'https://canary.graph.microsoft.com' -AzureADEndPoint 'https://login.microsoftonline.com'
-```
-
-```Output
-Name   AzureADEndpoint                   GraphEndpoint                      Type 
-----   ---------------                   -------------                      ---- 
-Canary https://login.microsoftonline.com https://canary.graph.microsoft.com User-defined
-```
-
-## Using Set-MgEnvironment
-
-Use this cmdlet to update the details of a user-defined environment.
-
-To update the `GraphEndPoint` value for the environment we created above, run:
-
-```powershell
-Set-MgEnvironment -Name Canary -GraphEndPoint 'https://canary.graph.onmicrosoft.com' -AzureADEndPoint 'https://login.microsoftonline.com'
-```
-
-```powershell
-Name   AzureADEndpoint                   GraphEndpoint                          Type
-----   ---------------                   -------------                          ----
-Canary https://login.microsoftonline.com https://canary.graph.onmicrosoft.co.ke User-defined
-```
-
-## Using Remove-MgEnvironment
-
-You can remove a user-defined or custom environment and not a built-in environment.
-
-```powershell
-Remove-MgEnvironment -Name Canary
-```
-
-```Output
-Name   AzureADEndpoint                   GraphEndpoint                      Type
-----   ---------------                   -------------                      ----
-Canary https://login.microsoftonline.com https://canary.graph.microsoft.com User-defined
 ```
 
 ## Using Get-MgContext
 
-Get-MgContext is used to retrieve the details about your current session, which include;
+Get-MgContext is used to retrieve the details about your current session, which include:
 
 :::row:::
    :::column:::
@@ -185,7 +148,7 @@ Scopes                : {AppRoleAssignment.ReadWrite.All, Directory.AccessAsUser
 AuthType              : Delegated
 AuthProviderType      : InteractiveAuthenticationProvider
 CertificateName       :
-Account               : admin@M365x81760664.onmicrosoft.com
+Account               : admin@Contoso.com
 AppName               : Microsoft Graph PowerShell
 ContextScope          : CurrentUser
 Certificate           :
@@ -259,7 +222,7 @@ preferredLanguage              en-US
 mobilePhone                    425-555-0101
 displayName                    MOD Administrator
 givenName                      MOD
-mail                           admin@Contoso.com
+mail                           admin@contoso.com
 @odata.context                 https://graph.microsoft.com/v1.0/$metadata#users/$entity
 id                             694bab60-392a-4f64-9430-c1dea2951f50
 jobTitle
