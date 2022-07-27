@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/test-mgsecurityinformationprotectionsensitivitylabelremoval
@@ -146,7 +146,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPaths13Ef0YwSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateremovalPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths13Ef0YwSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateremovalPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentInfo <IMicrosoftGraphSecurityContentInfo>]`: contentInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -161,7 +161,7 @@ BODYPARAMETER <IPaths13Ef0YwSecurityInformationprotectionSensitivitylabelsMicros
     - `[IsDowngradeJustified <Boolean?>]`: 
     - `[JustificationMessage <String>]`: 
 
-CONTENTINFO <IMicrosoftGraphSecurityContentInfo>: contentInfo
+CONTENTINFO `<IMicrosoftGraphSecurityContentInfo>`: contentInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentFormat <String>]`: 
   - `[Identifier <String>]`: 
@@ -170,7 +170,7 @@ CONTENTINFO <IMicrosoftGraphSecurityContentInfo>: contentInfo
     - `[Value <String>]`: 
   - `[State <String>]`: contentState
 
-DOWNGRADEJUSTIFICATION <IMicrosoftGraphSecurityDowngradeJustification>: downgradeJustification
+DOWNGRADEJUSTIFICATION `<IMicrosoftGraphSecurityDowngradeJustification>`: downgradeJustification
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[IsDowngradeJustified <Boolean?>]`: 
   - `[JustificationMessage <String>]`: 
