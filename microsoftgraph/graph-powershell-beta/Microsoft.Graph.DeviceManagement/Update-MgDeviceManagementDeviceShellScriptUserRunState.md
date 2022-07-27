@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdeviceshellscriptuserrunstate
@@ -268,7 +268,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphDeviceManagementScriptUserState>: Contains properties for user run state of the device management script.
+BODYPARAMETER `<IMicrosoftGraphDeviceManagementScriptUserState>`: Contains properties for user run state of the device management script.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[DeviceRunStates <IMicrosoftGraphDeviceManagementScriptDeviceState[]>]`: List of run states for this script across all devices of specific user.
@@ -4540,7 +4540,7 @@ BODYPARAMETER <IMicrosoftGraphDeviceManagementScriptUserState>: Contains propert
   - `[SuccessDeviceCount <Int32?>]`: Success device count for specific user.
   - `[UserPrincipalName <String>]`: User principle name of specific user.
 
-DEVICERUNSTATES <IMicrosoftGraphDeviceManagementScriptDeviceState[]>: List of run states for this script across all devices of specific user.
+DEVICERUNSTATES `<IMicrosoftGraphDeviceManagementScriptDeviceState[]>`: List of run states for this script across all devices of specific user.
   - `[Id <String>]`: 
   - `[ErrorCode <Int32?>]`: Error code corresponding to erroneous execution of the device management script.
   - `[ErrorDescription <String>]`: Error description corresponding to erroneous execution of the device management script.
@@ -8806,7 +8806,7 @@ DEVICERUNSTATES <IMicrosoftGraphDeviceManagementScriptDeviceState[]>: List of ru
   - `[ResultMessage <String>]`: Details of execution output.
   - `[RunState <RunState?>]`: Indicates the type of execution status of the device management script.
 
-INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema

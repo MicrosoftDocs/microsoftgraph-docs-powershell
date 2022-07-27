@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/new-mggroup
@@ -769,7 +769,7 @@ Accept wildcard characters: False
 The mail alias for the group, unique for Microsoft 365 groups in the organization.
 Maximum length is 64 characters.
 This property can contain only characters in the ASCII character set 0 - 127 except the following: @ () / [] ' ; : .
-\<\> , SPACE.
+<> , SPACE.
 Returned by default.
 Supports $filter (eq, ne, not, ge, le, in, startsWith).
 
@@ -1573,7 +1573,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACCEPTEDSENDERS <IMicrosoftGraphDirectoryObject[]>: The list of users or groups that are allowed to create post's or calendar events in this group. If this list is non-empty then only users or groups listed here are allowed to post.
+ACCEPTEDSENDERS `<IMicrosoftGraphDirectoryObject[]>`: The list of users or groups that are allowed to create post's or calendar events in this group. If this list is non-empty then only users or groups listed here are allowed to post.
   - `[Id <String>]`: 
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
@@ -1595,7 +1595,7 @@ ASSIGNEDLICENSES <IMicrosoftGraphAssignedLicense[]>: The licenses that are assig
   - `[DisabledPlans <String[]>]`: A collection of the unique identifiers for plans that have been disabled.
   - `[SkuId <String>]`: The unique identifier for the SKU.
 
-BODYPARAMETER <IMicrosoftGraphGroup1>: group
+BODYPARAMETER `<IMicrosoftGraphGroup1>`: group
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: 
@@ -5854,7 +5854,7 @@ BODYPARAMETER <IMicrosoftGraphGroup1>: group
     - `[IsEnabled <Boolean?>]`: 
     - `[OnPremisesGroupType <String>]`: 
 
-CALENDAR <IMicrosoftGraphCalendar1>: calendar
+CALENDAR `<IMicrosoftGraphCalendar1>`: calendar
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AllowedOnlineMeetingProviders <String[]>]`: Represent the online meeting service providers that can be used to create online meetings in this calendar. Possible values are: unknown, skypeForBusiness, skypeForConsumer, teamsForBusiness.
@@ -6016,7 +6016,7 @@ CALENDAR <IMicrosoftGraphCalendar1>: calendar
   - `[Owner <IMicrosoftGraphEmailAddress>]`: emailAddress
   - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the calendar. Read-only. Nullable.
 
-CALENDARVIEW <IMicrosoftGraphEvent[]>: The calendar view for the calendar. Read-only.
+CALENDARVIEW `<IMicrosoftGraphEvent[]>`: The calendar view for the calendar. Read-only.
   - `[Categories <String[]>]`: The categories associated with the item
   - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -6178,7 +6178,7 @@ CALENDARVIEW <IMicrosoftGraphEvent[]>: The calendar view for the calendar. Read-
   - `[Uid <String>]`: 
   - `[WebLink <String>]`: 
 
-CONVERSATIONS <IMicrosoftGraphConversation1[]>: The group's conversations.
+CONVERSATIONS `<IMicrosoftGraphConversation1[]>`: The group's conversations.
   - `[Id <String>]`: 
   - `[HasAttachments <Boolean?>]`: Indicates whether any of the posts within this Conversation has at least one attachment. Supports $filter (eq, ne) and $search.
   - `[LastDeliveredDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Supports $filter (eq, ne, le, ge).
@@ -6244,12 +6244,12 @@ CONVERSATIONS <IMicrosoftGraphConversation1[]>: The group's conversations.
   - `[Topic <String>]`: The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated.
   - `[UniqueSenders <String[]>]`: All the users that sent a message to this Conversation.
 
-CREATEDONBEHALFOF <IMicrosoftGraphDirectoryObject>: directoryObject
+CREATEDONBEHALFOF `<IMicrosoftGraphDirectoryObject>`: directoryObject
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-DRIVE <IMicrosoftGraphDrive>: drive
+DRIVE `<IMicrosoftGraphDrive>`: drive
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -10508,7 +10508,7 @@ DRIVE <IMicrosoftGraphDrive>: drive
   - `[Special <IMicrosoftGraphDriveItem[]>]`: Collection of common folders available in OneDrive. Read-only. Nullable.
   - `[System <IMicrosoftGraphSystemFacet>]`: systemFacet
 
-DRIVES <IMicrosoftGraphDrive[]>: The group's drives. Read-only.
+DRIVES `<IMicrosoftGraphDrive[]>`: The group's drives. Read-only.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -14766,7 +14766,7 @@ DRIVES <IMicrosoftGraphDrive[]>: The group's drives. Read-only.
   - `[Special <IMicrosoftGraphDriveItem[]>]`: Collection of common folders available in OneDrive. Read-only. Nullable.
   - `[System <IMicrosoftGraphSystemFacet>]`: systemFacet
 
-ENDPOINTS <IMicrosoftGraphEndpoint[]>: Endpoints for the group. Read-only. Nullable.
+ENDPOINTS `<IMicrosoftGraphEndpoint[]>`: Endpoints for the group. Read-only. Nullable.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: 
   - `[Capability <String>]`: Describes the capability that is associated with this resource. (e.g. Messages, Conversations, etc.) Not nullable. Read-only.
@@ -14775,7 +14775,7 @@ ENDPOINTS <IMicrosoftGraphEndpoint[]>: Endpoints for the group. Read-only. Nulla
   - `[ProviderResourceId <String>]`: For Microsoft 365 groups, this is set to a well-known name for the resource (e.g. Yammer.FeedURL etc.). Not nullable. Read-only.
   - `[Uri <String>]`: URL of the published resource. Not nullable. Read-only.
 
-EVENTS <IMicrosoftGraphEvent[]>: The group's events.
+EVENTS `<IMicrosoftGraphEvent[]>`: The group's events.
   - `[Categories <String[]>]`: The categories associated with the item
   - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -14937,16 +14937,16 @@ EVENTS <IMicrosoftGraphEvent[]>: The group's events.
   - `[Uid <String>]`: 
   - `[WebLink <String>]`: 
 
-EXTENSIONS <IMicrosoftGraphExtension[]>: The collection of open extensions defined for the group. Read-only. Nullable.
+EXTENSIONS `<IMicrosoftGraphExtension[]>`: The collection of open extensions defined for the group. Read-only. Nullable.
   - `[Id <String>]`: 
 
-GROUPLIFECYCLEPOLICIES <IMicrosoftGraphGroupLifecyclePolicy[]>: The collection of lifecycle policies for this group. Read-only. Nullable.
+GROUPLIFECYCLEPOLICIES `<IMicrosoftGraphGroupLifecyclePolicy[]>`: The collection of lifecycle policies for this group. Read-only. Nullable.
   - `[Id <String>]`: 
   - `[AlternateNotificationEmails <String>]`: List of email address to send notifications for groups without owners. Multiple email address can be defined by separating email address with a semicolon.
   - `[GroupLifetimeInDays <Int32?>]`: Number of days before a group expires and needs to be renewed. Once renewed, the group expiration is extended by the number of days defined.
   - `[ManagedGroupTypes <String>]`: The group type for which the expiration policy applies. Possible values are All, Selected or None.
 
-LICENSEPROCESSINGSTATE <IMicrosoftGraphLicenseProcessingState>: licenseProcessingState
+LICENSEPROCESSINGSTATE `<IMicrosoftGraphLicenseProcessingState>`: licenseProcessingState
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[State <String>]`: 
 
@@ -14958,17 +14958,17 @@ MEMBERS <IMicrosoftGraphDirectoryObject[]>: Members of this group, who can be us
   - `[Id <String>]`: 
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-MEMBERSHIPRULEPROCESSINGSTATUS <IMicrosoftGraphMembershipRuleProcessingStatus>: membershipRuleProcessingStatus
+MEMBERSHIPRULEPROCESSINGSTATUS `<IMicrosoftGraphMembershipRuleProcessingStatus>`: membershipRuleProcessingStatus
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ErrorMessage <String>]`: Detailed error message if dynamic group processing ran into an error.  Optional. Read-only.
   - `[LastMembershipUpdated <DateTime?>]`: Most recent date and time when membership of a dynamic group was updated.  Optional. Read-only.
   - `[Status <String>]`: MembershipRuleProcessingStatusDetails
 
-MEMBERSWITHLICENSEERRORS <IMicrosoftGraphDirectoryObject[]>: A list of group members with license errors from this group-based license assignment. Read-only.
+MEMBERSWITHLICENSEERRORS `<IMicrosoftGraphDirectoryObject[]>`: A list of group members with license errors from this group-based license assignment. Read-only.
   - `[Id <String>]`: 
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-ONENOTE <IMicrosoftGraphOnenote1>: onenote
+ONENOTE `<IMicrosoftGraphOnenote1>`: onenote
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Notebooks <IMicrosoftGraphNotebook[]>]`: The collection of OneNote notebooks that are owned by the user or group. Read-only. Nullable.
@@ -15085,18 +15085,18 @@ PERMISSIONGRANTS <IMicrosoftGraphResourceSpecificPermissionGrant[]>: The permiss
   - `[PermissionType <String>]`: The type of permission. Possible values are: Application, Delegated. Read-only.
   - `[ResourceAppId <String>]`: ID of the Azure AD app that is hosting the resource. Read-only.
 
-PHOTO <IMicrosoftGraphProfilePhoto>: profilePhoto
+PHOTO `<IMicrosoftGraphProfilePhoto>`: profilePhoto
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Height <Int32?>]`: The height of the photo. Read-only.
   - `[Width <Int32?>]`: The width of the photo. Read-only.
 
-PHOTOS <IMicrosoftGraphProfilePhoto[]>: The profile photos owned by the group. Read-only. Nullable.
+PHOTOS `<IMicrosoftGraphProfilePhoto[]>`: The profile photos owned by the group. Read-only. Nullable.
   - `[Id <String>]`: 
   - `[Height <Int32?>]`: The height of the photo. Read-only.
   - `[Width <Int32?>]`: The width of the photo. Read-only.
 
-PLANNER <IMicrosoftGraphPlannerGroup1>: plannerGroup
+PLANNER `<IMicrosoftGraphPlannerGroup1>`: plannerGroup
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Plans <IMicrosoftGraphPlannerPlan1[]>]`: Read-only. Nullable. Returns the plannerPlans owned by the group.
@@ -15217,11 +15217,11 @@ PLANNER <IMicrosoftGraphPlannerGroup1>: plannerGroup
     - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Collection of tasks in the plan. Read-only. Nullable.
     - `[Title <String>]`: Required. Title of the plan.
 
-REJECTEDSENDERS <IMicrosoftGraphDirectoryObject[]>: The list of users or groups that are not allowed to create posts or calendar events in this group. Nullable
+REJECTEDSENDERS `<IMicrosoftGraphDirectoryObject[]>`: The list of users or groups that are not allowed to create posts or calendar events in this group. Nullable
   - `[Id <String>]`: 
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-SETTINGS <IMicrosoftGraphDirectorySetting[]>: Settings that can govern this group's behavior, like whether members can invite guest users to the group. Nullable.
+SETTINGS `<IMicrosoftGraphDirectorySetting[]>`: Settings that can govern this group's behavior, like whether members can invite guest users to the group. Nullable.
   - `[Id <String>]`: 
   - `[DisplayName <String>]`: Display name of this group of settings, which comes from the associated template. Read-only.
   - `[TemplateId <String>]`: Unique identifier for the template used to create this group of settings. Read-only.
@@ -15229,7 +15229,7 @@ SETTINGS <IMicrosoftGraphDirectorySetting[]>: Settings that can govern this grou
     - `[Name <String>]`: Name of the setting (as defined by the directorySettingTemplate).
     - `[Value <String>]`: Value of the setting.
 
-SITES <IMicrosoftGraphSite[]>: The list of SharePoint sites in this group. Access the default site with /sites/root.
+SITES `<IMicrosoftGraphSite[]>`: The list of SharePoint sites in this group. Access the default site with /sites/root.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -19489,7 +19489,7 @@ SITES <IMicrosoftGraphSite[]>: The list of SharePoint sites in this group. Acces
     - `[LanguageTags <String[]>]`: List of languages for the term store.
     - `[Sets <IMicrosoftGraphTermStoreSet[]>]`: Collection of all sets available in the term store.
 
-TEAM <IMicrosoftGraphTeam>: team
+TEAM `<IMicrosoftGraphTeam>`: team
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AllChannels <IMicrosoftGraphChannel1[]>]`: List of channels either hosted in or shared with the team (incoming channels).
@@ -23749,7 +23749,7 @@ TEAM <IMicrosoftGraphTeam>: team
   - `[Visibility <String>]`: teamVisibilityType
   - `[WebUrl <String>]`: A hyperlink that will go to the team in the Microsoft Teams client. This is the URL that you get when you right-click a team in the Microsoft Teams client and select Get link to team. This URL should be treated as an opaque blob, and not parsed.
 
-THREADS <IMicrosoftGraphConversationThread1[]>: The group's conversation threads. Nullable.
+THREADS `<IMicrosoftGraphConversationThread1[]>`: The group's conversation threads. Nullable.
   - `[Id <String>]`: 
   - `[CcRecipients <IMicrosoftGraphRecipient[]>]`: The Cc: recipients for the thread. Returned only on $select.
     - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
@@ -23808,15 +23808,15 @@ THREADS <IMicrosoftGraphConversationThread1[]>: The group's conversation threads
   - `[Topic <String>]`: The topic of the conversation. This property can be set when the conversation is created, but it cannot be updated. Returned by default.
   - `[UniqueSenders <String[]>]`: All the users that sent a message to this thread. Returned by default.
 
-TRANSITIVEMEMBEROF <IMicrosoftGraphDirectoryObject[]>: .
+TRANSITIVEMEMBEROF `<IMicrosoftGraphDirectoryObject[]>`: .
   - `[Id <String>]`: 
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-TRANSITIVEMEMBERS <IMicrosoftGraphDirectoryObject[]>: .
+TRANSITIVEMEMBERS `<IMicrosoftGraphDirectoryObject[]>`: .
   - `[Id <String>]`: 
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-WRITEBACKCONFIGURATION <IMicrosoftGraphGroupWritebackConfiguration>: groupWritebackConfiguration
+WRITEBACKCONFIGURATION `<IMicrosoftGraphGroupWritebackConfiguration>`: groupWritebackConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[IsEnabled <Boolean?>]`: 
   - `[OnPremisesGroupType <String>]`: 

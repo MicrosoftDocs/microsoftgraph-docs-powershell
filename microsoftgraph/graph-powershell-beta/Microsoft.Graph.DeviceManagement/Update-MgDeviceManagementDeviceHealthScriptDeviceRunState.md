@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicehealthscriptdevicerunstate
@@ -395,7 +395,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphDeviceHealthScriptDeviceState>: Contains properties for device run state of the device health script.
+BODYPARAMETER `<IMicrosoftGraphDeviceHealthScriptDeviceState>`: Contains properties for device run state of the device health script.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AssignmentFilterIds <String[]>]`: A list of the assignment filter ids used for health script applicability evaluation
@@ -4668,7 +4668,7 @@ BODYPARAMETER <IMicrosoftGraphDeviceHealthScriptDeviceState>: Contains propertie
   - `[RemediationScriptError <String>]`: Error output of the remediation script
   - `[RemediationState <RemediationState?>]`: Indicates the type of execution status of the device management script.
 
-INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema
@@ -4795,7 +4795,7 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: key: id of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: key: id of windowsMalwareInformation
 
-MANAGEDDEVICE <IMicrosoftGraphManagedDevice1>: Devices that are managed or pre-enrolled through Intune
+MANAGEDDEVICE `<IMicrosoftGraphManagedDevice1>`: Devices that are managed or pre-enrolled through Intune
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AadRegistered <Boolean?>]`: Whether the device is Azure Active Directory registered. This property is read-only.

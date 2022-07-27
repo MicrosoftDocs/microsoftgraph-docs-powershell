@@ -71,7 +71,7 @@ function Update-Files{
     )
     foreach($filePath in Get-ChildItem $ModuleDocsPath){
       Add-Back-Ticks -FilePath $filePath
-      Start-Sleep -Seconds 5
+      #Start-Sleep -Seconds 5
     }
 }
 function Add-Back-Ticks{
@@ -88,8 +88,29 @@ function Add-Back-Ticks{
     $text = Get-Content -Path $FilePath
     foreach($content in $text){
        if($content -match "(.*?)>+:"){
+        $content = $content -replace '[[+*?]','\$&'
         $replace = $content -replace $findStart,$replaceStart -replace $findEnd,$replaceEnd
         $text = $text -replace $content, $replace
+       } 
+    }
+    $text > $tempFilePath
+    Remove-Item -Path $FilePath
+    Move-Item -Path $tempFilePath -Destination $FilePath
+    Refine_File -FilePath $FilePath
+
+}
+function Refine_File{
+    param (
+        [ValidateNotNullOrEmpty()]
+        [string] $FilePath
+    )
+    $tempFilePath = "$env:TEMP\$($FilePath | Split-Path -Leaf)"
+
+    $replace = ""
+    $text = Get-Content -Path $FilePath
+    foreach($content in $text){
+       if($content -match "\]>``+:"){
+        $text = $text -replace [regex]::Escape("\"), $replace
        } 
     }
     $text > $tempFilePath
