@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementgrouppolicydefinitionfile
@@ -395,7 +395,7 @@ BODYPARAMETER <IMicrosoftGraphGroupPolicyDefinitionFile>: The entity represents 
   - `[TargetNamespace <String>]`: Specifies the URI used to identify the namespace within the ADMX file.
   - `[TargetPrefix <String>]`: Specifies the logical name that refers to the namespace within the ADMX file.
 
-DEFINITIONS <IMicrosoftGraphGroupPolicyDefinition[]>: The group policy definitions associated with the file.
+DEFINITIONS `<IMicrosoftGraphGroupPolicyDefinition[]>`: The group policy definitions associated with the file.
   - `[Id <String>]`: 
   - `[Category <IMicrosoftGraphGroupPolicyCategory>]`: The category entity stores the category of a group policy definition
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -440,7 +440,7 @@ DEFINITIONS <IMicrosoftGraphGroupPolicyDefinition[]>: The group policy definitio
   - `[SupportedOn <String>]`: Localized string used to specify what operating system or application version is affected by the policy.
   - `[Version <String>]`: Setting definition version
 
-INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: key: id of auditEvent
   - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
