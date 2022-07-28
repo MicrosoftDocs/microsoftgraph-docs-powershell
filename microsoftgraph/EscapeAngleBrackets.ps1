@@ -97,9 +97,13 @@ function Add-Back-Ticks{
     $text = Get-Content -Path $FilePath
     foreach($content in $text){
        if($content -match "(.*?)>+:"){
-        $content = $content -replace '[[+*?]','\$&'
-        $replace = $content -replace $findStart,$replaceStart -replace $findEnd,$replaceEnd
-        $text = $text -replace $content, $replace
+         if($content -match "[[+*?]"){
+            $content = $content -replace '[[+*?]','\$&'
+            $replace = $content -replace $findStart,$replaceStart -replace $findEnd,$replaceEnd
+            $text = $text -replace $content, $replace
+         }else{
+            $text = $text -replace $findStart,$replaceStart -replace $findEnd,$replaceEnd
+         }
        } 
     }
     $text > $tempFilePath

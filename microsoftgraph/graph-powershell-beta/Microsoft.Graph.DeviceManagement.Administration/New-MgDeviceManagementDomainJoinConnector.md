@@ -14,15 +14,15 @@ Create new navigation property to domainJoinConnectors for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementDomainJoinConnector [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-Id <String>] [-LastConnectionDateTime <DateTime>] [-State <DeviceManagementDomainJoinConnectorState>]
- [-Version <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDeviceManagementDomainJoinConnector [-AdditionalProperties `<Hashtable>`] [-DisplayName `<String>`]
+ [-Id `<String>`] [-LastConnectionDateTime `<DateTime>`] [-State `<DeviceManagementDomainJoinConnectorState>`]
+ [-Version `<String>`] [-WhatIf] [-Confirm] [`<CommonParameters>`]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementDomainJoinConnector -BodyParameter <IMicrosoftGraphDeviceManagementDomainJoinConnector>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDeviceManagementDomainJoinConnector -BodyParameter `<IMicrosoftGraphDeviceManagementDomainJoinConnector>`
+ [-WhatIf] [-Confirm] [`<CommonParameters>`]
 ```
 
 ## DESCRIPTION
@@ -187,12 +187,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphDeviceManagementDomainJoinConnector>: A Domain Join Connector is a connector that is responsible to allocate (and delete) machine account blobs
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
-  - `[DisplayName <String>]`: The connector display name.
-  - `[LastConnectionDateTime <DateTime?>]`: Last time connector contacted Intune.
-  - `[State <DeviceManagementDomainJoinConnectorState?>]`: The ODJ request states.
-  - `[Version <String>]`: The version of the connector.
+BODYPARAMETER `<IMicrosoftGraphDeviceManagementDomainJoinConnector>`: A Domain Join Connector is a connector that is responsible to allocate (and delete) machine account blobs
+  - `[(Any) `<Object>`]`: This indicates any property can be added to this object.
+  - `[Id `<String>`]`: 
+  - `[DisplayName `<String>`]`: The connector display name.
+  - `[LastConnectionDateTime `<DateTime?>`]`: Last time connector contacted Intune.
+  - `[State `<DeviceManagementDomainJoinConnectorState?>`]`: The ODJ request states.
+  - `[Version `<String>`]`: The version of the connector.
 
 ## RELATED LINKS
