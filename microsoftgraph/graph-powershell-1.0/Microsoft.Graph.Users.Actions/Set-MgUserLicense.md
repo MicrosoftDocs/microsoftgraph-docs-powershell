@@ -1,370 +1,370 @@
-﻿---
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/set-mguserlicense
-schema: 2.0.0
+---
+external help file: Micro```s```oft.Graph.U```s```er```s```.Action```s```-help.xml
+Module Name: Micro```s```oft.Graph.U```s```er```s```.Action```s```
+online ver```s```ion: http```s```://doc```s```.micro```s```oft.com/en-u```s```/power```s```hell/module/micro```s```oft.graph.u```s```er```s```.action```s```/```s```et-mgu```s```erlicen```s```e
+```s```chema: 2.0.0
 ---
 
-# Set-MgUserLicense
+# ```s```et-MgU```s```erLicen```s```e
 
-## SYNOPSIS
-Invoke action assignLicense
+## ```s```YNOP```s```I```s```
+Invoke action a```s``````s```ignLicen```s```e
 
-## SYNTAX
+## ```s```YNTAX
 
-### AssignExpanded1 (Default)
+### A```s``````s```ignExpanded1 (Default)
 ```
-Set-MgUserLicense -UserId <String> [-AddLicenses <IMicrosoftGraphAssignedLicense[]>]
- [-AdditionalProperties <Hashtable>] [-RemoveLicenses <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Assign1
-```
-Set-MgUserLicense -UserId <String>
- -BodyParameter <IPathsBfhtneUsersUserIdMicrosoftGraphAssignlicensePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+```s```et-MgU```s```erLicen```s```e -U```s```erId <```s```tring> [-AddLicen```s```e```s``` <IMicro```s```oftGraphA```s``````s```ignedLicen```s```e[]>]
+ [-AdditionalPropertie```s``` <Ha```s```htable>] [-RemoveLicen```s```e```s``` <```s```tring[]>] [-WhatIf] [-Confirm] [<CommonParameter```s```>]
 ```
 
-### AssignViaIdentityExpanded1
+### A```s``````s```ign1
 ```
-Set-MgUserLicense -InputObject <IUsersActionsIdentity> [-AddLicenses <IMicrosoftGraphAssignedLicense[]>]
- [-AdditionalProperties <Hashtable>] [-RemoveLicenses <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### AssignViaIdentity1
-```
-Set-MgUserLicense -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPathsBfhtneUsersUserIdMicrosoftGraphAssignlicensePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+```s```et-MgU```s```erLicen```s```e -U```s```erId <```s```tring>
+ -BodyParameter <IPath```s```BfhtneU```s```er```s```U```s```erIdMicro```s```oftGraphA```s``````s```ignlicen```s```ePo```s```tReque```s```tbodyContentApplicationJ```s```on```s```chema>
+ [-WhatIf] [-Confirm] [<CommonParameter```s```>]
 ```
 
-## DESCRIPTION
-Invoke action assignLicense
+### A```s``````s```ignViaIdentityExpanded1
+```
+```s```et-MgU```s```erLicen```s```e -InputObject <IU```s```er```s```Action```s```Identity> [-AddLicen```s```e```s``` <IMicro```s```oftGraphA```s``````s```ignedLicen```s```e[]>]
+ [-AdditionalPropertie```s``` <Ha```s```htable>] [-RemoveLicen```s```e```s``` <```s```tring[]>] [-WhatIf] [-Confirm] [<CommonParameter```s```>]
+```
 
-## EXAMPLES
+### A```s``````s```ignViaIdentity1
+```
+```s```et-MgU```s```erLicen```s```e -InputObject <IU```s```er```s```Action```s```Identity>
+ -BodyParameter <IPath```s```BfhtneU```s```er```s```U```s```erIdMicro```s```oftGraphA```s``````s```ignlicen```s```ePo```s```tReque```s```tbodyContentApplicationJ```s```on```s```chema>
+ [-WhatIf] [-Confirm] [<CommonParameter```s```>]
+```
 
-### Example 1: Assign a license to a user
-```powershell
-Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
+## DE```s```CRIPTION
+Invoke action a```s``````s```ignLicen```s```e
 
-$EmsSku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'EMSPREMIUM'
+## EXAMPLE```s```
 
-Set-MgUserLicense -UserId '38955658-c844-4f59-9430-6519430ac89b' -AddLicenses @{SkuId = $EmsSku.SkuId} -RemoveLicenses @()
+### Example 1: A```s``````s```ign a licen```s```e to a u```s```er
+```power```s```hell
+Connect-Graph -```s```cope```s``` U```s```er.ReadWrite.All, Organization.Read.All
 
-Id                                   DisplayName   Mail UserPrincipalName                     UserType
+$Em```s``````s```ku = Get-Mg```s```ub```s```cribed```s```ku -All | Where ```s```kuPartNumber -eq 'EM```s```PREMIUM'
+
+```s```et-MgU```s```erLicen```s```e -U```s```erId '38955658-c844-4f59-9430-6519430ac89b' -AddLicen```s```e```s``` @{```s```kuId = $Em```s``````s```ku.```s```kuId} -RemoveLicen```s```e```s``` @()
+
+Id                                   Di```s```playName   Mail U```s```erPrincipalName                     U```s```erType
 --                                   -----------   ---- -----------------                     --------
-38955658-c844-4f59-9430-6519430ac89b Bianca Pisani      BiancaP@contoso.onmicrosoft.com       Member
+38955658-c844-4f59-9430-6519430ac89b Bianca Pi```s```ani      BiancaP@conto```s```o.onmicro```s```oft.com       Member
 ```
 
-This example assigns a license from the **EMSPREMIUM** (ENTERPRISE MOBILITY + SECURITY E5) licensing plan to the unlicensed user **38955658-c844-4f59-9430-6519430ac89b**.
-For more information, see [assign licenses to users accounts with PowerShell](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell?view=o365-worldwide).
+Thi```s``` example a```s``````s```ign```s``` a licen```s```e from the **EM```s```PREMIUM** (ENTERPRI```s```E MOBILITY + ```s```ECURITY E5) licen```s```ing plan to the unlicen```s```ed u```s```er **38955658-c844-4f59-9430-6519430ac89b**.
+For more information, ```s```ee [a```s``````s```ign licen```s```e```s``` to u```s```er```s``` account```s``` with Power```s```hell](/micro```s```oft-365/enterpri```s```e/a```s``````s```ign-licen```s```e```s```-to-u```s```er-account```s```-with-micro```s```oft-365-power```s```hell?view=o365-worldwide).
 
-### Example 2: Assign more than one licenses to a user
-```powershell
-Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
+### Example 2: A```s``````s```ign more than one licen```s```e```s``` to a u```s```er
+```power```s```hell
+Connect-Graph -```s```cope```s``` U```s```er.ReadWrite.All, Organization.Read.All
 
-$EmsSku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'EMSPREMIUM'
-$FlowSku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'FLOW_FREE'
-$addLicenses = @(
-  @{SkuId = $EmsSku.SkuId},
-  @{SkuId = $FlowSku.SkuId}
+$Em```s``````s```ku = Get-Mg```s```ub```s```cribed```s```ku -All | Where ```s```kuPartNumber -eq 'EM```s```PREMIUM'
+$Flow```s```ku = Get-Mg```s```ub```s```cribed```s```ku -All | Where ```s```kuPartNumber -eq 'FLOW_FREE'
+$addLicen```s```e```s``` = @(
+  @{```s```kuId = $Em```s``````s```ku.```s```kuId},
+  @{```s```kuId = $Flow```s```ku.```s```kuId}
   )
 
-Set-MgUserLicense -UserId '38955658-c844-4f59-9430-6519430ac89b' -AddLicenses $addLicenses -RemoveLicenses @()
+```s```et-MgU```s```erLicen```s```e -U```s```erId '38955658-c844-4f59-9430-6519430ac89b' -AddLicen```s```e```s``` $addLicen```s```e```s``` -RemoveLicen```s```e```s``` @()
 
-Id                                   DisplayName   Mail UserPrincipalName                     UserType
+Id                                   Di```s```playName   Mail U```s```erPrincipalName                     U```s```erType
 --                                   -----------   ---- -----------------                     --------
-38955658-c844-4f59-9430-6519430ac89b Bianca Pisani      BiancaP@contoso.onmicrosoft.com       Member
+38955658-c844-4f59-9430-6519430ac89b Bianca Pi```s```ani      BiancaP@conto```s```o.onmicro```s```oft.com       Member
 ```
 
-This example assigns **EMSPREMIUM** and **FLOW_FREE** licenses to the user **38955658-c844-4f59-9430-6519430ac89b**.
+Thi```s``` example a```s``````s```ign```s``` **EM```s```PREMIUM** and **FLOW_FREE** licen```s```e```s``` to the u```s```er **38955658-c844-4f59-9430-6519430ac89b**.
 
-### Example 3: Assign a license to a user with some disabled plans
-```powershell
-Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
+### Example 3: A```s``````s```ign a licen```s```e to a u```s```er with ```s```ome di```s```abled plan```s```
+```power```s```hell
+Connect-Graph -```s```cope```s``` U```s```er.ReadWrite.All, Organization.Read.All
 
-$EmsSku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'EMSPREMIUM'
-$disabledPlans = $EmsSku.ServicePlans | where ServicePlanName -in ("MFA_PREMIUM", "INTUNE_A") | Select -ExpandProperty ServicePlanId
-$addLicenses = @(
-  @{SkuId = $EmsSku.SkuId
-  DisabledPlans = $disabledPlans
+$Em```s``````s```ku = Get-Mg```s```ub```s```cribed```s```ku -All | Where ```s```kuPartNumber -eq 'EM```s```PREMIUM'
+$di```s```abledPlan```s``` = $Em```s``````s```ku.```s```ervicePlan```s``` | where ```s```ervicePlanName -in ("MFA_PREMIUM", "INTUNE_A") | ```s```elect -ExpandProperty ```s```ervicePlanId
+$addLicen```s```e```s``` = @(
+  @{```s```kuId = $Em```s``````s```ku.```s```kuId
+  Di```s```abledPlan```s``` = $di```s```abledPlan```s```
   }
   )
 
-Set-MgUserLicense -UserId '38955658-c844-4f59-9430-6519430ac89b' -AddLicenses $addLicenses -RemoveLicenses @()
+```s```et-MgU```s```erLicen```s```e -U```s```erId '38955658-c844-4f59-9430-6519430ac89b' -AddLicen```s```e```s``` $addLicen```s```e```s``` -RemoveLicen```s```e```s``` @()
 
-Id                                   DisplayName   Mail UserPrincipalName                     UserType
+Id                                   Di```s```playName   Mail U```s```erPrincipalName                     U```s```erType
 --                                   -----------   ---- -----------------                     --------
-38955658-c844-4f59-9430-6519430ac89b Bianca Pisani      BiancaP@contoso.onmicrosoft.com       Member
+38955658-c844-4f59-9430-6519430ac89b Bianca Pi```s```ani      BiancaP@conto```s```o.onmicro```s```oft.com       Member
 ```
 
-This example assigns **EMSPREMIUM** license with the **MFA_PREMIUM** and **INTUNE_A** services turned off.
+Thi```s``` example a```s``````s```ign```s``` **EM```s```PREMIUM** licen```s```e with the **MFA_PREMIUM** and **INTUNE_A** ```s```ervice```s``` turned off.
 
-### Example 4: Update a license assigned to a user to add more disabled plans leaving the user's existing disabled plans in their current state
-```powershell
-Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
+### Example 4: Update a licen```s```e a```s``````s```igned to a u```s```er to add more di```s```abled plan```s``` leaving the u```s```er'```s``` exi```s```ting di```s```abled plan```s``` in their current ```s```tate
+```power```s```hell
+Connect-Graph -```s```cope```s``` U```s```er.ReadWrite.All, Organization.Read.All
 
-$EmsSku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'EMSPREMIUM'
-$userLicense = Get-MgUserLicenseDetail -UserId "38955658-c844-4f59-9430-6519430ac89b"
+$Em```s``````s```ku = Get-Mg```s```ub```s```cribed```s```ku -All | Where ```s```kuPartNumber -eq 'EM```s```PREMIUM'
+$u```s```erLicen```s```e = Get-MgU```s```erLicen```s```eDetail -U```s```erId "38955658-c844-4f59-9430-6519430ac89b"
 
-$userDisabledPlans = $userLicense.ServicePlans |
-  Where ProvisioningStatus -eq "Disabled" |
-  Select -ExpandProperty ServicePlanId
+$u```s```erDi```s```abledPlan```s``` = $u```s```erLicen```s```e.```s```ervicePlan```s``` |
+  Where Provi```s```ioning```s```tatu```s``` -eq "Di```s```abled" |
+  ```s```elect -ExpandProperty ```s```ervicePlanId
 
-$newDisabledPlans = $EmsSku.ServicePlans |
-  Where ServicePlanName -in ("AAD_PREMIUM_P2", "AAD_PREMIUM") |
-  Select -ExpandProperty ServicePlanId
+$newDi```s```abledPlan```s``` = $Em```s``````s```ku.```s```ervicePlan```s``` |
+  Where ```s```ervicePlanName -in ("AAD_PREMIUM_P2", "AAD_PREMIUM") |
+  ```s```elect -ExpandProperty ```s```ervicePlanId
 
-$disabledPlans = $userDisabledPlans + $newDisabledPlans | Select -Unique
+$di```s```abledPlan```s``` = $u```s```erDi```s```abledPlan```s``` + $newDi```s```abledPlan```s``` | ```s```elect -Unique
 
-$addLicenses = @(
-  @{SkuId = $EmsSku.SkuId
-  DisabledPlans = $disabledPlans
+$addLicen```s```e```s``` = @(
+  @{```s```kuId = $Em```s``````s```ku.```s```kuId
+  Di```s```abledPlan```s``` = $di```s```abledPlan```s```
   }
   )
 
-Set-MgUserLicense -UserId '38955658-c844-4f59-9430-6519430ac89b' -AddLicenses $addLicenses -RemoveLicenses @()
+```s```et-MgU```s```erLicen```s```e -U```s```erId '38955658-c844-4f59-9430-6519430ac89b' -AddLicen```s```e```s``` $addLicen```s```e```s``` -RemoveLicen```s```e```s``` @()
 
-Id                                   DisplayName   Mail UserPrincipalName                     UserType
+Id                                   Di```s```playName   Mail U```s```erPrincipalName                     U```s```erType
 --                                   -----------   ---- -----------------                     --------
-38955658-c844-4f59-9430-6519430ac89b Bianca Pisani      BiancaP@contoso.onmicrosoft.com       Member
+38955658-c844-4f59-9430-6519430ac89b Bianca Pi```s```ani      BiancaP@conto```s```o.onmicro```s```oft.com       Member
 ```
 
-This example updates the **EMSPREMIUM** license assigned to the user to add **AAD_PREMIUM_P2** and **AAD_PREMIUM** to the disabled services.
+Thi```s``` example update```s``` the **EM```s```PREMIUM** licen```s```e a```s``````s```igned to the u```s```er to add **AAD_PREMIUM_P2** and **AAD_PREMIUM** to the di```s```abled ```s```ervice```s```.
 
-### Example 5: Assign licenses to a user by copying the license assignment from another user
-```powershell
-Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
+### Example 5: A```s``````s```ign licen```s```e```s``` to a u```s```er by copying the licen```s```e a```s``````s```ignment from another u```s```er
+```power```s```hell
+Connect-Graph -```s```cope```s``` U```s```er.ReadWrite.All, Organization.Read.All
 
-Select-MgProfile -Name Beta
-$mgUser = Get-MgUser -UserId '38955658-c844-4f59-9430-6519430ac89b'
+```s```elect-MgProfile -Name Beta
+$mgU```s```er = Get-MgU```s```er -U```s```erId '38955658-c844-4f59-9430-6519430ac89b'
 
-Set-MgUserLicense -UserId "82f51c98-7221-442f-8329-3faf9fe022f1" -AddLicenses $mgUser.AssignedLicenses -RemoveLicenses @()
+```s```et-MgU```s```erLicen```s```e -U```s```erId "82f51c98-7221-442f-8329-3faf9fe022f1" -AddLicen```s```e```s``` $mgU```s```er.A```s``````s```ignedLicen```s```e```s``` -RemoveLicen```s```e```s``` @()
 
 
-Id                                   DisplayName    Mail UserPrincipalName                      UserType
+Id                                   Di```s```playName    Mail U```s```erPrincipalName                      U```s```erType
 --                                   -----------    ---- -----------------                      --------
-82f51c98-7221-442f-8329-3faf9fe022f1 Mallory Cortez      MalloryC@contoso.onmicrosoft.com       Member
+82f51c98-7221-442f-8329-3faf9fe022f1 Mallory Cortez      MalloryC@conto```s```o.onmicro```s```oft.com       Member
 ```
 
-This examples copies the license assignment of user **38955658-c844-4f59-9430-6519430ac89b** and assigns it to user **82f51c98-7221-442f-8329-3faf9fe022f1**.
+Thi```s``` example```s``` copie```s``` the licen```s```e a```s``````s```ignment of u```s```er **38955658-c844-4f59-9430-6519430ac89b** and a```s``````s```ign```s``` it to u```s```er **82f51c98-7221-442f-8329-3faf9fe022f1**.
 
-### Example 6: Remove a license assigned to a user
-```powershell
-Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
+### Example 6: Remove a licen```s```e a```s``````s```igned to a u```s```er
+```power```s```hell
+Connect-Graph -```s```cope```s``` U```s```er.ReadWrite.All, Organization.Read.All
 
-$EmsSku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'EMSPREMIUM'
+$Em```s``````s```ku = Get-Mg```s```ub```s```cribed```s```ku -All | Where ```s```kuPartNumber -eq 'EM```s```PREMIUM'
 
-Set-MgUserLicense -UserId "38955658-c844-4f59-9430-6519430ac89b" -AddLicenses @() -RemoveLicenses @($EmsSku.SkuId)
+```s```et-MgU```s```erLicen```s```e -U```s```erId "38955658-c844-4f59-9430-6519430ac89b" -AddLicen```s```e```s``` @() -RemoveLicen```s```e```s``` @($Em```s``````s```ku.```s```kuId)
 
-Id                                   DisplayName   Mail UserPrincipalName                     UserType
+Id                                   Di```s```playName   Mail U```s```erPrincipalName                     U```s```erType
 --                                   -----------   ---- -----------------                     --------
-38955658-c844-4f59-9430-6519430ac89b Bianca Pisani      BiancaP@contoso.onmicrosoft.com       Member
+38955658-c844-4f59-9430-6519430ac89b Bianca Pi```s```ani      BiancaP@conto```s```o.onmicro```s```oft.com       Member
 ```
 
-This example removes the **EMSPREMIUM** license assignment from the user.
+Thi```s``` example remove```s``` the **EM```s```PREMIUM** licen```s```e a```s``````s```ignment from the u```s```er.
 
-## PARAMETERS
+## PARAMETER```s```
 
-### -AdditionalProperties
-Additional Parameters
+### -AdditionalPropertie```s```
+Additional Parameter```s```
 
 ```yaml
-Type: Hashtable
-Parameter Sets: AssignExpanded1, AssignViaIdentityExpanded1
-Aliases:
+Type: Ha```s```htable
+Parameter ```s```et```s```: A```s``````s```ignExpanded1, A```s``````s```ignViaIdentityExpanded1
+Alia```s```e```s```:
 
-Required: False
-Position: Named
+Required: Fal```s```e
+Po```s```ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal```s```e
+Accept wildcard character```s```: Fal```s```e
 ```
 
-### -AddLicenses
+### -AddLicen```s```e```s```
 .
-To construct, please use Get-Help -Online and see NOTES section for ADDLICENSES properties and create a hash table.
+To con```s```truct, plea```s```e u```s```e Get-Help -Online and ```s```ee NOTE```s``` ```s```ection for ADDLICEN```s```E```s``` propertie```s``` and create a ha```s```h table.
 
 ```yaml
-Type: IMicrosoftGraphAssignedLicense[]
-Parameter Sets: AssignExpanded1, AssignViaIdentityExpanded1
-Aliases:
+Type: IMicro```s```oftGraphA```s``````s```ignedLicen```s```e[]
+Parameter ```s```et```s```: A```s``````s```ignExpanded1, A```s``````s```ignViaIdentityExpanded1
+Alia```s```e```s```:
 
-Required: False
-Position: Named
+Required: Fal```s```e
+Po```s```ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal```s```e
+Accept wildcard character```s```: Fal```s```e
 ```
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To con```s```truct, plea```s```e u```s```e Get-Help -Online and ```s```ee NOTE```s``` ```s```ection for BODYPARAMETER propertie```s``` and create a ha```s```h table.
 
 ```yaml
-Type: IPathsBfhtneUsersUserIdMicrosoftGraphAssignlicensePostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Assign1, AssignViaIdentity1
-Aliases:
+Type: IPath```s```BfhtneU```s```er```s```U```s```erIdMicro```s```oftGraphA```s``````s```ignlicen```s```ePo```s```tReque```s```tbodyContentApplicationJ```s```on```s```chema
+Parameter ```s```et```s```: A```s``````s```ign1, A```s``````s```ignViaIdentity1
+Alia```s```e```s```:
 
 Required: True
-Position: Named
+Po```s```ition: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wildcard character```s```: Fal```s```e
 ```
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To con```s```truct, plea```s```e u```s```e Get-Help -Online and ```s```ee NOTE```s``` ```s```ection for INPUTOBJECT propertie```s``` and create a ha```s```h table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: AssignViaIdentityExpanded1, AssignViaIdentity1
-Aliases:
+Type: IU```s```er```s```Action```s```Identity
+Parameter ```s```et```s```: A```s``````s```ignViaIdentityExpanded1, A```s``````s```ignViaIdentity1
+Alia```s```e```s```:
 
 Required: True
-Position: Named
+Po```s```ition: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wildcard character```s```: Fal```s```e
 ```
 
-### -RemoveLicenses
+### -RemoveLicen```s```e```s```
 .
 
 ```yaml
-Type: String[]
-Parameter Sets: AssignExpanded1, AssignViaIdentityExpanded1
-Aliases:
+Type: ```s```tring[]
+Parameter ```s```et```s```: A```s``````s```ignExpanded1, A```s``````s```ignViaIdentityExpanded1
+Alia```s```e```s```:
 
-Required: False
-Position: Named
+Required: Fal```s```e
+Po```s```ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal```s```e
+Accept wildcard character```s```: Fal```s```e
 ```
 
-### -UserId
-key: id of user
+### -U```s```erId
+key: id of u```s```er
 
 ```yaml
-Type: String
-Parameter Sets: AssignExpanded1, Assign1
-Aliases:
+Type: ```s```tring
+Parameter ```s```et```s```: A```s``````s```ignExpanded1, A```s``````s```ign1
+Alia```s```e```s```:
 
 Required: True
-Position: Named
+Po```s```ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal```s```e
+Accept wildcard character```s```: Fal```s```e
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompt```s``` you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Type: ```s```witchParameter
+Parameter ```s```et```s```: (All)
+Alia```s```e```s```: cf
 
-Required: False
-Position: Named
+Required: Fal```s```e
+Po```s```ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal```s```e
+Accept wildcard character```s```: Fal```s```e
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+```s```how```s``` what would happen if the cmdlet run```s```.
+The cmdlet i```s``` not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Type: ```s```witchParameter
+Parameter ```s```et```s```: (All)
+Alia```s```e```s```: wi
 
-Required: False
-Position: Named
+Required: Fal```s```e
+Po```s```ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal```s```e
+Accept wildcard character```s```: Fal```s```e
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParameter```s```
+Thi```s``` cmdlet ```s```upport```s``` the common parameter```s```: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbo```s```e, -WarningAction, and -WarningVariable. For more information, ```s```ee [about_CommonParameter```s```](http://go.micro```s```oft.com/fwlink/?LinkID=113216).
 
-## INPUTS
+## INPUT```s```
 
-### Microsoft.Graph.PowerShell.Models.IPathsBfhtneUsersUserIdMicrosoftGraphAssignlicensePostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-## OUTPUTS
+### Micro```s```oft.Graph.Power```s```hell.Model```s```.IPath```s```BfhtneU```s```er```s```U```s```erIdMicro```s```oftGraphA```s``````s```ignlicen```s```ePo```s```tReque```s```tbodyContentApplicationJ```s```on```s```chema
+### Micro```s```oft.Graph.Power```s```hell.Model```s```.IU```s```er```s```Action```s```Identity
+## OUTPUT```s```
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUser1
-## NOTES
+### Micro```s```oft.Graph.Power```s```hell.Model```s```.IMicro```s```oftGraphU```s```er1
+## NOTE```s```
 
-ALIASES
+ALIA```s```E```s```
 
-COMPLEX PARAMETER PROPERTIES
+COMPLEX PARAMETER PROPERTIE```s```
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameter```s``` de```s```cribed below, con```s```truct a ha```s```h table containing the appropriate propertie```s```. For information on ha```s```h table```s```, run Get-Help about_Ha```s```h_Table```s```.
 
 
-ADDLICENSES <IMicrosoftGraphAssignedLicense[]>: .
-  - `[DisabledPlans <String[]>]`: A collection of the unique identifiers for plans that have been disabled.
-  - `[SkuId <String>]`: The unique identifier for the SKU.
+ADDLICEN```s```E```s``` <IMicro```s```oftGraphA```s``````s```ignedLicen```s```e[]>: .
+  - `[Di```s```abledPlan```s``` <```s```tring[]>]`: A collection of the unique identifier```s``` for plan```s``` that have been di```s```abled.
+  - `[```s```kuId <```s```tring>]`: The unique identifier for the ```s```KU.
 
-BODYPARAMETER <IPathsBfhtneUsersUserIdMicrosoftGraphAssignlicensePostRequestbodyContentApplicationJsonSchema>: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AddLicenses <IMicrosoftGraphAssignedLicense[]>]`: 
-    - `[DisabledPlans <String[]>]`: A collection of the unique identifiers for plans that have been disabled.
-    - `[SkuId <String>]`: The unique identifier for the SKU.
-  - `[RemoveLicenses <String[]>]`: 
+BODYPARAMETER <IPath```s```BfhtneU```s```er```s```U```s```erIdMicro```s```oftGraphA```s``````s```ignlicen```s```ePo```s```tReque```s```tbodyContentApplicationJ```s```on```s```chema>: .
+  - `[(Any) <Object>]`: Thi```s``` indicate```s``` any property can be added to thi```s``` object.
+  - `[AddLicen```s```e```s``` <IMicro```s```oftGraphA```s``````s```ignedLicen```s```e[]>]`: 
+    - `[Di```s```abledPlan```s``` <```s```tring[]>]`: A collection of the unique identifier```s``` for plan```s``` that have been di```s```abled.
+    - `[```s```kuId <```s```tring>]`: The unique identifier for the ```s```KU.
+  - `[RemoveLicen```s```e```s``` <```s```tring[]>]`: 
 
-INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
-  - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
-  - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
-  - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
-  - `[AuthenticationMethodId <String>]`: key: id of authenticationMethod
-  - `[BaseTaskId <String>]`: key: id of baseTask
-  - `[BaseTaskListId <String>]`: key: id of baseTaskList
-  - `[CalendarId <String>]`: key: id of calendar
-  - `[ChatId <String>]`: key: id of chat
-  - `[ChatMessageId <String>]`: key: id of chatMessage
-  - `[ChatMessageId1 <String>]`: key: id of chatMessage
-  - `[CloudPcId <String>]`: key: id of cloudPC
-  - `[ContentTypeId <String>]`: key: id of contentType
-  - `[DeviceEnrollmentConfigurationId <String>]`: key: id of deviceEnrollmentConfiguration
-  - `[DeviceId <String>]`: key: id of device
-  - `[DeviceLogCollectionResponseId <String>]`: key: id of deviceLogCollectionResponse
-  - `[DocumentSetVersionId <String>]`: key: id of documentSetVersion
-  - `[DriveId <String>]`: key: id of drive
-  - `[DriveItemId <String>]`: key: id of driveItem
-  - `[DriveItemVersionId <String>]`: key: id of driveItemVersion
-  - `[EventId <String>]`: key: id of event
-  - `[EventId1 <String>]`: key: id of event
-  - `[ListItemId <String>]`: key: id of listItem
-  - `[ListItemVersionId <String>]`: key: id of listItemVersion
-  - `[MailFolderId <String>]`: key: id of mailFolder
-  - `[MailFolderId1 <String>]`: key: id of mailFolder
-  - `[ManagedDeviceId <String>]`: key: id of managedDevice
-  - `[MessageId <String>]`: key: id of message
-  - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: key: id of microsoftAuthenticatorAuthenticationMethod
-  - `[MobileAppTroubleshootingEventId <String>]`: key: id of mobileAppTroubleshootingEvent
-  - `[NotebookId <String>]`: key: id of notebook
-  - `[OnenotePageId <String>]`: key: id of onenotePage
-  - `[OnenoteSectionId <String>]`: key: id of onenoteSection
-  - `[OutlookTaskFolderId <String>]`: key: id of outlookTaskFolder
-  - `[OutlookTaskGroupId <String>]`: key: id of outlookTaskGroup
-  - `[OutlookTaskId <String>]`: key: id of outlookTask
-  - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: key: id of passwordlessMicrosoftAuthenticatorAuthenticationMethod
-  - `[PermissionId <String>]`: key: id of permission
-  - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
-  - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
-  - `[SubscriptionId <String>]`: key: id of subscription
-  - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation
-  - `[TodoTaskId <String>]`: key: id of todoTask
-  - `[TodoTaskListId <String>]`: key: id of todoTaskList
-  - `[UserId <String>]`: key: id of user
-  - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
+INPUTOBJECT <IU```s```er```s```Action```s```Identity>: Identity Parameter
+  - `[Acce```s``````s```ReviewIn```s```tanceId <```s```tring>]`: key: id of acce```s``````s```ReviewIn```s```tance
+  - `[Acce```s``````s```Review```s```tageId <```s```tring>]`: key: id of acce```s``````s```Review```s```tage
+  - `[AppLogCollectionReque```s```tId <```s```tring>]`: key: id of appLogCollectionReque```s```t
+  - `[AuthenticationMethodId <```s```tring>]`: key: id of authenticationMethod
+  - `[Ba```s```eTa```s```kId <```s```tring>]`: key: id of ba```s```eTa```s```k
+  - `[Ba```s```eTa```s```kLi```s```tId <```s```tring>]`: key: id of ba```s```eTa```s```kLi```s```t
+  - `[CalendarId <```s```tring>]`: key: id of calendar
+  - `[ChatId <```s```tring>]`: key: id of chat
+  - `[ChatMe```s``````s```ageId <```s```tring>]`: key: id of chatMe```s``````s```age
+  - `[ChatMe```s``````s```ageId1 <```s```tring>]`: key: id of chatMe```s``````s```age
+  - `[CloudPcId <```s```tring>]`: key: id of cloudPC
+  - `[ContentTypeId <```s```tring>]`: key: id of contentType
+  - `[DeviceEnrollmentConfigurationId <```s```tring>]`: key: id of deviceEnrollmentConfiguration
+  - `[DeviceId <```s```tring>]`: key: id of device
+  - `[DeviceLogCollectionRe```s```pon```s```eId <```s```tring>]`: key: id of deviceLogCollectionRe```s```pon```s```e
+  - `[Document```s```etVer```s```ionId <```s```tring>]`: key: id of document```s```etVer```s```ion
+  - `[DriveId <```s```tring>]`: key: id of drive
+  - `[DriveItemId <```s```tring>]`: key: id of driveItem
+  - `[DriveItemVer```s```ionId <```s```tring>]`: key: id of driveItemVer```s```ion
+  - `[EventId <```s```tring>]`: key: id of event
+  - `[EventId1 <```s```tring>]`: key: id of event
+  - `[Li```s```tItemId <```s```tring>]`: key: id of li```s```tItem
+  - `[Li```s```tItemVer```s```ionId <```s```tring>]`: key: id of li```s```tItemVer```s```ion
+  - `[MailFolderId <```s```tring>]`: key: id of mailFolder
+  - `[MailFolderId1 <```s```tring>]`: key: id of mailFolder
+  - `[ManagedDeviceId <```s```tring>]`: key: id of managedDevice
+  - `[Me```s``````s```ageId <```s```tring>]`: key: id of me```s``````s```age
+  - `[Micro```s```oftAuthenticatorAuthenticationMethodId <```s```tring>]`: key: id of micro```s```oftAuthenticatorAuthenticationMethod
+  - `[MobileAppTrouble```s```hootingEventId <```s```tring>]`: key: id of mobileAppTrouble```s```hootingEvent
+  - `[NotebookId <```s```tring>]`: key: id of notebook
+  - `[OnenotePageId <```s```tring>]`: key: id of onenotePage
+  - `[Onenote```s```ectionId <```s```tring>]`: key: id of onenote```s```ection
+  - `[OutlookTa```s```kFolderId <```s```tring>]`: key: id of outlookTa```s```kFolder
+  - `[OutlookTa```s```kGroupId <```s```tring>]`: key: id of outlookTa```s```kGroup
+  - `[OutlookTa```s```kId <```s```tring>]`: key: id of outlookTa```s```k
+  - `[Pa```s``````s```wordle```s``````s```Micro```s```oftAuthenticatorAuthenticationMethodId <```s```tring>]`: key: id of pa```s``````s```wordle```s``````s```Micro```s```oftAuthenticatorAuthenticationMethod
+  - `[Permi```s``````s```ionId <```s```tring>]`: key: id of permi```s``````s```ion
+  - `[Re```s```ource```s```pecificPermi```s``````s```ionGrantId <```s```tring>]`: key: id of re```s```ource```s```pecificPermi```s``````s```ionGrant
+  - `[```s```en```s```itivityLabelId <```s```tring>]`: key: id of ```s```en```s```itivityLabel
+  - `[```s```ub```s```criptionId <```s```tring>]`: key: id of ```s```ub```s```cription
+  - `[Team```s```AppIn```s```tallationId <```s```tring>]`: key: id of team```s```AppIn```s```tallation
+  - `[TodoTa```s```kId <```s```tring>]`: key: id of todoTa```s```k
+  - `[TodoTa```s```kLi```s```tId <```s```tring>]`: key: id of todoTa```s```kLi```s```t
+  - `[U```s```erId <```s```tring>]`: key: id of u```s```er
+  - `[Window```s```HelloForBu```s```ine```s``````s```AuthenticationMethodId <```s```tring>]`: key: id of window```s```HelloForBu```s```ine```s``````s```AuthenticationMethod
 
-## RELATED LINKS
+## RELATED LINK```s```
