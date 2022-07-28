@@ -1,263 +1,263 @@
-﻿---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgcontract
+---
+external help file: Microsoft.Graph.I``d``entity.``d``irectoryManagement-help.xml
+Mo``d``ule Name: Microsoft.Graph.I``d``entity.``d``irectoryManagement
+online version: https://``d``ocs.microsoft.com/en-us/powershell/mo``d``ule/microsoft.graph.i``d``entity.``d``irectorymanagement/up``d``ate-mgcontract
 schema: 2.0.0
 ---
 
-# Update-MgContract
+# Up``d``ate-MgContract
 
 ## SYNOPSIS
-Update entity in contracts
+Up``d``ate entity in contracts
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### Up``d``ateExpan``d``e``d`` (``d``efault)
 ```
-Update-MgContract -ContractId <String> [-AdditionalProperties <Hashtable>] [-ContractType <String>]
- [-CustomerId <String>] [-DefaultDomainName <String>] [-DeletedDateTime <DateTime>] [-DisplayName <String>]
- [-Id <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Up``d``ate-MgContract -ContractI``d`` <String> [-A``d````d``itionalProperties <Hashtable>] [-ContractType <String>]
+ [-CustomerI``d`` <String>] [-``d``efault``d``omainName <String>] [-``d``elete``d````d``ateTime <``d``ateTime>] [-``d``isplayName <String>]
+ [-I``d`` <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update
+### Up``d``ate
 ```
-Update-MgContract -ContractId <String> -BodyParameter <IMicrosoftGraphContract> [-PassThru] [-WhatIf]
+Up``d``ate-MgContract -ContractI``d`` <String> -Bo``d``yParameter <IMicrosoftGraphContract> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded
+### Up``d``ateViaI``d``entityExpan``d``e``d``
 ```
-Update-MgContract -InputObject <IIdentityDirectoryManagementIdentity> [-AdditionalProperties <Hashtable>]
- [-ContractType <String>] [-CustomerId <String>] [-DefaultDomainName <String>] [-DeletedDateTime <DateTime>]
- [-DisplayName <String>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Up``d``ate-MgContract -InputObject <II``d``entity``d``irectoryManagementI``d``entity> [-A``d````d``itionalProperties <Hashtable>]
+ [-ContractType <String>] [-CustomerI``d`` <String>] [-``d``efault``d``omainName <String>] [-``d``elete``d````d``ateTime <``d``ateTime>]
+ [-``d``isplayName <String>] [-I``d`` <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity
+### Up``d``ateViaI``d``entity
 ```
-Update-MgContract -InputObject <IIdentityDirectoryManagementIdentity> -BodyParameter <IMicrosoftGraphContract>
+Up``d``ate-MgContract -InputObject <II``d``entity``d``irectoryManagementI``d``entity> -Bo``d``yParameter <IMicrosoftGraphContract>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-## DESCRIPTION
-Update entity in contracts
+## ``d``ESCRIPTION
+Up``d``ate entity in contracts
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -A``d````d``itionalProperties
+A``d````d``itional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: Up``d``ateExpan``d``e``d``, Up``d``ateViaI``d``entityExpan``d``e``d``
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``d``: False
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
-### -BodyParameter
+### -Bo``d``yParameter
 contract
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online an``d`` see NOTES section for BO``d``YPARAMETER properties an``d`` create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphContract
-Parameter Sets: Update, UpdateViaIdentity
+Parameter Sets: Up``d``ate, Up``d``ateViaI``d``entity
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require``d``: True
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
-### -ContractId
-key: id of contract
+### -ContractI``d``
+key: i``d`` of contract
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: Up``d``ateExpan``d``e``d``, Up``d``ate
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require``d``: True
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
 ### -ContractType
 Type of contract.
-Possible values are: SyndicationPartner, BreadthPartner, ResellerPartner.
+Possible values are: Syn``d``icationPartner, Brea``d``thPartner, ResellerPartner.
 See more in the table below.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: Up``d``ateExpan``d``e``d``, Up``d``ateViaI``d``entityExpan``d``e``d``
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``d``: False
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
-### -CustomerId
-The unique identifier for the customer tenant referenced by this partnership.
-Corresponds to the id property of the customer tenant's organization resource.
+### -CustomerI``d``
+The unique i``d``entifier for the customer tenant reference``d`` by this partnership.
+Correspon``d``s to the i``d`` property of the customer tenant's organization resource.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: Up``d``ateExpan``d``e``d``, Up``d``ateViaI``d``entityExpan``d``e``d``
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``d``: False
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
-### -DefaultDomainName
-A copy of the customer tenant's default domain name.
-The copy is made when the partnership with the customer is established.
-It is not automatically updated if the customer tenant's default domain name changes.
+### -``d``efault``d``omainName
+A copy of the customer tenant's ``d``efault ``d``omain name.
+The copy is ma``d``e when the partnership with the customer is establishe``d``.
+It is not automatically up``d``ate``d`` if the customer tenant's ``d``efault ``d``omain name changes.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: Up``d``ateExpan``d``e``d``, Up``d``ateViaI``d``entityExpan``d``e``d``
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``d``: False
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
-### -DeletedDateTime
-Date and time when this object was deleted.
-Always null when the object hasn't been deleted.
+### -``d``elete``d````d``ateTime
+``d``ate an``d`` time when this object was ``d``elete``d``.
+Always null when the object hasn't been ``d``elete``d``.
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: ``d``ateTime
+Parameter Sets: Up``d``ateExpan``d``e``d``, Up``d``ateViaI``d``entityExpan``d``e``d``
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``d``: False
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
-### -DisplayName
-A copy of the customer tenant's display name.
-The copy is made when the partnership with the customer is established.
-It is not automatically updated if the customer tenant's display name changes.
+### -``d``isplayName
+A copy of the customer tenant's ``d``isplay name.
+The copy is ma``d``e when the partnership with the customer is establishe``d``.
+It is not automatically up``d``ate``d`` if the customer tenant's ``d``isplay name changes.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: Up``d``ateExpan``d``e``d``, Up``d``ateViaI``d``entityExpan``d``e``d``
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``d``: False
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
-### -Id
+### -I``d``
 .
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: Up``d``ateExpan``d``e``d``, Up``d``ateViaI``d``entityExpan``d``e``d``
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``d``: False
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
 ### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+I``d``entity Parameter
+To construct, please use Get-Help -Online an``d`` see NOTES section for INPUTOBJECT properties an``d`` create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: II``d``entity``d``irectoryManagementI``d``entity
+Parameter Sets: Up``d``ateViaI``d``entityExpan``d``e``d``, Up``d``ateViaI``d``entity
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require``d``: True
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
 ### -PassThru
-Returns true when the command succeeds
+Returns true when the comman``d`` succee``d``s
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``d``: False
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation before running the cm``d``let.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
-Required: False
-Position: Named
-Default value: None
+Require``d``: False
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what woul``d`` happen if the cm``d``let runs.
+The cm``d``let is not run.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
-Required: False
-Position: Named
-Default value: None
+Require``d``: False
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cm``d``let supports the common parameters: -``d``ebug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, an``d`` -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkI``d``=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContract
+### Microsoft.Graph.PowerShell.Mo``d``els.II``d``entity``d``irectoryManagementI``d``entity
+### Microsoft.Graph.PowerShell.Mo``d``els.IMicrosoftGraphContract
 ## OUTPUTS
 
 ### System.Boolean
@@ -267,51 +267,51 @@ ALIASES
 
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters ``d``escribe``d`` below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphContract>: contract
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-  - `[Id <String>]`: 
-  - `[ContractType <String>]`: Type of contract. Possible values are:  SyndicationPartner, BreadthPartner, ResellerPartner. See more in the table below.
-  - `[CustomerId <String>]`: The unique identifier for the customer tenant referenced by this partnership. Corresponds to the id property of the customer tenant's organization resource.
-  - `[DefaultDomainName <String>]`: A copy of the customer tenant's default domain name. The copy is made when the partnership with the customer is established. It is not automatically updated if the customer tenant's default domain name changes.
-  - `[DisplayName <String>]`: A copy of the customer tenant's display name. The copy is made when the partnership with the customer is established. It is not automatically updated if the customer tenant's display name changes.
+BO``d``YPARAMETER <IMicrosoftGraphContract>: contract
+  - `[(Any) <Object>]`: This in``d``icates any property can be a``d````d``e``d`` to this object.
+  - `[``d``elete``d````d``ateTime <``d``ateTime?>]`: ``d``ate an``d`` time when this object was ``d``elete``d``. Always null when the object hasn't been ``d``elete``d``.
+  - `[I``d`` <String>]`: 
+  - `[ContractType <String>]`: Type of contract. Possible values are:  Syn``d``icationPartner, Brea``d``thPartner, ResellerPartner. See more in the table below.
+  - `[CustomerI``d`` <String>]`: The unique i``d``entifier for the customer tenant reference``d`` by this partnership. Correspon``d``s to the i``d`` property of the customer tenant's organization resource.
+  - `[``d``efault``d``omainName <String>]`: A copy of the customer tenant's ``d``efault ``d``omain name. The copy is ma``d``e when the partnership with the customer is establishe``d``. It is not automatically up``d``ate``d`` if the customer tenant's ``d``efault ``d``omain name changes.
+  - `[``d``isplayName <String>]`: A copy of the customer tenant's ``d``isplay name. The copy is ma``d``e when the partnership with the customer is establishe``d``. It is not automatically up``d``ate``d`` if the customer tenant's ``d``isplay name changes.
 
-INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
-  - `[AdministrativeUnitId <String>]`: key: id of administrativeUnit
-  - `[AllowedValueId <String>]`: key: id of allowedValue
-  - `[AttributeSetId <String>]`: key: id of attributeSet
-  - `[CommandId <String>]`: key: id of command
-  - `[ContractId <String>]`: key: id of contract
-  - `[CustomSecurityAttributeDefinitionId <String>]`: key: id of customSecurityAttributeDefinition
-  - `[DeviceId <String>]`: key: id of device
-  - `[DirectoryObjectId <String>]`: key: id of directoryObject
-  - `[DirectoryRoleId <String>]`: key: id of directoryRole
-  - `[DirectoryRoleTemplateId <String>]`: key: id of directoryRoleTemplate
-  - `[DirectorySettingId <String>]`: key: id of directorySetting
-  - `[DirectorySettingTemplateId <String>]`: key: id of directorySettingTemplate
-  - `[DomainDnsRecordId <String>]`: key: id of domainDnsRecord
-  - `[DomainId <String>]`: key: id of domain
-  - `[ExtensionId <String>]`: key: id of extension
-  - `[FeatureRolloutPolicyId <String>]`: key: id of featureRolloutPolicy
-  - `[IdentityProviderBaseId <String>]`: key: id of identityProviderBase
-  - `[InboundSharedUserProfileUserId <String>]`: key: userId of inboundSharedUserProfile
-  - `[InternalDomainFederationId <String>]`: key: id of internalDomainFederation
-  - `[OrgContactId <String>]`: key: id of orgContact
-  - `[OrganizationId <String>]`: key: id of organization
-  - `[OrganizationalBrandingLocalizationId <String>]`: key: id of organizationalBrandingLocalization
-  - `[OutboundSharedUserProfileUserId <String>]`: key: userId of outboundSharedUserProfile
-  - `[ProfileCardPropertyId <String>]`: key: id of profileCardProperty
-  - `[RecommendationId <String>]`: key: id of recommendation
-  - `[RecommendationResourceId <String>]`: key: id of recommendationResource
-  - `[ScopedRoleMembershipId <String>]`: key: id of scopedRoleMembership
-  - `[SharedEmailDomainId <String>]`: key: id of sharedEmailDomain
-  - `[SharedEmailDomainInvitationId <String>]`: key: id of sharedEmailDomainInvitation
-  - `[SubscribedSkuId <String>]`: key: id of subscribedSku
-  - `[TenantReferenceTenantId <String>]`: key: tenantId of tenantReference
-  - `[UsageRightId <String>]`: key: id of usageRight
-  - `[UserId <String>]`: key: id of user
+INPUTOBJECT <II``d``entity``d``irectoryManagementI``d``entity>: I``d``entity Parameter
+  - `[A``d``ministrativeUnitI``d`` <String>]`: key: i``d`` of a``d``ministrativeUnit
+  - `[Allowe``d``ValueI``d`` <String>]`: key: i``d`` of allowe``d``Value
+  - `[AttributeSetI``d`` <String>]`: key: i``d`` of attributeSet
+  - `[Comman``d``I``d`` <String>]`: key: i``d`` of comman``d``
+  - `[ContractI``d`` <String>]`: key: i``d`` of contract
+  - `[CustomSecurityAttribute``d``efinitionI``d`` <String>]`: key: i``d`` of customSecurityAttribute``d``efinition
+  - `[``d``eviceI``d`` <String>]`: key: i``d`` of ``d``evice
+  - `[``d``irectoryObjectI``d`` <String>]`: key: i``d`` of ``d``irectoryObject
+  - `[``d``irectoryRoleI``d`` <String>]`: key: i``d`` of ``d``irectoryRole
+  - `[``d``irectoryRoleTemplateI``d`` <String>]`: key: i``d`` of ``d``irectoryRoleTemplate
+  - `[``d``irectorySettingI``d`` <String>]`: key: i``d`` of ``d``irectorySetting
+  - `[``d``irectorySettingTemplateI``d`` <String>]`: key: i``d`` of ``d``irectorySettingTemplate
+  - `[``d``omain``d``nsRecor``d``I``d`` <String>]`: key: i``d`` of ``d``omain``d``nsRecor``d``
+  - `[``d``omainI``d`` <String>]`: key: i``d`` of ``d``omain
+  - `[ExtensionI``d`` <String>]`: key: i``d`` of extension
+  - `[FeatureRolloutPolicyI``d`` <String>]`: key: i``d`` of featureRolloutPolicy
+  - `[I``d``entityProvi``d``erBaseI``d`` <String>]`: key: i``d`` of i``d``entityProvi``d``erBase
+  - `[Inboun``d``Share``d``UserProfileUserI``d`` <String>]`: key: userI``d`` of inboun``d``Share``d``UserProfile
+  - `[Internal``d``omainFe``d``erationI``d`` <String>]`: key: i``d`` of internal``d``omainFe``d``eration
+  - `[OrgContactI``d`` <String>]`: key: i``d`` of orgContact
+  - `[OrganizationI``d`` <String>]`: key: i``d`` of organization
+  - `[OrganizationalBran``d``ingLocalizationI``d`` <String>]`: key: i``d`` of organizationalBran``d``ingLocalization
+  - `[Outboun``d``Share``d``UserProfileUserI``d`` <String>]`: key: userI``d`` of outboun``d``Share``d``UserProfile
+  - `[ProfileCar``d``PropertyI``d`` <String>]`: key: i``d`` of profileCar``d``Property
+  - `[Recommen``d``ationI``d`` <String>]`: key: i``d`` of recommen``d``ation
+  - `[Recommen``d``ationResourceI``d`` <String>]`: key: i``d`` of recommen``d``ationResource
+  - `[Scope``d``RoleMembershipI``d`` <String>]`: key: i``d`` of scope``d``RoleMembership
+  - `[Share``d``Email``d``omainI``d`` <String>]`: key: i``d`` of share``d``Email``d``omain
+  - `[Share``d``Email``d``omainInvitationI``d`` <String>]`: key: i``d`` of share``d``Email``d``omainInvitation
+  - `[Subscribe``d``SkuI``d`` <String>]`: key: i``d`` of subscribe``d``Sku
+  - `[TenantReferenceTenantI``d`` <String>]`: key: tenantI``d`` of tenantReference
+  - `[UsageRightI``d`` <String>]`: key: i``d`` of usageRight
+  - `[UserI``d`` <String>]`: key: i``d`` of user
 
-## RELATED LINKS
+## RELATE``d`` LINKS
