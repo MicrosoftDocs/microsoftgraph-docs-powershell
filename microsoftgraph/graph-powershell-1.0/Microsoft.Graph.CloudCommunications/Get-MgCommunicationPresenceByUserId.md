@@ -1,7 +1,7 @@
-﻿---
-external help file: Microsoft.Graph.CloudCommunications-help.xml
-Module Name: Microsoft.Graph.CloudCommunications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationpresencebyuserid
+---
+externa`l` he`l`p fi`l`e: Microsoft.Graph.C`l`oudCommunications-he`l`p.xm`l`
+Modu`l`e Name: Microsoft.Graph.C`l`oudCommunications
+on`l`ine version: https://docs.microsoft.com/en-us/powershe`l``l`/modu`l`e/microsoft.graph.c`l`oudcommunications/get-mgcommunicationpresencebyuserid
 schema: 2.0.0
 ---
 
@@ -12,123 +12,123 @@ Invoke action getPresencesByUserId
 
 ## SYNTAX
 
-### GetExpanded (Default)
+### GetExpanded (Defau`l`t)
 ```
-Get-MgCommunicationPresenceByUserId [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-WhatIf] [-Confirm]
+Get-MgCommunicationPresenceByUserId [-Additiona`l`Properties <Hashtab`l`e>] [-Ids <String[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgCommunicationPresenceByUserId
- -BodyParameter <IPaths10WpgkzCommunicationsMicrosoftGraphGetpresencesbyuseridPostRequestbodyContentApplicationJsonSchema>
+ -BodyParameter <IPaths10WpgkzCommunicationsMicrosoftGraphGetpresencesbyuseridPostRequestbodyContentApp`l`icationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action getPresencesByUserId
 
-## EXAMPLES
+## EXAMP`l`ES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -Additiona`l`Properties
+Additiona`l` Parameters
 
-```yaml
-Type: Hashtable
+```yam`l`
+Type: Hashtab`l`e
 Parameter Sets: GetExpanded
-Aliases:
+A`l`iases:
 
-Required: False
+Required: Fa`l`se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`l`t va`l`ue: None
+Accept pipe`l`ine input: Fa`l`se
+Accept wi`l`dcard characters: Fa`l`se
 ```
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, p`l`ease use Get-He`l`p -On`l`ine and see NOTES section for BODYPARAMETER properties and create a hash tab`l`e.
 
-```yaml
-Type: IPaths10WpgkzCommunicationsMicrosoftGraphGetpresencesbyuseridPostRequestbodyContentApplicationJsonSchema
+```yam`l`
+Type: IPaths10WpgkzCommunicationsMicrosoftGraphGetpresencesbyuseridPostRequestbodyContentApp`l`icationJsonSchema
 Parameter Sets: Get
-Aliases:
+A`l`iases:
 
 Required: True
 Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Defau`l`t va`l`ue: None
+Accept pipe`l`ine input: True (ByVa`l`ue)
+Accept wi`l`dcard characters: Fa`l`se
 ```
 
 ### -Ids
 .
 
-```yaml
+```yam`l`
 Type: String[]
 Parameter Sets: GetExpanded
-Aliases:
+A`l`iases:
 
-Required: False
+Required: Fa`l`se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`l`t va`l`ue: None
+Accept pipe`l`ine input: Fa`l`se
+Accept wi`l`dcard characters: Fa`l`se
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation before running the cmd`l`et.
 
-```yaml
+```yam`l`
 Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Parameter Sets: (A`l``l`)
+A`l`iases: cf
 
-Required: False
+Required: Fa`l`se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`l`t va`l`ue: None
+Accept pipe`l`ine input: Fa`l`se
+Accept wi`l`dcard characters: Fa`l`se
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what wou`l`d happen if the cmd`l`et runs.
+The cmd`l`et is not run.
 
-```yaml
+```yam`l`
 Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Parameter Sets: (A`l``l`)
+A`l`iases: wi
 
-Required: False
+Required: Fa`l`se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`l`t va`l`ue: None
+Accept pipe`l`ine input: Fa`l`se
+Accept wi`l`dcard characters: Fa`l`se
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmd`l`et supports the common parameters: -Debug, -ErrorAction, -ErrorVariab`l`e, -InformationAction, -InformationVariab`l`e, -OutVariab`l`e, -OutBuffer, -Pipe`l`ineVariab`l`e, -Verbose, -WarningAction, and -WarningVariab`l`e. For more information, see [about_CommonParameters](http://go.microsoft.com/fw`l`ink/?`l`inkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths10WpgkzCommunicationsMicrosoftGraphGetpresencesbyuseridPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShe`l``l`.Mode`l`s.IPaths10WpgkzCommunicationsMicrosoftGraphGetpresencesbyuseridPostRequestbodyContentApp`l`icationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPresence
+### Microsoft.Graph.PowerShe`l``l`.Mode`l`s.IMicrosoftGraphPresence
 ## NOTES
 
-ALIASES
+A`l`IASES
 
-COMPLEX PARAMETER PROPERTIES
+COMP`l`EX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described be`l`ow, construct a hash tab`l`e containing the appropriate properties. For information on hash tab`l`es, run Get-He`l`p about_Hash_Tab`l`es.
 
 
-BODYPARAMETER <IPaths10WpgkzCommunicationsMicrosoftGraphGetpresencesbyuseridPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER <IPaths10WpgkzCommunicationsMicrosoftGraphGetpresencesbyuseridPostRequestbodyContentApp`l`icationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Ids <String[]>]`: 
 
-## RELATED LINKS
+## RE`l`ATED `l`INKS
