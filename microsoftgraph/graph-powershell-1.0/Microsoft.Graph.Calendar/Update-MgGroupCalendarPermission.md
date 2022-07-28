@@ -1,316 +1,316 @@
-﻿---
-external help file: Microsoft.Graph.Calendar-help.xml
-Module Name: Microsoft.Graph.Calendar
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/update-mggroupcalendarpermission
-schema: 2.0.0
+---
+extern```a```l help file: Microsoft.Gr```a```ph.C```a```lend```a```r-help.xml
+Module N```a```me: Microsoft.Gr```a```ph.C```a```lend```a```r
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.gr```a```ph.c```a```lend```a```r/upd```a```te-mggroupc```a```lend```a```rpermission
+schem```a```: 2.0.0
 ---
 
-# Update-MgGroupCalendarPermission
+# Upd```a```te-MgGroupC```a```lend```a```rPermission
 
 ## SYNOPSIS
-The permissions of the users with whom the calendar is shared.
+The permissions of the users with whom the c```a```lend```a```r is sh```a```red.
 
-## SYNTAX
+## SYNT```a```X
 
-### UpdateExpanded (Default)
+### Upd```a```teExp```a```nded (Def```a```ult)
 ```
-Update-MgGroupCalendarPermission -CalendarPermissionId <String> -GroupId <String>
- [-AdditionalProperties <Hashtable>] [-AllowedRoles <String[]>] [-EmailAddress <IMicrosoftGraphEmailAddress>]
- [-Id <String>] [-IsInsideOrganization] [-IsRemovable] [-Role <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgGroupCalendarPermission -CalendarPermissionId <String> -GroupId <String>
- -BodyParameter <IMicrosoftGraphCalendarPermission> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Upd```a```te-MgGroupC```a```lend```a```rPermission -C```a```lend```a```rPermissionId <String> -GroupId <String>
+ [-```a```ddition```a```lProperties <H```a```sht```a```ble>] [-```a```llowedRoles <String[]>] [-Em```a```il```a```ddress <IMicrosoftGr```a```phEm```a```il```a```ddress>]
+ [-Id <String>] [-IsInsideOrg```a```niz```a```tion] [-IsRemov```a```ble] [-Role <String>] [-P```a```ssThru] [-Wh```a```tIf] [-Confirm]
+ [<CommonP```a```r```a```meters>]
 ```
 
-### UpdateViaIdentityExpanded
+### Upd```a```te
 ```
-Update-MgGroupCalendarPermission -InputObject <ICalendarIdentity> [-AdditionalProperties <Hashtable>]
- [-AllowedRoles <String[]>] [-EmailAddress <IMicrosoftGraphEmailAddress>] [-Id <String>]
- [-IsInsideOrganization] [-IsRemovable] [-Role <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Upd```a```te-MgGroupC```a```lend```a```rPermission -C```a```lend```a```rPermissionId <String> -GroupId <String>
+ -BodyP```a```r```a```meter <IMicrosoftGr```a```phC```a```lend```a```rPermission> [-P```a```ssThru] [-Wh```a```tIf] [-Confirm] [<CommonP```a```r```a```meters>]
 ```
 
-### UpdateViaIdentity
+### Upd```a```teVi```a```IdentityExp```a```nded
 ```
-Update-MgGroupCalendarPermission -InputObject <ICalendarIdentity>
- -BodyParameter <IMicrosoftGraphCalendarPermission> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Upd```a```te-MgGroupC```a```lend```a```rPermission -InputObject <IC```a```lend```a```rIdentity> [-```a```ddition```a```lProperties <H```a```sht```a```ble>]
+ [-```a```llowedRoles <String[]>] [-Em```a```il```a```ddress <IMicrosoftGr```a```phEm```a```il```a```ddress>] [-Id <String>]
+ [-IsInsideOrg```a```niz```a```tion] [-IsRemov```a```ble] [-Role <String>] [-P```a```ssThru] [-Wh```a```tIf] [-Confirm] [<CommonP```a```r```a```meters>]
+```
+
+### Upd```a```teVi```a```Identity
+```
+Upd```a```te-MgGroupC```a```lend```a```rPermission -InputObject <IC```a```lend```a```rIdentity>
+ -BodyP```a```r```a```meter <IMicrosoftGr```a```phC```a```lend```a```rPermission> [-P```a```ssThru] [-Wh```a```tIf] [-Confirm] [<CommonP```a```r```a```meters>]
 ```
 
 ## DESCRIPTION
-The permissions of the users with whom the calendar is shared.
+The permissions of the users with whom the c```a```lend```a```r is sh```a```red.
 
-## EXAMPLES
+## EX```a```MPLES
 
-## PARAMETERS
+## P```a```R```a```METERS
 
-### -AdditionalProperties
-Additional Parameters
+### -```a```ddition```a```lProperties
+```a```ddition```a```l P```a```r```a```meters
 
-```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+```y```a```ml
+Type: H```a```sht```a```ble
+P```a```r```a```meter Sets: Upd```a```teExp```a```nded, Upd```a```teVi```a```IdentityExp```a```nded
+```a```li```a```ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F```a```lse
+Position: N```a```med
+Def```a```ult v```a```lue: None
+```a```ccept pipeline input: F```a```lse
+```a```ccept wildc```a```rd ch```a```r```a```cters: F```a```lse
 ```
 
-### -AllowedRoles
-List of allowed sharing or delegating permission levels for the calendar.
-Possible values are: none, freeBusyRead, limitedRead, read, write, delegateWithoutPrivateEventAccess, delegateWithPrivateEventAccess, custom.
+### -```a```llowedRoles
+List of ```a```llowed sh```a```ring or deleg```a```ting permission levels for the c```a```lend```a```r.
+Possible v```a```lues ```a```re: none, freeBusyRe```a```d, limitedRe```a```d, re```a```d, write, deleg```a```teWithoutPriv```a```teEvent```a```ccess, deleg```a```teWithPriv```a```teEvent```a```ccess, custom.
 
-```yaml
+```y```a```ml
 Type: String[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+P```a```r```a```meter Sets: Upd```a```teExp```a```nded, Upd```a```teVi```a```IdentityExp```a```nded
+```a```li```a```ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F```a```lse
+Position: N```a```med
+Def```a```ult v```a```lue: None
+```a```ccept pipeline input: F```a```lse
+```a```ccept wildc```a```rd ch```a```r```a```cters: F```a```lse
 ```
 
-### -BodyParameter
-calendarPermission
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -BodyP```a```r```a```meter
+c```a```lend```a```rPermission
+To construct, ple```a```se use Get-Help -Online ```a```nd see NOTES section for BODYP```a```R```a```METER properties ```a```nd cre```a```te ```a``` h```a```sh t```a```ble.
 
-```yaml
-Type: IMicrosoftGraphCalendarPermission
-Parameter Sets: Update, UpdateViaIdentity
-Aliases:
+```y```a```ml
+Type: IMicrosoftGr```a```phC```a```lend```a```rPermission
+P```a```r```a```meter Sets: Upd```a```te, Upd```a```teVi```a```Identity
+```a```li```a```ses:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Position: N```a```med
+Def```a```ult v```a```lue: None
+```a```ccept pipeline input: True (ByV```a```lue)
+```a```ccept wildc```a```rd ch```a```r```a```cters: F```a```lse
 ```
 
-### -CalendarPermissionId
-key: id of calendarPermission
+### -C```a```lend```a```rPermissionId
+key: id of c```a```lend```a```rPermission
 
-```yaml
+```y```a```ml
 Type: String
-Parameter Sets: UpdateExpanded, Update
-Aliases:
+P```a```r```a```meter Sets: Upd```a```teExp```a```nded, Upd```a```te
+```a```li```a```ses:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Position: N```a```med
+Def```a```ult v```a```lue: None
+```a```ccept pipeline input: F```a```lse
+```a```ccept wildc```a```rd ch```a```r```a```cters: F```a```lse
 ```
 
-### -EmailAddress
-emailAddress
-To construct, please use Get-Help -Online and see NOTES section for EMAILADDRESS properties and create a hash table.
+### -Em```a```il```a```ddress
+em```a```il```a```ddress
+To construct, ple```a```se use Get-Help -Online ```a```nd see NOTES section for EM```a```IL```a```DDRESS properties ```a```nd cre```a```te ```a``` h```a```sh t```a```ble.
 
-```yaml
-Type: IMicrosoftGraphEmailAddress
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+```y```a```ml
+Type: IMicrosoftGr```a```phEm```a```il```a```ddress
+P```a```r```a```meter Sets: Upd```a```teExp```a```nded, Upd```a```teVi```a```IdentityExp```a```nded
+```a```li```a```ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F```a```lse
+Position: N```a```med
+Def```a```ult v```a```lue: None
+```a```ccept pipeline input: F```a```lse
+```a```ccept wildc```a```rd ch```a```r```a```cters: F```a```lse
 ```
 
 ### -GroupId
 key: id of group
 
-```yaml
+```y```a```ml
 Type: String
-Parameter Sets: UpdateExpanded, Update
-Aliases:
+P```a```r```a```meter Sets: Upd```a```teExp```a```nded, Upd```a```te
+```a```li```a```ses:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Position: N```a```med
+Def```a```ult v```a```lue: None
+```a```ccept pipeline input: F```a```lse
+```a```ccept wildc```a```rd ch```a```r```a```cters: F```a```lse
 ```
 
 ### -Id
-Read-only.
+Re```a```d-only.
 
-```yaml
+```y```a```ml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+P```a```r```a```meter Sets: Upd```a```teExp```a```nded, Upd```a```teVi```a```IdentityExp```a```nded
+```a```li```a```ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F```a```lse
+Position: N```a```med
+Def```a```ult v```a```lue: None
+```a```ccept pipeline input: F```a```lse
+```a```ccept wildc```a```rd ch```a```r```a```cters: F```a```lse
 ```
 
 ### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+Identity P```a```r```a```meter
+To construct, ple```a```se use Get-Help -Online ```a```nd see NOTES section for INPUTOBJECT properties ```a```nd cre```a```te ```a``` h```a```sh t```a```ble.
 
-```yaml
-Type: ICalendarIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
-Aliases:
+```y```a```ml
+Type: IC```a```lend```a```rIdentity
+P```a```r```a```meter Sets: Upd```a```teVi```a```IdentityExp```a```nded, Upd```a```teVi```a```Identity
+```a```li```a```ses:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Position: N```a```med
+Def```a```ult v```a```lue: None
+```a```ccept pipeline input: True (ByV```a```lue)
+```a```ccept wildc```a```rd ch```a```r```a```cters: F```a```lse
 ```
 
-### -IsInsideOrganization
-True if the user in context (sharee or delegate) is inside the same organization as the calendar owner.
+### -IsInsideOrg```a```niz```a```tion
+True if the user in context (sh```a```ree or deleg```a```te) is inside the s```a```me org```a```niz```a```tion ```a```s the c```a```lend```a```r owner.
 
-```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+```y```a```ml
+Type: SwitchP```a```r```a```meter
+P```a```r```a```meter Sets: Upd```a```teExp```a```nded, Upd```a```teVi```a```IdentityExp```a```nded
+```a```li```a```ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F```a```lse
+Position: N```a```med
+Def```a```ult v```a```lue: None
+```a```ccept pipeline input: F```a```lse
+```a```ccept wildc```a```rd ch```a```r```a```cters: F```a```lse
 ```
 
-### -IsRemovable
-True if the user can be removed from the list of sharees or delegates for the specified calendar, false otherwise.
-The 'My organization' user determines the permissions other people within your organization have to the given calendar.
-You cannot remove 'My organization' as a sharee to a calendar.
+### -IsRemov```a```ble
+True if the user c```a```n be removed from the list of sh```a```rees or deleg```a```tes for the specified c```a```lend```a```r, f```a```lse otherwise.
+The 'My org```a```niz```a```tion' user determines the permissions other people within your org```a```niz```a```tion h```a```ve to the given c```a```lend```a```r.
+You c```a```nnot remove 'My org```a```niz```a```tion' ```a```s ```a``` sh```a```ree to ```a``` c```a```lend```a```r.
 
-```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+```y```a```ml
+Type: SwitchP```a```r```a```meter
+P```a```r```a```meter Sets: Upd```a```teExp```a```nded, Upd```a```teVi```a```IdentityExp```a```nded
+```a```li```a```ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F```a```lse
+Position: N```a```med
+Def```a```ult v```a```lue: None
+```a```ccept pipeline input: F```a```lse
+```a```ccept wildc```a```rd ch```a```r```a```cters: F```a```lse
 ```
 
-### -PassThru
-Returns true when the command succeeds
+### -P```a```ssThru
+Returns true when the comm```a```nd succeeds
 
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
+```y```a```ml
+Type: SwitchP```a```r```a```meter
+P```a```r```a```meter Sets: (```a```ll)
+```a```li```a```ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F```a```lse
+Position: N```a```med
+Def```a```ult v```a```lue: None
+```a```ccept pipeline input: F```a```lse
+```a```ccept wildc```a```rd ch```a```r```a```cters: F```a```lse
 ```
 
 ### -Role
-calendarRoleType
+c```a```lend```a```rRoleType
 
-```yaml
+```y```a```ml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+P```a```r```a```meter Sets: Upd```a```teExp```a```nded, Upd```a```teVi```a```IdentityExp```a```nded
+```a```li```a```ses:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F```a```lse
+Position: N```a```med
+Def```a```ult v```a```lue: None
+```a```ccept pipeline input: F```a```lse
+```a```ccept wildc```a```rd ch```a```r```a```cters: F```a```lse
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirm```a```tion before running the cmdlet.
 
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+```y```a```ml
+Type: SwitchP```a```r```a```meter
+P```a```r```a```meter Sets: (```a```ll)
+```a```li```a```ses: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F```a```lse
+Position: N```a```med
+Def```a```ult v```a```lue: None
+```a```ccept pipeline input: F```a```lse
+```a```ccept wildc```a```rd ch```a```r```a```cters: F```a```lse
 ```
 
-### -WhatIf
-Shows what would happen if the cmdlet runs.
+### -Wh```a```tIf
+Shows wh```a```t would h```a```ppen if the cmdlet runs.
 The cmdlet is not run.
 
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+```y```a```ml
+Type: SwitchP```a```r```a```meter
+P```a```r```a```meter Sets: (```a```ll)
+```a```li```a```ses: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Required: F```a```lse
+Position: N```a```med
+Def```a```ult v```a```lue: None
+```a```ccept pipeline input: F```a```lse
+```a```ccept wildc```a```rd ch```a```r```a```cters: F```a```lse
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonP```a```r```a```meters
+This cmdlet supports the common p```a```r```a```meters: -Debug, -Error```a```ction, -ErrorV```a```ri```a```ble, -Inform```a```tion```a```ction, -Inform```a```tionV```a```ri```a```ble, -OutV```a```ri```a```ble, -OutBuffer, -PipelineV```a```ri```a```ble, -Verbose, -W```a```rning```a```ction, ```a```nd -W```a```rningV```a```ri```a```ble. For more inform```a```tion, see [```a```bout_CommonP```a```r```a```meters](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalendarPermission
+### Microsoft.Gr```a```ph.PowerShell.Models.IC```a```lend```a```rIdentity
+### Microsoft.Gr```a```ph.PowerShell.Models.IMicrosoftGr```a```phC```a```lend```a```rPermission
 ## OUTPUTS
 
-### System.Boolean
+### System.Boole```a```n
 ## NOTES
 
-ALIASES
+```a```LI```a```SES
 
-COMPLEX PARAMETER PROPERTIES
+COMPLEX P```a```R```a```METER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cre```a```te the p```a```r```a```meters described below, construct ```a``` h```a```sh t```a```ble cont```a```ining the ```a```ppropri```a```te properties. For inform```a```tion on h```a```sh t```a```bles, run Get-Help ```a```bout_H```a```sh_T```a```bles.
 
 
-BODYPARAMETER <IMicrosoftGraphCalendarPermission>: calendarPermission
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
-  - `[AllowedRoles <String[]>]`: List of allowed sharing or delegating permission levels for the calendar. Possible values are: none, freeBusyRead, limitedRead, read, write, delegateWithoutPrivateEventAccess, delegateWithPrivateEventAccess, custom.
-  - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Address <String>]`: The email address of the person or entity.
-    - `[Name <String>]`: The display name of the person or entity.
-  - `[IsInsideOrganization <Boolean?>]`: True if the user in context (sharee or delegate) is inside the same organization as the calendar owner.
-  - `[IsRemovable <Boolean?>]`: True if the user can be removed from the list of sharees or delegates for the specified calendar, false otherwise. The 'My organization' user determines the permissions other people within your organization have to the given calendar. You cannot remove 'My organization' as a sharee to a calendar.
-  - `[Role <String>]`: calendarRoleType
+BODYP```a```R```a```METER <IMicrosoftGr```a```phC```a```lend```a```rPermission>: c```a```lend```a```rPermission
+  - `[(```a```ny) <Object>]`: This indic```a```tes ```a```ny property c```a```n be ```a```dded to this object.
+  - `[Id <String>]`: Re```a```d-only.
+  - `[```a```llowedRoles <String[]>]`: List of ```a```llowed sh```a```ring or deleg```a```ting permission levels for the c```a```lend```a```r. Possible v```a```lues ```a```re: none, freeBusyRe```a```d, limitedRe```a```d, re```a```d, write, deleg```a```teWithoutPriv```a```teEvent```a```ccess, deleg```a```teWithPriv```a```teEvent```a```ccess, custom.
+  - `[Em```a```il```a```ddress <IMicrosoftGr```a```phEm```a```il```a```ddress>]`: em```a```il```a```ddress
+    - `[(```a```ny) <Object>]`: This indic```a```tes ```a```ny property c```a```n be ```a```dded to this object.
+    - `[```a```ddress <String>]`: The em```a```il ```a```ddress of the person or entity.
+    - `[N```a```me <String>]`: The displ```a```y n```a```me of the person or entity.
+  - `[IsInsideOrg```a```niz```a```tion <Boole```a```n?>]`: True if the user in context (sh```a```ree or deleg```a```te) is inside the s```a```me org```a```niz```a```tion ```a```s the c```a```lend```a```r owner.
+  - `[IsRemov```a```ble <Boole```a```n?>]`: True if the user c```a```n be removed from the list of sh```a```rees or deleg```a```tes for the specified c```a```lend```a```r, f```a```lse otherwise. The 'My org```a```niz```a```tion' user determines the permissions other people within your org```a```niz```a```tion h```a```ve to the given c```a```lend```a```r. You c```a```nnot remove 'My org```a```niz```a```tion' ```a```s ```a``` sh```a```ree to ```a``` c```a```lend```a```r.
+  - `[Role <String>]`: c```a```lend```a```rRoleType
 
-EMAILADDRESS <IMicrosoftGraphEmailAddress>: emailAddress
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Address <String>]`: The email address of the person or entity.
-  - `[Name <String>]`: The display name of the person or entity.
+EM```a```IL```a```DDRESS <IMicrosoftGr```a```phEm```a```il```a```ddress>: em```a```il```a```ddress
+  - `[(```a```ny) <Object>]`: This indic```a```tes ```a```ny property c```a```n be ```a```dded to this object.
+  - `[```a```ddress <String>]`: The em```a```il ```a```ddress of the person or entity.
+  - `[N```a```me <String>]`: The displ```a```y n```a```me of the person or entity.
 
-INPUTOBJECT <ICalendarIdentity>: Identity Parameter
-  - `[AttachmentId <String>]`: key: id of attachment
-  - `[CalendarGroupId <String>]`: key: id of calendarGroup
-  - `[CalendarId <String>]`: key: id of calendar
-  - `[CalendarPermissionId <String>]`: key: id of calendarPermission
+INPUTOBJECT <IC```a```lend```a```rIdentity>: Identity P```a```r```a```meter
+  - `[```a```tt```a```chmentId <String>]`: key: id of ```a```tt```a```chment
+  - `[C```a```lend```a```rGroupId <String>]`: key: id of c```a```lend```a```rGroup
+  - `[C```a```lend```a```rId <String>]`: key: id of c```a```lend```a```r
+  - `[C```a```lend```a```rPermissionId <String>]`: key: id of c```a```lend```a```rPermission
   - `[EventId <String>]`: key: id of event
   - `[EventId1 <String>]`: key: id of event
   - `[ExtensionId <String>]`: key: id of extension
   - `[GroupId <String>]`: key: id of group
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
-  - `[PlaceId <String>]`: key: id of place
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
+  - `[MultiV```a```lueLeg```a```cyExtendedPropertyId <String>]`: key: id of multiV```a```lueLeg```a```cyExtendedProperty
+  - `[Pl```a```ceId <String>]`: key: id of pl```a```ce
+  - `[SingleV```a```lueLeg```a```cyExtendedPropertyId <String>]`: key: id of singleV```a```lueLeg```a```cyExtendedProperty
   - `[UserId <String>]`: key: id of user
 
-## RELATED LINKS
+## REL```a```TED LINKS
