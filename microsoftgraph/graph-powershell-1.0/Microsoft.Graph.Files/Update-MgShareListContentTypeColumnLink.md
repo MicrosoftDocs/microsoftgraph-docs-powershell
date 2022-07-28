@@ -1,265 +1,265 @@
-﻿---
-external help file: Microsoft.Graph.Files-help.xml
-Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/update-mgsharelistcontenttypecolumnlink
+---
+external help f``i``le: M``i``crosoft.Graph.F``i``les-help.xml
+Module Name: M``i``crosoft.Graph.F``i``les
+onl``i``ne vers``i``on: https://docs.m``i``crosoft.com/en-us/powershell/module/m``i``crosoft.graph.f``i``les/update-mgsharel``i``stcontenttypecolumnl``i``nk
 schema: 2.0.0
 ---
 
-# Update-MgShareListContentTypeColumnLink
+# Update-MgShareL``i``stContentTypeColumnL``i``nk
 
-## SYNOPSIS
-Update the navigation property columnLinks in shares
+## SYNOPS``i``S
+Update the nav``i``gat``i``on property columnL``i``nks ``i``n shares
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
-Update-MgShareListContentTypeColumnLink -ColumnLinkId <String> -ContentTypeId <String>
- -SharedDriveItemId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-Name <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgShareL``i``stContentTypeColumnL``i``nk -ColumnL``i``nk``i``d <Str``i``ng> -ContentType``i``d <Str``i``ng>
+ -SharedDr``i``ve``i``tem``i``d <Str``i``ng> [-Add``i``t``i``onalPropert``i``es <Hashtable>] [-``i``d <Str``i``ng>] [-Name <Str``i``ng>] [-PassThru]
+ [-What``i``f] [-Conf``i``rm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgShareListContentTypeColumnLink -ColumnLinkId <String> -ContentTypeId <String>
- -SharedDriveItemId <String> -BodyParameter <IMicrosoftGraphColumnLink> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgShareL``i``stContentTypeColumnL``i``nk -ColumnL``i``nk``i``d <Str``i``ng> -ContentType``i``d <Str``i``ng>
+ -SharedDr``i``ve``i``tem``i``d <Str``i``ng> -BodyParameter <``i``M``i``crosoftGraphColumnL``i``nk> [-PassThru] [-What``i``f] [-Conf``i``rm]
  [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded
+### UpdateV``i``a``i``dent``i``tyExpanded
 ```
-Update-MgShareListContentTypeColumnLink -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-Name <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgShareListContentTypeColumnLink -InputObject <IFilesIdentity>
- -BodyParameter <IMicrosoftGraphColumnLink> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgShareL``i``stContentTypeColumnL``i``nk -``i``nputObject <``i``F``i``les``i``dent``i``ty> [-Add``i``t``i``onalPropert``i``es <Hashtable>]
+ [-``i``d <Str``i``ng>] [-Name <Str``i``ng>] [-PassThru] [-What``i``f] [-Conf``i``rm] [<CommonParameters>]
 ```
 
-## DESCRIPTION
-Update the navigation property columnLinks in shares
+### UpdateV``i``a``i``dent``i``ty
+```
+Update-MgShareL``i``stContentTypeColumnL``i``nk -``i``nputObject <``i``F``i``les``i``dent``i``ty>
+ -BodyParameter <``i``M``i``crosoftGraphColumnL``i``nk> [-PassThru] [-What``i``f] [-Conf``i``rm] [<CommonParameters>]
+```
+
+## DESCR``i``PT``i``ON
+Update the nav``i``gat``i``on property columnL``i``nks ``i``n shares
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -Add``i``t``i``onalPropert``i``es
+Add``i``t``i``onal Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Parameter Sets: UpdateExpanded, UpdateV``i``a``i``dent``i``tyExpanded
+Al``i``ases:
 
-Required: False
-Position: Named
+Requ``i``red: False
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
 ### -BodyParameter
-columnLink
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+columnL``i``nk
+To construct, please use Get-Help -Onl``i``ne and see NOTES sect``i``on for BODYPARAMETER propert``i``es and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphColumnLink
-Parameter Sets: Update, UpdateViaIdentity
-Aliases:
+Type: ``i``M``i``crosoftGraphColumnL``i``nk
+Parameter Sets: Update, UpdateV``i``a``i``dent``i``ty
+Al``i``ases:
 
-Required: True
-Position: Named
+Requ``i``red: True
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: True (ByValue)
+Accept w``i``ldcard characters: False
 ```
 
-### -ColumnLinkId
-key: id of columnLink
+### -ColumnL``i``nk``i``d
+key: ``i``d of columnL``i``nk
 
 ```yaml
-Type: String
+Type: Str``i``ng
 Parameter Sets: UpdateExpanded, Update
-Aliases:
+Al``i``ases:
 
-Required: True
-Position: Named
+Requ``i``red: True
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
-### -ContentTypeId
-key: id of contentType
+### -ContentType``i``d
+key: ``i``d of contentType
 
 ```yaml
-Type: String
+Type: Str``i``ng
 Parameter Sets: UpdateExpanded, Update
-Aliases:
+Al``i``ases:
 
-Required: True
-Position: Named
+Requ``i``red: True
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
-### -Id
+### -``i``d
 .
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Type: Str``i``ng
+Parameter Sets: UpdateExpanded, UpdateV``i``a``i``dent``i``tyExpanded
+Al``i``ases:
 
-Required: False
-Position: Named
+Requ``i``red: False
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -``i``nputObject
+``i``dent``i``ty Parameter
+To construct, please use Get-Help -Onl``i``ne and see NOTES sect``i``on for ``i``NPUTOBJECT propert``i``es and create a hash table.
 
 ```yaml
-Type: IFilesIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
-Aliases:
+Type: ``i``F``i``les``i``dent``i``ty
+Parameter Sets: UpdateV``i``a``i``dent``i``tyExpanded, UpdateV``i``a``i``dent``i``ty
+Al``i``ases:
 
-Required: True
-Position: Named
+Requ``i``red: True
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: True (ByValue)
+Accept w``i``ldcard characters: False
 ```
 
 ### -Name
-The name of the column in this content type.
+The name of the column ``i``n th``i``s content type.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Type: Str``i``ng
+Parameter Sets: UpdateExpanded, UpdateV``i``a``i``dent``i``tyExpanded
+Al``i``ases:
 
-Required: False
-Position: Named
+Requ``i``red: False
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
 ### -PassThru
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: Sw``i``tchParameter
 Parameter Sets: (All)
-Aliases:
+Al``i``ases:
 
-Required: False
-Position: Named
+Requ``i``red: False
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
-### -SharedDriveItemId
-key: id of sharedDriveItem
+### -SharedDr``i``ve``i``tem``i``d
+key: ``i``d of sharedDr``i``ve``i``tem
 
 ```yaml
-Type: String
+Type: Str``i``ng
 Parameter Sets: UpdateExpanded, Update
-Aliases:
+Al``i``ases:
 
-Required: True
-Position: Named
+Requ``i``red: True
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
+### -Conf``i``rm
+Prompts you for conf``i``rmat``i``on before runn``i``ng the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: Sw``i``tchParameter
 Parameter Sets: (All)
-Aliases: cf
+Al``i``ases: cf
 
-Required: False
-Position: Named
+Requ``i``red: False
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+### -What``i``f
+Shows what would happen ``i``f the cmdlet runs.
+The cmdlet ``i``s not run.
 
 ```yaml
-Type: SwitchParameter
+Type: Sw``i``tchParameter
 Parameter Sets: (All)
-Aliases: wi
+Al``i``ases: w``i``
 
-Required: False
-Position: Named
+Requ``i``red: False
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Th``i``s cmdlet supports the common parameters: -Debug, -ErrorAct``i``on, -ErrorVar``i``able, -``i``nformat``i``onAct``i``on, -``i``nformat``i``onVar``i``able, -OutVar``i``able, -OutBuffer, -P``i``pel``i``neVar``i``able, -Verbose, -Warn``i``ngAct``i``on, and -Warn``i``ngVar``i``able. For more ``i``nformat``i``on, see [about_CommonParameters](http://go.m``i``crosoft.com/fwl``i``nk/?L``i``nk``i``D=113216).
 
-## INPUTS
+## ``i``NPUTS
 
-### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnLink
+### M``i``crosoft.Graph.PowerShell.Models.``i``F``i``les``i``dent``i``ty
+### M``i``crosoft.Graph.PowerShell.Models.``i``M``i``crosoftGraphColumnL``i``nk
 ## OUTPUTS
 
 ### System.Boolean
 ## NOTES
 
-ALIASES
+AL``i``ASES
 
-COMPLEX PARAMETER PROPERTIES
+COMPLEX PARAMETER PROPERT``i``ES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters descr``i``bed below, construct a hash table conta``i``n``i``ng the appropr``i``ate propert``i``es. For ``i``nformat``i``on on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphColumnLink>: columnLink
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
-  - `[Name <String>]`: The name of the column  in this content type.
+BODYPARAMETER <``i``M``i``crosoftGraphColumnL``i``nk>: columnL``i``nk
+  - `[(Any) <Object>]`: Th``i``s ``i``nd``i``cates any property can be added to th``i``s object.
+  - `[``i``d <Str``i``ng>]`: 
+  - `[Name <Str``i``ng>]`: The name of the column  ``i``n th``i``s content type.
 
-INPUTOBJECT <IFilesIdentity>: Identity Parameter
-  - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
-  - `[ColumnLinkId <String>]`: key: id of columnLink
-  - `[ContentTypeId <String>]`: key: id of contentType
-  - `[ContentTypeId1 <String>]`: key: id of contentType
-  - `[DocumentSetVersionId <String>]`: key: id of documentSetVersion
-  - `[DriveId <String>]`: key: id of drive
-  - `[DriveItemId <String>]`: key: id of driveItem
-  - `[DriveItemId1 <String>]`: key: id of driveItem
-  - `[DriveItemVersionId <String>]`: key: id of driveItemVersion
-  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
-  - `[GroupId <String>]`: key: id of group
-  - `[Interval <String>]`: Usage: interval='{interval}'
-  - `[ListItemId <String>]`: key: id of listItem
-  - `[ListItemVersionId <String>]`: key: id of listItemVersion
-  - `[PermissionId <String>]`: key: id of permission
-  - `[Q <String>]`: Usage: q='{q}'
-  - `[RichLongRunningOperationId <String>]`: key: id of richLongRunningOperation
-  - `[SharedDriveItemId <String>]`: key: id of sharedDriveItem
-  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[SubscriptionId <String>]`: key: id of subscription
-  - `[ThumbnailSetId <String>]`: key: id of thumbnailSet
-  - `[Token <String>]`: Usage: token='{token}'
-  - `[UserId <String>]`: key: id of user
+``i``NPUTOBJECT <``i``F``i``les``i``dent``i``ty>: ``i``dent``i``ty Parameter
+  - `[ColumnDef``i``n``i``t``i``on``i``d <Str``i``ng>]`: key: ``i``d of columnDef``i``n``i``t``i``on
+  - `[ColumnL``i``nk``i``d <Str``i``ng>]`: key: ``i``d of columnL``i``nk
+  - `[ContentType``i``d <Str``i``ng>]`: key: ``i``d of contentType
+  - `[ContentType``i``d1 <Str``i``ng>]`: key: ``i``d of contentType
+  - `[DocumentSetVers``i``on``i``d <Str``i``ng>]`: key: ``i``d of documentSetVers``i``on
+  - `[Dr``i``ve``i``d <Str``i``ng>]`: key: ``i``d of dr``i``ve
+  - `[Dr``i``ve``i``tem``i``d <Str``i``ng>]`: key: ``i``d of dr``i``ve``i``tem
+  - `[Dr``i``ve``i``tem``i``d1 <Str``i``ng>]`: key: ``i``d of dr``i``ve``i``tem
+  - `[Dr``i``ve``i``temVers``i``on``i``d <Str``i``ng>]`: key: ``i``d of dr``i``ve``i``temVers``i``on
+  - `[EndDateT``i``me <Str``i``ng>]`: Usage: endDateT``i``me='{endDateT``i``me}'
+  - `[Group``i``d <Str``i``ng>]`: key: ``i``d of group
+  - `[``i``nterval <Str``i``ng>]`: Usage: ``i``nterval='{``i``nterval}'
+  - `[L``i``st``i``tem``i``d <Str``i``ng>]`: key: ``i``d of l``i``st``i``tem
+  - `[L``i``st``i``temVers``i``on``i``d <Str``i``ng>]`: key: ``i``d of l``i``st``i``temVers``i``on
+  - `[Perm``i``ss``i``on``i``d <Str``i``ng>]`: key: ``i``d of perm``i``ss``i``on
+  - `[Q <Str``i``ng>]`: Usage: q='{q}'
+  - `[R``i``chLongRunn``i``ngOperat``i``on``i``d <Str``i``ng>]`: key: ``i``d of r``i``chLongRunn``i``ngOperat``i``on
+  - `[SharedDr``i``ve``i``tem``i``d <Str``i``ng>]`: key: ``i``d of sharedDr``i``ve``i``tem
+  - `[StartDateT``i``me <Str``i``ng>]`: Usage: startDateT``i``me='{startDateT``i``me}'
+  - `[Subscr``i``pt``i``on``i``d <Str``i``ng>]`: key: ``i``d of subscr``i``pt``i``on
+  - `[Thumbna``i``lSet``i``d <Str``i``ng>]`: key: ``i``d of thumbna``i``lSet
+  - `[Token <Str``i``ng>]`: Usage: token='{token}'
+  - `[User``i``d <Str``i``ng>]`: key: ``i``d of user
 
-## RELATED LINKS
+## RELATED L``i``NKS
