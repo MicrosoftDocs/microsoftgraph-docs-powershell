@@ -100,11 +100,16 @@ function Add-Back-Ticks{
          if($content -match "[[+*?]"){
             $content = $content -replace '[[+*?]','\$&'
          }
-            $splitted = $_.Split(" ")
+            $splitted = $content.Split(" ")
+			$org = $splitted[1]
 			$furtherSplitted = $splitted.Split(":")
-			$concat = '`'+$furtherSplitted[1]+'`'
-			$text = $text -replace $furtherSplitted[1],$concat
-         
+			if($furtherSplitted[1] -contains '`'){
+			}else{
+				if($furtherSplitted[1].endswith('>')){
+				$concat = '`'+$furtherSplitted[1]+'`'
+				$replace = $org -replace $furtherSplitted[1],$concat
+				$text = $text -replace $org,$replace
+				}
        } 
     }
     $text > $tempFilePath
