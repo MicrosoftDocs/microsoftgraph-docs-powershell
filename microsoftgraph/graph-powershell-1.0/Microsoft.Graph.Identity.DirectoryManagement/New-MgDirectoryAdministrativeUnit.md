@@ -1,284 +1,284 @@
-﻿---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryadministrativeunit
+---
+external help file: Microsoft.Graph.I````d````entity.````d````irectoryManagement-help.xml
+Mo````d````ule Name: Microsoft.Graph.I````d````entity.````d````irectoryManagement
+online version: https://````d````ocs.microsoft.com/en-us/powershell/mo````d````ule/microsoft.graph.i````d````entity.````d````irectorymanagement/new-mg````d````irectorya````d````ministrativeunit
 schema: 2.0.0
 ---
 
-# New-MgDirectoryAdministrativeUnit
+# New-Mg````d````irectoryA````d````ministrativeUnit
 
 ## SYNOPSIS
-Create new navigation property to administrativeUnits for directory
+Create new navigation property to a````d````ministrativeUnits for ````d````irectory
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpan````d````e````d````1 (````d````efault)
 ```
-New-MgDirectoryAdministrativeUnit [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>]
- [-Description <String>] [-DisplayName <String>] [-Extensions <IMicrosoftGraphExtension[]>] [-Id <String>]
- [-Members <IMicrosoftGraphDirectoryObject[]>] [-ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership[]>]
+New-Mg````d````irectoryA````d````ministrativeUnit [-A````d````````d````itionalProperties <Hashtable>] [-````d````elete````d````````d````ateTime <````d````ateTime>]
+ [-````d````escription <String>] [-````d````isplayName <String>] [-Extensions <IMicrosoftGraphExtension[]>] [-I````d```` <String>]
+ [-Members <IMicrosoftGraph````d````irectoryObject[]>] [-Scope````d````RoleMembers <IMicrosoftGraphScope````d````RoleMembership[]>]
  [-Visibility <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgDirectoryAdministrativeUnit -BodyParameter <IMicrosoftGraphAdministrativeUnit> [-WhatIf] [-Confirm]
+New-Mg````d````irectoryA````d````ministrativeUnit -Bo````d````yParameter <IMicrosoftGraphA````d````ministrativeUnit> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-## DESCRIPTION
-Create new navigation property to administrativeUnits for directory
+## ````d````ESCRIPTION
+Create new navigation property to a````d````ministrativeUnits for ````d````irectory
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -A````d````````d````itionalProperties
+A````d````````d````itional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan````d````e````d````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require````d````: False
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
-### -BodyParameter
-administrativeUnit
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -Bo````d````yParameter
+a````d````ministrativeUnit
+To construct, please use Get-Help -Online an````d```` see NOTES section for BO````d````YPARAMETER properties an````d```` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAdministrativeUnit
+Type: IMicrosoftGraphA````d````ministrativeUnit
 Parameter Sets: Create1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require````d````: True
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
-### -DeletedDateTime
-Date and time when this object was deleted.
-Always null when the object hasn't been deleted.
+### -````d````elete````d````````d````ateTime
+````d````ate an````d```` time when this object was ````d````elete````d````.
+Always null when the object hasn't been ````d````elete````d````.
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded1
+Type: ````d````ateTime
+Parameter Sets: CreateExpan````d````e````d````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require````d````: False
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
-### -Description
-An optional description for the administrative unit.
+### -````d````escription
+An optional ````d````escription for the a````d````ministrative unit.
 Supports $filter (eq, ne, in, startsWith), $search.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan````d````e````d````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require````d````: False
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
-### -DisplayName
-Display name for the administrative unit.
-Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderBy.
+### -````d````isplayName
+````d````isplay name for the a````d````ministrative unit.
+Supports $filter (eq, ne, not, ge, le, in, startsWith, an````d```` eq on null values), $search, an````d```` $or````d````erBy.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan````d````e````d````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require````d````: False
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
 ### -Extensions
-The collection of open extensions defined for this administrative unit.
+The collection of open extensions ````d````efine````d```` for this a````d````ministrative unit.
 Nullable.
-To construct, please use Get-Help -Online and see NOTES section for EXTENSIONS properties and create a hash table.
+To construct, please use Get-Help -Online an````d```` see NOTES section for EXTENSIONS properties an````d```` create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphExtension[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan````d````e````d````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require````d````: False
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
-### -Id
+### -I````d````
 .
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan````d````e````d````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require````d````: False
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
 ### -Members
-Users and groups that are members of this administrative unit.
-Supports $expand.
-To construct, please use Get-Help -Online and see NOTES section for MEMBERS properties and create a hash table.
+Users an````d```` groups that are members of this a````d````ministrative unit.
+Supports $expan````d````.
+To construct, please use Get-Help -Online an````d```` see NOTES section for MEMBERS properties an````d```` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
-Parameter Sets: CreateExpanded1
+Type: IMicrosoftGraph````d````irectoryObject[]
+Parameter Sets: CreateExpan````d````e````d````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require````d````: False
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
-### -ScopedRoleMembers
-Scoped-role members of this administrative unit.
-To construct, please use Get-Help -Online and see NOTES section for SCOPEDROLEMEMBERS properties and create a hash table.
+### -Scope````d````RoleMembers
+Scope````d````-role members of this a````d````ministrative unit.
+To construct, please use Get-Help -Online an````d```` see NOTES section for SCOPE````d````ROLEMEMBERS properties an````d```` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphScopedRoleMembership[]
-Parameter Sets: CreateExpanded1
+Type: IMicrosoftGraphScope````d````RoleMembership[]
+Parameter Sets: CreateExpan````d````e````d````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require````d````: False
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
 ### -Visibility
-Controls whether the administrative unit and its members are hidden or public.
-Can be set to HiddenMembership or Public.
-If not set, the default behavior is Public.
-When set to HiddenMembership, only members of the administrative unit can list other members of the administrative unit.
+Controls whether the a````d````ministrative unit an````d```` its members are hi````d````````d````en or public.
+Can be set to Hi````d````````d````enMembership or Public.
+If not set, the ````d````efault behavior is Public.
+When set to Hi````d````````d````enMembership, only members of the a````d````ministrative unit can list other members of the a````d````ministrative unit.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpan````d````e````d````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require````d````: False
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation before running the cm````d````let.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
-Required: False
-Position: Named
-Default value: None
+Require````d````: False
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what woul````d```` happen if the cm````d````let runs.
+The cm````d````let is not run.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
-Required: False
-Position: Named
-Default value: None
+Require````d````: False
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cm````d````let supports the common parameters: -````d````ebug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, an````d```` -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkI````d````=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAdministrativeUnit
+### Microsoft.Graph.PowerShell.Mo````d````els.IMicrosoftGraphA````d````ministrativeUnit
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAdministrativeUnit
+### Microsoft.Graph.PowerShell.Mo````d````els.IMicrosoftGraphA````d````ministrativeUnit
 ## NOTES
 
 ALIASES
 
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters ````d````escribe````d```` below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphAdministrativeUnit>: administrativeUnit
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-  - `[Id <String>]`: 
-  - `[Description <String>]`: An optional description for the administrative unit. Supports $filter (eq, ne, in, startsWith), $search.
-  - `[DisplayName <String>]`: Display name for the administrative unit. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderBy.
-  - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for this administrative unit. Nullable.
-    - `[Id <String>]`: 
-  - `[Members <IMicrosoftGraphDirectoryObject[]>]`: Users and groups that are members of this administrative unit. Supports $expand.
-    - `[Id <String>]`: 
-    - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-  - `[ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership[]>]`: Scoped-role members of this administrative unit.
-    - `[Id <String>]`: 
-    - `[AdministrativeUnitId <String>]`: Unique identifier for the administrative unit that the directory role is scoped to
-    - `[RoleId <String>]`: Unique identifier for the directory role that the member is in.
-    - `[RoleMemberInfo <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-  - `[Visibility <String>]`: Controls whether the administrative unit and its members are hidden or public. Can be set to HiddenMembership or Public. If not set, the default behavior is Public. When set to HiddenMembership, only members of the administrative unit can list other members of the administrative unit.
+BO````d````YPARAMETER <IMicrosoftGraphA````d````ministrativeUnit>: a````d````ministrativeUnit
+  - `[(Any) <Object>]`: This in````d````icates any property can be a````d````````d````e````d```` to this object.
+  - `[````d````elete````d````````d````ateTime <````d````ateTime?>]`: ````d````ate an````d```` time when this object was ````d````elete````d````. Always null when the object hasn't been ````d````elete````d````.
+  - `[I````d```` <String>]`: 
+  - `[````d````escription <String>]`: An optional ````d````escription for the a````d````ministrative unit. Supports $filter (eq, ne, in, startsWith), $search.
+  - `[````d````isplayName <String>]`: ````d````isplay name for the a````d````ministrative unit. Supports $filter (eq, ne, not, ge, le, in, startsWith, an````d```` eq on null values), $search, an````d```` $or````d````erBy.
+  - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions ````d````efine````d```` for this a````d````ministrative unit. Nullable.
+    - `[I````d```` <String>]`: 
+  - `[Members <IMicrosoftGraph````d````irectoryObject[]>]`: Users an````d```` groups that are members of this a````d````ministrative unit. Supports $expan````d````.
+    - `[I````d```` <String>]`: 
+    - `[````d````elete````d````````d````ateTime <````d````ateTime?>]`: ````d````ate an````d```` time when this object was ````d````elete````d````. Always null when the object hasn't been ````d````elete````d````.
+  - `[Scope````d````RoleMembers <IMicrosoftGraphScope````d````RoleMembership[]>]`: Scope````d````-role members of this a````d````ministrative unit.
+    - `[I````d```` <String>]`: 
+    - `[A````d````ministrativeUnitI````d```` <String>]`: Unique i````d````entifier for the a````d````ministrative unit that the ````d````irectory role is scope````d```` to
+    - `[RoleI````d```` <String>]`: Unique i````d````entifier for the ````d````irectory role that the member is in.
+    - `[RoleMemberInfo <IMicrosoftGraphI````d````entity>]`: i````d````entity
+      - `[(Any) <Object>]`: This in````d````icates any property can be a````d````````d````e````d```` to this object.
+      - `[````d````isplayName <String>]`: The i````d````entity's ````d````isplay name. Note that this may not always be available or up to ````d````ate. For example, if a user changes their ````d````isplay name, the API may show the new value in a future response, but the items associate````d```` with the user won't show up as having change````d```` when using ````d````elta.
+      - `[I````d```` <String>]`: Unique i````d````entifier for the i````d````entity.
+  - `[Visibility <String>]`: Controls whether the a````d````ministrative unit an````d```` its members are hi````d````````d````en or public. Can be set to Hi````d````````d````enMembership or Public. If not set, the ````d````efault behavior is Public. When set to Hi````d````````d````enMembership, only members of the a````d````ministrative unit can list other members of the a````d````ministrative unit.
 
-EXTENSIONS <IMicrosoftGraphExtension[]>: The collection of open extensions defined for this administrative unit. Nullable.
-  - `[Id <String>]`: 
+EXTENSIONS <IMicrosoftGraphExtension[]>: The collection of open extensions ````d````efine````d```` for this a````d````ministrative unit. Nullable.
+  - `[I````d```` <String>]`: 
 
-MEMBERS <IMicrosoftGraphDirectoryObject[]>: Users and groups that are members of this administrative unit. Supports $expand.
-  - `[Id <String>]`: 
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
+MEMBERS <IMicrosoftGraph````d````irectoryObject[]>: Users an````d```` groups that are members of this a````d````ministrative unit. Supports $expan````d````.
+  - `[I````d```` <String>]`: 
+  - `[````d````elete````d````````d````ateTime <````d````ateTime?>]`: ````d````ate an````d```` time when this object was ````d````elete````d````. Always null when the object hasn't been ````d````elete````d````.
 
-SCOPEDROLEMEMBERS <IMicrosoftGraphScopedRoleMembership[]>: Scoped-role members of this administrative unit.
-  - `[Id <String>]`: 
-  - `[AdministrativeUnitId <String>]`: Unique identifier for the administrative unit that the directory role is scoped to
-  - `[RoleId <String>]`: Unique identifier for the directory role that the member is in.
-  - `[RoleMemberInfo <IMicrosoftGraphIdentity>]`: identity
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
+SCOPE````d````ROLEMEMBERS <IMicrosoftGraphScope````d````RoleMembership[]>: Scope````d````-role members of this a````d````ministrative unit.
+  - `[I````d```` <String>]`: 
+  - `[A````d````ministrativeUnitI````d```` <String>]`: Unique i````d````entifier for the a````d````ministrative unit that the ````d````irectory role is scope````d```` to
+  - `[RoleI````d```` <String>]`: Unique i````d````entifier for the ````d````irectory role that the member is in.
+  - `[RoleMemberInfo <IMicrosoftGraphI````d````entity>]`: i````d````entity
+    - `[(Any) <Object>]`: This in````d````icates any property can be a````d````````d````e````d```` to this object.
+    - `[````d````isplayName <String>]`: The i````d````entity's ````d````isplay name. Note that this may not always be available or up to ````d````ate. For example, if a user changes their ````d````isplay name, the API may show the new value in a future response, but the items associate````d```` with the user won't show up as having change````d```` when using ````d````elta.
+    - `[I````d```` <String>]`: Unique i````d````entifier for the i````d````entity.
 
-## RELATED LINKS
+## RELATE````d```` LINKS
