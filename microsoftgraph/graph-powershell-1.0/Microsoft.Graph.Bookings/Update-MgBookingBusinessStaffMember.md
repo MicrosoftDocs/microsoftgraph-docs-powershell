@@ -1,50 +1,50 @@
-﻿---
-external help file: Microsoft.Graph.Bookings-help.xml
-Module Name: Microsoft.Graph.Bookings
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessstaffmember
+---
+external help file: Micr`o`s`o`ft.Graph.B`o``o`kings-help.xml
+M`o`dule Name: Micr`o`s`o`ft.Graph.B`o``o`kings
+`o`nline versi`o`n: https://d`o`cs.micr`o`s`o`ft.c`o`m/en-us/p`o`wershell/m`o`dule/micr`o`s`o`ft.graph.b`o``o`kings/update-mgb`o``o`kingbusinessstaffmember
 schema: 2.0.0
 ---
 
-# Update-MgBookingBusinessStaffMember
+# Update-MgB`o``o`kingBusinessStaffMember
 
-## SYNOPSIS
-Update the navigation property staffMembers in solutions
+## SYN`o`PSIS
+Update the navigati`o`n pr`o`perty staffMembers in s`o`luti`o`ns
 
 ## SYNTAX
 
 ### UpdateExpanded1 (Default)
 ```
-Update-MgBookingBusinessStaffMember -BookingBusinessId <String> -BookingStaffMemberBaseId <String>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgB`o``o`kingBusinessStaffMember -B`o``o`kingBusinessId <String> -B`o``o`kingStaffMemberBaseId <String>
+ [-Additi`o`nalPr`o`perties <Hashtable>] [-Id <String>] [-PassThru] [-WhatIf] [-C`o`nfirm] [<C`o`mm`o`nParameters>]
 ```
 
 ### Update1
 ```
-Update-MgBookingBusinessStaffMember -BookingBusinessId <String> -BookingStaffMemberBaseId <String>
- -BodyParameter <Hashtable> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgB`o``o`kingBusinessStaffMember -B`o``o`kingBusinessId <String> -B`o``o`kingStaffMemberBaseId <String>
+ -B`o`dyParameter <Hashtable> [-PassThru] [-WhatIf] [-C`o`nfirm] [<C`o`mm`o`nParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
 ```
-Update-MgBookingBusinessStaffMember -InputObject <IBookingsIdentity> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgB`o``o`kingBusinessStaffMember -Input`o`bject <IB`o``o`kingsIdentity> [-Additi`o`nalPr`o`perties <Hashtable>]
+ [-Id <String>] [-PassThru] [-WhatIf] [-C`o`nfirm] [<C`o`mm`o`nParameters>]
 ```
 
 ### UpdateViaIdentity1
 ```
-Update-MgBookingBusinessStaffMember -InputObject <IBookingsIdentity> -BodyParameter <Hashtable> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgB`o``o`kingBusinessStaffMember -Input`o`bject <IB`o``o`kingsIdentity> -B`o`dyParameter <Hashtable> [-PassThru]
+ [-WhatIf] [-C`o`nfirm] [<C`o`mm`o`nParameters>]
 ```
 
-## DESCRIPTION
-Update the navigation property staffMembers in solutions
+## DESCRIPTI`o`N
+Update the navigati`o`n pr`o`perty staffMembers in s`o`luti`o`ns
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -Additi`o`nalPr`o`perties
+Additi`o`nal Parameters
 
 ```yaml
 Type: Hashtable
@@ -52,14 +52,14 @@ Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P`o`siti`o`n: Named
+Default value: N`o`ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
-Booking entities that provide a display name.
+### -B`o`dyParameter
+B`o``o`king entities that pr`o`vide a display name.
 
 ```yaml
 Type: Hashtable
@@ -67,14 +67,14 @@ Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
+P`o`siti`o`n: Named
+Default value: N`o`ne
 Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -BookingBusinessId
-key: id of bookingBusiness
+### -B`o``o`kingBusinessId
+key: id `o`f b`o``o`kingBusiness
 
 ```yaml
 Type: String
@@ -82,14 +82,14 @@ Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
+P`o`siti`o`n: Named
+Default value: N`o`ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BookingStaffMemberBaseId
-key: id of bookingStaffMemberBase
+### -B`o``o`kingStaffMemberBaseId
+key: id `o`f b`o``o`kingStaffMemberBase
 
 ```yaml
 Type: String
@@ -97,8 +97,8 @@ Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
+P`o`siti`o`n: Named
+Default value: N`o`ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -112,30 +112,30 @@ Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P`o`siti`o`n: Named
+Default value: N`o`ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -InputObject
+### -Input`o`bject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+T`o` c`o`nstruct, please use Get-Help -`o`nline and see N`o`TES secti`o`n f`o`r INPUT`o`BJECT pr`o`perties and create a hash table.
 
 ```yaml
-Type: IBookingsIdentity
+Type: IB`o``o`kingsIdentity
 Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
+P`o`siti`o`n: Named
+Default value: N`o`ne
 Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
 ### -PassThru
-Returns true when the command succeeds
+Returns true when the c`o`mmand succeeds
 
 ```yaml
 Type: SwitchParameter
@@ -143,14 +143,14 @@ Parameter Sets: (All)
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P`o`siti`o`n: Named
+Default value: N`o`ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
+### -C`o`nfirm
+Pr`o`mpts y`o`u f`o`r c`o`nfirmati`o`n bef`o`re running the cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -158,15 +158,15 @@ Parameter Sets: (All)
 Aliases: cf
 
 Required: False
-Position: Named
-Default value: None
+P`o`siti`o`n: Named
+Default value: N`o`ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Sh`o`ws what w`o`uld happen if the cmdlet runs.
+The cmdlet is n`o`t run.
 
 ```yaml
 Type: SwitchParameter
@@ -174,40 +174,40 @@ Parameter Sets: (All)
 Aliases: wi
 
 Required: False
-Position: Named
-Default value: None
+P`o`siti`o`n: Named
+Default value: N`o`ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### C`o`mm`o`nParameters
+This cmdlet supp`o`rts the c`o`mm`o`n parameters: -Debug, -Err`o`rActi`o`n, -Err`o`rVariable, -Inf`o`rmati`o`nActi`o`n, -Inf`o`rmati`o`nVariable, -`o`utVariable, -`o`utBuffer, -PipelineVariable, -Verb`o`se, -WarningActi`o`n, and -WarningVariable. F`o`r m`o`re inf`o`rmati`o`n, see [ab`o`ut_C`o`mm`o`nParameters](http://g`o`.micr`o`s`o`ft.c`o`m/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IBookingsIdentity
-### System.Collections.Hashtable
-## OUTPUTS
+### Micr`o`s`o`ft.Graph.P`o`werShell.M`o`dels.IB`o``o`kingsIdentity
+### System.C`o`llecti`o`ns.Hashtable
+## `o`UTPUTS
 
-### System.Boolean
-## NOTES
+### System.B`o``o`lean
+## N`o`TES
 
 ALIASES
 
-COMPLEX PARAMETER PROPERTIES
+C`o`MPLEX PARAMETER PR`o`PERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+T`o` create the parameters described bel`o`w, c`o`nstruct a hash table c`o`ntaining the appr`o`priate pr`o`perties. F`o`r inf`o`rmati`o`n `o`n hash tables, run Get-Help ab`o`ut_Hash_Tables.
 
 
-INPUTOBJECT <IBookingsIdentity>: Identity Parameter
-  - `[BookingAppointmentId <String>]`: key: id of bookingAppointment
-  - `[BookingBusinessId <String>]`: key: id of bookingBusiness
-  - `[BookingCurrencyId <String>]`: key: id of bookingCurrency
-  - `[BookingCustomQuestionId <String>]`: key: id of bookingCustomQuestion
-  - `[BookingCustomerBaseId <String>]`: key: id of bookingCustomerBase
-  - `[BookingCustomerId <String>]`: key: id of bookingCustomer
-  - `[BookingServiceId <String>]`: key: id of bookingService
-  - `[BookingStaffMemberBaseId <String>]`: key: id of bookingStaffMemberBase
-  - `[BookingStaffMemberId <String>]`: key: id of bookingStaffMember
+INPUT`o`BJECT <IB`o``o`kingsIdentity>: Identity Parameter
+  - `[B`o``o`kingApp`o`intmentId <String>]`: key: id `o`f b`o``o`kingApp`o`intment
+  - `[B`o``o`kingBusinessId <String>]`: key: id `o`f b`o``o`kingBusiness
+  - `[B`o``o`kingCurrencyId <String>]`: key: id `o`f b`o``o`kingCurrency
+  - `[B`o``o`kingCust`o`mQuesti`o`nId <String>]`: key: id `o`f b`o``o`kingCust`o`mQuesti`o`n
+  - `[B`o``o`kingCust`o`merBaseId <String>]`: key: id `o`f b`o``o`kingCust`o`merBase
+  - `[B`o``o`kingCust`o`merId <String>]`: key: id `o`f b`o``o`kingCust`o`mer
+  - `[B`o``o`kingServiceId <String>]`: key: id `o`f b`o``o`kingService
+  - `[B`o``o`kingStaffMemberBaseId <String>]`: key: id `o`f b`o``o`kingStaffMemberBase
+  - `[B`o``o`kingStaffMemberId <String>]`: key: id `o`f b`o``o`kingStaffMember
 
 ## RELATED LINKS
