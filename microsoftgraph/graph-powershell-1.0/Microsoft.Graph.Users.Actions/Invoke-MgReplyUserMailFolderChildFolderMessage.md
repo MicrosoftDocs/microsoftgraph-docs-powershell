@@ -1,438 +1,438 @@
-﻿---
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgreplyusermailfolderchildfoldermessage
-schema: 2.0.0
+---
+external help file: Micro```s```oft.Graph.U```s```er```s```.Action```s```-help.xml
+Module Name: Micro```s```oft.Graph.U```s```er```s```.Action```s```
+online ver```s```ion: http```s```://doc```s```.micro```s```oft.com/en-u```s```/power```s```hell/module/micro```s```oft.graph.u```s```er```s```.action```s```/invoke-mgreplyu```s```ermailfolderchildfolderme```s``````s```age
+```s```chema: 2.0.0
 ---
 
-# Invoke-MgReplyUserMailFolderChildFolderMessage
+# Invoke-MgReplyU```s```erMailFolderChildFolderMe```s``````s```age
 
-## SYNOPSIS
+## ```s```YNOP```s```I```s```
 Invoke action reply
 
-## SYNTAX
+## ```s```YNTAX
 
 ### ReplyExpanded2 (Default)
 ```
-Invoke-MgReplyUserMailFolderChildFolderMessage -MailFolderId <String> -MailFolderId1 <String>
- -MessageId <String> -UserId <String> [-AdditionalProperties <Hashtable>] [-Comment <String>]
- [-Message <IMicrosoftGraphMessage1>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgReplyU```s```erMailFolderChildFolderMe```s``````s```age -MailFolderId <```s```tring> -MailFolderId1 <```s```tring>
+ -Me```s``````s```ageId <```s```tring> -U```s```erId <```s```tring> [-AdditionalPropertie```s``` <Ha```s```htable>] [-Comment <```s```tring>]
+ [-Me```s``````s```age <IMicro```s```oftGraphMe```s``````s```age1>] [-Pa```s``````s```Thru] [-WhatIf] [-Confirm] [<CommonParameter```s```>]
 ```
 
 ### Reply2
 ```
-Invoke-MgReplyUserMailFolderChildFolderMessage -MailFolderId <String> -MailFolderId1 <String>
- -MessageId <String> -UserId <String>
- -BodyParameter <IPathsSp3FzmUsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MessagesMessageIdMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgReplyU```s```erMailFolderChildFolderMe```s``````s```age -MailFolderId <```s```tring> -MailFolderId1 <```s```tring>
+ -Me```s``````s```ageId <```s```tring> -U```s```erId <```s```tring>
+ -BodyParameter <IPath```s``````s```p3FzmU```s```er```s```U```s```erIdMailfolder```s```MailfolderIdChildfolder```s```MailfolderId1Me```s``````s```age```s```Me```s``````s```ageIdMicro```s```oftGraphReplyPo```s```tReque```s```tbodyContentApplicationJ```s```on```s```chema>
+ [-Pa```s``````s```Thru] [-WhatIf] [-Confirm] [<CommonParameter```s```>]
 ```
 
 ### ReplyViaIdentityExpanded2
 ```
-Invoke-MgReplyUserMailFolderChildFolderMessage -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-Comment <String>] [-Message <IMicrosoftGraphMessage1>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgReplyU```s```erMailFolderChildFolderMe```s``````s```age -InputObject <IU```s```er```s```Action```s```Identity>
+ [-AdditionalPropertie```s``` <Ha```s```htable>] [-Comment <```s```tring>] [-Me```s``````s```age <IMicro```s```oftGraphMe```s``````s```age1>] [-Pa```s``````s```Thru]
+ [-WhatIf] [-Confirm] [<CommonParameter```s```>]
 ```
 
 ### ReplyViaIdentity2
 ```
-Invoke-MgReplyUserMailFolderChildFolderMessage -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPathsSp3FzmUsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MessagesMessageIdMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgReplyU```s```erMailFolderChildFolderMe```s``````s```age -InputObject <IU```s```er```s```Action```s```Identity>
+ -BodyParameter <IPath```s``````s```p3FzmU```s```er```s```U```s```erIdMailfolder```s```MailfolderIdChildfolder```s```MailfolderId1Me```s``````s```age```s```Me```s``````s```ageIdMicro```s```oftGraphReplyPo```s```tReque```s```tbodyContentApplicationJ```s```on```s```chema>
+ [-Pa```s``````s```Thru] [-WhatIf] [-Confirm] [<CommonParameter```s```>]
 ```
 
-## DESCRIPTION
+## DE```s```CRIPTION
 Invoke action reply
 
-## EXAMPLES
+## EXAMPLE```s```
 
-## PARAMETERS
+## PARAMETER```s```
 
-### -AdditionalProperties
-Additional Parameters
+### -AdditionalPropertie```s```
+Additional Parameter```s```
 
 ```yaml
-Type: Hashtable
-Parameter Sets: ReplyExpanded2, ReplyViaIdentityExpanded2
-Aliases:
+Type: Ha```s```htable
+Parameter ```s```et```s```: ReplyExpanded2, ReplyViaIdentityExpanded2
+Alia```s```e```s```:
 
-Required: False
-Position: Named
+Required: Fal```s```e
+Po```s```ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal```s```e
+Accept wildcard character```s```: Fal```s```e
 ```
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To con```s```truct, plea```s```e u```s```e Get-Help -Online and ```s```ee NOTE```s``` ```s```ection for BODYPARAMETER propertie```s``` and create a ha```s```h table.
 
 ```yaml
-Type: IPathsSp3FzmUsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MessagesMessageIdMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Reply2, ReplyViaIdentity2
-Aliases:
+Type: IPath```s``````s```p3FzmU```s```er```s```U```s```erIdMailfolder```s```MailfolderIdChildfolder```s```MailfolderId1Me```s``````s```age```s```Me```s``````s```ageIdMicro```s```oftGraphReplyPo```s```tReque```s```tbodyContentApplicationJ```s```on```s```chema
+Parameter ```s```et```s```: Reply2, ReplyViaIdentity2
+Alia```s```e```s```:
 
 Required: True
-Position: Named
+Po```s```ition: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wildcard character```s```: Fal```s```e
 ```
 
 ### -Comment
 .
 
 ```yaml
-Type: String
-Parameter Sets: ReplyExpanded2, ReplyViaIdentityExpanded2
-Aliases:
+Type: ```s```tring
+Parameter ```s```et```s```: ReplyExpanded2, ReplyViaIdentityExpanded2
+Alia```s```e```s```:
 
-Required: False
-Position: Named
+Required: Fal```s```e
+Po```s```ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal```s```e
+Accept wildcard character```s```: Fal```s```e
 ```
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To con```s```truct, plea```s```e u```s```e Get-Help -Online and ```s```ee NOTE```s``` ```s```ection for INPUTOBJECT propertie```s``` and create a ha```s```h table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: ReplyViaIdentityExpanded2, ReplyViaIdentity2
-Aliases:
+Type: IU```s```er```s```Action```s```Identity
+Parameter ```s```et```s```: ReplyViaIdentityExpanded2, ReplyViaIdentity2
+Alia```s```e```s```:
 
 Required: True
-Position: Named
+Po```s```ition: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wildcard character```s```: Fal```s```e
 ```
 
 ### -MailFolderId
 key: id of mailFolder
 
 ```yaml
-Type: String
-Parameter Sets: ReplyExpanded2, Reply2
-Aliases:
+Type: ```s```tring
+Parameter ```s```et```s```: ReplyExpanded2, Reply2
+Alia```s```e```s```:
 
 Required: True
-Position: Named
+Po```s```ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal```s```e
+Accept wildcard character```s```: Fal```s```e
 ```
 
 ### -MailFolderId1
 key: id of mailFolder
 
 ```yaml
-Type: String
-Parameter Sets: ReplyExpanded2, Reply2
-Aliases:
+Type: ```s```tring
+Parameter ```s```et```s```: ReplyExpanded2, Reply2
+Alia```s```e```s```:
 
 Required: True
-Position: Named
+Po```s```ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal```s```e
+Accept wildcard character```s```: Fal```s```e
 ```
 
-### -Message
-message
-To construct, please use Get-Help -Online and see NOTES section for MESSAGE properties and create a hash table.
+### -Me```s``````s```age
+me```s``````s```age
+To con```s```truct, plea```s```e u```s```e Get-Help -Online and ```s```ee NOTE```s``` ```s```ection for ME```s``````s```AGE propertie```s``` and create a ha```s```h table.
 
 ```yaml
-Type: IMicrosoftGraphMessage1
-Parameter Sets: ReplyExpanded2, ReplyViaIdentityExpanded2
-Aliases:
+Type: IMicro```s```oftGraphMe```s``````s```age1
+Parameter ```s```et```s```: ReplyExpanded2, ReplyViaIdentityExpanded2
+Alia```s```e```s```:
 
-Required: False
-Position: Named
+Required: Fal```s```e
+Po```s```ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal```s```e
+Accept wildcard character```s```: Fal```s```e
 ```
 
-### -MessageId
-key: id of message
+### -Me```s``````s```ageId
+key: id of me```s``````s```age
 
 ```yaml
-Type: String
-Parameter Sets: ReplyExpanded2, Reply2
-Aliases:
+Type: ```s```tring
+Parameter ```s```et```s```: ReplyExpanded2, Reply2
+Alia```s```e```s```:
 
 Required: True
-Position: Named
+Po```s```ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal```s```e
+Accept wildcard character```s```: Fal```s```e
 ```
 
-### -PassThru
-Returns true when the command succeeds
+### -Pa```s``````s```Thru
+Return```s``` true when the command ```s```ucceed```s```
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
+Type: ```s```witchParameter
+Parameter ```s```et```s```: (All)
+Alia```s```e```s```:
 
-Required: False
-Position: Named
+Required: Fal```s```e
+Po```s```ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal```s```e
+Accept wildcard character```s```: Fal```s```e
 ```
 
-### -UserId
-key: id of user
+### -U```s```erId
+key: id of u```s```er
 
 ```yaml
-Type: String
-Parameter Sets: ReplyExpanded2, Reply2
-Aliases:
+Type: ```s```tring
+Parameter ```s```et```s```: ReplyExpanded2, Reply2
+Alia```s```e```s```:
 
 Required: True
-Position: Named
+Po```s```ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal```s```e
+Accept wildcard character```s```: Fal```s```e
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompt```s``` you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Type: ```s```witchParameter
+Parameter ```s```et```s```: (All)
+Alia```s```e```s```: cf
 
-Required: False
-Position: Named
+Required: Fal```s```e
+Po```s```ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal```s```e
+Accept wildcard character```s```: Fal```s```e
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+```s```how```s``` what would happen if the cmdlet run```s```.
+The cmdlet i```s``` not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Type: ```s```witchParameter
+Parameter ```s```et```s```: (All)
+Alia```s```e```s```: wi
 
-Required: False
-Position: Named
+Required: Fal```s```e
+Po```s```ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal```s```e
+Accept wildcard character```s```: Fal```s```e
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParameter```s```
+Thi```s``` cmdlet ```s```upport```s``` the common parameter```s```: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbo```s```e, -WarningAction, and -WarningVariable. For more information, ```s```ee [about_CommonParameter```s```](http://go.micro```s```oft.com/fwlink/?LinkID=113216).
 
-## INPUTS
+## INPUT```s```
 
-### Microsoft.Graph.PowerShell.Models.IPathsSp3FzmUsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MessagesMessageIdMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-## OUTPUTS
+### Micro```s```oft.Graph.Power```s```hell.Model```s```.IPath```s``````s```p3FzmU```s```er```s```U```s```erIdMailfolder```s```MailfolderIdChildfolder```s```MailfolderId1Me```s``````s```age```s```Me```s``````s```ageIdMicro```s```oftGraphReplyPo```s```tReque```s```tbodyContentApplicationJ```s```on```s```chema
+### Micro```s```oft.Graph.Power```s```hell.Model```s```.IU```s```er```s```Action```s```Identity
+## OUTPUT```s```
 
-### System.Boolean
-## NOTES
+### ```s```y```s```tem.Boolean
+## NOTE```s```
 
-ALIASES
+ALIA```s```E```s```
 
-COMPLEX PARAMETER PROPERTIES
+COMPLEX PARAMETER PROPERTIE```s```
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameter```s``` de```s```cribed below, con```s```truct a ha```s```h table containing the appropriate propertie```s```. For information on ha```s```h table```s```, run Get-Help about_Ha```s```h_Table```s```.
 
 
-BODYPARAMETER <IPathsSp3FzmUsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MessagesMessageIdMicrosoftGraphReplyPostRequestbodyContentApplicationJsonSchema>: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Comment <String>]`: 
-  - `[Message <IMicrosoftGraphMessage1>]`: message
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Categories <String[]>]`: The categories associated with the item
-    - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
-    - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[Id <String>]`: 
-    - `[Attachments <IMicrosoftGraphAttachment[]>]`: The fileAttachment and itemAttachment attachments for the message.
-      - `[Id <String>]`: 
-      - `[ContentType <String>]`: The MIME type.
-      - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
-      - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-      - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
-      - `[Size <Int32?>]`: The length of the attachment in bytes.
-    - `[BccRecipients <IMicrosoftGraphRecipient[]>]`: The Bcc: recipients for the message.
-      - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Address <String>]`: The email address of an entity instance.
-        - `[Name <String>]`: The display name of an entity instance.
-    - `[Body <IMicrosoftGraphItemBody>]`: itemBody
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Content <String>]`: The content of the item.
-      - `[ContentType <String>]`: bodyType
-    - `[BodyPreview <String>]`: The first 255 characters of the message body. It is in text format. If the message contains instances of mention, this property would contain a concatenation of these mentions as well.
-    - `[CcRecipients <IMicrosoftGraphRecipient[]>]`: The Cc: recipients for the message.
-    - `[ConversationId <String>]`: The ID of the conversation the email belongs to.
-    - `[ConversationIndex <Byte[]>]`: Indicates the position of the message within the conversation.
-    - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the message. Nullable.
-      - `[Id <String>]`: 
-    - `[Flag <IMicrosoftGraphFollowupFlag>]`: followupFlag
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[CompletedDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
-        - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
-      - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-      - `[FlagStatus <String>]`: followupFlagStatus
-      - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-    - `[From <IMicrosoftGraphRecipient>]`: recipient
-    - `[HasAttachments <Boolean?>]`: Indicates whether the message has attachments. This property doesn't include inline attachments, so if a message contains only inline attachments, this property is false. To verify the existence of inline attachments, parse the body property to look for a src attribute, such as <IMG src='cid:image001.jpg@01D26CD8.6C05F070'>.
-    - `[Importance <String>]`: importance
-    - `[InferenceClassification <String>]`: inferenceClassificationType
-    - `[InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]`: 
-      - `[Name <String>]`: Represents the key in a key-value pair.
-      - `[Value <String>]`: The value in a key-value pair.
-    - `[InternetMessageId <String>]`: 
-    - `[IsDeliveryReceiptRequested <Boolean?>]`: 
-    - `[IsDraft <Boolean?>]`: 
-    - `[IsRead <Boolean?>]`: 
-    - `[IsReadReceiptRequested <Boolean?>]`: 
-    - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the message. Nullable.
-      - `[Id <String>]`: 
-      - `[Value <String[]>]`: A collection of property values.
-    - `[ParentFolderId <String>]`: 
+BODYPARAMETER <IPath```s``````s```p3FzmU```s```er```s```U```s```erIdMailfolder```s```MailfolderIdChildfolder```s```MailfolderId1Me```s``````s```age```s```Me```s``````s```ageIdMicro```s```oftGraphReplyPo```s```tReque```s```tbodyContentApplicationJ```s```on```s```chema>: .
+  - `[(Any) <Object>]`: Thi```s``` indicate```s``` any property can be added to thi```s``` object.
+  - `[Comment <```s```tring>]`: 
+  - `[Me```s``````s```age <IMicro```s```oftGraphMe```s``````s```age1>]`: me```s``````s```age
+    - `[(Any) <Object>]`: Thi```s``` indicate```s``` any property can be added to thi```s``` object.
+    - `[Categorie```s``` <```s```tring[]>]`: The categorie```s``` a```s``````s```ociated with the item
+    - `[ChangeKey <```s```tring>]`: Identifie```s``` the ver```s```ion of the item. Every time the item i```s``` changed, changeKey change```s``` a```s``` well. Thi```s``` allow```s``` Exchange to apply change```s``` to the correct ver```s```ion of the object. Read-only.
+    - `[CreatedDateTime <DateTime?>]`: The Time```s```tamp type repre```s```ent```s``` date and time information u```s```ing I```s```O 8601 format and i```s``` alway```s``` in UTC time. For example, midnight UTC on Jan 1, 2014 i```s``` 2014-01-01T00:00:00Z
+    - `[La```s```tModifiedDateTime <DateTime?>]`: The Time```s```tamp type repre```s```ent```s``` date and time information u```s```ing I```s```O 8601 format and i```s``` alway```s``` in UTC time. For example, midnight UTC on Jan 1, 2014 i```s``` 2014-01-01T00:00:00Z
+    - `[Id <```s```tring>]`: 
+    - `[Attachment```s``` <IMicro```s```oftGraphAttachment[]>]`: The fileAttachment and itemAttachment attachment```s``` for the me```s``````s```age.
+      - `[Id <```s```tring>]`: 
+      - `[ContentType <```s```tring>]`: The MIME type.
+      - `[I```s```Inline <Boolean?>]`: true if the attachment i```s``` an inline attachment; otherwi```s```e, fal```s```e.
+      - `[La```s```tModifiedDateTime <DateTime?>]`: The Time```s```tamp type repre```s```ent```s``` date and time information u```s```ing I```s```O 8601 format and i```s``` alway```s``` in UTC time. For example, midnight UTC on Jan 1, 2014 i```s``` 2014-01-01T00:00:00Z
+      - `[Name <```s```tring>]`: The di```s```play name of the attachment. Thi```s``` doe```s``` not need to be the actual file name.
+      - `[```s```ize <Int32?>]`: The length of the attachment in byte```s```.
+    - `[BccRecipient```s``` <IMicro```s```oftGraphRecipient[]>]`: The Bcc: recipient```s``` for the me```s``````s```age.
+      - `[EmailAddre```s``````s``` <IMicro```s```oftGraphEmailAddre```s``````s```>]`: emailAddre```s``````s```
+        - `[(Any) <Object>]`: Thi```s``` indicate```s``` any property can be added to thi```s``` object.
+        - `[Addre```s``````s``` <```s```tring>]`: The email addre```s``````s``` of an entity in```s```tance.
+        - `[Name <```s```tring>]`: The di```s```play name of an entity in```s```tance.
+    - `[Body <IMicro```s```oftGraphItemBody>]`: itemBody
+      - `[(Any) <Object>]`: Thi```s``` indicate```s``` any property can be added to thi```s``` object.
+      - `[Content <```s```tring>]`: The content of the item.
+      - `[ContentType <```s```tring>]`: bodyType
+    - `[BodyPreview <```s```tring>]`: The fir```s```t 255 character```s``` of the me```s``````s```age body. It i```s``` in text format. If the me```s``````s```age contain```s``` in```s```tance```s``` of mention, thi```s``` property would contain a concatenation of the```s```e mention```s``` a```s``` well.
+    - `[CcRecipient```s``` <IMicro```s```oftGraphRecipient[]>]`: The Cc: recipient```s``` for the me```s``````s```age.
+    - `[Conver```s```ationId <```s```tring>]`: The ID of the conver```s```ation the email belong```s``` to.
+    - `[Conver```s```ationIndex <Byte[]>]`: Indicate```s``` the po```s```ition of the me```s``````s```age within the conver```s```ation.
+    - `[Exten```s```ion```s``` <IMicro```s```oftGraphExten```s```ion[]>]`: The collection of open exten```s```ion```s``` defined for the me```s``````s```age. Nullable.
+      - `[Id <```s```tring>]`: 
+    - `[Flag <IMicro```s```oftGraphFollowupFlag>]`: followupFlag
+      - `[(Any) <Object>]`: Thi```s``` indicate```s``` any property can be added to thi```s``` object.
+      - `[CompletedDateTime <IMicro```s```oftGraphDateTimeZone>]`: dateTimeTimeZone
+        - `[(Any) <Object>]`: Thi```s``` indicate```s``` any property can be added to thi```s``` object.
+        - `[DateTime <```s```tring>]`: A ```s```ingle point of time in a combined date and time repre```s```entation ({date}T{time}). For example, '2019-04-16T09:00:00'.
+        - `[TimeZone <```s```tring>]`: Repre```s```ent```s``` a time zone, for example, 'Pacific ```s```tandard Time'. ```s```ee below for po```s``````s```ible value```s```.
+      - `[DueDateTime <IMicro```s```oftGraphDateTimeZone>]`: dateTimeTimeZone
+      - `[Flag```s```tatu```s``` <```s```tring>]`: followupFlag```s```tatu```s```
+      - `[```s```tartDateTime <IMicro```s```oftGraphDateTimeZone>]`: dateTimeTimeZone
+    - `[From <IMicro```s```oftGraphRecipient>]`: recipient
+    - `[Ha```s```Attachment```s``` <Boolean?>]`: Indicate```s``` whether the me```s``````s```age ha```s``` attachment```s```. Thi```s``` property doe```s```n't include inline attachment```s```, ```s```o if a me```s``````s```age contain```s``` only inline attachment```s```, thi```s``` property i```s``` fal```s```e. To verify the exi```s```tence of inline attachment```s```, par```s```e the body property to look for a ```s```rc attribute, ```s```uch a```s``` <IMG ```s```rc='cid:image001.jpg@01D26CD8.6C05F070'>.
+    - `[Importance <```s```tring>]`: importance
+    - `[InferenceCla```s``````s```ification <```s```tring>]`: inferenceCla```s``````s```ificationType
+    - `[InternetMe```s``````s```ageHeader```s``` <IMicro```s```oftGraphInternetMe```s``````s```ageHeader[]>]`: 
+      - `[Name <```s```tring>]`: Repre```s```ent```s``` the key in a key-value pair.
+      - `[Value <```s```tring>]`: The value in a key-value pair.
+    - `[InternetMe```s``````s```ageId <```s```tring>]`: 
+    - `[I```s```DeliveryReceiptReque```s```ted <Boolean?>]`: 
+    - `[I```s```Draft <Boolean?>]`: 
+    - `[I```s```Read <Boolean?>]`: 
+    - `[I```s```ReadReceiptReque```s```ted <Boolean?>]`: 
+    - `[MultiValueExtendedPropertie```s``` <IMicro```s```oftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended propertie```s``` defined for the me```s``````s```age. Nullable.
+      - `[Id <```s```tring>]`: 
+      - `[Value <```s```tring[]>]`: A collection of property value```s```.
+    - `[ParentFolderId <```s```tring>]`: 
     - `[ReceivedDateTime <DateTime?>]`: 
-    - `[ReplyTo <IMicrosoftGraphRecipient[]>]`: 
-    - `[Sender <IMicrosoftGraphRecipient>]`: recipient
-    - `[SentDateTime <DateTime?>]`: 
-    - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the message. Nullable.
-      - `[Id <String>]`: 
-      - `[Value <String>]`: A property value.
-    - `[Subject <String>]`: 
-    - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: 
-    - `[UniqueBody <IMicrosoftGraphItemBody>]`: itemBody
-    - `[WebLink <String>]`: 
+    - `[ReplyTo <IMicro```s```oftGraphRecipient[]>]`: 
+    - `[```s```ender <IMicro```s```oftGraphRecipient>]`: recipient
+    - `[```s```entDateTime <DateTime?>]`: 
+    - `[```s```ingleValueExtendedPropertie```s``` <IMicro```s```oftGraph```s```ingleValueLegacyExtendedProperty[]>]`: The collection of ```s```ingle-value extended propertie```s``` defined for the me```s``````s```age. Nullable.
+      - `[Id <```s```tring>]`: 
+      - `[Value <```s```tring>]`: A property value.
+    - `[```s```ubject <```s```tring>]`: 
+    - `[ToRecipient```s``` <IMicro```s```oftGraphRecipient[]>]`: 
+    - `[UniqueBody <IMicro```s```oftGraphItemBody>]`: itemBody
+    - `[WebLink <```s```tring>]`: 
 
-INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
-  - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
-  - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
-  - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
-  - `[AuthenticationMethodId <String>]`: key: id of authenticationMethod
-  - `[BaseTaskId <String>]`: key: id of baseTask
-  - `[BaseTaskListId <String>]`: key: id of baseTaskList
-  - `[CalendarId <String>]`: key: id of calendar
-  - `[ChatId <String>]`: key: id of chat
-  - `[ChatMessageId <String>]`: key: id of chatMessage
-  - `[ChatMessageId1 <String>]`: key: id of chatMessage
-  - `[CloudPcId <String>]`: key: id of cloudPC
-  - `[ContentTypeId <String>]`: key: id of contentType
-  - `[DeviceEnrollmentConfigurationId <String>]`: key: id of deviceEnrollmentConfiguration
-  - `[DeviceId <String>]`: key: id of device
-  - `[DeviceLogCollectionResponseId <String>]`: key: id of deviceLogCollectionResponse
-  - `[DocumentSetVersionId <String>]`: key: id of documentSetVersion
-  - `[DriveId <String>]`: key: id of drive
-  - `[DriveItemId <String>]`: key: id of driveItem
-  - `[DriveItemVersionId <String>]`: key: id of driveItemVersion
-  - `[EventId <String>]`: key: id of event
-  - `[EventId1 <String>]`: key: id of event
-  - `[ListItemId <String>]`: key: id of listItem
-  - `[ListItemVersionId <String>]`: key: id of listItemVersion
-  - `[MailFolderId <String>]`: key: id of mailFolder
-  - `[MailFolderId1 <String>]`: key: id of mailFolder
-  - `[ManagedDeviceId <String>]`: key: id of managedDevice
-  - `[MessageId <String>]`: key: id of message
-  - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: key: id of microsoftAuthenticatorAuthenticationMethod
-  - `[MobileAppTroubleshootingEventId <String>]`: key: id of mobileAppTroubleshootingEvent
-  - `[NotebookId <String>]`: key: id of notebook
-  - `[OnenotePageId <String>]`: key: id of onenotePage
-  - `[OnenoteSectionId <String>]`: key: id of onenoteSection
-  - `[OutlookTaskFolderId <String>]`: key: id of outlookTaskFolder
-  - `[OutlookTaskGroupId <String>]`: key: id of outlookTaskGroup
-  - `[OutlookTaskId <String>]`: key: id of outlookTask
-  - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: key: id of passwordlessMicrosoftAuthenticatorAuthenticationMethod
-  - `[PermissionId <String>]`: key: id of permission
-  - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
-  - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
-  - `[SubscriptionId <String>]`: key: id of subscription
-  - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation
-  - `[TodoTaskId <String>]`: key: id of todoTask
-  - `[TodoTaskListId <String>]`: key: id of todoTaskList
-  - `[UserId <String>]`: key: id of user
-  - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
+INPUTOBJECT <IU```s```er```s```Action```s```Identity>: Identity Parameter
+  - `[Acce```s``````s```ReviewIn```s```tanceId <```s```tring>]`: key: id of acce```s``````s```ReviewIn```s```tance
+  - `[Acce```s``````s```Review```s```tageId <```s```tring>]`: key: id of acce```s``````s```Review```s```tage
+  - `[AppLogCollectionReque```s```tId <```s```tring>]`: key: id of appLogCollectionReque```s```t
+  - `[AuthenticationMethodId <```s```tring>]`: key: id of authenticationMethod
+  - `[Ba```s```eTa```s```kId <```s```tring>]`: key: id of ba```s```eTa```s```k
+  - `[Ba```s```eTa```s```kLi```s```tId <```s```tring>]`: key: id of ba```s```eTa```s```kLi```s```t
+  - `[CalendarId <```s```tring>]`: key: id of calendar
+  - `[ChatId <```s```tring>]`: key: id of chat
+  - `[ChatMe```s``````s```ageId <```s```tring>]`: key: id of chatMe```s``````s```age
+  - `[ChatMe```s``````s```ageId1 <```s```tring>]`: key: id of chatMe```s``````s```age
+  - `[CloudPcId <```s```tring>]`: key: id of cloudPC
+  - `[ContentTypeId <```s```tring>]`: key: id of contentType
+  - `[DeviceEnrollmentConfigurationId <```s```tring>]`: key: id of deviceEnrollmentConfiguration
+  - `[DeviceId <```s```tring>]`: key: id of device
+  - `[DeviceLogCollectionRe```s```pon```s```eId <```s```tring>]`: key: id of deviceLogCollectionRe```s```pon```s```e
+  - `[Document```s```etVer```s```ionId <```s```tring>]`: key: id of document```s```etVer```s```ion
+  - `[DriveId <```s```tring>]`: key: id of drive
+  - `[DriveItemId <```s```tring>]`: key: id of driveItem
+  - `[DriveItemVer```s```ionId <```s```tring>]`: key: id of driveItemVer```s```ion
+  - `[EventId <```s```tring>]`: key: id of event
+  - `[EventId1 <```s```tring>]`: key: id of event
+  - `[Li```s```tItemId <```s```tring>]`: key: id of li```s```tItem
+  - `[Li```s```tItemVer```s```ionId <```s```tring>]`: key: id of li```s```tItemVer```s```ion
+  - `[MailFolderId <```s```tring>]`: key: id of mailFolder
+  - `[MailFolderId1 <```s```tring>]`: key: id of mailFolder
+  - `[ManagedDeviceId <```s```tring>]`: key: id of managedDevice
+  - `[Me```s``````s```ageId <```s```tring>]`: key: id of me```s``````s```age
+  - `[Micro```s```oftAuthenticatorAuthenticationMethodId <```s```tring>]`: key: id of micro```s```oftAuthenticatorAuthenticationMethod
+  - `[MobileAppTrouble```s```hootingEventId <```s```tring>]`: key: id of mobileAppTrouble```s```hootingEvent
+  - `[NotebookId <```s```tring>]`: key: id of notebook
+  - `[OnenotePageId <```s```tring>]`: key: id of onenotePage
+  - `[Onenote```s```ectionId <```s```tring>]`: key: id of onenote```s```ection
+  - `[OutlookTa```s```kFolderId <```s```tring>]`: key: id of outlookTa```s```kFolder
+  - `[OutlookTa```s```kGroupId <```s```tring>]`: key: id of outlookTa```s```kGroup
+  - `[OutlookTa```s```kId <```s```tring>]`: key: id of outlookTa```s```k
+  - `[Pa```s``````s```wordle```s``````s```Micro```s```oftAuthenticatorAuthenticationMethodId <```s```tring>]`: key: id of pa```s``````s```wordle```s``````s```Micro```s```oftAuthenticatorAuthenticationMethod
+  - `[Permi```s``````s```ionId <```s```tring>]`: key: id of permi```s``````s```ion
+  - `[Re```s```ource```s```pecificPermi```s``````s```ionGrantId <```s```tring>]`: key: id of re```s```ource```s```pecificPermi```s``````s```ionGrant
+  - `[```s```en```s```itivityLabelId <```s```tring>]`: key: id of ```s```en```s```itivityLabel
+  - `[```s```ub```s```criptionId <```s```tring>]`: key: id of ```s```ub```s```cription
+  - `[Team```s```AppIn```s```tallationId <```s```tring>]`: key: id of team```s```AppIn```s```tallation
+  - `[TodoTa```s```kId <```s```tring>]`: key: id of todoTa```s```k
+  - `[TodoTa```s```kLi```s```tId <```s```tring>]`: key: id of todoTa```s```kLi```s```t
+  - `[U```s```erId <```s```tring>]`: key: id of u```s```er
+  - `[Window```s```HelloForBu```s```ine```s``````s```AuthenticationMethodId <```s```tring>]`: key: id of window```s```HelloForBu```s```ine```s``````s```AuthenticationMethod
 
-MESSAGE <IMicrosoftGraphMessage1>: message
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Categories <String[]>]`: The categories associated with the item
-  - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Id <String>]`: 
-  - `[Attachments <IMicrosoftGraphAttachment[]>]`: The fileAttachment and itemAttachment attachments for the message.
-    - `[Id <String>]`: 
-    - `[ContentType <String>]`: The MIME type.
-    - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
-    - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
-    - `[Size <Int32?>]`: The length of the attachment in bytes.
-  - `[BccRecipients <IMicrosoftGraphRecipient[]>]`: The Bcc: recipients for the message.
-    - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Address <String>]`: The email address of an entity instance.
-      - `[Name <String>]`: The display name of an entity instance.
-  - `[Body <IMicrosoftGraphItemBody>]`: itemBody
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Content <String>]`: The content of the item.
-    - `[ContentType <String>]`: bodyType
-  - `[BodyPreview <String>]`: The first 255 characters of the message body. It is in text format. If the message contains instances of mention, this property would contain a concatenation of these mentions as well.
-  - `[CcRecipients <IMicrosoftGraphRecipient[]>]`: The Cc: recipients for the message.
-  - `[ConversationId <String>]`: The ID of the conversation the email belongs to.
-  - `[ConversationIndex <Byte[]>]`: Indicates the position of the message within the conversation.
-  - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the message. Nullable.
-    - `[Id <String>]`: 
-  - `[Flag <IMicrosoftGraphFollowupFlag>]`: followupFlag
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CompletedDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
-      - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
-    - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-    - `[FlagStatus <String>]`: followupFlagStatus
-    - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-  - `[From <IMicrosoftGraphRecipient>]`: recipient
-  - `[HasAttachments <Boolean?>]`: Indicates whether the message has attachments. This property doesn't include inline attachments, so if a message contains only inline attachments, this property is false. To verify the existence of inline attachments, parse the body property to look for a src attribute, such as <IMG src='cid:image001.jpg@01D26CD8.6C05F070'>.
-  - `[Importance <String>]`: importance
-  - `[InferenceClassification <String>]`: inferenceClassificationType
-  - `[InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]`: 
-    - `[Name <String>]`: Represents the key in a key-value pair.
-    - `[Value <String>]`: The value in a key-value pair.
-  - `[InternetMessageId <String>]`: 
-  - `[IsDeliveryReceiptRequested <Boolean?>]`: 
-  - `[IsDraft <Boolean?>]`: 
-  - `[IsRead <Boolean?>]`: 
-  - `[IsReadReceiptRequested <Boolean?>]`: 
-  - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the message. Nullable.
-    - `[Id <String>]`: 
-    - `[Value <String[]>]`: A collection of property values.
-  - `[ParentFolderId <String>]`: 
+ME```s``````s```AGE <IMicro```s```oftGraphMe```s``````s```age1>: me```s``````s```age
+  - `[(Any) <Object>]`: Thi```s``` indicate```s``` any property can be added to thi```s``` object.
+  - `[Categorie```s``` <```s```tring[]>]`: The categorie```s``` a```s``````s```ociated with the item
+  - `[ChangeKey <```s```tring>]`: Identifie```s``` the ver```s```ion of the item. Every time the item i```s``` changed, changeKey change```s``` a```s``` well. Thi```s``` allow```s``` Exchange to apply change```s``` to the correct ver```s```ion of the object. Read-only.
+  - `[CreatedDateTime <DateTime?>]`: The Time```s```tamp type repre```s```ent```s``` date and time information u```s```ing I```s```O 8601 format and i```s``` alway```s``` in UTC time. For example, midnight UTC on Jan 1, 2014 i```s``` 2014-01-01T00:00:00Z
+  - `[La```s```tModifiedDateTime <DateTime?>]`: The Time```s```tamp type repre```s```ent```s``` date and time information u```s```ing I```s```O 8601 format and i```s``` alway```s``` in UTC time. For example, midnight UTC on Jan 1, 2014 i```s``` 2014-01-01T00:00:00Z
+  - `[Id <```s```tring>]`: 
+  - `[Attachment```s``` <IMicro```s```oftGraphAttachment[]>]`: The fileAttachment and itemAttachment attachment```s``` for the me```s``````s```age.
+    - `[Id <```s```tring>]`: 
+    - `[ContentType <```s```tring>]`: The MIME type.
+    - `[I```s```Inline <Boolean?>]`: true if the attachment i```s``` an inline attachment; otherwi```s```e, fal```s```e.
+    - `[La```s```tModifiedDateTime <DateTime?>]`: The Time```s```tamp type repre```s```ent```s``` date and time information u```s```ing I```s```O 8601 format and i```s``` alway```s``` in UTC time. For example, midnight UTC on Jan 1, 2014 i```s``` 2014-01-01T00:00:00Z
+    - `[Name <```s```tring>]`: The di```s```play name of the attachment. Thi```s``` doe```s``` not need to be the actual file name.
+    - `[```s```ize <Int32?>]`: The length of the attachment in byte```s```.
+  - `[BccRecipient```s``` <IMicro```s```oftGraphRecipient[]>]`: The Bcc: recipient```s``` for the me```s``````s```age.
+    - `[EmailAddre```s``````s``` <IMicro```s```oftGraphEmailAddre```s``````s```>]`: emailAddre```s``````s```
+      - `[(Any) <Object>]`: Thi```s``` indicate```s``` any property can be added to thi```s``` object.
+      - `[Addre```s``````s``` <```s```tring>]`: The email addre```s``````s``` of an entity in```s```tance.
+      - `[Name <```s```tring>]`: The di```s```play name of an entity in```s```tance.
+  - `[Body <IMicro```s```oftGraphItemBody>]`: itemBody
+    - `[(Any) <Object>]`: Thi```s``` indicate```s``` any property can be added to thi```s``` object.
+    - `[Content <```s```tring>]`: The content of the item.
+    - `[ContentType <```s```tring>]`: bodyType
+  - `[BodyPreview <```s```tring>]`: The fir```s```t 255 character```s``` of the me```s``````s```age body. It i```s``` in text format. If the me```s``````s```age contain```s``` in```s```tance```s``` of mention, thi```s``` property would contain a concatenation of the```s```e mention```s``` a```s``` well.
+  - `[CcRecipient```s``` <IMicro```s```oftGraphRecipient[]>]`: The Cc: recipient```s``` for the me```s``````s```age.
+  - `[Conver```s```ationId <```s```tring>]`: The ID of the conver```s```ation the email belong```s``` to.
+  - `[Conver```s```ationIndex <Byte[]>]`: Indicate```s``` the po```s```ition of the me```s``````s```age within the conver```s```ation.
+  - `[Exten```s```ion```s``` <IMicro```s```oftGraphExten```s```ion[]>]`: The collection of open exten```s```ion```s``` defined for the me```s``````s```age. Nullable.
+    - `[Id <```s```tring>]`: 
+  - `[Flag <IMicro```s```oftGraphFollowupFlag>]`: followupFlag
+    - `[(Any) <Object>]`: Thi```s``` indicate```s``` any property can be added to thi```s``` object.
+    - `[CompletedDateTime <IMicro```s```oftGraphDateTimeZone>]`: dateTimeTimeZone
+      - `[(Any) <Object>]`: Thi```s``` indicate```s``` any property can be added to thi```s``` object.
+      - `[DateTime <```s```tring>]`: A ```s```ingle point of time in a combined date and time repre```s```entation ({date}T{time}). For example, '2019-04-16T09:00:00'.
+      - `[TimeZone <```s```tring>]`: Repre```s```ent```s``` a time zone, for example, 'Pacific ```s```tandard Time'. ```s```ee below for po```s``````s```ible value```s```.
+    - `[DueDateTime <IMicro```s```oftGraphDateTimeZone>]`: dateTimeTimeZone
+    - `[Flag```s```tatu```s``` <```s```tring>]`: followupFlag```s```tatu```s```
+    - `[```s```tartDateTime <IMicro```s```oftGraphDateTimeZone>]`: dateTimeTimeZone
+  - `[From <IMicro```s```oftGraphRecipient>]`: recipient
+  - `[Ha```s```Attachment```s``` <Boolean?>]`: Indicate```s``` whether the me```s``````s```age ha```s``` attachment```s```. Thi```s``` property doe```s```n't include inline attachment```s```, ```s```o if a me```s``````s```age contain```s``` only inline attachment```s```, thi```s``` property i```s``` fal```s```e. To verify the exi```s```tence of inline attachment```s```, par```s```e the body property to look for a ```s```rc attribute, ```s```uch a```s``` <IMG ```s```rc='cid:image001.jpg@01D26CD8.6C05F070'>.
+  - `[Importance <```s```tring>]`: importance
+  - `[InferenceCla```s``````s```ification <```s```tring>]`: inferenceCla```s``````s```ificationType
+  - `[InternetMe```s``````s```ageHeader```s``` <IMicro```s```oftGraphInternetMe```s``````s```ageHeader[]>]`: 
+    - `[Name <```s```tring>]`: Repre```s```ent```s``` the key in a key-value pair.
+    - `[Value <```s```tring>]`: The value in a key-value pair.
+  - `[InternetMe```s``````s```ageId <```s```tring>]`: 
+  - `[I```s```DeliveryReceiptReque```s```ted <Boolean?>]`: 
+  - `[I```s```Draft <Boolean?>]`: 
+  - `[I```s```Read <Boolean?>]`: 
+  - `[I```s```ReadReceiptReque```s```ted <Boolean?>]`: 
+  - `[MultiValueExtendedPropertie```s``` <IMicro```s```oftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended propertie```s``` defined for the me```s``````s```age. Nullable.
+    - `[Id <```s```tring>]`: 
+    - `[Value <```s```tring[]>]`: A collection of property value```s```.
+  - `[ParentFolderId <```s```tring>]`: 
   - `[ReceivedDateTime <DateTime?>]`: 
-  - `[ReplyTo <IMicrosoftGraphRecipient[]>]`: 
-  - `[Sender <IMicrosoftGraphRecipient>]`: recipient
-  - `[SentDateTime <DateTime?>]`: 
-  - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the message. Nullable.
-    - `[Id <String>]`: 
-    - `[Value <String>]`: A property value.
-  - `[Subject <String>]`: 
-  - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: 
-  - `[UniqueBody <IMicrosoftGraphItemBody>]`: itemBody
-  - `[WebLink <String>]`: 
+  - `[ReplyTo <IMicro```s```oftGraphRecipient[]>]`: 
+  - `[```s```ender <IMicro```s```oftGraphRecipient>]`: recipient
+  - `[```s```entDateTime <DateTime?>]`: 
+  - `[```s```ingleValueExtendedPropertie```s``` <IMicro```s```oftGraph```s```ingleValueLegacyExtendedProperty[]>]`: The collection of ```s```ingle-value extended propertie```s``` defined for the me```s``````s```age. Nullable.
+    - `[Id <```s```tring>]`: 
+    - `[Value <```s```tring>]`: A property value.
+  - `[```s```ubject <```s```tring>]`: 
+  - `[ToRecipient```s``` <IMicro```s```oftGraphRecipient[]>]`: 
+  - `[UniqueBody <IMicro```s```oftGraphItemBody>]`: itemBody
+  - `[WebLink <```s```tring>]`: 
 
-## RELATED LINKS
+## RELATED LINK```s```
 
-## RELATED LINKS
+## RELATED LINK```s```
