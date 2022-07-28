@@ -1,168 +1,168 @@
-﻿---
-external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
-Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.serviceannouncement/set-mgserviceannouncementmessageattachmentarchive
-schema: 2.0.0
+---
+`e`xt`e`rnal h`e`lp fil`e`: Microsoft.Graph.D`e`vic`e`s.S`e`rvic`e`Announc`e`m`e`nt-h`e`lp.xml
+Modul`e` Nam`e`: Microsoft.Graph.D`e`vic`e`s.S`e`rvic`e`Announc`e`m`e`nt
+onlin`e` v`e`rsion: https://docs.microsoft.com/`e`n-us/pow`e`rsh`e`ll/modul`e`/microsoft.graph.d`e`vic`e`s.s`e`rvic`e`announc`e`m`e`nt/s`e`t-mgs`e`rvic`e`announc`e`m`e`ntm`e`ssag`e`attachm`e`ntarchiv`e`
+sch`e`ma: 2.0.0
 ---
 
-# Set-MgServiceAnnouncementMessageAttachmentArchive
+# S`e`t-MgS`e`rvic`e`Announc`e`m`e`ntM`e`ssag`e`Attachm`e`ntArchiv`e`
 
 ## SYNOPSIS
-Update media content for the navigation property messages in admin
+Updat`e` m`e`dia cont`e`nt for th`e` navigation prop`e`rty m`e`ssag`e`s in admin
 
 ## SYNTAX
 
-### Set1 (Default)
+### S`e`t1 (D`e`fault)
 ```
-Set-MgServiceAnnouncementMessageAttachmentArchive -ServiceUpdateMessageId <String> [-BodyParameter <Stream>]
- -InFile <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### SetViaIdentity1
-```
-Set-MgServiceAnnouncementMessageAttachmentArchive -InputObject <IDevicesServiceAnnouncementIdentity>
- [-BodyParameter <Stream>] -InFile <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+S`e`t-MgS`e`rvic`e`Announc`e`m`e`ntM`e`ssag`e`Attachm`e`ntArchiv`e` -S`e`rvic`e`Updat`e`M`e`ssag`e`Id <String> [-BodyParam`e`t`e`r <Str`e`am>]
+ -InFil`e` <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParam`e`t`e`rs>]
 ```
 
-## DESCRIPTION
-Update media content for the navigation property messages in admin
+### S`e`tViaId`e`ntity1
+```
+S`e`t-MgS`e`rvic`e`Announc`e`m`e`ntM`e`ssag`e`Attachm`e`ntArchiv`e` -InputObj`e`ct <ID`e`vic`e`sS`e`rvic`e`Announc`e`m`e`ntId`e`ntity>
+ [-BodyParam`e`t`e`r <Str`e`am>] -InFil`e` <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParam`e`t`e`rs>]
+```
 
-## EXAMPLES
+## D`e`SCRIPTION
+Updat`e` m`e`dia cont`e`nt for th`e` navigation prop`e`rty m`e`ssag`e`s in admin
 
-## PARAMETERS
+## `e`XAMPL`e`S
 
-### -BodyParameter
+## PARAM`e`T`e`RS
+
+### -BodyParam`e`t`e`r
 .
 
 ```yaml
-Type: Stream
-Parameter Sets: (All)
-Aliases:
+Typ`e`: Str`e`am
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Tru`e` (ByValu`e`)
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -InFile
-The path to the file to upload.
-This should include a path and file name.
-If you omit the path, the current location will be used.
+### -InFil`e`
+Th`e` path to th`e` fil`e` to upload.
+This should includ`e` a path and fil`e` nam`e`.
+If you omit th`e` path, th`e` curr`e`nt location will b`e` us`e`d.
 
 ```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -InputObj`e`ct
+Id`e`ntity Param`e`t`e`r
+To construct, pl`e`as`e` us`e` G`e`t-H`e`lp -Onlin`e` and s`e``e` NOT`e`S s`e`ction for INPUTOBJ`e`CT prop`e`rti`e`s and cr`e`at`e` a hash tabl`e`.
 
 ```yaml
-Type: IDevicesServiceAnnouncementIdentity
-Parameter Sets: SetViaIdentity1
-Aliases:
+Typ`e`: ID`e`vic`e`sS`e`rvic`e`Announc`e`m`e`ntId`e`ntity
+Param`e`t`e`r S`e`ts: S`e`tViaId`e`ntity1
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Tru`e` (ByValu`e`)
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -PassThru
-Returns true when the command succeeds
+R`e`turns tru`e` wh`e`n th`e` command succ`e``e`ds
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
+Typ`e`: SwitchParam`e`t`e`r
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -ServiceUpdateMessageId
-key: id of serviceUpdateMessage
+### -S`e`rvic`e`Updat`e`M`e`ssag`e`Id
+k`e`y: id of s`e`rvic`e`Updat`e`M`e`ssag`e`
 
 ```yaml
-Type: String
-Parameter Sets: Set1
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: S`e`t1
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation b`e`for`e` running th`e` cmdl`e`t.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Typ`e`: SwitchParam`e`t`e`r
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happ`e`n if th`e` cmdl`e`t runs.
+Th`e` cmdl`e`t is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Typ`e`: SwitchParam`e`t`e`r
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam`e`t`e`rs
+This cmdl`e`t supports th`e` common param`e`t`e`rs: -D`e`bug, -`e`rrorAction, -`e`rrorVariabl`e`, -InformationAction, -InformationVariabl`e`, -OutVariabl`e`, -OutBuff`e`r, -Pip`e`lin`e`Variabl`e`, -V`e`rbos`e`, -WarningAction, and -WarningVariabl`e`. For mor`e` information, s`e``e` [about_CommonParam`e`t`e`rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDevicesServiceAnnouncementIdentity
-### System.IO.Stream
+### Microsoft.Graph.Pow`e`rSh`e`ll.Mod`e`ls.ID`e`vic`e`sS`e`rvic`e`Announc`e`m`e`ntId`e`ntity
+### Syst`e`m.IO.Str`e`am
 ## OUTPUTS
 
-### System.Boolean
-## NOTES
+### Syst`e`m.Bool`e`an
+## NOT`e`S
 
-ALIASES
+ALIAS`e`S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL`e`X PARAM`e`T`e`R PROP`e`RTI`e`S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr`e`at`e` th`e` param`e`t`e`rs d`e`scrib`e`d b`e`low, construct a hash tabl`e` containing th`e` appropriat`e` prop`e`rti`e`s. For information on hash tabl`e`s, run G`e`t-H`e`lp about_Hash_Tabl`e`s.
 
 
-INPUTOBJECT <IDevicesServiceAnnouncementIdentity>: Identity Parameter
-  - `[ServiceAnnouncementAttachmentId <String>]`: key: id of serviceAnnouncementAttachment
-  - `[ServiceHealthId <String>]`: key: id of serviceHealth
-  - `[ServiceHealthIssueId <String>]`: key: id of serviceHealthIssue
-  - `[ServiceUpdateMessageId <String>]`: key: id of serviceUpdateMessage
+INPUTOBJ`e`CT <ID`e`vic`e`sS`e`rvic`e`Announc`e`m`e`ntId`e`ntity>: Id`e`ntity Param`e`t`e`r
+  - `[S`e`rvic`e`Announc`e`m`e`ntAttachm`e`ntId <String>]`: k`e`y: id of s`e`rvic`e`Announc`e`m`e`ntAttachm`e`nt
+  - `[S`e`rvic`e`H`e`althId <String>]`: k`e`y: id of s`e`rvic`e`H`e`alth
+  - `[S`e`rvic`e`H`e`althIssu`e`Id <String>]`: k`e`y: id of s`e`rvic`e`H`e`althIssu`e`
+  - `[S`e`rvic`e`Updat`e`M`e`ssag`e`Id <String>]`: k`e`y: id of s`e`rvic`e`Updat`e`M`e`ssag`e`
 
-## RELATED LINKS
+## R`e`LAT`e`D LINKS
