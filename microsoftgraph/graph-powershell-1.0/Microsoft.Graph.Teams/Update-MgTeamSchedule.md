@@ -1,902 +1,902 @@
-﻿---
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mgteamschedule
-schema: 2.0.0
+---
+```````````e```````````xt```````````e```````````rnal h```````````e```````````lp fil```````````e```````````: Microsoft.Graph.T```````````e```````````ams-h```````````e```````````lp.xml
+Modul```````````e``````````` Nam```````````e```````````: Microsoft.Graph.T```````````e```````````ams
+onlin```````````e``````````` v```````````e```````````rsion: https://docs.microsoft.com/```````````e```````````n-us/pow```````````e```````````rsh```````````e```````````ll/modul```````````e```````````/microsoft.graph.t```````````e```````````ams/updat```````````e```````````-mgt```````````e```````````amsch```````````e```````````dul```````````e```````````
+sch```````````e```````````ma: 2.0.0
 ---
 
-# Update-MgTeamSchedule
+# Updat```````````e```````````-MgT```````````e```````````amSch```````````e```````````dul```````````e```````````
 
 ## SYNOPSIS
-Update the navigation property schedule in teams
+Updat```````````e``````````` th```````````e``````````` navigation prop```````````e```````````rty sch```````````e```````````dul```````````e``````````` in t```````````e```````````ams
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### Updat```````````e``````````````````````e```````````xpand```````````e```````````d (D```````````e```````````fault)
 ```
-Update-MgTeamSchedule -TeamId <String> [-AdditionalProperties <Hashtable>] [-Enabled] [-Id <String>]
- [-OfferShiftRequests <IMicrosoftGraphOfferShiftRequest[]>] [-OfferShiftRequestsEnabled]
- [-OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest[]>]
- [-OpenShifts <IMicrosoftGraphOpenShift[]>] [-OpenShiftsEnabled] [-ProvisionStatus <String>]
- [-ProvisionStatusCode <String>] [-SchedulingGroups <IMicrosoftGraphSchedulingGroup[]>]
- [-Shifts <IMicrosoftGraphShift[]>] [-SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest[]>]
- [-SwapShiftsRequestsEnabled] [-TimeClockEnabled] [-TimeOffReasons <IMicrosoftGraphTimeOffReason[]>]
- [-TimeOffRequests <IMicrosoftGraphTimeOffRequest[]>] [-TimeOffRequestsEnabled] [-TimeZone <String>]
- [-TimesOff <IMicrosoftGraphTimeOff[]>] [-WorkforceIntegrationIds <String[]>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgTeamSchedule -TeamId <String> -BodyParameter <IMicrosoftGraphSchedule> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Updat```````````e```````````-MgT```````````e```````````amSch```````````e```````````dul```````````e``````````` -T```````````e```````````amId <String> [-AdditionalProp```````````e```````````rti```````````e```````````s <Hashtabl```````````e```````````>] [-```````````e```````````nabl```````````e```````````d] [-Id <String>]
+ [-Off```````````e```````````rShiftR```````````e```````````qu```````````e```````````sts <IMicrosoftGraphOff```````````e```````````rShiftR```````````e```````````qu```````````e```````````st[]>] [-Off```````````e```````````rShiftR```````````e```````````qu```````````e```````````sts```````````e```````````nabl```````````e```````````d]
+ [-Op```````````e```````````nShiftChang```````````e```````````R```````````e```````````qu```````````e```````````sts <IMicrosoftGraphOp```````````e```````````nShiftChang```````````e```````````R```````````e```````````qu```````````e```````````st[]>]
+ [-Op```````````e```````````nShifts <IMicrosoftGraphOp```````````e```````````nShift[]>] [-Op```````````e```````````nShifts```````````e```````````nabl```````````e```````````d] [-ProvisionStatus <String>]
+ [-ProvisionStatusCod```````````e``````````` <String>] [-Sch```````````e```````````dulingGroups <IMicrosoftGraphSch```````````e```````````dulingGroup[]>]
+ [-Shifts <IMicrosoftGraphShift[]>] [-SwapShiftsChang```````````e```````````R```````````e```````````qu```````````e```````````sts <IMicrosoftGraphSwapShiftsChang```````````e```````````R```````````e```````````qu```````````e```````````st[]>]
+ [-SwapShiftsR```````````e```````````qu```````````e```````````sts```````````e```````````nabl```````````e```````````d] [-Tim```````````e```````````Clock```````````e```````````nabl```````````e```````````d] [-Tim```````````e```````````OffR```````````e```````````asons <IMicrosoftGraphTim```````````e```````````OffR```````````e```````````ason[]>]
+ [-Tim```````````e```````````OffR```````````e```````````qu```````````e```````````sts <IMicrosoftGraphTim```````````e```````````OffR```````````e```````````qu```````````e```````````st[]>] [-Tim```````````e```````````OffR```````````e```````````qu```````````e```````````sts```````````e```````````nabl```````````e```````````d] [-Tim```````````e```````````Zon```````````e``````````` <String>]
+ [-Tim```````````e```````````sOff <IMicrosoftGraphTim```````````e```````````Off[]>] [-Workforc```````````e```````````Int```````````e```````````grationIds <String[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParam```````````e```````````t```````````e```````````rs>]
 ```
 
-### UpdateViaIdentityExpanded
+### Updat```````````e```````````
 ```
-Update-MgTeamSchedule -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>] [-Enabled]
- [-Id <String>] [-OfferShiftRequests <IMicrosoftGraphOfferShiftRequest[]>] [-OfferShiftRequestsEnabled]
- [-OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest[]>]
- [-OpenShifts <IMicrosoftGraphOpenShift[]>] [-OpenShiftsEnabled] [-ProvisionStatus <String>]
- [-ProvisionStatusCode <String>] [-SchedulingGroups <IMicrosoftGraphSchedulingGroup[]>]
- [-Shifts <IMicrosoftGraphShift[]>] [-SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest[]>]
- [-SwapShiftsRequestsEnabled] [-TimeClockEnabled] [-TimeOffReasons <IMicrosoftGraphTimeOffReason[]>]
- [-TimeOffRequests <IMicrosoftGraphTimeOffRequest[]>] [-TimeOffRequestsEnabled] [-TimeZone <String>]
- [-TimesOff <IMicrosoftGraphTimeOff[]>] [-WorkforceIntegrationIds <String[]>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Updat```````````e```````````-MgT```````````e```````````amSch```````````e```````````dul```````````e``````````` -T```````````e```````````amId <String> -BodyParam```````````e```````````t```````````e```````````r <IMicrosoftGraphSch```````````e```````````dul```````````e```````````> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParam```````````e```````````t```````````e```````````rs>]
 ```
 
-### UpdateViaIdentity
+### Updat```````````e```````````ViaId```````````e```````````ntity```````````e```````````xpand```````````e```````````d
 ```
-Update-MgTeamSchedule -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphSchedule> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Updat```````````e```````````-MgT```````````e```````````amSch```````````e```````````dul```````````e``````````` -InputObj```````````e```````````ct <IT```````````e```````````amsId```````````e```````````ntity> [-AdditionalProp```````````e```````````rti```````````e```````````s <Hashtabl```````````e```````````>] [-```````````e```````````nabl```````````e```````````d]
+ [-Id <String>] [-Off```````````e```````````rShiftR```````````e```````````qu```````````e```````````sts <IMicrosoftGraphOff```````````e```````````rShiftR```````````e```````````qu```````````e```````````st[]>] [-Off```````````e```````````rShiftR```````````e```````````qu```````````e```````````sts```````````e```````````nabl```````````e```````````d]
+ [-Op```````````e```````````nShiftChang```````````e```````````R```````````e```````````qu```````````e```````````sts <IMicrosoftGraphOp```````````e```````````nShiftChang```````````e```````````R```````````e```````````qu```````````e```````````st[]>]
+ [-Op```````````e```````````nShifts <IMicrosoftGraphOp```````````e```````````nShift[]>] [-Op```````````e```````````nShifts```````````e```````````nabl```````````e```````````d] [-ProvisionStatus <String>]
+ [-ProvisionStatusCod```````````e``````````` <String>] [-Sch```````````e```````````dulingGroups <IMicrosoftGraphSch```````````e```````````dulingGroup[]>]
+ [-Shifts <IMicrosoftGraphShift[]>] [-SwapShiftsChang```````````e```````````R```````````e```````````qu```````````e```````````sts <IMicrosoftGraphSwapShiftsChang```````````e```````````R```````````e```````````qu```````````e```````````st[]>]
+ [-SwapShiftsR```````````e```````````qu```````````e```````````sts```````````e```````````nabl```````````e```````````d] [-Tim```````````e```````````Clock```````````e```````````nabl```````````e```````````d] [-Tim```````````e```````````OffR```````````e```````````asons <IMicrosoftGraphTim```````````e```````````OffR```````````e```````````ason[]>]
+ [-Tim```````````e```````````OffR```````````e```````````qu```````````e```````````sts <IMicrosoftGraphTim```````````e```````````OffR```````````e```````````qu```````````e```````````st[]>] [-Tim```````````e```````````OffR```````````e```````````qu```````````e```````````sts```````````e```````````nabl```````````e```````````d] [-Tim```````````e```````````Zon```````````e``````````` <String>]
+ [-Tim```````````e```````````sOff <IMicrosoftGraphTim```````````e```````````Off[]>] [-Workforc```````````e```````````Int```````````e```````````grationIds <String[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParam```````````e```````````t```````````e```````````rs>]
 ```
 
-## DESCRIPTION
-Update the navigation property schedule in teams
+### Updat```````````e```````````ViaId```````````e```````````ntity
+```
+Updat```````````e```````````-MgT```````````e```````````amSch```````````e```````````dul```````````e``````````` -InputObj```````````e```````````ct <IT```````````e```````````amsId```````````e```````````ntity> -BodyParam```````````e```````````t```````````e```````````r <IMicrosoftGraphSch```````````e```````````dul```````````e```````````> [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParam```````````e```````````t```````````e```````````rs>]
+```
 
-## EXAMPLES
+## D```````````e```````````SCRIPTION
+Updat```````````e``````````` th```````````e``````````` navigation prop```````````e```````````rty sch```````````e```````````dul```````````e``````````` in t```````````e```````````ams
 
-## PARAMETERS
+## ```````````e```````````XAMPL```````````e```````````S
 
-### -AdditionalProperties
-Additional Parameters
+## PARAM```````````e```````````T```````````e```````````RS
+
+### -AdditionalProp```````````e```````````rti```````````e```````````s
+Additional Param```````````e```````````t```````````e```````````rs
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````````e```````````: Hashtabl```````````e```````````
+Param```````````e```````````t```````````e```````````r S```````````e```````````ts: Updat```````````e``````````````````````e```````````xpand```````````e```````````d, Updat```````````e```````````ViaId```````````e```````````ntity```````````e```````````xpand```````````e```````````d
+Alias```````````e```````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````````e```````````quir```````````e```````````d: Fals```````````e```````````
+Position: Nam```````````e```````````d
+D```````````e```````````fault valu```````````e```````````: Non```````````e```````````
+Acc```````````e```````````pt pip```````````e```````````lin```````````e``````````` input: Fals```````````e```````````
+Acc```````````e```````````pt wildcard charact```````````e```````````rs: Fals```````````e```````````
 ```
 
-### -BodyParameter
-schedule
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -BodyParam```````````e```````````t```````````e```````````r
+sch```````````e```````````dul```````````e```````````
+To construct, pl```````````e```````````as```````````e``````````` us```````````e``````````` G```````````e```````````t-H```````````e```````````lp -Onlin```````````e``````````` and s```````````e``````````````````````e``````````` NOT```````````e```````````S s```````````e```````````ction for BODYPARAM```````````e```````````T```````````e```````````R prop```````````e```````````rti```````````e```````````s and cr```````````e```````````at```````````e``````````` a hash tabl```````````e```````````.
 
 ```yaml
-Type: IMicrosoftGraphSchedule
-Parameter Sets: Update, UpdateViaIdentity
-Aliases:
+Typ```````````e```````````: IMicrosoftGraphSch```````````e```````````dul```````````e```````````
+Param```````````e```````````t```````````e```````````r S```````````e```````````ts: Updat```````````e```````````, Updat```````````e```````````ViaId```````````e```````````ntity
+Alias```````````e```````````s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R```````````e```````````quir```````````e```````````d: Tru```````````e```````````
+Position: Nam```````````e```````````d
+D```````````e```````````fault valu```````````e```````````: Non```````````e```````````
+Acc```````````e```````````pt pip```````````e```````````lin```````````e``````````` input: Tru```````````e``````````` (ByValu```````````e```````````)
+Acc```````````e```````````pt wildcard charact```````````e```````````rs: Fals```````````e```````````
 ```
 
-### -Enabled
-Indicates whether the schedule is enabled for the team.
-Required.
+### -```````````e```````````nabl```````````e```````````d
+Indicat```````````e```````````s wh```````````e```````````th```````````e```````````r th```````````e``````````` sch```````````e```````````dul```````````e``````````` is ```````````e```````````nabl```````````e```````````d for th```````````e``````````` t```````````e```````````am.
+R```````````e```````````quir```````````e```````````d.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````````e```````````: SwitchParam```````````e```````````t```````````e```````````r
+Param```````````e```````````t```````````e```````````r S```````````e```````````ts: Updat```````````e``````````````````````e```````````xpand```````````e```````````d, Updat```````````e```````````ViaId```````````e```````````ntity```````````e```````````xpand```````````e```````````d
+Alias```````````e```````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````````e```````````quir```````````e```````````d: Fals```````````e```````````
+Position: Nam```````````e```````````d
+D```````````e```````````fault valu```````````e```````````: Non```````````e```````````
+Acc```````````e```````````pt pip```````````e```````````lin```````````e``````````` input: Fals```````````e```````````
+Acc```````````e```````````pt wildcard charact```````````e```````````rs: Fals```````````e```````````
 ```
 
 ### -Id
 .
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````````e```````````: String
+Param```````````e```````````t```````````e```````````r S```````````e```````````ts: Updat```````````e``````````````````````e```````````xpand```````````e```````````d, Updat```````````e```````````ViaId```````````e```````````ntity```````````e```````````xpand```````````e```````````d
+Alias```````````e```````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````````e```````````quir```````````e```````````d: Fals```````````e```````````
+Position: Nam```````````e```````````d
+D```````````e```````````fault valu```````````e```````````: Non```````````e```````````
+Acc```````````e```````````pt pip```````````e```````````lin```````````e``````````` input: Fals```````````e```````````
+Acc```````````e```````````pt wildcard charact```````````e```````````rs: Fals```````````e```````````
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -InputObj```````````e```````````ct
+Id```````````e```````````ntity Param```````````e```````````t```````````e```````````r
+To construct, pl```````````e```````````as```````````e``````````` us```````````e``````````` G```````````e```````````t-H```````````e```````````lp -Onlin```````````e``````````` and s```````````e``````````````````````e``````````` NOT```````````e```````````S s```````````e```````````ction for INPUTOBJ```````````e```````````CT prop```````````e```````````rti```````````e```````````s and cr```````````e```````````at```````````e``````````` a hash tabl```````````e```````````.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
-Aliases:
+Typ```````````e```````````: IT```````````e```````````amsId```````````e```````````ntity
+Param```````````e```````````t```````````e```````````r S```````````e```````````ts: Updat```````````e```````````ViaId```````````e```````````ntity```````````e```````````xpand```````````e```````````d, Updat```````````e```````````ViaId```````````e```````````ntity
+Alias```````````e```````````s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R```````````e```````````quir```````````e```````````d: Tru```````````e```````````
+Position: Nam```````````e```````````d
+D```````````e```````````fault valu```````````e```````````: Non```````````e```````````
+Acc```````````e```````````pt pip```````````e```````````lin```````````e``````````` input: Tru```````````e``````````` (ByValu```````````e```````````)
+Acc```````````e```````````pt wildcard charact```````````e```````````rs: Fals```````````e```````````
 ```
 
-### -OfferShiftRequests
+### -Off```````````e```````````rShiftR```````````e```````````qu```````````e```````````sts
 .
-To construct, please use Get-Help -Online and see NOTES section for OFFERSHIFTREQUESTS properties and create a hash table.
+To construct, pl```````````e```````````as```````````e``````````` us```````````e``````````` G```````````e```````````t-H```````````e```````````lp -Onlin```````````e``````````` and s```````````e``````````````````````e``````````` NOT```````````e```````````S s```````````e```````````ction for OFF```````````e```````````RSHIFTR```````````e```````````QU```````````e```````````STS prop```````````e```````````rti```````````e```````````s and cr```````````e```````````at```````````e``````````` a hash tabl```````````e```````````.
 
 ```yaml
-Type: IMicrosoftGraphOfferShiftRequest[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````````e```````````: IMicrosoftGraphOff```````````e```````````rShiftR```````````e```````````qu```````````e```````````st[]
+Param```````````e```````````t```````````e```````````r S```````````e```````````ts: Updat```````````e``````````````````````e```````````xpand```````````e```````````d, Updat```````````e```````````ViaId```````````e```````````ntity```````````e```````````xpand```````````e```````````d
+Alias```````````e```````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````````e```````````quir```````````e```````````d: Fals```````````e```````````
+Position: Nam```````````e```````````d
+D```````````e```````````fault valu```````````e```````````: Non```````````e```````````
+Acc```````````e```````````pt pip```````````e```````````lin```````````e``````````` input: Fals```````````e```````````
+Acc```````````e```````````pt wildcard charact```````````e```````````rs: Fals```````````e```````````
 ```
 
-### -OfferShiftRequestsEnabled
-Indicates whether offer shift requests are enabled for the schedule.
+### -Off```````````e```````````rShiftR```````````e```````````qu```````````e```````````sts```````````e```````````nabl```````````e```````````d
+Indicat```````````e```````````s wh```````````e```````````th```````````e```````````r off```````````e```````````r shift r```````````e```````````qu```````````e```````````sts ar```````````e``````````` ```````````e```````````nabl```````````e```````````d for th```````````e``````````` sch```````````e```````````dul```````````e```````````.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````````e```````````: SwitchParam```````````e```````````t```````````e```````````r
+Param```````````e```````````t```````````e```````````r S```````````e```````````ts: Updat```````````e``````````````````````e```````````xpand```````````e```````````d, Updat```````````e```````````ViaId```````````e```````````ntity```````````e```````````xpand```````````e```````````d
+Alias```````````e```````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````````e```````````quir```````````e```````````d: Fals```````````e```````````
+Position: Nam```````````e```````````d
+D```````````e```````````fault valu```````````e```````````: Non```````````e```````````
+Acc```````````e```````````pt pip```````````e```````````lin```````````e``````````` input: Fals```````````e```````````
+Acc```````````e```````````pt wildcard charact```````````e```````````rs: Fals```````````e```````````
 ```
 
-### -OpenShiftChangeRequests
+### -Op```````````e```````````nShiftChang```````````e```````````R```````````e```````````qu```````````e```````````sts
 .
-To construct, please use Get-Help -Online and see NOTES section for OPENSHIFTCHANGEREQUESTS properties and create a hash table.
+To construct, pl```````````e```````````as```````````e``````````` us```````````e``````````` G```````````e```````````t-H```````````e```````````lp -Onlin```````````e``````````` and s```````````e``````````````````````e``````````` NOT```````````e```````````S s```````````e```````````ction for OP```````````e```````````NSHIFTCHANG```````````e```````````R```````````e```````````QU```````````e```````````STS prop```````````e```````````rti```````````e```````````s and cr```````````e```````````at```````````e``````````` a hash tabl```````````e```````````.
 
 ```yaml
-Type: IMicrosoftGraphOpenShiftChangeRequest[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````````e```````````: IMicrosoftGraphOp```````````e```````````nShiftChang```````````e```````````R```````````e```````````qu```````````e```````````st[]
+Param```````````e```````````t```````````e```````````r S```````````e```````````ts: Updat```````````e``````````````````````e```````````xpand```````````e```````````d, Updat```````````e```````````ViaId```````````e```````````ntity```````````e```````````xpand```````````e```````````d
+Alias```````````e```````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````````e```````````quir```````````e```````````d: Fals```````````e```````````
+Position: Nam```````````e```````````d
+D```````````e```````````fault valu```````````e```````````: Non```````````e```````````
+Acc```````````e```````````pt pip```````````e```````````lin```````````e``````````` input: Fals```````````e```````````
+Acc```````````e```````````pt wildcard charact```````````e```````````rs: Fals```````````e```````````
 ```
 
-### -OpenShifts
+### -Op```````````e```````````nShifts
 .
-To construct, please use Get-Help -Online and see NOTES section for OPENSHIFTS properties and create a hash table.
+To construct, pl```````````e```````````as```````````e``````````` us```````````e``````````` G```````````e```````````t-H```````````e```````````lp -Onlin```````````e``````````` and s```````````e``````````````````````e``````````` NOT```````````e```````````S s```````````e```````````ction for OP```````````e```````````NSHIFTS prop```````````e```````````rti```````````e```````````s and cr```````````e```````````at```````````e``````````` a hash tabl```````````e```````````.
 
 ```yaml
-Type: IMicrosoftGraphOpenShift[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````````e```````````: IMicrosoftGraphOp```````````e```````````nShift[]
+Param```````````e```````````t```````````e```````````r S```````````e```````````ts: Updat```````````e``````````````````````e```````````xpand```````````e```````````d, Updat```````````e```````````ViaId```````````e```````````ntity```````````e```````````xpand```````````e```````````d
+Alias```````````e```````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````````e```````````quir```````````e```````````d: Fals```````````e```````````
+Position: Nam```````````e```````````d
+D```````````e```````````fault valu```````````e```````````: Non```````````e```````````
+Acc```````````e```````````pt pip```````````e```````````lin```````````e``````````` input: Fals```````````e```````````
+Acc```````````e```````````pt wildcard charact```````````e```````````rs: Fals```````````e```````````
 ```
 
-### -OpenShiftsEnabled
-Indicates whether open shifts are enabled for the schedule.
+### -Op```````````e```````````nShifts```````````e```````````nabl```````````e```````````d
+Indicat```````````e```````````s wh```````````e```````````th```````````e```````````r op```````````e```````````n shifts ar```````````e``````````` ```````````e```````````nabl```````````e```````````d for th```````````e``````````` sch```````````e```````````dul```````````e```````````.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````````e```````````: SwitchParam```````````e```````````t```````````e```````````r
+Param```````````e```````````t```````````e```````````r S```````````e```````````ts: Updat```````````e``````````````````````e```````````xpand```````````e```````````d, Updat```````````e```````````ViaId```````````e```````````ntity```````````e```````````xpand```````````e```````````d
+Alias```````````e```````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````````e```````````quir```````````e```````````d: Fals```````````e```````````
+Position: Nam```````````e```````````d
+D```````````e```````````fault valu```````````e```````````: Non```````````e```````````
+Acc```````````e```````````pt pip```````````e```````````lin```````````e``````````` input: Fals```````````e```````````
+Acc```````````e```````````pt wildcard charact```````````e```````````rs: Fals```````````e```````````
 ```
 
 ### -PassThru
-Returns true when the command succeeds
+R```````````e```````````turns tru```````````e``````````` wh```````````e```````````n th```````````e``````````` command succ```````````e``````````````````````e```````````ds
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
+Typ```````````e```````````: SwitchParam```````````e```````````t```````````e```````````r
+Param```````````e```````````t```````````e```````````r S```````````e```````````ts: (All)
+Alias```````````e```````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````````e```````````quir```````````e```````````d: Fals```````````e```````````
+Position: Nam```````````e```````````d
+D```````````e```````````fault valu```````````e```````````: Non```````````e```````````
+Acc```````````e```````````pt pip```````````e```````````lin```````````e``````````` input: Fals```````````e```````````
+Acc```````````e```````````pt wildcard charact```````````e```````````rs: Fals```````````e```````````
 ```
 
 ### -ProvisionStatus
-operationStatus
+op```````````e```````````rationStatus
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````````e```````````: String
+Param```````````e```````````t```````````e```````````r S```````````e```````````ts: Updat```````````e``````````````````````e```````````xpand```````````e```````````d, Updat```````````e```````````ViaId```````````e```````````ntity```````````e```````````xpand```````````e```````````d
+Alias```````````e```````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````````e```````````quir```````````e```````````d: Fals```````````e```````````
+Position: Nam```````````e```````````d
+D```````````e```````````fault valu```````````e```````````: Non```````````e```````````
+Acc```````````e```````````pt pip```````````e```````````lin```````````e``````````` input: Fals```````````e```````````
+Acc```````````e```````````pt wildcard charact```````````e```````````rs: Fals```````````e```````````
 ```
 
-### -ProvisionStatusCode
-Additional information about why schedule provisioning failed.
+### -ProvisionStatusCod```````````e```````````
+Additional information about why sch```````````e```````````dul```````````e``````````` provisioning fail```````````e```````````d.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````````e```````````: String
+Param```````````e```````````t```````````e```````````r S```````````e```````````ts: Updat```````````e``````````````````````e```````````xpand```````````e```````````d, Updat```````````e```````````ViaId```````````e```````````ntity```````````e```````````xpand```````````e```````````d
+Alias```````````e```````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````````e```````````quir```````````e```````````d: Fals```````````e```````````
+Position: Nam```````````e```````````d
+D```````````e```````````fault valu```````````e```````````: Non```````````e```````````
+Acc```````````e```````````pt pip```````````e```````````lin```````````e``````````` input: Fals```````````e```````````
+Acc```````````e```````````pt wildcard charact```````````e```````````rs: Fals```````````e```````````
 ```
 
-### -SchedulingGroups
-The logical grouping of users in the schedule (usually by role).
-To construct, please use Get-Help -Online and see NOTES section for SCHEDULINGGROUPS properties and create a hash table.
+### -Sch```````````e```````````dulingGroups
+Th```````````e``````````` logical grouping of us```````````e```````````rs in th```````````e``````````` sch```````````e```````````dul```````````e``````````` (usually by rol```````````e```````````).
+To construct, pl```````````e```````````as```````````e``````````` us```````````e``````````` G```````````e```````````t-H```````````e```````````lp -Onlin```````````e``````````` and s```````````e``````````````````````e``````````` NOT```````````e```````````S s```````````e```````````ction for SCH```````````e```````````DULINGGROUPS prop```````````e```````````rti```````````e```````````s and cr```````````e```````````at```````````e``````````` a hash tabl```````````e```````````.
 
 ```yaml
-Type: IMicrosoftGraphSchedulingGroup[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````````e```````````: IMicrosoftGraphSch```````````e```````````dulingGroup[]
+Param```````````e```````````t```````````e```````````r S```````````e```````````ts: Updat```````````e``````````````````````e```````````xpand```````````e```````````d, Updat```````````e```````````ViaId```````````e```````````ntity```````````e```````````xpand```````````e```````````d
+Alias```````````e```````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````````e```````````quir```````````e```````````d: Fals```````````e```````````
+Position: Nam```````````e```````````d
+D```````````e```````````fault valu```````````e```````````: Non```````````e```````````
+Acc```````````e```````````pt pip```````````e```````````lin```````````e``````````` input: Fals```````````e```````````
+Acc```````````e```````````pt wildcard charact```````````e```````````rs: Fals```````````e```````````
 ```
 
 ### -Shifts
-The shifts in the schedule.
-To construct, please use Get-Help -Online and see NOTES section for SHIFTS properties and create a hash table.
+Th```````````e``````````` shifts in th```````````e``````````` sch```````````e```````````dul```````````e```````````.
+To construct, pl```````````e```````````as```````````e``````````` us```````````e``````````` G```````````e```````````t-H```````````e```````````lp -Onlin```````````e``````````` and s```````````e``````````````````````e``````````` NOT```````````e```````````S s```````````e```````````ction for SHIFTS prop```````````e```````````rti```````````e```````````s and cr```````````e```````````at```````````e``````````` a hash tabl```````````e```````````.
 
 ```yaml
-Type: IMicrosoftGraphShift[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````````e```````````: IMicrosoftGraphShift[]
+Param```````````e```````````t```````````e```````````r S```````````e```````````ts: Updat```````````e``````````````````````e```````````xpand```````````e```````````d, Updat```````````e```````````ViaId```````````e```````````ntity```````````e```````````xpand```````````e```````````d
+Alias```````````e```````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````````e```````````quir```````````e```````````d: Fals```````````e```````````
+Position: Nam```````````e```````````d
+D```````````e```````````fault valu```````````e```````````: Non```````````e```````````
+Acc```````````e```````````pt pip```````````e```````````lin```````````e``````````` input: Fals```````````e```````````
+Acc```````````e```````````pt wildcard charact```````````e```````````rs: Fals```````````e```````````
 ```
 
-### -SwapShiftsChangeRequests
+### -SwapShiftsChang```````````e```````````R```````````e```````````qu```````````e```````````sts
 .
-To construct, please use Get-Help -Online and see NOTES section for SWAPSHIFTSCHANGEREQUESTS properties and create a hash table.
+To construct, pl```````````e```````````as```````````e``````````` us```````````e``````````` G```````````e```````````t-H```````````e```````````lp -Onlin```````````e``````````` and s```````````e``````````````````````e``````````` NOT```````````e```````````S s```````````e```````````ction for SWAPSHIFTSCHANG```````````e```````````R```````````e```````````QU```````````e```````````STS prop```````````e```````````rti```````````e```````````s and cr```````````e```````````at```````````e``````````` a hash tabl```````````e```````````.
 
 ```yaml
-Type: IMicrosoftGraphSwapShiftsChangeRequest[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````````e```````````: IMicrosoftGraphSwapShiftsChang```````````e```````````R```````````e```````````qu```````````e```````````st[]
+Param```````````e```````````t```````````e```````````r S```````````e```````````ts: Updat```````````e``````````````````````e```````````xpand```````````e```````````d, Updat```````````e```````````ViaId```````````e```````````ntity```````````e```````````xpand```````````e```````````d
+Alias```````````e```````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````````e```````````quir```````````e```````````d: Fals```````````e```````````
+Position: Nam```````````e```````````d
+D```````````e```````````fault valu```````````e```````````: Non```````````e```````````
+Acc```````````e```````````pt pip```````````e```````````lin```````````e``````````` input: Fals```````````e```````````
+Acc```````````e```````````pt wildcard charact```````````e```````````rs: Fals```````````e```````````
 ```
 
-### -SwapShiftsRequestsEnabled
-Indicates whether swap shifts requests are enabled for the schedule.
+### -SwapShiftsR```````````e```````````qu```````````e```````````sts```````````e```````````nabl```````````e```````````d
+Indicat```````````e```````````s wh```````````e```````````th```````````e```````````r swap shifts r```````````e```````````qu```````````e```````````sts ar```````````e``````````` ```````````e```````````nabl```````````e```````````d for th```````````e``````````` sch```````````e```````````dul```````````e```````````.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````````e```````````: SwitchParam```````````e```````````t```````````e```````````r
+Param```````````e```````````t```````````e```````````r S```````````e```````````ts: Updat```````````e``````````````````````e```````````xpand```````````e```````````d, Updat```````````e```````````ViaId```````````e```````````ntity```````````e```````````xpand```````````e```````````d
+Alias```````````e```````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````````e```````````quir```````````e```````````d: Fals```````````e```````````
+Position: Nam```````````e```````````d
+D```````````e```````````fault valu```````````e```````````: Non```````````e```````````
+Acc```````````e```````````pt pip```````````e```````````lin```````````e``````````` input: Fals```````````e```````````
+Acc```````````e```````````pt wildcard charact```````````e```````````rs: Fals```````````e```````````
 ```
 
-### -TeamId
-key: id of team
+### -T```````````e```````````amId
+k```````````e```````````y: id of t```````````e```````````am
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
-Aliases:
+Typ```````````e```````````: String
+Param```````````e```````````t```````````e```````````r S```````````e```````````ts: Updat```````````e``````````````````````e```````````xpand```````````e```````````d, Updat```````````e```````````
+Alias```````````e```````````s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````````e```````````quir```````````e```````````d: Tru```````````e```````````
+Position: Nam```````````e```````````d
+D```````````e```````````fault valu```````````e```````````: Non```````````e```````````
+Acc```````````e```````````pt pip```````````e```````````lin```````````e``````````` input: Fals```````````e```````````
+Acc```````````e```````````pt wildcard charact```````````e```````````rs: Fals```````````e```````````
 ```
 
-### -TimeClockEnabled
-Indicates whether time clock is enabled for the schedule.
+### -Tim```````````e```````````Clock```````````e```````````nabl```````````e```````````d
+Indicat```````````e```````````s wh```````````e```````````th```````````e```````````r tim```````````e``````````` clock is ```````````e```````````nabl```````````e```````````d for th```````````e``````````` sch```````````e```````````dul```````````e```````````.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````````e```````````: SwitchParam```````````e```````````t```````````e```````````r
+Param```````````e```````````t```````````e```````````r S```````````e```````````ts: Updat```````````e``````````````````````e```````````xpand```````````e```````````d, Updat```````````e```````````ViaId```````````e```````````ntity```````````e```````````xpand```````````e```````````d
+Alias```````````e```````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````````e```````````quir```````````e```````````d: Fals```````````e```````````
+Position: Nam```````````e```````````d
+D```````````e```````````fault valu```````````e```````````: Non```````````e```````````
+Acc```````````e```````````pt pip```````````e```````````lin```````````e``````````` input: Fals```````````e```````````
+Acc```````````e```````````pt wildcard charact```````````e```````````rs: Fals```````````e```````````
 ```
 
-### -TimeOffReasons
-The set of reasons for a time off in the schedule.
-To construct, please use Get-Help -Online and see NOTES section for TIMEOFFREASONS properties and create a hash table.
+### -Tim```````````e```````````OffR```````````e```````````asons
+Th```````````e``````````` s```````````e```````````t of r```````````e```````````asons for a tim```````````e``````````` off in th```````````e``````````` sch```````````e```````````dul```````````e```````````.
+To construct, pl```````````e```````````as```````````e``````````` us```````````e``````````` G```````````e```````````t-H```````````e```````````lp -Onlin```````````e``````````` and s```````````e``````````````````````e``````````` NOT```````````e```````````S s```````````e```````````ction for TIM```````````e```````````OFFR```````````e```````````ASONS prop```````````e```````````rti```````````e```````````s and cr```````````e```````````at```````````e``````````` a hash tabl```````````e```````````.
 
 ```yaml
-Type: IMicrosoftGraphTimeOffReason[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````````e```````````: IMicrosoftGraphTim```````````e```````````OffR```````````e```````````ason[]
+Param```````````e```````````t```````````e```````````r S```````````e```````````ts: Updat```````````e``````````````````````e```````````xpand```````````e```````````d, Updat```````````e```````````ViaId```````````e```````````ntity```````````e```````````xpand```````````e```````````d
+Alias```````````e```````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````````e```````````quir```````````e```````````d: Fals```````````e```````````
+Position: Nam```````````e```````````d
+D```````````e```````````fault valu```````````e```````````: Non```````````e```````````
+Acc```````````e```````````pt pip```````````e```````````lin```````````e``````````` input: Fals```````````e```````````
+Acc```````````e```````````pt wildcard charact```````````e```````````rs: Fals```````````e```````````
 ```
 
-### -TimeOffRequests
+### -Tim```````````e```````````OffR```````````e```````````qu```````````e```````````sts
 .
-To construct, please use Get-Help -Online and see NOTES section for TIMEOFFREQUESTS properties and create a hash table.
+To construct, pl```````````e```````````as```````````e``````````` us```````````e``````````` G```````````e```````````t-H```````````e```````````lp -Onlin```````````e``````````` and s```````````e``````````````````````e``````````` NOT```````````e```````````S s```````````e```````````ction for TIM```````````e```````````OFFR```````````e```````````QU```````````e```````````STS prop```````````e```````````rti```````````e```````````s and cr```````````e```````````at```````````e``````````` a hash tabl```````````e```````````.
 
 ```yaml
-Type: IMicrosoftGraphTimeOffRequest[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````````e```````````: IMicrosoftGraphTim```````````e```````````OffR```````````e```````````qu```````````e```````````st[]
+Param```````````e```````````t```````````e```````````r S```````````e```````````ts: Updat```````````e``````````````````````e```````````xpand```````````e```````````d, Updat```````````e```````````ViaId```````````e```````````ntity```````````e```````````xpand```````````e```````````d
+Alias```````````e```````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````````e```````````quir```````````e```````````d: Fals```````````e```````````
+Position: Nam```````````e```````````d
+D```````````e```````````fault valu```````````e```````````: Non```````````e```````````
+Acc```````````e```````````pt pip```````````e```````````lin```````````e``````````` input: Fals```````````e```````````
+Acc```````````e```````````pt wildcard charact```````````e```````````rs: Fals```````````e```````````
 ```
 
-### -TimeOffRequestsEnabled
-Indicates whether time off requests are enabled for the schedule.
+### -Tim```````````e```````````OffR```````````e```````````qu```````````e```````````sts```````````e```````````nabl```````````e```````````d
+Indicat```````````e```````````s wh```````````e```````````th```````````e```````````r tim```````````e``````````` off r```````````e```````````qu```````````e```````````sts ar```````````e``````````` ```````````e```````````nabl```````````e```````````d for th```````````e``````````` sch```````````e```````````dul```````````e```````````.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````````e```````````: SwitchParam```````````e```````````t```````````e```````````r
+Param```````````e```````````t```````````e```````````r S```````````e```````````ts: Updat```````````e``````````````````````e```````````xpand```````````e```````````d, Updat```````````e```````````ViaId```````````e```````````ntity```````````e```````````xpand```````````e```````````d
+Alias```````````e```````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````````e```````````quir```````````e```````````d: Fals```````````e```````````
+Position: Nam```````````e```````````d
+D```````````e```````````fault valu```````````e```````````: Non```````````e```````````
+Acc```````````e```````````pt pip```````````e```````````lin```````````e``````````` input: Fals```````````e```````````
+Acc```````````e```````````pt wildcard charact```````````e```````````rs: Fals```````````e```````````
 ```
 
-### -TimesOff
-The instances of times off in the schedule.
-To construct, please use Get-Help -Online and see NOTES section for TIMESOFF properties and create a hash table.
+### -Tim```````````e```````````sOff
+Th```````````e``````````` instanc```````````e```````````s of tim```````````e```````````s off in th```````````e``````````` sch```````````e```````````dul```````````e```````````.
+To construct, pl```````````e```````````as```````````e``````````` us```````````e``````````` G```````````e```````````t-H```````````e```````````lp -Onlin```````````e``````````` and s```````````e``````````````````````e``````````` NOT```````````e```````````S s```````````e```````````ction for TIM```````````e```````````SOFF prop```````````e```````````rti```````````e```````````s and cr```````````e```````````at```````````e``````````` a hash tabl```````````e```````````.
 
 ```yaml
-Type: IMicrosoftGraphTimeOff[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````````e```````````: IMicrosoftGraphTim```````````e```````````Off[]
+Param```````````e```````````t```````````e```````````r S```````````e```````````ts: Updat```````````e``````````````````````e```````````xpand```````````e```````````d, Updat```````````e```````````ViaId```````````e```````````ntity```````````e```````````xpand```````````e```````````d
+Alias```````````e```````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````````e```````````quir```````````e```````````d: Fals```````````e```````````
+Position: Nam```````````e```````````d
+D```````````e```````````fault valu```````````e```````````: Non```````````e```````````
+Acc```````````e```````````pt pip```````````e```````````lin```````````e``````````` input: Fals```````````e```````````
+Acc```````````e```````````pt wildcard charact```````````e```````````rs: Fals```````````e```````````
 ```
 
-### -TimeZone
-Indicates the time zone of the schedule team using tz database format.
-Required.
+### -Tim```````````e```````````Zon```````````e```````````
+Indicat```````````e```````````s th```````````e``````````` tim```````````e``````````` zon```````````e``````````` of th```````````e``````````` sch```````````e```````````dul```````````e``````````` t```````````e```````````am using tz databas```````````e``````````` format.
+R```````````e```````````quir```````````e```````````d.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````````e```````````: String
+Param```````````e```````````t```````````e```````````r S```````````e```````````ts: Updat```````````e``````````````````````e```````````xpand```````````e```````````d, Updat```````````e```````````ViaId```````````e```````````ntity```````````e```````````xpand```````````e```````````d
+Alias```````````e```````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````````e```````````quir```````````e```````````d: Fals```````````e```````````
+Position: Nam```````````e```````````d
+D```````````e```````````fault valu```````````e```````````: Non```````````e```````````
+Acc```````````e```````````pt pip```````````e```````````lin```````````e``````````` input: Fals```````````e```````````
+Acc```````````e```````````pt wildcard charact```````````e```````````rs: Fals```````````e```````````
 ```
 
-### -WorkforceIntegrationIds
+### -Workforc```````````e```````````Int```````````e```````````grationIds
 .
 
 ```yaml
-Type: String[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````````e```````````: String[]
+Param```````````e```````````t```````````e```````````r S```````````e```````````ts: Updat```````````e``````````````````````e```````````xpand```````````e```````````d, Updat```````````e```````````ViaId```````````e```````````ntity```````````e```````````xpand```````````e```````````d
+Alias```````````e```````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````````e```````````quir```````````e```````````d: Fals```````````e```````````
+Position: Nam```````````e```````````d
+D```````````e```````````fault valu```````````e```````````: Non```````````e```````````
+Acc```````````e```````````pt pip```````````e```````````lin```````````e``````````` input: Fals```````````e```````````
+Acc```````````e```````````pt wildcard charact```````````e```````````rs: Fals```````````e```````````
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation b```````````e```````````for```````````e``````````` running th```````````e``````````` cmdl```````````e```````````t.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Typ```````````e```````````: SwitchParam```````````e```````````t```````````e```````````r
+Param```````````e```````````t```````````e```````````r S```````````e```````````ts: (All)
+Alias```````````e```````````s: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````````e```````````quir```````````e```````````d: Fals```````````e```````````
+Position: Nam```````````e```````````d
+D```````````e```````````fault valu```````````e```````````: Non```````````e```````````
+Acc```````````e```````````pt pip```````````e```````````lin```````````e``````````` input: Fals```````````e```````````
+Acc```````````e```````````pt wildcard charact```````````e```````````rs: Fals```````````e```````````
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happ```````````e```````````n if th```````````e``````````` cmdl```````````e```````````t runs.
+Th```````````e``````````` cmdl```````````e```````````t is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Typ```````````e```````````: SwitchParam```````````e```````````t```````````e```````````r
+Param```````````e```````````t```````````e```````````r S```````````e```````````ts: (All)
+Alias```````````e```````````s: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````````e```````````quir```````````e```````````d: Fals```````````e```````````
+Position: Nam```````````e```````````d
+D```````````e```````````fault valu```````````e```````````: Non```````````e```````````
+Acc```````````e```````````pt pip```````````e```````````lin```````````e``````````` input: Fals```````````e```````````
+Acc```````````e```````````pt wildcard charact```````````e```````````rs: Fals```````````e```````````
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam```````````e```````````t```````````e```````````rs
+This cmdl```````````e```````````t supports th```````````e``````````` common param```````````e```````````t```````````e```````````rs: -D```````````e```````````bug, -```````````e```````````rrorAction, -```````````e```````````rrorVariabl```````````e```````````, -InformationAction, -InformationVariabl```````````e```````````, -OutVariabl```````````e```````````, -OutBuff```````````e```````````r, -Pip```````````e```````````lin```````````e```````````Variabl```````````e```````````, -V```````````e```````````rbos```````````e```````````, -WarningAction, and -WarningVariabl```````````e```````````. For mor```````````e``````````` information, s```````````e``````````````````````e``````````` [about_CommonParam```````````e```````````t```````````e```````````rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSchedule
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Pow```````````e```````````rSh```````````e```````````ll.Mod```````````e```````````ls.IMicrosoftGraphSch```````````e```````````dul```````````e```````````
+### Microsoft.Graph.Pow```````````e```````````rSh```````````e```````````ll.Mod```````````e```````````ls.IT```````````e```````````amsId```````````e```````````ntity
 ## OUTPUTS
 
-### System.Boolean
-## NOTES
+### Syst```````````e```````````m.Bool```````````e```````````an
+## NOT```````````e```````````S
 
-ALIASES
+ALIAS```````````e```````````S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL```````````e```````````X PARAM```````````e```````````T```````````e```````````R PROP```````````e```````````RTI```````````e```````````S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr```````````e```````````at```````````e``````````` th```````````e``````````` param```````````e```````````t```````````e```````````rs d```````````e```````````scrib```````````e```````````d b```````````e```````````low, construct a hash tabl```````````e``````````` containing th```````````e``````````` appropriat```````````e``````````` prop```````````e```````````rti```````````e```````````s. For information on hash tabl```````````e```````````s, run G```````````e```````````t-H```````````e```````````lp about_Hash_Tabl```````````e```````````s.
 
 
-BODYPARAMETER <IMicrosoftGraphSchedule>: schedule
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+BODYPARAM```````````e```````````T```````````e```````````R <IMicrosoftGraphSch```````````e```````````dul```````````e```````````>: sch```````````e```````````dul```````````e```````````
+  - `[(Any) <Obj```````````e```````````ct>]`: This indicat```````````e```````````s any prop```````````e```````````rty can b```````````e``````````` add```````````e```````````d to this obj```````````e```````````ct.
   - `[Id <String>]`: 
-  - `[Enabled <Boolean?>]`: Indicates whether the schedule is enabled for the team. Required.
-  - `[OfferShiftRequests <IMicrosoftGraphOfferShiftRequest[]>]`: 
-    - `[AssignedTo <String>]`: scheduleChangeRequestActor
-    - `[ManagerActionDateTime <DateTime?>]`: 
-    - `[ManagerActionMessage <String>]`: 
-    - `[ManagerUserId <String>]`: 
-    - `[SenderDateTime <DateTime?>]`: 
-    - `[SenderMessage <String>]`: 
-    - `[SenderUserId <String>]`: 
-    - `[State <String>]`: scheduleChangeState
-    - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Application <IMicrosoftGraphIdentity>]`: identity
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-      - `[Device <IMicrosoftGraphIdentity>]`: identity
-      - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[```````````e```````````nabl```````````e```````````d <Bool```````````e```````````an?>]`: Indicat```````````e```````````s wh```````````e```````````th```````````e```````````r th```````````e``````````` sch```````````e```````````dul```````````e``````````` is ```````````e```````````nabl```````````e```````````d for th```````````e``````````` t```````````e```````````am. R```````````e```````````quir```````````e```````````d.
+  - `[Off```````````e```````````rShiftR```````````e```````````qu```````````e```````````sts <IMicrosoftGraphOff```````````e```````````rShiftR```````````e```````````qu```````````e```````````st[]>]`: 
+    - `[Assign```````````e```````````dTo <String>]`: sch```````````e```````````dul```````````e```````````Chang```````````e```````````R```````````e```````````qu```````````e```````````stActor
+    - `[Manag```````````e```````````rActionDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: 
+    - `[Manag```````````e```````````rActionM```````````e```````````ssag```````````e``````````` <String>]`: 
+    - `[Manag```````````e```````````rUs```````````e```````````rId <String>]`: 
+    - `[S```````````e```````````nd```````````e```````````rDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: 
+    - `[S```````````e```````````nd```````````e```````````rM```````````e```````````ssag```````````e``````````` <String>]`: 
+    - `[S```````````e```````````nd```````````e```````````rUs```````````e```````````rId <String>]`: 
+    - `[Stat```````````e``````````` <String>]`: sch```````````e```````````dul```````````e```````````Chang```````````e```````````Stat```````````e```````````
+    - `[Cr```````````e```````````at```````````e```````````dDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[LastModifi```````````e```````````dBy <IMicrosoftGraphId```````````e```````````ntityS```````````e```````````t>]`: id```````````e```````````ntityS```````````e```````````t
+      - `[(Any) <Obj```````````e```````````ct>]`: This indicat```````````e```````````s any prop```````````e```````````rty can b```````````e``````````` add```````````e```````````d to this obj```````````e```````````ct.
+      - `[Application <IMicrosoftGraphId```````````e```````````ntity>]`: id```````````e```````````ntity
+        - `[(Any) <Obj```````````e```````````ct>]`: This indicat```````````e```````````s any prop```````````e```````````rty can b```````````e``````````` add```````````e```````````d to this obj```````````e```````````ct.
+        - `[DisplayNam```````````e``````````` <String>]`: Th```````````e``````````` id```````````e```````````ntity's display nam```````````e```````````. Not```````````e``````````` that this may not always b```````````e``````````` availabl```````````e``````````` or up to dat```````````e```````````. For ```````````e```````````xampl```````````e```````````, if a us```````````e```````````r chang```````````e```````````s th```````````e```````````ir display nam```````````e```````````, th```````````e``````````` API may show th```````````e``````````` n```````````e```````````w valu```````````e``````````` in a futur```````````e``````````` r```````````e```````````spons```````````e```````````, but th```````````e``````````` it```````````e```````````ms associat```````````e```````````d with th```````````e``````````` us```````````e```````````r won't show up as having chang```````````e```````````d wh```````````e```````````n using d```````````e```````````lta.
+        - `[Id <String>]`: Uniqu```````````e``````````` id```````````e```````````ntifi```````````e```````````r for th```````````e``````````` id```````````e```````````ntity.
+      - `[D```````````e```````````vic```````````e``````````` <IMicrosoftGraphId```````````e```````````ntity>]`: id```````````e```````````ntity
+      - `[Us```````````e```````````r <IMicrosoftGraphId```````````e```````````ntity>]`: id```````````e```````````ntity
+    - `[LastModifi```````````e```````````dDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[Id <String>]`: 
-    - `[RecipientActionDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
-    - `[RecipientUserId <String>]`: User id of the recipient of the offer shift request.
-    - `[SenderShiftId <String>]`: User id of the sender of the offer shift request.
-  - `[OfferShiftRequestsEnabled <Boolean?>]`: Indicates whether offer shift requests are enabled for the schedule.
-  - `[OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest[]>]`: 
-    - `[AssignedTo <String>]`: scheduleChangeRequestActor
-    - `[ManagerActionDateTime <DateTime?>]`: 
-    - `[ManagerActionMessage <String>]`: 
-    - `[ManagerUserId <String>]`: 
-    - `[SenderDateTime <DateTime?>]`: 
-    - `[SenderMessage <String>]`: 
-    - `[SenderUserId <String>]`: 
-    - `[State <String>]`: scheduleChangeState
-    - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[R```````````e```````````cipi```````````e```````````ntActionDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[R```````````e```````````cipi```````````e```````````ntActionM```````````e```````````ssag```````````e``````````` <String>]`: Custom m```````````e```````````ssag```````````e``````````` s```````````e```````````nt by r```````````e```````````cipi```````````e```````````nt of th```````````e``````````` off```````````e```````````r shift r```````````e```````````qu```````````e```````````st.
+    - `[R```````````e```````````cipi```````````e```````````ntUs```````````e```````````rId <String>]`: Us```````````e```````````r id of th```````````e``````````` r```````````e```````````cipi```````````e```````````nt of th```````````e``````````` off```````````e```````````r shift r```````````e```````````qu```````````e```````````st.
+    - `[S```````````e```````````nd```````````e```````````rShiftId <String>]`: Us```````````e```````````r id of th```````````e``````````` s```````````e```````````nd```````````e```````````r of th```````````e``````````` off```````````e```````````r shift r```````````e```````````qu```````````e```````````st.
+  - `[Off```````````e```````````rShiftR```````````e```````````qu```````````e```````````sts```````````e```````````nabl```````````e```````````d <Bool```````````e```````````an?>]`: Indicat```````````e```````````s wh```````````e```````````th```````````e```````````r off```````````e```````````r shift r```````````e```````````qu```````````e```````````sts ar```````````e``````````` ```````````e```````````nabl```````````e```````````d for th```````````e``````````` sch```````````e```````````dul```````````e```````````.
+  - `[Op```````````e```````````nShiftChang```````````e```````````R```````````e```````````qu```````````e```````````sts <IMicrosoftGraphOp```````````e```````````nShiftChang```````````e```````````R```````````e```````````qu```````````e```````````st[]>]`: 
+    - `[Assign```````````e```````````dTo <String>]`: sch```````````e```````````dul```````````e```````````Chang```````````e```````````R```````````e```````````qu```````````e```````````stActor
+    - `[Manag```````````e```````````rActionDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: 
+    - `[Manag```````````e```````````rActionM```````````e```````````ssag```````````e``````````` <String>]`: 
+    - `[Manag```````````e```````````rUs```````````e```````````rId <String>]`: 
+    - `[S```````````e```````````nd```````````e```````````rDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: 
+    - `[S```````````e```````````nd```````````e```````````rM```````````e```````````ssag```````````e``````````` <String>]`: 
+    - `[S```````````e```````````nd```````````e```````````rUs```````````e```````````rId <String>]`: 
+    - `[Stat```````````e``````````` <String>]`: sch```````````e```````````dul```````````e```````````Chang```````````e```````````Stat```````````e```````````
+    - `[Cr```````````e```````````at```````````e```````````dDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[LastModifi```````````e```````````dBy <IMicrosoftGraphId```````````e```````````ntityS```````````e```````````t>]`: id```````````e```````````ntityS```````````e```````````t
+    - `[LastModifi```````````e```````````dDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[Id <String>]`: 
-    - `[OpenShiftId <String>]`: ID for the open shift.
-  - `[OpenShifts <IMicrosoftGraphOpenShift[]>]`: 
-    - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[Op```````````e```````````nShiftId <String>]`: ID for th```````````e``````````` op```````````e```````````n shift.
+  - `[Op```````````e```````````nShifts <IMicrosoftGraphOp```````````e```````````nShift[]>]`: 
+    - `[Cr```````````e```````````at```````````e```````````dDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[LastModifi```````````e```````````dBy <IMicrosoftGraphId```````````e```````````ntityS```````````e```````````t>]`: id```````````e```````````ntityS```````````e```````````t
+    - `[LastModifi```````````e```````````dDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[Id <String>]`: 
-    - `[DraftOpenShift <IMicrosoftGraphOpenShiftItem>]`: openShiftItem
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Activities <IMicrosoftGraphShiftActivity[]>]`: An incremental part of a shift which can cover details of when and where an employee is during their shift. For example, an assignment or a scheduled break or lunch. Required.
-        - `[Code <String>]`: Customer defined code for the shiftActivity. Required.
-        - `[DisplayName <String>]`: The name of the shiftActivity. Required.
-        - `[EndDateTime <DateTime?>]`: The end date and time for the shiftActivity. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Required.
-        - `[IsPaid <Boolean?>]`: Indicates whether the microsoft.graph.user should be paid for the activity during their shift. Required.
-        - `[StartDateTime <DateTime?>]`: The start date and time for the shiftActivity. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Required.
-        - `[Theme <String>]`: scheduleEntityTheme
-      - `[DisplayName <String>]`: The shift label of the shiftItem.
-      - `[Notes <String>]`: The shift notes for the shiftItem.
-      - `[EndDateTime <DateTime?>]`: 
-      - `[StartDateTime <DateTime?>]`: 
-      - `[Theme <String>]`: scheduleEntityTheme
-      - `[OpenSlotCount <Int32?>]`: Count of the number of slots for the given open shift.
-    - `[SchedulingGroupId <String>]`: ID for the scheduling group that the open shift belongs to.
-    - `[SharedOpenShift <IMicrosoftGraphOpenShiftItem>]`: openShiftItem
-  - `[OpenShiftsEnabled <Boolean?>]`: Indicates whether open shifts are enabled for the schedule.
-  - `[ProvisionStatus <String>]`: operationStatus
-  - `[ProvisionStatusCode <String>]`: Additional information about why schedule provisioning failed.
-  - `[SchedulingGroups <IMicrosoftGraphSchedulingGroup[]>]`: The logical grouping of users in the schedule (usually by role).
-    - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[DraftOp```````````e```````````nShift <IMicrosoftGraphOp```````````e```````````nShiftIt```````````e```````````m>]`: op```````````e```````````nShiftIt```````````e```````````m
+      - `[(Any) <Obj```````````e```````````ct>]`: This indicat```````````e```````````s any prop```````````e```````````rty can b```````````e``````````` add```````````e```````````d to this obj```````````e```````````ct.
+      - `[Activiti```````````e```````````s <IMicrosoftGraphShiftActivity[]>]`: An incr```````````e```````````m```````````e```````````ntal part of a shift which can cov```````````e```````````r d```````````e```````````tails of wh```````````e```````````n and wh```````````e```````````r```````````e``````````` an ```````````e```````````mploy```````````e``````````````````````e``````````` is during th```````````e```````````ir shift. For ```````````e```````````xampl```````````e```````````, an assignm```````````e```````````nt or a sch```````````e```````````dul```````````e```````````d br```````````e```````````ak or lunch. R```````````e```````````quir```````````e```````````d.
+        - `[Cod```````````e``````````` <String>]`: Custom```````````e```````````r d```````````e```````````fin```````````e```````````d cod```````````e``````````` for th```````````e``````````` shiftActivity. R```````````e```````````quir```````````e```````````d.
+        - `[DisplayNam```````````e``````````` <String>]`: Th```````````e``````````` nam```````````e``````````` of th```````````e``````````` shiftActivity. R```````````e```````````quir```````````e```````````d.
+        - `[```````````e```````````ndDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` ```````````e```````````nd dat```````````e``````````` and tim```````````e``````````` for th```````````e``````````` shiftActivity. Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. R```````````e```````````quir```````````e```````````d.
+        - `[IsPaid <Bool```````````e```````````an?>]`: Indicat```````````e```````````s wh```````````e```````````th```````````e```````````r th```````````e``````````` microsoft.graph.us```````````e```````````r should b```````````e``````````` paid for th```````````e``````````` activity during th```````````e```````````ir shift. R```````````e```````````quir```````````e```````````d.
+        - `[StartDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` start dat```````````e``````````` and tim```````````e``````````` for th```````````e``````````` shiftActivity. Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. R```````````e```````````quir```````````e```````````d.
+        - `[Th```````````e```````````m```````````e``````````` <String>]`: sch```````````e```````````dul```````````e``````````````````````e```````````ntityTh```````````e```````````m```````````e```````````
+      - `[DisplayNam```````````e``````````` <String>]`: Th```````````e``````````` shift lab```````````e```````````l of th```````````e``````````` shiftIt```````````e```````````m.
+      - `[Not```````````e```````````s <String>]`: Th```````````e``````````` shift not```````````e```````````s for th```````````e``````````` shiftIt```````````e```````````m.
+      - `[```````````e```````````ndDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: 
+      - `[StartDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: 
+      - `[Th```````````e```````````m```````````e``````````` <String>]`: sch```````````e```````````dul```````````e``````````````````````e```````````ntityTh```````````e```````````m```````````e```````````
+      - `[Op```````````e```````````nSlotCount <Int32?>]`: Count of th```````````e``````````` numb```````````e```````````r of slots for th```````````e``````````` giv```````````e```````````n op```````````e```````````n shift.
+    - `[Sch```````````e```````````dulingGroupId <String>]`: ID for th```````````e``````````` sch```````````e```````````duling group that th```````````e``````````` op```````````e```````````n shift b```````````e```````````longs to.
+    - `[Shar```````````e```````````dOp```````````e```````````nShift <IMicrosoftGraphOp```````````e```````````nShiftIt```````````e```````````m>]`: op```````````e```````````nShiftIt```````````e```````````m
+  - `[Op```````````e```````````nShifts```````````e```````````nabl```````````e```````````d <Bool```````````e```````````an?>]`: Indicat```````````e```````````s wh```````````e```````````th```````````e```````````r op```````````e```````````n shifts ar```````````e``````````` ```````````e```````````nabl```````````e```````````d for th```````````e``````````` sch```````````e```````````dul```````````e```````````.
+  - `[ProvisionStatus <String>]`: op```````````e```````````rationStatus
+  - `[ProvisionStatusCod```````````e``````````` <String>]`: Additional information about why sch```````````e```````````dul```````````e``````````` provisioning fail```````````e```````````d.
+  - `[Sch```````````e```````````dulingGroups <IMicrosoftGraphSch```````````e```````````dulingGroup[]>]`: Th```````````e``````````` logical grouping of us```````````e```````````rs in th```````````e``````````` sch```````````e```````````dul```````````e``````````` (usually by rol```````````e```````````).
+    - `[Cr```````````e```````````at```````````e```````````dDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[LastModifi```````````e```````````dBy <IMicrosoftGraphId```````````e```````````ntityS```````````e```````````t>]`: id```````````e```````````ntityS```````````e```````````t
+    - `[LastModifi```````````e```````````dDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[Id <String>]`: 
-    - `[DisplayName <String>]`: The display name for the schedulingGroup. Required.
-    - `[IsActive <Boolean?>]`: Indicates whether the schedulingGroup can be used when creating new entities or updating existing ones. Required.
-    - `[UserIds <String[]>]`: The list of user IDs that are a member of the schedulingGroup. Required.
-  - `[Shifts <IMicrosoftGraphShift[]>]`: The shifts in the schedule.
-    - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[DisplayNam```````````e``````````` <String>]`: Th```````````e``````````` display nam```````````e``````````` for th```````````e``````````` sch```````````e```````````dulingGroup. R```````````e```````````quir```````````e```````````d.
+    - `[IsActiv```````````e``````````` <Bool```````````e```````````an?>]`: Indicat```````````e```````````s wh```````````e```````````th```````````e```````````r th```````````e``````````` sch```````````e```````````dulingGroup can b```````````e``````````` us```````````e```````````d wh```````````e```````````n cr```````````e```````````ating n```````````e```````````w ```````````e```````````ntiti```````````e```````````s or updating ```````````e```````````xisting on```````````e```````````s. R```````````e```````````quir```````````e```````````d.
+    - `[Us```````````e```````````rIds <String[]>]`: Th```````````e``````````` list of us```````````e```````````r IDs that ar```````````e``````````` a m```````````e```````````mb```````````e```````````r of th```````````e``````````` sch```````````e```````````dulingGroup. R```````````e```````````quir```````````e```````````d.
+  - `[Shifts <IMicrosoftGraphShift[]>]`: Th```````````e``````````` shifts in th```````````e``````````` sch```````````e```````````dul```````````e```````````.
+    - `[Cr```````````e```````````at```````````e```````````dDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[LastModifi```````````e```````````dBy <IMicrosoftGraphId```````````e```````````ntityS```````````e```````````t>]`: id```````````e```````````ntityS```````````e```````````t
+    - `[LastModifi```````````e```````````dDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[Id <String>]`: 
-    - `[DraftShift <IMicrosoftGraphShiftItem>]`: shiftItem
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[EndDateTime <DateTime?>]`: 
-      - `[StartDateTime <DateTime?>]`: 
-      - `[Theme <String>]`: scheduleEntityTheme
-      - `[Activities <IMicrosoftGraphShiftActivity[]>]`: An incremental part of a shift which can cover details of when and where an employee is during their shift. For example, an assignment or a scheduled break or lunch. Required.
-      - `[DisplayName <String>]`: The shift label of the shiftItem.
-      - `[Notes <String>]`: The shift notes for the shiftItem.
-    - `[SchedulingGroupId <String>]`: ID of the scheduling group the shift is part of. Required.
-    - `[SharedShift <IMicrosoftGraphShiftItem>]`: shiftItem
-    - `[UserId <String>]`: ID of the user assigned to the shift. Required.
-  - `[SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest[]>]`: 
-    - `[RecipientActionDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
-    - `[RecipientUserId <String>]`: User id of the recipient of the offer shift request.
-    - `[SenderShiftId <String>]`: User id of the sender of the offer shift request.
-    - `[AssignedTo <String>]`: scheduleChangeRequestActor
-    - `[ManagerActionDateTime <DateTime?>]`: 
-    - `[ManagerActionMessage <String>]`: 
-    - `[ManagerUserId <String>]`: 
-    - `[SenderDateTime <DateTime?>]`: 
-    - `[SenderMessage <String>]`: 
-    - `[SenderUserId <String>]`: 
-    - `[State <String>]`: scheduleChangeState
-    - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[DraftShift <IMicrosoftGraphShiftIt```````````e```````````m>]`: shiftIt```````````e```````````m
+      - `[(Any) <Obj```````````e```````````ct>]`: This indicat```````````e```````````s any prop```````````e```````````rty can b```````````e``````````` add```````````e```````````d to this obj```````````e```````````ct.
+      - `[```````````e```````````ndDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: 
+      - `[StartDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: 
+      - `[Th```````````e```````````m```````````e``````````` <String>]`: sch```````````e```````````dul```````````e``````````````````````e```````````ntityTh```````````e```````````m```````````e```````````
+      - `[Activiti```````````e```````````s <IMicrosoftGraphShiftActivity[]>]`: An incr```````````e```````````m```````````e```````````ntal part of a shift which can cov```````````e```````````r d```````````e```````````tails of wh```````````e```````````n and wh```````````e```````````r```````````e``````````` an ```````````e```````````mploy```````````e``````````````````````e``````````` is during th```````````e```````````ir shift. For ```````````e```````````xampl```````````e```````````, an assignm```````````e```````````nt or a sch```````````e```````````dul```````````e```````````d br```````````e```````````ak or lunch. R```````````e```````````quir```````````e```````````d.
+      - `[DisplayNam```````````e``````````` <String>]`: Th```````````e``````````` shift lab```````````e```````````l of th```````````e``````````` shiftIt```````````e```````````m.
+      - `[Not```````````e```````````s <String>]`: Th```````````e``````````` shift not```````````e```````````s for th```````````e``````````` shiftIt```````````e```````````m.
+    - `[Sch```````````e```````````dulingGroupId <String>]`: ID of th```````````e``````````` sch```````````e```````````duling group th```````````e``````````` shift is part of. R```````````e```````````quir```````````e```````````d.
+    - `[Shar```````````e```````````dShift <IMicrosoftGraphShiftIt```````````e```````````m>]`: shiftIt```````````e```````````m
+    - `[Us```````````e```````````rId <String>]`: ID of th```````````e``````````` us```````````e```````````r assign```````````e```````````d to th```````````e``````````` shift. R```````````e```````````quir```````````e```````````d.
+  - `[SwapShiftsChang```````````e```````````R```````````e```````````qu```````````e```````````sts <IMicrosoftGraphSwapShiftsChang```````````e```````````R```````````e```````````qu```````````e```````````st[]>]`: 
+    - `[R```````````e```````````cipi```````````e```````````ntActionDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[R```````````e```````````cipi```````````e```````````ntActionM```````````e```````````ssag```````````e``````````` <String>]`: Custom m```````````e```````````ssag```````````e``````````` s```````````e```````````nt by r```````````e```````````cipi```````````e```````````nt of th```````````e``````````` off```````````e```````````r shift r```````````e```````````qu```````````e```````````st.
+    - `[R```````````e```````````cipi```````````e```````````ntUs```````````e```````````rId <String>]`: Us```````````e```````````r id of th```````````e``````````` r```````````e```````````cipi```````````e```````````nt of th```````````e``````````` off```````````e```````````r shift r```````````e```````````qu```````````e```````````st.
+    - `[S```````````e```````````nd```````````e```````````rShiftId <String>]`: Us```````````e```````````r id of th```````````e``````````` s```````````e```````````nd```````````e```````````r of th```````````e``````````` off```````````e```````````r shift r```````````e```````````qu```````````e```````````st.
+    - `[Assign```````````e```````````dTo <String>]`: sch```````````e```````````dul```````````e```````````Chang```````````e```````````R```````````e```````````qu```````````e```````````stActor
+    - `[Manag```````````e```````````rActionDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: 
+    - `[Manag```````````e```````````rActionM```````````e```````````ssag```````````e``````````` <String>]`: 
+    - `[Manag```````````e```````````rUs```````````e```````````rId <String>]`: 
+    - `[S```````````e```````````nd```````````e```````````rDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: 
+    - `[S```````````e```````````nd```````````e```````````rM```````````e```````````ssag```````````e``````````` <String>]`: 
+    - `[S```````````e```````````nd```````````e```````````rUs```````````e```````````rId <String>]`: 
+    - `[Stat```````````e``````````` <String>]`: sch```````````e```````````dul```````````e```````````Chang```````````e```````````Stat```````````e```````````
+    - `[Cr```````````e```````````at```````````e```````````dDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[LastModifi```````````e```````````dBy <IMicrosoftGraphId```````````e```````````ntityS```````````e```````````t>]`: id```````````e```````````ntityS```````````e```````````t
+    - `[LastModifi```````````e```````````dDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[Id <String>]`: 
-    - `[RecipientShiftId <String>]`: Shift ID for the recipient user with whom the request is to swap.
-  - `[SwapShiftsRequestsEnabled <Boolean?>]`: Indicates whether swap shifts requests are enabled for the schedule.
-  - `[TimeClockEnabled <Boolean?>]`: Indicates whether time clock is enabled for the schedule.
-  - `[TimeOffReasons <IMicrosoftGraphTimeOffReason[]>]`: The set of reasons for a time off in the schedule.
-    - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[R```````````e```````````cipi```````````e```````````ntShiftId <String>]`: Shift ID for th```````````e``````````` r```````````e```````````cipi```````````e```````````nt us```````````e```````````r with whom th```````````e``````````` r```````````e```````````qu```````````e```````````st is to swap.
+  - `[SwapShiftsR```````````e```````````qu```````````e```````````sts```````````e```````````nabl```````````e```````````d <Bool```````````e```````````an?>]`: Indicat```````````e```````````s wh```````````e```````````th```````````e```````````r swap shifts r```````````e```````````qu```````````e```````````sts ar```````````e``````````` ```````````e```````````nabl```````````e```````````d for th```````````e``````````` sch```````````e```````````dul```````````e```````````.
+  - `[Tim```````````e```````````Clock```````````e```````````nabl```````````e```````````d <Bool```````````e```````````an?>]`: Indicat```````````e```````````s wh```````````e```````````th```````````e```````````r tim```````````e``````````` clock is ```````````e```````````nabl```````````e```````````d for th```````````e``````````` sch```````````e```````````dul```````````e```````````.
+  - `[Tim```````````e```````````OffR```````````e```````````asons <IMicrosoftGraphTim```````````e```````````OffR```````````e```````````ason[]>]`: Th```````````e``````````` s```````````e```````````t of r```````````e```````````asons for a tim```````````e``````````` off in th```````````e``````````` sch```````````e```````````dul```````````e```````````.
+    - `[Cr```````````e```````````at```````````e```````````dDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[LastModifi```````````e```````````dBy <IMicrosoftGraphId```````````e```````````ntityS```````````e```````````t>]`: id```````````e```````````ntityS```````````e```````````t
+    - `[LastModifi```````````e```````````dDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[Id <String>]`: 
-    - `[DisplayName <String>]`: The name of the timeOffReason. Required.
-    - `[IconType <String>]`: timeOffReasonIconType
-    - `[IsActive <Boolean?>]`: Indicates whether the timeOffReason can be used when creating new entities or updating existing ones. Required.
-  - `[TimeOffRequests <IMicrosoftGraphTimeOffRequest[]>]`: 
-    - `[AssignedTo <String>]`: scheduleChangeRequestActor
-    - `[ManagerActionDateTime <DateTime?>]`: 
-    - `[ManagerActionMessage <String>]`: 
-    - `[ManagerUserId <String>]`: 
-    - `[SenderDateTime <DateTime?>]`: 
-    - `[SenderMessage <String>]`: 
-    - `[SenderUserId <String>]`: 
-    - `[State <String>]`: scheduleChangeState
-    - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[DisplayNam```````````e``````````` <String>]`: Th```````````e``````````` nam```````````e``````````` of th```````````e``````````` tim```````````e```````````OffR```````````e```````````ason. R```````````e```````````quir```````````e```````````d.
+    - `[IconTyp```````````e``````````` <String>]`: tim```````````e```````````OffR```````````e```````````asonIconTyp```````````e```````````
+    - `[IsActiv```````````e``````````` <Bool```````````e```````````an?>]`: Indicat```````````e```````````s wh```````````e```````````th```````````e```````````r th```````````e``````````` tim```````````e```````````OffR```````````e```````````ason can b```````````e``````````` us```````````e```````````d wh```````````e```````````n cr```````````e```````````ating n```````````e```````````w ```````````e```````````ntiti```````````e```````````s or updating ```````````e```````````xisting on```````````e```````````s. R```````````e```````````quir```````````e```````````d.
+  - `[Tim```````````e```````````OffR```````````e```````````qu```````````e```````````sts <IMicrosoftGraphTim```````````e```````````OffR```````````e```````````qu```````````e```````````st[]>]`: 
+    - `[Assign```````````e```````````dTo <String>]`: sch```````````e```````````dul```````````e```````````Chang```````````e```````````R```````````e```````````qu```````````e```````````stActor
+    - `[Manag```````````e```````````rActionDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: 
+    - `[Manag```````````e```````````rActionM```````````e```````````ssag```````````e``````````` <String>]`: 
+    - `[Manag```````````e```````````rUs```````````e```````````rId <String>]`: 
+    - `[S```````````e```````````nd```````````e```````````rDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: 
+    - `[S```````````e```````````nd```````````e```````````rM```````````e```````````ssag```````````e``````````` <String>]`: 
+    - `[S```````````e```````````nd```````````e```````````rUs```````````e```````````rId <String>]`: 
+    - `[Stat```````````e``````````` <String>]`: sch```````````e```````````dul```````````e```````````Chang```````````e```````````Stat```````````e```````````
+    - `[Cr```````````e```````````at```````````e```````````dDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[LastModifi```````````e```````````dBy <IMicrosoftGraphId```````````e```````````ntityS```````````e```````````t>]`: id```````````e```````````ntityS```````````e```````````t
+    - `[LastModifi```````````e```````````dDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[Id <String>]`: 
-    - `[EndDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[TimeOffReasonId <String>]`: The reason for the time off.
-  - `[TimeOffRequestsEnabled <Boolean?>]`: Indicates whether time off requests are enabled for the schedule.
-  - `[TimeZone <String>]`: Indicates the time zone of the schedule team using tz database format. Required.
-  - `[TimesOff <IMicrosoftGraphTimeOff[]>]`: The instances of times off in the schedule.
-    - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[```````````e```````````ndDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[StartDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[Tim```````````e```````````OffR```````````e```````````asonId <String>]`: Th```````````e``````````` r```````````e```````````ason for th```````````e``````````` tim```````````e``````````` off.
+  - `[Tim```````````e```````````OffR```````````e```````````qu```````````e```````````sts```````````e```````````nabl```````````e```````````d <Bool```````````e```````````an?>]`: Indicat```````````e```````````s wh```````````e```````````th```````````e```````````r tim```````````e``````````` off r```````````e```````````qu```````````e```````````sts ar```````````e``````````` ```````````e```````````nabl```````````e```````````d for th```````````e``````````` sch```````````e```````````dul```````````e```````````.
+  - `[Tim```````````e```````````Zon```````````e``````````` <String>]`: Indicat```````````e```````````s th```````````e``````````` tim```````````e``````````` zon```````````e``````````` of th```````````e``````````` sch```````````e```````````dul```````````e``````````` t```````````e```````````am using tz databas```````````e``````````` format. R```````````e```````````quir```````````e```````````d.
+  - `[Tim```````````e```````````sOff <IMicrosoftGraphTim```````````e```````````Off[]>]`: Th```````````e``````````` instanc```````````e```````````s of tim```````````e```````````s off in th```````````e``````````` sch```````````e```````````dul```````````e```````````.
+    - `[Cr```````````e```````````at```````````e```````````dDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[LastModifi```````````e```````````dBy <IMicrosoftGraphId```````````e```````````ntityS```````````e```````````t>]`: id```````````e```````````ntityS```````````e```````````t
+    - `[LastModifi```````````e```````````dDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[Id <String>]`: 
-    - `[DraftTimeOff <IMicrosoftGraphTimeOffItem>]`: timeOffItem
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[EndDateTime <DateTime?>]`: 
-      - `[StartDateTime <DateTime?>]`: 
-      - `[Theme <String>]`: scheduleEntityTheme
-      - `[TimeOffReasonId <String>]`: ID of the timeOffReason for this timeOffItem. Required.
-    - `[SharedTimeOff <IMicrosoftGraphTimeOffItem>]`: timeOffItem
-    - `[UserId <String>]`: ID of the user assigned to the timeOff. Required.
-  - `[WorkforceIntegrationIds <String[]>]`: 
+    - `[DraftTim```````````e```````````Off <IMicrosoftGraphTim```````````e```````````OffIt```````````e```````````m>]`: tim```````````e```````````OffIt```````````e```````````m
+      - `[(Any) <Obj```````````e```````````ct>]`: This indicat```````````e```````````s any prop```````````e```````````rty can b```````````e``````````` add```````````e```````````d to this obj```````````e```````````ct.
+      - `[```````````e```````````ndDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: 
+      - `[StartDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: 
+      - `[Th```````````e```````````m```````````e``````````` <String>]`: sch```````````e```````````dul```````````e``````````````````````e```````````ntityTh```````````e```````````m```````````e```````````
+      - `[Tim```````````e```````````OffR```````````e```````````asonId <String>]`: ID of th```````````e``````````` tim```````````e```````````OffR```````````e```````````ason for this tim```````````e```````````OffIt```````````e```````````m. R```````````e```````````quir```````````e```````````d.
+    - `[Shar```````````e```````````dTim```````````e```````````Off <IMicrosoftGraphTim```````````e```````````OffIt```````````e```````````m>]`: tim```````````e```````````OffIt```````````e```````````m
+    - `[Us```````````e```````````rId <String>]`: ID of th```````````e``````````` us```````````e```````````r assign```````````e```````````d to th```````````e``````````` tim```````````e```````````Off. R```````````e```````````quir```````````e```````````d.
+  - `[Workforc```````````e```````````Int```````````e```````````grationIds <String[]>]`: 
 
-INPUTOBJECT <ITeamsIdentity>: Identity Parameter
-  - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
-  - `[ChannelId <String>]`: key: id of channel
-  - `[ChatId <String>]`: key: id of chat
-  - `[ChatMessageHostedContentId <String>]`: key: id of chatMessageHostedContent
-  - `[ChatMessageId <String>]`: key: id of chatMessage
-  - `[ChatMessageId1 <String>]`: key: id of chatMessage
-  - `[ConversationMemberId <String>]`: key: id of conversationMember
-  - `[DeletedTeamId <String>]`: key: id of deletedTeam
-  - `[GroupId <String>]`: key: id of group
-  - `[OfferShiftRequestId <String>]`: key: id of offerShiftRequest
-  - `[OpenShiftChangeRequestId <String>]`: key: id of openShiftChangeRequest
-  - `[OpenShiftId <String>]`: key: id of openShift
-  - `[PinnedChatMessageInfoId <String>]`: key: id of pinnedChatMessageInfo
-  - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
-  - `[SchedulingGroupId <String>]`: key: id of schedulingGroup
-  - `[SharedWithChannelTeamInfoId <String>]`: key: id of sharedWithChannelTeamInfo
-  - `[ShiftId <String>]`: key: id of shift
-  - `[SwapShiftsChangeRequestId <String>]`: key: id of swapShiftsChangeRequest
-  - `[TeamId <String>]`: key: id of team
-  - `[TeamsAppDefinitionId <String>]`: key: id of teamsAppDefinition
-  - `[TeamsAppId <String>]`: key: id of teamsApp
-  - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation
-  - `[TeamsAsyncOperationId <String>]`: key: id of teamsAsyncOperation
-  - `[TeamsTabId <String>]`: key: id of teamsTab
-  - `[TeamworkDeviceId <String>]`: key: id of teamworkDevice
-  - `[TeamworkDeviceOperationId <String>]`: key: id of teamworkDeviceOperation
-  - `[TeamworkTagId <String>]`: key: id of teamworkTag
-  - `[TeamworkTagMemberId <String>]`: key: id of teamworkTagMember
-  - `[TimeCardId <String>]`: key: id of timeCard
-  - `[TimeOffId <String>]`: key: id of timeOff
-  - `[TimeOffReasonId <String>]`: key: id of timeOffReason
-  - `[TimeOffRequestId <String>]`: key: id of timeOffRequest
-  - `[UserId <String>]`: key: id of user
-  - `[UserScopeTeamsAppInstallationId <String>]`: key: id of userScopeTeamsAppInstallation
-  - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
+INPUTOBJ```````````e```````````CT <IT```````````e```````````amsId```````````e```````````ntity>: Id```````````e```````````ntity Param```````````e```````````t```````````e```````````r
+  - `[Associat```````````e```````````dT```````````e```````````amInfoId <String>]`: k```````````e```````````y: id of associat```````````e```````````dT```````````e```````````amInfo
+  - `[Chann```````````e```````````lId <String>]`: k```````````e```````````y: id of chann```````````e```````````l
+  - `[ChatId <String>]`: k```````````e```````````y: id of chat
+  - `[ChatM```````````e```````````ssag```````````e```````````Host```````````e```````````dCont```````````e```````````ntId <String>]`: k```````````e```````````y: id of chatM```````````e```````````ssag```````````e```````````Host```````````e```````````dCont```````````e```````````nt
+  - `[ChatM```````````e```````````ssag```````````e```````````Id <String>]`: k```````````e```````````y: id of chatM```````````e```````````ssag```````````e```````````
+  - `[ChatM```````````e```````````ssag```````````e```````````Id1 <String>]`: k```````````e```````````y: id of chatM```````````e```````````ssag```````````e```````````
+  - `[Conv```````````e```````````rsationM```````````e```````````mb```````````e```````````rId <String>]`: k```````````e```````````y: id of conv```````````e```````````rsationM```````````e```````````mb```````````e```````````r
+  - `[D```````````e```````````l```````````e```````````t```````````e```````````dT```````````e```````````amId <String>]`: k```````````e```````````y: id of d```````````e```````````l```````````e```````````t```````````e```````````dT```````````e```````````am
+  - `[GroupId <String>]`: k```````````e```````````y: id of group
+  - `[Off```````````e```````````rShiftR```````````e```````````qu```````````e```````````stId <String>]`: k```````````e```````````y: id of off```````````e```````````rShiftR```````````e```````````qu```````````e```````````st
+  - `[Op```````````e```````````nShiftChang```````````e```````````R```````````e```````````qu```````````e```````````stId <String>]`: k```````````e```````````y: id of op```````````e```````````nShiftChang```````````e```````````R```````````e```````````qu```````````e```````````st
+  - `[Op```````````e```````````nShiftId <String>]`: k```````````e```````````y: id of op```````````e```````````nShift
+  - `[Pinn```````````e```````````dChatM```````````e```````````ssag```````````e```````````InfoId <String>]`: k```````````e```````````y: id of pinn```````````e```````````dChatM```````````e```````````ssag```````````e```````````Info
+  - `[R```````````e```````````sourc```````````e```````````Sp```````````e```````````cificP```````````e```````````rmissionGrantId <String>]`: k```````````e```````````y: id of r```````````e```````````sourc```````````e```````````Sp```````````e```````````cificP```````````e```````````rmissionGrant
+  - `[Sch```````````e```````````dulingGroupId <String>]`: k```````````e```````````y: id of sch```````````e```````````dulingGroup
+  - `[Shar```````````e```````````dWithChann```````````e```````````lT```````````e```````````amInfoId <String>]`: k```````````e```````````y: id of shar```````````e```````````dWithChann```````````e```````````lT```````````e```````````amInfo
+  - `[ShiftId <String>]`: k```````````e```````````y: id of shift
+  - `[SwapShiftsChang```````````e```````````R```````````e```````````qu```````````e```````````stId <String>]`: k```````````e```````````y: id of swapShiftsChang```````````e```````````R```````````e```````````qu```````````e```````````st
+  - `[T```````````e```````````amId <String>]`: k```````````e```````````y: id of t```````````e```````````am
+  - `[T```````````e```````````amsAppD```````````e```````````finitionId <String>]`: k```````````e```````````y: id of t```````````e```````````amsAppD```````````e```````````finition
+  - `[T```````````e```````````amsAppId <String>]`: k```````````e```````````y: id of t```````````e```````````amsApp
+  - `[T```````````e```````````amsAppInstallationId <String>]`: k```````````e```````````y: id of t```````````e```````````amsAppInstallation
+  - `[T```````````e```````````amsAsyncOp```````````e```````````rationId <String>]`: k```````````e```````````y: id of t```````````e```````````amsAsyncOp```````````e```````````ration
+  - `[T```````````e```````````amsTabId <String>]`: k```````````e```````````y: id of t```````````e```````````amsTab
+  - `[T```````````e```````````amworkD```````````e```````````vic```````````e```````````Id <String>]`: k```````````e```````````y: id of t```````````e```````````amworkD```````````e```````````vic```````````e```````````
+  - `[T```````````e```````````amworkD```````````e```````````vic```````````e```````````Op```````````e```````````rationId <String>]`: k```````````e```````````y: id of t```````````e```````````amworkD```````````e```````````vic```````````e```````````Op```````````e```````````ration
+  - `[T```````````e```````````amworkTagId <String>]`: k```````````e```````````y: id of t```````````e```````````amworkTag
+  - `[T```````````e```````````amworkTagM```````````e```````````mb```````````e```````````rId <String>]`: k```````````e```````````y: id of t```````````e```````````amworkTagM```````````e```````````mb```````````e```````````r
+  - `[Tim```````````e```````````CardId <String>]`: k```````````e```````````y: id of tim```````````e```````````Card
+  - `[Tim```````````e```````````OffId <String>]`: k```````````e```````````y: id of tim```````````e```````````Off
+  - `[Tim```````````e```````````OffR```````````e```````````asonId <String>]`: k```````````e```````````y: id of tim```````````e```````````OffR```````````e```````````ason
+  - `[Tim```````````e```````````OffR```````````e```````````qu```````````e```````````stId <String>]`: k```````````e```````````y: id of tim```````````e```````````OffR```````````e```````````qu```````````e```````````st
+  - `[Us```````````e```````````rId <String>]`: k```````````e```````````y: id of us```````````e```````````r
+  - `[Us```````````e```````````rScop```````````e```````````T```````````e```````````amsAppInstallationId <String>]`: k```````````e```````````y: id of us```````````e```````````rScop```````````e```````````T```````````e```````````amsAppInstallation
+  - `[Workforc```````````e```````````Int```````````e```````````grationId <String>]`: k```````````e```````````y: id of workforc```````````e```````````Int```````````e```````````gration
 
-OFFERSHIFTREQUESTS <IMicrosoftGraphOfferShiftRequest[]>: .
-  - `[AssignedTo <String>]`: scheduleChangeRequestActor
-  - `[ManagerActionDateTime <DateTime?>]`: 
-  - `[ManagerActionMessage <String>]`: 
-  - `[ManagerUserId <String>]`: 
-  - `[SenderDateTime <DateTime?>]`: 
-  - `[SenderMessage <String>]`: 
-  - `[SenderUserId <String>]`: 
-  - `[State <String>]`: scheduleChangeState
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+OFF```````````e```````````RSHIFTR```````````e```````````QU```````````e```````````STS <IMicrosoftGraphOff```````````e```````````rShiftR```````````e```````````qu```````````e```````````st[]>: .
+  - `[Assign```````````e```````````dTo <String>]`: sch```````````e```````````dul```````````e```````````Chang```````````e```````````R```````````e```````````qu```````````e```````````stActor
+  - `[Manag```````````e```````````rActionDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: 
+  - `[Manag```````````e```````````rActionM```````````e```````````ssag```````````e``````````` <String>]`: 
+  - `[Manag```````````e```````````rUs```````````e```````````rId <String>]`: 
+  - `[S```````````e```````````nd```````````e```````````rDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: 
+  - `[S```````````e```````````nd```````````e```````````rM```````````e```````````ssag```````````e``````````` <String>]`: 
+  - `[S```````````e```````````nd```````````e```````````rUs```````````e```````````rId <String>]`: 
+  - `[Stat```````````e``````````` <String>]`: sch```````````e```````````dul```````````e```````````Chang```````````e```````````Stat```````````e```````````
+  - `[Cr```````````e```````````at```````````e```````````dDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[LastModifi```````````e```````````dBy <IMicrosoftGraphId```````````e```````````ntityS```````````e```````````t>]`: id```````````e```````````ntityS```````````e```````````t
+    - `[(Any) <Obj```````````e```````````ct>]`: This indicat```````````e```````````s any prop```````````e```````````rty can b```````````e``````````` add```````````e```````````d to this obj```````````e```````````ct.
+    - `[Application <IMicrosoftGraphId```````````e```````````ntity>]`: id```````````e```````````ntity
+      - `[(Any) <Obj```````````e```````````ct>]`: This indicat```````````e```````````s any prop```````````e```````````rty can b```````````e``````````` add```````````e```````````d to this obj```````````e```````````ct.
+      - `[DisplayNam```````````e``````````` <String>]`: Th```````````e``````````` id```````````e```````````ntity's display nam```````````e```````````. Not```````````e``````````` that this may not always b```````````e``````````` availabl```````````e``````````` or up to dat```````````e```````````. For ```````````e```````````xampl```````````e```````````, if a us```````````e```````````r chang```````````e```````````s th```````````e```````````ir display nam```````````e```````````, th```````````e``````````` API may show th```````````e``````````` n```````````e```````````w valu```````````e``````````` in a futur```````````e``````````` r```````````e```````````spons```````````e```````````, but th```````````e``````````` it```````````e```````````ms associat```````````e```````````d with th```````````e``````````` us```````````e```````````r won't show up as having chang```````````e```````````d wh```````````e```````````n using d```````````e```````````lta.
+      - `[Id <String>]`: Uniqu```````````e``````````` id```````````e```````````ntifi```````````e```````````r for th```````````e``````````` id```````````e```````````ntity.
+    - `[D```````````e```````````vic```````````e``````````` <IMicrosoftGraphId```````````e```````````ntity>]`: id```````````e```````````ntity
+    - `[Us```````````e```````````r <IMicrosoftGraphId```````````e```````````ntity>]`: id```````````e```````````ntity
+  - `[LastModifi```````````e```````````dDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Id <String>]`: 
-  - `[RecipientActionDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
-  - `[RecipientUserId <String>]`: User id of the recipient of the offer shift request.
-  - `[SenderShiftId <String>]`: User id of the sender of the offer shift request.
+  - `[R```````````e```````````cipi```````````e```````````ntActionDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[R```````````e```````````cipi```````````e```````````ntActionM```````````e```````````ssag```````````e``````````` <String>]`: Custom m```````````e```````````ssag```````````e``````````` s```````````e```````````nt by r```````````e```````````cipi```````````e```````````nt of th```````````e``````````` off```````````e```````````r shift r```````````e```````````qu```````````e```````````st.
+  - `[R```````````e```````````cipi```````````e```````````ntUs```````````e```````````rId <String>]`: Us```````````e```````````r id of th```````````e``````````` r```````````e```````````cipi```````````e```````````nt of th```````````e``````````` off```````````e```````````r shift r```````````e```````````qu```````````e```````````st.
+  - `[S```````````e```````````nd```````````e```````````rShiftId <String>]`: Us```````````e```````````r id of th```````````e``````````` s```````````e```````````nd```````````e```````````r of th```````````e``````````` off```````````e```````````r shift r```````````e```````````qu```````````e```````````st.
 
-OPENSHIFTCHANGEREQUESTS <IMicrosoftGraphOpenShiftChangeRequest[]>: .
-  - `[AssignedTo <String>]`: scheduleChangeRequestActor
-  - `[ManagerActionDateTime <DateTime?>]`: 
-  - `[ManagerActionMessage <String>]`: 
-  - `[ManagerUserId <String>]`: 
-  - `[SenderDateTime <DateTime?>]`: 
-  - `[SenderMessage <String>]`: 
-  - `[SenderUserId <String>]`: 
-  - `[State <String>]`: scheduleChangeState
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+OP```````````e```````````NSHIFTCHANG```````````e```````````R```````````e```````````QU```````````e```````````STS <IMicrosoftGraphOp```````````e```````````nShiftChang```````````e```````````R```````````e```````````qu```````````e```````````st[]>: .
+  - `[Assign```````````e```````````dTo <String>]`: sch```````````e```````````dul```````````e```````````Chang```````````e```````````R```````````e```````````qu```````````e```````````stActor
+  - `[Manag```````````e```````````rActionDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: 
+  - `[Manag```````````e```````````rActionM```````````e```````````ssag```````````e``````````` <String>]`: 
+  - `[Manag```````````e```````````rUs```````````e```````````rId <String>]`: 
+  - `[S```````````e```````````nd```````````e```````````rDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: 
+  - `[S```````````e```````````nd```````````e```````````rM```````````e```````````ssag```````````e``````````` <String>]`: 
+  - `[S```````````e```````````nd```````````e```````````rUs```````````e```````````rId <String>]`: 
+  - `[Stat```````````e``````````` <String>]`: sch```````````e```````````dul```````````e```````````Chang```````````e```````````Stat```````````e```````````
+  - `[Cr```````````e```````````at```````````e```````````dDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[LastModifi```````````e```````````dBy <IMicrosoftGraphId```````````e```````````ntityS```````````e```````````t>]`: id```````````e```````````ntityS```````````e```````````t
+    - `[(Any) <Obj```````````e```````````ct>]`: This indicat```````````e```````````s any prop```````````e```````````rty can b```````````e``````````` add```````````e```````````d to this obj```````````e```````````ct.
+    - `[Application <IMicrosoftGraphId```````````e```````````ntity>]`: id```````````e```````````ntity
+      - `[(Any) <Obj```````````e```````````ct>]`: This indicat```````````e```````````s any prop```````````e```````````rty can b```````````e``````````` add```````````e```````````d to this obj```````````e```````````ct.
+      - `[DisplayNam```````````e``````````` <String>]`: Th```````````e``````````` id```````````e```````````ntity's display nam```````````e```````````. Not```````````e``````````` that this may not always b```````````e``````````` availabl```````````e``````````` or up to dat```````````e```````````. For ```````````e```````````xampl```````````e```````````, if a us```````````e```````````r chang```````````e```````````s th```````````e```````````ir display nam```````````e```````````, th```````````e``````````` API may show th```````````e``````````` n```````````e```````````w valu```````````e``````````` in a futur```````````e``````````` r```````````e```````````spons```````````e```````````, but th```````````e``````````` it```````````e```````````ms associat```````````e```````````d with th```````````e``````````` us```````````e```````````r won't show up as having chang```````````e```````````d wh```````````e```````````n using d```````````e```````````lta.
+      - `[Id <String>]`: Uniqu```````````e``````````` id```````````e```````````ntifi```````````e```````````r for th```````````e``````````` id```````````e```````````ntity.
+    - `[D```````````e```````````vic```````````e``````````` <IMicrosoftGraphId```````````e```````````ntity>]`: id```````````e```````````ntity
+    - `[Us```````````e```````````r <IMicrosoftGraphId```````````e```````````ntity>]`: id```````````e```````````ntity
+  - `[LastModifi```````````e```````````dDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Id <String>]`: 
-  - `[OpenShiftId <String>]`: ID for the open shift.
+  - `[Op```````````e```````````nShiftId <String>]`: ID for th```````````e``````````` op```````````e```````````n shift.
 
-OPENSHIFTS <IMicrosoftGraphOpenShift[]>: .
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+OP```````````e```````````NSHIFTS <IMicrosoftGraphOp```````````e```````````nShift[]>: .
+  - `[Cr```````````e```````````at```````````e```````````dDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[LastModifi```````````e```````````dBy <IMicrosoftGraphId```````````e```````````ntityS```````````e```````````t>]`: id```````````e```````````ntityS```````````e```````````t
+    - `[(Any) <Obj```````````e```````````ct>]`: This indicat```````````e```````````s any prop```````````e```````````rty can b```````````e``````````` add```````````e```````````d to this obj```````````e```````````ct.
+    - `[Application <IMicrosoftGraphId```````````e```````````ntity>]`: id```````````e```````````ntity
+      - `[(Any) <Obj```````````e```````````ct>]`: This indicat```````````e```````````s any prop```````````e```````````rty can b```````````e``````````` add```````````e```````````d to this obj```````````e```````````ct.
+      - `[DisplayNam```````````e``````````` <String>]`: Th```````````e``````````` id```````````e```````````ntity's display nam```````````e```````````. Not```````````e``````````` that this may not always b```````````e``````````` availabl```````````e``````````` or up to dat```````````e```````````. For ```````````e```````````xampl```````````e```````````, if a us```````````e```````````r chang```````````e```````````s th```````````e```````````ir display nam```````````e```````````, th```````````e``````````` API may show th```````````e``````````` n```````````e```````````w valu```````````e``````````` in a futur```````````e``````````` r```````````e```````````spons```````````e```````````, but th```````````e``````````` it```````````e```````````ms associat```````````e```````````d with th```````````e``````````` us```````````e```````````r won't show up as having chang```````````e```````````d wh```````````e```````````n using d```````````e```````````lta.
+      - `[Id <String>]`: Uniqu```````````e``````````` id```````````e```````````ntifi```````````e```````````r for th```````````e``````````` id```````````e```````````ntity.
+    - `[D```````````e```````````vic```````````e``````````` <IMicrosoftGraphId```````````e```````````ntity>]`: id```````````e```````````ntity
+    - `[Us```````````e```````````r <IMicrosoftGraphId```````````e```````````ntity>]`: id```````````e```````````ntity
+  - `[LastModifi```````````e```````````dDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Id <String>]`: 
-  - `[DraftOpenShift <IMicrosoftGraphOpenShiftItem>]`: openShiftItem
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Activities <IMicrosoftGraphShiftActivity[]>]`: An incremental part of a shift which can cover details of when and where an employee is during their shift. For example, an assignment or a scheduled break or lunch. Required.
-      - `[Code <String>]`: Customer defined code for the shiftActivity. Required.
-      - `[DisplayName <String>]`: The name of the shiftActivity. Required.
-      - `[EndDateTime <DateTime?>]`: The end date and time for the shiftActivity. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Required.
-      - `[IsPaid <Boolean?>]`: Indicates whether the microsoft.graph.user should be paid for the activity during their shift. Required.
-      - `[StartDateTime <DateTime?>]`: The start date and time for the shiftActivity. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Required.
-      - `[Theme <String>]`: scheduleEntityTheme
-    - `[DisplayName <String>]`: The shift label of the shiftItem.
-    - `[Notes <String>]`: The shift notes for the shiftItem.
-    - `[EndDateTime <DateTime?>]`: 
-    - `[StartDateTime <DateTime?>]`: 
-    - `[Theme <String>]`: scheduleEntityTheme
-    - `[OpenSlotCount <Int32?>]`: Count of the number of slots for the given open shift.
-  - `[SchedulingGroupId <String>]`: ID for the scheduling group that the open shift belongs to.
-  - `[SharedOpenShift <IMicrosoftGraphOpenShiftItem>]`: openShiftItem
+  - `[DraftOp```````````e```````````nShift <IMicrosoftGraphOp```````````e```````````nShiftIt```````````e```````````m>]`: op```````````e```````````nShiftIt```````````e```````````m
+    - `[(Any) <Obj```````````e```````````ct>]`: This indicat```````````e```````````s any prop```````````e```````````rty can b```````````e``````````` add```````````e```````````d to this obj```````````e```````````ct.
+    - `[Activiti```````````e```````````s <IMicrosoftGraphShiftActivity[]>]`: An incr```````````e```````````m```````````e```````````ntal part of a shift which can cov```````````e```````````r d```````````e```````````tails of wh```````````e```````````n and wh```````````e```````````r```````````e``````````` an ```````````e```````````mploy```````````e``````````````````````e``````````` is during th```````````e```````````ir shift. For ```````````e```````````xampl```````````e```````````, an assignm```````````e```````````nt or a sch```````````e```````````dul```````````e```````````d br```````````e```````````ak or lunch. R```````````e```````````quir```````````e```````````d.
+      - `[Cod```````````e``````````` <String>]`: Custom```````````e```````````r d```````````e```````````fin```````````e```````````d cod```````````e``````````` for th```````````e``````````` shiftActivity. R```````````e```````````quir```````````e```````````d.
+      - `[DisplayNam```````````e``````````` <String>]`: Th```````````e``````````` nam```````````e``````````` of th```````````e``````````` shiftActivity. R```````````e```````````quir```````````e```````````d.
+      - `[```````````e```````````ndDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` ```````````e```````````nd dat```````````e``````````` and tim```````````e``````````` for th```````````e``````````` shiftActivity. Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. R```````````e```````````quir```````````e```````````d.
+      - `[IsPaid <Bool```````````e```````````an?>]`: Indicat```````````e```````````s wh```````````e```````````th```````````e```````````r th```````````e``````````` microsoft.graph.us```````````e```````````r should b```````````e``````````` paid for th```````````e``````````` activity during th```````````e```````````ir shift. R```````````e```````````quir```````````e```````````d.
+      - `[StartDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` start dat```````````e``````````` and tim```````````e``````````` for th```````````e``````````` shiftActivity. Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. R```````````e```````````quir```````````e```````````d.
+      - `[Th```````````e```````````m```````````e``````````` <String>]`: sch```````````e```````````dul```````````e``````````````````````e```````````ntityTh```````````e```````````m```````````e```````````
+    - `[DisplayNam```````````e``````````` <String>]`: Th```````````e``````````` shift lab```````````e```````````l of th```````````e``````````` shiftIt```````````e```````````m.
+    - `[Not```````````e```````````s <String>]`: Th```````````e``````````` shift not```````````e```````````s for th```````````e``````````` shiftIt```````````e```````````m.
+    - `[```````````e```````````ndDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: 
+    - `[StartDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: 
+    - `[Th```````````e```````````m```````````e``````````` <String>]`: sch```````````e```````````dul```````````e``````````````````````e```````````ntityTh```````````e```````````m```````````e```````````
+    - `[Op```````````e```````````nSlotCount <Int32?>]`: Count of th```````````e``````````` numb```````````e```````````r of slots for th```````````e``````````` giv```````````e```````````n op```````````e```````````n shift.
+  - `[Sch```````````e```````````dulingGroupId <String>]`: ID for th```````````e``````````` sch```````````e```````````duling group that th```````````e``````````` op```````````e```````````n shift b```````````e```````````longs to.
+  - `[Shar```````````e```````````dOp```````````e```````````nShift <IMicrosoftGraphOp```````````e```````````nShiftIt```````````e```````````m>]`: op```````````e```````````nShiftIt```````````e```````````m
 
-SCHEDULINGGROUPS <IMicrosoftGraphSchedulingGroup[]>: The logical grouping of users in the schedule (usually by role).
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+SCH```````````e```````````DULINGGROUPS <IMicrosoftGraphSch```````````e```````````dulingGroup[]>: Th```````````e``````````` logical grouping of us```````````e```````````rs in th```````````e``````````` sch```````````e```````````dul```````````e``````````` (usually by rol```````````e```````````).
+  - `[Cr```````````e```````````at```````````e```````````dDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[LastModifi```````````e```````````dBy <IMicrosoftGraphId```````````e```````````ntityS```````````e```````````t>]`: id```````````e```````````ntityS```````````e```````````t
+    - `[(Any) <Obj```````````e```````````ct>]`: This indicat```````````e```````````s any prop```````````e```````````rty can b```````````e``````````` add```````````e```````````d to this obj```````````e```````````ct.
+    - `[Application <IMicrosoftGraphId```````````e```````````ntity>]`: id```````````e```````````ntity
+      - `[(Any) <Obj```````````e```````````ct>]`: This indicat```````````e```````````s any prop```````````e```````````rty can b```````````e``````````` add```````````e```````````d to this obj```````````e```````````ct.
+      - `[DisplayNam```````````e``````````` <String>]`: Th```````````e``````````` id```````````e```````````ntity's display nam```````````e```````````. Not```````````e``````````` that this may not always b```````````e``````````` availabl```````````e``````````` or up to dat```````````e```````````. For ```````````e```````````xampl```````````e```````````, if a us```````````e```````````r chang```````````e```````````s th```````````e```````````ir display nam```````````e```````````, th```````````e``````````` API may show th```````````e``````````` n```````````e```````````w valu```````````e``````````` in a futur```````````e``````````` r```````````e```````````spons```````````e```````````, but th```````````e``````````` it```````````e```````````ms associat```````````e```````````d with th```````````e``````````` us```````````e```````````r won't show up as having chang```````````e```````````d wh```````````e```````````n using d```````````e```````````lta.
+      - `[Id <String>]`: Uniqu```````````e``````````` id```````````e```````````ntifi```````````e```````````r for th```````````e``````````` id```````````e```````````ntity.
+    - `[D```````````e```````````vic```````````e``````````` <IMicrosoftGraphId```````````e```````````ntity>]`: id```````````e```````````ntity
+    - `[Us```````````e```````````r <IMicrosoftGraphId```````````e```````````ntity>]`: id```````````e```````````ntity
+  - `[LastModifi```````````e```````````dDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Id <String>]`: 
-  - `[DisplayName <String>]`: The display name for the schedulingGroup. Required.
-  - `[IsActive <Boolean?>]`: Indicates whether the schedulingGroup can be used when creating new entities or updating existing ones. Required.
-  - `[UserIds <String[]>]`: The list of user IDs that are a member of the schedulingGroup. Required.
+  - `[DisplayNam```````````e``````````` <String>]`: Th```````````e``````````` display nam```````````e``````````` for th```````````e``````````` sch```````````e```````````dulingGroup. R```````````e```````````quir```````````e```````````d.
+  - `[IsActiv```````````e``````````` <Bool```````````e```````````an?>]`: Indicat```````````e```````````s wh```````````e```````````th```````````e```````````r th```````````e``````````` sch```````````e```````````dulingGroup can b```````````e``````````` us```````````e```````````d wh```````````e```````````n cr```````````e```````````ating n```````````e```````````w ```````````e```````````ntiti```````````e```````````s or updating ```````````e```````````xisting on```````````e```````````s. R```````````e```````````quir```````````e```````````d.
+  - `[Us```````````e```````````rIds <String[]>]`: Th```````````e``````````` list of us```````````e```````````r IDs that ar```````````e``````````` a m```````````e```````````mb```````````e```````````r of th```````````e``````````` sch```````````e```````````dulingGroup. R```````````e```````````quir```````````e```````````d.
 
-SHIFTS <IMicrosoftGraphShift[]>: The shifts in the schedule.
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+SHIFTS <IMicrosoftGraphShift[]>: Th```````````e``````````` shifts in th```````````e``````````` sch```````````e```````````dul```````````e```````````.
+  - `[Cr```````````e```````````at```````````e```````````dDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[LastModifi```````````e```````````dBy <IMicrosoftGraphId```````````e```````````ntityS```````````e```````````t>]`: id```````````e```````````ntityS```````````e```````````t
+    - `[(Any) <Obj```````````e```````````ct>]`: This indicat```````````e```````````s any prop```````````e```````````rty can b```````````e``````````` add```````````e```````````d to this obj```````````e```````````ct.
+    - `[Application <IMicrosoftGraphId```````````e```````````ntity>]`: id```````````e```````````ntity
+      - `[(Any) <Obj```````````e```````````ct>]`: This indicat```````````e```````````s any prop```````````e```````````rty can b```````````e``````````` add```````````e```````````d to this obj```````````e```````````ct.
+      - `[DisplayNam```````````e``````````` <String>]`: Th```````````e``````````` id```````````e```````````ntity's display nam```````````e```````````. Not```````````e``````````` that this may not always b```````````e``````````` availabl```````````e``````````` or up to dat```````````e```````````. For ```````````e```````````xampl```````````e```````````, if a us```````````e```````````r chang```````````e```````````s th```````````e```````````ir display nam```````````e```````````, th```````````e``````````` API may show th```````````e``````````` n```````````e```````````w valu```````````e``````````` in a futur```````````e``````````` r```````````e```````````spons```````````e```````````, but th```````````e``````````` it```````````e```````````ms associat```````````e```````````d with th```````````e``````````` us```````````e```````````r won't show up as having chang```````````e```````````d wh```````````e```````````n using d```````````e```````````lta.
+      - `[Id <String>]`: Uniqu```````````e``````````` id```````````e```````````ntifi```````````e```````````r for th```````````e``````````` id```````````e```````````ntity.
+    - `[D```````````e```````````vic```````````e``````````` <IMicrosoftGraphId```````````e```````````ntity>]`: id```````````e```````````ntity
+    - `[Us```````````e```````````r <IMicrosoftGraphId```````````e```````````ntity>]`: id```````````e```````````ntity
+  - `[LastModifi```````````e```````````dDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Id <String>]`: 
-  - `[DraftShift <IMicrosoftGraphShiftItem>]`: shiftItem
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[EndDateTime <DateTime?>]`: 
-    - `[StartDateTime <DateTime?>]`: 
-    - `[Theme <String>]`: scheduleEntityTheme
-    - `[Activities <IMicrosoftGraphShiftActivity[]>]`: An incremental part of a shift which can cover details of when and where an employee is during their shift. For example, an assignment or a scheduled break or lunch. Required.
-      - `[Code <String>]`: Customer defined code for the shiftActivity. Required.
-      - `[DisplayName <String>]`: The name of the shiftActivity. Required.
-      - `[EndDateTime <DateTime?>]`: The end date and time for the shiftActivity. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Required.
-      - `[IsPaid <Boolean?>]`: Indicates whether the microsoft.graph.user should be paid for the activity during their shift. Required.
-      - `[StartDateTime <DateTime?>]`: The start date and time for the shiftActivity. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Required.
-      - `[Theme <String>]`: scheduleEntityTheme
-    - `[DisplayName <String>]`: The shift label of the shiftItem.
-    - `[Notes <String>]`: The shift notes for the shiftItem.
-  - `[SchedulingGroupId <String>]`: ID of the scheduling group the shift is part of. Required.
-  - `[SharedShift <IMicrosoftGraphShiftItem>]`: shiftItem
-  - `[UserId <String>]`: ID of the user assigned to the shift. Required.
+  - `[DraftShift <IMicrosoftGraphShiftIt```````````e```````````m>]`: shiftIt```````````e```````````m
+    - `[(Any) <Obj```````````e```````````ct>]`: This indicat```````````e```````````s any prop```````````e```````````rty can b```````````e``````````` add```````````e```````````d to this obj```````````e```````````ct.
+    - `[```````````e```````````ndDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: 
+    - `[StartDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: 
+    - `[Th```````````e```````````m```````````e``````````` <String>]`: sch```````````e```````````dul```````````e``````````````````````e```````````ntityTh```````````e```````````m```````````e```````````
+    - `[Activiti```````````e```````````s <IMicrosoftGraphShiftActivity[]>]`: An incr```````````e```````````m```````````e```````````ntal part of a shift which can cov```````````e```````````r d```````````e```````````tails of wh```````````e```````````n and wh```````````e```````````r```````````e``````````` an ```````````e```````````mploy```````````e``````````````````````e``````````` is during th```````````e```````````ir shift. For ```````````e```````````xampl```````````e```````````, an assignm```````````e```````````nt or a sch```````````e```````````dul```````````e```````````d br```````````e```````````ak or lunch. R```````````e```````````quir```````````e```````````d.
+      - `[Cod```````````e``````````` <String>]`: Custom```````````e```````````r d```````````e```````````fin```````````e```````````d cod```````````e``````````` for th```````````e``````````` shiftActivity. R```````````e```````````quir```````````e```````````d.
+      - `[DisplayNam```````````e``````````` <String>]`: Th```````````e``````````` nam```````````e``````````` of th```````````e``````````` shiftActivity. R```````````e```````````quir```````````e```````````d.
+      - `[```````````e```````````ndDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` ```````````e```````````nd dat```````````e``````````` and tim```````````e``````````` for th```````````e``````````` shiftActivity. Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. R```````````e```````````quir```````````e```````````d.
+      - `[IsPaid <Bool```````````e```````````an?>]`: Indicat```````````e```````````s wh```````````e```````````th```````````e```````````r th```````````e``````````` microsoft.graph.us```````````e```````````r should b```````````e``````````` paid for th```````````e``````````` activity during th```````````e```````````ir shift. R```````````e```````````quir```````````e```````````d.
+      - `[StartDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` start dat```````````e``````````` and tim```````````e``````````` for th```````````e``````````` shiftActivity. Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. R```````````e```````````quir```````````e```````````d.
+      - `[Th```````````e```````````m```````````e``````````` <String>]`: sch```````````e```````````dul```````````e``````````````````````e```````````ntityTh```````````e```````````m```````````e```````````
+    - `[DisplayNam```````````e``````````` <String>]`: Th```````````e``````````` shift lab```````````e```````````l of th```````````e``````````` shiftIt```````````e```````````m.
+    - `[Not```````````e```````````s <String>]`: Th```````````e``````````` shift not```````````e```````````s for th```````````e``````````` shiftIt```````````e```````````m.
+  - `[Sch```````````e```````````dulingGroupId <String>]`: ID of th```````````e``````````` sch```````````e```````````duling group th```````````e``````````` shift is part of. R```````````e```````````quir```````````e```````````d.
+  - `[Shar```````````e```````````dShift <IMicrosoftGraphShiftIt```````````e```````````m>]`: shiftIt```````````e```````````m
+  - `[Us```````````e```````````rId <String>]`: ID of th```````````e``````````` us```````````e```````````r assign```````````e```````````d to th```````````e``````````` shift. R```````````e```````````quir```````````e```````````d.
 
-SWAPSHIFTSCHANGEREQUESTS <IMicrosoftGraphSwapShiftsChangeRequest[]>: .
-  - `[RecipientActionDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
-  - `[RecipientUserId <String>]`: User id of the recipient of the offer shift request.
-  - `[SenderShiftId <String>]`: User id of the sender of the offer shift request.
-  - `[AssignedTo <String>]`: scheduleChangeRequestActor
-  - `[ManagerActionDateTime <DateTime?>]`: 
-  - `[ManagerActionMessage <String>]`: 
-  - `[ManagerUserId <String>]`: 
-  - `[SenderDateTime <DateTime?>]`: 
-  - `[SenderMessage <String>]`: 
-  - `[SenderUserId <String>]`: 
-  - `[State <String>]`: scheduleChangeState
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+SWAPSHIFTSCHANG```````````e```````````R```````````e```````````QU```````````e```````````STS <IMicrosoftGraphSwapShiftsChang```````````e```````````R```````````e```````````qu```````````e```````````st[]>: .
+  - `[R```````````e```````````cipi```````````e```````````ntActionDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[R```````````e```````````cipi```````````e```````````ntActionM```````````e```````````ssag```````````e``````````` <String>]`: Custom m```````````e```````````ssag```````````e``````````` s```````````e```````````nt by r```````````e```````````cipi```````````e```````````nt of th```````````e``````````` off```````````e```````````r shift r```````````e```````````qu```````````e```````````st.
+  - `[R```````````e```````````cipi```````````e```````````ntUs```````````e```````````rId <String>]`: Us```````````e```````````r id of th```````````e``````````` r```````````e```````````cipi```````````e```````````nt of th```````````e``````````` off```````````e```````````r shift r```````````e```````````qu```````````e```````````st.
+  - `[S```````````e```````````nd```````````e```````````rShiftId <String>]`: Us```````````e```````````r id of th```````````e``````````` s```````````e```````````nd```````````e```````````r of th```````````e``````````` off```````````e```````````r shift r```````````e```````````qu```````````e```````````st.
+  - `[Assign```````````e```````````dTo <String>]`: sch```````````e```````````dul```````````e```````````Chang```````````e```````````R```````````e```````````qu```````````e```````````stActor
+  - `[Manag```````````e```````````rActionDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: 
+  - `[Manag```````````e```````````rActionM```````````e```````````ssag```````````e``````````` <String>]`: 
+  - `[Manag```````````e```````````rUs```````````e```````````rId <String>]`: 
+  - `[S```````````e```````````nd```````````e```````````rDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: 
+  - `[S```````````e```````````nd```````````e```````````rM```````````e```````````ssag```````````e``````````` <String>]`: 
+  - `[S```````````e```````````nd```````````e```````````rUs```````````e```````````rId <String>]`: 
+  - `[Stat```````````e``````````` <String>]`: sch```````````e```````````dul```````````e```````````Chang```````````e```````````Stat```````````e```````````
+  - `[Cr```````````e```````````at```````````e```````````dDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[LastModifi```````````e```````````dBy <IMicrosoftGraphId```````````e```````````ntityS```````````e```````````t>]`: id```````````e```````````ntityS```````````e```````````t
+    - `[(Any) <Obj```````````e```````````ct>]`: This indicat```````````e```````````s any prop```````````e```````````rty can b```````````e``````````` add```````````e```````````d to this obj```````````e```````````ct.
+    - `[Application <IMicrosoftGraphId```````````e```````````ntity>]`: id```````````e```````````ntity
+      - `[(Any) <Obj```````````e```````````ct>]`: This indicat```````````e```````````s any prop```````````e```````````rty can b```````````e``````````` add```````````e```````````d to this obj```````````e```````````ct.
+      - `[DisplayNam```````````e``````````` <String>]`: Th```````````e``````````` id```````````e```````````ntity's display nam```````````e```````````. Not```````````e``````````` that this may not always b```````````e``````````` availabl```````````e``````````` or up to dat```````````e```````````. For ```````````e```````````xampl```````````e```````````, if a us```````````e```````````r chang```````````e```````````s th```````````e```````````ir display nam```````````e```````````, th```````````e``````````` API may show th```````````e``````````` n```````````e```````````w valu```````````e``````````` in a futur```````````e``````````` r```````````e```````````spons```````````e```````````, but th```````````e``````````` it```````````e```````````ms associat```````````e```````````d with th```````````e``````````` us```````````e```````````r won't show up as having chang```````````e```````````d wh```````````e```````````n using d```````````e```````````lta.
+      - `[Id <String>]`: Uniqu```````````e``````````` id```````````e```````````ntifi```````````e```````````r for th```````````e``````````` id```````````e```````````ntity.
+    - `[D```````````e```````````vic```````````e``````````` <IMicrosoftGraphId```````````e```````````ntity>]`: id```````````e```````````ntity
+    - `[Us```````````e```````````r <IMicrosoftGraphId```````````e```````````ntity>]`: id```````````e```````````ntity
+  - `[LastModifi```````````e```````````dDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Id <String>]`: 
-  - `[RecipientShiftId <String>]`: Shift ID for the recipient user with whom the request is to swap.
+  - `[R```````````e```````````cipi```````````e```````````ntShiftId <String>]`: Shift ID for th```````````e``````````` r```````````e```````````cipi```````````e```````````nt us```````````e```````````r with whom th```````````e``````````` r```````````e```````````qu```````````e```````````st is to swap.
 
-TIMEOFFREASONS <IMicrosoftGraphTimeOffReason[]>: The set of reasons for a time off in the schedule.
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+TIM```````````e```````````OFFR```````````e```````````ASONS <IMicrosoftGraphTim```````````e```````````OffR```````````e```````````ason[]>: Th```````````e``````````` s```````````e```````````t of r```````````e```````````asons for a tim```````````e``````````` off in th```````````e``````````` sch```````````e```````````dul```````````e```````````.
+  - `[Cr```````````e```````````at```````````e```````````dDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[LastModifi```````````e```````````dBy <IMicrosoftGraphId```````````e```````````ntityS```````````e```````````t>]`: id```````````e```````````ntityS```````````e```````````t
+    - `[(Any) <Obj```````````e```````````ct>]`: This indicat```````````e```````````s any prop```````````e```````````rty can b```````````e``````````` add```````````e```````````d to this obj```````````e```````````ct.
+    - `[Application <IMicrosoftGraphId```````````e```````````ntity>]`: id```````````e```````````ntity
+      - `[(Any) <Obj```````````e```````````ct>]`: This indicat```````````e```````````s any prop```````````e```````````rty can b```````````e``````````` add```````````e```````````d to this obj```````````e```````````ct.
+      - `[DisplayNam```````````e``````````` <String>]`: Th```````````e``````````` id```````````e```````````ntity's display nam```````````e```````````. Not```````````e``````````` that this may not always b```````````e``````````` availabl```````````e``````````` or up to dat```````````e```````````. For ```````````e```````````xampl```````````e```````````, if a us```````````e```````````r chang```````````e```````````s th```````````e```````````ir display nam```````````e```````````, th```````````e``````````` API may show th```````````e``````````` n```````````e```````````w valu```````````e``````````` in a futur```````````e``````````` r```````````e```````````spons```````````e```````````, but th```````````e``````````` it```````````e```````````ms associat```````````e```````````d with th```````````e``````````` us```````````e```````````r won't show up as having chang```````````e```````````d wh```````````e```````````n using d```````````e```````````lta.
+      - `[Id <String>]`: Uniqu```````````e``````````` id```````````e```````````ntifi```````````e```````````r for th```````````e``````````` id```````````e```````````ntity.
+    - `[D```````````e```````````vic```````````e``````````` <IMicrosoftGraphId```````````e```````````ntity>]`: id```````````e```````````ntity
+    - `[Us```````````e```````````r <IMicrosoftGraphId```````````e```````````ntity>]`: id```````````e```````````ntity
+  - `[LastModifi```````````e```````````dDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Id <String>]`: 
-  - `[DisplayName <String>]`: The name of the timeOffReason. Required.
-  - `[IconType <String>]`: timeOffReasonIconType
-  - `[IsActive <Boolean?>]`: Indicates whether the timeOffReason can be used when creating new entities or updating existing ones. Required.
+  - `[DisplayNam```````````e``````````` <String>]`: Th```````````e``````````` nam```````````e``````````` of th```````````e``````````` tim```````````e```````````OffR```````````e```````````ason. R```````````e```````````quir```````````e```````````d.
+  - `[IconTyp```````````e``````````` <String>]`: tim```````````e```````````OffR```````````e```````````asonIconTyp```````````e```````````
+  - `[IsActiv```````````e``````````` <Bool```````````e```````````an?>]`: Indicat```````````e```````````s wh```````````e```````````th```````````e```````````r th```````````e``````````` tim```````````e```````````OffR```````````e```````````ason can b```````````e``````````` us```````````e```````````d wh```````````e```````````n cr```````````e```````````ating n```````````e```````````w ```````````e```````````ntiti```````````e```````````s or updating ```````````e```````````xisting on```````````e```````````s. R```````````e```````````quir```````````e```````````d.
 
-TIMEOFFREQUESTS <IMicrosoftGraphTimeOffRequest[]>: .
-  - `[AssignedTo <String>]`: scheduleChangeRequestActor
-  - `[ManagerActionDateTime <DateTime?>]`: 
-  - `[ManagerActionMessage <String>]`: 
-  - `[ManagerUserId <String>]`: 
-  - `[SenderDateTime <DateTime?>]`: 
-  - `[SenderMessage <String>]`: 
-  - `[SenderUserId <String>]`: 
-  - `[State <String>]`: scheduleChangeState
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+TIM```````````e```````````OFFR```````````e```````````QU```````````e```````````STS <IMicrosoftGraphTim```````````e```````````OffR```````````e```````````qu```````````e```````````st[]>: .
+  - `[Assign```````````e```````````dTo <String>]`: sch```````````e```````````dul```````````e```````````Chang```````````e```````````R```````````e```````````qu```````````e```````````stActor
+  - `[Manag```````````e```````````rActionDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: 
+  - `[Manag```````````e```````````rActionM```````````e```````````ssag```````````e``````````` <String>]`: 
+  - `[Manag```````````e```````````rUs```````````e```````````rId <String>]`: 
+  - `[S```````````e```````````nd```````````e```````````rDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: 
+  - `[S```````````e```````````nd```````````e```````````rM```````````e```````````ssag```````````e``````````` <String>]`: 
+  - `[S```````````e```````````nd```````````e```````````rUs```````````e```````````rId <String>]`: 
+  - `[Stat```````````e``````````` <String>]`: sch```````````e```````````dul```````````e```````````Chang```````````e```````````Stat```````````e```````````
+  - `[Cr```````````e```````````at```````````e```````````dDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[LastModifi```````````e```````````dBy <IMicrosoftGraphId```````````e```````````ntityS```````````e```````````t>]`: id```````````e```````````ntityS```````````e```````````t
+    - `[(Any) <Obj```````````e```````````ct>]`: This indicat```````````e```````````s any prop```````````e```````````rty can b```````````e``````````` add```````````e```````````d to this obj```````````e```````````ct.
+    - `[Application <IMicrosoftGraphId```````````e```````````ntity>]`: id```````````e```````````ntity
+      - `[(Any) <Obj```````````e```````````ct>]`: This indicat```````````e```````````s any prop```````````e```````````rty can b```````````e``````````` add```````````e```````````d to this obj```````````e```````````ct.
+      - `[DisplayNam```````````e``````````` <String>]`: Th```````````e``````````` id```````````e```````````ntity's display nam```````````e```````````. Not```````````e``````````` that this may not always b```````````e``````````` availabl```````````e``````````` or up to dat```````````e```````````. For ```````````e```````````xampl```````````e```````````, if a us```````````e```````````r chang```````````e```````````s th```````````e```````````ir display nam```````````e```````````, th```````````e``````````` API may show th```````````e``````````` n```````````e```````````w valu```````````e``````````` in a futur```````````e``````````` r```````````e```````````spons```````````e```````````, but th```````````e``````````` it```````````e```````````ms associat```````````e```````````d with th```````````e``````````` us```````````e```````````r won't show up as having chang```````````e```````````d wh```````````e```````````n using d```````````e```````````lta.
+      - `[Id <String>]`: Uniqu```````````e``````````` id```````````e```````````ntifi```````````e```````````r for th```````````e``````````` id```````````e```````````ntity.
+    - `[D```````````e```````````vic```````````e``````````` <IMicrosoftGraphId```````````e```````````ntity>]`: id```````````e```````````ntity
+    - `[Us```````````e```````````r <IMicrosoftGraphId```````````e```````````ntity>]`: id```````````e```````````ntity
+  - `[LastModifi```````````e```````````dDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Id <String>]`: 
-  - `[EndDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[TimeOffReasonId <String>]`: The reason for the time off.
+  - `[```````````e```````````ndDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[StartDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[Tim```````````e```````````OffR```````````e```````````asonId <String>]`: Th```````````e``````````` r```````````e```````````ason for th```````````e``````````` tim```````````e``````````` off.
 
-TIMESOFF <IMicrosoftGraphTimeOff[]>: The instances of times off in the schedule.
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+TIM```````````e```````````SOFF <IMicrosoftGraphTim```````````e```````````Off[]>: Th```````````e``````````` instanc```````````e```````````s of tim```````````e```````````s off in th```````````e``````````` sch```````````e```````````dul```````````e```````````.
+  - `[Cr```````````e```````````at```````````e```````````dDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[LastModifi```````````e```````````dBy <IMicrosoftGraphId```````````e```````````ntityS```````````e```````````t>]`: id```````````e```````````ntityS```````````e```````````t
+    - `[(Any) <Obj```````````e```````````ct>]`: This indicat```````````e```````````s any prop```````````e```````````rty can b```````````e``````````` add```````````e```````````d to this obj```````````e```````````ct.
+    - `[Application <IMicrosoftGraphId```````````e```````````ntity>]`: id```````````e```````````ntity
+      - `[(Any) <Obj```````````e```````````ct>]`: This indicat```````````e```````````s any prop```````````e```````````rty can b```````````e``````````` add```````````e```````````d to this obj```````````e```````````ct.
+      - `[DisplayNam```````````e``````````` <String>]`: Th```````````e``````````` id```````````e```````````ntity's display nam```````````e```````````. Not```````````e``````````` that this may not always b```````````e``````````` availabl```````````e``````````` or up to dat```````````e```````````. For ```````````e```````````xampl```````````e```````````, if a us```````````e```````````r chang```````````e```````````s th```````````e```````````ir display nam```````````e```````````, th```````````e``````````` API may show th```````````e``````````` n```````````e```````````w valu```````````e``````````` in a futur```````````e``````````` r```````````e```````````spons```````````e```````````, but th```````````e``````````` it```````````e```````````ms associat```````````e```````````d with th```````````e``````````` us```````````e```````````r won't show up as having chang```````````e```````````d wh```````````e```````````n using d```````````e```````````lta.
+      - `[Id <String>]`: Uniqu```````````e``````````` id```````````e```````````ntifi```````````e```````````r for th```````````e``````````` id```````````e```````````ntity.
+    - `[D```````````e```````````vic```````````e``````````` <IMicrosoftGraphId```````````e```````````ntity>]`: id```````````e```````````ntity
+    - `[Us```````````e```````````r <IMicrosoftGraphId```````````e```````````ntity>]`: id```````````e```````````ntity
+  - `[LastModifi```````````e```````````dDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: Th```````````e``````````` Tim```````````e```````````stamp typ```````````e``````````` r```````````e```````````pr```````````e```````````s```````````e```````````nts dat```````````e``````````` and tim```````````e``````````` information using ISO 8601 format and is always in UTC tim```````````e```````````. For ```````````e```````````xampl```````````e```````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Id <String>]`: 
-  - `[DraftTimeOff <IMicrosoftGraphTimeOffItem>]`: timeOffItem
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[EndDateTime <DateTime?>]`: 
-    - `[StartDateTime <DateTime?>]`: 
-    - `[Theme <String>]`: scheduleEntityTheme
-    - `[TimeOffReasonId <String>]`: ID of the timeOffReason for this timeOffItem. Required.
-  - `[SharedTimeOff <IMicrosoftGraphTimeOffItem>]`: timeOffItem
-  - `[UserId <String>]`: ID of the user assigned to the timeOff. Required.
+  - `[DraftTim```````````e```````````Off <IMicrosoftGraphTim```````````e```````````OffIt```````````e```````````m>]`: tim```````````e```````````OffIt```````````e```````````m
+    - `[(Any) <Obj```````````e```````````ct>]`: This indicat```````````e```````````s any prop```````````e```````````rty can b```````````e``````````` add```````````e```````````d to this obj```````````e```````````ct.
+    - `[```````````e```````````ndDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: 
+    - `[StartDat```````````e```````````Tim```````````e``````````` <Dat```````````e```````````Tim```````````e```````````?>]`: 
+    - `[Th```````````e```````````m```````````e``````````` <String>]`: sch```````````e```````````dul```````````e``````````````````````e```````````ntityTh```````````e```````````m```````````e```````````
+    - `[Tim```````````e```````````OffR```````````e```````````asonId <String>]`: ID of th```````````e``````````` tim```````````e```````````OffR```````````e```````````ason for this tim```````````e```````````OffIt```````````e```````````m. R```````````e```````````quir```````````e```````````d.
+  - `[Shar```````````e```````````dTim```````````e```````````Off <IMicrosoftGraphTim```````````e```````````OffIt```````````e```````````m>]`: tim```````````e```````````OffIt```````````e```````````m
+  - `[Us```````````e```````````rId <String>]`: ID of th```````````e``````````` us```````````e```````````r assign```````````e```````````d to th```````````e``````````` tim```````````e```````````Off. R```````````e```````````quir```````````e```````````d.
 
-## RELATED LINKS
+## R```````````e```````````LAT```````````e```````````D LINKS
 
-## RELATED LINKS
+## R```````````e```````````LAT```````````e```````````D LINKS
