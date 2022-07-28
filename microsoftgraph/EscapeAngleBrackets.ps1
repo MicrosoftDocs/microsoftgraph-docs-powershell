@@ -99,10 +99,11 @@ function Add-Back-Ticks{
        if($content -match "(.*?)>+:"){
          if($content -match "[[+*?]"){
             $content = $content -replace '[[+*?]','\$&'
-            $replace = $content -replace $findStart,$replaceStart -replace $findEnd,$replaceEnd
-            $text = $text -replace $content, $replace
-         }else{
-            $text = $text -replace $findStart,$replaceStart -replace $findEnd,$replaceEnd
+         }
+            $splitted = $_.Split(" ")
+			$furtherSplitted = $splitted.Split(":")
+			$concat = '`'+$furtherSplitted[1]+'`'
+			$text = $text -replace $furtherSplitted[1],$concat
          }
        } 
     }
