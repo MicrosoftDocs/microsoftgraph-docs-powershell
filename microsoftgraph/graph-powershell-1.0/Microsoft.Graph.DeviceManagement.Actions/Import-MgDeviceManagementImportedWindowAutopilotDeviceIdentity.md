@@ -1,164 +1,164 @@
-﻿---
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/import-mgdevicemanagementimportedwindowautopilotdeviceidentity
-schema: 2.0.0
+---
+``e``xt``e``rnal h``e``lp fil``e``: Microsoft.Graph.D``e``vic``e``Manag``e``m``e``nt.Actions-h``e``lp.xml
+Modul``e`` Nam``e``: Microsoft.Graph.D``e``vic``e``Manag``e``m``e``nt.Actions
+onlin``e`` v``e``rsion: https://docs.microsoft.com/``e``n-us/pow``e``rsh``e``ll/modul``e``/microsoft.graph.d``e``vic``e``manag``e``m``e``nt.actions/import-mgd``e``vic``e``manag``e``m``e``ntimport``e``dwindowautopilotd``e``vic``e``id``e``ntity
+sch``e``ma: 2.0.0
 ---
 
-# Import-MgDeviceManagementImportedWindowAutopilotDeviceIdentity
+# Import-MgD``e``vic``e``Manag``e``m``e``ntImport``e``dWindowAutopilotD``e``vic``e``Id``e``ntity
 
 ## SYNOPSIS
-Invoke action import
+Invok``e`` action import
 
 ## SYNTAX
 
-### ImportExpanded1 (Default)
+### Import``e``xpand``e``d1 (D``e``fault)
 ```
-Import-MgDeviceManagementImportedWindowAutopilotDeviceIdentity [-AdditionalProperties <Hashtable>]
- [-ImportedWindowsAutopilotDeviceIdentities <IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Import-MgD``e``vic``e``Manag``e``m``e``ntImport``e``dWindowAutopilotD``e``vic``e``Id``e``ntity [-AdditionalProp``e``rti``e``s <Hashtabl``e``>]
+ [-Import``e``dWindowsAutopilotD``e``vic``e``Id``e``ntiti``e``s <IMicrosoftGraphImport``e``dWindowsAutopilotD``e``vic``e``Id``e``ntity[]>]
+ [-WhatIf] [-Confirm] [<CommonParam``e``t``e``rs>]
 ```
 
 ### Import1
 ```
-Import-MgDeviceManagementImportedWindowAutopilotDeviceIdentity
- -BodyParameter <IPaths1Jc0WclDevicemanagementImportedwindowsautopilotdeviceidentitiesMicrosoftGraphImportPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Import-MgD``e``vic``e``Manag``e``m``e``ntImport``e``dWindowAutopilotD``e``vic``e``Id``e``ntity
+ -BodyParam``e``t``e``r <IPaths1Jc0WclD``e``vic``e``manag``e``m``e``ntImport``e``dwindowsautopilotd``e``vic``e``id``e``ntiti``e``sMicrosoftGraphImportPostR``e``qu``e``stbodyCont``e``ntApplicationJsonSch``e``ma>
+ [-WhatIf] [-Confirm] [<CommonParam``e``t``e``rs>]
 ```
 
-## DESCRIPTION
-Invoke action import
+## D``e``SCRIPTION
+Invok``e`` action import
 
-## EXAMPLES
+## ``e``XAMPL``e``S
 
-## PARAMETERS
+## PARAM``e``T``e``RS
 
-### -AdditionalProperties
-Additional Parameters
+### -AdditionalProp``e``rti``e``s
+Additional Param``e``t``e``rs
 
 ```yaml
-Type: Hashtable
-Parameter Sets: ImportExpanded1
-Aliases:
+Typ``e``: Hashtabl``e``
+Param``e``t``e``r S``e``ts: Import``e``xpand``e``d1
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -BodyParameter
+### -BodyParam``e``t``e``r
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, pl``e``as``e`` us``e`` G``e``t-H``e``lp -Onlin``e`` and s``e````e`` NOT``e``S s``e``ction for BODYPARAM``e``T``e``R prop``e``rti``e``s and cr``e``at``e`` a hash tabl``e``.
 
 ```yaml
-Type: IPaths1Jc0WclDevicemanagementImportedwindowsautopilotdeviceidentitiesMicrosoftGraphImportPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Import1
-Aliases:
+Typ``e``: IPaths1Jc0WclD``e``vic``e``manag``e``m``e``ntImport``e``dwindowsautopilotd``e``vic``e``id``e``ntiti``e``sMicrosoftGraphImportPostR``e``qu``e``stbodyCont``e``ntApplicationJsonSch``e``ma
+Param``e``t``e``r S``e``ts: Import1
+Alias``e``s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R``e``quir``e``d: Tru``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Tru``e`` (ByValu``e``)
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -ImportedWindowsAutopilotDeviceIdentities
+### -Import``e``dWindowsAutopilotD``e``vic``e``Id``e``ntiti``e``s
 .
-To construct, please use Get-Help -Online and see NOTES section for IMPORTEDWINDOWSAUTOPILOTDEVICEIDENTITIES properties and create a hash table.
+To construct, pl``e``as``e`` us``e`` G``e``t-H``e``lp -Onlin``e`` and s``e````e`` NOT``e``S s``e``ction for IMPORT``e``DWINDOWSAUTOPILOTD``e``VIC``e``ID``e``NTITI``e``S prop``e``rti``e``s and cr``e``at``e`` a hash tabl``e``.
 
 ```yaml
-Type: IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity[]
-Parameter Sets: ImportExpanded1
-Aliases:
+Typ``e``: IMicrosoftGraphImport``e``dWindowsAutopilotD``e``vic``e``Id``e``ntity[]
+Param``e``t``e``r S``e``ts: Import``e``xpand``e``d1
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation b``e``for``e`` running th``e`` cmdl``e``t.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Typ``e``: SwitchParam``e``t``e``r
+Param``e``t``e``r S``e``ts: (All)
+Alias``e``s: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happ``e``n if th``e`` cmdl``e``t runs.
+Th``e`` cmdl``e``t is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Typ``e``: SwitchParam``e``t``e``r
+Param``e``t``e``r S``e``ts: (All)
+Alias``e``s: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam``e``t``e``rs
+This cmdl``e``t supports th``e`` common param``e``t``e``rs: -D``e``bug, -``e``rrorAction, -``e``rrorVariabl``e``, -InformationAction, -InformationVariabl``e``, -OutVariabl``e``, -OutBuff``e``r, -Pip``e``lin``e``Variabl``e``, -V``e``rbos``e``, -WarningAction, and -WarningVariabl``e``. For mor``e`` information, s``e````e`` [about_CommonParam``e``t``e``rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1Jc0WclDevicemanagementImportedwindowsautopilotdeviceidentitiesMicrosoftGraphImportPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Pow``e``rSh``e``ll.Mod``e``ls.IPaths1Jc0WclD``e``vic``e``manag``e``m``e``ntImport``e``dwindowsautopilotd``e``vic``e``id``e``ntiti``e``sMicrosoftGraphImportPostR``e``qu``e``stbodyCont``e``ntApplicationJsonSch``e``ma
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity
-## NOTES
+### Microsoft.Graph.Pow``e``rSh``e``ll.Mod``e``ls.IMicrosoftGraphImport``e``dWindowsAutopilotD``e``vic``e``Id``e``ntity
+## NOT``e``S
 
-ALIASES
+ALIAS``e``S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL``e``X PARAM``e``T``e``R PROP``e``RTI``e``S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr``e``at``e`` th``e`` param``e``t``e``rs d``e``scrib``e``d b``e``low, construct a hash tabl``e`` containing th``e`` appropriat``e`` prop``e``rti``e``s. For information on hash tabl``e``s, run G``e``t-H``e``lp about_Hash_Tabl``e``s.
 
 
-BODYPARAMETER <IPaths1Jc0WclDevicemanagementImportedwindowsautopilotdeviceidentitiesMicrosoftGraphImportPostRequestbodyContentApplicationJsonSchema>: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ImportedWindowsAutopilotDeviceIdentities <IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity[]>]`: 
-    - `[Id <String>]`: Read-only.
-    - `[AssignedUserPrincipalName <String>]`: UPN of the user the device will be assigned
-    - `[GroupTag <String>]`: Group Tag of the Windows autopilot device.
-    - `[HardwareIdentifier <Byte[]>]`: Hardware Blob of the Windows autopilot device.
-    - `[ImportId <String>]`: The Import Id of the Windows autopilot device.
-    - `[ProductKey <String>]`: Product Key of the Windows autopilot device.
-    - `[SerialNumber <String>]`: Serial number of the Windows autopilot device.
-    - `[State <IMicrosoftGraphImportedWindowsAutopilotDeviceIdentityState>]`: importedWindowsAutopilotDeviceIdentityState
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DeviceErrorCode <Int32?>]`: Device error code reported by Device Directory Service(DDS).
-      - `[DeviceErrorName <String>]`: Device error name reported by Device Directory Service(DDS).
-      - `[DeviceImportStatus <String>]`: importedWindowsAutopilotDeviceIdentityImportStatus
-      - `[DeviceRegistrationId <String>]`: Device Registration ID for successfully added device reported by Device Directory Service(DDS).
+BODYPARAM``e``T``e``R <IPaths1Jc0WclD``e``vic``e``manag``e``m``e``ntImport``e``dwindowsautopilotd``e``vic``e``id``e``ntiti``e``sMicrosoftGraphImportPostR``e``qu``e``stbodyCont``e``ntApplicationJsonSch``e``ma>: .
+  - `[(Any) <Obj``e``ct>]`: This indicat``e``s any prop``e``rty can b``e`` add``e``d to this obj``e``ct.
+  - `[Import``e``dWindowsAutopilotD``e``vic``e``Id``e``ntiti``e``s <IMicrosoftGraphImport``e``dWindowsAutopilotD``e``vic``e``Id``e``ntity[]>]`: 
+    - `[Id <String>]`: R``e``ad-only.
+    - `[Assign``e``dUs``e``rPrincipalNam``e`` <String>]`: UPN of th``e`` us``e``r th``e`` d``e``vic``e`` will b``e`` assign``e``d
+    - `[GroupTag <String>]`: Group Tag of th``e`` Windows autopilot d``e``vic``e``.
+    - `[Hardwar``e``Id``e``ntifi``e``r <Byt``e``[]>]`: Hardwar``e`` Blob of th``e`` Windows autopilot d``e``vic``e``.
+    - `[ImportId <String>]`: Th``e`` Import Id of th``e`` Windows autopilot d``e``vic``e``.
+    - `[ProductK``e``y <String>]`: Product K``e``y of th``e`` Windows autopilot d``e``vic``e``.
+    - `[S``e``rialNumb``e``r <String>]`: S``e``rial numb``e``r of th``e`` Windows autopilot d``e``vic``e``.
+    - `[Stat``e`` <IMicrosoftGraphImport``e``dWindowsAutopilotD``e``vic``e``Id``e``ntityStat``e``>]`: import``e``dWindowsAutopilotD``e``vic``e``Id``e``ntityStat``e``
+      - `[(Any) <Obj``e``ct>]`: This indicat``e``s any prop``e``rty can b``e`` add``e``d to this obj``e``ct.
+      - `[D``e``vic``e````e``rrorCod``e`` <Int32?>]`: D``e``vic``e`` ``e``rror cod``e`` r``e``port``e``d by D``e``vic``e`` Dir``e``ctory S``e``rvic``e``(DDS).
+      - `[D``e``vic``e````e``rrorNam``e`` <String>]`: D``e``vic``e`` ``e``rror nam``e`` r``e``port``e``d by D``e``vic``e`` Dir``e``ctory S``e``rvic``e``(DDS).
+      - `[D``e``vic``e``ImportStatus <String>]`: import``e``dWindowsAutopilotD``e``vic``e``Id``e``ntityImportStatus
+      - `[D``e``vic``e``R``e``gistrationId <String>]`: D``e``vic``e`` R``e``gistration ID for succ``e``ssfully add``e``d d``e``vic``e`` r``e``port``e``d by D``e``vic``e`` Dir``e``ctory S``e``rvic``e``(DDS).
 
-IMPORTEDWINDOWSAUTOPILOTDEVICEIDENTITIES <IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity[]>: .
-  - `[Id <String>]`: Read-only.
-  - `[AssignedUserPrincipalName <String>]`: UPN of the user the device will be assigned
-  - `[GroupTag <String>]`: Group Tag of the Windows autopilot device.
-  - `[HardwareIdentifier <Byte[]>]`: Hardware Blob of the Windows autopilot device.
-  - `[ImportId <String>]`: The Import Id of the Windows autopilot device.
-  - `[ProductKey <String>]`: Product Key of the Windows autopilot device.
-  - `[SerialNumber <String>]`: Serial number of the Windows autopilot device.
-  - `[State <IMicrosoftGraphImportedWindowsAutopilotDeviceIdentityState>]`: importedWindowsAutopilotDeviceIdentityState
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DeviceErrorCode <Int32?>]`: Device error code reported by Device Directory Service(DDS).
-    - `[DeviceErrorName <String>]`: Device error name reported by Device Directory Service(DDS).
-    - `[DeviceImportStatus <String>]`: importedWindowsAutopilotDeviceIdentityImportStatus
-    - `[DeviceRegistrationId <String>]`: Device Registration ID for successfully added device reported by Device Directory Service(DDS).
+IMPORT``e``DWINDOWSAUTOPILOTD``e``VIC``e``ID``e``NTITI``e``S <IMicrosoftGraphImport``e``dWindowsAutopilotD``e``vic``e``Id``e``ntity[]>: .
+  - `[Id <String>]`: R``e``ad-only.
+  - `[Assign``e``dUs``e``rPrincipalNam``e`` <String>]`: UPN of th``e`` us``e``r th``e`` d``e``vic``e`` will b``e`` assign``e``d
+  - `[GroupTag <String>]`: Group Tag of th``e`` Windows autopilot d``e``vic``e``.
+  - `[Hardwar``e``Id``e``ntifi``e``r <Byt``e``[]>]`: Hardwar``e`` Blob of th``e`` Windows autopilot d``e``vic``e``.
+  - `[ImportId <String>]`: Th``e`` Import Id of th``e`` Windows autopilot d``e``vic``e``.
+  - `[ProductK``e``y <String>]`: Product K``e``y of th``e`` Windows autopilot d``e``vic``e``.
+  - `[S``e``rialNumb``e``r <String>]`: S``e``rial numb``e``r of th``e`` Windows autopilot d``e``vic``e``.
+  - `[Stat``e`` <IMicrosoftGraphImport``e``dWindowsAutopilotD``e``vic``e``Id``e``ntityStat``e``>]`: import``e``dWindowsAutopilotD``e``vic``e``Id``e``ntityStat``e``
+    - `[(Any) <Obj``e``ct>]`: This indicat``e``s any prop``e``rty can b``e`` add``e``d to this obj``e``ct.
+    - `[D``e``vic``e````e``rrorCod``e`` <Int32?>]`: D``e``vic``e`` ``e``rror cod``e`` r``e``port``e``d by D``e``vic``e`` Dir``e``ctory S``e``rvic``e``(DDS).
+    - `[D``e``vic``e````e``rrorNam``e`` <String>]`: D``e``vic``e`` ``e``rror nam``e`` r``e``port``e``d by D``e``vic``e`` Dir``e``ctory S``e``rvic``e``(DDS).
+    - `[D``e``vic``e``ImportStatus <String>]`: import``e``dWindowsAutopilotD``e``vic``e``Id``e``ntityImportStatus
+    - `[D``e``vic``e``R``e``gistrationId <String>]`: D``e``vic``e`` R``e``gistration ID for succ``e``ssfully add``e``d d``e``vic``e`` r``e``port``e``d by D``e``vic``e`` Dir``e``ctory S``e``rvic``e``(DDS).
 
-## RELATED LINKS
+## R``e``LAT``e``D LINKS
