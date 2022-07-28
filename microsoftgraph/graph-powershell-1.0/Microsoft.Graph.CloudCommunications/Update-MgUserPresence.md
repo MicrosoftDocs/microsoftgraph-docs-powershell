@@ -1,7 +1,7 @@
-﻿---
-external help file: Microsoft.Graph.CloudCommunications-help.xml
-Module Name: Microsoft.Graph.CloudCommunications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/update-mguserpresence
+---
+externa``l`` he``l``p fi``l``e: Microsoft.Graph.C``l``oudCommunications-he``l``p.xm``l``
+Modu``l``e Name: Microsoft.Graph.C``l``oudCommunications
+on``l``ine version: https://docs.microsoft.com/en-us/powershe``l````l``/modu``l``e/microsoft.graph.c``l``oudcommunications/update-mguserpresence
 schema: 2.0.0
 ---
 
@@ -12,10 +12,10 @@ Update the navigation property presence in users
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded1 (Defau``l``t)
 ```
-Update-MgUserPresence -UserId <String> [-Activity <String>] [-AdditionalProperties <Hashtable>]
- [-Availability <String>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgUserPresence -UserId <String> [-Activity <String>] [-Additiona``l``Properties <Hashtab``l``e>]
+ [-Avai``l``abi``l``ity <String>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
@@ -26,217 +26,217 @@ Update-MgUserPresence -UserId <String> -BodyParameter <IMicrosoftGraphPresence> 
 
 ### UpdateViaIdentityExpanded1
 ```
-Update-MgUserPresence -InputObject <ICloudCommunicationsIdentity> [-Activity <String>]
- [-AdditionalProperties <Hashtable>] [-Availability <String>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm]
+Update-MgUserPresence -InputObject <IC``l``oudCommunicationsIdentity> [-Activity <String>]
+ [-Additiona``l``Properties <Hashtab``l``e>] [-Avai``l``abi``l``ity <String>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity1
 ```
-Update-MgUserPresence -InputObject <ICloudCommunicationsIdentity> -BodyParameter <IMicrosoftGraphPresence>
+Update-MgUserPresence -InputObject <IC``l``oudCommunicationsIdentity> -BodyParameter <IMicrosoftGraphPresence>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property presence in users
 
-## EXAMPLES
+## EXAMP``l``ES
 
 ## PARAMETERS
 
 ### -Activity
-The supplemental information to a user's availability.
-Possible values are Available, Away, BeRightBack, Busy, DoNotDisturb, InACall, InAConferenceCall, Inactive,InAMeeting, Offline, OffWork,OutOfOffice, PresenceUnknown,Presenting, UrgentInterruptionsOnly.
+The supp``l``ementa``l`` information to a user's avai``l``abi``l``ity.
+Possib``l``e va``l``ues are Avai``l``ab``l``e, Away, BeRightBack, Busy, DoNotDisturb, InACa``l````l``, InAConferenceCa``l````l``, Inactive,InAMeeting, Off``l``ine, OffWork,OutOfOffice, PresenceUnknown,Presenting, UrgentInterruptionsOn``l``y.
 
-```yaml
+```yam``l``
 Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+A``l``iases:
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
-### -AdditionalProperties
-Additional Parameters
+### -Additiona``l``Properties
+Additiona``l`` Parameters
 
-```yaml
-Type: Hashtable
+```yam``l``
+Type: Hashtab``l``e
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+A``l``iases:
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
-### -Availability
+### -Avai``l``abi``l``ity
 The base presence information for a user.
-Possible values are Available, AvailableIdle, Away, BeRightBack, Busy, BusyIdle, DoNotDisturb, Offline, PresenceUnknown
+Possib``l``e va``l``ues are Avai``l``ab``l``e, Avai``l``ab``l``eId``l``e, Away, BeRightBack, Busy, BusyId``l``e, DoNotDisturb, Off``l``ine, PresenceUnknown
 
-```yaml
+```yam``l``
 Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+A``l``iases:
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### -BodyParameter
 presence
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, p``l``ease use Get-He``l``p -On``l``ine and see NOTES section for BODYPARAMETER properties and create a hash tab``l``e.
 
-```yaml
+```yam``l``
 Type: IMicrosoftGraphPresence
 Parameter Sets: Update1, UpdateViaIdentity1
-Aliases:
+A``l``iases:
 
 Required: True
 Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: True (ByVa``l``ue)
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### -Id
 .
 
-```yaml
+```yam``l``
 Type: String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+A``l``iases:
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, p``l``ease use Get-He``l``p -On``l``ine and see NOTES section for INPUTOBJECT properties and create a hash tab``l``e.
 
-```yaml
-Type: ICloudCommunicationsIdentity
+```yam``l``
+Type: IC``l``oudCommunicationsIdentity
 Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
-Aliases:
+A``l``iases:
 
 Required: True
 Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: True (ByVa``l``ue)
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### -PassThru
 Returns true when the command succeeds
 
-```yaml
+```yam``l``
 Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
+Parameter Sets: (A``l````l``)
+A``l``iases:
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### -UserId
 key: id of user
 
-```yaml
+```yam``l``
 Type: String
 Parameter Sets: UpdateExpanded1, Update1
-Aliases:
+A``l``iases:
 
 Required: True
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation before running the cmd``l``et.
 
-```yaml
+```yam``l``
 Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Parameter Sets: (A``l````l``)
+A``l``iases: cf
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what wou``l``d happen if the cmd``l``et runs.
+The cmd``l``et is not run.
 
-```yaml
+```yam``l``
 Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Parameter Sets: (A``l````l``)
+A``l``iases: wi
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmd``l``et supports the common parameters: -Debug, -ErrorAction, -ErrorVariab``l``e, -InformationAction, -InformationVariab``l``e, -OutVariab``l``e, -OutBuffer, -Pipe``l``ineVariab``l``e, -Verbose, -WarningAction, and -WarningVariab``l``e. For more information, see [about_CommonParameters](http://go.microsoft.com/fw``l``ink/?``l``inkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPresence
+### Microsoft.Graph.PowerShe``l````l``.Mode``l``s.IC``l``oudCommunicationsIdentity
+### Microsoft.Graph.PowerShe``l````l``.Mode``l``s.IMicrosoftGraphPresence
 ## OUTPUTS
 
-### System.Boolean
+### System.Boo``l``ean
 ## NOTES
 
-ALIASES
+A``l``IASES
 
-COMPLEX PARAMETER PROPERTIES
+COMP``l``EX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described be``l``ow, construct a hash tab``l``e containing the appropriate properties. For information on hash tab``l``es, run Get-He``l``p about_Hash_Tab``l``es.
 
 
 BODYPARAMETER <IMicrosoftGraphPresence>: presence
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
-  - `[Activity <String>]`: The supplemental information to a user's availability. Possible values are Available, Away, BeRightBack, Busy, DoNotDisturb, InACall, InAConferenceCall, Inactive,InAMeeting, Offline, OffWork,OutOfOffice, PresenceUnknown,Presenting, UrgentInterruptionsOnly.
-  - `[Availability <String>]`: The base presence information for a user. Possible values are Available, AvailableIdle,  Away, BeRightBack, Busy, BusyIdle, DoNotDisturb, Offline, PresenceUnknown
+  - `[Activity <String>]`: The supp``l``ementa``l`` information to a user's avai``l``abi``l``ity. Possib``l``e va``l``ues are Avai``l``ab``l``e, Away, BeRightBack, Busy, DoNotDisturb, InACa``l````l``, InAConferenceCa``l````l``, Inactive,InAMeeting, Off``l``ine, OffWork,OutOfOffice, PresenceUnknown,Presenting, UrgentInterruptionsOn``l``y.
+  - `[Avai``l``abi``l``ity <String>]`: The base presence information for a user. Possib``l``e va``l``ues are Avai``l``ab``l``e, Avai``l``ab``l``eId``l``e,  Away, BeRightBack, Busy, BusyId``l``e, DoNotDisturb, Off``l``ine, PresenceUnknown
 
-INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
+INPUTOBJECT <IC``l``oudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
-  - `[CallId <String>]`: key: id of call
-  - `[CallRecordId <String>]`: key: id of callRecord
+  - `[Ca``l````l``Id <String>]`: key: id of ca``l````l``
+  - `[Ca``l````l``RecordId <String>]`: key: id of ca``l````l``Record
   - `[CommsOperationId <String>]`: key: id of commsOperation
   - `[ContentSharingSessionId <String>]`: key: id of contentSharingSession
   - `[MeetingAttendanceReportId <String>]`: key: id of meetingAttendanceReport
   - `[MeetingRegistrationQuestionId <String>]`: key: id of meetingRegistrationQuestion
-  - `[OnlineMeetingId <String>]`: key: id of onlineMeeting
+  - `[On``l``ineMeetingId <String>]`: key: id of on``l``ineMeeting
   - `[ParticipantId <String>]`: key: id of participant
   - `[PresenceId <String>]`: key: id of presence
   - `[SessionId <String>]`: key: id of session
   - `[UserId <String>]`: key: id of user
 
-## RELATED LINKS
+## RE``l``ATED ``l``INKS
