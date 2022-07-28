@@ -1,209 +1,209 @@
-﻿---
-external help file: Microsoft.Graph.Education-help.xml
-Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/set-mgeducationclassassignmentrubricbyref
+---
+external help file: Microsoft.Graph.E``d``ucation-help.xml
+Mo``d``ule Name: Microsoft.Graph.E``d``ucation
+online version: https://``d``ocs.microsoft.com/en-us/powershell/mo``d``ule/microsoft.graph.e``d``ucation/set-mge``d``ucationclassassignmentrubricbyref
 schema: 2.0.0
 ---
 
-# Set-MgEducationClassAssignmentRubricByRef
+# Set-MgE``d``ucationClassAssignmentRubricByRef
 
 ## SYNOPSIS
-Update the ref of navigation property rubric in education
+Up``d``ate the ref of navigation property rubric in e``d``ucation
 
 ## SYNTAX
 
-### SetExpanded (Default)
+### SetExpan``d``e``d`` (``d``efault)
 ```
-Set-MgEducationClassAssignmentRubricByRef -EducationAssignmentId <String> -EducationClassId <String>
- [-AdditionalProperties <Hashtable>] [-OdataId <String>] [-OdataType <String>] [-PassThru] [-WhatIf] [-Confirm]
+Set-MgE``d``ucationClassAssignmentRubricByRef -E``d``ucationAssignmentI``d`` <String> -E``d``ucationClassI``d`` <String>
+ [-A``d````d``itionalProperties <Hashtable>] [-O``d``ataI``d`` <String>] [-O``d``ataType <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Set
 ```
-Set-MgEducationClassAssignmentRubricByRef -EducationAssignmentId <String> -EducationClassId <String>
- -BodyParameter <IReferenceUpdateSchema> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgE``d``ucationClassAssignmentRubricByRef -E``d``ucationAssignmentI``d`` <String> -E``d``ucationClassI``d`` <String>
+ -Bo``d``yParameter <IReferenceUp``d``ateSchema> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SetViaIdentityExpanded
+### SetViaI``d``entityExpan``d``e``d``
 ```
-Set-MgEducationClassAssignmentRubricByRef -InputObject <IEducationIdentity> [-AdditionalProperties <Hashtable>]
- [-OdataId <String>] [-OdataType <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### SetViaIdentity
-```
-Set-MgEducationClassAssignmentRubricByRef -InputObject <IEducationIdentity>
- -BodyParameter <IReferenceUpdateSchema> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgE``d``ucationClassAssignmentRubricByRef -InputObject <IE``d``ucationI``d``entity> [-A``d````d``itionalProperties <Hashtable>]
+ [-O``d``ataI``d`` <String>] [-O``d``ataType <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-## DESCRIPTION
-Update the ref of navigation property rubric in education
+### SetViaI``d``entity
+```
+Set-MgE``d``ucationClassAssignmentRubricByRef -InputObject <IE``d``ucationI``d``entity>
+ -Bo``d``yParameter <IReferenceUp``d``ateSchema> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+## ``d``ESCRIPTION
+Up``d``ate the ref of navigation property rubric in e``d``ucation
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -A``d````d``itionalProperties
+A``d````d``itional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: SetExpanded, SetViaIdentityExpanded
+Parameter Sets: SetExpan``d``e``d``, SetViaI``d``entityExpan``d``e``d``
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``d``: False
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
-### -BodyParameter
+### -Bo``d``yParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online an``d`` see NOTES section for BO``d``YPARAMETER properties an``d`` create a hash table.
 
 ```yaml
-Type: IReferenceUpdateSchema
-Parameter Sets: Set, SetViaIdentity
+Type: IReferenceUp``d``ateSchema
+Parameter Sets: Set, SetViaI``d``entity
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require``d``: True
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
-### -EducationAssignmentId
-key: id of educationAssignment
+### -E``d``ucationAssignmentI``d``
+key: i``d`` of e``d``ucationAssignment
 
 ```yaml
 Type: String
-Parameter Sets: SetExpanded, Set
+Parameter Sets: SetExpan``d``e``d``, Set
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require``d``: True
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
-### -EducationClassId
-key: id of educationClass
+### -E``d``ucationClassI``d``
+key: i``d`` of e``d``ucationClass
 
 ```yaml
 Type: String
-Parameter Sets: SetExpanded, Set
+Parameter Sets: SetExpan``d``e``d``, Set
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require``d``: True
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
 ### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+I``d``entity Parameter
+To construct, please use Get-Help -Online an``d`` see NOTES section for INPUTOBJECT properties an``d`` create a hash table.
 
 ```yaml
-Type: IEducationIdentity
-Parameter Sets: SetViaIdentityExpanded, SetViaIdentity
+Type: IE``d``ucationI``d``entity
+Parameter Sets: SetViaI``d``entityExpan``d``e``d``, SetViaI``d``entity
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require``d``: True
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
-### -OdataId
+### -O``d``ataI``d``
 .
 
 ```yaml
 Type: String
-Parameter Sets: SetExpanded, SetViaIdentityExpanded
+Parameter Sets: SetExpan``d``e``d``, SetViaI``d``entityExpan``d``e``d``
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``d``: False
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
-### -OdataType
+### -O``d``ataType
 .
 
 ```yaml
 Type: String
-Parameter Sets: SetExpanded, SetViaIdentityExpanded
+Parameter Sets: SetExpan``d``e``d``, SetViaI``d``entityExpan``d``e``d``
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``d``: False
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
 ### -PassThru
-Returns true when the command succeeds
+Returns true when the comman``d`` succee``d``s
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``d``: False
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation before running the cm``d``let.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
-Required: False
-Position: Named
-Default value: None
+Require``d``: False
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what woul``d`` happen if the cm``d``let runs.
+The cm``d``let is not run.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
-Required: False
-Position: Named
-Default value: None
+Require``d``: False
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cm``d``let supports the common parameters: -``d``ebug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, an``d`` -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkI``d``=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-### Microsoft.Graph.PowerShell.Models.IReferenceUpdateSchema
+### Microsoft.Graph.PowerShell.Mo``d``els.IE``d``ucationI``d``entity
+### Microsoft.Graph.PowerShell.Mo``d``els.IReferenceUp``d``ateSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -213,26 +213,26 @@ ALIASES
 
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters ``d``escribe``d`` below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IReferenceUpdateSchema>: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[OdataId <String>]`: 
-  - `[OdataType <String>]`: 
+BO``d``YPARAMETER <IReferenceUp``d``ateSchema>: .
+  - `[(Any) <Object>]`: This in``d``icates any property can be a``d````d``e``d`` to this object.
+  - `[O``d``ataI``d`` <String>]`: 
+  - `[O``d``ataType <String>]`: 
 
-INPUTOBJECT <IEducationIdentity>: Identity Parameter
-  - `[EducationAssignmentId <String>]`: key: id of educationAssignment
-  - `[EducationAssignmentResourceId <String>]`: key: id of educationAssignmentResource
-  - `[EducationCategoryId <String>]`: key: id of educationCategory
-  - `[EducationClassId <String>]`: key: id of educationClass
-  - `[EducationOutcomeId <String>]`: key: id of educationOutcome
-  - `[EducationRubricId <String>]`: key: id of educationRubric
-  - `[EducationSchoolId <String>]`: key: id of educationSchool
-  - `[EducationSubmissionId <String>]`: key: id of educationSubmission
-  - `[EducationSubmissionResourceId <String>]`: key: id of educationSubmissionResource
-  - `[EducationSynchronizationErrorId <String>]`: key: id of educationSynchronizationError
-  - `[EducationSynchronizationProfileId <String>]`: key: id of educationSynchronizationProfile
-  - `[EducationUserId <String>]`: key: id of educationUser
+INPUTOBJECT <IE``d``ucationI``d``entity>: I``d``entity Parameter
+  - `[E``d``ucationAssignmentI``d`` <String>]`: key: i``d`` of e``d``ucationAssignment
+  - `[E``d``ucationAssignmentResourceI``d`` <String>]`: key: i``d`` of e``d``ucationAssignmentResource
+  - `[E``d``ucationCategoryI``d`` <String>]`: key: i``d`` of e``d``ucationCategory
+  - `[E``d``ucationClassI``d`` <String>]`: key: i``d`` of e``d``ucationClass
+  - `[E``d``ucationOutcomeI``d`` <String>]`: key: i``d`` of e``d``ucationOutcome
+  - `[E``d``ucationRubricI``d`` <String>]`: key: i``d`` of e``d``ucationRubric
+  - `[E``d``ucationSchoolI``d`` <String>]`: key: i``d`` of e``d``ucationSchool
+  - `[E``d``ucationSubmissionI``d`` <String>]`: key: i``d`` of e``d``ucationSubmission
+  - `[E``d``ucationSubmissionResourceI``d`` <String>]`: key: i``d`` of e``d``ucationSubmissionResource
+  - `[E``d``ucationSynchronizationErrorI``d`` <String>]`: key: i``d`` of e``d``ucationSynchronizationError
+  - `[E``d``ucationSynchronizationProfileI``d`` <String>]`: key: i``d`` of e``d``ucationSynchronizationProfile
+  - `[E``d``ucationUserI``d`` <String>]`: key: i``d`` of e``d``ucationUser
 
-## RELATED LINKS
+## RELATE``d`` LINKS
