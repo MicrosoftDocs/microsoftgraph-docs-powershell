@@ -1,596 +1,596 @@
-﻿---
-external help file: Microsoft.Graph.Users-help.xml
-Module Name: Microsoft.Graph.Users
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/new-mgusertodolisttask
-schema: 2.0.0
+---
+external help file: Micro``````````s``````````oft.Graph.U``````````s``````````er``````````s``````````-help.xml
+Module Name: Micro``````````s``````````oft.Graph.U``````````s``````````er``````````s``````````
+online ver``````````s``````````ion: http``````````s``````````://doc``````````s``````````.micro``````````s``````````oft.com/en-u``````````s``````````/power``````````s``````````hell/module/micro``````````s``````````oft.graph.u``````````s``````````er``````````s``````````/new-mgu``````````s``````````ertodoli``````````s``````````tta``````````s``````````k
+``````````s``````````chema: 2.0.0
 ---
 
-# New-MgUserTodoListTask
+# New-MgU``````````s``````````erTodoLi``````````s``````````tTa``````````s``````````k
 
-## SYNOPSIS
-Create new navigation property to tasks for users
+## ``````````s``````````YNOP``````````s``````````I``````````s``````````
+Create new navigation property to ta``````````s``````````k``````````s`````````` for u``````````s``````````er``````````s``````````
 
-## SYNTAX
+## ``````````s``````````YNTAX
 
 ### CreateExpanded1 (Default)
 ```
-New-MgUserTodoListTask -TodoTaskListId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-Body <IMicrosoftGraphItemBody>] [-BodyLastModifiedDateTime <DateTime>] [-Categories <String[]>]
- [-ChecklistItems <IMicrosoftGraphChecklistItem[]>] [-CompletedDateTime <IMicrosoftGraphDateTimeZone>]
- [-CreatedDateTime <DateTime>] [-DueDateTime <IMicrosoftGraphDateTimeZone>]
- [-Extensions <IMicrosoftGraphExtension[]>] [-Id <String>] [-Importance <String>] [-IsReminderOn]
- [-LastModifiedDateTime <DateTime>] [-LinkedResources <IMicrosoftGraphLinkedResource[]>]
- [-Recurrence <IMicrosoftGraphPatternedRecurrence>] [-ReminderDateTime <IMicrosoftGraphDateTimeZone>]
- [-Status <String>] [-Title <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgU``````````s``````````erTodoLi``````````s``````````tTa``````````s``````````k -TodoTa``````````s``````````kLi``````````s``````````tId <``````````s``````````tring> -U``````````s``````````erId <``````````s``````````tring> [-AdditionalPropertie``````````s`````````` <Ha``````````s``````````htable>]
+ [-Body <IMicro``````````s``````````oftGraphItemBody>] [-BodyLa``````````s``````````tModifiedDateTime <DateTime>] [-Categorie``````````s`````````` <``````````s``````````tring[]>]
+ [-Checkli``````````s``````````tItem``````````s`````````` <IMicro``````````s``````````oftGraphCheckli``````````s``````````tItem[]>] [-CompletedDateTime <IMicro``````````s``````````oftGraphDateTimeZone>]
+ [-CreatedDateTime <DateTime>] [-DueDateTime <IMicro``````````s``````````oftGraphDateTimeZone>]
+ [-Exten``````````s``````````ion``````````s`````````` <IMicro``````````s``````````oftGraphExten``````````s``````````ion[]>] [-Id <``````````s``````````tring>] [-Importance <``````````s``````````tring>] [-I``````````s``````````ReminderOn]
+ [-La``````````s``````````tModifiedDateTime <DateTime>] [-LinkedRe``````````s``````````ource``````````s`````````` <IMicro``````````s``````````oftGraphLinkedRe``````````s``````````ource[]>]
+ [-Recurrence <IMicro``````````s``````````oftGraphPatternedRecurrence>] [-ReminderDateTime <IMicro``````````s``````````oftGraphDateTimeZone>]
+ [-``````````s``````````tatu``````````s`````````` <``````````s``````````tring>] [-Title <``````````s``````````tring>] [-WhatIf] [-Confirm] [<CommonParameter``````````s``````````>]
 ```
 
 ### Create1
 ```
-New-MgUserTodoListTask -TodoTaskListId <String> -UserId <String> -BodyParameter <IMicrosoftGraphTodoTask1>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgU``````````s``````````erTodoLi``````````s``````````tTa``````````s``````````k -TodoTa``````````s``````````kLi``````````s``````````tId <``````````s``````````tring> -U``````````s``````````erId <``````````s``````````tring> -BodyParameter <IMicro``````````s``````````oftGraphTodoTa``````````s``````````k1>
+ [-WhatIf] [-Confirm] [<CommonParameter``````````s``````````>]
 ```
 
 ### CreateViaIdentityExpanded1
 ```
-New-MgUserTodoListTask -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
- [-Body <IMicrosoftGraphItemBody>] [-BodyLastModifiedDateTime <DateTime>] [-Categories <String[]>]
- [-ChecklistItems <IMicrosoftGraphChecklistItem[]>] [-CompletedDateTime <IMicrosoftGraphDateTimeZone>]
- [-CreatedDateTime <DateTime>] [-DueDateTime <IMicrosoftGraphDateTimeZone>]
- [-Extensions <IMicrosoftGraphExtension[]>] [-Id <String>] [-Importance <String>] [-IsReminderOn]
- [-LastModifiedDateTime <DateTime>] [-LinkedResources <IMicrosoftGraphLinkedResource[]>]
- [-Recurrence <IMicrosoftGraphPatternedRecurrence>] [-ReminderDateTime <IMicrosoftGraphDateTimeZone>]
- [-Status <String>] [-Title <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgU``````````s``````````erTodoLi``````````s``````````tTa``````````s``````````k -InputObject <IU``````````s``````````er``````````s``````````Identity> [-AdditionalPropertie``````````s`````````` <Ha``````````s``````````htable>]
+ [-Body <IMicro``````````s``````````oftGraphItemBody>] [-BodyLa``````````s``````````tModifiedDateTime <DateTime>] [-Categorie``````````s`````````` <``````````s``````````tring[]>]
+ [-Checkli``````````s``````````tItem``````````s`````````` <IMicro``````````s``````````oftGraphCheckli``````````s``````````tItem[]>] [-CompletedDateTime <IMicro``````````s``````````oftGraphDateTimeZone>]
+ [-CreatedDateTime <DateTime>] [-DueDateTime <IMicro``````````s``````````oftGraphDateTimeZone>]
+ [-Exten``````````s``````````ion``````````s`````````` <IMicro``````````s``````````oftGraphExten``````````s``````````ion[]>] [-Id <``````````s``````````tring>] [-Importance <``````````s``````````tring>] [-I``````````s``````````ReminderOn]
+ [-La``````````s``````````tModifiedDateTime <DateTime>] [-LinkedRe``````````s``````````ource``````````s`````````` <IMicro``````````s``````````oftGraphLinkedRe``````````s``````````ource[]>]
+ [-Recurrence <IMicro``````````s``````````oftGraphPatternedRecurrence>] [-ReminderDateTime <IMicro``````````s``````````oftGraphDateTimeZone>]
+ [-``````````s``````````tatu``````````s`````````` <``````````s``````````tring>] [-Title <``````````s``````````tring>] [-WhatIf] [-Confirm] [<CommonParameter``````````s``````````>]
 ```
 
 ### CreateViaIdentity1
 ```
-New-MgUserTodoListTask -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphTodoTask1> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgU``````````s``````````erTodoLi``````````s``````````tTa``````````s``````````k -InputObject <IU``````````s``````````er``````````s``````````Identity> -BodyParameter <IMicro``````````s``````````oftGraphTodoTa``````````s``````````k1> [-WhatIf]
+ [-Confirm] [<CommonParameter``````````s``````````>]
 ```
 
-## DESCRIPTION
-Create new navigation property to tasks for users
+## DE``````````s``````````CRIPTION
+Create new navigation property to ta``````````s``````````k``````````s`````````` for u``````````s``````````er``````````s``````````
 
-## EXAMPLES
+## EXAMPLE``````````s``````````
 
-## PARAMETERS
+## PARAMETER``````````s``````````
 
-### -AdditionalProperties
-Additional Parameters
+### -AdditionalPropertie``````````s``````````
+Additional Parameter``````````s``````````
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Type: Ha``````````s``````````htable
+Parameter ``````````s``````````et``````````s``````````: CreateExpanded1, CreateViaIdentityExpanded1
+Alia``````````s``````````e``````````s``````````:
 
-Required: False
-Position: Named
+Required: Fal``````````s``````````e
+Po``````````s``````````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``````````s``````````e
+Accept wildcard character``````````s``````````: Fal``````````s``````````e
 ```
 
 ### -Body
 itemBody
-To construct, please use Get-Help -Online and see NOTES section for BODY properties and create a hash table.
+To con``````````s``````````truct, plea``````````s``````````e u``````````s``````````e Get-Help -Online and ``````````s``````````ee NOTE``````````s`````````` ``````````s``````````ection for BODY propertie``````````s`````````` and create a ha``````````s``````````h table.
 
 ```yaml
-Type: IMicrosoftGraphItemBody
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Type: IMicro``````````s``````````oftGraphItemBody
+Parameter ``````````s``````````et``````````s``````````: CreateExpanded1, CreateViaIdentityExpanded1
+Alia``````````s``````````e``````````s``````````:
 
-Required: False
-Position: Named
+Required: Fal``````````s``````````e
+Po``````````s``````````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``````````s``````````e
+Accept wildcard character``````````s``````````: Fal``````````s``````````e
 ```
 
-### -BodyLastModifiedDateTime
-The date and time when the task was last modified.
-By default, it is in UTC.
-You can provide a custom time zone in the request header.
-The property value uses ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
+### -BodyLa``````````s``````````tModifiedDateTime
+The date and time when the ta``````````s``````````k wa``````````s`````````` la``````````s``````````t modified.
+By default, it i``````````s`````````` in UTC.
+You can provide a cu``````````s``````````tom time zone in the reque``````````s``````````t header.
+The property value u``````````s``````````e``````````s`````````` I``````````s``````````O 8601 format and i``````````s`````````` alway``````````s`````````` in UTC time.
+For example, midnight UTC on Jan 1, 2020 would look like thi``````````s``````````: '2020-01-01T00:00:00Z'.
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Parameter ``````````s``````````et``````````s``````````: CreateExpanded1, CreateViaIdentityExpanded1
+Alia``````````s``````````e``````````s``````````:
 
-Required: False
-Position: Named
+Required: Fal``````````s``````````e
+Po``````````s``````````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``````````s``````````e
+Accept wildcard character``````````s``````````: Fal``````````s``````````e
 ```
 
 ### -BodyParameter
-todoTask
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+todoTa``````````s``````````k
+To con``````````s``````````truct, plea``````````s``````````e u``````````s``````````e Get-Help -Online and ``````````s``````````ee NOTE``````````s`````````` ``````````s``````````ection for BODYPARAMETER propertie``````````s`````````` and create a ha``````````s``````````h table.
 
 ```yaml
-Type: IMicrosoftGraphTodoTask1
-Parameter Sets: Create1, CreateViaIdentity1
-Aliases:
+Type: IMicro``````````s``````````oftGraphTodoTa``````````s``````````k1
+Parameter ``````````s``````````et``````````s``````````: Create1, CreateViaIdentity1
+Alia``````````s``````````e``````````s``````````:
 
 Required: True
-Position: Named
+Po``````````s``````````ition: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wildcard character``````````s``````````: Fal``````````s``````````e
 ```
 
-### -Categories
-The categories associated with the task.
-Each category corresponds to the displayName property of an outlookCategory that the user has defined.
+### -Categorie``````````s``````````
+The categorie``````````s`````````` a``````````s````````````````````s``````````ociated with the ta``````````s``````````k.
+Each category corre``````````s``````````pond``````````s`````````` to the di``````````s``````````playName property of an outlookCategory that the u``````````s``````````er ha``````````s`````````` defined.
 
 ```yaml
-Type: String[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Type: ``````````s``````````tring[]
+Parameter ``````````s``````````et``````````s``````````: CreateExpanded1, CreateViaIdentityExpanded1
+Alia``````````s``````````e``````````s``````````:
 
-Required: False
-Position: Named
+Required: Fal``````````s``````````e
+Po``````````s``````````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``````````s``````````e
+Accept wildcard character``````````s``````````: Fal``````````s``````````e
 ```
 
-### -ChecklistItems
-A collection of smaller subtasks linked to the more complex parent task.
-To construct, please use Get-Help -Online and see NOTES section for CHECKLISTITEMS properties and create a hash table.
+### -Checkli``````````s``````````tItem``````````s``````````
+A collection of ``````````s``````````maller ``````````s``````````ubta``````````s``````````k``````````s`````````` linked to the more complex parent ta``````````s``````````k.
+To con``````````s``````````truct, plea``````````s``````````e u``````````s``````````e Get-Help -Online and ``````````s``````````ee NOTE``````````s`````````` ``````````s``````````ection for CHECKLI``````````s``````````TITEM``````````s`````````` propertie``````````s`````````` and create a ha``````````s``````````h table.
 
 ```yaml
-Type: IMicrosoftGraphChecklistItem[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Type: IMicro``````````s``````````oftGraphCheckli``````````s``````````tItem[]
+Parameter ``````````s``````````et``````````s``````````: CreateExpanded1, CreateViaIdentityExpanded1
+Alia``````````s``````````e``````````s``````````:
 
-Required: False
-Position: Named
+Required: Fal``````````s``````````e
+Po``````````s``````````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``````````s``````````e
+Accept wildcard character``````````s``````````: Fal``````````s``````````e
 ```
 
 ### -CompletedDateTime
 dateTimeTimeZone
-To construct, please use Get-Help -Online and see NOTES section for COMPLETEDDATETIME properties and create a hash table.
+To con``````````s``````````truct, plea``````````s``````````e u``````````s``````````e Get-Help -Online and ``````````s``````````ee NOTE``````````s`````````` ``````````s``````````ection for COMPLETEDDATETIME propertie``````````s`````````` and create a ha``````````s``````````h table.
 
 ```yaml
-Type: IMicrosoftGraphDateTimeZone
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Type: IMicro``````````s``````````oftGraphDateTimeZone
+Parameter ``````````s``````````et``````````s``````````: CreateExpanded1, CreateViaIdentityExpanded1
+Alia``````````s``````````e``````````s``````````:
 
-Required: False
-Position: Named
+Required: Fal``````````s``````````e
+Po``````````s``````````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``````````s``````````e
+Accept wildcard character``````````s``````````: Fal``````````s``````````e
 ```
 
 ### -CreatedDateTime
-The date and time when the task was created.
-By default, it is in UTC.
-You can provide a custom time zone in the request header.
-The property value uses ISO 8601 format.
-For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
+The date and time when the ta``````````s``````````k wa``````````s`````````` created.
+By default, it i``````````s`````````` in UTC.
+You can provide a cu``````````s``````````tom time zone in the reque``````````s``````````t header.
+The property value u``````````s``````````e``````````s`````````` I``````````s``````````O 8601 format.
+For example, midnight UTC on Jan 1, 2020 would look like thi``````````s``````````: '2020-01-01T00:00:00Z'.
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Parameter ``````````s``````````et``````````s``````````: CreateExpanded1, CreateViaIdentityExpanded1
+Alia``````````s``````````e``````````s``````````:
 
-Required: False
-Position: Named
+Required: Fal``````````s``````````e
+Po``````````s``````````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``````````s``````````e
+Accept wildcard character``````````s``````````: Fal``````````s``````````e
 ```
 
 ### -DueDateTime
 dateTimeTimeZone
-To construct, please use Get-Help -Online and see NOTES section for DUEDATETIME properties and create a hash table.
+To con``````````s``````````truct, plea``````````s``````````e u``````````s``````````e Get-Help -Online and ``````````s``````````ee NOTE``````````s`````````` ``````````s``````````ection for DUEDATETIME propertie``````````s`````````` and create a ha``````````s``````````h table.
 
 ```yaml
-Type: IMicrosoftGraphDateTimeZone
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Type: IMicro``````````s``````````oftGraphDateTimeZone
+Parameter ``````````s``````````et``````````s``````````: CreateExpanded1, CreateViaIdentityExpanded1
+Alia``````````s``````````e``````````s``````````:
 
-Required: False
-Position: Named
+Required: Fal``````````s``````````e
+Po``````````s``````````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``````````s``````````e
+Accept wildcard character``````````s``````````: Fal``````````s``````````e
 ```
 
-### -Extensions
-The collection of open extensions defined for the task.
+### -Exten``````````s``````````ion``````````s``````````
+The collection of open exten``````````s``````````ion``````````s`````````` defined for the ta``````````s``````````k.
 Nullable.
-To construct, please use Get-Help -Online and see NOTES section for EXTENSIONS properties and create a hash table.
+To con``````````s``````````truct, plea``````````s``````````e u``````````s``````````e Get-Help -Online and ``````````s``````````ee NOTE``````````s`````````` ``````````s``````````ection for EXTEN``````````s``````````ION``````````s`````````` propertie``````````s`````````` and create a ha``````````s``````````h table.
 
 ```yaml
-Type: IMicrosoftGraphExtension[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Type: IMicro``````````s``````````oftGraphExten``````````s``````````ion[]
+Parameter ``````````s``````````et``````````s``````````: CreateExpanded1, CreateViaIdentityExpanded1
+Alia``````````s``````````e``````````s``````````:
 
-Required: False
-Position: Named
+Required: Fal``````````s``````````e
+Po``````````s``````````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``````````s``````````e
+Accept wildcard character``````````s``````````: Fal``````````s``````````e
 ```
 
 ### -Id
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Type: ``````````s``````````tring
+Parameter ``````````s``````````et``````````s``````````: CreateExpanded1, CreateViaIdentityExpanded1
+Alia``````````s``````````e``````````s``````````:
 
-Required: False
-Position: Named
+Required: Fal``````````s``````````e
+Po``````````s``````````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``````````s``````````e
+Accept wildcard character``````````s``````````: Fal``````````s``````````e
 ```
 
 ### -Importance
 importance
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Type: ``````````s``````````tring
+Parameter ``````````s``````````et``````````s``````````: CreateExpanded1, CreateViaIdentityExpanded1
+Alia``````````s``````````e``````````s``````````:
 
-Required: False
-Position: Named
+Required: Fal``````````s``````````e
+Po``````````s``````````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``````````s``````````e
+Accept wildcard character``````````s``````````: Fal``````````s``````````e
 ```
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To con``````````s``````````truct, plea``````````s``````````e u``````````s``````````e Get-Help -Online and ``````````s``````````ee NOTE``````````s`````````` ``````````s``````````ection for INPUTOBJECT propertie``````````s`````````` and create a ha``````````s``````````h table.
 
 ```yaml
-Type: IUsersIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
-Aliases:
+Type: IU``````````s``````````er``````````s``````````Identity
+Parameter ``````````s``````````et``````````s``````````: CreateViaIdentityExpanded1, CreateViaIdentity1
+Alia``````````s``````````e``````````s``````````:
 
 Required: True
-Position: Named
+Po``````````s``````````ition: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wildcard character``````````s``````````: Fal``````````s``````````e
 ```
 
-### -IsReminderOn
-Set to true if an alert is set to remind the user of the task.
+### -I``````````s``````````ReminderOn
+``````````s``````````et to true if an alert i``````````s`````````` ``````````s``````````et to remind the u``````````s``````````er of the ta``````````s``````````k.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Type: ``````````s``````````witchParameter
+Parameter ``````````s``````````et``````````s``````````: CreateExpanded1, CreateViaIdentityExpanded1
+Alia``````````s``````````e``````````s``````````:
 
-Required: False
-Position: Named
+Required: Fal``````````s``````````e
+Po``````````s``````````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``````````s``````````e
+Accept wildcard character``````````s``````````: Fal``````````s``````````e
 ```
 
-### -LastModifiedDateTime
-The date and time when the task was last modified.
-By default, it is in UTC.
-You can provide a custom time zone in the request header.
-The property value uses ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
+### -La``````````s``````````tModifiedDateTime
+The date and time when the ta``````````s``````````k wa``````````s`````````` la``````````s``````````t modified.
+By default, it i``````````s`````````` in UTC.
+You can provide a cu``````````s``````````tom time zone in the reque``````````s``````````t header.
+The property value u``````````s``````````e``````````s`````````` I``````````s``````````O 8601 format and i``````````s`````````` alway``````````s`````````` in UTC time.
+For example, midnight UTC on Jan 1, 2020 would look like thi``````````s``````````: '2020-01-01T00:00:00Z'.
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Parameter ``````````s``````````et``````````s``````````: CreateExpanded1, CreateViaIdentityExpanded1
+Alia``````````s``````````e``````````s``````````:
 
-Required: False
-Position: Named
+Required: Fal``````````s``````````e
+Po``````````s``````````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``````````s``````````e
+Accept wildcard character``````````s``````````: Fal``````````s``````````e
 ```
 
-### -LinkedResources
-A collection of resources linked to the task.
-To construct, please use Get-Help -Online and see NOTES section for LINKEDRESOURCES properties and create a hash table.
+### -LinkedRe``````````s``````````ource``````````s``````````
+A collection of re``````````s``````````ource``````````s`````````` linked to the ta``````````s``````````k.
+To con``````````s``````````truct, plea``````````s``````````e u``````````s``````````e Get-Help -Online and ``````````s``````````ee NOTE``````````s`````````` ``````````s``````````ection for LINKEDRE``````````s``````````OURCE``````````s`````````` propertie``````````s`````````` and create a ha``````````s``````````h table.
 
 ```yaml
-Type: IMicrosoftGraphLinkedResource[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Type: IMicro``````````s``````````oftGraphLinkedRe``````````s``````````ource[]
+Parameter ``````````s``````````et``````````s``````````: CreateExpanded1, CreateViaIdentityExpanded1
+Alia``````````s``````````e``````````s``````````:
 
-Required: False
-Position: Named
+Required: Fal``````````s``````````e
+Po``````````s``````````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``````````s``````````e
+Accept wildcard character``````````s``````````: Fal``````````s``````````e
 ```
 
 ### -Recurrence
 patternedRecurrence
-To construct, please use Get-Help -Online and see NOTES section for RECURRENCE properties and create a hash table.
+To con``````````s``````````truct, plea``````````s``````````e u``````````s``````````e Get-Help -Online and ``````````s``````````ee NOTE``````````s`````````` ``````````s``````````ection for RECURRENCE propertie``````````s`````````` and create a ha``````````s``````````h table.
 
 ```yaml
-Type: IMicrosoftGraphPatternedRecurrence
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Type: IMicro``````````s``````````oftGraphPatternedRecurrence
+Parameter ``````````s``````````et``````````s``````````: CreateExpanded1, CreateViaIdentityExpanded1
+Alia``````````s``````````e``````````s``````````:
 
-Required: False
-Position: Named
+Required: Fal``````````s``````````e
+Po``````````s``````````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``````````s``````````e
+Accept wildcard character``````````s``````````: Fal``````````s``````````e
 ```
 
 ### -ReminderDateTime
 dateTimeTimeZone
-To construct, please use Get-Help -Online and see NOTES section for REMINDERDATETIME properties and create a hash table.
+To con``````````s``````````truct, plea``````````s``````````e u``````````s``````````e Get-Help -Online and ``````````s``````````ee NOTE``````````s`````````` ``````````s``````````ection for REMINDERDATETIME propertie``````````s`````````` and create a ha``````````s``````````h table.
 
 ```yaml
-Type: IMicrosoftGraphDateTimeZone
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Type: IMicro``````````s``````````oftGraphDateTimeZone
+Parameter ``````````s``````````et``````````s``````````: CreateExpanded1, CreateViaIdentityExpanded1
+Alia``````````s``````````e``````````s``````````:
 
-Required: False
-Position: Named
+Required: Fal``````````s``````````e
+Po``````````s``````````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``````````s``````````e
+Accept wildcard character``````````s``````````: Fal``````````s``````````e
 ```
 
-### -Status
-taskStatus
+### -``````````s``````````tatu``````````s``````````
+ta``````````s``````````k``````````s``````````tatu``````````s``````````
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Type: ``````````s``````````tring
+Parameter ``````````s``````````et``````````s``````````: CreateExpanded1, CreateViaIdentityExpanded1
+Alia``````````s``````````e``````````s``````````:
 
-Required: False
-Position: Named
+Required: Fal``````````s``````````e
+Po``````````s``````````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``````````s``````````e
+Accept wildcard character``````````s``````````: Fal``````````s``````````e
 ```
 
 ### -Title
-A brief description of the task.
+A brief de``````````s``````````cription of the ta``````````s``````````k.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
-Aliases:
+Type: ``````````s``````````tring
+Parameter ``````````s``````````et``````````s``````````: CreateExpanded1, CreateViaIdentityExpanded1
+Alia``````````s``````````e``````````s``````````:
 
-Required: False
-Position: Named
+Required: Fal``````````s``````````e
+Po``````````s``````````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``````````s``````````e
+Accept wildcard character``````````s``````````: Fal``````````s``````````e
 ```
 
-### -TodoTaskListId
-key: id of todoTaskList
+### -TodoTa``````````s``````````kLi``````````s``````````tId
+key: id of todoTa``````````s``````````kLi``````````s``````````t
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
-Aliases:
+Type: ``````````s``````````tring
+Parameter ``````````s``````````et``````````s``````````: CreateExpanded1, Create1
+Alia``````````s``````````e``````````s``````````:
 
 Required: True
-Position: Named
+Po``````````s``````````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``````````s``````````e
+Accept wildcard character``````````s``````````: Fal``````````s``````````e
 ```
 
-### -UserId
-key: id of user
+### -U``````````s``````````erId
+key: id of u``````````s``````````er
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
-Aliases:
+Type: ``````````s``````````tring
+Parameter ``````````s``````````et``````````s``````````: CreateExpanded1, Create1
+Alia``````````s``````````e``````````s``````````:
 
 Required: True
-Position: Named
+Po``````````s``````````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``````````s``````````e
+Accept wildcard character``````````s``````````: Fal``````````s``````````e
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompt``````````s`````````` you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Type: ``````````s``````````witchParameter
+Parameter ``````````s``````````et``````````s``````````: (All)
+Alia``````````s``````````e``````````s``````````: cf
 
-Required: False
-Position: Named
+Required: Fal``````````s``````````e
+Po``````````s``````````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``````````s``````````e
+Accept wildcard character``````````s``````````: Fal``````````s``````````e
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+``````````s``````````how``````````s`````````` what would happen if the cmdlet run``````````s``````````.
+The cmdlet i``````````s`````````` not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Type: ``````````s``````````witchParameter
+Parameter ``````````s``````````et``````````s``````````: (All)
+Alia``````````s``````````e``````````s``````````: wi
 
-Required: False
-Position: Named
+Required: Fal``````````s``````````e
+Po``````````s``````````ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``````````s``````````e
+Accept wildcard character``````````s``````````: Fal``````````s``````````e
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParameter``````````s``````````
+Thi``````````s`````````` cmdlet ``````````s``````````upport``````````s`````````` the common parameter``````````s``````````: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbo``````````s``````````e, -WarningAction, and -WarningVariable. For more information, ``````````s``````````ee [about_CommonParameter``````````s``````````](http://go.micro``````````s``````````oft.com/fwlink/?LinkID=113216).
 
-## INPUTS
+## INPUT``````````s``````````
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTodoTask1
-### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-## OUTPUTS
+### Micro``````````s``````````oft.Graph.Power``````````s``````````hell.Model``````````s``````````.IMicro``````````s``````````oftGraphTodoTa``````````s``````````k1
+### Micro``````````s``````````oft.Graph.Power``````````s``````````hell.Model``````````s``````````.IU``````````s``````````er``````````s``````````Identity
+## OUTPUT``````````s``````````
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTodoTask1
-## NOTES
+### Micro``````````s``````````oft.Graph.Power``````````s``````````hell.Model``````````s``````````.IMicro``````````s``````````oftGraphTodoTa``````````s``````````k1
+## NOTE``````````s``````````
 
-ALIASES
+ALIA``````````s``````````E``````````s``````````
 
-COMPLEX PARAMETER PROPERTIES
+COMPLEX PARAMETER PROPERTIE``````````s``````````
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameter``````````s`````````` de``````````s``````````cribed below, con``````````s``````````truct a ha``````````s``````````h table containing the appropriate propertie``````````s``````````. For information on ha``````````s``````````h table``````````s``````````, run Get-Help about_Ha``````````s``````````h_Table``````````s``````````.
 
 
-BODY <IMicrosoftGraphItemBody>: itemBody
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Content <String>]`: The content of the item.
-  - `[ContentType <String>]`: bodyType
+BODY <IMicro``````````s``````````oftGraphItemBody>: itemBody
+  - `[(Any) <Object>]`: Thi``````````s`````````` indicate``````````s`````````` any property can be added to thi``````````s`````````` object.
+  - `[Content <``````````s``````````tring>]`: The content of the item.
+  - `[ContentType <``````````s``````````tring>]`: bodyType
 
-BODYPARAMETER <IMicrosoftGraphTodoTask1>: todoTask
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
-  - `[Body <IMicrosoftGraphItemBody>]`: itemBody
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Content <String>]`: The content of the item.
-    - `[ContentType <String>]`: bodyType
-  - `[BodyLastModifiedDateTime <DateTime?>]`: The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
-  - `[Categories <String[]>]`: The categories associated with the task. Each category corresponds to the displayName property of an outlookCategory that the user has defined.
-  - `[ChecklistItems <IMicrosoftGraphChecklistItem[]>]`: A collection of smaller subtasks linked to the more complex parent task.
-    - `[Id <String>]`: 
-    - `[CheckedDateTime <DateTime?>]`: The date and time when the checklistItem was finished.
-    - `[CreatedDateTime <DateTime?>]`: The date and time when the checklistItem was created.
-    - `[DisplayName <String>]`: Field indicating the title of checklistItem.
-    - `[IsChecked <Boolean?>]`: State indicating whether the item is checked off or not.
-  - `[CompletedDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
-    - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
-  - `[CreatedDateTime <DateTime?>]`: The date and time when the task was created. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
-  - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-  - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the task. Nullable.
-    - `[Id <String>]`: 
-  - `[Importance <String>]`: importance
-  - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the task.
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
-  - `[LinkedResources <IMicrosoftGraphLinkedResource[]>]`: A collection of resources linked to the task.
-    - `[Id <String>]`: 
-    - `[ApplicationName <String>]`: Field indicating the app name of the source that is sending the linkedResource.
-    - `[DisplayName <String>]`: Field indicating the title of the linkedResource.
-    - `[ExternalId <String>]`: Id of the object that is associated with this task on the third-party/partner system.
-    - `[WebUrl <String>]`: Deep link to the linkedResource.
-  - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs. Required if type is absoluteMonthly or absoluteYearly.
-      - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
-      - `[FirstDayOfWeek <String>]`: dayOfWeek
-      - `[Index <String>]`: weekIndex
-      - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type. Required.
-      - `[Month <Int32?>]`: The month in which the event occurs.  This is a number from 1 to 12.
-      - `[Type <String>]`: recurrencePatternType
-    - `[Range <IMicrosoftGraphRecurrenceRange>]`: recurrenceRange
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[EndDate <DateTime?>]`: The date to stop applying the recurrence pattern. Depending on the recurrence pattern of the event, the last occurrence of the meeting may not be this date. Required if type is endDate.
-      - `[NumberOfOccurrences <Int32?>]`: The number of times to repeat the event. Required and must be positive if type is numbered.
-      - `[RecurrenceTimeZone <String>]`: Time zone for the startDate and endDate properties. Optional. If not specified, the time zone of the event is used.
-      - `[StartDate <DateTime?>]`: The date to start applying the recurrence pattern. The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event. Must be the same value as the start property of the recurring event. Required.
-      - `[Type <String>]`: recurrenceRangeType
-  - `[ReminderDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-  - `[Status <String>]`: taskStatus
-  - `[Title <String>]`: A brief description of the task.
+BODYPARAMETER <IMicro``````````s``````````oftGraphTodoTa``````````s``````````k1>: todoTa``````````s``````````k
+  - `[(Any) <Object>]`: Thi``````````s`````````` indicate``````````s`````````` any property can be added to thi``````````s`````````` object.
+  - `[Id <``````````s``````````tring>]`: 
+  - `[Body <IMicro``````````s``````````oftGraphItemBody>]`: itemBody
+    - `[(Any) <Object>]`: Thi``````````s`````````` indicate``````````s`````````` any property can be added to thi``````````s`````````` object.
+    - `[Content <``````````s``````````tring>]`: The content of the item.
+    - `[ContentType <``````````s``````````tring>]`: bodyType
+  - `[BodyLa``````````s``````````tModifiedDateTime <DateTime?>]`: The date and time when the ta``````````s``````````k wa``````````s`````````` la``````````s``````````t modified. By default, it i``````````s`````````` in UTC. You can provide a cu``````````s``````````tom time zone in the reque``````````s``````````t header. The property value u``````````s``````````e``````````s`````````` I``````````s``````````O 8601 format and i``````````s`````````` alway``````````s`````````` in UTC time. For example, midnight UTC on Jan 1, 2020 would look like thi``````````s``````````: '2020-01-01T00:00:00Z'.
+  - `[Categorie``````````s`````````` <``````````s``````````tring[]>]`: The categorie``````````s`````````` a``````````s````````````````````s``````````ociated with the ta``````````s``````````k. Each category corre``````````s``````````pond``````````s`````````` to the di``````````s``````````playName property of an outlookCategory that the u``````````s``````````er ha``````````s`````````` defined.
+  - `[Checkli``````````s``````````tItem``````````s`````````` <IMicro``````````s``````````oftGraphCheckli``````````s``````````tItem[]>]`: A collection of ``````````s``````````maller ``````````s``````````ubta``````````s``````````k``````````s`````````` linked to the more complex parent ta``````````s``````````k.
+    - `[Id <``````````s``````````tring>]`: 
+    - `[CheckedDateTime <DateTime?>]`: The date and time when the checkli``````````s``````````tItem wa``````````s`````````` fini``````````s``````````hed.
+    - `[CreatedDateTime <DateTime?>]`: The date and time when the checkli``````````s``````````tItem wa``````````s`````````` created.
+    - `[Di``````````s``````````playName <``````````s``````````tring>]`: Field indicating the title of checkli``````````s``````````tItem.
+    - `[I``````````s``````````Checked <Boolean?>]`: ``````````s``````````tate indicating whether the item i``````````s`````````` checked off or not.
+  - `[CompletedDateTime <IMicro``````````s``````````oftGraphDateTimeZone>]`: dateTimeTimeZone
+    - `[(Any) <Object>]`: Thi``````````s`````````` indicate``````````s`````````` any property can be added to thi``````````s`````````` object.
+    - `[DateTime <``````````s``````````tring>]`: A ``````````s``````````ingle point of time in a combined date and time repre``````````s``````````entation ({date}T{time}). For example, '2019-04-16T09:00:00'.
+    - `[TimeZone <``````````s``````````tring>]`: Repre``````````s``````````ent``````````s`````````` a time zone, for example, 'Pacific ``````````s``````````tandard Time'. ``````````s``````````ee below for po``````````s````````````````````s``````````ible value``````````s``````````.
+  - `[CreatedDateTime <DateTime?>]`: The date and time when the ta``````````s``````````k wa``````````s`````````` created. By default, it i``````````s`````````` in UTC. You can provide a cu``````````s``````````tom time zone in the reque``````````s``````````t header. The property value u``````````s``````````e``````````s`````````` I``````````s``````````O 8601 format. For example, midnight UTC on Jan 1, 2020 would look like thi``````````s``````````: '2020-01-01T00:00:00Z'.
+  - `[DueDateTime <IMicro``````````s``````````oftGraphDateTimeZone>]`: dateTimeTimeZone
+  - `[Exten``````````s``````````ion``````````s`````````` <IMicro``````````s``````````oftGraphExten``````````s``````````ion[]>]`: The collection of open exten``````````s``````````ion``````````s`````````` defined for the ta``````````s``````````k. Nullable.
+    - `[Id <``````````s``````````tring>]`: 
+  - `[Importance <``````````s``````````tring>]`: importance
+  - `[I``````````s``````````ReminderOn <Boolean?>]`: ``````````s``````````et to true if an alert i``````````s`````````` ``````````s``````````et to remind the u``````````s``````````er of the ta``````````s``````````k.
+  - `[La``````````s``````````tModifiedDateTime <DateTime?>]`: The date and time when the ta``````````s``````````k wa``````````s`````````` la``````````s``````````t modified. By default, it i``````````s`````````` in UTC. You can provide a cu``````````s``````````tom time zone in the reque``````````s``````````t header. The property value u``````````s``````````e``````````s`````````` I``````````s``````````O 8601 format and i``````````s`````````` alway``````````s`````````` in UTC time. For example, midnight UTC on Jan 1, 2020 would look like thi``````````s``````````: '2020-01-01T00:00:00Z'.
+  - `[LinkedRe``````````s``````````ource``````````s`````````` <IMicro``````````s``````````oftGraphLinkedRe``````````s``````````ource[]>]`: A collection of re``````````s``````````ource``````````s`````````` linked to the ta``````````s``````````k.
+    - `[Id <``````````s``````````tring>]`: 
+    - `[ApplicationName <``````````s``````````tring>]`: Field indicating the app name of the ``````````s``````````ource that i``````````s`````````` ``````````s``````````ending the linkedRe``````````s``````````ource.
+    - `[Di``````````s``````````playName <``````````s``````````tring>]`: Field indicating the title of the linkedRe``````````s``````````ource.
+    - `[ExternalId <``````````s``````````tring>]`: Id of the object that i``````````s`````````` a``````````s````````````````````s``````````ociated with thi``````````s`````````` ta``````````s``````````k on the third-party/partner ``````````s``````````y``````````s``````````tem.
+    - `[WebUrl <``````````s``````````tring>]`: Deep link to the linkedRe``````````s``````````ource.
+  - `[Recurrence <IMicro``````````s``````````oftGraphPatternedRecurrence>]`: patternedRecurrence
+    - `[(Any) <Object>]`: Thi``````````s`````````` indicate``````````s`````````` any property can be added to thi``````````s`````````` object.
+    - `[Pattern <IMicro``````````s``````````oftGraphRecurrencePattern>]`: recurrencePattern
+      - `[(Any) <Object>]`: Thi``````````s`````````` indicate``````````s`````````` any property can be added to thi``````````s`````````` object.
+      - `[DayOfMonth <Int32?>]`: The day of the month on which the event occur``````````s``````````. Required if type i``````````s`````````` ab``````````s``````````oluteMonthly or ab``````````s``````````oluteYearly.
+      - `[Day``````````s``````````OfWeek <``````````s``````````tring[]>]`: A collection of the day``````````s`````````` of the week on which the event occur``````````s``````````. The po``````````s````````````````````s``````````ible value``````````s`````````` are: ``````````s``````````unday, monday, tue``````````s``````````day, wedne``````````s``````````day, thur``````````s``````````day, friday, ``````````s``````````aturday. If type i``````````s`````````` relativeMonthly or relativeYearly, and day``````````s``````````OfWeek ``````````s``````````pecifie``````````s`````````` more than one day, the event fall``````````s`````````` on the fir``````````s``````````t day that ``````````s``````````ati``````````s``````````fie``````````s`````````` the pattern.  Required if type i``````````s`````````` weekly, relativeMonthly, or relativeYearly.
+      - `[Fir``````````s``````````tDayOfWeek <``````````s``````````tring>]`: dayOfWeek
+      - `[Index <``````````s``````````tring>]`: weekIndex
+      - `[Interval <Int32?>]`: The number of unit``````````s`````````` between occurrence``````````s``````````, where unit``````````s`````````` can be in day``````````s``````````, week``````````s``````````, month``````````s``````````, or year``````````s``````````, depending on the type. Required.
+      - `[Month <Int32?>]`: The month in which the event occur``````````s``````````.  Thi``````````s`````````` i``````````s`````````` a number from 1 to 12.
+      - `[Type <``````````s``````````tring>]`: recurrencePatternType
+    - `[Range <IMicro``````````s``````````oftGraphRecurrenceRange>]`: recurrenceRange
+      - `[(Any) <Object>]`: Thi``````````s`````````` indicate``````````s`````````` any property can be added to thi``````````s`````````` object.
+      - `[EndDate <DateTime?>]`: The date to ``````````s``````````top applying the recurrence pattern. Depending on the recurrence pattern of the event, the la``````````s``````````t occurrence of the meeting may not be thi``````````s`````````` date. Required if type i``````````s`````````` endDate.
+      - `[NumberOfOccurrence``````````s`````````` <Int32?>]`: The number of time``````````s`````````` to repeat the event. Required and mu``````````s``````````t be po``````````s``````````itive if type i``````````s`````````` numbered.
+      - `[RecurrenceTimeZone <``````````s``````````tring>]`: Time zone for the ``````````s``````````tartDate and endDate propertie``````````s``````````. Optional. If not ``````````s``````````pecified, the time zone of the event i``````````s`````````` u``````````s``````````ed.
+      - `[``````````s``````````tartDate <DateTime?>]`: The date to ``````````s``````````tart applying the recurrence pattern. The fir``````````s``````````t occurrence of the meeting may be thi``````````s`````````` date or later, depending on the recurrence pattern of the event. Mu``````````s``````````t be the ``````````s``````````ame value a``````````s`````````` the ``````````s``````````tart property of the recurring event. Required.
+      - `[Type <``````````s``````````tring>]`: recurrenceRangeType
+  - `[ReminderDateTime <IMicro``````````s``````````oftGraphDateTimeZone>]`: dateTimeTimeZone
+  - `[``````````s``````````tatu``````````s`````````` <``````````s``````````tring>]`: ta``````````s``````````k``````````s``````````tatu``````````s``````````
+  - `[Title <``````````s``````````tring>]`: A brief de``````````s``````````cription of the ta``````````s``````````k.
 
-CHECKLISTITEMS <IMicrosoftGraphChecklistItem[]>: A collection of smaller subtasks linked to the more complex parent task.
-  - `[Id <String>]`: 
-  - `[CheckedDateTime <DateTime?>]`: The date and time when the checklistItem was finished.
-  - `[CreatedDateTime <DateTime?>]`: The date and time when the checklistItem was created.
-  - `[DisplayName <String>]`: Field indicating the title of checklistItem.
-  - `[IsChecked <Boolean?>]`: State indicating whether the item is checked off or not.
+CHECKLI``````````s``````````TITEM``````````s`````````` <IMicro``````````s``````````oftGraphCheckli``````````s``````````tItem[]>: A collection of ``````````s``````````maller ``````````s``````````ubta``````````s``````````k``````````s`````````` linked to the more complex parent ta``````````s``````````k.
+  - `[Id <``````````s``````````tring>]`: 
+  - `[CheckedDateTime <DateTime?>]`: The date and time when the checkli``````````s``````````tItem wa``````````s`````````` fini``````````s``````````hed.
+  - `[CreatedDateTime <DateTime?>]`: The date and time when the checkli``````````s``````````tItem wa``````````s`````````` created.
+  - `[Di``````````s``````````playName <``````````s``````````tring>]`: Field indicating the title of checkli``````````s``````````tItem.
+  - `[I``````````s``````````Checked <Boolean?>]`: ``````````s``````````tate indicating whether the item i``````````s`````````` checked off or not.
 
-COMPLETEDDATETIME <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
-  - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
+COMPLETEDDATETIME <IMicro``````````s``````````oftGraphDateTimeZone>: dateTimeTimeZone
+  - `[(Any) <Object>]`: Thi``````````s`````````` indicate``````````s`````````` any property can be added to thi``````````s`````````` object.
+  - `[DateTime <``````````s``````````tring>]`: A ``````````s``````````ingle point of time in a combined date and time repre``````````s``````````entation ({date}T{time}). For example, '2019-04-16T09:00:00'.
+  - `[TimeZone <``````````s``````````tring>]`: Repre``````````s``````````ent``````````s`````````` a time zone, for example, 'Pacific ``````````s``````````tandard Time'. ``````````s``````````ee below for po``````````s````````````````````s``````````ible value``````````s``````````.
 
-DUEDATETIME <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
-  - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
+DUEDATETIME <IMicro``````````s``````````oftGraphDateTimeZone>: dateTimeTimeZone
+  - `[(Any) <Object>]`: Thi``````````s`````````` indicate``````````s`````````` any property can be added to thi``````````s`````````` object.
+  - `[DateTime <``````````s``````````tring>]`: A ``````````s``````````ingle point of time in a combined date and time repre``````````s``````````entation ({date}T{time}). For example, '2019-04-16T09:00:00'.
+  - `[TimeZone <``````````s``````````tring>]`: Repre``````````s``````````ent``````````s`````````` a time zone, for example, 'Pacific ``````````s``````````tandard Time'. ``````````s``````````ee below for po``````````s````````````````````s``````````ible value``````````s``````````.
 
-EXTENSIONS <IMicrosoftGraphExtension[]>: The collection of open extensions defined for the task. Nullable.
-  - `[Id <String>]`: 
+EXTEN``````````s``````````ION``````````s`````````` <IMicro``````````s``````````oftGraphExten``````````s``````````ion[]>: The collection of open exten``````````s``````````ion``````````s`````````` defined for the ta``````````s``````````k. Nullable.
+  - `[Id <``````````s``````````tring>]`: 
 
-INPUTOBJECT <IUsersIdentity>: Identity Parameter
-  - `[AttachmentBaseId <String>]`: key: id of attachmentBase
-  - `[AttachmentId <String>]`: key: id of attachment
-  - `[AttachmentSessionId <String>]`: key: id of attachmentSession
-  - `[ChecklistItemId <String>]`: key: id of checklistItem
-  - `[DirectoryObjectId <String>]`: key: id of directoryObject
-  - `[ExtensionId <String>]`: key: id of extension
-  - `[LicenseDetailsId <String>]`: key: id of licenseDetails
-  - `[LinkedResourceId <String>]`: key: id of linkedResource
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
-  - `[NotificationId <String>]`: key: id of notification
-  - `[OAuth2PermissionGrantId <String>]`: key: id of oAuth2PermissionGrant
-  - `[OutlookCategoryId <String>]`: key: id of outlookCategory
-  - `[OutlookTaskFolderId <String>]`: key: id of outlookTaskFolder
-  - `[OutlookTaskGroupId <String>]`: key: id of outlookTaskGroup
-  - `[OutlookTaskId <String>]`: key: id of outlookTask
-  - `[ProfilePhotoId <String>]`: key: id of profilePhoto
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
-  - `[TodoTaskId <String>]`: key: id of todoTask
-  - `[TodoTaskListId <String>]`: key: id of todoTaskList
-  - `[UserId <String>]`: key: id of user
+INPUTOBJECT <IU``````````s``````````er``````````s``````````Identity>: Identity Parameter
+  - `[AttachmentBa``````````s``````````eId <``````````s``````````tring>]`: key: id of attachmentBa``````````s``````````e
+  - `[AttachmentId <``````````s``````````tring>]`: key: id of attachment
+  - `[Attachment``````````s``````````e``````````s````````````````````s``````````ionId <``````````s``````````tring>]`: key: id of attachment``````````s``````````e``````````s````````````````````s``````````ion
+  - `[Checkli``````````s``````````tItemId <``````````s``````````tring>]`: key: id of checkli``````````s``````````tItem
+  - `[DirectoryObjectId <``````````s``````````tring>]`: key: id of directoryObject
+  - `[Exten``````````s``````````ionId <``````````s``````````tring>]`: key: id of exten``````````s``````````ion
+  - `[Licen``````````s``````````eDetail``````````s``````````Id <``````````s``````````tring>]`: key: id of licen``````````s``````````eDetail``````````s``````````
+  - `[LinkedRe``````````s``````````ourceId <``````````s``````````tring>]`: key: id of linkedRe``````````s``````````ource
+  - `[MultiValueLegacyExtendedPropertyId <``````````s``````````tring>]`: key: id of multiValueLegacyExtendedProperty
+  - `[NotificationId <``````````s``````````tring>]`: key: id of notification
+  - `[OAuth2Permi``````````s````````````````````s``````````ionGrantId <``````````s``````````tring>]`: key: id of oAuth2Permi``````````s````````````````````s``````````ionGrant
+  - `[OutlookCategoryId <``````````s``````````tring>]`: key: id of outlookCategory
+  - `[OutlookTa``````````s``````````kFolderId <``````````s``````````tring>]`: key: id of outlookTa``````````s``````````kFolder
+  - `[OutlookTa``````````s``````````kGroupId <``````````s``````````tring>]`: key: id of outlookTa``````````s``````````kGroup
+  - `[OutlookTa``````````s``````````kId <``````````s``````````tring>]`: key: id of outlookTa``````````s``````````k
+  - `[ProfilePhotoId <``````````s``````````tring>]`: key: id of profilePhoto
+  - `[``````````s``````````ingleValueLegacyExtendedPropertyId <``````````s``````````tring>]`: key: id of ``````````s``````````ingleValueLegacyExtendedProperty
+  - `[TodoTa``````````s``````````kId <``````````s``````````tring>]`: key: id of todoTa``````````s``````````k
+  - `[TodoTa``````````s``````````kLi``````````s``````````tId <``````````s``````````tring>]`: key: id of todoTa``````````s``````````kLi``````````s``````````t
+  - `[U``````````s``````````erId <``````````s``````````tring>]`: key: id of u``````````s``````````er
 
-LINKEDRESOURCES <IMicrosoftGraphLinkedResource[]>: A collection of resources linked to the task.
-  - `[Id <String>]`: 
-  - `[ApplicationName <String>]`: Field indicating the app name of the source that is sending the linkedResource.
-  - `[DisplayName <String>]`: Field indicating the title of the linkedResource.
-  - `[ExternalId <String>]`: Id of the object that is associated with this task on the third-party/partner system.
-  - `[WebUrl <String>]`: Deep link to the linkedResource.
+LINKEDRE``````````s``````````OURCE``````````s`````````` <IMicro``````````s``````````oftGraphLinkedRe``````````s``````````ource[]>: A collection of re``````````s``````````ource``````````s`````````` linked to the ta``````````s``````````k.
+  - `[Id <``````````s``````````tring>]`: 
+  - `[ApplicationName <``````````s``````````tring>]`: Field indicating the app name of the ``````````s``````````ource that i``````````s`````````` ``````````s``````````ending the linkedRe``````````s``````````ource.
+  - `[Di``````````s``````````playName <``````````s``````````tring>]`: Field indicating the title of the linkedRe``````````s``````````ource.
+  - `[ExternalId <``````````s``````````tring>]`: Id of the object that i``````````s`````````` a``````````s````````````````````s``````````ociated with thi``````````s`````````` ta``````````s``````````k on the third-party/partner ``````````s``````````y``````````s``````````tem.
+  - `[WebUrl <``````````s``````````tring>]`: Deep link to the linkedRe``````````s``````````ource.
 
-RECURRENCE <IMicrosoftGraphPatternedRecurrence>: patternedRecurrence
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs. Required if type is absoluteMonthly or absoluteYearly.
-    - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
-    - `[FirstDayOfWeek <String>]`: dayOfWeek
-    - `[Index <String>]`: weekIndex
-    - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type. Required.
-    - `[Month <Int32?>]`: The month in which the event occurs.  This is a number from 1 to 12.
-    - `[Type <String>]`: recurrencePatternType
-  - `[Range <IMicrosoftGraphRecurrenceRange>]`: recurrenceRange
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[EndDate <DateTime?>]`: The date to stop applying the recurrence pattern. Depending on the recurrence pattern of the event, the last occurrence of the meeting may not be this date. Required if type is endDate.
-    - `[NumberOfOccurrences <Int32?>]`: The number of times to repeat the event. Required and must be positive if type is numbered.
-    - `[RecurrenceTimeZone <String>]`: Time zone for the startDate and endDate properties. Optional. If not specified, the time zone of the event is used.
-    - `[StartDate <DateTime?>]`: The date to start applying the recurrence pattern. The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event. Must be the same value as the start property of the recurring event. Required.
-    - `[Type <String>]`: recurrenceRangeType
+RECURRENCE <IMicro``````````s``````````oftGraphPatternedRecurrence>: patternedRecurrence
+  - `[(Any) <Object>]`: Thi``````````s`````````` indicate``````````s`````````` any property can be added to thi``````````s`````````` object.
+  - `[Pattern <IMicro``````````s``````````oftGraphRecurrencePattern>]`: recurrencePattern
+    - `[(Any) <Object>]`: Thi``````````s`````````` indicate``````````s`````````` any property can be added to thi``````````s`````````` object.
+    - `[DayOfMonth <Int32?>]`: The day of the month on which the event occur``````````s``````````. Required if type i``````````s`````````` ab``````````s``````````oluteMonthly or ab``````````s``````````oluteYearly.
+    - `[Day``````````s``````````OfWeek <``````````s``````````tring[]>]`: A collection of the day``````````s`````````` of the week on which the event occur``````````s``````````. The po``````````s````````````````````s``````````ible value``````````s`````````` are: ``````````s``````````unday, monday, tue``````````s``````````day, wedne``````````s``````````day, thur``````````s``````````day, friday, ``````````s``````````aturday. If type i``````````s`````````` relativeMonthly or relativeYearly, and day``````````s``````````OfWeek ``````````s``````````pecifie``````````s`````````` more than one day, the event fall``````````s`````````` on the fir``````````s``````````t day that ``````````s``````````ati``````````s``````````fie``````````s`````````` the pattern.  Required if type i``````````s`````````` weekly, relativeMonthly, or relativeYearly.
+    - `[Fir``````````s``````````tDayOfWeek <``````````s``````````tring>]`: dayOfWeek
+    - `[Index <``````````s``````````tring>]`: weekIndex
+    - `[Interval <Int32?>]`: The number of unit``````````s`````````` between occurrence``````````s``````````, where unit``````````s`````````` can be in day``````````s``````````, week``````````s``````````, month``````````s``````````, or year``````````s``````````, depending on the type. Required.
+    - `[Month <Int32?>]`: The month in which the event occur``````````s``````````.  Thi``````````s`````````` i``````````s`````````` a number from 1 to 12.
+    - `[Type <``````````s``````````tring>]`: recurrencePatternType
+  - `[Range <IMicro``````````s``````````oftGraphRecurrenceRange>]`: recurrenceRange
+    - `[(Any) <Object>]`: Thi``````````s`````````` indicate``````````s`````````` any property can be added to thi``````````s`````````` object.
+    - `[EndDate <DateTime?>]`: The date to ``````````s``````````top applying the recurrence pattern. Depending on the recurrence pattern of the event, the la``````````s``````````t occurrence of the meeting may not be thi``````````s`````````` date. Required if type i``````````s`````````` endDate.
+    - `[NumberOfOccurrence``````````s`````````` <Int32?>]`: The number of time``````````s`````````` to repeat the event. Required and mu``````````s``````````t be po``````````s``````````itive if type i``````````s`````````` numbered.
+    - `[RecurrenceTimeZone <``````````s``````````tring>]`: Time zone for the ``````````s``````````tartDate and endDate propertie``````````s``````````. Optional. If not ``````````s``````````pecified, the time zone of the event i``````````s`````````` u``````````s``````````ed.
+    - `[``````````s``````````tartDate <DateTime?>]`: The date to ``````````s``````````tart applying the recurrence pattern. The fir``````````s``````````t occurrence of the meeting may be thi``````````s`````````` date or later, depending on the recurrence pattern of the event. Mu``````````s``````````t be the ``````````s``````````ame value a``````````s`````````` the ``````````s``````````tart property of the recurring event. Required.
+    - `[Type <``````````s``````````tring>]`: recurrenceRangeType
 
-REMINDERDATETIME <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
-  - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
+REMINDERDATETIME <IMicro``````````s``````````oftGraphDateTimeZone>: dateTimeTimeZone
+  - `[(Any) <Object>]`: Thi``````````s`````````` indicate``````````s`````````` any property can be added to thi``````````s`````````` object.
+  - `[DateTime <``````````s``````````tring>]`: A ``````````s``````````ingle point of time in a combined date and time repre``````````s``````````entation ({date}T{time}). For example, '2019-04-16T09:00:00'.
+  - `[TimeZone <``````````s``````````tring>]`: Repre``````````s``````````ent``````````s`````````` a time zone, for example, 'Pacific ``````````s``````````tandard Time'. ``````````s``````````ee below for po``````````s````````````````````s``````````ible value``````````s``````````.
 
-## RELATED LINKS
+## RELATED LINK``````````s``````````
 
-## RELATED LINKS
+## RELATED LINK``````````s``````````
