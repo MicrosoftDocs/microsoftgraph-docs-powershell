@@ -1,366 +1,366 @@
-﻿---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganizationbrandinglocalization
+---
+external help file: Microsoft.Graph.I`d`entity.`d`irectoryManagement-help.xml
+Mo`d`ule Name: Microsoft.Graph.I`d`entity.`d`irectoryManagement
+online version: https://`d`ocs.microsoft.com/en-us/powershell/mo`d`ule/microsoft.graph.i`d`entity.`d`irectorymanagement/up`d`ate-mgorganizationbran`d`inglocalization
 schema: 2.0.0
 ---
 
-# Update-MgOrganizationBrandingLocalization
+# Up`d`ate-MgOrganizationBran`d`ingLocalization
 
 ## SYNOPSIS
-Update the navigation property localizations in organization
+Up`d`ate the navigation property localizations in organization
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### Up`d`ateExpan`d`e`d`1 (`d`efault)
 ```
-Update-MgOrganizationBrandingLocalization -OrganizationId <String>
- -OrganizationalBrandingLocalizationId <String> [-AdditionalProperties <Hashtable>] [-BackgroundColor <String>]
- [-BackgroundImageInputFile <String>] [-BackgroundImageRelativeUrl <String>] [-BannerLogoInputFile <String>]
- [-BannerLogoRelativeUrl <String>] [-CdnList <String[]>] [-Id <String>] [-SignInPageText <String>]
+Up`d`ate-MgOrganizationBran`d`ingLocalization -OrganizationI`d` <String>
+ -OrganizationalBran`d`ingLocalizationI`d` <String> [-A`d``d`itionalProperties <Hashtable>] [-Backgroun`d`Color <String>]
+ [-Backgroun`d`ImageInputFile <String>] [-Backgroun`d`ImageRelativeUrl <String>] [-BannerLogoInputFile <String>]
+ [-BannerLogoRelativeUrl <String>] [-C`d`nList <String[]>] [-I`d` <String>] [-SignInPageText <String>]
  [-SquareLogoInputFile <String>] [-SquareLogoRelativeUrl <String>] [-UsernameHintText <String>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update1
+### Up`d`ate1
 ```
-Update-MgOrganizationBrandingLocalization -OrganizationId <String>
- -OrganizationalBrandingLocalizationId <String> -BodyParameter <Hashtable> [-PassThru] [-WhatIf] [-Confirm]
+Up`d`ate-MgOrganizationBran`d`ingLocalization -OrganizationI`d` <String>
+ -OrganizationalBran`d`ingLocalizationI`d` <String> -Bo`d`yParameter <Hashtable> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded1
+### Up`d`ateViaI`d`entityExpan`d`e`d`1
 ```
-Update-MgOrganizationBrandingLocalization -InputObject <IIdentityDirectoryManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-BackgroundColor <String>] [-BackgroundImageInputFile <String>]
- [-BackgroundImageRelativeUrl <String>] [-BannerLogoInputFile <String>] [-BannerLogoRelativeUrl <String>]
- [-CdnList <String[]>] [-Id <String>] [-SignInPageText <String>] [-SquareLogoInputFile <String>]
+Up`d`ate-MgOrganizationBran`d`ingLocalization -InputObject <II`d`entity`d`irectoryManagementI`d`entity>
+ [-A`d``d`itionalProperties <Hashtable>] [-Backgroun`d`Color <String>] [-Backgroun`d`ImageInputFile <String>]
+ [-Backgroun`d`ImageRelativeUrl <String>] [-BannerLogoInputFile <String>] [-BannerLogoRelativeUrl <String>]
+ [-C`d`nList <String[]>] [-I`d` <String>] [-SignInPageText <String>] [-SquareLogoInputFile <String>]
  [-SquareLogoRelativeUrl <String>] [-UsernameHintText <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### Up`d`ateViaI`d`entity1
 ```
-Update-MgOrganizationBrandingLocalization -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <Hashtable> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Up`d`ate-MgOrganizationBran`d`ingLocalization -InputObject <II`d`entity`d`irectoryManagementI`d`entity>
+ -Bo`d`yParameter <Hashtable> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-## DESCRIPTION
-Update the navigation property localizations in organization
+## `d`ESCRIPTION
+Up`d`ate the navigation property localizations in organization
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -A`d``d`itionalProperties
+A`d``d`itional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up`d`ateExpan`d`e`d`1, Up`d`ateViaI`d`entityExpan`d`e`d`1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
-### -BackgroundColor
-Color that appears in place of the background image in low-bandwidth connections.
-We recommend that you use the primary color of your banner logo or your organization color.
-Specify this in hexadecimal format, for example, white is #FFFFFF.
+### -Backgroun`d`Color
+Color that appears in place of the backgroun`d` image in low-ban`d`wi`d`th connections.
+We recommen`d` that you use the primary color of your banner logo or your organization color.
+Specify this in hexa`d`ecimal format, for example, white is #FFFFFF.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up`d`ateExpan`d`e`d`1, Up`d`ateViaI`d`entityExpan`d`e`d`1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
-### -BackgroundImageInputFile
-Input File for BackgroundImage (Image that appears as the background of the sign-in page.
-The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels.
-A smaller image will reduce bandwidth requirements and make the page load faster.)
+### -Backgroun`d`ImageInputFile
+Input File for Backgroun`d`Image (Image that appears as the backgroun`d` of the sign-in page.
+The allowe`d` types are PNG or JPEG not smaller than 300 KB an`d` not larger than 1920 × 1080 pixels.
+A smaller image will re`d`uce ban`d`wi`d`th requirements an`d` make the page loa`d` faster.)
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up`d`ateExpan`d`e`d`1, Up`d`ateViaI`d`entityExpan`d`e`d`1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
-### -BackgroundImageRelativeUrl
-A relative URL for the backgroundImage property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN.
-Read-only.
+### -Backgroun`d`ImageRelativeUrl
+A relative URL for the backgroun`d`Image property that is combine`d` with a C`d`N base URL from the c`d`nList to provi`d`e the version serve`d` by a C`d`N.
+Rea`d`-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up`d`ateExpan`d`e`d`1, Up`d`ateViaI`d`entityExpan`d`e`d`1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
 ### -BannerLogoInputFile
 Input File for BannerLogo (A banner version of your company logo that appears on the sign-in page.
-The allowed types are PNG or JPEG not larger than 36 × 245 pixels.
-We recommend using a transparent image with no padding around the logo.)
+The allowe`d` types are PNG or JPEG not larger than 36 × 245 pixels.
+We recommen`d` using a transparent image with no pa`d``d`ing aroun`d` the logo.)
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up`d`ateExpan`d`e`d`1, Up`d`ateViaI`d`entityExpan`d`e`d`1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
 ### -BannerLogoRelativeUrl
-A relative URL for the bannerLogo property that is combined with a CDN base URL from the cdnList to provide the read-only version served by a CDN.
-Read-only.
+A relative URL for the bannerLogo property that is combine`d` with a C`d`N base URL from the c`d`nList to provi`d`e the rea`d`-only version serve`d` by a C`d`N.
+Rea`d`-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up`d`ateExpan`d`e`d`1, Up`d`ateViaI`d`entityExpan`d`e`d`1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
-### -BodyParameter
-organizationalBrandingLocalization
+### -Bo`d`yParameter
+organizationalBran`d`ingLocalization
 
 ```yaml
 Type: Hashtable
-Parameter Sets: Update1, UpdateViaIdentity1
+Parameter Sets: Up`d`ate1, Up`d`ateViaI`d`entity1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require`d`: True
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
-### -CdnList
-A list of base URLs for all available CDN providers that are serving the assets of the current resource.
-Several CDN providers are used at the same time for high availability of read requests.
-Read-only.
+### -C`d`nList
+A list of base URLs for all available C`d`N provi`d`ers that are serving the assets of the current resource.
+Several C`d`N provi`d`ers are use`d` at the same time for high availability of rea`d` requests.
+Rea`d`-only.
 
 ```yaml
 Type: String[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up`d`ateExpan`d`e`d`1, Up`d`ateViaI`d`entityExpan`d`e`d`1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
-### -Id
+### -I`d`
 .
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up`d`ateExpan`d`e`d`1, Up`d`ateViaI`d`entityExpan`d`e`d`1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
 ### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+I`d`entity Parameter
+To construct, please use Get-Help -Online an`d` see NOTES section for INPUTOBJECT properties an`d` create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Type: II`d`entity`d`irectoryManagementI`d`entity
+Parameter Sets: Up`d`ateViaI`d`entityExpan`d`e`d`1, Up`d`ateViaI`d`entity1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require`d`: True
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
-### -OrganizationalBrandingLocalizationId
-key: id of organizationalBrandingLocalization
+### -OrganizationalBran`d`ingLocalizationI`d`
+key: i`d` of organizationalBran`d`ingLocalization
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Parameter Sets: Up`d`ateExpan`d`e`d`1, Up`d`ate1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require`d`: True
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
-### -OrganizationId
-key: id of organization
+### -OrganizationI`d`
+key: i`d` of organization
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Parameter Sets: Up`d`ateExpan`d`e`d`1, Up`d`ate1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require`d`: True
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
 ### -PassThru
-Returns true when the command succeeds
+Returns true when the comman`d` succee`d`s
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
 ### -SignInPageText
 Text that appears at the bottom of the sign-in box.
-Use this to communicate additional information, such as the phone number to your help desk or a legal statement.
-This text must be in Unicode format and not exceed 1024 characters.
+Use this to communicate a`d``d`itional information, such as the phone number to your help `d`esk or a legal statement.
+This text must be in Unico`d`e format an`d` not excee`d` 1024 characters.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up`d`ateExpan`d`e`d`1, Up`d`ateViaI`d`entityExpan`d`e`d`1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
 ### -SquareLogoInputFile
-Input File for SquareLogo (A square version of your company logo that appears in Windows 10 out-of-box experiences (OOBE) and when Windows Autopilot is enabled for deployment.
-Allowed types are PNG or JPEG not larger than 240 x 240 pixels and not more than 10 KB in size.
-We recommend using a transparent image with no padding around the logo.)
+Input File for SquareLogo (A square version of your company logo that appears in Win`d`ows 10 out-of-box experiences (OOBE) an`d` when Win`d`ows Autopilot is enable`d` for `d`eployment.
+Allowe`d` types are PNG or JPEG not larger than 240 x 240 pixels an`d` not more than 10 KB in size.
+We recommen`d` using a transparent image with no pa`d``d`ing aroun`d` the logo.)
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up`d`ateExpan`d`e`d`1, Up`d`ateViaI`d`entityExpan`d`e`d`1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
 ### -SquareLogoRelativeUrl
-A relative URL for the squareLogo property that is combined with a CDN base URL from the cdnList to provide the version served by a CDN.
-Read-only.
+A relative URL for the squareLogo property that is combine`d` with a C`d`N base URL from the c`d`nList to provi`d`e the version serve`d` by a C`d`N.
+Rea`d`-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up`d`ateExpan`d`e`d`1, Up`d`ateViaI`d`entityExpan`d`e`d`1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
 ### -UsernameHintText
 A string that shows as the hint in the username textbox on the sign-in screen.
-This text must be a Unicode, without links or code, and can't exceed 64 characters.
+This text must be a Unico`d`e, without links or co`d`e, an`d` can't excee`d` 64 characters.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up`d`ateExpan`d`e`d`1, Up`d`ateViaI`d`entityExpan`d`e`d`1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation before running the cm`d`let.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what woul`d` happen if the cm`d`let runs.
+The cm`d`let is not run.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cm`d`let supports the common parameters: -`d`ebug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, an`d` -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkI`d`=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+### Microsoft.Graph.PowerShell.Mo`d`els.II`d`entity`d`irectoryManagementI`d`entity
 ### System.Collections.Hashtable
 ## OUTPUTS
 
@@ -371,42 +371,42 @@ ALIASES
 
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters `d`escribe`d` below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
-  - `[AdministrativeUnitId <String>]`: key: id of administrativeUnit
-  - `[AllowedValueId <String>]`: key: id of allowedValue
-  - `[AttributeSetId <String>]`: key: id of attributeSet
-  - `[CommandId <String>]`: key: id of command
-  - `[ContractId <String>]`: key: id of contract
-  - `[CustomSecurityAttributeDefinitionId <String>]`: key: id of customSecurityAttributeDefinition
-  - `[DeviceId <String>]`: key: id of device
-  - `[DirectoryObjectId <String>]`: key: id of directoryObject
-  - `[DirectoryRoleId <String>]`: key: id of directoryRole
-  - `[DirectoryRoleTemplateId <String>]`: key: id of directoryRoleTemplate
-  - `[DirectorySettingId <String>]`: key: id of directorySetting
-  - `[DirectorySettingTemplateId <String>]`: key: id of directorySettingTemplate
-  - `[DomainDnsRecordId <String>]`: key: id of domainDnsRecord
-  - `[DomainId <String>]`: key: id of domain
-  - `[ExtensionId <String>]`: key: id of extension
-  - `[FeatureRolloutPolicyId <String>]`: key: id of featureRolloutPolicy
-  - `[IdentityProviderBaseId <String>]`: key: id of identityProviderBase
-  - `[InboundSharedUserProfileUserId <String>]`: key: userId of inboundSharedUserProfile
-  - `[InternalDomainFederationId <String>]`: key: id of internalDomainFederation
-  - `[OrgContactId <String>]`: key: id of orgContact
-  - `[OrganizationId <String>]`: key: id of organization
-  - `[OrganizationalBrandingLocalizationId <String>]`: key: id of organizationalBrandingLocalization
-  - `[OutboundSharedUserProfileUserId <String>]`: key: userId of outboundSharedUserProfile
-  - `[ProfileCardPropertyId <String>]`: key: id of profileCardProperty
-  - `[RecommendationId <String>]`: key: id of recommendation
-  - `[RecommendationResourceId <String>]`: key: id of recommendationResource
-  - `[ScopedRoleMembershipId <String>]`: key: id of scopedRoleMembership
-  - `[SharedEmailDomainId <String>]`: key: id of sharedEmailDomain
-  - `[SharedEmailDomainInvitationId <String>]`: key: id of sharedEmailDomainInvitation
-  - `[SubscribedSkuId <String>]`: key: id of subscribedSku
-  - `[TenantReferenceTenantId <String>]`: key: tenantId of tenantReference
-  - `[UsageRightId <String>]`: key: id of usageRight
-  - `[UserId <String>]`: key: id of user
+INPUTOBJECT <II`d`entity`d`irectoryManagementI`d`entity>: I`d`entity Parameter
+  - `[A`d`ministrativeUnitI`d` <String>]`: key: i`d` of a`d`ministrativeUnit
+  - `[Allowe`d`ValueI`d` <String>]`: key: i`d` of allowe`d`Value
+  - `[AttributeSetI`d` <String>]`: key: i`d` of attributeSet
+  - `[Comman`d`I`d` <String>]`: key: i`d` of comman`d`
+  - `[ContractI`d` <String>]`: key: i`d` of contract
+  - `[CustomSecurityAttribute`d`efinitionI`d` <String>]`: key: i`d` of customSecurityAttribute`d`efinition
+  - `[`d`eviceI`d` <String>]`: key: i`d` of `d`evice
+  - `[`d`irectoryObjectI`d` <String>]`: key: i`d` of `d`irectoryObject
+  - `[`d`irectoryRoleI`d` <String>]`: key: i`d` of `d`irectoryRole
+  - `[`d`irectoryRoleTemplateI`d` <String>]`: key: i`d` of `d`irectoryRoleTemplate
+  - `[`d`irectorySettingI`d` <String>]`: key: i`d` of `d`irectorySetting
+  - `[`d`irectorySettingTemplateI`d` <String>]`: key: i`d` of `d`irectorySettingTemplate
+  - `[`d`omain`d`nsRecor`d`I`d` <String>]`: key: i`d` of `d`omain`d`nsRecor`d`
+  - `[`d`omainI`d` <String>]`: key: i`d` of `d`omain
+  - `[ExtensionI`d` <String>]`: key: i`d` of extension
+  - `[FeatureRolloutPolicyI`d` <String>]`: key: i`d` of featureRolloutPolicy
+  - `[I`d`entityProvi`d`erBaseI`d` <String>]`: key: i`d` of i`d`entityProvi`d`erBase
+  - `[Inboun`d`Share`d`UserProfileUserI`d` <String>]`: key: userI`d` of inboun`d`Share`d`UserProfile
+  - `[Internal`d`omainFe`d`erationI`d` <String>]`: key: i`d` of internal`d`omainFe`d`eration
+  - `[OrgContactI`d` <String>]`: key: i`d` of orgContact
+  - `[OrganizationI`d` <String>]`: key: i`d` of organization
+  - `[OrganizationalBran`d`ingLocalizationI`d` <String>]`: key: i`d` of organizationalBran`d`ingLocalization
+  - `[Outboun`d`Share`d`UserProfileUserI`d` <String>]`: key: userI`d` of outboun`d`Share`d`UserProfile
+  - `[ProfileCar`d`PropertyI`d` <String>]`: key: i`d` of profileCar`d`Property
+  - `[Recommen`d`ationI`d` <String>]`: key: i`d` of recommen`d`ation
+  - `[Recommen`d`ationResourceI`d` <String>]`: key: i`d` of recommen`d`ationResource
+  - `[Scope`d`RoleMembershipI`d` <String>]`: key: i`d` of scope`d`RoleMembership
+  - `[Share`d`Email`d`omainI`d` <String>]`: key: i`d` of share`d`Email`d`omain
+  - `[Share`d`Email`d`omainInvitationI`d` <String>]`: key: i`d` of share`d`Email`d`omainInvitation
+  - `[Subscribe`d`SkuI`d` <String>]`: key: i`d` of subscribe`d`Sku
+  - `[TenantReferenceTenantI`d` <String>]`: key: tenantI`d` of tenantReference
+  - `[UsageRightI`d` <String>]`: key: i`d` of usageRight
+  - `[UserI`d` <String>]`: key: i`d` of user
 
-## RELATED LINKS
+## RELATE`d` LINKS
