@@ -1,266 +1,266 @@
-﻿---
-external help file: Microsoft.Graph.CrossDeviceExperiences-help.xml
-Module Name: Microsoft.Graph.CrossDeviceExperiences
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences/get-mguseractivity
+---
+exte`r`nal help file: Mic`r`osoft.G`r`aph.C`r`ossDeviceExpe`r`iences-help.xml
+Module Name: Mic`r`osoft.G`r`aph.C`r`ossDeviceExpe`r`iences
+online ve`r`sion: https://docs.mic`r`osoft.com/en-us/powe`r`shell/module/mic`r`osoft.g`r`aph.c`r`ossdeviceexpe`r`iences/get-mguse`r`activity
 schema: 2.0.0
 ---
 
-# Get-MgUserActivity
+# Get-MgUse`r`Activity
 
 ## SYNOPSIS
-The user's activities across devices.
-Read-only.
+The use`r`'s activities ac`r`oss devices.
+`r`ead-only.
 Nullable.
 
 ## SYNTAX
 
 ### List1 (Default)
 ```
-Get-MgUserActivity -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+Get-MgUse`r`Activity -Use`r`Id <St`r`ing> [-ExpandP`r`ope`r`ty <St`r`ing[]>] [-P`r`ope`r`ty <St`r`ing[]>] [-Filte`r` <St`r`ing>]
+ [-Sea`r`ch <St`r`ing>] [-Skip <Int32>] [-So`r`t <St`r`ing[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
+ [-CountVa`r`iable <St`r`ing>] [<CommonPa`r`amete`r`s>]
 ```
 
 ### Get1
 ```
-Get-MgUserActivity -UserActivityId <String> -UserId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgUse`r`Activity -Use`r`ActivityId <St`r`ing> -Use`r`Id <St`r`ing> [-ExpandP`r`ope`r`ty <St`r`ing[]>]
+ [-P`r`ope`r`ty <St`r`ing[]>] [<CommonPa`r`amete`r`s>]
 ```
 
 ### GetViaIdentity1
 ```
-Get-MgUserActivity -InputObject <ICrossDeviceExperiencesIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgUse`r`Activity -InputObject <IC`r`ossDeviceExpe`r`iencesIdentity> [-ExpandP`r`ope`r`ty <St`r`ing[]>]
+ [-P`r`ope`r`ty <St`r`ing[]>] [<CommonPa`r`amete`r`s>]
 ```
 
-## DESCRIPTION
-The user's activities across devices.
-Read-only.
+## DESC`r`IPTION
+The use`r`'s activities ac`r`oss devices.
+`r`ead-only.
 Nullable.
 
 ## EXAMPLES
 
-## PARAMETERS
+## PA`r`AMETE`r`S
 
 ### -All
 List all pages.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: List1
+Type: SwitchPa`r`amete`r`
+Pa`r`amete`r` Sets: List1
 Aliases:
 
-Required: False
+`r`equi`r`ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
-### -CountVariable
-Specifies a count of the total number of items in a collection.
-By default, this variable will be set in the global scope.
+### -CountVa`r`iable
+Specifies a count of the total numbe`r` of items in a collection.
+By default, this va`r`iable will be set in the global scope.
 
 ```yaml
-Type: String
-Parameter Sets: List1
+Type: St`r`ing
+Pa`r`amete`r` Sets: List1
 Aliases: CV
 
-Required: False
+`r`equi`r`ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
-### -ExpandProperty
-Expand related entities
+### -ExpandP`r`ope`r`ty
+Expand `r`elated entities
 
 ```yaml
-Type: String[]
-Parameter Sets: (All)
+Type: St`r`ing[]
+Pa`r`amete`r` Sets: (All)
 Aliases: Expand
 
-Required: False
+`r`equi`r`ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
-### -Filter
-Filter items by property values
+### -Filte`r`
+Filte`r` items by p`r`ope`r`ty values
 
 ```yaml
-Type: String
-Parameter Sets: List1
+Type: St`r`ing
+Pa`r`amete`r` Sets: List1
 Aliases:
 
-Required: False
+`r`equi`r`ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
 ### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+Identity Pa`r`amete`r`
+To const`r`uct, please use Get-Help -Online and see NOTES section fo`r` INPUTOBJECT p`r`ope`r`ties and c`r`eate a hash table.
 
 ```yaml
-Type: ICrossDeviceExperiencesIdentity
-Parameter Sets: GetViaIdentity1
+Type: IC`r`ossDeviceExpe`r`iencesIdentity
+Pa`r`amete`r` Sets: GetViaIdentity1
 Aliases:
 
-Required: True
+`r`equi`r`ed: T`r`ue
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept pipeline input: T`r`ue (ByValue)
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
 ### -PageSize
-Sets the page size of results.
+Sets the page size of `r`esults.
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Pa`r`amete`r` Sets: List1
 Aliases:
 
-Required: False
+`r`equi`r`ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
-### -Property
-Select properties to be returned
+### -P`r`ope`r`ty
+Select p`r`ope`r`ties to be `r`etu`r`ned
 
 ```yaml
-Type: String[]
-Parameter Sets: (All)
+Type: St`r`ing[]
+Pa`r`amete`r` Sets: (All)
 Aliases: Select
 
-Required: False
+`r`equi`r`ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
-### -Search
-Search items by search phrases
+### -Sea`r`ch
+Sea`r`ch items by sea`r`ch ph`r`ases
 
 ```yaml
-Type: String
-Parameter Sets: List1
+Type: St`r`ing
+Pa`r`amete`r` Sets: List1
 Aliases:
 
-Required: False
+`r`equi`r`ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
-### -Sort
-Order items by property values
+### -So`r`t
+O`r`de`r` items by p`r`ope`r`ty values
 
 ```yaml
-Type: String[]
-Parameter Sets: List1
-Aliases: OrderBy
+Type: St`r`ing[]
+Pa`r`amete`r` Sets: List1
+Aliases: O`r`de`r`By
 
-Required: False
+`r`equi`r`ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
 ### -Top
-Show only the first n items
+Show only the fi`r`st n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Pa`r`amete`r` Sets: List1
 Aliases: Limit
 
-Required: False
+`r`equi`r`ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
-### -UserActivityId
-key: id of userActivity
+### -Use`r`ActivityId
+key: id of use`r`Activity
 
 ```yaml
-Type: String
-Parameter Sets: Get1
+Type: St`r`ing
+Pa`r`amete`r` Sets: Get1
 Aliases:
 
-Required: True
+`r`equi`r`ed: T`r`ue
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
-### -UserId
-key: id of user
+### -Use`r`Id
+key: id of use`r`
 
 ```yaml
-Type: String
-Parameter Sets: List1, Get1
+Type: St`r`ing
+Pa`r`amete`r` Sets: List1, Get1
 Aliases:
 
-Required: True
+`r`equi`r`ed: T`r`ue
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
 ### -Skip
-Skip the first n items
+Skip the fi`r`st n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Pa`r`amete`r` Sets: List1
 Aliases:
 
-Required: False
+`r`equi`r`ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonPa`r`amete`r`s
+This cmdlet suppo`r`ts the common pa`r`amete`r`s: -Debug, -E`r``r`o`r`Action, -E`r``r`o`r`Va`r`iable, -Info`r`mationAction, -Info`r`mationVa`r`iable, -OutVa`r`iable, -OutBuffe`r`, -PipelineVa`r`iable, -Ve`r`bose, -Wa`r`ningAction, and -Wa`r`ningVa`r`iable. Fo`r` mo`r`e info`r`mation, see [about_CommonPa`r`amete`r`s](http://go.mic`r`osoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICrossDeviceExperiencesIdentity
+### Mic`r`osoft.G`r`aph.Powe`r`Shell.Models.IC`r`ossDeviceExpe`r`iencesIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserActivity
+### Mic`r`osoft.G`r`aph.Powe`r`Shell.Models.IMic`r`osoftG`r`aphUse`r`Activity
 ## NOTES
 
 ALIASES
 
-COMPLEX PARAMETER PROPERTIES
+COMPLEX PA`r`AMETE`r` P`r`OPE`r`TIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To c`r`eate the pa`r`amete`r`s desc`r`ibed below, const`r`uct a hash table containing the app`r`op`r`iate p`r`ope`r`ties. Fo`r` info`r`mation on hash tables, `r`un Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ICrossDeviceExperiencesIdentity>: Identity Parameter
-  - `[ActivityHistoryItemId <String>]`: key: id of activityHistoryItem
-  - `[DeviceId <String>]`: key: id of device
-  - `[UserActivityId <String>]`: key: id of userActivity
-  - `[UserId <String>]`: key: id of user
+INPUTOBJECT <IC`r`ossDeviceExpe`r`iencesIdentity>: Identity Pa`r`amete`r`
+  - `[ActivityHisto`r`yItemId <St`r`ing>]`: key: id of activityHisto`r`yItem
+  - `[DeviceId <St`r`ing>]`: key: id of device
+  - `[Use`r`ActivityId <St`r`ing>]`: key: id of use`r`Activity
+  - `[Use`r`Id <St`r`ing>]`: key: id of use`r`
 
-## RELATED LINKS
+## `r`ELATED LINKS
