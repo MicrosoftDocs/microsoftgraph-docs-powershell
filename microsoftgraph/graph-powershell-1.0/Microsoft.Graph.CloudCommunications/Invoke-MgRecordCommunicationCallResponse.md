@@ -1,311 +1,311 @@
-﻿---
-external help file: Microsoft.Graph.CloudCommunications-help.xml
-Module Name: Microsoft.Graph.CloudCommunications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/invoke-mgrecordcommunicationcallresponse
+---
+externa``l`` he``l``p fi``l``e: Microsoft.Graph.C``l``oudCommunications-he``l``p.xm``l``
+Modu``l``e Name: Microsoft.Graph.C``l``oudCommunications
+on``l``ine version: https://docs.microsoft.com/en-us/powershe``l````l``/modu``l``e/microsoft.graph.c``l``oudcommunications/invoke-mgrecordcommunicationca``l````l``response
 schema: 2.0.0
 ---
 
-# Invoke-MgRecordCommunicationCallResponse
+# Invoke-MgRecordCommunicationCa``l````l``Response
 
 ## SYNOPSIS
 Invoke action recordResponse
 
 ## SYNTAX
 
-### RecordExpanded (Default)
+### RecordExpanded (Defau``l``t)
 ```
-Invoke-MgRecordCommunicationCallResponse -CallId <String> [-AdditionalProperties <Hashtable>] [-BargeInAllowed]
- [-ClientContext <String>] [-InitialSilenceTimeoutInSeconds <Int32>] [-MaxRecordDurationInSeconds <Int32>]
- [-MaxSilenceTimeoutInSeconds <Int32>] [-PlayBeep] [-Prompts <IMicrosoftGraphPrompt[]>] [-StopTones <String[]>]
+Invoke-MgRecordCommunicationCa``l````l``Response -Ca``l````l``Id <String> [-Additiona``l``Properties <Hashtab``l``e>] [-BargeInA``l````l``owed]
+ [-C``l``ientContext <String>] [-Initia``l``Si``l``enceTimeoutInSeconds <Int32>] [-MaxRecordDurationInSeconds <Int32>]
+ [-MaxSi``l``enceTimeoutInSeconds <Int32>] [-P``l``ayBeep] [-Prompts <IMicrosoftGraphPrompt[]>] [-StopTones <String[]>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Record
 ```
-Invoke-MgRecordCommunicationCallResponse -CallId <String>
- -BodyParameter <IPaths14Wb7KqCommunicationsCallsCallIdMicrosoftGraphRecordresponsePostRequestbodyContentApplicationJsonSchema1>
+Invoke-MgRecordCommunicationCa``l````l``Response -Ca``l````l``Id <String>
+ -BodyParameter <IPaths14Wb7KqCommunicationsCa``l````l``sCa``l````l``IdMicrosoftGraphRecordresponsePostRequestbodyContentApp``l``icationJsonSchema1>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RecordViaIdentityExpanded
 ```
-Invoke-MgRecordCommunicationCallResponse -InputObject <ICloudCommunicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-BargeInAllowed] [-ClientContext <String>]
- [-InitialSilenceTimeoutInSeconds <Int32>] [-MaxRecordDurationInSeconds <Int32>]
- [-MaxSilenceTimeoutInSeconds <Int32>] [-PlayBeep] [-Prompts <IMicrosoftGraphPrompt[]>] [-StopTones <String[]>]
+Invoke-MgRecordCommunicationCa``l````l``Response -InputObject <IC``l``oudCommunicationsIdentity>
+ [-Additiona``l``Properties <Hashtab``l``e>] [-BargeInA``l````l``owed] [-C``l``ientContext <String>]
+ [-Initia``l``Si``l``enceTimeoutInSeconds <Int32>] [-MaxRecordDurationInSeconds <Int32>]
+ [-MaxSi``l``enceTimeoutInSeconds <Int32>] [-P``l``ayBeep] [-Prompts <IMicrosoftGraphPrompt[]>] [-StopTones <String[]>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### RecordViaIdentity
 ```
-Invoke-MgRecordCommunicationCallResponse -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <IPaths14Wb7KqCommunicationsCallsCallIdMicrosoftGraphRecordresponsePostRequestbodyContentApplicationJsonSchema1>
+Invoke-MgRecordCommunicationCa``l````l``Response -InputObject <IC``l``oudCommunicationsIdentity>
+ -BodyParameter <IPaths14Wb7KqCommunicationsCa``l````l``sCa``l````l``IdMicrosoftGraphRecordresponsePostRequestbodyContentApp``l``icationJsonSchema1>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action recordResponse
 
-## EXAMPLES
+## EXAMP``l``ES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -Additiona``l``Properties
+Additiona``l`` Parameters
 
-```yaml
-Type: Hashtable
+```yam``l``
+Type: Hashtab``l``e
 Parameter Sets: RecordExpanded, RecordViaIdentityExpanded
-Aliases:
+A``l``iases:
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
-### -BargeInAllowed
+### -BargeInA``l````l``owed
 .
 
-```yaml
+```yam``l``
 Type: SwitchParameter
 Parameter Sets: RecordExpanded, RecordViaIdentityExpanded
-Aliases:
+A``l``iases:
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, p``l``ease use Get-He``l``p -On``l``ine and see NOTES section for BODYPARAMETER properties and create a hash tab``l``e.
 
-```yaml
-Type: IPaths14Wb7KqCommunicationsCallsCallIdMicrosoftGraphRecordresponsePostRequestbodyContentApplicationJsonSchema1
+```yam``l``
+Type: IPaths14Wb7KqCommunicationsCa``l````l``sCa``l````l``IdMicrosoftGraphRecordresponsePostRequestbodyContentApp``l``icationJsonSchema1
 Parameter Sets: Record, RecordViaIdentity
-Aliases:
+A``l``iases:
 
 Required: True
 Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: True (ByVa``l``ue)
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
-### -CallId
-key: id of call
+### -Ca``l````l``Id
+key: id of ca``l````l``
 
-```yaml
+```yam``l``
 Type: String
 Parameter Sets: RecordExpanded, Record
-Aliases:
+A``l``iases:
 
 Required: True
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
-### -ClientContext
+### -C``l``ientContext
 .
 
-```yaml
+```yam``l``
 Type: String
 Parameter Sets: RecordExpanded, RecordViaIdentityExpanded
-Aliases:
+A``l``iases:
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
-### -InitialSilenceTimeoutInSeconds
+### -Initia``l``Si``l``enceTimeoutInSeconds
 .
 
-```yaml
+```yam``l``
 Type: Int32
 Parameter Sets: RecordExpanded, RecordViaIdentityExpanded
-Aliases:
+A``l``iases:
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, p``l``ease use Get-He``l``p -On``l``ine and see NOTES section for INPUTOBJECT properties and create a hash tab``l``e.
 
-```yaml
-Type: ICloudCommunicationsIdentity
+```yam``l``
+Type: IC``l``oudCommunicationsIdentity
 Parameter Sets: RecordViaIdentityExpanded, RecordViaIdentity
-Aliases:
+A``l``iases:
 
 Required: True
 Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: True (ByVa``l``ue)
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### -MaxRecordDurationInSeconds
 .
 
-```yaml
+```yam``l``
 Type: Int32
 Parameter Sets: RecordExpanded, RecordViaIdentityExpanded
-Aliases:
+A``l``iases:
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
-### -MaxSilenceTimeoutInSeconds
+### -MaxSi``l``enceTimeoutInSeconds
 .
 
-```yaml
+```yam``l``
 Type: Int32
 Parameter Sets: RecordExpanded, RecordViaIdentityExpanded
-Aliases:
+A``l``iases:
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
-### -PlayBeep
+### -P``l``ayBeep
 .
 
-```yaml
+```yam``l``
 Type: SwitchParameter
 Parameter Sets: RecordExpanded, RecordViaIdentityExpanded
-Aliases:
+A``l``iases:
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### -Prompts
 .
 
-```yaml
+```yam``l``
 Type: IMicrosoftGraphPrompt[]
 Parameter Sets: RecordExpanded, RecordViaIdentityExpanded
-Aliases:
+A``l``iases:
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### -StopTones
 .
 
-```yaml
+```yam``l``
 Type: String[]
 Parameter Sets: RecordExpanded, RecordViaIdentityExpanded
-Aliases:
+A``l``iases:
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation before running the cmd``l``et.
 
-```yaml
+```yam``l``
 Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Parameter Sets: (A``l````l``)
+A``l``iases: cf
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what wou``l``d happen if the cmd``l``et runs.
+The cmd``l``et is not run.
 
-```yaml
+```yam``l``
 Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Parameter Sets: (A``l````l``)
+A``l``iases: wi
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmd``l``et supports the common parameters: -Debug, -ErrorAction, -ErrorVariab``l``e, -InformationAction, -InformationVariab``l``e, -OutVariab``l``e, -OutBuffer, -Pipe``l``ineVariab``l``e, -Verbose, -WarningAction, and -WarningVariab``l``e. For more information, see [about_CommonParameters](http://go.microsoft.com/fw``l``ink/?``l``inkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths14Wb7KqCommunicationsCallsCallIdMicrosoftGraphRecordresponsePostRequestbodyContentApplicationJsonSchema1
+### Microsoft.Graph.PowerShe``l````l``.Mode``l``s.IC``l``oudCommunicationsIdentity
+### Microsoft.Graph.PowerShe``l````l``.Mode``l``s.IPaths14Wb7KqCommunicationsCa``l````l``sCa``l````l``IdMicrosoftGraphRecordresponsePostRequestbodyContentApp``l``icationJsonSchema1
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRecordOperation
+### Microsoft.Graph.PowerShe``l````l``.Mode``l``s.IMicrosoftGraphRecordOperation
 ## NOTES
 
-ALIASES
+A``l``IASES
 
-COMPLEX PARAMETER PROPERTIES
+COMP``l``EX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described be``l``ow, construct a hash tab``l``e containing the appropriate properties. For information on hash tab``l``es, run Get-He``l``p about_Hash_Tab``l``es.
 
 
-BODYPARAMETER <IPaths14Wb7KqCommunicationsCallsCallIdMicrosoftGraphRecordresponsePostRequestbodyContentApplicationJsonSchema1>: .
+BODYPARAMETER <IPaths14Wb7KqCommunicationsCa``l````l``sCa``l````l``IdMicrosoftGraphRecordresponsePostRequestbodyContentApp``l``icationJsonSchema1>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[BargeInAllowed <Boolean?>]`: 
-  - `[ClientContext <String>]`: 
-  - `[InitialSilenceTimeoutInSeconds <Int32?>]`: 
+  - `[BargeInA``l````l``owed <Boo``l``ean?>]`: 
+  - `[C``l``ientContext <String>]`: 
+  - `[Initia``l``Si``l``enceTimeoutInSeconds <Int32?>]`: 
   - `[MaxRecordDurationInSeconds <Int32?>]`: 
-  - `[MaxSilenceTimeoutInSeconds <Int32?>]`: 
-  - `[PlayBeep <Boolean?>]`: 
+  - `[MaxSi``l``enceTimeoutInSeconds <Int32?>]`: 
+  - `[P``l``ayBeep <Boo``l``ean?>]`: 
   - `[Prompts <IMicrosoftGraphPrompt[]>]`: 
   - `[StopTones <String[]>]`: 
 
-INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
+INPUTOBJECT <IC``l``oudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
-  - `[CallId <String>]`: key: id of call
-  - `[CallRecordId <String>]`: key: id of callRecord
+  - `[Ca``l````l``Id <String>]`: key: id of ca``l````l``
+  - `[Ca``l````l``RecordId <String>]`: key: id of ca``l````l``Record
   - `[CommsOperationId <String>]`: key: id of commsOperation
   - `[ContentSharingSessionId <String>]`: key: id of contentSharingSession
   - `[MeetingAttendanceReportId <String>]`: key: id of meetingAttendanceReport
   - `[MeetingRegistrationQuestionId <String>]`: key: id of meetingRegistrationQuestion
-  - `[OnlineMeetingId <String>]`: key: id of onlineMeeting
+  - `[On``l``ineMeetingId <String>]`: key: id of on``l``ineMeeting
   - `[ParticipantId <String>]`: key: id of participant
   - `[PresenceId <String>]`: key: id of presence
   - `[SessionId <String>]`: key: id of session
   - `[UserId <String>]`: key: id of user
 
-## RELATED LINKS
+## RE``l``ATED ``l``INKS
