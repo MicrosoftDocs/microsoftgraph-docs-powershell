@@ -1,128 +1,128 @@
-﻿---
-external help file: Microsoft.Graph.CloudCommunications-help.xml
-Module Name: Microsoft.Graph.CloudCommunications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationcallrecord
+---
+externa`l` he`l`p fi`l`e: Microsoft.Graph.C`l`oudCommunications-he`l`p.xm`l`
+Modu`l`e Name: Microsoft.Graph.C`l`oudCommunications
+on`l`ine version: https://docs.microsoft.com/en-us/powershe`l``l`/modu`l`e/microsoft.graph.c`l`oudcommunications/get-mgcommunicationca`l``l`record
 schema: 2.0.0
 ---
 
-# Get-MgCommunicationCallRecord
+# Get-MgCommunicationCa`l``l`Record
 
 ## SYNOPSIS
-Get callRecords from communications
+Get ca`l``l`Records from communications
 
 ## SYNTAX
 
-### Get1 (Default)
+### Get1 (Defau`l`t)
 ```
-Get-MgCommunicationCallRecord -CallRecordId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgCommunicationCa`l``l`Record -Ca`l``l`RecordId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
-Get-MgCommunicationCallRecord -InputObject <ICloudCommunicationsIdentity> [-ExpandProperty <String[]>]
+Get-MgCommunicationCa`l``l`Record -InputObject <IC`l`oudCommunicationsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get callRecords from communications
+Get ca`l``l`Records from communications
 
-## EXAMPLES
+## EXAMP`l`ES
 
 ## PARAMETERS
 
-### -CallRecordId
-key: id of callRecord
+### -Ca`l``l`RecordId
+key: id of ca`l``l`Record
 
-```yaml
+```yam`l`
 Type: String
 Parameter Sets: Get1
-Aliases:
+A`l`iases:
 
 Required: True
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`l`t va`l`ue: None
+Accept pipe`l`ine input: Fa`l`se
+Accept wi`l`dcard characters: Fa`l`se
 ```
 
 ### -ExpandProperty
-Expand related entities
+Expand re`l`ated entities
 
-```yaml
+```yam`l`
 Type: String[]
-Parameter Sets: (All)
-Aliases: Expand
+Parameter Sets: (A`l``l`)
+A`l`iases: Expand
 
-Required: False
+Required: Fa`l`se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`l`t va`l`ue: None
+Accept pipe`l`ine input: Fa`l`se
+Accept wi`l`dcard characters: Fa`l`se
 ```
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, p`l`ease use Get-He`l`p -On`l`ine and see NOTES section for INPUTOBJECT properties and create a hash tab`l`e.
 
-```yaml
-Type: ICloudCommunicationsIdentity
+```yam`l`
+Type: IC`l`oudCommunicationsIdentity
 Parameter Sets: GetViaIdentity1
-Aliases:
+A`l`iases:
 
 Required: True
 Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Defau`l`t va`l`ue: None
+Accept pipe`l`ine input: True (ByVa`l`ue)
+Accept wi`l`dcard characters: Fa`l`se
 ```
 
 ### -Property
-Select properties to be returned
+Se`l`ect properties to be returned
 
-```yaml
+```yam`l`
 Type: String[]
-Parameter Sets: (All)
-Aliases: Select
+Parameter Sets: (A`l``l`)
+A`l`iases: Se`l`ect
 
-Required: False
+Required: Fa`l`se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`l`t va`l`ue: None
+Accept pipe`l`ine input: Fa`l`se
+Accept wi`l`dcard characters: Fa`l`se
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmd`l`et supports the common parameters: -Debug, -ErrorAction, -ErrorVariab`l`e, -InformationAction, -InformationVariab`l`e, -OutVariab`l`e, -OutBuffer, -Pipe`l`ineVariab`l`e, -Verbose, -WarningAction, and -WarningVariab`l`e. For more information, see [about_CommonParameters](http://go.microsoft.com/fw`l`ink/?`l`inkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+### Microsoft.Graph.PowerShe`l``l`.Mode`l`s.IC`l`oudCommunicationsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCallRecordsCallRecord
+### Microsoft.Graph.PowerShe`l``l`.Mode`l`s.IMicrosoftGraphCa`l``l`RecordsCa`l``l`Record
 ## NOTES
 
-ALIASES
+A`l`IASES
 
-COMPLEX PARAMETER PROPERTIES
+COMP`l`EX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described be`l`ow, construct a hash tab`l`e containing the appropriate properties. For information on hash tab`l`es, run Get-He`l`p about_Hash_Tab`l`es.
 
 
-INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
+INPUTOBJECT <IC`l`oudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
-  - `[CallId <String>]`: key: id of call
-  - `[CallRecordId <String>]`: key: id of callRecord
+  - `[Ca`l``l`Id <String>]`: key: id of ca`l``l`
+  - `[Ca`l``l`RecordId <String>]`: key: id of ca`l``l`Record
   - `[CommsOperationId <String>]`: key: id of commsOperation
   - `[ContentSharingSessionId <String>]`: key: id of contentSharingSession
   - `[MeetingAttendanceReportId <String>]`: key: id of meetingAttendanceReport
   - `[MeetingRegistrationQuestionId <String>]`: key: id of meetingRegistrationQuestion
-  - `[OnlineMeetingId <String>]`: key: id of onlineMeeting
+  - `[On`l`ineMeetingId <String>]`: key: id of on`l`ineMeeting
   - `[ParticipantId <String>]`: key: id of participant
   - `[PresenceId <String>]`: key: id of presence
   - `[SessionId <String>]`: key: id of session
   - `[UserId <String>]`: key: id of user
 
-## RELATED LINKS
+## RE`l`ATED `l`INKS
