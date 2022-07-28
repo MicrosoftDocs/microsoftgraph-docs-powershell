@@ -1,56 +1,56 @@
-﻿---
-external help file: Microsoft.Graph.Notes-help.xml
-Module Name: Microsoft.Graph.Notes
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/new-mggrouponenotepage
+---
+external help file: Micr`````o`````s`````o`````ft.Graph.N`````o`````tes-help.xml
+M`````o`````dule Name: Micr`````o`````s`````o`````ft.Graph.N`````o`````tes
+`````o`````nline versi`````o`````n: https://d`````o`````cs.micr`````o`````s`````o`````ft.c`````o`````m/en-us/p`````o`````wershell/m`````o`````dule/micr`````o`````s`````o`````ft.graph.n`````o`````tes/new-mggr`````o`````up`````o`````nen`````o`````tepage
 schema: 2.0.0
 ---
 
-# New-MgGroupOnenotePage
+# New-MgGr`````o`````up`````o`````nen`````o`````tePage
 
-## SYNOPSIS
-Create new navigation property to pages for groups
+## SYN`````o`````PSIS
+Create new navigati`````o`````n pr`````o`````perty t`````o````` pages f`````o`````r gr`````o`````ups
 
 ## SYNTAX
 
 ### CreateExpanded1 (Default)
 ```
-New-MgGroupOnenotePage -GroupId <String> [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>]
- [-ContentUrl <String>] [-CreatedByAppId <String>] [-CreatedDateTime <DateTime>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-Level <Int32>] [-Links <IMicrosoftGraphPageLinks>] [-Order <Int32>]
- [-ParentNotebook <IMicrosoftGraphNotebook>] [-ParentSection <IMicrosoftGraphOnenoteSection>] [-Self <String>]
- [-Title <String>] [-UserTags <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgGr`````o`````up`````o`````nen`````o`````tePage -Gr`````o`````upId <String> [-Additi`````o`````nalPr`````o`````perties <Hashtable>] [-C`````o`````ntentInputFile <String>]
+ [-C`````o`````ntentUrl <String>] [-CreatedByAppId <String>] [-CreatedDateTime <DateTime>] [-Id <String>]
+ [-LastM`````o`````difiedDateTime <DateTime>] [-Level <Int32>] [-Links <IMicr`````o`````s`````o`````ftGraphPageLinks>] [-`````o`````rder <Int32>]
+ [-ParentN`````o`````teb`````o``````````o`````k <IMicr`````o`````s`````o`````ftGraphN`````o`````teb`````o``````````o`````k>] [-ParentSecti`````o`````n <IMicr`````o`````s`````o`````ftGraph`````o`````nen`````o`````teSecti`````o`````n>] [-Self <String>]
+ [-Title <String>] [-UserTags <String[]>] [-WhatIf] [-C`````o`````nfirm] [<C`````o`````mm`````o`````nParameters>]
 ```
 
 ### Create1
 ```
-New-MgGroupOnenotePage -GroupId <String> -BodyParameter <IMicrosoftGraphOnenotePage> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgGr`````o`````up`````o`````nen`````o`````tePage -Gr`````o`````upId <String> -B`````o`````dyParameter <IMicr`````o`````s`````o`````ftGraph`````o`````nen`````o`````tePage> [-WhatIf] [-C`````o`````nfirm]
+ [<C`````o`````mm`````o`````nParameters>]
 ```
 
 ### CreateViaIdentityExpanded1
 ```
-New-MgGroupOnenotePage -InputObject <INotesIdentity> [-AdditionalProperties <Hashtable>]
- [-ContentInputFile <String>] [-ContentUrl <String>] [-CreatedByAppId <String>] [-CreatedDateTime <DateTime>]
- [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Level <Int32>] [-Links <IMicrosoftGraphPageLinks>]
- [-Order <Int32>] [-ParentNotebook <IMicrosoftGraphNotebook>] [-ParentSection <IMicrosoftGraphOnenoteSection>]
- [-Self <String>] [-Title <String>] [-UserTags <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgGr`````o`````up`````o`````nen`````o`````tePage -Input`````o`````bject <IN`````o`````tesIdentity> [-Additi`````o`````nalPr`````o`````perties <Hashtable>]
+ [-C`````o`````ntentInputFile <String>] [-C`````o`````ntentUrl <String>] [-CreatedByAppId <String>] [-CreatedDateTime <DateTime>]
+ [-Id <String>] [-LastM`````o`````difiedDateTime <DateTime>] [-Level <Int32>] [-Links <IMicr`````o`````s`````o`````ftGraphPageLinks>]
+ [-`````o`````rder <Int32>] [-ParentN`````o`````teb`````o``````````o`````k <IMicr`````o`````s`````o`````ftGraphN`````o`````teb`````o``````````o`````k>] [-ParentSecti`````o`````n <IMicr`````o`````s`````o`````ftGraph`````o`````nen`````o`````teSecti`````o`````n>]
+ [-Self <String>] [-Title <String>] [-UserTags <String[]>] [-WhatIf] [-C`````o`````nfirm] [<C`````o`````mm`````o`````nParameters>]
 ```
 
 ### CreateViaIdentity1
 ```
-New-MgGroupOnenotePage -InputObject <INotesIdentity> -BodyParameter <IMicrosoftGraphOnenotePage> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgGr`````o`````up`````o`````nen`````o`````tePage -Input`````o`````bject <IN`````o`````tesIdentity> -B`````o`````dyParameter <IMicr`````o`````s`````o`````ftGraph`````o`````nen`````o`````tePage> [-WhatIf]
+ [-C`````o`````nfirm] [<C`````o`````mm`````o`````nParameters>]
 ```
 
-## DESCRIPTION
-Create new navigation property to pages for groups
+## DESCRIPTI`````o`````N
+Create new navigati`````o`````n pr`````o`````perty t`````o````` pages f`````o`````r gr`````o`````ups
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -Additi`````o`````nalPr`````o`````perties
+Additi`````o`````nal Parameters
 
 ```yaml
 Type: Hashtable
@@ -58,30 +58,30 @@ Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P`````o`````siti`````o`````n: Named
+Default value: N`````o`````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
-onenotePage
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -B`````o`````dyParameter
+`````o`````nen`````o`````tePage
+T`````o````` c`````o`````nstruct, please use Get-Help -`````o`````nline and see N`````o`````TES secti`````o`````n f`````o`````r B`````o`````DYPARAMETER pr`````o`````perties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOnenotePage
+Type: IMicr`````o`````s`````o`````ftGraph`````o`````nen`````o`````tePage
 Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
+P`````o`````siti`````o`````n: Named
+Default value: N`````o`````ne
 Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ContentInputFile
-Input File for Content (The page's HTML content.)
+### -C`````o`````ntentInputFile
+Input File f`````o`````r C`````o`````ntent (The page's HTML c`````o`````ntent.)
 
 ```yaml
 Type: String
@@ -89,15 +89,15 @@ Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P`````o`````siti`````o`````n: Named
+Default value: N`````o`````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ContentUrl
-The URL for the page's HTML content.
-Read-only.
+### -C`````o`````ntentUrl
+The URL f`````o`````r the page's HTML c`````o`````ntent.
+Read-`````o`````nly.
 
 ```yaml
 Type: String
@@ -105,15 +105,15 @@ Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P`````o`````siti`````o`````n: Named
+Default value: N`````o`````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -CreatedByAppId
-The unique identifier of the application that created the page.
-Read-only.
+The unique identifier `````o`````f the applicati`````o`````n that created the page.
+Read-`````o`````nly.
 
 ```yaml
 Type: String
@@ -121,17 +121,17 @@ Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P`````o`````siti`````o`````n: Named
+Default value: N`````o`````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
 The date and time when the page was created.
-The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
+The timestamp represents date and time inf`````o`````rmati`````o`````n using IS`````o````` 8601 f`````o`````rmat and is always in UTC time.
+F`````o`````r example, midnight UTC `````o`````n Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-`````o`````nly.
 
 ```yaml
 Type: DateTime
@@ -139,14 +139,14 @@ Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P`````o`````siti`````o`````n: Named
+Default value: N`````o`````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -GroupId
-key: id of group
+### -Gr`````o`````upId
+key: id `````o`````f gr`````o`````up
 
 ```yaml
 Type: String
@@ -154,8 +154,8 @@ Parameter Sets: CreateExpanded1, Create1
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
+P`````o`````siti`````o`````n: Named
+Default value: N`````o`````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -169,33 +169,33 @@ Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P`````o`````siti`````o`````n: Named
+Default value: N`````o`````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -InputObject
+### -Input`````o`````bject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+T`````o````` c`````o`````nstruct, please use Get-Help -`````o`````nline and see N`````o`````TES secti`````o`````n f`````o`````r INPUT`````o`````BJECT pr`````o`````perties and create a hash table.
 
 ```yaml
-Type: INotesIdentity
+Type: IN`````o`````tesIdentity
 Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
+P`````o`````siti`````o`````n: Named
+Default value: N`````o`````ne
 Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -LastModifiedDateTime
-The date and time when the page was last modified.
-The timestamp represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-Read-only.
+### -LastM`````o`````difiedDateTime
+The date and time when the page was last m`````o`````dified.
+The timestamp represents date and time inf`````o`````rmati`````o`````n using IS`````o````` 8601 f`````o`````rmat and is always in UTC time.
+F`````o`````r example, midnight UTC `````o`````n Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Read-`````o`````nly.
 
 ```yaml
 Type: DateTime
@@ -203,15 +203,15 @@ Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P`````o`````siti`````o`````n: Named
+Default value: N`````o`````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -Level
-The indentation level of the page.
-Read-only.
+The indentati`````o`````n level `````o`````f the page.
+Read-`````o`````nly.
 
 ```yaml
 Type: Int32
@@ -219,31 +219,31 @@ Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P`````o`````siti`````o`````n: Named
+Default value: N`````o`````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -Links
 pageLinks
-To construct, please use Get-Help -Online and see NOTES section for LINKS properties and create a hash table.
+T`````o````` c`````o`````nstruct, please use Get-Help -`````o`````nline and see N`````o`````TES secti`````o`````n f`````o`````r LINKS pr`````o`````perties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPageLinks
+Type: IMicr`````o`````s`````o`````ftGraphPageLinks
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P`````o`````siti`````o`````n: Named
+Default value: N`````o`````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Order
-The order of the page within its parent section.
-Read-only.
+### -`````o`````rder
+The `````o`````rder `````o`````f the page within its parent secti`````o`````n.
+Read-`````o`````nly.
 
 ```yaml
 Type: Int32
@@ -251,47 +251,47 @@ Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P`````o`````siti`````o`````n: Named
+Default value: N`````o`````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ParentNotebook
-notebook
-To construct, please use Get-Help -Online and see NOTES section for PARENTNOTEBOOK properties and create a hash table.
+### -ParentN`````o`````teb`````o``````````o`````k
+n`````o`````teb`````o``````````o`````k
+T`````o````` c`````o`````nstruct, please use Get-Help -`````o`````nline and see N`````o`````TES secti`````o`````n f`````o`````r PARENTN`````o`````TEB`````o``````````o`````K pr`````o`````perties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphNotebook
+Type: IMicr`````o`````s`````o`````ftGraphN`````o`````teb`````o``````````o`````k
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P`````o`````siti`````o`````n: Named
+Default value: N`````o`````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ParentSection
-onenoteSection
-To construct, please use Get-Help -Online and see NOTES section for PARENTSECTION properties and create a hash table.
+### -ParentSecti`````o`````n
+`````o`````nen`````o`````teSecti`````o`````n
+T`````o````` c`````o`````nstruct, please use Get-Help -`````o`````nline and see N`````o`````TES secti`````o`````n f`````o`````r PARENTSECTI`````o`````N pr`````o`````perties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOnenoteSection
+Type: IMicr`````o`````s`````o`````ftGraph`````o`````nen`````o`````teSecti`````o`````n
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P`````o`````siti`````o`````n: Named
+Default value: N`````o`````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -Self
-The endpoint where you can get details about the page.
-Read-only.
+The endp`````o`````int where y`````o`````u can get details ab`````o`````ut the page.
+Read-`````o`````nly.
 
 ```yaml
 Type: String
@@ -299,14 +299,14 @@ Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P`````o`````siti`````o`````n: Named
+Default value: N`````o`````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -Title
-The title of the page.
+The title `````o`````f the page.
 
 ```yaml
 Type: String
@@ -314,8 +314,8 @@ Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P`````o`````siti`````o`````n: Named
+Default value: N`````o`````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -329,14 +329,14 @@ Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
+P`````o`````siti`````o`````n: Named
+Default value: N`````o`````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
+### -C`````o`````nfirm
+Pr`````o`````mpts y`````o`````u f`````o`````r c`````o`````nfirmati`````o`````n bef`````o`````re running the cmdlet.
 
 ```yaml
 Type: SwitchParameter
@@ -344,15 +344,15 @@ Parameter Sets: (All)
 Aliases: cf
 
 Required: False
-Position: Named
-Default value: None
+P`````o`````siti`````o`````n: Named
+Default value: N`````o`````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Sh`````o`````ws what w`````o`````uld happen if the cmdlet runs.
+The cmdlet is n`````o`````t run.
 
 ```yaml
 Type: SwitchParameter
@@ -360,278 +360,278 @@ Parameter Sets: (All)
 Aliases: wi
 
 Required: False
-Position: Named
-Default value: None
+P`````o`````siti`````o`````n: Named
+Default value: N`````o`````ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### C`````o`````mm`````o`````nParameters
+This cmdlet supp`````o`````rts the c`````o`````mm`````o`````n parameters: -Debug, -Err`````o`````rActi`````o`````n, -Err`````o`````rVariable, -Inf`````o`````rmati`````o`````nActi`````o`````n, -Inf`````o`````rmati`````o`````nVariable, -`````o`````utVariable, -`````o`````utBuffer, -PipelineVariable, -Verb`````o`````se, -WarningActi`````o`````n, and -WarningVariable. F`````o`````r m`````o`````re inf`````o`````rmati`````o`````n, see [ab`````o`````ut_C`````o`````mm`````o`````nParameters](http://g`````o`````.micr`````o`````s`````o`````ft.c`````o`````m/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnenotePage
-### Microsoft.Graph.PowerShell.Models.INotesIdentity
-## OUTPUTS
+### Micr`````o`````s`````o`````ft.Graph.P`````o`````werShell.M`````o`````dels.IMicr`````o`````s`````o`````ftGraph`````o`````nen`````o`````tePage
+### Micr`````o`````s`````o`````ft.Graph.P`````o`````werShell.M`````o`````dels.IN`````o`````tesIdentity
+## `````o`````UTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnenotePage
-## NOTES
+### Micr`````o`````s`````o`````ft.Graph.P`````o`````werShell.M`````o`````dels.IMicr`````o`````s`````o`````ftGraph`````o`````nen`````o`````tePage
+## N`````o`````TES
 
 ALIASES
 
-COMPLEX PARAMETER PROPERTIES
+C`````o`````MPLEX PARAMETER PR`````o`````PERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+T`````o````` create the parameters described bel`````o`````w, c`````o`````nstruct a hash table c`````o`````ntaining the appr`````o`````priate pr`````o`````perties. F`````o`````r inf`````o`````rmati`````o`````n `````o`````n hash tables, run Get-Help ab`````o`````ut_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphOnenotePage1>: onenotePage
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-  - `[Self <String>]`: The endpoint where you can get details about the page. Read-only.
+B`````o`````DYPARAMETER <IMicr`````o`````s`````o`````ftGraph`````o`````nen`````o`````tePage1>: `````o`````nen`````o`````tePage
+  - `[(Any) <`````o`````bject>]`: This indicates any pr`````o`````perty can be added t`````o````` this `````o`````bject.
+  - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created. The timestamp represents date and time inf`````o`````rmati`````o`````n using IS`````o````` 8601 f`````o`````rmat and is always in UTC time. F`````o`````r example, midnight UTC `````o`````n Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-`````o`````nly.
+  - `[Self <String>]`: The endp`````o`````int where y`````o`````u can get details ab`````o`````ut the page. Read-`````o`````nly.
   - `[Id <String>]`: 
-  - `[Content <Byte[]>]`: The page's HTML content.
-  - `[ContentUrl <String>]`: The URL for the page's HTML content.  Read-only.
-  - `[CreatedByAppId <String>]`: The unique identifier of the application that created the page. Read-only.
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time when the page was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-  - `[Level <Int32?>]`: The indentation level of the page. Read-only.
-  - `[Links <IMicrosoftGraphPageLinks>]`: pageLinks
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[OneNoteClientUrl <IMicrosoftGraphExternalLink>]`: externalLink
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Href <String>]`: The url of the link.
-    - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
-  - `[Order <Int32?>]`: The order of the page within its parent section. Read-only.
-  - `[ParentNotebook <IMicrosoftGraphNotebook>]`: notebook
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Application <IMicrosoftGraphIdentity>]`: identity
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-      - `[Device <IMicrosoftGraphIdentity>]`: identity
-      - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[DisplayName <String>]`: The name of the notebook.
-    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[LastModifiedDateTime <DateTime?>]`: The date and time when the notebook was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-    - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-    - `[Self <String>]`: The endpoint where you can get details about the page. Read-only.
+  - `[C`````o`````ntent <Byte[]>]`: The page's HTML c`````o`````ntent.
+  - `[C`````o`````ntentUrl <String>]`: The URL f`````o`````r the page's HTML c`````o`````ntent.  Read-`````o`````nly.
+  - `[CreatedByAppId <String>]`: The unique identifier `````o`````f the applicati`````o`````n that created the page. Read-`````o`````nly.
+  - `[LastM`````o`````difiedDateTime <DateTime?>]`: The date and time when the page was last m`````o`````dified. The timestamp represents date and time inf`````o`````rmati`````o`````n using IS`````o````` 8601 f`````o`````rmat and is always in UTC time. F`````o`````r example, midnight UTC `````o`````n Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-`````o`````nly.
+  - `[Level <Int32?>]`: The indentati`````o`````n level `````o`````f the page. Read-`````o`````nly.
+  - `[Links <IMicr`````o`````s`````o`````ftGraphPageLinks>]`: pageLinks
+    - `[(Any) <`````o`````bject>]`: This indicates any pr`````o`````perty can be added t`````o````` this `````o`````bject.
+    - `[`````o`````neN`````o`````teClientUrl <IMicr`````o`````s`````o`````ftGraphExternalLink>]`: externalLink
+      - `[(Any) <`````o`````bject>]`: This indicates any pr`````o`````perty can be added t`````o````` this `````o`````bject.
+      - `[Href <String>]`: The url `````o`````f the link.
+    - `[`````o`````neN`````o`````teWebUrl <IMicr`````o`````s`````o`````ftGraphExternalLink>]`: externalLink
+  - `[`````o`````rder <Int32?>]`: The `````o`````rder `````o`````f the page within its parent secti`````o`````n. Read-`````o`````nly.
+  - `[ParentN`````o`````teb`````o``````````o`````k <IMicr`````o`````s`````o`````ftGraphN`````o`````teb`````o``````````o`````k>]`: n`````o`````teb`````o``````````o`````k
+    - `[(Any) <`````o`````bject>]`: This indicates any pr`````o`````perty can be added t`````o````` this `````o`````bject.
+    - `[CreatedBy <IMicr`````o`````s`````o`````ftGraphIdentitySet>]`: identitySet
+      - `[(Any) <`````o`````bject>]`: This indicates any pr`````o`````perty can be added t`````o````` this `````o`````bject.
+      - `[Applicati`````o`````n <IMicr`````o`````s`````o`````ftGraphIdentity>]`: identity
+        - `[(Any) <`````o`````bject>]`: This indicates any pr`````o`````perty can be added t`````o````` this `````o`````bject.
+        - `[DisplayName <String>]`: The identity's display name. N`````o`````te that this may n`````o`````t always be available `````o`````r up t`````o````` date. F`````o`````r example, if a user changes their display name, the API may sh`````o`````w the new value in a future resp`````o`````nse, but the items ass`````o`````ciated with the user w`````o`````n't sh`````o`````w up as having changed when using delta.
+        - `[Id <String>]`: Unique identifier f`````o`````r the identity.
+      - `[Device <IMicr`````o`````s`````o`````ftGraphIdentity>]`: identity
+      - `[User <IMicr`````o`````s`````o`````ftGraphIdentity>]`: identity
+    - `[DisplayName <String>]`: The name `````o`````f the n`````o`````teb`````o``````````o`````k.
+    - `[LastM`````o`````difiedBy <IMicr`````o`````s`````o`````ftGraphIdentitySet>]`: identitySet
+    - `[LastM`````o`````difiedDateTime <DateTime?>]`: The date and time when the n`````o`````teb`````o``````````o`````k was last m`````o`````dified. The timestamp represents date and time inf`````o`````rmati`````o`````n using IS`````o````` 8601 f`````o`````rmat and is always in UTC time. F`````o`````r example, midnight UTC `````o`````n Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-`````o`````nly.
+    - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created. The timestamp represents date and time inf`````o`````rmati`````o`````n using IS`````o````` 8601 f`````o`````rmat and is always in UTC time. F`````o`````r example, midnight UTC `````o`````n Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-`````o`````nly.
+    - `[Self <String>]`: The endp`````o`````int where y`````o`````u can get details ab`````o`````ut the page. Read-`````o`````nly.
     - `[Id <String>]`: 
-    - `[IsDefault <Boolean?>]`: Indicates whether this is the user's default notebook. Read-only.
-    - `[IsShared <Boolean?>]`: Indicates whether the notebook is shared. If true, the contents of the notebook can be seen by people other than the owner. Read-only.
-    - `[Links <IMicrosoftGraphNotebookLinks>]`: notebookLinks
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[OneNoteClientUrl <IMicrosoftGraphExternalLink>]`: externalLink
-      - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
-    - `[SectionGroups <IMicrosoftGraphSectionGroup[]>]`: The section groups in the notebook. Read-only. Nullable.
-      - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[DisplayName <String>]`: The name of the notebook.
-      - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[LastModifiedDateTime <DateTime?>]`: The date and time when the notebook was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-      - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-      - `[Self <String>]`: The endpoint where you can get details about the page. Read-only.
+    - `[IsDefault <B`````o``````````o`````lean?>]`: Indicates whether this is the user's default n`````o`````teb`````o``````````o`````k. Read-`````o`````nly.
+    - `[IsShared <B`````o``````````o`````lean?>]`: Indicates whether the n`````o`````teb`````o``````````o`````k is shared. If true, the c`````o`````ntents `````o`````f the n`````o`````teb`````o``````````o`````k can be seen by pe`````o`````ple `````o`````ther than the `````o`````wner. Read-`````o`````nly.
+    - `[Links <IMicr`````o`````s`````o`````ftGraphN`````o`````teb`````o``````````o`````kLinks>]`: n`````o`````teb`````o``````````o`````kLinks
+      - `[(Any) <`````o`````bject>]`: This indicates any pr`````o`````perty can be added t`````o````` this `````o`````bject.
+      - `[`````o`````neN`````o`````teClientUrl <IMicr`````o`````s`````o`````ftGraphExternalLink>]`: externalLink
+      - `[`````o`````neN`````o`````teWebUrl <IMicr`````o`````s`````o`````ftGraphExternalLink>]`: externalLink
+    - `[Secti`````o`````nGr`````o`````ups <IMicr`````o`````s`````o`````ftGraphSecti`````o`````nGr`````o`````up[]>]`: The secti`````o`````n gr`````o`````ups in the n`````o`````teb`````o``````````o`````k. Read-`````o`````nly. Nullable.
+      - `[CreatedBy <IMicr`````o`````s`````o`````ftGraphIdentitySet>]`: identitySet
+      - `[DisplayName <String>]`: The name `````o`````f the n`````o`````teb`````o``````````o`````k.
+      - `[LastM`````o`````difiedBy <IMicr`````o`````s`````o`````ftGraphIdentitySet>]`: identitySet
+      - `[LastM`````o`````difiedDateTime <DateTime?>]`: The date and time when the n`````o`````teb`````o``````````o`````k was last m`````o`````dified. The timestamp represents date and time inf`````o`````rmati`````o`````n using IS`````o````` 8601 f`````o`````rmat and is always in UTC time. F`````o`````r example, midnight UTC `````o`````n Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-`````o`````nly.
+      - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created. The timestamp represents date and time inf`````o`````rmati`````o`````n using IS`````o````` 8601 f`````o`````rmat and is always in UTC time. F`````o`````r example, midnight UTC `````o`````n Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-`````o`````nly.
+      - `[Self <String>]`: The endp`````o`````int where y`````o`````u can get details ab`````o`````ut the page. Read-`````o`````nly.
       - `[Id <String>]`: 
-      - `[ParentNotebook <IMicrosoftGraphNotebook>]`: notebook
-      - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
-      - `[SectionGroups <IMicrosoftGraphSectionGroup[]>]`: The section groups in the section. Read-only. Nullable.
-      - `[SectionGroupsUrl <String>]`: The URL for the sectionGroups navigation property, which returns all the section groups in the section group. Read-only.
-      - `[Sections <IMicrosoftGraphOnenoteSection[]>]`: The sections in the section group. Read-only. Nullable.
-        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[DisplayName <String>]`: The name of the notebook.
-        - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[LastModifiedDateTime <DateTime?>]`: The date and time when the notebook was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-        - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-        - `[Self <String>]`: The endpoint where you can get details about the page. Read-only.
+      - `[ParentN`````o`````teb`````o``````````o`````k <IMicr`````o`````s`````o`````ftGraphN`````o`````teb`````o``````````o`````k>]`: n`````o`````teb`````o``````````o`````k
+      - `[ParentSecti`````o`````nGr`````o`````up <IMicr`````o`````s`````o`````ftGraphSecti`````o`````nGr`````o`````up>]`: secti`````o`````nGr`````o`````up
+      - `[Secti`````o`````nGr`````o`````ups <IMicr`````o`````s`````o`````ftGraphSecti`````o`````nGr`````o`````up[]>]`: The secti`````o`````n gr`````o`````ups in the secti`````o`````n. Read-`````o`````nly. Nullable.
+      - `[Secti`````o`````nGr`````o`````upsUrl <String>]`: The URL f`````o`````r the secti`````o`````nGr`````o`````ups navigati`````o`````n pr`````o`````perty, which returns all the secti`````o`````n gr`````o`````ups in the secti`````o`````n gr`````o`````up. Read-`````o`````nly.
+      - `[Secti`````o`````ns <IMicr`````o`````s`````o`````ftGraph`````o`````nen`````o`````teSecti`````o`````n[]>]`: The secti`````o`````ns in the secti`````o`````n gr`````o`````up. Read-`````o`````nly. Nullable.
+        - `[CreatedBy <IMicr`````o`````s`````o`````ftGraphIdentitySet>]`: identitySet
+        - `[DisplayName <String>]`: The name `````o`````f the n`````o`````teb`````o``````````o`````k.
+        - `[LastM`````o`````difiedBy <IMicr`````o`````s`````o`````ftGraphIdentitySet>]`: identitySet
+        - `[LastM`````o`````difiedDateTime <DateTime?>]`: The date and time when the n`````o`````teb`````o``````````o`````k was last m`````o`````dified. The timestamp represents date and time inf`````o`````rmati`````o`````n using IS`````o````` 8601 f`````o`````rmat and is always in UTC time. F`````o`````r example, midnight UTC `````o`````n Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-`````o`````nly.
+        - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created. The timestamp represents date and time inf`````o`````rmati`````o`````n using IS`````o````` 8601 f`````o`````rmat and is always in UTC time. F`````o`````r example, midnight UTC `````o`````n Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-`````o`````nly.
+        - `[Self <String>]`: The endp`````o`````int where y`````o`````u can get details ab`````o`````ut the page. Read-`````o`````nly.
         - `[Id <String>]`: 
-        - `[IsDefault <Boolean?>]`: Indicates whether this is the user's default section. Read-only.
-        - `[Links <IMicrosoftGraphSectionLinks>]`: sectionLinks
-          - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[OneNoteClientUrl <IMicrosoftGraphExternalLink>]`: externalLink
-          - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
-        - `[Pages <IMicrosoftGraphOnenotePage1[]>]`: The collection of pages in the section.  Read-only. Nullable.
-        - `[PagesUrl <String>]`: The pages endpoint where you can get details for all the pages in the section. Read-only.
-        - `[ParentNotebook <IMicrosoftGraphNotebook>]`: notebook
-        - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
-      - `[SectionsUrl <String>]`: The URL for the sections navigation property, which returns all the sections in the section group. Read-only.
-    - `[SectionGroupsUrl <String>]`: The URL for the sectionGroups navigation property, which returns all the section groups in the notebook. Read-only.
-    - `[Sections <IMicrosoftGraphOnenoteSection[]>]`: The sections in the notebook. Read-only. Nullable.
-    - `[SectionsUrl <String>]`: The URL for the sections navigation property, which returns all the sections in the notebook. Read-only.
-    - `[UserRole <String>]`: onenoteUserRole
-  - `[ParentSection <IMicrosoftGraphOnenoteSection>]`: onenoteSection
-  - `[Title <String>]`: The title of the page.
+        - `[IsDefault <B`````o``````````o`````lean?>]`: Indicates whether this is the user's default secti`````o`````n. Read-`````o`````nly.
+        - `[Links <IMicr`````o`````s`````o`````ftGraphSecti`````o`````nLinks>]`: secti`````o`````nLinks
+          - `[(Any) <`````o`````bject>]`: This indicates any pr`````o`````perty can be added t`````o````` this `````o`````bject.
+          - `[`````o`````neN`````o`````teClientUrl <IMicr`````o`````s`````o`````ftGraphExternalLink>]`: externalLink
+          - `[`````o`````neN`````o`````teWebUrl <IMicr`````o`````s`````o`````ftGraphExternalLink>]`: externalLink
+        - `[Pages <IMicr`````o`````s`````o`````ftGraph`````o`````nen`````o`````tePage1[]>]`: The c`````o`````llecti`````o`````n `````o`````f pages in the secti`````o`````n.  Read-`````o`````nly. Nullable.
+        - `[PagesUrl <String>]`: The pages endp`````o`````int where y`````o`````u can get details f`````o`````r all the pages in the secti`````o`````n. Read-`````o`````nly.
+        - `[ParentN`````o`````teb`````o``````````o`````k <IMicr`````o`````s`````o`````ftGraphN`````o`````teb`````o``````````o`````k>]`: n`````o`````teb`````o``````````o`````k
+        - `[ParentSecti`````o`````nGr`````o`````up <IMicr`````o`````s`````o`````ftGraphSecti`````o`````nGr`````o`````up>]`: secti`````o`````nGr`````o`````up
+      - `[Secti`````o`````nsUrl <String>]`: The URL f`````o`````r the secti`````o`````ns navigati`````o`````n pr`````o`````perty, which returns all the secti`````o`````ns in the secti`````o`````n gr`````o`````up. Read-`````o`````nly.
+    - `[Secti`````o`````nGr`````o`````upsUrl <String>]`: The URL f`````o`````r the secti`````o`````nGr`````o`````ups navigati`````o`````n pr`````o`````perty, which returns all the secti`````o`````n gr`````o`````ups in the n`````o`````teb`````o``````````o`````k. Read-`````o`````nly.
+    - `[Secti`````o`````ns <IMicr`````o`````s`````o`````ftGraph`````o`````nen`````o`````teSecti`````o`````n[]>]`: The secti`````o`````ns in the n`````o`````teb`````o``````````o`````k. Read-`````o`````nly. Nullable.
+    - `[Secti`````o`````nsUrl <String>]`: The URL f`````o`````r the secti`````o`````ns navigati`````o`````n pr`````o`````perty, which returns all the secti`````o`````ns in the n`````o`````teb`````o``````````o`````k. Read-`````o`````nly.
+    - `[UserR`````o`````le <String>]`: `````o`````nen`````o`````teUserR`````o`````le
+  - `[ParentSecti`````o`````n <IMicr`````o`````s`````o`````ftGraph`````o`````nen`````o`````teSecti`````o`````n>]`: `````o`````nen`````o`````teSecti`````o`````n
+  - `[Title <String>]`: The title `````o`````f the page.
   - `[UserTags <String[]>]`: 
 
-INPUTOBJECT <INotesIdentity>: Identity Parameter
-  - `[GroupId <String>]`: key: id of group
-  - `[NotebookId <String>]`: key: id of notebook
-  - `[OnenoteOperationId <String>]`: key: id of onenoteOperation
-  - `[OnenotePageId <String>]`: key: id of onenotePage
-  - `[OnenoteResourceId <String>]`: key: id of onenoteResource
-  - `[OnenoteSectionId <String>]`: key: id of onenoteSection
-  - `[SectionGroupId <String>]`: key: id of sectionGroup
-  - `[SiteId <String>]`: key: id of site
-  - `[UserId <String>]`: key: id of user
+INPUT`````o`````BJECT <IN`````o`````tesIdentity>: Identity Parameter
+  - `[Gr`````o`````upId <String>]`: key: id `````o`````f gr`````o`````up
+  - `[N`````o`````teb`````o``````````o`````kId <String>]`: key: id `````o`````f n`````o`````teb`````o``````````o`````k
+  - `[`````o`````nen`````o`````te`````o`````perati`````o`````nId <String>]`: key: id `````o`````f `````o`````nen`````o`````te`````o`````perati`````o`````n
+  - `[`````o`````nen`````o`````tePageId <String>]`: key: id `````o`````f `````o`````nen`````o`````tePage
+  - `[`````o`````nen`````o`````teRes`````o`````urceId <String>]`: key: id `````o`````f `````o`````nen`````o`````teRes`````o`````urce
+  - `[`````o`````nen`````o`````teSecti`````o`````nId <String>]`: key: id `````o`````f `````o`````nen`````o`````teSecti`````o`````n
+  - `[Secti`````o`````nGr`````o`````upId <String>]`: key: id `````o`````f secti`````o`````nGr`````o`````up
+  - `[SiteId <String>]`: key: id `````o`````f site
+  - `[UserId <String>]`: key: id `````o`````f user
 
-LINKS <IMicrosoftGraphPageLinks>: pageLinks
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[OneNoteClientUrl <IMicrosoftGraphExternalLink>]`: externalLink
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Href <String>]`: The url of the link.
-  - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
+LINKS <IMicr`````o`````s`````o`````ftGraphPageLinks>: pageLinks
+  - `[(Any) <`````o`````bject>]`: This indicates any pr`````o`````perty can be added t`````o````` this `````o`````bject.
+  - `[`````o`````neN`````o`````teClientUrl <IMicr`````o`````s`````o`````ftGraphExternalLink>]`: externalLink
+    - `[(Any) <`````o`````bject>]`: This indicates any pr`````o`````perty can be added t`````o````` this `````o`````bject.
+    - `[Href <String>]`: The url `````o`````f the link.
+  - `[`````o`````neN`````o`````teWebUrl <IMicr`````o`````s`````o`````ftGraphExternalLink>]`: externalLink
 
-PARENTNOTEBOOK <IMicrosoftGraphNotebook>: notebook
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[DisplayName <String>]`: The name of the notebook.
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time when the notebook was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-  - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-  - `[Self <String>]`: The endpoint where you can get details about the page. Read-only.
+PARENTN`````o`````TEB`````o``````````o`````K <IMicr`````o`````s`````o`````ftGraphN`````o`````teb`````o``````````o`````k>: n`````o`````teb`````o``````````o`````k
+  - `[(Any) <`````o`````bject>]`: This indicates any pr`````o`````perty can be added t`````o````` this `````o`````bject.
+  - `[CreatedBy <IMicr`````o`````s`````o`````ftGraphIdentitySet>]`: identitySet
+    - `[(Any) <`````o`````bject>]`: This indicates any pr`````o`````perty can be added t`````o````` this `````o`````bject.
+    - `[Applicati`````o`````n <IMicr`````o`````s`````o`````ftGraphIdentity>]`: identity
+      - `[(Any) <`````o`````bject>]`: This indicates any pr`````o`````perty can be added t`````o````` this `````o`````bject.
+      - `[DisplayName <String>]`: The identity's display name. N`````o`````te that this may n`````o`````t always be available `````o`````r up t`````o````` date. F`````o`````r example, if a user changes their display name, the API may sh`````o`````w the new value in a future resp`````o`````nse, but the items ass`````o`````ciated with the user w`````o`````n't sh`````o`````w up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier f`````o`````r the identity.
+    - `[Device <IMicr`````o`````s`````o`````ftGraphIdentity>]`: identity
+    - `[User <IMicr`````o`````s`````o`````ftGraphIdentity>]`: identity
+  - `[DisplayName <String>]`: The name `````o`````f the n`````o`````teb`````o``````````o`````k.
+  - `[LastM`````o`````difiedBy <IMicr`````o`````s`````o`````ftGraphIdentitySet>]`: identitySet
+  - `[LastM`````o`````difiedDateTime <DateTime?>]`: The date and time when the n`````o`````teb`````o``````````o`````k was last m`````o`````dified. The timestamp represents date and time inf`````o`````rmati`````o`````n using IS`````o````` 8601 f`````o`````rmat and is always in UTC time. F`````o`````r example, midnight UTC `````o`````n Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-`````o`````nly.
+  - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created. The timestamp represents date and time inf`````o`````rmati`````o`````n using IS`````o````` 8601 f`````o`````rmat and is always in UTC time. F`````o`````r example, midnight UTC `````o`````n Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-`````o`````nly.
+  - `[Self <String>]`: The endp`````o`````int where y`````o`````u can get details ab`````o`````ut the page. Read-`````o`````nly.
   - `[Id <String>]`: 
-  - `[IsDefault <Boolean?>]`: Indicates whether this is the user's default notebook. Read-only.
-  - `[IsShared <Boolean?>]`: Indicates whether the notebook is shared. If true, the contents of the notebook can be seen by people other than the owner. Read-only.
-  - `[Links <IMicrosoftGraphNotebookLinks>]`: notebookLinks
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[OneNoteClientUrl <IMicrosoftGraphExternalLink>]`: externalLink
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Href <String>]`: The url of the link.
-    - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
-  - `[SectionGroups <IMicrosoftGraphSectionGroup[]>]`: The section groups in the notebook. Read-only. Nullable.
-    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[DisplayName <String>]`: The name of the notebook.
-    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[LastModifiedDateTime <DateTime?>]`: The date and time when the notebook was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-    - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-    - `[Self <String>]`: The endpoint where you can get details about the page. Read-only.
+  - `[IsDefault <B`````o``````````o`````lean?>]`: Indicates whether this is the user's default n`````o`````teb`````o``````````o`````k. Read-`````o`````nly.
+  - `[IsShared <B`````o``````````o`````lean?>]`: Indicates whether the n`````o`````teb`````o``````````o`````k is shared. If true, the c`````o`````ntents `````o`````f the n`````o`````teb`````o``````````o`````k can be seen by pe`````o`````ple `````o`````ther than the `````o`````wner. Read-`````o`````nly.
+  - `[Links <IMicr`````o`````s`````o`````ftGraphN`````o`````teb`````o``````````o`````kLinks>]`: n`````o`````teb`````o``````````o`````kLinks
+    - `[(Any) <`````o`````bject>]`: This indicates any pr`````o`````perty can be added t`````o````` this `````o`````bject.
+    - `[`````o`````neN`````o`````teClientUrl <IMicr`````o`````s`````o`````ftGraphExternalLink>]`: externalLink
+      - `[(Any) <`````o`````bject>]`: This indicates any pr`````o`````perty can be added t`````o````` this `````o`````bject.
+      - `[Href <String>]`: The url `````o`````f the link.
+    - `[`````o`````neN`````o`````teWebUrl <IMicr`````o`````s`````o`````ftGraphExternalLink>]`: externalLink
+  - `[Secti`````o`````nGr`````o`````ups <IMicr`````o`````s`````o`````ftGraphSecti`````o`````nGr`````o`````up[]>]`: The secti`````o`````n gr`````o`````ups in the n`````o`````teb`````o``````````o`````k. Read-`````o`````nly. Nullable.
+    - `[CreatedBy <IMicr`````o`````s`````o`````ftGraphIdentitySet>]`: identitySet
+    - `[DisplayName <String>]`: The name `````o`````f the n`````o`````teb`````o``````````o`````k.
+    - `[LastM`````o`````difiedBy <IMicr`````o`````s`````o`````ftGraphIdentitySet>]`: identitySet
+    - `[LastM`````o`````difiedDateTime <DateTime?>]`: The date and time when the n`````o`````teb`````o``````````o`````k was last m`````o`````dified. The timestamp represents date and time inf`````o`````rmati`````o`````n using IS`````o````` 8601 f`````o`````rmat and is always in UTC time. F`````o`````r example, midnight UTC `````o`````n Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-`````o`````nly.
+    - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created. The timestamp represents date and time inf`````o`````rmati`````o`````n using IS`````o````` 8601 f`````o`````rmat and is always in UTC time. F`````o`````r example, midnight UTC `````o`````n Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-`````o`````nly.
+    - `[Self <String>]`: The endp`````o`````int where y`````o`````u can get details ab`````o`````ut the page. Read-`````o`````nly.
     - `[Id <String>]`: 
-    - `[ParentNotebook <IMicrosoftGraphNotebook>]`: notebook
-    - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
-    - `[SectionGroups <IMicrosoftGraphSectionGroup[]>]`: The section groups in the section. Read-only. Nullable.
-    - `[SectionGroupsUrl <String>]`: The URL for the sectionGroups navigation property, which returns all the section groups in the section group. Read-only.
-    - `[Sections <IMicrosoftGraphOnenoteSection[]>]`: The sections in the section group. Read-only. Nullable.
-      - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[DisplayName <String>]`: The name of the notebook.
-      - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[LastModifiedDateTime <DateTime?>]`: The date and time when the notebook was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-      - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-      - `[Self <String>]`: The endpoint where you can get details about the page. Read-only.
+    - `[ParentN`````o`````teb`````o``````````o`````k <IMicr`````o`````s`````o`````ftGraphN`````o`````teb`````o``````````o`````k>]`: n`````o`````teb`````o``````````o`````k
+    - `[ParentSecti`````o`````nGr`````o`````up <IMicr`````o`````s`````o`````ftGraphSecti`````o`````nGr`````o`````up>]`: secti`````o`````nGr`````o`````up
+    - `[Secti`````o`````nGr`````o`````ups <IMicr`````o`````s`````o`````ftGraphSecti`````o`````nGr`````o`````up[]>]`: The secti`````o`````n gr`````o`````ups in the secti`````o`````n. Read-`````o`````nly. Nullable.
+    - `[Secti`````o`````nGr`````o`````upsUrl <String>]`: The URL f`````o`````r the secti`````o`````nGr`````o`````ups navigati`````o`````n pr`````o`````perty, which returns all the secti`````o`````n gr`````o`````ups in the secti`````o`````n gr`````o`````up. Read-`````o`````nly.
+    - `[Secti`````o`````ns <IMicr`````o`````s`````o`````ftGraph`````o`````nen`````o`````teSecti`````o`````n[]>]`: The secti`````o`````ns in the secti`````o`````n gr`````o`````up. Read-`````o`````nly. Nullable.
+      - `[CreatedBy <IMicr`````o`````s`````o`````ftGraphIdentitySet>]`: identitySet
+      - `[DisplayName <String>]`: The name `````o`````f the n`````o`````teb`````o``````````o`````k.
+      - `[LastM`````o`````difiedBy <IMicr`````o`````s`````o`````ftGraphIdentitySet>]`: identitySet
+      - `[LastM`````o`````difiedDateTime <DateTime?>]`: The date and time when the n`````o`````teb`````o``````````o`````k was last m`````o`````dified. The timestamp represents date and time inf`````o`````rmati`````o`````n using IS`````o````` 8601 f`````o`````rmat and is always in UTC time. F`````o`````r example, midnight UTC `````o`````n Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-`````o`````nly.
+      - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created. The timestamp represents date and time inf`````o`````rmati`````o`````n using IS`````o````` 8601 f`````o`````rmat and is always in UTC time. F`````o`````r example, midnight UTC `````o`````n Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-`````o`````nly.
+      - `[Self <String>]`: The endp`````o`````int where y`````o`````u can get details ab`````o`````ut the page. Read-`````o`````nly.
       - `[Id <String>]`: 
-      - `[IsDefault <Boolean?>]`: Indicates whether this is the user's default section. Read-only.
-      - `[Links <IMicrosoftGraphSectionLinks>]`: sectionLinks
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[OneNoteClientUrl <IMicrosoftGraphExternalLink>]`: externalLink
-        - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
-      - `[Pages <IMicrosoftGraphOnenotePage1[]>]`: The collection of pages in the section.  Read-only. Nullable.
-        - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-        - `[Self <String>]`: The endpoint where you can get details about the page. Read-only.
+      - `[IsDefault <B`````o``````````o`````lean?>]`: Indicates whether this is the user's default secti`````o`````n. Read-`````o`````nly.
+      - `[Links <IMicr`````o`````s`````o`````ftGraphSecti`````o`````nLinks>]`: secti`````o`````nLinks
+        - `[(Any) <`````o`````bject>]`: This indicates any pr`````o`````perty can be added t`````o````` this `````o`````bject.
+        - `[`````o`````neN`````o`````teClientUrl <IMicr`````o`````s`````o`````ftGraphExternalLink>]`: externalLink
+        - `[`````o`````neN`````o`````teWebUrl <IMicr`````o`````s`````o`````ftGraphExternalLink>]`: externalLink
+      - `[Pages <IMicr`````o`````s`````o`````ftGraph`````o`````nen`````o`````tePage1[]>]`: The c`````o`````llecti`````o`````n `````o`````f pages in the secti`````o`````n.  Read-`````o`````nly. Nullable.
+        - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created. The timestamp represents date and time inf`````o`````rmati`````o`````n using IS`````o````` 8601 f`````o`````rmat and is always in UTC time. F`````o`````r example, midnight UTC `````o`````n Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-`````o`````nly.
+        - `[Self <String>]`: The endp`````o`````int where y`````o`````u can get details ab`````o`````ut the page. Read-`````o`````nly.
         - `[Id <String>]`: 
-        - `[Content <Byte[]>]`: The page's HTML content.
-        - `[ContentUrl <String>]`: The URL for the page's HTML content.  Read-only.
-        - `[CreatedByAppId <String>]`: The unique identifier of the application that created the page. Read-only.
-        - `[LastModifiedDateTime <DateTime?>]`: The date and time when the page was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-        - `[Level <Int32?>]`: The indentation level of the page. Read-only.
-        - `[Links <IMicrosoftGraphPageLinks>]`: pageLinks
-          - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[OneNoteClientUrl <IMicrosoftGraphExternalLink>]`: externalLink
-          - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
-        - `[Order <Int32?>]`: The order of the page within its parent section. Read-only.
-        - `[ParentNotebook <IMicrosoftGraphNotebook>]`: notebook
-        - `[ParentSection <IMicrosoftGraphOnenoteSection>]`: onenoteSection
-        - `[Title <String>]`: The title of the page.
+        - `[C`````o`````ntent <Byte[]>]`: The page's HTML c`````o`````ntent.
+        - `[C`````o`````ntentUrl <String>]`: The URL f`````o`````r the page's HTML c`````o`````ntent.  Read-`````o`````nly.
+        - `[CreatedByAppId <String>]`: The unique identifier `````o`````f the applicati`````o`````n that created the page. Read-`````o`````nly.
+        - `[LastM`````o`````difiedDateTime <DateTime?>]`: The date and time when the page was last m`````o`````dified. The timestamp represents date and time inf`````o`````rmati`````o`````n using IS`````o````` 8601 f`````o`````rmat and is always in UTC time. F`````o`````r example, midnight UTC `````o`````n Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-`````o`````nly.
+        - `[Level <Int32?>]`: The indentati`````o`````n level `````o`````f the page. Read-`````o`````nly.
+        - `[Links <IMicr`````o`````s`````o`````ftGraphPageLinks>]`: pageLinks
+          - `[(Any) <`````o`````bject>]`: This indicates any pr`````o`````perty can be added t`````o````` this `````o`````bject.
+          - `[`````o`````neN`````o`````teClientUrl <IMicr`````o`````s`````o`````ftGraphExternalLink>]`: externalLink
+          - `[`````o`````neN`````o`````teWebUrl <IMicr`````o`````s`````o`````ftGraphExternalLink>]`: externalLink
+        - `[`````o`````rder <Int32?>]`: The `````o`````rder `````o`````f the page within its parent secti`````o`````n. Read-`````o`````nly.
+        - `[ParentN`````o`````teb`````o``````````o`````k <IMicr`````o`````s`````o`````ftGraphN`````o`````teb`````o``````````o`````k>]`: n`````o`````teb`````o``````````o`````k
+        - `[ParentSecti`````o`````n <IMicr`````o`````s`````o`````ftGraph`````o`````nen`````o`````teSecti`````o`````n>]`: `````o`````nen`````o`````teSecti`````o`````n
+        - `[Title <String>]`: The title `````o`````f the page.
         - `[UserTags <String[]>]`: 
-      - `[PagesUrl <String>]`: The pages endpoint where you can get details for all the pages in the section. Read-only.
-      - `[ParentNotebook <IMicrosoftGraphNotebook>]`: notebook
-      - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
-    - `[SectionsUrl <String>]`: The URL for the sections navigation property, which returns all the sections in the section group. Read-only.
-  - `[SectionGroupsUrl <String>]`: The URL for the sectionGroups navigation property, which returns all the section groups in the notebook. Read-only.
-  - `[Sections <IMicrosoftGraphOnenoteSection[]>]`: The sections in the notebook. Read-only. Nullable.
-  - `[SectionsUrl <String>]`: The URL for the sections navigation property, which returns all the sections in the notebook. Read-only.
-  - `[UserRole <String>]`: onenoteUserRole
+      - `[PagesUrl <String>]`: The pages endp`````o`````int where y`````o`````u can get details f`````o`````r all the pages in the secti`````o`````n. Read-`````o`````nly.
+      - `[ParentN`````o`````teb`````o``````````o`````k <IMicr`````o`````s`````o`````ftGraphN`````o`````teb`````o``````````o`````k>]`: n`````o`````teb`````o``````````o`````k
+      - `[ParentSecti`````o`````nGr`````o`````up <IMicr`````o`````s`````o`````ftGraphSecti`````o`````nGr`````o`````up>]`: secti`````o`````nGr`````o`````up
+    - `[Secti`````o`````nsUrl <String>]`: The URL f`````o`````r the secti`````o`````ns navigati`````o`````n pr`````o`````perty, which returns all the secti`````o`````ns in the secti`````o`````n gr`````o`````up. Read-`````o`````nly.
+  - `[Secti`````o`````nGr`````o`````upsUrl <String>]`: The URL f`````o`````r the secti`````o`````nGr`````o`````ups navigati`````o`````n pr`````o`````perty, which returns all the secti`````o`````n gr`````o`````ups in the n`````o`````teb`````o``````````o`````k. Read-`````o`````nly.
+  - `[Secti`````o`````ns <IMicr`````o`````s`````o`````ftGraph`````o`````nen`````o`````teSecti`````o`````n[]>]`: The secti`````o`````ns in the n`````o`````teb`````o``````````o`````k. Read-`````o`````nly. Nullable.
+  - `[Secti`````o`````nsUrl <String>]`: The URL f`````o`````r the secti`````o`````ns navigati`````o`````n pr`````o`````perty, which returns all the secti`````o`````ns in the n`````o`````teb`````o``````````o`````k. Read-`````o`````nly.
+  - `[UserR`````o`````le <String>]`: `````o`````nen`````o`````teUserR`````o`````le
 
-PARENTSECTION <IMicrosoftGraphOnenoteSection>: onenoteSection
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[DisplayName <String>]`: The name of the notebook.
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time when the notebook was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-  - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-  - `[Self <String>]`: The endpoint where you can get details about the page. Read-only.
+PARENTSECTI`````o`````N <IMicr`````o`````s`````o`````ftGraph`````o`````nen`````o`````teSecti`````o`````n>: `````o`````nen`````o`````teSecti`````o`````n
+  - `[(Any) <`````o`````bject>]`: This indicates any pr`````o`````perty can be added t`````o````` this `````o`````bject.
+  - `[CreatedBy <IMicr`````o`````s`````o`````ftGraphIdentitySet>]`: identitySet
+    - `[(Any) <`````o`````bject>]`: This indicates any pr`````o`````perty can be added t`````o````` this `````o`````bject.
+    - `[Applicati`````o`````n <IMicr`````o`````s`````o`````ftGraphIdentity>]`: identity
+      - `[(Any) <`````o`````bject>]`: This indicates any pr`````o`````perty can be added t`````o````` this `````o`````bject.
+      - `[DisplayName <String>]`: The identity's display name. N`````o`````te that this may n`````o`````t always be available `````o`````r up t`````o````` date. F`````o`````r example, if a user changes their display name, the API may sh`````o`````w the new value in a future resp`````o`````nse, but the items ass`````o`````ciated with the user w`````o`````n't sh`````o`````w up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier f`````o`````r the identity.
+    - `[Device <IMicr`````o`````s`````o`````ftGraphIdentity>]`: identity
+    - `[User <IMicr`````o`````s`````o`````ftGraphIdentity>]`: identity
+  - `[DisplayName <String>]`: The name `````o`````f the n`````o`````teb`````o``````````o`````k.
+  - `[LastM`````o`````difiedBy <IMicr`````o`````s`````o`````ftGraphIdentitySet>]`: identitySet
+  - `[LastM`````o`````difiedDateTime <DateTime?>]`: The date and time when the n`````o`````teb`````o``````````o`````k was last m`````o`````dified. The timestamp represents date and time inf`````o`````rmati`````o`````n using IS`````o````` 8601 f`````o`````rmat and is always in UTC time. F`````o`````r example, midnight UTC `````o`````n Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-`````o`````nly.
+  - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created. The timestamp represents date and time inf`````o`````rmati`````o`````n using IS`````o````` 8601 f`````o`````rmat and is always in UTC time. F`````o`````r example, midnight UTC `````o`````n Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-`````o`````nly.
+  - `[Self <String>]`: The endp`````o`````int where y`````o`````u can get details ab`````o`````ut the page. Read-`````o`````nly.
   - `[Id <String>]`: 
-  - `[IsDefault <Boolean?>]`: Indicates whether this is the user's default section. Read-only.
-  - `[Links <IMicrosoftGraphSectionLinks>]`: sectionLinks
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[OneNoteClientUrl <IMicrosoftGraphExternalLink>]`: externalLink
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Href <String>]`: The url of the link.
-    - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
-  - `[Pages <IMicrosoftGraphOnenotePage1[]>]`: The collection of pages in the section.  Read-only. Nullable.
-    - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-    - `[Self <String>]`: The endpoint where you can get details about the page. Read-only.
+  - `[IsDefault <B`````o``````````o`````lean?>]`: Indicates whether this is the user's default secti`````o`````n. Read-`````o`````nly.
+  - `[Links <IMicr`````o`````s`````o`````ftGraphSecti`````o`````nLinks>]`: secti`````o`````nLinks
+    - `[(Any) <`````o`````bject>]`: This indicates any pr`````o`````perty can be added t`````o````` this `````o`````bject.
+    - `[`````o`````neN`````o`````teClientUrl <IMicr`````o`````s`````o`````ftGraphExternalLink>]`: externalLink
+      - `[(Any) <`````o`````bject>]`: This indicates any pr`````o`````perty can be added t`````o````` this `````o`````bject.
+      - `[Href <String>]`: The url `````o`````f the link.
+    - `[`````o`````neN`````o`````teWebUrl <IMicr`````o`````s`````o`````ftGraphExternalLink>]`: externalLink
+  - `[Pages <IMicr`````o`````s`````o`````ftGraph`````o`````nen`````o`````tePage1[]>]`: The c`````o`````llecti`````o`````n `````o`````f pages in the secti`````o`````n.  Read-`````o`````nly. Nullable.
+    - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created. The timestamp represents date and time inf`````o`````rmati`````o`````n using IS`````o````` 8601 f`````o`````rmat and is always in UTC time. F`````o`````r example, midnight UTC `````o`````n Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-`````o`````nly.
+    - `[Self <String>]`: The endp`````o`````int where y`````o`````u can get details ab`````o`````ut the page. Read-`````o`````nly.
     - `[Id <String>]`: 
-    - `[Content <Byte[]>]`: The page's HTML content.
-    - `[ContentUrl <String>]`: The URL for the page's HTML content.  Read-only.
-    - `[CreatedByAppId <String>]`: The unique identifier of the application that created the page. Read-only.
-    - `[LastModifiedDateTime <DateTime?>]`: The date and time when the page was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-    - `[Level <Int32?>]`: The indentation level of the page. Read-only.
-    - `[Links <IMicrosoftGraphPageLinks>]`: pageLinks
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[OneNoteClientUrl <IMicrosoftGraphExternalLink>]`: externalLink
-      - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
-    - `[Order <Int32?>]`: The order of the page within its parent section. Read-only.
-    - `[ParentNotebook <IMicrosoftGraphNotebook>]`: notebook
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[DisplayName <String>]`: The name of the notebook.
-      - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[LastModifiedDateTime <DateTime?>]`: The date and time when the notebook was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-      - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-      - `[Self <String>]`: The endpoint where you can get details about the page. Read-only.
+    - `[C`````o`````ntent <Byte[]>]`: The page's HTML c`````o`````ntent.
+    - `[C`````o`````ntentUrl <String>]`: The URL f`````o`````r the page's HTML c`````o`````ntent.  Read-`````o`````nly.
+    - `[CreatedByAppId <String>]`: The unique identifier `````o`````f the applicati`````o`````n that created the page. Read-`````o`````nly.
+    - `[LastM`````o`````difiedDateTime <DateTime?>]`: The date and time when the page was last m`````o`````dified. The timestamp represents date and time inf`````o`````rmati`````o`````n using IS`````o````` 8601 f`````o`````rmat and is always in UTC time. F`````o`````r example, midnight UTC `````o`````n Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-`````o`````nly.
+    - `[Level <Int32?>]`: The indentati`````o`````n level `````o`````f the page. Read-`````o`````nly.
+    - `[Links <IMicr`````o`````s`````o`````ftGraphPageLinks>]`: pageLinks
+      - `[(Any) <`````o`````bject>]`: This indicates any pr`````o`````perty can be added t`````o````` this `````o`````bject.
+      - `[`````o`````neN`````o`````teClientUrl <IMicr`````o`````s`````o`````ftGraphExternalLink>]`: externalLink
+      - `[`````o`````neN`````o`````teWebUrl <IMicr`````o`````s`````o`````ftGraphExternalLink>]`: externalLink
+    - `[`````o`````rder <Int32?>]`: The `````o`````rder `````o`````f the page within its parent secti`````o`````n. Read-`````o`````nly.
+    - `[ParentN`````o`````teb`````o``````````o`````k <IMicr`````o`````s`````o`````ftGraphN`````o`````teb`````o``````````o`````k>]`: n`````o`````teb`````o``````````o`````k
+      - `[(Any) <`````o`````bject>]`: This indicates any pr`````o`````perty can be added t`````o````` this `````o`````bject.
+      - `[CreatedBy <IMicr`````o`````s`````o`````ftGraphIdentitySet>]`: identitySet
+      - `[DisplayName <String>]`: The name `````o`````f the n`````o`````teb`````o``````````o`````k.
+      - `[LastM`````o`````difiedBy <IMicr`````o`````s`````o`````ftGraphIdentitySet>]`: identitySet
+      - `[LastM`````o`````difiedDateTime <DateTime?>]`: The date and time when the n`````o`````teb`````o``````````o`````k was last m`````o`````dified. The timestamp represents date and time inf`````o`````rmati`````o`````n using IS`````o````` 8601 f`````o`````rmat and is always in UTC time. F`````o`````r example, midnight UTC `````o`````n Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-`````o`````nly.
+      - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created. The timestamp represents date and time inf`````o`````rmati`````o`````n using IS`````o````` 8601 f`````o`````rmat and is always in UTC time. F`````o`````r example, midnight UTC `````o`````n Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-`````o`````nly.
+      - `[Self <String>]`: The endp`````o`````int where y`````o`````u can get details ab`````o`````ut the page. Read-`````o`````nly.
       - `[Id <String>]`: 
-      - `[IsDefault <Boolean?>]`: Indicates whether this is the user's default notebook. Read-only.
-      - `[IsShared <Boolean?>]`: Indicates whether the notebook is shared. If true, the contents of the notebook can be seen by people other than the owner. Read-only.
-      - `[Links <IMicrosoftGraphNotebookLinks>]`: notebookLinks
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[OneNoteClientUrl <IMicrosoftGraphExternalLink>]`: externalLink
-        - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
-      - `[SectionGroups <IMicrosoftGraphSectionGroup[]>]`: The section groups in the notebook. Read-only. Nullable.
-        - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[DisplayName <String>]`: The name of the notebook.
-        - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[LastModifiedDateTime <DateTime?>]`: The date and time when the notebook was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-        - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
-        - `[Self <String>]`: The endpoint where you can get details about the page. Read-only.
+      - `[IsDefault <B`````o``````````o`````lean?>]`: Indicates whether this is the user's default n`````o`````teb`````o``````````o`````k. Read-`````o`````nly.
+      - `[IsShared <B`````o``````````o`````lean?>]`: Indicates whether the n`````o`````teb`````o``````````o`````k is shared. If true, the c`````o`````ntents `````o`````f the n`````o`````teb`````o``````````o`````k can be seen by pe`````o`````ple `````o`````ther than the `````o`````wner. Read-`````o`````nly.
+      - `[Links <IMicr`````o`````s`````o`````ftGraphN`````o`````teb`````o``````````o`````kLinks>]`: n`````o`````teb`````o``````````o`````kLinks
+        - `[(Any) <`````o`````bject>]`: This indicates any pr`````o`````perty can be added t`````o````` this `````o`````bject.
+        - `[`````o`````neN`````o`````teClientUrl <IMicr`````o`````s`````o`````ftGraphExternalLink>]`: externalLink
+        - `[`````o`````neN`````o`````teWebUrl <IMicr`````o`````s`````o`````ftGraphExternalLink>]`: externalLink
+      - `[Secti`````o`````nGr`````o`````ups <IMicr`````o`````s`````o`````ftGraphSecti`````o`````nGr`````o`````up[]>]`: The secti`````o`````n gr`````o`````ups in the n`````o`````teb`````o``````````o`````k. Read-`````o`````nly. Nullable.
+        - `[CreatedBy <IMicr`````o`````s`````o`````ftGraphIdentitySet>]`: identitySet
+        - `[DisplayName <String>]`: The name `````o`````f the n`````o`````teb`````o``````````o`````k.
+        - `[LastM`````o`````difiedBy <IMicr`````o`````s`````o`````ftGraphIdentitySet>]`: identitySet
+        - `[LastM`````o`````difiedDateTime <DateTime?>]`: The date and time when the n`````o`````teb`````o``````````o`````k was last m`````o`````dified. The timestamp represents date and time inf`````o`````rmati`````o`````n using IS`````o````` 8601 f`````o`````rmat and is always in UTC time. F`````o`````r example, midnight UTC `````o`````n Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-`````o`````nly.
+        - `[CreatedDateTime <DateTime?>]`: The date and time when the page was created. The timestamp represents date and time inf`````o`````rmati`````o`````n using IS`````o````` 8601 f`````o`````rmat and is always in UTC time. F`````o`````r example, midnight UTC `````o`````n Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-`````o`````nly.
+        - `[Self <String>]`: The endp`````o`````int where y`````o`````u can get details ab`````o`````ut the page. Read-`````o`````nly.
         - `[Id <String>]`: 
-        - `[ParentNotebook <IMicrosoftGraphNotebook>]`: notebook
-        - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
-        - `[SectionGroups <IMicrosoftGraphSectionGroup[]>]`: The section groups in the section. Read-only. Nullable.
-        - `[SectionGroupsUrl <String>]`: The URL for the sectionGroups navigation property, which returns all the section groups in the section group. Read-only.
-        - `[Sections <IMicrosoftGraphOnenoteSection[]>]`: The sections in the section group. Read-only. Nullable.
-        - `[SectionsUrl <String>]`: The URL for the sections navigation property, which returns all the sections in the section group. Read-only.
-      - `[SectionGroupsUrl <String>]`: The URL for the sectionGroups navigation property, which returns all the section groups in the notebook. Read-only.
-      - `[Sections <IMicrosoftGraphOnenoteSection[]>]`: The sections in the notebook. Read-only. Nullable.
-      - `[SectionsUrl <String>]`: The URL for the sections navigation property, which returns all the sections in the notebook. Read-only.
-      - `[UserRole <String>]`: onenoteUserRole
-    - `[ParentSection <IMicrosoftGraphOnenoteSection>]`: onenoteSection
-    - `[Title <String>]`: The title of the page.
+        - `[ParentN`````o`````teb`````o``````````o`````k <IMicr`````o`````s`````o`````ftGraphN`````o`````teb`````o``````````o`````k>]`: n`````o`````teb`````o``````````o`````k
+        - `[ParentSecti`````o`````nGr`````o`````up <IMicr`````o`````s`````o`````ftGraphSecti`````o`````nGr`````o`````up>]`: secti`````o`````nGr`````o`````up
+        - `[Secti`````o`````nGr`````o`````ups <IMicr`````o`````s`````o`````ftGraphSecti`````o`````nGr`````o`````up[]>]`: The secti`````o`````n gr`````o`````ups in the secti`````o`````n. Read-`````o`````nly. Nullable.
+        - `[Secti`````o`````nGr`````o`````upsUrl <String>]`: The URL f`````o`````r the secti`````o`````nGr`````o`````ups navigati`````o`````n pr`````o`````perty, which returns all the secti`````o`````n gr`````o`````ups in the secti`````o`````n gr`````o`````up. Read-`````o`````nly.
+        - `[Secti`````o`````ns <IMicr`````o`````s`````o`````ftGraph`````o`````nen`````o`````teSecti`````o`````n[]>]`: The secti`````o`````ns in the secti`````o`````n gr`````o`````up. Read-`````o`````nly. Nullable.
+        - `[Secti`````o`````nsUrl <String>]`: The URL f`````o`````r the secti`````o`````ns navigati`````o`````n pr`````o`````perty, which returns all the secti`````o`````ns in the secti`````o`````n gr`````o`````up. Read-`````o`````nly.
+      - `[Secti`````o`````nGr`````o`````upsUrl <String>]`: The URL f`````o`````r the secti`````o`````nGr`````o`````ups navigati`````o`````n pr`````o`````perty, which returns all the secti`````o`````n gr`````o`````ups in the n`````o`````teb`````o``````````o`````k. Read-`````o`````nly.
+      - `[Secti`````o`````ns <IMicr`````o`````s`````o`````ftGraph`````o`````nen`````o`````teSecti`````o`````n[]>]`: The secti`````o`````ns in the n`````o`````teb`````o``````````o`````k. Read-`````o`````nly. Nullable.
+      - `[Secti`````o`````nsUrl <String>]`: The URL f`````o`````r the secti`````o`````ns navigati`````o`````n pr`````o`````perty, which returns all the secti`````o`````ns in the n`````o`````teb`````o``````````o`````k. Read-`````o`````nly.
+      - `[UserR`````o`````le <String>]`: `````o`````nen`````o`````teUserR`````o`````le
+    - `[ParentSecti`````o`````n <IMicr`````o`````s`````o`````ftGraph`````o`````nen`````o`````teSecti`````o`````n>]`: `````o`````nen`````o`````teSecti`````o`````n
+    - `[Title <String>]`: The title `````o`````f the page.
     - `[UserTags <String[]>]`: 
-  - `[PagesUrl <String>]`: The pages endpoint where you can get details for all the pages in the section. Read-only.
-  - `[ParentNotebook <IMicrosoftGraphNotebook>]`: notebook
-  - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
+  - `[PagesUrl <String>]`: The pages endp`````o`````int where y`````o`````u can get details f`````o`````r all the pages in the secti`````o`````n. Read-`````o`````nly.
+  - `[ParentN`````o`````teb`````o``````````o`````k <IMicr`````o`````s`````o`````ftGraphN`````o`````teb`````o``````````o`````k>]`: n`````o`````teb`````o``````````o`````k
+  - `[ParentSecti`````o`````nGr`````o`````up <IMicr`````o`````s`````o`````ftGraphSecti`````o`````nGr`````o`````up>]`: secti`````o`````nGr`````o`````up
 
 ## RELATED LINKS
 
