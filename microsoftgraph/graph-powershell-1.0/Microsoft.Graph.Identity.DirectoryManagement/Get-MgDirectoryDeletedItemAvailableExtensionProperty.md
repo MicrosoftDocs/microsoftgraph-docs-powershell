@@ -1,134 +1,134 @@
-﻿---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectorydeleteditemavailableextensionproperty
+---
+external help file: Microsoft.Graph.I`d`entity.`d`irectoryManagement-help.xml
+Mo`d`ule Name: Microsoft.Graph.I`d`entity.`d`irectoryManagement
+online version: https://`d`ocs.microsoft.com/en-us/powershell/mo`d`ule/microsoft.graph.i`d`entity.`d`irectorymanagement/get-mg`d`irectory`d`elete`d`itemavailableextensionproperty
 schema: 2.0.0
 ---
 
-# Get-MgDirectoryDeletedItemAvailableExtensionProperty
+# Get-Mg`d`irectory`d`elete`d`ItemAvailableExtensionProperty
 
 ## SYNOPSIS
 Invoke action getAvailableExtensionProperties
 
 ## SYNTAX
 
-### GetExpanded (Default)
+### GetExpan`d`e`d` (`d`efault)
 ```
-Get-MgDirectoryDeletedItemAvailableExtensionProperty [-AdditionalProperties <Hashtable>]
- [-IsSyncedFromOnPremises] [-WhatIf] [-Confirm] [<CommonParameters>]
+Get-Mg`d`irectory`d`elete`d`ItemAvailableExtensionProperty [-A`d``d`itionalProperties <Hashtable>]
+ [-IsSynce`d`FromOnPremises] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgDirectoryDeletedItemAvailableExtensionProperty
- -BodyParameter <IPaths1803LqaDirectoryDeleteditemsMicrosoftGraphGetavailableextensionpropertiesPostRequestbodyContentApplicationJsonSchema>
+Get-Mg`d`irectory`d`elete`d`ItemAvailableExtensionProperty
+ -Bo`d`yParameter <IPaths1803Lqa`d`irectory`d`elete`d`itemsMicrosoftGraphGetavailableextensionpropertiesPostRequestbo`d`yContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-## DESCRIPTION
+## `d`ESCRIPTION
 Invoke action getAvailableExtensionProperties
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -A`d``d`itionalProperties
+A`d``d`itional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: GetExpanded
+Parameter Sets: GetExpan`d`e`d`
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
-### -BodyParameter
+### -Bo`d`yParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online an`d` see NOTES section for BO`d`YPARAMETER properties an`d` create a hash table.
 
 ```yaml
-Type: IPaths1803LqaDirectoryDeleteditemsMicrosoftGraphGetavailableextensionpropertiesPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1803Lqa`d`irectory`d`elete`d`itemsMicrosoftGraphGetavailableextensionpropertiesPostRequestbo`d`yContentApplicationJsonSchema
 Parameter Sets: Get
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require`d`: True
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
-### -IsSyncedFromOnPremises
+### -IsSynce`d`FromOnPremises
 .
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: GetExpanded
+Parameter Sets: GetExpan`d`e`d`
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation before running the cm`d`let.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what woul`d` happen if the cm`d`let runs.
+The cm`d`let is not run.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cm`d`let supports the common parameters: -`d`ebug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, an`d` -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkI`d`=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1803LqaDirectoryDeleteditemsMicrosoftGraphGetavailableextensionpropertiesPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Mo`d`els.IPaths1803Lqa`d`irectory`d`elete`d`itemsMicrosoftGraphGetavailableextensionpropertiesPostRequestbo`d`yContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExtensionProperty
+### Microsoft.Graph.PowerShell.Mo`d`els.IMicrosoftGraphExtensionProperty
 ## NOTES
 
 ALIASES
 
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters `d`escribe`d` below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPaths1803LqaDirectoryDeleteditemsMicrosoftGraphGetavailableextensionpropertiesPostRequestbodyContentApplicationJsonSchema>: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[IsSyncedFromOnPremises <Boolean?>]`: 
+BO`d`YPARAMETER <IPaths1803Lqa`d`irectory`d`elete`d`itemsMicrosoftGraphGetavailableextensionpropertiesPostRequestbo`d`yContentApplicationJsonSchema>: .
+  - `[(Any) <Object>]`: This in`d`icates any property can be a`d``d`e`d` to this object.
+  - `[IsSynce`d`FromOnPremises <Boolean?>]`: 
 
-## RELATED LINKS
+## RELATE`d` LINKS
