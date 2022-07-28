@@ -1,11 +1,11 @@
-﻿---
-external help file: Microsoft.Graph.Groups-help.xml
-Module Name: Microsoft.Graph.Groups
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggroupbyid
+---
+exte`r`nal help file: Mic`r`osoft.G`r`aph.G`r`oups-help.xml
+Module Name: Mic`r`osoft.G`r`aph.G`r`oups
+online ve`r`sion: https://docs.mic`r`osoft.com/en-us/powe`r`shell/module/mic`r`osoft.g`r`aph.g`r`oups/get-mgg`r`oupbyid
 schema: 2.0.0
 ---
 
-# Get-MgGroupById
+# Get-MgG`r`oupById
 
 ## SYNOPSIS
 Invoke action getByIds
@@ -14,137 +14,137 @@ Invoke action getByIds
 
 ### GetExpanded1 (Default)
 ```
-Get-MgGroupById [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Types <String[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Get-MgG`r`oupById [-AdditionalP`r`ope`r`ties <Hashtable>] [-Ids <St`r`ing[]>] [-Types <St`r`ing[]>] [-WhatIf] [-Confi`r`m]
+ [<CommonPa`r`amete`r`s>]
 ```
 
 ### Get1
 ```
-Get-MgGroupById
- -BodyParameter <IPaths1E1O4BoGroupsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Get-MgG`r`oupById
+ -BodyPa`r`amete`r` <IPaths1E1O4BoG`r`oupsMic`r`osoftG`r`aphGetbyidsPost`r`equestbodyContentApplicationJsonSchema>
+ [-WhatIf] [-Confi`r`m] [<CommonPa`r`amete`r`s>]
 ```
 
-## DESCRIPTION
+## DESC`r`IPTION
 Invoke action getByIds
 
 ## EXAMPLES
 
-## PARAMETERS
+## PA`r`AMETE`r`S
 
-### -AdditionalProperties
-Additional Parameters
+### -AdditionalP`r`ope`r`ties
+Additional Pa`r`amete`r`s
 
 ```yaml
 Type: Hashtable
-Parameter Sets: GetExpanded1
+Pa`r`amete`r` Sets: GetExpanded1
 Aliases:
 
-Required: False
+`r`equi`r`ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
-### -BodyParameter
+### -BodyPa`r`amete`r`
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To const`r`uct, please use Get-Help -Online and see NOTES section fo`r` BODYPA`r`AMETE`r` p`r`ope`r`ties and c`r`eate a hash table.
 
 ```yaml
-Type: IPaths1E1O4BoGroupsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Get1
+Type: IPaths1E1O4BoG`r`oupsMic`r`osoftG`r`aphGetbyidsPost`r`equestbodyContentApplicationJsonSchema
+Pa`r`amete`r` Sets: Get1
 Aliases:
 
-Required: True
+`r`equi`r`ed: T`r`ue
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept pipeline input: T`r`ue (ByValue)
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
 ### -Ids
 .
 
 ```yaml
-Type: String[]
-Parameter Sets: GetExpanded1
+Type: St`r`ing[]
+Pa`r`amete`r` Sets: GetExpanded1
 Aliases:
 
-Required: False
+`r`equi`r`ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
 ### -Types
 .
 
 ```yaml
-Type: String[]
-Parameter Sets: GetExpanded1
+Type: St`r`ing[]
+Pa`r`amete`r` Sets: GetExpanded1
 Aliases:
 
-Required: False
+`r`equi`r`ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
+### -Confi`r`m
+P`r`ompts you fo`r` confi`r`mation befo`r`e `r`unning the cmdlet.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Type: SwitchPa`r`amete`r`
+Pa`r`amete`r` Sets: (All)
 Aliases: cf
 
-Required: False
+`r`equi`r`ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happen if the cmdlet `r`uns.
+The cmdlet is not `r`un.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Type: SwitchPa`r`amete`r`
+Pa`r`amete`r` Sets: (All)
 Aliases: wi
 
-Required: False
+`r`equi`r`ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonPa`r`amete`r`s
+This cmdlet suppo`r`ts the common pa`r`amete`r`s: -Debug, -E`r``r`o`r`Action, -E`r``r`o`r`Va`r`iable, -Info`r`mationAction, -Info`r`mationVa`r`iable, -OutVa`r`iable, -OutBuffe`r`, -PipelineVa`r`iable, -Ve`r`bose, -Wa`r`ningAction, and -Wa`r`ningVa`r`iable. Fo`r` mo`r`e info`r`mation, see [about_CommonPa`r`amete`r`s](http://go.mic`r`osoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1E1O4BoGroupsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
+### Mic`r`osoft.G`r`aph.Powe`r`Shell.Models.IPaths1E1O4BoG`r`oupsMic`r`osoftG`r`aphGetbyidsPost`r`equestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
+### Mic`r`osoft.G`r`aph.Powe`r`Shell.Models.IMic`r`osoftG`r`aphDi`r`ecto`r`yObject
 ## NOTES
 
 ALIASES
 
-COMPLEX PARAMETER PROPERTIES
+COMPLEX PA`r`AMETE`r` P`r`OPE`r`TIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To c`r`eate the pa`r`amete`r`s desc`r`ibed below, const`r`uct a hash table containing the app`r`op`r`iate p`r`ope`r`ties. Fo`r` info`r`mation on hash tables, `r`un Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPaths1E1O4BoGroupsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Ids <String[]>]`: 
-  - `[Types <String[]>]`: 
+BODYPA`r`AMETE`r` <IPaths1E1O4BoG`r`oupsMic`r`osoftG`r`aphGetbyidsPost`r`equestbodyContentApplicationJsonSchema>: .
+  - `[(Any) <Object>]`: This indicates any p`r`ope`r`ty can be added to this object.
+  - `[Ids <St`r`ing[]>]`: 
+  - `[Types <St`r`ing[]>]`: 
 
-## RELATED LINKS
+## `r`ELATED LINKS
