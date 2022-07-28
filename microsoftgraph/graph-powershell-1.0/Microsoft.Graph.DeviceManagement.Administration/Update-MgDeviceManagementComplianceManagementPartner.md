@@ -1,420 +1,420 @@
-﻿---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementcompliancemanagementpartner
-schema: 2.0.0
+---
+`````e`````xt`````e`````rnal h`````e`````lp fil`````e`````: Microsoft.Graph.D`````e`````vic`````e`````Manag`````e`````m`````e`````nt.Administration-h`````e`````lp.xml
+Modul`````e````` Nam`````e`````: Microsoft.Graph.D`````e`````vic`````e`````Manag`````e`````m`````e`````nt.Administration
+onlin`````e````` v`````e`````rsion: https://docs.microsoft.com/`````e`````n-us/pow`````e`````rsh`````e`````ll/modul`````e`````/microsoft.graph.d`````e`````vic`````e`````manag`````e`````m`````e`````nt.administration/updat`````e`````-mgd`````e`````vic`````e`````manag`````e`````m`````e`````ntcomplianc`````e`````manag`````e`````m`````e`````ntpartn`````e`````r
+sch`````e`````ma: 2.0.0
 ---
 
-# Update-MgDeviceManagementComplianceManagementPartner
+# Updat`````e`````-MgD`````e`````vic`````e`````Manag`````e`````m`````e`````ntComplianc`````e`````Manag`````e`````m`````e`````ntPartn`````e`````r
 
 ## SYNOPSIS
-Update the navigation property complianceManagementPartners in deviceManagement
+Updat`````e````` th`````e````` navigation prop`````e`````rty complianc`````e`````Manag`````e`````m`````e`````ntPartn`````e`````rs in d`````e`````vic`````e`````Manag`````e`````m`````e`````nt
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### Updat`````e``````````e`````xpand`````e`````d1 (D`````e`````fault)
 ```
-Update-MgDeviceManagementComplianceManagementPartner -ComplianceManagementPartnerId <String>
- [-AdditionalProperties <Hashtable>]
- [-AndroidEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment[]>] [-AndroidOnboarded]
- [-DisplayName <String>] [-Id <String>]
- [-IosEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment[]>] [-IosOnboarded]
- [-LastHeartbeatDateTime <DateTime>]
- [-MacOSEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment[]>] [-MacOSOnboarded]
- [-PartnerState <DeviceManagementPartnerTenantState>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update1
-```
-Update-MgDeviceManagementComplianceManagementPartner -ComplianceManagementPartnerId <String>
- -BodyParameter <IMicrosoftGraphComplianceManagementPartner1> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Updat`````e`````-MgD`````e`````vic`````e`````Manag`````e`````m`````e`````ntComplianc`````e`````Manag`````e`````m`````e`````ntPartn`````e`````r -Complianc`````e`````Manag`````e`````m`````e`````ntPartn`````e`````rId <String>
+ [-AdditionalProp`````e`````rti`````e`````s <Hashtabl`````e`````>]
+ [-Android`````e`````nrollm`````e`````ntAssignm`````e`````nts <IMicrosoftGraphComplianc`````e`````Manag`````e`````m`````e`````ntPartn`````e`````rAssignm`````e`````nt[]>] [-AndroidOnboard`````e`````d]
+ [-DisplayNam`````e````` <String>] [-Id <String>]
+ [-Ios`````e`````nrollm`````e`````ntAssignm`````e`````nts <IMicrosoftGraphComplianc`````e`````Manag`````e`````m`````e`````ntPartn`````e`````rAssignm`````e`````nt[]>] [-IosOnboard`````e`````d]
+ [-LastH`````e`````artb`````e`````atDat`````e`````Tim`````e````` <Dat`````e`````Tim`````e`````>]
+ [-MacOS`````e`````nrollm`````e`````ntAssignm`````e`````nts <IMicrosoftGraphComplianc`````e`````Manag`````e`````m`````e`````ntPartn`````e`````rAssignm`````e`````nt[]>] [-MacOSOnboard`````e`````d]
+ [-Partn`````e`````rStat`````e````` <D`````e`````vic`````e`````Manag`````e`````m`````e`````ntPartn`````e`````rT`````e`````nantStat`````e`````>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParam`````e`````t`````e`````rs>]
 ```
 
-### UpdateViaIdentityExpanded1
+### Updat`````e`````1
 ```
-Update-MgDeviceManagementComplianceManagementPartner -InputObject <IDeviceManagementAdministrationIdentity>
- [-AdditionalProperties <Hashtable>]
- [-AndroidEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment[]>] [-AndroidOnboarded]
- [-DisplayName <String>] [-Id <String>]
- [-IosEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment[]>] [-IosOnboarded]
- [-LastHeartbeatDateTime <DateTime>]
- [-MacOSEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment[]>] [-MacOSOnboarded]
- [-PartnerState <DeviceManagementPartnerTenantState>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Updat`````e`````-MgD`````e`````vic`````e`````Manag`````e`````m`````e`````ntComplianc`````e`````Manag`````e`````m`````e`````ntPartn`````e`````r -Complianc`````e`````Manag`````e`````m`````e`````ntPartn`````e`````rId <String>
+ -BodyParam`````e`````t`````e`````r <IMicrosoftGraphComplianc`````e`````Manag`````e`````m`````e`````ntPartn`````e`````r1> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParam`````e`````t`````e`````rs>]
 ```
 
-### UpdateViaIdentity1
+### Updat`````e`````ViaId`````e`````ntity`````e`````xpand`````e`````d1
 ```
-Update-MgDeviceManagementComplianceManagementPartner -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphComplianceManagementPartner1> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Updat`````e`````-MgD`````e`````vic`````e`````Manag`````e`````m`````e`````ntComplianc`````e`````Manag`````e`````m`````e`````ntPartn`````e`````r -InputObj`````e`````ct <ID`````e`````vic`````e`````Manag`````e`````m`````e`````ntAdministrationId`````e`````ntity>
+ [-AdditionalProp`````e`````rti`````e`````s <Hashtabl`````e`````>]
+ [-Android`````e`````nrollm`````e`````ntAssignm`````e`````nts <IMicrosoftGraphComplianc`````e`````Manag`````e`````m`````e`````ntPartn`````e`````rAssignm`````e`````nt[]>] [-AndroidOnboard`````e`````d]
+ [-DisplayNam`````e````` <String>] [-Id <String>]
+ [-Ios`````e`````nrollm`````e`````ntAssignm`````e`````nts <IMicrosoftGraphComplianc`````e`````Manag`````e`````m`````e`````ntPartn`````e`````rAssignm`````e`````nt[]>] [-IosOnboard`````e`````d]
+ [-LastH`````e`````artb`````e`````atDat`````e`````Tim`````e````` <Dat`````e`````Tim`````e`````>]
+ [-MacOS`````e`````nrollm`````e`````ntAssignm`````e`````nts <IMicrosoftGraphComplianc`````e`````Manag`````e`````m`````e`````ntPartn`````e`````rAssignm`````e`````nt[]>] [-MacOSOnboard`````e`````d]
+ [-Partn`````e`````rStat`````e````` <D`````e`````vic`````e`````Manag`````e`````m`````e`````ntPartn`````e`````rT`````e`````nantStat`````e`````>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParam`````e`````t`````e`````rs>]
 ```
 
-## DESCRIPTION
-Update the navigation property complianceManagementPartners in deviceManagement
+### Updat`````e`````ViaId`````e`````ntity1
+```
+Updat`````e`````-MgD`````e`````vic`````e`````Manag`````e`````m`````e`````ntComplianc`````e`````Manag`````e`````m`````e`````ntPartn`````e`````r -InputObj`````e`````ct <ID`````e`````vic`````e`````Manag`````e`````m`````e`````ntAdministrationId`````e`````ntity>
+ -BodyParam`````e`````t`````e`````r <IMicrosoftGraphComplianc`````e`````Manag`````e`````m`````e`````ntPartn`````e`````r1> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParam`````e`````t`````e`````rs>]
+```
 
-## EXAMPLES
+## D`````e`````SCRIPTION
+Updat`````e````` th`````e````` navigation prop`````e`````rty complianc`````e`````Manag`````e`````m`````e`````ntPartn`````e`````rs in d`````e`````vic`````e`````Manag`````e`````m`````e`````nt
 
-## PARAMETERS
+## `````e`````XAMPL`````e`````S
 
-### -AdditionalProperties
-Additional Parameters
+## PARAM`````e`````T`````e`````RS
+
+### -AdditionalProp`````e`````rti`````e`````s
+Additional Param`````e`````t`````e`````rs
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ`````e`````: Hashtabl`````e`````
+Param`````e`````t`````e`````r S`````e`````ts: Updat`````e``````````e`````xpand`````e`````d1, Updat`````e`````ViaId`````e`````ntity`````e`````xpand`````e`````d1
+Alias`````e`````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`````e`````quir`````e`````d: Fals`````e`````
+Position: Nam`````e`````d
+D`````e`````fault valu`````e`````: Non`````e`````
+Acc`````e`````pt pip`````e`````lin`````e````` input: Fals`````e`````
+Acc`````e`````pt wildcard charact`````e`````rs: Fals`````e`````
 ```
 
-### -AndroidEnrollmentAssignments
-User groups which enroll Android devices through partner.
-To construct, please use Get-Help -Online and see NOTES section for ANDROIDENROLLMENTASSIGNMENTS properties and create a hash table.
+### -Android`````e`````nrollm`````e`````ntAssignm`````e`````nts
+Us`````e`````r groups which `````e`````nroll Android d`````e`````vic`````e`````s through partn`````e`````r.
+To construct, pl`````e`````as`````e````` us`````e````` G`````e`````t-H`````e`````lp -Onlin`````e````` and s`````e``````````e````` NOT`````e`````S s`````e`````ction for ANDROID`````e`````NROLLM`````e`````NTASSIGNM`````e`````NTS prop`````e`````rti`````e`````s and cr`````e`````at`````e````` a hash tabl`````e`````.
 
 ```yaml
-Type: IMicrosoftGraphComplianceManagementPartnerAssignment[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ`````e`````: IMicrosoftGraphComplianc`````e`````Manag`````e`````m`````e`````ntPartn`````e`````rAssignm`````e`````nt[]
+Param`````e`````t`````e`````r S`````e`````ts: Updat`````e``````````e`````xpand`````e`````d1, Updat`````e`````ViaId`````e`````ntity`````e`````xpand`````e`````d1
+Alias`````e`````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`````e`````quir`````e`````d: Fals`````e`````
+Position: Nam`````e`````d
+D`````e`````fault valu`````e`````: Non`````e`````
+Acc`````e`````pt pip`````e`````lin`````e````` input: Fals`````e`````
+Acc`````e`````pt wildcard charact`````e`````rs: Fals`````e`````
 ```
 
-### -AndroidOnboarded
-Partner onboarded for Android devices.
+### -AndroidOnboard`````e`````d
+Partn`````e`````r onboard`````e`````d for Android d`````e`````vic`````e`````s.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ`````e`````: SwitchParam`````e`````t`````e`````r
+Param`````e`````t`````e`````r S`````e`````ts: Updat`````e``````````e`````xpand`````e`````d1, Updat`````e`````ViaId`````e`````ntity`````e`````xpand`````e`````d1
+Alias`````e`````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`````e`````quir`````e`````d: Fals`````e`````
+Position: Nam`````e`````d
+D`````e`````fault valu`````e`````: Non`````e`````
+Acc`````e`````pt pip`````e`````lin`````e````` input: Fals`````e`````
+Acc`````e`````pt wildcard charact`````e`````rs: Fals`````e`````
 ```
 
-### -BodyParameter
-Compliance management partner for all platforms
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -BodyParam`````e`````t`````e`````r
+Complianc`````e````` manag`````e`````m`````e`````nt partn`````e`````r for all platforms
+To construct, pl`````e`````as`````e````` us`````e````` G`````e`````t-H`````e`````lp -Onlin`````e````` and s`````e``````````e````` NOT`````e`````S s`````e`````ction for BODYPARAM`````e`````T`````e`````R prop`````e`````rti`````e`````s and cr`````e`````at`````e````` a hash tabl`````e`````.
 
 ```yaml
-Type: IMicrosoftGraphComplianceManagementPartner1
-Parameter Sets: Update1, UpdateViaIdentity1
-Aliases:
+Typ`````e`````: IMicrosoftGraphComplianc`````e`````Manag`````e`````m`````e`````ntPartn`````e`````r1
+Param`````e`````t`````e`````r S`````e`````ts: Updat`````e`````1, Updat`````e`````ViaId`````e`````ntity1
+Alias`````e`````s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R`````e`````quir`````e`````d: Tru`````e`````
+Position: Nam`````e`````d
+D`````e`````fault valu`````e`````: Non`````e`````
+Acc`````e`````pt pip`````e`````lin`````e````` input: Tru`````e````` (ByValu`````e`````)
+Acc`````e`````pt wildcard charact`````e`````rs: Fals`````e`````
 ```
 
-### -ComplianceManagementPartnerId
-key: id of complianceManagementPartner
+### -Complianc`````e`````Manag`````e`````m`````e`````ntPartn`````e`````rId
+k`````e`````y: id of complianc`````e`````Manag`````e`````m`````e`````ntPartn`````e`````r
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
-Aliases:
+Typ`````e`````: String
+Param`````e`````t`````e`````r S`````e`````ts: Updat`````e``````````e`````xpand`````e`````d1, Updat`````e`````1
+Alias`````e`````s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`````e`````quir`````e`````d: Tru`````e`````
+Position: Nam`````e`````d
+D`````e`````fault valu`````e`````: Non`````e`````
+Acc`````e`````pt pip`````e`````lin`````e````` input: Fals`````e`````
+Acc`````e`````pt wildcard charact`````e`````rs: Fals`````e`````
 ```
 
-### -DisplayName
-Partner display name
+### -DisplayNam`````e`````
+Partn`````e`````r display nam`````e`````
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ`````e`````: String
+Param`````e`````t`````e`````r S`````e`````ts: Updat`````e``````````e`````xpand`````e`````d1, Updat`````e`````ViaId`````e`````ntity`````e`````xpand`````e`````d1
+Alias`````e`````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`````e`````quir`````e`````d: Fals`````e`````
+Position: Nam`````e`````d
+D`````e`````fault valu`````e`````: Non`````e`````
+Acc`````e`````pt pip`````e`````lin`````e````` input: Fals`````e`````
+Acc`````e`````pt wildcard charact`````e`````rs: Fals`````e`````
 ```
 
 ### -Id
 .
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ`````e`````: String
+Param`````e`````t`````e`````r S`````e`````ts: Updat`````e``````````e`````xpand`````e`````d1, Updat`````e`````ViaId`````e`````ntity`````e`````xpand`````e`````d1
+Alias`````e`````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`````e`````quir`````e`````d: Fals`````e`````
+Position: Nam`````e`````d
+D`````e`````fault valu`````e`````: Non`````e`````
+Acc`````e`````pt pip`````e`````lin`````e````` input: Fals`````e`````
+Acc`````e`````pt wildcard charact`````e`````rs: Fals`````e`````
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -InputObj`````e`````ct
+Id`````e`````ntity Param`````e`````t`````e`````r
+To construct, pl`````e`````as`````e````` us`````e````` G`````e`````t-H`````e`````lp -Onlin`````e````` and s`````e``````````e````` NOT`````e`````S s`````e`````ction for INPUTOBJ`````e`````CT prop`````e`````rti`````e`````s and cr`````e`````at`````e````` a hash tabl`````e`````.
 
 ```yaml
-Type: IDeviceManagementAdministrationIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
-Aliases:
+Typ`````e`````: ID`````e`````vic`````e`````Manag`````e`````m`````e`````ntAdministrationId`````e`````ntity
+Param`````e`````t`````e`````r S`````e`````ts: Updat`````e`````ViaId`````e`````ntity`````e`````xpand`````e`````d1, Updat`````e`````ViaId`````e`````ntity1
+Alias`````e`````s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R`````e`````quir`````e`````d: Tru`````e`````
+Position: Nam`````e`````d
+D`````e`````fault valu`````e`````: Non`````e`````
+Acc`````e`````pt pip`````e`````lin`````e````` input: Tru`````e````` (ByValu`````e`````)
+Acc`````e`````pt wildcard charact`````e`````rs: Fals`````e`````
 ```
 
-### -IosEnrollmentAssignments
-User groups which enroll ios devices through partner.
-To construct, please use Get-Help -Online and see NOTES section for IOSENROLLMENTASSIGNMENTS properties and create a hash table.
+### -Ios`````e`````nrollm`````e`````ntAssignm`````e`````nts
+Us`````e`````r groups which `````e`````nroll ios d`````e`````vic`````e`````s through partn`````e`````r.
+To construct, pl`````e`````as`````e````` us`````e````` G`````e`````t-H`````e`````lp -Onlin`````e````` and s`````e``````````e````` NOT`````e`````S s`````e`````ction for IOS`````e`````NROLLM`````e`````NTASSIGNM`````e`````NTS prop`````e`````rti`````e`````s and cr`````e`````at`````e````` a hash tabl`````e`````.
 
 ```yaml
-Type: IMicrosoftGraphComplianceManagementPartnerAssignment[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ`````e`````: IMicrosoftGraphComplianc`````e`````Manag`````e`````m`````e`````ntPartn`````e`````rAssignm`````e`````nt[]
+Param`````e`````t`````e`````r S`````e`````ts: Updat`````e``````````e`````xpand`````e`````d1, Updat`````e`````ViaId`````e`````ntity`````e`````xpand`````e`````d1
+Alias`````e`````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`````e`````quir`````e`````d: Fals`````e`````
+Position: Nam`````e`````d
+D`````e`````fault valu`````e`````: Non`````e`````
+Acc`````e`````pt pip`````e`````lin`````e````` input: Fals`````e`````
+Acc`````e`````pt wildcard charact`````e`````rs: Fals`````e`````
 ```
 
-### -IosOnboarded
-Partner onboarded for ios devices.
+### -IosOnboard`````e`````d
+Partn`````e`````r onboard`````e`````d for ios d`````e`````vic`````e`````s.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ`````e`````: SwitchParam`````e`````t`````e`````r
+Param`````e`````t`````e`````r S`````e`````ts: Updat`````e``````````e`````xpand`````e`````d1, Updat`````e`````ViaId`````e`````ntity`````e`````xpand`````e`````d1
+Alias`````e`````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`````e`````quir`````e`````d: Fals`````e`````
+Position: Nam`````e`````d
+D`````e`````fault valu`````e`````: Non`````e`````
+Acc`````e`````pt pip`````e`````lin`````e````` input: Fals`````e`````
+Acc`````e`````pt wildcard charact`````e`````rs: Fals`````e`````
 ```
 
-### -LastHeartbeatDateTime
-Timestamp of last heartbeat after admin onboarded to the compliance management partner
+### -LastH`````e`````artb`````e`````atDat`````e`````Tim`````e`````
+Tim`````e`````stamp of last h`````e`````artb`````e`````at aft`````e`````r admin onboard`````e`````d to th`````e````` complianc`````e````` manag`````e`````m`````e`````nt partn`````e`````r
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ`````e`````: Dat`````e`````Tim`````e`````
+Param`````e`````t`````e`````r S`````e`````ts: Updat`````e``````````e`````xpand`````e`````d1, Updat`````e`````ViaId`````e`````ntity`````e`````xpand`````e`````d1
+Alias`````e`````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`````e`````quir`````e`````d: Fals`````e`````
+Position: Nam`````e`````d
+D`````e`````fault valu`````e`````: Non`````e`````
+Acc`````e`````pt pip`````e`````lin`````e````` input: Fals`````e`````
+Acc`````e`````pt wildcard charact`````e`````rs: Fals`````e`````
 ```
 
-### -MacOSEnrollmentAssignments
-User groups which enroll Mac devices through partner.
-To construct, please use Get-Help -Online and see NOTES section for MACOSENROLLMENTASSIGNMENTS properties and create a hash table.
+### -MacOS`````e`````nrollm`````e`````ntAssignm`````e`````nts
+Us`````e`````r groups which `````e`````nroll Mac d`````e`````vic`````e`````s through partn`````e`````r.
+To construct, pl`````e`````as`````e````` us`````e````` G`````e`````t-H`````e`````lp -Onlin`````e````` and s`````e``````````e````` NOT`````e`````S s`````e`````ction for MACOS`````e`````NROLLM`````e`````NTASSIGNM`````e`````NTS prop`````e`````rti`````e`````s and cr`````e`````at`````e````` a hash tabl`````e`````.
 
 ```yaml
-Type: IMicrosoftGraphComplianceManagementPartnerAssignment[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ`````e`````: IMicrosoftGraphComplianc`````e`````Manag`````e`````m`````e`````ntPartn`````e`````rAssignm`````e`````nt[]
+Param`````e`````t`````e`````r S`````e`````ts: Updat`````e``````````e`````xpand`````e`````d1, Updat`````e`````ViaId`````e`````ntity`````e`````xpand`````e`````d1
+Alias`````e`````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`````e`````quir`````e`````d: Fals`````e`````
+Position: Nam`````e`````d
+D`````e`````fault valu`````e`````: Non`````e`````
+Acc`````e`````pt pip`````e`````lin`````e````` input: Fals`````e`````
+Acc`````e`````pt wildcard charact`````e`````rs: Fals`````e`````
 ```
 
-### -MacOSOnboarded
-Partner onboarded for Mac devices.
+### -MacOSOnboard`````e`````d
+Partn`````e`````r onboard`````e`````d for Mac d`````e`````vic`````e`````s.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ`````e`````: SwitchParam`````e`````t`````e`````r
+Param`````e`````t`````e`````r S`````e`````ts: Updat`````e``````````e`````xpand`````e`````d1, Updat`````e`````ViaId`````e`````ntity`````e`````xpand`````e`````d1
+Alias`````e`````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`````e`````quir`````e`````d: Fals`````e`````
+Position: Nam`````e`````d
+D`````e`````fault valu`````e`````: Non`````e`````
+Acc`````e`````pt pip`````e`````lin`````e````` input: Fals`````e`````
+Acc`````e`````pt wildcard charact`````e`````rs: Fals`````e`````
 ```
 
-### -PartnerState
-Partner state of this tenant.
+### -Partn`````e`````rStat`````e`````
+Partn`````e`````r stat`````e````` of this t`````e`````nant.
 
 ```yaml
-Type: DeviceManagementPartnerTenantState
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ`````e`````: D`````e`````vic`````e`````Manag`````e`````m`````e`````ntPartn`````e`````rT`````e`````nantStat`````e`````
+Param`````e`````t`````e`````r S`````e`````ts: Updat`````e``````````e`````xpand`````e`````d1, Updat`````e`````ViaId`````e`````ntity`````e`````xpand`````e`````d1
+Alias`````e`````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`````e`````quir`````e`````d: Fals`````e`````
+Position: Nam`````e`````d
+D`````e`````fault valu`````e`````: Non`````e`````
+Acc`````e`````pt pip`````e`````lin`````e````` input: Fals`````e`````
+Acc`````e`````pt wildcard charact`````e`````rs: Fals`````e`````
 ```
 
 ### -PassThru
-Returns true when the command succeeds
+R`````e`````turns tru`````e````` wh`````e`````n th`````e````` command succ`````e``````````e`````ds
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
+Typ`````e`````: SwitchParam`````e`````t`````e`````r
+Param`````e`````t`````e`````r S`````e`````ts: (All)
+Alias`````e`````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`````e`````quir`````e`````d: Fals`````e`````
+Position: Nam`````e`````d
+D`````e`````fault valu`````e`````: Non`````e`````
+Acc`````e`````pt pip`````e`````lin`````e````` input: Fals`````e`````
+Acc`````e`````pt wildcard charact`````e`````rs: Fals`````e`````
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation b`````e`````for`````e````` running th`````e````` cmdl`````e`````t.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Typ`````e`````: SwitchParam`````e`````t`````e`````r
+Param`````e`````t`````e`````r S`````e`````ts: (All)
+Alias`````e`````s: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`````e`````quir`````e`````d: Fals`````e`````
+Position: Nam`````e`````d
+D`````e`````fault valu`````e`````: Non`````e`````
+Acc`````e`````pt pip`````e`````lin`````e````` input: Fals`````e`````
+Acc`````e`````pt wildcard charact`````e`````rs: Fals`````e`````
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happ`````e`````n if th`````e````` cmdl`````e`````t runs.
+Th`````e````` cmdl`````e`````t is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Typ`````e`````: SwitchParam`````e`````t`````e`````r
+Param`````e`````t`````e`````r S`````e`````ts: (All)
+Alias`````e`````s: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`````e`````quir`````e`````d: Fals`````e`````
+Position: Nam`````e`````d
+D`````e`````fault valu`````e`````: Non`````e`````
+Acc`````e`````pt pip`````e`````lin`````e````` input: Fals`````e`````
+Acc`````e`````pt wildcard charact`````e`````rs: Fals`````e`````
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam`````e`````t`````e`````rs
+This cmdl`````e`````t supports th`````e````` common param`````e`````t`````e`````rs: -D`````e`````bug, -`````e`````rrorAction, -`````e`````rrorVariabl`````e`````, -InformationAction, -InformationVariabl`````e`````, -OutVariabl`````e`````, -OutBuff`````e`````r, -Pip`````e`````lin`````e`````Variabl`````e`````, -V`````e`````rbos`````e`````, -WarningAction, and -WarningVariabl`````e`````. For mor`````e````` information, s`````e``````````e````` [about_CommonParam`````e`````t`````e`````rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComplianceManagementPartner1
+### Microsoft.Graph.Pow`````e`````rSh`````e`````ll.Mod`````e`````ls.ID`````e`````vic`````e`````Manag`````e`````m`````e`````ntAdministrationId`````e`````ntity
+### Microsoft.Graph.Pow`````e`````rSh`````e`````ll.Mod`````e`````ls.IMicrosoftGraphComplianc`````e`````Manag`````e`````m`````e`````ntPartn`````e`````r1
 ## OUTPUTS
 
-### System.Boolean
-## NOTES
+### Syst`````e`````m.Bool`````e`````an
+## NOT`````e`````S
 
-ALIASES
+ALIAS`````e`````S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL`````e`````X PARAM`````e`````T`````e`````R PROP`````e`````RTI`````e`````S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr`````e`````at`````e````` th`````e````` param`````e`````t`````e`````rs d`````e`````scrib`````e`````d b`````e`````low, construct a hash tabl`````e````` containing th`````e````` appropriat`````e````` prop`````e`````rti`````e`````s. For information on hash tabl`````e`````s, run G`````e`````t-H`````e`````lp about_Hash_Tabl`````e`````s.
 
 
-ANDROIDENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment[]>: User groups which enroll Android devices through partner.
-  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+ANDROID`````e`````NROLLM`````e`````NTASSIGNM`````e`````NTS <IMicrosoftGraphComplianc`````e`````Manag`````e`````m`````e`````ntPartn`````e`````rAssignm`````e`````nt[]>: Us`````e`````r groups which `````e`````nroll Android d`````e`````vic`````e`````s through partn`````e`````r.
+  - `[Targ`````e`````t <IMicrosoftGraphD`````e`````vic`````e`````AndAppManag`````e`````m`````e`````ntAssignm`````e`````ntTarg`````e`````t>]`: Bas`````e````` typ`````e````` for assignm`````e`````nt targ`````e`````ts.
+    - `[(Any) <Obj`````e`````ct>]`: This indicat`````e`````s any prop`````e`````rty can b`````e````` add`````e`````d to this obj`````e`````ct.
 
-BODYPARAMETER <IMicrosoftGraphComplianceManagementPartner1>: Compliance management partner for all platforms
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+BODYPARAM`````e`````T`````e`````R <IMicrosoftGraphComplianc`````e`````Manag`````e`````m`````e`````ntPartn`````e`````r1>: Complianc`````e````` manag`````e`````m`````e`````nt partn`````e`````r for all platforms
+  - `[(Any) <Obj`````e`````ct>]`: This indicat`````e`````s any prop`````e`````rty can b`````e````` add`````e`````d to this obj`````e`````ct.
   - `[Id <String>]`: 
-  - `[AndroidEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment[]>]`: User groups which enroll Android devices through partner.
-    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AndroidOnboarded <Boolean?>]`: Partner onboarded for Android devices.
-  - `[DisplayName <String>]`: Partner display name
-  - `[IosEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment[]>]`: User groups which enroll ios devices through partner.
-  - `[IosOnboarded <Boolean?>]`: Partner onboarded for ios devices.
-  - `[LastHeartbeatDateTime <DateTime?>]`: Timestamp of last heartbeat after admin onboarded to the compliance management partner
-  - `[MacOSEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment[]>]`: User groups which enroll Mac devices through partner.
-  - `[MacOSOnboarded <Boolean?>]`: Partner onboarded for Mac devices.
-  - `[PartnerState <DeviceManagementPartnerTenantState?>]`: Partner state of this tenant.
+  - `[Android`````e`````nrollm`````e`````ntAssignm`````e`````nts <IMicrosoftGraphComplianc`````e`````Manag`````e`````m`````e`````ntPartn`````e`````rAssignm`````e`````nt[]>]`: Us`````e`````r groups which `````e`````nroll Android d`````e`````vic`````e`````s through partn`````e`````r.
+    - `[Targ`````e`````t <IMicrosoftGraphD`````e`````vic`````e`````AndAppManag`````e`````m`````e`````ntAssignm`````e`````ntTarg`````e`````t>]`: Bas`````e````` typ`````e````` for assignm`````e`````nt targ`````e`````ts.
+      - `[(Any) <Obj`````e`````ct>]`: This indicat`````e`````s any prop`````e`````rty can b`````e````` add`````e`````d to this obj`````e`````ct.
+  - `[AndroidOnboard`````e`````d <Bool`````e`````an?>]`: Partn`````e`````r onboard`````e`````d for Android d`````e`````vic`````e`````s.
+  - `[DisplayNam`````e````` <String>]`: Partn`````e`````r display nam`````e`````
+  - `[Ios`````e`````nrollm`````e`````ntAssignm`````e`````nts <IMicrosoftGraphComplianc`````e`````Manag`````e`````m`````e`````ntPartn`````e`````rAssignm`````e`````nt[]>]`: Us`````e`````r groups which `````e`````nroll ios d`````e`````vic`````e`````s through partn`````e`````r.
+  - `[IosOnboard`````e`````d <Bool`````e`````an?>]`: Partn`````e`````r onboard`````e`````d for ios d`````e`````vic`````e`````s.
+  - `[LastH`````e`````artb`````e`````atDat`````e`````Tim`````e````` <Dat`````e`````Tim`````e`````?>]`: Tim`````e`````stamp of last h`````e`````artb`````e`````at aft`````e`````r admin onboard`````e`````d to th`````e````` complianc`````e````` manag`````e`````m`````e`````nt partn`````e`````r
+  - `[MacOS`````e`````nrollm`````e`````ntAssignm`````e`````nts <IMicrosoftGraphComplianc`````e`````Manag`````e`````m`````e`````ntPartn`````e`````rAssignm`````e`````nt[]>]`: Us`````e`````r groups which `````e`````nroll Mac d`````e`````vic`````e`````s through partn`````e`````r.
+  - `[MacOSOnboard`````e`````d <Bool`````e`````an?>]`: Partn`````e`````r onboard`````e`````d for Mac d`````e`````vic`````e`````s.
+  - `[Partn`````e`````rStat`````e````` <D`````e`````vic`````e`````Manag`````e`````m`````e`````ntPartn`````e`````rT`````e`````nantStat`````e`````?>]`: Partn`````e`````r stat`````e````` of this t`````e`````nant.
 
-INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
-  - `[AuditEventId <String>]`: key: id of auditEvent
-  - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
-  - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
-  - `[CloudPcDeviceImageId <String>]`: key: id of cloudPcDeviceImage
-  - `[CloudPcGalleryImageId <String>]`: key: id of cloudPcGalleryImage
-  - `[CloudPcId <String>]`: key: id of cloudPC
-  - `[CloudPcOnPremisesConnectionId <String>]`: key: id of cloudPcOnPremisesConnection
-  - `[CloudPcProvisioningPolicyAssignmentId <String>]`: key: id of cloudPcProvisioningPolicyAssignment
-  - `[CloudPcProvisioningPolicyId <String>]`: key: id of cloudPcProvisioningPolicy
-  - `[CloudPcServicePlanId <String>]`: key: id of cloudPcServicePlan
-  - `[CloudPcSnapshotId <String>]`: key: id of cloudPcSnapshot
-  - `[CloudPcSupportedRegionId <String>]`: key: id of cloudPcSupportedRegion
-  - `[CloudPcUserSettingAssignmentId <String>]`: key: id of cloudPcUserSettingAssignment
-  - `[CloudPcUserSettingId <String>]`: key: id of cloudPcUserSetting
-  - `[ComanagementEligibleDeviceId <String>]`: key: id of comanagementEligibleDevice
-  - `[ComplianceManagementPartnerId <String>]`: key: id of complianceManagementPartner
-  - `[DeviceAndAppManagementRoleAssignmentId <String>]`: key: id of deviceAndAppManagementRoleAssignment
-  - `[DeviceManagementDomainJoinConnectorId <String>]`: key: id of deviceManagementDomainJoinConnector
-  - `[DeviceManagementExchangeConnectorId <String>]`: key: id of deviceManagementExchangeConnector
-  - `[DeviceManagementExchangeOnPremisesPolicyId <String>]`: key: id of deviceManagementExchangeOnPremisesPolicy
-  - `[DeviceManagementPartnerId <String>]`: key: id of deviceManagementPartner
-  - `[GroupPolicyCategoryId <String>]`: key: id of groupPolicyCategory
-  - `[GroupPolicyCategoryId1 <String>]`: key: id of groupPolicyCategory
-  - `[GroupPolicyDefinitionFileId <String>]`: key: id of groupPolicyDefinitionFile
-  - `[GroupPolicyDefinitionId <String>]`: key: id of groupPolicyDefinition
-  - `[GroupPolicyMigrationReportId <String>]`: key: id of groupPolicyMigrationReport
-  - `[GroupPolicyObjectFileId <String>]`: key: id of groupPolicyObjectFile
-  - `[GroupPolicyOperationId <String>]`: key: id of groupPolicyOperation
-  - `[GroupPolicyPresentationId <String>]`: key: id of groupPolicyPresentation
-  - `[GroupPolicySettingMappingId <String>]`: key: id of groupPolicySettingMapping
-  - `[GroupPolicyUploadedDefinitionFileId <String>]`: key: id of groupPolicyUploadedDefinitionFile
-  - `[IntuneBrandingProfileAssignmentId <String>]`: key: id of intuneBrandingProfileAssignment
-  - `[IntuneBrandingProfileId <String>]`: key: id of intuneBrandingProfile
-  - `[IosUpdateDeviceStatusId <String>]`: key: id of iosUpdateDeviceStatus
-  - `[ManagedAllDeviceCertificateStateId <String>]`: key: id of managedAllDeviceCertificateState
-  - `[MobileThreatDefenseConnectorId <String>]`: key: id of mobileThreatDefenseConnector
-  - `[NdesConnectorId <String>]`: key: id of ndesConnector
-  - `[RemoteAssistancePartnerId <String>]`: key: id of remoteAssistancePartner
-  - `[ResourceOperationId <String>]`: key: id of resourceOperation
-  - `[RestrictedAppsViolationId <String>]`: key: id of restrictedAppsViolation
-  - `[RoleAssignmentId <String>]`: key: id of roleAssignment
-  - `[RoleDefinitionId <String>]`: key: id of roleDefinition
-  - `[RoleScopeTagAutoAssignmentId <String>]`: key: id of roleScopeTagAutoAssignment
-  - `[RoleScopeTagId <String>]`: key: id of roleScopeTag
-  - `[TelecomExpenseManagementPartnerId <String>]`: key: id of telecomExpenseManagementPartner
-  - `[TermsAndConditionsAcceptanceStatusId <String>]`: key: id of termsAndConditionsAcceptanceStatus
-  - `[TermsAndConditionsAssignmentId <String>]`: key: id of termsAndConditionsAssignment
-  - `[TermsAndConditionsGroupAssignmentId <String>]`: key: id of termsAndConditionsGroupAssignment
-  - `[TermsAndConditionsId <String>]`: key: id of termsAndConditions
-  - `[UnsupportedGroupPolicyExtensionId <String>]`: key: id of unsupportedGroupPolicyExtension
-  - `[UserPfxCertificateId <String>]`: key: id of userPFXCertificate
+INPUTOBJ`````e`````CT <ID`````e`````vic`````e`````Manag`````e`````m`````e`````ntAdministrationId`````e`````ntity>: Id`````e`````ntity Param`````e`````t`````e`````r
+  - `[Audit`````e`````v`````e`````ntId <String>]`: k`````e`````y: id of audit`````e`````v`````e`````nt
+  - `[CartToClassAssociationId <String>]`: k`````e`````y: id of cartToClassAssociation
+  - `[CloudPcAudit`````e`````v`````e`````ntId <String>]`: k`````e`````y: id of cloudPcAudit`````e`````v`````e`````nt
+  - `[CloudPcD`````e`````vic`````e`````Imag`````e`````Id <String>]`: k`````e`````y: id of cloudPcD`````e`````vic`````e`````Imag`````e`````
+  - `[CloudPcGall`````e`````ryImag`````e`````Id <String>]`: k`````e`````y: id of cloudPcGall`````e`````ryImag`````e`````
+  - `[CloudPcId <String>]`: k`````e`````y: id of cloudPC
+  - `[CloudPcOnPr`````e`````mis`````e`````sConn`````e`````ctionId <String>]`: k`````e`````y: id of cloudPcOnPr`````e`````mis`````e`````sConn`````e`````ction
+  - `[CloudPcProvisioningPolicyAssignm`````e`````ntId <String>]`: k`````e`````y: id of cloudPcProvisioningPolicyAssignm`````e`````nt
+  - `[CloudPcProvisioningPolicyId <String>]`: k`````e`````y: id of cloudPcProvisioningPolicy
+  - `[CloudPcS`````e`````rvic`````e`````PlanId <String>]`: k`````e`````y: id of cloudPcS`````e`````rvic`````e`````Plan
+  - `[CloudPcSnapshotId <String>]`: k`````e`````y: id of cloudPcSnapshot
+  - `[CloudPcSupport`````e`````dR`````e`````gionId <String>]`: k`````e`````y: id of cloudPcSupport`````e`````dR`````e`````gion
+  - `[CloudPcUs`````e`````rS`````e`````ttingAssignm`````e`````ntId <String>]`: k`````e`````y: id of cloudPcUs`````e`````rS`````e`````ttingAssignm`````e`````nt
+  - `[CloudPcUs`````e`````rS`````e`````ttingId <String>]`: k`````e`````y: id of cloudPcUs`````e`````rS`````e`````tting
+  - `[Comanag`````e`````m`````e`````nt`````e`````ligibl`````e`````D`````e`````vic`````e`````Id <String>]`: k`````e`````y: id of comanag`````e`````m`````e`````nt`````e`````ligibl`````e`````D`````e`````vic`````e`````
+  - `[Complianc`````e`````Manag`````e`````m`````e`````ntPartn`````e`````rId <String>]`: k`````e`````y: id of complianc`````e`````Manag`````e`````m`````e`````ntPartn`````e`````r
+  - `[D`````e`````vic`````e`````AndAppManag`````e`````m`````e`````ntRol`````e`````Assignm`````e`````ntId <String>]`: k`````e`````y: id of d`````e`````vic`````e`````AndAppManag`````e`````m`````e`````ntRol`````e`````Assignm`````e`````nt
+  - `[D`````e`````vic`````e`````Manag`````e`````m`````e`````ntDomainJoinConn`````e`````ctorId <String>]`: k`````e`````y: id of d`````e`````vic`````e`````Manag`````e`````m`````e`````ntDomainJoinConn`````e`````ctor
+  - `[D`````e`````vic`````e`````Manag`````e`````m`````e`````nt`````e`````xchang`````e`````Conn`````e`````ctorId <String>]`: k`````e`````y: id of d`````e`````vic`````e`````Manag`````e`````m`````e`````nt`````e`````xchang`````e`````Conn`````e`````ctor
+  - `[D`````e`````vic`````e`````Manag`````e`````m`````e`````nt`````e`````xchang`````e`````OnPr`````e`````mis`````e`````sPolicyId <String>]`: k`````e`````y: id of d`````e`````vic`````e`````Manag`````e`````m`````e`````nt`````e`````xchang`````e`````OnPr`````e`````mis`````e`````sPolicy
+  - `[D`````e`````vic`````e`````Manag`````e`````m`````e`````ntPartn`````e`````rId <String>]`: k`````e`````y: id of d`````e`````vic`````e`````Manag`````e`````m`````e`````ntPartn`````e`````r
+  - `[GroupPolicyCat`````e`````goryId <String>]`: k`````e`````y: id of groupPolicyCat`````e`````gory
+  - `[GroupPolicyCat`````e`````goryId1 <String>]`: k`````e`````y: id of groupPolicyCat`````e`````gory
+  - `[GroupPolicyD`````e`````finitionFil`````e`````Id <String>]`: k`````e`````y: id of groupPolicyD`````e`````finitionFil`````e`````
+  - `[GroupPolicyD`````e`````finitionId <String>]`: k`````e`````y: id of groupPolicyD`````e`````finition
+  - `[GroupPolicyMigrationR`````e`````portId <String>]`: k`````e`````y: id of groupPolicyMigrationR`````e`````port
+  - `[GroupPolicyObj`````e`````ctFil`````e`````Id <String>]`: k`````e`````y: id of groupPolicyObj`````e`````ctFil`````e`````
+  - `[GroupPolicyOp`````e`````rationId <String>]`: k`````e`````y: id of groupPolicyOp`````e`````ration
+  - `[GroupPolicyPr`````e`````s`````e`````ntationId <String>]`: k`````e`````y: id of groupPolicyPr`````e`````s`````e`````ntation
+  - `[GroupPolicyS`````e`````ttingMappingId <String>]`: k`````e`````y: id of groupPolicyS`````e`````ttingMapping
+  - `[GroupPolicyUpload`````e`````dD`````e`````finitionFil`````e`````Id <String>]`: k`````e`````y: id of groupPolicyUpload`````e`````dD`````e`````finitionFil`````e`````
+  - `[Intun`````e`````BrandingProfil`````e`````Assignm`````e`````ntId <String>]`: k`````e`````y: id of intun`````e`````BrandingProfil`````e`````Assignm`````e`````nt
+  - `[Intun`````e`````BrandingProfil`````e`````Id <String>]`: k`````e`````y: id of intun`````e`````BrandingProfil`````e`````
+  - `[IosUpdat`````e`````D`````e`````vic`````e`````StatusId <String>]`: k`````e`````y: id of iosUpdat`````e`````D`````e`````vic`````e`````Status
+  - `[Manag`````e`````dAllD`````e`````vic`````e`````C`````e`````rtificat`````e`````Stat`````e`````Id <String>]`: k`````e`````y: id of manag`````e`````dAllD`````e`````vic`````e`````C`````e`````rtificat`````e`````Stat`````e`````
+  - `[Mobil`````e`````Thr`````e`````atD`````e`````f`````e`````ns`````e`````Conn`````e`````ctorId <String>]`: k`````e`````y: id of mobil`````e`````Thr`````e`````atD`````e`````f`````e`````ns`````e`````Conn`````e`````ctor
+  - `[Nd`````e`````sConn`````e`````ctorId <String>]`: k`````e`````y: id of nd`````e`````sConn`````e`````ctor
+  - `[R`````e`````mot`````e`````Assistanc`````e`````Partn`````e`````rId <String>]`: k`````e`````y: id of r`````e`````mot`````e`````Assistanc`````e`````Partn`````e`````r
+  - `[R`````e`````sourc`````e`````Op`````e`````rationId <String>]`: k`````e`````y: id of r`````e`````sourc`````e`````Op`````e`````ration
+  - `[R`````e`````strict`````e`````dAppsViolationId <String>]`: k`````e`````y: id of r`````e`````strict`````e`````dAppsViolation
+  - `[Rol`````e`````Assignm`````e`````ntId <String>]`: k`````e`````y: id of rol`````e`````Assignm`````e`````nt
+  - `[Rol`````e`````D`````e`````finitionId <String>]`: k`````e`````y: id of rol`````e`````D`````e`````finition
+  - `[Rol`````e`````Scop`````e`````TagAutoAssignm`````e`````ntId <String>]`: k`````e`````y: id of rol`````e`````Scop`````e`````TagAutoAssignm`````e`````nt
+  - `[Rol`````e`````Scop`````e`````TagId <String>]`: k`````e`````y: id of rol`````e`````Scop`````e`````Tag
+  - `[T`````e`````l`````e`````com`````e`````xp`````e`````ns`````e`````Manag`````e`````m`````e`````ntPartn`````e`````rId <String>]`: k`````e`````y: id of t`````e`````l`````e`````com`````e`````xp`````e`````ns`````e`````Manag`````e`````m`````e`````ntPartn`````e`````r
+  - `[T`````e`````rmsAndConditionsAcc`````e`````ptanc`````e`````StatusId <String>]`: k`````e`````y: id of t`````e`````rmsAndConditionsAcc`````e`````ptanc`````e`````Status
+  - `[T`````e`````rmsAndConditionsAssignm`````e`````ntId <String>]`: k`````e`````y: id of t`````e`````rmsAndConditionsAssignm`````e`````nt
+  - `[T`````e`````rmsAndConditionsGroupAssignm`````e`````ntId <String>]`: k`````e`````y: id of t`````e`````rmsAndConditionsGroupAssignm`````e`````nt
+  - `[T`````e`````rmsAndConditionsId <String>]`: k`````e`````y: id of t`````e`````rmsAndConditions
+  - `[Unsupport`````e`````dGroupPolicy`````e`````xt`````e`````nsionId <String>]`: k`````e`````y: id of unsupport`````e`````dGroupPolicy`````e`````xt`````e`````nsion
+  - `[Us`````e`````rPfxC`````e`````rtificat`````e`````Id <String>]`: k`````e`````y: id of us`````e`````rPFXC`````e`````rtificat`````e`````
 
-IOSENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment[]>: User groups which enroll ios devices through partner.
-  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+IOS`````e`````NROLLM`````e`````NTASSIGNM`````e`````NTS <IMicrosoftGraphComplianc`````e`````Manag`````e`````m`````e`````ntPartn`````e`````rAssignm`````e`````nt[]>: Us`````e`````r groups which `````e`````nroll ios d`````e`````vic`````e`````s through partn`````e`````r.
+  - `[Targ`````e`````t <IMicrosoftGraphD`````e`````vic`````e`````AndAppManag`````e`````m`````e`````ntAssignm`````e`````ntTarg`````e`````t>]`: Bas`````e````` typ`````e````` for assignm`````e`````nt targ`````e`````ts.
+    - `[(Any) <Obj`````e`````ct>]`: This indicat`````e`````s any prop`````e`````rty can b`````e````` add`````e`````d to this obj`````e`````ct.
 
-MACOSENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment[]>: User groups which enroll Mac devices through partner.
-  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+MACOS`````e`````NROLLM`````e`````NTASSIGNM`````e`````NTS <IMicrosoftGraphComplianc`````e`````Manag`````e`````m`````e`````ntPartn`````e`````rAssignm`````e`````nt[]>: Us`````e`````r groups which `````e`````nroll Mac d`````e`````vic`````e`````s through partn`````e`````r.
+  - `[Targ`````e`````t <IMicrosoftGraphD`````e`````vic`````e`````AndAppManag`````e`````m`````e`````ntAssignm`````e`````ntTarg`````e`````t>]`: Bas`````e````` typ`````e````` for assignm`````e`````nt targ`````e`````ts.
+    - `[(Any) <Obj`````e`````ct>]`: This indicat`````e`````s any prop`````e`````rty can b`````e````` add`````e`````d to this obj`````e`````ct.
 
-## RELATED LINKS
+## R`````e`````LAT`````e`````D LINKS
