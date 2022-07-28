@@ -69,7 +69,8 @@ landingContent:
       - linkListType: reference 
         links:
           - text: Cmdlet reference
-            url: ../graph-powershell-1.0/Microsoft.Graph.Applications/Add-MgApplicationKey.md
+            url: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/?view=graph-powershell-1.0
+
 
 
   # Card (optional)
