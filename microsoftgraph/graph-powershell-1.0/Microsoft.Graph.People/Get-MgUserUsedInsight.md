@@ -1,283 +1,283 @@
-﻿---
-external help file: Microsoft.Graph.People-help.xml
-Module Name: Microsoft.Graph.People
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/get-mguserusedinsight
-schema: 2.0.0
+---
+`e`xt`e`rnal h`e`lp fil`e`: Microsoft.Graph.P`e`opl`e`-h`e`lp.xml
+Modul`e` Nam`e`: Microsoft.Graph.P`e`opl`e`
+onlin`e` v`e`rsion: https://docs.microsoft.com/`e`n-us/pow`e`rsh`e`ll/modul`e`/microsoft.graph.p`e`opl`e`/g`e`t-mgus`e`rus`e`dinsight
+sch`e`ma: 2.0.0
 ---
 
-# Get-MgUserUsedInsight
+# G`e`t-MgUs`e`rUs`e`dInsight
 
 ## SYNOPSIS
-Get used from users
+G`e`t us`e`d from us`e`rs
 
 ## SYNTAX
 
-### List (Default)
+### List (D`e`fault)
 ```
-Get-MgUserUsedInsight -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
-```
-
-### Get
-```
-Get-MgUserUsedInsight -UsedInsightId <String> -UserId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+G`e`t-MgUs`e`rUs`e`dInsight -Us`e`rId <String> [-`e`xpandProp`e`rty <String[]>] [-Prop`e`rty <String[]>] [-Filt`e`r <String>]
+ [-S`e`arch <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-Pag`e`Siz`e` <Int32>] [-All]
+ [-CountVariabl`e` <String>] [<CommonParam`e`t`e`rs>]
 ```
 
-### GetViaIdentity
+### G`e`t
 ```
-Get-MgUserUsedInsight -InputObject <IPeopleIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+G`e`t-MgUs`e`rUs`e`dInsight -Us`e`dInsightId <String> -Us`e`rId <String> [-`e`xpandProp`e`rty <String[]>]
+ [-Prop`e`rty <String[]>] [<CommonParam`e`t`e`rs>]
 ```
 
-## DESCRIPTION
-Get used from users
+### G`e`tViaId`e`ntity
+```
+G`e`t-MgUs`e`rUs`e`dInsight -InputObj`e`ct <IP`e`opl`e`Id`e`ntity> [-`e`xpandProp`e`rty <String[]>] [-Prop`e`rty <String[]>]
+ [<CommonParam`e`t`e`rs>]
+```
 
-## EXAMPLES
+## D`e`SCRIPTION
+G`e`t us`e`d from us`e`rs
 
-## PARAMETERS
+## `e`XAMPL`e`S
+
+## PARAM`e`T`e`RS
 
 ### -All
-List all pages.
+List all pag`e`s.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: List
-Aliases:
+Typ`e`: SwitchParam`e`t`e`r
+Param`e`t`e`r S`e`ts: List
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -CountVariable
-Specifies a count of the total number of items in a collection.
-By default, this variable will be set in the global scope.
+### -CountVariabl`e`
+Sp`e`cifi`e`s a count of th`e` total numb`e`r of it`e`ms in a coll`e`ction.
+By d`e`fault, this variabl`e` will b`e` s`e`t in th`e` global scop`e`.
 
 ```yaml
-Type: String
-Parameter Sets: List
-Aliases: CV
+Typ`e`: String
+Param`e`t`e`r S`e`ts: List
+Alias`e`s: CV
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -ExpandProperty
-Expand related entities
+### -`e`xpandProp`e`rty
+`e`xpand r`e`lat`e`d `e`ntiti`e`s
 
 ```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: Expand
+Typ`e`: String[]
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s: `e`xpand
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -Filter
-Filter items by property values
+### -Filt`e`r
+Filt`e`r it`e`ms by prop`e`rty valu`e`s
 
 ```yaml
-Type: String
-Parameter Sets: List
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: List
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -InputObj`e`ct
+Id`e`ntity Param`e`t`e`r
+To construct, pl`e`as`e` us`e` G`e`t-H`e`lp -Onlin`e` and s`e``e` NOT`e`S s`e`ction for INPUTOBJ`e`CT prop`e`rti`e`s and cr`e`at`e` a hash tabl`e`.
 
 ```yaml
-Type: IPeopleIdentity
-Parameter Sets: GetViaIdentity
-Aliases:
+Typ`e`: IP`e`opl`e`Id`e`ntity
+Param`e`t`e`r S`e`ts: G`e`tViaId`e`ntity
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Tru`e` (ByValu`e`)
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -PageSize
-Sets the page size of results.
+### -Pag`e`Siz`e`
+S`e`ts th`e` pag`e` siz`e` of r`e`sults.
 
 ```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
+Typ`e`: Int32
+Param`e`t`e`r S`e`ts: List
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -Property
-Select properties to be returned
+### -Prop`e`rty
+S`e`l`e`ct prop`e`rti`e`s to b`e` r`e`turn`e`d
 
 ```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: Select
+Typ`e`: String[]
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s: S`e`l`e`ct
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -Search
-Search items by search phrases
+### -S`e`arch
+S`e`arch it`e`ms by s`e`arch phras`e`s
 
 ```yaml
-Type: String
-Parameter Sets: List
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: List
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -Sort
-Order items by property values
+Ord`e`r it`e`ms by prop`e`rty valu`e`s
 
 ```yaml
-Type: String[]
-Parameter Sets: List
-Aliases: OrderBy
+Typ`e`: String[]
+Param`e`t`e`r S`e`ts: List
+Alias`e`s: Ord`e`rBy
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -Top
-Show only the first n items
+Show only th`e` first n it`e`ms
 
 ```yaml
-Type: Int32
-Parameter Sets: List
-Aliases: Limit
+Typ`e`: Int32
+Param`e`t`e`r S`e`ts: List
+Alias`e`s: Limit
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -UsedInsightId
-key: id of usedInsight
+### -Us`e`dInsightId
+k`e`y: id of us`e`dInsight
 
 ```yaml
-Type: String
-Parameter Sets: Get
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: G`e`t
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -UserId
-key: id of user
+### -Us`e`rId
+k`e`y: id of us`e`r
 
 ```yaml
-Type: String
-Parameter Sets: List, Get
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: List, G`e`t
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -Skip
-Skip the first n items
+Skip th`e` first n it`e`ms
 
 ```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
+Typ`e`: Int32
+Param`e`t`e`r S`e`ts: List
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam`e`t`e`rs
+This cmdl`e`t supports th`e` common param`e`t`e`rs: -D`e`bug, -`e`rrorAction, -`e`rrorVariabl`e`, -InformationAction, -InformationVariabl`e`, -OutVariabl`e`, -OutBuff`e`r, -Pip`e`lin`e`Variabl`e`, -V`e`rbos`e`, -WarningAction, and -WarningVariabl`e`. For mor`e` information, s`e``e` [about_CommonParam`e`t`e`rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
+### Microsoft.Graph.Pow`e`rSh`e`ll.Mod`e`ls.IP`e`opl`e`Id`e`ntity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUsedInsight
-## NOTES
+### Microsoft.Graph.Pow`e`rSh`e`ll.Mod`e`ls.IMicrosoftGraphUs`e`dInsight
+## NOT`e`S
 
-ALIASES
+ALIAS`e`S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL`e`X PARAM`e`T`e`R PROP`e`RTI`e`S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr`e`at`e` th`e` param`e`t`e`rs d`e`scrib`e`d b`e`low, construct a hash tabl`e` containing th`e` appropriat`e` prop`e`rti`e`s. For information on hash tabl`e`s, run G`e`t-H`e`lp about_Hash_Tabl`e`s.
 
 
-INPUTOBJECT <IPeopleIdentity>: Identity Parameter
-  - `[ActivityStatisticsId <String>]`: key: id of activityStatistics
-  - `[EducationalActivityId <String>]`: key: id of educationalActivity
-  - `[ItemAddressId <String>]`: key: id of itemAddress
-  - `[ItemEmailId <String>]`: key: id of itemEmail
-  - `[ItemPatentId <String>]`: key: id of itemPatent
-  - `[ItemPhoneId <String>]`: key: id of itemPhone
-  - `[ItemPublicationId <String>]`: key: id of itemPublication
-  - `[LanguageProficiencyId <String>]`: key: id of languageProficiency
-  - `[PersonAnnotationId <String>]`: key: id of personAnnotation
-  - `[PersonAnnualEventId <String>]`: key: id of personAnnualEvent
-  - `[PersonAwardId <String>]`: key: id of personAward
-  - `[PersonCertificationId <String>]`: key: id of personCertification
-  - `[PersonId <String>]`: key: id of person
-  - `[PersonInterestId <String>]`: key: id of personInterest
-  - `[PersonNameId <String>]`: key: id of personName
-  - `[PersonWebsiteId <String>]`: key: id of personWebsite
-  - `[ProjectParticipationId <String>]`: key: id of projectParticipation
-  - `[SharedInsightId <String>]`: key: id of sharedInsight
-  - `[SkillProficiencyId <String>]`: key: id of skillProficiency
-  - `[TrendingId <String>]`: key: id of trending
-  - `[UsedInsightId <String>]`: key: id of usedInsight
-  - `[UserAccountInformationId <String>]`: key: id of userAccountInformation
-  - `[UserId <String>]`: key: id of user
-  - `[WebAccountId <String>]`: key: id of webAccount
-  - `[WorkPositionId <String>]`: key: id of workPosition
+INPUTOBJ`e`CT <IP`e`opl`e`Id`e`ntity>: Id`e`ntity Param`e`t`e`r
+  - `[ActivityStatisticsId <String>]`: k`e`y: id of activityStatistics
+  - `[`e`ducationalActivityId <String>]`: k`e`y: id of `e`ducationalActivity
+  - `[It`e`mAddr`e`ssId <String>]`: k`e`y: id of it`e`mAddr`e`ss
+  - `[It`e`m`e`mailId <String>]`: k`e`y: id of it`e`m`e`mail
+  - `[It`e`mPat`e`ntId <String>]`: k`e`y: id of it`e`mPat`e`nt
+  - `[It`e`mPhon`e`Id <String>]`: k`e`y: id of it`e`mPhon`e`
+  - `[It`e`mPublicationId <String>]`: k`e`y: id of it`e`mPublication
+  - `[Languag`e`Profici`e`ncyId <String>]`: k`e`y: id of languag`e`Profici`e`ncy
+  - `[P`e`rsonAnnotationId <String>]`: k`e`y: id of p`e`rsonAnnotation
+  - `[P`e`rsonAnnual`e`v`e`ntId <String>]`: k`e`y: id of p`e`rsonAnnual`e`v`e`nt
+  - `[P`e`rsonAwardId <String>]`: k`e`y: id of p`e`rsonAward
+  - `[P`e`rsonC`e`rtificationId <String>]`: k`e`y: id of p`e`rsonC`e`rtification
+  - `[P`e`rsonId <String>]`: k`e`y: id of p`e`rson
+  - `[P`e`rsonInt`e`r`e`stId <String>]`: k`e`y: id of p`e`rsonInt`e`r`e`st
+  - `[P`e`rsonNam`e`Id <String>]`: k`e`y: id of p`e`rsonNam`e`
+  - `[P`e`rsonW`e`bsit`e`Id <String>]`: k`e`y: id of p`e`rsonW`e`bsit`e`
+  - `[Proj`e`ctParticipationId <String>]`: k`e`y: id of proj`e`ctParticipation
+  - `[Shar`e`dInsightId <String>]`: k`e`y: id of shar`e`dInsight
+  - `[SkillProfici`e`ncyId <String>]`: k`e`y: id of skillProfici`e`ncy
+  - `[Tr`e`ndingId <String>]`: k`e`y: id of tr`e`nding
+  - `[Us`e`dInsightId <String>]`: k`e`y: id of us`e`dInsight
+  - `[Us`e`rAccountInformationId <String>]`: k`e`y: id of us`e`rAccountInformation
+  - `[Us`e`rId <String>]`: k`e`y: id of us`e`r
+  - `[W`e`bAccountId <String>]`: k`e`y: id of w`e`bAccount
+  - `[WorkPositionId <String>]`: k`e`y: id of workPosition
 
-## RELATED LINKS
+## R`e`LAT`e`D LINKS
