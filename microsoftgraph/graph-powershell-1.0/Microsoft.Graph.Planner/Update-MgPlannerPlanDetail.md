@@ -1,292 +1,292 @@
-﻿---
-external help file: Microsoft.Graph.Planner-help.xml
-Module Name: Microsoft.Graph.Planner
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/update-mgplannerplandetail
+---
+externa```l``` he```l```p fi```l```e: Microsoft.Graph.P```l```anner-he```l```p.xm```l```
+Modu```l```e Name: Microsoft.Graph.P```l```anner
+on```l```ine version: https://docs.microsoft.com/en-us/powershe```l``````l```/modu```l```e/microsoft.graph.p```l```anner/update-mgp```l```annerp```l```andetai```l```
 schema: 2.0.0
 ---
 
-# Update-MgPlannerPlanDetail
+# Update-MgP```l```annerP```l```anDetai```l```
 
 ## SYNOPSIS
-Update the navigation property details in planner
+Update the navigation property detai```l```s in p```l```anner
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### UpdateExpanded (Defau```l```t)
 ```
-Update-MgPlannerPlanDetail -PlannerPlanId <String> [-AdditionalProperties <Hashtable>]
- [-CategoryDescriptions <IMicrosoftGraphPlannerCategoryDescriptions>] [-Id <String>] [-SharedWith <Hashtable>]
+Update-MgP```l```annerP```l```anDetai```l``` -P```l```annerP```l```anId <String> [-Additiona```l```Properties <Hashtab```l```e>]
+ [-CategoryDescriptions <IMicrosoftGraphP```l```annerCategoryDescriptions>] [-Id <String>] [-SharedWith <Hashtab```l```e>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgPlannerPlanDetail -PlannerPlanId <String> -BodyParameter <IMicrosoftGraphPlannerPlanDetails>
+Update-MgP```l```annerP```l```anDetai```l``` -P```l```annerP```l```anId <String> -BodyParameter <IMicrosoftGraphP```l```annerP```l```anDetai```l```s>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgPlannerPlanDetail -InputObject <IPlannerIdentity> [-AdditionalProperties <Hashtable>]
- [-CategoryDescriptions <IMicrosoftGraphPlannerCategoryDescriptions>] [-Id <String>] [-SharedWith <Hashtable>]
+Update-MgP```l```annerP```l```anDetai```l``` -InputObject <IP```l```annerIdentity> [-Additiona```l```Properties <Hashtab```l```e>]
+ [-CategoryDescriptions <IMicrosoftGraphP```l```annerCategoryDescriptions>] [-Id <String>] [-SharedWith <Hashtab```l```e>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgPlannerPlanDetail -InputObject <IPlannerIdentity> -BodyParameter <IMicrosoftGraphPlannerPlanDetails>
+Update-MgP```l```annerP```l```anDetai```l``` -InputObject <IP```l```annerIdentity> -BodyParameter <IMicrosoftGraphP```l```annerP```l```anDetai```l```s>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property details in planner
+Update the navigation property detai```l```s in p```l```anner
 
-## EXAMPLES
+## EXAMP```l```ES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -Additiona```l```Properties
+Additiona```l``` Parameters
 
-```yaml
-Type: Hashtable
+```yam```l```
+Type: Hashtab```l```e
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+A```l```iases:
 
-Required: False
+Required: Fa```l```se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau```l```t va```l```ue: None
+Accept pipe```l```ine input: Fa```l```se
+Accept wi```l```dcard characters: Fa```l```se
 ```
 
 ### -BodyParameter
-plannerPlanDetails
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+p```l```annerP```l```anDetai```l```s
+To construct, p```l```ease use Get-He```l```p -On```l```ine and see NOTES section for BODYPARAMETER properties and create a hash tab```l```e.
 
-```yaml
-Type: IMicrosoftGraphPlannerPlanDetails
+```yam```l```
+Type: IMicrosoftGraphP```l```annerP```l```anDetai```l```s
 Parameter Sets: Update, UpdateViaIdentity
-Aliases:
+A```l```iases:
 
 Required: True
 Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Defau```l```t va```l```ue: None
+Accept pipe```l```ine input: True (ByVa```l```ue)
+Accept wi```l```dcard characters: Fa```l```se
 ```
 
 ### -CategoryDescriptions
-plannerCategoryDescriptions
-To construct, please use Get-Help -Online and see NOTES section for CATEGORYDESCRIPTIONS properties and create a hash table.
+p```l```annerCategoryDescriptions
+To construct, p```l```ease use Get-He```l```p -On```l```ine and see NOTES section for CATEGORYDESCRIPTIONS properties and create a hash tab```l```e.
 
-```yaml
-Type: IMicrosoftGraphPlannerCategoryDescriptions
+```yam```l```
+Type: IMicrosoftGraphP```l```annerCategoryDescriptions
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+A```l```iases:
 
-Required: False
+Required: Fa```l```se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau```l```t va```l```ue: None
+Accept pipe```l```ine input: Fa```l```se
+Accept wi```l```dcard characters: Fa```l```se
 ```
 
 ### -Id
 .
 
-```yaml
+```yam```l```
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+A```l```iases:
 
-Required: False
+Required: Fa```l```se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau```l```t va```l```ue: None
+Accept pipe```l```ine input: Fa```l```se
+Accept wi```l```dcard characters: Fa```l```se
 ```
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, p```l```ease use Get-He```l```p -On```l```ine and see NOTES section for INPUTOBJECT properties and create a hash tab```l```e.
 
-```yaml
-Type: IPlannerIdentity
+```yam```l```
+Type: IP```l```annerIdentity
 Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
-Aliases:
+A```l```iases:
 
 Required: True
 Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Defau```l```t va```l```ue: None
+Accept pipe```l```ine input: True (ByVa```l```ue)
+Accept wi```l```dcard characters: Fa```l```se
 ```
 
 ### -PassThru
 Returns true when the command succeeds
 
-```yaml
+```yam```l```
 Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
+Parameter Sets: (A```l``````l```)
+A```l```iases:
 
-Required: False
+Required: Fa```l```se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau```l```t va```l```ue: None
+Accept pipe```l```ine input: Fa```l```se
+Accept wi```l```dcard characters: Fa```l```se
 ```
 
-### -PlannerPlanId
-key: id of plannerPlan
+### -P```l```annerP```l```anId
+key: id of p```l```annerP```l```an
 
-```yaml
+```yam```l```
 Type: String
 Parameter Sets: UpdateExpanded, Update
-Aliases:
+A```l```iases:
 
 Required: True
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau```l```t va```l```ue: None
+Accept pipe```l```ine input: Fa```l```se
+Accept wi```l```dcard characters: Fa```l```se
 ```
 
 ### -SharedWith
-plannerUserIds
+p```l```annerUserIds
 
-```yaml
-Type: Hashtable
+```yam```l```
+Type: Hashtab```l```e
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+A```l```iases:
 
-Required: False
+Required: Fa```l```se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau```l```t va```l```ue: None
+Accept pipe```l```ine input: Fa```l```se
+Accept wi```l```dcard characters: Fa```l```se
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation before running the cmd```l```et.
 
-```yaml
+```yam```l```
 Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Parameter Sets: (A```l``````l```)
+A```l```iases: cf
 
-Required: False
+Required: Fa```l```se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau```l```t va```l```ue: None
+Accept pipe```l```ine input: Fa```l```se
+Accept wi```l```dcard characters: Fa```l```se
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what wou```l```d happen if the cmd```l```et runs.
+The cmd```l```et is not run.
 
-```yaml
+```yam```l```
 Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Parameter Sets: (A```l``````l```)
+A```l```iases: wi
 
-Required: False
+Required: Fa```l```se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau```l```t va```l```ue: None
+Accept pipe```l```ine input: Fa```l```se
+Accept wi```l```dcard characters: Fa```l```se
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmd```l```et supports the common parameters: -Debug, -ErrorAction, -ErrorVariab```l```e, -InformationAction, -InformationVariab```l```e, -OutVariab```l```e, -OutBuffer, -Pipe```l```ineVariab```l```e, -Verbose, -WarningAction, and -WarningVariab```l```e. For more information, see [about_CommonParameters](http://go.microsoft.com/fw```l```ink/?```l```inkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerPlanDetails
-### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
+### Microsoft.Graph.PowerShe```l``````l```.Mode```l```s.IMicrosoftGraphP```l```annerP```l```anDetai```l```s
+### Microsoft.Graph.PowerShe```l``````l```.Mode```l```s.IP```l```annerIdentity
 ## OUTPUTS
 
-### System.Boolean
+### System.Boo```l```ean
 ## NOTES
 
-ALIASES
+A```l```IASES
 
-COMPLEX PARAMETER PROPERTIES
+COMP```l```EX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described be```l```ow, construct a hash tab```l```e containing the appropriate properties. For information on hash tab```l```es, run Get-He```l```p about_Hash_Tab```l```es.
 
 
-BODYPARAMETER <IMicrosoftGraphPlannerPlanDetails>: plannerPlanDetails
+BODYPARAMETER <IMicrosoftGraphP```l```annerP```l```anDetai```l```s>: p```l```annerP```l```anDetai```l```s
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
-  - `[CategoryDescriptions <IMicrosoftGraphPlannerCategoryDescriptions>]`: plannerCategoryDescriptions
+  - `[CategoryDescriptions <IMicrosoftGraphP```l```annerCategoryDescriptions>]`: p```l```annerCategoryDescriptions
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Category1 <String>]`: The label associated with Category 1
-    - `[Category10 <String>]`: The label associated with Category 10
-    - `[Category11 <String>]`: The label associated with Category 11
-    - `[Category12 <String>]`: The label associated with Category 12
-    - `[Category13 <String>]`: The label associated with Category 13
-    - `[Category14 <String>]`: The label associated with Category 14
-    - `[Category15 <String>]`: The label associated with Category 15
-    - `[Category16 <String>]`: The label associated with Category 16
-    - `[Category17 <String>]`: The label associated with Category 17
-    - `[Category18 <String>]`: The label associated with Category 18
-    - `[Category19 <String>]`: The label associated with Category 19
-    - `[Category2 <String>]`: The label associated with Category 2
-    - `[Category20 <String>]`: The label associated with Category 20
-    - `[Category21 <String>]`: The label associated with Category 21
-    - `[Category22 <String>]`: The label associated with Category 22
-    - `[Category23 <String>]`: The label associated with Category 23
-    - `[Category24 <String>]`: The label associated with Category 24
-    - `[Category25 <String>]`: The label associated with Category 25
-    - `[Category3 <String>]`: The label associated with Category 3
-    - `[Category4 <String>]`: The label associated with Category 4
-    - `[Category5 <String>]`: The label associated with Category 5
-    - `[Category6 <String>]`: The label associated with Category 6
-    - `[Category7 <String>]`: The label associated with Category 7
-    - `[Category8 <String>]`: The label associated with Category 8
-    - `[Category9 <String>]`: The label associated with Category 9
-  - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
+    - `[Category1 <String>]`: The ```l```abe```l``` associated with Category 1
+    - `[Category10 <String>]`: The ```l```abe```l``` associated with Category 10
+    - `[Category11 <String>]`: The ```l```abe```l``` associated with Category 11
+    - `[Category12 <String>]`: The ```l```abe```l``` associated with Category 12
+    - `[Category13 <String>]`: The ```l```abe```l``` associated with Category 13
+    - `[Category14 <String>]`: The ```l```abe```l``` associated with Category 14
+    - `[Category15 <String>]`: The ```l```abe```l``` associated with Category 15
+    - `[Category16 <String>]`: The ```l```abe```l``` associated with Category 16
+    - `[Category17 <String>]`: The ```l```abe```l``` associated with Category 17
+    - `[Category18 <String>]`: The ```l```abe```l``` associated with Category 18
+    - `[Category19 <String>]`: The ```l```abe```l``` associated with Category 19
+    - `[Category2 <String>]`: The ```l```abe```l``` associated with Category 2
+    - `[Category20 <String>]`: The ```l```abe```l``` associated with Category 20
+    - `[Category21 <String>]`: The ```l```abe```l``` associated with Category 21
+    - `[Category22 <String>]`: The ```l```abe```l``` associated with Category 22
+    - `[Category23 <String>]`: The ```l```abe```l``` associated with Category 23
+    - `[Category24 <String>]`: The ```l```abe```l``` associated with Category 24
+    - `[Category25 <String>]`: The ```l```abe```l``` associated with Category 25
+    - `[Category3 <String>]`: The ```l```abe```l``` associated with Category 3
+    - `[Category4 <String>]`: The ```l```abe```l``` associated with Category 4
+    - `[Category5 <String>]`: The ```l```abe```l``` associated with Category 5
+    - `[Category6 <String>]`: The ```l```abe```l``` associated with Category 6
+    - `[Category7 <String>]`: The ```l```abe```l``` associated with Category 7
+    - `[Category8 <String>]`: The ```l```abe```l``` associated with Category 8
+    - `[Category9 <String>]`: The ```l```abe```l``` associated with Category 9
+  - `[SharedWith <IMicrosoftGraphP```l```annerUserIds>]`: p```l```annerUserIds
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-CATEGORYDESCRIPTIONS <IMicrosoftGraphPlannerCategoryDescriptions>: plannerCategoryDescriptions
+CATEGORYDESCRIPTIONS <IMicrosoftGraphP```l```annerCategoryDescriptions>: p```l```annerCategoryDescriptions
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Category1 <String>]`: The label associated with Category 1
-  - `[Category10 <String>]`: The label associated with Category 10
-  - `[Category11 <String>]`: The label associated with Category 11
-  - `[Category12 <String>]`: The label associated with Category 12
-  - `[Category13 <String>]`: The label associated with Category 13
-  - `[Category14 <String>]`: The label associated with Category 14
-  - `[Category15 <String>]`: The label associated with Category 15
-  - `[Category16 <String>]`: The label associated with Category 16
-  - `[Category17 <String>]`: The label associated with Category 17
-  - `[Category18 <String>]`: The label associated with Category 18
-  - `[Category19 <String>]`: The label associated with Category 19
-  - `[Category2 <String>]`: The label associated with Category 2
-  - `[Category20 <String>]`: The label associated with Category 20
-  - `[Category21 <String>]`: The label associated with Category 21
-  - `[Category22 <String>]`: The label associated with Category 22
-  - `[Category23 <String>]`: The label associated with Category 23
-  - `[Category24 <String>]`: The label associated with Category 24
-  - `[Category25 <String>]`: The label associated with Category 25
-  - `[Category3 <String>]`: The label associated with Category 3
-  - `[Category4 <String>]`: The label associated with Category 4
-  - `[Category5 <String>]`: The label associated with Category 5
-  - `[Category6 <String>]`: The label associated with Category 6
-  - `[Category7 <String>]`: The label associated with Category 7
-  - `[Category8 <String>]`: The label associated with Category 8
-  - `[Category9 <String>]`: The label associated with Category 9
+  - `[Category1 <String>]`: The ```l```abe```l``` associated with Category 1
+  - `[Category10 <String>]`: The ```l```abe```l``` associated with Category 10
+  - `[Category11 <String>]`: The ```l```abe```l``` associated with Category 11
+  - `[Category12 <String>]`: The ```l```abe```l``` associated with Category 12
+  - `[Category13 <String>]`: The ```l```abe```l``` associated with Category 13
+  - `[Category14 <String>]`: The ```l```abe```l``` associated with Category 14
+  - `[Category15 <String>]`: The ```l```abe```l``` associated with Category 15
+  - `[Category16 <String>]`: The ```l```abe```l``` associated with Category 16
+  - `[Category17 <String>]`: The ```l```abe```l``` associated with Category 17
+  - `[Category18 <String>]`: The ```l```abe```l``` associated with Category 18
+  - `[Category19 <String>]`: The ```l```abe```l``` associated with Category 19
+  - `[Category2 <String>]`: The ```l```abe```l``` associated with Category 2
+  - `[Category20 <String>]`: The ```l```abe```l``` associated with Category 20
+  - `[Category21 <String>]`: The ```l```abe```l``` associated with Category 21
+  - `[Category22 <String>]`: The ```l```abe```l``` associated with Category 22
+  - `[Category23 <String>]`: The ```l```abe```l``` associated with Category 23
+  - `[Category24 <String>]`: The ```l```abe```l``` associated with Category 24
+  - `[Category25 <String>]`: The ```l```abe```l``` associated with Category 25
+  - `[Category3 <String>]`: The ```l```abe```l``` associated with Category 3
+  - `[Category4 <String>]`: The ```l```abe```l``` associated with Category 4
+  - `[Category5 <String>]`: The ```l```abe```l``` associated with Category 5
+  - `[Category6 <String>]`: The ```l```abe```l``` associated with Category 6
+  - `[Category7 <String>]`: The ```l```abe```l``` associated with Category 7
+  - `[Category8 <String>]`: The ```l```abe```l``` associated with Category 8
+  - `[Category9 <String>]`: The ```l```abe```l``` associated with Category 9
 
-INPUTOBJECT <IPlannerIdentity>: Identity Parameter
+INPUTOBJECT <IP```l```annerIdentity>: Identity Parameter
   - `[GroupId <String>]`: key: id of group
-  - `[PlannerBucketId <String>]`: key: id of plannerBucket
-  - `[PlannerDeltaId <String>]`: key: id of plannerDelta
-  - `[PlannerPlanId <String>]`: key: id of plannerPlan
-  - `[PlannerRosterId <String>]`: key: id of plannerRoster
-  - `[PlannerRosterMemberId <String>]`: key: id of plannerRosterMember
-  - `[PlannerTaskId <String>]`: key: id of plannerTask
+  - `[P```l```annerBucketId <String>]`: key: id of p```l```annerBucket
+  - `[P```l```annerDe```l```taId <String>]`: key: id of p```l```annerDe```l```ta
+  - `[P```l```annerP```l```anId <String>]`: key: id of p```l```annerP```l```an
+  - `[P```l```annerRosterId <String>]`: key: id of p```l```annerRoster
+  - `[P```l```annerRosterMemberId <String>]`: key: id of p```l```annerRosterMember
+  - `[P```l```annerTaskId <String>]`: key: id of p```l```annerTask
   - `[UserId <String>]`: key: id of user
 
-## RELATED LINKS
+## RE```l```ATED ```l```INKS
