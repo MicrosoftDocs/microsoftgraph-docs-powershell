@@ -1,312 +1,312 @@
-﻿---
-external help file: Microsoft.Graph.Planner-help.xml
-Module Name: Microsoft.Graph.Planner
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/new-mgplannerbucket
+---
+externa``l`` he``l``p fi``l``e: Microsoft.Graph.P``l``anner-he``l``p.xm``l``
+Modu``l``e Name: Microsoft.Graph.P``l``anner
+on``l``ine version: https://docs.microsoft.com/en-us/powershe``l````l``/modu``l``e/microsoft.graph.p``l``anner/new-mgp``l``annerbucket
 schema: 2.0.0
 ---
 
-# New-MgPlannerBucket
+# New-MgP``l``annerBucket
 
 ## SYNOPSIS
-Create new navigation property to buckets for planner
+Create new navigation property to buckets for p``l``anner
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### CreateExpanded (Defau``l``t)
 ```
-New-MgPlannerBucket [-AdditionalProperties <Hashtable>] [-Id <String>] [-Name <String>] [-OrderHint <String>]
- [-PlanId <String>] [-Tasks <IMicrosoftGraphPlannerTask[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgP``l``annerBucket [-Additiona``l``Properties <Hashtab``l``e>] [-Id <String>] [-Name <String>] [-OrderHint <String>]
+ [-P``l``anId <String>] [-Tasks <IMicrosoftGraphP``l``annerTask[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgPlannerBucket -BodyParameter <IMicrosoftGraphPlannerBucket> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgP``l``annerBucket -BodyParameter <IMicrosoftGraphP``l``annerBucket> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create new navigation property to buckets for planner
+Create new navigation property to buckets for p``l``anner
 
-## EXAMPLES
+## EXAMP``l``ES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -Additiona``l``Properties
+Additiona``l`` Parameters
 
-```yaml
-Type: Hashtable
+```yam``l``
+Type: Hashtab``l``e
 Parameter Sets: CreateExpanded
-Aliases:
+A``l``iases:
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### -BodyParameter
-plannerBucket
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+p``l``annerBucket
+To construct, p``l``ease use Get-He``l``p -On``l``ine and see NOTES section for BODYPARAMETER properties and create a hash tab``l``e.
 
-```yaml
-Type: IMicrosoftGraphPlannerBucket
+```yam``l``
+Type: IMicrosoftGraphP``l``annerBucket
 Parameter Sets: Create
-Aliases:
+A``l``iases:
 
 Required: True
 Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: True (ByVa``l``ue)
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### -Id
 .
 
-```yaml
+```yam``l``
 Type: String
 Parameter Sets: CreateExpanded
-Aliases:
+A``l``iases:
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### -Name
 Name of the bucket.
 
-```yaml
+```yam``l``
 Type: String
 Parameter Sets: CreateExpanded
-Aliases:
+A``l``iases:
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### -OrderHint
-Hint used to order items of this type in a list view.
-The format is defined as outlined here.
+Hint used to order items of this type in a ``l``ist view.
+The format is defined as out``l``ined here.
 
-```yaml
+```yam``l``
 Type: String
 Parameter Sets: CreateExpanded
-Aliases:
+A``l``iases:
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
-### -PlanId
-Plan ID to which the bucket belongs.
+### -P``l``anId
+P``l``an ID to which the bucket be``l``ongs.
 
-```yaml
+```yam``l``
 Type: String
 Parameter Sets: CreateExpanded
-Aliases:
+A``l``iases:
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### -Tasks
-Read-only.
-Nullable.
-The collection of tasks in the bucket.
-To construct, please use Get-Help -Online and see NOTES section for TASKS properties and create a hash table.
+Read-on``l``y.
+Nu``l````l``ab``l``e.
+The co``l````l``ection of tasks in the bucket.
+To construct, p``l``ease use Get-He``l``p -On``l``ine and see NOTES section for TASKS properties and create a hash tab``l``e.
 
-```yaml
-Type: IMicrosoftGraphPlannerTask[]
+```yam``l``
+Type: IMicrosoftGraphP``l``annerTask[]
 Parameter Sets: CreateExpanded
-Aliases:
+A``l``iases:
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation before running the cmd``l``et.
 
-```yaml
+```yam``l``
 Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Parameter Sets: (A``l````l``)
+A``l``iases: cf
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what wou``l``d happen if the cmd``l``et runs.
+The cmd``l``et is not run.
 
-```yaml
+```yam``l``
 Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Parameter Sets: (A``l````l``)
+A``l``iases: wi
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmd``l``et supports the common parameters: -Debug, -ErrorAction, -ErrorVariab``l``e, -InformationAction, -InformationVariab``l``e, -OutVariab``l``e, -OutBuffer, -Pipe``l``ineVariab``l``e, -Verbose, -WarningAction, and -WarningVariab``l``e. For more information, see [about_CommonParameters](http://go.microsoft.com/fw``l``ink/?``l``inkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerBucket
+### Microsoft.Graph.PowerShe``l````l``.Mode``l``s.IMicrosoftGraphP``l``annerBucket
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerBucket
+### Microsoft.Graph.PowerShe``l````l``.Mode``l``s.IMicrosoftGraphP``l``annerBucket
 ## NOTES
 
-ALIASES
+A``l``IASES
 
-COMPLEX PARAMETER PROPERTIES
+COMP``l``EX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described be``l``ow, construct a hash tab``l``e containing the appropriate properties. For information on hash tab``l``es, run Get-He``l``p about_Hash_Tab``l``es.
 
 
-BODYPARAMETER <IMicrosoftGraphPlannerBucket>: plannerBucket
+BODYPARAMETER <IMicrosoftGraphP``l``annerBucket>: p``l``annerBucket
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[Name <String>]`: Name of the bucket.
-  - `[OrderHint <String>]`: Hint used to order items of this type in a list view. The format is defined as outlined here.
-  - `[PlanId <String>]`: Plan ID to which the bucket belongs.
-  - `[Tasks <IMicrosoftGraphPlannerTask[]>]`: Read-only. Nullable. The collection of tasks in the bucket.
+  - `[OrderHint <String>]`: Hint used to order items of this type in a ``l``ist view. The format is defined as out``l``ined here.
+  - `[P``l``anId <String>]`: P``l``an ID to which the bucket be``l``ongs.
+  - `[Tasks <IMicrosoftGraphP``l``annerTask[]>]`: Read-on``l``y. Nu``l````l``ab``l``e. The co``l````l``ection of tasks in the bucket.
     - `[Id <String>]`: 
-    - `[ActiveChecklistItemCount <Int32?>]`: Number of checklist items with value set to false, representing incomplete items.
-    - `[AppliedCategories <IMicrosoftGraphPlannerAppliedCategories>]`: plannerAppliedCategories
+    - `[ActiveCheck``l``istItemCount <Int32?>]`: Number of check``l``ist items with va``l``ue set to fa``l``se, representing incomp``l``ete items.
+    - `[App``l``iedCategories <IMicrosoftGraphP``l``annerApp``l``iedCategories>]`: p``l``annerApp``l``iedCategories
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AssignedToTaskBoardFormat <IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat>]`: plannerAssignedToTaskBoardTaskFormat
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: 
-      - `[OrderHintsByAssignee <IMicrosoftGraphPlannerOrderHintsByAssignee>]`: plannerOrderHintsByAssignee
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[UnassignedOrderHint <String>]`: Hint value used to order the task on the AssignedTo view of the Task Board when the task is not assigned to anyone, or if the orderHintsByAssignee dictionary does not provide an order hint for the user the task is assigned to. The format is defined as outlined here.
-    - `[AssigneePriority <String>]`: Hint used to order items of this type in a list view. The format is defined as outlined here.
-    - `[Assignments <IMicrosoftGraphPlannerAssignments>]`: plannerAssignments
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[BucketId <String>]`: Bucket ID to which the task belongs. The bucket needs to be in the plan that the task is in. It is 28 characters long and case-sensitive. Format validation is done on the service.
-    - `[BucketTaskBoardFormat <IMicrosoftGraphPlannerBucketTaskBoardTaskFormat>]`: plannerBucketTaskBoardTaskFormat
+    - `[AssignedToTaskBoardFormat <IMicrosoftGraphP``l``annerAssignedToTaskBoardTaskFormat>]`: p``l``annerAssignedToTaskBoardTaskFormat
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: 
-      - `[OrderHint <String>]`: Hint used to order tasks in the Bucket view of the Task Board. The format is defined as outlined here.
-    - `[ChecklistItemCount <Int32?>]`: Number of checklist items that are present on the task.
-    - `[CompletedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[OrderHintsByAssignee <IMicrosoftGraphP``l``annerOrderHintsByAssignee>]`: p``l``annerOrderHintsByAssignee
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[UnassignedOrderHint <String>]`: Hint va``l``ue used to order the task on the AssignedTo view of the Task Board when the task is not assigned to anyone, or if the orderHintsByAssignee dictionary does not provide an order hint for the user the task is assigned to. The format is defined as out``l``ined here.
+    - `[AssigneePriority <String>]`: Hint used to order items of this type in a ``l``ist view. The format is defined as out``l``ined here.
+    - `[Assignments <IMicrosoftGraphP``l``annerAssignments>]`: p``l``annerAssignments
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[BucketId <String>]`: Bucket ID to which the task be``l``ongs. The bucket needs to be in the p``l``an that the task is in. It is 28 characters ``l``ong and case-sensitive. Format va``l``idation is done on the service.
+    - `[BucketTaskBoardFormat <IMicrosoftGraphP``l``annerBucketTaskBoardTaskFormat>]`: p``l``annerBucketTaskBoardTaskFormat
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: 
+      - `[OrderHint <String>]`: Hint used to order tasks in the Bucket view of the Task Board. The format is defined as out``l``ined here.
+    - `[Check``l``istItemCount <Int32?>]`: Number of check``l``ist items that are present on the task.
+    - `[Comp``l``etedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[App``l``ication <IMicrosoftGraphIdentity>]`: identity
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Disp``l``ayName <String>]`: The identity's disp``l``ay name. Note that this may not a``l``ways be avai``l``ab``l``e or up to date. For examp``l``e, if a user changes their disp``l``ay name, the API may show the new va``l``ue in a future response, but the items associated with the user won't show up as having changed when using de``l``ta.
         - `[Id <String>]`: Unique identifier for the identity.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[CompletedDateTime <DateTime?>]`: Read-only. Date and time at which the 'percentComplete' of the task is set to '100'. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[Comp``l``etedDateTime <DateTime?>]`: Read-on``l``y. Date and time at which the 'percentComp``l``ete' of the task is set to '100'. The Timestamp type represents date and time information using ISO 8601 format and is a``l``ways in UTC time. For examp``l``e, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[ConversationThreadId <String>]`: Thread ID of the conversation on the task. This is the ID of the conversation thread object created in the group.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[CreatedDateTime <DateTime?>]`: Read-only. Date and time at which the task is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[Details <IMicrosoftGraphPlannerTaskDetails>]`: plannerTaskDetails
+    - `[CreatedDateTime <DateTime?>]`: Read-on``l``y. Date and time at which the task is created. The Timestamp type represents date and time information using ISO 8601 format and is a``l``ways in UTC time. For examp``l``e, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[Detai``l``s <IMicrosoftGraphP``l``annerTaskDetai``l``s>]`: p``l``annerTaskDetai``l``s
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: 
-      - `[Checklist <IMicrosoftGraphPlannerChecklistItems>]`: plannerChecklistItems
+      - `[Check``l``ist <IMicrosoftGraphP``l``annerCheck``l``istItems>]`: p``l``annerCheck``l``istItems
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Description <String>]`: Description of the task.
-      - `[PreviewType <String>]`: plannerPreviewType
-      - `[References <IMicrosoftGraphPlannerExternalReferences>]`: plannerExternalReferences
+      - `[PreviewType <String>]`: p``l``annerPreviewType
+      - `[References <IMicrosoftGraphP``l``annerExterna``l``References>]`: p``l``annerExterna``l``References
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DueDateTime <DateTime?>]`: Date and time at which the task is due. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[HasDescription <Boolean?>]`: Read-only. Value is true if the details object of the task has a non-empty description and false otherwise.
-    - `[OrderHint <String>]`: Hint used to order items of this type in a list view. The format is defined as outlined here.
-    - `[PercentComplete <Int32?>]`: Percentage of task completion. When set to 100, the task is considered completed.
-    - `[PlanId <String>]`: Plan ID to which the task belongs.
-    - `[PreviewType <String>]`: plannerPreviewType
-    - `[Priority <Int32?>]`: Priority of the task. Valid range of values is between 0 and 10 (inclusive), with increasing value being lower priority (0 has the highest priority and 10 has the lowest priority).  Currently, Planner interprets values 0 and 1 as 'urgent', 2 and 3 and 4 as 'important', 5, 6, and 7 as 'medium', and 8, 9, and 10 as 'low'.  Currently, Planner sets the value 1 for 'urgent', 3 for 'important', 5 for 'medium', and 9 for 'low'.
-    - `[ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>]`: plannerProgressTaskBoardTaskFormat
+    - `[DueDateTime <DateTime?>]`: Date and time at which the task is due. The Timestamp type represents date and time information using ISO 8601 format and is a``l``ways in UTC time. For examp``l``e, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[HasDescription <Boo``l``ean?>]`: Read-on``l``y. Va``l``ue is true if the detai``l``s object of the task has a non-empty description and fa``l``se otherwise.
+    - `[OrderHint <String>]`: Hint used to order items of this type in a ``l``ist view. The format is defined as out``l``ined here.
+    - `[PercentComp``l``ete <Int32?>]`: Percentage of task comp``l``etion. When set to 100, the task is considered comp``l``eted.
+    - `[P``l``anId <String>]`: P``l``an ID to which the task be``l``ongs.
+    - `[PreviewType <String>]`: p``l``annerPreviewType
+    - `[Priority <Int32?>]`: Priority of the task. Va``l``id range of va``l``ues is between 0 and 10 (inc``l``usive), with increasing va``l``ue being ``l``ower priority (0 has the highest priority and 10 has the ``l``owest priority).  Current``l``y, P``l``anner interprets va``l``ues 0 and 1 as 'urgent', 2 and 3 and 4 as 'important', 5, 6, and 7 as 'medium', and 8, 9, and 10 as '``l``ow'.  Current``l``y, P``l``anner sets the va``l``ue 1 for 'urgent', 3 for 'important', 5 for 'medium', and 9 for '``l``ow'.
+    - `[ProgressTaskBoardFormat <IMicrosoftGraphP``l``annerProgressTaskBoardTaskFormat>]`: p``l``annerProgressTaskBoardTaskFormat
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: 
-      - `[OrderHint <String>]`: Hint value used to order the task on the Progress view of the Task Board. The format is defined as outlined here.
-    - `[ReferenceCount <Int32?>]`: Number of external references that exist on the task.
-    - `[StartDateTime <DateTime?>]`: Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[Title <String>]`: Title of the task.
+      - `[OrderHint <String>]`: Hint va``l``ue used to order the task on the Progress view of the Task Board. The format is defined as out``l``ined here.
+    - `[ReferenceCount <Int32?>]`: Number of externa``l`` references that exist on the task.
+    - `[StartDateTime <DateTime?>]`: Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is a``l``ways in UTC time. For examp``l``e, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[Tit``l``e <String>]`: Tit``l``e of the task.
 
-TASKS <IMicrosoftGraphPlannerTask[]>: Read-only. Nullable. The collection of tasks in the bucket.
+TASKS <IMicrosoftGraphP``l``annerTask[]>: Read-on``l``y. Nu``l````l``ab``l``e. The co``l````l``ection of tasks in the bucket.
   - `[Id <String>]`: 
-  - `[ActiveChecklistItemCount <Int32?>]`: Number of checklist items with value set to false, representing incomplete items.
-  - `[AppliedCategories <IMicrosoftGraphPlannerAppliedCategories>]`: plannerAppliedCategories
+  - `[ActiveCheck``l``istItemCount <Int32?>]`: Number of check``l``ist items with va``l``ue set to fa``l``se, representing incomp``l``ete items.
+  - `[App``l``iedCategories <IMicrosoftGraphP``l``annerApp``l``iedCategories>]`: p``l``annerApp``l``iedCategories
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AssignedToTaskBoardFormat <IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat>]`: plannerAssignedToTaskBoardTaskFormat
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: 
-    - `[OrderHintsByAssignee <IMicrosoftGraphPlannerOrderHintsByAssignee>]`: plannerOrderHintsByAssignee
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[UnassignedOrderHint <String>]`: Hint value used to order the task on the AssignedTo view of the Task Board when the task is not assigned to anyone, or if the orderHintsByAssignee dictionary does not provide an order hint for the user the task is assigned to. The format is defined as outlined here.
-  - `[AssigneePriority <String>]`: Hint used to order items of this type in a list view. The format is defined as outlined here.
-  - `[Assignments <IMicrosoftGraphPlannerAssignments>]`: plannerAssignments
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[BucketId <String>]`: Bucket ID to which the task belongs. The bucket needs to be in the plan that the task is in. It is 28 characters long and case-sensitive. Format validation is done on the service.
-  - `[BucketTaskBoardFormat <IMicrosoftGraphPlannerBucketTaskBoardTaskFormat>]`: plannerBucketTaskBoardTaskFormat
+  - `[AssignedToTaskBoardFormat <IMicrosoftGraphP``l``annerAssignedToTaskBoardTaskFormat>]`: p``l``annerAssignedToTaskBoardTaskFormat
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: 
-    - `[OrderHint <String>]`: Hint used to order tasks in the Bucket view of the Task Board. The format is defined as outlined here.
-  - `[ChecklistItemCount <Int32?>]`: Number of checklist items that are present on the task.
-  - `[CompletedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[OrderHintsByAssignee <IMicrosoftGraphP``l``annerOrderHintsByAssignee>]`: p``l``annerOrderHintsByAssignee
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[UnassignedOrderHint <String>]`: Hint va``l``ue used to order the task on the AssignedTo view of the Task Board when the task is not assigned to anyone, or if the orderHintsByAssignee dictionary does not provide an order hint for the user the task is assigned to. The format is defined as out``l``ined here.
+  - `[AssigneePriority <String>]`: Hint used to order items of this type in a ``l``ist view. The format is defined as out``l``ined here.
+  - `[Assignments <IMicrosoftGraphP``l``annerAssignments>]`: p``l``annerAssignments
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[BucketId <String>]`: Bucket ID to which the task be``l``ongs. The bucket needs to be in the p``l``an that the task is in. It is 28 characters ``l``ong and case-sensitive. Format va``l``idation is done on the service.
+  - `[BucketTaskBoardFormat <IMicrosoftGraphP``l``annerBucketTaskBoardTaskFormat>]`: p``l``annerBucketTaskBoardTaskFormat
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: 
+    - `[OrderHint <String>]`: Hint used to order tasks in the Bucket view of the Task Board. The format is defined as out``l``ined here.
+  - `[Check``l``istItemCount <Int32?>]`: Number of check``l``ist items that are present on the task.
+  - `[Comp``l``etedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[App``l``ication <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Disp``l``ayName <String>]`: The identity's disp``l``ay name. Note that this may not a``l``ways be avai``l``ab``l``e or up to date. For examp``l``e, if a user changes their disp``l``ay name, the API may show the new va``l``ue in a future response, but the items associated with the user won't show up as having changed when using de``l``ta.
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[CompletedDateTime <DateTime?>]`: Read-only. Date and time at which the 'percentComplete' of the task is set to '100'. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[Comp``l``etedDateTime <DateTime?>]`: Read-on``l``y. Date and time at which the 'percentComp``l``ete' of the task is set to '100'. The Timestamp type represents date and time information using ISO 8601 format and is a``l``ways in UTC time. For examp``l``e, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[ConversationThreadId <String>]`: Thread ID of the conversation on the task. This is the ID of the conversation thread object created in the group.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[CreatedDateTime <DateTime?>]`: Read-only. Date and time at which the task is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Details <IMicrosoftGraphPlannerTaskDetails>]`: plannerTaskDetails
+  - `[CreatedDateTime <DateTime?>]`: Read-on``l``y. Date and time at which the task is created. The Timestamp type represents date and time information using ISO 8601 format and is a``l``ways in UTC time. For examp``l``e, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[Detai``l``s <IMicrosoftGraphP``l``annerTaskDetai``l``s>]`: p``l``annerTaskDetai``l``s
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: 
-    - `[Checklist <IMicrosoftGraphPlannerChecklistItems>]`: plannerChecklistItems
+    - `[Check``l``ist <IMicrosoftGraphP``l``annerCheck``l``istItems>]`: p``l``annerCheck``l``istItems
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Description <String>]`: Description of the task.
-    - `[PreviewType <String>]`: plannerPreviewType
-    - `[References <IMicrosoftGraphPlannerExternalReferences>]`: plannerExternalReferences
+    - `[PreviewType <String>]`: p``l``annerPreviewType
+    - `[References <IMicrosoftGraphP``l``annerExterna``l``References>]`: p``l``annerExterna``l``References
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DueDateTime <DateTime?>]`: Date and time at which the task is due. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[HasDescription <Boolean?>]`: Read-only. Value is true if the details object of the task has a non-empty description and false otherwise.
-  - `[OrderHint <String>]`: Hint used to order items of this type in a list view. The format is defined as outlined here.
-  - `[PercentComplete <Int32?>]`: Percentage of task completion. When set to 100, the task is considered completed.
-  - `[PlanId <String>]`: Plan ID to which the task belongs.
-  - `[PreviewType <String>]`: plannerPreviewType
-  - `[Priority <Int32?>]`: Priority of the task. Valid range of values is between 0 and 10 (inclusive), with increasing value being lower priority (0 has the highest priority and 10 has the lowest priority).  Currently, Planner interprets values 0 and 1 as 'urgent', 2 and 3 and 4 as 'important', 5, 6, and 7 as 'medium', and 8, 9, and 10 as 'low'.  Currently, Planner sets the value 1 for 'urgent', 3 for 'important', 5 for 'medium', and 9 for 'low'.
-  - `[ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>]`: plannerProgressTaskBoardTaskFormat
+  - `[DueDateTime <DateTime?>]`: Date and time at which the task is due. The Timestamp type represents date and time information using ISO 8601 format and is a``l``ways in UTC time. For examp``l``e, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[HasDescription <Boo``l``ean?>]`: Read-on``l``y. Va``l``ue is true if the detai``l``s object of the task has a non-empty description and fa``l``se otherwise.
+  - `[OrderHint <String>]`: Hint used to order items of this type in a ``l``ist view. The format is defined as out``l``ined here.
+  - `[PercentComp``l``ete <Int32?>]`: Percentage of task comp``l``etion. When set to 100, the task is considered comp``l``eted.
+  - `[P``l``anId <String>]`: P``l``an ID to which the task be``l``ongs.
+  - `[PreviewType <String>]`: p``l``annerPreviewType
+  - `[Priority <Int32?>]`: Priority of the task. Va``l``id range of va``l``ues is between 0 and 10 (inc``l``usive), with increasing va``l``ue being ``l``ower priority (0 has the highest priority and 10 has the ``l``owest priority).  Current``l``y, P``l``anner interprets va``l``ues 0 and 1 as 'urgent', 2 and 3 and 4 as 'important', 5, 6, and 7 as 'medium', and 8, 9, and 10 as '``l``ow'.  Current``l``y, P``l``anner sets the va``l``ue 1 for 'urgent', 3 for 'important', 5 for 'medium', and 9 for '``l``ow'.
+  - `[ProgressTaskBoardFormat <IMicrosoftGraphP``l``annerProgressTaskBoardTaskFormat>]`: p``l``annerProgressTaskBoardTaskFormat
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: 
-    - `[OrderHint <String>]`: Hint value used to order the task on the Progress view of the Task Board. The format is defined as outlined here.
-  - `[ReferenceCount <Int32?>]`: Number of external references that exist on the task.
-  - `[StartDateTime <DateTime?>]`: Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Title <String>]`: Title of the task.
+    - `[OrderHint <String>]`: Hint va``l``ue used to order the task on the Progress view of the Task Board. The format is defined as out``l``ined here.
+  - `[ReferenceCount <Int32?>]`: Number of externa``l`` references that exist on the task.
+  - `[StartDateTime <DateTime?>]`: Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is a``l``ways in UTC time. For examp``l``e, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[Tit``l``e <String>]`: Tit``l``e of the task.
 
-## RELATED LINKS
+## RE``l``ATED ``l``INKS
 
-## RELATED LINKS
+## RE``l``ATED ``l``INKS
