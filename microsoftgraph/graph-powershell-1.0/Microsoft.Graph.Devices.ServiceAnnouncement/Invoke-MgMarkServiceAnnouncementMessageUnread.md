@@ -1,134 +1,134 @@
-﻿---
-external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
-Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgmarkserviceannouncementmessageunread
-schema: 2.0.0
+---
+`e`xt`e`rnal h`e`lp fil`e`: Microsoft.Graph.D`e`vic`e`s.S`e`rvic`e`Announc`e`m`e`nt-h`e`lp.xml
+Modul`e` Nam`e`: Microsoft.Graph.D`e`vic`e`s.S`e`rvic`e`Announc`e`m`e`nt
+onlin`e` v`e`rsion: https://docs.microsoft.com/`e`n-us/pow`e`rsh`e`ll/modul`e`/microsoft.graph.d`e`vic`e`s.s`e`rvic`e`announc`e`m`e`nt/invok`e`-mgmarks`e`rvic`e`announc`e`m`e`ntm`e`ssag`e`unr`e`ad
+sch`e`ma: 2.0.0
 ---
 
-# Invoke-MgMarkServiceAnnouncementMessageUnread
+# Invok`e`-MgMarkS`e`rvic`e`Announc`e`m`e`ntM`e`ssag`e`Unr`e`ad
 
 ## SYNOPSIS
-Invoke action markUnread
+Invok`e` action markUnr`e`ad
 
 ## SYNTAX
 
-### MarkExpanded1 (Default)
+### Mark`e`xpand`e`d1 (D`e`fault)
 ```
-Invoke-MgMarkServiceAnnouncementMessageUnread [-AdditionalProperties <Hashtable>] [-MessageIds <String[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Invok`e`-MgMarkS`e`rvic`e`Announc`e`m`e`ntM`e`ssag`e`Unr`e`ad [-AdditionalProp`e`rti`e`s <Hashtabl`e`>] [-M`e`ssag`e`Ids <String[]>]
+ [-WhatIf] [-Confirm] [<CommonParam`e`t`e`rs>]
 ```
 
 ### Mark1
 ```
-Invoke-MgMarkServiceAnnouncementMessageUnread
- -BodyParameter <IPathsX0Td2HAdminServiceannouncementMessagesMicrosoftGraphMarkunreadPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Invok`e`-MgMarkS`e`rvic`e`Announc`e`m`e`ntM`e`ssag`e`Unr`e`ad
+ -BodyParam`e`t`e`r <IPathsX0Td2HAdminS`e`rvic`e`announc`e`m`e`ntM`e`ssag`e`sMicrosoftGraphMarkunr`e`adPostR`e`qu`e`stbodyCont`e`ntApplicationJsonSch`e`ma>
+ [-WhatIf] [-Confirm] [<CommonParam`e`t`e`rs>]
 ```
 
-## DESCRIPTION
-Invoke action markUnread
+## D`e`SCRIPTION
+Invok`e` action markUnr`e`ad
 
-## EXAMPLES
+## `e`XAMPL`e`S
 
-## PARAMETERS
+## PARAM`e`T`e`RS
 
-### -AdditionalProperties
-Additional Parameters
+### -AdditionalProp`e`rti`e`s
+Additional Param`e`t`e`rs
 
 ```yaml
-Type: Hashtable
-Parameter Sets: MarkExpanded1
-Aliases:
+Typ`e`: Hashtabl`e`
+Param`e`t`e`r S`e`ts: Mark`e`xpand`e`d1
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -BodyParameter
+### -BodyParam`e`t`e`r
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, pl`e`as`e` us`e` G`e`t-H`e`lp -Onlin`e` and s`e``e` NOT`e`S s`e`ction for BODYPARAM`e`T`e`R prop`e`rti`e`s and cr`e`at`e` a hash tabl`e`.
 
 ```yaml
-Type: IPathsX0Td2HAdminServiceannouncementMessagesMicrosoftGraphMarkunreadPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Mark1
-Aliases:
+Typ`e`: IPathsX0Td2HAdminS`e`rvic`e`announc`e`m`e`ntM`e`ssag`e`sMicrosoftGraphMarkunr`e`adPostR`e`qu`e`stbodyCont`e`ntApplicationJsonSch`e`ma
+Param`e`t`e`r S`e`ts: Mark1
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Tru`e` (ByValu`e`)
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -MessageIds
+### -M`e`ssag`e`Ids
 .
 
 ```yaml
-Type: String[]
-Parameter Sets: MarkExpanded1
-Aliases:
+Typ`e`: String[]
+Param`e`t`e`r S`e`ts: Mark`e`xpand`e`d1
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation b`e`for`e` running th`e` cmdl`e`t.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Typ`e`: SwitchParam`e`t`e`r
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happ`e`n if th`e` cmdl`e`t runs.
+Th`e` cmdl`e`t is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Typ`e`: SwitchParam`e`t`e`r
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam`e`t`e`rs
+This cmdl`e`t supports th`e` common param`e`t`e`rs: -D`e`bug, -`e`rrorAction, -`e`rrorVariabl`e`, -InformationAction, -InformationVariabl`e`, -OutVariabl`e`, -OutBuff`e`r, -Pip`e`lin`e`Variabl`e`, -V`e`rbos`e`, -WarningAction, and -WarningVariabl`e`. For mor`e` information, s`e``e` [about_CommonParam`e`t`e`rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsX0Td2HAdminServiceannouncementMessagesMicrosoftGraphMarkunreadPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Pow`e`rSh`e`ll.Mod`e`ls.IPathsX0Td2HAdminS`e`rvic`e`announc`e`m`e`ntM`e`ssag`e`sMicrosoftGraphMarkunr`e`adPostR`e`qu`e`stbodyCont`e`ntApplicationJsonSch`e`ma
 ## OUTPUTS
 
-### System.Boolean
-## NOTES
+### Syst`e`m.Bool`e`an
+## NOT`e`S
 
-ALIASES
+ALIAS`e`S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL`e`X PARAM`e`T`e`R PROP`e`RTI`e`S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr`e`at`e` th`e` param`e`t`e`rs d`e`scrib`e`d b`e`low, construct a hash tabl`e` containing th`e` appropriat`e` prop`e`rti`e`s. For information on hash tabl`e`s, run G`e`t-H`e`lp about_Hash_Tabl`e`s.
 
 
-BODYPARAMETER <IPathsX0Td2HAdminServiceannouncementMessagesMicrosoftGraphMarkunreadPostRequestbodyContentApplicationJsonSchema>: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[MessageIds <String[]>]`: 
+BODYPARAM`e`T`e`R <IPathsX0Td2HAdminS`e`rvic`e`announc`e`m`e`ntM`e`ssag`e`sMicrosoftGraphMarkunr`e`adPostR`e`qu`e`stbodyCont`e`ntApplicationJsonSch`e`ma>: .
+  - `[(Any) <Obj`e`ct>]`: This indicat`e`s any prop`e`rty can b`e` add`e`d to this obj`e`ct.
+  - `[M`e`ssag`e`Ids <String[]>]`: 
 
-## RELATED LINKS
+## R`e`LAT`e`D LINKS
