@@ -1,381 +1,381 @@
-﻿---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementmobilethreatdefenseconnector
-schema: 2.0.0
+---
+``e``xt``e``rnal h``e``lp fil``e``: Microsoft.Graph.D``e``vic``e``Manag``e``m``e``nt.Administration-h``e``lp.xml
+Modul``e`` Nam``e``: Microsoft.Graph.D``e``vic``e``Manag``e``m``e``nt.Administration
+onlin``e`` v``e``rsion: https://docs.microsoft.com/``e``n-us/pow``e``rsh``e``ll/modul``e``/microsoft.graph.d``e``vic``e``manag``e``m``e``nt.administration/updat``e``-mgd``e``vic``e``manag``e``m``e``ntmobil``e``thr``e``atd``e``f``e``ns``e``conn``e``ctor
+sch``e``ma: 2.0.0
 ---
 
-# Update-MgDeviceManagementMobileThreatDefenseConnector
+# Updat``e``-MgD``e``vic``e``Manag``e``m``e``ntMobil``e``Thr``e``atD``e``f``e``ns``e``Conn``e``ctor
 
 ## SYNOPSIS
-Update the navigation property mobileThreatDefenseConnectors in deviceManagement
+Updat``e`` th``e`` navigation prop``e``rty mobil``e``Thr``e``atD``e``f``e``ns``e``Conn``e``ctors in d``e``vic``e``Manag``e``m``e``nt
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### Updat``e````e``xpand``e``d1 (D``e``fault)
 ```
-Update-MgDeviceManagementMobileThreatDefenseConnector -MobileThreatDefenseConnectorId <String>
- [-AdditionalProperties <Hashtable>] [-AndroidDeviceBlockedOnMissingPartnerData] [-AndroidEnabled]
- [-Id <String>] [-IosDeviceBlockedOnMissingPartnerData] [-IosEnabled] [-LastHeartbeatDateTime <DateTime>]
- [-PartnerState <MobileThreatPartnerTenantState>] [-PartnerUnresponsivenessThresholdInDays <Int32>]
- [-PartnerUnsupportedOSVersionBlocked] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update1
-```
-Update-MgDeviceManagementMobileThreatDefenseConnector -MobileThreatDefenseConnectorId <String>
- -BodyParameter <IMicrosoftGraphMobileThreatDefenseConnector1> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Updat``e``-MgD``e``vic``e``Manag``e``m``e``ntMobil``e``Thr``e``atD``e``f``e``ns``e``Conn``e``ctor -Mobil``e``Thr``e``atD``e``f``e``ns``e``Conn``e``ctorId <String>
+ [-AdditionalProp``e``rti``e``s <Hashtabl``e``>] [-AndroidD``e``vic``e``Block``e``dOnMissingPartn``e``rData] [-Android``e``nabl``e``d]
+ [-Id <String>] [-IosD``e``vic``e``Block``e``dOnMissingPartn``e``rData] [-Ios``e``nabl``e``d] [-LastH``e``artb``e``atDat``e``Tim``e`` <Dat``e``Tim``e``>]
+ [-Partn``e``rStat``e`` <Mobil``e``Thr``e``atPartn``e``rT``e``nantStat``e``>] [-Partn``e``rUnr``e``sponsiv``e``n``e``ssThr``e``sholdInDays <Int32>]
+ [-Partn``e``rUnsupport``e``dOSV``e``rsionBlock``e``d] [-PassThru] [-WhatIf] [-Confirm] [<CommonParam``e``t``e``rs>]
 ```
 
-### UpdateViaIdentityExpanded1
+### Updat``e``1
 ```
-Update-MgDeviceManagementMobileThreatDefenseConnector -InputObject <IDeviceManagementAdministrationIdentity>
- [-AdditionalProperties <Hashtable>] [-AndroidDeviceBlockedOnMissingPartnerData] [-AndroidEnabled]
- [-Id <String>] [-IosDeviceBlockedOnMissingPartnerData] [-IosEnabled] [-LastHeartbeatDateTime <DateTime>]
- [-PartnerState <MobileThreatPartnerTenantState>] [-PartnerUnresponsivenessThresholdInDays <Int32>]
- [-PartnerUnsupportedOSVersionBlocked] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Updat``e``-MgD``e``vic``e``Manag``e``m``e``ntMobil``e``Thr``e``atD``e``f``e``ns``e``Conn``e``ctor -Mobil``e``Thr``e``atD``e``f``e``ns``e``Conn``e``ctorId <String>
+ -BodyParam``e``t``e``r <IMicrosoftGraphMobil``e``Thr``e``atD``e``f``e``ns``e``Conn``e``ctor1> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParam``e``t``e``rs>]
 ```
 
-### UpdateViaIdentity1
+### Updat``e``ViaId``e``ntity``e``xpand``e``d1
 ```
-Update-MgDeviceManagementMobileThreatDefenseConnector -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphMobileThreatDefenseConnector1> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Updat``e``-MgD``e``vic``e``Manag``e``m``e``ntMobil``e``Thr``e``atD``e``f``e``ns``e``Conn``e``ctor -InputObj``e``ct <ID``e``vic``e``Manag``e``m``e``ntAdministrationId``e``ntity>
+ [-AdditionalProp``e``rti``e``s <Hashtabl``e``>] [-AndroidD``e``vic``e``Block``e``dOnMissingPartn``e``rData] [-Android``e``nabl``e``d]
+ [-Id <String>] [-IosD``e``vic``e``Block``e``dOnMissingPartn``e``rData] [-Ios``e``nabl``e``d] [-LastH``e``artb``e``atDat``e``Tim``e`` <Dat``e``Tim``e``>]
+ [-Partn``e``rStat``e`` <Mobil``e``Thr``e``atPartn``e``rT``e``nantStat``e``>] [-Partn``e``rUnr``e``sponsiv``e``n``e``ssThr``e``sholdInDays <Int32>]
+ [-Partn``e``rUnsupport``e``dOSV``e``rsionBlock``e``d] [-PassThru] [-WhatIf] [-Confirm] [<CommonParam``e``t``e``rs>]
 ```
 
-## DESCRIPTION
-Update the navigation property mobileThreatDefenseConnectors in deviceManagement
+### Updat``e``ViaId``e``ntity1
+```
+Updat``e``-MgD``e``vic``e``Manag``e``m``e``ntMobil``e``Thr``e``atD``e``f``e``ns``e``Conn``e``ctor -InputObj``e``ct <ID``e``vic``e``Manag``e``m``e``ntAdministrationId``e``ntity>
+ -BodyParam``e``t``e``r <IMicrosoftGraphMobil``e``Thr``e``atD``e``f``e``ns``e``Conn``e``ctor1> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParam``e``t``e``rs>]
+```
 
-## EXAMPLES
+## D``e``SCRIPTION
+Updat``e`` th``e`` navigation prop``e``rty mobil``e``Thr``e``atD``e``f``e``ns``e``Conn``e``ctors in d``e``vic``e``Manag``e``m``e``nt
 
-## PARAMETERS
+## ``e``XAMPL``e``S
 
-### -AdditionalProperties
-Additional Parameters
+## PARAM``e``T``e``RS
+
+### -AdditionalProp``e``rti``e``s
+Additional Param``e``t``e``rs
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ``e``: Hashtabl``e``
+Param``e``t``e``r S``e``ts: Updat``e````e``xpand``e``d1, Updat``e``ViaId``e``ntity``e``xpand``e``d1
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -AndroidDeviceBlockedOnMissingPartnerData
-For Android, set whether Intune must receive data from the data sync partner prior to marking a device compliant
+### -AndroidD``e``vic``e``Block``e``dOnMissingPartn``e``rData
+For Android, s``e``t wh``e``th``e``r Intun``e`` must r``e``c``e``iv``e`` data from th``e`` data sync partn``e``r prior to marking a d``e``vic``e`` compliant
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ``e``: SwitchParam``e``t``e``r
+Param``e``t``e``r S``e``ts: Updat``e````e``xpand``e``d1, Updat``e``ViaId``e``ntity``e``xpand``e``d1
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -AndroidEnabled
-For Android, set whether data from the data sync partner should be used during compliance evaluations
+### -Android``e``nabl``e``d
+For Android, s``e``t wh``e``th``e``r data from th``e`` data sync partn``e``r should b``e`` us``e``d during complianc``e`` ``e``valuations
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ``e``: SwitchParam``e``t``e``r
+Param``e``t``e``r S``e``ts: Updat``e````e``xpand``e``d1, Updat``e``ViaId``e``ntity``e``xpand``e``d1
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -BodyParameter
-Entity which represents a connection to Mobile threat defense partner.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -BodyParam``e``t``e``r
+``e``ntity which r``e``pr``e``s``e``nts a conn``e``ction to Mobil``e`` thr``e``at d``e``f``e``ns``e`` partn``e``r.
+To construct, pl``e``as``e`` us``e`` G``e``t-H``e``lp -Onlin``e`` and s``e````e`` NOT``e``S s``e``ction for BODYPARAM``e``T``e``R prop``e``rti``e``s and cr``e``at``e`` a hash tabl``e``.
 
 ```yaml
-Type: IMicrosoftGraphMobileThreatDefenseConnector1
-Parameter Sets: Update1, UpdateViaIdentity1
-Aliases:
+Typ``e``: IMicrosoftGraphMobil``e``Thr``e``atD``e``f``e``ns``e``Conn``e``ctor1
+Param``e``t``e``r S``e``ts: Updat``e``1, Updat``e``ViaId``e``ntity1
+Alias``e``s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R``e``quir``e``d: Tru``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Tru``e`` (ByValu``e``)
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
 ### -Id
 .
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ``e``: String
+Param``e``t``e``r S``e``ts: Updat``e````e``xpand``e``d1, Updat``e``ViaId``e``ntity``e``xpand``e``d1
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -InputObj``e``ct
+Id``e``ntity Param``e``t``e``r
+To construct, pl``e``as``e`` us``e`` G``e``t-H``e``lp -Onlin``e`` and s``e````e`` NOT``e``S s``e``ction for INPUTOBJ``e``CT prop``e``rti``e``s and cr``e``at``e`` a hash tabl``e``.
 
 ```yaml
-Type: IDeviceManagementAdministrationIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
-Aliases:
+Typ``e``: ID``e``vic``e``Manag``e``m``e``ntAdministrationId``e``ntity
+Param``e``t``e``r S``e``ts: Updat``e``ViaId``e``ntity``e``xpand``e``d1, Updat``e``ViaId``e``ntity1
+Alias``e``s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R``e``quir``e``d: Tru``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Tru``e`` (ByValu``e``)
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -IosDeviceBlockedOnMissingPartnerData
-For IOS, set whether Intune must receive data from the data sync partner prior to marking a device compliant
+### -IosD``e``vic``e``Block``e``dOnMissingPartn``e``rData
+For IOS, s``e``t wh``e``th``e``r Intun``e`` must r``e``c``e``iv``e`` data from th``e`` data sync partn``e``r prior to marking a d``e``vic``e`` compliant
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ``e``: SwitchParam``e``t``e``r
+Param``e``t``e``r S``e``ts: Updat``e````e``xpand``e``d1, Updat``e``ViaId``e``ntity``e``xpand``e``d1
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -IosEnabled
-For IOS, get or set whether data from the data sync partner should be used during compliance evaluations
+### -Ios``e``nabl``e``d
+For IOS, g``e``t or s``e``t wh``e``th``e``r data from th``e`` data sync partn``e``r should b``e`` us``e``d during complianc``e`` ``e``valuations
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ``e``: SwitchParam``e``t``e``r
+Param``e``t``e``r S``e``ts: Updat``e````e``xpand``e``d1, Updat``e``ViaId``e``ntity``e``xpand``e``d1
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -LastHeartbeatDateTime
-DateTime of last Heartbeat recieved from the Data Sync Partner
+### -LastH``e``artb``e``atDat``e``Tim``e``
+Dat``e``Tim``e`` of last H``e``artb``e``at r``e``ci``e``v``e``d from th``e`` Data Sync Partn``e``r
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ``e``: Dat``e``Tim``e``
+Param``e``t``e``r S``e``ts: Updat``e````e``xpand``e``d1, Updat``e``ViaId``e``ntity``e``xpand``e``d1
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -MobileThreatDefenseConnectorId
-key: id of mobileThreatDefenseConnector
+### -Mobil``e``Thr``e``atD``e``f``e``ns``e``Conn``e``ctorId
+k``e``y: id of mobil``e``Thr``e``atD``e``f``e``ns``e``Conn``e``ctor
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
-Aliases:
+Typ``e``: String
+Param``e``t``e``r S``e``ts: Updat``e````e``xpand``e``d1, Updat``e``1
+Alias``e``s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Tru``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -PartnerState
-Partner state of this tenant.
+### -Partn``e``rStat``e``
+Partn``e``r stat``e`` of this t``e``nant.
 
 ```yaml
-Type: MobileThreatPartnerTenantState
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ``e``: Mobil``e``Thr``e``atPartn``e``rT``e``nantStat``e``
+Param``e``t``e``r S``e``ts: Updat``e````e``xpand``e``d1, Updat``e``ViaId``e``ntity``e``xpand``e``d1
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -PartnerUnresponsivenessThresholdInDays
-Get or Set days the per tenant tolerance to unresponsiveness for this partner integration
+### -Partn``e``rUnr``e``sponsiv``e``n``e``ssThr``e``sholdInDays
+G``e``t or S``e``t days th``e`` p``e``r t``e``nant tol``e``ranc``e`` to unr``e``sponsiv``e``n``e``ss for this partn``e``r int``e``gration
 
 ```yaml
-Type: Int32
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ``e``: Int32
+Param``e``t``e``r S``e``ts: Updat``e````e``xpand``e``d1, Updat``e``ViaId``e``ntity``e``xpand``e``d1
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -PartnerUnsupportedOSVersionBlocked
-Get or set whether to block devices on the enabled platforms that do not meet the minimum version requirements of the Data Sync Partner
+### -Partn``e``rUnsupport``e``dOSV``e``rsionBlock``e``d
+G``e``t or s``e``t wh``e``th``e``r to block d``e``vic``e``s on th``e`` ``e``nabl``e``d platforms that do not m``e````e``t th``e`` minimum v``e``rsion r``e``quir``e``m``e``nts of th``e`` Data Sync Partn``e``r
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ``e``: SwitchParam``e``t``e``r
+Param``e``t``e``r S``e``ts: Updat``e````e``xpand``e``d1, Updat``e``ViaId``e``ntity``e``xpand``e``d1
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
 ### -PassThru
-Returns true when the command succeeds
+R``e``turns tru``e`` wh``e``n th``e`` command succ``e````e``ds
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
+Typ``e``: SwitchParam``e``t``e``r
+Param``e``t``e``r S``e``ts: (All)
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation b``e``for``e`` running th``e`` cmdl``e``t.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Typ``e``: SwitchParam``e``t``e``r
+Param``e``t``e``r S``e``ts: (All)
+Alias``e``s: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happ``e``n if th``e`` cmdl``e``t runs.
+Th``e`` cmdl``e``t is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Typ``e``: SwitchParam``e``t``e``r
+Param``e``t``e``r S``e``ts: (All)
+Alias``e``s: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam``e``t``e``rs
+This cmdl``e``t supports th``e`` common param``e``t``e``rs: -D``e``bug, -``e``rrorAction, -``e``rrorVariabl``e``, -InformationAction, -InformationVariabl``e``, -OutVariabl``e``, -OutBuff``e``r, -Pip``e``lin``e``Variabl``e``, -V``e``rbos``e``, -WarningAction, and -WarningVariabl``e``. For mor``e`` information, s``e````e`` [about_CommonParam``e``t``e``rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileThreatDefenseConnector1
+### Microsoft.Graph.Pow``e``rSh``e``ll.Mod``e``ls.ID``e``vic``e``Manag``e``m``e``ntAdministrationId``e``ntity
+### Microsoft.Graph.Pow``e``rSh``e``ll.Mod``e``ls.IMicrosoftGraphMobil``e``Thr``e``atD``e``f``e``ns``e``Conn``e``ctor1
 ## OUTPUTS
 
-### System.Boolean
-## NOTES
+### Syst``e``m.Bool``e``an
+## NOT``e``S
 
-ALIASES
+ALIAS``e``S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL``e``X PARAM``e``T``e``R PROP``e``RTI``e``S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr``e``at``e`` th``e`` param``e``t``e``rs d``e``scrib``e``d b``e``low, construct a hash tabl``e`` containing th``e`` appropriat``e`` prop``e``rti``e``s. For information on hash tabl``e``s, run G``e``t-H``e``lp about_Hash_Tabl``e``s.
 
 
-BODYPARAMETER <IMicrosoftGraphMobileThreatDefenseConnector1>: Entity which represents a connection to Mobile threat defense partner.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+BODYPARAM``e``T``e``R <IMicrosoftGraphMobil``e``Thr``e``atD``e``f``e``ns``e``Conn``e``ctor1>: ``e``ntity which r``e``pr``e``s``e``nts a conn``e``ction to Mobil``e`` thr``e``at d``e``f``e``ns``e`` partn``e``r.
+  - `[(Any) <Obj``e``ct>]`: This indicat``e``s any prop``e``rty can b``e`` add``e``d to this obj``e``ct.
   - `[Id <String>]`: 
-  - `[AndroidDeviceBlockedOnMissingPartnerData <Boolean?>]`: For Android, set whether Intune must receive data from the data sync partner prior to marking a device compliant
-  - `[AndroidEnabled <Boolean?>]`: For Android, set whether data from the data sync partner should be used during compliance evaluations
-  - `[IosDeviceBlockedOnMissingPartnerData <Boolean?>]`: For IOS, set whether Intune must receive data from the data sync partner prior to marking a device compliant
-  - `[IosEnabled <Boolean?>]`: For IOS, get or set whether data from the data sync partner should be used during compliance evaluations
-  - `[LastHeartbeatDateTime <DateTime?>]`: DateTime of last Heartbeat recieved from the Data Sync Partner
-  - `[PartnerState <MobileThreatPartnerTenantState?>]`: Partner state of this tenant.
-  - `[PartnerUnresponsivenessThresholdInDays <Int32?>]`: Get or Set days the per tenant tolerance to unresponsiveness for this partner integration
-  - `[PartnerUnsupportedOSVersionBlocked <Boolean?>]`: Get or set whether to block devices on the enabled platforms that do not meet the minimum version requirements of the Data Sync Partner
+  - `[AndroidD``e``vic``e``Block``e``dOnMissingPartn``e``rData <Bool``e``an?>]`: For Android, s``e``t wh``e``th``e``r Intun``e`` must r``e``c``e``iv``e`` data from th``e`` data sync partn``e``r prior to marking a d``e``vic``e`` compliant
+  - `[Android``e``nabl``e``d <Bool``e``an?>]`: For Android, s``e``t wh``e``th``e``r data from th``e`` data sync partn``e``r should b``e`` us``e``d during complianc``e`` ``e``valuations
+  - `[IosD``e``vic``e``Block``e``dOnMissingPartn``e``rData <Bool``e``an?>]`: For IOS, s``e``t wh``e``th``e``r Intun``e`` must r``e``c``e``iv``e`` data from th``e`` data sync partn``e``r prior to marking a d``e``vic``e`` compliant
+  - `[Ios``e``nabl``e``d <Bool``e``an?>]`: For IOS, g``e``t or s``e``t wh``e``th``e``r data from th``e`` data sync partn``e``r should b``e`` us``e``d during complianc``e`` ``e``valuations
+  - `[LastH``e``artb``e``atDat``e``Tim``e`` <Dat``e``Tim``e``?>]`: Dat``e``Tim``e`` of last H``e``artb``e``at r``e``ci``e``v``e``d from th``e`` Data Sync Partn``e``r
+  - `[Partn``e``rStat``e`` <Mobil``e``Thr``e``atPartn``e``rT``e``nantStat``e``?>]`: Partn``e``r stat``e`` of this t``e``nant.
+  - `[Partn``e``rUnr``e``sponsiv``e``n``e``ssThr``e``sholdInDays <Int32?>]`: G``e``t or S``e``t days th``e`` p``e``r t``e``nant tol``e``ranc``e`` to unr``e``sponsiv``e``n``e``ss for this partn``e``r int``e``gration
+  - `[Partn``e``rUnsupport``e``dOSV``e``rsionBlock``e``d <Bool``e``an?>]`: G``e``t or s``e``t wh``e``th``e``r to block d``e``vic``e``s on th``e`` ``e``nabl``e``d platforms that do not m``e````e``t th``e`` minimum v``e``rsion r``e``quir``e``m``e``nts of th``e`` Data Sync Partn``e``r
 
-INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
-  - `[AuditEventId <String>]`: key: id of auditEvent
-  - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
-  - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
-  - `[CloudPcDeviceImageId <String>]`: key: id of cloudPcDeviceImage
-  - `[CloudPcGalleryImageId <String>]`: key: id of cloudPcGalleryImage
-  - `[CloudPcId <String>]`: key: id of cloudPC
-  - `[CloudPcOnPremisesConnectionId <String>]`: key: id of cloudPcOnPremisesConnection
-  - `[CloudPcProvisioningPolicyAssignmentId <String>]`: key: id of cloudPcProvisioningPolicyAssignment
-  - `[CloudPcProvisioningPolicyId <String>]`: key: id of cloudPcProvisioningPolicy
-  - `[CloudPcServicePlanId <String>]`: key: id of cloudPcServicePlan
-  - `[CloudPcSnapshotId <String>]`: key: id of cloudPcSnapshot
-  - `[CloudPcSupportedRegionId <String>]`: key: id of cloudPcSupportedRegion
-  - `[CloudPcUserSettingAssignmentId <String>]`: key: id of cloudPcUserSettingAssignment
-  - `[CloudPcUserSettingId <String>]`: key: id of cloudPcUserSetting
-  - `[ComanagementEligibleDeviceId <String>]`: key: id of comanagementEligibleDevice
-  - `[ComplianceManagementPartnerId <String>]`: key: id of complianceManagementPartner
-  - `[DeviceAndAppManagementRoleAssignmentId <String>]`: key: id of deviceAndAppManagementRoleAssignment
-  - `[DeviceManagementDomainJoinConnectorId <String>]`: key: id of deviceManagementDomainJoinConnector
-  - `[DeviceManagementExchangeConnectorId <String>]`: key: id of deviceManagementExchangeConnector
-  - `[DeviceManagementExchangeOnPremisesPolicyId <String>]`: key: id of deviceManagementExchangeOnPremisesPolicy
-  - `[DeviceManagementPartnerId <String>]`: key: id of deviceManagementPartner
-  - `[GroupPolicyCategoryId <String>]`: key: id of groupPolicyCategory
-  - `[GroupPolicyCategoryId1 <String>]`: key: id of groupPolicyCategory
-  - `[GroupPolicyDefinitionFileId <String>]`: key: id of groupPolicyDefinitionFile
-  - `[GroupPolicyDefinitionId <String>]`: key: id of groupPolicyDefinition
-  - `[GroupPolicyMigrationReportId <String>]`: key: id of groupPolicyMigrationReport
-  - `[GroupPolicyObjectFileId <String>]`: key: id of groupPolicyObjectFile
-  - `[GroupPolicyOperationId <String>]`: key: id of groupPolicyOperation
-  - `[GroupPolicyPresentationId <String>]`: key: id of groupPolicyPresentation
-  - `[GroupPolicySettingMappingId <String>]`: key: id of groupPolicySettingMapping
-  - `[GroupPolicyUploadedDefinitionFileId <String>]`: key: id of groupPolicyUploadedDefinitionFile
-  - `[IntuneBrandingProfileAssignmentId <String>]`: key: id of intuneBrandingProfileAssignment
-  - `[IntuneBrandingProfileId <String>]`: key: id of intuneBrandingProfile
-  - `[IosUpdateDeviceStatusId <String>]`: key: id of iosUpdateDeviceStatus
-  - `[ManagedAllDeviceCertificateStateId <String>]`: key: id of managedAllDeviceCertificateState
-  - `[MobileThreatDefenseConnectorId <String>]`: key: id of mobileThreatDefenseConnector
-  - `[NdesConnectorId <String>]`: key: id of ndesConnector
-  - `[RemoteAssistancePartnerId <String>]`: key: id of remoteAssistancePartner
-  - `[ResourceOperationId <String>]`: key: id of resourceOperation
-  - `[RestrictedAppsViolationId <String>]`: key: id of restrictedAppsViolation
-  - `[RoleAssignmentId <String>]`: key: id of roleAssignment
-  - `[RoleDefinitionId <String>]`: key: id of roleDefinition
-  - `[RoleScopeTagAutoAssignmentId <String>]`: key: id of roleScopeTagAutoAssignment
-  - `[RoleScopeTagId <String>]`: key: id of roleScopeTag
-  - `[TelecomExpenseManagementPartnerId <String>]`: key: id of telecomExpenseManagementPartner
-  - `[TermsAndConditionsAcceptanceStatusId <String>]`: key: id of termsAndConditionsAcceptanceStatus
-  - `[TermsAndConditionsAssignmentId <String>]`: key: id of termsAndConditionsAssignment
-  - `[TermsAndConditionsGroupAssignmentId <String>]`: key: id of termsAndConditionsGroupAssignment
-  - `[TermsAndConditionsId <String>]`: key: id of termsAndConditions
-  - `[UnsupportedGroupPolicyExtensionId <String>]`: key: id of unsupportedGroupPolicyExtension
-  - `[UserPfxCertificateId <String>]`: key: id of userPFXCertificate
+INPUTOBJ``e``CT <ID``e``vic``e``Manag``e``m``e``ntAdministrationId``e``ntity>: Id``e``ntity Param``e``t``e``r
+  - `[Audit``e``v``e``ntId <String>]`: k``e``y: id of audit``e``v``e``nt
+  - `[CartToClassAssociationId <String>]`: k``e``y: id of cartToClassAssociation
+  - `[CloudPcAudit``e``v``e``ntId <String>]`: k``e``y: id of cloudPcAudit``e``v``e``nt
+  - `[CloudPcD``e``vic``e``Imag``e``Id <String>]`: k``e``y: id of cloudPcD``e``vic``e``Imag``e``
+  - `[CloudPcGall``e``ryImag``e``Id <String>]`: k``e``y: id of cloudPcGall``e``ryImag``e``
+  - `[CloudPcId <String>]`: k``e``y: id of cloudPC
+  - `[CloudPcOnPr``e``mis``e``sConn``e``ctionId <String>]`: k``e``y: id of cloudPcOnPr``e``mis``e``sConn``e``ction
+  - `[CloudPcProvisioningPolicyAssignm``e``ntId <String>]`: k``e``y: id of cloudPcProvisioningPolicyAssignm``e``nt
+  - `[CloudPcProvisioningPolicyId <String>]`: k``e``y: id of cloudPcProvisioningPolicy
+  - `[CloudPcS``e``rvic``e``PlanId <String>]`: k``e``y: id of cloudPcS``e``rvic``e``Plan
+  - `[CloudPcSnapshotId <String>]`: k``e``y: id of cloudPcSnapshot
+  - `[CloudPcSupport``e``dR``e``gionId <String>]`: k``e``y: id of cloudPcSupport``e``dR``e``gion
+  - `[CloudPcUs``e``rS``e``ttingAssignm``e``ntId <String>]`: k``e``y: id of cloudPcUs``e``rS``e``ttingAssignm``e``nt
+  - `[CloudPcUs``e``rS``e``ttingId <String>]`: k``e``y: id of cloudPcUs``e``rS``e``tting
+  - `[Comanag``e``m``e``nt``e``ligibl``e``D``e``vic``e``Id <String>]`: k``e``y: id of comanag``e``m``e``nt``e``ligibl``e``D``e``vic``e``
+  - `[Complianc``e``Manag``e``m``e``ntPartn``e``rId <String>]`: k``e``y: id of complianc``e``Manag``e``m``e``ntPartn``e``r
+  - `[D``e``vic``e``AndAppManag``e``m``e``ntRol``e``Assignm``e``ntId <String>]`: k``e``y: id of d``e``vic``e``AndAppManag``e``m``e``ntRol``e``Assignm``e``nt
+  - `[D``e``vic``e``Manag``e``m``e``ntDomainJoinConn``e``ctorId <String>]`: k``e``y: id of d``e``vic``e``Manag``e``m``e``ntDomainJoinConn``e``ctor
+  - `[D``e``vic``e``Manag``e``m``e``nt``e``xchang``e``Conn``e``ctorId <String>]`: k``e``y: id of d``e``vic``e``Manag``e``m``e``nt``e``xchang``e``Conn``e``ctor
+  - `[D``e``vic``e``Manag``e``m``e``nt``e``xchang``e``OnPr``e``mis``e``sPolicyId <String>]`: k``e``y: id of d``e``vic``e``Manag``e``m``e``nt``e``xchang``e``OnPr``e``mis``e``sPolicy
+  - `[D``e``vic``e``Manag``e``m``e``ntPartn``e``rId <String>]`: k``e``y: id of d``e``vic``e``Manag``e``m``e``ntPartn``e``r
+  - `[GroupPolicyCat``e``goryId <String>]`: k``e``y: id of groupPolicyCat``e``gory
+  - `[GroupPolicyCat``e``goryId1 <String>]`: k``e``y: id of groupPolicyCat``e``gory
+  - `[GroupPolicyD``e``finitionFil``e``Id <String>]`: k``e``y: id of groupPolicyD``e``finitionFil``e``
+  - `[GroupPolicyD``e``finitionId <String>]`: k``e``y: id of groupPolicyD``e``finition
+  - `[GroupPolicyMigrationR``e``portId <String>]`: k``e``y: id of groupPolicyMigrationR``e``port
+  - `[GroupPolicyObj``e``ctFil``e``Id <String>]`: k``e``y: id of groupPolicyObj``e``ctFil``e``
+  - `[GroupPolicyOp``e``rationId <String>]`: k``e``y: id of groupPolicyOp``e``ration
+  - `[GroupPolicyPr``e``s``e``ntationId <String>]`: k``e``y: id of groupPolicyPr``e``s``e``ntation
+  - `[GroupPolicyS``e``ttingMappingId <String>]`: k``e``y: id of groupPolicyS``e``ttingMapping
+  - `[GroupPolicyUpload``e``dD``e``finitionFil``e``Id <String>]`: k``e``y: id of groupPolicyUpload``e``dD``e``finitionFil``e``
+  - `[Intun``e``BrandingProfil``e``Assignm``e``ntId <String>]`: k``e``y: id of intun``e``BrandingProfil``e``Assignm``e``nt
+  - `[Intun``e``BrandingProfil``e``Id <String>]`: k``e``y: id of intun``e``BrandingProfil``e``
+  - `[IosUpdat``e``D``e``vic``e``StatusId <String>]`: k``e``y: id of iosUpdat``e``D``e``vic``e``Status
+  - `[Manag``e``dAllD``e``vic``e``C``e``rtificat``e``Stat``e``Id <String>]`: k``e``y: id of manag``e``dAllD``e``vic``e``C``e``rtificat``e``Stat``e``
+  - `[Mobil``e``Thr``e``atD``e``f``e``ns``e``Conn``e``ctorId <String>]`: k``e``y: id of mobil``e``Thr``e``atD``e``f``e``ns``e``Conn``e``ctor
+  - `[Nd``e``sConn``e``ctorId <String>]`: k``e``y: id of nd``e``sConn``e``ctor
+  - `[R``e``mot``e``Assistanc``e``Partn``e``rId <String>]`: k``e``y: id of r``e``mot``e``Assistanc``e``Partn``e``r
+  - `[R``e``sourc``e``Op``e``rationId <String>]`: k``e``y: id of r``e``sourc``e``Op``e``ration
+  - `[R``e``strict``e``dAppsViolationId <String>]`: k``e``y: id of r``e``strict``e``dAppsViolation
+  - `[Rol``e``Assignm``e``ntId <String>]`: k``e``y: id of rol``e``Assignm``e``nt
+  - `[Rol``e``D``e``finitionId <String>]`: k``e``y: id of rol``e``D``e``finition
+  - `[Rol``e``Scop``e``TagAutoAssignm``e``ntId <String>]`: k``e``y: id of rol``e``Scop``e``TagAutoAssignm``e``nt
+  - `[Rol``e``Scop``e``TagId <String>]`: k``e``y: id of rol``e``Scop``e``Tag
+  - `[T``e``l``e``com``e``xp``e``ns``e``Manag``e``m``e``ntPartn``e``rId <String>]`: k``e``y: id of t``e``l``e``com``e``xp``e``ns``e``Manag``e``m``e``ntPartn``e``r
+  - `[T``e``rmsAndConditionsAcc``e``ptanc``e``StatusId <String>]`: k``e``y: id of t``e``rmsAndConditionsAcc``e``ptanc``e``Status
+  - `[T``e``rmsAndConditionsAssignm``e``ntId <String>]`: k``e``y: id of t``e``rmsAndConditionsAssignm``e``nt
+  - `[T``e``rmsAndConditionsGroupAssignm``e``ntId <String>]`: k``e``y: id of t``e``rmsAndConditionsGroupAssignm``e``nt
+  - `[T``e``rmsAndConditionsId <String>]`: k``e``y: id of t``e``rmsAndConditions
+  - `[Unsupport``e``dGroupPolicy``e``xt``e``nsionId <String>]`: k``e``y: id of unsupport``e``dGroupPolicy``e``xt``e``nsion
+  - `[Us``e``rPfxC``e``rtificat``e``Id <String>]`: k``e``y: id of us``e``rPFXC``e``rtificat``e``
 
-## RELATED LINKS
+## R``e``LAT``e``D LINKS
