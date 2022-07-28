@@ -1,393 +1,393 @@
-﻿---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementtermandconditionacceptancestatuses
-schema: 2.0.0
+---
+```e```xt```e```rnal h```e```lp fil```e```: Microsoft.Graph.D```e```vic```e```Manag```e```m```e```nt.Administration-h```e```lp.xml
+Modul```e``` Nam```e```: Microsoft.Graph.D```e```vic```e```Manag```e```m```e```nt.Administration
+onlin```e``` v```e```rsion: https://docs.microsoft.com/```e```n-us/pow```e```rsh```e```ll/modul```e```/microsoft.graph.d```e```vic```e```manag```e```m```e```nt.administration/updat```e```-mgd```e```vic```e```manag```e```m```e```ntt```e```rmandconditionacc```e```ptanc```e```status```e```s
+sch```e```ma: 2.0.0
 ---
 
-# Update-MgDeviceManagementTermAndConditionAcceptanceStatuses
+# Updat```e```-MgD```e```vic```e```Manag```e```m```e```ntT```e```rmAndConditionAcc```e```ptanc```e```Status```e```s
 
 ## SYNOPSIS
-Update the navigation property acceptanceStatuses in deviceManagement
+Updat```e``` th```e``` navigation prop```e```rty acc```e```ptanc```e```Status```e```s in d```e```vic```e```Manag```e```m```e```nt
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### Updat```e``````e```xpand```e```d1 (D```e```fault)
 ```
-Update-MgDeviceManagementTermAndConditionAcceptanceStatuses -TermsAndConditionsAcceptanceStatusId <String>
- -TermsAndConditionsId <String> [-AcceptedDateTime <DateTime>] [-AcceptedVersion <Int32>]
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-TermsAndConditions <IMicrosoftGraphTermsAndConditions1>]
- [-UserDisplayName <String>] [-UserPrincipalName <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Update1
-```
-Update-MgDeviceManagementTermAndConditionAcceptanceStatuses -TermsAndConditionsAcceptanceStatusId <String>
- -TermsAndConditionsId <String> -BodyParameter <IMicrosoftGraphTermsAndConditionsAcceptanceStatus1> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Updat```e```-MgD```e```vic```e```Manag```e```m```e```ntT```e```rmAndConditionAcc```e```ptanc```e```Status```e```s -T```e```rmsAndConditionsAcc```e```ptanc```e```StatusId <String>
+ -T```e```rmsAndConditionsId <String> [-Acc```e```pt```e```dDat```e```Tim```e``` <Dat```e```Tim```e```>] [-Acc```e```pt```e```dV```e```rsion <Int32>]
+ [-AdditionalProp```e```rti```e```s <Hashtabl```e```>] [-Id <String>] [-T```e```rmsAndConditions <IMicrosoftGraphT```e```rmsAndConditions1>]
+ [-Us```e```rDisplayNam```e``` <String>] [-Us```e```rPrincipalNam```e``` <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParam```e```t```e```rs>]
 ```
 
-### UpdateViaIdentityExpanded1
+### Updat```e```1
 ```
-Update-MgDeviceManagementTermAndConditionAcceptanceStatuses
- -InputObject <IDeviceManagementAdministrationIdentity> [-AcceptedDateTime <DateTime>]
- [-AcceptedVersion <Int32>] [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-TermsAndConditions <IMicrosoftGraphTermsAndConditions1>] [-UserDisplayName <String>]
- [-UserPrincipalName <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Updat```e```-MgD```e```vic```e```Manag```e```m```e```ntT```e```rmAndConditionAcc```e```ptanc```e```Status```e```s -T```e```rmsAndConditionsAcc```e```ptanc```e```StatusId <String>
+ -T```e```rmsAndConditionsId <String> -BodyParam```e```t```e```r <IMicrosoftGraphT```e```rmsAndConditionsAcc```e```ptanc```e```Status1> [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParam```e```t```e```rs>]
 ```
 
-### UpdateViaIdentity1
+### Updat```e```ViaId```e```ntity```e```xpand```e```d1
 ```
-Update-MgDeviceManagementTermAndConditionAcceptanceStatuses
- -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphTermsAndConditionsAcceptanceStatus1> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Updat```e```-MgD```e```vic```e```Manag```e```m```e```ntT```e```rmAndConditionAcc```e```ptanc```e```Status```e```s
+ -InputObj```e```ct <ID```e```vic```e```Manag```e```m```e```ntAdministrationId```e```ntity> [-Acc```e```pt```e```dDat```e```Tim```e``` <Dat```e```Tim```e```>]
+ [-Acc```e```pt```e```dV```e```rsion <Int32>] [-AdditionalProp```e```rti```e```s <Hashtabl```e```>] [-Id <String>]
+ [-T```e```rmsAndConditions <IMicrosoftGraphT```e```rmsAndConditions1>] [-Us```e```rDisplayNam```e``` <String>]
+ [-Us```e```rPrincipalNam```e``` <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParam```e```t```e```rs>]
 ```
 
-## DESCRIPTION
-Update the navigation property acceptanceStatuses in deviceManagement
+### Updat```e```ViaId```e```ntity1
+```
+Updat```e```-MgD```e```vic```e```Manag```e```m```e```ntT```e```rmAndConditionAcc```e```ptanc```e```Status```e```s
+ -InputObj```e```ct <ID```e```vic```e```Manag```e```m```e```ntAdministrationId```e```ntity>
+ -BodyParam```e```t```e```r <IMicrosoftGraphT```e```rmsAndConditionsAcc```e```ptanc```e```Status1> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParam```e```t```e```rs>]
+```
 
-## EXAMPLES
+## D```e```SCRIPTION
+Updat```e``` th```e``` navigation prop```e```rty acc```e```ptanc```e```Status```e```s in d```e```vic```e```Manag```e```m```e```nt
 
-## PARAMETERS
+## ```e```XAMPL```e```S
 
-### -AcceptedDateTime
-DateTime when the terms were last accepted by the user.
+## PARAM```e```T```e```RS
+
+### -Acc```e```pt```e```dDat```e```Tim```e```
+Dat```e```Tim```e``` wh```e```n th```e``` t```e```rms w```e```r```e``` last acc```e```pt```e```d by th```e``` us```e```r.
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ```e```: Dat```e```Tim```e```
+Param```e```t```e```r S```e```ts: Updat```e``````e```xpand```e```d1, Updat```e```ViaId```e```ntity```e```xpand```e```d1
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -AcceptedVersion
-Most recent version number of the T&C accepted by the user.
+### -Acc```e```pt```e```dV```e```rsion
+Most r```e```c```e```nt v```e```rsion numb```e```r of th```e``` T&C acc```e```pt```e```d by th```e``` us```e```r.
 
 ```yaml
-Type: Int32
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ```e```: Int32
+Param```e```t```e```r S```e```ts: Updat```e``````e```xpand```e```d1, Updat```e```ViaId```e```ntity```e```xpand```e```d1
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -AdditionalProperties
-Additional Parameters
+### -AdditionalProp```e```rti```e```s
+Additional Param```e```t```e```rs
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ```e```: Hashtabl```e```
+Param```e```t```e```r S```e```ts: Updat```e``````e```xpand```e```d1, Updat```e```ViaId```e```ntity```e```xpand```e```d1
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -BodyParameter
-A termsAndConditionsAcceptanceStatus entity represents the acceptance status of a given Terms and Conditions (T&C) policy by a given user.
-Users must accept the most up-to-date version of the terms in order to retain access to the Company Portal.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -BodyParam```e```t```e```r
+A t```e```rmsAndConditionsAcc```e```ptanc```e```Status ```e```ntity r```e```pr```e```s```e```nts th```e``` acc```e```ptanc```e``` status of a giv```e```n T```e```rms and Conditions (T&C) policy by a giv```e```n us```e```r.
+Us```e```rs must acc```e```pt th```e``` most up-to-dat```e``` v```e```rsion of th```e``` t```e```rms in ord```e```r to r```e```tain acc```e```ss to th```e``` Company Portal.
+To construct, pl```e```as```e``` us```e``` G```e```t-H```e```lp -Onlin```e``` and s```e``````e``` NOT```e```S s```e```ction for BODYPARAM```e```T```e```R prop```e```rti```e```s and cr```e```at```e``` a hash tabl```e```.
 
 ```yaml
-Type: IMicrosoftGraphTermsAndConditionsAcceptanceStatus1
-Parameter Sets: Update1, UpdateViaIdentity1
-Aliases:
+Typ```e```: IMicrosoftGraphT```e```rmsAndConditionsAcc```e```ptanc```e```Status1
+Param```e```t```e```r S```e```ts: Updat```e```1, Updat```e```ViaId```e```ntity1
+Alias```e```s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R```e```quir```e```d: Tru```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Tru```e``` (ByValu```e```)
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
 ### -Id
 .
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ```e```: String
+Param```e```t```e```r S```e```ts: Updat```e``````e```xpand```e```d1, Updat```e```ViaId```e```ntity```e```xpand```e```d1
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -InputObj```e```ct
+Id```e```ntity Param```e```t```e```r
+To construct, pl```e```as```e``` us```e``` G```e```t-H```e```lp -Onlin```e``` and s```e``````e``` NOT```e```S s```e```ction for INPUTOBJ```e```CT prop```e```rti```e```s and cr```e```at```e``` a hash tabl```e```.
 
 ```yaml
-Type: IDeviceManagementAdministrationIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
-Aliases:
+Typ```e```: ID```e```vic```e```Manag```e```m```e```ntAdministrationId```e```ntity
+Param```e```t```e```r S```e```ts: Updat```e```ViaId```e```ntity```e```xpand```e```d1, Updat```e```ViaId```e```ntity1
+Alias```e```s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R```e```quir```e```d: Tru```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Tru```e``` (ByValu```e```)
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
 ### -PassThru
-Returns true when the command succeeds
+R```e```turns tru```e``` wh```e```n th```e``` command succ```e``````e```ds
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
+Typ```e```: SwitchParam```e```t```e```r
+Param```e```t```e```r S```e```ts: (All)
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -TermsAndConditions
-A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy.
-T&C policies' contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance.
-They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune.
-To construct, please use Get-Help -Online and see NOTES section for TERMSANDCONDITIONS properties and create a hash table.
+### -T```e```rmsAndConditions
+A t```e```rmsAndConditions ```e```ntity r```e```pr```e```s```e```nts th```e``` m```e```tadata and cont```e```nts of a giv```e```n T```e```rms and Conditions (T&C) policy.
+T&C polici```e```s' cont```e```nts ar```e``` pr```e```s```e```nt```e```d to us```e```rs upon th```e```ir first att```e```mpt to ```e```nroll into Intun```e``` and subs```e```qu```e```ntly upon ```e```dits wh```e```r```e``` an administrator has r```e```quir```e```d r```e```-acc```e```ptanc```e```.
+Th```e```y ```e```nabl```e``` administrators to communicat```e``` th```e``` provisions to which a us```e```r must agr```e``````e``` in ord```e```r to hav```e``` d```e```vic```e```s ```e```nroll```e```d into Intun```e```.
+To construct, pl```e```as```e``` us```e``` G```e```t-H```e```lp -Onlin```e``` and s```e``````e``` NOT```e```S s```e```ction for T```e```RMSANDCONDITIONS prop```e```rti```e```s and cr```e```at```e``` a hash tabl```e```.
 
 ```yaml
-Type: IMicrosoftGraphTermsAndConditions1
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ```e```: IMicrosoftGraphT```e```rmsAndConditions1
+Param```e```t```e```r S```e```ts: Updat```e``````e```xpand```e```d1, Updat```e```ViaId```e```ntity```e```xpand```e```d1
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -TermsAndConditionsAcceptanceStatusId
-key: id of termsAndConditionsAcceptanceStatus
+### -T```e```rmsAndConditionsAcc```e```ptanc```e```StatusId
+k```e```y: id of t```e```rmsAndConditionsAcc```e```ptanc```e```Status
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
-Aliases:
+Typ```e```: String
+Param```e```t```e```r S```e```ts: Updat```e``````e```xpand```e```d1, Updat```e```1
+Alias```e```s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Tru```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -TermsAndConditionsId
-key: id of termsAndConditions
+### -T```e```rmsAndConditionsId
+k```e```y: id of t```e```rmsAndConditions
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
-Aliases:
+Typ```e```: String
+Param```e```t```e```r S```e```ts: Updat```e``````e```xpand```e```d1, Updat```e```1
+Alias```e```s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Tru```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -UserDisplayName
-Display name of the user whose acceptance the entity represents.
+### -Us```e```rDisplayNam```e```
+Display nam```e``` of th```e``` us```e```r whos```e``` acc```e```ptanc```e``` th```e``` ```e```ntity r```e```pr```e```s```e```nts.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ```e```: String
+Param```e```t```e```r S```e```ts: Updat```e``````e```xpand```e```d1, Updat```e```ViaId```e```ntity```e```xpand```e```d1
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -UserPrincipalName
-The userPrincipalName of the User that accepted the term.
+### -Us```e```rPrincipalNam```e```
+Th```e``` us```e```rPrincipalNam```e``` of th```e``` Us```e```r that acc```e```pt```e```d th```e``` t```e```rm.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ```e```: String
+Param```e```t```e```r S```e```ts: Updat```e``````e```xpand```e```d1, Updat```e```ViaId```e```ntity```e```xpand```e```d1
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation b```e```for```e``` running th```e``` cmdl```e```t.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Typ```e```: SwitchParam```e```t```e```r
+Param```e```t```e```r S```e```ts: (All)
+Alias```e```s: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happ```e```n if th```e``` cmdl```e```t runs.
+Th```e``` cmdl```e```t is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Typ```e```: SwitchParam```e```t```e```r
+Param```e```t```e```r S```e```ts: (All)
+Alias```e```s: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam```e```t```e```rs
+This cmdl```e```t supports th```e``` common param```e```t```e```rs: -D```e```bug, -```e```rrorAction, -```e```rrorVariabl```e```, -InformationAction, -InformationVariabl```e```, -OutVariabl```e```, -OutBuff```e```r, -Pip```e```lin```e```Variabl```e```, -V```e```rbos```e```, -WarningAction, and -WarningVariabl```e```. For mor```e``` information, s```e``````e``` [about_CommonParam```e```t```e```rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermsAndConditionsAcceptanceStatus1
+### Microsoft.Graph.Pow```e```rSh```e```ll.Mod```e```ls.ID```e```vic```e```Manag```e```m```e```ntAdministrationId```e```ntity
+### Microsoft.Graph.Pow```e```rSh```e```ll.Mod```e```ls.IMicrosoftGraphT```e```rmsAndConditionsAcc```e```ptanc```e```Status1
 ## OUTPUTS
 
-### System.Boolean
-## NOTES
+### Syst```e```m.Bool```e```an
+## NOT```e```S
 
-ALIASES
+ALIAS```e```S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL```e```X PARAM```e```T```e```R PROP```e```RTI```e```S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr```e```at```e``` th```e``` param```e```t```e```rs d```e```scrib```e```d b```e```low, construct a hash tabl```e``` containing th```e``` appropriat```e``` prop```e```rti```e```s. For information on hash tabl```e```s, run G```e```t-H```e```lp about_Hash_Tabl```e```s.
 
 
-BODYPARAMETER <IMicrosoftGraphTermsAndConditionsAcceptanceStatus1>: A termsAndConditionsAcceptanceStatus entity represents the acceptance status of a given Terms and Conditions (T&C) policy by a given user. Users must accept the most up-to-date version of the terms in order to retain access to the Company Portal.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+BODYPARAM```e```T```e```R <IMicrosoftGraphT```e```rmsAndConditionsAcc```e```ptanc```e```Status1>: A t```e```rmsAndConditionsAcc```e```ptanc```e```Status ```e```ntity r```e```pr```e```s```e```nts th```e``` acc```e```ptanc```e``` status of a giv```e```n T```e```rms and Conditions (T&C) policy by a giv```e```n us```e```r. Us```e```rs must acc```e```pt th```e``` most up-to-dat```e``` v```e```rsion of th```e``` t```e```rms in ord```e```r to r```e```tain acc```e```ss to th```e``` Company Portal.
+  - `[(Any) <Obj```e```ct>]`: This indicat```e```s any prop```e```rty can b```e``` add```e```d to this obj```e```ct.
   - `[Id <String>]`: 
-  - `[AcceptedDateTime <DateTime?>]`: DateTime when the terms were last accepted by the user.
-  - `[AcceptedVersion <Int32?>]`: Most recent version number of the T&C accepted by the user.
-  - `[TermsAndConditions <IMicrosoftGraphTermsAndConditions1>]`: A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy. T&C policies' contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance. They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Acc```e```pt```e```dDat```e```Tim```e``` <Dat```e```Tim```e```?>]`: Dat```e```Tim```e``` wh```e```n th```e``` t```e```rms w```e```r```e``` last acc```e```pt```e```d by th```e``` us```e```r.
+  - `[Acc```e```pt```e```dV```e```rsion <Int32?>]`: Most r```e```c```e```nt v```e```rsion numb```e```r of th```e``` T&C acc```e```pt```e```d by th```e``` us```e```r.
+  - `[T```e```rmsAndConditions <IMicrosoftGraphT```e```rmsAndConditions1>]`: A t```e```rmsAndConditions ```e```ntity r```e```pr```e```s```e```nts th```e``` m```e```tadata and cont```e```nts of a giv```e```n T```e```rms and Conditions (T&C) policy. T&C polici```e```s' cont```e```nts ar```e``` pr```e```s```e```nt```e```d to us```e```rs upon th```e```ir first att```e```mpt to ```e```nroll into Intun```e``` and subs```e```qu```e```ntly upon ```e```dits wh```e```r```e``` an administrator has r```e```quir```e```d r```e```-acc```e```ptanc```e```. Th```e```y ```e```nabl```e``` administrators to communicat```e``` th```e``` provisions to which a us```e```r must agr```e``````e``` in ord```e```r to hav```e``` d```e```vic```e```s ```e```nroll```e```d into Intun```e```.
+    - `[(Any) <Obj```e```ct>]`: This indicat```e```s any prop```e```rty can b```e``` add```e```d to this obj```e```ct.
     - `[Id <String>]`: 
-    - `[AcceptanceStatement <String>]`: Administrator-supplied explanation of the terms and conditions, typically describing what it means to accept the terms and conditions set out in the T&C policy. This is shown to the user on prompts to accept the T&C policy.
-    - `[AcceptanceStatuses <IMicrosoftGraphTermsAndConditionsAcceptanceStatus1[]>]`: The list of acceptance statuses for this T&C policy.
-    - `[Assignments <IMicrosoftGraphTermsAndConditionsAssignment[]>]`: The list of assignments for this T&C policy.
+    - `[Acc```e```ptanc```e```Stat```e```m```e```nt <String>]`: Administrator-suppli```e```d ```e```xplanation of th```e``` t```e```rms and conditions, typically d```e```scribing what it m```e```ans to acc```e```pt th```e``` t```e```rms and conditions s```e```t out in th```e``` T&C policy. This is shown to th```e``` us```e```r on prompts to acc```e```pt th```e``` T&C policy.
+    - `[Acc```e```ptanc```e```Status```e```s <IMicrosoftGraphT```e```rmsAndConditionsAcc```e```ptanc```e```Status1[]>]`: Th```e``` list of acc```e```ptanc```e``` status```e```s for this T&C policy.
+    - `[Assignm```e```nts <IMicrosoftGraphT```e```rmsAndConditionsAssignm```e```nt[]>]`: Th```e``` list of assignm```e```nts for this T&C policy.
       - `[Id <String>]`: 
-      - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[BodyText <String>]`: Administrator-supplied body text of the terms and conditions, typically the terms themselves. This is shown to the user on prompts to accept the T&C policy.
-    - `[CreatedDateTime <DateTime?>]`: DateTime the object was created.
-    - `[Description <String>]`: Administrator-supplied description of the T&C policy.
-    - `[DisplayName <String>]`: Administrator-supplied name for the T&C policy.
-    - `[LastModifiedDateTime <DateTime?>]`: DateTime the object was last modified.
-    - `[Title <String>]`: Administrator-supplied title of the terms and conditions. This is shown to the user on prompts to accept the T&C policy.
-    - `[Version <Int32?>]`: Integer indicating the current version of the terms. Incremented when an administrator makes a change to the terms and wishes to require users to re-accept the modified T&C policy.
-  - `[UserDisplayName <String>]`: Display name of the user whose acceptance the entity represents.
-  - `[UserPrincipalName <String>]`: The userPrincipalName of the User that accepted the term.
+      - `[Targ```e```t <IMicrosoftGraphD```e```vic```e```AndAppManag```e```m```e```ntAssignm```e```ntTarg```e```t>]`: Bas```e``` typ```e``` for assignm```e```nt targ```e```ts.
+        - `[(Any) <Obj```e```ct>]`: This indicat```e```s any prop```e```rty can b```e``` add```e```d to this obj```e```ct.
+    - `[BodyT```e```xt <String>]`: Administrator-suppli```e```d body t```e```xt of th```e``` t```e```rms and conditions, typically th```e``` t```e```rms th```e```ms```e```lv```e```s. This is shown to th```e``` us```e```r on prompts to acc```e```pt th```e``` T&C policy.
+    - `[Cr```e```at```e```dDat```e```Tim```e``` <Dat```e```Tim```e```?>]`: Dat```e```Tim```e``` th```e``` obj```e```ct was cr```e```at```e```d.
+    - `[D```e```scription <String>]`: Administrator-suppli```e```d d```e```scription of th```e``` T&C policy.
+    - `[DisplayNam```e``` <String>]`: Administrator-suppli```e```d nam```e``` for th```e``` T&C policy.
+    - `[LastModifi```e```dDat```e```Tim```e``` <Dat```e```Tim```e```?>]`: Dat```e```Tim```e``` th```e``` obj```e```ct was last modifi```e```d.
+    - `[Titl```e``` <String>]`: Administrator-suppli```e```d titl```e``` of th```e``` t```e```rms and conditions. This is shown to th```e``` us```e```r on prompts to acc```e```pt th```e``` T&C policy.
+    - `[V```e```rsion <Int32?>]`: Int```e```g```e```r indicating th```e``` curr```e```nt v```e```rsion of th```e``` t```e```rms. Incr```e```m```e```nt```e```d wh```e```n an administrator mak```e```s a chang```e``` to th```e``` t```e```rms and wish```e```s to r```e```quir```e``` us```e```rs to r```e```-acc```e```pt th```e``` modifi```e```d T&C policy.
+  - `[Us```e```rDisplayNam```e``` <String>]`: Display nam```e``` of th```e``` us```e```r whos```e``` acc```e```ptanc```e``` th```e``` ```e```ntity r```e```pr```e```s```e```nts.
+  - `[Us```e```rPrincipalNam```e``` <String>]`: Th```e``` us```e```rPrincipalNam```e``` of th```e``` Us```e```r that acc```e```pt```e```d th```e``` t```e```rm.
 
-INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
-  - `[AuditEventId <String>]`: key: id of auditEvent
-  - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
-  - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
-  - `[CloudPcDeviceImageId <String>]`: key: id of cloudPcDeviceImage
-  - `[CloudPcGalleryImageId <String>]`: key: id of cloudPcGalleryImage
-  - `[CloudPcId <String>]`: key: id of cloudPC
-  - `[CloudPcOnPremisesConnectionId <String>]`: key: id of cloudPcOnPremisesConnection
-  - `[CloudPcProvisioningPolicyAssignmentId <String>]`: key: id of cloudPcProvisioningPolicyAssignment
-  - `[CloudPcProvisioningPolicyId <String>]`: key: id of cloudPcProvisioningPolicy
-  - `[CloudPcServicePlanId <String>]`: key: id of cloudPcServicePlan
-  - `[CloudPcSnapshotId <String>]`: key: id of cloudPcSnapshot
-  - `[CloudPcSupportedRegionId <String>]`: key: id of cloudPcSupportedRegion
-  - `[CloudPcUserSettingAssignmentId <String>]`: key: id of cloudPcUserSettingAssignment
-  - `[CloudPcUserSettingId <String>]`: key: id of cloudPcUserSetting
-  - `[ComanagementEligibleDeviceId <String>]`: key: id of comanagementEligibleDevice
-  - `[ComplianceManagementPartnerId <String>]`: key: id of complianceManagementPartner
-  - `[DeviceAndAppManagementRoleAssignmentId <String>]`: key: id of deviceAndAppManagementRoleAssignment
-  - `[DeviceManagementDomainJoinConnectorId <String>]`: key: id of deviceManagementDomainJoinConnector
-  - `[DeviceManagementExchangeConnectorId <String>]`: key: id of deviceManagementExchangeConnector
-  - `[DeviceManagementExchangeOnPremisesPolicyId <String>]`: key: id of deviceManagementExchangeOnPremisesPolicy
-  - `[DeviceManagementPartnerId <String>]`: key: id of deviceManagementPartner
-  - `[GroupPolicyCategoryId <String>]`: key: id of groupPolicyCategory
-  - `[GroupPolicyCategoryId1 <String>]`: key: id of groupPolicyCategory
-  - `[GroupPolicyDefinitionFileId <String>]`: key: id of groupPolicyDefinitionFile
-  - `[GroupPolicyDefinitionId <String>]`: key: id of groupPolicyDefinition
-  - `[GroupPolicyMigrationReportId <String>]`: key: id of groupPolicyMigrationReport
-  - `[GroupPolicyObjectFileId <String>]`: key: id of groupPolicyObjectFile
-  - `[GroupPolicyOperationId <String>]`: key: id of groupPolicyOperation
-  - `[GroupPolicyPresentationId <String>]`: key: id of groupPolicyPresentation
-  - `[GroupPolicySettingMappingId <String>]`: key: id of groupPolicySettingMapping
-  - `[GroupPolicyUploadedDefinitionFileId <String>]`: key: id of groupPolicyUploadedDefinitionFile
-  - `[IntuneBrandingProfileAssignmentId <String>]`: key: id of intuneBrandingProfileAssignment
-  - `[IntuneBrandingProfileId <String>]`: key: id of intuneBrandingProfile
-  - `[IosUpdateDeviceStatusId <String>]`: key: id of iosUpdateDeviceStatus
-  - `[ManagedAllDeviceCertificateStateId <String>]`: key: id of managedAllDeviceCertificateState
-  - `[MobileThreatDefenseConnectorId <String>]`: key: id of mobileThreatDefenseConnector
-  - `[NdesConnectorId <String>]`: key: id of ndesConnector
-  - `[RemoteAssistancePartnerId <String>]`: key: id of remoteAssistancePartner
-  - `[ResourceOperationId <String>]`: key: id of resourceOperation
-  - `[RestrictedAppsViolationId <String>]`: key: id of restrictedAppsViolation
-  - `[RoleAssignmentId <String>]`: key: id of roleAssignment
-  - `[RoleDefinitionId <String>]`: key: id of roleDefinition
-  - `[RoleScopeTagAutoAssignmentId <String>]`: key: id of roleScopeTagAutoAssignment
-  - `[RoleScopeTagId <String>]`: key: id of roleScopeTag
-  - `[TelecomExpenseManagementPartnerId <String>]`: key: id of telecomExpenseManagementPartner
-  - `[TermsAndConditionsAcceptanceStatusId <String>]`: key: id of termsAndConditionsAcceptanceStatus
-  - `[TermsAndConditionsAssignmentId <String>]`: key: id of termsAndConditionsAssignment
-  - `[TermsAndConditionsGroupAssignmentId <String>]`: key: id of termsAndConditionsGroupAssignment
-  - `[TermsAndConditionsId <String>]`: key: id of termsAndConditions
-  - `[UnsupportedGroupPolicyExtensionId <String>]`: key: id of unsupportedGroupPolicyExtension
-  - `[UserPfxCertificateId <String>]`: key: id of userPFXCertificate
+INPUTOBJ```e```CT <ID```e```vic```e```Manag```e```m```e```ntAdministrationId```e```ntity>: Id```e```ntity Param```e```t```e```r
+  - `[Audit```e```v```e```ntId <String>]`: k```e```y: id of audit```e```v```e```nt
+  - `[CartToClassAssociationId <String>]`: k```e```y: id of cartToClassAssociation
+  - `[CloudPcAudit```e```v```e```ntId <String>]`: k```e```y: id of cloudPcAudit```e```v```e```nt
+  - `[CloudPcD```e```vic```e```Imag```e```Id <String>]`: k```e```y: id of cloudPcD```e```vic```e```Imag```e```
+  - `[CloudPcGall```e```ryImag```e```Id <String>]`: k```e```y: id of cloudPcGall```e```ryImag```e```
+  - `[CloudPcId <String>]`: k```e```y: id of cloudPC
+  - `[CloudPcOnPr```e```mis```e```sConn```e```ctionId <String>]`: k```e```y: id of cloudPcOnPr```e```mis```e```sConn```e```ction
+  - `[CloudPcProvisioningPolicyAssignm```e```ntId <String>]`: k```e```y: id of cloudPcProvisioningPolicyAssignm```e```nt
+  - `[CloudPcProvisioningPolicyId <String>]`: k```e```y: id of cloudPcProvisioningPolicy
+  - `[CloudPcS```e```rvic```e```PlanId <String>]`: k```e```y: id of cloudPcS```e```rvic```e```Plan
+  - `[CloudPcSnapshotId <String>]`: k```e```y: id of cloudPcSnapshot
+  - `[CloudPcSupport```e```dR```e```gionId <String>]`: k```e```y: id of cloudPcSupport```e```dR```e```gion
+  - `[CloudPcUs```e```rS```e```ttingAssignm```e```ntId <String>]`: k```e```y: id of cloudPcUs```e```rS```e```ttingAssignm```e```nt
+  - `[CloudPcUs```e```rS```e```ttingId <String>]`: k```e```y: id of cloudPcUs```e```rS```e```tting
+  - `[Comanag```e```m```e```nt```e```ligibl```e```D```e```vic```e```Id <String>]`: k```e```y: id of comanag```e```m```e```nt```e```ligibl```e```D```e```vic```e```
+  - `[Complianc```e```Manag```e```m```e```ntPartn```e```rId <String>]`: k```e```y: id of complianc```e```Manag```e```m```e```ntPartn```e```r
+  - `[D```e```vic```e```AndAppManag```e```m```e```ntRol```e```Assignm```e```ntId <String>]`: k```e```y: id of d```e```vic```e```AndAppManag```e```m```e```ntRol```e```Assignm```e```nt
+  - `[D```e```vic```e```Manag```e```m```e```ntDomainJoinConn```e```ctorId <String>]`: k```e```y: id of d```e```vic```e```Manag```e```m```e```ntDomainJoinConn```e```ctor
+  - `[D```e```vic```e```Manag```e```m```e```nt```e```xchang```e```Conn```e```ctorId <String>]`: k```e```y: id of d```e```vic```e```Manag```e```m```e```nt```e```xchang```e```Conn```e```ctor
+  - `[D```e```vic```e```Manag```e```m```e```nt```e```xchang```e```OnPr```e```mis```e```sPolicyId <String>]`: k```e```y: id of d```e```vic```e```Manag```e```m```e```nt```e```xchang```e```OnPr```e```mis```e```sPolicy
+  - `[D```e```vic```e```Manag```e```m```e```ntPartn```e```rId <String>]`: k```e```y: id of d```e```vic```e```Manag```e```m```e```ntPartn```e```r
+  - `[GroupPolicyCat```e```goryId <String>]`: k```e```y: id of groupPolicyCat```e```gory
+  - `[GroupPolicyCat```e```goryId1 <String>]`: k```e```y: id of groupPolicyCat```e```gory
+  - `[GroupPolicyD```e```finitionFil```e```Id <String>]`: k```e```y: id of groupPolicyD```e```finitionFil```e```
+  - `[GroupPolicyD```e```finitionId <String>]`: k```e```y: id of groupPolicyD```e```finition
+  - `[GroupPolicyMigrationR```e```portId <String>]`: k```e```y: id of groupPolicyMigrationR```e```port
+  - `[GroupPolicyObj```e```ctFil```e```Id <String>]`: k```e```y: id of groupPolicyObj```e```ctFil```e```
+  - `[GroupPolicyOp```e```rationId <String>]`: k```e```y: id of groupPolicyOp```e```ration
+  - `[GroupPolicyPr```e```s```e```ntationId <String>]`: k```e```y: id of groupPolicyPr```e```s```e```ntation
+  - `[GroupPolicyS```e```ttingMappingId <String>]`: k```e```y: id of groupPolicyS```e```ttingMapping
+  - `[GroupPolicyUpload```e```dD```e```finitionFil```e```Id <String>]`: k```e```y: id of groupPolicyUpload```e```dD```e```finitionFil```e```
+  - `[Intun```e```BrandingProfil```e```Assignm```e```ntId <String>]`: k```e```y: id of intun```e```BrandingProfil```e```Assignm```e```nt
+  - `[Intun```e```BrandingProfil```e```Id <String>]`: k```e```y: id of intun```e```BrandingProfil```e```
+  - `[IosUpdat```e```D```e```vic```e```StatusId <String>]`: k```e```y: id of iosUpdat```e```D```e```vic```e```Status
+  - `[Manag```e```dAllD```e```vic```e```C```e```rtificat```e```Stat```e```Id <String>]`: k```e```y: id of manag```e```dAllD```e```vic```e```C```e```rtificat```e```Stat```e```
+  - `[Mobil```e```Thr```e```atD```e```f```e```ns```e```Conn```e```ctorId <String>]`: k```e```y: id of mobil```e```Thr```e```atD```e```f```e```ns```e```Conn```e```ctor
+  - `[Nd```e```sConn```e```ctorId <String>]`: k```e```y: id of nd```e```sConn```e```ctor
+  - `[R```e```mot```e```Assistanc```e```Partn```e```rId <String>]`: k```e```y: id of r```e```mot```e```Assistanc```e```Partn```e```r
+  - `[R```e```sourc```e```Op```e```rationId <String>]`: k```e```y: id of r```e```sourc```e```Op```e```ration
+  - `[R```e```strict```e```dAppsViolationId <String>]`: k```e```y: id of r```e```strict```e```dAppsViolation
+  - `[Rol```e```Assignm```e```ntId <String>]`: k```e```y: id of rol```e```Assignm```e```nt
+  - `[Rol```e```D```e```finitionId <String>]`: k```e```y: id of rol```e```D```e```finition
+  - `[Rol```e```Scop```e```TagAutoAssignm```e```ntId <String>]`: k```e```y: id of rol```e```Scop```e```TagAutoAssignm```e```nt
+  - `[Rol```e```Scop```e```TagId <String>]`: k```e```y: id of rol```e```Scop```e```Tag
+  - `[T```e```l```e```com```e```xp```e```ns```e```Manag```e```m```e```ntPartn```e```rId <String>]`: k```e```y: id of t```e```l```e```com```e```xp```e```ns```e```Manag```e```m```e```ntPartn```e```r
+  - `[T```e```rmsAndConditionsAcc```e```ptanc```e```StatusId <String>]`: k```e```y: id of t```e```rmsAndConditionsAcc```e```ptanc```e```Status
+  - `[T```e```rmsAndConditionsAssignm```e```ntId <String>]`: k```e```y: id of t```e```rmsAndConditionsAssignm```e```nt
+  - `[T```e```rmsAndConditionsGroupAssignm```e```ntId <String>]`: k```e```y: id of t```e```rmsAndConditionsGroupAssignm```e```nt
+  - `[T```e```rmsAndConditionsId <String>]`: k```e```y: id of t```e```rmsAndConditions
+  - `[Unsupport```e```dGroupPolicy```e```xt```e```nsionId <String>]`: k```e```y: id of unsupport```e```dGroupPolicy```e```xt```e```nsion
+  - `[Us```e```rPfxC```e```rtificat```e```Id <String>]`: k```e```y: id of us```e```rPFXC```e```rtificat```e```
 
-TERMSANDCONDITIONS <IMicrosoftGraphTermsAndConditions1>: A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy. T&C policies' contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance. They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune.
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+T```e```RMSANDCONDITIONS <IMicrosoftGraphT```e```rmsAndConditions1>: A t```e```rmsAndConditions ```e```ntity r```e```pr```e```s```e```nts th```e``` m```e```tadata and cont```e```nts of a giv```e```n T```e```rms and Conditions (T&C) policy. T&C polici```e```s' cont```e```nts ar```e``` pr```e```s```e```nt```e```d to us```e```rs upon th```e```ir first att```e```mpt to ```e```nroll into Intun```e``` and subs```e```qu```e```ntly upon ```e```dits wh```e```r```e``` an administrator has r```e```quir```e```d r```e```-acc```e```ptanc```e```. Th```e```y ```e```nabl```e``` administrators to communicat```e``` th```e``` provisions to which a us```e```r must agr```e``````e``` in ord```e```r to hav```e``` d```e```vic```e```s ```e```nroll```e```d into Intun```e```.
+  - `[(Any) <Obj```e```ct>]`: This indicat```e```s any prop```e```rty can b```e``` add```e```d to this obj```e```ct.
   - `[Id <String>]`: 
-  - `[AcceptanceStatement <String>]`: Administrator-supplied explanation of the terms and conditions, typically describing what it means to accept the terms and conditions set out in the T&C policy. This is shown to the user on prompts to accept the T&C policy.
-  - `[AcceptanceStatuses <IMicrosoftGraphTermsAndConditionsAcceptanceStatus1[]>]`: The list of acceptance statuses for this T&C policy.
+  - `[Acc```e```ptanc```e```Stat```e```m```e```nt <String>]`: Administrator-suppli```e```d ```e```xplanation of th```e``` t```e```rms and conditions, typically d```e```scribing what it m```e```ans to acc```e```pt th```e``` t```e```rms and conditions s```e```t out in th```e``` T&C policy. This is shown to th```e``` us```e```r on prompts to acc```e```pt th```e``` T&C policy.
+  - `[Acc```e```ptanc```e```Status```e```s <IMicrosoftGraphT```e```rmsAndConditionsAcc```e```ptanc```e```Status1[]>]`: Th```e``` list of acc```e```ptanc```e``` status```e```s for this T&C policy.
     - `[Id <String>]`: 
-    - `[AcceptedDateTime <DateTime?>]`: DateTime when the terms were last accepted by the user.
-    - `[AcceptedVersion <Int32?>]`: Most recent version number of the T&C accepted by the user.
-    - `[TermsAndConditions <IMicrosoftGraphTermsAndConditions1>]`: A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy. T&C policies' contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance. They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune.
-    - `[UserDisplayName <String>]`: Display name of the user whose acceptance the entity represents.
-    - `[UserPrincipalName <String>]`: The userPrincipalName of the User that accepted the term.
-  - `[Assignments <IMicrosoftGraphTermsAndConditionsAssignment[]>]`: The list of assignments for this T&C policy.
+    - `[Acc```e```pt```e```dDat```e```Tim```e``` <Dat```e```Tim```e```?>]`: Dat```e```Tim```e``` wh```e```n th```e``` t```e```rms w```e```r```e``` last acc```e```pt```e```d by th```e``` us```e```r.
+    - `[Acc```e```pt```e```dV```e```rsion <Int32?>]`: Most r```e```c```e```nt v```e```rsion numb```e```r of th```e``` T&C acc```e```pt```e```d by th```e``` us```e```r.
+    - `[T```e```rmsAndConditions <IMicrosoftGraphT```e```rmsAndConditions1>]`: A t```e```rmsAndConditions ```e```ntity r```e```pr```e```s```e```nts th```e``` m```e```tadata and cont```e```nts of a giv```e```n T```e```rms and Conditions (T&C) policy. T&C polici```e```s' cont```e```nts ar```e``` pr```e```s```e```nt```e```d to us```e```rs upon th```e```ir first att```e```mpt to ```e```nroll into Intun```e``` and subs```e```qu```e```ntly upon ```e```dits wh```e```r```e``` an administrator has r```e```quir```e```d r```e```-acc```e```ptanc```e```. Th```e```y ```e```nabl```e``` administrators to communicat```e``` th```e``` provisions to which a us```e```r must agr```e``````e``` in ord```e```r to hav```e``` d```e```vic```e```s ```e```nroll```e```d into Intun```e```.
+    - `[Us```e```rDisplayNam```e``` <String>]`: Display nam```e``` of th```e``` us```e```r whos```e``` acc```e```ptanc```e``` th```e``` ```e```ntity r```e```pr```e```s```e```nts.
+    - `[Us```e```rPrincipalNam```e``` <String>]`: Th```e``` us```e```rPrincipalNam```e``` of th```e``` Us```e```r that acc```e```pt```e```d th```e``` t```e```rm.
+  - `[Assignm```e```nts <IMicrosoftGraphT```e```rmsAndConditionsAssignm```e```nt[]>]`: Th```e``` list of assignm```e```nts for this T&C policy.
     - `[Id <String>]`: 
-    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[BodyText <String>]`: Administrator-supplied body text of the terms and conditions, typically the terms themselves. This is shown to the user on prompts to accept the T&C policy.
-  - `[CreatedDateTime <DateTime?>]`: DateTime the object was created.
-  - `[Description <String>]`: Administrator-supplied description of the T&C policy.
-  - `[DisplayName <String>]`: Administrator-supplied name for the T&C policy.
-  - `[LastModifiedDateTime <DateTime?>]`: DateTime the object was last modified.
-  - `[Title <String>]`: Administrator-supplied title of the terms and conditions. This is shown to the user on prompts to accept the T&C policy.
-  - `[Version <Int32?>]`: Integer indicating the current version of the terms. Incremented when an administrator makes a change to the terms and wishes to require users to re-accept the modified T&C policy.
+    - `[Targ```e```t <IMicrosoftGraphD```e```vic```e```AndAppManag```e```m```e```ntAssignm```e```ntTarg```e```t>]`: Bas```e``` typ```e``` for assignm```e```nt targ```e```ts.
+      - `[(Any) <Obj```e```ct>]`: This indicat```e```s any prop```e```rty can b```e``` add```e```d to this obj```e```ct.
+  - `[BodyT```e```xt <String>]`: Administrator-suppli```e```d body t```e```xt of th```e``` t```e```rms and conditions, typically th```e``` t```e```rms th```e```ms```e```lv```e```s. This is shown to th```e``` us```e```r on prompts to acc```e```pt th```e``` T&C policy.
+  - `[Cr```e```at```e```dDat```e```Tim```e``` <Dat```e```Tim```e```?>]`: Dat```e```Tim```e``` th```e``` obj```e```ct was cr```e```at```e```d.
+  - `[D```e```scription <String>]`: Administrator-suppli```e```d d```e```scription of th```e``` T&C policy.
+  - `[DisplayNam```e``` <String>]`: Administrator-suppli```e```d nam```e``` for th```e``` T&C policy.
+  - `[LastModifi```e```dDat```e```Tim```e``` <Dat```e```Tim```e```?>]`: Dat```e```Tim```e``` th```e``` obj```e```ct was last modifi```e```d.
+  - `[Titl```e``` <String>]`: Administrator-suppli```e```d titl```e``` of th```e``` t```e```rms and conditions. This is shown to th```e``` us```e```r on prompts to acc```e```pt th```e``` T&C policy.
+  - `[V```e```rsion <Int32?>]`: Int```e```g```e```r indicating th```e``` curr```e```nt v```e```rsion of th```e``` t```e```rms. Incr```e```m```e```nt```e```d wh```e```n an administrator mak```e```s a chang```e``` to th```e``` t```e```rms and wish```e```s to r```e```quir```e``` us```e```rs to r```e```-acc```e```pt th```e``` modifi```e```d T&C policy.
 
-## RELATED LINKS
+## R```e```LAT```e```D LINKS
 
-## RELATED LINKS
+## R```e```LAT```e```D LINKS
