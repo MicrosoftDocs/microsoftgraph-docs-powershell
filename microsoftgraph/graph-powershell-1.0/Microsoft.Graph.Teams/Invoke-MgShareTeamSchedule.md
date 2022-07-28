@@ -1,264 +1,264 @@
-﻿---
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/invoke-mgshareteamschedule
-schema: 2.0.0
+---
+``e``xt``e``rnal h``e``lp fil``e``: Microsoft.Graph.T``e``ams-h``e``lp.xml
+Modul``e`` Nam``e``: Microsoft.Graph.T``e``ams
+onlin``e`` v``e``rsion: https://docs.microsoft.com/``e``n-us/pow``e``rsh``e``ll/modul``e``/microsoft.graph.t``e``ams/invok``e``-mgshar``e``t``e``amsch``e``dul``e``
+sch``e``ma: 2.0.0
 ---
 
-# Invoke-MgShareTeamSchedule
+# Invok``e``-MgShar``e``T``e``amSch``e``dul``e``
 
 ## SYNOPSIS
-Invoke action share
+Invok``e`` action shar``e``
 
 ## SYNTAX
 
-### ShareExpanded (Default)
+### Shar``e````e``xpand``e``d (D``e``fault)
 ```
-Invoke-MgShareTeamSchedule -TeamId <String> [-AdditionalProperties <Hashtable>] [-EndDateTime <DateTime>]
- [-NotifyTeam] [-StartDateTime <DateTime>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Share
-```
-Invoke-MgShareTeamSchedule -TeamId <String>
- -BodyParameter <IPathsCo6ShtTeamsTeamIdScheduleMicrosoftGraphSharePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invok``e``-MgShar``e``T``e``amSch``e``dul``e`` -T``e``amId <String> [-AdditionalProp``e``rti``e``s <Hashtabl``e``>] [-``e``ndDat``e``Tim``e`` <Dat``e``Tim``e``>]
+ [-NotifyT``e``am] [-StartDat``e``Tim``e`` <Dat``e``Tim``e``>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParam``e``t``e``rs>]
 ```
 
-### ShareViaIdentityExpanded
+### Shar``e``
 ```
-Invoke-MgShareTeamSchedule -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-EndDateTime <DateTime>] [-NotifyTeam] [-StartDateTime <DateTime>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### ShareViaIdentity
-```
-Invoke-MgShareTeamSchedule -InputObject <ITeamsIdentity>
- -BodyParameter <IPathsCo6ShtTeamsTeamIdScheduleMicrosoftGraphSharePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invok``e``-MgShar``e``T``e``amSch``e``dul``e`` -T``e``amId <String>
+ -BodyParam``e``t``e``r <IPathsCo6ShtT``e``amsT``e``amIdSch``e``dul``e``MicrosoftGraphShar``e``PostR``e``qu``e``stbodyCont``e``ntApplicationJsonSch``e``ma>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParam``e``t``e``rs>]
 ```
 
-## DESCRIPTION
-Invoke action share
+### Shar``e``ViaId``e``ntity``e``xpand``e``d
+```
+Invok``e``-MgShar``e``T``e``amSch``e``dul``e`` -InputObj``e``ct <IT``e``amsId``e``ntity> [-AdditionalProp``e``rti``e``s <Hashtabl``e``>]
+ [-``e``ndDat``e``Tim``e`` <Dat``e``Tim``e``>] [-NotifyT``e``am] [-StartDat``e``Tim``e`` <Dat``e``Tim``e``>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParam``e``t``e``rs>]
+```
 
-## EXAMPLES
+### Shar``e``ViaId``e``ntity
+```
+Invok``e``-MgShar``e``T``e``amSch``e``dul``e`` -InputObj``e``ct <IT``e``amsId``e``ntity>
+ -BodyParam``e``t``e``r <IPathsCo6ShtT``e``amsT``e``amIdSch``e``dul``e``MicrosoftGraphShar``e``PostR``e``qu``e``stbodyCont``e``ntApplicationJsonSch``e``ma>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParam``e``t``e``rs>]
+```
 
-## PARAMETERS
+## D``e``SCRIPTION
+Invok``e`` action shar``e``
 
-### -AdditionalProperties
-Additional Parameters
+## ``e``XAMPL``e``S
+
+## PARAM``e``T``e``RS
+
+### -AdditionalProp``e``rti``e``s
+Additional Param``e``t``e``rs
 
 ```yaml
-Type: Hashtable
-Parameter Sets: ShareExpanded, ShareViaIdentityExpanded
-Aliases:
+Typ``e``: Hashtabl``e``
+Param``e``t``e``r S``e``ts: Shar``e````e``xpand``e``d, Shar``e``ViaId``e``ntity``e``xpand``e``d
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -BodyParameter
+### -BodyParam``e``t``e``r
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, pl``e``as``e`` us``e`` G``e``t-H``e``lp -Onlin``e`` and s``e````e`` NOT``e``S s``e``ction for BODYPARAM``e``T``e``R prop``e``rti``e``s and cr``e``at``e`` a hash tabl``e``.
 
 ```yaml
-Type: IPathsCo6ShtTeamsTeamIdScheduleMicrosoftGraphSharePostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Share, ShareViaIdentity
-Aliases:
+Typ``e``: IPathsCo6ShtT``e``amsT``e``amIdSch``e``dul``e``MicrosoftGraphShar``e``PostR``e``qu``e``stbodyCont``e``ntApplicationJsonSch``e``ma
+Param``e``t``e``r S``e``ts: Shar``e``, Shar``e``ViaId``e``ntity
+Alias``e``s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R``e``quir``e``d: Tru``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Tru``e`` (ByValu``e``)
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -EndDateTime
-.
-
-```yaml
-Type: DateTime
-Parameter Sets: ShareExpanded, ShareViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
-
-```yaml
-Type: ITeamsIdentity
-Parameter Sets: ShareViaIdentityExpanded, ShareViaIdentity
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -NotifyTeam
+### -``e``ndDat``e``Tim``e``
 .
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: ShareExpanded, ShareViaIdentityExpanded
-Aliases:
+Typ``e``: Dat``e``Tim``e``
+Param``e``t``e``r S``e``ts: Shar``e````e``xpand``e``d, Shar``e``ViaId``e``ntity``e``xpand``e``d
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
+```
+
+### -InputObj``e``ct
+Id``e``ntity Param``e``t``e``r
+To construct, pl``e``as``e`` us``e`` G``e``t-H``e``lp -Onlin``e`` and s``e````e`` NOT``e``S s``e``ction for INPUTOBJ``e``CT prop``e``rti``e``s and cr``e``at``e`` a hash tabl``e``.
+
+```yaml
+Typ``e``: IT``e``amsId``e``ntity
+Param``e``t``e``r S``e``ts: Shar``e``ViaId``e``ntity``e``xpand``e``d, Shar``e``ViaId``e``ntity
+Alias``e``s:
+
+R``e``quir``e``d: Tru``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Tru``e`` (ByValu``e``)
+Acc``e``pt wildcard charact``e``rs: Fals``e``
+```
+
+### -NotifyT``e``am
+.
+
+```yaml
+Typ``e``: SwitchParam``e``t``e``r
+Param``e``t``e``r S``e``ts: Shar``e````e``xpand``e``d, Shar``e``ViaId``e``ntity``e``xpand``e``d
+Alias``e``s:
+
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
 ### -PassThru
-Returns true when the command succeeds
+R``e``turns tru``e`` wh``e``n th``e`` command succ``e````e``ds
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
+Typ``e``: SwitchParam``e``t``e``r
+Param``e``t``e``r S``e``ts: (All)
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -StartDateTime
+### -StartDat``e``Tim``e``
 .
 
 ```yaml
-Type: DateTime
-Parameter Sets: ShareExpanded, ShareViaIdentityExpanded
-Aliases:
+Typ``e``: Dat``e``Tim``e``
+Param``e``t``e``r S``e``ts: Shar``e````e``xpand``e``d, Shar``e``ViaId``e``ntity``e``xpand``e``d
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -TeamId
-key: id of team
+### -T``e``amId
+k``e``y: id of t``e``am
 
 ```yaml
-Type: String
-Parameter Sets: ShareExpanded, Share
-Aliases:
+Typ``e``: String
+Param``e``t``e``r S``e``ts: Shar``e````e``xpand``e``d, Shar``e``
+Alias``e``s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Tru``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation b``e``for``e`` running th``e`` cmdl``e``t.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Typ``e``: SwitchParam``e``t``e``r
+Param``e``t``e``r S``e``ts: (All)
+Alias``e``s: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happ``e``n if th``e`` cmdl``e``t runs.
+Th``e`` cmdl``e``t is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Typ``e``: SwitchParam``e``t``e``r
+Param``e``t``e``r S``e``ts: (All)
+Alias``e``s: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam``e``t``e``rs
+This cmdl``e``t supports th``e`` common param``e``t``e``rs: -D``e``bug, -``e``rrorAction, -``e``rrorVariabl``e``, -InformationAction, -InformationVariabl``e``, -OutVariabl``e``, -OutBuff``e``r, -Pip``e``lin``e``Variabl``e``, -V``e``rbos``e``, -WarningAction, and -WarningVariabl``e``. For mor``e`` information, s``e````e`` [about_CommonParam``e``t``e``rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsCo6ShtTeamsTeamIdScheduleMicrosoftGraphSharePostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Pow``e``rSh``e``ll.Mod``e``ls.IPathsCo6ShtT``e``amsT``e``amIdSch``e``dul``e``MicrosoftGraphShar``e``PostR``e``qu``e``stbodyCont``e``ntApplicationJsonSch``e``ma
+### Microsoft.Graph.Pow``e``rSh``e``ll.Mod``e``ls.IT``e``amsId``e``ntity
 ## OUTPUTS
 
-### System.Boolean
-## NOTES
+### Syst``e``m.Bool``e``an
+## NOT``e``S
 
-ALIASES
+ALIAS``e``S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL``e``X PARAM``e``T``e``R PROP``e``RTI``e``S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr``e``at``e`` th``e`` param``e``t``e``rs d``e``scrib``e``d b``e``low, construct a hash tabl``e`` containing th``e`` appropriat``e`` prop``e``rti``e``s. For information on hash tabl``e``s, run G``e``t-H``e``lp about_Hash_Tabl``e``s.
 
 
-BODYPARAMETER <IPathsCo6ShtTeamsTeamIdScheduleMicrosoftGraphSharePostRequestbodyContentApplicationJsonSchema>: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[EndDateTime <DateTime?>]`: 
-  - `[NotifyTeam <Boolean?>]`: 
-  - `[StartDateTime <DateTime?>]`: 
+BODYPARAM``e``T``e``R <IPathsCo6ShtT``e``amsT``e``amIdSch``e``dul``e``MicrosoftGraphShar``e``PostR``e``qu``e``stbodyCont``e``ntApplicationJsonSch``e``ma>: .
+  - `[(Any) <Obj``e``ct>]`: This indicat``e``s any prop``e``rty can b``e`` add``e``d to this obj``e``ct.
+  - `[``e``ndDat``e``Tim``e`` <Dat``e``Tim``e``?>]`: 
+  - `[NotifyT``e``am <Bool``e``an?>]`: 
+  - `[StartDat``e``Tim``e`` <Dat``e``Tim``e``?>]`: 
 
-INPUTOBJECT <ITeamsIdentity>: Identity Parameter
-  - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
-  - `[ChannelId <String>]`: key: id of channel
-  - `[ChatId <String>]`: key: id of chat
-  - `[ChatMessageHostedContentId <String>]`: key: id of chatMessageHostedContent
-  - `[ChatMessageId <String>]`: key: id of chatMessage
-  - `[ChatMessageId1 <String>]`: key: id of chatMessage
-  - `[ConversationMemberId <String>]`: key: id of conversationMember
-  - `[DeletedTeamId <String>]`: key: id of deletedTeam
-  - `[GroupId <String>]`: key: id of group
-  - `[OfferShiftRequestId <String>]`: key: id of offerShiftRequest
-  - `[OpenShiftChangeRequestId <String>]`: key: id of openShiftChangeRequest
-  - `[OpenShiftId <String>]`: key: id of openShift
-  - `[PinnedChatMessageInfoId <String>]`: key: id of pinnedChatMessageInfo
-  - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
-  - `[SchedulingGroupId <String>]`: key: id of schedulingGroup
-  - `[SharedWithChannelTeamInfoId <String>]`: key: id of sharedWithChannelTeamInfo
-  - `[ShiftId <String>]`: key: id of shift
-  - `[SwapShiftsChangeRequestId <String>]`: key: id of swapShiftsChangeRequest
-  - `[TeamId <String>]`: key: id of team
-  - `[TeamsAppDefinitionId <String>]`: key: id of teamsAppDefinition
-  - `[TeamsAppId <String>]`: key: id of teamsApp
-  - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation
-  - `[TeamsAsyncOperationId <String>]`: key: id of teamsAsyncOperation
-  - `[TeamsTabId <String>]`: key: id of teamsTab
-  - `[TeamworkDeviceId <String>]`: key: id of teamworkDevice
-  - `[TeamworkDeviceOperationId <String>]`: key: id of teamworkDeviceOperation
-  - `[TeamworkTagId <String>]`: key: id of teamworkTag
-  - `[TeamworkTagMemberId <String>]`: key: id of teamworkTagMember
-  - `[TimeCardId <String>]`: key: id of timeCard
-  - `[TimeOffId <String>]`: key: id of timeOff
-  - `[TimeOffReasonId <String>]`: key: id of timeOffReason
-  - `[TimeOffRequestId <String>]`: key: id of timeOffRequest
-  - `[UserId <String>]`: key: id of user
-  - `[UserScopeTeamsAppInstallationId <String>]`: key: id of userScopeTeamsAppInstallation
-  - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
+INPUTOBJ``e``CT <IT``e``amsId``e``ntity>: Id``e``ntity Param``e``t``e``r
+  - `[Associat``e``dT``e``amInfoId <String>]`: k``e``y: id of associat``e``dT``e``amInfo
+  - `[Chann``e``lId <String>]`: k``e``y: id of chann``e``l
+  - `[ChatId <String>]`: k``e``y: id of chat
+  - `[ChatM``e``ssag``e``Host``e``dCont``e``ntId <String>]`: k``e``y: id of chatM``e``ssag``e``Host``e``dCont``e``nt
+  - `[ChatM``e``ssag``e``Id <String>]`: k``e``y: id of chatM``e``ssag``e``
+  - `[ChatM``e``ssag``e``Id1 <String>]`: k``e``y: id of chatM``e``ssag``e``
+  - `[Conv``e``rsationM``e``mb``e``rId <String>]`: k``e``y: id of conv``e``rsationM``e``mb``e``r
+  - `[D``e``l``e``t``e``dT``e``amId <String>]`: k``e``y: id of d``e``l``e``t``e``dT``e``am
+  - `[GroupId <String>]`: k``e``y: id of group
+  - `[Off``e``rShiftR``e``qu``e``stId <String>]`: k``e``y: id of off``e``rShiftR``e``qu``e``st
+  - `[Op``e``nShiftChang``e``R``e``qu``e``stId <String>]`: k``e``y: id of op``e``nShiftChang``e``R``e``qu``e``st
+  - `[Op``e``nShiftId <String>]`: k``e``y: id of op``e``nShift
+  - `[Pinn``e``dChatM``e``ssag``e``InfoId <String>]`: k``e``y: id of pinn``e``dChatM``e``ssag``e``Info
+  - `[R``e``sourc``e``Sp``e``cificP``e``rmissionGrantId <String>]`: k``e``y: id of r``e``sourc``e``Sp``e``cificP``e``rmissionGrant
+  - `[Sch``e``dulingGroupId <String>]`: k``e``y: id of sch``e``dulingGroup
+  - `[Shar``e``dWithChann``e``lT``e``amInfoId <String>]`: k``e``y: id of shar``e``dWithChann``e``lT``e``amInfo
+  - `[ShiftId <String>]`: k``e``y: id of shift
+  - `[SwapShiftsChang``e``R``e``qu``e``stId <String>]`: k``e``y: id of swapShiftsChang``e``R``e``qu``e``st
+  - `[T``e``amId <String>]`: k``e``y: id of t``e``am
+  - `[T``e``amsAppD``e``finitionId <String>]`: k``e``y: id of t``e``amsAppD``e``finition
+  - `[T``e``amsAppId <String>]`: k``e``y: id of t``e``amsApp
+  - `[T``e``amsAppInstallationId <String>]`: k``e``y: id of t``e``amsAppInstallation
+  - `[T``e``amsAsyncOp``e``rationId <String>]`: k``e``y: id of t``e``amsAsyncOp``e``ration
+  - `[T``e``amsTabId <String>]`: k``e``y: id of t``e``amsTab
+  - `[T``e``amworkD``e``vic``e``Id <String>]`: k``e``y: id of t``e``amworkD``e``vic``e``
+  - `[T``e``amworkD``e``vic``e``Op``e``rationId <String>]`: k``e``y: id of t``e``amworkD``e``vic``e``Op``e``ration
+  - `[T``e``amworkTagId <String>]`: k``e``y: id of t``e``amworkTag
+  - `[T``e``amworkTagM``e``mb``e``rId <String>]`: k``e``y: id of t``e``amworkTagM``e``mb``e``r
+  - `[Tim``e``CardId <String>]`: k``e``y: id of tim``e``Card
+  - `[Tim``e``OffId <String>]`: k``e``y: id of tim``e``Off
+  - `[Tim``e``OffR``e``asonId <String>]`: k``e``y: id of tim``e``OffR``e``ason
+  - `[Tim``e``OffR``e``qu``e``stId <String>]`: k``e``y: id of tim``e``OffR``e``qu``e``st
+  - `[Us``e``rId <String>]`: k``e``y: id of us``e``r
+  - `[Us``e``rScop``e``T``e``amsAppInstallationId <String>]`: k``e``y: id of us``e``rScop``e``T``e``amsAppInstallation
+  - `[Workforc``e``Int``e``grationId <String>]`: k``e``y: id of workforc``e``Int``e``gration
 
-## RELATED LINKS
+## R``e``LAT``e``D LINKS
