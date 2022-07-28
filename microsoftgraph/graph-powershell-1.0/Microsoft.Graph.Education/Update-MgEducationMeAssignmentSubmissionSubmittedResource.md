@@ -1,246 +1,246 @@
-﻿---
-external help file: Microsoft.Graph.Education-help.xml
-Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/update-mgeducationmeassignmentsubmissionsubmittedresource
+---
+external help file: Microsoft.Graph.E```d```ucation-help.xml
+Mo```d```ule Name: Microsoft.Graph.E```d```ucation
+online version: https://```d```ocs.microsoft.com/en-us/powershell/mo```d```ule/microsoft.graph.e```d```ucation/up```d```ate-mge```d```ucationmeassignmentsubmissionsubmitte```d```resource
 schema: 2.0.0
 ---
 
-# Update-MgEducationMeAssignmentSubmissionSubmittedResource
+# Up```d```ate-MgE```d```ucationMeAssignmentSubmissionSubmitte```d```Resource
 
 ## SYNOPSIS
-Update the navigation property submittedResources in education
+Up```d```ate the navigation property submitte```d```Resources in e```d```ucation
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### Up```d```ateExpan```d```e```d```1 (```d```efault)
 ```
-Update-MgEducationMeAssignmentSubmissionSubmittedResource -EducationAssignmentId <String>
- -EducationSubmissionId <String> -EducationSubmissionResourceId <String> [-AdditionalProperties <Hashtable>]
- [-AssignmentResourceUrl <String>] [-Id <String>] [-Resource <IMicrosoftGraphEducationResource>] [-PassThru]
+Up```d```ate-MgE```d```ucationMeAssignmentSubmissionSubmitte```d```Resource -E```d```ucationAssignmentI```d``` <String>
+ -E```d```ucationSubmissionI```d``` <String> -E```d```ucationSubmissionResourceI```d``` <String> [-A```d``````d```itionalProperties <Hashtable>]
+ [-AssignmentResourceUrl <String>] [-I```d``` <String>] [-Resource <IMicrosoftGraphE```d```ucationResource>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update1
+### Up```d```ate1
 ```
-Update-MgEducationMeAssignmentSubmissionSubmittedResource -EducationAssignmentId <String>
- -EducationSubmissionId <String> -EducationSubmissionResourceId <String>
- -BodyParameter <IMicrosoftGraphEducationSubmissionResource> [-PassThru] [-WhatIf] [-Confirm]
+Up```d```ate-MgE```d```ucationMeAssignmentSubmissionSubmitte```d```Resource -E```d```ucationAssignmentI```d``` <String>
+ -E```d```ucationSubmissionI```d``` <String> -E```d```ucationSubmissionResourceI```d``` <String>
+ -Bo```d```yParameter <IMicrosoftGraphE```d```ucationSubmissionResource> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded1
+### Up```d```ateViaI```d```entityExpan```d```e```d```1
 ```
-Update-MgEducationMeAssignmentSubmissionSubmittedResource -InputObject <IEducationIdentity>
- [-AdditionalProperties <Hashtable>] [-AssignmentResourceUrl <String>] [-Id <String>]
- [-Resource <IMicrosoftGraphEducationResource>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Up```d```ate-MgE```d```ucationMeAssignmentSubmissionSubmitte```d```Resource -InputObject <IE```d```ucationI```d```entity>
+ [-A```d``````d```itionalProperties <Hashtable>] [-AssignmentResourceUrl <String>] [-I```d``` <String>]
+ [-Resource <IMicrosoftGraphE```d```ucationResource>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### Up```d```ateViaI```d```entity1
 ```
-Update-MgEducationMeAssignmentSubmissionSubmittedResource -InputObject <IEducationIdentity>
- -BodyParameter <IMicrosoftGraphEducationSubmissionResource> [-PassThru] [-WhatIf] [-Confirm]
+Up```d```ate-MgE```d```ucationMeAssignmentSubmissionSubmitte```d```Resource -InputObject <IE```d```ucationI```d```entity>
+ -Bo```d```yParameter <IMicrosoftGraphE```d```ucationSubmissionResource> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-## DESCRIPTION
-Update the navigation property submittedResources in education
+## ```d```ESCRIPTION
+Up```d```ate the navigation property submitte```d```Resources in e```d```ucation
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -A```d``````d```itionalProperties
+A```d``````d```itional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up```d```ateExpan```d```e```d```1, Up```d```ateViaI```d```entityExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ### -AssignmentResourceUrl
-Pointer to the assignment from which this resource was copied.
-If this is null, the student uploaded the resource.
+Pointer to the assignment from which this resource was copie```d```.
+If this is null, the stu```d```ent uploa```d```e```d``` the resource.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up```d```ateExpan```d```e```d```1, Up```d```ateViaI```d```entityExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
-### -BodyParameter
-educationSubmissionResource
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -Bo```d```yParameter
+e```d```ucationSubmissionResource
+To construct, please use Get-Help -Online an```d``` see NOTES section for BO```d```YPARAMETER properties an```d``` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationSubmissionResource
-Parameter Sets: Update1, UpdateViaIdentity1
+Type: IMicrosoftGraphE```d```ucationSubmissionResource
+Parameter Sets: Up```d```ate1, Up```d```ateViaI```d```entity1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require```d```: True
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
-### -EducationAssignmentId
-key: id of educationAssignment
+### -E```d```ucationAssignmentI```d```
+key: i```d``` of e```d```ucationAssignment
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Parameter Sets: Up```d```ateExpan```d```e```d```1, Up```d```ate1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require```d```: True
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
-### -EducationSubmissionId
-key: id of educationSubmission
+### -E```d```ucationSubmissionI```d```
+key: i```d``` of e```d```ucationSubmission
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Parameter Sets: Up```d```ateExpan```d```e```d```1, Up```d```ate1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require```d```: True
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
-### -EducationSubmissionResourceId
-key: id of educationSubmissionResource
+### -E```d```ucationSubmissionResourceI```d```
+key: i```d``` of e```d```ucationSubmissionResource
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Parameter Sets: Up```d```ateExpan```d```e```d```1, Up```d```ate1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require```d```: True
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
-### -Id
+### -I```d```
 .
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up```d```ateExpan```d```e```d```1, Up```d```ateViaI```d```entityExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+I```d```entity Parameter
+To construct, please use Get-Help -Online an```d``` see NOTES section for INPUTOBJECT properties an```d``` create a hash table.
 
 ```yaml
-Type: IEducationIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Type: IE```d```ucationI```d```entity
+Parameter Sets: Up```d```ateViaI```d```entityExpan```d```e```d```1, Up```d```ateViaI```d```entity1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require```d```: True
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ### -PassThru
-Returns true when the command succeeds
+Returns true when the comman```d``` succee```d```s
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ### -Resource
-educationResource
-To construct, please use Get-Help -Online and see NOTES section for RESOURCE properties and create a hash table.
+e```d```ucationResource
+To construct, please use Get-Help -Online an```d``` see NOTES section for RESOURCE properties an```d``` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationResource
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: IMicrosoftGraphE```d```ucationResource
+Parameter Sets: Up```d```ateExpan```d```e```d```1, Up```d```ateViaI```d```entityExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation before running the cm```d```let.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what woul```d``` happen if the cm```d```let runs.
+The cm```d```let is not run.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cm```d```let supports the common parameters: -```d```ebug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, an```d``` -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkI```d```=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSubmissionResource
+### Microsoft.Graph.PowerShell.Mo```d```els.IE```d```ucationI```d```entity
+### Microsoft.Graph.PowerShell.Mo```d```els.IMicrosoftGraphE```d```ucationSubmissionResource
 ## OUTPUTS
 
 ### System.Boolean
@@ -250,55 +250,55 @@ ALIASES
 
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters ```d```escribe```d``` below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphEducationSubmissionResource>: educationSubmissionResource
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
-  - `[AssignmentResourceUrl <String>]`: Pointer to the assignment from which this resource was copied. If this is null, the student uploaded the resource.
-  - `[Resource <IMicrosoftGraphEducationResource>]`: educationResource
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Application <IMicrosoftGraphIdentity>]`: identity
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-      - `[Device <IMicrosoftGraphIdentity>]`: identity
-      - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[DisplayName <String>]`: Display name of resource.
-    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[LastModifiedDateTime <DateTime?>]`: Moment in time when the resource was last modified.  The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+BO```d```YPARAMETER <IMicrosoftGraphE```d```ucationSubmissionResource>: e```d```ucationSubmissionResource
+  - `[(Any) <Object>]`: This in```d```icates any property can be a```d``````d```e```d``` to this object.
+  - `[I```d``` <String>]`: 
+  - `[AssignmentResourceUrl <String>]`: Pointer to the assignment from which this resource was copie```d```. If this is null, the stu```d```ent uploa```d```e```d``` the resource.
+  - `[Resource <IMicrosoftGraphE```d```ucationResource>]`: e```d```ucationResource
+    - `[(Any) <Object>]`: This in```d```icates any property can be a```d``````d```e```d``` to this object.
+    - `[Create```d```By <IMicrosoftGraphI```d```entitySet>]`: i```d```entitySet
+      - `[(Any) <Object>]`: This in```d```icates any property can be a```d``````d```e```d``` to this object.
+      - `[Application <IMicrosoftGraphI```d```entity>]`: i```d```entity
+        - `[(Any) <Object>]`: This in```d```icates any property can be a```d``````d```e```d``` to this object.
+        - `[```d```isplayName <String>]`: The i```d```entity's ```d```isplay name. Note that this may not always be available or up to ```d```ate. For example, if a user changes their ```d```isplay name, the API may show the new value in a future response, but the items associate```d``` with the user won't show up as having change```d``` when using ```d```elta.
+        - `[I```d``` <String>]`: Unique i```d```entifier for the i```d```entity.
+      - `[```d```evice <IMicrosoftGraphI```d```entity>]`: i```d```entity
+      - `[User <IMicrosoftGraphI```d```entity>]`: i```d```entity
+    - `[Create```d``````d```ateTime <```d```ateTime?>]`: The Timestamp type represents ```d```ate an```d``` time information using ISO 8601 format an```d``` is always in UTC time. For example, mi```d```night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[```d```isplayName <String>]`: ```d```isplay name of resource.
+    - `[LastMo```d```ifie```d```By <IMicrosoftGraphI```d```entitySet>]`: i```d```entitySet
+    - `[LastMo```d```ifie```d``````d```ateTime <```d```ateTime?>]`: Moment in time when the resource was last mo```d```ifie```d```.  The Timestamp type represents ```d```ate an```d``` time information using ISO 8601 format an```d``` is always in UTC time. For example, mi```d```night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
-INPUTOBJECT <IEducationIdentity>: Identity Parameter
-  - `[EducationAssignmentId <String>]`: key: id of educationAssignment
-  - `[EducationAssignmentResourceId <String>]`: key: id of educationAssignmentResource
-  - `[EducationCategoryId <String>]`: key: id of educationCategory
-  - `[EducationClassId <String>]`: key: id of educationClass
-  - `[EducationOutcomeId <String>]`: key: id of educationOutcome
-  - `[EducationRubricId <String>]`: key: id of educationRubric
-  - `[EducationSchoolId <String>]`: key: id of educationSchool
-  - `[EducationSubmissionId <String>]`: key: id of educationSubmission
-  - `[EducationSubmissionResourceId <String>]`: key: id of educationSubmissionResource
-  - `[EducationSynchronizationErrorId <String>]`: key: id of educationSynchronizationError
-  - `[EducationSynchronizationProfileId <String>]`: key: id of educationSynchronizationProfile
-  - `[EducationUserId <String>]`: key: id of educationUser
+INPUTOBJECT <IE```d```ucationI```d```entity>: I```d```entity Parameter
+  - `[E```d```ucationAssignmentI```d``` <String>]`: key: i```d``` of e```d```ucationAssignment
+  - `[E```d```ucationAssignmentResourceI```d``` <String>]`: key: i```d``` of e```d```ucationAssignmentResource
+  - `[E```d```ucationCategoryI```d``` <String>]`: key: i```d``` of e```d```ucationCategory
+  - `[E```d```ucationClassI```d``` <String>]`: key: i```d``` of e```d```ucationClass
+  - `[E```d```ucationOutcomeI```d``` <String>]`: key: i```d``` of e```d```ucationOutcome
+  - `[E```d```ucationRubricI```d``` <String>]`: key: i```d``` of e```d```ucationRubric
+  - `[E```d```ucationSchoolI```d``` <String>]`: key: i```d``` of e```d```ucationSchool
+  - `[E```d```ucationSubmissionI```d``` <String>]`: key: i```d``` of e```d```ucationSubmission
+  - `[E```d```ucationSubmissionResourceI```d``` <String>]`: key: i```d``` of e```d```ucationSubmissionResource
+  - `[E```d```ucationSynchronizationErrorI```d``` <String>]`: key: i```d``` of e```d```ucationSynchronizationError
+  - `[E```d```ucationSynchronizationProfileI```d``` <String>]`: key: i```d``` of e```d```ucationSynchronizationProfile
+  - `[E```d```ucationUserI```d``` <String>]`: key: i```d``` of e```d```ucationUser
 
-RESOURCE <IMicrosoftGraphEducationResource>: educationResource
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[DisplayName <String>]`: Display name of resource.
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[LastModifiedDateTime <DateTime?>]`: Moment in time when the resource was last modified.  The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+RESOURCE <IMicrosoftGraphE```d```ucationResource>: e```d```ucationResource
+  - `[(Any) <Object>]`: This in```d```icates any property can be a```d``````d```e```d``` to this object.
+  - `[Create```d```By <IMicrosoftGraphI```d```entitySet>]`: i```d```entitySet
+    - `[(Any) <Object>]`: This in```d```icates any property can be a```d``````d```e```d``` to this object.
+    - `[Application <IMicrosoftGraphI```d```entity>]`: i```d```entity
+      - `[(Any) <Object>]`: This in```d```icates any property can be a```d``````d```e```d``` to this object.
+      - `[```d```isplayName <String>]`: The i```d```entity's ```d```isplay name. Note that this may not always be available or up to ```d```ate. For example, if a user changes their ```d```isplay name, the API may show the new value in a future response, but the items associate```d``` with the user won't show up as having change```d``` when using ```d```elta.
+      - `[I```d``` <String>]`: Unique i```d```entifier for the i```d```entity.
+    - `[```d```evice <IMicrosoftGraphI```d```entity>]`: i```d```entity
+    - `[User <IMicrosoftGraphI```d```entity>]`: i```d```entity
+  - `[Create```d``````d```ateTime <```d```ateTime?>]`: The Timestamp type represents ```d```ate an```d``` time information using ISO 8601 format an```d``` is always in UTC time. For example, mi```d```night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[```d```isplayName <String>]`: ```d```isplay name of resource.
+  - `[LastMo```d```ifie```d```By <IMicrosoftGraphI```d```entitySet>]`: i```d```entitySet
+  - `[LastMo```d```ifie```d``````d```ateTime <```d```ateTime?>]`: Moment in time when the resource was last mo```d```ifie```d```.  The Timestamp type represents ```d```ate an```d``` time information using ISO 8601 format an```d``` is always in UTC time. For example, mi```d```night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
-## RELATED LINKS
+## RELATE```d``` LINKS
