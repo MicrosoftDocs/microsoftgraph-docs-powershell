@@ -1,246 +1,246 @@
-﻿---
-external help file: Microsoft.Graph.Users-help.xml
-Module Name: Microsoft.Graph.Users
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/get-mguseroutlookmastercategory
-schema: 2.0.0
+---
+external help file: Micro`s`oft.Graph.U`s`er`s`-help.xml
+Module Name: Micro`s`oft.Graph.U`s`er`s`
+online ver`s`ion: http`s`://doc`s`.micro`s`oft.com/en-u`s`/power`s`hell/module/micro`s`oft.graph.u`s`er`s`/get-mgu`s`eroutlookma`s`tercategory
+`s`chema: 2.0.0
 ---
 
-# Get-MgUserOutlookMasterCategory
+# Get-MgU`s`erOutlookMa`s`terCategory
 
-## SYNOPSIS
-Get masterCategories from users
+## `s`YNOP`s`I`s`
+Get ma`s`terCategorie`s` from u`s`er`s`
 
-## SYNTAX
+## `s`YNTAX
 
-### List (Default)
+### Li`s`t (Default)
 ```
-Get-MgUserOutlookMasterCategory -UserId <String> [-Property <String[]>] [-Filter <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+Get-MgU`s`erOutlookMa`s`terCategory -U`s`erId <`s`tring> [-Property <`s`tring[]>] [-Filter <`s`tring>] [-`s`kip <Int32>]
+ [-`s`ort <`s`tring[]>] [-Top <Int32>] [-Page`s`ize <Int32>] [-All] [-CountVariable <`s`tring>] [<CommonParameter`s`>]
 ```
 
 ### Get
 ```
-Get-MgUserOutlookMasterCategory -OutlookCategoryId <String> -UserId <String> [-Property <String[]>]
- [<CommonParameters>]
+Get-MgU`s`erOutlookMa`s`terCategory -OutlookCategoryId <`s`tring> -U`s`erId <`s`tring> [-Property <`s`tring[]>]
+ [<CommonParameter`s`>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgUserOutlookMasterCategory -InputObject <IUsersIdentity> [-Property <String[]>] [<CommonParameters>]
+Get-MgU`s`erOutlookMa`s`terCategory -InputObject <IU`s`er`s`Identity> [-Property <`s`tring[]>] [<CommonParameter`s`>]
 ```
 
-## DESCRIPTION
-Get masterCategories from users
+## DE`s`CRIPTION
+Get ma`s`terCategorie`s` from u`s`er`s`
 
-## EXAMPLES
+## EXAMPLE`s`
 
-## PARAMETERS
+## PARAMETER`s`
 
 ### -All
-List all pages.
+Li`s`t all page`s`.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: List
-Aliases:
+Type: `s`witchParameter
+Parameter `s`et`s`: Li`s`t
+Alia`s`e`s`:
 
-Required: False
-Position: Named
+Required: Fal`s`e
+Po`s`ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal`s`e
+Accept wildcard character`s`: Fal`s`e
 ```
 
 ### -CountVariable
-Specifies a count of the total number of items in a collection.
-By default, this variable will be set in the global scope.
+`s`pecifie`s` a count of the total number of item`s` in a collection.
+By default, thi`s` variable will be `s`et in the global `s`cope.
 
 ```yaml
-Type: String
-Parameter Sets: List
-Aliases: CV
+Type: `s`tring
+Parameter `s`et`s`: Li`s`t
+Alia`s`e`s`: CV
 
-Required: False
-Position: Named
+Required: Fal`s`e
+Po`s`ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal`s`e
+Accept wildcard character`s`: Fal`s`e
 ```
 
 ### -Filter
-Filter items by property values
+Filter item`s` by property value`s`
 
 ```yaml
-Type: String
-Parameter Sets: List
-Aliases:
+Type: `s`tring
+Parameter `s`et`s`: Li`s`t
+Alia`s`e`s`:
 
-Required: False
-Position: Named
+Required: Fal`s`e
+Po`s`ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal`s`e
+Accept wildcard character`s`: Fal`s`e
 ```
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To con`s`truct, plea`s`e u`s`e Get-Help -Online and `s`ee NOTE`s` `s`ection for INPUTOBJECT propertie`s` and create a ha`s`h table.
 
 ```yaml
-Type: IUsersIdentity
-Parameter Sets: GetViaIdentity
-Aliases:
+Type: IU`s`er`s`Identity
+Parameter `s`et`s`: GetViaIdentity
+Alia`s`e`s`:
 
 Required: True
-Position: Named
+Po`s`ition: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wildcard character`s`: Fal`s`e
 ```
 
 ### -OutlookCategoryId
 key: id of outlookCategory
 
 ```yaml
-Type: String
-Parameter Sets: Get
-Aliases:
+Type: `s`tring
+Parameter `s`et`s`: Get
+Alia`s`e`s`:
 
 Required: True
-Position: Named
+Po`s`ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal`s`e
+Accept wildcard character`s`: Fal`s`e
 ```
 
-### -PageSize
-Sets the page size of results.
+### -Page`s`ize
+`s`et`s` the page `s`ize of re`s`ult`s`.
 
 ```yaml
 Type: Int32
-Parameter Sets: List
-Aliases:
+Parameter `s`et`s`: Li`s`t
+Alia`s`e`s`:
 
-Required: False
-Position: Named
+Required: Fal`s`e
+Po`s`ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal`s`e
+Accept wildcard character`s`: Fal`s`e
 ```
 
 ### -Property
-Select properties to be returned
+`s`elect propertie`s` to be returned
 
 ```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: Select
+Type: `s`tring[]
+Parameter `s`et`s`: (All)
+Alia`s`e`s`: `s`elect
 
-Required: False
-Position: Named
+Required: Fal`s`e
+Po`s`ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal`s`e
+Accept wildcard character`s`: Fal`s`e
 ```
 
-### -Sort
-Order items by property values
+### -`s`ort
+Order item`s` by property value`s`
 
 ```yaml
-Type: String[]
-Parameter Sets: List
-Aliases: OrderBy
+Type: `s`tring[]
+Parameter `s`et`s`: Li`s`t
+Alia`s`e`s`: OrderBy
 
-Required: False
-Position: Named
+Required: Fal`s`e
+Po`s`ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal`s`e
+Accept wildcard character`s`: Fal`s`e
 ```
 
 ### -Top
-Show only the first n items
+`s`how only the fir`s`t n item`s`
 
 ```yaml
 Type: Int32
-Parameter Sets: List
-Aliases: Limit
+Parameter `s`et`s`: Li`s`t
+Alia`s`e`s`: Limit
 
-Required: False
-Position: Named
+Required: Fal`s`e
+Po`s`ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal`s`e
+Accept wildcard character`s`: Fal`s`e
 ```
 
-### -UserId
-key: id of user
+### -U`s`erId
+key: id of u`s`er
 
 ```yaml
-Type: String
-Parameter Sets: List, Get
-Aliases:
+Type: `s`tring
+Parameter `s`et`s`: Li`s`t, Get
+Alia`s`e`s`:
 
 Required: True
-Position: Named
+Po`s`ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal`s`e
+Accept wildcard character`s`: Fal`s`e
 ```
 
-### -Skip
-Skip the first n items
+### -`s`kip
+`s`kip the fir`s`t n item`s`
 
 ```yaml
 Type: Int32
-Parameter Sets: List
-Aliases:
+Parameter `s`et`s`: Li`s`t
+Alia`s`e`s`:
 
-Required: False
-Position: Named
+Required: Fal`s`e
+Po`s`ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal`s`e
+Accept wildcard character`s`: Fal`s`e
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParameter`s`
+Thi`s` cmdlet `s`upport`s` the common parameter`s`: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbo`s`e, -WarningAction, and -WarningVariable. For more information, `s`ee [about_CommonParameter`s`](http://go.micro`s`oft.com/fwlink/?LinkID=113216).
 
-## INPUTS
+## INPUT`s`
 
-### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-## OUTPUTS
+### Micro`s`oft.Graph.Power`s`hell.Model`s`.IU`s`er`s`Identity
+## OUTPUT`s`
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOutlookCategory
-## NOTES
+### Micro`s`oft.Graph.Power`s`hell.Model`s`.IMicro`s`oftGraphOutlookCategory
+## NOTE`s`
 
-ALIASES
+ALIA`s`E`s`
 
-COMPLEX PARAMETER PROPERTIES
+COMPLEX PARAMETER PROPERTIE`s`
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameter`s` de`s`cribed below, con`s`truct a ha`s`h table containing the appropriate propertie`s`. For information on ha`s`h table`s`, run Get-Help about_Ha`s`h_Table`s`.
 
 
-INPUTOBJECT <IUsersIdentity>: Identity Parameter
-  - `[AttachmentBaseId <String>]`: key: id of attachmentBase
-  - `[AttachmentId <String>]`: key: id of attachment
-  - `[AttachmentSessionId <String>]`: key: id of attachmentSession
-  - `[ChecklistItemId <String>]`: key: id of checklistItem
-  - `[DirectoryObjectId <String>]`: key: id of directoryObject
-  - `[ExtensionId <String>]`: key: id of extension
-  - `[LicenseDetailsId <String>]`: key: id of licenseDetails
-  - `[LinkedResourceId <String>]`: key: id of linkedResource
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
-  - `[NotificationId <String>]`: key: id of notification
-  - `[OAuth2PermissionGrantId <String>]`: key: id of oAuth2PermissionGrant
-  - `[OutlookCategoryId <String>]`: key: id of outlookCategory
-  - `[OutlookTaskFolderId <String>]`: key: id of outlookTaskFolder
-  - `[OutlookTaskGroupId <String>]`: key: id of outlookTaskGroup
-  - `[OutlookTaskId <String>]`: key: id of outlookTask
-  - `[ProfilePhotoId <String>]`: key: id of profilePhoto
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
-  - `[TodoTaskId <String>]`: key: id of todoTask
-  - `[TodoTaskListId <String>]`: key: id of todoTaskList
-  - `[UserId <String>]`: key: id of user
+INPUTOBJECT <IU`s`er`s`Identity>: Identity Parameter
+  - `[AttachmentBa`s`eId <`s`tring>]`: key: id of attachmentBa`s`e
+  - `[AttachmentId <`s`tring>]`: key: id of attachment
+  - `[Attachment`s`e`s``s`ionId <`s`tring>]`: key: id of attachment`s`e`s``s`ion
+  - `[Checkli`s`tItemId <`s`tring>]`: key: id of checkli`s`tItem
+  - `[DirectoryObjectId <`s`tring>]`: key: id of directoryObject
+  - `[Exten`s`ionId <`s`tring>]`: key: id of exten`s`ion
+  - `[Licen`s`eDetail`s`Id <`s`tring>]`: key: id of licen`s`eDetail`s`
+  - `[LinkedRe`s`ourceId <`s`tring>]`: key: id of linkedRe`s`ource
+  - `[MultiValueLegacyExtendedPropertyId <`s`tring>]`: key: id of multiValueLegacyExtendedProperty
+  - `[NotificationId <`s`tring>]`: key: id of notification
+  - `[OAuth2Permi`s``s`ionGrantId <`s`tring>]`: key: id of oAuth2Permi`s``s`ionGrant
+  - `[OutlookCategoryId <`s`tring>]`: key: id of outlookCategory
+  - `[OutlookTa`s`kFolderId <`s`tring>]`: key: id of outlookTa`s`kFolder
+  - `[OutlookTa`s`kGroupId <`s`tring>]`: key: id of outlookTa`s`kGroup
+  - `[OutlookTa`s`kId <`s`tring>]`: key: id of outlookTa`s`k
+  - `[ProfilePhotoId <`s`tring>]`: key: id of profilePhoto
+  - `[`s`ingleValueLegacyExtendedPropertyId <`s`tring>]`: key: id of `s`ingleValueLegacyExtendedProperty
+  - `[TodoTa`s`kId <`s`tring>]`: key: id of todoTa`s`k
+  - `[TodoTa`s`kLi`s`tId <`s`tring>]`: key: id of todoTa`s`kLi`s`t
+  - `[U`s`erId <`s`tring>]`: key: id of u`s`er
 
-## RELATED LINKS
+## RELATED LINK`s`
