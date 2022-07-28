@@ -1,241 +1,241 @@
-﻿---
-external help file: Microsoft.Graph.CloudCommunications-help.xml
-Module Name: Microsoft.Graph.CloudCommunications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/invoke-mgcreateorgetcommunicationonlinemeeting
+---
+externa```l``` he```l```p fi```l```e: Microsoft.Graph.C```l```oudCommunications-he```l```p.xm```l```
+Modu```l```e Name: Microsoft.Graph.C```l```oudCommunications
+on```l```ine version: https://docs.microsoft.com/en-us/powershe```l``````l```/modu```l```e/microsoft.graph.c```l```oudcommunications/invoke-mgcreateorgetcommunicationon```l```inemeeting
 schema: 2.0.0
 ---
 
-# Invoke-MgCreateOrGetCommunicationOnlineMeeting
+# Invoke-MgCreateOrGetCommunicationOn```l```ineMeeting
 
 ## SYNOPSIS
 Invoke action createOrGet
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded1 (Defau```l```t)
 ```
-Invoke-MgCreateOrGetCommunicationOnlineMeeting [-AdditionalProperties <Hashtable>]
- [-ChatInfo <IMicrosoftGraphChatInfo>] [-EndDateTime <DateTime>] [-ExternalId <String>]
+Invoke-MgCreateOrGetCommunicationOn```l```ineMeeting [-Additiona```l```Properties <Hashtab```l```e>]
+ [-ChatInfo <IMicrosoftGraphChatInfo>] [-EndDateTime <DateTime>] [-Externa```l```Id <String>]
  [-Participants <IMicrosoftGraphMeetingParticipants>] [-StartDateTime <DateTime>] [-Subject <String>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
-Invoke-MgCreateOrGetCommunicationOnlineMeeting
- -BodyParameter <IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema>
+Invoke-MgCreateOrGetCommunicationOn```l```ineMeeting
+ -BodyParameter <IPaths1Pc6SxrCommunicationsOn```l```inemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApp```l```icationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action createOrGet
 
-## EXAMPLES
+## EXAMP```l```ES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -Additiona```l```Properties
+Additiona```l``` Parameters
 
-```yaml
-Type: Hashtable
+```yam```l```
+Type: Hashtab```l```e
 Parameter Sets: CreateExpanded1
-Aliases:
+A```l```iases:
 
-Required: False
+Required: Fa```l```se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau```l```t va```l```ue: None
+Accept pipe```l```ine input: Fa```l```se
+Accept wi```l```dcard characters: Fa```l```se
 ```
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, p```l```ease use Get-He```l```p -On```l```ine and see NOTES section for BODYPARAMETER properties and create a hash tab```l```e.
 
-```yaml
-Type: IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema
+```yam```l```
+Type: IPaths1Pc6SxrCommunicationsOn```l```inemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApp```l```icationJsonSchema
 Parameter Sets: Create1
-Aliases:
+A```l```iases:
 
 Required: True
 Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Defau```l```t va```l```ue: None
+Accept pipe```l```ine input: True (ByVa```l```ue)
+Accept wi```l```dcard characters: Fa```l```se
 ```
 
 ### -ChatInfo
 chatInfo
-To construct, please use Get-Help -Online and see NOTES section for CHATINFO properties and create a hash table.
+To construct, p```l```ease use Get-He```l```p -On```l```ine and see NOTES section for CHATINFO properties and create a hash tab```l```e.
 
-```yaml
+```yam```l```
 Type: IMicrosoftGraphChatInfo
 Parameter Sets: CreateExpanded1
-Aliases:
+A```l```iases:
 
-Required: False
+Required: Fa```l```se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau```l```t va```l```ue: None
+Accept pipe```l```ine input: Fa```l```se
+Accept wi```l```dcard characters: Fa```l```se
 ```
 
 ### -EndDateTime
 .
 
-```yaml
+```yam```l```
 Type: DateTime
 Parameter Sets: CreateExpanded1
-Aliases:
+A```l```iases:
 
-Required: False
+Required: Fa```l```se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau```l```t va```l```ue: None
+Accept pipe```l```ine input: Fa```l```se
+Accept wi```l```dcard characters: Fa```l```se
 ```
 
-### -ExternalId
+### -Externa```l```Id
 .
 
-```yaml
+```yam```l```
 Type: String
 Parameter Sets: CreateExpanded1
-Aliases:
+A```l```iases:
 
-Required: False
+Required: Fa```l```se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau```l```t va```l```ue: None
+Accept pipe```l```ine input: Fa```l```se
+Accept wi```l```dcard characters: Fa```l```se
 ```
 
 ### -Participants
 meetingParticipants
-To construct, please use Get-Help -Online and see NOTES section for PARTICIPANTS properties and create a hash table.
+To construct, p```l```ease use Get-He```l```p -On```l```ine and see NOTES section for PARTICIPANTS properties and create a hash tab```l```e.
 
-```yaml
+```yam```l```
 Type: IMicrosoftGraphMeetingParticipants
 Parameter Sets: CreateExpanded1
-Aliases:
+A```l```iases:
 
-Required: False
+Required: Fa```l```se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau```l```t va```l```ue: None
+Accept pipe```l```ine input: Fa```l```se
+Accept wi```l```dcard characters: Fa```l```se
 ```
 
 ### -StartDateTime
 .
 
-```yaml
+```yam```l```
 Type: DateTime
 Parameter Sets: CreateExpanded1
-Aliases:
+A```l```iases:
 
-Required: False
+Required: Fa```l```se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau```l```t va```l```ue: None
+Accept pipe```l```ine input: Fa```l```se
+Accept wi```l```dcard characters: Fa```l```se
 ```
 
 ### -Subject
 .
 
-```yaml
+```yam```l```
 Type: String
 Parameter Sets: CreateExpanded1
-Aliases:
+A```l```iases:
 
-Required: False
+Required: Fa```l```se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau```l```t va```l```ue: None
+Accept pipe```l```ine input: Fa```l```se
+Accept wi```l```dcard characters: Fa```l```se
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation before running the cmd```l```et.
 
-```yaml
+```yam```l```
 Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Parameter Sets: (A```l``````l```)
+A```l```iases: cf
 
-Required: False
+Required: Fa```l```se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau```l```t va```l```ue: None
+Accept pipe```l```ine input: Fa```l```se
+Accept wi```l```dcard characters: Fa```l```se
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what wou```l```d happen if the cmd```l```et runs.
+The cmd```l```et is not run.
 
-```yaml
+```yam```l```
 Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Parameter Sets: (A```l``````l```)
+A```l```iases: wi
 
-Required: False
+Required: Fa```l```se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau```l```t va```l```ue: None
+Accept pipe```l```ine input: Fa```l```se
+Accept wi```l```dcard characters: Fa```l```se
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmd```l```et supports the common parameters: -Debug, -ErrorAction, -ErrorVariab```l```e, -InformationAction, -InformationVariab```l```e, -OutVariab```l```e, -OutBuffer, -Pipe```l```ineVariab```l```e, -Verbose, -WarningAction, and -WarningVariab```l```e. For more information, see [about_CommonParameters](http://go.microsoft.com/fw```l```ink/?```l```inkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShe```l``````l```.Mode```l```s.IPaths1Pc6SxrCommunicationsOn```l```inemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApp```l```icationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnlineMeeting
+### Microsoft.Graph.PowerShe```l``````l```.Mode```l```s.IMicrosoftGraphOn```l```ineMeeting
 ## NOTES
 
-ALIASES
+A```l```IASES
 
-COMPLEX PARAMETER PROPERTIES
+COMP```l```EX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described be```l```ow, construct a hash tab```l```e containing the appropriate properties. For information on hash tab```l```es, run Get-He```l```p about_Hash_Tab```l```es.
 
 
-BODYPARAMETER <IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER <IPaths1Pc6SxrCommunicationsOn```l```inemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApp```l```icationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channel.
-    - `[ReplyChainMessageId <String>]`: The ID of the reply message.
+    - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channe```l```.
+    - `[Rep```l```yChainMessageId <String>]`: The ID of the rep```l```y message.
     - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
   - `[EndDateTime <DateTime?>]`: 
-  - `[ExternalId <String>]`: 
+  - `[Externa```l```Id <String>]`: 
   - `[Participants <IMicrosoftGraphMeetingParticipants>]`: meetingParticipants
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Attendees <IMicrosoftGraphMeetingParticipantInfo[]>]`: Information of the meeting attendees.
       - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Application <IMicrosoftGraphIdentity>]`: identity
+        - `[App```l```ication <IMicrosoftGraphIdentity>]`: identity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          - `[Disp```l```ayName <String>]`: The identity's disp```l```ay name. Note that this may not a```l```ways be avai```l```ab```l```e or up to date. For examp```l```e, if a user changes their disp```l```ay name, the API may show the new va```l```ue in a future response, but the items associated with the user won't show up as having changed when using de```l```ta.
           - `[Id <String>]`: Unique identifier for the identity.
         - `[Device <IMicrosoftGraphIdentity>]`: identity
         - `[User <IMicrosoftGraphIdentity>]`: identity
-      - `[Role <String>]`: 
-      - `[Upn <String>]`: User principal name of the participant.
+      - `[Ro```l```e <String>]`: 
+      - `[Upn <String>]`: User principa```l``` name of the participant.
     - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
   - `[StartDateTime <DateTime?>]`: 
   - `[Subject <String>]`: 
 
 CHATINFO <IMicrosoftGraphChatInfo>: chatInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channel.
-  - `[ReplyChainMessageId <String>]`: The ID of the reply message.
+  - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channe```l```.
+  - `[Rep```l```yChainMessageId <String>]`: The ID of the rep```l```y message.
   - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
 
 PARTICIPANTS <IMicrosoftGraphMeetingParticipants>: meetingParticipants
@@ -243,14 +243,14 @@ PARTICIPANTS <IMicrosoftGraphMeetingParticipants>: meetingParticipants
   - `[Attendees <IMicrosoftGraphMeetingParticipantInfo[]>]`: Information of the meeting attendees.
     - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[App```l```ication <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Disp```l```ayName <String>]`: The identity's disp```l```ay name. Note that this may not a```l```ways be avai```l```ab```l```e or up to date. For examp```l```e, if a user changes their disp```l```ay name, the API may show the new va```l```ue in a future response, but the items associated with the user won't show up as having changed when using de```l```ta.
         - `[Id <String>]`: Unique identifier for the identity.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[Role <String>]`: 
-    - `[Upn <String>]`: User principal name of the participant.
+    - `[Ro```l```e <String>]`: 
+    - `[Upn <String>]`: User principa```l``` name of the participant.
   - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
 
-## RELATED LINKS
+## RE```l```ATED ```l```INKS
