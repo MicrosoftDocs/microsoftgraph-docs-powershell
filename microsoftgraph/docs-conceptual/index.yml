@@ -64,7 +64,7 @@ landingContent:
 
   
   # Card
-  - title: References
+  - title: Microsoft Graph PowerShell reference
     linkLists:
       - linkListType: reference 
         links:
