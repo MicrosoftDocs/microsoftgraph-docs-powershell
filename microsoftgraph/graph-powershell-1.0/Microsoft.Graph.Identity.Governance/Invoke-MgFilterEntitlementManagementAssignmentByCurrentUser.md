@@ -1,7 +1,7 @@
-﻿---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/invoke-mgfilterentitlementmanagementassignmentbycurrentuser
+---
+external help file: Microsoft.Graph.I`d`entity.Governance-help.xml
+Mo`d`ule Name: Microsoft.Graph.I`d`entity.Governance
+online version: https://`d`ocs.microsoft.com/en-us/powershell/mo`d`ule/microsoft.graph.i`d`entity.governance/invoke-mgfilterentitlementmanagementassignmentbycurrentuser
 schema: 2.0.0
 ---
 
@@ -12,18 +12,18 @@ Invoke function filterByCurrentUser
 
 ## SYNTAX
 
-### Filter (Default)
+### Filter (`d`efault)
 ```
 Invoke-MgFilterEntitlementManagementAssignmentByCurrentUser -On <String> [<CommonParameters>]
 ```
 
-### FilterViaIdentity
+### FilterViaI`d`entity
 ```
-Invoke-MgFilterEntitlementManagementAssignmentByCurrentUser -InputObject <IIdentityGovernanceIdentity>
+Invoke-MgFilterEntitlementManagementAssignmentByCurrentUser -InputObject <II`d`entityGovernanceI`d`entity>
  [<CommonParameters>]
 ```
 
-## DESCRIPTION
+## `d`ESCRIPTION
 Invoke function filterByCurrentUser
 
 ## EXAMPLES
@@ -31,19 +31,19 @@ Invoke function filterByCurrentUser
 ## PARAMETERS
 
 ### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+I`d`entity Parameter
+To construct, please use Get-Help -Online an`d` see NOTES section for INPUTOBJECT properties an`d` create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: FilterViaIdentity
+Type: II`d`entityGovernanceI`d`entity
+Parameter Sets: FilterViaI`d`entity
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require`d`: True
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
 ### -On
@@ -54,91 +54,91 @@ Type: String
 Parameter Sets: Filter
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require`d`: True
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cm`d`let supports the common parameters: -`d`ebug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, an`d` -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkI`d`=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+### Microsoft.Graph.PowerShell.Mo`d`els.II`d`entityGovernanceI`d`entity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageAssignment1
+### Microsoft.Graph.PowerShell.Mo`d`els.IMicrosoftGraphAccessPackageAssignment1
 ## NOTES
 
 ALIASES
 
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters `d`escribe`d` below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
-  - `[AccessPackageAssignmentId <String>]`: key: id of accessPackageAssignment
-  - `[AccessPackageAssignmentPolicyId <String>]`: key: id of accessPackageAssignmentPolicy
-  - `[AccessPackageAssignmentRequestId <String>]`: key: id of accessPackageAssignmentRequest
-  - `[AccessPackageAssignmentResourceRoleId <String>]`: key: id of accessPackageAssignmentResourceRole
-  - `[AccessPackageCatalogId <String>]`: key: id of accessPackageCatalog
-  - `[AccessPackageId <String>]`: key: id of accessPackage
-  - `[AccessPackageId1 <String>]`: key: id of accessPackage
-  - `[AccessPackageId2 <String>]`: Usage: accessPackageId='{accessPackageId}'
-  - `[AccessPackageResourceEnvironmentId <String>]`: key: id of accessPackageResourceEnvironment
-  - `[AccessPackageResourceId <String>]`: key: id of accessPackageResource
-  - `[AccessPackageResourceRequestId <String>]`: key: id of accessPackageResourceRequest
-  - `[AccessPackageResourceRoleId <String>]`: key: id of accessPackageResourceRole
-  - `[AccessPackageResourceRoleScopeId <String>]`: key: id of accessPackageResourceRoleScope
-  - `[AccessPackageResourceScopeId <String>]`: key: id of accessPackageResourceScope
-  - `[AccessReviewDecisionId <String>]`: key: id of accessReviewDecision
-  - `[AccessReviewHistoryDefinitionId <String>]`: key: id of accessReviewHistoryDefinition
-  - `[AccessReviewHistoryInstanceId <String>]`: key: id of accessReviewHistoryInstance
-  - `[AccessReviewId <String>]`: key: id of accessReview
-  - `[AccessReviewId1 <String>]`: key: id of accessReview
-  - `[AccessReviewInstanceDecisionItemId <String>]`: key: id of accessReviewInstanceDecisionItem
-  - `[AccessReviewInstanceDecisionItemId1 <String>]`: key: id of accessReviewInstanceDecisionItem
-  - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
-  - `[AccessReviewReviewerId <String>]`: key: id of accessReviewReviewer
-  - `[AccessReviewScheduleDefinitionId <String>]`: key: id of accessReviewScheduleDefinition
-  - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
-  - `[AgreementAcceptanceId <String>]`: key: id of agreementAcceptance
-  - `[AgreementFileLocalizationId <String>]`: key: id of agreementFileLocalization
-  - `[AgreementFileVersionId <String>]`: key: id of agreementFileVersion
-  - `[AgreementId <String>]`: key: id of agreement
-  - `[AppConsentRequestId <String>]`: key: id of appConsentRequest
-  - `[ApprovalId <String>]`: key: id of approval
-  - `[ApprovalStageId <String>]`: key: id of approvalStage
-  - `[ApprovalStepId <String>]`: key: id of approvalStep
-  - `[BusinessFlowTemplateId <String>]`: key: id of businessFlowTemplate
-  - `[ConnectedOrganizationId <String>]`: key: id of connectedOrganization
-  - `[CustomAccessPackageWorkflowExtensionId <String>]`: key: id of customAccessPackageWorkflowExtension
-  - `[CustomExtensionHandlerId <String>]`: key: id of customExtensionHandler
-  - `[DirectoryObjectId <String>]`: key: id of directoryObject
-  - `[GovernanceInsightId <String>]`: key: id of governanceInsight
-  - `[GovernanceResourceId <String>]`: key: id of governanceResource
-  - `[GovernanceRoleAssignmentId <String>]`: key: id of governanceRoleAssignment
-  - `[GovernanceRoleAssignmentRequestId <String>]`: key: id of governanceRoleAssignmentRequest
-  - `[GovernanceRoleDefinitionId <String>]`: key: id of governanceRoleDefinition
-  - `[GovernanceRoleSettingId <String>]`: key: id of governanceRoleSetting
-  - `[GroupId <String>]`: key: id of group
-  - `[IncompatibleAccessPackageId <String>]`: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
+INPUTOBJECT <II`d`entityGovernanceI`d`entity>: I`d`entity Parameter
+  - `[AccessPackageAssignmentI`d` <String>]`: key: i`d` of accessPackageAssignment
+  - `[AccessPackageAssignmentPolicyI`d` <String>]`: key: i`d` of accessPackageAssignmentPolicy
+  - `[AccessPackageAssignmentRequestI`d` <String>]`: key: i`d` of accessPackageAssignmentRequest
+  - `[AccessPackageAssignmentResourceRoleI`d` <String>]`: key: i`d` of accessPackageAssignmentResourceRole
+  - `[AccessPackageCatalogI`d` <String>]`: key: i`d` of accessPackageCatalog
+  - `[AccessPackageI`d` <String>]`: key: i`d` of accessPackage
+  - `[AccessPackageI`d`1 <String>]`: key: i`d` of accessPackage
+  - `[AccessPackageI`d`2 <String>]`: Usage: accessPackageI`d`='{accessPackageI`d`}'
+  - `[AccessPackageResourceEnvironmentI`d` <String>]`: key: i`d` of accessPackageResourceEnvironment
+  - `[AccessPackageResourceI`d` <String>]`: key: i`d` of accessPackageResource
+  - `[AccessPackageResourceRequestI`d` <String>]`: key: i`d` of accessPackageResourceRequest
+  - `[AccessPackageResourceRoleI`d` <String>]`: key: i`d` of accessPackageResourceRole
+  - `[AccessPackageResourceRoleScopeI`d` <String>]`: key: i`d` of accessPackageResourceRoleScope
+  - `[AccessPackageResourceScopeI`d` <String>]`: key: i`d` of accessPackageResourceScope
+  - `[AccessReview`d`ecisionI`d` <String>]`: key: i`d` of accessReview`d`ecision
+  - `[AccessReviewHistory`d`efinitionI`d` <String>]`: key: i`d` of accessReviewHistory`d`efinition
+  - `[AccessReviewHistoryInstanceI`d` <String>]`: key: i`d` of accessReviewHistoryInstance
+  - `[AccessReviewI`d` <String>]`: key: i`d` of accessReview
+  - `[AccessReviewI`d`1 <String>]`: key: i`d` of accessReview
+  - `[AccessReviewInstance`d`ecisionItemI`d` <String>]`: key: i`d` of accessReviewInstance`d`ecisionItem
+  - `[AccessReviewInstance`d`ecisionItemI`d`1 <String>]`: key: i`d` of accessReviewInstance`d`ecisionItem
+  - `[AccessReviewInstanceI`d` <String>]`: key: i`d` of accessReviewInstance
+  - `[AccessReviewReviewerI`d` <String>]`: key: i`d` of accessReviewReviewer
+  - `[AccessReviewSche`d`ule`d`efinitionI`d` <String>]`: key: i`d` of accessReviewSche`d`ule`d`efinition
+  - `[AccessReviewStageI`d` <String>]`: key: i`d` of accessReviewStage
+  - `[AgreementAcceptanceI`d` <String>]`: key: i`d` of agreementAcceptance
+  - `[AgreementFileLocalizationI`d` <String>]`: key: i`d` of agreementFileLocalization
+  - `[AgreementFileVersionI`d` <String>]`: key: i`d` of agreementFileVersion
+  - `[AgreementI`d` <String>]`: key: i`d` of agreement
+  - `[AppConsentRequestI`d` <String>]`: key: i`d` of appConsentRequest
+  - `[ApprovalI`d` <String>]`: key: i`d` of approval
+  - `[ApprovalStageI`d` <String>]`: key: i`d` of approvalStage
+  - `[ApprovalStepI`d` <String>]`: key: i`d` of approvalStep
+  - `[BusinessFlowTemplateI`d` <String>]`: key: i`d` of businessFlowTemplate
+  - `[Connecte`d`OrganizationI`d` <String>]`: key: i`d` of connecte`d`Organization
+  - `[CustomAccessPackageWorkflowExtensionI`d` <String>]`: key: i`d` of customAccessPackageWorkflowExtension
+  - `[CustomExtensionHan`d`lerI`d` <String>]`: key: i`d` of customExtensionHan`d`ler
+  - `[`d`irectoryObjectI`d` <String>]`: key: i`d` of `d`irectoryObject
+  - `[GovernanceInsightI`d` <String>]`: key: i`d` of governanceInsight
+  - `[GovernanceResourceI`d` <String>]`: key: i`d` of governanceResource
+  - `[GovernanceRoleAssignmentI`d` <String>]`: key: i`d` of governanceRoleAssignment
+  - `[GovernanceRoleAssignmentRequestI`d` <String>]`: key: i`d` of governanceRoleAssignmentRequest
+  - `[GovernanceRole`d`efinitionI`d` <String>]`: key: i`d` of governanceRole`d`efinition
+  - `[GovernanceRoleSettingI`d` <String>]`: key: i`d` of governanceRoleSetting
+  - `[GroupI`d` <String>]`: key: i`d` of group
+  - `[IncompatibleAccessPackageI`d` <String>]`: Usage: incompatibleAccessPackageI`d`='{incompatibleAccessPackageI`d`}'
   - `[On <String>]`: Usage: on='{on}'
-  - `[PrivilegedAccessId <String>]`: key: id of privilegedAccess
-  - `[PrivilegedApprovalId <String>]`: key: id of privilegedApproval
-  - `[PrivilegedOperationEventId <String>]`: key: id of privilegedOperationEvent
-  - `[PrivilegedRoleAssignmentId <String>]`: key: id of privilegedRoleAssignment
-  - `[PrivilegedRoleAssignmentId1 <String>]`: key: id of privilegedRoleAssignment
-  - `[PrivilegedRoleAssignmentRequestId <String>]`: key: id of privilegedRoleAssignmentRequest
-  - `[PrivilegedRoleId <String>]`: key: id of privilegedRole
-  - `[ProgramControlId <String>]`: key: id of programControl
-  - `[ProgramControlId1 <String>]`: key: id of programControl
-  - `[ProgramControlTypeId <String>]`: key: id of programControlType
-  - `[ProgramId <String>]`: key: id of program
-  - `[UserConsentRequestId <String>]`: key: id of userConsentRequest
-  - `[UserId <String>]`: key: id of user
+  - `[Privilege`d`AccessI`d` <String>]`: key: i`d` of privilege`d`Access
+  - `[Privilege`d`ApprovalI`d` <String>]`: key: i`d` of privilege`d`Approval
+  - `[Privilege`d`OperationEventI`d` <String>]`: key: i`d` of privilege`d`OperationEvent
+  - `[Privilege`d`RoleAssignmentI`d` <String>]`: key: i`d` of privilege`d`RoleAssignment
+  - `[Privilege`d`RoleAssignmentI`d`1 <String>]`: key: i`d` of privilege`d`RoleAssignment
+  - `[Privilege`d`RoleAssignmentRequestI`d` <String>]`: key: i`d` of privilege`d`RoleAssignmentRequest
+  - `[Privilege`d`RoleI`d` <String>]`: key: i`d` of privilege`d`Role
+  - `[ProgramControlI`d` <String>]`: key: i`d` of programControl
+  - `[ProgramControlI`d`1 <String>]`: key: i`d` of programControl
+  - `[ProgramControlTypeI`d` <String>]`: key: i`d` of programControlType
+  - `[ProgramI`d` <String>]`: key: i`d` of program
+  - `[UserConsentRequestI`d` <String>]`: key: i`d` of userConsentRequest
+  - `[UserI`d` <String>]`: key: i`d` of user
 
-## RELATED LINKS
+## RELATE`d` LINKS
