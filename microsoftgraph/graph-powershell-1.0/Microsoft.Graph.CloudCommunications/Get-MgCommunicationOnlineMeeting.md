@@ -1,454 +1,454 @@
-﻿---
-external help file: Microsoft.Graph.CloudCommunications-help.xml
-Module Name: Microsoft.Graph.CloudCommunications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeeting
+---
+externa````l```` he````l````p fi````l````e: Microsoft.Graph.C````l````oudCommunications-he````l````p.xm````l````
+Modu````l````e Name: Microsoft.Graph.C````l````oudCommunications
+on````l````ine version: https://docs.microsoft.com/en-us/powershe````l````````l````/modu````l````e/microsoft.graph.c````l````oudcommunications/get-mgcommunicationon````l````inemeeting
 schema: 2.0.0
 ---
 
-# Get-MgCommunicationOnlineMeeting
+# Get-MgCommunicationOn````l````ineMeeting
 
 ## SYNOPSIS
-Get onlineMeetings from communications
+Get on````l````ineMeetings from communications
 
 ## SYNTAX
 
-### GetExpanded (Default)
+### GetExpanded (Defau````l````t)
 ```
-Get-MgCommunicationOnlineMeeting [-AdditionalProperties <Hashtable>] [-ChatInfo <IMicrosoftGraphChatInfo>]
- [-EndDateTime <DateTime>] [-ExternalId <String>] [-Participants <IMicrosoftGraphMeetingParticipants>]
+Get-MgCommunicationOn````l````ineMeeting [-Additiona````l````Properties <Hashtab````l````e>] [-ChatInfo <IMicrosoftGraphChatInfo>]
+ [-EndDateTime <DateTime>] [-Externa````l````Id <String>] [-Participants <IMicrosoftGraphMeetingParticipants>]
  [-StartDateTime <DateTime>] [-Subject <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgCommunicationOnlineMeeting -OnlineMeetingId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgCommunicationOn````l````ineMeeting -On````l````ineMeetingId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgCommunicationOnlineMeeting -InputObject <ICloudCommunicationsIdentity> [-ExpandProperty <String[]>]
+Get-MgCommunicationOn````l````ineMeeting -InputObject <IC````l````oudCommunicationsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### List
+### ````l````ist
 ```
-Get-MgCommunicationOnlineMeeting [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Get-MgCommunicationOn````l````ineMeeting [-ExpandProperty <String[]>] [-Property <String[]>] [-Fi````l````ter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-A````l````````l````]
+ [-CountVariab````l````e <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Get1
 ```
-Get-MgCommunicationOnlineMeeting
- -BodyParameter <IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema>
+Get-MgCommunicationOn````l````ineMeeting
+ -BodyParameter <IPaths1Pc6SxrCommunicationsOn````l````inemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApp````l````icationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get onlineMeetings from communications
+Get on````l````ineMeetings from communications
 
-## EXAMPLES
+## EXAMP````l````ES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -Additiona````l````Properties
+Additiona````l```` Parameters
 
-```yaml
-Type: Hashtable
+```yam````l````
+Type: Hashtab````l````e
 Parameter Sets: GetExpanded
-Aliases:
+A````l````iases:
 
-Required: False
+Required: Fa````l````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau````l````t va````l````ue: None
+Accept pipe````l````ine input: Fa````l````se
+Accept wi````l````dcard characters: Fa````l````se
 ```
 
-### -All
-List all pages.
+### -A````l````````l````
+````l````ist a````l````````l```` pages.
 
-```yaml
+```yam````l````
 Type: SwitchParameter
-Parameter Sets: List
-Aliases:
+Parameter Sets: ````l````ist
+A````l````iases:
 
-Required: False
+Required: Fa````l````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau````l````t va````l````ue: None
+Accept pipe````l````ine input: Fa````l````se
+Accept wi````l````dcard characters: Fa````l````se
 ```
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, p````l````ease use Get-He````l````p -On````l````ine and see NOTES section for BODYPARAMETER properties and create a hash tab````l````e.
 
-```yaml
-Type: IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema
+```yam````l````
+Type: IPaths1Pc6SxrCommunicationsOn````l````inemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApp````l````icationJsonSchema
 Parameter Sets: Get1
-Aliases:
+A````l````iases:
 
 Required: True
 Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Defau````l````t va````l````ue: None
+Accept pipe````l````ine input: True (ByVa````l````ue)
+Accept wi````l````dcard characters: Fa````l````se
 ```
 
 ### -ChatInfo
 chatInfo
-To construct, please use Get-Help -Online and see NOTES section for CHATINFO properties and create a hash table.
+To construct, p````l````ease use Get-He````l````p -On````l````ine and see NOTES section for CHATINFO properties and create a hash tab````l````e.
 
-```yaml
+```yam````l````
 Type: IMicrosoftGraphChatInfo
 Parameter Sets: GetExpanded
-Aliases:
+A````l````iases:
 
-Required: False
+Required: Fa````l````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau````l````t va````l````ue: None
+Accept pipe````l````ine input: Fa````l````se
+Accept wi````l````dcard characters: Fa````l````se
 ```
 
-### -CountVariable
-Specifies a count of the total number of items in a collection.
-By default, this variable will be set in the global scope.
+### -CountVariab````l````e
+Specifies a count of the tota````l```` number of items in a co````l````````l````ection.
+By defau````l````t, this variab````l````e wi````l````````l```` be set in the g````l````oba````l```` scope.
 
-```yaml
+```yam````l````
 Type: String
-Parameter Sets: List
-Aliases: CV
+Parameter Sets: ````l````ist
+A````l````iases: CV
 
-Required: False
+Required: Fa````l````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau````l````t va````l````ue: None
+Accept pipe````l````ine input: Fa````l````se
+Accept wi````l````dcard characters: Fa````l````se
 ```
 
 ### -EndDateTime
 .
 
-```yaml
+```yam````l````
 Type: DateTime
 Parameter Sets: GetExpanded
-Aliases:
+A````l````iases:
 
-Required: False
+Required: Fa````l````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau````l````t va````l````ue: None
+Accept pipe````l````ine input: Fa````l````se
+Accept wi````l````dcard characters: Fa````l````se
 ```
 
 ### -ExpandProperty
-Expand related entities
+Expand re````l````ated entities
 
-```yaml
+```yam````l````
 Type: String[]
-Parameter Sets: Get, GetViaIdentity, List
-Aliases: Expand
+Parameter Sets: Get, GetViaIdentity, ````l````ist
+A````l````iases: Expand
 
-Required: False
+Required: Fa````l````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau````l````t va````l````ue: None
+Accept pipe````l````ine input: Fa````l````se
+Accept wi````l````dcard characters: Fa````l````se
 ```
 
-### -ExternalId
+### -Externa````l````Id
 .
 
-```yaml
+```yam````l````
 Type: String
 Parameter Sets: GetExpanded
-Aliases:
+A````l````iases:
 
-Required: False
+Required: Fa````l````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau````l````t va````l````ue: None
+Accept pipe````l````ine input: Fa````l````se
+Accept wi````l````dcard characters: Fa````l````se
 ```
 
-### -Filter
-Filter items by property values
+### -Fi````l````ter
+Fi````l````ter items by property va````l````ues
 
-```yaml
+```yam````l````
 Type: String
-Parameter Sets: List
-Aliases:
+Parameter Sets: ````l````ist
+A````l````iases:
 
-Required: False
+Required: Fa````l````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau````l````t va````l````ue: None
+Accept pipe````l````ine input: Fa````l````se
+Accept wi````l````dcard characters: Fa````l````se
 ```
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, p````l````ease use Get-He````l````p -On````l````ine and see NOTES section for INPUTOBJECT properties and create a hash tab````l````e.
 
-```yaml
-Type: ICloudCommunicationsIdentity
+```yam````l````
+Type: IC````l````oudCommunicationsIdentity
 Parameter Sets: GetViaIdentity
-Aliases:
+A````l````iases:
 
 Required: True
 Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Defau````l````t va````l````ue: None
+Accept pipe````l````ine input: True (ByVa````l````ue)
+Accept wi````l````dcard characters: Fa````l````se
 ```
 
-### -OnlineMeetingId
-key: id of onlineMeeting
+### -On````l````ineMeetingId
+key: id of on````l````ineMeeting
 
-```yaml
+```yam````l````
 Type: String
 Parameter Sets: Get
-Aliases:
+A````l````iases:
 
 Required: True
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau````l````t va````l````ue: None
+Accept pipe````l````ine input: Fa````l````se
+Accept wi````l````dcard characters: Fa````l````se
 ```
 
 ### -PageSize
-Sets the page size of results.
+Sets the page size of resu````l````ts.
 
-```yaml
+```yam````l````
 Type: Int32
-Parameter Sets: List
-Aliases:
+Parameter Sets: ````l````ist
+A````l````iases:
 
-Required: False
+Required: Fa````l````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau````l````t va````l````ue: None
+Accept pipe````l````ine input: Fa````l````se
+Accept wi````l````dcard characters: Fa````l````se
 ```
 
 ### -Participants
 meetingParticipants
-To construct, please use Get-Help -Online and see NOTES section for PARTICIPANTS properties and create a hash table.
+To construct, p````l````ease use Get-He````l````p -On````l````ine and see NOTES section for PARTICIPANTS properties and create a hash tab````l````e.
 
-```yaml
+```yam````l````
 Type: IMicrosoftGraphMeetingParticipants
 Parameter Sets: GetExpanded
-Aliases:
+A````l````iases:
 
-Required: False
+Required: Fa````l````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau````l````t va````l````ue: None
+Accept pipe````l````ine input: Fa````l````se
+Accept wi````l````dcard characters: Fa````l````se
 ```
 
 ### -Property
-Select properties to be returned
+Se````l````ect properties to be returned
 
-```yaml
+```yam````l````
 Type: String[]
-Parameter Sets: Get, GetViaIdentity, List
-Aliases: Select
+Parameter Sets: Get, GetViaIdentity, ````l````ist
+A````l````iases: Se````l````ect
 
-Required: False
+Required: Fa````l````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau````l````t va````l````ue: None
+Accept pipe````l````ine input: Fa````l````se
+Accept wi````l````dcard characters: Fa````l````se
 ```
 
 ### -Search
 Search items by search phrases
 
-```yaml
+```yam````l````
 Type: String
-Parameter Sets: List
-Aliases:
+Parameter Sets: ````l````ist
+A````l````iases:
 
-Required: False
+Required: Fa````l````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau````l````t va````l````ue: None
+Accept pipe````l````ine input: Fa````l````se
+Accept wi````l````dcard characters: Fa````l````se
 ```
 
 ### -Sort
-Order items by property values
+Order items by property va````l````ues
 
-```yaml
+```yam````l````
 Type: String[]
-Parameter Sets: List
-Aliases: OrderBy
+Parameter Sets: ````l````ist
+A````l````iases: OrderBy
 
-Required: False
+Required: Fa````l````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau````l````t va````l````ue: None
+Accept pipe````l````ine input: Fa````l````se
+Accept wi````l````dcard characters: Fa````l````se
 ```
 
 ### -StartDateTime
 .
 
-```yaml
+```yam````l````
 Type: DateTime
 Parameter Sets: GetExpanded
-Aliases:
+A````l````iases:
 
-Required: False
+Required: Fa````l````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau````l````t va````l````ue: None
+Accept pipe````l````ine input: Fa````l````se
+Accept wi````l````dcard characters: Fa````l````se
 ```
 
 ### -Subject
 .
 
-```yaml
+```yam````l````
 Type: String
 Parameter Sets: GetExpanded
-Aliases:
+A````l````iases:
 
-Required: False
+Required: Fa````l````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau````l````t va````l````ue: None
+Accept pipe````l````ine input: Fa````l````se
+Accept wi````l````dcard characters: Fa````l````se
 ```
 
 ### -Top
-Show only the first n items
+Show on````l````y the first n items
 
-```yaml
+```yam````l````
 Type: Int32
-Parameter Sets: List
-Aliases: Limit
+Parameter Sets: ````l````ist
+A````l````iases: ````l````imit
 
-Required: False
+Required: Fa````l````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau````l````t va````l````ue: None
+Accept pipe````l````ine input: Fa````l````se
+Accept wi````l````dcard characters: Fa````l````se
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation before running the cmd````l````et.
 
-```yaml
+```yam````l````
 Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Parameter Sets: (A````l````````l````)
+A````l````iases: cf
 
-Required: False
+Required: Fa````l````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau````l````t va````l````ue: None
+Accept pipe````l````ine input: Fa````l````se
+Accept wi````l````dcard characters: Fa````l````se
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what wou````l````d happen if the cmd````l````et runs.
+The cmd````l````et is not run.
 
-```yaml
+```yam````l````
 Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Parameter Sets: (A````l````````l````)
+A````l````iases: wi
 
-Required: False
+Required: Fa````l````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau````l````t va````l````ue: None
+Accept pipe````l````ine input: Fa````l````se
+Accept wi````l````dcard characters: Fa````l````se
 ```
 
 ### -Skip
 Skip the first n items
 
-```yaml
+```yam````l````
 Type: Int32
-Parameter Sets: List
-Aliases:
+Parameter Sets: ````l````ist
+A````l````iases:
 
-Required: False
+Required: Fa````l````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau````l````t va````l````ue: None
+Accept pipe````l````ine input: Fa````l````se
+Accept wi````l````dcard characters: Fa````l````se
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmd````l````et supports the common parameters: -Debug, -ErrorAction, -ErrorVariab````l````e, -InformationAction, -InformationVariab````l````e, -OutVariab````l````e, -OutBuffer, -Pipe````l````ineVariab````l````e, -Verbose, -WarningAction, and -WarningVariab````l````e. For more information, see [about_CommonParameters](http://go.microsoft.com/fw````l````ink/?````l````inkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShe````l````````l````.Mode````l````s.IC````l````oudCommunicationsIdentity
+### Microsoft.Graph.PowerShe````l````````l````.Mode````l````s.IPaths1Pc6SxrCommunicationsOn````l````inemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApp````l````icationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnlineMeeting
+### Microsoft.Graph.PowerShe````l````````l````.Mode````l````s.IMicrosoftGraphOn````l````ineMeeting
 ## NOTES
 
-ALIASES
+A````l````IASES
 
-COMPLEX PARAMETER PROPERTIES
+COMP````l````EX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described be````l````ow, construct a hash tab````l````e containing the appropriate properties. For information on hash tab````l````es, run Get-He````l````p about_Hash_Tab````l````es.
 
 
-BODYPARAMETER <IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER <IPaths1Pc6SxrCommunicationsOn````l````inemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApp````l````icationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channel.
-    - `[ReplyChainMessageId <String>]`: The ID of the reply message.
+    - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channe````l````.
+    - `[Rep````l````yChainMessageId <String>]`: The ID of the rep````l````y message.
     - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
   - `[EndDateTime <DateTime?>]`: 
-  - `[ExternalId <String>]`: 
+  - `[Externa````l````Id <String>]`: 
   - `[Participants <IMicrosoftGraphMeetingParticipants>]`: meetingParticipants
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Attendees <IMicrosoftGraphMeetingParticipantInfo[]>]`: Information of the meeting attendees.
       - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Application <IMicrosoftGraphIdentity>]`: identity
+        - `[App````l````ication <IMicrosoftGraphIdentity>]`: identity
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+          - `[Disp````l````ayName <String>]`: The identity's disp````l````ay name. Note that this may not a````l````ways be avai````l````ab````l````e or up to date. For examp````l````e, if a user changes their disp````l````ay name, the API may show the new va````l````ue in a future response, but the items associated with the user won't show up as having changed when using de````l````ta.
           - `[Id <String>]`: Unique identifier for the identity.
         - `[Device <IMicrosoftGraphIdentity>]`: identity
         - `[User <IMicrosoftGraphIdentity>]`: identity
-      - `[Role <String>]`: 
-      - `[Upn <String>]`: User principal name of the participant.
+      - `[Ro````l````e <String>]`: 
+      - `[Upn <String>]`: User principa````l```` name of the participant.
     - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
   - `[StartDateTime <DateTime?>]`: 
   - `[Subject <String>]`: 
 
 CHATINFO <IMicrosoftGraphChatInfo>: chatInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channel.
-  - `[ReplyChainMessageId <String>]`: The ID of the reply message.
+  - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channe````l````.
+  - `[Rep````l````yChainMessageId <String>]`: The ID of the rep````l````y message.
   - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
 
-INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
+INPUTOBJECT <IC````l````oudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
-  - `[CallId <String>]`: key: id of call
-  - `[CallRecordId <String>]`: key: id of callRecord
+  - `[Ca````l````````l````Id <String>]`: key: id of ca````l````````l````
+  - `[Ca````l````````l````RecordId <String>]`: key: id of ca````l````````l````Record
   - `[CommsOperationId <String>]`: key: id of commsOperation
   - `[ContentSharingSessionId <String>]`: key: id of contentSharingSession
   - `[MeetingAttendanceReportId <String>]`: key: id of meetingAttendanceReport
   - `[MeetingRegistrationQuestionId <String>]`: key: id of meetingRegistrationQuestion
-  - `[OnlineMeetingId <String>]`: key: id of onlineMeeting
+  - `[On````l````ineMeetingId <String>]`: key: id of on````l````ineMeeting
   - `[ParticipantId <String>]`: key: id of participant
   - `[PresenceId <String>]`: key: id of presence
   - `[SessionId <String>]`: key: id of session
@@ -459,14 +459,14 @@ PARTICIPANTS <IMicrosoftGraphMeetingParticipants>: meetingParticipants
   - `[Attendees <IMicrosoftGraphMeetingParticipantInfo[]>]`: Information of the meeting attendees.
     - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[App````l````ication <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Disp````l````ayName <String>]`: The identity's disp````l````ay name. Note that this may not a````l````ways be avai````l````ab````l````e or up to date. For examp````l````e, if a user changes their disp````l````ay name, the API may show the new va````l````ue in a future response, but the items associated with the user won't show up as having changed when using de````l````ta.
         - `[Id <String>]`: Unique identifier for the identity.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[Role <String>]`: 
-    - `[Upn <String>]`: User principal name of the participant.
+    - `[Ro````l````e <String>]`: 
+    - `[Upn <String>]`: User principa````l```` name of the participant.
   - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
 
-## RELATED LINKS
+## RE````l````ATED ````l````INKS
