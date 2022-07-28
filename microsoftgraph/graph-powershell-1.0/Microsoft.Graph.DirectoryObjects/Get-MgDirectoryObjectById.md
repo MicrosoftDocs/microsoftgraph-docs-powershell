@@ -1,150 +1,150 @@
-﻿---
-external help file: Microsoft.Graph.DirectoryObjects-help.xml
-Module Name: Microsoft.Graph.DirectoryObjects
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.directoryobjects/get-mgdirectoryobjectbyid
+---
+external help f`i`le: M`i`crosoft.Graph.D`i`rectoryObjects-help.xml
+Module Name: M`i`crosoft.Graph.D`i`rectoryObjects
+onl`i`ne vers`i`on: https://docs.m`i`crosoft.com/en-us/powershell/module/m`i`crosoft.graph.d`i`rectoryobjects/get-mgd`i`rectoryobjectby`i`d
 schema: 2.0.0
 ---
 
-# Get-MgDirectoryObjectById
+# Get-MgD`i`rectoryObjectBy`i`d
 
-## SYNOPSIS
-Invoke action getByIds
+## SYNOPS`i`S
+`i`nvoke act`i`on getBy`i`ds
 
 ## SYNTAX
 
 ### GetExpanded1 (Default)
 ```
-Get-MgDirectoryObjectById [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Types <String[]>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Get-MgD`i`rectoryObjectBy`i`d [-Add`i`t`i`onalPropert`i`es <Hashtable>] [-`i`ds <Str`i`ng[]>] [-Types <Str`i`ng[]>] [-What`i`f]
+ [-Conf`i`rm] [<CommonParameters>]
 ```
 
 ### Get1
 ```
-Get-MgDirectoryObjectById
- -BodyParameter <IPathsG5Xp0HDirectoryobjectsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Get-MgD`i`rectoryObjectBy`i`d
+ -BodyParameter <`i`PathsG5Xp0HD`i`rectoryobjectsM`i`crosoftGraphGetby`i`dsPostRequestbodyContentAppl`i`cat`i`onJsonSchema>
+ [-What`i`f] [-Conf`i`rm] [<CommonParameters>]
 ```
 
-## DESCRIPTION
-Invoke action getByIds
+## DESCR`i`PT`i`ON
+`i`nvoke act`i`on getBy`i`ds
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -Add`i`t`i`onalPropert`i`es
+Add`i`t`i`onal Parameters
 
 ```yaml
 Type: Hashtable
 Parameter Sets: GetExpanded1
-Aliases:
+Al`i`ases:
 
-Required: False
-Position: Named
+Requ`i`red: False
+Pos`i`t`i`on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p`i`pel`i`ne `i`nput: False
+Accept w`i`ldcard characters: False
 ```
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Onl`i`ne and see NOTES sect`i`on for BODYPARAMETER propert`i`es and create a hash table.
 
 ```yaml
-Type: IPathsG5Xp0HDirectoryobjectsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
+Type: `i`PathsG5Xp0HD`i`rectoryobjectsM`i`crosoftGraphGetby`i`dsPostRequestbodyContentAppl`i`cat`i`onJsonSchema
 Parameter Sets: Get1
-Aliases:
+Al`i`ases:
 
-Required: True
-Position: Named
+Requ`i`red: True
+Pos`i`t`i`on: Named
 Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept p`i`pel`i`ne `i`nput: True (ByValue)
+Accept w`i`ldcard characters: False
 ```
 
-### -Ids
+### -`i`ds
 .
 
 ```yaml
-Type: String[]
+Type: Str`i`ng[]
 Parameter Sets: GetExpanded1
-Aliases:
+Al`i`ases:
 
-Required: False
-Position: Named
+Requ`i`red: False
+Pos`i`t`i`on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p`i`pel`i`ne `i`nput: False
+Accept w`i`ldcard characters: False
 ```
 
 ### -Types
 .
 
 ```yaml
-Type: String[]
+Type: Str`i`ng[]
 Parameter Sets: GetExpanded1
-Aliases:
+Al`i`ases:
 
-Required: False
-Position: Named
+Requ`i`red: False
+Pos`i`t`i`on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p`i`pel`i`ne `i`nput: False
+Accept w`i`ldcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
+### -Conf`i`rm
+Prompts you for conf`i`rmat`i`on before runn`i`ng the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: Sw`i`tchParameter
 Parameter Sets: (All)
-Aliases: cf
+Al`i`ases: cf
 
-Required: False
-Position: Named
+Requ`i`red: False
+Pos`i`t`i`on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p`i`pel`i`ne `i`nput: False
+Accept w`i`ldcard characters: False
 ```
 
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+### -What`i`f
+Shows what would happen `i`f the cmdlet runs.
+The cmdlet `i`s not run.
 
 ```yaml
-Type: SwitchParameter
+Type: Sw`i`tchParameter
 Parameter Sets: (All)
-Aliases: wi
+Al`i`ases: w`i`
 
-Required: False
-Position: Named
+Requ`i`red: False
+Pos`i`t`i`on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p`i`pel`i`ne `i`nput: False
+Accept w`i`ldcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Th`i`s cmdlet supports the common parameters: -Debug, -ErrorAct`i`on, -ErrorVar`i`able, -`i`nformat`i`onAct`i`on, -`i`nformat`i`onVar`i`able, -OutVar`i`able, -OutBuffer, -P`i`pel`i`neVar`i`able, -Verbose, -Warn`i`ngAct`i`on, and -Warn`i`ngVar`i`able. For more `i`nformat`i`on, see [about_CommonParameters](http://go.m`i`crosoft.com/fwl`i`nk/?L`i`nk`i`D=113216).
 
-## INPUTS
+## `i`NPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsG5Xp0HDirectoryobjectsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
+### M`i`crosoft.Graph.PowerShell.Models.`i`PathsG5Xp0HD`i`rectoryobjectsM`i`crosoftGraphGetby`i`dsPostRequestbodyContentAppl`i`cat`i`onJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
+### M`i`crosoft.Graph.PowerShell.Models.`i`M`i`crosoftGraphD`i`rectoryObject
 ## NOTES
 
-ALIASES
+AL`i`ASES
 
-COMPLEX PARAMETER PROPERTIES
+COMPLEX PARAMETER PROPERT`i`ES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters descr`i`bed below, construct a hash table conta`i`n`i`ng the appropr`i`ate propert`i`es. For `i`nformat`i`on on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPathsG5Xp0HDirectoryobjectsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Ids <String[]>]`: 
-  - `[Types <String[]>]`: 
+BODYPARAMETER <`i`PathsG5Xp0HD`i`rectoryobjectsM`i`crosoftGraphGetby`i`dsPostRequestbodyContentAppl`i`cat`i`onJsonSchema>: .
+  - `[(Any) <Object>]`: Th`i`s `i`nd`i`cates any property can be added to th`i`s object.
+  - `[`i`ds <Str`i`ng[]>]`: 
+  - `[Types <Str`i`ng[]>]`: 
 
-## RELATED LINKS
+## RELATED L`i`NKS
