@@ -1,414 +1,414 @@
-﻿---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancetermofuseagreementfilelocalization
+---
+external help file: Microsoft.Graph.I````d````entity.Governance-help.xml
+Mo````d````ule Name: Microsoft.Graph.I````d````entity.Governance
+online version: https://````d````ocs.microsoft.com/en-us/powershell/mo````d````ule/microsoft.graph.i````d````entity.governance/new-mgi````d````entitygovernancetermofuseagreementfilelocalization
 schema: 2.0.0
 ---
 
-# New-MgIdentityGovernanceTermOfUseAgreementFileLocalization
+# New-MgI````d````entityGovernanceTermOfUseAgreementFileLocalization
 
 ## SYNOPSIS
-Create new navigation property to localizations for identityGovernance
+Create new navigation property to localizations for i````d````entityGovernance
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpan````d````e````d````1 (````d````efault)
 ```
-New-MgIdentityGovernanceTermOfUseAgreementFileLocalization -AgreementId <String>
- [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-DisplayName <String>]
- [-FileData <IMicrosoftGraphAgreementFileData>] [-FileName <String>] [-Id <String>] [-IsDefault]
+New-MgI````d````entityGovernanceTermOfUseAgreementFileLocalization -AgreementI````d```` <String>
+ [-A````d````````d````itionalProperties <Hashtable>] [-Create````d````````d````ateTime <````d````ateTime>] [-````d````isplayName <String>]
+ [-File````d````ata <IMicrosoftGraphAgreementFile````d````ata>] [-FileName <String>] [-I````d```` <String>] [-Is````d````efault]
  [-IsMajorVersion] [-Language <String>] [-Versions <IMicrosoftGraphAgreementFileVersion[]>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgIdentityGovernanceTermOfUseAgreementFileLocalization -AgreementId <String>
- -BodyParameter <IMicrosoftGraphAgreementFileLocalization> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgI````d````entityGovernanceTermOfUseAgreementFileLocalization -AgreementI````d```` <String>
+ -Bo````d````yParameter <IMicrosoftGraphAgreementFileLocalization> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded1
+### CreateViaI````d````entityExpan````d````e````d````1
 ```
-New-MgIdentityGovernanceTermOfUseAgreementFileLocalization -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-DisplayName <String>]
- [-FileData <IMicrosoftGraphAgreementFileData>] [-FileName <String>] [-Id <String>] [-IsDefault]
+New-MgI````d````entityGovernanceTermOfUseAgreementFileLocalization -InputObject <II````d````entityGovernanceI````d````entity>
+ [-A````d````````d````itionalProperties <Hashtable>] [-Create````d````````d````ateTime <````d````ateTime>] [-````d````isplayName <String>]
+ [-File````d````ata <IMicrosoftGraphAgreementFile````d````ata>] [-FileName <String>] [-I````d```` <String>] [-Is````d````efault]
  [-IsMajorVersion] [-Language <String>] [-Versions <IMicrosoftGraphAgreementFileVersion[]>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentity1
+### CreateViaI````d````entity1
 ```
-New-MgIdentityGovernanceTermOfUseAgreementFileLocalization -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAgreementFileLocalization> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgI````d````entityGovernanceTermOfUseAgreementFileLocalization -InputObject <II````d````entityGovernanceI````d````entity>
+ -Bo````d````yParameter <IMicrosoftGraphAgreementFileLocalization> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-## DESCRIPTION
-Create new navigation property to localizations for identityGovernance
+## ````d````ESCRIPTION
+Create new navigation property to localizations for i````d````entityGovernance
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -A````d````````d````itionalProperties
+A````d````````d````itional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpan````d````e````d````1, CreateViaI````d````entityExpan````d````e````d````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require````d````: False
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
-### -AgreementId
-key: id of agreement
+### -AgreementI````d````
+key: i````d```` of agreement
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, Create1
+Parameter Sets: CreateExpan````d````e````d````1, Create1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require````d````: True
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
-### -BodyParameter
+### -Bo````d````yParameter
 agreementFileLocalization
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Online an````d```` see NOTES section for BO````d````YPARAMETER properties an````d```` create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAgreementFileLocalization
-Parameter Sets: Create1, CreateViaIdentity1
+Parameter Sets: Create1, CreateViaI````d````entity1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require````d````: True
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
-### -CreatedDateTime
-The date time representing when the file was created.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+### -Create````d````````d````ateTime
+The ````d````ate time representing when the file was create````d````.The Timestamp type represents ````d````ate an````d```` time information using ISO 8601 format an````d```` is always in UTC time.
+For example, mi````d````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: ````d````ateTime
+Parameter Sets: CreateExpan````d````e````d````1, CreateViaI````d````entityExpan````d````e````d````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require````d````: False
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
-### -DisplayName
-Localized display name of the policy file of an agreement.
-The localized display name is shown to end users who view the agreement.
+### -````d````isplayName
+Localize````d```` ````d````isplay name of the policy file of an agreement.
+The localize````d```` ````d````isplay name is shown to en````d```` users who view the agreement.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpan````d````e````d````1, CreateViaI````d````entityExpan````d````e````d````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require````d````: False
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
-### -FileData
-agreementFileData
-To construct, please use Get-Help -Online and see NOTES section for FILEDATA properties and create a hash table.
+### -File````d````ata
+agreementFile````d````ata
+To construct, please use Get-Help -Online an````d```` see NOTES section for FILE````d````ATA properties an````d```` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAgreementFileData
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: IMicrosoftGraphAgreementFile````d````ata
+Parameter Sets: CreateExpan````d````e````d````1, CreateViaI````d````entityExpan````d````e````d````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require````d````: False
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
 ### -FileName
-Name of the agreement file (for example, TOU.pdf).
-Read-only.
+Name of the agreement file (for example, TOU.p````d````f).
+Rea````d````-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpan````d````e````d````1, CreateViaI````d````entityExpan````d````e````d````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require````d````: False
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
-### -Id
+### -I````d````
 .
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpan````d````e````d````1, CreateViaI````d````entityExpan````d````e````d````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require````d````: False
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
 ### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+I````d````entity Parameter
+To construct, please use Get-Help -Online an````d```` see NOTES section for INPUTOBJECT properties an````d```` create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
+Type: II````d````entityGovernanceI````d````entity
+Parameter Sets: CreateViaI````d````entityExpan````d````e````d````1, CreateViaI````d````entity1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require````d````: True
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
-### -IsDefault
-If none of the languages matches the client preference, indicates whether this is the default agreement file .
-If none of the files are marked as default, the first one is treated as the default.
-Read-only.
+### -Is````d````efault
+If none of the languages matches the client preference, in````d````icates whether this is the ````d````efault agreement file .
+If none of the files are marke````d```` as ````d````efault, the first one is treate````d```` as the ````d````efault.
+Rea````d````-only.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpan````d````e````d````1, CreateViaI````d````entityExpan````d````e````d````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require````d````: False
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
 ### -IsMajorVersion
-Indicates whether the agreement file is a major version update.
-Major version updates invalidate the agreement's acceptances on the corresponding language.
+In````d````icates whether the agreement file is a major version up````d````ate.
+Major version up````d````ates invali````d````ate the agreement's acceptances on the correspon````d````ing language.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpan````d````e````d````1, CreateViaI````d````entityExpan````d````e````d````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require````d````: False
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
 ### -Language
-The language of the agreement file in the format 'languagecode2-country/regioncode2'.
-'languagecode2' is a lowercase two-letter code derived from ISO 639-1, while 'country/regioncode2' is derived from ISO 3166 and usually consists of two uppercase letters, or a BCP-47 language tag.
+The language of the agreement file in the format 'languageco````d````e2-country/regionco````d````e2'.
+'languageco````d````e2' is a lowercase two-letter co````d````e ````d````erive````d```` from ISO 639-1, while 'country/regionco````d````e2' is ````d````erive````d```` from ISO 3166 an````d```` usually consists of two uppercase letters, or a BCP-47 language tag.
 For example, U.S.
 English is en-US.
-Read-only.
+Rea````d````-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpan````d````e````d````1, CreateViaI````d````entityExpan````d````e````d````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require````d````: False
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
 ### -Versions
-Read-only.
-Customized versions of the terms of use agreement in the Azure AD tenant.
-To construct, please use Get-Help -Online and see NOTES section for VERSIONS properties and create a hash table.
+Rea````d````-only.
+Customize````d```` versions of the terms of use agreement in the Azure A````d```` tenant.
+To construct, please use Get-Help -Online an````d```` see NOTES section for VERSIONS properties an````d```` create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphAgreementFileVersion[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpan````d````e````d````1, CreateViaI````d````entityExpan````d````e````d````1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require````d````: False
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation before running the cm````d````let.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
-Required: False
-Position: Named
-Default value: None
+Require````d````: False
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what woul````d```` happen if the cm````d````let runs.
+The cm````d````let is not run.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
-Required: False
-Position: Named
-Default value: None
+Require````d````: False
+Position: Name````d````
+````d````efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil````d````car````d```` characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cm````d````let supports the common parameters: -````d````ebug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, an````d```` -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkI````d````=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAgreementFileLocalization
+### Microsoft.Graph.PowerShell.Mo````d````els.II````d````entityGovernanceI````d````entity
+### Microsoft.Graph.PowerShell.Mo````d````els.IMicrosoftGraphAgreementFileLocalization
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAgreementFileLocalization
+### Microsoft.Graph.PowerShell.Mo````d````els.IMicrosoftGraphAgreementFileLocalization
 ## NOTES
 
 ALIASES
 
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters ````d````escribe````d```` below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphAgreementFileLocalization>: agreementFileLocalization
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CreatedDateTime <DateTime?>]`: The date time representing when the file was created.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[DisplayName <String>]`: Localized display name of the policy file of an agreement. The localized display name is shown to end users who view the agreement.
-  - `[FileData <IMicrosoftGraphAgreementFileData>]`: agreementFileData
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Data <Byte[]>]`: Data that represents the terms of use PDF document. Read-only. Note: You can use the .NET Convert.ToBase64String method to convert your file to binary data for uploading using the Create agreements API. A sample syntax using this method in PowerShell is [convert]::ToBase64String((Get-Content -path 'your_file_path' -Encoding byte)).
-  - `[FileName <String>]`: Name of the agreement file (for example, TOU.pdf). Read-only.
-  - `[IsDefault <Boolean?>]`: If none of the languages matches the client preference, indicates whether this is the default agreement file . If none of the files are marked as default, the first one is treated as the default. Read-only.
-  - `[IsMajorVersion <Boolean?>]`: Indicates whether the agreement file is a major version update. Major version updates invalidate the agreement's acceptances on the corresponding language.
-  - `[Language <String>]`: The language of the agreement file in the format 'languagecode2-country/regioncode2'. 'languagecode2' is a lowercase two-letter code derived from ISO 639-1, while 'country/regioncode2' is derived from ISO 3166 and usually consists of two uppercase letters, or a BCP-47 language tag. For example, U.S. English is en-US. Read-only.
-  - `[Id <String>]`: 
-  - `[Versions <IMicrosoftGraphAgreementFileVersion[]>]`: Read-only. Customized versions of the terms of use agreement in the Azure AD tenant.
-    - `[CreatedDateTime <DateTime?>]`: The date time representing when the file was created.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    - `[DisplayName <String>]`: Localized display name of the policy file of an agreement. The localized display name is shown to end users who view the agreement.
-    - `[FileData <IMicrosoftGraphAgreementFileData>]`: agreementFileData
-    - `[FileName <String>]`: Name of the agreement file (for example, TOU.pdf). Read-only.
-    - `[IsDefault <Boolean?>]`: If none of the languages matches the client preference, indicates whether this is the default agreement file . If none of the files are marked as default, the first one is treated as the default. Read-only.
-    - `[IsMajorVersion <Boolean?>]`: Indicates whether the agreement file is a major version update. Major version updates invalidate the agreement's acceptances on the corresponding language.
-    - `[Language <String>]`: The language of the agreement file in the format 'languagecode2-country/regioncode2'. 'languagecode2' is a lowercase two-letter code derived from ISO 639-1, while 'country/regioncode2' is derived from ISO 3166 and usually consists of two uppercase letters, or a BCP-47 language tag. For example, U.S. English is en-US. Read-only.
-    - `[Id <String>]`: 
+BO````d````YPARAMETER <IMicrosoftGraphAgreementFileLocalization>: agreementFileLocalization
+  - `[(Any) <Object>]`: This in````d````icates any property can be a````d````````d````e````d```` to this object.
+  - `[Create````d````````d````ateTime <````d````ateTime?>]`: The ````d````ate time representing when the file was create````d````.The Timestamp type represents ````d````ate an````d```` time information using ISO 8601 format an````d```` is always in UTC time. For example, mi````d````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[````d````isplayName <String>]`: Localize````d```` ````d````isplay name of the policy file of an agreement. The localize````d```` ````d````isplay name is shown to en````d```` users who view the agreement.
+  - `[File````d````ata <IMicrosoftGraphAgreementFile````d````ata>]`: agreementFile````d````ata
+    - `[(Any) <Object>]`: This in````d````icates any property can be a````d````````d````e````d```` to this object.
+    - `[````d````ata <Byte[]>]`: ````d````ata that represents the terms of use P````d````F ````d````ocument. Rea````d````-only. Note: You can use the .NET Convert.ToBase64String metho````d```` to convert your file to binary ````d````ata for uploa````d````ing using the Create agreements API. A sample syntax using this metho````d```` in PowerShell is [convert]::ToBase64String((Get-Content -path 'your_file_path' -Enco````d````ing byte)).
+  - `[FileName <String>]`: Name of the agreement file (for example, TOU.p````d````f). Rea````d````-only.
+  - `[Is````d````efault <Boolean?>]`: If none of the languages matches the client preference, in````d````icates whether this is the ````d````efault agreement file . If none of the files are marke````d```` as ````d````efault, the first one is treate````d```` as the ````d````efault. Rea````d````-only.
+  - `[IsMajorVersion <Boolean?>]`: In````d````icates whether the agreement file is a major version up````d````ate. Major version up````d````ates invali````d````ate the agreement's acceptances on the correspon````d````ing language.
+  - `[Language <String>]`: The language of the agreement file in the format 'languageco````d````e2-country/regionco````d````e2'. 'languageco````d````e2' is a lowercase two-letter co````d````e ````d````erive````d```` from ISO 639-1, while 'country/regionco````d````e2' is ````d````erive````d```` from ISO 3166 an````d```` usually consists of two uppercase letters, or a BCP-47 language tag. For example, U.S. English is en-US. Rea````d````-only.
+  - `[I````d```` <String>]`: 
+  - `[Versions <IMicrosoftGraphAgreementFileVersion[]>]`: Rea````d````-only. Customize````d```` versions of the terms of use agreement in the Azure A````d```` tenant.
+    - `[Create````d````````d````ateTime <````d````ateTime?>]`: The ````d````ate time representing when the file was create````d````.The Timestamp type represents ````d````ate an````d```` time information using ISO 8601 format an````d```` is always in UTC time. For example, mi````d````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[````d````isplayName <String>]`: Localize````d```` ````d````isplay name of the policy file of an agreement. The localize````d```` ````d````isplay name is shown to en````d```` users who view the agreement.
+    - `[File````d````ata <IMicrosoftGraphAgreementFile````d````ata>]`: agreementFile````d````ata
+    - `[FileName <String>]`: Name of the agreement file (for example, TOU.p````d````f). Rea````d````-only.
+    - `[Is````d````efault <Boolean?>]`: If none of the languages matches the client preference, in````d````icates whether this is the ````d````efault agreement file . If none of the files are marke````d```` as ````d````efault, the first one is treate````d```` as the ````d````efault. Rea````d````-only.
+    - `[IsMajorVersion <Boolean?>]`: In````d````icates whether the agreement file is a major version up````d````ate. Major version up````d````ates invali````d````ate the agreement's acceptances on the correspon````d````ing language.
+    - `[Language <String>]`: The language of the agreement file in the format 'languageco````d````e2-country/regionco````d````e2'. 'languageco````d````e2' is a lowercase two-letter co````d````e ````d````erive````d```` from ISO 639-1, while 'country/regionco````d````e2' is ````d````erive````d```` from ISO 3166 an````d```` usually consists of two uppercase letters, or a BCP-47 language tag. For example, U.S. English is en-US. Rea````d````-only.
+    - `[I````d```` <String>]`: 
 
-FILEDATA <IMicrosoftGraphAgreementFileData>: agreementFileData
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Data <Byte[]>]`: Data that represents the terms of use PDF document. Read-only. Note: You can use the .NET Convert.ToBase64String method to convert your file to binary data for uploading using the Create agreements API. A sample syntax using this method in PowerShell is [convert]::ToBase64String((Get-Content -path 'your_file_path' -Encoding byte)).
+FILE````d````ATA <IMicrosoftGraphAgreementFile````d````ata>: agreementFile````d````ata
+  - `[(Any) <Object>]`: This in````d````icates any property can be a````d````````d````e````d```` to this object.
+  - `[````d````ata <Byte[]>]`: ````d````ata that represents the terms of use P````d````F ````d````ocument. Rea````d````-only. Note: You can use the .NET Convert.ToBase64String metho````d```` to convert your file to binary ````d````ata for uploa````d````ing using the Create agreements API. A sample syntax using this metho````d```` in PowerShell is [convert]::ToBase64String((Get-Content -path 'your_file_path' -Enco````d````ing byte)).
 
-INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
-  - `[AccessPackageAssignmentId <String>]`: key: id of accessPackageAssignment
-  - `[AccessPackageAssignmentPolicyId <String>]`: key: id of accessPackageAssignmentPolicy
-  - `[AccessPackageAssignmentRequestId <String>]`: key: id of accessPackageAssignmentRequest
-  - `[AccessPackageAssignmentResourceRoleId <String>]`: key: id of accessPackageAssignmentResourceRole
-  - `[AccessPackageCatalogId <String>]`: key: id of accessPackageCatalog
-  - `[AccessPackageId <String>]`: key: id of accessPackage
-  - `[AccessPackageId1 <String>]`: key: id of accessPackage
-  - `[AccessPackageId2 <String>]`: Usage: accessPackageId='{accessPackageId}'
-  - `[AccessPackageResourceEnvironmentId <String>]`: key: id of accessPackageResourceEnvironment
-  - `[AccessPackageResourceId <String>]`: key: id of accessPackageResource
-  - `[AccessPackageResourceRequestId <String>]`: key: id of accessPackageResourceRequest
-  - `[AccessPackageResourceRoleId <String>]`: key: id of accessPackageResourceRole
-  - `[AccessPackageResourceRoleScopeId <String>]`: key: id of accessPackageResourceRoleScope
-  - `[AccessPackageResourceScopeId <String>]`: key: id of accessPackageResourceScope
-  - `[AccessReviewDecisionId <String>]`: key: id of accessReviewDecision
-  - `[AccessReviewHistoryDefinitionId <String>]`: key: id of accessReviewHistoryDefinition
-  - `[AccessReviewHistoryInstanceId <String>]`: key: id of accessReviewHistoryInstance
-  - `[AccessReviewId <String>]`: key: id of accessReview
-  - `[AccessReviewId1 <String>]`: key: id of accessReview
-  - `[AccessReviewInstanceDecisionItemId <String>]`: key: id of accessReviewInstanceDecisionItem
-  - `[AccessReviewInstanceDecisionItemId1 <String>]`: key: id of accessReviewInstanceDecisionItem
-  - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
-  - `[AccessReviewReviewerId <String>]`: key: id of accessReviewReviewer
-  - `[AccessReviewScheduleDefinitionId <String>]`: key: id of accessReviewScheduleDefinition
-  - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
-  - `[AgreementAcceptanceId <String>]`: key: id of agreementAcceptance
-  - `[AgreementFileLocalizationId <String>]`: key: id of agreementFileLocalization
-  - `[AgreementFileVersionId <String>]`: key: id of agreementFileVersion
-  - `[AgreementId <String>]`: key: id of agreement
-  - `[AppConsentRequestId <String>]`: key: id of appConsentRequest
-  - `[ApprovalId <String>]`: key: id of approval
-  - `[ApprovalStageId <String>]`: key: id of approvalStage
-  - `[ApprovalStepId <String>]`: key: id of approvalStep
-  - `[BusinessFlowTemplateId <String>]`: key: id of businessFlowTemplate
-  - `[ConnectedOrganizationId <String>]`: key: id of connectedOrganization
-  - `[CustomAccessPackageWorkflowExtensionId <String>]`: key: id of customAccessPackageWorkflowExtension
-  - `[CustomExtensionHandlerId <String>]`: key: id of customExtensionHandler
-  - `[DirectoryObjectId <String>]`: key: id of directoryObject
-  - `[GovernanceInsightId <String>]`: key: id of governanceInsight
-  - `[GovernanceResourceId <String>]`: key: id of governanceResource
-  - `[GovernanceRoleAssignmentId <String>]`: key: id of governanceRoleAssignment
-  - `[GovernanceRoleAssignmentRequestId <String>]`: key: id of governanceRoleAssignmentRequest
-  - `[GovernanceRoleDefinitionId <String>]`: key: id of governanceRoleDefinition
-  - `[GovernanceRoleSettingId <String>]`: key: id of governanceRoleSetting
-  - `[GroupId <String>]`: key: id of group
-  - `[IncompatibleAccessPackageId <String>]`: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
+INPUTOBJECT <II````d````entityGovernanceI````d````entity>: I````d````entity Parameter
+  - `[AccessPackageAssignmentI````d```` <String>]`: key: i````d```` of accessPackageAssignment
+  - `[AccessPackageAssignmentPolicyI````d```` <String>]`: key: i````d```` of accessPackageAssignmentPolicy
+  - `[AccessPackageAssignmentRequestI````d```` <String>]`: key: i````d```` of accessPackageAssignmentRequest
+  - `[AccessPackageAssignmentResourceRoleI````d```` <String>]`: key: i````d```` of accessPackageAssignmentResourceRole
+  - `[AccessPackageCatalogI````d```` <String>]`: key: i````d```` of accessPackageCatalog
+  - `[AccessPackageI````d```` <String>]`: key: i````d```` of accessPackage
+  - `[AccessPackageI````d````1 <String>]`: key: i````d```` of accessPackage
+  - `[AccessPackageI````d````2 <String>]`: Usage: accessPackageI````d````='{accessPackageI````d````}'
+  - `[AccessPackageResourceEnvironmentI````d```` <String>]`: key: i````d```` of accessPackageResourceEnvironment
+  - `[AccessPackageResourceI````d```` <String>]`: key: i````d```` of accessPackageResource
+  - `[AccessPackageResourceRequestI````d```` <String>]`: key: i````d```` of accessPackageResourceRequest
+  - `[AccessPackageResourceRoleI````d```` <String>]`: key: i````d```` of accessPackageResourceRole
+  - `[AccessPackageResourceRoleScopeI````d```` <String>]`: key: i````d```` of accessPackageResourceRoleScope
+  - `[AccessPackageResourceScopeI````d```` <String>]`: key: i````d```` of accessPackageResourceScope
+  - `[AccessReview````d````ecisionI````d```` <String>]`: key: i````d```` of accessReview````d````ecision
+  - `[AccessReviewHistory````d````efinitionI````d```` <String>]`: key: i````d```` of accessReviewHistory````d````efinition
+  - `[AccessReviewHistoryInstanceI````d```` <String>]`: key: i````d```` of accessReviewHistoryInstance
+  - `[AccessReviewI````d```` <String>]`: key: i````d```` of accessReview
+  - `[AccessReviewI````d````1 <String>]`: key: i````d```` of accessReview
+  - `[AccessReviewInstance````d````ecisionItemI````d```` <String>]`: key: i````d```` of accessReviewInstance````d````ecisionItem
+  - `[AccessReviewInstance````d````ecisionItemI````d````1 <String>]`: key: i````d```` of accessReviewInstance````d````ecisionItem
+  - `[AccessReviewInstanceI````d```` <String>]`: key: i````d```` of accessReviewInstance
+  - `[AccessReviewReviewerI````d```` <String>]`: key: i````d```` of accessReviewReviewer
+  - `[AccessReviewSche````d````ule````d````efinitionI````d```` <String>]`: key: i````d```` of accessReviewSche````d````ule````d````efinition
+  - `[AccessReviewStageI````d```` <String>]`: key: i````d```` of accessReviewStage
+  - `[AgreementAcceptanceI````d```` <String>]`: key: i````d```` of agreementAcceptance
+  - `[AgreementFileLocalizationI````d```` <String>]`: key: i````d```` of agreementFileLocalization
+  - `[AgreementFileVersionI````d```` <String>]`: key: i````d```` of agreementFileVersion
+  - `[AgreementI````d```` <String>]`: key: i````d```` of agreement
+  - `[AppConsentRequestI````d```` <String>]`: key: i````d```` of appConsentRequest
+  - `[ApprovalI````d```` <String>]`: key: i````d```` of approval
+  - `[ApprovalStageI````d```` <String>]`: key: i````d```` of approvalStage
+  - `[ApprovalStepI````d```` <String>]`: key: i````d```` of approvalStep
+  - `[BusinessFlowTemplateI````d```` <String>]`: key: i````d```` of businessFlowTemplate
+  - `[Connecte````d````OrganizationI````d```` <String>]`: key: i````d```` of connecte````d````Organization
+  - `[CustomAccessPackageWorkflowExtensionI````d```` <String>]`: key: i````d```` of customAccessPackageWorkflowExtension
+  - `[CustomExtensionHan````d````lerI````d```` <String>]`: key: i````d```` of customExtensionHan````d````ler
+  - `[````d````irectoryObjectI````d```` <String>]`: key: i````d```` of ````d````irectoryObject
+  - `[GovernanceInsightI````d```` <String>]`: key: i````d```` of governanceInsight
+  - `[GovernanceResourceI````d```` <String>]`: key: i````d```` of governanceResource
+  - `[GovernanceRoleAssignmentI````d```` <String>]`: key: i````d```` of governanceRoleAssignment
+  - `[GovernanceRoleAssignmentRequestI````d```` <String>]`: key: i````d```` of governanceRoleAssignmentRequest
+  - `[GovernanceRole````d````efinitionI````d```` <String>]`: key: i````d```` of governanceRole````d````efinition
+  - `[GovernanceRoleSettingI````d```` <String>]`: key: i````d```` of governanceRoleSetting
+  - `[GroupI````d```` <String>]`: key: i````d```` of group
+  - `[IncompatibleAccessPackageI````d```` <String>]`: Usage: incompatibleAccessPackageI````d````='{incompatibleAccessPackageI````d````}'
   - `[On <String>]`: Usage: on='{on}'
-  - `[PrivilegedAccessId <String>]`: key: id of privilegedAccess
-  - `[PrivilegedApprovalId <String>]`: key: id of privilegedApproval
-  - `[PrivilegedOperationEventId <String>]`: key: id of privilegedOperationEvent
-  - `[PrivilegedRoleAssignmentId <String>]`: key: id of privilegedRoleAssignment
-  - `[PrivilegedRoleAssignmentId1 <String>]`: key: id of privilegedRoleAssignment
-  - `[PrivilegedRoleAssignmentRequestId <String>]`: key: id of privilegedRoleAssignmentRequest
-  - `[PrivilegedRoleId <String>]`: key: id of privilegedRole
-  - `[ProgramControlId <String>]`: key: id of programControl
-  - `[ProgramControlId1 <String>]`: key: id of programControl
-  - `[ProgramControlTypeId <String>]`: key: id of programControlType
-  - `[ProgramId <String>]`: key: id of program
-  - `[UserConsentRequestId <String>]`: key: id of userConsentRequest
-  - `[UserId <String>]`: key: id of user
+  - `[Privilege````d````AccessI````d```` <String>]`: key: i````d```` of privilege````d````Access
+  - `[Privilege````d````ApprovalI````d```` <String>]`: key: i````d```` of privilege````d````Approval
+  - `[Privilege````d````OperationEventI````d```` <String>]`: key: i````d```` of privilege````d````OperationEvent
+  - `[Privilege````d````RoleAssignmentI````d```` <String>]`: key: i````d```` of privilege````d````RoleAssignment
+  - `[Privilege````d````RoleAssignmentI````d````1 <String>]`: key: i````d```` of privilege````d````RoleAssignment
+  - `[Privilege````d````RoleAssignmentRequestI````d```` <String>]`: key: i````d```` of privilege````d````RoleAssignmentRequest
+  - `[Privilege````d````RoleI````d```` <String>]`: key: i````d```` of privilege````d````Role
+  - `[ProgramControlI````d```` <String>]`: key: i````d```` of programControl
+  - `[ProgramControlI````d````1 <String>]`: key: i````d```` of programControl
+  - `[ProgramControlTypeI````d```` <String>]`: key: i````d```` of programControlType
+  - `[ProgramI````d```` <String>]`: key: i````d```` of program
+  - `[UserConsentRequestI````d```` <String>]`: key: i````d```` of userConsentRequest
+  - `[UserI````d```` <String>]`: key: i````d```` of user
 
-VERSIONS <IMicrosoftGraphAgreementFileVersion[]>: Read-only. Customized versions of the terms of use agreement in the Azure AD tenant.
-  - `[CreatedDateTime <DateTime?>]`: The date time representing when the file was created.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[DisplayName <String>]`: Localized display name of the policy file of an agreement. The localized display name is shown to end users who view the agreement.
-  - `[FileData <IMicrosoftGraphAgreementFileData>]`: agreementFileData
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Data <Byte[]>]`: Data that represents the terms of use PDF document. Read-only. Note: You can use the .NET Convert.ToBase64String method to convert your file to binary data for uploading using the Create agreements API. A sample syntax using this method in PowerShell is [convert]::ToBase64String((Get-Content -path 'your_file_path' -Encoding byte)).
-  - `[FileName <String>]`: Name of the agreement file (for example, TOU.pdf). Read-only.
-  - `[IsDefault <Boolean?>]`: If none of the languages matches the client preference, indicates whether this is the default agreement file . If none of the files are marked as default, the first one is treated as the default. Read-only.
-  - `[IsMajorVersion <Boolean?>]`: Indicates whether the agreement file is a major version update. Major version updates invalidate the agreement's acceptances on the corresponding language.
-  - `[Language <String>]`: The language of the agreement file in the format 'languagecode2-country/regioncode2'. 'languagecode2' is a lowercase two-letter code derived from ISO 639-1, while 'country/regioncode2' is derived from ISO 3166 and usually consists of two uppercase letters, or a BCP-47 language tag. For example, U.S. English is en-US. Read-only.
-  - `[Id <String>]`: 
+VERSIONS <IMicrosoftGraphAgreementFileVersion[]>: Rea````d````-only. Customize````d```` versions of the terms of use agreement in the Azure A````d```` tenant.
+  - `[Create````d````````d````ateTime <````d````ateTime?>]`: The ````d````ate time representing when the file was create````d````.The Timestamp type represents ````d````ate an````d```` time information using ISO 8601 format an````d```` is always in UTC time. For example, mi````d````night UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[````d````isplayName <String>]`: Localize````d```` ````d````isplay name of the policy file of an agreement. The localize````d```` ````d````isplay name is shown to en````d```` users who view the agreement.
+  - `[File````d````ata <IMicrosoftGraphAgreementFile````d````ata>]`: agreementFile````d````ata
+    - `[(Any) <Object>]`: This in````d````icates any property can be a````d````````d````e````d```` to this object.
+    - `[````d````ata <Byte[]>]`: ````d````ata that represents the terms of use P````d````F ````d````ocument. Rea````d````-only. Note: You can use the .NET Convert.ToBase64String metho````d```` to convert your file to binary ````d````ata for uploa````d````ing using the Create agreements API. A sample syntax using this metho````d```` in PowerShell is [convert]::ToBase64String((Get-Content -path 'your_file_path' -Enco````d````ing byte)).
+  - `[FileName <String>]`: Name of the agreement file (for example, TOU.p````d````f). Rea````d````-only.
+  - `[Is````d````efault <Boolean?>]`: If none of the languages matches the client preference, in````d````icates whether this is the ````d````efault agreement file . If none of the files are marke````d```` as ````d````efault, the first one is treate````d```` as the ````d````efault. Rea````d````-only.
+  - `[IsMajorVersion <Boolean?>]`: In````d````icates whether the agreement file is a major version up````d````ate. Major version up````d````ates invali````d````ate the agreement's acceptances on the correspon````d````ing language.
+  - `[Language <String>]`: The language of the agreement file in the format 'languageco````d````e2-country/regionco````d````e2'. 'languageco````d````e2' is a lowercase two-letter co````d````e ````d````erive````d```` from ISO 639-1, while 'country/regionco````d````e2' is ````d````erive````d```` from ISO 3166 an````d```` usually consists of two uppercase letters, or a BCP-47 language tag. For example, U.S. English is en-US. Rea````d````-only.
+  - `[I````d```` <String>]`: 
 
-## RELATED LINKS
+## RELATE````d```` LINKS
 
-## RELATED LINKS
+## RELATE````d```` LINKS
