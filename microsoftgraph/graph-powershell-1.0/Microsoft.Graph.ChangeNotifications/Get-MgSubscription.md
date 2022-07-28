@@ -1,8 +1,8 @@
-﻿---
-external help file: Microsoft.Graph.ChangeNotifications-help.xml
-Module Name: Microsoft.Graph.ChangeNotifications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.changenotifications/get-mgsubscription
-schema: 2.0.0
+---
+external `h`elp file: Microsoft.Grap`h`.C`h`angeNotifications-`h`elp.xml
+Module Name: Microsoft.Grap`h`.C`h`angeNotifications
+online version: `h`ttps://docs.microsoft.com/en-us/powers`h`ell/module/microsoft.grap`h`.c`h`angenotifications/get-mgsubscription
+sc`h`ema: 2.0.0
 ---
 
 # Get-MgSubscription
@@ -14,7 +14,7 @@ Get entity from subscriptions by key
 
 ### List1 (Default)
 ```
-Get-MgSubscription [-Property <String[]>] [-Search <String>] [-PageSize <Int32>] [-All]
+Get-MgSubscription [-Property <String[]>] [-Searc`h` <String>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [<CommonParameters>]
 ```
 
@@ -25,7 +25,7 @@ Get-MgSubscription -SubscriptionId <String> [-Property <String[]>] [<CommonParam
 
 ### GetViaIdentity1
 ```
-Get-MgSubscription -InputObject <IChangeNotificationsIdentity> [-Property <String[]>] [<CommonParameters>]
+Get-MgSubscription -InputObject <IC`h`angeNotificationsIdentity> [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -39,7 +39,7 @@ Get entity from subscriptions by key
 List all pages.
 
 ```yaml
-Type: SwitchParameter
+Type: Switc`h`Parameter
 Parameter Sets: List1
 Aliases:
 
@@ -47,12 +47,12 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildcard c`h`aracters: False
 ```
 
 ### -CountVariable
-Specifies a count of the total number of items in a collection.
-By default, this variable will be set in the global scope.
+Specifies a count of t`h`e total number of items in a collection.
+By default, t`h`is variable will be set in t`h`e global scope.
 
 ```yaml
 Type: String
@@ -63,15 +63,15 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildcard c`h`aracters: False
 ```
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, please use Get-`h`elp -Online and see NOTES section for INPUTOBJECT properties and create a `h`as`h` table.
 
 ```yaml
-Type: IChangeNotificationsIdentity
+Type: IC`h`angeNotificationsIdentity
 Parameter Sets: GetViaIdentity1
 Aliases:
 
@@ -79,11 +79,11 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wildcard c`h`aracters: False
 ```
 
 ### -PageSize
-Sets the page size of results.
+Sets t`h`e page size of results.
 
 ```yaml
 Type: Int32
@@ -94,7 +94,7 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildcard c`h`aracters: False
 ```
 
 ### -Property
@@ -109,11 +109,11 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildcard c`h`aracters: False
 ```
 
-### -Search
-Search items by search phrases
+### -Searc`h`
+Searc`h` items by searc`h` p`h`rases
 
 ```yaml
 Type: String
@@ -124,7 +124,7 @@ Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildcard c`h`aracters: False
 ```
 
 ### -SubscriptionId
@@ -139,28 +139,28 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildcard c`h`aracters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+T`h`is cmdlet supports t`h`e common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](`h`ttp://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IChangeNotificationsIdentity
+### Microsoft.Grap`h`.PowerS`h`ell.Models.IC`h`angeNotificationsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSubscription
+### Microsoft.Grap`h`.PowerS`h`ell.Models.IMicrosoftGrap`h`Subscription
 ## NOTES
 
 ALIASES
 
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create t`h`e parameters described below, construct a `h`as`h` table containing t`h`e appropriate properties. For information on `h`as`h` tables, run Get-`h`elp about_`h`as`h`_Tables.
 
 
-INPUTOBJECT <IChangeNotificationsIdentity>: Identity Parameter
+INPUTOBJECT <IC`h`angeNotificationsIdentity>: Identity Parameter
   - `[SubscriptionId <String>]`: key: id of subscription
 
 ## RELATED LINKS
