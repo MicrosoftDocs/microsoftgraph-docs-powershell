@@ -1,134 +1,134 @@
-﻿---
-external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
-Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.serviceannouncement/invoke-mgreportserviceannouncementhealthoverviewissueincident
-schema: 2.0.0
+---
+`e`xt`e`rnal h`e`lp fil`e`: Microsoft.Graph.D`e`vic`e`s.S`e`rvic`e`Announc`e`m`e`nt-h`e`lp.xml
+Modul`e` Nam`e`: Microsoft.Graph.D`e`vic`e`s.S`e`rvic`e`Announc`e`m`e`nt
+onlin`e` v`e`rsion: https://docs.microsoft.com/`e`n-us/pow`e`rsh`e`ll/modul`e`/microsoft.graph.d`e`vic`e`s.s`e`rvic`e`announc`e`m`e`nt/invok`e`-mgr`e`ports`e`rvic`e`announc`e`m`e`nth`e`althov`e`rvi`e`wissu`e`incid`e`nt
+sch`e`ma: 2.0.0
 ---
 
-# Invoke-MgReportServiceAnnouncementHealthOverviewIssueIncident
+# Invok`e`-MgR`e`portS`e`rvic`e`Announc`e`m`e`ntH`e`althOv`e`rvi`e`wIssu`e`Incid`e`nt
 
 ## SYNOPSIS
-Invoke function incidentReport
+Invok`e` function incid`e`ntR`e`port
 
 ## SYNTAX
 
-### Report1 (Default)
+### R`e`port1 (D`e`fault)
 ```
-Invoke-MgReportServiceAnnouncementHealthOverviewIssueIncident -ServiceHealthId <String>
- -ServiceHealthIssueId <String> -OutFile <String> [-PassThru] [<CommonParameters>]
-```
-
-### ReportViaIdentity1
-```
-Invoke-MgReportServiceAnnouncementHealthOverviewIssueIncident
- -InputObject <IDevicesServiceAnnouncementIdentity> -OutFile <String> [-PassThru] [<CommonParameters>]
+Invok`e`-MgR`e`portS`e`rvic`e`Announc`e`m`e`ntH`e`althOv`e`rvi`e`wIssu`e`Incid`e`nt -S`e`rvic`e`H`e`althId <String>
+ -S`e`rvic`e`H`e`althIssu`e`Id <String> -OutFil`e` <String> [-PassThru] [<CommonParam`e`t`e`rs>]
 ```
 
-## DESCRIPTION
-Invoke function incidentReport
+### R`e`portViaId`e`ntity1
+```
+Invok`e`-MgR`e`portS`e`rvic`e`Announc`e`m`e`ntH`e`althOv`e`rvi`e`wIssu`e`Incid`e`nt
+ -InputObj`e`ct <ID`e`vic`e`sS`e`rvic`e`Announc`e`m`e`ntId`e`ntity> -OutFil`e` <String> [-PassThru] [<CommonParam`e`t`e`rs>]
+```
 
-## EXAMPLES
+## D`e`SCRIPTION
+Invok`e` function incid`e`ntR`e`port
 
-## PARAMETERS
+## `e`XAMPL`e`S
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+## PARAM`e`T`e`RS
+
+### -InputObj`e`ct
+Id`e`ntity Param`e`t`e`r
+To construct, pl`e`as`e` us`e` G`e`t-H`e`lp -Onlin`e` and s`e``e` NOT`e`S s`e`ction for INPUTOBJ`e`CT prop`e`rti`e`s and cr`e`at`e` a hash tabl`e`.
 
 ```yaml
-Type: IDevicesServiceAnnouncementIdentity
-Parameter Sets: ReportViaIdentity1
-Aliases:
+Typ`e`: ID`e`vic`e`sS`e`rvic`e`Announc`e`m`e`ntId`e`ntity
+Param`e`t`e`r S`e`ts: R`e`portViaId`e`ntity1
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Tru`e` (ByValu`e`)
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -OutFile
-Path to write output file to
+### -OutFil`e`
+Path to writ`e` output fil`e` to
 
 ```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -PassThru
-Returns true when the command succeeds
+R`e`turns tru`e` wh`e`n th`e` command succ`e``e`ds
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
+Typ`e`: SwitchParam`e`t`e`r
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -ServiceHealthId
-key: id of serviceHealth
+### -S`e`rvic`e`H`e`althId
+k`e`y: id of s`e`rvic`e`H`e`alth
 
 ```yaml
-Type: String
-Parameter Sets: Report1
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: R`e`port1
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -ServiceHealthIssueId
-key: id of serviceHealthIssue
+### -S`e`rvic`e`H`e`althIssu`e`Id
+k`e`y: id of s`e`rvic`e`H`e`althIssu`e`
 
 ```yaml
-Type: String
-Parameter Sets: Report1
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: R`e`port1
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam`e`t`e`rs
+This cmdl`e`t supports th`e` common param`e`t`e`rs: -D`e`bug, -`e`rrorAction, -`e`rrorVariabl`e`, -InformationAction, -InformationVariabl`e`, -OutVariabl`e`, -OutBuff`e`r, -Pip`e`lin`e`Variabl`e`, -V`e`rbos`e`, -WarningAction, and -WarningVariabl`e`. For mor`e` information, s`e``e` [about_CommonParam`e`t`e`rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDevicesServiceAnnouncementIdentity
+### Microsoft.Graph.Pow`e`rSh`e`ll.Mod`e`ls.ID`e`vic`e`sS`e`rvic`e`Announc`e`m`e`ntId`e`ntity
 ## OUTPUTS
 
-### System.Boolean
-## NOTES
+### Syst`e`m.Bool`e`an
+## NOT`e`S
 
-ALIASES
+ALIAS`e`S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL`e`X PARAM`e`T`e`R PROP`e`RTI`e`S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr`e`at`e` th`e` param`e`t`e`rs d`e`scrib`e`d b`e`low, construct a hash tabl`e` containing th`e` appropriat`e` prop`e`rti`e`s. For information on hash tabl`e`s, run G`e`t-H`e`lp about_Hash_Tabl`e`s.
 
 
-INPUTOBJECT <IDevicesServiceAnnouncementIdentity>: Identity Parameter
-  - `[ServiceAnnouncementAttachmentId <String>]`: key: id of serviceAnnouncementAttachment
-  - `[ServiceHealthId <String>]`: key: id of serviceHealth
-  - `[ServiceHealthIssueId <String>]`: key: id of serviceHealthIssue
-  - `[ServiceUpdateMessageId <String>]`: key: id of serviceUpdateMessage
+INPUTOBJ`e`CT <ID`e`vic`e`sS`e`rvic`e`Announc`e`m`e`ntId`e`ntity>: Id`e`ntity Param`e`t`e`r
+  - `[S`e`rvic`e`Announc`e`m`e`ntAttachm`e`ntId <String>]`: k`e`y: id of s`e`rvic`e`Announc`e`m`e`ntAttachm`e`nt
+  - `[S`e`rvic`e`H`e`althId <String>]`: k`e`y: id of s`e`rvic`e`H`e`alth
+  - `[S`e`rvic`e`H`e`althIssu`e`Id <String>]`: k`e`y: id of s`e`rvic`e`H`e`althIssu`e`
+  - `[S`e`rvic`e`Updat`e`M`e`ssag`e`Id <String>]`: k`e`y: id of s`e`rvic`e`Updat`e`M`e`ssag`e`
 
-## RELATED LINKS
+## R`e`LAT`e`D LINKS
