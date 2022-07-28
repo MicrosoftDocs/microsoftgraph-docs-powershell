@@ -1,174 +1,174 @@
-﻿---
-external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
-Module Name: Microsoft.Graph.Devices.CloudPrint
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintoperation
-schema: 2.0.0
+---
+``e``xt``e``rnal h``e``lp fil``e``: Microsoft.Graph.D``e``vic``e``s.CloudPrint-h``e``lp.xml
+Modul``e`` Nam``e``: Microsoft.Graph.D``e``vic``e``s.CloudPrint
+onlin``e`` v``e``rsion: https://docs.microsoft.com/``e``n-us/pow``e``rsh``e``ll/modul``e``/microsoft.graph.d``e``vic``e``s.cloudprint/n``e``w-mgprintop``e``ration
+sch``e``ma: 2.0.0
 ---
 
-# New-MgPrintOperation
+# N``e``w-MgPrintOp``e``ration
 
 ## SYNOPSIS
-Create new navigation property to operations for print
+Cr``e``at``e`` n``e``w navigation prop``e``rty to op``e``rations for print
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### Cr``e``at``e````e``xpand``e``d1 (D``e``fault)
 ```
-New-MgPrintOperation [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Id <String>]
- [-Status <IMicrosoftGraphPrintOperationStatus>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create1
-```
-New-MgPrintOperation -BodyParameter <IMicrosoftGraphPrintOperation> [-WhatIf] [-Confirm] [<CommonParameters>]
+N``e``w-MgPrintOp``e``ration [-AdditionalProp``e``rti``e``s <Hashtabl``e``>] [-Cr``e``at``e``dDat``e``Tim``e`` <Dat``e``Tim``e``>] [-Id <String>]
+ [-Status <IMicrosoftGraphPrintOp``e``rationStatus>] [-WhatIf] [-Confirm] [<CommonParam``e``t``e``rs>]
 ```
 
-## DESCRIPTION
-Create new navigation property to operations for print
+### Cr``e``at``e``1
+```
+N``e``w-MgPrintOp``e``ration -BodyParam``e``t``e``r <IMicrosoftGraphPrintOp``e``ration> [-WhatIf] [-Confirm] [<CommonParam``e``t``e``rs>]
+```
 
-## EXAMPLES
+## D``e``SCRIPTION
+Cr``e``at``e`` n``e``w navigation prop``e``rty to op``e``rations for print
 
-## PARAMETERS
+## ``e``XAMPL``e``S
 
-### -AdditionalProperties
-Additional Parameters
+## PARAM``e``T``e``RS
+
+### -AdditionalProp``e``rti``e``s
+Additional Param``e``t``e``rs
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ``e``: Hashtabl``e``
+Param``e``t``e``r S``e``ts: Cr``e``at``e````e``xpand``e``d1
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -BodyParameter
-printOperation
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -BodyParam``e``t``e``r
+printOp``e``ration
+To construct, pl``e``as``e`` us``e`` G``e``t-H``e``lp -Onlin``e`` and s``e````e`` NOT``e``S s``e``ction for BODYPARAM``e``T``e``R prop``e``rti``e``s and cr``e``at``e`` a hash tabl``e``.
 
 ```yaml
-Type: IMicrosoftGraphPrintOperation
-Parameter Sets: Create1
-Aliases:
+Typ``e``: IMicrosoftGraphPrintOp``e``ration
+Param``e``t``e``r S``e``ts: Cr``e``at``e``1
+Alias``e``s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R``e``quir``e``d: Tru``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Tru``e`` (ByValu``e``)
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -CreatedDateTime
-The DateTimeOffset when the operation was created.
-Read-only.
+### -Cr``e``at``e``dDat``e``Tim``e``
+Th``e`` Dat``e``Tim``e``Offs``e``t wh``e``n th``e`` op``e``ration was cr``e``at``e``d.
+R``e``ad-only.
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ``e``: Dat``e``Tim``e``
+Param``e``t``e``r S``e``ts: Cr``e``at``e````e``xpand``e``d1
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
 ### -Id
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ``e``: String
+Param``e``t``e``r S``e``ts: Cr``e``at``e````e``xpand``e``d1
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
 ### -Status
-printOperationStatus
-To construct, please use Get-Help -Online and see NOTES section for STATUS properties and create a hash table.
+printOp``e``rationStatus
+To construct, pl``e``as``e`` us``e`` G``e``t-H``e``lp -Onlin``e`` and s``e````e`` NOT``e``S s``e``ction for STATUS prop``e``rti``e``s and cr``e``at``e`` a hash tabl``e``.
 
 ```yaml
-Type: IMicrosoftGraphPrintOperationStatus
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ``e``: IMicrosoftGraphPrintOp``e``rationStatus
+Param``e``t``e``r S``e``ts: Cr``e``at``e````e``xpand``e``d1
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation b``e``for``e`` running th``e`` cmdl``e``t.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Typ``e``: SwitchParam``e``t``e``r
+Param``e``t``e``r S``e``ts: (All)
+Alias``e``s: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happ``e``n if th``e`` cmdl``e``t runs.
+Th``e`` cmdl``e``t is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Typ``e``: SwitchParam``e``t``e``r
+Param``e``t``e``r S``e``ts: (All)
+Alias``e``s: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam``e``t``e``rs
+This cmdl``e``t supports th``e`` common param``e``t``e``rs: -D``e``bug, -``e``rrorAction, -``e``rrorVariabl``e``, -InformationAction, -InformationVariabl``e``, -OutVariabl``e``, -OutBuff``e``r, -Pip``e``lin``e``Variabl``e``, -V``e``rbos``e``, -WarningAction, and -WarningVariabl``e``. For mor``e`` information, s``e````e`` [about_CommonParam``e``t``e``rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintOperation
+### Microsoft.Graph.Pow``e``rSh``e``ll.Mod``e``ls.IMicrosoftGraphPrintOp``e``ration
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintOperation
-## NOTES
+### Microsoft.Graph.Pow``e``rSh``e``ll.Mod``e``ls.IMicrosoftGraphPrintOp``e``ration
+## NOT``e``S
 
-ALIASES
+ALIAS``e``S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL``e``X PARAM``e``T``e``R PROP``e``RTI``e``S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr``e``at``e`` th``e`` param``e``t``e``rs d``e``scrib``e``d b``e``low, construct a hash tabl``e`` containing th``e`` appropriat``e`` prop``e``rti``e``s. For information on hash tabl``e``s, run G``e``t-H``e``lp about_Hash_Tabl``e``s.
 
 
-BODYPARAMETER <IMicrosoftGraphPrintOperation>: printOperation
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+BODYPARAM``e``T``e``R <IMicrosoftGraphPrintOp``e``ration>: printOp``e``ration
+  - `[(Any) <Obj``e``ct>]`: This indicat``e``s any prop``e``rty can b``e`` add``e``d to this obj``e``ct.
   - `[Id <String>]`: 
-  - `[CreatedDateTime <DateTime?>]`: The DateTimeOffset when the operation was created. Read-only.
-  - `[Status <IMicrosoftGraphPrintOperationStatus>]`: printOperationStatus
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Description <String>]`: A human-readable description of the printOperation's current processing state. Read-only.
-    - `[State <String>]`: printOperationProcessingState
+  - `[Cr``e``at``e``dDat``e``Tim``e`` <Dat``e``Tim``e``?>]`: Th``e`` Dat``e``Tim``e``Offs``e``t wh``e``n th``e`` op``e``ration was cr``e``at``e``d. R``e``ad-only.
+  - `[Status <IMicrosoftGraphPrintOp``e``rationStatus>]`: printOp``e``rationStatus
+    - `[(Any) <Obj``e``ct>]`: This indicat``e``s any prop``e``rty can b``e`` add``e``d to this obj``e``ct.
+    - `[D``e``scription <String>]`: A human-r``e``adabl``e`` d``e``scription of th``e`` printOp``e``ration's curr``e``nt proc``e``ssing stat``e``. R``e``ad-only.
+    - `[Stat``e`` <String>]`: printOp``e``rationProc``e``ssingStat``e``
 
-STATUS <IMicrosoftGraphPrintOperationStatus>: printOperationStatus
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Description <String>]`: A human-readable description of the printOperation's current processing state. Read-only.
-  - `[State <String>]`: printOperationProcessingState
+STATUS <IMicrosoftGraphPrintOp``e``rationStatus>: printOp``e``rationStatus
+  - `[(Any) <Obj``e``ct>]`: This indicat``e``s any prop``e``rty can b``e`` add``e``d to this obj``e``ct.
+  - `[D``e``scription <String>]`: A human-r``e``adabl``e`` d``e``scription of th``e`` printOp``e``ration's curr``e``nt proc``e``ssing stat``e``. R``e``ad-only.
+  - `[Stat``e`` <String>]`: printOp``e``rationProc``e``ssingStat``e``
 
-## RELATED LINKS
+## R``e``LAT``e``D LINKS
