@@ -1,247 +1,247 @@
-﻿---
-external help file: Microsoft.Graph.Education-help.xml
-Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentcategory
+---
+external help file: Microsoft.Graph.E``d``ucation-help.xml
+Mo``d``ule Name: Microsoft.Graph.E``d``ucation
+online version: https://``d``ocs.microsoft.com/en-us/powershell/mo``d``ule/microsoft.graph.e``d``ucation/new-mge``d``ucationclassassignmentcategory
 schema: 2.0.0
 ---
 
-# New-MgEducationClassAssignmentCategory
+# New-MgE``d``ucationClassAssignmentCategory
 
 ## SYNOPSIS
-Create new navigation property to assignmentCategories for education
+Create new navigation property to assignmentCategories for e``d``ucation
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpan``d``e``d``1 (``d``efault)
 ```
-New-MgEducationClassAssignmentCategory -EducationClassId <String> [-AdditionalProperties <Hashtable>]
- [-DisplayName <String>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgE``d``ucationClassAssignmentCategory -E``d``ucationClassI``d`` <String> [-A``d````d``itionalProperties <Hashtable>]
+ [-``d``isplayName <String>] [-I``d`` <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateExpanded2
+### CreateExpan``d``e``d``2
 ```
-New-MgEducationClassAssignmentCategory -EducationClassId <String> -EducationAssignmentId <String>
- [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-WhatIf] [-Confirm]
+New-MgE``d``ucationClassAssignmentCategory -E``d``ucationClassI``d`` <String> -E``d``ucationAssignmentI``d`` <String>
+ [-A``d````d``itionalProperties <Hashtable>] [-``d``isplayName <String>] [-I``d`` <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create2
 ```
-New-MgEducationClassAssignmentCategory -EducationClassId <String> -EducationAssignmentId <String>
- -BodyParameter <IMicrosoftGraphEducationCategory> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgE``d``ucationClassAssignmentCategory -E``d``ucationClassI``d`` <String> -E``d``ucationAssignmentI``d`` <String>
+ -Bo``d``yParameter <IMicrosoftGraphE``d``ucationCategory> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgEducationClassAssignmentCategory -EducationClassId <String>
- -BodyParameter <IMicrosoftGraphEducationCategory> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgE``d``ucationClassAssignmentCategory -E``d``ucationClassI``d`` <String>
+ -Bo``d``yParameter <IMicrosoftGraphE``d``ucationCategory> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded2
+### CreateViaI``d``entityExpan``d``e``d``2
 ```
-New-MgEducationClassAssignmentCategory -InputObject <IEducationIdentity> [-AdditionalProperties <Hashtable>]
- [-DisplayName <String>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded1
-```
-New-MgEducationClassAssignmentCategory -InputObject <IEducationIdentity> [-AdditionalProperties <Hashtable>]
- [-DisplayName <String>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgE``d``ucationClassAssignmentCategory -InputObject <IE``d``ucationI``d``entity> [-A``d````d``itionalProperties <Hashtable>]
+ [-``d``isplayName <String>] [-I``d`` <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentity2
+### CreateViaI``d``entityExpan``d``e``d``1
 ```
-New-MgEducationClassAssignmentCategory -InputObject <IEducationIdentity>
- -BodyParameter <IMicrosoftGraphEducationCategory> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity1
-```
-New-MgEducationClassAssignmentCategory -InputObject <IEducationIdentity>
- -BodyParameter <IMicrosoftGraphEducationCategory> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgE``d``ucationClassAssignmentCategory -InputObject <IE``d``ucationI``d``entity> [-A``d````d``itionalProperties <Hashtable>]
+ [-``d``isplayName <String>] [-I``d`` <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-## DESCRIPTION
-Create new navigation property to assignmentCategories for education
+### CreateViaI``d``entity2
+```
+New-MgE``d``ucationClassAssignmentCategory -InputObject <IE``d``ucationI``d``entity>
+ -Bo``d``yParameter <IMicrosoftGraphE``d``ucationCategory> [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaI``d``entity1
+```
+New-MgE``d``ucationClassAssignmentCategory -InputObject <IE``d``ucationI``d``entity>
+ -Bo``d``yParameter <IMicrosoftGraphE``d``ucationCategory> [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+## ``d``ESCRIPTION
+Create new navigation property to assignmentCategories for e``d``ucation
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -A``d````d``itionalProperties
+A``d````d``itional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateExpanded2, CreateViaIdentityExpanded2, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpan``d``e``d``1, CreateExpan``d``e``d``2, CreateViaI``d``entityExpan``d``e``d``2, CreateViaI``d``entityExpan``d``e``d``1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``d``: False
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
-### -BodyParameter
-educationCategory
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -Bo``d``yParameter
+e``d``ucationCategory
+To construct, please use Get-Help -Online an``d`` see NOTES section for BO``d``YPARAMETER properties an``d`` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationCategory
-Parameter Sets: Create2, Create1, CreateViaIdentity2, CreateViaIdentity1
+Type: IMicrosoftGraphE``d``ucationCategory
+Parameter Sets: Create2, Create1, CreateViaI``d``entity2, CreateViaI``d``entity1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require``d``: True
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
-### -DisplayName
-Unique identifier for the category.
+### -``d``isplayName
+Unique i``d``entifier for the category.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateExpanded2, CreateViaIdentityExpanded2, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpan``d``e``d``1, CreateExpan``d``e``d``2, CreateViaI``d``entityExpan``d``e``d``2, CreateViaI``d``entityExpan``d``e``d``1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``d``: False
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
-### -EducationAssignmentId
-key: id of educationAssignment
+### -E``d``ucationAssignmentI``d``
+key: i``d`` of e``d``ucationAssignment
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded2, Create2
+Parameter Sets: CreateExpan``d``e``d``2, Create2
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require``d``: True
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
-### -EducationClassId
-key: id of educationClass
+### -E``d``ucationClassI``d``
+key: i``d`` of e``d``ucationClass
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateExpanded2, Create2, Create1
+Parameter Sets: CreateExpan``d``e``d``1, CreateExpan``d``e``d``2, Create2, Create1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require``d``: True
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
-### -Id
+### -I``d``
 .
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateExpanded2, CreateViaIdentityExpanded2, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpan``d``e``d``1, CreateExpan``d``e``d``2, CreateViaI``d``entityExpan``d``e``d``2, CreateViaI``d``entityExpan``d``e``d``1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require``d``: False
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
 ### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+I``d``entity Parameter
+To construct, please use Get-Help -Online an``d`` see NOTES section for INPUTOBJECT properties an``d`` create a hash table.
 
 ```yaml
-Type: IEducationIdentity
-Parameter Sets: CreateViaIdentityExpanded2, CreateViaIdentityExpanded1, CreateViaIdentity2, CreateViaIdentity1
+Type: IE``d``ucationI``d``entity
+Parameter Sets: CreateViaI``d``entityExpan``d``e``d``2, CreateViaI``d``entityExpan``d``e``d``1, CreateViaI``d``entity2, CreateViaI``d``entity1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require``d``: True
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation before running the cm``d``let.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
-Required: False
-Position: Named
-Default value: None
+Require``d``: False
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what woul``d`` happen if the cm``d``let runs.
+The cm``d``let is not run.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
-Required: False
-Position: Named
-Default value: None
+Require``d``: False
+Position: Name``d``
+``d``efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil``d``car``d`` characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cm``d``let supports the common parameters: -``d``ebug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, an``d`` -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkI``d``=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationCategory
+### Microsoft.Graph.PowerShell.Mo``d``els.IE``d``ucationI``d``entity
+### Microsoft.Graph.PowerShell.Mo``d``els.IMicrosoftGraphE``d``ucationCategory
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationCategory
+### Microsoft.Graph.PowerShell.Mo``d``els.IMicrosoftGraphE``d``ucationCategory
 ## NOTES
 
 ALIASES
 
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters ``d``escribe``d`` below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphEducationCategory>: educationCategory
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
-  - `[DisplayName <String>]`: Unique identifier for the category.
+BO``d``YPARAMETER <IMicrosoftGraphE``d``ucationCategory>: e``d``ucationCategory
+  - `[(Any) <Object>]`: This in``d``icates any property can be a``d````d``e``d`` to this object.
+  - `[I``d`` <String>]`: 
+  - `[``d``isplayName <String>]`: Unique i``d``entifier for the category.
 
-INPUTOBJECT <IEducationIdentity>: Identity Parameter
-  - `[EducationAssignmentId <String>]`: key: id of educationAssignment
-  - `[EducationAssignmentResourceId <String>]`: key: id of educationAssignmentResource
-  - `[EducationCategoryId <String>]`: key: id of educationCategory
-  - `[EducationClassId <String>]`: key: id of educationClass
-  - `[EducationOutcomeId <String>]`: key: id of educationOutcome
-  - `[EducationRubricId <String>]`: key: id of educationRubric
-  - `[EducationSchoolId <String>]`: key: id of educationSchool
-  - `[EducationSubmissionId <String>]`: key: id of educationSubmission
-  - `[EducationSubmissionResourceId <String>]`: key: id of educationSubmissionResource
-  - `[EducationSynchronizationErrorId <String>]`: key: id of educationSynchronizationError
-  - `[EducationSynchronizationProfileId <String>]`: key: id of educationSynchronizationProfile
-  - `[EducationUserId <String>]`: key: id of educationUser
+INPUTOBJECT <IE``d``ucationI``d``entity>: I``d``entity Parameter
+  - `[E``d``ucationAssignmentI``d`` <String>]`: key: i``d`` of e``d``ucationAssignment
+  - `[E``d``ucationAssignmentResourceI``d`` <String>]`: key: i``d`` of e``d``ucationAssignmentResource
+  - `[E``d``ucationCategoryI``d`` <String>]`: key: i``d`` of e``d``ucationCategory
+  - `[E``d``ucationClassI``d`` <String>]`: key: i``d`` of e``d``ucationClass
+  - `[E``d``ucationOutcomeI``d`` <String>]`: key: i``d`` of e``d``ucationOutcome
+  - `[E``d``ucationRubricI``d`` <String>]`: key: i``d`` of e``d``ucationRubric
+  - `[E``d``ucationSchoolI``d`` <String>]`: key: i``d`` of e``d``ucationSchool
+  - `[E``d``ucationSubmissionI``d`` <String>]`: key: i``d`` of e``d``ucationSubmission
+  - `[E``d``ucationSubmissionResourceI``d`` <String>]`: key: i``d`` of e``d``ucationSubmissionResource
+  - `[E``d``ucationSynchronizationErrorI``d`` <String>]`: key: i``d`` of e``d``ucationSynchronizationError
+  - `[E``d``ucationSynchronizationProfileI``d`` <String>]`: key: i``d`` of e``d``ucationSynchronizationProfile
+  - `[E``d``ucationUserI``d`` <String>]`: key: i``d`` of e``d``ucationUser
 
-## RELATED LINKS
+## RELATE``d`` LINKS
