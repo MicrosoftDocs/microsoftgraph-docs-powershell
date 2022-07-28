@@ -1,299 +1,299 @@
-﻿---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementcompliancemanagementpartner
-schema: 2.0.0
+---
+````e````xt````e````rnal h````e````lp fil````e````: Microsoft.Graph.D````e````vic````e````Manag````e````m````e````nt.Administration-h````e````lp.xml
+Modul````e```` Nam````e````: Microsoft.Graph.D````e````vic````e````Manag````e````m````e````nt.Administration
+onlin````e```` v````e````rsion: https://docs.microsoft.com/````e````n-us/pow````e````rsh````e````ll/modul````e````/microsoft.graph.d````e````vic````e````manag````e````m````e````nt.administration/n````e````w-mgd````e````vic````e````manag````e````m````e````ntcomplianc````e````manag````e````m````e````ntpartn````e````r
+sch````e````ma: 2.0.0
 ---
 
-# New-MgDeviceManagementComplianceManagementPartner
+# N````e````w-MgD````e````vic````e````Manag````e````m````e````ntComplianc````e````Manag````e````m````e````ntPartn````e````r
 
 ## SYNOPSIS
-Create new navigation property to complianceManagementPartners for deviceManagement
+Cr````e````at````e```` n````e````w navigation prop````e````rty to complianc````e````Manag````e````m````e````ntPartn````e````rs for d````e````vic````e````Manag````e````m````e````nt
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### Cr````e````at````e````````e````xpand````e````d1 (D````e````fault)
 ```
-New-MgDeviceManagementComplianceManagementPartner [-AdditionalProperties <Hashtable>]
- [-AndroidEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment[]>] [-AndroidOnboarded]
- [-DisplayName <String>] [-Id <String>]
- [-IosEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment[]>] [-IosOnboarded]
- [-LastHeartbeatDateTime <DateTime>]
- [-MacOSEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment[]>] [-MacOSOnboarded]
- [-PartnerState <DeviceManagementPartnerTenantState>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create1
-```
-New-MgDeviceManagementComplianceManagementPartner -BodyParameter <IMicrosoftGraphComplianceManagementPartner1>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+N````e````w-MgD````e````vic````e````Manag````e````m````e````ntComplianc````e````Manag````e````m````e````ntPartn````e````r [-AdditionalProp````e````rti````e````s <Hashtabl````e````>]
+ [-Android````e````nrollm````e````ntAssignm````e````nts <IMicrosoftGraphComplianc````e````Manag````e````m````e````ntPartn````e````rAssignm````e````nt[]>] [-AndroidOnboard````e````d]
+ [-DisplayNam````e```` <String>] [-Id <String>]
+ [-Ios````e````nrollm````e````ntAssignm````e````nts <IMicrosoftGraphComplianc````e````Manag````e````m````e````ntPartn````e````rAssignm````e````nt[]>] [-IosOnboard````e````d]
+ [-LastH````e````artb````e````atDat````e````Tim````e```` <Dat````e````Tim````e````>]
+ [-MacOS````e````nrollm````e````ntAssignm````e````nts <IMicrosoftGraphComplianc````e````Manag````e````m````e````ntPartn````e````rAssignm````e````nt[]>] [-MacOSOnboard````e````d]
+ [-Partn````e````rStat````e```` <D````e````vic````e````Manag````e````m````e````ntPartn````e````rT````e````nantStat````e````>] [-WhatIf] [-Confirm] [<CommonParam````e````t````e````rs>]
 ```
 
-## DESCRIPTION
-Create new navigation property to complianceManagementPartners for deviceManagement
+### Cr````e````at````e````1
+```
+N````e````w-MgD````e````vic````e````Manag````e````m````e````ntComplianc````e````Manag````e````m````e````ntPartn````e````r -BodyParam````e````t````e````r <IMicrosoftGraphComplianc````e````Manag````e````m````e````ntPartn````e````r1>
+ [-WhatIf] [-Confirm] [<CommonParam````e````t````e````rs>]
+```
 
-## EXAMPLES
+## D````e````SCRIPTION
+Cr````e````at````e```` n````e````w navigation prop````e````rty to complianc````e````Manag````e````m````e````ntPartn````e````rs for d````e````vic````e````Manag````e````m````e````nt
 
-## PARAMETERS
+## ````e````XAMPL````e````S
 
-### -AdditionalProperties
-Additional Parameters
+## PARAM````e````T````e````RS
+
+### -AdditionalProp````e````rti````e````s
+Additional Param````e````t````e````rs
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ````e````: Hashtabl````e````
+Param````e````t````e````r S````e````ts: Cr````e````at````e````````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -AndroidEnrollmentAssignments
-User groups which enroll Android devices through partner.
-To construct, please use Get-Help -Online and see NOTES section for ANDROIDENROLLMENTASSIGNMENTS properties and create a hash table.
+### -Android````e````nrollm````e````ntAssignm````e````nts
+Us````e````r groups which ````e````nroll Android d````e````vic````e````s through partn````e````r.
+To construct, pl````e````as````e```` us````e```` G````e````t-H````e````lp -Onlin````e```` and s````e````````e```` NOT````e````S s````e````ction for ANDROID````e````NROLLM````e````NTASSIGNM````e````NTS prop````e````rti````e````s and cr````e````at````e```` a hash tabl````e````.
 
 ```yaml
-Type: IMicrosoftGraphComplianceManagementPartnerAssignment[]
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ````e````: IMicrosoftGraphComplianc````e````Manag````e````m````e````ntPartn````e````rAssignm````e````nt[]
+Param````e````t````e````r S````e````ts: Cr````e````at````e````````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -AndroidOnboarded
-Partner onboarded for Android devices.
+### -AndroidOnboard````e````d
+Partn````e````r onboard````e````d for Android d````e````vic````e````s.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ````e````: SwitchParam````e````t````e````r
+Param````e````t````e````r S````e````ts: Cr````e````at````e````````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -BodyParameter
-Compliance management partner for all platforms
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -BodyParam````e````t````e````r
+Complianc````e```` manag````e````m````e````nt partn````e````r for all platforms
+To construct, pl````e````as````e```` us````e```` G````e````t-H````e````lp -Onlin````e```` and s````e````````e```` NOT````e````S s````e````ction for BODYPARAM````e````T````e````R prop````e````rti````e````s and cr````e````at````e```` a hash tabl````e````.
 
 ```yaml
-Type: IMicrosoftGraphComplianceManagementPartner1
-Parameter Sets: Create1
-Aliases:
+Typ````e````: IMicrosoftGraphComplianc````e````Manag````e````m````e````ntPartn````e````r1
+Param````e````t````e````r S````e````ts: Cr````e````at````e````1
+Alias````e````s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R````e````quir````e````d: Tru````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Tru````e```` (ByValu````e````)
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -DisplayName
-Partner display name
+### -DisplayNam````e````
+Partn````e````r display nam````e````
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ````e````: String
+Param````e````t````e````r S````e````ts: Cr````e````at````e````````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
 ### -Id
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ````e````: String
+Param````e````t````e````r S````e````ts: Cr````e````at````e````````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -IosEnrollmentAssignments
-User groups which enroll ios devices through partner.
-To construct, please use Get-Help -Online and see NOTES section for IOSENROLLMENTASSIGNMENTS properties and create a hash table.
+### -Ios````e````nrollm````e````ntAssignm````e````nts
+Us````e````r groups which ````e````nroll ios d````e````vic````e````s through partn````e````r.
+To construct, pl````e````as````e```` us````e```` G````e````t-H````e````lp -Onlin````e```` and s````e````````e```` NOT````e````S s````e````ction for IOS````e````NROLLM````e````NTASSIGNM````e````NTS prop````e````rti````e````s and cr````e````at````e```` a hash tabl````e````.
 
 ```yaml
-Type: IMicrosoftGraphComplianceManagementPartnerAssignment[]
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ````e````: IMicrosoftGraphComplianc````e````Manag````e````m````e````ntPartn````e````rAssignm````e````nt[]
+Param````e````t````e````r S````e````ts: Cr````e````at````e````````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -IosOnboarded
-Partner onboarded for ios devices.
+### -IosOnboard````e````d
+Partn````e````r onboard````e````d for ios d````e````vic````e````s.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ````e````: SwitchParam````e````t````e````r
+Param````e````t````e````r S````e````ts: Cr````e````at````e````````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -LastHeartbeatDateTime
-Timestamp of last heartbeat after admin onboarded to the compliance management partner
+### -LastH````e````artb````e````atDat````e````Tim````e````
+Tim````e````stamp of last h````e````artb````e````at aft````e````r admin onboard````e````d to th````e```` complianc````e```` manag````e````m````e````nt partn````e````r
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ````e````: Dat````e````Tim````e````
+Param````e````t````e````r S````e````ts: Cr````e````at````e````````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -MacOSEnrollmentAssignments
-User groups which enroll Mac devices through partner.
-To construct, please use Get-Help -Online and see NOTES section for MACOSENROLLMENTASSIGNMENTS properties and create a hash table.
+### -MacOS````e````nrollm````e````ntAssignm````e````nts
+Us````e````r groups which ````e````nroll Mac d````e````vic````e````s through partn````e````r.
+To construct, pl````e````as````e```` us````e```` G````e````t-H````e````lp -Onlin````e```` and s````e````````e```` NOT````e````S s````e````ction for MACOS````e````NROLLM````e````NTASSIGNM````e````NTS prop````e````rti````e````s and cr````e````at````e```` a hash tabl````e````.
 
 ```yaml
-Type: IMicrosoftGraphComplianceManagementPartnerAssignment[]
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ````e````: IMicrosoftGraphComplianc````e````Manag````e````m````e````ntPartn````e````rAssignm````e````nt[]
+Param````e````t````e````r S````e````ts: Cr````e````at````e````````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -MacOSOnboarded
-Partner onboarded for Mac devices.
+### -MacOSOnboard````e````d
+Partn````e````r onboard````e````d for Mac d````e````vic````e````s.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ````e````: SwitchParam````e````t````e````r
+Param````e````t````e````r S````e````ts: Cr````e````at````e````````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### -PartnerState
-Partner state of this tenant.
+### -Partn````e````rStat````e````
+Partn````e````r stat````e```` of this t````e````nant.
 
 ```yaml
-Type: DeviceManagementPartnerTenantState
-Parameter Sets: CreateExpanded1
-Aliases:
+Typ````e````: D````e````vic````e````Manag````e````m````e````ntPartn````e````rT````e````nantStat````e````
+Param````e````t````e````r S````e````ts: Cr````e````at````e````````e````xpand````e````d1
+Alias````e````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation b````e````for````e```` running th````e```` cmdl````e````t.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Typ````e````: SwitchParam````e````t````e````r
+Param````e````t````e````r S````e````ts: (All)
+Alias````e````s: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happ````e````n if th````e```` cmdl````e````t runs.
+Th````e```` cmdl````e````t is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Typ````e````: SwitchParam````e````t````e````r
+Param````e````t````e````r S````e````ts: (All)
+Alias````e````s: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R````e````quir````e````d: Fals````e````
+Position: Nam````e````d
+D````e````fault valu````e````: Non````e````
+Acc````e````pt pip````e````lin````e```` input: Fals````e````
+Acc````e````pt wildcard charact````e````rs: Fals````e````
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam````e````t````e````rs
+This cmdl````e````t supports th````e```` common param````e````t````e````rs: -D````e````bug, -````e````rrorAction, -````e````rrorVariabl````e````, -InformationAction, -InformationVariabl````e````, -OutVariabl````e````, -OutBuff````e````r, -Pip````e````lin````e````Variabl````e````, -V````e````rbos````e````, -WarningAction, and -WarningVariabl````e````. For mor````e```` information, s````e````````e```` [about_CommonParam````e````t````e````rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComplianceManagementPartner1
+### Microsoft.Graph.Pow````e````rSh````e````ll.Mod````e````ls.IMicrosoftGraphComplianc````e````Manag````e````m````e````ntPartn````e````r1
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComplianceManagementPartner1
-## NOTES
+### Microsoft.Graph.Pow````e````rSh````e````ll.Mod````e````ls.IMicrosoftGraphComplianc````e````Manag````e````m````e````ntPartn````e````r1
+## NOT````e````S
 
-ALIASES
+ALIAS````e````S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL````e````X PARAM````e````T````e````R PROP````e````RTI````e````S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr````e````at````e```` th````e```` param````e````t````e````rs d````e````scrib````e````d b````e````low, construct a hash tabl````e```` containing th````e```` appropriat````e```` prop````e````rti````e````s. For information on hash tabl````e````s, run G````e````t-H````e````lp about_Hash_Tabl````e````s.
 
 
-ANDROIDENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment[]>: User groups which enroll Android devices through partner.
-  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+ANDROID````e````NROLLM````e````NTASSIGNM````e````NTS <IMicrosoftGraphComplianc````e````Manag````e````m````e````ntPartn````e````rAssignm````e````nt[]>: Us````e````r groups which ````e````nroll Android d````e````vic````e````s through partn````e````r.
+  - `[Targ````e````t <IMicrosoftGraphD````e````vic````e````AndAppManag````e````m````e````ntAssignm````e````ntTarg````e````t>]`: Bas````e```` typ````e```` for assignm````e````nt targ````e````ts.
+    - `[(Any) <Obj````e````ct>]`: This indicat````e````s any prop````e````rty can b````e```` add````e````d to this obj````e````ct.
 
-BODYPARAMETER <IMicrosoftGraphComplianceManagementPartner1>: Compliance management partner for all platforms
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+BODYPARAM````e````T````e````R <IMicrosoftGraphComplianc````e````Manag````e````m````e````ntPartn````e````r1>: Complianc````e```` manag````e````m````e````nt partn````e````r for all platforms
+  - `[(Any) <Obj````e````ct>]`: This indicat````e````s any prop````e````rty can b````e```` add````e````d to this obj````e````ct.
   - `[Id <String>]`: 
-  - `[AndroidEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment[]>]`: User groups which enroll Android devices through partner.
-    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AndroidOnboarded <Boolean?>]`: Partner onboarded for Android devices.
-  - `[DisplayName <String>]`: Partner display name
-  - `[IosEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment[]>]`: User groups which enroll ios devices through partner.
-  - `[IosOnboarded <Boolean?>]`: Partner onboarded for ios devices.
-  - `[LastHeartbeatDateTime <DateTime?>]`: Timestamp of last heartbeat after admin onboarded to the compliance management partner
-  - `[MacOSEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment[]>]`: User groups which enroll Mac devices through partner.
-  - `[MacOSOnboarded <Boolean?>]`: Partner onboarded for Mac devices.
-  - `[PartnerState <DeviceManagementPartnerTenantState?>]`: Partner state of this tenant.
+  - `[Android````e````nrollm````e````ntAssignm````e````nts <IMicrosoftGraphComplianc````e````Manag````e````m````e````ntPartn````e````rAssignm````e````nt[]>]`: Us````e````r groups which ````e````nroll Android d````e````vic````e````s through partn````e````r.
+    - `[Targ````e````t <IMicrosoftGraphD````e````vic````e````AndAppManag````e````m````e````ntAssignm````e````ntTarg````e````t>]`: Bas````e```` typ````e```` for assignm````e````nt targ````e````ts.
+      - `[(Any) <Obj````e````ct>]`: This indicat````e````s any prop````e````rty can b````e```` add````e````d to this obj````e````ct.
+  - `[AndroidOnboard````e````d <Bool````e````an?>]`: Partn````e````r onboard````e````d for Android d````e````vic````e````s.
+  - `[DisplayNam````e```` <String>]`: Partn````e````r display nam````e````
+  - `[Ios````e````nrollm````e````ntAssignm````e````nts <IMicrosoftGraphComplianc````e````Manag````e````m````e````ntPartn````e````rAssignm````e````nt[]>]`: Us````e````r groups which ````e````nroll ios d````e````vic````e````s through partn````e````r.
+  - `[IosOnboard````e````d <Bool````e````an?>]`: Partn````e````r onboard````e````d for ios d````e````vic````e````s.
+  - `[LastH````e````artb````e````atDat````e````Tim````e```` <Dat````e````Tim````e````?>]`: Tim````e````stamp of last h````e````artb````e````at aft````e````r admin onboard````e````d to th````e```` complianc````e```` manag````e````m````e````nt partn````e````r
+  - `[MacOS````e````nrollm````e````ntAssignm````e````nts <IMicrosoftGraphComplianc````e````Manag````e````m````e````ntPartn````e````rAssignm````e````nt[]>]`: Us````e````r groups which ````e````nroll Mac d````e````vic````e````s through partn````e````r.
+  - `[MacOSOnboard````e````d <Bool````e````an?>]`: Partn````e````r onboard````e````d for Mac d````e````vic````e````s.
+  - `[Partn````e````rStat````e```` <D````e````vic````e````Manag````e````m````e````ntPartn````e````rT````e````nantStat````e````?>]`: Partn````e````r stat````e```` of this t````e````nant.
 
-IOSENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment[]>: User groups which enroll ios devices through partner.
-  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+IOS````e````NROLLM````e````NTASSIGNM````e````NTS <IMicrosoftGraphComplianc````e````Manag````e````m````e````ntPartn````e````rAssignm````e````nt[]>: Us````e````r groups which ````e````nroll ios d````e````vic````e````s through partn````e````r.
+  - `[Targ````e````t <IMicrosoftGraphD````e````vic````e````AndAppManag````e````m````e````ntAssignm````e````ntTarg````e````t>]`: Bas````e```` typ````e```` for assignm````e````nt targ````e````ts.
+    - `[(Any) <Obj````e````ct>]`: This indicat````e````s any prop````e````rty can b````e```` add````e````d to this obj````e````ct.
 
-MACOSENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment[]>: User groups which enroll Mac devices through partner.
-  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+MACOS````e````NROLLM````e````NTASSIGNM````e````NTS <IMicrosoftGraphComplianc````e````Manag````e````m````e````ntPartn````e````rAssignm````e````nt[]>: Us````e````r groups which ````e````nroll Mac d````e````vic````e````s through partn````e````r.
+  - `[Targ````e````t <IMicrosoftGraphD````e````vic````e````AndAppManag````e````m````e````ntAssignm````e````ntTarg````e````t>]`: Bas````e```` typ````e```` for assignm````e````nt targ````e````ts.
+    - `[(Any) <Obj````e````ct>]`: This indicat````e````s any prop````e````rty can b````e```` add````e````d to this obj````e````ct.
 
-## RELATED LINKS
+## R````e````LAT````e````D LINKS
