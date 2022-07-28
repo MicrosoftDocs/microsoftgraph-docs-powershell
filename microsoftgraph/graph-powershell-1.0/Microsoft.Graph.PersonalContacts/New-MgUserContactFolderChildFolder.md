@@ -1,523 +1,523 @@
-﻿---
-external help file: Microsoft.Graph.PersonalContacts-help.xml
-Module Name: Microsoft.Graph.PersonalContacts
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.personalcontacts/new-mgusercontactfolderchildfolder
-schema: 2.0.0
+---
+``````e``````xt``````e``````rnal h``````e``````lp fil``````e``````: Microsoft.Graph.P``````e``````rsonalContacts-h``````e``````lp.xml
+Modul``````e`````` Nam``````e``````: Microsoft.Graph.P``````e``````rsonalContacts
+onlin``````e`````` v``````e``````rsion: https://docs.microsoft.com/``````e``````n-us/pow``````e``````rsh``````e``````ll/modul``````e``````/microsoft.graph.p``````e``````rsonalcontacts/n``````e``````w-mgus``````e``````rcontactfold``````e``````rchildfold``````e``````r
+sch``````e``````ma: 2.0.0
 ---
 
-# New-MgUserContactFolderChildFolder
+# N``````e``````w-MgUs``````e``````rContactFold``````e``````rChildFold``````e``````r
 
 ## SYNOPSIS
-The collection of child folders in the folder.
-Navigation property.
-Read-only.
-Nullable.
+Th``````e`````` coll``````e``````ction of child fold``````e``````rs in th``````e`````` fold``````e``````r.
+Navigation prop``````e``````rty.
+R``````e``````ad-only.
+Nullabl``````e``````.
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### Cr``````e``````at``````e````````````e``````xpand``````e``````d (D``````e``````fault)
 ```
-New-MgUserContactFolderChildFolder -ContactFolderId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-ChildFolders <IMicrosoftGraphContactFolder[]>]
- [-Contacts <IMicrosoftGraphContact[]>] [-DisplayName <String>] [-Id <String>]
- [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-ParentFolderId <String>]
- [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Create
-```
-New-MgUserContactFolderChildFolder -ContactFolderId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphContactFolder> [-WhatIf] [-Confirm] [<CommonParameters>]
+N``````e``````w-MgUs``````e``````rContactFold``````e``````rChildFold``````e``````r -ContactFold``````e``````rId <String> -Us``````e``````rId <String>
+ [-AdditionalProp``````e``````rti``````e``````s <Hashtabl``````e``````>] [-ChildFold``````e``````rs <IMicrosoftGraphContactFold``````e``````r[]>]
+ [-Contacts <IMicrosoftGraphContact[]>] [-DisplayNam``````e`````` <String>] [-Id <String>]
+ [-MultiValu``````e````````````e``````xt``````e``````nd``````e``````dProp``````e``````rti``````e``````s <IMicrosoftGraphMultiValu``````e``````L``````e``````gacy``````e``````xt``````e``````nd``````e``````dProp``````e``````rty[]>] [-Par``````e``````ntFold``````e``````rId <String>]
+ [-Singl``````e``````Valu``````e````````````e``````xt``````e``````nd``````e``````dProp``````e``````rti``````e``````s <IMicrosoftGraphSingl``````e``````Valu``````e``````L``````e``````gacy``````e``````xt``````e``````nd``````e``````dProp``````e``````rty[]>] [-WhatIf] [-Confirm]
+ [<CommonParam``````e``````t``````e``````rs>]
 ```
 
-### CreateViaIdentityExpanded
+### Cr``````e``````at``````e``````
 ```
-New-MgUserContactFolderChildFolder -InputObject <IPersonalContactsIdentity> [-AdditionalProperties <Hashtable>]
- [-ChildFolders <IMicrosoftGraphContactFolder[]>] [-Contacts <IMicrosoftGraphContact[]>]
- [-DisplayName <String>] [-Id <String>]
- [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-ParentFolderId <String>]
- [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+N``````e``````w-MgUs``````e``````rContactFold``````e``````rChildFold``````e``````r -ContactFold``````e``````rId <String> -Us``````e``````rId <String>
+ -BodyParam``````e``````t``````e``````r <IMicrosoftGraphContactFold``````e``````r> [-WhatIf] [-Confirm] [<CommonParam``````e``````t``````e``````rs>]
 ```
 
-### CreateViaIdentity
+### Cr``````e``````at``````e``````ViaId``````e``````ntity``````e``````xpand``````e``````d
 ```
-New-MgUserContactFolderChildFolder -InputObject <IPersonalContactsIdentity>
- -BodyParameter <IMicrosoftGraphContactFolder> [-WhatIf] [-Confirm] [<CommonParameters>]
+N``````e``````w-MgUs``````e``````rContactFold``````e``````rChildFold``````e``````r -InputObj``````e``````ct <IP``````e``````rsonalContactsId``````e``````ntity> [-AdditionalProp``````e``````rti``````e``````s <Hashtabl``````e``````>]
+ [-ChildFold``````e``````rs <IMicrosoftGraphContactFold``````e``````r[]>] [-Contacts <IMicrosoftGraphContact[]>]
+ [-DisplayNam``````e`````` <String>] [-Id <String>]
+ [-MultiValu``````e````````````e``````xt``````e``````nd``````e``````dProp``````e``````rti``````e``````s <IMicrosoftGraphMultiValu``````e``````L``````e``````gacy``````e``````xt``````e``````nd``````e``````dProp``````e``````rty[]>] [-Par``````e``````ntFold``````e``````rId <String>]
+ [-Singl``````e``````Valu``````e````````````e``````xt``````e``````nd``````e``````dProp``````e``````rti``````e``````s <IMicrosoftGraphSingl``````e``````Valu``````e``````L``````e``````gacy``````e``````xt``````e``````nd``````e``````dProp``````e``````rty[]>] [-WhatIf] [-Confirm]
+ [<CommonParam``````e``````t``````e``````rs>]
 ```
 
-## DESCRIPTION
-The collection of child folders in the folder.
-Navigation property.
-Read-only.
-Nullable.
+### Cr``````e``````at``````e``````ViaId``````e``````ntity
+```
+N``````e``````w-MgUs``````e``````rContactFold``````e``````rChildFold``````e``````r -InputObj``````e``````ct <IP``````e``````rsonalContactsId``````e``````ntity>
+ -BodyParam``````e``````t``````e``````r <IMicrosoftGraphContactFold``````e``````r> [-WhatIf] [-Confirm] [<CommonParam``````e``````t``````e``````rs>]
+```
 
-## EXAMPLES
+## D``````e``````SCRIPTION
+Th``````e`````` coll``````e``````ction of child fold``````e``````rs in th``````e`````` fold``````e``````r.
+Navigation prop``````e``````rty.
+R``````e``````ad-only.
+Nullabl``````e``````.
 
-## PARAMETERS
+## ``````e``````XAMPL``````e``````S
 
-### -AdditionalProperties
-Additional Parameters
+## PARAM``````e``````T``````e``````RS
+
+### -AdditionalProp``````e``````rti``````e``````s
+Additional Param``````e``````t``````e``````rs
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````e``````: Hashtabl``````e``````
+Param``````e``````t``````e``````r S``````e``````ts: Cr``````e``````at``````e````````````e``````xpand``````e``````d, Cr``````e``````at``````e``````ViaId``````e``````ntity``````e``````xpand``````e``````d
+Alias``````e``````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````e``````quir``````e``````d: Fals``````e``````
+Position: Nam``````e``````d
+D``````e``````fault valu``````e``````: Non``````e``````
+Acc``````e``````pt pip``````e``````lin``````e`````` input: Fals``````e``````
+Acc``````e``````pt wildcard charact``````e``````rs: Fals``````e``````
 ```
 
-### -BodyParameter
-contactFolder
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -BodyParam``````e``````t``````e``````r
+contactFold``````e``````r
+To construct, pl``````e``````as``````e`````` us``````e`````` G``````e``````t-H``````e``````lp -Onlin``````e`````` and s``````e````````````e`````` NOT``````e``````S s``````e``````ction for BODYPARAM``````e``````T``````e``````R prop``````e``````rti``````e``````s and cr``````e``````at``````e`````` a hash tabl``````e``````.
 
 ```yaml
-Type: IMicrosoftGraphContactFolder
-Parameter Sets: Create, CreateViaIdentity
-Aliases:
+Typ``````e``````: IMicrosoftGraphContactFold``````e``````r
+Param``````e``````t``````e``````r S``````e``````ts: Cr``````e``````at``````e``````, Cr``````e``````at``````e``````ViaId``````e``````ntity
+Alias``````e``````s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R``````e``````quir``````e``````d: Tru``````e``````
+Position: Nam``````e``````d
+D``````e``````fault valu``````e``````: Non``````e``````
+Acc``````e``````pt pip``````e``````lin``````e`````` input: Tru``````e`````` (ByValu``````e``````)
+Acc``````e``````pt wildcard charact``````e``````rs: Fals``````e``````
 ```
 
-### -ChildFolders
-The collection of child folders in the folder.
-Navigation property.
-Read-only.
-Nullable.
-To construct, please use Get-Help -Online and see NOTES section for CHILDFOLDERS properties and create a hash table.
+### -ChildFold``````e``````rs
+Th``````e`````` coll``````e``````ction of child fold``````e``````rs in th``````e`````` fold``````e``````r.
+Navigation prop``````e``````rty.
+R``````e``````ad-only.
+Nullabl``````e``````.
+To construct, pl``````e``````as``````e`````` us``````e`````` G``````e``````t-H``````e``````lp -Onlin``````e`````` and s``````e````````````e`````` NOT``````e``````S s``````e``````ction for CHILDFOLD``````e``````RS prop``````e``````rti``````e``````s and cr``````e``````at``````e`````` a hash tabl``````e``````.
 
 ```yaml
-Type: IMicrosoftGraphContactFolder[]
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````e``````: IMicrosoftGraphContactFold``````e``````r[]
+Param``````e``````t``````e``````r S``````e``````ts: Cr``````e``````at``````e````````````e``````xpand``````e``````d, Cr``````e``````at``````e``````ViaId``````e``````ntity``````e``````xpand``````e``````d
+Alias``````e``````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````e``````quir``````e``````d: Fals``````e``````
+Position: Nam``````e``````d
+D``````e``````fault valu``````e``````: Non``````e``````
+Acc``````e``````pt pip``````e``````lin``````e`````` input: Fals``````e``````
+Acc``````e``````pt wildcard charact``````e``````rs: Fals``````e``````
 ```
 
-### -ContactFolderId
-key: id of contactFolder
+### -ContactFold``````e``````rId
+k``````e``````y: id of contactFold``````e``````r
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
-Aliases:
+Typ``````e``````: String
+Param``````e``````t``````e``````r S``````e``````ts: Cr``````e``````at``````e````````````e``````xpand``````e``````d, Cr``````e``````at``````e``````
+Alias``````e``````s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````e``````quir``````e``````d: Tru``````e``````
+Position: Nam``````e``````d
+D``````e``````fault valu``````e``````: Non``````e``````
+Acc``````e``````pt pip``````e``````lin``````e`````` input: Fals``````e``````
+Acc``````e``````pt wildcard charact``````e``````rs: Fals``````e``````
 ```
 
 ### -Contacts
-The contacts in the folder.
-Navigation property.
-Read-only.
-Nullable.
-To construct, please use Get-Help -Online and see NOTES section for CONTACTS properties and create a hash table.
+Th``````e`````` contacts in th``````e`````` fold``````e``````r.
+Navigation prop``````e``````rty.
+R``````e``````ad-only.
+Nullabl``````e``````.
+To construct, pl``````e``````as``````e`````` us``````e`````` G``````e``````t-H``````e``````lp -Onlin``````e`````` and s``````e````````````e`````` NOT``````e``````S s``````e``````ction for CONTACTS prop``````e``````rti``````e``````s and cr``````e``````at``````e`````` a hash tabl``````e``````.
 
 ```yaml
-Type: IMicrosoftGraphContact[]
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````e``````: IMicrosoftGraphContact[]
+Param``````e``````t``````e``````r S``````e``````ts: Cr``````e``````at``````e````````````e``````xpand``````e``````d, Cr``````e``````at``````e``````ViaId``````e``````ntity``````e``````xpand``````e``````d
+Alias``````e``````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````e``````quir``````e``````d: Fals``````e``````
+Position: Nam``````e``````d
+D``````e``````fault valu``````e``````: Non``````e``````
+Acc``````e``````pt pip``````e``````lin``````e`````` input: Fals``````e``````
+Acc``````e``````pt wildcard charact``````e``````rs: Fals``````e``````
 ```
 
-### -DisplayName
-The folder's display name.
+### -DisplayNam``````e``````
+Th``````e`````` fold``````e``````r's display nam``````e``````.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````e``````: String
+Param``````e``````t``````e``````r S``````e``````ts: Cr``````e``````at``````e````````````e``````xpand``````e``````d, Cr``````e``````at``````e``````ViaId``````e``````ntity``````e``````xpand``````e``````d
+Alias``````e``````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````e``````quir``````e``````d: Fals``````e``````
+Position: Nam``````e``````d
+D``````e``````fault valu``````e``````: Non``````e``````
+Acc``````e``````pt pip``````e``````lin``````e`````` input: Fals``````e``````
+Acc``````e``````pt wildcard charact``````e``````rs: Fals``````e``````
 ```
 
 ### -Id
-Read-only.
+R``````e``````ad-only.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````e``````: String
+Param``````e``````t``````e``````r S``````e``````ts: Cr``````e``````at``````e````````````e``````xpand``````e``````d, Cr``````e``````at``````e``````ViaId``````e``````ntity``````e``````xpand``````e``````d
+Alias``````e``````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````e``````quir``````e``````d: Fals``````e``````
+Position: Nam``````e``````d
+D``````e``````fault valu``````e``````: Non``````e``````
+Acc``````e``````pt pip``````e``````lin``````e`````` input: Fals``````e``````
+Acc``````e``````pt wildcard charact``````e``````rs: Fals``````e``````
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -InputObj``````e``````ct
+Id``````e``````ntity Param``````e``````t``````e``````r
+To construct, pl``````e``````as``````e`````` us``````e`````` G``````e``````t-H``````e``````lp -Onlin``````e`````` and s``````e````````````e`````` NOT``````e``````S s``````e``````ction for INPUTOBJ``````e``````CT prop``````e``````rti``````e``````s and cr``````e``````at``````e`````` a hash tabl``````e``````.
 
 ```yaml
-Type: IPersonalContactsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
-Aliases:
+Typ``````e``````: IP``````e``````rsonalContactsId``````e``````ntity
+Param``````e``````t``````e``````r S``````e``````ts: Cr``````e``````at``````e``````ViaId``````e``````ntity``````e``````xpand``````e``````d, Cr``````e``````at``````e``````ViaId``````e``````ntity
+Alias``````e``````s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R``````e``````quir``````e``````d: Tru``````e``````
+Position: Nam``````e``````d
+D``````e``````fault valu``````e``````: Non``````e``````
+Acc``````e``````pt pip``````e``````lin``````e`````` input: Tru``````e`````` (ByValu``````e``````)
+Acc``````e``````pt wildcard charact``````e``````rs: Fals``````e``````
 ```
 
-### -MultiValueExtendedProperties
-The collection of multi-value extended properties defined for the contactFolder.
-Read-only.
-Nullable.
-To construct, please use Get-Help -Online and see NOTES section for MULTIVALUEEXTENDEDPROPERTIES properties and create a hash table.
+### -MultiValu``````e````````````e``````xt``````e``````nd``````e``````dProp``````e``````rti``````e``````s
+Th``````e`````` coll``````e``````ction of multi-valu``````e`````` ``````e``````xt``````e``````nd``````e``````d prop``````e``````rti``````e``````s d``````e``````fin``````e``````d for th``````e`````` contactFold``````e``````r.
+R``````e``````ad-only.
+Nullabl``````e``````.
+To construct, pl``````e``````as``````e`````` us``````e`````` G``````e``````t-H``````e``````lp -Onlin``````e`````` and s``````e````````````e`````` NOT``````e``````S s``````e``````ction for MULTIVALU``````e````````````e``````XT``````e``````ND``````e``````DPROP``````e``````RTI``````e``````S prop``````e``````rti``````e``````s and cr``````e``````at``````e`````` a hash tabl``````e``````.
 
 ```yaml
-Type: IMicrosoftGraphMultiValueLegacyExtendedProperty[]
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````e``````: IMicrosoftGraphMultiValu``````e``````L``````e``````gacy``````e``````xt``````e``````nd``````e``````dProp``````e``````rty[]
+Param``````e``````t``````e``````r S``````e``````ts: Cr``````e``````at``````e````````````e``````xpand``````e``````d, Cr``````e``````at``````e``````ViaId``````e``````ntity``````e``````xpand``````e``````d
+Alias``````e``````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````e``````quir``````e``````d: Fals``````e``````
+Position: Nam``````e``````d
+D``````e``````fault valu``````e``````: Non``````e``````
+Acc``````e``````pt pip``````e``````lin``````e`````` input: Fals``````e``````
+Acc``````e``````pt wildcard charact``````e``````rs: Fals``````e``````
 ```
 
-### -ParentFolderId
-The ID of the folder's parent folder.
+### -Par``````e``````ntFold``````e``````rId
+Th``````e`````` ID of th``````e`````` fold``````e``````r's par``````e``````nt fold``````e``````r.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````e``````: String
+Param``````e``````t``````e``````r S``````e``````ts: Cr``````e``````at``````e````````````e``````xpand``````e``````d, Cr``````e``````at``````e``````ViaId``````e``````ntity``````e``````xpand``````e``````d
+Alias``````e``````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````e``````quir``````e``````d: Fals``````e``````
+Position: Nam``````e``````d
+D``````e``````fault valu``````e``````: Non``````e``````
+Acc``````e``````pt pip``````e``````lin``````e`````` input: Fals``````e``````
+Acc``````e``````pt wildcard charact``````e``````rs: Fals``````e``````
 ```
 
-### -SingleValueExtendedProperties
-The collection of single-value extended properties defined for the contactFolder.
-Read-only.
-Nullable.
-To construct, please use Get-Help -Online and see NOTES section for SINGLEVALUEEXTENDEDPROPERTIES properties and create a hash table.
+### -Singl``````e``````Valu``````e````````````e``````xt``````e``````nd``````e``````dProp``````e``````rti``````e``````s
+Th``````e`````` coll``````e``````ction of singl``````e``````-valu``````e`````` ``````e``````xt``````e``````nd``````e``````d prop``````e``````rti``````e``````s d``````e``````fin``````e``````d for th``````e`````` contactFold``````e``````r.
+R``````e``````ad-only.
+Nullabl``````e``````.
+To construct, pl``````e``````as``````e`````` us``````e`````` G``````e``````t-H``````e``````lp -Onlin``````e`````` and s``````e````````````e`````` NOT``````e``````S s``````e``````ction for SINGL``````e``````VALU``````e````````````e``````XT``````e``````ND``````e``````DPROP``````e``````RTI``````e``````S prop``````e``````rti``````e``````s and cr``````e``````at``````e`````` a hash tabl``````e``````.
 
 ```yaml
-Type: IMicrosoftGraphSingleValueLegacyExtendedProperty[]
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````e``````: IMicrosoftGraphSingl``````e``````Valu``````e``````L``````e``````gacy``````e``````xt``````e``````nd``````e``````dProp``````e``````rty[]
+Param``````e``````t``````e``````r S``````e``````ts: Cr``````e``````at``````e````````````e``````xpand``````e``````d, Cr``````e``````at``````e``````ViaId``````e``````ntity``````e``````xpand``````e``````d
+Alias``````e``````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````e``````quir``````e``````d: Fals``````e``````
+Position: Nam``````e``````d
+D``````e``````fault valu``````e``````: Non``````e``````
+Acc``````e``````pt pip``````e``````lin``````e`````` input: Fals``````e``````
+Acc``````e``````pt wildcard charact``````e``````rs: Fals``````e``````
 ```
 
-### -UserId
-key: id of user
+### -Us``````e``````rId
+k``````e``````y: id of us``````e``````r
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
-Aliases:
+Typ``````e``````: String
+Param``````e``````t``````e``````r S``````e``````ts: Cr``````e``````at``````e````````````e``````xpand``````e``````d, Cr``````e``````at``````e``````
+Alias``````e``````s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````e``````quir``````e``````d: Tru``````e``````
+Position: Nam``````e``````d
+D``````e``````fault valu``````e``````: Non``````e``````
+Acc``````e``````pt pip``````e``````lin``````e`````` input: Fals``````e``````
+Acc``````e``````pt wildcard charact``````e``````rs: Fals``````e``````
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation b``````e``````for``````e`````` running th``````e`````` cmdl``````e``````t.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Typ``````e``````: SwitchParam``````e``````t``````e``````r
+Param``````e``````t``````e``````r S``````e``````ts: (All)
+Alias``````e``````s: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````e``````quir``````e``````d: Fals``````e``````
+Position: Nam``````e``````d
+D``````e``````fault valu``````e``````: Non``````e``````
+Acc``````e``````pt pip``````e``````lin``````e`````` input: Fals``````e``````
+Acc``````e``````pt wildcard charact``````e``````rs: Fals``````e``````
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happ``````e``````n if th``````e`````` cmdl``````e``````t runs.
+Th``````e`````` cmdl``````e``````t is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Typ``````e``````: SwitchParam``````e``````t``````e``````r
+Param``````e``````t``````e``````r S``````e``````ts: (All)
+Alias``````e``````s: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````e``````quir``````e``````d: Fals``````e``````
+Position: Nam``````e``````d
+D``````e``````fault valu``````e``````: Non``````e``````
+Acc``````e``````pt pip``````e``````lin``````e`````` input: Fals``````e``````
+Acc``````e``````pt wildcard charact``````e``````rs: Fals``````e``````
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam``````e``````t``````e``````rs
+This cmdl``````e``````t supports th``````e`````` common param``````e``````t``````e``````rs: -D``````e``````bug, -``````e``````rrorAction, -``````e``````rrorVariabl``````e``````, -InformationAction, -InformationVariabl``````e``````, -OutVariabl``````e``````, -OutBuff``````e``````r, -Pip``````e``````lin``````e``````Variabl``````e``````, -V``````e``````rbos``````e``````, -WarningAction, and -WarningVariabl``````e``````. For mor``````e`````` information, s``````e````````````e`````` [about_CommonParam``````e``````t``````e``````rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContactFolder
-### Microsoft.Graph.PowerShell.Models.IPersonalContactsIdentity
+### Microsoft.Graph.Pow``````e``````rSh``````e``````ll.Mod``````e``````ls.IMicrosoftGraphContactFold``````e``````r
+### Microsoft.Graph.Pow``````e``````rSh``````e``````ll.Mod``````e``````ls.IP``````e``````rsonalContactsId``````e``````ntity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContactFolder
-## NOTES
+### Microsoft.Graph.Pow``````e``````rSh``````e``````ll.Mod``````e``````ls.IMicrosoftGraphContactFold``````e``````r
+## NOT``````e``````S
 
-ALIASES
+ALIAS``````e``````S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL``````e``````X PARAM``````e``````T``````e``````R PROP``````e``````RTI``````e``````S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr``````e``````at``````e`````` th``````e`````` param``````e``````t``````e``````rs d``````e``````scrib``````e``````d b``````e``````low, construct a hash tabl``````e`````` containing th``````e`````` appropriat``````e`````` prop``````e``````rti``````e``````s. For information on hash tabl``````e``````s, run G``````e``````t-H``````e``````lp about_Hash_Tabl``````e``````s.
 
 
-BODYPARAMETER <IMicrosoftGraphContactFolder1>: contactFolder
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
-  - `[ChildFolders <IMicrosoftGraphContactFolder1[]>]`: The collection of child folders in the folder. Navigation property. Read-only. Nullable.
-  - `[Contacts <IMicrosoftGraphContact[]>]`: The contacts in the folder. Navigation property. Read-only. Nullable.
-    - `[Categories <String[]>]`: The categories associated with the item
-    - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
-    - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[Id <String>]`: Read-only.
-    - `[AssistantName <String>]`: The name of the contact's assistant.
-    - `[Birthday <DateTime?>]`: The contact's birthday. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[BusinessAddress <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[City <String>]`: The city.
-      - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
-      - `[PostalCode <String>]`: The postal code.
-      - `[State <String>]`: The state.
-      - `[Street <String>]`: The street.
-    - `[BusinessHomePage <String>]`: The business home page of the contact.
-    - `[BusinessPhones <String[]>]`: The contact's business phone numbers.
-    - `[Children <String[]>]`: The names of the contact's children.
-    - `[CompanyName <String>]`: The name of the contact's company.
-    - `[Department <String>]`: The contact's department.
-    - `[DisplayName <String>]`: The contact's display name. You can specify the display name in a create or update operation. Note that later updates to other properties may cause an automatically generated value to overwrite the displayName value you have specified. To preserve a pre-existing value, always include it as displayName in an update operation.
-    - `[EmailAddresses <IMicrosoftGraphEmailAddress[]>]`: The contact's email addresses.
-      - `[Address <String>]`: The email address of the person or entity.
-      - `[Name <String>]`: The display name of the person or entity.
-    - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the contact. Read-only. Nullable.
-      - `[Id <String>]`: Read-only.
-    - `[FileAs <String>]`: The name the contact is filed under.
-    - `[Generation <String>]`: The contact's generation.
-    - `[GivenName <String>]`: The contact's given name.
-    - `[HomeAddress <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-    - `[HomePhones <String[]>]`: The contact's home phone numbers.
-    - `[ImAddresses <String[]>]`: 
+BODYPARAM``````e``````T``````e``````R <IMicrosoftGraphContactFold``````e``````r1>: contactFold``````e``````r
+  - `[(Any) <Obj``````e``````ct>]`: This indicat``````e``````s any prop``````e``````rty can b``````e`````` add``````e``````d to this obj``````e``````ct.
+  - `[Id <String>]`: R``````e``````ad-only.
+  - `[ChildFold``````e``````rs <IMicrosoftGraphContactFold``````e``````r1[]>]`: Th``````e`````` coll``````e``````ction of child fold``````e``````rs in th``````e`````` fold``````e``````r. Navigation prop``````e``````rty. R``````e``````ad-only. Nullabl``````e``````.
+  - `[Contacts <IMicrosoftGraphContact[]>]`: Th``````e`````` contacts in th``````e`````` fold``````e``````r. Navigation prop``````e``````rty. R``````e``````ad-only. Nullabl``````e``````.
+    - `[Cat``````e``````gori``````e``````s <String[]>]`: Th``````e`````` cat``````e``````gori``````e``````s associat``````e``````d with th``````e`````` it``````e``````m
+    - `[Chang``````e``````K``````e``````y <String>]`: Id``````e``````ntifi``````e``````s th``````e`````` v``````e``````rsion of th``````e`````` it``````e``````m. ``````e``````v``````e``````ry tim``````e`````` th``````e`````` it``````e``````m is chang``````e``````d, chang``````e``````K``````e``````y chang``````e``````s as w``````e``````ll. This allows ``````e``````xchang``````e`````` to apply chang``````e``````s to th``````e`````` corr``````e``````ct v``````e``````rsion of th``````e`````` obj``````e``````ct. R``````e``````ad-only.
+    - `[Cr``````e``````at``````e``````dDat``````e``````Tim``````e`````` <Dat``````e``````Tim``````e``````?>]`: Th``````e`````` Tim``````e``````stamp typ``````e`````` r``````e``````pr``````e``````s``````e``````nts dat``````e`````` and tim``````e`````` information using ISO 8601 format and is always in UTC tim``````e``````. For ``````e``````xampl``````e``````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[LastModifi``````e``````dDat``````e``````Tim``````e`````` <Dat``````e``````Tim``````e``````?>]`: Th``````e`````` Tim``````e``````stamp typ``````e`````` r``````e``````pr``````e``````s``````e``````nts dat``````e`````` and tim``````e`````` information using ISO 8601 format and is always in UTC tim``````e``````. For ``````e``````xampl``````e``````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[Id <String>]`: R``````e``````ad-only.
+    - `[AssistantNam``````e`````` <String>]`: Th``````e`````` nam``````e`````` of th``````e`````` contact's assistant.
+    - `[Birthday <Dat``````e``````Tim``````e``````?>]`: Th``````e`````` contact's birthday. Th``````e`````` Tim``````e``````stamp typ``````e`````` r``````e``````pr``````e``````s``````e``````nts dat``````e`````` and tim``````e`````` information using ISO 8601 format and is always in UTC tim``````e``````. For ``````e``````xampl``````e``````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[Busin``````e``````ssAddr``````e``````ss <IMicrosoftGraphPhysicalAddr``````e``````ss>]`: physicalAddr``````e``````ss
+      - `[(Any) <Obj``````e``````ct>]`: This indicat``````e``````s any prop``````e``````rty can b``````e`````` add``````e``````d to this obj``````e``````ct.
+      - `[City <String>]`: Th``````e`````` city.
+      - `[CountryOrR``````e``````gion <String>]`: Th``````e`````` country or r``````e``````gion. It's a fr``````e````````````e``````-format string valu``````e``````, for ``````e``````xampl``````e``````, 'Unit``````e``````d Stat``````e``````s'.
+      - `[PostalCod``````e`````` <String>]`: Th``````e`````` postal cod``````e``````.
+      - `[Stat``````e`````` <String>]`: Th``````e`````` stat``````e``````.
+      - `[Str``````e````````````e``````t <String>]`: Th``````e`````` str``````e````````````e``````t.
+    - `[Busin``````e``````ssHom``````e``````Pag``````e`````` <String>]`: Th``````e`````` busin``````e``````ss hom``````e`````` pag``````e`````` of th``````e`````` contact.
+    - `[Busin``````e``````ssPhon``````e``````s <String[]>]`: Th``````e`````` contact's busin``````e``````ss phon``````e`````` numb``````e``````rs.
+    - `[Childr``````e``````n <String[]>]`: Th``````e`````` nam``````e``````s of th``````e`````` contact's childr``````e``````n.
+    - `[CompanyNam``````e`````` <String>]`: Th``````e`````` nam``````e`````` of th``````e`````` contact's company.
+    - `[D``````e``````partm``````e``````nt <String>]`: Th``````e`````` contact's d``````e``````partm``````e``````nt.
+    - `[DisplayNam``````e`````` <String>]`: Th``````e`````` contact's display nam``````e``````. You can sp``````e``````cify th``````e`````` display nam``````e`````` in a cr``````e``````at``````e`````` or updat``````e`````` op``````e``````ration. Not``````e`````` that lat``````e``````r updat``````e``````s to oth``````e``````r prop``````e``````rti``````e``````s may caus``````e`````` an automatically g``````e``````n``````e``````rat``````e``````d valu``````e`````` to ov``````e``````rwrit``````e`````` th``````e`````` displayNam``````e`````` valu``````e`````` you hav``````e`````` sp``````e``````cifi``````e``````d. To pr``````e``````s``````e``````rv``````e`````` a pr``````e``````-``````e``````xisting valu``````e``````, always includ``````e`````` it as displayNam``````e`````` in an updat``````e`````` op``````e``````ration.
+    - `[``````e``````mailAddr``````e``````ss``````e``````s <IMicrosoftGraph``````e``````mailAddr``````e``````ss[]>]`: Th``````e`````` contact's ``````e``````mail addr``````e``````ss``````e``````s.
+      - `[Addr``````e``````ss <String>]`: Th``````e`````` ``````e``````mail addr``````e``````ss of th``````e`````` p``````e``````rson or ``````e``````ntity.
+      - `[Nam``````e`````` <String>]`: Th``````e`````` display nam``````e`````` of th``````e`````` p``````e``````rson or ``````e``````ntity.
+    - `[``````e``````xt``````e``````nsions <IMicrosoftGraph``````e``````xt``````e``````nsion[]>]`: Th``````e`````` coll``````e``````ction of op``````e``````n ``````e``````xt``````e``````nsions d``````e``````fin``````e``````d for th``````e`````` contact. R``````e``````ad-only. Nullabl``````e``````.
+      - `[Id <String>]`: R``````e``````ad-only.
+    - `[Fil``````e``````As <String>]`: Th``````e`````` nam``````e`````` th``````e`````` contact is fil``````e``````d und``````e``````r.
+    - `[G``````e``````n``````e``````ration <String>]`: Th``````e`````` contact's g``````e``````n``````e``````ration.
+    - `[Giv``````e``````nNam``````e`````` <String>]`: Th``````e`````` contact's giv``````e``````n nam``````e``````.
+    - `[Hom``````e``````Addr``````e``````ss <IMicrosoftGraphPhysicalAddr``````e``````ss>]`: physicalAddr``````e``````ss
+    - `[Hom``````e``````Phon``````e``````s <String[]>]`: Th``````e`````` contact's hom``````e`````` phon``````e`````` numb``````e``````rs.
+    - `[ImAddr``````e``````ss``````e``````s <String[]>]`: 
     - `[Initials <String>]`: 
-    - `[JobTitle <String>]`: 
-    - `[Manager <String>]`: 
-    - `[MiddleName <String>]`: 
-    - `[MobilePhone <String>]`: 
-    - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
-      - `[Id <String>]`: Read-only.
-      - `[Value <String[]>]`: A collection of property values.
-    - `[NickName <String>]`: 
-    - `[OfficeLocation <String>]`: 
-    - `[OtherAddress <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-    - `[ParentFolderId <String>]`: 
-    - `[PersonalNotes <String>]`: 
-    - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: Read-only.
-      - `[Height <Int32?>]`: The height of the photo. Read-only.
-      - `[Width <Int32?>]`: The width of the photo. Read-only.
-    - `[Profession <String>]`: 
-    - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the contact. Read-only. Nullable.
-      - `[Id <String>]`: Read-only.
-      - `[Value <String>]`: A property value.
-    - `[SpouseName <String>]`: 
-    - `[Surname <String>]`: 
-    - `[Title <String>]`: 
-    - `[YomiCompanyName <String>]`: 
-    - `[YomiGivenName <String>]`: 
-    - `[YomiSurname <String>]`: 
-  - `[DisplayName <String>]`: The folder's display name.
-  - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the contactFolder. Read-only. Nullable.
-  - `[ParentFolderId <String>]`: The ID of the folder's parent folder.
-  - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the contactFolder. Read-only. Nullable.
+    - `[JobTitl``````e`````` <String>]`: 
+    - `[Manag``````e``````r <String>]`: 
+    - `[Middl``````e``````Nam``````e`````` <String>]`: 
+    - `[Mobil``````e``````Phon``````e`````` <String>]`: 
+    - `[MultiValu``````e````````````e``````xt``````e``````nd``````e``````dProp``````e``````rti``````e``````s <IMicrosoftGraphMultiValu``````e``````L``````e``````gacy``````e``````xt``````e``````nd``````e``````dProp``````e``````rty[]>]`: Th``````e`````` coll``````e``````ction of multi-valu``````e`````` ``````e``````xt``````e``````nd``````e``````d prop``````e``````rti``````e``````s d``````e``````fin``````e``````d for th``````e`````` contact. R``````e``````ad-only. Nullabl``````e``````.
+      - `[Id <String>]`: R``````e``````ad-only.
+      - `[Valu``````e`````` <String[]>]`: A coll``````e``````ction of prop``````e``````rty valu``````e``````s.
+    - `[NickNam``````e`````` <String>]`: 
+    - `[Offic``````e``````Location <String>]`: 
+    - `[Oth``````e``````rAddr``````e``````ss <IMicrosoftGraphPhysicalAddr``````e``````ss>]`: physicalAddr``````e``````ss
+    - `[Par``````e``````ntFold``````e``````rId <String>]`: 
+    - `[P``````e``````rsonalNot``````e``````s <String>]`: 
+    - `[Photo <IMicrosoftGraphProfil``````e``````Photo>]`: profil``````e``````Photo
+      - `[(Any) <Obj``````e``````ct>]`: This indicat``````e``````s any prop``````e``````rty can b``````e`````` add``````e``````d to this obj``````e``````ct.
+      - `[Id <String>]`: R``````e``````ad-only.
+      - `[H``````e``````ight <Int32?>]`: Th``````e`````` h``````e``````ight of th``````e`````` photo. R``````e``````ad-only.
+      - `[Width <Int32?>]`: Th``````e`````` width of th``````e`````` photo. R``````e``````ad-only.
+    - `[Prof``````e``````ssion <String>]`: 
+    - `[Singl``````e``````Valu``````e````````````e``````xt``````e``````nd``````e``````dProp``````e``````rti``````e``````s <IMicrosoftGraphSingl``````e``````Valu``````e``````L``````e``````gacy``````e``````xt``````e``````nd``````e``````dProp``````e``````rty[]>]`: Th``````e`````` coll``````e``````ction of singl``````e``````-valu``````e`````` ``````e``````xt``````e``````nd``````e``````d prop``````e``````rti``````e``````s d``````e``````fin``````e``````d for th``````e`````` contact. R``````e``````ad-only. Nullabl``````e``````.
+      - `[Id <String>]`: R``````e``````ad-only.
+      - `[Valu``````e`````` <String>]`: A prop``````e``````rty valu``````e``````.
+    - `[Spous``````e``````Nam``````e`````` <String>]`: 
+    - `[Surnam``````e`````` <String>]`: 
+    - `[Titl``````e`````` <String>]`: 
+    - `[YomiCompanyNam``````e`````` <String>]`: 
+    - `[YomiGiv``````e``````nNam``````e`````` <String>]`: 
+    - `[YomiSurnam``````e`````` <String>]`: 
+  - `[DisplayNam``````e`````` <String>]`: Th``````e`````` fold``````e``````r's display nam``````e``````.
+  - `[MultiValu``````e````````````e``````xt``````e``````nd``````e``````dProp``````e``````rti``````e``````s <IMicrosoftGraphMultiValu``````e``````L``````e``````gacy``````e``````xt``````e``````nd``````e``````dProp``````e``````rty[]>]`: Th``````e`````` coll``````e``````ction of multi-valu``````e`````` ``````e``````xt``````e``````nd``````e``````d prop``````e``````rti``````e``````s d``````e``````fin``````e``````d for th``````e`````` contactFold``````e``````r. R``````e``````ad-only. Nullabl``````e``````.
+  - `[Par``````e``````ntFold``````e``````rId <String>]`: Th``````e`````` ID of th``````e`````` fold``````e``````r's par``````e``````nt fold``````e``````r.
+  - `[Singl``````e``````Valu``````e````````````e``````xt``````e``````nd``````e``````dProp``````e``````rti``````e``````s <IMicrosoftGraphSingl``````e``````Valu``````e``````L``````e``````gacy``````e``````xt``````e``````nd``````e``````dProp``````e``````rty[]>]`: Th``````e`````` coll``````e``````ction of singl``````e``````-valu``````e`````` ``````e``````xt``````e``````nd``````e``````d prop``````e``````rti``````e``````s d``````e``````fin``````e``````d for th``````e`````` contactFold``````e``````r. R``````e``````ad-only. Nullabl``````e``````.
 
-CHILDFOLDERS <IMicrosoftGraphContactFolder1[]>: The collection of child folders in the folder. Navigation property. Read-only. Nullable.
-  - `[Id <String>]`: Read-only.
-  - `[ChildFolders <IMicrosoftGraphContactFolder1[]>]`: The collection of child folders in the folder. Navigation property. Read-only. Nullable.
-  - `[Contacts <IMicrosoftGraphContact[]>]`: The contacts in the folder. Navigation property. Read-only. Nullable.
-    - `[Categories <String[]>]`: The categories associated with the item
-    - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
-    - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[Id <String>]`: Read-only.
-    - `[AssistantName <String>]`: The name of the contact's assistant.
-    - `[Birthday <DateTime?>]`: The contact's birthday. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[BusinessAddress <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[City <String>]`: The city.
-      - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
-      - `[PostalCode <String>]`: The postal code.
-      - `[State <String>]`: The state.
-      - `[Street <String>]`: The street.
-    - `[BusinessHomePage <String>]`: The business home page of the contact.
-    - `[BusinessPhones <String[]>]`: The contact's business phone numbers.
-    - `[Children <String[]>]`: The names of the contact's children.
-    - `[CompanyName <String>]`: The name of the contact's company.
-    - `[Department <String>]`: The contact's department.
-    - `[DisplayName <String>]`: The contact's display name. You can specify the display name in a create or update operation. Note that later updates to other properties may cause an automatically generated value to overwrite the displayName value you have specified. To preserve a pre-existing value, always include it as displayName in an update operation.
-    - `[EmailAddresses <IMicrosoftGraphEmailAddress[]>]`: The contact's email addresses.
-      - `[Address <String>]`: The email address of the person or entity.
-      - `[Name <String>]`: The display name of the person or entity.
-    - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the contact. Read-only. Nullable.
-      - `[Id <String>]`: Read-only.
-    - `[FileAs <String>]`: The name the contact is filed under.
-    - `[Generation <String>]`: The contact's generation.
-    - `[GivenName <String>]`: The contact's given name.
-    - `[HomeAddress <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-    - `[HomePhones <String[]>]`: The contact's home phone numbers.
-    - `[ImAddresses <String[]>]`: 
+CHILDFOLD``````e``````RS <IMicrosoftGraphContactFold``````e``````r1[]>: Th``````e`````` coll``````e``````ction of child fold``````e``````rs in th``````e`````` fold``````e``````r. Navigation prop``````e``````rty. R``````e``````ad-only. Nullabl``````e``````.
+  - `[Id <String>]`: R``````e``````ad-only.
+  - `[ChildFold``````e``````rs <IMicrosoftGraphContactFold``````e``````r1[]>]`: Th``````e`````` coll``````e``````ction of child fold``````e``````rs in th``````e`````` fold``````e``````r. Navigation prop``````e``````rty. R``````e``````ad-only. Nullabl``````e``````.
+  - `[Contacts <IMicrosoftGraphContact[]>]`: Th``````e`````` contacts in th``````e`````` fold``````e``````r. Navigation prop``````e``````rty. R``````e``````ad-only. Nullabl``````e``````.
+    - `[Cat``````e``````gori``````e``````s <String[]>]`: Th``````e`````` cat``````e``````gori``````e``````s associat``````e``````d with th``````e`````` it``````e``````m
+    - `[Chang``````e``````K``````e``````y <String>]`: Id``````e``````ntifi``````e``````s th``````e`````` v``````e``````rsion of th``````e`````` it``````e``````m. ``````e``````v``````e``````ry tim``````e`````` th``````e`````` it``````e``````m is chang``````e``````d, chang``````e``````K``````e``````y chang``````e``````s as w``````e``````ll. This allows ``````e``````xchang``````e`````` to apply chang``````e``````s to th``````e`````` corr``````e``````ct v``````e``````rsion of th``````e`````` obj``````e``````ct. R``````e``````ad-only.
+    - `[Cr``````e``````at``````e``````dDat``````e``````Tim``````e`````` <Dat``````e``````Tim``````e``````?>]`: Th``````e`````` Tim``````e``````stamp typ``````e`````` r``````e``````pr``````e``````s``````e``````nts dat``````e`````` and tim``````e`````` information using ISO 8601 format and is always in UTC tim``````e``````. For ``````e``````xampl``````e``````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[LastModifi``````e``````dDat``````e``````Tim``````e`````` <Dat``````e``````Tim``````e``````?>]`: Th``````e`````` Tim``````e``````stamp typ``````e`````` r``````e``````pr``````e``````s``````e``````nts dat``````e`````` and tim``````e`````` information using ISO 8601 format and is always in UTC tim``````e``````. For ``````e``````xampl``````e``````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[Id <String>]`: R``````e``````ad-only.
+    - `[AssistantNam``````e`````` <String>]`: Th``````e`````` nam``````e`````` of th``````e`````` contact's assistant.
+    - `[Birthday <Dat``````e``````Tim``````e``````?>]`: Th``````e`````` contact's birthday. Th``````e`````` Tim``````e``````stamp typ``````e`````` r``````e``````pr``````e``````s``````e``````nts dat``````e`````` and tim``````e`````` information using ISO 8601 format and is always in UTC tim``````e``````. For ``````e``````xampl``````e``````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[Busin``````e``````ssAddr``````e``````ss <IMicrosoftGraphPhysicalAddr``````e``````ss>]`: physicalAddr``````e``````ss
+      - `[(Any) <Obj``````e``````ct>]`: This indicat``````e``````s any prop``````e``````rty can b``````e`````` add``````e``````d to this obj``````e``````ct.
+      - `[City <String>]`: Th``````e`````` city.
+      - `[CountryOrR``````e``````gion <String>]`: Th``````e`````` country or r``````e``````gion. It's a fr``````e````````````e``````-format string valu``````e``````, for ``````e``````xampl``````e``````, 'Unit``````e``````d Stat``````e``````s'.
+      - `[PostalCod``````e`````` <String>]`: Th``````e`````` postal cod``````e``````.
+      - `[Stat``````e`````` <String>]`: Th``````e`````` stat``````e``````.
+      - `[Str``````e````````````e``````t <String>]`: Th``````e`````` str``````e````````````e``````t.
+    - `[Busin``````e``````ssHom``````e``````Pag``````e`````` <String>]`: Th``````e`````` busin``````e``````ss hom``````e`````` pag``````e`````` of th``````e`````` contact.
+    - `[Busin``````e``````ssPhon``````e``````s <String[]>]`: Th``````e`````` contact's busin``````e``````ss phon``````e`````` numb``````e``````rs.
+    - `[Childr``````e``````n <String[]>]`: Th``````e`````` nam``````e``````s of th``````e`````` contact's childr``````e``````n.
+    - `[CompanyNam``````e`````` <String>]`: Th``````e`````` nam``````e`````` of th``````e`````` contact's company.
+    - `[D``````e``````partm``````e``````nt <String>]`: Th``````e`````` contact's d``````e``````partm``````e``````nt.
+    - `[DisplayNam``````e`````` <String>]`: Th``````e`````` contact's display nam``````e``````. You can sp``````e``````cify th``````e`````` display nam``````e`````` in a cr``````e``````at``````e`````` or updat``````e`````` op``````e``````ration. Not``````e`````` that lat``````e``````r updat``````e``````s to oth``````e``````r prop``````e``````rti``````e``````s may caus``````e`````` an automatically g``````e``````n``````e``````rat``````e``````d valu``````e`````` to ov``````e``````rwrit``````e`````` th``````e`````` displayNam``````e`````` valu``````e`````` you hav``````e`````` sp``````e``````cifi``````e``````d. To pr``````e``````s``````e``````rv``````e`````` a pr``````e``````-``````e``````xisting valu``````e``````, always includ``````e`````` it as displayNam``````e`````` in an updat``````e`````` op``````e``````ration.
+    - `[``````e``````mailAddr``````e``````ss``````e``````s <IMicrosoftGraph``````e``````mailAddr``````e``````ss[]>]`: Th``````e`````` contact's ``````e``````mail addr``````e``````ss``````e``````s.
+      - `[Addr``````e``````ss <String>]`: Th``````e`````` ``````e``````mail addr``````e``````ss of th``````e`````` p``````e``````rson or ``````e``````ntity.
+      - `[Nam``````e`````` <String>]`: Th``````e`````` display nam``````e`````` of th``````e`````` p``````e``````rson or ``````e``````ntity.
+    - `[``````e``````xt``````e``````nsions <IMicrosoftGraph``````e``````xt``````e``````nsion[]>]`: Th``````e`````` coll``````e``````ction of op``````e``````n ``````e``````xt``````e``````nsions d``````e``````fin``````e``````d for th``````e`````` contact. R``````e``````ad-only. Nullabl``````e``````.
+      - `[Id <String>]`: R``````e``````ad-only.
+    - `[Fil``````e``````As <String>]`: Th``````e`````` nam``````e`````` th``````e`````` contact is fil``````e``````d und``````e``````r.
+    - `[G``````e``````n``````e``````ration <String>]`: Th``````e`````` contact's g``````e``````n``````e``````ration.
+    - `[Giv``````e``````nNam``````e`````` <String>]`: Th``````e`````` contact's giv``````e``````n nam``````e``````.
+    - `[Hom``````e``````Addr``````e``````ss <IMicrosoftGraphPhysicalAddr``````e``````ss>]`: physicalAddr``````e``````ss
+    - `[Hom``````e``````Phon``````e``````s <String[]>]`: Th``````e`````` contact's hom``````e`````` phon``````e`````` numb``````e``````rs.
+    - `[ImAddr``````e``````ss``````e``````s <String[]>]`: 
     - `[Initials <String>]`: 
-    - `[JobTitle <String>]`: 
-    - `[Manager <String>]`: 
-    - `[MiddleName <String>]`: 
-    - `[MobilePhone <String>]`: 
-    - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
-      - `[Id <String>]`: Read-only.
-      - `[Value <String[]>]`: A collection of property values.
-    - `[NickName <String>]`: 
-    - `[OfficeLocation <String>]`: 
-    - `[OtherAddress <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-    - `[ParentFolderId <String>]`: 
-    - `[PersonalNotes <String>]`: 
-    - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: Read-only.
-      - `[Height <Int32?>]`: The height of the photo. Read-only.
-      - `[Width <Int32?>]`: The width of the photo. Read-only.
-    - `[Profession <String>]`: 
-    - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the contact. Read-only. Nullable.
-      - `[Id <String>]`: Read-only.
-      - `[Value <String>]`: A property value.
-    - `[SpouseName <String>]`: 
-    - `[Surname <String>]`: 
-    - `[Title <String>]`: 
-    - `[YomiCompanyName <String>]`: 
-    - `[YomiGivenName <String>]`: 
-    - `[YomiSurname <String>]`: 
-  - `[DisplayName <String>]`: The folder's display name.
-  - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the contactFolder. Read-only. Nullable.
-  - `[ParentFolderId <String>]`: The ID of the folder's parent folder.
-  - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the contactFolder. Read-only. Nullable.
+    - `[JobTitl``````e`````` <String>]`: 
+    - `[Manag``````e``````r <String>]`: 
+    - `[Middl``````e``````Nam``````e`````` <String>]`: 
+    - `[Mobil``````e``````Phon``````e`````` <String>]`: 
+    - `[MultiValu``````e````````````e``````xt``````e``````nd``````e``````dProp``````e``````rti``````e``````s <IMicrosoftGraphMultiValu``````e``````L``````e``````gacy``````e``````xt``````e``````nd``````e``````dProp``````e``````rty[]>]`: Th``````e`````` coll``````e``````ction of multi-valu``````e`````` ``````e``````xt``````e``````nd``````e``````d prop``````e``````rti``````e``````s d``````e``````fin``````e``````d for th``````e`````` contact. R``````e``````ad-only. Nullabl``````e``````.
+      - `[Id <String>]`: R``````e``````ad-only.
+      - `[Valu``````e`````` <String[]>]`: A coll``````e``````ction of prop``````e``````rty valu``````e``````s.
+    - `[NickNam``````e`````` <String>]`: 
+    - `[Offic``````e``````Location <String>]`: 
+    - `[Oth``````e``````rAddr``````e``````ss <IMicrosoftGraphPhysicalAddr``````e``````ss>]`: physicalAddr``````e``````ss
+    - `[Par``````e``````ntFold``````e``````rId <String>]`: 
+    - `[P``````e``````rsonalNot``````e``````s <String>]`: 
+    - `[Photo <IMicrosoftGraphProfil``````e``````Photo>]`: profil``````e``````Photo
+      - `[(Any) <Obj``````e``````ct>]`: This indicat``````e``````s any prop``````e``````rty can b``````e`````` add``````e``````d to this obj``````e``````ct.
+      - `[Id <String>]`: R``````e``````ad-only.
+      - `[H``````e``````ight <Int32?>]`: Th``````e`````` h``````e``````ight of th``````e`````` photo. R``````e``````ad-only.
+      - `[Width <Int32?>]`: Th``````e`````` width of th``````e`````` photo. R``````e``````ad-only.
+    - `[Prof``````e``````ssion <String>]`: 
+    - `[Singl``````e``````Valu``````e````````````e``````xt``````e``````nd``````e``````dProp``````e``````rti``````e``````s <IMicrosoftGraphSingl``````e``````Valu``````e``````L``````e``````gacy``````e``````xt``````e``````nd``````e``````dProp``````e``````rty[]>]`: Th``````e`````` coll``````e``````ction of singl``````e``````-valu``````e`````` ``````e``````xt``````e``````nd``````e``````d prop``````e``````rti``````e``````s d``````e``````fin``````e``````d for th``````e`````` contact. R``````e``````ad-only. Nullabl``````e``````.
+      - `[Id <String>]`: R``````e``````ad-only.
+      - `[Valu``````e`````` <String>]`: A prop``````e``````rty valu``````e``````.
+    - `[Spous``````e``````Nam``````e`````` <String>]`: 
+    - `[Surnam``````e`````` <String>]`: 
+    - `[Titl``````e`````` <String>]`: 
+    - `[YomiCompanyNam``````e`````` <String>]`: 
+    - `[YomiGiv``````e``````nNam``````e`````` <String>]`: 
+    - `[YomiSurnam``````e`````` <String>]`: 
+  - `[DisplayNam``````e`````` <String>]`: Th``````e`````` fold``````e``````r's display nam``````e``````.
+  - `[MultiValu``````e````````````e``````xt``````e``````nd``````e``````dProp``````e``````rti``````e``````s <IMicrosoftGraphMultiValu``````e``````L``````e``````gacy``````e``````xt``````e``````nd``````e``````dProp``````e``````rty[]>]`: Th``````e`````` coll``````e``````ction of multi-valu``````e`````` ``````e``````xt``````e``````nd``````e``````d prop``````e``````rti``````e``````s d``````e``````fin``````e``````d for th``````e`````` contactFold``````e``````r. R``````e``````ad-only. Nullabl``````e``````.
+  - `[Par``````e``````ntFold``````e``````rId <String>]`: Th``````e`````` ID of th``````e`````` fold``````e``````r's par``````e``````nt fold``````e``````r.
+  - `[Singl``````e``````Valu``````e````````````e``````xt``````e``````nd``````e``````dProp``````e``````rti``````e``````s <IMicrosoftGraphSingl``````e``````Valu``````e``````L``````e``````gacy``````e``````xt``````e``````nd``````e``````dProp``````e``````rty[]>]`: Th``````e`````` coll``````e``````ction of singl``````e``````-valu``````e`````` ``````e``````xt``````e``````nd``````e``````d prop``````e``````rti``````e``````s d``````e``````fin``````e``````d for th``````e`````` contactFold``````e``````r. R``````e``````ad-only. Nullabl``````e``````.
 
-CONTACTS <IMicrosoftGraphContact[]>: The contacts in the folder. Navigation property. Read-only. Nullable.
-  - `[Categories <String[]>]`: The categories associated with the item
-  - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Id <String>]`: Read-only.
-  - `[AssistantName <String>]`: The name of the contact's assistant.
-  - `[Birthday <DateTime?>]`: The contact's birthday. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[BusinessAddress <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[City <String>]`: The city.
-    - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
-    - `[PostalCode <String>]`: The postal code.
-    - `[State <String>]`: The state.
-    - `[Street <String>]`: The street.
-  - `[BusinessHomePage <String>]`: The business home page of the contact.
-  - `[BusinessPhones <String[]>]`: The contact's business phone numbers.
-  - `[Children <String[]>]`: The names of the contact's children.
-  - `[CompanyName <String>]`: The name of the contact's company.
-  - `[Department <String>]`: The contact's department.
-  - `[DisplayName <String>]`: The contact's display name. You can specify the display name in a create or update operation. Note that later updates to other properties may cause an automatically generated value to overwrite the displayName value you have specified. To preserve a pre-existing value, always include it as displayName in an update operation.
-  - `[EmailAddresses <IMicrosoftGraphEmailAddress[]>]`: The contact's email addresses.
-    - `[Address <String>]`: The email address of the person or entity.
-    - `[Name <String>]`: The display name of the person or entity.
-  - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the contact. Read-only. Nullable.
-    - `[Id <String>]`: Read-only.
-  - `[FileAs <String>]`: The name the contact is filed under.
-  - `[Generation <String>]`: The contact's generation.
-  - `[GivenName <String>]`: The contact's given name.
-  - `[HomeAddress <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-  - `[HomePhones <String[]>]`: The contact's home phone numbers.
-  - `[ImAddresses <String[]>]`: 
+CONTACTS <IMicrosoftGraphContact[]>: Th``````e`````` contacts in th``````e`````` fold``````e``````r. Navigation prop``````e``````rty. R``````e``````ad-only. Nullabl``````e``````.
+  - `[Cat``````e``````gori``````e``````s <String[]>]`: Th``````e`````` cat``````e``````gori``````e``````s associat``````e``````d with th``````e`````` it``````e``````m
+  - `[Chang``````e``````K``````e``````y <String>]`: Id``````e``````ntifi``````e``````s th``````e`````` v``````e``````rsion of th``````e`````` it``````e``````m. ``````e``````v``````e``````ry tim``````e`````` th``````e`````` it``````e``````m is chang``````e``````d, chang``````e``````K``````e``````y chang``````e``````s as w``````e``````ll. This allows ``````e``````xchang``````e`````` to apply chang``````e``````s to th``````e`````` corr``````e``````ct v``````e``````rsion of th``````e`````` obj``````e``````ct. R``````e``````ad-only.
+  - `[Cr``````e``````at``````e``````dDat``````e``````Tim``````e`````` <Dat``````e``````Tim``````e``````?>]`: Th``````e`````` Tim``````e``````stamp typ``````e`````` r``````e``````pr``````e``````s``````e``````nts dat``````e`````` and tim``````e`````` information using ISO 8601 format and is always in UTC tim``````e``````. For ``````e``````xampl``````e``````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[LastModifi``````e``````dDat``````e``````Tim``````e`````` <Dat``````e``````Tim``````e``````?>]`: Th``````e`````` Tim``````e``````stamp typ``````e`````` r``````e``````pr``````e``````s``````e``````nts dat``````e`````` and tim``````e`````` information using ISO 8601 format and is always in UTC tim``````e``````. For ``````e``````xampl``````e``````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[Id <String>]`: R``````e``````ad-only.
+  - `[AssistantNam``````e`````` <String>]`: Th``````e`````` nam``````e`````` of th``````e`````` contact's assistant.
+  - `[Birthday <Dat``````e``````Tim``````e``````?>]`: Th``````e`````` contact's birthday. Th``````e`````` Tim``````e``````stamp typ``````e`````` r``````e``````pr``````e``````s``````e``````nts dat``````e`````` and tim``````e`````` information using ISO 8601 format and is always in UTC tim``````e``````. For ``````e``````xampl``````e``````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[Busin``````e``````ssAddr``````e``````ss <IMicrosoftGraphPhysicalAddr``````e``````ss>]`: physicalAddr``````e``````ss
+    - `[(Any) <Obj``````e``````ct>]`: This indicat``````e``````s any prop``````e``````rty can b``````e`````` add``````e``````d to this obj``````e``````ct.
+    - `[City <String>]`: Th``````e`````` city.
+    - `[CountryOrR``````e``````gion <String>]`: Th``````e`````` country or r``````e``````gion. It's a fr``````e````````````e``````-format string valu``````e``````, for ``````e``````xampl``````e``````, 'Unit``````e``````d Stat``````e``````s'.
+    - `[PostalCod``````e`````` <String>]`: Th``````e`````` postal cod``````e``````.
+    - `[Stat``````e`````` <String>]`: Th``````e`````` stat``````e``````.
+    - `[Str``````e````````````e``````t <String>]`: Th``````e`````` str``````e````````````e``````t.
+  - `[Busin``````e``````ssHom``````e``````Pag``````e`````` <String>]`: Th``````e`````` busin``````e``````ss hom``````e`````` pag``````e`````` of th``````e`````` contact.
+  - `[Busin``````e``````ssPhon``````e``````s <String[]>]`: Th``````e`````` contact's busin``````e``````ss phon``````e`````` numb``````e``````rs.
+  - `[Childr``````e``````n <String[]>]`: Th``````e`````` nam``````e``````s of th``````e`````` contact's childr``````e``````n.
+  - `[CompanyNam``````e`````` <String>]`: Th``````e`````` nam``````e`````` of th``````e`````` contact's company.
+  - `[D``````e``````partm``````e``````nt <String>]`: Th``````e`````` contact's d``````e``````partm``````e``````nt.
+  - `[DisplayNam``````e`````` <String>]`: Th``````e`````` contact's display nam``````e``````. You can sp``````e``````cify th``````e`````` display nam``````e`````` in a cr``````e``````at``````e`````` or updat``````e`````` op``````e``````ration. Not``````e`````` that lat``````e``````r updat``````e``````s to oth``````e``````r prop``````e``````rti``````e``````s may caus``````e`````` an automatically g``````e``````n``````e``````rat``````e``````d valu``````e`````` to ov``````e``````rwrit``````e`````` th``````e`````` displayNam``````e`````` valu``````e`````` you hav``````e`````` sp``````e``````cifi``````e``````d. To pr``````e``````s``````e``````rv``````e`````` a pr``````e``````-``````e``````xisting valu``````e``````, always includ``````e`````` it as displayNam``````e`````` in an updat``````e`````` op``````e``````ration.
+  - `[``````e``````mailAddr``````e``````ss``````e``````s <IMicrosoftGraph``````e``````mailAddr``````e``````ss[]>]`: Th``````e`````` contact's ``````e``````mail addr``````e``````ss``````e``````s.
+    - `[Addr``````e``````ss <String>]`: Th``````e`````` ``````e``````mail addr``````e``````ss of th``````e`````` p``````e``````rson or ``````e``````ntity.
+    - `[Nam``````e`````` <String>]`: Th``````e`````` display nam``````e`````` of th``````e`````` p``````e``````rson or ``````e``````ntity.
+  - `[``````e``````xt``````e``````nsions <IMicrosoftGraph``````e``````xt``````e``````nsion[]>]`: Th``````e`````` coll``````e``````ction of op``````e``````n ``````e``````xt``````e``````nsions d``````e``````fin``````e``````d for th``````e`````` contact. R``````e``````ad-only. Nullabl``````e``````.
+    - `[Id <String>]`: R``````e``````ad-only.
+  - `[Fil``````e``````As <String>]`: Th``````e`````` nam``````e`````` th``````e`````` contact is fil``````e``````d und``````e``````r.
+  - `[G``````e``````n``````e``````ration <String>]`: Th``````e`````` contact's g``````e``````n``````e``````ration.
+  - `[Giv``````e``````nNam``````e`````` <String>]`: Th``````e`````` contact's giv``````e``````n nam``````e``````.
+  - `[Hom``````e``````Addr``````e``````ss <IMicrosoftGraphPhysicalAddr``````e``````ss>]`: physicalAddr``````e``````ss
+  - `[Hom``````e``````Phon``````e``````s <String[]>]`: Th``````e`````` contact's hom``````e`````` phon``````e`````` numb``````e``````rs.
+  - `[ImAddr``````e``````ss``````e``````s <String[]>]`: 
   - `[Initials <String>]`: 
-  - `[JobTitle <String>]`: 
-  - `[Manager <String>]`: 
-  - `[MiddleName <String>]`: 
-  - `[MobilePhone <String>]`: 
-  - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
-    - `[Id <String>]`: Read-only.
-    - `[Value <String[]>]`: A collection of property values.
-  - `[NickName <String>]`: 
-  - `[OfficeLocation <String>]`: 
-  - `[OtherAddress <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-  - `[ParentFolderId <String>]`: 
-  - `[PersonalNotes <String>]`: 
-  - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: Read-only.
-    - `[Height <Int32?>]`: The height of the photo. Read-only.
-    - `[Width <Int32?>]`: The width of the photo. Read-only.
-  - `[Profession <String>]`: 
-  - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the contact. Read-only. Nullable.
-    - `[Id <String>]`: Read-only.
-    - `[Value <String>]`: A property value.
-  - `[SpouseName <String>]`: 
-  - `[Surname <String>]`: 
-  - `[Title <String>]`: 
-  - `[YomiCompanyName <String>]`: 
-  - `[YomiGivenName <String>]`: 
-  - `[YomiSurname <String>]`: 
+  - `[JobTitl``````e`````` <String>]`: 
+  - `[Manag``````e``````r <String>]`: 
+  - `[Middl``````e``````Nam``````e`````` <String>]`: 
+  - `[Mobil``````e``````Phon``````e`````` <String>]`: 
+  - `[MultiValu``````e````````````e``````xt``````e``````nd``````e``````dProp``````e``````rti``````e``````s <IMicrosoftGraphMultiValu``````e``````L``````e``````gacy``````e``````xt``````e``````nd``````e``````dProp``````e``````rty[]>]`: Th``````e`````` coll``````e``````ction of multi-valu``````e`````` ``````e``````xt``````e``````nd``````e``````d prop``````e``````rti``````e``````s d``````e``````fin``````e``````d for th``````e`````` contact. R``````e``````ad-only. Nullabl``````e``````.
+    - `[Id <String>]`: R``````e``````ad-only.
+    - `[Valu``````e`````` <String[]>]`: A coll``````e``````ction of prop``````e``````rty valu``````e``````s.
+  - `[NickNam``````e`````` <String>]`: 
+  - `[Offic``````e``````Location <String>]`: 
+  - `[Oth``````e``````rAddr``````e``````ss <IMicrosoftGraphPhysicalAddr``````e``````ss>]`: physicalAddr``````e``````ss
+  - `[Par``````e``````ntFold``````e``````rId <String>]`: 
+  - `[P``````e``````rsonalNot``````e``````s <String>]`: 
+  - `[Photo <IMicrosoftGraphProfil``````e``````Photo>]`: profil``````e``````Photo
+    - `[(Any) <Obj``````e``````ct>]`: This indicat``````e``````s any prop``````e``````rty can b``````e`````` add``````e``````d to this obj``````e``````ct.
+    - `[Id <String>]`: R``````e``````ad-only.
+    - `[H``````e``````ight <Int32?>]`: Th``````e`````` h``````e``````ight of th``````e`````` photo. R``````e``````ad-only.
+    - `[Width <Int32?>]`: Th``````e`````` width of th``````e`````` photo. R``````e``````ad-only.
+  - `[Prof``````e``````ssion <String>]`: 
+  - `[Singl``````e``````Valu``````e````````````e``````xt``````e``````nd``````e``````dProp``````e``````rti``````e``````s <IMicrosoftGraphSingl``````e``````Valu``````e``````L``````e``````gacy``````e``````xt``````e``````nd``````e``````dProp``````e``````rty[]>]`: Th``````e`````` coll``````e``````ction of singl``````e``````-valu``````e`````` ``````e``````xt``````e``````nd``````e``````d prop``````e``````rti``````e``````s d``````e``````fin``````e``````d for th``````e`````` contact. R``````e``````ad-only. Nullabl``````e``````.
+    - `[Id <String>]`: R``````e``````ad-only.
+    - `[Valu``````e`````` <String>]`: A prop``````e``````rty valu``````e``````.
+  - `[Spous``````e``````Nam``````e`````` <String>]`: 
+  - `[Surnam``````e`````` <String>]`: 
+  - `[Titl``````e`````` <String>]`: 
+  - `[YomiCompanyNam``````e`````` <String>]`: 
+  - `[YomiGiv``````e``````nNam``````e`````` <String>]`: 
+  - `[YomiSurnam``````e`````` <String>]`: 
 
-INPUTOBJECT <IPersonalContactsIdentity>: Identity Parameter
-  - `[ContactFolderId <String>]`: key: id of contactFolder
-  - `[ContactFolderId1 <String>]`: key: id of contactFolder
-  - `[ContactId <String>]`: key: id of contact
-  - `[ExtensionId <String>]`: key: id of extension
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
-  - `[UserId <String>]`: key: id of user
+INPUTOBJ``````e``````CT <IP``````e``````rsonalContactsId``````e``````ntity>: Id``````e``````ntity Param``````e``````t``````e``````r
+  - `[ContactFold``````e``````rId <String>]`: k``````e``````y: id of contactFold``````e``````r
+  - `[ContactFold``````e``````rId1 <String>]`: k``````e``````y: id of contactFold``````e``````r
+  - `[ContactId <String>]`: k``````e``````y: id of contact
+  - `[``````e``````xt``````e``````nsionId <String>]`: k``````e``````y: id of ``````e``````xt``````e``````nsion
+  - `[MultiValu``````e``````L``````e``````gacy``````e``````xt``````e``````nd``````e``````dProp``````e``````rtyId <String>]`: k``````e``````y: id of multiValu``````e``````L``````e``````gacy``````e``````xt``````e``````nd``````e``````dProp``````e``````rty
+  - `[Singl``````e``````Valu``````e``````L``````e``````gacy``````e``````xt``````e``````nd``````e``````dProp``````e``````rtyId <String>]`: k``````e``````y: id of singl``````e``````Valu``````e``````L``````e``````gacy``````e``````xt``````e``````nd``````e``````dProp``````e``````rty
+  - `[Us``````e``````rId <String>]`: k``````e``````y: id of us``````e``````r
 
-MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>: The collection of multi-value extended properties defined for the contactFolder. Read-only. Nullable.
-  - `[Id <String>]`: Read-only.
-  - `[Value <String[]>]`: A collection of property values.
+MULTIVALU``````e````````````e``````XT``````e``````ND``````e``````DPROP``````e``````RTI``````e``````S <IMicrosoftGraphMultiValu``````e``````L``````e``````gacy``````e``````xt``````e``````nd``````e``````dProp``````e``````rty[]>: Th``````e`````` coll``````e``````ction of multi-valu``````e`````` ``````e``````xt``````e``````nd``````e``````d prop``````e``````rti``````e``````s d``````e``````fin``````e``````d for th``````e`````` contactFold``````e``````r. R``````e``````ad-only. Nullabl``````e``````.
+  - `[Id <String>]`: R``````e``````ad-only.
+  - `[Valu``````e`````` <String[]>]`: A coll``````e``````ction of prop``````e``````rty valu``````e``````s.
 
-SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>: The collection of single-value extended properties defined for the contactFolder. Read-only. Nullable.
-  - `[Id <String>]`: Read-only.
-  - `[Value <String>]`: A property value.
+SINGL``````e``````VALU``````e````````````e``````XT``````e``````ND``````e``````DPROP``````e``````RTI``````e``````S <IMicrosoftGraphSingl``````e``````Valu``````e``````L``````e``````gacy``````e``````xt``````e``````nd``````e``````dProp``````e``````rty[]>: Th``````e`````` coll``````e``````ction of singl``````e``````-valu``````e`````` ``````e``````xt``````e``````nd``````e``````d prop``````e``````rti``````e``````s d``````e``````fin``````e``````d for th``````e`````` contactFold``````e``````r. R``````e``````ad-only. Nullabl``````e``````.
+  - `[Id <String>]`: R``````e``````ad-only.
+  - `[Valu``````e`````` <String>]`: A prop``````e``````rty valu``````e``````.
 
-## RELATED LINKS
+## R``````e``````LAT``````e``````D LINKS
 
-## RELATED LINKS
+## R``````e``````LAT``````e``````D LINKS
