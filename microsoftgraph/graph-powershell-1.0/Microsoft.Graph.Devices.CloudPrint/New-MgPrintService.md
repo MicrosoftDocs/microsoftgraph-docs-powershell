@@ -1,159 +1,159 @@
-﻿---
-external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
-Module Name: Microsoft.Graph.Devices.CloudPrint
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintservice
-schema: 2.0.0
+---
+``e``xt``e``rnal h``e``lp fil``e``: Microsoft.Graph.D``e``vic``e``s.CloudPrint-h``e``lp.xml
+Modul``e`` Nam``e``: Microsoft.Graph.D``e``vic``e``s.CloudPrint
+onlin``e`` v``e``rsion: https://docs.microsoft.com/``e``n-us/pow``e``rsh``e``ll/modul``e``/microsoft.graph.d``e``vic``e``s.cloudprint/n``e``w-mgprints``e``rvic``e``
+sch``e``ma: 2.0.0
 ---
 
-# New-MgPrintService
+# N``e``w-MgPrintS``e``rvic``e``
 
 ## SYNOPSIS
-Create new navigation property to services for print
+Cr``e``at``e`` n``e``w navigation prop``e``rty to s``e``rvic``e``s for print
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### Cr``e``at``e````e``xpand``e``d (D``e``fault)
 ```
-New-MgPrintService [-AdditionalProperties <Hashtable>] [-Endpoints <IMicrosoftGraphPrintServiceEndpoint[]>]
- [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create
-```
-New-MgPrintService -BodyParameter <IMicrosoftGraphPrintService> [-WhatIf] [-Confirm] [<CommonParameters>]
+N``e``w-MgPrintS``e``rvic``e`` [-AdditionalProp``e``rti``e``s <Hashtabl``e``>] [-``e``ndpoints <IMicrosoftGraphPrintS``e``rvic``e````e``ndpoint[]>]
+ [-Id <String>] [-WhatIf] [-Confirm] [<CommonParam``e``t``e``rs>]
 ```
 
-## DESCRIPTION
-Create new navigation property to services for print
+### Cr``e``at``e``
+```
+N``e``w-MgPrintS``e``rvic``e`` -BodyParam``e``t``e``r <IMicrosoftGraphPrintS``e``rvic``e``> [-WhatIf] [-Confirm] [<CommonParam``e``t``e``rs>]
+```
 
-## EXAMPLES
+## D``e``SCRIPTION
+Cr``e``at``e`` n``e``w navigation prop``e``rty to s``e``rvic``e``s for print
 
-## PARAMETERS
+## ``e``XAMPL``e``S
 
-### -AdditionalProperties
-Additional Parameters
+## PARAM``e``T``e``RS
+
+### -AdditionalProp``e``rti``e``s
+Additional Param``e``t``e``rs
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded
-Aliases:
+Typ``e``: Hashtabl``e``
+Param``e``t``e``r S``e``ts: Cr``e``at``e````e``xpand``e``d
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -BodyParameter
-printService
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -BodyParam``e``t``e``r
+printS``e``rvic``e``
+To construct, pl``e``as``e`` us``e`` G``e``t-H``e``lp -Onlin``e`` and s``e````e`` NOT``e``S s``e``ction for BODYPARAM``e``T``e``R prop``e``rti``e``s and cr``e``at``e`` a hash tabl``e``.
 
 ```yaml
-Type: IMicrosoftGraphPrintService
-Parameter Sets: Create
-Aliases:
+Typ``e``: IMicrosoftGraphPrintS``e``rvic``e``
+Param``e``t``e``r S``e``ts: Cr``e``at``e``
+Alias``e``s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R``e``quir``e``d: Tru``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Tru``e`` (ByValu``e``)
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -Endpoints
-Endpoints that can be used to access the service.
-Read-only.
-Nullable.
-To construct, please use Get-Help -Online and see NOTES section for ENDPOINTS properties and create a hash table.
+### -``e``ndpoints
+``e``ndpoints that can b``e`` us``e``d to acc``e``ss th``e`` s``e``rvic``e``.
+R``e``ad-only.
+Nullabl``e``.
+To construct, pl``e``as``e`` us``e`` G``e``t-H``e``lp -Onlin``e`` and s``e````e`` NOT``e``S s``e``ction for ``e``NDPOINTS prop``e``rti``e``s and cr``e``at``e`` a hash tabl``e``.
 
 ```yaml
-Type: IMicrosoftGraphPrintServiceEndpoint[]
-Parameter Sets: CreateExpanded
-Aliases:
+Typ``e``: IMicrosoftGraphPrintS``e``rvic``e````e``ndpoint[]
+Param``e``t``e``r S``e``ts: Cr``e``at``e````e``xpand``e``d
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
 ### -Id
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded
-Aliases:
+Typ``e``: String
+Param``e``t``e``r S``e``ts: Cr``e``at``e````e``xpand``e``d
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation b``e``for``e`` running th``e`` cmdl``e``t.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Typ``e``: SwitchParam``e``t``e``r
+Param``e``t``e``r S``e``ts: (All)
+Alias``e``s: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happ``e``n if th``e`` cmdl``e``t runs.
+Th``e`` cmdl``e``t is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Typ``e``: SwitchParam``e``t``e``r
+Param``e``t``e``r S``e``ts: (All)
+Alias``e``s: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam``e``t``e``rs
+This cmdl``e``t supports th``e`` common param``e``t``e``rs: -D``e``bug, -``e``rrorAction, -``e``rrorVariabl``e``, -InformationAction, -InformationVariabl``e``, -OutVariabl``e``, -OutBuff``e``r, -Pip``e``lin``e``Variabl``e``, -V``e``rbos``e``, -WarningAction, and -WarningVariabl``e``. For mor``e`` information, s``e````e`` [about_CommonParam``e``t``e``rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintService
+### Microsoft.Graph.Pow``e``rSh``e``ll.Mod``e``ls.IMicrosoftGraphPrintS``e``rvic``e``
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintService
-## NOTES
+### Microsoft.Graph.Pow``e``rSh``e``ll.Mod``e``ls.IMicrosoftGraphPrintS``e``rvic``e``
+## NOT``e``S
 
-ALIASES
+ALIAS``e``S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL``e``X PARAM``e``T``e``R PROP``e``RTI``e``S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr``e``at``e`` th``e`` param``e``t``e``rs d``e``scrib``e``d b``e``low, construct a hash tabl``e`` containing th``e`` appropriat``e`` prop``e``rti``e``s. For information on hash tabl``e``s, run G``e``t-H``e``lp about_Hash_Tabl``e``s.
 
 
-BODYPARAMETER <IMicrosoftGraphPrintService>: printService
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+BODYPARAM``e``T``e``R <IMicrosoftGraphPrintS``e``rvic``e``>: printS``e``rvic``e``
+  - `[(Any) <Obj``e``ct>]`: This indicat``e``s any prop``e``rty can b``e`` add``e``d to this obj``e``ct.
   - `[Id <String>]`: 
-  - `[Endpoints <IMicrosoftGraphPrintServiceEndpoint[]>]`: Endpoints that can be used to access the service. Read-only. Nullable.
+  - `[``e``ndpoints <IMicrosoftGraphPrintS``e``rvic``e````e``ndpoint[]>]`: ``e``ndpoints that can b``e`` us``e``d to acc``e``ss th``e`` s``e``rvic``e``. R``e``ad-only. Nullabl``e``.
     - `[Id <String>]`: 
-    - `[DisplayName <String>]`: A human-readable display name for the endpoint.
-    - `[Uri <String>]`: The URI that can be used to access the service.
+    - `[DisplayNam``e`` <String>]`: A human-r``e``adabl``e`` display nam``e`` for th``e`` ``e``ndpoint.
+    - `[Uri <String>]`: Th``e`` URI that can b``e`` us``e``d to acc``e``ss th``e`` s``e``rvic``e``.
 
-ENDPOINTS <IMicrosoftGraphPrintServiceEndpoint[]>: Endpoints that can be used to access the service. Read-only. Nullable.
+``e``NDPOINTS <IMicrosoftGraphPrintS``e``rvic``e````e``ndpoint[]>: ``e``ndpoints that can b``e`` us``e``d to acc``e``ss th``e`` s``e``rvic``e``. R``e``ad-only. Nullabl``e``.
   - `[Id <String>]`: 
-  - `[DisplayName <String>]`: A human-readable display name for the endpoint.
-  - `[Uri <String>]`: The URI that can be used to access the service.
+  - `[DisplayNam``e`` <String>]`: A human-r``e``adabl``e`` display nam``e`` for th``e`` ``e``ndpoint.
+  - `[Uri <String>]`: Th``e`` URI that can b``e`` us``e``d to acc``e``ss th``e`` s``e``rvic``e``.
 
-## RELATED LINKS
+## R``e``LAT``e``D LINKS
