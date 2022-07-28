@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
 title: Microsoft Graph PowerShell documentation # < 60 chars
-summary: Microsoft Graph PowerShell is a service that provides access to all Microsoft Graph APIs through PowerShell. # < 160 chars
+summary: The Microsoft Graph PowerShell SDK acts as an API wrapper for the Microsoft Graph APIs, exposing the entire API set for use in PowerShell. Learn how to use Microsoft Graph PowerShell to manage identities at scale and automate bulk administrative tasks. # < 160 chars
 
 metadata:
   title: Microsoft Graph PowerShell documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: The Microsoft Graph PowerShell SDK acts as an API wrapper for the Microsoft Graph APIs, exposing the entire API set for use in PowerShell. Learn how to use Microsoft Graph PowerShell to manage identities at scale and automate bulk administrative tasks.   # Required; article description that is displayed in search results. < 160 chars.
+  description: Learn how to use Microsoft Graph PowerShell to manage identities at scale and automate bulk administrative tasks.   # Required; article description that is displayed in search results. < 160 chars.
   ms.topic: landing-page # Required
   author: msewaweru #Required; your GitHub user alias, with correct capitalization.
   ms.author: eunicewaweru #Required; microsoft alias of author; optional team alias.
