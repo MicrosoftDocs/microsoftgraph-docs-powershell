@@ -1,38 +1,38 @@
-﻿---
-external help file: Microsoft.Graph.Education-help.xml
-Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationuserclass
+---
+external help file: Microsoft.Graph.E`d`ucation-help.xml
+Mo`d`ule Name: Microsoft.Graph.E`d`ucation
+online version: https://`d`ocs.microsoft.com/en-us/powershell/mo`d`ule/microsoft.graph.e`d`ucation/get-mge`d`ucationuserclass
 schema: 2.0.0
 ---
 
-# Get-MgEducationUserClass
+# Get-MgE`d`ucationUserClass
 
 ## SYNOPSIS
-Get classes from education
+Get classes from e`d`ucation
 
 ## SYNTAX
 
-### List1 (Default)
+### List1 (`d`efault)
 ```
-Get-MgEducationUserClass -EducationUserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgE`d`ucationUserClass -E`d`ucationUserI`d` <String> [-Expan`d`Property <String[]>] [-Property <String[]>]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
  [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get1
 ```
-Get-MgEducationUserClass -EducationClassId <String> -EducationUserId <String> [-ExpandProperty <String[]>]
+Get-MgE`d`ucationUserClass -E`d`ucationClassI`d` <String> -E`d`ucationUserI`d` <String> [-Expan`d`Property <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaI`d`entity1
 ```
-Get-MgEducationUserClass -InputObject <IEducationIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgE`d`ucationUserClass -InputObject <IE`d`ucationI`d`entity> [-Expan`d`Property <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
-## DESCRIPTION
-Get classes from education
+## `d`ESCRIPTION
+Get classes from e`d`ucation
 
 ## EXAMPLES
 
@@ -46,72 +46,72 @@ Type: SwitchParameter
 Parameter Sets: List1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
 ### -CountVariable
 Specifies a count of the total number of items in a collection.
-By default, this variable will be set in the global scope.
+By `d`efault, this variable will be set in the global scope.
 
 ```yaml
 Type: String
 Parameter Sets: List1
 Aliases: CV
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
-### -EducationClassId
-key: id of educationClass
+### -E`d`ucationClassI`d`
+key: i`d` of e`d`ucationClass
 
 ```yaml
 Type: String
 Parameter Sets: Get1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require`d`: True
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
-### -EducationUserId
-key: id of educationUser
+### -E`d`ucationUserI`d`
+key: i`d` of e`d`ucationUser
 
 ```yaml
 Type: String
 Parameter Sets: List1, Get1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require`d`: True
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
-### -ExpandProperty
-Expand related entities
+### -Expan`d`Property
+Expan`d` relate`d` entities
 
 ```yaml
 Type: String[]
 Parameter Sets: (All)
-Aliases: Expand
+Aliases: Expan`d`
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
 ### -Filter
@@ -122,27 +122,27 @@ Type: String
 Parameter Sets: List1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
 ### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+I`d`entity Parameter
+To construct, please use Get-Help -Online an`d` see NOTES section for INPUTOBJECT properties an`d` create a hash table.
 
 ```yaml
-Type: IEducationIdentity
-Parameter Sets: GetViaIdentity1
+Type: IE`d`ucationI`d`entity
+Parameter Sets: GetViaI`d`entity1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require`d`: True
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
 ### -PageSize
@@ -153,26 +153,26 @@ Type: Int32
 Parameter Sets: List1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
 ### -Property
-Select properties to be returned
+Select properties to be returne`d`
 
 ```yaml
 Type: String[]
 Parameter Sets: (All)
 Aliases: Select
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
 ### -Search
@@ -183,26 +183,26 @@ Type: String
 Parameter Sets: List1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
 ### -Sort
-Order items by property values
+Or`d`er items by property values
 
 ```yaml
 Type: String[]
 Parameter Sets: List1
-Aliases: OrderBy
+Aliases: Or`d`erBy
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
 ### -Top
@@ -213,11 +213,11 @@ Type: Int32
 Parameter Sets: List1
 Aliases: Limit
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
 ### -Skip
@@ -228,43 +228,43 @@ Type: Int32
 Parameter Sets: List1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require`d`: False
+Position: Name`d`
+`d`efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil`d`car`d` characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cm`d`let supports the common parameters: -`d`ebug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, an`d` -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkI`d`=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IEducationIdentity
+### Microsoft.Graph.PowerShell.Mo`d`els.IE`d`ucationI`d`entity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationClass1
+### Microsoft.Graph.PowerShell.Mo`d`els.IMicrosoftGraphE`d`ucationClass1
 ## NOTES
 
 ALIASES
 
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters `d`escribe`d` below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <IEducationIdentity>: Identity Parameter
-  - `[EducationAssignmentId <String>]`: key: id of educationAssignment
-  - `[EducationAssignmentResourceId <String>]`: key: id of educationAssignmentResource
-  - `[EducationCategoryId <String>]`: key: id of educationCategory
-  - `[EducationClassId <String>]`: key: id of educationClass
-  - `[EducationOutcomeId <String>]`: key: id of educationOutcome
-  - `[EducationRubricId <String>]`: key: id of educationRubric
-  - `[EducationSchoolId <String>]`: key: id of educationSchool
-  - `[EducationSubmissionId <String>]`: key: id of educationSubmission
-  - `[EducationSubmissionResourceId <String>]`: key: id of educationSubmissionResource
-  - `[EducationSynchronizationErrorId <String>]`: key: id of educationSynchronizationError
-  - `[EducationSynchronizationProfileId <String>]`: key: id of educationSynchronizationProfile
-  - `[EducationUserId <String>]`: key: id of educationUser
+INPUTOBJECT <IE`d`ucationI`d`entity>: I`d`entity Parameter
+  - `[E`d`ucationAssignmentI`d` <String>]`: key: i`d` of e`d`ucationAssignment
+  - `[E`d`ucationAssignmentResourceI`d` <String>]`: key: i`d` of e`d`ucationAssignmentResource
+  - `[E`d`ucationCategoryI`d` <String>]`: key: i`d` of e`d`ucationCategory
+  - `[E`d`ucationClassI`d` <String>]`: key: i`d` of e`d`ucationClass
+  - `[E`d`ucationOutcomeI`d` <String>]`: key: i`d` of e`d`ucationOutcome
+  - `[E`d`ucationRubricI`d` <String>]`: key: i`d` of e`d`ucationRubric
+  - `[E`d`ucationSchoolI`d` <String>]`: key: i`d` of e`d`ucationSchool
+  - `[E`d`ucationSubmissionI`d` <String>]`: key: i`d` of e`d`ucationSubmission
+  - `[E`d`ucationSubmissionResourceI`d` <String>]`: key: i`d` of e`d`ucationSubmissionResource
+  - `[E`d`ucationSynchronizationErrorI`d` <String>]`: key: i`d` of e`d`ucationSynchronizationError
+  - `[E`d`ucationSynchronizationProfileI`d` <String>]`: key: i`d` of e`d`ucationSynchronizationProfile
+  - `[E`d`ucationUserI`d` <String>]`: key: i`d` of e`d`ucationUser
 
-## RELATED LINKS
+## RELATE`d` LINKS
