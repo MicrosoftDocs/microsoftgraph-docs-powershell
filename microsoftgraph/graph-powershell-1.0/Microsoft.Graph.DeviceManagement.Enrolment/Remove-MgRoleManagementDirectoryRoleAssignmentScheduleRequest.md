@@ -1,181 +1,181 @@
-﻿---
-external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Enrolment
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/remove-mgrolemanagementdirectoryroleassignmentschedulerequest
-schema: 2.0.0
+---
+`e`xt`e`rnal h`e`lp fil`e`: Microsoft.Graph.D`e`vic`e`Manag`e`m`e`nt.`e`nrolm`e`nt-h`e`lp.xml
+Modul`e` Nam`e`: Microsoft.Graph.D`e`vic`e`Manag`e`m`e`nt.`e`nrolm`e`nt
+onlin`e` v`e`rsion: https://docs.microsoft.com/`e`n-us/pow`e`rsh`e`ll/modul`e`/microsoft.graph.d`e`vic`e`manag`e`m`e`nt.`e`nrolm`e`nt/r`e`mov`e`-mgrol`e`manag`e`m`e`ntdir`e`ctoryrol`e`assignm`e`ntsch`e`dul`e`r`e`qu`e`st
+sch`e`ma: 2.0.0
 ---
 
-# Remove-MgRoleManagementDirectoryRoleAssignmentScheduleRequest
+# R`e`mov`e`-MgRol`e`Manag`e`m`e`ntDir`e`ctoryRol`e`Assignm`e`ntSch`e`dul`e`R`e`qu`e`st
 
 ## SYNOPSIS
-Delete navigation property roleAssignmentScheduleRequests for roleManagement
+D`e`l`e`t`e` navigation prop`e`rty rol`e`Assignm`e`ntSch`e`dul`e`R`e`qu`e`sts for rol`e`Manag`e`m`e`nt
 
 ## SYNTAX
 
-### Delete1 (Default)
+### D`e`l`e`t`e`1 (D`e`fault)
 ```
-Remove-MgRoleManagementDirectoryRoleAssignmentScheduleRequest -UnifiedRoleAssignmentScheduleRequestId <String>
- [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### DeleteViaIdentity1
-```
-Remove-MgRoleManagementDirectoryRoleAssignmentScheduleRequest -InputObject <IDeviceManagementEnrolmentIdentity>
- [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+R`e`mov`e`-MgRol`e`Manag`e`m`e`ntDir`e`ctoryRol`e`Assignm`e`ntSch`e`dul`e`R`e`qu`e`st -Unifi`e`dRol`e`Assignm`e`ntSch`e`dul`e`R`e`qu`e`stId <String>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParam`e`t`e`rs>]
 ```
 
-## DESCRIPTION
-Delete navigation property roleAssignmentScheduleRequests for roleManagement
+### D`e`l`e`t`e`ViaId`e`ntity1
+```
+R`e`mov`e`-MgRol`e`Manag`e`m`e`ntDir`e`ctoryRol`e`Assignm`e`ntSch`e`dul`e`R`e`qu`e`st -InputObj`e`ct <ID`e`vic`e`Manag`e`m`e`nt`e`nrolm`e`ntId`e`ntity>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParam`e`t`e`rs>]
+```
 
-## EXAMPLES
+## D`e`SCRIPTION
+D`e`l`e`t`e` navigation prop`e`rty rol`e`Assignm`e`ntSch`e`dul`e`R`e`qu`e`sts for rol`e`Manag`e`m`e`nt
 
-## PARAMETERS
+## `e`XAMPL`e`S
+
+## PARAM`e`T`e`RS
 
 ### -IfMatch
-ETag
+`e`Tag
 
 ```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -InputObj`e`ct
+Id`e`ntity Param`e`t`e`r
+To construct, pl`e`as`e` us`e` G`e`t-H`e`lp -Onlin`e` and s`e``e` NOT`e`S s`e`ction for INPUTOBJ`e`CT prop`e`rti`e`s and cr`e`at`e` a hash tabl`e`.
 
 ```yaml
-Type: IDeviceManagementEnrolmentIdentity
-Parameter Sets: DeleteViaIdentity1
-Aliases:
+Typ`e`: ID`e`vic`e`Manag`e`m`e`nt`e`nrolm`e`ntId`e`ntity
+Param`e`t`e`r S`e`ts: D`e`l`e`t`e`ViaId`e`ntity1
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Tru`e` (ByValu`e`)
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -PassThru
-Returns true when the command succeeds
+R`e`turns tru`e` wh`e`n th`e` command succ`e``e`ds
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
+Typ`e`: SwitchParam`e`t`e`r
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -UnifiedRoleAssignmentScheduleRequestId
-key: id of unifiedRoleAssignmentScheduleRequest
+### -Unifi`e`dRol`e`Assignm`e`ntSch`e`dul`e`R`e`qu`e`stId
+k`e`y: id of unifi`e`dRol`e`Assignm`e`ntSch`e`dul`e`R`e`qu`e`st
 
 ```yaml
-Type: String
-Parameter Sets: Delete1
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: D`e`l`e`t`e`1
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation b`e`for`e` running th`e` cmdl`e`t.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Typ`e`: SwitchParam`e`t`e`r
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happ`e`n if th`e` cmdl`e`t runs.
+Th`e` cmdl`e`t is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Typ`e`: SwitchParam`e`t`e`r
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam`e`t`e`rs
+This cmdl`e`t supports th`e` common param`e`t`e`rs: -D`e`bug, -`e`rrorAction, -`e`rrorVariabl`e`, -InformationAction, -InformationVariabl`e`, -OutVariabl`e`, -OutBuff`e`r, -Pip`e`lin`e`Variabl`e`, -V`e`rbos`e`, -WarningAction, and -WarningVariabl`e`. For mor`e` information, s`e``e` [about_CommonParam`e`t`e`rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementEnrolmentIdentity
+### Microsoft.Graph.Pow`e`rSh`e`ll.Mod`e`ls.ID`e`vic`e`Manag`e`m`e`nt`e`nrolm`e`ntId`e`ntity
 ## OUTPUTS
 
-### System.Boolean
-## NOTES
+### Syst`e`m.Bool`e`an
+## NOT`e`S
 
-ALIASES
+ALIAS`e`S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL`e`X PARAM`e`T`e`R PROP`e`RTI`e`S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr`e`at`e` th`e` param`e`t`e`rs d`e`scrib`e`d b`e`low, construct a hash tabl`e` containing th`e` appropriat`e` prop`e`rti`e`s. For information on hash tabl`e`s, run G`e`t-H`e`lp about_Hash_Tabl`e`s.
 
 
-INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
-  - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
-  - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
-  - `[AppScopeId <String>]`: key: id of appScope
-  - `[AppleEnrollmentProfileAssignmentId <String>]`: key: id of appleEnrollmentProfileAssignment
-  - `[AppleUserInitiatedEnrollmentProfileId <String>]`: key: id of appleUserInitiatedEnrollmentProfile
-  - `[ApprovalId <String>]`: key: id of approval
-  - `[ApprovalStepId <String>]`: key: id of approvalStep
-  - `[DepOnboardingSettingId <String>]`: key: id of depOnboardingSetting
-  - `[DeviceEnrollmentConfigurationId <String>]`: key: id of deviceEnrollmentConfiguration
-  - `[DeviceManagementAutopilotEventId <String>]`: key: id of deviceManagementAutopilotEvent
-  - `[DeviceManagementAutopilotPolicyStatusDetailId <String>]`: key: id of deviceManagementAutopilotPolicyStatusDetail
-  - `[DirectoryObjectId <String>]`: key: id of directoryObject
-  - `[EnrollmentConfigurationAssignmentId <String>]`: key: id of enrollmentConfigurationAssignment
-  - `[EnrollmentProfileId <String>]`: key: id of enrollmentProfile
-  - `[ImportedAppleDeviceIdentityId <String>]`: key: id of importedAppleDeviceIdentity
-  - `[ImportedDeviceIdentityId <String>]`: key: id of importedDeviceIdentity
-  - `[ImportedWindowsAutopilotDeviceIdentityId <String>]`: key: id of importedWindowsAutopilotDeviceIdentity
-  - `[On <String>]`: Usage: on='{on}'
-  - `[UnifiedRbacResourceActionId <String>]`: key: id of unifiedRbacResourceAction
-  - `[UnifiedRbacResourceNamespaceId <String>]`: key: id of unifiedRbacResourceNamespace
-  - `[UnifiedRoleAssignmentId <String>]`: key: id of unifiedRoleAssignment
-  - `[UnifiedRoleAssignmentMultipleId <String>]`: key: id of unifiedRoleAssignmentMultiple
-  - `[UnifiedRoleAssignmentScheduleId <String>]`: key: id of unifiedRoleAssignmentSchedule
-  - `[UnifiedRoleAssignmentScheduleInstanceId <String>]`: key: id of unifiedRoleAssignmentScheduleInstance
-  - `[UnifiedRoleAssignmentScheduleRequestId <String>]`: key: id of unifiedRoleAssignmentScheduleRequest
-  - `[UnifiedRoleDefinitionId <String>]`: key: id of unifiedRoleDefinition
-  - `[UnifiedRoleDefinitionId1 <String>]`: key: id of unifiedRoleDefinition
-  - `[UnifiedRoleEligibilityScheduleId <String>]`: key: id of unifiedRoleEligibilitySchedule
-  - `[UnifiedRoleEligibilityScheduleInstanceId <String>]`: key: id of unifiedRoleEligibilityScheduleInstance
-  - `[UnifiedRoleEligibilityScheduleRequestId <String>]`: key: id of unifiedRoleEligibilityScheduleRequest
-  - `[WindowsAutopilotDeploymentProfileAssignmentId <String>]`: key: id of windowsAutopilotDeploymentProfileAssignment
-  - `[WindowsAutopilotDeploymentProfileId <String>]`: key: id of windowsAutopilotDeploymentProfile
-  - `[WindowsAutopilotDeviceIdentityId <String>]`: key: id of windowsAutopilotDeviceIdentity
-  - `[WindowsFeatureUpdateProfileAssignmentId <String>]`: key: id of windowsFeatureUpdateProfileAssignment
-  - `[WindowsFeatureUpdateProfileId <String>]`: key: id of windowsFeatureUpdateProfile
+INPUTOBJ`e`CT <ID`e`vic`e`Manag`e`m`e`nt`e`nrolm`e`ntId`e`ntity>: Id`e`ntity Param`e`t`e`r
+  - `[AndroidD`e`vic`e`Own`e`r`e`nrollm`e`ntProfil`e`Id <String>]`: k`e`y: id of androidD`e`vic`e`Own`e`r`e`nrollm`e`ntProfil`e`
+  - `[AndroidForWork`e`nrollm`e`ntProfil`e`Id <String>]`: k`e`y: id of androidForWork`e`nrollm`e`ntProfil`e`
+  - `[AppScop`e`Id <String>]`: k`e`y: id of appScop`e`
+  - `[Appl`e``e`nrollm`e`ntProfil`e`Assignm`e`ntId <String>]`: k`e`y: id of appl`e``e`nrollm`e`ntProfil`e`Assignm`e`nt
+  - `[Appl`e`Us`e`rInitiat`e`d`e`nrollm`e`ntProfil`e`Id <String>]`: k`e`y: id of appl`e`Us`e`rInitiat`e`d`e`nrollm`e`ntProfil`e`
+  - `[ApprovalId <String>]`: k`e`y: id of approval
+  - `[ApprovalSt`e`pId <String>]`: k`e`y: id of approvalSt`e`p
+  - `[D`e`pOnboardingS`e`ttingId <String>]`: k`e`y: id of d`e`pOnboardingS`e`tting
+  - `[D`e`vic`e``e`nrollm`e`ntConfigurationId <String>]`: k`e`y: id of d`e`vic`e``e`nrollm`e`ntConfiguration
+  - `[D`e`vic`e`Manag`e`m`e`ntAutopilot`e`v`e`ntId <String>]`: k`e`y: id of d`e`vic`e`Manag`e`m`e`ntAutopilot`e`v`e`nt
+  - `[D`e`vic`e`Manag`e`m`e`ntAutopilotPolicyStatusD`e`tailId <String>]`: k`e`y: id of d`e`vic`e`Manag`e`m`e`ntAutopilotPolicyStatusD`e`tail
+  - `[Dir`e`ctoryObj`e`ctId <String>]`: k`e`y: id of dir`e`ctoryObj`e`ct
+  - `[`e`nrollm`e`ntConfigurationAssignm`e`ntId <String>]`: k`e`y: id of `e`nrollm`e`ntConfigurationAssignm`e`nt
+  - `[`e`nrollm`e`ntProfil`e`Id <String>]`: k`e`y: id of `e`nrollm`e`ntProfil`e`
+  - `[Import`e`dAppl`e`D`e`vic`e`Id`e`ntityId <String>]`: k`e`y: id of import`e`dAppl`e`D`e`vic`e`Id`e`ntity
+  - `[Import`e`dD`e`vic`e`Id`e`ntityId <String>]`: k`e`y: id of import`e`dD`e`vic`e`Id`e`ntity
+  - `[Import`e`dWindowsAutopilotD`e`vic`e`Id`e`ntityId <String>]`: k`e`y: id of import`e`dWindowsAutopilotD`e`vic`e`Id`e`ntity
+  - `[On <String>]`: Usag`e`: on='{on}'
+  - `[Unifi`e`dRbacR`e`sourc`e`ActionId <String>]`: k`e`y: id of unifi`e`dRbacR`e`sourc`e`Action
+  - `[Unifi`e`dRbacR`e`sourc`e`Nam`e`spac`e`Id <String>]`: k`e`y: id of unifi`e`dRbacR`e`sourc`e`Nam`e`spac`e`
+  - `[Unifi`e`dRol`e`Assignm`e`ntId <String>]`: k`e`y: id of unifi`e`dRol`e`Assignm`e`nt
+  - `[Unifi`e`dRol`e`Assignm`e`ntMultipl`e`Id <String>]`: k`e`y: id of unifi`e`dRol`e`Assignm`e`ntMultipl`e`
+  - `[Unifi`e`dRol`e`Assignm`e`ntSch`e`dul`e`Id <String>]`: k`e`y: id of unifi`e`dRol`e`Assignm`e`ntSch`e`dul`e`
+  - `[Unifi`e`dRol`e`Assignm`e`ntSch`e`dul`e`Instanc`e`Id <String>]`: k`e`y: id of unifi`e`dRol`e`Assignm`e`ntSch`e`dul`e`Instanc`e`
+  - `[Unifi`e`dRol`e`Assignm`e`ntSch`e`dul`e`R`e`qu`e`stId <String>]`: k`e`y: id of unifi`e`dRol`e`Assignm`e`ntSch`e`dul`e`R`e`qu`e`st
+  - `[Unifi`e`dRol`e`D`e`finitionId <String>]`: k`e`y: id of unifi`e`dRol`e`D`e`finition
+  - `[Unifi`e`dRol`e`D`e`finitionId1 <String>]`: k`e`y: id of unifi`e`dRol`e`D`e`finition
+  - `[Unifi`e`dRol`e``e`ligibilitySch`e`dul`e`Id <String>]`: k`e`y: id of unifi`e`dRol`e``e`ligibilitySch`e`dul`e`
+  - `[Unifi`e`dRol`e``e`ligibilitySch`e`dul`e`Instanc`e`Id <String>]`: k`e`y: id of unifi`e`dRol`e``e`ligibilitySch`e`dul`e`Instanc`e`
+  - `[Unifi`e`dRol`e``e`ligibilitySch`e`dul`e`R`e`qu`e`stId <String>]`: k`e`y: id of unifi`e`dRol`e``e`ligibilitySch`e`dul`e`R`e`qu`e`st
+  - `[WindowsAutopilotD`e`ploym`e`ntProfil`e`Assignm`e`ntId <String>]`: k`e`y: id of windowsAutopilotD`e`ploym`e`ntProfil`e`Assignm`e`nt
+  - `[WindowsAutopilotD`e`ploym`e`ntProfil`e`Id <String>]`: k`e`y: id of windowsAutopilotD`e`ploym`e`ntProfil`e`
+  - `[WindowsAutopilotD`e`vic`e`Id`e`ntityId <String>]`: k`e`y: id of windowsAutopilotD`e`vic`e`Id`e`ntity
+  - `[WindowsF`e`atur`e`Updat`e`Profil`e`Assignm`e`ntId <String>]`: k`e`y: id of windowsF`e`atur`e`Updat`e`Profil`e`Assignm`e`nt
+  - `[WindowsF`e`atur`e`Updat`e`Profil`e`Id <String>]`: k`e`y: id of windowsF`e`atur`e`Updat`e`Profil`e`
 
-## RELATED LINKS
+## R`e`LAT`e`D LINKS
