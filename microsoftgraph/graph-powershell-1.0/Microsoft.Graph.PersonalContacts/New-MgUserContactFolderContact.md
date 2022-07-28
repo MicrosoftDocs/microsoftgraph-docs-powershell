@@ -1,975 +1,975 @@
-﻿---
-external help file: Microsoft.Graph.PersonalContacts-help.xml
-Module Name: Microsoft.Graph.PersonalContacts
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.personalcontacts/new-mgusercontactfoldercontact
-schema: 2.0.0
+---
+``````````e``````````xt``````````e``````````rnal h``````````e``````````lp fil``````````e``````````: Microsoft.Graph.P``````````e``````````rsonalContacts-h``````````e``````````lp.xml
+Modul``````````e`````````` Nam``````````e``````````: Microsoft.Graph.P``````````e``````````rsonalContacts
+onlin``````````e`````````` v``````````e``````````rsion: https://docs.microsoft.com/``````````e``````````n-us/pow``````````e``````````rsh``````````e``````````ll/modul``````````e``````````/microsoft.graph.p``````````e``````````rsonalcontacts/n``````````e``````````w-mgus``````````e``````````rcontactfold``````````e``````````rcontact
+sch``````````e``````````ma: 2.0.0
 ---
 
-# New-MgUserContactFolderContact
+# N``````````e``````````w-MgUs``````````e``````````rContactFold``````````e``````````rContact
 
 ## SYNOPSIS
-The contacts in the folder.
-Navigation property.
-Read-only.
-Nullable.
+Th``````````e`````````` contacts in th``````````e`````````` fold``````````e``````````r.
+Navigation prop``````````e``````````rty.
+R``````````e``````````ad-only.
+Nullabl``````````e``````````.
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d (D``````````e``````````fault)
 ```
-New-MgUserContactFolderContact -ContactFolderId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-AssistantName <String>] [-Birthday <DateTime>] [-BusinessAddress <IMicrosoftGraphPhysicalAddress>]
- [-BusinessHomePage <String>] [-BusinessPhones <String[]>] [-Categories <String[]>] [-ChangeKey <String>]
- [-Children <String[]>] [-CompanyName <String>] [-CreatedDateTime <DateTime>] [-Department <String>]
- [-DisplayName <String>] [-EmailAddresses <IMicrosoftGraphEmailAddress[]>]
- [-Extensions <IMicrosoftGraphExtension[]>] [-FileAs <String>] [-Generation <String>] [-GivenName <String>]
- [-HomeAddress <IMicrosoftGraphPhysicalAddress>] [-HomePhones <String[]>] [-Id <String>]
- [-ImAddresses <String[]>] [-Initials <String>] [-JobTitle <String>] [-LastModifiedDateTime <DateTime>]
- [-Manager <String>] [-MiddleName <String>] [-MobilePhone <String>]
- [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-NickName <String>]
- [-OfficeLocation <String>] [-OtherAddress <IMicrosoftGraphPhysicalAddress>] [-ParentFolderId <String>]
- [-PersonalNotes <String>] [-Photo <IMicrosoftGraphProfilePhoto>] [-Profession <String>]
- [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-SpouseName <String>]
- [-Surname <String>] [-Title <String>] [-YomiCompanyName <String>] [-YomiGivenName <String>]
- [-YomiSurname <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create
-```
-New-MgUserContactFolderContact -ContactFolderId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphContact> [-WhatIf] [-Confirm] [<CommonParameters>]
+N``````````e``````````w-MgUs``````````e``````````rContactFold``````````e``````````rContact -ContactFold``````````e``````````rId <String> -Us``````````e``````````rId <String> [-AdditionalProp``````````e``````````rti``````````e``````````s <Hashtabl``````````e``````````>]
+ [-AssistantNam``````````e`````````` <String>] [-Birthday <Dat``````````e``````````Tim``````````e``````````>] [-Busin``````````e``````````ssAddr``````````e``````````ss <IMicrosoftGraphPhysicalAddr``````````e``````````ss>]
+ [-Busin``````````e``````````ssHom``````````e``````````Pag``````````e`````````` <String>] [-Busin``````````e``````````ssPhon``````````e``````````s <String[]>] [-Cat``````````e``````````gori``````````e``````````s <String[]>] [-Chang``````````e``````````K``````````e``````````y <String>]
+ [-Childr``````````e``````````n <String[]>] [-CompanyNam``````````e`````````` <String>] [-Cr``````````e``````````at``````````e``````````dDat``````````e``````````Tim``````````e`````````` <Dat``````````e``````````Tim``````````e``````````>] [-D``````````e``````````partm``````````e``````````nt <String>]
+ [-DisplayNam``````````e`````````` <String>] [-``````````e``````````mailAddr``````````e``````````ss``````````e``````````s <IMicrosoftGraph``````````e``````````mailAddr``````````e``````````ss[]>]
+ [-``````````e``````````xt``````````e``````````nsions <IMicrosoftGraph``````````e``````````xt``````````e``````````nsion[]>] [-Fil``````````e``````````As <String>] [-G``````````e``````````n``````````e``````````ration <String>] [-Giv``````````e``````````nNam``````````e`````````` <String>]
+ [-Hom``````````e``````````Addr``````````e``````````ss <IMicrosoftGraphPhysicalAddr``````````e``````````ss>] [-Hom``````````e``````````Phon``````````e``````````s <String[]>] [-Id <String>]
+ [-ImAddr``````````e``````````ss``````````e``````````s <String[]>] [-Initials <String>] [-JobTitl``````````e`````````` <String>] [-LastModifi``````````e``````````dDat``````````e``````````Tim``````````e`````````` <Dat``````````e``````````Tim``````````e``````````>]
+ [-Manag``````````e``````````r <String>] [-Middl``````````e``````````Nam``````````e`````````` <String>] [-Mobil``````````e``````````Phon``````````e`````````` <String>]
+ [-MultiValu``````````e````````````````````e``````````xt``````````e``````````nd``````````e``````````dProp``````````e``````````rti``````````e``````````s <IMicrosoftGraphMultiValu``````````e``````````L``````````e``````````gacy``````````e``````````xt``````````e``````````nd``````````e``````````dProp``````````e``````````rty[]>] [-NickNam``````````e`````````` <String>]
+ [-Offic``````````e``````````Location <String>] [-Oth``````````e``````````rAddr``````````e``````````ss <IMicrosoftGraphPhysicalAddr``````````e``````````ss>] [-Par``````````e``````````ntFold``````````e``````````rId <String>]
+ [-P``````````e``````````rsonalNot``````````e``````````s <String>] [-Photo <IMicrosoftGraphProfil``````````e``````````Photo>] [-Prof``````````e``````````ssion <String>]
+ [-Singl``````````e``````````Valu``````````e````````````````````e``````````xt``````````e``````````nd``````````e``````````dProp``````````e``````````rti``````````e``````````s <IMicrosoftGraphSingl``````````e``````````Valu``````````e``````````L``````````e``````````gacy``````````e``````````xt``````````e``````````nd``````````e``````````dProp``````````e``````````rty[]>] [-Spous``````````e``````````Nam``````````e`````````` <String>]
+ [-Surnam``````````e`````````` <String>] [-Titl``````````e`````````` <String>] [-YomiCompanyNam``````````e`````````` <String>] [-YomiGiv``````````e``````````nNam``````````e`````````` <String>]
+ [-YomiSurnam``````````e`````````` <String>] [-WhatIf] [-Confirm] [<CommonParam``````````e``````````t``````````e``````````rs>]
 ```
 
-### CreateViaIdentityExpanded
+### Cr``````````e``````````at``````````e``````````
 ```
-New-MgUserContactFolderContact -InputObject <IPersonalContactsIdentity> [-AdditionalProperties <Hashtable>]
- [-AssistantName <String>] [-Birthday <DateTime>] [-BusinessAddress <IMicrosoftGraphPhysicalAddress>]
- [-BusinessHomePage <String>] [-BusinessPhones <String[]>] [-Categories <String[]>] [-ChangeKey <String>]
- [-Children <String[]>] [-CompanyName <String>] [-CreatedDateTime <DateTime>] [-Department <String>]
- [-DisplayName <String>] [-EmailAddresses <IMicrosoftGraphEmailAddress[]>]
- [-Extensions <IMicrosoftGraphExtension[]>] [-FileAs <String>] [-Generation <String>] [-GivenName <String>]
- [-HomeAddress <IMicrosoftGraphPhysicalAddress>] [-HomePhones <String[]>] [-Id <String>]
- [-ImAddresses <String[]>] [-Initials <String>] [-JobTitle <String>] [-LastModifiedDateTime <DateTime>]
- [-Manager <String>] [-MiddleName <String>] [-MobilePhone <String>]
- [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-NickName <String>]
- [-OfficeLocation <String>] [-OtherAddress <IMicrosoftGraphPhysicalAddress>] [-ParentFolderId <String>]
- [-PersonalNotes <String>] [-Photo <IMicrosoftGraphProfilePhoto>] [-Profession <String>]
- [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-SpouseName <String>]
- [-Surname <String>] [-Title <String>] [-YomiCompanyName <String>] [-YomiGivenName <String>]
- [-YomiSurname <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+N``````````e``````````w-MgUs``````````e``````````rContactFold``````````e``````````rContact -ContactFold``````````e``````````rId <String> -Us``````````e``````````rId <String>
+ -BodyParam``````````e``````````t``````````e``````````r <IMicrosoftGraphContact> [-WhatIf] [-Confirm] [<CommonParam``````````e``````````t``````````e``````````rs>]
 ```
 
-### CreateViaIdentity
+### Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
 ```
-New-MgUserContactFolderContact -InputObject <IPersonalContactsIdentity> -BodyParameter <IMicrosoftGraphContact>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+N``````````e``````````w-MgUs``````````e``````````rContactFold``````````e``````````rContact -InputObj``````````e``````````ct <IP``````````e``````````rsonalContactsId``````````e``````````ntity> [-AdditionalProp``````````e``````````rti``````````e``````````s <Hashtabl``````````e``````````>]
+ [-AssistantNam``````````e`````````` <String>] [-Birthday <Dat``````````e``````````Tim``````````e``````````>] [-Busin``````````e``````````ssAddr``````````e``````````ss <IMicrosoftGraphPhysicalAddr``````````e``````````ss>]
+ [-Busin``````````e``````````ssHom``````````e``````````Pag``````````e`````````` <String>] [-Busin``````````e``````````ssPhon``````````e``````````s <String[]>] [-Cat``````````e``````````gori``````````e``````````s <String[]>] [-Chang``````````e``````````K``````````e``````````y <String>]
+ [-Childr``````````e``````````n <String[]>] [-CompanyNam``````````e`````````` <String>] [-Cr``````````e``````````at``````````e``````````dDat``````````e``````````Tim``````````e`````````` <Dat``````````e``````````Tim``````````e``````````>] [-D``````````e``````````partm``````````e``````````nt <String>]
+ [-DisplayNam``````````e`````````` <String>] [-``````````e``````````mailAddr``````````e``````````ss``````````e``````````s <IMicrosoftGraph``````````e``````````mailAddr``````````e``````````ss[]>]
+ [-``````````e``````````xt``````````e``````````nsions <IMicrosoftGraph``````````e``````````xt``````````e``````````nsion[]>] [-Fil``````````e``````````As <String>] [-G``````````e``````````n``````````e``````````ration <String>] [-Giv``````````e``````````nNam``````````e`````````` <String>]
+ [-Hom``````````e``````````Addr``````````e``````````ss <IMicrosoftGraphPhysicalAddr``````````e``````````ss>] [-Hom``````````e``````````Phon``````````e``````````s <String[]>] [-Id <String>]
+ [-ImAddr``````````e``````````ss``````````e``````````s <String[]>] [-Initials <String>] [-JobTitl``````````e`````````` <String>] [-LastModifi``````````e``````````dDat``````````e``````````Tim``````````e`````````` <Dat``````````e``````````Tim``````````e``````````>]
+ [-Manag``````````e``````````r <String>] [-Middl``````````e``````````Nam``````````e`````````` <String>] [-Mobil``````````e``````````Phon``````````e`````````` <String>]
+ [-MultiValu``````````e````````````````````e``````````xt``````````e``````````nd``````````e``````````dProp``````````e``````````rti``````````e``````````s <IMicrosoftGraphMultiValu``````````e``````````L``````````e``````````gacy``````````e``````````xt``````````e``````````nd``````````e``````````dProp``````````e``````````rty[]>] [-NickNam``````````e`````````` <String>]
+ [-Offic``````````e``````````Location <String>] [-Oth``````````e``````````rAddr``````````e``````````ss <IMicrosoftGraphPhysicalAddr``````````e``````````ss>] [-Par``````````e``````````ntFold``````````e``````````rId <String>]
+ [-P``````````e``````````rsonalNot``````````e``````````s <String>] [-Photo <IMicrosoftGraphProfil``````````e``````````Photo>] [-Prof``````````e``````````ssion <String>]
+ [-Singl``````````e``````````Valu``````````e````````````````````e``````````xt``````````e``````````nd``````````e``````````dProp``````````e``````````rti``````````e``````````s <IMicrosoftGraphSingl``````````e``````````Valu``````````e``````````L``````````e``````````gacy``````````e``````````xt``````````e``````````nd``````````e``````````dProp``````````e``````````rty[]>] [-Spous``````````e``````````Nam``````````e`````````` <String>]
+ [-Surnam``````````e`````````` <String>] [-Titl``````````e`````````` <String>] [-YomiCompanyNam``````````e`````````` <String>] [-YomiGiv``````````e``````````nNam``````````e`````````` <String>]
+ [-YomiSurnam``````````e`````````` <String>] [-WhatIf] [-Confirm] [<CommonParam``````````e``````````t``````````e``````````rs>]
 ```
 
-## DESCRIPTION
-The contacts in the folder.
-Navigation property.
-Read-only.
-Nullable.
+### Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity
+```
+N``````````e``````````w-MgUs``````````e``````````rContactFold``````````e``````````rContact -InputObj``````````e``````````ct <IP``````````e``````````rsonalContactsId``````````e``````````ntity> -BodyParam``````````e``````````t``````````e``````````r <IMicrosoftGraphContact>
+ [-WhatIf] [-Confirm] [<CommonParam``````````e``````````t``````````e``````````rs>]
+```
 
-## EXAMPLES
+## D``````````e``````````SCRIPTION
+Th``````````e`````````` contacts in th``````````e`````````` fold``````````e``````````r.
+Navigation prop``````````e``````````rty.
+R``````````e``````````ad-only.
+Nullabl``````````e``````````.
 
-## PARAMETERS
+## ``````````e``````````XAMPL``````````e``````````S
 
-### -AdditionalProperties
-Additional Parameters
+## PARAM``````````e``````````T``````````e``````````RS
+
+### -AdditionalProp``````````e``````````rti``````````e``````````s
+Additional Param``````````e``````````t``````````e``````````rs
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: Hashtabl``````````e``````````
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -AssistantName
-The name of the contact's assistant.
+### -AssistantNam``````````e``````````
+Th``````````e`````````` nam``````````e`````````` of th``````````e`````````` contact's assistant.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
 ### -Birthday
-The contact's birthday.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+Th``````````e`````````` contact's birthday.
+Th``````````e`````````` Tim``````````e``````````stamp typ``````````e`````````` r``````````e``````````pr``````````e``````````s``````````e``````````nts dat``````````e`````````` and tim``````````e`````````` information using ISO 8601 format and is always in UTC tim``````````e``````````.
+For ``````````e``````````xampl``````````e``````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: Dat``````````e``````````Tim``````````e``````````
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -BodyParameter
+### -BodyParam``````````e``````````t``````````e``````````r
 contact
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, pl``````````e``````````as``````````e`````````` us``````````e`````````` G``````````e``````````t-H``````````e``````````lp -Onlin``````````e`````````` and s``````````e````````````````````e`````````` NOT``````````e``````````S s``````````e``````````ction for BODYPARAM``````````e``````````T``````````e``````````R prop``````````e``````````rti``````````e``````````s and cr``````````e``````````at``````````e`````````` a hash tabl``````````e``````````.
 
 ```yaml
-Type: IMicrosoftGraphContact
-Parameter Sets: Create, CreateViaIdentity
-Aliases:
+Typ``````````e``````````: IMicrosoftGraphContact
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e``````````, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity
+Alias``````````e``````````s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Tru``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Tru``````````e`````````` (ByValu``````````e``````````)
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -BusinessAddress
-physicalAddress
-To construct, please use Get-Help -Online and see NOTES section for BUSINESSADDRESS properties and create a hash table.
+### -Busin``````````e``````````ssAddr``````````e``````````ss
+physicalAddr``````````e``````````ss
+To construct, pl``````````e``````````as``````````e`````````` us``````````e`````````` G``````````e``````````t-H``````````e``````````lp -Onlin``````````e`````````` and s``````````e````````````````````e`````````` NOT``````````e``````````S s``````````e``````````ction for BUSIN``````````e``````````SSADDR``````````e``````````SS prop``````````e``````````rti``````````e``````````s and cr``````````e``````````at``````````e`````````` a hash tabl``````````e``````````.
 
 ```yaml
-Type: IMicrosoftGraphPhysicalAddress
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: IMicrosoftGraphPhysicalAddr``````````e``````````ss
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -BusinessHomePage
-The business home page of the contact.
+### -Busin``````````e``````````ssHom``````````e``````````Pag``````````e``````````
+Th``````````e`````````` busin``````````e``````````ss hom``````````e`````````` pag``````````e`````````` of th``````````e`````````` contact.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -BusinessPhones
-The contact's business phone numbers.
+### -Busin``````````e``````````ssPhon``````````e``````````s
+Th``````````e`````````` contact's busin``````````e``````````ss phon``````````e`````````` numb``````````e``````````rs.
 
 ```yaml
-Type: String[]
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: String[]
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -Categories
-The categories associated with the item
+### -Cat``````````e``````````gori``````````e``````````s
+Th``````````e`````````` cat``````````e``````````gori``````````e``````````s associat``````````e``````````d with th``````````e`````````` it``````````e``````````m
 
 ```yaml
-Type: String[]
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: String[]
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -ChangeKey
-Identifies the version of the item.
-Every time the item is changed, changeKey changes as well.
-This allows Exchange to apply changes to the correct version of the object.
-Read-only.
+### -Chang``````````e``````````K``````````e``````````y
+Id``````````e``````````ntifi``````````e``````````s th``````````e`````````` v``````````e``````````rsion of th``````````e`````````` it``````````e``````````m.
+``````````e``````````v``````````e``````````ry tim``````````e`````````` th``````````e`````````` it``````````e``````````m is chang``````````e``````````d, chang``````````e``````````K``````````e``````````y chang``````````e``````````s as w``````````e``````````ll.
+This allows ``````````e``````````xchang``````````e`````````` to apply chang``````````e``````````s to th``````````e`````````` corr``````````e``````````ct v``````````e``````````rsion of th``````````e`````````` obj``````````e``````````ct.
+R``````````e``````````ad-only.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -Children
-The names of the contact's children.
+### -Childr``````````e``````````n
+Th``````````e`````````` nam``````````e``````````s of th``````````e`````````` contact's childr``````````e``````````n.
 
 ```yaml
-Type: String[]
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: String[]
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -CompanyName
-The name of the contact's company.
+### -CompanyNam``````````e``````````
+Th``````````e`````````` nam``````````e`````````` of th``````````e`````````` contact's company.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -ContactFolderId
-key: id of contactFolder
+### -ContactFold``````````e``````````rId
+k``````````e``````````y: id of contactFold``````````e``````````r
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````
+Alias``````````e``````````s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Tru``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -CreatedDateTime
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+### -Cr``````````e``````````at``````````e``````````dDat``````````e``````````Tim``````````e``````````
+Th``````````e`````````` Tim``````````e``````````stamp typ``````````e`````````` r``````````e``````````pr``````````e``````````s``````````e``````````nts dat``````````e`````````` and tim``````````e`````````` information using ISO 8601 format and is always in UTC tim``````````e``````````.
+For ``````````e``````````xampl``````````e``````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: Dat``````````e``````````Tim``````````e``````````
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -Department
-The contact's department.
+### -D``````````e``````````partm``````````e``````````nt
+Th``````````e`````````` contact's d``````````e``````````partm``````````e``````````nt.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -DisplayName
-The contact's display name.
-You can specify the display name in a create or update operation.
-Note that later updates to other properties may cause an automatically generated value to overwrite the displayName value you have specified.
-To preserve a pre-existing value, always include it as displayName in an update operation.
+### -DisplayNam``````````e``````````
+Th``````````e`````````` contact's display nam``````````e``````````.
+You can sp``````````e``````````cify th``````````e`````````` display nam``````````e`````````` in a cr``````````e``````````at``````````e`````````` or updat``````````e`````````` op``````````e``````````ration.
+Not``````````e`````````` that lat``````````e``````````r updat``````````e``````````s to oth``````````e``````````r prop``````````e``````````rti``````````e``````````s may caus``````````e`````````` an automatically g``````````e``````````n``````````e``````````rat``````````e``````````d valu``````````e`````````` to ov``````````e``````````rwrit``````````e`````````` th``````````e`````````` displayNam``````````e`````````` valu``````````e`````````` you hav``````````e`````````` sp``````````e``````````cifi``````````e``````````d.
+To pr``````````e``````````s``````````e``````````rv``````````e`````````` a pr``````````e``````````-``````````e``````````xisting valu``````````e``````````, always includ``````````e`````````` it as displayNam``````````e`````````` in an updat``````````e`````````` op``````````e``````````ration.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -EmailAddresses
-The contact's email addresses.
-To construct, please use Get-Help -Online and see NOTES section for EMAILADDRESSES properties and create a hash table.
+### -``````````e``````````mailAddr``````````e``````````ss``````````e``````````s
+Th``````````e`````````` contact's ``````````e``````````mail addr``````````e``````````ss``````````e``````````s.
+To construct, pl``````````e``````````as``````````e`````````` us``````````e`````````` G``````````e``````````t-H``````````e``````````lp -Onlin``````````e`````````` and s``````````e````````````````````e`````````` NOT``````````e``````````S s``````````e``````````ction for ``````````e``````````MAILADDR``````````e``````````SS``````````e``````````S prop``````````e``````````rti``````````e``````````s and cr``````````e``````````at``````````e`````````` a hash tabl``````````e``````````.
 
 ```yaml
-Type: IMicrosoftGraphEmailAddress[]
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: IMicrosoftGraph``````````e``````````mailAddr``````````e``````````ss[]
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -Extensions
-The collection of open extensions defined for the contact.
-Read-only.
-Nullable.
-To construct, please use Get-Help -Online and see NOTES section for EXTENSIONS properties and create a hash table.
+### -``````````e``````````xt``````````e``````````nsions
+Th``````````e`````````` coll``````````e``````````ction of op``````````e``````````n ``````````e``````````xt``````````e``````````nsions d``````````e``````````fin``````````e``````````d for th``````````e`````````` contact.
+R``````````e``````````ad-only.
+Nullabl``````````e``````````.
+To construct, pl``````````e``````````as``````````e`````````` us``````````e`````````` G``````````e``````````t-H``````````e``````````lp -Onlin``````````e`````````` and s``````````e````````````````````e`````````` NOT``````````e``````````S s``````````e``````````ction for ``````````e``````````XT``````````e``````````NSIONS prop``````````e``````````rti``````````e``````````s and cr``````````e``````````at``````````e`````````` a hash tabl``````````e``````````.
 
 ```yaml
-Type: IMicrosoftGraphExtension[]
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: IMicrosoftGraph``````````e``````````xt``````````e``````````nsion[]
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -FileAs
-The name the contact is filed under.
+### -Fil``````````e``````````As
+Th``````````e`````````` nam``````````e`````````` th``````````e`````````` contact is fil``````````e``````````d und``````````e``````````r.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -Generation
-The contact's generation.
+### -G``````````e``````````n``````````e``````````ration
+Th``````````e`````````` contact's g``````````e``````````n``````````e``````````ration.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -GivenName
-The contact's given name.
+### -Giv``````````e``````````nNam``````````e``````````
+Th``````````e`````````` contact's giv``````````e``````````n nam``````````e``````````.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -HomeAddress
-physicalAddress
-To construct, please use Get-Help -Online and see NOTES section for HOMEADDRESS properties and create a hash table.
+### -Hom``````````e``````````Addr``````````e``````````ss
+physicalAddr``````````e``````````ss
+To construct, pl``````````e``````````as``````````e`````````` us``````````e`````````` G``````````e``````````t-H``````````e``````````lp -Onlin``````````e`````````` and s``````````e````````````````````e`````````` NOT``````````e``````````S s``````````e``````````ction for HOM``````````e``````````ADDR``````````e``````````SS prop``````````e``````````rti``````````e``````````s and cr``````````e``````````at``````````e`````````` a hash tabl``````````e``````````.
 
 ```yaml
-Type: IMicrosoftGraphPhysicalAddress
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: IMicrosoftGraphPhysicalAddr``````````e``````````ss
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -HomePhones
-The contact's home phone numbers.
+### -Hom``````````e``````````Phon``````````e``````````s
+Th``````````e`````````` contact's hom``````````e`````````` phon``````````e`````````` numb``````````e``````````rs.
 
 ```yaml
-Type: String[]
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: String[]
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
 ### -Id
-Read-only.
+R``````````e``````````ad-only.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -ImAddresses
+### -ImAddr``````````e``````````ss``````````e``````````s
 .
 
 ```yaml
-Type: String[]
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: String[]
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
 ### -Initials
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -InputObj``````````e``````````ct
+Id``````````e``````````ntity Param``````````e``````````t``````````e``````````r
+To construct, pl``````````e``````````as``````````e`````````` us``````````e`````````` G``````````e``````````t-H``````````e``````````lp -Onlin``````````e`````````` and s``````````e````````````````````e`````````` NOT``````````e``````````S s``````````e``````````ction for INPUTOBJ``````````e``````````CT prop``````````e``````````rti``````````e``````````s and cr``````````e``````````at``````````e`````````` a hash tabl``````````e``````````.
 
 ```yaml
-Type: IPersonalContactsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
-Aliases:
+Typ``````````e``````````: IP``````````e``````````rsonalContactsId``````````e``````````ntity
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity
+Alias``````````e``````````s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Tru``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Tru``````````e`````````` (ByValu``````````e``````````)
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -JobTitle
+### -JobTitl``````````e``````````
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -LastModifiedDateTime
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+### -LastModifi``````````e``````````dDat``````````e``````````Tim``````````e``````````
+Th``````````e`````````` Tim``````````e``````````stamp typ``````````e`````````` r``````````e``````````pr``````````e``````````s``````````e``````````nts dat``````````e`````````` and tim``````````e`````````` information using ISO 8601 format and is always in UTC tim``````````e``````````.
+For ``````````e``````````xampl``````````e``````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: Dat``````````e``````````Tim``````````e``````````
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -Manager
+### -Manag``````````e``````````r
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -MiddleName
+### -Middl``````````e``````````Nam``````````e``````````
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -MobilePhone
+### -Mobil``````````e``````````Phon``````````e``````````
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -MultiValueExtendedProperties
-The collection of multi-value extended properties defined for the contact.
-Read-only.
-Nullable.
-To construct, please use Get-Help -Online and see NOTES section for MULTIVALUEEXTENDEDPROPERTIES properties and create a hash table.
+### -MultiValu``````````e````````````````````e``````````xt``````````e``````````nd``````````e``````````dProp``````````e``````````rti``````````e``````````s
+Th``````````e`````````` coll``````````e``````````ction of multi-valu``````````e`````````` ``````````e``````````xt``````````e``````````nd``````````e``````````d prop``````````e``````````rti``````````e``````````s d``````````e``````````fin``````````e``````````d for th``````````e`````````` contact.
+R``````````e``````````ad-only.
+Nullabl``````````e``````````.
+To construct, pl``````````e``````````as``````````e`````````` us``````````e`````````` G``````````e``````````t-H``````````e``````````lp -Onlin``````````e`````````` and s``````````e````````````````````e`````````` NOT``````````e``````````S s``````````e``````````ction for MULTIVALU``````````e````````````````````e``````````XT``````````e``````````ND``````````e``````````DPROP``````````e``````````RTI``````````e``````````S prop``````````e``````````rti``````````e``````````s and cr``````````e``````````at``````````e`````````` a hash tabl``````````e``````````.
 
 ```yaml
-Type: IMicrosoftGraphMultiValueLegacyExtendedProperty[]
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: IMicrosoftGraphMultiValu``````````e``````````L``````````e``````````gacy``````````e``````````xt``````````e``````````nd``````````e``````````dProp``````````e``````````rty[]
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -NickName
+### -NickNam``````````e``````````
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -OfficeLocation
+### -Offic``````````e``````````Location
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -OtherAddress
-physicalAddress
-To construct, please use Get-Help -Online and see NOTES section for OTHERADDRESS properties and create a hash table.
+### -Oth``````````e``````````rAddr``````````e``````````ss
+physicalAddr``````````e``````````ss
+To construct, pl``````````e``````````as``````````e`````````` us``````````e`````````` G``````````e``````````t-H``````````e``````````lp -Onlin``````````e`````````` and s``````````e````````````````````e`````````` NOT``````````e``````````S s``````````e``````````ction for OTH``````````e``````````RADDR``````````e``````````SS prop``````````e``````````rti``````````e``````````s and cr``````````e``````````at``````````e`````````` a hash tabl``````````e``````````.
 
 ```yaml
-Type: IMicrosoftGraphPhysicalAddress
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: IMicrosoftGraphPhysicalAddr``````````e``````````ss
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -ParentFolderId
+### -Par``````````e``````````ntFold``````````e``````````rId
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -PersonalNotes
+### -P``````````e``````````rsonalNot``````````e``````````s
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
 ### -Photo
-profilePhoto
-To construct, please use Get-Help -Online and see NOTES section for PHOTO properties and create a hash table.
+profil``````````e``````````Photo
+To construct, pl``````````e``````````as``````````e`````````` us``````````e`````````` G``````````e``````````t-H``````````e``````````lp -Onlin``````````e`````````` and s``````````e````````````````````e`````````` NOT``````````e``````````S s``````````e``````````ction for PHOTO prop``````````e``````````rti``````````e``````````s and cr``````````e``````````at``````````e`````````` a hash tabl``````````e``````````.
 
 ```yaml
-Type: IMicrosoftGraphProfilePhoto
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: IMicrosoftGraphProfil``````````e``````````Photo
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -Profession
+### -Prof``````````e``````````ssion
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -SingleValueExtendedProperties
-The collection of single-value extended properties defined for the contact.
-Read-only.
-Nullable.
-To construct, please use Get-Help -Online and see NOTES section for SINGLEVALUEEXTENDEDPROPERTIES properties and create a hash table.
+### -Singl``````````e``````````Valu``````````e````````````````````e``````````xt``````````e``````````nd``````````e``````````dProp``````````e``````````rti``````````e``````````s
+Th``````````e`````````` coll``````````e``````````ction of singl``````````e``````````-valu``````````e`````````` ``````````e``````````xt``````````e``````````nd``````````e``````````d prop``````````e``````````rti``````````e``````````s d``````````e``````````fin``````````e``````````d for th``````````e`````````` contact.
+R``````````e``````````ad-only.
+Nullabl``````````e``````````.
+To construct, pl``````````e``````````as``````````e`````````` us``````````e`````````` G``````````e``````````t-H``````````e``````````lp -Onlin``````````e`````````` and s``````````e````````````````````e`````````` NOT``````````e``````````S s``````````e``````````ction for SINGL``````````e``````````VALU``````````e````````````````````e``````````XT``````````e``````````ND``````````e``````````DPROP``````````e``````````RTI``````````e``````````S prop``````````e``````````rti``````````e``````````s and cr``````````e``````````at``````````e`````````` a hash tabl``````````e``````````.
 
 ```yaml
-Type: IMicrosoftGraphSingleValueLegacyExtendedProperty[]
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: IMicrosoftGraphSingl``````````e``````````Valu``````````e``````````L``````````e``````````gacy``````````e``````````xt``````````e``````````nd``````````e``````````dProp``````````e``````````rty[]
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -SpouseName
+### -Spous``````````e``````````Nam``````````e``````````
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -Surname
+### -Surnam``````````e``````````
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -Title
+### -Titl``````````e``````````
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -UserId
-key: id of user
+### -Us``````````e``````````rId
+k``````````e``````````y: id of us``````````e``````````r
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````
+Alias``````````e``````````s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Tru``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -YomiCompanyName
+### -YomiCompanyNam``````````e``````````
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -YomiGivenName
+### -YomiGiv``````````e``````````nNam``````````e``````````
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### -YomiSurname
+### -YomiSurnam``````````e``````````
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Typ``````````e``````````: String
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: Cr``````````e``````````at``````````e````````````````````e``````````xpand``````````e``````````d, Cr``````````e``````````at``````````e``````````ViaId``````````e``````````ntity``````````e``````````xpand``````````e``````````d
+Alias``````````e``````````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation b``````````e``````````for``````````e`````````` running th``````````e`````````` cmdl``````````e``````````t.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Typ``````````e``````````: SwitchParam``````````e``````````t``````````e``````````r
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: (All)
+Alias``````````e``````````s: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happ``````````e``````````n if th``````````e`````````` cmdl``````````e``````````t runs.
+Th``````````e`````````` cmdl``````````e``````````t is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Typ``````````e``````````: SwitchParam``````````e``````````t``````````e``````````r
+Param``````````e``````````t``````````e``````````r S``````````e``````````ts: (All)
+Alias``````````e``````````s: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``````````e``````````quir``````````e``````````d: Fals``````````e``````````
+Position: Nam``````````e``````````d
+D``````````e``````````fault valu``````````e``````````: Non``````````e``````````
+Acc``````````e``````````pt pip``````````e``````````lin``````````e`````````` input: Fals``````````e``````````
+Acc``````````e``````````pt wildcard charact``````````e``````````rs: Fals``````````e``````````
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam``````````e``````````t``````````e``````````rs
+This cmdl``````````e``````````t supports th``````````e`````````` common param``````````e``````````t``````````e``````````rs: -D``````````e``````````bug, -``````````e``````````rrorAction, -``````````e``````````rrorVariabl``````````e``````````, -InformationAction, -InformationVariabl``````````e``````````, -OutVariabl``````````e``````````, -OutBuff``````````e``````````r, -Pip``````````e``````````lin``````````e``````````Variabl``````````e``````````, -V``````````e``````````rbos``````````e``````````, -WarningAction, and -WarningVariabl``````````e``````````. For mor``````````e`````````` information, s``````````e````````````````````e`````````` [about_CommonParam``````````e``````````t``````````e``````````rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContact
-### Microsoft.Graph.PowerShell.Models.IPersonalContactsIdentity
+### Microsoft.Graph.Pow``````````e``````````rSh``````````e``````````ll.Mod``````````e``````````ls.IMicrosoftGraphContact
+### Microsoft.Graph.Pow``````````e``````````rSh``````````e``````````ll.Mod``````````e``````````ls.IP``````````e``````````rsonalContactsId``````````e``````````ntity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContact
-## NOTES
+### Microsoft.Graph.Pow``````````e``````````rSh``````````e``````````ll.Mod``````````e``````````ls.IMicrosoftGraphContact
+## NOT``````````e``````````S
 
-ALIASES
+ALIAS``````````e``````````S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL``````````e``````````X PARAM``````````e``````````T``````````e``````````R PROP``````````e``````````RTI``````````e``````````S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr``````````e``````````at``````````e`````````` th``````````e`````````` param``````````e``````````t``````````e``````````rs d``````````e``````````scrib``````````e``````````d b``````````e``````````low, construct a hash tabl``````````e`````````` containing th``````````e`````````` appropriat``````````e`````````` prop``````````e``````````rti``````````e``````````s. For information on hash tabl``````````e``````````s, run G``````````e``````````t-H``````````e``````````lp about_Hash_Tabl``````````e``````````s.
 
 
-BODYPARAMETER <IMicrosoftGraphContact>: contact
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Categories <String[]>]`: The categories associated with the item
-  - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Id <String>]`: Read-only.
-  - `[AssistantName <String>]`: The name of the contact's assistant.
-  - `[Birthday <DateTime?>]`: The contact's birthday. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[BusinessAddress <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[City <String>]`: The city.
-    - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
-    - `[PostalCode <String>]`: The postal code.
-    - `[State <String>]`: The state.
-    - `[Street <String>]`: The street.
-  - `[BusinessHomePage <String>]`: The business home page of the contact.
-  - `[BusinessPhones <String[]>]`: The contact's business phone numbers.
-  - `[Children <String[]>]`: The names of the contact's children.
-  - `[CompanyName <String>]`: The name of the contact's company.
-  - `[Department <String>]`: The contact's department.
-  - `[DisplayName <String>]`: The contact's display name. You can specify the display name in a create or update operation. Note that later updates to other properties may cause an automatically generated value to overwrite the displayName value you have specified. To preserve a pre-existing value, always include it as displayName in an update operation.
-  - `[EmailAddresses <IMicrosoftGraphEmailAddress[]>]`: The contact's email addresses.
-    - `[Address <String>]`: The email address of the person or entity.
-    - `[Name <String>]`: The display name of the person or entity.
-  - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the contact. Read-only. Nullable.
-    - `[Id <String>]`: Read-only.
-  - `[FileAs <String>]`: The name the contact is filed under.
-  - `[Generation <String>]`: The contact's generation.
-  - `[GivenName <String>]`: The contact's given name.
-  - `[HomeAddress <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-  - `[HomePhones <String[]>]`: The contact's home phone numbers.
-  - `[ImAddresses <String[]>]`: 
+BODYPARAM``````````e``````````T``````````e``````````R <IMicrosoftGraphContact>: contact
+  - `[(Any) <Obj``````````e``````````ct>]`: This indicat``````````e``````````s any prop``````````e``````````rty can b``````````e`````````` add``````````e``````````d to this obj``````````e``````````ct.
+  - `[Cat``````````e``````````gori``````````e``````````s <String[]>]`: Th``````````e`````````` cat``````````e``````````gori``````````e``````````s associat``````````e``````````d with th``````````e`````````` it``````````e``````````m
+  - `[Chang``````````e``````````K``````````e``````````y <String>]`: Id``````````e``````````ntifi``````````e``````````s th``````````e`````````` v``````````e``````````rsion of th``````````e`````````` it``````````e``````````m. ``````````e``````````v``````````e``````````ry tim``````````e`````````` th``````````e`````````` it``````````e``````````m is chang``````````e``````````d, chang``````````e``````````K``````````e``````````y chang``````````e``````````s as w``````````e``````````ll. This allows ``````````e``````````xchang``````````e`````````` to apply chang``````````e``````````s to th``````````e`````````` corr``````````e``````````ct v``````````e``````````rsion of th``````````e`````````` obj``````````e``````````ct. R``````````e``````````ad-only.
+  - `[Cr``````````e``````````at``````````e``````````dDat``````````e``````````Tim``````````e`````````` <Dat``````````e``````````Tim``````````e``````````?>]`: Th``````````e`````````` Tim``````````e``````````stamp typ``````````e`````````` r``````````e``````````pr``````````e``````````s``````````e``````````nts dat``````````e`````````` and tim``````````e`````````` information using ISO 8601 format and is always in UTC tim``````````e``````````. For ``````````e``````````xampl``````````e``````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[LastModifi``````````e``````````dDat``````````e``````````Tim``````````e`````````` <Dat``````````e``````````Tim``````````e``````````?>]`: Th``````````e`````````` Tim``````````e``````````stamp typ``````````e`````````` r``````````e``````````pr``````````e``````````s``````````e``````````nts dat``````````e`````````` and tim``````````e`````````` information using ISO 8601 format and is always in UTC tim``````````e``````````. For ``````````e``````````xampl``````````e``````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[Id <String>]`: R``````````e``````````ad-only.
+  - `[AssistantNam``````````e`````````` <String>]`: Th``````````e`````````` nam``````````e`````````` of th``````````e`````````` contact's assistant.
+  - `[Birthday <Dat``````````e``````````Tim``````````e``````````?>]`: Th``````````e`````````` contact's birthday. Th``````````e`````````` Tim``````````e``````````stamp typ``````````e`````````` r``````````e``````````pr``````````e``````````s``````````e``````````nts dat``````````e`````````` and tim``````````e`````````` information using ISO 8601 format and is always in UTC tim``````````e``````````. For ``````````e``````````xampl``````````e``````````, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[Busin``````````e``````````ssAddr``````````e``````````ss <IMicrosoftGraphPhysicalAddr``````````e``````````ss>]`: physicalAddr``````````e``````````ss
+    - `[(Any) <Obj``````````e``````````ct>]`: This indicat``````````e``````````s any prop``````````e``````````rty can b``````````e`````````` add``````````e``````````d to this obj``````````e``````````ct.
+    - `[City <String>]`: Th``````````e`````````` city.
+    - `[CountryOrR``````````e``````````gion <String>]`: Th``````````e`````````` country or r``````````e``````````gion. It's a fr``````````e````````````````````e``````````-format string valu``````````e``````````, for ``````````e``````````xampl``````````e``````````, 'Unit``````````e``````````d Stat``````````e``````````s'.
+    - `[PostalCod``````````e`````````` <String>]`: Th``````````e`````````` postal cod``````````e``````````.
+    - `[Stat``````````e`````````` <String>]`: Th``````````e`````````` stat``````````e``````````.
+    - `[Str``````````e````````````````````e``````````t <String>]`: Th``````````e`````````` str``````````e````````````````````e``````````t.
+  - `[Busin``````````e``````````ssHom``````````e``````````Pag``````````e`````````` <String>]`: Th``````````e`````````` busin``````````e``````````ss hom``````````e`````````` pag``````````e`````````` of th``````````e`````````` contact.
+  - `[Busin``````````e``````````ssPhon``````````e``````````s <String[]>]`: Th``````````e`````````` contact's busin``````````e``````````ss phon``````````e`````````` numb``````````e``````````rs.
+  - `[Childr``````````e``````````n <String[]>]`: Th``````````e`````````` nam``````````e``````````s of th``````````e`````````` contact's childr``````````e``````````n.
+  - `[CompanyNam``````````e`````````` <String>]`: Th``````````e`````````` nam``````````e`````````` of th``````````e`````````` contact's company.
+  - `[D``````````e``````````partm``````````e``````````nt <String>]`: Th``````````e`````````` contact's d``````````e``````````partm``````````e``````````nt.
+  - `[DisplayNam``````````e`````````` <String>]`: Th``````````e`````````` contact's display nam``````````e``````````. You can sp``````````e``````````cify th``````````e`````````` display nam``````````e`````````` in a cr``````````e``````````at``````````e`````````` or updat``````````e`````````` op``````````e``````````ration. Not``````````e`````````` that lat``````````e``````````r updat``````````e``````````s to oth``````````e``````````r prop``````````e``````````rti``````````e``````````s may caus``````````e`````````` an automatically g``````````e``````````n``````````e``````````rat``````````e``````````d valu``````````e`````````` to ov``````````e``````````rwrit``````````e`````````` th``````````e`````````` displayNam``````````e`````````` valu``````````e`````````` you hav``````````e`````````` sp``````````e``````````cifi``````````e``````````d. To pr``````````e``````````s``````````e``````````rv``````````e`````````` a pr``````````e``````````-``````````e``````````xisting valu``````````e``````````, always includ``````````e`````````` it as displayNam``````````e`````````` in an updat``````````e`````````` op``````````e``````````ration.
+  - `[``````````e``````````mailAddr``````````e``````````ss``````````e``````````s <IMicrosoftGraph``````````e``````````mailAddr``````````e``````````ss[]>]`: Th``````````e`````````` contact's ``````````e``````````mail addr``````````e``````````ss``````````e``````````s.
+    - `[Addr``````````e``````````ss <String>]`: Th``````````e`````````` ``````````e``````````mail addr``````````e``````````ss of th``````````e`````````` p``````````e``````````rson or ``````````e``````````ntity.
+    - `[Nam``````````e`````````` <String>]`: Th``````````e`````````` display nam``````````e`````````` of th``````````e`````````` p``````````e``````````rson or ``````````e``````````ntity.
+  - `[``````````e``````````xt``````````e``````````nsions <IMicrosoftGraph``````````e``````````xt``````````e``````````nsion[]>]`: Th``````````e`````````` coll``````````e``````````ction of op``````````e``````````n ``````````e``````````xt``````````e``````````nsions d``````````e``````````fin``````````e``````````d for th``````````e`````````` contact. R``````````e``````````ad-only. Nullabl``````````e``````````.
+    - `[Id <String>]`: R``````````e``````````ad-only.
+  - `[Fil``````````e``````````As <String>]`: Th``````````e`````````` nam``````````e`````````` th``````````e`````````` contact is fil``````````e``````````d und``````````e``````````r.
+  - `[G``````````e``````````n``````````e``````````ration <String>]`: Th``````````e`````````` contact's g``````````e``````````n``````````e``````````ration.
+  - `[Giv``````````e``````````nNam``````````e`````````` <String>]`: Th``````````e`````````` contact's giv``````````e``````````n nam``````````e``````````.
+  - `[Hom``````````e``````````Addr``````````e``````````ss <IMicrosoftGraphPhysicalAddr``````````e``````````ss>]`: physicalAddr``````````e``````````ss
+  - `[Hom``````````e``````````Phon``````````e``````````s <String[]>]`: Th``````````e`````````` contact's hom``````````e`````````` phon``````````e`````````` numb``````````e``````````rs.
+  - `[ImAddr``````````e``````````ss``````````e``````````s <String[]>]`: 
   - `[Initials <String>]`: 
-  - `[JobTitle <String>]`: 
-  - `[Manager <String>]`: 
-  - `[MiddleName <String>]`: 
-  - `[MobilePhone <String>]`: 
-  - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
-    - `[Id <String>]`: Read-only.
-    - `[Value <String[]>]`: A collection of property values.
-  - `[NickName <String>]`: 
-  - `[OfficeLocation <String>]`: 
-  - `[OtherAddress <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-  - `[ParentFolderId <String>]`: 
-  - `[PersonalNotes <String>]`: 
-  - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: Read-only.
-    - `[Height <Int32?>]`: The height of the photo. Read-only.
-    - `[Width <Int32?>]`: The width of the photo. Read-only.
-  - `[Profession <String>]`: 
-  - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the contact. Read-only. Nullable.
-    - `[Id <String>]`: Read-only.
-    - `[Value <String>]`: A property value.
-  - `[SpouseName <String>]`: 
-  - `[Surname <String>]`: 
-  - `[Title <String>]`: 
-  - `[YomiCompanyName <String>]`: 
-  - `[YomiGivenName <String>]`: 
-  - `[YomiSurname <String>]`: 
+  - `[JobTitl``````````e`````````` <String>]`: 
+  - `[Manag``````````e``````````r <String>]`: 
+  - `[Middl``````````e``````````Nam``````````e`````````` <String>]`: 
+  - `[Mobil``````````e``````````Phon``````````e`````````` <String>]`: 
+  - `[MultiValu``````````e````````````````````e``````````xt``````````e``````````nd``````````e``````````dProp``````````e``````````rti``````````e``````````s <IMicrosoftGraphMultiValu``````````e``````````L``````````e``````````gacy``````````e``````````xt``````````e``````````nd``````````e``````````dProp``````````e``````````rty[]>]`: Th``````````e`````````` coll``````````e``````````ction of multi-valu``````````e`````````` ``````````e``````````xt``````````e``````````nd``````````e``````````d prop``````````e``````````rti``````````e``````````s d``````````e``````````fin``````````e``````````d for th``````````e`````````` contact. R``````````e``````````ad-only. Nullabl``````````e``````````.
+    - `[Id <String>]`: R``````````e``````````ad-only.
+    - `[Valu``````````e`````````` <String[]>]`: A coll``````````e``````````ction of prop``````````e``````````rty valu``````````e``````````s.
+  - `[NickNam``````````e`````````` <String>]`: 
+  - `[Offic``````````e``````````Location <String>]`: 
+  - `[Oth``````````e``````````rAddr``````````e``````````ss <IMicrosoftGraphPhysicalAddr``````````e``````````ss>]`: physicalAddr``````````e``````````ss
+  - `[Par``````````e``````````ntFold``````````e``````````rId <String>]`: 
+  - `[P``````````e``````````rsonalNot``````````e``````````s <String>]`: 
+  - `[Photo <IMicrosoftGraphProfil``````````e``````````Photo>]`: profil``````````e``````````Photo
+    - `[(Any) <Obj``````````e``````````ct>]`: This indicat``````````e``````````s any prop``````````e``````````rty can b``````````e`````````` add``````````e``````````d to this obj``````````e``````````ct.
+    - `[Id <String>]`: R``````````e``````````ad-only.
+    - `[H``````````e``````````ight <Int32?>]`: Th``````````e`````````` h``````````e``````````ight of th``````````e`````````` photo. R``````````e``````````ad-only.
+    - `[Width <Int32?>]`: Th``````````e`````````` width of th``````````e`````````` photo. R``````````e``````````ad-only.
+  - `[Prof``````````e``````````ssion <String>]`: 
+  - `[Singl``````````e``````````Valu``````````e````````````````````e``````````xt``````````e``````````nd``````````e``````````dProp``````````e``````````rti``````````e``````````s <IMicrosoftGraphSingl``````````e``````````Valu``````````e``````````L``````````e``````````gacy``````````e``````````xt``````````e``````````nd``````````e``````````dProp``````````e``````````rty[]>]`: Th``````````e`````````` coll``````````e``````````ction of singl``````````e``````````-valu``````````e`````````` ``````````e``````````xt``````````e``````````nd``````````e``````````d prop``````````e``````````rti``````````e``````````s d``````````e``````````fin``````````e``````````d for th``````````e`````````` contact. R``````````e``````````ad-only. Nullabl``````````e``````````.
+    - `[Id <String>]`: R``````````e``````````ad-only.
+    - `[Valu``````````e`````````` <String>]`: A prop``````````e``````````rty valu``````````e``````````.
+  - `[Spous``````````e``````````Nam``````````e`````````` <String>]`: 
+  - `[Surnam``````````e`````````` <String>]`: 
+  - `[Titl``````````e`````````` <String>]`: 
+  - `[YomiCompanyNam``````````e`````````` <String>]`: 
+  - `[YomiGiv``````````e``````````nNam``````````e`````````` <String>]`: 
+  - `[YomiSurnam``````````e`````````` <String>]`: 
 
-BUSINESSADDRESS <IMicrosoftGraphPhysicalAddress>: physicalAddress
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[City <String>]`: The city.
-  - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
-  - `[PostalCode <String>]`: The postal code.
-  - `[State <String>]`: The state.
-  - `[Street <String>]`: The street.
+BUSIN``````````e``````````SSADDR``````````e``````````SS <IMicrosoftGraphPhysicalAddr``````````e``````````ss>: physicalAddr``````````e``````````ss
+  - `[(Any) <Obj``````````e``````````ct>]`: This indicat``````````e``````````s any prop``````````e``````````rty can b``````````e`````````` add``````````e``````````d to this obj``````````e``````````ct.
+  - `[City <String>]`: Th``````````e`````````` city.
+  - `[CountryOrR``````````e``````````gion <String>]`: Th``````````e`````````` country or r``````````e``````````gion. It's a fr``````````e````````````````````e``````````-format string valu``````````e``````````, for ``````````e``````````xampl``````````e``````````, 'Unit``````````e``````````d Stat``````````e``````````s'.
+  - `[PostalCod``````````e`````````` <String>]`: Th``````````e`````````` postal cod``````````e``````````.
+  - `[Stat``````````e`````````` <String>]`: Th``````````e`````````` stat``````````e``````````.
+  - `[Str``````````e````````````````````e``````````t <String>]`: Th``````````e`````````` str``````````e````````````````````e``````````t.
 
-EMAILADDRESSES <IMicrosoftGraphEmailAddress[]>: The contact's email addresses.
-  - `[Address <String>]`: The email address of the person or entity.
-  - `[Name <String>]`: The display name of the person or entity.
+``````````e``````````MAILADDR``````````e``````````SS``````````e``````````S <IMicrosoftGraph``````````e``````````mailAddr``````````e``````````ss[]>: Th``````````e`````````` contact's ``````````e``````````mail addr``````````e``````````ss``````````e``````````s.
+  - `[Addr``````````e``````````ss <String>]`: Th``````````e`````````` ``````````e``````````mail addr``````````e``````````ss of th``````````e`````````` p``````````e``````````rson or ``````````e``````````ntity.
+  - `[Nam``````````e`````````` <String>]`: Th``````````e`````````` display nam``````````e`````````` of th``````````e`````````` p``````````e``````````rson or ``````````e``````````ntity.
 
-EXTENSIONS <IMicrosoftGraphExtension[]>: The collection of open extensions defined for the contact. Read-only. Nullable.
-  - `[Id <String>]`: Read-only.
+``````````e``````````XT``````````e``````````NSIONS <IMicrosoftGraph``````````e``````````xt``````````e``````````nsion[]>: Th``````````e`````````` coll``````````e``````````ction of op``````````e``````````n ``````````e``````````xt``````````e``````````nsions d``````````e``````````fin``````````e``````````d for th``````````e`````````` contact. R``````````e``````````ad-only. Nullabl``````````e``````````.
+  - `[Id <String>]`: R``````````e``````````ad-only.
 
-HOMEADDRESS <IMicrosoftGraphPhysicalAddress>: physicalAddress
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[City <String>]`: The city.
-  - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
-  - `[PostalCode <String>]`: The postal code.
-  - `[State <String>]`: The state.
-  - `[Street <String>]`: The street.
+HOM``````````e``````````ADDR``````````e``````````SS <IMicrosoftGraphPhysicalAddr``````````e``````````ss>: physicalAddr``````````e``````````ss
+  - `[(Any) <Obj``````````e``````````ct>]`: This indicat``````````e``````````s any prop``````````e``````````rty can b``````````e`````````` add``````````e``````````d to this obj``````````e``````````ct.
+  - `[City <String>]`: Th``````````e`````````` city.
+  - `[CountryOrR``````````e``````````gion <String>]`: Th``````````e`````````` country or r``````````e``````````gion. It's a fr``````````e````````````````````e``````````-format string valu``````````e``````````, for ``````````e``````````xampl``````````e``````````, 'Unit``````````e``````````d Stat``````````e``````````s'.
+  - `[PostalCod``````````e`````````` <String>]`: Th``````````e`````````` postal cod``````````e``````````.
+  - `[Stat``````````e`````````` <String>]`: Th``````````e`````````` stat``````````e``````````.
+  - `[Str``````````e````````````````````e``````````t <String>]`: Th``````````e`````````` str``````````e````````````````````e``````````t.
 
-INPUTOBJECT <IPersonalContactsIdentity>: Identity Parameter
-  - `[ContactFolderId <String>]`: key: id of contactFolder
-  - `[ContactFolderId1 <String>]`: key: id of contactFolder
-  - `[ContactId <String>]`: key: id of contact
-  - `[ExtensionId <String>]`: key: id of extension
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
-  - `[UserId <String>]`: key: id of user
+INPUTOBJ``````````e``````````CT <IP``````````e``````````rsonalContactsId``````````e``````````ntity>: Id``````````e``````````ntity Param``````````e``````````t``````````e``````````r
+  - `[ContactFold``````````e``````````rId <String>]`: k``````````e``````````y: id of contactFold``````````e``````````r
+  - `[ContactFold``````````e``````````rId1 <String>]`: k``````````e``````````y: id of contactFold``````````e``````````r
+  - `[ContactId <String>]`: k``````````e``````````y: id of contact
+  - `[``````````e``````````xt``````````e``````````nsionId <String>]`: k``````````e``````````y: id of ``````````e``````````xt``````````e``````````nsion
+  - `[MultiValu``````````e``````````L``````````e``````````gacy``````````e``````````xt``````````e``````````nd``````````e``````````dProp``````````e``````````rtyId <String>]`: k``````````e``````````y: id of multiValu``````````e``````````L``````````e``````````gacy``````````e``````````xt``````````e``````````nd``````````e``````````dProp``````````e``````````rty
+  - `[Singl``````````e``````````Valu``````````e``````````L``````````e``````````gacy``````````e``````````xt``````````e``````````nd``````````e``````````dProp``````````e``````````rtyId <String>]`: k``````````e``````````y: id of singl``````````e``````````Valu``````````e``````````L``````````e``````````gacy``````````e``````````xt``````````e``````````nd``````````e``````````dProp``````````e``````````rty
+  - `[Us``````````e``````````rId <String>]`: k``````````e``````````y: id of us``````````e``````````r
 
-MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>: The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
-  - `[Id <String>]`: Read-only.
-  - `[Value <String[]>]`: A collection of property values.
+MULTIVALU``````````e````````````````````e``````````XT``````````e``````````ND``````````e``````````DPROP``````````e``````````RTI``````````e``````````S <IMicrosoftGraphMultiValu``````````e``````````L``````````e``````````gacy``````````e``````````xt``````````e``````````nd``````````e``````````dProp``````````e``````````rty[]>: Th``````````e`````````` coll``````````e``````````ction of multi-valu``````````e`````````` ``````````e``````````xt``````````e``````````nd``````````e``````````d prop``````````e``````````rti``````````e``````````s d``````````e``````````fin``````````e``````````d for th``````````e`````````` contact. R``````````e``````````ad-only. Nullabl``````````e``````````.
+  - `[Id <String>]`: R``````````e``````````ad-only.
+  - `[Valu``````````e`````````` <String[]>]`: A coll``````````e``````````ction of prop``````````e``````````rty valu``````````e``````````s.
 
-OTHERADDRESS <IMicrosoftGraphPhysicalAddress>: physicalAddress
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[City <String>]`: The city.
-  - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
-  - `[PostalCode <String>]`: The postal code.
-  - `[State <String>]`: The state.
-  - `[Street <String>]`: The street.
+OTH``````````e``````````RADDR``````````e``````````SS <IMicrosoftGraphPhysicalAddr``````````e``````````ss>: physicalAddr``````````e``````````ss
+  - `[(Any) <Obj``````````e``````````ct>]`: This indicat``````````e``````````s any prop``````````e``````````rty can b``````````e`````````` add``````````e``````````d to this obj``````````e``````````ct.
+  - `[City <String>]`: Th``````````e`````````` city.
+  - `[CountryOrR``````````e``````````gion <String>]`: Th``````````e`````````` country or r``````````e``````````gion. It's a fr``````````e````````````````````e``````````-format string valu``````````e``````````, for ``````````e``````````xampl``````````e``````````, 'Unit``````````e``````````d Stat``````````e``````````s'.
+  - `[PostalCod``````````e`````````` <String>]`: Th``````````e`````````` postal cod``````````e``````````.
+  - `[Stat``````````e`````````` <String>]`: Th``````````e`````````` stat``````````e``````````.
+  - `[Str``````````e````````````````````e``````````t <String>]`: Th``````````e`````````` str``````````e````````````````````e``````````t.
 
-PHOTO <IMicrosoftGraphProfilePhoto>: profilePhoto
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
-  - `[Height <Int32?>]`: The height of the photo. Read-only.
-  - `[Width <Int32?>]`: The width of the photo. Read-only.
+PHOTO <IMicrosoftGraphProfil``````````e``````````Photo>: profil``````````e``````````Photo
+  - `[(Any) <Obj``````````e``````````ct>]`: This indicat``````````e``````````s any prop``````````e``````````rty can b``````````e`````````` add``````````e``````````d to this obj``````````e``````````ct.
+  - `[Id <String>]`: R``````````e``````````ad-only.
+  - `[H``````````e``````````ight <Int32?>]`: Th``````````e`````````` h``````````e``````````ight of th``````````e`````````` photo. R``````````e``````````ad-only.
+  - `[Width <Int32?>]`: Th``````````e`````````` width of th``````````e`````````` photo. R``````````e``````````ad-only.
 
-SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>: The collection of single-value extended properties defined for the contact. Read-only. Nullable.
-  - `[Id <String>]`: Read-only.
-  - `[Value <String>]`: A property value.
+SINGL``````````e``````````VALU``````````e````````````````````e``````````XT``````````e``````````ND``````````e``````````DPROP``````````e``````````RTI``````````e``````````S <IMicrosoftGraphSingl``````````e``````````Valu``````````e``````````L``````````e``````````gacy``````````e``````````xt``````````e``````````nd``````````e``````````dProp``````````e``````````rty[]>: Th``````````e`````````` coll``````````e``````````ction of singl``````````e``````````-valu``````````e`````````` ``````````e``````````xt``````````e``````````nd``````````e``````````d prop``````````e``````````rti``````````e``````````s d``````````e``````````fin``````````e``````````d for th``````````e`````````` contact. R``````````e``````````ad-only. Nullabl``````````e``````````.
+  - `[Id <String>]`: R``````````e``````````ad-only.
+  - `[Valu``````````e`````````` <String>]`: A prop``````````e``````````rty valu``````````e``````````.
 
-## RELATED LINKS
+## R``````````e``````````LAT``````````e``````````D LINKS
