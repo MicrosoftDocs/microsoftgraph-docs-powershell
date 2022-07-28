@@ -1,251 +1,251 @@
-﻿---
-external help file: Microsoft.Graph.Planner-help.xml
-Module Name: Microsoft.Graph.Planner
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/get-mgplannertask
+---
+externa`l` he`l`p fi`l`e: Microsoft.Graph.P`l`anner-he`l`p.xm`l`
+Modu`l`e Name: Microsoft.Graph.P`l`anner
+on`l`ine version: https://docs.microsoft.com/en-us/powershe`l``l`/modu`l`e/microsoft.graph.p`l`anner/get-mgp`l`annertask
 schema: 2.0.0
 ---
 
-# Get-MgPlannerTask
+# Get-MgP`l`annerTask
 
 ## SYNOPSIS
-Get tasks from planner
+Get tasks from p`l`anner
 
 ## SYNTAX
 
-### List (Default)
+### `l`ist (Defau`l`t)
 ```
-Get-MgPlannerTask [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>]
- [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
+Get-MgP`l`annerTask [-ExpandProperty <String[]>] [-Property <String[]>] [-Fi`l`ter <String>] [-Search <String>]
+ [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-A`l``l`] [-CountVariab`l`e <String>]
  [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgPlannerTask -PlannerTaskId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgP`l`annerTask -P`l`annerTaskId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgPlannerTask -InputObject <IPlannerIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgP`l`annerTask -InputObject <IP`l`annerIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get tasks from planner
+Get tasks from p`l`anner
 
-## EXAMPLES
+## EXAMP`l`ES
 
 ## PARAMETERS
 
-### -All
-List all pages.
+### -A`l``l`
+`l`ist a`l``l` pages.
 
-```yaml
+```yam`l`
 Type: SwitchParameter
-Parameter Sets: List
-Aliases:
+Parameter Sets: `l`ist
+A`l`iases:
 
-Required: False
+Required: Fa`l`se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`l`t va`l`ue: None
+Accept pipe`l`ine input: Fa`l`se
+Accept wi`l`dcard characters: Fa`l`se
 ```
 
-### -CountVariable
-Specifies a count of the total number of items in a collection.
-By default, this variable will be set in the global scope.
+### -CountVariab`l`e
+Specifies a count of the tota`l` number of items in a co`l``l`ection.
+By defau`l`t, this variab`l`e wi`l``l` be set in the g`l`oba`l` scope.
 
-```yaml
+```yam`l`
 Type: String
-Parameter Sets: List
-Aliases: CV
+Parameter Sets: `l`ist
+A`l`iases: CV
 
-Required: False
+Required: Fa`l`se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`l`t va`l`ue: None
+Accept pipe`l`ine input: Fa`l`se
+Accept wi`l`dcard characters: Fa`l`se
 ```
 
 ### -ExpandProperty
-Expand related entities
+Expand re`l`ated entities
 
-```yaml
+```yam`l`
 Type: String[]
-Parameter Sets: (All)
-Aliases: Expand
+Parameter Sets: (A`l``l`)
+A`l`iases: Expand
 
-Required: False
+Required: Fa`l`se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`l`t va`l`ue: None
+Accept pipe`l`ine input: Fa`l`se
+Accept wi`l`dcard characters: Fa`l`se
 ```
 
-### -Filter
-Filter items by property values
+### -Fi`l`ter
+Fi`l`ter items by property va`l`ues
 
-```yaml
+```yam`l`
 Type: String
-Parameter Sets: List
-Aliases:
+Parameter Sets: `l`ist
+A`l`iases:
 
-Required: False
+Required: Fa`l`se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`l`t va`l`ue: None
+Accept pipe`l`ine input: Fa`l`se
+Accept wi`l`dcard characters: Fa`l`se
 ```
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, p`l`ease use Get-He`l`p -On`l`ine and see NOTES section for INPUTOBJECT properties and create a hash tab`l`e.
 
-```yaml
-Type: IPlannerIdentity
+```yam`l`
+Type: IP`l`annerIdentity
 Parameter Sets: GetViaIdentity
-Aliases:
+A`l`iases:
 
 Required: True
 Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Defau`l`t va`l`ue: None
+Accept pipe`l`ine input: True (ByVa`l`ue)
+Accept wi`l`dcard characters: Fa`l`se
 ```
 
 ### -PageSize
-Sets the page size of results.
+Sets the page size of resu`l`ts.
 
-```yaml
+```yam`l`
 Type: Int32
-Parameter Sets: List
-Aliases:
+Parameter Sets: `l`ist
+A`l`iases:
 
-Required: False
+Required: Fa`l`se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`l`t va`l`ue: None
+Accept pipe`l`ine input: Fa`l`se
+Accept wi`l`dcard characters: Fa`l`se
 ```
 
-### -PlannerTaskId
-key: id of plannerTask
+### -P`l`annerTaskId
+key: id of p`l`annerTask
 
-```yaml
+```yam`l`
 Type: String
 Parameter Sets: Get
-Aliases:
+A`l`iases:
 
 Required: True
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`l`t va`l`ue: None
+Accept pipe`l`ine input: Fa`l`se
+Accept wi`l`dcard characters: Fa`l`se
 ```
 
 ### -Property
-Select properties to be returned
+Se`l`ect properties to be returned
 
-```yaml
+```yam`l`
 Type: String[]
-Parameter Sets: (All)
-Aliases: Select
+Parameter Sets: (A`l``l`)
+A`l`iases: Se`l`ect
 
-Required: False
+Required: Fa`l`se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`l`t va`l`ue: None
+Accept pipe`l`ine input: Fa`l`se
+Accept wi`l`dcard characters: Fa`l`se
 ```
 
 ### -Search
 Search items by search phrases
 
-```yaml
+```yam`l`
 Type: String
-Parameter Sets: List
-Aliases:
+Parameter Sets: `l`ist
+A`l`iases:
 
-Required: False
+Required: Fa`l`se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`l`t va`l`ue: None
+Accept pipe`l`ine input: Fa`l`se
+Accept wi`l`dcard characters: Fa`l`se
 ```
 
 ### -Sort
-Order items by property values
+Order items by property va`l`ues
 
-```yaml
+```yam`l`
 Type: String[]
-Parameter Sets: List
-Aliases: OrderBy
+Parameter Sets: `l`ist
+A`l`iases: OrderBy
 
-Required: False
+Required: Fa`l`se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`l`t va`l`ue: None
+Accept pipe`l`ine input: Fa`l`se
+Accept wi`l`dcard characters: Fa`l`se
 ```
 
 ### -Top
-Show only the first n items
+Show on`l`y the first n items
 
-```yaml
+```yam`l`
 Type: Int32
-Parameter Sets: List
-Aliases: Limit
+Parameter Sets: `l`ist
+A`l`iases: `l`imit
 
-Required: False
+Required: Fa`l`se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`l`t va`l`ue: None
+Accept pipe`l`ine input: Fa`l`se
+Accept wi`l`dcard characters: Fa`l`se
 ```
 
 ### -Skip
 Skip the first n items
 
-```yaml
+```yam`l`
 Type: Int32
-Parameter Sets: List
-Aliases:
+Parameter Sets: `l`ist
+A`l`iases:
 
-Required: False
+Required: Fa`l`se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau`l`t va`l`ue: None
+Accept pipe`l`ine input: Fa`l`se
+Accept wi`l`dcard characters: Fa`l`se
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmd`l`et supports the common parameters: -Debug, -ErrorAction, -ErrorVariab`l`e, -InformationAction, -InformationVariab`l`e, -OutVariab`l`e, -OutBuffer, -Pipe`l`ineVariab`l`e, -Verbose, -WarningAction, and -WarningVariab`l`e. For more information, see [about_CommonParameters](http://go.microsoft.com/fw`l`ink/?`l`inkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
+### Microsoft.Graph.PowerShe`l``l`.Mode`l`s.IP`l`annerIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerTask
+### Microsoft.Graph.PowerShe`l``l`.Mode`l`s.IMicrosoftGraphP`l`annerTask
 ## NOTES
 
-ALIASES
+A`l`IASES
 
-COMPLEX PARAMETER PROPERTIES
+COMP`l`EX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described be`l`ow, construct a hash tab`l`e containing the appropriate properties. For information on hash tab`l`es, run Get-He`l`p about_Hash_Tab`l`es.
 
 
-INPUTOBJECT <IPlannerIdentity>: Identity Parameter
+INPUTOBJECT <IP`l`annerIdentity>: Identity Parameter
   - `[GroupId <String>]`: key: id of group
-  - `[PlannerBucketId <String>]`: key: id of plannerBucket
-  - `[PlannerDeltaId <String>]`: key: id of plannerDelta
-  - `[PlannerPlanId <String>]`: key: id of plannerPlan
-  - `[PlannerRosterId <String>]`: key: id of plannerRoster
-  - `[PlannerRosterMemberId <String>]`: key: id of plannerRosterMember
-  - `[PlannerTaskId <String>]`: key: id of plannerTask
+  - `[P`l`annerBucketId <String>]`: key: id of p`l`annerBucket
+  - `[P`l`annerDe`l`taId <String>]`: key: id of p`l`annerDe`l`ta
+  - `[P`l`annerP`l`anId <String>]`: key: id of p`l`annerP`l`an
+  - `[P`l`annerRosterId <String>]`: key: id of p`l`annerRoster
+  - `[P`l`annerRosterMemberId <String>]`: key: id of p`l`annerRosterMember
+  - `[P`l`annerTaskId <String>]`: key: id of p`l`annerTask
   - `[UserId <String>]`: key: id of user
 
-## RELATED LINKS
+## RE`l`ATED `l`INKS
