@@ -1,313 +1,313 @@
-﻿---
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/copy-mgteam
-schema: 2.0.0
+---
+``e``xt``e``rnal h``e``lp fil``e``: Microsoft.Graph.T``e``ams-h``e``lp.xml
+Modul``e`` Nam``e``: Microsoft.Graph.T``e``ams
+onlin``e`` v``e``rsion: https://docs.microsoft.com/``e``n-us/pow``e``rsh``e``ll/modul``e``/microsoft.graph.t``e``ams/copy-mgt``e``am
+sch``e``ma: 2.0.0
 ---
 
-# Copy-MgTeam
+# Copy-MgT``e``am
 
 ## SYNOPSIS
-Invoke action clone
+Invok``e`` action clon``e``
 
 ## SYNTAX
 
-### CloneExpanded1 (Default)
+### Clon``e````e``xpand``e``d1 (D``e``fault)
 ```
-Copy-MgTeam -TeamId <String> [-AdditionalProperties <Hashtable>] [-Classification <String>]
- [-Description <String>] [-DisplayName <String>] [-MailNickname <String>] [-PartsToClone <String>]
- [-Visibility <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Clone1
-```
-Copy-MgTeam -TeamId <String>
- -BodyParameter <IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema1>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Copy-MgT``e``am -T``e``amId <String> [-AdditionalProp``e``rti``e``s <Hashtabl``e``>] [-Classification <String>]
+ [-D``e``scription <String>] [-DisplayNam``e`` <String>] [-MailNicknam``e`` <String>] [-PartsToClon``e`` <String>]
+ [-Visibility <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParam``e``t``e``rs>]
 ```
 
-### CloneViaIdentityExpanded1
+### Clon``e``1
 ```
-Copy-MgTeam -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>] [-Classification <String>]
- [-Description <String>] [-DisplayName <String>] [-MailNickname <String>] [-PartsToClone <String>]
- [-Visibility <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CloneViaIdentity1
-```
-Copy-MgTeam -InputObject <ITeamsIdentity>
- -BodyParameter <IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema1>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Copy-MgT``e``am -T``e``amId <String>
+ -BodyParam``e``t``e``r <IPaths1Izic0UT``e``amsT``e``amIdMicrosoftGraphClon``e``PostR``e``qu``e``stbodyCont``e``ntApplicationJsonSch``e``ma1>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParam``e``t``e``rs>]
 ```
 
-## DESCRIPTION
-Invoke action clone
+### Clon``e``ViaId``e``ntity``e``xpand``e``d1
+```
+Copy-MgT``e``am -InputObj``e``ct <IT``e``amsId``e``ntity> [-AdditionalProp``e``rti``e``s <Hashtabl``e``>] [-Classification <String>]
+ [-D``e``scription <String>] [-DisplayNam``e`` <String>] [-MailNicknam``e`` <String>] [-PartsToClon``e`` <String>]
+ [-Visibility <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParam``e``t``e``rs>]
+```
 
-## EXAMPLES
+### Clon``e``ViaId``e``ntity1
+```
+Copy-MgT``e``am -InputObj``e``ct <IT``e``amsId``e``ntity>
+ -BodyParam``e``t``e``r <IPaths1Izic0UT``e``amsT``e``amIdMicrosoftGraphClon``e``PostR``e``qu``e``stbodyCont``e``ntApplicationJsonSch``e``ma1>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParam``e``t``e``rs>]
+```
 
-## PARAMETERS
+## D``e``SCRIPTION
+Invok``e`` action clon``e``
 
-### -AdditionalProperties
-Additional Parameters
+## ``e``XAMPL``e``S
+
+## PARAM``e``T``e``RS
+
+### -AdditionalProp``e``rti``e``s
+Additional Param``e``t``e``rs
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CloneExpanded1, CloneViaIdentityExpanded1
-Aliases:
+Typ``e``: Hashtabl``e``
+Param``e``t``e``r S``e``ts: Clon``e````e``xpand``e``d1, Clon``e``ViaId``e``ntity``e``xpand``e``d1
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -BodyParameter
+### -BodyParam``e``t``e``r
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, pl``e``as``e`` us``e`` G``e``t-H``e``lp -Onlin``e`` and s``e````e`` NOT``e``S s``e``ction for BODYPARAM``e``T``e``R prop``e``rti``e``s and cr``e``at``e`` a hash tabl``e``.
 
 ```yaml
-Type: IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema1
-Parameter Sets: Clone1, CloneViaIdentity1
-Aliases:
+Typ``e``: IPaths1Izic0UT``e``amsT``e``amIdMicrosoftGraphClon``e``PostR``e``qu``e``stbodyCont``e``ntApplicationJsonSch``e``ma1
+Param``e``t``e``r S``e``ts: Clon``e``1, Clon``e``ViaId``e``ntity1
+Alias``e``s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R``e``quir``e``d: Tru``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Tru``e`` (ByValu``e``)
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
 ### -Classification
 .
 
 ```yaml
-Type: String
-Parameter Sets: CloneExpanded1, CloneViaIdentityExpanded1
-Aliases:
+Typ``e``: String
+Param``e``t``e``r S``e``ts: Clon``e````e``xpand``e``d1, Clon``e``ViaId``e``ntity``e``xpand``e``d1
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -Description
+### -D``e``scription
 .
 
 ```yaml
-Type: String
-Parameter Sets: CloneExpanded1, CloneViaIdentityExpanded1
-Aliases:
+Typ``e``: String
+Param``e``t``e``r S``e``ts: Clon``e````e``xpand``e``d1, Clon``e``ViaId``e``ntity``e``xpand``e``d1
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -DisplayName
+### -DisplayNam``e``
 .
 
 ```yaml
-Type: String
-Parameter Sets: CloneExpanded1, CloneViaIdentityExpanded1
-Aliases:
+Typ``e``: String
+Param``e``t``e``r S``e``ts: Clon``e````e``xpand``e``d1, Clon``e``ViaId``e``ntity``e``xpand``e``d1
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -InputObj``e``ct
+Id``e``ntity Param``e``t``e``r
+To construct, pl``e``as``e`` us``e`` G``e``t-H``e``lp -Onlin``e`` and s``e````e`` NOT``e``S s``e``ction for INPUTOBJ``e``CT prop``e``rti``e``s and cr``e``at``e`` a hash tabl``e``.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: CloneViaIdentityExpanded1, CloneViaIdentity1
-Aliases:
+Typ``e``: IT``e``amsId``e``ntity
+Param``e``t``e``r S``e``ts: Clon``e``ViaId``e``ntity``e``xpand``e``d1, Clon``e``ViaId``e``ntity1
+Alias``e``s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R``e``quir``e``d: Tru``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Tru``e`` (ByValu``e``)
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -MailNickname
+### -MailNicknam``e``
 .
 
 ```yaml
-Type: String
-Parameter Sets: CloneExpanded1, CloneViaIdentityExpanded1
-Aliases:
+Typ``e``: String
+Param``e``t``e``r S``e``ts: Clon``e````e``xpand``e``d1, Clon``e``ViaId``e``ntity``e``xpand``e``d1
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -PartsToClone
-clonableTeamParts
+### -PartsToClon``e``
+clonabl``e``T``e``amParts
 
 ```yaml
-Type: String
-Parameter Sets: CloneExpanded1, CloneViaIdentityExpanded1
-Aliases:
+Typ``e``: String
+Param``e``t``e``r S``e``ts: Clon``e````e``xpand``e``d1, Clon``e``ViaId``e``ntity``e``xpand``e``d1
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
 ### -PassThru
-Returns true when the command succeeds
+R``e``turns tru``e`` wh``e``n th``e`` command succ``e````e``ds
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
+Typ``e``: SwitchParam``e``t``e``r
+Param``e``t``e``r S``e``ts: (All)
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### -TeamId
-key: id of team
+### -T``e``amId
+k``e``y: id of t``e``am
 
 ```yaml
-Type: String
-Parameter Sets: CloneExpanded1, Clone1
-Aliases:
+Typ``e``: String
+Param``e``t``e``r S``e``ts: Clon``e````e``xpand``e``d1, Clon``e``1
+Alias``e``s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Tru``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
 ### -Visibility
-teamVisibilityType
+t``e``amVisibilityTyp``e``
 
 ```yaml
-Type: String
-Parameter Sets: CloneExpanded1, CloneViaIdentityExpanded1
-Aliases:
+Typ``e``: String
+Param``e``t``e``r S``e``ts: Clon``e````e``xpand``e``d1, Clon``e``ViaId``e``ntity``e``xpand``e``d1
+Alias``e``s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation b``e``for``e`` running th``e`` cmdl``e``t.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Typ``e``: SwitchParam``e``t``e``r
+Param``e``t``e``r S``e``ts: (All)
+Alias``e``s: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happ``e``n if th``e`` cmdl``e``t runs.
+Th``e`` cmdl``e``t is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Typ``e``: SwitchParam``e``t``e``r
+Param``e``t``e``r S``e``ts: (All)
+Alias``e``s: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R``e``quir``e``d: Fals``e``
+Position: Nam``e``d
+D``e``fault valu``e``: Non``e``
+Acc``e``pt pip``e``lin``e`` input: Fals``e``
+Acc``e``pt wildcard charact``e``rs: Fals``e``
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam``e``t``e``rs
+This cmdl``e``t supports th``e`` common param``e``t``e``rs: -D``e``bug, -``e``rrorAction, -``e``rrorVariabl``e``, -InformationAction, -InformationVariabl``e``, -OutVariabl``e``, -OutBuff``e``r, -Pip``e``lin``e``Variabl``e``, -V``e``rbos``e``, -WarningAction, and -WarningVariabl``e``. For mor``e`` information, s``e````e`` [about_CommonParam``e``t``e``rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema1
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Pow``e``rSh``e``ll.Mod``e``ls.IPaths1Izic0UT``e``amsT``e``amIdMicrosoftGraphClon``e``PostR``e``qu``e``stbodyCont``e``ntApplicationJsonSch``e``ma1
+### Microsoft.Graph.Pow``e``rSh``e``ll.Mod``e``ls.IT``e``amsId``e``ntity
 ## OUTPUTS
 
-### System.Boolean
-## NOTES
+### Syst``e``m.Bool``e``an
+## NOT``e``S
 
-ALIASES
+ALIAS``e``S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL``e``X PARAM``e``T``e``R PROP``e``RTI``e``S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr``e``at``e`` th``e`` param``e``t``e``rs d``e``scrib``e``d b``e``low, construct a hash tabl``e`` containing th``e`` appropriat``e`` prop``e``rti``e``s. For information on hash tabl``e``s, run G``e``t-H``e``lp about_Hash_Tabl``e``s.
 
 
-BODYPARAMETER <IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema1>: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+BODYPARAM``e``T``e``R <IPaths1Izic0UT``e``amsT``e``amIdMicrosoftGraphClon``e``PostR``e``qu``e``stbodyCont``e``ntApplicationJsonSch``e``ma1>: .
+  - `[(Any) <Obj``e``ct>]`: This indicat``e``s any prop``e``rty can b``e`` add``e``d to this obj``e``ct.
   - `[Classification <String>]`: 
-  - `[Description <String>]`: 
-  - `[DisplayName <String>]`: 
-  - `[MailNickname <String>]`: 
-  - `[PartsToClone <String>]`: clonableTeamParts
-  - `[Visibility <String>]`: teamVisibilityType
+  - `[D``e``scription <String>]`: 
+  - `[DisplayNam``e`` <String>]`: 
+  - `[MailNicknam``e`` <String>]`: 
+  - `[PartsToClon``e`` <String>]`: clonabl``e``T``e``amParts
+  - `[Visibility <String>]`: t``e``amVisibilityTyp``e``
 
-INPUTOBJECT <ITeamsIdentity>: Identity Parameter
-  - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
-  - `[ChannelId <String>]`: key: id of channel
-  - `[ChatId <String>]`: key: id of chat
-  - `[ChatMessageHostedContentId <String>]`: key: id of chatMessageHostedContent
-  - `[ChatMessageId <String>]`: key: id of chatMessage
-  - `[ChatMessageId1 <String>]`: key: id of chatMessage
-  - `[ConversationMemberId <String>]`: key: id of conversationMember
-  - `[DeletedTeamId <String>]`: key: id of deletedTeam
-  - `[GroupId <String>]`: key: id of group
-  - `[OfferShiftRequestId <String>]`: key: id of offerShiftRequest
-  - `[OpenShiftChangeRequestId <String>]`: key: id of openShiftChangeRequest
-  - `[OpenShiftId <String>]`: key: id of openShift
-  - `[PinnedChatMessageInfoId <String>]`: key: id of pinnedChatMessageInfo
-  - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
-  - `[SchedulingGroupId <String>]`: key: id of schedulingGroup
-  - `[SharedWithChannelTeamInfoId <String>]`: key: id of sharedWithChannelTeamInfo
-  - `[ShiftId <String>]`: key: id of shift
-  - `[SwapShiftsChangeRequestId <String>]`: key: id of swapShiftsChangeRequest
-  - `[TeamId <String>]`: key: id of team
-  - `[TeamsAppDefinitionId <String>]`: key: id of teamsAppDefinition
-  - `[TeamsAppId <String>]`: key: id of teamsApp
-  - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation
-  - `[TeamsAsyncOperationId <String>]`: key: id of teamsAsyncOperation
-  - `[TeamsTabId <String>]`: key: id of teamsTab
-  - `[TeamworkDeviceId <String>]`: key: id of teamworkDevice
-  - `[TeamworkDeviceOperationId <String>]`: key: id of teamworkDeviceOperation
-  - `[TeamworkTagId <String>]`: key: id of teamworkTag
-  - `[TeamworkTagMemberId <String>]`: key: id of teamworkTagMember
-  - `[TimeCardId <String>]`: key: id of timeCard
-  - `[TimeOffId <String>]`: key: id of timeOff
-  - `[TimeOffReasonId <String>]`: key: id of timeOffReason
-  - `[TimeOffRequestId <String>]`: key: id of timeOffRequest
-  - `[UserId <String>]`: key: id of user
-  - `[UserScopeTeamsAppInstallationId <String>]`: key: id of userScopeTeamsAppInstallation
-  - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
+INPUTOBJ``e``CT <IT``e``amsId``e``ntity>: Id``e``ntity Param``e``t``e``r
+  - `[Associat``e``dT``e``amInfoId <String>]`: k``e``y: id of associat``e``dT``e``amInfo
+  - `[Chann``e``lId <String>]`: k``e``y: id of chann``e``l
+  - `[ChatId <String>]`: k``e``y: id of chat
+  - `[ChatM``e``ssag``e``Host``e``dCont``e``ntId <String>]`: k``e``y: id of chatM``e``ssag``e``Host``e``dCont``e``nt
+  - `[ChatM``e``ssag``e``Id <String>]`: k``e``y: id of chatM``e``ssag``e``
+  - `[ChatM``e``ssag``e``Id1 <String>]`: k``e``y: id of chatM``e``ssag``e``
+  - `[Conv``e``rsationM``e``mb``e``rId <String>]`: k``e``y: id of conv``e``rsationM``e``mb``e``r
+  - `[D``e``l``e``t``e``dT``e``amId <String>]`: k``e``y: id of d``e``l``e``t``e``dT``e``am
+  - `[GroupId <String>]`: k``e``y: id of group
+  - `[Off``e``rShiftR``e``qu``e``stId <String>]`: k``e``y: id of off``e``rShiftR``e``qu``e``st
+  - `[Op``e``nShiftChang``e``R``e``qu``e``stId <String>]`: k``e``y: id of op``e``nShiftChang``e``R``e``qu``e``st
+  - `[Op``e``nShiftId <String>]`: k``e``y: id of op``e``nShift
+  - `[Pinn``e``dChatM``e``ssag``e``InfoId <String>]`: k``e``y: id of pinn``e``dChatM``e``ssag``e``Info
+  - `[R``e``sourc``e``Sp``e``cificP``e``rmissionGrantId <String>]`: k``e``y: id of r``e``sourc``e``Sp``e``cificP``e``rmissionGrant
+  - `[Sch``e``dulingGroupId <String>]`: k``e``y: id of sch``e``dulingGroup
+  - `[Shar``e``dWithChann``e``lT``e``amInfoId <String>]`: k``e``y: id of shar``e``dWithChann``e``lT``e``amInfo
+  - `[ShiftId <String>]`: k``e``y: id of shift
+  - `[SwapShiftsChang``e``R``e``qu``e``stId <String>]`: k``e``y: id of swapShiftsChang``e``R``e``qu``e``st
+  - `[T``e``amId <String>]`: k``e``y: id of t``e``am
+  - `[T``e``amsAppD``e``finitionId <String>]`: k``e``y: id of t``e``amsAppD``e``finition
+  - `[T``e``amsAppId <String>]`: k``e``y: id of t``e``amsApp
+  - `[T``e``amsAppInstallationId <String>]`: k``e``y: id of t``e``amsAppInstallation
+  - `[T``e``amsAsyncOp``e``rationId <String>]`: k``e``y: id of t``e``amsAsyncOp``e``ration
+  - `[T``e``amsTabId <String>]`: k``e``y: id of t``e``amsTab
+  - `[T``e``amworkD``e``vic``e``Id <String>]`: k``e``y: id of t``e``amworkD``e``vic``e``
+  - `[T``e``amworkD``e``vic``e``Op``e``rationId <String>]`: k``e``y: id of t``e``amworkD``e``vic``e``Op``e``ration
+  - `[T``e``amworkTagId <String>]`: k``e``y: id of t``e``amworkTag
+  - `[T``e``amworkTagM``e``mb``e``rId <String>]`: k``e``y: id of t``e``amworkTagM``e``mb``e``r
+  - `[Tim``e``CardId <String>]`: k``e``y: id of tim``e``Card
+  - `[Tim``e``OffId <String>]`: k``e``y: id of tim``e``Off
+  - `[Tim``e``OffR``e``asonId <String>]`: k``e``y: id of tim``e``OffR``e``ason
+  - `[Tim``e``OffR``e``qu``e``stId <String>]`: k``e``y: id of tim``e``OffR``e``qu``e``st
+  - `[Us``e``rId <String>]`: k``e``y: id of us``e``r
+  - `[Us``e``rScop``e``T``e``amsAppInstallationId <String>]`: k``e``y: id of us``e``rScop``e``T``e``amsAppInstallation
+  - `[Workforc``e``Int``e``grationId <String>]`: k``e``y: id of workforc``e``Int``e``gration
 
-## RELATED LINKS
+## R``e``LAT``e``D LINKS
