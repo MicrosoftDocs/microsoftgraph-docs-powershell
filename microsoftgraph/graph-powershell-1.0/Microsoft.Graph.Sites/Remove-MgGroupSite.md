@@ -1,209 +1,209 @@
-﻿---
-external help file: Microsoft.Graph.Groups-help.xml
-Module Name: Microsoft.Graph.Groups
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/remove-mggroupsite
+---
+external help f`i`le: M`i`crosoft.Graph.Groups-help.xml
+Module Name: M`i`crosoft.Graph.Groups
+onl`i`ne vers`i`on: https://docs.m`i`crosoft.com/en-us/powershell/module/m`i`crosoft.graph.s`i`tes/remove-mggroups`i`te
 schema: 2.0.0
 ---
 
-# Remove-MgGroupSite
+# Remove-MgGroupS`i`te
 
-## SYNOPSIS
-The list of SharePoint sites in this group.
-Access the default site with /sites/root.
+## SYNOPS`i`S
+The l`i`st of SharePo`i`nt s`i`tes `i`n th`i`s group.
+Access the default s`i`te w`i`th /s`i`tes/root.
 
 ## SYNTAX
 
 ### RemoveExpanded1 (Default)
 ```
-Remove-MgGroupSite -GroupId <String> [-AdditionalProperties <Hashtable>] [-Value <IMicrosoftGraphSite1[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgGroupS`i`te -Group`i`d <Str`i`ng> [-Add`i`t`i`onalPropert`i`es <Hashtable>] [-Value <`i`M`i`crosoftGraphS`i`te1[]>]
+ [-What`i`f] [-Conf`i`rm] [<CommonParameters>]
 ```
 
 ### Remove1
 ```
-Remove-MgGroupSite -GroupId <String>
- -BodyParameter <IPaths8J6HbtGroupsGroupIdSitesMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema1>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgGroupS`i`te -Group`i`d <Str`i`ng>
+ -BodyParameter <`i`Paths8J6HbtGroupsGroup`i`dS`i`tesM`i`crosoftGraphRemovePostRequestbodyContentAppl`i`cat`i`onJsonSchema1>
+ [-What`i`f] [-Conf`i`rm] [<CommonParameters>]
 ```
 
-### RemoveViaIdentityExpanded1
+### RemoveV`i`a`i`dent`i`tyExpanded1
 ```
-Remove-MgGroupSite -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-Value <IMicrosoftGraphSite1[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### RemoveViaIdentity1
-```
-Remove-MgGroupSite -InputObject <IGroupsIdentity>
- -BodyParameter <IPaths8J6HbtGroupsGroupIdSitesMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema1>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgGroupS`i`te -`i`nputObject <`i`Groups`i`dent`i`ty> [-Add`i`t`i`onalPropert`i`es <Hashtable>]
+ [-Value <`i`M`i`crosoftGraphS`i`te1[]>] [-What`i`f] [-Conf`i`rm] [<CommonParameters>]
 ```
 
-## DESCRIPTION
-The list of SharePoint sites in this group.
-Access the default site with /sites/root.
+### RemoveV`i`a`i`dent`i`ty1
+```
+Remove-MgGroupS`i`te -`i`nputObject <`i`Groups`i`dent`i`ty>
+ -BodyParameter <`i`Paths8J6HbtGroupsGroup`i`dS`i`tesM`i`crosoftGraphRemovePostRequestbodyContentAppl`i`cat`i`onJsonSchema1>
+ [-What`i`f] [-Conf`i`rm] [<CommonParameters>]
+```
+
+## DESCR`i`PT`i`ON
+The l`i`st of SharePo`i`nt s`i`tes `i`n th`i`s group.
+Access the default s`i`te w`i`th /s`i`tes/root.
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -Add`i`t`i`onalPropert`i`es
+Add`i`t`i`onal Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: RemoveExpanded1, RemoveViaIdentityExpanded1
-Aliases:
+Parameter Sets: RemoveExpanded1, RemoveV`i`a`i`dent`i`tyExpanded1
+Al`i`ases:
 
-Required: False
-Position: Named
+Requ`i`red: False
+Pos`i`t`i`on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p`i`pel`i`ne `i`nput: False
+Accept w`i`ldcard characters: False
 ```
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, please use Get-Help -Onl`i`ne and see NOTES sect`i`on for BODYPARAMETER propert`i`es and create a hash table.
 
 ```yaml
-Type: IPaths8J6HbtGroupsGroupIdSitesMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema1
-Parameter Sets: Remove1, RemoveViaIdentity1
-Aliases:
+Type: `i`Paths8J6HbtGroupsGroup`i`dS`i`tesM`i`crosoftGraphRemovePostRequestbodyContentAppl`i`cat`i`onJsonSchema1
+Parameter Sets: Remove1, RemoveV`i`a`i`dent`i`ty1
+Al`i`ases:
 
-Required: True
-Position: Named
+Requ`i`red: True
+Pos`i`t`i`on: Named
 Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept p`i`pel`i`ne `i`nput: True (ByValue)
+Accept w`i`ldcard characters: False
 ```
 
-### -GroupId
-key: id of group
+### -Group`i`d
+key: `i`d of group
 
 ```yaml
-Type: String
+Type: Str`i`ng
 Parameter Sets: RemoveExpanded1, Remove1
-Aliases:
+Al`i`ases:
 
-Required: True
-Position: Named
+Requ`i`red: True
+Pos`i`t`i`on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p`i`pel`i`ne `i`nput: False
+Accept w`i`ldcard characters: False
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -`i`nputObject
+`i`dent`i`ty Parameter
+To construct, please use Get-Help -Onl`i`ne and see NOTES sect`i`on for `i`NPUTOBJECT propert`i`es and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: RemoveViaIdentityExpanded1, RemoveViaIdentity1
-Aliases:
+Type: `i`Groups`i`dent`i`ty
+Parameter Sets: RemoveV`i`a`i`dent`i`tyExpanded1, RemoveV`i`a`i`dent`i`ty1
+Al`i`ases:
 
-Required: True
-Position: Named
+Requ`i`red: True
+Pos`i`t`i`on: Named
 Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept p`i`pel`i`ne `i`nput: True (ByValue)
+Accept w`i`ldcard characters: False
 ```
 
 ### -Value
 .
-To construct, please use Get-Help -Online and see NOTES section for VALUE properties and create a hash table.
+To construct, please use Get-Help -Onl`i`ne and see NOTES sect`i`on for VALUE propert`i`es and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSite1[]
-Parameter Sets: RemoveExpanded1, RemoveViaIdentityExpanded1
-Aliases:
+Type: `i`M`i`crosoftGraphS`i`te1[]
+Parameter Sets: RemoveExpanded1, RemoveV`i`a`i`dent`i`tyExpanded1
+Al`i`ases:
 
-Required: False
-Position: Named
+Requ`i`red: False
+Pos`i`t`i`on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p`i`pel`i`ne `i`nput: False
+Accept w`i`ldcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
+### -Conf`i`rm
+Prompts you for conf`i`rmat`i`on before runn`i`ng the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: Sw`i`tchParameter
 Parameter Sets: (All)
-Aliases: cf
+Al`i`ases: cf
 
-Required: False
-Position: Named
+Requ`i`red: False
+Pos`i`t`i`on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p`i`pel`i`ne `i`nput: False
+Accept w`i`ldcard characters: False
 ```
 
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+### -What`i`f
+Shows what would happen `i`f the cmdlet runs.
+The cmdlet `i`s not run.
 
 ```yaml
-Type: SwitchParameter
+Type: Sw`i`tchParameter
 Parameter Sets: (All)
-Aliases: wi
+Al`i`ases: w`i`
 
-Required: False
-Position: Named
+Requ`i`red: False
+Pos`i`t`i`on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p`i`pel`i`ne `i`nput: False
+Accept w`i`ldcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Th`i`s cmdlet supports the common parameters: -Debug, -ErrorAct`i`on, -ErrorVar`i`able, -`i`nformat`i`onAct`i`on, -`i`nformat`i`onVar`i`able, -OutVar`i`able, -OutBuffer, -P`i`pel`i`neVar`i`able, -Verbose, -Warn`i`ngAct`i`on, and -Warn`i`ngVar`i`able. For more `i`nformat`i`on, see [about_CommonParameters](http://go.m`i`crosoft.com/fwl`i`nk/?L`i`nk`i`D=113216).
 
-## INPUTS
+## `i`NPUTS
 
-### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths8J6HbtGroupsGroupIdSitesMicrosoftGraphRemovePostRequestbodyContentApplicationJsonSchema1
+### M`i`crosoft.Graph.PowerShell.Models.`i`Groups`i`dent`i`ty
+### M`i`crosoft.Graph.PowerShell.Models.`i`Paths8J6HbtGroupsGroup`i`dS`i`tesM`i`crosoftGraphRemovePostRequestbodyContentAppl`i`cat`i`onJsonSchema1
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSite1
+### M`i`crosoft.Graph.PowerShell.Models.`i`M`i`crosoftGraphS`i`te1
 ## NOTES
 
-ALIASES
+AL`i`ASES
 
-COMPLEX PARAMETER PROPERTIES
+COMPLEX PARAMETER PROPERT`i`ES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters descr`i`bed below, construct a hash table conta`i`n`i`ng the appropr`i`ate propert`i`es. For `i`nformat`i`on on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ISitesIdentity>: Identity Parameter
-  - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
-  - `[ColumnLinkId <String>]`: key: id of columnLink
-  - `[ContentTypeId <String>]`: key: id of contentType
-  - `[EndDateTime <String>]`: Usage: endDateTime={endDateTime}
-  - `[GroupId <String>]`: key: id of group
-  - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
-  - `[Interval <String>]`: Usage: interval={interval}
-  - `[ListId <String>]`: key: id of list
-  - `[ListId1 <String>]`: Usage: listId={listId}
-  - `[ListItemId <String>]`: key: id of listItem
-  - `[ListItemVersionId <String>]`: key: id of listItemVersion
-  - `[NotebookId <String>]`: key: id of notebook
-  - `[OnenotePageId <String>]`: key: id of onenotePage
-  - `[OnenoteSectionId <String>]`: key: id of onenoteSection
-  - `[Path <String>]`: Usage: path={path}
-  - `[PermissionId <String>]`: key: id of permission
-  - `[RelationId <String>]`: key: id of relation
-  - `[RichLongRunningOperationId <String>]`: key: id of richLongRunningOperation
-  - `[SetId <String>]`: key: id of set
-  - `[SetId1 <String>]`: key: id of set
-  - `[SiteId <String>]`: key: id of site
-  - `[SitePageId <String>]`: key: id of sitePage
-  - `[StartDateTime <String>]`: Usage: startDateTime={startDateTime}
-  - `[StoreId <String>]`: key: id of store
-  - `[SubscriptionId <String>]`: key: id of subscription
-  - `[TermId <String>]`: key: id of term
-  - `[TermId1 <String>]`: key: id of term
-  - `[Token <String>]`: Usage: token={token}
-  - `[UserId <String>]`: key: id of user
+`i`NPUTOBJECT <`i`S`i`tes`i`dent`i`ty>: `i`dent`i`ty Parameter
+  - `[ColumnDef`i`n`i`t`i`on`i`d <Str`i`ng>]`: key: `i`d of columnDef`i`n`i`t`i`on
+  - `[ColumnL`i`nk`i`d <Str`i`ng>]`: key: `i`d of columnL`i`nk
+  - `[ContentType`i`d <Str`i`ng>]`: key: `i`d of contentType
+  - `[EndDateT`i`me <Str`i`ng>]`: Usage: endDateT`i`me={endDateT`i`me}
+  - `[Group`i`d <Str`i`ng>]`: key: `i`d of group
+  - `[`i`ncludePersonalNotebooks <Boolean?>]`: Usage: `i`ncludePersonalNotebooks={`i`ncludePersonalNotebooks}
+  - `[`i`nterval <Str`i`ng>]`: Usage: `i`nterval={`i`nterval}
+  - `[L`i`st`i`d <Str`i`ng>]`: key: `i`d of l`i`st
+  - `[L`i`st`i`d1 <Str`i`ng>]`: Usage: l`i`st`i`d={l`i`st`i`d}
+  - `[L`i`st`i`tem`i`d <Str`i`ng>]`: key: `i`d of l`i`st`i`tem
+  - `[L`i`st`i`temVers`i`on`i`d <Str`i`ng>]`: key: `i`d of l`i`st`i`temVers`i`on
+  - `[Notebook`i`d <Str`i`ng>]`: key: `i`d of notebook
+  - `[OnenotePage`i`d <Str`i`ng>]`: key: `i`d of onenotePage
+  - `[OnenoteSect`i`on`i`d <Str`i`ng>]`: key: `i`d of onenoteSect`i`on
+  - `[Path <Str`i`ng>]`: Usage: path={path}
+  - `[Perm`i`ss`i`on`i`d <Str`i`ng>]`: key: `i`d of perm`i`ss`i`on
+  - `[Relat`i`on`i`d <Str`i`ng>]`: key: `i`d of relat`i`on
+  - `[R`i`chLongRunn`i`ngOperat`i`on`i`d <Str`i`ng>]`: key: `i`d of r`i`chLongRunn`i`ngOperat`i`on
+  - `[Set`i`d <Str`i`ng>]`: key: `i`d of set
+  - `[Set`i`d1 <Str`i`ng>]`: key: `i`d of set
+  - `[S`i`te`i`d <Str`i`ng>]`: key: `i`d of s`i`te
+  - `[S`i`tePage`i`d <Str`i`ng>]`: key: `i`d of s`i`tePage
+  - `[StartDateT`i`me <Str`i`ng>]`: Usage: startDateT`i`me={startDateT`i`me}
+  - `[Store`i`d <Str`i`ng>]`: key: `i`d of store
+  - `[Subscr`i`pt`i`on`i`d <Str`i`ng>]`: key: `i`d of subscr`i`pt`i`on
+  - `[Term`i`d <Str`i`ng>]`: key: `i`d of term
+  - `[Term`i`d1 <Str`i`ng>]`: key: `i`d of term
+  - `[Token <Str`i`ng>]`: Usage: token={token}
+  - `[User`i`d <Str`i`ng>]`: key: `i`d of user
 
-## RELATED LINKS
+## RELATED L`i`NKS
