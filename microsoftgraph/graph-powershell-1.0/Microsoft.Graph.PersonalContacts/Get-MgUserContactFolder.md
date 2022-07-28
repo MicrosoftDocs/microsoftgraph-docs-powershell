@@ -1,236 +1,236 @@
-﻿---
-external help file: Microsoft.Graph.PersonalContacts-help.xml
-Module Name: Microsoft.Graph.PersonalContacts
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.personalcontacts/get-mgusercontactfolder
-schema: 2.0.0
+---
+`e`xt`e`rnal h`e`lp fil`e`: Microsoft.Graph.P`e`rsonalContacts-h`e`lp.xml
+Modul`e` Nam`e`: Microsoft.Graph.P`e`rsonalContacts
+onlin`e` v`e`rsion: https://docs.microsoft.com/`e`n-us/pow`e`rsh`e`ll/modul`e`/microsoft.graph.p`e`rsonalcontacts/g`e`t-mgus`e`rcontactfold`e`r
+sch`e`ma: 2.0.0
 ---
 
-# Get-MgUserContactFolder
+# G`e`t-MgUs`e`rContactFold`e`r
 
 ## SYNOPSIS
-The user's contacts folders.
-Read-only.
-Nullable.
+Th`e` us`e`r's contacts fold`e`rs.
+R`e`ad-only.
+Nullabl`e`.
 
 ## SYNTAX
 
-### List1 (Default)
+### List1 (D`e`fault)
 ```
-Get-MgUserContactFolder -UserId <String> [-Property <String[]>] [-Filter <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
-```
-
-### Get
-```
-Get-MgUserContactFolder -ContactFolderId <String> -UserId <String> [-Property <String[]>] [<CommonParameters>]
+G`e`t-MgUs`e`rContactFold`e`r -Us`e`rId <String> [-Prop`e`rty <String[]>] [-Filt`e`r <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-Pag`e`Siz`e` <Int32>] [-All] [-CountVariabl`e` <String>] [<CommonParam`e`t`e`rs>]
 ```
 
-### GetViaIdentity
+### G`e`t
 ```
-Get-MgUserContactFolder -InputObject <IPersonalContactsIdentity> [-Property <String[]>] [<CommonParameters>]
+G`e`t-MgUs`e`rContactFold`e`r -ContactFold`e`rId <String> -Us`e`rId <String> [-Prop`e`rty <String[]>] [<CommonParam`e`t`e`rs>]
 ```
 
-## DESCRIPTION
-The user's contacts folders.
-Read-only.
-Nullable.
+### G`e`tViaId`e`ntity
+```
+G`e`t-MgUs`e`rContactFold`e`r -InputObj`e`ct <IP`e`rsonalContactsId`e`ntity> [-Prop`e`rty <String[]>] [<CommonParam`e`t`e`rs>]
+```
 
-## EXAMPLES
+## D`e`SCRIPTION
+Th`e` us`e`r's contacts fold`e`rs.
+R`e`ad-only.
+Nullabl`e`.
 
-## PARAMETERS
+## `e`XAMPL`e`S
+
+## PARAM`e`T`e`RS
 
 ### -All
-List all pages.
+List all pag`e`s.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: List1
-Aliases:
+Typ`e`: SwitchParam`e`t`e`r
+Param`e`t`e`r S`e`ts: List1
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -ContactFolderId
-key: id of contactFolder
+### -ContactFold`e`rId
+k`e`y: id of contactFold`e`r
 
 ```yaml
-Type: String
-Parameter Sets: Get
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: G`e`t
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -CountVariable
-Specifies a count of the total number of items in a collection.
-By default, this variable will be set in the global scope.
+### -CountVariabl`e`
+Sp`e`cifi`e`s a count of th`e` total numb`e`r of it`e`ms in a coll`e`ction.
+By d`e`fault, this variabl`e` will b`e` s`e`t in th`e` global scop`e`.
 
 ```yaml
-Type: String
-Parameter Sets: List1
-Aliases: CV
+Typ`e`: String
+Param`e`t`e`r S`e`ts: List1
+Alias`e`s: CV
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -Filter
-Filter items by property values
+### -Filt`e`r
+Filt`e`r it`e`ms by prop`e`rty valu`e`s
 
 ```yaml
-Type: String
-Parameter Sets: List1
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: List1
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -InputObj`e`ct
+Id`e`ntity Param`e`t`e`r
+To construct, pl`e`as`e` us`e` G`e`t-H`e`lp -Onlin`e` and s`e``e` NOT`e`S s`e`ction for INPUTOBJ`e`CT prop`e`rti`e`s and cr`e`at`e` a hash tabl`e`.
 
 ```yaml
-Type: IPersonalContactsIdentity
-Parameter Sets: GetViaIdentity
-Aliases:
+Typ`e`: IP`e`rsonalContactsId`e`ntity
+Param`e`t`e`r S`e`ts: G`e`tViaId`e`ntity
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Tru`e` (ByValu`e`)
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -PageSize
-Sets the page size of results.
+### -Pag`e`Siz`e`
+S`e`ts th`e` pag`e` siz`e` of r`e`sults.
 
 ```yaml
-Type: Int32
-Parameter Sets: List1
-Aliases:
+Typ`e`: Int32
+Param`e`t`e`r S`e`ts: List1
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -Property
-Select properties to be returned
+### -Prop`e`rty
+S`e`l`e`ct prop`e`rti`e`s to b`e` r`e`turn`e`d
 
 ```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: Select
+Typ`e`: String[]
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s: S`e`l`e`ct
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -Sort
-Order items by property values
+Ord`e`r it`e`ms by prop`e`rty valu`e`s
 
 ```yaml
-Type: String[]
-Parameter Sets: List1
-Aliases: OrderBy
+Typ`e`: String[]
+Param`e`t`e`r S`e`ts: List1
+Alias`e`s: Ord`e`rBy
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -Top
-Show only the first n items
+Show only th`e` first n it`e`ms
 
 ```yaml
-Type: Int32
-Parameter Sets: List1
-Aliases: Limit
+Typ`e`: Int32
+Param`e`t`e`r S`e`ts: List1
+Alias`e`s: Limit
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -UserId
-key: id of user
+### -Us`e`rId
+k`e`y: id of us`e`r
 
 ```yaml
-Type: String
-Parameter Sets: List1, Get
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: List1, G`e`t
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -Skip
-Skip the first n items
+Skip th`e` first n it`e`ms
 
 ```yaml
-Type: Int32
-Parameter Sets: List1
-Aliases:
+Typ`e`: Int32
+Param`e`t`e`r S`e`ts: List1
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam`e`t`e`rs
+This cmdl`e`t supports th`e` common param`e`t`e`rs: -D`e`bug, -`e`rrorAction, -`e`rrorVariabl`e`, -InformationAction, -InformationVariabl`e`, -OutVariabl`e`, -OutBuff`e`r, -Pip`e`lin`e`Variabl`e`, -V`e`rbos`e`, -WarningAction, and -WarningVariabl`e`. For mor`e` information, s`e``e` [about_CommonParam`e`t`e`rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPersonalContactsIdentity
+### Microsoft.Graph.Pow`e`rSh`e`ll.Mod`e`ls.IP`e`rsonalContactsId`e`ntity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContactFolder
-## NOTES
+### Microsoft.Graph.Pow`e`rSh`e`ll.Mod`e`ls.IMicrosoftGraphContactFold`e`r
+## NOT`e`S
 
-ALIASES
+ALIAS`e`S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL`e`X PARAM`e`T`e`R PROP`e`RTI`e`S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr`e`at`e` th`e` param`e`t`e`rs d`e`scrib`e`d b`e`low, construct a hash tabl`e` containing th`e` appropriat`e` prop`e`rti`e`s. For information on hash tabl`e`s, run G`e`t-H`e`lp about_Hash_Tabl`e`s.
 
 
-INPUTOBJECT <IPersonalContactsIdentity>: Identity Parameter
-  - `[ContactFolderId <String>]`: key: id of contactFolder
-  - `[ContactFolderId1 <String>]`: key: id of contactFolder
-  - `[ContactId <String>]`: key: id of contact
-  - `[ExtensionId <String>]`: key: id of extension
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
-  - `[UserId <String>]`: key: id of user
+INPUTOBJ`e`CT <IP`e`rsonalContactsId`e`ntity>: Id`e`ntity Param`e`t`e`r
+  - `[ContactFold`e`rId <String>]`: k`e`y: id of contactFold`e`r
+  - `[ContactFold`e`rId1 <String>]`: k`e`y: id of contactFold`e`r
+  - `[ContactId <String>]`: k`e`y: id of contact
+  - `[`e`xt`e`nsionId <String>]`: k`e`y: id of `e`xt`e`nsion
+  - `[MultiValu`e`L`e`gacy`e`xt`e`nd`e`dProp`e`rtyId <String>]`: k`e`y: id of multiValu`e`L`e`gacy`e`xt`e`nd`e`dProp`e`rty
+  - `[Singl`e`Valu`e`L`e`gacy`e`xt`e`nd`e`dProp`e`rtyId <String>]`: k`e`y: id of singl`e`Valu`e`L`e`gacy`e`xt`e`nd`e`dProp`e`rty
+  - `[Us`e`rId <String>]`: k`e`y: id of us`e`r
 
-## RELATED LINKS
+## R`e`LAT`e`D LINKS
