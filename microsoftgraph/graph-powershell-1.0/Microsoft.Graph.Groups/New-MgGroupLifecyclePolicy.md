@@ -1,185 +1,185 @@
-﻿---
-external help file: Microsoft.Graph.Groups-help.xml
-Module Name: Microsoft.Graph.Groups
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/new-mggrouplifecyclepolicy
+---
+exte`r`nal help file: Mic`r`osoft.G`r`aph.G`r`oups-help.xml
+Module Name: Mic`r`osoft.G`r`aph.G`r`oups
+online ve`r`sion: https://docs.mic`r`osoft.com/en-us/powe`r`shell/module/mic`r`osoft.g`r`aph.g`r`oups/new-mgg`r`ouplifecyclepolicy
 schema: 2.0.0
 ---
 
-# New-MgGroupLifecyclePolicy
+# New-MgG`r`oupLifecyclePolicy
 
 ## SYNOPSIS
-Create groupLifecyclePolicy
+C`r`eate g`r`oupLifecyclePolicy
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### C`r`eateExpanded1 (Default)
 ```
-New-MgGroupLifecyclePolicy [-AdditionalProperties <Hashtable>] [-AlternateNotificationEmails <String>]
- [-GroupLifetimeInDays <Int32>] [-Id <String>] [-ManagedGroupTypes <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Create1
-```
-New-MgGroupLifecyclePolicy -BodyParameter <IMicrosoftGraphGroupLifecyclePolicy> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgG`r`oupLifecyclePolicy [-AdditionalP`r`ope`r`ties <Hashtable>] [-Alte`r`nateNotificationEmails <St`r`ing>]
+ [-G`r`oupLifetimeInDays <Int32>] [-Id <St`r`ing>] [-ManagedG`r`oupTypes <St`r`ing>] [-WhatIf] [-Confi`r`m]
+ [<CommonPa`r`amete`r`s>]
 ```
 
-## DESCRIPTION
-Create groupLifecyclePolicy
+### C`r`eate1
+```
+New-MgG`r`oupLifecyclePolicy -BodyPa`r`amete`r` <IMic`r`osoftG`r`aphG`r`oupLifecyclePolicy> [-WhatIf] [-Confi`r`m]
+ [<CommonPa`r`amete`r`s>]
+```
+
+## DESC`r`IPTION
+C`r`eate g`r`oupLifecyclePolicy
 
 ## EXAMPLES
 
-## PARAMETERS
+## PA`r`AMETE`r`S
 
-### -AdditionalProperties
-Additional Parameters
+### -AdditionalP`r`ope`r`ties
+Additional Pa`r`amete`r`s
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1
+Pa`r`amete`r` Sets: C`r`eateExpanded1
 Aliases:
 
-Required: False
+`r`equi`r`ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
-### -AlternateNotificationEmails
-List of email address to send notifications for groups without owners.
-Multiple email address can be defined by separating email address with a semicolon.
+### -Alte`r`nateNotificationEmails
+List of email add`r`ess to send notifications fo`r` g`r`oups without owne`r`s.
+Multiple email add`r`ess can be defined by sepa`r`ating email add`r`ess with a semicolon.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: St`r`ing
+Pa`r`amete`r` Sets: C`r`eateExpanded1
 Aliases:
 
-Required: False
+`r`equi`r`ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
-### -BodyParameter
-groupLifecyclePolicy
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -BodyPa`r`amete`r`
+g`r`oupLifecyclePolicy
+To const`r`uct, please use Get-Help -Online and see NOTES section fo`r` BODYPA`r`AMETE`r` p`r`ope`r`ties and c`r`eate a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupLifecyclePolicy
-Parameter Sets: Create1
+Type: IMic`r`osoftG`r`aphG`r`oupLifecyclePolicy
+Pa`r`amete`r` Sets: C`r`eate1
 Aliases:
 
-Required: True
+`r`equi`r`ed: T`r`ue
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept pipeline input: T`r`ue (ByValue)
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
-### -GroupLifetimeInDays
-Number of days before a group expires and needs to be renewed.
-Once renewed, the group expiration is extended by the number of days defined.
+### -G`r`oupLifetimeInDays
+Numbe`r` of days befo`r`e a g`r`oup expi`r`es and needs to be `r`enewed.
+Once `r`enewed, the g`r`oup expi`r`ation is extended by the numbe`r` of days defined.
 
 ```yaml
 Type: Int32
-Parameter Sets: CreateExpanded1
+Pa`r`amete`r` Sets: C`r`eateExpanded1
 Aliases:
 
-Required: False
+`r`equi`r`ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
 ### -Id
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: St`r`ing
+Pa`r`amete`r` Sets: C`r`eateExpanded1
 Aliases:
 
-Required: False
+`r`equi`r`ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
-### -ManagedGroupTypes
-The group type for which the expiration policy applies.
-Possible values are All, Selected or None.
+### -ManagedG`r`oupTypes
+The g`r`oup type fo`r` which the expi`r`ation policy applies.
+Possible values a`r`e All, Selected o`r` None.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: St`r`ing
+Pa`r`amete`r` Sets: C`r`eateExpanded1
 Aliases:
 
-Required: False
+`r`equi`r`ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
+### -Confi`r`m
+P`r`ompts you fo`r` confi`r`mation befo`r`e `r`unning the cmdlet.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Type: SwitchPa`r`amete`r`
+Pa`r`amete`r` Sets: (All)
 Aliases: cf
 
-Required: False
+`r`equi`r`ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happen if the cmdlet `r`uns.
+The cmdlet is not `r`un.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Type: SwitchPa`r`amete`r`
+Pa`r`amete`r` Sets: (All)
 Aliases: wi
 
-Required: False
+`r`equi`r`ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonPa`r`amete`r`s
+This cmdlet suppo`r`ts the common pa`r`amete`r`s: -Debug, -E`r``r`o`r`Action, -E`r``r`o`r`Va`r`iable, -Info`r`mationAction, -Info`r`mationVa`r`iable, -OutVa`r`iable, -OutBuffe`r`, -PipelineVa`r`iable, -Ve`r`bose, -Wa`r`ningAction, and -Wa`r`ningVa`r`iable. Fo`r` mo`r`e info`r`mation, see [about_CommonPa`r`amete`r`s](http://go.mic`r`osoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupLifecyclePolicy
+### Mic`r`osoft.G`r`aph.Powe`r`Shell.Models.IMic`r`osoftG`r`aphG`r`oupLifecyclePolicy
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupLifecyclePolicy
+### Mic`r`osoft.G`r`aph.Powe`r`Shell.Models.IMic`r`osoftG`r`aphG`r`oupLifecyclePolicy
 ## NOTES
 
 ALIASES
 
-COMPLEX PARAMETER PROPERTIES
+COMPLEX PA`r`AMETE`r` P`r`OPE`r`TIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To c`r`eate the pa`r`amete`r`s desc`r`ibed below, const`r`uct a hash table containing the app`r`op`r`iate p`r`ope`r`ties. Fo`r` info`r`mation on hash tables, `r`un Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphGroupLifecyclePolicy>: groupLifecyclePolicy
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
-  - `[AlternateNotificationEmails <String>]`: List of email address to send notifications for groups without owners. Multiple email address can be defined by separating email address with a semicolon.
-  - `[GroupLifetimeInDays <Int32?>]`: Number of days before a group expires and needs to be renewed. Once renewed, the group expiration is extended by the number of days defined.
-  - `[ManagedGroupTypes <String>]`: The group type for which the expiration policy applies. Possible values are All, Selected or None.
+BODYPA`r`AMETE`r` <IMic`r`osoftG`r`aphG`r`oupLifecyclePolicy>: g`r`oupLifecyclePolicy
+  - `[(Any) <Object>]`: This indicates any p`r`ope`r`ty can be added to this object.
+  - `[Id <St`r`ing>]`: 
+  - `[Alte`r`nateNotificationEmails <St`r`ing>]`: List of email add`r`ess to send notifications fo`r` g`r`oups without owne`r`s. Multiple email add`r`ess can be defined by sepa`r`ating email add`r`ess with a semicolon.
+  - `[G`r`oupLifetimeInDays <Int32?>]`: Numbe`r` of days befo`r`e a g`r`oup expi`r`es and needs to be `r`enewed. Once `r`enewed, the g`r`oup expi`r`ation is extended by the numbe`r` of days defined.
+  - `[ManagedG`r`oupTypes <St`r`ing>]`: The g`r`oup type fo`r` which the expi`r`ation policy applies. Possible values a`r`e All, Selected o`r` None.
 
-## RELATED LINKS
+## `r`ELATED LINKS
