@@ -1,305 +1,305 @@
-﻿---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomainfederationconfiguration
+---
+external help file: Microsoft.Graph.I```d```entity.```d```irectoryManagement-help.xml
+Mo```d```ule Name: Microsoft.Graph.I```d```entity.```d```irectoryManagement
+online version: https://```d```ocs.microsoft.com/en-us/powershell/mo```d```ule/microsoft.graph.i```d```entity.```d```irectorymanagement/up```d```ate-mg```d```omainfe```d```erationconfiguration
 schema: 2.0.0
 ---
 
-# Update-MgDomainFederationConfiguration
+# Up```d```ate-Mg```d```omainFe```d```erationConfiguration
 
 ## SYNOPSIS
-Update the navigation property federationConfiguration in domains
+Up```d```ate the navigation property fe```d```erationConfiguration in ```d```omains
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### Up```d```ateExpan```d```e```d```1 (```d```efault)
 ```
-Update-MgDomainFederationConfiguration -DomainId <String> -InternalDomainFederationId <String>
- [-ActiveSignInUri <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-FederatedIdpMfaBehavior <String>] [-Id <String>] [-IsSignedAuthenticationRequestRequired]
- [-IssuerUri <String>] [-MetadataExchangeUri <String>] [-NextSigningCertificate <String>]
- [-PassiveSignInUri <String>] [-PreferredAuthenticationProtocol <String>] [-PromptLoginBehavior <String>]
+Up```d```ate-Mg```d```omainFe```d```erationConfiguration -```d```omainI```d``` <String> -Internal```d```omainFe```d```erationI```d``` <String>
+ [-ActiveSignInUri <String>] [-A```d``````d```itionalProperties <Hashtable>] [-```d```isplayName <String>]
+ [-Fe```d```erate```d```I```d```pMfaBehavior <String>] [-I```d``` <String>] [-IsSigne```d```AuthenticationRequestRequire```d```]
+ [-IssuerUri <String>] [-Meta```d```ataExchangeUri <String>] [-NextSigningCertificate <String>]
+ [-PassiveSignInUri <String>] [-Preferre```d```AuthenticationProtocol <String>] [-PromptLoginBehavior <String>]
  [-SignOutUri <String>] [-SigningCertificate <String>]
- [-SigningCertificateUpdateStatus <IMicrosoftGraphSigningCertificateUpdateStatus>] [-PassThru] [-WhatIf]
+ [-SigningCertificateUp```d```ateStatus <IMicrosoftGraphSigningCertificateUp```d```ateStatus>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### Update1
+### Up```d```ate1
 ```
-Update-MgDomainFederationConfiguration -DomainId <String> -InternalDomainFederationId <String>
- -BodyParameter <IMicrosoftGraphInternalDomainFederation> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Up```d```ate-Mg```d```omainFe```d```erationConfiguration -```d```omainI```d``` <String> -Internal```d```omainFe```d```erationI```d``` <String>
+ -Bo```d```yParameter <IMicrosoftGraphInternal```d```omainFe```d```eration> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded1
+### Up```d```ateViaI```d```entityExpan```d```e```d```1
 ```
-Update-MgDomainFederationConfiguration -InputObject <IIdentityDirectoryManagementIdentity>
- [-ActiveSignInUri <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-FederatedIdpMfaBehavior <String>] [-Id <String>] [-IsSignedAuthenticationRequestRequired]
- [-IssuerUri <String>] [-MetadataExchangeUri <String>] [-NextSigningCertificate <String>]
- [-PassiveSignInUri <String>] [-PreferredAuthenticationProtocol <String>] [-PromptLoginBehavior <String>]
+Up```d```ate-Mg```d```omainFe```d```erationConfiguration -InputObject <II```d```entity```d```irectoryManagementI```d```entity>
+ [-ActiveSignInUri <String>] [-A```d``````d```itionalProperties <Hashtable>] [-```d```isplayName <String>]
+ [-Fe```d```erate```d```I```d```pMfaBehavior <String>] [-I```d``` <String>] [-IsSigne```d```AuthenticationRequestRequire```d```]
+ [-IssuerUri <String>] [-Meta```d```ataExchangeUri <String>] [-NextSigningCertificate <String>]
+ [-PassiveSignInUri <String>] [-Preferre```d```AuthenticationProtocol <String>] [-PromptLoginBehavior <String>]
  [-SignOutUri <String>] [-SigningCertificate <String>]
- [-SigningCertificateUpdateStatus <IMicrosoftGraphSigningCertificateUpdateStatus>] [-PassThru] [-WhatIf]
+ [-SigningCertificateUp```d```ateStatus <IMicrosoftGraphSigningCertificateUp```d```ateStatus>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### Up```d```ateViaI```d```entity1
 ```
-Update-MgDomainFederationConfiguration -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphInternalDomainFederation> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Up```d```ate-Mg```d```omainFe```d```erationConfiguration -InputObject <II```d```entity```d```irectoryManagementI```d```entity>
+ -Bo```d```yParameter <IMicrosoftGraphInternal```d```omainFe```d```eration> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-## DESCRIPTION
-Update the navigation property federationConfiguration in domains
+## ```d```ESCRIPTION
+Up```d```ate the navigation property fe```d```erationConfiguration in ```d```omains
 
 ## EXAMPLES
 
 ## PARAMETERS
 
 ### -ActiveSignInUri
-URL of the endpoint used by active clients when authenticating with federated domains set up for single sign-on in Azure Active Directory (Azure AD).
-Corresponds to the ActiveLogOnUri property of the Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet.
+URL of the en```d```point use```d``` by active clients when authenticating with fe```d```erate```d``` ```d```omains set up for single sign-on in Azure Active ```d```irectory (Azure A```d```).
+Correspon```d```s to the ActiveLogOnUri property of the Set-Msol```d```omainFe```d```erationSettings MSOnline v1 PowerShell cm```d```let.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up```d```ateExpan```d```e```d```1, Up```d```ateViaI```d```entityExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
-### -AdditionalProperties
-Additional Parameters
+### -A```d``````d```itionalProperties
+A```d``````d```itional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up```d```ateExpan```d```e```d```1, Up```d```ateViaI```d```entityExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
-### -BodyParameter
-internalDomainFederation
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -Bo```d```yParameter
+internal```d```omainFe```d```eration
+To construct, please use Get-Help -Online an```d``` see NOTES section for BO```d```YPARAMETER properties an```d``` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInternalDomainFederation
-Parameter Sets: Update1, UpdateViaIdentity1
+Type: IMicrosoftGraphInternal```d```omainFe```d```eration
+Parameter Sets: Up```d```ate1, Up```d```ateViaI```d```entity1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require```d```: True
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
-### -DisplayName
-The display name of the identity provider.
+### -```d```isplayName
+The ```d```isplay name of the i```d```entity provi```d```er.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up```d```ateExpan```d```e```d```1, Up```d```ateViaI```d```entityExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
-### -DomainId
-key: id of domain
+### -```d```omainI```d```
+key: i```d``` of ```d```omain
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Parameter Sets: Up```d```ateExpan```d```e```d```1, Up```d```ate1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require```d```: True
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
-### -FederatedIdpMfaBehavior
-federatedIdpMfaBehavior
+### -Fe```d```erate```d```I```d```pMfaBehavior
+fe```d```erate```d```I```d```pMfaBehavior
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up```d```ateExpan```d```e```d```1, Up```d```ateViaI```d```entityExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
-### -Id
+### -I```d```
 .
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up```d```ateExpan```d```e```d```1, Up```d```ateViaI```d```entityExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+I```d```entity Parameter
+To construct, please use Get-Help -Online an```d``` see NOTES section for INPUTOBJECT properties an```d``` create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Type: II```d```entity```d```irectoryManagementI```d```entity
+Parameter Sets: Up```d```ateViaI```d```entityExpan```d```e```d```1, Up```d```ateViaI```d```entity1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require```d```: True
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
-### -InternalDomainFederationId
-key: id of internalDomainFederation
+### -Internal```d```omainFe```d```erationI```d```
+key: i```d``` of internal```d```omainFe```d```eration
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Parameter Sets: Up```d```ateExpan```d```e```d```1, Up```d```ate1
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
+Require```d```: True
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
-### -IsSignedAuthenticationRequestRequired
-If true, when SAML authentication requests are sent to the federated SAML IdP, Azure AD will sign those requests using the OrgID signing key.
-If false (default), the SAML authentication requests sent to the federated IdP are not signed.
+### -IsSigne```d```AuthenticationRequestRequire```d```
+If true, when SAML authentication requests are sent to the fe```d```erate```d``` SAML I```d```P, Azure A```d``` will sign those requests using the OrgI```d``` signing key.
+If false (```d```efault), the SAML authentication requests sent to the fe```d```erate```d``` I```d```P are not signe```d```.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up```d```ateExpan```d```e```d```1, Up```d```ateViaI```d```entityExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ### -IssuerUri
-Issuer URI of the federation server.
+Issuer URI of the fe```d```eration server.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up```d```ateExpan```d```e```d```1, Up```d```ateViaI```d```entityExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
-### -MetadataExchangeUri
-URI of the metadata exchange endpoint used for authentication from rich client applications.
+### -Meta```d```ataExchangeUri
+URI of the meta```d```ata exchange en```d```point use```d``` for authentication from rich client applications.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up```d```ateExpan```d```e```d```1, Up```d```ateViaI```d```entityExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ### -NextSigningCertificate
-Fallback token signing certificate that is used to sign tokens when the primary signing certificate expires.
-Formatted as Base64 encoded strings of the public portion of the federated IdP's token signing certificate.
-Needs to be compatible with the X509Certificate2 class.
-Much like the signingCertificate, the nextSigningCertificate property is used if a rollover is required outside of the auto-rollover update, a new federation service is being set up, or if the new token signing certificate is not present in the federation properties after the federation service certificate has been updated.
+Fallback token signing certificate that is use```d``` to sign tokens when the primary signing certificate expires.
+Formatte```d``` as Base64 enco```d```e```d``` strings of the public portion of the fe```d```erate```d``` I```d```P's token signing certificate.
+Nee```d```s to be compatible with the X509Certificate2 class.
+Much like the signingCertificate, the nextSigningCertificate property is use```d``` if a rollover is require```d``` outsi```d```e of the auto-rollover up```d```ate, a new fe```d```eration service is being set up, or if the new token signing certificate is not present in the fe```d```eration properties after the fe```d```eration service certificate has been up```d```ate```d```.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up```d```ateExpan```d```e```d```1, Up```d```ateViaI```d```entityExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ### -PassiveSignInUri
-URI that web-based clients are directed to when signing in to Azure Active Directory (Azure AD) services.
+URI that web-base```d``` clients are ```d```irecte```d``` to when signing in to Azure Active ```d```irectory (Azure A```d```) services.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up```d```ateExpan```d```e```d```1, Up```d```ateViaI```d```entityExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ### -PassThru
-Returns true when the command succeeds
+Returns true when the comman```d``` succee```d```s
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
-### -PreferredAuthenticationProtocol
+### -Preferre```d```AuthenticationProtocol
 authenticationProtocol
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up```d```ateExpan```d```e```d```1, Up```d```ateViaI```d```entityExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ### -PromptLoginBehavior
@@ -307,105 +307,105 @@ promptLoginBehavior
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up```d```ateExpan```d```e```d```1, Up```d```ateViaI```d```entityExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ### -SigningCertificate
-Current certificate used to sign tokens passed to the Microsoft identity platform.
-The certificate is formatted as a Base64 encoded string of the public portion of the federated IdP's token signing certificate and must be compatible with the X509Certificate2 class.
-This property is used in the following scenarios: if a rollover is required outside of the autorollover update a new federation service is being set up if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated.
-Azure AD updates certificates via an autorollover process in which it attempts to retrieve a new certificate from the federation service metadata, 30 days before expiry of the current certificate.
-If a new certificate isn't available, Azure AD monitors the metadata daily and will update the federation settings for the domain when a new certificate is available.
+Current certificate use```d``` to sign tokens passe```d``` to the Microsoft i```d```entity platform.
+The certificate is formatte```d``` as a Base64 enco```d```e```d``` string of the public portion of the fe```d```erate```d``` I```d```P's token signing certificate an```d``` must be compatible with the X509Certificate2 class.
+This property is use```d``` in the following scenarios: if a rollover is require```d``` outsi```d```e of the autorollover up```d```ate a new fe```d```eration service is being set up if the new token signing certificate isn't present in the fe```d```eration properties after the fe```d```eration service certificate has been up```d```ate```d```.
+Azure A```d``` up```d```ates certificates via an autorollover process in which it attempts to retrieve a new certificate from the fe```d```eration service meta```d```ata, 30 ```d```ays before expiry of the current certificate.
+If a new certificate isn't available, Azure A```d``` monitors the meta```d```ata ```d```aily an```d``` will up```d```ate the fe```d```eration settings for the ```d```omain when a new certificate is available.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up```d```ateExpan```d```e```d```1, Up```d```ateViaI```d```entityExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
-### -SigningCertificateUpdateStatus
-signingCertificateUpdateStatus
-To construct, please use Get-Help -Online and see NOTES section for SIGNINGCERTIFICATEUPDATESTATUS properties and create a hash table.
+### -SigningCertificateUp```d```ateStatus
+signingCertificateUp```d```ateStatus
+To construct, please use Get-Help -Online an```d``` see NOTES section for SIGNINGCERTIFICATEUP```d```ATESTATUS properties an```d``` create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSigningCertificateUpdateStatus
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: IMicrosoftGraphSigningCertificateUp```d```ateStatus
+Parameter Sets: Up```d```ateExpan```d```e```d```1, Up```d```ateViaI```d```entityExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ### -SignOutUri
-URI that clients are redirected to when they sign out of Azure AD services.
-Corresponds to the LogOffUri property of the Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet.
+URI that clients are re```d```irecte```d``` to when they sign out of Azure A```d``` services.
+Correspon```d```s to the LogOffUri property of the Set-Msol```d```omainFe```d```erationSettings MSOnline v1 PowerShell cm```d```let.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: Up```d```ateExpan```d```e```d```1, Up```d```ateViaI```d```entityExpan```d```e```d```1
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation before running the cm```d```let.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what woul```d``` happen if the cm```d```let runs.
+The cm```d```let is not run.
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
-Required: False
-Position: Named
-Default value: None
+Require```d```: False
+Position: Name```d```
+```d```efault value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wil```d```car```d``` characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cm```d```let supports the common parameters: -```d```ebug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, an```d``` -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkI```d```=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInternalDomainFederation
+### Microsoft.Graph.PowerShell.Mo```d```els.II```d```entity```d```irectoryManagementI```d```entity
+### Microsoft.Graph.PowerShell.Mo```d```els.IMicrosoftGraphInternal```d```omainFe```d```eration
 ## OUTPUTS
 
 ### System.Boolean
@@ -415,67 +415,67 @@ ALIASES
 
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters ```d```escribe```d``` below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphInternalDomainFederation>: internalDomainFederation
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[IssuerUri <String>]`: Issuer URI of the federation server.
-  - `[MetadataExchangeUri <String>]`: URI of the metadata exchange endpoint used for authentication from rich client applications.
-  - `[PassiveSignInUri <String>]`: URI that web-based clients are directed to when signing in to Azure Active Directory (Azure AD) services.
-  - `[PreferredAuthenticationProtocol <String>]`: authenticationProtocol
-  - `[SigningCertificate <String>]`: Current certificate used to sign tokens passed to the Microsoft identity platform. The certificate is formatted as a Base64 encoded string of the public portion of the federated IdP's token signing certificate and must be compatible with the X509Certificate2 class.   This property is used in the following scenarios:  if a rollover is required outside of the autorollover update a new federation service is being set up  if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated.   Azure AD updates certificates via an autorollover process in which it attempts to retrieve a new certificate from the federation service metadata, 30 days before expiry of the current certificate. If a new certificate isn't available, Azure AD monitors the metadata daily and will update the federation settings for the domain when a new certificate is available.
-  - `[DisplayName <String>]`: The display name of the identity provider.
-  - `[Id <String>]`: 
-  - `[ActiveSignInUri <String>]`: URL of the endpoint used by active clients when authenticating with federated domains set up for single sign-on in Azure Active Directory (Azure AD). Corresponds to the ActiveLogOnUri property of the Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet.
-  - `[FederatedIdpMfaBehavior <String>]`: federatedIdpMfaBehavior
-  - `[IsSignedAuthenticationRequestRequired <Boolean?>]`: If true, when SAML authentication requests are sent to the federated SAML IdP, Azure AD will sign those requests using the OrgID signing key. If false (default), the SAML authentication requests sent to the federated IdP are not signed.
-  - `[NextSigningCertificate <String>]`: Fallback token signing certificate that is used to sign tokens when the primary signing certificate expires. Formatted as Base64 encoded strings of the public portion of the federated IdP's token signing certificate. Needs to be compatible with the X509Certificate2 class. Much like the signingCertificate, the nextSigningCertificate property is used if a rollover is required outside of the auto-rollover update, a new federation service is being set up, or if the new token signing certificate is not present in the federation properties after the federation service certificate has been updated.
+BO```d```YPARAMETER <IMicrosoftGraphInternal```d```omainFe```d```eration>: internal```d```omainFe```d```eration
+  - `[(Any) <Object>]`: This in```d```icates any property can be a```d``````d```e```d``` to this object.
+  - `[IssuerUri <String>]`: Issuer URI of the fe```d```eration server.
+  - `[Meta```d```ataExchangeUri <String>]`: URI of the meta```d```ata exchange en```d```point use```d``` for authentication from rich client applications.
+  - `[PassiveSignInUri <String>]`: URI that web-base```d``` clients are ```d```irecte```d``` to when signing in to Azure Active ```d```irectory (Azure A```d```) services.
+  - `[Preferre```d```AuthenticationProtocol <String>]`: authenticationProtocol
+  - `[SigningCertificate <String>]`: Current certificate use```d``` to sign tokens passe```d``` to the Microsoft i```d```entity platform. The certificate is formatte```d``` as a Base64 enco```d```e```d``` string of the public portion of the fe```d```erate```d``` I```d```P's token signing certificate an```d``` must be compatible with the X509Certificate2 class.   This property is use```d``` in the following scenarios:  if a rollover is require```d``` outsi```d```e of the autorollover up```d```ate a new fe```d```eration service is being set up  if the new token signing certificate isn't present in the fe```d```eration properties after the fe```d```eration service certificate has been up```d```ate```d```.   Azure A```d``` up```d```ates certificates via an autorollover process in which it attempts to retrieve a new certificate from the fe```d```eration service meta```d```ata, 30 ```d```ays before expiry of the current certificate. If a new certificate isn't available, Azure A```d``` monitors the meta```d```ata ```d```aily an```d``` will up```d```ate the fe```d```eration settings for the ```d```omain when a new certificate is available.
+  - `[```d```isplayName <String>]`: The ```d```isplay name of the i```d```entity provi```d```er.
+  - `[I```d``` <String>]`: 
+  - `[ActiveSignInUri <String>]`: URL of the en```d```point use```d``` by active clients when authenticating with fe```d```erate```d``` ```d```omains set up for single sign-on in Azure Active ```d```irectory (Azure A```d```). Correspon```d```s to the ActiveLogOnUri property of the Set-Msol```d```omainFe```d```erationSettings MSOnline v1 PowerShell cm```d```let.
+  - `[Fe```d```erate```d```I```d```pMfaBehavior <String>]`: fe```d```erate```d```I```d```pMfaBehavior
+  - `[IsSigne```d```AuthenticationRequestRequire```d``` <Boolean?>]`: If true, when SAML authentication requests are sent to the fe```d```erate```d``` SAML I```d```P, Azure A```d``` will sign those requests using the OrgI```d``` signing key. If false (```d```efault), the SAML authentication requests sent to the fe```d```erate```d``` I```d```P are not signe```d```.
+  - `[NextSigningCertificate <String>]`: Fallback token signing certificate that is use```d``` to sign tokens when the primary signing certificate expires. Formatte```d``` as Base64 enco```d```e```d``` strings of the public portion of the fe```d```erate```d``` I```d```P's token signing certificate. Nee```d```s to be compatible with the X509Certificate2 class. Much like the signingCertificate, the nextSigningCertificate property is use```d``` if a rollover is require```d``` outsi```d```e of the auto-rollover up```d```ate, a new fe```d```eration service is being set up, or if the new token signing certificate is not present in the fe```d```eration properties after the fe```d```eration service certificate has been up```d```ate```d```.
   - `[PromptLoginBehavior <String>]`: promptLoginBehavior
-  - `[SignOutUri <String>]`: URI that clients are redirected to when they sign out of Azure AD services. Corresponds to the LogOffUri property of the Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet.
-  - `[SigningCertificateUpdateStatus <IMicrosoftGraphSigningCertificateUpdateStatus>]`: signingCertificateUpdateStatus
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CertificateUpdateResult <String>]`: Status of the last certificate update. Read-only. For a list of statuses, see certificateUpdateResult status.
-    - `[LastRunDateTime <DateTime?>]`: Date and time in ISO 8601 format and in UTC time when the certificate was last updated. Read-only.
+  - `[SignOutUri <String>]`: URI that clients are re```d```irecte```d``` to when they sign out of Azure A```d``` services. Correspon```d```s to the LogOffUri property of the Set-Msol```d```omainFe```d```erationSettings MSOnline v1 PowerShell cm```d```let.
+  - `[SigningCertificateUp```d```ateStatus <IMicrosoftGraphSigningCertificateUp```d```ateStatus>]`: signingCertificateUp```d```ateStatus
+    - `[(Any) <Object>]`: This in```d```icates any property can be a```d``````d```e```d``` to this object.
+    - `[CertificateUp```d```ateResult <String>]`: Status of the last certificate up```d```ate. Rea```d```-only. For a list of statuses, see certificateUp```d```ateResult status.
+    - `[LastRun```d```ateTime <```d```ateTime?>]`: ```d```ate an```d``` time in ISO 8601 format an```d``` in UTC time when the certificate was last up```d```ate```d```. Rea```d```-only.
 
-INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
-  - `[AdministrativeUnitId <String>]`: key: id of administrativeUnit
-  - `[AllowedValueId <String>]`: key: id of allowedValue
-  - `[AttributeSetId <String>]`: key: id of attributeSet
-  - `[CommandId <String>]`: key: id of command
-  - `[ContractId <String>]`: key: id of contract
-  - `[CustomSecurityAttributeDefinitionId <String>]`: key: id of customSecurityAttributeDefinition
-  - `[DeviceId <String>]`: key: id of device
-  - `[DirectoryObjectId <String>]`: key: id of directoryObject
-  - `[DirectoryRoleId <String>]`: key: id of directoryRole
-  - `[DirectoryRoleTemplateId <String>]`: key: id of directoryRoleTemplate
-  - `[DirectorySettingId <String>]`: key: id of directorySetting
-  - `[DirectorySettingTemplateId <String>]`: key: id of directorySettingTemplate
-  - `[DomainDnsRecordId <String>]`: key: id of domainDnsRecord
-  - `[DomainId <String>]`: key: id of domain
-  - `[ExtensionId <String>]`: key: id of extension
-  - `[FeatureRolloutPolicyId <String>]`: key: id of featureRolloutPolicy
-  - `[IdentityProviderBaseId <String>]`: key: id of identityProviderBase
-  - `[InboundSharedUserProfileUserId <String>]`: key: userId of inboundSharedUserProfile
-  - `[InternalDomainFederationId <String>]`: key: id of internalDomainFederation
-  - `[OrgContactId <String>]`: key: id of orgContact
-  - `[OrganizationId <String>]`: key: id of organization
-  - `[OrganizationalBrandingLocalizationId <String>]`: key: id of organizationalBrandingLocalization
-  - `[OutboundSharedUserProfileUserId <String>]`: key: userId of outboundSharedUserProfile
-  - `[ProfileCardPropertyId <String>]`: key: id of profileCardProperty
-  - `[RecommendationId <String>]`: key: id of recommendation
-  - `[RecommendationResourceId <String>]`: key: id of recommendationResource
-  - `[ScopedRoleMembershipId <String>]`: key: id of scopedRoleMembership
-  - `[SharedEmailDomainId <String>]`: key: id of sharedEmailDomain
-  - `[SharedEmailDomainInvitationId <String>]`: key: id of sharedEmailDomainInvitation
-  - `[SubscribedSkuId <String>]`: key: id of subscribedSku
-  - `[TenantReferenceTenantId <String>]`: key: tenantId of tenantReference
-  - `[UsageRightId <String>]`: key: id of usageRight
-  - `[UserId <String>]`: key: id of user
+INPUTOBJECT <II```d```entity```d```irectoryManagementI```d```entity>: I```d```entity Parameter
+  - `[A```d```ministrativeUnitI```d``` <String>]`: key: i```d``` of a```d```ministrativeUnit
+  - `[Allowe```d```ValueI```d``` <String>]`: key: i```d``` of allowe```d```Value
+  - `[AttributeSetI```d``` <String>]`: key: i```d``` of attributeSet
+  - `[Comman```d```I```d``` <String>]`: key: i```d``` of comman```d```
+  - `[ContractI```d``` <String>]`: key: i```d``` of contract
+  - `[CustomSecurityAttribute```d```efinitionI```d``` <String>]`: key: i```d``` of customSecurityAttribute```d```efinition
+  - `[```d```eviceI```d``` <String>]`: key: i```d``` of ```d```evice
+  - `[```d```irectoryObjectI```d``` <String>]`: key: i```d``` of ```d```irectoryObject
+  - `[```d```irectoryRoleI```d``` <String>]`: key: i```d``` of ```d```irectoryRole
+  - `[```d```irectoryRoleTemplateI```d``` <String>]`: key: i```d``` of ```d```irectoryRoleTemplate
+  - `[```d```irectorySettingI```d``` <String>]`: key: i```d``` of ```d```irectorySetting
+  - `[```d```irectorySettingTemplateI```d``` <String>]`: key: i```d``` of ```d```irectorySettingTemplate
+  - `[```d```omain```d```nsRecor```d```I```d``` <String>]`: key: i```d``` of ```d```omain```d```nsRecor```d```
+  - `[```d```omainI```d``` <String>]`: key: i```d``` of ```d```omain
+  - `[ExtensionI```d``` <String>]`: key: i```d``` of extension
+  - `[FeatureRolloutPolicyI```d``` <String>]`: key: i```d``` of featureRolloutPolicy
+  - `[I```d```entityProvi```d```erBaseI```d``` <String>]`: key: i```d``` of i```d```entityProvi```d```erBase
+  - `[Inboun```d```Share```d```UserProfileUserI```d``` <String>]`: key: userI```d``` of inboun```d```Share```d```UserProfile
+  - `[Internal```d```omainFe```d```erationI```d``` <String>]`: key: i```d``` of internal```d```omainFe```d```eration
+  - `[OrgContactI```d``` <String>]`: key: i```d``` of orgContact
+  - `[OrganizationI```d``` <String>]`: key: i```d``` of organization
+  - `[OrganizationalBran```d```ingLocalizationI```d``` <String>]`: key: i```d``` of organizationalBran```d```ingLocalization
+  - `[Outboun```d```Share```d```UserProfileUserI```d``` <String>]`: key: userI```d``` of outboun```d```Share```d```UserProfile
+  - `[ProfileCar```d```PropertyI```d``` <String>]`: key: i```d``` of profileCar```d```Property
+  - `[Recommen```d```ationI```d``` <String>]`: key: i```d``` of recommen```d```ation
+  - `[Recommen```d```ationResourceI```d``` <String>]`: key: i```d``` of recommen```d```ationResource
+  - `[Scope```d```RoleMembershipI```d``` <String>]`: key: i```d``` of scope```d```RoleMembership
+  - `[Share```d```Email```d```omainI```d``` <String>]`: key: i```d``` of share```d```Email```d```omain
+  - `[Share```d```Email```d```omainInvitationI```d``` <String>]`: key: i```d``` of share```d```Email```d```omainInvitation
+  - `[Subscribe```d```SkuI```d``` <String>]`: key: i```d``` of subscribe```d```Sku
+  - `[TenantReferenceTenantI```d``` <String>]`: key: tenantI```d``` of tenantReference
+  - `[UsageRightI```d``` <String>]`: key: i```d``` of usageRight
+  - `[UserI```d``` <String>]`: key: i```d``` of user
 
-SIGNINGCERTIFICATEUPDATESTATUS <IMicrosoftGraphSigningCertificateUpdateStatus>: signingCertificateUpdateStatus
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CertificateUpdateResult <String>]`: Status of the last certificate update. Read-only. For a list of statuses, see certificateUpdateResult status.
-  - `[LastRunDateTime <DateTime?>]`: Date and time in ISO 8601 format and in UTC time when the certificate was last updated. Read-only.
+SIGNINGCERTIFICATEUP```d```ATESTATUS <IMicrosoftGraphSigningCertificateUp```d```ateStatus>: signingCertificateUp```d```ateStatus
+  - `[(Any) <Object>]`: This in```d```icates any property can be a```d``````d```e```d``` to this object.
+  - `[CertificateUp```d```ateResult <String>]`: Status of the last certificate up```d```ate. Rea```d```-only. For a list of statuses, see certificateUp```d```ateResult status.
+  - `[LastRun```d```ateTime <```d```ateTime?>]`: ```d```ate an```d``` time in ISO 8601 format an```d``` in UTC time when the certificate was last up```d```ate```d```. Rea```d```-only.
 
-## RELATED LINKS
+## RELATE```d``` LINKS
