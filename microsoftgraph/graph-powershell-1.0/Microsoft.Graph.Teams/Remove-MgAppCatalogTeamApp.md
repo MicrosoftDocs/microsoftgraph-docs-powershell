@@ -1,181 +1,181 @@
-﻿---
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/remove-mgappcatalogteamapp
-schema: 2.0.0
+---
+`e`xt`e`rnal h`e`lp fil`e`: Microsoft.Graph.T`e`ams-h`e`lp.xml
+Modul`e` Nam`e`: Microsoft.Graph.T`e`ams
+onlin`e` v`e`rsion: https://docs.microsoft.com/`e`n-us/pow`e`rsh`e`ll/modul`e`/microsoft.graph.t`e`ams/r`e`mov`e`-mgappcatalogt`e`amapp
+sch`e`ma: 2.0.0
 ---
 
-# Remove-MgAppCatalogTeamApp
+# R`e`mov`e`-MgAppCatalogT`e`amApp
 
 ## SYNOPSIS
-Delete navigation property teamsApps for appCatalogs
+D`e`l`e`t`e` navigation prop`e`rty t`e`amsApps for appCatalogs
 
 ## SYNTAX
 
-### Delete1 (Default)
+### D`e`l`e`t`e`1 (D`e`fault)
 ```
-Remove-MgAppCatalogTeamApp -TeamsAppId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### DeleteViaIdentity1
-```
-Remove-MgAppCatalogTeamApp -InputObject <ITeamsIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+R`e`mov`e`-MgAppCatalogT`e`amApp -T`e`amsAppId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParam`e`t`e`rs>]
 ```
 
-## DESCRIPTION
-Delete navigation property teamsApps for appCatalogs
+### D`e`l`e`t`e`ViaId`e`ntity1
+```
+R`e`mov`e`-MgAppCatalogT`e`amApp -InputObj`e`ct <IT`e`amsId`e`ntity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParam`e`t`e`rs>]
+```
 
-## EXAMPLES
+## D`e`SCRIPTION
+D`e`l`e`t`e` navigation prop`e`rty t`e`amsApps for appCatalogs
 
-## PARAMETERS
+## `e`XAMPL`e`S
+
+## PARAM`e`T`e`RS
 
 ### -IfMatch
-ETag
+`e`Tag
 
 ```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -InputObj`e`ct
+Id`e`ntity Param`e`t`e`r
+To construct, pl`e`as`e` us`e` G`e`t-H`e`lp -Onlin`e` and s`e``e` NOT`e`S s`e`ction for INPUTOBJ`e`CT prop`e`rti`e`s and cr`e`at`e` a hash tabl`e`.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: DeleteViaIdentity1
-Aliases:
+Typ`e`: IT`e`amsId`e`ntity
+Param`e`t`e`r S`e`ts: D`e`l`e`t`e`ViaId`e`ntity1
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Tru`e` (ByValu`e`)
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -PassThru
-Returns true when the command succeeds
+R`e`turns tru`e` wh`e`n th`e` command succ`e``e`ds
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
+Typ`e`: SwitchParam`e`t`e`r
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -TeamsAppId
-key: id of teamsApp
+### -T`e`amsAppId
+k`e`y: id of t`e`amsApp
 
 ```yaml
-Type: String
-Parameter Sets: Delete1
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: D`e`l`e`t`e`1
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation b`e`for`e` running th`e` cmdl`e`t.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Typ`e`: SwitchParam`e`t`e`r
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happ`e`n if th`e` cmdl`e`t runs.
+Th`e` cmdl`e`t is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Typ`e`: SwitchParam`e`t`e`r
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam`e`t`e`rs
+This cmdl`e`t supports th`e` common param`e`t`e`rs: -D`e`bug, -`e`rrorAction, -`e`rrorVariabl`e`, -InformationAction, -InformationVariabl`e`, -OutVariabl`e`, -OutBuff`e`r, -Pip`e`lin`e`Variabl`e`, -V`e`rbos`e`, -WarningAction, and -WarningVariabl`e`. For mor`e` information, s`e``e` [about_CommonParam`e`t`e`rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Pow`e`rSh`e`ll.Mod`e`ls.IT`e`amsId`e`ntity
 ## OUTPUTS
 
-### System.Boolean
-## NOTES
+### Syst`e`m.Bool`e`an
+## NOT`e`S
 
-ALIASES
+ALIAS`e`S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL`e`X PARAM`e`T`e`R PROP`e`RTI`e`S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr`e`at`e` th`e` param`e`t`e`rs d`e`scrib`e`d b`e`low, construct a hash tabl`e` containing th`e` appropriat`e` prop`e`rti`e`s. For information on hash tabl`e`s, run G`e`t-H`e`lp about_Hash_Tabl`e`s.
 
 
-INPUTOBJECT <ITeamsIdentity>: Identity Parameter
-  - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
-  - `[ChannelId <String>]`: key: id of channel
-  - `[ChatId <String>]`: key: id of chat
-  - `[ChatMessageHostedContentId <String>]`: key: id of chatMessageHostedContent
-  - `[ChatMessageId <String>]`: key: id of chatMessage
-  - `[ChatMessageId1 <String>]`: key: id of chatMessage
-  - `[ConversationMemberId <String>]`: key: id of conversationMember
-  - `[DeletedTeamId <String>]`: key: id of deletedTeam
-  - `[GroupId <String>]`: key: id of group
-  - `[OfferShiftRequestId <String>]`: key: id of offerShiftRequest
-  - `[OpenShiftChangeRequestId <String>]`: key: id of openShiftChangeRequest
-  - `[OpenShiftId <String>]`: key: id of openShift
-  - `[PinnedChatMessageInfoId <String>]`: key: id of pinnedChatMessageInfo
-  - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
-  - `[SchedulingGroupId <String>]`: key: id of schedulingGroup
-  - `[SharedWithChannelTeamInfoId <String>]`: key: id of sharedWithChannelTeamInfo
-  - `[ShiftId <String>]`: key: id of shift
-  - `[SwapShiftsChangeRequestId <String>]`: key: id of swapShiftsChangeRequest
-  - `[TeamId <String>]`: key: id of team
-  - `[TeamsAppDefinitionId <String>]`: key: id of teamsAppDefinition
-  - `[TeamsAppId <String>]`: key: id of teamsApp
-  - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation
-  - `[TeamsAsyncOperationId <String>]`: key: id of teamsAsyncOperation
-  - `[TeamsTabId <String>]`: key: id of teamsTab
-  - `[TeamworkDeviceId <String>]`: key: id of teamworkDevice
-  - `[TeamworkDeviceOperationId <String>]`: key: id of teamworkDeviceOperation
-  - `[TeamworkTagId <String>]`: key: id of teamworkTag
-  - `[TeamworkTagMemberId <String>]`: key: id of teamworkTagMember
-  - `[TimeCardId <String>]`: key: id of timeCard
-  - `[TimeOffId <String>]`: key: id of timeOff
-  - `[TimeOffReasonId <String>]`: key: id of timeOffReason
-  - `[TimeOffRequestId <String>]`: key: id of timeOffRequest
-  - `[UserId <String>]`: key: id of user
-  - `[UserScopeTeamsAppInstallationId <String>]`: key: id of userScopeTeamsAppInstallation
-  - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
+INPUTOBJ`e`CT <IT`e`amsId`e`ntity>: Id`e`ntity Param`e`t`e`r
+  - `[Associat`e`dT`e`amInfoId <String>]`: k`e`y: id of associat`e`dT`e`amInfo
+  - `[Chann`e`lId <String>]`: k`e`y: id of chann`e`l
+  - `[ChatId <String>]`: k`e`y: id of chat
+  - `[ChatM`e`ssag`e`Host`e`dCont`e`ntId <String>]`: k`e`y: id of chatM`e`ssag`e`Host`e`dCont`e`nt
+  - `[ChatM`e`ssag`e`Id <String>]`: k`e`y: id of chatM`e`ssag`e`
+  - `[ChatM`e`ssag`e`Id1 <String>]`: k`e`y: id of chatM`e`ssag`e`
+  - `[Conv`e`rsationM`e`mb`e`rId <String>]`: k`e`y: id of conv`e`rsationM`e`mb`e`r
+  - `[D`e`l`e`t`e`dT`e`amId <String>]`: k`e`y: id of d`e`l`e`t`e`dT`e`am
+  - `[GroupId <String>]`: k`e`y: id of group
+  - `[Off`e`rShiftR`e`qu`e`stId <String>]`: k`e`y: id of off`e`rShiftR`e`qu`e`st
+  - `[Op`e`nShiftChang`e`R`e`qu`e`stId <String>]`: k`e`y: id of op`e`nShiftChang`e`R`e`qu`e`st
+  - `[Op`e`nShiftId <String>]`: k`e`y: id of op`e`nShift
+  - `[Pinn`e`dChatM`e`ssag`e`InfoId <String>]`: k`e`y: id of pinn`e`dChatM`e`ssag`e`Info
+  - `[R`e`sourc`e`Sp`e`cificP`e`rmissionGrantId <String>]`: k`e`y: id of r`e`sourc`e`Sp`e`cificP`e`rmissionGrant
+  - `[Sch`e`dulingGroupId <String>]`: k`e`y: id of sch`e`dulingGroup
+  - `[Shar`e`dWithChann`e`lT`e`amInfoId <String>]`: k`e`y: id of shar`e`dWithChann`e`lT`e`amInfo
+  - `[ShiftId <String>]`: k`e`y: id of shift
+  - `[SwapShiftsChang`e`R`e`qu`e`stId <String>]`: k`e`y: id of swapShiftsChang`e`R`e`qu`e`st
+  - `[T`e`amId <String>]`: k`e`y: id of t`e`am
+  - `[T`e`amsAppD`e`finitionId <String>]`: k`e`y: id of t`e`amsAppD`e`finition
+  - `[T`e`amsAppId <String>]`: k`e`y: id of t`e`amsApp
+  - `[T`e`amsAppInstallationId <String>]`: k`e`y: id of t`e`amsAppInstallation
+  - `[T`e`amsAsyncOp`e`rationId <String>]`: k`e`y: id of t`e`amsAsyncOp`e`ration
+  - `[T`e`amsTabId <String>]`: k`e`y: id of t`e`amsTab
+  - `[T`e`amworkD`e`vic`e`Id <String>]`: k`e`y: id of t`e`amworkD`e`vic`e`
+  - `[T`e`amworkD`e`vic`e`Op`e`rationId <String>]`: k`e`y: id of t`e`amworkD`e`vic`e`Op`e`ration
+  - `[T`e`amworkTagId <String>]`: k`e`y: id of t`e`amworkTag
+  - `[T`e`amworkTagM`e`mb`e`rId <String>]`: k`e`y: id of t`e`amworkTagM`e`mb`e`r
+  - `[Tim`e`CardId <String>]`: k`e`y: id of tim`e`Card
+  - `[Tim`e`OffId <String>]`: k`e`y: id of tim`e`Off
+  - `[Tim`e`OffR`e`asonId <String>]`: k`e`y: id of tim`e`OffR`e`ason
+  - `[Tim`e`OffR`e`qu`e`stId <String>]`: k`e`y: id of tim`e`OffR`e`qu`e`st
+  - `[Us`e`rId <String>]`: k`e`y: id of us`e`r
+  - `[Us`e`rScop`e`T`e`amsAppInstallationId <String>]`: k`e`y: id of us`e`rScop`e`T`e`amsAppInstallation
+  - `[Workforc`e`Int`e`grationId <String>]`: k`e`y: id of workforc`e`Int`e`gration
 
-## RELATED LINKS
+## R`e`LAT`e`D LINKS
