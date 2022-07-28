@@ -9,7 +9,7 @@ metadata:
   ms.topic: landing-page # Required
   author: msewaweru #Required; your GitHub user alias, with correct capitalization.
   ms.author: eunicewaweru #Required; microsoft alias of author; optional team alias.
-  ms.date: 06/07/2022 #Required; mm/dd/yyyy format.
+  ms.date: 07/28/2022 #Required; mm/dd/yyyy format.
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -32,10 +32,22 @@ landingContent:
           - text: Navigating the SDK
             url: navigating.md  
 
+  # Card
+  - title: Upgrade to Microsoft Graph PowerShell
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Migration steps
+            url: migration-steps.md
+          - text: Cmdlet map
+            url: azuread-msoline-cmdlet-map.md
+          - text: Migration FAQ
+            url:  https://docs.microsoft.com/en-us/powershell/azure/active-directory/migration-faq?view=azureadps-2.0 
+
   # Card (optional)
   - title: Common use cases
     linkLists:
-      - linkListType: quickstart
+      - linkListType: how-to-guide
         links:
           - text: Using Find-MgGraphCommand
             url: find-mg-graph-command.md
@@ -50,18 +62,7 @@ landingContent:
           - text: Assign Azure AD roles in PIM
             url: tutorial-pim.md  
 
-  # Card
-  - title: Migrate to Microsoft Graph PowerShell
-    linkLists:
-      - linkListType: get-started
-        links:
-          - text: Migration steps
-            url: migration-steps.md
-          - text: Cmdlet map
-            url: azuread-msoline-cmdlet-map.md
-          - text: Migration FAQ
-            url:  https://docs.microsoft.com/en-us/powershell/azure/active-directory/migration-faq?view=azureadps-2.0 
-
+  
   # Card
   - title: References
     linkLists:
