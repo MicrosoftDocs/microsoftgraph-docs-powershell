@@ -1,155 +1,155 @@
-﻿---
-external help file: Microsoft.Graph.People-help.xml
-Module Name: Microsoft.Graph.People
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/get-mguserusedresourceinsight
-schema: 2.0.0
+---
+`e`xt`e`rnal h`e`lp fil`e`: Microsoft.Graph.P`e`opl`e`-h`e`lp.xml
+Modul`e` Nam`e`: Microsoft.Graph.P`e`opl`e`
+onlin`e` v`e`rsion: https://docs.microsoft.com/`e`n-us/pow`e`rsh`e`ll/modul`e`/microsoft.graph.p`e`opl`e`/g`e`t-mgus`e`rus`e`dr`e`sourc`e`insight
+sch`e`ma: 2.0.0
 ---
 
-# Get-MgUserUsedResourceInsight
+# G`e`t-MgUs`e`rUs`e`dR`e`sourc`e`Insight
 
 ## SYNOPSIS
-Get resource from users
+G`e`t r`e`sourc`e` from us`e`rs
 
 ## SYNTAX
 
-### Get (Default)
+### G`e`t (D`e`fault)
 ```
-Get-MgUserUsedResourceInsight -UsedInsightId <String> -UserId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
-```
-
-### GetViaIdentity
-```
-Get-MgUserUsedResourceInsight -InputObject <IPeopleIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+G`e`t-MgUs`e`rUs`e`dR`e`sourc`e`Insight -Us`e`dInsightId <String> -Us`e`rId <String> [-`e`xpandProp`e`rty <String[]>]
+ [-Prop`e`rty <String[]>] [<CommonParam`e`t`e`rs>]
 ```
 
-## DESCRIPTION
-Get resource from users
+### G`e`tViaId`e`ntity
+```
+G`e`t-MgUs`e`rUs`e`dR`e`sourc`e`Insight -InputObj`e`ct <IP`e`opl`e`Id`e`ntity> [-`e`xpandProp`e`rty <String[]>]
+ [-Prop`e`rty <String[]>] [<CommonParam`e`t`e`rs>]
+```
 
-## EXAMPLES
+## D`e`SCRIPTION
+G`e`t r`e`sourc`e` from us`e`rs
 
-## PARAMETERS
+## `e`XAMPL`e`S
 
-### -ExpandProperty
-Expand related entities
+## PARAM`e`T`e`RS
+
+### -`e`xpandProp`e`rty
+`e`xpand r`e`lat`e`d `e`ntiti`e`s
 
 ```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: Expand
+Typ`e`: String[]
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s: `e`xpand
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -InputObj`e`ct
+Id`e`ntity Param`e`t`e`r
+To construct, pl`e`as`e` us`e` G`e`t-H`e`lp -Onlin`e` and s`e``e` NOT`e`S s`e`ction for INPUTOBJ`e`CT prop`e`rti`e`s and cr`e`at`e` a hash tabl`e`.
 
 ```yaml
-Type: IPeopleIdentity
-Parameter Sets: GetViaIdentity
-Aliases:
+Typ`e`: IP`e`opl`e`Id`e`ntity
+Param`e`t`e`r S`e`ts: G`e`tViaId`e`ntity
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Tru`e` (ByValu`e`)
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -Property
-Select properties to be returned
+### -Prop`e`rty
+S`e`l`e`ct prop`e`rti`e`s to b`e` r`e`turn`e`d
 
 ```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: Select
+Typ`e`: String[]
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s: S`e`l`e`ct
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -UsedInsightId
-key: id of usedInsight
+### -Us`e`dInsightId
+k`e`y: id of us`e`dInsight
 
 ```yaml
-Type: String
-Parameter Sets: Get
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: G`e`t
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -UserId
-key: id of user
+### -Us`e`rId
+k`e`y: id of us`e`r
 
 ```yaml
-Type: String
-Parameter Sets: Get
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: G`e`t
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam`e`t`e`rs
+This cmdl`e`t supports th`e` common param`e`t`e`rs: -D`e`bug, -`e`rrorAction, -`e`rrorVariabl`e`, -InformationAction, -InformationVariabl`e`, -OutVariabl`e`, -OutBuff`e`r, -Pip`e`lin`e`Variabl`e`, -V`e`rbos`e`, -WarningAction, and -WarningVariabl`e`. For mor`e` information, s`e``e` [about_CommonParam`e`t`e`rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
+### Microsoft.Graph.Pow`e`rSh`e`ll.Mod`e`ls.IP`e`opl`e`Id`e`ntity
 ## OUTPUTS
 
-### System.String
-## NOTES
+### Syst`e`m.String
+## NOT`e`S
 
-ALIASES
+ALIAS`e`S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL`e`X PARAM`e`T`e`R PROP`e`RTI`e`S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr`e`at`e` th`e` param`e`t`e`rs d`e`scrib`e`d b`e`low, construct a hash tabl`e` containing th`e` appropriat`e` prop`e`rti`e`s. For information on hash tabl`e`s, run G`e`t-H`e`lp about_Hash_Tabl`e`s.
 
 
-INPUTOBJECT <IPeopleIdentity>: Identity Parameter
-  - `[ActivityStatisticsId <String>]`: key: id of activityStatistics
-  - `[EducationalActivityId <String>]`: key: id of educationalActivity
-  - `[ItemAddressId <String>]`: key: id of itemAddress
-  - `[ItemEmailId <String>]`: key: id of itemEmail
-  - `[ItemPatentId <String>]`: key: id of itemPatent
-  - `[ItemPhoneId <String>]`: key: id of itemPhone
-  - `[ItemPublicationId <String>]`: key: id of itemPublication
-  - `[LanguageProficiencyId <String>]`: key: id of languageProficiency
-  - `[PersonAnnotationId <String>]`: key: id of personAnnotation
-  - `[PersonAnnualEventId <String>]`: key: id of personAnnualEvent
-  - `[PersonAwardId <String>]`: key: id of personAward
-  - `[PersonCertificationId <String>]`: key: id of personCertification
-  - `[PersonId <String>]`: key: id of person
-  - `[PersonInterestId <String>]`: key: id of personInterest
-  - `[PersonNameId <String>]`: key: id of personName
-  - `[PersonWebsiteId <String>]`: key: id of personWebsite
-  - `[ProjectParticipationId <String>]`: key: id of projectParticipation
-  - `[SharedInsightId <String>]`: key: id of sharedInsight
-  - `[SkillProficiencyId <String>]`: key: id of skillProficiency
-  - `[TrendingId <String>]`: key: id of trending
-  - `[UsedInsightId <String>]`: key: id of usedInsight
-  - `[UserAccountInformationId <String>]`: key: id of userAccountInformation
-  - `[UserId <String>]`: key: id of user
-  - `[WebAccountId <String>]`: key: id of webAccount
-  - `[WorkPositionId <String>]`: key: id of workPosition
+INPUTOBJ`e`CT <IP`e`opl`e`Id`e`ntity>: Id`e`ntity Param`e`t`e`r
+  - `[ActivityStatisticsId <String>]`: k`e`y: id of activityStatistics
+  - `[`e`ducationalActivityId <String>]`: k`e`y: id of `e`ducationalActivity
+  - `[It`e`mAddr`e`ssId <String>]`: k`e`y: id of it`e`mAddr`e`ss
+  - `[It`e`m`e`mailId <String>]`: k`e`y: id of it`e`m`e`mail
+  - `[It`e`mPat`e`ntId <String>]`: k`e`y: id of it`e`mPat`e`nt
+  - `[It`e`mPhon`e`Id <String>]`: k`e`y: id of it`e`mPhon`e`
+  - `[It`e`mPublicationId <String>]`: k`e`y: id of it`e`mPublication
+  - `[Languag`e`Profici`e`ncyId <String>]`: k`e`y: id of languag`e`Profici`e`ncy
+  - `[P`e`rsonAnnotationId <String>]`: k`e`y: id of p`e`rsonAnnotation
+  - `[P`e`rsonAnnual`e`v`e`ntId <String>]`: k`e`y: id of p`e`rsonAnnual`e`v`e`nt
+  - `[P`e`rsonAwardId <String>]`: k`e`y: id of p`e`rsonAward
+  - `[P`e`rsonC`e`rtificationId <String>]`: k`e`y: id of p`e`rsonC`e`rtification
+  - `[P`e`rsonId <String>]`: k`e`y: id of p`e`rson
+  - `[P`e`rsonInt`e`r`e`stId <String>]`: k`e`y: id of p`e`rsonInt`e`r`e`st
+  - `[P`e`rsonNam`e`Id <String>]`: k`e`y: id of p`e`rsonNam`e`
+  - `[P`e`rsonW`e`bsit`e`Id <String>]`: k`e`y: id of p`e`rsonW`e`bsit`e`
+  - `[Proj`e`ctParticipationId <String>]`: k`e`y: id of proj`e`ctParticipation
+  - `[Shar`e`dInsightId <String>]`: k`e`y: id of shar`e`dInsight
+  - `[SkillProfici`e`ncyId <String>]`: k`e`y: id of skillProfici`e`ncy
+  - `[Tr`e`ndingId <String>]`: k`e`y: id of tr`e`nding
+  - `[Us`e`dInsightId <String>]`: k`e`y: id of us`e`dInsight
+  - `[Us`e`rAccountInformationId <String>]`: k`e`y: id of us`e`rAccountInformation
+  - `[Us`e`rId <String>]`: k`e`y: id of us`e`r
+  - `[W`e`bAccountId <String>]`: k`e`y: id of w`e`bAccount
+  - `[WorkPositionId <String>]`: k`e`y: id of workPosition
 
-## RELATED LINKS
+## R`e`LAT`e`D LINKS
