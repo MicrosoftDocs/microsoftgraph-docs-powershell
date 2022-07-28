@@ -1,38 +1,38 @@
-﻿---
-external help file: Microsoft.Graph.SchemaExtensions-help.xml
-Module Name: Microsoft.Graph.SchemaExtensions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.schemaextensions/get-mgschemaextension
-schema: 2.0.0
+---
+external help file: Mi`c`rosoft.Graph.S`c`hemaExtensions-help.xml
+Module Name: Mi`c`rosoft.Graph.S`c`hemaExtensions
+online version: https://do`c`s.mi`c`rosoft.`c`om/en-us/powershell/module/mi`c`rosoft.graph.s`c`hemaextensions/get-mgs`c`hemaextension
+s`c`hema: 2.0.0
 ---
 
-# Get-MgSchemaExtension
+# Get-MgS`c`hemaExtension
 
 ## SYNOPSIS
-Get entity from schemaExtensions by key
+Get entity from s`c`hemaExtensions by key
 
 ## SYNTAX
 
 ### List1 (Default)
 ```
-Get-MgSchemaExtension [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>]
- [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [<CommonParameters>]
+Get-MgS`c`hemaExtension [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Sear`c`h <String>]
+ [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-`c`ountVariable <String>]
+ [<`c`ommonParameters>]
 ```
 
 ### Get1
 ```
-Get-MgSchemaExtension -SchemaExtensionId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgS`c`hemaExtension -S`c`hemaExtensionId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<`c`ommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
-Get-MgSchemaExtension -InputObject <ISchemaExtensionsIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgS`c`hemaExtension -InputObje`c`t <IS`c`hemaExtensionsIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<`c`ommonParameters>]
 ```
 
-## DESCRIPTION
-Get entity from schemaExtensions by key
+## DES`c`RIPTION
+Get entity from s`c`hemaExtensions by key
 
 ## EXAMPLES
 
@@ -42,31 +42,31 @@ Get entity from schemaExtensions by key
 List all pages.
 
 ```yaml
-Type: SwitchParameter
+Type: Swit`c`hParameter
 Parameter Sets: List1
 Aliases:
 
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+A`c``c`ept pipeline input: False
+A`c``c`ept wild`c`ard `c`hara`c`ters: False
 ```
 
-### -CountVariable
-Specifies a count of the total number of items in a collection.
-By default, this variable will be set in the global scope.
+### -`c`ountVariable
+Spe`c`ifies a `c`ount of the total number of items in a `c`olle`c`tion.
+By default, this variable will be set in the global s`c`ope.
 
 ```yaml
 Type: String
 Parameter Sets: List1
-Aliases: CV
+Aliases: `c`V
 
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+A`c``c`ept pipeline input: False
+A`c``c`ept wild`c`ard `c`hara`c`ters: False
 ```
 
 ### -ExpandProperty
@@ -80,8 +80,8 @@ Aliases: Expand
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+A`c``c`ept pipeline input: False
+A`c``c`ept wild`c`ard `c`hara`c`ters: False
 ```
 
 ### -Filter
@@ -95,24 +95,24 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+A`c``c`ept pipeline input: False
+A`c``c`ept wild`c`ard `c`hara`c`ters: False
 ```
 
-### -InputObject
+### -InputObje`c`t
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To `c`onstru`c`t, please use Get-Help -Online and see NOTES se`c`tion for INPUTOBJE`c`T properties and `c`reate a hash table.
 
 ```yaml
-Type: ISchemaExtensionsIdentity
+Type: IS`c`hemaExtensionsIdentity
 Parameter Sets: GetViaIdentity1
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+A`c``c`ept pipeline input: True (ByValue)
+A`c``c`ept wild`c`ard `c`hara`c`ters: False
 ```
 
 ### -PageSize
@@ -126,27 +126,27 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+A`c``c`ept pipeline input: False
+A`c``c`ept wild`c`ard `c`hara`c`ters: False
 ```
 
 ### -Property
-Select properties to be returned
+Sele`c`t properties to be returned
 
 ```yaml
 Type: String[]
 Parameter Sets: (All)
-Aliases: Select
+Aliases: Sele`c`t
 
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+A`c``c`ept pipeline input: False
+A`c``c`ept wild`c`ard `c`hara`c`ters: False
 ```
 
-### -SchemaExtensionId
-key: id of schemaExtension
+### -S`c`hemaExtensionId
+key: id of s`c`hemaExtension
 
 ```yaml
 Type: String
@@ -156,12 +156,12 @@ Aliases:
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+A`c``c`ept pipeline input: False
+A`c``c`ept wild`c`ard `c`hara`c`ters: False
 ```
 
-### -Search
-Search items by search phrases
+### -Sear`c`h
+Sear`c`h items by sear`c`h phrases
 
 ```yaml
 Type: String
@@ -171,8 +171,8 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+A`c``c`ept pipeline input: False
+A`c``c`ept wild`c`ard `c`hara`c`ters: False
 ```
 
 ### -Sort
@@ -186,8 +186,8 @@ Aliases: OrderBy
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+A`c``c`ept pipeline input: False
+A`c``c`ept wild`c`ard `c`hara`c`ters: False
 ```
 
 ### -Top
@@ -201,8 +201,8 @@ Aliases: Limit
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+A`c``c`ept pipeline input: False
+A`c``c`ept wild`c`ard `c`hara`c`ters: False
 ```
 
 ### -Skip
@@ -216,29 +216,29 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+A`c``c`ept pipeline input: False
+A`c``c`ept wild`c`ard `c`hara`c`ters: False
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### `c`ommonParameters
+This `c`mdlet supports the `c`ommon parameters: -Debug, -ErrorA`c`tion, -ErrorVariable, -InformationA`c`tion, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningA`c`tion, and -WarningVariable. For more information, see [about_`c`ommonParameters](http://go.mi`c`rosoft.`c`om/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ISchemaExtensionsIdentity
+### Mi`c`rosoft.Graph.PowerShell.Models.IS`c`hemaExtensionsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSchemaExtension
+### Mi`c`rosoft.Graph.PowerShell.Models.IMi`c`rosoftGraphS`c`hemaExtension
 ## NOTES
 
 ALIASES
 
-COMPLEX PARAMETER PROPERTIES
+`c`OMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To `c`reate the parameters des`c`ribed below, `c`onstru`c`t a hash table `c`ontaining the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ISchemaExtensionsIdentity>: Identity Parameter
-  - `[SchemaExtensionId <String>]`: key: id of schemaExtension
+INPUTOBJE`c`T <IS`c`hemaExtensionsIdentity>: Identity Parameter
+  - `[S`c`hemaExtensionId <String>]`: key: id of s`c`hemaExtension
 
 ## RELATED LINKS
