@@ -1,227 +1,227 @@
-﻿---
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/add-mgteamprimarychannelmember
-schema: 2.0.0
+---
+```e```xt```e```rnal h```e```lp fil```e```: Microsoft.Graph.T```e```ams-h```e```lp.xml
+Modul```e``` Nam```e```: Microsoft.Graph.T```e```ams
+onlin```e``` v```e```rsion: https://docs.microsoft.com/```e```n-us/pow```e```rsh```e```ll/modul```e```/microsoft.graph.t```e```ams/add-mgt```e```amprimarychann```e```lm```e```mb```e```r
+sch```e```ma: 2.0.0
 ---
 
-# Add-MgTeamPrimaryChannelMember
+# Add-MgT```e```amPrimaryChann```e```lM```e```mb```e```r
 
 ## SYNOPSIS
-Invoke action add
+Invok```e``` action add
 
 ## SYNTAX
 
-### AddExpanded (Default)
+### Add```e```xpand```e```d (D```e```fault)
 ```
-Add-MgTeamPrimaryChannelMember -TeamId <String> [-AdditionalProperties <Hashtable>]
- [-Values <IMicrosoftGraphConversationMember[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Add-MgT```e```amPrimaryChann```e```lM```e```mb```e```r -T```e```amId <String> [-AdditionalProp```e```rti```e```s <Hashtabl```e```>]
+ [-Valu```e```s <IMicrosoftGraphConv```e```rsationM```e```mb```e```r[]>] [-WhatIf] [-Confirm] [<CommonParam```e```t```e```rs>]
 ```
 
 ### Add
 ```
-Add-MgTeamPrimaryChannelMember -TeamId <String>
- -BodyParameter <IPathsU53MjcTeamsTeamIdPrimarychannelMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Add-MgT```e```amPrimaryChann```e```lM```e```mb```e```r -T```e```amId <String>
+ -BodyParam```e```t```e```r <IPathsU53MjcT```e```amsT```e```amIdPrimarychann```e```lM```e```mb```e```rsMicrosoftGraphAddPostR```e```qu```e```stbodyCont```e```ntApplicationJsonSch```e```ma>
+ [-WhatIf] [-Confirm] [<CommonParam```e```t```e```rs>]
 ```
 
-### AddViaIdentityExpanded
+### AddViaId```e```ntity```e```xpand```e```d
 ```
-Add-MgTeamPrimaryChannelMember -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-Values <IMicrosoftGraphConversationMember[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### AddViaIdentity
-```
-Add-MgTeamPrimaryChannelMember -InputObject <ITeamsIdentity>
- -BodyParameter <IPathsU53MjcTeamsTeamIdPrimarychannelMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Add-MgT```e```amPrimaryChann```e```lM```e```mb```e```r -InputObj```e```ct <IT```e```amsId```e```ntity> [-AdditionalProp```e```rti```e```s <Hashtabl```e```>]
+ [-Valu```e```s <IMicrosoftGraphConv```e```rsationM```e```mb```e```r[]>] [-WhatIf] [-Confirm] [<CommonParam```e```t```e```rs>]
 ```
 
-## DESCRIPTION
-Invoke action add
+### AddViaId```e```ntity
+```
+Add-MgT```e```amPrimaryChann```e```lM```e```mb```e```r -InputObj```e```ct <IT```e```amsId```e```ntity>
+ -BodyParam```e```t```e```r <IPathsU53MjcT```e```amsT```e```amIdPrimarychann```e```lM```e```mb```e```rsMicrosoftGraphAddPostR```e```qu```e```stbodyCont```e```ntApplicationJsonSch```e```ma>
+ [-WhatIf] [-Confirm] [<CommonParam```e```t```e```rs>]
+```
 
-## EXAMPLES
+## D```e```SCRIPTION
+Invok```e``` action add
 
-## PARAMETERS
+## ```e```XAMPL```e```S
 
-### -AdditionalProperties
-Additional Parameters
+## PARAM```e```T```e```RS
+
+### -AdditionalProp```e```rti```e```s
+Additional Param```e```t```e```rs
 
 ```yaml
-Type: Hashtable
-Parameter Sets: AddExpanded, AddViaIdentityExpanded
-Aliases:
+Typ```e```: Hashtabl```e```
+Param```e```t```e```r S```e```ts: Add```e```xpand```e```d, AddViaId```e```ntity```e```xpand```e```d
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -BodyParameter
+### -BodyParam```e```t```e```r
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, pl```e```as```e``` us```e``` G```e```t-H```e```lp -Onlin```e``` and s```e``````e``` NOT```e```S s```e```ction for BODYPARAM```e```T```e```R prop```e```rti```e```s and cr```e```at```e``` a hash tabl```e```.
 
 ```yaml
-Type: IPathsU53MjcTeamsTeamIdPrimarychannelMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Add, AddViaIdentity
-Aliases:
+Typ```e```: IPathsU53MjcT```e```amsT```e```amIdPrimarychann```e```lM```e```mb```e```rsMicrosoftGraphAddPostR```e```qu```e```stbodyCont```e```ntApplicationJsonSch```e```ma
+Param```e```t```e```r S```e```ts: Add, AddViaId```e```ntity
+Alias```e```s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R```e```quir```e```d: Tru```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Tru```e``` (ByValu```e```)
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -InputObj```e```ct
+Id```e```ntity Param```e```t```e```r
+To construct, pl```e```as```e``` us```e``` G```e```t-H```e```lp -Onlin```e``` and s```e``````e``` NOT```e```S s```e```ction for INPUTOBJ```e```CT prop```e```rti```e```s and cr```e```at```e``` a hash tabl```e```.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: AddViaIdentityExpanded, AddViaIdentity
-Aliases:
+Typ```e```: IT```e```amsId```e```ntity
+Param```e```t```e```r S```e```ts: AddViaId```e```ntity```e```xpand```e```d, AddViaId```e```ntity
+Alias```e```s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R```e```quir```e```d: Tru```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Tru```e``` (ByValu```e```)
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -TeamId
-key: id of team
+### -T```e```amId
+k```e```y: id of t```e```am
 
 ```yaml
-Type: String
-Parameter Sets: AddExpanded, Add
-Aliases:
+Typ```e```: String
+Param```e```t```e```r S```e```ts: Add```e```xpand```e```d, Add
+Alias```e```s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Tru```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -Values
+### -Valu```e```s
 .
-To construct, please use Get-Help -Online and see NOTES section for VALUES properties and create a hash table.
+To construct, pl```e```as```e``` us```e``` G```e```t-H```e```lp -Onlin```e``` and s```e``````e``` NOT```e```S s```e```ction for VALU```e```S prop```e```rti```e```s and cr```e```at```e``` a hash tabl```e```.
 
 ```yaml
-Type: IMicrosoftGraphConversationMember[]
-Parameter Sets: AddExpanded, AddViaIdentityExpanded
-Aliases:
+Typ```e```: IMicrosoftGraphConv```e```rsationM```e```mb```e```r[]
+Param```e```t```e```r S```e```ts: Add```e```xpand```e```d, AddViaId```e```ntity```e```xpand```e```d
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation b```e```for```e``` running th```e``` cmdl```e```t.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Typ```e```: SwitchParam```e```t```e```r
+Param```e```t```e```r S```e```ts: (All)
+Alias```e```s: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happ```e```n if th```e``` cmdl```e```t runs.
+Th```e``` cmdl```e```t is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Typ```e```: SwitchParam```e```t```e```r
+Param```e```t```e```r S```e```ts: (All)
+Alias```e```s: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam```e```t```e```rs
+This cmdl```e```t supports th```e``` common param```e```t```e```rs: -D```e```bug, -```e```rrorAction, -```e```rrorVariabl```e```, -InformationAction, -InformationVariabl```e```, -OutVariabl```e```, -OutBuff```e```r, -Pip```e```lin```e```Variabl```e```, -V```e```rbos```e```, -WarningAction, and -WarningVariabl```e```. For mor```e``` information, s```e``````e``` [about_CommonParam```e```t```e```rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsU53MjcTeamsTeamIdPrimarychannelMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Pow```e```rSh```e```ll.Mod```e```ls.IPathsU53MjcT```e```amsT```e```amIdPrimarychann```e```lM```e```mb```e```rsMicrosoftGraphAddPostR```e```qu```e```stbodyCont```e```ntApplicationJsonSch```e```ma
+### Microsoft.Graph.Pow```e```rSh```e```ll.Mod```e```ls.IT```e```amsId```e```ntity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphActionResultPart
-## NOTES
+### Microsoft.Graph.Pow```e```rSh```e```ll.Mod```e```ls.IMicrosoftGraphActionR```e```sultPart
+## NOT```e```S
 
-ALIASES
+ALIAS```e```S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL```e```X PARAM```e```T```e```R PROP```e```RTI```e```S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr```e```at```e``` th```e``` param```e```t```e```rs d```e```scrib```e```d b```e```low, construct a hash tabl```e``` containing th```e``` appropriat```e``` prop```e```rti```e```s. For information on hash tabl```e```s, run G```e```t-H```e```lp about_Hash_Tabl```e```s.
 
 
-BODYPARAMETER <IPathsU53MjcTeamsTeamIdPrimarychannelMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema>: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Values <IMicrosoftGraphConversationMember[]>]`: 
+BODYPARAM```e```T```e```R <IPathsU53MjcT```e```amsT```e```amIdPrimarychann```e```lM```e```mb```e```rsMicrosoftGraphAddPostR```e```qu```e```stbodyCont```e```ntApplicationJsonSch```e```ma>: .
+  - `[(Any) <Obj```e```ct>]`: This indicat```e```s any prop```e```rty can b```e``` add```e```d to this obj```e```ct.
+  - `[Valu```e```s <IMicrosoftGraphConv```e```rsationM```e```mb```e```r[]>]`: 
     - `[Id <String>]`: 
-    - `[DisplayName <String>]`: The display name of the user.
-    - `[Roles <String[]>]`: The roles for that user. This property only contains additional qualifiers when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values. Similarly, if the member is a guest, the roles property contains guest as one of the values. A basic member should not have any values specified in the roles property.
-    - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
+    - `[DisplayNam```e``` <String>]`: Th```e``` display nam```e``` of th```e``` us```e```r.
+    - `[Rol```e```s <String[]>]`: Th```e``` rol```e```s for that us```e```r. This prop```e```rty only contains additional qualifi```e```rs wh```e```n r```e```l```e```vant - for ```e```xampl```e```, if th```e``` m```e```mb```e```r has own```e```r privil```e```g```e```s, th```e``` rol```e```s prop```e```rty contains own```e```r as on```e``` of th```e``` valu```e```s. Similarly, if th```e``` m```e```mb```e```r is a gu```e```st, th```e``` rol```e```s prop```e```rty contains gu```e```st as on```e``` of th```e``` valu```e```s. A basic m```e```mb```e```r should not hav```e``` any valu```e```s sp```e```cifi```e```d in th```e``` rol```e```s prop```e```rty.
+    - `[Visibl```e```HistoryStartDat```e```Tim```e``` <Dat```e```Tim```e```?>]`: Th```e``` tim```e```stamp d```e```noting how far back a conv```e```rsation's history is shar```e```d with th```e``` conv```e```rsation m```e```mb```e```r. This prop```e```rty is s```e```ttabl```e``` only for m```e```mb```e```rs of a chat.
 
-INPUTOBJECT <ITeamsIdentity>: Identity Parameter
-  - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
-  - `[ChannelId <String>]`: key: id of channel
-  - `[ChatId <String>]`: key: id of chat
-  - `[ChatMessageHostedContentId <String>]`: key: id of chatMessageHostedContent
-  - `[ChatMessageId <String>]`: key: id of chatMessage
-  - `[ChatMessageId1 <String>]`: key: id of chatMessage
-  - `[ConversationMemberId <String>]`: key: id of conversationMember
-  - `[DeletedTeamId <String>]`: key: id of deletedTeam
-  - `[GroupId <String>]`: key: id of group
-  - `[OfferShiftRequestId <String>]`: key: id of offerShiftRequest
-  - `[OpenShiftChangeRequestId <String>]`: key: id of openShiftChangeRequest
-  - `[OpenShiftId <String>]`: key: id of openShift
-  - `[PinnedChatMessageInfoId <String>]`: key: id of pinnedChatMessageInfo
-  - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
-  - `[SchedulingGroupId <String>]`: key: id of schedulingGroup
-  - `[SharedWithChannelTeamInfoId <String>]`: key: id of sharedWithChannelTeamInfo
-  - `[ShiftId <String>]`: key: id of shift
-  - `[SwapShiftsChangeRequestId <String>]`: key: id of swapShiftsChangeRequest
-  - `[TeamId <String>]`: key: id of team
-  - `[TeamsAppDefinitionId <String>]`: key: id of teamsAppDefinition
-  - `[TeamsAppId <String>]`: key: id of teamsApp
-  - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation
-  - `[TeamsAsyncOperationId <String>]`: key: id of teamsAsyncOperation
-  - `[TeamsTabId <String>]`: key: id of teamsTab
-  - `[TeamworkDeviceId <String>]`: key: id of teamworkDevice
-  - `[TeamworkDeviceOperationId <String>]`: key: id of teamworkDeviceOperation
-  - `[TeamworkTagId <String>]`: key: id of teamworkTag
-  - `[TeamworkTagMemberId <String>]`: key: id of teamworkTagMember
-  - `[TimeCardId <String>]`: key: id of timeCard
-  - `[TimeOffId <String>]`: key: id of timeOff
-  - `[TimeOffReasonId <String>]`: key: id of timeOffReason
-  - `[TimeOffRequestId <String>]`: key: id of timeOffRequest
-  - `[UserId <String>]`: key: id of user
-  - `[UserScopeTeamsAppInstallationId <String>]`: key: id of userScopeTeamsAppInstallation
-  - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
+INPUTOBJ```e```CT <IT```e```amsId```e```ntity>: Id```e```ntity Param```e```t```e```r
+  - `[Associat```e```dT```e```amInfoId <String>]`: k```e```y: id of associat```e```dT```e```amInfo
+  - `[Chann```e```lId <String>]`: k```e```y: id of chann```e```l
+  - `[ChatId <String>]`: k```e```y: id of chat
+  - `[ChatM```e```ssag```e```Host```e```dCont```e```ntId <String>]`: k```e```y: id of chatM```e```ssag```e```Host```e```dCont```e```nt
+  - `[ChatM```e```ssag```e```Id <String>]`: k```e```y: id of chatM```e```ssag```e```
+  - `[ChatM```e```ssag```e```Id1 <String>]`: k```e```y: id of chatM```e```ssag```e```
+  - `[Conv```e```rsationM```e```mb```e```rId <String>]`: k```e```y: id of conv```e```rsationM```e```mb```e```r
+  - `[D```e```l```e```t```e```dT```e```amId <String>]`: k```e```y: id of d```e```l```e```t```e```dT```e```am
+  - `[GroupId <String>]`: k```e```y: id of group
+  - `[Off```e```rShiftR```e```qu```e```stId <String>]`: k```e```y: id of off```e```rShiftR```e```qu```e```st
+  - `[Op```e```nShiftChang```e```R```e```qu```e```stId <String>]`: k```e```y: id of op```e```nShiftChang```e```R```e```qu```e```st
+  - `[Op```e```nShiftId <String>]`: k```e```y: id of op```e```nShift
+  - `[Pinn```e```dChatM```e```ssag```e```InfoId <String>]`: k```e```y: id of pinn```e```dChatM```e```ssag```e```Info
+  - `[R```e```sourc```e```Sp```e```cificP```e```rmissionGrantId <String>]`: k```e```y: id of r```e```sourc```e```Sp```e```cificP```e```rmissionGrant
+  - `[Sch```e```dulingGroupId <String>]`: k```e```y: id of sch```e```dulingGroup
+  - `[Shar```e```dWithChann```e```lT```e```amInfoId <String>]`: k```e```y: id of shar```e```dWithChann```e```lT```e```amInfo
+  - `[ShiftId <String>]`: k```e```y: id of shift
+  - `[SwapShiftsChang```e```R```e```qu```e```stId <String>]`: k```e```y: id of swapShiftsChang```e```R```e```qu```e```st
+  - `[T```e```amId <String>]`: k```e```y: id of t```e```am
+  - `[T```e```amsAppD```e```finitionId <String>]`: k```e```y: id of t```e```amsAppD```e```finition
+  - `[T```e```amsAppId <String>]`: k```e```y: id of t```e```amsApp
+  - `[T```e```amsAppInstallationId <String>]`: k```e```y: id of t```e```amsAppInstallation
+  - `[T```e```amsAsyncOp```e```rationId <String>]`: k```e```y: id of t```e```amsAsyncOp```e```ration
+  - `[T```e```amsTabId <String>]`: k```e```y: id of t```e```amsTab
+  - `[T```e```amworkD```e```vic```e```Id <String>]`: k```e```y: id of t```e```amworkD```e```vic```e```
+  - `[T```e```amworkD```e```vic```e```Op```e```rationId <String>]`: k```e```y: id of t```e```amworkD```e```vic```e```Op```e```ration
+  - `[T```e```amworkTagId <String>]`: k```e```y: id of t```e```amworkTag
+  - `[T```e```amworkTagM```e```mb```e```rId <String>]`: k```e```y: id of t```e```amworkTagM```e```mb```e```r
+  - `[Tim```e```CardId <String>]`: k```e```y: id of tim```e```Card
+  - `[Tim```e```OffId <String>]`: k```e```y: id of tim```e```Off
+  - `[Tim```e```OffR```e```asonId <String>]`: k```e```y: id of tim```e```OffR```e```ason
+  - `[Tim```e```OffR```e```qu```e```stId <String>]`: k```e```y: id of tim```e```OffR```e```qu```e```st
+  - `[Us```e```rId <String>]`: k```e```y: id of us```e```r
+  - `[Us```e```rScop```e```T```e```amsAppInstallationId <String>]`: k```e```y: id of us```e```rScop```e```T```e```amsAppInstallation
+  - `[Workforc```e```Int```e```grationId <String>]`: k```e```y: id of workforc```e```Int```e```gration
 
-VALUES <IMicrosoftGraphConversationMember[]>: .
+VALU```e```S <IMicrosoftGraphConv```e```rsationM```e```mb```e```r[]>: .
   - `[Id <String>]`: 
-  - `[DisplayName <String>]`: The display name of the user.
-  - `[Roles <String[]>]`: The roles for that user. This property only contains additional qualifiers when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values. Similarly, if the member is a guest, the roles property contains guest as one of the values. A basic member should not have any values specified in the roles property.
-  - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
+  - `[DisplayNam```e``` <String>]`: Th```e``` display nam```e``` of th```e``` us```e```r.
+  - `[Rol```e```s <String[]>]`: Th```e``` rol```e```s for that us```e```r. This prop```e```rty only contains additional qualifi```e```rs wh```e```n r```e```l```e```vant - for ```e```xampl```e```, if th```e``` m```e```mb```e```r has own```e```r privil```e```g```e```s, th```e``` rol```e```s prop```e```rty contains own```e```r as on```e``` of th```e``` valu```e```s. Similarly, if th```e``` m```e```mb```e```r is a gu```e```st, th```e``` rol```e```s prop```e```rty contains gu```e```st as on```e``` of th```e``` valu```e```s. A basic m```e```mb```e```r should not hav```e``` any valu```e```s sp```e```cifi```e```d in th```e``` rol```e```s prop```e```rty.
+  - `[Visibl```e```HistoryStartDat```e```Tim```e``` <Dat```e```Tim```e```?>]`: Th```e``` tim```e```stamp d```e```noting how far back a conv```e```rsation's history is shar```e```d with th```e``` conv```e```rsation m```e```mb```e```r. This prop```e```rty is s```e```ttabl```e``` only for m```e```mb```e```rs of a chat.
 
-## RELATED LINKS
+## R```e```LAT```e```D LINKS
