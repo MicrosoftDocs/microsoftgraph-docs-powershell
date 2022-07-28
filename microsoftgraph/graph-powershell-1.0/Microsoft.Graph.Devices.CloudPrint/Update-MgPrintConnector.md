@@ -1,344 +1,344 @@
-﻿---
-external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
-Module Name: Microsoft.Graph.Devices.CloudPrint
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintconnector
-schema: 2.0.0
+---
+```e```xt```e```rnal h```e```lp fil```e```: Microsoft.Graph.D```e```vic```e```s.CloudPrint-h```e```lp.xml
+Modul```e``` Nam```e```: Microsoft.Graph.D```e```vic```e```s.CloudPrint
+onlin```e``` v```e```rsion: https://docs.microsoft.com/```e```n-us/pow```e```rsh```e```ll/modul```e```/microsoft.graph.d```e```vic```e```s.cloudprint/updat```e```-mgprintconn```e```ctor
+sch```e```ma: 2.0.0
 ---
 
-# Update-MgPrintConnector
+# Updat```e```-MgPrintConn```e```ctor
 
 ## SYNOPSIS
-Update the navigation property connectors in print
+Updat```e``` th```e``` navigation prop```e```rty conn```e```ctors in print
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### Updat```e``````e```xpand```e```d1 (D```e```fault)
 ```
-Update-MgPrintConnector -PrintConnectorId <String> [-AdditionalProperties <Hashtable>] [-AppVersion <String>]
- [-DisplayName <String>] [-FullyQualifiedDomainName <String>] [-Id <String>]
- [-Location <IMicrosoftGraphPrinterLocation>] [-OperatingSystem <String>] [-RegisteredDateTime <DateTime>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update1
-```
-Update-MgPrintConnector -PrintConnectorId <String> -BodyParameter <IMicrosoftGraphPrintConnector1> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Updat```e```-MgPrintConn```e```ctor -PrintConn```e```ctorId <String> [-AdditionalProp```e```rti```e```s <Hashtabl```e```>] [-AppV```e```rsion <String>]
+ [-DisplayNam```e``` <String>] [-FullyQualifi```e```dDomainNam```e``` <String>] [-Id <String>]
+ [-Location <IMicrosoftGraphPrint```e```rLocation>] [-Op```e```ratingSyst```e```m <String>] [-R```e```gist```e```r```e```dDat```e```Tim```e``` <Dat```e```Tim```e```>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParam```e```t```e```rs>]
 ```
 
-### UpdateViaIdentityExpanded1
+### Updat```e```1
 ```
-Update-MgPrintConnector -InputObject <IDevicesCloudPrintIdentity> [-AdditionalProperties <Hashtable>]
- [-AppVersion <String>] [-DisplayName <String>] [-FullyQualifiedDomainName <String>] [-Id <String>]
- [-Location <IMicrosoftGraphPrinterLocation>] [-OperatingSystem <String>] [-RegisteredDateTime <DateTime>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Updat```e```-MgPrintConn```e```ctor -PrintConn```e```ctorId <String> -BodyParam```e```t```e```r <IMicrosoftGraphPrintConn```e```ctor1> [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParam```e```t```e```rs>]
 ```
 
-### UpdateViaIdentity1
+### Updat```e```ViaId```e```ntity```e```xpand```e```d1
 ```
-Update-MgPrintConnector -InputObject <IDevicesCloudPrintIdentity>
- -BodyParameter <IMicrosoftGraphPrintConnector1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Updat```e```-MgPrintConn```e```ctor -InputObj```e```ct <ID```e```vic```e```sCloudPrintId```e```ntity> [-AdditionalProp```e```rti```e```s <Hashtabl```e```>]
+ [-AppV```e```rsion <String>] [-DisplayNam```e``` <String>] [-FullyQualifi```e```dDomainNam```e``` <String>] [-Id <String>]
+ [-Location <IMicrosoftGraphPrint```e```rLocation>] [-Op```e```ratingSyst```e```m <String>] [-R```e```gist```e```r```e```dDat```e```Tim```e``` <Dat```e```Tim```e```>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParam```e```t```e```rs>]
 ```
 
-## DESCRIPTION
-Update the navigation property connectors in print
+### Updat```e```ViaId```e```ntity1
+```
+Updat```e```-MgPrintConn```e```ctor -InputObj```e```ct <ID```e```vic```e```sCloudPrintId```e```ntity>
+ -BodyParam```e```t```e```r <IMicrosoftGraphPrintConn```e```ctor1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParam```e```t```e```rs>]
+```
 
-## EXAMPLES
+## D```e```SCRIPTION
+Updat```e``` th```e``` navigation prop```e```rty conn```e```ctors in print
 
-## PARAMETERS
+## ```e```XAMPL```e```S
 
-### -AdditionalProperties
-Additional Parameters
+## PARAM```e```T```e```RS
+
+### -AdditionalProp```e```rti```e```s
+Additional Param```e```t```e```rs
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ```e```: Hashtabl```e```
+Param```e```t```e```r S```e```ts: Updat```e``````e```xpand```e```d1, Updat```e```ViaId```e```ntity```e```xpand```e```d1
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -AppVersion
-The connector's version.
+### -AppV```e```rsion
+Th```e``` conn```e```ctor's v```e```rsion.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ```e```: String
+Param```e```t```e```r S```e```ts: Updat```e``````e```xpand```e```d1, Updat```e```ViaId```e```ntity```e```xpand```e```d1
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -BodyParameter
-printConnector
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -BodyParam```e```t```e```r
+printConn```e```ctor
+To construct, pl```e```as```e``` us```e``` G```e```t-H```e```lp -Onlin```e``` and s```e``````e``` NOT```e```S s```e```ction for BODYPARAM```e```T```e```R prop```e```rti```e```s and cr```e```at```e``` a hash tabl```e```.
 
 ```yaml
-Type: IMicrosoftGraphPrintConnector1
-Parameter Sets: Update1, UpdateViaIdentity1
-Aliases:
+Typ```e```: IMicrosoftGraphPrintConn```e```ctor1
+Param```e```t```e```r S```e```ts: Updat```e```1, Updat```e```ViaId```e```ntity1
+Alias```e```s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R```e```quir```e```d: Tru```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Tru```e``` (ByValu```e```)
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -DisplayName
-The name of the connector.
+### -DisplayNam```e```
+Th```e``` nam```e``` of th```e``` conn```e```ctor.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ```e```: String
+Param```e```t```e```r S```e```ts: Updat```e``````e```xpand```e```d1, Updat```e```ViaId```e```ntity```e```xpand```e```d1
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -FullyQualifiedDomainName
-The connector machine's hostname.
+### -FullyQualifi```e```dDomainNam```e```
+Th```e``` conn```e```ctor machin```e```'s hostnam```e```.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ```e```: String
+Param```e```t```e```r S```e```ts: Updat```e``````e```xpand```e```d1, Updat```e```ViaId```e```ntity```e```xpand```e```d1
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
 ### -Id
 .
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ```e```: String
+Param```e```t```e```r S```e```ts: Updat```e``````e```xpand```e```d1, Updat```e```ViaId```e```ntity```e```xpand```e```d1
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -InputObj```e```ct
+Id```e```ntity Param```e```t```e```r
+To construct, pl```e```as```e``` us```e``` G```e```t-H```e```lp -Onlin```e``` and s```e``````e``` NOT```e```S s```e```ction for INPUTOBJ```e```CT prop```e```rti```e```s and cr```e```at```e``` a hash tabl```e```.
 
 ```yaml
-Type: IDevicesCloudPrintIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
-Aliases:
+Typ```e```: ID```e```vic```e```sCloudPrintId```e```ntity
+Param```e```t```e```r S```e```ts: Updat```e```ViaId```e```ntity```e```xpand```e```d1, Updat```e```ViaId```e```ntity1
+Alias```e```s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R```e```quir```e```d: Tru```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Tru```e``` (ByValu```e```)
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
 ### -Location
-printerLocation
-To construct, please use Get-Help -Online and see NOTES section for LOCATION properties and create a hash table.
+print```e```rLocation
+To construct, pl```e```as```e``` us```e``` G```e```t-H```e```lp -Onlin```e``` and s```e``````e``` NOT```e```S s```e```ction for LOCATION prop```e```rti```e```s and cr```e```at```e``` a hash tabl```e```.
 
 ```yaml
-Type: IMicrosoftGraphPrinterLocation
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ```e```: IMicrosoftGraphPrint```e```rLocation
+Param```e```t```e```r S```e```ts: Updat```e``````e```xpand```e```d1, Updat```e```ViaId```e```ntity```e```xpand```e```d1
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -OperatingSystem
-The connector machine's operating system version.
+### -Op```e```ratingSyst```e```m
+Th```e``` conn```e```ctor machin```e```'s op```e```rating syst```e```m v```e```rsion.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ```e```: String
+Param```e```t```e```r S```e```ts: Updat```e``````e```xpand```e```d1, Updat```e```ViaId```e```ntity```e```xpand```e```d1
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
 ### -PassThru
-Returns true when the command succeeds
+R```e```turns tru```e``` wh```e```n th```e``` command succ```e``````e```ds
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
+Typ```e```: SwitchParam```e```t```e```r
+Param```e```t```e```r S```e```ts: (All)
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -PrintConnectorId
-key: id of printConnector
+### -PrintConn```e```ctorId
+k```e```y: id of printConn```e```ctor
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
-Aliases:
+Typ```e```: String
+Param```e```t```e```r S```e```ts: Updat```e``````e```xpand```e```d1, Updat```e```1
+Alias```e```s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Tru```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### -RegisteredDateTime
-The DateTimeOffset when the connector was registered.
+### -R```e```gist```e```r```e```dDat```e```Tim```e```
+Th```e``` Dat```e```Tim```e```Offs```e```t wh```e```n th```e``` conn```e```ctor was r```e```gist```e```r```e```d.
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
+Typ```e```: Dat```e```Tim```e```
+Param```e```t```e```r S```e```ts: Updat```e``````e```xpand```e```d1, Updat```e```ViaId```e```ntity```e```xpand```e```d1
+Alias```e```s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation b```e```for```e``` running th```e``` cmdl```e```t.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Typ```e```: SwitchParam```e```t```e```r
+Param```e```t```e```r S```e```ts: (All)
+Alias```e```s: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happ```e```n if th```e``` cmdl```e```t runs.
+Th```e``` cmdl```e```t is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Typ```e```: SwitchParam```e```t```e```r
+Param```e```t```e```r S```e```ts: (All)
+Alias```e```s: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```e```quir```e```d: Fals```e```
+Position: Nam```e```d
+D```e```fault valu```e```: Non```e```
+Acc```e```pt pip```e```lin```e``` input: Fals```e```
+Acc```e```pt wildcard charact```e```rs: Fals```e```
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam```e```t```e```rs
+This cmdl```e```t supports th```e``` common param```e```t```e```rs: -D```e```bug, -```e```rrorAction, -```e```rrorVariabl```e```, -InformationAction, -InformationVariabl```e```, -OutVariabl```e```, -OutBuff```e```r, -Pip```e```lin```e```Variabl```e```, -V```e```rbos```e```, -WarningAction, and -WarningVariabl```e```. For mor```e``` information, s```e``````e``` [about_CommonParam```e```t```e```rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintConnector1
+### Microsoft.Graph.Pow```e```rSh```e```ll.Mod```e```ls.ID```e```vic```e```sCloudPrintId```e```ntity
+### Microsoft.Graph.Pow```e```rSh```e```ll.Mod```e```ls.IMicrosoftGraphPrintConn```e```ctor1
 ## OUTPUTS
 
-### System.Boolean
-## NOTES
+### Syst```e```m.Bool```e```an
+## NOT```e```S
 
-ALIASES
+ALIAS```e```S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL```e```X PARAM```e```T```e```R PROP```e```RTI```e```S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr```e```at```e``` th```e``` param```e```t```e```rs d```e```scrib```e```d b```e```low, construct a hash tabl```e``` containing th```e``` appropriat```e``` prop```e```rti```e```s. For information on hash tabl```e```s, run G```e```t-H```e```lp about_Hash_Tabl```e```s.
 
 
-BODYPARAMETER <IMicrosoftGraphPrintConnector1>: printConnector
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+BODYPARAM```e```T```e```R <IMicrosoftGraphPrintConn```e```ctor1>: printConn```e```ctor
+  - `[(Any) <Obj```e```ct>]`: This indicat```e```s any prop```e```rty can b```e``` add```e```d to this obj```e```ct.
   - `[Id <String>]`: 
-  - `[AppVersion <String>]`: The connector's version.
-  - `[DisplayName <String>]`: The name of the connector.
-  - `[FullyQualifiedDomainName <String>]`: The connector machine's hostname.
-  - `[Location <IMicrosoftGraphPrinterLocation>]`: printerLocation
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[AltitudeInMeters <Int32?>]`: The altitude, in meters, that the printer is located at.
-    - `[Building <String>]`: The building that the printer is located in.
-    - `[City <String>]`: The city that the printer is located in.
-    - `[CountryOrRegion <String>]`: The country or region that the printer is located in.
-    - `[Floor <String>]`: The floor that the printer is located on. Only numerical values are supported right now.
-    - `[FloorDescription <String>]`: The description of the floor that the printer is located on.
-    - `[Latitude <Double?>]`: The latitude that the printer is located at.
-    - `[Longitude <Double?>]`: The longitude that the printer is located at.
-    - `[Organization <String[]>]`: The organizational hierarchy that the printer belongs to. The elements should be in hierarchical order.
-    - `[PostalCode <String>]`: The postal code that the printer is located in.
-    - `[RoomDescription <String>]`: The description of the room that the printer is located in.
-    - `[RoomName <String>]`: The room that the printer is located in. Only numerical values are supported right now.
-    - `[Site <String>]`: The site that the printer is located in.
-    - `[StateOrProvince <String>]`: The state or province that the printer is located in.
-    - `[StreetAddress <String>]`: The street address where the printer is located.
-    - `[Subdivision <String[]>]`: The subdivision that the printer is located in. The elements should be in hierarchical order.
+  - `[AppV```e```rsion <String>]`: Th```e``` conn```e```ctor's v```e```rsion.
+  - `[DisplayNam```e``` <String>]`: Th```e``` nam```e``` of th```e``` conn```e```ctor.
+  - `[FullyQualifi```e```dDomainNam```e``` <String>]`: Th```e``` conn```e```ctor machin```e```'s hostnam```e```.
+  - `[Location <IMicrosoftGraphPrint```e```rLocation>]`: print```e```rLocation
+    - `[(Any) <Obj```e```ct>]`: This indicat```e```s any prop```e```rty can b```e``` add```e```d to this obj```e```ct.
+    - `[Altitud```e```InM```e```t```e```rs <Int32?>]`: Th```e``` altitud```e```, in m```e```t```e```rs, that th```e``` print```e```r is locat```e```d at.
+    - `[Building <String>]`: Th```e``` building that th```e``` print```e```r is locat```e```d in.
+    - `[City <String>]`: Th```e``` city that th```e``` print```e```r is locat```e```d in.
+    - `[CountryOrR```e```gion <String>]`: Th```e``` country or r```e```gion that th```e``` print```e```r is locat```e```d in.
+    - `[Floor <String>]`: Th```e``` floor that th```e``` print```e```r is locat```e```d on. Only num```e```rical valu```e```s ar```e``` support```e```d right now.
+    - `[FloorD```e```scription <String>]`: Th```e``` d```e```scription of th```e``` floor that th```e``` print```e```r is locat```e```d on.
+    - `[Latitud```e``` <Doubl```e```?>]`: Th```e``` latitud```e``` that th```e``` print```e```r is locat```e```d at.
+    - `[Longitud```e``` <Doubl```e```?>]`: Th```e``` longitud```e``` that th```e``` print```e```r is locat```e```d at.
+    - `[Organization <String[]>]`: Th```e``` organizational hi```e```rarchy that th```e``` print```e```r b```e```longs to. Th```e``` ```e```l```e```m```e```nts should b```e``` in hi```e```rarchical ord```e```r.
+    - `[PostalCod```e``` <String>]`: Th```e``` postal cod```e``` that th```e``` print```e```r is locat```e```d in.
+    - `[RoomD```e```scription <String>]`: Th```e``` d```e```scription of th```e``` room that th```e``` print```e```r is locat```e```d in.
+    - `[RoomNam```e``` <String>]`: Th```e``` room that th```e``` print```e```r is locat```e```d in. Only num```e```rical valu```e```s ar```e``` support```e```d right now.
+    - `[Sit```e``` <String>]`: Th```e``` sit```e``` that th```e``` print```e```r is locat```e```d in.
+    - `[Stat```e```OrProvinc```e``` <String>]`: Th```e``` stat```e``` or provinc```e``` that th```e``` print```e```r is locat```e```d in.
+    - `[Str```e``````e```tAddr```e```ss <String>]`: Th```e``` str```e``````e```t addr```e```ss wh```e```r```e``` th```e``` print```e```r is locat```e```d.
+    - `[Subdivision <String[]>]`: Th```e``` subdivision that th```e``` print```e```r is locat```e```d in. Th```e``` ```e```l```e```m```e```nts should b```e``` in hi```e```rarchical ord```e```r.
     - `[Subunit <String[]>]`: 
-  - `[OperatingSystem <String>]`: The connector machine's operating system version.
-  - `[RegisteredDateTime <DateTime?>]`: The DateTimeOffset when the connector was registered.
+  - `[Op```e```ratingSyst```e```m <String>]`: Th```e``` conn```e```ctor machin```e```'s op```e```rating syst```e```m v```e```rsion.
+  - `[R```e```gist```e```r```e```dDat```e```Tim```e``` <Dat```e```Tim```e```?>]`: Th```e``` Dat```e```Tim```e```Offs```e```t wh```e```n th```e``` conn```e```ctor was r```e```gist```e```r```e```d.
 
-INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
-  - `[GroupId <String>]`: key: id of group
-  - `[PrintConnectorId <String>]`: key: id of printConnector
-  - `[PrintOperationId <String>]`: key: id of printOperation
-  - `[PrintServiceEndpointId <String>]`: key: id of printServiceEndpoint
-  - `[PrintServiceId <String>]`: key: id of printService
-  - `[PrintTaskDefinitionId <String>]`: key: id of printTaskDefinition
-  - `[PrintTaskId <String>]`: key: id of printTask
-  - `[PrintTaskTriggerId <String>]`: key: id of printTaskTrigger
-  - `[PrinterId <String>]`: key: id of printer
-  - `[PrinterShareId <String>]`: key: id of printerShare
-  - `[UserId <String>]`: key: id of user
+INPUTOBJ```e```CT <ID```e```vic```e```sCloudPrintId```e```ntity>: Id```e```ntity Param```e```t```e```r
+  - `[GroupId <String>]`: k```e```y: id of group
+  - `[PrintConn```e```ctorId <String>]`: k```e```y: id of printConn```e```ctor
+  - `[PrintOp```e```rationId <String>]`: k```e```y: id of printOp```e```ration
+  - `[PrintS```e```rvic```e``````e```ndpointId <String>]`: k```e```y: id of printS```e```rvic```e``````e```ndpoint
+  - `[PrintS```e```rvic```e```Id <String>]`: k```e```y: id of printS```e```rvic```e```
+  - `[PrintTaskD```e```finitionId <String>]`: k```e```y: id of printTaskD```e```finition
+  - `[PrintTaskId <String>]`: k```e```y: id of printTask
+  - `[PrintTaskTrigg```e```rId <String>]`: k```e```y: id of printTaskTrigg```e```r
+  - `[Print```e```rId <String>]`: k```e```y: id of print```e```r
+  - `[Print```e```rShar```e```Id <String>]`: k```e```y: id of print```e```rShar```e```
+  - `[Us```e```rId <String>]`: k```e```y: id of us```e```r
 
-LOCATION <IMicrosoftGraphPrinterLocation>: printerLocation
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AltitudeInMeters <Int32?>]`: The altitude, in meters, that the printer is located at.
-  - `[Building <String>]`: The building that the printer is located in.
-  - `[City <String>]`: The city that the printer is located in.
-  - `[CountryOrRegion <String>]`: The country or region that the printer is located in.
-  - `[Floor <String>]`: The floor that the printer is located on. Only numerical values are supported right now.
-  - `[FloorDescription <String>]`: The description of the floor that the printer is located on.
-  - `[Latitude <Double?>]`: The latitude that the printer is located at.
-  - `[Longitude <Double?>]`: The longitude that the printer is located at.
-  - `[Organization <String[]>]`: The organizational hierarchy that the printer belongs to. The elements should be in hierarchical order.
-  - `[PostalCode <String>]`: The postal code that the printer is located in.
-  - `[RoomDescription <String>]`: The description of the room that the printer is located in.
-  - `[RoomName <String>]`: The room that the printer is located in. Only numerical values are supported right now.
-  - `[Site <String>]`: The site that the printer is located in.
-  - `[StateOrProvince <String>]`: The state or province that the printer is located in.
-  - `[StreetAddress <String>]`: The street address where the printer is located.
-  - `[Subdivision <String[]>]`: The subdivision that the printer is located in. The elements should be in hierarchical order.
+LOCATION <IMicrosoftGraphPrint```e```rLocation>: print```e```rLocation
+  - `[(Any) <Obj```e```ct>]`: This indicat```e```s any prop```e```rty can b```e``` add```e```d to this obj```e```ct.
+  - `[Altitud```e```InM```e```t```e```rs <Int32?>]`: Th```e``` altitud```e```, in m```e```t```e```rs, that th```e``` print```e```r is locat```e```d at.
+  - `[Building <String>]`: Th```e``` building that th```e``` print```e```r is locat```e```d in.
+  - `[City <String>]`: Th```e``` city that th```e``` print```e```r is locat```e```d in.
+  - `[CountryOrR```e```gion <String>]`: Th```e``` country or r```e```gion that th```e``` print```e```r is locat```e```d in.
+  - `[Floor <String>]`: Th```e``` floor that th```e``` print```e```r is locat```e```d on. Only num```e```rical valu```e```s ar```e``` support```e```d right now.
+  - `[FloorD```e```scription <String>]`: Th```e``` d```e```scription of th```e``` floor that th```e``` print```e```r is locat```e```d on.
+  - `[Latitud```e``` <Doubl```e```?>]`: Th```e``` latitud```e``` that th```e``` print```e```r is locat```e```d at.
+  - `[Longitud```e``` <Doubl```e```?>]`: Th```e``` longitud```e``` that th```e``` print```e```r is locat```e```d at.
+  - `[Organization <String[]>]`: Th```e``` organizational hi```e```rarchy that th```e``` print```e```r b```e```longs to. Th```e``` ```e```l```e```m```e```nts should b```e``` in hi```e```rarchical ord```e```r.
+  - `[PostalCod```e``` <String>]`: Th```e``` postal cod```e``` that th```e``` print```e```r is locat```e```d in.
+  - `[RoomD```e```scription <String>]`: Th```e``` d```e```scription of th```e``` room that th```e``` print```e```r is locat```e```d in.
+  - `[RoomNam```e``` <String>]`: Th```e``` room that th```e``` print```e```r is locat```e```d in. Only num```e```rical valu```e```s ar```e``` support```e```d right now.
+  - `[Sit```e``` <String>]`: Th```e``` sit```e``` that th```e``` print```e```r is locat```e```d in.
+  - `[Stat```e```OrProvinc```e``` <String>]`: Th```e``` stat```e``` or provinc```e``` that th```e``` print```e```r is locat```e```d in.
+  - `[Str```e``````e```tAddr```e```ss <String>]`: Th```e``` str```e``````e```t addr```e```ss wh```e```r```e``` th```e``` print```e```r is locat```e```d.
+  - `[Subdivision <String[]>]`: Th```e``` subdivision that th```e``` print```e```r is locat```e```d in. Th```e``` ```e```l```e```m```e```nts should b```e``` in hi```e```rarchical ord```e```r.
   - `[Subunit <String[]>]`: 
 
-## RELATED LINKS
+## R```e```LAT```e```D LINKS
