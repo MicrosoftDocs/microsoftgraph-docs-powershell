@@ -1,242 +1,242 @@
-﻿---
-external help file: Microsoft.Graph.Users-help.xml
-Module Name: Microsoft.Graph.Users
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/set-mgusermanagerbyref
-schema: 2.0.0
+---
+external help file: Micro``s``oft.Graph.U``s``er``s``-help.xml
+Module Name: Micro``s``oft.Graph.U``s``er``s``
+online ver``s``ion: http``s``://doc``s``.micro``s``oft.com/en-u``s``/power``s``hell/module/micro``s``oft.graph.u``s``er``s``/``s``et-mgu``s``ermanagerbyref
+``s``chema: 2.0.0
 ---
 
-# Set-MgUserManagerByRef
+# ``s``et-MgU``s``erManagerByRef
 
-## SYNOPSIS
-Update the ref of navigation property manager in users
+## ``s``YNOP``s``I``s``
+Update the ref of navigation property manager in u``s``er``s``
 
-## SYNTAX
+## ``s``YNTAX
 
-### SetExpanded1 (Default)
+### ``s``etExpanded1 (Default)
 ```
-Set-MgUserManagerByRef -UserId <String> [-AdditionalProperties <Hashtable>] [-OdataId <String>]
- [-OdataType <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Set1
-```
-Set-MgUserManagerByRef -UserId <String> -BodyParameter <IReferenceUpdateSchema> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+``s``et-MgU``s``erManagerByRef -U``s``erId <``s``tring> [-AdditionalPropertie``s`` <Ha``s``htable>] [-OdataId <``s``tring>]
+ [-OdataType <``s``tring>] [-Pa``s````s``Thru] [-WhatIf] [-Confirm] [<CommonParameter``s``>]
 ```
 
-### SetViaIdentityExpanded1
+### ``s``et1
 ```
-Set-MgUserManagerByRef -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>] [-OdataId <String>]
- [-OdataType <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### SetViaIdentity1
-```
-Set-MgUserManagerByRef -InputObject <IUsersIdentity> -BodyParameter <IReferenceUpdateSchema> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+``s``et-MgU``s``erManagerByRef -U``s``erId <``s``tring> -BodyParameter <IReferenceUpdate``s``chema> [-Pa``s````s``Thru] [-WhatIf]
+ [-Confirm] [<CommonParameter``s``>]
 ```
 
-## DESCRIPTION
-Update the ref of navigation property manager in users
+### ``s``etViaIdentityExpanded1
+```
+``s``et-MgU``s``erManagerByRef -InputObject <IU``s``er``s``Identity> [-AdditionalPropertie``s`` <Ha``s``htable>] [-OdataId <``s``tring>]
+ [-OdataType <``s``tring>] [-Pa``s````s``Thru] [-WhatIf] [-Confirm] [<CommonParameter``s``>]
+```
 
-## EXAMPLES
+### ``s``etViaIdentity1
+```
+``s``et-MgU``s``erManagerByRef -InputObject <IU``s``er``s``Identity> -BodyParameter <IReferenceUpdate``s``chema> [-Pa``s````s``Thru]
+ [-WhatIf] [-Confirm] [<CommonParameter``s``>]
+```
 
-### Example 1: Update a user's manager
-```powershell
+## DE``s``CRIPTION
+Update the ref of navigation property manager in u``s``er``s``
+
+## EXAMPLE``s``
+
+### Example 1: Update a u``s``er'``s`` manager
+```power``s``hell
 $NewManager = @{
-  "@odata.id"="https://graph.microsoft.com/v1.0/users/075b32dd-edb7-47cf-89ef-f3f733683a3f"
+  "@odata.id"="http``s``://graph.micro``s``oft.com/v1.0/u``s``er``s``/075b32dd-edb7-47cf-89ef-f3f733683a3f"
   }
 
-Set-MgUserManagerByRef -UserId '8a7c50d3-fcbd-4727-a889-8ab232dfea01' -BodyParameter $NewManager
+``s``et-MgU``s``erManagerByRef -U``s``erId '8a7c50d3-fcbd-4727-a889-8ab232dfea01' -BodyParameter $NewManager
 ```
 
-In this example, the first command defines the new manager using the $NewManager variable with id `075b32dd-edb7-47cf-89ef-f3f733683a3f`.
-The second command sets the manager for user defined by the UserId as the value provided on the $NewManager variable.
+In thi``s`` example, the fir``s``t command define``s`` the new manager u``s``ing the $NewManager variable with id `075b32dd-edb7-47cf-89ef-f3f733683a3f`.
+The ``s``econd command ``s``et``s`` the manager for u``s``er defined by the U``s``erId a``s`` the value provided on the $NewManager variable.
 
-## PARAMETERS
+## PARAMETER``s``
 
-### -AdditionalProperties
-Additional Parameters
+### -AdditionalPropertie``s``
+Additional Parameter``s``
 
 ```yaml
-Type: Hashtable
-Parameter Sets: SetExpanded1, SetViaIdentityExpanded1
-Aliases:
+Type: Ha``s``htable
+Parameter ``s``et``s``: ``s``etExpanded1, ``s``etViaIdentityExpanded1
+Alia``s``e``s``:
 
-Required: False
-Position: Named
+Required: Fal``s``e
+Po``s``ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``s``e
+Accept wildcard character``s``: Fal``s``e
 ```
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To con``s``truct, plea``s``e u``s``e Get-Help -Online and ``s``ee NOTE``s`` ``s``ection for BODYPARAMETER propertie``s`` and create a ha``s``h table.
 
 ```yaml
-Type: IReferenceUpdateSchema
-Parameter Sets: Set1, SetViaIdentity1
-Aliases:
+Type: IReferenceUpdate``s``chema
+Parameter ``s``et``s``: ``s``et1, ``s``etViaIdentity1
+Alia``s``e``s``:
 
 Required: True
-Position: Named
+Po``s``ition: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wildcard character``s``: Fal``s``e
 ```
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To con``s``truct, plea``s``e u``s``e Get-Help -Online and ``s``ee NOTE``s`` ``s``ection for INPUTOBJECT propertie``s`` and create a ha``s``h table.
 
 ```yaml
-Type: IUsersIdentity
-Parameter Sets: SetViaIdentityExpanded1, SetViaIdentity1
-Aliases:
+Type: IU``s``er``s``Identity
+Parameter ``s``et``s``: ``s``etViaIdentityExpanded1, ``s``etViaIdentity1
+Alia``s``e``s``:
 
 Required: True
-Position: Named
+Po``s``ition: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept wildcard character``s``: Fal``s``e
 ```
 
 ### -OdataId
 .
 
 ```yaml
-Type: String
-Parameter Sets: SetExpanded1, SetViaIdentityExpanded1
-Aliases:
+Type: ``s``tring
+Parameter ``s``et``s``: ``s``etExpanded1, ``s``etViaIdentityExpanded1
+Alia``s``e``s``:
 
-Required: False
-Position: Named
+Required: Fal``s``e
+Po``s``ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``s``e
+Accept wildcard character``s``: Fal``s``e
 ```
 
 ### -OdataType
 .
 
 ```yaml
-Type: String
-Parameter Sets: SetExpanded1, SetViaIdentityExpanded1
-Aliases:
+Type: ``s``tring
+Parameter ``s``et``s``: ``s``etExpanded1, ``s``etViaIdentityExpanded1
+Alia``s``e``s``:
 
-Required: False
-Position: Named
+Required: Fal``s``e
+Po``s``ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``s``e
+Accept wildcard character``s``: Fal``s``e
 ```
 
-### -PassThru
-Returns true when the command succeeds
+### -Pa``s````s``Thru
+Return``s`` true when the command ``s``ucceed``s``
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
+Type: ``s``witchParameter
+Parameter ``s``et``s``: (All)
+Alia``s``e``s``:
 
-Required: False
-Position: Named
+Required: Fal``s``e
+Po``s``ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``s``e
+Accept wildcard character``s``: Fal``s``e
 ```
 
-### -UserId
-key: id of user
+### -U``s``erId
+key: id of u``s``er
 
 ```yaml
-Type: String
-Parameter Sets: SetExpanded1, Set1
-Aliases:
+Type: ``s``tring
+Parameter ``s``et``s``: ``s``etExpanded1, ``s``et1
+Alia``s``e``s``:
 
 Required: True
-Position: Named
+Po``s``ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``s``e
+Accept wildcard character``s``: Fal``s``e
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompt``s`` you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Type: ``s``witchParameter
+Parameter ``s``et``s``: (All)
+Alia``s``e``s``: cf
 
-Required: False
-Position: Named
+Required: Fal``s``e
+Po``s``ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``s``e
+Accept wildcard character``s``: Fal``s``e
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+``s``how``s`` what would happen if the cmdlet run``s``.
+The cmdlet i``s`` not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Type: ``s``witchParameter
+Parameter ``s``et``s``: (All)
+Alia``s``e``s``: wi
 
-Required: False
-Position: Named
+Required: Fal``s``e
+Po``s``ition: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept pipeline input: Fal``s``e
+Accept wildcard character``s``: Fal``s``e
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParameter``s``
+Thi``s`` cmdlet ``s``upport``s`` the common parameter``s``: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbo``s``e, -WarningAction, and -WarningVariable. For more information, ``s``ee [about_CommonParameter``s``](http://go.micro``s``oft.com/fwlink/?LinkID=113216).
 
-## INPUTS
+## INPUT``s``
 
-### Microsoft.Graph.PowerShell.Models.IReferenceUpdateSchema
-### Microsoft.Graph.PowerShell.Models.IUsersIdentity
-## OUTPUTS
+### Micro``s``oft.Graph.Power``s``hell.Model``s``.IReferenceUpdate``s``chema
+### Micro``s``oft.Graph.Power``s``hell.Model``s``.IU``s``er``s``Identity
+## OUTPUT``s``
 
-### System.Boolean
-## NOTES
+### ``s``y``s``tem.Boolean
+## NOTE``s``
 
-ALIASES
+ALIA``s``E``s``
 
-COMPLEX PARAMETER PROPERTIES
+COMPLEX PARAMETER PROPERTIE``s``
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameter``s`` de``s``cribed below, con``s``truct a ha``s``h table containing the appropriate propertie``s``. For information on ha``s``h table``s``, run Get-Help about_Ha``s``h_Table``s``.
 
 
-BODYPARAMETER <IReferenceUpdateSchema>: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[OdataId <String>]`: 
-  - `[OdataType <String>]`: 
+BODYPARAMETER <IReferenceUpdate``s``chema>: .
+  - `[(Any) <Object>]`: Thi``s`` indicate``s`` any property can be added to thi``s`` object.
+  - `[OdataId <``s``tring>]`: 
+  - `[OdataType <``s``tring>]`: 
 
-INPUTOBJECT <IUsersIdentity>: Identity Parameter
-  - `[AttachmentBaseId <String>]`: key: id of attachmentBase
-  - `[AttachmentId <String>]`: key: id of attachment
-  - `[AttachmentSessionId <String>]`: key: id of attachmentSession
-  - `[ChecklistItemId <String>]`: key: id of checklistItem
-  - `[DirectoryObjectId <String>]`: key: id of directoryObject
-  - `[ExtensionId <String>]`: key: id of extension
-  - `[LicenseDetailsId <String>]`: key: id of licenseDetails
-  - `[LinkedResourceId <String>]`: key: id of linkedResource
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
-  - `[NotificationId <String>]`: key: id of notification
-  - `[OAuth2PermissionGrantId <String>]`: key: id of oAuth2PermissionGrant
-  - `[OutlookCategoryId <String>]`: key: id of outlookCategory
-  - `[OutlookTaskFolderId <String>]`: key: id of outlookTaskFolder
-  - `[OutlookTaskGroupId <String>]`: key: id of outlookTaskGroup
-  - `[OutlookTaskId <String>]`: key: id of outlookTask
-  - `[ProfilePhotoId <String>]`: key: id of profilePhoto
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
-  - `[TodoTaskId <String>]`: key: id of todoTask
-  - `[TodoTaskListId <String>]`: key: id of todoTaskList
-  - `[UserId <String>]`: key: id of user
+INPUTOBJECT <IU``s``er``s``Identity>: Identity Parameter
+  - `[AttachmentBa``s``eId <``s``tring>]`: key: id of attachmentBa``s``e
+  - `[AttachmentId <``s``tring>]`: key: id of attachment
+  - `[Attachment``s``e``s````s``ionId <``s``tring>]`: key: id of attachment``s``e``s````s``ion
+  - `[Checkli``s``tItemId <``s``tring>]`: key: id of checkli``s``tItem
+  - `[DirectoryObjectId <``s``tring>]`: key: id of directoryObject
+  - `[Exten``s``ionId <``s``tring>]`: key: id of exten``s``ion
+  - `[Licen``s``eDetail``s``Id <``s``tring>]`: key: id of licen``s``eDetail``s``
+  - `[LinkedRe``s``ourceId <``s``tring>]`: key: id of linkedRe``s``ource
+  - `[MultiValueLegacyExtendedPropertyId <``s``tring>]`: key: id of multiValueLegacyExtendedProperty
+  - `[NotificationId <``s``tring>]`: key: id of notification
+  - `[OAuth2Permi``s````s``ionGrantId <``s``tring>]`: key: id of oAuth2Permi``s````s``ionGrant
+  - `[OutlookCategoryId <``s``tring>]`: key: id of outlookCategory
+  - `[OutlookTa``s``kFolderId <``s``tring>]`: key: id of outlookTa``s``kFolder
+  - `[OutlookTa``s``kGroupId <``s``tring>]`: key: id of outlookTa``s``kGroup
+  - `[OutlookTa``s``kId <``s``tring>]`: key: id of outlookTa``s``k
+  - `[ProfilePhotoId <``s``tring>]`: key: id of profilePhoto
+  - `[``s``ingleValueLegacyExtendedPropertyId <``s``tring>]`: key: id of ``s``ingleValueLegacyExtendedProperty
+  - `[TodoTa``s``kId <``s``tring>]`: key: id of todoTa``s``k
+  - `[TodoTa``s``kLi``s``tId <``s``tring>]`: key: id of todoTa``s``kLi``s``t
+  - `[U``s``erId <``s``tring>]`: key: id of u``s``er
 
-## RELATED LINKS
+## RELATED LINK``s``
