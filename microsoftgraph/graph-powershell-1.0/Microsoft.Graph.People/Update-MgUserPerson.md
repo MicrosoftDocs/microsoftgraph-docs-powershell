@@ -1,637 +1,637 @@
-﻿---
-external help file: Microsoft.Graph.People-help.xml
-Module Name: Microsoft.Graph.People
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/update-mguserperson
-schema: 2.0.0
+---
+```````e```````xt```````e```````rnal h```````e```````lp fil```````e```````: Microsoft.Graph.P```````e```````opl```````e```````-h```````e```````lp.xml
+Modul```````e``````` Nam```````e```````: Microsoft.Graph.P```````e```````opl```````e```````
+onlin```````e``````` v```````e```````rsion: https://docs.microsoft.com/```````e```````n-us/pow```````e```````rsh```````e```````ll/modul```````e```````/microsoft.graph.p```````e```````opl```````e```````/updat```````e```````-mgus```````e```````rp```````e```````rson
+sch```````e```````ma: 2.0.0
 ---
 
-# Update-MgUserPerson
+# Updat```````e```````-MgUs```````e```````rP```````e```````rson
 
 ## SYNOPSIS
-Update the navigation property people in users
+Updat```````e``````` th```````e``````` navigation prop```````e```````rty p```````e```````opl```````e``````` in us```````e```````rs
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### Updat```````e``````````````e```````xpand```````e```````d (D```````e```````fault)
 ```
-Update-MgUserPerson -PersonId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-Birthday <String>] [-CompanyName <String>] [-Department <String>] [-DisplayName <String>]
- [-GivenName <String>] [-Id <String>] [-ImAddress <String>] [-IsFavorite] [-JobTitle <String>]
- [-OfficeLocation <String>] [-PersonNotes <String>] [-PersonType <IMicrosoftGraphPersonType>]
- [-Phones <IMicrosoftGraphPhone[]>] [-PostalAddresses <IMicrosoftGraphLocation[]>] [-Profession <String>]
- [-ScoredEmailAddresses <IMicrosoftGraphScoredEmailAddress[]>] [-Surname <String>]
- [-UserPrincipalName <String>] [-Websites <IMicrosoftGraphWebsite[]>] [-YomiCompany <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgUserPerson -PersonId <String> -UserId <String> -BodyParameter <IMicrosoftGraphPerson1> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Updat```````e```````-MgUs```````e```````rP```````e```````rson -P```````e```````rsonId <String> -Us```````e```````rId <String> [-AdditionalProp```````e```````rti```````e```````s <Hashtabl```````e```````>]
+ [-Birthday <String>] [-CompanyNam```````e``````` <String>] [-D```````e```````partm```````e```````nt <String>] [-DisplayNam```````e``````` <String>]
+ [-Giv```````e```````nNam```````e``````` <String>] [-Id <String>] [-ImAddr```````e```````ss <String>] [-IsFavorit```````e```````] [-JobTitl```````e``````` <String>]
+ [-Offic```````e```````Location <String>] [-P```````e```````rsonNot```````e```````s <String>] [-P```````e```````rsonTyp```````e``````` <IMicrosoftGraphP```````e```````rsonTyp```````e```````>]
+ [-Phon```````e```````s <IMicrosoftGraphPhon```````e```````[]>] [-PostalAddr```````e```````ss```````e```````s <IMicrosoftGraphLocation[]>] [-Prof```````e```````ssion <String>]
+ [-Scor```````e```````d```````e```````mailAddr```````e```````ss```````e```````s <IMicrosoftGraphScor```````e```````d```````e```````mailAddr```````e```````ss[]>] [-Surnam```````e``````` <String>]
+ [-Us```````e```````rPrincipalNam```````e``````` <String>] [-W```````e```````bsit```````e```````s <IMicrosoftGraphW```````e```````bsit```````e```````[]>] [-YomiCompany <String>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParam```````e```````t```````e```````rs>]
 ```
 
-### UpdateViaIdentityExpanded
+### Updat```````e```````
 ```
-Update-MgUserPerson -InputObject <IPeopleIdentity> [-AdditionalProperties <Hashtable>] [-Birthday <String>]
- [-CompanyName <String>] [-Department <String>] [-DisplayName <String>] [-GivenName <String>] [-Id <String>]
- [-ImAddress <String>] [-IsFavorite] [-JobTitle <String>] [-OfficeLocation <String>] [-PersonNotes <String>]
- [-PersonType <IMicrosoftGraphPersonType>] [-Phones <IMicrosoftGraphPhone[]>]
- [-PostalAddresses <IMicrosoftGraphLocation[]>] [-Profession <String>]
- [-ScoredEmailAddresses <IMicrosoftGraphScoredEmailAddress[]>] [-Surname <String>]
- [-UserPrincipalName <String>] [-Websites <IMicrosoftGraphWebsite[]>] [-YomiCompany <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Updat```````e```````-MgUs```````e```````rP```````e```````rson -P```````e```````rsonId <String> -Us```````e```````rId <String> -BodyParam```````e```````t```````e```````r <IMicrosoftGraphP```````e```````rson1> [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParam```````e```````t```````e```````rs>]
 ```
 
-### UpdateViaIdentity
+### Updat```````e```````ViaId```````e```````ntity```````e```````xpand```````e```````d
 ```
-Update-MgUserPerson -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoftGraphPerson1> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Updat```````e```````-MgUs```````e```````rP```````e```````rson -InputObj```````e```````ct <IP```````e```````opl```````e```````Id```````e```````ntity> [-AdditionalProp```````e```````rti```````e```````s <Hashtabl```````e```````>] [-Birthday <String>]
+ [-CompanyNam```````e``````` <String>] [-D```````e```````partm```````e```````nt <String>] [-DisplayNam```````e``````` <String>] [-Giv```````e```````nNam```````e``````` <String>] [-Id <String>]
+ [-ImAddr```````e```````ss <String>] [-IsFavorit```````e```````] [-JobTitl```````e``````` <String>] [-Offic```````e```````Location <String>] [-P```````e```````rsonNot```````e```````s <String>]
+ [-P```````e```````rsonTyp```````e``````` <IMicrosoftGraphP```````e```````rsonTyp```````e```````>] [-Phon```````e```````s <IMicrosoftGraphPhon```````e```````[]>]
+ [-PostalAddr```````e```````ss```````e```````s <IMicrosoftGraphLocation[]>] [-Prof```````e```````ssion <String>]
+ [-Scor```````e```````d```````e```````mailAddr```````e```````ss```````e```````s <IMicrosoftGraphScor```````e```````d```````e```````mailAddr```````e```````ss[]>] [-Surnam```````e``````` <String>]
+ [-Us```````e```````rPrincipalNam```````e``````` <String>] [-W```````e```````bsit```````e```````s <IMicrosoftGraphW```````e```````bsit```````e```````[]>] [-YomiCompany <String>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParam```````e```````t```````e```````rs>]
 ```
 
-## DESCRIPTION
-Update the navigation property people in users
+### Updat```````e```````ViaId```````e```````ntity
+```
+Updat```````e```````-MgUs```````e```````rP```````e```````rson -InputObj```````e```````ct <IP```````e```````opl```````e```````Id```````e```````ntity> -BodyParam```````e```````t```````e```````r <IMicrosoftGraphP```````e```````rson1> [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParam```````e```````t```````e```````rs>]
+```
 
-## EXAMPLES
+## D```````e```````SCRIPTION
+Updat```````e``````` th```````e``````` navigation prop```````e```````rty p```````e```````opl```````e``````` in us```````e```````rs
 
-## PARAMETERS
+## ```````e```````XAMPL```````e```````S
 
-### -AdditionalProperties
-Additional Parameters
+## PARAM```````e```````T```````e```````RS
+
+### -AdditionalProp```````e```````rti```````e```````s
+Additional Param```````e```````t```````e```````rs
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````e```````: Hashtabl```````e```````
+Param```````e```````t```````e```````r S```````e```````ts: Updat```````e``````````````e```````xpand```````e```````d, Updat```````e```````ViaId```````e```````ntity```````e```````xpand```````e```````d
+Alias```````e```````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````e```````quir```````e```````d: Fals```````e```````
+Position: Nam```````e```````d
+D```````e```````fault valu```````e```````: Non```````e```````
+Acc```````e```````pt pip```````e```````lin```````e``````` input: Fals```````e```````
+Acc```````e```````pt wildcard charact```````e```````rs: Fals```````e```````
 ```
 
 ### -Birthday
-The person's birthday.
+Th```````e``````` p```````e```````rson's birthday.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````e```````: String
+Param```````e```````t```````e```````r S```````e```````ts: Updat```````e``````````````e```````xpand```````e```````d, Updat```````e```````ViaId```````e```````ntity```````e```````xpand```````e```````d
+Alias```````e```````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````e```````quir```````e```````d: Fals```````e```````
+Position: Nam```````e```````d
+D```````e```````fault valu```````e```````: Non```````e```````
+Acc```````e```````pt pip```````e```````lin```````e``````` input: Fals```````e```````
+Acc```````e```````pt wildcard charact```````e```````rs: Fals```````e```````
 ```
 
-### -BodyParameter
-person
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -BodyParam```````e```````t```````e```````r
+p```````e```````rson
+To construct, pl```````e```````as```````e``````` us```````e``````` G```````e```````t-H```````e```````lp -Onlin```````e``````` and s```````e``````````````e``````` NOT```````e```````S s```````e```````ction for BODYPARAM```````e```````T```````e```````R prop```````e```````rti```````e```````s and cr```````e```````at```````e``````` a hash tabl```````e```````.
 
 ```yaml
-Type: IMicrosoftGraphPerson1
-Parameter Sets: Update, UpdateViaIdentity
-Aliases:
+Typ```````e```````: IMicrosoftGraphP```````e```````rson1
+Param```````e```````t```````e```````r S```````e```````ts: Updat```````e```````, Updat```````e```````ViaId```````e```````ntity
+Alias```````e```````s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R```````e```````quir```````e```````d: Tru```````e```````
+Position: Nam```````e```````d
+D```````e```````fault valu```````e```````: Non```````e```````
+Acc```````e```````pt pip```````e```````lin```````e``````` input: Tru```````e``````` (ByValu```````e```````)
+Acc```````e```````pt wildcard charact```````e```````rs: Fals```````e```````
 ```
 
-### -CompanyName
-The name of the person's company.
+### -CompanyNam```````e```````
+Th```````e``````` nam```````e``````` of th```````e``````` p```````e```````rson's company.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````e```````: String
+Param```````e```````t```````e```````r S```````e```````ts: Updat```````e``````````````e```````xpand```````e```````d, Updat```````e```````ViaId```````e```````ntity```````e```````xpand```````e```````d
+Alias```````e```````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````e```````quir```````e```````d: Fals```````e```````
+Position: Nam```````e```````d
+D```````e```````fault valu```````e```````: Non```````e```````
+Acc```````e```````pt pip```````e```````lin```````e``````` input: Fals```````e```````
+Acc```````e```````pt wildcard charact```````e```````rs: Fals```````e```````
 ```
 
-### -Department
-The person's department.
+### -D```````e```````partm```````e```````nt
+Th```````e``````` p```````e```````rson's d```````e```````partm```````e```````nt.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````e```````: String
+Param```````e```````t```````e```````r S```````e```````ts: Updat```````e``````````````e```````xpand```````e```````d, Updat```````e```````ViaId```````e```````ntity```````e```````xpand```````e```````d
+Alias```````e```````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````e```````quir```````e```````d: Fals```````e```````
+Position: Nam```````e```````d
+D```````e```````fault valu```````e```````: Non```````e```````
+Acc```````e```````pt pip```````e```````lin```````e``````` input: Fals```````e```````
+Acc```````e```````pt wildcard charact```````e```````rs: Fals```````e```````
 ```
 
-### -DisplayName
-The person's display name.
+### -DisplayNam```````e```````
+Th```````e``````` p```````e```````rson's display nam```````e```````.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````e```````: String
+Param```````e```````t```````e```````r S```````e```````ts: Updat```````e``````````````e```````xpand```````e```````d, Updat```````e```````ViaId```````e```````ntity```````e```````xpand```````e```````d
+Alias```````e```````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````e```````quir```````e```````d: Fals```````e```````
+Position: Nam```````e```````d
+D```````e```````fault valu```````e```````: Non```````e```````
+Acc```````e```````pt pip```````e```````lin```````e``````` input: Fals```````e```````
+Acc```````e```````pt wildcard charact```````e```````rs: Fals```````e```````
 ```
 
-### -GivenName
-The person's given name.
+### -Giv```````e```````nNam```````e```````
+Th```````e``````` p```````e```````rson's giv```````e```````n nam```````e```````.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````e```````: String
+Param```````e```````t```````e```````r S```````e```````ts: Updat```````e``````````````e```````xpand```````e```````d, Updat```````e```````ViaId```````e```````ntity```````e```````xpand```````e```````d
+Alias```````e```````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````e```````quir```````e```````d: Fals```````e```````
+Position: Nam```````e```````d
+D```````e```````fault valu```````e```````: Non```````e```````
+Acc```````e```````pt pip```````e```````lin```````e``````` input: Fals```````e```````
+Acc```````e```````pt wildcard charact```````e```````rs: Fals```````e```````
 ```
 
 ### -Id
 .
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````e```````: String
+Param```````e```````t```````e```````r S```````e```````ts: Updat```````e``````````````e```````xpand```````e```````d, Updat```````e```````ViaId```````e```````ntity```````e```````xpand```````e```````d
+Alias```````e```````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````e```````quir```````e```````d: Fals```````e```````
+Position: Nam```````e```````d
+D```````e```````fault valu```````e```````: Non```````e```````
+Acc```````e```````pt pip```````e```````lin```````e``````` input: Fals```````e```````
+Acc```````e```````pt wildcard charact```````e```````rs: Fals```````e```````
 ```
 
-### -ImAddress
-The instant message voice over IP (VOIP) session initiation protocol (SIP) address for the user.
-Read-only.
+### -ImAddr```````e```````ss
+Th```````e``````` instant m```````e```````ssag```````e``````` voic```````e``````` ov```````e```````r IP (VOIP) s```````e```````ssion initiation protocol (SIP) addr```````e```````ss for th```````e``````` us```````e```````r.
+R```````e```````ad-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````e```````: String
+Param```````e```````t```````e```````r S```````e```````ts: Updat```````e``````````````e```````xpand```````e```````d, Updat```````e```````ViaId```````e```````ntity```````e```````xpand```````e```````d
+Alias```````e```````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````e```````quir```````e```````d: Fals```````e```````
+Position: Nam```````e```````d
+D```````e```````fault valu```````e```````: Non```````e```````
+Acc```````e```````pt pip```````e```````lin```````e``````` input: Fals```````e```````
+Acc```````e```````pt wildcard charact```````e```````rs: Fals```````e```````
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -InputObj```````e```````ct
+Id```````e```````ntity Param```````e```````t```````e```````r
+To construct, pl```````e```````as```````e``````` us```````e``````` G```````e```````t-H```````e```````lp -Onlin```````e``````` and s```````e``````````````e``````` NOT```````e```````S s```````e```````ction for INPUTOBJ```````e```````CT prop```````e```````rti```````e```````s and cr```````e```````at```````e``````` a hash tabl```````e```````.
 
 ```yaml
-Type: IPeopleIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
-Aliases:
+Typ```````e```````: IP```````e```````opl```````e```````Id```````e```````ntity
+Param```````e```````t```````e```````r S```````e```````ts: Updat```````e```````ViaId```````e```````ntity```````e```````xpand```````e```````d, Updat```````e```````ViaId```````e```````ntity
+Alias```````e```````s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R```````e```````quir```````e```````d: Tru```````e```````
+Position: Nam```````e```````d
+D```````e```````fault valu```````e```````: Non```````e```````
+Acc```````e```````pt pip```````e```````lin```````e``````` input: Tru```````e``````` (ByValu```````e```````)
+Acc```````e```````pt wildcard charact```````e```````rs: Fals```````e```````
 ```
 
-### -IsFavorite
-true if the user has flagged this person as a favorite.
+### -IsFavorit```````e```````
+tru```````e``````` if th```````e``````` us```````e```````r has flagg```````e```````d this p```````e```````rson as a favorit```````e```````.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````e```````: SwitchParam```````e```````t```````e```````r
+Param```````e```````t```````e```````r S```````e```````ts: Updat```````e``````````````e```````xpand```````e```````d, Updat```````e```````ViaId```````e```````ntity```````e```````xpand```````e```````d
+Alias```````e```````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````e```````quir```````e```````d: Fals```````e```````
+Position: Nam```````e```````d
+D```````e```````fault valu```````e```````: Non```````e```````
+Acc```````e```````pt pip```````e```````lin```````e``````` input: Fals```````e```````
+Acc```````e```````pt wildcard charact```````e```````rs: Fals```````e```````
 ```
 
-### -JobTitle
-The person's job title.
+### -JobTitl```````e```````
+Th```````e``````` p```````e```````rson's job titl```````e```````.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````e```````: String
+Param```````e```````t```````e```````r S```````e```````ts: Updat```````e``````````````e```````xpand```````e```````d, Updat```````e```````ViaId```````e```````ntity```````e```````xpand```````e```````d
+Alias```````e```````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````e```````quir```````e```````d: Fals```````e```````
+Position: Nam```````e```````d
+D```````e```````fault valu```````e```````: Non```````e```````
+Acc```````e```````pt pip```````e```````lin```````e``````` input: Fals```````e```````
+Acc```````e```````pt wildcard charact```````e```````rs: Fals```````e```````
 ```
 
-### -OfficeLocation
-The location of the person's office.
+### -Offic```````e```````Location
+Th```````e``````` location of th```````e``````` p```````e```````rson's offic```````e```````.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````e```````: String
+Param```````e```````t```````e```````r S```````e```````ts: Updat```````e``````````````e```````xpand```````e```````d, Updat```````e```````ViaId```````e```````ntity```````e```````xpand```````e```````d
+Alias```````e```````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````e```````quir```````e```````d: Fals```````e```````
+Position: Nam```````e```````d
+D```````e```````fault valu```````e```````: Non```````e```````
+Acc```````e```````pt pip```````e```````lin```````e``````` input: Fals```````e```````
+Acc```````e```````pt wildcard charact```````e```````rs: Fals```````e```````
 ```
 
 ### -PassThru
-Returns true when the command succeeds
+R```````e```````turns tru```````e``````` wh```````e```````n th```````e``````` command succ```````e``````````````e```````ds
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
+Typ```````e```````: SwitchParam```````e```````t```````e```````r
+Param```````e```````t```````e```````r S```````e```````ts: (All)
+Alias```````e```````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````e```````quir```````e```````d: Fals```````e```````
+Position: Nam```````e```````d
+D```````e```````fault valu```````e```````: Non```````e```````
+Acc```````e```````pt pip```````e```````lin```````e``````` input: Fals```````e```````
+Acc```````e```````pt wildcard charact```````e```````rs: Fals```````e```````
 ```
 
-### -PersonId
-key: id of person
+### -P```````e```````rsonId
+k```````e```````y: id of p```````e```````rson
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
-Aliases:
+Typ```````e```````: String
+Param```````e```````t```````e```````r S```````e```````ts: Updat```````e``````````````e```````xpand```````e```````d, Updat```````e```````
+Alias```````e```````s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````e```````quir```````e```````d: Tru```````e```````
+Position: Nam```````e```````d
+D```````e```````fault valu```````e```````: Non```````e```````
+Acc```````e```````pt pip```````e```````lin```````e``````` input: Fals```````e```````
+Acc```````e```````pt wildcard charact```````e```````rs: Fals```````e```````
 ```
 
-### -PersonNotes
-Free-form notes that the user has taken about this person.
+### -P```````e```````rsonNot```````e```````s
+Fr```````e``````````````e```````-form not```````e```````s that th```````e``````` us```````e```````r has tak```````e```````n about this p```````e```````rson.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````e```````: String
+Param```````e```````t```````e```````r S```````e```````ts: Updat```````e``````````````e```````xpand```````e```````d, Updat```````e```````ViaId```````e```````ntity```````e```````xpand```````e```````d
+Alias```````e```````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````e```````quir```````e```````d: Fals```````e```````
+Position: Nam```````e```````d
+D```````e```````fault valu```````e```````: Non```````e```````
+Acc```````e```````pt pip```````e```````lin```````e``````` input: Fals```````e```````
+Acc```````e```````pt wildcard charact```````e```````rs: Fals```````e```````
 ```
 
-### -PersonType
-personType
-To construct, please use Get-Help -Online and see NOTES section for PERSONTYPE properties and create a hash table.
+### -P```````e```````rsonTyp```````e```````
+p```````e```````rsonTyp```````e```````
+To construct, pl```````e```````as```````e``````` us```````e``````` G```````e```````t-H```````e```````lp -Onlin```````e``````` and s```````e``````````````e``````` NOT```````e```````S s```````e```````ction for P```````e```````RSONTYP```````e``````` prop```````e```````rti```````e```````s and cr```````e```````at```````e``````` a hash tabl```````e```````.
 
 ```yaml
-Type: IMicrosoftGraphPersonType
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````e```````: IMicrosoftGraphP```````e```````rsonTyp```````e```````
+Param```````e```````t```````e```````r S```````e```````ts: Updat```````e``````````````e```````xpand```````e```````d, Updat```````e```````ViaId```````e```````ntity```````e```````xpand```````e```````d
+Alias```````e```````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````e```````quir```````e```````d: Fals```````e```````
+Position: Nam```````e```````d
+D```````e```````fault valu```````e```````: Non```````e```````
+Acc```````e```````pt pip```````e```````lin```````e``````` input: Fals```````e```````
+Acc```````e```````pt wildcard charact```````e```````rs: Fals```````e```````
 ```
 
-### -Phones
-The person's phone numbers.
-To construct, please use Get-Help -Online and see NOTES section for PHONES properties and create a hash table.
+### -Phon```````e```````s
+Th```````e``````` p```````e```````rson's phon```````e``````` numb```````e```````rs.
+To construct, pl```````e```````as```````e``````` us```````e``````` G```````e```````t-H```````e```````lp -Onlin```````e``````` and s```````e``````````````e``````` NOT```````e```````S s```````e```````ction for PHON```````e```````S prop```````e```````rti```````e```````s and cr```````e```````at```````e``````` a hash tabl```````e```````.
 
 ```yaml
-Type: IMicrosoftGraphPhone[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````e```````: IMicrosoftGraphPhon```````e```````[]
+Param```````e```````t```````e```````r S```````e```````ts: Updat```````e``````````````e```````xpand```````e```````d, Updat```````e```````ViaId```````e```````ntity```````e```````xpand```````e```````d
+Alias```````e```````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````e```````quir```````e```````d: Fals```````e```````
+Position: Nam```````e```````d
+D```````e```````fault valu```````e```````: Non```````e```````
+Acc```````e```````pt pip```````e```````lin```````e``````` input: Fals```````e```````
+Acc```````e```````pt wildcard charact```````e```````rs: Fals```````e```````
 ```
 
-### -PostalAddresses
-The person's addresses.
-To construct, please use Get-Help -Online and see NOTES section for POSTALADDRESSES properties and create a hash table.
+### -PostalAddr```````e```````ss```````e```````s
+Th```````e``````` p```````e```````rson's addr```````e```````ss```````e```````s.
+To construct, pl```````e```````as```````e``````` us```````e``````` G```````e```````t-H```````e```````lp -Onlin```````e``````` and s```````e``````````````e``````` NOT```````e```````S s```````e```````ction for POSTALADDR```````e```````SS```````e```````S prop```````e```````rti```````e```````s and cr```````e```````at```````e``````` a hash tabl```````e```````.
 
 ```yaml
-Type: IMicrosoftGraphLocation[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````e```````: IMicrosoftGraphLocation[]
+Param```````e```````t```````e```````r S```````e```````ts: Updat```````e``````````````e```````xpand```````e```````d, Updat```````e```````ViaId```````e```````ntity```````e```````xpand```````e```````d
+Alias```````e```````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````e```````quir```````e```````d: Fals```````e```````
+Position: Nam```````e```````d
+D```````e```````fault valu```````e```````: Non```````e```````
+Acc```````e```````pt pip```````e```````lin```````e``````` input: Fals```````e```````
+Acc```````e```````pt wildcard charact```````e```````rs: Fals```````e```````
 ```
 
-### -Profession
-The person's profession.
+### -Prof```````e```````ssion
+Th```````e``````` p```````e```````rson's prof```````e```````ssion.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````e```````: String
+Param```````e```````t```````e```````r S```````e```````ts: Updat```````e``````````````e```````xpand```````e```````d, Updat```````e```````ViaId```````e```````ntity```````e```````xpand```````e```````d
+Alias```````e```````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````e```````quir```````e```````d: Fals```````e```````
+Position: Nam```````e```````d
+D```````e```````fault valu```````e```````: Non```````e```````
+Acc```````e```````pt pip```````e```````lin```````e``````` input: Fals```````e```````
+Acc```````e```````pt wildcard charact```````e```````rs: Fals```````e```````
 ```
 
-### -ScoredEmailAddresses
-The person's email addresses.
-To construct, please use Get-Help -Online and see NOTES section for SCOREDEMAILADDRESSES properties and create a hash table.
+### -Scor```````e```````d```````e```````mailAddr```````e```````ss```````e```````s
+Th```````e``````` p```````e```````rson's ```````e```````mail addr```````e```````ss```````e```````s.
+To construct, pl```````e```````as```````e``````` us```````e``````` G```````e```````t-H```````e```````lp -Onlin```````e``````` and s```````e``````````````e``````` NOT```````e```````S s```````e```````ction for SCOR```````e```````D```````e```````MAILADDR```````e```````SS```````e```````S prop```````e```````rti```````e```````s and cr```````e```````at```````e``````` a hash tabl```````e```````.
 
 ```yaml
-Type: IMicrosoftGraphScoredEmailAddress[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````e```````: IMicrosoftGraphScor```````e```````d```````e```````mailAddr```````e```````ss[]
+Param```````e```````t```````e```````r S```````e```````ts: Updat```````e``````````````e```````xpand```````e```````d, Updat```````e```````ViaId```````e```````ntity```````e```````xpand```````e```````d
+Alias```````e```````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````e```````quir```````e```````d: Fals```````e```````
+Position: Nam```````e```````d
+D```````e```````fault valu```````e```````: Non```````e```````
+Acc```````e```````pt pip```````e```````lin```````e``````` input: Fals```````e```````
+Acc```````e```````pt wildcard charact```````e```````rs: Fals```````e```````
 ```
 
-### -Surname
-The person's surname.
+### -Surnam```````e```````
+Th```````e``````` p```````e```````rson's surnam```````e```````.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````e```````: String
+Param```````e```````t```````e```````r S```````e```````ts: Updat```````e``````````````e```````xpand```````e```````d, Updat```````e```````ViaId```````e```````ntity```````e```````xpand```````e```````d
+Alias```````e```````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````e```````quir```````e```````d: Fals```````e```````
+Position: Nam```````e```````d
+D```````e```````fault valu```````e```````: Non```````e```````
+Acc```````e```````pt pip```````e```````lin```````e``````` input: Fals```````e```````
+Acc```````e```````pt wildcard charact```````e```````rs: Fals```````e```````
 ```
 
-### -UserId
-key: id of user
+### -Us```````e```````rId
+k```````e```````y: id of us```````e```````r
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
-Aliases:
+Typ```````e```````: String
+Param```````e```````t```````e```````r S```````e```````ts: Updat```````e``````````````e```````xpand```````e```````d, Updat```````e```````
+Alias```````e```````s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````e```````quir```````e```````d: Tru```````e```````
+Position: Nam```````e```````d
+D```````e```````fault valu```````e```````: Non```````e```````
+Acc```````e```````pt pip```````e```````lin```````e``````` input: Fals```````e```````
+Acc```````e```````pt wildcard charact```````e```````rs: Fals```````e```````
 ```
 
-### -UserPrincipalName
-The user principal name (UPN) of the person.
-The UPN is an Internet-style login name for the person based on the Internet standard RFC 822.
-By convention, this should map to the person's email name.
-The general format is alias@domain.
+### -Us```````e```````rPrincipalNam```````e```````
+Th```````e``````` us```````e```````r principal nam```````e``````` (UPN) of th```````e``````` p```````e```````rson.
+Th```````e``````` UPN is an Int```````e```````rn```````e```````t-styl```````e``````` login nam```````e``````` for th```````e``````` p```````e```````rson bas```````e```````d on th```````e``````` Int```````e```````rn```````e```````t standard RFC 822.
+By conv```````e```````ntion, this should map to th```````e``````` p```````e```````rson's ```````e```````mail nam```````e```````.
+Th```````e``````` g```````e```````n```````e```````ral format is alias@domain.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````e```````: String
+Param```````e```````t```````e```````r S```````e```````ts: Updat```````e``````````````e```````xpand```````e```````d, Updat```````e```````ViaId```````e```````ntity```````e```````xpand```````e```````d
+Alias```````e```````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````e```````quir```````e```````d: Fals```````e```````
+Position: Nam```````e```````d
+D```````e```````fault valu```````e```````: Non```````e```````
+Acc```````e```````pt pip```````e```````lin```````e``````` input: Fals```````e```````
+Acc```````e```````pt wildcard charact```````e```````rs: Fals```````e```````
 ```
 
-### -Websites
-The person's websites.
-To construct, please use Get-Help -Online and see NOTES section for WEBSITES properties and create a hash table.
+### -W```````e```````bsit```````e```````s
+Th```````e``````` p```````e```````rson's w```````e```````bsit```````e```````s.
+To construct, pl```````e```````as```````e``````` us```````e``````` G```````e```````t-H```````e```````lp -Onlin```````e``````` and s```````e``````````````e``````` NOT```````e```````S s```````e```````ction for W```````e```````BSIT```````e```````S prop```````e```````rti```````e```````s and cr```````e```````at```````e``````` a hash tabl```````e```````.
 
 ```yaml
-Type: IMicrosoftGraphWebsite[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````e```````: IMicrosoftGraphW```````e```````bsit```````e```````[]
+Param```````e```````t```````e```````r S```````e```````ts: Updat```````e``````````````e```````xpand```````e```````d, Updat```````e```````ViaId```````e```````ntity```````e```````xpand```````e```````d
+Alias```````e```````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````e```````quir```````e```````d: Fals```````e```````
+Position: Nam```````e```````d
+D```````e```````fault valu```````e```````: Non```````e```````
+Acc```````e```````pt pip```````e```````lin```````e``````` input: Fals```````e```````
+Acc```````e```````pt wildcard charact```````e```````rs: Fals```````e```````
 ```
 
 ### -YomiCompany
-The phonetic Japanese name of the person's company.
+Th```````e``````` phon```````e```````tic Japan```````e```````s```````e``````` nam```````e``````` of th```````e``````` p```````e```````rson's company.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+Typ```````e```````: String
+Param```````e```````t```````e```````r S```````e```````ts: Updat```````e``````````````e```````xpand```````e```````d, Updat```````e```````ViaId```````e```````ntity```````e```````xpand```````e```````d
+Alias```````e```````s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````e```````quir```````e```````d: Fals```````e```````
+Position: Nam```````e```````d
+D```````e```````fault valu```````e```````: Non```````e```````
+Acc```````e```````pt pip```````e```````lin```````e``````` input: Fals```````e```````
+Acc```````e```````pt wildcard charact```````e```````rs: Fals```````e```````
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation b```````e```````for```````e``````` running th```````e``````` cmdl```````e```````t.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Typ```````e```````: SwitchParam```````e```````t```````e```````r
+Param```````e```````t```````e```````r S```````e```````ts: (All)
+Alias```````e```````s: cf
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````e```````quir```````e```````d: Fals```````e```````
+Position: Nam```````e```````d
+D```````e```````fault valu```````e```````: Non```````e```````
+Acc```````e```````pt pip```````e```````lin```````e``````` input: Fals```````e```````
+Acc```````e```````pt wildcard charact```````e```````rs: Fals```````e```````
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happ```````e```````n if th```````e``````` cmdl```````e```````t runs.
+Th```````e``````` cmdl```````e```````t is not run.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Typ```````e```````: SwitchParam```````e```````t```````e```````r
+Param```````e```````t```````e```````r S```````e```````ts: (All)
+Alias```````e```````s: wi
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R```````e```````quir```````e```````d: Fals```````e```````
+Position: Nam```````e```````d
+D```````e```````fault valu```````e```````: Non```````e```````
+Acc```````e```````pt pip```````e```````lin```````e``````` input: Fals```````e```````
+Acc```````e```````pt wildcard charact```````e```````rs: Fals```````e```````
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam```````e```````t```````e```````rs
+This cmdl```````e```````t supports th```````e``````` common param```````e```````t```````e```````rs: -D```````e```````bug, -```````e```````rrorAction, -```````e```````rrorVariabl```````e```````, -InformationAction, -InformationVariabl```````e```````, -OutVariabl```````e```````, -OutBuff```````e```````r, -Pip```````e```````lin```````e```````Variabl```````e```````, -V```````e```````rbos```````e```````, -WarningAction, and -WarningVariabl```````e```````. For mor```````e``````` information, s```````e``````````````e``````` [about_CommonParam```````e```````t```````e```````rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPerson1
-### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
+### Microsoft.Graph.Pow```````e```````rSh```````e```````ll.Mod```````e```````ls.IMicrosoftGraphP```````e```````rson1
+### Microsoft.Graph.Pow```````e```````rSh```````e```````ll.Mod```````e```````ls.IP```````e```````opl```````e```````Id```````e```````ntity
 ## OUTPUTS
 
-### System.Boolean
-## NOTES
+### Syst```````e```````m.Bool```````e```````an
+## NOT```````e```````S
 
-ALIASES
+ALIAS```````e```````S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL```````e```````X PARAM```````e```````T```````e```````R PROP```````e```````RTI```````e```````S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr```````e```````at```````e``````` th```````e``````` param```````e```````t```````e```````rs d```````e```````scrib```````e```````d b```````e```````low, construct a hash tabl```````e``````` containing th```````e``````` appropriat```````e``````` prop```````e```````rti```````e```````s. For information on hash tabl```````e```````s, run G```````e```````t-H```````e```````lp about_Hash_Tabl```````e```````s.
 
 
-BODYPARAMETER <IMicrosoftGraphPerson1>: person
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+BODYPARAM```````e```````T```````e```````R <IMicrosoftGraphP```````e```````rson1>: p```````e```````rson
+  - `[(Any) <Obj```````e```````ct>]`: This indicat```````e```````s any prop```````e```````rty can b```````e``````` add```````e```````d to this obj```````e```````ct.
   - `[Id <String>]`: 
-  - `[Birthday <String>]`: The person's birthday.
-  - `[CompanyName <String>]`: The name of the person's company.
-  - `[Department <String>]`: The person's department.
-  - `[DisplayName <String>]`: The person's display name.
-  - `[GivenName <String>]`: The person's given name.
-  - `[ImAddress <String>]`: The instant message voice over IP (VOIP) session initiation protocol (SIP) address for the user. Read-only.
-  - `[IsFavorite <Boolean?>]`: true if the user has flagged this person as a favorite.
-  - `[JobTitle <String>]`: The person's job title.
-  - `[OfficeLocation <String>]`: The location of the person's office.
-  - `[PersonNotes <String>]`: Free-form notes that the user has taken about this person.
-  - `[PersonType <IMicrosoftGraphPersonType>]`: personType
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Class <String>]`: The type of data source, such as Person.
-    - `[Subclass <String>]`: The secondary type of data source, such as OrganizationUser.
-  - `[Phones <IMicrosoftGraphPhone[]>]`: The person's phone numbers.
-    - `[Language <String>]`: 
-    - `[Number <String>]`: The phone number.
-    - `[Region <String>]`: 
-    - `[Type <String>]`: phoneType
-  - `[PostalAddresses <IMicrosoftGraphLocation[]>]`: The person's addresses.
-    - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[City <String>]`: The city.
-      - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
-      - `[PostalCode <String>]`: The postal code.
-      - `[State <String>]`: The state.
-      - `[Street <String>]`: The street.
-    - `[Coordinates <IMicrosoftGraphOutlookGeoCoordinates>]`: outlookGeoCoordinates
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Accuracy <Double?>]`: The accuracy of the latitude and longitude. As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
-      - `[Altitude <Double?>]`: The altitude of the location.
-      - `[AltitudeAccuracy <Double?>]`: The accuracy of the altitude.
-      - `[Latitude <Double?>]`: The latitude of the location.
-      - `[Longitude <Double?>]`: The longitude of the location.
-    - `[DisplayName <String>]`: The name associated with the location.
-    - `[LocationEmailAddress <String>]`: Optional email address of the location.
-    - `[LocationType <String>]`: locationType
-    - `[LocationUri <String>]`: Optional URI representing the location.
-    - `[UniqueId <String>]`: For internal use only.
-    - `[UniqueIdType <String>]`: locationUniqueIdType
-  - `[Profession <String>]`: The person's profession.
-  - `[ScoredEmailAddresses <IMicrosoftGraphScoredEmailAddress[]>]`: The person's email addresses.
-    - `[Address <String>]`: The email address.
-    - `[ItemId <String>]`: 
-    - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user's communication and collaboration patterns and business relationships.
-    - `[SelectionLikelihood <String>]`: selectionLikelihoodInfo
-  - `[Surname <String>]`: The person's surname.
-  - `[UserPrincipalName <String>]`: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
-  - `[Websites <IMicrosoftGraphWebsite[]>]`: The person's websites.
-    - `[Address <String>]`: The URL of the website.
-    - `[DisplayName <String>]`: The display name of the web site.
-    - `[Type <String>]`: websiteType
-  - `[YomiCompany <String>]`: The phonetic Japanese name of the person's company.
+  - `[Birthday <String>]`: Th```````e``````` p```````e```````rson's birthday.
+  - `[CompanyNam```````e``````` <String>]`: Th```````e``````` nam```````e``````` of th```````e``````` p```````e```````rson's company.
+  - `[D```````e```````partm```````e```````nt <String>]`: Th```````e``````` p```````e```````rson's d```````e```````partm```````e```````nt.
+  - `[DisplayNam```````e``````` <String>]`: Th```````e``````` p```````e```````rson's display nam```````e```````.
+  - `[Giv```````e```````nNam```````e``````` <String>]`: Th```````e``````` p```````e```````rson's giv```````e```````n nam```````e```````.
+  - `[ImAddr```````e```````ss <String>]`: Th```````e``````` instant m```````e```````ssag```````e``````` voic```````e``````` ov```````e```````r IP (VOIP) s```````e```````ssion initiation protocol (SIP) addr```````e```````ss for th```````e``````` us```````e```````r. R```````e```````ad-only.
+  - `[IsFavorit```````e``````` <Bool```````e```````an?>]`: tru```````e``````` if th```````e``````` us```````e```````r has flagg```````e```````d this p```````e```````rson as a favorit```````e```````.
+  - `[JobTitl```````e``````` <String>]`: Th```````e``````` p```````e```````rson's job titl```````e```````.
+  - `[Offic```````e```````Location <String>]`: Th```````e``````` location of th```````e``````` p```````e```````rson's offic```````e```````.
+  - `[P```````e```````rsonNot```````e```````s <String>]`: Fr```````e``````````````e```````-form not```````e```````s that th```````e``````` us```````e```````r has tak```````e```````n about this p```````e```````rson.
+  - `[P```````e```````rsonTyp```````e``````` <IMicrosoftGraphP```````e```````rsonTyp```````e```````>]`: p```````e```````rsonTyp```````e```````
+    - `[(Any) <Obj```````e```````ct>]`: This indicat```````e```````s any prop```````e```````rty can b```````e``````` add```````e```````d to this obj```````e```````ct.
+    - `[Class <String>]`: Th```````e``````` typ```````e``````` of data sourc```````e```````, such as P```````e```````rson.
+    - `[Subclass <String>]`: Th```````e``````` s```````e```````condary typ```````e``````` of data sourc```````e```````, such as OrganizationUs```````e```````r.
+  - `[Phon```````e```````s <IMicrosoftGraphPhon```````e```````[]>]`: Th```````e``````` p```````e```````rson's phon```````e``````` numb```````e```````rs.
+    - `[Languag```````e``````` <String>]`: 
+    - `[Numb```````e```````r <String>]`: Th```````e``````` phon```````e``````` numb```````e```````r.
+    - `[R```````e```````gion <String>]`: 
+    - `[Typ```````e``````` <String>]`: phon```````e```````Typ```````e```````
+  - `[PostalAddr```````e```````ss```````e```````s <IMicrosoftGraphLocation[]>]`: Th```````e``````` p```````e```````rson's addr```````e```````ss```````e```````s.
+    - `[Addr```````e```````ss <IMicrosoftGraphPhysicalAddr```````e```````ss>]`: physicalAddr```````e```````ss
+      - `[(Any) <Obj```````e```````ct>]`: This indicat```````e```````s any prop```````e```````rty can b```````e``````` add```````e```````d to this obj```````e```````ct.
+      - `[City <String>]`: Th```````e``````` city.
+      - `[CountryOrR```````e```````gion <String>]`: Th```````e``````` country or r```````e```````gion. It's a fr```````e``````````````e```````-format string valu```````e```````, for ```````e```````xampl```````e```````, 'Unit```````e```````d Stat```````e```````s'.
+      - `[PostalCod```````e``````` <String>]`: Th```````e``````` postal cod```````e```````.
+      - `[Stat```````e``````` <String>]`: Th```````e``````` stat```````e```````.
+      - `[Str```````e``````````````e```````t <String>]`: Th```````e``````` str```````e``````````````e```````t.
+    - `[Coordinat```````e```````s <IMicrosoftGraphOutlookG```````e```````oCoordinat```````e```````s>]`: outlookG```````e```````oCoordinat```````e```````s
+      - `[(Any) <Obj```````e```````ct>]`: This indicat```````e```````s any prop```````e```````rty can b```````e``````` add```````e```````d to this obj```````e```````ct.
+      - `[Accuracy <Doubl```````e```````?>]`: Th```````e``````` accuracy of th```````e``````` latitud```````e``````` and longitud```````e```````. As an ```````e```````xampl```````e```````, th```````e``````` accuracy can b```````e``````` m```````e```````asur```````e```````d in m```````e```````t```````e```````rs, such as th```````e``````` latitud```````e``````` and longitud```````e``````` ar```````e``````` accurat```````e``````` to within 50 m```````e```````t```````e```````rs.
+      - `[Altitud```````e``````` <Doubl```````e```````?>]`: Th```````e``````` altitud```````e``````` of th```````e``````` location.
+      - `[Altitud```````e```````Accuracy <Doubl```````e```````?>]`: Th```````e``````` accuracy of th```````e``````` altitud```````e```````.
+      - `[Latitud```````e``````` <Doubl```````e```````?>]`: Th```````e``````` latitud```````e``````` of th```````e``````` location.
+      - `[Longitud```````e``````` <Doubl```````e```````?>]`: Th```````e``````` longitud```````e``````` of th```````e``````` location.
+    - `[DisplayNam```````e``````` <String>]`: Th```````e``````` nam```````e``````` associat```````e```````d with th```````e``````` location.
+    - `[Location```````e```````mailAddr```````e```````ss <String>]`: Optional ```````e```````mail addr```````e```````ss of th```````e``````` location.
+    - `[LocationTyp```````e``````` <String>]`: locationTyp```````e```````
+    - `[LocationUri <String>]`: Optional URI r```````e```````pr```````e```````s```````e```````nting th```````e``````` location.
+    - `[Uniqu```````e```````Id <String>]`: For int```````e```````rnal us```````e``````` only.
+    - `[Uniqu```````e```````IdTyp```````e``````` <String>]`: locationUniqu```````e```````IdTyp```````e```````
+  - `[Prof```````e```````ssion <String>]`: Th```````e``````` p```````e```````rson's prof```````e```````ssion.
+  - `[Scor```````e```````d```````e```````mailAddr```````e```````ss```````e```````s <IMicrosoftGraphScor```````e```````d```````e```````mailAddr```````e```````ss[]>]`: Th```````e``````` p```````e```````rson's ```````e```````mail addr```````e```````ss```````e```````s.
+    - `[Addr```````e```````ss <String>]`: Th```````e``````` ```````e```````mail addr```````e```````ss.
+    - `[It```````e```````mId <String>]`: 
+    - `[R```````e```````l```````e```````vanc```````e```````Scor```````e``````` <Doubl```````e```````?>]`: Th```````e``````` r```````e```````l```````e```````vanc```````e``````` scor```````e``````` of th```````e``````` ```````e```````mail addr```````e```````ss. A r```````e```````l```````e```````vanc```````e``````` scor```````e``````` is us```````e```````d as a sort k```````e```````y, in r```````e```````lation to th```````e``````` oth```````e```````r r```````e```````turn```````e```````d r```````e```````sults. A high```````e```````r r```````e```````l```````e```````vanc```````e``````` scor```````e``````` valu```````e``````` corr```````e```````sponds to a mor```````e``````` r```````e```````l```````e```````vant r```````e```````sult. R```````e```````l```````e```````vanc```````e``````` is d```````e```````t```````e```````rmin```````e```````d by th```````e``````` us```````e```````r's communication and collaboration patt```````e```````rns and busin```````e```````ss r```````e```````lationships.
+    - `[S```````e```````l```````e```````ctionLik```````e```````lihood <String>]`: s```````e```````l```````e```````ctionLik```````e```````lihoodInfo
+  - `[Surnam```````e``````` <String>]`: Th```````e``````` p```````e```````rson's surnam```````e```````.
+  - `[Us```````e```````rPrincipalNam```````e``````` <String>]`: Th```````e``````` us```````e```````r principal nam```````e``````` (UPN) of th```````e``````` p```````e```````rson. Th```````e``````` UPN is an Int```````e```````rn```````e```````t-styl```````e``````` login nam```````e``````` for th```````e``````` p```````e```````rson bas```````e```````d on th```````e``````` Int```````e```````rn```````e```````t standard RFC 822. By conv```````e```````ntion, this should map to th```````e``````` p```````e```````rson's ```````e```````mail nam```````e```````. Th```````e``````` g```````e```````n```````e```````ral format is alias@domain.
+  - `[W```````e```````bsit```````e```````s <IMicrosoftGraphW```````e```````bsit```````e```````[]>]`: Th```````e``````` p```````e```````rson's w```````e```````bsit```````e```````s.
+    - `[Addr```````e```````ss <String>]`: Th```````e``````` URL of th```````e``````` w```````e```````bsit```````e```````.
+    - `[DisplayNam```````e``````` <String>]`: Th```````e``````` display nam```````e``````` of th```````e``````` w```````e```````b sit```````e```````.
+    - `[Typ```````e``````` <String>]`: w```````e```````bsit```````e```````Typ```````e```````
+  - `[YomiCompany <String>]`: Th```````e``````` phon```````e```````tic Japan```````e```````s```````e``````` nam```````e``````` of th```````e``````` p```````e```````rson's company.
 
-INPUTOBJECT <IPeopleIdentity>: Identity Parameter
-  - `[ActivityStatisticsId <String>]`: key: id of activityStatistics
-  - `[EducationalActivityId <String>]`: key: id of educationalActivity
-  - `[ItemAddressId <String>]`: key: id of itemAddress
-  - `[ItemEmailId <String>]`: key: id of itemEmail
-  - `[ItemPatentId <String>]`: key: id of itemPatent
-  - `[ItemPhoneId <String>]`: key: id of itemPhone
-  - `[ItemPublicationId <String>]`: key: id of itemPublication
-  - `[LanguageProficiencyId <String>]`: key: id of languageProficiency
-  - `[PersonAnnotationId <String>]`: key: id of personAnnotation
-  - `[PersonAnnualEventId <String>]`: key: id of personAnnualEvent
-  - `[PersonAwardId <String>]`: key: id of personAward
-  - `[PersonCertificationId <String>]`: key: id of personCertification
-  - `[PersonId <String>]`: key: id of person
-  - `[PersonInterestId <String>]`: key: id of personInterest
-  - `[PersonNameId <String>]`: key: id of personName
-  - `[PersonWebsiteId <String>]`: key: id of personWebsite
-  - `[ProjectParticipationId <String>]`: key: id of projectParticipation
-  - `[SharedInsightId <String>]`: key: id of sharedInsight
-  - `[SkillProficiencyId <String>]`: key: id of skillProficiency
-  - `[TrendingId <String>]`: key: id of trending
-  - `[UsedInsightId <String>]`: key: id of usedInsight
-  - `[UserAccountInformationId <String>]`: key: id of userAccountInformation
-  - `[UserId <String>]`: key: id of user
-  - `[WebAccountId <String>]`: key: id of webAccount
-  - `[WorkPositionId <String>]`: key: id of workPosition
+INPUTOBJ```````e```````CT <IP```````e```````opl```````e```````Id```````e```````ntity>: Id```````e```````ntity Param```````e```````t```````e```````r
+  - `[ActivityStatisticsId <String>]`: k```````e```````y: id of activityStatistics
+  - `[```````e```````ducationalActivityId <String>]`: k```````e```````y: id of ```````e```````ducationalActivity
+  - `[It```````e```````mAddr```````e```````ssId <String>]`: k```````e```````y: id of it```````e```````mAddr```````e```````ss
+  - `[It```````e```````m```````e```````mailId <String>]`: k```````e```````y: id of it```````e```````m```````e```````mail
+  - `[It```````e```````mPat```````e```````ntId <String>]`: k```````e```````y: id of it```````e```````mPat```````e```````nt
+  - `[It```````e```````mPhon```````e```````Id <String>]`: k```````e```````y: id of it```````e```````mPhon```````e```````
+  - `[It```````e```````mPublicationId <String>]`: k```````e```````y: id of it```````e```````mPublication
+  - `[Languag```````e```````Profici```````e```````ncyId <String>]`: k```````e```````y: id of languag```````e```````Profici```````e```````ncy
+  - `[P```````e```````rsonAnnotationId <String>]`: k```````e```````y: id of p```````e```````rsonAnnotation
+  - `[P```````e```````rsonAnnual```````e```````v```````e```````ntId <String>]`: k```````e```````y: id of p```````e```````rsonAnnual```````e```````v```````e```````nt
+  - `[P```````e```````rsonAwardId <String>]`: k```````e```````y: id of p```````e```````rsonAward
+  - `[P```````e```````rsonC```````e```````rtificationId <String>]`: k```````e```````y: id of p```````e```````rsonC```````e```````rtification
+  - `[P```````e```````rsonId <String>]`: k```````e```````y: id of p```````e```````rson
+  - `[P```````e```````rsonInt```````e```````r```````e```````stId <String>]`: k```````e```````y: id of p```````e```````rsonInt```````e```````r```````e```````st
+  - `[P```````e```````rsonNam```````e```````Id <String>]`: k```````e```````y: id of p```````e```````rsonNam```````e```````
+  - `[P```````e```````rsonW```````e```````bsit```````e```````Id <String>]`: k```````e```````y: id of p```````e```````rsonW```````e```````bsit```````e```````
+  - `[Proj```````e```````ctParticipationId <String>]`: k```````e```````y: id of proj```````e```````ctParticipation
+  - `[Shar```````e```````dInsightId <String>]`: k```````e```````y: id of shar```````e```````dInsight
+  - `[SkillProfici```````e```````ncyId <String>]`: k```````e```````y: id of skillProfici```````e```````ncy
+  - `[Tr```````e```````ndingId <String>]`: k```````e```````y: id of tr```````e```````nding
+  - `[Us```````e```````dInsightId <String>]`: k```````e```````y: id of us```````e```````dInsight
+  - `[Us```````e```````rAccountInformationId <String>]`: k```````e```````y: id of us```````e```````rAccountInformation
+  - `[Us```````e```````rId <String>]`: k```````e```````y: id of us```````e```````r
+  - `[W```````e```````bAccountId <String>]`: k```````e```````y: id of w```````e```````bAccount
+  - `[WorkPositionId <String>]`: k```````e```````y: id of workPosition
 
-PERSONTYPE <IMicrosoftGraphPersonType>: personType
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Class <String>]`: The type of data source, such as Person.
-  - `[Subclass <String>]`: The secondary type of data source, such as OrganizationUser.
+P```````e```````RSONTYP```````e``````` <IMicrosoftGraphP```````e```````rsonTyp```````e```````>: p```````e```````rsonTyp```````e```````
+  - `[(Any) <Obj```````e```````ct>]`: This indicat```````e```````s any prop```````e```````rty can b```````e``````` add```````e```````d to this obj```````e```````ct.
+  - `[Class <String>]`: Th```````e``````` typ```````e``````` of data sourc```````e```````, such as P```````e```````rson.
+  - `[Subclass <String>]`: Th```````e``````` s```````e```````condary typ```````e``````` of data sourc```````e```````, such as OrganizationUs```````e```````r.
 
-PHONES <IMicrosoftGraphPhone[]>: The person's phone numbers.
-  - `[Language <String>]`: 
-  - `[Number <String>]`: The phone number.
-  - `[Region <String>]`: 
-  - `[Type <String>]`: phoneType
+PHON```````e```````S <IMicrosoftGraphPhon```````e```````[]>: Th```````e``````` p```````e```````rson's phon```````e``````` numb```````e```````rs.
+  - `[Languag```````e``````` <String>]`: 
+  - `[Numb```````e```````r <String>]`: Th```````e``````` phon```````e``````` numb```````e```````r.
+  - `[R```````e```````gion <String>]`: 
+  - `[Typ```````e``````` <String>]`: phon```````e```````Typ```````e```````
 
-POSTALADDRESSES <IMicrosoftGraphLocation[]>: The person's addresses.
-  - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[City <String>]`: The city.
-    - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
-    - `[PostalCode <String>]`: The postal code.
-    - `[State <String>]`: The state.
-    - `[Street <String>]`: The street.
-  - `[Coordinates <IMicrosoftGraphOutlookGeoCoordinates>]`: outlookGeoCoordinates
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Accuracy <Double?>]`: The accuracy of the latitude and longitude. As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
-    - `[Altitude <Double?>]`: The altitude of the location.
-    - `[AltitudeAccuracy <Double?>]`: The accuracy of the altitude.
-    - `[Latitude <Double?>]`: The latitude of the location.
-    - `[Longitude <Double?>]`: The longitude of the location.
-  - `[DisplayName <String>]`: The name associated with the location.
-  - `[LocationEmailAddress <String>]`: Optional email address of the location.
-  - `[LocationType <String>]`: locationType
-  - `[LocationUri <String>]`: Optional URI representing the location.
-  - `[UniqueId <String>]`: For internal use only.
-  - `[UniqueIdType <String>]`: locationUniqueIdType
+POSTALADDR```````e```````SS```````e```````S <IMicrosoftGraphLocation[]>: Th```````e``````` p```````e```````rson's addr```````e```````ss```````e```````s.
+  - `[Addr```````e```````ss <IMicrosoftGraphPhysicalAddr```````e```````ss>]`: physicalAddr```````e```````ss
+    - `[(Any) <Obj```````e```````ct>]`: This indicat```````e```````s any prop```````e```````rty can b```````e``````` add```````e```````d to this obj```````e```````ct.
+    - `[City <String>]`: Th```````e``````` city.
+    - `[CountryOrR```````e```````gion <String>]`: Th```````e``````` country or r```````e```````gion. It's a fr```````e``````````````e```````-format string valu```````e```````, for ```````e```````xampl```````e```````, 'Unit```````e```````d Stat```````e```````s'.
+    - `[PostalCod```````e``````` <String>]`: Th```````e``````` postal cod```````e```````.
+    - `[Stat```````e``````` <String>]`: Th```````e``````` stat```````e```````.
+    - `[Str```````e``````````````e```````t <String>]`: Th```````e``````` str```````e``````````````e```````t.
+  - `[Coordinat```````e```````s <IMicrosoftGraphOutlookG```````e```````oCoordinat```````e```````s>]`: outlookG```````e```````oCoordinat```````e```````s
+    - `[(Any) <Obj```````e```````ct>]`: This indicat```````e```````s any prop```````e```````rty can b```````e``````` add```````e```````d to this obj```````e```````ct.
+    - `[Accuracy <Doubl```````e```````?>]`: Th```````e``````` accuracy of th```````e``````` latitud```````e``````` and longitud```````e```````. As an ```````e```````xampl```````e```````, th```````e``````` accuracy can b```````e``````` m```````e```````asur```````e```````d in m```````e```````t```````e```````rs, such as th```````e``````` latitud```````e``````` and longitud```````e``````` ar```````e``````` accurat```````e``````` to within 50 m```````e```````t```````e```````rs.
+    - `[Altitud```````e``````` <Doubl```````e```````?>]`: Th```````e``````` altitud```````e``````` of th```````e``````` location.
+    - `[Altitud```````e```````Accuracy <Doubl```````e```````?>]`: Th```````e``````` accuracy of th```````e``````` altitud```````e```````.
+    - `[Latitud```````e``````` <Doubl```````e```````?>]`: Th```````e``````` latitud```````e``````` of th```````e``````` location.
+    - `[Longitud```````e``````` <Doubl```````e```````?>]`: Th```````e``````` longitud```````e``````` of th```````e``````` location.
+  - `[DisplayNam```````e``````` <String>]`: Th```````e``````` nam```````e``````` associat```````e```````d with th```````e``````` location.
+  - `[Location```````e```````mailAddr```````e```````ss <String>]`: Optional ```````e```````mail addr```````e```````ss of th```````e``````` location.
+  - `[LocationTyp```````e``````` <String>]`: locationTyp```````e```````
+  - `[LocationUri <String>]`: Optional URI r```````e```````pr```````e```````s```````e```````nting th```````e``````` location.
+  - `[Uniqu```````e```````Id <String>]`: For int```````e```````rnal us```````e``````` only.
+  - `[Uniqu```````e```````IdTyp```````e``````` <String>]`: locationUniqu```````e```````IdTyp```````e```````
 
-SCOREDEMAILADDRESSES <IMicrosoftGraphScoredEmailAddress[]>: The person's email addresses.
-  - `[Address <String>]`: The email address.
-  - `[ItemId <String>]`: 
-  - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user's communication and collaboration patterns and business relationships.
-  - `[SelectionLikelihood <String>]`: selectionLikelihoodInfo
+SCOR```````e```````D```````e```````MAILADDR```````e```````SS```````e```````S <IMicrosoftGraphScor```````e```````d```````e```````mailAddr```````e```````ss[]>: Th```````e``````` p```````e```````rson's ```````e```````mail addr```````e```````ss```````e```````s.
+  - `[Addr```````e```````ss <String>]`: Th```````e``````` ```````e```````mail addr```````e```````ss.
+  - `[It```````e```````mId <String>]`: 
+  - `[R```````e```````l```````e```````vanc```````e```````Scor```````e``````` <Doubl```````e```````?>]`: Th```````e``````` r```````e```````l```````e```````vanc```````e``````` scor```````e``````` of th```````e``````` ```````e```````mail addr```````e```````ss. A r```````e```````l```````e```````vanc```````e``````` scor```````e``````` is us```````e```````d as a sort k```````e```````y, in r```````e```````lation to th```````e``````` oth```````e```````r r```````e```````turn```````e```````d r```````e```````sults. A high```````e```````r r```````e```````l```````e```````vanc```````e``````` scor```````e``````` valu```````e``````` corr```````e```````sponds to a mor```````e``````` r```````e```````l```````e```````vant r```````e```````sult. R```````e```````l```````e```````vanc```````e``````` is d```````e```````t```````e```````rmin```````e```````d by th```````e``````` us```````e```````r's communication and collaboration patt```````e```````rns and busin```````e```````ss r```````e```````lationships.
+  - `[S```````e```````l```````e```````ctionLik```````e```````lihood <String>]`: s```````e```````l```````e```````ctionLik```````e```````lihoodInfo
 
-WEBSITES <IMicrosoftGraphWebsite[]>: The person's websites.
-  - `[Address <String>]`: The URL of the website.
-  - `[DisplayName <String>]`: The display name of the web site.
-  - `[Type <String>]`: websiteType
+W```````e```````BSIT```````e```````S <IMicrosoftGraphW```````e```````bsit```````e```````[]>: Th```````e``````` p```````e```````rson's w```````e```````bsit```````e```````s.
+  - `[Addr```````e```````ss <String>]`: Th```````e``````` URL of th```````e``````` w```````e```````bsit```````e```````.
+  - `[DisplayNam```````e``````` <String>]`: Th```````e``````` display nam```````e``````` of th```````e``````` w```````e```````b sit```````e```````.
+  - `[Typ```````e``````` <String>]`: w```````e```````bsit```````e```````Typ```````e```````
 
-## RELATED LINKS
+## R```````e```````LAT```````e```````D LINKS
