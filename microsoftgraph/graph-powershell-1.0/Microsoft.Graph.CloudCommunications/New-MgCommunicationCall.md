@@ -1,546 +1,546 @@
-﻿---
-external help file: Microsoft.Graph.CloudCommunications-help.xml
-Module Name: Microsoft.Graph.CloudCommunications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcall
+---
+externa``````````````l`````````````` he``````````````l``````````````p fi``````````````l``````````````e: Microsoft.Graph.C``````````````l``````````````oudCommunications-he``````````````l``````````````p.xm``````````````l``````````````
+Modu``````````````l``````````````e Name: Microsoft.Graph.C``````````````l``````````````oudCommunications
+on``````````````l``````````````ine version: https://docs.microsoft.com/en-us/powershe``````````````l````````````````````````````l``````````````/modu``````````````l``````````````e/microsoft.graph.c``````````````l``````````````oudcommunications/new-mgcommunicationca``````````````l````````````````````````````l``````````````
 schema: 2.0.0
 ---
 
-# New-MgCommunicationCall
+# New-MgCommunicationCa``````````````l````````````````````````````l``````````````
 
 ## SYNOPSIS
-Create new navigation property to calls for communications
+Create new navigation property to ca``````````````l````````````````````````````l``````````````s for communications
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### CreateExpanded (Defau``````````````l``````````````t)
 ```
-New-MgCommunicationCall [-AdditionalProperties <Hashtable>]
- [-AudioRoutingGroups <IMicrosoftGraphAudioRoutingGroup[]>] [-CallChainId <String>]
- [-CallOptions <IMicrosoftGraphCallOptions>] [-CallRoutes <IMicrosoftGraphCallRoute[]>] [-CallbackUri <String>]
+New-MgCommunicationCa``````````````l````````````````````````````l`````````````` [-Additiona``````````````l``````````````Properties <Hashtab``````````````l``````````````e>]
+ [-AudioRoutingGroups <IMicrosoftGraphAudioRoutingGroup[]>] [-Ca``````````````l````````````````````````````l``````````````ChainId <String>]
+ [-Ca``````````````l````````````````````````````l``````````````Options <IMicrosoftGraphCa``````````````l````````````````````````````l``````````````Options>] [-Ca``````````````l````````````````````````````l``````````````Routes <IMicrosoftGraphCa``````````````l````````````````````````````l``````````````Route[]>] [-Ca``````````````l````````````````````````````l``````````````backUri <String>]
  [-ChatInfo <IMicrosoftGraphChatInfo>] [-Direction <String>] [-Id <String>]
- [-IncomingContext <IMicrosoftGraphIncomingContext>] [-MediaConfig <Hashtable>]
- [-MediaState <IMicrosoftGraphCallMediaState>] [-MeetingInfo <Hashtable>] [-MyParticipantId <String>]
+ [-IncomingContext <IMicrosoftGraphIncomingContext>] [-MediaConfig <Hashtab``````````````l``````````````e>]
+ [-MediaState <IMicrosoftGraphCa``````````````l````````````````````````````l``````````````MediaState>] [-MeetingInfo <Hashtab``````````````l``````````````e>] [-MyParticipantId <String>]
  [-Operations <IMicrosoftGraphCommsOperation[]>] [-Participants <IMicrosoftGraphParticipant[]>]
- [-RequestedModalities <String[]>] [-ResultInfo <IMicrosoftGraphResultInfo>]
+ [-RequestedModa``````````````l``````````````ities <String[]>] [-Resu``````````````l``````````````tInfo <IMicrosoftGraphResu``````````````l``````````````tInfo>]
  [-Source <IMicrosoftGraphParticipantInfo>] [-State <String>] [-Subject <String>]
  [-Targets <IMicrosoftGraphInvitationParticipantInfo[]>] [-TenantId <String>]
- [-ToneInfo <IMicrosoftGraphToneInfo>] [-Transcription <IMicrosoftGraphCallTranscriptionInfo>] [-WhatIf]
+ [-ToneInfo <IMicrosoftGraphToneInfo>] [-Transcription <IMicrosoftGraphCa``````````````l````````````````````````````l``````````````TranscriptionInfo>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgCommunicationCall -BodyParameter <IMicrosoftGraphCall> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgCommunicationCa``````````````l````````````````````````````l`````````````` -BodyParameter <IMicrosoftGraphCa``````````````l````````````````````````````l``````````````> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create new navigation property to calls for communications
+Create new navigation property to ca``````````````l````````````````````````````l``````````````s for communications
 
-## EXAMPLES
+## EXAMP``````````````l``````````````ES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -Additiona``````````````l``````````````Properties
+Additiona``````````````l`````````````` Parameters
 
-```yaml
-Type: Hashtable
+```yam``````````````l``````````````
+Type: Hashtab``````````````l``````````````e
 Parameter Sets: CreateExpanded
-Aliases:
+A``````````````l``````````````iases:
 
-Required: False
+Required: Fa``````````````l``````````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``````````````l``````````````t va``````````````l``````````````ue: None
+Accept pipe``````````````l``````````````ine input: Fa``````````````l``````````````se
+Accept wi``````````````l``````````````dcard characters: Fa``````````````l``````````````se
 ```
 
 ### -AudioRoutingGroups
 .
-To construct, please use Get-Help -Online and see NOTES section for AUDIOROUTINGGROUPS properties and create a hash table.
+To construct, p``````````````l``````````````ease use Get-He``````````````l``````````````p -On``````````````l``````````````ine and see NOTES section for AUDIOROUTINGGROUPS properties and create a hash tab``````````````l``````````````e.
 
-```yaml
+```yam``````````````l``````````````
 Type: IMicrosoftGraphAudioRoutingGroup[]
 Parameter Sets: CreateExpanded
-Aliases:
+A``````````````l``````````````iases:
 
-Required: False
+Required: Fa``````````````l``````````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``````````````l``````````````t va``````````````l``````````````ue: None
+Accept pipe``````````````l``````````````ine input: Fa``````````````l``````````````se
+Accept wi``````````````l``````````````dcard characters: Fa``````````````l``````````````se
 ```
 
 ### -BodyParameter
-call
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+ca``````````````l````````````````````````````l``````````````
+To construct, p``````````````l``````````````ease use Get-He``````````````l``````````````p -On``````````````l``````````````ine and see NOTES section for BODYPARAMETER properties and create a hash tab``````````````l``````````````e.
 
-```yaml
-Type: IMicrosoftGraphCall
+```yam``````````````l``````````````
+Type: IMicrosoftGraphCa``````````````l````````````````````````````l``````````````
 Parameter Sets: Create
-Aliases:
+A``````````````l``````````````iases:
 
 Required: True
 Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Defau``````````````l``````````````t va``````````````l``````````````ue: None
+Accept pipe``````````````l``````````````ine input: True (ByVa``````````````l``````````````ue)
+Accept wi``````````````l``````````````dcard characters: Fa``````````````l``````````````se
 ```
 
-### -CallbackUri
-The callback URL on which callbacks will be delivered.
+### -Ca``````````````l````````````````````````````l``````````````backUri
+The ca``````````````l````````````````````````````l``````````````back UR``````````````l`````````````` on which ca``````````````l````````````````````````````l``````````````backs wi``````````````l````````````````````````````l`````````````` be de``````````````l``````````````ivered.
 Must be https.
 
-```yaml
+```yam``````````````l``````````````
 Type: String
 Parameter Sets: CreateExpanded
-Aliases:
+A``````````````l``````````````iases:
 
-Required: False
+Required: Fa``````````````l``````````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``````````````l``````````````t va``````````````l``````````````ue: None
+Accept pipe``````````````l``````````````ine input: Fa``````````````l``````````````se
+Accept wi``````````````l``````````````dcard characters: Fa``````````````l``````````````se
 ```
 
-### -CallChainId
-A unique identifier for all the participant calls in a conference or a unique identifier for two participant calls in a P2P call.
-This needs to be copied over from Microsoft.Graph.Call.CallChainId.
+### -Ca``````````````l````````````````````````````l``````````````ChainId
+A unique identifier for a``````````````l````````````````````````````l`````````````` the participant ca``````````````l````````````````````````````l``````````````s in a conference or a unique identifier for two participant ca``````````````l````````````````````````````l``````````````s in a P2P ca``````````````l````````````````````````````l``````````````.
+This needs to be copied over from Microsoft.Graph.Ca``````````````l````````````````````````````l``````````````.Ca``````````````l````````````````````````````l``````````````ChainId.
 
-```yaml
+```yam``````````````l``````````````
 Type: String
 Parameter Sets: CreateExpanded
-Aliases:
+A``````````````l``````````````iases:
 
-Required: False
+Required: Fa``````````````l``````````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``````````````l``````````````t va``````````````l``````````````ue: None
+Accept pipe``````````````l``````````````ine input: Fa``````````````l``````````````se
+Accept wi``````````````l``````````````dcard characters: Fa``````````````l``````````````se
 ```
 
-### -CallOptions
-callOptions
-To construct, please use Get-Help -Online and see NOTES section for CALLOPTIONS properties and create a hash table.
+### -Ca``````````````l````````````````````````````l``````````````Options
+ca``````````````l````````````````````````````l``````````````Options
+To construct, p``````````````l``````````````ease use Get-He``````````````l``````````````p -On``````````````l``````````````ine and see NOTES section for CA``````````````l````````````````````````````l``````````````OPTIONS properties and create a hash tab``````````````l``````````````e.
 
-```yaml
-Type: IMicrosoftGraphCallOptions
+```yam``````````````l``````````````
+Type: IMicrosoftGraphCa``````````````l````````````````````````````l``````````````Options
 Parameter Sets: CreateExpanded
-Aliases:
+A``````````````l``````````````iases:
 
-Required: False
+Required: Fa``````````````l``````````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``````````````l``````````````t va``````````````l``````````````ue: None
+Accept pipe``````````````l``````````````ine input: Fa``````````````l``````````````se
+Accept wi``````````````l``````````````dcard characters: Fa``````````````l``````````````se
 ```
 
-### -CallRoutes
-The routing information on how the call was retargeted.
-Read-only.
-To construct, please use Get-Help -Online and see NOTES section for CALLROUTES properties and create a hash table.
+### -Ca``````````````l````````````````````````````l``````````````Routes
+The routing information on how the ca``````````````l````````````````````````````l`````````````` was retargeted.
+Read-on``````````````l``````````````y.
+To construct, p``````````````l``````````````ease use Get-He``````````````l``````````````p -On``````````````l``````````````ine and see NOTES section for CA``````````````l````````````````````````````l``````````````ROUTES properties and create a hash tab``````````````l``````````````e.
 
-```yaml
-Type: IMicrosoftGraphCallRoute[]
+```yam``````````````l``````````````
+Type: IMicrosoftGraphCa``````````````l````````````````````````````l``````````````Route[]
 Parameter Sets: CreateExpanded
-Aliases:
+A``````````````l``````````````iases:
 
-Required: False
+Required: Fa``````````````l``````````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``````````````l``````````````t va``````````````l``````````````ue: None
+Accept pipe``````````````l``````````````ine input: Fa``````````````l``````````````se
+Accept wi``````````````l``````````````dcard characters: Fa``````````````l``````````````se
 ```
 
 ### -ChatInfo
 chatInfo
-To construct, please use Get-Help -Online and see NOTES section for CHATINFO properties and create a hash table.
+To construct, p``````````````l``````````````ease use Get-He``````````````l``````````````p -On``````````````l``````````````ine and see NOTES section for CHATINFO properties and create a hash tab``````````````l``````````````e.
 
-```yaml
+```yam``````````````l``````````````
 Type: IMicrosoftGraphChatInfo
 Parameter Sets: CreateExpanded
-Aliases:
+A``````````````l``````````````iases:
 
-Required: False
+Required: Fa``````````````l``````````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``````````````l``````````````t va``````````````l``````````````ue: None
+Accept pipe``````````````l``````````````ine input: Fa``````````````l``````````````se
+Accept wi``````````````l``````````````dcard characters: Fa``````````````l``````````````se
 ```
 
 ### -Direction
-callDirection
+ca``````````````l````````````````````````````l``````````````Direction
 
-```yaml
+```yam``````````````l``````````````
 Type: String
 Parameter Sets: CreateExpanded
-Aliases:
+A``````````````l``````````````iases:
 
-Required: False
+Required: Fa``````````````l``````````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``````````````l``````````````t va``````````````l``````````````ue: None
+Accept pipe``````````````l``````````````ine input: Fa``````````````l``````````````se
+Accept wi``````````````l``````````````dcard characters: Fa``````````````l``````````````se
 ```
 
 ### -Id
 .
 
-```yaml
+```yam``````````````l``````````````
 Type: String
 Parameter Sets: CreateExpanded
-Aliases:
+A``````````````l``````````````iases:
 
-Required: False
+Required: Fa``````````````l``````````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``````````````l``````````````t va``````````````l``````````````ue: None
+Accept pipe``````````````l``````````````ine input: Fa``````````````l``````````````se
+Accept wi``````````````l``````````````dcard characters: Fa``````````````l``````````````se
 ```
 
 ### -IncomingContext
 incomingContext
-To construct, please use Get-Help -Online and see NOTES section for INCOMINGCONTEXT properties and create a hash table.
+To construct, p``````````````l``````````````ease use Get-He``````````````l``````````````p -On``````````````l``````````````ine and see NOTES section for INCOMINGCONTEXT properties and create a hash tab``````````````l``````````````e.
 
-```yaml
+```yam``````````````l``````````````
 Type: IMicrosoftGraphIncomingContext
 Parameter Sets: CreateExpanded
-Aliases:
+A``````````````l``````````````iases:
 
-Required: False
+Required: Fa``````````````l``````````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``````````````l``````````````t va``````````````l``````````````ue: None
+Accept pipe``````````````l``````````````ine input: Fa``````````````l``````````````se
+Accept wi``````````````l``````````````dcard characters: Fa``````````````l``````````````se
 ```
 
 ### -MediaConfig
 mediaConfig
 
-```yaml
-Type: Hashtable
+```yam``````````````l``````````````
+Type: Hashtab``````````````l``````````````e
 Parameter Sets: CreateExpanded
-Aliases:
+A``````````````l``````````````iases:
 
-Required: False
+Required: Fa``````````````l``````````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``````````````l``````````````t va``````````````l``````````````ue: None
+Accept pipe``````````````l``````````````ine input: Fa``````````````l``````````````se
+Accept wi``````````````l``````````````dcard characters: Fa``````````````l``````````````se
 ```
 
 ### -MediaState
-callMediaState
-To construct, please use Get-Help -Online and see NOTES section for MEDIASTATE properties and create a hash table.
+ca``````````````l````````````````````````````l``````````````MediaState
+To construct, p``````````````l``````````````ease use Get-He``````````````l``````````````p -On``````````````l``````````````ine and see NOTES section for MEDIASTATE properties and create a hash tab``````````````l``````````````e.
 
-```yaml
-Type: IMicrosoftGraphCallMediaState
+```yam``````````````l``````````````
+Type: IMicrosoftGraphCa``````````````l````````````````````````````l``````````````MediaState
 Parameter Sets: CreateExpanded
-Aliases:
+A``````````````l``````````````iases:
 
-Required: False
+Required: Fa``````````````l``````````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``````````````l``````````````t va``````````````l``````````````ue: None
+Accept pipe``````````````l``````````````ine input: Fa``````````````l``````````````se
+Accept wi``````````````l``````````````dcard characters: Fa``````````````l``````````````se
 ```
 
 ### -MeetingInfo
 meetingInfo
 
-```yaml
-Type: Hashtable
+```yam``````````````l``````````````
+Type: Hashtab``````````````l``````````````e
 Parameter Sets: CreateExpanded
-Aliases:
+A``````````````l``````````````iases:
 
-Required: False
+Required: Fa``````````````l``````````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``````````````l``````````````t va``````````````l``````````````ue: None
+Accept pipe``````````````l``````````````ine input: Fa``````````````l``````````````se
+Accept wi``````````````l``````````````dcard characters: Fa``````````````l``````````````se
 ```
 
 ### -MyParticipantId
 .
 
-```yaml
+```yam``````````````l``````````````
 Type: String
 Parameter Sets: CreateExpanded
-Aliases:
+A``````````````l``````````````iases:
 
-Required: False
+Required: Fa``````````````l``````````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``````````````l``````````````t va``````````````l``````````````ue: None
+Accept pipe``````````````l``````````````ine input: Fa``````````````l``````````````se
+Accept wi``````````````l``````````````dcard characters: Fa``````````````l``````````````se
 ```
 
 ### -Operations
 .
-To construct, please use Get-Help -Online and see NOTES section for OPERATIONS properties and create a hash table.
+To construct, p``````````````l``````````````ease use Get-He``````````````l``````````````p -On``````````````l``````````````ine and see NOTES section for OPERATIONS properties and create a hash tab``````````````l``````````````e.
 
-```yaml
+```yam``````````````l``````````````
 Type: IMicrosoftGraphCommsOperation[]
 Parameter Sets: CreateExpanded
-Aliases:
+A``````````````l``````````````iases:
 
-Required: False
+Required: Fa``````````````l``````````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``````````````l``````````````t va``````````````l``````````````ue: None
+Accept pipe``````````````l``````````````ine input: Fa``````````````l``````````````se
+Accept wi``````````````l``````````````dcard characters: Fa``````````````l``````````````se
 ```
 
 ### -Participants
 .
-To construct, please use Get-Help -Online and see NOTES section for PARTICIPANTS properties and create a hash table.
+To construct, p``````````````l``````````````ease use Get-He``````````````l``````````````p -On``````````````l``````````````ine and see NOTES section for PARTICIPANTS properties and create a hash tab``````````````l``````````````e.
 
-```yaml
+```yam``````````````l``````````````
 Type: IMicrosoftGraphParticipant[]
 Parameter Sets: CreateExpanded
-Aliases:
+A``````````````l``````````````iases:
 
-Required: False
+Required: Fa``````````````l``````````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``````````````l``````````````t va``````````````l``````````````ue: None
+Accept pipe``````````````l``````````````ine input: Fa``````````````l``````````````se
+Accept wi``````````````l``````````````dcard characters: Fa``````````````l``````````````se
 ```
 
-### -RequestedModalities
+### -RequestedModa``````````````l``````````````ities
 .
 
-```yaml
+```yam``````````````l``````````````
 Type: String[]
 Parameter Sets: CreateExpanded
-Aliases:
+A``````````````l``````````````iases:
 
-Required: False
+Required: Fa``````````````l``````````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``````````````l``````````````t va``````````````l``````````````ue: None
+Accept pipe``````````````l``````````````ine input: Fa``````````````l``````````````se
+Accept wi``````````````l``````````````dcard characters: Fa``````````````l``````````````se
 ```
 
-### -ResultInfo
-resultInfo
-To construct, please use Get-Help -Online and see NOTES section for RESULTINFO properties and create a hash table.
+### -Resu``````````````l``````````````tInfo
+resu``````````````l``````````````tInfo
+To construct, p``````````````l``````````````ease use Get-He``````````````l``````````````p -On``````````````l``````````````ine and see NOTES section for RESU``````````````l``````````````TINFO properties and create a hash tab``````````````l``````````````e.
 
-```yaml
-Type: IMicrosoftGraphResultInfo
+```yam``````````````l``````````````
+Type: IMicrosoftGraphResu``````````````l``````````````tInfo
 Parameter Sets: CreateExpanded
-Aliases:
+A``````````````l``````````````iases:
 
-Required: False
+Required: Fa``````````````l``````````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``````````````l``````````````t va``````````````l``````````````ue: None
+Accept pipe``````````````l``````````````ine input: Fa``````````````l``````````````se
+Accept wi``````````````l``````````````dcard characters: Fa``````````````l``````````````se
 ```
 
 ### -Source
 participantInfo
-To construct, please use Get-Help -Online and see NOTES section for SOURCE properties and create a hash table.
+To construct, p``````````````l``````````````ease use Get-He``````````````l``````````````p -On``````````````l``````````````ine and see NOTES section for SOURCE properties and create a hash tab``````````````l``````````````e.
 
-```yaml
+```yam``````````````l``````````````
 Type: IMicrosoftGraphParticipantInfo
 Parameter Sets: CreateExpanded
-Aliases:
+A``````````````l``````````````iases:
 
-Required: False
+Required: Fa``````````````l``````````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``````````````l``````````````t va``````````````l``````````````ue: None
+Accept pipe``````````````l``````````````ine input: Fa``````````````l``````````````se
+Accept wi``````````````l``````````````dcard characters: Fa``````````````l``````````````se
 ```
 
 ### -State
 .
 
-```yaml
+```yam``````````````l``````````````
 Type: String
 Parameter Sets: CreateExpanded
-Aliases:
+A``````````````l``````````````iases:
 
-Required: False
+Required: Fa``````````````l``````````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``````````````l``````````````t va``````````````l``````````````ue: None
+Accept pipe``````````````l``````````````ine input: Fa``````````````l``````````````se
+Accept wi``````````````l``````````````dcard characters: Fa``````````````l``````````````se
 ```
 
 ### -Subject
 .
 
-```yaml
+```yam``````````````l``````````````
 Type: String
 Parameter Sets: CreateExpanded
-Aliases:
+A``````````````l``````````````iases:
 
-Required: False
+Required: Fa``````````````l``````````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``````````````l``````````````t va``````````````l``````````````ue: None
+Accept pipe``````````````l``````````````ine input: Fa``````````````l``````````````se
+Accept wi``````````````l``````````````dcard characters: Fa``````````````l``````````````se
 ```
 
 ### -Targets
 .
-To construct, please use Get-Help -Online and see NOTES section for TARGETS properties and create a hash table.
+To construct, p``````````````l``````````````ease use Get-He``````````````l``````````````p -On``````````````l``````````````ine and see NOTES section for TARGETS properties and create a hash tab``````````````l``````````````e.
 
-```yaml
+```yam``````````````l``````````````
 Type: IMicrosoftGraphInvitationParticipantInfo[]
 Parameter Sets: CreateExpanded
-Aliases:
+A``````````````l``````````````iases:
 
-Required: False
+Required: Fa``````````````l``````````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``````````````l``````````````t va``````````````l``````````````ue: None
+Accept pipe``````````````l``````````````ine input: Fa``````````````l``````````````se
+Accept wi``````````````l``````````````dcard characters: Fa``````````````l``````````````se
 ```
 
 ### -TenantId
 .
 
-```yaml
+```yam``````````````l``````````````
 Type: String
 Parameter Sets: CreateExpanded
-Aliases:
+A``````````````l``````````````iases:
 
-Required: False
+Required: Fa``````````````l``````````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``````````````l``````````````t va``````````````l``````````````ue: None
+Accept pipe``````````````l``````````````ine input: Fa``````````````l``````````````se
+Accept wi``````````````l``````````````dcard characters: Fa``````````````l``````````````se
 ```
 
 ### -ToneInfo
 toneInfo
-To construct, please use Get-Help -Online and see NOTES section for TONEINFO properties and create a hash table.
+To construct, p``````````````l``````````````ease use Get-He``````````````l``````````````p -On``````````````l``````````````ine and see NOTES section for TONEINFO properties and create a hash tab``````````````l``````````````e.
 
-```yaml
+```yam``````````````l``````````````
 Type: IMicrosoftGraphToneInfo
 Parameter Sets: CreateExpanded
-Aliases:
+A``````````````l``````````````iases:
 
-Required: False
+Required: Fa``````````````l``````````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``````````````l``````````````t va``````````````l``````````````ue: None
+Accept pipe``````````````l``````````````ine input: Fa``````````````l``````````````se
+Accept wi``````````````l``````````````dcard characters: Fa``````````````l``````````````se
 ```
 
 ### -Transcription
-callTranscriptionInfo
-To construct, please use Get-Help -Online and see NOTES section for TRANSCRIPTION properties and create a hash table.
+ca``````````````l````````````````````````````l``````````````TranscriptionInfo
+To construct, p``````````````l``````````````ease use Get-He``````````````l``````````````p -On``````````````l``````````````ine and see NOTES section for TRANSCRIPTION properties and create a hash tab``````````````l``````````````e.
 
-```yaml
-Type: IMicrosoftGraphCallTranscriptionInfo
+```yam``````````````l``````````````
+Type: IMicrosoftGraphCa``````````````l````````````````````````````l``````````````TranscriptionInfo
 Parameter Sets: CreateExpanded
-Aliases:
+A``````````````l``````````````iases:
 
-Required: False
+Required: Fa``````````````l``````````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``````````````l``````````````t va``````````````l``````````````ue: None
+Accept pipe``````````````l``````````````ine input: Fa``````````````l``````````````se
+Accept wi``````````````l``````````````dcard characters: Fa``````````````l``````````````se
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation before running the cmd``````````````l``````````````et.
 
-```yaml
+```yam``````````````l``````````````
 Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Parameter Sets: (A``````````````l````````````````````````````l``````````````)
+A``````````````l``````````````iases: cf
 
-Required: False
+Required: Fa``````````````l``````````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``````````````l``````````````t va``````````````l``````````````ue: None
+Accept pipe``````````````l``````````````ine input: Fa``````````````l``````````````se
+Accept wi``````````````l``````````````dcard characters: Fa``````````````l``````````````se
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what wou``````````````l``````````````d happen if the cmd``````````````l``````````````et runs.
+The cmd``````````````l``````````````et is not run.
 
-```yaml
+```yam``````````````l``````````````
 Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Parameter Sets: (A``````````````l````````````````````````````l``````````````)
+A``````````````l``````````````iases: wi
 
-Required: False
+Required: Fa``````````````l``````````````se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``````````````l``````````````t va``````````````l``````````````ue: None
+Accept pipe``````````````l``````````````ine input: Fa``````````````l``````````````se
+Accept wi``````````````l``````````````dcard characters: Fa``````````````l``````````````se
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmd``````````````l``````````````et supports the common parameters: -Debug, -ErrorAction, -ErrorVariab``````````````l``````````````e, -InformationAction, -InformationVariab``````````````l``````````````e, -OutVariab``````````````l``````````````e, -OutBuffer, -Pipe``````````````l``````````````ineVariab``````````````l``````````````e, -Verbose, -WarningAction, and -WarningVariab``````````````l``````````````e. For more information, see [about_CommonParameters](http://go.microsoft.com/fw``````````````l``````````````ink/?``````````````l``````````````inkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCall
+### Microsoft.Graph.PowerShe``````````````l````````````````````````````l``````````````.Mode``````````````l``````````````s.IMicrosoftGraphCa``````````````l````````````````````````````l``````````````
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCall
+### Microsoft.Graph.PowerShe``````````````l````````````````````````````l``````````````.Mode``````````````l``````````````s.IMicrosoftGraphCa``````````````l````````````````````````````l``````````````
 ## NOTES
 
-ALIASES
+A``````````````l``````````````IASES
 
-COMPLEX PARAMETER PROPERTIES
+COMP``````````````l``````````````EX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described be``````````````l``````````````ow, construct a hash tab``````````````l``````````````e containing the appropriate properties. For information on hash tab``````````````l``````````````es, run Get-He``````````````l``````````````p about_Hash_Tab``````````````l``````````````es.
 
 
 AUDIOROUTINGGROUPS <IMicrosoftGraphAudioRoutingGroup[]>: .
   - `[Id <String>]`: 
-  - `[Receivers <String[]>]`: List of receiving participant ids.
+  - `[Receivers <String[]>]`: ``````````````l``````````````ist of receiving participant ids.
   - `[RoutingMode <String>]`: 
-  - `[Sources <String[]>]`: List of source participant ids.
+  - `[Sources <String[]>]`: ``````````````l``````````````ist of source participant ids.
 
-BODYPARAMETER <IMicrosoftGraphCall>: call
+BODYPARAMETER <IMicrosoftGraphCa``````````````l````````````````````````````l``````````````>: ca``````````````l````````````````````````````l``````````````
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
   - `[AudioRoutingGroups <IMicrosoftGraphAudioRoutingGroup[]>]`: 
     - `[Id <String>]`: 
-    - `[Receivers <String[]>]`: List of receiving participant ids.
+    - `[Receivers <String[]>]`: ``````````````l``````````````ist of receiving participant ids.
     - `[RoutingMode <String>]`: 
-    - `[Sources <String[]>]`: List of source participant ids.
-  - `[CallChainId <String>]`: A unique identifier for all the participant calls in a conference or a unique identifier for two participant calls in a P2P call.  This needs to be copied over from Microsoft.Graph.Call.CallChainId.
-  - `[CallOptions <IMicrosoftGraphCallOptions>]`: callOptions
+    - `[Sources <String[]>]`: ``````````````l``````````````ist of source participant ids.
+  - `[Ca``````````````l````````````````````````````l``````````````ChainId <String>]`: A unique identifier for a``````````````l````````````````````````````l`````````````` the participant ca``````````````l````````````````````````````l``````````````s in a conference or a unique identifier for two participant ca``````````````l````````````````````````````l``````````````s in a P2P ca``````````````l````````````````````````````l``````````````.  This needs to be copied over from Microsoft.Graph.Ca``````````````l````````````````````````````l``````````````.Ca``````````````l````````````````````````````l``````````````ChainId.
+  - `[Ca``````````````l````````````````````````````l``````````````Options <IMicrosoftGraphCa``````````````l````````````````````````````l``````````````Options>]`: ca``````````````l````````````````````````````l``````````````Options
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[HideBotAfterEscalation <Boolean?>]`: 
-  - `[CallRoutes <IMicrosoftGraphCallRoute[]>]`: The routing information on how the call was retargeted. Read-only.
-    - `[Final <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[HideBotAfterEsca``````````````l``````````````ation <Boo``````````````l``````````````ean?>]`: 
+  - `[Ca``````````````l````````````````````````````l``````````````Routes <IMicrosoftGraphCa``````````````l````````````````````````````l``````````````Route[]>]`: The routing information on how the ca``````````````l````````````````````````````l`````````````` was retargeted. Read-on``````````````l``````````````y.
+    - `[Fina``````````````l`````````````` <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[App``````````````l``````````````ication <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Disp``````````````l``````````````ayName <String>]`: The identity's disp``````````````l``````````````ay name. Note that this may not a``````````````l``````````````ways be avai``````````````l``````````````ab``````````````l``````````````e or up to date. For examp``````````````l``````````````e, if a user changes their disp``````````````l``````````````ay name, the API may show the new va``````````````l``````````````ue in a future response, but the items associated with the user won't show up as having changed when using de``````````````l``````````````ta.
         - `[Id <String>]`: Unique identifier for the identity.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[Original <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[Origina``````````````l`````````````` <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[RoutingType <String>]`: routingType
-  - `[CallbackUri <String>]`: The callback URL on which callbacks will be delivered. Must be https.
+  - `[Ca``````````````l````````````````````````````l``````````````backUri <String>]`: The ca``````````````l````````````````````````````l``````````````back UR``````````````l`````````````` on which ca``````````````l````````````````````````````l``````````````backs wi``````````````l````````````````````````````l`````````````` be de``````````````l``````````````ivered. Must be https.
   - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channel.
-    - `[ReplyChainMessageId <String>]`: The ID of the reply message.
+    - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channe``````````````l``````````````.
+    - `[Rep``````````````l``````````````yChainMessageId <String>]`: The ID of the rep``````````````l``````````````y message.
     - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
-  - `[Direction <String>]`: callDirection
+  - `[Direction <String>]`: ca``````````````l````````````````````````````l``````````````Direction
   - `[IncomingContext <IMicrosoftGraphIncomingContext>]`: incomingContext
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ObservedParticipantId <String>]`: The id of the participant that is under observation. Read-only.
-    - `[OnBehalfOf <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[SourceParticipantId <String>]`: The id of the participant that triggered the incoming call. Read-only.
+    - `[ObservedParticipantId <String>]`: The id of the participant that is under observation. Read-on``````````````l``````````````y.
+    - `[OnBeha``````````````l``````````````fOf <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[SourceParticipantId <String>]`: The id of the participant that triggered the incoming ca``````````````l````````````````````````````l``````````````. Read-on``````````````l``````````````y.
     - `[Transferor <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[MediaConfig <IMicrosoftGraphMediaConfig>]`: mediaConfig
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[MediaState <IMicrosoftGraphCallMediaState>]`: callMediaState
+  - `[MediaState <IMicrosoftGraphCa``````````````l````````````````````````````l``````````````MediaState>]`: ca``````````````l````````````````````````````l``````````````MediaState
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Audio <String>]`: mediaState
   - `[MeetingInfo <IMicrosoftGraphMeetingInfo>]`: meetingInfo
@@ -548,184 +548,184 @@ BODYPARAMETER <IMicrosoftGraphCall>: call
   - `[MyParticipantId <String>]`: 
   - `[Operations <IMicrosoftGraphCommsOperation[]>]`: 
     - `[Id <String>]`: 
-    - `[ClientContext <String>]`: Unique Client Context string. Max limit is 256 chars.
-    - `[ResultInfo <IMicrosoftGraphResultInfo>]`: resultInfo
+    - `[C``````````````l``````````````ientContext <String>]`: Unique C``````````````l``````````````ient Context string. Max ``````````````l``````````````imit is 256 chars.
+    - `[Resu``````````````l``````````````tInfo <IMicrosoftGraphResu``````````````l``````````````tInfo>]`: resu``````````````l``````````````tInfo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Code <Int32?>]`: The result code.
+      - `[Code <Int32?>]`: The resu``````````````l``````````````t code.
       - `[Message <String>]`: The message.
-      - `[Subcode <Int32?>]`: The result sub-code.
+      - `[Subcode <Int32?>]`: The resu``````````````l``````````````t sub-code.
     - `[Status <String>]`: operationStatus
   - `[Participants <IMicrosoftGraphParticipant[]>]`: 
     - `[Id <String>]`: 
     - `[Info <IMicrosoftGraphParticipantInfo>]`: participantInfo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[CountryCode <String>]`: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call. Read-only.
+      - `[CountryCode <String>]`: The ISO 3166-1 A``````````````l``````````````pha-2 country code of the participant's best estimated physica``````````````l`````````````` ``````````````l``````````````ocation at the start of the ca``````````````l````````````````````````````l``````````````. Read-on``````````````l``````````````y.
       - `[EndpointType <String>]`: endpointType
       - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[LanguageId <String>]`: The language culture string. Read-only.
-      - `[ParticipantId <String>]`: The participant ID of the participant. Read-only.
-      - `[Region <String>]`: The home region of the participant. This can be a country, a continent, or a larger geographic region. This does not change based on the participant's current physical location, unlike countryCode. Read-only.
-    - `[IsInLobby <Boolean?>]`: true if the participant is in lobby.
-    - `[IsMuted <Boolean?>]`: true if the participant is muted (client or server muted).
-    - `[MediaStreams <IMicrosoftGraphMediaStream[]>]`: The list of media streams.
+      - `[``````````````l``````````````anguageId <String>]`: The ``````````````l``````````````anguage cu``````````````l``````````````ture string. Read-on``````````````l``````````````y.
+      - `[ParticipantId <String>]`: The participant ID of the participant. Read-on``````````````l``````````````y.
+      - `[Region <String>]`: The home region of the participant. This can be a country, a continent, or a ``````````````l``````````````arger geographic region. This does not change based on the participant's current physica``````````````l`````````````` ``````````````l``````````````ocation, un``````````````l``````````````ike countryCode. Read-on``````````````l``````````````y.
+    - `[IsIn``````````````l``````````````obby <Boo``````````````l``````````````ean?>]`: true if the participant is in ``````````````l``````````````obby.
+    - `[IsMuted <Boo``````````````l``````````````ean?>]`: true if the participant is muted (c``````````````l``````````````ient or server muted).
+    - `[MediaStreams <IMicrosoftGraphMediaStream[]>]`: The ``````````````l``````````````ist of media streams.
       - `[Direction <String>]`: mediaDirection
-      - `[Label <String>]`: The media stream label.
+      - `[``````````````l``````````````abe``````````````l`````````````` <String>]`: The media stream ``````````````l``````````````abe``````````````l``````````````.
       - `[MediaType <String>]`: 
-      - `[ServerMuted <Boolean?>]`: Indicates whether the media is muted by the server.
+      - `[ServerMuted <Boo``````````````l``````````````ean?>]`: Indicates whether the media is muted by the server.
       - `[SourceId <String>]`: The source ID.
-    - `[Metadata <String>]`: A blob of data provided by the participant in the roster.
+    - `[Metadata <String>]`: A b``````````````l``````````````ob of data provided by the participant in the roster.
     - `[RecordingInfo <IMicrosoftGraphRecordingInfo>]`: recordingInfo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Initiator <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[RecordingStatus <String>]`: recordingStatus
-  - `[RequestedModalities <String[]>]`: 
-  - `[ResultInfo <IMicrosoftGraphResultInfo>]`: resultInfo
+  - `[RequestedModa``````````````l``````````````ities <String[]>]`: 
+  - `[Resu``````````````l``````````````tInfo <IMicrosoftGraphResu``````````````l``````````````tInfo>]`: resu``````````````l``````````````tInfo
   - `[Source <IMicrosoftGraphParticipantInfo>]`: participantInfo
   - `[State <String>]`: 
   - `[Subject <String>]`: 
   - `[Targets <IMicrosoftGraphInvitationParticipantInfo[]>]`: 
-    - `[Hidden <Boolean?>]`: 
+    - `[Hidden <Boo``````````````l``````````````ean?>]`: 
     - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[ParticipantId <String>]`: Optional. The ID of the target participant.
-    - `[RemoveFromDefaultAudioRoutingGroup <Boolean?>]`: 
-    - `[ReplacesCallId <String>]`: Optional. The call which the target identity is currently a part of. For peer-to-peer case, the call will be dropped once the participant is added successfully.
+    - `[ParticipantId <String>]`: Optiona``````````````l``````````````. The ID of the target participant.
+    - `[RemoveFromDefau``````````````l``````````````tAudioRoutingGroup <Boo``````````````l``````````````ean?>]`: 
+    - `[Rep``````````````l``````````````acesCa``````````````l````````````````````````````l``````````````Id <String>]`: Optiona``````````````l``````````````. The ca``````````````l````````````````````````````l`````````````` which the target identity is current``````````````l``````````````y a part of. For peer-to-peer case, the ca``````````````l````````````````````````````l`````````````` wi``````````````l````````````````````````````l`````````````` be dropped once the participant is added successfu``````````````l````````````````````````````l``````````````y.
   - `[TenantId <String>]`: 
   - `[ToneInfo <IMicrosoftGraphToneInfo>]`: toneInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[SequenceId <Int64?>]`: An incremental identifier used for ordering DTMF events.
+    - `[SequenceId <Int64?>]`: An incrementa``````````````l`````````````` identifier used for ordering DTMF events.
     - `[Tone <String>]`: tone
-  - `[Transcription <IMicrosoftGraphCallTranscriptionInfo>]`: callTranscriptionInfo
+  - `[Transcription <IMicrosoftGraphCa``````````````l````````````````````````````l``````````````TranscriptionInfo>]`: ca``````````````l````````````````````````````l``````````````TranscriptionInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[LastModifiedDateTime <DateTime?>]`: The state modified time in UTC.
-    - `[State <String>]`: callTranscriptionState
+    - `[``````````````l``````````````astModifiedDateTime <DateTime?>]`: The state modified time in UTC.
+    - `[State <String>]`: ca``````````````l````````````````````````````l``````````````TranscriptionState
 
-CALLOPTIONS <IMicrosoftGraphCallOptions>: callOptions
+CA``````````````l````````````````````````````l``````````````OPTIONS <IMicrosoftGraphCa``````````````l````````````````````````````l``````````````Options>: ca``````````````l````````````````````````````l``````````````Options
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[HideBotAfterEscalation <Boolean?>]`: 
+  - `[HideBotAfterEsca``````````````l``````````````ation <Boo``````````````l``````````````ean?>]`: 
 
-CALLROUTES <IMicrosoftGraphCallRoute[]>: The routing information on how the call was retargeted. Read-only.
-  - `[Final <IMicrosoftGraphIdentitySet>]`: identitySet
+CA``````````````l````````````````````````````l``````````````ROUTES <IMicrosoftGraphCa``````````````l````````````````````````````l``````````````Route[]>: The routing information on how the ca``````````````l````````````````````````````l`````````````` was retargeted. Read-on``````````````l``````````````y.
+  - `[Fina``````````````l`````````````` <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[App``````````````l``````````````ication <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Disp``````````````l``````````````ayName <String>]`: The identity's disp``````````````l``````````````ay name. Note that this may not a``````````````l``````````````ways be avai``````````````l``````````````ab``````````````l``````````````e or up to date. For examp``````````````l``````````````e, if a user changes their disp``````````````l``````````````ay name, the API may show the new va``````````````l``````````````ue in a future response, but the items associated with the user won't show up as having changed when using de``````````````l``````````````ta.
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[Original <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[Origina``````````````l`````````````` <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[RoutingType <String>]`: routingType
 
 CHATINFO <IMicrosoftGraphChatInfo>: chatInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channel.
-  - `[ReplyChainMessageId <String>]`: The ID of the reply message.
+  - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channe``````````````l``````````````.
+  - `[Rep``````````````l``````````````yChainMessageId <String>]`: The ID of the rep``````````````l``````````````y message.
   - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
 
 INCOMINGCONTEXT <IMicrosoftGraphIncomingContext>: incomingContext
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ObservedParticipantId <String>]`: The id of the participant that is under observation. Read-only.
-  - `[OnBehalfOf <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[ObservedParticipantId <String>]`: The id of the participant that is under observation. Read-on``````````````l``````````````y.
+  - `[OnBeha``````````````l``````````````fOf <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[App``````````````l``````````````ication <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Disp``````````````l``````````````ayName <String>]`: The identity's disp``````````````l``````````````ay name. Note that this may not a``````````````l``````````````ways be avai``````````````l``````````````ab``````````````l``````````````e or up to date. For examp``````````````l``````````````e, if a user changes their disp``````````````l``````````````ay name, the API may show the new va``````````````l``````````````ue in a future response, but the items associated with the user won't show up as having changed when using de``````````````l``````````````ta.
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[SourceParticipantId <String>]`: The id of the participant that triggered the incoming call. Read-only.
+  - `[SourceParticipantId <String>]`: The id of the participant that triggered the incoming ca``````````````l````````````````````````````l``````````````. Read-on``````````````l``````````````y.
   - `[Transferor <IMicrosoftGraphIdentitySet>]`: identitySet
 
-MEDIASTATE <IMicrosoftGraphCallMediaState>: callMediaState
+MEDIASTATE <IMicrosoftGraphCa``````````````l````````````````````````````l``````````````MediaState>: ca``````````````l````````````````````````````l``````````````MediaState
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Audio <String>]`: mediaState
 
 OPERATIONS <IMicrosoftGraphCommsOperation[]>: .
   - `[Id <String>]`: 
-  - `[ClientContext <String>]`: Unique Client Context string. Max limit is 256 chars.
-  - `[ResultInfo <IMicrosoftGraphResultInfo>]`: resultInfo
+  - `[C``````````````l``````````````ientContext <String>]`: Unique C``````````````l``````````````ient Context string. Max ``````````````l``````````````imit is 256 chars.
+  - `[Resu``````````````l``````````````tInfo <IMicrosoftGraphResu``````````````l``````````````tInfo>]`: resu``````````````l``````````````tInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Code <Int32?>]`: The result code.
+    - `[Code <Int32?>]`: The resu``````````````l``````````````t code.
     - `[Message <String>]`: The message.
-    - `[Subcode <Int32?>]`: The result sub-code.
+    - `[Subcode <Int32?>]`: The resu``````````````l``````````````t sub-code.
   - `[Status <String>]`: operationStatus
 
 PARTICIPANTS <IMicrosoftGraphParticipant[]>: .
   - `[Id <String>]`: 
   - `[Info <IMicrosoftGraphParticipantInfo>]`: participantInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CountryCode <String>]`: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call. Read-only.
+    - `[CountryCode <String>]`: The ISO 3166-1 A``````````````l``````````````pha-2 country code of the participant's best estimated physica``````````````l`````````````` ``````````````l``````````````ocation at the start of the ca``````````````l````````````````````````````l``````````````. Read-on``````````````l``````````````y.
     - `[EndpointType <String>]`: endpointType
     - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[App``````````````l``````````````ication <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Disp``````````````l``````````````ayName <String>]`: The identity's disp``````````````l``````````````ay name. Note that this may not a``````````````l``````````````ways be avai``````````````l``````````````ab``````````````l``````````````e or up to date. For examp``````````````l``````````````e, if a user changes their disp``````````````l``````````````ay name, the API may show the new va``````````````l``````````````ue in a future response, but the items associated with the user won't show up as having changed when using de``````````````l``````````````ta.
         - `[Id <String>]`: Unique identifier for the identity.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[LanguageId <String>]`: The language culture string. Read-only.
-    - `[ParticipantId <String>]`: The participant ID of the participant. Read-only.
-    - `[Region <String>]`: The home region of the participant. This can be a country, a continent, or a larger geographic region. This does not change based on the participant's current physical location, unlike countryCode. Read-only.
-  - `[IsInLobby <Boolean?>]`: true if the participant is in lobby.
-  - `[IsMuted <Boolean?>]`: true if the participant is muted (client or server muted).
-  - `[MediaStreams <IMicrosoftGraphMediaStream[]>]`: The list of media streams.
+    - `[``````````````l``````````````anguageId <String>]`: The ``````````````l``````````````anguage cu``````````````l``````````````ture string. Read-on``````````````l``````````````y.
+    - `[ParticipantId <String>]`: The participant ID of the participant. Read-on``````````````l``````````````y.
+    - `[Region <String>]`: The home region of the participant. This can be a country, a continent, or a ``````````````l``````````````arger geographic region. This does not change based on the participant's current physica``````````````l`````````````` ``````````````l``````````````ocation, un``````````````l``````````````ike countryCode. Read-on``````````````l``````````````y.
+  - `[IsIn``````````````l``````````````obby <Boo``````````````l``````````````ean?>]`: true if the participant is in ``````````````l``````````````obby.
+  - `[IsMuted <Boo``````````````l``````````````ean?>]`: true if the participant is muted (c``````````````l``````````````ient or server muted).
+  - `[MediaStreams <IMicrosoftGraphMediaStream[]>]`: The ``````````````l``````````````ist of media streams.
     - `[Direction <String>]`: mediaDirection
-    - `[Label <String>]`: The media stream label.
+    - `[``````````````l``````````````abe``````````````l`````````````` <String>]`: The media stream ``````````````l``````````````abe``````````````l``````````````.
     - `[MediaType <String>]`: 
-    - `[ServerMuted <Boolean?>]`: Indicates whether the media is muted by the server.
+    - `[ServerMuted <Boo``````````````l``````````````ean?>]`: Indicates whether the media is muted by the server.
     - `[SourceId <String>]`: The source ID.
-  - `[Metadata <String>]`: A blob of data provided by the participant in the roster.
+  - `[Metadata <String>]`: A b``````````````l``````````````ob of data provided by the participant in the roster.
   - `[RecordingInfo <IMicrosoftGraphRecordingInfo>]`: recordingInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Initiator <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[RecordingStatus <String>]`: recordingStatus
 
-RESULTINFO <IMicrosoftGraphResultInfo>: resultInfo
+RESU``````````````l``````````````TINFO <IMicrosoftGraphResu``````````````l``````````````tInfo>: resu``````````````l``````````````tInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Code <Int32?>]`: The result code.
+  - `[Code <Int32?>]`: The resu``````````````l``````````````t code.
   - `[Message <String>]`: The message.
-  - `[Subcode <Int32?>]`: The result sub-code.
+  - `[Subcode <Int32?>]`: The resu``````````````l``````````````t sub-code.
 
 SOURCE <IMicrosoftGraphParticipantInfo>: participantInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[CountryCode <String>]`: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call. Read-only.
+  - `[CountryCode <String>]`: The ISO 3166-1 A``````````````l``````````````pha-2 country code of the participant's best estimated physica``````````````l`````````````` ``````````````l``````````````ocation at the start of the ca``````````````l````````````````````````````l``````````````. Read-on``````````````l``````````````y.
   - `[EndpointType <String>]`: endpointType
   - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[App``````````````l``````````````ication <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Disp``````````````l``````````````ayName <String>]`: The identity's disp``````````````l``````````````ay name. Note that this may not a``````````````l``````````````ways be avai``````````````l``````````````ab``````````````l``````````````e or up to date. For examp``````````````l``````````````e, if a user changes their disp``````````````l``````````````ay name, the API may show the new va``````````````l``````````````ue in a future response, but the items associated with the user won't show up as having changed when using de``````````````l``````````````ta.
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[LanguageId <String>]`: The language culture string. Read-only.
-  - `[ParticipantId <String>]`: The participant ID of the participant. Read-only.
-  - `[Region <String>]`: The home region of the participant. This can be a country, a continent, or a larger geographic region. This does not change based on the participant's current physical location, unlike countryCode. Read-only.
+  - `[``````````````l``````````````anguageId <String>]`: The ``````````````l``````````````anguage cu``````````````l``````````````ture string. Read-on``````````````l``````````````y.
+  - `[ParticipantId <String>]`: The participant ID of the participant. Read-on``````````````l``````````````y.
+  - `[Region <String>]`: The home region of the participant. This can be a country, a continent, or a ``````````````l``````````````arger geographic region. This does not change based on the participant's current physica``````````````l`````````````` ``````````````l``````````````ocation, un``````````````l``````````````ike countryCode. Read-on``````````````l``````````````y.
 
 TARGETS <IMicrosoftGraphInvitationParticipantInfo[]>: .
-  - `[Hidden <Boolean?>]`: 
+  - `[Hidden <Boo``````````````l``````````````ean?>]`: 
   - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
+    - `[App``````````````l``````````````ication <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The identity's display name. Note that this may not always be available or up to date. For example, if a user changes their display name, the API may show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Disp``````````````l``````````````ayName <String>]`: The identity's disp``````````````l``````````````ay name. Note that this may not a``````````````l``````````````ways be avai``````````````l``````````````ab``````````````l``````````````e or up to date. For examp``````````````l``````````````e, if a user changes their disp``````````````l``````````````ay name, the API may show the new va``````````````l``````````````ue in a future response, but the items associated with the user won't show up as having changed when using de``````````````l``````````````ta.
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[ParticipantId <String>]`: Optional. The ID of the target participant.
-  - `[RemoveFromDefaultAudioRoutingGroup <Boolean?>]`: 
-  - `[ReplacesCallId <String>]`: Optional. The call which the target identity is currently a part of. For peer-to-peer case, the call will be dropped once the participant is added successfully.
+  - `[ParticipantId <String>]`: Optiona``````````````l``````````````. The ID of the target participant.
+  - `[RemoveFromDefau``````````````l``````````````tAudioRoutingGroup <Boo``````````````l``````````````ean?>]`: 
+  - `[Rep``````````````l``````````````acesCa``````````````l````````````````````````````l``````````````Id <String>]`: Optiona``````````````l``````````````. The ca``````````````l````````````````````````````l`````````````` which the target identity is current``````````````l``````````````y a part of. For peer-to-peer case, the ca``````````````l````````````````````````````l`````````````` wi``````````````l````````````````````````````l`````````````` be dropped once the participant is added successfu``````````````l````````````````````````````l``````````````y.
 
 TONEINFO <IMicrosoftGraphToneInfo>: toneInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[SequenceId <Int64?>]`: An incremental identifier used for ordering DTMF events.
+  - `[SequenceId <Int64?>]`: An incrementa``````````````l`````````````` identifier used for ordering DTMF events.
   - `[Tone <String>]`: tone
 
-TRANSCRIPTION <IMicrosoftGraphCallTranscriptionInfo>: callTranscriptionInfo
+TRANSCRIPTION <IMicrosoftGraphCa``````````````l````````````````````````````l``````````````TranscriptionInfo>: ca``````````````l````````````````````````````l``````````````TranscriptionInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[LastModifiedDateTime <DateTime?>]`: The state modified time in UTC.
-  - `[State <String>]`: callTranscriptionState
+  - `[``````````````l``````````````astModifiedDateTime <DateTime?>]`: The state modified time in UTC.
+  - `[State <String>]`: ca``````````````l````````````````````````````l``````````````TranscriptionState
 
-## RELATED LINKS
+## RE``````````````l``````````````ATED ``````````````l``````````````INKS
 
-## RELATED LINKS
+## RE``````````````l``````````````ATED ``````````````l``````````````INKS
