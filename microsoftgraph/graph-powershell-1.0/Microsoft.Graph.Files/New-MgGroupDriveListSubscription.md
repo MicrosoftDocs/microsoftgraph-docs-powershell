@@ -1,490 +1,490 @@
-﻿---
-external help file: Microsoft.Graph.Files-help.xml
-Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/new-mggroupdrivelistsubscription
+---
+external help f``i``le: M``i``crosoft.Graph.F``i``les-help.xml
+Module Name: M``i``crosoft.Graph.F``i``les
+onl``i``ne vers``i``on: https://docs.m``i``crosoft.com/en-us/powershell/module/m``i``crosoft.graph.f``i``les/new-mggroupdr``i``vel``i``stsubscr``i``pt``i``on
 schema: 2.0.0
 ---
 
-# New-MgGroupDriveListSubscription
+# New-MgGroupDr``i``veL``i``stSubscr``i``pt``i``on
 
-## SYNOPSIS
-Create new navigation property to subscriptions for groups
+## SYNOPS``i``S
+Create new nav``i``gat``i``on property to subscr``i``pt``i``ons for groups
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
-New-MgGroupDriveListSubscription -DriveId <String> -GroupId <String> [-AdditionalProperties <Hashtable>]
- [-ApplicationId <String>] [-ChangeType <String>] [-ClientState <String>] [-CreatorId <String>]
- [-EncryptionCertificate <String>] [-EncryptionCertificateId <String>] [-ExpirationDateTime <DateTime>]
- [-Id <String>] [-IncludeResourceData] [-LatestSupportedTlsVersion <String>]
- [-LifecycleNotificationUrl <String>] [-NotificationQueryOptions <String>] [-NotificationUrl <String>]
- [-NotificationUrlAppId <String>] [-Resource <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgGroupDr``i``veL``i``stSubscr``i``pt``i``on -Dr``i``ve``i``d <Str``i``ng> -Group``i``d <Str``i``ng> [-Add``i``t``i``onalPropert``i``es <Hashtable>]
+ [-Appl``i``cat``i``on``i``d <Str``i``ng>] [-ChangeType <Str``i``ng>] [-Cl``i``entState <Str``i``ng>] [-Creator``i``d <Str``i``ng>]
+ [-Encrypt``i``onCert``i``f``i``cate <Str``i``ng>] [-Encrypt``i``onCert``i``f``i``cate``i``d <Str``i``ng>] [-Exp``i``rat``i``onDateT``i``me <DateT``i``me>]
+ [-``i``d <Str``i``ng>] [-``i``ncludeResourceData] [-LatestSupportedTlsVers``i``on <Str``i``ng>]
+ [-L``i``fecycleNot``i``f``i``cat``i``onUrl <Str``i``ng>] [-Not``i``f``i``cat``i``onQueryOpt``i``ons <Str``i``ng>] [-Not``i``f``i``cat``i``onUrl <Str``i``ng>]
+ [-Not``i``f``i``cat``i``onUrlApp``i``d <Str``i``ng>] [-Resource <Str``i``ng>] [-What``i``f] [-Conf``i``rm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgGroupDriveListSubscription -DriveId <String> -GroupId <String>
- -BodyParameter <IMicrosoftGraphSubscription> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgGroupDr``i``veL``i``stSubscr``i``pt``i``on -Dr``i``ve``i``d <Str``i``ng> -Group``i``d <Str``i``ng>
+ -BodyParameter <``i``M``i``crosoftGraphSubscr``i``pt``i``on> [-What``i``f] [-Conf``i``rm] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded
+### CreateV``i``a``i``dent``i``tyExpanded
 ```
-New-MgGroupDriveListSubscription -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
- [-ApplicationId <String>] [-ChangeType <String>] [-ClientState <String>] [-CreatorId <String>]
- [-EncryptionCertificate <String>] [-EncryptionCertificateId <String>] [-ExpirationDateTime <DateTime>]
- [-Id <String>] [-IncludeResourceData] [-LatestSupportedTlsVersion <String>]
- [-LifecycleNotificationUrl <String>] [-NotificationQueryOptions <String>] [-NotificationUrl <String>]
- [-NotificationUrlAppId <String>] [-Resource <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgGroupDriveListSubscription -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphSubscription>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgGroupDr``i``veL``i``stSubscr``i``pt``i``on -``i``nputObject <``i``F``i``les``i``dent``i``ty> [-Add``i``t``i``onalPropert``i``es <Hashtable>]
+ [-Appl``i``cat``i``on``i``d <Str``i``ng>] [-ChangeType <Str``i``ng>] [-Cl``i``entState <Str``i``ng>] [-Creator``i``d <Str``i``ng>]
+ [-Encrypt``i``onCert``i``f``i``cate <Str``i``ng>] [-Encrypt``i``onCert``i``f``i``cate``i``d <Str``i``ng>] [-Exp``i``rat``i``onDateT``i``me <DateT``i``me>]
+ [-``i``d <Str``i``ng>] [-``i``ncludeResourceData] [-LatestSupportedTlsVers``i``on <Str``i``ng>]
+ [-L``i``fecycleNot``i``f``i``cat``i``onUrl <Str``i``ng>] [-Not``i``f``i``cat``i``onQueryOpt``i``ons <Str``i``ng>] [-Not``i``f``i``cat``i``onUrl <Str``i``ng>]
+ [-Not``i``f``i``cat``i``onUrlApp``i``d <Str``i``ng>] [-Resource <Str``i``ng>] [-What``i``f] [-Conf``i``rm] [<CommonParameters>]
 ```
 
-## DESCRIPTION
-Create new navigation property to subscriptions for groups
+### CreateV``i``a``i``dent``i``ty
+```
+New-MgGroupDr``i``veL``i``stSubscr``i``pt``i``on -``i``nputObject <``i``F``i``les``i``dent``i``ty> -BodyParameter <``i``M``i``crosoftGraphSubscr``i``pt``i``on>
+ [-What``i``f] [-Conf``i``rm] [<CommonParameters>]
+```
+
+## DESCR``i``PT``i``ON
+Create new nav``i``gat``i``on property to subscr``i``pt``i``ons for groups
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -Add``i``t``i``onalPropert``i``es
+Add``i``t``i``onal Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Parameter Sets: CreateExpanded, CreateV``i``a``i``dent``i``tyExpanded
+Al``i``ases:
 
-Required: False
-Position: Named
+Requ``i``red: False
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
-### -ApplicationId
-Optional.
-Identifier of the application used to create the subscription.
+### -Appl``i``cat``i``on``i``d
+Opt``i``onal.
+``i``dent``i``f``i``er of the appl``i``cat``i``on used to create the subscr``i``pt``i``on.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Type: Str``i``ng
+Parameter Sets: CreateExpanded, CreateV``i``a``i``dent``i``tyExpanded
+Al``i``ases:
 
-Required: False
-Position: Named
+Requ``i``red: False
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
 ### -BodyParameter
-subscription
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+subscr``i``pt``i``on
+To construct, please use Get-Help -Onl``i``ne and see NOTES sect``i``on for BODYPARAMETER propert``i``es and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSubscription
-Parameter Sets: Create, CreateViaIdentity
-Aliases:
+Type: ``i``M``i``crosoftGraphSubscr``i``pt``i``on
+Parameter Sets: Create, CreateV``i``a``i``dent``i``ty
+Al``i``ases:
 
-Required: True
-Position: Named
+Requ``i``red: True
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: True (ByValue)
+Accept w``i``ldcard characters: False
 ```
 
 ### -ChangeType
-Required.
-Indicates the type of change in the subscribed resource that will raise a change notification.
+Requ``i``red.
+``i``nd``i``cates the type of change ``i``n the subscr``i``bed resource that w``i``ll ra``i``se a change not``i``f``i``cat``i``on.
 The supported values are: created, updated, deleted.
-Multiple values can be combined using a comma-separated list.
-Note: Drive root item and list change notifications support only the updated changeType.
-User and group change notifications support updated and deleted changeType.
+Mult``i``ple values can be comb``i``ned us``i``ng a comma-separated l``i``st.
+Note: Dr``i``ve root ``i``tem and l``i``st change not``i``f``i``cat``i``ons support only the updated changeType.
+User and group change not``i``f``i``cat``i``ons support updated and deleted changeType.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Type: Str``i``ng
+Parameter Sets: CreateExpanded, CreateV``i``a``i``dent``i``tyExpanded
+Al``i``ases:
 
-Required: False
-Position: Named
+Requ``i``red: False
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
-### -ClientState
-Optional.
-Specifies the value of the clientState property sent by the service in each change notification.
-The maximum length is 255 characters.
-The client can check that the change notification came from the service by comparing the value of the clientState property sent with the subscription with the value of the clientState property received with each change notification.
+### -Cl``i``entState
+Opt``i``onal.
+Spec``i``f``i``es the value of the cl``i``entState property sent by the serv``i``ce ``i``n each change not``i``f``i``cat``i``on.
+The max``i``mum length ``i``s 255 characters.
+The cl``i``ent can check that the change not``i``f``i``cat``i``on came from the serv``i``ce by compar``i``ng the value of the cl``i``entState property sent w``i``th the subscr``i``pt``i``on w``i``th the value of the cl``i``entState property rece``i``ved w``i``th each change not``i``f``i``cat``i``on.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Type: Str``i``ng
+Parameter Sets: CreateExpanded, CreateV``i``a``i``dent``i``tyExpanded
+Al``i``ases:
 
-Required: False
-Position: Named
+Requ``i``red: False
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
-### -CreatorId
-Optional.
-Identifier of the user or service principal that created the subscription.
-If the app used delegated permissions to create the subscription, this field contains the ID of the signed-in user the app called on behalf of.
-If the app used application permissions, this field contains the ID of the service principal corresponding to the app.
+### -Creator``i``d
+Opt``i``onal.
+``i``dent``i``f``i``er of the user or serv``i``ce pr``i``nc``i``pal that created the subscr``i``pt``i``on.
+``i``f the app used delegated perm``i``ss``i``ons to create the subscr``i``pt``i``on, th``i``s f``i``eld conta``i``ns the ``i``D of the s``i``gned-``i``n user the app called on behalf of.
+``i``f the app used appl``i``cat``i``on perm``i``ss``i``ons, th``i``s f``i``eld conta``i``ns the ``i``D of the serv``i``ce pr``i``nc``i``pal correspond``i``ng to the app.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Type: Str``i``ng
+Parameter Sets: CreateExpanded, CreateV``i``a``i``dent``i``tyExpanded
+Al``i``ases:
 
-Required: False
-Position: Named
+Requ``i``red: False
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
-### -DriveId
-key: id of drive
+### -Dr``i``ve``i``d
+key: ``i``d of dr``i``ve
 
 ```yaml
-Type: String
+Type: Str``i``ng
 Parameter Sets: CreateExpanded, Create
-Aliases:
+Al``i``ases:
 
-Required: True
-Position: Named
+Requ``i``red: True
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
-### -EncryptionCertificate
-Optional.
-A base64-encoded representation of a certificate with a public key used to encrypt resource data in change notifications.
-Optional but required when includeResourceData is true.
+### -Encrypt``i``onCert``i``f``i``cate
+Opt``i``onal.
+A base64-encoded representat``i``on of a cert``i``f``i``cate w``i``th a publ``i``c key used to encrypt resource data ``i``n change not``i``f``i``cat``i``ons.
+Opt``i``onal but requ``i``red when ``i``ncludeResourceData ``i``s true.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Type: Str``i``ng
+Parameter Sets: CreateExpanded, CreateV``i``a``i``dent``i``tyExpanded
+Al``i``ases:
 
-Required: False
-Position: Named
+Requ``i``red: False
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
-### -EncryptionCertificateId
-Optional.
-A custom app-provided identifier to help identify the certificate needed to decrypt resource data.
-Required when includeResourceData is true.
+### -Encrypt``i``onCert``i``f``i``cate``i``d
+Opt``i``onal.
+A custom app-prov``i``ded ``i``dent``i``f``i``er to help ``i``dent``i``fy the cert``i``f``i``cate needed to decrypt resource data.
+Requ``i``red when ``i``ncludeResourceData ``i``s true.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Type: Str``i``ng
+Parameter Sets: CreateExpanded, CreateV``i``a``i``dent``i``tyExpanded
+Al``i``ases:
 
-Required: False
-Position: Named
+Requ``i``red: False
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
-### -ExpirationDateTime
-Required.
-Specifies the date and time when the webhook subscription expires.
-The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to.
-For the maximum supported subscription length of time, see the table below.
+### -Exp``i``rat``i``onDateT``i``me
+Requ``i``red.
+Spec``i``f``i``es the date and t``i``me when the webhook subscr``i``pt``i``on exp``i``res.
+The t``i``me ``i``s ``i``n UTC, and can be an amount of t``i``me from subscr``i``pt``i``on creat``i``on that var``i``es for the resource subscr``i``bed to.
+For the max``i``mum supported subscr``i``pt``i``on length of t``i``me, see the table below.
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Type: DateT``i``me
+Parameter Sets: CreateExpanded, CreateV``i``a``i``dent``i``tyExpanded
+Al``i``ases:
 
-Required: False
-Position: Named
+Requ``i``red: False
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
-### -GroupId
-key: id of group
+### -Group``i``d
+key: ``i``d of group
 
 ```yaml
-Type: String
+Type: Str``i``ng
 Parameter Sets: CreateExpanded, Create
-Aliases:
+Al``i``ases:
 
-Required: True
-Position: Named
+Requ``i``red: True
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
-### -Id
+### -``i``d
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Type: Str``i``ng
+Parameter Sets: CreateExpanded, CreateV``i``a``i``dent``i``tyExpanded
+Al``i``ases:
 
-Required: False
-Position: Named
+Requ``i``red: False
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
-### -IncludeResourceData
-Optional.
-When set to true, change notifications include resource data (such as content of a chat message).
+### -``i``ncludeResourceData
+Opt``i``onal.
+When set to true, change not``i``f``i``cat``i``ons ``i``nclude resource data (such as content of a chat message).
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Type: Sw``i``tchParameter
+Parameter Sets: CreateExpanded, CreateV``i``a``i``dent``i``tyExpanded
+Al``i``ases:
 
-Required: False
-Position: Named
+Requ``i``red: False
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -``i``nputObject
+``i``dent``i``ty Parameter
+To construct, please use Get-Help -Onl``i``ne and see NOTES sect``i``on for ``i``NPUTOBJECT propert``i``es and create a hash table.
 
 ```yaml
-Type: IFilesIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
-Aliases:
+Type: ``i``F``i``les``i``dent``i``ty
+Parameter Sets: CreateV``i``a``i``dent``i``tyExpanded, CreateV``i``a``i``dent``i``ty
+Al``i``ases:
 
-Required: True
-Position: Named
+Requ``i``red: True
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: True (ByValue)
+Accept w``i``ldcard characters: False
 ```
 
-### -LatestSupportedTlsVersion
-Optional.
-Specifies the latest version of Transport Layer Security (TLS) that the notification endpoint, specified by notificationUrl, supports.
-The possible values are: v1_0, v1_1, v1_2, v1_3.
-For subscribers whose notification endpoint supports a version lower than the currently recommended version (TLS 1.2), specifying this property by a set timeline allows them to temporarily use their deprecated version of TLS before completing their upgrade to TLS 1.2.
-For these subscribers, not setting this property per the timeline would result in subscription operations failing.
-For subscribers whose notification endpoint already supports TLS 1.2, setting this property is optional.
-In such cases, Microsoft Graph defaults the property to v1_2.
+### -LatestSupportedTlsVers``i``on
+Opt``i``onal.
+Spec``i``f``i``es the latest vers``i``on of Transport Layer Secur``i``ty (TLS) that the not``i``f``i``cat``i``on endpo``i``nt, spec``i``f``i``ed by not``i``f``i``cat``i``onUrl, supports.
+The poss``i``ble values are: v1_0, v1_1, v1_2, v1_3.
+For subscr``i``bers whose not``i``f``i``cat``i``on endpo``i``nt supports a vers``i``on lower than the currently recommended vers``i``on (TLS 1.2), spec``i``fy``i``ng th``i``s property by a set t``i``mel``i``ne allows them to temporar``i``ly use the``i``r deprecated vers``i``on of TLS before complet``i``ng the``i``r upgrade to TLS 1.2.
+For these subscr``i``bers, not sett``i``ng th``i``s property per the t``i``mel``i``ne would result ``i``n subscr``i``pt``i``on operat``i``ons fa``i``l``i``ng.
+For subscr``i``bers whose not``i``f``i``cat``i``on endpo``i``nt already supports TLS 1.2, sett``i``ng th``i``s property ``i``s opt``i``onal.
+``i``n such cases, M``i``crosoft Graph defaults the property to v1_2.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Type: Str``i``ng
+Parameter Sets: CreateExpanded, CreateV``i``a``i``dent``i``tyExpanded
+Al``i``ases:
 
-Required: False
-Position: Named
+Requ``i``red: False
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
-### -LifecycleNotificationUrl
-Optional.
-The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved and missed notifications.
-This URL must make use of the HTTPS protocol.
+### -L``i``fecycleNot``i``f``i``cat``i``onUrl
+Opt``i``onal.
+The URL of the endpo``i``nt that rece``i``ves l``i``fecycle not``i``f``i``cat``i``ons, ``i``nclud``i``ng subscr``i``pt``i``onRemoved and m``i``ssed not``i``f``i``cat``i``ons.
+Th``i``s URL must make use of the HTTPS protocol.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Type: Str``i``ng
+Parameter Sets: CreateExpanded, CreateV``i``a``i``dent``i``tyExpanded
+Al``i``ases:
 
-Required: False
-Position: Named
+Requ``i``red: False
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
-### -NotificationQueryOptions
-Optional.
-OData query options for specifying the value for the targeting resource.
-Clients receive notifications when the resource reaches the state matching the query options provided here.
-With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property.
-For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc.
+### -Not``i``f``i``cat``i``onQueryOpt``i``ons
+Opt``i``onal.
+OData query opt``i``ons for spec``i``fy``i``ng the value for the target``i``ng resource.
+Cl``i``ents rece``i``ve not``i``f``i``cat``i``ons when the resource reaches the state match``i``ng the query opt``i``ons prov``i``ded here.
+W``i``th th``i``s new property ``i``n the subscr``i``pt``i``on creat``i``on payload along w``i``th all ex``i``st``i``ng propert``i``es, Webhooks w``i``ll del``i``ver not``i``f``i``cat``i``ons whenever a resource reaches the des``i``red state ment``i``oned ``i``n the not``i``f``i``cat``i``onQueryOpt``i``ons property.
+For example, when the pr``i``nt job ``i``s completed or when a pr``i``nt job resource ``i``sFetchable property value becomes true etc.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Type: Str``i``ng
+Parameter Sets: CreateExpanded, CreateV``i``a``i``dent``i``tyExpanded
+Al``i``ases:
 
-Required: False
-Position: Named
+Requ``i``red: False
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
-### -NotificationUrl
-Required.
-The URL of the endpoint that receives the change notifications.
-This URL must make use of the HTTPS protocol.
+### -Not``i``f``i``cat``i``onUrl
+Requ``i``red.
+The URL of the endpo``i``nt that rece``i``ves the change not``i``f``i``cat``i``ons.
+Th``i``s URL must make use of the HTTPS protocol.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Type: Str``i``ng
+Parameter Sets: CreateExpanded, CreateV``i``a``i``dent``i``tyExpanded
+Al``i``ases:
 
-Required: False
-Position: Named
+Requ``i``red: False
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
-### -NotificationUrlAppId
-Optional.
-The app ID that the subscription service can use to generate the validation token.
-This allows the client to validate the authenticity of the notification received.
+### -Not``i``f``i``cat``i``onUrlApp``i``d
+Opt``i``onal.
+The app ``i``D that the subscr``i``pt``i``on serv``i``ce can use to generate the val``i``dat``i``on token.
+Th``i``s allows the cl``i``ent to val``i``date the authent``i``c``i``ty of the not``i``f``i``cat``i``on rece``i``ved.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Type: Str``i``ng
+Parameter Sets: CreateExpanded, CreateV``i``a``i``dent``i``tyExpanded
+Al``i``ases:
 
-Required: False
-Position: Named
+Requ``i``red: False
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
 ### -Resource
-Required.
-Specifies the resource that will be monitored for changes.
-Do not include the base URL (https://graph.microsoft.com/beta/).
-See the possible resource path values for each supported resource.
+Requ``i``red.
+Spec``i``f``i``es the resource that w``i``ll be mon``i``tored for changes.
+Do not ``i``nclude the base URL (https://graph.m``i``crosoft.com/beta/).
+See the poss``i``ble resource path values for each supported resource.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
+Type: Str``i``ng
+Parameter Sets: CreateExpanded, CreateV``i``a``i``dent``i``tyExpanded
+Al``i``ases:
 
-Required: False
-Position: Named
+Requ``i``red: False
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
+### -Conf``i``rm
+Prompts you for conf``i``rmat``i``on before runn``i``ng the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: Sw``i``tchParameter
 Parameter Sets: (All)
-Aliases: cf
+Al``i``ases: cf
 
-Required: False
-Position: Named
+Requ``i``red: False
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+### -What``i``f
+Shows what would happen ``i``f the cmdlet runs.
+The cmdlet ``i``s not run.
 
 ```yaml
-Type: SwitchParameter
+Type: Sw``i``tchParameter
 Parameter Sets: (All)
-Aliases: wi
+Al``i``ases: w``i``
 
-Required: False
-Position: Named
+Requ``i``red: False
+Pos``i``t``i``on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p``i``pel``i``ne ``i``nput: False
+Accept w``i``ldcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Th``i``s cmdlet supports the common parameters: -Debug, -ErrorAct``i``on, -ErrorVar``i``able, -``i``nformat``i``onAct``i``on, -``i``nformat``i``onVar``i``able, -OutVar``i``able, -OutBuffer, -P``i``pel``i``neVar``i``able, -Verbose, -Warn``i``ngAct``i``on, and -Warn``i``ngVar``i``able. For more ``i``nformat``i``on, see [about_CommonParameters](http://go.m``i``crosoft.com/fwl``i``nk/?L``i``nk``i``D=113216).
 
-## INPUTS
+## ``i``NPUTS
 
-### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSubscription
+### M``i``crosoft.Graph.PowerShell.Models.``i``F``i``les``i``dent``i``ty
+### M``i``crosoft.Graph.PowerShell.Models.``i``M``i``crosoftGraphSubscr``i``pt``i``on
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSubscription
+### M``i``crosoft.Graph.PowerShell.Models.``i``M``i``crosoftGraphSubscr``i``pt``i``on
 ## NOTES
 
-ALIASES
+AL``i``ASES
 
-COMPLEX PARAMETER PROPERTIES
+COMPLEX PARAMETER PROPERT``i``ES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters descr``i``bed below, construct a hash table conta``i``n``i``ng the appropr``i``ate propert``i``es. For ``i``nformat``i``on on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphSubscription>: subscription
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
-  - `[ApplicationId <String>]`: Optional. Identifier of the application used to create the subscription. Read-only.
-  - `[ChangeType <String>]`: Required. Indicates the type of change in the subscribed resource that will raise a change notification. The supported values are: created, updated, deleted. Multiple values can be combined using a comma-separated list. Note:  Drive root item and list change notifications support only the updated changeType. User and group change notifications support updated and deleted changeType.
-  - `[ClientState <String>]`: Optional. Specifies the value of the clientState property sent by the service in each change notification. The maximum length is 255 characters. The client can check that the change notification came from the service by comparing the value of the clientState property sent with the subscription with the value of the clientState property received with each change notification.
-  - `[CreatorId <String>]`: Optional. Identifier of the user or service principal that created the subscription. If the app used delegated permissions to create the subscription, this field contains the ID of the signed-in user the app called on behalf of. If the app used application permissions, this field contains the ID of the service principal corresponding to the app. Read-only.
-  - `[EncryptionCertificate <String>]`: Optional. A base64-encoded representation of a certificate with a public key used to encrypt resource data in change notifications. Optional but required when includeResourceData is true.
-  - `[EncryptionCertificateId <String>]`: Optional. A custom app-provided identifier to help identify the certificate needed to decrypt resource data. Required when includeResourceData is true.
-  - `[ExpirationDateTime <DateTime?>]`: Required. Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to. For the maximum supported subscription length of time, see the table below.
-  - `[IncludeResourceData <Boolean?>]`: Optional. When set to true, change notifications include resource data (such as content of a chat message).
-  - `[LatestSupportedTlsVersion <String>]`: Optional. Specifies the latest version of Transport Layer Security (TLS) that the notification endpoint, specified by notificationUrl, supports. The possible values are: v1_0, v1_1, v1_2, v1_3. For subscribers whose notification endpoint supports a version lower than the currently recommended version (TLS 1.2), specifying this property by a set timeline allows them to temporarily use their deprecated version of TLS before completing their upgrade to TLS 1.2. For these subscribers, not setting this property per the timeline would result in subscription operations failing. For subscribers whose notification endpoint already supports TLS 1.2, setting this property is optional. In such cases, Microsoft Graph defaults the property to v1_2.
-  - `[LifecycleNotificationUrl <String>]`: Optional. The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved and missed notifications. This URL must make use of the HTTPS protocol.
-  - `[NotificationQueryOptions <String>]`: Optional.  OData query options for specifying the value for the targeting resource. Clients receive notifications when the resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property. For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc.
-  - `[NotificationUrl <String>]`: Required. The URL of the endpoint that receives the change notifications. This URL must make use of the HTTPS protocol.
-  - `[NotificationUrlAppId <String>]`: Optional. The app ID that the subscription service can use to generate the validation token. This allows the client to validate the authenticity of the notification received.
-  - `[Resource <String>]`: Required. Specifies the resource that will be monitored for changes. Do not include the base URL (https://graph.microsoft.com/beta/). See the possible resource path values for each supported resource.
+BODYPARAMETER <``i``M``i``crosoftGraphSubscr``i``pt``i``on>: subscr``i``pt``i``on
+  - `[(Any) <Object>]`: Th``i``s ``i``nd``i``cates any property can be added to th``i``s object.
+  - `[``i``d <Str``i``ng>]`: 
+  - `[Appl``i``cat``i``on``i``d <Str``i``ng>]`: Opt``i``onal. ``i``dent``i``f``i``er of the appl``i``cat``i``on used to create the subscr``i``pt``i``on. Read-only.
+  - `[ChangeType <Str``i``ng>]`: Requ``i``red. ``i``nd``i``cates the type of change ``i``n the subscr``i``bed resource that w``i``ll ra``i``se a change not``i``f``i``cat``i``on. The supported values are: created, updated, deleted. Mult``i``ple values can be comb``i``ned us``i``ng a comma-separated l``i``st. Note:  Dr``i``ve root ``i``tem and l``i``st change not``i``f``i``cat``i``ons support only the updated changeType. User and group change not``i``f``i``cat``i``ons support updated and deleted changeType.
+  - `[Cl``i``entState <Str``i``ng>]`: Opt``i``onal. Spec``i``f``i``es the value of the cl``i``entState property sent by the serv``i``ce ``i``n each change not``i``f``i``cat``i``on. The max``i``mum length ``i``s 255 characters. The cl``i``ent can check that the change not``i``f``i``cat``i``on came from the serv``i``ce by compar``i``ng the value of the cl``i``entState property sent w``i``th the subscr``i``pt``i``on w``i``th the value of the cl``i``entState property rece``i``ved w``i``th each change not``i``f``i``cat``i``on.
+  - `[Creator``i``d <Str``i``ng>]`: Opt``i``onal. ``i``dent``i``f``i``er of the user or serv``i``ce pr``i``nc``i``pal that created the subscr``i``pt``i``on. ``i``f the app used delegated perm``i``ss``i``ons to create the subscr``i``pt``i``on, th``i``s f``i``eld conta``i``ns the ``i``D of the s``i``gned-``i``n user the app called on behalf of. ``i``f the app used appl``i``cat``i``on perm``i``ss``i``ons, th``i``s f``i``eld conta``i``ns the ``i``D of the serv``i``ce pr``i``nc``i``pal correspond``i``ng to the app. Read-only.
+  - `[Encrypt``i``onCert``i``f``i``cate <Str``i``ng>]`: Opt``i``onal. A base64-encoded representat``i``on of a cert``i``f``i``cate w``i``th a publ``i``c key used to encrypt resource data ``i``n change not``i``f``i``cat``i``ons. Opt``i``onal but requ``i``red when ``i``ncludeResourceData ``i``s true.
+  - `[Encrypt``i``onCert``i``f``i``cate``i``d <Str``i``ng>]`: Opt``i``onal. A custom app-prov``i``ded ``i``dent``i``f``i``er to help ``i``dent``i``fy the cert``i``f``i``cate needed to decrypt resource data. Requ``i``red when ``i``ncludeResourceData ``i``s true.
+  - `[Exp``i``rat``i``onDateT``i``me <DateT``i``me?>]`: Requ``i``red. Spec``i``f``i``es the date and t``i``me when the webhook subscr``i``pt``i``on exp``i``res. The t``i``me ``i``s ``i``n UTC, and can be an amount of t``i``me from subscr``i``pt``i``on creat``i``on that var``i``es for the resource subscr``i``bed to. For the max``i``mum supported subscr``i``pt``i``on length of t``i``me, see the table below.
+  - `[``i``ncludeResourceData <Boolean?>]`: Opt``i``onal. When set to true, change not``i``f``i``cat``i``ons ``i``nclude resource data (such as content of a chat message).
+  - `[LatestSupportedTlsVers``i``on <Str``i``ng>]`: Opt``i``onal. Spec``i``f``i``es the latest vers``i``on of Transport Layer Secur``i``ty (TLS) that the not``i``f``i``cat``i``on endpo``i``nt, spec``i``f``i``ed by not``i``f``i``cat``i``onUrl, supports. The poss``i``ble values are: v1_0, v1_1, v1_2, v1_3. For subscr``i``bers whose not``i``f``i``cat``i``on endpo``i``nt supports a vers``i``on lower than the currently recommended vers``i``on (TLS 1.2), spec``i``fy``i``ng th``i``s property by a set t``i``mel``i``ne allows them to temporar``i``ly use the``i``r deprecated vers``i``on of TLS before complet``i``ng the``i``r upgrade to TLS 1.2. For these subscr``i``bers, not sett``i``ng th``i``s property per the t``i``mel``i``ne would result ``i``n subscr``i``pt``i``on operat``i``ons fa``i``l``i``ng. For subscr``i``bers whose not``i``f``i``cat``i``on endpo``i``nt already supports TLS 1.2, sett``i``ng th``i``s property ``i``s opt``i``onal. ``i``n such cases, M``i``crosoft Graph defaults the property to v1_2.
+  - `[L``i``fecycleNot``i``f``i``cat``i``onUrl <Str``i``ng>]`: Opt``i``onal. The URL of the endpo``i``nt that rece``i``ves l``i``fecycle not``i``f``i``cat``i``ons, ``i``nclud``i``ng subscr``i``pt``i``onRemoved and m``i``ssed not``i``f``i``cat``i``ons. Th``i``s URL must make use of the HTTPS protocol.
+  - `[Not``i``f``i``cat``i``onQueryOpt``i``ons <Str``i``ng>]`: Opt``i``onal.  OData query opt``i``ons for spec``i``fy``i``ng the value for the target``i``ng resource. Cl``i``ents rece``i``ve not``i``f``i``cat``i``ons when the resource reaches the state match``i``ng the query opt``i``ons prov``i``ded here. W``i``th th``i``s new property ``i``n the subscr``i``pt``i``on creat``i``on payload along w``i``th all ex``i``st``i``ng propert``i``es, Webhooks w``i``ll del``i``ver not``i``f``i``cat``i``ons whenever a resource reaches the des``i``red state ment``i``oned ``i``n the not``i``f``i``cat``i``onQueryOpt``i``ons property. For example, when the pr``i``nt job ``i``s completed or when a pr``i``nt job resource ``i``sFetchable property value becomes true etc.
+  - `[Not``i``f``i``cat``i``onUrl <Str``i``ng>]`: Requ``i``red. The URL of the endpo``i``nt that rece``i``ves the change not``i``f``i``cat``i``ons. Th``i``s URL must make use of the HTTPS protocol.
+  - `[Not``i``f``i``cat``i``onUrlApp``i``d <Str``i``ng>]`: Opt``i``onal. The app ``i``D that the subscr``i``pt``i``on serv``i``ce can use to generate the val``i``dat``i``on token. Th``i``s allows the cl``i``ent to val``i``date the authent``i``c``i``ty of the not``i``f``i``cat``i``on rece``i``ved.
+  - `[Resource <Str``i``ng>]`: Requ``i``red. Spec``i``f``i``es the resource that w``i``ll be mon``i``tored for changes. Do not ``i``nclude the base URL (https://graph.m``i``crosoft.com/beta/). See the poss``i``ble resource path values for each supported resource.
 
-INPUTOBJECT <IFilesIdentity>: Identity Parameter
-  - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
-  - `[ColumnLinkId <String>]`: key: id of columnLink
-  - `[ContentTypeId <String>]`: key: id of contentType
-  - `[ContentTypeId1 <String>]`: key: id of contentType
-  - `[DocumentSetVersionId <String>]`: key: id of documentSetVersion
-  - `[DriveId <String>]`: key: id of drive
-  - `[DriveItemId <String>]`: key: id of driveItem
-  - `[DriveItemId1 <String>]`: key: id of driveItem
-  - `[DriveItemVersionId <String>]`: key: id of driveItemVersion
-  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
-  - `[GroupId <String>]`: key: id of group
-  - `[Interval <String>]`: Usage: interval='{interval}'
-  - `[ListItemId <String>]`: key: id of listItem
-  - `[ListItemVersionId <String>]`: key: id of listItemVersion
-  - `[PermissionId <String>]`: key: id of permission
-  - `[Q <String>]`: Usage: q='{q}'
-  - `[RichLongRunningOperationId <String>]`: key: id of richLongRunningOperation
-  - `[SharedDriveItemId <String>]`: key: id of sharedDriveItem
-  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[SubscriptionId <String>]`: key: id of subscription
-  - `[ThumbnailSetId <String>]`: key: id of thumbnailSet
-  - `[Token <String>]`: Usage: token='{token}'
-  - `[UserId <String>]`: key: id of user
+``i``NPUTOBJECT <``i``F``i``les``i``dent``i``ty>: ``i``dent``i``ty Parameter
+  - `[ColumnDef``i``n``i``t``i``on``i``d <Str``i``ng>]`: key: ``i``d of columnDef``i``n``i``t``i``on
+  - `[ColumnL``i``nk``i``d <Str``i``ng>]`: key: ``i``d of columnL``i``nk
+  - `[ContentType``i``d <Str``i``ng>]`: key: ``i``d of contentType
+  - `[ContentType``i``d1 <Str``i``ng>]`: key: ``i``d of contentType
+  - `[DocumentSetVers``i``on``i``d <Str``i``ng>]`: key: ``i``d of documentSetVers``i``on
+  - `[Dr``i``ve``i``d <Str``i``ng>]`: key: ``i``d of dr``i``ve
+  - `[Dr``i``ve``i``tem``i``d <Str``i``ng>]`: key: ``i``d of dr``i``ve``i``tem
+  - `[Dr``i``ve``i``tem``i``d1 <Str``i``ng>]`: key: ``i``d of dr``i``ve``i``tem
+  - `[Dr``i``ve``i``temVers``i``on``i``d <Str``i``ng>]`: key: ``i``d of dr``i``ve``i``temVers``i``on
+  - `[EndDateT``i``me <Str``i``ng>]`: Usage: endDateT``i``me='{endDateT``i``me}'
+  - `[Group``i``d <Str``i``ng>]`: key: ``i``d of group
+  - `[``i``nterval <Str``i``ng>]`: Usage: ``i``nterval='{``i``nterval}'
+  - `[L``i``st``i``tem``i``d <Str``i``ng>]`: key: ``i``d of l``i``st``i``tem
+  - `[L``i``st``i``temVers``i``on``i``d <Str``i``ng>]`: key: ``i``d of l``i``st``i``temVers``i``on
+  - `[Perm``i``ss``i``on``i``d <Str``i``ng>]`: key: ``i``d of perm``i``ss``i``on
+  - `[Q <Str``i``ng>]`: Usage: q='{q}'
+  - `[R``i``chLongRunn``i``ngOperat``i``on``i``d <Str``i``ng>]`: key: ``i``d of r``i``chLongRunn``i``ngOperat``i``on
+  - `[SharedDr``i``ve``i``tem``i``d <Str``i``ng>]`: key: ``i``d of sharedDr``i``ve``i``tem
+  - `[StartDateT``i``me <Str``i``ng>]`: Usage: startDateT``i``me='{startDateT``i``me}'
+  - `[Subscr``i``pt``i``on``i``d <Str``i``ng>]`: key: ``i``d of subscr``i``pt``i``on
+  - `[Thumbna``i``lSet``i``d <Str``i``ng>]`: key: ``i``d of thumbna``i``lSet
+  - `[Token <Str``i``ng>]`: Usage: token='{token}'
+  - `[User``i``d <Str``i``ng>]`: key: ``i``d of user
 
-## RELATED LINKS
+## RELATED L``i``NKS
