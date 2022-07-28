@@ -1,221 +1,221 @@
-﻿---
-external help file: Microsoft.Graph.Planner-help.xml
-Module Name: Microsoft.Graph.Planner
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/update-mgplannertaskbuckettaskboardformat
+---
+externa``l`` he``l``p fi``l``e: Microsoft.Graph.P``l``anner-he``l``p.xm``l``
+Modu``l``e Name: Microsoft.Graph.P``l``anner
+on``l``ine version: https://docs.microsoft.com/en-us/powershe``l````l``/modu``l``e/microsoft.graph.p``l``anner/update-mgp``l``annertaskbuckettaskboardformat
 schema: 2.0.0
 ---
 
-# Update-MgPlannerTaskBucketTaskBoardFormat
+# Update-MgP``l``annerTaskBucketTaskBoardFormat
 
 ## SYNOPSIS
-Update the navigation property bucketTaskBoardFormat in planner
+Update the navigation property bucketTaskBoardFormat in p``l``anner
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### UpdateExpanded (Defau``l``t)
 ```
-Update-MgPlannerTaskBucketTaskBoardFormat -PlannerTaskId <String> [-AdditionalProperties <Hashtable>]
+Update-MgP``l``annerTaskBucketTaskBoardFormat -P``l``annerTaskId <String> [-Additiona``l``Properties <Hashtab``l``e>]
  [-Id <String>] [-OrderHint <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgPlannerTaskBucketTaskBoardFormat -PlannerTaskId <String>
- -BodyParameter <IMicrosoftGraphPlannerBucketTaskBoardTaskFormat> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgP``l``annerTaskBucketTaskBoardFormat -P``l``annerTaskId <String>
+ -BodyParameter <IMicrosoftGraphP``l``annerBucketTaskBoardTaskFormat> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgPlannerTaskBucketTaskBoardFormat -InputObject <IPlannerIdentity> [-AdditionalProperties <Hashtable>]
+Update-MgP``l``annerTaskBucketTaskBoardFormat -InputObject <IP``l``annerIdentity> [-Additiona``l``Properties <Hashtab``l``e>]
  [-Id <String>] [-OrderHint <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgPlannerTaskBucketTaskBoardFormat -InputObject <IPlannerIdentity>
- -BodyParameter <IMicrosoftGraphPlannerBucketTaskBoardTaskFormat> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgP``l``annerTaskBucketTaskBoardFormat -InputObject <IP``l``annerIdentity>
+ -BodyParameter <IMicrosoftGraphP``l``annerBucketTaskBoardTaskFormat> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property bucketTaskBoardFormat in planner
+Update the navigation property bucketTaskBoardFormat in p``l``anner
 
-## EXAMPLES
+## EXAMP``l``ES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -Additiona``l``Properties
+Additiona``l`` Parameters
 
-```yaml
-Type: Hashtable
+```yam``l``
+Type: Hashtab``l``e
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+A``l``iases:
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### -BodyParameter
-plannerBucketTaskBoardTaskFormat
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+p``l``annerBucketTaskBoardTaskFormat
+To construct, p``l``ease use Get-He``l``p -On``l``ine and see NOTES section for BODYPARAMETER properties and create a hash tab``l``e.
 
-```yaml
-Type: IMicrosoftGraphPlannerBucketTaskBoardTaskFormat
+```yam``l``
+Type: IMicrosoftGraphP``l``annerBucketTaskBoardTaskFormat
 Parameter Sets: Update, UpdateViaIdentity
-Aliases:
+A``l``iases:
 
 Required: True
 Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: True (ByVa``l``ue)
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### -Id
 .
 
-```yaml
+```yam``l``
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+A``l``iases:
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, p``l``ease use Get-He``l``p -On``l``ine and see NOTES section for INPUTOBJECT properties and create a hash tab``l``e.
 
-```yaml
-Type: IPlannerIdentity
+```yam``l``
+Type: IP``l``annerIdentity
 Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
-Aliases:
+A``l``iases:
 
 Required: True
 Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: True (ByVa``l``ue)
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### -OrderHint
 Hint used to order tasks in the Bucket view of the Task Board.
-The format is defined as outlined here.
+The format is defined as out``l``ined here.
 
-```yaml
+```yam``l``
 Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
+A``l``iases:
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### -PassThru
 Returns true when the command succeeds
 
-```yaml
+```yam``l``
 Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
+Parameter Sets: (A``l````l``)
+A``l``iases:
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
-### -PlannerTaskId
-key: id of plannerTask
+### -P``l``annerTaskId
+key: id of p``l``annerTask
 
-```yaml
+```yam``l``
 Type: String
 Parameter Sets: UpdateExpanded, Update
-Aliases:
+A``l``iases:
 
 Required: True
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### -Confirm
-Prompts you for confirmation before running the cmdlet.
+Prompts you for confirmation before running the cmd``l``et.
 
-```yaml
+```yam``l``
 Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
+Parameter Sets: (A``l````l``)
+A``l``iases: cf
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what wou``l``d happen if the cmd``l``et runs.
+The cmd``l``et is not run.
 
-```yaml
+```yam``l``
 Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Parameter Sets: (A``l````l``)
+A``l``iases: wi
 
-Required: False
+Required: Fa``l``se
 Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Defau``l``t va``l``ue: None
+Accept pipe``l``ine input: Fa``l``se
+Accept wi``l``dcard characters: Fa``l``se
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+This cmd``l``et supports the common parameters: -Debug, -ErrorAction, -ErrorVariab``l``e, -InformationAction, -InformationVariab``l``e, -OutVariab``l``e, -OutBuffer, -Pipe``l``ineVariab``l``e, -Verbose, -WarningAction, and -WarningVariab``l``e. For more information, see [about_CommonParameters](http://go.microsoft.com/fw``l``ink/?``l``inkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerBucketTaskBoardTaskFormat
-### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
+### Microsoft.Graph.PowerShe``l````l``.Mode``l``s.IMicrosoftGraphP``l``annerBucketTaskBoardTaskFormat
+### Microsoft.Graph.PowerShe``l````l``.Mode``l``s.IP``l``annerIdentity
 ## OUTPUTS
 
-### System.Boolean
+### System.Boo``l``ean
 ## NOTES
 
-ALIASES
+A``l``IASES
 
-COMPLEX PARAMETER PROPERTIES
+COMP``l``EX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described be``l``ow, construct a hash tab``l``e containing the appropriate properties. For information on hash tab``l``es, run Get-He``l``p about_Hash_Tab``l``es.
 
 
-BODYPARAMETER <IMicrosoftGraphPlannerBucketTaskBoardTaskFormat>: plannerBucketTaskBoardTaskFormat
+BODYPARAMETER <IMicrosoftGraphP``l``annerBucketTaskBoardTaskFormat>: p``l``annerBucketTaskBoardTaskFormat
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: 
-  - `[OrderHint <String>]`: Hint used to order tasks in the Bucket view of the Task Board. The format is defined as outlined here.
+  - `[OrderHint <String>]`: Hint used to order tasks in the Bucket view of the Task Board. The format is defined as out``l``ined here.
 
-INPUTOBJECT <IPlannerIdentity>: Identity Parameter
+INPUTOBJECT <IP``l``annerIdentity>: Identity Parameter
   - `[GroupId <String>]`: key: id of group
-  - `[PlannerBucketId <String>]`: key: id of plannerBucket
-  - `[PlannerDeltaId <String>]`: key: id of plannerDelta
-  - `[PlannerPlanId <String>]`: key: id of plannerPlan
-  - `[PlannerRosterId <String>]`: key: id of plannerRoster
-  - `[PlannerRosterMemberId <String>]`: key: id of plannerRosterMember
-  - `[PlannerTaskId <String>]`: key: id of plannerTask
+  - `[P``l``annerBucketId <String>]`: key: id of p``l``annerBucket
+  - `[P``l``annerDe``l``taId <String>]`: key: id of p``l``annerDe``l``ta
+  - `[P``l``annerP``l``anId <String>]`: key: id of p``l``annerP``l``an
+  - `[P``l``annerRosterId <String>]`: key: id of p``l``annerRoster
+  - `[P``l``annerRosterMemberId <String>]`: key: id of p``l``annerRosterMember
+  - `[P``l``annerTaskId <String>]`: key: id of p``l``annerTask
   - `[UserId <String>]`: key: id of user
 
-## RELATED LINKS
+## RE``l``ATED ``l``INKS
