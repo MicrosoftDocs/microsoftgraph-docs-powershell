@@ -1,165 +1,165 @@
-﻿---
-external help file: Microsoft.Graph.Reports-help.xml
-Module Name: Microsoft.Graph.Reports
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportsharepointactivityuserdetail
-schema: 2.0.0
+---
+`e`xt`e`rnal h`e`lp fil`e`: Microsoft.Graph.R`e`ports-h`e`lp.xml
+Modul`e` Nam`e`: Microsoft.Graph.R`e`ports
+onlin`e` v`e`rsion: https://docs.microsoft.com/`e`n-us/pow`e`rsh`e`ll/modul`e`/microsoft.graph.r`e`ports/g`e`t-mgr`e`portshar`e`pointactivityus`e`rd`e`tail
+sch`e`ma: 2.0.0
 ---
 
-# Get-MgReportSharePointActivityUserDetail
+# G`e`t-MgR`e`portShar`e`PointActivityUs`e`rD`e`tail
 
 ## SYNOPSIS
-Invoke function getSharePointActivityUserDetail
+Invok`e` function g`e`tShar`e`PointActivityUs`e`rD`e`tail
 
 ## SYNTAX
 
-### Get2 (Default)
+### G`e`t2 (D`e`fault)
 ```
-Get-MgReportSharePointActivityUserDetail -Date <DateTime> -OutFile <String> [-PassThru] [<CommonParameters>]
-```
-
-### Get3
-```
-Get-MgReportSharePointActivityUserDetail -Period <String> -OutFile <String> [-PassThru] [<CommonParameters>]
+G`e`t-MgR`e`portShar`e`PointActivityUs`e`rD`e`tail -Dat`e` <Dat`e`Tim`e`> -OutFil`e` <String> [-PassThru] [<CommonParam`e`t`e`rs>]
 ```
 
-### GetViaIdentity3
+### G`e`t3
 ```
-Get-MgReportSharePointActivityUserDetail -InputObject <IReportsIdentity> -OutFile <String> [-PassThru]
- [<CommonParameters>]
-```
-
-### GetViaIdentity2
-```
-Get-MgReportSharePointActivityUserDetail -InputObject <IReportsIdentity> -OutFile <String> [-PassThru]
- [<CommonParameters>]
+G`e`t-MgR`e`portShar`e`PointActivityUs`e`rD`e`tail -P`e`riod <String> -OutFil`e` <String> [-PassThru] [<CommonParam`e`t`e`rs>]
 ```
 
-## DESCRIPTION
-Invoke function getSharePointActivityUserDetail
+### G`e`tViaId`e`ntity3
+```
+G`e`t-MgR`e`portShar`e`PointActivityUs`e`rD`e`tail -InputObj`e`ct <IR`e`portsId`e`ntity> -OutFil`e` <String> [-PassThru]
+ [<CommonParam`e`t`e`rs>]
+```
 
-## EXAMPLES
+### G`e`tViaId`e`ntity2
+```
+G`e`t-MgR`e`portShar`e`PointActivityUs`e`rD`e`tail -InputObj`e`ct <IR`e`portsId`e`ntity> -OutFil`e` <String> [-PassThru]
+ [<CommonParam`e`t`e`rs>]
+```
 
-## PARAMETERS
+## D`e`SCRIPTION
+Invok`e` function g`e`tShar`e`PointActivityUs`e`rD`e`tail
 
-### -Date
-Usage: date={date}
+## `e`XAMPL`e`S
+
+## PARAM`e`T`e`RS
+
+### -Dat`e`
+Usag`e`: dat`e`={dat`e`}
 
 ```yaml
-Type: DateTime
-Parameter Sets: Get2
-Aliases:
+Typ`e`: Dat`e`Tim`e`
+Param`e`t`e`r S`e`ts: G`e`t2
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -InputObj`e`ct
+Id`e`ntity Param`e`t`e`r
+To construct, pl`e`as`e` us`e` G`e`t-H`e`lp -Onlin`e` and s`e``e` NOT`e`S s`e`ction for INPUTOBJ`e`CT prop`e`rti`e`s and cr`e`at`e` a hash tabl`e`.
 
 ```yaml
-Type: IReportsIdentity
-Parameter Sets: GetViaIdentity3, GetViaIdentity2
-Aliases:
+Typ`e`: IR`e`portsId`e`ntity
+Param`e`t`e`r S`e`ts: G`e`tViaId`e`ntity3, G`e`tViaId`e`ntity2
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Tru`e` (ByValu`e`)
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -OutFile
-Path to write output file to
+### -OutFil`e`
+Path to writ`e` output fil`e` to
 
 ```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
 ### -PassThru
-Returns true when the command succeeds
+R`e`turns tru`e` wh`e`n th`e` command succ`e``e`ds
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
+Typ`e`: SwitchParam`e`t`e`r
+Param`e`t`e`r S`e`ts: (All)
+Alias`e`s:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Fals`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### -Period
-Usage: period='{period}'
+### -P`e`riod
+Usag`e`: p`e`riod='{p`e`riod}'
 
 ```yaml
-Type: String
-Parameter Sets: Get3
-Aliases:
+Typ`e`: String
+Param`e`t`e`r S`e`ts: G`e`t3
+Alias`e`s:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+R`e`quir`e`d: Tru`e`
+Position: Nam`e`d
+D`e`fault valu`e`: Non`e`
+Acc`e`pt pip`e`lin`e` input: Fals`e`
+Acc`e`pt wildcard charact`e`rs: Fals`e`
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonParam`e`t`e`rs
+This cmdl`e`t supports th`e` common param`e`t`e`rs: -D`e`bug, -`e`rrorAction, -`e`rrorVariabl`e`, -InformationAction, -InformationVariabl`e`, -OutVariabl`e`, -OutBuff`e`r, -Pip`e`lin`e`Variabl`e`, -V`e`rbos`e`, -WarningAction, and -WarningVariabl`e`. For mor`e` information, s`e``e` [about_CommonParam`e`t`e`rs](http://go.microsoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IReportsIdentity
+### Microsoft.Graph.Pow`e`rSh`e`ll.Mod`e`ls.IR`e`portsId`e`ntity
 ## OUTPUTS
 
-### System.Boolean
-## NOTES
+### Syst`e`m.Bool`e`an
+## NOT`e`S
 
-ALIASES
+ALIAS`e`S
 
-COMPLEX PARAMETER PROPERTIES
+COMPL`e`X PARAM`e`T`e`R PROP`e`RTI`e`S
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To cr`e`at`e` th`e` param`e`t`e`rs d`e`scrib`e`d b`e`low, construct a hash tabl`e` containing th`e` appropriat`e` prop`e`rti`e`s. For information on hash tabl`e`s, run G`e`t-H`e`lp about_Hash_Tabl`e`s.
 
 
-INPUTOBJECT <IReportsIdentity>: Identity Parameter
-  - `[ApplicationSignInDetailedSummaryId <String>]`: key: id of applicationSignInDetailedSummary
-  - `[CredentialUserRegistrationDetailsId <String>]`: key: id of credentialUserRegistrationDetails
-  - `[Date <DateTime?>]`: Usage: date={date}
-  - `[DeviceManagementCachedReportConfigurationId <String>]`: key: id of deviceManagementCachedReportConfiguration
-  - `[DeviceManagementExportJobId <String>]`: key: id of deviceManagementExportJob
-  - `[DirectoryAuditId <String>]`: key: id of directoryAudit
-  - `[EndDateTime <DateTime?>]`: Usage: endDateTime='{endDateTime}'
-  - `[Filter <String>]`: Usage: filter='{filter}'
-  - `[GroupId <String>]`: Usage: groupId='{groupId}'
-  - `[IncludedUserRoles <String>]`: Usage: includedUserRoles='{includedUserRoles}'
-  - `[IncludedUserTypes <String>]`: Usage: includedUserTypes='{includedUserTypes}'
-  - `[Period <String>]`: Usage: period='{period}'
-  - `[PrintUsageByPrinterId <String>]`: key: id of printUsageByPrinter
-  - `[PrintUsageByUserId <String>]`: key: id of printUsageByUser
-  - `[PrinterId <String>]`: Usage: printerId='{printerId}'
-  - `[ProvisioningObjectSummaryId <String>]`: key: id of provisioningObjectSummary
-  - `[RestrictedSignInId <String>]`: key: id of restrictedSignIn
-  - `[SignInId <String>]`: key: id of signIn
-  - `[Skip <Int32?>]`: Usage: skip={skip}
-  - `[SkipToken <String>]`: Usage: skipToken='{skipToken}'
-  - `[StartDateTime <DateTime?>]`: Usage: startDateTime='{startDateTime}'
-  - `[Top <Int32?>]`: Usage: top={top}
-  - `[UserCredentialUsageDetailsId <String>]`: key: id of userCredentialUsageDetails
-  - `[UserId <String>]`: Usage: userId='{userId}'
-  - `[UserRegistrationDetailsId <String>]`: key: id of userRegistrationDetails
+INPUTOBJ`e`CT <IR`e`portsId`e`ntity>: Id`e`ntity Param`e`t`e`r
+  - `[ApplicationSignInD`e`tail`e`dSummaryId <String>]`: k`e`y: id of applicationSignInD`e`tail`e`dSummary
+  - `[Cr`e`d`e`ntialUs`e`rR`e`gistrationD`e`tailsId <String>]`: k`e`y: id of cr`e`d`e`ntialUs`e`rR`e`gistrationD`e`tails
+  - `[Dat`e` <Dat`e`Tim`e`?>]`: Usag`e`: dat`e`={dat`e`}
+  - `[D`e`vic`e`Manag`e`m`e`ntCach`e`dR`e`portConfigurationId <String>]`: k`e`y: id of d`e`vic`e`Manag`e`m`e`ntCach`e`dR`e`portConfiguration
+  - `[D`e`vic`e`Manag`e`m`e`nt`e`xportJobId <String>]`: k`e`y: id of d`e`vic`e`Manag`e`m`e`nt`e`xportJob
+  - `[Dir`e`ctoryAuditId <String>]`: k`e`y: id of dir`e`ctoryAudit
+  - `[`e`ndDat`e`Tim`e` <Dat`e`Tim`e`?>]`: Usag`e`: `e`ndDat`e`Tim`e`='{`e`ndDat`e`Tim`e`}'
+  - `[Filt`e`r <String>]`: Usag`e`: filt`e`r='{filt`e`r}'
+  - `[GroupId <String>]`: Usag`e`: groupId='{groupId}'
+  - `[Includ`e`dUs`e`rRol`e`s <String>]`: Usag`e`: includ`e`dUs`e`rRol`e`s='{includ`e`dUs`e`rRol`e`s}'
+  - `[Includ`e`dUs`e`rTyp`e`s <String>]`: Usag`e`: includ`e`dUs`e`rTyp`e`s='{includ`e`dUs`e`rTyp`e`s}'
+  - `[P`e`riod <String>]`: Usag`e`: p`e`riod='{p`e`riod}'
+  - `[PrintUsag`e`ByPrint`e`rId <String>]`: k`e`y: id of printUsag`e`ByPrint`e`r
+  - `[PrintUsag`e`ByUs`e`rId <String>]`: k`e`y: id of printUsag`e`ByUs`e`r
+  - `[Print`e`rId <String>]`: Usag`e`: print`e`rId='{print`e`rId}'
+  - `[ProvisioningObj`e`ctSummaryId <String>]`: k`e`y: id of provisioningObj`e`ctSummary
+  - `[R`e`strict`e`dSignInId <String>]`: k`e`y: id of r`e`strict`e`dSignIn
+  - `[SignInId <String>]`: k`e`y: id of signIn
+  - `[Skip <Int32?>]`: Usag`e`: skip={skip}
+  - `[SkipTok`e`n <String>]`: Usag`e`: skipTok`e`n='{skipTok`e`n}'
+  - `[StartDat`e`Tim`e` <Dat`e`Tim`e`?>]`: Usag`e`: startDat`e`Tim`e`='{startDat`e`Tim`e`}'
+  - `[Top <Int32?>]`: Usag`e`: top={top}
+  - `[Us`e`rCr`e`d`e`ntialUsag`e`D`e`tailsId <String>]`: k`e`y: id of us`e`rCr`e`d`e`ntialUsag`e`D`e`tails
+  - `[Us`e`rId <String>]`: Usag`e`: us`e`rId='{us`e`rId}'
+  - `[Us`e`rR`e`gistrationD`e`tailsId <String>]`: k`e`y: id of us`e`rR`e`gistrationD`e`tails
 
-## RELATED LINKS
+## R`e`LAT`e`D LINKS
