@@ -1,153 +1,153 @@
-﻿---
-external help file: Microsoft.Graph.CrossDeviceExperiences-help.xml
-Module Name: Microsoft.Graph.CrossDeviceExperiences
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences/remove-mguseractivity
+---
+exte`r`nal help file: Mic`r`osoft.G`r`aph.C`r`ossDeviceExpe`r`iences-help.xml
+Module Name: Mic`r`osoft.G`r`aph.C`r`ossDeviceExpe`r`iences
+online ve`r`sion: https://docs.mic`r`osoft.com/en-us/powe`r`shell/module/mic`r`osoft.g`r`aph.c`r`ossdeviceexpe`r`iences/`r`emove-mguse`r`activity
 schema: 2.0.0
 ---
 
-# Remove-MgUserActivity
+# `r`emove-MgUse`r`Activity
 
 ## SYNOPSIS
-The user's activities across devices.
-Read-only.
+The use`r`'s activities ac`r`oss devices.
+`r`ead-only.
 Nullable.
 
 ## SYNTAX
 
 ### Delete1 (Default)
 ```
-Remove-MgUserActivity -UserActivityId <String> -UserId <String> [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+`r`emove-MgUse`r`Activity -Use`r`ActivityId <St`r`ing> -Use`r`Id <St`r`ing> [-IfMatch <St`r`ing>] [-PassTh`r`u] [-WhatIf]
+ [-Confi`r`m] [<CommonPa`r`amete`r`s>]
 ```
 
 ### DeleteViaIdentity1
 ```
-Remove-MgUserActivity -InputObject <ICrossDeviceExperiencesIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+`r`emove-MgUse`r`Activity -InputObject <IC`r`ossDeviceExpe`r`iencesIdentity> [-IfMatch <St`r`ing>] [-PassTh`r`u] [-WhatIf]
+ [-Confi`r`m] [<CommonPa`r`amete`r`s>]
 ```
 
-## DESCRIPTION
-The user's activities across devices.
-Read-only.
+## DESC`r`IPTION
+The use`r`'s activities ac`r`oss devices.
+`r`ead-only.
 Nullable.
 
 ## EXAMPLES
 
-## PARAMETERS
+## PA`r`AMETE`r`S
 
 ### -IfMatch
 ETag
 
 ```yaml
-Type: String
-Parameter Sets: (All)
+Type: St`r`ing
+Pa`r`amete`r` Sets: (All)
 Aliases:
 
-Required: False
+`r`equi`r`ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
 ### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+Identity Pa`r`amete`r`
+To const`r`uct, please use Get-Help -Online and see NOTES section fo`r` INPUTOBJECT p`r`ope`r`ties and c`r`eate a hash table.
 
 ```yaml
-Type: ICrossDeviceExperiencesIdentity
-Parameter Sets: DeleteViaIdentity1
+Type: IC`r`ossDeviceExpe`r`iencesIdentity
+Pa`r`amete`r` Sets: DeleteViaIdentity1
 Aliases:
 
-Required: True
+`r`equi`r`ed: T`r`ue
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept pipeline input: T`r`ue (ByValue)
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
+### -PassTh`r`u
+`r`etu`r`ns t`r`ue when the command succeeds
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Type: SwitchPa`r`amete`r`
+Pa`r`amete`r` Sets: (All)
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -UserActivityId
-key: id of userActivity
-
-```yaml
-Type: String
-Parameter Sets: Delete1
-Aliases:
-
-Required: True
+`r`equi`r`ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
-### -UserId
-key: id of user
+### -Use`r`ActivityId
+key: id of use`r`Activity
 
 ```yaml
-Type: String
-Parameter Sets: Delete1
+Type: St`r`ing
+Pa`r`amete`r` Sets: Delete1
 Aliases:
 
-Required: True
+`r`equi`r`ed: T`r`ue
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
+### -Use`r`Id
+key: id of use`r`
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Type: St`r`ing
+Pa`r`amete`r` Sets: Delete1
+Aliases:
+
+`r`equi`r`ed: T`r`ue
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildca`r`d cha`r`acte`r`s: False
+```
+
+### -Confi`r`m
+P`r`ompts you fo`r` confi`r`mation befo`r`e `r`unning the cmdlet.
+
+```yaml
+Type: SwitchPa`r`amete`r`
+Pa`r`amete`r` Sets: (All)
 Aliases: cf
 
-Required: False
+`r`equi`r`ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
 ### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+Shows what would happen if the cmdlet `r`uns.
+The cmdlet is not `r`un.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Type: SwitchPa`r`amete`r`
+Pa`r`amete`r` Sets: (All)
 Aliases: wi
 
-Required: False
+`r`equi`r`ed: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
+Accept wildca`r`d cha`r`acte`r`s: False
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### CommonPa`r`amete`r`s
+This cmdlet suppo`r`ts the common pa`r`amete`r`s: -Debug, -E`r``r`o`r`Action, -E`r``r`o`r`Va`r`iable, -Info`r`mationAction, -Info`r`mationVa`r`iable, -OutVa`r`iable, -OutBuffe`r`, -PipelineVa`r`iable, -Ve`r`bose, -Wa`r`ningAction, and -Wa`r`ningVa`r`iable. Fo`r` mo`r`e info`r`mation, see [about_CommonPa`r`amete`r`s](http://go.mic`r`osoft.com/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICrossDeviceExperiencesIdentity
+### Mic`r`osoft.G`r`aph.Powe`r`Shell.Models.IC`r`ossDeviceExpe`r`iencesIdentity
 ## OUTPUTS
 
 ### System.Boolean
@@ -155,15 +155,15 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-COMPLEX PARAMETER PROPERTIES
+COMPLEX PA`r`AMETE`r` P`r`OPE`r`TIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To c`r`eate the pa`r`amete`r`s desc`r`ibed below, const`r`uct a hash table containing the app`r`op`r`iate p`r`ope`r`ties. Fo`r` info`r`mation on hash tables, `r`un Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT <ICrossDeviceExperiencesIdentity>: Identity Parameter
-  - `[ActivityHistoryItemId <String>]`: key: id of activityHistoryItem
-  - `[DeviceId <String>]`: key: id of device
-  - `[UserActivityId <String>]`: key: id of userActivity
-  - `[UserId <String>]`: key: id of user
+INPUTOBJECT <IC`r`ossDeviceExpe`r`iencesIdentity>: Identity Pa`r`amete`r`
+  - `[ActivityHisto`r`yItemId <St`r`ing>]`: key: id of activityHisto`r`yItem
+  - `[DeviceId <St`r`ing>]`: key: id of device
+  - `[Use`r`ActivityId <St`r`ing>]`: key: id of use`r`Activity
+  - `[Use`r`Id <St`r`ing>]`: key: id of use`r`
 
-## RELATED LINKS
+## `r`ELATED LINKS
