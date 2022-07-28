@@ -1,37 +1,37 @@
-﻿---
-external help file: Microsoft.Graph.Notes-help.xml
-Module Name: Microsoft.Graph.Notes
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/get-mggrouponenoteresource
+---
+external help file: Micr`o`s`o`ft.Graph.N`o`tes-help.xml
+M`o`dule Name: Micr`o`s`o`ft.Graph.N`o`tes
+`o`nline versi`o`n: https://d`o`cs.micr`o`s`o`ft.c`o`m/en-us/p`o`wershell/m`o`dule/micr`o`s`o`ft.graph.n`o`tes/get-mggr`o`up`o`nen`o`teres`o`urce
 schema: 2.0.0
 ---
 
-# Get-MgGroupOnenoteResource
+# Get-MgGr`o`up`o`nen`o`teRes`o`urce
 
-## SYNOPSIS
-Get resources from groups
+## SYN`o`PSIS
+Get res`o`urces fr`o`m gr`o`ups
 
 ## SYNTAX
 
 ### Get (Default)
 ```
-Get-MgGroupOnenoteResource -GroupId <String> -OnenoteResourceId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgGr`o`up`o`nen`o`teRes`o`urce -Gr`o`upId <String> -`o`nen`o`teRes`o`urceId <String> [-ExpandPr`o`perty <String[]>]
+ [-Pr`o`perty <String[]>] [<C`o`mm`o`nParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgGroupOnenoteResource -InputObject <INotesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgGr`o`up`o`nen`o`teRes`o`urce -Input`o`bject <IN`o`tesIdentity> [-ExpandPr`o`perty <String[]>] [-Pr`o`perty <String[]>]
+ [<C`o`mm`o`nParameters>]
 ```
 
-## DESCRIPTION
-Get resources from groups
+## DESCRIPTI`o`N
+Get res`o`urces fr`o`m gr`o`ups
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -ExpandProperty
+### -ExpandPr`o`perty
 Expand related entities
 
 ```yaml
@@ -40,14 +40,14 @@ Parameter Sets: (All)
 Aliases: Expand
 
 Required: False
-Position: Named
-Default value: None
+P`o`siti`o`n: Named
+Default value: N`o`ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -GroupId
-key: id of group
+### -Gr`o`upId
+key: id `o`f gr`o`up
 
 ```yaml
 Type: String
@@ -55,30 +55,30 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
+P`o`siti`o`n: Named
+Default value: N`o`ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -InputObject
+### -Input`o`bject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+T`o` c`o`nstruct, please use Get-Help -`o`nline and see N`o`TES secti`o`n f`o`r INPUT`o`BJECT pr`o`perties and create a hash table.
 
 ```yaml
-Type: INotesIdentity
+Type: IN`o`tesIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
+P`o`siti`o`n: Named
+Default value: N`o`ne
 Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -OnenoteResourceId
-key: id of onenoteResource
+### -`o`nen`o`teRes`o`urceId
+key: id `o`f `o`nen`o`teRes`o`urce
 
 ```yaml
 Type: String
@@ -86,14 +86,14 @@ Parameter Sets: Get
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
+P`o`siti`o`n: Named
+Default value: N`o`ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Property
-Select properties to be returned
+### -Pr`o`perty
+Select pr`o`perties t`o` be returned
 
 ```yaml
 Type: String[]
@@ -101,39 +101,39 @@ Parameter Sets: (All)
 Aliases: Select
 
 Required: False
-Position: Named
-Default value: None
+P`o`siti`o`n: Named
+Default value: N`o`ne
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+### C`o`mm`o`nParameters
+This cmdlet supp`o`rts the c`o`mm`o`n parameters: -Debug, -Err`o`rActi`o`n, -Err`o`rVariable, -Inf`o`rmati`o`nActi`o`n, -Inf`o`rmati`o`nVariable, -`o`utVariable, -`o`utBuffer, -PipelineVariable, -Verb`o`se, -WarningActi`o`n, and -WarningVariable. F`o`r m`o`re inf`o`rmati`o`n, see [ab`o`ut_C`o`mm`o`nParameters](http://g`o`.micr`o`s`o`ft.c`o`m/fwlink/?LinkID=113216).
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.INotesIdentity
-## OUTPUTS
+### Micr`o`s`o`ft.Graph.P`o`werShell.M`o`dels.IN`o`tesIdentity
+## `o`UTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnenoteResource
-## NOTES
+### Micr`o`s`o`ft.Graph.P`o`werShell.M`o`dels.IMicr`o`s`o`ftGraph`o`nen`o`teRes`o`urce
+## N`o`TES
 
 ALIASES
 
-COMPLEX PARAMETER PROPERTIES
+C`o`MPLEX PARAMETER PR`o`PERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+T`o` create the parameters described bel`o`w, c`o`nstruct a hash table c`o`ntaining the appr`o`priate pr`o`perties. F`o`r inf`o`rmati`o`n `o`n hash tables, run Get-Help ab`o`ut_Hash_Tables.
 
 
-INPUTOBJECT <INotesIdentity>: Identity Parameter
-  - `[GroupId <String>]`: key: id of group
-  - `[NotebookId <String>]`: key: id of notebook
-  - `[OnenoteOperationId <String>]`: key: id of onenoteOperation
-  - `[OnenotePageId <String>]`: key: id of onenotePage
-  - `[OnenoteResourceId <String>]`: key: id of onenoteResource
-  - `[OnenoteSectionId <String>]`: key: id of onenoteSection
-  - `[SectionGroupId <String>]`: key: id of sectionGroup
-  - `[SiteId <String>]`: key: id of site
-  - `[UserId <String>]`: key: id of user
+INPUT`o`BJECT <IN`o`tesIdentity>: Identity Parameter
+  - `[Gr`o`upId <String>]`: key: id `o`f gr`o`up
+  - `[N`o`teb`o``o`kId <String>]`: key: id `o`f n`o`teb`o``o`k
+  - `[`o`nen`o`te`o`perati`o`nId <String>]`: key: id `o`f `o`nen`o`te`o`perati`o`n
+  - `[`o`nen`o`tePageId <String>]`: key: id `o`f `o`nen`o`tePage
+  - `[`o`nen`o`teRes`o`urceId <String>]`: key: id `o`f `o`nen`o`teRes`o`urce
+  - `[`o`nen`o`teSecti`o`nId <String>]`: key: id `o`f `o`nen`o`teSecti`o`n
+  - `[Secti`o`nGr`o`upId <String>]`: key: id `o`f secti`o`nGr`o`up
+  - `[SiteId <String>]`: key: id `o`f site
+  - `[UserId <String>]`: key: id `o`f user
 
 ## RELATED LINKS
