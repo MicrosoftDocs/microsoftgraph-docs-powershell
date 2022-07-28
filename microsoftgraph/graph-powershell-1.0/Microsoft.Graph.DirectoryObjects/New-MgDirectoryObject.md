@@ -1,149 +1,149 @@
-﻿---
-external help file: Microsoft.Graph.DirectoryObjects-help.xml
-Module Name: Microsoft.Graph.DirectoryObjects
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.directoryobjects/new-mgdirectoryobject
+---
+external help f`i`le: M`i`crosoft.Graph.D`i`rectoryObjects-help.xml
+Module Name: M`i`crosoft.Graph.D`i`rectoryObjects
+onl`i`ne vers`i`on: https://docs.m`i`crosoft.com/en-us/powershell/module/m`i`crosoft.graph.d`i`rectoryobjects/new-mgd`i`rectoryobject
 schema: 2.0.0
 ---
 
-# New-MgDirectoryObject
+# New-MgD`i`rectoryObject
 
-## SYNOPSIS
-Add new entity to directoryObjects
+## SYNOPS`i`S
+Add new ent`i`ty to d`i`rectoryObjects
 
 ## SYNTAX
 
 ### CreateExpanded1 (Default)
 ```
-New-MgDirectoryObject [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>] [-Id <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgD`i`rectoryObject [-Add`i`t`i`onalPropert`i`es <Hashtable>] [-DeletedDateT`i`me <DateT`i`me>] [-`i`d <Str`i`ng>]
+ [-What`i`f] [-Conf`i`rm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgDirectoryObject -BodyParameter <IMicrosoftGraphDirectoryObject> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgD`i`rectoryObject -BodyParameter <`i`M`i`crosoftGraphD`i`rectoryObject> [-What`i`f] [-Conf`i`rm] [<CommonParameters>]
 ```
 
-## DESCRIPTION
-Add new entity to directoryObjects
+## DESCR`i`PT`i`ON
+Add new ent`i`ty to d`i`rectoryObjects
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -Add`i`t`i`onalPropert`i`es
+Add`i`t`i`onal Parameters
 
 ```yaml
 Type: Hashtable
 Parameter Sets: CreateExpanded1
-Aliases:
+Al`i`ases:
 
-Required: False
-Position: Named
+Requ`i`red: False
+Pos`i`t`i`on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p`i`pel`i`ne `i`nput: False
+Accept w`i`ldcard characters: False
 ```
 
 ### -BodyParameter
-directoryObject
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+d`i`rectoryObject
+To construct, please use Get-Help -Onl`i`ne and see NOTES sect`i`on for BODYPARAMETER propert`i`es and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject
+Type: `i`M`i`crosoftGraphD`i`rectoryObject
 Parameter Sets: Create1
-Aliases:
+Al`i`ases:
 
-Required: True
-Position: Named
+Requ`i`red: True
+Pos`i`t`i`on: Named
 Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
+Accept p`i`pel`i`ne `i`nput: True (ByValue)
+Accept w`i`ldcard characters: False
 ```
 
-### -DeletedDateTime
-Date and time when this object was deleted.
+### -DeletedDateT`i`me
+Date and t`i`me when th`i`s object was deleted.
 Always null when the object hasn't been deleted.
 
 ```yaml
-Type: DateTime
+Type: DateT`i`me
 Parameter Sets: CreateExpanded1
-Aliases:
+Al`i`ases:
 
-Required: False
-Position: Named
+Requ`i`red: False
+Pos`i`t`i`on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p`i`pel`i`ne `i`nput: False
+Accept w`i`ldcard characters: False
 ```
 
-### -Id
+### -`i`d
 Read-only.
 
 ```yaml
-Type: String
+Type: Str`i`ng
 Parameter Sets: CreateExpanded1
-Aliases:
+Al`i`ases:
 
-Required: False
-Position: Named
+Requ`i`red: False
+Pos`i`t`i`on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p`i`pel`i`ne `i`nput: False
+Accept w`i`ldcard characters: False
 ```
 
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
+### -Conf`i`rm
+Prompts you for conf`i`rmat`i`on before runn`i`ng the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: Sw`i`tchParameter
 Parameter Sets: (All)
-Aliases: cf
+Al`i`ases: cf
 
-Required: False
-Position: Named
+Requ`i`red: False
+Pos`i`t`i`on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p`i`pel`i`ne `i`nput: False
+Accept w`i`ldcard characters: False
 ```
 
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+### -What`i`f
+Shows what would happen `i`f the cmdlet runs.
+The cmdlet `i`s not run.
 
 ```yaml
-Type: SwitchParameter
+Type: Sw`i`tchParameter
 Parameter Sets: (All)
-Aliases: wi
+Al`i`ases: w`i`
 
-Required: False
-Position: Named
+Requ`i`red: False
+Pos`i`t`i`on: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
+Accept p`i`pel`i`ne `i`nput: False
+Accept w`i`ldcard characters: False
 ```
 
 ### CommonParameters
-This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable, -InformationAction, -InformationVariable, -OutVariable, -OutBuffer, -PipelineVariable, -Verbose, -WarningAction, and -WarningVariable. For more information, see [about_CommonParameters](http://go.microsoft.com/fwlink/?LinkID=113216).
+Th`i`s cmdlet supports the common parameters: -Debug, -ErrorAct`i`on, -ErrorVar`i`able, -`i`nformat`i`onAct`i`on, -`i`nformat`i`onVar`i`able, -OutVar`i`able, -OutBuffer, -P`i`pel`i`neVar`i`able, -Verbose, -Warn`i`ngAct`i`on, and -Warn`i`ngVar`i`able. For more `i`nformat`i`on, see [about_CommonParameters](http://go.m`i`crosoft.com/fwl`i`nk/?L`i`nk`i`D=113216).
 
-## INPUTS
+## `i`NPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
+### M`i`crosoft.Graph.PowerShell.Models.`i`M`i`crosoftGraphD`i`rectoryObject
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
+### M`i`crosoft.Graph.PowerShell.Models.`i`M`i`crosoftGraphD`i`rectoryObject
 ## NOTES
 
-ALIASES
+AL`i`ASES
 
-COMPLEX PARAMETER PROPERTIES
+COMPLEX PARAMETER PROPERT`i`ES
 
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters descr`i`bed below, construct a hash table conta`i`n`i`ng the appropr`i`ate propert`i`es. For `i`nformat`i`on on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphDirectoryObject>: directoryObject
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: Read-only.
-  - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
+BODYPARAMETER <`i`M`i`crosoftGraphD`i`rectoryObject>: d`i`rectoryObject
+  - `[(Any) <Object>]`: Th`i`s `i`nd`i`cates any property can be added to th`i`s object.
+  - `[`i`d <Str`i`ng>]`: Read-only.
+  - `[DeletedDateT`i`me <DateT`i`me?>]`: Date and t`i`me when th`i`s object was deleted. Always null when the object hasn't been deleted.
 
-## RELATED LINKS
+## RELATED L`i`NKS
